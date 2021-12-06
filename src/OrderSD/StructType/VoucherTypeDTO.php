@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -199,7 +199,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set allowPartialUse value
      * @param bool $allowPartialUse
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setAllowPartialUse(?bool $allowPartialUse = null): self
     {
@@ -222,7 +222,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set assignNoFromSequence value
      * @param bool $assignNoFromSequence
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setAssignNoFromSequence(?bool $assignNoFromSequence = null): self
     {
@@ -245,7 +245,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set assignedAccountNoVat value
      * @param string $assignedAccountNoVat
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setAssignedAccountNoVat(?string $assignedAccountNoVat = null): self
     {
@@ -268,7 +268,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set assignedAccountNoVatPart value
      * @param float $assignedAccountNoVatPart
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setAssignedAccountNoVatPart(?float $assignedAccountNoVatPart = null): self
     {
@@ -291,7 +291,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set assignedAccountVat value
      * @param string $assignedAccountVat
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setAssignedAccountVat(?string $assignedAccountVat = null): self
     {
@@ -314,7 +314,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set assignedAccountVatPart value
      * @param float $assignedAccountVatPart
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setAssignedAccountVatPart(?float $assignedAccountVatPart = null): self
     {
@@ -337,7 +337,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set assignedSupplierIds value
      * @param string $assignedSupplierIds
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setAssignedSupplierIds(?string $assignedSupplierIds = null): self
     {
@@ -360,7 +360,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -383,7 +383,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -406,7 +406,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -429,7 +429,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set forbidRedeemUnknownVoucher value
      * @param bool $forbidRedeemUnknownVoucher
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setForbidRedeemUnknownVoucher(?bool $forbidRedeemUnknownVoucher = null): self
     {
@@ -452,7 +452,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set forceNumber value
      * @param bool $forceNumber
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setForceNumber(?bool $forceNumber = null): self
     {
@@ -475,7 +475,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set isEnabled value
      * @param bool $isEnabled
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setIsEnabled(?bool $isEnabled = null): self
     {
@@ -498,7 +498,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -521,7 +521,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -544,7 +544,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set prefixCode value
      * @param string $prefixCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setPrefixCode(?string $prefixCode = null): self
     {
@@ -567,7 +567,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set securityCode value
      * @param bool $securityCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setSecurityCode(?bool $securityCode = null): self
     {
@@ -590,7 +590,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -613,7 +613,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set validDays value
      * @param int $validDays
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setValidDays(?int $validDays = null): self
     {
@@ -636,7 +636,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -659,7 +659,7 @@ class VoucherTypeDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
      */
     public function setValidTo(?string $validTo = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetBookingSourcesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBookingSource
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\BookingSourceDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\BookingSourceDTO[]
      */
     protected ?array $MidocoBookingSource = null;
     /**
      * Constructor method for GetBookingSourcesResponse
      * @uses GetBookingSourcesResponse::setMidocoBookingSource()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\BookingSourceDTO[] $midocoBookingSource
+     * @param \Pggns\MidocoApi\CrmSD\StructType\BookingSourceDTO[] $midocoBookingSource
      */
     public function __construct(?array $midocoBookingSource = null)
     {
@@ -36,7 +36,7 @@ class GetBookingSourcesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBookingSource value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\BookingSourceDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\BookingSourceDTO[]
      */
     public function getMidocoBookingSource(): ?array
     {
@@ -57,12 +57,12 @@ class GetBookingSourcesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBookingSourcesResponseMidocoBookingSourceItem) {
             // validation for constraint: itemType
-            if (!$getBookingSourcesResponseMidocoBookingSourceItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\BookingSourceDTO) {
+            if (!$getBookingSourcesResponseMidocoBookingSourceItem instanceof \Pggns\MidocoApi\CrmSD\StructType\BookingSourceDTO) {
                 $invalidValues[] = is_object($getBookingSourcesResponseMidocoBookingSourceItem) ? get_class($getBookingSourcesResponseMidocoBookingSourceItem) : sprintf('%s(%s)', gettype($getBookingSourcesResponseMidocoBookingSourceItem), var_export($getBookingSourcesResponseMidocoBookingSourceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBookingSource property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\BookingSourceDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBookingSource property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\BookingSourceDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetBookingSourcesResponse extends AbstractStructBase
     /**
      * Set MidocoBookingSource value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\BookingSourceDTO[] $midocoBookingSource
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetBookingSourcesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\BookingSourceDTO[] $midocoBookingSource
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetBookingSourcesResponse
      */
     public function setMidocoBookingSource(?array $midocoBookingSource = null): self
     {
@@ -87,14 +87,14 @@ class GetBookingSourcesResponse extends AbstractStructBase
     /**
      * Add item to MidocoBookingSource value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\BookingSourceDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetBookingSourcesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\BookingSourceDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetBookingSourcesResponse
      */
-    public function addToMidocoBookingSource(\Pggns\MidocoApi\Api\CrmSD\StructType\BookingSourceDTO $item): self
+    public function addToMidocoBookingSource(\Pggns\MidocoApi\CrmSD\StructType\BookingSourceDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\BookingSourceDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoBookingSource property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\BookingSourceDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\BookingSourceDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBookingSource property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\BookingSourceDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBookingSource[] = $item;
         

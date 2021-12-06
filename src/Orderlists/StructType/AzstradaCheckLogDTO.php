@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class AzstradaCheckLogDTO extends AbstractStructBase
     /**
      * Set checkLogId value
      * @param int $checkLogId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AzstradaCheckLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AzstradaCheckLogDTO
      */
     public function setCheckLogId(?int $checkLogId = null): self
     {
@@ -94,7 +94,7 @@ class AzstradaCheckLogDTO extends AbstractStructBase
     /**
      * Set checkTime value
      * @param string $checkTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AzstradaCheckLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AzstradaCheckLogDTO
      */
     public function setCheckTime(?string $checkTime = null): self
     {
@@ -117,7 +117,7 @@ class AzstradaCheckLogDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AzstradaCheckLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AzstradaCheckLogDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -140,7 +140,7 @@ class AzstradaCheckLogDTO extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AzstradaCheckLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AzstradaCheckLogDTO
      */
     public function setUrl(?string $url = null): self
     {
@@ -163,7 +163,7 @@ class AzstradaCheckLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AzstradaCheckLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AzstradaCheckLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

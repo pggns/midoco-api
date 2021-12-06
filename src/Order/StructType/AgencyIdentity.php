@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -108,9 +108,9 @@ class AgencyIdentity extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: AgencyInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType|null
+     * @var \Pggns\MidocoApi\Order\StructType\AgencyInfoType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType $AgencyInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\AgencyInfoType $AgencyInfo = null;
     /**
      * Constructor method for agencyIdentity
      * @uses AgencyIdentity::setCrsAgencyNo()
@@ -136,9 +136,9 @@ class AgencyIdentity extends AbstractStructBase
      * @param float $agency_commission_amount
      * @param string $invoicing_mode
      * @param string $underAgencyId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType $agencyInfo
+     * @param \Pggns\MidocoApi\Order\StructType\AgencyInfoType $agencyInfo
      */
-    public function __construct(?string $crsAgencyNo = null, ?string $crsType = null, ?string $crsExpedientCode = null, ?int $midocoUserId = null, ?string $subagency = null, ?string $agent = null, ?string $agentAffiliate = null, ?string $agency_no = null, ?float $agency_commission_amount = null, ?string $invoicing_mode = null, ?string $underAgencyId = null, ?\Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType $agencyInfo = null)
+    public function __construct(?string $crsAgencyNo = null, ?string $crsType = null, ?string $crsExpedientCode = null, ?int $midocoUserId = null, ?string $subagency = null, ?string $agent = null, ?string $agentAffiliate = null, ?string $agency_no = null, ?float $agency_commission_amount = null, ?string $invoicing_mode = null, ?string $underAgencyId = null, ?\Pggns\MidocoApi\Order\StructType\AgencyInfoType $agencyInfo = null)
     {
         $this
             ->setCrsAgencyNo($crsAgencyNo)
@@ -165,7 +165,7 @@ class AgencyIdentity extends AbstractStructBase
     /**
      * Set crsAgencyNo value
      * @param string $crsAgencyNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyIdentity
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyIdentity
      */
     public function setCrsAgencyNo(?string $crsAgencyNo = null): self
     {
@@ -188,7 +188,7 @@ class AgencyIdentity extends AbstractStructBase
     /**
      * Set crsType value
      * @param string $crsType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyIdentity
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyIdentity
      */
     public function setCrsType(?string $crsType = null): self
     {
@@ -211,7 +211,7 @@ class AgencyIdentity extends AbstractStructBase
     /**
      * Set crsExpedientCode value
      * @param string $crsExpedientCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyIdentity
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyIdentity
      */
     public function setCrsExpedientCode(?string $crsExpedientCode = null): self
     {
@@ -234,7 +234,7 @@ class AgencyIdentity extends AbstractStructBase
     /**
      * Set midocoUserId value
      * @param int $midocoUserId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyIdentity
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyIdentity
      */
     public function setMidocoUserId(?int $midocoUserId = null): self
     {
@@ -257,7 +257,7 @@ class AgencyIdentity extends AbstractStructBase
     /**
      * Set subagency value
      * @param string $subagency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyIdentity
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyIdentity
      */
     public function setSubagency(?string $subagency = null): self
     {
@@ -280,7 +280,7 @@ class AgencyIdentity extends AbstractStructBase
     /**
      * Set agent value
      * @param string $agent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyIdentity
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyIdentity
      */
     public function setAgent(?string $agent = null): self
     {
@@ -303,7 +303,7 @@ class AgencyIdentity extends AbstractStructBase
     /**
      * Set agentAffiliate value
      * @param string $agentAffiliate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyIdentity
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyIdentity
      */
     public function setAgentAffiliate(?string $agentAffiliate = null): self
     {
@@ -326,7 +326,7 @@ class AgencyIdentity extends AbstractStructBase
     /**
      * Set agency_no value
      * @param string $agency_no
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyIdentity
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyIdentity
      */
     public function setAgency_no(?string $agency_no = null): self
     {
@@ -349,7 +349,7 @@ class AgencyIdentity extends AbstractStructBase
     /**
      * Set agency_commission_amount value
      * @param float $agency_commission_amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyIdentity
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyIdentity
      */
     public function setAgency_commission_amount(?float $agency_commission_amount = null): self
     {
@@ -372,7 +372,7 @@ class AgencyIdentity extends AbstractStructBase
     /**
      * Set invoicing_mode value
      * @param string $invoicing_mode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyIdentity
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyIdentity
      */
     public function setInvoicing_mode(?string $invoicing_mode = null): self
     {
@@ -395,7 +395,7 @@ class AgencyIdentity extends AbstractStructBase
     /**
      * Set underAgencyId value
      * @param string $underAgencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyIdentity
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyIdentity
      */
     public function setUnderAgencyId(?string $underAgencyId = null): self
     {
@@ -409,18 +409,18 @@ class AgencyIdentity extends AbstractStructBase
     }
     /**
      * Get AgencyInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType|null
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType|null
      */
-    public function getAgencyInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+    public function getAgencyInfo(): ?\Pggns\MidocoApi\Order\StructType\AgencyInfoType
     {
         return $this->AgencyInfo;
     }
     /**
      * Set AgencyInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType $agencyInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyIdentity
+     * @param \Pggns\MidocoApi\Order\StructType\AgencyInfoType $agencyInfo
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyIdentity
      */
-    public function setAgencyInfo(?\Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType $agencyInfo = null): self
+    public function setAgencyInfo(?\Pggns\MidocoApi\Order\StructType\AgencyInfoType $agencyInfo = null): self
     {
         $this->AgencyInfo = $agencyInfo;
         

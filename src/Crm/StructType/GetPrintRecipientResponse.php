@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class GetPrintRecipientResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoPrintRecipient
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintRecipient[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoPrintRecipient[]
      */
     protected ?array $MidocoPrintRecipient = null;
     /**
      * Constructor method for GetPrintRecipientResponse
      * @uses GetPrintRecipientResponse::setMidocoPrintRecipient()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintRecipient[] $midocoPrintRecipient
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoPrintRecipient[] $midocoPrintRecipient
      */
     public function __construct(?array $midocoPrintRecipient = null)
     {
@@ -33,7 +33,7 @@ class GetPrintRecipientResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPrintRecipient value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintRecipient[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoPrintRecipient[]
      */
     public function getMidocoPrintRecipient(): ?array
     {
@@ -54,12 +54,12 @@ class GetPrintRecipientResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPrintRecipientResponseMidocoPrintRecipientItem) {
             // validation for constraint: itemType
-            if (!$getPrintRecipientResponseMidocoPrintRecipientItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintRecipient) {
+            if (!$getPrintRecipientResponseMidocoPrintRecipientItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoPrintRecipient) {
                 $invalidValues[] = is_object($getPrintRecipientResponseMidocoPrintRecipientItem) ? get_class($getPrintRecipientResponseMidocoPrintRecipientItem) : sprintf('%s(%s)', gettype($getPrintRecipientResponseMidocoPrintRecipientItem), var_export($getPrintRecipientResponseMidocoPrintRecipientItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintRecipient property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintRecipient, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintRecipient property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoPrintRecipient, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class GetPrintRecipientResponse extends AbstractStructBase
     /**
      * Set MidocoPrintRecipient value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintRecipient[] $midocoPrintRecipient
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetPrintRecipientResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoPrintRecipient[] $midocoPrintRecipient
+     * @return \Pggns\MidocoApi\Crm\StructType\GetPrintRecipientResponse
      */
     public function setMidocoPrintRecipient(?array $midocoPrintRecipient = null): self
     {
@@ -84,14 +84,14 @@ class GetPrintRecipientResponse extends AbstractStructBase
     /**
      * Add item to MidocoPrintRecipient value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintRecipient $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetPrintRecipientResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoPrintRecipient $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetPrintRecipientResponse
      */
-    public function addToMidocoPrintRecipient(\Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintRecipient $item): self
+    public function addToMidocoPrintRecipient(\Pggns\MidocoApi\Crm\StructType\MidocoPrintRecipient $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintRecipient) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintRecipient property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintRecipient, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoPrintRecipient) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintRecipient property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoPrintRecipient, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintRecipient[] = $item;
         

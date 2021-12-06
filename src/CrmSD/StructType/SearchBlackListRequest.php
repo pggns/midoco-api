@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -140,7 +140,7 @@ class SearchBlackListRequest extends AbstractStructBase
      * Set unitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
      */
     public function setUnitName(?array $unitName = null): self
     {
@@ -156,7 +156,7 @@ class SearchBlackListRequest extends AbstractStructBase
      * Add item to unitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
      */
     public function addToUnitName(string $item): self
     {
@@ -179,7 +179,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set surName value
      * @param string $surName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
      */
     public function setSurName(?string $surName = null): self
     {
@@ -202,7 +202,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set foreName value
      * @param string $foreName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
      */
     public function setForeName(?string $foreName = null): self
     {
@@ -225,7 +225,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
      */
     public function setStreet(?string $street = null): self
     {
@@ -248,7 +248,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -271,7 +271,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -294,7 +294,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set postOfficeBox value
      * @param string $postOfficeBox
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
      */
     public function setPostOfficeBox(?string $postOfficeBox = null): self
     {
@@ -317,7 +317,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
      */
     public function setCity(?string $city = null): self
     {
@@ -340,7 +340,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -363,7 +363,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
      */
     public function setEmail(?string $email = null): self
     {

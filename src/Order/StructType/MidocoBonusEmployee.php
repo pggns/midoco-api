@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoBonusEmployee extends BonusEmployeeDTO
     /**
      * Set totalBonus value
      * @param float $totalBonus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee
      */
     public function setTotalBonus(?float $totalBonus = null): self
     {
@@ -78,7 +78,7 @@ class MidocoBonusEmployee extends BonusEmployeeDTO
     /**
      * Set lineCounter value
      * @param int $lineCounter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee
      */
     public function setLineCounter(?int $lineCounter = null): self
     {
@@ -101,7 +101,7 @@ class MidocoBonusEmployee extends BonusEmployeeDTO
     /**
      * Set userName value
      * @param string $userName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee
      */
     public function setUserName(?string $userName = null): self
     {

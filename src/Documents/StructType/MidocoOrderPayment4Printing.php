@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -107,7 +107,7 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
     /**
      * Set paymentDate value
      * @param string $paymentDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment4Printing
      */
     public function setPaymentDate(?string $paymentDate = null): self
     {
@@ -130,7 +130,7 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
     /**
      * Set paymentAmount value
      * @param float $paymentAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment4Printing
      */
     public function setPaymentAmount(?float $paymentAmount = null): self
     {
@@ -153,7 +153,7 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
     /**
      * Set paymentCurrency value
      * @param string $paymentCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment4Printing
      */
     public function setPaymentCurrency(?string $paymentCurrency = null): self
     {
@@ -176,7 +176,7 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
     /**
      * Set inkassoType value
      * @param string $inkassoType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment4Printing
      */
     public function setInkassoType(?string $inkassoType = null): self
     {
@@ -199,7 +199,7 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment4Printing
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -222,7 +222,7 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment4Printing
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -245,7 +245,7 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
     /**
      * Set ccTypeDesc value
      * @param string $ccTypeDesc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment4Printing
      */
     public function setCcTypeDesc(?string $ccTypeDesc = null): self
     {
@@ -268,7 +268,7 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
     /**
      * Set isExecuted value
      * @param bool $isExecuted
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment4Printing
      */
     public function setIsExecuted(?bool $isExecuted = null): self
     {
@@ -291,7 +291,7 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment4Printing
      */
     public function setItemId(?int $itemId = null): self
     {

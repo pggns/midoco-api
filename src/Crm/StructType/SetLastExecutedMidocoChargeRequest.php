@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SetLastExecutedMidocoChargeRequest extends AbstractStructBase
     /**
      * Set lastExecDate value
      * @param string $lastExecDate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SetLastExecutedMidocoChargeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SetLastExecutedMidocoChargeRequest
      */
     public function setLastExecDate(?string $lastExecDate = null): self
     {
@@ -78,7 +78,7 @@ class SetLastExecutedMidocoChargeRequest extends AbstractStructBase
     /**
      * Set lastExecUser value
      * @param int $lastExecUser
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SetLastExecutedMidocoChargeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SetLastExecutedMidocoChargeRequest
      */
     public function setLastExecUser(?int $lastExecUser = null): self
     {
@@ -101,7 +101,7 @@ class SetLastExecutedMidocoChargeRequest extends AbstractStructBase
     /**
      * Set crmChargeId value
      * @param int $crmChargeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SetLastExecutedMidocoChargeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SetLastExecutedMidocoChargeRequest
      */
     public function setCrmChargeId(?int $crmChargeId = null): self
     {

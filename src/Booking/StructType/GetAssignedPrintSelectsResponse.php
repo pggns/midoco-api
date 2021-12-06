@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAssignedPrintSelectsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPrintDescription
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\PrintDescriptionDTO[]
+     * @var \Pggns\MidocoApi\Booking\StructType\PrintDescriptionDTO[]
      */
     protected ?array $MidocoPrintDescription = null;
     /**
      * Constructor method for GetAssignedPrintSelectsResponse
      * @uses GetAssignedPrintSelectsResponse::setMidocoPrintDescription()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\PrintDescriptionDTO[] $midocoPrintDescription
+     * @param \Pggns\MidocoApi\Booking\StructType\PrintDescriptionDTO[] $midocoPrintDescription
      */
     public function __construct(?array $midocoPrintDescription = null)
     {
@@ -34,7 +34,7 @@ class GetAssignedPrintSelectsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPrintDescription value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrintDescriptionDTO[]
+     * @return \Pggns\MidocoApi\Booking\StructType\PrintDescriptionDTO[]
      */
     public function getMidocoPrintDescription(): ?array
     {
@@ -55,12 +55,12 @@ class GetAssignedPrintSelectsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAssignedPrintSelectsResponseMidocoPrintDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getAssignedPrintSelectsResponseMidocoPrintDescriptionItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\PrintDescriptionDTO) {
+            if (!$getAssignedPrintSelectsResponseMidocoPrintDescriptionItem instanceof \Pggns\MidocoApi\Booking\StructType\PrintDescriptionDTO) {
                 $invalidValues[] = is_object($getAssignedPrintSelectsResponseMidocoPrintDescriptionItem) ? get_class($getAssignedPrintSelectsResponseMidocoPrintDescriptionItem) : sprintf('%s(%s)', gettype($getAssignedPrintSelectsResponseMidocoPrintDescriptionItem), var_export($getAssignedPrintSelectsResponseMidocoPrintDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\PrintDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\Booking\StructType\PrintDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAssignedPrintSelectsResponse extends AbstractStructBase
     /**
      * Set MidocoPrintDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\PrintDescriptionDTO[] $midocoPrintDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetAssignedPrintSelectsResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\PrintDescriptionDTO[] $midocoPrintDescription
+     * @return \Pggns\MidocoApi\Booking\StructType\GetAssignedPrintSelectsResponse
      */
     public function setMidocoPrintDescription(?array $midocoPrintDescription = null): self
     {
@@ -85,14 +85,14 @@ class GetAssignedPrintSelectsResponse extends AbstractStructBase
     /**
      * Add item to MidocoPrintDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\PrintDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetAssignedPrintSelectsResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\PrintDescriptionDTO $item
+     * @return \Pggns\MidocoApi\Booking\StructType\GetAssignedPrintSelectsResponse
      */
-    public function addToMidocoPrintDescription(\Pggns\MidocoApi\Api\Booking\StructType\PrintDescriptionDTO $item): self
+    public function addToMidocoPrintDescription(\Pggns\MidocoApi\Booking\StructType\PrintDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\PrintDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\PrintDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\PrintDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\Booking\StructType\PrintDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintDescription[] = $item;
         

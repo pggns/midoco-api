@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class TempDocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set contentType value
      * @param string $contentType
-     * @return \Pggns\MidocoApi\Api\System\StructType\TempDocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\System\StructType\TempDocumentRepositoryDTO
      */
     public function setContentType(?string $contentType = null): self
     {
@@ -110,7 +110,7 @@ class TempDocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\System\StructType\TempDocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\System\StructType\TempDocumentRepositoryDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -133,7 +133,7 @@ class TempDocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\System\StructType\TempDocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\System\StructType\TempDocumentRepositoryDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -156,7 +156,7 @@ class TempDocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set documentContent value
      * @param string $documentContent
-     * @return \Pggns\MidocoApi\Api\System\StructType\TempDocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\System\StructType\TempDocumentRepositoryDTO
      */
     public function setDocumentContent(?string $documentContent = null): self
     {
@@ -179,7 +179,7 @@ class TempDocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\System\StructType\TempDocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\System\StructType\TempDocumentRepositoryDTO
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -202,7 +202,7 @@ class TempDocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\System\StructType\TempDocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\System\StructType\TempDocumentRepositoryDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -225,7 +225,7 @@ class TempDocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\TempDocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\System\StructType\TempDocumentRepositoryDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

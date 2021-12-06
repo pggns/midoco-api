@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAllAssignedAdapters4OrgUnitResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAdapter
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\AdapterDTO[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\AdapterDTO[]
      */
     protected ?array $MidocoAdapter = null;
     /**
      * Constructor method for GetAllAssignedAdapters4OrgUnitResponse
      * @uses GetAllAssignedAdapters4OrgUnitResponse::setMidocoAdapter()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\AdapterDTO[] $midocoAdapter
+     * @param \Pggns\MidocoApi\Workflow\StructType\AdapterDTO[] $midocoAdapter
      */
     public function __construct(?array $midocoAdapter = null)
     {
@@ -34,7 +34,7 @@ class GetAllAssignedAdapters4OrgUnitResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAdapter value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\AdapterDTO[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\AdapterDTO[]
      */
     public function getMidocoAdapter(): ?array
     {
@@ -55,12 +55,12 @@ class GetAllAssignedAdapters4OrgUnitResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllAssignedAdapters4OrgUnitResponseMidocoAdapterItem) {
             // validation for constraint: itemType
-            if (!$getAllAssignedAdapters4OrgUnitResponseMidocoAdapterItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\AdapterDTO) {
+            if (!$getAllAssignedAdapters4OrgUnitResponseMidocoAdapterItem instanceof \Pggns\MidocoApi\Workflow\StructType\AdapterDTO) {
                 $invalidValues[] = is_object($getAllAssignedAdapters4OrgUnitResponseMidocoAdapterItem) ? get_class($getAllAssignedAdapters4OrgUnitResponseMidocoAdapterItem) : sprintf('%s(%s)', gettype($getAllAssignedAdapters4OrgUnitResponseMidocoAdapterItem), var_export($getAllAssignedAdapters4OrgUnitResponseMidocoAdapterItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAdapter property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\AdapterDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAdapter property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\AdapterDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAllAssignedAdapters4OrgUnitResponse extends AbstractStructBase
     /**
      * Set MidocoAdapter value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\AdapterDTO[] $midocoAdapter
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetAllAssignedAdapters4OrgUnitResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\AdapterDTO[] $midocoAdapter
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetAllAssignedAdapters4OrgUnitResponse
      */
     public function setMidocoAdapter(?array $midocoAdapter = null): self
     {
@@ -85,14 +85,14 @@ class GetAllAssignedAdapters4OrgUnitResponse extends AbstractStructBase
     /**
      * Add item to MidocoAdapter value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\AdapterDTO $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetAllAssignedAdapters4OrgUnitResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\AdapterDTO $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetAllAssignedAdapters4OrgUnitResponse
      */
-    public function addToMidocoAdapter(\Pggns\MidocoApi\Api\Workflow\StructType\AdapterDTO $item): self
+    public function addToMidocoAdapter(\Pggns\MidocoApi\Workflow\StructType\AdapterDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\AdapterDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAdapter property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\AdapterDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\AdapterDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAdapter property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\AdapterDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAdapter[] = $item;
         

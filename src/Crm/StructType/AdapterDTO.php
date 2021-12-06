@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class AdapterDTO extends AbstractStructBase
     /**
      * Set adapterId value
      * @param string $adapterId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AdapterDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AdapterDTO
      */
     public function setAdapterId(?string $adapterId = null): self
     {
@@ -86,7 +86,7 @@ class AdapterDTO extends AbstractStructBase
     /**
      * Set adapterType value
      * @param string $adapterType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AdapterDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AdapterDTO
      */
     public function setAdapterType(?string $adapterType = null): self
     {
@@ -109,7 +109,7 @@ class AdapterDTO extends AbstractStructBase
     /**
      * Set classname value
      * @param string $classname
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AdapterDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AdapterDTO
      */
     public function setClassname(?string $classname = null): self
     {
@@ -132,7 +132,7 @@ class AdapterDTO extends AbstractStructBase
     /**
      * Set jndiUrl value
      * @param string $jndiUrl
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AdapterDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AdapterDTO
      */
     public function setJndiUrl(?string $jndiUrl = null): self
     {

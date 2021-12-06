@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class MidocoSalesListByPaymentTypeType extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -118,7 +118,7 @@ class MidocoSalesListByPaymentTypeType extends AbstractStructBase
     /**
      * Set paymentMethod value
      * @param string $paymentMethod
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType
      */
     public function setPaymentMethod(?string $paymentMethod = null): self
     {
@@ -141,7 +141,7 @@ class MidocoSalesListByPaymentTypeType extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -164,7 +164,7 @@ class MidocoSalesListByPaymentTypeType extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -187,7 +187,7 @@ class MidocoSalesListByPaymentTypeType extends AbstractStructBase
     /**
      * Set saleAmount value
      * @param float $saleAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType
      */
     public function setSaleAmount(?float $saleAmount = null): self
     {
@@ -210,7 +210,7 @@ class MidocoSalesListByPaymentTypeType extends AbstractStructBase
     /**
      * Set percentageSaleAmount value
      * @param float $percentageSaleAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType
      */
     public function setPercentageSaleAmount(?float $percentageSaleAmount = null): self
     {
@@ -233,7 +233,7 @@ class MidocoSalesListByPaymentTypeType extends AbstractStructBase
     /**
      * Set paxCount value
      * @param int $paxCount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType
      */
     public function setPaxCount(?int $paxCount = null): self
     {
@@ -256,7 +256,7 @@ class MidocoSalesListByPaymentTypeType extends AbstractStructBase
     /**
      * Set percentagePax value
      * @param float $percentagePax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType
      */
     public function setPercentagePax(?float $percentagePax = null): self
     {

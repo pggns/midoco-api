@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -40,17 +40,17 @@ class GetMidocoGuiAttributeDefinitionRequest extends AbstractStructBase
     }
     /**
      * Set GUIAttributeGroup value
-     * @uses \Pggns\MidocoApi\Api\CrmSD\EnumType\GUIAttributeGroup::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\CrmSD\EnumType\GUIAttributeGroup::getValidValues()
+     * @uses \Pggns\MidocoApi\CrmSD\EnumType\GUIAttributeGroup::valueIsValid()
+     * @uses \Pggns\MidocoApi\CrmSD\EnumType\GUIAttributeGroup::getValidValues()
      * @throws InvalidArgumentException
      * @param string $gUIAttributeGroup
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMidocoGuiAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoGuiAttributeDefinitionRequest
      */
     public function setGUIAttributeGroup(?string $gUIAttributeGroup = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\CrmSD\EnumType\GUIAttributeGroup::valueIsValid($gUIAttributeGroup)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\CrmSD\EnumType\GUIAttributeGroup', is_array($gUIAttributeGroup) ? implode(', ', $gUIAttributeGroup) : var_export($gUIAttributeGroup, true), implode(', ', \Pggns\MidocoApi\Api\CrmSD\EnumType\GUIAttributeGroup::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\CrmSD\EnumType\GUIAttributeGroup::valueIsValid($gUIAttributeGroup)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\CrmSD\EnumType\GUIAttributeGroup', is_array($gUIAttributeGroup) ? implode(', ', $gUIAttributeGroup) : var_export($gUIAttributeGroup, true), implode(', ', \Pggns\MidocoApi\CrmSD\EnumType\GUIAttributeGroup::getValidValues())), __LINE__);
         }
         $this->GUIAttributeGroup = $gUIAttributeGroup;
         

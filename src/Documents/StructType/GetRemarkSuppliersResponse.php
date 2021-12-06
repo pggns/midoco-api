@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetRemarkSuppliersResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoRemarkSupplier
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkSupplier[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoRemarkSupplier[]
      */
     protected ?array $MidocoRemarkSupplier = null;
     /**
      * Constructor method for GetRemarkSuppliersResponse
      * @uses GetRemarkSuppliersResponse::setMidocoRemarkSupplier()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkSupplier[] $midocoRemarkSupplier
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoRemarkSupplier[] $midocoRemarkSupplier
      */
     public function __construct(?array $midocoRemarkSupplier = null)
     {
@@ -34,7 +34,7 @@ class GetRemarkSuppliersResponse extends AbstractStructBase
     }
     /**
      * Get MidocoRemarkSupplier value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkSupplier[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemarkSupplier[]
      */
     public function getMidocoRemarkSupplier(): ?array
     {
@@ -55,12 +55,12 @@ class GetRemarkSuppliersResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getRemarkSuppliersResponseMidocoRemarkSupplierItem) {
             // validation for constraint: itemType
-            if (!$getRemarkSuppliersResponseMidocoRemarkSupplierItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkSupplier) {
+            if (!$getRemarkSuppliersResponseMidocoRemarkSupplierItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoRemarkSupplier) {
                 $invalidValues[] = is_object($getRemarkSuppliersResponseMidocoRemarkSupplierItem) ? get_class($getRemarkSuppliersResponseMidocoRemarkSupplierItem) : sprintf('%s(%s)', gettype($getRemarkSuppliersResponseMidocoRemarkSupplierItem), var_export($getRemarkSuppliersResponseMidocoRemarkSupplierItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRemarkSupplier property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkSupplier, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRemarkSupplier property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoRemarkSupplier, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetRemarkSuppliersResponse extends AbstractStructBase
     /**
      * Set MidocoRemarkSupplier value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkSupplier[] $midocoRemarkSupplier
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetRemarkSuppliersResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoRemarkSupplier[] $midocoRemarkSupplier
+     * @return \Pggns\MidocoApi\Documents\StructType\GetRemarkSuppliersResponse
      */
     public function setMidocoRemarkSupplier(?array $midocoRemarkSupplier = null): self
     {
@@ -85,14 +85,14 @@ class GetRemarkSuppliersResponse extends AbstractStructBase
     /**
      * Add item to MidocoRemarkSupplier value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkSupplier $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetRemarkSuppliersResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoRemarkSupplier $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetRemarkSuppliersResponse
      */
-    public function addToMidocoRemarkSupplier(\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkSupplier $item): self
+    public function addToMidocoRemarkSupplier(\Pggns\MidocoApi\Documents\StructType\MidocoRemarkSupplier $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkSupplier) {
-            throw new InvalidArgumentException(sprintf('The MidocoRemarkSupplier property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkSupplier, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoRemarkSupplier) {
+            throw new InvalidArgumentException(sprintf('The MidocoRemarkSupplier property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoRemarkSupplier, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRemarkSupplier[] = $item;
         

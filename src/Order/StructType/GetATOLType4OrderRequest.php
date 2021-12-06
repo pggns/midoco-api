@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -77,7 +77,7 @@ class GetATOLType4OrderRequest extends AbstractStructBase
      * Set itemId value
      * @throws InvalidArgumentException
      * @param int[] $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetATOLType4OrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetATOLType4OrderRequest
      */
     public function setItemId(?array $itemId = null): self
     {
@@ -93,7 +93,7 @@ class GetATOLType4OrderRequest extends AbstractStructBase
      * Add item to itemId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetATOLType4OrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetATOLType4OrderRequest
      */
     public function addToItemId(int $item): self
     {
@@ -116,7 +116,7 @@ class GetATOLType4OrderRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetATOLType4OrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetATOLType4OrderRequest
      */
     public function setOrderId(?int $orderId = null): self
     {

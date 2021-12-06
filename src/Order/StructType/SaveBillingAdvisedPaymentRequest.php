@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveBillingAdvisedPaymentRequest extends AbstractStructBase
      * The MidocoBillingAdvisedPayment
      * Meta information extracted from the WSDL
      * - ref: MidocoBillingAdvisedPayment
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BillingAdvisedPaymentDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\BillingAdvisedPaymentDTO $MidocoBillingAdvisedPayment = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO $MidocoBillingAdvisedPayment = null;
     /**
      * Constructor method for SaveBillingAdvisedPaymentRequest
      * @uses SaveBillingAdvisedPaymentRequest::setMidocoBillingAdvisedPayment()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment
+     * @param \Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment = null)
     {
         $this
             ->setMidocoBillingAdvisedPayment($midocoBillingAdvisedPayment);
     }
     /**
      * Get MidocoBillingAdvisedPayment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAdvisedPaymentDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO|null
      */
-    public function getMidocoBillingAdvisedPayment(): ?\Pggns\MidocoApi\Api\Order\StructType\BillingAdvisedPaymentDTO
+    public function getMidocoBillingAdvisedPayment(): ?\Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO
     {
         return $this->MidocoBillingAdvisedPayment;
     }
     /**
      * Set MidocoBillingAdvisedPayment value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingAdvisedPaymentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingAdvisedPaymentRequest
      */
-    public function setMidocoBillingAdvisedPayment(?\Pggns\MidocoApi\Api\Order\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment = null): self
+    public function setMidocoBillingAdvisedPayment(?\Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment = null): self
     {
         $this->MidocoBillingAdvisedPayment = $midocoBillingAdvisedPayment;
         

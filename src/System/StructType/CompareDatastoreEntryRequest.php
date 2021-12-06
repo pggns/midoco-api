@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CompareDatastoreEntryRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\System\StructType\CompareDatastoreEntryRequest
+     * @return \Pggns\MidocoApi\System\StructType\CompareDatastoreEntryRequest
      */
     public function setType(?string $type = null): self
     {
@@ -78,7 +78,7 @@ class CompareDatastoreEntryRequest extends AbstractStructBase
     /**
      * Set unitName1 value
      * @param string $unitName1
-     * @return \Pggns\MidocoApi\Api\System\StructType\CompareDatastoreEntryRequest
+     * @return \Pggns\MidocoApi\System\StructType\CompareDatastoreEntryRequest
      */
     public function setUnitName1(?string $unitName1 = null): self
     {
@@ -101,7 +101,7 @@ class CompareDatastoreEntryRequest extends AbstractStructBase
     /**
      * Set unitName2 value
      * @param string $unitName2
-     * @return \Pggns\MidocoApi\Api\System\StructType\CompareDatastoreEntryRequest
+     * @return \Pggns\MidocoApi\System\StructType\CompareDatastoreEntryRequest
      */
     public function setUnitName2(?string $unitName2 = null): self
     {

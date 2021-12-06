@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -182,7 +182,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setName(?string $name = null): self
     {
@@ -205,7 +205,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setForename(?string $forename = null): self
     {
@@ -228,7 +228,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set documentNo value
      * @param string $documentNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setDocumentNo(?string $documentNo = null): self
     {
@@ -251,7 +251,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setType(?string $type = null): self
     {
@@ -274,7 +274,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -297,7 +297,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set printingDate value
      * @param string $printingDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setPrintingDate(?string $printingDate = null): self
     {
@@ -320,7 +320,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -343,7 +343,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set paid value
      * @param bool $paid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setPaid(?bool $paid = null): self
     {
@@ -366,7 +366,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set paidDate value
      * @param string $paidDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setPaidDate(?string $paidDate = null): self
     {
@@ -389,7 +389,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setMedia(?string $media = null): self
     {
@@ -412,7 +412,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set isManuallyCreated value
      * @param bool $isManuallyCreated
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setIsManuallyCreated(?bool $isManuallyCreated = null): self
     {
@@ -435,7 +435,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set collectInvReferenceNo value
      * @param int $collectInvReferenceNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setCollectInvReferenceNo(?int $collectInvReferenceNo = null): self
     {
@@ -458,7 +458,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -481,7 +481,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {
@@ -504,7 +504,7 @@ class MidocoBillingDocInfoForCustomer extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocInfoForCustomer
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

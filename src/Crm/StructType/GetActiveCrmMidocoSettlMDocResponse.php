@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class GetActiveCrmMidocoSettlMDocResponse extends AbstractStructBase
      * The MidocoCrmMidocoSettlMdoc
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmMidocoSettlMdoc
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlMdoc|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlMdoc|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlMdoc $MidocoCrmMidocoSettlMdoc = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlMdoc $MidocoCrmMidocoSettlMdoc = null;
     /**
      * Constructor method for GetActiveCrmMidocoSettlMDocResponse
      * @uses GetActiveCrmMidocoSettlMDocResponse::setMidocoCrmMidocoSettlMdoc()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlMdoc $midocoCrmMidocoSettlMdoc
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlMdoc $midocoCrmMidocoSettlMdoc
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlMdoc $midocoCrmMidocoSettlMdoc = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlMdoc $midocoCrmMidocoSettlMdoc = null)
     {
         $this
             ->setMidocoCrmMidocoSettlMdoc($midocoCrmMidocoSettlMdoc);
     }
     /**
      * Get MidocoCrmMidocoSettlMdoc value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlMdoc|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlMdoc|null
      */
-    public function getMidocoCrmMidocoSettlMdoc(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlMdoc
+    public function getMidocoCrmMidocoSettlMdoc(): ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlMdoc
     {
         return $this->MidocoCrmMidocoSettlMdoc;
     }
     /**
      * Set MidocoCrmMidocoSettlMdoc value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlMdoc $midocoCrmMidocoSettlMdoc
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetActiveCrmMidocoSettlMDocResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlMdoc $midocoCrmMidocoSettlMdoc
+     * @return \Pggns\MidocoApi\Crm\StructType\GetActiveCrmMidocoSettlMDocResponse
      */
-    public function setMidocoCrmMidocoSettlMdoc(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlMdoc $midocoCrmMidocoSettlMdoc = null): self
+    public function setMidocoCrmMidocoSettlMdoc(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlMdoc $midocoCrmMidocoSettlMdoc = null): self
     {
         $this->MidocoCrmMidocoSettlMdoc = $midocoCrmMidocoSettlMdoc;
         

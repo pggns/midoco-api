@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class BankStatemEntryChargeDTO extends AbstractStructBase
     /**
      * Set accountPosition value
      * @param int $accountPosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankStatemEntryChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankStatemEntryChargeDTO
      */
     public function setAccountPosition(?int $accountPosition = null): self
     {
@@ -150,7 +150,7 @@ class BankStatemEntryChargeDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankStatemEntryChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankStatemEntryChargeDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -173,7 +173,7 @@ class BankStatemEntryChargeDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankStatemEntryChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankStatemEntryChargeDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -196,7 +196,7 @@ class BankStatemEntryChargeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankStatemEntryChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankStatemEntryChargeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -219,7 +219,7 @@ class BankStatemEntryChargeDTO extends AbstractStructBase
     /**
      * Set entryPosition value
      * @param int $entryPosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankStatemEntryChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankStatemEntryChargeDTO
      */
     public function setEntryPosition(?int $entryPosition = null): self
     {
@@ -242,7 +242,7 @@ class BankStatemEntryChargeDTO extends AbstractStructBase
     /**
      * Set exchangeRate value
      * @param float $exchangeRate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankStatemEntryChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankStatemEntryChargeDTO
      */
     public function setExchangeRate(?float $exchangeRate = null): self
     {
@@ -265,7 +265,7 @@ class BankStatemEntryChargeDTO extends AbstractStructBase
     /**
      * Set issuer value
      * @param string $issuer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankStatemEntryChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankStatemEntryChargeDTO
      */
     public function setIssuer(?string $issuer = null): self
     {
@@ -288,7 +288,7 @@ class BankStatemEntryChargeDTO extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankStatemEntryChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankStatemEntryChargeDTO
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -311,7 +311,7 @@ class BankStatemEntryChargeDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankStatemEntryChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankStatemEntryChargeDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -334,7 +334,7 @@ class BankStatemEntryChargeDTO extends AbstractStructBase
     /**
      * Set pos value
      * @param int $pos
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankStatemEntryChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankStatemEntryChargeDTO
      */
     public function setPos(?int $pos = null): self
     {
@@ -357,7 +357,7 @@ class BankStatemEntryChargeDTO extends AbstractStructBase
     /**
      * Set statementId value
      * @param int $statementId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankStatemEntryChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankStatemEntryChargeDTO
      */
     public function setStatementId(?int $statementId = null): self
     {
@@ -380,7 +380,7 @@ class BankStatemEntryChargeDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankStatemEntryChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankStatemEntryChargeDTO
      */
     public function setType(?string $type = null): self
     {

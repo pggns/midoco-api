@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class CustomerMfDTO extends AbstractStructBase
     /**
      * Set attrName value
      * @param string $attrName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerMfDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO
      */
     public function setAttrName(?string $attrName = null): self
     {
@@ -134,7 +134,7 @@ class CustomerMfDTO extends AbstractStructBase
     /**
      * Set bean value
      * @param string $bean
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerMfDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO
      */
     public function setBean(?string $bean = null): self
     {
@@ -157,7 +157,7 @@ class CustomerMfDTO extends AbstractStructBase
     /**
      * Set className value
      * @param string $className
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerMfDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO
      */
     public function setClassName(?string $className = null): self
     {
@@ -180,7 +180,7 @@ class CustomerMfDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerMfDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -203,7 +203,7 @@ class CustomerMfDTO extends AbstractStructBase
     /**
      * Set isOptional value
      * @param bool $isOptional
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerMfDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO
      */
     public function setIsOptional(?bool $isOptional = null): self
     {
@@ -226,7 +226,7 @@ class CustomerMfDTO extends AbstractStructBase
     /**
      * Set onlyNumeric value
      * @param bool $onlyNumeric
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerMfDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO
      */
     public function setOnlyNumeric(?bool $onlyNumeric = null): self
     {
@@ -249,7 +249,7 @@ class CustomerMfDTO extends AbstractStructBase
     /**
      * Set presetContent value
      * @param bool $presetContent
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerMfDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO
      */
     public function setPresetContent(?bool $presetContent = null): self
     {
@@ -272,7 +272,7 @@ class CustomerMfDTO extends AbstractStructBase
     /**
      * Set presetValue value
      * @param string $presetValue
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerMfDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO
      */
     public function setPresetValue(?string $presetValue = null): self
     {
@@ -295,7 +295,7 @@ class CustomerMfDTO extends AbstractStructBase
     /**
      * Set printEnforced value
      * @param bool $printEnforced
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerMfDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO
      */
     public function setPrintEnforced(?bool $printEnforced = null): self
     {
@@ -318,7 +318,7 @@ class CustomerMfDTO extends AbstractStructBase
     /**
      * Set printingLabel value
      * @param string $printingLabel
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerMfDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO
      */
     public function setPrintingLabel(?string $printingLabel = null): self
     {

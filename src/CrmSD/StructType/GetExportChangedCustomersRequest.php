@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class GetExportChangedCustomersRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetExportChangedCustomersRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetExportChangedCustomersRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -84,7 +84,7 @@ class GetExportChangedCustomersRequest extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetExportChangedCustomersRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetExportChangedCustomersRequest
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {
@@ -115,7 +115,7 @@ class GetExportChangedCustomersRequest extends AbstractStructBase
     /**
      * Set markAsExported value
      * @param bool $markAsExported
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetExportChangedCustomersRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetExportChangedCustomersRequest
      */
     public function setMarkAsExported(?bool $markAsExported = true): self
     {

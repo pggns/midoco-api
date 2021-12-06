@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,9 +19,9 @@ class MidocoCashTurnoverJournal extends CashTurnoverJournalDTO
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoCashbookQrCodeData
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoCashbookQrCodeData|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoCashbookQrCodeData|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCashbookQrCodeData $MidocoCashbookQrCodeData = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoCashbookQrCodeData $MidocoCashbookQrCodeData = null;
     /**
      * The printVatHint
      * @var bool|null
@@ -43,12 +43,12 @@ class MidocoCashTurnoverJournal extends CashTurnoverJournalDTO
      * @uses MidocoCashTurnoverJournal::setPrintVatHint()
      * @uses MidocoCashTurnoverJournal::setUnitName()
      * @uses MidocoCashTurnoverJournal::setReceiptNo()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoCashbookQrCodeData $midocoCashbookQrCodeData
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoCashbookQrCodeData $midocoCashbookQrCodeData
      * @param bool $printVatHint
      * @param string $unitName
      * @param int $receiptNo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCashbookQrCodeData $midocoCashbookQrCodeData = null, ?bool $printVatHint = null, ?string $unitName = null, ?int $receiptNo = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoCashbookQrCodeData $midocoCashbookQrCodeData = null, ?bool $printVatHint = null, ?string $unitName = null, ?int $receiptNo = null)
     {
         $this
             ->setMidocoCashbookQrCodeData($midocoCashbookQrCodeData)
@@ -58,18 +58,18 @@ class MidocoCashTurnoverJournal extends CashTurnoverJournalDTO
     }
     /**
      * Get MidocoCashbookQrCodeData value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCashbookQrCodeData|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCashbookQrCodeData|null
      */
-    public function getMidocoCashbookQrCodeData(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCashbookQrCodeData
+    public function getMidocoCashbookQrCodeData(): ?\Pggns\MidocoApi\Documents\StructType\MidocoCashbookQrCodeData
     {
         return $this->MidocoCashbookQrCodeData;
     }
     /**
      * Set MidocoCashbookQrCodeData value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoCashbookQrCodeData $midocoCashbookQrCodeData
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCashTurnoverJournal
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoCashbookQrCodeData $midocoCashbookQrCodeData
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCashTurnoverJournal
      */
-    public function setMidocoCashbookQrCodeData(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCashbookQrCodeData $midocoCashbookQrCodeData = null): self
+    public function setMidocoCashbookQrCodeData(?\Pggns\MidocoApi\Documents\StructType\MidocoCashbookQrCodeData $midocoCashbookQrCodeData = null): self
     {
         $this->MidocoCashbookQrCodeData = $midocoCashbookQrCodeData;
         
@@ -86,7 +86,7 @@ class MidocoCashTurnoverJournal extends CashTurnoverJournalDTO
     /**
      * Set printVatHint value
      * @param bool $printVatHint
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCashTurnoverJournal
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCashTurnoverJournal
      */
     public function setPrintVatHint(?bool $printVatHint = null): self
     {
@@ -109,7 +109,7 @@ class MidocoCashTurnoverJournal extends CashTurnoverJournalDTO
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCashTurnoverJournal
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCashTurnoverJournal
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -132,7 +132,7 @@ class MidocoCashTurnoverJournal extends CashTurnoverJournalDTO
     /**
      * Set receiptNo value
      * @param int $receiptNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCashTurnoverJournal
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCashTurnoverJournal
      */
     public function setReceiptNo(?int $receiptNo = null): self
     {

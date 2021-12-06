@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: ErrorInfoAgencyMissingInDocument
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument[]
      */
     protected ?array $ErrorInfoAgencyMissingInDocument = null;
     /**
@@ -34,7 +34,7 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
      * Constructor method for SaveMediatorRevenuesResponse
      * @uses SaveMediatorRevenuesResponse::setErrorInfoAgencyMissingInDocument()
      * @uses SaveMediatorRevenuesResponse::setExcelRows()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument[] $errorInfoAgencyMissingInDocument
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument[] $errorInfoAgencyMissingInDocument
      * @param int[] $excelRows
      */
     public function __construct(?array $errorInfoAgencyMissingInDocument = null, ?array $excelRows = null)
@@ -45,7 +45,7 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
     }
     /**
      * Get ErrorInfoAgencyMissingInDocument value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument[]
      */
     public function getErrorInfoAgencyMissingInDocument(): ?array
     {
@@ -66,12 +66,12 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem) {
             // validation for constraint: itemType
-            if (!$saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument) {
+            if (!$saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem instanceof \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument) {
                 $invalidValues[] = is_object($saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem) ? get_class($saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem) : sprintf('%s(%s)', gettype($saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem), var_export($saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ErrorInfoAgencyMissingInDocument property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ErrorInfoAgencyMissingInDocument property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -80,8 +80,8 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
     /**
      * Set ErrorInfoAgencyMissingInDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument[] $errorInfoAgencyMissingInDocument
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMediatorRevenuesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument[] $errorInfoAgencyMissingInDocument
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorRevenuesResponse
      */
     public function setErrorInfoAgencyMissingInDocument(?array $errorInfoAgencyMissingInDocument = null): self
     {
@@ -96,14 +96,14 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
     /**
      * Add item to ErrorInfoAgencyMissingInDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMediatorRevenuesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorRevenuesResponse
      */
-    public function addToErrorInfoAgencyMissingInDocument(\Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument $item): self
+    public function addToErrorInfoAgencyMissingInDocument(\Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument) {
-            throw new InvalidArgumentException(sprintf('The ErrorInfoAgencyMissingInDocument property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument) {
+            throw new InvalidArgumentException(sprintf('The ErrorInfoAgencyMissingInDocument property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ErrorInfoAgencyMissingInDocument[] = $item;
         
@@ -147,7 +147,7 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
      * Set excelRows value
      * @throws InvalidArgumentException
      * @param int[] $excelRows
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMediatorRevenuesResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorRevenuesResponse
      */
     public function setExcelRows(?array $excelRows = null): self
     {
@@ -163,7 +163,7 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
      * Add item to excelRows value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMediatorRevenuesResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorRevenuesResponse
      */
     public function addToExcelRows(int $item): self
     {

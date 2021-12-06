@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCustomerInfoRequest extends AbstractStructBase
      * - maxOccurs: 500
      * - minOccurs: 1
      * - ref: CustomerInfo
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CustomerInfo[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CustomerInfo[]
      */
     protected array $CustomerInfo;
     /**
      * Constructor method for GetCustomerInfoRequest
      * @uses GetCustomerInfoRequest::setCustomerInfo()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerInfo[] $customerInfo
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerInfo[] $customerInfo
      */
     public function __construct(array $customerInfo)
     {
@@ -34,7 +34,7 @@ class GetCustomerInfoRequest extends AbstractStructBase
     }
     /**
      * Get CustomerInfo value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerInfo[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerInfo[]
      */
     public function getCustomerInfo(): array
     {
@@ -55,12 +55,12 @@ class GetCustomerInfoRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCustomerInfoRequestCustomerInfoItem) {
             // validation for constraint: itemType
-            if (!$getCustomerInfoRequestCustomerInfoItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CustomerInfo) {
+            if (!$getCustomerInfoRequestCustomerInfoItem instanceof \Pggns\MidocoApi\Crm\StructType\CustomerInfo) {
                 $invalidValues[] = is_object($getCustomerInfoRequestCustomerInfoItem) ? get_class($getCustomerInfoRequestCustomerInfoItem) : sprintf('%s(%s)', gettype($getCustomerInfoRequestCustomerInfoItem), var_export($getCustomerInfoRequestCustomerInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CustomerInfo property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CustomerInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CustomerInfo property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CustomerInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCustomerInfoRequest extends AbstractStructBase
     /**
      * Set CustomerInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerInfo[] $customerInfo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerInfoRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerInfo[] $customerInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerInfoRequest
      */
     public function setCustomerInfo(array $customerInfo): self
     {
@@ -89,14 +89,14 @@ class GetCustomerInfoRequest extends AbstractStructBase
     /**
      * Add item to CustomerInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerInfo $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerInfoRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerInfo $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerInfoRequest
      */
-    public function addToCustomerInfo(\Pggns\MidocoApi\Api\Crm\StructType\CustomerInfo $item): self
+    public function addToCustomerInfo(\Pggns\MidocoApi\Crm\StructType\CustomerInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CustomerInfo) {
-            throw new InvalidArgumentException(sprintf('The CustomerInfo property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CustomerInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CustomerInfo) {
+            throw new InvalidArgumentException(sprintf('The CustomerInfo property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CustomerInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(500)
         if (is_array($this->CustomerInfo) && count($this->CustomerInfo) >= 500) {

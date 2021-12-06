@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetSqlMappingInfoResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: SqlMappingInfo
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\SqlMappingInfoType[]
+     * @var \Pggns\MidocoApi\Mis\StructType\SqlMappingInfoType[]
      */
     protected ?array $SqlMappingInfo = null;
     /**
      * Constructor method for GetSqlMappingInfoResponse
      * @uses GetSqlMappingInfoResponse::setSqlMappingInfo()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SqlMappingInfoType[] $sqlMappingInfo
+     * @param \Pggns\MidocoApi\Mis\StructType\SqlMappingInfoType[] $sqlMappingInfo
      */
     public function __construct(?array $sqlMappingInfo = null)
     {
@@ -36,7 +36,7 @@ class GetSqlMappingInfoResponse extends AbstractStructBase
     }
     /**
      * Get SqlMappingInfo value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SqlMappingInfoType[]
+     * @return \Pggns\MidocoApi\Mis\StructType\SqlMappingInfoType[]
      */
     public function getSqlMappingInfo(): ?array
     {
@@ -57,12 +57,12 @@ class GetSqlMappingInfoResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSqlMappingInfoResponseSqlMappingInfoItem) {
             // validation for constraint: itemType
-            if (!$getSqlMappingInfoResponseSqlMappingInfoItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\SqlMappingInfoType) {
+            if (!$getSqlMappingInfoResponseSqlMappingInfoItem instanceof \Pggns\MidocoApi\Mis\StructType\SqlMappingInfoType) {
                 $invalidValues[] = is_object($getSqlMappingInfoResponseSqlMappingInfoItem) ? get_class($getSqlMappingInfoResponseSqlMappingInfoItem) : sprintf('%s(%s)', gettype($getSqlMappingInfoResponseSqlMappingInfoItem), var_export($getSqlMappingInfoResponseSqlMappingInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The SqlMappingInfo property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\SqlMappingInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The SqlMappingInfo property can only contain items of type \Pggns\MidocoApi\Mis\StructType\SqlMappingInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetSqlMappingInfoResponse extends AbstractStructBase
     /**
      * Set SqlMappingInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SqlMappingInfoType[] $sqlMappingInfo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetSqlMappingInfoResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\SqlMappingInfoType[] $sqlMappingInfo
+     * @return \Pggns\MidocoApi\Mis\StructType\GetSqlMappingInfoResponse
      */
     public function setSqlMappingInfo(?array $sqlMappingInfo = null): self
     {
@@ -87,14 +87,14 @@ class GetSqlMappingInfoResponse extends AbstractStructBase
     /**
      * Add item to SqlMappingInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SqlMappingInfoType $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetSqlMappingInfoResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\SqlMappingInfoType $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetSqlMappingInfoResponse
      */
-    public function addToSqlMappingInfo(\Pggns\MidocoApi\Api\Mis\StructType\SqlMappingInfoType $item): self
+    public function addToSqlMappingInfo(\Pggns\MidocoApi\Mis\StructType\SqlMappingInfoType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\SqlMappingInfoType) {
-            throw new InvalidArgumentException(sprintf('The SqlMappingInfo property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\SqlMappingInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\SqlMappingInfoType) {
+            throw new InvalidArgumentException(sprintf('The SqlMappingInfo property can only contain items of type \Pggns\MidocoApi\Mis\StructType\SqlMappingInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->SqlMappingInfo[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SaveAndAssignSignatureDocRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSignatureDoc
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc[]
      */
     protected ?array $MidocoSignatureDoc = null;
     /**
      * Constructor method for SaveAndAssignSignatureDocRequest
      * @uses SaveAndAssignSignatureDocRequest::setMidocoSignatureDoc()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc[] $midocoSignatureDoc
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc[] $midocoSignatureDoc
      */
     public function __construct(?array $midocoSignatureDoc = null)
     {
@@ -34,7 +34,7 @@ class SaveAndAssignSignatureDocRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSignatureDoc value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc[]
      */
     public function getMidocoSignatureDoc(): ?array
     {
@@ -55,12 +55,12 @@ class SaveAndAssignSignatureDocRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveAndAssignSignatureDocRequestMidocoSignatureDocItem) {
             // validation for constraint: itemType
-            if (!$saveAndAssignSignatureDocRequestMidocoSignatureDocItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc) {
+            if (!$saveAndAssignSignatureDocRequestMidocoSignatureDocItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc) {
                 $invalidValues[] = is_object($saveAndAssignSignatureDocRequestMidocoSignatureDocItem) ? get_class($saveAndAssignSignatureDocRequestMidocoSignatureDocItem) : sprintf('%s(%s)', gettype($saveAndAssignSignatureDocRequestMidocoSignatureDocItem), var_export($saveAndAssignSignatureDocRequestMidocoSignatureDocItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSignatureDoc property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSignatureDoc property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SaveAndAssignSignatureDocRequest extends AbstractStructBase
     /**
      * Set MidocoSignatureDoc value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc[] $midocoSignatureDoc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveAndAssignSignatureDocRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc[] $midocoSignatureDoc
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveAndAssignSignatureDocRequest
      */
     public function setMidocoSignatureDoc(?array $midocoSignatureDoc = null): self
     {
@@ -85,14 +85,14 @@ class SaveAndAssignSignatureDocRequest extends AbstractStructBase
     /**
      * Add item to MidocoSignatureDoc value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveAndAssignSignatureDocRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc $item
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveAndAssignSignatureDocRequest
      */
-    public function addToMidocoSignatureDoc(\Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc $item): self
+    public function addToMidocoSignatureDoc(\Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc) {
-            throw new InvalidArgumentException(sprintf('The MidocoSignatureDoc property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc) {
+            throw new InvalidArgumentException(sprintf('The MidocoSignatureDoc property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSignatureDoc[] = $item;
         

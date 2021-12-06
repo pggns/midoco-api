@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class InitializeCashBookSignatureRequest extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InitializeCashBookSignatureRequest
+     * @return \Pggns\MidocoApi\Order\StructType\InitializeCashBookSignatureRequest
      */
     public function setCashBookId(int $cashBookId): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class PaymentProviderImportFormatDTO extends AbstractStructBase
     /**
      * Set format value
      * @param string $format
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentProviderImportFormatDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentProviderImportFormatDTO
      */
     public function setFormat(?string $format = null): self
     {
@@ -70,7 +70,7 @@ class PaymentProviderImportFormatDTO extends AbstractStructBase
     /**
      * Set paymentProviderId value
      * @param string $paymentProviderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentProviderImportFormatDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentProviderImportFormatDTO
      */
     public function setPaymentProviderId(?string $paymentProviderId = null): self
     {

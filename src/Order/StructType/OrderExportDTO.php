@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class OrderExportDTO extends AbstractStructBase
     /**
      * Set exportSystem value
      * @param string $exportSystem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderExportDTO
      */
     public function setExportSystem(?string $exportSystem = null): self
     {
@@ -110,7 +110,7 @@ class OrderExportDTO extends AbstractStructBase
     /**
      * Set exportTime value
      * @param string $exportTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderExportDTO
      */
     public function setExportTime(?string $exportTime = null): self
     {
@@ -133,7 +133,7 @@ class OrderExportDTO extends AbstractStructBase
     /**
      * Set markedForExport value
      * @param bool $markedForExport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderExportDTO
      */
     public function setMarkedForExport(?bool $markedForExport = null): self
     {
@@ -156,7 +156,7 @@ class OrderExportDTO extends AbstractStructBase
     /**
      * Set markedForExportTime value
      * @param string $markedForExportTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderExportDTO
      */
     public function setMarkedForExportTime(?string $markedForExportTime = null): self
     {
@@ -179,7 +179,7 @@ class OrderExportDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderExportDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -202,7 +202,7 @@ class OrderExportDTO extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderExportDTO
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -225,7 +225,7 @@ class OrderExportDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderExportDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

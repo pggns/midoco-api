@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetMidocoSupplierTemplateRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoSupplierTemplateRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoSupplierTemplateRequest
      */
     public function setUnitName(string $unitName): self
     {
@@ -92,7 +92,7 @@ class GetMidocoSupplierTemplateRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoSupplierTemplateRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoSupplierTemplateRequest
      */
     public function setSupplierId(string $supplierId): self
     {
@@ -115,7 +115,7 @@ class GetMidocoSupplierTemplateRequest extends AbstractStructBase
     /**
      * Set templateType value
      * @param string $templateType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoSupplierTemplateRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoSupplierTemplateRequest
      */
     public function setTemplateType(string $templateType): self
     {
@@ -138,7 +138,7 @@ class GetMidocoSupplierTemplateRequest extends AbstractStructBase
     /**
      * Set subType value
      * @param string $subType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoSupplierTemplateRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoSupplierTemplateRequest
      */
     public function setSubType(?string $subType = null): self
     {

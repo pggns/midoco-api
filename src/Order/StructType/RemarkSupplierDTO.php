@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class RemarkSupplierDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkSupplierDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkSupplierDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -78,7 +78,7 @@ class RemarkSupplierDTO extends AbstractStructBase
     /**
      * Set shortId value
      * @param string $shortId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkSupplierDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkSupplierDTO
      */
     public function setShortId(?string $shortId = null): self
     {
@@ -101,7 +101,7 @@ class RemarkSupplierDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkSupplierDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkSupplierDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class AddBillingPosForOfflineCCResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoBillingPosition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType $MidocoBillingPosition = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType $MidocoBillingPosition = null;
     /**
      * Constructor method for AddBillingPosForOfflineCCResponse
      * @uses AddBillingPosForOfflineCCResponse::setMidocoBillingPosition()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType $midocoBillingPosition
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType $midocoBillingPosition
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType $midocoBillingPosition = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType $midocoBillingPosition = null)
     {
         $this
             ->setMidocoBillingPosition($midocoBillingPosition);
     }
     /**
      * Get MidocoBillingPosition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType|null
      */
-    public function getMidocoBillingPosition(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+    public function getMidocoBillingPosition(): ?\Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
     {
         return $this->MidocoBillingPosition;
     }
     /**
      * Set MidocoBillingPosition value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType $midocoBillingPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddBillingPosForOfflineCCResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType $midocoBillingPosition
+     * @return \Pggns\MidocoApi\Order\StructType\AddBillingPosForOfflineCCResponse
      */
-    public function setMidocoBillingPosition(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType $midocoBillingPosition = null): self
+    public function setMidocoBillingPosition(?\Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType $midocoBillingPosition = null): self
     {
         $this->MidocoBillingPosition = $midocoBillingPosition;
         

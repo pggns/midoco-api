@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetMarketingKeyDescriptionsForTypeRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMarketingKeyDescriptionsForTypeRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMarketingKeyDescriptionsForTypeRequest
      */
     public function setType(?string $type = null): self
     {
@@ -70,7 +70,7 @@ class GetMarketingKeyDescriptionsForTypeRequest extends AbstractStructBase
     /**
      * Set marketingKey value
      * @param string $marketingKey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMarketingKeyDescriptionsForTypeRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMarketingKeyDescriptionsForTypeRequest
      */
     public function setMarketingKey(?string $marketingKey = null): self
     {

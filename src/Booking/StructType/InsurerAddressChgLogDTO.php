@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class InsurerAddressChgLogDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsurerAddressChgLogDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\InsurerAddressChgLogDTO
      */
     public function setAction(?string $action = null): self
     {
@@ -118,7 +118,7 @@ class InsurerAddressChgLogDTO extends AbstractStructBase
     /**
      * Set addressId value
      * @param int $addressId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsurerAddressChgLogDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\InsurerAddressChgLogDTO
      */
     public function setAddressId(?int $addressId = null): self
     {
@@ -141,7 +141,7 @@ class InsurerAddressChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsurerAddressChgLogDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\InsurerAddressChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -164,7 +164,7 @@ class InsurerAddressChgLogDTO extends AbstractStructBase
     /**
      * Set insurerId value
      * @param int $insurerId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsurerAddressChgLogDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\InsurerAddressChgLogDTO
      */
     public function setInsurerId(?int $insurerId = null): self
     {
@@ -187,7 +187,7 @@ class InsurerAddressChgLogDTO extends AbstractStructBase
     /**
      * Set insurerName value
      * @param string $insurerName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsurerAddressChgLogDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\InsurerAddressChgLogDTO
      */
     public function setInsurerName(?string $insurerName = null): self
     {
@@ -210,7 +210,7 @@ class InsurerAddressChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsurerAddressChgLogDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\InsurerAddressChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -233,7 +233,7 @@ class InsurerAddressChgLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsurerAddressChgLogDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\InsurerAddressChgLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -256,7 +256,7 @@ class InsurerAddressChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsurerAddressChgLogDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\InsurerAddressChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

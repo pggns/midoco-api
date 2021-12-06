@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class RevokePrintsFromRemarkRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPrintDescription
-     * @var \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO[]
+     * @var \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO[]
      */
     protected ?array $MidocoPrintDescription = null;
     /**
@@ -37,7 +37,7 @@ class RevokePrintsFromRemarkRequest extends AbstractStructBase
      * @uses RevokePrintsFromRemarkRequest::setMidocoPrintDescription()
      * @uses RevokePrintsFromRemarkRequest::setUnitName()
      * @uses RevokePrintsFromRemarkRequest::setPrintDestId()
-     * @param \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO[] $midocoPrintDescription
+     * @param \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO[] $midocoPrintDescription
      * @param string $unitName
      * @param string $printDestId
      */
@@ -50,7 +50,7 @@ class RevokePrintsFromRemarkRequest extends AbstractStructBase
     }
     /**
      * Get MidocoPrintDescription value
-     * @return \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO[]
+     * @return \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO[]
      */
     public function getMidocoPrintDescription(): ?array
     {
@@ -71,12 +71,12 @@ class RevokePrintsFromRemarkRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $revokePrintsFromRemarkRequestMidocoPrintDescriptionItem) {
             // validation for constraint: itemType
-            if (!$revokePrintsFromRemarkRequestMidocoPrintDescriptionItem instanceof \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO) {
+            if (!$revokePrintsFromRemarkRequestMidocoPrintDescriptionItem instanceof \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO) {
                 $invalidValues[] = is_object($revokePrintsFromRemarkRequestMidocoPrintDescriptionItem) ? get_class($revokePrintsFromRemarkRequestMidocoPrintDescriptionItem) : sprintf('%s(%s)', gettype($revokePrintsFromRemarkRequestMidocoPrintDescriptionItem), var_export($revokePrintsFromRemarkRequestMidocoPrintDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class RevokePrintsFromRemarkRequest extends AbstractStructBase
     /**
      * Set MidocoPrintDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO[] $midocoPrintDescription
-     * @return \Pggns\MidocoApi\Api\System\StructType\RevokePrintsFromRemarkRequest
+     * @param \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO[] $midocoPrintDescription
+     * @return \Pggns\MidocoApi\System\StructType\RevokePrintsFromRemarkRequest
      */
     public function setMidocoPrintDescription(?array $midocoPrintDescription = null): self
     {
@@ -101,14 +101,14 @@ class RevokePrintsFromRemarkRequest extends AbstractStructBase
     /**
      * Add item to MidocoPrintDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\RevokePrintsFromRemarkRequest
+     * @param \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO $item
+     * @return \Pggns\MidocoApi\System\StructType\RevokePrintsFromRemarkRequest
      */
-    public function addToMidocoPrintDescription(\Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO $item): self
+    public function addToMidocoPrintDescription(\Pggns\MidocoApi\System\StructType\PrintDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintDescription[] = $item;
         
@@ -125,7 +125,7 @@ class RevokePrintsFromRemarkRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\RevokePrintsFromRemarkRequest
+     * @return \Pggns\MidocoApi\System\StructType\RevokePrintsFromRemarkRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -148,7 +148,7 @@ class RevokePrintsFromRemarkRequest extends AbstractStructBase
     /**
      * Set printDestId value
      * @param string $printDestId
-     * @return \Pggns\MidocoApi\Api\System\StructType\RevokePrintsFromRemarkRequest
+     * @return \Pggns\MidocoApi\System\StructType\RevokePrintsFromRemarkRequest
      */
     public function setPrintDestId(?string $printDestId = null): self
     {

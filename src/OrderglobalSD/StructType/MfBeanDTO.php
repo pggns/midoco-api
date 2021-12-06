@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MfBeanDTO extends AbstractStructBase
     /**
      * Set bean value
      * @param string $bean
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MfBeanDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MfBeanDTO
      */
     public function setBean(?string $bean = null): self
     {

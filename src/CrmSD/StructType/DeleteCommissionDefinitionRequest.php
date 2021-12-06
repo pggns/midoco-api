@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteCommissionDefinitionRequest extends AbstractStructBase
     /**
      * Set commissionId value
      * @param int $commissionId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCommissionDefinitionRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCommissionDefinitionRequest
      */
     public function setCommissionId(?int $commissionId = null): self
     {

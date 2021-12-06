@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class StatistikAtDataDTO extends AbstractStructBase
     /**
      * Set cityCode value
      * @param string $cityCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtDataDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtDataDTO
      */
     public function setCityCode(?string $cityCode = null): self
     {
@@ -158,7 +158,7 @@ class StatistikAtDataDTO extends AbstractStructBase
     /**
      * Set importId value
      * @param int $importId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtDataDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtDataDTO
      */
     public function setImportId(?int $importId = null): self
     {
@@ -181,7 +181,7 @@ class StatistikAtDataDTO extends AbstractStructBase
     /**
      * Set municipalityCode value
      * @param string $municipalityCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtDataDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtDataDTO
      */
     public function setMunicipalityCode(?string $municipalityCode = null): self
     {
@@ -204,7 +204,7 @@ class StatistikAtDataDTO extends AbstractStructBase
     /**
      * Set politicalCommunity value
      * @param string $politicalCommunity
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtDataDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtDataDTO
      */
     public function setPoliticalCommunity(?string $politicalCommunity = null): self
     {
@@ -227,7 +227,7 @@ class StatistikAtDataDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtDataDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtDataDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -250,7 +250,7 @@ class StatistikAtDataDTO extends AbstractStructBase
     /**
      * Set streetCode value
      * @param string $streetCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtDataDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtDataDTO
      */
     public function setStreetCode(?string $streetCode = null): self
     {
@@ -273,7 +273,7 @@ class StatistikAtDataDTO extends AbstractStructBase
     /**
      * Set streetName value
      * @param string $streetName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtDataDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtDataDTO
      */
     public function setStreetName(?string $streetName = null): self
     {
@@ -296,7 +296,7 @@ class StatistikAtDataDTO extends AbstractStructBase
     /**
      * Set streetNamePhonetic value
      * @param string $streetNamePhonetic
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtDataDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtDataDTO
      */
     public function setStreetNamePhonetic(?string $streetNamePhonetic = null): self
     {
@@ -319,7 +319,7 @@ class StatistikAtDataDTO extends AbstractStructBase
     /**
      * Set streetNameUpper value
      * @param string $streetNameUpper
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtDataDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtDataDTO
      */
     public function setStreetNameUpper(?string $streetNameUpper = null): self
     {
@@ -342,7 +342,7 @@ class StatistikAtDataDTO extends AbstractStructBase
     /**
      * Set townCode value
      * @param string $townCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtDataDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtDataDTO
      */
     public function setTownCode(?string $townCode = null): self
     {
@@ -365,7 +365,7 @@ class StatistikAtDataDTO extends AbstractStructBase
     /**
      * Set townName value
      * @param string $townName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtDataDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtDataDTO
      */
     public function setTownName(?string $townName = null): self
     {
@@ -388,7 +388,7 @@ class StatistikAtDataDTO extends AbstractStructBase
     /**
      * Set townNamePhonetic value
      * @param string $townNamePhonetic
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtDataDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtDataDTO
      */
     public function setTownNamePhonetic(?string $townNamePhonetic = null): self
     {
@@ -411,7 +411,7 @@ class StatistikAtDataDTO extends AbstractStructBase
     /**
      * Set townNameUpper value
      * @param string $townNameUpper
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtDataDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtDataDTO
      */
     public function setTownNameUpper(?string $townNameUpper = null): self
     {

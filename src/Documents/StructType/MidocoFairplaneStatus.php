@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoFairplaneStatus extends FairplaneStatusDTO
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFairplaneStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFairplaneStatus
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -102,7 +102,7 @@ class MidocoFairplaneStatus extends FairplaneStatusDTO
     /**
      * Set segmentNo value
      * @param int $segmentNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFairplaneStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFairplaneStatus
      */
     public function setSegmentNo(?int $segmentNo = null): self
     {
@@ -125,7 +125,7 @@ class MidocoFairplaneStatus extends FairplaneStatusDTO
     /**
      * Set delay value
      * @param string $delay
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFairplaneStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFairplaneStatus
      */
     public function setDelay(?string $delay = null): self
     {
@@ -148,7 +148,7 @@ class MidocoFairplaneStatus extends FairplaneStatusDTO
     /**
      * Set flightCanceled value
      * @param bool $flightCanceled
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFairplaneStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFairplaneStatus
      */
     public function setFlightCanceled(?bool $flightCanceled = null): self
     {
@@ -171,7 +171,7 @@ class MidocoFairplaneStatus extends FairplaneStatusDTO
     /**
      * Set estimatedCompensation value
      * @param string $estimatedCompensation
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFairplaneStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFairplaneStatus
      */
     public function setEstimatedCompensation(?string $estimatedCompensation = null): self
     {
@@ -194,7 +194,7 @@ class MidocoFairplaneStatus extends FairplaneStatusDTO
     /**
      * Set fairplaneLink value
      * @param string $fairplaneLink
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFairplaneStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFairplaneStatus
      */
     public function setFairplaneLink(?string $fairplaneLink = null): self
     {

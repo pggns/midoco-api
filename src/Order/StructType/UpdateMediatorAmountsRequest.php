@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class UpdateMediatorAmountsRequest extends AbstractStructBase
     /**
      * Set travelTypes value
      * @param string $travelTypes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateMediatorAmountsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateMediatorAmountsRequest
      */
     public function setTravelTypes(?string $travelTypes = null): self
     {
@@ -118,7 +118,7 @@ class UpdateMediatorAmountsRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateMediatorAmountsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateMediatorAmountsRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -141,7 +141,7 @@ class UpdateMediatorAmountsRequest extends AbstractStructBase
     /**
      * Set mediatorType value
      * @param string $mediatorType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateMediatorAmountsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateMediatorAmountsRequest
      */
     public function setMediatorType(?string $mediatorType = null): self
     {
@@ -164,7 +164,7 @@ class UpdateMediatorAmountsRequest extends AbstractStructBase
     /**
      * Set fromDate value
      * @param string $fromDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateMediatorAmountsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateMediatorAmountsRequest
      */
     public function setFromDate(?string $fromDate = null): self
     {
@@ -191,7 +191,7 @@ class UpdateMediatorAmountsRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateMediatorAmountsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateMediatorAmountsRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -218,7 +218,7 @@ class UpdateMediatorAmountsRequest extends AbstractStructBase
     /**
      * Set excludedTravelTypes value
      * @param string $excludedTravelTypes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateMediatorAmountsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateMediatorAmountsRequest
      */
     public function setExcludedTravelTypes(?string $excludedTravelTypes = null): self
     {
@@ -241,7 +241,7 @@ class UpdateMediatorAmountsRequest extends AbstractStructBase
     /**
      * Set includeSettledBookings value
      * @param bool $includeSettledBookings
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateMediatorAmountsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateMediatorAmountsRequest
      */
     public function setIncludeSettledBookings(?bool $includeSettledBookings = false): self
     {

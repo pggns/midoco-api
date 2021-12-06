@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class SalesListByPaymentTypeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSalesListByPaymentType
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType[]
      */
     protected ?array $MidocoSalesListByPaymentType = null;
     /**
@@ -31,19 +31,19 @@ class SalesListByPaymentTypeResponse extends AbstractStructBase
     protected ?int $noOfResults = null;
     /**
      * The SalesListsByPaymentTypeSums
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType $SalesListsByPaymentTypeSums = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType $SalesListsByPaymentTypeSums = null;
     /**
      * Constructor method for SalesListByPaymentTypeResponse
      * @uses SalesListByPaymentTypeResponse::setMidocoSalesListByPaymentType()
      * @uses SalesListByPaymentTypeResponse::setNoOfResults()
      * @uses SalesListByPaymentTypeResponse::setSalesListsByPaymentTypeSums()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType[] $midocoSalesListByPaymentType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType[] $midocoSalesListByPaymentType
      * @param int $noOfResults
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType $salesListsByPaymentTypeSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType $salesListsByPaymentTypeSums
      */
-    public function __construct(?array $midocoSalesListByPaymentType = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType $salesListsByPaymentTypeSums = null)
+    public function __construct(?array $midocoSalesListByPaymentType = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType $salesListsByPaymentTypeSums = null)
     {
         $this
             ->setMidocoSalesListByPaymentType($midocoSalesListByPaymentType)
@@ -52,7 +52,7 @@ class SalesListByPaymentTypeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSalesListByPaymentType value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType[]
      */
     public function getMidocoSalesListByPaymentType(): ?array
     {
@@ -73,12 +73,12 @@ class SalesListByPaymentTypeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $salesListByPaymentTypeResponseMidocoSalesListByPaymentTypeItem) {
             // validation for constraint: itemType
-            if (!$salesListByPaymentTypeResponseMidocoSalesListByPaymentTypeItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType) {
+            if (!$salesListByPaymentTypeResponseMidocoSalesListByPaymentTypeItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType) {
                 $invalidValues[] = is_object($salesListByPaymentTypeResponseMidocoSalesListByPaymentTypeItem) ? get_class($salesListByPaymentTypeResponseMidocoSalesListByPaymentTypeItem) : sprintf('%s(%s)', gettype($salesListByPaymentTypeResponseMidocoSalesListByPaymentTypeItem), var_export($salesListByPaymentTypeResponseMidocoSalesListByPaymentTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSalesListByPaymentType property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSalesListByPaymentType property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -87,8 +87,8 @@ class SalesListByPaymentTypeResponse extends AbstractStructBase
     /**
      * Set MidocoSalesListByPaymentType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType[] $midocoSalesListByPaymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByPaymentTypeResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType[] $midocoSalesListByPaymentType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByPaymentTypeResponse
      */
     public function setMidocoSalesListByPaymentType(?array $midocoSalesListByPaymentType = null): self
     {
@@ -103,14 +103,14 @@ class SalesListByPaymentTypeResponse extends AbstractStructBase
     /**
      * Add item to MidocoSalesListByPaymentType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByPaymentTypeResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByPaymentTypeResponse
      */
-    public function addToMidocoSalesListByPaymentType(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType $item): self
+    public function addToMidocoSalesListByPaymentType(\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType) {
-            throw new InvalidArgumentException(sprintf('The MidocoSalesListByPaymentType property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType) {
+            throw new InvalidArgumentException(sprintf('The MidocoSalesListByPaymentType property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSalesListByPaymentType[] = $item;
         
@@ -127,7 +127,7 @@ class SalesListByPaymentTypeResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByPaymentTypeResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByPaymentTypeResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {
@@ -141,18 +141,18 @@ class SalesListByPaymentTypeResponse extends AbstractStructBase
     }
     /**
      * Get SalesListsByPaymentTypeSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType|null
      */
-    public function getSalesListsByPaymentTypeSums(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType
+    public function getSalesListsByPaymentTypeSums(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType
     {
         return $this->SalesListsByPaymentTypeSums;
     }
     /**
      * Set SalesListsByPaymentTypeSums value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType $salesListsByPaymentTypeSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByPaymentTypeResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType $salesListsByPaymentTypeSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByPaymentTypeResponse
      */
-    public function setSalesListsByPaymentTypeSums(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeType $salesListsByPaymentTypeSums = null): self
+    public function setSalesListsByPaymentTypeSums(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeType $salesListsByPaymentTypeSums = null): self
     {
         $this->SalesListsByPaymentTypeSums = $salesListsByPaymentTypeSums;
         

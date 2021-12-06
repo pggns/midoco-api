@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CrossSellingVersInfo extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrossSellingVersInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrossSellingVersInfo
      */
     public function setName(?string $name = null): self
     {
@@ -86,7 +86,7 @@ class CrossSellingVersInfo extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrossSellingVersInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrossSellingVersInfo
      */
     public function setPrice(?float $price = null): self
     {
@@ -109,7 +109,7 @@ class CrossSellingVersInfo extends AbstractStructBase
     /**
      * Set link value
      * @param string $link
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrossSellingVersInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrossSellingVersInfo
      */
     public function setLink(?string $link = null): self
     {
@@ -132,7 +132,7 @@ class CrossSellingVersInfo extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrossSellingVersInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrossSellingVersInfo
      */
     public function setCurrency(?string $currency = null): self
     {

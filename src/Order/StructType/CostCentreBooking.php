@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class CostCentreBooking extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CostCentreBooking
+     * @return \Pggns\MidocoApi\Order\StructType\CostCentreBooking
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -84,7 +84,7 @@ class CostCentreBooking extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CostCentreBooking
+     * @return \Pggns\MidocoApi\Order\StructType\CostCentreBooking
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -107,7 +107,7 @@ class CostCentreBooking extends AbstractStructBase
     /**
      * Set costAmount value
      * @param float $costAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CostCentreBooking
+     * @return \Pggns\MidocoApi\Order\StructType\CostCentreBooking
      */
     public function setCostAmount(?float $costAmount = null): self
     {

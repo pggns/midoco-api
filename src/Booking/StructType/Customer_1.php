@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,31 +19,31 @@ class Customer_1 extends AbstractStructBase
      * The PrivateData
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1|null
+     * @var \Pggns\MidocoApi\Booking\StructType\PrivateData_1|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1 $PrivateData = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\PrivateData_1 $PrivateData = null;
     /**
      * The CompanyData
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\CompanyData_1|null
+     * @var \Pggns\MidocoApi\Booking\StructType\CompanyData_1|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\CompanyData_1 $CompanyData = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\CompanyData_1 $CompanyData = null;
     /**
      * The Address
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: Address
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Address|null
+     * @var \Pggns\MidocoApi\Booking\StructType\Address|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\Address $Address = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\Address $Address = null;
     /**
      * The Communication
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Communication_1[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Communication_1[]
      */
     protected ?array $Communication = null;
     /**
@@ -121,10 +121,10 @@ class Customer_1 extends AbstractStructBase
      * @uses Customer_1::setReferenceUrl()
      * @uses Customer_1::setType()
      * @uses Customer_1::setOverrideExistingOrderCustomer()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1 $privateData
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CompanyData_1 $companyData
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Address $address
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Communication_1[] $communication
+     * @param \Pggns\MidocoApi\Booking\StructType\PrivateData_1 $privateData
+     * @param \Pggns\MidocoApi\Booking\StructType\CompanyData_1 $companyData
+     * @param \Pggns\MidocoApi\Booking\StructType\Address $address
+     * @param \Pggns\MidocoApi\Booking\StructType\Communication_1[] $communication
      * @param int[] $creditCardRefId
      * @param int[] $bankAccountRefId
      * @param int $midocoCustomerId
@@ -134,7 +134,7 @@ class Customer_1 extends AbstractStructBase
      * @param string $type
      * @param bool $overrideExistingOrderCustomer
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1 $privateData = null, ?\Pggns\MidocoApi\Api\Booking\StructType\CompanyData_1 $companyData = null, ?\Pggns\MidocoApi\Api\Booking\StructType\Address $address = null, ?array $communication = null, ?array $creditCardRefId = null, ?array $bankAccountRefId = null, ?int $midocoCustomerId = null, ?string $referenceCustomerId = null, ?string $referenceSystem = null, ?string $referenceUrl = null, ?string $type = 'INVOICE', ?bool $overrideExistingOrderCustomer = false)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\PrivateData_1 $privateData = null, ?\Pggns\MidocoApi\Booking\StructType\CompanyData_1 $companyData = null, ?\Pggns\MidocoApi\Booking\StructType\Address $address = null, ?array $communication = null, ?array $creditCardRefId = null, ?array $bankAccountRefId = null, ?int $midocoCustomerId = null, ?string $referenceCustomerId = null, ?string $referenceSystem = null, ?string $referenceUrl = null, ?string $type = 'INVOICE', ?bool $overrideExistingOrderCustomer = false)
     {
         $this
             ->setPrivateData($privateData)
@@ -152,18 +152,18 @@ class Customer_1 extends AbstractStructBase
     }
     /**
      * Get PrivateData value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1|null
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData_1|null
      */
-    public function getPrivateData(): ?\Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1
+    public function getPrivateData(): ?\Pggns\MidocoApi\Booking\StructType\PrivateData_1
     {
         return $this->PrivateData;
     }
     /**
      * Set PrivateData value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1 $privateData
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @param \Pggns\MidocoApi\Booking\StructType\PrivateData_1 $privateData
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
-    public function setPrivateData(?\Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1 $privateData = null): self
+    public function setPrivateData(?\Pggns\MidocoApi\Booking\StructType\PrivateData_1 $privateData = null): self
     {
         $this->PrivateData = $privateData;
         
@@ -171,18 +171,18 @@ class Customer_1 extends AbstractStructBase
     }
     /**
      * Get CompanyData value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CompanyData_1|null
+     * @return \Pggns\MidocoApi\Booking\StructType\CompanyData_1|null
      */
-    public function getCompanyData(): ?\Pggns\MidocoApi\Api\Booking\StructType\CompanyData_1
+    public function getCompanyData(): ?\Pggns\MidocoApi\Booking\StructType\CompanyData_1
     {
         return $this->CompanyData;
     }
     /**
      * Set CompanyData value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CompanyData_1 $companyData
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @param \Pggns\MidocoApi\Booking\StructType\CompanyData_1 $companyData
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
-    public function setCompanyData(?\Pggns\MidocoApi\Api\Booking\StructType\CompanyData_1 $companyData = null): self
+    public function setCompanyData(?\Pggns\MidocoApi\Booking\StructType\CompanyData_1 $companyData = null): self
     {
         $this->CompanyData = $companyData;
         
@@ -190,18 +190,18 @@ class Customer_1 extends AbstractStructBase
     }
     /**
      * Get Address value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Address|null
+     * @return \Pggns\MidocoApi\Booking\StructType\Address|null
      */
-    public function getAddress(): ?\Pggns\MidocoApi\Api\Booking\StructType\Address
+    public function getAddress(): ?\Pggns\MidocoApi\Booking\StructType\Address
     {
         return $this->Address;
     }
     /**
      * Set Address value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Address $address
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @param \Pggns\MidocoApi\Booking\StructType\Address $address
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
-    public function setAddress(?\Pggns\MidocoApi\Api\Booking\StructType\Address $address = null): self
+    public function setAddress(?\Pggns\MidocoApi\Booking\StructType\Address $address = null): self
     {
         $this->Address = $address;
         
@@ -209,7 +209,7 @@ class Customer_1 extends AbstractStructBase
     }
     /**
      * Get Communication value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Communication_1[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Communication_1[]
      */
     public function getCommunication(): ?array
     {
@@ -230,12 +230,12 @@ class Customer_1 extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $customerCommunicationItem) {
             // validation for constraint: itemType
-            if (!$customerCommunicationItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Communication_1) {
+            if (!$customerCommunicationItem instanceof \Pggns\MidocoApi\Booking\StructType\Communication_1) {
                 $invalidValues[] = is_object($customerCommunicationItem) ? get_class($customerCommunicationItem) : sprintf('%s(%s)', gettype($customerCommunicationItem), var_export($customerCommunicationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Communication property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Communication_1, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Communication property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Communication_1, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -244,8 +244,8 @@ class Customer_1 extends AbstractStructBase
     /**
      * Set Communication value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Communication_1[] $communication
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @param \Pggns\MidocoApi\Booking\StructType\Communication_1[] $communication
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
     public function setCommunication(?array $communication = null): self
     {
@@ -260,14 +260,14 @@ class Customer_1 extends AbstractStructBase
     /**
      * Add item to Communication value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Communication_1 $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @param \Pggns\MidocoApi\Booking\StructType\Communication_1 $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
-    public function addToCommunication(\Pggns\MidocoApi\Api\Booking\StructType\Communication_1 $item): self
+    public function addToCommunication(\Pggns\MidocoApi\Booking\StructType\Communication_1 $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Communication_1) {
-            throw new InvalidArgumentException(sprintf('The Communication property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Communication_1, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Communication_1) {
+            throw new InvalidArgumentException(sprintf('The Communication property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Communication_1, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Communication[] = $item;
         
@@ -311,7 +311,7 @@ class Customer_1 extends AbstractStructBase
      * Set CreditCardRefId value
      * @throws InvalidArgumentException
      * @param int[] $creditCardRefId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
     public function setCreditCardRefId(?array $creditCardRefId = null): self
     {
@@ -327,7 +327,7 @@ class Customer_1 extends AbstractStructBase
      * Add item to CreditCardRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
     public function addToCreditCardRefId(int $item): self
     {
@@ -377,7 +377,7 @@ class Customer_1 extends AbstractStructBase
      * Set BankAccountRefId value
      * @throws InvalidArgumentException
      * @param int[] $bankAccountRefId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
     public function setBankAccountRefId(?array $bankAccountRefId = null): self
     {
@@ -393,7 +393,7 @@ class Customer_1 extends AbstractStructBase
      * Add item to BankAccountRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
     public function addToBankAccountRefId(int $item): self
     {
@@ -416,7 +416,7 @@ class Customer_1 extends AbstractStructBase
     /**
      * Set midocoCustomerId value
      * @param int $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
     public function setMidocoCustomerId(?int $midocoCustomerId = null): self
     {
@@ -439,7 +439,7 @@ class Customer_1 extends AbstractStructBase
     /**
      * Set referenceCustomerId value
      * @param string $referenceCustomerId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
     public function setReferenceCustomerId(?string $referenceCustomerId = null): self
     {
@@ -462,7 +462,7 @@ class Customer_1 extends AbstractStructBase
     /**
      * Set referenceSystem value
      * @param string $referenceSystem
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
     public function setReferenceSystem(?string $referenceSystem = null): self
     {
@@ -485,7 +485,7 @@ class Customer_1 extends AbstractStructBase
     /**
      * Set referenceUrl value
      * @param string $referenceUrl
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
     public function setReferenceUrl(?string $referenceUrl = null): self
     {
@@ -508,7 +508,7 @@ class Customer_1 extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
     public function setType(?string $type = 'INVOICE'): self
     {
@@ -531,7 +531,7 @@ class Customer_1 extends AbstractStructBase
     /**
      * Set overrideExistingOrderCustomer value
      * @param bool $overrideExistingOrderCustomer
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Customer_1
+     * @return \Pggns\MidocoApi\Booking\StructType\Customer_1
      */
     public function setOverrideExistingOrderCustomer(?bool $overrideExistingOrderCustomer = false): self
     {

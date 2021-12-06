@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetProcessAssignResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoProcessAssign
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\ProcessAssignDTO[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\ProcessAssignDTO[]
      */
     protected ?array $MidocoProcessAssign = null;
     /**
      * Constructor method for GetProcessAssignResponse
      * @uses GetProcessAssignResponse::setMidocoProcessAssign()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\ProcessAssignDTO[] $midocoProcessAssign
+     * @param \Pggns\MidocoApi\Workflow\StructType\ProcessAssignDTO[] $midocoProcessAssign
      */
     public function __construct(?array $midocoProcessAssign = null)
     {
@@ -34,7 +34,7 @@ class GetProcessAssignResponse extends AbstractStructBase
     }
     /**
      * Get MidocoProcessAssign value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ProcessAssignDTO[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\ProcessAssignDTO[]
      */
     public function getMidocoProcessAssign(): ?array
     {
@@ -55,12 +55,12 @@ class GetProcessAssignResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getProcessAssignResponseMidocoProcessAssignItem) {
             // validation for constraint: itemType
-            if (!$getProcessAssignResponseMidocoProcessAssignItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\ProcessAssignDTO) {
+            if (!$getProcessAssignResponseMidocoProcessAssignItem instanceof \Pggns\MidocoApi\Workflow\StructType\ProcessAssignDTO) {
                 $invalidValues[] = is_object($getProcessAssignResponseMidocoProcessAssignItem) ? get_class($getProcessAssignResponseMidocoProcessAssignItem) : sprintf('%s(%s)', gettype($getProcessAssignResponseMidocoProcessAssignItem), var_export($getProcessAssignResponseMidocoProcessAssignItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoProcessAssign property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\ProcessAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoProcessAssign property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\ProcessAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetProcessAssignResponse extends AbstractStructBase
     /**
      * Set MidocoProcessAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\ProcessAssignDTO[] $midocoProcessAssign
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetProcessAssignResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\ProcessAssignDTO[] $midocoProcessAssign
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetProcessAssignResponse
      */
     public function setMidocoProcessAssign(?array $midocoProcessAssign = null): self
     {
@@ -85,14 +85,14 @@ class GetProcessAssignResponse extends AbstractStructBase
     /**
      * Add item to MidocoProcessAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\ProcessAssignDTO $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetProcessAssignResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\ProcessAssignDTO $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetProcessAssignResponse
      */
-    public function addToMidocoProcessAssign(\Pggns\MidocoApi\Api\Workflow\StructType\ProcessAssignDTO $item): self
+    public function addToMidocoProcessAssign(\Pggns\MidocoApi\Workflow\StructType\ProcessAssignDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\ProcessAssignDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoProcessAssign property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\ProcessAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\ProcessAssignDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoProcessAssign property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\ProcessAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoProcessAssign[] = $item;
         

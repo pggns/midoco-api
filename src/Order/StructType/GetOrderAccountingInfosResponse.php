@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetOrderAccountingInfosResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: AccountingInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType[]
+     * @var \Pggns\MidocoApi\Order\StructType\AccountingInfoType[]
      */
     protected ?array $AccountingInfo = null;
     /**
      * Constructor method for GetOrderAccountingInfosResponse
      * @uses GetOrderAccountingInfosResponse::setAccountingInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType[] $accountingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\AccountingInfoType[] $accountingInfo
      */
     public function __construct(?array $accountingInfo = null)
     {
@@ -34,7 +34,7 @@ class GetOrderAccountingInfosResponse extends AbstractStructBase
     }
     /**
      * Get AccountingInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType[]
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType[]
      */
     public function getAccountingInfo(): ?array
     {
@@ -55,12 +55,12 @@ class GetOrderAccountingInfosResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderAccountingInfosResponseAccountingInfoItem) {
             // validation for constraint: itemType
-            if (!$getOrderAccountingInfosResponseAccountingInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType) {
+            if (!$getOrderAccountingInfosResponseAccountingInfoItem instanceof \Pggns\MidocoApi\Order\StructType\AccountingInfoType) {
                 $invalidValues[] = is_object($getOrderAccountingInfosResponseAccountingInfoItem) ? get_class($getOrderAccountingInfosResponseAccountingInfoItem) : sprintf('%s(%s)', gettype($getOrderAccountingInfosResponseAccountingInfoItem), var_export($getOrderAccountingInfosResponseAccountingInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AccountingInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AccountingInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\AccountingInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetOrderAccountingInfosResponse extends AbstractStructBase
     /**
      * Set AccountingInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType[] $accountingInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderAccountingInfosResponse
+     * @param \Pggns\MidocoApi\Order\StructType\AccountingInfoType[] $accountingInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderAccountingInfosResponse
      */
     public function setAccountingInfo(?array $accountingInfo = null): self
     {
@@ -85,14 +85,14 @@ class GetOrderAccountingInfosResponse extends AbstractStructBase
     /**
      * Add item to AccountingInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderAccountingInfosResponse
+     * @param \Pggns\MidocoApi\Order\StructType\AccountingInfoType $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderAccountingInfosResponse
      */
-    public function addToAccountingInfo(\Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType $item): self
+    public function addToAccountingInfo(\Pggns\MidocoApi\Order\StructType\AccountingInfoType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType) {
-            throw new InvalidArgumentException(sprintf('The AccountingInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\AccountingInfoType) {
+            throw new InvalidArgumentException(sprintf('The AccountingInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\AccountingInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AccountingInfo[] = $item;
         

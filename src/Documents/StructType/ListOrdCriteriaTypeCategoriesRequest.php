@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ListOrdCriteriaTypeCategoriesRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListOrdCriteriaTypeCategoriesRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListOrdCriteriaTypeCategoriesRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {

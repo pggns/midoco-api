@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class AdditionalRailPassengerInfos extends AbstractStructBase
     /**
      * Set bahncard value
      * @param string $bahncard
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdditionalRailPassengerInfos
+     * @return \Pggns\MidocoApi\Order\StructType\AdditionalRailPassengerInfos
      */
     public function setBahncard(?string $bahncard = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoCooperationInfo extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCooperationInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCooperationInfo
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +78,7 @@ class MidocoCooperationInfo extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCooperationInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCooperationInfo
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -101,7 +101,7 @@ class MidocoCooperationInfo extends AbstractStructBase
     /**
      * Set cooperationName value
      * @param string $cooperationName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCooperationInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCooperationInfo
      */
     public function setCooperationName(?string $cooperationName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class SearchCashBookPrintCriteria extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchCashBookPrintCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchCashBookPrintCriteria
      */
     public function setCashBookId(?int $cashBookId = null): self
     {
@@ -88,7 +88,7 @@ class SearchCashBookPrintCriteria extends AbstractStructBase
     /**
      * Set startPrintDate value
      * @param string $startPrintDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchCashBookPrintCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchCashBookPrintCriteria
      */
     public function setStartPrintDate(?string $startPrintDate = null): self
     {
@@ -111,7 +111,7 @@ class SearchCashBookPrintCriteria extends AbstractStructBase
     /**
      * Set endPrintDate value
      * @param string $endPrintDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchCashBookPrintCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchCashBookPrintCriteria
      */
     public function setEndPrintDate(?string $endPrintDate = null): self
     {
@@ -134,7 +134,7 @@ class SearchCashBookPrintCriteria extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchCashBookPrintCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchCashBookPrintCriteria
      */
     public function setUserId(?int $userId = null): self
     {

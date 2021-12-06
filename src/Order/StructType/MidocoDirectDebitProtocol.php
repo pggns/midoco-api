@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class MidocoDirectDebitProtocol extends AbstractStructBase
      * The MidocoDirectDebitTransaction
      * Meta information extracted from the WSDL
      * - ref: MidocoDirectDebitTransaction
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitTransaction|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitTransaction|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitTransaction $MidocoDirectDebitTransaction = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoDirectDebitTransaction $MidocoDirectDebitTransaction = null;
     /**
      * The errorCode
      * Meta information extracted from the WSDL
@@ -55,13 +55,13 @@ class MidocoDirectDebitProtocol extends AbstractStructBase
      * @uses MidocoDirectDebitProtocol::setErrorBundle()
      * @uses MidocoDirectDebitProtocol::setErrorArgs()
      * @uses MidocoDirectDebitProtocol::setErrorDescription()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitTransaction $midocoDirectDebitTransaction
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitTransaction $midocoDirectDebitTransaction
      * @param string $errorCode
      * @param string $errorBundle
      * @param string $errorArgs
      * @param string $errorDescription
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitTransaction $midocoDirectDebitTransaction = null, ?string $errorCode = null, ?string $errorBundle = null, ?string $errorArgs = null, ?string $errorDescription = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoDirectDebitTransaction $midocoDirectDebitTransaction = null, ?string $errorCode = null, ?string $errorBundle = null, ?string $errorArgs = null, ?string $errorDescription = null)
     {
         $this
             ->setMidocoDirectDebitTransaction($midocoDirectDebitTransaction)
@@ -72,18 +72,18 @@ class MidocoDirectDebitProtocol extends AbstractStructBase
     }
     /**
      * Get MidocoDirectDebitTransaction value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitTransaction|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitTransaction|null
      */
-    public function getMidocoDirectDebitTransaction(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitTransaction
+    public function getMidocoDirectDebitTransaction(): ?\Pggns\MidocoApi\Order\StructType\MidocoDirectDebitTransaction
     {
         return $this->MidocoDirectDebitTransaction;
     }
     /**
      * Set MidocoDirectDebitTransaction value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitTransaction $midocoDirectDebitTransaction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocol
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitTransaction $midocoDirectDebitTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocol
      */
-    public function setMidocoDirectDebitTransaction(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitTransaction $midocoDirectDebitTransaction = null): self
+    public function setMidocoDirectDebitTransaction(?\Pggns\MidocoApi\Order\StructType\MidocoDirectDebitTransaction $midocoDirectDebitTransaction = null): self
     {
         $this->MidocoDirectDebitTransaction = $midocoDirectDebitTransaction;
         
@@ -100,7 +100,7 @@ class MidocoDirectDebitProtocol extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocol
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocol
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -123,7 +123,7 @@ class MidocoDirectDebitProtocol extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocol
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocol
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {
@@ -146,7 +146,7 @@ class MidocoDirectDebitProtocol extends AbstractStructBase
     /**
      * Set errorArgs value
      * @param string $errorArgs
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocol
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocol
      */
     public function setErrorArgs(?string $errorArgs = null): self
     {
@@ -169,7 +169,7 @@ class MidocoDirectDebitProtocol extends AbstractStructBase
     /**
      * Set errorDescription value
      * @param string $errorDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocol
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocol
      */
     public function setErrorDescription(?string $errorDescription = null): self
     {

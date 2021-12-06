@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class PrintAgencySettlementFibuConsoModeResponse extends AbstractStructBase
     /**
      * Set printjobId value
      * @param int $printjobId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAgencySettlementFibuConsoModeResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAgencySettlementFibuConsoModeResponse
      */
     public function setPrintjobId(?int $printjobId = null): self
     {

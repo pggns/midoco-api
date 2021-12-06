@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetPaymentProviderImportFormatRequest extends AbstractStructBase
     /**
      * Set paymentProviderId value
      * @param string $paymentProviderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetPaymentProviderImportFormatRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetPaymentProviderImportFormatRequest
      */
     public function setPaymentProviderId(?string $paymentProviderId = null): self
     {

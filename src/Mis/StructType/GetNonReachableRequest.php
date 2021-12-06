@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetNonReachableRequest extends AbstractStructBase
      * The MidocoMisCampaign
      * Meta information extracted from the WSDL
      * - ref: MidocoMisCampaign
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $MidocoMisCampaign = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $MidocoMisCampaign = null;
     /**
      * The action
      * @var string|null
@@ -29,10 +29,10 @@ class GetNonReachableRequest extends AbstractStructBase
      * Constructor method for GetNonReachableRequest
      * @uses GetNonReachableRequest::setMidocoMisCampaign()
      * @uses GetNonReachableRequest::setAction()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
      * @param string $action
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null, ?string $action = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null, ?string $action = null)
     {
         $this
             ->setMidocoMisCampaign($midocoMisCampaign)
@@ -40,18 +40,18 @@ class GetNonReachableRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMisCampaign value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign|null
      */
-    public function getMidocoMisCampaign(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign
+    public function getMidocoMisCampaign(): ?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign
     {
         return $this->MidocoMisCampaign;
     }
     /**
      * Set MidocoMisCampaign value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetNonReachableRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
+     * @return \Pggns\MidocoApi\Mis\StructType\GetNonReachableRequest
      */
-    public function setMidocoMisCampaign(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null): self
+    public function setMidocoMisCampaign(?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null): self
     {
         $this->MidocoMisCampaign = $midocoMisCampaign;
         
@@ -68,7 +68,7 @@ class GetNonReachableRequest extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetNonReachableRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetNonReachableRequest
      */
     public function setAction(?string $action = null): self
     {

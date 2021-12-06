@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListTssClientResponse extends TssApiErrorConveyingResponse
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTssClient
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTssClient[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient[]
      */
     protected ?array $MidocoTssClient = null;
     /**
      * Constructor method for ListTssClientResponse
      * @uses ListTssClientResponse::setMidocoTssClient()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTssClient[] $midocoTssClient
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient[] $midocoTssClient
      */
     public function __construct(?array $midocoTssClient = null)
     {
@@ -34,7 +34,7 @@ class ListTssClientResponse extends TssApiErrorConveyingResponse
     }
     /**
      * Get MidocoTssClient value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTssClient[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient[]
      */
     public function getMidocoTssClient(): ?array
     {
@@ -55,12 +55,12 @@ class ListTssClientResponse extends TssApiErrorConveyingResponse
         $invalidValues = [];
         foreach ($values as $listTssClientResponseMidocoTssClientItem) {
             // validation for constraint: itemType
-            if (!$listTssClientResponseMidocoTssClientItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTssClient) {
+            if (!$listTssClientResponseMidocoTssClientItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient) {
                 $invalidValues[] = is_object($listTssClientResponseMidocoTssClientItem) ? get_class($listTssClientResponseMidocoTssClientItem) : sprintf('%s(%s)', gettype($listTssClientResponseMidocoTssClientItem), var_export($listTssClientResponseMidocoTssClientItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTssClient property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTssClient, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTssClient property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListTssClientResponse extends TssApiErrorConveyingResponse
     /**
      * Set MidocoTssClient value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTssClient[] $midocoTssClient
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ListTssClientResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient[] $midocoTssClient
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ListTssClientResponse
      */
     public function setMidocoTssClient(?array $midocoTssClient = null): self
     {
@@ -85,14 +85,14 @@ class ListTssClientResponse extends TssApiErrorConveyingResponse
     /**
      * Add item to MidocoTssClient value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTssClient $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ListTssClientResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ListTssClientResponse
      */
-    public function addToMidocoTssClient(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTssClient $item): self
+    public function addToMidocoTssClient(\Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTssClient) {
-            throw new InvalidArgumentException(sprintf('The MidocoTssClient property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTssClient, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient) {
+            throw new InvalidArgumentException(sprintf('The MidocoTssClient property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTssClient[] = $item;
         

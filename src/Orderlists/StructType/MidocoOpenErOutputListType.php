@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MidocoOpenErOutputListType extends AbstractStructBase
     /**
      * Set filiale value
      * @param string $filiale
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType
      */
     public function setFiliale(?string $filiale = null): self
     {
@@ -134,7 +134,7 @@ class MidocoOpenErOutputListType extends AbstractStructBase
     /**
      * Set userEmail value
      * @param string $userEmail
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType
      */
     public function setUserEmail(?string $userEmail = null): self
     {
@@ -157,7 +157,7 @@ class MidocoOpenErOutputListType extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -180,7 +180,7 @@ class MidocoOpenErOutputListType extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -203,7 +203,7 @@ class MidocoOpenErOutputListType extends AbstractStructBase
     /**
      * Set customerForename value
      * @param string $customerForename
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType
      */
     public function setCustomerForename(?string $customerForename = null): self
     {
@@ -226,7 +226,7 @@ class MidocoOpenErOutputListType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -249,7 +249,7 @@ class MidocoOpenErOutputListType extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -272,7 +272,7 @@ class MidocoOpenErOutputListType extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -295,7 +295,7 @@ class MidocoOpenErOutputListType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -318,7 +318,7 @@ class MidocoOpenErOutputListType extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType
      */
     public function setAmount(?float $amount = null): self
     {

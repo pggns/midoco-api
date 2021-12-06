@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -67,7 +67,7 @@ class AssignPrintTypeToOrgunitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AssignPrintTypeToOrgunitRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\AssignPrintTypeToOrgunitRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -90,7 +90,7 @@ class AssignPrintTypeToOrgunitRequest extends AbstractStructBase
     /**
      * Set printTypeId value
      * @param string $printTypeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AssignPrintTypeToOrgunitRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\AssignPrintTypeToOrgunitRequest
      */
     public function setPrintTypeId(?string $printTypeId = null): self
     {
@@ -113,7 +113,7 @@ class AssignPrintTypeToOrgunitRequest extends AbstractStructBase
     /**
      * Set isMandatory value
      * @param bool $isMandatory
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AssignPrintTypeToOrgunitRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\AssignPrintTypeToOrgunitRequest
      */
     public function setIsMandatory(?bool $isMandatory = null): self
     {
@@ -136,7 +136,7 @@ class AssignPrintTypeToOrgunitRequest extends AbstractStructBase
     /**
      * Set printPosition value
      * @param int $printPosition
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AssignPrintTypeToOrgunitRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\AssignPrintTypeToOrgunitRequest
      */
     public function setPrintPosition(?int $printPosition = null): self
     {

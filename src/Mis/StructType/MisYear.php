@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MisYear extends AbstractStructBase
     /**
      * Set year value
      * @param int $year
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisYear
+     * @return \Pggns\MidocoApi\Mis\StructType\MisYear
      */
     public function setYear(?int $year = null): self
     {

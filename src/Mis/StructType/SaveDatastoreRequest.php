@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveDatastoreRequest extends AbstractStructBase
      * The MidocoDatastore
      * Meta information extracted from the WSDL
      * - ref: MidocoDatastore
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\DatastoreDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\DatastoreDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\DatastoreDTO $MidocoDatastore = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\DatastoreDTO $MidocoDatastore = null;
     /**
      * Constructor method for SaveDatastoreRequest
      * @uses SaveDatastoreRequest::setMidocoDatastore()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\DatastoreDTO $midocoDatastore
+     * @param \Pggns\MidocoApi\Mis\StructType\DatastoreDTO $midocoDatastore
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\DatastoreDTO $midocoDatastore = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\DatastoreDTO $midocoDatastore = null)
     {
         $this
             ->setMidocoDatastore($midocoDatastore);
     }
     /**
      * Get MidocoDatastore value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DatastoreDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\DatastoreDTO|null
      */
-    public function getMidocoDatastore(): ?\Pggns\MidocoApi\Api\Mis\StructType\DatastoreDTO
+    public function getMidocoDatastore(): ?\Pggns\MidocoApi\Mis\StructType\DatastoreDTO
     {
         return $this->MidocoDatastore;
     }
     /**
      * Set MidocoDatastore value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\DatastoreDTO $midocoDatastore
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveDatastoreRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\DatastoreDTO $midocoDatastore
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveDatastoreRequest
      */
-    public function setMidocoDatastore(?\Pggns\MidocoApi\Api\Mis\StructType\DatastoreDTO $midocoDatastore = null): self
+    public function setMidocoDatastore(?\Pggns\MidocoApi\Mis\StructType\DatastoreDTO $midocoDatastore = null): self
     {
         $this->MidocoDatastore = $midocoDatastore;
         

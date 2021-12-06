@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SendPasswordRecoveryMailRequest extends AbstractStructBase
     /**
      * Set userLogin value
      * @param string $userLogin
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SendPasswordRecoveryMailRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SendPasswordRecoveryMailRequest
      */
     public function setUserLogin(?string $userLogin = null): self
     {

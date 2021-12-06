@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ExportPrintedAgencySettlementsResponse extends AbstractStructBase
     /**
      * Set exportedRows value
      * @param int $exportedRows
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportPrintedAgencySettlementsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportPrintedAgencySettlementsResponse
      */
     public function setExportedRows(?int $exportedRows = null): self
     {

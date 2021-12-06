@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAssignedSequenceRangesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSequenceRange
-     * @var \Pggns\MidocoApi\Api\System\StructType\SequencerangeDTO[]
+     * @var \Pggns\MidocoApi\System\StructType\SequencerangeDTO[]
      */
     protected ?array $MidocoSequenceRange = null;
     /**
      * Constructor method for GetAssignedSequenceRangesResponse
      * @uses GetAssignedSequenceRangesResponse::setMidocoSequenceRange()
-     * @param \Pggns\MidocoApi\Api\System\StructType\SequencerangeDTO[] $midocoSequenceRange
+     * @param \Pggns\MidocoApi\System\StructType\SequencerangeDTO[] $midocoSequenceRange
      */
     public function __construct(?array $midocoSequenceRange = null)
     {
@@ -34,7 +34,7 @@ class GetAssignedSequenceRangesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSequenceRange value
-     * @return \Pggns\MidocoApi\Api\System\StructType\SequencerangeDTO[]
+     * @return \Pggns\MidocoApi\System\StructType\SequencerangeDTO[]
      */
     public function getMidocoSequenceRange(): ?array
     {
@@ -55,12 +55,12 @@ class GetAssignedSequenceRangesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAssignedSequenceRangesResponseMidocoSequenceRangeItem) {
             // validation for constraint: itemType
-            if (!$getAssignedSequenceRangesResponseMidocoSequenceRangeItem instanceof \Pggns\MidocoApi\Api\System\StructType\SequencerangeDTO) {
+            if (!$getAssignedSequenceRangesResponseMidocoSequenceRangeItem instanceof \Pggns\MidocoApi\System\StructType\SequencerangeDTO) {
                 $invalidValues[] = is_object($getAssignedSequenceRangesResponseMidocoSequenceRangeItem) ? get_class($getAssignedSequenceRangesResponseMidocoSequenceRangeItem) : sprintf('%s(%s)', gettype($getAssignedSequenceRangesResponseMidocoSequenceRangeItem), var_export($getAssignedSequenceRangesResponseMidocoSequenceRangeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSequenceRange property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\SequencerangeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSequenceRange property can only contain items of type \Pggns\MidocoApi\System\StructType\SequencerangeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAssignedSequenceRangesResponse extends AbstractStructBase
     /**
      * Set MidocoSequenceRange value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\SequencerangeDTO[] $midocoSequenceRange
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAssignedSequenceRangesResponse
+     * @param \Pggns\MidocoApi\System\StructType\SequencerangeDTO[] $midocoSequenceRange
+     * @return \Pggns\MidocoApi\System\StructType\GetAssignedSequenceRangesResponse
      */
     public function setMidocoSequenceRange(?array $midocoSequenceRange = null): self
     {
@@ -85,14 +85,14 @@ class GetAssignedSequenceRangesResponse extends AbstractStructBase
     /**
      * Add item to MidocoSequenceRange value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\SequencerangeDTO $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAssignedSequenceRangesResponse
+     * @param \Pggns\MidocoApi\System\StructType\SequencerangeDTO $item
+     * @return \Pggns\MidocoApi\System\StructType\GetAssignedSequenceRangesResponse
      */
-    public function addToMidocoSequenceRange(\Pggns\MidocoApi\Api\System\StructType\SequencerangeDTO $item): self
+    public function addToMidocoSequenceRange(\Pggns\MidocoApi\System\StructType\SequencerangeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\SequencerangeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSequenceRange property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\SequencerangeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\SequencerangeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSequenceRange property can only contain items of type \Pggns\MidocoApi\System\StructType\SequencerangeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSequenceRange[] = $item;
         

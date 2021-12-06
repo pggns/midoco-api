@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -93,7 +93,7 @@ class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
      * Set value value
      * @throws InvalidArgumentException
      * @param string[] $value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTypeValuesAndDescriptionsDTO
      */
     public function setValue(?array $value = null): self
     {
@@ -109,7 +109,7 @@ class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
      * Add item to value value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTypeValuesAndDescriptionsDTO
      */
     public function addToValue(string $item): self
     {
@@ -132,7 +132,7 @@ class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
     /**
      * Set key value
      * @param string $key
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTypeValuesAndDescriptionsDTO
      */
     public function setKey(?string $key = null): self
     {
@@ -155,7 +155,7 @@ class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTypeValuesAndDescriptionsDTO
      */
     public function setCategoryId(?int $categoryId = null): self
     {
@@ -178,7 +178,7 @@ class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
     /**
      * Set defaultValue value
      * @param string $defaultValue
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTypeValuesAndDescriptionsDTO
      */
     public function setDefaultValue(?string $defaultValue = null): self
     {

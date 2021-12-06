@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -28,7 +28,7 @@ class CheckAddressesForCustomerResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoCrmAddress
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress[]
      */
     protected ?array $MidocoCrmAddress = null;
     /**
@@ -46,7 +46,7 @@ class CheckAddressesForCustomerResponse extends AbstractStructBase
      * @uses CheckAddressesForCustomerResponse::setErrors()
      * @param string $code
      * @param string $message
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress[] $midocoCrmAddress
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress[] $midocoCrmAddress
      * @param string[] $errors
      */
     public function __construct(?string $code = null, ?string $message = null, ?array $midocoCrmAddress = null, ?array $errors = null)
@@ -68,7 +68,7 @@ class CheckAddressesForCustomerResponse extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CheckAddressesForCustomerResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\CheckAddressesForCustomerResponse
      */
     public function setCode(?string $code = null): self
     {
@@ -91,7 +91,7 @@ class CheckAddressesForCustomerResponse extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CheckAddressesForCustomerResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\CheckAddressesForCustomerResponse
      */
     public function setMessage(?string $message = null): self
     {
@@ -105,7 +105,7 @@ class CheckAddressesForCustomerResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmAddress value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress[]
      */
     public function getMidocoCrmAddress(): ?array
     {
@@ -126,12 +126,12 @@ class CheckAddressesForCustomerResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $checkAddressesForCustomerResponseMidocoCrmAddressItem) {
             // validation for constraint: itemType
-            if (!$checkAddressesForCustomerResponseMidocoCrmAddressItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress) {
+            if (!$checkAddressesForCustomerResponseMidocoCrmAddressItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress) {
                 $invalidValues[] = is_object($checkAddressesForCustomerResponseMidocoCrmAddressItem) ? get_class($checkAddressesForCustomerResponseMidocoCrmAddressItem) : sprintf('%s(%s)', gettype($checkAddressesForCustomerResponseMidocoCrmAddressItem), var_export($checkAddressesForCustomerResponseMidocoCrmAddressItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -140,8 +140,8 @@ class CheckAddressesForCustomerResponse extends AbstractStructBase
     /**
      * Set MidocoCrmAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress[] $midocoCrmAddress
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CheckAddressesForCustomerResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress[] $midocoCrmAddress
+     * @return \Pggns\MidocoApi\Crm\StructType\CheckAddressesForCustomerResponse
      */
     public function setMidocoCrmAddress(?array $midocoCrmAddress = null): self
     {
@@ -156,14 +156,14 @@ class CheckAddressesForCustomerResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CheckAddressesForCustomerResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress $item
+     * @return \Pggns\MidocoApi\Crm\StructType\CheckAddressesForCustomerResponse
      */
-    public function addToMidocoCrmAddress(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress $item): self
+    public function addToMidocoCrmAddress(\Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmAddress[] = $item;
         
@@ -207,7 +207,7 @@ class CheckAddressesForCustomerResponse extends AbstractStructBase
      * Set errors value
      * @throws InvalidArgumentException
      * @param string[] $errors
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CheckAddressesForCustomerResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\CheckAddressesForCustomerResponse
      */
     public function setErrors(?array $errors = null): self
     {
@@ -223,7 +223,7 @@ class CheckAddressesForCustomerResponse extends AbstractStructBase
      * Add item to errors value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CheckAddressesForCustomerResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\CheckAddressesForCustomerResponse
      */
     public function addToErrors(string $item): self
     {

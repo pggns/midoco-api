@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class AgencyProperties extends AbstractStructBase
     /**
      * Set exportSystem value
      * @param string $exportSystem
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyProperties
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyProperties
      */
     public function setExportSystem(?string $exportSystem = null): self
     {
@@ -78,7 +78,7 @@ class AgencyProperties extends AbstractStructBase
     /**
      * Set extAgencyNo value
      * @param string $extAgencyNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyProperties
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyProperties
      */
     public function setExtAgencyNo(?string $extAgencyNo = null): self
     {
@@ -101,7 +101,7 @@ class AgencyProperties extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyProperties
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyProperties
      */
     public function setCooperationId(?string $cooperationId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoAttributeDefinitionRequest extends AbstractStructBase
      * The MidocoSystemAttributeDefinition
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeDefinition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AttributeDefinitionDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\AttributeDefinitionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\AttributeDefinitionDTO $MidocoSystemAttributeDefinition = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\AttributeDefinitionDTO $MidocoSystemAttributeDefinition = null;
     /**
      * Constructor method for SaveMidocoAttributeDefinitionRequest
      * @uses SaveMidocoAttributeDefinitionRequest::setMidocoSystemAttributeDefinition()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
+     * @param \Pggns\MidocoApi\Order\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null)
     {
         $this
             ->setMidocoSystemAttributeDefinition($midocoSystemAttributeDefinition);
     }
     /**
      * Get MidocoSystemAttributeDefinition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttributeDefinitionDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\AttributeDefinitionDTO|null
      */
-    public function getMidocoSystemAttributeDefinition(): ?\Pggns\MidocoApi\Api\Order\StructType\AttributeDefinitionDTO
+    public function getMidocoSystemAttributeDefinition(): ?\Pggns\MidocoApi\Order\StructType\AttributeDefinitionDTO
     {
         return $this->MidocoSystemAttributeDefinition;
     }
     /**
      * Set MidocoSystemAttributeDefinition value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMidocoAttributeDefinitionRequest
+     * @param \Pggns\MidocoApi\Order\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMidocoAttributeDefinitionRequest
      */
-    public function setMidocoSystemAttributeDefinition(?\Pggns\MidocoApi\Api\Order\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null): self
+    public function setMidocoSystemAttributeDefinition(?\Pggns\MidocoApi\Order\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null): self
     {
         $this->MidocoSystemAttributeDefinition = $midocoSystemAttributeDefinition;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set outgoingIncoming value
      * @param string $outgoingIncoming
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setOutgoingIncoming(?string $outgoingIncoming = null): self
     {
@@ -174,7 +174,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -197,7 +197,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set year value
      * @param string $year
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setYear(?string $year = null): self
     {
@@ -220,7 +220,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -243,7 +243,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -266,7 +266,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -289,7 +289,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -312,7 +312,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -335,7 +335,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -358,7 +358,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -381,7 +381,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set beforeAfterTravel value
      * @param string $beforeAfterTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setBeforeAfterTravel(?string $beforeAfterTravel = null): self
     {
@@ -404,7 +404,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -427,7 +427,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setAmount(?float $amount = null): self
     {
@@ -450,7 +450,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setName(?string $name = null): self
     {
@@ -473,7 +473,7 @@ class MidocoArErOutputListType extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType
      */
     public function setPaymentType(?string $paymentType = null): self
     {

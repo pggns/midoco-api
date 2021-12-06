@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -42,7 +42,7 @@ class ListRuleDefinitionRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleDefinitionRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleDefinitionRequest
      */
     public function setUnitName(string $unitName): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -56,7 +56,7 @@ class Attribute extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Attribute
+     * @return \Pggns\MidocoApi\Booking\StructType\Attribute
      */
     public function setName(?string $name = null): self
     {
@@ -79,7 +79,7 @@ class Attribute extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Attribute
+     * @return \Pggns\MidocoApi\Booking\StructType\Attribute
      */
     public function setValue(?string $value = null): self
     {

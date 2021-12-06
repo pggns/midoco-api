@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class BillingLayoutDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingLayoutDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingLayoutDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -118,7 +118,7 @@ class BillingLayoutDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingLayoutDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingLayoutDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -141,7 +141,7 @@ class BillingLayoutDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingLayoutDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingLayoutDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -164,7 +164,7 @@ class BillingLayoutDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingLayoutDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingLayoutDTO
      */
     public function setId(?int $id = null): self
     {
@@ -187,7 +187,7 @@ class BillingLayoutDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingLayoutDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingLayoutDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -210,7 +210,7 @@ class BillingLayoutDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingLayoutDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingLayoutDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -233,7 +233,7 @@ class BillingLayoutDTO extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingLayoutDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingLayoutDTO
      */
     public function setOrgunit(?string $orgunit = null): self
     {
@@ -256,7 +256,7 @@ class BillingLayoutDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingLayoutDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingLayoutDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class AddBillingPosForOfflineCCRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoBillingDocument
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
     /**
      * The ccNo
      * @var string|null
@@ -60,7 +60,7 @@ class AddBillingPosForOfflineCCRequest extends AbstractStructBase
      * @uses AddBillingPosForOfflineCCRequest::setAmount()
      * @uses AddBillingPosForOfflineCCRequest::setTerminalId()
      * @uses AddBillingPosForOfflineCCRequest::setTraceNumber()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument
      * @param string $ccNo
      * @param int $ccReceiptNo
      * @param string $ccType
@@ -68,7 +68,7 @@ class AddBillingPosForOfflineCCRequest extends AbstractStructBase
      * @param string $terminalId
      * @param string $traceNumber
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?string $ccNo = null, ?int $ccReceiptNo = null, ?string $ccType = null, ?float $amount = null, ?string $terminalId = null, ?string $traceNumber = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?string $ccNo = null, ?int $ccReceiptNo = null, ?string $ccType = null, ?float $amount = null, ?string $terminalId = null, ?string $traceNumber = null)
     {
         $this
             ->setMidocoBillingDocument($midocoBillingDocument)
@@ -81,18 +81,18 @@ class AddBillingPosForOfflineCCRequest extends AbstractStructBase
     }
     /**
      * Get MidocoBillingDocument value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument|null
      */
-    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument
+    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument
     {
         return $this->MidocoBillingDocument;
     }
     /**
      * Set MidocoBillingDocument value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddBillingPosForOfflineCCRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @return \Pggns\MidocoApi\Order\StructType\AddBillingPosForOfflineCCRequest
      */
-    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
+    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
     {
         $this->MidocoBillingDocument = $midocoBillingDocument;
         
@@ -109,7 +109,7 @@ class AddBillingPosForOfflineCCRequest extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddBillingPosForOfflineCCRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AddBillingPosForOfflineCCRequest
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -132,7 +132,7 @@ class AddBillingPosForOfflineCCRequest extends AbstractStructBase
     /**
      * Set ccReceiptNo value
      * @param int $ccReceiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddBillingPosForOfflineCCRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AddBillingPosForOfflineCCRequest
      */
     public function setCcReceiptNo(?int $ccReceiptNo = null): self
     {
@@ -155,7 +155,7 @@ class AddBillingPosForOfflineCCRequest extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddBillingPosForOfflineCCRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AddBillingPosForOfflineCCRequest
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -178,7 +178,7 @@ class AddBillingPosForOfflineCCRequest extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddBillingPosForOfflineCCRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AddBillingPosForOfflineCCRequest
      */
     public function setAmount(?float $amount = null): self
     {
@@ -201,7 +201,7 @@ class AddBillingPosForOfflineCCRequest extends AbstractStructBase
     /**
      * Set terminalId value
      * @param string $terminalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddBillingPosForOfflineCCRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AddBillingPosForOfflineCCRequest
      */
     public function setTerminalId(?string $terminalId = null): self
     {
@@ -224,7 +224,7 @@ class AddBillingPosForOfflineCCRequest extends AbstractStructBase
     /**
      * Set traceNumber value
      * @param string $traceNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddBillingPosForOfflineCCRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AddBillingPosForOfflineCCRequest
      */
     public function setTraceNumber(?string $traceNumber = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSellRemarksResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellRemark
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellRemark[]
      */
     protected ?array $MidocoSellRemark = null;
     /**
      * Constructor method for GetSellRemarksResponse
      * @uses GetSellRemarksResponse::setMidocoSellRemark()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark[] $midocoSellRemark
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellRemark[] $midocoSellRemark
      */
     public function __construct(?array $midocoSellRemark = null)
     {
@@ -34,7 +34,7 @@ class GetSellRemarksResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSellRemark value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellRemark[]
      */
     public function getMidocoSellRemark(): ?array
     {
@@ -55,12 +55,12 @@ class GetSellRemarksResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSellRemarksResponseMidocoSellRemarkItem) {
             // validation for constraint: itemType
-            if (!$getSellRemarksResponseMidocoSellRemarkItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark) {
+            if (!$getSellRemarksResponseMidocoSellRemarkItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellRemark) {
                 $invalidValues[] = is_object($getSellRemarksResponseMidocoSellRemarkItem) ? get_class($getSellRemarksResponseMidocoSellRemarkItem) : sprintf('%s(%s)', gettype($getSellRemarksResponseMidocoSellRemarkItem), var_export($getSellRemarksResponseMidocoSellRemarkItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellRemark property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellRemark property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellRemark, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSellRemarksResponse extends AbstractStructBase
     /**
      * Set MidocoSellRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark[] $midocoSellRemark
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellRemarksResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellRemark[] $midocoSellRemark
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellRemarksResponse
      */
     public function setMidocoSellRemark(?array $midocoSellRemark = null): self
     {
@@ -85,14 +85,14 @@ class GetSellRemarksResponse extends AbstractStructBase
     /**
      * Add item to MidocoSellRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellRemarksResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellRemark $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellRemarksResponse
      */
-    public function addToMidocoSellRemark(\Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark $item): self
+    public function addToMidocoSellRemark(\Pggns\MidocoApi\Order\StructType\MidocoSellRemark $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellRemark property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellRemark) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellRemark property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellRemark, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellRemark[] = $item;
         

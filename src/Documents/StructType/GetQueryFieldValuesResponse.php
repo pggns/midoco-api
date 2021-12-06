@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetQueryFieldValuesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoQueryFieldValue
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryFieldValue[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoQueryFieldValue[]
      */
     protected ?array $MidocoQueryFieldValue = null;
     /**
      * Constructor method for GetQueryFieldValuesResponse
      * @uses GetQueryFieldValuesResponse::setMidocoQueryFieldValue()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryFieldValue[] $midocoQueryFieldValue
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoQueryFieldValue[] $midocoQueryFieldValue
      */
     public function __construct(?array $midocoQueryFieldValue = null)
     {
@@ -34,7 +34,7 @@ class GetQueryFieldValuesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoQueryFieldValue value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryFieldValue[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQueryFieldValue[]
      */
     public function getMidocoQueryFieldValue(): ?array
     {
@@ -55,12 +55,12 @@ class GetQueryFieldValuesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getQueryFieldValuesResponseMidocoQueryFieldValueItem) {
             // validation for constraint: itemType
-            if (!$getQueryFieldValuesResponseMidocoQueryFieldValueItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryFieldValue) {
+            if (!$getQueryFieldValuesResponseMidocoQueryFieldValueItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoQueryFieldValue) {
                 $invalidValues[] = is_object($getQueryFieldValuesResponseMidocoQueryFieldValueItem) ? get_class($getQueryFieldValuesResponseMidocoQueryFieldValueItem) : sprintf('%s(%s)', gettype($getQueryFieldValuesResponseMidocoQueryFieldValueItem), var_export($getQueryFieldValuesResponseMidocoQueryFieldValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoQueryFieldValue property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryFieldValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoQueryFieldValue property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoQueryFieldValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetQueryFieldValuesResponse extends AbstractStructBase
     /**
      * Set MidocoQueryFieldValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryFieldValue[] $midocoQueryFieldValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetQueryFieldValuesResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoQueryFieldValue[] $midocoQueryFieldValue
+     * @return \Pggns\MidocoApi\Documents\StructType\GetQueryFieldValuesResponse
      */
     public function setMidocoQueryFieldValue(?array $midocoQueryFieldValue = null): self
     {
@@ -85,14 +85,14 @@ class GetQueryFieldValuesResponse extends AbstractStructBase
     /**
      * Add item to MidocoQueryFieldValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryFieldValue $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetQueryFieldValuesResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoQueryFieldValue $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetQueryFieldValuesResponse
      */
-    public function addToMidocoQueryFieldValue(\Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryFieldValue $item): self
+    public function addToMidocoQueryFieldValue(\Pggns\MidocoApi\Documents\StructType\MidocoQueryFieldValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryFieldValue) {
-            throw new InvalidArgumentException(sprintf('The MidocoQueryFieldValue property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryFieldValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoQueryFieldValue) {
+            throw new InvalidArgumentException(sprintf('The MidocoQueryFieldValue property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoQueryFieldValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoQueryFieldValue[] = $item;
         

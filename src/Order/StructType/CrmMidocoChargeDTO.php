@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set amountPerBatch value
      * @param float $amountPerBatch
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setAmountPerBatch(?float $amountPerBatch = null): self
     {
@@ -166,7 +166,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set batchQuantity value
      * @param int $batchQuantity
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setBatchQuantity(?int $batchQuantity = null): self
     {
@@ -189,7 +189,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setChargeId(?int $chargeId = null): self
     {
@@ -212,7 +212,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set crmChargeId value
      * @param int $crmChargeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setCrmChargeId(?int $crmChargeId = null): self
     {
@@ -235,7 +235,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -258,7 +258,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -281,7 +281,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set factor value
      * @param int $factor
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setFactor(?int $factor = null): self
     {
@@ -304,7 +304,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set includedQuantity value
      * @param int $includedQuantity
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setIncludedQuantity(?int $includedQuantity = null): self
     {
@@ -327,7 +327,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set isMaster value
      * @param bool $isMaster
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setIsMaster(?bool $isMaster = null): self
     {
@@ -350,7 +350,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set lastExecDate value
      * @param string $lastExecDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setLastExecDate(?string $lastExecDate = null): self
     {
@@ -373,7 +373,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set lastExecUser value
      * @param int $lastExecUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setLastExecUser(?int $lastExecUser = null): self
     {
@@ -396,7 +396,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set manualAmount value
      * @param bool $manualAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setManualAmount(?bool $manualAmount = null): self
     {
@@ -419,7 +419,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set manualNettoAmount value
      * @param float $manualNettoAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setManualNettoAmount(?float $manualNettoAmount = null): self
     {
@@ -442,7 +442,7 @@ class CrmMidocoChargeDTO extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoChargeDTO
      */
     public function setStartDate(?string $startDate = null): self
     {

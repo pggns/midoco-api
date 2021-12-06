@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoFaultType extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFaultType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFaultType
      */
     public function setCode(string $code): self
     {
@@ -94,7 +94,7 @@ class MidocoFaultType extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFaultType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFaultType
      */
     public function setText(string $text): self
     {
@@ -117,7 +117,7 @@ class MidocoFaultType extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFaultType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFaultType
      */
     public function setLocale(string $locale): self
     {
@@ -140,7 +140,7 @@ class MidocoFaultType extends AbstractStructBase
     /**
      * Set StackTrace value
      * @param string $stackTrace
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFaultType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFaultType
      */
     public function setStackTrace(?string $stackTrace = null): self
     {

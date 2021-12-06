@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteCostCentreRequest extends AbstractStructBase
      * The MidocoCostCentre
      * Meta information extracted from the WSDL
      * - ref: MidocoCostCentre
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCostCentre|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoCostCentre|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCostCentre $MidocoCostCentre = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoCostCentre $MidocoCostCentre = null;
     /**
      * Constructor method for DeleteCostCentreRequest
      * @uses DeleteCostCentreRequest::setMidocoCostCentre()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCostCentre $midocoCostCentre
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCostCentre $midocoCostCentre
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCostCentre $midocoCostCentre = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoCostCentre $midocoCostCentre = null)
     {
         $this
             ->setMidocoCostCentre($midocoCostCentre);
     }
     /**
      * Get MidocoCostCentre value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCostCentre|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCostCentre|null
      */
-    public function getMidocoCostCentre(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCostCentre
+    public function getMidocoCostCentre(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoCostCentre
     {
         return $this->MidocoCostCentre;
     }
     /**
      * Set MidocoCostCentre value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCostCentre $midocoCostCentre
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteCostCentreRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCostCentre $midocoCostCentre
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteCostCentreRequest
      */
-    public function setMidocoCostCentre(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCostCentre $midocoCostCentre = null): self
+    public function setMidocoCostCentre(?\Pggns\MidocoApi\Orderlists\StructType\MidocoCostCentre $midocoCostCentre = null): self
     {
         $this->MidocoCostCentre = $midocoCostCentre;
         

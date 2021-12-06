@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -239,7 +239,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -262,7 +262,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -285,7 +285,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -308,7 +308,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set extSystem value
      * @param string $extSystem
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setExtSystem(?string $extSystem = null): self
     {
@@ -331,7 +331,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set groupItemFlag value
      * @param bool $groupItemFlag
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setGroupItemFlag(?bool $groupItemFlag = null): self
     {
@@ -354,7 +354,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set groupItemName value
      * @param string $groupItemName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setGroupItemName(?string $groupItemName = null): self
     {
@@ -377,7 +377,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set insuranceCancelDate value
      * @param string $insuranceCancelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setInsuranceCancelDate(?string $insuranceCancelDate = null): self
     {
@@ -400,7 +400,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set insuranceDate value
      * @param string $insuranceDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setInsuranceDate(?string $insuranceDate = null): self
     {
@@ -423,7 +423,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set insuranceId value
      * @param string $insuranceId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setInsuranceId(?string $insuranceId = null): self
     {
@@ -446,7 +446,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set insuranceValidFrom value
      * @param string $insuranceValidFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setInsuranceValidFrom(?string $insuranceValidFrom = null): self
     {
@@ -469,7 +469,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set insuranceValidUntil value
      * @param string $insuranceValidUntil
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setInsuranceValidUntil(?string $insuranceValidUntil = null): self
     {
@@ -492,7 +492,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set insuredAmount value
      * @param float $insuredAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setInsuredAmount(?float $insuredAmount = null): self
     {
@@ -515,7 +515,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set insuredCancelAmount value
      * @param float $insuredCancelAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setInsuredCancelAmount(?float $insuredCancelAmount = null): self
     {
@@ -538,7 +538,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set isSingleMargin value
      * @param bool $isSingleMargin
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setIsSingleMargin(?bool $isSingleMargin = null): self
     {
@@ -561,7 +561,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -584,7 +584,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set noOfPersons value
      * @param int $noOfPersons
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setNoOfPersons(?int $noOfPersons = null): self
     {
@@ -607,7 +607,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set offlineBooking value
      * @param bool $offlineBooking
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setOfflineBooking(?bool $offlineBooking = null): self
     {
@@ -630,7 +630,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set offlineCancel value
      * @param bool $offlineCancel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setOfflineCancel(?bool $offlineCancel = null): self
     {
@@ -653,7 +653,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set packageId value
      * @param string $packageId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setPackageId(?string $packageId = null): self
     {
@@ -676,7 +676,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set policyNo value
      * @param string $policyNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setPolicyNo(?string $policyNo = null): self
     {
@@ -699,7 +699,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -722,7 +722,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -745,7 +745,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set stornoDate value
      * @param string $stornoDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setStornoDate(?string $stornoDate = null): self
     {
@@ -768,7 +768,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -791,7 +791,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setTravelNo(?string $travelNo = null): self
     {
@@ -814,7 +814,7 @@ class PackageitemDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {

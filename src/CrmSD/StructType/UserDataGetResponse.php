@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class UserDataGetResponse extends AbstractStructBase
     /**
      * Set dataValue value
      * @param string $dataValue
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\UserDataGetResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\UserDataGetResponse
      */
     public function setDataValue(?string $dataValue = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoPaymentProviderSettlBookingType extends PaymentProviderSettlBookDTO
     /**
      * Set difference value
      * @param float $difference
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentProviderSettlBookingType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentProviderSettlBookingType
      */
     public function setDifference(?float $difference = null): self
     {
@@ -86,7 +86,7 @@ class MidocoPaymentProviderSettlBookingType extends PaymentProviderSettlBookDTO
     /**
      * Set orderUnitName value
      * @param string $orderUnitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentProviderSettlBookingType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentProviderSettlBookingType
      */
     public function setOrderUnitName(?string $orderUnitName = null): self
     {
@@ -109,7 +109,7 @@ class MidocoPaymentProviderSettlBookingType extends PaymentProviderSettlBookDTO
     /**
      * Set invoiceDate value
      * @param string $invoiceDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentProviderSettlBookingType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentProviderSettlBookingType
      */
     public function setInvoiceDate(?string $invoiceDate = null): self
     {
@@ -132,7 +132,7 @@ class MidocoPaymentProviderSettlBookingType extends PaymentProviderSettlBookDTO
     /**
      * Set invoiceNo value
      * @param string $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentProviderSettlBookingType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentProviderSettlBookingType
      */
     public function setInvoiceNo(?string $invoiceNo = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoQueryCriteriaOp extends AbstractStructBase
     /**
      * Set opName value
      * @param string $opName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryCriteriaOp
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryCriteriaOp
      */
     public function setOpName(?string $opName = null): self
     {
@@ -78,7 +78,7 @@ class MidocoQueryCriteriaOp extends AbstractStructBase
     /**
      * Set opType value
      * @param string $opType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryCriteriaOp
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryCriteriaOp
      */
     public function setOpType(?string $opType = null): self
     {
@@ -101,7 +101,7 @@ class MidocoQueryCriteriaOp extends AbstractStructBase
     /**
      * Set opLocalizedName value
      * @param string $opLocalizedName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryCriteriaOp
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryCriteriaOp
      */
     public function setOpLocalizedName(?string $opLocalizedName = null): self
     {

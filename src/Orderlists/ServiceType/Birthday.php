@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\ServiceType;
+namespace Pggns\MidocoApi\Orderlists\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Birthday extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Orderlists\ServiceType\Birthday
+     * @return \Pggns\MidocoApi\Orderlists\ServiceType\Birthday
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Birthday extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\BirthdayListRequest $paramBirthdayListRequest
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BirthdayListResponse|bool
+     * @param \Pggns\MidocoApi\Orderlists\StructType\BirthdayListRequest $paramBirthdayListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BirthdayListResponse|bool
      */
-    public function birthdayList(\Pggns\MidocoApi\Api\Orderlists\StructType\BirthdayListRequest $paramBirthdayListRequest)
+    public function birthdayList(\Pggns\MidocoApi\Orderlists\StructType\BirthdayListRequest $paramBirthdayListRequest)
     {
         try {
             $this->setResult($resultBirthdayList = $this->getSoapClient()->__soapCall('birthdayList', [
@@ -56,7 +56,7 @@ class Birthday extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BirthdayListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BirthdayListResponse
      */
     public function getResult()
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListCabinClassResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCabinClass
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass[]
      */
     protected ?array $MidocoCabinClass = null;
     /**
      * Constructor method for ListCabinClassResponse
      * @uses ListCabinClassResponse::setMidocoCabinClass()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass[] $midocoCabinClass
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass[] $midocoCabinClass
      */
     public function __construct(?array $midocoCabinClass = null)
     {
@@ -34,7 +34,7 @@ class ListCabinClassResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCabinClass value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass[]
      */
     public function getMidocoCabinClass(): ?array
     {
@@ -55,12 +55,12 @@ class ListCabinClassResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listCabinClassResponseMidocoCabinClassItem) {
             // validation for constraint: itemType
-            if (!$listCabinClassResponseMidocoCabinClassItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass) {
+            if (!$listCabinClassResponseMidocoCabinClassItem instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass) {
                 $invalidValues[] = is_object($listCabinClassResponseMidocoCabinClassItem) ? get_class($listCabinClassResponseMidocoCabinClassItem) : sprintf('%s(%s)', gettype($listCabinClassResponseMidocoCabinClassItem), var_export($listCabinClassResponseMidocoCabinClassItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCabinClass property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCabinClass property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListCabinClassResponse extends AbstractStructBase
     /**
      * Set MidocoCabinClass value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass[] $midocoCabinClass
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ListCabinClassResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass[] $midocoCabinClass
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ListCabinClassResponse
      */
     public function setMidocoCabinClass(?array $midocoCabinClass = null): self
     {
@@ -85,14 +85,14 @@ class ListCabinClassResponse extends AbstractStructBase
     /**
      * Add item to MidocoCabinClass value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ListCabinClassResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ListCabinClassResponse
      */
-    public function addToMidocoCabinClass(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass $item): self
+    public function addToMidocoCabinClass(\Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass) {
-            throw new InvalidArgumentException(sprintf('The MidocoCabinClass property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass) {
+            throw new InvalidArgumentException(sprintf('The MidocoCabinClass property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCabinClass[] = $item;
         

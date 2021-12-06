@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -479,7 +479,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set acceptCash value
      * @param bool $acceptCash
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAcceptCash(?bool $acceptCash = null): self
     {
@@ -502,7 +502,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set acceptCc value
      * @param bool $acceptCc
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAcceptCc(?bool $acceptCc = null): self
     {
@@ -525,7 +525,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set acceptDebit value
      * @param bool $acceptDebit
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAcceptDebit(?bool $acceptDebit = null): self
     {
@@ -548,7 +548,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set acceptInvoice value
      * @param bool $acceptInvoice
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAcceptInvoice(?bool $acceptInvoice = null): self
     {
@@ -571,7 +571,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set accountDiPayment value
      * @param string $accountDiPayment
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAccountDiPayment(?string $accountDiPayment = null): self
     {
@@ -594,7 +594,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set accountExpenseInvoice value
      * @param string $accountExpenseInvoice
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAccountExpenseInvoice(?string $accountExpenseInvoice = null): self
     {
@@ -617,7 +617,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set accountProvisionInsurance value
      * @param string $accountProvisionInsurance
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAccountProvisionInsurance(?string $accountProvisionInsurance = null): self
     {
@@ -640,7 +640,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set accountProvisionInsuranceDi value
      * @param string $accountProvisionInsuranceDi
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAccountProvisionInsuranceDi(?string $accountProvisionInsuranceDi = null): self
     {
@@ -663,7 +663,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set accountProvisionNovat value
      * @param string $accountProvisionNovat
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAccountProvisionNovat(?string $accountProvisionNovat = null): self
     {
@@ -686,7 +686,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set accountProvisionNovatDi value
      * @param string $accountProvisionNovatDi
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAccountProvisionNovatDi(?string $accountProvisionNovatDi = null): self
     {
@@ -709,7 +709,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set accountProvisionReceivable value
      * @param string $accountProvisionReceivable
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAccountProvisionReceivable(?string $accountProvisionReceivable = null): self
     {
@@ -732,7 +732,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set accountProvisionVat value
      * @param string $accountProvisionVat
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAccountProvisionVat(?string $accountProvisionVat = null): self
     {
@@ -755,7 +755,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set accountProvisionVatDi value
      * @param string $accountProvisionVatDi
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAccountProvisionVatDi(?string $accountProvisionVatDi = null): self
     {
@@ -778,7 +778,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set accountSupplierPayment value
      * @param string $accountSupplierPayment
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAccountSupplierPayment(?string $accountSupplierPayment = null): self
     {
@@ -801,7 +801,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set accountSupplierVat value
      * @param string $accountSupplierVat
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAccountSupplierVat(?string $accountSupplierVat = null): self
     {
@@ -824,7 +824,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set autoRemarkPosition value
      * @param int $autoRemarkPosition
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setAutoRemarkPosition(?int $autoRemarkPosition = null): self
     {
@@ -847,7 +847,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set bookingIdRequired value
      * @param bool $bookingIdRequired
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setBookingIdRequired(?bool $bookingIdRequired = null): self
     {
@@ -870,7 +870,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set collectiveSettlement value
      * @param bool $collectiveSettlement
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setCollectiveSettlement(?bool $collectiveSettlement = null): self
     {
@@ -893,7 +893,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set commissionMode value
      * @param int $commissionMode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setCommissionMode(?int $commissionMode = null): self
     {
@@ -916,7 +916,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -939,7 +939,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -962,7 +962,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -985,7 +985,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set customerWishNotification value
      * @param bool $customerWishNotification
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setCustomerWishNotification(?bool $customerWishNotification = null): self
     {
@@ -1008,7 +1008,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set emailNotification value
      * @param bool $emailNotification
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setEmailNotification(?bool $emailNotification = null): self
     {
@@ -1031,7 +1031,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set entryRestAsProv value
      * @param bool $entryRestAsProv
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setEntryRestAsProv(?bool $entryRestAsProv = null): self
     {
@@ -1054,7 +1054,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set group1 value
      * @param string $group1
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setGroup1(?string $group1 = null): self
     {
@@ -1077,7 +1077,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set group2 value
      * @param string $group2
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setGroup2(?string $group2 = null): self
     {
@@ -1100,7 +1100,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set group3 value
      * @param string $group3
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setGroup3(?string $group3 = null): self
     {
@@ -1123,7 +1123,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set inkassoMode value
      * @param int $inkassoMode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setInkassoMode(?int $inkassoMode = null): self
     {
@@ -1146,7 +1146,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set interimAccount value
      * @param string $interimAccount
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setInterimAccount(?string $interimAccount = null): self
     {
@@ -1169,7 +1169,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set isCommPrefTravelDate value
      * @param bool $isCommPrefTravelDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setIsCommPrefTravelDate(?bool $isCommPrefTravelDate = null): self
     {
@@ -1192,7 +1192,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set isInsurance value
      * @param bool $isInsurance
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setIsInsurance(?bool $isInsurance = null): self
     {
@@ -1215,7 +1215,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set isLocked value
      * @param bool $isLocked
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setIsLocked(?bool $isLocked = null): self
     {
@@ -1238,7 +1238,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set isOwnAccount value
      * @param bool $isOwnAccount
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setIsOwnAccount(?bool $isOwnAccount = null): self
     {
@@ -1261,7 +1261,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set isOwnSettlement value
      * @param bool $isOwnSettlement
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setIsOwnSettlement(?bool $isOwnSettlement = null): self
     {
@@ -1284,7 +1284,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set isPrefTravelDate value
      * @param bool $isPrefTravelDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setIsPrefTravelDate(?bool $isPrefTravelDate = null): self
     {
@@ -1307,7 +1307,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set isVarious value
      * @param bool $isVarious
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setIsVarious(?bool $isVarious = null): self
     {
@@ -1330,7 +1330,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set lockDate value
      * @param string $lockDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setLockDate(?string $lockDate = null): self
     {
@@ -1353,7 +1353,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setName(?string $name = null): self
     {
@@ -1376,7 +1376,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set optionPeriod value
      * @param int $optionPeriod
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setOptionPeriod(?int $optionPeriod = null): self
     {
@@ -1399,7 +1399,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set preventBillingPosSplit value
      * @param bool $preventBillingPosSplit
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setPreventBillingPosSplit(?bool $preventBillingPosSplit = null): self
     {
@@ -1422,7 +1422,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set preventBookingRefGen value
      * @param bool $preventBookingRefGen
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setPreventBookingRefGen(?bool $preventBookingRefGen = null): self
     {
@@ -1445,7 +1445,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set printOptionId value
      * @param int $printOptionId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setPrintOptionId(?int $printOptionId = null): self
     {
@@ -1468,7 +1468,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set requiresConfirmation value
      * @param bool $requiresConfirmation
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setRequiresConfirmation(?bool $requiresConfirmation = null): self
     {
@@ -1491,7 +1491,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set settlementGroup value
      * @param string $settlementGroup
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setSettlementGroup(?string $settlementGroup = null): self
     {
@@ -1514,7 +1514,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set stornoNotification value
      * @param bool $stornoNotification
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setStornoNotification(?bool $stornoNotification = null): self
     {
@@ -1537,7 +1537,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -1560,7 +1560,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set suppressBackofficeExport value
      * @param bool $suppressBackofficeExport
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setSuppressBackofficeExport(?bool $suppressBackofficeExport = null): self
     {
@@ -1583,7 +1583,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set suppressRevenueBooking value
      * @param bool $suppressRevenueBooking
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setSuppressRevenueBooking(?bool $suppressRevenueBooking = null): self
     {
@@ -1606,7 +1606,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set travelDocumentsPerItem value
      * @param bool $travelDocumentsPerItem
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setTravelDocumentsPerItem(?bool $travelDocumentsPerItem = null): self
     {
@@ -1629,7 +1629,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set useBookingAsEntry value
      * @param bool $useBookingAsEntry
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setUseBookingAsEntry(?bool $useBookingAsEntry = null): self
     {
@@ -1652,7 +1652,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set validCreationTravel value
      * @param string $validCreationTravel
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setValidCreationTravel(?string $validCreationTravel = null): self
     {
@@ -1675,7 +1675,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set validDate value
      * @param string $validDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setValidDate(?string $validDate = null): self
     {
@@ -1698,7 +1698,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setVatId(?string $vatId = null): self
     {
@@ -1721,7 +1721,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set vatIdChange value
      * @param bool $vatIdChange
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setVatIdChange(?bool $vatIdChange = null): self
     {
@@ -1744,7 +1744,7 @@ class SupplierHistoricDTO extends AbstractStructBase
     /**
      * Set verkCode value
      * @param int $verkCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierHistoricDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierHistoricDTO
      */
     public function setVerkCode(?int $verkCode = null): self
     {

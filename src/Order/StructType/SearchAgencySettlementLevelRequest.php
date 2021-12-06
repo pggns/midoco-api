@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SearchAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAgencySettlementLevelRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -86,7 +86,7 @@ class SearchAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAgencySettlementLevelRequest
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -109,7 +109,7 @@ class SearchAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set creationDateFrom value
      * @param string $creationDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAgencySettlementLevelRequest
      */
     public function setCreationDateFrom(?string $creationDateFrom = null): self
     {
@@ -132,7 +132,7 @@ class SearchAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set creationDateTo value
      * @param string $creationDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAgencySettlementLevelRequest
      */
     public function setCreationDateTo(?string $creationDateTo = null): self
     {

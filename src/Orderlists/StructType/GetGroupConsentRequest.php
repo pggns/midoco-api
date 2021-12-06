@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetGroupConsentRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetGroupConsentRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetGroupConsentRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {

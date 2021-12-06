@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class FairplaneStatusDTO extends AbstractStructBase
     /**
      * Set importDate value
      * @param string $importDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FairplaneStatusDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FairplaneStatusDTO
      */
     public function setImportDate(?string $importDate = null): self
     {
@@ -94,7 +94,7 @@ class FairplaneStatusDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FairplaneStatusDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FairplaneStatusDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -117,7 +117,7 @@ class FairplaneStatusDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FairplaneStatusDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FairplaneStatusDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -140,7 +140,7 @@ class FairplaneStatusDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FairplaneStatusDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FairplaneStatusDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -163,7 +163,7 @@ class FairplaneStatusDTO extends AbstractStructBase
     /**
      * Set status value
      * @param int $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FairplaneStatusDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FairplaneStatusDTO
      */
     public function setStatus(?int $status = null): self
     {

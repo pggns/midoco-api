@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\EnumType;
+namespace Pggns\MidocoApi\Orderlists\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 

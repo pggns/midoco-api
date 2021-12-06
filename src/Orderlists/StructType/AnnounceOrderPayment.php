@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -82,7 +82,7 @@ class AnnounceOrderPayment extends AbstractStructBase
     /**
      * Set paymentAmount value
      * @param float $paymentAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AnnounceOrderPayment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AnnounceOrderPayment
      */
     public function setPaymentAmount(?float $paymentAmount = null): self
     {
@@ -105,7 +105,7 @@ class AnnounceOrderPayment extends AbstractStructBase
     /**
      * Set paymentDate value
      * @param string $paymentDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AnnounceOrderPayment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AnnounceOrderPayment
      */
     public function setPaymentDate(?string $paymentDate = null): self
     {
@@ -132,7 +132,7 @@ class AnnounceOrderPayment extends AbstractStructBase
     /**
      * Set paymentText value
      * @param string $paymentText
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AnnounceOrderPayment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AnnounceOrderPayment
      */
     public function setPaymentText(?string $paymentText = null): self
     {
@@ -154,17 +154,17 @@ class AnnounceOrderPayment extends AbstractStructBase
     }
     /**
      * Set paymentType value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\PaymentType_1::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\PaymentType_1::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\PaymentType_1::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\PaymentType_1::getValidValues()
      * @throws InvalidArgumentException
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AnnounceOrderPayment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AnnounceOrderPayment
      */
     public function setPaymentType(?string $paymentType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\PaymentType_1::valueIsValid($paymentType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\PaymentType_1', is_array($paymentType) ? implode(', ', $paymentType) : var_export($paymentType, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\PaymentType_1::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\PaymentType_1::valueIsValid($paymentType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\PaymentType_1', is_array($paymentType) ? implode(', ', $paymentType) : var_export($paymentType, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\PaymentType_1::getValidValues())), __LINE__);
         }
         $this->paymentType = $paymentType;
         
@@ -181,7 +181,7 @@ class AnnounceOrderPayment extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AnnounceOrderPayment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AnnounceOrderPayment
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -204,7 +204,7 @@ class AnnounceOrderPayment extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AnnounceOrderPayment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AnnounceOrderPayment
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {

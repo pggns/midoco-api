@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class SaveBillingDocumentPositionResponse extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingDocumentPositionResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingDocumentPositionResponse
      */
     public function setPositionId(?int $positionId = null): self
     {

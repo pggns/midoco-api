@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CheckQMAnswersResponse extends AbstractStructBase
     /**
      * Set changed value
      * @param bool $changed
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckQMAnswersResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckQMAnswersResponse
      */
     public function setChanged(?bool $changed = null): self
     {

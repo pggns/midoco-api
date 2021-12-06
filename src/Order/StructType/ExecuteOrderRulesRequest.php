@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class ExecuteOrderRulesRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteOrderRulesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteOrderRulesRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -99,7 +99,7 @@ class ExecuteOrderRulesRequest extends AbstractStructBase
      * Set ruleName value
      * @throws InvalidArgumentException
      * @param string[] $ruleName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteOrderRulesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteOrderRulesRequest
      */
     public function setRuleName(?array $ruleName = null): self
     {
@@ -115,7 +115,7 @@ class ExecuteOrderRulesRequest extends AbstractStructBase
      * Add item to ruleName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteOrderRulesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteOrderRulesRequest
      */
     public function addToRuleName(string $item): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMediatorBillingResponse extends AbstractStructBase
      * The MidocoMediatorBilling
      * Meta information extracted from the WSDL
      * - ref: MidocoMediatorBilling
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO $MidocoMediatorBilling = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MediatorBillingDTO $MidocoMediatorBilling = null;
     /**
      * Constructor method for SaveMediatorBillingResponse
      * @uses SaveMediatorBillingResponse::setMidocoMediatorBilling()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO $midocoMediatorBilling
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO $midocoMediatorBilling
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO $midocoMediatorBilling = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MediatorBillingDTO $midocoMediatorBilling = null)
     {
         $this
             ->setMidocoMediatorBilling($midocoMediatorBilling);
     }
     /**
      * Get MidocoMediatorBilling value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO|null
      */
-    public function getMidocoMediatorBilling(): ?\Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+    public function getMidocoMediatorBilling(): ?\Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
     {
         return $this->MidocoMediatorBilling;
     }
     /**
      * Set MidocoMediatorBilling value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO $midocoMediatorBilling
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMediatorBillingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO $midocoMediatorBilling
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMediatorBillingResponse
      */
-    public function setMidocoMediatorBilling(?\Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO $midocoMediatorBilling = null): self
+    public function setMidocoMediatorBilling(?\Pggns\MidocoApi\Order\StructType\MediatorBillingDTO $midocoMediatorBilling = null): self
     {
         $this->MidocoMediatorBilling = $midocoMediatorBilling;
         

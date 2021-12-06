@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetDestinationDocumentsRequest extends AbstractStructBase
      * The MidocoDestinationDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoDestinationDocument
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDestinationDocument|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoDestinationDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDestinationDocument $MidocoDestinationDocument = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoDestinationDocument $MidocoDestinationDocument = null;
     /**
      * The ignoreCultureId
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class GetDestinationDocumentsRequest extends AbstractStructBase
      * Constructor method for GetDestinationDocumentsRequest
      * @uses GetDestinationDocumentsRequest::setMidocoDestinationDocument()
      * @uses GetDestinationDocumentsRequest::setIgnoreCultureId()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDestinationDocument $midocoDestinationDocument
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoDestinationDocument $midocoDestinationDocument
      * @param bool $ignoreCultureId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDestinationDocument $midocoDestinationDocument = null, ?bool $ignoreCultureId = false)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoDestinationDocument $midocoDestinationDocument = null, ?bool $ignoreCultureId = false)
     {
         $this
             ->setMidocoDestinationDocument($midocoDestinationDocument)
@@ -42,18 +42,18 @@ class GetDestinationDocumentsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoDestinationDocument value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDestinationDocument|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoDestinationDocument|null
      */
-    public function getMidocoDestinationDocument(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDestinationDocument
+    public function getMidocoDestinationDocument(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoDestinationDocument
     {
         return $this->MidocoDestinationDocument;
     }
     /**
      * Set MidocoDestinationDocument value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDestinationDocument $midocoDestinationDocument
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetDestinationDocumentsRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoDestinationDocument $midocoDestinationDocument
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetDestinationDocumentsRequest
      */
-    public function setMidocoDestinationDocument(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDestinationDocument $midocoDestinationDocument = null): self
+    public function setMidocoDestinationDocument(?\Pggns\MidocoApi\OrderSD\StructType\MidocoDestinationDocument $midocoDestinationDocument = null): self
     {
         $this->MidocoDestinationDocument = $midocoDestinationDocument;
         
@@ -70,7 +70,7 @@ class GetDestinationDocumentsRequest extends AbstractStructBase
     /**
      * Set ignoreCultureId value
      * @param bool $ignoreCultureId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetDestinationDocumentsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetDestinationDocumentsRequest
      */
     public function setIgnoreCultureId(?bool $ignoreCultureId = false): self
     {

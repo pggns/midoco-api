@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class DetailsPrice extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DetailsPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\DetailsPrice
      */
     public function setPosition(?int $position = null): self
     {
@@ -110,7 +110,7 @@ class DetailsPrice extends AbstractStructBase
     /**
      * Set serviceRef value
      * @param int $serviceRef
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DetailsPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\DetailsPrice
      */
     public function setServiceRef(?int $serviceRef = null): self
     {
@@ -133,7 +133,7 @@ class DetailsPrice extends AbstractStructBase
     /**
      * Set passengerAssignment value
      * @param string $passengerAssignment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DetailsPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\DetailsPrice
      */
     public function setPassengerAssignment(?string $passengerAssignment = null): self
     {
@@ -156,7 +156,7 @@ class DetailsPrice extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DetailsPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\DetailsPrice
      */
     public function setDescription(?string $description = null): self
     {
@@ -179,7 +179,7 @@ class DetailsPrice extends AbstractStructBase
     /**
      * Set singlePrice value
      * @param float $singlePrice
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DetailsPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\DetailsPrice
      */
     public function setSinglePrice(?float $singlePrice = null): self
     {
@@ -202,7 +202,7 @@ class DetailsPrice extends AbstractStructBase
     /**
      * Set priceMultiply value
      * @param int $priceMultiply
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DetailsPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\DetailsPrice
      */
     public function setPriceMultiply(?int $priceMultiply = null): self
     {
@@ -225,7 +225,7 @@ class DetailsPrice extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DetailsPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\DetailsPrice
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {

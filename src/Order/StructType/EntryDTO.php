@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -191,7 +191,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -214,7 +214,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set balanceMode value
      * @param int $balanceMode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setBalanceMode(?int $balanceMode = null): self
     {
@@ -237,7 +237,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setComment(?string $comment = null): self
     {
@@ -260,7 +260,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set commentDatetime value
      * @param string $commentDatetime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setCommentDatetime(?string $commentDatetime = null): self
     {
@@ -283,7 +283,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set commentUser value
      * @param int $commentUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setCommentUser(?int $commentUser = null): self
     {
@@ -306,7 +306,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -329,7 +329,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -352,7 +352,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -375,7 +375,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set dunningLevel value
      * @param int $dunningLevel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setDunningLevel(?int $dunningLevel = null): self
     {
@@ -398,7 +398,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set entryId value
      * @param string $entryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setEntryId(?string $entryId = null): self
     {
@@ -421,7 +421,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set hasTask value
      * @param bool $hasTask
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setHasTask(?bool $hasTask = null): self
     {
@@ -444,7 +444,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set invoicedAmount value
      * @param float $invoicedAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setInvoicedAmount(?float $invoicedAmount = null): self
     {
@@ -467,7 +467,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set isDepositBookingLogic value
      * @param bool $isDepositBookingLogic
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setIsDepositBookingLogic(?bool $isDepositBookingLogic = null): self
     {
@@ -490,7 +490,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set isDunningBlock value
      * @param bool $isDunningBlock
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setIsDunningBlock(?bool $isDunningBlock = null): self
     {
@@ -513,7 +513,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -536,7 +536,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set originalInvoicedAmount value
      * @param float $originalInvoicedAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setOriginalInvoicedAmount(?float $originalInvoicedAmount = null): self
     {
@@ -559,7 +559,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set originalPaidAmount value
      * @param float $originalPaidAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setOriginalPaidAmount(?float $originalPaidAmount = null): self
     {
@@ -582,7 +582,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -605,7 +605,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -628,7 +628,7 @@ class EntryDTO extends AbstractStructBase
     /**
      * Set processingLock value
      * @param bool $processingLock
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO
      */
     public function setProcessingLock(?bool $processingLock = null): self
     {

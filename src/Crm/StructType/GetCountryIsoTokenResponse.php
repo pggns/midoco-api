@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCountryIsoTokenResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCountryToken
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CountryTokenDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CountryTokenDTO[]
      */
     protected ?array $MidocoCountryToken = null;
     /**
      * Constructor method for GetCountryIsoTokenResponse
      * @uses GetCountryIsoTokenResponse::setMidocoCountryToken()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CountryTokenDTO[] $midocoCountryToken
+     * @param \Pggns\MidocoApi\Crm\StructType\CountryTokenDTO[] $midocoCountryToken
      */
     public function __construct(?array $midocoCountryToken = null)
     {
@@ -34,7 +34,7 @@ class GetCountryIsoTokenResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCountryToken value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CountryTokenDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CountryTokenDTO[]
      */
     public function getMidocoCountryToken(): ?array
     {
@@ -55,12 +55,12 @@ class GetCountryIsoTokenResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCountryIsoTokenResponseMidocoCountryTokenItem) {
             // validation for constraint: itemType
-            if (!$getCountryIsoTokenResponseMidocoCountryTokenItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CountryTokenDTO) {
+            if (!$getCountryIsoTokenResponseMidocoCountryTokenItem instanceof \Pggns\MidocoApi\Crm\StructType\CountryTokenDTO) {
                 $invalidValues[] = is_object($getCountryIsoTokenResponseMidocoCountryTokenItem) ? get_class($getCountryIsoTokenResponseMidocoCountryTokenItem) : sprintf('%s(%s)', gettype($getCountryIsoTokenResponseMidocoCountryTokenItem), var_export($getCountryIsoTokenResponseMidocoCountryTokenItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCountryToken property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CountryTokenDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCountryToken property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CountryTokenDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCountryIsoTokenResponse extends AbstractStructBase
     /**
      * Set MidocoCountryToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CountryTokenDTO[] $midocoCountryToken
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCountryIsoTokenResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CountryTokenDTO[] $midocoCountryToken
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCountryIsoTokenResponse
      */
     public function setMidocoCountryToken(?array $midocoCountryToken = null): self
     {
@@ -85,14 +85,14 @@ class GetCountryIsoTokenResponse extends AbstractStructBase
     /**
      * Add item to MidocoCountryToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CountryTokenDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCountryIsoTokenResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CountryTokenDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCountryIsoTokenResponse
      */
-    public function addToMidocoCountryToken(\Pggns\MidocoApi\Api\Crm\StructType\CountryTokenDTO $item): self
+    public function addToMidocoCountryToken(\Pggns\MidocoApi\Crm\StructType\CountryTokenDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CountryTokenDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCountryToken property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CountryTokenDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CountryTokenDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCountryToken property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CountryTokenDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCountryToken[] = $item;
         

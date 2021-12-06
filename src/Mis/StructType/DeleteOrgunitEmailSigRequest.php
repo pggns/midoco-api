@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class DeleteOrgunitEmailSigRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoOrgunitEmailSig
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\OrgunitEmailSigDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\OrgunitEmailSigDTO[]
      */
     protected ?array $MidocoOrgunitEmailSig = null;
     /**
      * Constructor method for DeleteOrgunitEmailSigRequest
      * @uses DeleteOrgunitEmailSigRequest::setMidocoOrgunitEmailSig()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\OrgunitEmailSigDTO[] $midocoOrgunitEmailSig
+     * @param \Pggns\MidocoApi\Mis\StructType\OrgunitEmailSigDTO[] $midocoOrgunitEmailSig
      */
     public function __construct(?array $midocoOrgunitEmailSig = null)
     {
@@ -33,7 +33,7 @@ class DeleteOrgunitEmailSigRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrgunitEmailSig value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitEmailSigDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitEmailSigDTO[]
      */
     public function getMidocoOrgunitEmailSig(): ?array
     {
@@ -54,12 +54,12 @@ class DeleteOrgunitEmailSigRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteOrgunitEmailSigRequestMidocoOrgunitEmailSigItem) {
             // validation for constraint: itemType
-            if (!$deleteOrgunitEmailSigRequestMidocoOrgunitEmailSigItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\OrgunitEmailSigDTO) {
+            if (!$deleteOrgunitEmailSigRequestMidocoOrgunitEmailSigItem instanceof \Pggns\MidocoApi\Mis\StructType\OrgunitEmailSigDTO) {
                 $invalidValues[] = is_object($deleteOrgunitEmailSigRequestMidocoOrgunitEmailSigItem) ? get_class($deleteOrgunitEmailSigRequestMidocoOrgunitEmailSigItem) : sprintf('%s(%s)', gettype($deleteOrgunitEmailSigRequestMidocoOrgunitEmailSigItem), var_export($deleteOrgunitEmailSigRequestMidocoOrgunitEmailSigItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrgunitEmailSig property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\OrgunitEmailSigDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrgunitEmailSig property can only contain items of type \Pggns\MidocoApi\Mis\StructType\OrgunitEmailSigDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class DeleteOrgunitEmailSigRequest extends AbstractStructBase
     /**
      * Set MidocoOrgunitEmailSig value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\OrgunitEmailSigDTO[] $midocoOrgunitEmailSig
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteOrgunitEmailSigRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\OrgunitEmailSigDTO[] $midocoOrgunitEmailSig
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteOrgunitEmailSigRequest
      */
     public function setMidocoOrgunitEmailSig(?array $midocoOrgunitEmailSig = null): self
     {
@@ -84,14 +84,14 @@ class DeleteOrgunitEmailSigRequest extends AbstractStructBase
     /**
      * Add item to MidocoOrgunitEmailSig value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\OrgunitEmailSigDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteOrgunitEmailSigRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\OrgunitEmailSigDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteOrgunitEmailSigRequest
      */
-    public function addToMidocoOrgunitEmailSig(\Pggns\MidocoApi\Api\Mis\StructType\OrgunitEmailSigDTO $item): self
+    public function addToMidocoOrgunitEmailSig(\Pggns\MidocoApi\Mis\StructType\OrgunitEmailSigDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\OrgunitEmailSigDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrgunitEmailSig property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\OrgunitEmailSigDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\OrgunitEmailSigDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrgunitEmailSig property can only contain items of type \Pggns\MidocoApi\Mis\StructType\OrgunitEmailSigDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrgunitEmailSig[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MisCampaignQueryFilterDTO extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMisCampaignCriteria
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO[]
      */
     protected ?array $MidocoMisCampaignCriteria = null;
     /**
@@ -37,7 +37,7 @@ class MisCampaignQueryFilterDTO extends AbstractStructBase
      * @uses MisCampaignQueryFilterDTO::setMidocoMisCampaignCriteria()
      * @uses MisCampaignQueryFilterDTO::setInSelect()
      * @uses MisCampaignQueryFilterDTO::setCategory()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO[] $midocoMisCampaignCriteria
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO[] $midocoMisCampaignCriteria
      * @param bool $inSelect
      * @param string $category
      */
@@ -50,7 +50,7 @@ class MisCampaignQueryFilterDTO extends AbstractStructBase
     }
     /**
      * Get MidocoMisCampaignCriteria value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO[]
      */
     public function getMidocoMisCampaignCriteria(): ?array
     {
@@ -71,12 +71,12 @@ class MisCampaignQueryFilterDTO extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $misCampaignQueryFilterDTOMidocoMisCampaignCriteriaItem) {
             // validation for constraint: itemType
-            if (!$misCampaignQueryFilterDTOMidocoMisCampaignCriteriaItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO) {
+            if (!$misCampaignQueryFilterDTOMidocoMisCampaignCriteriaItem instanceof \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO) {
                 $invalidValues[] = is_object($misCampaignQueryFilterDTOMidocoMisCampaignCriteriaItem) ? get_class($misCampaignQueryFilterDTOMidocoMisCampaignCriteriaItem) : sprintf('%s(%s)', gettype($misCampaignQueryFilterDTOMidocoMisCampaignCriteriaItem), var_export($misCampaignQueryFilterDTOMidocoMisCampaignCriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMisCampaignCriteria property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMisCampaignCriteria property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class MisCampaignQueryFilterDTO extends AbstractStructBase
     /**
      * Set MidocoMisCampaignCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO[] $midocoMisCampaignCriteria
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignQueryFilterDTO
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO[] $midocoMisCampaignCriteria
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignQueryFilterDTO
      */
     public function setMidocoMisCampaignCriteria(?array $midocoMisCampaignCriteria = null): self
     {
@@ -101,14 +101,14 @@ class MisCampaignQueryFilterDTO extends AbstractStructBase
     /**
      * Add item to MidocoMisCampaignCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignQueryFilterDTO
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignQueryFilterDTO
      */
-    public function addToMidocoMisCampaignCriteria(\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO $item): self
+    public function addToMidocoMisCampaignCriteria(\Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMisCampaignCriteria property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMisCampaignCriteria property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMisCampaignCriteria[] = $item;
         
@@ -125,7 +125,7 @@ class MisCampaignQueryFilterDTO extends AbstractStructBase
     /**
      * Set inSelect value
      * @param bool $inSelect
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignQueryFilterDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignQueryFilterDTO
      */
     public function setInSelect(?bool $inSelect = null): self
     {
@@ -148,7 +148,7 @@ class MisCampaignQueryFilterDTO extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignQueryFilterDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignQueryFilterDTO
      */
     public function setCategory(?string $category = null): self
     {

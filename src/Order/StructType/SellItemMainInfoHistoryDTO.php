@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class SellItemMainInfoHistoryDTO extends AbstractStructBase
     /**
      * Set attributeValue value
      * @param string $attributeValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMainInfoHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMainInfoHistoryDTO
      */
     public function setAttributeValue(?string $attributeValue = null): self
     {
@@ -150,7 +150,7 @@ class SellItemMainInfoHistoryDTO extends AbstractStructBase
     /**
      * Set calculatedRevenue value
      * @param float $calculatedRevenue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMainInfoHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMainInfoHistoryDTO
      */
     public function setCalculatedRevenue(?float $calculatedRevenue = null): self
     {
@@ -173,7 +173,7 @@ class SellItemMainInfoHistoryDTO extends AbstractStructBase
     /**
      * Set grantedRevenue value
      * @param float $grantedRevenue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMainInfoHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMainInfoHistoryDTO
      */
     public function setGrantedRevenue(?float $grantedRevenue = null): self
     {
@@ -196,7 +196,7 @@ class SellItemMainInfoHistoryDTO extends AbstractStructBase
     /**
      * Set historyId value
      * @param int $historyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMainInfoHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMainInfoHistoryDTO
      */
     public function setHistoryId(?int $historyId = null): self
     {
@@ -219,7 +219,7 @@ class SellItemMainInfoHistoryDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMainInfoHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMainInfoHistoryDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -242,7 +242,7 @@ class SellItemMainInfoHistoryDTO extends AbstractStructBase
     /**
      * Set itemPrice value
      * @param float $itemPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMainInfoHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMainInfoHistoryDTO
      */
     public function setItemPrice(?float $itemPrice = null): self
     {
@@ -265,7 +265,7 @@ class SellItemMainInfoHistoryDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMainInfoHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMainInfoHistoryDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -288,7 +288,7 @@ class SellItemMainInfoHistoryDTO extends AbstractStructBase
     /**
      * Set modifyTime value
      * @param string $modifyTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMainInfoHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMainInfoHistoryDTO
      */
     public function setModifyTime(?string $modifyTime = null): self
     {
@@ -311,7 +311,7 @@ class SellItemMainInfoHistoryDTO extends AbstractStructBase
     /**
      * Set previousHistoryId value
      * @param int $previousHistoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMainInfoHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMainInfoHistoryDTO
      */
     public function setPreviousHistoryId(?int $previousHistoryId = null): self
     {
@@ -334,7 +334,7 @@ class SellItemMainInfoHistoryDTO extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMainInfoHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMainInfoHistoryDTO
      */
     public function setProductType(?string $productType = null): self
     {
@@ -357,7 +357,7 @@ class SellItemMainInfoHistoryDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMainInfoHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMainInfoHistoryDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -380,7 +380,7 @@ class SellItemMainInfoHistoryDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMainInfoHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMainInfoHistoryDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

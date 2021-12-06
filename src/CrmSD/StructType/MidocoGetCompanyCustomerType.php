@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,24 +17,24 @@ class MidocoGetCompanyCustomerType extends AbstractStructBase
      * The MidocoCrmCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
      * The MidocoCrmCompany
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCompany
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCompanyDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCompanyDTO $MidocoCrmCompany = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $MidocoCrmCompany = null;
     /**
      * Constructor method for MidocoGetCompanyCustomerType
      * @uses MidocoGetCompanyCustomerType::setMidocoCrmCustomer()
      * @uses MidocoGetCompanyCustomerType::setMidocoCrmCompany()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?\Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany = null)
     {
         $this
             ->setMidocoCrmCustomer($midocoCrmCustomer)
@@ -42,18 +42,18 @@ class MidocoGetCompanyCustomerType extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGetCompanyCustomerType
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         
@@ -61,18 +61,18 @@ class MidocoGetCompanyCustomerType extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCompany value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCompanyDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO|null
      */
-    public function getMidocoCrmCompany(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCompanyDTO
+    public function getMidocoCrmCompany(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO
     {
         return $this->MidocoCrmCompany;
     }
     /**
      * Set MidocoCrmCompany value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGetCompanyCustomerType
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType
      */
-    public function setMidocoCrmCompany(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany = null): self
+    public function setMidocoCrmCompany(?\Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany = null): self
     {
         $this->MidocoCrmCompany = $midocoCrmCompany;
         

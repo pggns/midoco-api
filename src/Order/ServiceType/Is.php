@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Is extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Is
+     * @return \Pggns\MidocoApi\Order\ServiceType\Is
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Is extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\IsOrderTotallyCancelledRequest $paramIsOrderTotallyCancelledRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\IsOrderTotallyCancelledResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\IsOrderTotallyCancelledRequest $paramIsOrderTotallyCancelledRequest
+     * @return \Pggns\MidocoApi\Order\StructType\IsOrderTotallyCancelledResponse|bool
      */
-    public function isOrderTotallyCancelled(\Pggns\MidocoApi\Api\Order\StructType\IsOrderTotallyCancelledRequest $paramIsOrderTotallyCancelledRequest)
+    public function isOrderTotallyCancelled(\Pggns\MidocoApi\Order\StructType\IsOrderTotallyCancelledRequest $paramIsOrderTotallyCancelledRequest)
     {
         try {
             $this->setResult($resultIsOrderTotallyCancelled = $this->getSoapClient()->__soapCall('isOrderTotallyCancelled', [
@@ -58,15 +58,15 @@ class Is extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\IsPrintRequiredForPassengersRequest $paramIsPrintRequiredForPassengersRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\IsPrintRequiredForPassengersResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\IsPrintRequiredForPassengersRequest $paramIsPrintRequiredForPassengersRequest
+     * @return \Pggns\MidocoApi\Order\StructType\IsPrintRequiredForPassengersResponse|bool
      */
-    public function isPrintRequiredForPassengers(\Pggns\MidocoApi\Api\Order\StructType\IsPrintRequiredForPassengersRequest $paramIsPrintRequiredForPassengersRequest)
+    public function isPrintRequiredForPassengers(\Pggns\MidocoApi\Order\StructType\IsPrintRequiredForPassengersRequest $paramIsPrintRequiredForPassengersRequest)
     {
         try {
             $this->setResult($resultIsPrintRequiredForPassengers = $this->getSoapClient()->__soapCall('isPrintRequiredForPassengers', [
@@ -83,7 +83,7 @@ class Is extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\IsOrderTotallyCancelledResponse|\Pggns\MidocoApi\Api\Order\StructType\IsPrintRequiredForPassengersResponse
+     * @return \Pggns\MidocoApi\Order\StructType\IsOrderTotallyCancelledResponse|\Pggns\MidocoApi\Order\StructType\IsPrintRequiredForPassengersResponse
      */
     public function getResult()
     {

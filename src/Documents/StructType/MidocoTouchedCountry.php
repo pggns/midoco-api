@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class MidocoTouchedCountry extends TouchedCountryDTO
      * Set usedByItemId value
      * @throws InvalidArgumentException
      * @param int[] $usedByItemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTouchedCountry
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTouchedCountry
      */
     public function setUsedByItemId(?array $usedByItemId = null): self
     {
@@ -85,7 +85,7 @@ class MidocoTouchedCountry extends TouchedCountryDTO
      * Add item to usedByItemId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTouchedCountry
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTouchedCountry
      */
     public function addToUsedByItemId(int $item): self
     {

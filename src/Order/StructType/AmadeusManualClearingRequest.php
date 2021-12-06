@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -99,7 +99,7 @@ class AmadeusManualClearingRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusManualClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusManualClearingRequest
      */
     public function setSupplierId(string $supplierId): self
     {
@@ -122,7 +122,7 @@ class AmadeusManualClearingRequest extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusManualClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusManualClearingRequest
      */
     public function setBookingId(string $bookingId): self
     {
@@ -145,7 +145,7 @@ class AmadeusManualClearingRequest extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusManualClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusManualClearingRequest
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -168,7 +168,7 @@ class AmadeusManualClearingRequest extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusManualClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusManualClearingRequest
      */
     public function setStatus(?string $status = null): self
     {
@@ -191,7 +191,7 @@ class AmadeusManualClearingRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusManualClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusManualClearingRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -214,7 +214,7 @@ class AmadeusManualClearingRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusManualClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusManualClearingRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -237,7 +237,7 @@ class AmadeusManualClearingRequest extends AbstractStructBase
     /**
      * Set reasonNo value
      * @param int $reasonNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusManualClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusManualClearingRequest
      */
     public function setReasonNo(?int $reasonNo = null): self
     {
@@ -260,7 +260,7 @@ class AmadeusManualClearingRequest extends AbstractStructBase
     /**
      * Set reasonText value
      * @param string $reasonText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusManualClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusManualClearingRequest
      */
     public function setReasonText(?string $reasonText = null): self
     {

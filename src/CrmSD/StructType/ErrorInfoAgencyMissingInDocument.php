@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class ErrorInfoAgencyMissingInDocument extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -94,7 +94,7 @@ class ErrorInfoAgencyMissingInDocument extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument
      */
     public function setStreet(?string $street = null): self
     {
@@ -117,7 +117,7 @@ class ErrorInfoAgencyMissingInDocument extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument
      */
     public function setName(?string $name = null): self
     {
@@ -140,7 +140,7 @@ class ErrorInfoAgencyMissingInDocument extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument
      */
     public function setCity(?string $city = null): self
     {
@@ -163,7 +163,7 @@ class ErrorInfoAgencyMissingInDocument extends AbstractStructBase
     /**
      * Set agencyNo value
      * @param string $agencyNo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ErrorInfoAgencyMissingInDocument
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument
      */
     public function setAgencyNo(?string $agencyNo = null): self
     {

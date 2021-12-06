@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetUsersFromTopMostOrgUnitResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoUser
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoUser[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoUser[]
      */
     protected ?array $MidocoUser = null;
     /**
      * Constructor method for GetUsersFromTopMostOrgUnitResponse
      * @uses GetUsersFromTopMostOrgUnitResponse::setMidocoUser()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoUser[] $midocoUser
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoUser[] $midocoUser
      */
     public function __construct(?array $midocoUser = null)
     {
@@ -34,7 +34,7 @@ class GetUsersFromTopMostOrgUnitResponse extends AbstractStructBase
     }
     /**
      * Get MidocoUser value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoUser[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoUser[]
      */
     public function getMidocoUser(): ?array
     {
@@ -55,12 +55,12 @@ class GetUsersFromTopMostOrgUnitResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getUsersFromTopMostOrgUnitResponseMidocoUserItem) {
             // validation for constraint: itemType
-            if (!$getUsersFromTopMostOrgUnitResponseMidocoUserItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoUser) {
+            if (!$getUsersFromTopMostOrgUnitResponseMidocoUserItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoUser) {
                 $invalidValues[] = is_object($getUsersFromTopMostOrgUnitResponseMidocoUserItem) ? get_class($getUsersFromTopMostOrgUnitResponseMidocoUserItem) : sprintf('%s(%s)', gettype($getUsersFromTopMostOrgUnitResponseMidocoUserItem), var_export($getUsersFromTopMostOrgUnitResponseMidocoUserItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoUser property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoUser, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoUser property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoUser, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetUsersFromTopMostOrgUnitResponse extends AbstractStructBase
     /**
      * Set MidocoUser value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoUser[] $midocoUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetUsersFromTopMostOrgUnitResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoUser[] $midocoUser
+     * @return \Pggns\MidocoApi\Documents\StructType\GetUsersFromTopMostOrgUnitResponse
      */
     public function setMidocoUser(?array $midocoUser = null): self
     {
@@ -85,14 +85,14 @@ class GetUsersFromTopMostOrgUnitResponse extends AbstractStructBase
     /**
      * Add item to MidocoUser value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoUser $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetUsersFromTopMostOrgUnitResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoUser $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetUsersFromTopMostOrgUnitResponse
      */
-    public function addToMidocoUser(\Pggns\MidocoApi\Api\Documents\StructType\MidocoUser $item): self
+    public function addToMidocoUser(\Pggns\MidocoApi\Documents\StructType\MidocoUser $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoUser) {
-            throw new InvalidArgumentException(sprintf('The MidocoUser property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoUser, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoUser) {
+            throw new InvalidArgumentException(sprintf('The MidocoUser property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoUser, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoUser[] = $item;
         

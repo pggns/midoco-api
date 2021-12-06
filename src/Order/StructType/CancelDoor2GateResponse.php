@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CancelDoor2GateResponse extends AbstractStructBase
     /**
      * Set success value
      * @param bool $success
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CancelDoor2GateResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CancelDoor2GateResponse
      */
     public function setSuccess(?bool $success = null): self
     {

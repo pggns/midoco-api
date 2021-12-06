@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class CalculateSupplierCommissionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierCommissionInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionInfo[]
      */
     protected ?array $MidocoSupplierCommissionInfo = null;
     /**
      * Constructor method for CalculateSupplierCommissionResponse
      * @uses CalculateSupplierCommissionResponse::setMidocoSupplierCommissionInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionInfo[] $midocoSupplierCommissionInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionInfo[] $midocoSupplierCommissionInfo
      */
     public function __construct(?array $midocoSupplierCommissionInfo = null)
     {
@@ -34,7 +34,7 @@ class CalculateSupplierCommissionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierCommissionInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionInfo[]
      */
     public function getMidocoSupplierCommissionInfo(): ?array
     {
@@ -55,12 +55,12 @@ class CalculateSupplierCommissionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $calculateSupplierCommissionResponseMidocoSupplierCommissionInfoItem) {
             // validation for constraint: itemType
-            if (!$calculateSupplierCommissionResponseMidocoSupplierCommissionInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionInfo) {
+            if (!$calculateSupplierCommissionResponseMidocoSupplierCommissionInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionInfo) {
                 $invalidValues[] = is_object($calculateSupplierCommissionResponseMidocoSupplierCommissionInfoItem) ? get_class($calculateSupplierCommissionResponseMidocoSupplierCommissionInfoItem) : sprintf('%s(%s)', gettype($calculateSupplierCommissionResponseMidocoSupplierCommissionInfoItem), var_export($calculateSupplierCommissionResponseMidocoSupplierCommissionInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierCommissionInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierCommissionInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class CalculateSupplierCommissionResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierCommissionInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionInfo[] $midocoSupplierCommissionInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateSupplierCommissionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionInfo[] $midocoSupplierCommissionInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateSupplierCommissionResponse
      */
     public function setMidocoSupplierCommissionInfo(?array $midocoSupplierCommissionInfo = null): self
     {
@@ -85,14 +85,14 @@ class CalculateSupplierCommissionResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierCommissionInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateSupplierCommissionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateSupplierCommissionResponse
      */
-    public function addToMidocoSupplierCommissionInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionInfo $item): self
+    public function addToMidocoSupplierCommissionInfo(\Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierCommissionInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierCommissionInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierCommissionInfo[] = $item;
         

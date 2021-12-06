@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,17 +17,17 @@ class MidocoQueryResult extends AbstractStructBase
      * The MidocoQueryMetadata
      * Meta information extracted from the WSDL
      * - ref: MidocoQueryMetadata
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryMetadata|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryMetadata|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryMetadata $MidocoQueryMetadata = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoQueryMetadata $MidocoQueryMetadata = null;
     /**
      * The MidocoQueryPage
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoQueryPage
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryPage|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryPage|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryPage $MidocoQueryPage = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoQueryPage $MidocoQueryPage = null;
     /**
      * The queryId
      * @var int|null
@@ -56,14 +56,14 @@ class MidocoQueryResult extends AbstractStructBase
      * @uses MidocoQueryResult::setTotalNoOfPages()
      * @uses MidocoQueryResult::setTotalNoOfRecords()
      * @uses MidocoQueryResult::setRowsPerPage()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryMetadata $midocoQueryMetadata
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryPage $midocoQueryPage
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryMetadata $midocoQueryMetadata
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryPage $midocoQueryPage
      * @param int $queryId
      * @param int $totalNoOfPages
      * @param int $totalNoOfRecords
      * @param int $rowsPerPage
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryMetadata $midocoQueryMetadata = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryPage $midocoQueryPage = null, ?int $queryId = null, ?int $totalNoOfPages = null, ?int $totalNoOfRecords = null, ?int $rowsPerPage = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoQueryMetadata $midocoQueryMetadata = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoQueryPage $midocoQueryPage = null, ?int $queryId = null, ?int $totalNoOfPages = null, ?int $totalNoOfRecords = null, ?int $rowsPerPage = null)
     {
         $this
             ->setMidocoQueryMetadata($midocoQueryMetadata)
@@ -75,18 +75,18 @@ class MidocoQueryResult extends AbstractStructBase
     }
     /**
      * Get MidocoQueryMetadata value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryMetadata|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryMetadata|null
      */
-    public function getMidocoQueryMetadata(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryMetadata
+    public function getMidocoQueryMetadata(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoQueryMetadata
     {
         return $this->MidocoQueryMetadata;
     }
     /**
      * Set MidocoQueryMetadata value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryMetadata $midocoQueryMetadata
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryMetadata $midocoQueryMetadata
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult
      */
-    public function setMidocoQueryMetadata(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryMetadata $midocoQueryMetadata = null): self
+    public function setMidocoQueryMetadata(?\Pggns\MidocoApi\Orderlists\StructType\MidocoQueryMetadata $midocoQueryMetadata = null): self
     {
         $this->MidocoQueryMetadata = $midocoQueryMetadata;
         
@@ -94,18 +94,18 @@ class MidocoQueryResult extends AbstractStructBase
     }
     /**
      * Get MidocoQueryPage value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryPage|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryPage|null
      */
-    public function getMidocoQueryPage(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryPage
+    public function getMidocoQueryPage(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoQueryPage
     {
         return $this->MidocoQueryPage;
     }
     /**
      * Set MidocoQueryPage value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryPage $midocoQueryPage
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryPage $midocoQueryPage
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult
      */
-    public function setMidocoQueryPage(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryPage $midocoQueryPage = null): self
+    public function setMidocoQueryPage(?\Pggns\MidocoApi\Orderlists\StructType\MidocoQueryPage $midocoQueryPage = null): self
     {
         $this->MidocoQueryPage = $midocoQueryPage;
         
@@ -122,7 +122,7 @@ class MidocoQueryResult extends AbstractStructBase
     /**
      * Set queryId value
      * @param int $queryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult
      */
     public function setQueryId(?int $queryId = null): self
     {
@@ -145,7 +145,7 @@ class MidocoQueryResult extends AbstractStructBase
     /**
      * Set totalNoOfPages value
      * @param int $totalNoOfPages
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult
      */
     public function setTotalNoOfPages(?int $totalNoOfPages = null): self
     {
@@ -168,7 +168,7 @@ class MidocoQueryResult extends AbstractStructBase
     /**
      * Set totalNoOfRecords value
      * @param int $totalNoOfRecords
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult
      */
     public function setTotalNoOfRecords(?int $totalNoOfRecords = null): self
     {
@@ -191,7 +191,7 @@ class MidocoQueryResult extends AbstractStructBase
     /**
      * Set rowsPerPage value
      * @param int $rowsPerPage
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult
      */
     public function setRowsPerPage(?int $rowsPerPage = null): self
     {

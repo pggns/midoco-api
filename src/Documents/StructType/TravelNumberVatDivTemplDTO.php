@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class TravelNumberVatDivTemplDTO extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatDivTemplDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberVatDivTemplDTO
      */
     public function setTravelNo(?string $travelNo = null): self
     {
@@ -70,7 +70,7 @@ class TravelNumberVatDivTemplDTO extends AbstractStructBase
     /**
      * Set vatDivTemplId value
      * @param int $vatDivTemplId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatDivTemplDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberVatDivTemplDTO
      */
     public function setVatDivTemplId(?int $vatDivTemplId = null): self
     {

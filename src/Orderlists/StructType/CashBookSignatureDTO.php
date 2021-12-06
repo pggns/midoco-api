@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class CashBookSignatureDTO extends AbstractStructBase
     /**
      * Set actualTurnover value
      * @param float $actualTurnover
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookSignatureDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookSignatureDTO
      */
     public function setActualTurnover(?float $actualTurnover = null): self
     {
@@ -150,7 +150,7 @@ class CashBookSignatureDTO extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookSignatureDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookSignatureDTO
      */
     public function setCashBookId(?int $cashBookId = null): self
     {
@@ -173,7 +173,7 @@ class CashBookSignatureDTO extends AbstractStructBase
     /**
      * Set cashBoxId value
      * @param string $cashBoxId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookSignatureDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookSignatureDTO
      */
     public function setCashBoxId(?string $cashBoxId = null): self
     {
@@ -196,7 +196,7 @@ class CashBookSignatureDTO extends AbstractStructBase
     /**
      * Set closedMonth value
      * @param int $closedMonth
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookSignatureDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookSignatureDTO
      */
     public function setClosedMonth(?int $closedMonth = null): self
     {
@@ -219,7 +219,7 @@ class CashBookSignatureDTO extends AbstractStructBase
     /**
      * Set closedYear value
      * @param int $closedYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookSignatureDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookSignatureDTO
      */
     public function setClosedYear(?int $closedYear = null): self
     {
@@ -242,7 +242,7 @@ class CashBookSignatureDTO extends AbstractStructBase
     /**
      * Set encryptionKey value
      * @param string $encryptionKey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookSignatureDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookSignatureDTO
      */
     public function setEncryptionKey(?string $encryptionKey = null): self
     {
@@ -265,7 +265,7 @@ class CashBookSignatureDTO extends AbstractStructBase
     /**
      * Set encryptionKeyChecksum value
      * @param string $encryptionKeyChecksum
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookSignatureDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookSignatureDTO
      */
     public function setEncryptionKeyChecksum(?string $encryptionKeyChecksum = null): self
     {
@@ -288,7 +288,7 @@ class CashBookSignatureDTO extends AbstractStructBase
     /**
      * Set lastReceiptCounter value
      * @param int $lastReceiptCounter
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookSignatureDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookSignatureDTO
      */
     public function setLastReceiptCounter(?int $lastReceiptCounter = null): self
     {
@@ -311,7 +311,7 @@ class CashBookSignatureDTO extends AbstractStructBase
     /**
      * Set lastTurnoverId value
      * @param int $lastTurnoverId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookSignatureDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookSignatureDTO
      */
     public function setLastTurnoverId(?int $lastTurnoverId = null): self
     {
@@ -334,7 +334,7 @@ class CashBookSignatureDTO extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookSignatureDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookSignatureDTO
      */
     public function setState(?string $state = null): self
     {
@@ -357,7 +357,7 @@ class CashBookSignatureDTO extends AbstractStructBase
     /**
      * Set turnoverIdLastMonth value
      * @param int $turnoverIdLastMonth
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookSignatureDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookSignatureDTO
      */
     public function setTurnoverIdLastMonth(?int $turnoverIdLastMonth = null): self
     {
@@ -380,7 +380,7 @@ class CashBookSignatureDTO extends AbstractStructBase
     /**
      * Set turnoverIdLastYear value
      * @param int $turnoverIdLastYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookSignatureDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookSignatureDTO
      */
     public function setTurnoverIdLastYear(?int $turnoverIdLastYear = null): self
     {

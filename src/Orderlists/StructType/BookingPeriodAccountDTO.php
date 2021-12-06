@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class BookingPeriodAccountDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -86,7 +86,7 @@ class BookingPeriodAccountDTO extends AbstractStructBase
     /**
      * Set bookingPeriodClosed value
      * @param int $bookingPeriodClosed
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO
      */
     public function setBookingPeriodClosed(?int $bookingPeriodClosed = null): self
     {
@@ -109,7 +109,7 @@ class BookingPeriodAccountDTO extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -132,7 +132,7 @@ class BookingPeriodAccountDTO extends AbstractStructBase
     /**
      * Set carriedForward value
      * @param bool $carriedForward
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO
      */
     public function setCarriedForward(?bool $carriedForward = null): self
     {

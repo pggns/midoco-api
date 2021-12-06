@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetJasperReportRequest extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetJasperReportRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetJasperReportRequest
      */
     public function setReportId(int $reportId): self
     {

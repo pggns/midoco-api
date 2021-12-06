@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class OrdCriteriaValueDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrdCriteriaValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrdCriteriaValueDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -94,7 +94,7 @@ class OrdCriteriaValueDTO extends AbstractStructBase
     /**
      * Set guiPosition value
      * @param int $guiPosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrdCriteriaValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrdCriteriaValueDTO
      */
     public function setGuiPosition(?int $guiPosition = null): self
     {
@@ -117,7 +117,7 @@ class OrdCriteriaValueDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrdCriteriaValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrdCriteriaValueDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -140,7 +140,7 @@ class OrdCriteriaValueDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrdCriteriaValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrdCriteriaValueDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -163,7 +163,7 @@ class OrdCriteriaValueDTO extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrdCriteriaValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrdCriteriaValueDTO
      */
     public function setValue(?string $value = null): self
     {

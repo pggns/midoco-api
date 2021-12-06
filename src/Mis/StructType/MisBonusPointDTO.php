@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MisBonusPointDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisBonusPointDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisBonusPointDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -86,7 +86,7 @@ class MisBonusPointDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisBonusPointDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisBonusPointDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -109,7 +109,7 @@ class MisBonusPointDTO extends AbstractStructBase
     /**
      * Set points value
      * @param int $points
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisBonusPointDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisBonusPointDTO
      */
     public function setPoints(?int $points = null): self
     {
@@ -132,7 +132,7 @@ class MisBonusPointDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisBonusPointDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisBonusPointDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

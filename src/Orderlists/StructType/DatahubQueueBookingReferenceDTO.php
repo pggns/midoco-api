@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class DatahubQueueBookingReferenceDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueBookingReferenceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueBookingReferenceDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -78,7 +78,7 @@ class DatahubQueueBookingReferenceDTO extends AbstractStructBase
     /**
      * Set queueId value
      * @param int $queueId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueBookingReferenceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueBookingReferenceDTO
      */
     public function setQueueId(?int $queueId = null): self
     {
@@ -101,7 +101,7 @@ class DatahubQueueBookingReferenceDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueBookingReferenceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueBookingReferenceDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Needs extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Needs
+     * @return \Pggns\MidocoApi\Order\ServiceType\Needs
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Needs extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\NeedsToPrintCashReceiptRequest $paramNeedsToPrintCashReceiptRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\NeedsToPrintCashReceiptResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\NeedsToPrintCashReceiptRequest $paramNeedsToPrintCashReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\NeedsToPrintCashReceiptResponse|bool
      */
-    public function needsToPrintCashReceipt(\Pggns\MidocoApi\Api\Order\StructType\NeedsToPrintCashReceiptRequest $paramNeedsToPrintCashReceiptRequest)
+    public function needsToPrintCashReceipt(\Pggns\MidocoApi\Order\StructType\NeedsToPrintCashReceiptRequest $paramNeedsToPrintCashReceiptRequest)
     {
         try {
             $this->setResult($resultNeedsToPrintCashReceipt = $this->getSoapClient()->__soapCall('needsToPrintCashReceipt', [
@@ -56,7 +56,7 @@ class Needs extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\NeedsToPrintCashReceiptResponse
+     * @return \Pggns\MidocoApi\Order\StructType\NeedsToPrintCashReceiptResponse
      */
     public function getResult()
     {

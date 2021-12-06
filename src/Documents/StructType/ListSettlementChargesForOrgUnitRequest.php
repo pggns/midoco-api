@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ListSettlementChargesForOrgUnitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSettlementChargesForOrgUnitRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSettlementChargesForOrgUnitRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +70,7 @@ class ListSettlementChargesForOrgUnitRequest extends AbstractStructBase
     /**
      * Set settlementType value
      * @param int $settlementType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSettlementChargesForOrgUnitRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSettlementChargesForOrgUnitRequest
      */
     public function setSettlementType(?int $settlementType = null): self
     {

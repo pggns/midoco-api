@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class TokenAttributes extends AbstractStructBase
     /**
      * Set key value
      * @param string $key
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TokenAttributes
+     * @return \Pggns\MidocoApi\Booking\StructType\TokenAttributes
      */
     public function setKey(?string $key = null): self
     {
@@ -70,7 +70,7 @@ class TokenAttributes extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TokenAttributes
+     * @return \Pggns\MidocoApi\Booking\StructType\TokenAttributes
      */
     public function setValue(?string $value = null): self
     {

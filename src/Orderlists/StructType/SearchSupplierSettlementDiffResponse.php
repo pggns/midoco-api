@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchSupplierSettlementDiffResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierSettlementDiff
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementDiff[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementDiff[]
      */
     protected ?array $MidocoSupplierSettlementDiff = null;
     /**
      * Constructor method for SearchSupplierSettlementDiffResponse
      * @uses SearchSupplierSettlementDiffResponse::setMidocoSupplierSettlementDiff()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementDiff[] $midocoSupplierSettlementDiff
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementDiff[] $midocoSupplierSettlementDiff
      */
     public function __construct(?array $midocoSupplierSettlementDiff = null)
     {
@@ -34,7 +34,7 @@ class SearchSupplierSettlementDiffResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierSettlementDiff value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementDiff[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementDiff[]
      */
     public function getMidocoSupplierSettlementDiff(): ?array
     {
@@ -55,12 +55,12 @@ class SearchSupplierSettlementDiffResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchSupplierSettlementDiffResponseMidocoSupplierSettlementDiffItem) {
             // validation for constraint: itemType
-            if (!$searchSupplierSettlementDiffResponseMidocoSupplierSettlementDiffItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementDiff) {
+            if (!$searchSupplierSettlementDiffResponseMidocoSupplierSettlementDiffItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementDiff) {
                 $invalidValues[] = is_object($searchSupplierSettlementDiffResponseMidocoSupplierSettlementDiffItem) ? get_class($searchSupplierSettlementDiffResponseMidocoSupplierSettlementDiffItem) : sprintf('%s(%s)', gettype($searchSupplierSettlementDiffResponseMidocoSupplierSettlementDiffItem), var_export($searchSupplierSettlementDiffResponseMidocoSupplierSettlementDiffItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierSettlementDiff property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementDiff, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierSettlementDiff property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementDiff, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchSupplierSettlementDiffResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierSettlementDiff value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementDiff[] $midocoSupplierSettlementDiff
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SearchSupplierSettlementDiffResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementDiff[] $midocoSupplierSettlementDiff
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SearchSupplierSettlementDiffResponse
      */
     public function setMidocoSupplierSettlementDiff(?array $midocoSupplierSettlementDiff = null): self
     {
@@ -85,14 +85,14 @@ class SearchSupplierSettlementDiffResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierSettlementDiff value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementDiff $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SearchSupplierSettlementDiffResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementDiff $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SearchSupplierSettlementDiffResponse
      */
-    public function addToMidocoSupplierSettlementDiff(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementDiff $item): self
+    public function addToMidocoSupplierSettlementDiff(\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementDiff $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementDiff) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierSettlementDiff property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementDiff, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementDiff) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierSettlementDiff property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementDiff, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierSettlementDiff[] = $item;
         

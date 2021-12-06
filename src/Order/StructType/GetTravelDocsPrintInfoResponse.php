@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetTravelDocsPrintInfoResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTravelDocsPrintInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelDocsPrintInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTravelDocsPrintInfo[]
      */
     protected ?array $MidocoTravelDocsPrintInfo = null;
     /**
      * Constructor method for GetTravelDocsPrintInfoResponse
      * @uses GetTravelDocsPrintInfoResponse::setMidocoTravelDocsPrintInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelDocsPrintInfo[] $midocoTravelDocsPrintInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelDocsPrintInfo[] $midocoTravelDocsPrintInfo
      */
     public function __construct(?array $midocoTravelDocsPrintInfo = null)
     {
@@ -34,7 +34,7 @@ class GetTravelDocsPrintInfoResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTravelDocsPrintInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelDocsPrintInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTravelDocsPrintInfo[]
      */
     public function getMidocoTravelDocsPrintInfo(): ?array
     {
@@ -55,12 +55,12 @@ class GetTravelDocsPrintInfoResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTravelDocsPrintInfoResponseMidocoTravelDocsPrintInfoItem) {
             // validation for constraint: itemType
-            if (!$getTravelDocsPrintInfoResponseMidocoTravelDocsPrintInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelDocsPrintInfo) {
+            if (!$getTravelDocsPrintInfoResponseMidocoTravelDocsPrintInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoTravelDocsPrintInfo) {
                 $invalidValues[] = is_object($getTravelDocsPrintInfoResponseMidocoTravelDocsPrintInfoItem) ? get_class($getTravelDocsPrintInfoResponseMidocoTravelDocsPrintInfoItem) : sprintf('%s(%s)', gettype($getTravelDocsPrintInfoResponseMidocoTravelDocsPrintInfoItem), var_export($getTravelDocsPrintInfoResponseMidocoTravelDocsPrintInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTravelDocsPrintInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelDocsPrintInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTravelDocsPrintInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTravelDocsPrintInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetTravelDocsPrintInfoResponse extends AbstractStructBase
     /**
      * Set MidocoTravelDocsPrintInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelDocsPrintInfo[] $midocoTravelDocsPrintInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelDocsPrintInfoResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelDocsPrintInfo[] $midocoTravelDocsPrintInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoResponse
      */
     public function setMidocoTravelDocsPrintInfo(?array $midocoTravelDocsPrintInfo = null): self
     {
@@ -85,14 +85,14 @@ class GetTravelDocsPrintInfoResponse extends AbstractStructBase
     /**
      * Add item to MidocoTravelDocsPrintInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelDocsPrintInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelDocsPrintInfoResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelDocsPrintInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoResponse
      */
-    public function addToMidocoTravelDocsPrintInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelDocsPrintInfo $item): self
+    public function addToMidocoTravelDocsPrintInfo(\Pggns\MidocoApi\Order\StructType\MidocoTravelDocsPrintInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelDocsPrintInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoTravelDocsPrintInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelDocsPrintInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoTravelDocsPrintInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelDocsPrintInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTravelDocsPrintInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTravelDocsPrintInfo[] = $item;
         

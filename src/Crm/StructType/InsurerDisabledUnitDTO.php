@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class InsurerDisabledUnitDTO extends AbstractStructBase
     /**
      * Set disabledUnitName value
      * @param string $disabledUnitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\InsurerDisabledUnitDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\InsurerDisabledUnitDTO
      */
     public function setDisabledUnitName(?string $disabledUnitName = null): self
     {
@@ -70,7 +70,7 @@ class InsurerDisabledUnitDTO extends AbstractStructBase
     /**
      * Set insurerId value
      * @param int $insurerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\InsurerDisabledUnitDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\InsurerDisabledUnitDTO
      */
     public function setInsurerId(?int $insurerId = null): self
     {

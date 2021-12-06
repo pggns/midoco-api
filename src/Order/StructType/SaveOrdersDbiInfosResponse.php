@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SaveOrdersDbiInfosResponse extends AbstractStructBase
     /**
      * Set orderVersion value
      * @param int $orderVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrdersDbiInfosResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrdersDbiInfosResponse
      */
     public function setOrderVersion(?int $orderVersion = null): self
     {

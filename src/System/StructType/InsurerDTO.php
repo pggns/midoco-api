@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class InsurerDTO extends AbstractStructBase
     /**
      * Set externalId value
      * @param string $externalId
-     * @return \Pggns\MidocoApi\Api\System\StructType\InsurerDTO
+     * @return \Pggns\MidocoApi\System\StructType\InsurerDTO
      */
     public function setExternalId(?string $externalId = null): self
     {
@@ -86,7 +86,7 @@ class InsurerDTO extends AbstractStructBase
     /**
      * Set insurerId value
      * @param int $insurerId
-     * @return \Pggns\MidocoApi\Api\System\StructType\InsurerDTO
+     * @return \Pggns\MidocoApi\System\StructType\InsurerDTO
      */
     public function setInsurerId(?int $insurerId = null): self
     {
@@ -109,7 +109,7 @@ class InsurerDTO extends AbstractStructBase
     /**
      * Set insurerName value
      * @param string $insurerName
-     * @return \Pggns\MidocoApi\Api\System\StructType\InsurerDTO
+     * @return \Pggns\MidocoApi\System\StructType\InsurerDTO
      */
     public function setInsurerName(?string $insurerName = null): self
     {
@@ -132,7 +132,7 @@ class InsurerDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\InsurerDTO
+     * @return \Pggns\MidocoApi\System\StructType\InsurerDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

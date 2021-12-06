@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class MoveOrderRemarkRequest extends AbstractStructBase
      * The MidocoOrderRemark
      * Meta information extracted from the WSDL
      * - ref: MidocoOrderRemark
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO $MidocoOrderRemark = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\OrderRemarkDTO $MidocoOrderRemark = null;
     /**
      * The direction
      * @var string|null
@@ -29,10 +29,10 @@ class MoveOrderRemarkRequest extends AbstractStructBase
      * Constructor method for MoveOrderRemarkRequest
      * @uses MoveOrderRemarkRequest::setMidocoOrderRemark()
      * @uses MoveOrderRemarkRequest::setDirection()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO $midocoOrderRemark
+     * @param \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO $midocoOrderRemark
      * @param string $direction
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO $midocoOrderRemark = null, ?string $direction = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\OrderRemarkDTO $midocoOrderRemark = null, ?string $direction = null)
     {
         $this
             ->setMidocoOrderRemark($midocoOrderRemark)
@@ -40,18 +40,18 @@ class MoveOrderRemarkRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderRemark value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO|null
      */
-    public function getMidocoOrderRemark(): ?\Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO
+    public function getMidocoOrderRemark(): ?\Pggns\MidocoApi\Order\StructType\OrderRemarkDTO
     {
         return $this->MidocoOrderRemark;
     }
     /**
      * Set MidocoOrderRemark value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO $midocoOrderRemark
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MoveOrderRemarkRequest
+     * @param \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO $midocoOrderRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MoveOrderRemarkRequest
      */
-    public function setMidocoOrderRemark(?\Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO $midocoOrderRemark = null): self
+    public function setMidocoOrderRemark(?\Pggns\MidocoApi\Order\StructType\OrderRemarkDTO $midocoOrderRemark = null): self
     {
         $this->MidocoOrderRemark = $midocoOrderRemark;
         
@@ -68,7 +68,7 @@ class MoveOrderRemarkRequest extends AbstractStructBase
     /**
      * Set direction value
      * @param string $direction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MoveOrderRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MoveOrderRemarkRequest
      */
     public function setDirection(?string $direction = null): self
     {

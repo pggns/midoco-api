@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -93,7 +93,7 @@ class GetExecutedCampaignsForTemplateRequest extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetExecutedCampaignsForTemplateRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetExecutedCampaignsForTemplateRequest
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -109,7 +109,7 @@ class GetExecutedCampaignsForTemplateRequest extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetExecutedCampaignsForTemplateRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetExecutedCampaignsForTemplateRequest
      */
     public function addToOrgUnits(string $item): self
     {
@@ -132,7 +132,7 @@ class GetExecutedCampaignsForTemplateRequest extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetExecutedCampaignsForTemplateRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetExecutedCampaignsForTemplateRequest
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -155,7 +155,7 @@ class GetExecutedCampaignsForTemplateRequest extends AbstractStructBase
     /**
      * Set campaignOrgUnit value
      * @param string $campaignOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetExecutedCampaignsForTemplateRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetExecutedCampaignsForTemplateRequest
      */
     public function setCampaignOrgUnit(?string $campaignOrgUnit = null): self
     {
@@ -178,7 +178,7 @@ class GetExecutedCampaignsForTemplateRequest extends AbstractStructBase
     /**
      * Set participate value
      * @param bool $participate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetExecutedCampaignsForTemplateRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetExecutedCampaignsForTemplateRequest
      */
     public function setParticipate(?bool $participate = null): self
     {

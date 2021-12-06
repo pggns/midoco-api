@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MarkCustomersAsDoubleRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MarkCustomersAsDoubleRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MarkCustomersAsDoubleRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -70,7 +70,7 @@ class MarkCustomersAsDoubleRequest extends AbstractStructBase
     /**
      * Set connectedCustomerId value
      * @param int $connectedCustomerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MarkCustomersAsDoubleRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MarkCustomersAsDoubleRequest
      */
     public function setConnectedCustomerId(?int $connectedCustomerId = null): self
     {

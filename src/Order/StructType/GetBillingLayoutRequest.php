@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetBillingLayoutRequest extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingLayoutRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingLayoutRequest
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

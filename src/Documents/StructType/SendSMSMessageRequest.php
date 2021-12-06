@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SendSMSMessageRequest extends AbstractStructBase
     /**
      * Set sender value
      * @param string $sender
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SendSMSMessageRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SendSMSMessageRequest
      */
     public function setSender(?string $sender = null): self
     {
@@ -78,7 +78,7 @@ class SendSMSMessageRequest extends AbstractStructBase
     /**
      * Set recipient value
      * @param string $recipient
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SendSMSMessageRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SendSMSMessageRequest
      */
     public function setRecipient(?string $recipient = null): self
     {
@@ -101,7 +101,7 @@ class SendSMSMessageRequest extends AbstractStructBase
     /**
      * Set smsText value
      * @param string $smsText
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SendSMSMessageRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SendSMSMessageRequest
      */
     public function setSmsText(?string $smsText = null): self
     {

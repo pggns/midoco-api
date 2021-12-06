@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetMfRequest extends AbstractStructBase
      * The MidocoMf
      * Meta information extracted from the WSDL
      * - ref: MidocoMf
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\MidocoMf|null
+     * @var \Pggns\MidocoApi\Booking\StructType\MidocoMf|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\MidocoMf $MidocoMf = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\MidocoMf $MidocoMf = null;
     /**
      * Constructor method for GetMfRequest
      * @uses GetMfRequest::setMidocoMf()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoMf $midocoMf
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoMf $midocoMf
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\MidocoMf $midocoMf = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\MidocoMf $midocoMf = null)
     {
         $this
             ->setMidocoMf($midocoMf);
     }
     /**
      * Get MidocoMf value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoMf|null
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoMf|null
      */
-    public function getMidocoMf(): ?\Pggns\MidocoApi\Api\Booking\StructType\MidocoMf
+    public function getMidocoMf(): ?\Pggns\MidocoApi\Booking\StructType\MidocoMf
     {
         return $this->MidocoMf;
     }
     /**
      * Set MidocoMf value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoMf $midocoMf
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetMfRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoMf $midocoMf
+     * @return \Pggns\MidocoApi\Booking\StructType\GetMfRequest
      */
-    public function setMidocoMf(?\Pggns\MidocoApi\Api\Booking\StructType\MidocoMf $midocoMf = null): self
+    public function setMidocoMf(?\Pggns\MidocoApi\Booking\StructType\MidocoMf $midocoMf = null): self
     {
         $this->MidocoMf = $midocoMf;
         

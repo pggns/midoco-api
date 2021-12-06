@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -46,17 +46,17 @@ class CheckPasswordStrengthResponse extends AbstractStructBase
     }
     /**
      * Set strengthColor value
-     * @uses \Pggns\MidocoApi\Api\OrderglobalSD\EnumType\StrengthColor::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\OrderglobalSD\EnumType\StrengthColor::getValidValues()
+     * @uses \Pggns\MidocoApi\OrderglobalSD\EnumType\StrengthColor::valueIsValid()
+     * @uses \Pggns\MidocoApi\OrderglobalSD\EnumType\StrengthColor::getValidValues()
      * @throws InvalidArgumentException
      * @param string $strengthColor
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CheckPasswordStrengthResponse
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CheckPasswordStrengthResponse
      */
     public function setStrengthColor(?string $strengthColor = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\OrderglobalSD\EnumType\StrengthColor::valueIsValid($strengthColor)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\OrderglobalSD\EnumType\StrengthColor', is_array($strengthColor) ? implode(', ', $strengthColor) : var_export($strengthColor, true), implode(', ', \Pggns\MidocoApi\Api\OrderglobalSD\EnumType\StrengthColor::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\OrderglobalSD\EnumType\StrengthColor::valueIsValid($strengthColor)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\OrderglobalSD\EnumType\StrengthColor', is_array($strengthColor) ? implode(', ', $strengthColor) : var_export($strengthColor, true), implode(', ', \Pggns\MidocoApi\OrderglobalSD\EnumType\StrengthColor::getValidValues())), __LINE__);
         }
         $this->strengthColor = $strengthColor;
         
@@ -73,7 +73,7 @@ class CheckPasswordStrengthResponse extends AbstractStructBase
     /**
      * Set suggestion value
      * @param string $suggestion
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CheckPasswordStrengthResponse
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CheckPasswordStrengthResponse
      */
     public function setSuggestion(?string $suggestion = null): self
     {

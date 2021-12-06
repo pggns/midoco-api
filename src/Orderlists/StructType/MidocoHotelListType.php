@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MidocoHotelListType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -110,7 +110,7 @@ class MidocoHotelListType extends AbstractStructBase
     /**
      * Set destinataionArea value
      * @param string $destinataionArea
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType
      */
     public function setDestinataionArea(?string $destinataionArea = null): self
     {
@@ -133,7 +133,7 @@ class MidocoHotelListType extends AbstractStructBase
     /**
      * Set hotelCode value
      * @param string $hotelCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType
      */
     public function setHotelCode(?string $hotelCode = null): self
     {
@@ -156,7 +156,7 @@ class MidocoHotelListType extends AbstractStructBase
     /**
      * Set hotelName value
      * @param string $hotelName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType
      */
     public function setHotelName(?string $hotelName = null): self
     {
@@ -179,7 +179,7 @@ class MidocoHotelListType extends AbstractStructBase
     /**
      * Set bookedRoomDescription value
      * @param string $bookedRoomDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType
      */
     public function setBookedRoomDescription(?string $bookedRoomDescription = null): self
     {
@@ -202,7 +202,7 @@ class MidocoHotelListType extends AbstractStructBase
     /**
      * Set bookedRoomCount value
      * @param int $bookedRoomCount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType
      */
     public function setBookedRoomCount(?int $bookedRoomCount = null): self
     {
@@ -225,7 +225,7 @@ class MidocoHotelListType extends AbstractStructBase
     /**
      * Set passenger value
      * @param string $passenger
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType
      */
     public function setPassenger(?string $passenger = null): self
     {

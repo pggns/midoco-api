@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class DeleteMidocoSettlMDocRequest extends AbstractStructBase
     /**
      * Set settlMdocId value
      * @param int $settlMdocId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteMidocoSettlMDocRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteMidocoSettlMDocRequest
      */
     public function setSettlMdocId(int $settlMdocId): self
     {

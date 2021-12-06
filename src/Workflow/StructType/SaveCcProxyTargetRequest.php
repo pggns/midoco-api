@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class SaveCcProxyTargetRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - ref: MidocoCcProxyTarget
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCcProxyTarget|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoCcProxyTarget|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoCcProxyTarget $MidocoCcProxyTarget = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\MidocoCcProxyTarget $MidocoCcProxyTarget = null;
     /**
      * Constructor method for SaveCcProxyTargetRequest
      * @uses SaveCcProxyTargetRequest::setMidocoCcProxyTarget()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCcProxyTarget $midocoCcProxyTarget
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoCcProxyTarget $midocoCcProxyTarget
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoCcProxyTarget $midocoCcProxyTarget = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\MidocoCcProxyTarget $midocoCcProxyTarget = null)
     {
         $this
             ->setMidocoCcProxyTarget($midocoCcProxyTarget);
     }
     /**
      * Get MidocoCcProxyTarget value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCcProxyTarget|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoCcProxyTarget|null
      */
-    public function getMidocoCcProxyTarget(): ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoCcProxyTarget
+    public function getMidocoCcProxyTarget(): ?\Pggns\MidocoApi\Workflow\StructType\MidocoCcProxyTarget
     {
         return $this->MidocoCcProxyTarget;
     }
     /**
      * Set MidocoCcProxyTarget value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCcProxyTarget $midocoCcProxyTarget
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveCcProxyTargetRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoCcProxyTarget $midocoCcProxyTarget
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveCcProxyTargetRequest
      */
-    public function setMidocoCcProxyTarget(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoCcProxyTarget $midocoCcProxyTarget = null): self
+    public function setMidocoCcProxyTarget(?\Pggns\MidocoApi\Workflow\StructType\MidocoCcProxyTarget $midocoCcProxyTarget = null): self
     {
         $this->MidocoCcProxyTarget = $midocoCcProxyTarget;
         

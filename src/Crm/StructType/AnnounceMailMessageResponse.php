@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class AnnounceMailMessageResponse extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AnnounceMailMessageResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\AnnounceMailMessageResponse
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -74,7 +74,7 @@ class AnnounceMailMessageResponse extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AnnounceMailMessageResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\AnnounceMailMessageResponse
      */
     public function setOrderNo(?int $orderNo = null): self
     {

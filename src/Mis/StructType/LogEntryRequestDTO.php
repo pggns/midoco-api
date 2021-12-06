@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class LogEntryRequestDTO extends AbstractStructBase
     /**
      * Set startTime value
      * @param string $startTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LogEntryRequestDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LogEntryRequestDTO
      */
     public function setStartTime(?string $startTime = null): self
     {
@@ -86,7 +86,7 @@ class LogEntryRequestDTO extends AbstractStructBase
     /**
      * Set endTime value
      * @param string $endTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LogEntryRequestDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LogEntryRequestDTO
      */
     public function setEndTime(?string $endTime = null): self
     {
@@ -109,7 +109,7 @@ class LogEntryRequestDTO extends AbstractStructBase
     /**
      * Set application value
      * @param string $application
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LogEntryRequestDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LogEntryRequestDTO
      */
     public function setApplication(?string $application = null): self
     {
@@ -132,7 +132,7 @@ class LogEntryRequestDTO extends AbstractStructBase
     /**
      * Set severity value
      * @param int $severity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LogEntryRequestDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LogEntryRequestDTO
      */
     public function setSeverity(?int $severity = null): self
     {

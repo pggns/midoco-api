@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -27,7 +27,7 @@ class MidocoTaskQueue extends TaskQueueDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTaskQueueDescription
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDescriptionDTO[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\TaskQueueDescriptionDTO[]
      */
     protected ?array $MidocoTaskQueueDescription = null;
     /**
@@ -35,7 +35,7 @@ class MidocoTaskQueue extends TaskQueueDTO
      * @uses MidocoTaskQueue::setUnitNames()
      * @uses MidocoTaskQueue::setMidocoTaskQueueDescription()
      * @param string[] $unitNames
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDescriptionDTO[] $midocoTaskQueueDescription
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskQueueDescriptionDTO[] $midocoTaskQueueDescription
      */
     public function __construct(?array $unitNames = null, ?array $midocoTaskQueueDescription = null)
     {
@@ -81,7 +81,7 @@ class MidocoTaskQueue extends TaskQueueDTO
      * Set unitNames value
      * @throws InvalidArgumentException
      * @param string[] $unitNames
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue
      */
     public function setUnitNames(?array $unitNames = null): self
     {
@@ -97,7 +97,7 @@ class MidocoTaskQueue extends TaskQueueDTO
      * Add item to unitNames value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue
      */
     public function addToUnitNames(string $item): self
     {
@@ -111,7 +111,7 @@ class MidocoTaskQueue extends TaskQueueDTO
     }
     /**
      * Get MidocoTaskQueueDescription value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDescriptionDTO[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskQueueDescriptionDTO[]
      */
     public function getMidocoTaskQueueDescription(): ?array
     {
@@ -132,12 +132,12 @@ class MidocoTaskQueue extends TaskQueueDTO
         $invalidValues = [];
         foreach ($values as $midocoTaskQueueMidocoTaskQueueDescriptionItem) {
             // validation for constraint: itemType
-            if (!$midocoTaskQueueMidocoTaskQueueDescriptionItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDescriptionDTO) {
+            if (!$midocoTaskQueueMidocoTaskQueueDescriptionItem instanceof \Pggns\MidocoApi\Workflow\StructType\TaskQueueDescriptionDTO) {
                 $invalidValues[] = is_object($midocoTaskQueueMidocoTaskQueueDescriptionItem) ? get_class($midocoTaskQueueMidocoTaskQueueDescriptionItem) : sprintf('%s(%s)', gettype($midocoTaskQueueMidocoTaskQueueDescriptionItem), var_export($midocoTaskQueueMidocoTaskQueueDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTaskQueueDescription property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTaskQueueDescription property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\TaskQueueDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -146,8 +146,8 @@ class MidocoTaskQueue extends TaskQueueDTO
     /**
      * Set MidocoTaskQueueDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDescriptionDTO[] $midocoTaskQueueDescription
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskQueueDescriptionDTO[] $midocoTaskQueueDescription
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue
      */
     public function setMidocoTaskQueueDescription(?array $midocoTaskQueueDescription = null): self
     {
@@ -162,14 +162,14 @@ class MidocoTaskQueue extends TaskQueueDTO
     /**
      * Add item to MidocoTaskQueueDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskQueueDescriptionDTO $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue
      */
-    public function addToMidocoTaskQueueDescription(\Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDescriptionDTO $item): self
+    public function addToMidocoTaskQueueDescription(\Pggns\MidocoApi\Workflow\StructType\TaskQueueDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoTaskQueueDescription property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\TaskQueueDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoTaskQueueDescription property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\TaskQueueDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTaskQueueDescription[] = $item;
         

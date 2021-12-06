@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -239,7 +239,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set agencyCommission value
      * @param float $agencyCommission
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setAgencyCommission(?float $agencyCommission = null): self
     {
@@ -262,7 +262,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set bookedMargin value
      * @param float $bookedMargin
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setBookedMargin(?float $bookedMargin = null): self
     {
@@ -285,7 +285,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set bookedVat value
      * @param float $bookedVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setBookedVat(?float $bookedVat = null): self
     {
@@ -308,7 +308,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -331,7 +331,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set calculatedMargin value
      * @param float $calculatedMargin
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setCalculatedMargin(?float $calculatedMargin = null): self
     {
@@ -354,7 +354,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set calculatedVat value
      * @param float $calculatedVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setCalculatedVat(?float $calculatedVat = null): self
     {
@@ -377,7 +377,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -400,7 +400,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -423,7 +423,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -446,7 +446,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -469,7 +469,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -492,7 +492,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set incomingInvoiceComplete value
      * @param bool $incomingInvoiceComplete
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setIncomingInvoiceComplete(?bool $incomingInvoiceComplete = null): self
     {
@@ -515,7 +515,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set journalId value
      * @param int $journalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setJournalId(?int $journalId = null): self
     {
@@ -538,7 +538,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set marginAccount value
      * @param string $marginAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setMarginAccount(?string $marginAccount = null): self
     {
@@ -561,7 +561,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set marginPercent value
      * @param float $marginPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setMarginPercent(?float $marginPercent = null): self
     {
@@ -584,7 +584,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set needsMarginBooking value
      * @param bool $needsMarginBooking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setNeedsMarginBooking(?bool $needsMarginBooking = null): self
     {
@@ -607,7 +607,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -630,7 +630,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set orgunitName value
      * @param string $orgunitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setOrgunitName(?string $orgunitName = null): self
     {
@@ -653,7 +653,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set outgoingInvoiceComplete value
      * @param bool $outgoingInvoiceComplete
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setOutgoingInvoiceComplete(?bool $outgoingInvoiceComplete = null): self
     {
@@ -676,7 +676,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set packageAccount value
      * @param string $packageAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setPackageAccount(?string $packageAccount = null): self
     {
@@ -699,7 +699,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set packageMarginId value
      * @param int $packageMarginId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setPackageMarginId(?int $packageMarginId = null): self
     {
@@ -722,7 +722,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set preventMarginBooking value
      * @param bool $preventMarginBooking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setPreventMarginBooking(?bool $preventMarginBooking = null): self
     {
@@ -745,7 +745,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -768,7 +768,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set sumBuy value
      * @param float $sumBuy
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setSumBuy(?float $sumBuy = null): self
     {
@@ -791,7 +791,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set sumSale value
      * @param float $sumSale
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setSumSale(?float $sumSale = null): self
     {
@@ -814,7 +814,7 @@ class PackageMarginDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PackageMarginDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

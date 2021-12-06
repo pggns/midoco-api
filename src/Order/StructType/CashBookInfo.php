@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class CashBookInfo extends CashBookDTO
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCashBookSignature
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature $MidocoCashBookSignature = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature $MidocoCashBookSignature = null;
     /**
      * The userName
      * @var string|null
@@ -30,10 +30,10 @@ class CashBookInfo extends CashBookDTO
      * Constructor method for CashBookInfo
      * @uses CashBookInfo::setMidocoCashBookSignature()
      * @uses CashBookInfo::setUserName()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature
      * @param string $userName
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature = null, ?string $userName = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature = null, ?string $userName = null)
     {
         $this
             ->setMidocoCashBookSignature($midocoCashBookSignature)
@@ -41,18 +41,18 @@ class CashBookInfo extends CashBookDTO
     }
     /**
      * Get MidocoCashBookSignature value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature|null
      */
-    public function getMidocoCashBookSignature(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature
+    public function getMidocoCashBookSignature(): ?\Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature
     {
         return $this->MidocoCashBookSignature;
     }
     /**
      * Set MidocoCashBookSignature value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookInfo
      */
-    public function setMidocoCashBookSignature(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature = null): self
+    public function setMidocoCashBookSignature(?\Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature = null): self
     {
         $this->MidocoCashBookSignature = $midocoCashBookSignature;
         
@@ -69,7 +69,7 @@ class CashBookInfo extends CashBookDTO
     /**
      * Set userName value
      * @param string $userName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookInfo
      */
     public function setUserName(?string $userName = null): self
     {

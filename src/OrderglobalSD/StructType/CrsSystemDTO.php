@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CrsSystemDTO extends AbstractStructBase
     /**
      * Set crsName value
      * @param string $crsName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CrsSystemDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CrsSystemDTO
      */
     public function setCrsName(?string $crsName = null): self
     {

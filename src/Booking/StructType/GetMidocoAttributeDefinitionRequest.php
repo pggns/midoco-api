@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetMidocoAttributeDefinitionRequest extends AbstractStructBase
      * The MidocoSystemAttributeDefinition
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeDefinition
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionDTO|null
+     * @var \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionDTO $MidocoSystemAttributeDefinition = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\AttributeDefinitionDTO $MidocoSystemAttributeDefinition = null;
     /**
      * The orgunit
      * @var string|null
@@ -29,10 +29,10 @@ class GetMidocoAttributeDefinitionRequest extends AbstractStructBase
      * Constructor method for GetMidocoAttributeDefinitionRequest
      * @uses GetMidocoAttributeDefinitionRequest::setMidocoSystemAttributeDefinition()
      * @uses GetMidocoAttributeDefinitionRequest::setOrgunit()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
+     * @param \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
      * @param string $orgunit
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null, ?string $orgunit = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null, ?string $orgunit = null)
     {
         $this
             ->setMidocoSystemAttributeDefinition($midocoSystemAttributeDefinition)
@@ -40,18 +40,18 @@ class GetMidocoAttributeDefinitionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSystemAttributeDefinition value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionDTO|null
+     * @return \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionDTO|null
      */
-    public function getMidocoSystemAttributeDefinition(): ?\Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionDTO
+    public function getMidocoSystemAttributeDefinition(): ?\Pggns\MidocoApi\Booking\StructType\AttributeDefinitionDTO
     {
         return $this->MidocoSystemAttributeDefinition;
     }
     /**
      * Set MidocoSystemAttributeDefinition value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetMidocoAttributeDefinitionRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
+     * @return \Pggns\MidocoApi\Booking\StructType\GetMidocoAttributeDefinitionRequest
      */
-    public function setMidocoSystemAttributeDefinition(?\Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null): self
+    public function setMidocoSystemAttributeDefinition(?\Pggns\MidocoApi\Booking\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null): self
     {
         $this->MidocoSystemAttributeDefinition = $midocoSystemAttributeDefinition;
         
@@ -68,7 +68,7 @@ class GetMidocoAttributeDefinitionRequest extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetMidocoAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\GetMidocoAttributeDefinitionRequest
      */
     public function setOrgunit(?string $orgunit = null): self
     {

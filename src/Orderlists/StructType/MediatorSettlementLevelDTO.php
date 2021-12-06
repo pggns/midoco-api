@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MediatorSettlementLevelDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementLevelDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementLevelDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +78,7 @@ class MediatorSettlementLevelDTO extends AbstractStructBase
     /**
      * Set percent value
      * @param float $percent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementLevelDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementLevelDTO
      */
     public function setPercent(?float $percent = null): self
     {
@@ -101,7 +101,7 @@ class MediatorSettlementLevelDTO extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementLevelDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementLevelDTO
      */
     public function setStartDate(?string $startDate = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class OrdersDbiInfoDTO extends AbstractStructBase
     /**
      * Set dbiInfo value
      * @param string $dbiInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrdersDbiInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrdersDbiInfoDTO
      */
     public function setDbiInfo(?string $dbiInfo = null): self
     {
@@ -94,7 +94,7 @@ class OrdersDbiInfoDTO extends AbstractStructBase
     /**
      * Set dbiKey value
      * @param string $dbiKey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrdersDbiInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrdersDbiInfoDTO
      */
     public function setDbiKey(?string $dbiKey = null): self
     {
@@ -117,7 +117,7 @@ class OrdersDbiInfoDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrdersDbiInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrdersDbiInfoDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -140,7 +140,7 @@ class OrdersDbiInfoDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrdersDbiInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrdersDbiInfoDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -163,7 +163,7 @@ class OrdersDbiInfoDTO extends AbstractStructBase
     /**
      * Set passengerAssignment value
      * @param int $passengerAssignment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrdersDbiInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrdersDbiInfoDTO
      */
     public function setPassengerAssignment(?int $passengerAssignment = null): self
     {

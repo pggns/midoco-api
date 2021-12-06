@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class OrderQmAnswerDTO extends AbstractStructBase
     /**
      * Set answer value
      * @param string $answer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderQmAnswerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderQmAnswerDTO
      */
     public function setAnswer(?string $answer = null): self
     {
@@ -78,7 +78,7 @@ class OrderQmAnswerDTO extends AbstractStructBase
     /**
      * Set orderQmAnswerId value
      * @param int $orderQmAnswerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderQmAnswerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderQmAnswerDTO
      */
     public function setOrderQmAnswerId(?int $orderQmAnswerId = null): self
     {
@@ -101,7 +101,7 @@ class OrderQmAnswerDTO extends AbstractStructBase
     /**
      * Set orderQmId value
      * @param int $orderQmId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderQmAnswerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderQmAnswerDTO
      */
     public function setOrderQmId(?int $orderQmId = null): self
     {

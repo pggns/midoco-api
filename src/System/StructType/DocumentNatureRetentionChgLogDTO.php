@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class DocumentNatureRetentionChgLogDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\System\StructType\DocumentNatureRetentionChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\DocumentNatureRetentionChgLogDTO
      */
     public function setAction(?string $action = null): self
     {
@@ -142,7 +142,7 @@ class DocumentNatureRetentionChgLogDTO extends AbstractStructBase
     /**
      * Set allowDeleteDocument value
      * @param bool $allowDeleteDocument
-     * @return \Pggns\MidocoApi\Api\System\StructType\DocumentNatureRetentionChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\DocumentNatureRetentionChgLogDTO
      */
     public function setAllowDeleteDocument(?bool $allowDeleteDocument = null): self
     {
@@ -165,7 +165,7 @@ class DocumentNatureRetentionChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\System\StructType\DocumentNatureRetentionChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\DocumentNatureRetentionChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -188,7 +188,7 @@ class DocumentNatureRetentionChgLogDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\System\StructType\DocumentNatureRetentionChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\DocumentNatureRetentionChgLogDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -211,7 +211,7 @@ class DocumentNatureRetentionChgLogDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\System\StructType\DocumentNatureRetentionChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\DocumentNatureRetentionChgLogDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -234,7 +234,7 @@ class DocumentNatureRetentionChgLogDTO extends AbstractStructBase
     /**
      * Set modifiableByUser value
      * @param bool $modifiableByUser
-     * @return \Pggns\MidocoApi\Api\System\StructType\DocumentNatureRetentionChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\DocumentNatureRetentionChgLogDTO
      */
     public function setModifiableByUser(?bool $modifiableByUser = null): self
     {
@@ -257,7 +257,7 @@ class DocumentNatureRetentionChgLogDTO extends AbstractStructBase
     /**
      * Set retentionMonths value
      * @param int $retentionMonths
-     * @return \Pggns\MidocoApi\Api\System\StructType\DocumentNatureRetentionChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\DocumentNatureRetentionChgLogDTO
      */
     public function setRetentionMonths(?int $retentionMonths = null): self
     {
@@ -280,7 +280,7 @@ class DocumentNatureRetentionChgLogDTO extends AbstractStructBase
     /**
      * Set startRetentionPeriod value
      * @param int $startRetentionPeriod
-     * @return \Pggns\MidocoApi\Api\System\StructType\DocumentNatureRetentionChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\DocumentNatureRetentionChgLogDTO
      */
     public function setStartRetentionPeriod(?int $startRetentionPeriod = null): self
     {
@@ -303,7 +303,7 @@ class DocumentNatureRetentionChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\System\StructType\DocumentNatureRetentionChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\DocumentNatureRetentionChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -326,7 +326,7 @@ class DocumentNatureRetentionChgLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\DocumentNatureRetentionChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\DocumentNatureRetentionChgLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -349,7 +349,7 @@ class DocumentNatureRetentionChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\System\StructType\DocumentNatureRetentionChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\DocumentNatureRetentionChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class WorkstationDTO extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\WorkstationDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\WorkstationDTO
      */
     public function setId(?string $id = null): self
     {
@@ -78,7 +78,7 @@ class WorkstationDTO extends AbstractStructBase
     /**
      * Set lastLogin value
      * @param string $lastLogin
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\WorkstationDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\WorkstationDTO
      */
     public function setLastLogin(?string $lastLogin = null): self
     {
@@ -101,7 +101,7 @@ class WorkstationDTO extends AbstractStructBase
     /**
      * Set lastUser value
      * @param int $lastUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\WorkstationDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\WorkstationDTO
      */
     public function setLastUser(?int $lastUser = null): self
     {

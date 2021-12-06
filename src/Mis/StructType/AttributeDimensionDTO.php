@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class AttributeDimensionDTO extends AbstractStructBase
     /**
      * Set attrib10Value value
      * @param string $attrib10Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributeDimensionDTO
      */
     public function setAttrib10Value(?string $attrib10Value = null): self
     {
@@ -142,7 +142,7 @@ class AttributeDimensionDTO extends AbstractStructBase
     /**
      * Set attrib1Value value
      * @param string $attrib1Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributeDimensionDTO
      */
     public function setAttrib1Value(?string $attrib1Value = null): self
     {
@@ -165,7 +165,7 @@ class AttributeDimensionDTO extends AbstractStructBase
     /**
      * Set attrib2Value value
      * @param string $attrib2Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributeDimensionDTO
      */
     public function setAttrib2Value(?string $attrib2Value = null): self
     {
@@ -188,7 +188,7 @@ class AttributeDimensionDTO extends AbstractStructBase
     /**
      * Set attrib3Value value
      * @param string $attrib3Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributeDimensionDTO
      */
     public function setAttrib3Value(?string $attrib3Value = null): self
     {
@@ -211,7 +211,7 @@ class AttributeDimensionDTO extends AbstractStructBase
     /**
      * Set attrib4Value value
      * @param string $attrib4Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributeDimensionDTO
      */
     public function setAttrib4Value(?string $attrib4Value = null): self
     {
@@ -234,7 +234,7 @@ class AttributeDimensionDTO extends AbstractStructBase
     /**
      * Set attrib5Value value
      * @param string $attrib5Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributeDimensionDTO
      */
     public function setAttrib5Value(?string $attrib5Value = null): self
     {
@@ -257,7 +257,7 @@ class AttributeDimensionDTO extends AbstractStructBase
     /**
      * Set attrib6Value value
      * @param string $attrib6Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributeDimensionDTO
      */
     public function setAttrib6Value(?string $attrib6Value = null): self
     {
@@ -280,7 +280,7 @@ class AttributeDimensionDTO extends AbstractStructBase
     /**
      * Set attrib7Value value
      * @param string $attrib7Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributeDimensionDTO
      */
     public function setAttrib7Value(?string $attrib7Value = null): self
     {
@@ -303,7 +303,7 @@ class AttributeDimensionDTO extends AbstractStructBase
     /**
      * Set attrib8Value value
      * @param string $attrib8Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributeDimensionDTO
      */
     public function setAttrib8Value(?string $attrib8Value = null): self
     {
@@ -326,7 +326,7 @@ class AttributeDimensionDTO extends AbstractStructBase
     /**
      * Set attrib9Value value
      * @param string $attrib9Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributeDimensionDTO
      */
     public function setAttrib9Value(?string $attrib9Value = null): self
     {
@@ -349,7 +349,7 @@ class AttributeDimensionDTO extends AbstractStructBase
     /**
      * Set attributeId value
      * @param int $attributeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributeDimensionDTO
      */
     public function setAttributeId(?int $attributeId = null): self
     {

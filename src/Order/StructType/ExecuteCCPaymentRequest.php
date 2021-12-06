@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -81,7 +81,7 @@ class ExecuteCCPaymentRequest extends OnlinePaymentInfoType
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteCCPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteCCPaymentRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -104,7 +104,7 @@ class ExecuteCCPaymentRequest extends OnlinePaymentInfoType
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteCCPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteCCPaymentRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -127,7 +127,7 @@ class ExecuteCCPaymentRequest extends OnlinePaymentInfoType
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteCCPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteCCPaymentRequest
      */
     public function setAmount(?float $amount = null): self
     {
@@ -150,7 +150,7 @@ class ExecuteCCPaymentRequest extends OnlinePaymentInfoType
     /**
      * Set manualApprovalCode value
      * @param string $manualApprovalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteCCPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteCCPaymentRequest
      */
     public function setManualApprovalCode(?string $manualApprovalCode = null): self
     {
@@ -173,7 +173,7 @@ class ExecuteCCPaymentRequest extends OnlinePaymentInfoType
     /**
      * Set doDirectCapture value
      * @param bool $doDirectCapture
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteCCPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteCCPaymentRequest
      */
     public function setDoDirectCapture(?bool $doDirectCapture = null): self
     {
@@ -196,7 +196,7 @@ class ExecuteCCPaymentRequest extends OnlinePaymentInfoType
     /**
      * Set isManualAuth value
      * @param bool $isManualAuth
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteCCPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteCCPaymentRequest
      */
     public function setIsManualAuth(?bool $isManualAuth = false): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MediatorConditionDTO extends AbstractStructBase
     /**
      * Set amountPerBooking value
      * @param float $amountPerBooking
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorConditionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorConditionDTO
      */
     public function setAmountPerBooking(?float $amountPerBooking = null): self
     {
@@ -110,7 +110,7 @@ class MediatorConditionDTO extends AbstractStructBase
     /**
      * Set amountPerPerson value
      * @param float $amountPerPerson
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorConditionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorConditionDTO
      */
     public function setAmountPerPerson(?float $amountPerPerson = null): self
     {
@@ -133,7 +133,7 @@ class MediatorConditionDTO extends AbstractStructBase
     /**
      * Set provisionPercent value
      * @param float $provisionPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorConditionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorConditionDTO
      */
     public function setProvisionPercent(?float $provisionPercent = null): self
     {
@@ -156,7 +156,7 @@ class MediatorConditionDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorConditionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorConditionDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -179,7 +179,7 @@ class MediatorConditionDTO extends AbstractStructBase
     /**
      * Set totalPercent value
      * @param float $totalPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorConditionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorConditionDTO
      */
     public function setTotalPercent(?float $totalPercent = null): self
     {
@@ -202,7 +202,7 @@ class MediatorConditionDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorConditionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorConditionDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -225,7 +225,7 @@ class MediatorConditionDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorConditionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorConditionDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

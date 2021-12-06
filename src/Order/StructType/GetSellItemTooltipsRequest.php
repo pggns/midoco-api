@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class GetSellItemTooltipsRequest extends AbstractStructBase
      * The MidocoOrder
      * Meta information extracted from the WSDL
      * - ref: MidocoOrder
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $MidocoOrder = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $MidocoOrder = null;
     /**
      * Constructor method for GetSellItemTooltipsRequest
      * @uses GetSellItemTooltipsRequest::setMidocoOrder()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null)
     {
         $this
             ->setMidocoOrder($midocoOrder);
     }
     /**
      * Get MidocoOrder value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    public function getMidocoOrder(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType
+    public function getMidocoOrder(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType
     {
         return $this->MidocoOrder;
     }
     /**
      * Set MidocoOrder value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemTooltipsRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemTooltipsRequest
      */
-    public function setMidocoOrder(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null): self
+    public function setMidocoOrder(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null): self
     {
         $this->MidocoOrder = $midocoOrder;
         

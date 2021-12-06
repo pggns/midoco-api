@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,13 +20,13 @@ class Hints extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Hint[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Hint[]
      */
     protected ?array $hint = null;
     /**
      * Constructor method for hints
      * @uses Hints::setHint()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Hint[] $hint
+     * @param \Pggns\MidocoApi\Booking\StructType\Hint[] $hint
      */
     public function __construct(?array $hint = null)
     {
@@ -35,7 +35,7 @@ class Hints extends AbstractStructBase
     }
     /**
      * Get hint value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Hint[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Hint[]
      */
     public function getHint(): ?array
     {
@@ -56,12 +56,12 @@ class Hints extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $hintsHintItem) {
             // validation for constraint: itemType
-            if (!$hintsHintItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Hint) {
+            if (!$hintsHintItem instanceof \Pggns\MidocoApi\Booking\StructType\Hint) {
                 $invalidValues[] = is_object($hintsHintItem) ? get_class($hintsHintItem) : sprintf('%s(%s)', gettype($hintsHintItem), var_export($hintsHintItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The hint property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Hint, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The hint property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Hint, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -70,8 +70,8 @@ class Hints extends AbstractStructBase
     /**
      * Set hint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Hint[] $hint
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Hints
+     * @param \Pggns\MidocoApi\Booking\StructType\Hint[] $hint
+     * @return \Pggns\MidocoApi\Booking\StructType\Hints
      */
     public function setHint(?array $hint = null): self
     {
@@ -86,14 +86,14 @@ class Hints extends AbstractStructBase
     /**
      * Add item to hint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Hint $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Hints
+     * @param \Pggns\MidocoApi\Booking\StructType\Hint $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Hints
      */
-    public function addToHint(\Pggns\MidocoApi\Api\Booking\StructType\Hint $item): self
+    public function addToHint(\Pggns\MidocoApi\Booking\StructType\Hint $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Hint) {
-            throw new InvalidArgumentException(sprintf('The hint property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Hint, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Hint) {
+            throw new InvalidArgumentException(sprintf('The hint property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Hint, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->hint[] = $item;
         

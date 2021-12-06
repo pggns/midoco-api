@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class GetOrderInfoRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 500
      * - ref: OrderInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\OrderInfo[]
      */
     protected ?array $OrderInfo = null;
     /**
      * Constructor method for GetOrderInfoRequest
      * @uses GetOrderInfoRequest::setOrderInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderInfo[] $orderInfo
+     * @param \Pggns\MidocoApi\Order\StructType\OrderInfo[] $orderInfo
      */
     public function __construct(?array $orderInfo = null)
     {
@@ -33,7 +33,7 @@ class GetOrderInfoRequest extends AbstractStructBase
     }
     /**
      * Get OrderInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\OrderInfo[]
      */
     public function getOrderInfo(): ?array
     {
@@ -54,12 +54,12 @@ class GetOrderInfoRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderInfoRequestOrderInfoItem) {
             // validation for constraint: itemType
-            if (!$getOrderInfoRequestOrderInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderInfo) {
+            if (!$getOrderInfoRequestOrderInfoItem instanceof \Pggns\MidocoApi\Order\StructType\OrderInfo) {
                 $invalidValues[] = is_object($getOrderInfoRequestOrderInfoItem) ? get_class($getOrderInfoRequestOrderInfoItem) : sprintf('%s(%s)', gettype($getOrderInfoRequestOrderInfoItem), var_export($getOrderInfoRequestOrderInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The OrderInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The OrderInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class GetOrderInfoRequest extends AbstractStructBase
     /**
      * Set OrderInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderInfo[] $orderInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderInfoRequest
+     * @param \Pggns\MidocoApi\Order\StructType\OrderInfo[] $orderInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderInfoRequest
      */
     public function setOrderInfo(?array $orderInfo = null): self
     {
@@ -88,14 +88,14 @@ class GetOrderInfoRequest extends AbstractStructBase
     /**
      * Add item to OrderInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderInfoRequest
+     * @param \Pggns\MidocoApi\Order\StructType\OrderInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderInfoRequest
      */
-    public function addToOrderInfo(\Pggns\MidocoApi\Api\Order\StructType\OrderInfo $item): self
+    public function addToOrderInfo(\Pggns\MidocoApi\Order\StructType\OrderInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderInfo) {
-            throw new InvalidArgumentException(sprintf('The OrderInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\OrderInfo) {
+            throw new InvalidArgumentException(sprintf('The OrderInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(500)
         if (is_array($this->OrderInfo) && count($this->OrderInfo) >= 500) {

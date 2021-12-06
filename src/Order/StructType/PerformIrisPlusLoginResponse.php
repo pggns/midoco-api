@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class PerformIrisPlusLoginResponse extends AbstractStructBase
     /**
      * Set startUrl value
      * @param string $startUrl
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformIrisPlusLoginResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PerformIrisPlusLoginResponse
      */
     public function setStartUrl(?string $startUrl = null): self
     {

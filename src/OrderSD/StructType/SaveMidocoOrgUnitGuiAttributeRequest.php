@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoOrgUnitGuiAttributeRequest extends AbstractStructBase
      * The MidocoOrgunitGuiAttribute
      * Meta information extracted from the WSDL
      * - ref: MidocoOrgunitGuiAttribute
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgunitGuiAttribute|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgunitGuiAttribute|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgunitGuiAttribute $MidocoOrgunitGuiAttribute = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoOrgunitGuiAttribute $MidocoOrgunitGuiAttribute = null;
     /**
      * Constructor method for SaveMidocoOrgUnitGuiAttributeRequest
      * @uses SaveMidocoOrgUnitGuiAttributeRequest::setMidocoOrgunitGuiAttribute()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgunitGuiAttribute $midocoOrgunitGuiAttribute
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgunitGuiAttribute $midocoOrgunitGuiAttribute
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgunitGuiAttribute $midocoOrgunitGuiAttribute = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoOrgunitGuiAttribute $midocoOrgunitGuiAttribute = null)
     {
         $this
             ->setMidocoOrgunitGuiAttribute($midocoOrgunitGuiAttribute);
     }
     /**
      * Get MidocoOrgunitGuiAttribute value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgunitGuiAttribute|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgunitGuiAttribute|null
      */
-    public function getMidocoOrgunitGuiAttribute(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgunitGuiAttribute
+    public function getMidocoOrgunitGuiAttribute(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoOrgunitGuiAttribute
     {
         return $this->MidocoOrgunitGuiAttribute;
     }
     /**
      * Set MidocoOrgunitGuiAttribute value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgunitGuiAttribute $midocoOrgunitGuiAttribute
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveMidocoOrgUnitGuiAttributeRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgunitGuiAttribute $midocoOrgunitGuiAttribute
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveMidocoOrgUnitGuiAttributeRequest
      */
-    public function setMidocoOrgunitGuiAttribute(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgunitGuiAttribute $midocoOrgunitGuiAttribute = null): self
+    public function setMidocoOrgunitGuiAttribute(?\Pggns\MidocoApi\OrderSD\StructType\MidocoOrgunitGuiAttribute $midocoOrgunitGuiAttribute = null): self
     {
         $this->MidocoOrgunitGuiAttribute = $midocoOrgunitGuiAttribute;
         

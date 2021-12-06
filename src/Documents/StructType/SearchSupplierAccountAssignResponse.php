@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchSupplierAccountAssignResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierAccountAssign
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign[]
      */
     protected ?array $MidocoSupplierAccountAssign = null;
     /**
      * Constructor method for SearchSupplierAccountAssignResponse
      * @uses SearchSupplierAccountAssignResponse::setMidocoSupplierAccountAssign()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign[] $midocoSupplierAccountAssign
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign[] $midocoSupplierAccountAssign
      */
     public function __construct(?array $midocoSupplierAccountAssign = null)
     {
@@ -34,7 +34,7 @@ class SearchSupplierAccountAssignResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierAccountAssign value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign[]
      */
     public function getMidocoSupplierAccountAssign(): ?array
     {
@@ -55,12 +55,12 @@ class SearchSupplierAccountAssignResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchSupplierAccountAssignResponseMidocoSupplierAccountAssignItem) {
             // validation for constraint: itemType
-            if (!$searchSupplierAccountAssignResponseMidocoSupplierAccountAssignItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign) {
+            if (!$searchSupplierAccountAssignResponseMidocoSupplierAccountAssignItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign) {
                 $invalidValues[] = is_object($searchSupplierAccountAssignResponseMidocoSupplierAccountAssignItem) ? get_class($searchSupplierAccountAssignResponseMidocoSupplierAccountAssignItem) : sprintf('%s(%s)', gettype($searchSupplierAccountAssignResponseMidocoSupplierAccountAssignItem), var_export($searchSupplierAccountAssignResponseMidocoSupplierAccountAssignItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierAccountAssign property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierAccountAssign property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchSupplierAccountAssignResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierAccountAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign[] $midocoSupplierAccountAssign
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchSupplierAccountAssignResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign[] $midocoSupplierAccountAssign
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchSupplierAccountAssignResponse
      */
     public function setMidocoSupplierAccountAssign(?array $midocoSupplierAccountAssign = null): self
     {
@@ -85,14 +85,14 @@ class SearchSupplierAccountAssignResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierAccountAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchSupplierAccountAssignResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign $item
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchSupplierAccountAssignResponse
      */
-    public function addToMidocoSupplierAccountAssign(\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign $item): self
+    public function addToMidocoSupplierAccountAssign(\Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierAccountAssign property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierAccountAssign property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierAccountAssign[] = $item;
         

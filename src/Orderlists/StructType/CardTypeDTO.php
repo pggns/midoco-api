@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CardTypeDTO extends AbstractStructBase
     /**
      * Set cardType value
      * @param string $cardType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CardTypeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CardTypeDTO
      */
     public function setCardType(?string $cardType = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetAvailablePrintQueues4OrgunitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetAvailablePrintQueues4OrgunitRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetAvailablePrintQueues4OrgunitRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class ParticipantListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList[]
      */
     protected ?array $MidocoParticipantList = null;
     /**
@@ -30,19 +30,19 @@ class ParticipantListResponse extends AbstractStructBase
     protected ?int $noOfResults = null;
     /**
      * The ParticipantListSums
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListType $ParticipantListSums = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListType $ParticipantListSums = null;
     /**
      * Constructor method for ParticipantListResponse
      * @uses ParticipantListResponse::setMidocoParticipantList()
      * @uses ParticipantListResponse::setNoOfResults()
      * @uses ParticipantListResponse::setParticipantListSums()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList[] $midocoParticipantList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList[] $midocoParticipantList
      * @param int $noOfResults
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListType $participantListSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListType $participantListSums
      */
-    public function __construct(?array $midocoParticipantList = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListType $participantListSums = null)
+    public function __construct(?array $midocoParticipantList = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListType $participantListSums = null)
     {
         $this
             ->setMidocoParticipantList($midocoParticipantList)
@@ -51,7 +51,7 @@ class ParticipantListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoParticipantList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList[]
      */
     public function getMidocoParticipantList(): ?array
     {
@@ -72,12 +72,12 @@ class ParticipantListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $participantListResponseMidocoParticipantListItem) {
             // validation for constraint: itemType
-            if (!$participantListResponseMidocoParticipantListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList) {
+            if (!$participantListResponseMidocoParticipantListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList) {
                 $invalidValues[] = is_object($participantListResponseMidocoParticipantListItem) ? get_class($participantListResponseMidocoParticipantListItem) : sprintf('%s(%s)', gettype($participantListResponseMidocoParticipantListItem), var_export($participantListResponseMidocoParticipantListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoParticipantList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoParticipantList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -86,8 +86,8 @@ class ParticipantListResponse extends AbstractStructBase
     /**
      * Set MidocoParticipantList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList[] $midocoParticipantList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ParticipantListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList[] $midocoParticipantList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ParticipantListResponse
      */
     public function setMidocoParticipantList(?array $midocoParticipantList = null): self
     {
@@ -102,14 +102,14 @@ class ParticipantListResponse extends AbstractStructBase
     /**
      * Add item to MidocoParticipantList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ParticipantListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ParticipantListResponse
      */
-    public function addToMidocoParticipantList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList $item): self
+    public function addToMidocoParticipantList(\Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList) {
-            throw new InvalidArgumentException(sprintf('The MidocoParticipantList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList) {
+            throw new InvalidArgumentException(sprintf('The MidocoParticipantList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoParticipantList[] = $item;
         
@@ -126,7 +126,7 @@ class ParticipantListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ParticipantListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ParticipantListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {
@@ -140,18 +140,18 @@ class ParticipantListResponse extends AbstractStructBase
     }
     /**
      * Get ParticipantListSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListType|null
      */
-    public function getParticipantListSums(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListType
+    public function getParticipantListSums(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListType
     {
         return $this->ParticipantListSums;
     }
     /**
      * Set ParticipantListSums value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListType $participantListSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ParticipantListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListType $participantListSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ParticipantListResponse
      */
-    public function setParticipantListSums(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListType $participantListSums = null): self
+    public function setParticipantListSums(?\Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListType $participantListSums = null): self
     {
         $this->ParticipantListSums = $participantListSums;
         

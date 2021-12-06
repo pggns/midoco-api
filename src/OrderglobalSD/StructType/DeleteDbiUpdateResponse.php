@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class DeleteDbiUpdateResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDbiUpdate
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO[]
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO[]
      */
     protected ?array $MidocoDbiUpdate = null;
     /**
      * Constructor method for DeleteDbiUpdateResponse
      * @uses DeleteDbiUpdateResponse::setMidocoDbiUpdate()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO[] $midocoDbiUpdate
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO[] $midocoDbiUpdate
      */
     public function __construct(?array $midocoDbiUpdate = null)
     {
@@ -34,7 +34,7 @@ class DeleteDbiUpdateResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDbiUpdate value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO[]
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO[]
      */
     public function getMidocoDbiUpdate(): ?array
     {
@@ -55,12 +55,12 @@ class DeleteDbiUpdateResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteDbiUpdateResponseMidocoDbiUpdateItem) {
             // validation for constraint: itemType
-            if (!$deleteDbiUpdateResponseMidocoDbiUpdateItem instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO) {
+            if (!$deleteDbiUpdateResponseMidocoDbiUpdateItem instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO) {
                 $invalidValues[] = is_object($deleteDbiUpdateResponseMidocoDbiUpdateItem) ? get_class($deleteDbiUpdateResponseMidocoDbiUpdateItem) : sprintf('%s(%s)', gettype($deleteDbiUpdateResponseMidocoDbiUpdateItem), var_export($deleteDbiUpdateResponseMidocoDbiUpdateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDbiUpdate property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDbiUpdate property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class DeleteDbiUpdateResponse extends AbstractStructBase
     /**
      * Set MidocoDbiUpdate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO[] $midocoDbiUpdate
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DeleteDbiUpdateResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO[] $midocoDbiUpdate
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DeleteDbiUpdateResponse
      */
     public function setMidocoDbiUpdate(?array $midocoDbiUpdate = null): self
     {
@@ -85,14 +85,14 @@ class DeleteDbiUpdateResponse extends AbstractStructBase
     /**
      * Add item to MidocoDbiUpdate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO $item
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DeleteDbiUpdateResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO $item
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DeleteDbiUpdateResponse
      */
-    public function addToMidocoDbiUpdate(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO $item): self
+    public function addToMidocoDbiUpdate(\Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoDbiUpdate property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoDbiUpdate property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDbiUpdate[] = $item;
         

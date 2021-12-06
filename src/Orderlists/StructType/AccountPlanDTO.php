@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class AccountPlanDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountPlanDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountPlanDTO
      */
     public function setPlanId(?string $planId = null): self
     {

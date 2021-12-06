@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ReprintAgencySettlementRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReprintAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ReprintAgencySettlementRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -70,7 +70,7 @@ class ReprintAgencySettlementRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReprintAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ReprintAgencySettlementRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {

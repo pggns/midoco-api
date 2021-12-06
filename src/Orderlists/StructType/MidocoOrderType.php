@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,32 +18,32 @@ class MidocoOrderType extends OrderDTO
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoOnlinePayment
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePayment|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePayment|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePayment $MidocoOnlinePayment = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePayment $MidocoOnlinePayment = null;
     /**
      * The MidocoAdvisedPayment
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoAdvisedPayment
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\AdvisedPaymentDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\AdvisedPaymentDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\AdvisedPaymentDTO $MidocoAdvisedPayment = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\AdvisedPaymentDTO $MidocoAdvisedPayment = null;
     /**
      * The MidocoDebitPayment
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoDebitPayment
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitPayment|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoDebitPayment|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitPayment $MidocoDebitPayment = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoDebitPayment $MidocoDebitPayment = null;
     /**
      * The MidocoSellItem
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellItem
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType[]
      */
     protected ?array $MidocoSellItem = null;
     /**
@@ -52,7 +52,7 @@ class MidocoOrderType extends OrderDTO
      * - maxOccurs: 3
      * - minOccurs: 0
      * - ref: MidocoOrderCustomer
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderCustomer[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderCustomer[]
      */
     protected ?array $MidocoOrderCustomer = null;
     /**
@@ -61,7 +61,7 @@ class MidocoOrderType extends OrderDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrdersDbiInfo
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdersDbiInfo[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdersDbiInfo[]
      */
     protected ?array $MidocoOrdersDbiInfo = null;
     /**
@@ -70,7 +70,7 @@ class MidocoOrderType extends OrderDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: mbm:ExternalPayment
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalPayment[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\ExternalPayment[]
      */
     protected ?array $ExternalPayment = null;
     /**
@@ -154,13 +154,13 @@ class MidocoOrderType extends OrderDTO
      * @uses MidocoOrderType::setExistOrderRemarks()
      * @uses MidocoOrderType::setExistPaymentPaycodes()
      * @uses MidocoOrderType::setExistOrderBillings()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePayment $midocoOnlinePayment
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AdvisedPaymentDTO $midocoAdvisedPayment
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitPayment $midocoDebitPayment
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemType[] $midocoSellItem
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderCustomer[] $midocoOrderCustomer
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdersDbiInfo[] $midocoOrdersDbiInfo
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalPayment[] $externalPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePayment $midocoOnlinePayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AdvisedPaymentDTO $midocoAdvisedPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDebitPayment $midocoDebitPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType[] $midocoSellItem
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderCustomer[] $midocoOrderCustomer
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdersDbiInfo[] $midocoOrdersDbiInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ExternalPayment[] $externalPayment
      * @param float $calculatedMarginServices
      * @param string $unitAlias
      * @param string $mediatorPortal
@@ -174,7 +174,7 @@ class MidocoOrderType extends OrderDTO
      * @param bool $existPaymentPaycodes
      * @param bool $existOrderBillings
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePayment $midocoOnlinePayment = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\AdvisedPaymentDTO $midocoAdvisedPayment = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitPayment $midocoDebitPayment = null, ?array $midocoSellItem = null, ?array $midocoOrderCustomer = null, ?array $midocoOrdersDbiInfo = null, ?array $externalPayment = null, ?float $calculatedMarginServices = null, ?string $unitAlias = null, ?string $mediatorPortal = null, ?bool $isModified = null, ?string $preferredPaymentType = null, ?string $paymentTypeInfo = null, ?bool $existTravelPlans = null, ?bool $existOrderDocuments = null, ?bool $existOrderNotices = null, ?bool $existOrderRemarks = null, ?bool $existPaymentPaycodes = null, ?bool $existOrderBillings = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePayment $midocoOnlinePayment = null, ?\Pggns\MidocoApi\Orderlists\StructType\AdvisedPaymentDTO $midocoAdvisedPayment = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoDebitPayment $midocoDebitPayment = null, ?array $midocoSellItem = null, ?array $midocoOrderCustomer = null, ?array $midocoOrdersDbiInfo = null, ?array $externalPayment = null, ?float $calculatedMarginServices = null, ?string $unitAlias = null, ?string $mediatorPortal = null, ?bool $isModified = null, ?string $preferredPaymentType = null, ?string $paymentTypeInfo = null, ?bool $existTravelPlans = null, ?bool $existOrderDocuments = null, ?bool $existOrderNotices = null, ?bool $existOrderRemarks = null, ?bool $existPaymentPaycodes = null, ?bool $existOrderBillings = null)
     {
         $this
             ->setMidocoOnlinePayment($midocoOnlinePayment)
@@ -199,18 +199,18 @@ class MidocoOrderType extends OrderDTO
     }
     /**
      * Get MidocoOnlinePayment value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePayment|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePayment|null
      */
-    public function getMidocoOnlinePayment(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePayment
+    public function getMidocoOnlinePayment(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePayment
     {
         return $this->MidocoOnlinePayment;
     }
     /**
      * Set MidocoOnlinePayment value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePayment $midocoOnlinePayment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePayment $midocoOnlinePayment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
-    public function setMidocoOnlinePayment(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePayment $midocoOnlinePayment = null): self
+    public function setMidocoOnlinePayment(?\Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePayment $midocoOnlinePayment = null): self
     {
         $this->MidocoOnlinePayment = $midocoOnlinePayment;
         
@@ -218,18 +218,18 @@ class MidocoOrderType extends OrderDTO
     }
     /**
      * Get MidocoAdvisedPayment value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdvisedPaymentDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdvisedPaymentDTO|null
      */
-    public function getMidocoAdvisedPayment(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\AdvisedPaymentDTO
+    public function getMidocoAdvisedPayment(): ?\Pggns\MidocoApi\Orderlists\StructType\AdvisedPaymentDTO
     {
         return $this->MidocoAdvisedPayment;
     }
     /**
      * Set MidocoAdvisedPayment value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AdvisedPaymentDTO $midocoAdvisedPayment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AdvisedPaymentDTO $midocoAdvisedPayment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
-    public function setMidocoAdvisedPayment(?\Pggns\MidocoApi\Api\Orderlists\StructType\AdvisedPaymentDTO $midocoAdvisedPayment = null): self
+    public function setMidocoAdvisedPayment(?\Pggns\MidocoApi\Orderlists\StructType\AdvisedPaymentDTO $midocoAdvisedPayment = null): self
     {
         $this->MidocoAdvisedPayment = $midocoAdvisedPayment;
         
@@ -237,18 +237,18 @@ class MidocoOrderType extends OrderDTO
     }
     /**
      * Get MidocoDebitPayment value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitPayment|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDebitPayment|null
      */
-    public function getMidocoDebitPayment(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitPayment
+    public function getMidocoDebitPayment(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoDebitPayment
     {
         return $this->MidocoDebitPayment;
     }
     /**
      * Set MidocoDebitPayment value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitPayment $midocoDebitPayment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDebitPayment $midocoDebitPayment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
-    public function setMidocoDebitPayment(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitPayment $midocoDebitPayment = null): self
+    public function setMidocoDebitPayment(?\Pggns\MidocoApi\Orderlists\StructType\MidocoDebitPayment $midocoDebitPayment = null): self
     {
         $this->MidocoDebitPayment = $midocoDebitPayment;
         
@@ -256,7 +256,7 @@ class MidocoOrderType extends OrderDTO
     }
     /**
      * Get MidocoSellItem value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType[]
      */
     public function getMidocoSellItem(): ?array
     {
@@ -277,12 +277,12 @@ class MidocoOrderType extends OrderDTO
         $invalidValues = [];
         foreach ($values as $midocoOrderTypeMidocoSellItemItem) {
             // validation for constraint: itemType
-            if (!$midocoOrderTypeMidocoSellItemItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemType) {
+            if (!$midocoOrderTypeMidocoSellItemItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType) {
                 $invalidValues[] = is_object($midocoOrderTypeMidocoSellItemItem) ? get_class($midocoOrderTypeMidocoSellItemItem) : sprintf('%s(%s)', gettype($midocoOrderTypeMidocoSellItemItem), var_export($midocoOrderTypeMidocoSellItemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellItem property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellItem property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -291,8 +291,8 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set MidocoSellItem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemType[] $midocoSellItem
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType[] $midocoSellItem
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setMidocoSellItem(?array $midocoSellItem = null): self
     {
@@ -307,14 +307,14 @@ class MidocoOrderType extends OrderDTO
     /**
      * Add item to MidocoSellItem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
-    public function addToMidocoSellItem(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemType $item): self
+    public function addToMidocoSellItem(\Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemType) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellItem property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellItem property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellItem[] = $item;
         
@@ -322,7 +322,7 @@ class MidocoOrderType extends OrderDTO
     }
     /**
      * Get MidocoOrderCustomer value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderCustomer[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderCustomer[]
      */
     public function getMidocoOrderCustomer(): ?array
     {
@@ -343,12 +343,12 @@ class MidocoOrderType extends OrderDTO
         $invalidValues = [];
         foreach ($values as $midocoOrderTypeMidocoOrderCustomerItem) {
             // validation for constraint: itemType
-            if (!$midocoOrderTypeMidocoOrderCustomerItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderCustomer) {
+            if (!$midocoOrderTypeMidocoOrderCustomerItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderCustomer) {
                 $invalidValues[] = is_object($midocoOrderTypeMidocoOrderCustomerItem) ? get_class($midocoOrderTypeMidocoOrderCustomerItem) : sprintf('%s(%s)', gettype($midocoOrderTypeMidocoOrderCustomerItem), var_export($midocoOrderTypeMidocoOrderCustomerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderCustomer property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderCustomer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderCustomer property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderCustomer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -357,8 +357,8 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set MidocoOrderCustomer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderCustomer[] $midocoOrderCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderCustomer[] $midocoOrderCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setMidocoOrderCustomer(?array $midocoOrderCustomer = null): self
     {
@@ -377,14 +377,14 @@ class MidocoOrderType extends OrderDTO
     /**
      * Add item to MidocoOrderCustomer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderCustomer $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderCustomer $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
-    public function addToMidocoOrderCustomer(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderCustomer $item): self
+    public function addToMidocoOrderCustomer(\Pggns\MidocoApi\Orderlists\StructType\MidocoOrderCustomer $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderCustomer) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderCustomer property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderCustomer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderCustomer) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderCustomer property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderCustomer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(3)
         if (is_array($this->MidocoOrderCustomer) && count($this->MidocoOrderCustomer) >= 3) {
@@ -396,7 +396,7 @@ class MidocoOrderType extends OrderDTO
     }
     /**
      * Get MidocoOrdersDbiInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdersDbiInfo[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdersDbiInfo[]
      */
     public function getMidocoOrdersDbiInfo(): ?array
     {
@@ -417,12 +417,12 @@ class MidocoOrderType extends OrderDTO
         $invalidValues = [];
         foreach ($values as $midocoOrderTypeMidocoOrdersDbiInfoItem) {
             // validation for constraint: itemType
-            if (!$midocoOrderTypeMidocoOrdersDbiInfoItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdersDbiInfo) {
+            if (!$midocoOrderTypeMidocoOrdersDbiInfoItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdersDbiInfo) {
                 $invalidValues[] = is_object($midocoOrderTypeMidocoOrdersDbiInfoItem) ? get_class($midocoOrderTypeMidocoOrdersDbiInfoItem) : sprintf('%s(%s)', gettype($midocoOrderTypeMidocoOrdersDbiInfoItem), var_export($midocoOrderTypeMidocoOrdersDbiInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrdersDbiInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdersDbiInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrdersDbiInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdersDbiInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -431,8 +431,8 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set MidocoOrdersDbiInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdersDbiInfo[] $midocoOrdersDbiInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdersDbiInfo[] $midocoOrdersDbiInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setMidocoOrdersDbiInfo(?array $midocoOrdersDbiInfo = null): self
     {
@@ -447,14 +447,14 @@ class MidocoOrderType extends OrderDTO
     /**
      * Add item to MidocoOrdersDbiInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdersDbiInfo $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdersDbiInfo $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
-    public function addToMidocoOrdersDbiInfo(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdersDbiInfo $item): self
+    public function addToMidocoOrdersDbiInfo(\Pggns\MidocoApi\Orderlists\StructType\MidocoOrdersDbiInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdersDbiInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrdersDbiInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdersDbiInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdersDbiInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrdersDbiInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdersDbiInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrdersDbiInfo[] = $item;
         
@@ -462,7 +462,7 @@ class MidocoOrderType extends OrderDTO
     }
     /**
      * Get ExternalPayment value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalPayment[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExternalPayment[]
      */
     public function getExternalPayment(): ?array
     {
@@ -483,12 +483,12 @@ class MidocoOrderType extends OrderDTO
         $invalidValues = [];
         foreach ($values as $midocoOrderTypeExternalPaymentItem) {
             // validation for constraint: itemType
-            if (!$midocoOrderTypeExternalPaymentItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalPayment) {
+            if (!$midocoOrderTypeExternalPaymentItem instanceof \Pggns\MidocoApi\Orderlists\StructType\ExternalPayment) {
                 $invalidValues[] = is_object($midocoOrderTypeExternalPaymentItem) ? get_class($midocoOrderTypeExternalPaymentItem) : sprintf('%s(%s)', gettype($midocoOrderTypeExternalPaymentItem), var_export($midocoOrderTypeExternalPaymentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\ExternalPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -497,8 +497,8 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set ExternalPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalPayment[] $externalPayment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ExternalPayment[] $externalPayment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setExternalPayment(?array $externalPayment = null): self
     {
@@ -513,14 +513,14 @@ class MidocoOrderType extends OrderDTO
     /**
      * Add item to ExternalPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalPayment $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ExternalPayment $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
-    public function addToExternalPayment(\Pggns\MidocoApi\Api\Orderlists\StructType\ExternalPayment $item): self
+    public function addToExternalPayment(\Pggns\MidocoApi\Orderlists\StructType\ExternalPayment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalPayment) {
-            throw new InvalidArgumentException(sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\ExternalPayment) {
+            throw new InvalidArgumentException(sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\ExternalPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ExternalPayment[] = $item;
         
@@ -537,7 +537,7 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set calculatedMarginServices value
      * @param float $calculatedMarginServices
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setCalculatedMarginServices(?float $calculatedMarginServices = null): self
     {
@@ -560,7 +560,7 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set unitAlias value
      * @param string $unitAlias
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setUnitAlias(?string $unitAlias = null): self
     {
@@ -583,7 +583,7 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set mediatorPortal value
      * @param string $mediatorPortal
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setMediatorPortal(?string $mediatorPortal = null): self
     {
@@ -606,7 +606,7 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set isModified value
      * @param bool $isModified
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setIsModified(?bool $isModified = null): self
     {
@@ -629,7 +629,7 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set preferredPaymentType value
      * @param string $preferredPaymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setPreferredPaymentType(?string $preferredPaymentType = null): self
     {
@@ -652,7 +652,7 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set paymentTypeInfo value
      * @param string $paymentTypeInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setPaymentTypeInfo(?string $paymentTypeInfo = null): self
     {
@@ -675,7 +675,7 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set existTravelPlans value
      * @param bool $existTravelPlans
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setExistTravelPlans(?bool $existTravelPlans = null): self
     {
@@ -698,7 +698,7 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set existOrderDocuments value
      * @param bool $existOrderDocuments
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setExistOrderDocuments(?bool $existOrderDocuments = null): self
     {
@@ -721,7 +721,7 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set existOrderNotices value
      * @param bool $existOrderNotices
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setExistOrderNotices(?bool $existOrderNotices = null): self
     {
@@ -744,7 +744,7 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set existOrderRemarks value
      * @param bool $existOrderRemarks
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setExistOrderRemarks(?bool $existOrderRemarks = null): self
     {
@@ -767,7 +767,7 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set existPaymentPaycodes value
      * @param bool $existPaymentPaycodes
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setExistPaymentPaycodes(?bool $existPaymentPaycodes = null): self
     {
@@ -790,7 +790,7 @@ class MidocoOrderType extends OrderDTO
     /**
      * Set existOrderBillings value
      * @param bool $existOrderBillings
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderType
      */
     public function setExistOrderBillings(?bool $existOrderBillings = null): self
     {

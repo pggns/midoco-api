@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class SaveBillingVatCalculationsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingVatCalculation
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingVatCalculation[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingVatCalculation[]
      */
     protected ?array $MidocoBillingVatCalculation = null;
     /**
      * Constructor method for SaveBillingVatCalculationsResponse
      * @uses SaveBillingVatCalculationsResponse::setMidocoBillingVatCalculation()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingVatCalculation[] $midocoBillingVatCalculation
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingVatCalculation[] $midocoBillingVatCalculation
      */
     public function __construct(?array $midocoBillingVatCalculation = null)
     {
@@ -36,7 +36,7 @@ class SaveBillingVatCalculationsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingVatCalculation value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingVatCalculation[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingVatCalculation[]
      */
     public function getMidocoBillingVatCalculation(): ?array
     {
@@ -57,12 +57,12 @@ class SaveBillingVatCalculationsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveBillingVatCalculationsResponseMidocoBillingVatCalculationItem) {
             // validation for constraint: itemType
-            if (!$saveBillingVatCalculationsResponseMidocoBillingVatCalculationItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingVatCalculation) {
+            if (!$saveBillingVatCalculationsResponseMidocoBillingVatCalculationItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingVatCalculation) {
                 $invalidValues[] = is_object($saveBillingVatCalculationsResponseMidocoBillingVatCalculationItem) ? get_class($saveBillingVatCalculationsResponseMidocoBillingVatCalculationItem) : sprintf('%s(%s)', gettype($saveBillingVatCalculationsResponseMidocoBillingVatCalculationItem), var_export($saveBillingVatCalculationsResponseMidocoBillingVatCalculationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingVatCalculation property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingVatCalculation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingVatCalculation property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingVatCalculation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class SaveBillingVatCalculationsResponse extends AbstractStructBase
     /**
      * Set MidocoBillingVatCalculation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingVatCalculation[] $midocoBillingVatCalculation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingVatCalculationsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingVatCalculation[] $midocoBillingVatCalculation
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingVatCalculationsResponse
      */
     public function setMidocoBillingVatCalculation(?array $midocoBillingVatCalculation = null): self
     {
@@ -87,14 +87,14 @@ class SaveBillingVatCalculationsResponse extends AbstractStructBase
     /**
      * Add item to MidocoBillingVatCalculation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingVatCalculation $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingVatCalculationsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingVatCalculation $item
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingVatCalculationsResponse
      */
-    public function addToMidocoBillingVatCalculation(\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingVatCalculation $item): self
+    public function addToMidocoBillingVatCalculation(\Pggns\MidocoApi\Order\StructType\MidocoBillingVatCalculation $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingVatCalculation) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingVatCalculation property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingVatCalculation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingVatCalculation) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingVatCalculation property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingVatCalculation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingVatCalculation[] = $item;
         

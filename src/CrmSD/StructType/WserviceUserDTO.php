@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class WserviceUserDTO extends AbstractStructBase
     /**
      * Set allowed value
      * @param bool $allowed
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\WserviceUserDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\WserviceUserDTO
      */
     public function setAllowed(?bool $allowed = null): self
     {
@@ -78,7 +78,7 @@ class WserviceUserDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\WserviceUserDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\WserviceUserDTO
      */
     public function setName(?string $name = null): self
     {
@@ -101,7 +101,7 @@ class WserviceUserDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\WserviceUserDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\WserviceUserDTO
      */
     public function setUserId(?int $userId = null): self
     {

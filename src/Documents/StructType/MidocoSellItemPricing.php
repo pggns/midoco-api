@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -105,7 +105,7 @@ class MidocoSellItemPricing extends SellItemPricingDTO
     /**
      * Set brokerCalculatedCommissionAmount value
      * @param float $brokerCalculatedCommissionAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemPricing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellItemPricing
      */
     public function setBrokerCalculatedCommissionAmount(?float $brokerCalculatedCommissionAmount = null): self
     {
@@ -128,7 +128,7 @@ class MidocoSellItemPricing extends SellItemPricingDTO
     /**
      * Set brokerPaidCommissionAmount value
      * @param float $brokerPaidCommissionAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemPricing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellItemPricing
      */
     public function setBrokerPaidCommissionAmount(?float $brokerPaidCommissionAmount = null): self
     {
@@ -151,7 +151,7 @@ class MidocoSellItemPricing extends SellItemPricingDTO
     /**
      * Set agencyCalculatedCommissionAmount value
      * @param float $agencyCalculatedCommissionAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemPricing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellItemPricing
      */
     public function setAgencyCalculatedCommissionAmount(?float $agencyCalculatedCommissionAmount = null): self
     {
@@ -174,7 +174,7 @@ class MidocoSellItemPricing extends SellItemPricingDTO
     /**
      * Set agencyPercentAmount value
      * @param float $agencyPercentAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemPricing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellItemPricing
      */
     public function setAgencyPercentAmount(?float $agencyPercentAmount = null): self
     {
@@ -197,7 +197,7 @@ class MidocoSellItemPricing extends SellItemPricingDTO
     /**
      * Set agencyPaidCommissionAmount value
      * @param float $agencyPaidCommissionAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemPricing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellItemPricing
      */
     public function setAgencyPaidCommissionAmount(?float $agencyPaidCommissionAmount = null): self
     {
@@ -220,7 +220,7 @@ class MidocoSellItemPricing extends SellItemPricingDTO
     /**
      * Set hasCalculatorPriority value
      * @param bool $hasCalculatorPriority
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemPricing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellItemPricing
      */
     public function setHasCalculatorPriority(?bool $hasCalculatorPriority = false): self
     {
@@ -243,7 +243,7 @@ class MidocoSellItemPricing extends SellItemPricingDTO
     /**
      * Set isManualBrokerCommission value
      * @param bool $isManualBrokerCommission
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemPricing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellItemPricing
      */
     public function setIsManualBrokerCommission(?bool $isManualBrokerCommission = false): self
     {

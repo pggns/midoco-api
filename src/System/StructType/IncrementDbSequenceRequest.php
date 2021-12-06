@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class IncrementDbSequenceRequest extends AbstractStructBase
     /**
      * Set DBtype value
      * @param string $dBtype
-     * @return \Pggns\MidocoApi\Api\System\StructType\IncrementDbSequenceRequest
+     * @return \Pggns\MidocoApi\System\StructType\IncrementDbSequenceRequest
      */
     public function setDBtype(?string $dBtype = null): self
     {
@@ -78,7 +78,7 @@ class IncrementDbSequenceRequest extends AbstractStructBase
     /**
      * Set TableName value
      * @param string $tableName
-     * @return \Pggns\MidocoApi\Api\System\StructType\IncrementDbSequenceRequest
+     * @return \Pggns\MidocoApi\System\StructType\IncrementDbSequenceRequest
      */
     public function setTableName(?string $tableName = null): self
     {
@@ -101,7 +101,7 @@ class IncrementDbSequenceRequest extends AbstractStructBase
     /**
      * Set numIds value
      * @param int $numIds
-     * @return \Pggns\MidocoApi\Api\System\StructType\IncrementDbSequenceRequest
+     * @return \Pggns\MidocoApi\System\StructType\IncrementDbSequenceRequest
      */
     public function setNumIds(?int $numIds = null): self
     {

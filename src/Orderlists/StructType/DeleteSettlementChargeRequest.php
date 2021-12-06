@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class DeleteSettlementChargeRequest extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteSettlementChargeRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteSettlementChargeRequest
      */
     public function setChargeId(int $chargeId): self
     {

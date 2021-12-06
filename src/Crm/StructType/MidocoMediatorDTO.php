@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoMediatorDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoMediatorDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -86,7 +86,7 @@ class MidocoMediatorDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoMediatorDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -109,7 +109,7 @@ class MidocoMediatorDTO extends AbstractStructBase
     /**
      * Set mediatorType value
      * @param string $mediatorType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoMediatorDTO
      */
     public function setMediatorType(?string $mediatorType = null): self
     {
@@ -132,7 +132,7 @@ class MidocoMediatorDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoMediatorDTO
      */
     public function setDescription(?string $description = null): self
     {

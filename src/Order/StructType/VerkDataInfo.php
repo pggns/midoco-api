@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -96,17 +96,17 @@ class VerkDataInfo extends AbstractStructBase
     }
     /**
      * Set key value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\Key::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\Key::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\Key::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\Key::getValidValues()
      * @throws InvalidArgumentException
      * @param string $key
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VerkDataInfo
+     * @return \Pggns\MidocoApi\Order\StructType\VerkDataInfo
      */
     public function setKey(?string $key = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\Key::valueIsValid($key)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\Key', is_array($key) ? implode(', ', $key) : var_export($key, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\Key::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\Key::valueIsValid($key)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\Key', is_array($key) ? implode(', ', $key) : var_export($key, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\Key::getValidValues())), __LINE__);
         }
         $this->key = $key;
         
@@ -123,7 +123,7 @@ class VerkDataInfo extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VerkDataInfo
+     * @return \Pggns\MidocoApi\Order\StructType\VerkDataInfo
      */
     public function setValue(?string $value = null): self
     {
@@ -146,7 +146,7 @@ class VerkDataInfo extends AbstractStructBase
     /**
      * Set booking_id value
      * @param string $booking_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VerkDataInfo
+     * @return \Pggns\MidocoApi\Order\StructType\VerkDataInfo
      */
     public function setBooking_id(?string $booking_id = null): self
     {
@@ -169,7 +169,7 @@ class VerkDataInfo extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VerkDataInfo
+     * @return \Pggns\MidocoApi\Order\StructType\VerkDataInfo
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -192,7 +192,7 @@ class VerkDataInfo extends AbstractStructBase
     /**
      * Set person_assignment value
      * @param string $person_assignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VerkDataInfo
+     * @return \Pggns\MidocoApi\Order\StructType\VerkDataInfo
      */
     public function setPerson_assignment(?string $person_assignment = null): self
     {
@@ -215,7 +215,7 @@ class VerkDataInfo extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VerkDataInfo
+     * @return \Pggns\MidocoApi\Order\StructType\VerkDataInfo
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -238,7 +238,7 @@ class VerkDataInfo extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VerkDataInfo
+     * @return \Pggns\MidocoApi\Order\StructType\VerkDataInfo
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {

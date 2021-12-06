@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -198,7 +198,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -221,7 +221,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set documentDate value
      * @param string $documentDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setDocumentDate(?string $documentDate = null): self
     {
@@ -244,7 +244,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set documentExportDate value
      * @param string $documentExportDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setDocumentExportDate(?string $documentExportDate = null): self
     {
@@ -267,7 +267,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set documentName value
      * @param string $documentName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setDocumentName(?string $documentName = null): self
     {
@@ -290,7 +290,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -313,7 +313,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set documentSize value
      * @param int $documentSize
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setDocumentSize(?int $documentSize = null): self
     {
@@ -336,7 +336,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -359,7 +359,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set isDocumentExported value
      * @param bool $isDocumentExported
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setIsDocumentExported(?bool $isDocumentExported = null): self
     {
@@ -382,7 +382,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -405,7 +405,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set isManual value
      * @param bool $isManual
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setIsManual(?bool $isManual = null): self
     {
@@ -428,7 +428,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set orderDocumentId value
      * @param int $orderDocumentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setOrderDocumentId(?int $orderDocumentId = null): self
     {
@@ -451,7 +451,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -474,7 +474,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set orgunitRepositoryId value
      * @param int $orgunitRepositoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setOrgunitRepositoryId(?int $orgunitRepositoryId = null): self
     {
@@ -497,7 +497,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -520,7 +520,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set shipment value
      * @param string $shipment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setShipment(?string $shipment = null): self
     {
@@ -543,7 +543,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {
@@ -566,7 +566,7 @@ class OrderDocumentDTO extends AbstractStructBase
     /**
      * Set uploadDate value
      * @param string $uploadDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocumentDTO
      */
     public function setUploadDate(?string $uploadDate = null): self
     {

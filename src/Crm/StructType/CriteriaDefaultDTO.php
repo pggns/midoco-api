@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CriteriaDefaultDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CriteriaDefaultDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CriteriaDefaultDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -78,7 +78,7 @@ class CriteriaDefaultDTO extends AbstractStructBase
     /**
      * Set defaultValue value
      * @param string $defaultValue
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CriteriaDefaultDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CriteriaDefaultDTO
      */
     public function setDefaultValue(?string $defaultValue = null): self
     {
@@ -101,7 +101,7 @@ class CriteriaDefaultDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CriteriaDefaultDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CriteriaDefaultDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

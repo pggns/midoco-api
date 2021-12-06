@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -439,7 +439,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set issueDate value
      * @param string $issueDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setIssueDate(?string $issueDate = null): self
     {
@@ -462,7 +462,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -485,7 +485,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -508,7 +508,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -531,7 +531,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -554,7 +554,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set travelerName value
      * @param string $travelerName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setTravelerName(?string $travelerName = null): self
     {
@@ -577,7 +577,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set documentNo value
      * @param string $documentNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setDocumentNo(?string $documentNo = null): self
     {
@@ -600,7 +600,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set bspValidator value
      * @param string $bspValidator
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setBspValidator(?string $bspValidator = null): self
     {
@@ -623,7 +623,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set filekey value
      * @param string $filekey
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setFilekey(?string $filekey = null): self
     {
@@ -646,7 +646,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set ticketTotalAmount value
      * @param float $ticketTotalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setTicketTotalAmount(?float $ticketTotalAmount = null): self
     {
@@ -669,7 +669,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set ticketInkassoAmount value
      * @param float $ticketInkassoAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setTicketInkassoAmount(?float $ticketInkassoAmount = null): self
     {
@@ -692,7 +692,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set segments value
      * @param string $segments
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setSegments(?string $segments = null): self
     {
@@ -715,7 +715,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -738,7 +738,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set totalTax value
      * @param float $totalTax
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setTotalTax(?float $totalTax = null): self
     {
@@ -761,7 +761,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set ticketFareBase value
      * @param float $ticketFareBase
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setTicketFareBase(?float $ticketFareBase = null): self
     {
@@ -784,7 +784,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set ticketType value
      * @param string $ticketType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setTicketType(?string $ticketType = null): self
     {
@@ -807,7 +807,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set mcoType value
      * @param string $mcoType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setMcoType(?string $mcoType = null): self
     {
@@ -830,7 +830,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -853,7 +853,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setVatPercent(?float $vatPercent = null): self
     {
@@ -876,7 +876,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set feeType value
      * @param string $feeType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setFeeType(?string $feeType = null): self
     {
@@ -899,7 +899,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set feeDescription value
      * @param string $feeDescription
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setFeeDescription(?string $feeDescription = null): self
     {
@@ -922,7 +922,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set feeAmount value
      * @param float $feeAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setFeeAmount(?float $feeAmount = null): self
     {
@@ -945,7 +945,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set ticketFee value
      * @param float $ticketFee
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setTicketFee(?float $ticketFee = null): self
     {
@@ -968,7 +968,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set customerFee value
      * @param float $customerFee
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setCustomerFee(?float $customerFee = null): self
     {
@@ -991,7 +991,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set billingPeriod value
      * @param string $billingPeriod
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setBillingPeriod(?string $billingPeriod = null): self
     {
@@ -1014,7 +1014,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set billingDate value
      * @param string $billingDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setBillingDate(?string $billingDate = null): self
     {
@@ -1037,7 +1037,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set iataCode value
      * @param string $iataCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setIataCode(?string $iataCode = null): self
     {
@@ -1060,7 +1060,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set transactionType value
      * @param string $transactionType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setTransactionType(?string $transactionType = null): self
     {
@@ -1083,7 +1083,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -1106,7 +1106,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -1129,7 +1129,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set commission value
      * @param float $commission
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setCommission(?float $commission = null): self
     {
@@ -1152,7 +1152,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setRemark(?string $remark = null): self
     {
@@ -1175,7 +1175,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set posCode value
      * @param string $posCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setPosCode(?string $posCode = null): self
     {
@@ -1198,7 +1198,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set businessModel value
      * @param string $businessModel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setBusinessModel(?string $businessModel = null): self
     {
@@ -1221,7 +1221,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set departureDate value
      * @param string $departureDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setDepartureDate(?string $departureDate = null): self
     {
@@ -1244,7 +1244,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -1267,7 +1267,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set airlineFees value
      * @param float $airlineFees
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setAirlineFees(?float $airlineFees = null): self
     {
@@ -1290,7 +1290,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set bspValidatorName value
      * @param string $bspValidatorName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setBspValidatorName(?string $bspValidatorName = null): self
     {
@@ -1313,7 +1313,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set passengerAssignment value
      * @param string $passengerAssignment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setPassengerAssignment(?string $passengerAssignment = null): self
     {
@@ -1336,7 +1336,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set ticketNoConj value
      * @param string $ticketNoConj
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setTicketNoConj(?string $ticketNoConj = null): self
     {
@@ -1359,7 +1359,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set docSubtypeDescription value
      * @param string $docSubtypeDescription
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setDocSubtypeDescription(?string $docSubtypeDescription = null): self
     {
@@ -1382,7 +1382,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -1405,7 +1405,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -1428,7 +1428,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set orderPosition value
      * @param int $orderPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setOrderPosition(?int $orderPosition = null): self
     {
@@ -1451,7 +1451,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set inkassoMode value
      * @param int $inkassoMode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setInkassoMode(?int $inkassoMode = null): self
     {
@@ -1474,7 +1474,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setDescription(?string $description = null): self
     {
@@ -1497,7 +1497,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -1520,7 +1520,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set passengerCount value
      * @param int $passengerCount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setPassengerCount(?int $passengerCount = null): self
     {
@@ -1543,7 +1543,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -1566,7 +1566,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set originalBookingId value
      * @param string $originalBookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setOriginalBookingId(?string $originalBookingId = null): self
     {
@@ -1589,7 +1589,7 @@ class MidocoAgencySettlementFibuConsoDetail extends AbstractStructBase
     /**
      * Set supplierName value
      * @param string $supplierName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementFibuConsoDetail
      */
     public function setSupplierName(?string $supplierName = null): self
     {

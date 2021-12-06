@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class _Do extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\_Do
+     * @return \Pggns\MidocoApi\Order\ServiceType\_Do
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class _Do extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MultiPrintRequest $paramMultiPrintRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\MultiPrintRequest $paramMultiPrintRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse|bool
      */
-    public function doMultiPrint(\Pggns\MidocoApi\Api\Order\StructType\MultiPrintRequest $paramMultiPrintRequest)
+    public function doMultiPrint(\Pggns\MidocoApi\Order\StructType\MultiPrintRequest $paramMultiPrintRequest)
     {
         try {
             $this->setResult($resultDoMultiPrint = $this->getSoapClient()->__soapCall('doMultiPrint', [
@@ -58,15 +58,15 @@ class _Do extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest $paramDoFlightTimeChangeEmailRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest $paramDoFlightTimeChangeEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailResponse|bool
      */
-    public function doFlightTimeChangeEmail(\Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest $paramDoFlightTimeChangeEmailRequest)
+    public function doFlightTimeChangeEmail(\Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest $paramDoFlightTimeChangeEmailRequest)
     {
         try {
             $this->setResult($resultDoFlightTimeChangeEmail = $this->getSoapClient()->__soapCall('doFlightTimeChangeEmail', [
@@ -83,7 +83,7 @@ class _Do extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailResponse|\Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailResponse|\Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function getResult()
     {

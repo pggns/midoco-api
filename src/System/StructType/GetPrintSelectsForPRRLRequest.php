@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetPrintSelectsForPRRLRequest extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetPrintSelectsForPRRLRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetPrintSelectsForPRRLRequest
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -70,7 +70,7 @@ class GetPrintSelectsForPRRLRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetPrintSelectsForPRRLRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetPrintSelectsForPRRLRequest
      */
     public function setOrderId(?int $orderId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class BookPaymentProviderSettlementBookingRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookPaymentProviderSettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookPaymentProviderSettlementBookingRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -80,7 +80,7 @@ class BookPaymentProviderSettlementBookingRequest extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookPaymentProviderSettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookPaymentProviderSettlementBookingRequest
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -103,7 +103,7 @@ class BookPaymentProviderSettlementBookingRequest extends AbstractStructBase
     /**
      * Set ignoreErrors value
      * @param bool $ignoreErrors
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookPaymentProviderSettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookPaymentProviderSettlementBookingRequest
      */
     public function setIgnoreErrors(?bool $ignoreErrors = false): self
     {

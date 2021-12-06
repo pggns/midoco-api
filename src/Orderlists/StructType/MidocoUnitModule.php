@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoUnitModule extends UnitModuleDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUnitModule
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoUnitModule
      */
     public function setInherited(?bool $inherited = null): self
     {

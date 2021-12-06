@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: ordersd:MidocoBonusAssignmentSellitemDetails
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoBonusAssignmentSellitemDetails[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoBonusAssignmentSellitemDetails[]
      */
     protected ?array $MidocoBonusAssignmentSellitemDetails = null;
     /**
@@ -28,7 +28,7 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBonusAddition
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\BonusAdditionDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\BonusAdditionDTO[]
      */
     protected ?array $MidocoBonusAddition = null;
     /**
@@ -83,8 +83,8 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
      * @uses PrintDetailsForBonusEmployee::setGrantedSumBonus()
      * @uses PrintDetailsForBonusEmployee::setPageCounter()
      * @uses PrintDetailsForBonusEmployee::setBonusDescription()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBonusAssignmentSellitemDetails[] $midocoBonusAssignmentSellitemDetails
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\BonusAdditionDTO[] $midocoBonusAddition
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBonusAssignmentSellitemDetails[] $midocoBonusAssignmentSellitemDetails
+     * @param \Pggns\MidocoApi\Documents\StructType\BonusAdditionDTO[] $midocoBonusAddition
      * @param float $grantedCompetition
      * @param float $grantedAdditional
      * @param string $username
@@ -110,7 +110,7 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     }
     /**
      * Get MidocoBonusAssignmentSellitemDetails value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBonusAssignmentSellitemDetails[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBonusAssignmentSellitemDetails[]
      */
     public function getMidocoBonusAssignmentSellitemDetails(): ?array
     {
@@ -131,12 +131,12 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $printDetailsForBonusEmployeeMidocoBonusAssignmentSellitemDetailsItem) {
             // validation for constraint: itemType
-            if (!$printDetailsForBonusEmployeeMidocoBonusAssignmentSellitemDetailsItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoBonusAssignmentSellitemDetails) {
+            if (!$printDetailsForBonusEmployeeMidocoBonusAssignmentSellitemDetailsItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoBonusAssignmentSellitemDetails) {
                 $invalidValues[] = is_object($printDetailsForBonusEmployeeMidocoBonusAssignmentSellitemDetailsItem) ? get_class($printDetailsForBonusEmployeeMidocoBonusAssignmentSellitemDetailsItem) : sprintf('%s(%s)', gettype($printDetailsForBonusEmployeeMidocoBonusAssignmentSellitemDetailsItem), var_export($printDetailsForBonusEmployeeMidocoBonusAssignmentSellitemDetailsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBonusAssignmentSellitemDetails property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoBonusAssignmentSellitemDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBonusAssignmentSellitemDetails property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoBonusAssignmentSellitemDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -145,8 +145,8 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     /**
      * Set MidocoBonusAssignmentSellitemDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBonusAssignmentSellitemDetails[] $midocoBonusAssignmentSellitemDetails
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintDetailsForBonusEmployee
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBonusAssignmentSellitemDetails[] $midocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintDetailsForBonusEmployee
      */
     public function setMidocoBonusAssignmentSellitemDetails(?array $midocoBonusAssignmentSellitemDetails = null): self
     {
@@ -161,14 +161,14 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     /**
      * Add item to MidocoBonusAssignmentSellitemDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBonusAssignmentSellitemDetails $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintDetailsForBonusEmployee
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBonusAssignmentSellitemDetails $item
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintDetailsForBonusEmployee
      */
-    public function addToMidocoBonusAssignmentSellitemDetails(\Pggns\MidocoApi\Api\Documents\StructType\MidocoBonusAssignmentSellitemDetails $item): self
+    public function addToMidocoBonusAssignmentSellitemDetails(\Pggns\MidocoApi\Documents\StructType\MidocoBonusAssignmentSellitemDetails $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoBonusAssignmentSellitemDetails) {
-            throw new InvalidArgumentException(sprintf('The MidocoBonusAssignmentSellitemDetails property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoBonusAssignmentSellitemDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoBonusAssignmentSellitemDetails) {
+            throw new InvalidArgumentException(sprintf('The MidocoBonusAssignmentSellitemDetails property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoBonusAssignmentSellitemDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBonusAssignmentSellitemDetails[] = $item;
         
@@ -176,7 +176,7 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     }
     /**
      * Get MidocoBonusAddition value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BonusAdditionDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\BonusAdditionDTO[]
      */
     public function getMidocoBonusAddition(): ?array
     {
@@ -197,12 +197,12 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $printDetailsForBonusEmployeeMidocoBonusAdditionItem) {
             // validation for constraint: itemType
-            if (!$printDetailsForBonusEmployeeMidocoBonusAdditionItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\BonusAdditionDTO) {
+            if (!$printDetailsForBonusEmployeeMidocoBonusAdditionItem instanceof \Pggns\MidocoApi\Documents\StructType\BonusAdditionDTO) {
                 $invalidValues[] = is_object($printDetailsForBonusEmployeeMidocoBonusAdditionItem) ? get_class($printDetailsForBonusEmployeeMidocoBonusAdditionItem) : sprintf('%s(%s)', gettype($printDetailsForBonusEmployeeMidocoBonusAdditionItem), var_export($printDetailsForBonusEmployeeMidocoBonusAdditionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBonusAddition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\BonusAdditionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBonusAddition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\BonusAdditionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -211,8 +211,8 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     /**
      * Set MidocoBonusAddition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\BonusAdditionDTO[] $midocoBonusAddition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintDetailsForBonusEmployee
+     * @param \Pggns\MidocoApi\Documents\StructType\BonusAdditionDTO[] $midocoBonusAddition
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintDetailsForBonusEmployee
      */
     public function setMidocoBonusAddition(?array $midocoBonusAddition = null): self
     {
@@ -227,14 +227,14 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     /**
      * Add item to MidocoBonusAddition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\BonusAdditionDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintDetailsForBonusEmployee
+     * @param \Pggns\MidocoApi\Documents\StructType\BonusAdditionDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintDetailsForBonusEmployee
      */
-    public function addToMidocoBonusAddition(\Pggns\MidocoApi\Api\Documents\StructType\BonusAdditionDTO $item): self
+    public function addToMidocoBonusAddition(\Pggns\MidocoApi\Documents\StructType\BonusAdditionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\BonusAdditionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoBonusAddition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\BonusAdditionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\BonusAdditionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBonusAddition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\BonusAdditionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBonusAddition[] = $item;
         
@@ -251,7 +251,7 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     /**
      * Set grantedCompetition value
      * @param float $grantedCompetition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintDetailsForBonusEmployee
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintDetailsForBonusEmployee
      */
     public function setGrantedCompetition(?float $grantedCompetition = null): self
     {
@@ -274,7 +274,7 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     /**
      * Set grantedAdditional value
      * @param float $grantedAdditional
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintDetailsForBonusEmployee
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintDetailsForBonusEmployee
      */
     public function setGrantedAdditional(?float $grantedAdditional = null): self
     {
@@ -297,7 +297,7 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     /**
      * Set username value
      * @param string $username
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintDetailsForBonusEmployee
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintDetailsForBonusEmployee
      */
     public function setUsername(?string $username = null): self
     {
@@ -320,7 +320,7 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     /**
      * Set baseAmountRule value
      * @param float $baseAmountRule
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintDetailsForBonusEmployee
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintDetailsForBonusEmployee
      */
     public function setBaseAmountRule(?float $baseAmountRule = null): self
     {
@@ -343,7 +343,7 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     /**
      * Set grantedAmountRule value
      * @param float $grantedAmountRule
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintDetailsForBonusEmployee
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintDetailsForBonusEmployee
      */
     public function setGrantedAmountRule(?float $grantedAmountRule = null): self
     {
@@ -366,7 +366,7 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     /**
      * Set grantedSumBonus value
      * @param float $grantedSumBonus
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintDetailsForBonusEmployee
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintDetailsForBonusEmployee
      */
     public function setGrantedSumBonus(?float $grantedSumBonus = null): self
     {
@@ -389,7 +389,7 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     /**
      * Set pageCounter value
      * @param int $pageCounter
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintDetailsForBonusEmployee
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintDetailsForBonusEmployee
      */
     public function setPageCounter(?int $pageCounter = null): self
     {
@@ -412,7 +412,7 @@ class PrintDetailsForBonusEmployee extends AbstractStructBase
     /**
      * Set bonusDescription value
      * @param string $bonusDescription
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintDetailsForBonusEmployee
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintDetailsForBonusEmployee
      */
     public function setBonusDescription(?string $bonusDescription = null): self
     {

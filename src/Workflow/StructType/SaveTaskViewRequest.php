@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveTaskViewRequest extends AbstractStructBase
      * The MidocoTaskView
      * Meta information extracted from the WSDL
      * - ref: MidocoTaskView
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView $MidocoTaskView = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\MidocoTaskView $MidocoTaskView = null;
     /**
      * The isUpdate
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SaveTaskViewRequest extends AbstractStructBase
      * Constructor method for SaveTaskViewRequest
      * @uses SaveTaskViewRequest::setMidocoTaskView()
      * @uses SaveTaskViewRequest::setIsUpdate()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView $midocoTaskView
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView $midocoTaskView
      * @param bool $isUpdate
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView $midocoTaskView = null, ?bool $isUpdate = false)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\MidocoTaskView $midocoTaskView = null, ?bool $isUpdate = false)
     {
         $this
             ->setMidocoTaskView($midocoTaskView)
@@ -42,18 +42,18 @@ class SaveTaskViewRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTaskView value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView|null
      */
-    public function getMidocoTaskView(): ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView
+    public function getMidocoTaskView(): ?\Pggns\MidocoApi\Workflow\StructType\MidocoTaskView
     {
         return $this->MidocoTaskView;
     }
     /**
      * Set MidocoTaskView value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView $midocoTaskView
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveTaskViewRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView $midocoTaskView
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveTaskViewRequest
      */
-    public function setMidocoTaskView(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView $midocoTaskView = null): self
+    public function setMidocoTaskView(?\Pggns\MidocoApi\Workflow\StructType\MidocoTaskView $midocoTaskView = null): self
     {
         $this->MidocoTaskView = $midocoTaskView;
         
@@ -70,7 +70,7 @@ class SaveTaskViewRequest extends AbstractStructBase
     /**
      * Set isUpdate value
      * @param bool $isUpdate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveTaskViewRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveTaskViewRequest
      */
     public function setIsUpdate(?bool $isUpdate = false): self
     {

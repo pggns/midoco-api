@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class PrintTemplateTextForCustomerResponse extends AbstractStructBase
     /**
      * Set foText value
      * @param string $foText
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PrintTemplateTextForCustomerResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\PrintTemplateTextForCustomerResponse
      */
     public function setFoText(?string $foText = null): self
     {

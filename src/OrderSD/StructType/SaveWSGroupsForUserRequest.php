@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class SaveWSGroupsForUserRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveWSGroupsForUserRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveWSGroupsForUserRequest
      */
     public function setUserId(?int $userId = null): self
     {
@@ -111,7 +111,7 @@ class SaveWSGroupsForUserRequest extends AbstractStructBase
      * Set groupsToSave value
      * @throws InvalidArgumentException
      * @param string[] $groupsToSave
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveWSGroupsForUserRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveWSGroupsForUserRequest
      */
     public function setGroupsToSave(?array $groupsToSave = null): self
     {
@@ -127,7 +127,7 @@ class SaveWSGroupsForUserRequest extends AbstractStructBase
      * Add item to groupsToSave value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveWSGroupsForUserRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveWSGroupsForUserRequest
      */
     public function addToGroupsToSave(string $item): self
     {
@@ -177,7 +177,7 @@ class SaveWSGroupsForUserRequest extends AbstractStructBase
      * Set groupsToRemove value
      * @throws InvalidArgumentException
      * @param string[] $groupsToRemove
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveWSGroupsForUserRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveWSGroupsForUserRequest
      */
     public function setGroupsToRemove(?array $groupsToRemove = null): self
     {
@@ -193,7 +193,7 @@ class SaveWSGroupsForUserRequest extends AbstractStructBase
      * Add item to groupsToRemove value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveWSGroupsForUserRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveWSGroupsForUserRequest
      */
     public function addToGroupsToRemove(string $item): self
     {

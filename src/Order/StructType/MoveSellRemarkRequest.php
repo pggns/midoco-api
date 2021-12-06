@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class MoveSellRemarkRequest extends AbstractStructBase
      * The MidocoSellRemark
      * Meta information extracted from the WSDL
      * - ref: MidocoSellRemark
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellRemark|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark $MidocoSellRemark = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSellRemark $MidocoSellRemark = null;
     /**
      * The direction
      * @var string|null
@@ -29,10 +29,10 @@ class MoveSellRemarkRequest extends AbstractStructBase
      * Constructor method for MoveSellRemarkRequest
      * @uses MoveSellRemarkRequest::setMidocoSellRemark()
      * @uses MoveSellRemarkRequest::setDirection()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark $midocoSellRemark
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellRemark $midocoSellRemark
      * @param string $direction
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark $midocoSellRemark = null, ?string $direction = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSellRemark $midocoSellRemark = null, ?string $direction = null)
     {
         $this
             ->setMidocoSellRemark($midocoSellRemark)
@@ -40,18 +40,18 @@ class MoveSellRemarkRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSellRemark value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellRemark|null
      */
-    public function getMidocoSellRemark(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark
+    public function getMidocoSellRemark(): ?\Pggns\MidocoApi\Order\StructType\MidocoSellRemark
     {
         return $this->MidocoSellRemark;
     }
     /**
      * Set MidocoSellRemark value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark $midocoSellRemark
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MoveSellRemarkRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellRemark $midocoSellRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MoveSellRemarkRequest
      */
-    public function setMidocoSellRemark(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark $midocoSellRemark = null): self
+    public function setMidocoSellRemark(?\Pggns\MidocoApi\Order\StructType\MidocoSellRemark $midocoSellRemark = null): self
     {
         $this->MidocoSellRemark = $midocoSellRemark;
         
@@ -68,7 +68,7 @@ class MoveSellRemarkRequest extends AbstractStructBase
     /**
      * Set direction value
      * @param string $direction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MoveSellRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MoveSellRemarkRequest
      */
     public function setDirection(?string $direction = null): self
     {

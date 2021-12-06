@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -62,7 +62,7 @@ class DeleteConsentUnitsRequest extends AbstractStructBase
     /**
      * Set consentId value
      * @param string $consentId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteConsentUnitsRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteConsentUnitsRequest
      */
     public function setConsentId(string $consentId): self
     {
@@ -85,7 +85,7 @@ class DeleteConsentUnitsRequest extends AbstractStructBase
     /**
      * Set isGroup value
      * @param bool $isGroup
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteConsentUnitsRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteConsentUnitsRequest
      */
     public function setIsGroup(bool $isGroup): self
     {
@@ -135,7 +135,7 @@ class DeleteConsentUnitsRequest extends AbstractStructBase
      * Set disabledUnitName value
      * @throws InvalidArgumentException
      * @param string[] $disabledUnitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteConsentUnitsRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteConsentUnitsRequest
      */
     public function setDisabledUnitName(array $disabledUnitName): self
     {
@@ -151,7 +151,7 @@ class DeleteConsentUnitsRequest extends AbstractStructBase
      * Add item to disabledUnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteConsentUnitsRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteConsentUnitsRequest
      */
     public function addToDisabledUnitName(string $item): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -125,7 +125,7 @@ class MidocoDunning extends DunningDTO
     /**
      * Set dunningDate value
      * @param string $dunningDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunning
      */
     public function setDunningDate(?string $dunningDate = null): self
     {
@@ -148,7 +148,7 @@ class MidocoDunning extends DunningDTO
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunning
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -171,7 +171,7 @@ class MidocoDunning extends DunningDTO
     /**
      * Set orderCreationDate value
      * @param string $orderCreationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunning
      */
     public function setOrderCreationDate(?string $orderCreationDate = null): self
     {
@@ -194,7 +194,7 @@ class MidocoDunning extends DunningDTO
     /**
      * Set isStornoOrder value
      * @param bool $isStornoOrder
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunning
      */
     public function setIsStornoOrder(?bool $isStornoOrder = true): self
     {
@@ -217,7 +217,7 @@ class MidocoDunning extends DunningDTO
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunning
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -240,7 +240,7 @@ class MidocoDunning extends DunningDTO
     /**
      * Set dunningAmountWithoutDunningCharges value
      * @param float $dunningAmountWithoutDunningCharges
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunning
      */
     public function setDunningAmountWithoutDunningCharges(?float $dunningAmountWithoutDunningCharges = null): self
     {
@@ -263,7 +263,7 @@ class MidocoDunning extends DunningDTO
     /**
      * Set ignoreDunning value
      * @param bool $ignoreDunning
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunning
      */
     public function setIgnoreDunning(?bool $ignoreDunning = false): self
     {
@@ -286,7 +286,7 @@ class MidocoDunning extends DunningDTO
     /**
      * Set excUserName value
      * @param string $excUserName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunning
      */
     public function setExcUserName(?string $excUserName = null): self
     {
@@ -309,7 +309,7 @@ class MidocoDunning extends DunningDTO
     /**
      * Set isRequestOrder value
      * @param bool $isRequestOrder
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunning
      */
     public function setIsRequestOrder(?bool $isRequestOrder = false): self
     {
@@ -332,7 +332,7 @@ class MidocoDunning extends DunningDTO
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunning
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {
@@ -355,7 +355,7 @@ class MidocoDunning extends DunningDTO
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunning
      */
     public function setPaymentType(?string $paymentType = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,34 +15,34 @@ class MigrateFiskalyTssResponse extends AbstractStructBase
 {
     /**
      * The Migration_Summary
-     * @var \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary|null
+     * @var \Pggns\MidocoApi\System\StructType\Tss_Migration_Summary|null
      */
-    protected ?\Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary $Migration_Summary = null;
+    protected ?\Pggns\MidocoApi\System\StructType\Tss_Migration_Summary $Migration_Summary = null;
     /**
      * The Migration_Log
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Log[]
+     * @var \Pggns\MidocoApi\System\StructType\Tss_Migration_Log[]
      */
     protected ?array $Migration_Log = null;
     /**
      * The Unprocessed_Units
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\System\StructType\Unprocessed_Units|null
+     * @var \Pggns\MidocoApi\System\StructType\Unprocessed_Units|null
      */
-    protected ?\Pggns\MidocoApi\Api\System\StructType\Unprocessed_Units $Unprocessed_Units = null;
+    protected ?\Pggns\MidocoApi\System\StructType\Unprocessed_Units $Unprocessed_Units = null;
     /**
      * Constructor method for MigrateFiskalyTssResponse
      * @uses MigrateFiskalyTssResponse::setMigration_Summary()
      * @uses MigrateFiskalyTssResponse::setMigration_Log()
      * @uses MigrateFiskalyTssResponse::setUnprocessed_Units()
-     * @param \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary $migration_Summary
-     * @param \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Log[] $migration_Log
-     * @param \Pggns\MidocoApi\Api\System\StructType\Unprocessed_Units $unprocessed_Units
+     * @param \Pggns\MidocoApi\System\StructType\Tss_Migration_Summary $migration_Summary
+     * @param \Pggns\MidocoApi\System\StructType\Tss_Migration_Log[] $migration_Log
+     * @param \Pggns\MidocoApi\System\StructType\Unprocessed_Units $unprocessed_Units
      */
-    public function __construct(?\Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary $migration_Summary = null, ?array $migration_Log = null, ?\Pggns\MidocoApi\Api\System\StructType\Unprocessed_Units $unprocessed_Units = null)
+    public function __construct(?\Pggns\MidocoApi\System\StructType\Tss_Migration_Summary $migration_Summary = null, ?array $migration_Log = null, ?\Pggns\MidocoApi\System\StructType\Unprocessed_Units $unprocessed_Units = null)
     {
         $this
             ->setMigration_Summary($migration_Summary)
@@ -51,18 +51,18 @@ class MigrateFiskalyTssResponse extends AbstractStructBase
     }
     /**
      * Get Migration_Summary value
-     * @return \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary|null
+     * @return \Pggns\MidocoApi\System\StructType\Tss_Migration_Summary|null
      */
-    public function getMigration_Summary(): ?\Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary
+    public function getMigration_Summary(): ?\Pggns\MidocoApi\System\StructType\Tss_Migration_Summary
     {
         return $this->{'Migration-Summary'};
     }
     /**
      * Set Migration_Summary value
-     * @param \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary $migration_Summary
-     * @return \Pggns\MidocoApi\Api\System\StructType\MigrateFiskalyTssResponse
+     * @param \Pggns\MidocoApi\System\StructType\Tss_Migration_Summary $migration_Summary
+     * @return \Pggns\MidocoApi\System\StructType\MigrateFiskalyTssResponse
      */
-    public function setMigration_Summary(?\Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary $migration_Summary = null): self
+    public function setMigration_Summary(?\Pggns\MidocoApi\System\StructType\Tss_Migration_Summary $migration_Summary = null): self
     {
         $this->Migration_Summary = $this->{'Migration-Summary'} = $migration_Summary;
         
@@ -70,7 +70,7 @@ class MigrateFiskalyTssResponse extends AbstractStructBase
     }
     /**
      * Get Migration_Log value
-     * @return \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Log[]
+     * @return \Pggns\MidocoApi\System\StructType\Tss_Migration_Log[]
      */
     public function getMigration_Log(): ?array
     {
@@ -91,12 +91,12 @@ class MigrateFiskalyTssResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $migrateFiskalyTssResponseMigration_LogItem) {
             // validation for constraint: itemType
-            if (!$migrateFiskalyTssResponseMigration_LogItem instanceof \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Log) {
+            if (!$migrateFiskalyTssResponseMigration_LogItem instanceof \Pggns\MidocoApi\System\StructType\Tss_Migration_Log) {
                 $invalidValues[] = is_object($migrateFiskalyTssResponseMigration_LogItem) ? get_class($migrateFiskalyTssResponseMigration_LogItem) : sprintf('%s(%s)', gettype($migrateFiskalyTssResponseMigration_LogItem), var_export($migrateFiskalyTssResponseMigration_LogItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Migration_Log property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Log, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Migration_Log property can only contain items of type \Pggns\MidocoApi\System\StructType\Tss_Migration_Log, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -105,8 +105,8 @@ class MigrateFiskalyTssResponse extends AbstractStructBase
     /**
      * Set Migration_Log value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Log[] $migration_Log
-     * @return \Pggns\MidocoApi\Api\System\StructType\MigrateFiskalyTssResponse
+     * @param \Pggns\MidocoApi\System\StructType\Tss_Migration_Log[] $migration_Log
+     * @return \Pggns\MidocoApi\System\StructType\MigrateFiskalyTssResponse
      */
     public function setMigration_Log(?array $migration_Log = null): self
     {
@@ -121,14 +121,14 @@ class MigrateFiskalyTssResponse extends AbstractStructBase
     /**
      * Add item to Migration_Log value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Log $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\MigrateFiskalyTssResponse
+     * @param \Pggns\MidocoApi\System\StructType\Tss_Migration_Log $item
+     * @return \Pggns\MidocoApi\System\StructType\MigrateFiskalyTssResponse
      */
-    public function addToMigration_Log(\Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Log $item): self
+    public function addToMigration_Log(\Pggns\MidocoApi\System\StructType\Tss_Migration_Log $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Log) {
-            throw new InvalidArgumentException(sprintf('The Migration_Log property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Log, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\Tss_Migration_Log) {
+            throw new InvalidArgumentException(sprintf('The Migration_Log property can only contain items of type \Pggns\MidocoApi\System\StructType\Tss_Migration_Log, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Migration_Log[] = $this->{'Migration-Log'}[] = $item;
         
@@ -136,18 +136,18 @@ class MigrateFiskalyTssResponse extends AbstractStructBase
     }
     /**
      * Get Unprocessed_Units value
-     * @return \Pggns\MidocoApi\Api\System\StructType\Unprocessed_Units|null
+     * @return \Pggns\MidocoApi\System\StructType\Unprocessed_Units|null
      */
-    public function getUnprocessed_Units(): ?\Pggns\MidocoApi\Api\System\StructType\Unprocessed_Units
+    public function getUnprocessed_Units(): ?\Pggns\MidocoApi\System\StructType\Unprocessed_Units
     {
         return $this->{'Unprocessed-Units'};
     }
     /**
      * Set Unprocessed_Units value
-     * @param \Pggns\MidocoApi\Api\System\StructType\Unprocessed_Units $unprocessed_Units
-     * @return \Pggns\MidocoApi\Api\System\StructType\MigrateFiskalyTssResponse
+     * @param \Pggns\MidocoApi\System\StructType\Unprocessed_Units $unprocessed_Units
+     * @return \Pggns\MidocoApi\System\StructType\MigrateFiskalyTssResponse
      */
-    public function setUnprocessed_Units(?\Pggns\MidocoApi\Api\System\StructType\Unprocessed_Units $unprocessed_Units = null): self
+    public function setUnprocessed_Units(?\Pggns\MidocoApi\System\StructType\Unprocessed_Units $unprocessed_Units = null): self
     {
         $this->Unprocessed_Units = $this->{'Unprocessed-Units'} = $unprocessed_Units;
         

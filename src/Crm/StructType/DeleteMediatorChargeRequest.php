@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class DeleteMediatorChargeRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteMediatorChargeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteMediatorChargeRequest
      */
     public function setCustomerId(int $customerId): self
     {
@@ -74,7 +74,7 @@ class DeleteMediatorChargeRequest extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteMediatorChargeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteMediatorChargeRequest
      */
     public function setChargeId(int $chargeId): self
     {

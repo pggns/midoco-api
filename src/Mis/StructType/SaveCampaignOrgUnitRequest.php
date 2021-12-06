@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveCampaignOrgUnitRequest extends AbstractStructBase
      * The MidocoMisCampaignOrgUnit
      * Meta information extracted from the WSDL
      * - ref: MidocoMisCampaignOrgUnit
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO $MidocoMisCampaignOrgUnit = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO $MidocoMisCampaignOrgUnit = null;
     /**
      * The campaign_unit_name
      * @var string|null
@@ -29,10 +29,10 @@ class SaveCampaignOrgUnitRequest extends AbstractStructBase
      * Constructor method for SaveCampaignOrgUnitRequest
      * @uses SaveCampaignOrgUnitRequest::setMidocoMisCampaignOrgUnit()
      * @uses SaveCampaignOrgUnitRequest::setCampaign_unit_name()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO $midocoMisCampaignOrgUnit
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO $midocoMisCampaignOrgUnit
      * @param string $campaign_unit_name
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO $midocoMisCampaignOrgUnit = null, ?string $campaign_unit_name = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO $midocoMisCampaignOrgUnit = null, ?string $campaign_unit_name = null)
     {
         $this
             ->setMidocoMisCampaignOrgUnit($midocoMisCampaignOrgUnit)
@@ -40,18 +40,18 @@ class SaveCampaignOrgUnitRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMisCampaignOrgUnit value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO|null
      */
-    public function getMidocoMisCampaignOrgUnit(): ?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO
+    public function getMidocoMisCampaignOrgUnit(): ?\Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO
     {
         return $this->MidocoMisCampaignOrgUnit;
     }
     /**
      * Set MidocoMisCampaignOrgUnit value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO $midocoMisCampaignOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignOrgUnitRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO $midocoMisCampaignOrgUnit
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignOrgUnitRequest
      */
-    public function setMidocoMisCampaignOrgUnit(?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO $midocoMisCampaignOrgUnit = null): self
+    public function setMidocoMisCampaignOrgUnit(?\Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO $midocoMisCampaignOrgUnit = null): self
     {
         $this->MidocoMisCampaignOrgUnit = $midocoMisCampaignOrgUnit;
         
@@ -68,7 +68,7 @@ class SaveCampaignOrgUnitRequest extends AbstractStructBase
     /**
      * Set campaign_unit_name value
      * @param string $campaign_unit_name
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignOrgUnitRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignOrgUnitRequest
      */
     public function setCampaign_unit_name(?string $campaign_unit_name = null): self
     {

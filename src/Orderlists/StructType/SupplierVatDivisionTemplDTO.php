@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class SupplierVatDivisionTemplDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierVatDivisionTemplDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierVatDivisionTemplDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -70,7 +70,7 @@ class SupplierVatDivisionTemplDTO extends AbstractStructBase
     /**
      * Set vatDivTemplId value
      * @param int $vatDivTemplId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierVatDivisionTemplDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierVatDivisionTemplDTO
      */
     public function setVatDivTemplId(?int $vatDivTemplId = null): self
     {

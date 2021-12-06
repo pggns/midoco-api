@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetDestinationDocumentsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDestinationDocument
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDestinationDocument[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoDestinationDocument[]
      */
     protected ?array $MidocoDestinationDocument = null;
     /**
      * Constructor method for GetDestinationDocumentsResponse
      * @uses GetDestinationDocumentsResponse::setMidocoDestinationDocument()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDestinationDocument[] $midocoDestinationDocument
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDestinationDocument[] $midocoDestinationDocument
      */
     public function __construct(?array $midocoDestinationDocument = null)
     {
@@ -34,7 +34,7 @@ class GetDestinationDocumentsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDestinationDocument value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDestinationDocument[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDestinationDocument[]
      */
     public function getMidocoDestinationDocument(): ?array
     {
@@ -55,12 +55,12 @@ class GetDestinationDocumentsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDestinationDocumentsResponseMidocoDestinationDocumentItem) {
             // validation for constraint: itemType
-            if (!$getDestinationDocumentsResponseMidocoDestinationDocumentItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDestinationDocument) {
+            if (!$getDestinationDocumentsResponseMidocoDestinationDocumentItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDestinationDocument) {
                 $invalidValues[] = is_object($getDestinationDocumentsResponseMidocoDestinationDocumentItem) ? get_class($getDestinationDocumentsResponseMidocoDestinationDocumentItem) : sprintf('%s(%s)', gettype($getDestinationDocumentsResponseMidocoDestinationDocumentItem), var_export($getDestinationDocumentsResponseMidocoDestinationDocumentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDestinationDocument property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDestinationDocument, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDestinationDocument property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDestinationDocument, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetDestinationDocumentsResponse extends AbstractStructBase
     /**
      * Set MidocoDestinationDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDestinationDocument[] $midocoDestinationDocument
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetDestinationDocumentsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDestinationDocument[] $midocoDestinationDocument
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetDestinationDocumentsResponse
      */
     public function setMidocoDestinationDocument(?array $midocoDestinationDocument = null): self
     {
@@ -85,14 +85,14 @@ class GetDestinationDocumentsResponse extends AbstractStructBase
     /**
      * Add item to MidocoDestinationDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDestinationDocument $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetDestinationDocumentsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDestinationDocument $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetDestinationDocumentsResponse
      */
-    public function addToMidocoDestinationDocument(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDestinationDocument $item): self
+    public function addToMidocoDestinationDocument(\Pggns\MidocoApi\Orderlists\StructType\MidocoDestinationDocument $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDestinationDocument) {
-            throw new InvalidArgumentException(sprintf('The MidocoDestinationDocument property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDestinationDocument, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDestinationDocument) {
+            throw new InvalidArgumentException(sprintf('The MidocoDestinationDocument property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDestinationDocument, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDestinationDocument[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class CrmPersTravPhonDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPersTravPhonDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPersTravPhonDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -126,7 +126,7 @@ class CrmPersTravPhonDTO extends AbstractStructBase
     /**
      * Set exactForename value
      * @param string $exactForename
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPersTravPhonDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPersTravPhonDTO
      */
     public function setExactForename(?string $exactForename = null): self
     {
@@ -149,7 +149,7 @@ class CrmPersTravPhonDTO extends AbstractStructBase
     /**
      * Set exactMiddleName value
      * @param string $exactMiddleName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPersTravPhonDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPersTravPhonDTO
      */
     public function setExactMiddleName(?string $exactMiddleName = null): self
     {
@@ -172,7 +172,7 @@ class CrmPersTravPhonDTO extends AbstractStructBase
     /**
      * Set exactName value
      * @param string $exactName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPersTravPhonDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPersTravPhonDTO
      */
     public function setExactName(?string $exactName = null): self
     {
@@ -195,7 +195,7 @@ class CrmPersTravPhonDTO extends AbstractStructBase
     /**
      * Set exactNamePrefix value
      * @param string $exactNamePrefix
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPersTravPhonDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPersTravPhonDTO
      */
     public function setExactNamePrefix(?string $exactNamePrefix = null): self
     {
@@ -218,7 +218,7 @@ class CrmPersTravPhonDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPersTravPhonDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPersTravPhonDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -241,7 +241,7 @@ class CrmPersTravPhonDTO extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPersTravPhonDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPersTravPhonDTO
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -264,7 +264,7 @@ class CrmPersTravPhonDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPersTravPhonDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPersTravPhonDTO
      */
     public function setName(?string $name = null): self
     {
@@ -287,7 +287,7 @@ class CrmPersTravPhonDTO extends AbstractStructBase
     /**
      * Set travellerId value
      * @param int $travellerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPersTravPhonDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPersTravPhonDTO
      */
     public function setTravellerId(?int $travellerId = null): self
     {

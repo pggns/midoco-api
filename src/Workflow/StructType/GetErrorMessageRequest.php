@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -59,7 +59,7 @@ class GetErrorMessageRequest extends AbstractStructBase
     /**
      * Set error_code value
      * @param string $error_code
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetErrorMessageRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetErrorMessageRequest
      */
     public function setError_code(?string $error_code = null): self
     {
@@ -82,7 +82,7 @@ class GetErrorMessageRequest extends AbstractStructBase
     /**
      * Set error_bundle value
      * @param string $error_bundle
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetErrorMessageRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetErrorMessageRequest
      */
     public function setError_bundle(?string $error_bundle = null): self
     {
@@ -105,7 +105,7 @@ class GetErrorMessageRequest extends AbstractStructBase
     /**
      * Set error_parameters value
      * @param string $error_parameters
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetErrorMessageRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetErrorMessageRequest
      */
     public function setError_parameters(?string $error_parameters = null): self
     {

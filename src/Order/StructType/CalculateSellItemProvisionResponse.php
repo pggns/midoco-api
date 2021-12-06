@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: SellItemProvision
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType[]
+     * @var \Pggns\MidocoApi\Order\StructType\SellItemProvisionType[]
      */
     protected ?array $SellItemProvision = null;
     /**
@@ -28,15 +28,15 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAdviceSettlementDetail
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail[]
      */
     protected ?array $MidocoAdviceSettlementDetail = null;
     /**
      * Constructor method for CalculateSellItemProvisionResponse
      * @uses CalculateSellItemProvisionResponse::setSellItemProvision()
      * @uses CalculateSellItemProvisionResponse::setMidocoAdviceSettlementDetail()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType[] $sellItemProvision
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail[] $midocoAdviceSettlementDetail
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemProvisionType[] $sellItemProvision
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail[] $midocoAdviceSettlementDetail
      */
     public function __construct(?array $sellItemProvision = null, ?array $midocoAdviceSettlementDetail = null)
     {
@@ -46,7 +46,7 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
     }
     /**
      * Get SellItemProvision value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType[]
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemProvisionType[]
      */
     public function getSellItemProvision(): ?array
     {
@@ -67,12 +67,12 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $calculateSellItemProvisionResponseSellItemProvisionItem) {
             // validation for constraint: itemType
-            if (!$calculateSellItemProvisionResponseSellItemProvisionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType) {
+            if (!$calculateSellItemProvisionResponseSellItemProvisionItem instanceof \Pggns\MidocoApi\Order\StructType\SellItemProvisionType) {
                 $invalidValues[] = is_object($calculateSellItemProvisionResponseSellItemProvisionItem) ? get_class($calculateSellItemProvisionResponseSellItemProvisionItem) : sprintf('%s(%s)', gettype($calculateSellItemProvisionResponseSellItemProvisionItem), var_export($calculateSellItemProvisionResponseSellItemProvisionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The SellItemProvision property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The SellItemProvision property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemProvisionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -81,8 +81,8 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
     /**
      * Set SellItemProvision value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType[] $sellItemProvision
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateSellItemProvisionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemProvisionType[] $sellItemProvision
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateSellItemProvisionResponse
      */
     public function setSellItemProvision(?array $sellItemProvision = null): self
     {
@@ -97,14 +97,14 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
     /**
      * Add item to SellItemProvision value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateSellItemProvisionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemProvisionType $item
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateSellItemProvisionResponse
      */
-    public function addToSellItemProvision(\Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType $item): self
+    public function addToSellItemProvision(\Pggns\MidocoApi\Order\StructType\SellItemProvisionType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType) {
-            throw new InvalidArgumentException(sprintf('The SellItemProvision property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SellItemProvisionType) {
+            throw new InvalidArgumentException(sprintf('The SellItemProvision property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemProvisionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->SellItemProvision[] = $item;
         
@@ -112,7 +112,7 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAdviceSettlementDetail value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail[]
      */
     public function getMidocoAdviceSettlementDetail(): ?array
     {
@@ -133,12 +133,12 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $calculateSellItemProvisionResponseMidocoAdviceSettlementDetailItem) {
             // validation for constraint: itemType
-            if (!$calculateSellItemProvisionResponseMidocoAdviceSettlementDetailItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail) {
+            if (!$calculateSellItemProvisionResponseMidocoAdviceSettlementDetailItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail) {
                 $invalidValues[] = is_object($calculateSellItemProvisionResponseMidocoAdviceSettlementDetailItem) ? get_class($calculateSellItemProvisionResponseMidocoAdviceSettlementDetailItem) : sprintf('%s(%s)', gettype($calculateSellItemProvisionResponseMidocoAdviceSettlementDetailItem), var_export($calculateSellItemProvisionResponseMidocoAdviceSettlementDetailItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAdviceSettlementDetail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAdviceSettlementDetail property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,8 +147,8 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
     /**
      * Set MidocoAdviceSettlementDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail[] $midocoAdviceSettlementDetail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateSellItemProvisionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail[] $midocoAdviceSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateSellItemProvisionResponse
      */
     public function setMidocoAdviceSettlementDetail(?array $midocoAdviceSettlementDetail = null): self
     {
@@ -163,14 +163,14 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
     /**
      * Add item to MidocoAdviceSettlementDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateSellItemProvisionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $item
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateSellItemProvisionResponse
      */
-    public function addToMidocoAdviceSettlementDetail(\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $item): self
+    public function addToMidocoAdviceSettlementDetail(\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail) {
-            throw new InvalidArgumentException(sprintf('The MidocoAdviceSettlementDetail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail) {
+            throw new InvalidArgumentException(sprintf('The MidocoAdviceSettlementDetail property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAdviceSettlementDetail[] = $item;
         

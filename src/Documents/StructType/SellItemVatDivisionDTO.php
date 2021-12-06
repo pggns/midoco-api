@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class SellItemVatDivisionDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemVatDivisionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemVatDivisionDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -158,7 +158,7 @@ class SellItemVatDivisionDTO extends AbstractStructBase
     /**
      * Set book value
      * @param bool $book
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemVatDivisionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemVatDivisionDTO
      */
     public function setBook(?bool $book = null): self
     {
@@ -181,7 +181,7 @@ class SellItemVatDivisionDTO extends AbstractStructBase
     /**
      * Set bookvat value
      * @param bool $bookvat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemVatDivisionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemVatDivisionDTO
      */
     public function setBookvat(?bool $bookvat = null): self
     {
@@ -204,7 +204,7 @@ class SellItemVatDivisionDTO extends AbstractStructBase
     /**
      * Set commenttext value
      * @param string $commenttext
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemVatDivisionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemVatDivisionDTO
      */
     public function setCommenttext(?string $commenttext = null): self
     {
@@ -227,7 +227,7 @@ class SellItemVatDivisionDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemVatDivisionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemVatDivisionDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -250,7 +250,7 @@ class SellItemVatDivisionDTO extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemVatDivisionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemVatDivisionDTO
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -273,7 +273,7 @@ class SellItemVatDivisionDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemVatDivisionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemVatDivisionDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -296,7 +296,7 @@ class SellItemVatDivisionDTO extends AbstractStructBase
     /**
      * Set originalVatAmount value
      * @param float $originalVatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemVatDivisionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemVatDivisionDTO
      */
     public function setOriginalVatAmount(?float $originalVatAmount = null): self
     {
@@ -319,7 +319,7 @@ class SellItemVatDivisionDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemVatDivisionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemVatDivisionDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -342,7 +342,7 @@ class SellItemVatDivisionDTO extends AbstractStructBase
     /**
      * Set ratio value
      * @param float $ratio
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemVatDivisionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemVatDivisionDTO
      */
     public function setRatio(?float $ratio = null): self
     {
@@ -365,7 +365,7 @@ class SellItemVatDivisionDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemVatDivisionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemVatDivisionDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -388,7 +388,7 @@ class SellItemVatDivisionDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemVatDivisionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemVatDivisionDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -411,7 +411,7 @@ class SellItemVatDivisionDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemVatDivisionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemVatDivisionDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

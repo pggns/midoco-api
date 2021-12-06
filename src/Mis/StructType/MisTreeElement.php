@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MisTreeElement extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisTreeElement
+     * @return \Pggns\MidocoApi\Mis\StructType\MisTreeElement
      */
     public function setName(?string $name = null): self
     {
@@ -102,7 +102,7 @@ class MisTreeElement extends AbstractStructBase
     /**
      * Set uniqueName value
      * @param string $uniqueName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisTreeElement
+     * @return \Pggns\MidocoApi\Mis\StructType\MisTreeElement
      */
     public function setUniqueName(?string $uniqueName = null): self
     {
@@ -125,7 +125,7 @@ class MisTreeElement extends AbstractStructBase
     /**
      * Set cubeName value
      * @param string $cubeName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisTreeElement
+     * @return \Pggns\MidocoApi\Mis\StructType\MisTreeElement
      */
     public function setCubeName(?string $cubeName = null): self
     {
@@ -148,7 +148,7 @@ class MisTreeElement extends AbstractStructBase
     /**
      * Set dimensionName value
      * @param string $dimensionName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisTreeElement
+     * @return \Pggns\MidocoApi\Mis\StructType\MisTreeElement
      */
     public function setDimensionName(?string $dimensionName = null): self
     {
@@ -171,7 +171,7 @@ class MisTreeElement extends AbstractStructBase
     /**
      * Set hierarchyName value
      * @param string $hierarchyName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisTreeElement
+     * @return \Pggns\MidocoApi\Mis\StructType\MisTreeElement
      */
     public function setHierarchyName(?string $hierarchyName = null): self
     {
@@ -194,7 +194,7 @@ class MisTreeElement extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisTreeElement
+     * @return \Pggns\MidocoApi\Mis\StructType\MisTreeElement
      */
     public function setType(?int $type = null): self
     {

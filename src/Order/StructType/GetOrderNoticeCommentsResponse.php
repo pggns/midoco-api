@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetOrderNoticeCommentsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderNoticeComment
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO[]
      */
     protected ?array $MidocoOrderNoticeComment = null;
     /**
      * Constructor method for GetOrderNoticeCommentsResponse
      * @uses GetOrderNoticeCommentsResponse::setMidocoOrderNoticeComment()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO[] $midocoOrderNoticeComment
+     * @param \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO[] $midocoOrderNoticeComment
      */
     public function __construct(?array $midocoOrderNoticeComment = null)
     {
@@ -34,7 +34,7 @@ class GetOrderNoticeCommentsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderNoticeComment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO[]
      */
     public function getMidocoOrderNoticeComment(): ?array
     {
@@ -55,12 +55,12 @@ class GetOrderNoticeCommentsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderNoticeCommentsResponseMidocoOrderNoticeCommentItem) {
             // validation for constraint: itemType
-            if (!$getOrderNoticeCommentsResponseMidocoOrderNoticeCommentItem instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO) {
+            if (!$getOrderNoticeCommentsResponseMidocoOrderNoticeCommentItem instanceof \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO) {
                 $invalidValues[] = is_object($getOrderNoticeCommentsResponseMidocoOrderNoticeCommentItem) ? get_class($getOrderNoticeCommentsResponseMidocoOrderNoticeCommentItem) : sprintf('%s(%s)', gettype($getOrderNoticeCommentsResponseMidocoOrderNoticeCommentItem), var_export($getOrderNoticeCommentsResponseMidocoOrderNoticeCommentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderNoticeComment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderNoticeComment property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetOrderNoticeCommentsResponse extends AbstractStructBase
     /**
      * Set MidocoOrderNoticeComment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO[] $midocoOrderNoticeComment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticeCommentsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO[] $midocoOrderNoticeComment
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticeCommentsResponse
      */
     public function setMidocoOrderNoticeComment(?array $midocoOrderNoticeComment = null): self
     {
@@ -85,14 +85,14 @@ class GetOrderNoticeCommentsResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderNoticeComment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticeCommentsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticeCommentsResponse
      */
-    public function addToMidocoOrderNoticeComment(\Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO $item): self
+    public function addToMidocoOrderNoticeComment(\Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderNoticeComment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderNoticeComment property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderNoticeComment[] = $item;
         

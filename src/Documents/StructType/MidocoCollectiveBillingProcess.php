@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoCollectiveBillingProcess extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCollectiveBillingProcess
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCollectiveBillingProcess
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -94,7 +94,7 @@ class MidocoCollectiveBillingProcess extends AbstractStructBase
     /**
      * Set isPrinting value
      * @param bool $isPrinting
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCollectiveBillingProcess
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCollectiveBillingProcess
      */
     public function setIsPrinting(?bool $isPrinting = null): self
     {
@@ -117,7 +117,7 @@ class MidocoCollectiveBillingProcess extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCollectiveBillingProcess
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCollectiveBillingProcess
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -140,7 +140,7 @@ class MidocoCollectiveBillingProcess extends AbstractStructBase
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCollectiveBillingProcess
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCollectiveBillingProcess
      */
     public function setErrorMessage(?string $errorMessage = null): self
     {
@@ -163,7 +163,7 @@ class MidocoCollectiveBillingProcess extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCollectiveBillingProcess
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCollectiveBillingProcess
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {

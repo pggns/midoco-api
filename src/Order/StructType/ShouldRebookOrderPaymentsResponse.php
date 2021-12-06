@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ShouldRebookOrderPaymentsResponse extends AbstractStructBase
     /**
      * Set shouldRebook value
      * @param bool $shouldRebook
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ShouldRebookOrderPaymentsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ShouldRebookOrderPaymentsResponse
      */
     public function setShouldRebook(?bool $shouldRebook = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class ExportChangedOrdersLogDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportChangedOrdersLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportChangedOrdersLogDTO
      */
     public function setAction(?string $action = null): self
     {
@@ -134,7 +134,7 @@ class ExportChangedOrdersLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportChangedOrdersLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportChangedOrdersLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -157,7 +157,7 @@ class ExportChangedOrdersLogDTO extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportChangedOrdersLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportChangedOrdersLogDTO
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -180,7 +180,7 @@ class ExportChangedOrdersLogDTO extends AbstractStructBase
     /**
      * Set isCatched value
      * @param bool $isCatched
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportChangedOrdersLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportChangedOrdersLogDTO
      */
     public function setIsCatched(?bool $isCatched = null): self
     {
@@ -203,7 +203,7 @@ class ExportChangedOrdersLogDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportChangedOrdersLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportChangedOrdersLogDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -226,7 +226,7 @@ class ExportChangedOrdersLogDTO extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportChangedOrdersLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportChangedOrdersLogDTO
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -249,7 +249,7 @@ class ExportChangedOrdersLogDTO extends AbstractStructBase
     /**
      * Set reason value
      * @param int $reason
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportChangedOrdersLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportChangedOrdersLogDTO
      */
     public function setReason(?int $reason = null): self
     {
@@ -272,7 +272,7 @@ class ExportChangedOrdersLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportChangedOrdersLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportChangedOrdersLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -295,7 +295,7 @@ class ExportChangedOrdersLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportChangedOrdersLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportChangedOrdersLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -318,7 +318,7 @@ class ExportChangedOrdersLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportChangedOrdersLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportChangedOrdersLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

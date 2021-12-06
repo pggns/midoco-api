@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -42,17 +42,17 @@ class PrepareMidocoSettlementRequest extends AbstractStructBase
     }
     /**
      * Set month value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\Month::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\Month::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\Month::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\Month::getValidValues()
      * @throws InvalidArgumentException
      * @param string $month
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMidocoSettlementRequest
      */
     public function setMonth(string $month): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\Month::valueIsValid($month)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\Month', is_array($month) ? implode(', ', $month) : var_export($month, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\Month::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\Month::valueIsValid($month)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\Month', is_array($month) ? implode(', ', $month) : var_export($month, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\Month::getValidValues())), __LINE__);
         }
         $this->month = $month;
         

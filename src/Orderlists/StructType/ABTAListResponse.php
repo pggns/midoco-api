@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class ABTAListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType[]
      */
     protected ?array $MidocoABTAList = null;
     /**
@@ -30,19 +30,19 @@ class ABTAListResponse extends AbstractStructBase
     protected ?int $noOfResults = null;
     /**
      * The MidocoABTAListTypeSums
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType $MidocoABTAListTypeSums = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType $MidocoABTAListTypeSums = null;
     /**
      * Constructor method for ABTAListResponse
      * @uses ABTAListResponse::setMidocoABTAList()
      * @uses ABTAListResponse::setNoOfResults()
      * @uses ABTAListResponse::setMidocoABTAListTypeSums()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType[] $midocoABTAList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType[] $midocoABTAList
      * @param int $noOfResults
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType $midocoABTAListTypeSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType $midocoABTAListTypeSums
      */
-    public function __construct(?array $midocoABTAList = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType $midocoABTAListTypeSums = null)
+    public function __construct(?array $midocoABTAList = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType $midocoABTAListTypeSums = null)
     {
         $this
             ->setMidocoABTAList($midocoABTAList)
@@ -51,7 +51,7 @@ class ABTAListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoABTAList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType[]
      */
     public function getMidocoABTAList(): ?array
     {
@@ -72,12 +72,12 @@ class ABTAListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $aBTAListResponseMidocoABTAListItem) {
             // validation for constraint: itemType
-            if (!$aBTAListResponseMidocoABTAListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType) {
+            if (!$aBTAListResponseMidocoABTAListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType) {
                 $invalidValues[] = is_object($aBTAListResponseMidocoABTAListItem) ? get_class($aBTAListResponseMidocoABTAListItem) : sprintf('%s(%s)', gettype($aBTAListResponseMidocoABTAListItem), var_export($aBTAListResponseMidocoABTAListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoABTAList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoABTAList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -86,8 +86,8 @@ class ABTAListResponse extends AbstractStructBase
     /**
      * Set MidocoABTAList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType[] $midocoABTAList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ABTAListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType[] $midocoABTAList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ABTAListResponse
      */
     public function setMidocoABTAList(?array $midocoABTAList = null): self
     {
@@ -102,14 +102,14 @@ class ABTAListResponse extends AbstractStructBase
     /**
      * Add item to MidocoABTAList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ABTAListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ABTAListResponse
      */
-    public function addToMidocoABTAList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType $item): self
+    public function addToMidocoABTAList(\Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType) {
-            throw new InvalidArgumentException(sprintf('The MidocoABTAList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType) {
+            throw new InvalidArgumentException(sprintf('The MidocoABTAList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoABTAList[] = $item;
         
@@ -126,7 +126,7 @@ class ABTAListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ABTAListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ABTAListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {
@@ -140,18 +140,18 @@ class ABTAListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoABTAListTypeSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType|null
      */
-    public function getMidocoABTAListTypeSums(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType
+    public function getMidocoABTAListTypeSums(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType
     {
         return $this->MidocoABTAListTypeSums;
     }
     /**
      * Set MidocoABTAListTypeSums value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType $midocoABTAListTypeSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ABTAListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType $midocoABTAListTypeSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ABTAListResponse
      */
-    public function setMidocoABTAListTypeSums(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType $midocoABTAListTypeSums = null): self
+    public function setMidocoABTAListTypeSums(?\Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType $midocoABTAListTypeSums = null): self
     {
         $this->MidocoABTAListTypeSums = $midocoABTAListTypeSums;
         

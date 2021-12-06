@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class AppModuleDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AppModuleDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AppModuleDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -78,7 +78,7 @@ class AppModuleDTO extends AbstractStructBase
     /**
      * Set isDefault value
      * @param bool $isDefault
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AppModuleDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AppModuleDTO
      */
     public function setIsDefault(?bool $isDefault = null): self
     {
@@ -101,7 +101,7 @@ class AppModuleDTO extends AbstractStructBase
     /**
      * Set modulId value
      * @param string $modulId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AppModuleDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AppModuleDTO
      */
     public function setModulId(?string $modulId = null): self
     {

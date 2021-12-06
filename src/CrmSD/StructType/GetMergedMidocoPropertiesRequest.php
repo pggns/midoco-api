@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetMergedMidocoPropertiesRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMergedMidocoPropertiesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMergedMidocoPropertiesRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +70,7 @@ class GetMergedMidocoPropertiesRequest extends AbstractStructBase
     /**
      * Set className value
      * @param string $className
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMergedMidocoPropertiesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMergedMidocoPropertiesRequest
      */
     public function setClassName(?string $className = null): self
     {

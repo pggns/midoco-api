@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class OrdCriteriaTypeDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrdCriteriaTypeDTO
      */
     public function setCategoryId(?int $categoryId = null): self
     {
@@ -126,7 +126,7 @@ class OrdCriteriaTypeDTO extends AbstractStructBase
     /**
      * Set editValue value
      * @param bool $editValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrdCriteriaTypeDTO
      */
     public function setEditValue(?bool $editValue = null): self
     {
@@ -149,7 +149,7 @@ class OrdCriteriaTypeDTO extends AbstractStructBase
     /**
      * Set forceUpshift value
      * @param bool $forceUpshift
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrdCriteriaTypeDTO
      */
     public function setForceUpshift(?bool $forceUpshift = null): self
     {
@@ -172,7 +172,7 @@ class OrdCriteriaTypeDTO extends AbstractStructBase
     /**
      * Set guiCategoryPosition value
      * @param int $guiCategoryPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrdCriteriaTypeDTO
      */
     public function setGuiCategoryPosition(?int $guiCategoryPosition = null): self
     {
@@ -195,7 +195,7 @@ class OrdCriteriaTypeDTO extends AbstractStructBase
     /**
      * Set isPasswordType value
      * @param bool $isPasswordType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrdCriteriaTypeDTO
      */
     public function setIsPasswordType(?bool $isPasswordType = null): self
     {
@@ -218,7 +218,7 @@ class OrdCriteriaTypeDTO extends AbstractStructBase
     /**
      * Set required value
      * @param bool $required
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrdCriteriaTypeDTO
      */
     public function setRequired(?bool $required = null): self
     {
@@ -241,7 +241,7 @@ class OrdCriteriaTypeDTO extends AbstractStructBase
     /**
      * Set requiresUpdateRight value
      * @param bool $requiresUpdateRight
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrdCriteriaTypeDTO
      */
     public function setRequiresUpdateRight(?bool $requiresUpdateRight = null): self
     {
@@ -264,7 +264,7 @@ class OrdCriteriaTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrdCriteriaTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -287,7 +287,7 @@ class OrdCriteriaTypeDTO extends AbstractStructBase
     /**
      * Set valueTakeover value
      * @param bool $valueTakeover
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrdCriteriaTypeDTO
      */
     public function setValueTakeover(?bool $valueTakeover = null): self
     {

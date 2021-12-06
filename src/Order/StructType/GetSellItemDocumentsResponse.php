@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSellItemDocumentsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellItemDocument
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO[]
      */
     protected ?array $MidocoSellItemDocument = null;
     /**
      * Constructor method for GetSellItemDocumentsResponse
      * @uses GetSellItemDocumentsResponse::setMidocoSellItemDocument()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO[] $midocoSellItemDocument
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO[] $midocoSellItemDocument
      */
     public function __construct(?array $midocoSellItemDocument = null)
     {
@@ -34,7 +34,7 @@ class GetSellItemDocumentsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSellItemDocument value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO[]
      */
     public function getMidocoSellItemDocument(): ?array
     {
@@ -55,12 +55,12 @@ class GetSellItemDocumentsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSellItemDocumentsResponseMidocoSellItemDocumentItem) {
             // validation for constraint: itemType
-            if (!$getSellItemDocumentsResponseMidocoSellItemDocumentItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO) {
+            if (!$getSellItemDocumentsResponseMidocoSellItemDocumentItem instanceof \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO) {
                 $invalidValues[] = is_object($getSellItemDocumentsResponseMidocoSellItemDocumentItem) ? get_class($getSellItemDocumentsResponseMidocoSellItemDocumentItem) : sprintf('%s(%s)', gettype($getSellItemDocumentsResponseMidocoSellItemDocumentItem), var_export($getSellItemDocumentsResponseMidocoSellItemDocumentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellItemDocument property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellItemDocument property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSellItemDocumentsResponse extends AbstractStructBase
     /**
      * Set MidocoSellItemDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO[] $midocoSellItemDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemDocumentsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO[] $midocoSellItemDocument
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemDocumentsResponse
      */
     public function setMidocoSellItemDocument(?array $midocoSellItemDocument = null): self
     {
@@ -85,14 +85,14 @@ class GetSellItemDocumentsResponse extends AbstractStructBase
     /**
      * Add item to MidocoSellItemDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemDocumentsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemDocumentsResponse
      */
-    public function addToMidocoSellItemDocument(\Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO $item): self
+    public function addToMidocoSellItemDocument(\Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellItemDocument property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellItemDocument property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellItemDocument[] = $item;
         

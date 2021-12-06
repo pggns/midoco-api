@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class SepaMandateDocDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SepaMandateDocDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SepaMandateDocDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -94,7 +94,7 @@ class SepaMandateDocDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SepaMandateDocDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SepaMandateDocDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -117,7 +117,7 @@ class SepaMandateDocDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SepaMandateDocDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SepaMandateDocDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -140,7 +140,7 @@ class SepaMandateDocDTO extends AbstractStructBase
     /**
      * Set mandateDocId value
      * @param int $mandateDocId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SepaMandateDocDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SepaMandateDocDTO
      */
     public function setMandateDocId(?int $mandateDocId = null): self
     {
@@ -163,7 +163,7 @@ class SepaMandateDocDTO extends AbstractStructBase
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SepaMandateDocDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SepaMandateDocDTO
      */
     public function setMandateId(?int $mandateId = null): self
     {

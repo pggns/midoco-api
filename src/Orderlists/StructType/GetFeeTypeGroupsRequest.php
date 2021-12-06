@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetFeeTypeGroupsRequest extends AbstractStructBase
     /**
      * Set feeType value
      * @param string $feeType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetFeeTypeGroupsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetFeeTypeGroupsRequest
      */
     public function setFeeType(?string $feeType = null): self
     {

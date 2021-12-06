@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteVatDivisionRequest extends AbstractStructBase
      * The MidocoVatDivision
      * Meta information extracted from the WSDL
      * - ref: MidocoVatDivision
-     * @var \Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\VatDivisionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO $MidocoVatDivision = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\VatDivisionDTO $MidocoVatDivision = null;
     /**
      * Constructor method for DeleteVatDivisionRequest
      * @uses DeleteVatDivisionRequest::setMidocoVatDivision()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO $midocoVatDivision
+     * @param \Pggns\MidocoApi\Order\StructType\VatDivisionDTO $midocoVatDivision
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO $midocoVatDivision = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\VatDivisionDTO $midocoVatDivision = null)
     {
         $this
             ->setMidocoVatDivision($midocoVatDivision);
     }
     /**
      * Get MidocoVatDivision value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\VatDivisionDTO|null
      */
-    public function getMidocoVatDivision(): ?\Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO
+    public function getMidocoVatDivision(): ?\Pggns\MidocoApi\Order\StructType\VatDivisionDTO
     {
         return $this->MidocoVatDivision;
     }
     /**
      * Set MidocoVatDivision value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO $midocoVatDivision
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteVatDivisionRequest
+     * @param \Pggns\MidocoApi\Order\StructType\VatDivisionDTO $midocoVatDivision
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteVatDivisionRequest
      */
-    public function setMidocoVatDivision(?\Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO $midocoVatDivision = null): self
+    public function setMidocoVatDivision(?\Pggns\MidocoApi\Order\StructType\VatDivisionDTO $midocoVatDivision = null): self
     {
         $this->MidocoVatDivision = $midocoVatDivision;
         

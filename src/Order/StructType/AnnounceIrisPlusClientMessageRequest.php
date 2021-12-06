@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class AnnounceIrisPlusClientMessageRequest extends AbstractStructBase
     /**
      * Set IrisPlusClientMessage value
      * @param string $irisPlusClientMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceIrisPlusClientMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceIrisPlusClientMessageRequest
      */
     public function setIrisPlusClientMessage(?string $irisPlusClientMessage = null): self
     {
@@ -72,7 +72,7 @@ class AnnounceIrisPlusClientMessageRequest extends AbstractStructBase
     /**
      * Set encoding value
      * @param string $encoding
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceIrisPlusClientMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceIrisPlusClientMessageRequest
      */
     public function setEncoding(?string $encoding = 'UTF-8'): self
     {

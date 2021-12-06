@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set endValue value
      * @param int $endValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SequencePoolDTO
      */
     public function setEndValue(?int $endValue = null): self
     {
@@ -110,7 +110,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set increment value
      * @param int $increment
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SequencePoolDTO
      */
     public function setIncrement(?int $increment = null): self
     {
@@ -133,7 +133,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set sequenceName value
      * @param string $sequenceName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SequencePoolDTO
      */
     public function setSequenceName(?string $sequenceName = null): self
     {
@@ -156,7 +156,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set sequencePoolId value
      * @param int $sequencePoolId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SequencePoolDTO
      */
     public function setSequencePoolId(?int $sequencePoolId = null): self
     {
@@ -179,7 +179,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set startValue value
      * @param int $startValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SequencePoolDTO
      */
     public function setStartValue(?int $startValue = null): self
     {
@@ -202,7 +202,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SequencePoolDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -225,7 +225,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set value value
      * @param int $value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SequencePoolDTO
      */
     public function setValue(?int $value = null): self
     {

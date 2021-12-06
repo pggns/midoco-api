@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class ComplaintDTO extends AbstractStructBase
     /**
      * Set complaintId value
      * @param int $complaintId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ComplaintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ComplaintDTO
      */
     public function setComplaintId(?int $complaintId = null): self
     {
@@ -126,7 +126,7 @@ class ComplaintDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ComplaintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ComplaintDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -149,7 +149,7 @@ class ComplaintDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ComplaintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ComplaintDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -172,7 +172,7 @@ class ComplaintDTO extends AbstractStructBase
     /**
      * Set forwardDate value
      * @param string $forwardDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ComplaintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ComplaintDTO
      */
     public function setForwardDate(?string $forwardDate = null): self
     {
@@ -195,7 +195,7 @@ class ComplaintDTO extends AbstractStructBase
     /**
      * Set handled value
      * @param bool $handled
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ComplaintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ComplaintDTO
      */
     public function setHandled(?bool $handled = null): self
     {
@@ -218,7 +218,7 @@ class ComplaintDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ComplaintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ComplaintDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -241,7 +241,7 @@ class ComplaintDTO extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ComplaintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ComplaintDTO
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -264,7 +264,7 @@ class ComplaintDTO extends AbstractStructBase
     /**
      * Set receiveDate value
      * @param string $receiveDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ComplaintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ComplaintDTO
      */
     public function setReceiveDate(?string $receiveDate = null): self
     {
@@ -287,7 +287,7 @@ class ComplaintDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ComplaintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ComplaintDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

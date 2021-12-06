@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class DeleteCurrencyRequest extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DeleteCurrencyRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DeleteCurrencyRequest
      */
     public function setCurrency(string $currency): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoDbiDefs extends DbiDefDTO
     /**
      * Set creationUserName value
      * @param string $creationUserName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefs
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefs
      */
     public function setCreationUserName(?string $creationUserName = null): self
     {
@@ -70,7 +70,7 @@ class MidocoDbiDefs extends DbiDefDTO
     /**
      * Set modifyUserName value
      * @param string $modifyUserName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefs
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefs
      */
     public function setModifyUserName(?string $modifyUserName = null): self
     {

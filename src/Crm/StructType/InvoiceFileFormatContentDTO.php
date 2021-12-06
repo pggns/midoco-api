@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class InvoiceFileFormatContentDTO extends AbstractStructBase
     /**
      * Set alternativeHeaderName value
      * @param string $alternativeHeaderName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\InvoiceFileFormatContentDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\InvoiceFileFormatContentDTO
      */
     public function setAlternativeHeaderName(?string $alternativeHeaderName = null): self
     {
@@ -86,7 +86,7 @@ class InvoiceFileFormatContentDTO extends AbstractStructBase
     /**
      * Set columnName value
      * @param string $columnName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\InvoiceFileFormatContentDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\InvoiceFileFormatContentDTO
      */
     public function setColumnName(?string $columnName = null): self
     {
@@ -109,7 +109,7 @@ class InvoiceFileFormatContentDTO extends AbstractStructBase
     /**
      * Set formatId value
      * @param string $formatId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\InvoiceFileFormatContentDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\InvoiceFileFormatContentDTO
      */
     public function setFormatId(?string $formatId = null): self
     {
@@ -132,7 +132,7 @@ class InvoiceFileFormatContentDTO extends AbstractStructBase
     /**
      * Set positionNoExport value
      * @param int $positionNoExport
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\InvoiceFileFormatContentDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\InvoiceFileFormatContentDTO
      */
     public function setPositionNoExport(?int $positionNoExport = null): self
     {

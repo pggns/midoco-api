@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CatalogKeyDimensionDTO extends AbstractStructBase
     /**
      * Set catalogKey value
      * @param string $catalogKey
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CatalogKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CatalogKeyDimensionDTO
      */
     public function setCatalogKey(?string $catalogKey = null): self
     {
@@ -86,7 +86,7 @@ class CatalogKeyDimensionDTO extends AbstractStructBase
     /**
      * Set catalogKeyDescription value
      * @param string $catalogKeyDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CatalogKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CatalogKeyDimensionDTO
      */
     public function setCatalogKeyDescription(?string $catalogKeyDescription = null): self
     {
@@ -109,7 +109,7 @@ class CatalogKeyDimensionDTO extends AbstractStructBase
     /**
      * Set catalogKeyId value
      * @param int $catalogKeyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CatalogKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CatalogKeyDimensionDTO
      */
     public function setCatalogKeyId(?int $catalogKeyId = null): self
     {
@@ -132,7 +132,7 @@ class CatalogKeyDimensionDTO extends AbstractStructBase
     /**
      * Set catalogKeyLocDescr value
      * @param string $catalogKeyLocDescr
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CatalogKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CatalogKeyDimensionDTO
      */
     public function setCatalogKeyLocDescr(?string $catalogKeyLocDescr = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CheckCreditLimitResponse extends AbstractStructBase
     /**
      * Set definedLimit value
      * @param float $definedLimit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckCreditLimitResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckCreditLimitResponse
      */
     public function setDefinedLimit(?float $definedLimit = null): self
     {
@@ -78,7 +78,7 @@ class CheckCreditLimitResponse extends AbstractStructBase
     /**
      * Set unpaidAmount value
      * @param float $unpaidAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckCreditLimitResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckCreditLimitResponse
      */
     public function setUnpaidAmount(?float $unpaidAmount = null): self
     {
@@ -101,7 +101,7 @@ class CheckCreditLimitResponse extends AbstractStructBase
     /**
      * Set isLimitReached value
      * @param bool $isLimitReached
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckCreditLimitResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckCreditLimitResponse
      */
     public function setIsLimitReached(?bool $isLimitReached = null): self
     {

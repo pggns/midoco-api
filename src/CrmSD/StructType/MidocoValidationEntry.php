@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoValidationEntry extends MfLocalDTO
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoValidationEntry
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoValidationEntry
      */
     public function setPosition(?int $position = null): self
     {

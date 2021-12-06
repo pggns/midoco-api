@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class VatReconciliationResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType[]
      */
     protected ?array $MidocoVatReconciliation = null;
     /**
@@ -26,7 +26,7 @@ class VatReconciliationResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType[]
      */
     protected ?array $MidocoVatReconciliationSums = null;
     /**
@@ -41,8 +41,8 @@ class VatReconciliationResponse extends AbstractStructBase
      * @uses VatReconciliationResponse::setMidocoVatReconciliation()
      * @uses VatReconciliationResponse::setMidocoVatReconciliationSums()
      * @uses VatReconciliationResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType[] $midocoVatReconciliation
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType[] $midocoVatReconciliationSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType[] $midocoVatReconciliation
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType[] $midocoVatReconciliationSums
      * @param int $noOfResults
      */
     public function __construct(?array $midocoVatReconciliation = null, ?array $midocoVatReconciliationSums = null, ?int $noOfResults = null)
@@ -54,7 +54,7 @@ class VatReconciliationResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVatReconciliation value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType[]
      */
     public function getMidocoVatReconciliation(): ?array
     {
@@ -75,12 +75,12 @@ class VatReconciliationResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $vatReconciliationResponseMidocoVatReconciliationItem) {
             // validation for constraint: itemType
-            if (!$vatReconciliationResponseMidocoVatReconciliationItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType) {
+            if (!$vatReconciliationResponseMidocoVatReconciliationItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType) {
                 $invalidValues[] = is_object($vatReconciliationResponseMidocoVatReconciliationItem) ? get_class($vatReconciliationResponseMidocoVatReconciliationItem) : sprintf('%s(%s)', gettype($vatReconciliationResponseMidocoVatReconciliationItem), var_export($vatReconciliationResponseMidocoVatReconciliationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatReconciliation property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatReconciliation property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -89,8 +89,8 @@ class VatReconciliationResponse extends AbstractStructBase
     /**
      * Set MidocoVatReconciliation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType[] $midocoVatReconciliation
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatReconciliationResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType[] $midocoVatReconciliation
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatReconciliationResponse
      */
     public function setMidocoVatReconciliation(?array $midocoVatReconciliation = null): self
     {
@@ -105,14 +105,14 @@ class VatReconciliationResponse extends AbstractStructBase
     /**
      * Add item to MidocoVatReconciliation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatReconciliationResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatReconciliationResponse
      */
-    public function addToMidocoVatReconciliation(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType $item): self
+    public function addToMidocoVatReconciliation(\Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatReconciliation property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatReconciliation property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatReconciliation[] = $item;
         
@@ -120,7 +120,7 @@ class VatReconciliationResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVatReconciliationSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType[]
      */
     public function getMidocoVatReconciliationSums(): ?array
     {
@@ -141,12 +141,12 @@ class VatReconciliationResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $vatReconciliationResponseMidocoVatReconciliationSumsItem) {
             // validation for constraint: itemType
-            if (!$vatReconciliationResponseMidocoVatReconciliationSumsItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType) {
+            if (!$vatReconciliationResponseMidocoVatReconciliationSumsItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType) {
                 $invalidValues[] = is_object($vatReconciliationResponseMidocoVatReconciliationSumsItem) ? get_class($vatReconciliationResponseMidocoVatReconciliationSumsItem) : sprintf('%s(%s)', gettype($vatReconciliationResponseMidocoVatReconciliationSumsItem), var_export($vatReconciliationResponseMidocoVatReconciliationSumsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatReconciliationSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatReconciliationSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -155,8 +155,8 @@ class VatReconciliationResponse extends AbstractStructBase
     /**
      * Set MidocoVatReconciliationSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType[] $midocoVatReconciliationSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatReconciliationResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType[] $midocoVatReconciliationSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatReconciliationResponse
      */
     public function setMidocoVatReconciliationSums(?array $midocoVatReconciliationSums = null): self
     {
@@ -171,14 +171,14 @@ class VatReconciliationResponse extends AbstractStructBase
     /**
      * Add item to MidocoVatReconciliationSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatReconciliationResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatReconciliationResponse
      */
-    public function addToMidocoVatReconciliationSums(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType $item): self
+    public function addToMidocoVatReconciliationSums(\Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatReconciliationSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatReconciliationSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatReconciliationSums[] = $item;
         
@@ -195,7 +195,7 @@ class VatReconciliationResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatReconciliationResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatReconciliationResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveOrgunitSupplierAgencyResponse extends AbstractStructBase
      * The MidocoOrgunitSupplierAgency
      * Meta information extracted from the WSDL
      * - ref: MidocoOrgunitSupplierAgency
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitSupplierAgencyDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\OrgunitSupplierAgencyDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitSupplierAgencyDTO $MidocoOrgunitSupplierAgency = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\OrgunitSupplierAgencyDTO $MidocoOrgunitSupplierAgency = null;
     /**
      * Constructor method for SaveOrgunitSupplierAgencyResponse
      * @uses SaveOrgunitSupplierAgencyResponse::setMidocoOrgunitSupplierAgency()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency
+     * @param \Pggns\MidocoApi\OrderSD\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency = null)
     {
         $this
             ->setMidocoOrgunitSupplierAgency($midocoOrgunitSupplierAgency);
     }
     /**
      * Get MidocoOrgunitSupplierAgency value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitSupplierAgencyDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\OrgunitSupplierAgencyDTO|null
      */
-    public function getMidocoOrgunitSupplierAgency(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitSupplierAgencyDTO
+    public function getMidocoOrgunitSupplierAgency(): ?\Pggns\MidocoApi\OrderSD\StructType\OrgunitSupplierAgencyDTO
     {
         return $this->MidocoOrgunitSupplierAgency;
     }
     /**
      * Set MidocoOrgunitSupplierAgency value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveOrgunitSupplierAgencyResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveOrgunitSupplierAgencyResponse
      */
-    public function setMidocoOrgunitSupplierAgency(?\Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency = null): self
+    public function setMidocoOrgunitSupplierAgency(?\Pggns\MidocoApi\OrderSD\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency = null): self
     {
         $this->MidocoOrgunitSupplierAgency = $midocoOrgunitSupplierAgency;
         

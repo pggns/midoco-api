@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class GetAddressResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmAddress
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $MidocoCrmAddress = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $MidocoCrmAddress = null;
     /**
      * Constructor method for GetAddressResponse
      * @uses GetAddressResponse::setMidocoCrmAddress()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null)
     {
         $this
             ->setMidocoCrmAddress($midocoCrmAddress);
     }
     /**
      * Get MidocoCrmAddress value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress|null
      */
-    public function getMidocoCrmAddress(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress
+    public function getMidocoCrmAddress(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress
     {
         return $this->MidocoCrmAddress;
     }
     /**
      * Set MidocoCrmAddress value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAddressResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAddressResponse
      */
-    public function setMidocoCrmAddress(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null): self
+    public function setMidocoCrmAddress(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null): self
     {
         $this->MidocoCrmAddress = $midocoCrmAddress;
         

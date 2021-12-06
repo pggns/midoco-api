@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetSftpCredentialListRequest extends AbstractStructBase
     /**
      * Set sftpCredentialName value
      * @param string $sftpCredentialName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetSftpCredentialListRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetSftpCredentialListRequest
      */
     public function setSftpCredentialName(?string $sftpCredentialName = null): self
     {
@@ -70,7 +70,7 @@ class GetSftpCredentialListRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetSftpCredentialListRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetSftpCredentialListRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

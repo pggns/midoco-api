@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class SubjectDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -150,7 +150,7 @@ class SubjectDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -173,7 +173,7 @@ class SubjectDTO extends AbstractStructBase
     /**
      * Set destroyed value
      * @param bool $destroyed
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectDTO
      */
     public function setDestroyed(?bool $destroyed = null): self
     {
@@ -196,7 +196,7 @@ class SubjectDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectDTO
      */
     public function setId(?int $id = null): self
     {
@@ -219,7 +219,7 @@ class SubjectDTO extends AbstractStructBase
     /**
      * Set isSpecialCustomer value
      * @param bool $isSpecialCustomer
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectDTO
      */
     public function setIsSpecialCustomer(?bool $isSpecialCustomer = null): self
     {
@@ -242,7 +242,7 @@ class SubjectDTO extends AbstractStructBase
     /**
      * Set process value
      * @param string $process
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectDTO
      */
     public function setProcess(?string $process = null): self
     {
@@ -265,7 +265,7 @@ class SubjectDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectDTO
      */
     public function setType(?string $type = null): self
     {
@@ -288,7 +288,7 @@ class SubjectDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -311,7 +311,7 @@ class SubjectDTO extends AbstractStructBase
     /**
      * Set uservalue value
      * @param string $uservalue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectDTO
      */
     public function setUservalue(?string $uservalue = null): self
     {
@@ -334,7 +334,7 @@ class SubjectDTO extends AbstractStructBase
     /**
      * Set version value
      * @param int $version
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectDTO
      */
     public function setVersion(?int $version = null): self
     {
@@ -357,7 +357,7 @@ class SubjectDTO extends AbstractStructBase
     /**
      * Set workingTimestamp value
      * @param string $workingTimestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectDTO
      */
     public function setWorkingTimestamp(?string $workingTimestamp = null): self
     {
@@ -380,7 +380,7 @@ class SubjectDTO extends AbstractStructBase
     /**
      * Set workingUser value
      * @param int $workingUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectDTO
      */
     public function setWorkingUser(?int $workingUser = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoContactHistory extends ContactHistoryDTO
     /**
      * Set userLogin value
      * @param string $userLogin
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactHistory
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoContactHistory
      */
     public function setUserLogin(?string $userLogin = null): self
     {

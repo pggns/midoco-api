@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class CheckAccess_TravelDataForCustomerResponse extends AbstractStructBase
     /**
      * Set access value
      * @param bool $access
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckAccess_TravelDataForCustomerResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckAccess_TravelDataForCustomerResponse
      */
     public function setAccess(?bool $access = null): self
     {
@@ -70,7 +70,7 @@ class CheckAccess_TravelDataForCustomerResponse extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckAccess_TravelDataForCustomerResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckAccess_TravelDataForCustomerResponse
      */
     public function setMessage(?string $message = null): self
     {

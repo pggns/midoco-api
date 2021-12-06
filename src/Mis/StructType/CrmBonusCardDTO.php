@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class CrmBonusCardDTO extends AbstractStructBase
     /**
      * Set cardNo value
      * @param string $cardNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmBonusCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmBonusCardDTO
      */
     public function setCardNo(?string $cardNo = null): self
     {
@@ -110,7 +110,7 @@ class CrmBonusCardDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmBonusCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmBonusCardDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -133,7 +133,7 @@ class CrmBonusCardDTO extends AbstractStructBase
     /**
      * Set issuer value
      * @param string $issuer
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmBonusCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmBonusCardDTO
      */
     public function setIssuer(?string $issuer = null): self
     {
@@ -156,7 +156,7 @@ class CrmBonusCardDTO extends AbstractStructBase
     /**
      * Set owner value
      * @param string $owner
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmBonusCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmBonusCardDTO
      */
     public function setOwner(?string $owner = null): self
     {
@@ -179,7 +179,7 @@ class CrmBonusCardDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmBonusCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmBonusCardDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -202,7 +202,7 @@ class CrmBonusCardDTO extends AbstractStructBase
     /**
      * Set validMonth value
      * @param int $validMonth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmBonusCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmBonusCardDTO
      */
     public function setValidMonth(?int $validMonth = null): self
     {
@@ -225,7 +225,7 @@ class CrmBonusCardDTO extends AbstractStructBase
     /**
      * Set validYear value
      * @param int $validYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmBonusCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmBonusCardDTO
      */
     public function setValidYear(?int $validYear = null): self
     {

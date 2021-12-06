@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class StatusDimensionDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\StatusDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\StatusDimensionDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -70,7 +70,7 @@ class StatusDimensionDTO extends AbstractStructBase
     /**
      * Set statusId value
      * @param int $statusId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\StatusDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\StatusDimensionDTO
      */
     public function setStatusId(?int $statusId = null): self
     {

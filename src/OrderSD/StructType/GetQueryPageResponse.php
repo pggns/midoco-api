@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetQueryPageResponse extends AbstractStructBase
      * The MidocoQueryPage
      * Meta information extracted from the WSDL
      * - ref: MidocoQueryPage
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryPage|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryPage|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryPage $MidocoQueryPage = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoQueryPage $MidocoQueryPage = null;
     /**
      * Constructor method for GetQueryPageResponse
      * @uses GetQueryPageResponse::setMidocoQueryPage()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryPage $midocoQueryPage
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryPage $midocoQueryPage
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryPage $midocoQueryPage = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoQueryPage $midocoQueryPage = null)
     {
         $this
             ->setMidocoQueryPage($midocoQueryPage);
     }
     /**
      * Get MidocoQueryPage value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryPage|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryPage|null
      */
-    public function getMidocoQueryPage(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryPage
+    public function getMidocoQueryPage(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoQueryPage
     {
         return $this->MidocoQueryPage;
     }
     /**
      * Set MidocoQueryPage value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryPage $midocoQueryPage
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetQueryPageResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryPage $midocoQueryPage
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetQueryPageResponse
      */
-    public function setMidocoQueryPage(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryPage $midocoQueryPage = null): self
+    public function setMidocoQueryPage(?\Pggns\MidocoApi\OrderSD\StructType\MidocoQueryPage $midocoQueryPage = null): self
     {
         $this->MidocoQueryPage = $midocoQueryPage;
         

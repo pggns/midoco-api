@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class VoucherPaymentDTO extends AbstractStructBase
     /**
      * Set documentNo value
      * @param int $documentNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VoucherPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VoucherPaymentDTO
      */
     public function setDocumentNo(?int $documentNo = null): self
     {
@@ -118,7 +118,7 @@ class VoucherPaymentDTO extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VoucherPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VoucherPaymentDTO
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -141,7 +141,7 @@ class VoucherPaymentDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VoucherPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VoucherPaymentDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -164,7 +164,7 @@ class VoucherPaymentDTO extends AbstractStructBase
     /**
      * Set redeemAmount value
      * @param float $redeemAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VoucherPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VoucherPaymentDTO
      */
     public function setRedeemAmount(?float $redeemAmount = null): self
     {
@@ -187,7 +187,7 @@ class VoucherPaymentDTO extends AbstractStructBase
     /**
      * Set redeemDate value
      * @param string $redeemDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VoucherPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VoucherPaymentDTO
      */
     public function setRedeemDate(?string $redeemDate = null): self
     {
@@ -210,7 +210,7 @@ class VoucherPaymentDTO extends AbstractStructBase
     /**
      * Set redeemUser value
      * @param int $redeemUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VoucherPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VoucherPaymentDTO
      */
     public function setRedeemUser(?int $redeemUser = null): self
     {
@@ -233,7 +233,7 @@ class VoucherPaymentDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VoucherPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VoucherPaymentDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -256,7 +256,7 @@ class VoucherPaymentDTO extends AbstractStructBase
     /**
      * Set voucherId value
      * @param int $voucherId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VoucherPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VoucherPaymentDTO
      */
     public function setVoucherId(?int $voucherId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveRemarkSupplierRequest extends AbstractStructBase
      * The MidocoRemarkSupplier
      * Meta information extracted from the WSDL
      * - ref: MidocoRemarkSupplier
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkSupplier|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkSupplier|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkSupplier $MidocoRemarkSupplier = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkSupplier $MidocoRemarkSupplier = null;
     /**
      * The lastSupplier
      * @var string|null
@@ -29,10 +29,10 @@ class SaveRemarkSupplierRequest extends AbstractStructBase
      * Constructor method for SaveRemarkSupplierRequest
      * @uses SaveRemarkSupplierRequest::setMidocoRemarkSupplier()
      * @uses SaveRemarkSupplierRequest::setLastSupplier()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkSupplier $midocoRemarkSupplier
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkSupplier $midocoRemarkSupplier
      * @param string $lastSupplier
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkSupplier $midocoRemarkSupplier = null, ?string $lastSupplier = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkSupplier $midocoRemarkSupplier = null, ?string $lastSupplier = null)
     {
         $this
             ->setMidocoRemarkSupplier($midocoRemarkSupplier)
@@ -40,18 +40,18 @@ class SaveRemarkSupplierRequest extends AbstractStructBase
     }
     /**
      * Get MidocoRemarkSupplier value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkSupplier|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkSupplier|null
      */
-    public function getMidocoRemarkSupplier(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkSupplier
+    public function getMidocoRemarkSupplier(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkSupplier
     {
         return $this->MidocoRemarkSupplier;
     }
     /**
      * Set MidocoRemarkSupplier value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkSupplier $midocoRemarkSupplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveRemarkSupplierRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkSupplier $midocoRemarkSupplier
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveRemarkSupplierRequest
      */
-    public function setMidocoRemarkSupplier(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkSupplier $midocoRemarkSupplier = null): self
+    public function setMidocoRemarkSupplier(?\Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkSupplier $midocoRemarkSupplier = null): self
     {
         $this->MidocoRemarkSupplier = $midocoRemarkSupplier;
         
@@ -68,7 +68,7 @@ class SaveRemarkSupplierRequest extends AbstractStructBase
     /**
      * Set lastSupplier value
      * @param string $lastSupplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveRemarkSupplierRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveRemarkSupplierRequest
      */
     public function setLastSupplier(?string $lastSupplier = null): self
     {

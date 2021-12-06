@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class GetBankAccountResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoBankAccount
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount $MidocoBankAccount = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount $MidocoBankAccount = null;
     /**
      * Constructor method for GetBankAccountResponse
      * @uses GetBankAccountResponse::setMidocoBankAccount()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount $midocoBankAccount
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount $midocoBankAccount
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount $midocoBankAccount = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount $midocoBankAccount = null)
     {
         $this
             ->setMidocoBankAccount($midocoBankAccount);
     }
     /**
      * Get MidocoBankAccount value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount|null
      */
-    public function getMidocoBankAccount(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount
+    public function getMidocoBankAccount(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount
     {
         return $this->MidocoBankAccount;
     }
     /**
      * Set MidocoBankAccount value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount $midocoBankAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetBankAccountResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount $midocoBankAccount
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetBankAccountResponse
      */
-    public function setMidocoBankAccount(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount $midocoBankAccount = null): self
+    public function setMidocoBankAccount(?\Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount $midocoBankAccount = null): self
     {
         $this->MidocoBankAccount = $midocoBankAccount;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class CheckIfTocSupplierRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CheckIfTocSupplierRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CheckIfTocSupplierRequest
      */
     public function setSupplierId(string $supplierId): self
     {

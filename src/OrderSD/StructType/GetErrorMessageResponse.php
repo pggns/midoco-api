@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetErrorMessageResponse extends AbstractStructBase
     /**
      * Set error_text value
      * @param string $error_text
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetErrorMessageResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetErrorMessageResponse
      */
     public function setError_text(?string $error_text = null): self
     {

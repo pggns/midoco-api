@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoPrintTypeDestination extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintTypeDestination
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoPrintTypeDestination
      */
     public function setPrintType(?string $printType = null): self
     {

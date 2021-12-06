@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set srcSupplierId value
      * @param string $srcSupplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setSrcSupplierId(?string $srcSupplierId = null): self
     {
@@ -182,7 +182,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set destSupplierId value
      * @param string $destSupplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDestSupplierId(?string $destSupplierId = null): self
     {
@@ -205,7 +205,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set destSupplierName value
      * @param string $destSupplierName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDestSupplierName(?string $destSupplierName = null): self
     {
@@ -228,7 +228,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set duplicateInfo value
      * @param bool $duplicateInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDuplicateInfo(?bool $duplicateInfo = null): self
     {
@@ -251,7 +251,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set duplicateAddress value
      * @param bool $duplicateAddress
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDuplicateAddress(?bool $duplicateAddress = null): self
     {
@@ -274,7 +274,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set duplicatePayment value
      * @param bool $duplicatePayment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDuplicatePayment(?bool $duplicatePayment = null): self
     {
@@ -297,7 +297,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set duplicateAccounts value
      * @param bool $duplicateAccounts
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDuplicateAccounts(?bool $duplicateAccounts = null): self
     {
@@ -320,7 +320,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set duplicateMediator value
      * @param bool $duplicateMediator
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDuplicateMediator(?bool $duplicateMediator = null): self
     {
@@ -343,7 +343,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set duplicateAgenciesCommission value
      * @param bool $duplicateAgenciesCommission
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDuplicateAgenciesCommission(?bool $duplicateAgenciesCommission = null): self
     {
@@ -366,7 +366,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set duplicateSettlementAccounts value
      * @param bool $duplicateSettlementAccounts
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDuplicateSettlementAccounts(?bool $duplicateSettlementAccounts = null): self
     {
@@ -389,7 +389,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set duplicateAgencies value
      * @param bool $duplicateAgencies
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDuplicateAgencies(?bool $duplicateAgencies = null): self
     {
@@ -412,7 +412,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set duplicateAutoRemarks value
      * @param bool $duplicateAutoRemarks
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDuplicateAutoRemarks(?bool $duplicateAutoRemarks = null): self
     {
@@ -435,7 +435,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set duplicateStorno value
      * @param bool $duplicateStorno
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDuplicateStorno(?bool $duplicateStorno = null): self
     {
@@ -458,7 +458,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set duplicateReservation value
      * @param bool $duplicateReservation
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDuplicateReservation(?bool $duplicateReservation = null): self
     {
@@ -481,7 +481,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set duplicateDisabledItemTypes value
      * @param bool $duplicateDisabledItemTypes
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDuplicateDisabledItemTypes(?bool $duplicateDisabledItemTypes = null): self
     {
@@ -504,7 +504,7 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
     /**
      * Set duplicateSelectAll value
      * @param bool $duplicateSelectAll
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
      */
     public function setDuplicateSelectAll(?bool $duplicateSelectAll = null): self
     {

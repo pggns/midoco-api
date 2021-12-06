@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class SaveAccessJasperReportRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:MidocoAccessReport
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoAccessReport[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoAccessReport[]
      */
     protected ?array $MidocoAccessReport = null;
     /**
@@ -37,7 +37,7 @@ class SaveAccessJasperReportRequest extends AbstractStructBase
      * @uses SaveAccessJasperReportRequest::setMidocoAccessReport()
      * @uses SaveAccessJasperReportRequest::setOrgUnit()
      * @uses SaveAccessJasperReportRequest::setRoleId()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoAccessReport[] $midocoAccessReport
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoAccessReport[] $midocoAccessReport
      * @param string $orgUnit
      * @param int $roleId
      */
@@ -50,7 +50,7 @@ class SaveAccessJasperReportRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAccessReport value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoAccessReport[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoAccessReport[]
      */
     public function getMidocoAccessReport(): ?array
     {
@@ -71,12 +71,12 @@ class SaveAccessJasperReportRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveAccessJasperReportRequestMidocoAccessReportItem) {
             // validation for constraint: itemType
-            if (!$saveAccessJasperReportRequestMidocoAccessReportItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoAccessReport) {
+            if (!$saveAccessJasperReportRequestMidocoAccessReportItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoAccessReport) {
                 $invalidValues[] = is_object($saveAccessJasperReportRequestMidocoAccessReportItem) ? get_class($saveAccessJasperReportRequestMidocoAccessReportItem) : sprintf('%s(%s)', gettype($saveAccessJasperReportRequestMidocoAccessReportItem), var_export($saveAccessJasperReportRequestMidocoAccessReportItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAccessReport property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoAccessReport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAccessReport property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoAccessReport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class SaveAccessJasperReportRequest extends AbstractStructBase
     /**
      * Set MidocoAccessReport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoAccessReport[] $midocoAccessReport
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveAccessJasperReportRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoAccessReport[] $midocoAccessReport
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveAccessJasperReportRequest
      */
     public function setMidocoAccessReport(?array $midocoAccessReport = null): self
     {
@@ -101,14 +101,14 @@ class SaveAccessJasperReportRequest extends AbstractStructBase
     /**
      * Add item to MidocoAccessReport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoAccessReport $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveAccessJasperReportRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoAccessReport $item
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveAccessJasperReportRequest
      */
-    public function addToMidocoAccessReport(\Pggns\MidocoApi\Api\Mis\StructType\MidocoAccessReport $item): self
+    public function addToMidocoAccessReport(\Pggns\MidocoApi\Mis\StructType\MidocoAccessReport $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoAccessReport) {
-            throw new InvalidArgumentException(sprintf('The MidocoAccessReport property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoAccessReport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoAccessReport) {
+            throw new InvalidArgumentException(sprintf('The MidocoAccessReport property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoAccessReport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAccessReport[] = $item;
         
@@ -125,7 +125,7 @@ class SaveAccessJasperReportRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveAccessJasperReportRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveAccessJasperReportRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -148,7 +148,7 @@ class SaveAccessJasperReportRequest extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveAccessJasperReportRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveAccessJasperReportRequest
      */
     public function setRoleId(?int $roleId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -22,17 +22,17 @@ class UpdateExternDocumentDescRequest extends AbstractStructBase
      * The MidocoMailMessage
      * Meta information extracted from the WSDL
      * - ref: mail:MidocoMailMessage
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoMailMessageType|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoMailMessageType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoMailMessageType $MidocoMailMessage = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoMailMessageType $MidocoMailMessage = null;
     /**
      * The MidocoExtDocumentDesc
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoExtDocumentDesc
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc $MidocoExtDocumentDesc = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc $MidocoExtDocumentDesc = null;
     /**
      * The preferredAdapter
      * @var string|null
@@ -45,11 +45,11 @@ class UpdateExternDocumentDescRequest extends AbstractStructBase
      * @uses UpdateExternDocumentDescRequest::setMidocoExtDocumentDesc()
      * @uses UpdateExternDocumentDescRequest::setPreferredAdapter()
      * @param int $id
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoMailMessageType $midocoMailMessage
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoMailMessageType $midocoMailMessage
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc
      * @param string $preferredAdapter
      */
-    public function __construct(?int $id = null, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoMailMessageType $midocoMailMessage = null, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc = null, ?string $preferredAdapter = null)
+    public function __construct(?int $id = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoMailMessageType $midocoMailMessage = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc = null, ?string $preferredAdapter = null)
     {
         $this
             ->setId($id)
@@ -68,7 +68,7 @@ class UpdateExternDocumentDescRequest extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UpdateExternDocumentDescRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\UpdateExternDocumentDescRequest
      */
     public function setId(?int $id = null): self
     {
@@ -82,18 +82,18 @@ class UpdateExternDocumentDescRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMailMessage value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMailMessageType|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMailMessageType|null
      */
-    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoMailMessageType
+    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Documents\StructType\MidocoMailMessageType
     {
         return $this->MidocoMailMessage;
     }
     /**
      * Set MidocoMailMessage value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoMailMessageType $midocoMailMessage
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UpdateExternDocumentDescRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoMailMessageType $midocoMailMessage
+     * @return \Pggns\MidocoApi\Documents\StructType\UpdateExternDocumentDescRequest
      */
-    public function setMidocoMailMessage(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoMailMessageType $midocoMailMessage = null): self
+    public function setMidocoMailMessage(?\Pggns\MidocoApi\Documents\StructType\MidocoMailMessageType $midocoMailMessage = null): self
     {
         $this->MidocoMailMessage = $midocoMailMessage;
         
@@ -101,18 +101,18 @@ class UpdateExternDocumentDescRequest extends AbstractStructBase
     }
     /**
      * Get MidocoExtDocumentDesc value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc|null
      */
-    public function getMidocoExtDocumentDesc(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc
+    public function getMidocoExtDocumentDesc(): ?\Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc
     {
         return $this->MidocoExtDocumentDesc;
     }
     /**
      * Set MidocoExtDocumentDesc value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UpdateExternDocumentDescRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc
+     * @return \Pggns\MidocoApi\Documents\StructType\UpdateExternDocumentDescRequest
      */
-    public function setMidocoExtDocumentDesc(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc = null): self
+    public function setMidocoExtDocumentDesc(?\Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc = null): self
     {
         $this->MidocoExtDocumentDesc = $midocoExtDocumentDesc;
         
@@ -129,7 +129,7 @@ class UpdateExternDocumentDescRequest extends AbstractStructBase
     /**
      * Set preferredAdapter value
      * @param string $preferredAdapter
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UpdateExternDocumentDescRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\UpdateExternDocumentDescRequest
      */
     public function setPreferredAdapter(?string $preferredAdapter = null): self
     {

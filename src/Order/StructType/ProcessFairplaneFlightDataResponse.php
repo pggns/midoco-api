@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class ProcessFairplaneFlightDataResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoFlightDetail
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetail|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoFlightDetail|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetail $MidocoFlightDetail = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoFlightDetail $MidocoFlightDetail = null;
     /**
      * The error
      * @var string|null
@@ -30,10 +30,10 @@ class ProcessFairplaneFlightDataResponse extends AbstractStructBase
      * Constructor method for ProcessFairplaneFlightDataResponse
      * @uses ProcessFairplaneFlightDataResponse::setMidocoFlightDetail()
      * @uses ProcessFairplaneFlightDataResponse::setError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetail $midocoFlightDetail
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFlightDetail $midocoFlightDetail
      * @param string $error
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetail $midocoFlightDetail = null, ?string $error = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoFlightDetail $midocoFlightDetail = null, ?string $error = null)
     {
         $this
             ->setMidocoFlightDetail($midocoFlightDetail)
@@ -41,18 +41,18 @@ class ProcessFairplaneFlightDataResponse extends AbstractStructBase
     }
     /**
      * Get MidocoFlightDetail value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetail|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDetail|null
      */
-    public function getMidocoFlightDetail(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetail
+    public function getMidocoFlightDetail(): ?\Pggns\MidocoApi\Order\StructType\MidocoFlightDetail
     {
         return $this->MidocoFlightDetail;
     }
     /**
      * Set MidocoFlightDetail value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetail $midocoFlightDetail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProcessFairplaneFlightDataResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFlightDetail $midocoFlightDetail
+     * @return \Pggns\MidocoApi\Order\StructType\ProcessFairplaneFlightDataResponse
      */
-    public function setMidocoFlightDetail(?\Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetail $midocoFlightDetail = null): self
+    public function setMidocoFlightDetail(?\Pggns\MidocoApi\Order\StructType\MidocoFlightDetail $midocoFlightDetail = null): self
     {
         $this->MidocoFlightDetail = $midocoFlightDetail;
         
@@ -69,7 +69,7 @@ class ProcessFairplaneFlightDataResponse extends AbstractStructBase
     /**
      * Set error value
      * @param string $error
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProcessFairplaneFlightDataResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ProcessFairplaneFlightDataResponse
      */
     public function setError(?string $error = null): self
     {

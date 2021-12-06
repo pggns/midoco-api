@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class CrmPrintRecipientDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPrintRecipientDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPrintRecipientDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -94,7 +94,7 @@ class CrmPrintRecipientDTO extends AbstractStructBase
     /**
      * Set isOriginalPrint value
      * @param bool $isOriginalPrint
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPrintRecipientDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPrintRecipientDTO
      */
     public function setIsOriginalPrint(?bool $isOriginalPrint = null): self
     {
@@ -117,7 +117,7 @@ class CrmPrintRecipientDTO extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPrintRecipientDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPrintRecipientDTO
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -140,7 +140,7 @@ class CrmPrintRecipientDTO extends AbstractStructBase
     /**
      * Set recipient value
      * @param string $recipient
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPrintRecipientDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPrintRecipientDTO
      */
     public function setRecipient(?string $recipient = null): self
     {
@@ -163,7 +163,7 @@ class CrmPrintRecipientDTO extends AbstractStructBase
     /**
      * Set recipientId value
      * @param int $recipientId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPrintRecipientDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPrintRecipientDTO
      */
     public function setRecipientId(?int $recipientId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetSupplierDisabledUnitsResponse extends AbstractStructBase
      * Set disabledUnitName value
      * @throws InvalidArgumentException
      * @param string[] $disabledUnitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierDisabledUnitsResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierDisabledUnitsResponse
      */
     public function setDisabledUnitName(?array $disabledUnitName = null): self
     {
@@ -85,7 +85,7 @@ class GetSupplierDisabledUnitsResponse extends AbstractStructBase
      * Add item to disabledUnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierDisabledUnitsResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierDisabledUnitsResponse
      */
     public function addToDisabledUnitName(string $item): self
     {

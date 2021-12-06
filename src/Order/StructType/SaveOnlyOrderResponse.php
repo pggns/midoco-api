@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -77,7 +77,7 @@ class SaveOnlyOrderResponse extends AbstractStructBase
      * Set ToBeProcessedOrderId value
      * @throws InvalidArgumentException
      * @param int[] $toBeProcessedOrderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOnlyOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOnlyOrderResponse
      */
     public function setToBeProcessedOrderId(?array $toBeProcessedOrderId = null): self
     {
@@ -93,7 +93,7 @@ class SaveOnlyOrderResponse extends AbstractStructBase
      * Add item to ToBeProcessedOrderId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOnlyOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOnlyOrderResponse
      */
     public function addToToBeProcessedOrderId(int $item): self
     {
@@ -116,7 +116,7 @@ class SaveOnlyOrderResponse extends AbstractStructBase
     /**
      * Set mainOrderId value
      * @param int $mainOrderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOnlyOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOnlyOrderResponse
      */
     public function setMainOrderId(?int $mainOrderId = null): self
     {

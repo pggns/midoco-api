@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class CustomerDimensionDTO extends AbstractStructBase
     /**
      * Set addressType value
      * @param string $addressType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerDimensionDTO
      */
     public function setAddressType(?string $addressType = null): self
     {
@@ -134,7 +134,7 @@ class CustomerDimensionDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerDimensionDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -157,7 +157,7 @@ class CustomerDimensionDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerDimensionDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -180,7 +180,7 @@ class CustomerDimensionDTO extends AbstractStructBase
     /**
      * Set midocoCustOrgUnit value
      * @param string $midocoCustOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerDimensionDTO
      */
     public function setMidocoCustOrgUnit(?string $midocoCustOrgUnit = null): self
     {
@@ -203,7 +203,7 @@ class CustomerDimensionDTO extends AbstractStructBase
     /**
      * Set midocoCustomerId value
      * @param int $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerDimensionDTO
      */
     public function setMidocoCustomerId(?int $midocoCustomerId = null): self
     {
@@ -226,7 +226,7 @@ class CustomerDimensionDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerDimensionDTO
      */
     public function setName(?string $name = null): self
     {
@@ -249,7 +249,7 @@ class CustomerDimensionDTO extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerDimensionDTO
      */
     public function setState(?string $state = null): self
     {
@@ -272,7 +272,7 @@ class CustomerDimensionDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerDimensionDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -295,7 +295,7 @@ class CustomerDimensionDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerDimensionDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -318,7 +318,7 @@ class CustomerDimensionDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerDimensionDTO
      */
     public function setType(?string $type = null): self
     {

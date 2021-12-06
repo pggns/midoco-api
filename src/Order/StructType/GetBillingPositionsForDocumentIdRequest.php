@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetBillingPositionsForDocumentIdRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositionsForDocumentIdRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositionsForDocumentIdRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -70,7 +70,7 @@ class GetBillingPositionsForDocumentIdRequest extends AbstractStructBase
     /**
      * Set numPositions value
      * @param int $numPositions
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositionsForDocumentIdRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositionsForDocumentIdRequest
      */
     public function setNumPositions(?int $numPositions = null): self
     {

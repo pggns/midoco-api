@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -27,7 +27,7 @@ class AnnounceAmwayFilekeyRequest extends AbstractStructBase
      * The flightService
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \Pggns\MidocoApi\Api\Order\StructType\FlightService[]
+     * @var \Pggns\MidocoApi\Order\StructType\FlightService[]
      */
     protected ?array $flightService = null;
     /**
@@ -37,7 +37,7 @@ class AnnounceAmwayFilekeyRequest extends AbstractStructBase
      * @uses AnnounceAmwayFilekeyRequest::setFlightService()
      * @param int $orderNo
      * @param string $filekey
-     * @param \Pggns\MidocoApi\Api\Order\StructType\FlightService[] $flightService
+     * @param \Pggns\MidocoApi\Order\StructType\FlightService[] $flightService
      */
     public function __construct(?int $orderNo = null, ?string $filekey = null, ?array $flightService = null)
     {
@@ -57,7 +57,7 @@ class AnnounceAmwayFilekeyRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceAmwayFilekeyRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceAmwayFilekeyRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -80,7 +80,7 @@ class AnnounceAmwayFilekeyRequest extends AbstractStructBase
     /**
      * Set filekey value
      * @param string $filekey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceAmwayFilekeyRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceAmwayFilekeyRequest
      */
     public function setFilekey(?string $filekey = null): self
     {
@@ -94,7 +94,7 @@ class AnnounceAmwayFilekeyRequest extends AbstractStructBase
     }
     /**
      * Get flightService value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightService[]
+     * @return \Pggns\MidocoApi\Order\StructType\FlightService[]
      */
     public function getFlightService(): ?array
     {
@@ -115,12 +115,12 @@ class AnnounceAmwayFilekeyRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $announceAmwayFilekeyRequestFlightServiceItem) {
             // validation for constraint: itemType
-            if (!$announceAmwayFilekeyRequestFlightServiceItem instanceof \Pggns\MidocoApi\Api\Order\StructType\FlightService) {
+            if (!$announceAmwayFilekeyRequestFlightServiceItem instanceof \Pggns\MidocoApi\Order\StructType\FlightService) {
                 $invalidValues[] = is_object($announceAmwayFilekeyRequestFlightServiceItem) ? get_class($announceAmwayFilekeyRequestFlightServiceItem) : sprintf('%s(%s)', gettype($announceAmwayFilekeyRequestFlightServiceItem), var_export($announceAmwayFilekeyRequestFlightServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The flightService property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\FlightService, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The flightService property can only contain items of type \Pggns\MidocoApi\Order\StructType\FlightService, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -129,8 +129,8 @@ class AnnounceAmwayFilekeyRequest extends AbstractStructBase
     /**
      * Set flightService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\FlightService[] $flightService
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceAmwayFilekeyRequest
+     * @param \Pggns\MidocoApi\Order\StructType\FlightService[] $flightService
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceAmwayFilekeyRequest
      */
     public function setFlightService(?array $flightService = null): self
     {
@@ -145,14 +145,14 @@ class AnnounceAmwayFilekeyRequest extends AbstractStructBase
     /**
      * Add item to flightService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\FlightService $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceAmwayFilekeyRequest
+     * @param \Pggns\MidocoApi\Order\StructType\FlightService $item
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceAmwayFilekeyRequest
      */
-    public function addToFlightService(\Pggns\MidocoApi\Api\Order\StructType\FlightService $item): self
+    public function addToFlightService(\Pggns\MidocoApi\Order\StructType\FlightService $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\FlightService) {
-            throw new InvalidArgumentException(sprintf('The flightService property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\FlightService, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\FlightService) {
+            throw new InvalidArgumentException(sprintf('The flightService property can only contain items of type \Pggns\MidocoApi\Order\StructType\FlightService, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->flightService[] = $item;
         

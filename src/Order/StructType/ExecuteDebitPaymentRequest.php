@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
      * The MidocoBillingDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoBillingDocument
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
     /**
      * The amount
      * @var float|null
@@ -101,7 +101,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
      * @uses ExecuteDebitPaymentRequest::setCardCountry()
      * @uses ExecuteDebitPaymentRequest::setTerminalId()
      * @uses ExecuteDebitPaymentRequest::setTraceNumber()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument
      * @param float $amount
      * @param string $bankNumber
      * @param string $accountNumber
@@ -116,7 +116,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
      * @param string $terminalId
      * @param string $traceNumber
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?float $amount = null, ?string $bankNumber = null, ?string $accountNumber = null, ?string $iban = null, ?string $swiftBicCode = null, ?string $cardHolder = null, ?string $receiptNo = null, ?string $receiptDate = null, ?string $transactionType = null, ?string $cardType = null, ?string $cardCountry = null, ?string $terminalId = null, ?string $traceNumber = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?float $amount = null, ?string $bankNumber = null, ?string $accountNumber = null, ?string $iban = null, ?string $swiftBicCode = null, ?string $cardHolder = null, ?string $receiptNo = null, ?string $receiptDate = null, ?string $transactionType = null, ?string $cardType = null, ?string $cardCountry = null, ?string $terminalId = null, ?string $traceNumber = null)
     {
         $this
             ->setMidocoBillingDocument($midocoBillingDocument)
@@ -136,18 +136,18 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoBillingDocument value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument|null
      */
-    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument
+    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument
     {
         return $this->MidocoBillingDocument;
     }
     /**
      * Set MidocoBillingDocument value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
-    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
+    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
     {
         $this->MidocoBillingDocument = $midocoBillingDocument;
         
@@ -164,7 +164,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
     public function setAmount(?float $amount = null): self
     {
@@ -187,7 +187,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     /**
      * Set bankNumber value
      * @param string $bankNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
     public function setBankNumber(?string $bankNumber = null): self
     {
@@ -210,7 +210,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     /**
      * Set accountNumber value
      * @param string $accountNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
     public function setAccountNumber(?string $accountNumber = null): self
     {
@@ -233,7 +233,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
     public function setIban(?string $iban = null): self
     {
@@ -256,7 +256,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     /**
      * Set swiftBicCode value
      * @param string $swiftBicCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
     public function setSwiftBicCode(?string $swiftBicCode = null): self
     {
@@ -279,7 +279,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     /**
      * Set cardHolder value
      * @param string $cardHolder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
     public function setCardHolder(?string $cardHolder = null): self
     {
@@ -302,7 +302,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -325,7 +325,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -348,7 +348,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     /**
      * Set transactionType value
      * @param string $transactionType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
     public function setTransactionType(?string $transactionType = null): self
     {
@@ -371,7 +371,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     /**
      * Set cardType value
      * @param string $cardType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
     public function setCardType(?string $cardType = null): self
     {
@@ -394,7 +394,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     /**
      * Set cardCountry value
      * @param string $cardCountry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
     public function setCardCountry(?string $cardCountry = null): self
     {
@@ -417,7 +417,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     /**
      * Set terminalId value
      * @param string $terminalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
     public function setTerminalId(?string $terminalId = null): self
     {
@@ -440,7 +440,7 @@ class ExecuteDebitPaymentRequest extends AbstractStructBase
     /**
      * Set traceNumber value
      * @param string $traceNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDebitPaymentRequest
      */
     public function setTraceNumber(?string $traceNumber = null): self
     {

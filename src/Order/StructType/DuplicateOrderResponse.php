@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class DuplicateOrderResponse extends AbstractStructBase
     /**
      * Set sourceOrderId value
      * @param int $sourceOrderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateOrderResponse
      */
     public function setSourceOrderId(?int $sourceOrderId = null): self
     {
@@ -134,7 +134,7 @@ class DuplicateOrderResponse extends AbstractStructBase
     /**
      * Set sourceOrderNo value
      * @param int $sourceOrderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateOrderResponse
      */
     public function setSourceOrderNo(?int $sourceOrderNo = null): self
     {
@@ -157,7 +157,7 @@ class DuplicateOrderResponse extends AbstractStructBase
     /**
      * Set sourceOrgunit value
      * @param string $sourceOrgunit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateOrderResponse
      */
     public function setSourceOrgunit(?string $sourceOrgunit = null): self
     {
@@ -180,7 +180,7 @@ class DuplicateOrderResponse extends AbstractStructBase
     /**
      * Set targetOrderId value
      * @param int $targetOrderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateOrderResponse
      */
     public function setTargetOrderId(?int $targetOrderId = null): self
     {
@@ -203,7 +203,7 @@ class DuplicateOrderResponse extends AbstractStructBase
     /**
      * Set targetOrderNo value
      * @param int $targetOrderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateOrderResponse
      */
     public function setTargetOrderNo(?int $targetOrderNo = null): self
     {
@@ -226,7 +226,7 @@ class DuplicateOrderResponse extends AbstractStructBase
     /**
      * Set targetOrgunit value
      * @param string $targetOrgunit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateOrderResponse
      */
     public function setTargetOrgunit(?string $targetOrgunit = null): self
     {
@@ -249,7 +249,7 @@ class DuplicateOrderResponse extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateOrderResponse
      */
     public function setMessage(?string $message = null): self
     {
@@ -272,7 +272,7 @@ class DuplicateOrderResponse extends AbstractStructBase
     /**
      * Set imported value
      * @param bool $imported
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateOrderResponse
      */
     public function setImported(?bool $imported = null): self
     {

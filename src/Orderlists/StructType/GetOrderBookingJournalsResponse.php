@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetOrderBookingJournalsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: order:MidocoJournalPosition
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJournalPosition[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoJournalPosition[]
      */
     protected ?array $MidocoJournalPosition = null;
     /**
      * Constructor method for GetOrderBookingJournalsResponse
      * @uses GetOrderBookingJournalsResponse::setMidocoJournalPosition()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJournalPosition[] $midocoJournalPosition
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoJournalPosition[] $midocoJournalPosition
      */
     public function __construct(?array $midocoJournalPosition = null)
     {
@@ -34,7 +34,7 @@ class GetOrderBookingJournalsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoJournalPosition value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJournalPosition[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoJournalPosition[]
      */
     public function getMidocoJournalPosition(): ?array
     {
@@ -55,12 +55,12 @@ class GetOrderBookingJournalsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderBookingJournalsResponseMidocoJournalPositionItem) {
             // validation for constraint: itemType
-            if (!$getOrderBookingJournalsResponseMidocoJournalPositionItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJournalPosition) {
+            if (!$getOrderBookingJournalsResponseMidocoJournalPositionItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoJournalPosition) {
                 $invalidValues[] = is_object($getOrderBookingJournalsResponseMidocoJournalPositionItem) ? get_class($getOrderBookingJournalsResponseMidocoJournalPositionItem) : sprintf('%s(%s)', gettype($getOrderBookingJournalsResponseMidocoJournalPositionItem), var_export($getOrderBookingJournalsResponseMidocoJournalPositionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoJournalPosition property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJournalPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoJournalPosition property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoJournalPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetOrderBookingJournalsResponse extends AbstractStructBase
     /**
      * Set MidocoJournalPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJournalPosition[] $midocoJournalPosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetOrderBookingJournalsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoJournalPosition[] $midocoJournalPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetOrderBookingJournalsResponse
      */
     public function setMidocoJournalPosition(?array $midocoJournalPosition = null): self
     {
@@ -85,14 +85,14 @@ class GetOrderBookingJournalsResponse extends AbstractStructBase
     /**
      * Add item to MidocoJournalPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJournalPosition $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetOrderBookingJournalsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoJournalPosition $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetOrderBookingJournalsResponse
      */
-    public function addToMidocoJournalPosition(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJournalPosition $item): self
+    public function addToMidocoJournalPosition(\Pggns\MidocoApi\Orderlists\StructType\MidocoJournalPosition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJournalPosition) {
-            throw new InvalidArgumentException(sprintf('The MidocoJournalPosition property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJournalPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoJournalPosition) {
+            throw new InvalidArgumentException(sprintf('The MidocoJournalPosition property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoJournalPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoJournalPosition[] = $item;
         

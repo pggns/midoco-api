@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,17 +20,17 @@ class GenerateCsvForCollectiveBillingRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCollectiveBilling
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling $MidocoCollectiveBilling = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling $MidocoCollectiveBilling = null;
     /**
      * The MidocoMailMessage
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: mail:MidocoMailMessage
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
     /**
      * The sendMail
      * Meta information extracted from the WSDL
@@ -43,11 +43,11 @@ class GenerateCsvForCollectiveBillingRequest extends AbstractStructBase
      * @uses GenerateCsvForCollectiveBillingRequest::setMidocoCollectiveBilling()
      * @uses GenerateCsvForCollectiveBillingRequest::setMidocoMailMessage()
      * @uses GenerateCsvForCollectiveBillingRequest::setSendMail()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
      * @param bool $sendMail
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?bool $sendMail = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling = null, ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?bool $sendMail = null)
     {
         $this
             ->setMidocoCollectiveBilling($midocoCollectiveBilling)
@@ -56,18 +56,18 @@ class GenerateCsvForCollectiveBillingRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCollectiveBilling value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling|null
      */
-    public function getMidocoCollectiveBilling(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling
+    public function getMidocoCollectiveBilling(): ?\Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling
     {
         return $this->MidocoCollectiveBilling;
     }
     /**
      * Set MidocoCollectiveBilling value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateCsvForCollectiveBillingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateCsvForCollectiveBillingRequest
      */
-    public function setMidocoCollectiveBilling(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling = null): self
+    public function setMidocoCollectiveBilling(?\Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling = null): self
     {
         $this->MidocoCollectiveBilling = $midocoCollectiveBilling;
         
@@ -75,18 +75,18 @@ class GenerateCsvForCollectiveBillingRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMailMessage value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
     {
         return $this->MidocoMailMessage;
     }
     /**
      * Set MidocoMailMessage value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateCsvForCollectiveBillingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateCsvForCollectiveBillingRequest
      */
-    public function setMidocoMailMessage(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
+    public function setMidocoMailMessage(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
     {
         $this->MidocoMailMessage = $midocoMailMessage;
         
@@ -103,7 +103,7 @@ class GenerateCsvForCollectiveBillingRequest extends AbstractStructBase
     /**
      * Set sendMail value
      * @param bool $sendMail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateCsvForCollectiveBillingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateCsvForCollectiveBillingRequest
      */
     public function setSendMail(?bool $sendMail = null): self
     {

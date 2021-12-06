@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MediatorDTO extends AbstractStructBase
     /**
      * Set amountPerPerson value
      * @param float $amountPerPerson
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorDTO
      */
     public function setAmountPerPerson(?float $amountPerPerson = null): self
     {
@@ -110,7 +110,7 @@ class MediatorDTO extends AbstractStructBase
     /**
      * Set provisionPercent value
      * @param float $provisionPercent
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorDTO
      */
     public function setProvisionPercent(?float $provisionPercent = null): self
     {
@@ -133,7 +133,7 @@ class MediatorDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -156,7 +156,7 @@ class MediatorDTO extends AbstractStructBase
     /**
      * Set totalPercent value
      * @param float $totalPercent
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorDTO
      */
     public function setTotalPercent(?float $totalPercent = null): self
     {
@@ -179,7 +179,7 @@ class MediatorDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -202,7 +202,7 @@ class MediatorDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -225,7 +225,7 @@ class MediatorDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorDTO
      */
     public function setDescription(?string $description = null): self
     {

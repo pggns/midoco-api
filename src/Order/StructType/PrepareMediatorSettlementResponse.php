@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -85,7 +85,7 @@ class PrepareMediatorSettlementResponse extends AbstractStructBase
      * Set MediatorId value
      * @throws InvalidArgumentException
      * @param string[] $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMediatorSettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMediatorSettlementResponse
      */
     public function setMediatorId(?array $mediatorId = null): self
     {
@@ -101,7 +101,7 @@ class PrepareMediatorSettlementResponse extends AbstractStructBase
      * Add item to MediatorId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMediatorSettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMediatorSettlementResponse
      */
     public function addToMediatorId(string $item): self
     {
@@ -124,7 +124,7 @@ class PrepareMediatorSettlementResponse extends AbstractStructBase
     /**
      * Set emailSubject value
      * @param string $emailSubject
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMediatorSettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMediatorSettlementResponse
      */
     public function setEmailSubject(?string $emailSubject = null): self
     {
@@ -147,7 +147,7 @@ class PrepareMediatorSettlementResponse extends AbstractStructBase
     /**
      * Set emailText value
      * @param string $emailText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMediatorSettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMediatorSettlementResponse
      */
     public function setEmailText(?string $emailText = null): self
     {

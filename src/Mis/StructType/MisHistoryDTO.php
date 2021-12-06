@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MisHistoryDTO extends AbstractStructBase
     /**
      * Set contactId value
      * @param int $contactId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisHistoryDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisHistoryDTO
      */
     public function setContactId(?int $contactId = null): self
     {
@@ -102,7 +102,7 @@ class MisHistoryDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisHistoryDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisHistoryDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -125,7 +125,7 @@ class MisHistoryDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisHistoryDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisHistoryDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -148,7 +148,7 @@ class MisHistoryDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisHistoryDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisHistoryDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -171,7 +171,7 @@ class MisHistoryDTO extends AbstractStructBase
     /**
      * Set timeOfContact value
      * @param string $timeOfContact
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisHistoryDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisHistoryDTO
      */
     public function setTimeOfContact(?string $timeOfContact = null): self
     {
@@ -194,7 +194,7 @@ class MisHistoryDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisHistoryDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisHistoryDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class MarkExportChangedOrdersRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 1
      * - ref: MidocoExportChangedOrdersLog
-     * @var \Pggns\MidocoApi\Api\Order\StructType\ExportChangedOrdersLogDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\ExportChangedOrdersLogDTO[]
      */
     protected array $MidocoExportChangedOrdersLog;
     /**
      * Constructor method for MarkExportChangedOrdersRequest
      * @uses MarkExportChangedOrdersRequest::setMidocoExportChangedOrdersLog()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportChangedOrdersLogDTO[] $midocoExportChangedOrdersLog
+     * @param \Pggns\MidocoApi\Order\StructType\ExportChangedOrdersLogDTO[] $midocoExportChangedOrdersLog
      */
     public function __construct(array $midocoExportChangedOrdersLog)
     {
@@ -34,7 +34,7 @@ class MarkExportChangedOrdersRequest extends AbstractStructBase
     }
     /**
      * Get MidocoExportChangedOrdersLog value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportChangedOrdersLogDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\ExportChangedOrdersLogDTO[]
      */
     public function getMidocoExportChangedOrdersLog(): array
     {
@@ -55,12 +55,12 @@ class MarkExportChangedOrdersRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $markExportChangedOrdersRequestMidocoExportChangedOrdersLogItem) {
             // validation for constraint: itemType
-            if (!$markExportChangedOrdersRequestMidocoExportChangedOrdersLogItem instanceof \Pggns\MidocoApi\Api\Order\StructType\ExportChangedOrdersLogDTO) {
+            if (!$markExportChangedOrdersRequestMidocoExportChangedOrdersLogItem instanceof \Pggns\MidocoApi\Order\StructType\ExportChangedOrdersLogDTO) {
                 $invalidValues[] = is_object($markExportChangedOrdersRequestMidocoExportChangedOrdersLogItem) ? get_class($markExportChangedOrdersRequestMidocoExportChangedOrdersLogItem) : sprintf('%s(%s)', gettype($markExportChangedOrdersRequestMidocoExportChangedOrdersLogItem), var_export($markExportChangedOrdersRequestMidocoExportChangedOrdersLogItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoExportChangedOrdersLog property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ExportChangedOrdersLogDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoExportChangedOrdersLog property can only contain items of type \Pggns\MidocoApi\Order\StructType\ExportChangedOrdersLogDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class MarkExportChangedOrdersRequest extends AbstractStructBase
     /**
      * Set MidocoExportChangedOrdersLog value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportChangedOrdersLogDTO[] $midocoExportChangedOrdersLog
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarkExportChangedOrdersRequest
+     * @param \Pggns\MidocoApi\Order\StructType\ExportChangedOrdersLogDTO[] $midocoExportChangedOrdersLog
+     * @return \Pggns\MidocoApi\Order\StructType\MarkExportChangedOrdersRequest
      */
     public function setMidocoExportChangedOrdersLog(array $midocoExportChangedOrdersLog): self
     {
@@ -85,14 +85,14 @@ class MarkExportChangedOrdersRequest extends AbstractStructBase
     /**
      * Add item to MidocoExportChangedOrdersLog value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportChangedOrdersLogDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarkExportChangedOrdersRequest
+     * @param \Pggns\MidocoApi\Order\StructType\ExportChangedOrdersLogDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\MarkExportChangedOrdersRequest
      */
-    public function addToMidocoExportChangedOrdersLog(\Pggns\MidocoApi\Api\Order\StructType\ExportChangedOrdersLogDTO $item): self
+    public function addToMidocoExportChangedOrdersLog(\Pggns\MidocoApi\Order\StructType\ExportChangedOrdersLogDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\ExportChangedOrdersLogDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoExportChangedOrdersLog property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ExportChangedOrdersLogDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\ExportChangedOrdersLogDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoExportChangedOrdersLog property can only contain items of type \Pggns\MidocoApi\Order\StructType\ExportChangedOrdersLogDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoExportChangedOrdersLog[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteAdapterAttrRequest extends AbstractStructBase
      * The MidocoAdapterAttr
      * Meta information extracted from the WSDL
      * - ref: MidocoAdapterAttr
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\AdapterAttrDTO|null
+     * @var \Pggns\MidocoApi\Booking\StructType\AdapterAttrDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\AdapterAttrDTO $MidocoAdapterAttr = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\AdapterAttrDTO $MidocoAdapterAttr = null;
     /**
      * Constructor method for DeleteAdapterAttrRequest
      * @uses DeleteAdapterAttrRequest::setMidocoAdapterAttr()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AdapterAttrDTO $midocoAdapterAttr
+     * @param \Pggns\MidocoApi\Booking\StructType\AdapterAttrDTO $midocoAdapterAttr
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\AdapterAttrDTO $midocoAdapterAttr = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\AdapterAttrDTO $midocoAdapterAttr = null)
     {
         $this
             ->setMidocoAdapterAttr($midocoAdapterAttr);
     }
     /**
      * Get MidocoAdapterAttr value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AdapterAttrDTO|null
+     * @return \Pggns\MidocoApi\Booking\StructType\AdapterAttrDTO|null
      */
-    public function getMidocoAdapterAttr(): ?\Pggns\MidocoApi\Api\Booking\StructType\AdapterAttrDTO
+    public function getMidocoAdapterAttr(): ?\Pggns\MidocoApi\Booking\StructType\AdapterAttrDTO
     {
         return $this->MidocoAdapterAttr;
     }
     /**
      * Set MidocoAdapterAttr value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AdapterAttrDTO $midocoAdapterAttr
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DeleteAdapterAttrRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\AdapterAttrDTO $midocoAdapterAttr
+     * @return \Pggns\MidocoApi\Booking\StructType\DeleteAdapterAttrRequest
      */
-    public function setMidocoAdapterAttr(?\Pggns\MidocoApi\Api\Booking\StructType\AdapterAttrDTO $midocoAdapterAttr = null): self
+    public function setMidocoAdapterAttr(?\Pggns\MidocoApi\Booking\StructType\AdapterAttrDTO $midocoAdapterAttr = null): self
     {
         $this->MidocoAdapterAttr = $midocoAdapterAttr;
         

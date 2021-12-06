@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetExternalSystemTypesResponse extends AbstractStructBase
      * Set MidocoExternalSystemType value
      * @throws InvalidArgumentException
      * @param string[] $midocoExternalSystemType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetExternalSystemTypesResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetExternalSystemTypesResponse
      */
     public function setMidocoExternalSystemType(?array $midocoExternalSystemType = null): self
     {
@@ -85,7 +85,7 @@ class GetExternalSystemTypesResponse extends AbstractStructBase
      * Add item to MidocoExternalSystemType value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetExternalSystemTypesResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetExternalSystemTypesResponse
      */
     public function addToMidocoExternalSystemType(string $item): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class EntryCriteria extends AbstractStructBase
     /**
      * Set entryId value
      * @param string $entryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryCriteria
      */
     public function setEntryId(?string $entryId = null): self
     {
@@ -78,7 +78,7 @@ class EntryCriteria extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryCriteria
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -101,7 +101,7 @@ class EntryCriteria extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryCriteria
      */
     public function setPlanId(?string $planId = null): self
     {

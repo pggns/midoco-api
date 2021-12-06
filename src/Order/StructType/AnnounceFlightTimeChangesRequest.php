@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -25,7 +25,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoFlightTimeChange
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChange[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChange[]
      */
     protected ?array $MidocoFlightTimeChange = null;
     /**
@@ -93,7 +93,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
      * @uses AnnounceFlightTimeChangesRequest::setStartTravel()
      * @uses AnnounceFlightTimeChangesRequest::setEndTravel()
      * @param string $bookingId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChange[] $midocoFlightTimeChange
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChange[] $midocoFlightTimeChange
      * @param string[] $supplierId
      * @param string $filekey
      * @param string $passengerName
@@ -130,7 +130,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceFlightTimeChangesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesRequest
      */
     public function setBookingId(string $bookingId): self
     {
@@ -144,7 +144,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoFlightTimeChange value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChange[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChange[]
      */
     public function getMidocoFlightTimeChange(): ?array
     {
@@ -165,12 +165,12 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $announceFlightTimeChangesRequestMidocoFlightTimeChangeItem) {
             // validation for constraint: itemType
-            if (!$announceFlightTimeChangesRequestMidocoFlightTimeChangeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChange) {
+            if (!$announceFlightTimeChangesRequestMidocoFlightTimeChangeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChange) {
                 $invalidValues[] = is_object($announceFlightTimeChangesRequestMidocoFlightTimeChangeItem) ? get_class($announceFlightTimeChangesRequestMidocoFlightTimeChangeItem) : sprintf('%s(%s)', gettype($announceFlightTimeChangesRequestMidocoFlightTimeChangeItem), var_export($announceFlightTimeChangesRequestMidocoFlightTimeChangeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFlightTimeChange property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChange, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFlightTimeChange property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChange, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -179,8 +179,8 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
     /**
      * Set MidocoFlightTimeChange value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChange[] $midocoFlightTimeChange
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceFlightTimeChangesRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChange[] $midocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesRequest
      */
     public function setMidocoFlightTimeChange(?array $midocoFlightTimeChange = null): self
     {
@@ -195,14 +195,14 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
     /**
      * Add item to MidocoFlightTimeChange value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChange $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceFlightTimeChangesRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChange $item
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesRequest
      */
-    public function addToMidocoFlightTimeChange(\Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChange $item): self
+    public function addToMidocoFlightTimeChange(\Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChange $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChange) {
-            throw new InvalidArgumentException(sprintf('The MidocoFlightTimeChange property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChange, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChange) {
+            throw new InvalidArgumentException(sprintf('The MidocoFlightTimeChange property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChange, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFlightTimeChange[] = $item;
         
@@ -246,7 +246,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
      * Set supplierId value
      * @throws InvalidArgumentException
      * @param string[] $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceFlightTimeChangesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesRequest
      */
     public function setSupplierId(?array $supplierId = null): self
     {
@@ -262,7 +262,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
      * Add item to supplierId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceFlightTimeChangesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesRequest
      */
     public function addToSupplierId(string $item): self
     {
@@ -285,7 +285,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
     /**
      * Set filekey value
      * @param string $filekey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceFlightTimeChangesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesRequest
      */
     public function setFilekey(?string $filekey = null): self
     {
@@ -308,7 +308,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
     /**
      * Set passengerName value
      * @param string $passengerName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceFlightTimeChangesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesRequest
      */
     public function setPassengerName(?string $passengerName = null): self
     {
@@ -331,7 +331,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
     /**
      * Set passengerForename value
      * @param string $passengerForename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceFlightTimeChangesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesRequest
      */
     public function setPassengerForename(?string $passengerForename = null): self
     {
@@ -354,7 +354,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
     /**
      * Set containsOldInfo value
      * @param bool $containsOldInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceFlightTimeChangesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesRequest
      */
     public function setContainsOldInfo(?bool $containsOldInfo = null): self
     {
@@ -377,7 +377,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
     /**
      * Set changeDate value
      * @param string $changeDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceFlightTimeChangesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesRequest
      */
     public function setChangeDate(?string $changeDate = null): self
     {
@@ -400,7 +400,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
     /**
      * Set containsPassengerInfo value
      * @param bool $containsPassengerInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceFlightTimeChangesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesRequest
      */
     public function setContainsPassengerInfo(?bool $containsPassengerInfo = true): self
     {
@@ -423,7 +423,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceFlightTimeChangesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesRequest
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -446,7 +446,7 @@ class AnnounceFlightTimeChangesRequest extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceFlightTimeChangesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesRequest
      */
     public function setEndTravel(?string $endTravel = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -166,7 +166,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -189,7 +189,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set forCheck value
      * @param bool $forCheck
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setForCheck(?bool $forCheck = null): self
     {
@@ -212,7 +212,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -235,7 +235,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set supplierAgencyNo value
      * @param string $supplierAgencyNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setSupplierAgencyNo(?string $supplierAgencyNo = null): self
     {
@@ -258,7 +258,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -281,7 +281,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -304,7 +304,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -327,7 +327,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set traveller value
      * @param string $traveller
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setTraveller(?string $traveller = null): self
     {
@@ -350,7 +350,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -373,7 +373,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set booked value
      * @param bool $booked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setBooked(?bool $booked = null): self
     {
@@ -396,7 +396,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set checked value
      * @param bool $checked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setChecked(?bool $checked = null): self
     {
@@ -419,7 +419,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set errors value
      * @param bool $errors
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setErrors(?bool $errors = null): self
     {
@@ -442,7 +442,7 @@ class GetSupplierAgencySettlementBookingsRequest extends AbstractStructBase
     /**
      * Set settlementsInkassoMode value
      * @param string $settlementsInkassoMode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencySettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsRequest
      */
     public function setSettlementsInkassoMode(?string $settlementsInkassoMode = null): self
     {

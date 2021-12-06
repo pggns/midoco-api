@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class UpdateLinkedCrmCompaniesToSupplierResponse extends AbstractStructBase
      * Set orgUnit value
      * @throws InvalidArgumentException
      * @param string[] $orgUnit
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\UpdateLinkedCrmCompaniesToSupplierResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateLinkedCrmCompaniesToSupplierResponse
      */
     public function setOrgUnit(?array $orgUnit = null): self
     {
@@ -85,7 +85,7 @@ class UpdateLinkedCrmCompaniesToSupplierResponse extends AbstractStructBase
      * Add item to orgUnit value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\UpdateLinkedCrmCompaniesToSupplierResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateLinkedCrmCompaniesToSupplierResponse
      */
     public function addToOrgUnit(string $item): self
     {

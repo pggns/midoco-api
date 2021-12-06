@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class UserattribDTO extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\UserattribDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\UserattribDTO
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -70,7 +70,7 @@ class UserattribDTO extends AbstractStructBase
     /**
      * Set isSecret value
      * @param bool $isSecret
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\UserattribDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\UserattribDTO
      */
     public function setIsSecret(?bool $isSecret = null): self
     {

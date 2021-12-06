@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,24 +18,24 @@ class MidocoJasperReportParamForExec extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoJasperReportParam
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportParam|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportParam|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportParam $MidocoJasperReportParam = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoJasperReportParam $MidocoJasperReportParam = null;
     /**
      * The MidocoJasperParameter
      * Meta information extracted from the WSDL
      * - ref: MidocoJasperParameter
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\JasperParameterDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\JasperParameterDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\JasperParameterDTO $MidocoJasperParameter = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\JasperParameterDTO $MidocoJasperParameter = null;
     /**
      * Constructor method for MidocoJasperReportParamForExec
      * @uses MidocoJasperReportParamForExec::setMidocoJasperReportParam()
      * @uses MidocoJasperReportParamForExec::setMidocoJasperParameter()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportParam $midocoJasperReportParam
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\JasperParameterDTO $midocoJasperParameter
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportParam $midocoJasperReportParam
+     * @param \Pggns\MidocoApi\Mis\StructType\JasperParameterDTO $midocoJasperParameter
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportParam $midocoJasperReportParam = null, ?\Pggns\MidocoApi\Api\Mis\StructType\JasperParameterDTO $midocoJasperParameter = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MidocoJasperReportParam $midocoJasperReportParam = null, ?\Pggns\MidocoApi\Mis\StructType\JasperParameterDTO $midocoJasperParameter = null)
     {
         $this
             ->setMidocoJasperReportParam($midocoJasperReportParam)
@@ -43,18 +43,18 @@ class MidocoJasperReportParamForExec extends AbstractStructBase
     }
     /**
      * Get MidocoJasperReportParam value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportParam|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportParam|null
      */
-    public function getMidocoJasperReportParam(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportParam
+    public function getMidocoJasperReportParam(): ?\Pggns\MidocoApi\Mis\StructType\MidocoJasperReportParam
     {
         return $this->MidocoJasperReportParam;
     }
     /**
      * Set MidocoJasperReportParam value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportParam $midocoJasperReportParam
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportParamForExec
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportParam $midocoJasperReportParam
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportParamForExec
      */
-    public function setMidocoJasperReportParam(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportParam $midocoJasperReportParam = null): self
+    public function setMidocoJasperReportParam(?\Pggns\MidocoApi\Mis\StructType\MidocoJasperReportParam $midocoJasperReportParam = null): self
     {
         $this->MidocoJasperReportParam = $midocoJasperReportParam;
         
@@ -62,18 +62,18 @@ class MidocoJasperReportParamForExec extends AbstractStructBase
     }
     /**
      * Get MidocoJasperParameter value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\JasperParameterDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\JasperParameterDTO|null
      */
-    public function getMidocoJasperParameter(): ?\Pggns\MidocoApi\Api\Mis\StructType\JasperParameterDTO
+    public function getMidocoJasperParameter(): ?\Pggns\MidocoApi\Mis\StructType\JasperParameterDTO
     {
         return $this->MidocoJasperParameter;
     }
     /**
      * Set MidocoJasperParameter value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\JasperParameterDTO $midocoJasperParameter
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportParamForExec
+     * @param \Pggns\MidocoApi\Mis\StructType\JasperParameterDTO $midocoJasperParameter
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportParamForExec
      */
-    public function setMidocoJasperParameter(?\Pggns\MidocoApi\Api\Mis\StructType\JasperParameterDTO $midocoJasperParameter = null): self
+    public function setMidocoJasperParameter(?\Pggns\MidocoApi\Mis\StructType\JasperParameterDTO $midocoJasperParameter = null): self
     {
         $this->MidocoJasperParameter = $midocoJasperParameter;
         

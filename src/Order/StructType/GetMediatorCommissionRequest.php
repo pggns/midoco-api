@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -73,7 +73,7 @@ class GetMediatorCommissionRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMediatorCommissionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMediatorCommissionRequest
      */
     public function setMediatorId(string $mediatorId): self
     {
@@ -96,7 +96,7 @@ class GetMediatorCommissionRequest extends AbstractStructBase
     /**
      * Set startTravelDate value
      * @param string $startTravelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMediatorCommissionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMediatorCommissionRequest
      */
     public function setStartTravelDate(?string $startTravelDate = null): self
     {
@@ -119,7 +119,7 @@ class GetMediatorCommissionRequest extends AbstractStructBase
     /**
      * Set endTravelDate value
      * @param string $endTravelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMediatorCommissionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMediatorCommissionRequest
      */
     public function setEndTravelDate(?string $endTravelDate = null): self
     {
@@ -142,7 +142,7 @@ class GetMediatorCommissionRequest extends AbstractStructBase
     /**
      * Set startBookingDate value
      * @param string $startBookingDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMediatorCommissionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMediatorCommissionRequest
      */
     public function setStartBookingDate(?string $startBookingDate = null): self
     {
@@ -165,7 +165,7 @@ class GetMediatorCommissionRequest extends AbstractStructBase
     /**
      * Set endBookingDate value
      * @param string $endBookingDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMediatorCommissionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMediatorCommissionRequest
      */
     public function setEndBookingDate(?string $endBookingDate = null): self
     {

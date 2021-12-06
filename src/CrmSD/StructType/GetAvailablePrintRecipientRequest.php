@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetAvailablePrintRecipientRequest extends AbstractStructBase
     /**
      * Set cusomerId value
      * @param int $cusomerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAvailablePrintRecipientRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAvailablePrintRecipientRequest
      */
     public function setCusomerId(?int $cusomerId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoAttributeLocalizationResponse extends AbstractStructBase
      * The MidocoSystemAttributeLocalization
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeLocalization
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO|null
+     * @var \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO $MidocoSystemAttributeLocalization = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO $MidocoSystemAttributeLocalization = null;
     /**
      * Constructor method for SaveMidocoAttributeLocalizationResponse
      * @uses SaveMidocoAttributeLocalizationResponse::setMidocoSystemAttributeLocalization()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     * @param \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null)
     {
         $this
             ->setMidocoSystemAttributeLocalization($midocoSystemAttributeLocalization);
     }
     /**
      * Get MidocoSystemAttributeLocalization value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO|null
+     * @return \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO|null
      */
-    public function getMidocoSystemAttributeLocalization(): ?\Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO
+    public function getMidocoSystemAttributeLocalization(): ?\Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO
     {
         return $this->MidocoSystemAttributeLocalization;
     }
     /**
      * Set MidocoSystemAttributeLocalization value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SaveMidocoAttributeLocalizationResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     * @return \Pggns\MidocoApi\Booking\StructType\SaveMidocoAttributeLocalizationResponse
      */
-    public function setMidocoSystemAttributeLocalization(?\Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null): self
+    public function setMidocoSystemAttributeLocalization(?\Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null): self
     {
         $this->MidocoSystemAttributeLocalization = $midocoSystemAttributeLocalization;
         

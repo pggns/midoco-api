@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class PrintAgencySettlementInvoiceRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAgencySettlementInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAgencySettlementInvoiceRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -80,7 +80,7 @@ class PrintAgencySettlementInvoiceRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAgencySettlementInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAgencySettlementInvoiceRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -103,7 +103,7 @@ class PrintAgencySettlementInvoiceRequest extends AbstractStructBase
     /**
      * Set preview value
      * @param bool $preview
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAgencySettlementInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAgencySettlementInvoiceRequest
      */
     public function setPreview(?bool $preview = false): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setForename(?string $forename = null): self
     {
@@ -166,7 +166,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set surname value
      * @param string $surname
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setSurname(?string $surname = null): self
     {
@@ -189,7 +189,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -212,7 +212,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -235,7 +235,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set duePaymentDate value
      * @param string $duePaymentDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setDuePaymentDate(?string $duePaymentDate = null): self
     {
@@ -258,7 +258,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set dueAmount value
      * @param float $dueAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setDueAmount(?float $dueAmount = null): self
     {
@@ -281,7 +281,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set inkassoPrice value
      * @param float $inkassoPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setInkassoPrice(?float $inkassoPrice = null): self
     {
@@ -304,7 +304,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -327,7 +327,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set isDepositPayment value
      * @param bool $isDepositPayment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setIsDepositPayment(?bool $isDepositPayment = null): self
     {
@@ -350,7 +350,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -373,7 +373,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set dunning_level value
      * @param int $dunning_level
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setDunning_level(?int $dunning_level = null): self
     {
@@ -396,7 +396,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set dunning_block value
      * @param bool $dunning_block
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setDunning_block(?bool $dunning_block = null): self
     {
@@ -419,7 +419,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set total_payment value
      * @param float $total_payment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setTotal_payment(?float $total_payment = null): self
     {
@@ -442,7 +442,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
     /**
      * Set delegationComment value
      * @param string $delegationComment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
      */
     public function setDelegationComment(?string $delegationComment = null): self
     {

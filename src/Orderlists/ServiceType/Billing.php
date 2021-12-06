@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\ServiceType;
+namespace Pggns\MidocoApi\Orderlists\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Billing extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Orderlists\ServiceType\Billing
+     * @return \Pggns\MidocoApi\Orderlists\ServiceType\Billing
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Billing extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\BillingListRequest $paramBillingListRequest
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingListResponse|bool
+     * @param \Pggns\MidocoApi\Orderlists\StructType\BillingListRequest $paramBillingListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingListResponse|bool
      */
-    public function billingList(\Pggns\MidocoApi\Api\Orderlists\StructType\BillingListRequest $paramBillingListRequest)
+    public function billingList(\Pggns\MidocoApi\Orderlists\StructType\BillingListRequest $paramBillingListRequest)
     {
         try {
             $this->setResult($resultBillingList = $this->getSoapClient()->__soapCall('billingList', [
@@ -58,15 +58,15 @@ class Billing extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDataListRequest $paramBillingDataListRequest
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDataListResponse|bool
+     * @param \Pggns\MidocoApi\Orderlists\StructType\BillingDataListRequest $paramBillingDataListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDataListResponse|bool
      */
-    public function billingDataList(\Pggns\MidocoApi\Api\Orderlists\StructType\BillingDataListRequest $paramBillingDataListRequest)
+    public function billingDataList(\Pggns\MidocoApi\Orderlists\StructType\BillingDataListRequest $paramBillingDataListRequest)
     {
         try {
             $this->setResult($resultBillingDataList = $this->getSoapClient()->__soapCall('billingDataList', [
@@ -83,7 +83,7 @@ class Billing extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDataListResponse|\Pggns\MidocoApi\Api\Orderlists\StructType\BillingListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDataListResponse|\Pggns\MidocoApi\Orderlists\StructType\BillingListResponse
      */
     public function getResult()
     {

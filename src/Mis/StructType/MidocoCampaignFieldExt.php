@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoCampaignFieldExt extends CampaignFieldType
     /**
      * Set typeAsString value
      * @param string $typeAsString
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignFieldExt
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCampaignFieldExt
      */
     public function setTypeAsString(?string $typeAsString = null): self
     {
@@ -70,7 +70,7 @@ class MidocoCampaignFieldExt extends CampaignFieldType
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignFieldExt
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCampaignFieldExt
      */
     public function setCategory(?string $category = null): self
     {

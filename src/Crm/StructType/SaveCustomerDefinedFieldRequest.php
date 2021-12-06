@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveCustomerDefinedFieldRequest extends AbstractStructBase
      * The MidocoCustomerDefinedField
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerDefinedField
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO $MidocoCustomerDefinedField = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO $MidocoCustomerDefinedField = null;
     /**
      * Constructor method for SaveCustomerDefinedFieldRequest
      * @uses SaveCustomerDefinedFieldRequest::setMidocoCustomerDefinedField()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO $midocoCustomerDefinedField
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO $midocoCustomerDefinedField
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO $midocoCustomerDefinedField = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO $midocoCustomerDefinedField = null)
     {
         $this
             ->setMidocoCustomerDefinedField($midocoCustomerDefinedField);
     }
     /**
      * Get MidocoCustomerDefinedField value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO|null
      */
-    public function getMidocoCustomerDefinedField(): ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO
+    public function getMidocoCustomerDefinedField(): ?\Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO
     {
         return $this->MidocoCustomerDefinedField;
     }
     /**
      * Set MidocoCustomerDefinedField value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO $midocoCustomerDefinedField
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerDefinedFieldRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO $midocoCustomerDefinedField
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCustomerDefinedFieldRequest
      */
-    public function setMidocoCustomerDefinedField(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO $midocoCustomerDefinedField = null): self
+    public function setMidocoCustomerDefinedField(?\Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO $midocoCustomerDefinedField = null): self
     {
         $this->MidocoCustomerDefinedField = $midocoCustomerDefinedField;
         

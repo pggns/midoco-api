@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveRuleDefinitionResponse extends AbstractStructBase
      * The MidocoRuleDefinition
      * Meta information extracted from the WSDL
      * - ref: MidocoRuleDefinition
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO $MidocoRuleDefinition = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO $MidocoRuleDefinition = null;
     /**
      * Constructor method for SaveRuleDefinitionResponse
      * @uses SaveRuleDefinitionResponse::setMidocoRuleDefinition()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO $midocoRuleDefinition
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO $midocoRuleDefinition
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO $midocoRuleDefinition = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO $midocoRuleDefinition = null)
     {
         $this
             ->setMidocoRuleDefinition($midocoRuleDefinition);
     }
     /**
      * Get MidocoRuleDefinition value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO|null
      */
-    public function getMidocoRuleDefinition(): ?\Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+    public function getMidocoRuleDefinition(): ?\Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
     {
         return $this->MidocoRuleDefinition;
     }
     /**
      * Set MidocoRuleDefinition value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO $midocoRuleDefinition
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleDefinitionResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO $midocoRuleDefinition
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveRuleDefinitionResponse
      */
-    public function setMidocoRuleDefinition(?\Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO $midocoRuleDefinition = null): self
+    public function setMidocoRuleDefinition(?\Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO $midocoRuleDefinition = null): self
     {
         $this->MidocoRuleDefinition = $midocoRuleDefinition;
         

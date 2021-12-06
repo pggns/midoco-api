@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -1335,7 +1335,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set accomodationCode value
      * @param string $accomodationCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAccomodationCode(?string $accomodationCode = null): self
     {
@@ -1358,7 +1358,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set accomodationDescription value
      * @param string $accomodationDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAccomodationDescription(?string $accomodationDescription = null): self
     {
@@ -1381,7 +1381,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set addressType value
      * @param string $addressType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAddressType(?string $addressType = null): self
     {
@@ -1404,7 +1404,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set agCity value
      * @param string $agCity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAgCity(?string $agCity = null): self
     {
@@ -1427,7 +1427,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set agCountryCode value
      * @param string $agCountryCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAgCountryCode(?string $agCountryCode = null): self
     {
@@ -1450,7 +1450,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set agEndorsement value
      * @param string $agEndorsement
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAgEndorsement(?string $agEndorsement = null): self
     {
@@ -1473,7 +1473,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set agOrganisationName value
      * @param string $agOrganisationName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAgOrganisationName(?string $agOrganisationName = null): self
     {
@@ -1496,7 +1496,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set agPhoneticCity value
      * @param string $agPhoneticCity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAgPhoneticCity(?string $agPhoneticCity = null): self
     {
@@ -1519,7 +1519,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set agPhoneticName value
      * @param string $agPhoneticName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAgPhoneticName(?string $agPhoneticName = null): self
     {
@@ -1542,7 +1542,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set agPhoneticStreet value
      * @param string $agPhoneticStreet
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAgPhoneticStreet(?string $agPhoneticStreet = null): self
     {
@@ -1565,7 +1565,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set agPostalCode value
      * @param string $agPostalCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAgPostalCode(?string $agPostalCode = null): self
     {
@@ -1588,7 +1588,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set agState value
      * @param string $agState
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAgState(?string $agState = null): self
     {
@@ -1611,7 +1611,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set agStreet value
      * @param string $agStreet
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAgStreet(?string $agStreet = null): self
     {
@@ -1634,7 +1634,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set agStreetNo value
      * @param string $agStreetNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAgStreetNo(?string $agStreetNo = null): self
     {
@@ -1657,7 +1657,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param int $agencyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAgencyId(?int $agencyId = null): self
     {
@@ -1680,7 +1680,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set arrivalTime value
      * @param string $arrivalTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setArrivalTime(?string $arrivalTime = null): self
     {
@@ -1703,7 +1703,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set attrib10Value value
      * @param string $attrib10Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAttrib10Value(?string $attrib10Value = null): self
     {
@@ -1726,7 +1726,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set attrib1Value value
      * @param string $attrib1Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAttrib1Value(?string $attrib1Value = null): self
     {
@@ -1749,7 +1749,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set attrib2Value value
      * @param string $attrib2Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAttrib2Value(?string $attrib2Value = null): self
     {
@@ -1772,7 +1772,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set attrib3Value value
      * @param string $attrib3Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAttrib3Value(?string $attrib3Value = null): self
     {
@@ -1795,7 +1795,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set attrib4Value value
      * @param string $attrib4Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAttrib4Value(?string $attrib4Value = null): self
     {
@@ -1818,7 +1818,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set attrib5Value value
      * @param string $attrib5Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAttrib5Value(?string $attrib5Value = null): self
     {
@@ -1841,7 +1841,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set attrib6Value value
      * @param string $attrib6Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAttrib6Value(?string $attrib6Value = null): self
     {
@@ -1864,7 +1864,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set attrib7Value value
      * @param string $attrib7Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAttrib7Value(?string $attrib7Value = null): self
     {
@@ -1887,7 +1887,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set attrib8Value value
      * @param string $attrib8Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAttrib8Value(?string $attrib8Value = null): self
     {
@@ -1910,7 +1910,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set attrib9Value value
      * @param string $attrib9Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAttrib9Value(?string $attrib9Value = null): self
     {
@@ -1933,7 +1933,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set attributeId value
      * @param int $attributeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setAttributeId(?int $attributeId = null): self
     {
@@ -1956,7 +1956,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -1979,7 +1979,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set CDatabaseDate value
      * @param string $cDatabaseDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCDatabaseDate(?string $cDatabaseDate = null): self
     {
@@ -2002,7 +2002,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set CDayNoInMonth value
      * @param int $cDayNoInMonth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCDayNoInMonth(?int $cDayNoInMonth = null): self
     {
@@ -2025,7 +2025,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set CDayOfWeek value
      * @param string $cDayOfWeek
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCDayOfWeek(?string $cDayOfWeek = null): self
     {
@@ -2048,7 +2048,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set CMonth value
      * @param int $cMonth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCMonth(?int $cMonth = null): self
     {
@@ -2071,7 +2071,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set CQuarter value
      * @param int $cQuarter
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCQuarter(?int $cQuarter = null): self
     {
@@ -2094,7 +2094,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set CWeekNoInYear value
      * @param int $cWeekNoInYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCWeekNoInYear(?int $cWeekNoInYear = null): self
     {
@@ -2117,7 +2117,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set CWeekend value
      * @param bool $cWeekend
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCWeekend(?bool $cWeekend = null): self
     {
@@ -2140,7 +2140,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set CYear value
      * @param int $cYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCYear(?int $cYear = null): self
     {
@@ -2163,7 +2163,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set calcMediatorAmount value
      * @param float $calcMediatorAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCalcMediatorAmount(?float $calcMediatorAmount = null): self
     {
@@ -2186,7 +2186,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set calcRevenueAmount value
      * @param float $calcRevenueAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCalcRevenueAmount(?float $calcRevenueAmount = null): self
     {
@@ -2209,7 +2209,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -2232,7 +2232,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set catalogKey value
      * @param bool $catalogKey
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCatalogKey(?bool $catalogKey = null): self
     {
@@ -2255,7 +2255,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -2278,7 +2278,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set commisionLevelId value
      * @param string $commisionLevelId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCommisionLevelId(?string $commisionLevelId = null): self
     {
@@ -2301,7 +2301,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set commissionAmount value
      * @param float $commissionAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCommissionAmount(?float $commissionAmount = null): self
     {
@@ -2324,7 +2324,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -2347,7 +2347,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set costCenter value
      * @param string $costCenter
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCostCenter(?string $costCenter = null): self
     {
@@ -2370,7 +2370,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -2393,7 +2393,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set creationDateId value
      * @param int $creationDateId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCreationDateId(?int $creationDateId = null): self
     {
@@ -2416,7 +2416,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set creationUserId value
      * @param int $creationUserId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCreationUserId(?int $creationUserId = null): self
     {
@@ -2439,7 +2439,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set cruiseCode value
      * @param string $cruiseCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCruiseCode(?string $cruiseCode = null): self
     {
@@ -2462,7 +2462,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set cruiseDescription value
      * @param string $cruiseDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCruiseDescription(?string $cruiseDescription = null): self
     {
@@ -2485,7 +2485,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set custCity value
      * @param string $custCity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCustCity(?string $custCity = null): self
     {
@@ -2508,7 +2508,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set custCountry value
      * @param string $custCountry
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCustCountry(?string $custCountry = null): self
     {
@@ -2531,7 +2531,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set custForename value
      * @param string $custForename
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCustForename(?string $custForename = null): self
     {
@@ -2554,7 +2554,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set custName value
      * @param string $custName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCustName(?string $custName = null): self
     {
@@ -2577,7 +2577,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set custPostalCode value
      * @param string $custPostalCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCustPostalCode(?string $custPostalCode = null): self
     {
@@ -2600,7 +2600,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set custState value
      * @param string $custState
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCustState(?string $custState = null): self
     {
@@ -2623,7 +2623,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set custStreet value
      * @param string $custStreet
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCustStreet(?string $custStreet = null): self
     {
@@ -2646,7 +2646,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set custStreetNo value
      * @param string $custStreetNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCustStreetNo(?string $custStreetNo = null): self
     {
@@ -2669,7 +2669,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set custType value
      * @param string $custType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCustType(?string $custType = null): self
     {
@@ -2692,7 +2692,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -2715,7 +2715,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -2738,7 +2738,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set departureCodeId value
      * @param int $departureCodeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setDepartureCodeId(?int $departureCodeId = null): self
     {
@@ -2761,7 +2761,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set departureTime value
      * @param string $departureTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setDepartureTime(?string $departureTime = null): self
     {
@@ -2784,7 +2784,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -2807,7 +2807,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -2830,7 +2830,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set destinationCodeId value
      * @param int $destinationCodeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setDestinationCodeId(?int $destinationCodeId = null): self
     {
@@ -2853,7 +2853,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set destinationKey value
      * @param string $destinationKey
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setDestinationKey(?string $destinationKey = null): self
     {
@@ -2876,7 +2876,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set durationKey value
      * @param string $durationKey
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setDurationKey(?string $durationKey = null): self
     {
@@ -2899,7 +2899,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set EDatabaseDate value
      * @param string $eDatabaseDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setEDatabaseDate(?string $eDatabaseDate = null): self
     {
@@ -2922,7 +2922,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set EDayNoInMonth value
      * @param int $eDayNoInMonth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setEDayNoInMonth(?int $eDayNoInMonth = null): self
     {
@@ -2945,7 +2945,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set EDayOfWeek value
      * @param string $eDayOfWeek
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setEDayOfWeek(?string $eDayOfWeek = null): self
     {
@@ -2968,7 +2968,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set EMonth value
      * @param int $eMonth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setEMonth(?int $eMonth = null): self
     {
@@ -2991,7 +2991,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set EQuarter value
      * @param int $eQuarter
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setEQuarter(?int $eQuarter = null): self
     {
@@ -3014,7 +3014,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set EWeekNoInYear value
      * @param int $eWeekNoInYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setEWeekNoInYear(?int $eWeekNoInYear = null): self
     {
@@ -3037,7 +3037,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set EWeekend value
      * @param bool $eWeekend
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setEWeekend(?bool $eWeekend = null): self
     {
@@ -3060,7 +3060,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set EYear value
      * @param int $eYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setEYear(?int $eYear = null): self
     {
@@ -3083,7 +3083,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set endTravelDateId value
      * @param int $endTravelDateId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setEndTravelDateId(?int $endTravelDateId = null): self
     {
@@ -3106,7 +3106,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set extSystem value
      * @param string $extSystem
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setExtSystem(?string $extSystem = null): self
     {
@@ -3129,7 +3129,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set factCount value
      * @param int $factCount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setFactCount(?int $factCount = null): self
     {
@@ -3152,7 +3152,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set flightNo value
      * @param string $flightNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setFlightNo(?string $flightNo = null): self
     {
@@ -3175,7 +3175,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -3198,7 +3198,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set grantedRevenue value
      * @param float $grantedRevenue
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setGrantedRevenue(?float $grantedRevenue = null): self
     {
@@ -3221,7 +3221,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set group1 value
      * @param string $group1
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setGroup1(?string $group1 = null): self
     {
@@ -3244,7 +3244,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set group2 value
      * @param string $group2
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setGroup2(?string $group2 = null): self
     {
@@ -3267,7 +3267,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set group3 value
      * @param string $group3
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setGroup3(?string $group3 = null): self
     {
@@ -3290,7 +3290,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set inkassoType value
      * @param string $inkassoType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setInkassoType(?string $inkassoType = null): self
     {
@@ -3313,7 +3313,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set isChild value
      * @param string $isChild
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setIsChild(?string $isChild = null): self
     {
@@ -3336,7 +3336,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set isMain value
      * @param string $isMain
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setIsMain(?string $isMain = null): self
     {
@@ -3359,7 +3359,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set isPackage value
      * @param string $isPackage
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setIsPackage(?string $isPackage = null): self
     {
@@ -3382,7 +3382,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -3405,7 +3405,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set itemTypeId value
      * @param int $itemTypeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setItemTypeId(?int $itemTypeId = null): self
     {
@@ -3428,7 +3428,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set locationId value
      * @param int $locationId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setLocationId(?int $locationId = null): self
     {
@@ -3451,7 +3451,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set medCity value
      * @param string $medCity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMedCity(?string $medCity = null): self
     {
@@ -3474,7 +3474,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set medCountryCode value
      * @param string $medCountryCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMedCountryCode(?string $medCountryCode = null): self
     {
@@ -3497,7 +3497,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set medEndorsement value
      * @param string $medEndorsement
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMedEndorsement(?string $medEndorsement = null): self
     {
@@ -3520,7 +3520,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set medOrganisationName value
      * @param string $medOrganisationName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMedOrganisationName(?string $medOrganisationName = null): self
     {
@@ -3543,7 +3543,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set medPhoneticCity value
      * @param string $medPhoneticCity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMedPhoneticCity(?string $medPhoneticCity = null): self
     {
@@ -3566,7 +3566,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set medPhoneticName value
      * @param string $medPhoneticName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMedPhoneticName(?string $medPhoneticName = null): self
     {
@@ -3589,7 +3589,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set medPhoneticStreet value
      * @param string $medPhoneticStreet
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMedPhoneticStreet(?string $medPhoneticStreet = null): self
     {
@@ -3612,7 +3612,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set medPostalCode value
      * @param string $medPostalCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMedPostalCode(?string $medPostalCode = null): self
     {
@@ -3635,7 +3635,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set medState value
      * @param string $medState
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMedState(?string $medState = null): self
     {
@@ -3658,7 +3658,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set medStreet value
      * @param string $medStreet
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMedStreet(?string $medStreet = null): self
     {
@@ -3681,7 +3681,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set medStreetNo value
      * @param string $medStreetNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMedStreetNo(?string $medStreetNo = null): self
     {
@@ -3704,7 +3704,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set mediatorAffiliate value
      * @param string $mediatorAffiliate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMediatorAffiliate(?string $mediatorAffiliate = null): self
     {
@@ -3727,7 +3727,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param int $mediatorId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMediatorId(?int $mediatorId = null): self
     {
@@ -3750,7 +3750,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set mediatorType value
      * @param string $mediatorType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMediatorType(?string $mediatorType = null): self
     {
@@ -3773,7 +3773,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set midocoAgencyId value
      * @param string $midocoAgencyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMidocoAgencyId(?string $midocoAgencyId = null): self
     {
@@ -3796,7 +3796,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set midocoCreationUserId value
      * @param int $midocoCreationUserId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMidocoCreationUserId(?int $midocoCreationUserId = null): self
     {
@@ -3819,7 +3819,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set midocoCustomerId value
      * @param int $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMidocoCustomerId(?int $midocoCustomerId = null): self
     {
@@ -3842,7 +3842,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set midocoItemId value
      * @param int $midocoItemId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMidocoItemId(?int $midocoItemId = null): self
     {
@@ -3865,7 +3865,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set midocoMediatorId value
      * @param string $midocoMediatorId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMidocoMediatorId(?string $midocoMediatorId = null): self
     {
@@ -3888,7 +3888,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set midocoOrderId value
      * @param int $midocoOrderId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMidocoOrderId(?int $midocoOrderId = null): self
     {
@@ -3911,7 +3911,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set midocoOrgUnit value
      * @param string $midocoOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMidocoOrgUnit(?string $midocoOrgUnit = null): self
     {
@@ -3934,7 +3934,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set midocoOrigSupplierId value
      * @param string $midocoOrigSupplierId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMidocoOrigSupplierId(?string $midocoOrigSupplierId = null): self
     {
@@ -3957,7 +3957,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set midocoSupplierId value
      * @param string $midocoSupplierId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setMidocoSupplierId(?string $midocoSupplierId = null): self
     {
@@ -3980,7 +3980,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setName(?string $name = null): self
     {
@@ -4003,7 +4003,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set noOfPersons value
      * @param int $noOfPersons
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setNoOfPersons(?int $noOfPersons = null): self
     {
@@ -4026,7 +4026,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set orgUnitId value
      * @param int $orgUnitId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setOrgUnitId(?int $orgUnitId = null): self
     {
@@ -4049,7 +4049,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set originalSupplierId value
      * @param int $originalSupplierId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setOriginalSupplierId(?int $originalSupplierId = null): self
     {
@@ -4072,7 +4072,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set packageDestination value
      * @param string $packageDestination
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setPackageDestination(?string $packageDestination = null): self
     {
@@ -4095,7 +4095,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set paidMediatorAmount value
      * @param float $paidMediatorAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setPaidMediatorAmount(?float $paidMediatorAmount = null): self
     {
@@ -4118,7 +4118,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -4141,7 +4141,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set personsKey value
      * @param string $personsKey
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setPersonsKey(?string $personsKey = null): self
     {
@@ -4164,7 +4164,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -4187,7 +4187,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set postalCodeFirst1 value
      * @param string $postalCodeFirst1
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setPostalCodeFirst1(?string $postalCodeFirst1 = null): self
     {
@@ -4210,7 +4210,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set postalCodeFirst2 value
      * @param string $postalCodeFirst2
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setPostalCodeFirst2(?string $postalCodeFirst2 = null): self
     {
@@ -4233,7 +4233,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set postalCodeFirst3 value
      * @param string $postalCodeFirst3
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setPostalCodeFirst3(?string $postalCodeFirst3 = null): self
     {
@@ -4256,7 +4256,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set postalCodeFirst4 value
      * @param string $postalCodeFirst4
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setPostalCodeFirst4(?string $postalCodeFirst4 = null): self
     {
@@ -4279,7 +4279,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setProductType(?string $productType = null): self
     {
@@ -4302,7 +4302,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set productTypeId value
      * @param int $productTypeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setProductTypeId(?int $productTypeId = null): self
     {
@@ -4325,7 +4325,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set purchaseSaleId value
      * @param int $purchaseSaleId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setPurchaseSaleId(?int $purchaseSaleId = null): self
     {
@@ -4348,7 +4348,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set returnArrivalTime value
      * @param string $returnArrivalTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setReturnArrivalTime(?string $returnArrivalTime = null): self
     {
@@ -4371,7 +4371,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set returnCarrier value
      * @param string $returnCarrier
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setReturnCarrier(?string $returnCarrier = null): self
     {
@@ -4394,7 +4394,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set returnDepartureCode value
      * @param string $returnDepartureCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setReturnDepartureCode(?string $returnDepartureCode = null): self
     {
@@ -4417,7 +4417,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set returnDepartureDescription value
      * @param string $returnDepartureDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setReturnDepartureDescription(?string $returnDepartureDescription = null): self
     {
@@ -4440,7 +4440,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set returnDepartureTime value
      * @param string $returnDepartureTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setReturnDepartureTime(?string $returnDepartureTime = null): self
     {
@@ -4463,7 +4463,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set returnDestinationCode value
      * @param string $returnDestinationCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setReturnDestinationCode(?string $returnDestinationCode = null): self
     {
@@ -4486,7 +4486,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set returnDestinationDescription value
      * @param string $returnDestinationDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setReturnDestinationDescription(?string $returnDestinationDescription = null): self
     {
@@ -4509,7 +4509,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set returnFlightNo value
      * @param string $returnFlightNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setReturnFlightNo(?string $returnFlightNo = null): self
     {
@@ -4532,7 +4532,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set saleAmount value
      * @param float $saleAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setSaleAmount(?float $saleAmount = null): self
     {
@@ -4555,7 +4555,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set sellItemId value
      * @param int $sellItemId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setSellItemId(?int $sellItemId = null): self
     {
@@ -4578,7 +4578,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setState(?string $state = null): self
     {
@@ -4601,7 +4601,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -4624,7 +4624,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set statusId value
      * @param int $statusId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setStatusId(?int $statusId = null): self
     {
@@ -4647,7 +4647,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set subAgency value
      * @param string $subAgency
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setSubAgency(?string $subAgency = null): self
     {
@@ -4670,7 +4670,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param int $supplierId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setSupplierId(?int $supplierId = null): self
     {
@@ -4693,7 +4693,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set TDatabaseDate value
      * @param string $tDatabaseDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTDatabaseDate(?string $tDatabaseDate = null): self
     {
@@ -4716,7 +4716,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set TDayNoInMonth value
      * @param int $tDayNoInMonth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTDayNoInMonth(?int $tDayNoInMonth = null): self
     {
@@ -4739,7 +4739,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set TDayOfWeek value
      * @param string $tDayOfWeek
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTDayOfWeek(?string $tDayOfWeek = null): self
     {
@@ -4762,7 +4762,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set TMonth value
      * @param int $tMonth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTMonth(?int $tMonth = null): self
     {
@@ -4785,7 +4785,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set TQuarter value
      * @param int $tQuarter
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTQuarter(?int $tQuarter = null): self
     {
@@ -4808,7 +4808,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set TWeekNoInYear value
      * @param int $tWeekNoInYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTWeekNoInYear(?int $tWeekNoInYear = null): self
     {
@@ -4831,7 +4831,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set TWeekend value
      * @param bool $tWeekend
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTWeekend(?bool $tWeekend = null): self
     {
@@ -4854,7 +4854,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set TYear value
      * @param int $tYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTYear(?int $tYear = null): self
     {
@@ -4877,7 +4877,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set taxPartPercent value
      * @param float $taxPartPercent
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTaxPartPercent(?float $taxPartPercent = null): self
     {
@@ -4900,7 +4900,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -4923,7 +4923,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set transportKey value
      * @param string $transportKey
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTransportKey(?string $transportKey = null): self
     {
@@ -4946,7 +4946,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set travelDateId value
      * @param int $travelDateId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTravelDateId(?int $travelDateId = null): self
     {
@@ -4969,7 +4969,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set travelDuration value
      * @param int $travelDuration
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTravelDuration(?int $travelDuration = null): self
     {
@@ -4992,7 +4992,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set travelPrice value
      * @param float $travelPrice
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTravelPrice(?float $travelPrice = null): self
     {
@@ -5015,7 +5015,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -5038,7 +5038,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set traveltypeKey value
      * @param string $traveltypeKey
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTraveltypeKey(?string $traveltypeKey = null): self
     {
@@ -5061,7 +5061,7 @@ class AggYqmwdSellItemFactDTO extends AbstractStructBase
     /**
      * Set turnaroundPoint value
      * @param string $turnaroundPoint
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AggYqmwdSellItemFactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AggYqmwdSellItemFactDTO
      */
     public function setTurnaroundPoint(?string $turnaroundPoint = null): self
     {

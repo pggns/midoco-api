@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAllTextTemplateTypesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTextTemplateTypeExt
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateTypeExtDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO[]
      */
     protected ?array $MidocoTextTemplateTypeExt = null;
     /**
      * Constructor method for GetAllTextTemplateTypesResponse
      * @uses GetAllTextTemplateTypesResponse::setMidocoTextTemplateTypeExt()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateTypeExtDTO[] $midocoTextTemplateTypeExt
+     * @param \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO[] $midocoTextTemplateTypeExt
      */
     public function __construct(?array $midocoTextTemplateTypeExt = null)
     {
@@ -34,7 +34,7 @@ class GetAllTextTemplateTypesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTextTemplateTypeExt value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateTypeExtDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO[]
      */
     public function getMidocoTextTemplateTypeExt(): ?array
     {
@@ -55,12 +55,12 @@ class GetAllTextTemplateTypesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllTextTemplateTypesResponseMidocoTextTemplateTypeExtItem) {
             // validation for constraint: itemType
-            if (!$getAllTextTemplateTypesResponseMidocoTextTemplateTypeExtItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateTypeExtDTO) {
+            if (!$getAllTextTemplateTypesResponseMidocoTextTemplateTypeExtItem instanceof \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO) {
                 $invalidValues[] = is_object($getAllTextTemplateTypesResponseMidocoTextTemplateTypeExtItem) ? get_class($getAllTextTemplateTypesResponseMidocoTextTemplateTypeExtItem) : sprintf('%s(%s)', gettype($getAllTextTemplateTypesResponseMidocoTextTemplateTypeExtItem), var_export($getAllTextTemplateTypesResponseMidocoTextTemplateTypeExtItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTextTemplateTypeExt property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateTypeExtDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTextTemplateTypeExt property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAllTextTemplateTypesResponse extends AbstractStructBase
     /**
      * Set MidocoTextTemplateTypeExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateTypeExtDTO[] $midocoTextTemplateTypeExt
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAllTextTemplateTypesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO[] $midocoTextTemplateTypeExt
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllTextTemplateTypesResponse
      */
     public function setMidocoTextTemplateTypeExt(?array $midocoTextTemplateTypeExt = null): self
     {
@@ -85,14 +85,14 @@ class GetAllTextTemplateTypesResponse extends AbstractStructBase
     /**
      * Add item to MidocoTextTemplateTypeExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateTypeExtDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAllTextTemplateTypesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllTextTemplateTypesResponse
      */
-    public function addToMidocoTextTemplateTypeExt(\Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateTypeExtDTO $item): self
+    public function addToMidocoTextTemplateTypeExt(\Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateTypeExtDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoTextTemplateTypeExt property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateTypeExtDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoTextTemplateTypeExt property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTextTemplateTypeExt[] = $item;
         

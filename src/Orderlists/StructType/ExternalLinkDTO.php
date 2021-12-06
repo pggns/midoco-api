@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class ExternalLinkDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalLinkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExternalLinkDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -126,7 +126,7 @@ class ExternalLinkDTO extends AbstractStructBase
     /**
      * Set link value
      * @param string $link
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalLinkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExternalLinkDTO
      */
     public function setLink(?string $link = null): self
     {
@@ -149,7 +149,7 @@ class ExternalLinkDTO extends AbstractStructBase
     /**
      * Set linkDescription value
      * @param string $linkDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalLinkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExternalLinkDTO
      */
     public function setLinkDescription(?string $linkDescription = null): self
     {
@@ -172,7 +172,7 @@ class ExternalLinkDTO extends AbstractStructBase
     /**
      * Set linkId value
      * @param int $linkId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalLinkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExternalLinkDTO
      */
     public function setLinkId(?int $linkId = null): self
     {
@@ -195,7 +195,7 @@ class ExternalLinkDTO extends AbstractStructBase
     /**
      * Set linkType value
      * @param string $linkType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalLinkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExternalLinkDTO
      */
     public function setLinkType(?string $linkType = null): self
     {
@@ -218,7 +218,7 @@ class ExternalLinkDTO extends AbstractStructBase
     /**
      * Set refId value
      * @param int $refId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalLinkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExternalLinkDTO
      */
     public function setRefId(?int $refId = null): self
     {
@@ -241,7 +241,7 @@ class ExternalLinkDTO extends AbstractStructBase
     /**
      * Set sizeH value
      * @param int $sizeH
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalLinkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExternalLinkDTO
      */
     public function setSizeH(?int $sizeH = null): self
     {
@@ -264,7 +264,7 @@ class ExternalLinkDTO extends AbstractStructBase
     /**
      * Set sizeType value
      * @param string $sizeType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalLinkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExternalLinkDTO
      */
     public function setSizeType(?string $sizeType = null): self
     {
@@ -287,7 +287,7 @@ class ExternalLinkDTO extends AbstractStructBase
     /**
      * Set sizeW value
      * @param int $sizeW
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalLinkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExternalLinkDTO
      */
     public function setSizeW(?int $sizeW = null): self
     {

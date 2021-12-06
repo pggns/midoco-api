@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoPaymentProviderSettlement extends PaymentProviderSettlementDTO
     /**
      * Set statusChecked value
      * @param string $statusChecked
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentProviderSettlement
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentProviderSettlement
      */
     public function setStatusChecked(?string $statusChecked = null): self
     {
@@ -78,7 +78,7 @@ class MidocoPaymentProviderSettlement extends PaymentProviderSettlementDTO
     /**
      * Set statusBooked value
      * @param string $statusBooked
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentProviderSettlement
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentProviderSettlement
      */
     public function setStatusBooked(?string $statusBooked = null): self
     {
@@ -101,7 +101,7 @@ class MidocoPaymentProviderSettlement extends PaymentProviderSettlementDTO
     /**
      * Set checked value
      * @param bool $checked
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentProviderSettlement
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentProviderSettlement
      */
     public function setChecked(?bool $checked = null): self
     {

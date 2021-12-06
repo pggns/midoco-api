@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\ServiceType;
+namespace Pggns\MidocoApi\Crm\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class _Switch extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Crm\ServiceType\_Switch
+     * @return \Pggns\MidocoApi\Crm\ServiceType\_Switch
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class _Switch extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SwitchCustomerTypeRequest $paramSwitchCustomerTypeRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SwitchCustomerTypeResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SwitchCustomerTypeRequest $paramSwitchCustomerTypeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SwitchCustomerTypeResponse|bool
      */
-    public function switchCustomerType(\Pggns\MidocoApi\Api\Crm\StructType\SwitchCustomerTypeRequest $paramSwitchCustomerTypeRequest)
+    public function switchCustomerType(\Pggns\MidocoApi\Crm\StructType\SwitchCustomerTypeRequest $paramSwitchCustomerTypeRequest)
     {
         try {
             $this->setResult($resultSwitchCustomerType = $this->getSoapClient()->__soapCall('switchCustomerType', [
@@ -56,7 +56,7 @@ class _Switch extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SwitchCustomerTypeResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SwitchCustomerTypeResponse
      */
     public function getResult()
     {

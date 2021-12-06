@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoDepositListOverallType extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListOverallType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListOverallType
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -78,7 +78,7 @@ class MidocoDepositListOverallType extends AbstractStructBase
     /**
      * Set invoicedAmount value
      * @param float $invoicedAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListOverallType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListOverallType
      */
     public function setInvoicedAmount(?float $invoicedAmount = null): self
     {
@@ -101,7 +101,7 @@ class MidocoDepositListOverallType extends AbstractStructBase
     /**
      * Set payedAmount value
      * @param float $payedAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListOverallType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListOverallType
      */
     public function setPayedAmount(?float $payedAmount = null): self
     {

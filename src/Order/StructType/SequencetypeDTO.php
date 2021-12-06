@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SequencetypeDTO extends AbstractStructBase
     /**
      * Set sequenceName value
      * @param string $sequenceName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SequencetypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SequencetypeDTO
      */
     public function setSequenceName(?string $sequenceName = null): self
     {

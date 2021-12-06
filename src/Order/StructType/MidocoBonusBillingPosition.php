@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoBonusBillingPosition extends BillingPositionDTO
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusBillingPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBonusBillingPosition
      */
     public function setOrderNo(?int $orderNo = null): self
     {

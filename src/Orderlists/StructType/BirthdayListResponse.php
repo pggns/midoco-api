@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class BirthdayListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBirthdayList
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType[]
      */
     protected ?array $MidocoBirthdayList = null;
     /**
@@ -31,19 +31,19 @@ class BirthdayListResponse extends AbstractStructBase
     protected ?int $noOfResults = null;
     /**
      * The MidocoBirthdayListSums
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType $MidocoBirthdayListSums = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType $MidocoBirthdayListSums = null;
     /**
      * Constructor method for BirthdayListResponse
      * @uses BirthdayListResponse::setMidocoBirthdayList()
      * @uses BirthdayListResponse::setNoOfResults()
      * @uses BirthdayListResponse::setMidocoBirthdayListSums()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType[] $midocoBirthdayList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType[] $midocoBirthdayList
      * @param int $noOfResults
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType $midocoBirthdayListSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType $midocoBirthdayListSums
      */
-    public function __construct(?array $midocoBirthdayList = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType $midocoBirthdayListSums = null)
+    public function __construct(?array $midocoBirthdayList = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType $midocoBirthdayListSums = null)
     {
         $this
             ->setMidocoBirthdayList($midocoBirthdayList)
@@ -52,7 +52,7 @@ class BirthdayListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBirthdayList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType[]
      */
     public function getMidocoBirthdayList(): ?array
     {
@@ -73,12 +73,12 @@ class BirthdayListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $birthdayListResponseMidocoBirthdayListItem) {
             // validation for constraint: itemType
-            if (!$birthdayListResponseMidocoBirthdayListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType) {
+            if (!$birthdayListResponseMidocoBirthdayListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType) {
                 $invalidValues[] = is_object($birthdayListResponseMidocoBirthdayListItem) ? get_class($birthdayListResponseMidocoBirthdayListItem) : sprintf('%s(%s)', gettype($birthdayListResponseMidocoBirthdayListItem), var_export($birthdayListResponseMidocoBirthdayListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBirthdayList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBirthdayList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -87,8 +87,8 @@ class BirthdayListResponse extends AbstractStructBase
     /**
      * Set MidocoBirthdayList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType[] $midocoBirthdayList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BirthdayListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType[] $midocoBirthdayList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BirthdayListResponse
      */
     public function setMidocoBirthdayList(?array $midocoBirthdayList = null): self
     {
@@ -103,14 +103,14 @@ class BirthdayListResponse extends AbstractStructBase
     /**
      * Add item to MidocoBirthdayList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BirthdayListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BirthdayListResponse
      */
-    public function addToMidocoBirthdayList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType $item): self
+    public function addToMidocoBirthdayList(\Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType) {
-            throw new InvalidArgumentException(sprintf('The MidocoBirthdayList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType) {
+            throw new InvalidArgumentException(sprintf('The MidocoBirthdayList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBirthdayList[] = $item;
         
@@ -127,7 +127,7 @@ class BirthdayListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BirthdayListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BirthdayListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {
@@ -141,18 +141,18 @@ class BirthdayListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBirthdayListSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType|null
      */
-    public function getMidocoBirthdayListSums(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+    public function getMidocoBirthdayListSums(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
     {
         return $this->MidocoBirthdayListSums;
     }
     /**
      * Set MidocoBirthdayListSums value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType $midocoBirthdayListSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BirthdayListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType $midocoBirthdayListSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BirthdayListResponse
      */
-    public function setMidocoBirthdayListSums(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType $midocoBirthdayListSums = null): self
+    public function setMidocoBirthdayListSums(?\Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType $midocoBirthdayListSums = null): self
     {
         $this->MidocoBirthdayListSums = $midocoBirthdayListSums;
         

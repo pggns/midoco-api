@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoOrderStatus extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderPayment
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment[]
      */
     protected ?array $MidocoOrderPayment = null;
     /**
@@ -28,7 +28,7 @@ class MidocoOrderStatus extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderAttribute
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute[]
      */
     protected ?array $MidocoOrderAttribute = null;
     /**
@@ -65,8 +65,8 @@ class MidocoOrderStatus extends AbstractStructBase
      * @uses MidocoOrderStatus::setDunningLevel()
      * @uses MidocoOrderStatus::setDunningDate()
      * @uses MidocoOrderStatus::setPaymentDueDate()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment[] $midocoOrderPayment
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute[] $midocoOrderAttribute
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment[] $midocoOrderPayment
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute[] $midocoOrderAttribute
      * @param int $orderId
      * @param int $orderNo
      * @param int $dunningLevel
@@ -86,7 +86,7 @@ class MidocoOrderStatus extends AbstractStructBase
     }
     /**
      * Get MidocoOrderPayment value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment[]
      */
     public function getMidocoOrderPayment(): ?array
     {
@@ -107,12 +107,12 @@ class MidocoOrderStatus extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoOrderStatusMidocoOrderPaymentItem) {
             // validation for constraint: itemType
-            if (!$midocoOrderStatusMidocoOrderPaymentItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment) {
+            if (!$midocoOrderStatusMidocoOrderPaymentItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment) {
                 $invalidValues[] = is_object($midocoOrderStatusMidocoOrderPaymentItem) ? get_class($midocoOrderStatusMidocoOrderPaymentItem) : sprintf('%s(%s)', gettype($midocoOrderStatusMidocoOrderPaymentItem), var_export($midocoOrderStatusMidocoOrderPaymentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderPayment property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderPayment property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -121,8 +121,8 @@ class MidocoOrderStatus extends AbstractStructBase
     /**
      * Set MidocoOrderPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment[] $midocoOrderPayment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderStatus
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment[] $midocoOrderPayment
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderStatus
      */
     public function setMidocoOrderPayment(?array $midocoOrderPayment = null): self
     {
@@ -137,14 +137,14 @@ class MidocoOrderStatus extends AbstractStructBase
     /**
      * Add item to MidocoOrderPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderStatus
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderStatus
      */
-    public function addToMidocoOrderPayment(\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment $item): self
+    public function addToMidocoOrderPayment(\Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderPayment property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderPayment property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoOrderPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderPayment[] = $item;
         
@@ -152,7 +152,7 @@ class MidocoOrderStatus extends AbstractStructBase
     }
     /**
      * Get MidocoOrderAttribute value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute[]
      */
     public function getMidocoOrderAttribute(): ?array
     {
@@ -173,12 +173,12 @@ class MidocoOrderStatus extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoOrderStatusMidocoOrderAttributeItem) {
             // validation for constraint: itemType
-            if (!$midocoOrderStatusMidocoOrderAttributeItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute) {
+            if (!$midocoOrderStatusMidocoOrderAttributeItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute) {
                 $invalidValues[] = is_object($midocoOrderStatusMidocoOrderAttributeItem) ? get_class($midocoOrderStatusMidocoOrderAttributeItem) : sprintf('%s(%s)', gettype($midocoOrderStatusMidocoOrderAttributeItem), var_export($midocoOrderStatusMidocoOrderAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderAttribute property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderAttribute property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -187,8 +187,8 @@ class MidocoOrderStatus extends AbstractStructBase
     /**
      * Set MidocoOrderAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute[] $midocoOrderAttribute
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderStatus
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute[] $midocoOrderAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderStatus
      */
     public function setMidocoOrderAttribute(?array $midocoOrderAttribute = null): self
     {
@@ -203,14 +203,14 @@ class MidocoOrderStatus extends AbstractStructBase
     /**
      * Add item to MidocoOrderAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderStatus
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderStatus
      */
-    public function addToMidocoOrderAttribute(\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute $item): self
+    public function addToMidocoOrderAttribute(\Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderAttribute property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderAttribute property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderAttribute[] = $item;
         
@@ -227,7 +227,7 @@ class MidocoOrderStatus extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderStatus
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -250,7 +250,7 @@ class MidocoOrderStatus extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderStatus
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -273,7 +273,7 @@ class MidocoOrderStatus extends AbstractStructBase
     /**
      * Set dunningLevel value
      * @param int $dunningLevel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderStatus
      */
     public function setDunningLevel(?int $dunningLevel = null): self
     {
@@ -296,7 +296,7 @@ class MidocoOrderStatus extends AbstractStructBase
     /**
      * Set dunningDate value
      * @param string $dunningDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderStatus
      */
     public function setDunningDate(?string $dunningDate = null): self
     {
@@ -319,7 +319,7 @@ class MidocoOrderStatus extends AbstractStructBase
     /**
      * Set paymentDueDate value
      * @param string $paymentDueDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderStatus
      */
     public function setPaymentDueDate(?string $paymentDueDate = null): self
     {

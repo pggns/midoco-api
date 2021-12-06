@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class UserBonusOrgunitDTO extends AbstractStructBase
     /**
      * Set baseAmountRule value
      * @param float $baseAmountRule
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserBonusOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserBonusOrgunitDTO
      */
     public function setBaseAmountRule(?float $baseAmountRule = null): self
     {
@@ -102,7 +102,7 @@ class UserBonusOrgunitDTO extends AbstractStructBase
     /**
      * Set bonusId value
      * @param int $bonusId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserBonusOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserBonusOrgunitDTO
      */
     public function setBonusId(?int $bonusId = null): self
     {
@@ -125,7 +125,7 @@ class UserBonusOrgunitDTO extends AbstractStructBase
     /**
      * Set grantedAmountRule value
      * @param float $grantedAmountRule
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserBonusOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserBonusOrgunitDTO
      */
     public function setGrantedAmountRule(?float $grantedAmountRule = null): self
     {
@@ -148,7 +148,7 @@ class UserBonusOrgunitDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserBonusOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserBonusOrgunitDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -171,7 +171,7 @@ class UserBonusOrgunitDTO extends AbstractStructBase
     /**
      * Set userBonusId value
      * @param int $userBonusId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserBonusOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserBonusOrgunitDTO
      */
     public function setUserBonusId(?int $userBonusId = null): self
     {
@@ -194,7 +194,7 @@ class UserBonusOrgunitDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserBonusOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserBonusOrgunitDTO
      */
     public function setUserId(?int $userId = null): self
     {

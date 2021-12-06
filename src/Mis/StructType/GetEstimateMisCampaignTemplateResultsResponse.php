@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -80,7 +80,7 @@ class GetEstimateMisCampaignTemplateResultsResponse extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetEstimateMisCampaignTemplateResultsResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\GetEstimateMisCampaignTemplateResultsResponse
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -96,7 +96,7 @@ class GetEstimateMisCampaignTemplateResultsResponse extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetEstimateMisCampaignTemplateResultsResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\GetEstimateMisCampaignTemplateResultsResponse
      */
     public function addToOrgUnits(string $item): self
     {
@@ -146,7 +146,7 @@ class GetEstimateMisCampaignTemplateResultsResponse extends AbstractStructBase
      * Set noOfResults value
      * @throws InvalidArgumentException
      * @param int[] $noOfResults
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetEstimateMisCampaignTemplateResultsResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\GetEstimateMisCampaignTemplateResultsResponse
      */
     public function setNoOfResults(?array $noOfResults = null): self
     {
@@ -162,7 +162,7 @@ class GetEstimateMisCampaignTemplateResultsResponse extends AbstractStructBase
      * Add item to noOfResults value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetEstimateMisCampaignTemplateResultsResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\GetEstimateMisCampaignTemplateResultsResponse
      */
     public function addToNoOfResults(int $item): self
     {

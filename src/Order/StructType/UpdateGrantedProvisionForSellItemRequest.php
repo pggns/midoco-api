@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class UpdateGrantedProvisionForSellItemRequest extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateGrantedProvisionForSellItemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateGrantedProvisionForSellItemRequest
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -94,7 +94,7 @@ class UpdateGrantedProvisionForSellItemRequest extends AbstractStructBase
     /**
      * Set vat_incl_amount value
      * @param float $vat_incl_amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateGrantedProvisionForSellItemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateGrantedProvisionForSellItemRequest
      */
     public function setVat_incl_amount(?float $vat_incl_amount = null): self
     {
@@ -117,7 +117,7 @@ class UpdateGrantedProvisionForSellItemRequest extends AbstractStructBase
     /**
      * Set vat_free_amount value
      * @param float $vat_free_amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateGrantedProvisionForSellItemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateGrantedProvisionForSellItemRequest
      */
     public function setVat_free_amount(?float $vat_free_amount = null): self
     {
@@ -140,7 +140,7 @@ class UpdateGrantedProvisionForSellItemRequest extends AbstractStructBase
     /**
      * Set vat_insurance value
      * @param float $vat_insurance
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateGrantedProvisionForSellItemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateGrantedProvisionForSellItemRequest
      */
     public function setVat_insurance(?float $vat_insurance = null): self
     {
@@ -163,7 +163,7 @@ class UpdateGrantedProvisionForSellItemRequest extends AbstractStructBase
     /**
      * Set grantedRevenue value
      * @param float $grantedRevenue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateGrantedProvisionForSellItemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateGrantedProvisionForSellItemRequest
      */
     public function setGrantedRevenue(?float $grantedRevenue = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -149,7 +149,7 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
      * Set sellItemId value
      * @throws InvalidArgumentException
      * @param int[] $sellItemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoRequest
      */
     public function setSellItemId(?array $sellItemId = null): self
     {
@@ -165,7 +165,7 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
      * Add item to sellItemId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoRequest
      */
     public function addToSellItemId(int $item): self
     {
@@ -188,7 +188,7 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
     /**
      * Set creationDateFrom value
      * @param string $creationDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoRequest
      */
     public function setCreationDateFrom(?string $creationDateFrom = null): self
     {
@@ -211,7 +211,7 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
     /**
      * Set creationDateTo value
      * @param string $creationDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoRequest
      */
     public function setCreationDateTo(?string $creationDateTo = null): self
     {
@@ -234,7 +234,7 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
     /**
      * Set travelDateFrom value
      * @param string $travelDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoRequest
      */
     public function setTravelDateFrom(?string $travelDateFrom = null): self
     {
@@ -257,7 +257,7 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
     /**
      * Set travelDateTo value
      * @param string $travelDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoRequest
      */
     public function setTravelDateTo(?string $travelDateTo = null): self
     {
@@ -280,7 +280,7 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
     /**
      * Set returnDateFrom value
      * @param string $returnDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoRequest
      */
     public function setReturnDateFrom(?string $returnDateFrom = null): self
     {
@@ -303,7 +303,7 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
     /**
      * Set returnDateTo value
      * @param string $returnDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoRequest
      */
     public function setReturnDateTo(?string $returnDateTo = null): self
     {
@@ -326,7 +326,7 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
     /**
      * Set activeSettlement value
      * @param bool $activeSettlement
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoRequest
      */
     public function setActiveSettlement(?bool $activeSettlement = null): self
     {
@@ -349,7 +349,7 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
     /**
      * Set settlementGroup value
      * @param string $settlementGroup
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoRequest
      */
     public function setSettlementGroup(?string $settlementGroup = null): self
     {
@@ -372,7 +372,7 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -395,7 +395,7 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

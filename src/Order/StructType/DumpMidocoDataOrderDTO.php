@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DumpMidocoDataOrderDTO extends AbstractStructBase
     /**
      * Set lastExport value
      * @param string $lastExport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DumpMidocoDataOrderDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DumpMidocoDataOrderDTO
      */
     public function setLastExport(?string $lastExport = null): self
     {

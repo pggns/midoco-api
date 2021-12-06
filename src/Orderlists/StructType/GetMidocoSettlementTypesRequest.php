@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetMidocoSettlementTypesRequest extends AbstractStructBase
      * The MidocoSettlementType
      * Meta information extracted from the WSDL
      * - ref: MidocoSettlementType
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO $MidocoSettlementType = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO $MidocoSettlementType = null;
     /**
      * The includeHidden
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class GetMidocoSettlementTypesRequest extends AbstractStructBase
      * Constructor method for GetMidocoSettlementTypesRequest
      * @uses GetMidocoSettlementTypesRequest::setMidocoSettlementType()
      * @uses GetMidocoSettlementTypesRequest::setIncludeHidden()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType
      * @param bool $includeHidden
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType = null, ?bool $includeHidden = true)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType = null, ?bool $includeHidden = true)
     {
         $this
             ->setMidocoSettlementType($midocoSettlementType)
@@ -42,18 +42,18 @@ class GetMidocoSettlementTypesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSettlementType value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO|null
      */
-    public function getMidocoSettlementType(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO
+    public function getMidocoSettlementType(): ?\Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO
     {
         return $this->MidocoSettlementType;
     }
     /**
      * Set MidocoSettlementType value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMidocoSettlementTypesRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMidocoSettlementTypesRequest
      */
-    public function setMidocoSettlementType(?\Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType = null): self
+    public function setMidocoSettlementType(?\Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType = null): self
     {
         $this->MidocoSettlementType = $midocoSettlementType;
         
@@ -70,7 +70,7 @@ class GetMidocoSettlementTypesRequest extends AbstractStructBase
     /**
      * Set includeHidden value
      * @param bool $includeHidden
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMidocoSettlementTypesRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMidocoSettlementTypesRequest
      */
     public function setIncludeHidden(?bool $includeHidden = true): self
     {

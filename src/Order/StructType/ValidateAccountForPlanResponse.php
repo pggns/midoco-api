@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class ValidateAccountForPlanResponse extends AbstractStructBase
     /**
      * Set isValid value
      * @param bool $isValid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ValidateAccountForPlanResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ValidateAccountForPlanResponse
      */
     public function setIsValid(?bool $isValid = null): self
     {

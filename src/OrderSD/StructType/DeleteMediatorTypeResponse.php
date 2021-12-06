@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteMediatorTypeResponse extends AbstractStructBase
     /**
      * Set result value
      * @param string $result
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteMediatorTypeResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteMediatorTypeResponse
      */
     public function setResult(?string $result = null): self
     {

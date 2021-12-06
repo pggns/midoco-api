@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchAttributeDefinitionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAttributeDefinition
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionType[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionType[]
      */
     protected ?array $MidocoAttributeDefinition = null;
     /**
      * Constructor method for SearchAttributeDefinitionResponse
      * @uses SearchAttributeDefinitionResponse::setMidocoAttributeDefinition()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionType[] $midocoAttributeDefinition
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionType[] $midocoAttributeDefinition
      */
     public function __construct(?array $midocoAttributeDefinition = null)
     {
@@ -34,7 +34,7 @@ class SearchAttributeDefinitionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAttributeDefinition value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionType[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionType[]
      */
     public function getMidocoAttributeDefinition(): ?array
     {
@@ -55,12 +55,12 @@ class SearchAttributeDefinitionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchAttributeDefinitionResponseMidocoAttributeDefinitionItem) {
             // validation for constraint: itemType
-            if (!$searchAttributeDefinitionResponseMidocoAttributeDefinitionItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionType) {
+            if (!$searchAttributeDefinitionResponseMidocoAttributeDefinitionItem instanceof \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionType) {
                 $invalidValues[] = is_object($searchAttributeDefinitionResponseMidocoAttributeDefinitionItem) ? get_class($searchAttributeDefinitionResponseMidocoAttributeDefinitionItem) : sprintf('%s(%s)', gettype($searchAttributeDefinitionResponseMidocoAttributeDefinitionItem), var_export($searchAttributeDefinitionResponseMidocoAttributeDefinitionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAttributeDefinition property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAttributeDefinition property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchAttributeDefinitionResponse extends AbstractStructBase
     /**
      * Set MidocoAttributeDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionType[] $midocoAttributeDefinition
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchAttributeDefinitionResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionType[] $midocoAttributeDefinition
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchAttributeDefinitionResponse
      */
     public function setMidocoAttributeDefinition(?array $midocoAttributeDefinition = null): self
     {
@@ -85,14 +85,14 @@ class SearchAttributeDefinitionResponse extends AbstractStructBase
     /**
      * Add item to MidocoAttributeDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionType $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchAttributeDefinitionResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionType $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchAttributeDefinitionResponse
      */
-    public function addToMidocoAttributeDefinition(\Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionType $item): self
+    public function addToMidocoAttributeDefinition(\Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionType) {
-            throw new InvalidArgumentException(sprintf('The MidocoAttributeDefinition property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionType) {
+            throw new InvalidArgumentException(sprintf('The MidocoAttributeDefinition property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAttributeDefinition[] = $item;
         

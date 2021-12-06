@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class OrgunitchangeDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\System\StructType\OrgunitchangeDTO
+     * @return \Pggns\MidocoApi\System\StructType\OrgunitchangeDTO
      */
     public function setAction(?string $action = null): self
     {
@@ -86,7 +86,7 @@ class OrgunitchangeDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\System\StructType\OrgunitchangeDTO
+     * @return \Pggns\MidocoApi\System\StructType\OrgunitchangeDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -109,7 +109,7 @@ class OrgunitchangeDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\System\StructType\OrgunitchangeDTO
+     * @return \Pggns\MidocoApi\System\StructType\OrgunitchangeDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -132,7 +132,7 @@ class OrgunitchangeDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\OrgunitchangeDTO
+     * @return \Pggns\MidocoApi\System\StructType\OrgunitchangeDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

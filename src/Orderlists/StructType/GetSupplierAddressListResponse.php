@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSupplierAddressListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierAddress
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress[]
      */
     protected ?array $MidocoSupplierAddress = null;
     /**
      * Constructor method for GetSupplierAddressListResponse
      * @uses GetSupplierAddressListResponse::setMidocoSupplierAddress()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress[] $midocoSupplierAddress
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress[] $midocoSupplierAddress
      */
     public function __construct(?array $midocoSupplierAddress = null)
     {
@@ -34,7 +34,7 @@ class GetSupplierAddressListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierAddress value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress[]
      */
     public function getMidocoSupplierAddress(): ?array
     {
@@ -55,12 +55,12 @@ class GetSupplierAddressListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSupplierAddressListResponseMidocoSupplierAddressItem) {
             // validation for constraint: itemType
-            if (!$getSupplierAddressListResponseMidocoSupplierAddressItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress) {
+            if (!$getSupplierAddressListResponseMidocoSupplierAddressItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress) {
                 $invalidValues[] = is_object($getSupplierAddressListResponseMidocoSupplierAddressItem) ? get_class($getSupplierAddressListResponseMidocoSupplierAddressItem) : sprintf('%s(%s)', gettype($getSupplierAddressListResponseMidocoSupplierAddressItem), var_export($getSupplierAddressListResponseMidocoSupplierAddressItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierAddress property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierAddress property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSupplierAddressListResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress[] $midocoSupplierAddress
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSupplierAddressListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress[] $midocoSupplierAddress
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSupplierAddressListResponse
      */
     public function setMidocoSupplierAddress(?array $midocoSupplierAddress = null): self
     {
@@ -85,14 +85,14 @@ class GetSupplierAddressListResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSupplierAddressListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSupplierAddressListResponse
      */
-    public function addToMidocoSupplierAddress(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress $item): self
+    public function addToMidocoSupplierAddress(\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierAddress property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierAddress property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierAddress[] = $item;
         

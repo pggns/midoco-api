@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ProductTypeDimensionDTO extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ProductTypeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ProductTypeDimensionDTO
      */
     public function setProductType(?string $productType = null): self
     {
@@ -70,7 +70,7 @@ class ProductTypeDimensionDTO extends AbstractStructBase
     /**
      * Set productTypeId value
      * @param int $productTypeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ProductTypeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ProductTypeDimensionDTO
      */
     public function setProductTypeId(?int $productTypeId = null): self
     {

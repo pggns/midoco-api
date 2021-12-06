@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class InsuranceTariffDescDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\InsuranceTariffDescDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\InsuranceTariffDescDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -78,7 +78,7 @@ class InsuranceTariffDescDTO extends AbstractStructBase
     /**
      * Set insuranceTariffId value
      * @param int $insuranceTariffId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\InsuranceTariffDescDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\InsuranceTariffDescDTO
      */
     public function setInsuranceTariffId(?int $insuranceTariffId = null): self
     {
@@ -101,7 +101,7 @@ class InsuranceTariffDescDTO extends AbstractStructBase
     /**
      * Set languageCode value
      * @param string $languageCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\InsuranceTariffDescDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\InsuranceTariffDescDTO
      */
     public function setLanguageCode(?string $languageCode = null): self
     {

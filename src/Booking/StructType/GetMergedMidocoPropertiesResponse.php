@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class GetMergedMidocoPropertiesResponse extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoProperties
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\MidocoProperties|null
+     * @var \Pggns\MidocoApi\Booking\StructType\MidocoProperties|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\MidocoProperties $MidocoProperties = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\MidocoProperties $MidocoProperties = null;
     /**
      * Constructor method for GetMergedMidocoPropertiesResponse
      * @uses GetMergedMidocoPropertiesResponse::setMidocoProperties()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoProperties $midocoProperties
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoProperties $midocoProperties
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\MidocoProperties $midocoProperties = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\MidocoProperties $midocoProperties = null)
     {
         $this
             ->setMidocoProperties($midocoProperties);
     }
     /**
      * Get MidocoProperties value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoProperties|null
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoProperties|null
      */
-    public function getMidocoProperties(): ?\Pggns\MidocoApi\Api\Booking\StructType\MidocoProperties
+    public function getMidocoProperties(): ?\Pggns\MidocoApi\Booking\StructType\MidocoProperties
     {
         return $this->MidocoProperties;
     }
     /**
      * Set MidocoProperties value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoProperties $midocoProperties
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetMergedMidocoPropertiesResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoProperties $midocoProperties
+     * @return \Pggns\MidocoApi\Booking\StructType\GetMergedMidocoPropertiesResponse
      */
-    public function setMidocoProperties(?\Pggns\MidocoApi\Api\Booking\StructType\MidocoProperties $midocoProperties = null): self
+    public function setMidocoProperties(?\Pggns\MidocoApi\Booking\StructType\MidocoProperties $midocoProperties = null): self
     {
         $this->MidocoProperties = $midocoProperties;
         

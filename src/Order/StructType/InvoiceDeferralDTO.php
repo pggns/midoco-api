@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class InvoiceDeferralDTO extends AbstractStructBase
     /**
      * Set accrualType value
      * @param string $accrualType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralDTO
      */
     public function setAccrualType(?string $accrualType = null): self
     {
@@ -158,7 +158,7 @@ class InvoiceDeferralDTO extends AbstractStructBase
     /**
      * Set bookingText value
      * @param string $bookingText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralDTO
      */
     public function setBookingText(?string $bookingText = null): self
     {
@@ -181,7 +181,7 @@ class InvoiceDeferralDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -204,7 +204,7 @@ class InvoiceDeferralDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -227,7 +227,7 @@ class InvoiceDeferralDTO extends AbstractStructBase
     /**
      * Set creditorNo value
      * @param string $creditorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralDTO
      */
     public function setCreditorNo(?string $creditorNo = null): self
     {
@@ -250,7 +250,7 @@ class InvoiceDeferralDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -273,7 +273,7 @@ class InvoiceDeferralDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -296,7 +296,7 @@ class InvoiceDeferralDTO extends AbstractStructBase
     /**
      * Set deferralId value
      * @param int $deferralId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralDTO
      */
     public function setDeferralId(?int $deferralId = null): self
     {
@@ -319,7 +319,7 @@ class InvoiceDeferralDTO extends AbstractStructBase
     /**
      * Set isVoided value
      * @param bool $isVoided
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralDTO
      */
     public function setIsVoided(?bool $isVoided = null): self
     {
@@ -342,7 +342,7 @@ class InvoiceDeferralDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -365,7 +365,7 @@ class InvoiceDeferralDTO extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralDTO
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -388,7 +388,7 @@ class InvoiceDeferralDTO extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param int $receiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralDTO
      */
     public function setReceiptNo(?int $receiptNo = null): self
     {
@@ -411,7 +411,7 @@ class InvoiceDeferralDTO extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralDTO
      */
     public function setTravelDate(?string $travelDate = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class EinvoiceGatewayDTO extends AbstractStructBase
     /**
      * Set configuration value
      * @param string $configuration
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceGatewayDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO
      */
     public function setConfiguration(?string $configuration = null): self
     {
@@ -94,7 +94,7 @@ class EinvoiceGatewayDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceGatewayDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -117,7 +117,7 @@ class EinvoiceGatewayDTO extends AbstractStructBase
     /**
      * Set gateway value
      * @param string $gateway
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceGatewayDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO
      */
     public function setGateway(?string $gateway = null): self
     {
@@ -140,7 +140,7 @@ class EinvoiceGatewayDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceGatewayDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -163,7 +163,7 @@ class EinvoiceGatewayDTO extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceGatewayDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO
      */
     public function setUrl(?string $url = null): self
     {

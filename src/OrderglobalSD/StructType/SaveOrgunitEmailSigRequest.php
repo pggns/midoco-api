@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class SaveOrgunitEmailSigRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoOrgunitEmailSig
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\OrgunitEmailSigDTO[]
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\OrgunitEmailSigDTO[]
      */
     protected ?array $MidocoOrgunitEmailSig = null;
     /**
      * Constructor method for SaveOrgunitEmailSigRequest
      * @uses SaveOrgunitEmailSigRequest::setMidocoOrgunitEmailSig()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\OrgunitEmailSigDTO[] $midocoOrgunitEmailSig
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\OrgunitEmailSigDTO[] $midocoOrgunitEmailSig
      */
     public function __construct(?array $midocoOrgunitEmailSig = null)
     {
@@ -33,7 +33,7 @@ class SaveOrgunitEmailSigRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrgunitEmailSig value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\OrgunitEmailSigDTO[]
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\OrgunitEmailSigDTO[]
      */
     public function getMidocoOrgunitEmailSig(): ?array
     {
@@ -54,12 +54,12 @@ class SaveOrgunitEmailSigRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveOrgunitEmailSigRequestMidocoOrgunitEmailSigItem) {
             // validation for constraint: itemType
-            if (!$saveOrgunitEmailSigRequestMidocoOrgunitEmailSigItem instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\OrgunitEmailSigDTO) {
+            if (!$saveOrgunitEmailSigRequestMidocoOrgunitEmailSigItem instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\OrgunitEmailSigDTO) {
                 $invalidValues[] = is_object($saveOrgunitEmailSigRequestMidocoOrgunitEmailSigItem) ? get_class($saveOrgunitEmailSigRequestMidocoOrgunitEmailSigItem) : sprintf('%s(%s)', gettype($saveOrgunitEmailSigRequestMidocoOrgunitEmailSigItem), var_export($saveOrgunitEmailSigRequestMidocoOrgunitEmailSigItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrgunitEmailSig property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\OrgunitEmailSigDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrgunitEmailSig property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\OrgunitEmailSigDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class SaveOrgunitEmailSigRequest extends AbstractStructBase
     /**
      * Set MidocoOrgunitEmailSig value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\OrgunitEmailSigDTO[] $midocoOrgunitEmailSig
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveOrgunitEmailSigRequest
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\OrgunitEmailSigDTO[] $midocoOrgunitEmailSig
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SaveOrgunitEmailSigRequest
      */
     public function setMidocoOrgunitEmailSig(?array $midocoOrgunitEmailSig = null): self
     {
@@ -84,14 +84,14 @@ class SaveOrgunitEmailSigRequest extends AbstractStructBase
     /**
      * Add item to MidocoOrgunitEmailSig value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\OrgunitEmailSigDTO $item
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveOrgunitEmailSigRequest
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\OrgunitEmailSigDTO $item
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SaveOrgunitEmailSigRequest
      */
-    public function addToMidocoOrgunitEmailSig(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\OrgunitEmailSigDTO $item): self
+    public function addToMidocoOrgunitEmailSig(\Pggns\MidocoApi\OrderglobalSD\StructType\OrgunitEmailSigDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\OrgunitEmailSigDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrgunitEmailSig property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\OrgunitEmailSigDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\OrgunitEmailSigDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrgunitEmailSig property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\OrgunitEmailSigDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrgunitEmailSig[] = $item;
         

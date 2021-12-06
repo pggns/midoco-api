@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoDebitorNoDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitorNoDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitorNoDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {

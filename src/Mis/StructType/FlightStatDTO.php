@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -191,7 +191,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set airlineFees value
      * @param float $airlineFees
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setAirlineFees(?float $airlineFees = null): self
     {
@@ -214,7 +214,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set airlineId value
      * @param int $airlineId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setAirlineId(?int $airlineId = null): self
     {
@@ -237,7 +237,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set commission value
      * @param float $commission
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setCommission(?float $commission = null): self
     {
@@ -260,7 +260,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -283,7 +283,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set departureCodeId value
      * @param int $departureCodeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setDepartureCodeId(?int $departureCodeId = null): self
     {
@@ -306,7 +306,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set destinationCodeId value
      * @param int $destinationCodeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setDestinationCodeId(?int $destinationCodeId = null): self
     {
@@ -329,7 +329,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set destinationKeyId value
      * @param int $destinationKeyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setDestinationKeyId(?int $destinationKeyId = null): self
     {
@@ -352,7 +352,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set documentTypeId value
      * @param int $documentTypeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setDocumentTypeId(?int $documentTypeId = null): self
     {
@@ -375,7 +375,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set extSystemId value
      * @param int $extSystemId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setExtSystemId(?int $extSystemId = null): self
     {
@@ -398,7 +398,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set farePrice value
      * @param float $farePrice
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setFarePrice(?float $farePrice = null): self
     {
@@ -421,7 +421,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set fareTypeId value
      * @param int $fareTypeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setFareTypeId(?int $fareTypeId = null): self
     {
@@ -444,7 +444,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set feeHidden value
      * @param float $feeHidden
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setFeeHidden(?float $feeHidden = null): self
     {
@@ -467,7 +467,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set feeVisible value
      * @param float $feeVisible
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setFeeVisible(?float $feeVisible = null): self
     {
@@ -490,7 +490,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set flightItemId value
      * @param int $flightItemId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setFlightItemId(?int $flightItemId = null): self
     {
@@ -513,7 +513,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set itemPrice value
      * @param float $itemPrice
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setItemPrice(?float $itemPrice = null): self
     {
@@ -536,7 +536,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -559,7 +559,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set orgUnitId value
      * @param int $orgUnitId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setOrgUnitId(?int $orgUnitId = null): self
     {
@@ -582,7 +582,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set tax value
      * @param float $tax
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setTax(?float $tax = null): self
     {
@@ -605,7 +605,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set ticketSellItemId value
      * @param int $ticketSellItemId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setTicketSellItemId(?int $ticketSellItemId = null): self
     {
@@ -628,7 +628,7 @@ class FlightStatDTO extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightStatDTO
      */
     public function setTravelDate(?string $travelDate = null): self
     {

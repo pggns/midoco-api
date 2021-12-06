@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -182,7 +182,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set amountPercent value
      * @param float $amountPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setAmountPercent(?float $amountPercent = null): self
     {
@@ -205,7 +205,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set automaticVat value
      * @param bool $automaticVat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setAutomaticVat(?bool $automaticVat = null): self
     {
@@ -228,7 +228,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set bookingText value
      * @param string $bookingText
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setBookingText(?string $bookingText = null): self
     {
@@ -251,7 +251,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set cacheId value
      * @param int $cacheId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setCacheId(?int $cacheId = null): self
     {
@@ -274,7 +274,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set contraAccount value
      * @param string $contraAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setContraAccount(?string $contraAccount = null): self
     {
@@ -297,7 +297,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -320,7 +320,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set costUnit value
      * @param string $costUnit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setCostUnit(?string $costUnit = null): self
     {
@@ -343,7 +343,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set creditEntry value
      * @param string $creditEntry
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setCreditEntry(?string $creditEntry = null): self
     {
@@ -366,7 +366,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set debitEntry value
      * @param string $debitEntry
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setDebitEntry(?string $debitEntry = null): self
     {
@@ -389,7 +389,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -412,7 +412,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -435,7 +435,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -458,7 +458,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -481,7 +481,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -504,7 +504,7 @@ class BankCachePositionDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankCachePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankCachePositionDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

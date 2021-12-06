@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class GetPrintedBillingDocRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintedBillingDocRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintedBillingDocRequest
      */
     public function setDocumentId(int $documentId): self
     {
@@ -84,7 +84,7 @@ class GetPrintedBillingDocRequest extends AbstractStructBase
     /**
      * Set version value
      * @param int $version
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintedBillingDocRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintedBillingDocRequest
      */
     public function setVersion(?int $version = 1): self
     {
@@ -107,7 +107,7 @@ class GetPrintedBillingDocRequest extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintedBillingDocRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintedBillingDocRequest
      */
     public function setMedia(?string $media = 'PRINT'): self
     {

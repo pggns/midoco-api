@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
      * The MidocoSystemAttributeLocalization
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeLocalization
-     * @var \Pggns\MidocoApi\Api\System\StructType\AttributeDefinitionLocalDTO|null
+     * @var \Pggns\MidocoApi\System\StructType\AttributeDefinitionLocalDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\System\StructType\AttributeDefinitionLocalDTO $MidocoSystemAttributeLocalization = null;
+    protected ?\Pggns\MidocoApi\System\StructType\AttributeDefinitionLocalDTO $MidocoSystemAttributeLocalization = null;
     /**
      * The isNew
      * @var bool|null
@@ -29,10 +29,10 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
      * Constructor method for SaveMidocoAttributeLocalizationRequest
      * @uses SaveMidocoAttributeLocalizationRequest::setMidocoSystemAttributeLocalization()
      * @uses SaveMidocoAttributeLocalizationRequest::setIsNew()
-     * @param \Pggns\MidocoApi\Api\System\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     * @param \Pggns\MidocoApi\System\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
      * @param bool $isNew
      */
-    public function __construct(?\Pggns\MidocoApi\Api\System\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null, ?bool $isNew = null)
+    public function __construct(?\Pggns\MidocoApi\System\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null, ?bool $isNew = null)
     {
         $this
             ->setMidocoSystemAttributeLocalization($midocoSystemAttributeLocalization)
@@ -40,18 +40,18 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSystemAttributeLocalization value
-     * @return \Pggns\MidocoApi\Api\System\StructType\AttributeDefinitionLocalDTO|null
+     * @return \Pggns\MidocoApi\System\StructType\AttributeDefinitionLocalDTO|null
      */
-    public function getMidocoSystemAttributeLocalization(): ?\Pggns\MidocoApi\Api\System\StructType\AttributeDefinitionLocalDTO
+    public function getMidocoSystemAttributeLocalization(): ?\Pggns\MidocoApi\System\StructType\AttributeDefinitionLocalDTO
     {
         return $this->MidocoSystemAttributeLocalization;
     }
     /**
      * Set MidocoSystemAttributeLocalization value
-     * @param \Pggns\MidocoApi\Api\System\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
-     * @return \Pggns\MidocoApi\Api\System\StructType\SaveMidocoAttributeLocalizationRequest
+     * @param \Pggns\MidocoApi\System\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     * @return \Pggns\MidocoApi\System\StructType\SaveMidocoAttributeLocalizationRequest
      */
-    public function setMidocoSystemAttributeLocalization(?\Pggns\MidocoApi\Api\System\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null): self
+    public function setMidocoSystemAttributeLocalization(?\Pggns\MidocoApi\System\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null): self
     {
         $this->MidocoSystemAttributeLocalization = $midocoSystemAttributeLocalization;
         
@@ -68,7 +68,7 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
     /**
      * Set isNew value
      * @param bool $isNew
-     * @return \Pggns\MidocoApi\Api\System\StructType\SaveMidocoAttributeLocalizationRequest
+     * @return \Pggns\MidocoApi\System\StructType\SaveMidocoAttributeLocalizationRequest
      */
     public function setIsNew(?bool $isNew = null): self
     {

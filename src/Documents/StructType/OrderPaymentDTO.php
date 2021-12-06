@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -167,7 +167,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set bookingUser value
      * @param int $bookingUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setBookingUser(?int $bookingUser = null): self
     {
@@ -190,7 +190,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -213,7 +213,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set contraAccountId value
      * @param string $contraAccountId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setContraAccountId(?string $contraAccountId = null): self
     {
@@ -236,7 +236,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -259,7 +259,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -282,7 +282,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -305,7 +305,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -328,7 +328,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set journalId value
      * @param int $journalId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setJournalId(?int $journalId = null): self
     {
@@ -351,7 +351,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -374,7 +374,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -397,7 +397,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -420,7 +420,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set paymentAmount value
      * @param float $paymentAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setPaymentAmount(?float $paymentAmount = null): self
     {
@@ -443,7 +443,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set paymentDate value
      * @param string $paymentDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setPaymentDate(?string $paymentDate = null): self
     {
@@ -466,7 +466,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set paymentId value
      * @param int $paymentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setPaymentId(?int $paymentId = null): self
     {
@@ -489,7 +489,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set paymentMethod value
      * @param string $paymentMethod
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setPaymentMethod(?string $paymentMethod = null): self
     {
@@ -512,7 +512,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set paymentText value
      * @param string $paymentText
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setPaymentText(?string $paymentText = null): self
     {
@@ -535,7 +535,7 @@ class OrderPaymentDTO extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPaymentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPaymentDTO
      */
     public function setPaymentType(?string $paymentType = null): self
     {

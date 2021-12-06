@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class GetOnlinePaymentTransaction4CreditReceiptRequest extends AbstractStructBas
      * The MidocoReceiptInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoReceiptInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo $MidocoReceiptInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo $MidocoReceiptInfo = null;
     /**
      * The orderId
      * Meta information extracted from the WSDL
@@ -32,10 +32,10 @@ class GetOnlinePaymentTransaction4CreditReceiptRequest extends AbstractStructBas
      * Constructor method for GetOnlinePaymentTransaction4CreditReceiptRequest
      * @uses GetOnlinePaymentTransaction4CreditReceiptRequest::setMidocoReceiptInfo()
      * @uses GetOnlinePaymentTransaction4CreditReceiptRequest::setOrderId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo
      * @param int $orderId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo = null, ?int $orderId = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo = null, ?int $orderId = null)
     {
         $this
             ->setMidocoReceiptInfo($midocoReceiptInfo)
@@ -43,18 +43,18 @@ class GetOnlinePaymentTransaction4CreditReceiptRequest extends AbstractStructBas
     }
     /**
      * Get MidocoReceiptInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo|null
      */
-    public function getMidocoReceiptInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo
+    public function getMidocoReceiptInfo(): ?\Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo
     {
         return $this->MidocoReceiptInfo;
     }
     /**
      * Set MidocoReceiptInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOnlinePaymentTransaction4CreditReceiptRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetOnlinePaymentTransaction4CreditReceiptRequest
      */
-    public function setMidocoReceiptInfo(?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo = null): self
+    public function setMidocoReceiptInfo(?\Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo = null): self
     {
         $this->MidocoReceiptInfo = $midocoReceiptInfo;
         
@@ -71,7 +71,7 @@ class GetOnlinePaymentTransaction4CreditReceiptRequest extends AbstractStructBas
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOnlinePaymentTransaction4CreditReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOnlinePaymentTransaction4CreditReceiptRequest
      */
     public function setOrderId(?int $orderId = null): self
     {

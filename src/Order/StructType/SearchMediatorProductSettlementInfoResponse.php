@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchMediatorProductSettlementInfoResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMediatorProductSettlementInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorProductSettlementInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMediatorProductSettlementInfo[]
      */
     protected ?array $MidocoMediatorProductSettlementInfo = null;
     /**
      * Constructor method for SearchMediatorProductSettlementInfoResponse
      * @uses SearchMediatorProductSettlementInfoResponse::setMidocoMediatorProductSettlementInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorProductSettlementInfo[] $midocoMediatorProductSettlementInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMediatorProductSettlementInfo[] $midocoMediatorProductSettlementInfo
      */
     public function __construct(?array $midocoMediatorProductSettlementInfo = null)
     {
@@ -34,7 +34,7 @@ class SearchMediatorProductSettlementInfoResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMediatorProductSettlementInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorProductSettlementInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMediatorProductSettlementInfo[]
      */
     public function getMidocoMediatorProductSettlementInfo(): ?array
     {
@@ -55,12 +55,12 @@ class SearchMediatorProductSettlementInfoResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchMediatorProductSettlementInfoResponseMidocoMediatorProductSettlementInfoItem) {
             // validation for constraint: itemType
-            if (!$searchMediatorProductSettlementInfoResponseMidocoMediatorProductSettlementInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorProductSettlementInfo) {
+            if (!$searchMediatorProductSettlementInfoResponseMidocoMediatorProductSettlementInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoMediatorProductSettlementInfo) {
                 $invalidValues[] = is_object($searchMediatorProductSettlementInfoResponseMidocoMediatorProductSettlementInfoItem) ? get_class($searchMediatorProductSettlementInfoResponseMidocoMediatorProductSettlementInfoItem) : sprintf('%s(%s)', gettype($searchMediatorProductSettlementInfoResponseMidocoMediatorProductSettlementInfoItem), var_export($searchMediatorProductSettlementInfoResponseMidocoMediatorProductSettlementInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMediatorProductSettlementInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorProductSettlementInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMediatorProductSettlementInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoMediatorProductSettlementInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchMediatorProductSettlementInfoResponse extends AbstractStructBase
     /**
      * Set MidocoMediatorProductSettlementInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorProductSettlementInfo[] $midocoMediatorProductSettlementInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorProductSettlementInfoResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMediatorProductSettlementInfo[] $midocoMediatorProductSettlementInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorProductSettlementInfoResponse
      */
     public function setMidocoMediatorProductSettlementInfo(?array $midocoMediatorProductSettlementInfo = null): self
     {
@@ -85,14 +85,14 @@ class SearchMediatorProductSettlementInfoResponse extends AbstractStructBase
     /**
      * Add item to MidocoMediatorProductSettlementInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorProductSettlementInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorProductSettlementInfoResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMediatorProductSettlementInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorProductSettlementInfoResponse
      */
-    public function addToMidocoMediatorProductSettlementInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorProductSettlementInfo $item): self
+    public function addToMidocoMediatorProductSettlementInfo(\Pggns\MidocoApi\Order\StructType\MidocoMediatorProductSettlementInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorProductSettlementInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoMediatorProductSettlementInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorProductSettlementInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoMediatorProductSettlementInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoMediatorProductSettlementInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoMediatorProductSettlementInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMediatorProductSettlementInfo[] = $item;
         

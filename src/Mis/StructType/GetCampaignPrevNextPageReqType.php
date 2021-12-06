@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetCampaignPrevNextPageReqType extends AbstractStructBase
      * The MidocoCrmCampaign
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCampaign
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $MidocoCrmCampaign = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $MidocoCrmCampaign = null;
     /**
      * The pageNo
      * @var int|null
@@ -35,11 +35,11 @@ class GetCampaignPrevNextPageReqType extends AbstractStructBase
      * @uses GetCampaignPrevNextPageReqType::setMidocoCrmCampaign()
      * @uses GetCampaignPrevNextPageReqType::setPageNo()
      * @uses GetCampaignPrevNextPageReqType::setOrgUnit()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
      * @param int $pageNo
      * @param string $orgUnit
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null, ?int $pageNo = null, ?string $orgUnit = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null, ?int $pageNo = null, ?string $orgUnit = null)
     {
         $this
             ->setMidocoCrmCampaign($midocoCrmCampaign)
@@ -48,18 +48,18 @@ class GetCampaignPrevNextPageReqType extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCampaign value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO|null
      */
-    public function getMidocoCrmCampaign(): ?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO
+    public function getMidocoCrmCampaign(): ?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO
     {
         return $this->MidocoCrmCampaign;
     }
     /**
      * Set MidocoCrmCampaign value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignPrevNextPageReqType
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignPrevNextPageReqType
      */
-    public function setMidocoCrmCampaign(?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null): self
+    public function setMidocoCrmCampaign(?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null): self
     {
         $this->MidocoCrmCampaign = $midocoCrmCampaign;
         
@@ -76,7 +76,7 @@ class GetCampaignPrevNextPageReqType extends AbstractStructBase
     /**
      * Set pageNo value
      * @param int $pageNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignPrevNextPageReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignPrevNextPageReqType
      */
     public function setPageNo(?int $pageNo = null): self
     {
@@ -99,7 +99,7 @@ class GetCampaignPrevNextPageReqType extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignPrevNextPageReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignPrevNextPageReqType
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSellItemSavingsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellItemSaving
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SellItemSavingDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\SellItemSavingDTO[]
      */
     protected ?array $MidocoSellItemSaving = null;
     /**
      * Constructor method for GetSellItemSavingsResponse
      * @uses GetSellItemSavingsResponse::setMidocoSellItemSaving()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemSavingDTO[] $midocoSellItemSaving
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemSavingDTO[] $midocoSellItemSaving
      */
     public function __construct(?array $midocoSellItemSaving = null)
     {
@@ -34,7 +34,7 @@ class GetSellItemSavingsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSellItemSaving value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemSavingDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemSavingDTO[]
      */
     public function getMidocoSellItemSaving(): ?array
     {
@@ -55,12 +55,12 @@ class GetSellItemSavingsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSellItemSavingsResponseMidocoSellItemSavingItem) {
             // validation for constraint: itemType
-            if (!$getSellItemSavingsResponseMidocoSellItemSavingItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemSavingDTO) {
+            if (!$getSellItemSavingsResponseMidocoSellItemSavingItem instanceof \Pggns\MidocoApi\Order\StructType\SellItemSavingDTO) {
                 $invalidValues[] = is_object($getSellItemSavingsResponseMidocoSellItemSavingItem) ? get_class($getSellItemSavingsResponseMidocoSellItemSavingItem) : sprintf('%s(%s)', gettype($getSellItemSavingsResponseMidocoSellItemSavingItem), var_export($getSellItemSavingsResponseMidocoSellItemSavingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellItemSaving property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemSavingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellItemSaving property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemSavingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSellItemSavingsResponse extends AbstractStructBase
     /**
      * Set MidocoSellItemSaving value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemSavingDTO[] $midocoSellItemSaving
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemSavingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemSavingDTO[] $midocoSellItemSaving
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemSavingsResponse
      */
     public function setMidocoSellItemSaving(?array $midocoSellItemSaving = null): self
     {
@@ -85,14 +85,14 @@ class GetSellItemSavingsResponse extends AbstractStructBase
     /**
      * Add item to MidocoSellItemSaving value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemSavingDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemSavingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemSavingDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemSavingsResponse
      */
-    public function addToMidocoSellItemSaving(\Pggns\MidocoApi\Api\Order\StructType\SellItemSavingDTO $item): self
+    public function addToMidocoSellItemSaving(\Pggns\MidocoApi\Order\StructType\SellItemSavingDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemSavingDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellItemSaving property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemSavingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SellItemSavingDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellItemSaving property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemSavingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellItemSaving[] = $item;
         

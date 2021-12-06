@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -78,7 +78,7 @@ class AnnounceA3MError extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceA3MError
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -101,7 +101,7 @@ class AnnounceA3MError extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceA3MError
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {
@@ -151,7 +151,7 @@ class AnnounceA3MError extends AbstractStructBase
      * Set errorArgs value
      * @throws InvalidArgumentException
      * @param string[] $errorArgs
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceA3MError
      */
     public function setErrorArgs(?array $errorArgs = null): self
     {
@@ -167,7 +167,7 @@ class AnnounceA3MError extends AbstractStructBase
      * Add item to errorArgs value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceA3MError
      */
     public function addToErrorArgs(string $item): self
     {
@@ -190,7 +190,7 @@ class AnnounceA3MError extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceA3MError
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -213,7 +213,7 @@ class AnnounceA3MError extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceA3MError
      */
     public function setOrderNo(?int $orderNo = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetAirlineByCodeRequest extends AbstractStructBase
     /**
      * Set carrierCode value
      * @param string $carrierCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirlineByCodeRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirlineByCodeRequest
      */
     public function setCarrierCode(?string $carrierCode = null): self
     {
@@ -72,7 +72,7 @@ class GetAirlineByCodeRequest extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirlineByCodeRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirlineByCodeRequest
      */
     public function setCountryCode(?string $countryCode = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set accountDiPayment value
      * @param string $accountDiPayment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setAccountDiPayment(?string $accountDiPayment = null): self
     {
@@ -198,7 +198,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set accountExpenseInvoice value
      * @param string $accountExpenseInvoice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setAccountExpenseInvoice(?string $accountExpenseInvoice = null): self
     {
@@ -221,7 +221,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set accountProvisionInsurance value
      * @param string $accountProvisionInsurance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setAccountProvisionInsurance(?string $accountProvisionInsurance = null): self
     {
@@ -244,7 +244,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set accountProvisionNovat value
      * @param string $accountProvisionNovat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setAccountProvisionNovat(?string $accountProvisionNovat = null): self
     {
@@ -267,7 +267,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set accountProvisionReceivable value
      * @param string $accountProvisionReceivable
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setAccountProvisionReceivable(?string $accountProvisionReceivable = null): self
     {
@@ -290,7 +290,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set accountProvisionVat value
      * @param string $accountProvisionVat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setAccountProvisionVat(?string $accountProvisionVat = null): self
     {
@@ -313,7 +313,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set accountRevenueOwnService value
      * @param string $accountRevenueOwnService
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setAccountRevenueOwnService(?string $accountRevenueOwnService = null): self
     {
@@ -336,7 +336,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -359,7 +359,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set forStorno value
      * @param bool $forStorno
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setForStorno(?bool $forStorno = null): self
     {
@@ -382,7 +382,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set interimAccount value
      * @param string $interimAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setInterimAccount(?string $interimAccount = null): self
     {
@@ -405,7 +405,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set marginAccount value
      * @param string $marginAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setMarginAccount(?string $marginAccount = null): self
     {
@@ -428,7 +428,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set marginAccountNegative value
      * @param string $marginAccountNegative
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setMarginAccountNegative(?string $marginAccountNegative = null): self
     {
@@ -451,7 +451,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set packageAccount value
      * @param string $packageAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setPackageAccount(?string $packageAccount = null): self
     {
@@ -474,7 +474,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setSettlementType(?string $settlementType = null): self
     {
@@ -497,7 +497,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set ssaId value
      * @param int $ssaId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setSsaId(?int $ssaId = null): self
     {
@@ -520,7 +520,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -543,7 +543,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -566,7 +566,7 @@ class SupplierSettlemAccountDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemAccountDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

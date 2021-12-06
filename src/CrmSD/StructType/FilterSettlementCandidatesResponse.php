@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class FilterSettlementCandidatesResponse extends AbstractStructBase
      * Set mediatorId value
      * @throws InvalidArgumentException
      * @param string[] $mediatorId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\FilterSettlementCandidatesResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\FilterSettlementCandidatesResponse
      */
     public function setMediatorId(?array $mediatorId = null): self
     {
@@ -87,7 +87,7 @@ class FilterSettlementCandidatesResponse extends AbstractStructBase
      * Add item to mediatorId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\FilterSettlementCandidatesResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\FilterSettlementCandidatesResponse
      */
     public function addToMediatorId(string $item): self
     {

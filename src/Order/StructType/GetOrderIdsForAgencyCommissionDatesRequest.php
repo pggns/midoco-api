@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -67,7 +67,7 @@ class GetOrderIdsForAgencyCommissionDatesRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderIdsForAgencyCommissionDatesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderIdsForAgencyCommissionDatesRequest
      */
     public function setAgencyId(string $agencyId): self
     {
@@ -90,7 +90,7 @@ class GetOrderIdsForAgencyCommissionDatesRequest extends AbstractStructBase
     /**
      * Set useTravelDates value
      * @param bool $useTravelDates
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderIdsForAgencyCommissionDatesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderIdsForAgencyCommissionDatesRequest
      */
     public function setUseTravelDates(?bool $useTravelDates = true): self
     {
@@ -113,7 +113,7 @@ class GetOrderIdsForAgencyCommissionDatesRequest extends AbstractStructBase
     /**
      * Set beginDate value
      * @param string $beginDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderIdsForAgencyCommissionDatesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderIdsForAgencyCommissionDatesRequest
      */
     public function setBeginDate(?string $beginDate = null): self
     {
@@ -136,7 +136,7 @@ class GetOrderIdsForAgencyCommissionDatesRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderIdsForAgencyCommissionDatesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderIdsForAgencyCommissionDatesRequest
      */
     public function setEndDate(?string $endDate = null): self
     {

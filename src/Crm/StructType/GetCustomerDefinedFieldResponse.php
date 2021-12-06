@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCustomerDefinedFieldResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerDefinedField
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO[]
      */
     protected ?array $MidocoCustomerDefinedField = null;
     /**
      * Constructor method for GetCustomerDefinedFieldResponse
      * @uses GetCustomerDefinedFieldResponse::setMidocoCustomerDefinedField()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO[] $midocoCustomerDefinedField
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO[] $midocoCustomerDefinedField
      */
     public function __construct(?array $midocoCustomerDefinedField = null)
     {
@@ -34,7 +34,7 @@ class GetCustomerDefinedFieldResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerDefinedField value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO[]
      */
     public function getMidocoCustomerDefinedField(): ?array
     {
@@ -55,12 +55,12 @@ class GetCustomerDefinedFieldResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCustomerDefinedFieldResponseMidocoCustomerDefinedFieldItem) {
             // validation for constraint: itemType
-            if (!$getCustomerDefinedFieldResponseMidocoCustomerDefinedFieldItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO) {
+            if (!$getCustomerDefinedFieldResponseMidocoCustomerDefinedFieldItem instanceof \Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO) {
                 $invalidValues[] = is_object($getCustomerDefinedFieldResponseMidocoCustomerDefinedFieldItem) ? get_class($getCustomerDefinedFieldResponseMidocoCustomerDefinedFieldItem) : sprintf('%s(%s)', gettype($getCustomerDefinedFieldResponseMidocoCustomerDefinedFieldItem), var_export($getCustomerDefinedFieldResponseMidocoCustomerDefinedFieldItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerDefinedField property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerDefinedField property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCustomerDefinedFieldResponse extends AbstractStructBase
     /**
      * Set MidocoCustomerDefinedField value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO[] $midocoCustomerDefinedField
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerDefinedFieldResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO[] $midocoCustomerDefinedField
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerDefinedFieldResponse
      */
     public function setMidocoCustomerDefinedField(?array $midocoCustomerDefinedField = null): self
     {
@@ -85,14 +85,14 @@ class GetCustomerDefinedFieldResponse extends AbstractStructBase
     /**
      * Add item to MidocoCustomerDefinedField value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerDefinedFieldResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerDefinedFieldResponse
      */
-    public function addToMidocoCustomerDefinedField(\Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO $item): self
+    public function addToMidocoCustomerDefinedField(\Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerDefinedField property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CustomerDefinedFieldDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerDefinedField property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CustomerDefinedFieldDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerDefinedField[] = $item;
         

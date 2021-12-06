@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoRuleTypesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoRuleType
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\RuleTypeDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\RuleTypeDTO[]
      */
     protected ?array $MidocoRuleType = null;
     /**
      * Constructor method for GetMidocoRuleTypesResponse
      * @uses GetMidocoRuleTypesResponse::setMidocoRuleType()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\RuleTypeDTO[] $midocoRuleType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\RuleTypeDTO[] $midocoRuleType
      */
     public function __construct(?array $midocoRuleType = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoRuleTypesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoRuleType value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\RuleTypeDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RuleTypeDTO[]
      */
     public function getMidocoRuleType(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoRuleTypesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoRuleTypesResponseMidocoRuleTypeItem) {
             // validation for constraint: itemType
-            if (!$getMidocoRuleTypesResponseMidocoRuleTypeItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\RuleTypeDTO) {
+            if (!$getMidocoRuleTypesResponseMidocoRuleTypeItem instanceof \Pggns\MidocoApi\Orderlists\StructType\RuleTypeDTO) {
                 $invalidValues[] = is_object($getMidocoRuleTypesResponseMidocoRuleTypeItem) ? get_class($getMidocoRuleTypesResponseMidocoRuleTypeItem) : sprintf('%s(%s)', gettype($getMidocoRuleTypesResponseMidocoRuleTypeItem), var_export($getMidocoRuleTypesResponseMidocoRuleTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRuleType property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\RuleTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRuleType property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\RuleTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoRuleTypesResponse extends AbstractStructBase
     /**
      * Set MidocoRuleType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\RuleTypeDTO[] $midocoRuleType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMidocoRuleTypesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\RuleTypeDTO[] $midocoRuleType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMidocoRuleTypesResponse
      */
     public function setMidocoRuleType(?array $midocoRuleType = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoRuleTypesResponse extends AbstractStructBase
     /**
      * Add item to MidocoRuleType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\RuleTypeDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMidocoRuleTypesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\RuleTypeDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMidocoRuleTypesResponse
      */
-    public function addToMidocoRuleType(\Pggns\MidocoApi\Api\Orderlists\StructType\RuleTypeDTO $item): self
+    public function addToMidocoRuleType(\Pggns\MidocoApi\Orderlists\StructType\RuleTypeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\RuleTypeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoRuleType property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\RuleTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\RuleTypeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoRuleType property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\RuleTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRuleType[] = $item;
         

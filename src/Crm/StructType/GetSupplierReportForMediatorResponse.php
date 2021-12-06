@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSupplierReportForMediatorResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMediatorRevenue
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorRevenue[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoMediatorRevenue[]
      */
     protected ?array $MidocoMediatorRevenue = null;
     /**
      * Constructor method for GetSupplierReportForMediatorResponse
      * @uses GetSupplierReportForMediatorResponse::setMidocoMediatorRevenue()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorRevenue[] $midocoMediatorRevenue
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMediatorRevenue[] $midocoMediatorRevenue
      */
     public function __construct(?array $midocoMediatorRevenue = null)
     {
@@ -34,7 +34,7 @@ class GetSupplierReportForMediatorResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMediatorRevenue value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorRevenue[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoMediatorRevenue[]
      */
     public function getMidocoMediatorRevenue(): ?array
     {
@@ -55,12 +55,12 @@ class GetSupplierReportForMediatorResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSupplierReportForMediatorResponseMidocoMediatorRevenueItem) {
             // validation for constraint: itemType
-            if (!$getSupplierReportForMediatorResponseMidocoMediatorRevenueItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorRevenue) {
+            if (!$getSupplierReportForMediatorResponseMidocoMediatorRevenueItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoMediatorRevenue) {
                 $invalidValues[] = is_object($getSupplierReportForMediatorResponseMidocoMediatorRevenueItem) ? get_class($getSupplierReportForMediatorResponseMidocoMediatorRevenueItem) : sprintf('%s(%s)', gettype($getSupplierReportForMediatorResponseMidocoMediatorRevenueItem), var_export($getSupplierReportForMediatorResponseMidocoMediatorRevenueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMediatorRevenue property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorRevenue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMediatorRevenue property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoMediatorRevenue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSupplierReportForMediatorResponse extends AbstractStructBase
     /**
      * Set MidocoMediatorRevenue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorRevenue[] $midocoMediatorRevenue
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetSupplierReportForMediatorResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMediatorRevenue[] $midocoMediatorRevenue
+     * @return \Pggns\MidocoApi\Crm\StructType\GetSupplierReportForMediatorResponse
      */
     public function setMidocoMediatorRevenue(?array $midocoMediatorRevenue = null): self
     {
@@ -85,14 +85,14 @@ class GetSupplierReportForMediatorResponse extends AbstractStructBase
     /**
      * Add item to MidocoMediatorRevenue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorRevenue $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetSupplierReportForMediatorResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMediatorRevenue $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetSupplierReportForMediatorResponse
      */
-    public function addToMidocoMediatorRevenue(\Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorRevenue $item): self
+    public function addToMidocoMediatorRevenue(\Pggns\MidocoApi\Crm\StructType\MidocoMediatorRevenue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorRevenue) {
-            throw new InvalidArgumentException(sprintf('The MidocoMediatorRevenue property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoMediatorRevenue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoMediatorRevenue) {
+            throw new InvalidArgumentException(sprintf('The MidocoMediatorRevenue property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoMediatorRevenue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMediatorRevenue[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class ComplaintStateDescrDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ComplaintStateDescrDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ComplaintStateDescrDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -78,7 +78,7 @@ class ComplaintStateDescrDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ComplaintStateDescrDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ComplaintStateDescrDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -101,7 +101,7 @@ class ComplaintStateDescrDTO extends AbstractStructBase
     /**
      * Set stateId value
      * @param string $stateId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ComplaintStateDescrDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ComplaintStateDescrDTO
      */
     public function setStateId(?string $stateId = null): self
     {

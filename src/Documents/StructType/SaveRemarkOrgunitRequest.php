@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveRemarkOrgunitRequest extends AbstractStructBase
      * The MidocoRemarkOrgunit
      * Meta information extracted from the WSDL
      * - ref: MidocoRemarkOrgunit
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit $MidocoRemarkOrgunit = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit $MidocoRemarkOrgunit = null;
     /**
      * The lastOrgunit
      * @var string|null
@@ -29,10 +29,10 @@ class SaveRemarkOrgunitRequest extends AbstractStructBase
      * Constructor method for SaveRemarkOrgunitRequest
      * @uses SaveRemarkOrgunitRequest::setMidocoRemarkOrgunit()
      * @uses SaveRemarkOrgunitRequest::setLastOrgunit()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit
      * @param string $lastOrgunit
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit = null, ?string $lastOrgunit = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit = null, ?string $lastOrgunit = null)
     {
         $this
             ->setMidocoRemarkOrgunit($midocoRemarkOrgunit)
@@ -40,18 +40,18 @@ class SaveRemarkOrgunitRequest extends AbstractStructBase
     }
     /**
      * Get MidocoRemarkOrgunit value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit|null
      */
-    public function getMidocoRemarkOrgunit(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit
+    public function getMidocoRemarkOrgunit(): ?\Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit
     {
         return $this->MidocoRemarkOrgunit;
     }
     /**
      * Set MidocoRemarkOrgunit value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveRemarkOrgunitRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveRemarkOrgunitRequest
      */
-    public function setMidocoRemarkOrgunit(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit = null): self
+    public function setMidocoRemarkOrgunit(?\Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit = null): self
     {
         $this->MidocoRemarkOrgunit = $midocoRemarkOrgunit;
         
@@ -68,7 +68,7 @@ class SaveRemarkOrgunitRequest extends AbstractStructBase
     /**
      * Set lastOrgunit value
      * @param string $lastOrgunit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveRemarkOrgunitRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveRemarkOrgunitRequest
      */
     public function setLastOrgunit(?string $lastOrgunit = null): self
     {

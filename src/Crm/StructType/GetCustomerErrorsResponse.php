@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCustomerErrorsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerError
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CustomerErrorDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CustomerErrorDTO[]
      */
     protected ?array $MidocoCustomerError = null;
     /**
      * Constructor method for GetCustomerErrorsResponse
      * @uses GetCustomerErrorsResponse::setMidocoCustomerError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerErrorDTO[] $midocoCustomerError
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerErrorDTO[] $midocoCustomerError
      */
     public function __construct(?array $midocoCustomerError = null)
     {
@@ -34,7 +34,7 @@ class GetCustomerErrorsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerError value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerErrorDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerErrorDTO[]
      */
     public function getMidocoCustomerError(): ?array
     {
@@ -55,12 +55,12 @@ class GetCustomerErrorsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCustomerErrorsResponseMidocoCustomerErrorItem) {
             // validation for constraint: itemType
-            if (!$getCustomerErrorsResponseMidocoCustomerErrorItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CustomerErrorDTO) {
+            if (!$getCustomerErrorsResponseMidocoCustomerErrorItem instanceof \Pggns\MidocoApi\Crm\StructType\CustomerErrorDTO) {
                 $invalidValues[] = is_object($getCustomerErrorsResponseMidocoCustomerErrorItem) ? get_class($getCustomerErrorsResponseMidocoCustomerErrorItem) : sprintf('%s(%s)', gettype($getCustomerErrorsResponseMidocoCustomerErrorItem), var_export($getCustomerErrorsResponseMidocoCustomerErrorItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerError property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CustomerErrorDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerError property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CustomerErrorDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCustomerErrorsResponse extends AbstractStructBase
     /**
      * Set MidocoCustomerError value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerErrorDTO[] $midocoCustomerError
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerErrorsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerErrorDTO[] $midocoCustomerError
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerErrorsResponse
      */
     public function setMidocoCustomerError(?array $midocoCustomerError = null): self
     {
@@ -85,14 +85,14 @@ class GetCustomerErrorsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCustomerError value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerErrorDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerErrorsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerErrorDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerErrorsResponse
      */
-    public function addToMidocoCustomerError(\Pggns\MidocoApi\Api\Crm\StructType\CustomerErrorDTO $item): self
+    public function addToMidocoCustomerError(\Pggns\MidocoApi\Crm\StructType\CustomerErrorDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CustomerErrorDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerError property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CustomerErrorDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CustomerErrorDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerError property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CustomerErrorDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerError[] = $item;
         

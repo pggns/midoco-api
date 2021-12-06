@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class DecodeTTIbanResponse extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DecodeTTIbanResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DecodeTTIbanResponse
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -78,7 +78,7 @@ class DecodeTTIbanResponse extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DecodeTTIbanResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DecodeTTIbanResponse
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {
@@ -101,7 +101,7 @@ class DecodeTTIbanResponse extends AbstractStructBase
     /**
      * Set decodedIban value
      * @param string $decodedIban
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DecodeTTIbanResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DecodeTTIbanResponse
      */
     public function setDecodedIban(?string $decodedIban = null): self
     {

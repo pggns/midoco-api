@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetDistributionMethodDescriptionResponse extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDistributionMethodDescriptionResponse
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDistributionMethodDescriptionResponse
      */
     public function setDescription(?string $description = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class RoleRightDTO extends AbstractStructBase
     /**
      * Set rightId value
      * @param string $rightId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\RoleRightDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\RoleRightDTO
      */
     public function setRightId(?string $rightId = null): self
     {
@@ -70,7 +70,7 @@ class RoleRightDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\RoleRightDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\RoleRightDTO
      */
     public function setRoleId(?int $roleId = null): self
     {

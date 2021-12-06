@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DiscountSellItemCodeListResponse extends AbstractStructBase
     /**
      * Set discountSellItemCodesWithTax value
      * @param string $discountSellItemCodesWithTax
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DiscountSellItemCodeListResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DiscountSellItemCodeListResponse
      */
     public function setDiscountSellItemCodesWithTax(?string $discountSellItemCodesWithTax = null): self
     {
@@ -70,7 +70,7 @@ class DiscountSellItemCodeListResponse extends AbstractStructBase
     /**
      * Set discountSellItemCodesNoTax value
      * @param string $discountSellItemCodesNoTax
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DiscountSellItemCodeListResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DiscountSellItemCodeListResponse
      */
     public function setDiscountSellItemCodesNoTax(?string $discountSellItemCodesNoTax = null): self
     {

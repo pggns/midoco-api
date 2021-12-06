@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteProcessAssignRequest extends AbstractStructBase
      * The MidocoProcessAssign
      * Meta information extracted from the WSDL
      * - ref: MidocoProcessAssign
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\ProcessAssignDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\ProcessAssignDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\ProcessAssignDTO $MidocoProcessAssign = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\ProcessAssignDTO $MidocoProcessAssign = null;
     /**
      * Constructor method for DeleteProcessAssignRequest
      * @uses DeleteProcessAssignRequest::setMidocoProcessAssign()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ProcessAssignDTO $midocoProcessAssign
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ProcessAssignDTO $midocoProcessAssign
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\ProcessAssignDTO $midocoProcessAssign = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\ProcessAssignDTO $midocoProcessAssign = null)
     {
         $this
             ->setMidocoProcessAssign($midocoProcessAssign);
     }
     /**
      * Get MidocoProcessAssign value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ProcessAssignDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ProcessAssignDTO|null
      */
-    public function getMidocoProcessAssign(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\ProcessAssignDTO
+    public function getMidocoProcessAssign(): ?\Pggns\MidocoApi\Orderlists\StructType\ProcessAssignDTO
     {
         return $this->MidocoProcessAssign;
     }
     /**
      * Set MidocoProcessAssign value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ProcessAssignDTO $midocoProcessAssign
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteProcessAssignRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ProcessAssignDTO $midocoProcessAssign
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteProcessAssignRequest
      */
-    public function setMidocoProcessAssign(?\Pggns\MidocoApi\Api\Orderlists\StructType\ProcessAssignDTO $midocoProcessAssign = null): self
+    public function setMidocoProcessAssign(?\Pggns\MidocoApi\Orderlists\StructType\ProcessAssignDTO $midocoProcessAssign = null): self
     {
         $this->MidocoProcessAssign = $midocoProcessAssign;
         

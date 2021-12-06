@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetIsDiversDebitorsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDebitor
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\DebitorDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\DebitorDTO[]
      */
     protected ?array $MidocoDebitor = null;
     /**
      * Constructor method for GetIsDiversDebitorsResponse
      * @uses GetIsDiversDebitorsResponse::setMidocoDebitor()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DebitorDTO[] $midocoDebitor
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DebitorDTO[] $midocoDebitor
      */
     public function __construct(?array $midocoDebitor = null)
     {
@@ -34,7 +34,7 @@ class GetIsDiversDebitorsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDebitor value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DebitorDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitorDTO[]
      */
     public function getMidocoDebitor(): ?array
     {
@@ -55,12 +55,12 @@ class GetIsDiversDebitorsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getIsDiversDebitorsResponseMidocoDebitorItem) {
             // validation for constraint: itemType
-            if (!$getIsDiversDebitorsResponseMidocoDebitorItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\DebitorDTO) {
+            if (!$getIsDiversDebitorsResponseMidocoDebitorItem instanceof \Pggns\MidocoApi\CrmSD\StructType\DebitorDTO) {
                 $invalidValues[] = is_object($getIsDiversDebitorsResponseMidocoDebitorItem) ? get_class($getIsDiversDebitorsResponseMidocoDebitorItem) : sprintf('%s(%s)', gettype($getIsDiversDebitorsResponseMidocoDebitorItem), var_export($getIsDiversDebitorsResponseMidocoDebitorItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDebitor property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\DebitorDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDebitor property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\DebitorDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetIsDiversDebitorsResponse extends AbstractStructBase
     /**
      * Set MidocoDebitor value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DebitorDTO[] $midocoDebitor
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetIsDiversDebitorsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DebitorDTO[] $midocoDebitor
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetIsDiversDebitorsResponse
      */
     public function setMidocoDebitor(?array $midocoDebitor = null): self
     {
@@ -85,14 +85,14 @@ class GetIsDiversDebitorsResponse extends AbstractStructBase
     /**
      * Add item to MidocoDebitor value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DebitorDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetIsDiversDebitorsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DebitorDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetIsDiversDebitorsResponse
      */
-    public function addToMidocoDebitor(\Pggns\MidocoApi\Api\CrmSD\StructType\DebitorDTO $item): self
+    public function addToMidocoDebitor(\Pggns\MidocoApi\CrmSD\StructType\DebitorDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\DebitorDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoDebitor property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\DebitorDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\DebitorDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoDebitor property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\DebitorDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDebitor[] = $item;
         

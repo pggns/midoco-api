@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class TamaraPositionDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TamaraPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TamaraPositionDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -158,7 +158,7 @@ class TamaraPositionDTO extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TamaraPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TamaraPositionDTO
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -181,7 +181,7 @@ class TamaraPositionDTO extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TamaraPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TamaraPositionDTO
      */
     public function setCountry(?string $country = null): self
     {
@@ -204,7 +204,7 @@ class TamaraPositionDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TamaraPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TamaraPositionDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -227,7 +227,7 @@ class TamaraPositionDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TamaraPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TamaraPositionDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -250,7 +250,7 @@ class TamaraPositionDTO extends AbstractStructBase
     /**
      * Set exportTimestamp value
      * @param string $exportTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TamaraPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TamaraPositionDTO
      */
     public function setExportTimestamp(?string $exportTimestamp = null): self
     {
@@ -273,7 +273,7 @@ class TamaraPositionDTO extends AbstractStructBase
     /**
      * Set fileType value
      * @param string $fileType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TamaraPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TamaraPositionDTO
      */
     public function setFileType(?string $fileType = null): self
     {
@@ -296,7 +296,7 @@ class TamaraPositionDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TamaraPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TamaraPositionDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -319,7 +319,7 @@ class TamaraPositionDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TamaraPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TamaraPositionDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -342,7 +342,7 @@ class TamaraPositionDTO extends AbstractStructBase
     /**
      * Set tamaraLine value
      * @param string $tamaraLine
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TamaraPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TamaraPositionDTO
      */
     public function setTamaraLine(?string $tamaraLine = null): self
     {
@@ -365,7 +365,7 @@ class TamaraPositionDTO extends AbstractStructBase
     /**
      * Set tamaraVersion value
      * @param string $tamaraVersion
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TamaraPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TamaraPositionDTO
      */
     public function setTamaraVersion(?string $tamaraVersion = null): self
     {
@@ -388,7 +388,7 @@ class TamaraPositionDTO extends AbstractStructBase
     /**
      * Set transactionId value
      * @param int $transactionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TamaraPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TamaraPositionDTO
      */
     public function setTransactionId(?int $transactionId = null): self
     {
@@ -411,7 +411,7 @@ class TamaraPositionDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TamaraPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TamaraPositionDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

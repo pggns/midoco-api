@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -166,7 +166,7 @@ class TaskOverviewCriteria extends AbstractStructBase
      * Set queueName value
      * @throws InvalidArgumentException
      * @param string[] $queueName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function setQueueName(?array $queueName = null): self
     {
@@ -182,7 +182,7 @@ class TaskOverviewCriteria extends AbstractStructBase
      * Add item to queueName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function addToQueueName(string $item): self
     {
@@ -232,7 +232,7 @@ class TaskOverviewCriteria extends AbstractStructBase
      * Set unitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function setUnitName(?array $unitName = null): self
     {
@@ -248,7 +248,7 @@ class TaskOverviewCriteria extends AbstractStructBase
      * Add item to unitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function addToUnitName(string $item): self
     {
@@ -298,7 +298,7 @@ class TaskOverviewCriteria extends AbstractStructBase
      * Set delegationUser value
      * @throws InvalidArgumentException
      * @param int[] $delegationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function setDelegationUser(?array $delegationUser = null): self
     {
@@ -314,7 +314,7 @@ class TaskOverviewCriteria extends AbstractStructBase
      * Add item to delegationUser value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function addToDelegationUser(int $item): self
     {
@@ -364,7 +364,7 @@ class TaskOverviewCriteria extends AbstractStructBase
      * Set taskTypes value
      * @throws InvalidArgumentException
      * @param string[] $taskTypes
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function setTaskTypes(?array $taskTypes = null): self
     {
@@ -380,7 +380,7 @@ class TaskOverviewCriteria extends AbstractStructBase
      * Add item to taskTypes value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function addToTaskTypes(string $item): self
     {
@@ -403,7 +403,7 @@ class TaskOverviewCriteria extends AbstractStructBase
     /**
      * Set priorityFrom value
      * @param int $priorityFrom
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function setPriorityFrom(?int $priorityFrom = null): self
     {
@@ -426,7 +426,7 @@ class TaskOverviewCriteria extends AbstractStructBase
     /**
      * Set fromDate value
      * @param string $fromDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function setFromDate(?string $fromDate = null): self
     {
@@ -449,7 +449,7 @@ class TaskOverviewCriteria extends AbstractStructBase
     /**
      * Set untilDate value
      * @param string $untilDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function setUntilDate(?string $untilDate = null): self
     {
@@ -472,7 +472,7 @@ class TaskOverviewCriteria extends AbstractStructBase
     /**
      * Set delegationFromDate value
      * @param string $delegationFromDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function setDelegationFromDate(?string $delegationFromDate = null): self
     {
@@ -495,7 +495,7 @@ class TaskOverviewCriteria extends AbstractStructBase
     /**
      * Set delegationToDate value
      * @param string $delegationToDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function setDelegationToDate(?string $delegationToDate = null): self
     {
@@ -518,7 +518,7 @@ class TaskOverviewCriteria extends AbstractStructBase
     /**
      * Set priorityTo value
      * @param int $priorityTo
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function setPriorityTo(?int $priorityTo = null): self
     {
@@ -541,7 +541,7 @@ class TaskOverviewCriteria extends AbstractStructBase
     /**
      * Set showCreationUser value
      * @param bool $showCreationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function setShowCreationUser(?bool $showCreationUser = null): self
     {
@@ -564,7 +564,7 @@ class TaskOverviewCriteria extends AbstractStructBase
     /**
      * Set assignedQueue value
      * @param string $assignedQueue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
      */
     public function setAssignedQueue(?string $assignedQueue = null): self
     {

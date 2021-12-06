@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -93,7 +93,7 @@ class RemarkIdentifiersSearchCriteria extends AbstractStructBase
      * Set supplierIds value
      * @throws InvalidArgumentException
      * @param string[] $supplierIds
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RemarkIdentifiersSearchCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\RemarkIdentifiersSearchCriteria
      */
     public function setSupplierIds(?array $supplierIds = null): self
     {
@@ -109,7 +109,7 @@ class RemarkIdentifiersSearchCriteria extends AbstractStructBase
      * Add item to supplierIds value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RemarkIdentifiersSearchCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\RemarkIdentifiersSearchCriteria
      */
     public function addToSupplierIds(string $item): self
     {
@@ -132,7 +132,7 @@ class RemarkIdentifiersSearchCriteria extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RemarkIdentifiersSearchCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\RemarkIdentifiersSearchCriteria
      */
     public function setOrgunit(?string $orgunit = null): self
     {
@@ -155,7 +155,7 @@ class RemarkIdentifiersSearchCriteria extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RemarkIdentifiersSearchCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\RemarkIdentifiersSearchCriteria
      */
     public function setType(?string $type = null): self
     {
@@ -178,7 +178,7 @@ class RemarkIdentifiersSearchCriteria extends AbstractStructBase
     /**
      * Set cultureID value
      * @param string $cultureID
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RemarkIdentifiersSearchCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\RemarkIdentifiersSearchCriteria
      */
     public function setCultureID(?string $cultureID = null): self
     {

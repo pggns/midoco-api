@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveSupplierAccountAssignRequest extends AbstractStructBase
      * The MidocoSupplierAccountAssign
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierAccountAssign
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign $MidocoSupplierAccountAssign = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign $MidocoSupplierAccountAssign = null;
     /**
      * Constructor method for SaveSupplierAccountAssignRequest
      * @uses SaveSupplierAccountAssignRequest::setMidocoSupplierAccountAssign()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign = null)
     {
         $this
             ->setMidocoSupplierAccountAssign($midocoSupplierAccountAssign);
     }
     /**
      * Get MidocoSupplierAccountAssign value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign|null
      */
-    public function getMidocoSupplierAccountAssign(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign
+    public function getMidocoSupplierAccountAssign(): ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign
     {
         return $this->MidocoSupplierAccountAssign;
     }
     /**
      * Set MidocoSupplierAccountAssign value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveSupplierAccountAssignRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveSupplierAccountAssignRequest
      */
-    public function setMidocoSupplierAccountAssign(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign = null): self
+    public function setMidocoSupplierAccountAssign(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign = null): self
     {
         $this->MidocoSupplierAccountAssign = $midocoSupplierAccountAssign;
         

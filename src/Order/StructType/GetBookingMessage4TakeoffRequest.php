@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetBookingMessage4TakeoffRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingMessage4TakeoffRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingMessage4TakeoffRequest
      */
     public function setOrderId(?int $orderId = null): self
     {

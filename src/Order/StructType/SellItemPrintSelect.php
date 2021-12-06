@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -121,7 +121,7 @@ class SellItemPrintSelect extends AbstractStructBase
     /**
      * Set confirmationGroup value
      * @param string $confirmationGroup
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintSelect
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemPrintSelect
      */
     public function setConfirmationGroup(?string $confirmationGroup = null): self
     {
@@ -144,7 +144,7 @@ class SellItemPrintSelect extends AbstractStructBase
     /**
      * Set selected value
      * @param bool $selected
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintSelect
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemPrintSelect
      */
     public function setSelected(?bool $selected = null): self
     {
@@ -167,7 +167,7 @@ class SellItemPrintSelect extends AbstractStructBase
     /**
      * Set needsInvoicePrint value
      * @param bool $needsInvoicePrint
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintSelect
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemPrintSelect
      */
     public function setNeedsInvoicePrint(?bool $needsInvoicePrint = null): self
     {
@@ -190,7 +190,7 @@ class SellItemPrintSelect extends AbstractStructBase
     /**
      * Set editable value
      * @param bool $editable
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintSelect
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemPrintSelect
      */
     public function setEditable(?bool $editable = true): self
     {
@@ -213,7 +213,7 @@ class SellItemPrintSelect extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintSelect
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemPrintSelect
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -236,7 +236,7 @@ class SellItemPrintSelect extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintSelect
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemPrintSelect
      */
     public function setType(?string $type = null): self
     {
@@ -259,7 +259,7 @@ class SellItemPrintSelect extends AbstractStructBase
     /**
      * Set sellingMode value
      * @param int $sellingMode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintSelect
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemPrintSelect
      */
     public function setSellingMode(?int $sellingMode = null): self
     {
@@ -282,7 +282,7 @@ class SellItemPrintSelect extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintSelect
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemPrintSelect
      */
     public function setStatus(?string $status = null): self
     {
@@ -305,7 +305,7 @@ class SellItemPrintSelect extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintSelect
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemPrintSelect
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -328,7 +328,7 @@ class SellItemPrintSelect extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintSelect
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemPrintSelect
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -351,7 +351,7 @@ class SellItemPrintSelect extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintSelect
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemPrintSelect
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {

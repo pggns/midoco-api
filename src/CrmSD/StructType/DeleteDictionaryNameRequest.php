@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteDictionaryNameRequest extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDictionaryNameRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteDictionaryNameRequest
      */
     public function setForename(?string $forename = null): self
     {

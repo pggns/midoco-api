@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoQuestionResponse extends AbstractStructBase
      * The MidocoQuestion
      * Meta information extracted from the WSDL
      * - ref: MidocoQuestion
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoQuestion|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoQuestion|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoQuestion $MidocoQuestion = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoQuestion $MidocoQuestion = null;
     /**
      * Constructor method for SaveMidocoQuestionResponse
      * @uses SaveMidocoQuestionResponse::setMidocoQuestion()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoQuestion $midocoQuestion
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoQuestion $midocoQuestion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoQuestion $midocoQuestion = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoQuestion $midocoQuestion = null)
     {
         $this
             ->setMidocoQuestion($midocoQuestion);
     }
     /**
      * Get MidocoQuestion value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQuestion|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQuestion|null
      */
-    public function getMidocoQuestion(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoQuestion
+    public function getMidocoQuestion(): ?\Pggns\MidocoApi\Documents\StructType\MidocoQuestion
     {
         return $this->MidocoQuestion;
     }
     /**
      * Set MidocoQuestion value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoQuestion $midocoQuestion
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveMidocoQuestionResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoQuestion $midocoQuestion
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveMidocoQuestionResponse
      */
-    public function setMidocoQuestion(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoQuestion $midocoQuestion = null): self
+    public function setMidocoQuestion(?\Pggns\MidocoApi\Documents\StructType\MidocoQuestion $midocoQuestion = null): self
     {
         $this->MidocoQuestion = $midocoQuestion;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class DocumentTypeDimensionDTO extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DocumentTypeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DocumentTypeDimensionDTO
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -78,7 +78,7 @@ class DocumentTypeDimensionDTO extends AbstractStructBase
     /**
      * Set documentTypeDescription value
      * @param string $documentTypeDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DocumentTypeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DocumentTypeDimensionDTO
      */
     public function setDocumentTypeDescription(?string $documentTypeDescription = null): self
     {
@@ -101,7 +101,7 @@ class DocumentTypeDimensionDTO extends AbstractStructBase
     /**
      * Set documentTypeId value
      * @param int $documentTypeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DocumentTypeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DocumentTypeDimensionDTO
      */
     public function setDocumentTypeId(?int $documentTypeId = null): self
     {

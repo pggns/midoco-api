@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchMidocoAttributeChoiceValueResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSystemAttributeChoiceValue
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO[]
+     * @var \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO[]
      */
     protected ?array $MidocoSystemAttributeChoiceValue = null;
     /**
      * Constructor method for SearchMidocoAttributeChoiceValueResponse
      * @uses SearchMidocoAttributeChoiceValueResponse::setMidocoSystemAttributeChoiceValue()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO[] $midocoSystemAttributeChoiceValue
+     * @param \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO[] $midocoSystemAttributeChoiceValue
      */
     public function __construct(?array $midocoSystemAttributeChoiceValue = null)
     {
@@ -34,7 +34,7 @@ class SearchMidocoAttributeChoiceValueResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSystemAttributeChoiceValue value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO[]
+     * @return \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO[]
      */
     public function getMidocoSystemAttributeChoiceValue(): ?array
     {
@@ -55,12 +55,12 @@ class SearchMidocoAttributeChoiceValueResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchMidocoAttributeChoiceValueResponseMidocoSystemAttributeChoiceValueItem) {
             // validation for constraint: itemType
-            if (!$searchMidocoAttributeChoiceValueResponseMidocoSystemAttributeChoiceValueItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO) {
+            if (!$searchMidocoAttributeChoiceValueResponseMidocoSystemAttributeChoiceValueItem instanceof \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO) {
                 $invalidValues[] = is_object($searchMidocoAttributeChoiceValueResponseMidocoSystemAttributeChoiceValueItem) ? get_class($searchMidocoAttributeChoiceValueResponseMidocoSystemAttributeChoiceValueItem) : sprintf('%s(%s)', gettype($searchMidocoAttributeChoiceValueResponseMidocoSystemAttributeChoiceValueItem), var_export($searchMidocoAttributeChoiceValueResponseMidocoSystemAttributeChoiceValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSystemAttributeChoiceValue property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSystemAttributeChoiceValue property can only contain items of type \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchMidocoAttributeChoiceValueResponse extends AbstractStructBase
     /**
      * Set MidocoSystemAttributeChoiceValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO[] $midocoSystemAttributeChoiceValue
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SearchMidocoAttributeChoiceValueResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO[] $midocoSystemAttributeChoiceValue
+     * @return \Pggns\MidocoApi\Booking\StructType\SearchMidocoAttributeChoiceValueResponse
      */
     public function setMidocoSystemAttributeChoiceValue(?array $midocoSystemAttributeChoiceValue = null): self
     {
@@ -85,14 +85,14 @@ class SearchMidocoAttributeChoiceValueResponse extends AbstractStructBase
     /**
      * Add item to MidocoSystemAttributeChoiceValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SearchMidocoAttributeChoiceValueResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO $item
+     * @return \Pggns\MidocoApi\Booking\StructType\SearchMidocoAttributeChoiceValueResponse
      */
-    public function addToMidocoSystemAttributeChoiceValue(\Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO $item): self
+    public function addToMidocoSystemAttributeChoiceValue(\Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSystemAttributeChoiceValue property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSystemAttributeChoiceValue property can only contain items of type \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSystemAttributeChoiceValue[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchMediatorBillingsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMediatorBilling
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO[]
      */
     protected ?array $MidocoMediatorBilling = null;
     /**
      * Constructor method for SearchMediatorBillingsResponse
      * @uses SearchMediatorBillingsResponse::setMidocoMediatorBilling()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO[] $midocoMediatorBilling
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO[] $midocoMediatorBilling
      */
     public function __construct(?array $midocoMediatorBilling = null)
     {
@@ -34,7 +34,7 @@ class SearchMediatorBillingsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMediatorBilling value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO[]
      */
     public function getMidocoMediatorBilling(): ?array
     {
@@ -55,12 +55,12 @@ class SearchMediatorBillingsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchMediatorBillingsResponseMidocoMediatorBillingItem) {
             // validation for constraint: itemType
-            if (!$searchMediatorBillingsResponseMidocoMediatorBillingItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO) {
+            if (!$searchMediatorBillingsResponseMidocoMediatorBillingItem instanceof \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO) {
                 $invalidValues[] = is_object($searchMediatorBillingsResponseMidocoMediatorBillingItem) ? get_class($searchMediatorBillingsResponseMidocoMediatorBillingItem) : sprintf('%s(%s)', gettype($searchMediatorBillingsResponseMidocoMediatorBillingItem), var_export($searchMediatorBillingsResponseMidocoMediatorBillingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMediatorBilling property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMediatorBilling property can only contain items of type \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchMediatorBillingsResponse extends AbstractStructBase
     /**
      * Set MidocoMediatorBilling value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO[] $midocoMediatorBilling
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorBillingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO[] $midocoMediatorBilling
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorBillingsResponse
      */
     public function setMidocoMediatorBilling(?array $midocoMediatorBilling = null): self
     {
@@ -85,14 +85,14 @@ class SearchMediatorBillingsResponse extends AbstractStructBase
     /**
      * Add item to MidocoMediatorBilling value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorBillingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorBillingsResponse
      */
-    public function addToMidocoMediatorBilling(\Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO $item): self
+    public function addToMidocoMediatorBilling(\Pggns\MidocoApi\Order\StructType\MediatorBillingDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMediatorBilling property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMediatorBilling property can only contain items of type \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMediatorBilling[] = $item;
         

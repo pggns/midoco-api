@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class SaveCcCardResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveCcCardResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveCcCardResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

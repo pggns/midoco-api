@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class SellItemDocumentDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -126,7 +126,7 @@ class SellItemDocumentDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -149,7 +149,7 @@ class SellItemDocumentDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -172,7 +172,7 @@ class SellItemDocumentDTO extends AbstractStructBase
     /**
      * Set documentExportDate value
      * @param string $documentExportDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO
      */
     public function setDocumentExportDate(?string $documentExportDate = null): self
     {
@@ -195,7 +195,7 @@ class SellItemDocumentDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO
      */
     public function setId(?int $id = null): self
     {
@@ -218,7 +218,7 @@ class SellItemDocumentDTO extends AbstractStructBase
     /**
      * Set isDocumentExported value
      * @param bool $isDocumentExported
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO
      */
     public function setIsDocumentExported(?bool $isDocumentExported = null): self
     {
@@ -241,7 +241,7 @@ class SellItemDocumentDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -264,7 +264,7 @@ class SellItemDocumentDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -287,7 +287,7 @@ class SellItemDocumentDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO
      */
     public function setType(?string $type = null): self
     {

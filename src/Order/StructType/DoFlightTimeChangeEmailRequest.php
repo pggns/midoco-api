@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: AdditionalTemplateMapInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AdditionalTemplateMapInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\AdditionalTemplateMapInfo[]
      */
     protected ?array $AdditionalTemplateMapInfo = null;
     /**
@@ -96,7 +96,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
      * @param string $printTemplateNameContent
      * @param string $printTemplateNameSubject
      * @param int $orderPaymentId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalTemplateMapInfo[] $additionalTemplateMapInfo
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalTemplateMapInfo[] $additionalTemplateMapInfo
      * @param string[] $selectedMailAttachments
      */
     public function __construct(?int $orderId = null, ?string $emailSubject = null, ?string $emailContent = null, ?string $templateId = null, ?string $cultureId = null, ?string $printTemplateNameContent = '', ?string $printTemplateNameSubject = '', ?int $orderPaymentId = 0, ?array $additionalTemplateMapInfo = null, ?array $selectedMailAttachments = null)
@@ -124,7 +124,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -147,7 +147,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
     /**
      * Set emailSubject value
      * @param string $emailSubject
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest
      */
     public function setEmailSubject(?string $emailSubject = null): self
     {
@@ -170,7 +170,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
     /**
      * Set emailContent value
      * @param string $emailContent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest
      */
     public function setEmailContent(?string $emailContent = null): self
     {
@@ -193,7 +193,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
     /**
      * Set templateId value
      * @param string $templateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest
      */
     public function setTemplateId(?string $templateId = null): self
     {
@@ -216,7 +216,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -239,7 +239,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
     /**
      * Set printTemplateNameContent value
      * @param string $printTemplateNameContent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest
      */
     public function setPrintTemplateNameContent(?string $printTemplateNameContent = ''): self
     {
@@ -262,7 +262,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
     /**
      * Set printTemplateNameSubject value
      * @param string $printTemplateNameSubject
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest
      */
     public function setPrintTemplateNameSubject(?string $printTemplateNameSubject = ''): self
     {
@@ -285,7 +285,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
     /**
      * Set orderPaymentId value
      * @param int $orderPaymentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest
      */
     public function setOrderPaymentId(?int $orderPaymentId = 0): self
     {
@@ -299,7 +299,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
     }
     /**
      * Get AdditionalTemplateMapInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdditionalTemplateMapInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\AdditionalTemplateMapInfo[]
      */
     public function getAdditionalTemplateMapInfo(): ?array
     {
@@ -320,12 +320,12 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $doFlightTimeChangeEmailRequestAdditionalTemplateMapInfoItem) {
             // validation for constraint: itemType
-            if (!$doFlightTimeChangeEmailRequestAdditionalTemplateMapInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\AdditionalTemplateMapInfo) {
+            if (!$doFlightTimeChangeEmailRequestAdditionalTemplateMapInfoItem instanceof \Pggns\MidocoApi\Order\StructType\AdditionalTemplateMapInfo) {
                 $invalidValues[] = is_object($doFlightTimeChangeEmailRequestAdditionalTemplateMapInfoItem) ? get_class($doFlightTimeChangeEmailRequestAdditionalTemplateMapInfoItem) : sprintf('%s(%s)', gettype($doFlightTimeChangeEmailRequestAdditionalTemplateMapInfoItem), var_export($doFlightTimeChangeEmailRequestAdditionalTemplateMapInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AdditionalTemplateMapInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AdditionalTemplateMapInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AdditionalTemplateMapInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\AdditionalTemplateMapInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -334,8 +334,8 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
     /**
      * Set AdditionalTemplateMapInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalTemplateMapInfo[] $additionalTemplateMapInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalTemplateMapInfo[] $additionalTemplateMapInfo
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest
      */
     public function setAdditionalTemplateMapInfo(?array $additionalTemplateMapInfo = null): self
     {
@@ -350,14 +350,14 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
     /**
      * Add item to AdditionalTemplateMapInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalTemplateMapInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalTemplateMapInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest
      */
-    public function addToAdditionalTemplateMapInfo(\Pggns\MidocoApi\Api\Order\StructType\AdditionalTemplateMapInfo $item): self
+    public function addToAdditionalTemplateMapInfo(\Pggns\MidocoApi\Order\StructType\AdditionalTemplateMapInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\AdditionalTemplateMapInfo) {
-            throw new InvalidArgumentException(sprintf('The AdditionalTemplateMapInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AdditionalTemplateMapInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\AdditionalTemplateMapInfo) {
+            throw new InvalidArgumentException(sprintf('The AdditionalTemplateMapInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\AdditionalTemplateMapInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AdditionalTemplateMapInfo[] = $item;
         
@@ -401,7 +401,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
      * Set selectedMailAttachments value
      * @throws InvalidArgumentException
      * @param string[] $selectedMailAttachments
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest
      */
     public function setSelectedMailAttachments(?array $selectedMailAttachments = null): self
     {
@@ -417,7 +417,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
      * Add item to selectedMailAttachments value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DoFlightTimeChangeEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DoFlightTimeChangeEmailRequest
      */
     public function addToSelectedMailAttachments(string $item): self
     {

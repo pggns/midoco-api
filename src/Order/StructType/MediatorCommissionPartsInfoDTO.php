@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MediatorCommissionPartsInfoDTO extends AbstractStructBase
     /**
      * Set bookingPrice value
      * @param float $bookingPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommissionPartsInfoDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommissionPartsInfoDTO
      */
     public function setBookingPrice(?float $bookingPrice = null): self
     {
@@ -110,7 +110,7 @@ class MediatorCommissionPartsInfoDTO extends AbstractStructBase
     /**
      * Set fromPrice value
      * @param float $fromPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommissionPartsInfoDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommissionPartsInfoDTO
      */
     public function setFromPrice(?float $fromPrice = null): self
     {
@@ -133,7 +133,7 @@ class MediatorCommissionPartsInfoDTO extends AbstractStructBase
     /**
      * Set part value
      * @param float $part
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommissionPartsInfoDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommissionPartsInfoDTO
      */
     public function setPart(?float $part = null): self
     {
@@ -156,7 +156,7 @@ class MediatorCommissionPartsInfoDTO extends AbstractStructBase
     /**
      * Set isPercent value
      * @param bool $isPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommissionPartsInfoDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommissionPartsInfoDTO
      */
     public function setIsPercent(?bool $isPercent = null): self
     {
@@ -179,7 +179,7 @@ class MediatorCommissionPartsInfoDTO extends AbstractStructBase
     /**
      * Set isUsedAlsoForLevel value
      * @param bool $isUsedAlsoForLevel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommissionPartsInfoDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommissionPartsInfoDTO
      */
     public function setIsUsedAlsoForLevel(?bool $isUsedAlsoForLevel = null): self
     {
@@ -202,7 +202,7 @@ class MediatorCommissionPartsInfoDTO extends AbstractStructBase
     /**
      * Set commissionAmount value
      * @param float $commissionAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommissionPartsInfoDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommissionPartsInfoDTO
      */
     public function setCommissionAmount(?float $commissionAmount = null): self
     {
@@ -225,7 +225,7 @@ class MediatorCommissionPartsInfoDTO extends AbstractStructBase
     /**
      * Set useMediatorLevelPercent value
      * @param bool $useMediatorLevelPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommissionPartsInfoDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommissionPartsInfoDTO
      */
     public function setUseMediatorLevelPercent(?bool $useMediatorLevelPercent = null): self
     {

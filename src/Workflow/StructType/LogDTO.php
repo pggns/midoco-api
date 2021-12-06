@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class LogDTO extends AbstractStructBase
     /**
      * Set activity value
      * @param string $activity
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\LogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\LogDTO
      */
     public function setActivity(?string $activity = null): self
     {
@@ -110,7 +110,7 @@ class LogDTO extends AbstractStructBase
     /**
      * Set logId value
      * @param int $logId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\LogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\LogDTO
      */
     public function setLogId(?int $logId = null): self
     {
@@ -133,7 +133,7 @@ class LogDTO extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\LogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\LogDTO
      */
     public function setMessage(?string $message = null): self
     {
@@ -156,7 +156,7 @@ class LogDTO extends AbstractStructBase
     /**
      * Set subject value
      * @param int $subject
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\LogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\LogDTO
      */
     public function setSubject(?int $subject = null): self
     {
@@ -179,7 +179,7 @@ class LogDTO extends AbstractStructBase
     /**
      * Set success value
      * @param bool $success
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\LogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\LogDTO
      */
     public function setSuccess(?bool $success = null): self
     {
@@ -202,7 +202,7 @@ class LogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\LogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\LogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -225,7 +225,7 @@ class LogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\LogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\LogDTO
      */
     public function setUserId(?int $userId = null): self
     {

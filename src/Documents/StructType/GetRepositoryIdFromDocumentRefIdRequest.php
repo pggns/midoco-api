@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetRepositoryIdFromDocumentRefIdRequest extends AbstractStructBase
     /**
      * Set documentRefId value
      * @param int $documentRefId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetRepositoryIdFromDocumentRefIdRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetRepositoryIdFromDocumentRefIdRequest
      */
     public function setDocumentRefId(?int $documentRefId = null): self
     {
@@ -70,7 +70,7 @@ class GetRepositoryIdFromDocumentRefIdRequest extends AbstractStructBase
     /**
      * Set contentType value
      * @param string $contentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetRepositoryIdFromDocumentRefIdRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetRepositoryIdFromDocumentRefIdRequest
      */
     public function setContentType(?string $contentType = null): self
     {

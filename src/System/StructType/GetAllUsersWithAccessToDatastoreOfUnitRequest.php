@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetAllUsersWithAccessToDatastoreOfUnitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAllUsersWithAccessToDatastoreOfUnitRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetAllUsersWithAccessToDatastoreOfUnitRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +70,7 @@ class GetAllUsersWithAccessToDatastoreOfUnitRequest extends AbstractStructBase
     /**
      * Set datastoreType value
      * @param string $datastoreType
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAllUsersWithAccessToDatastoreOfUnitRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetAllUsersWithAccessToDatastoreOfUnitRequest
      */
     public function setDatastoreType(?string $datastoreType = null): self
     {

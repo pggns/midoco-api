@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class RecordCardInfoAccessRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\RecordCardInfoAccessRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\RecordCardInfoAccessRequest
      */
     public function setUserId(?int $userId = null): self
     {
@@ -70,7 +70,7 @@ class RecordCardInfoAccessRequest extends AbstractStructBase
     /**
      * Set CreditCardNo value
      * @param string $creditCardNo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\RecordCardInfoAccessRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\RecordCardInfoAccessRequest
      */
     public function setCreditCardNo(?string $creditCardNo = null): self
     {

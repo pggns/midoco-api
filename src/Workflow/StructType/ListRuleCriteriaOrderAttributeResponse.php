@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListRuleCriteriaOrderAttributeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoRuleCriteriaOrderAttribute
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderAttributeDTO[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderAttributeDTO[]
      */
     protected ?array $MidocoRuleCriteriaOrderAttribute = null;
     /**
      * Constructor method for ListRuleCriteriaOrderAttributeResponse
      * @uses ListRuleCriteriaOrderAttributeResponse::setMidocoRuleCriteriaOrderAttribute()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderAttributeDTO[] $midocoRuleCriteriaOrderAttribute
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderAttributeDTO[] $midocoRuleCriteriaOrderAttribute
      */
     public function __construct(?array $midocoRuleCriteriaOrderAttribute = null)
     {
@@ -34,7 +34,7 @@ class ListRuleCriteriaOrderAttributeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoRuleCriteriaOrderAttribute value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderAttributeDTO[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderAttributeDTO[]
      */
     public function getMidocoRuleCriteriaOrderAttribute(): ?array
     {
@@ -55,12 +55,12 @@ class ListRuleCriteriaOrderAttributeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listRuleCriteriaOrderAttributeResponseMidocoRuleCriteriaOrderAttributeItem) {
             // validation for constraint: itemType
-            if (!$listRuleCriteriaOrderAttributeResponseMidocoRuleCriteriaOrderAttributeItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderAttributeDTO) {
+            if (!$listRuleCriteriaOrderAttributeResponseMidocoRuleCriteriaOrderAttributeItem instanceof \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderAttributeDTO) {
                 $invalidValues[] = is_object($listRuleCriteriaOrderAttributeResponseMidocoRuleCriteriaOrderAttributeItem) ? get_class($listRuleCriteriaOrderAttributeResponseMidocoRuleCriteriaOrderAttributeItem) : sprintf('%s(%s)', gettype($listRuleCriteriaOrderAttributeResponseMidocoRuleCriteriaOrderAttributeItem), var_export($listRuleCriteriaOrderAttributeResponseMidocoRuleCriteriaOrderAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRuleCriteriaOrderAttribute property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderAttributeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRuleCriteriaOrderAttribute property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderAttributeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListRuleCriteriaOrderAttributeResponse extends AbstractStructBase
     /**
      * Set MidocoRuleCriteriaOrderAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderAttributeDTO[] $midocoRuleCriteriaOrderAttribute
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaOrderAttributeResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderAttributeDTO[] $midocoRuleCriteriaOrderAttribute
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaOrderAttributeResponse
      */
     public function setMidocoRuleCriteriaOrderAttribute(?array $midocoRuleCriteriaOrderAttribute = null): self
     {
@@ -85,14 +85,14 @@ class ListRuleCriteriaOrderAttributeResponse extends AbstractStructBase
     /**
      * Add item to MidocoRuleCriteriaOrderAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderAttributeDTO $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaOrderAttributeResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderAttributeDTO $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaOrderAttributeResponse
      */
-    public function addToMidocoRuleCriteriaOrderAttribute(\Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderAttributeDTO $item): self
+    public function addToMidocoRuleCriteriaOrderAttribute(\Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderAttributeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderAttributeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoRuleCriteriaOrderAttribute property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderAttributeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderAttributeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoRuleCriteriaOrderAttribute property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderAttributeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRuleCriteriaOrderAttribute[] = $item;
         

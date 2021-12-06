@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class SaveOrderRetentionPeriodRequest extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - ref: MidocoOrderRetentionPeriod
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderRetentionPeriod
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoOrderRetentionPeriod
      */
-    protected \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderRetentionPeriod $MidocoOrderRetentionPeriod;
+    protected \Pggns\MidocoApi\Documents\StructType\MidocoOrderRetentionPeriod $MidocoOrderRetentionPeriod;
     /**
      * Constructor method for SaveOrderRetentionPeriodRequest
      * @uses SaveOrderRetentionPeriodRequest::setMidocoOrderRetentionPeriod()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderRetentionPeriod $midocoOrderRetentionPeriod
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderRetentionPeriod $midocoOrderRetentionPeriod
      */
-    public function __construct(\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderRetentionPeriod $midocoOrderRetentionPeriod)
+    public function __construct(\Pggns\MidocoApi\Documents\StructType\MidocoOrderRetentionPeriod $midocoOrderRetentionPeriod)
     {
         $this
             ->setMidocoOrderRetentionPeriod($midocoOrderRetentionPeriod);
     }
     /**
      * Get MidocoOrderRetentionPeriod value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderRetentionPeriod
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderRetentionPeriod
      */
-    public function getMidocoOrderRetentionPeriod(): \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderRetentionPeriod
+    public function getMidocoOrderRetentionPeriod(): \Pggns\MidocoApi\Documents\StructType\MidocoOrderRetentionPeriod
     {
         return $this->MidocoOrderRetentionPeriod;
     }
     /**
      * Set MidocoOrderRetentionPeriod value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderRetentionPeriod $midocoOrderRetentionPeriod
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveOrderRetentionPeriodRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderRetentionPeriod $midocoOrderRetentionPeriod
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveOrderRetentionPeriodRequest
      */
-    public function setMidocoOrderRetentionPeriod(\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderRetentionPeriod $midocoOrderRetentionPeriod): self
+    public function setMidocoOrderRetentionPeriod(\Pggns\MidocoApi\Documents\StructType\MidocoOrderRetentionPeriod $midocoOrderRetentionPeriod): self
     {
         $this->MidocoOrderRetentionPeriod = $midocoOrderRetentionPeriod;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoUserattribValue extends AbstractStructBase
     /**
      * Set internalAttribValue value
      * @param string $internalAttribValue
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoUserattribValue
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoUserattribValue
      */
     public function setInternalAttribValue(?string $internalAttribValue = null): self
     {
@@ -86,7 +86,7 @@ class MidocoUserattribValue extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoUserattribValue
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoUserattribValue
      */
     public function setUserId(?int $userId = null): self
     {
@@ -109,7 +109,7 @@ class MidocoUserattribValue extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoUserattribValue
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoUserattribValue
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -132,7 +132,7 @@ class MidocoUserattribValue extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoUserattribValue
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoUserattribValue
      */
     public function setValue(?string $value = null): self
     {

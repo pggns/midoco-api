@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCcProxyTargetResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCcProxyTarget
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcProxyTarget[]
+     * @var \Pggns\MidocoApi\Booking\StructType\MidocoCcProxyTarget[]
      */
     protected ?array $MidocoCcProxyTarget = null;
     /**
      * Constructor method for GetCcProxyTargetResponse
      * @uses GetCcProxyTargetResponse::setMidocoCcProxyTarget()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcProxyTarget[] $midocoCcProxyTarget
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoCcProxyTarget[] $midocoCcProxyTarget
      */
     public function __construct(?array $midocoCcProxyTarget = null)
     {
@@ -34,7 +34,7 @@ class GetCcProxyTargetResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCcProxyTarget value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcProxyTarget[]
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoCcProxyTarget[]
      */
     public function getMidocoCcProxyTarget(): ?array
     {
@@ -55,12 +55,12 @@ class GetCcProxyTargetResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCcProxyTargetResponseMidocoCcProxyTargetItem) {
             // validation for constraint: itemType
-            if (!$getCcProxyTargetResponseMidocoCcProxyTargetItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcProxyTarget) {
+            if (!$getCcProxyTargetResponseMidocoCcProxyTargetItem instanceof \Pggns\MidocoApi\Booking\StructType\MidocoCcProxyTarget) {
                 $invalidValues[] = is_object($getCcProxyTargetResponseMidocoCcProxyTargetItem) ? get_class($getCcProxyTargetResponseMidocoCcProxyTargetItem) : sprintf('%s(%s)', gettype($getCcProxyTargetResponseMidocoCcProxyTargetItem), var_export($getCcProxyTargetResponseMidocoCcProxyTargetItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCcProxyTarget property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcProxyTarget, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCcProxyTarget property can only contain items of type \Pggns\MidocoApi\Booking\StructType\MidocoCcProxyTarget, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCcProxyTargetResponse extends AbstractStructBase
     /**
      * Set MidocoCcProxyTarget value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcProxyTarget[] $midocoCcProxyTarget
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetCcProxyTargetResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoCcProxyTarget[] $midocoCcProxyTarget
+     * @return \Pggns\MidocoApi\Booking\StructType\GetCcProxyTargetResponse
      */
     public function setMidocoCcProxyTarget(?array $midocoCcProxyTarget = null): self
     {
@@ -85,14 +85,14 @@ class GetCcProxyTargetResponse extends AbstractStructBase
     /**
      * Add item to MidocoCcProxyTarget value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcProxyTarget $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetCcProxyTargetResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoCcProxyTarget $item
+     * @return \Pggns\MidocoApi\Booking\StructType\GetCcProxyTargetResponse
      */
-    public function addToMidocoCcProxyTarget(\Pggns\MidocoApi\Api\Booking\StructType\MidocoCcProxyTarget $item): self
+    public function addToMidocoCcProxyTarget(\Pggns\MidocoApi\Booking\StructType\MidocoCcProxyTarget $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcProxyTarget) {
-            throw new InvalidArgumentException(sprintf('The MidocoCcProxyTarget property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcProxyTarget, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\MidocoCcProxyTarget) {
+            throw new InvalidArgumentException(sprintf('The MidocoCcProxyTarget property can only contain items of type \Pggns\MidocoApi\Booking\StructType\MidocoCcProxyTarget, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCcProxyTarget[] = $item;
         

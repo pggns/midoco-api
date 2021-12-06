@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MisContactDTO extends AbstractStructBase
     /**
      * Set contactData value
      * @param string $contactData
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisContactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisContactDTO
      */
     public function setContactData(?string $contactData = null): self
     {
@@ -110,7 +110,7 @@ class MisContactDTO extends AbstractStructBase
     /**
      * Set contactId value
      * @param int $contactId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisContactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisContactDTO
      */
     public function setContactId(?int $contactId = null): self
     {
@@ -133,7 +133,7 @@ class MisContactDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisContactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisContactDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -156,7 +156,7 @@ class MisContactDTO extends AbstractStructBase
     /**
      * Set mailingProhibited value
      * @param bool $mailingProhibited
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisContactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisContactDTO
      */
     public function setMailingProhibited(?bool $mailingProhibited = null): self
     {
@@ -179,7 +179,7 @@ class MisContactDTO extends AbstractStructBase
     /**
      * Set mailingStatus value
      * @param string $mailingStatus
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisContactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisContactDTO
      */
     public function setMailingStatus(?string $mailingStatus = null): self
     {
@@ -202,7 +202,7 @@ class MisContactDTO extends AbstractStructBase
     /**
      * Set mediaId value
      * @param string $mediaId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisContactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisContactDTO
      */
     public function setMediaId(?string $mediaId = null): self
     {
@@ -225,7 +225,7 @@ class MisContactDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisContactDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisContactDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

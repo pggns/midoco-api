@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class BookKaeraInsuranceResponse extends AbstractStructBase
      * The MidocoPackageInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoPackageInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\PackageitemDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $MidocoPackageInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\PackageitemDTO $MidocoPackageInfo = null;
     /**
      * Constructor method for BookKaeraInsuranceResponse
      * @uses BookKaeraInsuranceResponse::setMidocoPackageInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $midocoPackageInfo
+     * @param \Pggns\MidocoApi\Order\StructType\PackageitemDTO $midocoPackageInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $midocoPackageInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\PackageitemDTO $midocoPackageInfo = null)
     {
         $this
             ->setMidocoPackageInfo($midocoPackageInfo);
     }
     /**
      * Get MidocoPackageInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\PackageitemDTO|null
      */
-    public function getMidocoPackageInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO
+    public function getMidocoPackageInfo(): ?\Pggns\MidocoApi\Order\StructType\PackageitemDTO
     {
         return $this->MidocoPackageInfo;
     }
     /**
      * Set MidocoPackageInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $midocoPackageInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookKaeraInsuranceResponse
+     * @param \Pggns\MidocoApi\Order\StructType\PackageitemDTO $midocoPackageInfo
+     * @return \Pggns\MidocoApi\Order\StructType\BookKaeraInsuranceResponse
      */
-    public function setMidocoPackageInfo(?\Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $midocoPackageInfo = null): self
+    public function setMidocoPackageInfo(?\Pggns\MidocoApi\Order\StructType\PackageitemDTO $midocoPackageInfo = null): self
     {
         $this->MidocoPackageInfo = $midocoPackageInfo;
         

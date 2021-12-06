@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -33,7 +33,7 @@ class MidocoDirectDebitTransaction extends DtausTransactionDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDirectDebitTransactionPurpose
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransactionPurpose[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransactionPurpose[]
      */
     protected ?array $MidocoDirectDebitTransactionPurpose = null;
     /**
@@ -41,9 +41,9 @@ class MidocoDirectDebitTransaction extends DtausTransactionDTO
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoDtazvTransactionInfo
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo $MidocoDtazvTransactionInfo = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo $MidocoDtazvTransactionInfo = null;
     /**
      * Constructor method for MidocoDirectDebitTransaction
      * @uses MidocoDirectDebitTransaction::setErrorDescription()
@@ -52,10 +52,10 @@ class MidocoDirectDebitTransaction extends DtausTransactionDTO
      * @uses MidocoDirectDebitTransaction::setMidocoDtazvTransactionInfo()
      * @param string $errorDescription
      * @param string $transactionType
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransactionPurpose[] $midocoDirectDebitTransactionPurpose
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransactionPurpose[] $midocoDirectDebitTransactionPurpose
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo
      */
-    public function __construct(?string $errorDescription = null, ?string $transactionType = null, ?array $midocoDirectDebitTransactionPurpose = null, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo = null)
+    public function __construct(?string $errorDescription = null, ?string $transactionType = null, ?array $midocoDirectDebitTransactionPurpose = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo = null)
     {
         $this
             ->setErrorDescription($errorDescription)
@@ -74,7 +74,7 @@ class MidocoDirectDebitTransaction extends DtausTransactionDTO
     /**
      * Set errorDescription value
      * @param string $errorDescription
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransaction
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransaction
      */
     public function setErrorDescription(?string $errorDescription = null): self
     {
@@ -97,7 +97,7 @@ class MidocoDirectDebitTransaction extends DtausTransactionDTO
     /**
      * Set transactionType value
      * @param string $transactionType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransaction
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransaction
      */
     public function setTransactionType(?string $transactionType = null): self
     {
@@ -111,7 +111,7 @@ class MidocoDirectDebitTransaction extends DtausTransactionDTO
     }
     /**
      * Get MidocoDirectDebitTransactionPurpose value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransactionPurpose[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransactionPurpose[]
      */
     public function getMidocoDirectDebitTransactionPurpose(): ?array
     {
@@ -132,12 +132,12 @@ class MidocoDirectDebitTransaction extends DtausTransactionDTO
         $invalidValues = [];
         foreach ($values as $midocoDirectDebitTransactionMidocoDirectDebitTransactionPurposeItem) {
             // validation for constraint: itemType
-            if (!$midocoDirectDebitTransactionMidocoDirectDebitTransactionPurposeItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransactionPurpose) {
+            if (!$midocoDirectDebitTransactionMidocoDirectDebitTransactionPurposeItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransactionPurpose) {
                 $invalidValues[] = is_object($midocoDirectDebitTransactionMidocoDirectDebitTransactionPurposeItem) ? get_class($midocoDirectDebitTransactionMidocoDirectDebitTransactionPurposeItem) : sprintf('%s(%s)', gettype($midocoDirectDebitTransactionMidocoDirectDebitTransactionPurposeItem), var_export($midocoDirectDebitTransactionMidocoDirectDebitTransactionPurposeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDirectDebitTransactionPurpose property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransactionPurpose, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDirectDebitTransactionPurpose property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransactionPurpose, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -146,8 +146,8 @@ class MidocoDirectDebitTransaction extends DtausTransactionDTO
     /**
      * Set MidocoDirectDebitTransactionPurpose value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransactionPurpose[] $midocoDirectDebitTransactionPurpose
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransaction
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransactionPurpose[] $midocoDirectDebitTransactionPurpose
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransaction
      */
     public function setMidocoDirectDebitTransactionPurpose(?array $midocoDirectDebitTransactionPurpose = null): self
     {
@@ -162,14 +162,14 @@ class MidocoDirectDebitTransaction extends DtausTransactionDTO
     /**
      * Add item to MidocoDirectDebitTransactionPurpose value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransactionPurpose $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransaction
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransactionPurpose $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransaction
      */
-    public function addToMidocoDirectDebitTransactionPurpose(\Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransactionPurpose $item): self
+    public function addToMidocoDirectDebitTransactionPurpose(\Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransactionPurpose $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransactionPurpose) {
-            throw new InvalidArgumentException(sprintf('The MidocoDirectDebitTransactionPurpose property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransactionPurpose, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransactionPurpose) {
+            throw new InvalidArgumentException(sprintf('The MidocoDirectDebitTransactionPurpose property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransactionPurpose, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDirectDebitTransactionPurpose[] = $item;
         
@@ -177,18 +177,18 @@ class MidocoDirectDebitTransaction extends DtausTransactionDTO
     }
     /**
      * Get MidocoDtazvTransactionInfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo|null
      */
-    public function getMidocoDtazvTransactionInfo(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+    public function getMidocoDtazvTransactionInfo(): ?\Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
     {
         return $this->MidocoDtazvTransactionInfo;
     }
     /**
      * Set MidocoDtazvTransactionInfo value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDirectDebitTransaction
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitTransaction
      */
-    public function setMidocoDtazvTransactionInfo(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo = null): self
+    public function setMidocoDtazvTransactionInfo(?\Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo = null): self
     {
         $this->MidocoDtazvTransactionInfo = $midocoDtazvTransactionInfo;
         

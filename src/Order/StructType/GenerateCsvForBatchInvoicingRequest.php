@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -35,9 +35,9 @@ class GenerateCsvForBatchInvoicingRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: mail:MidocoMailMessage
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
     /**
      * The sendMail
      * Meta information extracted from the WSDL
@@ -53,10 +53,10 @@ class GenerateCsvForBatchInvoicingRequest extends AbstractStructBase
      * @uses GenerateCsvForBatchInvoicingRequest::setSendMail()
      * @param int[] $documentIds
      * @param int $customerId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
      * @param bool $sendMail
      */
-    public function __construct(?array $documentIds = null, ?int $customerId = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?bool $sendMail = null)
+    public function __construct(?array $documentIds = null, ?int $customerId = null, ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?bool $sendMail = null)
     {
         $this
             ->setDocumentIds($documentIds)
@@ -102,7 +102,7 @@ class GenerateCsvForBatchInvoicingRequest extends AbstractStructBase
      * Set documentIds value
      * @throws InvalidArgumentException
      * @param int[] $documentIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateCsvForBatchInvoicingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateCsvForBatchInvoicingRequest
      */
     public function setDocumentIds(?array $documentIds = null): self
     {
@@ -118,7 +118,7 @@ class GenerateCsvForBatchInvoicingRequest extends AbstractStructBase
      * Add item to documentIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateCsvForBatchInvoicingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateCsvForBatchInvoicingRequest
      */
     public function addToDocumentIds(int $item): self
     {
@@ -141,7 +141,7 @@ class GenerateCsvForBatchInvoicingRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateCsvForBatchInvoicingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateCsvForBatchInvoicingRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -155,18 +155,18 @@ class GenerateCsvForBatchInvoicingRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMailMessage value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
     {
         return $this->MidocoMailMessage;
     }
     /**
      * Set MidocoMailMessage value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateCsvForBatchInvoicingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateCsvForBatchInvoicingRequest
      */
-    public function setMidocoMailMessage(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
+    public function setMidocoMailMessage(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
     {
         $this->MidocoMailMessage = $midocoMailMessage;
         
@@ -183,7 +183,7 @@ class GenerateCsvForBatchInvoicingRequest extends AbstractStructBase
     /**
      * Set sendMail value
      * @param bool $sendMail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateCsvForBatchInvoicingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateCsvForBatchInvoicingRequest
      */
     public function setSendMail(?bool $sendMail = null): self
     {

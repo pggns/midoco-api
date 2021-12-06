@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class DeleteCriteriaTypeCategoryDescriptionRequest extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteCriteriaTypeCategoryDescriptionRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteCriteriaTypeCategoryDescriptionRequest
      */
     public function setCategoryId(int $categoryId): self
     {
@@ -74,7 +74,7 @@ class DeleteCriteriaTypeCategoryDescriptionRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteCriteriaTypeCategoryDescriptionRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteCriteriaTypeCategoryDescriptionRequest
      */
     public function setCultureId(string $cultureId): self
     {

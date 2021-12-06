@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class GetShortOrderStatusResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BookingStatus[]
+     * @var \Pggns\MidocoApi\Order\StructType\BookingStatus[]
      */
     protected ?array $bookingStatus = null;
     /**
      * Constructor method for GetShortOrderStatusResponse
      * @uses GetShortOrderStatusResponse::setBookingStatus()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BookingStatus[] $bookingStatus
+     * @param \Pggns\MidocoApi\Order\StructType\BookingStatus[] $bookingStatus
      */
     public function __construct(?array $bookingStatus = null)
     {
@@ -33,7 +33,7 @@ class GetShortOrderStatusResponse extends AbstractStructBase
     }
     /**
      * Get bookingStatus value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingStatus[]
+     * @return \Pggns\MidocoApi\Order\StructType\BookingStatus[]
      */
     public function getBookingStatus(): ?array
     {
@@ -54,12 +54,12 @@ class GetShortOrderStatusResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getShortOrderStatusResponseBookingStatusItem) {
             // validation for constraint: itemType
-            if (!$getShortOrderStatusResponseBookingStatusItem instanceof \Pggns\MidocoApi\Api\Order\StructType\BookingStatus) {
+            if (!$getShortOrderStatusResponseBookingStatusItem instanceof \Pggns\MidocoApi\Order\StructType\BookingStatus) {
                 $invalidValues[] = is_object($getShortOrderStatusResponseBookingStatusItem) ? get_class($getShortOrderStatusResponseBookingStatusItem) : sprintf('%s(%s)', gettype($getShortOrderStatusResponseBookingStatusItem), var_export($getShortOrderStatusResponseBookingStatusItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The bookingStatus property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BookingStatus, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The bookingStatus property can only contain items of type \Pggns\MidocoApi\Order\StructType\BookingStatus, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class GetShortOrderStatusResponse extends AbstractStructBase
     /**
      * Set bookingStatus value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BookingStatus[] $bookingStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetShortOrderStatusResponse
+     * @param \Pggns\MidocoApi\Order\StructType\BookingStatus[] $bookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\GetShortOrderStatusResponse
      */
     public function setBookingStatus(?array $bookingStatus = null): self
     {
@@ -84,14 +84,14 @@ class GetShortOrderStatusResponse extends AbstractStructBase
     /**
      * Add item to bookingStatus value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BookingStatus $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetShortOrderStatusResponse
+     * @param \Pggns\MidocoApi\Order\StructType\BookingStatus $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetShortOrderStatusResponse
      */
-    public function addToBookingStatus(\Pggns\MidocoApi\Api\Order\StructType\BookingStatus $item): self
+    public function addToBookingStatus(\Pggns\MidocoApi\Order\StructType\BookingStatus $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\BookingStatus) {
-            throw new InvalidArgumentException(sprintf('The bookingStatus property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BookingStatus, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\BookingStatus) {
+            throw new InvalidArgumentException(sprintf('The bookingStatus property can only contain items of type \Pggns\MidocoApi\Order\StructType\BookingStatus, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->bookingStatus[] = $item;
         

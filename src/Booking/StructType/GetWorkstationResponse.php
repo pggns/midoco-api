@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetWorkstationResponse extends AbstractStructBase
      * The MidocoWorkstation
      * Meta information extracted from the WSDL
      * - ref: MidocoWorkstation
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\WorkstationDTO|null
+     * @var \Pggns\MidocoApi\Booking\StructType\WorkstationDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\WorkstationDTO $MidocoWorkstation = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\WorkstationDTO $MidocoWorkstation = null;
     /**
      * Constructor method for GetWorkstationResponse
      * @uses GetWorkstationResponse::setMidocoWorkstation()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\WorkstationDTO $midocoWorkstation
+     * @param \Pggns\MidocoApi\Booking\StructType\WorkstationDTO $midocoWorkstation
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\WorkstationDTO $midocoWorkstation = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\WorkstationDTO $midocoWorkstation = null)
     {
         $this
             ->setMidocoWorkstation($midocoWorkstation);
     }
     /**
      * Get MidocoWorkstation value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\WorkstationDTO|null
+     * @return \Pggns\MidocoApi\Booking\StructType\WorkstationDTO|null
      */
-    public function getMidocoWorkstation(): ?\Pggns\MidocoApi\Api\Booking\StructType\WorkstationDTO
+    public function getMidocoWorkstation(): ?\Pggns\MidocoApi\Booking\StructType\WorkstationDTO
     {
         return $this->MidocoWorkstation;
     }
     /**
      * Set MidocoWorkstation value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\WorkstationDTO $midocoWorkstation
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetWorkstationResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\WorkstationDTO $midocoWorkstation
+     * @return \Pggns\MidocoApi\Booking\StructType\GetWorkstationResponse
      */
-    public function setMidocoWorkstation(?\Pggns\MidocoApi\Api\Booking\StructType\WorkstationDTO $midocoWorkstation = null): self
+    public function setMidocoWorkstation(?\Pggns\MidocoApi\Booking\StructType\WorkstationDTO $midocoWorkstation = null): self
     {
         $this->MidocoWorkstation = $midocoWorkstation;
         

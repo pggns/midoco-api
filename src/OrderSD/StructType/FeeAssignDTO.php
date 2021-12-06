@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -687,7 +687,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -710,7 +710,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set airline value
      * @param string $airline
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setAirline(?string $airline = null): self
     {
@@ -733,7 +733,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set assumeTicketTaxPercent value
      * @param bool $assumeTicketTaxPercent
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setAssumeTicketTaxPercent(?bool $assumeTicketTaxPercent = null): self
     {
@@ -756,7 +756,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set bookingClass value
      * @param string $bookingClass
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setBookingClass(?string $bookingClass = null): self
     {
@@ -779,7 +779,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set bookingSource value
      * @param string $bookingSource
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setBookingSource(?string $bookingSource = null): self
     {
@@ -802,7 +802,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set bookingSourceExt value
      * @param string $bookingSourceExt
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setBookingSourceExt(?string $bookingSourceExt = null): self
     {
@@ -825,7 +825,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set bspCode value
      * @param string $bspCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setBspCode(?string $bspCode = null): self
     {
@@ -848,7 +848,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set companyTariff value
      * @param bool $companyTariff
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setCompanyTariff(?bool $companyTariff = null): self
     {
@@ -871,7 +871,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set countSegments value
      * @param int $countSegments
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setCountSegments(?int $countSegments = null): self
     {
@@ -894,7 +894,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set dbUsePerMatch value
      * @param bool $dbUsePerMatch
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setDbUsePerMatch(?bool $dbUsePerMatch = null): self
     {
@@ -917,7 +917,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -940,7 +940,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -963,7 +963,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set departureGeographicalCategory value
      * @param string $departureGeographicalCategory
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setDepartureGeographicalCategory(?string $departureGeographicalCategory = null): self
     {
@@ -986,7 +986,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -1009,7 +1009,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set documentSubgroupEmd value
      * @param string $documentSubgroupEmd
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setDocumentSubgroupEmd(?string $documentSubgroupEmd = null): self
     {
@@ -1032,7 +1032,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set documentSubtype value
      * @param string $documentSubtype
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setDocumentSubtype(?string $documentSubtype = null): self
     {
@@ -1055,7 +1055,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set documentSubtypeEmd value
      * @param string $documentSubtypeEmd
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setDocumentSubtypeEmd(?string $documentSubtypeEmd = null): self
     {
@@ -1078,7 +1078,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set endTravelFrom value
      * @param string $endTravelFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setEndTravelFrom(?string $endTravelFrom = null): self
     {
@@ -1101,7 +1101,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set endTravelTo value
      * @param string $endTravelTo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setEndTravelTo(?string $endTravelTo = null): self
     {
@@ -1124,7 +1124,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set extPaymentType value
      * @param string $extPaymentType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setExtPaymentType(?string $extPaymentType = null): self
     {
@@ -1147,7 +1147,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set fareType value
      * @param string $fareType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setFareType(?string $fareType = null): self
     {
@@ -1170,7 +1170,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set feeAssignId value
      * @param int $feeAssignId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setFeeAssignId(?int $feeAssignId = null): self
     {
@@ -1193,7 +1193,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set feeCategory value
      * @param string $feeCategory
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setFeeCategory(?string $feeCategory = null): self
     {
@@ -1216,7 +1216,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set feeCode value
      * @param string $feeCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setFeeCode(?string $feeCode = null): self
     {
@@ -1239,7 +1239,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set feeGroup value
      * @param string $feeGroup
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setFeeGroup(?string $feeGroup = null): self
     {
@@ -1262,7 +1262,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set feeGroupId value
      * @param int $feeGroupId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setFeeGroupId(?int $feeGroupId = null): self
     {
@@ -1285,7 +1285,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set feePercent value
      * @param float $feePercent
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setFeePercent(?float $feePercent = null): self
     {
@@ -1308,7 +1308,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set feePriority value
      * @param int $feePriority
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setFeePriority(?int $feePriority = null): self
     {
@@ -1331,7 +1331,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set feeValue value
      * @param float $feeValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setFeeValue(?float $feeValue = null): self
     {
@@ -1354,7 +1354,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set geographicalCategory value
      * @param string $geographicalCategory
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setGeographicalCategory(?string $geographicalCategory = null): self
     {
@@ -1377,7 +1377,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set isAbsoluteFeePercent value
      * @param bool $isAbsoluteFeePercent
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setIsAbsoluteFeePercent(?bool $isAbsoluteFeePercent = null): self
     {
@@ -1400,7 +1400,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set isDomestic value
      * @param bool $isDomestic
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setIsDomestic(?bool $isDomestic = null): self
     {
@@ -1423,7 +1423,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set isExplicit value
      * @param bool $isExplicit
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setIsExplicit(?bool $isExplicit = null): self
     {
@@ -1446,7 +1446,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set isNettoFeeValue value
      * @param bool $isNettoFeeValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setIsNettoFeeValue(?bool $isNettoFeeValue = null): self
     {
@@ -1469,7 +1469,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set isOrderFee value
      * @param bool $isOrderFee
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setIsOrderFee(?bool $isOrderFee = null): self
     {
@@ -1492,7 +1492,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set isPercentValueRounded value
      * @param bool $isPercentValueRounded
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setIsPercentValueRounded(?bool $isPercentValueRounded = null): self
     {
@@ -1515,7 +1515,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set isUseCustomerCurrency value
      * @param bool $isUseCustomerCurrency
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setIsUseCustomerCurrency(?bool $isUseCustomerCurrency = null): self
     {
@@ -1538,7 +1538,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -1561,7 +1561,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set maxFeeValue value
      * @param float $maxFeeValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setMaxFeeValue(?float $maxFeeValue = null): self
     {
@@ -1584,7 +1584,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set minFeeValue value
      * @param float $minFeeValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setMinFeeValue(?float $minFeeValue = null): self
     {
@@ -1607,7 +1607,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set noFeePrevDay value
      * @param bool $noFeePrevDay
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setNoFeePrevDay(?bool $noFeePrevDay = null): self
     {
@@ -1630,7 +1630,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set noFeePrevDayCategory value
      * @param string $noFeePrevDayCategory
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setNoFeePrevDayCategory(?string $noFeePrevDayCategory = null): self
     {
@@ -1653,7 +1653,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set noFeeSameDay value
      * @param bool $noFeeSameDay
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setNoFeeSameDay(?bool $noFeeSameDay = null): self
     {
@@ -1676,7 +1676,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set noFeeSameDayCategory value
      * @param string $noFeeSameDayCategory
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setNoFeeSameDayCategory(?string $noFeeSameDayCategory = null): self
     {
@@ -1699,7 +1699,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set oneFeeRelatedTicketsImport value
      * @param bool $oneFeeRelatedTicketsImport
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setOneFeeRelatedTicketsImport(?bool $oneFeeRelatedTicketsImport = null): self
     {
@@ -1722,7 +1722,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set orderAttribute value
      * @param string $orderAttribute
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setOrderAttribute(?string $orderAttribute = null): self
     {
@@ -1745,7 +1745,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set orderAttribute2 value
      * @param string $orderAttribute2
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setOrderAttribute2(?string $orderAttribute2 = null): self
     {
@@ -1768,7 +1768,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set orderAttribute3 value
      * @param string $orderAttribute3
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setOrderAttribute3(?string $orderAttribute3 = null): self
     {
@@ -1791,7 +1791,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set orderAttributeValue value
      * @param string $orderAttributeValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setOrderAttributeValue(?string $orderAttributeValue = null): self
     {
@@ -1814,7 +1814,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set orderAttributeValue2 value
      * @param string $orderAttributeValue2
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setOrderAttributeValue2(?string $orderAttributeValue2 = null): self
     {
@@ -1837,7 +1837,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set orderAttributeValue3 value
      * @param string $orderAttributeValue3
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setOrderAttributeValue3(?string $orderAttributeValue3 = null): self
     {
@@ -1860,7 +1860,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -1883,7 +1883,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set priceFrom value
      * @param float $priceFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setPriceFrom(?float $priceFrom = null): self
     {
@@ -1906,7 +1906,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set priceTo value
      * @param float $priceTo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setPriceTo(?float $priceTo = null): self
     {
@@ -1929,7 +1929,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set railDescription value
      * @param string $railDescription
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setRailDescription(?string $railDescription = null): self
     {
@@ -1952,7 +1952,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set revenue value
      * @param string $revenue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setRevenue(?string $revenue = null): self
     {
@@ -1975,7 +1975,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set revenuePercent value
      * @param float $revenuePercent
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setRevenuePercent(?float $revenuePercent = null): self
     {
@@ -1998,7 +1998,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set reverseTrip value
      * @param bool $reverseTrip
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setReverseTrip(?bool $reverseTrip = null): self
     {
@@ -2021,7 +2021,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set segmentMultiply value
      * @param bool $segmentMultiply
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setSegmentMultiply(?bool $segmentMultiply = null): self
     {
@@ -2044,7 +2044,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set segmentValueSet value
      * @param int $segmentValueSet
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setSegmentValueSet(?int $segmentValueSet = null): self
     {
@@ -2067,7 +2067,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set sellitemAttribute value
      * @param string $sellitemAttribute
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setSellitemAttribute(?string $sellitemAttribute = null): self
     {
@@ -2090,7 +2090,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set sellitemAttribute2 value
      * @param string $sellitemAttribute2
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setSellitemAttribute2(?string $sellitemAttribute2 = null): self
     {
@@ -2113,7 +2113,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set sellitemAttribute3 value
      * @param string $sellitemAttribute3
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setSellitemAttribute3(?string $sellitemAttribute3 = null): self
     {
@@ -2136,7 +2136,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set sellitemAttributeValue value
      * @param string $sellitemAttributeValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setSellitemAttributeValue(?string $sellitemAttributeValue = null): self
     {
@@ -2159,7 +2159,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set sellitemAttributeValue2 value
      * @param string $sellitemAttributeValue2
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setSellitemAttributeValue2(?string $sellitemAttributeValue2 = null): self
     {
@@ -2182,7 +2182,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set sellitemAttributeValue3 value
      * @param string $sellitemAttributeValue3
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setSellitemAttributeValue3(?string $sellitemAttributeValue3 = null): self
     {
@@ -2205,7 +2205,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set sellitemStati value
      * @param string $sellitemStati
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setSellitemStati(?string $sellitemStati = null): self
     {
@@ -2228,7 +2228,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set startTravelFrom value
      * @param string $startTravelFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setStartTravelFrom(?string $startTravelFrom = null): self
     {
@@ -2251,7 +2251,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set startTravelTo value
      * @param string $startTravelTo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setStartTravelTo(?string $startTravelTo = null): self
     {
@@ -2274,7 +2274,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set supplierGroup value
      * @param string $supplierGroup
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setSupplierGroup(?string $supplierGroup = null): self
     {
@@ -2297,7 +2297,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -2320,7 +2320,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set ticketDesignator value
      * @param string $ticketDesignator
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setTicketDesignator(?string $ticketDesignator = null): self
     {
@@ -2343,7 +2343,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set ticketOrigin value
      * @param string $ticketOrigin
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setTicketOrigin(?string $ticketOrigin = null): self
     {
@@ -2366,7 +2366,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set ticketType value
      * @param string $ticketType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setTicketType(?string $ticketType = null): self
     {
@@ -2389,7 +2389,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set travellerMultiply value
      * @param bool $travellerMultiply
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setTravellerMultiply(?bool $travellerMultiply = null): self
     {
@@ -2412,7 +2412,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -2435,7 +2435,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -2458,7 +2458,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set useCorporateDiscount value
      * @param bool $useCorporateDiscount
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setUseCorporateDiscount(?bool $useCorporateDiscount = null): self
     {
@@ -2481,7 +2481,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set useGlobalPrice value
      * @param bool $useGlobalPrice
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setUseGlobalPrice(?bool $useGlobalPrice = null): self
     {
@@ -2504,7 +2504,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set useGroupAmount value
      * @param bool $useGroupAmount
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setUseGroupAmount(?bool $useGroupAmount = null): self
     {
@@ -2527,7 +2527,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -2550,7 +2550,7 @@ class FeeAssignDTO extends AbstractStructBase
     /**
      * Set validUntil value
      * @param string $validUntil
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeAssignDTO
      */
     public function setValidUntil(?string $validUntil = null): self
     {

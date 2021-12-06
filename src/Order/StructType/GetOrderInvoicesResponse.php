@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetOrderInvoicesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoInvoiceInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoInvoiceInfo[]
      */
     protected ?array $MidocoInvoiceInfo = null;
     /**
      * Constructor method for GetOrderInvoicesResponse
      * @uses GetOrderInvoicesResponse::setMidocoInvoiceInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceInfo[] $midocoInvoiceInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoInvoiceInfo[] $midocoInvoiceInfo
      */
     public function __construct(?array $midocoInvoiceInfo = null)
     {
@@ -34,7 +34,7 @@ class GetOrderInvoicesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoInvoiceInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoInvoiceInfo[]
      */
     public function getMidocoInvoiceInfo(): ?array
     {
@@ -55,12 +55,12 @@ class GetOrderInvoicesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderInvoicesResponseMidocoInvoiceInfoItem) {
             // validation for constraint: itemType
-            if (!$getOrderInvoicesResponseMidocoInvoiceInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceInfo) {
+            if (!$getOrderInvoicesResponseMidocoInvoiceInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoInvoiceInfo) {
                 $invalidValues[] = is_object($getOrderInvoicesResponseMidocoInvoiceInfoItem) ? get_class($getOrderInvoicesResponseMidocoInvoiceInfoItem) : sprintf('%s(%s)', gettype($getOrderInvoicesResponseMidocoInvoiceInfoItem), var_export($getOrderInvoicesResponseMidocoInvoiceInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoInvoiceInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoInvoiceInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoInvoiceInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetOrderInvoicesResponse extends AbstractStructBase
     /**
      * Set MidocoInvoiceInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceInfo[] $midocoInvoiceInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderInvoicesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoInvoiceInfo[] $midocoInvoiceInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderInvoicesResponse
      */
     public function setMidocoInvoiceInfo(?array $midocoInvoiceInfo = null): self
     {
@@ -85,14 +85,14 @@ class GetOrderInvoicesResponse extends AbstractStructBase
     /**
      * Add item to MidocoInvoiceInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderInvoicesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoInvoiceInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderInvoicesResponse
      */
-    public function addToMidocoInvoiceInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceInfo $item): self
+    public function addToMidocoInvoiceInfo(\Pggns\MidocoApi\Order\StructType\MidocoInvoiceInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoInvoiceInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoInvoiceInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoInvoiceInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoInvoiceInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoInvoiceInfo[] = $item;
         

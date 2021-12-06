@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class ExportRbsDataRequest extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportRbsDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportRbsDataRequest
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -78,7 +78,7 @@ class ExportRbsDataRequest extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportRbsDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportRbsDataRequest
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -101,7 +101,7 @@ class ExportRbsDataRequest extends AbstractStructBase
     /**
      * Set startCreation value
      * @param string $startCreation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportRbsDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportRbsDataRequest
      */
     public function setStartCreation(?string $startCreation = null): self
     {

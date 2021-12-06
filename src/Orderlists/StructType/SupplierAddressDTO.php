@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -182,7 +182,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set contactPerson value
      * @param string $contactPerson
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setContactPerson(?string $contactPerson = null): self
     {
@@ -205,7 +205,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setCountry(?string $country = null): self
     {
@@ -228,7 +228,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -251,7 +251,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -274,7 +274,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set endorsement value
      * @param string $endorsement
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setEndorsement(?string $endorsement = null): self
     {
@@ -297,7 +297,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set fax value
      * @param string $fax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setFax(?string $fax = null): self
     {
@@ -320,7 +320,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setPassword(?string $password = null): self
     {
@@ -343,7 +343,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -366,7 +366,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setState(?string $state = null): self
     {
@@ -389,7 +389,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -412,7 +412,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -435,7 +435,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -458,7 +458,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set telephone value
      * @param string $telephone
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setTelephone(?string $telephone = null): self
     {
@@ -481,7 +481,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -504,7 +504,7 @@ class SupplierAddressDTO extends AbstractStructBase
     /**
      * Set webSite value
      * @param string $webSite
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAddressDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAddressDTO
      */
     public function setWebSite(?string $webSite = null): self
     {

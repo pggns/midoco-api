@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoSupplierPaymentCondition extends SupplierPaymentCondDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierPaymentCondition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierPaymentCondition
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {
@@ -94,7 +94,7 @@ class MidocoSupplierPaymentCondition extends SupplierPaymentCondDTO
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierPaymentCondition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierPaymentCondition
      */
     public function setOrgunit(?string $orgunit = null): self
     {
@@ -117,7 +117,7 @@ class MidocoSupplierPaymentCondition extends SupplierPaymentCondDTO
     /**
      * Set isHistorical value
      * @param bool $isHistorical
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierPaymentCondition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierPaymentCondition
      */
     public function setIsHistorical(?bool $isHistorical = null): self
     {
@@ -140,7 +140,7 @@ class MidocoSupplierPaymentCondition extends SupplierPaymentCondDTO
     /**
      * Set validDate value
      * @param string $validDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierPaymentCondition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierPaymentCondition
      */
     public function setValidDate(?string $validDate = null): self
     {
@@ -163,7 +163,7 @@ class MidocoSupplierPaymentCondition extends SupplierPaymentCondDTO
     /**
      * Set validCreationTravel value
      * @param string $validCreationTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierPaymentCondition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierPaymentCondition
      */
     public function setValidCreationTravel(?string $validCreationTravel = null): self
     {

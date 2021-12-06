@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GenerateMandateReferenceResponse extends AbstractStructBase
     /**
      * Set referenceId value
      * @param string $referenceId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GenerateMandateReferenceResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GenerateMandateReferenceResponse
      */
     public function setReferenceId(?string $referenceId = null): self
     {
@@ -72,7 +72,7 @@ class GenerateMandateReferenceResponse extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GenerateMandateReferenceResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GenerateMandateReferenceResponse
      */
     public function setIsActive(?bool $isActive = null): self
     {

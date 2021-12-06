@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class OrderLayoutDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderLayoutDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderLayoutDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -158,7 +158,7 @@ class OrderLayoutDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderLayoutDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderLayoutDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -181,7 +181,7 @@ class OrderLayoutDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderLayoutDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderLayoutDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -204,7 +204,7 @@ class OrderLayoutDTO extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderLayoutDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderLayoutDTO
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -227,7 +227,7 @@ class OrderLayoutDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderLayoutDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderLayoutDTO
      */
     public function setId(?int $id = null): self
     {
@@ -250,7 +250,7 @@ class OrderLayoutDTO extends AbstractStructBase
     /**
      * Set layoutType value
      * @param int $layoutType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderLayoutDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderLayoutDTO
      */
     public function setLayoutType(?int $layoutType = null): self
     {
@@ -273,7 +273,7 @@ class OrderLayoutDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderLayoutDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderLayoutDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -296,7 +296,7 @@ class OrderLayoutDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderLayoutDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderLayoutDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -319,7 +319,7 @@ class OrderLayoutDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderLayoutDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderLayoutDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -342,7 +342,7 @@ class OrderLayoutDTO extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderLayoutDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderLayoutDTO
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -365,7 +365,7 @@ class OrderLayoutDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderLayoutDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderLayoutDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -388,7 +388,7 @@ class OrderLayoutDTO extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderLayoutDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderLayoutDTO
      */
     public function setTravelNo(?string $travelNo = null): self
     {
@@ -411,7 +411,7 @@ class OrderLayoutDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderLayoutDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderLayoutDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

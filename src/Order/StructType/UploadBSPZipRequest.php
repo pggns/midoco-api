@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class UploadBSPZipRequest extends AbstractStructBase
     /**
      * Set bytes value
      * @param string $bytes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UploadBSPZipRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UploadBSPZipRequest
      */
     public function setBytes(?string $bytes = null): self
     {
@@ -78,7 +78,7 @@ class UploadBSPZipRequest extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UploadBSPZipRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UploadBSPZipRequest
      */
     public function setPassword(?string $password = null): self
     {
@@ -101,7 +101,7 @@ class UploadBSPZipRequest extends AbstractStructBase
     /**
      * Set bspType value
      * @param string $bspType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UploadBSPZipRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UploadBSPZipRequest
      */
     public function setBspType(?string $bspType = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SupplierTemplateAssignDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierTemplateAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierTemplateAssignDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -78,7 +78,7 @@ class SupplierTemplateAssignDTO extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierTemplateAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierTemplateAssignDTO
      */
     public function setTemplateId(?int $templateId = null): self
     {
@@ -101,7 +101,7 @@ class SupplierTemplateAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierTemplateAssignDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierTemplateAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

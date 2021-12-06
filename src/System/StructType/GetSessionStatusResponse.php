@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetSessionStatusResponse extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetSessionStatusResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetSessionStatusResponse
      */
     public function setStatus(?string $status = null): self
     {

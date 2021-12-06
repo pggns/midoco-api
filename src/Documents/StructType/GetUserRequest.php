@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetUserRequest extends AbstractStructBase
     /**
      * Set userLogin value
      * @param string $userLogin
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetUserRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetUserRequest
      */
     public function setUserLogin(?string $userLogin = null): self
     {

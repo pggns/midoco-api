@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class DeleteSellItemAttributesRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAttributeValue
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue[]
      */
     protected ?array $MidocoAttributeValue = null;
     /**
      * Constructor method for DeleteSellItemAttributesRequest
      * @uses DeleteSellItemAttributesRequest::setMidocoAttributeValue()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue[] $midocoAttributeValue
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue[] $midocoAttributeValue
      */
     public function __construct(?array $midocoAttributeValue = null)
     {
@@ -34,7 +34,7 @@ class DeleteSellItemAttributesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAttributeValue value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue[]
      */
     public function getMidocoAttributeValue(): ?array
     {
@@ -55,12 +55,12 @@ class DeleteSellItemAttributesRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteSellItemAttributesRequestMidocoAttributeValueItem) {
             // validation for constraint: itemType
-            if (!$deleteSellItemAttributesRequestMidocoAttributeValueItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue) {
+            if (!$deleteSellItemAttributesRequestMidocoAttributeValueItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue) {
                 $invalidValues[] = is_object($deleteSellItemAttributesRequestMidocoAttributeValueItem) ? get_class($deleteSellItemAttributesRequestMidocoAttributeValueItem) : sprintf('%s(%s)', gettype($deleteSellItemAttributesRequestMidocoAttributeValueItem), var_export($deleteSellItemAttributesRequestMidocoAttributeValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAttributeValue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAttributeValue property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class DeleteSellItemAttributesRequest extends AbstractStructBase
     /**
      * Set MidocoAttributeValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue[] $midocoAttributeValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSellItemAttributesRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue[] $midocoAttributeValue
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSellItemAttributesRequest
      */
     public function setMidocoAttributeValue(?array $midocoAttributeValue = null): self
     {
@@ -85,14 +85,14 @@ class DeleteSellItemAttributesRequest extends AbstractStructBase
     /**
      * Add item to MidocoAttributeValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSellItemAttributesRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue $item
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSellItemAttributesRequest
      */
-    public function addToMidocoAttributeValue(\Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue $item): self
+    public function addToMidocoAttributeValue(\Pggns\MidocoApi\Order\StructType\MidocoAttributeValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue) {
-            throw new InvalidArgumentException(sprintf('The MidocoAttributeValue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue) {
+            throw new InvalidArgumentException(sprintf('The MidocoAttributeValue property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAttributeValue[] = $item;
         

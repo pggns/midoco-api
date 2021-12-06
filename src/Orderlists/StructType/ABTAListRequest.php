@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class ABTAListRequest extends AbstractStructBase
     /**
      * Set fromDate value
      * @param string $fromDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ABTAListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ABTAListRequest
      */
     public function setFromDate(?string $fromDate = null): self
     {
@@ -86,7 +86,7 @@ class ABTAListRequest extends AbstractStructBase
     /**
      * Set toDate value
      * @param string $toDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ABTAListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ABTAListRequest
      */
     public function setToDate(?string $toDate = null): self
     {
@@ -109,7 +109,7 @@ class ABTAListRequest extends AbstractStructBase
     /**
      * Set section value
      * @param string $section
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ABTAListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ABTAListRequest
      */
     public function setSection(?string $section = null): self
     {
@@ -132,7 +132,7 @@ class ABTAListRequest extends AbstractStructBase
     /**
      * Set field value
      * @param string $field
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ABTAListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ABTAListRequest
      */
     public function setField(?string $field = null): self
     {

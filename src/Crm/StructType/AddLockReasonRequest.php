@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class AddLockReasonRequest extends AbstractStructBase
      * The MidocoCrmLockReason
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmLockReason
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmLockReasonDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmLockReasonDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CrmLockReasonDTO $MidocoCrmLockReason = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CrmLockReasonDTO $MidocoCrmLockReason = null;
     /**
      * Constructor method for AddLockReasonRequest
      * @uses AddLockReasonRequest::setMidocoCrmLockReason()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmLockReasonDTO $midocoCrmLockReason
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmLockReasonDTO $midocoCrmLockReason
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CrmLockReasonDTO $midocoCrmLockReason = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CrmLockReasonDTO $midocoCrmLockReason = null)
     {
         $this
             ->setMidocoCrmLockReason($midocoCrmLockReason);
     }
     /**
      * Get MidocoCrmLockReason value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmLockReasonDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmLockReasonDTO|null
      */
-    public function getMidocoCrmLockReason(): ?\Pggns\MidocoApi\Api\Crm\StructType\CrmLockReasonDTO
+    public function getMidocoCrmLockReason(): ?\Pggns\MidocoApi\Crm\StructType\CrmLockReasonDTO
     {
         return $this->MidocoCrmLockReason;
     }
     /**
      * Set MidocoCrmLockReason value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmLockReasonDTO $midocoCrmLockReason
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AddLockReasonRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmLockReasonDTO $midocoCrmLockReason
+     * @return \Pggns\MidocoApi\Crm\StructType\AddLockReasonRequest
      */
-    public function setMidocoCrmLockReason(?\Pggns\MidocoApi\Api\Crm\StructType\CrmLockReasonDTO $midocoCrmLockReason = null): self
+    public function setMidocoCrmLockReason(?\Pggns\MidocoApi\Crm\StructType\CrmLockReasonDTO $midocoCrmLockReason = null): self
     {
         $this->MidocoCrmLockReason = $midocoCrmLockReason;
         

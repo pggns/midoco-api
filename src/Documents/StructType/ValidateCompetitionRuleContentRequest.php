@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class ValidateCompetitionRuleContentRequest extends AbstractStructBase
      * The MidocoRuleSet
      * Meta information extracted from the WSDL
      * - ref: MidocoRuleSet
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\RulesetDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\RulesetDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\RulesetDTO $MidocoRuleSet = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\RulesetDTO $MidocoRuleSet = null;
     /**
      * The orderNo
      * @var int|null
@@ -29,10 +29,10 @@ class ValidateCompetitionRuleContentRequest extends AbstractStructBase
      * Constructor method for ValidateCompetitionRuleContentRequest
      * @uses ValidateCompetitionRuleContentRequest::setMidocoRuleSet()
      * @uses ValidateCompetitionRuleContentRequest::setOrderNo()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\RulesetDTO $midocoRuleSet
+     * @param \Pggns\MidocoApi\Documents\StructType\RulesetDTO $midocoRuleSet
      * @param int $orderNo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\RulesetDTO $midocoRuleSet = null, ?int $orderNo = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\RulesetDTO $midocoRuleSet = null, ?int $orderNo = null)
     {
         $this
             ->setMidocoRuleSet($midocoRuleSet)
@@ -40,18 +40,18 @@ class ValidateCompetitionRuleContentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoRuleSet value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RulesetDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\RulesetDTO|null
      */
-    public function getMidocoRuleSet(): ?\Pggns\MidocoApi\Api\Documents\StructType\RulesetDTO
+    public function getMidocoRuleSet(): ?\Pggns\MidocoApi\Documents\StructType\RulesetDTO
     {
         return $this->MidocoRuleSet;
     }
     /**
      * Set MidocoRuleSet value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\RulesetDTO $midocoRuleSet
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ValidateCompetitionRuleContentRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\RulesetDTO $midocoRuleSet
+     * @return \Pggns\MidocoApi\Documents\StructType\ValidateCompetitionRuleContentRequest
      */
-    public function setMidocoRuleSet(?\Pggns\MidocoApi\Api\Documents\StructType\RulesetDTO $midocoRuleSet = null): self
+    public function setMidocoRuleSet(?\Pggns\MidocoApi\Documents\StructType\RulesetDTO $midocoRuleSet = null): self
     {
         $this->MidocoRuleSet = $midocoRuleSet;
         
@@ -68,7 +68,7 @@ class ValidateCompetitionRuleContentRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ValidateCompetitionRuleContentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ValidateCompetitionRuleContentRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {

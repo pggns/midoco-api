@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class MergeCustomersResponse extends AbstractStructBase
     /**
      * Set customersMerged value
      * @param bool $customersMerged
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MergeCustomersResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\MergeCustomersResponse
      */
     public function setCustomersMerged(?bool $customersMerged = null): self
     {

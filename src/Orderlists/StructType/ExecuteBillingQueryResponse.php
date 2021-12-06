@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class ExecuteBillingQueryResponse extends AbstractStructBase
      * The MidocoQueryResult
      * Meta information extracted from the WSDL
      * - ref: MidocoQueryResult
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult $MidocoQueryResult = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult $MidocoQueryResult = null;
     /**
      * Constructor method for ExecuteBillingQueryResponse
      * @uses ExecuteBillingQueryResponse::setMidocoQueryResult()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult $midocoQueryResult
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult $midocoQueryResult
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult $midocoQueryResult = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult $midocoQueryResult = null)
     {
         $this
             ->setMidocoQueryResult($midocoQueryResult);
     }
     /**
      * Get MidocoQueryResult value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult|null
      */
-    public function getMidocoQueryResult(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult
+    public function getMidocoQueryResult(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult
     {
         return $this->MidocoQueryResult;
     }
     /**
      * Set MidocoQueryResult value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult $midocoQueryResult
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteBillingQueryResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult $midocoQueryResult
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteBillingQueryResponse
      */
-    public function setMidocoQueryResult(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryResult $midocoQueryResult = null): self
+    public function setMidocoQueryResult(?\Pggns\MidocoApi\Orderlists\StructType\MidocoQueryResult $midocoQueryResult = null): self
     {
         $this->MidocoQueryResult = $midocoQueryResult;
         

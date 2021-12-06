@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -99,7 +99,7 @@ class MigrateFiskalyTssRequest extends AbstractStructBase
      * Set UnitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MigrateFiskalyTssRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\MigrateFiskalyTssRequest
      */
     public function setUnitName(array $unitName): self
     {
@@ -115,7 +115,7 @@ class MigrateFiskalyTssRequest extends AbstractStructBase
      * Add item to UnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MigrateFiskalyTssRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\MigrateFiskalyTssRequest
      */
     public function addToUnitName(string $item): self
     {
@@ -138,7 +138,7 @@ class MigrateFiskalyTssRequest extends AbstractStructBase
     /**
      * Set send_puk_mail value
      * @param bool $send_puk_mail
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MigrateFiskalyTssRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\MigrateFiskalyTssRequest
      */
     public function setSend_puk_mail(?bool $send_puk_mail = false): self
     {
@@ -161,7 +161,7 @@ class MigrateFiskalyTssRequest extends AbstractStructBase
     /**
      * Set stop_on_first_error value
      * @param bool $stop_on_first_error
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MigrateFiskalyTssRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\MigrateFiskalyTssRequest
      */
     public function setStop_on_first_error(?bool $stop_on_first_error = true): self
     {
@@ -184,7 +184,7 @@ class MigrateFiskalyTssRequest extends AbstractStructBase
     /**
      * Set cancel_reason value
      * @param string $cancel_reason
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MigrateFiskalyTssRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\MigrateFiskalyTssRequest
      */
     public function setCancel_reason(?string $cancel_reason = 'Migration to Fiskaly Version 2'): self
     {

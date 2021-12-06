@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -42,7 +42,7 @@ class DeletePreparedAgencySettlementResponse extends AbstractStructBase
     /**
      * Set doneOk value
      * @param bool $doneOk
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeletePreparedAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DeletePreparedAgencySettlementResponse
      */
     public function setDoneOk(?bool $doneOk = false): self
     {

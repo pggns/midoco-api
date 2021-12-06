@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class GetOrderWithSellItemExportLogRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderWithSellItemExportLogRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderWithSellItemExportLogRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -86,7 +86,7 @@ class GetOrderWithSellItemExportLogRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderWithSellItemExportLogRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderWithSellItemExportLogRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -109,7 +109,7 @@ class GetOrderWithSellItemExportLogRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderWithSellItemExportLogRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderWithSellItemExportLogRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -132,7 +132,7 @@ class GetOrderWithSellItemExportLogRequest extends AbstractStructBase
     /**
      * Set maskCcNo value
      * @param bool $maskCcNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderWithSellItemExportLogRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderWithSellItemExportLogRequest
      */
     public function setMaskCcNo(?bool $maskCcNo = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetExternVoucherTypeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoExternVoucherType
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO[]
      */
     protected ?array $MidocoExternVoucherType = null;
     /**
      * Constructor method for GetExternVoucherTypeResponse
      * @uses GetExternVoucherTypeResponse::setMidocoExternVoucherType()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO[] $midocoExternVoucherType
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO[] $midocoExternVoucherType
      */
     public function __construct(?array $midocoExternVoucherType = null)
     {
@@ -34,7 +34,7 @@ class GetExternVoucherTypeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoExternVoucherType value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO[]
      */
     public function getMidocoExternVoucherType(): ?array
     {
@@ -55,12 +55,12 @@ class GetExternVoucherTypeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getExternVoucherTypeResponseMidocoExternVoucherTypeItem) {
             // validation for constraint: itemType
-            if (!$getExternVoucherTypeResponseMidocoExternVoucherTypeItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO) {
+            if (!$getExternVoucherTypeResponseMidocoExternVoucherTypeItem instanceof \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO) {
                 $invalidValues[] = is_object($getExternVoucherTypeResponseMidocoExternVoucherTypeItem) ? get_class($getExternVoucherTypeResponseMidocoExternVoucherTypeItem) : sprintf('%s(%s)', gettype($getExternVoucherTypeResponseMidocoExternVoucherTypeItem), var_export($getExternVoucherTypeResponseMidocoExternVoucherTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoExternVoucherType property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoExternVoucherType property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetExternVoucherTypeResponse extends AbstractStructBase
     /**
      * Set MidocoExternVoucherType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO[] $midocoExternVoucherType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetExternVoucherTypeResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO[] $midocoExternVoucherType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetExternVoucherTypeResponse
      */
     public function setMidocoExternVoucherType(?array $midocoExternVoucherType = null): self
     {
@@ -85,14 +85,14 @@ class GetExternVoucherTypeResponse extends AbstractStructBase
     /**
      * Add item to MidocoExternVoucherType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetExternVoucherTypeResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetExternVoucherTypeResponse
      */
-    public function addToMidocoExternVoucherType(\Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO $item): self
+    public function addToMidocoExternVoucherType(\Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoExternVoucherType property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoExternVoucherType property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoExternVoucherType[] = $item;
         

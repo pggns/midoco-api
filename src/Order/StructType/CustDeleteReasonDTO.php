@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class CustDeleteReasonDTO extends AbstractStructBase
     /**
      * Set reasonId value
      * @param int $reasonId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CustDeleteReasonDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CustDeleteReasonDTO
      */
     public function setReasonId(?int $reasonId = null): self
     {
@@ -70,7 +70,7 @@ class CustDeleteReasonDTO extends AbstractStructBase
     /**
      * Set shortDescription value
      * @param string $shortDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CustDeleteReasonDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CustDeleteReasonDTO
      */
     public function setShortDescription(?string $shortDescription = null): self
     {

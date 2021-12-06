@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class MidocoMarginIntervalType extends AbstractStructBase
     /**
      * Set dbFrom value
      * @param float $dbFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginIntervalType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType
      */
     public function setDbFrom(?float $dbFrom = null): self
     {
@@ -80,7 +80,7 @@ class MidocoMarginIntervalType extends AbstractStructBase
     /**
      * Set dbTo value
      * @param float $dbTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginIntervalType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType
      */
     public function setDbTo(?float $dbTo = null): self
     {
@@ -103,7 +103,7 @@ class MidocoMarginIntervalType extends AbstractStructBase
     /**
      * Set dbCategory value
      * @param int $dbCategory
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginIntervalType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType
      */
     public function setDbCategory(?int $dbCategory = null): self
     {

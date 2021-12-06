@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteSupplierCommissionConditionRequest extends AbstractStructBase
     /**
      * Set conditionId value
      * @param int $conditionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierCommissionConditionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSupplierCommissionConditionRequest
      */
     public function setConditionId(?int $conditionId = null): self
     {

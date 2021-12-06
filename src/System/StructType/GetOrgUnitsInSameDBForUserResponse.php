@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -68,7 +68,7 @@ class GetOrgUnitsInSameDBForUserResponse extends AbstractStructBase
      * Set UnitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgUnitsInSameDBForUserResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgUnitsInSameDBForUserResponse
      */
     public function setUnitName(?array $unitName = null): self
     {
@@ -84,7 +84,7 @@ class GetOrgUnitsInSameDBForUserResponse extends AbstractStructBase
      * Add item to UnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgUnitsInSameDBForUserResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgUnitsInSameDBForUserResponse
      */
     public function addToUnitName(string $item): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class SaveMisAccessRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMisReport
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoMisReport[]
      */
     protected ?array $MidocoMisReport = null;
     /**
@@ -28,7 +28,7 @@ class SaveMisAccessRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMisDimension
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO[]
      */
     protected ?array $MidocoMisDimension = null;
     /**
@@ -47,8 +47,8 @@ class SaveMisAccessRequest extends AbstractStructBase
      * @uses SaveMisAccessRequest::setMidocoMisDimension()
      * @uses SaveMisAccessRequest::setRoleId()
      * @uses SaveMisAccessRequest::setOrgUnit()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport[] $midocoMisReport
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO[] $midocoMisDimension
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisReport[] $midocoMisReport
+     * @param \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO[] $midocoMisDimension
      * @param int $roleId
      * @param string $orgUnit
      */
@@ -62,7 +62,7 @@ class SaveMisAccessRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMisReport value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoMisReport[]
      */
     public function getMidocoMisReport(): ?array
     {
@@ -83,12 +83,12 @@ class SaveMisAccessRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveMisAccessRequestMidocoMisReportItem) {
             // validation for constraint: itemType
-            if (!$saveMisAccessRequestMidocoMisReportItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport) {
+            if (!$saveMisAccessRequestMidocoMisReportItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoMisReport) {
                 $invalidValues[] = is_object($saveMisAccessRequestMidocoMisReportItem) ? get_class($saveMisAccessRequestMidocoMisReportItem) : sprintf('%s(%s)', gettype($saveMisAccessRequestMidocoMisReportItem), var_export($saveMisAccessRequestMidocoMisReportItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMisReport property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMisReport property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoMisReport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -97,8 +97,8 @@ class SaveMisAccessRequest extends AbstractStructBase
     /**
      * Set MidocoMisReport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport[] $midocoMisReport
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveMisAccessRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisReport[] $midocoMisReport
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveMisAccessRequest
      */
     public function setMidocoMisReport(?array $midocoMisReport = null): self
     {
@@ -113,14 +113,14 @@ class SaveMisAccessRequest extends AbstractStructBase
     /**
      * Add item to MidocoMisReport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveMisAccessRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisReport $item
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveMisAccessRequest
      */
-    public function addToMidocoMisReport(\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport $item): self
+    public function addToMidocoMisReport(\Pggns\MidocoApi\Mis\StructType\MidocoMisReport $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport) {
-            throw new InvalidArgumentException(sprintf('The MidocoMisReport property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoMisReport) {
+            throw new InvalidArgumentException(sprintf('The MidocoMisReport property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoMisReport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMisReport[] = $item;
         
@@ -128,7 +128,7 @@ class SaveMisAccessRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMisDimension value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO[]
      */
     public function getMidocoMisDimension(): ?array
     {
@@ -149,12 +149,12 @@ class SaveMisAccessRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveMisAccessRequestMidocoMisDimensionItem) {
             // validation for constraint: itemType
-            if (!$saveMisAccessRequestMidocoMisDimensionItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO) {
+            if (!$saveMisAccessRequestMidocoMisDimensionItem instanceof \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO) {
                 $invalidValues[] = is_object($saveMisAccessRequestMidocoMisDimensionItem) ? get_class($saveMisAccessRequestMidocoMisDimensionItem) : sprintf('%s(%s)', gettype($saveMisAccessRequestMidocoMisDimensionItem), var_export($saveMisAccessRequestMidocoMisDimensionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMisDimension property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMisDimension property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -163,8 +163,8 @@ class SaveMisAccessRequest extends AbstractStructBase
     /**
      * Set MidocoMisDimension value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO[] $midocoMisDimension
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveMisAccessRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO[] $midocoMisDimension
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveMisAccessRequest
      */
     public function setMidocoMisDimension(?array $midocoMisDimension = null): self
     {
@@ -179,14 +179,14 @@ class SaveMisAccessRequest extends AbstractStructBase
     /**
      * Add item to MidocoMisDimension value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveMisAccessRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveMisAccessRequest
      */
-    public function addToMidocoMisDimension(\Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO $item): self
+    public function addToMidocoMisDimension(\Pggns\MidocoApi\Mis\StructType\MisDimensionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMisDimension property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMisDimension property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMisDimension[] = $item;
         
@@ -203,7 +203,7 @@ class SaveMisAccessRequest extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveMisAccessRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveMisAccessRequest
      */
     public function setRoleId(?int $roleId = null): self
     {
@@ -226,7 +226,7 @@ class SaveMisAccessRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveMisAccessRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveMisAccessRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

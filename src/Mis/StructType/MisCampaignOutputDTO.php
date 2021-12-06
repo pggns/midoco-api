@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MisCampaignOutputDTO extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -94,7 +94,7 @@ class MisCampaignOutputDTO extends AbstractStructBase
     /**
      * Set fieldName value
      * @param string $fieldName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO
      */
     public function setFieldName(?string $fieldName = null): self
     {
@@ -117,7 +117,7 @@ class MisCampaignOutputDTO extends AbstractStructBase
     /**
      * Set sortDesc value
      * @param bool $sortDesc
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO
      */
     public function setSortDesc(?bool $sortDesc = null): self
     {
@@ -140,7 +140,7 @@ class MisCampaignOutputDTO extends AbstractStructBase
     /**
      * Set sortIndex value
      * @param int $sortIndex
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO
      */
     public function setSortIndex(?int $sortIndex = null): self
     {
@@ -163,7 +163,7 @@ class MisCampaignOutputDTO extends AbstractStructBase
     /**
      * Set sortPosition value
      * @param int $sortPosition
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO
      */
     public function setSortPosition(?int $sortPosition = null): self
     {

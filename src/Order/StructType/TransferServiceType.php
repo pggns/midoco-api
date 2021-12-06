@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -419,7 +419,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setPosition(int $position): self
     {
@@ -442,7 +442,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set serviceCode value
      * @param string $serviceCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setServiceCode(?string $serviceCode = null): self
     {
@@ -465,7 +465,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set serviceName value
      * @param string $serviceName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setServiceName(?string $serviceName = null): self
     {
@@ -488,7 +488,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set personsPerService value
      * @param string $personsPerService
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setPersonsPerService(?string $personsPerService = null): self
     {
@@ -511,7 +511,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -538,7 +538,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -565,7 +565,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set startTime value
      * @param string $startTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setStartTime(?string $startTime = null): self
     {
@@ -592,7 +592,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set endTime value
      * @param string $endTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setEndTime(?string $endTime = null): self
     {
@@ -619,7 +619,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {
@@ -642,7 +642,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {
@@ -665,7 +665,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set servicePrice value
      * @param float $servicePrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setServicePrice(?float $servicePrice = null): self
     {
@@ -688,7 +688,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set serviceCurrency value
      * @param string $serviceCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setServiceCurrency(?string $serviceCurrency = 'EUR'): self
     {
@@ -711,7 +711,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set serviceDescription value
      * @param string $serviceDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setServiceDescription(?string $serviceDescription = null): self
     {
@@ -734,7 +734,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -757,7 +757,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set departureDescription value
      * @param string $departureDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setDepartureDescription(?string $departureDescription = null): self
     {
@@ -780,7 +780,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set departureLocation value
      * @param string $departureLocation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setDepartureLocation(?string $departureLocation = null): self
     {
@@ -803,7 +803,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set departurePoint value
      * @param string $departurePoint
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setDeparturePoint(?string $departurePoint = null): self
     {
@@ -826,7 +826,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -849,7 +849,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set destinationDescription value
      * @param string $destinationDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setDestinationDescription(?string $destinationDescription = null): self
     {
@@ -872,7 +872,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set returnDepartureCode value
      * @param string $returnDepartureCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setReturnDepartureCode(?string $returnDepartureCode = null): self
     {
@@ -895,7 +895,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set returnDepartureDescription value
      * @param string $returnDepartureDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setReturnDepartureDescription(?string $returnDepartureDescription = null): self
     {
@@ -918,7 +918,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set returnDestinationCode value
      * @param string $returnDestinationCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setReturnDestinationCode(?string $returnDestinationCode = null): self
     {
@@ -941,7 +941,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set returnDestinationDescription value
      * @param string $returnDestinationDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setReturnDestinationDescription(?string $returnDestinationDescription = null): self
     {
@@ -964,7 +964,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set baggageAllowance value
      * @param string $baggageAllowance
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setBaggageAllowance(?string $baggageAllowance = null): self
     {
@@ -987,7 +987,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set duration value
      * @param string $duration
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setDuration(?string $duration = null): self
     {
@@ -1010,7 +1010,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set transferAddress1 value
      * @param string $transferAddress1
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setTransferAddress1(?string $transferAddress1 = null): self
     {
@@ -1033,7 +1033,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set transferAddress2 value
      * @param string $transferAddress2
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setTransferAddress2(?string $transferAddress2 = null): self
     {
@@ -1056,7 +1056,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set transferAddress3 value
      * @param string $transferAddress3
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setTransferAddress3(?string $transferAddress3 = null): self
     {
@@ -1079,7 +1079,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set transferAddress4 value
      * @param string $transferAddress4
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setTransferAddress4(?string $transferAddress4 = null): self
     {
@@ -1102,7 +1102,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set vehicleCode value
      * @param string $vehicleCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setVehicleCode(?string $vehicleCode = null): self
     {
@@ -1125,7 +1125,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set vehicleDescription value
      * @param string $vehicleDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setVehicleDescription(?string $vehicleDescription = null): self
     {
@@ -1148,7 +1148,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set typeOfTransfer value
      * @param string $typeOfTransfer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setTypeOfTransfer(?string $typeOfTransfer = null): self
     {
@@ -1170,17 +1170,17 @@ class TransferServiceType extends AbstractStructBase
     }
     /**
      * Set direction value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\Direction::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\Direction::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\Direction::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\Direction::getValidValues()
      * @throws InvalidArgumentException
      * @param string $direction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setDirection(?string $direction = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\Direction::valueIsValid($direction)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\Direction', is_array($direction) ? implode(', ', $direction) : var_export($direction, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\Direction::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\Direction::valueIsValid($direction)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\Direction', is_array($direction) ? implode(', ', $direction) : var_export($direction, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\Direction::getValidValues())), __LINE__);
         }
         $this->direction = $direction;
         
@@ -1197,7 +1197,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set emergency_Number value
      * @param string $emergency_Number
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setEmergency_Number(?string $emergency_Number = null): self
     {
@@ -1220,7 +1220,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set maxPassengers value
      * @param int $maxPassengers
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setMaxPassengers(?int $maxPassengers = null): self
     {
@@ -1243,7 +1243,7 @@ class TransferServiceType extends AbstractStructBase
     /**
      * Set simpleService value
      * @param bool $simpleService
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TransferServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\TransferServiceType
      */
     public function setSimpleService(?bool $simpleService = false): self
     {

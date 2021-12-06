@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class HasTravelNumberSequenceRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\HasTravelNumberSequenceRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\HasTravelNumberSequenceRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

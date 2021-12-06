@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -166,7 +166,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -189,7 +189,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -212,7 +212,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set exportTimestamp value
      * @param string $exportTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setExportTimestamp(?string $exportTimestamp = null): self
     {
@@ -235,7 +235,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set exportedFileId value
      * @param string $exportedFileId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setExportedFileId(?string $exportedFileId = null): self
     {
@@ -258,7 +258,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set exportedFileName value
      * @param string $exportedFileName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setExportedFileName(?string $exportedFileName = null): self
     {
@@ -281,7 +281,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -304,7 +304,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set merchantId value
      * @param string $merchantId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setMerchantId(?string $merchantId = null): self
     {
@@ -327,7 +327,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -350,7 +350,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set refBookingId value
      * @param string $refBookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setRefBookingId(?string $refBookingId = null): self
     {
@@ -373,7 +373,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set transactionId value
      * @param int $transactionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setTransactionId(?int $transactionId = null): self
     {
@@ -396,7 +396,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set transactionType value
      * @param string $transactionType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setTransactionType(?string $transactionType = null): self
     {
@@ -419,7 +419,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -442,7 +442,7 @@ class AmexPositionDTO extends AbstractStructBase
     /**
      * Set xml value
      * @param string $xml
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AmexPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AmexPositionDTO
      */
     public function setXml(?string $xml = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -182,7 +182,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set linkedSupplier value
      * @param string $linkedSupplier
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setLinkedSupplier(?string $linkedSupplier = null): self
     {
@@ -205,7 +205,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set positionNo value
      * @param int $positionNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setPositionNo(?int $positionNo = null): self
     {
@@ -228,7 +228,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setPrice(?float $price = null): self
     {
@@ -251,7 +251,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set receiptRecordId value
      * @param int $receiptRecordId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setReceiptRecordId(?int $receiptRecordId = null): self
     {
@@ -274,7 +274,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set reference value
      * @param string $reference
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setReference(?string $reference = null): self
     {
@@ -297,7 +297,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set saleType value
      * @param string $saleType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setSaleType(?string $saleType = null): self
     {
@@ -320,7 +320,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set vat2Amount value
      * @param float $vat2Amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setVat2Amount(?float $vat2Amount = null): self
     {
@@ -343,7 +343,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set vat2Base value
      * @param float $vat2Base
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setVat2Base(?float $vat2Base = null): self
     {
@@ -366,7 +366,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set vat2Code value
      * @param string $vat2Code
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setVat2Code(?string $vat2Code = null): self
     {
@@ -389,7 +389,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set vat2Percent value
      * @param float $vat2Percent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setVat2Percent(?float $vat2Percent = null): self
     {
@@ -412,7 +412,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -435,7 +435,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set vatBase value
      * @param float $vatBase
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setVatBase(?float $vatBase = null): self
     {
@@ -458,7 +458,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -481,7 +481,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {
@@ -504,7 +504,7 @@ class ReceiptRecordLineitemDTO extends AbstractStructBase
     /**
      * Set voucherNo value
      * @param string $voucherNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptRecordLineitemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptRecordLineitemDTO
      */
     public function setVoucherNo(?string $voucherNo = null): self
     {

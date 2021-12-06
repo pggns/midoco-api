@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GdsGlobalDTO extends AbstractStructBase
     /**
      * Set gdsId value
      * @param string $gdsId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GdsGlobalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GdsGlobalDTO
      */
     public function setGdsId(?string $gdsId = null): self
     {

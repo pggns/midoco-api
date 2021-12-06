@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class SupplierSettlemDiffDTO extends AbstractStructBase
     /**
      * Set diffAccountNoVat value
      * @param string $diffAccountNoVat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierSettlemDiffDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierSettlemDiffDTO
      */
     public function setDiffAccountNoVat(?string $diffAccountNoVat = null): self
     {
@@ -126,7 +126,7 @@ class SupplierSettlemDiffDTO extends AbstractStructBase
     /**
      * Set diffAccountVat value
      * @param string $diffAccountVat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierSettlemDiffDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierSettlemDiffDTO
      */
     public function setDiffAccountVat(?string $diffAccountVat = null): self
     {
@@ -149,7 +149,7 @@ class SupplierSettlemDiffDTO extends AbstractStructBase
     /**
      * Set priceDiff value
      * @param float $priceDiff
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierSettlemDiffDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierSettlemDiffDTO
      */
     public function setPriceDiff(?float $priceDiff = null): self
     {
@@ -172,7 +172,7 @@ class SupplierSettlemDiffDTO extends AbstractStructBase
     /**
      * Set priceDiffPercent value
      * @param float $priceDiffPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierSettlemDiffDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierSettlemDiffDTO
      */
     public function setPriceDiffPercent(?float $priceDiffPercent = null): self
     {
@@ -195,7 +195,7 @@ class SupplierSettlemDiffDTO extends AbstractStructBase
     /**
      * Set revenueDiff value
      * @param float $revenueDiff
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierSettlemDiffDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierSettlemDiffDTO
      */
     public function setRevenueDiff(?float $revenueDiff = null): self
     {
@@ -218,7 +218,7 @@ class SupplierSettlemDiffDTO extends AbstractStructBase
     /**
      * Set revenueDiffPercent value
      * @param float $revenueDiffPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierSettlemDiffDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierSettlemDiffDTO
      */
     public function setRevenueDiffPercent(?float $revenueDiffPercent = null): self
     {
@@ -241,7 +241,7 @@ class SupplierSettlemDiffDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierSettlemDiffDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierSettlemDiffDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -264,7 +264,7 @@ class SupplierSettlemDiffDTO extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierSettlemDiffDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierSettlemDiffDTO
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -287,7 +287,7 @@ class SupplierSettlemDiffDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierSettlemDiffDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierSettlemDiffDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

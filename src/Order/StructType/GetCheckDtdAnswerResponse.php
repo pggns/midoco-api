@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCheckDtdAnswerResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCheckDtdAnswer
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer[]
      */
     protected ?array $MidocoCheckDtdAnswer = null;
     /**
      * Constructor method for GetCheckDtdAnswerResponse
      * @uses GetCheckDtdAnswerResponse::setMidocoCheckDtdAnswer()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer[] $midocoCheckDtdAnswer
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer[] $midocoCheckDtdAnswer
      */
     public function __construct(?array $midocoCheckDtdAnswer = null)
     {
@@ -34,7 +34,7 @@ class GetCheckDtdAnswerResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCheckDtdAnswer value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer[]
      */
     public function getMidocoCheckDtdAnswer(): ?array
     {
@@ -55,12 +55,12 @@ class GetCheckDtdAnswerResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCheckDtdAnswerResponseMidocoCheckDtdAnswerItem) {
             // validation for constraint: itemType
-            if (!$getCheckDtdAnswerResponseMidocoCheckDtdAnswerItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer) {
+            if (!$getCheckDtdAnswerResponseMidocoCheckDtdAnswerItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer) {
                 $invalidValues[] = is_object($getCheckDtdAnswerResponseMidocoCheckDtdAnswerItem) ? get_class($getCheckDtdAnswerResponseMidocoCheckDtdAnswerItem) : sprintf('%s(%s)', gettype($getCheckDtdAnswerResponseMidocoCheckDtdAnswerItem), var_export($getCheckDtdAnswerResponseMidocoCheckDtdAnswerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCheckDtdAnswer property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCheckDtdAnswer property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCheckDtdAnswerResponse extends AbstractStructBase
     /**
      * Set MidocoCheckDtdAnswer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer[] $midocoCheckDtdAnswer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCheckDtdAnswerResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer[] $midocoCheckDtdAnswer
+     * @return \Pggns\MidocoApi\Order\StructType\GetCheckDtdAnswerResponse
      */
     public function setMidocoCheckDtdAnswer(?array $midocoCheckDtdAnswer = null): self
     {
@@ -85,14 +85,14 @@ class GetCheckDtdAnswerResponse extends AbstractStructBase
     /**
      * Add item to MidocoCheckDtdAnswer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCheckDtdAnswerResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetCheckDtdAnswerResponse
      */
-    public function addToMidocoCheckDtdAnswer(\Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer $item): self
+    public function addToMidocoCheckDtdAnswer(\Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer) {
-            throw new InvalidArgumentException(sprintf('The MidocoCheckDtdAnswer property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer) {
+            throw new InvalidArgumentException(sprintf('The MidocoCheckDtdAnswer property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCheckDtdAnswer[] = $item;
         

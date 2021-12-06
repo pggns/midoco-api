@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class TaskQueueAssignDTO extends AbstractStructBase
     /**
      * Set taskQueueName value
      * @param string $taskQueueName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueAssignDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskQueueAssignDTO
      */
     public function setTaskQueueName(?string $taskQueueName = null): self
     {
@@ -70,7 +70,7 @@ class TaskQueueAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueAssignDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskQueueAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class RecompileRulesetsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: SystemRulesetCompiledResult
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult[]
+     * @var \Pggns\MidocoApi\Documents\StructType\SystemRulesetCompiledResult[]
      */
     protected ?array $SystemRulesetCompiledResult = null;
     /**
      * Constructor method for RecompileRulesetsResponse
      * @uses RecompileRulesetsResponse::setSystemRulesetCompiledResult()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult[] $systemRulesetCompiledResult
+     * @param \Pggns\MidocoApi\Documents\StructType\SystemRulesetCompiledResult[] $systemRulesetCompiledResult
      */
     public function __construct(?array $systemRulesetCompiledResult = null)
     {
@@ -34,7 +34,7 @@ class RecompileRulesetsResponse extends AbstractStructBase
     }
     /**
      * Get SystemRulesetCompiledResult value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult[]
+     * @return \Pggns\MidocoApi\Documents\StructType\SystemRulesetCompiledResult[]
      */
     public function getSystemRulesetCompiledResult(): ?array
     {
@@ -55,12 +55,12 @@ class RecompileRulesetsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $recompileRulesetsResponseSystemRulesetCompiledResultItem) {
             // validation for constraint: itemType
-            if (!$recompileRulesetsResponseSystemRulesetCompiledResultItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult) {
+            if (!$recompileRulesetsResponseSystemRulesetCompiledResultItem instanceof \Pggns\MidocoApi\Documents\StructType\SystemRulesetCompiledResult) {
                 $invalidValues[] = is_object($recompileRulesetsResponseSystemRulesetCompiledResultItem) ? get_class($recompileRulesetsResponseSystemRulesetCompiledResultItem) : sprintf('%s(%s)', gettype($recompileRulesetsResponseSystemRulesetCompiledResultItem), var_export($recompileRulesetsResponseSystemRulesetCompiledResultItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The SystemRulesetCompiledResult property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The SystemRulesetCompiledResult property can only contain items of type \Pggns\MidocoApi\Documents\StructType\SystemRulesetCompiledResult, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class RecompileRulesetsResponse extends AbstractStructBase
     /**
      * Set SystemRulesetCompiledResult value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult[] $systemRulesetCompiledResult
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RecompileRulesetsResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\SystemRulesetCompiledResult[] $systemRulesetCompiledResult
+     * @return \Pggns\MidocoApi\Documents\StructType\RecompileRulesetsResponse
      */
     public function setSystemRulesetCompiledResult(?array $systemRulesetCompiledResult = null): self
     {
@@ -85,14 +85,14 @@ class RecompileRulesetsResponse extends AbstractStructBase
     /**
      * Add item to SystemRulesetCompiledResult value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RecompileRulesetsResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\SystemRulesetCompiledResult $item
+     * @return \Pggns\MidocoApi\Documents\StructType\RecompileRulesetsResponse
      */
-    public function addToSystemRulesetCompiledResult(\Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult $item): self
+    public function addToSystemRulesetCompiledResult(\Pggns\MidocoApi\Documents\StructType\SystemRulesetCompiledResult $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult) {
-            throw new InvalidArgumentException(sprintf('The SystemRulesetCompiledResult property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\SystemRulesetCompiledResult) {
+            throw new InvalidArgumentException(sprintf('The SystemRulesetCompiledResult property can only contain items of type \Pggns\MidocoApi\Documents\StructType\SystemRulesetCompiledResult, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->SystemRulesetCompiledResult[] = $item;
         

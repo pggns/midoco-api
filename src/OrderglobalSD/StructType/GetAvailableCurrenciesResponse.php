@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAvailableCurrenciesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCurrency
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO[]
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO[]
      */
     protected ?array $MidocoCurrency = null;
     /**
      * Constructor method for GetAvailableCurrenciesResponse
      * @uses GetAvailableCurrenciesResponse::setMidocoCurrency()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO[] $midocoCurrency
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO[] $midocoCurrency
      */
     public function __construct(?array $midocoCurrency = null)
     {
@@ -34,7 +34,7 @@ class GetAvailableCurrenciesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCurrency value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO[]
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO[]
      */
     public function getMidocoCurrency(): ?array
     {
@@ -55,12 +55,12 @@ class GetAvailableCurrenciesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailableCurrenciesResponseMidocoCurrencyItem) {
             // validation for constraint: itemType
-            if (!$getAvailableCurrenciesResponseMidocoCurrencyItem instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO) {
+            if (!$getAvailableCurrenciesResponseMidocoCurrencyItem instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO) {
                 $invalidValues[] = is_object($getAvailableCurrenciesResponseMidocoCurrencyItem) ? get_class($getAvailableCurrenciesResponseMidocoCurrencyItem) : sprintf('%s(%s)', gettype($getAvailableCurrenciesResponseMidocoCurrencyItem), var_export($getAvailableCurrenciesResponseMidocoCurrencyItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCurrency property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCurrency property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAvailableCurrenciesResponse extends AbstractStructBase
     /**
      * Set MidocoCurrency value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO[] $midocoCurrency
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableCurrenciesResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO[] $midocoCurrency
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableCurrenciesResponse
      */
     public function setMidocoCurrency(?array $midocoCurrency = null): self
     {
@@ -85,14 +85,14 @@ class GetAvailableCurrenciesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCurrency value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO $item
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableCurrenciesResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO $item
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableCurrenciesResponse
      */
-    public function addToMidocoCurrency(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO $item): self
+    public function addToMidocoCurrency(\Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCurrency property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCurrency property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCurrency[] = $item;
         

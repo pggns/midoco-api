@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CheckCcDbiInfoResponse extends AbstractStructBase
     /**
      * Set dbiComplete value
      * @param bool $dbiComplete
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckCcDbiInfoResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckCcDbiInfoResponse
      */
     public function setDbiComplete(?bool $dbiComplete = null): self
     {

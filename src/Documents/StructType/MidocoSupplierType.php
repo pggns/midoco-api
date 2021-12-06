@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -113,7 +113,7 @@ class MidocoSupplierType extends SupplierDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {
@@ -136,7 +136,7 @@ class MidocoSupplierType extends SupplierDTO
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType
      */
     public function setOrgunit(?string $orgunit = null): self
     {
@@ -159,7 +159,7 @@ class MidocoSupplierType extends SupplierDTO
     /**
      * Set inkassoModeDescription value
      * @param string $inkassoModeDescription
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType
      */
     public function setInkassoModeDescription(?string $inkassoModeDescription = null): self
     {
@@ -182,7 +182,7 @@ class MidocoSupplierType extends SupplierDTO
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType
      */
     public function setLanguage(?string $language = null): self
     {
@@ -205,7 +205,7 @@ class MidocoSupplierType extends SupplierDTO
     /**
      * Set defaultProductType value
      * @param string $defaultProductType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType
      */
     public function setDefaultProductType(?string $defaultProductType = null): self
     {
@@ -228,7 +228,7 @@ class MidocoSupplierType extends SupplierDTO
     /**
      * Set isHistorical value
      * @param bool $isHistorical
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType
      */
     public function setIsHistorical(?bool $isHistorical = null): self
     {
@@ -251,7 +251,7 @@ class MidocoSupplierType extends SupplierDTO
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -274,7 +274,7 @@ class MidocoSupplierType extends SupplierDTO
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -297,7 +297,7 @@ class MidocoSupplierType extends SupplierDTO
     /**
      * Set accountRevenueOwnService value
      * @param string $accountRevenueOwnService
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType
      */
     public function setAccountRevenueOwnService(?string $accountRevenueOwnService = null): self
     {
@@ -320,7 +320,7 @@ class MidocoSupplierType extends SupplierDTO
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType
      */
     public function setCity(?string $city = ''): self
     {

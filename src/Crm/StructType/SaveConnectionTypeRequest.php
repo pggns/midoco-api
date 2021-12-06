@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveConnectionTypeRequest extends AbstractStructBase
      * The MidocoConnectionType
      * Meta information extracted from the WSDL
      * - ref: MidocoConnectionType
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\ConnectionTypeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDTO $MidocoConnectionType = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\ConnectionTypeDTO $MidocoConnectionType = null;
     /**
      * Constructor method for SaveConnectionTypeRequest
      * @uses SaveConnectionTypeRequest::setMidocoConnectionType()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDTO $midocoConnectionType
+     * @param \Pggns\MidocoApi\Crm\StructType\ConnectionTypeDTO $midocoConnectionType
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDTO $midocoConnectionType = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\ConnectionTypeDTO $midocoConnectionType = null)
     {
         $this
             ->setMidocoConnectionType($midocoConnectionType);
     }
     /**
      * Get MidocoConnectionType value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\ConnectionTypeDTO|null
      */
-    public function getMidocoConnectionType(): ?\Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDTO
+    public function getMidocoConnectionType(): ?\Pggns\MidocoApi\Crm\StructType\ConnectionTypeDTO
     {
         return $this->MidocoConnectionType;
     }
     /**
      * Set MidocoConnectionType value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDTO $midocoConnectionType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveConnectionTypeRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\ConnectionTypeDTO $midocoConnectionType
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveConnectionTypeRequest
      */
-    public function setMidocoConnectionType(?\Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDTO $midocoConnectionType = null): self
+    public function setMidocoConnectionType(?\Pggns\MidocoApi\Crm\StructType\ConnectionTypeDTO $midocoConnectionType = null): self
     {
         $this->MidocoConnectionType = $midocoConnectionType;
         

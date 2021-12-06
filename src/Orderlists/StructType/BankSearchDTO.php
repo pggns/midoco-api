@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class BankSearchDTO extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankSearchDTO
      */
     public function setBankName(?string $bankName = null): self
     {
@@ -78,7 +78,7 @@ class BankSearchDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param int $countryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankSearchDTO
      */
     public function setCountryId(?int $countryId = null): self
     {
@@ -101,7 +101,7 @@ class BankSearchDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankSearchDTO
      */
     public function setCity(?string $city = null): self
     {

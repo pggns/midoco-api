@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -27,9 +27,9 @@ class SaveExternDocumentRequest extends AbstractStructBase
      * The MidocoExtDocumentDesc
      * Meta information extracted from the WSDL
      * - ref: MidocoExtDocumentDesc
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc $MidocoExtDocumentDesc = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc $MidocoExtDocumentDesc = null;
     /**
      * The mailTo
      * Meta information extracted from the WSDL
@@ -59,7 +59,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: orderglobalsd:MidocoVatDefinition
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition[]
      */
     protected ?array $MidocoVatDefinition = null;
     /**
@@ -139,11 +139,11 @@ class SaveExternDocumentRequest extends AbstractStructBase
      * @uses SaveExternDocumentRequest::setMailSubject()
      * @param string $media
      * @param string $document
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc
      * @param string[] $mailTo
      * @param string[] $mailCc
      * @param string[] $mailBCc
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition[] $midocoVatDefinition
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition[] $midocoVatDefinition
      * @param string $mailFrom
      * @param string $debitorNo
      * @param string $preferredAdapter
@@ -156,7 +156,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
      * @param string $mailBody
      * @param string $mailSubject
      */
-    public function __construct(?string $media = null, ?string $document = null, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc = null, ?array $mailTo = null, ?array $mailCc = null, ?array $mailBCc = null, ?array $midocoVatDefinition = null, ?string $mailFrom = null, ?string $debitorNo = null, ?string $preferredAdapter = null, ?int $midocoRepositoryId = null, ?bool $signature = null, ?string $currency = null, ?int $voidedInvoiceNo = null, ?int $orderNo = null, ?int $voidedReceiptNo = null, ?string $mailBody = null, ?string $mailSubject = null)
+    public function __construct(?string $media = null, ?string $document = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc = null, ?array $mailTo = null, ?array $mailCc = null, ?array $mailBCc = null, ?array $midocoVatDefinition = null, ?string $mailFrom = null, ?string $debitorNo = null, ?string $preferredAdapter = null, ?int $midocoRepositoryId = null, ?bool $signature = null, ?string $currency = null, ?int $voidedInvoiceNo = null, ?int $orderNo = null, ?int $voidedReceiptNo = null, ?string $mailBody = null, ?string $mailSubject = null)
     {
         $this
             ->setMedia($media)
@@ -189,7 +189,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setMedia(?string $media = null): self
     {
@@ -212,7 +212,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set document value
      * @param string $document
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setDocument(?string $document = null): self
     {
@@ -226,18 +226,18 @@ class SaveExternDocumentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoExtDocumentDesc value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc|null
      */
-    public function getMidocoExtDocumentDesc(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc
+    public function getMidocoExtDocumentDesc(): ?\Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc
     {
         return $this->MidocoExtDocumentDesc;
     }
     /**
      * Set MidocoExtDocumentDesc value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
-    public function setMidocoExtDocumentDesc(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc = null): self
+    public function setMidocoExtDocumentDesc(?\Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc $midocoExtDocumentDesc = null): self
     {
         $this->MidocoExtDocumentDesc = $midocoExtDocumentDesc;
         
@@ -281,7 +281,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
      * Set mailTo value
      * @throws InvalidArgumentException
      * @param string[] $mailTo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setMailTo(?array $mailTo = null): self
     {
@@ -297,7 +297,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
      * Add item to mailTo value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function addToMailTo(string $item): self
     {
@@ -347,7 +347,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
      * Set mailCc value
      * @throws InvalidArgumentException
      * @param string[] $mailCc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setMailCc(?array $mailCc = null): self
     {
@@ -363,7 +363,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
      * Add item to mailCc value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function addToMailCc(string $item): self
     {
@@ -413,7 +413,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
      * Set mailBCc value
      * @throws InvalidArgumentException
      * @param string[] $mailBCc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setMailBCc(?array $mailBCc = null): self
     {
@@ -429,7 +429,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
      * Add item to mailBCc value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function addToMailBCc(string $item): self
     {
@@ -443,7 +443,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoVatDefinition value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition[]
      */
     public function getMidocoVatDefinition(): ?array
     {
@@ -464,12 +464,12 @@ class SaveExternDocumentRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveExternDocumentRequestMidocoVatDefinitionItem) {
             // validation for constraint: itemType
-            if (!$saveExternDocumentRequestMidocoVatDefinitionItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition) {
+            if (!$saveExternDocumentRequestMidocoVatDefinitionItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition) {
                 $invalidValues[] = is_object($saveExternDocumentRequestMidocoVatDefinitionItem) ? get_class($saveExternDocumentRequestMidocoVatDefinitionItem) : sprintf('%s(%s)', gettype($saveExternDocumentRequestMidocoVatDefinitionItem), var_export($saveExternDocumentRequestMidocoVatDefinitionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatDefinition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatDefinition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -478,8 +478,8 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set MidocoVatDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition[] $midocoVatDefinition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition[] $midocoVatDefinition
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setMidocoVatDefinition(?array $midocoVatDefinition = null): self
     {
@@ -494,14 +494,14 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Add item to MidocoVatDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition $item
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
-    public function addToMidocoVatDefinition(\Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition $item): self
+    public function addToMidocoVatDefinition(\Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatDefinition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatDefinition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatDefinition[] = $item;
         
@@ -518,7 +518,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set mailFrom value
      * @param string $mailFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setMailFrom(?string $mailFrom = null): self
     {
@@ -541,7 +541,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -564,7 +564,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set preferredAdapter value
      * @param string $preferredAdapter
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setPreferredAdapter(?string $preferredAdapter = null): self
     {
@@ -587,7 +587,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set midocoRepositoryId value
      * @param int $midocoRepositoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setMidocoRepositoryId(?int $midocoRepositoryId = null): self
     {
@@ -610,7 +610,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set signature value
      * @param bool $signature
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setSignature(?bool $signature = null): self
     {
@@ -633,7 +633,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -656,7 +656,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set voidedInvoiceNo value
      * @param int $voidedInvoiceNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setVoidedInvoiceNo(?int $voidedInvoiceNo = null): self
     {
@@ -679,7 +679,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -702,7 +702,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set voidedReceiptNo value
      * @param int $voidedReceiptNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setVoidedReceiptNo(?int $voidedReceiptNo = null): self
     {
@@ -725,7 +725,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set mailBody value
      * @param string $mailBody
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setMailBody(?string $mailBody = null): self
     {
@@ -748,7 +748,7 @@ class SaveExternDocumentRequest extends AbstractStructBase
     /**
      * Set mailSubject value
      * @param string $mailSubject
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentRequest
      */
     public function setMailSubject(?string $mailSubject = null): self
     {

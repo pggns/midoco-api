@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class PageContentType extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCampaignRow
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\CampaignRowType[]
+     * @var \Pggns\MidocoApi\Mis\StructType\CampaignRowType[]
      */
     protected ?array $MidocoCampaignRow = null;
     /**
      * Constructor method for PageContentType
      * @uses PageContentType::setMidocoCampaignRow()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CampaignRowType[] $midocoCampaignRow
+     * @param \Pggns\MidocoApi\Mis\StructType\CampaignRowType[] $midocoCampaignRow
      */
     public function __construct(?array $midocoCampaignRow = null)
     {
@@ -34,7 +34,7 @@ class PageContentType extends AbstractStructBase
     }
     /**
      * Get MidocoCampaignRow value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignRowType[]
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignRowType[]
      */
     public function getMidocoCampaignRow(): ?array
     {
@@ -55,12 +55,12 @@ class PageContentType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pageContentTypeMidocoCampaignRowItem) {
             // validation for constraint: itemType
-            if (!$pageContentTypeMidocoCampaignRowItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\CampaignRowType) {
+            if (!$pageContentTypeMidocoCampaignRowItem instanceof \Pggns\MidocoApi\Mis\StructType\CampaignRowType) {
                 $invalidValues[] = is_object($pageContentTypeMidocoCampaignRowItem) ? get_class($pageContentTypeMidocoCampaignRowItem) : sprintf('%s(%s)', gettype($pageContentTypeMidocoCampaignRowItem), var_export($pageContentTypeMidocoCampaignRowItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCampaignRow property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\CampaignRowType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCampaignRow property can only contain items of type \Pggns\MidocoApi\Mis\StructType\CampaignRowType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class PageContentType extends AbstractStructBase
     /**
      * Set MidocoCampaignRow value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CampaignRowType[] $midocoCampaignRow
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PageContentType
+     * @param \Pggns\MidocoApi\Mis\StructType\CampaignRowType[] $midocoCampaignRow
+     * @return \Pggns\MidocoApi\Mis\StructType\PageContentType
      */
     public function setMidocoCampaignRow(?array $midocoCampaignRow = null): self
     {
@@ -85,14 +85,14 @@ class PageContentType extends AbstractStructBase
     /**
      * Add item to MidocoCampaignRow value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CampaignRowType $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PageContentType
+     * @param \Pggns\MidocoApi\Mis\StructType\CampaignRowType $item
+     * @return \Pggns\MidocoApi\Mis\StructType\PageContentType
      */
-    public function addToMidocoCampaignRow(\Pggns\MidocoApi\Api\Mis\StructType\CampaignRowType $item): self
+    public function addToMidocoCampaignRow(\Pggns\MidocoApi\Mis\StructType\CampaignRowType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\CampaignRowType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCampaignRow property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\CampaignRowType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\CampaignRowType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCampaignRow property can only contain items of type \Pggns\MidocoApi\Mis\StructType\CampaignRowType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCampaignRow[] = $item;
         

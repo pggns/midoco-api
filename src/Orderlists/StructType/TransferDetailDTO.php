@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -335,7 +335,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set baggageAllowance value
      * @param string $baggageAllowance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setBaggageAllowance(?string $baggageAllowance = null): self
     {
@@ -358,7 +358,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -381,7 +381,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -404,7 +404,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -427,7 +427,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set departureDate value
      * @param string $departureDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setDepartureDate(?string $departureDate = null): self
     {
@@ -450,7 +450,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set departureDescription value
      * @param string $departureDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setDepartureDescription(?string $departureDescription = null): self
     {
@@ -473,7 +473,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set departureLocation value
      * @param string $departureLocation
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setDepartureLocation(?string $departureLocation = null): self
     {
@@ -496,7 +496,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set departurePoint value
      * @param string $departurePoint
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setDeparturePoint(?string $departurePoint = null): self
     {
@@ -519,7 +519,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set departureTime value
      * @param string $departureTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setDepartureTime(?string $departureTime = null): self
     {
@@ -542,7 +542,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -565,7 +565,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set destinationDescription value
      * @param string $destinationDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setDestinationDescription(?string $destinationDescription = null): self
     {
@@ -588,7 +588,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set direction value
      * @param string $direction
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setDirection(?string $direction = null): self
     {
@@ -611,7 +611,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set duration value
      * @param string $duration
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setDuration(?string $duration = null): self
     {
@@ -634,7 +634,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set emergencyNumber value
      * @param string $emergencyNumber
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setEmergencyNumber(?string $emergencyNumber = null): self
     {
@@ -657,7 +657,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set isOneWay value
      * @param bool $isOneWay
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setIsOneWay(?bool $isOneWay = null): self
     {
@@ -680,7 +680,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -703,7 +703,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set maxPassengers value
      * @param int $maxPassengers
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setMaxPassengers(?int $maxPassengers = null): self
     {
@@ -726,7 +726,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set paxAssigned value
      * @param string $paxAssigned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setPaxAssigned(?string $paxAssigned = null): self
     {
@@ -749,7 +749,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set personsPerService value
      * @param int $personsPerService
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setPersonsPerService(?int $personsPerService = null): self
     {
@@ -772,7 +772,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -795,7 +795,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set referencePosition value
      * @param int $referencePosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setReferencePosition(?int $referencePosition = null): self
     {
@@ -818,7 +818,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set returnDepartureCode value
      * @param string $returnDepartureCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setReturnDepartureCode(?string $returnDepartureCode = null): self
     {
@@ -841,7 +841,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set returnDepartureDate value
      * @param string $returnDepartureDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setReturnDepartureDate(?string $returnDepartureDate = null): self
     {
@@ -864,7 +864,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set returnDepartureDescription value
      * @param string $returnDepartureDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setReturnDepartureDescription(?string $returnDepartureDescription = null): self
     {
@@ -887,7 +887,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set returnDepartureTime value
      * @param string $returnDepartureTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setReturnDepartureTime(?string $returnDepartureTime = null): self
     {
@@ -910,7 +910,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set returnDestinationCode value
      * @param string $returnDestinationCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setReturnDestinationCode(?string $returnDestinationCode = null): self
     {
@@ -933,7 +933,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set returnDestinationDescription value
      * @param string $returnDestinationDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setReturnDestinationDescription(?string $returnDestinationDescription = null): self
     {
@@ -956,7 +956,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set serviceDescription value
      * @param string $serviceDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setServiceDescription(?string $serviceDescription = null): self
     {
@@ -979,7 +979,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {
@@ -1002,7 +1002,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -1025,7 +1025,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -1048,7 +1048,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set transferAddress1 value
      * @param string $transferAddress1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setTransferAddress1(?string $transferAddress1 = null): self
     {
@@ -1071,7 +1071,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set transferAddress2 value
      * @param string $transferAddress2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setTransferAddress2(?string $transferAddress2 = null): self
     {
@@ -1094,7 +1094,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set transferAddress3 value
      * @param string $transferAddress3
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setTransferAddress3(?string $transferAddress3 = null): self
     {
@@ -1117,7 +1117,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set transferAddress4 value
      * @param string $transferAddress4
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setTransferAddress4(?string $transferAddress4 = null): self
     {
@@ -1140,7 +1140,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set typeOfTransfer value
      * @param string $typeOfTransfer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setTypeOfTransfer(?string $typeOfTransfer = null): self
     {
@@ -1163,7 +1163,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set vehicleCode value
      * @param string $vehicleCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setVehicleCode(?string $vehicleCode = null): self
     {
@@ -1186,7 +1186,7 @@ class TransferDetailDTO extends AbstractStructBase
     /**
      * Set vehicleDescription value
      * @param string $vehicleDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferDetailDTO
      */
     public function setVehicleDescription(?string $vehicleDescription = null): self
     {

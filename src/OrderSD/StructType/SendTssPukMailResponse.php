@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class SendTssPukMailResponse extends AbstractStructBase
     /**
      * Set successful value
      * @param bool $successful
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SendTssPukMailResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SendTssPukMailResponse
      */
     public function setSuccessful(?bool $successful = false): self
     {

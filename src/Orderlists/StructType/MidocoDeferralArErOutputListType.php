@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -215,7 +215,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set outgoingIncoming value
      * @param string $outgoingIncoming
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setOutgoingIncoming(?string $outgoingIncoming = null): self
     {
@@ -238,7 +238,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set bruttoNettoIndicator value
      * @param string $bruttoNettoIndicator
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setBruttoNettoIndicator(?string $bruttoNettoIndicator = null): self
     {
@@ -261,7 +261,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set debitor value
      * @param string $debitor
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setDebitor(?string $debitor = null): self
     {
@@ -284,7 +284,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set creditor value
      * @param string $creditor
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setCreditor(?string $creditor = null): self
     {
@@ -307,7 +307,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -330,7 +330,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -353,7 +353,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set crsSystem value
      * @param string $crsSystem
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setCrsSystem(?string $crsSystem = null): self
     {
@@ -376,7 +376,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -399,7 +399,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -422,7 +422,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -445,7 +445,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -468,7 +468,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -491,7 +491,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -514,7 +514,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setAmount(?float $amount = null): self
     {
@@ -537,7 +537,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -560,7 +560,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -583,7 +583,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -606,7 +606,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -629,7 +629,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -652,7 +652,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set year value
      * @param string $year
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setYear(?string $year = null): self
     {
@@ -675,7 +675,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -698,7 +698,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setName(?string $name = null): self
     {
@@ -721,7 +721,7 @@ class MidocoDeferralArErOutputListType extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErOutputListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErOutputListType
      */
     public function setPaymentType(?string $paymentType = null): self
     {

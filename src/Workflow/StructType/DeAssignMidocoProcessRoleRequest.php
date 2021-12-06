@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeAssignMidocoProcessRoleRequest extends AbstractStructBase
      * The MidocoProcessRoleAssign
      * Meta information extracted from the WSDL
      * - ref: MidocoProcessRoleAssign
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoProcessRoleAssign|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoProcessRoleAssign|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoProcessRoleAssign $MidocoProcessRoleAssign = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\MidocoProcessRoleAssign $MidocoProcessRoleAssign = null;
     /**
      * Constructor method for DeAssignMidocoProcessRoleRequest
      * @uses DeAssignMidocoProcessRoleRequest::setMidocoProcessRoleAssign()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoProcessRoleAssign $midocoProcessRoleAssign
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoProcessRoleAssign $midocoProcessRoleAssign
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoProcessRoleAssign $midocoProcessRoleAssign = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\MidocoProcessRoleAssign $midocoProcessRoleAssign = null)
     {
         $this
             ->setMidocoProcessRoleAssign($midocoProcessRoleAssign);
     }
     /**
      * Get MidocoProcessRoleAssign value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoProcessRoleAssign|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoProcessRoleAssign|null
      */
-    public function getMidocoProcessRoleAssign(): ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoProcessRoleAssign
+    public function getMidocoProcessRoleAssign(): ?\Pggns\MidocoApi\Workflow\StructType\MidocoProcessRoleAssign
     {
         return $this->MidocoProcessRoleAssign;
     }
     /**
      * Set MidocoProcessRoleAssign value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoProcessRoleAssign $midocoProcessRoleAssign
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeAssignMidocoProcessRoleRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoProcessRoleAssign $midocoProcessRoleAssign
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeAssignMidocoProcessRoleRequest
      */
-    public function setMidocoProcessRoleAssign(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoProcessRoleAssign $midocoProcessRoleAssign = null): self
+    public function setMidocoProcessRoleAssign(?\Pggns\MidocoApi\Workflow\StructType\MidocoProcessRoleAssign $midocoProcessRoleAssign = null): self
     {
         $this->MidocoProcessRoleAssign = $midocoProcessRoleAssign;
         

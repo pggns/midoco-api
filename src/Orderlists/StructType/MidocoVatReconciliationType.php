@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class MidocoVatReconciliationType extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -118,7 +118,7 @@ class MidocoVatReconciliationType extends AbstractStructBase
     /**
      * Set vatDescription value
      * @param string $vatDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType
      */
     public function setVatDescription(?string $vatDescription = null): self
     {
@@ -141,7 +141,7 @@ class MidocoVatReconciliationType extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType
      */
     public function setVatPercent(?float $vatPercent = null): self
     {
@@ -164,7 +164,7 @@ class MidocoVatReconciliationType extends AbstractStructBase
     /**
      * Set bookingPeriod value
      * @param int $bookingPeriod
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType
      */
     public function setBookingPeriod(?int $bookingPeriod = null): self
     {
@@ -187,7 +187,7 @@ class MidocoVatReconciliationType extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -210,7 +210,7 @@ class MidocoVatReconciliationType extends AbstractStructBase
     /**
      * Set account value
      * @param string $account
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType
      */
     public function setAccount(?string $account = null): self
     {
@@ -233,7 +233,7 @@ class MidocoVatReconciliationType extends AbstractStructBase
     /**
      * Set bookingAmount value
      * @param float $bookingAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType
      */
     public function setBookingAmount(?float $bookingAmount = null): self
     {
@@ -256,7 +256,7 @@ class MidocoVatReconciliationType extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationType
      */
     public function setVatAmount(?float $vatAmount = null): self
     {

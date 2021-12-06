@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class AtolTypeDTO extends AbstractStructBase
     /**
      * Set atolIndex value
      * @param int $atolIndex
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AtolTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AtolTypeDTO
      */
     public function setAtolIndex(?int $atolIndex = null): self
     {
@@ -78,7 +78,7 @@ class AtolTypeDTO extends AbstractStructBase
     /**
      * Set atolType value
      * @param string $atolType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AtolTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AtolTypeDTO
      */
     public function setAtolType(?string $atolType = null): self
     {
@@ -101,7 +101,7 @@ class AtolTypeDTO extends AbstractStructBase
     /**
      * Set wording value
      * @param string $wording
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AtolTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AtolTypeDTO
      */
     public function setWording(?string $wording = null): self
     {

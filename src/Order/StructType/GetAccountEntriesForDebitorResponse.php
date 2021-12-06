@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class GetAccountEntriesForDebitorResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType[]
+     * @var \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType[]
      */
     protected ?array $MidocoDebitorAccountEntry = null;
     /**
@@ -54,7 +54,7 @@ class GetAccountEntriesForDebitorResponse extends AbstractStructBase
      * @uses GetAccountEntriesForDebitorResponse::setTotalPaidAmount()
      * @uses GetAccountEntriesForDebitorResponse::setTotalDueAmount()
      * @uses GetAccountEntriesForDebitorResponse::setCacheId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType[] $midocoDebitorAccountEntry
+     * @param \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType[] $midocoDebitorAccountEntry
      * @param int $totalNoOfRecords
      * @param float $totalInvoicedAmount
      * @param float $totalPaidAmount
@@ -73,7 +73,7 @@ class GetAccountEntriesForDebitorResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDebitorAccountEntry value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType[]
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType[]
      */
     public function getMidocoDebitorAccountEntry(): ?array
     {
@@ -94,12 +94,12 @@ class GetAccountEntriesForDebitorResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAccountEntriesForDebitorResponseMidocoDebitorAccountEntryItem) {
             // validation for constraint: itemType
-            if (!$getAccountEntriesForDebitorResponseMidocoDebitorAccountEntryItem instanceof \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType) {
+            if (!$getAccountEntriesForDebitorResponseMidocoDebitorAccountEntryItem instanceof \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType) {
                 $invalidValues[] = is_object($getAccountEntriesForDebitorResponseMidocoDebitorAccountEntryItem) ? get_class($getAccountEntriesForDebitorResponseMidocoDebitorAccountEntryItem) : sprintf('%s(%s)', gettype($getAccountEntriesForDebitorResponseMidocoDebitorAccountEntryItem), var_export($getAccountEntriesForDebitorResponseMidocoDebitorAccountEntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDebitorAccountEntry property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDebitorAccountEntry property can only contain items of type \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -108,8 +108,8 @@ class GetAccountEntriesForDebitorResponse extends AbstractStructBase
     /**
      * Set MidocoDebitorAccountEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType[] $midocoDebitorAccountEntry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorResponse
+     * @param \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType[] $midocoDebitorAccountEntry
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorResponse
      */
     public function setMidocoDebitorAccountEntry(?array $midocoDebitorAccountEntry = null): self
     {
@@ -124,14 +124,14 @@ class GetAccountEntriesForDebitorResponse extends AbstractStructBase
     /**
      * Add item to MidocoDebitorAccountEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorResponse
+     * @param \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorResponse
      */
-    public function addToMidocoDebitorAccountEntry(\Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType $item): self
+    public function addToMidocoDebitorAccountEntry(\Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType) {
-            throw new InvalidArgumentException(sprintf('The MidocoDebitorAccountEntry property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType) {
+            throw new InvalidArgumentException(sprintf('The MidocoDebitorAccountEntry property can only contain items of type \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDebitorAccountEntry[] = $item;
         
@@ -148,7 +148,7 @@ class GetAccountEntriesForDebitorResponse extends AbstractStructBase
     /**
      * Set totalNoOfRecords value
      * @param int $totalNoOfRecords
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorResponse
      */
     public function setTotalNoOfRecords(?int $totalNoOfRecords = null): self
     {
@@ -171,7 +171,7 @@ class GetAccountEntriesForDebitorResponse extends AbstractStructBase
     /**
      * Set totalInvoicedAmount value
      * @param float $totalInvoicedAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorResponse
      */
     public function setTotalInvoicedAmount(?float $totalInvoicedAmount = null): self
     {
@@ -194,7 +194,7 @@ class GetAccountEntriesForDebitorResponse extends AbstractStructBase
     /**
      * Set totalPaidAmount value
      * @param float $totalPaidAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorResponse
      */
     public function setTotalPaidAmount(?float $totalPaidAmount = null): self
     {
@@ -217,7 +217,7 @@ class GetAccountEntriesForDebitorResponse extends AbstractStructBase
     /**
      * Set totalDueAmount value
      * @param float $totalDueAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorResponse
      */
     public function setTotalDueAmount(?float $totalDueAmount = null): self
     {
@@ -240,7 +240,7 @@ class GetAccountEntriesForDebitorResponse extends AbstractStructBase
     /**
      * Set cacheId value
      * @param int $cacheId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorResponse
      */
     public function setCacheId(?int $cacheId = null): self
     {

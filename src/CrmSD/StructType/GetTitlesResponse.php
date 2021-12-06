@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetTitlesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTitle
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTitle[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoTitle[]
      */
     protected ?array $MidocoTitle = null;
     /**
      * Constructor method for GetTitlesResponse
      * @uses GetTitlesResponse::setMidocoTitle()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTitle[] $midocoTitle
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTitle[] $midocoTitle
      */
     public function __construct(?array $midocoTitle = null)
     {
@@ -36,7 +36,7 @@ class GetTitlesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTitle value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTitle[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTitle[]
      */
     public function getMidocoTitle(): ?array
     {
@@ -57,12 +57,12 @@ class GetTitlesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTitlesResponseMidocoTitleItem) {
             // validation for constraint: itemType
-            if (!$getTitlesResponseMidocoTitleItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTitle) {
+            if (!$getTitlesResponseMidocoTitleItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoTitle) {
                 $invalidValues[] = is_object($getTitlesResponseMidocoTitleItem) ? get_class($getTitlesResponseMidocoTitleItem) : sprintf('%s(%s)', gettype($getTitlesResponseMidocoTitleItem), var_export($getTitlesResponseMidocoTitleItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTitle property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTitle, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTitle property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoTitle, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetTitlesResponse extends AbstractStructBase
     /**
      * Set MidocoTitle value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTitle[] $midocoTitle
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetTitlesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTitle[] $midocoTitle
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTitlesResponse
      */
     public function setMidocoTitle(?array $midocoTitle = null): self
     {
@@ -87,14 +87,14 @@ class GetTitlesResponse extends AbstractStructBase
     /**
      * Add item to MidocoTitle value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTitle $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetTitlesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTitle $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTitlesResponse
      */
-    public function addToMidocoTitle(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTitle $item): self
+    public function addToMidocoTitle(\Pggns\MidocoApi\CrmSD\StructType\MidocoTitle $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTitle) {
-            throw new InvalidArgumentException(sprintf('The MidocoTitle property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTitle, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoTitle) {
+            throw new InvalidArgumentException(sprintf('The MidocoTitle property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoTitle, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTitle[] = $item;
         

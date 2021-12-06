@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAutoMailInfoResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAutoMailInfo
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\AutoMailDTO[]
+     * @var \Pggns\MidocoApi\Booking\StructType\AutoMailDTO[]
      */
     protected ?array $MidocoAutoMailInfo = null;
     /**
      * Constructor method for GetAutoMailInfoResponse
      * @uses GetAutoMailInfoResponse::setMidocoAutoMailInfo()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AutoMailDTO[] $midocoAutoMailInfo
+     * @param \Pggns\MidocoApi\Booking\StructType\AutoMailDTO[] $midocoAutoMailInfo
      */
     public function __construct(?array $midocoAutoMailInfo = null)
     {
@@ -34,7 +34,7 @@ class GetAutoMailInfoResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAutoMailInfo value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AutoMailDTO[]
+     * @return \Pggns\MidocoApi\Booking\StructType\AutoMailDTO[]
      */
     public function getMidocoAutoMailInfo(): ?array
     {
@@ -55,12 +55,12 @@ class GetAutoMailInfoResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAutoMailInfoResponseMidocoAutoMailInfoItem) {
             // validation for constraint: itemType
-            if (!$getAutoMailInfoResponseMidocoAutoMailInfoItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\AutoMailDTO) {
+            if (!$getAutoMailInfoResponseMidocoAutoMailInfoItem instanceof \Pggns\MidocoApi\Booking\StructType\AutoMailDTO) {
                 $invalidValues[] = is_object($getAutoMailInfoResponseMidocoAutoMailInfoItem) ? get_class($getAutoMailInfoResponseMidocoAutoMailInfoItem) : sprintf('%s(%s)', gettype($getAutoMailInfoResponseMidocoAutoMailInfoItem), var_export($getAutoMailInfoResponseMidocoAutoMailInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAutoMailInfo property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\AutoMailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAutoMailInfo property can only contain items of type \Pggns\MidocoApi\Booking\StructType\AutoMailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAutoMailInfoResponse extends AbstractStructBase
     /**
      * Set MidocoAutoMailInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AutoMailDTO[] $midocoAutoMailInfo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetAutoMailInfoResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\AutoMailDTO[] $midocoAutoMailInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\GetAutoMailInfoResponse
      */
     public function setMidocoAutoMailInfo(?array $midocoAutoMailInfo = null): self
     {
@@ -85,14 +85,14 @@ class GetAutoMailInfoResponse extends AbstractStructBase
     /**
      * Add item to MidocoAutoMailInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AutoMailDTO $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetAutoMailInfoResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\AutoMailDTO $item
+     * @return \Pggns\MidocoApi\Booking\StructType\GetAutoMailInfoResponse
      */
-    public function addToMidocoAutoMailInfo(\Pggns\MidocoApi\Api\Booking\StructType\AutoMailDTO $item): self
+    public function addToMidocoAutoMailInfo(\Pggns\MidocoApi\Booking\StructType\AutoMailDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\AutoMailDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAutoMailInfo property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\AutoMailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\AutoMailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAutoMailInfo property can only contain items of type \Pggns\MidocoApi\Booking\StructType\AutoMailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAutoMailInfo[] = $item;
         

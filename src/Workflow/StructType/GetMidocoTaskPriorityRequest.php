@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetMidocoTaskPriorityRequest extends AbstractStructBase
      * The MidocoTaskPriority
      * Meta information extracted from the WSDL
      * - ref: MidocoTaskPriority
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO $MidocoTaskPriority = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO $MidocoTaskPriority = null;
     /**
      * The orgunit
      * @var string|null
@@ -29,10 +29,10 @@ class GetMidocoTaskPriorityRequest extends AbstractStructBase
      * Constructor method for GetMidocoTaskPriorityRequest
      * @uses GetMidocoTaskPriorityRequest::setMidocoTaskPriority()
      * @uses GetMidocoTaskPriorityRequest::setOrgunit()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority
      * @param string $orgunit
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority = null, ?string $orgunit = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority = null, ?string $orgunit = null)
     {
         $this
             ->setMidocoTaskPriority($midocoTaskPriority)
@@ -40,18 +40,18 @@ class GetMidocoTaskPriorityRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTaskPriority value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO|null
      */
-    public function getMidocoTaskPriority(): ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO
+    public function getMidocoTaskPriority(): ?\Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO
     {
         return $this->MidocoTaskPriority;
     }
     /**
      * Set MidocoTaskPriority value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetMidocoTaskPriorityRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetMidocoTaskPriorityRequest
      */
-    public function setMidocoTaskPriority(?\Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority = null): self
+    public function setMidocoTaskPriority(?\Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority = null): self
     {
         $this->MidocoTaskPriority = $midocoTaskPriority;
         
@@ -68,7 +68,7 @@ class GetMidocoTaskPriorityRequest extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetMidocoTaskPriorityRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetMidocoTaskPriorityRequest
      */
     public function setOrgunit(?string $orgunit = null): self
     {

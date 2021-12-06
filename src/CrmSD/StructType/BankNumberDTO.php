@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class BankNumberDTO extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO
      */
     public function setBankName(?string $bankName = null): self
     {
@@ -94,7 +94,7 @@ class BankNumberDTO extends AbstractStructBase
     /**
      * Set bankNumber value
      * @param string $bankNumber
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO
      */
     public function setBankNumber(?string $bankNumber = null): self
     {
@@ -117,7 +117,7 @@ class BankNumberDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param string $countryId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO
      */
     public function setCountryId(?string $countryId = null): self
     {
@@ -140,7 +140,7 @@ class BankNumberDTO extends AbstractStructBase
     /**
      * Set swiftCode value
      * @param string $swiftCode
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO
      */
     public function setSwiftCode(?string $swiftCode = null): self
     {
@@ -163,7 +163,7 @@ class BankNumberDTO extends AbstractStructBase
     /**
      * Set testAlgorithm value
      * @param string $testAlgorithm
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO
      */
     public function setTestAlgorithm(?string $testAlgorithm = null): self
     {

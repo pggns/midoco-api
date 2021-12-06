@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -31,16 +31,16 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: mail:MidocoMailMessage
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
     /**
      * The MidocoMailDescription4Inexso
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:MidocoMailDescription4Inexso
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso[]
      */
     protected ?array $MidocoMailDescription4Inexso = null;
     /**
@@ -63,9 +63,9 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
      * The file
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\FileType|null
+     * @var \Pggns\MidocoApi\Order\StructType\FileType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\FileType $file = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\FileType $file = null;
     /**
      * Constructor method for CreateBillingPrintjobResponse
      * @uses CreateBillingPrintjobResponse::setPrintJobContent()
@@ -77,13 +77,13 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
      * @uses CreateBillingPrintjobResponse::setFile()
      * @param string $printJobContent
      * @param string[] $insets
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso[] $midocoMailDescription4Inexso
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso[] $midocoMailDescription4Inexso
      * @param string[] $printJobContentOfPrintCopies
      * @param int[] $insetsPrintJobIds
-     * @param \Pggns\MidocoApi\Api\Order\StructType\FileType $file
+     * @param \Pggns\MidocoApi\Order\StructType\FileType $file
      */
-    public function __construct(?string $printJobContent = null, ?array $insets = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?array $midocoMailDescription4Inexso = null, ?array $printJobContentOfPrintCopies = null, ?array $insetsPrintJobIds = null, ?\Pggns\MidocoApi\Api\Order\StructType\FileType $file = null)
+    public function __construct(?string $printJobContent = null, ?array $insets = null, ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?array $midocoMailDescription4Inexso = null, ?array $printJobContentOfPrintCopies = null, ?array $insetsPrintJobIds = null, ?\Pggns\MidocoApi\Order\StructType\FileType $file = null)
     {
         $this
             ->setPrintJobContent($printJobContent)
@@ -105,7 +105,7 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
     /**
      * Set PrintJobContent value
      * @param string $printJobContent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse
      */
     public function setPrintJobContent(?string $printJobContent = null): self
     {
@@ -155,7 +155,7 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
      * Set insets value
      * @throws InvalidArgumentException
      * @param string[] $insets
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse
      */
     public function setInsets(?array $insets = null): self
     {
@@ -171,7 +171,7 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
      * Add item to insets value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse
      */
     public function addToInsets(string $item): self
     {
@@ -185,18 +185,18 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMailMessage value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
     {
         return $this->MidocoMailMessage;
     }
     /**
      * Set MidocoMailMessage value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse
      */
-    public function setMidocoMailMessage(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
+    public function setMidocoMailMessage(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
     {
         $this->MidocoMailMessage = $midocoMailMessage;
         
@@ -204,7 +204,7 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMailDescription4Inexso value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso[]
      */
     public function getMidocoMailDescription4Inexso(): ?array
     {
@@ -225,12 +225,12 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $createBillingPrintjobResponseMidocoMailDescription4InexsoItem) {
             // validation for constraint: itemType
-            if (!$createBillingPrintjobResponseMidocoMailDescription4InexsoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso) {
+            if (!$createBillingPrintjobResponseMidocoMailDescription4InexsoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso) {
                 $invalidValues[] = is_object($createBillingPrintjobResponseMidocoMailDescription4InexsoItem) ? get_class($createBillingPrintjobResponseMidocoMailDescription4InexsoItem) : sprintf('%s(%s)', gettype($createBillingPrintjobResponseMidocoMailDescription4InexsoItem), var_export($createBillingPrintjobResponseMidocoMailDescription4InexsoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMailDescription4Inexso property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMailDescription4Inexso property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -239,8 +239,8 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
     /**
      * Set MidocoMailDescription4Inexso value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso[] $midocoMailDescription4Inexso
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso[] $midocoMailDescription4Inexso
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse
      */
     public function setMidocoMailDescription4Inexso(?array $midocoMailDescription4Inexso = null): self
     {
@@ -255,14 +255,14 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
     /**
      * Add item to MidocoMailDescription4Inexso value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $item
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse
      */
-    public function addToMidocoMailDescription4Inexso(\Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $item): self
+    public function addToMidocoMailDescription4Inexso(\Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso) {
-            throw new InvalidArgumentException(sprintf('The MidocoMailDescription4Inexso property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso) {
+            throw new InvalidArgumentException(sprintf('The MidocoMailDescription4Inexso property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMailDescription4Inexso[] = $item;
         
@@ -306,7 +306,7 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
      * Set PrintJobContentOfPrintCopies value
      * @throws InvalidArgumentException
      * @param string[] $printJobContentOfPrintCopies
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse
      */
     public function setPrintJobContentOfPrintCopies(?array $printJobContentOfPrintCopies = null): self
     {
@@ -322,7 +322,7 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
      * Add item to PrintJobContentOfPrintCopies value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse
      */
     public function addToPrintJobContentOfPrintCopies(string $item): self
     {
@@ -372,7 +372,7 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
      * Set insetsPrintJobIds value
      * @throws InvalidArgumentException
      * @param int[] $insetsPrintJobIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse
      */
     public function setInsetsPrintJobIds(?array $insetsPrintJobIds = null): self
     {
@@ -388,7 +388,7 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
      * Add item to insetsPrintJobIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse
      */
     public function addToInsetsPrintJobIds(int $item): self
     {
@@ -402,18 +402,18 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
     }
     /**
      * Get file value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FileType|null
+     * @return \Pggns\MidocoApi\Order\StructType\FileType|null
      */
-    public function getFile(): ?\Pggns\MidocoApi\Api\Order\StructType\FileType
+    public function getFile(): ?\Pggns\MidocoApi\Order\StructType\FileType
     {
         return $this->file;
     }
     /**
      * Set file value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\FileType $file
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobResponse
+     * @param \Pggns\MidocoApi\Order\StructType\FileType $file
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse
      */
-    public function setFile(?\Pggns\MidocoApi\Api\Order\StructType\FileType $file = null): self
+    public function setFile(?\Pggns\MidocoApi\Order\StructType\FileType $file = null): self
     {
         $this->file = $file;
         

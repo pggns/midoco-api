@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoSuppCancelCMapping extends SuppCancelCMappingDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCMapping
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCMapping
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {
@@ -70,7 +70,7 @@ class MidocoSuppCancelCMapping extends SuppCancelCMappingDTO
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCMapping
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCMapping
      */
     public function setOrgunit(?string $orgunit = null): self
     {

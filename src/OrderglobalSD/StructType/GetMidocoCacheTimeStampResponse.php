@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetMidocoCacheTimeStampResponse extends AbstractStructBase
     /**
      * Set timeStamp value
      * @param string $timeStamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetMidocoCacheTimeStampResponse
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetMidocoCacheTimeStampResponse
      */
     public function setTimeStamp(?string $timeStamp = null): self
     {

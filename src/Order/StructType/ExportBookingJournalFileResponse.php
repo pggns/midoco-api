@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ExportBookingJournalFileResponse extends AbstractStructBase
     /**
      * Set file value
      * @param string $file
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalFileResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalFileResponse
      */
     public function setFile(?string $file = null): self
     {
@@ -70,7 +70,7 @@ class ExportBookingJournalFileResponse extends AbstractStructBase
     /**
      * Set fileType value
      * @param string $fileType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalFileResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalFileResponse
      */
     public function setFileType(?string $fileType = null): self
     {

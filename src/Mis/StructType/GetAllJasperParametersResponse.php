@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetAllJasperParametersResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:MidocoJasperParameterForDisplay
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay[]
      */
     protected ?array $MidocoJasperParameterForDisplay = null;
     /**
      * Constructor method for GetAllJasperParametersResponse
      * @uses GetAllJasperParametersResponse::setMidocoJasperParameterForDisplay()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay[] $midocoJasperParameterForDisplay
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay[] $midocoJasperParameterForDisplay
      */
     public function __construct(?array $midocoJasperParameterForDisplay = null)
     {
@@ -36,7 +36,7 @@ class GetAllJasperParametersResponse extends AbstractStructBase
     }
     /**
      * Get MidocoJasperParameterForDisplay value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay[]
      */
     public function getMidocoJasperParameterForDisplay(): ?array
     {
@@ -57,12 +57,12 @@ class GetAllJasperParametersResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllJasperParametersResponseMidocoJasperParameterForDisplayItem) {
             // validation for constraint: itemType
-            if (!$getAllJasperParametersResponseMidocoJasperParameterForDisplayItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay) {
+            if (!$getAllJasperParametersResponseMidocoJasperParameterForDisplayItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay) {
                 $invalidValues[] = is_object($getAllJasperParametersResponseMidocoJasperParameterForDisplayItem) ? get_class($getAllJasperParametersResponseMidocoJasperParameterForDisplayItem) : sprintf('%s(%s)', gettype($getAllJasperParametersResponseMidocoJasperParameterForDisplayItem), var_export($getAllJasperParametersResponseMidocoJasperParameterForDisplayItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoJasperParameterForDisplay property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoJasperParameterForDisplay property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetAllJasperParametersResponse extends AbstractStructBase
     /**
      * Set MidocoJasperParameterForDisplay value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay[] $midocoJasperParameterForDisplay
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperParametersResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay[] $midocoJasperParameterForDisplay
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAllJasperParametersResponse
      */
     public function setMidocoJasperParameterForDisplay(?array $midocoJasperParameterForDisplay = null): self
     {
@@ -87,14 +87,14 @@ class GetAllJasperParametersResponse extends AbstractStructBase
     /**
      * Add item to MidocoJasperParameterForDisplay value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperParametersResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAllJasperParametersResponse
      */
-    public function addToMidocoJasperParameterForDisplay(\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay $item): self
+    public function addToMidocoJasperParameterForDisplay(\Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay) {
-            throw new InvalidArgumentException(sprintf('The MidocoJasperParameterForDisplay property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay) {
+            throw new InvalidArgumentException(sprintf('The MidocoJasperParameterForDisplay property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoJasperParameterForDisplay[] = $item;
         

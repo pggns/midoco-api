@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoDictionaryPerson extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDictionaryPerson
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDictionaryPerson
      */
     public function setName(?string $name = null): self
     {
@@ -70,7 +70,7 @@ class MidocoDictionaryPerson extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDictionaryPerson
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDictionaryPerson
      */
     public function setForename(?string $forename = null): self
     {

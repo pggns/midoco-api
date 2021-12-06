@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class OrderBillingDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderBillingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderBillingDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -70,7 +70,7 @@ class OrderBillingDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderBillingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderBillingDTO
      */
     public function setOrderId(?int $orderId = null): self
     {

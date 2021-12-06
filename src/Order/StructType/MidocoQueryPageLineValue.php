@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class MidocoQueryPageLineValue extends AbstractStructBase
     /**
      * Set isNull value
      * @param bool $isNull
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPageLineValue
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoQueryPageLineValue
      */
     public function setIsNull(?bool $isNull = false): self
     {
@@ -72,7 +72,7 @@ class MidocoQueryPageLineValue extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPageLineValue
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoQueryPageLineValue
      */
     public function setValue(?string $value = null): self
     {

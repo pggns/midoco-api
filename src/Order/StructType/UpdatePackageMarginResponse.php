@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class UpdatePackageMarginResponse extends AbstractStructBase
     /**
      * Set packageMarginId value
      * @param int $packageMarginId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdatePackageMarginResponse
+     * @return \Pggns\MidocoApi\Order\StructType\UpdatePackageMarginResponse
      */
     public function setPackageMarginId(?int $packageMarginId = null): self
     {

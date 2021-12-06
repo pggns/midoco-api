@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -50,7 +50,7 @@ class ListRuleCriteriaOrderRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaOrderRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaOrderRequest
      */
     public function setUnitName(string $unitName): self
     {
@@ -73,7 +73,7 @@ class ListRuleCriteriaOrderRequest extends AbstractStructBase
     /**
      * Set definitionId value
      * @param int $definitionId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaOrderRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaOrderRequest
      */
     public function setDefinitionId(?int $definitionId = null): self
     {

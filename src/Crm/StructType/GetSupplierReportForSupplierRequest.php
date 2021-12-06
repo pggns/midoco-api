@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetSupplierReportForSupplierRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetSupplierReportForSupplierRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetSupplierReportForSupplierRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -78,7 +78,7 @@ class GetSupplierReportForSupplierRequest extends AbstractStructBase
     /**
      * Set month value
      * @param int $month
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetSupplierReportForSupplierRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetSupplierReportForSupplierRequest
      */
     public function setMonth(?int $month = null): self
     {
@@ -101,7 +101,7 @@ class GetSupplierReportForSupplierRequest extends AbstractStructBase
     /**
      * Set year value
      * @param int $year
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetSupplierReportForSupplierRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetSupplierReportForSupplierRequest
      */
     public function setYear(?int $year = null): self
     {

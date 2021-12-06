@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetDocumentRequest extends AbstractStructBase
      * The MidocoCrmDocumentId
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmDocumentId
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentIdDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentIdDTO $MidocoCrmDocumentId = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmDocumentIdDTO $MidocoCrmDocumentId = null;
     /**
      * Constructor method for GetDocumentRequest
      * @uses GetDocumentRequest::setMidocoCrmDocumentId()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentIdDTO $midocoCrmDocumentId
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentIdDTO $midocoCrmDocumentId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentIdDTO $midocoCrmDocumentId = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmDocumentIdDTO $midocoCrmDocumentId = null)
     {
         $this
             ->setMidocoCrmDocumentId($midocoCrmDocumentId);
     }
     /**
      * Get MidocoCrmDocumentId value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentIdDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentIdDTO|null
      */
-    public function getMidocoCrmDocumentId(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentIdDTO
+    public function getMidocoCrmDocumentId(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmDocumentIdDTO
     {
         return $this->MidocoCrmDocumentId;
     }
     /**
      * Set MidocoCrmDocumentId value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentIdDTO $midocoCrmDocumentId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetDocumentRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentIdDTO $midocoCrmDocumentId
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDocumentRequest
      */
-    public function setMidocoCrmDocumentId(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentIdDTO $midocoCrmDocumentId = null): self
+    public function setMidocoCrmDocumentId(?\Pggns\MidocoApi\CrmSD\StructType\CrmDocumentIdDTO $midocoCrmDocumentId = null): self
     {
         $this->MidocoCrmDocumentId = $midocoCrmDocumentId;
         

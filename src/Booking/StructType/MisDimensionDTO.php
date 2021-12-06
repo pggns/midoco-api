@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MisDimensionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MisDimensionDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\MisDimensionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -70,7 +70,7 @@ class MisDimensionDTO extends AbstractStructBase
     /**
      * Set dimensionName value
      * @param string $dimensionName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MisDimensionDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\MisDimensionDTO
      */
     public function setDimensionName(?string $dimensionName = null): self
     {

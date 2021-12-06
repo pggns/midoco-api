@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetOrderDocumentsRequest extends AbstractStructBase
      * The MidocoOrderDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoOrderDocument
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument $MidocoOrderDocument = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $MidocoOrderDocument = null;
     /**
      * The retreiveOrgunitDocs
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class GetOrderDocumentsRequest extends AbstractStructBase
      * Constructor method for GetOrderDocumentsRequest
      * @uses GetOrderDocumentsRequest::setMidocoOrderDocument()
      * @uses GetOrderDocumentsRequest::setRetreiveOrgunitDocs()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument $midocoOrderDocument
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $midocoOrderDocument
      * @param bool $retreiveOrgunitDocs
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument $midocoOrderDocument = null, ?bool $retreiveOrgunitDocs = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $midocoOrderDocument = null, ?bool $retreiveOrgunitDocs = null)
     {
         $this
             ->setMidocoOrderDocument($midocoOrderDocument)
@@ -42,18 +42,18 @@ class GetOrderDocumentsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderDocument value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderDocument|null
      */
-    public function getMidocoOrderDocument(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument
+    public function getMidocoOrderDocument(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderDocument
     {
         return $this->MidocoOrderDocument;
     }
     /**
      * Set MidocoOrderDocument value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument $midocoOrderDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderDocumentsRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $midocoOrderDocument
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderDocumentsRequest
      */
-    public function setMidocoOrderDocument(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument $midocoOrderDocument = null): self
+    public function setMidocoOrderDocument(?\Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $midocoOrderDocument = null): self
     {
         $this->MidocoOrderDocument = $midocoOrderDocument;
         
@@ -70,7 +70,7 @@ class GetOrderDocumentsRequest extends AbstractStructBase
     /**
      * Set retreiveOrgunitDocs value
      * @param bool $retreiveOrgunitDocs
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderDocumentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderDocumentsRequest
      */
     public function setRetreiveOrgunitDocs(?bool $retreiveOrgunitDocs = null): self
     {

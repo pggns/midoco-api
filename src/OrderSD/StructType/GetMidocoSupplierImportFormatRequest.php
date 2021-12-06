@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetMidocoSupplierImportFormatRequest extends AbstractStructBase
      * The MidocoSupplierImportFormat
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierImportFormat
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierImportFormatDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\SupplierImportFormatDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\SupplierImportFormatDTO $MidocoSupplierImportFormat = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\SupplierImportFormatDTO $MidocoSupplierImportFormat = null;
     /**
      * Constructor method for GetMidocoSupplierImportFormatRequest
      * @uses GetMidocoSupplierImportFormatRequest::setMidocoSupplierImportFormat()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierImportFormatDTO $midocoSupplierImportFormat
+     * @param \Pggns\MidocoApi\OrderSD\StructType\SupplierImportFormatDTO $midocoSupplierImportFormat
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\SupplierImportFormatDTO $midocoSupplierImportFormat = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\SupplierImportFormatDTO $midocoSupplierImportFormat = null)
     {
         $this
             ->setMidocoSupplierImportFormat($midocoSupplierImportFormat);
     }
     /**
      * Get MidocoSupplierImportFormat value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierImportFormatDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierImportFormatDTO|null
      */
-    public function getMidocoSupplierImportFormat(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\SupplierImportFormatDTO
+    public function getMidocoSupplierImportFormat(): ?\Pggns\MidocoApi\OrderSD\StructType\SupplierImportFormatDTO
     {
         return $this->MidocoSupplierImportFormat;
     }
     /**
      * Set MidocoSupplierImportFormat value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierImportFormatDTO $midocoSupplierImportFormat
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierImportFormatRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\SupplierImportFormatDTO $midocoSupplierImportFormat
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierImportFormatRequest
      */
-    public function setMidocoSupplierImportFormat(?\Pggns\MidocoApi\Api\OrderSD\StructType\SupplierImportFormatDTO $midocoSupplierImportFormat = null): self
+    public function setMidocoSupplierImportFormat(?\Pggns\MidocoApi\OrderSD\StructType\SupplierImportFormatDTO $midocoSupplierImportFormat = null): self
     {
         $this->MidocoSupplierImportFormat = $midocoSupplierImportFormat;
         

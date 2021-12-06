@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -279,7 +279,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param int $agencyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setAgencyId(?int $agencyId = null): self
     {
@@ -302,7 +302,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -325,7 +325,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set calcMediatorAmount value
      * @param float $calcMediatorAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setCalcMediatorAmount(?float $calcMediatorAmount = null): self
     {
@@ -348,7 +348,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set calcRevenueAmount value
      * @param float $calcRevenueAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setCalcRevenueAmount(?float $calcRevenueAmount = null): self
     {
@@ -371,7 +371,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set catalogKeyId value
      * @param int $catalogKeyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setCatalogKeyId(?int $catalogKeyId = null): self
     {
@@ -394,7 +394,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set commissionAmount value
      * @param float $commissionAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setCommissionAmount(?float $commissionAmount = null): self
     {
@@ -417,7 +417,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -440,7 +440,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set creationUserId value
      * @param int $creationUserId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setCreationUserId(?int $creationUserId = null): self
     {
@@ -463,7 +463,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set destinationKeyId value
      * @param int $destinationKeyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setDestinationKeyId(?int $destinationKeyId = null): self
     {
@@ -486,7 +486,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set durationKeyId value
      * @param int $durationKeyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setDurationKeyId(?int $durationKeyId = null): self
     {
@@ -509,7 +509,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set endTravelDate value
      * @param string $endTravelDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setEndTravelDate(?string $endTravelDate = null): self
     {
@@ -532,7 +532,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set extSystem value
      * @param string $extSystem
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setExtSystem(?string $extSystem = null): self
     {
@@ -555,7 +555,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set grantedRevenue value
      * @param float $grantedRevenue
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setGrantedRevenue(?float $grantedRevenue = null): self
     {
@@ -578,7 +578,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set mediatorAffiliate value
      * @param string $mediatorAffiliate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setMediatorAffiliate(?string $mediatorAffiliate = null): self
     {
@@ -601,7 +601,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param int $mediatorId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setMediatorId(?int $mediatorId = null): self
     {
@@ -624,7 +624,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set noOfPersons value
      * @param int $noOfPersons
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setNoOfPersons(?int $noOfPersons = null): self
     {
@@ -647,7 +647,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set orderCreationDate value
      * @param string $orderCreationDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setOrderCreationDate(?string $orderCreationDate = null): self
     {
@@ -670,7 +670,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set orderEndTravelDate value
      * @param string $orderEndTravelDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setOrderEndTravelDate(?string $orderEndTravelDate = null): self
     {
@@ -693,7 +693,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set orderStartTravelDate value
      * @param string $orderStartTravelDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setOrderStartTravelDate(?string $orderStartTravelDate = null): self
     {
@@ -716,7 +716,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set orderTotalPrice value
      * @param float $orderTotalPrice
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setOrderTotalPrice(?float $orderTotalPrice = null): self
     {
@@ -739,7 +739,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set orgUnitId value
      * @param int $orgUnitId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setOrgUnitId(?int $orgUnitId = null): self
     {
@@ -762,7 +762,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set paidMediatorAmount value
      * @param float $paidMediatorAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setPaidMediatorAmount(?float $paidMediatorAmount = null): self
     {
@@ -785,7 +785,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set personsKeyId value
      * @param int $personsKeyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setPersonsKeyId(?int $personsKeyId = null): self
     {
@@ -808,7 +808,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set productTypeId value
      * @param int $productTypeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setProductTypeId(?int $productTypeId = null): self
     {
@@ -831,7 +831,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set sellItemId value
      * @param int $sellItemId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setSellItemId(?int $sellItemId = null): self
     {
@@ -854,7 +854,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set startTravelDate value
      * @param string $startTravelDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setStartTravelDate(?string $startTravelDate = null): self
     {
@@ -877,7 +877,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set statusId value
      * @param int $statusId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setStatusId(?int $statusId = null): self
     {
@@ -900,7 +900,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param int $supplierId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setSupplierId(?int $supplierId = null): self
     {
@@ -923,7 +923,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -946,7 +946,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set transportKeyId value
      * @param int $transportKeyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setTransportKeyId(?int $transportKeyId = null): self
     {
@@ -969,7 +969,7 @@ class MiscStatDTO extends AbstractStructBase
     /**
      * Set traveltypeKeyId value
      * @param int $traveltypeKeyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MiscStatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MiscStatDTO
      */
     public function setTraveltypeKeyId(?int $traveltypeKeyId = null): self
     {

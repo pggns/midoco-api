@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetOrderRemarksResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderRemark
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO[]
      */
     protected ?array $MidocoOrderRemark = null;
     /**
      * Constructor method for GetOrderRemarksResponse
      * @uses GetOrderRemarksResponse::setMidocoOrderRemark()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO[] $midocoOrderRemark
+     * @param \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO[] $midocoOrderRemark
      */
     public function __construct(?array $midocoOrderRemark = null)
     {
@@ -36,7 +36,7 @@ class GetOrderRemarksResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderRemark value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO[]
      */
     public function getMidocoOrderRemark(): ?array
     {
@@ -57,12 +57,12 @@ class GetOrderRemarksResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderRemarksResponseMidocoOrderRemarkItem) {
             // validation for constraint: itemType
-            if (!$getOrderRemarksResponseMidocoOrderRemarkItem instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO) {
+            if (!$getOrderRemarksResponseMidocoOrderRemarkItem instanceof \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO) {
                 $invalidValues[] = is_object($getOrderRemarksResponseMidocoOrderRemarkItem) ? get_class($getOrderRemarksResponseMidocoOrderRemarkItem) : sprintf('%s(%s)', gettype($getOrderRemarksResponseMidocoOrderRemarkItem), var_export($getOrderRemarksResponseMidocoOrderRemarkItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderRemark property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderRemark property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetOrderRemarksResponse extends AbstractStructBase
     /**
      * Set MidocoOrderRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO[] $midocoOrderRemark
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderRemarksResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO[] $midocoOrderRemark
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderRemarksResponse
      */
     public function setMidocoOrderRemark(?array $midocoOrderRemark = null): self
     {
@@ -87,14 +87,14 @@ class GetOrderRemarksResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderRemarksResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderRemarksResponse
      */
-    public function addToMidocoOrderRemark(\Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO $item): self
+    public function addToMidocoOrderRemark(\Pggns\MidocoApi\Order\StructType\OrderRemarkDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderRemark property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderRemark property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderRemark[] = $item;
         

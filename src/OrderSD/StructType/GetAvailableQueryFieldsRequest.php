@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetAvailableQueryFieldsRequest extends AbstractStructBase
     /**
      * Set queryType value
      * @param string $queryType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableQueryFieldsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableQueryFieldsRequest
      */
     public function setQueryType(?string $queryType = null): self
     {

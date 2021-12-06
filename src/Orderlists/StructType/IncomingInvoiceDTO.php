@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class IncomingInvoiceDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\IncomingInvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\IncomingInvoiceDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -134,7 +134,7 @@ class IncomingInvoiceDTO extends AbstractStructBase
     /**
      * Set bookingNo value
      * @param string $bookingNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\IncomingInvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\IncomingInvoiceDTO
      */
     public function setBookingNo(?string $bookingNo = null): self
     {
@@ -157,7 +157,7 @@ class IncomingInvoiceDTO extends AbstractStructBase
     /**
      * Set comments value
      * @param string $comments
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\IncomingInvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\IncomingInvoiceDTO
      */
     public function setComments(?string $comments = null): self
     {
@@ -180,7 +180,7 @@ class IncomingInvoiceDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\IncomingInvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\IncomingInvoiceDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -203,7 +203,7 @@ class IncomingInvoiceDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\IncomingInvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\IncomingInvoiceDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -226,7 +226,7 @@ class IncomingInvoiceDTO extends AbstractStructBase
     /**
      * Set invoiceDate value
      * @param string $invoiceDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\IncomingInvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\IncomingInvoiceDTO
      */
     public function setInvoiceDate(?string $invoiceDate = null): self
     {
@@ -249,7 +249,7 @@ class IncomingInvoiceDTO extends AbstractStructBase
     /**
      * Set invoiceId value
      * @param int $invoiceId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\IncomingInvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\IncomingInvoiceDTO
      */
     public function setInvoiceId(?int $invoiceId = null): self
     {
@@ -272,7 +272,7 @@ class IncomingInvoiceDTO extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param string $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\IncomingInvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\IncomingInvoiceDTO
      */
     public function setInvoiceNo(?string $invoiceNo = null): self
     {
@@ -295,7 +295,7 @@ class IncomingInvoiceDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\IncomingInvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\IncomingInvoiceDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -318,7 +318,7 @@ class IncomingInvoiceDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\IncomingInvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\IncomingInvoiceDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

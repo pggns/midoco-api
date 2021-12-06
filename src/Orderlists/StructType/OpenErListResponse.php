@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class OpenErListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType[]
      */
     protected ?array $midocoOpenErOutputList = null;
     /**
@@ -26,7 +26,7 @@ class OpenErListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErListSumsType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErListSumsType[]
      */
     protected ?array $midocoOpenErListSums = null;
     /**
@@ -34,7 +34,7 @@ class OpenErListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErErrorListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErErrorListType[]
      */
     protected ?array $midocoOpenErListErrors = null;
     /**
@@ -50,9 +50,9 @@ class OpenErListResponse extends AbstractStructBase
      * @uses OpenErListResponse::setMidocoOpenErListSums()
      * @uses OpenErListResponse::setMidocoOpenErListErrors()
      * @uses OpenErListResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType[] $midocoOpenErOutputList
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErListSumsType[] $midocoOpenErListSums
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErErrorListType[] $midocoOpenErListErrors
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType[] $midocoOpenErOutputList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErListSumsType[] $midocoOpenErListSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErErrorListType[] $midocoOpenErListErrors
      * @param int $noOfResults
      */
     public function __construct(?array $midocoOpenErOutputList = null, ?array $midocoOpenErListSums = null, ?array $midocoOpenErListErrors = null, ?int $noOfResults = null)
@@ -65,7 +65,7 @@ class OpenErListResponse extends AbstractStructBase
     }
     /**
      * Get midocoOpenErOutputList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType[]
      */
     public function getMidocoOpenErOutputList(): ?array
     {
@@ -86,12 +86,12 @@ class OpenErListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $openErListResponseMidocoOpenErOutputListItem) {
             // validation for constraint: itemType
-            if (!$openErListResponseMidocoOpenErOutputListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType) {
+            if (!$openErListResponseMidocoOpenErOutputListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType) {
                 $invalidValues[] = is_object($openErListResponseMidocoOpenErOutputListItem) ? get_class($openErListResponseMidocoOpenErOutputListItem) : sprintf('%s(%s)', gettype($openErListResponseMidocoOpenErOutputListItem), var_export($openErListResponseMidocoOpenErOutputListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The midocoOpenErOutputList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The midocoOpenErOutputList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -100,8 +100,8 @@ class OpenErListResponse extends AbstractStructBase
     /**
      * Set midocoOpenErOutputList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType[] $midocoOpenErOutputList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OpenErListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType[] $midocoOpenErOutputList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OpenErListResponse
      */
     public function setMidocoOpenErOutputList(?array $midocoOpenErOutputList = null): self
     {
@@ -116,14 +116,14 @@ class OpenErListResponse extends AbstractStructBase
     /**
      * Add item to midocoOpenErOutputList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OpenErListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OpenErListResponse
      */
-    public function addToMidocoOpenErOutputList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType $item): self
+    public function addToMidocoOpenErOutputList(\Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType) {
-            throw new InvalidArgumentException(sprintf('The midocoOpenErOutputList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErOutputListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType) {
+            throw new InvalidArgumentException(sprintf('The midocoOpenErOutputList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErOutputListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->midocoOpenErOutputList[] = $item;
         
@@ -131,7 +131,7 @@ class OpenErListResponse extends AbstractStructBase
     }
     /**
      * Get midocoOpenErListSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErListSumsType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErListSumsType[]
      */
     public function getMidocoOpenErListSums(): ?array
     {
@@ -152,12 +152,12 @@ class OpenErListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $openErListResponseMidocoOpenErListSumsItem) {
             // validation for constraint: itemType
-            if (!$openErListResponseMidocoOpenErListSumsItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErListSumsType) {
+            if (!$openErListResponseMidocoOpenErListSumsItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErListSumsType) {
                 $invalidValues[] = is_object($openErListResponseMidocoOpenErListSumsItem) ? get_class($openErListResponseMidocoOpenErListSumsItem) : sprintf('%s(%s)', gettype($openErListResponseMidocoOpenErListSumsItem), var_export($openErListResponseMidocoOpenErListSumsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The midocoOpenErListSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErListSumsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The midocoOpenErListSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErListSumsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -166,8 +166,8 @@ class OpenErListResponse extends AbstractStructBase
     /**
      * Set midocoOpenErListSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErListSumsType[] $midocoOpenErListSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OpenErListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErListSumsType[] $midocoOpenErListSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OpenErListResponse
      */
     public function setMidocoOpenErListSums(?array $midocoOpenErListSums = null): self
     {
@@ -182,14 +182,14 @@ class OpenErListResponse extends AbstractStructBase
     /**
      * Add item to midocoOpenErListSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErListSumsType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OpenErListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErListSumsType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OpenErListResponse
      */
-    public function addToMidocoOpenErListSums(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErListSumsType $item): self
+    public function addToMidocoOpenErListSums(\Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErListSumsType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErListSumsType) {
-            throw new InvalidArgumentException(sprintf('The midocoOpenErListSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErListSumsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErListSumsType) {
+            throw new InvalidArgumentException(sprintf('The midocoOpenErListSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErListSumsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->midocoOpenErListSums[] = $item;
         
@@ -197,7 +197,7 @@ class OpenErListResponse extends AbstractStructBase
     }
     /**
      * Get midocoOpenErListErrors value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErErrorListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErErrorListType[]
      */
     public function getMidocoOpenErListErrors(): ?array
     {
@@ -218,12 +218,12 @@ class OpenErListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $openErListResponseMidocoOpenErListErrorsItem) {
             // validation for constraint: itemType
-            if (!$openErListResponseMidocoOpenErListErrorsItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErErrorListType) {
+            if (!$openErListResponseMidocoOpenErListErrorsItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErErrorListType) {
                 $invalidValues[] = is_object($openErListResponseMidocoOpenErListErrorsItem) ? get_class($openErListResponseMidocoOpenErListErrorsItem) : sprintf('%s(%s)', gettype($openErListResponseMidocoOpenErListErrorsItem), var_export($openErListResponseMidocoOpenErListErrorsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The midocoOpenErListErrors property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErErrorListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The midocoOpenErListErrors property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErErrorListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -232,8 +232,8 @@ class OpenErListResponse extends AbstractStructBase
     /**
      * Set midocoOpenErListErrors value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErErrorListType[] $midocoOpenErListErrors
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OpenErListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErErrorListType[] $midocoOpenErListErrors
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OpenErListResponse
      */
     public function setMidocoOpenErListErrors(?array $midocoOpenErListErrors = null): self
     {
@@ -248,14 +248,14 @@ class OpenErListResponse extends AbstractStructBase
     /**
      * Add item to midocoOpenErListErrors value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErErrorListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OpenErListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErErrorListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OpenErListResponse
      */
-    public function addToMidocoOpenErListErrors(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErErrorListType $item): self
+    public function addToMidocoOpenErListErrors(\Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErErrorListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErErrorListType) {
-            throw new InvalidArgumentException(sprintf('The midocoOpenErListErrors property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErErrorListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErErrorListType) {
+            throw new InvalidArgumentException(sprintf('The midocoOpenErListErrors property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErErrorListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->midocoOpenErListErrors[] = $item;
         
@@ -272,7 +272,7 @@ class OpenErListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OpenErListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OpenErListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

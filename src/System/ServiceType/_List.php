@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\ServiceType;
+namespace Pggns\MidocoApi\System\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class _List extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\System\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\System\ServiceType\_List
+     * @return \Pggns\MidocoApi\System\ServiceType\_List
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\System\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class _List extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\System\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\System\StructType\ListMidocoOrgTemplateTextRequest $paramListMidocoOrgTemplateTextRequest
-     * @return \Pggns\MidocoApi\Api\System\StructType\ListMidocoOrgTemplateTextResponse|bool
+     * @param \Pggns\MidocoApi\System\StructType\ListMidocoOrgTemplateTextRequest $paramListMidocoOrgTemplateTextRequest
+     * @return \Pggns\MidocoApi\System\StructType\ListMidocoOrgTemplateTextResponse|bool
      */
-    public function listMidocoOrgTemplateText(\Pggns\MidocoApi\Api\System\StructType\ListMidocoOrgTemplateTextRequest $paramListMidocoOrgTemplateTextRequest)
+    public function listMidocoOrgTemplateText(\Pggns\MidocoApi\System\StructType\ListMidocoOrgTemplateTextRequest $paramListMidocoOrgTemplateTextRequest)
     {
         try {
             $this->setResult($resultListMidocoOrgTemplateText = $this->getSoapClient()->__soapCall('listMidocoOrgTemplateText', [
@@ -58,15 +58,15 @@ class _List extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\System\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\System\StructType\ListPrintSelectsRequest $paramListPrintSelectsRequest
-     * @return \Pggns\MidocoApi\Api\System\StructType\ListPrintSelectsResponse|bool
+     * @param \Pggns\MidocoApi\System\StructType\ListPrintSelectsRequest $paramListPrintSelectsRequest
+     * @return \Pggns\MidocoApi\System\StructType\ListPrintSelectsResponse|bool
      */
-    public function listPrintSelects(\Pggns\MidocoApi\Api\System\StructType\ListPrintSelectsRequest $paramListPrintSelectsRequest)
+    public function listPrintSelects(\Pggns\MidocoApi\System\StructType\ListPrintSelectsRequest $paramListPrintSelectsRequest)
     {
         try {
             $this->setResult($resultListPrintSelects = $this->getSoapClient()->__soapCall('listPrintSelects', [
@@ -85,15 +85,15 @@ class _List extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\System\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\System\StructType\ListTssClientRequest $paramListTssClientRequest
-     * @return \Pggns\MidocoApi\Api\System\StructType\ListTssClientResponse|bool
+     * @param \Pggns\MidocoApi\System\StructType\ListTssClientRequest $paramListTssClientRequest
+     * @return \Pggns\MidocoApi\System\StructType\ListTssClientResponse|bool
      */
-    public function listTssClient(\Pggns\MidocoApi\Api\System\StructType\ListTssClientRequest $paramListTssClientRequest)
+    public function listTssClient(\Pggns\MidocoApi\System\StructType\ListTssClientRequest $paramListTssClientRequest)
     {
         try {
             $this->setResult($resultListTssClient = $this->getSoapClient()->__soapCall('listTssClient', [
@@ -110,7 +110,7 @@ class _List extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\System\StructType\ListMidocoOrgTemplateTextResponse|\Pggns\MidocoApi\Api\System\StructType\ListPrintSelectsResponse|\Pggns\MidocoApi\Api\System\StructType\ListTssClientResponse
+     * @return \Pggns\MidocoApi\System\StructType\ListMidocoOrgTemplateTextResponse|\Pggns\MidocoApi\System\StructType\ListPrintSelectsResponse|\Pggns\MidocoApi\System\StructType\ListTssClientResponse
      */
     public function getResult()
     {

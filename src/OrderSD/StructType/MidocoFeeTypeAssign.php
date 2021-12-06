@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -185,7 +185,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set isUseCustomerCurrency value
      * @param bool $isUseCustomerCurrency
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setIsUseCustomerCurrency(?bool $isUseCustomerCurrency = false): self
     {
@@ -208,7 +208,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set isExplicit value
      * @param bool $isExplicit
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setIsExplicit(?bool $isExplicit = null): self
     {
@@ -231,7 +231,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set segmentMultiply value
      * @param bool $segmentMultiply
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setSegmentMultiply(?bool $segmentMultiply = null): self
     {
@@ -254,7 +254,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set travellerMultiply value
      * @param bool $travellerMultiply
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setTravellerMultiply(?bool $travellerMultiply = null): self
     {
@@ -277,7 +277,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set feeCategory value
      * @param string $feeCategory
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setFeeCategory(?string $feeCategory = null): self
     {
@@ -300,7 +300,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set assumeTicketTaxPercent value
      * @param bool $assumeTicketTaxPercent
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setAssumeTicketTaxPercent(?bool $assumeTicketTaxPercent = null): self
     {
@@ -323,7 +323,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set dbUsePerMatch value
      * @param bool $dbUsePerMatch
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setDbUsePerMatch(?bool $dbUsePerMatch = null): self
     {
@@ -346,7 +346,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set reverseTrip value
      * @param bool $reverseTrip
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setReverseTrip(?bool $reverseTrip = null): self
     {
@@ -369,7 +369,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set ticketDesignator value
      * @param string $ticketDesignator
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setTicketDesignator(?string $ticketDesignator = null): self
     {
@@ -392,7 +392,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set isNettoFeeValue value
      * @param bool $isNettoFeeValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setIsNettoFeeValue(?bool $isNettoFeeValue = null): self
     {
@@ -415,7 +415,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set segmentValueSet value
      * @param int $segmentValueSet
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setSegmentValueSet(?int $segmentValueSet = null): self
     {
@@ -438,7 +438,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set noFeeSameDay value
      * @param bool $noFeeSameDay
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setNoFeeSameDay(?bool $noFeeSameDay = null): self
     {
@@ -461,7 +461,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set noFeeSameDayCategory value
      * @param string $noFeeSameDayCategory
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setNoFeeSameDayCategory(?string $noFeeSameDayCategory = null): self
     {
@@ -484,7 +484,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set noFeePrevDay value
      * @param bool $noFeePrevDay
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setNoFeePrevDay(?bool $noFeePrevDay = null): self
     {
@@ -507,7 +507,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set noFeePrevDayCategory value
      * @param string $noFeePrevDayCategory
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setNoFeePrevDayCategory(?string $noFeePrevDayCategory = null): self
     {
@@ -530,7 +530,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set feeAssignId value
      * @param int $feeAssignId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setFeeAssignId(?int $feeAssignId = null): self
     {
@@ -553,7 +553,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set oneFeeRelatedTicketsImport value
      * @param bool $oneFeeRelatedTicketsImport
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setOneFeeRelatedTicketsImport(?bool $oneFeeRelatedTicketsImport = null): self
     {
@@ -576,7 +576,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set feePriority value
      * @param int $feePriority
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setFeePriority(?int $feePriority = null): self
     {
@@ -599,7 +599,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
     /**
      * Set statusMatched value
      * @param bool $statusMatched
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeTypeAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeTypeAssign
      */
     public function setStatusMatched(?bool $statusMatched = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -59,7 +59,7 @@ class InvokeProcessOrderRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvokeProcessOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\InvokeProcessOrderRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -82,7 +82,7 @@ class InvokeProcessOrderRequest extends AbstractStructBase
     /**
      * Set preventWorkflow value
      * @param bool $preventWorkflow
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvokeProcessOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\InvokeProcessOrderRequest
      */
     public function setPreventWorkflow(?bool $preventWorkflow = false): self
     {
@@ -105,7 +105,7 @@ class InvokeProcessOrderRequest extends AbstractStructBase
     /**
      * Set forceSameConfirmationGroupForPrintedItems value
      * @param bool $forceSameConfirmationGroupForPrintedItems
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvokeProcessOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\InvokeProcessOrderRequest
      */
     public function setForceSameConfirmationGroupForPrintedItems(?bool $forceSameConfirmationGroupForPrintedItems = false): self
     {

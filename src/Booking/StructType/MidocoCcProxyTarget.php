@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class MidocoCcProxyTarget extends CcproxyTargetDTO
      * - maxOccurs: 1
      * - minOccurs: 1
      * - ref: MidocoCcProxyHandler
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\CcproxyHandlerDTO
+     * @var \Pggns\MidocoApi\Booking\StructType\CcproxyHandlerDTO
      */
-    protected \Pggns\MidocoApi\Api\Booking\StructType\CcproxyHandlerDTO $MidocoCcProxyHandler;
+    protected \Pggns\MidocoApi\Booking\StructType\CcproxyHandlerDTO $MidocoCcProxyHandler;
     /**
      * Constructor method for MidocoCcProxyTarget
      * @uses MidocoCcProxyTarget::setMidocoCcProxyHandler()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CcproxyHandlerDTO $midocoCcProxyHandler
+     * @param \Pggns\MidocoApi\Booking\StructType\CcproxyHandlerDTO $midocoCcProxyHandler
      */
-    public function __construct(\Pggns\MidocoApi\Api\Booking\StructType\CcproxyHandlerDTO $midocoCcProxyHandler)
+    public function __construct(\Pggns\MidocoApi\Booking\StructType\CcproxyHandlerDTO $midocoCcProxyHandler)
     {
         $this
             ->setMidocoCcProxyHandler($midocoCcProxyHandler);
     }
     /**
      * Get MidocoCcProxyHandler value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CcproxyHandlerDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\CcproxyHandlerDTO
      */
-    public function getMidocoCcProxyHandler(): \Pggns\MidocoApi\Api\Booking\StructType\CcproxyHandlerDTO
+    public function getMidocoCcProxyHandler(): \Pggns\MidocoApi\Booking\StructType\CcproxyHandlerDTO
     {
         return $this->MidocoCcProxyHandler;
     }
     /**
      * Set MidocoCcProxyHandler value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CcproxyHandlerDTO $midocoCcProxyHandler
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcProxyTarget
+     * @param \Pggns\MidocoApi\Booking\StructType\CcproxyHandlerDTO $midocoCcProxyHandler
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoCcProxyTarget
      */
-    public function setMidocoCcProxyHandler(\Pggns\MidocoApi\Api\Booking\StructType\CcproxyHandlerDTO $midocoCcProxyHandler): self
+    public function setMidocoCcProxyHandler(\Pggns\MidocoApi\Booking\StructType\CcproxyHandlerDTO $midocoCcProxyHandler): self
     {
         $this->MidocoCcProxyHandler = $midocoCcProxyHandler;
         

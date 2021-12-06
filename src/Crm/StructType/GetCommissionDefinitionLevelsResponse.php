@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCommissionDefinitionLevelsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCommissionDefinitionLevel
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO[]
      */
     protected ?array $MidocoCommissionDefinitionLevel = null;
     /**
      * Constructor method for GetCommissionDefinitionLevelsResponse
      * @uses GetCommissionDefinitionLevelsResponse::setMidocoCommissionDefinitionLevel()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO[] $midocoCommissionDefinitionLevel
+     * @param \Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO[] $midocoCommissionDefinitionLevel
      */
     public function __construct(?array $midocoCommissionDefinitionLevel = null)
     {
@@ -34,7 +34,7 @@ class GetCommissionDefinitionLevelsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCommissionDefinitionLevel value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO[]
      */
     public function getMidocoCommissionDefinitionLevel(): ?array
     {
@@ -55,12 +55,12 @@ class GetCommissionDefinitionLevelsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCommissionDefinitionLevelsResponseMidocoCommissionDefinitionLevelItem) {
             // validation for constraint: itemType
-            if (!$getCommissionDefinitionLevelsResponseMidocoCommissionDefinitionLevelItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO) {
+            if (!$getCommissionDefinitionLevelsResponseMidocoCommissionDefinitionLevelItem instanceof \Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO) {
                 $invalidValues[] = is_object($getCommissionDefinitionLevelsResponseMidocoCommissionDefinitionLevelItem) ? get_class($getCommissionDefinitionLevelsResponseMidocoCommissionDefinitionLevelItem) : sprintf('%s(%s)', gettype($getCommissionDefinitionLevelsResponseMidocoCommissionDefinitionLevelItem), var_export($getCommissionDefinitionLevelsResponseMidocoCommissionDefinitionLevelItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCommissionDefinitionLevel property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCommissionDefinitionLevel property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCommissionDefinitionLevelsResponse extends AbstractStructBase
     /**
      * Set MidocoCommissionDefinitionLevel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO[] $midocoCommissionDefinitionLevel
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCommissionDefinitionLevelsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO[] $midocoCommissionDefinitionLevel
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCommissionDefinitionLevelsResponse
      */
     public function setMidocoCommissionDefinitionLevel(?array $midocoCommissionDefinitionLevel = null): self
     {
@@ -85,14 +85,14 @@ class GetCommissionDefinitionLevelsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCommissionDefinitionLevel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCommissionDefinitionLevelsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCommissionDefinitionLevelsResponse
      */
-    public function addToMidocoCommissionDefinitionLevel(\Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO $item): self
+    public function addToMidocoCommissionDefinitionLevel(\Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCommissionDefinitionLevel property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCommissionDefinitionLevel property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCommissionDefinitionLevel[] = $item;
         

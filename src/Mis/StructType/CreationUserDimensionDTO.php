@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class CreationUserDimensionDTO extends AbstractStructBase
     /**
      * Set creationUserId value
      * @param int $creationUserId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CreationUserDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CreationUserDimensionDTO
      */
     public function setCreationUserId(?int $creationUserId = null): self
     {
@@ -102,7 +102,7 @@ class CreationUserDimensionDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CreationUserDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CreationUserDimensionDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -125,7 +125,7 @@ class CreationUserDimensionDTO extends AbstractStructBase
     /**
      * Set locked value
      * @param bool $locked
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CreationUserDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CreationUserDimensionDTO
      */
     public function setLocked(?bool $locked = null): self
     {
@@ -148,7 +148,7 @@ class CreationUserDimensionDTO extends AbstractStructBase
     /**
      * Set midocoCreationUserId value
      * @param int $midocoCreationUserId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CreationUserDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CreationUserDimensionDTO
      */
     public function setMidocoCreationUserId(?int $midocoCreationUserId = null): self
     {
@@ -171,7 +171,7 @@ class CreationUserDimensionDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CreationUserDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CreationUserDimensionDTO
      */
     public function setName(?string $name = null): self
     {
@@ -194,7 +194,7 @@ class CreationUserDimensionDTO extends AbstractStructBase
     /**
      * Set userLogin value
      * @param string $userLogin
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CreationUserDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CreationUserDimensionDTO
      */
     public function setUserLogin(?string $userLogin = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class MidocoCriteriaTypeInfo extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCriteriaTypeInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCriteriaTypeInfo
      */
     public function setTypeId(string $typeId): self
     {
@@ -74,7 +74,7 @@ class MidocoCriteriaTypeInfo extends AbstractStructBase
     /**
      * Set guiPosition value
      * @param int $guiPosition
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCriteriaTypeInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCriteriaTypeInfo
      */
     public function setGuiPosition(int $guiPosition): self
     {

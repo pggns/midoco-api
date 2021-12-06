@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetMisReportParamsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMisReportParam
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReportParam[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoMisReportParam[]
      */
     protected ?array $MidocoMisReportParam = null;
     /**
      * Constructor method for GetMisReportParamsResponse
      * @uses GetMisReportParamsResponse::setMidocoMisReportParam()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReportParam[] $midocoMisReportParam
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisReportParam[] $midocoMisReportParam
      */
     public function __construct(?array $midocoMisReportParam = null)
     {
@@ -36,7 +36,7 @@ class GetMisReportParamsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMisReportParam value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReportParam[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoMisReportParam[]
      */
     public function getMidocoMisReportParam(): ?array
     {
@@ -57,12 +57,12 @@ class GetMisReportParamsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMisReportParamsResponseMidocoMisReportParamItem) {
             // validation for constraint: itemType
-            if (!$getMisReportParamsResponseMidocoMisReportParamItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReportParam) {
+            if (!$getMisReportParamsResponseMidocoMisReportParamItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoMisReportParam) {
                 $invalidValues[] = is_object($getMisReportParamsResponseMidocoMisReportParamItem) ? get_class($getMisReportParamsResponseMidocoMisReportParamItem) : sprintf('%s(%s)', gettype($getMisReportParamsResponseMidocoMisReportParamItem), var_export($getMisReportParamsResponseMidocoMisReportParamItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMisReportParam property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReportParam, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMisReportParam property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoMisReportParam, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetMisReportParamsResponse extends AbstractStructBase
     /**
      * Set MidocoMisReportParam value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReportParam[] $midocoMisReportParam
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMisReportParamsResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisReportParam[] $midocoMisReportParam
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMisReportParamsResponse
      */
     public function setMidocoMisReportParam(?array $midocoMisReportParam = null): self
     {
@@ -87,14 +87,14 @@ class GetMisReportParamsResponse extends AbstractStructBase
     /**
      * Add item to MidocoMisReportParam value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReportParam $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMisReportParamsResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisReportParam $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMisReportParamsResponse
      */
-    public function addToMidocoMisReportParam(\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReportParam $item): self
+    public function addToMidocoMisReportParam(\Pggns\MidocoApi\Mis\StructType\MidocoMisReportParam $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReportParam) {
-            throw new InvalidArgumentException(sprintf('The MidocoMisReportParam property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReportParam, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoMisReportParam) {
+            throw new InvalidArgumentException(sprintf('The MidocoMisReportParam property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoMisReportParam, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMisReportParam[] = $item;
         

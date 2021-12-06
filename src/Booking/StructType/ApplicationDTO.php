@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ApplicationDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\ApplicationDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\ApplicationDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -70,7 +70,7 @@ class ApplicationDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\ApplicationDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\ApplicationDTO
      */
     public function setDescription(?string $description = null): self
     {

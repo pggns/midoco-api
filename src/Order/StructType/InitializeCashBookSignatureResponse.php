@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class InitializeCashBookSignatureResponse extends AbstractStructBase
      * The MidocoCashBookSignature
      * Meta information extracted from the WSDL
      * - ref: MidocoCashBookSignature
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature $MidocoCashBookSignature = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature $MidocoCashBookSignature = null;
     /**
      * The repositoryId
      * @var int|null
@@ -29,10 +29,10 @@ class InitializeCashBookSignatureResponse extends AbstractStructBase
      * Constructor method for InitializeCashBookSignatureResponse
      * @uses InitializeCashBookSignatureResponse::setMidocoCashBookSignature()
      * @uses InitializeCashBookSignatureResponse::setRepositoryId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature
      * @param int $repositoryId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature = null, ?int $repositoryId = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature = null, ?int $repositoryId = null)
     {
         $this
             ->setMidocoCashBookSignature($midocoCashBookSignature)
@@ -40,18 +40,18 @@ class InitializeCashBookSignatureResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCashBookSignature value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature|null
      */
-    public function getMidocoCashBookSignature(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature
+    public function getMidocoCashBookSignature(): ?\Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature
     {
         return $this->MidocoCashBookSignature;
     }
     /**
      * Set MidocoCashBookSignature value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InitializeCashBookSignatureResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature
+     * @return \Pggns\MidocoApi\Order\StructType\InitializeCashBookSignatureResponse
      */
-    public function setMidocoCashBookSignature(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature = null): self
+    public function setMidocoCashBookSignature(?\Pggns\MidocoApi\Order\StructType\MidocoCashBookSignature $midocoCashBookSignature = null): self
     {
         $this->MidocoCashBookSignature = $midocoCashBookSignature;
         
@@ -68,7 +68,7 @@ class InitializeCashBookSignatureResponse extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InitializeCashBookSignatureResponse
+     * @return \Pggns\MidocoApi\Order\StructType\InitializeCashBookSignatureResponse
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

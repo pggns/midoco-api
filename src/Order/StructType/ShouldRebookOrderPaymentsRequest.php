@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ShouldRebookOrderPaymentsRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ShouldRebookOrderPaymentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ShouldRebookOrderPaymentsRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -70,7 +70,7 @@ class ShouldRebookOrderPaymentsRequest extends AbstractStructBase
     /**
      * Set currentDebitorNo value
      * @param string $currentDebitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ShouldRebookOrderPaymentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ShouldRebookOrderPaymentsRequest
      */
     public function setCurrentDebitorNo(?string $currentDebitorNo = null): self
     {

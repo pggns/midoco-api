@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GroupAdvisorSettlementCriteria extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GroupAdvisorSettlementCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\GroupAdvisorSettlementCriteria
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -70,7 +70,7 @@ class GroupAdvisorSettlementCriteria extends AbstractStructBase
     /**
      * Set accountIdVat value
      * @param string $accountIdVat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GroupAdvisorSettlementCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\GroupAdvisorSettlementCriteria
      */
     public function setAccountIdVat(?string $accountIdVat = null): self
     {

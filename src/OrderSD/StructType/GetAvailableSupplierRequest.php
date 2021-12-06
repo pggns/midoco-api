@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetAvailableSupplierRequest extends AbstractStructBase
      * The MidocoSupplier
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplier
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType $MidocoSupplier = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType $MidocoSupplier = null;
     /**
      * The startDate
      * Meta information extracted from the WSDL
@@ -55,13 +55,13 @@ class GetAvailableSupplierRequest extends AbstractStructBase
      * @uses GetAvailableSupplierRequest::setEndDate()
      * @uses GetAvailableSupplierRequest::setAccountId()
      * @uses GetAvailableSupplierRequest::setExtendedInfo()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType $midocoSupplier
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType $midocoSupplier
      * @param string $startDate
      * @param string $endDate
      * @param string $accountId
      * @param bool $extendedInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType $midocoSupplier = null, ?string $startDate = null, ?string $endDate = null, ?string $accountId = null, ?bool $extendedInfo = false)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType $midocoSupplier = null, ?string $startDate = null, ?string $endDate = null, ?string $accountId = null, ?bool $extendedInfo = false)
     {
         $this
             ->setMidocoSupplier($midocoSupplier)
@@ -72,18 +72,18 @@ class GetAvailableSupplierRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplier value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType|null
      */
-    public function getMidocoSupplier(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType
+    public function getMidocoSupplier(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType
     {
         return $this->MidocoSupplier;
     }
     /**
      * Set MidocoSupplier value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType $midocoSupplier
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType $midocoSupplier
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierRequest
      */
-    public function setMidocoSupplier(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType $midocoSupplier = null): self
+    public function setMidocoSupplier(?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType $midocoSupplier = null): self
     {
         $this->MidocoSupplier = $midocoSupplier;
         
@@ -100,7 +100,7 @@ class GetAvailableSupplierRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -123,7 +123,7 @@ class GetAvailableSupplierRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -146,7 +146,7 @@ class GetAvailableSupplierRequest extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierRequest
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -169,7 +169,7 @@ class GetAvailableSupplierRequest extends AbstractStructBase
     /**
      * Set extendedInfo value
      * @param bool $extendedInfo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierRequest
      */
     public function setExtendedInfo(?bool $extendedInfo = false): self
     {

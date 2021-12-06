@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class FileType extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FileType
+     * @return \Pggns\MidocoApi\Order\StructType\FileType
      */
     public function setName(?string $name = null): self
     {
@@ -80,7 +80,7 @@ class FileType extends AbstractStructBase
     /**
      * Set mimeType value
      * @param string $mimeType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FileType
+     * @return \Pggns\MidocoApi\Order\StructType\FileType
      */
     public function setMimeType(?string $mimeType = null): self
     {
@@ -103,7 +103,7 @@ class FileType extends AbstractStructBase
     /**
      * Set bytes value
      * @param string $bytes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FileType
+     * @return \Pggns\MidocoApi\Order\StructType\FileType
      */
     public function setBytes(?string $bytes = null): self
     {

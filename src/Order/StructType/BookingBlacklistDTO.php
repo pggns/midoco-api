@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class BookingBlacklistDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingBlacklistDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingBlacklistDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -110,7 +110,7 @@ class BookingBlacklistDTO extends AbstractStructBase
     /**
      * Set bookingVersion value
      * @param string $bookingVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingBlacklistDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingBlacklistDTO
      */
     public function setBookingVersion(?string $bookingVersion = null): self
     {
@@ -133,7 +133,7 @@ class BookingBlacklistDTO extends AbstractStructBase
     /**
      * Set internalBookingId value
      * @param string $internalBookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingBlacklistDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingBlacklistDTO
      */
     public function setInternalBookingId(?string $internalBookingId = null): self
     {
@@ -156,7 +156,7 @@ class BookingBlacklistDTO extends AbstractStructBase
     /**
      * Set internalId value
      * @param int $internalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingBlacklistDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingBlacklistDTO
      */
     public function setInternalId(?int $internalId = null): self
     {
@@ -179,7 +179,7 @@ class BookingBlacklistDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingBlacklistDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingBlacklistDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -202,7 +202,7 @@ class BookingBlacklistDTO extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingBlacklistDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingBlacklistDTO
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -225,7 +225,7 @@ class BookingBlacklistDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingBlacklistDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingBlacklistDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {

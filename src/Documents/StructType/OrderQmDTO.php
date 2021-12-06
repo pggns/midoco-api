@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class OrderQmDTO extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderQmDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderQmDTO
      */
     public function setComment(?string $comment = null): self
     {
@@ -126,7 +126,7 @@ class OrderQmDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderQmDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderQmDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -149,7 +149,7 @@ class OrderQmDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderQmDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderQmDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -172,7 +172,7 @@ class OrderQmDTO extends AbstractStructBase
     /**
      * Set enabled value
      * @param bool $enabled
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderQmDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderQmDTO
      */
     public function setEnabled(?bool $enabled = null): self
     {
@@ -195,7 +195,7 @@ class OrderQmDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderQmDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderQmDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -218,7 +218,7 @@ class OrderQmDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderQmDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderQmDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -241,7 +241,7 @@ class OrderQmDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderQmDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderQmDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -264,7 +264,7 @@ class OrderQmDTO extends AbstractStructBase
     /**
      * Set orderQmId value
      * @param int $orderQmId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderQmDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderQmDTO
      */
     public function setOrderQmId(?int $orderQmId = null): self
     {
@@ -287,7 +287,7 @@ class OrderQmDTO extends AbstractStructBase
     /**
      * Set questionId value
      * @param int $questionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderQmDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderQmDTO
      */
     public function setQuestionId(?int $questionId = null): self
     {

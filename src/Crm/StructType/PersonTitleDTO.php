@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class PersonTitleDTO extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PersonTitleDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\PersonTitleDTO
      */
     public function setTitle(?string $title = null): self
     {
@@ -70,7 +70,7 @@ class PersonTitleDTO extends AbstractStructBase
     /**
      * Set titleId value
      * @param int $titleId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PersonTitleDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\PersonTitleDTO
      */
     public function setTitleId(?int $titleId = null): self
     {

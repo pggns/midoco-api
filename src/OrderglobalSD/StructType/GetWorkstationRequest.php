@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetWorkstationRequest extends AbstractStructBase
     /**
      * Set workstation_id value
      * @param string $workstation_id
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetWorkstationRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetWorkstationRequest
      */
     public function setWorkstation_id(?string $workstation_id = null): self
     {

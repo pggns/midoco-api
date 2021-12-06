@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAirportCodesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAirportCode
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoAirportCode[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoAirportCode[]
      */
     protected ?array $MidocoAirportCode = null;
     /**
      * Constructor method for GetAirportCodesResponse
      * @uses GetAirportCodesResponse::setMidocoAirportCode()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoAirportCode[] $midocoAirportCode
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoAirportCode[] $midocoAirportCode
      */
     public function __construct(?array $midocoAirportCode = null)
     {
@@ -34,7 +34,7 @@ class GetAirportCodesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAirportCode value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoAirportCode[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoAirportCode[]
      */
     public function getMidocoAirportCode(): ?array
     {
@@ -55,12 +55,12 @@ class GetAirportCodesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAirportCodesResponseMidocoAirportCodeItem) {
             // validation for constraint: itemType
-            if (!$getAirportCodesResponseMidocoAirportCodeItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoAirportCode) {
+            if (!$getAirportCodesResponseMidocoAirportCodeItem instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoAirportCode) {
                 $invalidValues[] = is_object($getAirportCodesResponseMidocoAirportCodeItem) ? get_class($getAirportCodesResponseMidocoAirportCodeItem) : sprintf('%s(%s)', gettype($getAirportCodesResponseMidocoAirportCodeItem), var_export($getAirportCodesResponseMidocoAirportCodeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAirportCode property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoAirportCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAirportCode property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoAirportCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAirportCodesResponse extends AbstractStructBase
     /**
      * Set MidocoAirportCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoAirportCode[] $midocoAirportCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAirportCodesResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoAirportCode[] $midocoAirportCode
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAirportCodesResponse
      */
     public function setMidocoAirportCode(?array $midocoAirportCode = null): self
     {
@@ -85,14 +85,14 @@ class GetAirportCodesResponse extends AbstractStructBase
     /**
      * Add item to MidocoAirportCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoAirportCode $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAirportCodesResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoAirportCode $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAirportCodesResponse
      */
-    public function addToMidocoAirportCode(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoAirportCode $item): self
+    public function addToMidocoAirportCode(\Pggns\MidocoApi\OrderSD\StructType\MidocoAirportCode $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoAirportCode) {
-            throw new InvalidArgumentException(sprintf('The MidocoAirportCode property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoAirportCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoAirportCode) {
+            throw new InvalidArgumentException(sprintf('The MidocoAirportCode property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoAirportCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAirportCode[] = $item;
         

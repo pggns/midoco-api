@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class DeleteOrgunitSupplierAgencyResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoOrgunitSupplierAgency
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\OrgunitSupplierAgencyDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\OrgunitSupplierAgencyDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\OrgunitSupplierAgencyDTO $MidocoOrgunitSupplierAgency = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\OrgunitSupplierAgencyDTO $MidocoOrgunitSupplierAgency = null;
     /**
      * Constructor method for DeleteOrgunitSupplierAgencyResponse
      * @uses DeleteOrgunitSupplierAgencyResponse::setMidocoOrgunitSupplierAgency()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency
+     * @param \Pggns\MidocoApi\Crm\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency = null)
     {
         $this
             ->setMidocoOrgunitSupplierAgency($midocoOrgunitSupplierAgency);
     }
     /**
      * Get MidocoOrgunitSupplierAgency value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\OrgunitSupplierAgencyDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\OrgunitSupplierAgencyDTO|null
      */
-    public function getMidocoOrgunitSupplierAgency(): ?\Pggns\MidocoApi\Api\Crm\StructType\OrgunitSupplierAgencyDTO
+    public function getMidocoOrgunitSupplierAgency(): ?\Pggns\MidocoApi\Crm\StructType\OrgunitSupplierAgencyDTO
     {
         return $this->MidocoOrgunitSupplierAgency;
     }
     /**
      * Set MidocoOrgunitSupplierAgency value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteOrgunitSupplierAgencyResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteOrgunitSupplierAgencyResponse
      */
-    public function setMidocoOrgunitSupplierAgency(?\Pggns\MidocoApi\Api\Crm\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency = null): self
+    public function setMidocoOrgunitSupplierAgency(?\Pggns\MidocoApi\Crm\StructType\OrgunitSupplierAgencyDTO $midocoOrgunitSupplierAgency = null): self
     {
         $this->MidocoOrgunitSupplierAgency = $midocoOrgunitSupplierAgency;
         

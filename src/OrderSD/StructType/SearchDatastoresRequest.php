@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SearchDatastoresRequest extends AbstractStructBase
      * The MidocoDatastore
      * Meta information extracted from the WSDL
      * - ref: MidocoDatastore
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\DatastoreDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\DatastoreDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\DatastoreDTO $MidocoDatastore = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\DatastoreDTO $MidocoDatastore = null;
     /**
      * Constructor method for SearchDatastoresRequest
      * @uses SearchDatastoresRequest::setMidocoDatastore()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\DatastoreDTO $midocoDatastore
+     * @param \Pggns\MidocoApi\OrderSD\StructType\DatastoreDTO $midocoDatastore
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\DatastoreDTO $midocoDatastore = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\DatastoreDTO $midocoDatastore = null)
     {
         $this
             ->setMidocoDatastore($midocoDatastore);
     }
     /**
      * Get MidocoDatastore value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DatastoreDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DatastoreDTO|null
      */
-    public function getMidocoDatastore(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\DatastoreDTO
+    public function getMidocoDatastore(): ?\Pggns\MidocoApi\OrderSD\StructType\DatastoreDTO
     {
         return $this->MidocoDatastore;
     }
     /**
      * Set MidocoDatastore value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\DatastoreDTO $midocoDatastore
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SearchDatastoresRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\DatastoreDTO $midocoDatastore
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SearchDatastoresRequest
      */
-    public function setMidocoDatastore(?\Pggns\MidocoApi\Api\OrderSD\StructType\DatastoreDTO $midocoDatastore = null): self
+    public function setMidocoDatastore(?\Pggns\MidocoApi\OrderSD\StructType\DatastoreDTO $midocoDatastore = null): self
     {
         $this->MidocoDatastore = $midocoDatastore;
         

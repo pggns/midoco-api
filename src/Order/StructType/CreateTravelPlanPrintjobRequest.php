@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class CreateTravelPlanPrintjobRequest extends AbstractStructBase
     /**
      * Set OrderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -80,7 +80,7 @@ class CreateTravelPlanPrintjobRequest extends AbstractStructBase
     /**
      * Set TemplateType value
      * @param string $templateType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobRequest
      */
     public function setTemplateType(?string $templateType = null): self
     {
@@ -103,7 +103,7 @@ class CreateTravelPlanPrintjobRequest extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobRequest
      */
     public function setMedia(?string $media = null): self
     {

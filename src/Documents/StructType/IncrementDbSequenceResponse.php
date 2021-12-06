@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class IncrementDbSequenceResponse extends AbstractStructBase
      * Set IdValue value
      * @throws InvalidArgumentException
      * @param int[] $idValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\IncrementDbSequenceResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\IncrementDbSequenceResponse
      */
     public function setIdValue(?array $idValue = null): self
     {
@@ -85,7 +85,7 @@ class IncrementDbSequenceResponse extends AbstractStructBase
      * Add item to IdValue value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\IncrementDbSequenceResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\IncrementDbSequenceResponse
      */
     public function addToIdValue(int $item): self
     {

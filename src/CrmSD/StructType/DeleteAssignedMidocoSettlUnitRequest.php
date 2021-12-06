@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DeleteAssignedMidocoSettlUnitRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteAssignedMidocoSettlUnitRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteAssignedMidocoSettlUnitRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -70,7 +70,7 @@ class DeleteAssignedMidocoSettlUnitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteAssignedMidocoSettlUnitRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteAssignedMidocoSettlUnitRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCashTurnoverExportsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCashTurnoverExport
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverExport[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverExport[]
      */
     protected ?array $MidocoCashTurnoverExport = null;
     /**
      * Constructor method for GetCashTurnoverExportsResponse
      * @uses GetCashTurnoverExportsResponse::setMidocoCashTurnoverExport()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverExport[] $midocoCashTurnoverExport
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverExport[] $midocoCashTurnoverExport
      */
     public function __construct(?array $midocoCashTurnoverExport = null)
     {
@@ -34,7 +34,7 @@ class GetCashTurnoverExportsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCashTurnoverExport value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverExport[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverExport[]
      */
     public function getMidocoCashTurnoverExport(): ?array
     {
@@ -55,12 +55,12 @@ class GetCashTurnoverExportsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCashTurnoverExportsResponseMidocoCashTurnoverExportItem) {
             // validation for constraint: itemType
-            if (!$getCashTurnoverExportsResponseMidocoCashTurnoverExportItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverExport) {
+            if (!$getCashTurnoverExportsResponseMidocoCashTurnoverExportItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverExport) {
                 $invalidValues[] = is_object($getCashTurnoverExportsResponseMidocoCashTurnoverExportItem) ? get_class($getCashTurnoverExportsResponseMidocoCashTurnoverExportItem) : sprintf('%s(%s)', gettype($getCashTurnoverExportsResponseMidocoCashTurnoverExportItem), var_export($getCashTurnoverExportsResponseMidocoCashTurnoverExportItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCashTurnoverExport property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverExport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCashTurnoverExport property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverExport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCashTurnoverExportsResponse extends AbstractStructBase
     /**
      * Set MidocoCashTurnoverExport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverExport[] $midocoCashTurnoverExport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCashTurnoverExportsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverExport[] $midocoCashTurnoverExport
+     * @return \Pggns\MidocoApi\Order\StructType\GetCashTurnoverExportsResponse
      */
     public function setMidocoCashTurnoverExport(?array $midocoCashTurnoverExport = null): self
     {
@@ -85,14 +85,14 @@ class GetCashTurnoverExportsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCashTurnoverExport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverExport $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCashTurnoverExportsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverExport $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetCashTurnoverExportsResponse
      */
-    public function addToMidocoCashTurnoverExport(\Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverExport $item): self
+    public function addToMidocoCashTurnoverExport(\Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverExport $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverExport) {
-            throw new InvalidArgumentException(sprintf('The MidocoCashTurnoverExport property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverExport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverExport) {
+            throw new InvalidArgumentException(sprintf('The MidocoCashTurnoverExport property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverExport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCashTurnoverExport[] = $item;
         

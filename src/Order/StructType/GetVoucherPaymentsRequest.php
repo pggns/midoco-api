@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetVoucherPaymentsRequest extends AbstractStructBase
     /**
      * Set voucherId value
      * @param int $voucherId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetVoucherPaymentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetVoucherPaymentsRequest
      */
     public function setVoucherId(?int $voucherId = null): self
     {

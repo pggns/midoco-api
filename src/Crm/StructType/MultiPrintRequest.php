@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -28,7 +28,7 @@ class MultiPrintRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: system:MidocoPrintSelect
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintSelect[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoPrintSelect[]
      */
     protected ?array $MidocoPrintSelect = null;
     /**
@@ -38,7 +38,7 @@ class MultiPrintRequest extends AbstractStructBase
      * @uses MultiPrintRequest::setMidocoPrintSelect()
      * @param int $customerId
      * @param string $media
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintSelect[] $midocoPrintSelect
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoPrintSelect[] $midocoPrintSelect
      */
     public function __construct(?int $customerId = null, ?string $media = null, ?array $midocoPrintSelect = null)
     {
@@ -58,7 +58,7 @@ class MultiPrintRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MultiPrintRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\MultiPrintRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -81,7 +81,7 @@ class MultiPrintRequest extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MultiPrintRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\MultiPrintRequest
      */
     public function setMedia(?string $media = null): self
     {
@@ -95,7 +95,7 @@ class MultiPrintRequest extends AbstractStructBase
     }
     /**
      * Get MidocoPrintSelect value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintSelect[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoPrintSelect[]
      */
     public function getMidocoPrintSelect(): ?array
     {
@@ -116,12 +116,12 @@ class MultiPrintRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $multiPrintRequestMidocoPrintSelectItem) {
             // validation for constraint: itemType
-            if (!$multiPrintRequestMidocoPrintSelectItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintSelect) {
+            if (!$multiPrintRequestMidocoPrintSelectItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoPrintSelect) {
                 $invalidValues[] = is_object($multiPrintRequestMidocoPrintSelectItem) ? get_class($multiPrintRequestMidocoPrintSelectItem) : sprintf('%s(%s)', gettype($multiPrintRequestMidocoPrintSelectItem), var_export($multiPrintRequestMidocoPrintSelectItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintSelect, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoPrintSelect, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -130,8 +130,8 @@ class MultiPrintRequest extends AbstractStructBase
     /**
      * Set MidocoPrintSelect value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintSelect[] $midocoPrintSelect
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MultiPrintRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoPrintSelect[] $midocoPrintSelect
+     * @return \Pggns\MidocoApi\Crm\StructType\MultiPrintRequest
      */
     public function setMidocoPrintSelect(?array $midocoPrintSelect = null): self
     {
@@ -146,14 +146,14 @@ class MultiPrintRequest extends AbstractStructBase
     /**
      * Add item to MidocoPrintSelect value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintSelect $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MultiPrintRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoPrintSelect $item
+     * @return \Pggns\MidocoApi\Crm\StructType\MultiPrintRequest
      */
-    public function addToMidocoPrintSelect(\Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintSelect $item): self
+    public function addToMidocoPrintSelect(\Pggns\MidocoApi\Crm\StructType\MidocoPrintSelect $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintSelect) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoPrintSelect, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoPrintSelect) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoPrintSelect, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintSelect[] = $item;
         

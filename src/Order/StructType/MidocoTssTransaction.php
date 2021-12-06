@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -223,7 +223,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setId(?string $id = null): self
     {
@@ -246,7 +246,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setTssId(?string $tssId = null): self
     {
@@ -269,7 +269,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set clientId value
      * @param string $clientId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setClientId(?string $clientId = null): self
     {
@@ -292,7 +292,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set lastRevision value
      * @param int $lastRevision
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setLastRevision(?int $lastRevision = null): self
     {
@@ -315,7 +315,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setStatus(?string $status = null): self
     {
@@ -338,7 +338,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set turnoverId value
      * @param int $turnoverId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setTurnoverId(?int $turnoverId = null): self
     {
@@ -361,7 +361,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set json value
      * @param string $json
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setJson(?string $json = null): self
     {
@@ -384,7 +384,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -407,7 +407,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set receiptType value
      * @param string $receiptType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setReceiptType(?string $receiptType = null): self
     {
@@ -430,7 +430,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -453,7 +453,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set transactionNumber value
      * @param int $transactionNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setTransactionNumber(?int $transactionNumber = null): self
     {
@@ -476,7 +476,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set clientSerialNumber value
      * @param string $clientSerialNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setClientSerialNumber(?string $clientSerialNumber = null): self
     {
@@ -499,7 +499,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set signature value
      * @param string $signature
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setSignature(?string $signature = null): self
     {
@@ -522,7 +522,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set qrCodeData value
      * @param string $qrCodeData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setQrCodeData(?string $qrCodeData = null): self
     {
@@ -545,7 +545,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set startTime value
      * @param string $startTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setStartTime(?string $startTime = null): self
     {
@@ -568,7 +568,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set endTime value
      * @param string $endTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setEndTime(?string $endTime = null): self
     {
@@ -591,7 +591,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set logTime value
      * @param string $logTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setLogTime(?string $logTime = null): self
     {
@@ -614,7 +614,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set failed value
      * @param bool $failed
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setFailed(?bool $failed = null): self
     {
@@ -637,7 +637,7 @@ class MidocoTssTransaction extends AbstractStructBase
     /**
      * Set error_message value
      * @param string $error_message
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssTransaction
      */
     public function setError_message(?string $error_message = null): self
     {

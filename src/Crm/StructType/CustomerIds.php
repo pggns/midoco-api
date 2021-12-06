@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -82,7 +82,7 @@ class CustomerIds extends AbstractStructBase
      * Set included value
      * @throws InvalidArgumentException
      * @param int[] $included
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerIds
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerIds
      */
     public function setIncluded(?array $included = null): self
     {
@@ -98,7 +98,7 @@ class CustomerIds extends AbstractStructBase
      * Add item to included value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerIds
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerIds
      */
     public function addToIncluded(int $item): self
     {
@@ -148,7 +148,7 @@ class CustomerIds extends AbstractStructBase
      * Set dropped value
      * @throws InvalidArgumentException
      * @param int[] $dropped
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerIds
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerIds
      */
     public function setDropped(?array $dropped = null): self
     {
@@ -164,7 +164,7 @@ class CustomerIds extends AbstractStructBase
      * Add item to dropped value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerIds
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerIds
      */
     public function addToDropped(int $item): self
     {

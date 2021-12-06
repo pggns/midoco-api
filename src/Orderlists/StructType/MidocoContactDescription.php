@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class MidocoContactDescription extends ContactDescriptionDTO
     /**
      * Set contactGroup value
      * @param int $contactGroup
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoContactDescription
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoContactDescription
      */
     public function setContactGroup(?int $contactGroup = 0): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -198,7 +198,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -221,7 +221,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -244,7 +244,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setTitle(?string $title = null): self
     {
@@ -267,7 +267,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setForename(?string $forename = null): self
     {
@@ -290,7 +290,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setName(?string $name = null): self
     {
@@ -313,7 +313,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setStreet(?string $street = null): self
     {
@@ -336,7 +336,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set postalcode value
      * @param string $postalcode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setPostalcode(?string $postalcode = null): self
     {
@@ -359,7 +359,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setCity(?string $city = null): self
     {
@@ -382,7 +382,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setCountry(?string $country = null): self
     {
@@ -405,7 +405,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -428,7 +428,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -451,7 +451,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -474,7 +474,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set additionalPosition value
      * @param int $additionalPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setAdditionalPosition(?int $additionalPosition = null): self
     {
@@ -497,7 +497,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set depositAmount value
      * @param float $depositAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setDepositAmount(?float $depositAmount = null): self
     {
@@ -520,7 +520,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set depositDate value
      * @param string $depositDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setDepositDate(?string $depositDate = null): self
     {
@@ -543,7 +543,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set finalPaymentAmount value
      * @param float $finalPaymentAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setFinalPaymentAmount(?float $finalPaymentAmount = null): self
     {
@@ -566,7 +566,7 @@ class MidocoOSSTTravelData extends AbstractStructBase
     /**
      * Set finalPaymentDate value
      * @param string $finalPaymentDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOSSTTravelData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOSSTTravelData
      */
     public function setFinalPaymentDate(?string $finalPaymentDate = null): self
     {

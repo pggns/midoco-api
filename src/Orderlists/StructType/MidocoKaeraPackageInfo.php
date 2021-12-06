@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class MidocoKaeraPackageInfo extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPackageInfo
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\PackageitemDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\PackageitemDTO[]
      */
     protected ?array $MidocoPackageInfo = null;
     /**
      * Constructor method for MidocoKaeraPackageInfo
      * @uses MidocoKaeraPackageInfo::setMidocoPackageInfo()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\PackageitemDTO[] $midocoPackageInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\PackageitemDTO[] $midocoPackageInfo
      */
     public function __construct(?array $midocoPackageInfo = null)
     {
@@ -34,7 +34,7 @@ class MidocoKaeraPackageInfo extends AbstractStructBase
     }
     /**
      * Get MidocoPackageInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PackageitemDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PackageitemDTO[]
      */
     public function getMidocoPackageInfo(): ?array
     {
@@ -55,12 +55,12 @@ class MidocoKaeraPackageInfo extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoKaeraPackageInfoMidocoPackageInfoItem) {
             // validation for constraint: itemType
-            if (!$midocoKaeraPackageInfoMidocoPackageInfoItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\PackageitemDTO) {
+            if (!$midocoKaeraPackageInfoMidocoPackageInfoItem instanceof \Pggns\MidocoApi\Orderlists\StructType\PackageitemDTO) {
                 $invalidValues[] = is_object($midocoKaeraPackageInfoMidocoPackageInfoItem) ? get_class($midocoKaeraPackageInfoMidocoPackageInfoItem) : sprintf('%s(%s)', gettype($midocoKaeraPackageInfoMidocoPackageInfoItem), var_export($midocoKaeraPackageInfoMidocoPackageInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPackageInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\PackageitemDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPackageInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\PackageitemDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class MidocoKaeraPackageInfo extends AbstractStructBase
     /**
      * Set MidocoPackageInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\PackageitemDTO[] $midocoPackageInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraPackageInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\PackageitemDTO[] $midocoPackageInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraPackageInfo
      */
     public function setMidocoPackageInfo(?array $midocoPackageInfo = null): self
     {
@@ -85,14 +85,14 @@ class MidocoKaeraPackageInfo extends AbstractStructBase
     /**
      * Add item to MidocoPackageInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\PackageitemDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraPackageInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\PackageitemDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraPackageInfo
      */
-    public function addToMidocoPackageInfo(\Pggns\MidocoApi\Api\Orderlists\StructType\PackageitemDTO $item): self
+    public function addToMidocoPackageInfo(\Pggns\MidocoApi\Orderlists\StructType\PackageitemDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\PackageitemDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoPackageInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\PackageitemDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\PackageitemDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoPackageInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\PackageitemDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPackageInfo[] = $item;
         

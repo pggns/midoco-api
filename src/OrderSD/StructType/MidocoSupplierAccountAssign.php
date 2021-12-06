@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoSupplierAccountAssign extends SupplierAccountAssignDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierAccountAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierAccountAssign
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {
@@ -94,7 +94,7 @@ class MidocoSupplierAccountAssign extends SupplierAccountAssignDTO
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierAccountAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierAccountAssign
      */
     public function setOrgunit(?string $orgunit = null): self
     {
@@ -117,7 +117,7 @@ class MidocoSupplierAccountAssign extends SupplierAccountAssignDTO
     /**
      * Set isHistorical value
      * @param bool $isHistorical
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierAccountAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierAccountAssign
      */
     public function setIsHistorical(?bool $isHistorical = null): self
     {
@@ -140,7 +140,7 @@ class MidocoSupplierAccountAssign extends SupplierAccountAssignDTO
     /**
      * Set validDate value
      * @param string $validDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierAccountAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierAccountAssign
      */
     public function setValidDate(?string $validDate = null): self
     {
@@ -163,7 +163,7 @@ class MidocoSupplierAccountAssign extends SupplierAccountAssignDTO
     /**
      * Set validCreationTravel value
      * @param string $validCreationTravel
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierAccountAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierAccountAssign
      */
     public function setValidCreationTravel(?string $validCreationTravel = null): self
     {

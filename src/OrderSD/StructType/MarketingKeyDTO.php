@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MarketingKeyDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -94,7 +94,7 @@ class MarketingKeyDTO extends AbstractStructBase
     /**
      * Set marketingKey value
      * @param string $marketingKey
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDTO
      */
     public function setMarketingKey(?string $marketingKey = null): self
     {
@@ -117,7 +117,7 @@ class MarketingKeyDTO extends AbstractStructBase
     /**
      * Set maxValue value
      * @param int $maxValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDTO
      */
     public function setMaxValue(?int $maxValue = null): self
     {
@@ -140,7 +140,7 @@ class MarketingKeyDTO extends AbstractStructBase
     /**
      * Set minValue value
      * @param int $minValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDTO
      */
     public function setMinValue(?int $minValue = null): self
     {
@@ -163,7 +163,7 @@ class MarketingKeyDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

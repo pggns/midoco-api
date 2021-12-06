@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -166,7 +166,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -189,7 +189,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -212,7 +212,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setFileName(?string $fileName = null): self
     {
@@ -235,7 +235,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set fileSize value
      * @param int $fileSize
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setFileSize(?int $fileSize = null): self
     {
@@ -258,7 +258,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set isAutoEmail value
      * @param bool $isAutoEmail
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setIsAutoEmail(?bool $isAutoEmail = null): self
     {
@@ -281,7 +281,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set isInheritable value
      * @param bool $isInheritable
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setIsInheritable(?bool $isInheritable = null): self
     {
@@ -304,7 +304,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set printTypeId value
      * @param string $printTypeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setPrintTypeId(?string $printTypeId = null): self
     {
@@ -327,7 +327,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -350,7 +350,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {
@@ -373,7 +373,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -396,7 +396,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set uploadDate value
      * @param string $uploadDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setUploadDate(?string $uploadDate = null): self
     {
@@ -419,7 +419,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -442,7 +442,7 @@ class OrgunitdocumentDTO extends AbstractStructBase
     /**
      * Set validUntil value
      * @param string $validUntil
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgunitdocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgunitdocumentDTO
      */
     public function setValidUntil(?string $validUntil = null): self
     {

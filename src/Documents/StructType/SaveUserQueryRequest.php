@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -24,9 +24,9 @@ class SaveUserQueryRequest extends AbstractStructBase
      * The MidocoQuery
      * Meta information extracted from the WSDL
      * - ref: MidocoQuery
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoQuery|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoQuery|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoQuery $MidocoQuery = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoQuery $MidocoQuery = null;
     /**
      * The queryType
      * Meta information extracted from the WSDL
@@ -194,7 +194,7 @@ class SaveUserQueryRequest extends AbstractStructBase
      * @uses SaveUserQueryRequest::setDecimalSeparator()
      * @uses SaveUserQueryRequest::setFileType()
      * @param string $queryDescription
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoQuery $midocoQuery
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoQuery $midocoQuery
      * @param string $queryType
      * @param bool $queryIsAutomatic
      * @param string $queryFreqency
@@ -219,7 +219,7 @@ class SaveUserQueryRequest extends AbstractStructBase
      * @param string $decimalSeparator
      * @param string $fileType
      */
-    public function __construct(string $queryDescription, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoQuery $midocoQuery = null, ?string $queryType = 'B', ?bool $queryIsAutomatic = false, ?string $queryFreqency = '', ?string $queryStartDate = null, ?string $queryNextDate = null, ?string $queryEmail = '', ?bool $isAddMode = false, ?string $queryEmailText = '', ?bool $queryInheritable = false, ?bool $createNotices = false, ?bool $asTask = false, ?string $notice = '', ?string $taskType = '', ?bool $assignItemId = false, ?string $delegationQueue = null, ?string $deadlineDate = null, ?string $outputLocale = null, ?string $exportType = null, ?string $dateFormat = null, ?string $sftpCredentialName = null, ?string $dateSeparator = null, ?string $decimalSeparator = null, ?string $fileType = null)
+    public function __construct(string $queryDescription, ?\Pggns\MidocoApi\Documents\StructType\MidocoQuery $midocoQuery = null, ?string $queryType = 'B', ?bool $queryIsAutomatic = false, ?string $queryFreqency = '', ?string $queryStartDate = null, ?string $queryNextDate = null, ?string $queryEmail = '', ?bool $isAddMode = false, ?string $queryEmailText = '', ?bool $queryInheritable = false, ?bool $createNotices = false, ?bool $asTask = false, ?string $notice = '', ?string $taskType = '', ?bool $assignItemId = false, ?string $delegationQueue = null, ?string $deadlineDate = null, ?string $outputLocale = null, ?string $exportType = null, ?string $dateFormat = null, ?string $sftpCredentialName = null, ?string $dateSeparator = null, ?string $decimalSeparator = null, ?string $fileType = null)
     {
         $this
             ->setQueryDescription($queryDescription)
@@ -259,7 +259,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set queryDescription value
      * @param string $queryDescription
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setQueryDescription(string $queryDescription): self
     {
@@ -273,18 +273,18 @@ class SaveUserQueryRequest extends AbstractStructBase
     }
     /**
      * Get MidocoQuery value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQuery|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQuery|null
      */
-    public function getMidocoQuery(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoQuery
+    public function getMidocoQuery(): ?\Pggns\MidocoApi\Documents\StructType\MidocoQuery
     {
         return $this->MidocoQuery;
     }
     /**
      * Set MidocoQuery value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoQuery $midocoQuery
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoQuery $midocoQuery
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
-    public function setMidocoQuery(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoQuery $midocoQuery = null): self
+    public function setMidocoQuery(?\Pggns\MidocoApi\Documents\StructType\MidocoQuery $midocoQuery = null): self
     {
         $this->MidocoQuery = $midocoQuery;
         
@@ -301,7 +301,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set queryType value
      * @param string $queryType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setQueryType(?string $queryType = 'B'): self
     {
@@ -324,7 +324,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set queryIsAutomatic value
      * @param bool $queryIsAutomatic
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setQueryIsAutomatic(?bool $queryIsAutomatic = false): self
     {
@@ -347,7 +347,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set queryFreqency value
      * @param string $queryFreqency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setQueryFreqency(?string $queryFreqency = ''): self
     {
@@ -370,7 +370,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set queryStartDate value
      * @param string $queryStartDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setQueryStartDate(?string $queryStartDate = null): self
     {
@@ -393,7 +393,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set queryNextDate value
      * @param string $queryNextDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setQueryNextDate(?string $queryNextDate = null): self
     {
@@ -416,7 +416,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set queryEmail value
      * @param string $queryEmail
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setQueryEmail(?string $queryEmail = ''): self
     {
@@ -439,7 +439,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set IsAddMode value
      * @param bool $isAddMode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setIsAddMode(?bool $isAddMode = false): self
     {
@@ -462,7 +462,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set queryEmailText value
      * @param string $queryEmailText
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setQueryEmailText(?string $queryEmailText = ''): self
     {
@@ -485,7 +485,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set queryInheritable value
      * @param bool $queryInheritable
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setQueryInheritable(?bool $queryInheritable = false): self
     {
@@ -508,7 +508,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set createNotices value
      * @param bool $createNotices
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setCreateNotices(?bool $createNotices = false): self
     {
@@ -531,7 +531,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set asTask value
      * @param bool $asTask
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setAsTask(?bool $asTask = false): self
     {
@@ -554,7 +554,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set notice value
      * @param string $notice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setNotice(?string $notice = ''): self
     {
@@ -577,7 +577,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setTaskType(?string $taskType = ''): self
     {
@@ -600,7 +600,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set assignItemId value
      * @param bool $assignItemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setAssignItemId(?bool $assignItemId = false): self
     {
@@ -623,7 +623,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set delegationQueue value
      * @param string $delegationQueue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setDelegationQueue(?string $delegationQueue = null): self
     {
@@ -646,7 +646,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set deadlineDate value
      * @param string $deadlineDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setDeadlineDate(?string $deadlineDate = null): self
     {
@@ -669,7 +669,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set outputLocale value
      * @param string $outputLocale
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setOutputLocale(?string $outputLocale = null): self
     {
@@ -692,7 +692,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set exportType value
      * @param string $exportType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setExportType(?string $exportType = null): self
     {
@@ -715,7 +715,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set dateFormat value
      * @param string $dateFormat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setDateFormat(?string $dateFormat = null): self
     {
@@ -738,7 +738,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set sftpCredentialName value
      * @param string $sftpCredentialName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setSftpCredentialName(?string $sftpCredentialName = null): self
     {
@@ -761,7 +761,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set dateSeparator value
      * @param string $dateSeparator
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setDateSeparator(?string $dateSeparator = null): self
     {
@@ -784,7 +784,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set decimalSeparator value
      * @param string $decimalSeparator
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setDecimalSeparator(?string $decimalSeparator = null): self
     {
@@ -807,7 +807,7 @@ class SaveUserQueryRequest extends AbstractStructBase
     /**
      * Set fileType value
      * @param string $fileType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveUserQueryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveUserQueryRequest
      */
     public function setFileType(?string $fileType = null): self
     {

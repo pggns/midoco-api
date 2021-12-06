@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -327,7 +327,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setType(?string $type = null): self
     {
@@ -350,7 +350,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setId(?int $id = null): self
     {
@@ -373,7 +373,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setTitle(?string $title = null): self
     {
@@ -396,7 +396,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setName(?string $name = null): self
     {
@@ -419,7 +419,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -442,7 +442,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -465,7 +465,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -488,7 +488,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set addressId value
      * @param int $addressId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setAddressId(?int $addressId = null): self
     {
@@ -511,7 +511,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -534,7 +534,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -557,7 +557,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -580,7 +580,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set postOfficeBox value
      * @param string $postOfficeBox
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setPostOfficeBox(?string $postOfficeBox = null): self
     {
@@ -603,7 +603,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setCountry(?string $country = null): self
     {
@@ -626,7 +626,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -649,7 +649,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set telephone value
      * @param string $telephone
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setTelephone(?string $telephone = null): self
     {
@@ -672,7 +672,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -695,7 +695,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set web value
      * @param string $web
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setWeb(?string $web = null): self
     {
@@ -718,7 +718,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -741,7 +741,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set salutationId value
      * @param string $salutationId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setSalutationId(?string $salutationId = null): self
     {
@@ -764,7 +764,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -787,7 +787,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set hasGDSProfileAttributes value
      * @param bool $hasGDSProfileAttributes
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setHasGDSProfileAttributes(?bool $hasGDSProfileAttributes = null): self
     {
@@ -810,7 +810,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set organisationName value
      * @param string $organisationName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setOrganisationName(?string $organisationName = null): self
     {
@@ -833,7 +833,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set contactPerson value
      * @param string $contactPerson
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setContactPerson(?string $contactPerson = null): self
     {
@@ -856,7 +856,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set endorsement value
      * @param string $endorsement
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setEndorsement(?string $endorsement = null): self
     {
@@ -879,7 +879,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -902,7 +902,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set isLocked value
      * @param bool $isLocked
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setIsLocked(?bool $isLocked = null): self
     {
@@ -925,7 +925,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set lockReasonId value
      * @param string $lockReasonId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setLockReasonId(?string $lockReasonId = null): self
     {
@@ -948,7 +948,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set score value
      * @param string $score
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setScore(?string $score = null): self
     {
@@ -971,7 +971,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set sortName value
      * @param string $sortName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setSortName(?string $sortName = null): self
     {
@@ -994,7 +994,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set name2 value
      * @param string $name2
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setName2(?string $name2 = null): self
     {
@@ -1017,7 +1017,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set makeNewOrder value
      * @param bool $makeNewOrder
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setMakeNewOrder(?bool $makeNewOrder = null): self
     {
@@ -1040,7 +1040,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set gdsCompanyCustomerId value
      * @param int $gdsCompanyCustomerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setGdsCompanyCustomerId(?int $gdsCompanyCustomerId = null): self
     {
@@ -1063,7 +1063,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set gdsCompanyName value
      * @param string $gdsCompanyName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setGdsCompanyName(?string $gdsCompanyName = null): self
     {
@@ -1086,7 +1086,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set gdsCompanyDebitorNo value
      * @param string $gdsCompanyDebitorNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setGdsCompanyDebitorNo(?string $gdsCompanyDebitorNo = null): self
     {
@@ -1109,7 +1109,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set mediatorType value
      * @param string $mediatorType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setMediatorType(?string $mediatorType = null): self
     {
@@ -1132,7 +1132,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set mandateReference value
      * @param string $mandateReference
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setMandateReference(?string $mandateReference = null): self
     {
@@ -1155,7 +1155,7 @@ class CustomerSearchDTO extends AbstractStructBase
     /**
      * Set contactId value
      * @param int $contactId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerSearchDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerSearchDTO
      */
     public function setContactId(?int $contactId = null): self
     {

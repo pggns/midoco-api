@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class PrintjobDTO extends AbstractStructBase
     /**
      * Set creatingUser value
      * @param int $creatingUser
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrintjobDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\PrintjobDTO
      */
     public function setCreatingUser(?int $creatingUser = null): self
     {
@@ -150,7 +150,7 @@ class PrintjobDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrintjobDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\PrintjobDTO
      */
     public function setId(?int $id = null): self
     {
@@ -173,7 +173,7 @@ class PrintjobDTO extends AbstractStructBase
     /**
      * Set isPreview value
      * @param bool $isPreview
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrintjobDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\PrintjobDTO
      */
     public function setIsPreview(?bool $isPreview = null): self
     {
@@ -196,7 +196,7 @@ class PrintjobDTO extends AbstractStructBase
     /**
      * Set isPrinted value
      * @param bool $isPrinted
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrintjobDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\PrintjobDTO
      */
     public function setIsPrinted(?bool $isPrinted = null): self
     {
@@ -219,7 +219,7 @@ class PrintjobDTO extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrintjobDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\PrintjobDTO
      */
     public function setMedia(?string $media = null): self
     {
@@ -242,7 +242,7 @@ class PrintjobDTO extends AbstractStructBase
     /**
      * Set numCopies value
      * @param int $numCopies
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrintjobDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\PrintjobDTO
      */
     public function setNumCopies(?int $numCopies = null): self
     {
@@ -265,7 +265,7 @@ class PrintjobDTO extends AbstractStructBase
     /**
      * Set printTimestamp value
      * @param string $printTimestamp
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrintjobDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\PrintjobDTO
      */
     public function setPrintTimestamp(?string $printTimestamp = null): self
     {
@@ -288,7 +288,7 @@ class PrintjobDTO extends AbstractStructBase
     /**
      * Set printjob value
      * @param string $printjob
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrintjobDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\PrintjobDTO
      */
     public function setPrintjob(?string $printjob = null): self
     {
@@ -311,7 +311,7 @@ class PrintjobDTO extends AbstractStructBase
     /**
      * Set printjobId value
      * @param string $printjobId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrintjobDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\PrintjobDTO
      */
     public function setPrintjobId(?string $printjobId = null): self
     {
@@ -334,7 +334,7 @@ class PrintjobDTO extends AbstractStructBase
     /**
      * Set timeCreated value
      * @param string $timeCreated
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrintjobDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\PrintjobDTO
      */
     public function setTimeCreated(?string $timeCreated = null): self
     {
@@ -357,7 +357,7 @@ class PrintjobDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrintjobDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\PrintjobDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -380,7 +380,7 @@ class PrintjobDTO extends AbstractStructBase
     /**
      * Set workstationId value
      * @param string $workstationId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrintjobDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\PrintjobDTO
      */
     public function setWorkstationId(?string $workstationId = null): self
     {

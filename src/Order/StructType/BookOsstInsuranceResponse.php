@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class BookOsstInsuranceResponse extends AbstractStructBase
     /**
      * Set docData value
      * @param string $docData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookOsstInsuranceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\BookOsstInsuranceResponse
      */
     public function setDocData(?string $docData = null): self
     {
@@ -94,7 +94,7 @@ class BookOsstInsuranceResponse extends AbstractStructBase
     /**
      * Set docName value
      * @param string $docName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookOsstInsuranceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\BookOsstInsuranceResponse
      */
     public function setDocName(?string $docName = null): self
     {
@@ -117,7 +117,7 @@ class BookOsstInsuranceResponse extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookOsstInsuranceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\BookOsstInsuranceResponse
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -140,7 +140,7 @@ class BookOsstInsuranceResponse extends AbstractStructBase
     /**
      * Set errorDescription value
      * @param string $errorDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookOsstInsuranceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\BookOsstInsuranceResponse
      */
     public function setErrorDescription(?string $errorDescription = null): self
     {
@@ -163,7 +163,7 @@ class BookOsstInsuranceResponse extends AbstractStructBase
     /**
      * Set osstInsuranceId value
      * @param int $osstInsuranceId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookOsstInsuranceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\BookOsstInsuranceResponse
      */
     public function setOsstInsuranceId(?int $osstInsuranceId = null): self
     {

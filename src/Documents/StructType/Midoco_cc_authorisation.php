@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class Midoco_cc_authorisation extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_cc_authorisation
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_cc_authorisation
      */
     public function setPosition(?int $position = null): self
     {
@@ -72,7 +72,7 @@ class Midoco_cc_authorisation extends AbstractStructBase
     /**
      * Set transaction_id value
      * @param int $transaction_id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_cc_authorisation
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_cc_authorisation
      */
     public function setTransaction_id(?int $transaction_id = null): self
     {

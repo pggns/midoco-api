@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class GetSuppCancelCEmailResponse extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoSuppCancelCEmail
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail $MidocoSuppCancelCEmail = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail $MidocoSuppCancelCEmail = null;
     /**
      * Constructor method for GetSuppCancelCEmailResponse
      * @uses GetSuppCancelCEmailResponse::setMidocoSuppCancelCEmail()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail $midocoSuppCancelCEmail
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail $midocoSuppCancelCEmail
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail $midocoSuppCancelCEmail = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail $midocoSuppCancelCEmail = null)
     {
         $this
             ->setMidocoSuppCancelCEmail($midocoSuppCancelCEmail);
     }
     /**
      * Get MidocoSuppCancelCEmail value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail|null
      */
-    public function getMidocoSuppCancelCEmail(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail
+    public function getMidocoSuppCancelCEmail(): ?\Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail
     {
         return $this->MidocoSuppCancelCEmail;
     }
     /**
      * Set MidocoSuppCancelCEmail value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail $midocoSuppCancelCEmail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSuppCancelCEmailResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail $midocoSuppCancelCEmail
+     * @return \Pggns\MidocoApi\Order\StructType\GetSuppCancelCEmailResponse
      */
-    public function setMidocoSuppCancelCEmail(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail $midocoSuppCancelCEmail = null): self
+    public function setMidocoSuppCancelCEmail(?\Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail $midocoSuppCancelCEmail = null): self
     {
         $this->MidocoSuppCancelCEmail = $midocoSuppCancelCEmail;
         

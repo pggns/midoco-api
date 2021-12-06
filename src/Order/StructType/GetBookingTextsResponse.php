@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetBookingTextsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBookingText
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BookingTextDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\BookingTextDTO[]
      */
     protected ?array $MidocoBookingText = null;
     /**
      * Constructor method for GetBookingTextsResponse
      * @uses GetBookingTextsResponse::setMidocoBookingText()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BookingTextDTO[] $midocoBookingText
+     * @param \Pggns\MidocoApi\Order\StructType\BookingTextDTO[] $midocoBookingText
      */
     public function __construct(?array $midocoBookingText = null)
     {
@@ -34,7 +34,7 @@ class GetBookingTextsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBookingText value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingTextDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\BookingTextDTO[]
      */
     public function getMidocoBookingText(): ?array
     {
@@ -55,12 +55,12 @@ class GetBookingTextsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBookingTextsResponseMidocoBookingTextItem) {
             // validation for constraint: itemType
-            if (!$getBookingTextsResponseMidocoBookingTextItem instanceof \Pggns\MidocoApi\Api\Order\StructType\BookingTextDTO) {
+            if (!$getBookingTextsResponseMidocoBookingTextItem instanceof \Pggns\MidocoApi\Order\StructType\BookingTextDTO) {
                 $invalidValues[] = is_object($getBookingTextsResponseMidocoBookingTextItem) ? get_class($getBookingTextsResponseMidocoBookingTextItem) : sprintf('%s(%s)', gettype($getBookingTextsResponseMidocoBookingTextItem), var_export($getBookingTextsResponseMidocoBookingTextItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBookingText property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BookingTextDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBookingText property can only contain items of type \Pggns\MidocoApi\Order\StructType\BookingTextDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetBookingTextsResponse extends AbstractStructBase
     /**
      * Set MidocoBookingText value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BookingTextDTO[] $midocoBookingText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingTextsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\BookingTextDTO[] $midocoBookingText
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingTextsResponse
      */
     public function setMidocoBookingText(?array $midocoBookingText = null): self
     {
@@ -85,14 +85,14 @@ class GetBookingTextsResponse extends AbstractStructBase
     /**
      * Add item to MidocoBookingText value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BookingTextDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingTextsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\BookingTextDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingTextsResponse
      */
-    public function addToMidocoBookingText(\Pggns\MidocoApi\Api\Order\StructType\BookingTextDTO $item): self
+    public function addToMidocoBookingText(\Pggns\MidocoApi\Order\StructType\BookingTextDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\BookingTextDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoBookingText property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BookingTextDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\BookingTextDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBookingText property can only contain items of type \Pggns\MidocoApi\Order\StructType\BookingTextDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBookingText[] = $item;
         

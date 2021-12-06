@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoBillingSearchInfo extends MidocoBillingSearchInfoType
     /**
      * Set selected value
      * @param bool $selected
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfo
      */
     public function setSelected(?bool $selected = null): self
     {

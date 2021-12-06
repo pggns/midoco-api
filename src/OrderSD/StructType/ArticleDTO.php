@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class ArticleDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ArticleDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ArticleDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -158,7 +158,7 @@ class ArticleDTO extends AbstractStructBase
     /**
      * Set active value
      * @param bool $active
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ArticleDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ArticleDTO
      */
     public function setActive(?bool $active = null): self
     {
@@ -181,7 +181,7 @@ class ArticleDTO extends AbstractStructBase
     /**
      * Set areaCodeRequired value
      * @param bool $areaCodeRequired
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ArticleDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ArticleDTO
      */
     public function setAreaCodeRequired(?bool $areaCodeRequired = null): self
     {
@@ -204,7 +204,7 @@ class ArticleDTO extends AbstractStructBase
     /**
      * Set bookingIdDistinct value
      * @param bool $bookingIdDistinct
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ArticleDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ArticleDTO
      */
     public function setBookingIdDistinct(?bool $bookingIdDistinct = null): self
     {
@@ -227,7 +227,7 @@ class ArticleDTO extends AbstractStructBase
     /**
      * Set bookingIdRequired value
      * @param bool $bookingIdRequired
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ArticleDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ArticleDTO
      */
     public function setBookingIdRequired(?bool $bookingIdRequired = null): self
     {
@@ -250,7 +250,7 @@ class ArticleDTO extends AbstractStructBase
     /**
      * Set countryCodeRequired value
      * @param bool $countryCodeRequired
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ArticleDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ArticleDTO
      */
     public function setCountryCodeRequired(?bool $countryCodeRequired = null): self
     {
@@ -273,7 +273,7 @@ class ArticleDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ArticleDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ArticleDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -296,7 +296,7 @@ class ArticleDTO extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ArticleDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ArticleDTO
      */
     public function setPrice(?float $price = null): self
     {
@@ -319,7 +319,7 @@ class ArticleDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ArticleDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ArticleDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -342,7 +342,7 @@ class ArticleDTO extends AbstractStructBase
     /**
      * Set travelDateRequired value
      * @param bool $travelDateRequired
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ArticleDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ArticleDTO
      */
     public function setTravelDateRequired(?bool $travelDateRequired = null): self
     {
@@ -365,7 +365,7 @@ class ArticleDTO extends AbstractStructBase
     /**
      * Set travellerRequired value
      * @param bool $travellerRequired
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ArticleDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ArticleDTO
      */
     public function setTravellerRequired(?bool $travellerRequired = null): self
     {
@@ -388,7 +388,7 @@ class ArticleDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ArticleDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ArticleDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -411,7 +411,7 @@ class ArticleDTO extends AbstractStructBase
     /**
      * Set vat value
      * @param float $vat
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ArticleDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ArticleDTO
      */
     public function setVat(?float $vat = null): self
     {

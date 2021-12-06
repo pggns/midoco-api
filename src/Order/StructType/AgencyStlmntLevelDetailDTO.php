@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class AgencyStlmntLevelDetailDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelDetailDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -158,7 +158,7 @@ class AgencyStlmntLevelDetailDTO extends AbstractStructBase
     /**
      * Set actualTurnover value
      * @param float $actualTurnover
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelDetailDTO
      */
     public function setActualTurnover(?float $actualTurnover = null): self
     {
@@ -181,7 +181,7 @@ class AgencyStlmntLevelDetailDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelDetailDTO
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -204,7 +204,7 @@ class AgencyStlmntLevelDetailDTO extends AbstractStructBase
     /**
      * Set commissionId value
      * @param int $commissionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelDetailDTO
      */
     public function setCommissionId(?int $commissionId = null): self
     {
@@ -227,7 +227,7 @@ class AgencyStlmntLevelDetailDTO extends AbstractStructBase
     /**
      * Set commissionNettoAmount value
      * @param float $commissionNettoAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelDetailDTO
      */
     public function setCommissionNettoAmount(?float $commissionNettoAmount = null): self
     {
@@ -250,7 +250,7 @@ class AgencyStlmntLevelDetailDTO extends AbstractStructBase
     /**
      * Set commissionPercent value
      * @param float $commissionPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelDetailDTO
      */
     public function setCommissionPercent(?float $commissionPercent = null): self
     {
@@ -273,7 +273,7 @@ class AgencyStlmntLevelDetailDTO extends AbstractStructBase
     /**
      * Set commissionVatAmount value
      * @param float $commissionVatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelDetailDTO
      */
     public function setCommissionVatAmount(?float $commissionVatAmount = null): self
     {
@@ -296,7 +296,7 @@ class AgencyStlmntLevelDetailDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelDetailDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -319,7 +319,7 @@ class AgencyStlmntLevelDetailDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelDetailDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -342,7 +342,7 @@ class AgencyStlmntLevelDetailDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelDetailDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -365,7 +365,7 @@ class AgencyStlmntLevelDetailDTO extends AbstractStructBase
     /**
      * Set previousTurnover value
      * @param float $previousTurnover
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelDetailDTO
      */
     public function setPreviousTurnover(?float $previousTurnover = null): self
     {
@@ -388,7 +388,7 @@ class AgencyStlmntLevelDetailDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelDetailDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -411,7 +411,7 @@ class AgencyStlmntLevelDetailDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelDetailDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

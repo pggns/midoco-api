@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetOrgTemplateTextFooterResponse extends AbstractStructBase
     /**
      * Set textFooter value
      * @param string $textFooter
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetOrgTemplateTextFooterResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetOrgTemplateTextFooterResponse
      */
     public function setTextFooter(?string $textFooter = null): self
     {

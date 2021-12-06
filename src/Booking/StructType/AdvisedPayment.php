@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class AdvisedPayment extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AdvisedPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\AdvisedPayment
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -86,7 +86,7 @@ class AdvisedPayment extends AbstractStructBase
     /**
      * Set paymentStatus value
      * @param string $paymentStatus
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AdvisedPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\AdvisedPayment
      */
     public function setPaymentStatus(?string $paymentStatus = null): self
     {
@@ -109,7 +109,7 @@ class AdvisedPayment extends AbstractStructBase
     /**
      * Set referenceNo value
      * @param string $referenceNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AdvisedPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\AdvisedPayment
      */
     public function setReferenceNo(?string $referenceNo = null): self
     {

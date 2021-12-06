@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSupplierInkassoModesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: SupplierInkassoMode
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierInkassoModeType[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\SupplierInkassoModeType[]
      */
     protected ?array $SupplierInkassoMode = null;
     /**
      * Constructor method for GetSupplierInkassoModesResponse
      * @uses GetSupplierInkassoModesResponse::setSupplierInkassoMode()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierInkassoModeType[] $supplierInkassoMode
+     * @param \Pggns\MidocoApi\OrderSD\StructType\SupplierInkassoModeType[] $supplierInkassoMode
      */
     public function __construct(?array $supplierInkassoMode = null)
     {
@@ -34,7 +34,7 @@ class GetSupplierInkassoModesResponse extends AbstractStructBase
     }
     /**
      * Get SupplierInkassoMode value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierInkassoModeType[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierInkassoModeType[]
      */
     public function getSupplierInkassoMode(): ?array
     {
@@ -55,12 +55,12 @@ class GetSupplierInkassoModesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSupplierInkassoModesResponseSupplierInkassoModeItem) {
             // validation for constraint: itemType
-            if (!$getSupplierInkassoModesResponseSupplierInkassoModeItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierInkassoModeType) {
+            if (!$getSupplierInkassoModesResponseSupplierInkassoModeItem instanceof \Pggns\MidocoApi\OrderSD\StructType\SupplierInkassoModeType) {
                 $invalidValues[] = is_object($getSupplierInkassoModesResponseSupplierInkassoModeItem) ? get_class($getSupplierInkassoModesResponseSupplierInkassoModeItem) : sprintf('%s(%s)', gettype($getSupplierInkassoModesResponseSupplierInkassoModeItem), var_export($getSupplierInkassoModesResponseSupplierInkassoModeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The SupplierInkassoMode property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierInkassoModeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The SupplierInkassoMode property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\SupplierInkassoModeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSupplierInkassoModesResponse extends AbstractStructBase
     /**
      * Set SupplierInkassoMode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierInkassoModeType[] $supplierInkassoMode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierInkassoModesResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\SupplierInkassoModeType[] $supplierInkassoMode
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierInkassoModesResponse
      */
     public function setSupplierInkassoMode(?array $supplierInkassoMode = null): self
     {
@@ -85,14 +85,14 @@ class GetSupplierInkassoModesResponse extends AbstractStructBase
     /**
      * Add item to SupplierInkassoMode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierInkassoModeType $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierInkassoModesResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\SupplierInkassoModeType $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierInkassoModesResponse
      */
-    public function addToSupplierInkassoMode(\Pggns\MidocoApi\Api\OrderSD\StructType\SupplierInkassoModeType $item): self
+    public function addToSupplierInkassoMode(\Pggns\MidocoApi\OrderSD\StructType\SupplierInkassoModeType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierInkassoModeType) {
-            throw new InvalidArgumentException(sprintf('The SupplierInkassoMode property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierInkassoModeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\SupplierInkassoModeType) {
+            throw new InvalidArgumentException(sprintf('The SupplierInkassoMode property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\SupplierInkassoModeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->SupplierInkassoMode[] = $item;
         

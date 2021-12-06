@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoUserChangesListType extends AbstractStructBase
     /**
      * Set recordDate value
      * @param string $recordDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType
      */
     public function setRecordDate(?string $recordDate = null): self
     {
@@ -102,7 +102,7 @@ class MidocoUserChangesListType extends AbstractStructBase
     /**
      * Set adminId value
      * @param int $adminId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType
      */
     public function setAdminId(?int $adminId = null): self
     {
@@ -125,7 +125,7 @@ class MidocoUserChangesListType extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType
      */
     public function setUserId(?int $userId = null): self
     {
@@ -148,7 +148,7 @@ class MidocoUserChangesListType extends AbstractStructBase
     /**
      * Set eventId value
      * @param string $eventId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType
      */
     public function setEventId(?string $eventId = null): self
     {
@@ -171,7 +171,7 @@ class MidocoUserChangesListType extends AbstractStructBase
     /**
      * Set details value
      * @param string $details
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType
      */
     public function setDetails(?string $details = null): self
     {
@@ -194,7 +194,7 @@ class MidocoUserChangesListType extends AbstractStructBase
     /**
      * Set adminOrgunit value
      * @param string $adminOrgunit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType
      */
     public function setAdminOrgunit(?string $adminOrgunit = null): self
     {

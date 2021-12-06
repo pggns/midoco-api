@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveFeeTypeForOrgunitRequest extends AbstractStructBase
      * The MidocoFeeTypeOrgUnit
      * Meta information extracted from the WSDL
      * - ref: MidocoFeeTypeOrgUnit
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeTypeOrgUnit|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoFeeTypeOrgUnit|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeTypeOrgUnit $MidocoFeeTypeOrgUnit = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoFeeTypeOrgUnit $MidocoFeeTypeOrgUnit = null;
     /**
      * The lastOrgUnit
      * @var string|null
@@ -29,10 +29,10 @@ class SaveFeeTypeForOrgunitRequest extends AbstractStructBase
      * Constructor method for SaveFeeTypeForOrgunitRequest
      * @uses SaveFeeTypeForOrgunitRequest::setMidocoFeeTypeOrgUnit()
      * @uses SaveFeeTypeForOrgunitRequest::setLastOrgUnit()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeTypeOrgUnit $midocoFeeTypeOrgUnit
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeTypeOrgUnit $midocoFeeTypeOrgUnit
      * @param string $lastOrgUnit
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeTypeOrgUnit $midocoFeeTypeOrgUnit = null, ?string $lastOrgUnit = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoFeeTypeOrgUnit $midocoFeeTypeOrgUnit = null, ?string $lastOrgUnit = null)
     {
         $this
             ->setMidocoFeeTypeOrgUnit($midocoFeeTypeOrgUnit)
@@ -40,18 +40,18 @@ class SaveFeeTypeForOrgunitRequest extends AbstractStructBase
     }
     /**
      * Get MidocoFeeTypeOrgUnit value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeTypeOrgUnit|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeTypeOrgUnit|null
      */
-    public function getMidocoFeeTypeOrgUnit(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeTypeOrgUnit
+    public function getMidocoFeeTypeOrgUnit(): ?\Pggns\MidocoApi\Order\StructType\MidocoFeeTypeOrgUnit
     {
         return $this->MidocoFeeTypeOrgUnit;
     }
     /**
      * Set MidocoFeeTypeOrgUnit value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeTypeOrgUnit $midocoFeeTypeOrgUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveFeeTypeForOrgunitRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeTypeOrgUnit $midocoFeeTypeOrgUnit
+     * @return \Pggns\MidocoApi\Order\StructType\SaveFeeTypeForOrgunitRequest
      */
-    public function setMidocoFeeTypeOrgUnit(?\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeTypeOrgUnit $midocoFeeTypeOrgUnit = null): self
+    public function setMidocoFeeTypeOrgUnit(?\Pggns\MidocoApi\Order\StructType\MidocoFeeTypeOrgUnit $midocoFeeTypeOrgUnit = null): self
     {
         $this->MidocoFeeTypeOrgUnit = $midocoFeeTypeOrgUnit;
         
@@ -68,7 +68,7 @@ class SaveFeeTypeForOrgunitRequest extends AbstractStructBase
     /**
      * Set lastOrgUnit value
      * @param string $lastOrgUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveFeeTypeForOrgunitRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveFeeTypeForOrgunitRequest
      */
     public function setLastOrgUnit(?string $lastOrgUnit = null): self
     {

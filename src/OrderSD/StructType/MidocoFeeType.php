@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoFeeType extends FeeDescriptorType
     /**
      * Set isBonusAsIntegerForSearch value
      * @param int $isBonusAsIntegerForSearch
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType
      */
     public function setIsBonusAsIntegerForSearch(?int $isBonusAsIntegerForSearch = null): self
     {
@@ -94,7 +94,7 @@ class MidocoFeeType extends FeeDescriptorType
     /**
      * Set timeBasedAsIntegerForSearch value
      * @param int $timeBasedAsIntegerForSearch
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType
      */
     public function setTimeBasedAsIntegerForSearch(?int $timeBasedAsIntegerForSearch = null): self
     {
@@ -117,7 +117,7 @@ class MidocoFeeType extends FeeDescriptorType
     /**
      * Set constraintOrgunitAsInteger value
      * @param int $constraintOrgunitAsInteger
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType
      */
     public function setConstraintOrgunitAsInteger(?int $constraintOrgunitAsInteger = null): self
     {
@@ -140,7 +140,7 @@ class MidocoFeeType extends FeeDescriptorType
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {
@@ -163,7 +163,7 @@ class MidocoFeeType extends FeeDescriptorType
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType
      */
     public function setOrgunit(?string $orgunit = null): self
     {

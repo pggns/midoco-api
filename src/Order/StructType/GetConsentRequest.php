@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetConsentRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoConsent
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoConsent|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoConsent|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoConsent $MidocoConsent = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoConsent $MidocoConsent = null;
     /**
      * Constructor method for GetConsentRequest
      * @uses GetConsentRequest::setMidocoConsent()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoConsent $midocoConsent
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoConsent $midocoConsent
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoConsent $midocoConsent = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoConsent $midocoConsent = null)
     {
         $this
             ->setMidocoConsent($midocoConsent);
     }
     /**
      * Get MidocoConsent value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoConsent|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoConsent|null
      */
-    public function getMidocoConsent(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoConsent
+    public function getMidocoConsent(): ?\Pggns\MidocoApi\Order\StructType\MidocoConsent
     {
         return $this->MidocoConsent;
     }
     /**
      * Set MidocoConsent value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoConsent $midocoConsent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConsentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoConsent $midocoConsent
+     * @return \Pggns\MidocoApi\Order\StructType\GetConsentRequest
      */
-    public function setMidocoConsent(?\Pggns\MidocoApi\Api\Order\StructType\MidocoConsent $midocoConsent = null): self
+    public function setMidocoConsent(?\Pggns\MidocoApi\Order\StructType\MidocoConsent $midocoConsent = null): self
     {
         $this->MidocoConsent = $midocoConsent;
         

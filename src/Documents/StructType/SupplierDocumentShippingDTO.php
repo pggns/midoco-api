@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class SupplierDocumentShippingDTO extends AbstractStructBase
     /**
      * Set daysBeforeTravel value
      * @param int $daysBeforeTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierDocumentShippingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierDocumentShippingDTO
      */
     public function setDaysBeforeTravel(?int $daysBeforeTravel = null): self
     {
@@ -94,7 +94,7 @@ class SupplierDocumentShippingDTO extends AbstractStructBase
     /**
      * Set shipsDocuments value
      * @param bool $shipsDocuments
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierDocumentShippingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierDocumentShippingDTO
      */
     public function setShipsDocuments(?bool $shipsDocuments = null): self
     {
@@ -117,7 +117,7 @@ class SupplierDocumentShippingDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierDocumentShippingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierDocumentShippingDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -140,7 +140,7 @@ class SupplierDocumentShippingDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierDocumentShippingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierDocumentShippingDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -163,7 +163,7 @@ class SupplierDocumentShippingDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierDocumentShippingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierDocumentShippingDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -125,7 +125,7 @@ class MidocoBirthdayListCriteria extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -141,7 +141,7 @@ class MidocoBirthdayListCriteria extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria
      */
     public function addToOrgUnits(string $item): self
     {
@@ -164,7 +164,7 @@ class MidocoBirthdayListCriteria extends AbstractStructBase
     /**
      * Set creationUserId value
      * @param int $creationUserId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria
      */
     public function setCreationUserId(?int $creationUserId = null): self
     {
@@ -187,7 +187,7 @@ class MidocoBirthdayListCriteria extends AbstractStructBase
     /**
      * Set dayStart value
      * @param int $dayStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria
      */
     public function setDayStart(?int $dayStart = null): self
     {
@@ -210,7 +210,7 @@ class MidocoBirthdayListCriteria extends AbstractStructBase
     /**
      * Set dayEnd value
      * @param int $dayEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria
      */
     public function setDayEnd(?int $dayEnd = null): self
     {
@@ -233,7 +233,7 @@ class MidocoBirthdayListCriteria extends AbstractStructBase
     /**
      * Set monthStart value
      * @param int $monthStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria
      */
     public function setMonthStart(?int $monthStart = null): self
     {
@@ -256,7 +256,7 @@ class MidocoBirthdayListCriteria extends AbstractStructBase
     /**
      * Set monthEnd value
      * @param int $monthEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria
      */
     public function setMonthEnd(?int $monthEnd = null): self
     {
@@ -279,7 +279,7 @@ class MidocoBirthdayListCriteria extends AbstractStructBase
     /**
      * Set yearStart value
      * @param int $yearStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria
      */
     public function setYearStart(?int $yearStart = null): self
     {
@@ -302,7 +302,7 @@ class MidocoBirthdayListCriteria extends AbstractStructBase
     /**
      * Set yearEnd value
      * @param int $yearEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria
      */
     public function setYearEnd(?int $yearEnd = null): self
     {

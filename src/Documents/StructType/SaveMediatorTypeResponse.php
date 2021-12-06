@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SaveMediatorTypeResponse extends AbstractStructBase
     /**
      * Set result value
      * @param string $result
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveMediatorTypeResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveMediatorTypeResponse
      */
     public function setResult(?string $result = null): self
     {

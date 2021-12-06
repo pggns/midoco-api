@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoSellItemInfo extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -70,7 +70,7 @@ class MidocoSellItemInfo extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo
      */
     public function setId(?int $id = null): self
     {

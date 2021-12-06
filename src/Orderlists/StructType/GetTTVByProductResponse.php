@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetTTVByProductResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTTVOutput
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTTVOutput[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoTTVOutput[]
      */
     protected ?array $MidocoTTVOutput = null;
     /**
@@ -37,7 +37,7 @@ class GetTTVByProductResponse extends AbstractStructBase
      * @uses GetTTVByProductResponse::setMidocoTTVOutput()
      * @uses GetTTVByProductResponse::setSumTTV()
      * @uses GetTTVByProductResponse::setSumPersoncount()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTTVOutput[] $midocoTTVOutput
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTTVOutput[] $midocoTTVOutput
      * @param float $sumTTV
      * @param int $sumPersoncount
      */
@@ -50,7 +50,7 @@ class GetTTVByProductResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTTVOutput value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTTVOutput[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTTVOutput[]
      */
     public function getMidocoTTVOutput(): ?array
     {
@@ -71,12 +71,12 @@ class GetTTVByProductResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTTVByProductResponseMidocoTTVOutputItem) {
             // validation for constraint: itemType
-            if (!$getTTVByProductResponseMidocoTTVOutputItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTTVOutput) {
+            if (!$getTTVByProductResponseMidocoTTVOutputItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoTTVOutput) {
                 $invalidValues[] = is_object($getTTVByProductResponseMidocoTTVOutputItem) ? get_class($getTTVByProductResponseMidocoTTVOutputItem) : sprintf('%s(%s)', gettype($getTTVByProductResponseMidocoTTVOutputItem), var_export($getTTVByProductResponseMidocoTTVOutputItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTTVOutput property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTTVOutput, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTTVOutput property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoTTVOutput, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class GetTTVByProductResponse extends AbstractStructBase
     /**
      * Set MidocoTTVOutput value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTTVOutput[] $midocoTTVOutput
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetTTVByProductResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTTVOutput[] $midocoTTVOutput
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetTTVByProductResponse
      */
     public function setMidocoTTVOutput(?array $midocoTTVOutput = null): self
     {
@@ -101,14 +101,14 @@ class GetTTVByProductResponse extends AbstractStructBase
     /**
      * Add item to MidocoTTVOutput value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTTVOutput $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetTTVByProductResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTTVOutput $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetTTVByProductResponse
      */
-    public function addToMidocoTTVOutput(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTTVOutput $item): self
+    public function addToMidocoTTVOutput(\Pggns\MidocoApi\Orderlists\StructType\MidocoTTVOutput $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTTVOutput) {
-            throw new InvalidArgumentException(sprintf('The MidocoTTVOutput property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTTVOutput, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoTTVOutput) {
+            throw new InvalidArgumentException(sprintf('The MidocoTTVOutput property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoTTVOutput, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTTVOutput[] = $item;
         
@@ -125,7 +125,7 @@ class GetTTVByProductResponse extends AbstractStructBase
     /**
      * Set sumTTV value
      * @param float $sumTTV
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetTTVByProductResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetTTVByProductResponse
      */
     public function setSumTTV(?float $sumTTV = null): self
     {
@@ -148,7 +148,7 @@ class GetTTVByProductResponse extends AbstractStructBase
     /**
      * Set sumPersoncount value
      * @param int $sumPersoncount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetTTVByProductResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetTTVByProductResponse
      */
     public function setSumPersoncount(?int $sumPersoncount = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class MedStlmntProdDetailDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDetailDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -158,7 +158,7 @@ class MedStlmntProdDetailDTO extends AbstractStructBase
     /**
      * Set baseRevenueAmount value
      * @param float $baseRevenueAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDetailDTO
      */
     public function setBaseRevenueAmount(?float $baseRevenueAmount = null): self
     {
@@ -181,7 +181,7 @@ class MedStlmntProdDetailDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDetailDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -204,7 +204,7 @@ class MedStlmntProdDetailDTO extends AbstractStructBase
     /**
      * Set bookingPrice value
      * @param float $bookingPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDetailDTO
      */
     public function setBookingPrice(?float $bookingPrice = null): self
     {
@@ -227,7 +227,7 @@ class MedStlmntProdDetailDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDetailDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -250,7 +250,7 @@ class MedStlmntProdDetailDTO extends AbstractStructBase
     /**
      * Set medStlmntProdId value
      * @param int $medStlmntProdId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDetailDTO
      */
     public function setMedStlmntProdId(?int $medStlmntProdId = null): self
     {
@@ -273,7 +273,7 @@ class MedStlmntProdDetailDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDetailDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -296,7 +296,7 @@ class MedStlmntProdDetailDTO extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDetailDTO
      */
     public function setProductType(?string $productType = null): self
     {
@@ -319,7 +319,7 @@ class MedStlmntProdDetailDTO extends AbstractStructBase
     /**
      * Set revenueAmount value
      * @param float $revenueAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDetailDTO
      */
     public function setRevenueAmount(?float $revenueAmount = null): self
     {
@@ -342,7 +342,7 @@ class MedStlmntProdDetailDTO extends AbstractStructBase
     /**
      * Set revenuePercent value
      * @param float $revenuePercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDetailDTO
      */
     public function setRevenuePercent(?float $revenuePercent = null): self
     {
@@ -365,7 +365,7 @@ class MedStlmntProdDetailDTO extends AbstractStructBase
     /**
      * Set revenueVatAmount value
      * @param float $revenueVatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDetailDTO
      */
     public function setRevenueVatAmount(?float $revenueVatAmount = null): self
     {
@@ -388,7 +388,7 @@ class MedStlmntProdDetailDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDetailDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -411,7 +411,7 @@ class MedStlmntProdDetailDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDetailDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {

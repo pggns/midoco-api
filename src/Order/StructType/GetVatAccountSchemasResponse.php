@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetVatAccountSchemasResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVatAccountSchema
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema[]
      */
     protected ?array $MidocoVatAccountSchema = null;
     /**
      * Constructor method for GetVatAccountSchemasResponse
      * @uses GetVatAccountSchemasResponse::setMidocoVatAccountSchema()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema[] $midocoVatAccountSchema
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema[] $midocoVatAccountSchema
      */
     public function __construct(?array $midocoVatAccountSchema = null)
     {
@@ -34,7 +34,7 @@ class GetVatAccountSchemasResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVatAccountSchema value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema[]
      */
     public function getMidocoVatAccountSchema(): ?array
     {
@@ -55,12 +55,12 @@ class GetVatAccountSchemasResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getVatAccountSchemasResponseMidocoVatAccountSchemaItem) {
             // validation for constraint: itemType
-            if (!$getVatAccountSchemasResponseMidocoVatAccountSchemaItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema) {
+            if (!$getVatAccountSchemasResponseMidocoVatAccountSchemaItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema) {
                 $invalidValues[] = is_object($getVatAccountSchemasResponseMidocoVatAccountSchemaItem) ? get_class($getVatAccountSchemasResponseMidocoVatAccountSchemaItem) : sprintf('%s(%s)', gettype($getVatAccountSchemasResponseMidocoVatAccountSchemaItem), var_export($getVatAccountSchemasResponseMidocoVatAccountSchemaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatAccountSchema property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatAccountSchema property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetVatAccountSchemasResponse extends AbstractStructBase
     /**
      * Set MidocoVatAccountSchema value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema[] $midocoVatAccountSchema
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetVatAccountSchemasResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema[] $midocoVatAccountSchema
+     * @return \Pggns\MidocoApi\Order\StructType\GetVatAccountSchemasResponse
      */
     public function setMidocoVatAccountSchema(?array $midocoVatAccountSchema = null): self
     {
@@ -85,14 +85,14 @@ class GetVatAccountSchemasResponse extends AbstractStructBase
     /**
      * Add item to MidocoVatAccountSchema value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetVatAccountSchemasResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetVatAccountSchemasResponse
      */
-    public function addToMidocoVatAccountSchema(\Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema $item): self
+    public function addToMidocoVatAccountSchema(\Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatAccountSchema property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatAccountSchema property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatAccountSchema[] = $item;
         

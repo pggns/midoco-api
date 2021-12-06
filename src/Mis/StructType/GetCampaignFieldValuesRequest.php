@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class GetCampaignFieldValuesRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCriteriaField
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType $MidocoCriteriaField = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType $MidocoCriteriaField = null;
     /**
      * The language
      * @var string|null
@@ -30,10 +30,10 @@ class GetCampaignFieldValuesRequest extends AbstractStructBase
      * Constructor method for GetCampaignFieldValuesRequest
      * @uses GetCampaignFieldValuesRequest::setMidocoCriteriaField()
      * @uses GetCampaignFieldValuesRequest::setLanguage()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType $midocoCriteriaField
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType $midocoCriteriaField
      * @param string $language
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType $midocoCriteriaField = null, ?string $language = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType $midocoCriteriaField = null, ?string $language = null)
     {
         $this
             ->setMidocoCriteriaField($midocoCriteriaField)
@@ -41,18 +41,18 @@ class GetCampaignFieldValuesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCriteriaField value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType|null
      */
-    public function getMidocoCriteriaField(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType
+    public function getMidocoCriteriaField(): ?\Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType
     {
         return $this->MidocoCriteriaField;
     }
     /**
      * Set MidocoCriteriaField value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType $midocoCriteriaField
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFieldValuesRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType $midocoCriteriaField
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignFieldValuesRequest
      */
-    public function setMidocoCriteriaField(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType $midocoCriteriaField = null): self
+    public function setMidocoCriteriaField(?\Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType $midocoCriteriaField = null): self
     {
         $this->MidocoCriteriaField = $midocoCriteriaField;
         
@@ -69,7 +69,7 @@ class GetCampaignFieldValuesRequest extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFieldValuesRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignFieldValuesRequest
      */
     public function setLanguage(?string $language = null): self
     {

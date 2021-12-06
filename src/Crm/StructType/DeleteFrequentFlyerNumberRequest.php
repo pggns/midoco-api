@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class DeleteFrequentFlyerNumberRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteFrequentFlyerNumberRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteFrequentFlyerNumberRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -86,7 +86,7 @@ class DeleteFrequentFlyerNumberRequest extends AbstractStructBase
     /**
      * Set airlineCode value
      * @param string $airlineCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteFrequentFlyerNumberRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteFrequentFlyerNumberRequest
      */
     public function setAirlineCode(?string $airlineCode = null): self
     {
@@ -109,7 +109,7 @@ class DeleteFrequentFlyerNumberRequest extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteFrequentFlyerNumberRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteFrequentFlyerNumberRequest
      */
     public function setNumber(?string $number = null): self
     {
@@ -132,7 +132,7 @@ class DeleteFrequentFlyerNumberRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteFrequentFlyerNumberRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteFrequentFlyerNumberRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

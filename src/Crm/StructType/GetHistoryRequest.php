@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetHistoryRequest extends AbstractStructBase
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The visibleAlsoForOrder
      * @var bool|null
@@ -29,10 +29,10 @@ class GetHistoryRequest extends AbstractStructBase
      * Constructor method for GetHistoryRequest
      * @uses GetHistoryRequest::setMidocoCustomerId()
      * @uses GetHistoryRequest::setVisibleAlsoForOrder()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId
      * @param bool $visibleAlsoForOrder
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?bool $visibleAlsoForOrder = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?bool $visibleAlsoForOrder = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -40,18 +40,18 @@ class GetHistoryRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetHistoryRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\Crm\StructType\GetHistoryRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -68,7 +68,7 @@ class GetHistoryRequest extends AbstractStructBase
     /**
      * Set visibleAlsoForOrder value
      * @param bool $visibleAlsoForOrder
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetHistoryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetHistoryRequest
      */
     public function setVisibleAlsoForOrder(?bool $visibleAlsoForOrder = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -50,7 +50,7 @@ class ListRuleCriteriaCrmAttributeRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaCrmAttributeRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaCrmAttributeRequest
      */
     public function setUnitName(string $unitName): self
     {
@@ -73,7 +73,7 @@ class ListRuleCriteriaCrmAttributeRequest extends AbstractStructBase
     /**
      * Set criteriaId value
      * @param int $criteriaId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaCrmAttributeRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaCrmAttributeRequest
      */
     public function setCriteriaId(?int $criteriaId = null): self
     {

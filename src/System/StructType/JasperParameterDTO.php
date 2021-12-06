@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\System\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\System\StructType\JasperParameterDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -110,7 +110,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set fieldName value
      * @param string $fieldName
-     * @return \Pggns\MidocoApi\Api\System\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\System\StructType\JasperParameterDTO
      */
     public function setFieldName(?string $fieldName = null): self
     {
@@ -133,7 +133,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set isStdParam value
      * @param bool $isStdParam
-     * @return \Pggns\MidocoApi\Api\System\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\System\StructType\JasperParameterDTO
      */
     public function setIsStdParam(?bool $isStdParam = null): self
     {
@@ -156,7 +156,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\System\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\System\StructType\JasperParameterDTO
      */
     public function setName(?string $name = null): self
     {
@@ -179,7 +179,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set paramId value
      * @param int $paramId
-     * @return \Pggns\MidocoApi\Api\System\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\System\StructType\JasperParameterDTO
      */
     public function setParamId(?int $paramId = null): self
     {
@@ -202,7 +202,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set tableName value
      * @param string $tableName
-     * @return \Pggns\MidocoApi\Api\System\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\System\StructType\JasperParameterDTO
      */
     public function setTableName(?string $tableName = null): self
     {
@@ -225,7 +225,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\System\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\System\StructType\JasperParameterDTO
      */
     public function setType(?string $type = null): self
     {

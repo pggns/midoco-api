@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class MidocoAccomodationCode extends AccomodationDTO
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAccomodationCode
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAccomodationCode
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class TaskViewContext extends AbstractStructBase
      * The TaskViewContextNew
      * Meta information extracted from the WSDL
      * - ref: TaskViewContextNew
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextNew|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\TaskViewContextNew|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextNew $TaskViewContextNew = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\TaskViewContextNew $TaskViewContextNew = null;
     /**
      * The TaskViewContextOld
      * Meta information extracted from the WSDL
      * - ref: TaskViewContextOld
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextOld|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\TaskViewContextOld|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextOld $TaskViewContextOld = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\TaskViewContextOld $TaskViewContextOld = null;
     /**
      * The isFullRefresh
      * Meta information extracted from the WSDL
@@ -39,11 +39,11 @@ class TaskViewContext extends AbstractStructBase
      * @uses TaskViewContext::setTaskViewContextNew()
      * @uses TaskViewContext::setTaskViewContextOld()
      * @uses TaskViewContext::setIsFullRefresh()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextNew $taskViewContextNew
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextOld $taskViewContextOld
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskViewContextNew $taskViewContextNew
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskViewContextOld $taskViewContextOld
      * @param bool $isFullRefresh
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextNew $taskViewContextNew = null, ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextOld $taskViewContextOld = null, ?bool $isFullRefresh = false)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\TaskViewContextNew $taskViewContextNew = null, ?\Pggns\MidocoApi\Workflow\StructType\TaskViewContextOld $taskViewContextOld = null, ?bool $isFullRefresh = false)
     {
         $this
             ->setTaskViewContextNew($taskViewContextNew)
@@ -52,18 +52,18 @@ class TaskViewContext extends AbstractStructBase
     }
     /**
      * Get TaskViewContextNew value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextNew|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewContextNew|null
      */
-    public function getTaskViewContextNew(): ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextNew
+    public function getTaskViewContextNew(): ?\Pggns\MidocoApi\Workflow\StructType\TaskViewContextNew
     {
         return $this->TaskViewContextNew;
     }
     /**
      * Set TaskViewContextNew value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextNew $taskViewContextNew
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContext
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskViewContextNew $taskViewContextNew
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewContext
      */
-    public function setTaskViewContextNew(?\Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextNew $taskViewContextNew = null): self
+    public function setTaskViewContextNew(?\Pggns\MidocoApi\Workflow\StructType\TaskViewContextNew $taskViewContextNew = null): self
     {
         $this->TaskViewContextNew = $taskViewContextNew;
         
@@ -71,18 +71,18 @@ class TaskViewContext extends AbstractStructBase
     }
     /**
      * Get TaskViewContextOld value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextOld|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewContextOld|null
      */
-    public function getTaskViewContextOld(): ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextOld
+    public function getTaskViewContextOld(): ?\Pggns\MidocoApi\Workflow\StructType\TaskViewContextOld
     {
         return $this->TaskViewContextOld;
     }
     /**
      * Set TaskViewContextOld value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextOld $taskViewContextOld
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContext
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskViewContextOld $taskViewContextOld
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewContext
      */
-    public function setTaskViewContextOld(?\Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextOld $taskViewContextOld = null): self
+    public function setTaskViewContextOld(?\Pggns\MidocoApi\Workflow\StructType\TaskViewContextOld $taskViewContextOld = null): self
     {
         $this->TaskViewContextOld = $taskViewContextOld;
         
@@ -99,7 +99,7 @@ class TaskViewContext extends AbstractStructBase
     /**
      * Set isFullRefresh value
      * @param bool $isFullRefresh
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContext
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewContext
      */
     public function setIsFullRefresh(?bool $isFullRefresh = false): self
     {

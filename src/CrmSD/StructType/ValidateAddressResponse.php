@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -22,16 +22,16 @@ class ValidateAddressResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmAddress
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $MidocoCrmAddress = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $MidocoCrmAddress = null;
     /**
      * The MidocoAddressValidate
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAddressValidate
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\AddressValidateDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\AddressValidateDTO[]
      */
     protected ?array $MidocoAddressValidate = null;
     /**
@@ -56,13 +56,13 @@ class ValidateAddressResponse extends AbstractStructBase
      * @uses ValidateAddressResponse::setErrorCode()
      * @uses ValidateAddressResponse::setErrorText()
      * @uses ValidateAddressResponse::setValidationId()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AddressValidateDTO[] $midocoAddressValidate
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AddressValidateDTO[] $midocoAddressValidate
      * @param string $errorCode
      * @param string $errorText
      * @param string $validationId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null, ?array $midocoAddressValidate = null, ?string $errorCode = null, ?string $errorText = null, ?string $validationId = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null, ?array $midocoAddressValidate = null, ?string $errorCode = null, ?string $errorText = null, ?string $validationId = null)
     {
         $this
             ->setMidocoCrmAddress($midocoCrmAddress)
@@ -73,18 +73,18 @@ class ValidateAddressResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmAddress value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress|null
      */
-    public function getMidocoCrmAddress(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress
+    public function getMidocoCrmAddress(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress
     {
         return $this->MidocoCrmAddress;
     }
     /**
      * Set MidocoCrmAddress value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ValidateAddressResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateAddressResponse
      */
-    public function setMidocoCrmAddress(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null): self
+    public function setMidocoCrmAddress(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null): self
     {
         $this->MidocoCrmAddress = $midocoCrmAddress;
         
@@ -92,7 +92,7 @@ class ValidateAddressResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAddressValidate value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AddressValidateDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AddressValidateDTO[]
      */
     public function getMidocoAddressValidate(): ?array
     {
@@ -113,12 +113,12 @@ class ValidateAddressResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $validateAddressResponseMidocoAddressValidateItem) {
             // validation for constraint: itemType
-            if (!$validateAddressResponseMidocoAddressValidateItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\AddressValidateDTO) {
+            if (!$validateAddressResponseMidocoAddressValidateItem instanceof \Pggns\MidocoApi\CrmSD\StructType\AddressValidateDTO) {
                 $invalidValues[] = is_object($validateAddressResponseMidocoAddressValidateItem) ? get_class($validateAddressResponseMidocoAddressValidateItem) : sprintf('%s(%s)', gettype($validateAddressResponseMidocoAddressValidateItem), var_export($validateAddressResponseMidocoAddressValidateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAddressValidate property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\AddressValidateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAddressValidate property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AddressValidateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -127,8 +127,8 @@ class ValidateAddressResponse extends AbstractStructBase
     /**
      * Set MidocoAddressValidate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AddressValidateDTO[] $midocoAddressValidate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ValidateAddressResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AddressValidateDTO[] $midocoAddressValidate
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateAddressResponse
      */
     public function setMidocoAddressValidate(?array $midocoAddressValidate = null): self
     {
@@ -143,14 +143,14 @@ class ValidateAddressResponse extends AbstractStructBase
     /**
      * Add item to MidocoAddressValidate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AddressValidateDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ValidateAddressResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AddressValidateDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateAddressResponse
      */
-    public function addToMidocoAddressValidate(\Pggns\MidocoApi\Api\CrmSD\StructType\AddressValidateDTO $item): self
+    public function addToMidocoAddressValidate(\Pggns\MidocoApi\CrmSD\StructType\AddressValidateDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\AddressValidateDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAddressValidate property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\AddressValidateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\AddressValidateDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAddressValidate property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AddressValidateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAddressValidate[] = $item;
         
@@ -167,7 +167,7 @@ class ValidateAddressResponse extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ValidateAddressResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateAddressResponse
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -190,7 +190,7 @@ class ValidateAddressResponse extends AbstractStructBase
     /**
      * Set errorText value
      * @param string $errorText
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ValidateAddressResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateAddressResponse
      */
     public function setErrorText(?string $errorText = null): self
     {
@@ -213,7 +213,7 @@ class ValidateAddressResponse extends AbstractStructBase
     /**
      * Set validationId value
      * @param string $validationId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ValidateAddressResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateAddressResponse
      */
     public function setValidationId(?string $validationId = null): self
     {

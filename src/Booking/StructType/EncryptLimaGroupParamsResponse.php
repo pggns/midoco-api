@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class EncryptLimaGroupParamsResponse extends AbstractStructBase
     /**
      * Set encrypted value
      * @param string $encrypted
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\EncryptLimaGroupParamsResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\EncryptLimaGroupParamsResponse
      */
     public function setEncrypted(?string $encrypted = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoOrdersDbiInfo4Printing extends OrdersDbiInfoDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrdersDbiInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrdersDbiInfo4Printing
      */
     public function setDescription(?string $description = null): self
     {

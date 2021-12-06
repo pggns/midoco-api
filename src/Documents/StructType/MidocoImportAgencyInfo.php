@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class MidocoImportAgencyInfo extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportAgencyInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportAgencyInfo
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -142,7 +142,7 @@ class MidocoImportAgencyInfo extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportAgencyInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportAgencyInfo
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -165,7 +165,7 @@ class MidocoImportAgencyInfo extends AbstractStructBase
     /**
      * Set inkassoMode value
      * @param string $inkassoMode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportAgencyInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportAgencyInfo
      */
     public function setInkassoMode(?string $inkassoMode = null): self
     {
@@ -188,7 +188,7 @@ class MidocoImportAgencyInfo extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportAgencyInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportAgencyInfo
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -211,7 +211,7 @@ class MidocoImportAgencyInfo extends AbstractStructBase
     /**
      * Set cooperationValidFrom value
      * @param string $cooperationValidFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportAgencyInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportAgencyInfo
      */
     public function setCooperationValidFrom(?string $cooperationValidFrom = null): self
     {
@@ -234,7 +234,7 @@ class MidocoImportAgencyInfo extends AbstractStructBase
     /**
      * Set cooperationValidTo value
      * @param string $cooperationValidTo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportAgencyInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportAgencyInfo
      */
     public function setCooperationValidTo(?string $cooperationValidTo = null): self
     {
@@ -257,7 +257,7 @@ class MidocoImportAgencyInfo extends AbstractStructBase
     /**
      * Set commissionTravelDateFrom value
      * @param string $commissionTravelDateFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportAgencyInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportAgencyInfo
      */
     public function setCommissionTravelDateFrom(?string $commissionTravelDateFrom = null): self
     {
@@ -280,7 +280,7 @@ class MidocoImportAgencyInfo extends AbstractStructBase
     /**
      * Set commissionTravelDateTo value
      * @param string $commissionTravelDateTo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportAgencyInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportAgencyInfo
      */
     public function setCommissionTravelDateTo(?string $commissionTravelDateTo = null): self
     {
@@ -303,7 +303,7 @@ class MidocoImportAgencyInfo extends AbstractStructBase
     /**
      * Set commissionBookedUntil value
      * @param string $commissionBookedUntil
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportAgencyInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportAgencyInfo
      */
     public function setCommissionBookedUntil(?string $commissionBookedUntil = null): self
     {
@@ -326,7 +326,7 @@ class MidocoImportAgencyInfo extends AbstractStructBase
     /**
      * Set agencyCommissionLevel value
      * @param string $agencyCommissionLevel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportAgencyInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportAgencyInfo
      */
     public function setAgencyCommissionLevel(?string $agencyCommissionLevel = null): self
     {
@@ -349,7 +349,7 @@ class MidocoImportAgencyInfo extends AbstractStructBase
     /**
      * Set customerCommissionId value
      * @param string $customerCommissionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportAgencyInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportAgencyInfo
      */
     public function setCustomerCommissionId(?string $customerCommissionId = null): self
     {

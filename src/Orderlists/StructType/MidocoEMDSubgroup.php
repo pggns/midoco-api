@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoEMDSubgroup extends AbstractStructBase
     /**
      * Set subGroupCode value
      * @param string $subGroupCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoEMDSubgroup
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoEMDSubgroup
      */
     public function setSubGroupCode(?string $subGroupCode = null): self
     {
@@ -70,7 +70,7 @@ class MidocoEMDSubgroup extends AbstractStructBase
     /**
      * Set emdType value
      * @param string $emdType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoEMDSubgroup
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoEMDSubgroup
      */
     public function setEmdType(?string $emdType = null): self
     {

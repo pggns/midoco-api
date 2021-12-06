@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSalutationDescriptionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSalutationDescription
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\SalutationDescriptionDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\SalutationDescriptionDTO[]
      */
     protected ?array $MidocoSalutationDescription = null;
     /**
      * Constructor method for GetSalutationDescriptionsResponse
      * @uses GetSalutationDescriptionsResponse::setMidocoSalutationDescription()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SalutationDescriptionDTO[] $midocoSalutationDescription
+     * @param \Pggns\MidocoApi\Crm\StructType\SalutationDescriptionDTO[] $midocoSalutationDescription
      */
     public function __construct(?array $midocoSalutationDescription = null)
     {
@@ -34,7 +34,7 @@ class GetSalutationDescriptionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSalutationDescription value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SalutationDescriptionDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\SalutationDescriptionDTO[]
      */
     public function getMidocoSalutationDescription(): ?array
     {
@@ -55,12 +55,12 @@ class GetSalutationDescriptionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSalutationDescriptionsResponseMidocoSalutationDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getSalutationDescriptionsResponseMidocoSalutationDescriptionItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\SalutationDescriptionDTO) {
+            if (!$getSalutationDescriptionsResponseMidocoSalutationDescriptionItem instanceof \Pggns\MidocoApi\Crm\StructType\SalutationDescriptionDTO) {
                 $invalidValues[] = is_object($getSalutationDescriptionsResponseMidocoSalutationDescriptionItem) ? get_class($getSalutationDescriptionsResponseMidocoSalutationDescriptionItem) : sprintf('%s(%s)', gettype($getSalutationDescriptionsResponseMidocoSalutationDescriptionItem), var_export($getSalutationDescriptionsResponseMidocoSalutationDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSalutationDescription property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\SalutationDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSalutationDescription property can only contain items of type \Pggns\MidocoApi\Crm\StructType\SalutationDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSalutationDescriptionsResponse extends AbstractStructBase
     /**
      * Set MidocoSalutationDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SalutationDescriptionDTO[] $midocoSalutationDescription
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetSalutationDescriptionsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\SalutationDescriptionDTO[] $midocoSalutationDescription
+     * @return \Pggns\MidocoApi\Crm\StructType\GetSalutationDescriptionsResponse
      */
     public function setMidocoSalutationDescription(?array $midocoSalutationDescription = null): self
     {
@@ -85,14 +85,14 @@ class GetSalutationDescriptionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoSalutationDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SalutationDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetSalutationDescriptionsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\SalutationDescriptionDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetSalutationDescriptionsResponse
      */
-    public function addToMidocoSalutationDescription(\Pggns\MidocoApi\Api\Crm\StructType\SalutationDescriptionDTO $item): self
+    public function addToMidocoSalutationDescription(\Pggns\MidocoApi\Crm\StructType\SalutationDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\SalutationDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSalutationDescription property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\SalutationDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\SalutationDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSalutationDescription property can only contain items of type \Pggns\MidocoApi\Crm\StructType\SalutationDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSalutationDescription[] = $item;
         

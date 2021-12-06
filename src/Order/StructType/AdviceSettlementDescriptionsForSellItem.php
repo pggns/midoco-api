@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class AdviceSettlementDescriptionsForSellItem extends AbstractStructBase
     /**
      * Set advicesettlementdescription value
      * @param string $advicesettlementdescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdviceSettlementDescriptionsForSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\AdviceSettlementDescriptionsForSellItem
      */
     public function setAdvicesettlementdescription(?string $advicesettlementdescription = null): self
     {
@@ -70,7 +70,7 @@ class AdviceSettlementDescriptionsForSellItem extends AbstractStructBase
     /**
      * Set itemid value
      * @param int $itemid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdviceSettlementDescriptionsForSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\AdviceSettlementDescriptionsForSellItem
      */
     public function setItemid(?int $itemid = null): self
     {

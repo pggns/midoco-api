@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class SearchBankAccountResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBankAccount
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount[]
      */
     protected ?array $MidocoBankAccount = null;
     /**
      * Constructor method for SearchBankAccountResponse
      * @uses SearchBankAccountResponse::setMidocoBankAccount()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount[] $midocoBankAccount
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount[] $midocoBankAccount
      */
     public function __construct(?array $midocoBankAccount = null)
     {
@@ -36,7 +36,7 @@ class SearchBankAccountResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBankAccount value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount[]
      */
     public function getMidocoBankAccount(): ?array
     {
@@ -57,12 +57,12 @@ class SearchBankAccountResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchBankAccountResponseMidocoBankAccountItem) {
             // validation for constraint: itemType
-            if (!$searchBankAccountResponseMidocoBankAccountItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount) {
+            if (!$searchBankAccountResponseMidocoBankAccountItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount) {
                 $invalidValues[] = is_object($searchBankAccountResponseMidocoBankAccountItem) ? get_class($searchBankAccountResponseMidocoBankAccountItem) : sprintf('%s(%s)', gettype($searchBankAccountResponseMidocoBankAccountItem), var_export($searchBankAccountResponseMidocoBankAccountItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBankAccount property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBankAccount property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class SearchBankAccountResponse extends AbstractStructBase
     /**
      * Set MidocoBankAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount[] $midocoBankAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SearchBankAccountResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount[] $midocoBankAccount
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SearchBankAccountResponse
      */
     public function setMidocoBankAccount(?array $midocoBankAccount = null): self
     {
@@ -87,14 +87,14 @@ class SearchBankAccountResponse extends AbstractStructBase
     /**
      * Add item to MidocoBankAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SearchBankAccountResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SearchBankAccountResponse
      */
-    public function addToMidocoBankAccount(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount $item): self
+    public function addToMidocoBankAccount(\Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount) {
-            throw new InvalidArgumentException(sprintf('The MidocoBankAccount property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankAccount, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount) {
+            throw new InvalidArgumentException(sprintf('The MidocoBankAccount property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBankAccount, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBankAccount[] = $item;
         

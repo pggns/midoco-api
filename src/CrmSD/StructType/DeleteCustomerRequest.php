@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class DeleteCustomerRequest extends AbstractStructBase
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The reasonId
      * @var int|null
@@ -29,10 +29,10 @@ class DeleteCustomerRequest extends AbstractStructBase
      * Constructor method for DeleteCustomerRequest
      * @uses DeleteCustomerRequest::setMidocoCustomerId()
      * @uses DeleteCustomerRequest::setReasonId()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
      * @param int $reasonId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?int $reasonId = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?int $reasonId = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -40,18 +40,18 @@ class DeleteCustomerRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCustomerRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCustomerRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -68,7 +68,7 @@ class DeleteCustomerRequest extends AbstractStructBase
     /**
      * Set reasonId value
      * @param int $reasonId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCustomerRequest
      */
     public function setReasonId(?int $reasonId = null): self
     {

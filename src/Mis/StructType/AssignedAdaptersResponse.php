@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class AssignedAdaptersResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAdapter
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\AdapterDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\AdapterDTO[]
      */
     protected ?array $MidocoAdapter = null;
     /**
      * Constructor method for AssignedAdaptersResponse
      * @uses AssignedAdaptersResponse::setMidocoAdapter()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\AdapterDTO[] $midocoAdapter
+     * @param \Pggns\MidocoApi\Mis\StructType\AdapterDTO[] $midocoAdapter
      */
     public function __construct(?array $midocoAdapter = null)
     {
@@ -34,7 +34,7 @@ class AssignedAdaptersResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAdapter value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AdapterDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\AdapterDTO[]
      */
     public function getMidocoAdapter(): ?array
     {
@@ -55,12 +55,12 @@ class AssignedAdaptersResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $assignedAdaptersResponseMidocoAdapterItem) {
             // validation for constraint: itemType
-            if (!$assignedAdaptersResponseMidocoAdapterItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\AdapterDTO) {
+            if (!$assignedAdaptersResponseMidocoAdapterItem instanceof \Pggns\MidocoApi\Mis\StructType\AdapterDTO) {
                 $invalidValues[] = is_object($assignedAdaptersResponseMidocoAdapterItem) ? get_class($assignedAdaptersResponseMidocoAdapterItem) : sprintf('%s(%s)', gettype($assignedAdaptersResponseMidocoAdapterItem), var_export($assignedAdaptersResponseMidocoAdapterItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAdapter property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\AdapterDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAdapter property can only contain items of type \Pggns\MidocoApi\Mis\StructType\AdapterDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class AssignedAdaptersResponse extends AbstractStructBase
     /**
      * Set MidocoAdapter value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\AdapterDTO[] $midocoAdapter
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AssignedAdaptersResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\AdapterDTO[] $midocoAdapter
+     * @return \Pggns\MidocoApi\Mis\StructType\AssignedAdaptersResponse
      */
     public function setMidocoAdapter(?array $midocoAdapter = null): self
     {
@@ -85,14 +85,14 @@ class AssignedAdaptersResponse extends AbstractStructBase
     /**
      * Add item to MidocoAdapter value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\AdapterDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AssignedAdaptersResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\AdapterDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\AssignedAdaptersResponse
      */
-    public function addToMidocoAdapter(\Pggns\MidocoApi\Api\Mis\StructType\AdapterDTO $item): self
+    public function addToMidocoAdapter(\Pggns\MidocoApi\Mis\StructType\AdapterDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\AdapterDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAdapter property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\AdapterDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\AdapterDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAdapter property can only contain items of type \Pggns\MidocoApi\Mis\StructType\AdapterDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAdapter[] = $item;
         

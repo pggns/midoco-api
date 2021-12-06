@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveTourOperatorAddressResponse extends AbstractStructBase
      * The MidocoTourOperatorAddress
      * Meta information extracted from the WSDL
      * - ref: MidocoTourOperatorAddress
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoTourOperatorAddress|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoTourOperatorAddress|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoTourOperatorAddress $MidocoTourOperatorAddress = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoTourOperatorAddress $MidocoTourOperatorAddress = null;
     /**
      * Constructor method for SaveTourOperatorAddressResponse
      * @uses SaveTourOperatorAddressResponse::setMidocoTourOperatorAddress()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress = null)
     {
         $this
             ->setMidocoTourOperatorAddress($midocoTourOperatorAddress);
     }
     /**
      * Get MidocoTourOperatorAddress value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTourOperatorAddress|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTourOperatorAddress|null
      */
-    public function getMidocoTourOperatorAddress(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoTourOperatorAddress
+    public function getMidocoTourOperatorAddress(): ?\Pggns\MidocoApi\Documents\StructType\MidocoTourOperatorAddress
     {
         return $this->MidocoTourOperatorAddress;
     }
     /**
      * Set MidocoTourOperatorAddress value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveTourOperatorAddressResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveTourOperatorAddressResponse
      */
-    public function setMidocoTourOperatorAddress(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress = null): self
+    public function setMidocoTourOperatorAddress(?\Pggns\MidocoApi\Documents\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress = null): self
     {
         $this->MidocoTourOperatorAddress = $midocoTourOperatorAddress;
         

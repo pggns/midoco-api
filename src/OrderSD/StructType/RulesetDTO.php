@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class RulesetDTO extends AbstractStructBase
     /**
      * Set content value
      * @param string $content
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\RulesetDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\RulesetDTO
      */
     public function setContent(?string $content = null): self
     {
@@ -118,7 +118,7 @@ class RulesetDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\RulesetDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\RulesetDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -141,7 +141,7 @@ class RulesetDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\RulesetDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\RulesetDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -164,7 +164,7 @@ class RulesetDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\RulesetDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\RulesetDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -187,7 +187,7 @@ class RulesetDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\RulesetDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\RulesetDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -210,7 +210,7 @@ class RulesetDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\RulesetDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\RulesetDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -233,7 +233,7 @@ class RulesetDTO extends AbstractStructBase
     /**
      * Set ruleId value
      * @param int $ruleId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\RulesetDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\RulesetDTO
      */
     public function setRuleId(?int $ruleId = null): self
     {
@@ -256,7 +256,7 @@ class RulesetDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\RulesetDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\RulesetDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

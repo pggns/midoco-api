@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -26,7 +26,7 @@ class VoidReceiptRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: ReceiptPositioninfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo[]
      */
     protected ?array $ReceiptPositioninfo = null;
     /**
@@ -34,9 +34,9 @@ class VoidReceiptRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: ReceiptOnlinePaymentInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\ReceiptOnlinePaymentInfo|null
+     * @var \Pggns\MidocoApi\Order\StructType\ReceiptOnlinePaymentInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\ReceiptOnlinePaymentInfo $ReceiptOnlinePaymentInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\ReceiptOnlinePaymentInfo $ReceiptOnlinePaymentInfo = null;
     /**
      * The doPrint
      * Meta information extracted from the WSDL
@@ -52,11 +52,11 @@ class VoidReceiptRequest extends AbstractStructBase
      * @uses VoidReceiptRequest::setReceiptOnlinePaymentInfo()
      * @uses VoidReceiptRequest::setDoPrint()
      * @param int $receiptId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo[] $receiptPositioninfo
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo
+     * @param \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo[] $receiptPositioninfo
+     * @param \Pggns\MidocoApi\Order\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo
      * @param bool $doPrint
      */
-    public function __construct(int $receiptId, ?array $receiptPositioninfo = null, ?\Pggns\MidocoApi\Api\Order\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo = null, ?bool $doPrint = false)
+    public function __construct(int $receiptId, ?array $receiptPositioninfo = null, ?\Pggns\MidocoApi\Order\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo = null, ?bool $doPrint = false)
     {
         $this
             ->setReceiptId($receiptId)
@@ -75,7 +75,7 @@ class VoidReceiptRequest extends AbstractStructBase
     /**
      * Set receiptId value
      * @param int $receiptId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidReceiptRequest
      */
     public function setReceiptId(int $receiptId): self
     {
@@ -89,7 +89,7 @@ class VoidReceiptRequest extends AbstractStructBase
     }
     /**
      * Get ReceiptPositioninfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo[]
      */
     public function getReceiptPositioninfo(): ?array
     {
@@ -110,12 +110,12 @@ class VoidReceiptRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $voidReceiptRequestReceiptPositioninfoItem) {
             // validation for constraint: itemType
-            if (!$voidReceiptRequestReceiptPositioninfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo) {
+            if (!$voidReceiptRequestReceiptPositioninfoItem instanceof \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo) {
                 $invalidValues[] = is_object($voidReceiptRequestReceiptPositioninfoItem) ? get_class($voidReceiptRequestReceiptPositioninfoItem) : sprintf('%s(%s)', gettype($voidReceiptRequestReceiptPositioninfoItem), var_export($voidReceiptRequestReceiptPositioninfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ReceiptPositioninfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ReceiptPositioninfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -124,8 +124,8 @@ class VoidReceiptRequest extends AbstractStructBase
     /**
      * Set ReceiptPositioninfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo[] $receiptPositioninfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidReceiptRequest
+     * @param \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo[] $receiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\VoidReceiptRequest
      */
     public function setReceiptPositioninfo(?array $receiptPositioninfo = null): self
     {
@@ -140,14 +140,14 @@ class VoidReceiptRequest extends AbstractStructBase
     /**
      * Add item to ReceiptPositioninfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidReceiptRequest
+     * @param \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\VoidReceiptRequest
      */
-    public function addToReceiptPositioninfo(\Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo $item): self
+    public function addToReceiptPositioninfo(\Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo) {
-            throw new InvalidArgumentException(sprintf('The ReceiptPositioninfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo) {
+            throw new InvalidArgumentException(sprintf('The ReceiptPositioninfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ReceiptPositioninfo[] = $item;
         
@@ -155,18 +155,18 @@ class VoidReceiptRequest extends AbstractStructBase
     }
     /**
      * Get ReceiptOnlinePaymentInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptOnlinePaymentInfo|null
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptOnlinePaymentInfo|null
      */
-    public function getReceiptOnlinePaymentInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\ReceiptOnlinePaymentInfo
+    public function getReceiptOnlinePaymentInfo(): ?\Pggns\MidocoApi\Order\StructType\ReceiptOnlinePaymentInfo
     {
         return $this->ReceiptOnlinePaymentInfo;
     }
     /**
      * Set ReceiptOnlinePaymentInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidReceiptRequest
+     * @param \Pggns\MidocoApi\Order\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo
+     * @return \Pggns\MidocoApi\Order\StructType\VoidReceiptRequest
      */
-    public function setReceiptOnlinePaymentInfo(?\Pggns\MidocoApi\Api\Order\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo = null): self
+    public function setReceiptOnlinePaymentInfo(?\Pggns\MidocoApi\Order\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo = null): self
     {
         $this->ReceiptOnlinePaymentInfo = $receiptOnlinePaymentInfo;
         
@@ -183,7 +183,7 @@ class VoidReceiptRequest extends AbstractStructBase
     /**
      * Set doPrint value
      * @param bool $doPrint
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidReceiptRequest
      */
     public function setDoPrint(?bool $doPrint = false): self
     {

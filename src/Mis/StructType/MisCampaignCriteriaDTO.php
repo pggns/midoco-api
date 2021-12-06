@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class MisCampaignCriteriaDTO extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -118,7 +118,7 @@ class MisCampaignCriteriaDTO extends AbstractStructBase
     /**
      * Set criteriaId value
      * @param int $criteriaId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO
      */
     public function setCriteriaId(?int $criteriaId = null): self
     {
@@ -141,7 +141,7 @@ class MisCampaignCriteriaDTO extends AbstractStructBase
     /**
      * Set criteriaLink value
      * @param string $criteriaLink
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO
      */
     public function setCriteriaLink(?string $criteriaLink = null): self
     {
@@ -164,7 +164,7 @@ class MisCampaignCriteriaDTO extends AbstractStructBase
     /**
      * Set fieldname value
      * @param string $fieldname
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO
      */
     public function setFieldname(?string $fieldname = null): self
     {
@@ -187,7 +187,7 @@ class MisCampaignCriteriaDTO extends AbstractStructBase
     /**
      * Set filterId value
      * @param int $filterId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO
      */
     public function setFilterId(?int $filterId = null): self
     {
@@ -210,7 +210,7 @@ class MisCampaignCriteriaDTO extends AbstractStructBase
     /**
      * Set operatorname value
      * @param string $operatorname
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO
      */
     public function setOperatorname(?string $operatorname = null): self
     {
@@ -233,7 +233,7 @@ class MisCampaignCriteriaDTO extends AbstractStructBase
     /**
      * Set value1 value
      * @param string $value1
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO
      */
     public function setValue1(?string $value1 = null): self
     {
@@ -256,7 +256,7 @@ class MisCampaignCriteriaDTO extends AbstractStructBase
     /**
      * Set value2 value
      * @param string $value2
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO
      */
     public function setValue2(?string $value2 = null): self
     {

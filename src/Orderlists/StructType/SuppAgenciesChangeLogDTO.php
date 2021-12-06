@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class SuppAgenciesChangeLogDTO extends AbstractStructBase
     /**
      * Set agencyNo value
      * @param string $agencyNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppAgenciesChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppAgenciesChangeLogDTO
      */
     public function setAgencyNo(?string $agencyNo = null): self
     {
@@ -94,7 +94,7 @@ class SuppAgenciesChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppAgenciesChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppAgenciesChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -117,7 +117,7 @@ class SuppAgenciesChangeLogDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppAgenciesChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppAgenciesChangeLogDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -140,7 +140,7 @@ class SuppAgenciesChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppAgenciesChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppAgenciesChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -163,7 +163,7 @@ class SuppAgenciesChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppAgenciesChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppAgenciesChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

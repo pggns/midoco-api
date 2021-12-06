@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class CashTurnoverExportDTO extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashTurnoverExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashTurnoverExportDTO
      */
     public function setCashBookId(?int $cashBookId = null): self
     {
@@ -94,7 +94,7 @@ class CashTurnoverExportDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashTurnoverExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashTurnoverExportDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -117,7 +117,7 @@ class CashTurnoverExportDTO extends AbstractStructBase
     /**
      * Set exportData value
      * @param string $exportData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashTurnoverExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashTurnoverExportDTO
      */
     public function setExportData(?string $exportData = null): self
     {
@@ -140,7 +140,7 @@ class CashTurnoverExportDTO extends AbstractStructBase
     /**
      * Set exportDate value
      * @param string $exportDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashTurnoverExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashTurnoverExportDTO
      */
     public function setExportDate(?string $exportDate = null): self
     {
@@ -163,7 +163,7 @@ class CashTurnoverExportDTO extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashTurnoverExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashTurnoverExportDTO
      */
     public function setExportId(?int $exportId = null): self
     {

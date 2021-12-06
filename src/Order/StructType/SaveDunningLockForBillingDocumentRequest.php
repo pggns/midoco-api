@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class SaveDunningLockForBillingDocumentRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveDunningLockForBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveDunningLockForBillingDocumentRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -70,7 +70,7 @@ class SaveDunningLockForBillingDocumentRequest extends AbstractStructBase
     /**
      * Set dunningLock value
      * @param bool $dunningLock
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveDunningLockForBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveDunningLockForBillingDocumentRequest
      */
     public function setDunningLock(?bool $dunningLock = null): self
     {

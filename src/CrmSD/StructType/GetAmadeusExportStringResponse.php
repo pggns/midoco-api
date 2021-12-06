@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetAmadeusExportStringResponse extends AbstractStructBase
     /**
      * Set responseString value
      * @param string $responseString
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAmadeusExportStringResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAmadeusExportStringResponse
      */
     public function setResponseString(?string $responseString = null): self
     {

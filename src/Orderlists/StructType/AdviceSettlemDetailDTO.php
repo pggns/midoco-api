@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -391,7 +391,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -414,7 +414,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set calculatedRevenue value
      * @param float $calculatedRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setCalculatedRevenue(?float $calculatedRevenue = null): self
     {
@@ -437,7 +437,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set commissionMode value
      * @param int $commissionMode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setCommissionMode(?int $commissionMode = null): self
     {
@@ -460,7 +460,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -483,7 +483,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -506,7 +506,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -529,7 +529,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set detailId value
      * @param int $detailId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setDetailId(?int $detailId = null): self
     {
@@ -552,7 +552,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set entryRestAsProv value
      * @param bool $entryRestAsProv
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setEntryRestAsProv(?bool $entryRestAsProv = null): self
     {
@@ -575,7 +575,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set exchangeRate value
      * @param float $exchangeRate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setExchangeRate(?float $exchangeRate = null): self
     {
@@ -598,7 +598,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set executed value
      * @param bool $executed
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setExecuted(?bool $executed = null): self
     {
@@ -621,7 +621,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set extId value
      * @param string $extId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setExtId(?string $extId = null): self
     {
@@ -644,7 +644,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set feeAmount value
      * @param float $feeAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setFeeAmount(?float $feeAmount = null): self
     {
@@ -667,7 +667,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set grantedRevenue value
      * @param float $grantedRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setGrantedRevenue(?float $grantedRevenue = null): self
     {
@@ -690,7 +690,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set inPackage value
      * @param bool $inPackage
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setInPackage(?bool $inPackage = null): self
     {
@@ -713,7 +713,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set inkassoPrice value
      * @param float $inkassoPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setInkassoPrice(?float $inkassoPrice = null): self
     {
@@ -736,7 +736,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set invoiceDate value
      * @param string $invoiceDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setInvoiceDate(?string $invoiceDate = null): self
     {
@@ -759,7 +759,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set isCollective value
      * @param bool $isCollective
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setIsCollective(?bool $isCollective = null): self
     {
@@ -782,7 +782,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set isDeposit value
      * @param bool $isDeposit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setIsDeposit(?bool $isDeposit = null): self
     {
@@ -805,7 +805,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set isInsurance value
      * @param bool $isInsurance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setIsInsurance(?bool $isInsurance = null): self
     {
@@ -828,7 +828,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -851,7 +851,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -874,7 +874,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -897,7 +897,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set needsVatDivision value
      * @param bool $needsVatDivision
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setNeedsVatDivision(?bool $needsVatDivision = null): self
     {
@@ -920,7 +920,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set nettoAmount value
      * @param float $nettoAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setNettoAmount(?float $nettoAmount = null): self
     {
@@ -943,7 +943,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set numberOfPersons value
      * @param int $numberOfPersons
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setNumberOfPersons(?int $numberOfPersons = null): self
     {
@@ -966,7 +966,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -989,7 +989,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -1012,7 +1012,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set revenueId value
      * @param int $revenueId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setRevenueId(?int $revenueId = null): self
     {
@@ -1035,7 +1035,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -1058,7 +1058,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setSettlementType(?string $settlementType = null): self
     {
@@ -1081,7 +1081,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set settlementTypeDebit value
      * @param string $settlementTypeDebit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setSettlementTypeDebit(?string $settlementTypeDebit = null): self
     {
@@ -1104,7 +1104,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -1127,7 +1127,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set supplierDiAmount value
      * @param float $supplierDiAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setSupplierDiAmount(?float $supplierDiAmount = null): self
     {
@@ -1150,7 +1150,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -1173,7 +1173,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set supplierInvoice value
      * @param float $supplierInvoice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setSupplierInvoice(?float $supplierInvoice = null): self
     {
@@ -1196,7 +1196,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -1219,7 +1219,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set travelPrice value
      * @param float $travelPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setTravelPrice(?float $travelPrice = null): self
     {
@@ -1242,7 +1242,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set traveldate value
      * @param string $traveldate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setTraveldate(?string $traveldate = null): self
     {
@@ -1265,7 +1265,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -1288,7 +1288,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -1311,7 +1311,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -1334,7 +1334,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set vatFreeAmount value
      * @param float $vatFreeAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setVatFreeAmount(?float $vatFreeAmount = null): self
     {
@@ -1357,7 +1357,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set vatInclAmount value
      * @param float $vatInclAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setVatInclAmount(?float $vatInclAmount = null): self
     {
@@ -1380,7 +1380,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set vatInsurance value
      * @param float $vatInsurance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setVatInsurance(?float $vatInsurance = null): self
     {
@@ -1403,7 +1403,7 @@ class AdviceSettlemDetailDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlemDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlemDetailDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetTaskDetailsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: TaskDetails
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\TaskDetails[]
      */
     protected ?array $TaskDetails = null;
     /**
      * Constructor method for GetTaskDetailsResponse
      * @uses GetTaskDetailsResponse::setTaskDetails()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails[] $taskDetails
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskDetails[] $taskDetails
      */
     public function __construct(?array $taskDetails = null)
     {
@@ -34,7 +34,7 @@ class GetTaskDetailsResponse extends AbstractStructBase
     }
     /**
      * Get TaskDetails value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDetails[]
      */
     public function getTaskDetails(): ?array
     {
@@ -55,12 +55,12 @@ class GetTaskDetailsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTaskDetailsResponseTaskDetailsItem) {
             // validation for constraint: itemType
-            if (!$getTaskDetailsResponseTaskDetailsItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails) {
+            if (!$getTaskDetailsResponseTaskDetailsItem instanceof \Pggns\MidocoApi\Workflow\StructType\TaskDetails) {
                 $invalidValues[] = is_object($getTaskDetailsResponseTaskDetailsItem) ? get_class($getTaskDetailsResponseTaskDetailsItem) : sprintf('%s(%s)', gettype($getTaskDetailsResponseTaskDetailsItem), var_export($getTaskDetailsResponseTaskDetailsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The TaskDetails property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The TaskDetails property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\TaskDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetTaskDetailsResponse extends AbstractStructBase
     /**
      * Set TaskDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails[] $taskDetails
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskDetails[] $taskDetails
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsResponse
      */
     public function setTaskDetails(?array $taskDetails = null): self
     {
@@ -85,14 +85,14 @@ class GetTaskDetailsResponse extends AbstractStructBase
     /**
      * Add item to TaskDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskDetails $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsResponse
      */
-    public function addToTaskDetails(\Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails $item): self
+    public function addToTaskDetails(\Pggns\MidocoApi\Workflow\StructType\TaskDetails $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails) {
-            throw new InvalidArgumentException(sprintf('The TaskDetails property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\TaskDetails) {
+            throw new InvalidArgumentException(sprintf('The TaskDetails property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\TaskDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->TaskDetails[] = $item;
         

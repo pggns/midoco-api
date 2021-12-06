@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoOrderAttribute extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrderAttribute
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrderAttribute
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -78,7 +78,7 @@ class MidocoOrderAttribute extends AbstractStructBase
     /**
      * Set attributeValue value
      * @param string $attributeValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrderAttribute
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrderAttribute
      */
     public function setAttributeValue(?string $attributeValue = null): self
     {
@@ -101,7 +101,7 @@ class MidocoOrderAttribute extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrderAttribute
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrderAttribute
      */
     public function setOrderId(?int $orderId = null): self
     {

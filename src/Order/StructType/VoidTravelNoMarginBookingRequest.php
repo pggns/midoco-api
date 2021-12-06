@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class VoidTravelNoMarginBookingRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoTravelNoMargin
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMargin|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMargin|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMargin $MidocoTravelNoMargin = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoTravelNoMargin $MidocoTravelNoMargin = null;
     /**
      * The activateTravelNo
      * @var bool|null
@@ -30,10 +30,10 @@ class VoidTravelNoMarginBookingRequest extends AbstractStructBase
      * Constructor method for VoidTravelNoMarginBookingRequest
      * @uses VoidTravelNoMarginBookingRequest::setMidocoTravelNoMargin()
      * @uses VoidTravelNoMarginBookingRequest::setActivateTravelNo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMargin $midocoTravelNoMargin
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMargin $midocoTravelNoMargin
      * @param bool $activateTravelNo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMargin $midocoTravelNoMargin = null, ?bool $activateTravelNo = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoTravelNoMargin $midocoTravelNoMargin = null, ?bool $activateTravelNo = null)
     {
         $this
             ->setMidocoTravelNoMargin($midocoTravelNoMargin)
@@ -41,18 +41,18 @@ class VoidTravelNoMarginBookingRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTravelNoMargin value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMargin|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMargin|null
      */
-    public function getMidocoTravelNoMargin(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMargin
+    public function getMidocoTravelNoMargin(): ?\Pggns\MidocoApi\Order\StructType\MidocoTravelNoMargin
     {
         return $this->MidocoTravelNoMargin;
     }
     /**
      * Set MidocoTravelNoMargin value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMargin $midocoTravelNoMargin
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidTravelNoMarginBookingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMargin $midocoTravelNoMargin
+     * @return \Pggns\MidocoApi\Order\StructType\VoidTravelNoMarginBookingRequest
      */
-    public function setMidocoTravelNoMargin(?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMargin $midocoTravelNoMargin = null): self
+    public function setMidocoTravelNoMargin(?\Pggns\MidocoApi\Order\StructType\MidocoTravelNoMargin $midocoTravelNoMargin = null): self
     {
         $this->MidocoTravelNoMargin = $midocoTravelNoMargin;
         
@@ -69,7 +69,7 @@ class VoidTravelNoMarginBookingRequest extends AbstractStructBase
     /**
      * Set activateTravelNo value
      * @param bool $activateTravelNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidTravelNoMarginBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidTravelNoMarginBookingRequest
      */
     public function setActivateTravelNo(?bool $activateTravelNo = null): self
     {

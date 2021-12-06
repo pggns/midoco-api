@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteTourOperatorAddressRequest extends AbstractStructBase
     /**
      * Set addressId value
      * @param int $addressId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DeleteTourOperatorAddressRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\DeleteTourOperatorAddressRequest
      */
     public function setAddressId(?int $addressId = null): self
     {

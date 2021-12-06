@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetUsersFromBonusCalculationResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBonusEmployee
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee[]
      */
     protected ?array $MidocoBonusEmployee = null;
     /**
      * Constructor method for GetUsersFromBonusCalculationResponse
      * @uses GetUsersFromBonusCalculationResponse::setMidocoBonusEmployee()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee[] $midocoBonusEmployee
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee[] $midocoBonusEmployee
      */
     public function __construct(?array $midocoBonusEmployee = null)
     {
@@ -34,7 +34,7 @@ class GetUsersFromBonusCalculationResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBonusEmployee value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee[]
      */
     public function getMidocoBonusEmployee(): ?array
     {
@@ -55,12 +55,12 @@ class GetUsersFromBonusCalculationResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getUsersFromBonusCalculationResponseMidocoBonusEmployeeItem) {
             // validation for constraint: itemType
-            if (!$getUsersFromBonusCalculationResponseMidocoBonusEmployeeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee) {
+            if (!$getUsersFromBonusCalculationResponseMidocoBonusEmployeeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee) {
                 $invalidValues[] = is_object($getUsersFromBonusCalculationResponseMidocoBonusEmployeeItem) ? get_class($getUsersFromBonusCalculationResponseMidocoBonusEmployeeItem) : sprintf('%s(%s)', gettype($getUsersFromBonusCalculationResponseMidocoBonusEmployeeItem), var_export($getUsersFromBonusCalculationResponseMidocoBonusEmployeeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBonusEmployee property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBonusEmployee property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetUsersFromBonusCalculationResponse extends AbstractStructBase
     /**
      * Set MidocoBonusEmployee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee[] $midocoBonusEmployee
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUsersFromBonusCalculationResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee[] $midocoBonusEmployee
+     * @return \Pggns\MidocoApi\Order\StructType\GetUsersFromBonusCalculationResponse
      */
     public function setMidocoBonusEmployee(?array $midocoBonusEmployee = null): self
     {
@@ -85,14 +85,14 @@ class GetUsersFromBonusCalculationResponse extends AbstractStructBase
     /**
      * Add item to MidocoBonusEmployee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUsersFromBonusCalculationResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetUsersFromBonusCalculationResponse
      */
-    public function addToMidocoBonusEmployee(\Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee $item): self
+    public function addToMidocoBonusEmployee(\Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee) {
-            throw new InvalidArgumentException(sprintf('The MidocoBonusEmployee property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee) {
+            throw new InvalidArgumentException(sprintf('The MidocoBonusEmployee property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBonusEmployee[] = $item;
         

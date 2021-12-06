@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ParseAmadeusImportStringRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ParseAmadeusImportStringRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\ParseAmadeusImportStringRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -70,7 +70,7 @@ class ParseAmadeusImportStringRequest extends AbstractStructBase
     /**
      * Set xml value
      * @param string $xml
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ParseAmadeusImportStringRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\ParseAmadeusImportStringRequest
      */
     public function setXml(?string $xml = null): self
     {

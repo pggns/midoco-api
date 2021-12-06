@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class DatastoreAssignDTO extends AbstractStructBase
     /**
      * Set datastoreId value
      * @param string $datastoreId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DatastoreAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DatastoreAssignDTO
      */
     public function setDatastoreId(?string $datastoreId = null): self
     {
@@ -86,7 +86,7 @@ class DatastoreAssignDTO extends AbstractStructBase
     /**
      * Set datastoreTypeId value
      * @param string $datastoreTypeId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DatastoreAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DatastoreAssignDTO
      */
     public function setDatastoreTypeId(?string $datastoreTypeId = null): self
     {
@@ -109,7 +109,7 @@ class DatastoreAssignDTO extends AbstractStructBase
     /**
      * Set hierarchical value
      * @param bool $hierarchical
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DatastoreAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DatastoreAssignDTO
      */
     public function setHierarchical(?bool $hierarchical = null): self
     {
@@ -132,7 +132,7 @@ class DatastoreAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DatastoreAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DatastoreAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

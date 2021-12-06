@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetDocumentNaturesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDocumentNature
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoDocumentNatureType[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoDocumentNatureType[]
      */
     protected ?array $MidocoDocumentNature = null;
     /**
      * Constructor method for GetDocumentNaturesResponse
      * @uses GetDocumentNaturesResponse::setMidocoDocumentNature()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoDocumentNatureType[] $midocoDocumentNature
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoDocumentNatureType[] $midocoDocumentNature
      */
     public function __construct(?array $midocoDocumentNature = null)
     {
@@ -34,7 +34,7 @@ class GetDocumentNaturesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDocumentNature value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoDocumentNatureType[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoDocumentNatureType[]
      */
     public function getMidocoDocumentNature(): ?array
     {
@@ -55,12 +55,12 @@ class GetDocumentNaturesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDocumentNaturesResponseMidocoDocumentNatureItem) {
             // validation for constraint: itemType
-            if (!$getDocumentNaturesResponseMidocoDocumentNatureItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoDocumentNatureType) {
+            if (!$getDocumentNaturesResponseMidocoDocumentNatureItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoDocumentNatureType) {
                 $invalidValues[] = is_object($getDocumentNaturesResponseMidocoDocumentNatureItem) ? get_class($getDocumentNaturesResponseMidocoDocumentNatureItem) : sprintf('%s(%s)', gettype($getDocumentNaturesResponseMidocoDocumentNatureItem), var_export($getDocumentNaturesResponseMidocoDocumentNatureItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDocumentNature property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoDocumentNatureType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDocumentNature property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoDocumentNatureType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetDocumentNaturesResponse extends AbstractStructBase
     /**
      * Set MidocoDocumentNature value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoDocumentNatureType[] $midocoDocumentNature
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetDocumentNaturesResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoDocumentNatureType[] $midocoDocumentNature
+     * @return \Pggns\MidocoApi\Mis\StructType\GetDocumentNaturesResponse
      */
     public function setMidocoDocumentNature(?array $midocoDocumentNature = null): self
     {
@@ -85,14 +85,14 @@ class GetDocumentNaturesResponse extends AbstractStructBase
     /**
      * Add item to MidocoDocumentNature value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoDocumentNatureType $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetDocumentNaturesResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoDocumentNatureType $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetDocumentNaturesResponse
      */
-    public function addToMidocoDocumentNature(\Pggns\MidocoApi\Api\Mis\StructType\MidocoDocumentNatureType $item): self
+    public function addToMidocoDocumentNature(\Pggns\MidocoApi\Mis\StructType\MidocoDocumentNatureType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoDocumentNatureType) {
-            throw new InvalidArgumentException(sprintf('The MidocoDocumentNature property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoDocumentNatureType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoDocumentNatureType) {
+            throw new InvalidArgumentException(sprintf('The MidocoDocumentNature property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoDocumentNatureType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDocumentNature[] = $item;
         

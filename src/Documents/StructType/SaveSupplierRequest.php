@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveSupplierRequest extends AbstractStructBase
      * The MidocoSupplier
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplier
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $MidocoSupplier = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $MidocoSupplier = null;
     /**
      * The saveHistorical
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SaveSupplierRequest extends AbstractStructBase
      * Constructor method for SaveSupplierRequest
      * @uses SaveSupplierRequest::setMidocoSupplier()
      * @uses SaveSupplierRequest::setSaveHistorical()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $midocoSupplier
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $midocoSupplier
      * @param bool $saveHistorical
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $midocoSupplier = null, ?bool $saveHistorical = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $midocoSupplier = null, ?bool $saveHistorical = null)
     {
         $this
             ->setMidocoSupplier($midocoSupplier)
@@ -42,18 +42,18 @@ class SaveSupplierRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplier value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType|null
      */
-    public function getMidocoSupplier(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType
+    public function getMidocoSupplier(): ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierType
     {
         return $this->MidocoSupplier;
     }
     /**
      * Set MidocoSupplier value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $midocoSupplier
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveSupplierRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $midocoSupplier
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveSupplierRequest
      */
-    public function setMidocoSupplier(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $midocoSupplier = null): self
+    public function setMidocoSupplier(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $midocoSupplier = null): self
     {
         $this->MidocoSupplier = $midocoSupplier;
         
@@ -70,7 +70,7 @@ class SaveSupplierRequest extends AbstractStructBase
     /**
      * Set saveHistorical value
      * @param bool $saveHistorical
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveSupplierRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveSupplierRequest
      */
     public function setSaveHistorical(?bool $saveHistorical = null): self
     {

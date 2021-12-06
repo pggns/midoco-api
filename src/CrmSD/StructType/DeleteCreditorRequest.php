@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteCreditorRequest extends AbstractStructBase
     /**
      * Set creditorNo value
      * @param string $creditorNo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCreditorRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCreditorRequest
      */
     public function setCreditorNo(?string $creditorNo = null): self
     {

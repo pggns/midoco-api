@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetCheckDtdAnswerRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCheckDtdAnswer
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer $MidocoCheckDtdAnswer = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer $MidocoCheckDtdAnswer = null;
     /**
      * Constructor method for GetCheckDtdAnswerRequest
      * @uses GetCheckDtdAnswerRequest::setMidocoCheckDtdAnswer()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer = null)
     {
         $this
             ->setMidocoCheckDtdAnswer($midocoCheckDtdAnswer);
     }
     /**
      * Get MidocoCheckDtdAnswer value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer|null
      */
-    public function getMidocoCheckDtdAnswer(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer
+    public function getMidocoCheckDtdAnswer(): ?\Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer
     {
         return $this->MidocoCheckDtdAnswer;
     }
     /**
      * Set MidocoCheckDtdAnswer value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCheckDtdAnswerRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer
+     * @return \Pggns\MidocoApi\Order\StructType\GetCheckDtdAnswerRequest
      */
-    public function setMidocoCheckDtdAnswer(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer = null): self
+    public function setMidocoCheckDtdAnswer(?\Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer = null): self
     {
         $this->MidocoCheckDtdAnswer = $midocoCheckDtdAnswer;
         

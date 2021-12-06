@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SupplierAutoRemarkDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAutoRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAutoRemarkDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -86,7 +86,7 @@ class SupplierAutoRemarkDTO extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAutoRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAutoRemarkDTO
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -109,7 +109,7 @@ class SupplierAutoRemarkDTO extends AbstractStructBase
     /**
      * Set remarkText value
      * @param string $remarkText
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAutoRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAutoRemarkDTO
      */
     public function setRemarkText(?string $remarkText = null): self
     {
@@ -132,7 +132,7 @@ class SupplierAutoRemarkDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierAutoRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAutoRemarkDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

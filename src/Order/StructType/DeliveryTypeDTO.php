@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DeliveryTypeDTO extends AbstractStructBase
     /**
      * Set deliveryTypeId value
      * @param string $deliveryTypeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeliveryTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DeliveryTypeDTO
      */
     public function setDeliveryTypeId(?string $deliveryTypeId = null): self
     {
@@ -70,7 +70,7 @@ class DeliveryTypeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeliveryTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DeliveryTypeDTO
      */
     public function setDescription(?string $description = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetSimilarAddressResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmAddress
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress[]
      */
     protected ?array $MidocoCrmAddress = null;
     /**
      * Constructor method for GetSimilarAddressResponse
      * @uses GetSimilarAddressResponse::setMidocoCrmAddress()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress[] $midocoCrmAddress
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress[] $midocoCrmAddress
      */
     public function __construct(?array $midocoCrmAddress = null)
     {
@@ -36,7 +36,7 @@ class GetSimilarAddressResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmAddress value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress[]
      */
     public function getMidocoCrmAddress(): ?array
     {
@@ -57,12 +57,12 @@ class GetSimilarAddressResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSimilarAddressResponseMidocoCrmAddressItem) {
             // validation for constraint: itemType
-            if (!$getSimilarAddressResponseMidocoCrmAddressItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress) {
+            if (!$getSimilarAddressResponseMidocoCrmAddressItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress) {
                 $invalidValues[] = is_object($getSimilarAddressResponseMidocoCrmAddressItem) ? get_class($getSimilarAddressResponseMidocoCrmAddressItem) : sprintf('%s(%s)', gettype($getSimilarAddressResponseMidocoCrmAddressItem), var_export($getSimilarAddressResponseMidocoCrmAddressItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetSimilarAddressResponse extends AbstractStructBase
     /**
      * Set MidocoCrmAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress[] $midocoCrmAddress
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetSimilarAddressResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress[] $midocoCrmAddress
+     * @return \Pggns\MidocoApi\Crm\StructType\GetSimilarAddressResponse
      */
     public function setMidocoCrmAddress(?array $midocoCrmAddress = null): self
     {
@@ -87,14 +87,14 @@ class GetSimilarAddressResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetSimilarAddressResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetSimilarAddressResponse
      */
-    public function addToMidocoCrmAddress(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress $item): self
+    public function addToMidocoCrmAddress(\Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmAddress[] = $item;
         

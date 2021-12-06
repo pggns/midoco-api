@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class MidocoSellItemAttribute extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellItemAttribute
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -80,7 +80,7 @@ class MidocoSellItemAttribute extends AbstractStructBase
     /**
      * Set attributeValue value
      * @param string $attributeValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellItemAttribute
      */
     public function setAttributeValue(?string $attributeValue = null): self
     {
@@ -103,7 +103,7 @@ class MidocoSellItemAttribute extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellItemAttribute
      */
     public function setItemId(?int $itemId = null): self
     {

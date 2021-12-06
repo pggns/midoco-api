@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -231,7 +231,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -254,7 +254,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set accountType value
      * @param string $accountType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setAccountType(?string $accountType = null): self
     {
@@ -277,7 +277,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set accrualAccount value
      * @param string $accrualAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setAccrualAccount(?string $accrualAccount = null): self
     {
@@ -300,7 +300,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set applyForeignCurrencyToExport value
      * @param bool $applyForeignCurrencyToExport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setApplyForeignCurrencyToExport(?bool $applyForeignCurrencyToExport = null): self
     {
@@ -323,7 +323,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set automaticVat value
      * @param bool $automaticVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setAutomaticVat(?bool $automaticVat = null): self
     {
@@ -346,7 +346,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set balanceSheetPosition value
      * @param string $balanceSheetPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setBalanceSheetPosition(?string $balanceSheetPosition = null): self
     {
@@ -369,7 +369,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set clearingAccount value
      * @param string $clearingAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setClearingAccount(?string $clearingAccount = null): self
     {
@@ -392,7 +392,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -415,7 +415,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set currencyLookupMethod value
      * @param int $currencyLookupMethod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setCurrencyLookupMethod(?int $currencyLookupMethod = null): self
     {
@@ -438,7 +438,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set depositAccount value
      * @param string $depositAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setDepositAccount(?string $depositAccount = null): self
     {
@@ -461,7 +461,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set isCommissionAccount value
      * @param bool $isCommissionAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setIsCommissionAccount(?bool $isCommissionAccount = null): self
     {
@@ -484,7 +484,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set isLocked value
      * @param bool $isLocked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setIsLocked(?bool $isLocked = null): self
     {
@@ -507,7 +507,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set isManualUsage value
      * @param bool $isManualUsage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setIsManualUsage(?bool $isManualUsage = null): self
     {
@@ -530,7 +530,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set isPaymentAccount value
      * @param bool $isPaymentAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setIsPaymentAccount(?bool $isPaymentAccount = null): self
     {
@@ -553,7 +553,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set isProtectedAccount value
      * @param bool $isProtectedAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setIsProtectedAccount(?bool $isProtectedAccount = null): self
     {
@@ -576,7 +576,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set lockDate value
      * @param string $lockDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setLockDate(?string $lockDate = null): self
     {
@@ -599,7 +599,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setName(?string $name = null): self
     {
@@ -622,7 +622,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -645,7 +645,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set preventObBooking value
      * @param bool $preventObBooking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setPreventObBooking(?bool $preventObBooking = null): self
     {
@@ -668,7 +668,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set summaryAccount value
      * @param string $summaryAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setSummaryAccount(?string $summaryAccount = null): self
     {
@@ -691,7 +691,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set useAsCashAccount value
      * @param bool $useAsCashAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setUseAsCashAccount(?bool $useAsCashAccount = null): self
     {
@@ -714,7 +714,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set useAsReverseChargeAccount value
      * @param bool $useAsReverseChargeAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setUseAsReverseChargeAccount(?bool $useAsReverseChargeAccount = null): self
     {
@@ -737,7 +737,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set useCostCentre value
      * @param bool $useCostCentre
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setUseCostCentre(?bool $useCostCentre = null): self
     {
@@ -760,7 +760,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set useInItReceipt value
      * @param bool $useInItReceipt
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setUseInItReceipt(?bool $useInItReceipt = null): self
     {
@@ -783,7 +783,7 @@ class AccountDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {

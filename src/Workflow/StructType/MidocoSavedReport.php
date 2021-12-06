@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoSavedReport extends SavedReportDTO
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoSavedReport
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoSavedReport
      */
     public function setName(?string $name = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -76,7 +76,7 @@ class CompanyData extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CompanyData
+     * @return \Pggns\MidocoApi\Booking\StructType\CompanyData
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -99,7 +99,7 @@ class CompanyData extends AbstractStructBase
     /**
      * Set contactPerson value
      * @param string $contactPerson
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CompanyData
+     * @return \Pggns\MidocoApi\Booking\StructType\CompanyData
      */
     public function setContactPerson(?string $contactPerson = null): self
     {
@@ -122,7 +122,7 @@ class CompanyData extends AbstractStructBase
     /**
      * Set organisationName value
      * @param string $organisationName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CompanyData
+     * @return \Pggns\MidocoApi\Booking\StructType\CompanyData
      */
     public function setOrganisationName(?string $organisationName = null): self
     {
@@ -145,7 +145,7 @@ class CompanyData extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CompanyData
+     * @return \Pggns\MidocoApi\Booking\StructType\CompanyData
      */
     public function setVatId(?string $vatId = null): self
     {

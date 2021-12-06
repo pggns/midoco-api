@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class OrigSupplierDimensionDTO extends AbstractStructBase
     /**
      * Set midocoOrigSupplierId value
      * @param string $midocoOrigSupplierId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrigSupplierDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrigSupplierDimensionDTO
      */
     public function setMidocoOrigSupplierId(?string $midocoOrigSupplierId = null): self
     {
@@ -70,7 +70,7 @@ class OrigSupplierDimensionDTO extends AbstractStructBase
     /**
      * Set originalSupplierId value
      * @param int $originalSupplierId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrigSupplierDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrigSupplierDimensionDTO
      */
     public function setOriginalSupplierId(?int $originalSupplierId = null): self
     {

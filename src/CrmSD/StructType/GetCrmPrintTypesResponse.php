@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCrmPrintTypesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmPrintType
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmPrintType[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType[]
      */
     protected ?array $MidocoCrmPrintType = null;
     /**
      * Constructor method for GetCrmPrintTypesResponse
      * @uses GetCrmPrintTypesResponse::setMidocoCrmPrintType()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmPrintType[] $midocoCrmPrintType
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType[] $midocoCrmPrintType
      */
     public function __construct(?array $midocoCrmPrintType = null)
     {
@@ -34,7 +34,7 @@ class GetCrmPrintTypesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmPrintType value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmPrintType[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType[]
      */
     public function getMidocoCrmPrintType(): ?array
     {
@@ -55,12 +55,12 @@ class GetCrmPrintTypesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCrmPrintTypesResponseMidocoCrmPrintTypeItem) {
             // validation for constraint: itemType
-            if (!$getCrmPrintTypesResponseMidocoCrmPrintTypeItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmPrintType) {
+            if (!$getCrmPrintTypesResponseMidocoCrmPrintTypeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType) {
                 $invalidValues[] = is_object($getCrmPrintTypesResponseMidocoCrmPrintTypeItem) ? get_class($getCrmPrintTypesResponseMidocoCrmPrintTypeItem) : sprintf('%s(%s)', gettype($getCrmPrintTypesResponseMidocoCrmPrintTypeItem), var_export($getCrmPrintTypesResponseMidocoCrmPrintTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmPrintType property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmPrintType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmPrintType property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCrmPrintTypesResponse extends AbstractStructBase
     /**
      * Set MidocoCrmPrintType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmPrintType[] $midocoCrmPrintType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmPrintTypesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType[] $midocoCrmPrintType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmPrintTypesResponse
      */
     public function setMidocoCrmPrintType(?array $midocoCrmPrintType = null): self
     {
@@ -85,14 +85,14 @@ class GetCrmPrintTypesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmPrintType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmPrintType $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmPrintTypesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmPrintTypesResponse
      */
-    public function addToMidocoCrmPrintType(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmPrintType $item): self
+    public function addToMidocoCrmPrintType(\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmPrintType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmPrintType property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmPrintType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmPrintType property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmPrintType[] = $item;
         

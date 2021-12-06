@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoProcessAssignCriteria extends AbstractStructBase
     /**
      * Set applicationId value
      * @param string $applicationId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoProcessAssignCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoProcessAssignCriteria
      */
     public function setApplicationId(?string $applicationId = null): self
     {
@@ -70,7 +70,7 @@ class MidocoProcessAssignCriteria extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoProcessAssignCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoProcessAssignCriteria
      */
     public function setOrgunit(?string $orgunit = null): self
     {

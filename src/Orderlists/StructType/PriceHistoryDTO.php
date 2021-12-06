@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -167,7 +167,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set isImport value
      * @param bool $isImport
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setIsImport(?bool $isImport = null): self
     {
@@ -190,7 +190,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set isStorno value
      * @param bool $isStorno
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setIsStorno(?bool $isStorno = null): self
     {
@@ -213,7 +213,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -236,7 +236,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set modifyTime value
      * @param string $modifyTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setModifyTime(?string $modifyTime = null): self
     {
@@ -259,7 +259,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -282,7 +282,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set newCalculatedRevenue value
      * @param float $newCalculatedRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setNewCalculatedRevenue(?float $newCalculatedRevenue = null): self
     {
@@ -305,7 +305,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set newFarePrice value
      * @param float $newFarePrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setNewFarePrice(?float $newFarePrice = null): self
     {
@@ -328,7 +328,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set newFeeAmount value
      * @param float $newFeeAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setNewFeeAmount(?float $newFeeAmount = null): self
     {
@@ -351,7 +351,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set newGrantedRevenue value
      * @param float $newGrantedRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setNewGrantedRevenue(?float $newGrantedRevenue = null): self
     {
@@ -374,7 +374,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set newPrice value
      * @param float $newPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setNewPrice(?float $newPrice = null): self
     {
@@ -397,7 +397,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set newTotalTax value
      * @param float $newTotalTax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setNewTotalTax(?float $newTotalTax = null): self
     {
@@ -420,7 +420,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set oldCalculatedRevenue value
      * @param float $oldCalculatedRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setOldCalculatedRevenue(?float $oldCalculatedRevenue = null): self
     {
@@ -443,7 +443,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set oldFarePrice value
      * @param float $oldFarePrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setOldFarePrice(?float $oldFarePrice = null): self
     {
@@ -466,7 +466,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set oldFeeAmount value
      * @param float $oldFeeAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setOldFeeAmount(?float $oldFeeAmount = null): self
     {
@@ -489,7 +489,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set oldGrantedRevenue value
      * @param float $oldGrantedRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setOldGrantedRevenue(?float $oldGrantedRevenue = null): self
     {
@@ -512,7 +512,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set oldPrice value
      * @param float $oldPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setOldPrice(?float $oldPrice = null): self
     {
@@ -535,7 +535,7 @@ class PriceHistoryDTO extends AbstractStructBase
     /**
      * Set oldTotalTax value
      * @param float $oldTotalTax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PriceHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PriceHistoryDTO
      */
     public function setOldTotalTax(?float $oldTotalTax = null): self
     {

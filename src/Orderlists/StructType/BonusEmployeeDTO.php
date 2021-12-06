@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class BonusEmployeeDTO extends AbstractStructBase
     /**
      * Set baseAmountRule value
      * @param float $baseAmountRule
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BonusEmployeeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BonusEmployeeDTO
      */
     public function setBaseAmountRule(?float $baseAmountRule = null): self
     {
@@ -110,7 +110,7 @@ class BonusEmployeeDTO extends AbstractStructBase
     /**
      * Set bonusId value
      * @param int $bonusId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BonusEmployeeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BonusEmployeeDTO
      */
     public function setBonusId(?int $bonusId = null): self
     {
@@ -133,7 +133,7 @@ class BonusEmployeeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BonusEmployeeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BonusEmployeeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -156,7 +156,7 @@ class BonusEmployeeDTO extends AbstractStructBase
     /**
      * Set grantedAmountAdditional value
      * @param float $grantedAmountAdditional
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BonusEmployeeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BonusEmployeeDTO
      */
     public function setGrantedAmountAdditional(?float $grantedAmountAdditional = null): self
     {
@@ -179,7 +179,7 @@ class BonusEmployeeDTO extends AbstractStructBase
     /**
      * Set grantedAmountCompetition value
      * @param float $grantedAmountCompetition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BonusEmployeeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BonusEmployeeDTO
      */
     public function setGrantedAmountCompetition(?float $grantedAmountCompetition = null): self
     {
@@ -202,7 +202,7 @@ class BonusEmployeeDTO extends AbstractStructBase
     /**
      * Set grantedAmountRule value
      * @param float $grantedAmountRule
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BonusEmployeeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BonusEmployeeDTO
      */
     public function setGrantedAmountRule(?float $grantedAmountRule = null): self
     {
@@ -225,7 +225,7 @@ class BonusEmployeeDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BonusEmployeeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BonusEmployeeDTO
      */
     public function setUserId(?int $userId = null): self
     {

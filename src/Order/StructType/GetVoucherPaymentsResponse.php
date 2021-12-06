@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetVoucherPaymentsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVoucherPayment
-     * @var \Pggns\MidocoApi\Api\Order\StructType\VoucherPaymentDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\VoucherPaymentDTO[]
      */
     protected ?array $MidocoVoucherPayment = null;
     /**
      * Constructor method for GetVoucherPaymentsResponse
      * @uses GetVoucherPaymentsResponse::setMidocoVoucherPayment()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VoucherPaymentDTO[] $midocoVoucherPayment
+     * @param \Pggns\MidocoApi\Order\StructType\VoucherPaymentDTO[] $midocoVoucherPayment
      */
     public function __construct(?array $midocoVoucherPayment = null)
     {
@@ -34,7 +34,7 @@ class GetVoucherPaymentsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVoucherPayment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoucherPaymentDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\VoucherPaymentDTO[]
      */
     public function getMidocoVoucherPayment(): ?array
     {
@@ -55,12 +55,12 @@ class GetVoucherPaymentsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getVoucherPaymentsResponseMidocoVoucherPaymentItem) {
             // validation for constraint: itemType
-            if (!$getVoucherPaymentsResponseMidocoVoucherPaymentItem instanceof \Pggns\MidocoApi\Api\Order\StructType\VoucherPaymentDTO) {
+            if (!$getVoucherPaymentsResponseMidocoVoucherPaymentItem instanceof \Pggns\MidocoApi\Order\StructType\VoucherPaymentDTO) {
                 $invalidValues[] = is_object($getVoucherPaymentsResponseMidocoVoucherPaymentItem) ? get_class($getVoucherPaymentsResponseMidocoVoucherPaymentItem) : sprintf('%s(%s)', gettype($getVoucherPaymentsResponseMidocoVoucherPaymentItem), var_export($getVoucherPaymentsResponseMidocoVoucherPaymentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVoucherPayment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\VoucherPaymentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVoucherPayment property can only contain items of type \Pggns\MidocoApi\Order\StructType\VoucherPaymentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetVoucherPaymentsResponse extends AbstractStructBase
     /**
      * Set MidocoVoucherPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VoucherPaymentDTO[] $midocoVoucherPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetVoucherPaymentsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\VoucherPaymentDTO[] $midocoVoucherPayment
+     * @return \Pggns\MidocoApi\Order\StructType\GetVoucherPaymentsResponse
      */
     public function setMidocoVoucherPayment(?array $midocoVoucherPayment = null): self
     {
@@ -85,14 +85,14 @@ class GetVoucherPaymentsResponse extends AbstractStructBase
     /**
      * Add item to MidocoVoucherPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VoucherPaymentDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetVoucherPaymentsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\VoucherPaymentDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetVoucherPaymentsResponse
      */
-    public function addToMidocoVoucherPayment(\Pggns\MidocoApi\Api\Order\StructType\VoucherPaymentDTO $item): self
+    public function addToMidocoVoucherPayment(\Pggns\MidocoApi\Order\StructType\VoucherPaymentDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\VoucherPaymentDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoVoucherPayment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\VoucherPaymentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\VoucherPaymentDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoVoucherPayment property can only contain items of type \Pggns\MidocoApi\Order\StructType\VoucherPaymentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVoucherPayment[] = $item;
         

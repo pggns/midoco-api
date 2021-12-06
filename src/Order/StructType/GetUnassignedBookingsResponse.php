@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -23,13 +23,13 @@ class GetUnassignedBookingsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBookingInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType[]
      */
     protected ?array $MidocoBookingInfo = null;
     /**
      * Constructor method for GetUnassignedBookingsResponse
      * @uses GetUnassignedBookingsResponse::setMidocoBookingInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType[] $midocoBookingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType[] $midocoBookingInfo
      */
     public function __construct(?array $midocoBookingInfo = null)
     {
@@ -38,7 +38,7 @@ class GetUnassignedBookingsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBookingInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType[]
      */
     public function getMidocoBookingInfo(): ?array
     {
@@ -59,12 +59,12 @@ class GetUnassignedBookingsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getUnassignedBookingsResponseMidocoBookingInfoItem) {
             // validation for constraint: itemType
-            if (!$getUnassignedBookingsResponseMidocoBookingInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType) {
+            if (!$getUnassignedBookingsResponseMidocoBookingInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType) {
                 $invalidValues[] = is_object($getUnassignedBookingsResponseMidocoBookingInfoItem) ? get_class($getUnassignedBookingsResponseMidocoBookingInfoItem) : sprintf('%s(%s)', gettype($getUnassignedBookingsResponseMidocoBookingInfoItem), var_export($getUnassignedBookingsResponseMidocoBookingInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBookingInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBookingInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -73,8 +73,8 @@ class GetUnassignedBookingsResponse extends AbstractStructBase
     /**
      * Set MidocoBookingInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType[] $midocoBookingInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUnassignedBookingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType[] $midocoBookingInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnassignedBookingsResponse
      */
     public function setMidocoBookingInfo(?array $midocoBookingInfo = null): self
     {
@@ -89,14 +89,14 @@ class GetUnassignedBookingsResponse extends AbstractStructBase
     /**
      * Add item to MidocoBookingInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUnassignedBookingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnassignedBookingsResponse
      */
-    public function addToMidocoBookingInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType $item): self
+    public function addToMidocoBookingInfo(\Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType) {
-            throw new InvalidArgumentException(sprintf('The MidocoBookingInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType) {
+            throw new InvalidArgumentException(sprintf('The MidocoBookingInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBookingInfo[] = $item;
         

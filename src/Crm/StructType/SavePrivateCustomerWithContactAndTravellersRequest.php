@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,16 +18,16 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
      * The MidocoCrmCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
      * The MidocoContactEntryWithSource
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoContactEntryWithSource
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryWithSource[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryWithSource[]
      */
     protected ?array $MidocoContactEntryWithSource = null;
     /**
@@ -36,7 +36,7 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmPersonTraveller
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO[]
      */
     protected ?array $MidocoCrmPersonTraveller = null;
     /**
@@ -44,11 +44,11 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
      * @uses SavePrivateCustomerWithContactAndTravellersRequest::setMidocoCrmCustomer()
      * @uses SavePrivateCustomerWithContactAndTravellersRequest::setMidocoContactEntryWithSource()
      * @uses SavePrivateCustomerWithContactAndTravellersRequest::setMidocoCrmPersonTraveller()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryWithSource[] $midocoContactEntryWithSource
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO[] $midocoCrmPersonTraveller
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryWithSource[] $midocoContactEntryWithSource
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO[] $midocoCrmPersonTraveller
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?array $midocoContactEntryWithSource = null, ?array $midocoCrmPersonTraveller = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?array $midocoContactEntryWithSource = null, ?array $midocoCrmPersonTraveller = null)
     {
         $this
             ->setMidocoCrmCustomer($midocoCrmCustomer)
@@ -57,18 +57,18 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         
@@ -76,7 +76,7 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
     }
     /**
      * Get MidocoContactEntryWithSource value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryWithSource[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryWithSource[]
      */
     public function getMidocoContactEntryWithSource(): ?array
     {
@@ -97,12 +97,12 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
         $invalidValues = [];
         foreach ($values as $savePrivateCustomerWithContactAndTravellersRequestMidocoContactEntryWithSourceItem) {
             // validation for constraint: itemType
-            if (!$savePrivateCustomerWithContactAndTravellersRequestMidocoContactEntryWithSourceItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryWithSource) {
+            if (!$savePrivateCustomerWithContactAndTravellersRequestMidocoContactEntryWithSourceItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryWithSource) {
                 $invalidValues[] = is_object($savePrivateCustomerWithContactAndTravellersRequestMidocoContactEntryWithSourceItem) ? get_class($savePrivateCustomerWithContactAndTravellersRequestMidocoContactEntryWithSourceItem) : sprintf('%s(%s)', gettype($savePrivateCustomerWithContactAndTravellersRequestMidocoContactEntryWithSourceItem), var_export($savePrivateCustomerWithContactAndTravellersRequestMidocoContactEntryWithSourceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactEntryWithSource property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryWithSource, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactEntryWithSource property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryWithSource, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -111,8 +111,8 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
     /**
      * Set MidocoContactEntryWithSource value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryWithSource[] $midocoContactEntryWithSource
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryWithSource[] $midocoContactEntryWithSource
+     * @return \Pggns\MidocoApi\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest
      */
     public function setMidocoContactEntryWithSource(?array $midocoContactEntryWithSource = null): self
     {
@@ -127,14 +127,14 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
     /**
      * Add item to MidocoContactEntryWithSource value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryWithSource $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryWithSource $item
+     * @return \Pggns\MidocoApi\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest
      */
-    public function addToMidocoContactEntryWithSource(\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryWithSource $item): self
+    public function addToMidocoContactEntryWithSource(\Pggns\MidocoApi\Crm\StructType\MidocoContactEntryWithSource $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryWithSource) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactEntryWithSource property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryWithSource, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryWithSource) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactEntryWithSource property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryWithSource, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactEntryWithSource[] = $item;
         
@@ -142,7 +142,7 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
     }
     /**
      * Get MidocoCrmPersonTraveller value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO[]
      */
     public function getMidocoCrmPersonTraveller(): ?array
     {
@@ -163,12 +163,12 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
         $invalidValues = [];
         foreach ($values as $savePrivateCustomerWithContactAndTravellersRequestMidocoCrmPersonTravellerItem) {
             // validation for constraint: itemType
-            if (!$savePrivateCustomerWithContactAndTravellersRequestMidocoCrmPersonTravellerItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO) {
+            if (!$savePrivateCustomerWithContactAndTravellersRequestMidocoCrmPersonTravellerItem instanceof \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO) {
                 $invalidValues[] = is_object($savePrivateCustomerWithContactAndTravellersRequestMidocoCrmPersonTravellerItem) ? get_class($savePrivateCustomerWithContactAndTravellersRequestMidocoCrmPersonTravellerItem) : sprintf('%s(%s)', gettype($savePrivateCustomerWithContactAndTravellersRequestMidocoCrmPersonTravellerItem), var_export($savePrivateCustomerWithContactAndTravellersRequestMidocoCrmPersonTravellerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -177,8 +177,8 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
     /**
      * Set MidocoCrmPersonTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO[] $midocoCrmPersonTraveller
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO[] $midocoCrmPersonTraveller
+     * @return \Pggns\MidocoApi\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest
      */
     public function setMidocoCrmPersonTraveller(?array $midocoCrmPersonTraveller = null): self
     {
@@ -193,14 +193,14 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
     /**
      * Add item to MidocoCrmPersonTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest
      */
-    public function addToMidocoCrmPersonTraveller(\Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO $item): self
+    public function addToMidocoCrmPersonTraveller(\Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmPersonTraveller[] = $item;
         

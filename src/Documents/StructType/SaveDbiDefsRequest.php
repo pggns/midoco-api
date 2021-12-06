@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,24 +17,24 @@ class SaveDbiDefsRequest extends AbstractStructBase
      * The MidocoDbiDefs
      * Meta information extracted from the WSDL
      * - ref: MidocoDbiDefs
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs $MidocoDbiDefs = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs $MidocoDbiDefs = null;
     /**
      * The MidocoDbiUpdate
      * Meta information extracted from the WSDL
      * - ref: MidocoDbiUpdate
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $MidocoDbiUpdate = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $MidocoDbiUpdate = null;
     /**
      * Constructor method for SaveDbiDefsRequest
      * @uses SaveDbiDefsRequest::setMidocoDbiDefs()
      * @uses SaveDbiDefsRequest::setMidocoDbiUpdate()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs $midocoDbiDefs
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs $midocoDbiDefs
+     * @param \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs $midocoDbiDefs = null, ?\Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs $midocoDbiDefs = null, ?\Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate = null)
     {
         $this
             ->setMidocoDbiDefs($midocoDbiDefs)
@@ -42,18 +42,18 @@ class SaveDbiDefsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoDbiDefs value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs|null
      */
-    public function getMidocoDbiDefs(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs
+    public function getMidocoDbiDefs(): ?\Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs
     {
         return $this->MidocoDbiDefs;
     }
     /**
      * Set MidocoDbiDefs value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs $midocoDbiDefs
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveDbiDefsRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs $midocoDbiDefs
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveDbiDefsRequest
      */
-    public function setMidocoDbiDefs(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs $midocoDbiDefs = null): self
+    public function setMidocoDbiDefs(?\Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs $midocoDbiDefs = null): self
     {
         $this->MidocoDbiDefs = $midocoDbiDefs;
         
@@ -61,18 +61,18 @@ class SaveDbiDefsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoDbiUpdate value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO|null
      */
-    public function getMidocoDbiUpdate(): ?\Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO
+    public function getMidocoDbiUpdate(): ?\Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO
     {
         return $this->MidocoDbiUpdate;
     }
     /**
      * Set MidocoDbiUpdate value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveDbiDefsRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveDbiDefsRequest
      */
-    public function setMidocoDbiUpdate(?\Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate = null): self
+    public function setMidocoDbiUpdate(?\Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate = null): self
     {
         $this->MidocoDbiUpdate = $midocoDbiUpdate;
         

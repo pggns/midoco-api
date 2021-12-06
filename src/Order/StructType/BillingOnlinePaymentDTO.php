@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set authAmount value
      * @param float $authAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setAuthAmount(?float $authAmount = null): self
     {
@@ -198,7 +198,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set cardholderAuthVerification value
      * @param string $cardholderAuthVerification
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setCardholderAuthVerification(?string $cardholderAuthVerification = null): self
     {
@@ -221,7 +221,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -244,7 +244,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccOwner value
      * @param string $ccOwner
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setCcOwner(?string $ccOwner = null): self
     {
@@ -267,7 +267,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccTokenReference value
      * @param int $ccTokenReference
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setCcTokenReference(?int $ccTokenReference = null): self
     {
@@ -290,7 +290,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -313,7 +313,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccValidMonth value
      * @param int $ccValidMonth
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setCcValidMonth(?int $ccValidMonth = null): self
     {
@@ -336,7 +336,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccValidYear value
      * @param int $ccValidYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setCcValidYear(?int $ccValidYear = null): self
     {
@@ -359,7 +359,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set cvvToken value
      * @param string $cvvToken
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setCvvToken(?string $cvvToken = null): self
     {
@@ -382,7 +382,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -405,7 +405,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set dstid value
      * @param string $dstid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setDstid(?string $dstid = null): self
     {
@@ -428,7 +428,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set electronicCommerceIndicator value
      * @param string $electronicCommerceIndicator
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setElectronicCommerceIndicator(?string $electronicCommerceIndicator = null): self
     {
@@ -451,7 +451,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set initialEcomTransactionId value
      * @param string $initialEcomTransactionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setInitialEcomTransactionId(?string $initialEcomTransactionId = null): self
     {
@@ -474,7 +474,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set paymentChannelIndicator value
      * @param string $paymentChannelIndicator
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setPaymentChannelIndicator(?string $paymentChannelIndicator = null): self
     {
@@ -497,7 +497,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set remainingAuthAmount value
      * @param float $remainingAuthAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setRemainingAuthAmount(?float $remainingAuthAmount = null): self
     {
@@ -520,7 +520,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set tokenChecked value
      * @param bool $tokenChecked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setTokenChecked(?bool $tokenChecked = null): self
     {
@@ -543,7 +543,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set v3ds value
      * @param string $v3ds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setV3ds(?string $v3ds = null): self
     {
@@ -566,7 +566,7 @@ class BillingOnlinePaymentDTO extends AbstractStructBase
     /**
      * Set xid value
      * @param string $xid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingOnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingOnlinePaymentDTO
      */
     public function setXid(?string $xid = null): self
     {

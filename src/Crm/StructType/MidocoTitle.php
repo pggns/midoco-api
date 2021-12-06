@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoTitle extends PersonTitleDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoTitle
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoTitle
      */
     public function setInherited(?bool $inherited = null): self
     {

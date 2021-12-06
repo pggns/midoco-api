@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MidocoBillingReportType extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportType
      */
     public function setPosition(?int $position = null): self
     {
@@ -134,7 +134,7 @@ class MidocoBillingReportType extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportType
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -157,7 +157,7 @@ class MidocoBillingReportType extends AbstractStructBase
     /**
      * Set creationUser value
      * @param string $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportType
      */
     public function setCreationUser(?string $creationUser = null): self
     {
@@ -180,7 +180,7 @@ class MidocoBillingReportType extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportType
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -203,7 +203,7 @@ class MidocoBillingReportType extends AbstractStructBase
     /**
      * Set documentNo value
      * @param int $documentNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportType
      */
     public function setDocumentNo(?int $documentNo = null): self
     {
@@ -226,7 +226,7 @@ class MidocoBillingReportType extends AbstractStructBase
     /**
      * Set referenceNo value
      * @param string $referenceNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportType
      */
     public function setReferenceNo(?string $referenceNo = null): self
     {
@@ -249,7 +249,7 @@ class MidocoBillingReportType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportType
      */
     public function setDescription(?string $description = null): self
     {
@@ -272,7 +272,7 @@ class MidocoBillingReportType extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportType
      */
     public function setPrice(?float $price = null): self
     {
@@ -295,7 +295,7 @@ class MidocoBillingReportType extends AbstractStructBase
     /**
      * Set nvsOrderNo value
      * @param string $nvsOrderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportType
      */
     public function setNvsOrderNo(?string $nvsOrderNo = null): self
     {
@@ -318,7 +318,7 @@ class MidocoBillingReportType extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportType
      */
     public function setPaymentType(?string $paymentType = null): self
     {

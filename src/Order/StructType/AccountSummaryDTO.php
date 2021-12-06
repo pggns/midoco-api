@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class AccountSummaryDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -102,7 +102,7 @@ class AccountSummaryDTO extends AbstractStructBase
     /**
      * Set bookingPeriod value
      * @param int $bookingPeriod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryDTO
      */
     public function setBookingPeriod(?int $bookingPeriod = null): self
     {
@@ -125,7 +125,7 @@ class AccountSummaryDTO extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryDTO
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -148,7 +148,7 @@ class AccountSummaryDTO extends AbstractStructBase
     /**
      * Set creditAmount value
      * @param float $creditAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryDTO
      */
     public function setCreditAmount(?float $creditAmount = null): self
     {
@@ -171,7 +171,7 @@ class AccountSummaryDTO extends AbstractStructBase
     /**
      * Set debitAmount value
      * @param float $debitAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryDTO
      */
     public function setDebitAmount(?float $debitAmount = null): self
     {
@@ -194,7 +194,7 @@ class AccountSummaryDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryDTO
      */
     public function setPlanId(?string $planId = null): self
     {

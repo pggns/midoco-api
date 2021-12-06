@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -67,7 +67,7 @@ class CreateSupplierMessageRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateSupplierMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateSupplierMessageRequest
      */
     public function setSupplierId(string $supplierId): self
     {
@@ -90,7 +90,7 @@ class CreateSupplierMessageRequest extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateSupplierMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateSupplierMessageRequest
      */
     public function setItemId(int $itemId): self
     {
@@ -113,7 +113,7 @@ class CreateSupplierMessageRequest extends AbstractStructBase
     /**
      * Set subjectType value
      * @param string $subjectType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateSupplierMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateSupplierMessageRequest
      */
     public function setSubjectType(?string $subjectType = null): self
     {
@@ -136,7 +136,7 @@ class CreateSupplierMessageRequest extends AbstractStructBase
     /**
      * Set messageType value
      * @param string $messageType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateSupplierMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateSupplierMessageRequest
      */
     public function setMessageType(?string $messageType = null): self
     {

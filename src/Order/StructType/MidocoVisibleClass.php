@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoVisibleClass extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPropertyAttribute
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPropertyAttribute[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPropertyAttribute[]
      */
     protected ?array $MidocoPropertyAttribute = null;
     /**
@@ -37,7 +37,7 @@ class MidocoVisibleClass extends AbstractStructBase
      * @uses MidocoVisibleClass::setMidocoPropertyAttribute()
      * @uses MidocoVisibleClass::setClassName()
      * @uses MidocoVisibleClass::setDescription()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPropertyAttribute[] $midocoPropertyAttribute
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPropertyAttribute[] $midocoPropertyAttribute
      * @param string $className
      * @param string $description
      */
@@ -50,7 +50,7 @@ class MidocoVisibleClass extends AbstractStructBase
     }
     /**
      * Get MidocoPropertyAttribute value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPropertyAttribute[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPropertyAttribute[]
      */
     public function getMidocoPropertyAttribute(): ?array
     {
@@ -71,12 +71,12 @@ class MidocoVisibleClass extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoVisibleClassMidocoPropertyAttributeItem) {
             // validation for constraint: itemType
-            if (!$midocoVisibleClassMidocoPropertyAttributeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPropertyAttribute) {
+            if (!$midocoVisibleClassMidocoPropertyAttributeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoPropertyAttribute) {
                 $invalidValues[] = is_object($midocoVisibleClassMidocoPropertyAttributeItem) ? get_class($midocoVisibleClassMidocoPropertyAttributeItem) : sprintf('%s(%s)', gettype($midocoVisibleClassMidocoPropertyAttributeItem), var_export($midocoVisibleClassMidocoPropertyAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPropertyAttribute property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPropertyAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPropertyAttribute property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPropertyAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class MidocoVisibleClass extends AbstractStructBase
     /**
      * Set MidocoPropertyAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPropertyAttribute[] $midocoPropertyAttribute
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVisibleClass
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPropertyAttribute[] $midocoPropertyAttribute
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVisibleClass
      */
     public function setMidocoPropertyAttribute(?array $midocoPropertyAttribute = null): self
     {
@@ -101,14 +101,14 @@ class MidocoVisibleClass extends AbstractStructBase
     /**
      * Add item to MidocoPropertyAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPropertyAttribute $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVisibleClass
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPropertyAttribute $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVisibleClass
      */
-    public function addToMidocoPropertyAttribute(\Pggns\MidocoApi\Api\Order\StructType\MidocoPropertyAttribute $item): self
+    public function addToMidocoPropertyAttribute(\Pggns\MidocoApi\Order\StructType\MidocoPropertyAttribute $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPropertyAttribute) {
-            throw new InvalidArgumentException(sprintf('The MidocoPropertyAttribute property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPropertyAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoPropertyAttribute) {
+            throw new InvalidArgumentException(sprintf('The MidocoPropertyAttribute property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPropertyAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPropertyAttribute[] = $item;
         
@@ -125,7 +125,7 @@ class MidocoVisibleClass extends AbstractStructBase
     /**
      * Set className value
      * @param string $className
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVisibleClass
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVisibleClass
      */
     public function setClassName(?string $className = null): self
     {
@@ -148,7 +148,7 @@ class MidocoVisibleClass extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVisibleClass
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVisibleClass
      */
     public function setDescription(?string $description = null): self
     {

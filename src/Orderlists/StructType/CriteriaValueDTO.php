@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CriteriaValueDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CriteriaValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CriteriaValueDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -86,7 +86,7 @@ class CriteriaValueDTO extends AbstractStructBase
     /**
      * Set guiPosition value
      * @param int $guiPosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CriteriaValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CriteriaValueDTO
      */
     public function setGuiPosition(?int $guiPosition = null): self
     {
@@ -109,7 +109,7 @@ class CriteriaValueDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CriteriaValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CriteriaValueDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -132,7 +132,7 @@ class CriteriaValueDTO extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CriteriaValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CriteriaValueDTO
      */
     public function setValue(?string $value = null): self
     {

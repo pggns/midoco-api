@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMergedDunningResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDunning
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDunning[]
      */
     protected ?array $MidocoDunning = null;
     /**
      * Constructor method for GetMergedDunningResponse
      * @uses GetMergedDunningResponse::setMidocoDunning()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning[] $midocoDunning
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDunning[] $midocoDunning
      */
     public function __construct(?array $midocoDunning = null)
     {
@@ -34,7 +34,7 @@ class GetMergedDunningResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDunning value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDunning[]
      */
     public function getMidocoDunning(): ?array
     {
@@ -55,12 +55,12 @@ class GetMergedDunningResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMergedDunningResponseMidocoDunningItem) {
             // validation for constraint: itemType
-            if (!$getMergedDunningResponseMidocoDunningItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning) {
+            if (!$getMergedDunningResponseMidocoDunningItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoDunning) {
                 $invalidValues[] = is_object($getMergedDunningResponseMidocoDunningItem) ? get_class($getMergedDunningResponseMidocoDunningItem) : sprintf('%s(%s)', gettype($getMergedDunningResponseMidocoDunningItem), var_export($getMergedDunningResponseMidocoDunningItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDunning property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDunning property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDunning, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMergedDunningResponse extends AbstractStructBase
     /**
      * Set MidocoDunning value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning[] $midocoDunning
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedDunningResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDunning[] $midocoDunning
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedDunningResponse
      */
     public function setMidocoDunning(?array $midocoDunning = null): self
     {
@@ -85,14 +85,14 @@ class GetMergedDunningResponse extends AbstractStructBase
     /**
      * Add item to MidocoDunning value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedDunningResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDunning $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedDunningResponse
      */
-    public function addToMidocoDunning(\Pggns\MidocoApi\Api\Order\StructType\MidocoDunning $item): self
+    public function addToMidocoDunning(\Pggns\MidocoApi\Order\StructType\MidocoDunning $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning) {
-            throw new InvalidArgumentException(sprintf('The MidocoDunning property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoDunning) {
+            throw new InvalidArgumentException(sprintf('The MidocoDunning property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDunning, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDunning[] = $item;
         

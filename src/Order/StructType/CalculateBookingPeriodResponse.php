@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class CalculateBookingPeriodResponse extends AbstractStructBase
     /**
      * Set bookingPeriod value
      * @param int $bookingPeriod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateBookingPeriodResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateBookingPeriodResponse
      */
     public function setBookingPeriod(?int $bookingPeriod = null): self
     {
@@ -70,7 +70,7 @@ class CalculateBookingPeriodResponse extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateBookingPeriodResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateBookingPeriodResponse
      */
     public function setBookingYear(?int $bookingYear = null): self
     {

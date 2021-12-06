@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -271,7 +271,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -294,7 +294,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -317,7 +317,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -340,7 +340,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set creationDateFrom value
      * @param string $creationDateFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setCreationDateFrom(?string $creationDateFrom = null): self
     {
@@ -363,7 +363,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set creationDateTo value
      * @param string $creationDateTo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setCreationDateTo(?string $creationDateTo = null): self
     {
@@ -386,7 +386,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setPrice(?float $price = null): self
     {
@@ -409,7 +409,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set workingUser value
      * @param int $workingUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setWorkingUser(?int $workingUser = null): self
     {
@@ -432,7 +432,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set workingUserTimeStamp value
      * @param string $workingUserTimeStamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setWorkingUserTimeStamp(?string $workingUserTimeStamp = null): self
     {
@@ -455,7 +455,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -478,7 +478,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set travelDateFrom value
      * @param string $travelDateFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setTravelDateFrom(?string $travelDateFrom = null): self
     {
@@ -501,7 +501,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set travelDateTo value
      * @param string $travelDateTo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setTravelDateTo(?string $travelDateTo = null): self
     {
@@ -524,7 +524,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set travelTarget value
      * @param string $travelTarget
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setTravelTarget(?string $travelTarget = null): self
     {
@@ -547,7 +547,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -570,7 +570,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set travelPartner value
      * @param string $travelPartner
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setTravelPartner(?string $travelPartner = null): self
     {
@@ -593,7 +593,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setRemark(?string $remark = null): self
     {
@@ -616,7 +616,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set surname value
      * @param string $surname
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setSurname(?string $surname = null): self
     {
@@ -639,7 +639,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setForename(?string $forename = null): self
     {
@@ -662,7 +662,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set custId value
      * @param int $custId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setCustId(?int $custId = null): self
     {
@@ -685,7 +685,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set createdBy value
      * @param int $createdBy
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setCreatedBy(?int $createdBy = null): self
     {
@@ -708,7 +708,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -731,7 +731,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -754,7 +754,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set mediator value
      * @param string $mediator
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setMediator(?string $mediator = null): self
     {
@@ -777,7 +777,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param string $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setInvoiceNo(?string $invoiceNo = null): self
     {
@@ -800,7 +800,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set ticketNo value
      * @param string $ticketNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setTicketNo(?string $ticketNo = null): self
     {
@@ -823,7 +823,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -846,7 +846,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -869,7 +869,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setStatus(?string $status = null): self
     {
@@ -892,7 +892,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set isBookingIdEmpty value
      * @param bool $isBookingIdEmpty
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setIsBookingIdEmpty(?bool $isBookingIdEmpty = null): self
     {
@@ -915,7 +915,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set hideInsurances value
      * @param bool $hideInsurances
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setHideInsurances(?bool $hideInsurances = null): self
     {
@@ -938,7 +938,7 @@ class MidocoBookingControl extends AbstractStructBase
     /**
      * Set hideCancellations value
      * @param bool $hideCancellations
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingControl
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingControl
      */
     public function setHideCancellations(?bool $hideCancellations = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMarketingKeysForTypeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMarketingKey
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO[]
      */
     protected ?array $MidocoMarketingKey = null;
     /**
      * Constructor method for GetMarketingKeysForTypeResponse
      * @uses GetMarketingKeysForTypeResponse::setMidocoMarketingKey()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO[] $midocoMarketingKey
+     * @param \Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO[] $midocoMarketingKey
      */
     public function __construct(?array $midocoMarketingKey = null)
     {
@@ -34,7 +34,7 @@ class GetMarketingKeysForTypeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMarketingKey value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO[]
      */
     public function getMidocoMarketingKey(): ?array
     {
@@ -55,12 +55,12 @@ class GetMarketingKeysForTypeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMarketingKeysForTypeResponseMidocoMarketingKeyItem) {
             // validation for constraint: itemType
-            if (!$getMarketingKeysForTypeResponseMidocoMarketingKeyItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO) {
+            if (!$getMarketingKeysForTypeResponseMidocoMarketingKeyItem instanceof \Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO) {
                 $invalidValues[] = is_object($getMarketingKeysForTypeResponseMidocoMarketingKeyItem) ? get_class($getMarketingKeysForTypeResponseMidocoMarketingKeyItem) : sprintf('%s(%s)', gettype($getMarketingKeysForTypeResponseMidocoMarketingKeyItem), var_export($getMarketingKeysForTypeResponseMidocoMarketingKeyItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMarketingKey property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMarketingKey property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMarketingKeysForTypeResponse extends AbstractStructBase
     /**
      * Set MidocoMarketingKey value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO[] $midocoMarketingKey
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetMarketingKeysForTypeResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO[] $midocoMarketingKey
+     * @return \Pggns\MidocoApi\Documents\StructType\GetMarketingKeysForTypeResponse
      */
     public function setMidocoMarketingKey(?array $midocoMarketingKey = null): self
     {
@@ -85,14 +85,14 @@ class GetMarketingKeysForTypeResponse extends AbstractStructBase
     /**
      * Add item to MidocoMarketingKey value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetMarketingKeysForTypeResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetMarketingKeysForTypeResponse
      */
-    public function addToMidocoMarketingKey(\Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO $item): self
+    public function addToMidocoMarketingKey(\Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMarketingKey property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMarketingKey property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMarketingKey[] = $item;
         

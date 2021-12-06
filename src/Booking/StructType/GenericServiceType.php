@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -226,7 +226,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setPosition(int $position): self
     {
@@ -249,7 +249,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set serviceCode value
      * @param string $serviceCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setServiceCode(?string $serviceCode = null): self
     {
@@ -272,7 +272,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set serviceName value
      * @param string $serviceName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setServiceName(?string $serviceName = null): self
     {
@@ -295,7 +295,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set accomodation value
      * @param string $accomodation
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setAccomodation(?string $accomodation = null): self
     {
@@ -318,7 +318,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set catering value
      * @param string $catering
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setCatering(?string $catering = null): self
     {
@@ -341,7 +341,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set personsPerService value
      * @param string $personsPerService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setPersonsPerService(?string $personsPerService = null): self
     {
@@ -364,7 +364,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set noOfServices value
      * @param string $noOfServices
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setNoOfServices(?string $noOfServices = null): self
     {
@@ -387,7 +387,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -414,7 +414,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -441,7 +441,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {
@@ -464,7 +464,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {
@@ -487,7 +487,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set servicePrice value
      * @param float $servicePrice
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setServicePrice(?float $servicePrice = null): self
     {
@@ -510,7 +510,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set serviceCurrency value
      * @param string $serviceCurrency
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setServiceCurrency(?string $serviceCurrency = 'EUR'): self
     {
@@ -533,7 +533,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set serviceDescription value
      * @param string $serviceDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setServiceDescription(?string $serviceDescription = null): self
     {
@@ -556,7 +556,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set locationDescription value
      * @param string $locationDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setLocationDescription(?string $locationDescription = null): self
     {
@@ -579,7 +579,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set departureTime value
      * @param string $departureTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setDepartureTime(?string $departureTime = null): self
     {
@@ -606,7 +606,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set arrivalTime value
      * @param string $arrivalTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setArrivalTime(?string $arrivalTime = null): self
     {
@@ -633,7 +633,7 @@ class GenericServiceType extends AbstractStructBase
     /**
      * Set simpleService value
      * @param bool $simpleService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
      */
     public function setSimpleService(?bool $simpleService = false): self
     {

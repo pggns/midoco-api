@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class DeleteMidocoTaskPriorityRequest extends AbstractStructBase
      * The MidocoTaskPriority
      * Meta information extracted from the WSDL
      * - ref: MidocoTaskPriority
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO $MidocoTaskPriority = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO $MidocoTaskPriority = null;
     /**
      * The orgunit
      * @var string|null
@@ -35,11 +35,11 @@ class DeleteMidocoTaskPriorityRequest extends AbstractStructBase
      * @uses DeleteMidocoTaskPriorityRequest::setMidocoTaskPriority()
      * @uses DeleteMidocoTaskPriorityRequest::setOrgunit()
      * @uses DeleteMidocoTaskPriorityRequest::setCheckReferences()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority
      * @param string $orgunit
      * @param bool $checkReferences
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority = null, ?string $orgunit = null, ?bool $checkReferences = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority = null, ?string $orgunit = null, ?bool $checkReferences = null)
     {
         $this
             ->setMidocoTaskPriority($midocoTaskPriority)
@@ -48,18 +48,18 @@ class DeleteMidocoTaskPriorityRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTaskPriority value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO|null
      */
-    public function getMidocoTaskPriority(): ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO
+    public function getMidocoTaskPriority(): ?\Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO
     {
         return $this->MidocoTaskPriority;
     }
     /**
      * Set MidocoTaskPriority value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskPriorityRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskPriorityRequest
      */
-    public function setMidocoTaskPriority(?\Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority = null): self
+    public function setMidocoTaskPriority(?\Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO $midocoTaskPriority = null): self
     {
         $this->MidocoTaskPriority = $midocoTaskPriority;
         
@@ -76,7 +76,7 @@ class DeleteMidocoTaskPriorityRequest extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskPriorityRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskPriorityRequest
      */
     public function setOrgunit(?string $orgunit = null): self
     {
@@ -99,7 +99,7 @@ class DeleteMidocoTaskPriorityRequest extends AbstractStructBase
     /**
      * Set checkReferences value
      * @param bool $checkReferences
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskPriorityRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskPriorityRequest
      */
     public function setCheckReferences(?bool $checkReferences = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteCateringCodeRequest extends AbstractStructBase
      * The MidocoCateringCode
      * Meta information extracted from the WSDL
      * - ref: MidocoCateringCode
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoCateringCode|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoCateringCode|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCateringCode $MidocoCateringCode = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoCateringCode $MidocoCateringCode = null;
     /**
      * Constructor method for DeleteCateringCodeRequest
      * @uses DeleteCateringCodeRequest::setMidocoCateringCode()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoCateringCode $midocoCateringCode
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoCateringCode $midocoCateringCode
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCateringCode $midocoCateringCode = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoCateringCode $midocoCateringCode = null)
     {
         $this
             ->setMidocoCateringCode($midocoCateringCode);
     }
     /**
      * Get MidocoCateringCode value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCateringCode|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCateringCode|null
      */
-    public function getMidocoCateringCode(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCateringCode
+    public function getMidocoCateringCode(): ?\Pggns\MidocoApi\Documents\StructType\MidocoCateringCode
     {
         return $this->MidocoCateringCode;
     }
     /**
      * Set MidocoCateringCode value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoCateringCode $midocoCateringCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DeleteCateringCodeRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoCateringCode $midocoCateringCode
+     * @return \Pggns\MidocoApi\Documents\StructType\DeleteCateringCodeRequest
      */
-    public function setMidocoCateringCode(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCateringCode $midocoCateringCode = null): self
+    public function setMidocoCateringCode(?\Pggns\MidocoApi\Documents\StructType\MidocoCateringCode $midocoCateringCode = null): self
     {
         $this->MidocoCateringCode = $midocoCateringCode;
         

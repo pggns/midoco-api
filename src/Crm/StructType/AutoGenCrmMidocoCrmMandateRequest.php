@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class AutoGenCrmMidocoCrmMandateRequest extends AbstractStructBase
     /**
      * Set BankCountry value
      * @param string $bankCountry
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AutoGenCrmMidocoCrmMandateRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\AutoGenCrmMidocoCrmMandateRequest
      */
     public function setBankCountry(?string $bankCountry = null): self
     {

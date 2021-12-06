@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteMfGroupRequest extends AbstractStructBase
      * The MidocoMfGroup
      * Meta information extracted from the WSDL
      * - ref: MidocoMfGroup
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMfGroup|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoMfGroup|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMfGroup $MidocoMfGroup = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoMfGroup $MidocoMfGroup = null;
     /**
      * Constructor method for DeleteMfGroupRequest
      * @uses DeleteMfGroupRequest::setMidocoMfGroup()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMfGroup $midocoMfGroup
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoMfGroup $midocoMfGroup
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMfGroup $midocoMfGroup = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoMfGroup $midocoMfGroup = null)
     {
         $this
             ->setMidocoMfGroup($midocoMfGroup);
     }
     /**
      * Get MidocoMfGroup value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMfGroup|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMfGroup|null
      */
-    public function getMidocoMfGroup(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMfGroup
+    public function getMidocoMfGroup(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoMfGroup
     {
         return $this->MidocoMfGroup;
     }
     /**
      * Set MidocoMfGroup value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMfGroup $midocoMfGroup
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteMfGroupRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoMfGroup $midocoMfGroup
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteMfGroupRequest
      */
-    public function setMidocoMfGroup(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMfGroup $midocoMfGroup = null): self
+    public function setMidocoMfGroup(?\Pggns\MidocoApi\Orderlists\StructType\MidocoMfGroup $midocoMfGroup = null): self
     {
         $this->MidocoMfGroup = $midocoMfGroup;
         

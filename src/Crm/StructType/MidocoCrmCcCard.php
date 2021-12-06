@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoCrmCcCard extends CrmCcCardDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCcToken
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCcToken[]
      */
     protected ?array $MidocoCcToken = null;
     /**
@@ -45,7 +45,7 @@ class MidocoCrmCcCard extends CrmCcCardDTO
      * @uses MidocoCrmCcCard::setBonusType()
      * @uses MidocoCrmCcCard::setCreditCardHiddenNumber()
      * @uses MidocoCrmCcCard::setCvc()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken[] $midocoCcToken
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCcToken[] $midocoCcToken
      * @param string $bonusType
      * @param string $creditCardHiddenNumber
      * @param string $cvc
@@ -60,7 +60,7 @@ class MidocoCrmCcCard extends CrmCcCardDTO
     }
     /**
      * Get MidocoCcToken value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCcToken[]
      */
     public function getMidocoCcToken(): ?array
     {
@@ -81,12 +81,12 @@ class MidocoCrmCcCard extends CrmCcCardDTO
         $invalidValues = [];
         foreach ($values as $midocoCrmCcCardMidocoCcTokenItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmCcCardMidocoCcTokenItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken) {
+            if (!$midocoCrmCcCardMidocoCcTokenItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCcToken) {
                 $invalidValues[] = is_object($midocoCrmCcCardMidocoCcTokenItem) ? get_class($midocoCrmCcCardMidocoCcTokenItem) : sprintf('%s(%s)', gettype($midocoCrmCcCardMidocoCcTokenItem), var_export($midocoCrmCcCardMidocoCcTokenItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -95,8 +95,8 @@ class MidocoCrmCcCard extends CrmCcCardDTO
     /**
      * Set MidocoCcToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken[] $midocoCcToken
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCcToken[] $midocoCcToken
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard
      */
     public function setMidocoCcToken(?array $midocoCcToken = null): self
     {
@@ -111,14 +111,14 @@ class MidocoCrmCcCard extends CrmCcCardDTO
     /**
      * Add item to MidocoCcToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCcToken $item
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard
      */
-    public function addToMidocoCcToken(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken $item): self
+    public function addToMidocoCcToken(\Pggns\MidocoApi\Crm\StructType\MidocoCcToken $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken) {
-            throw new InvalidArgumentException(sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCcToken) {
+            throw new InvalidArgumentException(sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCcToken[] = $item;
         
@@ -135,7 +135,7 @@ class MidocoCrmCcCard extends CrmCcCardDTO
     /**
      * Set bonusType value
      * @param string $bonusType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard
      */
     public function setBonusType(?string $bonusType = null): self
     {
@@ -158,7 +158,7 @@ class MidocoCrmCcCard extends CrmCcCardDTO
     /**
      * Set creditCardHiddenNumber value
      * @param string $creditCardHiddenNumber
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard
      */
     public function setCreditCardHiddenNumber(?string $creditCardHiddenNumber = null): self
     {
@@ -181,7 +181,7 @@ class MidocoCrmCcCard extends CrmCcCardDTO
     /**
      * Set cvc value
      * @param string $cvc
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard
      */
     public function setCvc(?string $cvc = null): self
     {

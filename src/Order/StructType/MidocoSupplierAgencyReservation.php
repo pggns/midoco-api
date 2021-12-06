@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoSupplierAgencyReservation extends SupplierAgencyReservDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencyReservation
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencyReservation
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class MidocoAdviceDetails4Printing extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\AdviceDetails[]
+     * @var \Pggns\MidocoApi\Documents\StructType\AdviceDetails[]
      */
     protected ?array $AdviceDetails = null;
     /**
      * Constructor method for MidocoAdviceDetails4Printing
      * @uses MidocoAdviceDetails4Printing::setAdviceDetails()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\AdviceDetails[] $adviceDetails
+     * @param \Pggns\MidocoApi\Documents\StructType\AdviceDetails[] $adviceDetails
      */
     public function __construct(?array $adviceDetails = null)
     {
@@ -33,7 +33,7 @@ class MidocoAdviceDetails4Printing extends AbstractStructBase
     }
     /**
      * Get AdviceDetails value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\AdviceDetails[]
+     * @return \Pggns\MidocoApi\Documents\StructType\AdviceDetails[]
      */
     public function getAdviceDetails(): ?array
     {
@@ -54,12 +54,12 @@ class MidocoAdviceDetails4Printing extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoAdviceDetails4PrintingAdviceDetailsItem) {
             // validation for constraint: itemType
-            if (!$midocoAdviceDetails4PrintingAdviceDetailsItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\AdviceDetails) {
+            if (!$midocoAdviceDetails4PrintingAdviceDetailsItem instanceof \Pggns\MidocoApi\Documents\StructType\AdviceDetails) {
                 $invalidValues[] = is_object($midocoAdviceDetails4PrintingAdviceDetailsItem) ? get_class($midocoAdviceDetails4PrintingAdviceDetailsItem) : sprintf('%s(%s)', gettype($midocoAdviceDetails4PrintingAdviceDetailsItem), var_export($midocoAdviceDetails4PrintingAdviceDetailsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AdviceDetails property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\AdviceDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AdviceDetails property can only contain items of type \Pggns\MidocoApi\Documents\StructType\AdviceDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class MidocoAdviceDetails4Printing extends AbstractStructBase
     /**
      * Set AdviceDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\AdviceDetails[] $adviceDetails
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceDetails4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\AdviceDetails[] $adviceDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceDetails4Printing
      */
     public function setAdviceDetails(?array $adviceDetails = null): self
     {
@@ -84,14 +84,14 @@ class MidocoAdviceDetails4Printing extends AbstractStructBase
     /**
      * Add item to AdviceDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\AdviceDetails $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceDetails4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\AdviceDetails $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceDetails4Printing
      */
-    public function addToAdviceDetails(\Pggns\MidocoApi\Api\Documents\StructType\AdviceDetails $item): self
+    public function addToAdviceDetails(\Pggns\MidocoApi\Documents\StructType\AdviceDetails $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\AdviceDetails) {
-            throw new InvalidArgumentException(sprintf('The AdviceDetails property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\AdviceDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\AdviceDetails) {
+            throw new InvalidArgumentException(sprintf('The AdviceDetails property can only contain items of type \Pggns\MidocoApi\Documents\StructType\AdviceDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AdviceDetails[] = $item;
         

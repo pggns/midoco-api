@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class DeleteBankAccountRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoBankAccount
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBankAccount|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBankAccount|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBankAccount $MidocoBankAccount = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBankAccount $MidocoBankAccount = null;
     /**
      * Constructor method for DeleteBankAccountRequest
      * @uses DeleteBankAccountRequest::setMidocoBankAccount()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBankAccount $midocoBankAccount
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBankAccount $midocoBankAccount
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBankAccount $midocoBankAccount = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBankAccount $midocoBankAccount = null)
     {
         $this
             ->setMidocoBankAccount($midocoBankAccount);
     }
     /**
      * Get MidocoBankAccount value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBankAccount|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBankAccount|null
      */
-    public function getMidocoBankAccount(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBankAccount
+    public function getMidocoBankAccount(): ?\Pggns\MidocoApi\Order\StructType\MidocoBankAccount
     {
         return $this->MidocoBankAccount;
     }
     /**
      * Set MidocoBankAccount value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBankAccount $midocoBankAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBankAccountRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBankAccount $midocoBankAccount
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBankAccountRequest
      */
-    public function setMidocoBankAccount(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBankAccount $midocoBankAccount = null): self
+    public function setMidocoBankAccount(?\Pggns\MidocoApi\Order\StructType\MidocoBankAccount $midocoBankAccount = null): self
     {
         $this->MidocoBankAccount = $midocoBankAccount;
         

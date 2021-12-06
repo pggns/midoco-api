@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeletePaymentProviderRequest extends AbstractStructBase
      * The MidocoPaymentProvider
      * Meta information extracted from the WSDL
      * - ref: MidocoPaymentProvider
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProvider|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPaymentProvider|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProvider $MidocoPaymentProvider = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoPaymentProvider $MidocoPaymentProvider = null;
     /**
      * Constructor method for DeletePaymentProviderRequest
      * @uses DeletePaymentProviderRequest::setMidocoPaymentProvider()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProvider $midocoPaymentProvider
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentProvider $midocoPaymentProvider
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProvider $midocoPaymentProvider = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoPaymentProvider $midocoPaymentProvider = null)
     {
         $this
             ->setMidocoPaymentProvider($midocoPaymentProvider);
     }
     /**
      * Get MidocoPaymentProvider value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProvider|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentProvider|null
      */
-    public function getMidocoPaymentProvider(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProvider
+    public function getMidocoPaymentProvider(): ?\Pggns\MidocoApi\Order\StructType\MidocoPaymentProvider
     {
         return $this->MidocoPaymentProvider;
     }
     /**
      * Set MidocoPaymentProvider value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProvider $midocoPaymentProvider
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeletePaymentProviderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentProvider $midocoPaymentProvider
+     * @return \Pggns\MidocoApi\Order\StructType\DeletePaymentProviderRequest
      */
-    public function setMidocoPaymentProvider(?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProvider $midocoPaymentProvider = null): self
+    public function setMidocoPaymentProvider(?\Pggns\MidocoApi\Order\StructType\MidocoPaymentProvider $midocoPaymentProvider = null): self
     {
         $this->MidocoPaymentProvider = $midocoPaymentProvider;
         

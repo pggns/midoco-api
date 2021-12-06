@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class ArErListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType[]
      */
     protected ?array $midocoArErOutputList = null;
     /**
@@ -26,7 +26,7 @@ class ArErListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType[]
      */
     protected ?array $midocoArErListSums = null;
     /**
@@ -34,7 +34,7 @@ class ArErListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsOverallType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsOverallType[]
      */
     protected ?array $midocoArErListSumsOverall = null;
     /**
@@ -50,9 +50,9 @@ class ArErListResponse extends AbstractStructBase
      * @uses ArErListResponse::setMidocoArErListSums()
      * @uses ArErListResponse::setMidocoArErListSumsOverall()
      * @uses ArErListResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType[] $midocoArErOutputList
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType[] $midocoArErListSums
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsOverallType[] $midocoArErListSumsOverall
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType[] $midocoArErOutputList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType[] $midocoArErListSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsOverallType[] $midocoArErListSumsOverall
      * @param int $noOfResults
      */
     public function __construct(?array $midocoArErOutputList = null, ?array $midocoArErListSums = null, ?array $midocoArErListSumsOverall = null, ?int $noOfResults = null)
@@ -65,7 +65,7 @@ class ArErListResponse extends AbstractStructBase
     }
     /**
      * Get midocoArErOutputList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType[]
      */
     public function getMidocoArErOutputList(): ?array
     {
@@ -86,12 +86,12 @@ class ArErListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $arErListResponseMidocoArErOutputListItem) {
             // validation for constraint: itemType
-            if (!$arErListResponseMidocoArErOutputListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType) {
+            if (!$arErListResponseMidocoArErOutputListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType) {
                 $invalidValues[] = is_object($arErListResponseMidocoArErOutputListItem) ? get_class($arErListResponseMidocoArErOutputListItem) : sprintf('%s(%s)', gettype($arErListResponseMidocoArErOutputListItem), var_export($arErListResponseMidocoArErOutputListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The midocoArErOutputList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The midocoArErOutputList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -100,8 +100,8 @@ class ArErListResponse extends AbstractStructBase
     /**
      * Set midocoArErOutputList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType[] $midocoArErOutputList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ArErListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType[] $midocoArErOutputList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ArErListResponse
      */
     public function setMidocoArErOutputList(?array $midocoArErOutputList = null): self
     {
@@ -116,14 +116,14 @@ class ArErListResponse extends AbstractStructBase
     /**
      * Add item to midocoArErOutputList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ArErListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ArErListResponse
      */
-    public function addToMidocoArErOutputList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType $item): self
+    public function addToMidocoArErOutputList(\Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType) {
-            throw new InvalidArgumentException(sprintf('The midocoArErOutputList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErOutputListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType) {
+            throw new InvalidArgumentException(sprintf('The midocoArErOutputList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoArErOutputListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->midocoArErOutputList[] = $item;
         
@@ -131,7 +131,7 @@ class ArErListResponse extends AbstractStructBase
     }
     /**
      * Get midocoArErListSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType[]
      */
     public function getMidocoArErListSums(): ?array
     {
@@ -152,12 +152,12 @@ class ArErListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $arErListResponseMidocoArErListSumsItem) {
             // validation for constraint: itemType
-            if (!$arErListResponseMidocoArErListSumsItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType) {
+            if (!$arErListResponseMidocoArErListSumsItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType) {
                 $invalidValues[] = is_object($arErListResponseMidocoArErListSumsItem) ? get_class($arErListResponseMidocoArErListSumsItem) : sprintf('%s(%s)', gettype($arErListResponseMidocoArErListSumsItem), var_export($arErListResponseMidocoArErListSumsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The midocoArErListSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The midocoArErListSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -166,8 +166,8 @@ class ArErListResponse extends AbstractStructBase
     /**
      * Set midocoArErListSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType[] $midocoArErListSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ArErListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType[] $midocoArErListSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ArErListResponse
      */
     public function setMidocoArErListSums(?array $midocoArErListSums = null): self
     {
@@ -182,14 +182,14 @@ class ArErListResponse extends AbstractStructBase
     /**
      * Add item to midocoArErListSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ArErListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ArErListResponse
      */
-    public function addToMidocoArErListSums(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType $item): self
+    public function addToMidocoArErListSums(\Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType) {
-            throw new InvalidArgumentException(sprintf('The midocoArErListSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType) {
+            throw new InvalidArgumentException(sprintf('The midocoArErListSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->midocoArErListSums[] = $item;
         
@@ -197,7 +197,7 @@ class ArErListResponse extends AbstractStructBase
     }
     /**
      * Get midocoArErListSumsOverall value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsOverallType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsOverallType[]
      */
     public function getMidocoArErListSumsOverall(): ?array
     {
@@ -218,12 +218,12 @@ class ArErListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $arErListResponseMidocoArErListSumsOverallItem) {
             // validation for constraint: itemType
-            if (!$arErListResponseMidocoArErListSumsOverallItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsOverallType) {
+            if (!$arErListResponseMidocoArErListSumsOverallItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsOverallType) {
                 $invalidValues[] = is_object($arErListResponseMidocoArErListSumsOverallItem) ? get_class($arErListResponseMidocoArErListSumsOverallItem) : sprintf('%s(%s)', gettype($arErListResponseMidocoArErListSumsOverallItem), var_export($arErListResponseMidocoArErListSumsOverallItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The midocoArErListSumsOverall property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsOverallType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The midocoArErListSumsOverall property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsOverallType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -232,8 +232,8 @@ class ArErListResponse extends AbstractStructBase
     /**
      * Set midocoArErListSumsOverall value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsOverallType[] $midocoArErListSumsOverall
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ArErListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsOverallType[] $midocoArErListSumsOverall
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ArErListResponse
      */
     public function setMidocoArErListSumsOverall(?array $midocoArErListSumsOverall = null): self
     {
@@ -248,14 +248,14 @@ class ArErListResponse extends AbstractStructBase
     /**
      * Add item to midocoArErListSumsOverall value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsOverallType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ArErListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsOverallType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ArErListResponse
      */
-    public function addToMidocoArErListSumsOverall(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsOverallType $item): self
+    public function addToMidocoArErListSumsOverall(\Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsOverallType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsOverallType) {
-            throw new InvalidArgumentException(sprintf('The midocoArErListSumsOverall property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsOverallType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsOverallType) {
+            throw new InvalidArgumentException(sprintf('The midocoArErListSumsOverall property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsOverallType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->midocoArErListSumsOverall[] = $item;
         
@@ -272,7 +272,7 @@ class ArErListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ArErListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ArErListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

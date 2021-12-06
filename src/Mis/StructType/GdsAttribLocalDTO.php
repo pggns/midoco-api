@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GdsAttribLocalDTO extends AbstractStructBase
     /**
      * Set attributeId value
      * @param string $attributeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GdsAttribLocalDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\GdsAttribLocalDTO
      */
     public function setAttributeId(?string $attributeId = null): self
     {
@@ -78,7 +78,7 @@ class GdsAttribLocalDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GdsAttribLocalDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\GdsAttribLocalDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -101,7 +101,7 @@ class GdsAttribLocalDTO extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GdsAttribLocalDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\GdsAttribLocalDTO
      */
     public function setLocale(?string $locale = null): self
     {

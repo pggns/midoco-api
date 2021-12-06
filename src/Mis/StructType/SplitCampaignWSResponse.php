@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,9 +20,9 @@ class SplitCampaignWSResponse extends AbstractStructBase
      * The MidocoMisCampaignWS
      * Meta information extracted from the WSDL
      * - ref: MidocoMisCampaignWS
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCampaignWSType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType $MidocoMisCampaignWS = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MisCampaignWSType $MidocoMisCampaignWS = null;
     /**
      * The newBaseCampaignId
      * @var int|null
@@ -38,11 +38,11 @@ class SplitCampaignWSResponse extends AbstractStructBase
      * @uses SplitCampaignWSResponse::setMidocoMisCampaignWS()
      * @uses SplitCampaignWSResponse::setNewBaseCampaignId()
      * @uses SplitCampaignWSResponse::setNewCampaignId()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS
      * @param int $newBaseCampaignId
      * @param int $newCampaignId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS = null, ?int $newBaseCampaignId = null, ?int $newCampaignId = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS = null, ?int $newBaseCampaignId = null, ?int $newCampaignId = null)
     {
         $this
             ->setMidocoMisCampaignWS($midocoMisCampaignWS)
@@ -51,18 +51,18 @@ class SplitCampaignWSResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMisCampaignWS value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignWSType|null
      */
-    public function getMidocoMisCampaignWS(): ?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType
+    public function getMidocoMisCampaignWS(): ?\Pggns\MidocoApi\Mis\StructType\MisCampaignWSType
     {
         return $this->MidocoMisCampaignWS;
     }
     /**
      * Set MidocoMisCampaignWS value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SplitCampaignWSResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS
+     * @return \Pggns\MidocoApi\Mis\StructType\SplitCampaignWSResponse
      */
-    public function setMidocoMisCampaignWS(?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS = null): self
+    public function setMidocoMisCampaignWS(?\Pggns\MidocoApi\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS = null): self
     {
         $this->MidocoMisCampaignWS = $midocoMisCampaignWS;
         
@@ -79,7 +79,7 @@ class SplitCampaignWSResponse extends AbstractStructBase
     /**
      * Set newBaseCampaignId value
      * @param int $newBaseCampaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SplitCampaignWSResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SplitCampaignWSResponse
      */
     public function setNewBaseCampaignId(?int $newBaseCampaignId = null): self
     {
@@ -102,7 +102,7 @@ class SplitCampaignWSResponse extends AbstractStructBase
     /**
      * Set newCampaignId value
      * @param int $newCampaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SplitCampaignWSResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SplitCampaignWSResponse
      */
     public function setNewCampaignId(?int $newCampaignId = null): self
     {

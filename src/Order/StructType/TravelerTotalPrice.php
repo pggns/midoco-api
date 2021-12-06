@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class TravelerTotalPrice extends AbstractStructBase
     /**
      * Set TravelerRefId value
      * @param int $travelerRefId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelerTotalPrice
+     * @return \Pggns\MidocoApi\Order\StructType\TravelerTotalPrice
      */
     public function setTravelerRefId(?int $travelerRefId = null): self
     {
@@ -80,7 +80,7 @@ class TravelerTotalPrice extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelerTotalPrice
+     * @return \Pggns\MidocoApi\Order\StructType\TravelerTotalPrice
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -103,7 +103,7 @@ class TravelerTotalPrice extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelerTotalPrice
+     * @return \Pggns\MidocoApi\Order\StructType\TravelerTotalPrice
      */
     public function setCurrency(?string $currency = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MfDefDTO extends AbstractStructBase
     /**
      * Set attrName value
      * @param string $attrName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MfDefDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MfDefDTO
      */
     public function setAttrName(?string $attrName = null): self
     {
@@ -110,7 +110,7 @@ class MfDefDTO extends AbstractStructBase
     /**
      * Set bean value
      * @param string $bean
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MfDefDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MfDefDTO
      */
     public function setBean(?string $bean = null): self
     {
@@ -133,7 +133,7 @@ class MfDefDTO extends AbstractStructBase
     /**
      * Set className value
      * @param string $className
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MfDefDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MfDefDTO
      */
     public function setClassName(?string $className = null): self
     {
@@ -156,7 +156,7 @@ class MfDefDTO extends AbstractStructBase
     /**
      * Set emptyFieldAction value
      * @param int $emptyFieldAction
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MfDefDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MfDefDTO
      */
     public function setEmptyFieldAction(?int $emptyFieldAction = null): self
     {
@@ -179,7 +179,7 @@ class MfDefDTO extends AbstractStructBase
     /**
      * Set handler value
      * @param int $handler
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MfDefDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MfDefDTO
      */
     public function setHandler(?int $handler = null): self
     {
@@ -202,7 +202,7 @@ class MfDefDTO extends AbstractStructBase
     /**
      * Set listener value
      * @param string $listener
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MfDefDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MfDefDTO
      */
     public function setListener(?string $listener = null): self
     {
@@ -225,7 +225,7 @@ class MfDefDTO extends AbstractStructBase
     /**
      * Set mandatory value
      * @param int $mandatory
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MfDefDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MfDefDTO
      */
     public function setMandatory(?int $mandatory = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class DeleteCustomerCommissionDefinitionRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCustomerCommissionDefinitionRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCustomerCommissionDefinitionRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +78,7 @@ class DeleteCustomerCommissionDefinitionRequest extends AbstractStructBase
     /**
      * Set commissionId value
      * @param int $commissionId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCustomerCommissionDefinitionRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCustomerCommissionDefinitionRequest
      */
     public function setCommissionId(?int $commissionId = null): self
     {
@@ -101,7 +101,7 @@ class DeleteCustomerCommissionDefinitionRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCustomerCommissionDefinitionRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCustomerCommissionDefinitionRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

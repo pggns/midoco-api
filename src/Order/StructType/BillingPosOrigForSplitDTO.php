@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -166,7 +166,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -189,7 +189,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -212,7 +212,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -235,7 +235,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -258,7 +258,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -281,7 +281,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set originalPrice value
      * @param float $originalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setOriginalPrice(?float $originalPrice = null): self
     {
@@ -304,7 +304,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setPositionId(?int $positionId = null): self
     {
@@ -327,7 +327,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setPrice(?float $price = null): self
     {
@@ -350,7 +350,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set singlePrice value
      * @param float $singlePrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setSinglePrice(?float $singlePrice = null): self
     {
@@ -373,7 +373,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set vat2Amount value
      * @param float $vat2Amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setVat2Amount(?float $vat2Amount = null): self
     {
@@ -396,7 +396,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set vat2Base value
      * @param float $vat2Base
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setVat2Base(?float $vat2Base = null): self
     {
@@ -419,7 +419,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -442,7 +442,7 @@ class BillingPosOrigForSplitDTO extends AbstractStructBase
     /**
      * Set vatBase value
      * @param float $vatBase
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPosOrigForSplitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPosOrigForSplitDTO
      */
     public function setVatBase(?float $vatBase = null): self
     {

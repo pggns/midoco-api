@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class Generate2FaAuthResponse extends AbstractStructBase
     /**
      * Set qrdata value
      * @param string $qrdata
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generate2FaAuthResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\Generate2FaAuthResponse
      */
     public function setQrdata(?string $qrdata = null): self
     {

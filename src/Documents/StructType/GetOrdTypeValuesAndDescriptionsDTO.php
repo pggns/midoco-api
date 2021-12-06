@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -93,7 +93,7 @@ class GetOrdTypeValuesAndDescriptionsDTO extends AbstractStructBase
      * Set value value
      * @throws InvalidArgumentException
      * @param string[] $value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrdTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrdTypeValuesAndDescriptionsDTO
      */
     public function setValue(?array $value = null): self
     {
@@ -109,7 +109,7 @@ class GetOrdTypeValuesAndDescriptionsDTO extends AbstractStructBase
      * Add item to value value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrdTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrdTypeValuesAndDescriptionsDTO
      */
     public function addToValue(string $item): self
     {
@@ -132,7 +132,7 @@ class GetOrdTypeValuesAndDescriptionsDTO extends AbstractStructBase
     /**
      * Set key value
      * @param string $key
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrdTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrdTypeValuesAndDescriptionsDTO
      */
     public function setKey(?string $key = null): self
     {
@@ -155,7 +155,7 @@ class GetOrdTypeValuesAndDescriptionsDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrdTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrdTypeValuesAndDescriptionsDTO
      */
     public function setCategoryId(?int $categoryId = null): self
     {
@@ -178,7 +178,7 @@ class GetOrdTypeValuesAndDescriptionsDTO extends AbstractStructBase
     /**
      * Set defaultValue value
      * @param string $defaultValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrdTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrdTypeValuesAndDescriptionsDTO
      */
     public function setDefaultValue(?string $defaultValue = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoCcReport extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCcReportRecord
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord[]
      */
     protected ?array $MidocoCcReportRecord = null;
     /**
@@ -55,7 +55,7 @@ class MidocoCcReport extends AbstractStructBase
      * @uses MidocoCcReport::setEmail()
      * @uses MidocoCcReport::setEmail2()
      * @uses MidocoCcReport::setMidocoEmail()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord[] $midocoCcReportRecord
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord[] $midocoCcReportRecord
      * @param string $unitName
      * @param string $creationTimestamp
      * @param string $email
@@ -74,7 +74,7 @@ class MidocoCcReport extends AbstractStructBase
     }
     /**
      * Get MidocoCcReportRecord value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord[]
      */
     public function getMidocoCcReportRecord(): ?array
     {
@@ -95,12 +95,12 @@ class MidocoCcReport extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCcReportMidocoCcReportRecordItem) {
             // validation for constraint: itemType
-            if (!$midocoCcReportMidocoCcReportRecordItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord) {
+            if (!$midocoCcReportMidocoCcReportRecordItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord) {
                 $invalidValues[] = is_object($midocoCcReportMidocoCcReportRecordItem) ? get_class($midocoCcReportMidocoCcReportRecordItem) : sprintf('%s(%s)', gettype($midocoCcReportMidocoCcReportRecordItem), var_export($midocoCcReportMidocoCcReportRecordItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCcReportRecord property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCcReportRecord property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -109,8 +109,8 @@ class MidocoCcReport extends AbstractStructBase
     /**
      * Set MidocoCcReportRecord value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord[] $midocoCcReportRecord
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReport
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord[] $midocoCcReportRecord
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReport
      */
     public function setMidocoCcReportRecord(?array $midocoCcReportRecord = null): self
     {
@@ -125,14 +125,14 @@ class MidocoCcReport extends AbstractStructBase
     /**
      * Add item to MidocoCcReportRecord value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReport
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReport
      */
-    public function addToMidocoCcReportRecord(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord $item): self
+    public function addToMidocoCcReportRecord(\Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord) {
-            throw new InvalidArgumentException(sprintf('The MidocoCcReportRecord property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord) {
+            throw new InvalidArgumentException(sprintf('The MidocoCcReportRecord property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCcReportRecord[] = $item;
         
@@ -149,7 +149,7 @@ class MidocoCcReport extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReport
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReport
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -172,7 +172,7 @@ class MidocoCcReport extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReport
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReport
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -195,7 +195,7 @@ class MidocoCcReport extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReport
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReport
      */
     public function setEmail(?string $email = null): self
     {
@@ -218,7 +218,7 @@ class MidocoCcReport extends AbstractStructBase
     /**
      * Set email2 value
      * @param string $email2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReport
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReport
      */
     public function setEmail2(?string $email2 = null): self
     {
@@ -241,7 +241,7 @@ class MidocoCcReport extends AbstractStructBase
     /**
      * Set midocoEmail value
      * @param string $midocoEmail
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReport
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReport
      */
     public function setMidocoEmail(?string $midocoEmail = null): self
     {

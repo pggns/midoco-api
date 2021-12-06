@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class PaymentDataAccessDTO extends AbstractStructBase
     /**
      * Set accessId value
      * @param int $accessId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentDataAccessDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentDataAccessDTO
      */
     public function setAccessId(?int $accessId = null): self
     {
@@ -94,7 +94,7 @@ class PaymentDataAccessDTO extends AbstractStructBase
     /**
      * Set accessTimestamp value
      * @param string $accessTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentDataAccessDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentDataAccessDTO
      */
     public function setAccessTimestamp(?string $accessTimestamp = null): self
     {
@@ -117,7 +117,7 @@ class PaymentDataAccessDTO extends AbstractStructBase
     /**
      * Set data value
      * @param string $data
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentDataAccessDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentDataAccessDTO
      */
     public function setData(?string $data = null): self
     {
@@ -140,7 +140,7 @@ class PaymentDataAccessDTO extends AbstractStructBase
     /**
      * Set ipAddress value
      * @param string $ipAddress
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentDataAccessDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentDataAccessDTO
      */
     public function setIpAddress(?string $ipAddress = null): self
     {
@@ -163,7 +163,7 @@ class PaymentDataAccessDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentDataAccessDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentDataAccessDTO
      */
     public function setUserId(?int $userId = null): self
     {

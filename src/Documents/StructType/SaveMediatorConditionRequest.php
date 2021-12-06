@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMediatorConditionRequest extends AbstractStructBase
      * The MediatorConditionInfo
      * Meta information extracted from the WSDL
      * - ref: MediatorConditionInfo
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MediatorConditionInfo|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MediatorConditionInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MediatorConditionInfo $MediatorConditionInfo = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MediatorConditionInfo $MediatorConditionInfo = null;
     /**
      * Constructor method for SaveMediatorConditionRequest
      * @uses SaveMediatorConditionRequest::setMediatorConditionInfo()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MediatorConditionInfo $mediatorConditionInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\MediatorConditionInfo $mediatorConditionInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MediatorConditionInfo $mediatorConditionInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MediatorConditionInfo $mediatorConditionInfo = null)
     {
         $this
             ->setMediatorConditionInfo($mediatorConditionInfo);
     }
     /**
      * Get MediatorConditionInfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorConditionInfo|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorConditionInfo|null
      */
-    public function getMediatorConditionInfo(): ?\Pggns\MidocoApi\Api\Documents\StructType\MediatorConditionInfo
+    public function getMediatorConditionInfo(): ?\Pggns\MidocoApi\Documents\StructType\MediatorConditionInfo
     {
         return $this->MediatorConditionInfo;
     }
     /**
      * Set MediatorConditionInfo value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MediatorConditionInfo $mediatorConditionInfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveMediatorConditionRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MediatorConditionInfo $mediatorConditionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveMediatorConditionRequest
      */
-    public function setMediatorConditionInfo(?\Pggns\MidocoApi\Api\Documents\StructType\MediatorConditionInfo $mediatorConditionInfo = null): self
+    public function setMediatorConditionInfo(?\Pggns\MidocoApi\Documents\StructType\MediatorConditionInfo $mediatorConditionInfo = null): self
     {
         $this->MediatorConditionInfo = $mediatorConditionInfo;
         

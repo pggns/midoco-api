@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class ExecuteChooseOnlinePaymentAdapterRuleRequest extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteChooseOnlinePaymentAdapterRuleRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteChooseOnlinePaymentAdapterRuleRequest
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -86,7 +86,7 @@ class ExecuteChooseOnlinePaymentAdapterRuleRequest extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteChooseOnlinePaymentAdapterRuleRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteChooseOnlinePaymentAdapterRuleRequest
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -109,7 +109,7 @@ class ExecuteChooseOnlinePaymentAdapterRuleRequest extends AbstractStructBase
     /**
      * Set ccToken value
      * @param string $ccToken
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteChooseOnlinePaymentAdapterRuleRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteChooseOnlinePaymentAdapterRuleRequest
      */
     public function setCcToken(?string $ccToken = null): self
     {
@@ -132,7 +132,7 @@ class ExecuteChooseOnlinePaymentAdapterRuleRequest extends AbstractStructBase
     /**
      * Set ccTokenType value
      * @param string $ccTokenType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteChooseOnlinePaymentAdapterRuleRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteChooseOnlinePaymentAdapterRuleRequest
      */
     public function setCcTokenType(?string $ccTokenType = null): self
     {

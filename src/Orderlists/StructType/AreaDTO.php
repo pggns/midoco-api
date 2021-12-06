@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class AreaDTO extends AbstractStructBase
     /**
      * Set areaCode value
      * @param string $areaCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AreaDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AreaDTO
      */
     public function setAreaCode(?string $areaCode = null): self
     {
@@ -70,7 +70,7 @@ class AreaDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AreaDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AreaDTO
      */
     public function setDescription(?string $description = null): self
     {

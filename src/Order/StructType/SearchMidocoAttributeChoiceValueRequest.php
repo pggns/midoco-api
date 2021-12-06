@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SearchMidocoAttributeChoiceValueRequest extends AbstractStructBase
      * The MidocoSystemAttributeChoiceValue
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeChoiceValue
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AttributeChoiceValueDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\AttributeChoiceValueDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\AttributeChoiceValueDTO $MidocoSystemAttributeChoiceValue = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\AttributeChoiceValueDTO $MidocoSystemAttributeChoiceValue = null;
     /**
      * Constructor method for SearchMidocoAttributeChoiceValueRequest
      * @uses SearchMidocoAttributeChoiceValueRequest::setMidocoSystemAttributeChoiceValue()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
+     * @param \Pggns\MidocoApi\Order\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null)
     {
         $this
             ->setMidocoSystemAttributeChoiceValue($midocoSystemAttributeChoiceValue);
     }
     /**
      * Get MidocoSystemAttributeChoiceValue value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttributeChoiceValueDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\AttributeChoiceValueDTO|null
      */
-    public function getMidocoSystemAttributeChoiceValue(): ?\Pggns\MidocoApi\Api\Order\StructType\AttributeChoiceValueDTO
+    public function getMidocoSystemAttributeChoiceValue(): ?\Pggns\MidocoApi\Order\StructType\AttributeChoiceValueDTO
     {
         return $this->MidocoSystemAttributeChoiceValue;
     }
     /**
      * Set MidocoSystemAttributeChoiceValue value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAttributeChoiceValueRequest
+     * @param \Pggns\MidocoApi\Order\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMidocoAttributeChoiceValueRequest
      */
-    public function setMidocoSystemAttributeChoiceValue(?\Pggns\MidocoApi\Api\Order\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null): self
+    public function setMidocoSystemAttributeChoiceValue(?\Pggns\MidocoApi\Order\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null): self
     {
         $this->MidocoSystemAttributeChoiceValue = $midocoSystemAttributeChoiceValue;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetProductTypesRequest extends AbstractStructBase
     /**
      * Set forPerson value
      * @param bool $forPerson
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetProductTypesRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetProductTypesRequest
      */
     public function setForPerson(?bool $forPerson = null): self
     {
@@ -70,7 +70,7 @@ class GetProductTypesRequest extends AbstractStructBase
     /**
      * Set forCompany value
      * @param bool $forCompany
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetProductTypesRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetProductTypesRequest
      */
     public function setForCompany(?bool $forCompany = null): self
     {

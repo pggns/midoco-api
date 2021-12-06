@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteConnectionTypeDescriptionRequest extends AbstractStructBase
      * The MidocoConnectionTypeDescription
      * Meta information extracted from the WSDL
      * - ref: MidocoConnectionTypeDescription
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDescDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\ConnectionTypeDescDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDescDTO $MidocoConnectionTypeDescription = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\ConnectionTypeDescDTO $MidocoConnectionTypeDescription = null;
     /**
      * Constructor method for DeleteConnectionTypeDescriptionRequest
      * @uses DeleteConnectionTypeDescriptionRequest::setMidocoConnectionTypeDescription()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDescDTO $midocoConnectionTypeDescription
+     * @param \Pggns\MidocoApi\Crm\StructType\ConnectionTypeDescDTO $midocoConnectionTypeDescription
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDescDTO $midocoConnectionTypeDescription = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\ConnectionTypeDescDTO $midocoConnectionTypeDescription = null)
     {
         $this
             ->setMidocoConnectionTypeDescription($midocoConnectionTypeDescription);
     }
     /**
      * Get MidocoConnectionTypeDescription value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDescDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\ConnectionTypeDescDTO|null
      */
-    public function getMidocoConnectionTypeDescription(): ?\Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDescDTO
+    public function getMidocoConnectionTypeDescription(): ?\Pggns\MidocoApi\Crm\StructType\ConnectionTypeDescDTO
     {
         return $this->MidocoConnectionTypeDescription;
     }
     /**
      * Set MidocoConnectionTypeDescription value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDescDTO $midocoConnectionTypeDescription
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteConnectionTypeDescriptionRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\ConnectionTypeDescDTO $midocoConnectionTypeDescription
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteConnectionTypeDescriptionRequest
      */
-    public function setMidocoConnectionTypeDescription(?\Pggns\MidocoApi\Api\Crm\StructType\ConnectionTypeDescDTO $midocoConnectionTypeDescription = null): self
+    public function setMidocoConnectionTypeDescription(?\Pggns\MidocoApi\Crm\StructType\ConnectionTypeDescDTO $midocoConnectionTypeDescription = null): self
     {
         $this->MidocoConnectionTypeDescription = $midocoConnectionTypeDescription;
         

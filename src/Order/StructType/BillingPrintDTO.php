@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class BillingPrintDTO extends AbstractStructBase
     /**
      * Set documentExportDate value
      * @param string $documentExportDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPrintDTO
      */
     public function setDocumentExportDate(?string $documentExportDate = null): self
     {
@@ -142,7 +142,7 @@ class BillingPrintDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPrintDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -165,7 +165,7 @@ class BillingPrintDTO extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPrintDTO
      */
     public function setFileName(?string $fileName = null): self
     {
@@ -188,7 +188,7 @@ class BillingPrintDTO extends AbstractStructBase
     /**
      * Set isDocumentExported value
      * @param bool $isDocumentExported
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPrintDTO
      */
     public function setIsDocumentExported(?bool $isDocumentExported = null): self
     {
@@ -211,7 +211,7 @@ class BillingPrintDTO extends AbstractStructBase
     /**
      * Set isDraft value
      * @param bool $isDraft
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPrintDTO
      */
     public function setIsDraft(?bool $isDraft = null): self
     {
@@ -234,7 +234,7 @@ class BillingPrintDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPrintDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -257,7 +257,7 @@ class BillingPrintDTO extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPrintDTO
      */
     public function setMedia(?string $media = null): self
     {
@@ -280,7 +280,7 @@ class BillingPrintDTO extends AbstractStructBase
     /**
      * Set printDate value
      * @param string $printDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPrintDTO
      */
     public function setPrintDate(?string $printDate = null): self
     {
@@ -303,7 +303,7 @@ class BillingPrintDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPrintDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -326,7 +326,7 @@ class BillingPrintDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPrintDTO
      */
     public function setUserId(?int $userId = null): self
     {
@@ -349,7 +349,7 @@ class BillingPrintDTO extends AbstractStructBase
     /**
      * Set version value
      * @param int $version
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPrintDTO
      */
     public function setVersion(?int $version = null): self
     {

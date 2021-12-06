@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class AssignedMidocoSettlOUnitDTO extends AbstractStructBase
     /**
      * Set assignedCustomerId value
      * @param int $assignedCustomerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO
      */
     public function setAssignedCustomerId(?int $assignedCustomerId = null): self
     {
@@ -102,7 +102,7 @@ class AssignedMidocoSettlOUnitDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -125,7 +125,7 @@ class AssignedMidocoSettlOUnitDTO extends AbstractStructBase
     /**
      * Set isParent value
      * @param bool $isParent
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO
      */
     public function setIsParent(?bool $isParent = null): self
     {
@@ -148,7 +148,7 @@ class AssignedMidocoSettlOUnitDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -171,7 +171,7 @@ class AssignedMidocoSettlOUnitDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -194,7 +194,7 @@ class AssignedMidocoSettlOUnitDTO extends AbstractStructBase
     /**
      * Set useAllUnitsFromDb value
      * @param bool $useAllUnitsFromDb
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO
      */
     public function setUseAllUnitsFromDb(?bool $useAllUnitsFromDb = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -176,7 +176,7 @@ class FlightServiceType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\FlightMealType[]
+     * @var \Pggns\MidocoApi\Booking\StructType\FlightMealType[]
      */
     protected ?array $meal = null;
     /**
@@ -184,7 +184,7 @@ class FlightServiceType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\FlightSeatType[]
+     * @var \Pggns\MidocoApi\Booking\StructType\FlightSeatType[]
      */
     protected ?array $seat = null;
     /**
@@ -234,7 +234,7 @@ class FlightServiceType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest_1[]
+     * @var \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest_1[]
      */
     protected ?array $specialServiceRequest = null;
     /**
@@ -298,15 +298,15 @@ class FlightServiceType extends AbstractStructBase
      * @param string $cabinClass
      * @param int $stopoverCount
      * @param string $aircraftType
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\FlightMealType[] $meal
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\FlightSeatType[] $seat
+     * @param \Pggns\MidocoApi\Booking\StructType\FlightMealType[] $meal
+     * @param \Pggns\MidocoApi\Booking\StructType\FlightSeatType[] $seat
      * @param string $operatingCarrier
      * @param string $operatingCarrierFlightNo
      * @param int $miles
      * @param string $duration
      * @param string $fareBase
      * @param float $co2Emission
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest_1[] $specialServiceRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest_1[] $specialServiceRequest
      * @param string $departureTerminal
      */
     public function __construct(int $position, ?string $carrier = null, ?string $flightNo = null, ?string $bookingClass = null, ?string $classDescription = null, ?bool $openSegment = false, ?string $departureCode = null, ?string $destinationCode = null, ?string $departureDate = null, ?string $departureTime = null, ?string $checkinTime = null, ?string $arrivalDate = null, ?string $arrivalTime = null, ?string $departureDescription = null, ?string $destinationDescription = null, ?string $personAssignment = null, ?string $serviceStatus = null, ?string $baggageAllowance = null, ?int $segmentNo = null, ?string $cabinClass = null, ?int $stopoverCount = null, ?string $aircraftType = null, ?array $meal = null, ?array $seat = null, ?string $operatingCarrier = null, ?string $operatingCarrierFlightNo = null, ?int $miles = null, ?string $duration = null, ?string $fareBase = null, ?float $co2Emission = null, ?array $specialServiceRequest = null, ?string $departureTerminal = null)
@@ -356,7 +356,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setPosition(int $position): self
     {
@@ -379,7 +379,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -402,7 +402,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set flightNo value
      * @param string $flightNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setFlightNo(?string $flightNo = null): self
     {
@@ -425,7 +425,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set bookingClass value
      * @param string $bookingClass
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setBookingClass(?string $bookingClass = null): self
     {
@@ -448,7 +448,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set classDescription value
      * @param string $classDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setClassDescription(?string $classDescription = null): self
     {
@@ -471,7 +471,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set openSegment value
      * @param bool $openSegment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setOpenSegment(?bool $openSegment = false): self
     {
@@ -494,7 +494,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -517,7 +517,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -540,7 +540,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set departureDate value
      * @param string $departureDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setDepartureDate(?string $departureDate = null): self
     {
@@ -567,7 +567,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set departureTime value
      * @param string $departureTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setDepartureTime(?string $departureTime = null): self
     {
@@ -594,7 +594,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set checkinTime value
      * @param string $checkinTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setCheckinTime(?string $checkinTime = null): self
     {
@@ -621,7 +621,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set arrivalDate value
      * @param string $arrivalDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setArrivalDate(?string $arrivalDate = null): self
     {
@@ -648,7 +648,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set arrivalTime value
      * @param string $arrivalTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setArrivalTime(?string $arrivalTime = null): self
     {
@@ -675,7 +675,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set departureDescription value
      * @param string $departureDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setDepartureDescription(?string $departureDescription = null): self
     {
@@ -698,7 +698,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set destinationDescription value
      * @param string $destinationDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setDestinationDescription(?string $destinationDescription = null): self
     {
@@ -721,7 +721,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {
@@ -744,7 +744,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {
@@ -767,7 +767,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set baggageAllowance value
      * @param string $baggageAllowance
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setBaggageAllowance(?string $baggageAllowance = null): self
     {
@@ -790,7 +790,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set segmentNo value
      * @param int $segmentNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setSegmentNo(?int $segmentNo = null): self
     {
@@ -813,7 +813,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set cabinClass value
      * @param string $cabinClass
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setCabinClass(?string $cabinClass = null): self
     {
@@ -836,7 +836,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set stopoverCount value
      * @param int $stopoverCount
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setStopoverCount(?int $stopoverCount = null): self
     {
@@ -859,7 +859,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set aircraftType value
      * @param string $aircraftType
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setAircraftType(?string $aircraftType = null): self
     {
@@ -873,7 +873,7 @@ class FlightServiceType extends AbstractStructBase
     }
     /**
      * Get meal value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightMealType[]
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightMealType[]
      */
     public function getMeal(): ?array
     {
@@ -894,12 +894,12 @@ class FlightServiceType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $flightServiceTypeMealItem) {
             // validation for constraint: itemType
-            if (!$flightServiceTypeMealItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\FlightMealType) {
+            if (!$flightServiceTypeMealItem instanceof \Pggns\MidocoApi\Booking\StructType\FlightMealType) {
                 $invalidValues[] = is_object($flightServiceTypeMealItem) ? get_class($flightServiceTypeMealItem) : sprintf('%s(%s)', gettype($flightServiceTypeMealItem), var_export($flightServiceTypeMealItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The meal property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\FlightMealType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The meal property can only contain items of type \Pggns\MidocoApi\Booking\StructType\FlightMealType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -908,8 +908,8 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set meal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\FlightMealType[] $meal
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @param \Pggns\MidocoApi\Booking\StructType\FlightMealType[] $meal
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setMeal(?array $meal = null): self
     {
@@ -924,14 +924,14 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Add item to meal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\FlightMealType $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @param \Pggns\MidocoApi\Booking\StructType\FlightMealType $item
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
-    public function addToMeal(\Pggns\MidocoApi\Api\Booking\StructType\FlightMealType $item): self
+    public function addToMeal(\Pggns\MidocoApi\Booking\StructType\FlightMealType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\FlightMealType) {
-            throw new InvalidArgumentException(sprintf('The meal property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\FlightMealType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\FlightMealType) {
+            throw new InvalidArgumentException(sprintf('The meal property can only contain items of type \Pggns\MidocoApi\Booking\StructType\FlightMealType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->meal[] = $item;
         
@@ -939,7 +939,7 @@ class FlightServiceType extends AbstractStructBase
     }
     /**
      * Get seat value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightSeatType[]
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightSeatType[]
      */
     public function getSeat(): ?array
     {
@@ -960,12 +960,12 @@ class FlightServiceType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $flightServiceTypeSeatItem) {
             // validation for constraint: itemType
-            if (!$flightServiceTypeSeatItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\FlightSeatType) {
+            if (!$flightServiceTypeSeatItem instanceof \Pggns\MidocoApi\Booking\StructType\FlightSeatType) {
                 $invalidValues[] = is_object($flightServiceTypeSeatItem) ? get_class($flightServiceTypeSeatItem) : sprintf('%s(%s)', gettype($flightServiceTypeSeatItem), var_export($flightServiceTypeSeatItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The seat property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\FlightSeatType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The seat property can only contain items of type \Pggns\MidocoApi\Booking\StructType\FlightSeatType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -974,8 +974,8 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set seat value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\FlightSeatType[] $seat
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @param \Pggns\MidocoApi\Booking\StructType\FlightSeatType[] $seat
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setSeat(?array $seat = null): self
     {
@@ -990,14 +990,14 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Add item to seat value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\FlightSeatType $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @param \Pggns\MidocoApi\Booking\StructType\FlightSeatType $item
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
-    public function addToSeat(\Pggns\MidocoApi\Api\Booking\StructType\FlightSeatType $item): self
+    public function addToSeat(\Pggns\MidocoApi\Booking\StructType\FlightSeatType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\FlightSeatType) {
-            throw new InvalidArgumentException(sprintf('The seat property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\FlightSeatType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\FlightSeatType) {
+            throw new InvalidArgumentException(sprintf('The seat property can only contain items of type \Pggns\MidocoApi\Booking\StructType\FlightSeatType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->seat[] = $item;
         
@@ -1014,7 +1014,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set operatingCarrier value
      * @param string $operatingCarrier
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setOperatingCarrier(?string $operatingCarrier = null): self
     {
@@ -1037,7 +1037,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set operatingCarrierFlightNo value
      * @param string $operatingCarrierFlightNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setOperatingCarrierFlightNo(?string $operatingCarrierFlightNo = null): self
     {
@@ -1060,7 +1060,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set miles value
      * @param int $miles
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setMiles(?int $miles = null): self
     {
@@ -1083,7 +1083,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set duration value
      * @param string $duration
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setDuration(?string $duration = null): self
     {
@@ -1106,7 +1106,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set fareBase value
      * @param string $fareBase
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setFareBase(?string $fareBase = null): self
     {
@@ -1129,7 +1129,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set co2Emission value
      * @param float $co2Emission
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setCo2Emission(?float $co2Emission = null): self
     {
@@ -1143,7 +1143,7 @@ class FlightServiceType extends AbstractStructBase
     }
     /**
      * Get specialServiceRequest value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest_1[]
+     * @return \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest_1[]
      */
     public function getSpecialServiceRequest(): ?array
     {
@@ -1164,12 +1164,12 @@ class FlightServiceType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $flightServiceTypeSpecialServiceRequestItem) {
             // validation for constraint: itemType
-            if (!$flightServiceTypeSpecialServiceRequestItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest_1) {
+            if (!$flightServiceTypeSpecialServiceRequestItem instanceof \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest_1) {
                 $invalidValues[] = is_object($flightServiceTypeSpecialServiceRequestItem) ? get_class($flightServiceTypeSpecialServiceRequestItem) : sprintf('%s(%s)', gettype($flightServiceTypeSpecialServiceRequestItem), var_export($flightServiceTypeSpecialServiceRequestItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The specialServiceRequest property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest_1, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The specialServiceRequest property can only contain items of type \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest_1, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -1178,8 +1178,8 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set specialServiceRequest value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest_1[] $specialServiceRequest
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @param \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest_1[] $specialServiceRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setSpecialServiceRequest(?array $specialServiceRequest = null): self
     {
@@ -1194,14 +1194,14 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Add item to specialServiceRequest value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest_1 $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @param \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest_1 $item
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
-    public function addToSpecialServiceRequest(\Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest_1 $item): self
+    public function addToSpecialServiceRequest(\Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest_1 $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest_1) {
-            throw new InvalidArgumentException(sprintf('The specialServiceRequest property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest_1, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest_1) {
+            throw new InvalidArgumentException(sprintf('The specialServiceRequest property can only contain items of type \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest_1, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->specialServiceRequest[] = $item;
         
@@ -1218,7 +1218,7 @@ class FlightServiceType extends AbstractStructBase
     /**
      * Set departureTerminal value
      * @param string $departureTerminal
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType
      */
     public function setDepartureTerminal(?string $departureTerminal = null): self
     {

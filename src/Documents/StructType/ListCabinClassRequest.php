@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class ListCabinClassRequest extends AbstractStructBase
      * The MidocoCabinClass
      * Meta information extracted from the WSDL
      * - ref: MidocoCabinClass
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoCabinClass|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoCabinClass|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCabinClass $MidocoCabinClass = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoCabinClass $MidocoCabinClass = null;
     /**
      * Constructor method for ListCabinClassRequest
      * @uses ListCabinClassRequest::setMidocoCabinClass()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoCabinClass $midocoCabinClass
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoCabinClass $midocoCabinClass
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCabinClass $midocoCabinClass = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoCabinClass $midocoCabinClass = null)
     {
         $this
             ->setMidocoCabinClass($midocoCabinClass);
     }
     /**
      * Get MidocoCabinClass value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCabinClass|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCabinClass|null
      */
-    public function getMidocoCabinClass(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCabinClass
+    public function getMidocoCabinClass(): ?\Pggns\MidocoApi\Documents\StructType\MidocoCabinClass
     {
         return $this->MidocoCabinClass;
     }
     /**
      * Set MidocoCabinClass value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoCabinClass $midocoCabinClass
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListCabinClassRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoCabinClass $midocoCabinClass
+     * @return \Pggns\MidocoApi\Documents\StructType\ListCabinClassRequest
      */
-    public function setMidocoCabinClass(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCabinClass $midocoCabinClass = null): self
+    public function setMidocoCabinClass(?\Pggns\MidocoApi\Documents\StructType\MidocoCabinClass $midocoCabinClass = null): self
     {
         $this->MidocoCabinClass = $midocoCabinClass;
         

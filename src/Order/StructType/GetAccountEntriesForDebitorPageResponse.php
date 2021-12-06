@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class GetAccountEntriesForDebitorPageResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType[]
+     * @var \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType[]
      */
     protected ?array $MidocoDebitorAccountEntry = null;
     /**
      * Constructor method for GetAccountEntriesForDebitorPageResponse
      * @uses GetAccountEntriesForDebitorPageResponse::setMidocoDebitorAccountEntry()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType[] $midocoDebitorAccountEntry
+     * @param \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType[] $midocoDebitorAccountEntry
      */
     public function __construct(?array $midocoDebitorAccountEntry = null)
     {
@@ -33,7 +33,7 @@ class GetAccountEntriesForDebitorPageResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDebitorAccountEntry value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType[]
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType[]
      */
     public function getMidocoDebitorAccountEntry(): ?array
     {
@@ -54,12 +54,12 @@ class GetAccountEntriesForDebitorPageResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAccountEntriesForDebitorPageResponseMidocoDebitorAccountEntryItem) {
             // validation for constraint: itemType
-            if (!$getAccountEntriesForDebitorPageResponseMidocoDebitorAccountEntryItem instanceof \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType) {
+            if (!$getAccountEntriesForDebitorPageResponseMidocoDebitorAccountEntryItem instanceof \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType) {
                 $invalidValues[] = is_object($getAccountEntriesForDebitorPageResponseMidocoDebitorAccountEntryItem) ? get_class($getAccountEntriesForDebitorPageResponseMidocoDebitorAccountEntryItem) : sprintf('%s(%s)', gettype($getAccountEntriesForDebitorPageResponseMidocoDebitorAccountEntryItem), var_export($getAccountEntriesForDebitorPageResponseMidocoDebitorAccountEntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDebitorAccountEntry property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDebitorAccountEntry property can only contain items of type \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class GetAccountEntriesForDebitorPageResponse extends AbstractStructBase
     /**
      * Set MidocoDebitorAccountEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType[] $midocoDebitorAccountEntry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorPageResponse
+     * @param \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType[] $midocoDebitorAccountEntry
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorPageResponse
      */
     public function setMidocoDebitorAccountEntry(?array $midocoDebitorAccountEntry = null): self
     {
@@ -84,14 +84,14 @@ class GetAccountEntriesForDebitorPageResponse extends AbstractStructBase
     /**
      * Add item to MidocoDebitorAccountEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorPageResponse
+     * @param \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorPageResponse
      */
-    public function addToMidocoDebitorAccountEntry(\Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType $item): self
+    public function addToMidocoDebitorAccountEntry(\Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType) {
-            throw new InvalidArgumentException(sprintf('The MidocoDebitorAccountEntry property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType) {
+            throw new InvalidArgumentException(sprintf('The MidocoDebitorAccountEntry property can only contain items of type \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDebitorAccountEntry[] = $item;
         

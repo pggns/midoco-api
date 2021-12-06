@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -67,7 +67,7 @@ class GetCcOnlinePaymentReferenceDataRequest extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCcOnlinePaymentReferenceDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetCcOnlinePaymentReferenceDataRequest
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -90,7 +90,7 @@ class GetCcOnlinePaymentReferenceDataRequest extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCcOnlinePaymentReferenceDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetCcOnlinePaymentReferenceDataRequest
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -113,7 +113,7 @@ class GetCcOnlinePaymentReferenceDataRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCcOnlinePaymentReferenceDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetCcOnlinePaymentReferenceDataRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -136,7 +136,7 @@ class GetCcOnlinePaymentReferenceDataRequest extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCcOnlinePaymentReferenceDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetCcOnlinePaymentReferenceDataRequest
      */
     public function setItemId(?int $itemId = null): self
     {

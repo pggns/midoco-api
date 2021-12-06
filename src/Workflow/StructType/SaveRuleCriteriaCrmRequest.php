@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -25,17 +25,17 @@ class SaveRuleCriteriaCrmRequest extends AbstractStructBase
      * The MidocoRuleCriteriaCrm
      * Meta information extracted from the WSDL
      * - ref: MidocoRuleCriteriaCrm
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmDTO|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmDTO $MidocoRuleCriteriaCrm = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmDTO $MidocoRuleCriteriaCrm = null;
     /**
      * Constructor method for SaveRuleCriteriaCrmRequest
      * @uses SaveRuleCriteriaCrmRequest::setUnitName()
      * @uses SaveRuleCriteriaCrmRequest::setMidocoRuleCriteriaCrm()
      * @param string $unitName
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmDTO $midocoRuleCriteriaCrm
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmDTO $midocoRuleCriteriaCrm
      */
-    public function __construct(string $unitName, ?\Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmDTO $midocoRuleCriteriaCrm = null)
+    public function __construct(string $unitName, ?\Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmDTO $midocoRuleCriteriaCrm = null)
     {
         $this
             ->setUnitName($unitName)
@@ -52,7 +52,7 @@ class SaveRuleCriteriaCrmRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaCrmRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaCrmRequest
      */
     public function setUnitName(string $unitName): self
     {
@@ -66,18 +66,18 @@ class SaveRuleCriteriaCrmRequest extends AbstractStructBase
     }
     /**
      * Get MidocoRuleCriteriaCrm value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmDTO|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmDTO|null
      */
-    public function getMidocoRuleCriteriaCrm(): ?\Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmDTO
+    public function getMidocoRuleCriteriaCrm(): ?\Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmDTO
     {
         return $this->MidocoRuleCriteriaCrm;
     }
     /**
      * Set MidocoRuleCriteriaCrm value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmDTO $midocoRuleCriteriaCrm
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaCrmRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmDTO $midocoRuleCriteriaCrm
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaCrmRequest
      */
-    public function setMidocoRuleCriteriaCrm(?\Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmDTO $midocoRuleCriteriaCrm = null): self
+    public function setMidocoRuleCriteriaCrm(?\Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmDTO $midocoRuleCriteriaCrm = null): self
     {
         $this->MidocoRuleCriteriaCrm = $midocoRuleCriteriaCrm;
         

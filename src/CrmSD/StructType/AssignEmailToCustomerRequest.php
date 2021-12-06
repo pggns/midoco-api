@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class AssignEmailToCustomerRequest extends AbstractStructBase
      * The MidocoEmailInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoEmailInfo
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoEmailInfo|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoEmailInfo $MidocoEmailInfo = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo $MidocoEmailInfo = null;
     /**
      * The MidocoCustomerInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerInfo
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInfo|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInfo $MidocoCustomerInfo = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo $MidocoCustomerInfo = null;
     /**
      * The MidocoBookingInfo
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoBookingInfo|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoBookingInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoBookingInfo $MidocoBookingInfo = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoBookingInfo $MidocoBookingInfo = null;
     /**
      * Constructor method for AssignEmailToCustomerRequest
      * @uses AssignEmailToCustomerRequest::setMidocoEmailInfo()
      * @uses AssignEmailToCustomerRequest::setMidocoCustomerInfo()
      * @uses AssignEmailToCustomerRequest::setMidocoBookingInfo()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoEmailInfo $midocoEmailInfo
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInfo $midocoCustomerInfo
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoBookingInfo $midocoBookingInfo
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo $midocoEmailInfo
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo $midocoCustomerInfo
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoBookingInfo $midocoBookingInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoEmailInfo $midocoEmailInfo = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInfo $midocoCustomerInfo = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoBookingInfo $midocoBookingInfo = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo $midocoEmailInfo = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo $midocoCustomerInfo = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoBookingInfo $midocoBookingInfo = null)
     {
         $this
             ->setMidocoEmailInfo($midocoEmailInfo)
@@ -55,18 +55,18 @@ class AssignEmailToCustomerRequest extends AbstractStructBase
     }
     /**
      * Get MidocoEmailInfo value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoEmailInfo|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo|null
      */
-    public function getMidocoEmailInfo(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoEmailInfo
+    public function getMidocoEmailInfo(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo
     {
         return $this->MidocoEmailInfo;
     }
     /**
      * Set MidocoEmailInfo value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoEmailInfo $midocoEmailInfo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignEmailToCustomerRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo $midocoEmailInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignEmailToCustomerRequest
      */
-    public function setMidocoEmailInfo(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoEmailInfo $midocoEmailInfo = null): self
+    public function setMidocoEmailInfo(?\Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo $midocoEmailInfo = null): self
     {
         $this->MidocoEmailInfo = $midocoEmailInfo;
         
@@ -74,18 +74,18 @@ class AssignEmailToCustomerRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerInfo value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInfo|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo|null
      */
-    public function getMidocoCustomerInfo(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInfo
+    public function getMidocoCustomerInfo(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo
     {
         return $this->MidocoCustomerInfo;
     }
     /**
      * Set MidocoCustomerInfo value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInfo $midocoCustomerInfo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignEmailToCustomerRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo $midocoCustomerInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignEmailToCustomerRequest
      */
-    public function setMidocoCustomerInfo(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInfo $midocoCustomerInfo = null): self
+    public function setMidocoCustomerInfo(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo $midocoCustomerInfo = null): self
     {
         $this->MidocoCustomerInfo = $midocoCustomerInfo;
         
@@ -93,18 +93,18 @@ class AssignEmailToCustomerRequest extends AbstractStructBase
     }
     /**
      * Get MidocoBookingInfo value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoBookingInfo|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoBookingInfo|null
      */
-    public function getMidocoBookingInfo(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoBookingInfo
+    public function getMidocoBookingInfo(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoBookingInfo
     {
         return $this->MidocoBookingInfo;
     }
     /**
      * Set MidocoBookingInfo value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoBookingInfo $midocoBookingInfo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignEmailToCustomerRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoBookingInfo $midocoBookingInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignEmailToCustomerRequest
      */
-    public function setMidocoBookingInfo(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoBookingInfo $midocoBookingInfo = null): self
+    public function setMidocoBookingInfo(?\Pggns\MidocoApi\CrmSD\StructType\MidocoBookingInfo $midocoBookingInfo = null): self
     {
         $this->MidocoBookingInfo = $midocoBookingInfo;
         

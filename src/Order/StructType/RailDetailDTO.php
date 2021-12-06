@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -559,7 +559,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set adapter value
      * @param string $adapter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setAdapter(?string $adapter = null): self
     {
@@ -582,7 +582,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set arrivalCode value
      * @param string $arrivalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setArrivalCode(?string $arrivalCode = null): self
     {
@@ -605,7 +605,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set arrivalDate value
      * @param string $arrivalDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setArrivalDate(?string $arrivalDate = null): self
     {
@@ -628,7 +628,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set arrivalDesc value
      * @param string $arrivalDesc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setArrivalDesc(?string $arrivalDesc = null): self
     {
@@ -651,7 +651,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set arrivalPlatform value
      * @param string $arrivalPlatform
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setArrivalPlatform(?string $arrivalPlatform = null): self
     {
@@ -674,7 +674,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set arrivalTime value
      * @param string $arrivalTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setArrivalTime(?string $arrivalTime = null): self
     {
@@ -697,7 +697,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set bookingClass value
      * @param string $bookingClass
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setBookingClass(?string $bookingClass = null): self
     {
@@ -720,7 +720,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set bookingType value
      * @param string $bookingType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setBookingType(?string $bookingType = null): self
     {
@@ -743,7 +743,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set cancellationFee value
      * @param float $cancellationFee
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setCancellationFee(?float $cancellationFee = null): self
     {
@@ -766,7 +766,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set ccApprovalCode value
      * @param string $ccApprovalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setCcApprovalCode(?string $ccApprovalCode = null): self
     {
@@ -789,7 +789,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set ccNumber value
      * @param string $ccNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setCcNumber(?string $ccNumber = null): self
     {
@@ -812,7 +812,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set ccSlipNo value
      * @param string $ccSlipNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setCcSlipNo(?string $ccSlipNo = null): self
     {
@@ -835,7 +835,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -858,7 +858,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set companyCustomer value
      * @param bool $companyCustomer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setCompanyCustomer(?bool $companyCustomer = null): self
     {
@@ -881,7 +881,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set crsAgencyNo value
      * @param string $crsAgencyNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setCrsAgencyNo(?string $crsAgencyNo = null): self
     {
@@ -904,7 +904,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -927,7 +927,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -950,7 +950,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set departureDate value
      * @param string $departureDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setDepartureDate(?string $departureDate = null): self
     {
@@ -973,7 +973,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set departureDesc value
      * @param string $departureDesc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setDepartureDesc(?string $departureDesc = null): self
     {
@@ -996,7 +996,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set departurePlatform value
      * @param string $departurePlatform
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setDeparturePlatform(?string $departurePlatform = null): self
     {
@@ -1019,7 +1019,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set departureTime value
      * @param string $departureTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setDepartureTime(?string $departureTime = null): self
     {
@@ -1042,7 +1042,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set documentNo value
      * @param string $documentNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setDocumentNo(?string $documentNo = null): self
     {
@@ -1065,7 +1065,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set feeAmount value
      * @param float $feeAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setFeeAmount(?float $feeAmount = null): self
     {
@@ -1088,7 +1088,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set globalPrice value
      * @param bool $globalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setGlobalPrice(?bool $globalPrice = null): self
     {
@@ -1111,7 +1111,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set issueType value
      * @param string $issueType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setIssueType(?string $issueType = null): self
     {
@@ -1134,7 +1134,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -1157,7 +1157,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set journeyType value
      * @param string $journeyType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setJourneyType(?string $journeyType = null): self
     {
@@ -1180,7 +1180,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set lastCancelDate value
      * @param string $lastCancelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setLastCancelDate(?string $lastCancelDate = null): self
     {
@@ -1203,7 +1203,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set noOfChildren value
      * @param int $noOfChildren
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setNoOfChildren(?int $noOfChildren = null): self
     {
@@ -1226,7 +1226,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set partition value
      * @param string $partition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setPartition(?string $partition = null): self
     {
@@ -1249,7 +1249,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set passengercommrate value
      * @param float $passengercommrate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setPassengercommrate(?float $passengercommrate = null): self
     {
@@ -1272,7 +1272,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set paxPerServices value
      * @param int $paxPerServices
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setPaxPerServices(?int $paxPerServices = null): self
     {
@@ -1295,7 +1295,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set paymentMode value
      * @param string $paymentMode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setPaymentMode(?string $paymentMode = null): self
     {
@@ -1318,7 +1318,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {
@@ -1341,7 +1341,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -1364,7 +1364,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set priceClass value
      * @param string $priceClass
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setPriceClass(?string $priceClass = null): self
     {
@@ -1387,7 +1387,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set priceType value
      * @param string $priceType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setPriceType(?string $priceType = null): self
     {
@@ -1410,7 +1410,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setProductType(?string $productType = null): self
     {
@@ -1433,7 +1433,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set reductionCode value
      * @param string $reductionCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setReductionCode(?string $reductionCode = null): self
     {
@@ -1456,7 +1456,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set reductionDesc value
      * @param string $reductionDesc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setReductionDesc(?string $reductionDesc = null): self
     {
@@ -1479,7 +1479,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set referencePosition value
      * @param int $referencePosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setReferencePosition(?int $referencePosition = null): self
     {
@@ -1502,7 +1502,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set seat value
      * @param string $seat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setSeat(?string $seat = null): self
     {
@@ -1525,7 +1525,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set seatExtra value
      * @param string $seatExtra
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setSeatExtra(?string $seatExtra = null): self
     {
@@ -1548,7 +1548,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set serviceCode value
      * @param string $serviceCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setServiceCode(?string $serviceCode = null): self
     {
@@ -1571,7 +1571,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set serviceDesc value
      * @param string $serviceDesc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setServiceDesc(?string $serviceDesc = null): self
     {
@@ -1594,7 +1594,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set serviceName value
      * @param string $serviceName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setServiceName(?string $serviceName = null): self
     {
@@ -1617,7 +1617,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set servicePrice value
      * @param float $servicePrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setServicePrice(?float $servicePrice = null): self
     {
@@ -1640,7 +1640,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {
@@ -1663,7 +1663,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set tariffCode value
      * @param string $tariffCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setTariffCode(?string $tariffCode = null): self
     {
@@ -1686,7 +1686,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set tariffDesc value
      * @param string $tariffDesc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setTariffDesc(?string $tariffDesc = null): self
     {
@@ -1709,7 +1709,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set ticketCategory value
      * @param string $ticketCategory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setTicketCategory(?string $ticketCategory = null): self
     {
@@ -1732,7 +1732,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set tokenChecked value
      * @param bool $tokenChecked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setTokenChecked(?bool $tokenChecked = null): self
     {
@@ -1755,7 +1755,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set tourTicket value
      * @param string $tourTicket
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setTourTicket(?string $tourTicket = null): self
     {
@@ -1778,7 +1778,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set traffic value
      * @param string $traffic
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setTraffic(?string $traffic = null): self
     {
@@ -1801,7 +1801,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set trainNo value
      * @param string $trainNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setTrainNo(?string $trainNo = null): self
     {
@@ -1824,7 +1824,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set trainType value
      * @param string $trainType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setTrainType(?string $trainType = null): self
     {
@@ -1847,7 +1847,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -1870,7 +1870,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setValidTo(?string $validTo = null): self
     {
@@ -1893,7 +1893,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set vat2Amount value
      * @param float $vat2Amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setVat2Amount(?float $vat2Amount = null): self
     {
@@ -1916,7 +1916,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set vat2Base value
      * @param float $vat2Base
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setVat2Base(?float $vat2Base = null): self
     {
@@ -1939,7 +1939,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set vat2Percent value
      * @param float $vat2Percent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setVat2Percent(?float $vat2Percent = null): self
     {
@@ -1962,7 +1962,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -1985,7 +1985,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set vatBase value
      * @param float $vatBase
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setVatBase(?float $vatBase = null): self
     {
@@ -2008,7 +2008,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set vatIncluded value
      * @param bool $vatIncluded
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setVatIncluded(?bool $vatIncluded = null): self
     {
@@ -2031,7 +2031,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {
@@ -2054,7 +2054,7 @@ class RailDetailDTO extends AbstractStructBase
     /**
      * Set waggon value
      * @param string $waggon
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RailDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RailDetailDTO
      */
     public function setWaggon(?string $waggon = null): self
     {

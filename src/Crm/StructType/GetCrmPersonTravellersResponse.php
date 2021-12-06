@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCrmPersonTravellersResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmPersonTraveller
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO[]
      */
     protected ?array $MidocoCrmPersonTraveller = null;
     /**
      * Constructor method for GetCrmPersonTravellersResponse
      * @uses GetCrmPersonTravellersResponse::setMidocoCrmPersonTraveller()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO[] $midocoCrmPersonTraveller
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO[] $midocoCrmPersonTraveller
      */
     public function __construct(?array $midocoCrmPersonTraveller = null)
     {
@@ -34,7 +34,7 @@ class GetCrmPersonTravellersResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmPersonTraveller value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO[]
      */
     public function getMidocoCrmPersonTraveller(): ?array
     {
@@ -55,12 +55,12 @@ class GetCrmPersonTravellersResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCrmPersonTravellersResponseMidocoCrmPersonTravellerItem) {
             // validation for constraint: itemType
-            if (!$getCrmPersonTravellersResponseMidocoCrmPersonTravellerItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO) {
+            if (!$getCrmPersonTravellersResponseMidocoCrmPersonTravellerItem instanceof \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO) {
                 $invalidValues[] = is_object($getCrmPersonTravellersResponseMidocoCrmPersonTravellerItem) ? get_class($getCrmPersonTravellersResponseMidocoCrmPersonTravellerItem) : sprintf('%s(%s)', gettype($getCrmPersonTravellersResponseMidocoCrmPersonTravellerItem), var_export($getCrmPersonTravellersResponseMidocoCrmPersonTravellerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCrmPersonTravellersResponse extends AbstractStructBase
     /**
      * Set MidocoCrmPersonTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO[] $midocoCrmPersonTraveller
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCrmPersonTravellersResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO[] $midocoCrmPersonTraveller
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCrmPersonTravellersResponse
      */
     public function setMidocoCrmPersonTraveller(?array $midocoCrmPersonTraveller = null): self
     {
@@ -85,14 +85,14 @@ class GetCrmPersonTravellersResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmPersonTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCrmPersonTravellersResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCrmPersonTravellersResponse
      */
-    public function addToMidocoCrmPersonTraveller(\Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO $item): self
+    public function addToMidocoCrmPersonTraveller(\Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmPersonTravellerDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmPersonTravellerDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmPersonTraveller[] = $item;
         

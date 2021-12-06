@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetOrgUnitsInSameDBResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSearchUnit
-     * @var \Pggns\MidocoApi\Api\System\StructType\MidocoSearchUnit[]
+     * @var \Pggns\MidocoApi\System\StructType\MidocoSearchUnit[]
      */
     protected ?array $MidocoSearchUnit = null;
     /**
      * Constructor method for GetOrgUnitsInSameDBResponse
      * @uses GetOrgUnitsInSameDBResponse::setMidocoSearchUnit()
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoSearchUnit[] $midocoSearchUnit
+     * @param \Pggns\MidocoApi\System\StructType\MidocoSearchUnit[] $midocoSearchUnit
      */
     public function __construct(?array $midocoSearchUnit = null)
     {
@@ -34,7 +34,7 @@ class GetOrgUnitsInSameDBResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSearchUnit value
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoSearchUnit[]
+     * @return \Pggns\MidocoApi\System\StructType\MidocoSearchUnit[]
      */
     public function getMidocoSearchUnit(): ?array
     {
@@ -55,12 +55,12 @@ class GetOrgUnitsInSameDBResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrgUnitsInSameDBResponseMidocoSearchUnitItem) {
             // validation for constraint: itemType
-            if (!$getOrgUnitsInSameDBResponseMidocoSearchUnitItem instanceof \Pggns\MidocoApi\Api\System\StructType\MidocoSearchUnit) {
+            if (!$getOrgUnitsInSameDBResponseMidocoSearchUnitItem instanceof \Pggns\MidocoApi\System\StructType\MidocoSearchUnit) {
                 $invalidValues[] = is_object($getOrgUnitsInSameDBResponseMidocoSearchUnitItem) ? get_class($getOrgUnitsInSameDBResponseMidocoSearchUnitItem) : sprintf('%s(%s)', gettype($getOrgUnitsInSameDBResponseMidocoSearchUnitItem), var_export($getOrgUnitsInSameDBResponseMidocoSearchUnitItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSearchUnit property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\MidocoSearchUnit, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSearchUnit property can only contain items of type \Pggns\MidocoApi\System\StructType\MidocoSearchUnit, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetOrgUnitsInSameDBResponse extends AbstractStructBase
     /**
      * Set MidocoSearchUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoSearchUnit[] $midocoSearchUnit
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgUnitsInSameDBResponse
+     * @param \Pggns\MidocoApi\System\StructType\MidocoSearchUnit[] $midocoSearchUnit
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgUnitsInSameDBResponse
      */
     public function setMidocoSearchUnit(?array $midocoSearchUnit = null): self
     {
@@ -85,14 +85,14 @@ class GetOrgUnitsInSameDBResponse extends AbstractStructBase
     /**
      * Add item to MidocoSearchUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoSearchUnit $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgUnitsInSameDBResponse
+     * @param \Pggns\MidocoApi\System\StructType\MidocoSearchUnit $item
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgUnitsInSameDBResponse
      */
-    public function addToMidocoSearchUnit(\Pggns\MidocoApi\Api\System\StructType\MidocoSearchUnit $item): self
+    public function addToMidocoSearchUnit(\Pggns\MidocoApi\System\StructType\MidocoSearchUnit $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\MidocoSearchUnit) {
-            throw new InvalidArgumentException(sprintf('The MidocoSearchUnit property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\MidocoSearchUnit, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\MidocoSearchUnit) {
+            throw new InvalidArgumentException(sprintf('The MidocoSearchUnit property can only contain items of type \Pggns\MidocoApi\System\StructType\MidocoSearchUnit, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSearchUnit[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchAccountResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAccount
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAccount[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAccount[]
      */
     protected ?array $MidocoAccount = null;
     /**
      * Constructor method for SearchAccountResponse
      * @uses SearchAccountResponse::setMidocoAccount()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAccount[] $midocoAccount
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAccount[] $midocoAccount
      */
     public function __construct(?array $midocoAccount = null)
     {
@@ -34,7 +34,7 @@ class SearchAccountResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAccount value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAccount[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAccount[]
      */
     public function getMidocoAccount(): ?array
     {
@@ -55,12 +55,12 @@ class SearchAccountResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchAccountResponseMidocoAccountItem) {
             // validation for constraint: itemType
-            if (!$searchAccountResponseMidocoAccountItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAccount) {
+            if (!$searchAccountResponseMidocoAccountItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoAccount) {
                 $invalidValues[] = is_object($searchAccountResponseMidocoAccountItem) ? get_class($searchAccountResponseMidocoAccountItem) : sprintf('%s(%s)', gettype($searchAccountResponseMidocoAccountItem), var_export($searchAccountResponseMidocoAccountItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAccount property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAccount, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAccount property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAccount, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchAccountResponse extends AbstractStructBase
     /**
      * Set MidocoAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAccount[] $midocoAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAccountResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAccount[] $midocoAccount
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAccountResponse
      */
     public function setMidocoAccount(?array $midocoAccount = null): self
     {
@@ -85,14 +85,14 @@ class SearchAccountResponse extends AbstractStructBase
     /**
      * Add item to MidocoAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAccount $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAccountResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAccount $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAccountResponse
      */
-    public function addToMidocoAccount(\Pggns\MidocoApi\Api\Order\StructType\MidocoAccount $item): self
+    public function addToMidocoAccount(\Pggns\MidocoApi\Order\StructType\MidocoAccount $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAccount) {
-            throw new InvalidArgumentException(sprintf('The MidocoAccount property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAccount, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoAccount) {
+            throw new InvalidArgumentException(sprintf('The MidocoAccount property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAccount, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAccount[] = $item;
         

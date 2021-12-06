@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -157,7 +157,7 @@ class MidocoParticipantListCriteriaType extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -173,7 +173,7 @@ class MidocoParticipantListCriteriaType extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
      */
     public function addToOrgUnits(string $item): self
     {
@@ -196,7 +196,7 @@ class MidocoParticipantListCriteriaType extends AbstractStructBase
     /**
      * Set departure value
      * @param string $departure
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
      */
     public function setDeparture(?string $departure = null): self
     {
@@ -219,7 +219,7 @@ class MidocoParticipantListCriteriaType extends AbstractStructBase
     /**
      * Set departureFromDate value
      * @param string $departureFromDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
      */
     public function setDepartureFromDate(?string $departureFromDate = null): self
     {
@@ -242,7 +242,7 @@ class MidocoParticipantListCriteriaType extends AbstractStructBase
     /**
      * Set arrivalFromDate value
      * @param string $arrivalFromDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
      */
     public function setArrivalFromDate(?string $arrivalFromDate = null): self
     {
@@ -265,7 +265,7 @@ class MidocoParticipantListCriteriaType extends AbstractStructBase
     /**
      * Set departureToDate value
      * @param string $departureToDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
      */
     public function setDepartureToDate(?string $departureToDate = null): self
     {
@@ -288,7 +288,7 @@ class MidocoParticipantListCriteriaType extends AbstractStructBase
     /**
      * Set arrivalToDate value
      * @param string $arrivalToDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
      */
     public function setArrivalToDate(?string $arrivalToDate = null): self
     {
@@ -311,7 +311,7 @@ class MidocoParticipantListCriteriaType extends AbstractStructBase
     /**
      * Set hotelName value
      * @param string $hotelName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
      */
     public function setHotelName(?string $hotelName = null): self
     {
@@ -334,7 +334,7 @@ class MidocoParticipantListCriteriaType extends AbstractStructBase
     /**
      * Set hotelCode value
      * @param string $hotelCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
      */
     public function setHotelCode(?string $hotelCode = null): self
     {
@@ -357,7 +357,7 @@ class MidocoParticipantListCriteriaType extends AbstractStructBase
     /**
      * Set flightNo value
      * @param string $flightNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
      */
     public function setFlightNo(?string $flightNo = null): self
     {
@@ -380,7 +380,7 @@ class MidocoParticipantListCriteriaType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -403,7 +403,7 @@ class MidocoParticipantListCriteriaType extends AbstractStructBase
     /**
      * Set destinationArea value
      * @param string $destinationArea
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
      */
     public function setDestinationArea(?string $destinationArea = null): self
     {
@@ -426,7 +426,7 @@ class MidocoParticipantListCriteriaType extends AbstractStructBase
     /**
      * Set areaDescription value
      * @param string $areaDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
      */
     public function setAreaDescription(?string $areaDescription = null): self
     {

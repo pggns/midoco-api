@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetDueMidocoChargesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmMidocoChargeInfo
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmMidocoChargeInfoType[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmMidocoChargeInfoType[]
      */
     protected ?array $MidocoCrmMidocoChargeInfo = null;
     /**
      * Constructor method for GetDueMidocoChargesResponse
      * @uses GetDueMidocoChargesResponse::setMidocoCrmMidocoChargeInfo()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmMidocoChargeInfoType[] $midocoCrmMidocoChargeInfo
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmMidocoChargeInfoType[] $midocoCrmMidocoChargeInfo
      */
     public function __construct(?array $midocoCrmMidocoChargeInfo = null)
     {
@@ -36,7 +36,7 @@ class GetDueMidocoChargesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmMidocoChargeInfo value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmMidocoChargeInfoType[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmMidocoChargeInfoType[]
      */
     public function getMidocoCrmMidocoChargeInfo(): ?array
     {
@@ -57,12 +57,12 @@ class GetDueMidocoChargesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDueMidocoChargesResponseMidocoCrmMidocoChargeInfoItem) {
             // validation for constraint: itemType
-            if (!$getDueMidocoChargesResponseMidocoCrmMidocoChargeInfoItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmMidocoChargeInfoType) {
+            if (!$getDueMidocoChargesResponseMidocoCrmMidocoChargeInfoItem instanceof \Pggns\MidocoApi\Crm\StructType\CrmMidocoChargeInfoType) {
                 $invalidValues[] = is_object($getDueMidocoChargesResponseMidocoCrmMidocoChargeInfoItem) ? get_class($getDueMidocoChargesResponseMidocoCrmMidocoChargeInfoItem) : sprintf('%s(%s)', gettype($getDueMidocoChargesResponseMidocoCrmMidocoChargeInfoItem), var_export($getDueMidocoChargesResponseMidocoCrmMidocoChargeInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmMidocoChargeInfo property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmMidocoChargeInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmMidocoChargeInfo property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmMidocoChargeInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetDueMidocoChargesResponse extends AbstractStructBase
     /**
      * Set MidocoCrmMidocoChargeInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmMidocoChargeInfoType[] $midocoCrmMidocoChargeInfo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDueMidocoChargesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmMidocoChargeInfoType[] $midocoCrmMidocoChargeInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDueMidocoChargesResponse
      */
     public function setMidocoCrmMidocoChargeInfo(?array $midocoCrmMidocoChargeInfo = null): self
     {
@@ -87,14 +87,14 @@ class GetDueMidocoChargesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmMidocoChargeInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmMidocoChargeInfoType $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDueMidocoChargesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmMidocoChargeInfoType $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDueMidocoChargesResponse
      */
-    public function addToMidocoCrmMidocoChargeInfo(\Pggns\MidocoApi\Api\Crm\StructType\CrmMidocoChargeInfoType $item): self
+    public function addToMidocoCrmMidocoChargeInfo(\Pggns\MidocoApi\Crm\StructType\CrmMidocoChargeInfoType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmMidocoChargeInfoType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoChargeInfo property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmMidocoChargeInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CrmMidocoChargeInfoType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoChargeInfo property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmMidocoChargeInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmMidocoChargeInfo[] = $item;
         

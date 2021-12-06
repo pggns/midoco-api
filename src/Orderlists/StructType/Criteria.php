@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class Criteria extends AbstractStructBase
     /**
      * Set criteria_code value
      * @param string $criteria_code
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Criteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Criteria
      */
     public function setCriteria_code(?string $criteria_code = null): self
     {
@@ -78,7 +78,7 @@ class Criteria extends AbstractStructBase
     /**
      * Set criteria_text value
      * @param string $criteria_text
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Criteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Criteria
      */
     public function setCriteria_text(?string $criteria_text = null): self
     {
@@ -101,7 +101,7 @@ class Criteria extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Criteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Criteria
      */
     public function setPosition(?int $position = null): self
     {

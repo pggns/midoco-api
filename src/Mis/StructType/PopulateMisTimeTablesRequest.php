@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class PopulateMisTimeTablesRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MisYear
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisYear[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MisYear[]
      */
     protected ?array $MisYear = null;
     /**
      * Constructor method for PopulateMisTimeTablesRequest
      * @uses PopulateMisTimeTablesRequest::setMisYear()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisYear[] $misYear
+     * @param \Pggns\MidocoApi\Mis\StructType\MisYear[] $misYear
      */
     public function __construct(?array $misYear = null)
     {
@@ -34,7 +34,7 @@ class PopulateMisTimeTablesRequest extends AbstractStructBase
     }
     /**
      * Get MisYear value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisYear[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MisYear[]
      */
     public function getMisYear(): ?array
     {
@@ -55,12 +55,12 @@ class PopulateMisTimeTablesRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $populateMisTimeTablesRequestMisYearItem) {
             // validation for constraint: itemType
-            if (!$populateMisTimeTablesRequestMisYearItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisYear) {
+            if (!$populateMisTimeTablesRequestMisYearItem instanceof \Pggns\MidocoApi\Mis\StructType\MisYear) {
                 $invalidValues[] = is_object($populateMisTimeTablesRequestMisYearItem) ? get_class($populateMisTimeTablesRequestMisYearItem) : sprintf('%s(%s)', gettype($populateMisTimeTablesRequestMisYearItem), var_export($populateMisTimeTablesRequestMisYearItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MisYear property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisYear, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MisYear property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisYear, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class PopulateMisTimeTablesRequest extends AbstractStructBase
     /**
      * Set MisYear value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisYear[] $misYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PopulateMisTimeTablesRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MisYear[] $misYear
+     * @return \Pggns\MidocoApi\Mis\StructType\PopulateMisTimeTablesRequest
      */
     public function setMisYear(?array $misYear = null): self
     {
@@ -85,14 +85,14 @@ class PopulateMisTimeTablesRequest extends AbstractStructBase
     /**
      * Add item to MisYear value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisYear $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PopulateMisTimeTablesRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MisYear $item
+     * @return \Pggns\MidocoApi\Mis\StructType\PopulateMisTimeTablesRequest
      */
-    public function addToMisYear(\Pggns\MidocoApi\Api\Mis\StructType\MisYear $item): self
+    public function addToMisYear(\Pggns\MidocoApi\Mis\StructType\MisYear $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisYear) {
-            throw new InvalidArgumentException(sprintf('The MisYear property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisYear, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MisYear) {
+            throw new InvalidArgumentException(sprintf('The MisYear property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisYear, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MisYear[] = $item;
         

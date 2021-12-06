@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GroupAdvisorSearchCriteria extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSearchCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSearchCriteria
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -78,7 +78,7 @@ class GroupAdvisorSearchCriteria extends AbstractStructBase
     /**
      * Set freeingDateFrom value
      * @param string $freeingDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSearchCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSearchCriteria
      */
     public function setFreeingDateFrom(?string $freeingDateFrom = null): self
     {
@@ -101,7 +101,7 @@ class GroupAdvisorSearchCriteria extends AbstractStructBase
     /**
      * Set freeingDateTo value
      * @param string $freeingDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSearchCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSearchCriteria
      */
     public function setFreeingDateTo(?string $freeingDateTo = null): self
     {

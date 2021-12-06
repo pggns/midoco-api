@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoOrderAgencyInfo extends AbstractStructBase
     /**
      * Set companyName value
      * @param string $companyName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAgencyInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAgencyInfo
      */
     public function setCompanyName(?string $companyName = null): self
     {
@@ -70,7 +70,7 @@ class MidocoOrderAgencyInfo extends AbstractStructBase
     /**
      * Set contactPerson value
      * @param string $contactPerson
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderAgencyInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAgencyInfo
      */
     public function setContactPerson(?string $contactPerson = null): self
     {

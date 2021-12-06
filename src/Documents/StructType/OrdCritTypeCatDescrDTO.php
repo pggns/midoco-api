@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class OrdCritTypeCatDescrDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrdCritTypeCatDescrDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrdCritTypeCatDescrDTO
      */
     public function setCategoryId(?int $categoryId = null): self
     {
@@ -78,7 +78,7 @@ class OrdCritTypeCatDescrDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrdCritTypeCatDescrDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrdCritTypeCatDescrDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -101,7 +101,7 @@ class OrdCritTypeCatDescrDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrdCritTypeCatDescrDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrdCritTypeCatDescrDTO
      */
     public function setDescription(?string $description = null): self
     {

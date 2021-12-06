@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -101,7 +101,7 @@ class PackageMarginsSearchCriteriaType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PackageMarginsSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PackageMarginsSearchCriteriaType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -124,7 +124,7 @@ class PackageMarginsSearchCriteriaType extends AbstractStructBase
     /**
      * Set travelStartDateFrom value
      * @param string $travelStartDateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PackageMarginsSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PackageMarginsSearchCriteriaType
      */
     public function setTravelStartDateFrom(?string $travelStartDateFrom = null): self
     {
@@ -147,7 +147,7 @@ class PackageMarginsSearchCriteriaType extends AbstractStructBase
     /**
      * Set travelStartDateTo value
      * @param string $travelStartDateTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PackageMarginsSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PackageMarginsSearchCriteriaType
      */
     public function setTravelStartDateTo(?string $travelStartDateTo = null): self
     {
@@ -170,7 +170,7 @@ class PackageMarginsSearchCriteriaType extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PackageMarginsSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PackageMarginsSearchCriteriaType
      */
     public function setDestination(?string $destination = null): self
     {
@@ -193,7 +193,7 @@ class PackageMarginsSearchCriteriaType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PackageMarginsSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PackageMarginsSearchCriteriaType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -216,7 +216,7 @@ class PackageMarginsSearchCriteriaType extends AbstractStructBase
     /**
      * Set notBookedMargins value
      * @param bool $notBookedMargins
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PackageMarginsSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PackageMarginsSearchCriteriaType
      */
     public function setNotBookedMargins(?bool $notBookedMargins = null): self
     {
@@ -239,7 +239,7 @@ class PackageMarginsSearchCriteriaType extends AbstractStructBase
     /**
      * Set orgunitName value
      * @param string $orgunitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PackageMarginsSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PackageMarginsSearchCriteriaType
      */
     public function setOrgunitName(?string $orgunitName = null): self
     {

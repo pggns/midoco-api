@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetPaymentProvidersResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPaymentProvider
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPaymentProvider[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoPaymentProvider[]
      */
     protected ?array $MidocoPaymentProvider = null;
     /**
      * Constructor method for GetPaymentProvidersResponse
      * @uses GetPaymentProvidersResponse::setMidocoPaymentProvider()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPaymentProvider[] $midocoPaymentProvider
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoPaymentProvider[] $midocoPaymentProvider
      */
     public function __construct(?array $midocoPaymentProvider = null)
     {
@@ -34,7 +34,7 @@ class GetPaymentProvidersResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPaymentProvider value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPaymentProvider[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoPaymentProvider[]
      */
     public function getMidocoPaymentProvider(): ?array
     {
@@ -55,12 +55,12 @@ class GetPaymentProvidersResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPaymentProvidersResponseMidocoPaymentProviderItem) {
             // validation for constraint: itemType
-            if (!$getPaymentProvidersResponseMidocoPaymentProviderItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPaymentProvider) {
+            if (!$getPaymentProvidersResponseMidocoPaymentProviderItem instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoPaymentProvider) {
                 $invalidValues[] = is_object($getPaymentProvidersResponseMidocoPaymentProviderItem) ? get_class($getPaymentProvidersResponseMidocoPaymentProviderItem) : sprintf('%s(%s)', gettype($getPaymentProvidersResponseMidocoPaymentProviderItem), var_export($getPaymentProvidersResponseMidocoPaymentProviderItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPaymentProvider property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPaymentProvider, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPaymentProvider property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoPaymentProvider, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetPaymentProvidersResponse extends AbstractStructBase
     /**
      * Set MidocoPaymentProvider value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPaymentProvider[] $midocoPaymentProvider
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetPaymentProvidersResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoPaymentProvider[] $midocoPaymentProvider
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetPaymentProvidersResponse
      */
     public function setMidocoPaymentProvider(?array $midocoPaymentProvider = null): self
     {
@@ -85,14 +85,14 @@ class GetPaymentProvidersResponse extends AbstractStructBase
     /**
      * Add item to MidocoPaymentProvider value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPaymentProvider $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetPaymentProvidersResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoPaymentProvider $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetPaymentProvidersResponse
      */
-    public function addToMidocoPaymentProvider(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPaymentProvider $item): self
+    public function addToMidocoPaymentProvider(\Pggns\MidocoApi\OrderSD\StructType\MidocoPaymentProvider $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPaymentProvider) {
-            throw new InvalidArgumentException(sprintf('The MidocoPaymentProvider property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPaymentProvider, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoPaymentProvider) {
+            throw new InvalidArgumentException(sprintf('The MidocoPaymentProvider property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoPaymentProvider, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPaymentProvider[] = $item;
         

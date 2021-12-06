@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -231,7 +231,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set baseUrl value
      * @param string $baseUrl
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setBaseUrl(?string $baseUrl = null): self
     {
@@ -254,7 +254,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set username value
      * @param string $username
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setUsername(?string $username = null): self
     {
@@ -277,7 +277,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setPassword(?string $password = null): self
     {
@@ -300,7 +300,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setTarget(?string $target = null): self
     {
@@ -323,7 +323,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set mailId value
      * @param string $mailId
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setMailId(?string $mailId = null): self
     {
@@ -346,7 +346,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set mailboxId value
      * @param string $mailboxId
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setMailboxId(?string $mailboxId = null): self
     {
@@ -369,7 +369,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set width value
      * @param string $width
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setWidth(?string $width = null): self
     {
@@ -392,7 +392,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set height value
      * @param string $height
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setHeight(?string $height = null): self
     {
@@ -415,7 +415,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setType(?string $type = null): self
     {
@@ -438,7 +438,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set to value
      * @param string $to
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setTo(?string $to = null): self
     {
@@ -461,7 +461,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setSubject(?string $subject = null): self
     {
@@ -484,7 +484,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setText(?string $text = null): self
     {
@@ -507,7 +507,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set midocoCustomer value
      * @param string $midocoCustomer
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setMidocoCustomer(?string $midocoCustomer = null): self
     {
@@ -530,7 +530,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set midocoOrder value
      * @param string $midocoOrder
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setMidocoOrder(?string $midocoOrder = null): self
     {
@@ -553,7 +553,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set midocoAttachments value
      * @param string $midocoAttachments
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setMidocoAttachments(?string $midocoAttachments = null): self
     {
@@ -576,7 +576,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set useDefaultMailboxId value
      * @param bool $useDefaultMailboxId
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setUseDefaultMailboxId(?bool $useDefaultMailboxId = null): self
     {
@@ -599,7 +599,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set recipientFirstName value
      * @param string $recipientFirstName
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setRecipientFirstName(?string $recipientFirstName = null): self
     {
@@ -622,7 +622,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set recipientLastName value
      * @param string $recipientLastName
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setRecipientLastName(?string $recipientLastName = null): self
     {
@@ -645,7 +645,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set cc value
      * @param string $cc
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setCc(?string $cc = null): self
     {
@@ -668,7 +668,7 @@ class GetInexsoUrlRequest extends AbstractStructBase
     /**
      * Set bcc value
      * @param string $bcc
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlRequest
      */
     public function setBcc(?string $bcc = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class ImportRawCustomerResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:Error
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\Error[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\Error[]
      */
     protected ?array $Error = null;
     /**
@@ -31,7 +31,7 @@ class ImportRawCustomerResponse extends AbstractStructBase
      * Constructor method for ImportRawCustomerResponse
      * @uses ImportRawCustomerResponse::setError()
      * @uses ImportRawCustomerResponse::setCustomerId()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\Error[] $error
+     * @param \Pggns\MidocoApi\CrmSD\StructType\Error[] $error
      * @param int $customerId
      */
     public function __construct(?array $error = null, ?int $customerId = null)
@@ -42,7 +42,7 @@ class ImportRawCustomerResponse extends AbstractStructBase
     }
     /**
      * Get Error value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Error[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Error[]
      */
     public function getError(): ?array
     {
@@ -63,12 +63,12 @@ class ImportRawCustomerResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $importRawCustomerResponseErrorItem) {
             // validation for constraint: itemType
-            if (!$importRawCustomerResponseErrorItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\Error) {
+            if (!$importRawCustomerResponseErrorItem instanceof \Pggns\MidocoApi\CrmSD\StructType\Error) {
                 $invalidValues[] = is_object($importRawCustomerResponseErrorItem) ? get_class($importRawCustomerResponseErrorItem) : sprintf('%s(%s)', gettype($importRawCustomerResponseErrorItem), var_export($importRawCustomerResponseErrorItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\Error, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Error property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\Error, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,8 +77,8 @@ class ImportRawCustomerResponse extends AbstractStructBase
     /**
      * Set Error value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\Error[] $error
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportRawCustomerResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\Error[] $error
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportRawCustomerResponse
      */
     public function setError(?array $error = null): self
     {
@@ -93,14 +93,14 @@ class ImportRawCustomerResponse extends AbstractStructBase
     /**
      * Add item to Error value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\Error $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportRawCustomerResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\Error $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportRawCustomerResponse
      */
-    public function addToError(\Pggns\MidocoApi\Api\CrmSD\StructType\Error $item): self
+    public function addToError(\Pggns\MidocoApi\CrmSD\StructType\Error $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\Error) {
-            throw new InvalidArgumentException(sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\Error, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\Error) {
+            throw new InvalidArgumentException(sprintf('The Error property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\Error, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Error[] = $item;
         
@@ -117,7 +117,7 @@ class ImportRawCustomerResponse extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportRawCustomerResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportRawCustomerResponse
      */
     public function setCustomerId(?int $customerId = null): self
     {

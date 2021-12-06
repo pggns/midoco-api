@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -52,7 +52,7 @@ class SaveSupplierDisabledUnitsRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveSupplierDisabledUnitsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveSupplierDisabledUnitsRequest
      */
     public function setSupplierId(string $supplierId): self
     {
@@ -102,7 +102,7 @@ class SaveSupplierDisabledUnitsRequest extends AbstractStructBase
      * Set disabledUnitName value
      * @throws InvalidArgumentException
      * @param string[] $disabledUnitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveSupplierDisabledUnitsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveSupplierDisabledUnitsRequest
      */
     public function setDisabledUnitName(array $disabledUnitName): self
     {
@@ -118,7 +118,7 @@ class SaveSupplierDisabledUnitsRequest extends AbstractStructBase
      * Add item to disabledUnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveSupplierDisabledUnitsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveSupplierDisabledUnitsRequest
      */
     public function addToDisabledUnitName(string $item): self
     {

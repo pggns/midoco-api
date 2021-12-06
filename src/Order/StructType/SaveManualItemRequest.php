@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveManualItemRequest extends AbstractStructBase
      * The MidocoManualItem
      * Meta information extracted from the WSDL
      * - ref: MidocoManualItem
-     * @var \Pggns\MidocoApi\Api\Order\StructType\ManualitemDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\ManualitemDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\ManualitemDTO $MidocoManualItem = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\ManualitemDTO $MidocoManualItem = null;
     /**
      * Constructor method for SaveManualItemRequest
      * @uses SaveManualItemRequest::setMidocoManualItem()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ManualitemDTO $midocoManualItem
+     * @param \Pggns\MidocoApi\Order\StructType\ManualitemDTO $midocoManualItem
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\ManualitemDTO $midocoManualItem = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\ManualitemDTO $midocoManualItem = null)
     {
         $this
             ->setMidocoManualItem($midocoManualItem);
     }
     /**
      * Get MidocoManualItem value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ManualitemDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\ManualitemDTO|null
      */
-    public function getMidocoManualItem(): ?\Pggns\MidocoApi\Api\Order\StructType\ManualitemDTO
+    public function getMidocoManualItem(): ?\Pggns\MidocoApi\Order\StructType\ManualitemDTO
     {
         return $this->MidocoManualItem;
     }
     /**
      * Set MidocoManualItem value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ManualitemDTO $midocoManualItem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveManualItemRequest
+     * @param \Pggns\MidocoApi\Order\StructType\ManualitemDTO $midocoManualItem
+     * @return \Pggns\MidocoApi\Order\StructType\SaveManualItemRequest
      */
-    public function setMidocoManualItem(?\Pggns\MidocoApi\Api\Order\StructType\ManualitemDTO $midocoManualItem = null): self
+    public function setMidocoManualItem(?\Pggns\MidocoApi\Order\StructType\ManualitemDTO $midocoManualItem = null): self
     {
         $this->MidocoManualItem = $midocoManualItem;
         

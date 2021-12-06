@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportDebitor
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -110,7 +110,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportDebitor
      */
     public function setCountry(?string $country = null): self
     {
@@ -133,7 +133,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportDebitor
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -156,7 +156,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set bankNo value
      * @param string $bankNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportDebitor
      */
     public function setBankNo(?string $bankNo = null): self
     {
@@ -179,7 +179,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set useAsDefault value
      * @param string $useAsDefault
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportDebitor
      */
     public function setUseAsDefault(?string $useAsDefault = null): self
     {
@@ -202,7 +202,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set isIban value
      * @param string $isIban
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportDebitor
      */
     public function setIsIban(?string $isIban = null): self
     {
@@ -225,7 +225,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportDebitor
      */
     public function setBankName(?string $bankName = null): self
     {

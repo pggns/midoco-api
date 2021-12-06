@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteInsurerRequest extends AbstractStructBase
     /**
      * Set insurerId value
      * @param int $insurerId
-     * @return \Pggns\MidocoApi\Api\System\StructType\DeleteInsurerRequest
+     * @return \Pggns\MidocoApi\System\StructType\DeleteInsurerRequest
      */
     public function setInsurerId(?int $insurerId = null): self
     {

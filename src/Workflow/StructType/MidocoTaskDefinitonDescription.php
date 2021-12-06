@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoTaskDefinitonDescription extends TaskDefinitionDescrDTO
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinitonDescription
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinitonDescription
      */
     public function setName(?string $name = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class MakeOrderDiffInvoiceRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeOrderDiffInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeOrderDiffInvoiceRequest
      */
     public function setOrderId(int $orderId): self
     {
@@ -101,7 +101,7 @@ class MakeOrderDiffInvoiceRequest extends AbstractStructBase
      * Set itemIds value
      * @throws InvalidArgumentException
      * @param int[] $itemIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeOrderDiffInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeOrderDiffInvoiceRequest
      */
     public function setItemIds(?array $itemIds = null): self
     {
@@ -117,7 +117,7 @@ class MakeOrderDiffInvoiceRequest extends AbstractStructBase
      * Add item to itemIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeOrderDiffInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeOrderDiffInvoiceRequest
      */
     public function addToItemIds(int $item): self
     {

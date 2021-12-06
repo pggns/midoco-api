@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class UnitNoticeDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UnitNoticeDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UnitNoticeDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -110,7 +110,7 @@ class UnitNoticeDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UnitNoticeDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UnitNoticeDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -133,7 +133,7 @@ class UnitNoticeDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UnitNoticeDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UnitNoticeDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -156,7 +156,7 @@ class UnitNoticeDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UnitNoticeDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UnitNoticeDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -179,7 +179,7 @@ class UnitNoticeDTO extends AbstractStructBase
     /**
      * Set notice value
      * @param string $notice
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UnitNoticeDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UnitNoticeDTO
      */
     public function setNotice(?string $notice = null): self
     {
@@ -202,7 +202,7 @@ class UnitNoticeDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UnitNoticeDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UnitNoticeDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -225,7 +225,7 @@ class UnitNoticeDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UnitNoticeDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UnitNoticeDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

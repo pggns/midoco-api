@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoMediatorProductSettlementInfo extends MedStlmntProdDTO
     /**
      * Set mediatorName value
      * @param string $mediatorName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMediatorProductSettlementInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMediatorProductSettlementInfo
      */
     public function setMediatorName(?string $mediatorName = null): self
     {
@@ -70,7 +70,7 @@ class MidocoMediatorProductSettlementInfo extends MedStlmntProdDTO
     /**
      * Set creatingUserName value
      * @param string $creatingUserName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMediatorProductSettlementInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMediatorProductSettlementInfo
      */
     public function setCreatingUserName(?string $creatingUserName = null): self
     {

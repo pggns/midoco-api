@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetActualConsentResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoConsent
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConsent[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoConsent[]
      */
     protected ?array $MidocoConsent = null;
     /**
      * Constructor method for GetActualConsentResponse
      * @uses GetActualConsentResponse::setMidocoConsent()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConsent[] $midocoConsent
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoConsent[] $midocoConsent
      */
     public function __construct(?array $midocoConsent = null)
     {
@@ -34,7 +34,7 @@ class GetActualConsentResponse extends AbstractStructBase
     }
     /**
      * Get MidocoConsent value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConsent[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConsent[]
      */
     public function getMidocoConsent(): ?array
     {
@@ -55,12 +55,12 @@ class GetActualConsentResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getActualConsentResponseMidocoConsentItem) {
             // validation for constraint: itemType
-            if (!$getActualConsentResponseMidocoConsentItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConsent) {
+            if (!$getActualConsentResponseMidocoConsentItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoConsent) {
                 $invalidValues[] = is_object($getActualConsentResponseMidocoConsentItem) ? get_class($getActualConsentResponseMidocoConsentItem) : sprintf('%s(%s)', gettype($getActualConsentResponseMidocoConsentItem), var_export($getActualConsentResponseMidocoConsentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoConsent property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConsent, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoConsent property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoConsent, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetActualConsentResponse extends AbstractStructBase
     /**
      * Set MidocoConsent value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConsent[] $midocoConsent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetActualConsentResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoConsent[] $midocoConsent
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetActualConsentResponse
      */
     public function setMidocoConsent(?array $midocoConsent = null): self
     {
@@ -85,14 +85,14 @@ class GetActualConsentResponse extends AbstractStructBase
     /**
      * Add item to MidocoConsent value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConsent $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetActualConsentResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoConsent $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetActualConsentResponse
      */
-    public function addToMidocoConsent(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConsent $item): self
+    public function addToMidocoConsent(\Pggns\MidocoApi\Orderlists\StructType\MidocoConsent $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConsent) {
-            throw new InvalidArgumentException(sprintf('The MidocoConsent property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConsent, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoConsent) {
+            throw new InvalidArgumentException(sprintf('The MidocoConsent property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoConsent, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoConsent[] = $item;
         

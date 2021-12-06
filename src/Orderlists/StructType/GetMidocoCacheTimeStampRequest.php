@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetMidocoCacheTimeStampRequest extends AbstractStructBase
     /**
      * Set loaderKey value
      * @param string $loaderKey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMidocoCacheTimeStampRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMidocoCacheTimeStampRequest
      */
     public function setLoaderKey(?string $loaderKey = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMediatorTextTemplatesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerTextTemplate
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\TextTemplateDTO[]
      */
     protected ?array $MidocoCustomerTextTemplate = null;
     /**
      * Constructor method for GetMediatorTextTemplatesResponse
      * @uses GetMediatorTextTemplatesResponse::setMidocoCustomerTextTemplate()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO[] $midocoCustomerTextTemplate
+     * @param \Pggns\MidocoApi\Crm\StructType\TextTemplateDTO[] $midocoCustomerTextTemplate
      */
     public function __construct(?array $midocoCustomerTextTemplate = null)
     {
@@ -34,7 +34,7 @@ class GetMediatorTextTemplatesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerTextTemplate value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\TextTemplateDTO[]
      */
     public function getMidocoCustomerTextTemplate(): ?array
     {
@@ -55,12 +55,12 @@ class GetMediatorTextTemplatesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMediatorTextTemplatesResponseMidocoCustomerTextTemplateItem) {
             // validation for constraint: itemType
-            if (!$getMediatorTextTemplatesResponseMidocoCustomerTextTemplateItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO) {
+            if (!$getMediatorTextTemplatesResponseMidocoCustomerTextTemplateItem instanceof \Pggns\MidocoApi\Crm\StructType\TextTemplateDTO) {
                 $invalidValues[] = is_object($getMediatorTextTemplatesResponseMidocoCustomerTextTemplateItem) ? get_class($getMediatorTextTemplatesResponseMidocoCustomerTextTemplateItem) : sprintf('%s(%s)', gettype($getMediatorTextTemplatesResponseMidocoCustomerTextTemplateItem), var_export($getMediatorTextTemplatesResponseMidocoCustomerTextTemplateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerTextTemplate property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerTextTemplate property can only contain items of type \Pggns\MidocoApi\Crm\StructType\TextTemplateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMediatorTextTemplatesResponse extends AbstractStructBase
     /**
      * Set MidocoCustomerTextTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO[] $midocoCustomerTextTemplate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMediatorTextTemplatesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\TextTemplateDTO[] $midocoCustomerTextTemplate
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMediatorTextTemplatesResponse
      */
     public function setMidocoCustomerTextTemplate(?array $midocoCustomerTextTemplate = null): self
     {
@@ -85,14 +85,14 @@ class GetMediatorTextTemplatesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCustomerTextTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMediatorTextTemplatesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\TextTemplateDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMediatorTextTemplatesResponse
      */
-    public function addToMidocoCustomerTextTemplate(\Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO $item): self
+    public function addToMidocoCustomerTextTemplate(\Pggns\MidocoApi\Crm\StructType\TextTemplateDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerTextTemplate property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\TextTemplateDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerTextTemplate property can only contain items of type \Pggns\MidocoApi\Crm\StructType\TextTemplateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerTextTemplate[] = $item;
         

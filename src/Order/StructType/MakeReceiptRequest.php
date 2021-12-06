@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class MakeReceiptRequest extends AbstractStructBase
      * The MidocoReceiptInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoReceiptInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo $MidocoReceiptInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo $MidocoReceiptInfo = null;
     /**
      * The isCollective
      * Meta information extracted from the WSDL
@@ -37,11 +37,11 @@ class MakeReceiptRequest extends AbstractStructBase
      * @uses MakeReceiptRequest::setMidocoReceiptInfo()
      * @uses MakeReceiptRequest::setIsCollective()
      * @uses MakeReceiptRequest::setPreferredReceiptId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo
      * @param bool $isCollective
      * @param int $preferredReceiptId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo = null, ?bool $isCollective = false, ?int $preferredReceiptId = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo = null, ?bool $isCollective = false, ?int $preferredReceiptId = null)
     {
         $this
             ->setMidocoReceiptInfo($midocoReceiptInfo)
@@ -50,18 +50,18 @@ class MakeReceiptRequest extends AbstractStructBase
     }
     /**
      * Get MidocoReceiptInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo|null
      */
-    public function getMidocoReceiptInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo
+    public function getMidocoReceiptInfo(): ?\Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo
     {
         return $this->MidocoReceiptInfo;
     }
     /**
      * Set MidocoReceiptInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeReceiptRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MakeReceiptRequest
      */
-    public function setMidocoReceiptInfo(?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo = null): self
+    public function setMidocoReceiptInfo(?\Pggns\MidocoApi\Order\StructType\MidocoReceiptInfo $midocoReceiptInfo = null): self
     {
         $this->MidocoReceiptInfo = $midocoReceiptInfo;
         
@@ -78,7 +78,7 @@ class MakeReceiptRequest extends AbstractStructBase
     /**
      * Set isCollective value
      * @param bool $isCollective
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeReceiptRequest
      */
     public function setIsCollective(?bool $isCollective = false): self
     {
@@ -101,7 +101,7 @@ class MakeReceiptRequest extends AbstractStructBase
     /**
      * Set preferredReceiptId value
      * @param int $preferredReceiptId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeReceiptRequest
      */
     public function setPreferredReceiptId(?int $preferredReceiptId = null): self
     {

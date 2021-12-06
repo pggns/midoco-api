@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetMidocoSettlMDocsRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMidocoSettlMDocsRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoSettlMDocsRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -70,7 +70,7 @@ class GetMidocoSettlMDocsRequest extends AbstractStructBase
     /**
      * Set settlMdocId value
      * @param int $settlMdocId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMidocoSettlMDocsRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoSettlMDocsRequest
      */
     public function setSettlMdocId(?int $settlMdocId = null): self
     {

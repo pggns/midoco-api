@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class SupplierCommissionCondDTO extends AbstractStructBase
     /**
      * Set commFixedPersonMultiply value
      * @param bool $commFixedPersonMultiply
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierCommissionCondDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierCommissionCondDTO
      */
     public function setCommFixedPersonMultiply(?bool $commFixedPersonMultiply = null): self
     {
@@ -158,7 +158,7 @@ class SupplierCommissionCondDTO extends AbstractStructBase
     /**
      * Set commFixedSegmentMultiply value
      * @param bool $commFixedSegmentMultiply
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierCommissionCondDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierCommissionCondDTO
      */
     public function setCommFixedSegmentMultiply(?bool $commFixedSegmentMultiply = null): self
     {
@@ -181,7 +181,7 @@ class SupplierCommissionCondDTO extends AbstractStructBase
     /**
      * Set commissionFixedAmount value
      * @param float $commissionFixedAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierCommissionCondDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierCommissionCondDTO
      */
     public function setCommissionFixedAmount(?float $commissionFixedAmount = null): self
     {
@@ -204,7 +204,7 @@ class SupplierCommissionCondDTO extends AbstractStructBase
     /**
      * Set commissionFixedHandling value
      * @param string $commissionFixedHandling
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierCommissionCondDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierCommissionCondDTO
      */
     public function setCommissionFixedHandling(?string $commissionFixedHandling = null): self
     {
@@ -227,7 +227,7 @@ class SupplierCommissionCondDTO extends AbstractStructBase
     /**
      * Set commissionForCancel value
      * @param bool $commissionForCancel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierCommissionCondDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierCommissionCondDTO
      */
     public function setCommissionForCancel(?bool $commissionForCancel = null): self
     {
@@ -250,7 +250,7 @@ class SupplierCommissionCondDTO extends AbstractStructBase
     /**
      * Set commissionPercent value
      * @param float $commissionPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierCommissionCondDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierCommissionCondDTO
      */
     public function setCommissionPercent(?float $commissionPercent = null): self
     {
@@ -273,7 +273,7 @@ class SupplierCommissionCondDTO extends AbstractStructBase
     /**
      * Set commissionPercentCancel value
      * @param float $commissionPercentCancel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierCommissionCondDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierCommissionCondDTO
      */
     public function setCommissionPercentCancel(?float $commissionPercentCancel = null): self
     {
@@ -296,7 +296,7 @@ class SupplierCommissionCondDTO extends AbstractStructBase
     /**
      * Set commissionPercentEu value
      * @param float $commissionPercentEu
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierCommissionCondDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierCommissionCondDTO
      */
     public function setCommissionPercentEu(?float $commissionPercentEu = null): self
     {
@@ -319,7 +319,7 @@ class SupplierCommissionCondDTO extends AbstractStructBase
     /**
      * Set conditionId value
      * @param int $conditionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierCommissionCondDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierCommissionCondDTO
      */
     public function setConditionId(?int $conditionId = null): self
     {
@@ -342,7 +342,7 @@ class SupplierCommissionCondDTO extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierCommissionCondDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierCommissionCondDTO
      */
     public function setProductType(?string $productType = null): self
     {
@@ -365,7 +365,7 @@ class SupplierCommissionCondDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierCommissionCondDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierCommissionCondDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -388,7 +388,7 @@ class SupplierCommissionCondDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierCommissionCondDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierCommissionCondDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -411,7 +411,7 @@ class SupplierCommissionCondDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierCommissionCondDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierCommissionCondDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

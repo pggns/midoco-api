@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class UpdateOrderPaymentInfoRequest extends AbstractStructBase
      * The payment_info
      * Meta information extracted from the WSDL
      * - ref: mbm:payment-info
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Payment_info|null
+     * @var \Pggns\MidocoApi\Order\StructType\Payment_info|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\Payment_info $payment_info = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\Payment_info $payment_info = null;
     /**
      * The orderId
      * @var int|null
@@ -29,10 +29,10 @@ class UpdateOrderPaymentInfoRequest extends AbstractStructBase
      * Constructor method for UpdateOrderPaymentInfoRequest
      * @uses UpdateOrderPaymentInfoRequest::setPayment_info()
      * @uses UpdateOrderPaymentInfoRequest::setOrderId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Payment_info $payment_info
+     * @param \Pggns\MidocoApi\Order\StructType\Payment_info $payment_info
      * @param int $orderId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\Payment_info $payment_info = null, ?int $orderId = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\Payment_info $payment_info = null, ?int $orderId = null)
     {
         $this
             ->setPayment_info($payment_info)
@@ -40,18 +40,18 @@ class UpdateOrderPaymentInfoRequest extends AbstractStructBase
     }
     /**
      * Get payment_info value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Payment_info|null
+     * @return \Pggns\MidocoApi\Order\StructType\Payment_info|null
      */
-    public function getPayment_info(): ?\Pggns\MidocoApi\Api\Order\StructType\Payment_info
+    public function getPayment_info(): ?\Pggns\MidocoApi\Order\StructType\Payment_info
     {
         return $this->{'payment-info'};
     }
     /**
      * Set payment_info value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Payment_info $payment_info
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateOrderPaymentInfoRequest
+     * @param \Pggns\MidocoApi\Order\StructType\Payment_info $payment_info
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateOrderPaymentInfoRequest
      */
-    public function setPayment_info(?\Pggns\MidocoApi\Api\Order\StructType\Payment_info $payment_info = null): self
+    public function setPayment_info(?\Pggns\MidocoApi\Order\StructType\Payment_info $payment_info = null): self
     {
         $this->payment_info = $this->{'payment-info'} = $payment_info;
         
@@ -68,7 +68,7 @@ class UpdateOrderPaymentInfoRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateOrderPaymentInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateOrderPaymentInfoRequest
      */
     public function setOrderId(?int $orderId = null): self
     {

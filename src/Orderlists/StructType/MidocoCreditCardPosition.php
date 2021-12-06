@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -52,16 +52,16 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
      * The MidocoPaymentOrdersInfos
      * Meta information extracted from the WSDL
      * - ref: MidocoPaymentOrdersInfos
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPaymentOrdersInfos|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoPaymentOrdersInfos|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPaymentOrdersInfos $MidocoPaymentOrdersInfos = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoPaymentOrdersInfos $MidocoPaymentOrdersInfos = null;
     /**
      * The MidocoCcToken
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: crm:MidocoCcToken
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcToken[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoCcToken[]
      */
     protected ?array $MidocoCcToken = null;
     /**
@@ -106,14 +106,14 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
      * @param string $ccValidMonth
      * @param string $ccOwner
      * @param string $ccAuthCode
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcToken[] $midocoCcToken
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCcToken[] $midocoCcToken
      * @param string $ccToken
      * @param string $ccTokenType
      * @param bool $isRecurring
      * @param int $preferredReceiptId
      */
-    public function __construct(?string $ccType = null, ?string $ccNo = null, ?string $ccCvc = null, ?string $ccValidYear = null, ?string $ccValidMonth = null, ?string $ccOwner = null, ?string $ccAuthCode = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null, ?array $midocoCcToken = null, ?string $ccToken = null, ?string $ccTokenType = null, ?bool $isRecurring = null, ?int $preferredReceiptId = null)
+    public function __construct(?string $ccType = null, ?string $ccNo = null, ?string $ccCvc = null, ?string $ccValidYear = null, ?string $ccValidMonth = null, ?string $ccOwner = null, ?string $ccAuthCode = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null, ?array $midocoCcToken = null, ?string $ccToken = null, ?string $ccTokenType = null, ?bool $isRecurring = null, ?int $preferredReceiptId = null)
     {
         $this
             ->setCcType($ccType)
@@ -141,7 +141,7 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -164,7 +164,7 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -187,7 +187,7 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set ccCvc value
      * @param string $ccCvc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
     public function setCcCvc(?string $ccCvc = null): self
     {
@@ -210,7 +210,7 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set ccValidYear value
      * @param string $ccValidYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
     public function setCcValidYear(?string $ccValidYear = null): self
     {
@@ -233,7 +233,7 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set ccValidMonth value
      * @param string $ccValidMonth
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
     public function setCcValidMonth(?string $ccValidMonth = null): self
     {
@@ -256,7 +256,7 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set ccOwner value
      * @param string $ccOwner
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
     public function setCcOwner(?string $ccOwner = null): self
     {
@@ -279,7 +279,7 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set ccAuthCode value
      * @param string $ccAuthCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
     public function setCcAuthCode(?string $ccAuthCode = null): self
     {
@@ -293,18 +293,18 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     }
     /**
      * Get MidocoPaymentOrdersInfos value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPaymentOrdersInfos|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoPaymentOrdersInfos|null
      */
-    public function getMidocoPaymentOrdersInfos(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPaymentOrdersInfos
+    public function getMidocoPaymentOrdersInfos(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoPaymentOrdersInfos
     {
         return $this->MidocoPaymentOrdersInfos;
     }
     /**
      * Set MidocoPaymentOrdersInfos value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
-    public function setMidocoPaymentOrdersInfos(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null): self
+    public function setMidocoPaymentOrdersInfos(?\Pggns\MidocoApi\Orderlists\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null): self
     {
         $this->MidocoPaymentOrdersInfos = $midocoPaymentOrdersInfos;
         
@@ -312,7 +312,7 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     }
     /**
      * Get MidocoCcToken value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcToken[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcToken[]
      */
     public function getMidocoCcToken(): ?array
     {
@@ -333,12 +333,12 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
         $invalidValues = [];
         foreach ($values as $midocoCreditCardPositionMidocoCcTokenItem) {
             // validation for constraint: itemType
-            if (!$midocoCreditCardPositionMidocoCcTokenItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcToken) {
+            if (!$midocoCreditCardPositionMidocoCcTokenItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCcToken) {
                 $invalidValues[] = is_object($midocoCreditCardPositionMidocoCcTokenItem) ? get_class($midocoCreditCardPositionMidocoCcTokenItem) : sprintf('%s(%s)', gettype($midocoCreditCardPositionMidocoCcTokenItem), var_export($midocoCreditCardPositionMidocoCcTokenItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -347,8 +347,8 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set MidocoCcToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcToken[] $midocoCcToken
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCcToken[] $midocoCcToken
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
     public function setMidocoCcToken(?array $midocoCcToken = null): self
     {
@@ -363,14 +363,14 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Add item to MidocoCcToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcToken $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCcToken $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
-    public function addToMidocoCcToken(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcToken $item): self
+    public function addToMidocoCcToken(\Pggns\MidocoApi\Orderlists\StructType\MidocoCcToken $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcToken) {
-            throw new InvalidArgumentException(sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCcToken) {
+            throw new InvalidArgumentException(sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCcToken[] = $item;
         
@@ -387,7 +387,7 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set ccToken value
      * @param string $ccToken
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
     public function setCcToken(?string $ccToken = null): self
     {
@@ -410,7 +410,7 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set ccTokenType value
      * @param string $ccTokenType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
     public function setCcTokenType(?string $ccTokenType = null): self
     {
@@ -433,7 +433,7 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set isRecurring value
      * @param bool $isRecurring
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
     public function setIsRecurring(?bool $isRecurring = null): self
     {
@@ -456,7 +456,7 @@ class MidocoCreditCardPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set preferredReceiptId value
      * @param int $preferredReceiptId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCreditCardPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCreditCardPosition
      */
     public function setPreferredReceiptId(?int $preferredReceiptId = null): self
     {

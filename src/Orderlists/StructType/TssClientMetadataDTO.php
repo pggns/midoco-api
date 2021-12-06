@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class TssClientMetadataDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssClientMetadataDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssClientMetadataDTO
      */
     public function setName(?string $name = null): self
     {
@@ -94,7 +94,7 @@ class TssClientMetadataDTO extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssClientMetadataDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssClientMetadataDTO
      */
     public function setTssId(?string $tssId = null): self
     {
@@ -117,7 +117,7 @@ class TssClientMetadataDTO extends AbstractStructBase
     /**
      * Set tssSystem value
      * @param string $tssSystem
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssClientMetadataDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssClientMetadataDTO
      */
     public function setTssSystem(?string $tssSystem = null): self
     {
@@ -140,7 +140,7 @@ class TssClientMetadataDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssClientMetadataDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssClientMetadataDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -163,7 +163,7 @@ class TssClientMetadataDTO extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssClientMetadataDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssClientMetadataDTO
      */
     public function setValue(?string $value = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class PrintReceiptResponse extends AbstractStructBase
     /**
      * Set PrintjobId value
      * @param int $printjobId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintReceiptResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintReceiptResponse
      */
     public function setPrintjobId(?int $printjobId = null): self
     {
@@ -94,7 +94,7 @@ class PrintReceiptResponse extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintReceiptResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintReceiptResponse
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -117,7 +117,7 @@ class PrintReceiptResponse extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintReceiptResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintReceiptResponse
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {
@@ -140,7 +140,7 @@ class PrintReceiptResponse extends AbstractStructBase
     /**
      * Set errorArgs value
      * @param string $errorArgs
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintReceiptResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintReceiptResponse
      */
     public function setErrorArgs(?string $errorArgs = null): self
     {

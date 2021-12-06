@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SaveMidocoOrgTemplateTextResponse extends AbstractStructBase
     /**
      * Set org_template_id value
      * @param int $org_template_id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveMidocoOrgTemplateTextResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveMidocoOrgTemplateTextResponse
      */
     public function setOrg_template_id(?int $org_template_id = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteSupplierDocumentShippingRequest extends AbstractStructBase
      * The MidocoSupplierDocumentShipping
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierDocumentShipping
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierDocumentShipping|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierDocumentShipping|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierDocumentShipping $MidocoSupplierDocumentShipping = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierDocumentShipping $MidocoSupplierDocumentShipping = null;
     /**
      * Constructor method for DeleteSupplierDocumentShippingRequest
      * @uses DeleteSupplierDocumentShippingRequest::setMidocoSupplierDocumentShipping()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierDocumentShipping $midocoSupplierDocumentShipping
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierDocumentShipping $midocoSupplierDocumentShipping
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierDocumentShipping $midocoSupplierDocumentShipping = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierDocumentShipping $midocoSupplierDocumentShipping = null)
     {
         $this
             ->setMidocoSupplierDocumentShipping($midocoSupplierDocumentShipping);
     }
     /**
      * Get MidocoSupplierDocumentShipping value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierDocumentShipping|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierDocumentShipping|null
      */
-    public function getMidocoSupplierDocumentShipping(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierDocumentShipping
+    public function getMidocoSupplierDocumentShipping(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierDocumentShipping
     {
         return $this->MidocoSupplierDocumentShipping;
     }
     /**
      * Set MidocoSupplierDocumentShipping value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierDocumentShipping $midocoSupplierDocumentShipping
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteSupplierDocumentShippingRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierDocumentShipping $midocoSupplierDocumentShipping
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteSupplierDocumentShippingRequest
      */
-    public function setMidocoSupplierDocumentShipping(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierDocumentShipping $midocoSupplierDocumentShipping = null): self
+    public function setMidocoSupplierDocumentShipping(?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierDocumentShipping $midocoSupplierDocumentShipping = null): self
     {
         $this->MidocoSupplierDocumentShipping = $midocoSupplierDocumentShipping;
         

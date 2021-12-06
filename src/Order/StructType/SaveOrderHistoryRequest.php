@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveOrderHistoryRequest extends AbstractStructBase
      * The MidocoOrderHistory
      * Meta information extracted from the WSDL
      * - ref: MidocoOrderHistory
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderHistory|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderHistory|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderHistory $MidocoOrderHistory = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderHistory $MidocoOrderHistory = null;
     /**
      * Constructor method for SaveOrderHistoryRequest
      * @uses SaveOrderHistoryRequest::setMidocoOrderHistory()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderHistory $midocoOrderHistory
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderHistory $midocoOrderHistory
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderHistory $midocoOrderHistory = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderHistory $midocoOrderHistory = null)
     {
         $this
             ->setMidocoOrderHistory($midocoOrderHistory);
     }
     /**
      * Get MidocoOrderHistory value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderHistory|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderHistory|null
      */
-    public function getMidocoOrderHistory(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderHistory
+    public function getMidocoOrderHistory(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderHistory
     {
         return $this->MidocoOrderHistory;
     }
     /**
      * Set MidocoOrderHistory value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderHistory $midocoOrderHistory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderHistoryRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderHistory $midocoOrderHistory
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderHistoryRequest
      */
-    public function setMidocoOrderHistory(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderHistory $midocoOrderHistory = null): self
+    public function setMidocoOrderHistory(?\Pggns\MidocoApi\Order\StructType\MidocoOrderHistory $midocoOrderHistory = null): self
     {
         $this->MidocoOrderHistory = $midocoOrderHistory;
         

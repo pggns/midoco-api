@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetBookingInfo4KickbackResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBookingInfo4Kickback
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback[]
      */
     protected ?array $MidocoBookingInfo4Kickback = null;
     /**
      * Constructor method for GetBookingInfo4KickbackResponse
      * @uses GetBookingInfo4KickbackResponse::setMidocoBookingInfo4Kickback()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback[] $midocoBookingInfo4Kickback
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback[] $midocoBookingInfo4Kickback
      */
     public function __construct(?array $midocoBookingInfo4Kickback = null)
     {
@@ -34,7 +34,7 @@ class GetBookingInfo4KickbackResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBookingInfo4Kickback value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback[]
      */
     public function getMidocoBookingInfo4Kickback(): ?array
     {
@@ -55,12 +55,12 @@ class GetBookingInfo4KickbackResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBookingInfo4KickbackResponseMidocoBookingInfo4KickbackItem) {
             // validation for constraint: itemType
-            if (!$getBookingInfo4KickbackResponseMidocoBookingInfo4KickbackItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback) {
+            if (!$getBookingInfo4KickbackResponseMidocoBookingInfo4KickbackItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback) {
                 $invalidValues[] = is_object($getBookingInfo4KickbackResponseMidocoBookingInfo4KickbackItem) ? get_class($getBookingInfo4KickbackResponseMidocoBookingInfo4KickbackItem) : sprintf('%s(%s)', gettype($getBookingInfo4KickbackResponseMidocoBookingInfo4KickbackItem), var_export($getBookingInfo4KickbackResponseMidocoBookingInfo4KickbackItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBookingInfo4Kickback property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBookingInfo4Kickback property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetBookingInfo4KickbackResponse extends AbstractStructBase
     /**
      * Set MidocoBookingInfo4Kickback value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback[] $midocoBookingInfo4Kickback
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingInfo4KickbackResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback[] $midocoBookingInfo4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingInfo4KickbackResponse
      */
     public function setMidocoBookingInfo4Kickback(?array $midocoBookingInfo4Kickback = null): self
     {
@@ -85,14 +85,14 @@ class GetBookingInfo4KickbackResponse extends AbstractStructBase
     /**
      * Add item to MidocoBookingInfo4Kickback value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingInfo4KickbackResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingInfo4KickbackResponse
      */
-    public function addToMidocoBookingInfo4Kickback(\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback $item): self
+    public function addToMidocoBookingInfo4Kickback(\Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback) {
-            throw new InvalidArgumentException(sprintf('The MidocoBookingInfo4Kickback property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback) {
+            throw new InvalidArgumentException(sprintf('The MidocoBookingInfo4Kickback property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBookingInfo4Kickback[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class GetTravelStartDatesFromAgencyRequest extends AbstractStructBase
     /**
      * Set agencyCustomerId value
      * @param int $agencyCustomerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelStartDatesFromAgencyRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelStartDatesFromAgencyRequest
      */
     public function setAgencyCustomerId(?int $agencyCustomerId = null): self
     {
@@ -94,7 +94,7 @@ class GetTravelStartDatesFromAgencyRequest extends AbstractStructBase
     /**
      * Set minDate value
      * @param string $minDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelStartDatesFromAgencyRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelStartDatesFromAgencyRequest
      */
     public function setMinDate(?string $minDate = null): self
     {
@@ -117,7 +117,7 @@ class GetTravelStartDatesFromAgencyRequest extends AbstractStructBase
     /**
      * Set maxDate value
      * @param string $maxDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelStartDatesFromAgencyRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelStartDatesFromAgencyRequest
      */
     public function setMaxDate(?string $maxDate = null): self
     {
@@ -140,7 +140,7 @@ class GetTravelStartDatesFromAgencyRequest extends AbstractStructBase
     /**
      * Set getOnlyFirstTravelStart value
      * @param bool $getOnlyFirstTravelStart
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelStartDatesFromAgencyRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelStartDatesFromAgencyRequest
      */
     public function setGetOnlyFirstTravelStart(?bool $getOnlyFirstTravelStart = null): self
     {
@@ -163,7 +163,7 @@ class GetTravelStartDatesFromAgencyRequest extends AbstractStructBase
     /**
      * Set getOnlyLastTravelStart value
      * @param bool $getOnlyLastTravelStart
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelStartDatesFromAgencyRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelStartDatesFromAgencyRequest
      */
     public function setGetOnlyLastTravelStart(?bool $getOnlyLastTravelStart = null): self
     {

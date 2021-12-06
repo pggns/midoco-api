@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -25,17 +25,17 @@ class GetPrintedBillingDocResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: mail:MidocoMailMessage
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
     /**
      * The MidocoMailDescription4Inexso
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: system:MidocoMailDescription4Inexso
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $MidocoMailDescription4Inexso = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $MidocoMailDescription4Inexso = null;
     /**
      * The fileName
      * @var string|null
@@ -48,11 +48,11 @@ class GetPrintedBillingDocResponse extends AbstractStructBase
      * @uses GetPrintedBillingDocResponse::setMidocoMailDescription4Inexso()
      * @uses GetPrintedBillingDocResponse::setFileName()
      * @param string $data
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso
      * @param string $fileName
      */
-    public function __construct(?string $data = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso = null, ?string $fileName = null)
+    public function __construct(?string $data = null, ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?\Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso = null, ?string $fileName = null)
     {
         $this
             ->setData($data)
@@ -71,7 +71,7 @@ class GetPrintedBillingDocResponse extends AbstractStructBase
     /**
      * Set data value
      * @param string $data
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintedBillingDocResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintedBillingDocResponse
      */
     public function setData(?string $data = null): self
     {
@@ -85,18 +85,18 @@ class GetPrintedBillingDocResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMailMessage value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
     {
         return $this->MidocoMailMessage;
     }
     /**
      * Set MidocoMailMessage value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintedBillingDocResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintedBillingDocResponse
      */
-    public function setMidocoMailMessage(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
+    public function setMidocoMailMessage(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
     {
         $this->MidocoMailMessage = $midocoMailMessage;
         
@@ -104,18 +104,18 @@ class GetPrintedBillingDocResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMailDescription4Inexso value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso|null
      */
-    public function getMidocoMailDescription4Inexso(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso
+    public function getMidocoMailDescription4Inexso(): ?\Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso
     {
         return $this->MidocoMailDescription4Inexso;
     }
     /**
      * Set MidocoMailDescription4Inexso value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintedBillingDocResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintedBillingDocResponse
      */
-    public function setMidocoMailDescription4Inexso(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso = null): self
+    public function setMidocoMailDescription4Inexso(?\Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso = null): self
     {
         $this->MidocoMailDescription4Inexso = $midocoMailDescription4Inexso;
         
@@ -132,7 +132,7 @@ class GetPrintedBillingDocResponse extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintedBillingDocResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintedBillingDocResponse
      */
     public function setFileName(?string $fileName = null): self
     {

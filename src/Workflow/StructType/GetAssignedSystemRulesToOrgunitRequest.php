@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class GetAssignedSystemRulesToOrgunitRequest extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoUnitRuleset
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoUnitRuleset|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoUnitRuleset|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoUnitRuleset $MidocoUnitRuleset = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\MidocoUnitRuleset $MidocoUnitRuleset = null;
     /**
      * Constructor method for GetAssignedSystemRulesToOrgunitRequest
      * @uses GetAssignedSystemRulesToOrgunitRequest::setMidocoUnitRuleset()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoUnitRuleset $midocoUnitRuleset
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoUnitRuleset $midocoUnitRuleset
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoUnitRuleset $midocoUnitRuleset = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\MidocoUnitRuleset $midocoUnitRuleset = null)
     {
         $this
             ->setMidocoUnitRuleset($midocoUnitRuleset);
     }
     /**
      * Get MidocoUnitRuleset value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoUnitRuleset|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoUnitRuleset|null
      */
-    public function getMidocoUnitRuleset(): ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoUnitRuleset
+    public function getMidocoUnitRuleset(): ?\Pggns\MidocoApi\Workflow\StructType\MidocoUnitRuleset
     {
         return $this->MidocoUnitRuleset;
     }
     /**
      * Set MidocoUnitRuleset value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoUnitRuleset $midocoUnitRuleset
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetAssignedSystemRulesToOrgunitRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoUnitRuleset $midocoUnitRuleset
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetAssignedSystemRulesToOrgunitRequest
      */
-    public function setMidocoUnitRuleset(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoUnitRuleset $midocoUnitRuleset = null): self
+    public function setMidocoUnitRuleset(?\Pggns\MidocoApi\Workflow\StructType\MidocoUnitRuleset $midocoUnitRuleset = null): self
     {
         $this->MidocoUnitRuleset = $midocoUnitRuleset;
         

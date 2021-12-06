@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ValidateAccountForPlanRequest extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ValidateAccountForPlanRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ValidateAccountForPlanRequest
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -70,7 +70,7 @@ class ValidateAccountForPlanRequest extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ValidateAccountForPlanRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ValidateAccountForPlanRequest
      */
     public function setAccountId(?string $accountId = null): self
     {

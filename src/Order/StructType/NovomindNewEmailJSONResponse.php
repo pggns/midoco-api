@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class NovomindNewEmailJSONResponse extends AbstractStructBase
     /**
      * Set json value
      * @param string $json
-     * @return \Pggns\MidocoApi\Api\Order\StructType\NovomindNewEmailJSONResponse
+     * @return \Pggns\MidocoApi\Order\StructType\NovomindNewEmailJSONResponse
      */
     public function setJson(?string $json = null): self
     {

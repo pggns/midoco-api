@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\ServiceType;
+namespace Pggns\MidocoApi\Orderlists\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Deposit extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Orderlists\ServiceType\Deposit
+     * @return \Pggns\MidocoApi\Orderlists\ServiceType\Deposit
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Deposit extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\DepositListRequest $paramDepositListRequest
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DepositListResponse|bool
+     * @param \Pggns\MidocoApi\Orderlists\StructType\DepositListRequest $paramDepositListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DepositListResponse|bool
      */
-    public function depositList(\Pggns\MidocoApi\Api\Orderlists\StructType\DepositListRequest $paramDepositListRequest)
+    public function depositList(\Pggns\MidocoApi\Orderlists\StructType\DepositListRequest $paramDepositListRequest)
     {
         try {
             $this->setResult($resultDepositList = $this->getSoapClient()->__soapCall('depositList', [
@@ -58,15 +58,15 @@ class Deposit extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\DepositListCsvExportRequest $paramDepositListCsvExportRequest
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DepositListCsvExportResponse|bool
+     * @param \Pggns\MidocoApi\Orderlists\StructType\DepositListCsvExportRequest $paramDepositListCsvExportRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DepositListCsvExportResponse|bool
      */
-    public function depositListCsvExport(\Pggns\MidocoApi\Api\Orderlists\StructType\DepositListCsvExportRequest $paramDepositListCsvExportRequest)
+    public function depositListCsvExport(\Pggns\MidocoApi\Orderlists\StructType\DepositListCsvExportRequest $paramDepositListCsvExportRequest)
     {
         try {
             $this->setResult($resultDepositListCsvExport = $this->getSoapClient()->__soapCall('depositListCsvExport', [
@@ -83,7 +83,7 @@ class Deposit extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DepositListCsvExportResponse|\Pggns\MidocoApi\Api\Orderlists\StructType\DepositListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DepositListCsvExportResponse|\Pggns\MidocoApi\Orderlists\StructType\DepositListResponse
      */
     public function getResult()
     {

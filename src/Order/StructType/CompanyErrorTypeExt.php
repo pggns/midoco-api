@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -59,7 +59,7 @@ class CompanyErrorTypeExt extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CompanyErrorTypeExt
+     * @return \Pggns\MidocoApi\Order\StructType\CompanyErrorTypeExt
      */
     public function setCustomerId(int $customerId): self
     {
@@ -82,7 +82,7 @@ class CompanyErrorTypeExt extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CompanyErrorTypeExt
+     * @return \Pggns\MidocoApi\Order\StructType\CompanyErrorTypeExt
      */
     public function setMessage(string $message): self
     {
@@ -105,7 +105,7 @@ class CompanyErrorTypeExt extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CompanyErrorTypeExt
+     * @return \Pggns\MidocoApi\Order\StructType\CompanyErrorTypeExt
      */
     public function setCustomerName(?string $customerName = null): self
     {

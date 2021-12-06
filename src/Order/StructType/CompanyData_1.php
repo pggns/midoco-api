@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -72,17 +72,17 @@ class CompanyData_1 extends AbstractStructBase
     }
     /**
      * Set salutation value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\SalutationType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\SalutationType::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\SalutationType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\SalutationType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CompanyData_1
+     * @return \Pggns\MidocoApi\Order\StructType\CompanyData_1
      */
     public function setSalutation(?string $salutation = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\SalutationType::valueIsValid($salutation)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\SalutationType', is_array($salutation) ? implode(', ', $salutation) : var_export($salutation, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\SalutationType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\SalutationType::valueIsValid($salutation)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\SalutationType', is_array($salutation) ? implode(', ', $salutation) : var_export($salutation, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\SalutationType::getValidValues())), __LINE__);
         }
         $this->salutation = $salutation;
         
@@ -99,7 +99,7 @@ class CompanyData_1 extends AbstractStructBase
     /**
      * Set contactPerson value
      * @param string $contactPerson
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CompanyData_1
+     * @return \Pggns\MidocoApi\Order\StructType\CompanyData_1
      */
     public function setContactPerson(?string $contactPerson = null): self
     {
@@ -122,7 +122,7 @@ class CompanyData_1 extends AbstractStructBase
     /**
      * Set organisationName value
      * @param string $organisationName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CompanyData_1
+     * @return \Pggns\MidocoApi\Order\StructType\CompanyData_1
      */
     public function setOrganisationName(?string $organisationName = null): self
     {
@@ -145,7 +145,7 @@ class CompanyData_1 extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CompanyData_1
+     * @return \Pggns\MidocoApi\Order\StructType\CompanyData_1
      */
     public function setVatId(?string $vatId = null): self
     {

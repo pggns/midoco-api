@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MisCampaignFilterDTO extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignFilterDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignFilterDTO
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -86,7 +86,7 @@ class MisCampaignFilterDTO extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignFilterDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignFilterDTO
      */
     public function setCategory(?string $category = null): self
     {
@@ -109,7 +109,7 @@ class MisCampaignFilterDTO extends AbstractStructBase
     /**
      * Set filterId value
      * @param int $filterId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignFilterDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignFilterDTO
      */
     public function setFilterId(?int $filterId = null): self
     {
@@ -132,7 +132,7 @@ class MisCampaignFilterDTO extends AbstractStructBase
     /**
      * Set inSelect value
      * @param bool $inSelect
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignFilterDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignFilterDTO
      */
     public function setInSelect(?bool $inSelect = null): self
     {

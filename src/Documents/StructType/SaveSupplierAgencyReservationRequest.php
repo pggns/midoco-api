@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveSupplierAgencyReservationRequest extends AbstractStructBase
      * The MidocoSupplierAgencyReservation
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierAgencyReservation
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAgencyReservation|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencyReservation|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAgencyReservation $MidocoSupplierAgencyReservation = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencyReservation $MidocoSupplierAgencyReservation = null;
     /**
      * Constructor method for SaveSupplierAgencyReservationRequest
      * @uses SaveSupplierAgencyReservationRequest::setMidocoSupplierAgencyReservation()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAgencyReservation $midocoSupplierAgencyReservation
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencyReservation $midocoSupplierAgencyReservation
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAgencyReservation $midocoSupplierAgencyReservation = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencyReservation $midocoSupplierAgencyReservation = null)
     {
         $this
             ->setMidocoSupplierAgencyReservation($midocoSupplierAgencyReservation);
     }
     /**
      * Get MidocoSupplierAgencyReservation value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAgencyReservation|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencyReservation|null
      */
-    public function getMidocoSupplierAgencyReservation(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAgencyReservation
+    public function getMidocoSupplierAgencyReservation(): ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencyReservation
     {
         return $this->MidocoSupplierAgencyReservation;
     }
     /**
      * Set MidocoSupplierAgencyReservation value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAgencyReservation $midocoSupplierAgencyReservation
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveSupplierAgencyReservationRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencyReservation $midocoSupplierAgencyReservation
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveSupplierAgencyReservationRequest
      */
-    public function setMidocoSupplierAgencyReservation(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAgencyReservation $midocoSupplierAgencyReservation = null): self
+    public function setMidocoSupplierAgencyReservation(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencyReservation $midocoSupplierAgencyReservation = null): self
     {
         $this->MidocoSupplierAgencyReservation = $midocoSupplierAgencyReservation;
         

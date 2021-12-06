@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveBonusCardRequest extends AbstractStructBase
      * The MidocoCrmBonusCard
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmBonusCard
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO $MidocoCrmBonusCard = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO $MidocoCrmBonusCard = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +29,10 @@ class SaveBonusCardRequest extends AbstractStructBase
      * Constructor method for SaveBonusCardRequest
      * @uses SaveBonusCardRequest::setMidocoCrmBonusCard()
      * @uses SaveBonusCardRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO $midocoCrmBonusCard
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO $midocoCrmBonusCard
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO $midocoCrmBonusCard = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO $midocoCrmBonusCard = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoCrmBonusCard($midocoCrmBonusCard)
@@ -40,18 +40,18 @@ class SaveBonusCardRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmBonusCard value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO|null
      */
-    public function getMidocoCrmBonusCard(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO
+    public function getMidocoCrmBonusCard(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO
     {
         return $this->MidocoCrmBonusCard;
     }
     /**
      * Set MidocoCrmBonusCard value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO $midocoCrmBonusCard
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveBonusCardRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO $midocoCrmBonusCard
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveBonusCardRequest
      */
-    public function setMidocoCrmBonusCard(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO $midocoCrmBonusCard = null): self
+    public function setMidocoCrmBonusCard(?\Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO $midocoCrmBonusCard = null): self
     {
         $this->MidocoCrmBonusCard = $midocoCrmBonusCard;
         
@@ -68,7 +68,7 @@ class SaveBonusCardRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveBonusCardRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveBonusCardRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

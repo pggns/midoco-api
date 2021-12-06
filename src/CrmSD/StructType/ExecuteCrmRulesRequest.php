@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class ExecuteCrmRulesRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ExecuteCrmRulesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ExecuteCrmRulesRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -99,7 +99,7 @@ class ExecuteCrmRulesRequest extends AbstractStructBase
      * Set ruleName value
      * @throws InvalidArgumentException
      * @param string[] $ruleName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ExecuteCrmRulesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ExecuteCrmRulesRequest
      */
     public function setRuleName(?array $ruleName = null): self
     {
@@ -115,7 +115,7 @@ class ExecuteCrmRulesRequest extends AbstractStructBase
      * Add item to ruleName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ExecuteCrmRulesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ExecuteCrmRulesRequest
      */
     public function addToRuleName(string $item): self
     {

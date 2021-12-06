@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class UserattribvalueDTO extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserattribvalueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserattribvalueDTO
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -78,7 +78,7 @@ class UserattribvalueDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserattribvalueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserattribvalueDTO
      */
     public function setUserId(?int $userId = null): self
     {
@@ -101,7 +101,7 @@ class UserattribvalueDTO extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserattribvalueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserattribvalueDTO
      */
     public function setValue(?string $value = null): self
     {

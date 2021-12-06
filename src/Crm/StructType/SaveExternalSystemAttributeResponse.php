@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveExternalSystemAttributeResponse extends AbstractStructBase
      * The MidocoExternalSystemAttribute
      * Meta information extracted from the WSDL
      * - ref: MidocoExternalSystemAttribute
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\SystemAttributeDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\SystemAttributeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\SystemAttributeDTO $MidocoExternalSystemAttribute = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\SystemAttributeDTO $MidocoExternalSystemAttribute = null;
     /**
      * Constructor method for SaveExternalSystemAttributeResponse
      * @uses SaveExternalSystemAttributeResponse::setMidocoExternalSystemAttribute()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SystemAttributeDTO $midocoExternalSystemAttribute
+     * @param \Pggns\MidocoApi\Crm\StructType\SystemAttributeDTO $midocoExternalSystemAttribute
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\SystemAttributeDTO $midocoExternalSystemAttribute = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\SystemAttributeDTO $midocoExternalSystemAttribute = null)
     {
         $this
             ->setMidocoExternalSystemAttribute($midocoExternalSystemAttribute);
     }
     /**
      * Get MidocoExternalSystemAttribute value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SystemAttributeDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\SystemAttributeDTO|null
      */
-    public function getMidocoExternalSystemAttribute(): ?\Pggns\MidocoApi\Api\Crm\StructType\SystemAttributeDTO
+    public function getMidocoExternalSystemAttribute(): ?\Pggns\MidocoApi\Crm\StructType\SystemAttributeDTO
     {
         return $this->MidocoExternalSystemAttribute;
     }
     /**
      * Set MidocoExternalSystemAttribute value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SystemAttributeDTO $midocoExternalSystemAttribute
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveExternalSystemAttributeResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\SystemAttributeDTO $midocoExternalSystemAttribute
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveExternalSystemAttributeResponse
      */
-    public function setMidocoExternalSystemAttribute(?\Pggns\MidocoApi\Api\Crm\StructType\SystemAttributeDTO $midocoExternalSystemAttribute = null): self
+    public function setMidocoExternalSystemAttribute(?\Pggns\MidocoApi\Crm\StructType\SystemAttributeDTO $midocoExternalSystemAttribute = null): self
     {
         $this->MidocoExternalSystemAttribute = $midocoExternalSystemAttribute;
         

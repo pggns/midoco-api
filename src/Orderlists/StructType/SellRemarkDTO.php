@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -182,7 +182,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -205,7 +205,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set importHashvalue value
      * @param int $importHashvalue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setImportHashvalue(?int $importHashvalue = null): self
     {
@@ -228,7 +228,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set isAutoPrint value
      * @param bool $isAutoPrint
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setIsAutoPrint(?bool $isAutoPrint = null): self
     {
@@ -251,7 +251,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -274,7 +274,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -297,7 +297,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -320,7 +320,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set notifyDate value
      * @param string $notifyDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setNotifyDate(?string $notifyDate = null): self
     {
@@ -343,7 +343,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set notifyUnit value
      * @param string $notifyUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setNotifyUnit(?string $notifyUnit = null): self
     {
@@ -366,7 +366,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set positionNo value
      * @param int $positionNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setPositionNo(?int $positionNo = null): self
     {
@@ -389,7 +389,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set printAllowed value
      * @param bool $printAllowed
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setPrintAllowed(?bool $printAllowed = null): self
     {
@@ -412,7 +412,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set printMarker value
      * @param string $printMarker
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setPrintMarker(?string $printMarker = null): self
     {
@@ -435,7 +435,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -458,7 +458,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setRemark(?string $remark = null): self
     {
@@ -481,7 +481,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set servicePosition value
      * @param int $servicePosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setServicePosition(?int $servicePosition = null): self
     {
@@ -504,7 +504,7 @@ class SellRemarkDTO extends AbstractStructBase
     /**
      * Set tokenChecked value
      * @param bool $tokenChecked
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
      */
     public function setTokenChecked(?bool $tokenChecked = null): self
     {

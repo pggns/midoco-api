@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class JasperReportType extends AbstractStructBase
      * The MidocoJasperReportParamValue
      * Meta information extracted from the WSDL
      * - ref: MidocoJasperReportParamValue
-     * @var \Pggns\MidocoApi\Api\Order\StructType\JasperReportParamValueDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\JasperReportParamValueDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\JasperReportParamValueDTO $MidocoJasperReportParamValue = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\JasperReportParamValueDTO $MidocoJasperReportParamValue = null;
     /**
      * The MidocoJasperParameter
      * Meta information extracted from the WSDL
      * - ref: MidocoJasperParameter
-     * @var \Pggns\MidocoApi\Api\Order\StructType\JasperParameterDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\JasperParameterDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\JasperParameterDTO $MidocoJasperParameter = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\JasperParameterDTO $MidocoJasperParameter = null;
     /**
      * The MidocoJasperReportParam
      * Meta information extracted from the WSDL
      * - ref: MidocoJasperReportParam
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoJasperReportParam|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoJasperReportParam|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoJasperReportParam $MidocoJasperReportParam = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoJasperReportParam $MidocoJasperReportParam = null;
     /**
      * Constructor method for JasperReportType
      * @uses JasperReportType::setMidocoJasperReportParamValue()
      * @uses JasperReportType::setMidocoJasperParameter()
      * @uses JasperReportType::setMidocoJasperReportParam()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\JasperReportParamValueDTO $midocoJasperReportParamValue
-     * @param \Pggns\MidocoApi\Api\Order\StructType\JasperParameterDTO $midocoJasperParameter
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoJasperReportParam $midocoJasperReportParam
+     * @param \Pggns\MidocoApi\Order\StructType\JasperReportParamValueDTO $midocoJasperReportParamValue
+     * @param \Pggns\MidocoApi\Order\StructType\JasperParameterDTO $midocoJasperParameter
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoJasperReportParam $midocoJasperReportParam
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\JasperReportParamValueDTO $midocoJasperReportParamValue = null, ?\Pggns\MidocoApi\Api\Order\StructType\JasperParameterDTO $midocoJasperParameter = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoJasperReportParam $midocoJasperReportParam = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\JasperReportParamValueDTO $midocoJasperReportParamValue = null, ?\Pggns\MidocoApi\Order\StructType\JasperParameterDTO $midocoJasperParameter = null, ?\Pggns\MidocoApi\Order\StructType\MidocoJasperReportParam $midocoJasperReportParam = null)
     {
         $this
             ->setMidocoJasperReportParamValue($midocoJasperReportParamValue)
@@ -52,18 +52,18 @@ class JasperReportType extends AbstractStructBase
     }
     /**
      * Get MidocoJasperReportParamValue value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JasperReportParamValueDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\JasperReportParamValueDTO|null
      */
-    public function getMidocoJasperReportParamValue(): ?\Pggns\MidocoApi\Api\Order\StructType\JasperReportParamValueDTO
+    public function getMidocoJasperReportParamValue(): ?\Pggns\MidocoApi\Order\StructType\JasperReportParamValueDTO
     {
         return $this->MidocoJasperReportParamValue;
     }
     /**
      * Set MidocoJasperReportParamValue value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\JasperReportParamValueDTO $midocoJasperReportParamValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JasperReportType
+     * @param \Pggns\MidocoApi\Order\StructType\JasperReportParamValueDTO $midocoJasperReportParamValue
+     * @return \Pggns\MidocoApi\Order\StructType\JasperReportType
      */
-    public function setMidocoJasperReportParamValue(?\Pggns\MidocoApi\Api\Order\StructType\JasperReportParamValueDTO $midocoJasperReportParamValue = null): self
+    public function setMidocoJasperReportParamValue(?\Pggns\MidocoApi\Order\StructType\JasperReportParamValueDTO $midocoJasperReportParamValue = null): self
     {
         $this->MidocoJasperReportParamValue = $midocoJasperReportParamValue;
         
@@ -71,18 +71,18 @@ class JasperReportType extends AbstractStructBase
     }
     /**
      * Get MidocoJasperParameter value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JasperParameterDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\JasperParameterDTO|null
      */
-    public function getMidocoJasperParameter(): ?\Pggns\MidocoApi\Api\Order\StructType\JasperParameterDTO
+    public function getMidocoJasperParameter(): ?\Pggns\MidocoApi\Order\StructType\JasperParameterDTO
     {
         return $this->MidocoJasperParameter;
     }
     /**
      * Set MidocoJasperParameter value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\JasperParameterDTO $midocoJasperParameter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JasperReportType
+     * @param \Pggns\MidocoApi\Order\StructType\JasperParameterDTO $midocoJasperParameter
+     * @return \Pggns\MidocoApi\Order\StructType\JasperReportType
      */
-    public function setMidocoJasperParameter(?\Pggns\MidocoApi\Api\Order\StructType\JasperParameterDTO $midocoJasperParameter = null): self
+    public function setMidocoJasperParameter(?\Pggns\MidocoApi\Order\StructType\JasperParameterDTO $midocoJasperParameter = null): self
     {
         $this->MidocoJasperParameter = $midocoJasperParameter;
         
@@ -90,18 +90,18 @@ class JasperReportType extends AbstractStructBase
     }
     /**
      * Get MidocoJasperReportParam value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoJasperReportParam|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoJasperReportParam|null
      */
-    public function getMidocoJasperReportParam(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoJasperReportParam
+    public function getMidocoJasperReportParam(): ?\Pggns\MidocoApi\Order\StructType\MidocoJasperReportParam
     {
         return $this->MidocoJasperReportParam;
     }
     /**
      * Set MidocoJasperReportParam value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoJasperReportParam $midocoJasperReportParam
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JasperReportType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoJasperReportParam $midocoJasperReportParam
+     * @return \Pggns\MidocoApi\Order\StructType\JasperReportType
      */
-    public function setMidocoJasperReportParam(?\Pggns\MidocoApi\Api\Order\StructType\MidocoJasperReportParam $midocoJasperReportParam = null): self
+    public function setMidocoJasperReportParam(?\Pggns\MidocoApi\Order\StructType\MidocoJasperReportParam $midocoJasperReportParam = null): self
     {
         $this->MidocoJasperReportParam = $midocoJasperReportParam;
         

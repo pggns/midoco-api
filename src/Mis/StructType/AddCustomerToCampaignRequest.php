@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class AddCustomerToCampaignRequest extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AddCustomerToCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\AddCustomerToCampaignRequest
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -78,7 +78,7 @@ class AddCustomerToCampaignRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AddCustomerToCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\AddCustomerToCampaignRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -101,7 +101,7 @@ class AddCustomerToCampaignRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AddCustomerToCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\AddCustomerToCampaignRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

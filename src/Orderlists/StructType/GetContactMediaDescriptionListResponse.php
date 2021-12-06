@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetContactMediaDescriptionListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoContactMediaDescription
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO[]
      */
     protected ?array $MidocoContactMediaDescription = null;
     /**
      * Constructor method for GetContactMediaDescriptionListResponse
      * @uses GetContactMediaDescriptionListResponse::setMidocoContactMediaDescription()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO[] $midocoContactMediaDescription
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO[] $midocoContactMediaDescription
      */
     public function __construct(?array $midocoContactMediaDescription = null)
     {
@@ -34,7 +34,7 @@ class GetContactMediaDescriptionListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoContactMediaDescription value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO[]
      */
     public function getMidocoContactMediaDescription(): ?array
     {
@@ -55,12 +55,12 @@ class GetContactMediaDescriptionListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getContactMediaDescriptionListResponseMidocoContactMediaDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getContactMediaDescriptionListResponseMidocoContactMediaDescriptionItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO) {
+            if (!$getContactMediaDescriptionListResponseMidocoContactMediaDescriptionItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO) {
                 $invalidValues[] = is_object($getContactMediaDescriptionListResponseMidocoContactMediaDescriptionItem) ? get_class($getContactMediaDescriptionListResponseMidocoContactMediaDescriptionItem) : sprintf('%s(%s)', gettype($getContactMediaDescriptionListResponseMidocoContactMediaDescriptionItem), var_export($getContactMediaDescriptionListResponseMidocoContactMediaDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactMediaDescription property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactMediaDescription property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetContactMediaDescriptionListResponse extends AbstractStructBase
     /**
      * Set MidocoContactMediaDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO[] $midocoContactMediaDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetContactMediaDescriptionListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO[] $midocoContactMediaDescription
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetContactMediaDescriptionListResponse
      */
     public function setMidocoContactMediaDescription(?array $midocoContactMediaDescription = null): self
     {
@@ -85,14 +85,14 @@ class GetContactMediaDescriptionListResponse extends AbstractStructBase
     /**
      * Add item to MidocoContactMediaDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetContactMediaDescriptionListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetContactMediaDescriptionListResponse
      */
-    public function addToMidocoContactMediaDescription(\Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO $item): self
+    public function addToMidocoContactMediaDescription(\Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactMediaDescription property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactMediaDescription property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactMediaDescription[] = $item;
         

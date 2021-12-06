@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoAirlineDescriptionDTO extends AbstractStructBase
     /**
      * Set airlineCode value
      * @param string $airlineCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirlineDescriptionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAirlineDescriptionDTO
      */
     public function setAirlineCode(?string $airlineCode = null): self
     {
@@ -70,7 +70,7 @@ class MidocoAirlineDescriptionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirlineDescriptionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAirlineDescriptionDTO
      */
     public function setDescription(?string $description = null): self
     {

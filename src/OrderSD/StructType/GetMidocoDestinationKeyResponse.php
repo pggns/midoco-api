@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoDestinationKeyResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDestinationKeyAssign
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\DestinationKeyAssignDTO[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\DestinationKeyAssignDTO[]
      */
     protected ?array $MidocoDestinationKeyAssign = null;
     /**
      * Constructor method for GetMidocoDestinationKeyResponse
      * @uses GetMidocoDestinationKeyResponse::setMidocoDestinationKeyAssign()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\DestinationKeyAssignDTO[] $midocoDestinationKeyAssign
+     * @param \Pggns\MidocoApi\OrderSD\StructType\DestinationKeyAssignDTO[] $midocoDestinationKeyAssign
      */
     public function __construct(?array $midocoDestinationKeyAssign = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoDestinationKeyResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDestinationKeyAssign value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DestinationKeyAssignDTO[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DestinationKeyAssignDTO[]
      */
     public function getMidocoDestinationKeyAssign(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoDestinationKeyResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoDestinationKeyResponseMidocoDestinationKeyAssignItem) {
             // validation for constraint: itemType
-            if (!$getMidocoDestinationKeyResponseMidocoDestinationKeyAssignItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\DestinationKeyAssignDTO) {
+            if (!$getMidocoDestinationKeyResponseMidocoDestinationKeyAssignItem instanceof \Pggns\MidocoApi\OrderSD\StructType\DestinationKeyAssignDTO) {
                 $invalidValues[] = is_object($getMidocoDestinationKeyResponseMidocoDestinationKeyAssignItem) ? get_class($getMidocoDestinationKeyResponseMidocoDestinationKeyAssignItem) : sprintf('%s(%s)', gettype($getMidocoDestinationKeyResponseMidocoDestinationKeyAssignItem), var_export($getMidocoDestinationKeyResponseMidocoDestinationKeyAssignItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDestinationKeyAssign property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\DestinationKeyAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDestinationKeyAssign property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\DestinationKeyAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoDestinationKeyResponse extends AbstractStructBase
     /**
      * Set MidocoDestinationKeyAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\DestinationKeyAssignDTO[] $midocoDestinationKeyAssign
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoDestinationKeyResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\DestinationKeyAssignDTO[] $midocoDestinationKeyAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoDestinationKeyResponse
      */
     public function setMidocoDestinationKeyAssign(?array $midocoDestinationKeyAssign = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoDestinationKeyResponse extends AbstractStructBase
     /**
      * Add item to MidocoDestinationKeyAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\DestinationKeyAssignDTO $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoDestinationKeyResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\DestinationKeyAssignDTO $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoDestinationKeyResponse
      */
-    public function addToMidocoDestinationKeyAssign(\Pggns\MidocoApi\Api\OrderSD\StructType\DestinationKeyAssignDTO $item): self
+    public function addToMidocoDestinationKeyAssign(\Pggns\MidocoApi\OrderSD\StructType\DestinationKeyAssignDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\DestinationKeyAssignDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoDestinationKeyAssign property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\DestinationKeyAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\DestinationKeyAssignDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoDestinationKeyAssign property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\DestinationKeyAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDestinationKeyAssign[] = $item;
         

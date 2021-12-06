@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetPrintjobListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPrintjob
-     * @var \Pggns\MidocoApi\Api\System\StructType\PrintjobDTO[]
+     * @var \Pggns\MidocoApi\System\StructType\PrintjobDTO[]
      */
     protected ?array $MidocoPrintjob = null;
     /**
      * Constructor method for GetPrintjobListResponse
      * @uses GetPrintjobListResponse::setMidocoPrintjob()
-     * @param \Pggns\MidocoApi\Api\System\StructType\PrintjobDTO[] $midocoPrintjob
+     * @param \Pggns\MidocoApi\System\StructType\PrintjobDTO[] $midocoPrintjob
      */
     public function __construct(?array $midocoPrintjob = null)
     {
@@ -34,7 +34,7 @@ class GetPrintjobListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPrintjob value
-     * @return \Pggns\MidocoApi\Api\System\StructType\PrintjobDTO[]
+     * @return \Pggns\MidocoApi\System\StructType\PrintjobDTO[]
      */
     public function getMidocoPrintjob(): ?array
     {
@@ -55,12 +55,12 @@ class GetPrintjobListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPrintjobListResponseMidocoPrintjobItem) {
             // validation for constraint: itemType
-            if (!$getPrintjobListResponseMidocoPrintjobItem instanceof \Pggns\MidocoApi\Api\System\StructType\PrintjobDTO) {
+            if (!$getPrintjobListResponseMidocoPrintjobItem instanceof \Pggns\MidocoApi\System\StructType\PrintjobDTO) {
                 $invalidValues[] = is_object($getPrintjobListResponseMidocoPrintjobItem) ? get_class($getPrintjobListResponseMidocoPrintjobItem) : sprintf('%s(%s)', gettype($getPrintjobListResponseMidocoPrintjobItem), var_export($getPrintjobListResponseMidocoPrintjobItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintjob property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\PrintjobDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintjob property can only contain items of type \Pggns\MidocoApi\System\StructType\PrintjobDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetPrintjobListResponse extends AbstractStructBase
     /**
      * Set MidocoPrintjob value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\PrintjobDTO[] $midocoPrintjob
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetPrintjobListResponse
+     * @param \Pggns\MidocoApi\System\StructType\PrintjobDTO[] $midocoPrintjob
+     * @return \Pggns\MidocoApi\System\StructType\GetPrintjobListResponse
      */
     public function setMidocoPrintjob(?array $midocoPrintjob = null): self
     {
@@ -85,14 +85,14 @@ class GetPrintjobListResponse extends AbstractStructBase
     /**
      * Add item to MidocoPrintjob value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\PrintjobDTO $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetPrintjobListResponse
+     * @param \Pggns\MidocoApi\System\StructType\PrintjobDTO $item
+     * @return \Pggns\MidocoApi\System\StructType\GetPrintjobListResponse
      */
-    public function addToMidocoPrintjob(\Pggns\MidocoApi\Api\System\StructType\PrintjobDTO $item): self
+    public function addToMidocoPrintjob(\Pggns\MidocoApi\System\StructType\PrintjobDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\PrintjobDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintjob property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\PrintjobDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\PrintjobDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintjob property can only contain items of type \Pggns\MidocoApi\System\StructType\PrintjobDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintjob[] = $item;
         

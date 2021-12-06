@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetEmailInfoRequest extends AbstractStructBase
     /**
      * Set emailSender value
      * @param string $emailSender
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetEmailInfoRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetEmailInfoRequest
      */
     public function setEmailSender(?string $emailSender = null): self
     {

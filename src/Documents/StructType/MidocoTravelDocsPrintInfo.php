@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoTravelDocsPrintInfo extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelDocsPrintInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelDocsPrintInfo
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -102,7 +102,7 @@ class MidocoTravelDocsPrintInfo extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelDocsPrintInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelDocsPrintInfo
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -125,7 +125,7 @@ class MidocoTravelDocsPrintInfo extends AbstractStructBase
     /**
      * Set travelItemSupplierId value
      * @param string $travelItemSupplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelDocsPrintInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelDocsPrintInfo
      */
     public function setTravelItemSupplierId(?string $travelItemSupplierId = null): self
     {
@@ -148,7 +148,7 @@ class MidocoTravelDocsPrintInfo extends AbstractStructBase
     /**
      * Set travelItemBookingId value
      * @param string $travelItemBookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelDocsPrintInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelDocsPrintInfo
      */
     public function setTravelItemBookingId(?string $travelItemBookingId = null): self
     {
@@ -171,7 +171,7 @@ class MidocoTravelDocsPrintInfo extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelDocsPrintInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelDocsPrintInfo
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -194,7 +194,7 @@ class MidocoTravelDocsPrintInfo extends AbstractStructBase
     /**
      * Set selected value
      * @param bool $selected
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelDocsPrintInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelDocsPrintInfo
      */
     public function setSelected(?bool $selected = null): self
     {

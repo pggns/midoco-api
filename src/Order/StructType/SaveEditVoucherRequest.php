@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -149,7 +149,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set voucherId value
      * @param int $voucherId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setVoucherId(?int $voucherId = null): self
     {
@@ -172,7 +172,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set voucherNo value
      * @param string $voucherNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setVoucherNo(?string $voucherNo = null): self
     {
@@ -195,7 +195,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set securityCode value
      * @param string $securityCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setSecurityCode(?string $securityCode = null): self
     {
@@ -218,7 +218,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set voucherTypeId value
      * @param string $voucherTypeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setVoucherTypeId(?string $voucherTypeId = null): self
     {
@@ -241,7 +241,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set sellItemId value
      * @param int $sellItemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setSellItemId(?int $sellItemId = null): self
     {
@@ -264,7 +264,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -287,7 +287,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set isStorno value
      * @param bool $isStorno
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setIsStorno(?bool $isStorno = null): self
     {
@@ -310,7 +310,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set created value
      * @param string $created
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setCreated(?string $created = null): self
     {
@@ -333,7 +333,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set creator value
      * @param int $creator
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setCreator(?int $creator = null): self
     {
@@ -356,7 +356,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set voucherValue value
      * @param float $voucherValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setVoucherValue(?float $voucherValue = null): self
     {
@@ -379,7 +379,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set isUpdate value
      * @param bool $isUpdate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setIsUpdate(?bool $isUpdate = null): self
     {
@@ -402,7 +402,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set originalValue value
      * @param float $originalValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setOriginalValue(?float $originalValue = null): self
     {
@@ -425,7 +425,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set fromCustomer value
      * @param string $fromCustomer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setFromCustomer(?string $fromCustomer = null): self
     {
@@ -448,7 +448,7 @@ class SaveEditVoucherRequest extends AbstractStructBase
     /**
      * Set forCustomer value
      * @param string $forCustomer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherRequest
      */
     public function setForCustomer(?string $forCustomer = null): self
     {

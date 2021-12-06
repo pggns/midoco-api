@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\ServiceType;
+namespace Pggns\MidocoApi\Crm\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Check extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Crm\ServiceType\Check
+     * @return \Pggns\MidocoApi\Crm\ServiceType\Check
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CheckContactEntriesRequest $paramCheckContactEntriesRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CheckContactEntriesResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\CheckContactEntriesRequest $paramCheckContactEntriesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\CheckContactEntriesResponse|bool
      */
-    public function checkContactEntries(\Pggns\MidocoApi\Api\Crm\StructType\CheckContactEntriesRequest $paramCheckContactEntriesRequest)
+    public function checkContactEntries(\Pggns\MidocoApi\Crm\StructType\CheckContactEntriesRequest $paramCheckContactEntriesRequest)
     {
         try {
             $this->setResult($resultCheckContactEntries = $this->getSoapClient()->__soapCall('checkContactEntries', [
@@ -58,15 +58,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CheckMediatorAccessRequest $paramCheckMediatorAccessRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CheckMediatorAccessResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\CheckMediatorAccessRequest $paramCheckMediatorAccessRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\CheckMediatorAccessResponse|bool
      */
-    public function checkMediatorAccess(\Pggns\MidocoApi\Api\Crm\StructType\CheckMediatorAccessRequest $paramCheckMediatorAccessRequest)
+    public function checkMediatorAccess(\Pggns\MidocoApi\Crm\StructType\CheckMediatorAccessRequest $paramCheckMediatorAccessRequest)
     {
         try {
             $this->setResult($resultCheckMediatorAccess = $this->getSoapClient()->__soapCall('checkMediatorAccess', [
@@ -85,15 +85,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CheckAddressesForCustomerRequest $paramCheckAddressesForCustomerRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CheckAddressesForCustomerResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\CheckAddressesForCustomerRequest $paramCheckAddressesForCustomerRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\CheckAddressesForCustomerResponse|bool
      */
-    public function checkAddressesForCustomer(\Pggns\MidocoApi\Api\Crm\StructType\CheckAddressesForCustomerRequest $paramCheckAddressesForCustomerRequest)
+    public function checkAddressesForCustomer(\Pggns\MidocoApi\Crm\StructType\CheckAddressesForCustomerRequest $paramCheckAddressesForCustomerRequest)
     {
         try {
             $this->setResult($resultCheckAddressesForCustomer = $this->getSoapClient()->__soapCall('checkAddressesForCustomer', [
@@ -112,15 +112,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CheckAllAddressesStatistikATRequest $paramCheckAllAddressesStatistikATRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CheckAllAddressesStatistikATResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\CheckAllAddressesStatistikATRequest $paramCheckAllAddressesStatistikATRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\CheckAllAddressesStatistikATResponse|bool
      */
-    public function checkAllAddressesStatistikAT(\Pggns\MidocoApi\Api\Crm\StructType\CheckAllAddressesStatistikATRequest $paramCheckAllAddressesStatistikATRequest)
+    public function checkAllAddressesStatistikAT(\Pggns\MidocoApi\Crm\StructType\CheckAllAddressesStatistikATRequest $paramCheckAllAddressesStatistikATRequest)
     {
         try {
             $this->setResult($resultCheckAllAddressesStatistikAT = $this->getSoapClient()->__soapCall('checkAllAddressesStatistikAT', [
@@ -137,7 +137,7 @@ class Check extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CheckAddressesForCustomerResponse|\Pggns\MidocoApi\Api\Crm\StructType\CheckAllAddressesStatistikATResponse|\Pggns\MidocoApi\Api\Crm\StructType\CheckContactEntriesResponse|\Pggns\MidocoApi\Api\Crm\StructType\CheckMediatorAccessResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\CheckAddressesForCustomerResponse|\Pggns\MidocoApi\Crm\StructType\CheckAllAddressesStatistikATResponse|\Pggns\MidocoApi\Crm\StructType\CheckContactEntriesResponse|\Pggns\MidocoApi\Crm\StructType\CheckMediatorAccessResponse
      */
     public function getResult()
     {

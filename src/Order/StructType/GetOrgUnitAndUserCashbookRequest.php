@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetOrgUnitAndUserCashbookRequest extends AbstractStructBase
     /**
      * Set checkSignature value
      * @param bool $checkSignature
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrgUnitAndUserCashbookRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrgUnitAndUserCashbookRequest
      */
     public function setCheckSignature(?bool $checkSignature = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoDbiDefValue extends AbstractStructBase
     /**
      * Set dbiKey value
      * @param string $dbiKey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDbiDefValue
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDbiDefValue
      */
     public function setDbiKey(?string $dbiKey = null): self
     {
@@ -86,7 +86,7 @@ class MidocoDbiDefValue extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDbiDefValue
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDbiDefValue
      */
     public function setDescription(?string $description = null): self
     {
@@ -109,7 +109,7 @@ class MidocoDbiDefValue extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDbiDefValue
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDbiDefValue
      */
     public function setValue(?string $value = null): self
     {
@@ -132,7 +132,7 @@ class MidocoDbiDefValue extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDbiDefValue
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDbiDefValue
      */
     public function setPosition(?int $position = null): self
     {

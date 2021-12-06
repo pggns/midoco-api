@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetJobFunctionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoJobFunction
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\JobFunctionDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO[]
      */
     protected ?array $MidocoJobFunction = null;
     /**
      * Constructor method for GetJobFunctionResponse
      * @uses GetJobFunctionResponse::setMidocoJobFunction()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\JobFunctionDTO[] $midocoJobFunction
+     * @param \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO[] $midocoJobFunction
      */
     public function __construct(?array $midocoJobFunction = null)
     {
@@ -34,7 +34,7 @@ class GetJobFunctionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoJobFunction value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\JobFunctionDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO[]
      */
     public function getMidocoJobFunction(): ?array
     {
@@ -55,12 +55,12 @@ class GetJobFunctionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getJobFunctionResponseMidocoJobFunctionItem) {
             // validation for constraint: itemType
-            if (!$getJobFunctionResponseMidocoJobFunctionItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\JobFunctionDTO) {
+            if (!$getJobFunctionResponseMidocoJobFunctionItem instanceof \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO) {
                 $invalidValues[] = is_object($getJobFunctionResponseMidocoJobFunctionItem) ? get_class($getJobFunctionResponseMidocoJobFunctionItem) : sprintf('%s(%s)', gettype($getJobFunctionResponseMidocoJobFunctionItem), var_export($getJobFunctionResponseMidocoJobFunctionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoJobFunction property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\JobFunctionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoJobFunction property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetJobFunctionResponse extends AbstractStructBase
     /**
      * Set MidocoJobFunction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\JobFunctionDTO[] $midocoJobFunction
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetJobFunctionResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO[] $midocoJobFunction
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetJobFunctionResponse
      */
     public function setMidocoJobFunction(?array $midocoJobFunction = null): self
     {
@@ -85,14 +85,14 @@ class GetJobFunctionResponse extends AbstractStructBase
     /**
      * Add item to MidocoJobFunction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\JobFunctionDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetJobFunctionResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetJobFunctionResponse
      */
-    public function addToMidocoJobFunction(\Pggns\MidocoApi\Api\CrmSD\StructType\JobFunctionDTO $item): self
+    public function addToMidocoJobFunction(\Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\JobFunctionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoJobFunction property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\JobFunctionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoJobFunction property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoJobFunction[] = $item;
         

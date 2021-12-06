@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMarketingKeyRequest extends AbstractStructBase
      * The MidocoMarketingKey
      * Meta information extracted from the WSDL
      * - ref: MidocoMarketingKey
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MarketingKeyDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\MarketingKeyDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MarketingKeyDTO $MidocoMarketingKey = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MarketingKeyDTO $MidocoMarketingKey = null;
     /**
      * Constructor method for SaveMarketingKeyRequest
      * @uses SaveMarketingKeyRequest::setMidocoMarketingKey()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MarketingKeyDTO $midocoMarketingKey
+     * @param \Pggns\MidocoApi\Order\StructType\MarketingKeyDTO $midocoMarketingKey
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MarketingKeyDTO $midocoMarketingKey = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MarketingKeyDTO $midocoMarketingKey = null)
     {
         $this
             ->setMidocoMarketingKey($midocoMarketingKey);
     }
     /**
      * Get MidocoMarketingKey value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarketingKeyDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\MarketingKeyDTO|null
      */
-    public function getMidocoMarketingKey(): ?\Pggns\MidocoApi\Api\Order\StructType\MarketingKeyDTO
+    public function getMidocoMarketingKey(): ?\Pggns\MidocoApi\Order\StructType\MarketingKeyDTO
     {
         return $this->MidocoMarketingKey;
     }
     /**
      * Set MidocoMarketingKey value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MarketingKeyDTO $midocoMarketingKey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMarketingKeyRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MarketingKeyDTO $midocoMarketingKey
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMarketingKeyRequest
      */
-    public function setMidocoMarketingKey(?\Pggns\MidocoApi\Api\Order\StructType\MarketingKeyDTO $midocoMarketingKey = null): self
+    public function setMidocoMarketingKey(?\Pggns\MidocoApi\Order\StructType\MarketingKeyDTO $midocoMarketingKey = null): self
     {
         $this->MidocoMarketingKey = $midocoMarketingKey;
         

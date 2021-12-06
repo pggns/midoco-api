@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetMediatorTextTemplatesRequest extends AbstractStructBase
      * The MidocoCustomerTextTemplate
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerTextTemplate
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\TextTemplateDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO $MidocoCustomerTextTemplate = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\TextTemplateDTO $MidocoCustomerTextTemplate = null;
     /**
      * Constructor method for GetMediatorTextTemplatesRequest
      * @uses GetMediatorTextTemplatesRequest::setMidocoCustomerTextTemplate()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO $midocoCustomerTextTemplate
+     * @param \Pggns\MidocoApi\Crm\StructType\TextTemplateDTO $midocoCustomerTextTemplate
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO $midocoCustomerTextTemplate = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\TextTemplateDTO $midocoCustomerTextTemplate = null)
     {
         $this
             ->setMidocoCustomerTextTemplate($midocoCustomerTextTemplate);
     }
     /**
      * Get MidocoCustomerTextTemplate value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\TextTemplateDTO|null
      */
-    public function getMidocoCustomerTextTemplate(): ?\Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO
+    public function getMidocoCustomerTextTemplate(): ?\Pggns\MidocoApi\Crm\StructType\TextTemplateDTO
     {
         return $this->MidocoCustomerTextTemplate;
     }
     /**
      * Set MidocoCustomerTextTemplate value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO $midocoCustomerTextTemplate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMediatorTextTemplatesRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\TextTemplateDTO $midocoCustomerTextTemplate
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMediatorTextTemplatesRequest
      */
-    public function setMidocoCustomerTextTemplate(?\Pggns\MidocoApi\Api\Crm\StructType\TextTemplateDTO $midocoCustomerTextTemplate = null): self
+    public function setMidocoCustomerTextTemplate(?\Pggns\MidocoApi\Crm\StructType\TextTemplateDTO $midocoCustomerTextTemplate = null): self
     {
         $this->MidocoCustomerTextTemplate = $midocoCustomerTextTemplate;
         

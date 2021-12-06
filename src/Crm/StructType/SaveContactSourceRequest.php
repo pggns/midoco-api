@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveContactSourceRequest extends AbstractStructBase
      * The MidocoContactSource
      * Meta information extracted from the WSDL
      * - ref: MidocoContactSource
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoContactSource|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource $MidocoContactSource = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoContactSource $MidocoContactSource = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +29,10 @@ class SaveContactSourceRequest extends AbstractStructBase
      * Constructor method for SaveContactSourceRequest
      * @uses SaveContactSourceRequest::setMidocoContactSource()
      * @uses SaveContactSourceRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource $midocoContactSource
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactSource $midocoContactSource
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource $midocoContactSource = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoContactSource $midocoContactSource = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoContactSource($midocoContactSource)
@@ -40,18 +40,18 @@ class SaveContactSourceRequest extends AbstractStructBase
     }
     /**
      * Get MidocoContactSource value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoContactSource|null
      */
-    public function getMidocoContactSource(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource
+    public function getMidocoContactSource(): ?\Pggns\MidocoApi\Crm\StructType\MidocoContactSource
     {
         return $this->MidocoContactSource;
     }
     /**
      * Set MidocoContactSource value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource $midocoContactSource
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveContactSourceRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactSource $midocoContactSource
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveContactSourceRequest
      */
-    public function setMidocoContactSource(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource $midocoContactSource = null): self
+    public function setMidocoContactSource(?\Pggns\MidocoApi\Crm\StructType\MidocoContactSource $midocoContactSource = null): self
     {
         $this->MidocoContactSource = $midocoContactSource;
         
@@ -68,7 +68,7 @@ class SaveContactSourceRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveContactSourceRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveContactSourceRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

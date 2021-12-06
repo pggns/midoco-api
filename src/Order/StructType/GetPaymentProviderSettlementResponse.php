@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetPaymentProviderSettlementResponse extends AbstractStructBase
      * The MidocoPaymentProviderSettlement
      * Meta information extracted from the WSDL
      * - ref: MidocoPaymentProviderSettlement
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlement|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlement|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlement $MidocoPaymentProviderSettlement = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlement $MidocoPaymentProviderSettlement = null;
     /**
      * Constructor method for GetPaymentProviderSettlementResponse
      * @uses GetPaymentProviderSettlementResponse::setMidocoPaymentProviderSettlement()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlement $midocoPaymentProviderSettlement
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlement $midocoPaymentProviderSettlement
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlement $midocoPaymentProviderSettlement = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlement $midocoPaymentProviderSettlement = null)
     {
         $this
             ->setMidocoPaymentProviderSettlement($midocoPaymentProviderSettlement);
     }
     /**
      * Get MidocoPaymentProviderSettlement value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlement|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlement|null
      */
-    public function getMidocoPaymentProviderSettlement(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlement
+    public function getMidocoPaymentProviderSettlement(): ?\Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlement
     {
         return $this->MidocoPaymentProviderSettlement;
     }
     /**
      * Set MidocoPaymentProviderSettlement value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlement $midocoPaymentProviderSettlement
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentProviderSettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlement $midocoPaymentProviderSettlement
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementResponse
      */
-    public function setMidocoPaymentProviderSettlement(?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlement $midocoPaymentProviderSettlement = null): self
+    public function setMidocoPaymentProviderSettlement(?\Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlement $midocoPaymentProviderSettlement = null): self
     {
         $this->MidocoPaymentProviderSettlement = $midocoPaymentProviderSettlement;
         

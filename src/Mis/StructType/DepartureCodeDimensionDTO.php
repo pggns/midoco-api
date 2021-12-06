@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DepartureCodeDimensionDTO extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DepartureCodeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DepartureCodeDimensionDTO
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -70,7 +70,7 @@ class DepartureCodeDimensionDTO extends AbstractStructBase
     /**
      * Set departureCodeId value
      * @param int $departureCodeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DepartureCodeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DepartureCodeDimensionDTO
      */
     public function setDepartureCodeId(?int $departureCodeId = null): self
     {

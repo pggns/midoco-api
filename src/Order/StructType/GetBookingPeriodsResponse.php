@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetBookingPeriodsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCompleteBookingPeriod
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCompleteBookingPeriod[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCompleteBookingPeriod[]
      */
     protected ?array $MidocoCompleteBookingPeriod = null;
     /**
      * Constructor method for GetBookingPeriodsResponse
      * @uses GetBookingPeriodsResponse::setMidocoCompleteBookingPeriod()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCompleteBookingPeriod[] $midocoCompleteBookingPeriod
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCompleteBookingPeriod[] $midocoCompleteBookingPeriod
      */
     public function __construct(?array $midocoCompleteBookingPeriod = null)
     {
@@ -34,7 +34,7 @@ class GetBookingPeriodsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCompleteBookingPeriod value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCompleteBookingPeriod[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCompleteBookingPeriod[]
      */
     public function getMidocoCompleteBookingPeriod(): ?array
     {
@@ -55,12 +55,12 @@ class GetBookingPeriodsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBookingPeriodsResponseMidocoCompleteBookingPeriodItem) {
             // validation for constraint: itemType
-            if (!$getBookingPeriodsResponseMidocoCompleteBookingPeriodItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCompleteBookingPeriod) {
+            if (!$getBookingPeriodsResponseMidocoCompleteBookingPeriodItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoCompleteBookingPeriod) {
                 $invalidValues[] = is_object($getBookingPeriodsResponseMidocoCompleteBookingPeriodItem) ? get_class($getBookingPeriodsResponseMidocoCompleteBookingPeriodItem) : sprintf('%s(%s)', gettype($getBookingPeriodsResponseMidocoCompleteBookingPeriodItem), var_export($getBookingPeriodsResponseMidocoCompleteBookingPeriodItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCompleteBookingPeriod property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCompleteBookingPeriod, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCompleteBookingPeriod property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCompleteBookingPeriod, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetBookingPeriodsResponse extends AbstractStructBase
     /**
      * Set MidocoCompleteBookingPeriod value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCompleteBookingPeriod[] $midocoCompleteBookingPeriod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingPeriodsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCompleteBookingPeriod[] $midocoCompleteBookingPeriod
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingPeriodsResponse
      */
     public function setMidocoCompleteBookingPeriod(?array $midocoCompleteBookingPeriod = null): self
     {
@@ -85,14 +85,14 @@ class GetBookingPeriodsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCompleteBookingPeriod value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCompleteBookingPeriod $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingPeriodsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCompleteBookingPeriod $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingPeriodsResponse
      */
-    public function addToMidocoCompleteBookingPeriod(\Pggns\MidocoApi\Api\Order\StructType\MidocoCompleteBookingPeriod $item): self
+    public function addToMidocoCompleteBookingPeriod(\Pggns\MidocoApi\Order\StructType\MidocoCompleteBookingPeriod $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCompleteBookingPeriod) {
-            throw new InvalidArgumentException(sprintf('The MidocoCompleteBookingPeriod property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCompleteBookingPeriod, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoCompleteBookingPeriod) {
+            throw new InvalidArgumentException(sprintf('The MidocoCompleteBookingPeriod property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCompleteBookingPeriod, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCompleteBookingPeriod[] = $item;
         

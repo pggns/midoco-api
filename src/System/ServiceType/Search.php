@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\ServiceType;
+namespace Pggns\MidocoApi\System\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Search extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\System\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\System\ServiceType\Search
+     * @return \Pggns\MidocoApi\System\ServiceType\Search
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\System\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Search extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\System\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\System\StructType\SearchMidocoAttributeLocalizationRequest $paramSearchMidocoAttributeLocalizationRequest
-     * @return \Pggns\MidocoApi\Api\System\StructType\SearchMidocoAttributeLocalizationResponse|bool
+     * @param \Pggns\MidocoApi\System\StructType\SearchMidocoAttributeLocalizationRequest $paramSearchMidocoAttributeLocalizationRequest
+     * @return \Pggns\MidocoApi\System\StructType\SearchMidocoAttributeLocalizationResponse|bool
      */
-    public function searchAttributeLocalization(\Pggns\MidocoApi\Api\System\StructType\SearchMidocoAttributeLocalizationRequest $paramSearchMidocoAttributeLocalizationRequest)
+    public function searchAttributeLocalization(\Pggns\MidocoApi\System\StructType\SearchMidocoAttributeLocalizationRequest $paramSearchMidocoAttributeLocalizationRequest)
     {
         try {
             $this->setResult($resultSearchAttributeLocalization = $this->getSoapClient()->__soapCall('searchAttributeLocalization', [
@@ -58,15 +58,15 @@ class Search extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\System\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\System\StructType\SearchMidocoAttributeChoiceValueRequest $paramSearchMidocoAttributeChoiceValueRequest
-     * @return \Pggns\MidocoApi\Api\System\StructType\SearchMidocoAttributeChoiceValueResponse|bool
+     * @param \Pggns\MidocoApi\System\StructType\SearchMidocoAttributeChoiceValueRequest $paramSearchMidocoAttributeChoiceValueRequest
+     * @return \Pggns\MidocoApi\System\StructType\SearchMidocoAttributeChoiceValueResponse|bool
      */
-    public function searchAttributeChoiceValue(\Pggns\MidocoApi\Api\System\StructType\SearchMidocoAttributeChoiceValueRequest $paramSearchMidocoAttributeChoiceValueRequest)
+    public function searchAttributeChoiceValue(\Pggns\MidocoApi\System\StructType\SearchMidocoAttributeChoiceValueRequest $paramSearchMidocoAttributeChoiceValueRequest)
     {
         try {
             $this->setResult($resultSearchAttributeChoiceValue = $this->getSoapClient()->__soapCall('searchAttributeChoiceValue', [
@@ -83,7 +83,7 @@ class Search extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\System\StructType\SearchMidocoAttributeChoiceValueResponse|\Pggns\MidocoApi\Api\System\StructType\SearchMidocoAttributeLocalizationResponse
+     * @return \Pggns\MidocoApi\System\StructType\SearchMidocoAttributeChoiceValueResponse|\Pggns\MidocoApi\System\StructType\SearchMidocoAttributeLocalizationResponse
      */
     public function getResult()
     {

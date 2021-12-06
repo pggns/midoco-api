@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class PrintRemarkDestinationList extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPrintRemarkDestination
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPrintRemarkDestination[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoPrintRemarkDestination[]
      */
     protected ?array $MidocoPrintRemarkDestination = null;
     /**
      * Constructor method for PrintRemarkDestinationList
      * @uses PrintRemarkDestinationList::setMidocoPrintRemarkDestination()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPrintRemarkDestination[] $midocoPrintRemarkDestination
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoPrintRemarkDestination[] $midocoPrintRemarkDestination
      */
     public function __construct(?array $midocoPrintRemarkDestination = null)
     {
@@ -34,7 +34,7 @@ class PrintRemarkDestinationList extends AbstractStructBase
     }
     /**
      * Get MidocoPrintRemarkDestination value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPrintRemarkDestination[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoPrintRemarkDestination[]
      */
     public function getMidocoPrintRemarkDestination(): ?array
     {
@@ -55,12 +55,12 @@ class PrintRemarkDestinationList extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $printRemarkDestinationListMidocoPrintRemarkDestinationItem) {
             // validation for constraint: itemType
-            if (!$printRemarkDestinationListMidocoPrintRemarkDestinationItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPrintRemarkDestination) {
+            if (!$printRemarkDestinationListMidocoPrintRemarkDestinationItem instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoPrintRemarkDestination) {
                 $invalidValues[] = is_object($printRemarkDestinationListMidocoPrintRemarkDestinationItem) ? get_class($printRemarkDestinationListMidocoPrintRemarkDestinationItem) : sprintf('%s(%s)', gettype($printRemarkDestinationListMidocoPrintRemarkDestinationItem), var_export($printRemarkDestinationListMidocoPrintRemarkDestinationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintRemarkDestination property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPrintRemarkDestination, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintRemarkDestination property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoPrintRemarkDestination, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class PrintRemarkDestinationList extends AbstractStructBase
     /**
      * Set MidocoPrintRemarkDestination value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPrintRemarkDestination[] $midocoPrintRemarkDestination
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\PrintRemarkDestinationList
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoPrintRemarkDestination[] $midocoPrintRemarkDestination
+     * @return \Pggns\MidocoApi\OrderSD\StructType\PrintRemarkDestinationList
      */
     public function setMidocoPrintRemarkDestination(?array $midocoPrintRemarkDestination = null): self
     {
@@ -85,14 +85,14 @@ class PrintRemarkDestinationList extends AbstractStructBase
     /**
      * Add item to MidocoPrintRemarkDestination value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPrintRemarkDestination $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\PrintRemarkDestinationList
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoPrintRemarkDestination $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\PrintRemarkDestinationList
      */
-    public function addToMidocoPrintRemarkDestination(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPrintRemarkDestination $item): self
+    public function addToMidocoPrintRemarkDestination(\Pggns\MidocoApi\OrderSD\StructType\MidocoPrintRemarkDestination $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPrintRemarkDestination) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintRemarkDestination property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoPrintRemarkDestination, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoPrintRemarkDestination) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintRemarkDestination property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoPrintRemarkDestination, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintRemarkDestination[] = $item;
         

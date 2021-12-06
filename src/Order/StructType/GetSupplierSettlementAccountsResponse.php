@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSupplierSettlementAccountsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierSettlementAccount
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementAccount[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementAccount[]
      */
     protected ?array $MidocoSupplierSettlementAccount = null;
     /**
      * Constructor method for GetSupplierSettlementAccountsResponse
      * @uses GetSupplierSettlementAccountsResponse::setMidocoSupplierSettlementAccount()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementAccount[] $midocoSupplierSettlementAccount
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementAccount[] $midocoSupplierSettlementAccount
      */
     public function __construct(?array $midocoSupplierSettlementAccount = null)
     {
@@ -34,7 +34,7 @@ class GetSupplierSettlementAccountsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierSettlementAccount value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementAccount[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementAccount[]
      */
     public function getMidocoSupplierSettlementAccount(): ?array
     {
@@ -55,12 +55,12 @@ class GetSupplierSettlementAccountsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSupplierSettlementAccountsResponseMidocoSupplierSettlementAccountItem) {
             // validation for constraint: itemType
-            if (!$getSupplierSettlementAccountsResponseMidocoSupplierSettlementAccountItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementAccount) {
+            if (!$getSupplierSettlementAccountsResponseMidocoSupplierSettlementAccountItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementAccount) {
                 $invalidValues[] = is_object($getSupplierSettlementAccountsResponseMidocoSupplierSettlementAccountItem) ? get_class($getSupplierSettlementAccountsResponseMidocoSupplierSettlementAccountItem) : sprintf('%s(%s)', gettype($getSupplierSettlementAccountsResponseMidocoSupplierSettlementAccountItem), var_export($getSupplierSettlementAccountsResponseMidocoSupplierSettlementAccountItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierSettlementAccount property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementAccount, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierSettlementAccount property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementAccount, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSupplierSettlementAccountsResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierSettlementAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementAccount[] $midocoSupplierSettlementAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierSettlementAccountsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementAccount[] $midocoSupplierSettlementAccount
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierSettlementAccountsResponse
      */
     public function setMidocoSupplierSettlementAccount(?array $midocoSupplierSettlementAccount = null): self
     {
@@ -85,14 +85,14 @@ class GetSupplierSettlementAccountsResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierSettlementAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementAccount $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierSettlementAccountsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementAccount $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierSettlementAccountsResponse
      */
-    public function addToMidocoSupplierSettlementAccount(\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementAccount $item): self
+    public function addToMidocoSupplierSettlementAccount(\Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementAccount $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementAccount) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierSettlementAccount property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementAccount, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementAccount) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierSettlementAccount property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementAccount, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierSettlementAccount[] = $item;
         

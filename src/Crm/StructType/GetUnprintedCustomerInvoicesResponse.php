@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetUnprintedCustomerInvoicesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerInvoice
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInvoice[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInvoice[]
      */
     protected ?array $MidocoCustomerInvoice = null;
     /**
      * Constructor method for GetUnprintedCustomerInvoicesResponse
      * @uses GetUnprintedCustomerInvoicesResponse::setMidocoCustomerInvoice()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInvoice[] $midocoCustomerInvoice
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInvoice[] $midocoCustomerInvoice
      */
     public function __construct(?array $midocoCustomerInvoice = null)
     {
@@ -36,7 +36,7 @@ class GetUnprintedCustomerInvoicesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerInvoice value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInvoice[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInvoice[]
      */
     public function getMidocoCustomerInvoice(): ?array
     {
@@ -57,12 +57,12 @@ class GetUnprintedCustomerInvoicesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getUnprintedCustomerInvoicesResponseMidocoCustomerInvoiceItem) {
             // validation for constraint: itemType
-            if (!$getUnprintedCustomerInvoicesResponseMidocoCustomerInvoiceItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInvoice) {
+            if (!$getUnprintedCustomerInvoicesResponseMidocoCustomerInvoiceItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInvoice) {
                 $invalidValues[] = is_object($getUnprintedCustomerInvoicesResponseMidocoCustomerInvoiceItem) ? get_class($getUnprintedCustomerInvoicesResponseMidocoCustomerInvoiceItem) : sprintf('%s(%s)', gettype($getUnprintedCustomerInvoicesResponseMidocoCustomerInvoiceItem), var_export($getUnprintedCustomerInvoicesResponseMidocoCustomerInvoiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerInvoice property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInvoice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerInvoice property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInvoice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetUnprintedCustomerInvoicesResponse extends AbstractStructBase
     /**
      * Set MidocoCustomerInvoice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInvoice[] $midocoCustomerInvoice
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetUnprintedCustomerInvoicesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInvoice[] $midocoCustomerInvoice
+     * @return \Pggns\MidocoApi\Crm\StructType\GetUnprintedCustomerInvoicesResponse
      */
     public function setMidocoCustomerInvoice(?array $midocoCustomerInvoice = null): self
     {
@@ -87,14 +87,14 @@ class GetUnprintedCustomerInvoicesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCustomerInvoice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInvoice $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetUnprintedCustomerInvoicesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInvoice $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetUnprintedCustomerInvoicesResponse
      */
-    public function addToMidocoCustomerInvoice(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInvoice $item): self
+    public function addToMidocoCustomerInvoice(\Pggns\MidocoApi\Crm\StructType\MidocoCustomerInvoice $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInvoice) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerInvoice property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInvoice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInvoice) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerInvoice property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInvoice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerInvoice[] = $item;
         

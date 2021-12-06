@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -166,7 +166,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -189,7 +189,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -212,7 +212,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -235,7 +235,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set endCharacter value
      * @param string $endCharacter
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setEndCharacter(?string $endCharacter = null): self
     {
@@ -258,7 +258,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set forCompany value
      * @param bool $forCompany
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setForCompany(?bool $forCompany = null): self
     {
@@ -281,7 +281,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set isChanged value
      * @param bool $isChanged
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setIsChanged(?bool $isChanged = null): self
     {
@@ -304,7 +304,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set isDeleted value
      * @param bool $isDeleted
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setIsDeleted(?bool $isDeleted = null): self
     {
@@ -327,7 +327,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set isDivers value
      * @param bool $isDivers
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setIsDivers(?bool $isDivers = null): self
     {
@@ -350,7 +350,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set modifiedByUnitName value
      * @param string $modifiedByUnitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setModifiedByUnitName(?string $modifiedByUnitName = null): self
     {
@@ -373,7 +373,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -396,7 +396,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set paymentConditionId value
      * @param string $paymentConditionId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setPaymentConditionId(?string $paymentConditionId = null): self
     {
@@ -419,7 +419,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set startCharacter value
      * @param string $startCharacter
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setStartCharacter(?string $startCharacter = null): self
     {
@@ -442,7 +442,7 @@ class DebitorDTO extends AbstractStructBase
     /**
      * Set useNameCharacter value
      * @param bool $useNameCharacter
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DebitorDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DebitorDTO
      */
     public function setUseNameCharacter(?bool $useNameCharacter = null): self
     {

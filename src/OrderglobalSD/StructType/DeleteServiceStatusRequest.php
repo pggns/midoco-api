@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DeleteServiceStatusRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DeleteServiceStatusRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DeleteServiceStatusRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +70,7 @@ class DeleteServiceStatusRequest extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DeleteServiceStatusRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DeleteServiceStatusRequest
      */
     public function setStatus(?string $status = null): self
     {

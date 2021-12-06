@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class ExecuteGroupAdvisorSettlementRequest extends AbstractStructBase
      * The GroupAdvisorSearchCriteria
      * Meta information extracted from the WSDL
      * - ref: GroupAdvisorSearchCriteria
-     * @var \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSearchCriteria|null
+     * @var \Pggns\MidocoApi\Order\StructType\GroupAdvisorSearchCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSearchCriteria $GroupAdvisorSearchCriteria = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\GroupAdvisorSearchCriteria $GroupAdvisorSearchCriteria = null;
     /**
      * The accountIdVat
      * @var string|null
@@ -55,14 +55,14 @@ class ExecuteGroupAdvisorSettlementRequest extends AbstractStructBase
      * @uses ExecuteGroupAdvisorSettlementRequest::setStartDate()
      * @uses ExecuteGroupAdvisorSettlementRequest::setEndDate()
      * @uses ExecuteGroupAdvisorSettlementRequest::setAction()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSearchCriteria $groupAdvisorSearchCriteria
+     * @param \Pggns\MidocoApi\Order\StructType\GroupAdvisorSearchCriteria $groupAdvisorSearchCriteria
      * @param string $accountIdVat
      * @param string $accountIdNoVat
      * @param string $startDate
      * @param string $endDate
      * @param string $action
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSearchCriteria $groupAdvisorSearchCriteria = null, ?string $accountIdVat = null, ?string $accountIdNoVat = null, ?string $startDate = null, ?string $endDate = null, ?string $action = 'PREVIEW')
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\GroupAdvisorSearchCriteria $groupAdvisorSearchCriteria = null, ?string $accountIdVat = null, ?string $accountIdNoVat = null, ?string $startDate = null, ?string $endDate = null, ?string $action = 'PREVIEW')
     {
         $this
             ->setGroupAdvisorSearchCriteria($groupAdvisorSearchCriteria)
@@ -74,18 +74,18 @@ class ExecuteGroupAdvisorSettlementRequest extends AbstractStructBase
     }
     /**
      * Get GroupAdvisorSearchCriteria value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSearchCriteria|null
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSearchCriteria|null
      */
-    public function getGroupAdvisorSearchCriteria(): ?\Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSearchCriteria
+    public function getGroupAdvisorSearchCriteria(): ?\Pggns\MidocoApi\Order\StructType\GroupAdvisorSearchCriteria
     {
         return $this->GroupAdvisorSearchCriteria;
     }
     /**
      * Set GroupAdvisorSearchCriteria value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSearchCriteria $groupAdvisorSearchCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteGroupAdvisorSettlementRequest
+     * @param \Pggns\MidocoApi\Order\StructType\GroupAdvisorSearchCriteria $groupAdvisorSearchCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteGroupAdvisorSettlementRequest
      */
-    public function setGroupAdvisorSearchCriteria(?\Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSearchCriteria $groupAdvisorSearchCriteria = null): self
+    public function setGroupAdvisorSearchCriteria(?\Pggns\MidocoApi\Order\StructType\GroupAdvisorSearchCriteria $groupAdvisorSearchCriteria = null): self
     {
         $this->GroupAdvisorSearchCriteria = $groupAdvisorSearchCriteria;
         
@@ -102,7 +102,7 @@ class ExecuteGroupAdvisorSettlementRequest extends AbstractStructBase
     /**
      * Set accountIdVat value
      * @param string $accountIdVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteGroupAdvisorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteGroupAdvisorSettlementRequest
      */
     public function setAccountIdVat(?string $accountIdVat = null): self
     {
@@ -125,7 +125,7 @@ class ExecuteGroupAdvisorSettlementRequest extends AbstractStructBase
     /**
      * Set accountIdNoVat value
      * @param string $accountIdNoVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteGroupAdvisorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteGroupAdvisorSettlementRequest
      */
     public function setAccountIdNoVat(?string $accountIdNoVat = null): self
     {
@@ -148,7 +148,7 @@ class ExecuteGroupAdvisorSettlementRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteGroupAdvisorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteGroupAdvisorSettlementRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -171,7 +171,7 @@ class ExecuteGroupAdvisorSettlementRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteGroupAdvisorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteGroupAdvisorSettlementRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -194,7 +194,7 @@ class ExecuteGroupAdvisorSettlementRequest extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteGroupAdvisorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteGroupAdvisorSettlementRequest
      */
     public function setAction(?string $action = 'PREVIEW'): self
     {

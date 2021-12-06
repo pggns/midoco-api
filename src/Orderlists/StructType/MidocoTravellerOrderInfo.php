@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class MidocoTravellerOrderInfo extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravellerOrderInfo
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -158,7 +158,7 @@ class MidocoTravellerOrderInfo extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravellerOrderInfo
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -181,7 +181,7 @@ class MidocoTravellerOrderInfo extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravellerOrderInfo
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -204,7 +204,7 @@ class MidocoTravellerOrderInfo extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravellerOrderInfo
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -227,7 +227,7 @@ class MidocoTravellerOrderInfo extends AbstractStructBase
     /**
      * Set projectNo value
      * @param string $projectNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravellerOrderInfo
      */
     public function setProjectNo(?string $projectNo = null): self
     {
@@ -250,7 +250,7 @@ class MidocoTravellerOrderInfo extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravellerOrderInfo
      */
     public function setRemark(?string $remark = null): self
     {
@@ -273,7 +273,7 @@ class MidocoTravellerOrderInfo extends AbstractStructBase
     /**
      * Set flight value
      * @param string $flight
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravellerOrderInfo
      */
     public function setFlight(?string $flight = null): self
     {
@@ -296,7 +296,7 @@ class MidocoTravellerOrderInfo extends AbstractStructBase
     /**
      * Set hotel value
      * @param string $hotel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravellerOrderInfo
      */
     public function setHotel(?string $hotel = null): self
     {
@@ -319,7 +319,7 @@ class MidocoTravellerOrderInfo extends AbstractStructBase
     /**
      * Set train value
      * @param string $train
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravellerOrderInfo
      */
     public function setTrain(?string $train = null): self
     {
@@ -342,7 +342,7 @@ class MidocoTravellerOrderInfo extends AbstractStructBase
     /**
      * Set car value
      * @param string $car
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravellerOrderInfo
      */
     public function setCar(?string $car = null): self
     {
@@ -365,7 +365,7 @@ class MidocoTravellerOrderInfo extends AbstractStructBase
     /**
      * Set travelFrom value
      * @param string $travelFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravellerOrderInfo
      */
     public function setTravelFrom(?string $travelFrom = null): self
     {
@@ -388,7 +388,7 @@ class MidocoTravellerOrderInfo extends AbstractStructBase
     /**
      * Set travelUntil value
      * @param string $travelUntil
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravellerOrderInfo
      */
     public function setTravelUntil(?string $travelUntil = null): self
     {
@@ -411,7 +411,7 @@ class MidocoTravellerOrderInfo extends AbstractStructBase
     /**
      * Set remarkExists value
      * @param bool $remarkExists
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravellerOrderInfo
      */
     public function setRemarkExists(?bool $remarkExists = null): self
     {

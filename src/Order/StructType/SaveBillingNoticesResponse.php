@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class SaveBillingNoticesResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoBillingNotice
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice[]
      */
     protected ?array $MidocoBillingNotice = null;
     /**
@@ -30,7 +30,7 @@ class SaveBillingNoticesResponse extends AbstractStructBase
      * Constructor method for SaveBillingNoticesResponse
      * @uses SaveBillingNoticesResponse::setMidocoBillingNotice()
      * @uses SaveBillingNoticesResponse::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice[] $midocoBillingNotice
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice[] $midocoBillingNotice
      * @param int $internalVersion
      */
     public function __construct(?array $midocoBillingNotice = null, ?int $internalVersion = null)
@@ -41,7 +41,7 @@ class SaveBillingNoticesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingNotice value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice[]
      */
     public function getMidocoBillingNotice(): ?array
     {
@@ -62,12 +62,12 @@ class SaveBillingNoticesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveBillingNoticesResponseMidocoBillingNoticeItem) {
             // validation for constraint: itemType
-            if (!$saveBillingNoticesResponseMidocoBillingNoticeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice) {
+            if (!$saveBillingNoticesResponseMidocoBillingNoticeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice) {
                 $invalidValues[] = is_object($saveBillingNoticesResponseMidocoBillingNoticeItem) ? get_class($saveBillingNoticesResponseMidocoBillingNoticeItem) : sprintf('%s(%s)', gettype($saveBillingNoticesResponseMidocoBillingNoticeItem), var_export($saveBillingNoticesResponseMidocoBillingNoticeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingNotice property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingNotice property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -76,8 +76,8 @@ class SaveBillingNoticesResponse extends AbstractStructBase
     /**
      * Set MidocoBillingNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice[] $midocoBillingNotice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingNoticesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice[] $midocoBillingNotice
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingNoticesResponse
      */
     public function setMidocoBillingNotice(?array $midocoBillingNotice = null): self
     {
@@ -92,14 +92,14 @@ class SaveBillingNoticesResponse extends AbstractStructBase
     /**
      * Add item to MidocoBillingNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingNoticesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice $item
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingNoticesResponse
      */
-    public function addToMidocoBillingNotice(\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice $item): self
+    public function addToMidocoBillingNotice(\Pggns\MidocoApi\Order\StructType\MidocoBillingNotice $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingNotice property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingNotice property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingNotice[] = $item;
         
@@ -116,7 +116,7 @@ class SaveBillingNoticesResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingNoticesResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingNoticesResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

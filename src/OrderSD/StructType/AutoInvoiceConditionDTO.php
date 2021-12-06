@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class AutoInvoiceConditionDTO extends AbstractStructBase
     /**
      * Set conditionId value
      * @param int $conditionId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
      */
     public function setConditionId(?int $conditionId = null): self
     {
@@ -158,7 +158,7 @@ class AutoInvoiceConditionDTO extends AbstractStructBase
     /**
      * Set customerAttr value
      * @param string $customerAttr
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
      */
     public function setCustomerAttr(?string $customerAttr = null): self
     {
@@ -181,7 +181,7 @@ class AutoInvoiceConditionDTO extends AbstractStructBase
     /**
      * Set customerType value
      * @param string $customerType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
      */
     public function setCustomerType(?string $customerType = null): self
     {
@@ -204,7 +204,7 @@ class AutoInvoiceConditionDTO extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -227,7 +227,7 @@ class AutoInvoiceConditionDTO extends AbstractStructBase
     /**
      * Set isManualAllowed value
      * @param bool $isManualAllowed
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
      */
     public function setIsManualAllowed(?bool $isManualAllowed = null): self
     {
@@ -250,7 +250,7 @@ class AutoInvoiceConditionDTO extends AbstractStructBase
     /**
      * Set itemPurchaseCurrencyCode value
      * @param string $itemPurchaseCurrencyCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
      */
     public function setItemPurchaseCurrencyCode(?string $itemPurchaseCurrencyCode = null): self
     {
@@ -273,7 +273,7 @@ class AutoInvoiceConditionDTO extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -296,7 +296,7 @@ class AutoInvoiceConditionDTO extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
      */
     public function setSettlementType(?string $settlementType = null): self
     {
@@ -319,7 +319,7 @@ class AutoInvoiceConditionDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -342,7 +342,7 @@ class AutoInvoiceConditionDTO extends AbstractStructBase
     /**
      * Set supplierSettlementCheckStatus value
      * @param string $supplierSettlementCheckStatus
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
      */
     public function setSupplierSettlementCheckStatus(?string $supplierSettlementCheckStatus = null): self
     {
@@ -365,7 +365,7 @@ class AutoInvoiceConditionDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -388,7 +388,7 @@ class AutoInvoiceConditionDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -411,7 +411,7 @@ class AutoInvoiceConditionDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
      */
     public function setValidTo(?string $validTo = null): self
     {

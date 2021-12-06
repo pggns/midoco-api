@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,9 +20,9 @@ class ResetCustomerPasswordRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The email
      * @var string|null
@@ -32,10 +32,10 @@ class ResetCustomerPasswordRequest extends AbstractStructBase
      * Constructor method for ResetCustomerPasswordRequest
      * @uses ResetCustomerPasswordRequest::setMidocoCustomerId()
      * @uses ResetCustomerPasswordRequest::setEmail()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId
      * @param string $email
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?string $email = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?string $email = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -43,18 +43,18 @@ class ResetCustomerPasswordRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ResetCustomerPasswordRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\Crm\StructType\ResetCustomerPasswordRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -71,7 +71,7 @@ class ResetCustomerPasswordRequest extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ResetCustomerPasswordRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\ResetCustomerPasswordRequest
      */
     public function setEmail(?string $email = null): self
     {

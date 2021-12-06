@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAvailableQueryCriteriaOpsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoQueryCriteriaOp
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryCriteriaOp[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoQueryCriteriaOp[]
      */
     protected ?array $MidocoQueryCriteriaOp = null;
     /**
      * Constructor method for GetAvailableQueryCriteriaOpsResponse
      * @uses GetAvailableQueryCriteriaOpsResponse::setMidocoQueryCriteriaOp()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryCriteriaOp[] $midocoQueryCriteriaOp
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoQueryCriteriaOp[] $midocoQueryCriteriaOp
      */
     public function __construct(?array $midocoQueryCriteriaOp = null)
     {
@@ -34,7 +34,7 @@ class GetAvailableQueryCriteriaOpsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoQueryCriteriaOp value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryCriteriaOp[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoQueryCriteriaOp[]
      */
     public function getMidocoQueryCriteriaOp(): ?array
     {
@@ -55,12 +55,12 @@ class GetAvailableQueryCriteriaOpsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailableQueryCriteriaOpsResponseMidocoQueryCriteriaOpItem) {
             // validation for constraint: itemType
-            if (!$getAvailableQueryCriteriaOpsResponseMidocoQueryCriteriaOpItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryCriteriaOp) {
+            if (!$getAvailableQueryCriteriaOpsResponseMidocoQueryCriteriaOpItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoQueryCriteriaOp) {
                 $invalidValues[] = is_object($getAvailableQueryCriteriaOpsResponseMidocoQueryCriteriaOpItem) ? get_class($getAvailableQueryCriteriaOpsResponseMidocoQueryCriteriaOpItem) : sprintf('%s(%s)', gettype($getAvailableQueryCriteriaOpsResponseMidocoQueryCriteriaOpItem), var_export($getAvailableQueryCriteriaOpsResponseMidocoQueryCriteriaOpItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoQueryCriteriaOp property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryCriteriaOp, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoQueryCriteriaOp property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoQueryCriteriaOp, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAvailableQueryCriteriaOpsResponse extends AbstractStructBase
     /**
      * Set MidocoQueryCriteriaOp value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryCriteriaOp[] $midocoQueryCriteriaOp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAvailableQueryCriteriaOpsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoQueryCriteriaOp[] $midocoQueryCriteriaOp
+     * @return \Pggns\MidocoApi\Order\StructType\GetAvailableQueryCriteriaOpsResponse
      */
     public function setMidocoQueryCriteriaOp(?array $midocoQueryCriteriaOp = null): self
     {
@@ -85,14 +85,14 @@ class GetAvailableQueryCriteriaOpsResponse extends AbstractStructBase
     /**
      * Add item to MidocoQueryCriteriaOp value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryCriteriaOp $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAvailableQueryCriteriaOpsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoQueryCriteriaOp $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetAvailableQueryCriteriaOpsResponse
      */
-    public function addToMidocoQueryCriteriaOp(\Pggns\MidocoApi\Api\Order\StructType\MidocoQueryCriteriaOp $item): self
+    public function addToMidocoQueryCriteriaOp(\Pggns\MidocoApi\Order\StructType\MidocoQueryCriteriaOp $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryCriteriaOp) {
-            throw new InvalidArgumentException(sprintf('The MidocoQueryCriteriaOp property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryCriteriaOp, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoQueryCriteriaOp) {
+            throw new InvalidArgumentException(sprintf('The MidocoQueryCriteriaOp property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoQueryCriteriaOp, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoQueryCriteriaOp[] = $item;
         

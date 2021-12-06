@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ReadNumberOfBookingsForBonusCalculationResponse extends AbstractStructBase
     /**
      * Set bookings value
      * @param int $bookings
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReadNumberOfBookingsForBonusCalculationResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ReadNumberOfBookingsForBonusCalculationResponse
      */
     public function setBookings(?int $bookings = null): self
     {

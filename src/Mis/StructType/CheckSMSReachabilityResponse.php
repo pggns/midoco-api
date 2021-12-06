@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -42,7 +42,7 @@ class CheckSMSReachabilityResponse extends AbstractStructBase
     /**
      * Set isBySMSReachable value
      * @param bool $isBySMSReachable
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CheckSMSReachabilityResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\CheckSMSReachabilityResponse
      */
     public function setIsBySMSReachable(?bool $isBySMSReachable = null): self
     {

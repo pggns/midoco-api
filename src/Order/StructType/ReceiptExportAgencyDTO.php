@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class ReceiptExportAgencyDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param int $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptExportAgencyDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptExportAgencyDTO
      */
     public function setAgencyId(?int $agencyId = null): self
     {
@@ -126,7 +126,7 @@ class ReceiptExportAgencyDTO extends AbstractStructBase
     /**
      * Set printId value
      * @param int $printId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptExportAgencyDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptExportAgencyDTO
      */
     public function setPrintId(?int $printId = null): self
     {
@@ -149,7 +149,7 @@ class ReceiptExportAgencyDTO extends AbstractStructBase
     /**
      * Set supplierCity value
      * @param string $supplierCity
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptExportAgencyDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptExportAgencyDTO
      */
     public function setSupplierCity(?string $supplierCity = null): self
     {
@@ -172,7 +172,7 @@ class ReceiptExportAgencyDTO extends AbstractStructBase
     /**
      * Set supplierCountry value
      * @param string $supplierCountry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptExportAgencyDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptExportAgencyDTO
      */
     public function setSupplierCountry(?string $supplierCountry = null): self
     {
@@ -195,7 +195,7 @@ class ReceiptExportAgencyDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptExportAgencyDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptExportAgencyDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -218,7 +218,7 @@ class ReceiptExportAgencyDTO extends AbstractStructBase
     /**
      * Set supplierName value
      * @param string $supplierName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptExportAgencyDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptExportAgencyDTO
      */
     public function setSupplierName(?string $supplierName = null): self
     {
@@ -241,7 +241,7 @@ class ReceiptExportAgencyDTO extends AbstractStructBase
     /**
      * Set supplierPostalCode value
      * @param string $supplierPostalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptExportAgencyDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptExportAgencyDTO
      */
     public function setSupplierPostalCode(?string $supplierPostalCode = null): self
     {
@@ -264,7 +264,7 @@ class ReceiptExportAgencyDTO extends AbstractStructBase
     /**
      * Set supplierStreet value
      * @param string $supplierStreet
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptExportAgencyDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptExportAgencyDTO
      */
     public function setSupplierStreet(?string $supplierStreet = null): self
     {
@@ -287,7 +287,7 @@ class ReceiptExportAgencyDTO extends AbstractStructBase
     /**
      * Set supplierVatid value
      * @param string $supplierVatid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptExportAgencyDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptExportAgencyDTO
      */
     public function setSupplierVatid(?string $supplierVatid = null): self
     {

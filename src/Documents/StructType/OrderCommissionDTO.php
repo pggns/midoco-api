@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set basePrice value
      * @param float $basePrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setBasePrice(?float $basePrice = null): self
     {
@@ -166,7 +166,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set commissionAmount value
      * @param float $commissionAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setCommissionAmount(?float $commissionAmount = null): self
     {
@@ -189,7 +189,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set commissionBase value
      * @param float $commissionBase
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setCommissionBase(?float $commissionBase = null): self
     {
@@ -212,7 +212,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set commissionBaseAmount value
      * @param float $commissionBaseAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setCommissionBaseAmount(?float $commissionBaseAmount = null): self
     {
@@ -235,7 +235,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set commissionInsuranceAmount value
      * @param float $commissionInsuranceAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setCommissionInsuranceAmount(?float $commissionInsuranceAmount = null): self
     {
@@ -258,7 +258,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set commissionVatAmount value
      * @param float $commissionVatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setCommissionVatAmount(?float $commissionVatAmount = null): self
     {
@@ -281,7 +281,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -304,7 +304,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setId(?int $id = null): self
     {
@@ -327,7 +327,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set includedVatAmount value
      * @param float $includedVatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setIncludedVatAmount(?float $includedVatAmount = null): self
     {
@@ -350,7 +350,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set isAgencyFee value
      * @param bool $isAgencyFee
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setIsAgencyFee(?bool $isAgencyFee = null): self
     {
@@ -373,7 +373,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set isManual value
      * @param bool $isManual
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setIsManual(?bool $isManual = null): self
     {
@@ -396,7 +396,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -419,7 +419,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -442,7 +442,7 @@ class OrderCommissionDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCommissionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCommissionDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

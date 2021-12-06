@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -73,7 +73,7 @@ class MidocoDunningType extends DunningDTO
     /**
      * Set dunningDate value
      * @param string $dunningDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunningType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunningType
      */
     public function setDunningDate(?string $dunningDate = null): self
     {
@@ -96,7 +96,7 @@ class MidocoDunningType extends DunningDTO
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunningType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunningType
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -119,7 +119,7 @@ class MidocoDunningType extends DunningDTO
     /**
      * Set isStornoOrder value
      * @param bool $isStornoOrder
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunningType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunningType
      */
     public function setIsStornoOrder(?bool $isStornoOrder = true): self
     {
@@ -142,7 +142,7 @@ class MidocoDunningType extends DunningDTO
     /**
      * Set excUserName value
      * @param string $excUserName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunningType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunningType
      */
     public function setExcUserName(?string $excUserName = null): self
     {
@@ -165,7 +165,7 @@ class MidocoDunningType extends DunningDTO
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDunningType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDunningType
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {

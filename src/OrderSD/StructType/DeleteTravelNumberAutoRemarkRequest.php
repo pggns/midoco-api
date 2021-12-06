@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteTravelNumberAutoRemarkRequest extends AbstractStructBase
      * The MidocoTravelNumberAutoRemark
      * Meta information extracted from the WSDL
      * - ref: MidocoTravelNumberAutoRemark
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberAutoRemarkDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\TravelNumberAutoRemarkDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberAutoRemarkDTO $MidocoTravelNumberAutoRemark = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\TravelNumberAutoRemarkDTO $MidocoTravelNumberAutoRemark = null;
     /**
      * Constructor method for DeleteTravelNumberAutoRemarkRequest
      * @uses DeleteTravelNumberAutoRemarkRequest::setMidocoTravelNumberAutoRemark()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberAutoRemarkDTO $midocoTravelNumberAutoRemark
+     * @param \Pggns\MidocoApi\OrderSD\StructType\TravelNumberAutoRemarkDTO $midocoTravelNumberAutoRemark
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberAutoRemarkDTO $midocoTravelNumberAutoRemark = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\TravelNumberAutoRemarkDTO $midocoTravelNumberAutoRemark = null)
     {
         $this
             ->setMidocoTravelNumberAutoRemark($midocoTravelNumberAutoRemark);
     }
     /**
      * Get MidocoTravelNumberAutoRemark value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberAutoRemarkDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\TravelNumberAutoRemarkDTO|null
      */
-    public function getMidocoTravelNumberAutoRemark(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberAutoRemarkDTO
+    public function getMidocoTravelNumberAutoRemark(): ?\Pggns\MidocoApi\OrderSD\StructType\TravelNumberAutoRemarkDTO
     {
         return $this->MidocoTravelNumberAutoRemark;
     }
     /**
      * Set MidocoTravelNumberAutoRemark value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberAutoRemarkDTO $midocoTravelNumberAutoRemark
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteTravelNumberAutoRemarkRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\TravelNumberAutoRemarkDTO $midocoTravelNumberAutoRemark
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteTravelNumberAutoRemarkRequest
      */
-    public function setMidocoTravelNumberAutoRemark(?\Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberAutoRemarkDTO $midocoTravelNumberAutoRemark = null): self
+    public function setMidocoTravelNumberAutoRemark(?\Pggns\MidocoApi\OrderSD\StructType\TravelNumberAutoRemarkDTO $midocoTravelNumberAutoRemark = null): self
     {
         $this->MidocoTravelNumberAutoRemark = $midocoTravelNumberAutoRemark;
         

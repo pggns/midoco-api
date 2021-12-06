@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -575,7 +575,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set acceptCc value
      * @param bool $acceptCc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setAcceptCc(?bool $acceptCc = null): self
     {
@@ -598,7 +598,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set acceptDebit value
      * @param bool $acceptDebit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setAcceptDebit(?bool $acceptDebit = null): self
     {
@@ -621,7 +621,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -644,7 +644,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set calculatedPrintDate value
      * @param string $calculatedPrintDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setCalculatedPrintDate(?string $calculatedPrintDate = null): self
     {
@@ -667,7 +667,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set commissionPercent value
      * @param float $commissionPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setCommissionPercent(?float $commissionPercent = null): self
     {
@@ -690,7 +690,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -713,7 +713,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set costUnit value
      * @param string $costUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setCostUnit(?string $costUnit = null): self
     {
@@ -736,7 +736,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -759,7 +759,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -782,7 +782,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -805,7 +805,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set dbiInfosStatus value
      * @param int $dbiInfosStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setDbiInfosStatus(?int $dbiInfosStatus = null): self
     {
@@ -828,7 +828,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set degussaPositionId value
      * @param int $degussaPositionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setDegussaPositionId(?int $degussaPositionId = null): self
     {
@@ -851,7 +851,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -874,7 +874,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -897,7 +897,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set detailPosition value
      * @param int $detailPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setDetailPosition(?int $detailPosition = null): self
     {
@@ -920,7 +920,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set documentCode value
      * @param string $documentCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setDocumentCode(?string $documentCode = null): self
     {
@@ -943,7 +943,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -966,7 +966,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -989,7 +989,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set exchangeRate value
      * @param float $exchangeRate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setExchangeRate(?float $exchangeRate = null): self
     {
@@ -1012,7 +1012,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set forAgency value
      * @param bool $forAgency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setForAgency(?bool $forAgency = null): self
     {
@@ -1035,7 +1035,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set imported value
      * @param bool $imported
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setImported(?bool $imported = null): self
     {
@@ -1058,7 +1058,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set isBackgroundPosition value
      * @param bool $isBackgroundPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setIsBackgroundPosition(?bool $isBackgroundPosition = null): self
     {
@@ -1081,7 +1081,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set isCommission value
      * @param bool $isCommission
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setIsCommission(?bool $isCommission = null): self
     {
@@ -1104,7 +1104,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set isDeposit value
      * @param bool $isDeposit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setIsDeposit(?bool $isDeposit = null): self
     {
@@ -1127,7 +1127,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set isPackage value
      * @param bool $isPackage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setIsPackage(?bool $isPackage = null): self
     {
@@ -1150,7 +1150,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set isPackageManual value
      * @param bool $isPackageManual
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setIsPackageManual(?bool $isPackageManual = null): self
     {
@@ -1173,7 +1173,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set isPayment value
      * @param bool $isPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setIsPayment(?bool $isPayment = null): self
     {
@@ -1196,7 +1196,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set isRevenue value
      * @param bool $isRevenue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setIsRevenue(?bool $isRevenue = null): self
     {
@@ -1219,7 +1219,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set isReverseCharge value
      * @param bool $isReverseCharge
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setIsReverseCharge(?bool $isReverseCharge = null): self
     {
@@ -1242,7 +1242,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -1265,7 +1265,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set noOfItems value
      * @param int $noOfItems
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setNoOfItems(?int $noOfItems = null): self
     {
@@ -1288,7 +1288,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -1311,7 +1311,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -1334,7 +1334,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set originalPrice value
      * @param float $originalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setOriginalPrice(?float $originalPrice = null): self
     {
@@ -1357,7 +1357,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set packageCode value
      * @param string $packageCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setPackageCode(?string $packageCode = null): self
     {
@@ -1380,7 +1380,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set paidDate value
      * @param string $paidDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setPaidDate(?string $paidDate = null): self
     {
@@ -1403,7 +1403,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set paymentPosition value
      * @param string $paymentPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setPaymentPosition(?string $paymentPosition = null): self
     {
@@ -1426,7 +1426,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set paymentPositionId value
      * @param int $paymentPositionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setPaymentPositionId(?int $paymentPositionId = null): self
     {
@@ -1449,7 +1449,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -1472,7 +1472,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -1495,7 +1495,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -1518,7 +1518,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setPositionId(?int $positionId = null): self
     {
@@ -1541,7 +1541,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setPrice(?float $price = null): self
     {
@@ -1564,7 +1564,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set printDescription value
      * @param string $printDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setPrintDescription(?string $printDescription = null): self
     {
@@ -1587,7 +1587,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set printPackageCode value
      * @param string $printPackageCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setPrintPackageCode(?string $printPackageCode = null): self
     {
@@ -1610,7 +1610,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set referenceNo value
      * @param string $referenceNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setReferenceNo(?string $referenceNo = null): self
     {
@@ -1633,7 +1633,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set revenuePercent value
      * @param float $revenuePercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setRevenuePercent(?float $revenuePercent = null): self
     {
@@ -1656,7 +1656,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set settlementPositionId value
      * @param int $settlementPositionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setSettlementPositionId(?int $settlementPositionId = null): self
     {
@@ -1679,7 +1679,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set singlePrice value
      * @param float $singlePrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setSinglePrice(?float $singlePrice = null): self
     {
@@ -1702,7 +1702,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set splitPositionId value
      * @param int $splitPositionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setSplitPositionId(?int $splitPositionId = null): self
     {
@@ -1725,7 +1725,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set tokenChecked value
      * @param bool $tokenChecked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setTokenChecked(?bool $tokenChecked = null): self
     {
@@ -1748,7 +1748,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set totalTax value
      * @param float $totalTax
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setTotalTax(?float $totalTax = null): self
     {
@@ -1771,7 +1771,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set transactionId value
      * @param int $transactionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setTransactionId(?int $transactionId = null): self
     {
@@ -1794,7 +1794,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set travelNoHandling value
      * @param string $travelNoHandling
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setTravelNoHandling(?string $travelNoHandling = null): self
     {
@@ -1817,7 +1817,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set vat2Amount value
      * @param float $vat2Amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVat2Amount(?float $vat2Amount = null): self
     {
@@ -1840,7 +1840,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set vat2AmountExtern value
      * @param float $vat2AmountExtern
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVat2AmountExtern(?float $vat2AmountExtern = null): self
     {
@@ -1863,7 +1863,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set vat2Base value
      * @param float $vat2Base
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVat2Base(?float $vat2Base = null): self
     {
@@ -1886,7 +1886,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set vat2BaseExtern value
      * @param float $vat2BaseExtern
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVat2BaseExtern(?float $vat2BaseExtern = null): self
     {
@@ -1909,7 +1909,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set vat2Percent value
      * @param float $vat2Percent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVat2Percent(?float $vat2Percent = null): self
     {
@@ -1932,7 +1932,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set vat2PercentExtern value
      * @param float $vat2PercentExtern
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVat2PercentExtern(?float $vat2PercentExtern = null): self
     {
@@ -1955,7 +1955,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -1978,7 +1978,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set vatAmountExtern value
      * @param float $vatAmountExtern
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVatAmountExtern(?float $vatAmountExtern = null): self
     {
@@ -2001,7 +2001,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set vatBase value
      * @param float $vatBase
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVatBase(?float $vatBase = null): self
     {
@@ -2024,7 +2024,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set vatBaseExtern value
      * @param float $vatBaseExtern
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVatBaseExtern(?float $vatBaseExtern = null): self
     {
@@ -2047,7 +2047,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {
@@ -2070,7 +2070,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set vatPercentExtern value
      * @param float $vatPercentExtern
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVatPercentExtern(?float $vatPercentExtern = null): self
     {
@@ -2093,7 +2093,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set voidPositionId value
      * @param int $voidPositionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVoidPositionId(?int $voidPositionId = null): self
     {
@@ -2116,7 +2116,7 @@ class BillingPositionDTO extends AbstractStructBase
     /**
      * Set voided value
      * @param bool $voided
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionDTO
      */
     public function setVoided(?bool $voided = null): self
     {

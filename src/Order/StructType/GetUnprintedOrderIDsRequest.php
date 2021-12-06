@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -123,7 +123,7 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     /**
      * Set from value
      * @param string $from
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUnprintedOrderIDsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsRequest
      */
     public function setFrom(?string $from = null): self
     {
@@ -146,7 +146,7 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     /**
      * Set until value
      * @param string $until
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUnprintedOrderIDsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsRequest
      */
     public function setUntil(?string $until = null): self
     {
@@ -169,7 +169,7 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUnprintedOrderIDsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -192,7 +192,7 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     /**
      * Set group1 value
      * @param string $group1
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUnprintedOrderIDsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsRequest
      */
     public function setGroup1(?string $group1 = null): self
     {
@@ -215,7 +215,7 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     /**
      * Set group2 value
      * @param string $group2
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUnprintedOrderIDsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsRequest
      */
     public function setGroup2(?string $group2 = null): self
     {
@@ -238,7 +238,7 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     /**
      * Set group3 value
      * @param string $group3
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUnprintedOrderIDsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsRequest
      */
     public function setGroup3(?string $group3 = null): self
     {
@@ -261,7 +261,7 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     /**
      * Set customers value
      * @param string $customers
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUnprintedOrderIDsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsRequest
      */
     public function setCustomers(?string $customers = null): self
     {
@@ -284,7 +284,7 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUnprintedOrderIDsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsRequest
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -307,7 +307,7 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUnprintedOrderIDsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsRequest
      */
     public function setTravelNo(?string $travelNo = null): self
     {
@@ -330,7 +330,7 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     /**
      * Set travelFrom value
      * @param string $travelFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUnprintedOrderIDsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsRequest
      */
     public function setTravelFrom(?string $travelFrom = null): self
     {
@@ -353,7 +353,7 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     /**
      * Set travelUntil value
      * @param string $travelUntil
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUnprintedOrderIDsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsRequest
      */
     public function setTravelUntil(?string $travelUntil = null): self
     {

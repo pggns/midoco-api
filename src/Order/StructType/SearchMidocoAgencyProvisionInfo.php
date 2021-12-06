@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class SearchMidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -110,7 +110,7 @@ class SearchMidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set agencyName value
      * @param string $agencyName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo
      */
     public function setAgencyName(?string $agencyName = null): self
     {
@@ -133,7 +133,7 @@ class SearchMidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -156,7 +156,7 @@ class SearchMidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set settlementDate value
      * @param string $settlementDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo
      */
     public function setSettlementDate(?string $settlementDate = null): self
     {
@@ -179,7 +179,7 @@ class SearchMidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set invoiceNr value
      * @param int $invoiceNr
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo
      */
     public function setInvoiceNr(?int $invoiceNr = null): self
     {
@@ -202,7 +202,7 @@ class SearchMidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set invoiceId value
      * @param int $invoiceId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo
      */
     public function setInvoiceId(?int $invoiceId = null): self
     {
@@ -225,7 +225,7 @@ class SearchMidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo
      */
     public function setSettlementId(?int $settlementId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class UserDataGetRequest extends AbstractStructBase
     /**
      * Set dataKey value
      * @param string $dataKey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserDataGetRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserDataGetRequest
      */
     public function setDataKey(?string $dataKey = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class DunningLetterDTO extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterDTO
      */
     public function setCode(?string $code = null): self
     {
@@ -150,7 +150,7 @@ class DunningLetterDTO extends AbstractStructBase
     /**
      * Set daysLimit value
      * @param int $daysLimit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterDTO
      */
     public function setDaysLimit(?int $daysLimit = null): self
     {
@@ -173,7 +173,7 @@ class DunningLetterDTO extends AbstractStructBase
     /**
      * Set dunningCharge value
      * @param float $dunningCharge
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterDTO
      */
     public function setDunningCharge(?float $dunningCharge = null): self
     {
@@ -196,7 +196,7 @@ class DunningLetterDTO extends AbstractStructBase
     /**
      * Set dunningLevel value
      * @param int $dunningLevel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterDTO
      */
     public function setDunningLevel(?int $dunningLevel = null): self
     {
@@ -219,7 +219,7 @@ class DunningLetterDTO extends AbstractStructBase
     /**
      * Set forDeposit value
      * @param bool $forDeposit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterDTO
      */
     public function setForDeposit(?bool $forDeposit = null): self
     {
@@ -242,7 +242,7 @@ class DunningLetterDTO extends AbstractStructBase
     /**
      * Set forStorno value
      * @param bool $forStorno
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterDTO
      */
     public function setForStorno(?bool $forStorno = null): self
     {
@@ -265,7 +265,7 @@ class DunningLetterDTO extends AbstractStructBase
     /**
      * Set mediaType value
      * @param string $mediaType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterDTO
      */
     public function setMediaType(?string $mediaType = null): self
     {
@@ -288,7 +288,7 @@ class DunningLetterDTO extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterDTO
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -311,7 +311,7 @@ class DunningLetterDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -334,7 +334,7 @@ class DunningLetterDTO extends AbstractStructBase
     /**
      * Set useStornoDate value
      * @param bool $useStornoDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterDTO
      */
     public function setUseStornoDate(?bool $useStornoDate = null): self
     {
@@ -357,7 +357,7 @@ class DunningLetterDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -380,7 +380,7 @@ class DunningLetterDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterDTO
      */
     public function setValidTo(?string $validTo = null): self
     {

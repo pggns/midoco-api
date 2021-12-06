@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetQueryFieldValuesRequest extends AbstractStructBase
     /**
      * Set fieldName value
      * @param string $fieldName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetQueryFieldValuesRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetQueryFieldValuesRequest
      */
     public function setFieldName(?string $fieldName = null): self
     {
@@ -70,7 +70,7 @@ class GetQueryFieldValuesRequest extends AbstractStructBase
     /**
      * Set queryType value
      * @param string $queryType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetQueryFieldValuesRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetQueryFieldValuesRequest
      */
     public function setQueryType(?string $queryType = null): self
     {

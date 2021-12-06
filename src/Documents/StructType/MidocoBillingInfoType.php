@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class MidocoBillingInfoType extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingInfoType
      */
     public function setPositionId(?int $positionId = null): self
     {
@@ -126,7 +126,7 @@ class MidocoBillingInfoType extends AbstractStructBase
     /**
      * Set documentNo value
      * @param int $documentNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingInfoType
      */
     public function setDocumentNo(?int $documentNo = null): self
     {
@@ -149,7 +149,7 @@ class MidocoBillingInfoType extends AbstractStructBase
     /**
      * Set account value
      * @param string $account
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingInfoType
      */
     public function setAccount(?string $account = null): self
     {
@@ -172,7 +172,7 @@ class MidocoBillingInfoType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingInfoType
      */
     public function setDescription(?string $description = null): self
     {
@@ -195,7 +195,7 @@ class MidocoBillingInfoType extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingInfoType
      */
     public function setPrice(?float $price = null): self
     {
@@ -218,7 +218,7 @@ class MidocoBillingInfoType extends AbstractStructBase
     /**
      * Set referenceNo value
      * @param string $referenceNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingInfoType
      */
     public function setReferenceNo(?string $referenceNo = null): self
     {
@@ -241,7 +241,7 @@ class MidocoBillingInfoType extends AbstractStructBase
     /**
      * Set voidedFlag value
      * @param bool $voidedFlag
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingInfoType
      */
     public function setVoidedFlag(?bool $voidedFlag = null): self
     {
@@ -264,7 +264,7 @@ class MidocoBillingInfoType extends AbstractStructBase
     /**
      * Set voidPositionId value
      * @param int $voidPositionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingInfoType
      */
     public function setVoidPositionId(?int $voidPositionId = null): self
     {
@@ -287,7 +287,7 @@ class MidocoBillingInfoType extends AbstractStructBase
     /**
      * Set printDate value
      * @param string $printDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingInfoType
      */
     public function setPrintDate(?string $printDate = null): self
     {

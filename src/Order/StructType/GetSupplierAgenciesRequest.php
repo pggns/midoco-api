@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetSupplierAgenciesRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgenciesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgenciesRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {

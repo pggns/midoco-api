@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteSellItemSavingsRequest extends AbstractStructBase
     /**
      * Set savingId value
      * @param int $savingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSellItemSavingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSellItemSavingsRequest
      */
     public function setSavingId(?int $savingId = null): self
     {

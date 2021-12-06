@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class IntroTaskOverview extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -86,7 +86,7 @@ class IntroTaskOverview extends AbstractStructBase
     /**
      * Set priority value
      * @param int $priority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview
      */
     public function setPriority(?int $priority = null): self
     {
@@ -109,7 +109,7 @@ class IntroTaskOverview extends AbstractStructBase
     /**
      * Set size value
      * @param int $size
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview
      */
     public function setSize(?int $size = null): self
     {
@@ -132,7 +132,7 @@ class IntroTaskOverview extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview
      */
     public function setDescription(?string $description = null): self
     {

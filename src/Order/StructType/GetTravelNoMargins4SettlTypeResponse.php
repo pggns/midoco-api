@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetTravelNoMargins4SettlTypeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTravelNoMarginSettlType
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMarginSettlType[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMarginSettlType[]
      */
     protected ?array $MidocoTravelNoMarginSettlType = null;
     /**
      * Constructor method for GetTravelNoMargins4SettlTypeResponse
      * @uses GetTravelNoMargins4SettlTypeResponse::setMidocoTravelNoMarginSettlType()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMarginSettlType[] $midocoTravelNoMarginSettlType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMarginSettlType[] $midocoTravelNoMarginSettlType
      */
     public function __construct(?array $midocoTravelNoMarginSettlType = null)
     {
@@ -34,7 +34,7 @@ class GetTravelNoMargins4SettlTypeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTravelNoMarginSettlType value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMarginSettlType[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMarginSettlType[]
      */
     public function getMidocoTravelNoMarginSettlType(): ?array
     {
@@ -55,12 +55,12 @@ class GetTravelNoMargins4SettlTypeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTravelNoMargins4SettlTypeResponseMidocoTravelNoMarginSettlTypeItem) {
             // validation for constraint: itemType
-            if (!$getTravelNoMargins4SettlTypeResponseMidocoTravelNoMarginSettlTypeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMarginSettlType) {
+            if (!$getTravelNoMargins4SettlTypeResponseMidocoTravelNoMarginSettlTypeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMarginSettlType) {
                 $invalidValues[] = is_object($getTravelNoMargins4SettlTypeResponseMidocoTravelNoMarginSettlTypeItem) ? get_class($getTravelNoMargins4SettlTypeResponseMidocoTravelNoMarginSettlTypeItem) : sprintf('%s(%s)', gettype($getTravelNoMargins4SettlTypeResponseMidocoTravelNoMarginSettlTypeItem), var_export($getTravelNoMargins4SettlTypeResponseMidocoTravelNoMarginSettlTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTravelNoMarginSettlType property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMarginSettlType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTravelNoMarginSettlType property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMarginSettlType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetTravelNoMargins4SettlTypeResponse extends AbstractStructBase
     /**
      * Set MidocoTravelNoMarginSettlType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMarginSettlType[] $midocoTravelNoMarginSettlType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelNoMargins4SettlTypeResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMarginSettlType[] $midocoTravelNoMarginSettlType
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelNoMargins4SettlTypeResponse
      */
     public function setMidocoTravelNoMarginSettlType(?array $midocoTravelNoMarginSettlType = null): self
     {
@@ -85,14 +85,14 @@ class GetTravelNoMargins4SettlTypeResponse extends AbstractStructBase
     /**
      * Add item to MidocoTravelNoMarginSettlType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMarginSettlType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelNoMargins4SettlTypeResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMarginSettlType $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelNoMargins4SettlTypeResponse
      */
-    public function addToMidocoTravelNoMarginSettlType(\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMarginSettlType $item): self
+    public function addToMidocoTravelNoMarginSettlType(\Pggns\MidocoApi\Order\StructType\MidocoTravelNoMarginSettlType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMarginSettlType) {
-            throw new InvalidArgumentException(sprintf('The MidocoTravelNoMarginSettlType property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelNoMarginSettlType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMarginSettlType) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelNoMarginSettlType property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMarginSettlType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTravelNoMarginSettlType[] = $item;
         

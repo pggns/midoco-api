@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class MidocoSalesListsByAgencyType extends AbstractStructBase
     /**
      * Set agency value
      * @param string $agency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByAgencyType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByAgencyType
      */
     public function setAgency(?string $agency = null): self
     {
@@ -126,7 +126,7 @@ class MidocoSalesListsByAgencyType extends AbstractStructBase
     /**
      * Set agencyName value
      * @param string $agencyName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByAgencyType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByAgencyType
      */
     public function setAgencyName(?string $agencyName = null): self
     {
@@ -149,7 +149,7 @@ class MidocoSalesListsByAgencyType extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByAgencyType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByAgencyType
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -172,7 +172,7 @@ class MidocoSalesListsByAgencyType extends AbstractStructBase
     /**
      * Set saleAmount value
      * @param float $saleAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByAgencyType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByAgencyType
      */
     public function setSaleAmount(?float $saleAmount = null): self
     {
@@ -195,7 +195,7 @@ class MidocoSalesListsByAgencyType extends AbstractStructBase
     /**
      * Set percentage value
      * @param float $percentage
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByAgencyType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByAgencyType
      */
     public function setPercentage(?float $percentage = null): self
     {
@@ -218,7 +218,7 @@ class MidocoSalesListsByAgencyType extends AbstractStructBase
     /**
      * Set percentageFromAllAgencies value
      * @param float $percentageFromAllAgencies
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByAgencyType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByAgencyType
      */
     public function setPercentageFromAllAgencies(?float $percentageFromAllAgencies = null): self
     {
@@ -241,7 +241,7 @@ class MidocoSalesListsByAgencyType extends AbstractStructBase
     /**
      * Set paxCount value
      * @param int $paxCount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByAgencyType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByAgencyType
      */
     public function setPaxCount(?int $paxCount = null): self
     {
@@ -264,7 +264,7 @@ class MidocoSalesListsByAgencyType extends AbstractStructBase
     /**
      * Set saleAmountPerPax value
      * @param float $saleAmountPerPax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByAgencyType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByAgencyType
      */
     public function setSaleAmountPerPax(?float $saleAmountPerPax = null): self
     {
@@ -287,7 +287,7 @@ class MidocoSalesListsByAgencyType extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByAgencyType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByAgencyType
      */
     public function setStatus(?string $status = null): self
     {

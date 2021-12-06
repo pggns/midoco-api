@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -327,7 +327,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set birthday value
      * @param string $birthday
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setBirthday(?string $birthday = null): self
     {
@@ -350,7 +350,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -373,7 +373,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set expiryDate value
      * @param string $expiryDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setExpiryDate(?string $expiryDate = null): self
     {
@@ -396,7 +396,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -419,7 +419,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set idCardNo value
      * @param string $idCardNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setIdCardNo(?string $idCardNo = null): self
     {
@@ -442,7 +442,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set idCardType value
      * @param string $idCardType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setIdCardType(?string $idCardType = null): self
     {
@@ -465,7 +465,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set issueDate value
      * @param string $issueDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setIssueDate(?string $issueDate = null): self
     {
@@ -488,7 +488,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set issuePlace value
      * @param string $issuePlace
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setIssuePlace(?string $issuePlace = null): self
     {
@@ -511,7 +511,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setName(?string $name = null): self
     {
@@ -534,7 +534,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set nationality value
      * @param string $nationality
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setNationality(?string $nationality = null): self
     {
@@ -557,7 +557,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -580,7 +580,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set placeOfBirth value
      * @param string $placeOfBirth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setPlaceOfBirth(?string $placeOfBirth = null): self
     {
@@ -603,7 +603,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set salutationId value
      * @param string $salutationId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setSalutationId(?string $salutationId = null): self
     {
@@ -626,7 +626,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setTitle(?string $title = null): self
     {
@@ -649,7 +649,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set travellerId value
      * @param int $travellerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setTravellerId(?int $travellerId = null): self
     {
@@ -672,7 +672,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set travellerType value
      * @param string $travellerType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setTravellerType(?string $travellerType = null): self
     {
@@ -695,7 +695,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set birthDay value
      * @param int $birthDay
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setBirthDay_1(?int $birthDay_1 = null): self
     {
@@ -718,7 +718,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set birthMonth value
      * @param int $birthMonth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setBirthMonth(?int $birthMonth = null): self
     {
@@ -741,7 +741,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set birthName value
      * @param string $birthName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setBirthName(?string $birthName = null): self
     {
@@ -764,7 +764,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set birthYear value
      * @param int $birthYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setBirthYear(?int $birthYear = null): self
     {
@@ -787,7 +787,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set birthdayNotProvided value
      * @param bool $birthdayNotProvided
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setBirthdayNotProvided(?bool $birthdayNotProvided = null): self
     {
@@ -810,7 +810,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set contactName value
      * @param string $contactName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setContactName(?string $contactName = null): self
     {
@@ -833,7 +833,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set contactPhone value
      * @param string $contactPhone
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setContactPhone(?string $contactPhone = null): self
     {
@@ -856,7 +856,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set disabilityDescription value
      * @param string $disabilityDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setDisabilityDescription(?string $disabilityDescription = null): self
     {
@@ -879,7 +879,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set facesId value
      * @param string $facesId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setFacesId(?string $facesId = null): self
     {
@@ -902,7 +902,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set hasDisability value
      * @param bool $hasDisability
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setHasDisability(?bool $hasDisability = null): self
     {
@@ -925,7 +925,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set maritalStatus value
      * @param string $maritalStatus
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setMaritalStatus(?string $maritalStatus = null): self
     {
@@ -948,7 +948,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -971,7 +971,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set middleNameNotAvailable value
      * @param bool $middleNameNotAvailable
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setMiddleNameNotAvailable(?bool $middleNameNotAvailable = null): self
     {
@@ -994,7 +994,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set needsBarrierFreeAccess value
      * @param bool $needsBarrierFreeAccess
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setNeedsBarrierFreeAccess(?bool $needsBarrierFreeAccess = null): self
     {
@@ -1017,7 +1017,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set passportExpiryDate value
      * @param string $passportExpiryDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setPassportExpiryDate(?string $passportExpiryDate = null): self
     {
@@ -1040,7 +1040,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set passportIssueDate value
      * @param string $passportIssueDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setPassportIssueDate(?string $passportIssueDate = null): self
     {
@@ -1063,7 +1063,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set passportIssuePlace value
      * @param string $passportIssuePlace
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setPassportIssuePlace(?string $passportIssuePlace = null): self
     {
@@ -1086,7 +1086,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set passportNo value
      * @param string $passportNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setPassportNo(?string $passportNo = null): self
     {
@@ -1109,7 +1109,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setPhone(?string $phone = null): self
     {
@@ -1132,7 +1132,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -1155,7 +1155,7 @@ class CrmPersonTravellerDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param int $typeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPersonTravellerDTO
      */
     public function setTypeId(?int $typeId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetCrmNoticesRequest extends AbstractStructBase
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The sortOrder
      * @var string|null
@@ -89,7 +89,7 @@ class GetCrmNoticesRequest extends AbstractStructBase
      * @uses GetCrmNoticesRequest::setTaskType()
      * @uses GetCrmNoticesRequest::setFinishUser()
      * @uses GetCrmNoticesRequest::setDelegationQueue()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
      * @param string $sortOrder
      * @param string $orgunitName
      * @param string $selection
@@ -102,7 +102,7 @@ class GetCrmNoticesRequest extends AbstractStructBase
      * @param int $finishUser
      * @param string $delegationQueue
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?string $sortOrder = null, ?string $orgunitName = null, ?string $selection = null, ?string $fromFinishTimestamp = null, ?string $untilFinishTimestamp = null, ?string $fromCreationTimestamp = null, ?string $untilCreationTimestamp = null, ?string $notice = null, ?string $taskType = null, ?int $finishUser = null, ?string $delegationQueue = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?string $sortOrder = null, ?string $orgunitName = null, ?string $selection = null, ?string $fromFinishTimestamp = null, ?string $untilFinishTimestamp = null, ?string $fromCreationTimestamp = null, ?string $untilCreationTimestamp = null, ?string $notice = null, ?string $taskType = null, ?int $finishUser = null, ?string $delegationQueue = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -120,18 +120,18 @@ class GetCrmNoticesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmNoticesRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -148,7 +148,7 @@ class GetCrmNoticesRequest extends AbstractStructBase
     /**
      * Set sortOrder value
      * @param string $sortOrder
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmNoticesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesRequest
      */
     public function setSortOrder(?string $sortOrder = null): self
     {
@@ -171,7 +171,7 @@ class GetCrmNoticesRequest extends AbstractStructBase
     /**
      * Set orgunitName value
      * @param string $orgunitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmNoticesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesRequest
      */
     public function setOrgunitName(?string $orgunitName = null): self
     {
@@ -194,7 +194,7 @@ class GetCrmNoticesRequest extends AbstractStructBase
     /**
      * Set selection value
      * @param string $selection
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmNoticesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesRequest
      */
     public function setSelection(?string $selection = null): self
     {
@@ -217,7 +217,7 @@ class GetCrmNoticesRequest extends AbstractStructBase
     /**
      * Set fromFinishTimestamp value
      * @param string $fromFinishTimestamp
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmNoticesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesRequest
      */
     public function setFromFinishTimestamp(?string $fromFinishTimestamp = null): self
     {
@@ -240,7 +240,7 @@ class GetCrmNoticesRequest extends AbstractStructBase
     /**
      * Set untilFinishTimestamp value
      * @param string $untilFinishTimestamp
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmNoticesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesRequest
      */
     public function setUntilFinishTimestamp(?string $untilFinishTimestamp = null): self
     {
@@ -263,7 +263,7 @@ class GetCrmNoticesRequest extends AbstractStructBase
     /**
      * Set fromCreationTimestamp value
      * @param string $fromCreationTimestamp
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmNoticesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesRequest
      */
     public function setFromCreationTimestamp(?string $fromCreationTimestamp = null): self
     {
@@ -286,7 +286,7 @@ class GetCrmNoticesRequest extends AbstractStructBase
     /**
      * Set untilCreationTimestamp value
      * @param string $untilCreationTimestamp
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmNoticesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesRequest
      */
     public function setUntilCreationTimestamp(?string $untilCreationTimestamp = null): self
     {
@@ -309,7 +309,7 @@ class GetCrmNoticesRequest extends AbstractStructBase
     /**
      * Set notice value
      * @param string $notice
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmNoticesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesRequest
      */
     public function setNotice(?string $notice = null): self
     {
@@ -332,7 +332,7 @@ class GetCrmNoticesRequest extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmNoticesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesRequest
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -355,7 +355,7 @@ class GetCrmNoticesRequest extends AbstractStructBase
     /**
      * Set finishUser value
      * @param int $finishUser
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmNoticesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesRequest
      */
     public function setFinishUser(?int $finishUser = null): self
     {
@@ -378,7 +378,7 @@ class GetCrmNoticesRequest extends AbstractStructBase
     /**
      * Set delegationQueue value
      * @param string $delegationQueue
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmNoticesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesRequest
      */
     public function setDelegationQueue(?string $delegationQueue = null): self
     {

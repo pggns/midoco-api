@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoImportCCard extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoImportCCard
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoImportCCard
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -102,7 +102,7 @@ class MidocoImportCCard extends AbstractStructBase
     /**
      * Set cardNo value
      * @param string $cardNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoImportCCard
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoImportCCard
      */
     public function setCardNo(?string $cardNo = null): self
     {
@@ -125,7 +125,7 @@ class MidocoImportCCard extends AbstractStructBase
     /**
      * Set cardType value
      * @param string $cardType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoImportCCard
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoImportCCard
      */
     public function setCardType(?string $cardType = null): self
     {
@@ -148,7 +148,7 @@ class MidocoImportCCard extends AbstractStructBase
     /**
      * Set validMonth value
      * @param string $validMonth
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoImportCCard
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoImportCCard
      */
     public function setValidMonth(?string $validMonth = null): self
     {
@@ -171,7 +171,7 @@ class MidocoImportCCard extends AbstractStructBase
     /**
      * Set validYear value
      * @param string $validYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoImportCCard
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoImportCCard
      */
     public function setValidYear(?string $validYear = null): self
     {
@@ -194,7 +194,7 @@ class MidocoImportCCard extends AbstractStructBase
     /**
      * Set owner value
      * @param string $owner
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoImportCCard
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoImportCCard
      */
     public function setOwner(?string $owner = null): self
     {

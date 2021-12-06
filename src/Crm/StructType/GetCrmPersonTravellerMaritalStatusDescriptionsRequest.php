@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -40,7 +40,7 @@ class GetCrmPersonTravellerMaritalStatusDescriptionsRequest extends AbstractStru
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCrmPersonTravellerMaritalStatusDescriptionsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCrmPersonTravellerMaritalStatusDescriptionsRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {

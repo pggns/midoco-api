@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoTaskPriorityResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTaskPriority
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO[]
      */
     protected ?array $MidocoTaskPriority = null;
     /**
      * Constructor method for GetMidocoTaskPriorityResponse
      * @uses GetMidocoTaskPriorityResponse::setMidocoTaskPriority()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO[] $midocoTaskPriority
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO[] $midocoTaskPriority
      */
     public function __construct(?array $midocoTaskPriority = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoTaskPriorityResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTaskPriority value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO[]
      */
     public function getMidocoTaskPriority(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoTaskPriorityResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoTaskPriorityResponseMidocoTaskPriorityItem) {
             // validation for constraint: itemType
-            if (!$getMidocoTaskPriorityResponseMidocoTaskPriorityItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO) {
+            if (!$getMidocoTaskPriorityResponseMidocoTaskPriorityItem instanceof \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO) {
                 $invalidValues[] = is_object($getMidocoTaskPriorityResponseMidocoTaskPriorityItem) ? get_class($getMidocoTaskPriorityResponseMidocoTaskPriorityItem) : sprintf('%s(%s)', gettype($getMidocoTaskPriorityResponseMidocoTaskPriorityItem), var_export($getMidocoTaskPriorityResponseMidocoTaskPriorityItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTaskPriority property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTaskPriority property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoTaskPriorityResponse extends AbstractStructBase
     /**
      * Set MidocoTaskPriority value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO[] $midocoTaskPriority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetMidocoTaskPriorityResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO[] $midocoTaskPriority
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetMidocoTaskPriorityResponse
      */
     public function setMidocoTaskPriority(?array $midocoTaskPriority = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoTaskPriorityResponse extends AbstractStructBase
     /**
      * Add item to MidocoTaskPriority value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetMidocoTaskPriorityResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetMidocoTaskPriorityResponse
      */
-    public function addToMidocoTaskPriority(\Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO $item): self
+    public function addToMidocoTaskPriority(\Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoTaskPriority property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoTaskPriority property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTaskPriority[] = $item;
         

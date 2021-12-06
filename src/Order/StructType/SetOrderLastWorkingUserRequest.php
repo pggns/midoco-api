@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class SetOrderLastWorkingUserRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SetOrderLastWorkingUserRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SetOrderLastWorkingUserRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -70,7 +70,7 @@ class SetOrderLastWorkingUserRequest extends AbstractStructBase
     /**
      * Set doClear value
      * @param bool $doClear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SetOrderLastWorkingUserRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SetOrderLastWorkingUserRequest
      */
     public function setDoClear(?bool $doClear = null): self
     {

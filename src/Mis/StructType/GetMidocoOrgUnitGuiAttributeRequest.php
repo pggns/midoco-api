@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetMidocoOrgUnitGuiAttributeRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoOrgUnitGuiAttributeRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoOrgUnitGuiAttributeRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -71,17 +71,17 @@ class GetMidocoOrgUnitGuiAttributeRequest extends AbstractStructBase
     }
     /**
      * Set GUIAttributeGroup value
-     * @uses \Pggns\MidocoApi\Api\Mis\EnumType\GUIAttributeGroup::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Mis\EnumType\GUIAttributeGroup::getValidValues()
+     * @uses \Pggns\MidocoApi\Mis\EnumType\GUIAttributeGroup::valueIsValid()
+     * @uses \Pggns\MidocoApi\Mis\EnumType\GUIAttributeGroup::getValidValues()
      * @throws InvalidArgumentException
      * @param string $gUIAttributeGroup
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoOrgUnitGuiAttributeRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoOrgUnitGuiAttributeRequest
      */
     public function setGUIAttributeGroup(?string $gUIAttributeGroup = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Mis\EnumType\GUIAttributeGroup::valueIsValid($gUIAttributeGroup)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Mis\EnumType\GUIAttributeGroup', is_array($gUIAttributeGroup) ? implode(', ', $gUIAttributeGroup) : var_export($gUIAttributeGroup, true), implode(', ', \Pggns\MidocoApi\Api\Mis\EnumType\GUIAttributeGroup::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Mis\EnumType\GUIAttributeGroup::valueIsValid($gUIAttributeGroup)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Mis\EnumType\GUIAttributeGroup', is_array($gUIAttributeGroup) ? implode(', ', $gUIAttributeGroup) : var_export($gUIAttributeGroup, true), implode(', ', \Pggns\MidocoApi\Mis\EnumType\GUIAttributeGroup::getValidValues())), __LINE__);
         }
         $this->GUIAttributeGroup = $gUIAttributeGroup;
         

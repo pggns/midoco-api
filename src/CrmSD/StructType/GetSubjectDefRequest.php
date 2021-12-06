@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetSubjectDefRequest extends AbstractStructBase
      * The MidocoSubjectDef
      * Meta information extracted from the WSDL
      * - ref: MidocoSubjectDef
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSubjectDef|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectDef|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSubjectDef $MidocoSubjectDef = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectDef $MidocoSubjectDef = null;
     /**
      * Constructor method for GetSubjectDefRequest
      * @uses GetSubjectDefRequest::setMidocoSubjectDef()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSubjectDef $midocoSubjectDef
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectDef $midocoSubjectDef
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSubjectDef $midocoSubjectDef = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectDef $midocoSubjectDef = null)
     {
         $this
             ->setMidocoSubjectDef($midocoSubjectDef);
     }
     /**
      * Get MidocoSubjectDef value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSubjectDef|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectDef|null
      */
-    public function getMidocoSubjectDef(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSubjectDef
+    public function getMidocoSubjectDef(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectDef
     {
         return $this->MidocoSubjectDef;
     }
     /**
      * Set MidocoSubjectDef value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSubjectDef $midocoSubjectDef
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetSubjectDefRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectDef $midocoSubjectDef
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetSubjectDefRequest
      */
-    public function setMidocoSubjectDef(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSubjectDef $midocoSubjectDef = null): self
+    public function setMidocoSubjectDef(?\Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectDef $midocoSubjectDef = null): self
     {
         $this->MidocoSubjectDef = $midocoSubjectDef;
         

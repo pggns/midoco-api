@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -85,7 +85,7 @@ class AddAdditionalServicesResponse extends AbstractStructBase
      * Set error value
      * @throws InvalidArgumentException
      * @param string[] $error
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddAdditionalServicesResponse
+     * @return \Pggns\MidocoApi\Order\StructType\AddAdditionalServicesResponse
      */
     public function setError(?array $error = null): self
     {
@@ -101,7 +101,7 @@ class AddAdditionalServicesResponse extends AbstractStructBase
      * Add item to error value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddAdditionalServicesResponse
+     * @return \Pggns\MidocoApi\Order\StructType\AddAdditionalServicesResponse
      */
     public function addToError(string $item): self
     {
@@ -124,7 +124,7 @@ class AddAdditionalServicesResponse extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddAdditionalServicesResponse
+     * @return \Pggns\MidocoApi\Order\StructType\AddAdditionalServicesResponse
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -147,7 +147,7 @@ class AddAdditionalServicesResponse extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddAdditionalServicesResponse
+     * @return \Pggns\MidocoApi\Order\StructType\AddAdditionalServicesResponse
      */
     public function setOrderNo(?int $orderNo = null): self
     {

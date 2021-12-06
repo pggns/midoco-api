@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetTempPrintjobInfosForUserIdRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetTempPrintjobInfosForUserIdRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\GetTempPrintjobInfosForUserIdRequest
      */
     public function setUserId(?int $userId = null): self
     {

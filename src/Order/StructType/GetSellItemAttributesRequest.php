@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetSellItemAttributesRequest extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemAttributesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemAttributesRequest
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -78,7 +78,7 @@ class GetSellItemAttributesRequest extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemAttributesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemAttributesRequest
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -101,7 +101,7 @@ class GetSellItemAttributesRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemAttributesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemAttributesRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

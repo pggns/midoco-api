@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAllTssClients4UnitResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTssClient
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTssClient[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTssClient[]
      */
     protected ?array $MidocoTssClient = null;
     /**
      * Constructor method for GetAllTssClients4UnitResponse
      * @uses GetAllTssClients4UnitResponse::setMidocoTssClient()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTssClient[] $midocoTssClient
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTssClient[] $midocoTssClient
      */
     public function __construct(?array $midocoTssClient = null)
     {
@@ -34,7 +34,7 @@ class GetAllTssClients4UnitResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTssClient value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssClient[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssClient[]
      */
     public function getMidocoTssClient(): ?array
     {
@@ -55,12 +55,12 @@ class GetAllTssClients4UnitResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllTssClients4UnitResponseMidocoTssClientItem) {
             // validation for constraint: itemType
-            if (!$getAllTssClients4UnitResponseMidocoTssClientItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTssClient) {
+            if (!$getAllTssClients4UnitResponseMidocoTssClientItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoTssClient) {
                 $invalidValues[] = is_object($getAllTssClients4UnitResponseMidocoTssClientItem) ? get_class($getAllTssClients4UnitResponseMidocoTssClientItem) : sprintf('%s(%s)', gettype($getAllTssClients4UnitResponseMidocoTssClientItem), var_export($getAllTssClients4UnitResponseMidocoTssClientItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTssClient property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTssClient, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTssClient property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTssClient, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAllTssClients4UnitResponse extends AbstractStructBase
     /**
      * Set MidocoTssClient value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTssClient[] $midocoTssClient
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAllTssClients4UnitResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTssClient[] $midocoTssClient
+     * @return \Pggns\MidocoApi\Order\StructType\GetAllTssClients4UnitResponse
      */
     public function setMidocoTssClient(?array $midocoTssClient = null): self
     {
@@ -85,14 +85,14 @@ class GetAllTssClients4UnitResponse extends AbstractStructBase
     /**
      * Add item to MidocoTssClient value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTssClient $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAllTssClients4UnitResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTssClient $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetAllTssClients4UnitResponse
      */
-    public function addToMidocoTssClient(\Pggns\MidocoApi\Api\Order\StructType\MidocoTssClient $item): self
+    public function addToMidocoTssClient(\Pggns\MidocoApi\Order\StructType\MidocoTssClient $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTssClient) {
-            throw new InvalidArgumentException(sprintf('The MidocoTssClient property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTssClient, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoTssClient) {
+            throw new InvalidArgumentException(sprintf('The MidocoTssClient property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTssClient, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTssClient[] = $item;
         

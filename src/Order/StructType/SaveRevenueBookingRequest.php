@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveRevenueBookingRequest extends AbstractStructBase
      * The RevenueBookingInfo
      * Meta information extracted from the WSDL
      * - ref: RevenueBookingInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType|null
+     * @var \Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $RevenueBookingInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $RevenueBookingInfo = null;
     /**
      * The execute_booking
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SaveRevenueBookingRequest extends AbstractStructBase
      * Constructor method for SaveRevenueBookingRequest
      * @uses SaveRevenueBookingRequest::setRevenueBookingInfo()
      * @uses SaveRevenueBookingRequest::setExecute_booking()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $revenueBookingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $revenueBookingInfo
      * @param bool $execute_booking
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $revenueBookingInfo = null, ?bool $execute_booking = true)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $revenueBookingInfo = null, ?bool $execute_booking = true)
     {
         $this
             ->setRevenueBookingInfo($revenueBookingInfo)
@@ -42,18 +42,18 @@ class SaveRevenueBookingRequest extends AbstractStructBase
     }
     /**
      * Get RevenueBookingInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType|null
+     * @return \Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType|null
      */
-    public function getRevenueBookingInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType
+    public function getRevenueBookingInfo(): ?\Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType
     {
         return $this->RevenueBookingInfo;
     }
     /**
      * Set RevenueBookingInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $revenueBookingInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveRevenueBookingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $revenueBookingInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SaveRevenueBookingRequest
      */
-    public function setRevenueBookingInfo(?\Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $revenueBookingInfo = null): self
+    public function setRevenueBookingInfo(?\Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $revenueBookingInfo = null): self
     {
         $this->RevenueBookingInfo = $revenueBookingInfo;
         
@@ -70,7 +70,7 @@ class SaveRevenueBookingRequest extends AbstractStructBase
     /**
      * Set execute_booking value
      * @param bool $execute_booking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveRevenueBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveRevenueBookingRequest
      */
     public function setExecute_booking(?bool $execute_booking = true): self
     {

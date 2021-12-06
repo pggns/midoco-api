@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MailingProhibitedStatus extends AbstractStructBase
     /**
      * Set statusId value
      * @param string $statusId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MailingProhibitedStatus
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MailingProhibitedStatus
      */
     public function setStatusId(?string $statusId = null): self
     {
@@ -70,7 +70,7 @@ class MailingProhibitedStatus extends AbstractStructBase
     /**
      * Set statusDescription value
      * @param string $statusDescription
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MailingProhibitedStatus
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MailingProhibitedStatus
      */
     public function setStatusDescription(?string $statusDescription = null): self
     {

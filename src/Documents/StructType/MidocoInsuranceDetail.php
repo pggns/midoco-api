@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoInsuranceDetail extends InsuranceDetailDTO
     /**
      * Set linkType value
      * @param string $linkType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsuranceDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoInsuranceDetail
      */
     public function setLinkType(?string $linkType = null): self
     {
@@ -70,7 +70,7 @@ class MidocoInsuranceDetail extends InsuranceDetailDTO
     /**
      * Set link value
      * @param string $link
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsuranceDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoInsuranceDetail
      */
     public function setLink(?string $link = null): self
     {

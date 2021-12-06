@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class ModifyPasswordResponse extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ModifyPasswordResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\ModifyPasswordResponse
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -72,7 +72,7 @@ class ModifyPasswordResponse extends AbstractStructBase
     /**
      * Set errorText value
      * @param string $errorText
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ModifyPasswordResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\ModifyPasswordResponse
      */
     public function setErrorText(?string $errorText = null): self
     {

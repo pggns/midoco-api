@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoSelectedCrmPersonTraveller extends CrmPersonTravellerDTO
     /**
      * Set isAdditionalForenameSelected value
      * @param bool $isAdditionalForenameSelected
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller
      */
     public function setIsAdditionalForenameSelected(?bool $isAdditionalForenameSelected = null): self
     {

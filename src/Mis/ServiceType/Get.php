@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\ServiceType;
+namespace Pggns\MidocoApi\Mis\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Get extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Mis\ServiceType\Get
+     * @return \Pggns\MidocoApi\Mis\ServiceType\Get
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignReqType $paramGetCampaignWSRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignWSResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetCampaignReqType $paramGetCampaignWSRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignWSResponse|bool
      */
-    public function getCampaignWS(\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignReqType $paramGetCampaignWSRequest)
+    public function getCampaignWS(\Pggns\MidocoApi\Mis\StructType\GetCampaignReqType $paramGetCampaignWSRequest)
     {
         try {
             $this->setResult($resultGetCampaignWS = $this->getSoapClient()->__soapCall('getCampaignWS', [
@@ -58,15 +58,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignPrevNextPageReqType $paramGetCampaignNextPageWSRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignNextPageWSResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetCampaignPrevNextPageReqType $paramGetCampaignNextPageWSRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignNextPageWSResponse|bool
      */
-    public function getCampaignNextPageWS(\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignPrevNextPageReqType $paramGetCampaignNextPageWSRequest)
+    public function getCampaignNextPageWS(\Pggns\MidocoApi\Mis\StructType\GetCampaignPrevNextPageReqType $paramGetCampaignNextPageWSRequest)
     {
         try {
             $this->setResult($resultGetCampaignNextPageWS = $this->getSoapClient()->__soapCall('getCampaignNextPageWS', [
@@ -85,15 +85,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignPrevNextPageReqType $paramGetCampaignPrevPageWSRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignPrevPageWSResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetCampaignPrevNextPageReqType $paramGetCampaignPrevPageWSRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignPrevPageWSResponse|bool
      */
-    public function getCampaignPrevPageWS(\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignPrevNextPageReqType $paramGetCampaignPrevPageWSRequest)
+    public function getCampaignPrevPageWS(\Pggns\MidocoApi\Mis\StructType\GetCampaignPrevNextPageReqType $paramGetCampaignPrevPageWSRequest)
     {
         try {
             $this->setResult($resultGetCampaignPrevPageWS = $this->getSoapClient()->__soapCall('getCampaignPrevPageWS', [
@@ -112,15 +112,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFirstLastPageReqType $paramGetCampaignFirstPageWSRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFirstPageWSResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetCampaignFirstLastPageReqType $paramGetCampaignFirstPageWSRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignFirstPageWSResponse|bool
      */
-    public function getCampaignFirstPageWS(\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFirstLastPageReqType $paramGetCampaignFirstPageWSRequest)
+    public function getCampaignFirstPageWS(\Pggns\MidocoApi\Mis\StructType\GetCampaignFirstLastPageReqType $paramGetCampaignFirstPageWSRequest)
     {
         try {
             $this->setResult($resultGetCampaignFirstPageWS = $this->getSoapClient()->__soapCall('getCampaignFirstPageWS', [
@@ -139,15 +139,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFirstLastPageReqType $paramGetCampaignLastPageWSRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignLastPageWSResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetCampaignFirstLastPageReqType $paramGetCampaignLastPageWSRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignLastPageWSResponse|bool
      */
-    public function getCampaignLastPageWS(\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFirstLastPageReqType $paramGetCampaignLastPageWSRequest)
+    public function getCampaignLastPageWS(\Pggns\MidocoApi\Mis\StructType\GetCampaignFirstLastPageReqType $paramGetCampaignLastPageWSRequest)
     {
         try {
             $this->setResult($resultGetCampaignLastPageWS = $this->getSoapClient()->__soapCall('getCampaignLastPageWS', [
@@ -166,15 +166,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetTextTemplateRequest $paramGetTextTemplateRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTextTemplateResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetTextTemplateRequest $paramGetTextTemplateRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTextTemplateResponse|bool
      */
-    public function getTextTemplate(\Pggns\MidocoApi\Api\Mis\StructType\GetTextTemplateRequest $paramGetTextTemplateRequest)
+    public function getTextTemplate(\Pggns\MidocoApi\Mis\StructType\GetTextTemplateRequest $paramGetTextTemplateRequest)
     {
         try {
             $this->setResult($resultGetTextTemplate = $this->getSoapClient()->__soapCall('getTextTemplate', [
@@ -193,15 +193,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignDefinitionRequest $paramGetCampaignDefinitionRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignDefinitionResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetCampaignDefinitionRequest $paramGetCampaignDefinitionRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignDefinitionResponse|bool
      */
-    public function getCampaignDefinition(\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignDefinitionRequest $paramGetCampaignDefinitionRequest)
+    public function getCampaignDefinition(\Pggns\MidocoApi\Mis\StructType\GetCampaignDefinitionRequest $paramGetCampaignDefinitionRequest)
     {
         try {
             $this->setResult($resultGetCampaignDefinition = $this->getSoapClient()->__soapCall('getCampaignDefinition', [
@@ -220,15 +220,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest $paramGetTemplateTextForCustomerRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest $paramGetTemplateTextForCustomerRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerResponse|bool
      */
-    public function getTemplateTextForCustomer(\Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest $paramGetTemplateTextForCustomerRequest)
+    public function getTemplateTextForCustomer(\Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest $paramGetTemplateTextForCustomerRequest)
     {
         try {
             $this->setResult($resultGetTemplateTextForCustomer = $this->getSoapClient()->__soapCall('getTemplateTextForCustomer', [
@@ -247,15 +247,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetAvailableCampaignFieldsRequest $paramGetAvailableCampaignFieldsRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAvailableCampaignFieldsResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetAvailableCampaignFieldsRequest $paramGetAvailableCampaignFieldsRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAvailableCampaignFieldsResponse|bool
      */
-    public function getAvailableCampaignFields(\Pggns\MidocoApi\Api\Mis\StructType\GetAvailableCampaignFieldsRequest $paramGetAvailableCampaignFieldsRequest)
+    public function getAvailableCampaignFields(\Pggns\MidocoApi\Mis\StructType\GetAvailableCampaignFieldsRequest $paramGetAvailableCampaignFieldsRequest)
     {
         try {
             $this->setResult($resultGetAvailableCampaignFields = $this->getSoapClient()->__soapCall('getAvailableCampaignFields', [
@@ -274,15 +274,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetSqlMappingInfoRequest $paramGetSqlMappingInfoRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetSqlMappingInfoResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetSqlMappingInfoRequest $paramGetSqlMappingInfoRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetSqlMappingInfoResponse|bool
      */
-    public function getSqlMappingInfo(\Pggns\MidocoApi\Api\Mis\StructType\GetSqlMappingInfoRequest $paramGetSqlMappingInfoRequest)
+    public function getSqlMappingInfo(\Pggns\MidocoApi\Mis\StructType\GetSqlMappingInfoRequest $paramGetSqlMappingInfoRequest)
     {
         try {
             $this->setResult($resultGetSqlMappingInfo = $this->getSoapClient()->__soapCall('getSqlMappingInfo', [
@@ -301,15 +301,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetJasperReportRequest $paramGetJasperReportRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetJasperReportResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetJasperReportRequest $paramGetJasperReportRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetJasperReportResponse|bool
      */
-    public function getJasperReport(\Pggns\MidocoApi\Api\Mis\StructType\GetJasperReportRequest $paramGetJasperReportRequest)
+    public function getJasperReport(\Pggns\MidocoApi\Mis\StructType\GetJasperReportRequest $paramGetJasperReportRequest)
     {
         try {
             $this->setResult($resultGetJasperReport = $this->getSoapClient()->__soapCall('getJasperReport', [
@@ -328,15 +328,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetJasperParameterRequest $paramGetJasperParameterRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetJasperParameterResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetJasperParameterRequest $paramGetJasperParameterRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetJasperParameterResponse|bool
      */
-    public function getJasperParameter(\Pggns\MidocoApi\Api\Mis\StructType\GetJasperParameterRequest $paramGetJasperParameterRequest)
+    public function getJasperParameter(\Pggns\MidocoApi\Mis\StructType\GetJasperParameterRequest $paramGetJasperParameterRequest)
     {
         try {
             $this->setResult($resultGetJasperParameter = $this->getSoapClient()->__soapCall('getJasperParameter', [
@@ -355,15 +355,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetJasperReportParamRequest $paramGetJasperReportParamRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetJasperReportParamResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetJasperReportParamRequest $paramGetJasperReportParamRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetJasperReportParamResponse|bool
      */
-    public function getJasperReportParam(\Pggns\MidocoApi\Api\Mis\StructType\GetJasperReportParamRequest $paramGetJasperReportParamRequest)
+    public function getJasperReportParam(\Pggns\MidocoApi\Mis\StructType\GetJasperReportParamRequest $paramGetJasperReportParamRequest)
     {
         try {
             $this->setResult($resultGetJasperReportParam = $this->getSoapClient()->__soapCall('getJasperReportParam', [
@@ -382,15 +382,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperReportsRequest $paramGetAllJasperReportsRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperReportsResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetAllJasperReportsRequest $paramGetAllJasperReportsRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAllJasperReportsResponse|bool
      */
-    public function getAllJasperReports(\Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperReportsRequest $paramGetAllJasperReportsRequest)
+    public function getAllJasperReports(\Pggns\MidocoApi\Mis\StructType\GetAllJasperReportsRequest $paramGetAllJasperReportsRequest)
     {
         try {
             $this->setResult($resultGetAllJasperReports = $this->getSoapClient()->__soapCall('getAllJasperReports', [
@@ -409,15 +409,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperParametersRequest $paramGetAllJasperParametersRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperParametersResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetAllJasperParametersRequest $paramGetAllJasperParametersRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAllJasperParametersResponse|bool
      */
-    public function getAllJasperParameters(\Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperParametersRequest $paramGetAllJasperParametersRequest)
+    public function getAllJasperParameters(\Pggns\MidocoApi\Mis\StructType\GetAllJasperParametersRequest $paramGetAllJasperParametersRequest)
     {
         try {
             $this->setResult($resultGetAllJasperParameters = $this->getSoapClient()->__soapCall('getAllJasperParameters', [
@@ -436,15 +436,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetValuesFromTableRequest $paramGetValuesFromTableRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetValuesFromTableResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetValuesFromTableRequest $paramGetValuesFromTableRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetValuesFromTableResponse|bool
      */
-    public function getValuesFromTable(\Pggns\MidocoApi\Api\Mis\StructType\GetValuesFromTableRequest $paramGetValuesFromTableRequest)
+    public function getValuesFromTable(\Pggns\MidocoApi\Mis\StructType\GetValuesFromTableRequest $paramGetValuesFromTableRequest)
     {
         try {
             $this->setResult($resultGetValuesFromTable = $this->getSoapClient()->__soapCall('getValuesFromTable', [
@@ -463,15 +463,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetAssignedJasperReportParametersRequest $paramGetAssignedJasperReportParametersRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAssignedJasperReportParametersResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetAssignedJasperReportParametersRequest $paramGetAssignedJasperReportParametersRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAssignedJasperReportParametersResponse|bool
      */
-    public function getAssignedJasperReportParameters(\Pggns\MidocoApi\Api\Mis\StructType\GetAssignedJasperReportParametersRequest $paramGetAssignedJasperReportParametersRequest)
+    public function getAssignedJasperReportParameters(\Pggns\MidocoApi\Mis\StructType\GetAssignedJasperReportParametersRequest $paramGetAssignedJasperReportParametersRequest)
     {
         try {
             $this->setResult($resultGetAssignedJasperReportParameters = $this->getSoapClient()->__soapCall('getAssignedJasperReportParameters', [
@@ -490,15 +490,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SearchAssignedSavedReportsRequest $paramSearchAssignedSavedReportsRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchAssignedSavedReportsResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\SearchAssignedSavedReportsRequest $paramSearchAssignedSavedReportsRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchAssignedSavedReportsResponse|bool
      */
-    public function getAssignedSavedReport(\Pggns\MidocoApi\Api\Mis\StructType\SearchAssignedSavedReportsRequest $paramSearchAssignedSavedReportsRequest)
+    public function getAssignedSavedReport(\Pggns\MidocoApi\Mis\StructType\SearchAssignedSavedReportsRequest $paramSearchAssignedSavedReportsRequest)
     {
         try {
             $this->setResult($resultGetAssignedSavedReport = $this->getSoapClient()->__soapCall('getAssignedSavedReport', [
@@ -517,15 +517,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetSavedReportRequest $paramGetSavedReportRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetSavedReportResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetSavedReportRequest $paramGetSavedReportRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetSavedReportResponse|bool
      */
-    public function getSavedReport(\Pggns\MidocoApi\Api\Mis\StructType\GetSavedReportRequest $paramGetSavedReportRequest)
+    public function getSavedReport(\Pggns\MidocoApi\Mis\StructType\GetSavedReportRequest $paramGetSavedReportRequest)
     {
         try {
             $this->setResult($resultGetSavedReport = $this->getSoapClient()->__soapCall('getSavedReport', [
@@ -544,15 +544,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetAssignedReportForRoleRequest $paramGetAssignedReportForRoleRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAssignedReportForRoleResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetAssignedReportForRoleRequest $paramGetAssignedReportForRoleRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAssignedReportForRoleResponse|bool
      */
-    public function getAssignedReportForRole(\Pggns\MidocoApi\Api\Mis\StructType\GetAssignedReportForRoleRequest $paramGetAssignedReportForRoleRequest)
+    public function getAssignedReportForRole(\Pggns\MidocoApi\Mis\StructType\GetAssignedReportForRoleRequest $paramGetAssignedReportForRoleRequest)
     {
         try {
             $this->setResult($resultGetAssignedReportForRole = $this->getSoapClient()->__soapCall('getAssignedReportForRole', [
@@ -571,15 +571,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperReportRequest $paramGetAllJasperReportRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperReportResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetAllJasperReportRequest $paramGetAllJasperReportRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAllJasperReportResponse|bool
      */
-    public function getAllJasperReport(\Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperReportRequest $paramGetAllJasperReportRequest)
+    public function getAllJasperReport(\Pggns\MidocoApi\Mis\StructType\GetAllJasperReportRequest $paramGetAllJasperReportRequest)
     {
         try {
             $this->setResult($resultGetAllJasperReport = $this->getSoapClient()->__soapCall('getAllJasperReport', [
@@ -598,15 +598,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetReportWithSameParamRequest $paramGetReportWithSameParamRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetReportWithSameParamResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetReportWithSameParamRequest $paramGetReportWithSameParamRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetReportWithSameParamResponse|bool
      */
-    public function getReportIdenticalParamList(\Pggns\MidocoApi\Api\Mis\StructType\GetReportWithSameParamRequest $paramGetReportWithSameParamRequest)
+    public function getReportIdenticalParamList(\Pggns\MidocoApi\Mis\StructType\GetReportWithSameParamRequest $paramGetReportWithSameParamRequest)
     {
         try {
             $this->setResult($resultGetReportIdenticalParamList = $this->getSoapClient()->__soapCall('getReportIdenticalParamList', [
@@ -625,15 +625,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoExportListRequest $paramGetMidocoExportListRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoExportListResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetMidocoExportListRequest $paramGetMidocoExportListRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoExportListResponse|bool
      */
-    public function getMidocoExportList(\Pggns\MidocoApi\Api\Mis\StructType\GetMidocoExportListRequest $paramGetMidocoExportListRequest)
+    public function getMidocoExportList(\Pggns\MidocoApi\Mis\StructType\GetMidocoExportListRequest $paramGetMidocoExportListRequest)
     {
         try {
             $this->setResult($resultGetMidocoExportList = $this->getSoapClient()->__soapCall('getMidocoExportList', [
@@ -652,15 +652,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetCriteriaFieldsForDisplayRequest $paramGetCriteriaFieldsForDisplayRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCriteriaFieldsForDisplayResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetCriteriaFieldsForDisplayRequest $paramGetCriteriaFieldsForDisplayRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCriteriaFieldsForDisplayResponse|bool
      */
-    public function getCriteriaFieldsForDisplay(\Pggns\MidocoApi\Api\Mis\StructType\GetCriteriaFieldsForDisplayRequest $paramGetCriteriaFieldsForDisplayRequest)
+    public function getCriteriaFieldsForDisplay(\Pggns\MidocoApi\Mis\StructType\GetCriteriaFieldsForDisplayRequest $paramGetCriteriaFieldsForDisplayRequest)
     {
         try {
             $this->setResult($resultGetCriteriaFieldsForDisplay = $this->getSoapClient()->__soapCall('getCriteriaFieldsForDisplay', [
@@ -679,15 +679,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFieldValuesRequest $paramGetCampaignFieldValuesRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFieldValuesResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetCampaignFieldValuesRequest $paramGetCampaignFieldValuesRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignFieldValuesResponse|bool
      */
-    public function getCampaignFieldValues(\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFieldValuesRequest $paramGetCampaignFieldValuesRequest)
+    public function getCampaignFieldValues(\Pggns\MidocoApi\Mis\StructType\GetCampaignFieldValuesRequest $paramGetCampaignFieldValuesRequest)
     {
         try {
             $this->setResult($resultGetCampaignFieldValues = $this->getSoapClient()->__soapCall('getCampaignFieldValues', [
@@ -706,15 +706,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignOrgUnitsRequest $paramGetCampaignOrgUnitsRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignOrgUnitsResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetCampaignOrgUnitsRequest $paramGetCampaignOrgUnitsRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignOrgUnitsResponse|bool
      */
-    public function getCampaignOrgUnits(\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignOrgUnitsRequest $paramGetCampaignOrgUnitsRequest)
+    public function getCampaignOrgUnits(\Pggns\MidocoApi\Mis\StructType\GetCampaignOrgUnitsRequest $paramGetCampaignOrgUnitsRequest)
     {
         try {
             $this->setResult($resultGetCampaignOrgUnits = $this->getSoapClient()->__soapCall('getCampaignOrgUnits', [
@@ -733,15 +733,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetMisCampaignDocumentsRequest $paramGetMisCampaignDocumentsRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMisCampaignDocumentsResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetMisCampaignDocumentsRequest $paramGetMisCampaignDocumentsRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMisCampaignDocumentsResponse|bool
      */
-    public function getMisCampaignDocuments(\Pggns\MidocoApi\Api\Mis\StructType\GetMisCampaignDocumentsRequest $paramGetMisCampaignDocumentsRequest)
+    public function getMisCampaignDocuments(\Pggns\MidocoApi\Mis\StructType\GetMisCampaignDocumentsRequest $paramGetMisCampaignDocumentsRequest)
     {
         try {
             $this->setResult($resultGetMisCampaignDocuments = $this->getSoapClient()->__soapCall('getMisCampaignDocuments', [
@@ -761,15 +761,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetEstimateMisCampaignTemplateResultsRequest $paramGetEstimateMisCampaignTemplateResultsRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetEstimateMisCampaignTemplateResultsResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetEstimateMisCampaignTemplateResultsRequest $paramGetEstimateMisCampaignTemplateResultsRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetEstimateMisCampaignTemplateResultsResponse|bool
      */
-    public function getEstimateMisCampaignTemplateResults(\Pggns\MidocoApi\Api\Mis\StructType\GetEstimateMisCampaignTemplateResultsRequest $paramGetEstimateMisCampaignTemplateResultsRequest)
+    public function getEstimateMisCampaignTemplateResults(\Pggns\MidocoApi\Mis\StructType\GetEstimateMisCampaignTemplateResultsRequest $paramGetEstimateMisCampaignTemplateResultsRequest)
     {
         try {
             $this->setResult($resultGetEstimateMisCampaignTemplateResults = $this->getSoapClient()->__soapCall('getEstimateMisCampaignTemplateResults', [
@@ -788,15 +788,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoMisCampaignOrgUnitsRequest $paramGetMidocoMisCampaignOrgUnitsRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoMisCampaignOrgUnitsResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetMidocoMisCampaignOrgUnitsRequest $paramGetMidocoMisCampaignOrgUnitsRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoMisCampaignOrgUnitsResponse|bool
      */
-    public function getMidocoMisCampaignOrgUnits(\Pggns\MidocoApi\Api\Mis\StructType\GetMidocoMisCampaignOrgUnitsRequest $paramGetMidocoMisCampaignOrgUnitsRequest)
+    public function getMidocoMisCampaignOrgUnits(\Pggns\MidocoApi\Mis\StructType\GetMidocoMisCampaignOrgUnitsRequest $paramGetMidocoMisCampaignOrgUnitsRequest)
     {
         try {
             $this->setResult($resultGetMidocoMisCampaignOrgUnits = $this->getSoapClient()->__soapCall('getMidocoMisCampaignOrgUnits', [
@@ -815,15 +815,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetExecutedCampaignsForTemplateRequest $paramGetExecutedCampaignsForTemplateRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetExecutedCampaignsForTemplateResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetExecutedCampaignsForTemplateRequest $paramGetExecutedCampaignsForTemplateRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetExecutedCampaignsForTemplateResponse|bool
      */
-    public function getExecutedCampaignsForTemplate(\Pggns\MidocoApi\Api\Mis\StructType\GetExecutedCampaignsForTemplateRequest $paramGetExecutedCampaignsForTemplateRequest)
+    public function getExecutedCampaignsForTemplate(\Pggns\MidocoApi\Mis\StructType\GetExecutedCampaignsForTemplateRequest $paramGetExecutedCampaignsForTemplateRequest)
     {
         try {
             $this->setResult($resultGetExecutedCampaignsForTemplate = $this->getSoapClient()->__soapCall('getExecutedCampaignsForTemplate', [
@@ -842,15 +842,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignResultsInfoRequest $paramGetCampaignResultsInfoRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignResultsInfoResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\GetCampaignResultsInfoRequest $paramGetCampaignResultsInfoRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignResultsInfoResponse|bool
      */
-    public function getCampaignResultsInfo(\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignResultsInfoRequest $paramGetCampaignResultsInfoRequest)
+    public function getCampaignResultsInfo(\Pggns\MidocoApi\Mis\StructType\GetCampaignResultsInfoRequest $paramGetCampaignResultsInfoRequest)
     {
         try {
             $this->setResult($resultGetCampaignResultsInfo = $this->getSoapClient()->__soapCall('getCampaignResultsInfo', [
@@ -867,7 +867,7 @@ class Get extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperParametersResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperReportResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetAllJasperReportsResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetAssignedJasperReportParametersResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetAssignedReportForRoleResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetAvailableCampaignFieldsResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignDefinitionResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFieldValuesResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFirstPageWSResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignLastPageWSResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignNextPageWSResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignOrgUnitsResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignPrevPageWSResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignResultsInfoResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetCampaignWSResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetCriteriaFieldsForDisplayResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetEstimateMisCampaignTemplateResultsResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetExecutedCampaignsForTemplateResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetJasperParameterResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetJasperReportParamResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetJasperReportResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetMidocoExportListResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetMidocoMisCampaignOrgUnitsResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetMisCampaignDocumentsResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetReportWithSameParamResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetSavedReportResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetSqlMappingInfoResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetTextTemplateResponse|\Pggns\MidocoApi\Api\Mis\StructType\GetValuesFromTableResponse|\Pggns\MidocoApi\Api\Mis\StructType\SearchAssignedSavedReportsResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAllJasperParametersResponse|\Pggns\MidocoApi\Mis\StructType\GetAllJasperReportResponse|\Pggns\MidocoApi\Mis\StructType\GetAllJasperReportsResponse|\Pggns\MidocoApi\Mis\StructType\GetAssignedJasperReportParametersResponse|\Pggns\MidocoApi\Mis\StructType\GetAssignedReportForRoleResponse|\Pggns\MidocoApi\Mis\StructType\GetAvailableCampaignFieldsResponse|\Pggns\MidocoApi\Mis\StructType\GetCampaignDefinitionResponse|\Pggns\MidocoApi\Mis\StructType\GetCampaignFieldValuesResponse|\Pggns\MidocoApi\Mis\StructType\GetCampaignFirstPageWSResponse|\Pggns\MidocoApi\Mis\StructType\GetCampaignLastPageWSResponse|\Pggns\MidocoApi\Mis\StructType\GetCampaignNextPageWSResponse|\Pggns\MidocoApi\Mis\StructType\GetCampaignOrgUnitsResponse|\Pggns\MidocoApi\Mis\StructType\GetCampaignPrevPageWSResponse|\Pggns\MidocoApi\Mis\StructType\GetCampaignResultsInfoResponse|\Pggns\MidocoApi\Mis\StructType\GetCampaignWSResponse|\Pggns\MidocoApi\Mis\StructType\GetCriteriaFieldsForDisplayResponse|\Pggns\MidocoApi\Mis\StructType\GetEstimateMisCampaignTemplateResultsResponse|\Pggns\MidocoApi\Mis\StructType\GetExecutedCampaignsForTemplateResponse|\Pggns\MidocoApi\Mis\StructType\GetJasperParameterResponse|\Pggns\MidocoApi\Mis\StructType\GetJasperReportParamResponse|\Pggns\MidocoApi\Mis\StructType\GetJasperReportResponse|\Pggns\MidocoApi\Mis\StructType\GetMidocoExportListResponse|\Pggns\MidocoApi\Mis\StructType\GetMidocoMisCampaignOrgUnitsResponse|\Pggns\MidocoApi\Mis\StructType\GetMisCampaignDocumentsResponse|\Pggns\MidocoApi\Mis\StructType\GetReportWithSameParamResponse|\Pggns\MidocoApi\Mis\StructType\GetSavedReportResponse|\Pggns\MidocoApi\Mis\StructType\GetSqlMappingInfoResponse|\Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerResponse|\Pggns\MidocoApi\Mis\StructType\GetTextTemplateResponse|\Pggns\MidocoApi\Mis\StructType\GetValuesFromTableResponse|\Pggns\MidocoApi\Mis\StructType\SearchAssignedSavedReportsResponse
      */
     public function getResult()
     {

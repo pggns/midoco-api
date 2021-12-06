@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class ExecuteVatDivisionOutgoingRuleRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: ordersd:MidocoVatCode
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoVatCode[]
      */
     protected ?array $MidocoVatCode = null;
     /**
      * The MidocoSellItem
      * Meta information extracted from the WSDL
      * - ref: MidocoSellItem
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $MidocoSellItem = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemType $MidocoSellItem = null;
     /**
      * The MidocoOrder
      * Meta information extracted from the WSDL
      * - ref: MidocoOrder
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $MidocoOrder = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $MidocoOrder = null;
     /**
      * Constructor method for ExecuteVatDivisionOutgoingRuleRequest
      * @uses ExecuteVatDivisionOutgoingRuleRequest::setMidocoVatCode()
      * @uses ExecuteVatDivisionOutgoingRuleRequest::setMidocoSellItem()
      * @uses ExecuteVatDivisionOutgoingRuleRequest::setMidocoOrder()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode[] $midocoVatCode
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $midocoSellItem
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVatCode[] $midocoVatCode
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemType $midocoSellItem
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
      */
-    public function __construct(?array $midocoVatCode = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $midocoSellItem = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null)
+    public function __construct(?array $midocoVatCode = null, ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemType $midocoSellItem = null, ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null)
     {
         $this
             ->setMidocoVatCode($midocoVatCode)
@@ -54,7 +54,7 @@ class ExecuteVatDivisionOutgoingRuleRequest extends AbstractStructBase
     }
     /**
      * Get MidocoVatCode value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVatCode[]
      */
     public function getMidocoVatCode(): ?array
     {
@@ -75,12 +75,12 @@ class ExecuteVatDivisionOutgoingRuleRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $executeVatDivisionOutgoingRuleRequestMidocoVatCodeItem) {
             // validation for constraint: itemType
-            if (!$executeVatDivisionOutgoingRuleRequestMidocoVatCodeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode) {
+            if (!$executeVatDivisionOutgoingRuleRequestMidocoVatCodeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoVatCode) {
                 $invalidValues[] = is_object($executeVatDivisionOutgoingRuleRequestMidocoVatCodeItem) ? get_class($executeVatDivisionOutgoingRuleRequestMidocoVatCodeItem) : sprintf('%s(%s)', gettype($executeVatDivisionOutgoingRuleRequestMidocoVatCodeItem), var_export($executeVatDivisionOutgoingRuleRequestMidocoVatCodeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatCode property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatCode property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoVatCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -89,8 +89,8 @@ class ExecuteVatDivisionOutgoingRuleRequest extends AbstractStructBase
     /**
      * Set MidocoVatCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode[] $midocoVatCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteVatDivisionOutgoingRuleRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVatCode[] $midocoVatCode
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteVatDivisionOutgoingRuleRequest
      */
     public function setMidocoVatCode(?array $midocoVatCode = null): self
     {
@@ -105,14 +105,14 @@ class ExecuteVatDivisionOutgoingRuleRequest extends AbstractStructBase
     /**
      * Add item to MidocoVatCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteVatDivisionOutgoingRuleRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVatCode $item
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteVatDivisionOutgoingRuleRequest
      */
-    public function addToMidocoVatCode(\Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode $item): self
+    public function addToMidocoVatCode(\Pggns\MidocoApi\Order\StructType\MidocoVatCode $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatCode property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoVatCode) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatCode property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoVatCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatCode[] = $item;
         
@@ -120,18 +120,18 @@ class ExecuteVatDivisionOutgoingRuleRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSellItem value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemType|null
      */
-    public function getMidocoSellItem(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType
+    public function getMidocoSellItem(): ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemType
     {
         return $this->MidocoSellItem;
     }
     /**
      * Set MidocoSellItem value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $midocoSellItem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteVatDivisionOutgoingRuleRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemType $midocoSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteVatDivisionOutgoingRuleRequest
      */
-    public function setMidocoSellItem(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $midocoSellItem = null): self
+    public function setMidocoSellItem(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemType $midocoSellItem = null): self
     {
         $this->MidocoSellItem = $midocoSellItem;
         
@@ -139,18 +139,18 @@ class ExecuteVatDivisionOutgoingRuleRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrder value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    public function getMidocoOrder(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType
+    public function getMidocoOrder(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType
     {
         return $this->MidocoOrder;
     }
     /**
      * Set MidocoOrder value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteVatDivisionOutgoingRuleRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteVatDivisionOutgoingRuleRequest
      */
-    public function setMidocoOrder(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null): self
+    public function setMidocoOrder(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null): self
     {
         $this->MidocoOrder = $midocoOrder;
         

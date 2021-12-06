@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoGroupAdviser extends GroupAdviserDTO
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoGroupAdviser
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoGroupAdviser
      */
     public function setName(?string $name = null): self
     {

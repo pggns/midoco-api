@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoGetCompanyCustomer
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGetCompanyCustomerType[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType[]
      */
     protected ?array $MidocoGetCompanyCustomer = null;
     /**
@@ -31,7 +31,7 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
      * Constructor method for GetAllCompanyCustomersResponse
      * @uses GetAllCompanyCustomersResponse::setMidocoGetCompanyCustomer()
      * @uses GetAllCompanyCustomersResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGetCompanyCustomerType[] $midocoGetCompanyCustomer
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType[] $midocoGetCompanyCustomer
      * @param int $noOfResults
      */
     public function __construct(?array $midocoGetCompanyCustomer = null, ?int $noOfResults = null)
@@ -42,7 +42,7 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
     }
     /**
      * Get MidocoGetCompanyCustomer value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGetCompanyCustomerType[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType[]
      */
     public function getMidocoGetCompanyCustomer(): ?array
     {
@@ -63,12 +63,12 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem) {
             // validation for constraint: itemType
-            if (!$getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGetCompanyCustomerType) {
+            if (!$getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType) {
                 $invalidValues[] = is_object($getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem) ? get_class($getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem) : sprintf('%s(%s)', gettype($getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem), var_export($getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoGetCompanyCustomer property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGetCompanyCustomerType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoGetCompanyCustomer property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,8 +77,8 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
     /**
      * Set MidocoGetCompanyCustomer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGetCompanyCustomerType[] $midocoGetCompanyCustomer
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAllCompanyCustomersResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType[] $midocoGetCompanyCustomer
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllCompanyCustomersResponse
      */
     public function setMidocoGetCompanyCustomer(?array $midocoGetCompanyCustomer = null): self
     {
@@ -93,14 +93,14 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
     /**
      * Add item to MidocoGetCompanyCustomer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGetCompanyCustomerType $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAllCompanyCustomersResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllCompanyCustomersResponse
      */
-    public function addToMidocoGetCompanyCustomer(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGetCompanyCustomerType $item): self
+    public function addToMidocoGetCompanyCustomer(\Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGetCompanyCustomerType) {
-            throw new InvalidArgumentException(sprintf('The MidocoGetCompanyCustomer property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGetCompanyCustomerType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType) {
+            throw new InvalidArgumentException(sprintf('The MidocoGetCompanyCustomer property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoGetCompanyCustomer[] = $item;
         
@@ -117,7 +117,7 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAllCompanyCustomersResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllCompanyCustomersResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

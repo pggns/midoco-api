@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class CreateKSichVExportResponse extends AbstractStructBase
      * Set MidocoTssExport value
      * @throws InvalidArgumentException
      * @param string[] $midocoTssExport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateKSichVExportResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateKSichVExportResponse
      */
     public function setMidocoTssExport(?array $midocoTssExport = null): self
     {
@@ -85,7 +85,7 @@ class CreateKSichVExportResponse extends AbstractStructBase
      * Add item to MidocoTssExport value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateKSichVExportResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateKSichVExportResponse
      */
     public function addToMidocoTssExport(string $item): self
     {

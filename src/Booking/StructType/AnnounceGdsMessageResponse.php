@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class AnnounceGdsMessageResponse extends AbstractStructBase
     /**
      * Set OrderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AnnounceGdsMessageResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\AnnounceGdsMessageResponse
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -74,7 +74,7 @@ class AnnounceGdsMessageResponse extends AbstractStructBase
     /**
      * Set OrderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AnnounceGdsMessageResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\AnnounceGdsMessageResponse
      */
     public function setOrderNo(?int $orderNo = null): self
     {

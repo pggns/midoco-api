@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -89,7 +89,7 @@ class PrintAdviceRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -112,7 +112,7 @@ class PrintAdviceRequest extends AbstractStructBase
     /**
      * Set templateName value
      * @param string $templateName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceRequest
      */
     public function setTemplateName(?string $templateName = null): self
     {
@@ -135,7 +135,7 @@ class PrintAdviceRequest extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceRequest
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -158,7 +158,7 @@ class PrintAdviceRequest extends AbstractStructBase
     /**
      * Set docType value
      * @param string $docType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceRequest
      */
     public function setDocType(?string $docType = null): self
     {
@@ -181,7 +181,7 @@ class PrintAdviceRequest extends AbstractStructBase
     /**
      * Set isCollective value
      * @param bool $isCollective
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceRequest
      */
     public function setIsCollective(?bool $isCollective = null): self
     {
@@ -204,7 +204,7 @@ class PrintAdviceRequest extends AbstractStructBase
     /**
      * Set isVoid value
      * @param bool $isVoid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceRequest
      */
     public function setIsVoid(?bool $isVoid = false): self
     {
@@ -227,7 +227,7 @@ class PrintAdviceRequest extends AbstractStructBase
     /**
      * Set recipientCustomerId value
      * @param int $recipientCustomerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceRequest
      */
     public function setRecipientCustomerId(?int $recipientCustomerId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,33 +15,33 @@ class SaveUnitNoticeRequest extends AbstractStructBase
 {
     /**
      * The MidocoOrgunitNotice
-     * @var \Pggns\MidocoApi\Api\Order\StructType\UnitNoticeDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\UnitNoticeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\UnitNoticeDTO $MidocoOrgunitNotice = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\UnitNoticeDTO $MidocoOrgunitNotice = null;
     /**
      * Constructor method for SaveUnitNoticeRequest
      * @uses SaveUnitNoticeRequest::setMidocoOrgunitNotice()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UnitNoticeDTO $midocoOrgunitNotice
+     * @param \Pggns\MidocoApi\Order\StructType\UnitNoticeDTO $midocoOrgunitNotice
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\UnitNoticeDTO $midocoOrgunitNotice = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\UnitNoticeDTO $midocoOrgunitNotice = null)
     {
         $this
             ->setMidocoOrgunitNotice($midocoOrgunitNotice);
     }
     /**
      * Get MidocoOrgunitNotice value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UnitNoticeDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\UnitNoticeDTO|null
      */
-    public function getMidocoOrgunitNotice(): ?\Pggns\MidocoApi\Api\Order\StructType\UnitNoticeDTO
+    public function getMidocoOrgunitNotice(): ?\Pggns\MidocoApi\Order\StructType\UnitNoticeDTO
     {
         return $this->MidocoOrgunitNotice;
     }
     /**
      * Set MidocoOrgunitNotice value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UnitNoticeDTO $midocoOrgunitNotice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveUnitNoticeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\UnitNoticeDTO $midocoOrgunitNotice
+     * @return \Pggns\MidocoApi\Order\StructType\SaveUnitNoticeRequest
      */
-    public function setMidocoOrgunitNotice(?\Pggns\MidocoApi\Api\Order\StructType\UnitNoticeDTO $midocoOrgunitNotice = null): self
+    public function setMidocoOrgunitNotice(?\Pggns\MidocoApi\Order\StructType\UnitNoticeDTO $midocoOrgunitNotice = null): self
     {
         $this->MidocoOrgunitNotice = $midocoOrgunitNotice;
         

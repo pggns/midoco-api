@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class MidocoBillingLayout extends BillingLayoutDTO
      * The MidocoBillingDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoBillingDocument
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDocument|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
     /**
      * The typeDescription
      * @var string|null
@@ -29,10 +29,10 @@ class MidocoBillingLayout extends BillingLayoutDTO
      * Constructor method for MidocoBillingLayout
      * @uses MidocoBillingLayout::setMidocoBillingDocument()
      * @uses MidocoBillingLayout::setTypeDescription()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDocument $midocoBillingDocument
      * @param string $typeDescription
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?string $typeDescription = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?string $typeDescription = null)
     {
         $this
             ->setMidocoBillingDocument($midocoBillingDocument)
@@ -40,18 +40,18 @@ class MidocoBillingLayout extends BillingLayoutDTO
     }
     /**
      * Get MidocoBillingDocument value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDocument|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDocument|null
      */
-    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDocument
+    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDocument
     {
         return $this->MidocoBillingDocument;
     }
     /**
      * Set MidocoBillingDocument value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDocument $midocoBillingDocument
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingLayout
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingLayout
      */
-    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
+    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
     {
         $this->MidocoBillingDocument = $midocoBillingDocument;
         
@@ -68,7 +68,7 @@ class MidocoBillingLayout extends BillingLayoutDTO
     /**
      * Set typeDescription value
      * @param string $typeDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingLayout
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingLayout
      */
     public function setTypeDescription(?string $typeDescription = null): self
     {

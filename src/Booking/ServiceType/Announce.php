@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\ServiceType;
+namespace Pggns\MidocoApi\Booking\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Announce extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Booking\ServiceType\Announce
+     * @return \Pggns\MidocoApi\Booking\ServiceType\Announce
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Booking\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Booking\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Announce extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Booking\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Booking\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AnnounceBookingMessageRequest $paramAnnounceBookingMessageRequest
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AnnounceBookingMessageResponse|bool
+     * @param \Pggns\MidocoApi\Booking\StructType\AnnounceBookingMessageRequest $paramAnnounceBookingMessageRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\AnnounceBookingMessageResponse|bool
      */
-    public function announceBookingMessage(\Pggns\MidocoApi\Api\Booking\StructType\AnnounceBookingMessageRequest $paramAnnounceBookingMessageRequest)
+    public function announceBookingMessage(\Pggns\MidocoApi\Booking\StructType\AnnounceBookingMessageRequest $paramAnnounceBookingMessageRequest)
     {
         try {
             $this->setResult($resultAnnounceBookingMessage = $this->getSoapClient()->__soapCall('announceBookingMessage', [
@@ -58,15 +58,15 @@ class Announce extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Booking\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Booking\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AnnounceBookingMessageNormRequest $paramAnnounceBookingMessageNormRequest
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AnnounceBookingMessageNormResponse|bool
+     * @param \Pggns\MidocoApi\Booking\StructType\AnnounceBookingMessageNormRequest $paramAnnounceBookingMessageNormRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\AnnounceBookingMessageNormResponse|bool
      */
-    public function announceBookingMessageNorm(\Pggns\MidocoApi\Api\Booking\StructType\AnnounceBookingMessageNormRequest $paramAnnounceBookingMessageNormRequest)
+    public function announceBookingMessageNorm(\Pggns\MidocoApi\Booking\StructType\AnnounceBookingMessageNormRequest $paramAnnounceBookingMessageNormRequest)
     {
         try {
             $this->setResult($resultAnnounceBookingMessageNorm = $this->getSoapClient()->__soapCall('announceBookingMessageNorm', [
@@ -85,15 +85,15 @@ class Announce extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Booking\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Booking\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AnnounceAgencySaleMessageRequest $paramAnnounceAgencySaleMessageRequest
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AnnounceAgencySaleMessageResponse|bool
+     * @param \Pggns\MidocoApi\Booking\StructType\AnnounceAgencySaleMessageRequest $paramAnnounceAgencySaleMessageRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\AnnounceAgencySaleMessageResponse|bool
      */
-    public function announceAgencySaleMessage(\Pggns\MidocoApi\Api\Booking\StructType\AnnounceAgencySaleMessageRequest $paramAnnounceAgencySaleMessageRequest)
+    public function announceAgencySaleMessage(\Pggns\MidocoApi\Booking\StructType\AnnounceAgencySaleMessageRequest $paramAnnounceAgencySaleMessageRequest)
     {
         try {
             $this->setResult($resultAnnounceAgencySaleMessage = $this->getSoapClient()->__soapCall('announceAgencySaleMessage', [
@@ -112,15 +112,15 @@ class Announce extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Booking\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Booking\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AnnounceExternalPaymentRequest $paramAnnounceExternalPaymentRequest
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AnnounceExternalPaymentResponse|bool
+     * @param \Pggns\MidocoApi\Booking\StructType\AnnounceExternalPaymentRequest $paramAnnounceExternalPaymentRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\AnnounceExternalPaymentResponse|bool
      */
-    public function announceExternalPayment(\Pggns\MidocoApi\Api\Booking\StructType\AnnounceExternalPaymentRequest $paramAnnounceExternalPaymentRequest)
+    public function announceExternalPayment(\Pggns\MidocoApi\Booking\StructType\AnnounceExternalPaymentRequest $paramAnnounceExternalPaymentRequest)
     {
         try {
             $this->setResult($resultAnnounceExternalPayment = $this->getSoapClient()->__soapCall('announceExternalPayment', [
@@ -137,7 +137,7 @@ class Announce extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AnnounceAgencySaleMessageResponse|\Pggns\MidocoApi\Api\Booking\StructType\AnnounceBookingMessageNormResponse|\Pggns\MidocoApi\Api\Booking\StructType\AnnounceBookingMessageResponse|\Pggns\MidocoApi\Api\Booking\StructType\AnnounceExternalPaymentResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\AnnounceAgencySaleMessageResponse|\Pggns\MidocoApi\Booking\StructType\AnnounceBookingMessageNormResponse|\Pggns\MidocoApi\Booking\StructType\AnnounceBookingMessageResponse|\Pggns\MidocoApi\Booking\StructType\AnnounceExternalPaymentResponse
      */
     public function getResult()
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -182,7 +182,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set bookingText value
      * @param string $bookingText
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setBookingText(?string $bookingText = null): self
     {
@@ -205,7 +205,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setComment(?string $comment = null): self
     {
@@ -228,7 +228,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set commentDatetime value
      * @param string $commentDatetime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setCommentDatetime(?string $commentDatetime = null): self
     {
@@ -251,7 +251,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set commentUser value
      * @param int $commentUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setCommentUser(?int $commentUser = null): self
     {
@@ -274,7 +274,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -297,7 +297,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set entryId value
      * @param string $entryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setEntryId(?string $entryId = null): self
     {
@@ -320,7 +320,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set historyId value
      * @param int $historyId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setHistoryId(?int $historyId = null): self
     {
@@ -343,7 +343,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set invoicedAmount value
      * @param float $invoicedAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setInvoicedAmount(?float $invoicedAmount = null): self
     {
@@ -366,7 +366,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set journalId value
      * @param int $journalId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setJournalId(?int $journalId = null): self
     {
@@ -389,7 +389,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -412,7 +412,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set originalInvoicedAmount value
      * @param float $originalInvoicedAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setOriginalInvoicedAmount(?float $originalInvoicedAmount = null): self
     {
@@ -435,7 +435,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set originalPaidAmount value
      * @param float $originalPaidAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setOriginalPaidAmount(?float $originalPaidAmount = null): self
     {
@@ -458,7 +458,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -481,7 +481,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -504,7 +504,7 @@ class EntryHistoryDTO extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryHistoryDTO
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {

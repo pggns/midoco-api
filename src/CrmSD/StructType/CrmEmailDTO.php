@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class CrmEmailDTO extends AbstractStructBase
     /**
      * Set contactId value
      * @param int $contactId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmEmailDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmEmailDTO
      */
     public function setContactId(?int $contactId = null): self
     {
@@ -150,7 +150,7 @@ class CrmEmailDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmEmailDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmEmailDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -173,7 +173,7 @@ class CrmEmailDTO extends AbstractStructBase
     /**
      * Set externalMailid value
      * @param string $externalMailid
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmEmailDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmEmailDTO
      */
     public function setExternalMailid(?string $externalMailid = null): self
     {
@@ -196,7 +196,7 @@ class CrmEmailDTO extends AbstractStructBase
     /**
      * Set externalParameter value
      * @param string $externalParameter
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmEmailDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmEmailDTO
      */
     public function setExternalParameter(?string $externalParameter = null): self
     {
@@ -219,7 +219,7 @@ class CrmEmailDTO extends AbstractStructBase
     /**
      * Set externalType value
      * @param string $externalType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmEmailDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmEmailDTO
      */
     public function setExternalType(?string $externalType = null): self
     {
@@ -242,7 +242,7 @@ class CrmEmailDTO extends AbstractStructBase
     /**
      * Set mailId value
      * @param int $mailId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmEmailDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmEmailDTO
      */
     public function setMailId(?int $mailId = null): self
     {
@@ -265,7 +265,7 @@ class CrmEmailDTO extends AbstractStructBase
     /**
      * Set receiveTime value
      * @param string $receiveTime
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmEmailDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmEmailDTO
      */
     public function setReceiveTime(?string $receiveTime = null): self
     {
@@ -288,7 +288,7 @@ class CrmEmailDTO extends AbstractStructBase
     /**
      * Set recipientEmail value
      * @param string $recipientEmail
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmEmailDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmEmailDTO
      */
     public function setRecipientEmail(?string $recipientEmail = null): self
     {
@@ -311,7 +311,7 @@ class CrmEmailDTO extends AbstractStructBase
     /**
      * Set recipientName value
      * @param string $recipientName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmEmailDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmEmailDTO
      */
     public function setRecipientName(?string $recipientName = null): self
     {
@@ -334,7 +334,7 @@ class CrmEmailDTO extends AbstractStructBase
     /**
      * Set senderEmail value
      * @param string $senderEmail
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmEmailDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmEmailDTO
      */
     public function setSenderEmail(?string $senderEmail = null): self
     {
@@ -357,7 +357,7 @@ class CrmEmailDTO extends AbstractStructBase
     /**
      * Set senderName value
      * @param string $senderName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmEmailDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmEmailDTO
      */
     public function setSenderName(?string $senderName = null): self
     {
@@ -380,7 +380,7 @@ class CrmEmailDTO extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmEmailDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmEmailDTO
      */
     public function setSubject(?string $subject = null): self
     {

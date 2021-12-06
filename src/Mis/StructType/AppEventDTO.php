@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class AppEventDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AppEventDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AppEventDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -70,7 +70,7 @@ class AppEventDTO extends AbstractStructBase
     /**
      * Set eventId value
      * @param string $eventId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AppEventDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AppEventDTO
      */
     public function setEventId(?string $eventId = null): self
     {

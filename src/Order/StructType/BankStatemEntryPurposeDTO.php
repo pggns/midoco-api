@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class BankStatemEntryPurposeDTO extends AbstractStructBase
     /**
      * Set accountPosition value
      * @param int $accountPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankStatemEntryPurposeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankStatemEntryPurposeDTO
      */
     public function setAccountPosition(?int $accountPosition = null): self
     {
@@ -94,7 +94,7 @@ class BankStatemEntryPurposeDTO extends AbstractStructBase
     /**
      * Set entryPosition value
      * @param int $entryPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankStatemEntryPurposeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankStatemEntryPurposeDTO
      */
     public function setEntryPosition(?int $entryPosition = null): self
     {
@@ -117,7 +117,7 @@ class BankStatemEntryPurposeDTO extends AbstractStructBase
     /**
      * Set pos value
      * @param int $pos
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankStatemEntryPurposeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankStatemEntryPurposeDTO
      */
     public function setPos(?int $pos = null): self
     {
@@ -140,7 +140,7 @@ class BankStatemEntryPurposeDTO extends AbstractStructBase
     /**
      * Set statementId value
      * @param int $statementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankStatemEntryPurposeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankStatemEntryPurposeDTO
      */
     public function setStatementId(?int $statementId = null): self
     {
@@ -163,7 +163,7 @@ class BankStatemEntryPurposeDTO extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankStatemEntryPurposeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankStatemEntryPurposeDTO
      */
     public function setValue(?string $value = null): self
     {

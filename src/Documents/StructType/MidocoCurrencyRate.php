@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,9 +19,9 @@ class MidocoCurrencyRate extends CurrencyHistoryDTO
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoCurrencyRateHedge
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\CurrencyRateHedgeDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\CurrencyRateHedgeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\CurrencyRateHedgeDTO $MidocoCurrencyRateHedge = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\CurrencyRateHedgeDTO $MidocoCurrencyRateHedge = null;
     /**
      * The isGlobal
      * @var bool|null
@@ -49,13 +49,13 @@ class MidocoCurrencyRate extends CurrencyHistoryDTO
      * @uses MidocoCurrencyRate::setBuyHedge()
      * @uses MidocoCurrencyRate::setSellHedge()
      * @uses MidocoCurrencyRate::setAvgHedge()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\CurrencyRateHedgeDTO $midocoCurrencyRateHedge
+     * @param \Pggns\MidocoApi\Documents\StructType\CurrencyRateHedgeDTO $midocoCurrencyRateHedge
      * @param bool $isGlobal
      * @param float $buyHedge
      * @param float $sellHedge
      * @param float $avgHedge
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\CurrencyRateHedgeDTO $midocoCurrencyRateHedge = null, ?bool $isGlobal = null, ?float $buyHedge = null, ?float $sellHedge = null, ?float $avgHedge = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\CurrencyRateHedgeDTO $midocoCurrencyRateHedge = null, ?bool $isGlobal = null, ?float $buyHedge = null, ?float $sellHedge = null, ?float $avgHedge = null)
     {
         $this
             ->setMidocoCurrencyRateHedge($midocoCurrencyRateHedge)
@@ -66,18 +66,18 @@ class MidocoCurrencyRate extends CurrencyHistoryDTO
     }
     /**
      * Get MidocoCurrencyRateHedge value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\CurrencyRateHedgeDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\CurrencyRateHedgeDTO|null
      */
-    public function getMidocoCurrencyRateHedge(): ?\Pggns\MidocoApi\Api\Documents\StructType\CurrencyRateHedgeDTO
+    public function getMidocoCurrencyRateHedge(): ?\Pggns\MidocoApi\Documents\StructType\CurrencyRateHedgeDTO
     {
         return $this->MidocoCurrencyRateHedge;
     }
     /**
      * Set MidocoCurrencyRateHedge value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\CurrencyRateHedgeDTO $midocoCurrencyRateHedge
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCurrencyRate
+     * @param \Pggns\MidocoApi\Documents\StructType\CurrencyRateHedgeDTO $midocoCurrencyRateHedge
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCurrencyRate
      */
-    public function setMidocoCurrencyRateHedge(?\Pggns\MidocoApi\Api\Documents\StructType\CurrencyRateHedgeDTO $midocoCurrencyRateHedge = null): self
+    public function setMidocoCurrencyRateHedge(?\Pggns\MidocoApi\Documents\StructType\CurrencyRateHedgeDTO $midocoCurrencyRateHedge = null): self
     {
         $this->MidocoCurrencyRateHedge = $midocoCurrencyRateHedge;
         
@@ -94,7 +94,7 @@ class MidocoCurrencyRate extends CurrencyHistoryDTO
     /**
      * Set isGlobal value
      * @param bool $isGlobal
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCurrencyRate
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCurrencyRate
      */
     public function setIsGlobal(?bool $isGlobal = null): self
     {
@@ -117,7 +117,7 @@ class MidocoCurrencyRate extends CurrencyHistoryDTO
     /**
      * Set buyHedge value
      * @param float $buyHedge
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCurrencyRate
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCurrencyRate
      */
     public function setBuyHedge(?float $buyHedge = null): self
     {
@@ -140,7 +140,7 @@ class MidocoCurrencyRate extends CurrencyHistoryDTO
     /**
      * Set sellHedge value
      * @param float $sellHedge
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCurrencyRate
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCurrencyRate
      */
     public function setSellHedge(?float $sellHedge = null): self
     {
@@ -163,7 +163,7 @@ class MidocoCurrencyRate extends CurrencyHistoryDTO
     /**
      * Set avgHedge value
      * @param float $avgHedge
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCurrencyRate
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCurrencyRate
      */
     public function setAvgHedge(?float $avgHedge = null): self
     {

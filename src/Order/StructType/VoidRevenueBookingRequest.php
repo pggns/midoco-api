@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class VoidRevenueBookingRequest extends AbstractStructBase
     /**
      * Set revenueId value
      * @param int $revenueId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidRevenueBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidRevenueBookingRequest
      */
     public function setRevenueId(?int $revenueId = null): self
     {
@@ -70,7 +70,7 @@ class VoidRevenueBookingRequest extends AbstractStructBase
     /**
      * Set avisDetailId value
      * @param int $avisDetailId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidRevenueBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidRevenueBookingRequest
      */
     public function setAvisDetailId(?int $avisDetailId = null): self
     {

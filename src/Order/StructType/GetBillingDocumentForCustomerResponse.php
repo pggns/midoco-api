@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class GetBillingDocumentForCustomerResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingPositionsDetails
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionsDetails[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionsDetails[]
      */
     protected ?array $MidocoBillingPositionsDetails = null;
     /**
@@ -33,7 +33,7 @@ class GetBillingDocumentForCustomerResponse extends AbstractStructBase
      * Constructor method for GetBillingDocumentForCustomerResponse
      * @uses GetBillingDocumentForCustomerResponse::setMidocoBillingPositionsDetails()
      * @uses GetBillingDocumentForCustomerResponse::setHasMorePositions()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionsDetails[] $midocoBillingPositionsDetails
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionsDetails[] $midocoBillingPositionsDetails
      * @param bool $hasMorePositions
      */
     public function __construct(?array $midocoBillingPositionsDetails = null, ?bool $hasMorePositions = null)
@@ -44,7 +44,7 @@ class GetBillingDocumentForCustomerResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingPositionsDetails value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionsDetails[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionsDetails[]
      */
     public function getMidocoBillingPositionsDetails(): ?array
     {
@@ -65,12 +65,12 @@ class GetBillingDocumentForCustomerResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBillingDocumentForCustomerResponseMidocoBillingPositionsDetailsItem) {
             // validation for constraint: itemType
-            if (!$getBillingDocumentForCustomerResponseMidocoBillingPositionsDetailsItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionsDetails) {
+            if (!$getBillingDocumentForCustomerResponseMidocoBillingPositionsDetailsItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionsDetails) {
                 $invalidValues[] = is_object($getBillingDocumentForCustomerResponseMidocoBillingPositionsDetailsItem) ? get_class($getBillingDocumentForCustomerResponseMidocoBillingPositionsDetailsItem) : sprintf('%s(%s)', gettype($getBillingDocumentForCustomerResponseMidocoBillingPositionsDetailsItem), var_export($getBillingDocumentForCustomerResponseMidocoBillingPositionsDetailsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingPositionsDetails property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionsDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingPositionsDetails property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionsDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -79,8 +79,8 @@ class GetBillingDocumentForCustomerResponse extends AbstractStructBase
     /**
      * Set MidocoBillingPositionsDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionsDetails[] $midocoBillingPositionsDetails
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocumentForCustomerResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionsDetails[] $midocoBillingPositionsDetails
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentForCustomerResponse
      */
     public function setMidocoBillingPositionsDetails(?array $midocoBillingPositionsDetails = null): self
     {
@@ -95,14 +95,14 @@ class GetBillingDocumentForCustomerResponse extends AbstractStructBase
     /**
      * Add item to MidocoBillingPositionsDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionsDetails $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocumentForCustomerResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionsDetails $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentForCustomerResponse
      */
-    public function addToMidocoBillingPositionsDetails(\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionsDetails $item): self
+    public function addToMidocoBillingPositionsDetails(\Pggns\MidocoApi\Order\StructType\MidocoBillingPositionsDetails $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionsDetails) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingPositionsDetails property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionsDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionsDetails) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingPositionsDetails property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionsDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingPositionsDetails[] = $item;
         
@@ -119,7 +119,7 @@ class GetBillingDocumentForCustomerResponse extends AbstractStructBase
     /**
      * Set hasMorePositions value
      * @param bool $hasMorePositions
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocumentForCustomerResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentForCustomerResponse
      */
     public function setHasMorePositions(?bool $hasMorePositions = null): self
     {

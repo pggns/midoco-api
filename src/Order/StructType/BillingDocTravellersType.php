@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class BillingDocTravellersType extends AbstractStructBase
     /**
      * Set index value
      * @param int $index
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocTravellersType
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocTravellersType
      */
     public function setIndex(?int $index = null): self
     {
@@ -86,7 +86,7 @@ class BillingDocTravellersType extends AbstractStructBase
     /**
      * Set travellerForename value
      * @param string $travellerForename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocTravellersType
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocTravellersType
      */
     public function setTravellerForename(?string $travellerForename = null): self
     {
@@ -109,7 +109,7 @@ class BillingDocTravellersType extends AbstractStructBase
     /**
      * Set travellerSurname value
      * @param string $travellerSurname
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocTravellersType
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocTravellersType
      */
     public function setTravellerSurname(?string $travellerSurname = null): self
     {
@@ -132,7 +132,7 @@ class BillingDocTravellersType extends AbstractStructBase
     /**
      * Set travellerId value
      * @param string $travellerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocTravellersType
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocTravellersType
      */
     public function setTravellerId(?string $travellerId = null): self
     {

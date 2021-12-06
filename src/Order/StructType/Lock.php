@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class Lock extends AbstractStructBase
     /**
      * Set dunning value
      * @param bool $dunning
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Lock
+     * @return \Pggns\MidocoApi\Order\StructType\Lock
      */
     public function setDunning(?bool $dunning = null): self
     {
@@ -88,7 +88,7 @@ class Lock extends AbstractStructBase
     /**
      * Set documents value
      * @param bool $documents
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Lock
+     * @return \Pggns\MidocoApi\Order\StructType\Lock
      */
     public function setDocuments(?bool $documents = null): self
     {
@@ -111,7 +111,7 @@ class Lock extends AbstractStructBase
     /**
      * Set fibu value
      * @param bool $fibu
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Lock
+     * @return \Pggns\MidocoApi\Order\StructType\Lock
      */
     public function setFibu(?bool $fibu = null): self
     {
@@ -134,7 +134,7 @@ class Lock extends AbstractStructBase
     /**
      * Set payment value
      * @param bool $payment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Lock
+     * @return \Pggns\MidocoApi\Order\StructType\Lock
      */
     public function setPayment(?bool $payment = null): self
     {

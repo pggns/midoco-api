@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -149,7 +149,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
     /**
      * Set showSigned value
      * @param bool $showSigned
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function setShowSigned(bool $showSigned): self
     {
@@ -199,7 +199,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
      * Set dispatchType value
      * @throws InvalidArgumentException
      * @param string[] $dispatchType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function setDispatchType(?array $dispatchType = null): self
     {
@@ -215,7 +215,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
      * Add item to dispatchType value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function addToDispatchType(string $item): self
     {
@@ -265,7 +265,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
      * Set documentNature value
      * @throws InvalidArgumentException
      * @param string[] $documentNature
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function setDocumentNature(?array $documentNature = null): self
     {
@@ -281,7 +281,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
      * Add item to documentNature value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function addToDocumentNature(string $item): self
     {
@@ -331,7 +331,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
      * Set unitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function setUnitName(?array $unitName = null): self
     {
@@ -347,7 +347,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
      * Add item to unitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function addToUnitName(string $item): self
     {
@@ -397,7 +397,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
      * Set crtUser value
      * @throws InvalidArgumentException
      * @param int[] $crtUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function setCrtUser(?array $crtUser = null): self
     {
@@ -413,7 +413,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
      * Add item to crtUser value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function addToCrtUser(int $item): self
     {
@@ -436,7 +436,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
     /**
      * Set custName value
      * @param string $custName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function setCustName(?string $custName = null): self
     {
@@ -459,7 +459,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
     /**
      * Set showDispatched value
      * @param bool $showDispatched
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function setShowDispatched(?bool $showDispatched = null): self
     {
@@ -482,7 +482,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
     /**
      * Set onlyForCurrentUser value
      * @param bool $onlyForCurrentUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function setOnlyForCurrentUser(?bool $onlyForCurrentUser = null): self
     {
@@ -505,7 +505,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
     /**
      * Set onlyForCurrentUnitName value
      * @param bool $onlyForCurrentUnitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function setOnlyForCurrentUnitName(?bool $onlyForCurrentUnitName = null): self
     {
@@ -528,7 +528,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
     /**
      * Set creationDateFrom value
      * @param string $creationDateFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function setCreationDateFrom(?string $creationDateFrom = null): self
     {
@@ -551,7 +551,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
     /**
      * Set creationDateTo value
      * @param string $creationDateTo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function setCreationDateTo(?string $creationDateTo = null): self
     {
@@ -574,7 +574,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
     /**
      * Set dispatchDateFrom value
      * @param string $dispatchDateFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function setDispatchDateFrom(?string $dispatchDateFrom = null): self
     {
@@ -597,7 +597,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
     /**
      * Set dispatchDateTo value
      * @param string $dispatchDateTo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSignatureDocsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSignatureDocsRequest
      */
     public function setDispatchDateTo(?string $dispatchDateTo = null): self
     {

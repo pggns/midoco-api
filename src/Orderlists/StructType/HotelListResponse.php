@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class HotelListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoHotelList
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType[]
      */
     protected ?array $MidocoHotelList = null;
     /**
@@ -33,7 +33,7 @@ class HotelListResponse extends AbstractStructBase
      * Constructor method for HotelListResponse
      * @uses HotelListResponse::setMidocoHotelList()
      * @uses HotelListResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType[] $midocoHotelList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType[] $midocoHotelList
      * @param int $noOfResults
      */
     public function __construct(?array $midocoHotelList = null, ?int $noOfResults = null)
@@ -44,7 +44,7 @@ class HotelListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoHotelList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType[]
      */
     public function getMidocoHotelList(): ?array
     {
@@ -65,12 +65,12 @@ class HotelListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $hotelListResponseMidocoHotelListItem) {
             // validation for constraint: itemType
-            if (!$hotelListResponseMidocoHotelListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType) {
+            if (!$hotelListResponseMidocoHotelListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType) {
                 $invalidValues[] = is_object($hotelListResponseMidocoHotelListItem) ? get_class($hotelListResponseMidocoHotelListItem) : sprintf('%s(%s)', gettype($hotelListResponseMidocoHotelListItem), var_export($hotelListResponseMidocoHotelListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoHotelList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoHotelList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -79,8 +79,8 @@ class HotelListResponse extends AbstractStructBase
     /**
      * Set MidocoHotelList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType[] $midocoHotelList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\HotelListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType[] $midocoHotelList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\HotelListResponse
      */
     public function setMidocoHotelList(?array $midocoHotelList = null): self
     {
@@ -95,14 +95,14 @@ class HotelListResponse extends AbstractStructBase
     /**
      * Add item to MidocoHotelList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\HotelListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\HotelListResponse
      */
-    public function addToMidocoHotelList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType $item): self
+    public function addToMidocoHotelList(\Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType) {
-            throw new InvalidArgumentException(sprintf('The MidocoHotelList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType) {
+            throw new InvalidArgumentException(sprintf('The MidocoHotelList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoHotelList[] = $item;
         
@@ -119,7 +119,7 @@ class HotelListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\HotelListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\HotelListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class LogSecurityOrgunitDTO extends AbstractStructBase
     /**
      * Set adminId value
      * @param int $adminId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\LogSecurityOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\LogSecurityOrgunitDTO
      */
     public function setAdminId(?int $adminId = null): self
     {
@@ -110,7 +110,7 @@ class LogSecurityOrgunitDTO extends AbstractStructBase
     /**
      * Set adminOrgunit value
      * @param string $adminOrgunit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\LogSecurityOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\LogSecurityOrgunitDTO
      */
     public function setAdminOrgunit(?string $adminOrgunit = null): self
     {
@@ -133,7 +133,7 @@ class LogSecurityOrgunitDTO extends AbstractStructBase
     /**
      * Set details value
      * @param string $details
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\LogSecurityOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\LogSecurityOrgunitDTO
      */
     public function setDetails(?string $details = null): self
     {
@@ -156,7 +156,7 @@ class LogSecurityOrgunitDTO extends AbstractStructBase
     /**
      * Set eventId value
      * @param string $eventId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\LogSecurityOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\LogSecurityOrgunitDTO
      */
     public function setEventId(?string $eventId = null): self
     {
@@ -179,7 +179,7 @@ class LogSecurityOrgunitDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\LogSecurityOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\LogSecurityOrgunitDTO
      */
     public function setId(?int $id = null): self
     {
@@ -202,7 +202,7 @@ class LogSecurityOrgunitDTO extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\LogSecurityOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\LogSecurityOrgunitDTO
      */
     public function setOrgunit(?string $orgunit = null): self
     {
@@ -225,7 +225,7 @@ class LogSecurityOrgunitDTO extends AbstractStructBase
     /**
      * Set recordDate value
      * @param string $recordDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\LogSecurityOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\LogSecurityOrgunitDTO
      */
     public function setRecordDate(?string $recordDate = null): self
     {

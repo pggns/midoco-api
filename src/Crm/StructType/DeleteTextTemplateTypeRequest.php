@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteTextTemplateTypeRequest extends AbstractStructBase
     /**
      * Set templateId value
      * @param string $templateId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteTextTemplateTypeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteTextTemplateTypeRequest
      */
     public function setTemplateId(?string $templateId = null): self
     {

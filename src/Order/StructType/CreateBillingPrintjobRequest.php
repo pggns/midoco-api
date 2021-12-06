@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -117,7 +117,7 @@ class CreateBillingPrintjobRequest extends AbstractStructBase
     /**
      * Set BillingDocumentId value
      * @param int $billingDocumentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest
      */
     public function setBillingDocumentId(?int $billingDocumentId = null): self
     {
@@ -140,7 +140,7 @@ class CreateBillingPrintjobRequest extends AbstractStructBase
     /**
      * Set TemplateType value
      * @param string $templateType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest
      */
     public function setTemplateType(?string $templateType = null): self
     {
@@ -163,7 +163,7 @@ class CreateBillingPrintjobRequest extends AbstractStructBase
     /**
      * Set Media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest
      */
     public function setMedia(?string $media = 'PRINT'): self
     {
@@ -186,7 +186,7 @@ class CreateBillingPrintjobRequest extends AbstractStructBase
     /**
      * Set Recipient value
      * @param string $recipient
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest
      */
     public function setRecipient(?string $recipient = null): self
     {
@@ -209,7 +209,7 @@ class CreateBillingPrintjobRequest extends AbstractStructBase
     /**
      * Set IsOriginal value
      * @param bool $isOriginal
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest
      */
     public function setIsOriginal(?bool $isOriginal = null): self
     {
@@ -232,7 +232,7 @@ class CreateBillingPrintjobRequest extends AbstractStructBase
     /**
      * Set doMailPrepare value
      * @param bool $doMailPrepare
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest
      */
     public function setDoMailPrepare(?bool $doMailPrepare = null): self
     {
@@ -255,7 +255,7 @@ class CreateBillingPrintjobRequest extends AbstractStructBase
     /**
      * Set export2Archive value
      * @param bool $export2Archive
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest
      */
     public function setExport2Archive(?bool $export2Archive = true): self
     {
@@ -278,7 +278,7 @@ class CreateBillingPrintjobRequest extends AbstractStructBase
     /**
      * Set createPrintCopies value
      * @param bool $createPrintCopies
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest
      */
     public function setCreatePrintCopies(?bool $createPrintCopies = false): self
     {
@@ -301,7 +301,7 @@ class CreateBillingPrintjobRequest extends AbstractStructBase
     /**
      * Set isDraft value
      * @param bool $isDraft
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest
      */
     public function setIsDraft(?bool $isDraft = false): self
     {

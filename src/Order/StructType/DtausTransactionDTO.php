@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -295,7 +295,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set accountOwner value
      * @param string $accountOwner
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setAccountOwner(?string $accountOwner = null): self
     {
@@ -318,7 +318,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set additonalKey value
      * @param string $additonalKey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setAdditonalKey(?string $additonalKey = null): self
     {
@@ -341,7 +341,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -364,7 +364,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set approvalCode value
      * @param string $approvalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setApprovalCode(?string $approvalCode = null): self
     {
@@ -387,7 +387,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set bankTransferCollective value
      * @param bool $bankTransferCollective
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setBankTransferCollective(?bool $bankTransferCollective = null): self
     {
@@ -410,7 +410,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set contraAccountBlz value
      * @param string $contraAccountBlz
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setContraAccountBlz(?string $contraAccountBlz = null): self
     {
@@ -433,7 +433,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set contraAccountNo value
      * @param string $contraAccountNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setContraAccountNo(?string $contraAccountNo = null): self
     {
@@ -456,7 +456,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set contraAccountOwner value
      * @param string $contraAccountOwner
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setContraAccountOwner(?string $contraAccountOwner = null): self
     {
@@ -479,7 +479,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set contraAccountOwnerCity value
      * @param string $contraAccountOwnerCity
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setContraAccountOwnerCity(?string $contraAccountOwnerCity = null): self
     {
@@ -502,7 +502,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set contraAccountOwnerCountry value
      * @param string $contraAccountOwnerCountry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setContraAccountOwnerCountry(?string $contraAccountOwnerCountry = null): self
     {
@@ -525,7 +525,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set contraAccountOwnerStreet value
      * @param string $contraAccountOwnerStreet
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setContraAccountOwnerStreet(?string $contraAccountOwnerStreet = null): self
     {
@@ -548,7 +548,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set contraBankCity value
      * @param string $contraBankCity
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setContraBankCity(?string $contraBankCity = null): self
     {
@@ -571,7 +571,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set contraBankCountry value
      * @param string $contraBankCountry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setContraBankCountry(?string $contraBankCountry = null): self
     {
@@ -594,7 +594,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set contraBankName value
      * @param string $contraBankName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setContraBankName(?string $contraBankName = null): self
     {
@@ -617,7 +617,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set contraBankStreet value
      * @param string $contraBankStreet
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setContraBankStreet(?string $contraBankStreet = null): self
     {
@@ -640,7 +640,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -663,7 +663,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set endToEndId value
      * @param string $endToEndId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setEndToEndId(?string $endToEndId = null): self
     {
@@ -686,7 +686,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {
@@ -709,7 +709,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -732,7 +732,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set errorDescriptionCode value
      * @param string $errorDescriptionCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setErrorDescriptionCode(?string $errorDescriptionCode = null): self
     {
@@ -755,7 +755,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set executionDate value
      * @param string $executionDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setExecutionDate(?string $executionDate = null): self
     {
@@ -778,7 +778,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set extReference value
      * @param string $extReference
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setExtReference(?string $extReference = null): self
     {
@@ -801,7 +801,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set fileid value
      * @param int $fileid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setFileid(?int $fileid = null): self
     {
@@ -824,7 +824,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set internalCustomerId value
      * @param int $internalCustomerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setInternalCustomerId(?int $internalCustomerId = null): self
     {
@@ -847,7 +847,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param int $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setInvoiceNo(?int $invoiceNo = null): self
     {
@@ -870,7 +870,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -893,7 +893,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set isManual value
      * @param bool $isManual
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setIsManual(?bool $isManual = null): self
     {
@@ -916,7 +916,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set isProcessed value
      * @param bool $isProcessed
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setIsProcessed(?bool $isProcessed = null): self
     {
@@ -939,7 +939,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set journalId value
      * @param int $journalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setJournalId(?int $journalId = null): self
     {
@@ -962,7 +962,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set key value
      * @param string $key
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setKey(?string $key = null): self
     {
@@ -985,7 +985,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setMandateId(?int $mandateId = null): self
     {
@@ -1008,7 +1008,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set refOrderId value
      * @param int $refOrderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setRefOrderId(?int $refOrderId = null): self
     {
@@ -1031,7 +1031,7 @@ class DtausTransactionDTO extends AbstractStructBase
     /**
      * Set transactionPosition value
      * @param int $transactionPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionDTO
      */
     public function setTransactionPosition(?int $transactionPosition = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -81,7 +81,7 @@ class Saving extends AbstractStructBase
     /**
      * Set lowestFare value
      * @param float $lowestFare
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Saving
+     * @return \Pggns\MidocoApi\Order\StructType\Saving
      */
     public function setLowestFare(?float $lowestFare = null): self
     {
@@ -104,7 +104,7 @@ class Saving extends AbstractStructBase
     /**
      * Set highestFare value
      * @param float $highestFare
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Saving
+     * @return \Pggns\MidocoApi\Order\StructType\Saving
      */
     public function setHighestFare(?float $highestFare = null): self
     {
@@ -127,7 +127,7 @@ class Saving extends AbstractStructBase
     /**
      * Set reasonCode value
      * @param string $reasonCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Saving
+     * @return \Pggns\MidocoApi\Order\StructType\Saving
      */
     public function setReasonCode(?string $reasonCode = null): self
     {
@@ -150,7 +150,7 @@ class Saving extends AbstractStructBase
     /**
      * Set tarifCode value
      * @param string $tarifCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Saving
+     * @return \Pggns\MidocoApi\Order\StructType\Saving
      */
     public function setTarifCode(?string $tarifCode = null): self
     {
@@ -173,7 +173,7 @@ class Saving extends AbstractStructBase
     /**
      * Set airlineLowestFare value
      * @param string $airlineLowestFare
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Saving
+     * @return \Pggns\MidocoApi\Order\StructType\Saving
      */
     public function setAirlineLowestFare(?string $airlineLowestFare = null): self
     {
@@ -196,7 +196,7 @@ class Saving extends AbstractStructBase
     /**
      * Set detailsAssign value
      * @param string $detailsAssign
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Saving
+     * @return \Pggns\MidocoApi\Order\StructType\Saving
      */
     public function setDetailsAssign(?string $detailsAssign = null): self
     {

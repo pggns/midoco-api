@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class AirportDTO extends AbstractStructBase
     /**
      * Set airportCode value
      * @param string $airportCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDTO
      */
     public function setAirportCode(?string $airportCode = null): self
     {
@@ -102,7 +102,7 @@ class AirportDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -125,7 +125,7 @@ class AirportDTO extends AbstractStructBase
     /**
      * Set continentCode value
      * @param string $continentCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDTO
      */
     public function setContinentCode(?string $continentCode = null): self
     {
@@ -148,7 +148,7 @@ class AirportDTO extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDTO
      */
     public function setCountry(?string $country = null): self
     {
@@ -171,7 +171,7 @@ class AirportDTO extends AbstractStructBase
     /**
      * Set countryIso3 value
      * @param string $countryIso3
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDTO
      */
     public function setCountryIso3(?string $countryIso3 = null): self
     {
@@ -194,7 +194,7 @@ class AirportDTO extends AbstractStructBase
     /**
      * Set region value
      * @param string $region
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDTO
      */
     public function setRegion(?string $region = null): self
     {

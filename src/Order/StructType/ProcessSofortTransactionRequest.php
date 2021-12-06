@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ProcessSofortTransactionRequest extends AbstractStructBase
     /**
      * Set transactionMessage value
      * @param string $transactionMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProcessSofortTransactionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ProcessSofortTransactionRequest
      */
     public function setTransactionMessage(?string $transactionMessage = null): self
     {

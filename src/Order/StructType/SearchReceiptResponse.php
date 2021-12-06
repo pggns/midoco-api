@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchReceiptResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoReceiptShortInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptShortInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoReceiptShortInfo[]
      */
     protected ?array $MidocoReceiptShortInfo = null;
     /**
      * Constructor method for SearchReceiptResponse
      * @uses SearchReceiptResponse::setMidocoReceiptShortInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptShortInfo[] $midocoReceiptShortInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoReceiptShortInfo[] $midocoReceiptShortInfo
      */
     public function __construct(?array $midocoReceiptShortInfo = null)
     {
@@ -34,7 +34,7 @@ class SearchReceiptResponse extends AbstractStructBase
     }
     /**
      * Get MidocoReceiptShortInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptShortInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoReceiptShortInfo[]
      */
     public function getMidocoReceiptShortInfo(): ?array
     {
@@ -55,12 +55,12 @@ class SearchReceiptResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchReceiptResponseMidocoReceiptShortInfoItem) {
             // validation for constraint: itemType
-            if (!$searchReceiptResponseMidocoReceiptShortInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptShortInfo) {
+            if (!$searchReceiptResponseMidocoReceiptShortInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoReceiptShortInfo) {
                 $invalidValues[] = is_object($searchReceiptResponseMidocoReceiptShortInfoItem) ? get_class($searchReceiptResponseMidocoReceiptShortInfoItem) : sprintf('%s(%s)', gettype($searchReceiptResponseMidocoReceiptShortInfoItem), var_export($searchReceiptResponseMidocoReceiptShortInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoReceiptShortInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptShortInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoReceiptShortInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoReceiptShortInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchReceiptResponse extends AbstractStructBase
     /**
      * Set MidocoReceiptShortInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptShortInfo[] $midocoReceiptShortInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchReceiptResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoReceiptShortInfo[] $midocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SearchReceiptResponse
      */
     public function setMidocoReceiptShortInfo(?array $midocoReceiptShortInfo = null): self
     {
@@ -85,14 +85,14 @@ class SearchReceiptResponse extends AbstractStructBase
     /**
      * Add item to MidocoReceiptShortInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptShortInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchReceiptResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoReceiptShortInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchReceiptResponse
      */
-    public function addToMidocoReceiptShortInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptShortInfo $item): self
+    public function addToMidocoReceiptShortInfo(\Pggns\MidocoApi\Order\StructType\MidocoReceiptShortInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptShortInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoReceiptShortInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptShortInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoReceiptShortInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoReceiptShortInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoReceiptShortInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoReceiptShortInfo[] = $item;
         

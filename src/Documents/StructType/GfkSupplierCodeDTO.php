@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GfkSupplierCodeDTO extends AbstractStructBase
     /**
      * Set gfkCode value
      * @param int $gfkCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GfkSupplierCodeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\GfkSupplierCodeDTO
      */
     public function setGfkCode(?int $gfkCode = null): self
     {
@@ -78,7 +78,7 @@ class GfkSupplierCodeDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GfkSupplierCodeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\GfkSupplierCodeDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -101,7 +101,7 @@ class GfkSupplierCodeDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GfkSupplierCodeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\GfkSupplierCodeDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

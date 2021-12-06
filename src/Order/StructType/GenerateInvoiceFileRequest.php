@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -33,9 +33,9 @@ class GenerateInvoiceFileRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: mail:MidocoMailMessage
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
     /**
      * The sendMail
      * Meta information extracted from the WSDL
@@ -59,11 +59,11 @@ class GenerateInvoiceFileRequest extends AbstractStructBase
      * @uses GenerateInvoiceFileRequest::setFormatId()
      * @param int[] $documentIds
      * @param int $customerId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
      * @param bool $sendMail
      * @param string $formatId
      */
-    public function __construct(?array $documentIds = null, ?int $customerId = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?bool $sendMail = null, ?string $formatId = null)
+    public function __construct(?array $documentIds = null, ?int $customerId = null, ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?bool $sendMail = null, ?string $formatId = null)
     {
         $this
             ->setDocumentIds($documentIds)
@@ -110,7 +110,7 @@ class GenerateInvoiceFileRequest extends AbstractStructBase
      * Set documentIds value
      * @throws InvalidArgumentException
      * @param int[] $documentIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateInvoiceFileRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateInvoiceFileRequest
      */
     public function setDocumentIds(?array $documentIds = null): self
     {
@@ -126,7 +126,7 @@ class GenerateInvoiceFileRequest extends AbstractStructBase
      * Add item to documentIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateInvoiceFileRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateInvoiceFileRequest
      */
     public function addToDocumentIds(int $item): self
     {
@@ -149,7 +149,7 @@ class GenerateInvoiceFileRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateInvoiceFileRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateInvoiceFileRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -163,18 +163,18 @@ class GenerateInvoiceFileRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMailMessage value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
     {
         return $this->MidocoMailMessage;
     }
     /**
      * Set MidocoMailMessage value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateInvoiceFileRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateInvoiceFileRequest
      */
-    public function setMidocoMailMessage(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
+    public function setMidocoMailMessage(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
     {
         $this->MidocoMailMessage = $midocoMailMessage;
         
@@ -191,7 +191,7 @@ class GenerateInvoiceFileRequest extends AbstractStructBase
     /**
      * Set sendMail value
      * @param bool $sendMail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateInvoiceFileRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateInvoiceFileRequest
      */
     public function setSendMail(?bool $sendMail = null): self
     {
@@ -214,7 +214,7 @@ class GenerateInvoiceFileRequest extends AbstractStructBase
     /**
      * Set formatId value
      * @param string $formatId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateInvoiceFileRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateInvoiceFileRequest
      */
     public function setFormatId(?string $formatId = null): self
     {

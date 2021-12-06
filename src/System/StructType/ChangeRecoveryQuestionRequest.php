@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ChangeRecoveryQuestionRequest extends AbstractStructBase
     /**
      * Set questionType value
      * @param int $questionType
-     * @return \Pggns\MidocoApi\Api\System\StructType\ChangeRecoveryQuestionRequest
+     * @return \Pggns\MidocoApi\System\StructType\ChangeRecoveryQuestionRequest
      */
     public function setQuestionType(?int $questionType = null): self
     {
@@ -70,7 +70,7 @@ class ChangeRecoveryQuestionRequest extends AbstractStructBase
     /**
      * Set answer value
      * @param string $answer
-     * @return \Pggns\MidocoApi\Api\System\StructType\ChangeRecoveryQuestionRequest
+     * @return \Pggns\MidocoApi\System\StructType\ChangeRecoveryQuestionRequest
      */
     public function setAnswer(?string $answer = null): self
     {

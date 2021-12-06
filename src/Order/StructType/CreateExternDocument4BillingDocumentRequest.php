@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class CreateExternDocument4BillingDocumentRequest extends AbstractStructBase
      * Set documentId value
      * @throws InvalidArgumentException
      * @param int[] $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateExternDocument4BillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateExternDocument4BillingDocumentRequest
      */
     public function setDocumentId(?array $documentId = null): self
     {
@@ -85,7 +85,7 @@ class CreateExternDocument4BillingDocumentRequest extends AbstractStructBase
      * Add item to documentId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateExternDocument4BillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateExternDocument4BillingDocumentRequest
      */
     public function addToDocumentId(int $item): self
     {

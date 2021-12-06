@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -101,7 +101,7 @@ class GetAmwayMediatorBookingsRequest extends AbstractStructBase
      * Set unitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAmwayMediatorBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAmwayMediatorBookingsRequest
      */
     public function setUnitName(?array $unitName = null): self
     {
@@ -117,7 +117,7 @@ class GetAmwayMediatorBookingsRequest extends AbstractStructBase
      * Add item to unitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAmwayMediatorBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAmwayMediatorBookingsRequest
      */
     public function addToUnitName(string $item): self
     {
@@ -140,7 +140,7 @@ class GetAmwayMediatorBookingsRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAmwayMediatorBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAmwayMediatorBookingsRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -163,7 +163,7 @@ class GetAmwayMediatorBookingsRequest extends AbstractStructBase
     /**
      * Set month value
      * @param int $month
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAmwayMediatorBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAmwayMediatorBookingsRequest
      */
     public function setMonth(?int $month = null): self
     {
@@ -186,7 +186,7 @@ class GetAmwayMediatorBookingsRequest extends AbstractStructBase
     /**
      * Set year value
      * @param int $year
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAmwayMediatorBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAmwayMediatorBookingsRequest
      */
     public function setYear(?int $year = null): self
     {
@@ -209,7 +209,7 @@ class GetAmwayMediatorBookingsRequest extends AbstractStructBase
     /**
      * Set listStornos value
      * @param bool $listStornos
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAmwayMediatorBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAmwayMediatorBookingsRequest
      */
     public function setListStornos(?bool $listStornos = null): self
     {

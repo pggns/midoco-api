@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class PrintDescriptionDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO
+     * @return \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -78,7 +78,7 @@ class PrintDescriptionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO
+     * @return \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -101,7 +101,7 @@ class PrintDescriptionDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO
+     * @return \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

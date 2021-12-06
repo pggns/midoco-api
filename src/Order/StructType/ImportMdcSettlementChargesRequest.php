@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class ImportMdcSettlementChargesRequest extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMdcSettlementChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMdcSettlementChargesRequest
      */
     public function setAccountId(string $accountId): self
     {
@@ -126,7 +126,7 @@ class ImportMdcSettlementChargesRequest extends AbstractStructBase
     /**
      * Set accountIdNoVat value
      * @param string $accountIdNoVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMdcSettlementChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMdcSettlementChargesRequest
      */
     public function setAccountIdNoVat(string $accountIdNoVat): self
     {
@@ -149,7 +149,7 @@ class ImportMdcSettlementChargesRequest extends AbstractStructBase
     /**
      * Set settlementMonth value
      * @param string $settlementMonth
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMdcSettlementChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMdcSettlementChargesRequest
      */
     public function setSettlementMonth(string $settlementMonth): self
     {
@@ -176,7 +176,7 @@ class ImportMdcSettlementChargesRequest extends AbstractStructBase
     /**
      * Set CSVCData value
      * @param string $cSVCData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMdcSettlementChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMdcSettlementChargesRequest
      */
     public function setCSVCData(?string $cSVCData = null): self
     {
@@ -199,7 +199,7 @@ class ImportMdcSettlementChargesRequest extends AbstractStructBase
     /**
      * Set delimiter value
      * @param string $delimiter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMdcSettlementChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMdcSettlementChargesRequest
      */
     public function setDelimiter(?string $delimiter = '|'): self
     {
@@ -222,7 +222,7 @@ class ImportMdcSettlementChargesRequest extends AbstractStructBase
     /**
      * Set decimalDelimiter value
      * @param string $decimalDelimiter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMdcSettlementChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMdcSettlementChargesRequest
      */
     public function setDecimalDelimiter(?string $decimalDelimiter = '.'): self
     {
@@ -245,7 +245,7 @@ class ImportMdcSettlementChargesRequest extends AbstractStructBase
     /**
      * Set isCharge value
      * @param bool $isCharge
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMdcSettlementChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMdcSettlementChargesRequest
      */
     public function setIsCharge(?bool $isCharge = true): self
     {

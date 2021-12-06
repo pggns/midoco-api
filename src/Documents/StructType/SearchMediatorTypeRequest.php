@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SearchMediatorTypeRequest extends AbstractStructBase
      * The MediatorTypeInfo
      * Meta information extracted from the WSDL
      * - ref: MediatorTypeInfo
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO $MediatorTypeInfo = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO $MediatorTypeInfo = null;
     /**
      * Constructor method for SearchMediatorTypeRequest
      * @uses SearchMediatorTypeRequest::setMediatorTypeInfo()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO $mediatorTypeInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO $mediatorTypeInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO $mediatorTypeInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO $mediatorTypeInfo = null)
     {
         $this
             ->setMediatorTypeInfo($mediatorTypeInfo);
     }
     /**
      * Get MediatorTypeInfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO|null
      */
-    public function getMediatorTypeInfo(): ?\Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO
+    public function getMediatorTypeInfo(): ?\Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO
     {
         return $this->MediatorTypeInfo;
     }
     /**
      * Set MediatorTypeInfo value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO $mediatorTypeInfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchMediatorTypeRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO $mediatorTypeInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchMediatorTypeRequest
      */
-    public function setMediatorTypeInfo(?\Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO $mediatorTypeInfo = null): self
+    public function setMediatorTypeInfo(?\Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO $mediatorTypeInfo = null): self
     {
         $this->MediatorTypeInfo = $mediatorTypeInfo;
         

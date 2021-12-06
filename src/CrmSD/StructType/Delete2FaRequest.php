@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class Delete2FaRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Delete2FaRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Delete2FaRequest
      */
     public function setUserId(?int $userId = null): self
     {

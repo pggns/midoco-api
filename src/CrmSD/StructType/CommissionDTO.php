@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CommissionDTO extends AbstractStructBase
     /**
      * Set commissionId value
      * @param string $commissionId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CommissionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDTO
      */
     public function setCommissionId(?string $commissionId = null): self
     {

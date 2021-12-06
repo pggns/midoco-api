@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveDictionaryNameRequest extends AbstractStructBase
      * The MidocoDictionaryName
      * Meta information extracted from the WSDL
      * - ref: MidocoDictionaryName
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO $MidocoDictionaryName = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO $MidocoDictionaryName = null;
     /**
      * Constructor method for SaveDictionaryNameRequest
      * @uses SaveDictionaryNameRequest::setMidocoDictionaryName()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO $midocoDictionaryName
+     * @param \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO $midocoDictionaryName
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO $midocoDictionaryName = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO $midocoDictionaryName = null)
     {
         $this
             ->setMidocoDictionaryName($midocoDictionaryName);
     }
     /**
      * Get MidocoDictionaryName value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO|null
      */
-    public function getMidocoDictionaryName(): ?\Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO
+    public function getMidocoDictionaryName(): ?\Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO
     {
         return $this->MidocoDictionaryName;
     }
     /**
      * Set MidocoDictionaryName value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO $midocoDictionaryName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveDictionaryNameRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO $midocoDictionaryName
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveDictionaryNameRequest
      */
-    public function setMidocoDictionaryName(?\Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO $midocoDictionaryName = null): self
+    public function setMidocoDictionaryName(?\Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO $midocoDictionaryName = null): self
     {
         $this->MidocoDictionaryName = $midocoDictionaryName;
         

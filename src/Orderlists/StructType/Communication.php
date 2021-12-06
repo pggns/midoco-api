@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -34,9 +34,9 @@ class Communication extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: Consent
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\ConsentType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\ConsentType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\ConsentType $Consent = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\ConsentType $Consent = null;
     /**
      * The use_for_mailing
      * Meta information extracted from the WSDL
@@ -53,10 +53,10 @@ class Communication extends AbstractStructBase
      * @uses Communication::setUse_for_mailing()
      * @param string $type
      * @param string $communication_data
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ConsentType $consent
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ConsentType $consent
      * @param bool $use_for_mailing
      */
-    public function __construct(string $type, ?string $communication_data = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\ConsentType $consent = null, ?bool $use_for_mailing = true)
+    public function __construct(string $type, ?string $communication_data = null, ?\Pggns\MidocoApi\Orderlists\StructType\ConsentType $consent = null, ?bool $use_for_mailing = true)
     {
         $this
             ->setType($type)
@@ -75,7 +75,7 @@ class Communication extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Communication
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Communication
      */
     public function setType(string $type): self
     {
@@ -98,7 +98,7 @@ class Communication extends AbstractStructBase
     /**
      * Set communication_data value
      * @param string $communication_data
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Communication
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Communication
      */
     public function setCommunication_data(?string $communication_data = null): self
     {
@@ -112,18 +112,18 @@ class Communication extends AbstractStructBase
     }
     /**
      * Get Consent value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ConsentType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ConsentType|null
      */
-    public function getConsent(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\ConsentType
+    public function getConsent(): ?\Pggns\MidocoApi\Orderlists\StructType\ConsentType
     {
         return $this->Consent;
     }
     /**
      * Set Consent value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ConsentType $consent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Communication
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ConsentType $consent
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Communication
      */
-    public function setConsent(?\Pggns\MidocoApi\Api\Orderlists\StructType\ConsentType $consent = null): self
+    public function setConsent(?\Pggns\MidocoApi\Orderlists\StructType\ConsentType $consent = null): self
     {
         $this->Consent = $consent;
         
@@ -140,7 +140,7 @@ class Communication extends AbstractStructBase
     /**
      * Set use_for_mailing value
      * @param bool $use_for_mailing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Communication
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Communication
      */
     public function setUse_for_mailing(?bool $use_for_mailing = true): self
     {

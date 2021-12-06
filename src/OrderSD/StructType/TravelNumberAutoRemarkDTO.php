@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class TravelNumberAutoRemarkDTO extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberAutoRemarkDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\TravelNumberAutoRemarkDTO
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -78,7 +78,7 @@ class TravelNumberAutoRemarkDTO extends AbstractStructBase
     /**
      * Set remarkText value
      * @param string $remarkText
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberAutoRemarkDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\TravelNumberAutoRemarkDTO
      */
     public function setRemarkText(?string $remarkText = null): self
     {
@@ -101,7 +101,7 @@ class TravelNumberAutoRemarkDTO extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberAutoRemarkDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\TravelNumberAutoRemarkDTO
      */
     public function setTravelNo(?string $travelNo = null): self
     {

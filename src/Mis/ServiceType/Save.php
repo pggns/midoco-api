@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\ServiceType;
+namespace Pggns\MidocoApi\Mis\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Save extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Mis\ServiceType\Save
+     * @return \Pggns\MidocoApi\Mis\ServiceType\Save
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRequest $paramSaveCampaignRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRespType|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\SaveCampaignRequest $paramSaveCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignRespType|bool
      */
-    public function saveCampaign(\Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRequest $paramSaveCampaignRequest)
+    public function saveCampaign(\Pggns\MidocoApi\Mis\StructType\SaveCampaignRequest $paramSaveCampaignRequest)
     {
         try {
             $this->setResult($resultSaveCampaign = $this->getSoapClient()->__soapCall('saveCampaign', [
@@ -58,15 +58,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignWSRequest $paramSaveCampaignWSRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignWSResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\SaveCampaignWSRequest $paramSaveCampaignWSRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignWSResponse|bool
      */
-    public function saveCampaignWS(\Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignWSRequest $paramSaveCampaignWSRequest)
+    public function saveCampaignWS(\Pggns\MidocoApi\Mis\StructType\SaveCampaignWSRequest $paramSaveCampaignWSRequest)
     {
         try {
             $this->setResult($resultSaveCampaignWS = $this->getSoapClient()->__soapCall('saveCampaignWS', [
@@ -85,15 +85,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SaveJasperReportParamValueRequest $paramSaveJasperReportParamValueRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveJasperReportParamValueResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\SaveJasperReportParamValueRequest $paramSaveJasperReportParamValueRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveJasperReportParamValueResponse|bool
      */
-    public function saveJasperReportParamValue(\Pggns\MidocoApi\Api\Mis\StructType\SaveJasperReportParamValueRequest $paramSaveJasperReportParamValueRequest)
+    public function saveJasperReportParamValue(\Pggns\MidocoApi\Mis\StructType\SaveJasperReportParamValueRequest $paramSaveJasperReportParamValueRequest)
     {
         try {
             $this->setResult($resultSaveJasperReportParamValue = $this->getSoapClient()->__soapCall('saveJasperReportParamValue', [
@@ -112,15 +112,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SaveJasperParameterRequest $paramSaveJasperParameterRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveJasperParameterResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\SaveJasperParameterRequest $paramSaveJasperParameterRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveJasperParameterResponse|bool
      */
-    public function saveJasperParameter(\Pggns\MidocoApi\Api\Mis\StructType\SaveJasperParameterRequest $paramSaveJasperParameterRequest)
+    public function saveJasperParameter(\Pggns\MidocoApi\Mis\StructType\SaveJasperParameterRequest $paramSaveJasperParameterRequest)
     {
         try {
             $this->setResult($resultSaveJasperParameter = $this->getSoapClient()->__soapCall('saveJasperParameter', [
@@ -139,15 +139,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SaveJasperReportRequest $paramSaveJasperReportRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveJasperReportResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\SaveJasperReportRequest $paramSaveJasperReportRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveJasperReportResponse|bool
      */
-    public function saveJasperReport(\Pggns\MidocoApi\Api\Mis\StructType\SaveJasperReportRequest $paramSaveJasperReportRequest)
+    public function saveJasperReport(\Pggns\MidocoApi\Mis\StructType\SaveJasperReportRequest $paramSaveJasperReportRequest)
     {
         try {
             $this->setResult($resultSaveJasperReport = $this->getSoapClient()->__soapCall('saveJasperReport', [
@@ -166,15 +166,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SaveJasperReportWithParamValueRequest $paramSaveJasperReportWithParamValueRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveJasperReportWithParamValueResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\SaveJasperReportWithParamValueRequest $paramSaveJasperReportWithParamValueRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveJasperReportWithParamValueResponse|bool
      */
-    public function saveJasperReportWithParameterValue(\Pggns\MidocoApi\Api\Mis\StructType\SaveJasperReportWithParamValueRequest $paramSaveJasperReportWithParamValueRequest)
+    public function saveJasperReportWithParameterValue(\Pggns\MidocoApi\Mis\StructType\SaveJasperReportWithParamValueRequest $paramSaveJasperReportWithParamValueRequest)
     {
         try {
             $this->setResult($resultSaveJasperReportWithParameterValue = $this->getSoapClient()->__soapCall('saveJasperReportWithParameterValue', [
@@ -193,15 +193,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SaveAccessJasperReportRequest $paramSaveAccessJasperReportRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveAccessJasperReportResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\SaveAccessJasperReportRequest $paramSaveAccessJasperReportRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveAccessJasperReportResponse|bool
      */
-    public function saveAccessJasperReport(\Pggns\MidocoApi\Api\Mis\StructType\SaveAccessJasperReportRequest $paramSaveAccessJasperReportRequest)
+    public function saveAccessJasperReport(\Pggns\MidocoApi\Mis\StructType\SaveAccessJasperReportRequest $paramSaveAccessJasperReportRequest)
     {
         try {
             $this->setResult($resultSaveAccessJasperReport = $this->getSoapClient()->__soapCall('saveAccessJasperReport', [
@@ -220,15 +220,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SaveReportVersionRequest $paramSaveReportVersionRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveReportVersionResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\SaveReportVersionRequest $paramSaveReportVersionRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveReportVersionResponse|bool
      */
-    public function saveReportVersion(\Pggns\MidocoApi\Api\Mis\StructType\SaveReportVersionRequest $paramSaveReportVersionRequest)
+    public function saveReportVersion(\Pggns\MidocoApi\Mis\StructType\SaveReportVersionRequest $paramSaveReportVersionRequest)
     {
         try {
             $this->setResult($resultSaveReportVersion = $this->getSoapClient()->__soapCall('saveReportVersion', [
@@ -247,15 +247,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SaveCopyJasperReportWithParamValueRequest $paramSaveCopyJasperReportWithParamValueRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCopyJasperReportWithParamValueResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\SaveCopyJasperReportWithParamValueRequest $paramSaveCopyJasperReportWithParamValueRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCopyJasperReportWithParamValueResponse|bool
      */
-    public function saveCopyOfSavedReport(\Pggns\MidocoApi\Api\Mis\StructType\SaveCopyJasperReportWithParamValueRequest $paramSaveCopyJasperReportWithParamValueRequest)
+    public function saveCopyOfSavedReport(\Pggns\MidocoApi\Mis\StructType\SaveCopyJasperReportWithParamValueRequest $paramSaveCopyJasperReportWithParamValueRequest)
     {
         try {
             $this->setResult($resultSaveCopyOfSavedReport = $this->getSoapClient()->__soapCall('saveCopyOfSavedReport', [
@@ -274,15 +274,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignOrgUnitRequest $paramSaveCampaignOrgUnitRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignOrgUnitResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\SaveCampaignOrgUnitRequest $paramSaveCampaignOrgUnitRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignOrgUnitResponse|bool
      */
-    public function saveCampaignOrgUnit(\Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignOrgUnitRequest $paramSaveCampaignOrgUnitRequest)
+    public function saveCampaignOrgUnit(\Pggns\MidocoApi\Mis\StructType\SaveCampaignOrgUnitRequest $paramSaveCampaignOrgUnitRequest)
     {
         try {
             $this->setResult($resultSaveCampaignOrgUnit = $this->getSoapClient()->__soapCall('saveCampaignOrgUnit', [
@@ -301,15 +301,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SaveMisCampaignDocumentRequest $paramSaveMisCampaignDocumentRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveMisCampaignDocumentResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\SaveMisCampaignDocumentRequest $paramSaveMisCampaignDocumentRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveMisCampaignDocumentResponse|bool
      */
-    public function saveMisCampaignDocument(\Pggns\MidocoApi\Api\Mis\StructType\SaveMisCampaignDocumentRequest $paramSaveMisCampaignDocumentRequest)
+    public function saveMisCampaignDocument(\Pggns\MidocoApi\Mis\StructType\SaveMisCampaignDocumentRequest $paramSaveMisCampaignDocumentRequest)
     {
         try {
             $this->setResult($resultSaveMisCampaignDocument = $this->getSoapClient()->__soapCall('saveMisCampaignDocument', [
@@ -326,7 +326,7 @@ class Save extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveAccessJasperReportResponse|\Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignOrgUnitResponse|\Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRespType|\Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignWSResponse|\Pggns\MidocoApi\Api\Mis\StructType\SaveCopyJasperReportWithParamValueResponse|\Pggns\MidocoApi\Api\Mis\StructType\SaveJasperParameterResponse|\Pggns\MidocoApi\Api\Mis\StructType\SaveJasperReportParamValueResponse|\Pggns\MidocoApi\Api\Mis\StructType\SaveJasperReportResponse|\Pggns\MidocoApi\Api\Mis\StructType\SaveJasperReportWithParamValueResponse|\Pggns\MidocoApi\Api\Mis\StructType\SaveMisCampaignDocumentResponse|\Pggns\MidocoApi\Api\Mis\StructType\SaveReportVersionResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveAccessJasperReportResponse|\Pggns\MidocoApi\Mis\StructType\SaveCampaignOrgUnitResponse|\Pggns\MidocoApi\Mis\StructType\SaveCampaignRespType|\Pggns\MidocoApi\Mis\StructType\SaveCampaignWSResponse|\Pggns\MidocoApi\Mis\StructType\SaveCopyJasperReportWithParamValueResponse|\Pggns\MidocoApi\Mis\StructType\SaveJasperParameterResponse|\Pggns\MidocoApi\Mis\StructType\SaveJasperReportParamValueResponse|\Pggns\MidocoApi\Mis\StructType\SaveJasperReportResponse|\Pggns\MidocoApi\Mis\StructType\SaveJasperReportWithParamValueResponse|\Pggns\MidocoApi\Mis\StructType\SaveMisCampaignDocumentResponse|\Pggns\MidocoApi\Mis\StructType\SaveReportVersionResponse
      */
     public function getResult()
     {

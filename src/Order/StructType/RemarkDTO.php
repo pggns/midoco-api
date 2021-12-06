@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param string $categoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setCategoryId(?string $categoryId = null): self
     {
@@ -166,7 +166,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set constraintOrgunit value
      * @param bool $constraintOrgunit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setConstraintOrgunit(?bool $constraintOrgunit = null): self
     {
@@ -189,7 +189,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set constraintSupplier value
      * @param bool $constraintSupplier
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setConstraintSupplier(?bool $constraintSupplier = null): self
     {
@@ -212,7 +212,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -235,7 +235,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set enableTask value
      * @param bool $enableTask
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setEnableTask(?bool $enableTask = null): self
     {
@@ -258,7 +258,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set flightTimeChange value
      * @param bool $flightTimeChange
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setFlightTimeChange(?bool $flightTimeChange = null): self
     {
@@ -281,7 +281,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set longDescription value
      * @param string $longDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setLongDescription(?string $longDescription = null): self
     {
@@ -304,7 +304,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set shortId value
      * @param string $shortId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setShortId(?string $shortId = null): self
     {
@@ -327,7 +327,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set useInAdditService value
      * @param bool $useInAdditService
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setUseInAdditService(?bool $useInAdditService = null): self
     {
@@ -350,7 +350,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set useInEmail value
      * @param bool $useInEmail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setUseInEmail(?bool $useInEmail = null): self
     {
@@ -373,7 +373,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set useInNotice value
      * @param bool $useInNotice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setUseInNotice(?bool $useInNotice = null): self
     {
@@ -396,7 +396,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set useInOrder value
      * @param bool $useInOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setUseInOrder(?bool $useInOrder = null): self
     {
@@ -419,7 +419,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set useInService value
      * @param bool $useInService
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setUseInService(?bool $useInService = null): self
     {
@@ -442,7 +442,7 @@ class RemarkDTO extends AbstractStructBase
     /**
      * Set useInVerk value
      * @param bool $useInVerk
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RemarkDTO
      */
     public function setUseInVerk(?bool $useInVerk = null): self
     {

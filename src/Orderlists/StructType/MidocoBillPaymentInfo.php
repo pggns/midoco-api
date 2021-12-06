@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -101,7 +101,7 @@ class MidocoBillPaymentInfo extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillPaymentInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillPaymentInfo
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -124,7 +124,7 @@ class MidocoBillPaymentInfo extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillPaymentInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillPaymentInfo
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -147,7 +147,7 @@ class MidocoBillPaymentInfo extends AbstractStructBase
     /**
      * Set paid value
      * @param bool $paid
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillPaymentInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillPaymentInfo
      */
     public function setPaid(?bool $paid = null): self
     {
@@ -170,7 +170,7 @@ class MidocoBillPaymentInfo extends AbstractStructBase
     /**
      * Set paidDate value
      * @param string $paidDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillPaymentInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillPaymentInfo
      */
     public function setPaidDate(?string $paidDate = null): self
     {
@@ -193,7 +193,7 @@ class MidocoBillPaymentInfo extends AbstractStructBase
     /**
      * Set dunned value
      * @param bool $dunned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillPaymentInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillPaymentInfo
      */
     public function setDunned(?bool $dunned = null): self
     {
@@ -216,7 +216,7 @@ class MidocoBillPaymentInfo extends AbstractStructBase
     /**
      * Set dunningDate value
      * @param string $dunningDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillPaymentInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillPaymentInfo
      */
     public function setDunningDate(?string $dunningDate = null): self
     {
@@ -239,7 +239,7 @@ class MidocoBillPaymentInfo extends AbstractStructBase
     /**
      * Set dunningLevel value
      * @param string $dunningLevel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillPaymentInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillPaymentInfo
      */
     public function setDunningLevel(?string $dunningLevel = null): self
     {

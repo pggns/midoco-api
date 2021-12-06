@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetEMDSubgroupsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoEMDSubgroup
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoEMDSubgroup[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoEMDSubgroup[]
      */
     protected ?array $MidocoEMDSubgroup = null;
     /**
      * Constructor method for GetEMDSubgroupsResponse
      * @uses GetEMDSubgroupsResponse::setMidocoEMDSubgroup()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoEMDSubgroup[] $midocoEMDSubgroup
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoEMDSubgroup[] $midocoEMDSubgroup
      */
     public function __construct(?array $midocoEMDSubgroup = null)
     {
@@ -34,7 +34,7 @@ class GetEMDSubgroupsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoEMDSubgroup value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoEMDSubgroup[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoEMDSubgroup[]
      */
     public function getMidocoEMDSubgroup(): ?array
     {
@@ -55,12 +55,12 @@ class GetEMDSubgroupsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getEMDSubgroupsResponseMidocoEMDSubgroupItem) {
             // validation for constraint: itemType
-            if (!$getEMDSubgroupsResponseMidocoEMDSubgroupItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoEMDSubgroup) {
+            if (!$getEMDSubgroupsResponseMidocoEMDSubgroupItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoEMDSubgroup) {
                 $invalidValues[] = is_object($getEMDSubgroupsResponseMidocoEMDSubgroupItem) ? get_class($getEMDSubgroupsResponseMidocoEMDSubgroupItem) : sprintf('%s(%s)', gettype($getEMDSubgroupsResponseMidocoEMDSubgroupItem), var_export($getEMDSubgroupsResponseMidocoEMDSubgroupItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoEMDSubgroup property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoEMDSubgroup, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoEMDSubgroup property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoEMDSubgroup, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetEMDSubgroupsResponse extends AbstractStructBase
     /**
      * Set MidocoEMDSubgroup value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoEMDSubgroup[] $midocoEMDSubgroup
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEMDSubgroupsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoEMDSubgroup[] $midocoEMDSubgroup
+     * @return \Pggns\MidocoApi\Order\StructType\GetEMDSubgroupsResponse
      */
     public function setMidocoEMDSubgroup(?array $midocoEMDSubgroup = null): self
     {
@@ -85,14 +85,14 @@ class GetEMDSubgroupsResponse extends AbstractStructBase
     /**
      * Add item to MidocoEMDSubgroup value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoEMDSubgroup $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEMDSubgroupsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoEMDSubgroup $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetEMDSubgroupsResponse
      */
-    public function addToMidocoEMDSubgroup(\Pggns\MidocoApi\Api\Order\StructType\MidocoEMDSubgroup $item): self
+    public function addToMidocoEMDSubgroup(\Pggns\MidocoApi\Order\StructType\MidocoEMDSubgroup $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoEMDSubgroup) {
-            throw new InvalidArgumentException(sprintf('The MidocoEMDSubgroup property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoEMDSubgroup, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoEMDSubgroup) {
+            throw new InvalidArgumentException(sprintf('The MidocoEMDSubgroup property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoEMDSubgroup, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoEMDSubgroup[] = $item;
         

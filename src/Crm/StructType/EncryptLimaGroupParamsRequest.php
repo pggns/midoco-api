@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class EncryptLimaGroupParamsRequest extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\EncryptLimaGroupParamsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\EncryptLimaGroupParamsRequest
      */
     public function setUrl(?string $url = null): self
     {

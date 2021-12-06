@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class UserChangesListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType[]
      */
     protected ?array $MidocoUserChangesList = null;
     /**
@@ -32,7 +32,7 @@ class UserChangesListResponse extends AbstractStructBase
      * Constructor method for UserChangesListResponse
      * @uses UserChangesListResponse::setMidocoUserChangesList()
      * @uses UserChangesListResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType[] $midocoUserChangesList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType[] $midocoUserChangesList
      * @param int $noOfResults
      */
     public function __construct(?array $midocoUserChangesList = null, ?int $noOfResults = null)
@@ -43,7 +43,7 @@ class UserChangesListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoUserChangesList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType[]
      */
     public function getMidocoUserChangesList(): ?array
     {
@@ -64,12 +64,12 @@ class UserChangesListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $userChangesListResponseMidocoUserChangesListItem) {
             // validation for constraint: itemType
-            if (!$userChangesListResponseMidocoUserChangesListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType) {
+            if (!$userChangesListResponseMidocoUserChangesListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType) {
                 $invalidValues[] = is_object($userChangesListResponseMidocoUserChangesListItem) ? get_class($userChangesListResponseMidocoUserChangesListItem) : sprintf('%s(%s)', gettype($userChangesListResponseMidocoUserChangesListItem), var_export($userChangesListResponseMidocoUserChangesListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoUserChangesList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoUserChangesList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -78,8 +78,8 @@ class UserChangesListResponse extends AbstractStructBase
     /**
      * Set MidocoUserChangesList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType[] $midocoUserChangesList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserChangesListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType[] $midocoUserChangesList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserChangesListResponse
      */
     public function setMidocoUserChangesList(?array $midocoUserChangesList = null): self
     {
@@ -94,14 +94,14 @@ class UserChangesListResponse extends AbstractStructBase
     /**
      * Add item to MidocoUserChangesList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserChangesListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserChangesListResponse
      */
-    public function addToMidocoUserChangesList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType $item): self
+    public function addToMidocoUserChangesList(\Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType) {
-            throw new InvalidArgumentException(sprintf('The MidocoUserChangesList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType) {
+            throw new InvalidArgumentException(sprintf('The MidocoUserChangesList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoUserChangesList[] = $item;
         
@@ -118,7 +118,7 @@ class UserChangesListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserChangesListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserChangesListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

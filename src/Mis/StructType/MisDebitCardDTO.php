@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class MisDebitCardDTO extends AbstractStructBase
     /**
      * Set bankAccount value
      * @param string $bankAccount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisDebitCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisDebitCardDTO
      */
     public function setBankAccount(?string $bankAccount = null): self
     {
@@ -142,7 +142,7 @@ class MisDebitCardDTO extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisDebitCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisDebitCardDTO
      */
     public function setBankName(?string $bankName = null): self
     {
@@ -165,7 +165,7 @@ class MisDebitCardDTO extends AbstractStructBase
     /**
      * Set bankNo value
      * @param string $bankNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisDebitCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisDebitCardDTO
      */
     public function setBankNo(?string $bankNo = null): self
     {
@@ -188,7 +188,7 @@ class MisDebitCardDTO extends AbstractStructBase
     /**
      * Set cardType value
      * @param string $cardType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisDebitCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisDebitCardDTO
      */
     public function setCardType(?string $cardType = null): self
     {
@@ -211,7 +211,7 @@ class MisDebitCardDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param string $countryId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisDebitCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisDebitCardDTO
      */
     public function setCountryId(?string $countryId = null): self
     {
@@ -234,7 +234,7 @@ class MisDebitCardDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisDebitCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisDebitCardDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -257,7 +257,7 @@ class MisDebitCardDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisDebitCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisDebitCardDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -280,7 +280,7 @@ class MisDebitCardDTO extends AbstractStructBase
     /**
      * Set owner value
      * @param string $owner
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisDebitCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisDebitCardDTO
      */
     public function setOwner(?string $owner = null): self
     {
@@ -303,7 +303,7 @@ class MisDebitCardDTO extends AbstractStructBase
     /**
      * Set useAsDefault value
      * @param bool $useAsDefault
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisDebitCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisDebitCardDTO
      */
     public function setUseAsDefault(?bool $useAsDefault = null): self
     {
@@ -326,7 +326,7 @@ class MisDebitCardDTO extends AbstractStructBase
     /**
      * Set validMonth value
      * @param int $validMonth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisDebitCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisDebitCardDTO
      */
     public function setValidMonth(?int $validMonth = null): self
     {
@@ -349,7 +349,7 @@ class MisDebitCardDTO extends AbstractStructBase
     /**
      * Set validYear value
      * @param int $validYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisDebitCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisDebitCardDTO
      */
     public function setValidYear(?int $validYear = null): self
     {

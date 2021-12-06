@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMfGroupResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMfGroup
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfGroup[]
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfGroup[]
      */
     protected ?array $MidocoMfGroup = null;
     /**
      * Constructor method for GetMfGroupResponse
      * @uses GetMfGroupResponse::setMidocoMfGroup()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfGroup[] $midocoMfGroup
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfGroup[] $midocoMfGroup
      */
     public function __construct(?array $midocoMfGroup = null)
     {
@@ -34,7 +34,7 @@ class GetMfGroupResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMfGroup value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfGroup[]
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfGroup[]
      */
     public function getMidocoMfGroup(): ?array
     {
@@ -55,12 +55,12 @@ class GetMfGroupResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMfGroupResponseMidocoMfGroupItem) {
             // validation for constraint: itemType
-            if (!$getMfGroupResponseMidocoMfGroupItem instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfGroup) {
+            if (!$getMfGroupResponseMidocoMfGroupItem instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfGroup) {
                 $invalidValues[] = is_object($getMfGroupResponseMidocoMfGroupItem) ? get_class($getMfGroupResponseMidocoMfGroupItem) : sprintf('%s(%s)', gettype($getMfGroupResponseMidocoMfGroupItem), var_export($getMfGroupResponseMidocoMfGroupItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMfGroup property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfGroup, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMfGroup property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfGroup, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMfGroupResponse extends AbstractStructBase
     /**
      * Set MidocoMfGroup value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfGroup[] $midocoMfGroup
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetMfGroupResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfGroup[] $midocoMfGroup
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetMfGroupResponse
      */
     public function setMidocoMfGroup(?array $midocoMfGroup = null): self
     {
@@ -85,14 +85,14 @@ class GetMfGroupResponse extends AbstractStructBase
     /**
      * Add item to MidocoMfGroup value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfGroup $item
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetMfGroupResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfGroup $item
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetMfGroupResponse
      */
-    public function addToMidocoMfGroup(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfGroup $item): self
+    public function addToMidocoMfGroup(\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfGroup $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfGroup) {
-            throw new InvalidArgumentException(sprintf('The MidocoMfGroup property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfGroup, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfGroup) {
+            throw new InvalidArgumentException(sprintf('The MidocoMfGroup property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfGroup, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMfGroup[] = $item;
         

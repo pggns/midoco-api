@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class MidocoOrderNotice extends OrderNoticeDTO
     /**
      * Set manuallyCreatedTask value
      * @param bool $manuallyCreatedTask
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderNotice
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderNotice
      */
     public function setManuallyCreatedTask(?bool $manuallyCreatedTask = null): self
     {
@@ -80,7 +80,7 @@ class MidocoOrderNotice extends OrderNoticeDTO
     /**
      * Set serviceAssignment value
      * @param string $serviceAssignment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderNotice
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderNotice
      */
     public function setServiceAssignment(?string $serviceAssignment = ''): self
     {
@@ -103,7 +103,7 @@ class MidocoOrderNotice extends OrderNoticeDTO
     /**
      * Set delegationComment value
      * @param string $delegationComment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderNotice
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderNotice
      */
     public function setDelegationComment(?string $delegationComment = null): self
     {

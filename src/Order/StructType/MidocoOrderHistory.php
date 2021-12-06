@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoOrderHistory extends OrderHistoryDTO
     /**
      * Set orderDocRefId value
      * @param string $orderDocRefId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderHistory
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderHistory
      */
     public function setOrderDocRefId(?string $orderDocRefId = null): self
     {

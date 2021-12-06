@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetEntryDetailsResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoEntryDetails
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoEntryDetails|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoEntryDetails|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoEntryDetails $MidocoEntryDetails = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoEntryDetails $MidocoEntryDetails = null;
     /**
      * Constructor method for GetEntryDetailsResponse
      * @uses GetEntryDetailsResponse::setMidocoEntryDetails()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoEntryDetails $midocoEntryDetails
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoEntryDetails $midocoEntryDetails
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoEntryDetails $midocoEntryDetails = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoEntryDetails $midocoEntryDetails = null)
     {
         $this
             ->setMidocoEntryDetails($midocoEntryDetails);
     }
     /**
      * Get MidocoEntryDetails value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoEntryDetails|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoEntryDetails|null
      */
-    public function getMidocoEntryDetails(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoEntryDetails
+    public function getMidocoEntryDetails(): ?\Pggns\MidocoApi\Order\StructType\MidocoEntryDetails
     {
         return $this->MidocoEntryDetails;
     }
     /**
      * Set MidocoEntryDetails value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoEntryDetails $midocoEntryDetails
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEntryDetailsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoEntryDetails $midocoEntryDetails
+     * @return \Pggns\MidocoApi\Order\StructType\GetEntryDetailsResponse
      */
-    public function setMidocoEntryDetails(?\Pggns\MidocoApi\Api\Order\StructType\MidocoEntryDetails $midocoEntryDetails = null): self
+    public function setMidocoEntryDetails(?\Pggns\MidocoApi\Order\StructType\MidocoEntryDetails $midocoEntryDetails = null): self
     {
         $this->MidocoEntryDetails = $midocoEntryDetails;
         

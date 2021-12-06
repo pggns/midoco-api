@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class GetCustomerCreditScoreRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCustomerCreditScoreRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetCustomerCreditScoreRequest
      */
     public function setOrderId(int $orderId): self
     {
@@ -84,7 +84,7 @@ class GetCustomerCreditScoreRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCustomerCreditScoreRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetCustomerCreditScoreRequest
      */
     public function setOrderNo(int $orderNo): self
     {
@@ -107,7 +107,7 @@ class GetCustomerCreditScoreRequest extends AbstractStructBase
     /**
      * Set callWorkflow value
      * @param bool $callWorkflow
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCustomerCreditScoreRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetCustomerCreditScoreRequest
      */
     public function setCallWorkflow(bool $callWorkflow): self
     {

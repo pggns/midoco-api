@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveAdviceSettlementRequest extends AbstractStructBase
      * The MidocoAdviceSettlement
      * Meta information extracted from the WSDL
      * - ref: MidocoAdviceSettlement
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement $MidocoAdviceSettlement = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement $MidocoAdviceSettlement = null;
     /**
      * The assignReceiptNo
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SaveAdviceSettlementRequest extends AbstractStructBase
      * Constructor method for SaveAdviceSettlementRequest
      * @uses SaveAdviceSettlementRequest::setMidocoAdviceSettlement()
      * @uses SaveAdviceSettlementRequest::setAssignReceiptNo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement $midocoAdviceSettlement
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement $midocoAdviceSettlement
      * @param bool $assignReceiptNo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement $midocoAdviceSettlement = null, ?bool $assignReceiptNo = false)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement $midocoAdviceSettlement = null, ?bool $assignReceiptNo = false)
     {
         $this
             ->setMidocoAdviceSettlement($midocoAdviceSettlement)
@@ -42,18 +42,18 @@ class SaveAdviceSettlementRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAdviceSettlement value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement|null
      */
-    public function getMidocoAdviceSettlement(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement
+    public function getMidocoAdviceSettlement(): ?\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement
     {
         return $this->MidocoAdviceSettlement;
     }
     /**
      * Set MidocoAdviceSettlement value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement $midocoAdviceSettlement
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveAdviceSettlementRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement $midocoAdviceSettlement
+     * @return \Pggns\MidocoApi\Order\StructType\SaveAdviceSettlementRequest
      */
-    public function setMidocoAdviceSettlement(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement $midocoAdviceSettlement = null): self
+    public function setMidocoAdviceSettlement(?\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement $midocoAdviceSettlement = null): self
     {
         $this->MidocoAdviceSettlement = $midocoAdviceSettlement;
         
@@ -70,7 +70,7 @@ class SaveAdviceSettlementRequest extends AbstractStructBase
     /**
      * Set assignReceiptNo value
      * @param bool $assignReceiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveAdviceSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveAdviceSettlementRequest
      */
     public function setAssignReceiptNo(?bool $assignReceiptNo = false): self
     {

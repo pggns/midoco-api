@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\ServiceType;
+namespace Pggns\MidocoApi\OrderSD\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Validate extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\OrderSD\ServiceType\Validate
+     * @return \Pggns\MidocoApi\OrderSD\ServiceType\Validate
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Validate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ValidatePremiumRuleContentRequest $paramValidatePremiumRuleContentRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ValidatePremiumRuleContentResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ValidatePremiumRuleContentRequest $paramValidatePremiumRuleContentRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ValidatePremiumRuleContentResponse|bool
      */
-    public function validatePremiumRule(\Pggns\MidocoApi\Api\OrderSD\StructType\ValidatePremiumRuleContentRequest $paramValidatePremiumRuleContentRequest)
+    public function validatePremiumRule(\Pggns\MidocoApi\OrderSD\StructType\ValidatePremiumRuleContentRequest $paramValidatePremiumRuleContentRequest)
     {
         try {
             $this->setResult($resultValidatePremiumRule = $this->getSoapClient()->__soapCall('validatePremiumRule', [
@@ -58,15 +58,15 @@ class Validate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ValidateCompetitionRuleContentRequest $paramValidateCompetitionRuleContentRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ValidateCompetitionRuleContentResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ValidateCompetitionRuleContentRequest $paramValidateCompetitionRuleContentRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ValidateCompetitionRuleContentResponse|bool
      */
-    public function validateCompetitionRule(\Pggns\MidocoApi\Api\OrderSD\StructType\ValidateCompetitionRuleContentRequest $paramValidateCompetitionRuleContentRequest)
+    public function validateCompetitionRule(\Pggns\MidocoApi\OrderSD\StructType\ValidateCompetitionRuleContentRequest $paramValidateCompetitionRuleContentRequest)
     {
         try {
             $this->setResult($resultValidateCompetitionRule = $this->getSoapClient()->__soapCall('validateCompetitionRule', [
@@ -85,15 +85,15 @@ class Validate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ValidateSupplierAccessRequest $paramValidateSupplierAccessRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ValidateSupplierAccessResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ValidateSupplierAccessRequest $paramValidateSupplierAccessRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ValidateSupplierAccessResponse|bool
      */
-    public function validateSupplierAccess(\Pggns\MidocoApi\Api\OrderSD\StructType\ValidateSupplierAccessRequest $paramValidateSupplierAccessRequest)
+    public function validateSupplierAccess(\Pggns\MidocoApi\OrderSD\StructType\ValidateSupplierAccessRequest $paramValidateSupplierAccessRequest)
     {
         try {
             $this->setResult($resultValidateSupplierAccess = $this->getSoapClient()->__soapCall('validateSupplierAccess', [
@@ -110,7 +110,7 @@ class Validate extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ValidateCompetitionRuleContentResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\ValidatePremiumRuleContentResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\ValidateSupplierAccessResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ValidateCompetitionRuleContentResponse|\Pggns\MidocoApi\OrderSD\StructType\ValidatePremiumRuleContentResponse|\Pggns\MidocoApi\OrderSD\StructType\ValidateSupplierAccessResponse
      */
     public function getResult()
     {

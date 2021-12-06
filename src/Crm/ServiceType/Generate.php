@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\ServiceType;
+namespace Pggns\MidocoApi\Crm\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Generate extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Crm\ServiceType\Generate
+     * @return \Pggns\MidocoApi\Crm\ServiceType\Generate
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Generate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\GenerateMandateReferenceRequest $paramGenerateMandateReferenceRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GenerateMandateReferenceResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\GenerateMandateReferenceRequest $paramGenerateMandateReferenceRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GenerateMandateReferenceResponse|bool
      */
-    public function generateMandateReference(\Pggns\MidocoApi\Api\Crm\StructType\GenerateMandateReferenceRequest $paramGenerateMandateReferenceRequest)
+    public function generateMandateReference(\Pggns\MidocoApi\Crm\StructType\GenerateMandateReferenceRequest $paramGenerateMandateReferenceRequest)
     {
         try {
             $this->setResult($resultGenerateMandateReference = $this->getSoapClient()->__soapCall('generateMandateReference', [
@@ -58,15 +58,15 @@ class Generate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\GenerateMidocoMandateRequest $paramGenerateMidocoMandateRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GenerateMidocoMandateResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\GenerateMidocoMandateRequest $paramGenerateMidocoMandateRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GenerateMidocoMandateResponse|bool
      */
-    public function generateMidocoMandate(\Pggns\MidocoApi\Api\Crm\StructType\GenerateMidocoMandateRequest $paramGenerateMidocoMandateRequest)
+    public function generateMidocoMandate(\Pggns\MidocoApi\Crm\StructType\GenerateMidocoMandateRequest $paramGenerateMidocoMandateRequest)
     {
         try {
             $this->setResult($resultGenerateMidocoMandate = $this->getSoapClient()->__soapCall('generateMidocoMandate', [
@@ -83,7 +83,7 @@ class Generate extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GenerateMandateReferenceResponse|\Pggns\MidocoApi\Api\Crm\StructType\GenerateMidocoMandateResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\GenerateMandateReferenceResponse|\Pggns\MidocoApi\Crm\StructType\GenerateMidocoMandateResponse
      */
     public function getResult()
     {

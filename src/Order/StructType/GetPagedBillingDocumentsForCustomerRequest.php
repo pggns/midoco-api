@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetPagedBillingDocumentsForCustomerRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPagedBillingDocumentsForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPagedBillingDocumentsForCustomerRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -70,7 +70,7 @@ class GetPagedBillingDocumentsForCustomerRequest extends AbstractStructBase
     /**
      * Set pageNo value
      * @param int $pageNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPagedBillingDocumentsForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPagedBillingDocumentsForCustomerRequest
      */
     public function setPageNo(?int $pageNo = null): self
     {

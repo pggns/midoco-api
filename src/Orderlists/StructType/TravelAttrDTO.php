@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class TravelAttrDTO extends AbstractStructBase
     /**
      * Set attrId value
      * @param int $attrId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelAttrDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelAttrDTO
      */
     public function setAttrId(?int $attrId = null): self
     {
@@ -78,7 +78,7 @@ class TravelAttrDTO extends AbstractStructBase
     /**
      * Set hotelCode value
      * @param string $hotelCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelAttrDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelAttrDTO
      */
     public function setHotelCode(?string $hotelCode = null): self
     {
@@ -101,7 +101,7 @@ class TravelAttrDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelAttrDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelAttrDTO
      */
     public function setItemId(?int $itemId = null): self
     {

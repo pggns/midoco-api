@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetSequencePoolHistoriesRequest extends AbstractStructBase
      * The MidocoSequencePool
      * Meta information extracted from the WSDL
      * - ref: MidocoSequencePool
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\SequencePoolDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\SequencePoolDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\SequencePoolDTO $MidocoSequencePool = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\SequencePoolDTO $MidocoSequencePool = null;
     /**
      * Constructor method for GetSequencePoolHistoriesRequest
      * @uses GetSequencePoolHistoriesRequest::setMidocoSequencePool()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SequencePoolDTO $midocoSequencePool
+     * @param \Pggns\MidocoApi\Documents\StructType\SequencePoolDTO $midocoSequencePool
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\SequencePoolDTO $midocoSequencePool = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\SequencePoolDTO $midocoSequencePool = null)
     {
         $this
             ->setMidocoSequencePool($midocoSequencePool);
     }
     /**
      * Get MidocoSequencePool value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SequencePoolDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\SequencePoolDTO|null
      */
-    public function getMidocoSequencePool(): ?\Pggns\MidocoApi\Api\Documents\StructType\SequencePoolDTO
+    public function getMidocoSequencePool(): ?\Pggns\MidocoApi\Documents\StructType\SequencePoolDTO
     {
         return $this->MidocoSequencePool;
     }
     /**
      * Set MidocoSequencePool value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SequencePoolDTO $midocoSequencePool
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSequencePoolHistoriesRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\SequencePoolDTO $midocoSequencePool
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSequencePoolHistoriesRequest
      */
-    public function setMidocoSequencePool(?\Pggns\MidocoApi\Api\Documents\StructType\SequencePoolDTO $midocoSequencePool = null): self
+    public function setMidocoSequencePool(?\Pggns\MidocoApi\Documents\StructType\SequencePoolDTO $midocoSequencePool = null): self
     {
         $this->MidocoSequencePool = $midocoSequencePool;
         

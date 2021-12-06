@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveArticleRequest extends AbstractStructBase
      * The MidocoArticle
      * Meta information extracted from the WSDL
      * - ref: MidocoArticle
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\ArticleDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO $MidocoArticle = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\ArticleDTO $MidocoArticle = null;
     /**
      * Constructor method for SaveArticleRequest
      * @uses SaveArticleRequest::setMidocoArticle()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO $midocoArticle
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ArticleDTO $midocoArticle
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO $midocoArticle = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\ArticleDTO $midocoArticle = null)
     {
         $this
             ->setMidocoArticle($midocoArticle);
     }
     /**
      * Get MidocoArticle value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ArticleDTO|null
      */
-    public function getMidocoArticle(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO
+    public function getMidocoArticle(): ?\Pggns\MidocoApi\Orderlists\StructType\ArticleDTO
     {
         return $this->MidocoArticle;
     }
     /**
      * Set MidocoArticle value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO $midocoArticle
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveArticleRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ArticleDTO $midocoArticle
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveArticleRequest
      */
-    public function setMidocoArticle(?\Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO $midocoArticle = null): self
+    public function setMidocoArticle(?\Pggns\MidocoApi\Orderlists\StructType\ArticleDTO $midocoArticle = null): self
     {
         $this->MidocoArticle = $midocoArticle;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoCashBookSignature extends CashBookSignatureDTO
     /**
      * Set actionRequired value
      * @param string $actionRequired
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCashBookSignature
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCashBookSignature
      */
     public function setActionRequired(?string $actionRequired = null): self
     {

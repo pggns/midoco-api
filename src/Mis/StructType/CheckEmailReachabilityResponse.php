@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -42,7 +42,7 @@ class CheckEmailReachabilityResponse extends AbstractStructBase
     /**
      * Set isByEmailReachable value
      * @param bool $isByEmailReachable
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CheckEmailReachabilityResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\CheckEmailReachabilityResponse
      */
     public function setIsByEmailReachable(?bool $isByEmailReachable = null): self
     {

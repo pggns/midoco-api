@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetTravelNumberVatDivTemplsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTravelNumberVatDivTempl
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatDivTemplDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\TravelNumberVatDivTemplDTO[]
      */
     protected ?array $MidocoTravelNumberVatDivTempl = null;
     /**
      * Constructor method for GetTravelNumberVatDivTemplsResponse
      * @uses GetTravelNumberVatDivTemplsResponse::setMidocoTravelNumberVatDivTempl()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatDivTemplDTO[] $midocoTravelNumberVatDivTempl
+     * @param \Pggns\MidocoApi\Documents\StructType\TravelNumberVatDivTemplDTO[] $midocoTravelNumberVatDivTempl
      */
     public function __construct(?array $midocoTravelNumberVatDivTempl = null)
     {
@@ -34,7 +34,7 @@ class GetTravelNumberVatDivTemplsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTravelNumberVatDivTempl value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatDivTemplDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberVatDivTemplDTO[]
      */
     public function getMidocoTravelNumberVatDivTempl(): ?array
     {
@@ -55,12 +55,12 @@ class GetTravelNumberVatDivTemplsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTravelNumberVatDivTemplsResponseMidocoTravelNumberVatDivTemplItem) {
             // validation for constraint: itemType
-            if (!$getTravelNumberVatDivTemplsResponseMidocoTravelNumberVatDivTemplItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatDivTemplDTO) {
+            if (!$getTravelNumberVatDivTemplsResponseMidocoTravelNumberVatDivTemplItem instanceof \Pggns\MidocoApi\Documents\StructType\TravelNumberVatDivTemplDTO) {
                 $invalidValues[] = is_object($getTravelNumberVatDivTemplsResponseMidocoTravelNumberVatDivTemplItem) ? get_class($getTravelNumberVatDivTemplsResponseMidocoTravelNumberVatDivTemplItem) : sprintf('%s(%s)', gettype($getTravelNumberVatDivTemplsResponseMidocoTravelNumberVatDivTemplItem), var_export($getTravelNumberVatDivTemplsResponseMidocoTravelNumberVatDivTemplItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTravelNumberVatDivTempl property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatDivTemplDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTravelNumberVatDivTempl property can only contain items of type \Pggns\MidocoApi\Documents\StructType\TravelNumberVatDivTemplDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetTravelNumberVatDivTemplsResponse extends AbstractStructBase
     /**
      * Set MidocoTravelNumberVatDivTempl value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatDivTemplDTO[] $midocoTravelNumberVatDivTempl
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetTravelNumberVatDivTemplsResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\TravelNumberVatDivTemplDTO[] $midocoTravelNumberVatDivTempl
+     * @return \Pggns\MidocoApi\Documents\StructType\GetTravelNumberVatDivTemplsResponse
      */
     public function setMidocoTravelNumberVatDivTempl(?array $midocoTravelNumberVatDivTempl = null): self
     {
@@ -85,14 +85,14 @@ class GetTravelNumberVatDivTemplsResponse extends AbstractStructBase
     /**
      * Add item to MidocoTravelNumberVatDivTempl value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatDivTemplDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetTravelNumberVatDivTemplsResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\TravelNumberVatDivTemplDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetTravelNumberVatDivTemplsResponse
      */
-    public function addToMidocoTravelNumberVatDivTempl(\Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatDivTemplDTO $item): self
+    public function addToMidocoTravelNumberVatDivTempl(\Pggns\MidocoApi\Documents\StructType\TravelNumberVatDivTemplDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatDivTemplDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoTravelNumberVatDivTempl property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatDivTemplDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\TravelNumberVatDivTemplDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelNumberVatDivTempl property can only contain items of type \Pggns\MidocoApi\Documents\StructType\TravelNumberVatDivTemplDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTravelNumberVatDivTempl[] = $item;
         

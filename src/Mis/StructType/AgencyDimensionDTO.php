@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set agCity value
      * @param string $agCity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setAgCity(?string $agCity = null): self
     {
@@ -174,7 +174,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set agCountryCode value
      * @param string $agCountryCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setAgCountryCode(?string $agCountryCode = null): self
     {
@@ -197,7 +197,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set agEndorsement value
      * @param string $agEndorsement
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setAgEndorsement(?string $agEndorsement = null): self
     {
@@ -220,7 +220,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set agOrganisationName value
      * @param string $agOrganisationName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setAgOrganisationName(?string $agOrganisationName = null): self
     {
@@ -243,7 +243,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set agPhoneticCity value
      * @param string $agPhoneticCity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setAgPhoneticCity(?string $agPhoneticCity = null): self
     {
@@ -266,7 +266,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set agPhoneticName value
      * @param string $agPhoneticName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setAgPhoneticName(?string $agPhoneticName = null): self
     {
@@ -289,7 +289,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set agPhoneticStreet value
      * @param string $agPhoneticStreet
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setAgPhoneticStreet(?string $agPhoneticStreet = null): self
     {
@@ -312,7 +312,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set agPostalCode value
      * @param string $agPostalCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setAgPostalCode(?string $agPostalCode = null): self
     {
@@ -335,7 +335,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set agState value
      * @param string $agState
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setAgState(?string $agState = null): self
     {
@@ -358,7 +358,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set agStreet value
      * @param string $agStreet
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setAgStreet(?string $agStreet = null): self
     {
@@ -381,7 +381,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set agStreetNo value
      * @param string $agStreetNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setAgStreetNo(?string $agStreetNo = null): self
     {
@@ -404,7 +404,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param int $agencyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setAgencyId(?int $agencyId = null): self
     {
@@ -427,7 +427,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -450,7 +450,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set midocoAgencyId value
      * @param string $midocoAgencyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setMidocoAgencyId(?string $midocoAgencyId = null): self
     {
@@ -473,7 +473,7 @@ class AgencyDimensionDTO extends AbstractStructBase
     /**
      * Set subAgency value
      * @param string $subAgency
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyDimensionDTO
      */
     public function setSubAgency(?string $subAgency = null): self
     {

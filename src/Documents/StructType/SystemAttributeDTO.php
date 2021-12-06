@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SystemAttributeDTO extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SystemAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SystemAttributeDTO
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -86,7 +86,7 @@ class SystemAttributeDTO extends AbstractStructBase
     /**
      * Set attributeValue value
      * @param string $attributeValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SystemAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SystemAttributeDTO
      */
     public function setAttributeValue(?string $attributeValue = null): self
     {
@@ -109,7 +109,7 @@ class SystemAttributeDTO extends AbstractStructBase
     /**
      * Set systemName value
      * @param string $systemName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SystemAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SystemAttributeDTO
      */
     public function setSystemName(?string $systemName = null): self
     {
@@ -132,7 +132,7 @@ class SystemAttributeDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SystemAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SystemAttributeDTO
      */
     public function setType(?string $type = null): self
     {

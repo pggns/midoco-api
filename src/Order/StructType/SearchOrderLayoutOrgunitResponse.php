@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -80,7 +80,7 @@ class SearchOrderLayoutOrgunitResponse extends AbstractStructBase
      * Set notAllowedUnits value
      * @throws InvalidArgumentException
      * @param string[] $notAllowedUnits
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrderLayoutOrgunitResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrderLayoutOrgunitResponse
      */
     public function setNotAllowedUnits(?array $notAllowedUnits = null): self
     {
@@ -96,7 +96,7 @@ class SearchOrderLayoutOrgunitResponse extends AbstractStructBase
      * Add item to notAllowedUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrderLayoutOrgunitResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrderLayoutOrgunitResponse
      */
     public function addToNotAllowedUnits(string $item): self
     {
@@ -146,7 +146,7 @@ class SearchOrderLayoutOrgunitResponse extends AbstractStructBase
      * Set asNeighbor value
      * @throws InvalidArgumentException
      * @param bool[] $asNeighbor
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrderLayoutOrgunitResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrderLayoutOrgunitResponse
      */
     public function setAsNeighbor(?array $asNeighbor = null): self
     {
@@ -162,7 +162,7 @@ class SearchOrderLayoutOrgunitResponse extends AbstractStructBase
      * Add item to asNeighbor value
      * @throws InvalidArgumentException
      * @param bool $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrderLayoutOrgunitResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrderLayoutOrgunitResponse
      */
     public function addToAsNeighbor(bool $item): self
     {

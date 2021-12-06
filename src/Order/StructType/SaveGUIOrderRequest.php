@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,9 +19,9 @@ class SaveGUIOrderRequest extends AbstractStructBase
      * The MidocoOrder
      * Meta information extracted from the WSDL
      * - ref: MidocoOrder
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $MidocoOrder = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $MidocoOrder = null;
     /**
      * The orderHasChanges4Suborders
      * Meta information extracted from the WSDL
@@ -33,10 +33,10 @@ class SaveGUIOrderRequest extends AbstractStructBase
      * Constructor method for SaveGUIOrderRequest
      * @uses SaveGUIOrderRequest::setMidocoOrder()
      * @uses SaveGUIOrderRequest::setOrderHasChanges4Suborders()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
      * @param bool $orderHasChanges4Suborders
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null, ?bool $orderHasChanges4Suborders = true)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null, ?bool $orderHasChanges4Suborders = true)
     {
         $this
             ->setMidocoOrder($midocoOrder)
@@ -44,18 +44,18 @@ class SaveGUIOrderRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrder value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    public function getMidocoOrder(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType
+    public function getMidocoOrder(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType
     {
         return $this->MidocoOrder;
     }
     /**
      * Set MidocoOrder value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveGUIOrderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
+     * @return \Pggns\MidocoApi\Order\StructType\SaveGUIOrderRequest
      */
-    public function setMidocoOrder(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null): self
+    public function setMidocoOrder(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null): self
     {
         $this->MidocoOrder = $midocoOrder;
         
@@ -72,7 +72,7 @@ class SaveGUIOrderRequest extends AbstractStructBase
     /**
      * Set orderHasChanges4Suborders value
      * @param bool $orderHasChanges4Suborders
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveGUIOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveGUIOrderRequest
      */
     public function setOrderHasChanges4Suborders(?bool $orderHasChanges4Suborders = true): self
     {

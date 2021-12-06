@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class Voucher extends AbstractStructBase
     /**
      * Set voucher_no value
      * @param string $voucher_no
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Voucher
+     * @return \Pggns\MidocoApi\Documents\StructType\Voucher
      */
     public function setVoucher_no(?string $voucher_no = null): self
     {
@@ -110,7 +110,7 @@ class Voucher extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Voucher
+     * @return \Pggns\MidocoApi\Documents\StructType\Voucher
      */
     public function setDescription(?string $description = null): self
     {
@@ -133,7 +133,7 @@ class Voucher extends AbstractStructBase
     /**
      * Set voucher_type value
      * @param string $voucher_type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Voucher
+     * @return \Pggns\MidocoApi\Documents\StructType\Voucher
      */
     public function setVoucher_type(?string $voucher_type = null): self
     {
@@ -156,7 +156,7 @@ class Voucher extends AbstractStructBase
     /**
      * Set security_code value
      * @param string $security_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Voucher
+     * @return \Pggns\MidocoApi\Documents\StructType\Voucher
      */
     public function setSecurity_code(?string $security_code = null): self
     {
@@ -179,7 +179,7 @@ class Voucher extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Voucher
+     * @return \Pggns\MidocoApi\Documents\StructType\Voucher
      */
     public function setPrice(?float $price = null): self
     {
@@ -202,7 +202,7 @@ class Voucher extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Voucher
+     * @return \Pggns\MidocoApi\Documents\StructType\Voucher
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -225,7 +225,7 @@ class Voucher extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Voucher
+     * @return \Pggns\MidocoApi\Documents\StructType\Voucher
      */
     public function setRemark(?string $remark = null): self
     {

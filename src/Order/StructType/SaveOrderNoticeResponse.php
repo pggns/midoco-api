@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,9 +19,9 @@ class SaveOrderNoticeResponse extends AbstractStructBase
      * The MidocoOrderNotice
      * Meta information extracted from the WSDL
      * - ref: MidocoOrderNotice
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderNotice|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice $MidocoOrderNotice = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderNotice $MidocoOrderNotice = null;
     /**
      * The afterFinishAction
      * Meta information extracted from the WSDL
@@ -33,10 +33,10 @@ class SaveOrderNoticeResponse extends AbstractStructBase
      * Constructor method for SaveOrderNoticeResponse
      * @uses SaveOrderNoticeResponse::setMidocoOrderNotice()
      * @uses SaveOrderNoticeResponse::setAfterFinishAction()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice $midocoOrderNotice
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderNotice $midocoOrderNotice
      * @param string $afterFinishAction
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice $midocoOrderNotice = null, ?string $afterFinishAction = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderNotice $midocoOrderNotice = null, ?string $afterFinishAction = null)
     {
         $this
             ->setMidocoOrderNotice($midocoOrderNotice)
@@ -44,18 +44,18 @@ class SaveOrderNoticeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderNotice value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderNotice|null
      */
-    public function getMidocoOrderNotice(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice
+    public function getMidocoOrderNotice(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderNotice
     {
         return $this->MidocoOrderNotice;
     }
     /**
      * Set MidocoOrderNotice value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice $midocoOrderNotice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderNoticeResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderNotice $midocoOrderNotice
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderNoticeResponse
      */
-    public function setMidocoOrderNotice(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice $midocoOrderNotice = null): self
+    public function setMidocoOrderNotice(?\Pggns\MidocoApi\Order\StructType\MidocoOrderNotice $midocoOrderNotice = null): self
     {
         $this->MidocoOrderNotice = $midocoOrderNotice;
         
@@ -72,7 +72,7 @@ class SaveOrderNoticeResponse extends AbstractStructBase
     /**
      * Set afterFinishAction value
      * @param string $afterFinishAction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderNoticeResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderNoticeResponse
      */
     public function setAfterFinishAction(?string $afterFinishAction = null): self
     {

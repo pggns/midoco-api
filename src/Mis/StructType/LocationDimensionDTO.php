@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class LocationDimensionDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LocationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LocationDimensionDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -118,7 +118,7 @@ class LocationDimensionDTO extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LocationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LocationDimensionDTO
      */
     public function setCountry(?string $country = null): self
     {
@@ -141,7 +141,7 @@ class LocationDimensionDTO extends AbstractStructBase
     /**
      * Set locationId value
      * @param int $locationId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LocationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LocationDimensionDTO
      */
     public function setLocationId(?int $locationId = null): self
     {
@@ -164,7 +164,7 @@ class LocationDimensionDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LocationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LocationDimensionDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -187,7 +187,7 @@ class LocationDimensionDTO extends AbstractStructBase
     /**
      * Set postalCodeFirst1 value
      * @param string $postalCodeFirst1
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LocationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LocationDimensionDTO
      */
     public function setPostalCodeFirst1(?string $postalCodeFirst1 = null): self
     {
@@ -210,7 +210,7 @@ class LocationDimensionDTO extends AbstractStructBase
     /**
      * Set postalCodeFirst2 value
      * @param string $postalCodeFirst2
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LocationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LocationDimensionDTO
      */
     public function setPostalCodeFirst2(?string $postalCodeFirst2 = null): self
     {
@@ -233,7 +233,7 @@ class LocationDimensionDTO extends AbstractStructBase
     /**
      * Set postalCodeFirst3 value
      * @param string $postalCodeFirst3
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LocationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LocationDimensionDTO
      */
     public function setPostalCodeFirst3(?string $postalCodeFirst3 = null): self
     {
@@ -256,7 +256,7 @@ class LocationDimensionDTO extends AbstractStructBase
     /**
      * Set postalCodeFirst4 value
      * @param string $postalCodeFirst4
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LocationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LocationDimensionDTO
      */
     public function setPostalCodeFirst4(?string $postalCodeFirst4 = null): self
     {

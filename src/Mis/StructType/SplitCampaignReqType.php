@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SplitCampaignReqType extends AbstractStructBase
      * The MidocoCrmCampaign
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCampaign
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $MidocoCrmCampaign = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $MidocoCrmCampaign = null;
     /**
      * The action
      * @var string|null
@@ -29,10 +29,10 @@ class SplitCampaignReqType extends AbstractStructBase
      * Constructor method for SplitCampaignReqType
      * @uses SplitCampaignReqType::setMidocoCrmCampaign()
      * @uses SplitCampaignReqType::setAction()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
      * @param string $action
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null, ?string $action = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null, ?string $action = null)
     {
         $this
             ->setMidocoCrmCampaign($midocoCrmCampaign)
@@ -40,18 +40,18 @@ class SplitCampaignReqType extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCampaign value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO|null
      */
-    public function getMidocoCrmCampaign(): ?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO
+    public function getMidocoCrmCampaign(): ?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO
     {
         return $this->MidocoCrmCampaign;
     }
     /**
      * Set MidocoCrmCampaign value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SplitCampaignReqType
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
+     * @return \Pggns\MidocoApi\Mis\StructType\SplitCampaignReqType
      */
-    public function setMidocoCrmCampaign(?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null): self
+    public function setMidocoCrmCampaign(?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null): self
     {
         $this->MidocoCrmCampaign = $midocoCrmCampaign;
         
@@ -68,7 +68,7 @@ class SplitCampaignReqType extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SplitCampaignReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\SplitCampaignReqType
      */
     public function setAction(?string $action = null): self
     {

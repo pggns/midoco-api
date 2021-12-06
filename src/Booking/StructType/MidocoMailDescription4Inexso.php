@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoMailDescription4Inexso extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoMailDescription4Inexso
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoMailDescription4Inexso
      */
     public function setFileName(?string $fileName = null): self
     {
@@ -70,7 +70,7 @@ class MidocoMailDescription4Inexso extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoMailDescription4Inexso
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoMailDescription4Inexso
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class PrintTravelPlanPrintjobRequest extends AbstractStructBase
      * The CreateTravelPlanPrintjobRequest
      * Meta information extracted from the WSDL
      * - ref: CreateTravelPlanPrintjobRequest
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobRequest|null
+     * @var \Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobRequest|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobRequest $CreateTravelPlanPrintjobRequest = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobRequest $CreateTravelPlanPrintjobRequest = null;
     /**
      * The Preview
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class PrintTravelPlanPrintjobRequest extends AbstractStructBase
      * Constructor method for PrintTravelPlanPrintjobRequest
      * @uses PrintTravelPlanPrintjobRequest::setCreateTravelPlanPrintjobRequest()
      * @uses PrintTravelPlanPrintjobRequest::setPreview()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobRequest $createTravelPlanPrintjobRequest
+     * @param \Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobRequest $createTravelPlanPrintjobRequest
      * @param bool $preview
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobRequest $createTravelPlanPrintjobRequest = null, ?bool $preview = false)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobRequest $createTravelPlanPrintjobRequest = null, ?bool $preview = false)
     {
         $this
             ->setCreateTravelPlanPrintjobRequest($createTravelPlanPrintjobRequest)
@@ -42,18 +42,18 @@ class PrintTravelPlanPrintjobRequest extends AbstractStructBase
     }
     /**
      * Get CreateTravelPlanPrintjobRequest value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobRequest|null
+     * @return \Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobRequest|null
      */
-    public function getCreateTravelPlanPrintjobRequest(): ?\Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobRequest
+    public function getCreateTravelPlanPrintjobRequest(): ?\Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobRequest
     {
         return $this->CreateTravelPlanPrintjobRequest;
     }
     /**
      * Set CreateTravelPlanPrintjobRequest value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobRequest $createTravelPlanPrintjobRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintTravelPlanPrintjobRequest
+     * @param \Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobRequest $createTravelPlanPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintTravelPlanPrintjobRequest
      */
-    public function setCreateTravelPlanPrintjobRequest(?\Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobRequest $createTravelPlanPrintjobRequest = null): self
+    public function setCreateTravelPlanPrintjobRequest(?\Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobRequest $createTravelPlanPrintjobRequest = null): self
     {
         $this->CreateTravelPlanPrintjobRequest = $createTravelPlanPrintjobRequest;
         
@@ -70,7 +70,7 @@ class PrintTravelPlanPrintjobRequest extends AbstractStructBase
     /**
      * Set Preview value
      * @param bool $preview
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintTravelPlanPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintTravelPlanPrintjobRequest
      */
     public function setPreview(?bool $preview = false): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetTaskOverviewResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: TaskOverview
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\TaskOverview[]
      */
     protected ?array $TaskOverview = null;
     /**
      * Constructor method for GetTaskOverviewResponse
      * @uses GetTaskOverviewResponse::setTaskOverview()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview[] $taskOverview
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskOverview[] $taskOverview
      */
     public function __construct(?array $taskOverview = null)
     {
@@ -34,7 +34,7 @@ class GetTaskOverviewResponse extends AbstractStructBase
     }
     /**
      * Get TaskOverview value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverview[]
      */
     public function getTaskOverview(): ?array
     {
@@ -55,12 +55,12 @@ class GetTaskOverviewResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTaskOverviewResponseTaskOverviewItem) {
             // validation for constraint: itemType
-            if (!$getTaskOverviewResponseTaskOverviewItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview) {
+            if (!$getTaskOverviewResponseTaskOverviewItem instanceof \Pggns\MidocoApi\Workflow\StructType\TaskOverview) {
                 $invalidValues[] = is_object($getTaskOverviewResponseTaskOverviewItem) ? get_class($getTaskOverviewResponseTaskOverviewItem) : sprintf('%s(%s)', gettype($getTaskOverviewResponseTaskOverviewItem), var_export($getTaskOverviewResponseTaskOverviewItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The TaskOverview property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The TaskOverview property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\TaskOverview, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetTaskOverviewResponse extends AbstractStructBase
     /**
      * Set TaskOverview value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview[] $taskOverview
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskOverviewResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskOverview[] $taskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskOverviewResponse
      */
     public function setTaskOverview(?array $taskOverview = null): self
     {
@@ -85,14 +85,14 @@ class GetTaskOverviewResponse extends AbstractStructBase
     /**
      * Add item to TaskOverview value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskOverviewResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskOverview $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskOverviewResponse
      */
-    public function addToTaskOverview(\Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview $item): self
+    public function addToTaskOverview(\Pggns\MidocoApi\Workflow\StructType\TaskOverview $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview) {
-            throw new InvalidArgumentException(sprintf('The TaskOverview property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\TaskOverview) {
+            throw new InvalidArgumentException(sprintf('The TaskOverview property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\TaskOverview, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->TaskOverview[] = $item;
         

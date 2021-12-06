@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -191,7 +191,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -214,7 +214,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setChargeId(?int $chargeId = null): self
     {
@@ -237,7 +237,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -260,7 +260,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -283,7 +283,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -306,7 +306,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -329,7 +329,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set factor value
      * @param int $factor
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setFactor(?int $factor = null): self
     {
@@ -352,7 +352,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setId(?int $id = null): self
     {
@@ -375,7 +375,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set isCredit value
      * @param bool $isCredit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setIsCredit(?bool $isCredit = null): self
     {
@@ -398,7 +398,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set mdcSettlementBillingId value
      * @param int $mdcSettlementBillingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setMdcSettlementBillingId(?int $mdcSettlementBillingId = null): self
     {
@@ -421,7 +421,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set midocoChargeId value
      * @param int $midocoChargeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setMidocoChargeId(?int $midocoChargeId = null): self
     {
@@ -444,7 +444,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set nettoAmount value
      * @param float $nettoAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setNettoAmount(?float $nettoAmount = null): self
     {
@@ -467,7 +467,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -490,7 +490,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setPositionId(?int $positionId = null): self
     {
@@ -513,7 +513,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set proUnitAmount value
      * @param float $proUnitAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setProUnitAmount(?float $proUnitAmount = null): self
     {
@@ -536,7 +536,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set settlementMonth value
      * @param string $settlementMonth
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setSettlementMonth(?string $settlementMonth = null): self
     {
@@ -559,7 +559,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -582,7 +582,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -605,7 +605,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -628,7 +628,7 @@ class MdcSettlementChargeDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementChargeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementChargeDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

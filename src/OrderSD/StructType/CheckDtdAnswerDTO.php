@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class CheckDtdAnswerDTO extends AbstractStructBase
     /**
      * Set answerText value
      * @param string $answerText
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CheckDtdAnswerDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CheckDtdAnswerDTO
      */
     public function setAnswerText(?string $answerText = null): self
     {
@@ -118,7 +118,7 @@ class CheckDtdAnswerDTO extends AbstractStructBase
     /**
      * Set dbId value
      * @param int $dbId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CheckDtdAnswerDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CheckDtdAnswerDTO
      */
     public function setDbId(?int $dbId = null): self
     {
@@ -141,7 +141,7 @@ class CheckDtdAnswerDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CheckDtdAnswerDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CheckDtdAnswerDTO
      */
     public function setId(?int $id = null): self
     {
@@ -164,7 +164,7 @@ class CheckDtdAnswerDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CheckDtdAnswerDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CheckDtdAnswerDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -187,7 +187,7 @@ class CheckDtdAnswerDTO extends AbstractStructBase
     /**
      * Set requiresAmount value
      * @param bool $requiresAmount
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CheckDtdAnswerDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CheckDtdAnswerDTO
      */
     public function setRequiresAmount(?bool $requiresAmount = null): self
     {
@@ -210,7 +210,7 @@ class CheckDtdAnswerDTO extends AbstractStructBase
     /**
      * Set validForSupplier value
      * @param string $validForSupplier
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CheckDtdAnswerDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CheckDtdAnswerDTO
      */
     public function setValidForSupplier(?string $validForSupplier = null): self
     {
@@ -233,7 +233,7 @@ class CheckDtdAnswerDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CheckDtdAnswerDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CheckDtdAnswerDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -256,7 +256,7 @@ class CheckDtdAnswerDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CheckDtdAnswerDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CheckDtdAnswerDTO
      */
     public function setValidTo(?string $validTo = null): self
     {

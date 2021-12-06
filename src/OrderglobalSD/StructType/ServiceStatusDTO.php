@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ServiceStatusDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\ServiceStatusDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\ServiceStatusDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -70,7 +70,7 @@ class ServiceStatusDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\ServiceStatusDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\ServiceStatusDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

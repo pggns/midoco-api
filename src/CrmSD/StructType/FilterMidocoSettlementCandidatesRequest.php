@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class FilterMidocoSettlementCandidatesRequest extends AbstractStructBase
     /**
      * Set settlementMonth value
      * @param string $settlementMonth
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\FilterMidocoSettlementCandidatesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\FilterMidocoSettlementCandidatesRequest
      */
     public function setSettlementMonth(string $settlementMonth): self
     {

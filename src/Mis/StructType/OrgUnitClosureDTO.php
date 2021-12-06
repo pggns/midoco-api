@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class OrgUnitClosureDTO extends AbstractStructBase
     /**
      * Set childOrgUnitId value
      * @param int $childOrgUnitId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgUnitClosureDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgUnitClosureDTO
      */
     public function setChildOrgUnitId(?int $childOrgUnitId = null): self
     {
@@ -78,7 +78,7 @@ class OrgUnitClosureDTO extends AbstractStructBase
     /**
      * Set distance value
      * @param int $distance
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgUnitClosureDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgUnitClosureDTO
      */
     public function setDistance(?int $distance = null): self
     {
@@ -101,7 +101,7 @@ class OrgUnitClosureDTO extends AbstractStructBase
     /**
      * Set orgUnitId value
      * @param int $orgUnitId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgUnitClosureDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgUnitClosureDTO
      */
     public function setOrgUnitId(?int $orgUnitId = null): self
     {

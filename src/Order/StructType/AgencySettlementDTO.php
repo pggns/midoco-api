@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class AgencySettlementDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencySettlementDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -102,7 +102,7 @@ class AgencySettlementDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencySettlementDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -125,7 +125,7 @@ class AgencySettlementDTO extends AbstractStructBase
     /**
      * Set endTravelDate value
      * @param string $endTravelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencySettlementDTO
      */
     public function setEndTravelDate(?string $endTravelDate = null): self
     {
@@ -148,7 +148,7 @@ class AgencySettlementDTO extends AbstractStructBase
     /**
      * Set isPrinted value
      * @param bool $isPrinted
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencySettlementDTO
      */
     public function setIsPrinted(?bool $isPrinted = null): self
     {
@@ -171,7 +171,7 @@ class AgencySettlementDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencySettlementDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -194,7 +194,7 @@ class AgencySettlementDTO extends AbstractStructBase
     /**
      * Set startTravelDate value
      * @param string $startTravelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencySettlementDTO
      */
     public function setStartTravelDate(?string $startTravelDate = null): self
     {

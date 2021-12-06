@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetDestinationKeyForAirportResponse extends AbstractStructBase
     /**
      * Set destinationKey value
      * @param string $destinationKey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetDestinationKeyForAirportResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetDestinationKeyForAirportResponse
      */
     public function setDestinationKey(?string $destinationKey = null): self
     {

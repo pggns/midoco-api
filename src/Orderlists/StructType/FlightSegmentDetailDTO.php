@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class FlightSegmentDetailDTO extends AbstractStructBase
     /**
      * Set allowPrinting value
      * @param bool $allowPrinting
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightSegmentDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightSegmentDetailDTO
      */
     public function setAllowPrinting(?bool $allowPrinting = null): self
     {
@@ -134,7 +134,7 @@ class FlightSegmentDetailDTO extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightSegmentDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightSegmentDetailDTO
      */
     public function setCode(?string $code = null): self
     {
@@ -157,7 +157,7 @@ class FlightSegmentDetailDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightSegmentDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightSegmentDetailDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -180,7 +180,7 @@ class FlightSegmentDetailDTO extends AbstractStructBase
     /**
      * Set flightPosition value
      * @param int $flightPosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightSegmentDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightSegmentDetailDTO
      */
     public function setFlightPosition(?int $flightPosition = null): self
     {
@@ -203,7 +203,7 @@ class FlightSegmentDetailDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightSegmentDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightSegmentDetailDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -226,7 +226,7 @@ class FlightSegmentDetailDTO extends AbstractStructBase
     /**
      * Set pa value
      * @param string $pa
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightSegmentDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightSegmentDetailDTO
      */
     public function setPa(?string $pa = null): self
     {
@@ -249,7 +249,7 @@ class FlightSegmentDetailDTO extends AbstractStructBase
     /**
      * Set passenger value
      * @param int $passenger
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightSegmentDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightSegmentDetailDTO
      */
     public function setPassenger(?int $passenger = null): self
     {
@@ -272,7 +272,7 @@ class FlightSegmentDetailDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightSegmentDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightSegmentDetailDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -295,7 +295,7 @@ class FlightSegmentDetailDTO extends AbstractStructBase
     /**
      * Set seat value
      * @param string $seat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightSegmentDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightSegmentDetailDTO
      */
     public function setSeat(?string $seat = null): self
     {
@@ -318,7 +318,7 @@ class FlightSegmentDetailDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightSegmentDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightSegmentDetailDTO
      */
     public function setStatus(?string $status = null): self
     {

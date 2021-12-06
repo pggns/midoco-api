@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class SendEmailResponse extends AbstractStructBase
     /**
      * Set mailQueueId value
      * @param int $mailQueueId
-     * @return \Pggns\MidocoApi\Api\System\StructType\SendEmailResponse
+     * @return \Pggns\MidocoApi\System\StructType\SendEmailResponse
      */
     public function setMailQueueId(?int $mailQueueId = null): self
     {
@@ -70,7 +70,7 @@ class SendEmailResponse extends AbstractStructBase
     /**
      * Set mailRelay value
      * @param string $mailRelay
-     * @return \Pggns\MidocoApi\Api\System\StructType\SendEmailResponse
+     * @return \Pggns\MidocoApi\System\StructType\SendEmailResponse
      */
     public function setMailRelay(?string $mailRelay = null): self
     {

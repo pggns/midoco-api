@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -167,7 +167,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set identifier value
      * @param string $identifier
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setIdentifier(?string $identifier = null): self
     {
@@ -190,7 +190,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -213,7 +213,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set airlineCode value
      * @param string $airlineCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setAirlineCode(?string $airlineCode = null): self
     {
@@ -236,7 +236,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set flightNo value
      * @param string $flightNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setFlightNo(?string $flightNo = null): self
     {
@@ -259,7 +259,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set compensation value
      * @param float $compensation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setCompensation(?float $compensation = null): self
     {
@@ -282,7 +282,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set delay value
      * @param string $delay
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setDelay(?string $delay = null): self
     {
@@ -305,7 +305,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set link value
      * @param string $link
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setLink(?string $link = null): self
     {
@@ -328,7 +328,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set scheduledDeparture value
      * @param string $scheduledDeparture
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setScheduledDeparture(?string $scheduledDeparture = null): self
     {
@@ -351,7 +351,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set scheduledArrival value
      * @param string $scheduledArrival
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setScheduledArrival(?string $scheduledArrival = null): self
     {
@@ -374,7 +374,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set actualDeparture value
      * @param string $actualDeparture
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setActualDeparture(?string $actualDeparture = null): self
     {
@@ -397,7 +397,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set actualArrival value
      * @param string $actualArrival
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setActualArrival(?string $actualArrival = null): self
     {
@@ -420,7 +420,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set departureAirport value
      * @param string $departureAirport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setDepartureAirport(?string $departureAirport = null): self
     {
@@ -443,7 +443,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set arrivalAirport value
      * @param string $arrivalAirport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setArrivalAirport(?string $arrivalAirport = null): self
     {
@@ -466,7 +466,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set status value
      * @param int $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setStatus(?int $status = null): self
     {
@@ -489,7 +489,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set emailContent value
      * @param string $emailContent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setEmailContent(?string $emailContent = null): self
     {
@@ -512,7 +512,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set emailSubject value
      * @param string $emailSubject
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setEmailSubject(?string $emailSubject = null): self
     {
@@ -535,7 +535,7 @@ class FairplaneFlightDetailType extends AbstractStructBase
     /**
      * Set emailAddress value
      * @param string $emailAddress
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FairplaneFlightDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\FairplaneFlightDetailType
      */
     public function setEmailAddress(?string $emailAddress = null): self
     {

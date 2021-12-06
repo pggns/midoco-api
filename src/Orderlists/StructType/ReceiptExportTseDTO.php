@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class ReceiptExportTseDTO extends AbstractStructBase
     /**
      * Set clientId value
      * @param string $clientId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptExportTseDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptExportTseDTO
      */
     public function setClientId(?string $clientId = null): self
     {
@@ -86,7 +86,7 @@ class ReceiptExportTseDTO extends AbstractStructBase
     /**
      * Set printId value
      * @param int $printId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptExportTseDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptExportTseDTO
      */
     public function setPrintId(?int $printId = null): self
     {
@@ -109,7 +109,7 @@ class ReceiptExportTseDTO extends AbstractStructBase
     /**
      * Set tseId value
      * @param int $tseId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptExportTseDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptExportTseDTO
      */
     public function setTseId(?int $tseId = null): self
     {
@@ -132,7 +132,7 @@ class ReceiptExportTseDTO extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptExportTseDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptExportTseDTO
      */
     public function setTssId(?string $tssId = null): self
     {

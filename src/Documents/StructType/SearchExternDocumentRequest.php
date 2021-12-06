@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SearchExternDocumentRequest extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchExternDocumentRequest
      */
     public function setId(?int $id = null): self
     {
@@ -102,7 +102,7 @@ class SearchExternDocumentRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchExternDocumentRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -125,7 +125,7 @@ class SearchExternDocumentRequest extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchExternDocumentRequest
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -148,7 +148,7 @@ class SearchExternDocumentRequest extends AbstractStructBase
     /**
      * Set creationDateFrom value
      * @param string $creationDateFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchExternDocumentRequest
      */
     public function setCreationDateFrom(?string $creationDateFrom = null): self
     {
@@ -171,7 +171,7 @@ class SearchExternDocumentRequest extends AbstractStructBase
     /**
      * Set creationDateTo value
      * @param string $creationDateTo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchExternDocumentRequest
      */
     public function setCreationDateTo(?string $creationDateTo = null): self
     {
@@ -194,7 +194,7 @@ class SearchExternDocumentRequest extends AbstractStructBase
     /**
      * Set preferredAdapter value
      * @param string $preferredAdapter
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchExternDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchExternDocumentRequest
      */
     public function setPreferredAdapter(?string $preferredAdapter = null): self
     {

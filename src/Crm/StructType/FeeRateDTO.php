@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class FeeRateDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\FeeRateDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\FeeRateDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +78,7 @@ class FeeRateDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\FeeRateDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\FeeRateDTO
      */
     public function setName(?string $name = null): self
     {
@@ -101,7 +101,7 @@ class FeeRateDTO extends AbstractStructBase
     /**
      * Set pricePerMinute value
      * @param float $pricePerMinute
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\FeeRateDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\FeeRateDTO
      */
     public function setPricePerMinute(?float $pricePerMinute = null): self
     {

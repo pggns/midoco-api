@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class UserQueryDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserQueryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserQueryDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -94,7 +94,7 @@ class UserQueryDTO extends AbstractStructBase
     /**
      * Set outputFields value
      * @param string $outputFields
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserQueryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserQueryDTO
      */
     public function setOutputFields(?string $outputFields = null): self
     {
@@ -117,7 +117,7 @@ class UserQueryDTO extends AbstractStructBase
     /**
      * Set queryId value
      * @param int $queryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserQueryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserQueryDTO
      */
     public function setQueryId(?int $queryId = null): self
     {
@@ -140,7 +140,7 @@ class UserQueryDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserQueryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserQueryDTO
      */
     public function setType(?string $type = null): self
     {
@@ -163,7 +163,7 @@ class UserQueryDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UserQueryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UserQueryDTO
      */
     public function setUserId(?int $userId = null): self
     {

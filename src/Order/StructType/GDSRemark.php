@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -110,7 +110,7 @@ class GDSRemark extends AbstractStructBase
      * Set TravelerRefId value
      * @throws InvalidArgumentException
      * @param int[] $travelerRefId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GDSRemark
+     * @return \Pggns\MidocoApi\Order\StructType\GDSRemark
      */
     public function setTravelerRefId(?array $travelerRefId = null): self
     {
@@ -126,7 +126,7 @@ class GDSRemark extends AbstractStructBase
      * Add item to TravelerRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GDSRemark
+     * @return \Pggns\MidocoApi\Order\StructType\GDSRemark
      */
     public function addToTravelerRefId(int $item): self
     {
@@ -176,7 +176,7 @@ class GDSRemark extends AbstractStructBase
      * Set BookingPositionRefId value
      * @throws InvalidArgumentException
      * @param int[] $bookingPositionRefId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GDSRemark
+     * @return \Pggns\MidocoApi\Order\StructType\GDSRemark
      */
     public function setBookingPositionRefId(?array $bookingPositionRefId = null): self
     {
@@ -192,7 +192,7 @@ class GDSRemark extends AbstractStructBase
      * Add item to BookingPositionRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GDSRemark
+     * @return \Pggns\MidocoApi\Order\StructType\GDSRemark
      */
     public function addToBookingPositionRefId(int $item): self
     {
@@ -242,7 +242,7 @@ class GDSRemark extends AbstractStructBase
      * Set BookingDetailRefId value
      * @throws InvalidArgumentException
      * @param int[] $bookingDetailRefId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GDSRemark
+     * @return \Pggns\MidocoApi\Order\StructType\GDSRemark
      */
     public function setBookingDetailRefId(?array $bookingDetailRefId = null): self
     {
@@ -258,7 +258,7 @@ class GDSRemark extends AbstractStructBase
      * Add item to BookingDetailRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GDSRemark
+     * @return \Pggns\MidocoApi\Order\StructType\GDSRemark
      */
     public function addToBookingDetailRefId(int $item): self
     {
@@ -280,17 +280,17 @@ class GDSRemark extends AbstractStructBase
     }
     /**
      * Set syntaxType value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\GDSRemarkSyntaxType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\GDSRemarkSyntaxType::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\GDSRemarkSyntaxType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\GDSRemarkSyntaxType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $syntaxType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GDSRemark
+     * @return \Pggns\MidocoApi\Order\StructType\GDSRemark
      */
     public function setSyntaxType(?string $syntaxType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\GDSRemarkSyntaxType::valueIsValid($syntaxType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\GDSRemarkSyntaxType', is_array($syntaxType) ? implode(', ', $syntaxType) : var_export($syntaxType, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\GDSRemarkSyntaxType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\GDSRemarkSyntaxType::valueIsValid($syntaxType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\GDSRemarkSyntaxType', is_array($syntaxType) ? implode(', ', $syntaxType) : var_export($syntaxType, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\GDSRemarkSyntaxType::getValidValues())), __LINE__);
         }
         $this->syntaxType = $syntaxType;
         
@@ -307,7 +307,7 @@ class GDSRemark extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GDSRemark
+     * @return \Pggns\MidocoApi\Order\StructType\GDSRemark
      */
     public function setText(?string $text = null): self
     {

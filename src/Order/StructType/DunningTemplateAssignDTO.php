@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DunningTemplateAssignDTO extends AbstractStructBase
     /**
      * Set dunningTemplateId value
      * @param int $dunningTemplateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningTemplateAssignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningTemplateAssignDTO
      */
     public function setDunningTemplateId(?int $dunningTemplateId = null): self
     {
@@ -70,7 +70,7 @@ class DunningTemplateAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningTemplateAssignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningTemplateAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

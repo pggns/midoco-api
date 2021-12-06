@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetMidocoTextRemarksRequest extends AbstractStructBase
      * The MidocoTextRemark
      * Meta information extracted from the WSDL
      * - ref: MidocoTextRemark
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark $MidocoTextRemark = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark $MidocoTextRemark = null;
     /**
      * Constructor method for GetMidocoTextRemarksRequest
      * @uses GetMidocoTextRemarksRequest::setMidocoTextRemark()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark $midocoTextRemark
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark $midocoTextRemark
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark $midocoTextRemark = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark $midocoTextRemark = null)
     {
         $this
             ->setMidocoTextRemark($midocoTextRemark);
     }
     /**
      * Get MidocoTextRemark value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark|null
      */
-    public function getMidocoTextRemark(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark
+    public function getMidocoTextRemark(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark
     {
         return $this->MidocoTextRemark;
     }
     /**
      * Set MidocoTextRemark value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark $midocoTextRemark
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMidocoTextRemarksRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark $midocoTextRemark
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMidocoTextRemarksRequest
      */
-    public function setMidocoTextRemark(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark $midocoTextRemark = null): self
+    public function setMidocoTextRemark(?\Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark $midocoTextRemark = null): self
     {
         $this->MidocoTextRemark = $midocoTextRemark;
         

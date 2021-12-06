@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class CheckMediatorFormularRequest extends AbstractStructBase
      * The MidocoMediatorFormular
      * Meta information extracted from the WSDL
      * - ref: MidocoMediatorFormular
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular $MidocoMediatorFormular = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular $MidocoMediatorFormular = null;
     /**
      * The saveAttributes
      * @var bool|null
@@ -35,11 +35,11 @@ class CheckMediatorFormularRequest extends AbstractStructBase
      * @uses CheckMediatorFormularRequest::setMidocoMediatorFormular()
      * @uses CheckMediatorFormularRequest::setSaveAttributes()
      * @uses CheckMediatorFormularRequest::setSendEmail()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular
      * @param bool $saveAttributes
      * @param bool $sendEmail
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular = null, ?bool $saveAttributes = null, ?bool $sendEmail = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular = null, ?bool $saveAttributes = null, ?bool $sendEmail = null)
     {
         $this
             ->setMidocoMediatorFormular($midocoMediatorFormular)
@@ -48,18 +48,18 @@ class CheckMediatorFormularRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMediatorFormular value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular|null
      */
-    public function getMidocoMediatorFormular(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular
+    public function getMidocoMediatorFormular(): ?\Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular
     {
         return $this->MidocoMediatorFormular;
     }
     /**
      * Set MidocoMediatorFormular value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckMediatorFormularRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular
+     * @return \Pggns\MidocoApi\Order\StructType\CheckMediatorFormularRequest
      */
-    public function setMidocoMediatorFormular(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular = null): self
+    public function setMidocoMediatorFormular(?\Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular = null): self
     {
         $this->MidocoMediatorFormular = $midocoMediatorFormular;
         
@@ -76,7 +76,7 @@ class CheckMediatorFormularRequest extends AbstractStructBase
     /**
      * Set saveAttributes value
      * @param bool $saveAttributes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckMediatorFormularRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckMediatorFormularRequest
      */
     public function setSaveAttributes(?bool $saveAttributes = null): self
     {
@@ -99,7 +99,7 @@ class CheckMediatorFormularRequest extends AbstractStructBase
     /**
      * Set sendEmail value
      * @param bool $sendEmail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckMediatorFormularRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckMediatorFormularRequest
      */
     public function setSendEmail(?bool $sendEmail = null): self
     {

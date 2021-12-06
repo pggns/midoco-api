@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -101,7 +101,7 @@ class MidocoConnectedCustomerListCriteria extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -117,7 +117,7 @@ class MidocoConnectedCustomerListCriteria extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria
      */
     public function addToOrgUnits(string $item): self
     {
@@ -140,7 +140,7 @@ class MidocoConnectedCustomerListCriteria extends AbstractStructBase
     /**
      * Set creationUserId value
      * @param int $creationUserId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria
      */
     public function setCreationUserId(?int $creationUserId = null): self
     {
@@ -163,7 +163,7 @@ class MidocoConnectedCustomerListCriteria extends AbstractStructBase
     /**
      * Set creationDateFrom value
      * @param string $creationDateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria
      */
     public function setCreationDateFrom(?string $creationDateFrom = null): self
     {
@@ -186,7 +186,7 @@ class MidocoConnectedCustomerListCriteria extends AbstractStructBase
     /**
      * Set creationDateUntil value
      * @param string $creationDateUntil
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria
      */
     public function setCreationDateUntil(?string $creationDateUntil = null): self
     {
@@ -209,7 +209,7 @@ class MidocoConnectedCustomerListCriteria extends AbstractStructBase
     /**
      * Set connectionType value
      * @param int $connectionType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria
      */
     public function setConnectionType(?int $connectionType = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -77,16 +77,16 @@ class Customer extends AbstractStructBase
      * The private_data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Private_data|null
+     * @var \Pggns\MidocoApi\Order\StructType\Private_data|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\Private_data $private_data = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\Private_data $private_data = null;
     /**
      * The company_data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Company_data|null
+     * @var \Pggns\MidocoApi\Order\StructType\Company_data|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\Company_data $company_data = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\Company_data $company_data = null;
     /**
      * The language
      * Meta information extracted from the WSDL
@@ -153,7 +153,7 @@ class Customer extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Communication[]
+     * @var \Pggns\MidocoApi\Order\StructType\Communication[]
      */
     protected ?array $communication = null;
     /**
@@ -169,9 +169,9 @@ class Customer extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: Consent
-     * @var \Pggns\MidocoApi\Api\Order\StructType\ConsentType|null
+     * @var \Pggns\MidocoApi\Order\StructType\ConsentType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\ConsentType $Consent = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\ConsentType $Consent = null;
     /**
      * The type
      * Meta information extracted from the WSDL
@@ -250,16 +250,16 @@ class Customer extends AbstractStructBase
      * The privateData
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\PrivateData|null
+     * @var \Pggns\MidocoApi\Order\StructType\PrivateData|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\PrivateData $privateData = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\PrivateData $privateData = null;
     /**
      * The companyData
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CompanyData|null
+     * @var \Pggns\MidocoApi\Order\StructType\CompanyData|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\CompanyData $companyData = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\CompanyData $companyData = null;
     /**
      * The streetNo
      * Meta information extracted from the WSDL
@@ -335,8 +335,8 @@ class Customer extends AbstractStructBase
      * @param string $reference_customer_id
      * @param string $reference_system
      * @param string $reference_url
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Private_data $private_data
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Company_data $company_data
+     * @param \Pggns\MidocoApi\Order\StructType\Private_data $private_data
+     * @param \Pggns\MidocoApi\Order\StructType\Company_data $company_data
      * @param string $language
      * @param string $street
      * @param string $street_no
@@ -345,9 +345,9 @@ class Customer extends AbstractStructBase
      * @param string $postal_code
      * @param string $city
      * @param string $endorsement
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Communication[] $communication
+     * @param \Pggns\MidocoApi\Order\StructType\Communication[] $communication
      * @param bool $customer_has_business_contract
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ConsentType $consent
+     * @param \Pggns\MidocoApi\Order\StructType\ConsentType $consent
      * @param string $type
      * @param bool $override_existing_order_customer
      * @param int $midocoCustomerId
@@ -357,14 +357,14 @@ class Customer extends AbstractStructBase
      * @param string $referenceCustomerId
      * @param string $referenceSystem
      * @param string $referenceUrl
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrivateData $privateData
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CompanyData $companyData
+     * @param \Pggns\MidocoApi\Order\StructType\PrivateData $privateData
+     * @param \Pggns\MidocoApi\Order\StructType\CompanyData $companyData
      * @param string $streetNo
      * @param string $postalCode
      * @param bool $customerHasBusinessContract
      * @param bool $overrideExistingOrderCustomer
      */
-    public function __construct(?int $midoco_customer_id = null, ?string $midoco_debitor = null, ?bool $force_debitor_infos = false, ?bool $use_mail_address_from_message = true, ?string $reference_customer_id = null, ?string $reference_system = null, ?string $reference_url = null, ?\Pggns\MidocoApi\Api\Order\StructType\Private_data $private_data = null, ?\Pggns\MidocoApi\Api\Order\StructType\Company_data $company_data = null, ?string $language = null, ?string $street = null, ?string $street_no = null, ?string $state = null, ?string $country = null, ?string $postal_code = null, ?string $city = null, ?string $endorsement = null, ?array $communication = null, ?bool $customer_has_business_contract = null, ?\Pggns\MidocoApi\Api\Order\StructType\ConsentType $consent = null, ?string $type = 'INVOICE', ?bool $override_existing_order_customer = false, ?int $midocoCustomerId = null, ?string $midocoDebitor = null, ?bool $forceDebitorInfos = false, ?bool $useMailAddressFromMessage = true, ?string $referenceCustomerId = null, ?string $referenceSystem = null, ?string $referenceUrl = null, ?\Pggns\MidocoApi\Api\Order\StructType\PrivateData $privateData = null, ?\Pggns\MidocoApi\Api\Order\StructType\CompanyData $companyData = null, ?string $streetNo = null, ?string $postalCode = null, ?bool $customerHasBusinessContract = null, ?bool $overrideExistingOrderCustomer = false)
+    public function __construct(?int $midoco_customer_id = null, ?string $midoco_debitor = null, ?bool $force_debitor_infos = false, ?bool $use_mail_address_from_message = true, ?string $reference_customer_id = null, ?string $reference_system = null, ?string $reference_url = null, ?\Pggns\MidocoApi\Order\StructType\Private_data $private_data = null, ?\Pggns\MidocoApi\Order\StructType\Company_data $company_data = null, ?string $language = null, ?string $street = null, ?string $street_no = null, ?string $state = null, ?string $country = null, ?string $postal_code = null, ?string $city = null, ?string $endorsement = null, ?array $communication = null, ?bool $customer_has_business_contract = null, ?\Pggns\MidocoApi\Order\StructType\ConsentType $consent = null, ?string $type = 'INVOICE', ?bool $override_existing_order_customer = false, ?int $midocoCustomerId = null, ?string $midocoDebitor = null, ?bool $forceDebitorInfos = false, ?bool $useMailAddressFromMessage = true, ?string $referenceCustomerId = null, ?string $referenceSystem = null, ?string $referenceUrl = null, ?\Pggns\MidocoApi\Order\StructType\PrivateData $privateData = null, ?\Pggns\MidocoApi\Order\StructType\CompanyData $companyData = null, ?string $streetNo = null, ?string $postalCode = null, ?bool $customerHasBusinessContract = null, ?bool $overrideExistingOrderCustomer = false)
     {
         $this
             ->setMidoco_customer_id($midoco_customer_id)
@@ -414,7 +414,7 @@ class Customer extends AbstractStructBase
     /**
      * Set midoco_customer_id value
      * @param int $midoco_customer_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setMidoco_customer_id(?int $midoco_customer_id = null): self
     {
@@ -437,7 +437,7 @@ class Customer extends AbstractStructBase
     /**
      * Set midoco_debitor value
      * @param string $midoco_debitor
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setMidoco_debitor(?string $midoco_debitor = null): self
     {
@@ -460,7 +460,7 @@ class Customer extends AbstractStructBase
     /**
      * Set force_debitor_infos value
      * @param bool $force_debitor_infos
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setForce_debitor_infos(?bool $force_debitor_infos = false): self
     {
@@ -483,7 +483,7 @@ class Customer extends AbstractStructBase
     /**
      * Set use_mail_address_from_message value
      * @param bool $use_mail_address_from_message
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setUse_mail_address_from_message(?bool $use_mail_address_from_message = true): self
     {
@@ -506,7 +506,7 @@ class Customer extends AbstractStructBase
     /**
      * Set reference_customer_id value
      * @param string $reference_customer_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setReference_customer_id(?string $reference_customer_id = null): self
     {
@@ -529,7 +529,7 @@ class Customer extends AbstractStructBase
     /**
      * Set reference_system value
      * @param string $reference_system
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setReference_system(?string $reference_system = null): self
     {
@@ -552,7 +552,7 @@ class Customer extends AbstractStructBase
     /**
      * Set reference_url value
      * @param string $reference_url
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setReference_url(?string $reference_url = null): self
     {
@@ -566,18 +566,18 @@ class Customer extends AbstractStructBase
     }
     /**
      * Get private_data value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Private_data|null
+     * @return \Pggns\MidocoApi\Order\StructType\Private_data|null
      */
-    public function getPrivate_data(): ?\Pggns\MidocoApi\Api\Order\StructType\Private_data
+    public function getPrivate_data(): ?\Pggns\MidocoApi\Order\StructType\Private_data
     {
         return $this->{'private-data'};
     }
     /**
      * Set private_data value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Private_data $private_data
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @param \Pggns\MidocoApi\Order\StructType\Private_data $private_data
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
-    public function setPrivate_data(?\Pggns\MidocoApi\Api\Order\StructType\Private_data $private_data = null): self
+    public function setPrivate_data(?\Pggns\MidocoApi\Order\StructType\Private_data $private_data = null): self
     {
         $this->private_data = $this->{'private-data'} = $private_data;
         
@@ -585,18 +585,18 @@ class Customer extends AbstractStructBase
     }
     /**
      * Get company_data value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Company_data|null
+     * @return \Pggns\MidocoApi\Order\StructType\Company_data|null
      */
-    public function getCompany_data(): ?\Pggns\MidocoApi\Api\Order\StructType\Company_data
+    public function getCompany_data(): ?\Pggns\MidocoApi\Order\StructType\Company_data
     {
         return $this->{'company-data'};
     }
     /**
      * Set company_data value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Company_data $company_data
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @param \Pggns\MidocoApi\Order\StructType\Company_data $company_data
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
-    public function setCompany_data(?\Pggns\MidocoApi\Api\Order\StructType\Company_data $company_data = null): self
+    public function setCompany_data(?\Pggns\MidocoApi\Order\StructType\Company_data $company_data = null): self
     {
         $this->company_data = $this->{'company-data'} = $company_data;
         
@@ -613,7 +613,7 @@ class Customer extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setLanguage(?string $language = null): self
     {
@@ -636,7 +636,7 @@ class Customer extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setStreet(?string $street = null): self
     {
@@ -659,7 +659,7 @@ class Customer extends AbstractStructBase
     /**
      * Set street_no value
      * @param string $street_no
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setStreet_no(?string $street_no = null): self
     {
@@ -682,7 +682,7 @@ class Customer extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setState(?string $state = null): self
     {
@@ -705,7 +705,7 @@ class Customer extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setCountry(?string $country = null): self
     {
@@ -728,7 +728,7 @@ class Customer extends AbstractStructBase
     /**
      * Set postal_code value
      * @param string $postal_code
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setPostal_code(?string $postal_code = null): self
     {
@@ -751,7 +751,7 @@ class Customer extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setCity(?string $city = null): self
     {
@@ -774,7 +774,7 @@ class Customer extends AbstractStructBase
     /**
      * Set endorsement value
      * @param string $endorsement
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setEndorsement(?string $endorsement = null): self
     {
@@ -788,7 +788,7 @@ class Customer extends AbstractStructBase
     }
     /**
      * Get communication value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Communication[]
+     * @return \Pggns\MidocoApi\Order\StructType\Communication[]
      */
     public function getCommunication(): ?array
     {
@@ -809,12 +809,12 @@ class Customer extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $customerCommunicationItem) {
             // validation for constraint: itemType
-            if (!$customerCommunicationItem instanceof \Pggns\MidocoApi\Api\Order\StructType\Communication) {
+            if (!$customerCommunicationItem instanceof \Pggns\MidocoApi\Order\StructType\Communication) {
                 $invalidValues[] = is_object($customerCommunicationItem) ? get_class($customerCommunicationItem) : sprintf('%s(%s)', gettype($customerCommunicationItem), var_export($customerCommunicationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The communication property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Communication, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The communication property can only contain items of type \Pggns\MidocoApi\Order\StructType\Communication, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -823,8 +823,8 @@ class Customer extends AbstractStructBase
     /**
      * Set communication value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Communication[] $communication
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @param \Pggns\MidocoApi\Order\StructType\Communication[] $communication
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setCommunication(?array $communication = null): self
     {
@@ -839,14 +839,14 @@ class Customer extends AbstractStructBase
     /**
      * Add item to communication value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Communication $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @param \Pggns\MidocoApi\Order\StructType\Communication $item
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
-    public function addToCommunication(\Pggns\MidocoApi\Api\Order\StructType\Communication $item): self
+    public function addToCommunication(\Pggns\MidocoApi\Order\StructType\Communication $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\Communication) {
-            throw new InvalidArgumentException(sprintf('The communication property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Communication, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\Communication) {
+            throw new InvalidArgumentException(sprintf('The communication property can only contain items of type \Pggns\MidocoApi\Order\StructType\Communication, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->communication[] = $item;
         
@@ -863,7 +863,7 @@ class Customer extends AbstractStructBase
     /**
      * Set customer_has_business_contract value
      * @param bool $customer_has_business_contract
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setCustomer_has_business_contract(?bool $customer_has_business_contract = null): self
     {
@@ -877,18 +877,18 @@ class Customer extends AbstractStructBase
     }
     /**
      * Get Consent value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConsentType|null
+     * @return \Pggns\MidocoApi\Order\StructType\ConsentType|null
      */
-    public function getConsent(): ?\Pggns\MidocoApi\Api\Order\StructType\ConsentType
+    public function getConsent(): ?\Pggns\MidocoApi\Order\StructType\ConsentType
     {
         return $this->Consent;
     }
     /**
      * Set Consent value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ConsentType $consent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @param \Pggns\MidocoApi\Order\StructType\ConsentType $consent
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
-    public function setConsent(?\Pggns\MidocoApi\Api\Order\StructType\ConsentType $consent = null): self
+    public function setConsent(?\Pggns\MidocoApi\Order\StructType\ConsentType $consent = null): self
     {
         $this->Consent = $consent;
         
@@ -905,7 +905,7 @@ class Customer extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setType(?string $type = 'INVOICE'): self
     {
@@ -928,7 +928,7 @@ class Customer extends AbstractStructBase
     /**
      * Set override_existing_order_customer value
      * @param bool $override_existing_order_customer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setOverride_existing_order_customer(?bool $override_existing_order_customer = false): self
     {
@@ -951,7 +951,7 @@ class Customer extends AbstractStructBase
     /**
      * Set midocoCustomerId value
      * @param int $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setMidocoCustomerId(?int $midocoCustomerId = null): self
     {
@@ -974,7 +974,7 @@ class Customer extends AbstractStructBase
     /**
      * Set midocoDebitor value
      * @param string $midocoDebitor
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setMidocoDebitor(?string $midocoDebitor = null): self
     {
@@ -997,7 +997,7 @@ class Customer extends AbstractStructBase
     /**
      * Set forceDebitorInfos value
      * @param bool $forceDebitorInfos
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setForceDebitorInfos(?bool $forceDebitorInfos = false): self
     {
@@ -1020,7 +1020,7 @@ class Customer extends AbstractStructBase
     /**
      * Set useMailAddressFromMessage value
      * @param bool $useMailAddressFromMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setUseMailAddressFromMessage(?bool $useMailAddressFromMessage = true): self
     {
@@ -1043,7 +1043,7 @@ class Customer extends AbstractStructBase
     /**
      * Set referenceCustomerId value
      * @param string $referenceCustomerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setReferenceCustomerId(?string $referenceCustomerId = null): self
     {
@@ -1066,7 +1066,7 @@ class Customer extends AbstractStructBase
     /**
      * Set referenceSystem value
      * @param string $referenceSystem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setReferenceSystem(?string $referenceSystem = null): self
     {
@@ -1089,7 +1089,7 @@ class Customer extends AbstractStructBase
     /**
      * Set referenceUrl value
      * @param string $referenceUrl
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setReferenceUrl(?string $referenceUrl = null): self
     {
@@ -1103,18 +1103,18 @@ class Customer extends AbstractStructBase
     }
     /**
      * Get privateData value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrivateData|null
+     * @return \Pggns\MidocoApi\Order\StructType\PrivateData|null
      */
-    public function getPrivateData(): ?\Pggns\MidocoApi\Api\Order\StructType\PrivateData
+    public function getPrivateData(): ?\Pggns\MidocoApi\Order\StructType\PrivateData
     {
         return $this->privateData;
     }
     /**
      * Set privateData value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrivateData $privateData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @param \Pggns\MidocoApi\Order\StructType\PrivateData $privateData
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
-    public function setPrivateData(?\Pggns\MidocoApi\Api\Order\StructType\PrivateData $privateData = null): self
+    public function setPrivateData(?\Pggns\MidocoApi\Order\StructType\PrivateData $privateData = null): self
     {
         $this->privateData = $privateData;
         
@@ -1122,18 +1122,18 @@ class Customer extends AbstractStructBase
     }
     /**
      * Get companyData value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CompanyData|null
+     * @return \Pggns\MidocoApi\Order\StructType\CompanyData|null
      */
-    public function getCompanyData(): ?\Pggns\MidocoApi\Api\Order\StructType\CompanyData
+    public function getCompanyData(): ?\Pggns\MidocoApi\Order\StructType\CompanyData
     {
         return $this->companyData;
     }
     /**
      * Set companyData value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CompanyData $companyData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @param \Pggns\MidocoApi\Order\StructType\CompanyData $companyData
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
-    public function setCompanyData(?\Pggns\MidocoApi\Api\Order\StructType\CompanyData $companyData = null): self
+    public function setCompanyData(?\Pggns\MidocoApi\Order\StructType\CompanyData $companyData = null): self
     {
         $this->companyData = $companyData;
         
@@ -1150,7 +1150,7 @@ class Customer extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -1173,7 +1173,7 @@ class Customer extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -1196,7 +1196,7 @@ class Customer extends AbstractStructBase
     /**
      * Set customerHasBusinessContract value
      * @param bool $customerHasBusinessContract
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setCustomerHasBusinessContract(?bool $customerHasBusinessContract = null): self
     {
@@ -1219,7 +1219,7 @@ class Customer extends AbstractStructBase
     /**
      * Set overrideExistingOrderCustomer value
      * @param bool $overrideExistingOrderCustomer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Customer
+     * @return \Pggns\MidocoApi\Order\StructType\Customer
      */
     public function setOverrideExistingOrderCustomer(?bool $overrideExistingOrderCustomer = false): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class TaskViewColumns extends AbstractStructBase
     /**
      * Set columnName value
      * @param string $columnName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewColumns
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewColumns
      */
     public function setColumnName(?string $columnName = null): self
     {
@@ -78,7 +78,7 @@ class TaskViewColumns extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewColumns
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewColumns
      */
     public function setPosition(?int $position = null): self
     {
@@ -101,7 +101,7 @@ class TaskViewColumns extends AbstractStructBase
     /**
      * Set sortOrder value
      * @param int $sortOrder
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewColumns
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewColumns
      */
     public function setSortOrder(?int $sortOrder = null): self
     {

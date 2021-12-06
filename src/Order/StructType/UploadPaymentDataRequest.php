@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class UploadPaymentDataRequest extends AbstractStructBase
     /**
      * Set paymentLine value
      * @param string $paymentLine
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UploadPaymentDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UploadPaymentDataRequest
      */
     public function setPaymentLine(?string $paymentLine = null): self
     {
@@ -86,7 +86,7 @@ class UploadPaymentDataRequest extends AbstractStructBase
     /**
      * Set lineNo value
      * @param int $lineNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UploadPaymentDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UploadPaymentDataRequest
      */
     public function setLineNo(?int $lineNo = null): self
     {
@@ -109,7 +109,7 @@ class UploadPaymentDataRequest extends AbstractStructBase
     /**
      * Set format value
      * @param string $format
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UploadPaymentDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UploadPaymentDataRequest
      */
     public function setFormat(?string $format = null): self
     {
@@ -132,7 +132,7 @@ class UploadPaymentDataRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UploadPaymentDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UploadPaymentDataRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {

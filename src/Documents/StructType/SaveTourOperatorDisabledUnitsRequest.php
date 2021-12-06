@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -59,7 +59,7 @@ class SaveTourOperatorDisabledUnitsRequest extends AbstractStructBase
     /**
      * Set touroperatorId value
      * @param int $touroperatorId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveTourOperatorDisabledUnitsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveTourOperatorDisabledUnitsRequest
      */
     public function setTouroperatorId(?int $touroperatorId = null): self
     {
@@ -82,7 +82,7 @@ class SaveTourOperatorDisabledUnitsRequest extends AbstractStructBase
     /**
      * Set insurerId value
      * @param int $insurerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveTourOperatorDisabledUnitsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveTourOperatorDisabledUnitsRequest
      */
     public function setInsurerId(?int $insurerId = null): self
     {
@@ -132,7 +132,7 @@ class SaveTourOperatorDisabledUnitsRequest extends AbstractStructBase
      * Set disabledUnitName value
      * @throws InvalidArgumentException
      * @param string[] $disabledUnitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveTourOperatorDisabledUnitsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveTourOperatorDisabledUnitsRequest
      */
     public function setDisabledUnitName(?array $disabledUnitName = null): self
     {
@@ -148,7 +148,7 @@ class SaveTourOperatorDisabledUnitsRequest extends AbstractStructBase
      * Add item to disabledUnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveTourOperatorDisabledUnitsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveTourOperatorDisabledUnitsRequest
      */
     public function addToDisabledUnitName(string $item): self
     {

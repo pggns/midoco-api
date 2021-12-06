@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoVatAccountSchema extends VatAccountSchemaDTO
     /**
      * Set isInherited value
      * @param bool $isInherited
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatAccountSchema
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoVatAccountSchema
      */
     public function setIsInherited(?bool $isInherited = null): self
     {

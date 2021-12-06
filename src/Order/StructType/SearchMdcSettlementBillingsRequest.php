@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -74,7 +74,7 @@ class SearchMdcSettlementBillingsRequest extends AbstractStructBase
     /**
      * Set companyId value
      * @param int $companyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMdcSettlementBillingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMdcSettlementBillingsRequest
      */
     public function setCompanyId(?int $companyId = null): self
     {
@@ -97,7 +97,7 @@ class SearchMdcSettlementBillingsRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMdcSettlementBillingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMdcSettlementBillingsRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -120,7 +120,7 @@ class SearchMdcSettlementBillingsRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMdcSettlementBillingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMdcSettlementBillingsRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -143,7 +143,7 @@ class SearchMdcSettlementBillingsRequest extends AbstractStructBase
     /**
      * Set totalValue value
      * @param float $totalValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMdcSettlementBillingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMdcSettlementBillingsRequest
      */
     public function setTotalValue(?float $totalValue = null): self
     {
@@ -166,7 +166,7 @@ class SearchMdcSettlementBillingsRequest extends AbstractStructBase
     /**
      * Set status value
      * @param int $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMdcSettlementBillingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMdcSettlementBillingsRequest
      */
     public function setStatus(?int $status = 0): self
     {

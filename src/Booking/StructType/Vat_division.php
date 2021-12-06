@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -85,7 +85,7 @@ class Vat_division extends AbstractStructBase
     /**
      * Set ratio value
      * @param float $ratio
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Vat_division
+     * @return \Pggns\MidocoApi\Booking\StructType\Vat_division
      */
     public function setRatio(?float $ratio = null): self
     {
@@ -108,7 +108,7 @@ class Vat_division extends AbstractStructBase
     /**
      * Set vat_code value
      * @param string $vat_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Vat_division
+     * @return \Pggns\MidocoApi\Booking\StructType\Vat_division
      */
     public function setVat_code(?string $vat_code = null): self
     {
@@ -131,7 +131,7 @@ class Vat_division extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Vat_division
+     * @return \Pggns\MidocoApi\Booking\StructType\Vat_division
      */
     public function setComment(?string $comment = null): self
     {
@@ -154,7 +154,7 @@ class Vat_division extends AbstractStructBase
     /**
      * Set book_vat value
      * @param bool $book_vat
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Vat_division
+     * @return \Pggns\MidocoApi\Booking\StructType\Vat_division
      */
     public function setBook_vat(?bool $book_vat = null): self
     {
@@ -177,7 +177,7 @@ class Vat_division extends AbstractStructBase
     /**
      * Set book value
      * @param bool $book
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Vat_division
+     * @return \Pggns\MidocoApi\Booking\StructType\Vat_division
      */
     public function setBook(?bool $book = true): self
     {

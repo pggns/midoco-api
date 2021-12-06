@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSalesListsBySupplierAndMonth
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[]
      */
     protected ?array $MidocoSalesListsBySupplierAndMonth = null;
     /**
@@ -35,7 +35,7 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: SalesListsBySupplierAndMonthSums
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[]
      */
     protected ?array $SalesListsBySupplierAndMonthSums = null;
     /**
@@ -51,7 +51,7 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: CurrencyRate
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\CurrencyRateType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\CurrencyRateType[]
      */
     protected ?array $CurrencyRate = null;
     /**
@@ -61,11 +61,11 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
      * @uses SalesListBySupplierAndMonthResponse::setSalesListsBySupplierAndMonthSums()
      * @uses SalesListBySupplierAndMonthResponse::setAllUnitsWereEUR()
      * @uses SalesListBySupplierAndMonthResponse::setCurrencyRate()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[] $midocoSalesListsBySupplierAndMonth
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[] $midocoSalesListsBySupplierAndMonth
      * @param int $noOfResults
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[] $salesListsBySupplierAndMonthSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[] $salesListsBySupplierAndMonthSums
      * @param bool $allUnitsWereEUR
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CurrencyRateType[] $currencyRate
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CurrencyRateType[] $currencyRate
      */
     public function __construct(?array $midocoSalesListsBySupplierAndMonth = null, ?int $noOfResults = null, ?array $salesListsBySupplierAndMonthSums = null, ?bool $allUnitsWereEUR = null, ?array $currencyRate = null)
     {
@@ -78,7 +78,7 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSalesListsBySupplierAndMonth value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[]
      */
     public function getMidocoSalesListsBySupplierAndMonth(): ?array
     {
@@ -99,12 +99,12 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $salesListBySupplierAndMonthResponseMidocoSalesListsBySupplierAndMonthItem) {
             // validation for constraint: itemType
-            if (!$salesListBySupplierAndMonthResponseMidocoSalesListsBySupplierAndMonthItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType) {
+            if (!$salesListBySupplierAndMonthResponseMidocoSalesListsBySupplierAndMonthItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType) {
                 $invalidValues[] = is_object($salesListBySupplierAndMonthResponseMidocoSalesListsBySupplierAndMonthItem) ? get_class($salesListBySupplierAndMonthResponseMidocoSalesListsBySupplierAndMonthItem) : sprintf('%s(%s)', gettype($salesListBySupplierAndMonthResponseMidocoSalesListsBySupplierAndMonthItem), var_export($salesListBySupplierAndMonthResponseMidocoSalesListsBySupplierAndMonthItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSalesListsBySupplierAndMonth property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSalesListsBySupplierAndMonth property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -113,8 +113,8 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
     /**
      * Set MidocoSalesListsBySupplierAndMonth value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[] $midocoSalesListsBySupplierAndMonth
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierAndMonthResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[] $midocoSalesListsBySupplierAndMonth
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthResponse
      */
     public function setMidocoSalesListsBySupplierAndMonth(?array $midocoSalesListsBySupplierAndMonth = null): self
     {
@@ -129,14 +129,14 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
     /**
      * Add item to MidocoSalesListsBySupplierAndMonth value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierAndMonthResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthResponse
      */
-    public function addToMidocoSalesListsBySupplierAndMonth(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType $item): self
+    public function addToMidocoSalesListsBySupplierAndMonth(\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType) {
-            throw new InvalidArgumentException(sprintf('The MidocoSalesListsBySupplierAndMonth property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType) {
+            throw new InvalidArgumentException(sprintf('The MidocoSalesListsBySupplierAndMonth property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSalesListsBySupplierAndMonth[] = $item;
         
@@ -153,7 +153,7 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierAndMonthResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {
@@ -167,7 +167,7 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
     }
     /**
      * Get SalesListsBySupplierAndMonthSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[]
      */
     public function getSalesListsBySupplierAndMonthSums(): ?array
     {
@@ -188,12 +188,12 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $salesListBySupplierAndMonthResponseSalesListsBySupplierAndMonthSumsItem) {
             // validation for constraint: itemType
-            if (!$salesListBySupplierAndMonthResponseSalesListsBySupplierAndMonthSumsItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType) {
+            if (!$salesListBySupplierAndMonthResponseSalesListsBySupplierAndMonthSumsItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType) {
                 $invalidValues[] = is_object($salesListBySupplierAndMonthResponseSalesListsBySupplierAndMonthSumsItem) ? get_class($salesListBySupplierAndMonthResponseSalesListsBySupplierAndMonthSumsItem) : sprintf('%s(%s)', gettype($salesListBySupplierAndMonthResponseSalesListsBySupplierAndMonthSumsItem), var_export($salesListBySupplierAndMonthResponseSalesListsBySupplierAndMonthSumsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The SalesListsBySupplierAndMonthSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The SalesListsBySupplierAndMonthSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -202,8 +202,8 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
     /**
      * Set SalesListsBySupplierAndMonthSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[] $salesListsBySupplierAndMonthSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierAndMonthResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType[] $salesListsBySupplierAndMonthSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthResponse
      */
     public function setSalesListsBySupplierAndMonthSums(?array $salesListsBySupplierAndMonthSums = null): self
     {
@@ -218,14 +218,14 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
     /**
      * Add item to SalesListsBySupplierAndMonthSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierAndMonthResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthResponse
      */
-    public function addToSalesListsBySupplierAndMonthSums(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType $item): self
+    public function addToSalesListsBySupplierAndMonthSums(\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType) {
-            throw new InvalidArgumentException(sprintf('The SalesListsBySupplierAndMonthSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType) {
+            throw new InvalidArgumentException(sprintf('The SalesListsBySupplierAndMonthSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierAndMonthType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->SalesListsBySupplierAndMonthSums[] = $item;
         
@@ -242,7 +242,7 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
     /**
      * Set allUnitsWereEUR value
      * @param bool $allUnitsWereEUR
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierAndMonthResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthResponse
      */
     public function setAllUnitsWereEUR(?bool $allUnitsWereEUR = null): self
     {
@@ -256,7 +256,7 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
     }
     /**
      * Get CurrencyRate value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CurrencyRateType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CurrencyRateType[]
      */
     public function getCurrencyRate(): ?array
     {
@@ -277,12 +277,12 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $salesListBySupplierAndMonthResponseCurrencyRateItem) {
             // validation for constraint: itemType
-            if (!$salesListBySupplierAndMonthResponseCurrencyRateItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\CurrencyRateType) {
+            if (!$salesListBySupplierAndMonthResponseCurrencyRateItem instanceof \Pggns\MidocoApi\Orderlists\StructType\CurrencyRateType) {
                 $invalidValues[] = is_object($salesListBySupplierAndMonthResponseCurrencyRateItem) ? get_class($salesListBySupplierAndMonthResponseCurrencyRateItem) : sprintf('%s(%s)', gettype($salesListBySupplierAndMonthResponseCurrencyRateItem), var_export($salesListBySupplierAndMonthResponseCurrencyRateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CurrencyRate property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\CurrencyRateType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CurrencyRate property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\CurrencyRateType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -291,8 +291,8 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
     /**
      * Set CurrencyRate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CurrencyRateType[] $currencyRate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierAndMonthResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CurrencyRateType[] $currencyRate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthResponse
      */
     public function setCurrencyRate(?array $currencyRate = null): self
     {
@@ -307,14 +307,14 @@ class SalesListBySupplierAndMonthResponse extends AbstractStructBase
     /**
      * Add item to CurrencyRate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CurrencyRateType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierAndMonthResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CurrencyRateType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthResponse
      */
-    public function addToCurrencyRate(\Pggns\MidocoApi\Api\Orderlists\StructType\CurrencyRateType $item): self
+    public function addToCurrencyRate(\Pggns\MidocoApi\Orderlists\StructType\CurrencyRateType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\CurrencyRateType) {
-            throw new InvalidArgumentException(sprintf('The CurrencyRate property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\CurrencyRateType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\CurrencyRateType) {
+            throw new InvalidArgumentException(sprintf('The CurrencyRate property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\CurrencyRateType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CurrencyRate[] = $item;
         

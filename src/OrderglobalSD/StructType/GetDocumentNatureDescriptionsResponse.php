@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetDocumentNatureDescriptionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDocumentNatureDescription
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType[]
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType[]
      */
     protected ?array $MidocoDocumentNatureDescription = null;
     /**
      * Constructor method for GetDocumentNatureDescriptionsResponse
      * @uses GetDocumentNatureDescriptionsResponse::setMidocoDocumentNatureDescription()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType[] $midocoDocumentNatureDescription
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType[] $midocoDocumentNatureDescription
      */
     public function __construct(?array $midocoDocumentNatureDescription = null)
     {
@@ -34,7 +34,7 @@ class GetDocumentNatureDescriptionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDocumentNatureDescription value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType[]
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType[]
      */
     public function getMidocoDocumentNatureDescription(): ?array
     {
@@ -55,12 +55,12 @@ class GetDocumentNatureDescriptionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDocumentNatureDescriptionsResponseMidocoDocumentNatureDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getDocumentNatureDescriptionsResponseMidocoDocumentNatureDescriptionItem instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType) {
+            if (!$getDocumentNatureDescriptionsResponseMidocoDocumentNatureDescriptionItem instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType) {
                 $invalidValues[] = is_object($getDocumentNatureDescriptionsResponseMidocoDocumentNatureDescriptionItem) ? get_class($getDocumentNatureDescriptionsResponseMidocoDocumentNatureDescriptionItem) : sprintf('%s(%s)', gettype($getDocumentNatureDescriptionsResponseMidocoDocumentNatureDescriptionItem), var_export($getDocumentNatureDescriptionsResponseMidocoDocumentNatureDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDocumentNatureDescription property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDocumentNatureDescription property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetDocumentNatureDescriptionsResponse extends AbstractStructBase
     /**
      * Set MidocoDocumentNatureDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType[] $midocoDocumentNatureDescription
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDocumentNatureDescriptionsResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType[] $midocoDocumentNatureDescription
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDocumentNatureDescriptionsResponse
      */
     public function setMidocoDocumentNatureDescription(?array $midocoDocumentNatureDescription = null): self
     {
@@ -85,14 +85,14 @@ class GetDocumentNatureDescriptionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoDocumentNatureDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType $item
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDocumentNatureDescriptionsResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType $item
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDocumentNatureDescriptionsResponse
      */
-    public function addToMidocoDocumentNatureDescription(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType $item): self
+    public function addToMidocoDocumentNatureDescription(\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType) {
-            throw new InvalidArgumentException(sprintf('The MidocoDocumentNatureDescription property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType) {
+            throw new InvalidArgumentException(sprintf('The MidocoDocumentNatureDescription property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDocumentNatureDescription[] = $item;
         

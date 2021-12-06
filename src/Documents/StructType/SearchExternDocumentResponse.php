@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchExternDocumentResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoExternDocument
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoExternDocument[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoExternDocument[]
      */
     protected ?array $MidocoExternDocument = null;
     /**
      * Constructor method for SearchExternDocumentResponse
      * @uses SearchExternDocumentResponse::setMidocoExternDocument()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoExternDocument[] $midocoExternDocument
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoExternDocument[] $midocoExternDocument
      */
     public function __construct(?array $midocoExternDocument = null)
     {
@@ -34,7 +34,7 @@ class SearchExternDocumentResponse extends AbstractStructBase
     }
     /**
      * Get MidocoExternDocument value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoExternDocument[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoExternDocument[]
      */
     public function getMidocoExternDocument(): ?array
     {
@@ -55,12 +55,12 @@ class SearchExternDocumentResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchExternDocumentResponseMidocoExternDocumentItem) {
             // validation for constraint: itemType
-            if (!$searchExternDocumentResponseMidocoExternDocumentItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoExternDocument) {
+            if (!$searchExternDocumentResponseMidocoExternDocumentItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoExternDocument) {
                 $invalidValues[] = is_object($searchExternDocumentResponseMidocoExternDocumentItem) ? get_class($searchExternDocumentResponseMidocoExternDocumentItem) : sprintf('%s(%s)', gettype($searchExternDocumentResponseMidocoExternDocumentItem), var_export($searchExternDocumentResponseMidocoExternDocumentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoExternDocument property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoExternDocument, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoExternDocument property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoExternDocument, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchExternDocumentResponse extends AbstractStructBase
     /**
      * Set MidocoExternDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoExternDocument[] $midocoExternDocument
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchExternDocumentResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoExternDocument[] $midocoExternDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchExternDocumentResponse
      */
     public function setMidocoExternDocument(?array $midocoExternDocument = null): self
     {
@@ -85,14 +85,14 @@ class SearchExternDocumentResponse extends AbstractStructBase
     /**
      * Add item to MidocoExternDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoExternDocument $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchExternDocumentResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoExternDocument $item
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchExternDocumentResponse
      */
-    public function addToMidocoExternDocument(\Pggns\MidocoApi\Api\Documents\StructType\MidocoExternDocument $item): self
+    public function addToMidocoExternDocument(\Pggns\MidocoApi\Documents\StructType\MidocoExternDocument $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoExternDocument) {
-            throw new InvalidArgumentException(sprintf('The MidocoExternDocument property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoExternDocument, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoExternDocument) {
+            throw new InvalidArgumentException(sprintf('The MidocoExternDocument property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoExternDocument, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoExternDocument[] = $item;
         

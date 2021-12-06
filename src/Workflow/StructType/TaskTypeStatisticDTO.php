@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set activity value
      * @param string $activity
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setActivity(?string $activity = null): self
     {
@@ -198,7 +198,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set duration value
      * @param int $duration
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setDuration(?int $duration = null): self
     {
@@ -221,7 +221,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -244,7 +244,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set orderCreationTimestamp value
      * @param string $orderCreationTimestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setOrderCreationTimestamp(?string $orderCreationTimestamp = null): self
     {
@@ -267,7 +267,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -290,7 +290,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set orgUnitName value
      * @param string $orgUnitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setOrgUnitName(?string $orgUnitName = null): self
     {
@@ -313,7 +313,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set process value
      * @param string $process
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setProcess(?string $process = null): self
     {
@@ -336,7 +336,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set queueName value
      * @param string $queueName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setQueueName(?string $queueName = null): self
     {
@@ -359,7 +359,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set roleName value
      * @param string $roleName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setRoleName(?string $roleName = null): self
     {
@@ -382,7 +382,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set statisticId value
      * @param int $statisticId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setStatisticId(?int $statisticId = null): self
     {
@@ -405,7 +405,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set taskCreationTimestamp value
      * @param string $taskCreationTimestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setTaskCreationTimestamp(?string $taskCreationTimestamp = null): self
     {
@@ -428,7 +428,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set taskEditingEnd value
      * @param string $taskEditingEnd
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setTaskEditingEnd(?string $taskEditingEnd = null): self
     {
@@ -451,7 +451,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set taskEditingStart value
      * @param string $taskEditingStart
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setTaskEditingStart(?string $taskEditingStart = null): self
     {
@@ -474,7 +474,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set taskFinished value
      * @param bool $taskFinished
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setTaskFinished(?bool $taskFinished = null): self
     {
@@ -497,7 +497,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set taskFinishedTimestamp value
      * @param string $taskFinishedTimestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setTaskFinishedTimestamp(?string $taskFinishedTimestamp = null): self
     {
@@ -520,7 +520,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set taskKey value
      * @param string $taskKey
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setTaskKey(?string $taskKey = null): self
     {
@@ -543,7 +543,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -566,7 +566,7 @@ class TaskTypeStatisticDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskTypeStatisticDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskTypeStatisticDTO
      */
     public function setUserId(?int $userId = null): self
     {

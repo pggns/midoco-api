@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetCurrencyRequest extends AbstractStructBase
     /**
      * Set currencyCode value
      * @param string $currencyCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyRequest
      */
     public function setCurrencyCode(?string $currencyCode = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -99,7 +99,7 @@ class CrmCustomerLinkDTO extends CustomerAssignDTO
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerLinkDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO
      */
     public function setName(?string $name = null): self
     {
@@ -122,7 +122,7 @@ class CrmCustomerLinkDTO extends CustomerAssignDTO
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerLinkDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -145,7 +145,7 @@ class CrmCustomerLinkDTO extends CustomerAssignDTO
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerLinkDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -168,7 +168,7 @@ class CrmCustomerLinkDTO extends CustomerAssignDTO
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerLinkDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -191,7 +191,7 @@ class CrmCustomerLinkDTO extends CustomerAssignDTO
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerLinkDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -214,7 +214,7 @@ class CrmCustomerLinkDTO extends CustomerAssignDTO
     /**
      * Set phone value
      * @param string $phone
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerLinkDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO
      */
     public function setPhone(?string $phone = null): self
     {
@@ -237,7 +237,7 @@ class CrmCustomerLinkDTO extends CustomerAssignDTO
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerLinkDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -260,7 +260,7 @@ class CrmCustomerLinkDTO extends CustomerAssignDTO
     /**
      * Set web value
      * @param string $web
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerLinkDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO
      */
     public function setWeb(?string $web = null): self
     {

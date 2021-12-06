@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class BirthdayListRequest extends AbstractStructBase
      * The MidocoBirthdayListCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoBirthdayListCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria $MidocoBirthdayListCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria $MidocoBirthdayListCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class BirthdayListRequest extends AbstractStructBase
      * Constructor method for BirthdayListRequest
      * @uses BirthdayListRequest::setMidocoBirthdayListCriteria()
      * @uses BirthdayListRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria $midocoBirthdayListCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria $midocoBirthdayListCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria $midocoBirthdayListCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria $midocoBirthdayListCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoBirthdayListCriteria($midocoBirthdayListCriteria)
@@ -42,18 +42,18 @@ class BirthdayListRequest extends AbstractStructBase
     }
     /**
      * Get MidocoBirthdayListCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria|null
      */
-    public function getMidocoBirthdayListCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria
+    public function getMidocoBirthdayListCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria
     {
         return $this->MidocoBirthdayListCriteria;
     }
     /**
      * Set MidocoBirthdayListCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria $midocoBirthdayListCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BirthdayListRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria $midocoBirthdayListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BirthdayListRequest
      */
-    public function setMidocoBirthdayListCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListCriteria $midocoBirthdayListCriteria = null): self
+    public function setMidocoBirthdayListCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListCriteria $midocoBirthdayListCriteria = null): self
     {
         $this->MidocoBirthdayListCriteria = $midocoBirthdayListCriteria;
         
@@ -70,7 +70,7 @@ class BirthdayListRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BirthdayListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BirthdayListRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

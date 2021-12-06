@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class ExportJournalDataResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\JournalDataRecord[]
+     * @var \Pggns\MidocoApi\Order\StructType\JournalDataRecord[]
      */
     protected ?array $JournalDataRecord = null;
     /**
@@ -45,7 +45,7 @@ class ExportJournalDataResponse extends AbstractStructBase
      * @uses ExportJournalDataResponse::setNumRecords()
      * @uses ExportJournalDataResponse::setExportId()
      * @uses ExportJournalDataResponse::setCheckSum()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\JournalDataRecord[] $journalDataRecord
+     * @param \Pggns\MidocoApi\Order\StructType\JournalDataRecord[] $journalDataRecord
      * @param int $numRecords
      * @param int $exportId
      * @param int $checkSum
@@ -60,7 +60,7 @@ class ExportJournalDataResponse extends AbstractStructBase
     }
     /**
      * Get JournalDataRecord value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JournalDataRecord[]
+     * @return \Pggns\MidocoApi\Order\StructType\JournalDataRecord[]
      */
     public function getJournalDataRecord(): ?array
     {
@@ -81,12 +81,12 @@ class ExportJournalDataResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $exportJournalDataResponseJournalDataRecordItem) {
             // validation for constraint: itemType
-            if (!$exportJournalDataResponseJournalDataRecordItem instanceof \Pggns\MidocoApi\Api\Order\StructType\JournalDataRecord) {
+            if (!$exportJournalDataResponseJournalDataRecordItem instanceof \Pggns\MidocoApi\Order\StructType\JournalDataRecord) {
                 $invalidValues[] = is_object($exportJournalDataResponseJournalDataRecordItem) ? get_class($exportJournalDataResponseJournalDataRecordItem) : sprintf('%s(%s)', gettype($exportJournalDataResponseJournalDataRecordItem), var_export($exportJournalDataResponseJournalDataRecordItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The JournalDataRecord property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\JournalDataRecord, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The JournalDataRecord property can only contain items of type \Pggns\MidocoApi\Order\StructType\JournalDataRecord, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -95,8 +95,8 @@ class ExportJournalDataResponse extends AbstractStructBase
     /**
      * Set JournalDataRecord value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\JournalDataRecord[] $journalDataRecord
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataResponse
+     * @param \Pggns\MidocoApi\Order\StructType\JournalDataRecord[] $journalDataRecord
+     * @return \Pggns\MidocoApi\Order\StructType\ExportJournalDataResponse
      */
     public function setJournalDataRecord(?array $journalDataRecord = null): self
     {
@@ -111,14 +111,14 @@ class ExportJournalDataResponse extends AbstractStructBase
     /**
      * Add item to JournalDataRecord value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\JournalDataRecord $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataResponse
+     * @param \Pggns\MidocoApi\Order\StructType\JournalDataRecord $item
+     * @return \Pggns\MidocoApi\Order\StructType\ExportJournalDataResponse
      */
-    public function addToJournalDataRecord(\Pggns\MidocoApi\Api\Order\StructType\JournalDataRecord $item): self
+    public function addToJournalDataRecord(\Pggns\MidocoApi\Order\StructType\JournalDataRecord $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\JournalDataRecord) {
-            throw new InvalidArgumentException(sprintf('The JournalDataRecord property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\JournalDataRecord, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\JournalDataRecord) {
+            throw new InvalidArgumentException(sprintf('The JournalDataRecord property can only contain items of type \Pggns\MidocoApi\Order\StructType\JournalDataRecord, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->JournalDataRecord[] = $item;
         
@@ -135,7 +135,7 @@ class ExportJournalDataResponse extends AbstractStructBase
     /**
      * Set numRecords value
      * @param int $numRecords
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportJournalDataResponse
      */
     public function setNumRecords(?int $numRecords = null): self
     {
@@ -158,7 +158,7 @@ class ExportJournalDataResponse extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportJournalDataResponse
      */
     public function setExportId(?int $exportId = null): self
     {
@@ -181,7 +181,7 @@ class ExportJournalDataResponse extends AbstractStructBase
     /**
      * Set checkSum value
      * @param int $checkSum
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportJournalDataResponse
      */
     public function setCheckSum(?int $checkSum = null): self
     {

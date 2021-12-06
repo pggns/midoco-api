@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -93,7 +93,7 @@ class RebookingSupplierInvoiceRequest extends AbstractStructBase
      * Set revenues value
      * @throws InvalidArgumentException
      * @param int[] $revenues
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RebookingSupplierInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RebookingSupplierInvoiceRequest
      */
     public function setRevenues(?array $revenues = null): self
     {
@@ -109,7 +109,7 @@ class RebookingSupplierInvoiceRequest extends AbstractStructBase
      * Add item to revenues value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RebookingSupplierInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RebookingSupplierInvoiceRequest
      */
     public function addToRevenues(int $item): self
     {
@@ -132,7 +132,7 @@ class RebookingSupplierInvoiceRequest extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RebookingSupplierInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RebookingSupplierInvoiceRequest
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -155,7 +155,7 @@ class RebookingSupplierInvoiceRequest extends AbstractStructBase
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RebookingSupplierInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RebookingSupplierInvoiceRequest
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -178,7 +178,7 @@ class RebookingSupplierInvoiceRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RebookingSupplierInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RebookingSupplierInvoiceRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {

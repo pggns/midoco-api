@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SupplierReportFormatDTO extends AbstractStructBase
     /**
      * Set format value
      * @param string $format
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierReportFormatDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierReportFormatDTO
      */
     public function setFormat(?string $format = null): self
     {
@@ -78,7 +78,7 @@ class SupplierReportFormatDTO extends AbstractStructBase
     /**
      * Set showOnReport value
      * @param bool $showOnReport
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierReportFormatDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierReportFormatDTO
      */
     public function setShowOnReport(?bool $showOnReport = null): self
     {
@@ -101,7 +101,7 @@ class SupplierReportFormatDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierReportFormatDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierReportFormatDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

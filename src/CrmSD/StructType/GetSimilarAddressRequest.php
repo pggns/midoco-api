@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetSimilarAddressRequest extends AbstractStructBase
      * The MidocoSimilarAddress
      * Meta information extracted from the WSDL
      * - ref: MidocoSimilarAddress
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\SimilarAddressDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\SimilarAddressDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\SimilarAddressDTO $MidocoSimilarAddress = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\SimilarAddressDTO $MidocoSimilarAddress = null;
     /**
      * Constructor method for GetSimilarAddressRequest
      * @uses GetSimilarAddressRequest::setMidocoSimilarAddress()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\SimilarAddressDTO $midocoSimilarAddress
+     * @param \Pggns\MidocoApi\CrmSD\StructType\SimilarAddressDTO $midocoSimilarAddress
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\SimilarAddressDTO $midocoSimilarAddress = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\SimilarAddressDTO $midocoSimilarAddress = null)
     {
         $this
             ->setMidocoSimilarAddress($midocoSimilarAddress);
     }
     /**
      * Get MidocoSimilarAddress value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SimilarAddressDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SimilarAddressDTO|null
      */
-    public function getMidocoSimilarAddress(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\SimilarAddressDTO
+    public function getMidocoSimilarAddress(): ?\Pggns\MidocoApi\CrmSD\StructType\SimilarAddressDTO
     {
         return $this->MidocoSimilarAddress;
     }
     /**
      * Set MidocoSimilarAddress value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\SimilarAddressDTO $midocoSimilarAddress
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetSimilarAddressRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\SimilarAddressDTO $midocoSimilarAddress
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetSimilarAddressRequest
      */
-    public function setMidocoSimilarAddress(?\Pggns\MidocoApi\Api\CrmSD\StructType\SimilarAddressDTO $midocoSimilarAddress = null): self
+    public function setMidocoSimilarAddress(?\Pggns\MidocoApi\CrmSD\StructType\SimilarAddressDTO $midocoSimilarAddress = null): self
     {
         $this->MidocoSimilarAddress = $midocoSimilarAddress;
         

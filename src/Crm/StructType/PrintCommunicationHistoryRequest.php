@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class PrintCommunicationHistoryRequest extends AbstractStructBase
      * The MidocoCommunicationHistory
      * Meta information extracted from the WSDL
      * - ref: MidocoCommunicationHistory
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory $MidocoCommunicationHistory = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory $MidocoCommunicationHistory = null;
     /**
      * Constructor method for PrintCommunicationHistoryRequest
      * @uses PrintCommunicationHistoryRequest::setMidocoCommunicationHistory()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory $midocoCommunicationHistory
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory $midocoCommunicationHistory
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory $midocoCommunicationHistory = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory $midocoCommunicationHistory = null)
     {
         $this
             ->setMidocoCommunicationHistory($midocoCommunicationHistory);
     }
     /**
      * Get MidocoCommunicationHistory value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory|null
      */
-    public function getMidocoCommunicationHistory(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory
+    public function getMidocoCommunicationHistory(): ?\Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory
     {
         return $this->MidocoCommunicationHistory;
     }
     /**
      * Set MidocoCommunicationHistory value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory $midocoCommunicationHistory
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PrintCommunicationHistoryRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory $midocoCommunicationHistory
+     * @return \Pggns\MidocoApi\Crm\StructType\PrintCommunicationHistoryRequest
      */
-    public function setMidocoCommunicationHistory(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory $midocoCommunicationHistory = null): self
+    public function setMidocoCommunicationHistory(?\Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory $midocoCommunicationHistory = null): self
     {
         $this->MidocoCommunicationHistory = $midocoCommunicationHistory;
         

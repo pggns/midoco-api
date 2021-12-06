@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchPackageMarginsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPackageMargin
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPackageMargin[]
      */
     protected ?array $MidocoPackageMargin = null;
     /**
      * Constructor method for SearchPackageMarginsResponse
      * @uses SearchPackageMarginsResponse::setMidocoPackageMargin()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin[] $midocoPackageMargin
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPackageMargin[] $midocoPackageMargin
      */
     public function __construct(?array $midocoPackageMargin = null)
     {
@@ -34,7 +34,7 @@ class SearchPackageMarginsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPackageMargin value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPackageMargin[]
      */
     public function getMidocoPackageMargin(): ?array
     {
@@ -55,12 +55,12 @@ class SearchPackageMarginsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchPackageMarginsResponseMidocoPackageMarginItem) {
             // validation for constraint: itemType
-            if (!$searchPackageMarginsResponseMidocoPackageMarginItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin) {
+            if (!$searchPackageMarginsResponseMidocoPackageMarginItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoPackageMargin) {
                 $invalidValues[] = is_object($searchPackageMarginsResponseMidocoPackageMarginItem) ? get_class($searchPackageMarginsResponseMidocoPackageMarginItem) : sprintf('%s(%s)', gettype($searchPackageMarginsResponseMidocoPackageMarginItem), var_export($searchPackageMarginsResponseMidocoPackageMarginItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPackageMargin property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPackageMargin property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPackageMargin, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchPackageMarginsResponse extends AbstractStructBase
     /**
      * Set MidocoPackageMargin value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin[] $midocoPackageMargin
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPackageMarginsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPackageMargin[] $midocoPackageMargin
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPackageMarginsResponse
      */
     public function setMidocoPackageMargin(?array $midocoPackageMargin = null): self
     {
@@ -85,14 +85,14 @@ class SearchPackageMarginsResponse extends AbstractStructBase
     /**
      * Add item to MidocoPackageMargin value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPackageMarginsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPackageMargin $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPackageMarginsResponse
      */
-    public function addToMidocoPackageMargin(\Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin $item): self
+    public function addToMidocoPackageMargin(\Pggns\MidocoApi\Order\StructType\MidocoPackageMargin $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin) {
-            throw new InvalidArgumentException(sprintf('The MidocoPackageMargin property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoPackageMargin) {
+            throw new InvalidArgumentException(sprintf('The MidocoPackageMargin property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPackageMargin, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPackageMargin[] = $item;
         

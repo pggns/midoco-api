@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SearchOrderLayoutOrgunitRequest extends AbstractStructBase
     /**
      * Set layoutId value
      * @param int $layoutId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrderLayoutOrgunitRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrderLayoutOrgunitRequest
      */
     public function setLayoutId(?int $layoutId = null): self
     {
@@ -78,7 +78,7 @@ class SearchOrderLayoutOrgunitRequest extends AbstractStructBase
     /**
      * Set notAllowedUnit value
      * @param string $notAllowedUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrderLayoutOrgunitRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrderLayoutOrgunitRequest
      */
     public function setNotAllowedUnit(?string $notAllowedUnit = null): self
     {
@@ -101,7 +101,7 @@ class SearchOrderLayoutOrgunitRequest extends AbstractStructBase
     /**
      * Set asNeighbor value
      * @param bool $asNeighbor
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrderLayoutOrgunitRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrderLayoutOrgunitRequest
      */
     public function setAsNeighbor(?bool $asNeighbor = null): self
     {

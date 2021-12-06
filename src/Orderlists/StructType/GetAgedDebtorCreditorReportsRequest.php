@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -81,7 +81,7 @@ class GetAgedDebtorCreditorReportsRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAgedDebtorCreditorReportsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAgedDebtorCreditorReportsRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -104,7 +104,7 @@ class GetAgedDebtorCreditorReportsRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAgedDebtorCreditorReportsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAgedDebtorCreditorReportsRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -127,7 +127,7 @@ class GetAgedDebtorCreditorReportsRequest extends AbstractStructBase
     /**
      * Set dueDateFrom value
      * @param string $dueDateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAgedDebtorCreditorReportsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAgedDebtorCreditorReportsRequest
      */
     public function setDueDateFrom(?string $dueDateFrom = null): self
     {
@@ -150,7 +150,7 @@ class GetAgedDebtorCreditorReportsRequest extends AbstractStructBase
     /**
      * Set dueDateTo value
      * @param string $dueDateTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAgedDebtorCreditorReportsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAgedDebtorCreditorReportsRequest
      */
     public function setDueDateTo(?string $dueDateTo = null): self
     {
@@ -173,7 +173,7 @@ class GetAgedDebtorCreditorReportsRequest extends AbstractStructBase
     /**
      * Set receiptDateFrom value
      * @param string $receiptDateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAgedDebtorCreditorReportsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAgedDebtorCreditorReportsRequest
      */
     public function setReceiptDateFrom(?string $receiptDateFrom = null): self
     {
@@ -196,7 +196,7 @@ class GetAgedDebtorCreditorReportsRequest extends AbstractStructBase
     /**
      * Set receiptDateTo value
      * @param string $receiptDateTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAgedDebtorCreditorReportsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAgedDebtorCreditorReportsRequest
      */
     public function setReceiptDateTo(?string $receiptDateTo = null): self
     {

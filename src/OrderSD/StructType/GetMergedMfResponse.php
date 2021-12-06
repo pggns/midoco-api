@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMergedMfResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMf
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMf[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoMf[]
      */
     protected ?array $MidocoMf = null;
     /**
      * Constructor method for GetMergedMfResponse
      * @uses GetMergedMfResponse::setMidocoMf()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMf[] $midocoMf
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoMf[] $midocoMf
      */
     public function __construct(?array $midocoMf = null)
     {
@@ -34,7 +34,7 @@ class GetMergedMfResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMf value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMf[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoMf[]
      */
     public function getMidocoMf(): ?array
     {
@@ -55,12 +55,12 @@ class GetMergedMfResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMergedMfResponseMidocoMfItem) {
             // validation for constraint: itemType
-            if (!$getMergedMfResponseMidocoMfItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMf) {
+            if (!$getMergedMfResponseMidocoMfItem instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoMf) {
                 $invalidValues[] = is_object($getMergedMfResponseMidocoMfItem) ? get_class($getMergedMfResponseMidocoMfItem) : sprintf('%s(%s)', gettype($getMergedMfResponseMidocoMfItem), var_export($getMergedMfResponseMidocoMfItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMf property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMf, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMf property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoMf, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMergedMfResponse extends AbstractStructBase
     /**
      * Set MidocoMf value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMf[] $midocoMf
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMergedMfResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoMf[] $midocoMf
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMergedMfResponse
      */
     public function setMidocoMf(?array $midocoMf = null): self
     {
@@ -85,14 +85,14 @@ class GetMergedMfResponse extends AbstractStructBase
     /**
      * Add item to MidocoMf value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMf $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMergedMfResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoMf $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMergedMfResponse
      */
-    public function addToMidocoMf(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMf $item): self
+    public function addToMidocoMf(\Pggns\MidocoApi\OrderSD\StructType\MidocoMf $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMf) {
-            throw new InvalidArgumentException(sprintf('The MidocoMf property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMf, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoMf) {
+            throw new InvalidArgumentException(sprintf('The MidocoMf property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoMf, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMf[] = $item;
         

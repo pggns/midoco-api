@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class PurchaseSaleDimensionDTO extends AbstractStructBase
     /**
      * Set isChild value
      * @param string $isChild
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PurchaseSaleDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\PurchaseSaleDimensionDTO
      */
     public function setIsChild(?string $isChild = null): self
     {
@@ -86,7 +86,7 @@ class PurchaseSaleDimensionDTO extends AbstractStructBase
     /**
      * Set isMain value
      * @param string $isMain
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PurchaseSaleDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\PurchaseSaleDimensionDTO
      */
     public function setIsMain(?string $isMain = null): self
     {
@@ -109,7 +109,7 @@ class PurchaseSaleDimensionDTO extends AbstractStructBase
     /**
      * Set isPackage value
      * @param string $isPackage
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PurchaseSaleDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\PurchaseSaleDimensionDTO
      */
     public function setIsPackage(?string $isPackage = null): self
     {
@@ -132,7 +132,7 @@ class PurchaseSaleDimensionDTO extends AbstractStructBase
     /**
      * Set purchaseSaleId value
      * @param int $purchaseSaleId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PurchaseSaleDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\PurchaseSaleDimensionDTO
      */
     public function setPurchaseSaleId(?int $purchaseSaleId = null): self
     {

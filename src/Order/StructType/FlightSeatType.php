@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -59,7 +59,7 @@ class FlightSeatType extends AbstractStructBase
     /**
      * Set seat value
      * @param string $seat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightSeatType
+     * @return \Pggns\MidocoApi\Order\StructType\FlightSeatType
      */
     public function setSeat(?string $seat = null): self
     {
@@ -82,7 +82,7 @@ class FlightSeatType extends AbstractStructBase
     /**
      * Set person_assignment value
      * @param int $person_assignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightSeatType
+     * @return \Pggns\MidocoApi\Order\StructType\FlightSeatType
      */
     public function setPerson_assignment(?int $person_assignment = null): self
     {
@@ -105,7 +105,7 @@ class FlightSeatType extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param int $personAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightSeatType
+     * @return \Pggns\MidocoApi\Order\StructType\FlightSeatType
      */
     public function setPersonAssignment(?int $personAssignment = null): self
     {

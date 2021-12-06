@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class PaymentProviderSettlBookJournalDTO extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentProviderSettlBookJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentProviderSettlBookJournalDTO
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -86,7 +86,7 @@ class PaymentProviderSettlBookJournalDTO extends AbstractStructBase
     /**
      * Set journalId value
      * @param int $journalId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentProviderSettlBookJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentProviderSettlBookJournalDTO
      */
     public function setJournalId(?int $journalId = null): self
     {
@@ -109,7 +109,7 @@ class PaymentProviderSettlBookJournalDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentProviderSettlBookJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentProviderSettlBookJournalDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -132,7 +132,7 @@ class PaymentProviderSettlBookJournalDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentProviderSettlBookJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentProviderSettlBookJournalDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {

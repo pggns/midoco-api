@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoCrsSystem extends CrsSystemDTO
     /**
      * Set isInherited value
      * @param bool $isInherited
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCrsSystem
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoCrsSystem
      */
     public function setIsInherited(?bool $isInherited = null): self
     {

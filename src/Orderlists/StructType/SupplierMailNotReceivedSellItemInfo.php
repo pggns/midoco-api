@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -198,7 +198,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -221,7 +221,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set travelStart value
      * @param string $travelStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setTravelStart(?string $travelStart = null): self
     {
@@ -244,7 +244,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set travelEnd value
      * @param string $travelEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setTravelEnd(?string $travelEnd = null): self
     {
@@ -267,7 +267,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setStatus(?string $status = null): self
     {
@@ -290,7 +290,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set pax value
      * @param int $pax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setPax(?int $pax = null): self
     {
@@ -313,7 +313,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setPrice(?float $price = null): self
     {
@@ -336,7 +336,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set accomodationDescription value
      * @param string $accomodationDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setAccomodationDescription(?string $accomodationDescription = null): self
     {
@@ -359,7 +359,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set hotelName value
      * @param string $hotelName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setHotelName(?string $hotelName = null): self
     {
@@ -382,7 +382,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set confirmationReceived value
      * @param bool $confirmationReceived
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setConfirmationReceived(?bool $confirmationReceived = null): self
     {
@@ -405,7 +405,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -428,7 +428,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setRemark(?string $remark = null): self
     {
@@ -451,7 +451,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set cateringDescription value
      * @param string $cateringDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setCateringDescription(?string $cateringDescription = null): self
     {
@@ -474,7 +474,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -497,7 +497,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set hotelLocalization value
      * @param string $hotelLocalization
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setHotelLocalization(?string $hotelLocalization = null): self
     {
@@ -520,7 +520,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set receivedStatus value
      * @param string $receivedStatus
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setReceivedStatus(?string $receivedStatus = null): self
     {
@@ -543,7 +543,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set receivedDate value
      * @param string $receivedDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setReceivedDate(?string $receivedDate = null): self
     {
@@ -566,7 +566,7 @@ class SupplierMailNotReceivedSellItemInfo extends AbstractStructBase
     /**
      * Set bookingFlightNo value
      * @param string $bookingFlightNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedSellItemInfo
      */
     public function setBookingFlightNo(?string $bookingFlightNo = null): self
     {

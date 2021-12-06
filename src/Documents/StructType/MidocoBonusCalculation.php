@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoBonusCalculation extends BonusCalculationDTO
     /**
      * Set bonusEmployee value
      * @param int $bonusEmployee
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBonusCalculation
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBonusCalculation
      */
     public function setBonusEmployee(?int $bonusEmployee = null): self
     {

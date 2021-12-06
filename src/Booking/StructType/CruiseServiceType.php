@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -358,7 +358,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setPosition(int $position): self
     {
@@ -381,7 +381,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set serviceCode value
      * @param string $serviceCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setServiceCode(?string $serviceCode = null): self
     {
@@ -404,7 +404,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set serviceName value
      * @param string $serviceName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setServiceName(?string $serviceName = null): self
     {
@@ -427,7 +427,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set serviceDescription value
      * @param string $serviceDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setServiceDescription(?string $serviceDescription = null): self
     {
@@ -450,7 +450,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set cabinCode value
      * @param string $cabinCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setCabinCode(?string $cabinCode = null): self
     {
@@ -477,7 +477,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set cabinDescription value
      * @param string $cabinDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setCabinDescription(?string $cabinDescription = null): self
     {
@@ -504,7 +504,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set cateringCode value
      * @param string $cateringCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setCateringCode(?string $cateringCode = null): self
     {
@@ -531,7 +531,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set cateringDescription value
      * @param string $cateringDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setCateringDescription(?string $cateringDescription = null): self
     {
@@ -558,7 +558,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -585,7 +585,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -612,7 +612,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set personsPerService value
      * @param string $personsPerService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setPersonsPerService(?string $personsPerService = null): self
     {
@@ -635,7 +635,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set noOfServices value
      * @param string $noOfServices
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setNoOfServices(?string $noOfServices = null): self
     {
@@ -658,7 +658,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {
@@ -681,7 +681,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {
@@ -704,7 +704,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -727,7 +727,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setCurrency(?string $currency = 'EUR'): self
     {
@@ -750,7 +750,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set vatIncluded value
      * @param bool $vatIncluded
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setVatIncluded(?bool $vatIncluded = false): self
     {
@@ -773,7 +773,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setCountry(?string $country = null): self
     {
@@ -796,7 +796,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set transfer value
      * @param string $transfer
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setTransfer(?string $transfer = null): self
     {
@@ -819,7 +819,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set embarkation value
      * @param string $embarkation
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setEmbarkation(?string $embarkation = null): self
     {
@@ -842,7 +842,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set debarkation value
      * @param string $debarkation
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setDebarkation(?string $debarkation = null): self
     {
@@ -865,7 +865,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set route value
      * @param string $route
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setRoute(?string $route = null): self
     {
@@ -888,7 +888,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set deck value
      * @param string $deck
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setDeck(?string $deck = null): self
     {
@@ -911,7 +911,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set cabin_no value
      * @param string $cabin_no
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setCabin_no(?string $cabin_no = null): self
     {
@@ -934,7 +934,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set vehicle value
      * @param string $vehicle
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setVehicle(?string $vehicle = null): self
     {
@@ -957,7 +957,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set vehicle_dimension value
      * @param string $vehicle_dimension
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setVehicle_dimension(?string $vehicle_dimension = null): self
     {
@@ -980,7 +980,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set vehicle_plate_number value
      * @param string $vehicle_plate_number
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setVehicle_plate_number(?string $vehicle_plate_number = null): self
     {
@@ -1002,17 +1002,17 @@ class CruiseServiceType extends AbstractStructBase
     }
     /**
      * Set arrivalTransportType value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\TransportType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\TransportType::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\TransportType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\TransportType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $arrivalTransportType
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setArrivalTransportType(?string $arrivalTransportType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\TransportType::valueIsValid($arrivalTransportType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\TransportType', is_array($arrivalTransportType) ? implode(', ', $arrivalTransportType) : var_export($arrivalTransportType, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\TransportType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\TransportType::valueIsValid($arrivalTransportType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\TransportType', is_array($arrivalTransportType) ? implode(', ', $arrivalTransportType) : var_export($arrivalTransportType, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\TransportType::getValidValues())), __LINE__);
         }
         $this->arrivalTransportType = $arrivalTransportType;
         
@@ -1029,7 +1029,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set departureDescr value
      * @param string $departureDescr
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setDepartureDescr(?string $departureDescr = null): self
     {
@@ -1056,7 +1056,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set destinationDescr value
      * @param string $destinationDescr
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setDestinationDescr(?string $destinationDescr = null): self
     {
@@ -1082,17 +1082,17 @@ class CruiseServiceType extends AbstractStructBase
     }
     /**
      * Set returnTransportType value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\TransportType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\TransportType::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\TransportType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\TransportType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $returnTransportType
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setReturnTransportType(?string $returnTransportType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\TransportType::valueIsValid($returnTransportType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\TransportType', is_array($returnTransportType) ? implode(', ', $returnTransportType) : var_export($returnTransportType, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\TransportType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\TransportType::valueIsValid($returnTransportType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\TransportType', is_array($returnTransportType) ? implode(', ', $returnTransportType) : var_export($returnTransportType, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\TransportType::getValidValues())), __LINE__);
         }
         $this->returnTransportType = $returnTransportType;
         
@@ -1109,7 +1109,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set returnDepartureDescr value
      * @param string $returnDepartureDescr
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setReturnDepartureDescr(?string $returnDepartureDescr = null): self
     {
@@ -1136,7 +1136,7 @@ class CruiseServiceType extends AbstractStructBase
     /**
      * Set returnDestinationDescr value
      * @param string $returnDestinationDescr
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType
      */
     public function setReturnDestinationDescr(?string $returnDestinationDescr = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteMidocoQuestionValueRequest extends AbstractStructBase
     /**
      * Set valueId value
      * @param int $valueId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteMidocoQuestionValueRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteMidocoQuestionValueRequest
      */
     public function setValueId(?int $valueId = null): self
     {

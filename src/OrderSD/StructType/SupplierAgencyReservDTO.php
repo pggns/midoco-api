@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SupplierAgencyReservDTO extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyReservDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyReservDTO
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -102,7 +102,7 @@ class SupplierAgencyReservDTO extends AbstractStructBase
     /**
      * Set sourceAgency value
      * @param string $sourceAgency
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyReservDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyReservDTO
      */
     public function setSourceAgency(?string $sourceAgency = null): self
     {
@@ -125,7 +125,7 @@ class SupplierAgencyReservDTO extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyReservDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyReservDTO
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -148,7 +148,7 @@ class SupplierAgencyReservDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyReservDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyReservDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -171,7 +171,7 @@ class SupplierAgencyReservDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyReservDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyReservDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -194,7 +194,7 @@ class SupplierAgencyReservDTO extends AbstractStructBase
     /**
      * Set usedAgency value
      * @param string $usedAgency
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyReservDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyReservDTO
      */
     public function setUsedAgency(?string $usedAgency = null): self
     {

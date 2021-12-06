@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoCustomerTravelType extends CrmTravelDTO
     /**
      * Set bookingUserName value
      * @param string $bookingUserName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerTravelType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerTravelType
      */
     public function setBookingUserName(?string $bookingUserName = null): self
     {
@@ -70,7 +70,7 @@ class MidocoCustomerTravelType extends CrmTravelDTO
     /**
      * Set travelDuration value
      * @param int $travelDuration
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerTravelType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerTravelType
      */
     public function setTravelDuration(?int $travelDuration = null): self
     {

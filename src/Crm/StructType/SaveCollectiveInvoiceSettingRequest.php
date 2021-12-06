@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveCollectiveInvoiceSettingRequest extends AbstractStructBase
      * The MidocoCollectiveInvoiceSetting
      * Meta information extracted from the WSDL
      * - ref: MidocoCollectiveInvoiceSetting
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO $MidocoCollectiveInvoiceSetting = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO $MidocoCollectiveInvoiceSetting = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +29,10 @@ class SaveCollectiveInvoiceSettingRequest extends AbstractStructBase
      * Constructor method for SaveCollectiveInvoiceSettingRequest
      * @uses SaveCollectiveInvoiceSettingRequest::setMidocoCollectiveInvoiceSetting()
      * @uses SaveCollectiveInvoiceSettingRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO $midocoCollectiveInvoiceSetting
+     * @param \Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO $midocoCollectiveInvoiceSetting
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO $midocoCollectiveInvoiceSetting = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO $midocoCollectiveInvoiceSetting = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoCollectiveInvoiceSetting($midocoCollectiveInvoiceSetting)
@@ -40,18 +40,18 @@ class SaveCollectiveInvoiceSettingRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCollectiveInvoiceSetting value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO|null
      */
-    public function getMidocoCollectiveInvoiceSetting(): ?\Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO
+    public function getMidocoCollectiveInvoiceSetting(): ?\Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO
     {
         return $this->MidocoCollectiveInvoiceSetting;
     }
     /**
      * Set MidocoCollectiveInvoiceSetting value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO $midocoCollectiveInvoiceSetting
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCollectiveInvoiceSettingRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO $midocoCollectiveInvoiceSetting
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCollectiveInvoiceSettingRequest
      */
-    public function setMidocoCollectiveInvoiceSetting(?\Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO $midocoCollectiveInvoiceSetting = null): self
+    public function setMidocoCollectiveInvoiceSetting(?\Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO $midocoCollectiveInvoiceSetting = null): self
     {
         $this->MidocoCollectiveInvoiceSetting = $midocoCollectiveInvoiceSetting;
         
@@ -68,7 +68,7 @@ class SaveCollectiveInvoiceSettingRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCollectiveInvoiceSettingRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCollectiveInvoiceSettingRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

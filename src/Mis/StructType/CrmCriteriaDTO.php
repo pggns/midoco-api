@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CrmCriteriaDTO extends AbstractStructBase
     /**
      * Set criteriaId value
      * @param int $criteriaId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmCriteriaDTO
      */
     public function setCriteriaId(?int $criteriaId = null): self
     {
@@ -86,7 +86,7 @@ class CrmCriteriaDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmCriteriaDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -109,7 +109,7 @@ class CrmCriteriaDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmCriteriaDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -132,7 +132,7 @@ class CrmCriteriaDTO extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmCriteriaDTO
      */
     public function setValue(?string $value = null): self
     {

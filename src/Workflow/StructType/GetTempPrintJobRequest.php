@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetTempPrintJobRequest extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTempPrintJobRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTempPrintJobRequest
      */
     public function setId(?int $id = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoKaeraBond extends AbstractStructBase
     /**
      * Set amoundBondsLeft value
      * @param int $amoundBondsLeft
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoKaeraBond
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoKaeraBond
      */
     public function setAmoundBondsLeft(?int $amoundBondsLeft = null): self
     {
@@ -94,7 +94,7 @@ class MidocoKaeraBond extends AbstractStructBase
     /**
      * Set bondTravelcostLeft value
      * @param float $bondTravelcostLeft
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoKaeraBond
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoKaeraBond
      */
     public function setBondTravelcostLeft(?float $bondTravelcostLeft = null): self
     {
@@ -117,7 +117,7 @@ class MidocoKaeraBond extends AbstractStructBase
     /**
      * Set returnCode value
      * @param int $returnCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoKaeraBond
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoKaeraBond
      */
     public function setReturnCode(?int $returnCode = null): self
     {
@@ -140,7 +140,7 @@ class MidocoKaeraBond extends AbstractStructBase
     /**
      * Set bondPdf value
      * @param string $bondPdf
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoKaeraBond
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoKaeraBond
      */
     public function setBondPdf(?string $bondPdf = null): self
     {
@@ -163,7 +163,7 @@ class MidocoKaeraBond extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoKaeraBond
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoKaeraBond
      */
     public function setDescription(?string $description = null): self
     {

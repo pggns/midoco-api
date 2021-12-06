@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class DeleteMiscPaymentSettingResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMiscPaymentSetting
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\CashPaymentSettingDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\CashPaymentSettingDTO[]
      */
     protected ?array $MidocoMiscPaymentSetting = null;
     /**
      * Constructor method for DeleteMiscPaymentSettingResponse
      * @uses DeleteMiscPaymentSettingResponse::setMidocoMiscPaymentSetting()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\CashPaymentSettingDTO[] $midocoMiscPaymentSetting
+     * @param \Pggns\MidocoApi\Documents\StructType\CashPaymentSettingDTO[] $midocoMiscPaymentSetting
      */
     public function __construct(?array $midocoMiscPaymentSetting = null)
     {
@@ -34,7 +34,7 @@ class DeleteMiscPaymentSettingResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMiscPaymentSetting value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\CashPaymentSettingDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\CashPaymentSettingDTO[]
      */
     public function getMidocoMiscPaymentSetting(): ?array
     {
@@ -55,12 +55,12 @@ class DeleteMiscPaymentSettingResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteMiscPaymentSettingResponseMidocoMiscPaymentSettingItem) {
             // validation for constraint: itemType
-            if (!$deleteMiscPaymentSettingResponseMidocoMiscPaymentSettingItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\CashPaymentSettingDTO) {
+            if (!$deleteMiscPaymentSettingResponseMidocoMiscPaymentSettingItem instanceof \Pggns\MidocoApi\Documents\StructType\CashPaymentSettingDTO) {
                 $invalidValues[] = is_object($deleteMiscPaymentSettingResponseMidocoMiscPaymentSettingItem) ? get_class($deleteMiscPaymentSettingResponseMidocoMiscPaymentSettingItem) : sprintf('%s(%s)', gettype($deleteMiscPaymentSettingResponseMidocoMiscPaymentSettingItem), var_export($deleteMiscPaymentSettingResponseMidocoMiscPaymentSettingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMiscPaymentSetting property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\CashPaymentSettingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMiscPaymentSetting property can only contain items of type \Pggns\MidocoApi\Documents\StructType\CashPaymentSettingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class DeleteMiscPaymentSettingResponse extends AbstractStructBase
     /**
      * Set MidocoMiscPaymentSetting value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\CashPaymentSettingDTO[] $midocoMiscPaymentSetting
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DeleteMiscPaymentSettingResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\CashPaymentSettingDTO[] $midocoMiscPaymentSetting
+     * @return \Pggns\MidocoApi\Documents\StructType\DeleteMiscPaymentSettingResponse
      */
     public function setMidocoMiscPaymentSetting(?array $midocoMiscPaymentSetting = null): self
     {
@@ -85,14 +85,14 @@ class DeleteMiscPaymentSettingResponse extends AbstractStructBase
     /**
      * Add item to MidocoMiscPaymentSetting value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\CashPaymentSettingDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DeleteMiscPaymentSettingResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\CashPaymentSettingDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\DeleteMiscPaymentSettingResponse
      */
-    public function addToMidocoMiscPaymentSetting(\Pggns\MidocoApi\Api\Documents\StructType\CashPaymentSettingDTO $item): self
+    public function addToMidocoMiscPaymentSetting(\Pggns\MidocoApi\Documents\StructType\CashPaymentSettingDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\CashPaymentSettingDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMiscPaymentSetting property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\CashPaymentSettingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\CashPaymentSettingDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMiscPaymentSetting property can only contain items of type \Pggns\MidocoApi\Documents\StructType\CashPaymentSettingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMiscPaymentSetting[] = $item;
         

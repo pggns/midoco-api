@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class FeeTypeLocalDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FeeTypeLocalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\FeeTypeLocalDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -78,7 +78,7 @@ class FeeTypeLocalDTO extends AbstractStructBase
     /**
      * Set feeTypeCode value
      * @param string $feeTypeCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FeeTypeLocalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\FeeTypeLocalDTO
      */
     public function setFeeTypeCode(?string $feeTypeCode = null): self
     {
@@ -101,7 +101,7 @@ class FeeTypeLocalDTO extends AbstractStructBase
     /**
      * Set localization value
      * @param string $localization
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FeeTypeLocalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\FeeTypeLocalDTO
      */
     public function setLocalization(?string $localization = null): self
     {

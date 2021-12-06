@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoVatReconciliationSumsType extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -94,7 +94,7 @@ class MidocoVatReconciliationSumsType extends AbstractStructBase
     /**
      * Set vatDescription value
      * @param string $vatDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType
      */
     public function setVatDescription(?string $vatDescription = null): self
     {
@@ -117,7 +117,7 @@ class MidocoVatReconciliationSumsType extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType
      */
     public function setVatPercent(?float $vatPercent = null): self
     {
@@ -140,7 +140,7 @@ class MidocoVatReconciliationSumsType extends AbstractStructBase
     /**
      * Set bookingAmount value
      * @param float $bookingAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType
      */
     public function setBookingAmount(?float $bookingAmount = null): self
     {
@@ -163,7 +163,7 @@ class MidocoVatReconciliationSumsType extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationSumsType
      */
     public function setVatAmount(?float $vatAmount = null): self
     {

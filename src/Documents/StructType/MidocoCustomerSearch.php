@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoCustomerSearch extends CustomerSearchDTO
     /**
      * Set isSpecialCustomer value
      * @param bool $isSpecialCustomer
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCustomerSearch
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCustomerSearch
      */
     public function setIsSpecialCustomer(?bool $isSpecialCustomer = null): self
     {
@@ -70,7 +70,7 @@ class MidocoCustomerSearch extends CustomerSearchDTO
     /**
      * Set isCrmPersonTraveller value
      * @param bool $isCrmPersonTraveller
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCustomerSearch
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCustomerSearch
      */
     public function setIsCrmPersonTraveller(?bool $isCrmPersonTraveller = null): self
     {

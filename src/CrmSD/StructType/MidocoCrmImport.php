@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,23 +17,23 @@ class MidocoCrmImport extends AbstractStructBase
      * The MidocoCrmCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
      * The MidocoSaveAddress
      * Meta information extracted from the WSDL
      * - ref: MidocoSaveAddress
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\SaveAddressDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\SaveAddressDTO $MidocoSaveAddress = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO $MidocoSaveAddress = null;
     /**
      * The MidocoContactEntry
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoContactEntry
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[]
      */
     protected ?array $MidocoContactEntry = null;
     /**
@@ -42,7 +42,7 @@ class MidocoCrmImport extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmCriteria
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCriteriaDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO[]
      */
     protected ?array $MidocoCrmCriteria = null;
     /**
@@ -51,7 +51,7 @@ class MidocoCrmImport extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerTravel
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType[]
      */
     protected ?array $MidocoCustomerTravel = null;
     /**
@@ -60,7 +60,7 @@ class MidocoCrmImport extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoContactHistory
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory[]
      */
     protected ?array $MidocoContactHistory = null;
     /**
@@ -69,7 +69,7 @@ class MidocoCrmImport extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmPersonTraveller
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmPersonTravellerDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO[]
      */
     protected ?array $MidocoCrmPersonTraveller = null;
     /**
@@ -78,7 +78,7 @@ class MidocoCrmImport extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmNotice
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice[]
      */
     protected ?array $MidocoCrmNotice = null;
     /**
@@ -87,7 +87,7 @@ class MidocoCrmImport extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmBonusCard
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO[]
      */
     protected ?array $MidocoCrmBonusCard = null;
     /**
@@ -96,7 +96,7 @@ class MidocoCrmImport extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmCcCard
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCcCard[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCcCard[]
      */
     protected ?array $MidocoCrmCcCard = null;
     /**
@@ -111,18 +111,18 @@ class MidocoCrmImport extends AbstractStructBase
      * @uses MidocoCrmImport::setMidocoCrmNotice()
      * @uses MidocoCrmImport::setMidocoCrmBonusCard()
      * @uses MidocoCrmImport::setMidocoCrmCcCard()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\SaveAddressDTO $midocoSaveAddress
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType[] $midocoContactEntry
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCriteriaDTO[] $midocoCrmCriteria
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType[] $midocoCustomerTravel
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory[] $midocoContactHistory
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmPersonTravellerDTO[] $midocoCrmPersonTraveller
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice[] $midocoCrmNotice
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO[] $midocoCrmBonusCard
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCcCard[] $midocoCrmCcCard
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO $midocoSaveAddress
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO[] $midocoCrmCriteria
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType[] $midocoCustomerTravel
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory[] $midocoContactHistory
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO[] $midocoCrmPersonTraveller
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice[] $midocoCrmNotice
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO[] $midocoCrmBonusCard
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCcCard[] $midocoCrmCcCard
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\SaveAddressDTO $midocoSaveAddress = null, ?array $midocoContactEntry = null, ?array $midocoCrmCriteria = null, ?array $midocoCustomerTravel = null, ?array $midocoContactHistory = null, ?array $midocoCrmPersonTraveller = null, ?array $midocoCrmNotice = null, ?array $midocoCrmBonusCard = null, ?array $midocoCrmCcCard = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?\Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO $midocoSaveAddress = null, ?array $midocoContactEntry = null, ?array $midocoCrmCriteria = null, ?array $midocoCustomerTravel = null, ?array $midocoContactHistory = null, ?array $midocoCrmPersonTraveller = null, ?array $midocoCrmNotice = null, ?array $midocoCrmBonusCard = null, ?array $midocoCrmCcCard = null)
     {
         $this
             ->setMidocoCrmCustomer($midocoCrmCustomer)
@@ -138,18 +138,18 @@ class MidocoCrmImport extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         
@@ -157,18 +157,18 @@ class MidocoCrmImport extends AbstractStructBase
     }
     /**
      * Get MidocoSaveAddress value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveAddressDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO|null
      */
-    public function getMidocoSaveAddress(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\SaveAddressDTO
+    public function getMidocoSaveAddress(): ?\Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO
     {
         return $this->MidocoSaveAddress;
     }
     /**
      * Set MidocoSaveAddress value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\SaveAddressDTO $midocoSaveAddress
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO $midocoSaveAddress
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
-    public function setMidocoSaveAddress(?\Pggns\MidocoApi\Api\CrmSD\StructType\SaveAddressDTO $midocoSaveAddress = null): self
+    public function setMidocoSaveAddress(?\Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO $midocoSaveAddress = null): self
     {
         $this->MidocoSaveAddress = $midocoSaveAddress;
         
@@ -176,7 +176,7 @@ class MidocoCrmImport extends AbstractStructBase
     }
     /**
      * Get MidocoContactEntry value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[]
      */
     public function getMidocoContactEntry(): ?array
     {
@@ -197,12 +197,12 @@ class MidocoCrmImport extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCrmImportMidocoContactEntryItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmImportMidocoContactEntryItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType) {
+            if (!$midocoCrmImportMidocoContactEntryItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType) {
                 $invalidValues[] = is_object($midocoCrmImportMidocoContactEntryItem) ? get_class($midocoCrmImportMidocoContactEntryItem) : sprintf('%s(%s)', gettype($midocoCrmImportMidocoContactEntryItem), var_export($midocoCrmImportMidocoContactEntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -211,8 +211,8 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Set MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType[] $midocoContactEntry
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
     public function setMidocoContactEntry(?array $midocoContactEntry = null): self
     {
@@ -227,14 +227,14 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Add item to MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
-    public function addToMidocoContactEntry(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType $item): self
+    public function addToMidocoContactEntry(\Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactEntry[] = $item;
         
@@ -242,7 +242,7 @@ class MidocoCrmImport extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCriteria value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCriteriaDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO[]
      */
     public function getMidocoCrmCriteria(): ?array
     {
@@ -263,12 +263,12 @@ class MidocoCrmImport extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCrmImportMidocoCrmCriteriaItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmImportMidocoCrmCriteriaItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCriteriaDTO) {
+            if (!$midocoCrmImportMidocoCrmCriteriaItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO) {
                 $invalidValues[] = is_object($midocoCrmImportMidocoCrmCriteriaItem) ? get_class($midocoCrmImportMidocoCrmCriteriaItem) : sprintf('%s(%s)', gettype($midocoCrmImportMidocoCrmCriteriaItem), var_export($midocoCrmImportMidocoCrmCriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCriteriaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -277,8 +277,8 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Set MidocoCrmCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCriteriaDTO[] $midocoCrmCriteria
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO[] $midocoCrmCriteria
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
     public function setMidocoCrmCriteria(?array $midocoCrmCriteria = null): self
     {
@@ -293,14 +293,14 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Add item to MidocoCrmCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCriteriaDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
-    public function addToMidocoCrmCriteria(\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCriteriaDTO $item): self
+    public function addToMidocoCrmCriteria(\Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCriteriaDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCriteriaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmCriteria[] = $item;
         
@@ -308,7 +308,7 @@ class MidocoCrmImport extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerTravel value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType[]
      */
     public function getMidocoCustomerTravel(): ?array
     {
@@ -329,12 +329,12 @@ class MidocoCrmImport extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCrmImportMidocoCustomerTravelItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmImportMidocoCustomerTravelItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType) {
+            if (!$midocoCrmImportMidocoCustomerTravelItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType) {
                 $invalidValues[] = is_object($midocoCrmImportMidocoCustomerTravelItem) ? get_class($midocoCrmImportMidocoCustomerTravelItem) : sprintf('%s(%s)', gettype($midocoCrmImportMidocoCustomerTravelItem), var_export($midocoCrmImportMidocoCustomerTravelItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerTravel property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerTravel property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -343,8 +343,8 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Set MidocoCustomerTravel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType[] $midocoCustomerTravel
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType[] $midocoCustomerTravel
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
     public function setMidocoCustomerTravel(?array $midocoCustomerTravel = null): self
     {
@@ -359,14 +359,14 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Add item to MidocoCustomerTravel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
-    public function addToMidocoCustomerTravel(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType $item): self
+    public function addToMidocoCustomerTravel(\Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerTravel property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerTravel property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerTravel[] = $item;
         
@@ -374,7 +374,7 @@ class MidocoCrmImport extends AbstractStructBase
     }
     /**
      * Get MidocoContactHistory value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory[]
      */
     public function getMidocoContactHistory(): ?array
     {
@@ -395,12 +395,12 @@ class MidocoCrmImport extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCrmImportMidocoContactHistoryItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmImportMidocoContactHistoryItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory) {
+            if (!$midocoCrmImportMidocoContactHistoryItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory) {
                 $invalidValues[] = is_object($midocoCrmImportMidocoContactHistoryItem) ? get_class($midocoCrmImportMidocoContactHistoryItem) : sprintf('%s(%s)', gettype($midocoCrmImportMidocoContactHistoryItem), var_export($midocoCrmImportMidocoContactHistoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactHistory property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactHistory property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -409,8 +409,8 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Set MidocoContactHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory[] $midocoContactHistory
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory[] $midocoContactHistory
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
     public function setMidocoContactHistory(?array $midocoContactHistory = null): self
     {
@@ -425,14 +425,14 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Add item to MidocoContactHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
-    public function addToMidocoContactHistory(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory $item): self
+    public function addToMidocoContactHistory(\Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactHistory property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactHistory property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactHistory[] = $item;
         
@@ -440,7 +440,7 @@ class MidocoCrmImport extends AbstractStructBase
     }
     /**
      * Get MidocoCrmPersonTraveller value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmPersonTravellerDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO[]
      */
     public function getMidocoCrmPersonTraveller(): ?array
     {
@@ -461,12 +461,12 @@ class MidocoCrmImport extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCrmImportMidocoCrmPersonTravellerItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmImportMidocoCrmPersonTravellerItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CrmPersonTravellerDTO) {
+            if (!$midocoCrmImportMidocoCrmPersonTravellerItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO) {
                 $invalidValues[] = is_object($midocoCrmImportMidocoCrmPersonTravellerItem) ? get_class($midocoCrmImportMidocoCrmPersonTravellerItem) : sprintf('%s(%s)', gettype($midocoCrmImportMidocoCrmPersonTravellerItem), var_export($midocoCrmImportMidocoCrmPersonTravellerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CrmPersonTravellerDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -475,8 +475,8 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Set MidocoCrmPersonTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmPersonTravellerDTO[] $midocoCrmPersonTraveller
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO[] $midocoCrmPersonTraveller
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
     public function setMidocoCrmPersonTraveller(?array $midocoCrmPersonTraveller = null): self
     {
@@ -491,14 +491,14 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Add item to MidocoCrmPersonTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmPersonTravellerDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
-    public function addToMidocoCrmPersonTraveller(\Pggns\MidocoApi\Api\CrmSD\StructType\CrmPersonTravellerDTO $item): self
+    public function addToMidocoCrmPersonTraveller(\Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CrmPersonTravellerDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CrmPersonTravellerDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmPersonTraveller[] = $item;
         
@@ -506,7 +506,7 @@ class MidocoCrmImport extends AbstractStructBase
     }
     /**
      * Get MidocoCrmNotice value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice[]
      */
     public function getMidocoCrmNotice(): ?array
     {
@@ -527,12 +527,12 @@ class MidocoCrmImport extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCrmImportMidocoCrmNoticeItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmImportMidocoCrmNoticeItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice) {
+            if (!$midocoCrmImportMidocoCrmNoticeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice) {
                 $invalidValues[] = is_object($midocoCrmImportMidocoCrmNoticeItem) ? get_class($midocoCrmImportMidocoCrmNoticeItem) : sprintf('%s(%s)', gettype($midocoCrmImportMidocoCrmNoticeItem), var_export($midocoCrmImportMidocoCrmNoticeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmNotice property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmNotice property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -541,8 +541,8 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Set MidocoCrmNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice[] $midocoCrmNotice
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice[] $midocoCrmNotice
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
     public function setMidocoCrmNotice(?array $midocoCrmNotice = null): self
     {
@@ -557,14 +557,14 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Add item to MidocoCrmNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
-    public function addToMidocoCrmNotice(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice $item): self
+    public function addToMidocoCrmNotice(\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmNotice property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmNotice property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmNotice[] = $item;
         
@@ -572,7 +572,7 @@ class MidocoCrmImport extends AbstractStructBase
     }
     /**
      * Get MidocoCrmBonusCard value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO[]
      */
     public function getMidocoCrmBonusCard(): ?array
     {
@@ -593,12 +593,12 @@ class MidocoCrmImport extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCrmImportMidocoCrmBonusCardItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmImportMidocoCrmBonusCardItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO) {
+            if (!$midocoCrmImportMidocoCrmBonusCardItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO) {
                 $invalidValues[] = is_object($midocoCrmImportMidocoCrmBonusCardItem) ? get_class($midocoCrmImportMidocoCrmBonusCardItem) : sprintf('%s(%s)', gettype($midocoCrmImportMidocoCrmBonusCardItem), var_export($midocoCrmImportMidocoCrmBonusCardItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmBonusCard property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmBonusCard property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -607,8 +607,8 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Set MidocoCrmBonusCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO[] $midocoCrmBonusCard
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO[] $midocoCrmBonusCard
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
     public function setMidocoCrmBonusCard(?array $midocoCrmBonusCard = null): self
     {
@@ -623,14 +623,14 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Add item to MidocoCrmBonusCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
-    public function addToMidocoCrmBonusCard(\Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO $item): self
+    public function addToMidocoCrmBonusCard(\Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmBonusCard property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CrmBonusCardDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmBonusCard property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmBonusCard[] = $item;
         
@@ -638,7 +638,7 @@ class MidocoCrmImport extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCcCard value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCcCard[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCcCard[]
      */
     public function getMidocoCrmCcCard(): ?array
     {
@@ -659,12 +659,12 @@ class MidocoCrmImport extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCrmImportMidocoCrmCcCardItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmImportMidocoCrmCcCardItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCcCard) {
+            if (!$midocoCrmImportMidocoCrmCcCardItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCcCard) {
                 $invalidValues[] = is_object($midocoCrmImportMidocoCrmCcCardItem) ? get_class($midocoCrmImportMidocoCrmCcCardItem) : sprintf('%s(%s)', gettype($midocoCrmImportMidocoCrmCcCardItem), var_export($midocoCrmImportMidocoCrmCcCardItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmCcCard property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCcCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmCcCard property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCcCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -673,8 +673,8 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Set MidocoCrmCcCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCcCard[] $midocoCrmCcCard
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCcCard[] $midocoCrmCcCard
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
     public function setMidocoCrmCcCard(?array $midocoCrmCcCard = null): self
     {
@@ -689,14 +689,14 @@ class MidocoCrmImport extends AbstractStructBase
     /**
      * Add item to MidocoCrmCcCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCcCard $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImport
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCcCard $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImport
      */
-    public function addToMidocoCrmCcCard(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCcCard $item): self
+    public function addToMidocoCrmCcCard(\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCcCard $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCcCard) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmCcCard property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCcCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCcCard) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmCcCard property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCcCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmCcCard[] = $item;
         

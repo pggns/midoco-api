@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class SaveExternalLinkRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoExternalLink
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoExternalLink|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink $MidocoExternalLink = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoExternalLink $MidocoExternalLink = null;
     /**
      * Constructor method for SaveExternalLinkRequest
      * @uses SaveExternalLinkRequest::setMidocoExternalLink()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink $midocoExternalLink
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoExternalLink $midocoExternalLink
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink $midocoExternalLink = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoExternalLink $midocoExternalLink = null)
     {
         $this
             ->setMidocoExternalLink($midocoExternalLink);
     }
     /**
      * Get MidocoExternalLink value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoExternalLink|null
      */
-    public function getMidocoExternalLink(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink
+    public function getMidocoExternalLink(): ?\Pggns\MidocoApi\Order\StructType\MidocoExternalLink
     {
         return $this->MidocoExternalLink;
     }
     /**
      * Set MidocoExternalLink value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink $midocoExternalLink
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveExternalLinkRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoExternalLink $midocoExternalLink
+     * @return \Pggns\MidocoApi\Order\StructType\SaveExternalLinkRequest
      */
-    public function setMidocoExternalLink(?\Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink $midocoExternalLink = null): self
+    public function setMidocoExternalLink(?\Pggns\MidocoApi\Order\StructType\MidocoExternalLink $midocoExternalLink = null): self
     {
         $this->MidocoExternalLink = $midocoExternalLink;
         

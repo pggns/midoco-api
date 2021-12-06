@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class MidocoOrderPaymentConfirmationInfo extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\PaymentConfirmationInfo[]
+     * @var \Pggns\MidocoApi\Documents\StructType\PaymentConfirmationInfo[]
      */
     protected ?array $PaymentConfirmationInfo = null;
     /**
      * Constructor method for MidocoOrderPaymentConfirmationInfo
      * @uses MidocoOrderPaymentConfirmationInfo::setPaymentConfirmationInfo()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PaymentConfirmationInfo[] $paymentConfirmationInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\PaymentConfirmationInfo[] $paymentConfirmationInfo
      */
     public function __construct(?array $paymentConfirmationInfo = null)
     {
@@ -33,7 +33,7 @@ class MidocoOrderPaymentConfirmationInfo extends AbstractStructBase
     }
     /**
      * Get PaymentConfirmationInfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentConfirmationInfo[]
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentConfirmationInfo[]
      */
     public function getPaymentConfirmationInfo(): ?array
     {
@@ -54,12 +54,12 @@ class MidocoOrderPaymentConfirmationInfo extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoOrderPaymentConfirmationInfoPaymentConfirmationInfoItem) {
             // validation for constraint: itemType
-            if (!$midocoOrderPaymentConfirmationInfoPaymentConfirmationInfoItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\PaymentConfirmationInfo) {
+            if (!$midocoOrderPaymentConfirmationInfoPaymentConfirmationInfoItem instanceof \Pggns\MidocoApi\Documents\StructType\PaymentConfirmationInfo) {
                 $invalidValues[] = is_object($midocoOrderPaymentConfirmationInfoPaymentConfirmationInfoItem) ? get_class($midocoOrderPaymentConfirmationInfoPaymentConfirmationInfoItem) : sprintf('%s(%s)', gettype($midocoOrderPaymentConfirmationInfoPaymentConfirmationInfoItem), var_export($midocoOrderPaymentConfirmationInfoPaymentConfirmationInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The PaymentConfirmationInfo property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\PaymentConfirmationInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The PaymentConfirmationInfo property can only contain items of type \Pggns\MidocoApi\Documents\StructType\PaymentConfirmationInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class MidocoOrderPaymentConfirmationInfo extends AbstractStructBase
     /**
      * Set PaymentConfirmationInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PaymentConfirmationInfo[] $paymentConfirmationInfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPaymentConfirmationInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\PaymentConfirmationInfo[] $paymentConfirmationInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderPaymentConfirmationInfo
      */
     public function setPaymentConfirmationInfo(?array $paymentConfirmationInfo = null): self
     {
@@ -84,14 +84,14 @@ class MidocoOrderPaymentConfirmationInfo extends AbstractStructBase
     /**
      * Add item to PaymentConfirmationInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PaymentConfirmationInfo $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderPaymentConfirmationInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\PaymentConfirmationInfo $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderPaymentConfirmationInfo
      */
-    public function addToPaymentConfirmationInfo(\Pggns\MidocoApi\Api\Documents\StructType\PaymentConfirmationInfo $item): self
+    public function addToPaymentConfirmationInfo(\Pggns\MidocoApi\Documents\StructType\PaymentConfirmationInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\PaymentConfirmationInfo) {
-            throw new InvalidArgumentException(sprintf('The PaymentConfirmationInfo property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\PaymentConfirmationInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\PaymentConfirmationInfo) {
+            throw new InvalidArgumentException(sprintf('The PaymentConfirmationInfo property can only contain items of type \Pggns\MidocoApi\Documents\StructType\PaymentConfirmationInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->PaymentConfirmationInfo[] = $item;
         

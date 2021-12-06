@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class BillingPositionRemarkDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionRemarkDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -86,7 +86,7 @@ class BillingPositionRemarkDTO extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionRemarkDTO
      */
     public function setPositionId(?int $positionId = null): self
     {
@@ -109,7 +109,7 @@ class BillingPositionRemarkDTO extends AbstractStructBase
     /**
      * Set printRemark value
      * @param bool $printRemark
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionRemarkDTO
      */
     public function setPrintRemark(?bool $printRemark = null): self
     {
@@ -132,7 +132,7 @@ class BillingPositionRemarkDTO extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionRemarkDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionRemarkDTO
      */
     public function setRemark(?string $remark = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetSupplierDisabledUnitsRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierDisabledUnitsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierDisabledUnitsRequest
      */
     public function setSupplierId(string $supplierId): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class MidocoMisCampaign extends MisCampaignDTO
     /**
      * Set isParticipating value
      * @param bool $isParticipating
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign
      */
     public function setIsParticipating(?bool $isParticipating = true): self
     {
@@ -72,7 +72,7 @@ class MidocoMisCampaign extends MisCampaignDTO
     /**
      * Set statusChangedBy value
      * @param int $statusChangedBy
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign
      */
     public function setStatusChangedBy(?int $statusChangedBy = null): self
     {

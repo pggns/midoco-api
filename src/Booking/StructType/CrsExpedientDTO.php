@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CrsExpedientDTO extends AbstractStructBase
     /**
      * Set crsName value
      * @param string $crsName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CrsExpedientDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\CrsExpedientDTO
      */
     public function setCrsName(?string $crsName = null): self
     {
@@ -78,7 +78,7 @@ class CrsExpedientDTO extends AbstractStructBase
     /**
      * Set expedientId value
      * @param string $expedientId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CrsExpedientDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\CrsExpedientDTO
      */
     public function setExpedientId(?string $expedientId = null): self
     {
@@ -101,7 +101,7 @@ class CrsExpedientDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CrsExpedientDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\CrsExpedientDTO
      */
     public function setUserId(?int $userId = null): self
     {

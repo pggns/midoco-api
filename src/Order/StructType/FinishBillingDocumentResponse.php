@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,9 +20,9 @@ class FinishBillingDocumentResponse extends AbstractStructBase
      * The MidocoBillingDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoBillingDocument
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
     /**
      * The errorCode
      * Meta information extracted from the WSDL
@@ -51,12 +51,12 @@ class FinishBillingDocumentResponse extends AbstractStructBase
      * @uses FinishBillingDocumentResponse::setErrorCode()
      * @uses FinishBillingDocumentResponse::setErrorBundle()
      * @uses FinishBillingDocumentResponse::setErrorArgs()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument
      * @param string $errorCode
      * @param string $errorBundle
      * @param string[] $errorArgs
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?string $errorCode = null, ?string $errorBundle = null, ?array $errorArgs = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?string $errorCode = null, ?string $errorBundle = null, ?array $errorArgs = null)
     {
         $this
             ->setMidocoBillingDocument($midocoBillingDocument)
@@ -66,18 +66,18 @@ class FinishBillingDocumentResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingDocument value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument|null
      */
-    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument
+    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument
     {
         return $this->MidocoBillingDocument;
     }
     /**
      * Set MidocoBillingDocument value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FinishBillingDocumentResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @return \Pggns\MidocoApi\Order\StructType\FinishBillingDocumentResponse
      */
-    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
+    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
     {
         $this->MidocoBillingDocument = $midocoBillingDocument;
         
@@ -94,7 +94,7 @@ class FinishBillingDocumentResponse extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FinishBillingDocumentResponse
+     * @return \Pggns\MidocoApi\Order\StructType\FinishBillingDocumentResponse
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -117,7 +117,7 @@ class FinishBillingDocumentResponse extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FinishBillingDocumentResponse
+     * @return \Pggns\MidocoApi\Order\StructType\FinishBillingDocumentResponse
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {
@@ -167,7 +167,7 @@ class FinishBillingDocumentResponse extends AbstractStructBase
      * Set errorArgs value
      * @throws InvalidArgumentException
      * @param string[] $errorArgs
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FinishBillingDocumentResponse
+     * @return \Pggns\MidocoApi\Order\StructType\FinishBillingDocumentResponse
      */
     public function setErrorArgs(?array $errorArgs = null): self
     {
@@ -183,7 +183,7 @@ class FinishBillingDocumentResponse extends AbstractStructBase
      * Add item to errorArgs value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FinishBillingDocumentResponse
+     * @return \Pggns\MidocoApi\Order\StructType\FinishBillingDocumentResponse
      */
     public function addToErrorArgs(string $item): self
     {

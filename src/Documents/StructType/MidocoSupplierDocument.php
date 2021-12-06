@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoSupplierDocument extends SupplierDocumentDTO
     /**
      * Set content value
      * @param string $content
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierDocument
      */
     public function setContent(?string $content = null): self
     {

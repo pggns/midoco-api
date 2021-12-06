@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetOrgunitsNotAllowedForModuleResponse extends AbstractStructBase
      * Set UnitNameNotAllowed value
      * @throws InvalidArgumentException
      * @param string[] $unitNameNotAllowed
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgunitsNotAllowedForModuleResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgunitsNotAllowedForModuleResponse
      */
     public function setUnitNameNotAllowed(?array $unitNameNotAllowed = null): self
     {
@@ -85,7 +85,7 @@ class GetOrgunitsNotAllowedForModuleResponse extends AbstractStructBase
      * Add item to UnitNameNotAllowed value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgunitsNotAllowedForModuleResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgunitsNotAllowedForModuleResponse
      */
     public function addToUnitNameNotAllowed(string $item): self
     {

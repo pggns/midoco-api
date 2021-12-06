@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCooperationsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCooperationInfo
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCooperationInfo[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCooperationInfo[]
      */
     protected ?array $MidocoCooperationInfo = null;
     /**
      * Constructor method for GetCooperationsResponse
      * @uses GetCooperationsResponse::setMidocoCooperationInfo()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCooperationInfo[] $midocoCooperationInfo
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCooperationInfo[] $midocoCooperationInfo
      */
     public function __construct(?array $midocoCooperationInfo = null)
     {
@@ -34,7 +34,7 @@ class GetCooperationsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCooperationInfo value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCooperationInfo[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCooperationInfo[]
      */
     public function getMidocoCooperationInfo(): ?array
     {
@@ -55,12 +55,12 @@ class GetCooperationsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCooperationsResponseMidocoCooperationInfoItem) {
             // validation for constraint: itemType
-            if (!$getCooperationsResponseMidocoCooperationInfoItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCooperationInfo) {
+            if (!$getCooperationsResponseMidocoCooperationInfoItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCooperationInfo) {
                 $invalidValues[] = is_object($getCooperationsResponseMidocoCooperationInfoItem) ? get_class($getCooperationsResponseMidocoCooperationInfoItem) : sprintf('%s(%s)', gettype($getCooperationsResponseMidocoCooperationInfoItem), var_export($getCooperationsResponseMidocoCooperationInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCooperationInfo property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCooperationInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCooperationInfo property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCooperationInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCooperationsResponse extends AbstractStructBase
     /**
      * Set MidocoCooperationInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCooperationInfo[] $midocoCooperationInfo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCooperationsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCooperationInfo[] $midocoCooperationInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCooperationsResponse
      */
     public function setMidocoCooperationInfo(?array $midocoCooperationInfo = null): self
     {
@@ -85,14 +85,14 @@ class GetCooperationsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCooperationInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCooperationInfo $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCooperationsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCooperationInfo $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCooperationsResponse
      */
-    public function addToMidocoCooperationInfo(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCooperationInfo $item): self
+    public function addToMidocoCooperationInfo(\Pggns\MidocoApi\CrmSD\StructType\MidocoCooperationInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCooperationInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoCooperationInfo property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCooperationInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCooperationInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoCooperationInfo property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCooperationInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCooperationInfo[] = $item;
         

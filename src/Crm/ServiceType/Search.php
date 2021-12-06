@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\ServiceType;
+namespace Pggns\MidocoApi\Crm\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Search extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Crm\ServiceType\Search
+     * @return \Pggns\MidocoApi\Crm\ServiceType\Search
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Search extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerRequest $paramSearchCustomerRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SearchCustomerRequest $paramSearchCustomerRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerResponse|bool
      */
-    public function searchCustomer(\Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerRequest $paramSearchCustomerRequest)
+    public function searchCustomer(\Pggns\MidocoApi\Crm\StructType\SearchCustomerRequest $paramSearchCustomerRequest)
     {
         try {
             $this->setResult($resultSearchCustomer = $this->getSoapClient()->__soapCall('searchCustomer', [
@@ -58,15 +58,15 @@ class Search extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SearchBankRequest $paramSearchBankRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchBankResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SearchBankRequest $paramSearchBankRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchBankResponse|bool
      */
-    public function searchBank(\Pggns\MidocoApi\Api\Crm\StructType\SearchBankRequest $paramSearchBankRequest)
+    public function searchBank(\Pggns\MidocoApi\Crm\StructType\SearchBankRequest $paramSearchBankRequest)
     {
         try {
             $this->setResult($resultSearchBank = $this->getSoapClient()->__soapCall('searchBank', [
@@ -85,15 +85,15 @@ class Search extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SearchCustDoubleAddrRequest $paramSearchCustDoubleAddrRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustDoubleAddrResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SearchCustDoubleAddrRequest $paramSearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustDoubleAddrResponse|bool
      */
-    public function searchCustDoubleAddr(\Pggns\MidocoApi\Api\Crm\StructType\SearchCustDoubleAddrRequest $paramSearchCustDoubleAddrRequest)
+    public function searchCustDoubleAddr(\Pggns\MidocoApi\Crm\StructType\SearchCustDoubleAddrRequest $paramSearchCustDoubleAddrRequest)
     {
         try {
             $this->setResult($resultSearchCustDoubleAddr = $this->getSoapClient()->__soapCall('searchCustDoubleAddr', [
@@ -112,15 +112,15 @@ class Search extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SearchCrmTravellersRequest $paramSearchCrmTravellersRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCrmTravellersResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SearchCrmTravellersRequest $paramSearchCrmTravellersRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCrmTravellersResponse|bool
      */
-    public function searchCrmTravellers(\Pggns\MidocoApi\Api\Crm\StructType\SearchCrmTravellersRequest $paramSearchCrmTravellersRequest)
+    public function searchCrmTravellers(\Pggns\MidocoApi\Crm\StructType\SearchCrmTravellersRequest $paramSearchCrmTravellersRequest)
     {
         try {
             $this->setResult($resultSearchCrmTravellers = $this->getSoapClient()->__soapCall('searchCrmTravellers', [
@@ -139,15 +139,15 @@ class Search extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SearchBlackListRequest $paramSearchBlackListRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchBlackListResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SearchBlackListRequest $paramSearchBlackListRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchBlackListResponse|bool
      */
-    public function searchBlackList(\Pggns\MidocoApi\Api\Crm\StructType\SearchBlackListRequest $paramSearchBlackListRequest)
+    public function searchBlackList(\Pggns\MidocoApi\Crm\StructType\SearchBlackListRequest $paramSearchBlackListRequest)
     {
         try {
             $this->setResult($resultSearchBlackList = $this->getSoapClient()->__soapCall('searchBlackList', [
@@ -166,15 +166,15 @@ class Search extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByTravelRequest $paramSearchCustomerByTravelRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByTravelResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SearchCustomerByTravelRequest $paramSearchCustomerByTravelRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerByTravelResponse|bool
      */
-    public function searchCustomerByTravel(\Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByTravelRequest $paramSearchCustomerByTravelRequest)
+    public function searchCustomerByTravel(\Pggns\MidocoApi\Crm\StructType\SearchCustomerByTravelRequest $paramSearchCustomerByTravelRequest)
     {
         try {
             $this->setResult($resultSearchCustomerByTravel = $this->getSoapClient()->__soapCall('searchCustomerByTravel', [
@@ -193,15 +193,15 @@ class Search extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SearchMidocoMandateRequest $paramSearchMidocoMandateRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchMidocoMandateResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SearchMidocoMandateRequest $paramSearchMidocoMandateRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchMidocoMandateResponse|bool
      */
-    public function searchMidocoMandate(\Pggns\MidocoApi\Api\Crm\StructType\SearchMidocoMandateRequest $paramSearchMidocoMandateRequest)
+    public function searchMidocoMandate(\Pggns\MidocoApi\Crm\StructType\SearchMidocoMandateRequest $paramSearchMidocoMandateRequest)
     {
         try {
             $this->setResult($resultSearchMidocoMandate = $this->getSoapClient()->__soapCall('searchMidocoMandate', [
@@ -220,15 +220,15 @@ class Search extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SearchMandatesRequest $paramSearchMandatesRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchMidocoMandateResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SearchMandatesRequest $paramSearchMandatesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchMidocoMandateResponse|bool
      */
-    public function searchMandateReference(\Pggns\MidocoApi\Api\Crm\StructType\SearchMandatesRequest $paramSearchMandatesRequest)
+    public function searchMandateReference(\Pggns\MidocoApi\Crm\StructType\SearchMandatesRequest $paramSearchMandatesRequest)
     {
         try {
             $this->setResult($resultSearchMandateReference = $this->getSoapClient()->__soapCall('searchMandateReference', [
@@ -247,15 +247,15 @@ class Search extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByPhoneRequest $paramSearchCustomerByPhoneRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByPhoneResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneRequest $paramSearchCustomerByPhoneRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneResponse|bool
      */
-    public function searchCustomerByPhone(\Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByPhoneRequest $paramSearchCustomerByPhoneRequest)
+    public function searchCustomerByPhone(\Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneRequest $paramSearchCustomerByPhoneRequest)
     {
         try {
             $this->setResult($resultSearchCustomerByPhone = $this->getSoapClient()->__soapCall('searchCustomerByPhone', [
@@ -272,7 +272,7 @@ class Search extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchBankResponse|\Pggns\MidocoApi\Api\Crm\StructType\SearchBlackListResponse|\Pggns\MidocoApi\Api\Crm\StructType\SearchCrmTravellersResponse|\Pggns\MidocoApi\Api\Crm\StructType\SearchCustDoubleAddrResponse|\Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByPhoneResponse|\Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByTravelResponse|\Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerResponse|\Pggns\MidocoApi\Api\Crm\StructType\SearchMidocoMandateResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchBankResponse|\Pggns\MidocoApi\Crm\StructType\SearchBlackListResponse|\Pggns\MidocoApi\Crm\StructType\SearchCrmTravellersResponse|\Pggns\MidocoApi\Crm\StructType\SearchCustDoubleAddrResponse|\Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneResponse|\Pggns\MidocoApi\Crm\StructType\SearchCustomerByTravelResponse|\Pggns\MidocoApi\Crm\StructType\SearchCustomerResponse|\Pggns\MidocoApi\Crm\StructType\SearchMidocoMandateResponse
      */
     public function getResult()
     {

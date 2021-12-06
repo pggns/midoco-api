@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class MakeBillingDocumentForCustomerRequest extends AbstractStructBase
     /**
      * Set documentInternalVersion value
      * @param int $documentInternalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForCustomerRequest
      */
     public function setDocumentInternalVersion(?int $documentInternalVersion = null): self
     {
@@ -118,7 +118,7 @@ class MakeBillingDocumentForCustomerRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForCustomerRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -141,7 +141,7 @@ class MakeBillingDocumentForCustomerRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForCustomerRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -164,7 +164,7 @@ class MakeBillingDocumentForCustomerRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForCustomerRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -187,7 +187,7 @@ class MakeBillingDocumentForCustomerRequest extends AbstractStructBase
     /**
      * Set printToDate value
      * @param string $printToDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForCustomerRequest
      */
     public function setPrintToDate(?string $printToDate = null): self
     {
@@ -210,7 +210,7 @@ class MakeBillingDocumentForCustomerRequest extends AbstractStructBase
     /**
      * Set printFromDate value
      * @param string $printFromDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForCustomerRequest
      */
     public function setPrintFromDate(?string $printFromDate = null): self
     {
@@ -233,7 +233,7 @@ class MakeBillingDocumentForCustomerRequest extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForCustomerRequest
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -256,7 +256,7 @@ class MakeBillingDocumentForCustomerRequest extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForCustomerRequest
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {

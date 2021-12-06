@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -495,7 +495,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set acceptCash value
      * @param bool $acceptCash
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAcceptCash(?bool $acceptCash = null): self
     {
@@ -518,7 +518,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set acceptCc value
      * @param bool $acceptCc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAcceptCc(?bool $acceptCc = null): self
     {
@@ -541,7 +541,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set acceptDebit value
      * @param bool $acceptDebit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAcceptDebit(?bool $acceptDebit = null): self
     {
@@ -564,7 +564,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set acceptInvoice value
      * @param bool $acceptInvoice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAcceptInvoice(?bool $acceptInvoice = null): self
     {
@@ -587,7 +587,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set accountDiPayment value
      * @param string $accountDiPayment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAccountDiPayment(?string $accountDiPayment = null): self
     {
@@ -610,7 +610,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set accountExpenseInvoice value
      * @param string $accountExpenseInvoice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAccountExpenseInvoice(?string $accountExpenseInvoice = null): self
     {
@@ -633,7 +633,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set accountProvisionInsurance value
      * @param string $accountProvisionInsurance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAccountProvisionInsurance(?string $accountProvisionInsurance = null): self
     {
@@ -656,7 +656,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set accountProvisionInsuranceDi value
      * @param string $accountProvisionInsuranceDi
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAccountProvisionInsuranceDi(?string $accountProvisionInsuranceDi = null): self
     {
@@ -679,7 +679,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set accountProvisionNovat value
      * @param string $accountProvisionNovat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAccountProvisionNovat(?string $accountProvisionNovat = null): self
     {
@@ -702,7 +702,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set accountProvisionNovatDi value
      * @param string $accountProvisionNovatDi
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAccountProvisionNovatDi(?string $accountProvisionNovatDi = null): self
     {
@@ -725,7 +725,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set accountProvisionReceivable value
      * @param string $accountProvisionReceivable
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAccountProvisionReceivable(?string $accountProvisionReceivable = null): self
     {
@@ -748,7 +748,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set accountProvisionVat value
      * @param string $accountProvisionVat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAccountProvisionVat(?string $accountProvisionVat = null): self
     {
@@ -771,7 +771,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set accountProvisionVatDi value
      * @param string $accountProvisionVatDi
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAccountProvisionVatDi(?string $accountProvisionVatDi = null): self
     {
@@ -794,7 +794,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set accountSupplierPayment value
      * @param string $accountSupplierPayment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAccountSupplierPayment(?string $accountSupplierPayment = null): self
     {
@@ -817,7 +817,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set accountSupplierVat value
      * @param string $accountSupplierVat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAccountSupplierVat(?string $accountSupplierVat = null): self
     {
@@ -840,7 +840,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set activeCommissionSettlement value
      * @param bool $activeCommissionSettlement
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setActiveCommissionSettlement(?bool $activeCommissionSettlement = null): self
     {
@@ -863,7 +863,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set allowMarkUp value
      * @param bool $allowMarkUp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAllowMarkUp(?bool $allowMarkUp = null): self
     {
@@ -886,7 +886,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set autoRemarkPosition value
      * @param int $autoRemarkPosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setAutoRemarkPosition(?int $autoRemarkPosition = null): self
     {
@@ -909,7 +909,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set bookingIdRequired value
      * @param bool $bookingIdRequired
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setBookingIdRequired(?bool $bookingIdRequired = null): self
     {
@@ -932,7 +932,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set collectiveSettlement value
      * @param bool $collectiveSettlement
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setCollectiveSettlement(?bool $collectiveSettlement = null): self
     {
@@ -955,7 +955,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set commissionMode value
      * @param int $commissionMode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setCommissionMode(?int $commissionMode = null): self
     {
@@ -978,7 +978,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -1001,7 +1001,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set customerWishNotification value
      * @param bool $customerWishNotification
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setCustomerWishNotification(?bool $customerWishNotification = null): self
     {
@@ -1024,7 +1024,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set emailNotification value
      * @param bool $emailNotification
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setEmailNotification(?bool $emailNotification = null): self
     {
@@ -1047,7 +1047,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set entryHandlingCollective value
      * @param int $entryHandlingCollective
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setEntryHandlingCollective(?int $entryHandlingCollective = null): self
     {
@@ -1070,7 +1070,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set entryRestAsProv value
      * @param bool $entryRestAsProv
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setEntryRestAsProv(?bool $entryRestAsProv = null): self
     {
@@ -1093,7 +1093,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set group1 value
      * @param string $group1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setGroup1(?string $group1 = null): self
     {
@@ -1116,7 +1116,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set group2 value
      * @param string $group2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setGroup2(?string $group2 = null): self
     {
@@ -1139,7 +1139,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set group3 value
      * @param string $group3
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setGroup3(?string $group3 = null): self
     {
@@ -1162,7 +1162,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set inkassoMode value
      * @param int $inkassoMode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setInkassoMode(?int $inkassoMode = null): self
     {
@@ -1185,7 +1185,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set interimAccount value
      * @param string $interimAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setInterimAccount(?string $interimAccount = null): self
     {
@@ -1208,7 +1208,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set isCommPrefTravelDate value
      * @param bool $isCommPrefTravelDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setIsCommPrefTravelDate(?bool $isCommPrefTravelDate = null): self
     {
@@ -1231,7 +1231,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set isInsurance value
      * @param bool $isInsurance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setIsInsurance(?bool $isInsurance = null): self
     {
@@ -1254,7 +1254,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set isLocked value
      * @param bool $isLocked
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setIsLocked(?bool $isLocked = null): self
     {
@@ -1277,7 +1277,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set isOwnAccount value
      * @param bool $isOwnAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setIsOwnAccount(?bool $isOwnAccount = null): self
     {
@@ -1300,7 +1300,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set isOwnSettlement value
      * @param bool $isOwnSettlement
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setIsOwnSettlement(?bool $isOwnSettlement = null): self
     {
@@ -1323,7 +1323,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set isPrefTravelDate value
      * @param bool $isPrefTravelDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setIsPrefTravelDate(?bool $isPrefTravelDate = null): self
     {
@@ -1346,7 +1346,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set isVarious value
      * @param bool $isVarious
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setIsVarious(?bool $isVarious = null): self
     {
@@ -1369,7 +1369,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set lockDate value
      * @param string $lockDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setLockDate(?string $lockDate = null): self
     {
@@ -1392,7 +1392,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setName(?string $name = null): self
     {
@@ -1415,7 +1415,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set optionPeriod value
      * @param int $optionPeriod
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setOptionPeriod(?int $optionPeriod = null): self
     {
@@ -1438,7 +1438,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set preventBillingPosSplit value
      * @param bool $preventBillingPosSplit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setPreventBillingPosSplit(?bool $preventBillingPosSplit = null): self
     {
@@ -1461,7 +1461,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set preventBookingRefGen value
      * @param bool $preventBookingRefGen
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setPreventBookingRefGen(?bool $preventBookingRefGen = null): self
     {
@@ -1484,7 +1484,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set printOptionId value
      * @param int $printOptionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setPrintOptionId(?int $printOptionId = null): self
     {
@@ -1507,7 +1507,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set requiresConfirmation value
      * @param bool $requiresConfirmation
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setRequiresConfirmation(?bool $requiresConfirmation = null): self
     {
@@ -1530,7 +1530,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set settlementGroup value
      * @param string $settlementGroup
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setSettlementGroup(?string $settlementGroup = null): self
     {
@@ -1553,7 +1553,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set stornoNotification value
      * @param bool $stornoNotification
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setStornoNotification(?bool $stornoNotification = null): self
     {
@@ -1576,7 +1576,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set supplierGroupForFee value
      * @param string $supplierGroupForFee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setSupplierGroupForFee(?string $supplierGroupForFee = null): self
     {
@@ -1599,7 +1599,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -1622,7 +1622,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set suppressBackofficeExport value
      * @param bool $suppressBackofficeExport
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setSuppressBackofficeExport(?bool $suppressBackofficeExport = null): self
     {
@@ -1645,7 +1645,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set suppressRevenueBooking value
      * @param bool $suppressRevenueBooking
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setSuppressRevenueBooking(?bool $suppressRevenueBooking = null): self
     {
@@ -1668,7 +1668,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set travelDocumentsPerItem value
      * @param bool $travelDocumentsPerItem
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setTravelDocumentsPerItem(?bool $travelDocumentsPerItem = null): self
     {
@@ -1691,7 +1691,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set useBookingAsEntry value
      * @param bool $useBookingAsEntry
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setUseBookingAsEntry(?bool $useBookingAsEntry = null): self
     {
@@ -1714,7 +1714,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set validCreationTravel value
      * @param string $validCreationTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setValidCreationTravel(?string $validCreationTravel = null): self
     {
@@ -1737,7 +1737,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set validDate value
      * @param string $validDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setValidDate(?string $validDate = null): self
     {
@@ -1760,7 +1760,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setVatId(?string $vatId = null): self
     {
@@ -1783,7 +1783,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set vatIdChange value
      * @param bool $vatIdChange
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setVatIdChange(?bool $vatIdChange = null): self
     {
@@ -1806,7 +1806,7 @@ class SupplierDTO extends AbstractStructBase
     /**
      * Set verkCode value
      * @param int $verkCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
      */
     public function setVerkCode(?int $verkCode = null): self
     {

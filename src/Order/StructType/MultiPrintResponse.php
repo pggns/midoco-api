@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class MultiPrintResponse extends AbstractStructBase
      * The MidocoMailMessage
      * Meta information extracted from the WSDL
      * - ref: mail:MidocoMailMessage
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
     /**
      * The historyId
      * Meta information extracted from the WSDL
@@ -58,7 +58,7 @@ class MultiPrintResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:MidocoMailDescription4Inexso
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso[]
      */
     protected ?array $MidocoMailDescription4Inexso = null;
     /**
@@ -67,7 +67,7 @@ class MultiPrintResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAdditionalPrintDocument
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument[]
      */
     protected ?array $MidocoAdditionalPrintDocument = null;
     /**
@@ -97,17 +97,17 @@ class MultiPrintResponse extends AbstractStructBase
      * @uses MultiPrintResponse::setMidocoAdditionalPrintDocument()
      * @uses MultiPrintResponse::setVoidInvoiceId()
      * @uses MultiPrintResponse::setRtfData()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
      * @param int[] $historyId
      * @param int[] $invoiceId
      * @param int[] $printjobId
      * @param int $docRepoId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso[] $midocoMailDescription4Inexso
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument[] $midocoAdditionalPrintDocument
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso[] $midocoMailDescription4Inexso
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument[] $midocoAdditionalPrintDocument
      * @param int[] $voidInvoiceId
      * @param string[] $rtfData
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?array $historyId = null, ?array $invoiceId = null, ?array $printjobId = null, ?int $docRepoId = null, ?array $midocoMailDescription4Inexso = null, ?array $midocoAdditionalPrintDocument = null, ?array $voidInvoiceId = null, ?array $rtfData = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?array $historyId = null, ?array $invoiceId = null, ?array $printjobId = null, ?int $docRepoId = null, ?array $midocoMailDescription4Inexso = null, ?array $midocoAdditionalPrintDocument = null, ?array $voidInvoiceId = null, ?array $rtfData = null)
     {
         $this
             ->setMidocoMailMessage($midocoMailMessage)
@@ -122,18 +122,18 @@ class MultiPrintResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMailMessage value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
     {
         return $this->MidocoMailMessage;
     }
     /**
      * Set MidocoMailMessage value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
-    public function setMidocoMailMessage(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
+    public function setMidocoMailMessage(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
     {
         $this->MidocoMailMessage = $midocoMailMessage;
         
@@ -177,7 +177,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Set historyId value
      * @throws InvalidArgumentException
      * @param int[] $historyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function setHistoryId(?array $historyId = null): self
     {
@@ -193,7 +193,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Add item to historyId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function addToHistoryId(int $item): self
     {
@@ -243,7 +243,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Set invoiceId value
      * @throws InvalidArgumentException
      * @param int[] $invoiceId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function setInvoiceId(?array $invoiceId = null): self
     {
@@ -259,7 +259,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Add item to invoiceId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function addToInvoiceId(int $item): self
     {
@@ -309,7 +309,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Set printjobId value
      * @throws InvalidArgumentException
      * @param int[] $printjobId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function setPrintjobId(?array $printjobId = null): self
     {
@@ -325,7 +325,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Add item to printjobId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function addToPrintjobId(int $item): self
     {
@@ -348,7 +348,7 @@ class MultiPrintResponse extends AbstractStructBase
     /**
      * Set docRepoId value
      * @param int $docRepoId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function setDocRepoId(?int $docRepoId = null): self
     {
@@ -362,7 +362,7 @@ class MultiPrintResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMailDescription4Inexso value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso[]
      */
     public function getMidocoMailDescription4Inexso(): ?array
     {
@@ -383,12 +383,12 @@ class MultiPrintResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $multiPrintResponseMidocoMailDescription4InexsoItem) {
             // validation for constraint: itemType
-            if (!$multiPrintResponseMidocoMailDescription4InexsoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso) {
+            if (!$multiPrintResponseMidocoMailDescription4InexsoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso) {
                 $invalidValues[] = is_object($multiPrintResponseMidocoMailDescription4InexsoItem) ? get_class($multiPrintResponseMidocoMailDescription4InexsoItem) : sprintf('%s(%s)', gettype($multiPrintResponseMidocoMailDescription4InexsoItem), var_export($multiPrintResponseMidocoMailDescription4InexsoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMailDescription4Inexso property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMailDescription4Inexso property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -397,8 +397,8 @@ class MultiPrintResponse extends AbstractStructBase
     /**
      * Set MidocoMailDescription4Inexso value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso[] $midocoMailDescription4Inexso
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso[] $midocoMailDescription4Inexso
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function setMidocoMailDescription4Inexso(?array $midocoMailDescription4Inexso = null): self
     {
@@ -413,14 +413,14 @@ class MultiPrintResponse extends AbstractStructBase
     /**
      * Add item to MidocoMailDescription4Inexso value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $item
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
-    public function addToMidocoMailDescription4Inexso(\Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $item): self
+    public function addToMidocoMailDescription4Inexso(\Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso) {
-            throw new InvalidArgumentException(sprintf('The MidocoMailDescription4Inexso property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso) {
+            throw new InvalidArgumentException(sprintf('The MidocoMailDescription4Inexso property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMailDescription4Inexso[] = $item;
         
@@ -428,7 +428,7 @@ class MultiPrintResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAdditionalPrintDocument value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument[]
      */
     public function getMidocoAdditionalPrintDocument(): ?array
     {
@@ -449,12 +449,12 @@ class MultiPrintResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $multiPrintResponseMidocoAdditionalPrintDocumentItem) {
             // validation for constraint: itemType
-            if (!$multiPrintResponseMidocoAdditionalPrintDocumentItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument) {
+            if (!$multiPrintResponseMidocoAdditionalPrintDocumentItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument) {
                 $invalidValues[] = is_object($multiPrintResponseMidocoAdditionalPrintDocumentItem) ? get_class($multiPrintResponseMidocoAdditionalPrintDocumentItem) : sprintf('%s(%s)', gettype($multiPrintResponseMidocoAdditionalPrintDocumentItem), var_export($multiPrintResponseMidocoAdditionalPrintDocumentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAdditionalPrintDocument property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAdditionalPrintDocument property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -463,8 +463,8 @@ class MultiPrintResponse extends AbstractStructBase
     /**
      * Set MidocoAdditionalPrintDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument[] $midocoAdditionalPrintDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument[] $midocoAdditionalPrintDocument
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function setMidocoAdditionalPrintDocument(?array $midocoAdditionalPrintDocument = null): self
     {
@@ -479,14 +479,14 @@ class MultiPrintResponse extends AbstractStructBase
     /**
      * Add item to MidocoAdditionalPrintDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument $item
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
-    public function addToMidocoAdditionalPrintDocument(\Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument $item): self
+    public function addToMidocoAdditionalPrintDocument(\Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument) {
-            throw new InvalidArgumentException(sprintf('The MidocoAdditionalPrintDocument property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument) {
+            throw new InvalidArgumentException(sprintf('The MidocoAdditionalPrintDocument property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAdditionalPrintDocument[] = $item;
         
@@ -530,7 +530,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Set voidInvoiceId value
      * @throws InvalidArgumentException
      * @param int[] $voidInvoiceId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function setVoidInvoiceId(?array $voidInvoiceId = null): self
     {
@@ -546,7 +546,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Add item to voidInvoiceId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function addToVoidInvoiceId(int $item): self
     {
@@ -596,7 +596,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Set rtfData value
      * @throws InvalidArgumentException
      * @param string[] $rtfData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function setRtfData(?array $rtfData = null): self
     {
@@ -612,7 +612,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Add item to rtfData value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MultiPrintResponse
      */
     public function addToRtfData(string $item): self
     {

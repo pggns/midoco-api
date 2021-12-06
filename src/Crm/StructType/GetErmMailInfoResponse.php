@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetErmMailInfoResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerMailErm
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CustomerMailErmDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CustomerMailErmDTO[]
      */
     protected ?array $MidocoCustomerMailErm = null;
     /**
      * Constructor method for GetErmMailInfoResponse
      * @uses GetErmMailInfoResponse::setMidocoCustomerMailErm()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerMailErmDTO[] $midocoCustomerMailErm
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerMailErmDTO[] $midocoCustomerMailErm
      */
     public function __construct(?array $midocoCustomerMailErm = null)
     {
@@ -34,7 +34,7 @@ class GetErmMailInfoResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerMailErm value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerMailErmDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMailErmDTO[]
      */
     public function getMidocoCustomerMailErm(): ?array
     {
@@ -55,12 +55,12 @@ class GetErmMailInfoResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getErmMailInfoResponseMidocoCustomerMailErmItem) {
             // validation for constraint: itemType
-            if (!$getErmMailInfoResponseMidocoCustomerMailErmItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CustomerMailErmDTO) {
+            if (!$getErmMailInfoResponseMidocoCustomerMailErmItem instanceof \Pggns\MidocoApi\Crm\StructType\CustomerMailErmDTO) {
                 $invalidValues[] = is_object($getErmMailInfoResponseMidocoCustomerMailErmItem) ? get_class($getErmMailInfoResponseMidocoCustomerMailErmItem) : sprintf('%s(%s)', gettype($getErmMailInfoResponseMidocoCustomerMailErmItem), var_export($getErmMailInfoResponseMidocoCustomerMailErmItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerMailErm property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CustomerMailErmDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerMailErm property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CustomerMailErmDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetErmMailInfoResponse extends AbstractStructBase
     /**
      * Set MidocoCustomerMailErm value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerMailErmDTO[] $midocoCustomerMailErm
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetErmMailInfoResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerMailErmDTO[] $midocoCustomerMailErm
+     * @return \Pggns\MidocoApi\Crm\StructType\GetErmMailInfoResponse
      */
     public function setMidocoCustomerMailErm(?array $midocoCustomerMailErm = null): self
     {
@@ -85,14 +85,14 @@ class GetErmMailInfoResponse extends AbstractStructBase
     /**
      * Add item to MidocoCustomerMailErm value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerMailErmDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetErmMailInfoResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerMailErmDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetErmMailInfoResponse
      */
-    public function addToMidocoCustomerMailErm(\Pggns\MidocoApi\Api\Crm\StructType\CustomerMailErmDTO $item): self
+    public function addToMidocoCustomerMailErm(\Pggns\MidocoApi\Crm\StructType\CustomerMailErmDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CustomerMailErmDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerMailErm property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CustomerMailErmDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CustomerMailErmDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerMailErm property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CustomerMailErmDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerMailErm[] = $item;
         

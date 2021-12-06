@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class AnnounceExternalPaymentRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: mbm:ExternalPayment
-     * @var \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment[]
+     * @var \Pggns\MidocoApi\Order\StructType\ExternalPayment[]
      */
     protected ?array $ExternalPayment = null;
     /**
@@ -33,7 +33,7 @@ class AnnounceExternalPaymentRequest extends AbstractStructBase
      * Constructor method for AnnounceExternalPaymentRequest
      * @uses AnnounceExternalPaymentRequest::setExternalPayment()
      * @uses AnnounceExternalPaymentRequest::setOrderId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment[] $externalPayment
+     * @param \Pggns\MidocoApi\Order\StructType\ExternalPayment[] $externalPayment
      * @param int $orderId
      */
     public function __construct(?array $externalPayment = null, ?int $orderId = null)
@@ -44,7 +44,7 @@ class AnnounceExternalPaymentRequest extends AbstractStructBase
     }
     /**
      * Get ExternalPayment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment[]
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment[]
      */
     public function getExternalPayment(): ?array
     {
@@ -65,12 +65,12 @@ class AnnounceExternalPaymentRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $announceExternalPaymentRequestExternalPaymentItem) {
             // validation for constraint: itemType
-            if (!$announceExternalPaymentRequestExternalPaymentItem instanceof \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment) {
+            if (!$announceExternalPaymentRequestExternalPaymentItem instanceof \Pggns\MidocoApi\Order\StructType\ExternalPayment) {
                 $invalidValues[] = is_object($announceExternalPaymentRequestExternalPaymentItem) ? get_class($announceExternalPaymentRequestExternalPaymentItem) : sprintf('%s(%s)', gettype($announceExternalPaymentRequestExternalPaymentItem), var_export($announceExternalPaymentRequestExternalPaymentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Order\StructType\ExternalPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -79,8 +79,8 @@ class AnnounceExternalPaymentRequest extends AbstractStructBase
     /**
      * Set ExternalPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment[] $externalPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceExternalPaymentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\ExternalPayment[] $externalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceExternalPaymentRequest
      */
     public function setExternalPayment(?array $externalPayment = null): self
     {
@@ -95,14 +95,14 @@ class AnnounceExternalPaymentRequest extends AbstractStructBase
     /**
      * Add item to ExternalPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceExternalPaymentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\ExternalPayment $item
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceExternalPaymentRequest
      */
-    public function addToExternalPayment(\Pggns\MidocoApi\Api\Order\StructType\ExternalPayment $item): self
+    public function addToExternalPayment(\Pggns\MidocoApi\Order\StructType\ExternalPayment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment) {
-            throw new InvalidArgumentException(sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\ExternalPayment) {
+            throw new InvalidArgumentException(sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Order\StructType\ExternalPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ExternalPayment[] = $item;
         
@@ -119,7 +119,7 @@ class AnnounceExternalPaymentRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceExternalPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceExternalPaymentRequest
      */
     public function setOrderId(?int $orderId = null): self
     {

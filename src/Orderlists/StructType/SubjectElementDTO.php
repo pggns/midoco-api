@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SubjectElementDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SubjectElementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SubjectElementDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -86,7 +86,7 @@ class SubjectElementDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SubjectElementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SubjectElementDTO
      */
     public function setId(?int $id = null): self
     {
@@ -109,7 +109,7 @@ class SubjectElementDTO extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SubjectElementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SubjectElementDTO
      */
     public function setLocale(?string $locale = null): self
     {
@@ -132,7 +132,7 @@ class SubjectElementDTO extends AbstractStructBase
     /**
      * Set template value
      * @param string $template
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SubjectElementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SubjectElementDTO
      */
     public function setTemplate(?string $template = null): self
     {

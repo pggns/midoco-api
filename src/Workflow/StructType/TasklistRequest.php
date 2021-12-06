@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -136,7 +136,7 @@ class TasklistRequest extends AbstractStructBase
      * Set user_value value
      * @throws InvalidArgumentException
      * @param string[] $user_value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TasklistRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\TasklistRequest
      */
     public function setUser_value(?array $user_value = null): self
     {
@@ -152,7 +152,7 @@ class TasklistRequest extends AbstractStructBase
      * Add item to user_value value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TasklistRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\TasklistRequest
      */
     public function addToUser_value(string $item): self
     {
@@ -202,7 +202,7 @@ class TasklistRequest extends AbstractStructBase
      * Set unit_name value
      * @throws InvalidArgumentException
      * @param string[] $unit_name
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TasklistRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\TasklistRequest
      */
     public function setUnit_name(?array $unit_name = null): self
     {
@@ -218,7 +218,7 @@ class TasklistRequest extends AbstractStructBase
      * Add item to unit_name value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TasklistRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\TasklistRequest
      */
     public function addToUnit_name(string $item): self
     {
@@ -241,7 +241,7 @@ class TasklistRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TasklistRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\TasklistRequest
      */
     public function setType(?string $type = null): self
     {
@@ -264,7 +264,7 @@ class TasklistRequest extends AbstractStructBase
     /**
      * Set show_untimed value
      * @param bool $show_untimed
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TasklistRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\TasklistRequest
      */
     public function setShow_untimed(?bool $show_untimed = null): self
     {
@@ -287,7 +287,7 @@ class TasklistRequest extends AbstractStructBase
     /**
      * Set from_date value
      * @param string $from_date
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TasklistRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\TasklistRequest
      */
     public function setFrom_date(?string $from_date = null): self
     {
@@ -310,7 +310,7 @@ class TasklistRequest extends AbstractStructBase
     /**
      * Set to_date value
      * @param string $to_date
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TasklistRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\TasklistRequest
      */
     public function setTo_date(?string $to_date = null): self
     {
@@ -333,7 +333,7 @@ class TasklistRequest extends AbstractStructBase
     /**
      * Set queue_name value
      * @param string $queue_name
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TasklistRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\TasklistRequest
      */
     public function setQueue_name(?string $queue_name = null): self
     {
@@ -356,7 +356,7 @@ class TasklistRequest extends AbstractStructBase
     /**
      * Set process value
      * @param string $process
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TasklistRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\TasklistRequest
      */
     public function setProcess(?string $process = null): self
     {
@@ -379,7 +379,7 @@ class TasklistRequest extends AbstractStructBase
     /**
      * Set subject_type value
      * @param string $subject_type
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TasklistRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\TasklistRequest
      */
     public function setSubject_type(?string $subject_type = null): self
     {

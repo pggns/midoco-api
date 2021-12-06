@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -67,7 +67,7 @@ class BookSupplierAgencySettlementBookingRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookSupplierAgencySettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookSupplierAgencySettlementBookingRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -90,7 +90,7 @@ class BookSupplierAgencySettlementBookingRequest extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookSupplierAgencySettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookSupplierAgencySettlementBookingRequest
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -113,7 +113,7 @@ class BookSupplierAgencySettlementBookingRequest extends AbstractStructBase
     /**
      * Set createMissingBooking value
      * @param bool $createMissingBooking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookSupplierAgencySettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookSupplierAgencySettlementBookingRequest
      */
     public function setCreateMissingBooking(?bool $createMissingBooking = false): self
     {
@@ -136,7 +136,7 @@ class BookSupplierAgencySettlementBookingRequest extends AbstractStructBase
     /**
      * Set ignoreErrors value
      * @param bool $ignoreErrors
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookSupplierAgencySettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookSupplierAgencySettlementBookingRequest
      */
     public function setIgnoreErrors(?bool $ignoreErrors = false): self
     {

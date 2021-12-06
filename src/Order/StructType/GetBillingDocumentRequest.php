@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class GetBillingDocumentRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -88,7 +88,7 @@ class GetBillingDocumentRequest extends AbstractStructBase
     /**
      * Set documentNo value
      * @param int $documentNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentRequest
      */
     public function setDocumentNo(?int $documentNo = null): self
     {
@@ -111,7 +111,7 @@ class GetBillingDocumentRequest extends AbstractStructBase
     /**
      * Set maskCcNo value
      * @param bool $maskCcNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentRequest
      */
     public function setMaskCcNo(?bool $maskCcNo = null): self
     {
@@ -134,7 +134,7 @@ class GetBillingDocumentRequest extends AbstractStructBase
     /**
      * Set loadPositions value
      * @param bool $loadPositions
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentRequest
      */
     public function setLoadPositions(?bool $loadPositions = true): self
     {

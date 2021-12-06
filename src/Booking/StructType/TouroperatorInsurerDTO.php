@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class TouroperatorInsurerDTO extends AbstractStructBase
     /**
      * Set assignedInsurer value
      * @param string $assignedInsurer
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TouroperatorInsurerDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\TouroperatorInsurerDTO
      */
     public function setAssignedInsurer(?string $assignedInsurer = null): self
     {
@@ -110,7 +110,7 @@ class TouroperatorInsurerDTO extends AbstractStructBase
     /**
      * Set insurerId value
      * @param int $insurerId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TouroperatorInsurerDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\TouroperatorInsurerDTO
      */
     public function setInsurerId(?int $insurerId = null): self
     {
@@ -133,7 +133,7 @@ class TouroperatorInsurerDTO extends AbstractStructBase
     /**
      * Set isAssessor value
      * @param bool $isAssessor
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TouroperatorInsurerDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\TouroperatorInsurerDTO
      */
     public function setIsAssessor(?bool $isAssessor = null): self
     {
@@ -156,7 +156,7 @@ class TouroperatorInsurerDTO extends AbstractStructBase
     /**
      * Set touroperatorId value
      * @param int $touroperatorId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TouroperatorInsurerDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\TouroperatorInsurerDTO
      */
     public function setTouroperatorId(?int $touroperatorId = null): self
     {
@@ -179,7 +179,7 @@ class TouroperatorInsurerDTO extends AbstractStructBase
     /**
      * Set touroperatorInsurerId value
      * @param int $touroperatorInsurerId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TouroperatorInsurerDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\TouroperatorInsurerDTO
      */
     public function setTouroperatorInsurerId(?int $touroperatorInsurerId = null): self
     {
@@ -202,7 +202,7 @@ class TouroperatorInsurerDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TouroperatorInsurerDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\TouroperatorInsurerDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -225,7 +225,7 @@ class TouroperatorInsurerDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TouroperatorInsurerDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\TouroperatorInsurerDTO
      */
     public function setValidTo(?string $validTo = null): self
     {

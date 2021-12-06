@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CurrencyRateType extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CurrencyRateType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CurrencyRateType
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -78,7 +78,7 @@ class CurrencyRateType extends AbstractStructBase
     /**
      * Set rateIntoEUR value
      * @param float $rateIntoEUR
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CurrencyRateType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CurrencyRateType
      */
     public function setRateIntoEUR(?float $rateIntoEUR = null): self
     {
@@ -101,7 +101,7 @@ class CurrencyRateType extends AbstractStructBase
     /**
      * Set rateFromEUR value
      * @param float $rateFromEUR
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CurrencyRateType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CurrencyRateType
      */
     public function setRateFromEUR(?float $rateFromEUR = null): self
     {

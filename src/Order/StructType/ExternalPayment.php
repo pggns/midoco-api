@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,9 +63,9 @@ class ExternalPayment extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: cc-token
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Cc_token|null
+     * @var \Pggns\MidocoApi\Order\StructType\Cc_token|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\Cc_token $cc_token = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\Cc_token $cc_token = null;
     /**
      * The transaction_type
      * @var string|null
@@ -260,9 +260,9 @@ class ExternalPayment extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: ccToken
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CcToken|null
+     * @var \Pggns\MidocoApi\Order\StructType\CcToken|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\CcToken $ccToken = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\CcToken $ccToken = null;
     /**
      * The transactionType
      * @var string|null
@@ -482,7 +482,7 @@ class ExternalPayment extends AbstractStructBase
      * @param float $currencyRate
      * @param string $error_code
      * @param string $medium
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Cc_token $cc_token
+     * @param \Pggns\MidocoApi\Order\StructType\Cc_token $cc_token
      * @param string $transaction_type
      * @param string $customer_name
      * @param string $email
@@ -518,7 +518,7 @@ class ExternalPayment extends AbstractStructBase
      * @param string $paymentDate
      * @param string $transactionNumber
      * @param string $errorCode
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CcToken $ccToken
+     * @param \Pggns\MidocoApi\Order\StructType\CcToken $ccToken
      * @param string $transactionType
      * @param string $customerName
      * @param string $streetNo
@@ -546,7 +546,7 @@ class ExternalPayment extends AbstractStructBase
      * @param string $checkFraud
      * @param string $cardHolder
      */
-    public function __construct(?string $payment_date = null, ?string $transaction_number = null, ?float $amount = null, ?string $currency = 'EUR', ?float $currencyRate = null, ?string $error_code = null, ?string $medium = null, ?\Pggns\MidocoApi\Api\Order\StructType\Cc_token $cc_token = null, ?string $transaction_type = null, ?string $customer_name = null, ?string $email = null, ?string $street = null, ?string $street_no = null, ?string $endorsement = null, ?string $postal_code = null, ?string $state = null, ?string $country = null, ?string $comment = null, ?string $auth_code = null, ?string $reference_number = null, ?string $cc_card_number = null, ?string $cc_valid_year = null, ?string $cc_valid_month = null, ?bool $cc_check_number = false, ?string $cc_issue_number = null, ?string $cc_start_date = null, ?string $elv_bankname = null, ?string $elv_bankcode = null, ?string $elv_bank_account_no = null, ?string $mp_mobile_number = null, ?int $order_id = null, ?string $transaction_id = null, ?string $security_code = null, ?string $shopper_id = null, ?string $ip_country = null, ?string $invoice_text = null, ?string $payment_country = null, ?string $address_checked = null, ?string $check_fraud = null, ?string $card_holder = null, ?string $paymentDate = null, ?string $transactionNumber = null, ?string $errorCode = null, ?\Pggns\MidocoApi\Api\Order\StructType\CcToken $ccToken = null, ?string $transactionType = null, ?string $customerName = null, ?string $streetNo = null, ?string $postalCode = null, ?string $authCode = null, ?string $referenceNumber = null, ?string $ccCardNumber = null, ?string $ccValidYear = null, ?string $ccValidMonth = null, ?bool $ccCheckNumber = false, ?string $ccIssueNumber = null, ?string $ccStartDate = null, ?string $elvBankname = null, ?string $elvBankcode = null, ?string $elvBankAccountNo = null, ?string $mpMobileNumber = null, ?int $orderId = null, ?string $transactionId = null, ?string $securityCode = null, ?string $shopperId = null, ?string $ipCountry = null, ?string $invoiceText = null, ?string $paymentCountry = null, ?string $addressChecked = null, ?string $checkFraud = null, ?string $cardHolder = null)
+    public function __construct(?string $payment_date = null, ?string $transaction_number = null, ?float $amount = null, ?string $currency = 'EUR', ?float $currencyRate = null, ?string $error_code = null, ?string $medium = null, ?\Pggns\MidocoApi\Order\StructType\Cc_token $cc_token = null, ?string $transaction_type = null, ?string $customer_name = null, ?string $email = null, ?string $street = null, ?string $street_no = null, ?string $endorsement = null, ?string $postal_code = null, ?string $state = null, ?string $country = null, ?string $comment = null, ?string $auth_code = null, ?string $reference_number = null, ?string $cc_card_number = null, ?string $cc_valid_year = null, ?string $cc_valid_month = null, ?bool $cc_check_number = false, ?string $cc_issue_number = null, ?string $cc_start_date = null, ?string $elv_bankname = null, ?string $elv_bankcode = null, ?string $elv_bank_account_no = null, ?string $mp_mobile_number = null, ?int $order_id = null, ?string $transaction_id = null, ?string $security_code = null, ?string $shopper_id = null, ?string $ip_country = null, ?string $invoice_text = null, ?string $payment_country = null, ?string $address_checked = null, ?string $check_fraud = null, ?string $card_holder = null, ?string $paymentDate = null, ?string $transactionNumber = null, ?string $errorCode = null, ?\Pggns\MidocoApi\Order\StructType\CcToken $ccToken = null, ?string $transactionType = null, ?string $customerName = null, ?string $streetNo = null, ?string $postalCode = null, ?string $authCode = null, ?string $referenceNumber = null, ?string $ccCardNumber = null, ?string $ccValidYear = null, ?string $ccValidMonth = null, ?bool $ccCheckNumber = false, ?string $ccIssueNumber = null, ?string $ccStartDate = null, ?string $elvBankname = null, ?string $elvBankcode = null, ?string $elvBankAccountNo = null, ?string $mpMobileNumber = null, ?int $orderId = null, ?string $transactionId = null, ?string $securityCode = null, ?string $shopperId = null, ?string $ipCountry = null, ?string $invoiceText = null, ?string $paymentCountry = null, ?string $addressChecked = null, ?string $checkFraud = null, ?string $cardHolder = null)
     {
         $this
             ->setPayment_date($payment_date)
@@ -631,7 +631,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set payment_date value
      * @param string $payment_date
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setPayment_date(?string $payment_date = null): self
     {
@@ -654,7 +654,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set transaction_number value
      * @param string $transaction_number
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setTransaction_number(?string $transaction_number = null): self
     {
@@ -677,7 +677,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setAmount(?float $amount = null): self
     {
@@ -700,7 +700,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCurrency(?string $currency = 'EUR'): self
     {
@@ -723,7 +723,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set currencyRate value
      * @param float $currencyRate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCurrencyRate(?float $currencyRate = null): self
     {
@@ -746,7 +746,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set error_code value
      * @param string $error_code
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setError_code(?string $error_code = null): self
     {
@@ -768,17 +768,17 @@ class ExternalPayment extends AbstractStructBase
     }
     /**
      * Set medium value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\Medium::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\Medium::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\Medium::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\Medium::getValidValues()
      * @throws InvalidArgumentException
      * @param string $medium
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setMedium(?string $medium = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\Medium::valueIsValid($medium)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\Medium', is_array($medium) ? implode(', ', $medium) : var_export($medium, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\Medium::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\Medium::valueIsValid($medium)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\Medium', is_array($medium) ? implode(', ', $medium) : var_export($medium, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\Medium::getValidValues())), __LINE__);
         }
         $this->medium = $medium;
         
@@ -786,18 +786,18 @@ class ExternalPayment extends AbstractStructBase
     }
     /**
      * Get cc_token value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_token|null
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_token|null
      */
-    public function getCc_token(): ?\Pggns\MidocoApi\Api\Order\StructType\Cc_token
+    public function getCc_token(): ?\Pggns\MidocoApi\Order\StructType\Cc_token
     {
         return $this->{'cc-token'};
     }
     /**
      * Set cc_token value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Cc_token $cc_token
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @param \Pggns\MidocoApi\Order\StructType\Cc_token $cc_token
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
-    public function setCc_token(?\Pggns\MidocoApi\Api\Order\StructType\Cc_token $cc_token = null): self
+    public function setCc_token(?\Pggns\MidocoApi\Order\StructType\Cc_token $cc_token = null): self
     {
         $this->cc_token = $this->{'cc-token'} = $cc_token;
         
@@ -814,7 +814,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set transaction_type value
      * @param string $transaction_type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setTransaction_type(?string $transaction_type = null): self
     {
@@ -837,7 +837,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set customer_name value
      * @param string $customer_name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCustomer_name(?string $customer_name = null): self
     {
@@ -860,7 +860,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setEmail(?string $email = null): self
     {
@@ -883,7 +883,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setStreet(?string $street = null): self
     {
@@ -906,7 +906,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set street_no value
      * @param string $street_no
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setStreet_no(?string $street_no = null): self
     {
@@ -929,7 +929,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set endorsement value
      * @param string $endorsement
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setEndorsement(?string $endorsement = null): self
     {
@@ -952,7 +952,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set postal_code value
      * @param string $postal_code
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setPostal_code(?string $postal_code = null): self
     {
@@ -975,7 +975,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setState(?string $state = null): self
     {
@@ -998,7 +998,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCountry(?string $country = null): self
     {
@@ -1021,7 +1021,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setComment(?string $comment = null): self
     {
@@ -1044,7 +1044,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set auth_code value
      * @param string $auth_code
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setAuth_code(?string $auth_code = null): self
     {
@@ -1067,7 +1067,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set reference_number value
      * @param string $reference_number
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setReference_number(?string $reference_number = null): self
     {
@@ -1090,7 +1090,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set cc_card_number value
      * @param string $cc_card_number
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCc_card_number(?string $cc_card_number = null): self
     {
@@ -1113,7 +1113,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set cc_valid_year value
      * @param string $cc_valid_year
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCc_valid_year(?string $cc_valid_year = null): self
     {
@@ -1140,7 +1140,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set cc_valid_month value
      * @param string $cc_valid_month
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCc_valid_month(?string $cc_valid_month = null): self
     {
@@ -1167,7 +1167,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set cc_check_number value
      * @param bool $cc_check_number
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCc_check_number(?bool $cc_check_number = false): self
     {
@@ -1190,7 +1190,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set cc_issue_number value
      * @param string $cc_issue_number
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCc_issue_number(?string $cc_issue_number = null): self
     {
@@ -1213,7 +1213,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set cc_start_date value
      * @param string $cc_start_date
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCc_start_date(?string $cc_start_date = null): self
     {
@@ -1236,7 +1236,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set elv_bankname value
      * @param string $elv_bankname
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setElv_bankname(?string $elv_bankname = null): self
     {
@@ -1259,7 +1259,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set elv_bankcode value
      * @param string $elv_bankcode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setElv_bankcode(?string $elv_bankcode = null): self
     {
@@ -1282,7 +1282,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set elv_bank_account_no value
      * @param string $elv_bank_account_no
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setElv_bank_account_no(?string $elv_bank_account_no = null): self
     {
@@ -1305,7 +1305,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set mp_mobile_number value
      * @param string $mp_mobile_number
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setMp_mobile_number(?string $mp_mobile_number = null): self
     {
@@ -1328,7 +1328,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set order_id value
      * @param int $order_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setOrder_id(?int $order_id = null): self
     {
@@ -1351,7 +1351,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set transaction_id value
      * @param string $transaction_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setTransaction_id(?string $transaction_id = null): self
     {
@@ -1374,7 +1374,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set security_code value
      * @param string $security_code
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setSecurity_code(?string $security_code = null): self
     {
@@ -1397,7 +1397,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set shopper_id value
      * @param string $shopper_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setShopper_id(?string $shopper_id = null): self
     {
@@ -1420,7 +1420,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set ip_country value
      * @param string $ip_country
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setIp_country(?string $ip_country = null): self
     {
@@ -1443,7 +1443,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set invoice_text value
      * @param string $invoice_text
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setInvoice_text(?string $invoice_text = null): self
     {
@@ -1466,7 +1466,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set payment_country value
      * @param string $payment_country
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setPayment_country(?string $payment_country = null): self
     {
@@ -1489,7 +1489,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set address_checked value
      * @param string $address_checked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setAddress_checked(?string $address_checked = null): self
     {
@@ -1512,7 +1512,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set check_fraud value
      * @param string $check_fraud
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCheck_fraud(?string $check_fraud = null): self
     {
@@ -1535,7 +1535,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set card_holder value
      * @param string $card_holder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCard_holder(?string $card_holder = null): self
     {
@@ -1558,7 +1558,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set paymentDate value
      * @param string $paymentDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setPaymentDate(?string $paymentDate = null): self
     {
@@ -1581,7 +1581,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set transactionNumber value
      * @param string $transactionNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setTransactionNumber(?string $transactionNumber = null): self
     {
@@ -1604,7 +1604,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -1618,18 +1618,18 @@ class ExternalPayment extends AbstractStructBase
     }
     /**
      * Get ccToken value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcToken|null
+     * @return \Pggns\MidocoApi\Order\StructType\CcToken|null
      */
-    public function getCcToken(): ?\Pggns\MidocoApi\Api\Order\StructType\CcToken
+    public function getCcToken(): ?\Pggns\MidocoApi\Order\StructType\CcToken
     {
         return $this->ccToken;
     }
     /**
      * Set ccToken value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CcToken $ccToken
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @param \Pggns\MidocoApi\Order\StructType\CcToken $ccToken
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
-    public function setCcToken(?\Pggns\MidocoApi\Api\Order\StructType\CcToken $ccToken = null): self
+    public function setCcToken(?\Pggns\MidocoApi\Order\StructType\CcToken $ccToken = null): self
     {
         $this->ccToken = $ccToken;
         
@@ -1646,7 +1646,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set transactionType value
      * @param string $transactionType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setTransactionType(?string $transactionType = null): self
     {
@@ -1669,7 +1669,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -1692,7 +1692,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -1715,7 +1715,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -1738,7 +1738,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set authCode value
      * @param string $authCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setAuthCode(?string $authCode = null): self
     {
@@ -1761,7 +1761,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set referenceNumber value
      * @param string $referenceNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setReferenceNumber(?string $referenceNumber = null): self
     {
@@ -1784,7 +1784,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set ccCardNumber value
      * @param string $ccCardNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCcCardNumber(?string $ccCardNumber = null): self
     {
@@ -1807,7 +1807,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set ccValidYear value
      * @param string $ccValidYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCcValidYear(?string $ccValidYear = null): self
     {
@@ -1834,7 +1834,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set ccValidMonth value
      * @param string $ccValidMonth
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCcValidMonth(?string $ccValidMonth = null): self
     {
@@ -1861,7 +1861,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set ccCheckNumber value
      * @param bool $ccCheckNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCcCheckNumber(?bool $ccCheckNumber = false): self
     {
@@ -1884,7 +1884,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set ccIssueNumber value
      * @param string $ccIssueNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCcIssueNumber(?string $ccIssueNumber = null): self
     {
@@ -1907,7 +1907,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set ccStartDate value
      * @param string $ccStartDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCcStartDate(?string $ccStartDate = null): self
     {
@@ -1930,7 +1930,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set elvBankname value
      * @param string $elvBankname
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setElvBankname(?string $elvBankname = null): self
     {
@@ -1953,7 +1953,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set elvBankcode value
      * @param string $elvBankcode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setElvBankcode(?string $elvBankcode = null): self
     {
@@ -1976,7 +1976,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set elvBankAccountNo value
      * @param string $elvBankAccountNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setElvBankAccountNo(?string $elvBankAccountNo = null): self
     {
@@ -1999,7 +1999,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set mpMobileNumber value
      * @param string $mpMobileNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setMpMobileNumber(?string $mpMobileNumber = null): self
     {
@@ -2022,7 +2022,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -2045,7 +2045,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set transactionId value
      * @param string $transactionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setTransactionId(?string $transactionId = null): self
     {
@@ -2068,7 +2068,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set securityCode value
      * @param string $securityCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setSecurityCode(?string $securityCode = null): self
     {
@@ -2091,7 +2091,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set shopperId value
      * @param string $shopperId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setShopperId(?string $shopperId = null): self
     {
@@ -2114,7 +2114,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set ipCountry value
      * @param string $ipCountry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setIpCountry(?string $ipCountry = null): self
     {
@@ -2137,7 +2137,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set invoiceText value
      * @param string $invoiceText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setInvoiceText(?string $invoiceText = null): self
     {
@@ -2160,7 +2160,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set paymentCountry value
      * @param string $paymentCountry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setPaymentCountry(?string $paymentCountry = null): self
     {
@@ -2183,7 +2183,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set addressChecked value
      * @param string $addressChecked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setAddressChecked(?string $addressChecked = null): self
     {
@@ -2206,7 +2206,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set checkFraud value
      * @param string $checkFraud
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCheckFraud(?string $checkFraud = null): self
     {
@@ -2229,7 +2229,7 @@ class ExternalPayment extends AbstractStructBase
     /**
      * Set cardHolder value
      * @param string $cardHolder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalPayment
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalPayment
      */
     public function setCardHolder(?string $cardHolder = null): self
     {

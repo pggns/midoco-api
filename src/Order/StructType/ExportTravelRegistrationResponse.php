@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ExportTravelRegistrationResponse extends AbstractStructBase
     /**
      * Set TravelRegistrationData value
      * @param string $travelRegistrationData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelRegistrationResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelRegistrationResponse
      */
     public function setTravelRegistrationData(?string $travelRegistrationData = null): self
     {

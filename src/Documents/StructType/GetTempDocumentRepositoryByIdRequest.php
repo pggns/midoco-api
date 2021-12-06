@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetTempDocumentRepositoryByIdRequest extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetTempDocumentRepositoryByIdRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetTempDocumentRepositoryByIdRequest
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

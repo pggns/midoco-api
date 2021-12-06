@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class AdapterDefAttrChgLogDTO extends AbstractStructBase
     /**
      * Set adapterId value
      * @param string $adapterId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterDefAttrChgLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterDefAttrChgLogDTO
      */
     public function setAdapterId(?string $adapterId = null): self
     {
@@ -102,7 +102,7 @@ class AdapterDefAttrChgLogDTO extends AbstractStructBase
     /**
      * Set attrDefValue value
      * @param string $attrDefValue
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterDefAttrChgLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterDefAttrChgLogDTO
      */
     public function setAttrDefValue(?string $attrDefValue = null): self
     {
@@ -125,7 +125,7 @@ class AdapterDefAttrChgLogDTO extends AbstractStructBase
     /**
      * Set attrName value
      * @param string $attrName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterDefAttrChgLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterDefAttrChgLogDTO
      */
     public function setAttrName(?string $attrName = null): self
     {
@@ -148,7 +148,7 @@ class AdapterDefAttrChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterDefAttrChgLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterDefAttrChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -171,7 +171,7 @@ class AdapterDefAttrChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterDefAttrChgLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterDefAttrChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -194,7 +194,7 @@ class AdapterDefAttrChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterDefAttrChgLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterDefAttrChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

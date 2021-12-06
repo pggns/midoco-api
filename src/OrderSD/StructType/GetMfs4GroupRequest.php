@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class GetMfs4GroupRequest extends AbstractStructBase
     /**
      * Set bean value
      * @param string $bean
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMfs4GroupRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMfs4GroupRequest
      */
     public function setBean(?string $bean = null): self
     {
@@ -88,7 +88,7 @@ class GetMfs4GroupRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMfs4GroupRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMfs4GroupRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -111,7 +111,7 @@ class GetMfs4GroupRequest extends AbstractStructBase
     /**
      * Set groupName value
      * @param string $groupName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMfs4GroupRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMfs4GroupRequest
      */
     public function setGroupName(?string $groupName = null): self
     {
@@ -161,7 +161,7 @@ class GetMfs4GroupRequest extends AbstractStructBase
      * Set className value
      * @throws InvalidArgumentException
      * @param string[] $className
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMfs4GroupRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMfs4GroupRequest
      */
     public function setClassName(?array $className = null): self
     {
@@ -177,7 +177,7 @@ class GetMfs4GroupRequest extends AbstractStructBase
      * Add item to className value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMfs4GroupRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMfs4GroupRequest
      */
     public function addToClassName(string $item): self
     {

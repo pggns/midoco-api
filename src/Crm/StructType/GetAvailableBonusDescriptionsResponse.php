@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetAvailableBonusDescriptionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBonusDescription
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\BonusDescriptionDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\BonusDescriptionDTO[]
      */
     protected ?array $MidocoBonusDescription = null;
     /**
      * Constructor method for GetAvailableBonusDescriptionsResponse
      * @uses GetAvailableBonusDescriptionsResponse::setMidocoBonusDescription()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\BonusDescriptionDTO[] $midocoBonusDescription
+     * @param \Pggns\MidocoApi\Crm\StructType\BonusDescriptionDTO[] $midocoBonusDescription
      */
     public function __construct(?array $midocoBonusDescription = null)
     {
@@ -36,7 +36,7 @@ class GetAvailableBonusDescriptionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBonusDescription value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\BonusDescriptionDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\BonusDescriptionDTO[]
      */
     public function getMidocoBonusDescription(): ?array
     {
@@ -57,12 +57,12 @@ class GetAvailableBonusDescriptionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailableBonusDescriptionsResponseMidocoBonusDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getAvailableBonusDescriptionsResponseMidocoBonusDescriptionItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\BonusDescriptionDTO) {
+            if (!$getAvailableBonusDescriptionsResponseMidocoBonusDescriptionItem instanceof \Pggns\MidocoApi\Crm\StructType\BonusDescriptionDTO) {
                 $invalidValues[] = is_object($getAvailableBonusDescriptionsResponseMidocoBonusDescriptionItem) ? get_class($getAvailableBonusDescriptionsResponseMidocoBonusDescriptionItem) : sprintf('%s(%s)', gettype($getAvailableBonusDescriptionsResponseMidocoBonusDescriptionItem), var_export($getAvailableBonusDescriptionsResponseMidocoBonusDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBonusDescription property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\BonusDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBonusDescription property can only contain items of type \Pggns\MidocoApi\Crm\StructType\BonusDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetAvailableBonusDescriptionsResponse extends AbstractStructBase
     /**
      * Set MidocoBonusDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\BonusDescriptionDTO[] $midocoBonusDescription
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetAvailableBonusDescriptionsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\BonusDescriptionDTO[] $midocoBonusDescription
+     * @return \Pggns\MidocoApi\Crm\StructType\GetAvailableBonusDescriptionsResponse
      */
     public function setMidocoBonusDescription(?array $midocoBonusDescription = null): self
     {
@@ -87,14 +87,14 @@ class GetAvailableBonusDescriptionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoBonusDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\BonusDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetAvailableBonusDescriptionsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\BonusDescriptionDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetAvailableBonusDescriptionsResponse
      */
-    public function addToMidocoBonusDescription(\Pggns\MidocoApi\Api\Crm\StructType\BonusDescriptionDTO $item): self
+    public function addToMidocoBonusDescription(\Pggns\MidocoApi\Crm\StructType\BonusDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\BonusDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoBonusDescription property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\BonusDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\BonusDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBonusDescription property can only contain items of type \Pggns\MidocoApi\Crm\StructType\BonusDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBonusDescription[] = $item;
         

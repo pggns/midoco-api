@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\EnumType;
+namespace Pggns\MidocoApi\Booking\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 

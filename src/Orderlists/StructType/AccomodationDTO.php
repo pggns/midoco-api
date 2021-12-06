@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class AccomodationDTO extends AbstractStructBase
     /**
      * Set accomodationCode value
      * @param string $accomodationCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccomodationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccomodationDTO
      */
     public function setAccomodationCode(?string $accomodationCode = null): self
     {
@@ -70,7 +70,7 @@ class AccomodationDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccomodationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccomodationDTO
      */
     public function setDescription(?string $description = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
      * The MidocoSystemAttributeLocalization
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeLocalization
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AttributeDefinitionLocalDTO|null
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\AttributeDefinitionLocalDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\AttributeDefinitionLocalDTO $MidocoSystemAttributeLocalization = null;
+    protected ?\Pggns\MidocoApi\OrderglobalSD\StructType\AttributeDefinitionLocalDTO $MidocoSystemAttributeLocalization = null;
     /**
      * The isNew
      * @var bool|null
@@ -29,10 +29,10 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
      * Constructor method for SaveMidocoAttributeLocalizationRequest
      * @uses SaveMidocoAttributeLocalizationRequest::setMidocoSystemAttributeLocalization()
      * @uses SaveMidocoAttributeLocalizationRequest::setIsNew()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
      * @param bool $isNew
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null, ?bool $isNew = null)
+    public function __construct(?\Pggns\MidocoApi\OrderglobalSD\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null, ?bool $isNew = null)
     {
         $this
             ->setMidocoSystemAttributeLocalization($midocoSystemAttributeLocalization)
@@ -40,18 +40,18 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSystemAttributeLocalization value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AttributeDefinitionLocalDTO|null
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AttributeDefinitionLocalDTO|null
      */
-    public function getMidocoSystemAttributeLocalization(): ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\AttributeDefinitionLocalDTO
+    public function getMidocoSystemAttributeLocalization(): ?\Pggns\MidocoApi\OrderglobalSD\StructType\AttributeDefinitionLocalDTO
     {
         return $this->MidocoSystemAttributeLocalization;
     }
     /**
      * Set MidocoSystemAttributeLocalization value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveMidocoAttributeLocalizationRequest
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SaveMidocoAttributeLocalizationRequest
      */
-    public function setMidocoSystemAttributeLocalization(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null): self
+    public function setMidocoSystemAttributeLocalization(?\Pggns\MidocoApi\OrderglobalSD\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null): self
     {
         $this->MidocoSystemAttributeLocalization = $midocoSystemAttributeLocalization;
         
@@ -68,7 +68,7 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
     /**
      * Set isNew value
      * @param bool $isNew
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveMidocoAttributeLocalizationRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SaveMidocoAttributeLocalizationRequest
      */
     public function setIsNew(?bool $isNew = null): self
     {

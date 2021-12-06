@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MediaTypeDTO extends AbstractStructBase
     /**
      * Set mediaType value
      * @param int $mediaType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MediaTypeDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MediaTypeDTO
      */
     public function setMediaType(?int $mediaType = null): self
     {

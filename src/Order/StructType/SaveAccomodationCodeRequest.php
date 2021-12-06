@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveAccomodationCodeRequest extends AbstractStructBase
      * The MidocoAccomodationCode
      * Meta information extracted from the WSDL
      * - ref: MidocoAccomodationCode
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAccomodationCode|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAccomodationCode|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAccomodationCode $MidocoAccomodationCode = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoAccomodationCode $MidocoAccomodationCode = null;
     /**
      * Constructor method for SaveAccomodationCodeRequest
      * @uses SaveAccomodationCodeRequest::setMidocoAccomodationCode()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAccomodationCode $midocoAccomodationCode
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAccomodationCode $midocoAccomodationCode
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAccomodationCode $midocoAccomodationCode = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoAccomodationCode $midocoAccomodationCode = null)
     {
         $this
             ->setMidocoAccomodationCode($midocoAccomodationCode);
     }
     /**
      * Get MidocoAccomodationCode value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAccomodationCode|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAccomodationCode|null
      */
-    public function getMidocoAccomodationCode(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAccomodationCode
+    public function getMidocoAccomodationCode(): ?\Pggns\MidocoApi\Order\StructType\MidocoAccomodationCode
     {
         return $this->MidocoAccomodationCode;
     }
     /**
      * Set MidocoAccomodationCode value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAccomodationCode $midocoAccomodationCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveAccomodationCodeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAccomodationCode $midocoAccomodationCode
+     * @return \Pggns\MidocoApi\Order\StructType\SaveAccomodationCodeRequest
      */
-    public function setMidocoAccomodationCode(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAccomodationCode $midocoAccomodationCode = null): self
+    public function setMidocoAccomodationCode(?\Pggns\MidocoApi\Order\StructType\MidocoAccomodationCode $midocoAccomodationCode = null): self
     {
         $this->MidocoAccomodationCode = $midocoAccomodationCode;
         

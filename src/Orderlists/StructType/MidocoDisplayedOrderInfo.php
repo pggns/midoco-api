@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MidocoDisplayedOrderInfo extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDisplayedOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDisplayedOrderInfo
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -110,7 +110,7 @@ class MidocoDisplayedOrderInfo extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDisplayedOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDisplayedOrderInfo
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -133,7 +133,7 @@ class MidocoDisplayedOrderInfo extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDisplayedOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDisplayedOrderInfo
      */
     public function setPrice(?float $price = null): self
     {
@@ -156,7 +156,7 @@ class MidocoDisplayedOrderInfo extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDisplayedOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDisplayedOrderInfo
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -179,7 +179,7 @@ class MidocoDisplayedOrderInfo extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDisplayedOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDisplayedOrderInfo
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -202,7 +202,7 @@ class MidocoDisplayedOrderInfo extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDisplayedOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDisplayedOrderInfo
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -225,7 +225,7 @@ class MidocoDisplayedOrderInfo extends AbstractStructBase
     /**
      * Set invoiceCustomerName value
      * @param string $invoiceCustomerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDisplayedOrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDisplayedOrderInfo
      */
     public function setInvoiceCustomerName(?string $invoiceCustomerName = null): self
     {

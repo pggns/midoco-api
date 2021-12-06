@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class SaveMidocoSettlMDocOrgUnitRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoAssignedMidocoMdocOUnit
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\AssignedMidocoMdocOUnitDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\AssignedMidocoMdocOUnitDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\AssignedMidocoMdocOUnitDTO $MidocoAssignedMidocoMdocOUnit = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\AssignedMidocoMdocOUnitDTO $MidocoAssignedMidocoMdocOUnit = null;
     /**
      * Constructor method for SaveMidocoSettlMDocOrgUnitRequest
      * @uses SaveMidocoSettlMDocOrgUnitRequest::setMidocoAssignedMidocoMdocOUnit()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AssignedMidocoMdocOUnitDTO $midocoAssignedMidocoMdocOUnit
+     * @param \Pggns\MidocoApi\Crm\StructType\AssignedMidocoMdocOUnitDTO $midocoAssignedMidocoMdocOUnit
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\AssignedMidocoMdocOUnitDTO $midocoAssignedMidocoMdocOUnit = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\AssignedMidocoMdocOUnitDTO $midocoAssignedMidocoMdocOUnit = null)
     {
         $this
             ->setMidocoAssignedMidocoMdocOUnit($midocoAssignedMidocoMdocOUnit);
     }
     /**
      * Get MidocoAssignedMidocoMdocOUnit value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AssignedMidocoMdocOUnitDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\AssignedMidocoMdocOUnitDTO|null
      */
-    public function getMidocoAssignedMidocoMdocOUnit(): ?\Pggns\MidocoApi\Api\Crm\StructType\AssignedMidocoMdocOUnitDTO
+    public function getMidocoAssignedMidocoMdocOUnit(): ?\Pggns\MidocoApi\Crm\StructType\AssignedMidocoMdocOUnitDTO
     {
         return $this->MidocoAssignedMidocoMdocOUnit;
     }
     /**
      * Set MidocoAssignedMidocoMdocOUnit value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AssignedMidocoMdocOUnitDTO $midocoAssignedMidocoMdocOUnit
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoSettlMDocOrgUnitRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\AssignedMidocoMdocOUnitDTO $midocoAssignedMidocoMdocOUnit
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMidocoSettlMDocOrgUnitRequest
      */
-    public function setMidocoAssignedMidocoMdocOUnit(?\Pggns\MidocoApi\Api\Crm\StructType\AssignedMidocoMdocOUnitDTO $midocoAssignedMidocoMdocOUnit = null): self
+    public function setMidocoAssignedMidocoMdocOUnit(?\Pggns\MidocoApi\Crm\StructType\AssignedMidocoMdocOUnitDTO $midocoAssignedMidocoMdocOUnit = null): self
     {
         $this->MidocoAssignedMidocoMdocOUnit = $midocoAssignedMidocoMdocOUnit;
         

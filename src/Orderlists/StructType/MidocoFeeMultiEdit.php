@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoFeeMultiEdit extends AbstractStructBase
     /**
      * Set field value
      * @param string $field
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeMultiEdit
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeMultiEdit
      */
     public function setField(?string $field = null): self
     {
@@ -70,7 +70,7 @@ class MidocoFeeMultiEdit extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeMultiEdit
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeMultiEdit
      */
     public function setValue(?string $value = null): self
     {

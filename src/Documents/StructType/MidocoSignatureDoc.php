@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoSignatureDoc extends SignatureDocDTO
     /**
      * Set userName value
      * @param string $userName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc
      */
     public function setUserName(?string $userName = null): self
     {
@@ -70,7 +70,7 @@ class MidocoSignatureDoc extends SignatureDocDTO
     /**
      * Set refNo value
      * @param int $refNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc
      */
     public function setRefNo(?int $refNo = null): self
     {

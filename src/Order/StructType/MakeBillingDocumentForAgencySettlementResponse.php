@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MakeBillingDocumentForAgencySettlementResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:Error
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Error[]
+     * @var \Pggns\MidocoApi\Order\StructType\Error[]
      */
     protected ?array $Error = null;
     /**
@@ -49,7 +49,7 @@ class MakeBillingDocumentForAgencySettlementResponse extends AbstractStructBase
      * @uses MakeBillingDocumentForAgencySettlementResponse::setIsInvoiceAsEmail()
      * @uses MakeBillingDocumentForAgencySettlementResponse::setRepositoryId()
      * @uses MakeBillingDocumentForAgencySettlementResponse::setTempRepositoryId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Error[] $error
+     * @param \Pggns\MidocoApi\Order\StructType\Error[] $error
      * @param int $printJobId
      * @param bool $isInvoiceAsEmail
      * @param int $repositoryId
@@ -66,7 +66,7 @@ class MakeBillingDocumentForAgencySettlementResponse extends AbstractStructBase
     }
     /**
      * Get Error value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Error[]
+     * @return \Pggns\MidocoApi\Order\StructType\Error[]
      */
     public function getError(): ?array
     {
@@ -87,12 +87,12 @@ class MakeBillingDocumentForAgencySettlementResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $makeBillingDocumentForAgencySettlementResponseErrorItem) {
             // validation for constraint: itemType
-            if (!$makeBillingDocumentForAgencySettlementResponseErrorItem instanceof \Pggns\MidocoApi\Api\Order\StructType\Error) {
+            if (!$makeBillingDocumentForAgencySettlementResponseErrorItem instanceof \Pggns\MidocoApi\Order\StructType\Error) {
                 $invalidValues[] = is_object($makeBillingDocumentForAgencySettlementResponseErrorItem) ? get_class($makeBillingDocumentForAgencySettlementResponseErrorItem) : sprintf('%s(%s)', gettype($makeBillingDocumentForAgencySettlementResponseErrorItem), var_export($makeBillingDocumentForAgencySettlementResponseErrorItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Error, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Order\StructType\Error, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -101,8 +101,8 @@ class MakeBillingDocumentForAgencySettlementResponse extends AbstractStructBase
     /**
      * Set Error value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Error[] $error
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\Error[] $error
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementResponse
      */
     public function setError(?array $error = null): self
     {
@@ -117,14 +117,14 @@ class MakeBillingDocumentForAgencySettlementResponse extends AbstractStructBase
     /**
      * Add item to Error value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Error $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\Error $item
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementResponse
      */
-    public function addToError(\Pggns\MidocoApi\Api\Order\StructType\Error $item): self
+    public function addToError(\Pggns\MidocoApi\Order\StructType\Error $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\Error) {
-            throw new InvalidArgumentException(sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Error, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\Error) {
+            throw new InvalidArgumentException(sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Order\StructType\Error, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Error[] = $item;
         
@@ -141,7 +141,7 @@ class MakeBillingDocumentForAgencySettlementResponse extends AbstractStructBase
     /**
      * Set printJobId value
      * @param int $printJobId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementResponse
      */
     public function setPrintJobId(?int $printJobId = null): self
     {
@@ -164,7 +164,7 @@ class MakeBillingDocumentForAgencySettlementResponse extends AbstractStructBase
     /**
      * Set isInvoiceAsEmail value
      * @param bool $isInvoiceAsEmail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementResponse
      */
     public function setIsInvoiceAsEmail(?bool $isInvoiceAsEmail = null): self
     {
@@ -187,7 +187,7 @@ class MakeBillingDocumentForAgencySettlementResponse extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementResponse
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -210,7 +210,7 @@ class MakeBillingDocumentForAgencySettlementResponse extends AbstractStructBase
     /**
      * Set tempRepositoryId value
      * @param int $tempRepositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementResponse
      */
     public function setTempRepositoryId(?int $tempRepositoryId = null): self
     {

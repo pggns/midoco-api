@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetMidocoFeeTypeRequest extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoFeeTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoFeeTypeRequest
      */
     public function setCode(string $code): self
     {

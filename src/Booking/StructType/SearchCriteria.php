@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SearchCriteria extends AbstractStructBase
 {
     /**
      * The criteria
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Criteria|null
+     * @var \Pggns\MidocoApi\Booking\StructType\Criteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\Criteria $criteria = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\Criteria $criteria = null;
     /**
      * Constructor method for searchCriteria
      * @uses SearchCriteria::setCriteria()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Criteria $criteria
+     * @param \Pggns\MidocoApi\Booking\StructType\Criteria $criteria
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\Criteria $criteria = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\Criteria $criteria = null)
     {
         $this
             ->setCriteria($criteria);
     }
     /**
      * Get criteria value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Criteria|null
+     * @return \Pggns\MidocoApi\Booking\StructType\Criteria|null
      */
-    public function getCriteria(): ?\Pggns\MidocoApi\Api\Booking\StructType\Criteria
+    public function getCriteria(): ?\Pggns\MidocoApi\Booking\StructType\Criteria
     {
         return $this->criteria;
     }
     /**
      * Set criteria value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Criteria $criteria
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SearchCriteria
+     * @param \Pggns\MidocoApi\Booking\StructType\Criteria $criteria
+     * @return \Pggns\MidocoApi\Booking\StructType\SearchCriteria
      */
-    public function setCriteria(?\Pggns\MidocoApi\Api\Booking\StructType\Criteria $criteria = null): self
+    public function setCriteria(?\Pggns\MidocoApi\Booking\StructType\Criteria $criteria = null): self
     {
         $this->criteria = $criteria;
         

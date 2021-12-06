@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MediatorCondChangeLogDTO extends AbstractStructBase
     /**
      * Set amountPerBooking value
      * @param float $amountPerBooking
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorCondChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorCondChangeLogDTO
      */
     public function setAmountPerBooking(?float $amountPerBooking = null): self
     {
@@ -134,7 +134,7 @@ class MediatorCondChangeLogDTO extends AbstractStructBase
     /**
      * Set amountPerPerson value
      * @param float $amountPerPerson
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorCondChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorCondChangeLogDTO
      */
     public function setAmountPerPerson(?float $amountPerPerson = null): self
     {
@@ -157,7 +157,7 @@ class MediatorCondChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorCondChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorCondChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -180,7 +180,7 @@ class MediatorCondChangeLogDTO extends AbstractStructBase
     /**
      * Set provisionPercent value
      * @param float $provisionPercent
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorCondChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorCondChangeLogDTO
      */
     public function setProvisionPercent(?float $provisionPercent = null): self
     {
@@ -203,7 +203,7 @@ class MediatorCondChangeLogDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorCondChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorCondChangeLogDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -226,7 +226,7 @@ class MediatorCondChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorCondChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorCondChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -249,7 +249,7 @@ class MediatorCondChangeLogDTO extends AbstractStructBase
     /**
      * Set totalPercent value
      * @param float $totalPercent
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorCondChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorCondChangeLogDTO
      */
     public function setTotalPercent(?float $totalPercent = null): self
     {
@@ -272,7 +272,7 @@ class MediatorCondChangeLogDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorCondChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorCondChangeLogDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -295,7 +295,7 @@ class MediatorCondChangeLogDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorCondChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorCondChangeLogDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -318,7 +318,7 @@ class MediatorCondChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MediatorCondChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MediatorCondChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

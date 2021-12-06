@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetMediatorChargesListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmMediatorChargeInfo
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmMediatorChargeInfoType[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmMediatorChargeInfoType[]
      */
     protected ?array $MidocoCrmMediatorChargeInfo = null;
     /**
      * Constructor method for GetMediatorChargesListResponse
      * @uses GetMediatorChargesListResponse::setMidocoCrmMediatorChargeInfo()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmMediatorChargeInfoType[] $midocoCrmMediatorChargeInfo
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmMediatorChargeInfoType[] $midocoCrmMediatorChargeInfo
      */
     public function __construct(?array $midocoCrmMediatorChargeInfo = null)
     {
@@ -36,7 +36,7 @@ class GetMediatorChargesListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmMediatorChargeInfo value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmMediatorChargeInfoType[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmMediatorChargeInfoType[]
      */
     public function getMidocoCrmMediatorChargeInfo(): ?array
     {
@@ -57,12 +57,12 @@ class GetMediatorChargesListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMediatorChargesListResponseMidocoCrmMediatorChargeInfoItem) {
             // validation for constraint: itemType
-            if (!$getMediatorChargesListResponseMidocoCrmMediatorChargeInfoItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmMediatorChargeInfoType) {
+            if (!$getMediatorChargesListResponseMidocoCrmMediatorChargeInfoItem instanceof \Pggns\MidocoApi\Crm\StructType\CrmMediatorChargeInfoType) {
                 $invalidValues[] = is_object($getMediatorChargesListResponseMidocoCrmMediatorChargeInfoItem) ? get_class($getMediatorChargesListResponseMidocoCrmMediatorChargeInfoItem) : sprintf('%s(%s)', gettype($getMediatorChargesListResponseMidocoCrmMediatorChargeInfoItem), var_export($getMediatorChargesListResponseMidocoCrmMediatorChargeInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmMediatorChargeInfo property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmMediatorChargeInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmMediatorChargeInfo property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmMediatorChargeInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetMediatorChargesListResponse extends AbstractStructBase
     /**
      * Set MidocoCrmMediatorChargeInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmMediatorChargeInfoType[] $midocoCrmMediatorChargeInfo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMediatorChargesListResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmMediatorChargeInfoType[] $midocoCrmMediatorChargeInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMediatorChargesListResponse
      */
     public function setMidocoCrmMediatorChargeInfo(?array $midocoCrmMediatorChargeInfo = null): self
     {
@@ -87,14 +87,14 @@ class GetMediatorChargesListResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmMediatorChargeInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmMediatorChargeInfoType $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMediatorChargesListResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmMediatorChargeInfoType $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMediatorChargesListResponse
      */
-    public function addToMidocoCrmMediatorChargeInfo(\Pggns\MidocoApi\Api\Crm\StructType\CrmMediatorChargeInfoType $item): self
+    public function addToMidocoCrmMediatorChargeInfo(\Pggns\MidocoApi\Crm\StructType\CrmMediatorChargeInfoType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmMediatorChargeInfoType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmMediatorChargeInfo property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmMediatorChargeInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CrmMediatorChargeInfoType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmMediatorChargeInfo property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmMediatorChargeInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmMediatorChargeInfo[] = $item;
         

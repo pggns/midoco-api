@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class GDSBookingIdentification extends AbstractStructBase
     /**
      * Set gdsName value
      * @param string $gdsName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GDSBookingIdentification
+     * @return \Pggns\MidocoApi\Booking\StructType\GDSBookingIdentification
      */
     public function setGdsName(?string $gdsName = null): self
     {
@@ -86,7 +86,7 @@ class GDSBookingIdentification extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GDSBookingIdentification
+     * @return \Pggns\MidocoApi\Booking\StructType\GDSBookingIdentification
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -109,7 +109,7 @@ class GDSBookingIdentification extends AbstractStructBase
     /**
      * Set gdsAgent value
      * @param string $gdsAgent
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GDSBookingIdentification
+     * @return \Pggns\MidocoApi\Booking\StructType\GDSBookingIdentification
      */
     public function setGdsAgent(?string $gdsAgent = null): self
     {
@@ -132,7 +132,7 @@ class GDSBookingIdentification extends AbstractStructBase
     /**
      * Set gdsAgencyNumber value
      * @param string $gdsAgencyNumber
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GDSBookingIdentification
+     * @return \Pggns\MidocoApi\Booking\StructType\GDSBookingIdentification
      */
     public function setGdsAgencyNumber(?string $gdsAgencyNumber = null): self
     {

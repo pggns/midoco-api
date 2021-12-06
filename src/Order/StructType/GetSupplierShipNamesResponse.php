@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSupplierShipNamesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierShipName
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO[]
      */
     protected ?array $MidocoSupplierShipName = null;
     /**
      * Constructor method for GetSupplierShipNamesResponse
      * @uses GetSupplierShipNamesResponse::setMidocoSupplierShipName()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO[] $midocoSupplierShipName
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO[] $midocoSupplierShipName
      */
     public function __construct(?array $midocoSupplierShipName = null)
     {
@@ -34,7 +34,7 @@ class GetSupplierShipNamesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierShipName value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO[]
      */
     public function getMidocoSupplierShipName(): ?array
     {
@@ -55,12 +55,12 @@ class GetSupplierShipNamesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSupplierShipNamesResponseMidocoSupplierShipNameItem) {
             // validation for constraint: itemType
-            if (!$getSupplierShipNamesResponseMidocoSupplierShipNameItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO) {
+            if (!$getSupplierShipNamesResponseMidocoSupplierShipNameItem instanceof \Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO) {
                 $invalidValues[] = is_object($getSupplierShipNamesResponseMidocoSupplierShipNameItem) ? get_class($getSupplierShipNamesResponseMidocoSupplierShipNameItem) : sprintf('%s(%s)', gettype($getSupplierShipNamesResponseMidocoSupplierShipNameItem), var_export($getSupplierShipNamesResponseMidocoSupplierShipNameItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierShipName property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierShipName property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSupplierShipNamesResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierShipName value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO[] $midocoSupplierShipName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierShipNamesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO[] $midocoSupplierShipName
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierShipNamesResponse
      */
     public function setMidocoSupplierShipName(?array $midocoSupplierShipName = null): self
     {
@@ -85,14 +85,14 @@ class GetSupplierShipNamesResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierShipName value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierShipNamesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierShipNamesResponse
      */
-    public function addToMidocoSupplierShipName(\Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO $item): self
+    public function addToMidocoSupplierShipName(\Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierShipName property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierShipName property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierShipName[] = $item;
         

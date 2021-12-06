@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class MidocoCrmAddress extends CrmAddressDTO
     /**
      * Set default value
      * @param bool $default
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrmAddress
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCrmAddress
      */
     public function setDefault(?bool $default = false): self
     {

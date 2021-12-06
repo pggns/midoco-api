@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class LinkedSupplierIdForCompanyResponse extends AbstractStructBase
     /**
      * Set linkedSupplierId value
      * @param string $linkedSupplierId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\LinkedSupplierIdForCompanyResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\LinkedSupplierIdForCompanyResponse
      */
     public function setLinkedSupplierId(?string $linkedSupplierId = null): self
     {

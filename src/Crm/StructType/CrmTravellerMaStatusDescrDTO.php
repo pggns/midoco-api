@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CrmTravellerMaStatusDescrDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmTravellerMaStatusDescrDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmTravellerMaStatusDescrDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -78,7 +78,7 @@ class CrmTravellerMaStatusDescrDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmTravellerMaStatusDescrDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmTravellerMaStatusDescrDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -101,7 +101,7 @@ class CrmTravellerMaStatusDescrDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmTravellerMaStatusDescrDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmTravellerMaStatusDescrDTO
      */
     public function setStatus(?string $status = null): self
     {

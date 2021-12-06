@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSupplierAgenciesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierAgency
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencyDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\SupplierAgencyDTO[]
      */
     protected ?array $MidocoSupplierAgency = null;
     /**
      * Constructor method for GetSupplierAgenciesResponse
      * @uses GetSupplierAgenciesResponse::setMidocoSupplierAgency()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencyDTO[] $midocoSupplierAgency
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierAgencyDTO[] $midocoSupplierAgency
      */
     public function __construct(?array $midocoSupplierAgency = null)
     {
@@ -34,7 +34,7 @@ class GetSupplierAgenciesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierAgency value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencyDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierAgencyDTO[]
      */
     public function getMidocoSupplierAgency(): ?array
     {
@@ -55,12 +55,12 @@ class GetSupplierAgenciesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSupplierAgenciesResponseMidocoSupplierAgencyItem) {
             // validation for constraint: itemType
-            if (!$getSupplierAgenciesResponseMidocoSupplierAgencyItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencyDTO) {
+            if (!$getSupplierAgenciesResponseMidocoSupplierAgencyItem instanceof \Pggns\MidocoApi\Order\StructType\SupplierAgencyDTO) {
                 $invalidValues[] = is_object($getSupplierAgenciesResponseMidocoSupplierAgencyItem) ? get_class($getSupplierAgenciesResponseMidocoSupplierAgencyItem) : sprintf('%s(%s)', gettype($getSupplierAgenciesResponseMidocoSupplierAgencyItem), var_export($getSupplierAgenciesResponseMidocoSupplierAgencyItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierAgency property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencyDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierAgency property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplierAgencyDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSupplierAgenciesResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierAgency value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencyDTO[] $midocoSupplierAgency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgenciesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierAgencyDTO[] $midocoSupplierAgency
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgenciesResponse
      */
     public function setMidocoSupplierAgency(?array $midocoSupplierAgency = null): self
     {
@@ -85,14 +85,14 @@ class GetSupplierAgenciesResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierAgency value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencyDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgenciesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierAgencyDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgenciesResponse
      */
-    public function addToMidocoSupplierAgency(\Pggns\MidocoApi\Api\Order\StructType\SupplierAgencyDTO $item): self
+    public function addToMidocoSupplierAgency(\Pggns\MidocoApi\Order\StructType\SupplierAgencyDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencyDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierAgency property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencyDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SupplierAgencyDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierAgency property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplierAgencyDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierAgency[] = $item;
         

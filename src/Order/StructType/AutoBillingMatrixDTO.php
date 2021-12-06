@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class AutoBillingMatrixDTO extends AbstractStructBase
     /**
      * Set crsName value
      * @param string $crsName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AutoBillingMatrixDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AutoBillingMatrixDTO
      */
     public function setCrsName(?string $crsName = null): self
     {
@@ -94,7 +94,7 @@ class AutoBillingMatrixDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AutoBillingMatrixDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AutoBillingMatrixDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -117,7 +117,7 @@ class AutoBillingMatrixDTO extends AbstractStructBase
     /**
      * Set deliveryType value
      * @param string $deliveryType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AutoBillingMatrixDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AutoBillingMatrixDTO
      */
     public function setDeliveryType(?string $deliveryType = null): self
     {
@@ -140,7 +140,7 @@ class AutoBillingMatrixDTO extends AbstractStructBase
     /**
      * Set isFeeRequired value
      * @param bool $isFeeRequired
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AutoBillingMatrixDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AutoBillingMatrixDTO
      */
     public function setIsFeeRequired(?bool $isFeeRequired = null): self
     {
@@ -163,7 +163,7 @@ class AutoBillingMatrixDTO extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AutoBillingMatrixDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AutoBillingMatrixDTO
      */
     public function setTravelType(?string $travelType = null): self
     {

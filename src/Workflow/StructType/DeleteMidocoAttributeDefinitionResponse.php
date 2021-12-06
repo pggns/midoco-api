@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class DeleteMidocoAttributeDefinitionResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoSystemAttributeDefinition
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\AttributeDefinitionDTO|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\AttributeDefinitionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\AttributeDefinitionDTO $MidocoSystemAttributeDefinition = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\AttributeDefinitionDTO $MidocoSystemAttributeDefinition = null;
     /**
      * Constructor method for DeleteMidocoAttributeDefinitionResponse
      * @uses DeleteMidocoAttributeDefinitionResponse::setMidocoSystemAttributeDefinition()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
+     * @param \Pggns\MidocoApi\Workflow\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null)
     {
         $this
             ->setMidocoSystemAttributeDefinition($midocoSystemAttributeDefinition);
     }
     /**
      * Get MidocoSystemAttributeDefinition value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\AttributeDefinitionDTO|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\AttributeDefinitionDTO|null
      */
-    public function getMidocoSystemAttributeDefinition(): ?\Pggns\MidocoApi\Api\Workflow\StructType\AttributeDefinitionDTO
+    public function getMidocoSystemAttributeDefinition(): ?\Pggns\MidocoApi\Workflow\StructType\AttributeDefinitionDTO
     {
         return $this->MidocoSystemAttributeDefinition;
     }
     /**
      * Set MidocoSystemAttributeDefinition value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoAttributeDefinitionResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteMidocoAttributeDefinitionResponse
      */
-    public function setMidocoSystemAttributeDefinition(?\Pggns\MidocoApi\Api\Workflow\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null): self
+    public function setMidocoSystemAttributeDefinition(?\Pggns\MidocoApi\Workflow\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null): self
     {
         $this->MidocoSystemAttributeDefinition = $midocoSystemAttributeDefinition;
         

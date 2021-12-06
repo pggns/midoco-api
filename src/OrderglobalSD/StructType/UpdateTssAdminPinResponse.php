@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class UpdateTssAdminPinResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoTssClient
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTssClient|null
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTssClient|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTssClient $MidocoTssClient = null;
+    protected ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTssClient $MidocoTssClient = null;
     /**
      * Constructor method for UpdateTssAdminPinResponse
      * @uses UpdateTssAdminPinResponse::setMidocoTssClient()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTssClient $midocoTssClient
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTssClient $midocoTssClient
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTssClient $midocoTssClient = null)
+    public function __construct(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTssClient $midocoTssClient = null)
     {
         $this
             ->setMidocoTssClient($midocoTssClient);
     }
     /**
      * Get MidocoTssClient value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTssClient|null
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTssClient|null
      */
-    public function getMidocoTssClient(): ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTssClient
+    public function getMidocoTssClient(): ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTssClient
     {
         return $this->MidocoTssClient;
     }
     /**
      * Set MidocoTssClient value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTssClient $midocoTssClient
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UpdateTssAdminPinResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTssClient $midocoTssClient
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UpdateTssAdminPinResponse
      */
-    public function setMidocoTssClient(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTssClient $midocoTssClient = null): self
+    public function setMidocoTssClient(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTssClient $midocoTssClient = null): self
     {
         $this->MidocoTssClient = $midocoTssClient;
         

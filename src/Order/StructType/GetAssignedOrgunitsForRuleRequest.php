@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetAssignedOrgunitsForRuleRequest extends AbstractStructBase
      * The MidocoRuleAssignSearchCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoRuleAssignSearchCriteria
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoRuleAssignSearchCriteria|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoRuleAssignSearchCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoRuleAssignSearchCriteria $MidocoRuleAssignSearchCriteria = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoRuleAssignSearchCriteria $MidocoRuleAssignSearchCriteria = null;
     /**
      * Constructor method for GetAssignedOrgunitsForRuleRequest
      * @uses GetAssignedOrgunitsForRuleRequest::setMidocoRuleAssignSearchCriteria()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoRuleAssignSearchCriteria $midocoRuleAssignSearchCriteria
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoRuleAssignSearchCriteria $midocoRuleAssignSearchCriteria
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoRuleAssignSearchCriteria $midocoRuleAssignSearchCriteria = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoRuleAssignSearchCriteria $midocoRuleAssignSearchCriteria = null)
     {
         $this
             ->setMidocoRuleAssignSearchCriteria($midocoRuleAssignSearchCriteria);
     }
     /**
      * Get MidocoRuleAssignSearchCriteria value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoRuleAssignSearchCriteria|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoRuleAssignSearchCriteria|null
      */
-    public function getMidocoRuleAssignSearchCriteria(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoRuleAssignSearchCriteria
+    public function getMidocoRuleAssignSearchCriteria(): ?\Pggns\MidocoApi\Order\StructType\MidocoRuleAssignSearchCriteria
     {
         return $this->MidocoRuleAssignSearchCriteria;
     }
     /**
      * Set MidocoRuleAssignSearchCriteria value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoRuleAssignSearchCriteria $midocoRuleAssignSearchCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAssignedOrgunitsForRuleRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoRuleAssignSearchCriteria $midocoRuleAssignSearchCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\GetAssignedOrgunitsForRuleRequest
      */
-    public function setMidocoRuleAssignSearchCriteria(?\Pggns\MidocoApi\Api\Order\StructType\MidocoRuleAssignSearchCriteria $midocoRuleAssignSearchCriteria = null): self
+    public function setMidocoRuleAssignSearchCriteria(?\Pggns\MidocoApi\Order\StructType\MidocoRuleAssignSearchCriteria $midocoRuleAssignSearchCriteria = null): self
     {
         $this->MidocoRuleAssignSearchCriteria = $midocoRuleAssignSearchCriteria;
         

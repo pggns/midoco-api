@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CheckUserAccessForOrgunitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CheckUserAccessForOrgunitRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\CheckUserAccessForOrgunitRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

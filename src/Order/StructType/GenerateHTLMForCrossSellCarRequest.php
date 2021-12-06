@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,16 +19,16 @@ class GenerateHTLMForCrossSellCarRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: CrossSellingCarInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo[]
      */
     protected ?array $CrossSellingCarInfo = null;
     /**
      * The MidocoOrder
      * Meta information extracted from the WSDL
      * - ref: MidocoOrder
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $MidocoOrder = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $MidocoOrder = null;
     /**
      * The templateName
      * @var string|null
@@ -39,11 +39,11 @@ class GenerateHTLMForCrossSellCarRequest extends AbstractStructBase
      * @uses GenerateHTLMForCrossSellCarRequest::setCrossSellingCarInfo()
      * @uses GenerateHTLMForCrossSellCarRequest::setMidocoOrder()
      * @uses GenerateHTLMForCrossSellCarRequest::setTemplateName()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo[] $crossSellingCarInfo
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
+     * @param \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo[] $crossSellingCarInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
      * @param string $templateName
      */
-    public function __construct(?array $crossSellingCarInfo = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null, ?string $templateName = null)
+    public function __construct(?array $crossSellingCarInfo = null, ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null, ?string $templateName = null)
     {
         $this
             ->setCrossSellingCarInfo($crossSellingCarInfo)
@@ -52,7 +52,7 @@ class GenerateHTLMForCrossSellCarRequest extends AbstractStructBase
     }
     /**
      * Get CrossSellingCarInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo[]
      */
     public function getCrossSellingCarInfo(): ?array
     {
@@ -73,12 +73,12 @@ class GenerateHTLMForCrossSellCarRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $generateHTLMForCrossSellCarRequestCrossSellingCarInfoItem) {
             // validation for constraint: itemType
-            if (!$generateHTLMForCrossSellCarRequestCrossSellingCarInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo) {
+            if (!$generateHTLMForCrossSellCarRequestCrossSellingCarInfoItem instanceof \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo) {
                 $invalidValues[] = is_object($generateHTLMForCrossSellCarRequestCrossSellingCarInfoItem) ? get_class($generateHTLMForCrossSellCarRequestCrossSellingCarInfoItem) : sprintf('%s(%s)', gettype($generateHTLMForCrossSellCarRequestCrossSellingCarInfoItem), var_export($generateHTLMForCrossSellCarRequestCrossSellingCarInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CrossSellingCarInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CrossSellingCarInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -87,8 +87,8 @@ class GenerateHTLMForCrossSellCarRequest extends AbstractStructBase
     /**
      * Set CrossSellingCarInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo[] $crossSellingCarInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateHTLMForCrossSellCarRequest
+     * @param \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo[] $crossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateHTLMForCrossSellCarRequest
      */
     public function setCrossSellingCarInfo(?array $crossSellingCarInfo = null): self
     {
@@ -103,14 +103,14 @@ class GenerateHTLMForCrossSellCarRequest extends AbstractStructBase
     /**
      * Add item to CrossSellingCarInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateHTLMForCrossSellCarRequest
+     * @param \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateHTLMForCrossSellCarRequest
      */
-    public function addToCrossSellingCarInfo(\Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo $item): self
+    public function addToCrossSellingCarInfo(\Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo) {
-            throw new InvalidArgumentException(sprintf('The CrossSellingCarInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo) {
+            throw new InvalidArgumentException(sprintf('The CrossSellingCarInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CrossSellingCarInfo[] = $item;
         
@@ -118,18 +118,18 @@ class GenerateHTLMForCrossSellCarRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrder value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    public function getMidocoOrder(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType
+    public function getMidocoOrder(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType
     {
         return $this->MidocoOrder;
     }
     /**
      * Set MidocoOrder value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateHTLMForCrossSellCarRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateHTLMForCrossSellCarRequest
      */
-    public function setMidocoOrder(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null): self
+    public function setMidocoOrder(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null): self
     {
         $this->MidocoOrder = $midocoOrder;
         
@@ -146,7 +146,7 @@ class GenerateHTLMForCrossSellCarRequest extends AbstractStructBase
     /**
      * Set templateName value
      * @param string $templateName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateHTLMForCrossSellCarRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateHTLMForCrossSellCarRequest
      */
     public function setTemplateName(?string $templateName = null): self
     {

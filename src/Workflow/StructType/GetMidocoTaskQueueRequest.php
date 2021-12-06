@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -36,9 +36,9 @@ class GetMidocoTaskQueueRequest extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoTaskQueue
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $MidocoTaskQueue = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $MidocoTaskQueue = null;
     /**
      * Constructor method for GetMidocoTaskQueueRequest
      * @uses GetMidocoTaskQueueRequest::setIsFromSave()
@@ -46,9 +46,9 @@ class GetMidocoTaskQueueRequest extends AbstractStructBase
      * @uses GetMidocoTaskQueueRequest::setMidocoTaskQueue()
      * @param bool $isFromSave
      * @param string $cultureId
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue
      */
-    public function __construct(bool $isFromSave, string $cultureId, ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue = null)
+    public function __construct(bool $isFromSave, string $cultureId, ?\Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue = null)
     {
         $this
             ->setIsFromSave($isFromSave)
@@ -66,7 +66,7 @@ class GetMidocoTaskQueueRequest extends AbstractStructBase
     /**
      * Set isFromSave value
      * @param bool $isFromSave
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetMidocoTaskQueueRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetMidocoTaskQueueRequest
      */
     public function setIsFromSave(bool $isFromSave): self
     {
@@ -89,7 +89,7 @@ class GetMidocoTaskQueueRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetMidocoTaskQueueRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetMidocoTaskQueueRequest
      */
     public function setCultureId(string $cultureId): self
     {
@@ -103,18 +103,18 @@ class GetMidocoTaskQueueRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTaskQueue value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue|null
      */
-    public function getMidocoTaskQueue(): ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue
+    public function getMidocoTaskQueue(): ?\Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue
     {
         return $this->MidocoTaskQueue;
     }
     /**
      * Set MidocoTaskQueue value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetMidocoTaskQueueRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetMidocoTaskQueueRequest
      */
-    public function setMidocoTaskQueue(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue = null): self
+    public function setMidocoTaskQueue(?\Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue = null): self
     {
         $this->MidocoTaskQueue = $midocoTaskQueue;
         

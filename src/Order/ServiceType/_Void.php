@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class _Void extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\_Void
+     * @return \Pggns\MidocoApi\Order\ServiceType\_Void
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class _Void extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VoidBillingDocumentRequest $paramVoidBillingDocumentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidBillingDocumentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\VoidBillingDocumentRequest $paramVoidBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidBillingDocumentResponse|bool
      */
-    public function voidBillingDocument(\Pggns\MidocoApi\Api\Order\StructType\VoidBillingDocumentRequest $paramVoidBillingDocumentRequest)
+    public function voidBillingDocument(\Pggns\MidocoApi\Order\StructType\VoidBillingDocumentRequest $paramVoidBillingDocumentRequest)
     {
         try {
             $this->setResult($resultVoidBillingDocument = $this->getSoapClient()->__soapCall('voidBillingDocument', [
@@ -58,15 +58,15 @@ class _Void extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VoidMediatorBillingRequest $paramVoidMediatorBillingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidMediatorBillingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\VoidMediatorBillingRequest $paramVoidMediatorBillingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidMediatorBillingResponse|bool
      */
-    public function voidMediatorBilling(\Pggns\MidocoApi\Api\Order\StructType\VoidMediatorBillingRequest $paramVoidMediatorBillingRequest)
+    public function voidMediatorBilling(\Pggns\MidocoApi\Order\StructType\VoidMediatorBillingRequest $paramVoidMediatorBillingRequest)
     {
         try {
             $this->setResult($resultVoidMediatorBilling = $this->getSoapClient()->__soapCall('voidMediatorBilling', [
@@ -85,15 +85,15 @@ class _Void extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VoidMediatorSettlementRequest $paramVoidMediatorSettlementRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidMediatorSettlementResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\VoidMediatorSettlementRequest $paramVoidMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidMediatorSettlementResponse|bool
      */
-    public function voidMediatorSettlement(\Pggns\MidocoApi\Api\Order\StructType\VoidMediatorSettlementRequest $paramVoidMediatorSettlementRequest)
+    public function voidMediatorSettlement(\Pggns\MidocoApi\Order\StructType\VoidMediatorSettlementRequest $paramVoidMediatorSettlementRequest)
     {
         try {
             $this->setResult($resultVoidMediatorSettlement = $this->getSoapClient()->__soapCall('voidMediatorSettlement', [
@@ -112,15 +112,15 @@ class _Void extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VoidMediatorProductSettlementRequest $paramVoidMediatorProductSettlementRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidMediatorProductSettlementResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\VoidMediatorProductSettlementRequest $paramVoidMediatorProductSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidMediatorProductSettlementResponse|bool
      */
-    public function voidMediatorProductSettlement(\Pggns\MidocoApi\Api\Order\StructType\VoidMediatorProductSettlementRequest $paramVoidMediatorProductSettlementRequest)
+    public function voidMediatorProductSettlement(\Pggns\MidocoApi\Order\StructType\VoidMediatorProductSettlementRequest $paramVoidMediatorProductSettlementRequest)
     {
         try {
             $this->setResult($resultVoidMediatorProductSettlement = $this->getSoapClient()->__soapCall('voidMediatorProductSettlement', [
@@ -139,15 +139,15 @@ class _Void extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VoidReceiptRequest $paramVoidReceiptRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidReceiptResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\VoidReceiptRequest $paramVoidReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidReceiptResponse|bool
      */
-    public function voidReceipt(\Pggns\MidocoApi\Api\Order\StructType\VoidReceiptRequest $paramVoidReceiptRequest)
+    public function voidReceipt(\Pggns\MidocoApi\Order\StructType\VoidReceiptRequest $paramVoidReceiptRequest)
     {
         try {
             $this->setResult($resultVoidReceipt = $this->getSoapClient()->__soapCall('voidReceipt', [
@@ -166,15 +166,15 @@ class _Void extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VoidJournalEntryRequest $paramVoidJournalEntryRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidJournalEntryResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\VoidJournalEntryRequest $paramVoidJournalEntryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidJournalEntryResponse|bool
      */
-    public function voidJournalEntry(\Pggns\MidocoApi\Api\Order\StructType\VoidJournalEntryRequest $paramVoidJournalEntryRequest)
+    public function voidJournalEntry(\Pggns\MidocoApi\Order\StructType\VoidJournalEntryRequest $paramVoidJournalEntryRequest)
     {
         try {
             $this->setResult($resultVoidJournalEntry = $this->getSoapClient()->__soapCall('voidJournalEntry', [
@@ -193,15 +193,15 @@ class _Void extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VoidRevenueBookingRequest $paramVoidRevenueBookingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidRevenueBookingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\VoidRevenueBookingRequest $paramVoidRevenueBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidRevenueBookingResponse|bool
      */
-    public function voidRevenueBooking(\Pggns\MidocoApi\Api\Order\StructType\VoidRevenueBookingRequest $paramVoidRevenueBookingRequest)
+    public function voidRevenueBooking(\Pggns\MidocoApi\Order\StructType\VoidRevenueBookingRequest $paramVoidRevenueBookingRequest)
     {
         try {
             $this->setResult($resultVoidRevenueBooking = $this->getSoapClient()->__soapCall('voidRevenueBooking', [
@@ -221,15 +221,15 @@ class _Void extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryRequest $paramVoidAndRebookForeignCurrencyEntryHistoryRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryRequest $paramVoidAndRebookForeignCurrencyEntryHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryResponse|bool
      */
-    public function voidAndRebookForeignCurencyEntryHistory(\Pggns\MidocoApi\Api\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryRequest $paramVoidAndRebookForeignCurrencyEntryHistoryRequest)
+    public function voidAndRebookForeignCurencyEntryHistory(\Pggns\MidocoApi\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryRequest $paramVoidAndRebookForeignCurrencyEntryHistoryRequest)
     {
         try {
             $this->setResult($resultVoidAndRebookForeignCurencyEntryHistory = $this->getSoapClient()->__soapCall('voidAndRebookForeignCurencyEntryHistory', [
@@ -248,15 +248,15 @@ class _Void extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VoidAgencySettlementRequest $paramVoidAgencySettlementRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidAgencySettlementResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\VoidAgencySettlementRequest $paramVoidAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidAgencySettlementResponse|bool
      */
-    public function voidAgencySettlement(\Pggns\MidocoApi\Api\Order\StructType\VoidAgencySettlementRequest $paramVoidAgencySettlementRequest)
+    public function voidAgencySettlement(\Pggns\MidocoApi\Order\StructType\VoidAgencySettlementRequest $paramVoidAgencySettlementRequest)
     {
         try {
             $this->setResult($resultVoidAgencySettlement = $this->getSoapClient()->__soapCall('voidAgencySettlement', [
@@ -275,15 +275,15 @@ class _Void extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VoidTravelNoMarginBookingRequest $paramVoidTravelNoMarginBookingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidTravelNoMarginBookingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\VoidTravelNoMarginBookingRequest $paramVoidTravelNoMarginBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidTravelNoMarginBookingResponse|bool
      */
-    public function voidTravelNoMarginBooking(\Pggns\MidocoApi\Api\Order\StructType\VoidTravelNoMarginBookingRequest $paramVoidTravelNoMarginBookingRequest)
+    public function voidTravelNoMarginBooking(\Pggns\MidocoApi\Order\StructType\VoidTravelNoMarginBookingRequest $paramVoidTravelNoMarginBookingRequest)
     {
         try {
             $this->setResult($resultVoidTravelNoMarginBooking = $this->getSoapClient()->__soapCall('voidTravelNoMarginBooking', [
@@ -300,7 +300,7 @@ class _Void extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidAgencySettlementResponse|\Pggns\MidocoApi\Api\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryResponse|\Pggns\MidocoApi\Api\Order\StructType\VoidBillingDocumentResponse|\Pggns\MidocoApi\Api\Order\StructType\VoidJournalEntryResponse|\Pggns\MidocoApi\Api\Order\StructType\VoidMediatorBillingResponse|\Pggns\MidocoApi\Api\Order\StructType\VoidMediatorProductSettlementResponse|\Pggns\MidocoApi\Api\Order\StructType\VoidMediatorSettlementResponse|\Pggns\MidocoApi\Api\Order\StructType\VoidReceiptResponse|\Pggns\MidocoApi\Api\Order\StructType\VoidRevenueBookingResponse|\Pggns\MidocoApi\Api\Order\StructType\VoidTravelNoMarginBookingResponse
+     * @return \Pggns\MidocoApi\Order\StructType\VoidAgencySettlementResponse|\Pggns\MidocoApi\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryResponse|\Pggns\MidocoApi\Order\StructType\VoidBillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\VoidJournalEntryResponse|\Pggns\MidocoApi\Order\StructType\VoidMediatorBillingResponse|\Pggns\MidocoApi\Order\StructType\VoidMediatorProductSettlementResponse|\Pggns\MidocoApi\Order\StructType\VoidMediatorSettlementResponse|\Pggns\MidocoApi\Order\StructType\VoidReceiptResponse|\Pggns\MidocoApi\Order\StructType\VoidRevenueBookingResponse|\Pggns\MidocoApi\Order\StructType\VoidTravelNoMarginBookingResponse
      */
     public function getResult()
     {

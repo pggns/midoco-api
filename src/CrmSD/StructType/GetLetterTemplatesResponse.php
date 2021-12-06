@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetLetterTemplatesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoLetterTemplate
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO[]
      */
     protected ?array $MidocoLetterTemplate = null;
     /**
      * Constructor method for GetLetterTemplatesResponse
      * @uses GetLetterTemplatesResponse::setMidocoLetterTemplate()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO[] $midocoLetterTemplate
+     * @param \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO[] $midocoLetterTemplate
      */
     public function __construct(?array $midocoLetterTemplate = null)
     {
@@ -34,7 +34,7 @@ class GetLetterTemplatesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoLetterTemplate value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO[]
      */
     public function getMidocoLetterTemplate(): ?array
     {
@@ -55,12 +55,12 @@ class GetLetterTemplatesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getLetterTemplatesResponseMidocoLetterTemplateItem) {
             // validation for constraint: itemType
-            if (!$getLetterTemplatesResponseMidocoLetterTemplateItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO) {
+            if (!$getLetterTemplatesResponseMidocoLetterTemplateItem instanceof \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO) {
                 $invalidValues[] = is_object($getLetterTemplatesResponseMidocoLetterTemplateItem) ? get_class($getLetterTemplatesResponseMidocoLetterTemplateItem) : sprintf('%s(%s)', gettype($getLetterTemplatesResponseMidocoLetterTemplateItem), var_export($getLetterTemplatesResponseMidocoLetterTemplateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoLetterTemplate property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoLetterTemplate property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetLetterTemplatesResponse extends AbstractStructBase
     /**
      * Set MidocoLetterTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO[] $midocoLetterTemplate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetLetterTemplatesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO[] $midocoLetterTemplate
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetLetterTemplatesResponse
      */
     public function setMidocoLetterTemplate(?array $midocoLetterTemplate = null): self
     {
@@ -85,14 +85,14 @@ class GetLetterTemplatesResponse extends AbstractStructBase
     /**
      * Add item to MidocoLetterTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetLetterTemplatesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetLetterTemplatesResponse
      */
-    public function addToMidocoLetterTemplate(\Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO $item): self
+    public function addToMidocoLetterTemplate(\Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoLetterTemplate property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoLetterTemplate property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoLetterTemplate[] = $item;
         

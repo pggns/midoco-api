@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSellItemInfo4SearchOrderResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellItemInfo4SearchOrder
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4SearchOrder[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4SearchOrder[]
      */
     protected ?array $MidocoSellItemInfo4SearchOrder = null;
     /**
      * Constructor method for GetSellItemInfo4SearchOrderResponse
      * @uses GetSellItemInfo4SearchOrderResponse::setMidocoSellItemInfo4SearchOrder()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4SearchOrder[] $midocoSellItemInfo4SearchOrder
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4SearchOrder[] $midocoSellItemInfo4SearchOrder
      */
     public function __construct(?array $midocoSellItemInfo4SearchOrder = null)
     {
@@ -34,7 +34,7 @@ class GetSellItemInfo4SearchOrderResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSellItemInfo4SearchOrder value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4SearchOrder[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4SearchOrder[]
      */
     public function getMidocoSellItemInfo4SearchOrder(): ?array
     {
@@ -55,12 +55,12 @@ class GetSellItemInfo4SearchOrderResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSellItemInfo4SearchOrderResponseMidocoSellItemInfo4SearchOrderItem) {
             // validation for constraint: itemType
-            if (!$getSellItemInfo4SearchOrderResponseMidocoSellItemInfo4SearchOrderItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4SearchOrder) {
+            if (!$getSellItemInfo4SearchOrderResponseMidocoSellItemInfo4SearchOrderItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4SearchOrder) {
                 $invalidValues[] = is_object($getSellItemInfo4SearchOrderResponseMidocoSellItemInfo4SearchOrderItem) ? get_class($getSellItemInfo4SearchOrderResponseMidocoSellItemInfo4SearchOrderItem) : sprintf('%s(%s)', gettype($getSellItemInfo4SearchOrderResponseMidocoSellItemInfo4SearchOrderItem), var_export($getSellItemInfo4SearchOrderResponseMidocoSellItemInfo4SearchOrderItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellItemInfo4SearchOrder property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4SearchOrder, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellItemInfo4SearchOrder property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4SearchOrder, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSellItemInfo4SearchOrderResponse extends AbstractStructBase
     /**
      * Set MidocoSellItemInfo4SearchOrder value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4SearchOrder[] $midocoSellItemInfo4SearchOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemInfo4SearchOrderResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4SearchOrder[] $midocoSellItemInfo4SearchOrder
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemInfo4SearchOrderResponse
      */
     public function setMidocoSellItemInfo4SearchOrder(?array $midocoSellItemInfo4SearchOrder = null): self
     {
@@ -85,14 +85,14 @@ class GetSellItemInfo4SearchOrderResponse extends AbstractStructBase
     /**
      * Add item to MidocoSellItemInfo4SearchOrder value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4SearchOrder $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemInfo4SearchOrderResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4SearchOrder $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemInfo4SearchOrderResponse
      */
-    public function addToMidocoSellItemInfo4SearchOrder(\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4SearchOrder $item): self
+    public function addToMidocoSellItemInfo4SearchOrder(\Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4SearchOrder $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4SearchOrder) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellItemInfo4SearchOrder property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4SearchOrder, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4SearchOrder) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellItemInfo4SearchOrder property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4SearchOrder, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellItemInfo4SearchOrder[] = $item;
         

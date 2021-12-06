@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetContactEntriesRequest extends AbstractStructBase
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The ignoreNotAvailable
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class GetContactEntriesRequest extends AbstractStructBase
      * Constructor method for GetContactEntriesRequest
      * @uses GetContactEntriesRequest::setMidocoCustomerId()
      * @uses GetContactEntriesRequest::setIgnoreNotAvailable()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId
      * @param bool $ignoreNotAvailable
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?bool $ignoreNotAvailable = true)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?bool $ignoreNotAvailable = true)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -42,18 +42,18 @@ class GetContactEntriesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetContactEntriesRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\Crm\StructType\GetContactEntriesRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -70,7 +70,7 @@ class GetContactEntriesRequest extends AbstractStructBase
     /**
      * Set ignoreNotAvailable value
      * @param bool $ignoreNotAvailable
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetContactEntriesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetContactEntriesRequest
      */
     public function setIgnoreNotAvailable(?bool $ignoreNotAvailable = true): self
     {

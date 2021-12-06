@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -36,7 +36,7 @@ class Cc_token extends AbstractStructBase
      * - maxOccurs: 3
      * - minOccurs: 0
      * - ref: token-attributes
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Token_attributes[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Token_attributes[]
      */
     protected ?array $token_attributes = null;
     /**
@@ -48,7 +48,7 @@ class Cc_token extends AbstractStructBase
      * @param string $value
      * @param string $cc_token_type
      * @param bool $is_recurring
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Token_attributes[] $token_attributes
+     * @param \Pggns\MidocoApi\Booking\StructType\Token_attributes[] $token_attributes
      */
     public function __construct(?string $value = null, ?string $cc_token_type = null, ?bool $is_recurring = null, ?array $token_attributes = null)
     {
@@ -69,7 +69,7 @@ class Cc_token extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Cc_token
+     * @return \Pggns\MidocoApi\Booking\StructType\Cc_token
      */
     public function setValue(?string $value = null): self
     {
@@ -91,17 +91,17 @@ class Cc_token extends AbstractStructBase
     }
     /**
      * Set cc_token_type value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\Cc_token_type::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\Cc_token_type::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\Cc_token_type::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\Cc_token_type::getValidValues()
      * @throws InvalidArgumentException
      * @param string $cc_token_type
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Cc_token
+     * @return \Pggns\MidocoApi\Booking\StructType\Cc_token
      */
     public function setCc_token_type(?string $cc_token_type = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\Cc_token_type::valueIsValid($cc_token_type)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\Cc_token_type', is_array($cc_token_type) ? implode(', ', $cc_token_type) : var_export($cc_token_type, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\Cc_token_type::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\Cc_token_type::valueIsValid($cc_token_type)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\Cc_token_type', is_array($cc_token_type) ? implode(', ', $cc_token_type) : var_export($cc_token_type, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\Cc_token_type::getValidValues())), __LINE__);
         }
         $this->cc_token_type = $this->{'cc-token-type'} = $cc_token_type;
         
@@ -118,7 +118,7 @@ class Cc_token extends AbstractStructBase
     /**
      * Set is_recurring value
      * @param bool $is_recurring
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Cc_token
+     * @return \Pggns\MidocoApi\Booking\StructType\Cc_token
      */
     public function setIs_recurring(?bool $is_recurring = null): self
     {
@@ -132,7 +132,7 @@ class Cc_token extends AbstractStructBase
     }
     /**
      * Get token_attributes value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Token_attributes[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Token_attributes[]
      */
     public function getToken_attributes(): ?array
     {
@@ -153,12 +153,12 @@ class Cc_token extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $cc_tokenToken_attributesItem) {
             // validation for constraint: itemType
-            if (!$cc_tokenToken_attributesItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Token_attributes) {
+            if (!$cc_tokenToken_attributesItem instanceof \Pggns\MidocoApi\Booking\StructType\Token_attributes) {
                 $invalidValues[] = is_object($cc_tokenToken_attributesItem) ? get_class($cc_tokenToken_attributesItem) : sprintf('%s(%s)', gettype($cc_tokenToken_attributesItem), var_export($cc_tokenToken_attributesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The token_attributes property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Token_attributes, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The token_attributes property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Token_attributes, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -167,8 +167,8 @@ class Cc_token extends AbstractStructBase
     /**
      * Set token_attributes value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Token_attributes[] $token_attributes
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Cc_token
+     * @param \Pggns\MidocoApi\Booking\StructType\Token_attributes[] $token_attributes
+     * @return \Pggns\MidocoApi\Booking\StructType\Cc_token
      */
     public function setToken_attributes(?array $token_attributes = null): self
     {
@@ -187,14 +187,14 @@ class Cc_token extends AbstractStructBase
     /**
      * Add item to token_attributes value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Token_attributes $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Cc_token
+     * @param \Pggns\MidocoApi\Booking\StructType\Token_attributes $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Cc_token
      */
-    public function addToToken_attributes(\Pggns\MidocoApi\Api\Booking\StructType\Token_attributes $item): self
+    public function addToToken_attributes(\Pggns\MidocoApi\Booking\StructType\Token_attributes $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Token_attributes) {
-            throw new InvalidArgumentException(sprintf('The token_attributes property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Token_attributes, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Token_attributes) {
+            throw new InvalidArgumentException(sprintf('The token_attributes property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Token_attributes, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(3)
         if (is_array($this->token_attributes) && count($this->token_attributes) >= 3) {

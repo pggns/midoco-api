@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:Error
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Error[]
+     * @var \Pggns\MidocoApi\Order\StructType\Error[]
      */
     protected ?array $Error = null;
     /**
@@ -61,7 +61,7 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
      * @uses ExecuteAgencySettlementResponse::setIsInvoiceAsEmail()
      * @uses ExecuteAgencySettlementResponse::setInvoiceId()
      * @uses ExecuteAgencySettlementResponse::setVoidInvoiceId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Error[] $error
+     * @param \Pggns\MidocoApi\Order\StructType\Error[] $error
      * @param int[] $tempRepositoryIds
      * @param int[] $printJobIds
      * @param bool $isInvoiceAsEmail
@@ -80,7 +80,7 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
     }
     /**
      * Get Error value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Error[]
+     * @return \Pggns\MidocoApi\Order\StructType\Error[]
      */
     public function getError(): ?array
     {
@@ -101,12 +101,12 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $executeAgencySettlementResponseErrorItem) {
             // validation for constraint: itemType
-            if (!$executeAgencySettlementResponseErrorItem instanceof \Pggns\MidocoApi\Api\Order\StructType\Error) {
+            if (!$executeAgencySettlementResponseErrorItem instanceof \Pggns\MidocoApi\Order\StructType\Error) {
                 $invalidValues[] = is_object($executeAgencySettlementResponseErrorItem) ? get_class($executeAgencySettlementResponseErrorItem) : sprintf('%s(%s)', gettype($executeAgencySettlementResponseErrorItem), var_export($executeAgencySettlementResponseErrorItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Error, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Order\StructType\Error, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -115,8 +115,8 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
     /**
      * Set Error value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Error[] $error
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\Error[] $error
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementResponse
      */
     public function setError(?array $error = null): self
     {
@@ -131,14 +131,14 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
     /**
      * Add item to Error value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Error $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\Error $item
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementResponse
      */
-    public function addToError(\Pggns\MidocoApi\Api\Order\StructType\Error $item): self
+    public function addToError(\Pggns\MidocoApi\Order\StructType\Error $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\Error) {
-            throw new InvalidArgumentException(sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Error, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\Error) {
+            throw new InvalidArgumentException(sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Order\StructType\Error, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Error[] = $item;
         
@@ -182,7 +182,7 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
      * Set tempRepositoryIds value
      * @throws InvalidArgumentException
      * @param int[] $tempRepositoryIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementResponse
      */
     public function setTempRepositoryIds(?array $tempRepositoryIds = null): self
     {
@@ -198,7 +198,7 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
      * Add item to tempRepositoryIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementResponse
      */
     public function addToTempRepositoryIds(int $item): self
     {
@@ -248,7 +248,7 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
      * Set printJobIds value
      * @throws InvalidArgumentException
      * @param int[] $printJobIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementResponse
      */
     public function setPrintJobIds(?array $printJobIds = null): self
     {
@@ -264,7 +264,7 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
      * Add item to printJobIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementResponse
      */
     public function addToPrintJobIds(int $item): self
     {
@@ -287,7 +287,7 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
     /**
      * Set isInvoiceAsEmail value
      * @param bool $isInvoiceAsEmail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementResponse
      */
     public function setIsInvoiceAsEmail(?bool $isInvoiceAsEmail = null): self
     {
@@ -310,7 +310,7 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
     /**
      * Set invoiceId value
      * @param int $invoiceId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementResponse
      */
     public function setInvoiceId(?int $invoiceId = null): self
     {
@@ -333,7 +333,7 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
     /**
      * Set voidInvoiceId value
      * @param int $voidInvoiceId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementResponse
      */
     public function setVoidInvoiceId(?int $voidInvoiceId = null): self
     {

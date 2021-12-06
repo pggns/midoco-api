@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -431,7 +431,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set acceptCc value
      * @param bool $acceptCc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setAcceptCc(?bool $acceptCc = null): self
     {
@@ -454,7 +454,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set acceptDebit value
      * @param bool $acceptDebit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setAcceptDebit(?bool $acceptDebit = null): self
     {
@@ -477,7 +477,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set avoidDebit value
      * @param bool $avoidDebit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setAvoidDebit(?bool $avoidDebit = null): self
     {
@@ -500,7 +500,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set bankTransferCollective value
      * @param int $bankTransferCollective
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setBankTransferCollective(?int $bankTransferCollective = null): self
     {
@@ -523,7 +523,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set bankTransferFees value
      * @param string $bankTransferFees
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setBankTransferFees(?string $bankTransferFees = null): self
     {
@@ -546,7 +546,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set bankTransferInstrKey1 value
      * @param string $bankTransferInstrKey1
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setBankTransferInstrKey1(?string $bankTransferInstrKey1 = null): self
     {
@@ -569,7 +569,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set bankTransferInstrKey2 value
      * @param string $bankTransferInstrKey2
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setBankTransferInstrKey2(?string $bankTransferInstrKey2 = null): self
     {
@@ -592,7 +592,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set bankTransferInstrKey3 value
      * @param string $bankTransferInstrKey3
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setBankTransferInstrKey3(?string $bankTransferInstrKey3 = null): self
     {
@@ -615,7 +615,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set bankTransferInstrKey4 value
      * @param string $bankTransferInstrKey4
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setBankTransferInstrKey4(?string $bankTransferInstrKey4 = null): self
     {
@@ -638,7 +638,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set bankTransferProt value
      * @param int $bankTransferProt
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setBankTransferProt(?int $bankTransferProt = null): self
     {
@@ -661,7 +661,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set bankTransferType value
      * @param string $bankTransferType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setBankTransferType(?string $bankTransferType = null): self
     {
@@ -684,7 +684,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set billPerPassenger value
      * @param bool $billPerPassenger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setBillPerPassenger(?bool $billPerPassenger = null): self
     {
@@ -707,7 +707,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set billPerPassengerPaymentOfTicket value
      * @param bool $billPerPassengerPaymentOfTicket
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setBillPerPassengerPaymentOfTicket(?bool $billPerPassengerPaymentOfTicket = null): self
     {
@@ -730,7 +730,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set ccPrintSignature value
      * @param int $ccPrintSignature
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setCcPrintSignature(?int $ccPrintSignature = null): self
     {
@@ -753,7 +753,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set chargesGroup value
      * @param string $chargesGroup
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setChargesGroup(?string $chargesGroup = null): self
     {
@@ -776,7 +776,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set collectiveInvoice value
      * @param bool $collectiveInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setCollectiveInvoice(?bool $collectiveInvoice = null): self
     {
@@ -799,7 +799,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set collectiveInvoiceType value
      * @param string $collectiveInvoiceType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setCollectiveInvoiceType(?string $collectiveInvoiceType = null): self
     {
@@ -822,7 +822,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set companyUsage value
      * @param bool $companyUsage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setCompanyUsage(?bool $companyUsage = null): self
     {
@@ -845,7 +845,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set concernId value
      * @param string $concernId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setConcernId(?string $concernId = null): self
     {
@@ -868,7 +868,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set creditLimit value
      * @param float $creditLimit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setCreditLimit(?float $creditLimit = null): self
     {
@@ -891,7 +891,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -914,7 +914,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set directDebit value
      * @param bool $directDebit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setDirectDebit(?bool $directDebit = null): self
     {
@@ -937,7 +937,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set directDebitDate value
      * @param string $directDebitDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setDirectDebitDate(?string $directDebitDate = null): self
     {
@@ -960,7 +960,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set disableCommissionOnVoid value
      * @param bool $disableCommissionOnVoid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setDisableCommissionOnVoid(?bool $disableCommissionOnVoid = null): self
     {
@@ -983,7 +983,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set disableProvisionPayment value
      * @param bool $disableProvisionPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setDisableProvisionPayment(?bool $disableProvisionPayment = null): self
     {
@@ -1006,7 +1006,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set documentCopies value
      * @param int $documentCopies
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setDocumentCopies(?int $documentCopies = null): self
     {
@@ -1029,7 +1029,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set esrTransfer value
      * @param bool $esrTransfer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setEsrTransfer(?bool $esrTransfer = null): self
     {
@@ -1052,7 +1052,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set foreignBankTransfer value
      * @param bool $foreignBankTransfer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setForeignBankTransfer(?bool $foreignBankTransfer = null): self
     {
@@ -1075,7 +1075,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set hasBtContract value
      * @param bool $hasBtContract
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setHasBtContract(?bool $hasBtContract = null): self
     {
@@ -1098,7 +1098,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set invoiceAsEmail value
      * @param bool $invoiceAsEmail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setInvoiceAsEmail(?bool $invoiceAsEmail = null): self
     {
@@ -1121,7 +1121,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set invoiceFileFormatId value
      * @param string $invoiceFileFormatId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setInvoiceFileFormatId(?string $invoiceFileFormatId = null): self
     {
@@ -1144,7 +1144,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set isDunningBlock value
      * @param bool $isDunningBlock
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setIsDunningBlock(?bool $isDunningBlock = null): self
     {
@@ -1167,7 +1167,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set isReverseCharge value
      * @param bool $isReverseCharge
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setIsReverseCharge(?bool $isReverseCharge = null): self
     {
@@ -1190,7 +1190,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set methodOfPayment value
      * @param string $methodOfPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setMethodOfPayment(?string $methodOfPayment = null): self
     {
@@ -1213,7 +1213,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set noPaymentMethod value
      * @param bool $noPaymentMethod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setNoPaymentMethod(?bool $noPaymentMethod = null): self
     {
@@ -1236,7 +1236,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set outgoingBankTransfer value
      * @param bool $outgoingBankTransfer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setOutgoingBankTransfer(?bool $outgoingBankTransfer = null): self
     {
@@ -1259,7 +1259,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set paymentConditionId value
      * @param string $paymentConditionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setPaymentConditionId(?string $paymentConditionId = null): self
     {
@@ -1282,7 +1282,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set paymentDelay value
      * @param int $paymentDelay
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setPaymentDelay(?int $paymentDelay = null): self
     {
@@ -1305,7 +1305,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set paymentForcedCcCardId value
      * @param int $paymentForcedCcCardId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setPaymentForcedCcCardId(?int $paymentForcedCcCardId = null): self
     {
@@ -1328,7 +1328,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set paymentForcedDebitCardId value
      * @param int $paymentForcedDebitCardId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setPaymentForcedDebitCardId(?int $paymentForcedDebitCardId = null): self
     {
@@ -1351,7 +1351,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set paymentForcedType value
      * @param string $paymentForcedType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setPaymentForcedType(?string $paymentForcedType = null): self
     {
@@ -1374,7 +1374,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set prepayment value
      * @param bool $prepayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setPrepayment(?bool $prepayment = null): self
     {
@@ -1397,7 +1397,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set printOptionId value
      * @param int $printOptionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setPrintOptionId(?int $printOptionId = null): self
     {
@@ -1420,7 +1420,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set rebateAllowed value
      * @param bool $rebateAllowed
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setRebateAllowed(?bool $rebateAllowed = null): self
     {
@@ -1443,7 +1443,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set sendCsvInvoice value
      * @param bool $sendCsvInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setSendCsvInvoice(?bool $sendCsvInvoice = null): self
     {
@@ -1466,7 +1466,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set sepaDebit value
      * @param bool $sepaDebit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setSepaDebit(?bool $sepaDebit = null): self
     {
@@ -1489,7 +1489,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set sepaTransfer value
      * @param bool $sepaTransfer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setSepaTransfer(?bool $sepaTransfer = null): self
     {
@@ -1512,7 +1512,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set smallBusiness value
      * @param bool $smallBusiness
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setSmallBusiness(?bool $smallBusiness = null): self
     {
@@ -1535,7 +1535,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set vatLiability value
      * @param bool $vatLiability
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setVatLiability(?bool $vatLiability = null): self
     {
@@ -1558,7 +1558,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
     /**
      * Set vatOrganic value
      * @param bool $vatOrganic
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerPaymentDTO
      */
     public function setVatOrganic(?bool $vatOrganic = null): self
     {

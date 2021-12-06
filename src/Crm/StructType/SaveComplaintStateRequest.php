@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class SaveComplaintStateRequest extends AbstractStructBase
      * The MidocoComplaintState
      * Meta information extracted from the WSDL
      * - ref: MidocoComplaintState
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoComplaintStateDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoComplaintStateDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoComplaintStateDTO $MidocoComplaintState = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoComplaintStateDTO $MidocoComplaintState = null;
     /**
      * Constructor method for SaveComplaintStateRequest
      * @uses SaveComplaintStateRequest::setMidocoComplaintState()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoComplaintStateDTO $midocoComplaintState
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoComplaintStateDTO $midocoComplaintState
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoComplaintStateDTO $midocoComplaintState = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoComplaintStateDTO $midocoComplaintState = null)
     {
         $this
             ->setMidocoComplaintState($midocoComplaintState);
     }
     /**
      * Get MidocoComplaintState value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoComplaintStateDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoComplaintStateDTO|null
      */
-    public function getMidocoComplaintState(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoComplaintStateDTO
+    public function getMidocoComplaintState(): ?\Pggns\MidocoApi\Crm\StructType\MidocoComplaintStateDTO
     {
         return $this->MidocoComplaintState;
     }
     /**
      * Set MidocoComplaintState value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoComplaintStateDTO $midocoComplaintState
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveComplaintStateRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoComplaintStateDTO $midocoComplaintState
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveComplaintStateRequest
      */
-    public function setMidocoComplaintState(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoComplaintStateDTO $midocoComplaintState = null): self
+    public function setMidocoComplaintState(?\Pggns\MidocoApi\Crm\StructType\MidocoComplaintStateDTO $midocoComplaintState = null): self
     {
         $this->MidocoComplaintState = $midocoComplaintState;
         

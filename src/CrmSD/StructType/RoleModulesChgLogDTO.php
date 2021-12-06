@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class RoleModulesChgLogDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\RoleModulesChgLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleModulesChgLogDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -102,7 +102,7 @@ class RoleModulesChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\RoleModulesChgLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleModulesChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -125,7 +125,7 @@ class RoleModulesChgLogDTO extends AbstractStructBase
     /**
      * Set modulId value
      * @param string $modulId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\RoleModulesChgLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleModulesChgLogDTO
      */
     public function setModulId(?string $modulId = null): self
     {
@@ -148,7 +148,7 @@ class RoleModulesChgLogDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\RoleModulesChgLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleModulesChgLogDTO
      */
     public function setRoleId(?int $roleId = null): self
     {
@@ -171,7 +171,7 @@ class RoleModulesChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\RoleModulesChgLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleModulesChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -194,7 +194,7 @@ class RoleModulesChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\RoleModulesChgLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleModulesChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

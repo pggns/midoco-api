@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class PaymentUploadError extends AbstractStructBase
     /**
      * Set lineNo value
      * @param int $lineNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentUploadError
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentUploadError
      */
     public function setLineNo(?int $lineNo = null): self
     {
@@ -102,7 +102,7 @@ class PaymentUploadError extends AbstractStructBase
     /**
      * Set transId value
      * @param string $transId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentUploadError
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentUploadError
      */
     public function setTransId(?string $transId = null): self
     {
@@ -125,7 +125,7 @@ class PaymentUploadError extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentUploadError
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentUploadError
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -148,7 +148,7 @@ class PaymentUploadError extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentUploadError
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentUploadError
      */
     public function setName(?string $name = null): self
     {
@@ -171,7 +171,7 @@ class PaymentUploadError extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentUploadError
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentUploadError
      */
     public function setAmount(?float $amount = null): self
     {
@@ -194,7 +194,7 @@ class PaymentUploadError extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentUploadError
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentUploadError
      */
     public function setText(?string $text = null): self
     {

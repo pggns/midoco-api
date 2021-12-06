@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -88,7 +88,7 @@ class SellItemPrintRestriction extends AbstractStructBase
      * Set mustPrintSeparateFrom value
      * @throws InvalidArgumentException
      * @param int[] $mustPrintSeparateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPrintRestriction
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPrintRestriction
      */
     public function setMustPrintSeparateFrom(?array $mustPrintSeparateFrom = null): self
     {
@@ -104,7 +104,7 @@ class SellItemPrintRestriction extends AbstractStructBase
      * Add item to mustPrintSeparateFrom value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPrintRestriction
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPrintRestriction
      */
     public function addToMustPrintSeparateFrom(int $item): self
     {
@@ -154,7 +154,7 @@ class SellItemPrintRestriction extends AbstractStructBase
      * Set mustPrintWith value
      * @throws InvalidArgumentException
      * @param int[] $mustPrintWith
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPrintRestriction
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPrintRestriction
      */
     public function setMustPrintWith(?array $mustPrintWith = null): self
     {
@@ -170,7 +170,7 @@ class SellItemPrintRestriction extends AbstractStructBase
      * Add item to mustPrintWith value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPrintRestriction
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPrintRestriction
      */
     public function addToMustPrintWith(int $item): self
     {
@@ -193,7 +193,7 @@ class SellItemPrintRestriction extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPrintRestriction
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPrintRestriction
      */
     public function setItemId(?int $itemId = null): self
     {

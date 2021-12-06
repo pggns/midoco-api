@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,16 +18,16 @@ class GetGroupAdvisorInfoResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo[]
      */
     protected ?array $GroupAdvisorInfo = null;
     /**
      * The GroupAdvisorInfoSum
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo $GroupAdvisorInfoSum = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo $GroupAdvisorInfoSum = null;
     /**
      * The noOfResults
      * @var int|null
@@ -38,11 +38,11 @@ class GetGroupAdvisorInfoResponse extends AbstractStructBase
      * @uses GetGroupAdvisorInfoResponse::setGroupAdvisorInfo()
      * @uses GetGroupAdvisorInfoResponse::setGroupAdvisorInfoSum()
      * @uses GetGroupAdvisorInfoResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo[] $groupAdvisorInfo
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo $groupAdvisorInfoSum
+     * @param \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo[] $groupAdvisorInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo $groupAdvisorInfoSum
      * @param int $noOfResults
      */
-    public function __construct(?array $groupAdvisorInfo = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo $groupAdvisorInfoSum = null, ?int $noOfResults = null)
+    public function __construct(?array $groupAdvisorInfo = null, ?\Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo $groupAdvisorInfoSum = null, ?int $noOfResults = null)
     {
         $this
             ->setGroupAdvisorInfo($groupAdvisorInfo)
@@ -51,7 +51,7 @@ class GetGroupAdvisorInfoResponse extends AbstractStructBase
     }
     /**
      * Get GroupAdvisorInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo[]
      */
     public function getGroupAdvisorInfo(): ?array
     {
@@ -72,12 +72,12 @@ class GetGroupAdvisorInfoResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getGroupAdvisorInfoResponseGroupAdvisorInfoItem) {
             // validation for constraint: itemType
-            if (!$getGroupAdvisorInfoResponseGroupAdvisorInfoItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo) {
+            if (!$getGroupAdvisorInfoResponseGroupAdvisorInfoItem instanceof \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo) {
                 $invalidValues[] = is_object($getGroupAdvisorInfoResponseGroupAdvisorInfoItem) ? get_class($getGroupAdvisorInfoResponseGroupAdvisorInfoItem) : sprintf('%s(%s)', gettype($getGroupAdvisorInfoResponseGroupAdvisorInfoItem), var_export($getGroupAdvisorInfoResponseGroupAdvisorInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The GroupAdvisorInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The GroupAdvisorInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -86,8 +86,8 @@ class GetGroupAdvisorInfoResponse extends AbstractStructBase
     /**
      * Set GroupAdvisorInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo[] $groupAdvisorInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetGroupAdvisorInfoResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo[] $groupAdvisorInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetGroupAdvisorInfoResponse
      */
     public function setGroupAdvisorInfo(?array $groupAdvisorInfo = null): self
     {
@@ -102,14 +102,14 @@ class GetGroupAdvisorInfoResponse extends AbstractStructBase
     /**
      * Add item to GroupAdvisorInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetGroupAdvisorInfoResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetGroupAdvisorInfoResponse
      */
-    public function addToGroupAdvisorInfo(\Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo $item): self
+    public function addToGroupAdvisorInfo(\Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo) {
-            throw new InvalidArgumentException(sprintf('The GroupAdvisorInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo) {
+            throw new InvalidArgumentException(sprintf('The GroupAdvisorInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->GroupAdvisorInfo[] = $item;
         
@@ -117,18 +117,18 @@ class GetGroupAdvisorInfoResponse extends AbstractStructBase
     }
     /**
      * Get GroupAdvisorInfoSum value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo|null
      */
-    public function getGroupAdvisorInfoSum(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo
+    public function getGroupAdvisorInfoSum(): ?\Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo
     {
         return $this->GroupAdvisorInfoSum;
     }
     /**
      * Set GroupAdvisorInfoSum value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo $groupAdvisorInfoSum
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetGroupAdvisorInfoResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo $groupAdvisorInfoSum
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetGroupAdvisorInfoResponse
      */
-    public function setGroupAdvisorInfoSum(?\Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo $groupAdvisorInfoSum = null): self
+    public function setGroupAdvisorInfoSum(?\Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo $groupAdvisorInfoSum = null): self
     {
         $this->GroupAdvisorInfoSum = $groupAdvisorInfoSum;
         
@@ -145,7 +145,7 @@ class GetGroupAdvisorInfoResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetGroupAdvisorInfoResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetGroupAdvisorInfoResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class LetterTemplateDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LetterTemplateDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LetterTemplateDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -94,7 +94,7 @@ class LetterTemplateDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LetterTemplateDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LetterTemplateDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -117,7 +117,7 @@ class LetterTemplateDTO extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LetterTemplateDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LetterTemplateDTO
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -140,7 +140,7 @@ class LetterTemplateDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LetterTemplateDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LetterTemplateDTO
      */
     public function setName(?string $name = null): self
     {
@@ -163,7 +163,7 @@ class LetterTemplateDTO extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LetterTemplateDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LetterTemplateDTO
      */
     public function setText(?string $text = null): self
     {

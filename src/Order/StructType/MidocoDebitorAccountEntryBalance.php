@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitorAccountEntryBalance
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitorAccountEntryBalance
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -142,7 +142,7 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitorAccountEntryBalance
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitorAccountEntryBalance
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -165,7 +165,7 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
     /**
      * Set invoicedAmount value
      * @param float $invoicedAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitorAccountEntryBalance
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitorAccountEntryBalance
      */
     public function setInvoicedAmount(?float $invoicedAmount = null): self
     {
@@ -188,7 +188,7 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
     /**
      * Set openAmount value
      * @param float $openAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitorAccountEntryBalance
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitorAccountEntryBalance
      */
     public function setOpenAmount(?float $openAmount = null): self
     {
@@ -211,7 +211,7 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitorAccountEntryBalance
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitorAccountEntryBalance
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -234,7 +234,7 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
     /**
      * Set accountType value
      * @param string $accountType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitorAccountEntryBalance
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitorAccountEntryBalance
      */
     public function setAccountType(?string $accountType = null): self
     {
@@ -257,7 +257,7 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
     /**
      * Set originalPaidAmount value
      * @param float $originalPaidAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitorAccountEntryBalance
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitorAccountEntryBalance
      */
     public function setOriginalPaidAmount(?float $originalPaidAmount = null): self
     {
@@ -280,7 +280,7 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
     /**
      * Set originalInvoicedAmount value
      * @param float $originalInvoicedAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitorAccountEntryBalance
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitorAccountEntryBalance
      */
     public function setOriginalInvoicedAmount(?float $originalInvoicedAmount = null): self
     {
@@ -303,7 +303,7 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
     /**
      * Set originalOpenAmount value
      * @param float $originalOpenAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitorAccountEntryBalance
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitorAccountEntryBalance
      */
     public function setOriginalOpenAmount(?float $originalOpenAmount = null): self
     {
@@ -326,7 +326,7 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitorAccountEntryBalance
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitorAccountEntryBalance
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -349,7 +349,7 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitorAccountEntryBalance
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitorAccountEntryBalance
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {

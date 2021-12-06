@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetTravelNumberVatSchemasResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTravelNumberVatSchema
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatSchemaDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\TravelNumberVatSchemaDTO[]
      */
     protected ?array $MidocoTravelNumberVatSchema = null;
     /**
      * Constructor method for GetTravelNumberVatSchemasResponse
      * @uses GetTravelNumberVatSchemasResponse::setMidocoTravelNumberVatSchema()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatSchemaDTO[] $midocoTravelNumberVatSchema
+     * @param \Pggns\MidocoApi\Documents\StructType\TravelNumberVatSchemaDTO[] $midocoTravelNumberVatSchema
      */
     public function __construct(?array $midocoTravelNumberVatSchema = null)
     {
@@ -34,7 +34,7 @@ class GetTravelNumberVatSchemasResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTravelNumberVatSchema value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatSchemaDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberVatSchemaDTO[]
      */
     public function getMidocoTravelNumberVatSchema(): ?array
     {
@@ -55,12 +55,12 @@ class GetTravelNumberVatSchemasResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTravelNumberVatSchemasResponseMidocoTravelNumberVatSchemaItem) {
             // validation for constraint: itemType
-            if (!$getTravelNumberVatSchemasResponseMidocoTravelNumberVatSchemaItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatSchemaDTO) {
+            if (!$getTravelNumberVatSchemasResponseMidocoTravelNumberVatSchemaItem instanceof \Pggns\MidocoApi\Documents\StructType\TravelNumberVatSchemaDTO) {
                 $invalidValues[] = is_object($getTravelNumberVatSchemasResponseMidocoTravelNumberVatSchemaItem) ? get_class($getTravelNumberVatSchemasResponseMidocoTravelNumberVatSchemaItem) : sprintf('%s(%s)', gettype($getTravelNumberVatSchemasResponseMidocoTravelNumberVatSchemaItem), var_export($getTravelNumberVatSchemasResponseMidocoTravelNumberVatSchemaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTravelNumberVatSchema property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatSchemaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTravelNumberVatSchema property can only contain items of type \Pggns\MidocoApi\Documents\StructType\TravelNumberVatSchemaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetTravelNumberVatSchemasResponse extends AbstractStructBase
     /**
      * Set MidocoTravelNumberVatSchema value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatSchemaDTO[] $midocoTravelNumberVatSchema
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetTravelNumberVatSchemasResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\TravelNumberVatSchemaDTO[] $midocoTravelNumberVatSchema
+     * @return \Pggns\MidocoApi\Documents\StructType\GetTravelNumberVatSchemasResponse
      */
     public function setMidocoTravelNumberVatSchema(?array $midocoTravelNumberVatSchema = null): self
     {
@@ -85,14 +85,14 @@ class GetTravelNumberVatSchemasResponse extends AbstractStructBase
     /**
      * Add item to MidocoTravelNumberVatSchema value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatSchemaDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetTravelNumberVatSchemasResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\TravelNumberVatSchemaDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetTravelNumberVatSchemasResponse
      */
-    public function addToMidocoTravelNumberVatSchema(\Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatSchemaDTO $item): self
+    public function addToMidocoTravelNumberVatSchema(\Pggns\MidocoApi\Documents\StructType\TravelNumberVatSchemaDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatSchemaDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoTravelNumberVatSchema property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberVatSchemaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\TravelNumberVatSchemaDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelNumberVatSchema property can only contain items of type \Pggns\MidocoApi\Documents\StructType\TravelNumberVatSchemaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTravelNumberVatSchema[] = $item;
         

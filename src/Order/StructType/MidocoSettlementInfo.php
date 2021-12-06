@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoSettlementInfo extends MediatorSettlementDTO
     /**
      * Set mediatorName value
      * @param string $mediatorName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo
      */
     public function setMediatorName(?string $mediatorName = null): self
     {
@@ -94,7 +94,7 @@ class MidocoSettlementInfo extends MediatorSettlementDTO
     /**
      * Set creatingUserName value
      * @param string $creatingUserName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo
      */
     public function setCreatingUserName(?string $creatingUserName = null): self
     {
@@ -117,7 +117,7 @@ class MidocoSettlementInfo extends MediatorSettlementDTO
     /**
      * Set creditDocRepositoryId value
      * @param int $creditDocRepositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo
      */
     public function setCreditDocRepositoryId(?int $creditDocRepositoryId = null): self
     {
@@ -140,7 +140,7 @@ class MidocoSettlementInfo extends MediatorSettlementDTO
     /**
      * Set debitDocRepositoryId value
      * @param int $debitDocRepositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo
      */
     public function setDebitDocRepositoryId(?int $debitDocRepositoryId = null): self
     {
@@ -163,7 +163,7 @@ class MidocoSettlementInfo extends MediatorSettlementDTO
     /**
      * Set detailsDocRepositoryId value
      * @param int $detailsDocRepositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo
      */
     public function setDetailsDocRepositoryId(?int $detailsDocRepositoryId = null): self
     {

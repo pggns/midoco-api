@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetOrgunitsForMidocoRuleSetResponse extends AbstractStructBase
      * The MidocoOrgunit
      * Meta information extracted from the WSDL
      * - ref: system:MidocoOrgunit
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\OrgunitDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\OrgunitDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\OrgunitDTO $MidocoOrgunit = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\OrgunitDTO $MidocoOrgunit = null;
     /**
      * Constructor method for GetOrgunitsForMidocoRuleSetResponse
      * @uses GetOrgunitsForMidocoRuleSetResponse::setMidocoOrgunit()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\OrgunitDTO $midocoOrgunit
+     * @param \Pggns\MidocoApi\Orderlists\StructType\OrgunitDTO $midocoOrgunit
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\OrgunitDTO $midocoOrgunit = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\OrgunitDTO $midocoOrgunit = null)
     {
         $this
             ->setMidocoOrgunit($midocoOrgunit);
     }
     /**
      * Get MidocoOrgunit value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrgunitDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrgunitDTO|null
      */
-    public function getMidocoOrgunit(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\OrgunitDTO
+    public function getMidocoOrgunit(): ?\Pggns\MidocoApi\Orderlists\StructType\OrgunitDTO
     {
         return $this->MidocoOrgunit;
     }
     /**
      * Set MidocoOrgunit value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\OrgunitDTO $midocoOrgunit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetOrgunitsForMidocoRuleSetResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\OrgunitDTO $midocoOrgunit
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetOrgunitsForMidocoRuleSetResponse
      */
-    public function setMidocoOrgunit(?\Pggns\MidocoApi\Api\Orderlists\StructType\OrgunitDTO $midocoOrgunit = null): self
+    public function setMidocoOrgunit(?\Pggns\MidocoApi\Orderlists\StructType\OrgunitDTO $midocoOrgunit = null): self
     {
         $this->MidocoOrgunit = $midocoOrgunit;
         

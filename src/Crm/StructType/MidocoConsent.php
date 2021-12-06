@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -88,7 +88,7 @@ class MidocoConsent extends ConsentDTO
      * Set disabledUnitName value
      * @throws InvalidArgumentException
      * @param string[] $disabledUnitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoConsent
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoConsent
      */
     public function setDisabledUnitName(?array $disabledUnitName = null): self
     {
@@ -104,7 +104,7 @@ class MidocoConsent extends ConsentDTO
      * Add item to disabledUnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoConsent
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoConsent
      */
     public function addToDisabledUnitName(string $item): self
     {
@@ -154,7 +154,7 @@ class MidocoConsent extends ConsentDTO
      * Set enabledUnitName value
      * @throws InvalidArgumentException
      * @param string[] $enabledUnitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoConsent
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoConsent
      */
     public function setEnabledUnitName(?array $enabledUnitName = null): self
     {
@@ -170,7 +170,7 @@ class MidocoConsent extends ConsentDTO
      * Add item to enabledUnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoConsent
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoConsent
      */
     public function addToEnabledUnitName(string $item): self
     {
@@ -193,7 +193,7 @@ class MidocoConsent extends ConsentDTO
     /**
      * Set displayText value
      * @param string $displayText
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoConsent
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoConsent
      */
     public function setDisplayText(?string $displayText = null): self
     {

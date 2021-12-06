@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetAirportCountryRequest extends AbstractStructBase
     /**
      * Set airportCode value
      * @param string $airportCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportCountryRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportCountryRequest
      */
     public function setAirportCode(string $airportCode): self
     {

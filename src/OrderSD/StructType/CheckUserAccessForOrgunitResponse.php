@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CheckUserAccessForOrgunitResponse extends AbstractStructBase
     /**
      * Set hasAccess value
      * @param bool $hasAccess
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CheckUserAccessForOrgunitResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CheckUserAccessForOrgunitResponse
      */
     public function setHasAccess(?bool $hasAccess = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteDocumentNatureDescriptionRequest extends AbstractStructBase
      * The MidocoDocumentNatureDescription
      * Meta information extracted from the WSDL
      * - ref: MidocoDocumentNatureDescription
-     * @var \Pggns\MidocoApi\Api\System\StructType\MidocoDocumentNatureDescriptionType|null
+     * @var \Pggns\MidocoApi\System\StructType\MidocoDocumentNatureDescriptionType|null
      */
-    protected ?\Pggns\MidocoApi\Api\System\StructType\MidocoDocumentNatureDescriptionType $MidocoDocumentNatureDescription = null;
+    protected ?\Pggns\MidocoApi\System\StructType\MidocoDocumentNatureDescriptionType $MidocoDocumentNatureDescription = null;
     /**
      * Constructor method for DeleteDocumentNatureDescriptionRequest
      * @uses DeleteDocumentNatureDescriptionRequest::setMidocoDocumentNatureDescription()
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoDocumentNatureDescriptionType $midocoDocumentNatureDescription
+     * @param \Pggns\MidocoApi\System\StructType\MidocoDocumentNatureDescriptionType $midocoDocumentNatureDescription
      */
-    public function __construct(?\Pggns\MidocoApi\Api\System\StructType\MidocoDocumentNatureDescriptionType $midocoDocumentNatureDescription = null)
+    public function __construct(?\Pggns\MidocoApi\System\StructType\MidocoDocumentNatureDescriptionType $midocoDocumentNatureDescription = null)
     {
         $this
             ->setMidocoDocumentNatureDescription($midocoDocumentNatureDescription);
     }
     /**
      * Get MidocoDocumentNatureDescription value
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoDocumentNatureDescriptionType|null
+     * @return \Pggns\MidocoApi\System\StructType\MidocoDocumentNatureDescriptionType|null
      */
-    public function getMidocoDocumentNatureDescription(): ?\Pggns\MidocoApi\Api\System\StructType\MidocoDocumentNatureDescriptionType
+    public function getMidocoDocumentNatureDescription(): ?\Pggns\MidocoApi\System\StructType\MidocoDocumentNatureDescriptionType
     {
         return $this->MidocoDocumentNatureDescription;
     }
     /**
      * Set MidocoDocumentNatureDescription value
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoDocumentNatureDescriptionType $midocoDocumentNatureDescription
-     * @return \Pggns\MidocoApi\Api\System\StructType\DeleteDocumentNatureDescriptionRequest
+     * @param \Pggns\MidocoApi\System\StructType\MidocoDocumentNatureDescriptionType $midocoDocumentNatureDescription
+     * @return \Pggns\MidocoApi\System\StructType\DeleteDocumentNatureDescriptionRequest
      */
-    public function setMidocoDocumentNatureDescription(?\Pggns\MidocoApi\Api\System\StructType\MidocoDocumentNatureDescriptionType $midocoDocumentNatureDescription = null): self
+    public function setMidocoDocumentNatureDescription(?\Pggns\MidocoApi\System\StructType\MidocoDocumentNatureDescriptionType $midocoDocumentNatureDescription = null): self
     {
         $this->MidocoDocumentNatureDescription = $midocoDocumentNatureDescription;
         

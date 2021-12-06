@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MidocoSalesListsBySupplierType extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierType
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -134,7 +134,7 @@ class MidocoSalesListsBySupplierType extends AbstractStructBase
     /**
      * Set saleAmount value
      * @param float $saleAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierType
      */
     public function setSaleAmount(?float $saleAmount = null): self
     {
@@ -157,7 +157,7 @@ class MidocoSalesListsBySupplierType extends AbstractStructBase
     /**
      * Set percentage value
      * @param float $percentage
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierType
      */
     public function setPercentage(?float $percentage = null): self
     {
@@ -180,7 +180,7 @@ class MidocoSalesListsBySupplierType extends AbstractStructBase
     /**
      * Set paxCount value
      * @param int $paxCount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierType
      */
     public function setPaxCount(?int $paxCount = null): self
     {
@@ -203,7 +203,7 @@ class MidocoSalesListsBySupplierType extends AbstractStructBase
     /**
      * Set saleAmountPerPax value
      * @param float $saleAmountPerPax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierType
      */
     public function setSaleAmountPerPax(?float $saleAmountPerPax = null): self
     {
@@ -226,7 +226,7 @@ class MidocoSalesListsBySupplierType extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierType
      */
     public function setStatus(?string $status = null): self
     {
@@ -249,7 +249,7 @@ class MidocoSalesListsBySupplierType extends AbstractStructBase
     /**
      * Set contributionMargin value
      * @param float $contributionMargin
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierType
      */
     public function setContributionMargin(?float $contributionMargin = null): self
     {
@@ -272,7 +272,7 @@ class MidocoSalesListsBySupplierType extends AbstractStructBase
     /**
      * Set netSaleAmount value
      * @param float $netSaleAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierType
      */
     public function setNetSaleAmount(?float $netSaleAmount = null): self
     {
@@ -295,7 +295,7 @@ class MidocoSalesListsBySupplierType extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierType
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -318,7 +318,7 @@ class MidocoSalesListsBySupplierType extends AbstractStructBase
     /**
      * Set alternativeUnitName value
      * @param string $alternativeUnitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierType
      */
     public function setAlternativeUnitName(?string $alternativeUnitName = null): self
     {

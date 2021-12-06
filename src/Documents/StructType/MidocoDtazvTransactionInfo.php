@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class MidocoDtazvTransactionInfo extends AbstractStructBase
     /**
      * Set nationalBankNotification value
      * @param bool $nationalBankNotification
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
      */
     public function setNationalBankNotification(?bool $nationalBankNotification = null): self
     {
@@ -158,7 +158,7 @@ class MidocoDtazvTransactionInfo extends AbstractStructBase
     /**
      * Set firmCode value
      * @param string $firmCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
      */
     public function setFirmCode(?string $firmCode = null): self
     {
@@ -181,7 +181,7 @@ class MidocoDtazvTransactionInfo extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
      */
     public function setPhone(?string $phone = null): self
     {
@@ -204,7 +204,7 @@ class MidocoDtazvTransactionInfo extends AbstractStructBase
     /**
      * Set nationalBankKey value
      * @param string $nationalBankKey
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
      */
     public function setNationalBankKey(?string $nationalBankKey = null): self
     {
@@ -227,7 +227,7 @@ class MidocoDtazvTransactionInfo extends AbstractStructBase
     /**
      * Set bankNotificationCode value
      * @param string $bankNotificationCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
      */
     public function setBankNotificationCode(?string $bankNotificationCode = null): self
     {
@@ -250,7 +250,7 @@ class MidocoDtazvTransactionInfo extends AbstractStructBase
     /**
      * Set bankNotificationInvoiceType value
      * @param string $bankNotificationInvoiceType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
      */
     public function setBankNotificationInvoiceType(?string $bankNotificationInvoiceType = null): self
     {
@@ -273,7 +273,7 @@ class MidocoDtazvTransactionInfo extends AbstractStructBase
     /**
      * Set bankNotificationPurposeText value
      * @param string $bankNotificationPurposeText
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
      */
     public function setBankNotificationPurposeText(?string $bankNotificationPurposeText = null): self
     {
@@ -296,7 +296,7 @@ class MidocoDtazvTransactionInfo extends AbstractStructBase
     /**
      * Set bankTransferType value
      * @param string $bankTransferType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
      */
     public function setBankTransferType(?string $bankTransferType = null): self
     {
@@ -319,7 +319,7 @@ class MidocoDtazvTransactionInfo extends AbstractStructBase
     /**
      * Set bankTransferFees value
      * @param string $bankTransferFees
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
      */
     public function setBankTransferFees(?string $bankTransferFees = null): self
     {
@@ -342,7 +342,7 @@ class MidocoDtazvTransactionInfo extends AbstractStructBase
     /**
      * Set bankTransferInstrKey1 value
      * @param string $bankTransferInstrKey1
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
      */
     public function setBankTransferInstrKey1(?string $bankTransferInstrKey1 = null): self
     {
@@ -365,7 +365,7 @@ class MidocoDtazvTransactionInfo extends AbstractStructBase
     /**
      * Set bankTransferInstrKey2 value
      * @param string $bankTransferInstrKey2
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
      */
     public function setBankTransferInstrKey2(?string $bankTransferInstrKey2 = null): self
     {
@@ -388,7 +388,7 @@ class MidocoDtazvTransactionInfo extends AbstractStructBase
     /**
      * Set bankTransferInstrKey3 value
      * @param string $bankTransferInstrKey3
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
      */
     public function setBankTransferInstrKey3(?string $bankTransferInstrKey3 = null): self
     {
@@ -411,7 +411,7 @@ class MidocoDtazvTransactionInfo extends AbstractStructBase
     /**
      * Set bankTransferInstrKey4 value
      * @param string $bankTransferInstrKey4
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
      */
     public function setBankTransferInstrKey4(?string $bankTransferInstrKey4 = null): self
     {

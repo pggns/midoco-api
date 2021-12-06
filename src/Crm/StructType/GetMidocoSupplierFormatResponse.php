@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetMidocoSupplierFormatResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoSupplierReportFormat
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\SupplierReportFormatDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\SupplierReportFormatDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\SupplierReportFormatDTO $MidocoSupplierReportFormat = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\SupplierReportFormatDTO $MidocoSupplierReportFormat = null;
     /**
      * Constructor method for GetMidocoSupplierFormatResponse
      * @uses GetMidocoSupplierFormatResponse::setMidocoSupplierReportFormat()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SupplierReportFormatDTO $midocoSupplierReportFormat
+     * @param \Pggns\MidocoApi\Crm\StructType\SupplierReportFormatDTO $midocoSupplierReportFormat
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\SupplierReportFormatDTO $midocoSupplierReportFormat = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\SupplierReportFormatDTO $midocoSupplierReportFormat = null)
     {
         $this
             ->setMidocoSupplierReportFormat($midocoSupplierReportFormat);
     }
     /**
      * Get MidocoSupplierReportFormat value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SupplierReportFormatDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\SupplierReportFormatDTO|null
      */
-    public function getMidocoSupplierReportFormat(): ?\Pggns\MidocoApi\Api\Crm\StructType\SupplierReportFormatDTO
+    public function getMidocoSupplierReportFormat(): ?\Pggns\MidocoApi\Crm\StructType\SupplierReportFormatDTO
     {
         return $this->MidocoSupplierReportFormat;
     }
     /**
      * Set MidocoSupplierReportFormat value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SupplierReportFormatDTO $midocoSupplierReportFormat
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMidocoSupplierFormatResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\SupplierReportFormatDTO $midocoSupplierReportFormat
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMidocoSupplierFormatResponse
      */
-    public function setMidocoSupplierReportFormat(?\Pggns\MidocoApi\Api\Crm\StructType\SupplierReportFormatDTO $midocoSupplierReportFormat = null): self
+    public function setMidocoSupplierReportFormat(?\Pggns\MidocoApi\Crm\StructType\SupplierReportFormatDTO $midocoSupplierReportFormat = null): self
     {
         $this->MidocoSupplierReportFormat = $midocoSupplierReportFormat;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\ServiceType;
+namespace Pggns\MidocoApi\Mis\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class _Print extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Mis\ServiceType\_Print
+     * @return \Pggns\MidocoApi\Mis\ServiceType\_Print
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class _Print extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\PrintTemplateTextForCustomerRequest $paramPrintTemplateTextForCustomerRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PrintTemplateTextForCustomerResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\PrintTemplateTextForCustomerRequest $paramPrintTemplateTextForCustomerRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\PrintTemplateTextForCustomerResponse|bool
      */
-    public function printTemplateTextForCustomer(\Pggns\MidocoApi\Api\Mis\StructType\PrintTemplateTextForCustomerRequest $paramPrintTemplateTextForCustomerRequest)
+    public function printTemplateTextForCustomer(\Pggns\MidocoApi\Mis\StructType\PrintTemplateTextForCustomerRequest $paramPrintTemplateTextForCustomerRequest)
     {
         try {
             $this->setResult($resultPrintTemplateTextForCustomer = $this->getSoapClient()->__soapCall('printTemplateTextForCustomer', [
@@ -56,7 +56,7 @@ class _Print extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PrintTemplateTextForCustomerResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\PrintTemplateTextForCustomerResponse
      */
     public function getResult()
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetJobFunctionRequest extends AbstractStructBase
      * The MidocoJobFunction
      * Meta information extracted from the WSDL
      * - ref: MidocoJobFunction
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\JobFunctionDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\JobFunctionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\JobFunctionDTO $MidocoJobFunction = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\JobFunctionDTO $MidocoJobFunction = null;
     /**
      * Constructor method for GetJobFunctionRequest
      * @uses GetJobFunctionRequest::setMidocoJobFunction()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\JobFunctionDTO $midocoJobFunction
+     * @param \Pggns\MidocoApi\Crm\StructType\JobFunctionDTO $midocoJobFunction
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\JobFunctionDTO $midocoJobFunction = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\JobFunctionDTO $midocoJobFunction = null)
     {
         $this
             ->setMidocoJobFunction($midocoJobFunction);
     }
     /**
      * Get MidocoJobFunction value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\JobFunctionDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\JobFunctionDTO|null
      */
-    public function getMidocoJobFunction(): ?\Pggns\MidocoApi\Api\Crm\StructType\JobFunctionDTO
+    public function getMidocoJobFunction(): ?\Pggns\MidocoApi\Crm\StructType\JobFunctionDTO
     {
         return $this->MidocoJobFunction;
     }
     /**
      * Set MidocoJobFunction value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\JobFunctionDTO $midocoJobFunction
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetJobFunctionRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\JobFunctionDTO $midocoJobFunction
+     * @return \Pggns\MidocoApi\Crm\StructType\GetJobFunctionRequest
      */
-    public function setMidocoJobFunction(?\Pggns\MidocoApi\Api\Crm\StructType\JobFunctionDTO $midocoJobFunction = null): self
+    public function setMidocoJobFunction(?\Pggns\MidocoApi\Crm\StructType\JobFunctionDTO $midocoJobFunction = null): self
     {
         $this->MidocoJobFunction = $midocoJobFunction;
         

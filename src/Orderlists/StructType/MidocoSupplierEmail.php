@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class MidocoSupplierEmail extends MidocoEmailType
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierEmail
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierEmail
      */
     public function setTravelType(string $travelType): self
     {

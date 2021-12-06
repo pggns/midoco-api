@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class CrmHistoryDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmHistoryDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmHistoryDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -134,7 +134,7 @@ class CrmHistoryDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmHistoryDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmHistoryDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -157,7 +157,7 @@ class CrmHistoryDTO extends AbstractStructBase
     /**
      * Set historyId value
      * @param int $historyId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmHistoryDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmHistoryDTO
      */
     public function setHistoryId(?int $historyId = null): self
     {
@@ -180,7 +180,7 @@ class CrmHistoryDTO extends AbstractStructBase
     /**
      * Set historyRefId value
      * @param string $historyRefId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmHistoryDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmHistoryDTO
      */
     public function setHistoryRefId(?string $historyRefId = null): self
     {
@@ -203,7 +203,7 @@ class CrmHistoryDTO extends AbstractStructBase
     /**
      * Set isimported value
      * @param bool $isimported
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmHistoryDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmHistoryDTO
      */
     public function setIsimported(?bool $isimported = null): self
     {
@@ -226,7 +226,7 @@ class CrmHistoryDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmHistoryDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmHistoryDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -249,7 +249,7 @@ class CrmHistoryDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmHistoryDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmHistoryDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -272,7 +272,7 @@ class CrmHistoryDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmHistoryDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmHistoryDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -295,7 +295,7 @@ class CrmHistoryDTO extends AbstractStructBase
     /**
      * Set subType value
      * @param string $subType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmHistoryDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmHistoryDTO
      */
     public function setSubType(?string $subType = null): self
     {
@@ -318,7 +318,7 @@ class CrmHistoryDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmHistoryDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmHistoryDTO
      */
     public function setType(?string $type = null): self
     {

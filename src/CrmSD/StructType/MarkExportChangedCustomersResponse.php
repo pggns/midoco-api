@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -77,7 +77,7 @@ class MarkExportChangedCustomersResponse extends AbstractStructBase
      * Set notFoundChangeId value
      * @throws InvalidArgumentException
      * @param int[] $notFoundChangeId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MarkExportChangedCustomersResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MarkExportChangedCustomersResponse
      */
     public function setNotFoundChangeId(?array $notFoundChangeId = null): self
     {
@@ -93,7 +93,7 @@ class MarkExportChangedCustomersResponse extends AbstractStructBase
      * Add item to notFoundChangeId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MarkExportChangedCustomersResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MarkExportChangedCustomersResponse
      */
     public function addToNotFoundChangeId(int $item): self
     {
@@ -116,7 +116,7 @@ class MarkExportChangedCustomersResponse extends AbstractStructBase
     /**
      * Set numEntriesMarked value
      * @param int $numEntriesMarked
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MarkExportChangedCustomersResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MarkExportChangedCustomersResponse
      */
     public function setNumEntriesMarked(?int $numEntriesMarked = null): self
     {

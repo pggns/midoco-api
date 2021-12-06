@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class KeyValue extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\KeyValue
+     * @return \Pggns\MidocoApi\Mis\StructType\KeyValue
      */
     public function setValue(?string $value = null): self
     {
@@ -70,7 +70,7 @@ class KeyValue extends AbstractStructBase
     /**
      * Set key value
      * @param string $key
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\KeyValue
+     * @return \Pggns\MidocoApi\Mis\StructType\KeyValue
      */
     public function setKey(?string $key = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DumpMidocoDataCrmDTO extends AbstractStructBase
     /**
      * Set lastExport value
      * @param string $lastExport
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DumpMidocoDataCrmDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DumpMidocoDataCrmDTO
      */
     public function setLastExport(?string $lastExport = null): self
     {

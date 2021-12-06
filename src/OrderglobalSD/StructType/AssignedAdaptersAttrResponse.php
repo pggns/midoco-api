@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class AssignedAdaptersAttrResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAdapterAttr
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterAttrDTO[]
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterAttrDTO[]
      */
     protected ?array $MidocoAdapterAttr = null;
     /**
      * Constructor method for AssignedAdaptersAttrResponse
      * @uses AssignedAdaptersAttrResponse::setMidocoAdapterAttr()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterAttrDTO[] $midocoAdapterAttr
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterAttrDTO[] $midocoAdapterAttr
      */
     public function __construct(?array $midocoAdapterAttr = null)
     {
@@ -34,7 +34,7 @@ class AssignedAdaptersAttrResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAdapterAttr value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterAttrDTO[]
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterAttrDTO[]
      */
     public function getMidocoAdapterAttr(): ?array
     {
@@ -55,12 +55,12 @@ class AssignedAdaptersAttrResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $assignedAdaptersAttrResponseMidocoAdapterAttrItem) {
             // validation for constraint: itemType
-            if (!$assignedAdaptersAttrResponseMidocoAdapterAttrItem instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterAttrDTO) {
+            if (!$assignedAdaptersAttrResponseMidocoAdapterAttrItem instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterAttrDTO) {
                 $invalidValues[] = is_object($assignedAdaptersAttrResponseMidocoAdapterAttrItem) ? get_class($assignedAdaptersAttrResponseMidocoAdapterAttrItem) : sprintf('%s(%s)', gettype($assignedAdaptersAttrResponseMidocoAdapterAttrItem), var_export($assignedAdaptersAttrResponseMidocoAdapterAttrItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAdapterAttr property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterAttrDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAdapterAttr property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterAttrDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class AssignedAdaptersAttrResponse extends AbstractStructBase
     /**
      * Set MidocoAdapterAttr value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterAttrDTO[] $midocoAdapterAttr
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AssignedAdaptersAttrResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterAttrDTO[] $midocoAdapterAttr
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AssignedAdaptersAttrResponse
      */
     public function setMidocoAdapterAttr(?array $midocoAdapterAttr = null): self
     {
@@ -85,14 +85,14 @@ class AssignedAdaptersAttrResponse extends AbstractStructBase
     /**
      * Add item to MidocoAdapterAttr value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterAttrDTO $item
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AssignedAdaptersAttrResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterAttrDTO $item
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AssignedAdaptersAttrResponse
      */
-    public function addToMidocoAdapterAttr(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterAttrDTO $item): self
+    public function addToMidocoAdapterAttr(\Pggns\MidocoApi\OrderglobalSD\StructType\AdapterAttrDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterAttrDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAdapterAttr property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AdapterAttrDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterAttrDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAdapterAttr property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\AdapterAttrDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAdapterAttr[] = $item;
         

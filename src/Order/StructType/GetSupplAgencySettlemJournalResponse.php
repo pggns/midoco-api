@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSupplAgencySettlemJournalResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplAgencySettlemJournal
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemJournalDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemJournalDTO[]
      */
     protected ?array $MidocoSupplAgencySettlemJournal = null;
     /**
      * Constructor method for GetSupplAgencySettlemJournalResponse
      * @uses GetSupplAgencySettlemJournalResponse::setMidocoSupplAgencySettlemJournal()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemJournalDTO[] $midocoSupplAgencySettlemJournal
+     * @param \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemJournalDTO[] $midocoSupplAgencySettlemJournal
      */
     public function __construct(?array $midocoSupplAgencySettlemJournal = null)
     {
@@ -34,7 +34,7 @@ class GetSupplAgencySettlemJournalResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplAgencySettlemJournal value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemJournalDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemJournalDTO[]
      */
     public function getMidocoSupplAgencySettlemJournal(): ?array
     {
@@ -55,12 +55,12 @@ class GetSupplAgencySettlemJournalResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSupplAgencySettlemJournalResponseMidocoSupplAgencySettlemJournalItem) {
             // validation for constraint: itemType
-            if (!$getSupplAgencySettlemJournalResponseMidocoSupplAgencySettlemJournalItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemJournalDTO) {
+            if (!$getSupplAgencySettlemJournalResponseMidocoSupplAgencySettlemJournalItem instanceof \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemJournalDTO) {
                 $invalidValues[] = is_object($getSupplAgencySettlemJournalResponseMidocoSupplAgencySettlemJournalItem) ? get_class($getSupplAgencySettlemJournalResponseMidocoSupplAgencySettlemJournalItem) : sprintf('%s(%s)', gettype($getSupplAgencySettlemJournalResponseMidocoSupplAgencySettlemJournalItem), var_export($getSupplAgencySettlemJournalResponseMidocoSupplAgencySettlemJournalItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplAgencySettlemJournal property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemJournalDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplAgencySettlemJournal property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemJournalDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSupplAgencySettlemJournalResponse extends AbstractStructBase
     /**
      * Set MidocoSupplAgencySettlemJournal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemJournalDTO[] $midocoSupplAgencySettlemJournal
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplAgencySettlemJournalResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemJournalDTO[] $midocoSupplAgencySettlemJournal
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplAgencySettlemJournalResponse
      */
     public function setMidocoSupplAgencySettlemJournal(?array $midocoSupplAgencySettlemJournal = null): self
     {
@@ -85,14 +85,14 @@ class GetSupplAgencySettlemJournalResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplAgencySettlemJournal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemJournalDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplAgencySettlemJournalResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemJournalDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplAgencySettlemJournalResponse
      */
-    public function addToMidocoSupplAgencySettlemJournal(\Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemJournalDTO $item): self
+    public function addToMidocoSupplAgencySettlemJournal(\Pggns\MidocoApi\Order\StructType\SupplAgencySettlemJournalDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemJournalDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplAgencySettlemJournal property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemJournalDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemJournalDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplAgencySettlemJournal property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemJournalDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplAgencySettlemJournal[] = $item;
         

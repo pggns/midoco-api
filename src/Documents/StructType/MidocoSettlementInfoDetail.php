@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MidocoSettlementInfoDetail extends MediatorSettlementPosiDTO
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSettlementInfoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSettlementInfoDetail
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -134,7 +134,7 @@ class MidocoSettlementInfoDetail extends MediatorSettlementPosiDTO
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSettlementInfoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSettlementInfoDetail
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -157,7 +157,7 @@ class MidocoSettlementInfoDetail extends MediatorSettlementPosiDTO
     /**
      * Set calculatedAmount value
      * @param float $calculatedAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSettlementInfoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSettlementInfoDetail
      */
     public function setCalculatedAmount(?float $calculatedAmount = null): self
     {
@@ -180,7 +180,7 @@ class MidocoSettlementInfoDetail extends MediatorSettlementPosiDTO
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSettlementInfoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSettlementInfoDetail
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -203,7 +203,7 @@ class MidocoSettlementInfoDetail extends MediatorSettlementPosiDTO
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSettlementInfoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSettlementInfoDetail
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -226,7 +226,7 @@ class MidocoSettlementInfoDetail extends MediatorSettlementPosiDTO
     /**
      * Set noOfPersons value
      * @param int $noOfPersons
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSettlementInfoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSettlementInfoDetail
      */
     public function setNoOfPersons(?int $noOfPersons = null): self
     {
@@ -249,7 +249,7 @@ class MidocoSettlementInfoDetail extends MediatorSettlementPosiDTO
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSettlementInfoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSettlementInfoDetail
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -272,7 +272,7 @@ class MidocoSettlementInfoDetail extends MediatorSettlementPosiDTO
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSettlementInfoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSettlementInfoDetail
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -295,7 +295,7 @@ class MidocoSettlementInfoDetail extends MediatorSettlementPosiDTO
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSettlementInfoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSettlementInfoDetail
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -318,7 +318,7 @@ class MidocoSettlementInfoDetail extends MediatorSettlementPosiDTO
     /**
      * Set mediatorAffiliate value
      * @param string $mediatorAffiliate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSettlementInfoDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSettlementInfoDetail
      */
     public function setMediatorAffiliate(?string $mediatorAffiliate = null): self
     {

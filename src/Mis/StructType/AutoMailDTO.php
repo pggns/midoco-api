@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class AutoMailDTO extends AbstractStructBase
     /**
      * Set addresseeEmail value
      * @param string $addresseeEmail
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AutoMailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AutoMailDTO
      */
     public function setAddresseeEmail(?string $addresseeEmail = null): self
     {
@@ -134,7 +134,7 @@ class AutoMailDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AutoMailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AutoMailDTO
      */
     public function setId(?int $id = null): self
     {
@@ -157,7 +157,7 @@ class AutoMailDTO extends AbstractStructBase
     /**
      * Set includeSuborgunits value
      * @param bool $includeSuborgunits
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AutoMailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AutoMailDTO
      */
     public function setIncludeSuborgunits(?bool $includeSuborgunits = null): self
     {
@@ -180,7 +180,7 @@ class AutoMailDTO extends AbstractStructBase
     /**
      * Set offsetDays value
      * @param int $offsetDays
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AutoMailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AutoMailDTO
      */
     public function setOffsetDays(?int $offsetDays = null): self
     {
@@ -203,7 +203,7 @@ class AutoMailDTO extends AbstractStructBase
     /**
      * Set ruleset value
      * @param string $ruleset
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AutoMailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AutoMailDTO
      */
     public function setRuleset(?string $ruleset = null): self
     {
@@ -226,7 +226,7 @@ class AutoMailDTO extends AbstractStructBase
     /**
      * Set senderEmail value
      * @param string $senderEmail
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AutoMailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AutoMailDTO
      */
     public function setSenderEmail(?string $senderEmail = null): self
     {
@@ -249,7 +249,7 @@ class AutoMailDTO extends AbstractStructBase
     /**
      * Set subjectTemplate value
      * @param string $subjectTemplate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AutoMailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AutoMailDTO
      */
     public function setSubjectTemplate(?string $subjectTemplate = null): self
     {
@@ -272,7 +272,7 @@ class AutoMailDTO extends AbstractStructBase
     /**
      * Set templateType value
      * @param string $templateType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AutoMailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AutoMailDTO
      */
     public function setTemplateType(?string $templateType = null): self
     {
@@ -295,7 +295,7 @@ class AutoMailDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AutoMailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AutoMailDTO
      */
     public function setType(?string $type = null): self
     {
@@ -318,7 +318,7 @@ class AutoMailDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AutoMailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AutoMailDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

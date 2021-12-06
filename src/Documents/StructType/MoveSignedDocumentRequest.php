@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MoveSignedDocumentRequest extends AbstractStructBase
     /**
      * Set fromRefId value
      * @param int $fromRefId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MoveSignedDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\MoveSignedDocumentRequest
      */
     public function setFromRefId(?int $fromRefId = null): self
     {
@@ -86,7 +86,7 @@ class MoveSignedDocumentRequest extends AbstractStructBase
     /**
      * Set fromRefType value
      * @param string $fromRefType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MoveSignedDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\MoveSignedDocumentRequest
      */
     public function setFromRefType(?string $fromRefType = null): self
     {
@@ -109,7 +109,7 @@ class MoveSignedDocumentRequest extends AbstractStructBase
     /**
      * Set fromUnitName value
      * @param string $fromUnitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MoveSignedDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\MoveSignedDocumentRequest
      */
     public function setFromUnitName(?string $fromUnitName = null): self
     {
@@ -132,7 +132,7 @@ class MoveSignedDocumentRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MoveSignedDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\MoveSignedDocumentRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {

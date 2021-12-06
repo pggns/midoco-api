@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class WsIpLogDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\WsIpLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\WsIpLogDTO
      */
     public function setId(?int $id = null): self
     {
@@ -78,7 +78,7 @@ class WsIpLogDTO extends AbstractStructBase
     /**
      * Set ipAddress value
      * @param string $ipAddress
-     * @return \Pggns\MidocoApi\Api\Order\StructType\WsIpLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\WsIpLogDTO
      */
     public function setIpAddress(?string $ipAddress = null): self
     {
@@ -101,7 +101,7 @@ class WsIpLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\WsIpLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\WsIpLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SalesListByEmployeeRequest extends AbstractStructBase
      * The MidocoSalesListByEmployeeCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoSalesListByEmployeeCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType $MidocoSalesListByEmployeeCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType $MidocoSalesListByEmployeeCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SalesListByEmployeeRequest extends AbstractStructBase
      * Constructor method for SalesListByEmployeeRequest
      * @uses SalesListByEmployeeRequest::setMidocoSalesListByEmployeeCriteria()
      * @uses SalesListByEmployeeRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType $midocoSalesListByEmployeeCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType $midocoSalesListByEmployeeCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType $midocoSalesListByEmployeeCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType $midocoSalesListByEmployeeCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoSalesListByEmployeeCriteria($midocoSalesListByEmployeeCriteria)
@@ -42,18 +42,18 @@ class SalesListByEmployeeRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSalesListByEmployeeCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType|null
      */
-    public function getMidocoSalesListByEmployeeCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType
+    public function getMidocoSalesListByEmployeeCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType
     {
         return $this->MidocoSalesListByEmployeeCriteria;
     }
     /**
      * Set MidocoSalesListByEmployeeCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType $midocoSalesListByEmployeeCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByEmployeeRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType $midocoSalesListByEmployeeCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByEmployeeRequest
      */
-    public function setMidocoSalesListByEmployeeCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType $midocoSalesListByEmployeeCriteria = null): self
+    public function setMidocoSalesListByEmployeeCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByEmployeeCriteriaType $midocoSalesListByEmployeeCriteria = null): self
     {
         $this->MidocoSalesListByEmployeeCriteria = $midocoSalesListByEmployeeCriteria;
         
@@ -70,7 +70,7 @@ class SalesListByEmployeeRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByEmployeeRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByEmployeeRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

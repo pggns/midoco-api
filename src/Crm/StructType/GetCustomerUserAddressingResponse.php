@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCustomerUserAddressingResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmUserAddressing
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmUserAddressingDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmUserAddressingDTO[]
      */
     protected ?array $MidocoCrmUserAddressing = null;
     /**
      * Constructor method for GetCustomerUserAddressingResponse
      * @uses GetCustomerUserAddressingResponse::setMidocoCrmUserAddressing()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmUserAddressingDTO[] $midocoCrmUserAddressing
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmUserAddressingDTO[] $midocoCrmUserAddressing
      */
     public function __construct(?array $midocoCrmUserAddressing = null)
     {
@@ -34,7 +34,7 @@ class GetCustomerUserAddressingResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmUserAddressing value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmUserAddressingDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmUserAddressingDTO[]
      */
     public function getMidocoCrmUserAddressing(): ?array
     {
@@ -55,12 +55,12 @@ class GetCustomerUserAddressingResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCustomerUserAddressingResponseMidocoCrmUserAddressingItem) {
             // validation for constraint: itemType
-            if (!$getCustomerUserAddressingResponseMidocoCrmUserAddressingItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmUserAddressingDTO) {
+            if (!$getCustomerUserAddressingResponseMidocoCrmUserAddressingItem instanceof \Pggns\MidocoApi\Crm\StructType\CrmUserAddressingDTO) {
                 $invalidValues[] = is_object($getCustomerUserAddressingResponseMidocoCrmUserAddressingItem) ? get_class($getCustomerUserAddressingResponseMidocoCrmUserAddressingItem) : sprintf('%s(%s)', gettype($getCustomerUserAddressingResponseMidocoCrmUserAddressingItem), var_export($getCustomerUserAddressingResponseMidocoCrmUserAddressingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmUserAddressing property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmUserAddressingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmUserAddressing property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmUserAddressingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCustomerUserAddressingResponse extends AbstractStructBase
     /**
      * Set MidocoCrmUserAddressing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmUserAddressingDTO[] $midocoCrmUserAddressing
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerUserAddressingResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmUserAddressingDTO[] $midocoCrmUserAddressing
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerUserAddressingResponse
      */
     public function setMidocoCrmUserAddressing(?array $midocoCrmUserAddressing = null): self
     {
@@ -85,14 +85,14 @@ class GetCustomerUserAddressingResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmUserAddressing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmUserAddressingDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerUserAddressingResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmUserAddressingDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerUserAddressingResponse
      */
-    public function addToMidocoCrmUserAddressing(\Pggns\MidocoApi\Api\Crm\StructType\CrmUserAddressingDTO $item): self
+    public function addToMidocoCrmUserAddressing(\Pggns\MidocoApi\Crm\StructType\CrmUserAddressingDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmUserAddressingDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmUserAddressing property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmUserAddressingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CrmUserAddressingDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmUserAddressing property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmUserAddressingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmUserAddressing[] = $item;
         

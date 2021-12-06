@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MdcSettlementBillingOrderDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingOrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingOrderDTO
      */
     public function setId(?int $id = null): self
     {
@@ -110,7 +110,7 @@ class MdcSettlementBillingOrderDTO extends AbstractStructBase
     /**
      * Set mdcSettlementBillingId value
      * @param int $mdcSettlementBillingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingOrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingOrderDTO
      */
     public function setMdcSettlementBillingId(?int $mdcSettlementBillingId = null): self
     {
@@ -133,7 +133,7 @@ class MdcSettlementBillingOrderDTO extends AbstractStructBase
     /**
      * Set noOfOrders value
      * @param int $noOfOrders
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingOrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingOrderDTO
      */
     public function setNoOfOrders(?int $noOfOrders = null): self
     {
@@ -156,7 +156,7 @@ class MdcSettlementBillingOrderDTO extends AbstractStructBase
     /**
      * Set noOfPrintedInvoices value
      * @param int $noOfPrintedInvoices
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingOrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingOrderDTO
      */
     public function setNoOfPrintedInvoices(?int $noOfPrintedInvoices = null): self
     {
@@ -179,7 +179,7 @@ class MdcSettlementBillingOrderDTO extends AbstractStructBase
     /**
      * Set settlementMonth value
      * @param string $settlementMonth
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingOrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingOrderDTO
      */
     public function setSettlementMonth(?string $settlementMonth = null): self
     {
@@ -202,7 +202,7 @@ class MdcSettlementBillingOrderDTO extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingOrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingOrderDTO
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -225,7 +225,7 @@ class MdcSettlementBillingOrderDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingOrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingOrderDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

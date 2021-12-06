@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class ListUserQueriesRequest extends AbstractStructBase
     /**
      * Set queryType value
      * @param string $queryType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListUserQueriesRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListUserQueriesRequest
      */
     public function setQueryType(?string $queryType = 'B'): self
     {

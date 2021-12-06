@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class Details_price extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Details_price
+     * @return \Pggns\MidocoApi\Order\StructType\Details_price
      */
     public function setPosition(?int $position = null): self
     {
@@ -110,7 +110,7 @@ class Details_price extends AbstractStructBase
     /**
      * Set service_ref value
      * @param int $service_ref
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Details_price
+     * @return \Pggns\MidocoApi\Order\StructType\Details_price
      */
     public function setService_ref(?int $service_ref = null): self
     {
@@ -133,7 +133,7 @@ class Details_price extends AbstractStructBase
     /**
      * Set passenger_assignment value
      * @param string $passenger_assignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Details_price
+     * @return \Pggns\MidocoApi\Order\StructType\Details_price
      */
     public function setPassenger_assignment(?string $passenger_assignment = null): self
     {
@@ -156,7 +156,7 @@ class Details_price extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Details_price
+     * @return \Pggns\MidocoApi\Order\StructType\Details_price
      */
     public function setDescription(?string $description = null): self
     {
@@ -179,7 +179,7 @@ class Details_price extends AbstractStructBase
     /**
      * Set single_price value
      * @param float $single_price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Details_price
+     * @return \Pggns\MidocoApi\Order\StructType\Details_price
      */
     public function setSingle_price(?float $single_price = null): self
     {
@@ -202,7 +202,7 @@ class Details_price extends AbstractStructBase
     /**
      * Set price_multiply value
      * @param int $price_multiply
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Details_price
+     * @return \Pggns\MidocoApi\Order\StructType\Details_price
      */
     public function setPrice_multiply(?int $price_multiply = null): self
     {
@@ -225,7 +225,7 @@ class Details_price extends AbstractStructBase
     /**
      * Set total_price value
      * @param float $total_price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Details_price
+     * @return \Pggns\MidocoApi\Order\StructType\Details_price
      */
     public function setTotal_price(?float $total_price = null): self
     {

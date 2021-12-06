@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -93,7 +93,7 @@ class MidocoSupplierInvoiceListCriteria extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListCriteria
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -109,7 +109,7 @@ class MidocoSupplierInvoiceListCriteria extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListCriteria
      */
     public function addToOrgUnits(string $item): self
     {
@@ -132,7 +132,7 @@ class MidocoSupplierInvoiceListCriteria extends AbstractStructBase
     /**
      * Set createdStart value
      * @param string $createdStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListCriteria
      */
     public function setCreatedStart(?string $createdStart = null): self
     {
@@ -155,7 +155,7 @@ class MidocoSupplierInvoiceListCriteria extends AbstractStructBase
     /**
      * Set createdEnd value
      * @param string $createdEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListCriteria
      */
     public function setCreatedEnd(?string $createdEnd = null): self
     {
@@ -178,7 +178,7 @@ class MidocoSupplierInvoiceListCriteria extends AbstractStructBase
     /**
      * Set creationUserId value
      * @param int $creationUserId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListCriteria
      */
     public function setCreationUserId(?int $creationUserId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -36,7 +36,7 @@ class AddAdditionalServicesRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: mbm:AdditionalService
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AdditionalService[]
+     * @var \Pggns\MidocoApi\Order\StructType\AdditionalService[]
      */
     protected ?array $AdditionalService = null;
     /**
@@ -52,7 +52,7 @@ class AddAdditionalServicesRequest extends AbstractStructBase
      * @uses AddAdditionalServicesRequest::setUnitName()
      * @param string $supplierId
      * @param string $bookingId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalService[] $additionalService
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalService[] $additionalService
      * @param string $unitName
      */
     public function __construct(string $supplierId, string $bookingId, ?array $additionalService = null, ?string $unitName = null)
@@ -74,7 +74,7 @@ class AddAdditionalServicesRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddAdditionalServicesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AddAdditionalServicesRequest
      */
     public function setSupplierId(string $supplierId): self
     {
@@ -97,7 +97,7 @@ class AddAdditionalServicesRequest extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddAdditionalServicesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AddAdditionalServicesRequest
      */
     public function setBookingId(string $bookingId): self
     {
@@ -111,7 +111,7 @@ class AddAdditionalServicesRequest extends AbstractStructBase
     }
     /**
      * Get AdditionalService value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdditionalService[]
+     * @return \Pggns\MidocoApi\Order\StructType\AdditionalService[]
      */
     public function getAdditionalService(): ?array
     {
@@ -132,12 +132,12 @@ class AddAdditionalServicesRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $addAdditionalServicesRequestAdditionalServiceItem) {
             // validation for constraint: itemType
-            if (!$addAdditionalServicesRequestAdditionalServiceItem instanceof \Pggns\MidocoApi\Api\Order\StructType\AdditionalService) {
+            if (!$addAdditionalServicesRequestAdditionalServiceItem instanceof \Pggns\MidocoApi\Order\StructType\AdditionalService) {
                 $invalidValues[] = is_object($addAdditionalServicesRequestAdditionalServiceItem) ? get_class($addAdditionalServicesRequestAdditionalServiceItem) : sprintf('%s(%s)', gettype($addAdditionalServicesRequestAdditionalServiceItem), var_export($addAdditionalServicesRequestAdditionalServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AdditionalService property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AdditionalService, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AdditionalService property can only contain items of type \Pggns\MidocoApi\Order\StructType\AdditionalService, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -146,8 +146,8 @@ class AddAdditionalServicesRequest extends AbstractStructBase
     /**
      * Set AdditionalService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalService[] $additionalService
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddAdditionalServicesRequest
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalService[] $additionalService
+     * @return \Pggns\MidocoApi\Order\StructType\AddAdditionalServicesRequest
      */
     public function setAdditionalService(?array $additionalService = null): self
     {
@@ -162,14 +162,14 @@ class AddAdditionalServicesRequest extends AbstractStructBase
     /**
      * Add item to AdditionalService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalService $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddAdditionalServicesRequest
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalService $item
+     * @return \Pggns\MidocoApi\Order\StructType\AddAdditionalServicesRequest
      */
-    public function addToAdditionalService(\Pggns\MidocoApi\Api\Order\StructType\AdditionalService $item): self
+    public function addToAdditionalService(\Pggns\MidocoApi\Order\StructType\AdditionalService $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\AdditionalService) {
-            throw new InvalidArgumentException(sprintf('The AdditionalService property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AdditionalService, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\AdditionalService) {
+            throw new InvalidArgumentException(sprintf('The AdditionalService property can only contain items of type \Pggns\MidocoApi\Order\StructType\AdditionalService, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AdditionalService[] = $item;
         
@@ -186,7 +186,7 @@ class AddAdditionalServicesRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddAdditionalServicesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AddAdditionalServicesRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

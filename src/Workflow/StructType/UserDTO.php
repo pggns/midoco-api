@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -271,7 +271,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set allowedIps value
      * @param string $allowedIps
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setAllowedIps(?string $allowedIps = null): self
     {
@@ -294,7 +294,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set allowedWsIps value
      * @param string $allowedWsIps
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setAllowedWsIps(?string $allowedWsIps = null): self
     {
@@ -317,7 +317,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set attemptsLeft value
      * @param int $attemptsLeft
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setAttemptsLeft(?int $attemptsLeft = null): self
     {
@@ -340,7 +340,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set bonusCalculation value
      * @param bool $bonusCalculation
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setBonusCalculation(?bool $bonusCalculation = null): self
     {
@@ -363,7 +363,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -386,7 +386,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -409,7 +409,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set isManualLocked value
      * @param bool $isManualLocked
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setIsManualLocked(?bool $isManualLocked = null): self
     {
@@ -432,7 +432,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set isStrictValidation value
      * @param bool $isStrictValidation
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setIsStrictValidation(?bool $isStrictValidation = null): self
     {
@@ -455,7 +455,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set isTemporaryPassword value
      * @param bool $isTemporaryPassword
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setIsTemporaryPassword(?bool $isTemporaryPassword = null): self
     {
@@ -478,7 +478,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set lastLoginTime value
      * @param string $lastLoginTime
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setLastLoginTime(?string $lastLoginTime = null): self
     {
@@ -501,7 +501,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set lockReason value
      * @param string $lockReason
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setLockReason(?string $lockReason = null): self
     {
@@ -524,7 +524,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set locked value
      * @param bool $locked
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setLocked(?bool $locked = null): self
     {
@@ -547,7 +547,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set lockedByUser value
      * @param int $lockedByUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setLockedByUser(?int $lockedByUser = null): self
     {
@@ -570,7 +570,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set lockedTime value
      * @param string $lockedTime
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setLockedTime(?string $lockedTime = null): self
     {
@@ -593,7 +593,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set loginInteractive value
      * @param bool $loginInteractive
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setLoginInteractive(?bool $loginInteractive = null): self
     {
@@ -616,7 +616,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set modifyTime value
      * @param string $modifyTime
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setModifyTime(?string $modifyTime = null): self
     {
@@ -639,7 +639,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -662,7 +662,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set notVisible value
      * @param bool $notVisible
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setNotVisible(?bool $notVisible = null): self
     {
@@ -685,7 +685,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setPassword(?string $password = null): self
     {
@@ -708,7 +708,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set passwordDate value
      * @param string $passwordDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setPasswordDate(?string $passwordDate = null): self
     {
@@ -731,7 +731,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set passwordLevel value
      * @param int $passwordLevel
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setPasswordLevel(?int $passwordLevel = null): self
     {
@@ -754,7 +754,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set queueId value
      * @param int $queueId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setQueueId(?int $queueId = null): self
     {
@@ -777,7 +777,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set recoveryAnswer value
      * @param string $recoveryAnswer
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setRecoveryAnswer(?string $recoveryAnswer = null): self
     {
@@ -800,7 +800,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set recoveryQuestion value
      * @param int $recoveryQuestion
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setRecoveryQuestion(?int $recoveryQuestion = null): self
     {
@@ -823,7 +823,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set userEmail value
      * @param string $userEmail
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setUserEmail(?string $userEmail = null): self
     {
@@ -846,7 +846,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set userForename value
      * @param string $userForename
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setUserForename(?string $userForename = null): self
     {
@@ -869,7 +869,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setUserId(?int $userId = null): self
     {
@@ -892,7 +892,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set userLogin value
      * @param string $userLogin
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setUserLogin(?string $userLogin = null): self
     {
@@ -915,7 +915,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set userName value
      * @param string $userName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setUserName(?string $userName = null): self
     {
@@ -938,7 +938,7 @@ class UserDTO extends AbstractStructBase
     /**
      * Set wsAllowed value
      * @param bool $wsAllowed
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UserDTO
      */
     public function setWsAllowed(?bool $wsAllowed = null): self
     {

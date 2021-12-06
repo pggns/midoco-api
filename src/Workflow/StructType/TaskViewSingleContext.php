@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -27,9 +27,9 @@ class TaskViewSingleContext extends AbstractStructBase
      * The TaskOverviewCriteria
      * Meta information extracted from the WSDL
      * - ref: TaskOverviewCriteria
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria $TaskOverviewCriteria = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria $TaskOverviewCriteria = null;
     /**
      * Constructor method for TaskViewSingleContext
      * @uses TaskViewSingleContext::setName()
@@ -37,9 +37,9 @@ class TaskViewSingleContext extends AbstractStructBase
      * @uses TaskViewSingleContext::setTaskOverviewCriteria()
      * @param string $name
      * @param int $count
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria
      */
-    public function __construct(?string $name = null, ?int $count = null, ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria = null)
+    public function __construct(?string $name = null, ?int $count = null, ?\Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria = null)
     {
         $this
             ->setName($name)
@@ -57,7 +57,7 @@ class TaskViewSingleContext extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewSingleContext
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewSingleContext
      */
     public function setName(?string $name = null): self
     {
@@ -80,7 +80,7 @@ class TaskViewSingleContext extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewSingleContext
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewSingleContext
      */
     public function setCount(?int $count = null): self
     {
@@ -94,18 +94,18 @@ class TaskViewSingleContext extends AbstractStructBase
     }
     /**
      * Get TaskOverviewCriteria value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria|null
      */
-    public function getTaskOverviewCriteria(): ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+    public function getTaskOverviewCriteria(): ?\Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
     {
         return $this->TaskOverviewCriteria;
     }
     /**
      * Set TaskOverviewCriteria value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewSingleContext
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewSingleContext
      */
-    public function setTaskOverviewCriteria(?\Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria = null): self
+    public function setTaskOverviewCriteria(?\Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria = null): self
     {
         $this->TaskOverviewCriteria = $taskOverviewCriteria;
         

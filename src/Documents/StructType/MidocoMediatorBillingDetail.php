@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoMediatorBillingDetail extends MediatorBillingDetailDTO
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorBillingDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorBillingDetail
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -78,7 +78,7 @@ class MidocoMediatorBillingDetail extends MediatorBillingDetailDTO
     /**
      * Set bookingCreationDate value
      * @param string $bookingCreationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorBillingDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorBillingDetail
      */
     public function setBookingCreationDate(?string $bookingCreationDate = null): self
     {
@@ -101,7 +101,7 @@ class MidocoMediatorBillingDetail extends MediatorBillingDetailDTO
     /**
      * Set bookingStartTravelDate value
      * @param string $bookingStartTravelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorBillingDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorBillingDetail
      */
     public function setBookingStartTravelDate(?string $bookingStartTravelDate = null): self
     {

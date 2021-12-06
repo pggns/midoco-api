@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetBillingPositionsForOrderResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingPositionInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionInfoType[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionInfoType[]
      */
     protected ?array $MidocoBillingPositionInfo = null;
     /**
      * Constructor method for GetBillingPositionsForOrderResponse
      * @uses GetBillingPositionsForOrderResponse::setMidocoBillingPositionInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionInfoType[] $midocoBillingPositionInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionInfoType[] $midocoBillingPositionInfo
      */
     public function __construct(?array $midocoBillingPositionInfo = null)
     {
@@ -34,7 +34,7 @@ class GetBillingPositionsForOrderResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingPositionInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionInfoType[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionInfoType[]
      */
     public function getMidocoBillingPositionInfo(): ?array
     {
@@ -55,12 +55,12 @@ class GetBillingPositionsForOrderResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBillingPositionsForOrderResponseMidocoBillingPositionInfoItem) {
             // validation for constraint: itemType
-            if (!$getBillingPositionsForOrderResponseMidocoBillingPositionInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionInfoType) {
+            if (!$getBillingPositionsForOrderResponseMidocoBillingPositionInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionInfoType) {
                 $invalidValues[] = is_object($getBillingPositionsForOrderResponseMidocoBillingPositionInfoItem) ? get_class($getBillingPositionsForOrderResponseMidocoBillingPositionInfoItem) : sprintf('%s(%s)', gettype($getBillingPositionsForOrderResponseMidocoBillingPositionInfoItem), var_export($getBillingPositionsForOrderResponseMidocoBillingPositionInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingPositionInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingPositionInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetBillingPositionsForOrderResponse extends AbstractStructBase
     /**
      * Set MidocoBillingPositionInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionInfoType[] $midocoBillingPositionInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositionsForOrderResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionInfoType[] $midocoBillingPositionInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositionsForOrderResponse
      */
     public function setMidocoBillingPositionInfo(?array $midocoBillingPositionInfo = null): self
     {
@@ -85,14 +85,14 @@ class GetBillingPositionsForOrderResponse extends AbstractStructBase
     /**
      * Add item to MidocoBillingPositionInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionInfoType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositionsForOrderResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionInfoType $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositionsForOrderResponse
      */
-    public function addToMidocoBillingPositionInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionInfoType $item): self
+    public function addToMidocoBillingPositionInfo(\Pggns\MidocoApi\Order\StructType\MidocoBillingPositionInfoType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionInfoType) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingPositionInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionInfoType) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingPositionInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingPositionInfo[] = $item;
         

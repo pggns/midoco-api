@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class SaveMediatorRevenuesRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMediatorRevenue
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorRevenue[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue[]
      */
     protected ?array $MidocoMediatorRevenue = null;
     /**
@@ -37,7 +37,7 @@ class SaveMediatorRevenuesRequest extends AbstractStructBase
      * @uses SaveMediatorRevenuesRequest::setMidocoMediatorRevenue()
      * @uses SaveMediatorRevenuesRequest::setSupplierId()
      * @uses SaveMediatorRevenuesRequest::setSaveData()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorRevenue[] $midocoMediatorRevenue
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue[] $midocoMediatorRevenue
      * @param string $supplierId
      * @param bool $saveData
      */
@@ -50,7 +50,7 @@ class SaveMediatorRevenuesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMediatorRevenue value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorRevenue[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue[]
      */
     public function getMidocoMediatorRevenue(): ?array
     {
@@ -71,12 +71,12 @@ class SaveMediatorRevenuesRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveMediatorRevenuesRequestMidocoMediatorRevenueItem) {
             // validation for constraint: itemType
-            if (!$saveMediatorRevenuesRequestMidocoMediatorRevenueItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorRevenue) {
+            if (!$saveMediatorRevenuesRequestMidocoMediatorRevenueItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue) {
                 $invalidValues[] = is_object($saveMediatorRevenuesRequestMidocoMediatorRevenueItem) ? get_class($saveMediatorRevenuesRequestMidocoMediatorRevenueItem) : sprintf('%s(%s)', gettype($saveMediatorRevenuesRequestMidocoMediatorRevenueItem), var_export($saveMediatorRevenuesRequestMidocoMediatorRevenueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMediatorRevenue property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorRevenue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMediatorRevenue property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class SaveMediatorRevenuesRequest extends AbstractStructBase
     /**
      * Set MidocoMediatorRevenue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorRevenue[] $midocoMediatorRevenue
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMediatorRevenuesRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue[] $midocoMediatorRevenue
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorRevenuesRequest
      */
     public function setMidocoMediatorRevenue(?array $midocoMediatorRevenue = null): self
     {
@@ -101,14 +101,14 @@ class SaveMediatorRevenuesRequest extends AbstractStructBase
     /**
      * Add item to MidocoMediatorRevenue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorRevenue $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMediatorRevenuesRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorRevenuesRequest
      */
-    public function addToMidocoMediatorRevenue(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorRevenue $item): self
+    public function addToMidocoMediatorRevenue(\Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorRevenue) {
-            throw new InvalidArgumentException(sprintf('The MidocoMediatorRevenue property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorRevenue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue) {
+            throw new InvalidArgumentException(sprintf('The MidocoMediatorRevenue property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMediatorRevenue[] = $item;
         
@@ -125,7 +125,7 @@ class SaveMediatorRevenuesRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMediatorRevenuesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorRevenuesRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -148,7 +148,7 @@ class SaveMediatorRevenuesRequest extends AbstractStructBase
     /**
      * Set saveData value
      * @param bool $saveData
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMediatorRevenuesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorRevenuesRequest
      */
     public function setSaveData(?bool $saveData = null): self
     {

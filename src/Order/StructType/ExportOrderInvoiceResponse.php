@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class ExportOrderInvoiceResponse extends AbstractStructBase
     /**
      * Set InvoiceData value
      * @param string $invoiceData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportOrderInvoiceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportOrderInvoiceResponse
      */
     public function setInvoiceData(?string $invoiceData = null): self
     {
@@ -80,7 +80,7 @@ class ExportOrderInvoiceResponse extends AbstractStructBase
     /**
      * Set externDocumentId value
      * @param int $externDocumentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportOrderInvoiceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportOrderInvoiceResponse
      */
     public function setExternDocumentId(?int $externDocumentId = null): self
     {
@@ -103,7 +103,7 @@ class ExportOrderInvoiceResponse extends AbstractStructBase
     /**
      * Set dontMail value
      * @param bool $dontMail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportOrderInvoiceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportOrderInvoiceResponse
      */
     public function setDontMail(?bool $dontMail = false): self
     {

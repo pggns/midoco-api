@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveDocumentRequest extends AbstractStructBase
      * The MidocoCrmDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmDocument
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmDocumentDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmDocumentDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CrmDocumentDTO $MidocoCrmDocument = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CrmDocumentDTO $MidocoCrmDocument = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +29,10 @@ class SaveDocumentRequest extends AbstractStructBase
      * Constructor method for SaveDocumentRequest
      * @uses SaveDocumentRequest::setMidocoCrmDocument()
      * @uses SaveDocumentRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmDocumentDTO $midocoCrmDocument
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmDocumentDTO $midocoCrmDocument
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CrmDocumentDTO $midocoCrmDocument = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CrmDocumentDTO $midocoCrmDocument = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoCrmDocument($midocoCrmDocument)
@@ -40,18 +40,18 @@ class SaveDocumentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmDocument value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmDocumentDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmDocumentDTO|null
      */
-    public function getMidocoCrmDocument(): ?\Pggns\MidocoApi\Api\Crm\StructType\CrmDocumentDTO
+    public function getMidocoCrmDocument(): ?\Pggns\MidocoApi\Crm\StructType\CrmDocumentDTO
     {
         return $this->MidocoCrmDocument;
     }
     /**
      * Set MidocoCrmDocument value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmDocumentDTO $midocoCrmDocument
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveDocumentRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmDocumentDTO $midocoCrmDocument
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveDocumentRequest
      */
-    public function setMidocoCrmDocument(?\Pggns\MidocoApi\Api\Crm\StructType\CrmDocumentDTO $midocoCrmDocument = null): self
+    public function setMidocoCrmDocument(?\Pggns\MidocoApi\Crm\StructType\CrmDocumentDTO $midocoCrmDocument = null): self
     {
         $this->MidocoCrmDocument = $midocoCrmDocument;
         
@@ -68,7 +68,7 @@ class SaveDocumentRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveDocumentRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveDocumentRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

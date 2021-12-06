@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class SaveOrderAttributesRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoAttributeValue
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue[]
      */
     protected ?array $MidocoAttributeValue = null;
     /**
@@ -32,7 +32,7 @@ class SaveOrderAttributesRequest extends AbstractStructBase
      * Constructor method for SaveOrderAttributesRequest
      * @uses SaveOrderAttributesRequest::setMidocoAttributeValue()
      * @uses SaveOrderAttributesRequest::setDoUpdate()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue[] $midocoAttributeValue
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue[] $midocoAttributeValue
      * @param bool $doUpdate
      */
     public function __construct(?array $midocoAttributeValue = null, ?bool $doUpdate = null)
@@ -43,7 +43,7 @@ class SaveOrderAttributesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAttributeValue value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue[]
      */
     public function getMidocoAttributeValue(): ?array
     {
@@ -64,12 +64,12 @@ class SaveOrderAttributesRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveOrderAttributesRequestMidocoAttributeValueItem) {
             // validation for constraint: itemType
-            if (!$saveOrderAttributesRequestMidocoAttributeValueItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue) {
+            if (!$saveOrderAttributesRequestMidocoAttributeValueItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue) {
                 $invalidValues[] = is_object($saveOrderAttributesRequestMidocoAttributeValueItem) ? get_class($saveOrderAttributesRequestMidocoAttributeValueItem) : sprintf('%s(%s)', gettype($saveOrderAttributesRequestMidocoAttributeValueItem), var_export($saveOrderAttributesRequestMidocoAttributeValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAttributeValue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAttributeValue property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -78,8 +78,8 @@ class SaveOrderAttributesRequest extends AbstractStructBase
     /**
      * Set MidocoAttributeValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue[] $midocoAttributeValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderAttributesRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue[] $midocoAttributeValue
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderAttributesRequest
      */
     public function setMidocoAttributeValue(?array $midocoAttributeValue = null): self
     {
@@ -94,14 +94,14 @@ class SaveOrderAttributesRequest extends AbstractStructBase
     /**
      * Add item to MidocoAttributeValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderAttributesRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue $item
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderAttributesRequest
      */
-    public function addToMidocoAttributeValue(\Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue $item): self
+    public function addToMidocoAttributeValue(\Pggns\MidocoApi\Order\StructType\MidocoAttributeValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue) {
-            throw new InvalidArgumentException(sprintf('The MidocoAttributeValue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAttributeValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue) {
+            throw new InvalidArgumentException(sprintf('The MidocoAttributeValue property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAttributeValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAttributeValue[] = $item;
         
@@ -118,7 +118,7 @@ class SaveOrderAttributesRequest extends AbstractStructBase
     /**
      * Set doUpdate value
      * @param bool $doUpdate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderAttributesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderAttributesRequest
      */
     public function setDoUpdate(?bool $doUpdate = null): self
     {

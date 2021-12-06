@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -80,7 +80,7 @@ class MidocoAirportFullDescriptionRequest extends AbstractStructBase
      * Set AirportCode value
      * @throws InvalidArgumentException
      * @param string[] $airportCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescriptionRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAirportFullDescriptionRequest
      */
     public function setAirportCode(?array $airportCode = null): self
     {
@@ -96,7 +96,7 @@ class MidocoAirportFullDescriptionRequest extends AbstractStructBase
      * Add item to AirportCode value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescriptionRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAirportFullDescriptionRequest
      */
     public function addToAirportCode(string $item): self
     {
@@ -119,7 +119,7 @@ class MidocoAirportFullDescriptionRequest extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescriptionRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAirportFullDescriptionRequest
      */
     public function setTravelDate(?string $travelDate = null): self
     {

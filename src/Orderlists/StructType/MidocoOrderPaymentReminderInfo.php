@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class MidocoOrderPaymentReminderInfo extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentReminderInfo[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\PaymentReminderInfo[]
      */
     protected ?array $PaymentReminderInfo = null;
     /**
      * Constructor method for MidocoOrderPaymentReminderInfo
      * @uses MidocoOrderPaymentReminderInfo::setPaymentReminderInfo()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentReminderInfo[] $paymentReminderInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\PaymentReminderInfo[] $paymentReminderInfo
      */
     public function __construct(?array $paymentReminderInfo = null)
     {
@@ -33,7 +33,7 @@ class MidocoOrderPaymentReminderInfo extends AbstractStructBase
     }
     /**
      * Get PaymentReminderInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentReminderInfo[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentReminderInfo[]
      */
     public function getPaymentReminderInfo(): ?array
     {
@@ -54,12 +54,12 @@ class MidocoOrderPaymentReminderInfo extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoOrderPaymentReminderInfoPaymentReminderInfoItem) {
             // validation for constraint: itemType
-            if (!$midocoOrderPaymentReminderInfoPaymentReminderInfoItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentReminderInfo) {
+            if (!$midocoOrderPaymentReminderInfoPaymentReminderInfoItem instanceof \Pggns\MidocoApi\Orderlists\StructType\PaymentReminderInfo) {
                 $invalidValues[] = is_object($midocoOrderPaymentReminderInfoPaymentReminderInfoItem) ? get_class($midocoOrderPaymentReminderInfoPaymentReminderInfoItem) : sprintf('%s(%s)', gettype($midocoOrderPaymentReminderInfoPaymentReminderInfoItem), var_export($midocoOrderPaymentReminderInfoPaymentReminderInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The PaymentReminderInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentReminderInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The PaymentReminderInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\PaymentReminderInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class MidocoOrderPaymentReminderInfo extends AbstractStructBase
     /**
      * Set PaymentReminderInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentReminderInfo[] $paymentReminderInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderPaymentReminderInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\PaymentReminderInfo[] $paymentReminderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderPaymentReminderInfo
      */
     public function setPaymentReminderInfo(?array $paymentReminderInfo = null): self
     {
@@ -84,14 +84,14 @@ class MidocoOrderPaymentReminderInfo extends AbstractStructBase
     /**
      * Add item to PaymentReminderInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentReminderInfo $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderPaymentReminderInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\PaymentReminderInfo $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderPaymentReminderInfo
      */
-    public function addToPaymentReminderInfo(\Pggns\MidocoApi\Api\Orderlists\StructType\PaymentReminderInfo $item): self
+    public function addToPaymentReminderInfo(\Pggns\MidocoApi\Orderlists\StructType\PaymentReminderInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentReminderInfo) {
-            throw new InvalidArgumentException(sprintf('The PaymentReminderInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentReminderInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\PaymentReminderInfo) {
+            throw new InvalidArgumentException(sprintf('The PaymentReminderInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\PaymentReminderInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->PaymentReminderInfo[] = $item;
         

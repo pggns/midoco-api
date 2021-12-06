@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class GetTemplateLanguageResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmTemplateLanguage
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO $MidocoCrmTemplateLanguage = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO $MidocoCrmTemplateLanguage = null;
     /**
      * Constructor method for GetTemplateLanguageResponse
      * @uses GetTemplateLanguageResponse::setMidocoCrmTemplateLanguage()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage = null)
     {
         $this
             ->setMidocoCrmTemplateLanguage($midocoCrmTemplateLanguage);
     }
     /**
      * Get MidocoCrmTemplateLanguage value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO|null
      */
-    public function getMidocoCrmTemplateLanguage(): ?\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO
+    public function getMidocoCrmTemplateLanguage(): ?\Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO
     {
         return $this->MidocoCrmTemplateLanguage;
     }
     /**
      * Set MidocoCrmTemplateLanguage value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTemplateLanguageResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTemplateLanguageResponse
      */
-    public function setMidocoCrmTemplateLanguage(?\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage = null): self
+    public function setMidocoCrmTemplateLanguage(?\Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage = null): self
     {
         $this->MidocoCrmTemplateLanguage = $midocoCrmTemplateLanguage;
         

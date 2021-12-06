@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class SSOFacesRequest extends AbstractStructBase
     /**
      * Set relayState value
      * @param string $relayState
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SSOFacesRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SSOFacesRequest
      */
     public function setRelayState(?string $relayState = null): self
     {

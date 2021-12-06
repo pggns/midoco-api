@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -75,7 +75,7 @@ class GetSkippedBookingsRequest extends AbstractStructBase
     /**
      * Set externalSystem value
      * @param string $externalSystem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSkippedBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSkippedBookingsRequest
      */
     public function setExternalSystem(?string $externalSystem = null): self
     {
@@ -98,7 +98,7 @@ class GetSkippedBookingsRequest extends AbstractStructBase
     /**
      * Set externalId value
      * @param string $externalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSkippedBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSkippedBookingsRequest
      */
     public function setExternalId(?string $externalId = null): self
     {
@@ -121,7 +121,7 @@ class GetSkippedBookingsRequest extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSkippedBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSkippedBookingsRequest
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -144,7 +144,7 @@ class GetSkippedBookingsRequest extends AbstractStructBase
     /**
      * Set messageType value
      * @param string $messageType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSkippedBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSkippedBookingsRequest
      */
     public function setMessageType(?string $messageType = null): self
     {
@@ -167,7 +167,7 @@ class GetSkippedBookingsRequest extends AbstractStructBase
     /**
      * Set messageSubtype value
      * @param string $messageSubtype
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSkippedBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSkippedBookingsRequest
      */
     public function setMessageSubtype(?string $messageSubtype = null): self
     {

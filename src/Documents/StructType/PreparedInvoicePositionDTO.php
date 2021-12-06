@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -183,7 +183,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -206,7 +206,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -229,7 +229,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -252,7 +252,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set costUnit value
      * @param string $costUnit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setCostUnit(?string $costUnit = null): self
     {
@@ -275,7 +275,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -298,7 +298,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -321,7 +321,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -344,7 +344,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set exchangeRate value
      * @param float $exchangeRate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setExchangeRate(?float $exchangeRate = null): self
     {
@@ -367,7 +367,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set invoicePositionId value
      * @param int $invoicePositionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setInvoicePositionId(?int $invoicePositionId = null): self
     {
@@ -390,7 +390,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set isDiPayment value
      * @param bool $isDiPayment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setIsDiPayment(?bool $isDiPayment = null): self
     {
@@ -413,7 +413,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set isRevenue value
      * @param bool $isRevenue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setIsRevenue(?bool $isRevenue = null): self
     {
@@ -436,7 +436,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set isReverseCharge value
      * @param bool $isReverseCharge
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setIsReverseCharge(?bool $isReverseCharge = null): self
     {
@@ -459,7 +459,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -482,7 +482,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -505,7 +505,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -528,7 +528,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -551,7 +551,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -574,7 +574,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -597,7 +597,7 @@ class PreparedInvoicePositionDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedInvoicePositionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedInvoicePositionDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

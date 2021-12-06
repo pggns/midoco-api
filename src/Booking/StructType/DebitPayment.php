@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -140,7 +140,7 @@ class DebitPayment extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DebitPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\DebitPayment
      */
     public function setBankName(?string $bankName = null): self
     {
@@ -163,7 +163,7 @@ class DebitPayment extends AbstractStructBase
     /**
      * Set bankNumber value
      * @param string $bankNumber
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DebitPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\DebitPayment
      */
     public function setBankNumber(?string $bankNumber = null): self
     {
@@ -186,7 +186,7 @@ class DebitPayment extends AbstractStructBase
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DebitPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\DebitPayment
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -209,7 +209,7 @@ class DebitPayment extends AbstractStructBase
     /**
      * Set accountOwner value
      * @param string $accountOwner
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DebitPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\DebitPayment
      */
     public function setAccountOwner(?string $accountOwner = null): self
     {
@@ -232,7 +232,7 @@ class DebitPayment extends AbstractStructBase
     /**
      * Set bankCountry value
      * @param string $bankCountry
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DebitPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\DebitPayment
      */
     public function setBankCountry(?string $bankCountry = 'DE'): self
     {
@@ -255,7 +255,7 @@ class DebitPayment extends AbstractStructBase
     /**
      * Set isIban value
      * @param bool $isIban
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DebitPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\DebitPayment
      */
     public function setIsIban(?bool $isIban = false): self
     {
@@ -278,7 +278,7 @@ class DebitPayment extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DebitPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\DebitPayment
      */
     public function setIban(?string $iban = null): self
     {
@@ -301,7 +301,7 @@ class DebitPayment extends AbstractStructBase
     /**
      * Set swiftBicCode value
      * @param string $swiftBicCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DebitPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\DebitPayment
      */
     public function setSwiftBicCode(?string $swiftBicCode = null): self
     {
@@ -324,7 +324,7 @@ class DebitPayment extends AbstractStructBase
     /**
      * Set bankCity value
      * @param string $bankCity
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DebitPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\DebitPayment
      */
     public function setBankCity(?string $bankCity = null): self
     {
@@ -347,7 +347,7 @@ class DebitPayment extends AbstractStructBase
     /**
      * Set bankStreet value
      * @param string $bankStreet
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DebitPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\DebitPayment
      */
     public function setBankStreet(?string $bankStreet = null): self
     {
@@ -370,7 +370,7 @@ class DebitPayment extends AbstractStructBase
     /**
      * Set mandateReference value
      * @param string $mandateReference
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DebitPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\DebitPayment
      */
     public function setMandateReference(?string $mandateReference = null): self
     {

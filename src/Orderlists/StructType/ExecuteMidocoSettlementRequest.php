@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -152,17 +152,17 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     }
     /**
      * Set month value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Month::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Month::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Month::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Month::getValidValues()
      * @throws InvalidArgumentException
      * @param string $month
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setMonth(string $month): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\Month::valueIsValid($month)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\Month', is_array($month) ? implode(', ', $month) : var_export($month, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\Month::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\Month::valueIsValid($month)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\Month', is_array($month) ? implode(', ', $month) : var_export($month, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\Month::getValidValues())), __LINE__);
         }
         $this->month = $month;
         
@@ -179,7 +179,7 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -202,7 +202,7 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set accountIdNoVat value
      * @param string $accountIdNoVat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setAccountIdNoVat(?string $accountIdNoVat = null): self
     {
@@ -225,7 +225,7 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set accountIdRC value
      * @param string $accountIdRC
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setAccountIdRC(?string $accountIdRC = null): self
     {
@@ -248,7 +248,7 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set mdocAccountId value
      * @param string $mdocAccountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setMdocAccountId(?string $mdocAccountId = null): self
     {
@@ -271,7 +271,7 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set mdocAccountIdNoVat value
      * @param string $mdocAccountIdNoVat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setMdocAccountIdNoVat(?string $mdocAccountIdNoVat = null): self
     {
@@ -294,7 +294,7 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set mdocAccountIdRC value
      * @param string $mdocAccountIdRC
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setMdocAccountIdRC(?string $mdocAccountIdRC = null): self
     {
@@ -317,7 +317,7 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setDescription(?string $description = null): self
     {
@@ -340,7 +340,7 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -363,7 +363,7 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set useEmailForBilling value
      * @param bool $useEmailForBilling
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setUseEmailForBilling(?bool $useEmailForBilling = false): self
     {
@@ -386,7 +386,7 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set isPreview value
      * @param bool $isPreview
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setIsPreview(?bool $isPreview = true): self
     {
@@ -409,7 +409,7 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set allowDuplicatedSettlements value
      * @param bool $allowDuplicatedSettlements
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setAllowDuplicatedSettlements(?bool $allowDuplicatedSettlements = false): self
     {
@@ -432,7 +432,7 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set isPreviewPDF value
      * @param bool $isPreviewPDF
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setIsPreviewPDF(?bool $isPreviewPDF = false): self
     {
@@ -455,7 +455,7 @@ class ExecuteMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set orgUnitForPDFPreview value
      * @param string $orgUnitForPDFPreview
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteMidocoSettlementRequest
      */
     public function setOrgUnitForPDFPreview(?string $orgUnitForPDFPreview = null): self
     {

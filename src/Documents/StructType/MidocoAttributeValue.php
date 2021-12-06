@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoAttributeValue extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoChoiceValues
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueType[]
+     * @var \Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueType[]
      */
     protected ?array $MidocoChoiceValues = null;
     /**
@@ -109,7 +109,7 @@ class MidocoAttributeValue extends AbstractStructBase
      * @uses MidocoAttributeValue::setModifyUser()
      * @uses MidocoAttributeValue::setCreationDate()
      * @uses MidocoAttributeValue::setModifyDate()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueType[] $midocoChoiceValues
+     * @param \Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueType[] $midocoChoiceValues
      * @param int $id
      * @param string $attributeName
      * @param string $attributeValue
@@ -146,7 +146,7 @@ class MidocoAttributeValue extends AbstractStructBase
     }
     /**
      * Get MidocoChoiceValues value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueType[]
+     * @return \Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueType[]
      */
     public function getMidocoChoiceValues(): ?array
     {
@@ -167,12 +167,12 @@ class MidocoAttributeValue extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoAttributeValueMidocoChoiceValuesItem) {
             // validation for constraint: itemType
-            if (!$midocoAttributeValueMidocoChoiceValuesItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueType) {
+            if (!$midocoAttributeValueMidocoChoiceValuesItem instanceof \Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueType) {
                 $invalidValues[] = is_object($midocoAttributeValueMidocoChoiceValuesItem) ? get_class($midocoAttributeValueMidocoChoiceValuesItem) : sprintf('%s(%s)', gettype($midocoAttributeValueMidocoChoiceValuesItem), var_export($midocoAttributeValueMidocoChoiceValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoChoiceValues property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoChoiceValues property can only contain items of type \Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -181,8 +181,8 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set MidocoChoiceValues value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueType[] $midocoChoiceValues
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @param \Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueType[] $midocoChoiceValues
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setMidocoChoiceValues(?array $midocoChoiceValues = null): self
     {
@@ -197,14 +197,14 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Add item to MidocoChoiceValues value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueType $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @param \Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueType $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
-    public function addToMidocoChoiceValues(\Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueType $item): self
+    public function addToMidocoChoiceValues(\Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueType) {
-            throw new InvalidArgumentException(sprintf('The MidocoChoiceValues property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueType) {
+            throw new InvalidArgumentException(sprintf('The MidocoChoiceValues property can only contain items of type \Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoChoiceValues[] = $item;
         
@@ -221,7 +221,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setId(?int $id = null): self
     {
@@ -244,7 +244,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -267,7 +267,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set attributeValue value
      * @param string $attributeValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setAttributeValue(?string $attributeValue = null): self
     {
@@ -290,7 +290,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set attributeType value
      * @param int $attributeType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setAttributeType(?int $attributeType = null): self
     {
@@ -313,7 +313,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set localization value
      * @param string $localization
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setLocalization(?string $localization = null): self
     {
@@ -336,7 +336,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set mandatory value
      * @param bool $mandatory
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setMandatory(?bool $mandatory = null): self
     {
@@ -359,7 +359,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set defaultValue value
      * @param string $defaultValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setDefaultValue(?string $defaultValue = null): self
     {
@@ -382,7 +382,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set formatedValue value
      * @param string $formatedValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setFormatedValue(?string $formatedValue = null): self
     {
@@ -405,7 +405,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set typeLength value
      * @param int $typeLength
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setTypeLength(?int $typeLength = null): self
     {
@@ -428,7 +428,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set typePrecision value
      * @param int $typePrecision
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setTypePrecision(?int $typePrecision = null): self
     {
@@ -451,7 +451,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -474,7 +474,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -497,7 +497,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -520,7 +520,7 @@ class MidocoAttributeValue extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue
      */
     public function setModifyDate(?string $modifyDate = null): self
     {

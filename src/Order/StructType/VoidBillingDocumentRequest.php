@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class VoidBillingDocumentRequest extends AbstractStructBase
      * The MidocoBillingDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoBillingDocument
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
     /**
      * The usedDocumentNo
      * @var int|null
@@ -53,13 +53,13 @@ class VoidBillingDocumentRequest extends AbstractStructBase
      * @uses VoidBillingDocumentRequest::setFinishDocument()
      * @uses VoidBillingDocumentRequest::setCreditOnlinePayments()
      * @uses VoidBillingDocumentRequest::setVoidWithVoidPositions()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument
      * @param int $usedDocumentNo
      * @param bool $finishDocument
      * @param bool $creditOnlinePayments
      * @param bool $voidWithVoidPositions
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?int $usedDocumentNo = null, ?bool $finishDocument = true, ?bool $creditOnlinePayments = true, ?bool $voidWithVoidPositions = true)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?int $usedDocumentNo = null, ?bool $finishDocument = true, ?bool $creditOnlinePayments = true, ?bool $voidWithVoidPositions = true)
     {
         $this
             ->setMidocoBillingDocument($midocoBillingDocument)
@@ -70,18 +70,18 @@ class VoidBillingDocumentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoBillingDocument value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument|null
      */
-    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument
+    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument
     {
         return $this->MidocoBillingDocument;
     }
     /**
      * Set MidocoBillingDocument value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidBillingDocumentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @return \Pggns\MidocoApi\Order\StructType\VoidBillingDocumentRequest
      */
-    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
+    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
     {
         $this->MidocoBillingDocument = $midocoBillingDocument;
         
@@ -98,7 +98,7 @@ class VoidBillingDocumentRequest extends AbstractStructBase
     /**
      * Set usedDocumentNo value
      * @param int $usedDocumentNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidBillingDocumentRequest
      */
     public function setUsedDocumentNo(?int $usedDocumentNo = null): self
     {
@@ -121,7 +121,7 @@ class VoidBillingDocumentRequest extends AbstractStructBase
     /**
      * Set finishDocument value
      * @param bool $finishDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidBillingDocumentRequest
      */
     public function setFinishDocument(?bool $finishDocument = true): self
     {
@@ -144,7 +144,7 @@ class VoidBillingDocumentRequest extends AbstractStructBase
     /**
      * Set creditOnlinePayments value
      * @param bool $creditOnlinePayments
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidBillingDocumentRequest
      */
     public function setCreditOnlinePayments(?bool $creditOnlinePayments = true): self
     {
@@ -167,7 +167,7 @@ class VoidBillingDocumentRequest extends AbstractStructBase
     /**
      * Set voidWithVoidPositions value
      * @param bool $voidWithVoidPositions
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidBillingDocumentRequest
      */
     public function setVoidWithVoidPositions(?bool $voidWithVoidPositions = true): self
     {

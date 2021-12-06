@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoConnectionTypeDescriptionExt extends CrmConnectionTypeDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoConnectionTypeDescriptionExt
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoConnectionTypeDescriptionExt
      */
     public function setDescription(?string $description = null): self
     {
@@ -78,7 +78,7 @@ class MidocoConnectionTypeDescriptionExt extends CrmConnectionTypeDTO
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoConnectionTypeDescriptionExt
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoConnectionTypeDescriptionExt
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -101,7 +101,7 @@ class MidocoConnectionTypeDescriptionExt extends CrmConnectionTypeDTO
     /**
      * Set isGlobal value
      * @param bool $isGlobal
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoConnectionTypeDescriptionExt
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoConnectionTypeDescriptionExt
      */
     public function setIsGlobal(?bool $isGlobal = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class MidocoDSFinVKExport extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -126,7 +126,7 @@ class MidocoDSFinVKExport extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport
      */
     public function setExportId(?int $exportId = null): self
     {
@@ -149,7 +149,7 @@ class MidocoDSFinVKExport extends AbstractStructBase
     /**
      * Set exportDate value
      * @param string $exportDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport
      */
     public function setExportDate(?string $exportDate = null): self
     {
@@ -172,7 +172,7 @@ class MidocoDSFinVKExport extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -195,7 +195,7 @@ class MidocoDSFinVKExport extends AbstractStructBase
     /**
      * Set cashBalanceNoFrom value
      * @param int $cashBalanceNoFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport
      */
     public function setCashBalanceNoFrom(?int $cashBalanceNoFrom = null): self
     {
@@ -218,7 +218,7 @@ class MidocoDSFinVKExport extends AbstractStructBase
     /**
      * Set cashBalanceNoTo value
      * @param int $cashBalanceNoTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport
      */
     public function setCashBalanceNoTo(?int $cashBalanceNoTo = null): self
     {
@@ -241,7 +241,7 @@ class MidocoDSFinVKExport extends AbstractStructBase
     /**
      * Set cashBalanceDateFrom value
      * @param string $cashBalanceDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport
      */
     public function setCashBalanceDateFrom(?string $cashBalanceDateFrom = null): self
     {
@@ -264,7 +264,7 @@ class MidocoDSFinVKExport extends AbstractStructBase
     /**
      * Set cashBalanceDateTo value
      * @param string $cashBalanceDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport
      */
     public function setCashBalanceDateTo(?string $cashBalanceDateTo = null): self
     {
@@ -287,7 +287,7 @@ class MidocoDSFinVKExport extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

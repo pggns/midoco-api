@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class UpdatePackageMarginRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoPackageMargin
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPackageMargin|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin $MidocoPackageMargin = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoPackageMargin $MidocoPackageMargin = null;
     /**
      * Constructor method for UpdatePackageMarginRequest
      * @uses UpdatePackageMarginRequest::setMidocoPackageMargin()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin $midocoPackageMargin
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPackageMargin $midocoPackageMargin
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin $midocoPackageMargin = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoPackageMargin $midocoPackageMargin = null)
     {
         $this
             ->setMidocoPackageMargin($midocoPackageMargin);
     }
     /**
      * Get MidocoPackageMargin value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPackageMargin|null
      */
-    public function getMidocoPackageMargin(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin
+    public function getMidocoPackageMargin(): ?\Pggns\MidocoApi\Order\StructType\MidocoPackageMargin
     {
         return $this->MidocoPackageMargin;
     }
     /**
      * Set MidocoPackageMargin value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin $midocoPackageMargin
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdatePackageMarginRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPackageMargin $midocoPackageMargin
+     * @return \Pggns\MidocoApi\Order\StructType\UpdatePackageMarginRequest
      */
-    public function setMidocoPackageMargin(?\Pggns\MidocoApi\Api\Order\StructType\MidocoPackageMargin $midocoPackageMargin = null): self
+    public function setMidocoPackageMargin(?\Pggns\MidocoApi\Order\StructType\MidocoPackageMargin $midocoPackageMargin = null): self
     {
         $this->MidocoPackageMargin = $midocoPackageMargin;
         

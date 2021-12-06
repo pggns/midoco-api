@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetRemarkCategoryResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoRemarkCategory
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkCategory[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkCategory[]
      */
     protected ?array $MidocoRemarkCategory = null;
     /**
      * Constructor method for GetRemarkCategoryResponse
      * @uses GetRemarkCategoryResponse::setMidocoRemarkCategory()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkCategory[] $midocoRemarkCategory
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkCategory[] $midocoRemarkCategory
      */
     public function __construct(?array $midocoRemarkCategory = null)
     {
@@ -34,7 +34,7 @@ class GetRemarkCategoryResponse extends AbstractStructBase
     }
     /**
      * Get MidocoRemarkCategory value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkCategory[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkCategory[]
      */
     public function getMidocoRemarkCategory(): ?array
     {
@@ -55,12 +55,12 @@ class GetRemarkCategoryResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getRemarkCategoryResponseMidocoRemarkCategoryItem) {
             // validation for constraint: itemType
-            if (!$getRemarkCategoryResponseMidocoRemarkCategoryItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkCategory) {
+            if (!$getRemarkCategoryResponseMidocoRemarkCategoryItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkCategory) {
                 $invalidValues[] = is_object($getRemarkCategoryResponseMidocoRemarkCategoryItem) ? get_class($getRemarkCategoryResponseMidocoRemarkCategoryItem) : sprintf('%s(%s)', gettype($getRemarkCategoryResponseMidocoRemarkCategoryItem), var_export($getRemarkCategoryResponseMidocoRemarkCategoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRemarkCategory property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkCategory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRemarkCategory property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkCategory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetRemarkCategoryResponse extends AbstractStructBase
     /**
      * Set MidocoRemarkCategory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkCategory[] $midocoRemarkCategory
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetRemarkCategoryResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkCategory[] $midocoRemarkCategory
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetRemarkCategoryResponse
      */
     public function setMidocoRemarkCategory(?array $midocoRemarkCategory = null): self
     {
@@ -85,14 +85,14 @@ class GetRemarkCategoryResponse extends AbstractStructBase
     /**
      * Add item to MidocoRemarkCategory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkCategory $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetRemarkCategoryResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkCategory $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetRemarkCategoryResponse
      */
-    public function addToMidocoRemarkCategory(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkCategory $item): self
+    public function addToMidocoRemarkCategory(\Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkCategory $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkCategory) {
-            throw new InvalidArgumentException(sprintf('The MidocoRemarkCategory property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkCategory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkCategory) {
+            throw new InvalidArgumentException(sprintf('The MidocoRemarkCategory property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkCategory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRemarkCategory[] = $item;
         

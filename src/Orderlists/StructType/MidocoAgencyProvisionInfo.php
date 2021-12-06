@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set tempRepositoryId value
      * @param int $tempRepositoryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionInfo
      */
     public function setTempRepositoryId(?int $tempRepositoryId = null): self
     {
@@ -142,7 +142,7 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionInfo
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -165,7 +165,7 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set agencyName value
      * @param string $agencyName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionInfo
      */
     public function setAgencyName(?string $agencyName = null): self
     {
@@ -188,7 +188,7 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionInfo
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -211,7 +211,7 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set settlementDate value
      * @param string $settlementDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionInfo
      */
     public function setSettlementDate(?string $settlementDate = null): self
     {
@@ -234,7 +234,7 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionInfo
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -257,7 +257,7 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set totalProvisionVat value
      * @param float $totalProvisionVat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionInfo
      */
     public function setTotalProvisionVat(?float $totalProvisionVat = null): self
     {
@@ -280,7 +280,7 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set totalProvision value
      * @param float $totalProvision
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionInfo
      */
     public function setTotalProvision(?float $totalProvision = null): self
     {
@@ -303,7 +303,7 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set inkassoAmount value
      * @param float $inkassoAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionInfo
      */
     public function setInkassoAmount(?float $inkassoAmount = null): self
     {
@@ -326,7 +326,7 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set orders value
      * @param int $orders
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionInfo
      */
     public function setOrders(?int $orders = null): self
     {
@@ -349,7 +349,7 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
     /**
      * Set containsStorno value
      * @param bool $containsStorno
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionInfo
      */
     public function setContainsStorno(?bool $containsStorno = null): self
     {

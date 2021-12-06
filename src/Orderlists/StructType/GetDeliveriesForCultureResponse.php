@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetDeliveriesForCultureResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDeliveryTypeDescription
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\DeliveryTypeDescriptionDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\DeliveryTypeDescriptionDTO[]
      */
     protected ?array $MidocoDeliveryTypeDescription = null;
     /**
      * Constructor method for GetDeliveriesForCultureResponse
      * @uses GetDeliveriesForCultureResponse::setMidocoDeliveryTypeDescription()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\DeliveryTypeDescriptionDTO[] $midocoDeliveryTypeDescription
+     * @param \Pggns\MidocoApi\Orderlists\StructType\DeliveryTypeDescriptionDTO[] $midocoDeliveryTypeDescription
      */
     public function __construct(?array $midocoDeliveryTypeDescription = null)
     {
@@ -36,7 +36,7 @@ class GetDeliveriesForCultureResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDeliveryTypeDescription value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeliveryTypeDescriptionDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeliveryTypeDescriptionDTO[]
      */
     public function getMidocoDeliveryTypeDescription(): ?array
     {
@@ -57,12 +57,12 @@ class GetDeliveriesForCultureResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDeliveriesForCultureResponseMidocoDeliveryTypeDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getDeliveriesForCultureResponseMidocoDeliveryTypeDescriptionItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\DeliveryTypeDescriptionDTO) {
+            if (!$getDeliveriesForCultureResponseMidocoDeliveryTypeDescriptionItem instanceof \Pggns\MidocoApi\Orderlists\StructType\DeliveryTypeDescriptionDTO) {
                 $invalidValues[] = is_object($getDeliveriesForCultureResponseMidocoDeliveryTypeDescriptionItem) ? get_class($getDeliveriesForCultureResponseMidocoDeliveryTypeDescriptionItem) : sprintf('%s(%s)', gettype($getDeliveriesForCultureResponseMidocoDeliveryTypeDescriptionItem), var_export($getDeliveriesForCultureResponseMidocoDeliveryTypeDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDeliveryTypeDescription property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\DeliveryTypeDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDeliveryTypeDescription property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\DeliveryTypeDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetDeliveriesForCultureResponse extends AbstractStructBase
     /**
      * Set MidocoDeliveryTypeDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\DeliveryTypeDescriptionDTO[] $midocoDeliveryTypeDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetDeliveriesForCultureResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\DeliveryTypeDescriptionDTO[] $midocoDeliveryTypeDescription
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetDeliveriesForCultureResponse
      */
     public function setMidocoDeliveryTypeDescription(?array $midocoDeliveryTypeDescription = null): self
     {
@@ -87,14 +87,14 @@ class GetDeliveriesForCultureResponse extends AbstractStructBase
     /**
      * Add item to MidocoDeliveryTypeDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\DeliveryTypeDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetDeliveriesForCultureResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\DeliveryTypeDescriptionDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetDeliveriesForCultureResponse
      */
-    public function addToMidocoDeliveryTypeDescription(\Pggns\MidocoApi\Api\Orderlists\StructType\DeliveryTypeDescriptionDTO $item): self
+    public function addToMidocoDeliveryTypeDescription(\Pggns\MidocoApi\Orderlists\StructType\DeliveryTypeDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\DeliveryTypeDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoDeliveryTypeDescription property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\DeliveryTypeDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\DeliveryTypeDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoDeliveryTypeDescription property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\DeliveryTypeDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDeliveryTypeDescription[] = $item;
         

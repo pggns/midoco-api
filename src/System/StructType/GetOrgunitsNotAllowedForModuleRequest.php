@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetOrgunitsNotAllowedForModuleRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgunitsNotAllowedForModuleRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgunitsNotAllowedForModuleRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -78,7 +78,7 @@ class GetOrgunitsNotAllowedForModuleRequest extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgunitsNotAllowedForModuleRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgunitsNotAllowedForModuleRequest
      */
     public function setAppId(?string $appId = null): self
     {
@@ -101,7 +101,7 @@ class GetOrgunitsNotAllowedForModuleRequest extends AbstractStructBase
     /**
      * Set modulId value
      * @param string $modulId
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgunitsNotAllowedForModuleRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgunitsNotAllowedForModuleRequest
      */
     public function setModulId(?string $modulId = null): self
     {

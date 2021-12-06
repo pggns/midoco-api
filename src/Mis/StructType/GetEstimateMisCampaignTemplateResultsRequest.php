@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -30,9 +30,9 @@ class GetEstimateMisCampaignTemplateResultsRequest extends AbstractStructBase
      * The MidocoMisCustomerQuery
      * Meta information extracted from the WSDL
      * - ref: MidocoMisCustomerQuery
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO $MidocoMisCustomerQuery = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO $MidocoMisCustomerQuery = null;
     /**
      * Constructor method for GetEstimateMisCampaignTemplateResultsRequest
      * @uses GetEstimateMisCampaignTemplateResultsRequest::setCampaignId()
@@ -40,9 +40,9 @@ class GetEstimateMisCampaignTemplateResultsRequest extends AbstractStructBase
      * @uses GetEstimateMisCampaignTemplateResultsRequest::setMidocoMisCustomerQuery()
      * @param int $campaignId
      * @param string[] $orgUnits
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery
      */
-    public function __construct(?int $campaignId = null, ?array $orgUnits = null, ?\Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery = null)
+    public function __construct(?int $campaignId = null, ?array $orgUnits = null, ?\Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery = null)
     {
         $this
             ->setCampaignId($campaignId)
@@ -60,7 +60,7 @@ class GetEstimateMisCampaignTemplateResultsRequest extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetEstimateMisCampaignTemplateResultsRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetEstimateMisCampaignTemplateResultsRequest
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -110,7 +110,7 @@ class GetEstimateMisCampaignTemplateResultsRequest extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetEstimateMisCampaignTemplateResultsRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetEstimateMisCampaignTemplateResultsRequest
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -126,7 +126,7 @@ class GetEstimateMisCampaignTemplateResultsRequest extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetEstimateMisCampaignTemplateResultsRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetEstimateMisCampaignTemplateResultsRequest
      */
     public function addToOrgUnits(string $item): self
     {
@@ -140,18 +140,18 @@ class GetEstimateMisCampaignTemplateResultsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMisCustomerQuery value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO|null
      */
-    public function getMidocoMisCustomerQuery(): ?\Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO
+    public function getMidocoMisCustomerQuery(): ?\Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO
     {
         return $this->MidocoMisCustomerQuery;
     }
     /**
      * Set MidocoMisCustomerQuery value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetEstimateMisCampaignTemplateResultsRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery
+     * @return \Pggns\MidocoApi\Mis\StructType\GetEstimateMisCampaignTemplateResultsRequest
      */
-    public function setMidocoMisCustomerQuery(?\Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery = null): self
+    public function setMidocoMisCustomerQuery(?\Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery = null): self
     {
         $this->MidocoMisCustomerQuery = $midocoMisCustomerQuery;
         

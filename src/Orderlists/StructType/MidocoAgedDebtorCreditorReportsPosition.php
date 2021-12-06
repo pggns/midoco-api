@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MidocoAgedDebtorCreditorReportsPosition extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -134,7 +134,7 @@ class MidocoAgedDebtorCreditorReportsPosition extends AbstractStructBase
     /**
      * Set transactionNo value
      * @param string $transactionNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
      */
     public function setTransactionNo(?string $transactionNo = null): self
     {
@@ -157,7 +157,7 @@ class MidocoAgedDebtorCreditorReportsPosition extends AbstractStructBase
     /**
      * Set issueDate value
      * @param string $issueDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
      */
     public function setIssueDate(?string $issueDate = null): self
     {
@@ -180,7 +180,7 @@ class MidocoAgedDebtorCreditorReportsPosition extends AbstractStructBase
     /**
      * Set passenger value
      * @param string $passenger
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
      */
     public function setPassenger(?string $passenger = null): self
     {
@@ -203,7 +203,7 @@ class MidocoAgedDebtorCreditorReportsPosition extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
      */
     public function setDestination(?string $destination = null): self
     {
@@ -226,7 +226,7 @@ class MidocoAgedDebtorCreditorReportsPosition extends AbstractStructBase
     /**
      * Set departureDate value
      * @param string $departureDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
      */
     public function setDepartureDate(?string $departureDate = null): self
     {
@@ -249,7 +249,7 @@ class MidocoAgedDebtorCreditorReportsPosition extends AbstractStructBase
     /**
      * Set balanceDueDate value
      * @param string $balanceDueDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
      */
     public function setBalanceDueDate(?string $balanceDueDate = null): self
     {
@@ -272,7 +272,7 @@ class MidocoAgedDebtorCreditorReportsPosition extends AbstractStructBase
     /**
      * Set transactionAmount value
      * @param float $transactionAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
      */
     public function setTransactionAmount(?float $transactionAmount = null): self
     {
@@ -295,7 +295,7 @@ class MidocoAgedDebtorCreditorReportsPosition extends AbstractStructBase
     /**
      * Set outstandingAmount value
      * @param float $outstandingAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
      */
     public function setOutstandingAmount(?float $outstandingAmount = null): self
     {
@@ -318,7 +318,7 @@ class MidocoAgedDebtorCreditorReportsPosition extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition
      */
     public function setCurrency(?string $currency = null): self
     {

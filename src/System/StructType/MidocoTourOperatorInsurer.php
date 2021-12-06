@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoTourOperatorInsurer extends TouroperatorInsurerDTO
     /**
      * Set companyName value
      * @param string $companyName
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoTourOperatorInsurer
+     * @return \Pggns\MidocoApi\System\StructType\MidocoTourOperatorInsurer
      */
     public function setCompanyName(?string $companyName = null): self
     {
@@ -70,7 +70,7 @@ class MidocoTourOperatorInsurer extends TouroperatorInsurerDTO
     /**
      * Set insuranceCode value
      * @param string $insuranceCode
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoTourOperatorInsurer
+     * @return \Pggns\MidocoApi\System\StructType\MidocoTourOperatorInsurer
      */
     public function setInsuranceCode(?string $insuranceCode = null): self
     {

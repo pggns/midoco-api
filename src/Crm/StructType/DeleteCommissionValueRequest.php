@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteCommissionValueRequest extends AbstractStructBase
      * The MidocoCommissionValue
      * Meta information extracted from the WSDL
      * - ref: MidocoCommissionValue
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CommissionValueDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO $MidocoCommissionValue = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CommissionValueDTO $MidocoCommissionValue = null;
     /**
      * Constructor method for DeleteCommissionValueRequest
      * @uses DeleteCommissionValueRequest::setMidocoCommissionValue()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO $midocoCommissionValue
+     * @param \Pggns\MidocoApi\Crm\StructType\CommissionValueDTO $midocoCommissionValue
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO $midocoCommissionValue = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CommissionValueDTO $midocoCommissionValue = null)
     {
         $this
             ->setMidocoCommissionValue($midocoCommissionValue);
     }
     /**
      * Get MidocoCommissionValue value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CommissionValueDTO|null
      */
-    public function getMidocoCommissionValue(): ?\Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO
+    public function getMidocoCommissionValue(): ?\Pggns\MidocoApi\Crm\StructType\CommissionValueDTO
     {
         return $this->MidocoCommissionValue;
     }
     /**
      * Set MidocoCommissionValue value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO $midocoCommissionValue
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteCommissionValueRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CommissionValueDTO $midocoCommissionValue
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteCommissionValueRequest
      */
-    public function setMidocoCommissionValue(?\Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO $midocoCommissionValue = null): self
+    public function setMidocoCommissionValue(?\Pggns\MidocoApi\Crm\StructType\CommissionValueDTO $midocoCommissionValue = null): self
     {
         $this->MidocoCommissionValue = $midocoCommissionValue;
         

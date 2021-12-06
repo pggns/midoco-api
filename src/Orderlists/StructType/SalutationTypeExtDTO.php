@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SalutationTypeExtDTO extends SalutationTypeDTO
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalutationTypeExtDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalutationTypeExtDTO
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -102,7 +102,7 @@ class SalutationTypeExtDTO extends SalutationTypeDTO
     /**
      * Set letter value
      * @param string $letter
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalutationTypeExtDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalutationTypeExtDTO
      */
     public function setLetter(?string $letter = null): self
     {
@@ -125,7 +125,7 @@ class SalutationTypeExtDTO extends SalutationTypeDTO
     /**
      * Set forPerson value
      * @param bool $forPerson
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalutationTypeExtDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalutationTypeExtDTO
      */
     public function setForPerson(?bool $forPerson = null): self
     {
@@ -148,7 +148,7 @@ class SalutationTypeExtDTO extends SalutationTypeDTO
     /**
      * Set forTraveller value
      * @param bool $forTraveller
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalutationTypeExtDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalutationTypeExtDTO
      */
     public function setForTraveller(?bool $forTraveller = null): self
     {
@@ -171,7 +171,7 @@ class SalutationTypeExtDTO extends SalutationTypeDTO
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalutationTypeExtDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalutationTypeExtDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -194,7 +194,7 @@ class SalutationTypeExtDTO extends SalutationTypeDTO
     /**
      * Set forCompany value
      * @param bool $forCompany
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalutationTypeExtDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalutationTypeExtDTO
      */
     public function setForCompany(?bool $forCompany = null): self
     {

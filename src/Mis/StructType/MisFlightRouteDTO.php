@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -166,7 +166,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -189,7 +189,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -212,7 +212,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -235,7 +235,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set isCorpMember value
      * @param bool $isCorpMember
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setIsCorpMember(?bool $isCorpMember = null): self
     {
@@ -258,7 +258,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -281,7 +281,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set mainCabin value
      * @param string $mainCabin
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setMainCabin(?string $mainCabin = null): self
     {
@@ -304,7 +304,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set mainCarrier value
      * @param string $mainCarrier
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setMainCarrier(?string $mainCarrier = null): self
     {
@@ -327,7 +327,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -350,7 +350,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -373,7 +373,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set regionId value
      * @param int $regionId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setRegionId(?int $regionId = null): self
     {
@@ -396,7 +396,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set route value
      * @param string $route
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setRoute(?string $route = null): self
     {
@@ -419,7 +419,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -442,7 +442,7 @@ class MisFlightRouteDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightRouteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightRouteDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

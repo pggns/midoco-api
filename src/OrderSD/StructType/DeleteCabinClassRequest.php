@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteCabinClassRequest extends AbstractStructBase
      * The MidocoCabinClass
      * Meta information extracted from the WSDL
      * - ref: MidocoCabinClass
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass $MidocoCabinClass = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass $MidocoCabinClass = null;
     /**
      * Constructor method for DeleteCabinClassRequest
      * @uses DeleteCabinClassRequest::setMidocoCabinClass()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass $midocoCabinClass
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass $midocoCabinClass
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass $midocoCabinClass = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass $midocoCabinClass = null)
     {
         $this
             ->setMidocoCabinClass($midocoCabinClass);
     }
     /**
      * Get MidocoCabinClass value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass|null
      */
-    public function getMidocoCabinClass(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass
+    public function getMidocoCabinClass(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass
     {
         return $this->MidocoCabinClass;
     }
     /**
      * Set MidocoCabinClass value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass $midocoCabinClass
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteCabinClassRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass $midocoCabinClass
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteCabinClassRequest
      */
-    public function setMidocoCabinClass(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCabinClass $midocoCabinClass = null): self
+    public function setMidocoCabinClass(?\Pggns\MidocoApi\OrderSD\StructType\MidocoCabinClass $midocoCabinClass = null): self
     {
         $this->MidocoCabinClass = $midocoCabinClass;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class CostCentreSummaryDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CostCentreSummaryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CostCentreSummaryDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -110,7 +110,7 @@ class CostCentreSummaryDTO extends AbstractStructBase
     /**
      * Set bookingPeriod value
      * @param int $bookingPeriod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CostCentreSummaryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CostCentreSummaryDTO
      */
     public function setBookingPeriod(?int $bookingPeriod = null): self
     {
@@ -133,7 +133,7 @@ class CostCentreSummaryDTO extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CostCentreSummaryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CostCentreSummaryDTO
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -156,7 +156,7 @@ class CostCentreSummaryDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CostCentreSummaryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CostCentreSummaryDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -179,7 +179,7 @@ class CostCentreSummaryDTO extends AbstractStructBase
     /**
      * Set costsAmount value
      * @param float $costsAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CostCentreSummaryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CostCentreSummaryDTO
      */
     public function setCostsAmount(?float $costsAmount = null): self
     {
@@ -202,7 +202,7 @@ class CostCentreSummaryDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CostCentreSummaryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CostCentreSummaryDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -225,7 +225,7 @@ class CostCentreSummaryDTO extends AbstractStructBase
     /**
      * Set revenueAmount value
      * @param float $revenueAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CostCentreSummaryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CostCentreSummaryDTO
      */
     public function setRevenueAmount(?float $revenueAmount = null): self
     {

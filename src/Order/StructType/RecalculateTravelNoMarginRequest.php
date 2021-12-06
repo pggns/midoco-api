@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class RecalculateTravelNoMarginRequest extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RecalculateTravelNoMarginRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RecalculateTravelNoMarginRequest
      */
     public function setTravelNo(?string $travelNo = null): self
     {
@@ -84,7 +84,7 @@ class RecalculateTravelNoMarginRequest extends AbstractStructBase
     /**
      * Set startTravelStart value
      * @param string $startTravelStart
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RecalculateTravelNoMarginRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RecalculateTravelNoMarginRequest
      */
     public function setStartTravelStart(?string $startTravelStart = null): self
     {
@@ -107,7 +107,7 @@ class RecalculateTravelNoMarginRequest extends AbstractStructBase
     /**
      * Set endTravelStart value
      * @param string $endTravelStart
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RecalculateTravelNoMarginRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RecalculateTravelNoMarginRequest
      */
     public function setEndTravelStart(?string $endTravelStart = null): self
     {

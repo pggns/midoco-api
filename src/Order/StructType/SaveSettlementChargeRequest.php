@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveSettlementChargeRequest extends AbstractStructBase
      * The MidocoSettlementCharge
      * Meta information extracted from the WSDL
      * - ref: MidocoSettlementCharge
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\SettlementChargeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO $MidocoSettlementCharge = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\SettlementChargeDTO $MidocoSettlementCharge = null;
     /**
      * Constructor method for SaveSettlementChargeRequest
      * @uses SaveSettlementChargeRequest::setMidocoSettlementCharge()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO $midocoSettlementCharge
+     * @param \Pggns\MidocoApi\Order\StructType\SettlementChargeDTO $midocoSettlementCharge
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO $midocoSettlementCharge = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\SettlementChargeDTO $midocoSettlementCharge = null)
     {
         $this
             ->setMidocoSettlementCharge($midocoSettlementCharge);
     }
     /**
      * Get MidocoSettlementCharge value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\SettlementChargeDTO|null
      */
-    public function getMidocoSettlementCharge(): ?\Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO
+    public function getMidocoSettlementCharge(): ?\Pggns\MidocoApi\Order\StructType\SettlementChargeDTO
     {
         return $this->MidocoSettlementCharge;
     }
     /**
      * Set MidocoSettlementCharge value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO $midocoSettlementCharge
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveSettlementChargeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SettlementChargeDTO $midocoSettlementCharge
+     * @return \Pggns\MidocoApi\Order\StructType\SaveSettlementChargeRequest
      */
-    public function setMidocoSettlementCharge(?\Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO $midocoSettlementCharge = null): self
+    public function setMidocoSettlementCharge(?\Pggns\MidocoApi\Order\StructType\SettlementChargeDTO $midocoSettlementCharge = null): self
     {
         $this->MidocoSettlementCharge = $midocoSettlementCharge;
         

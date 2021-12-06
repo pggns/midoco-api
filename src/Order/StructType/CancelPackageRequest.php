@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class CancelPackageRequest extends AbstractStructBase
      * The MidocoSellItem
      * Meta information extracted from the WSDL
      * - ref: MidocoSellItem
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $MidocoSellItem = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemType $MidocoSellItem = null;
     /**
      * Constructor method for CancelPackageRequest
      * @uses CancelPackageRequest::setMidocoSellItem()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $midocoSellItem
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemType $midocoSellItem
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $midocoSellItem = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemType $midocoSellItem = null)
     {
         $this
             ->setMidocoSellItem($midocoSellItem);
     }
     /**
      * Get MidocoSellItem value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemType|null
      */
-    public function getMidocoSellItem(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType
+    public function getMidocoSellItem(): ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemType
     {
         return $this->MidocoSellItem;
     }
     /**
      * Set MidocoSellItem value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $midocoSellItem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CancelPackageRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemType $midocoSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\CancelPackageRequest
      */
-    public function setMidocoSellItem(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $midocoSellItem = null): self
+    public function setMidocoSellItem(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemType $midocoSellItem = null): self
     {
         $this->MidocoSellItem = $midocoSellItem;
         

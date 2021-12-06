@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetPrintedBillingDocDateResponse extends AbstractStructBase
     /**
      * Set dateLastPrinted value
      * @param string $dateLastPrinted
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintedBillingDocDateResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintedBillingDocDateResponse
      */
     public function setDateLastPrinted(?string $dateLastPrinted = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class JSPSellItem extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JSPSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\JSPSellItem
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -134,7 +134,7 @@ class JSPSellItem extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JSPSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\JSPSellItem
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -157,7 +157,7 @@ class JSPSellItem extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JSPSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\JSPSellItem
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -180,7 +180,7 @@ class JSPSellItem extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JSPSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\JSPSellItem
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -203,7 +203,7 @@ class JSPSellItem extends AbstractStructBase
     /**
      * Set itemPrice value
      * @param float $itemPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JSPSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\JSPSellItem
      */
     public function setItemPrice(?float $itemPrice = null): self
     {
@@ -226,7 +226,7 @@ class JSPSellItem extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JSPSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\JSPSellItem
      */
     public function setStatus(?string $status = null): self
     {
@@ -249,7 +249,7 @@ class JSPSellItem extends AbstractStructBase
     /**
      * Set freeing value
      * @param bool $freeing
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JSPSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\JSPSellItem
      */
     public function setFreeing(?bool $freeing = null): self
     {
@@ -272,7 +272,7 @@ class JSPSellItem extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JSPSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\JSPSellItem
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -295,7 +295,7 @@ class JSPSellItem extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JSPSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\JSPSellItem
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -318,7 +318,7 @@ class JSPSellItem extends AbstractStructBase
     /**
      * Set invoiceName value
      * @param string $invoiceName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JSPSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\JSPSellItem
      */
     public function setInvoiceName(?string $invoiceName = null): self
     {

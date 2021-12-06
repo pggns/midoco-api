@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -59,7 +59,7 @@ class SearchOrgUnitUserSpecifiedCashbookRequest extends AbstractStructBase
     /**
      * Set cashBookName value
      * @param string $cashBookName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrgUnitUserSpecifiedCashbookRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrgUnitUserSpecifiedCashbookRequest
      */
     public function setCashBookName(?string $cashBookName = null): self
     {
@@ -82,7 +82,7 @@ class SearchOrgUnitUserSpecifiedCashbookRequest extends AbstractStructBase
     /**
      * Set checkSignature value
      * @param bool $checkSignature
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrgUnitUserSpecifiedCashbookRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrgUnitUserSpecifiedCashbookRequest
      */
     public function setCheckSignature(?bool $checkSignature = null): self
     {
@@ -105,7 +105,7 @@ class SearchOrgUnitUserSpecifiedCashbookRequest extends AbstractStructBase
     /**
      * Set getAllUnitCashbooks value
      * @param bool $getAllUnitCashbooks
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrgUnitUserSpecifiedCashbookRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrgUnitUserSpecifiedCashbookRequest
      */
     public function setGetAllUnitCashbooks(?bool $getAllUnitCashbooks = false): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class TaskDetails extends Task
     /**
      * Set creationUser value
      * @param string $creationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDetails
      */
     public function setCreationUser(?string $creationUser = null): self
     {
@@ -86,7 +86,7 @@ class TaskDetails extends Task
     /**
      * Set warningLevel value
      * @param int $warningLevel
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDetails
      */
     public function setWarningLevel(?int $warningLevel = null): self
     {
@@ -109,7 +109,7 @@ class TaskDetails extends Task
     /**
      * Set isNotice value
      * @param bool $isNotice
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDetails
      */
     public function setIsNotice(?bool $isNotice = null): self
     {
@@ -132,7 +132,7 @@ class TaskDetails extends Task
     /**
      * Set creationOrgunit value
      * @param string $creationOrgunit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDetails
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDetails
      */
     public function setCreationOrgunit(?string $creationOrgunit = null): self
     {

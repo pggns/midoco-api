@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SuppCancelCEmailDTO extends AbstractStructBase
     /**
      * Set bookingType value
      * @param string $bookingType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCancelCEmailDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCancelCEmailDTO
      */
     public function setBookingType(?string $bookingType = null): self
     {
@@ -102,7 +102,7 @@ class SuppCancelCEmailDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCancelCEmailDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCancelCEmailDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -125,7 +125,7 @@ class SuppCancelCEmailDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCancelCEmailDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCancelCEmailDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -148,7 +148,7 @@ class SuppCancelCEmailDTO extends AbstractStructBase
     /**
      * Set suppCancelCEmailId value
      * @param int $suppCancelCEmailId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCancelCEmailDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCancelCEmailDTO
      */
     public function setSuppCancelCEmailId(?int $suppCancelCEmailId = null): self
     {
@@ -171,7 +171,7 @@ class SuppCancelCEmailDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCancelCEmailDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCancelCEmailDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -194,7 +194,7 @@ class SuppCancelCEmailDTO extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCancelCEmailDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCancelCEmailDTO
      */
     public function setTravelType(?string $travelType = null): self
     {

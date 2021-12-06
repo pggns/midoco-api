@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -27,9 +27,9 @@ class MakeBillingDocumentForAgencySettlementRequest extends AbstractStructBase
      * The MidocoAgencyProvisionSearchCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoAgencyProvisionSearchCriteria
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $MidocoAgencyProvisionSearchCriteria = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $MidocoAgencyProvisionSearchCriteria = null;
     /**
      * The dryRun
      * @var bool|null
@@ -43,10 +43,10 @@ class MakeBillingDocumentForAgencySettlementRequest extends AbstractStructBase
      * @uses MakeBillingDocumentForAgencySettlementRequest::setDryRun()
      * @param int $settlementId
      * @param string $agencyId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria
      * @param bool $dryRun
      */
-    public function __construct(?int $settlementId = null, ?string $agencyId = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria = null, ?bool $dryRun = null)
+    public function __construct(?int $settlementId = null, ?string $agencyId = null, ?\Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria = null, ?bool $dryRun = null)
     {
         $this
             ->setSettlementId($settlementId)
@@ -65,7 +65,7 @@ class MakeBillingDocumentForAgencySettlementRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -88,7 +88,7 @@ class MakeBillingDocumentForAgencySettlementRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -102,18 +102,18 @@ class MakeBillingDocumentForAgencySettlementRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAgencyProvisionSearchCriteria value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria|null
      */
-    public function getMidocoAgencyProvisionSearchCriteria(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria
+    public function getMidocoAgencyProvisionSearchCriteria(): ?\Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria
     {
         return $this->MidocoAgencyProvisionSearchCriteria;
     }
     /**
      * Set MidocoAgencyProvisionSearchCriteria value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementRequest
      */
-    public function setMidocoAgencyProvisionSearchCriteria(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria = null): self
+    public function setMidocoAgencyProvisionSearchCriteria(?\Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria = null): self
     {
         $this->MidocoAgencyProvisionSearchCriteria = $midocoAgencyProvisionSearchCriteria;
         
@@ -130,7 +130,7 @@ class MakeBillingDocumentForAgencySettlementRequest extends AbstractStructBase
     /**
      * Set dryRun value
      * @param bool $dryRun
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementRequest
      */
     public function setDryRun(?bool $dryRun = null): self
     {

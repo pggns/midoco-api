@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetTravelNumberAutoRemarksResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTravelNumberAutoRemark
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberAutoRemarkDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\TravelNumberAutoRemarkDTO[]
      */
     protected ?array $MidocoTravelNumberAutoRemark = null;
     /**
      * Constructor method for GetTravelNumberAutoRemarksResponse
      * @uses GetTravelNumberAutoRemarksResponse::setMidocoTravelNumberAutoRemark()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberAutoRemarkDTO[] $midocoTravelNumberAutoRemark
+     * @param \Pggns\MidocoApi\Documents\StructType\TravelNumberAutoRemarkDTO[] $midocoTravelNumberAutoRemark
      */
     public function __construct(?array $midocoTravelNumberAutoRemark = null)
     {
@@ -34,7 +34,7 @@ class GetTravelNumberAutoRemarksResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTravelNumberAutoRemark value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberAutoRemarkDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberAutoRemarkDTO[]
      */
     public function getMidocoTravelNumberAutoRemark(): ?array
     {
@@ -55,12 +55,12 @@ class GetTravelNumberAutoRemarksResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTravelNumberAutoRemarksResponseMidocoTravelNumberAutoRemarkItem) {
             // validation for constraint: itemType
-            if (!$getTravelNumberAutoRemarksResponseMidocoTravelNumberAutoRemarkItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberAutoRemarkDTO) {
+            if (!$getTravelNumberAutoRemarksResponseMidocoTravelNumberAutoRemarkItem instanceof \Pggns\MidocoApi\Documents\StructType\TravelNumberAutoRemarkDTO) {
                 $invalidValues[] = is_object($getTravelNumberAutoRemarksResponseMidocoTravelNumberAutoRemarkItem) ? get_class($getTravelNumberAutoRemarksResponseMidocoTravelNumberAutoRemarkItem) : sprintf('%s(%s)', gettype($getTravelNumberAutoRemarksResponseMidocoTravelNumberAutoRemarkItem), var_export($getTravelNumberAutoRemarksResponseMidocoTravelNumberAutoRemarkItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTravelNumberAutoRemark property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberAutoRemarkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTravelNumberAutoRemark property can only contain items of type \Pggns\MidocoApi\Documents\StructType\TravelNumberAutoRemarkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetTravelNumberAutoRemarksResponse extends AbstractStructBase
     /**
      * Set MidocoTravelNumberAutoRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberAutoRemarkDTO[] $midocoTravelNumberAutoRemark
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetTravelNumberAutoRemarksResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\TravelNumberAutoRemarkDTO[] $midocoTravelNumberAutoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\GetTravelNumberAutoRemarksResponse
      */
     public function setMidocoTravelNumberAutoRemark(?array $midocoTravelNumberAutoRemark = null): self
     {
@@ -85,14 +85,14 @@ class GetTravelNumberAutoRemarksResponse extends AbstractStructBase
     /**
      * Add item to MidocoTravelNumberAutoRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberAutoRemarkDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetTravelNumberAutoRemarksResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\TravelNumberAutoRemarkDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetTravelNumberAutoRemarksResponse
      */
-    public function addToMidocoTravelNumberAutoRemark(\Pggns\MidocoApi\Api\Documents\StructType\TravelNumberAutoRemarkDTO $item): self
+    public function addToMidocoTravelNumberAutoRemark(\Pggns\MidocoApi\Documents\StructType\TravelNumberAutoRemarkDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberAutoRemarkDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoTravelNumberAutoRemark property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberAutoRemarkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\TravelNumberAutoRemarkDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelNumberAutoRemark property can only contain items of type \Pggns\MidocoApi\Documents\StructType\TravelNumberAutoRemarkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTravelNumberAutoRemark[] = $item;
         

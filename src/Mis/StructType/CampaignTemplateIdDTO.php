@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CampaignTemplateIdDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO
      */
     public function setId(?int $id = null): self
     {

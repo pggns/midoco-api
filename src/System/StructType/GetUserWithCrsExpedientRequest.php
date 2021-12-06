@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetUserWithCrsExpedientRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoUser
-     * @var \Pggns\MidocoApi\Api\System\StructType\MidocoUser[]
+     * @var \Pggns\MidocoApi\System\StructType\MidocoUser[]
      */
     protected ?array $MidocoUser = null;
     /**
@@ -42,7 +42,7 @@ class GetUserWithCrsExpedientRequest extends AbstractStructBase
      * @uses GetUserWithCrsExpedientRequest::setMidocoUser()
      * @uses GetUserWithCrsExpedientRequest::setCrs()
      * @uses GetUserWithCrsExpedientRequest::setDoSearchParents()
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoUser[] $midocoUser
+     * @param \Pggns\MidocoApi\System\StructType\MidocoUser[] $midocoUser
      * @param string[] $crs
      * @param bool $doSearchParents
      */
@@ -55,7 +55,7 @@ class GetUserWithCrsExpedientRequest extends AbstractStructBase
     }
     /**
      * Get MidocoUser value
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoUser[]
+     * @return \Pggns\MidocoApi\System\StructType\MidocoUser[]
      */
     public function getMidocoUser(): ?array
     {
@@ -76,12 +76,12 @@ class GetUserWithCrsExpedientRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getUserWithCrsExpedientRequestMidocoUserItem) {
             // validation for constraint: itemType
-            if (!$getUserWithCrsExpedientRequestMidocoUserItem instanceof \Pggns\MidocoApi\Api\System\StructType\MidocoUser) {
+            if (!$getUserWithCrsExpedientRequestMidocoUserItem instanceof \Pggns\MidocoApi\System\StructType\MidocoUser) {
                 $invalidValues[] = is_object($getUserWithCrsExpedientRequestMidocoUserItem) ? get_class($getUserWithCrsExpedientRequestMidocoUserItem) : sprintf('%s(%s)', gettype($getUserWithCrsExpedientRequestMidocoUserItem), var_export($getUserWithCrsExpedientRequestMidocoUserItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoUser property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\MidocoUser, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoUser property can only contain items of type \Pggns\MidocoApi\System\StructType\MidocoUser, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -90,8 +90,8 @@ class GetUserWithCrsExpedientRequest extends AbstractStructBase
     /**
      * Set MidocoUser value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoUser[] $midocoUser
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetUserWithCrsExpedientRequest
+     * @param \Pggns\MidocoApi\System\StructType\MidocoUser[] $midocoUser
+     * @return \Pggns\MidocoApi\System\StructType\GetUserWithCrsExpedientRequest
      */
     public function setMidocoUser(?array $midocoUser = null): self
     {
@@ -106,14 +106,14 @@ class GetUserWithCrsExpedientRequest extends AbstractStructBase
     /**
      * Add item to MidocoUser value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoUser $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetUserWithCrsExpedientRequest
+     * @param \Pggns\MidocoApi\System\StructType\MidocoUser $item
+     * @return \Pggns\MidocoApi\System\StructType\GetUserWithCrsExpedientRequest
      */
-    public function addToMidocoUser(\Pggns\MidocoApi\Api\System\StructType\MidocoUser $item): self
+    public function addToMidocoUser(\Pggns\MidocoApi\System\StructType\MidocoUser $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\MidocoUser) {
-            throw new InvalidArgumentException(sprintf('The MidocoUser property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\MidocoUser, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\MidocoUser) {
+            throw new InvalidArgumentException(sprintf('The MidocoUser property can only contain items of type \Pggns\MidocoApi\System\StructType\MidocoUser, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoUser[] = $item;
         
@@ -157,7 +157,7 @@ class GetUserWithCrsExpedientRequest extends AbstractStructBase
      * Set crs value
      * @throws InvalidArgumentException
      * @param string[] $crs
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetUserWithCrsExpedientRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetUserWithCrsExpedientRequest
      */
     public function setCrs(?array $crs = null): self
     {
@@ -173,7 +173,7 @@ class GetUserWithCrsExpedientRequest extends AbstractStructBase
      * Add item to crs value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetUserWithCrsExpedientRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetUserWithCrsExpedientRequest
      */
     public function addToCrs(string $item): self
     {
@@ -196,7 +196,7 @@ class GetUserWithCrsExpedientRequest extends AbstractStructBase
     /**
      * Set doSearchParents value
      * @param bool $doSearchParents
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetUserWithCrsExpedientRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetUserWithCrsExpedientRequest
      */
     public function setDoSearchParents(?bool $doSearchParents = false): self
     {

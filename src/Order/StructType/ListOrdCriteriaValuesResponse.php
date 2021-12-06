@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListOrdCriteriaValuesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrdCriteriaValue
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaValueDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\OrdCriteriaValueDTO[]
      */
     protected ?array $MidocoOrdCriteriaValue = null;
     /**
      * Constructor method for ListOrdCriteriaValuesResponse
      * @uses ListOrdCriteriaValuesResponse::setMidocoOrdCriteriaValue()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaValueDTO[] $midocoOrdCriteriaValue
+     * @param \Pggns\MidocoApi\Order\StructType\OrdCriteriaValueDTO[] $midocoOrdCriteriaValue
      */
     public function __construct(?array $midocoOrdCriteriaValue = null)
     {
@@ -34,7 +34,7 @@ class ListOrdCriteriaValuesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrdCriteriaValue value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaValueDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\OrdCriteriaValueDTO[]
      */
     public function getMidocoOrdCriteriaValue(): ?array
     {
@@ -55,12 +55,12 @@ class ListOrdCriteriaValuesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listOrdCriteriaValuesResponseMidocoOrdCriteriaValueItem) {
             // validation for constraint: itemType
-            if (!$listOrdCriteriaValuesResponseMidocoOrdCriteriaValueItem instanceof \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaValueDTO) {
+            if (!$listOrdCriteriaValuesResponseMidocoOrdCriteriaValueItem instanceof \Pggns\MidocoApi\Order\StructType\OrdCriteriaValueDTO) {
                 $invalidValues[] = is_object($listOrdCriteriaValuesResponseMidocoOrdCriteriaValueItem) ? get_class($listOrdCriteriaValuesResponseMidocoOrdCriteriaValueItem) : sprintf('%s(%s)', gettype($listOrdCriteriaValuesResponseMidocoOrdCriteriaValueItem), var_export($listOrdCriteriaValuesResponseMidocoOrdCriteriaValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrdCriteriaValue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaValueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrdCriteriaValue property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrdCriteriaValueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListOrdCriteriaValuesResponse extends AbstractStructBase
     /**
      * Set MidocoOrdCriteriaValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaValueDTO[] $midocoOrdCriteriaValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ListOrdCriteriaValuesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrdCriteriaValueDTO[] $midocoOrdCriteriaValue
+     * @return \Pggns\MidocoApi\Order\StructType\ListOrdCriteriaValuesResponse
      */
     public function setMidocoOrdCriteriaValue(?array $midocoOrdCriteriaValue = null): self
     {
@@ -85,14 +85,14 @@ class ListOrdCriteriaValuesResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrdCriteriaValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaValueDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ListOrdCriteriaValuesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrdCriteriaValueDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\ListOrdCriteriaValuesResponse
      */
-    public function addToMidocoOrdCriteriaValue(\Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaValueDTO $item): self
+    public function addToMidocoOrdCriteriaValue(\Pggns\MidocoApi\Order\StructType\OrdCriteriaValueDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaValueDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrdCriteriaValue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrdCriteriaValueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\OrdCriteriaValueDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrdCriteriaValue property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrdCriteriaValueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrdCriteriaValue[] = $item;
         

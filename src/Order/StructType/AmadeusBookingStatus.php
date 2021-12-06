@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -40,7 +40,7 @@ class AmadeusBookingStatus extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTravelDetail
-     * @var \Pggns\MidocoApi\Api\Order\StructType\TravelDetailDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\TravelDetailDTO[]
      */
     protected ?array $MidocoTravelDetail = null;
     /**
@@ -76,7 +76,7 @@ class AmadeusBookingStatus extends AbstractStructBase
      * @param string $supplierId
      * @param string $bookingId
      * @param string $status
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TravelDetailDTO[] $midocoTravelDetail
+     * @param \Pggns\MidocoApi\Order\StructType\TravelDetailDTO[] $midocoTravelDetail
      * @param string $travelType
      * @param string $startDate
      * @param string $endDate
@@ -105,7 +105,7 @@ class AmadeusBookingStatus extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus
      */
     public function setSupplierId(string $supplierId): self
     {
@@ -128,7 +128,7 @@ class AmadeusBookingStatus extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus
      */
     public function setBookingId(string $bookingId): self
     {
@@ -151,7 +151,7 @@ class AmadeusBookingStatus extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus
      */
     public function setStatus(string $status): self
     {
@@ -165,7 +165,7 @@ class AmadeusBookingStatus extends AbstractStructBase
     }
     /**
      * Get MidocoTravelDetail value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelDetailDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\TravelDetailDTO[]
      */
     public function getMidocoTravelDetail(): ?array
     {
@@ -186,12 +186,12 @@ class AmadeusBookingStatus extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $amadeusBookingStatusMidocoTravelDetailItem) {
             // validation for constraint: itemType
-            if (!$amadeusBookingStatusMidocoTravelDetailItem instanceof \Pggns\MidocoApi\Api\Order\StructType\TravelDetailDTO) {
+            if (!$amadeusBookingStatusMidocoTravelDetailItem instanceof \Pggns\MidocoApi\Order\StructType\TravelDetailDTO) {
                 $invalidValues[] = is_object($amadeusBookingStatusMidocoTravelDetailItem) ? get_class($amadeusBookingStatusMidocoTravelDetailItem) : sprintf('%s(%s)', gettype($amadeusBookingStatusMidocoTravelDetailItem), var_export($amadeusBookingStatusMidocoTravelDetailItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTravelDetail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\TravelDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTravelDetail property can only contain items of type \Pggns\MidocoApi\Order\StructType\TravelDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -200,8 +200,8 @@ class AmadeusBookingStatus extends AbstractStructBase
     /**
      * Set MidocoTravelDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TravelDetailDTO[] $midocoTravelDetail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus
+     * @param \Pggns\MidocoApi\Order\StructType\TravelDetailDTO[] $midocoTravelDetail
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus
      */
     public function setMidocoTravelDetail(?array $midocoTravelDetail = null): self
     {
@@ -216,14 +216,14 @@ class AmadeusBookingStatus extends AbstractStructBase
     /**
      * Add item to MidocoTravelDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TravelDetailDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus
+     * @param \Pggns\MidocoApi\Order\StructType\TravelDetailDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus
      */
-    public function addToMidocoTravelDetail(\Pggns\MidocoApi\Api\Order\StructType\TravelDetailDTO $item): self
+    public function addToMidocoTravelDetail(\Pggns\MidocoApi\Order\StructType\TravelDetailDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\TravelDetailDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoTravelDetail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\TravelDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\TravelDetailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelDetail property can only contain items of type \Pggns\MidocoApi\Order\StructType\TravelDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTravelDetail[] = $item;
         
@@ -240,7 +240,7 @@ class AmadeusBookingStatus extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -263,7 +263,7 @@ class AmadeusBookingStatus extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -286,7 +286,7 @@ class AmadeusBookingStatus extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -309,7 +309,7 @@ class AmadeusBookingStatus extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {

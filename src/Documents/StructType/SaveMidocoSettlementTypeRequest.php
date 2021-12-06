@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoSettlementTypeRequest extends AbstractStructBase
      * The MidocoSettlementType
      * Meta information extracted from the WSDL
      * - ref: MidocoSettlementType
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO $MidocoSettlementType = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO $MidocoSettlementType = null;
     /**
      * Constructor method for SaveMidocoSettlementTypeRequest
      * @uses SaveMidocoSettlementTypeRequest::setMidocoSettlementType()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO $midocoSettlementType
+     * @param \Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO $midocoSettlementType
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO $midocoSettlementType = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO $midocoSettlementType = null)
     {
         $this
             ->setMidocoSettlementType($midocoSettlementType);
     }
     /**
      * Get MidocoSettlementType value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO|null
      */
-    public function getMidocoSettlementType(): ?\Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO
+    public function getMidocoSettlementType(): ?\Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO
     {
         return $this->MidocoSettlementType;
     }
     /**
      * Set MidocoSettlementType value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO $midocoSettlementType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveMidocoSettlementTypeRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO $midocoSettlementType
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveMidocoSettlementTypeRequest
      */
-    public function setMidocoSettlementType(?\Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO $midocoSettlementType = null): self
+    public function setMidocoSettlementType(?\Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO $midocoSettlementType = null): self
     {
         $this->MidocoSettlementType = $midocoSettlementType;
         

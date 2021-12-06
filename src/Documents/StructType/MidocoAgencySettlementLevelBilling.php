@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoAgencySettlementLevelBilling extends AgencyStlmntLevelBillDTO
     /**
      * Set tempRepositoryId value
      * @param int $tempRepositoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementLevelBilling
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementLevelBilling
      */
     public function setTempRepositoryId(?int $tempRepositoryId = null): self
     {

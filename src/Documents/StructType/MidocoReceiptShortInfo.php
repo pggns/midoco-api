@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -139,7 +139,7 @@ class MidocoReceiptShortInfo extends AbstractStructBase
     /**
      * Set receiptId value
      * @param int $receiptId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptShortInfo
      */
     public function setReceiptId(int $receiptId): self
     {
@@ -162,7 +162,7 @@ class MidocoReceiptShortInfo extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptShortInfo
      */
     public function setCashBookId(int $cashBookId): self
     {
@@ -185,7 +185,7 @@ class MidocoReceiptShortInfo extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param int $receiptNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptShortInfo
      */
     public function setReceiptNo(?int $receiptNo = null): self
     {
@@ -208,7 +208,7 @@ class MidocoReceiptShortInfo extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptShortInfo
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -231,7 +231,7 @@ class MidocoReceiptShortInfo extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptShortInfo
      */
     public function setName(?string $name = null): self
     {
@@ -254,7 +254,7 @@ class MidocoReceiptShortInfo extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptShortInfo
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -277,7 +277,7 @@ class MidocoReceiptShortInfo extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptShortInfo
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -300,7 +300,7 @@ class MidocoReceiptShortInfo extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptShortInfo
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -323,7 +323,7 @@ class MidocoReceiptShortInfo extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptShortInfo
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -346,7 +346,7 @@ class MidocoReceiptShortInfo extends AbstractStructBase
     /**
      * Set isVoided value
      * @param bool $isVoided
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptShortInfo
      */
     public function setIsVoided(?bool $isVoided = null): self
     {
@@ -369,7 +369,7 @@ class MidocoReceiptShortInfo extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptShortInfo
      */
     public function setDescription(?string $description = null): self
     {
@@ -392,7 +392,7 @@ class MidocoReceiptShortInfo extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptShortInfo
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -415,7 +415,7 @@ class MidocoReceiptShortInfo extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptShortInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptShortInfo
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {

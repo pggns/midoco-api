@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetBillingDocValueResponse extends AbstractStructBase
     /**
      * Set getDebitor value
      * @param string $getDebitor
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocValueResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocValueResponse
      */
     public function setGetDebitor(?string $getDebitor = null): self
     {
@@ -78,7 +78,7 @@ class GetBillingDocValueResponse extends AbstractStructBase
     /**
      * Set getValue value
      * @param float $getValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocValueResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocValueResponse
      */
     public function setGetValue(?float $getValue = null): self
     {
@@ -101,7 +101,7 @@ class GetBillingDocValueResponse extends AbstractStructBase
     /**
      * Set exist value
      * @param bool $exist
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocValueResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocValueResponse
      */
     public function setExist(?bool $exist = null): self
     {

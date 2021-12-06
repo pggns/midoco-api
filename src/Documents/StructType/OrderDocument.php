@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -33,9 +33,9 @@ class OrderDocument extends StandardDocument
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: address
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Address|null
+     * @var \Pggns\MidocoApi\Documents\StructType\Address|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\Address $address = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\Address $address = null;
     /**
      * The bookingId
      * @var string|null
@@ -69,13 +69,13 @@ class OrderDocument extends StandardDocument
      * @param int $orderDocumentId
      * @param int $orderId
      * @param int $orderNumber
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Address $address
+     * @param \Pggns\MidocoApi\Documents\StructType\Address $address
      * @param string $bookingId
      * @param string $startTravelDate
      * @param string $endTravelDate
      * @param string $supplierId
      */
-    public function __construct(?int $orderDocumentId = null, ?int $orderId = null, ?int $orderNumber = null, ?\Pggns\MidocoApi\Api\Documents\StructType\Address $address = null, ?string $bookingId = null, ?string $startTravelDate = null, ?string $endTravelDate = null, ?string $supplierId = null)
+    public function __construct(?int $orderDocumentId = null, ?int $orderId = null, ?int $orderNumber = null, ?\Pggns\MidocoApi\Documents\StructType\Address $address = null, ?string $bookingId = null, ?string $startTravelDate = null, ?string $endTravelDate = null, ?string $supplierId = null)
     {
         $this
             ->setOrderDocumentId($orderDocumentId)
@@ -98,7 +98,7 @@ class OrderDocument extends StandardDocument
     /**
      * Set OrderDocumentId value
      * @param int $orderDocumentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocument
      */
     public function setOrderDocumentId(?int $orderDocumentId = null): self
     {
@@ -121,7 +121,7 @@ class OrderDocument extends StandardDocument
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocument
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -144,7 +144,7 @@ class OrderDocument extends StandardDocument
     /**
      * Set orderNumber value
      * @param int $orderNumber
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocument
      */
     public function setOrderNumber(?int $orderNumber = null): self
     {
@@ -158,18 +158,18 @@ class OrderDocument extends StandardDocument
     }
     /**
      * Get address value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Address|null
+     * @return \Pggns\MidocoApi\Documents\StructType\Address|null
      */
-    public function getAddress(): ?\Pggns\MidocoApi\Api\Documents\StructType\Address
+    public function getAddress(): ?\Pggns\MidocoApi\Documents\StructType\Address
     {
         return $this->address;
     }
     /**
      * Set address value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Address $address
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocument
+     * @param \Pggns\MidocoApi\Documents\StructType\Address $address
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocument
      */
-    public function setAddress(?\Pggns\MidocoApi\Api\Documents\StructType\Address $address = null): self
+    public function setAddress(?\Pggns\MidocoApi\Documents\StructType\Address $address = null): self
     {
         $this->address = $address;
         
@@ -186,7 +186,7 @@ class OrderDocument extends StandardDocument
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocument
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -209,7 +209,7 @@ class OrderDocument extends StandardDocument
     /**
      * Set startTravelDate value
      * @param string $startTravelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocument
      */
     public function setStartTravelDate(?string $startTravelDate = null): self
     {
@@ -232,7 +232,7 @@ class OrderDocument extends StandardDocument
     /**
      * Set endTravelDate value
      * @param string $endTravelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocument
      */
     public function setEndTravelDate(?string $endTravelDate = null): self
     {
@@ -255,7 +255,7 @@ class OrderDocument extends StandardDocument
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDocument
      */
     public function setSupplierId(?string $supplierId = null): self
     {

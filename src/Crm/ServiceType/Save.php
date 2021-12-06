@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\ServiceType;
+namespace Pggns\MidocoApi\Crm\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Save extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Crm\ServiceType\Save
+     * @return \Pggns\MidocoApi\Crm\ServiceType\Save
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SavePrivateCustomerRequest $paramSavePrivateCustomerRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SavePrivateCustomerResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SavePrivateCustomerRequest $paramSavePrivateCustomerRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SavePrivateCustomerResponse|bool
      */
-    public function savePrivateCustomer(\Pggns\MidocoApi\Api\Crm\StructType\SavePrivateCustomerRequest $paramSavePrivateCustomerRequest)
+    public function savePrivateCustomer(\Pggns\MidocoApi\Crm\StructType\SavePrivateCustomerRequest $paramSavePrivateCustomerRequest)
     {
         try {
             $this->setResult($resultSavePrivateCustomer = $this->getSoapClient()->__soapCall('savePrivateCustomer', [
@@ -59,15 +59,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest $paramSavePrivateCustomerWithContactAndTravellersRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SavePrivateCustomerWithContactAndTravellersResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest $paramSavePrivateCustomerWithContactAndTravellersRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SavePrivateCustomerWithContactAndTravellersResponse|bool
      */
-    public function savePrivateCustomerWithContactAndTravellers(\Pggns\MidocoApi\Api\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest $paramSavePrivateCustomerWithContactAndTravellersRequest)
+    public function savePrivateCustomerWithContactAndTravellers(\Pggns\MidocoApi\Crm\StructType\SavePrivateCustomerWithContactAndTravellersRequest $paramSavePrivateCustomerWithContactAndTravellersRequest)
     {
         try {
             $this->setResult($resultSavePrivateCustomerWithContactAndTravellers = $this->getSoapClient()->__soapCall('savePrivateCustomerWithContactAndTravellers', [
@@ -86,15 +86,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveCompanyCustomerRequest $paramSaveCompanyCustomerRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCompanyCustomerResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveCompanyCustomerRequest $paramSaveCompanyCustomerRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCompanyCustomerResponse|bool
      */
-    public function saveCompanyCustomer(\Pggns\MidocoApi\Api\Crm\StructType\SaveCompanyCustomerRequest $paramSaveCompanyCustomerRequest)
+    public function saveCompanyCustomer(\Pggns\MidocoApi\Crm\StructType\SaveCompanyCustomerRequest $paramSaveCompanyCustomerRequest)
     {
         try {
             $this->setResult($resultSaveCompanyCustomer = $this->getSoapClient()->__soapCall('saveCompanyCustomer', [
@@ -113,15 +113,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveAddressRequest $paramSaveAddressRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveAddressResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveAddressRequest $paramSaveAddressRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveAddressResponse|bool
      */
-    public function saveAddress(\Pggns\MidocoApi\Api\Crm\StructType\SaveAddressRequest $paramSaveAddressRequest)
+    public function saveAddress(\Pggns\MidocoApi\Crm\StructType\SaveAddressRequest $paramSaveAddressRequest)
     {
         try {
             $this->setResult($resultSaveAddress = $this->getSoapClient()->__soapCall('saveAddress', [
@@ -140,15 +140,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveTravellerRequest $paramSaveTravellerRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveTravellerResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveTravellerRequest $paramSaveTravellerRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveTravellerResponse|bool
      */
-    public function saveTraveller(\Pggns\MidocoApi\Api\Crm\StructType\SaveTravellerRequest $paramSaveTravellerRequest)
+    public function saveTraveller(\Pggns\MidocoApi\Crm\StructType\SaveTravellerRequest $paramSaveTravellerRequest)
     {
         try {
             $this->setResult($resultSaveTraveller = $this->getSoapClient()->__soapCall('saveTraveller', [
@@ -167,15 +167,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveContactEntryRequest $paramSaveContactEntryRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveContactEntryResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveContactEntryRequest $paramSaveContactEntryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveContactEntryResponse|bool
      */
-    public function saveContactEntry(\Pggns\MidocoApi\Api\Crm\StructType\SaveContactEntryRequest $paramSaveContactEntryRequest)
+    public function saveContactEntry(\Pggns\MidocoApi\Crm\StructType\SaveContactEntryRequest $paramSaveContactEntryRequest)
     {
         try {
             $this->setResult($resultSaveContactEntry = $this->getSoapClient()->__soapCall('saveContactEntry', [
@@ -194,15 +194,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerCriteriaRequest $paramSaveCustomerCriteriaRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerCriteriaResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveCustomerCriteriaRequest $paramSaveCustomerCriteriaRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCustomerCriteriaResponse|bool
      */
-    public function saveCustomerCriteria(\Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerCriteriaRequest $paramSaveCustomerCriteriaRequest)
+    public function saveCustomerCriteria(\Pggns\MidocoApi\Crm\StructType\SaveCustomerCriteriaRequest $paramSaveCustomerCriteriaRequest)
     {
         try {
             $this->setResult($resultSaveCustomerCriteria = $this->getSoapClient()->__soapCall('saveCustomerCriteria', [
@@ -221,15 +221,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveDebitorRequest $paramSaveDebitorRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveDebitorResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveDebitorRequest $paramSaveDebitorRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveDebitorResponse|bool
      */
-    public function saveDebitor(\Pggns\MidocoApi\Api\Crm\StructType\SaveDebitorRequest $paramSaveDebitorRequest)
+    public function saveDebitor(\Pggns\MidocoApi\Crm\StructType\SaveDebitorRequest $paramSaveDebitorRequest)
     {
         try {
             $this->setResult($resultSaveDebitor = $this->getSoapClient()->__soapCall('saveDebitor', [
@@ -248,15 +248,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveDocumentRequest $paramSaveDocumentRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveDocumentResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveDocumentRequest $paramSaveDocumentRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveDocumentResponse|bool
      */
-    public function saveDocument(\Pggns\MidocoApi\Api\Crm\StructType\SaveDocumentRequest $paramSaveDocumentRequest)
+    public function saveDocument(\Pggns\MidocoApi\Crm\StructType\SaveDocumentRequest $paramSaveDocumentRequest)
     {
         try {
             $this->setResult($resultSaveDocument = $this->getSoapClient()->__soapCall('saveDocument', [
@@ -275,15 +275,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveDebitCardRequest $paramSaveDebitCardRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveDebitCardResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveDebitCardRequest $paramSaveDebitCardRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveDebitCardResponse|bool
      */
-    public function saveDebitCard(\Pggns\MidocoApi\Api\Crm\StructType\SaveDebitCardRequest $paramSaveDebitCardRequest)
+    public function saveDebitCard(\Pggns\MidocoApi\Crm\StructType\SaveDebitCardRequest $paramSaveDebitCardRequest)
     {
         try {
             $this->setResult($resultSaveDebitCard = $this->getSoapClient()->__soapCall('saveDebitCard', [
@@ -302,15 +302,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveCcCardRequest $paramSaveCcCardRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCcCardResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveCcCardRequest $paramSaveCcCardRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCcCardResponse|bool
      */
-    public function saveCcCard(\Pggns\MidocoApi\Api\Crm\StructType\SaveCcCardRequest $paramSaveCcCardRequest)
+    public function saveCcCard(\Pggns\MidocoApi\Crm\StructType\SaveCcCardRequest $paramSaveCcCardRequest)
     {
         try {
             $this->setResult($resultSaveCcCard = $this->getSoapClient()->__soapCall('saveCcCard', [
@@ -329,15 +329,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveBonusCardRequest $paramSaveBonusCardRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveBonusCardResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveBonusCardRequest $paramSaveBonusCardRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveBonusCardResponse|bool
      */
-    public function saveBonusCard(\Pggns\MidocoApi\Api\Crm\StructType\SaveBonusCardRequest $paramSaveBonusCardRequest)
+    public function saveBonusCard(\Pggns\MidocoApi\Crm\StructType\SaveBonusCardRequest $paramSaveBonusCardRequest)
     {
         try {
             $this->setResult($resultSaveBonusCard = $this->getSoapClient()->__soapCall('saveBonusCard', [
@@ -356,15 +356,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveComplaintRequest $paramSaveComplaintRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveComplaintResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveComplaintRequest $paramSaveComplaintRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveComplaintResponse|bool
      */
-    public function saveComplaint(\Pggns\MidocoApi\Api\Crm\StructType\SaveComplaintRequest $paramSaveComplaintRequest)
+    public function saveComplaint(\Pggns\MidocoApi\Crm\StructType\SaveComplaintRequest $paramSaveComplaintRequest)
     {
         try {
             $this->setResult($resultSaveComplaint = $this->getSoapClient()->__soapCall('saveComplaint', [
@@ -383,15 +383,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveComplaintDocumentRequest $paramSaveComplaintDocumentRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveComplaintDocumentResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveComplaintDocumentRequest $paramSaveComplaintDocumentRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveComplaintDocumentResponse|bool
      */
-    public function saveComplaintDocument(\Pggns\MidocoApi\Api\Crm\StructType\SaveComplaintDocumentRequest $paramSaveComplaintDocumentRequest)
+    public function saveComplaintDocument(\Pggns\MidocoApi\Crm\StructType\SaveComplaintDocumentRequest $paramSaveComplaintDocumentRequest)
     {
         try {
             $this->setResult($resultSaveComplaintDocument = $this->getSoapClient()->__soapCall('saveComplaintDocument', [
@@ -410,15 +410,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveComplaintReasonRequest $paramSaveComplaintReasonRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveComplaintReasonResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveComplaintReasonRequest $paramSaveComplaintReasonRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveComplaintReasonResponse|bool
      */
-    public function saveComplaintReason(\Pggns\MidocoApi\Api\Crm\StructType\SaveComplaintReasonRequest $paramSaveComplaintReasonRequest)
+    public function saveComplaintReason(\Pggns\MidocoApi\Crm\StructType\SaveComplaintReasonRequest $paramSaveComplaintReasonRequest)
     {
         try {
             $this->setResult($resultSaveComplaintReason = $this->getSoapClient()->__soapCall('saveComplaintReason', [
@@ -437,15 +437,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoCrmCustomerPaymentRequest $paramSaveMidocoCrmCustomerPaymentRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoCrmCustomerPaymentResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveMidocoCrmCustomerPaymentRequest $paramSaveMidocoCrmCustomerPaymentRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMidocoCrmCustomerPaymentResponse|bool
      */
-    public function saveMidocoCrmCustomerPayment(\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoCrmCustomerPaymentRequest $paramSaveMidocoCrmCustomerPaymentRequest)
+    public function saveMidocoCrmCustomerPayment(\Pggns\MidocoApi\Crm\StructType\SaveMidocoCrmCustomerPaymentRequest $paramSaveMidocoCrmCustomerPaymentRequest)
     {
         try {
             $this->setResult($resultSaveMidocoCrmCustomerPayment = $this->getSoapClient()->__soapCall('saveMidocoCrmCustomerPayment', [
@@ -464,15 +464,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveAgencyDetailsRequest $paramSaveAgencyDetailsRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveAgencyDetailsResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveAgencyDetailsRequest $paramSaveAgencyDetailsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveAgencyDetailsResponse|bool
      */
-    public function saveAgencyDetails(\Pggns\MidocoApi\Api\Crm\StructType\SaveAgencyDetailsRequest $paramSaveAgencyDetailsRequest)
+    public function saveAgencyDetails(\Pggns\MidocoApi\Crm\StructType\SaveAgencyDetailsRequest $paramSaveAgencyDetailsRequest)
     {
         try {
             $this->setResult($resultSaveAgencyDetails = $this->getSoapClient()->__soapCall('saveAgencyDetails', [
@@ -491,15 +491,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorTextTemplateRequest $paramSaveMediatorTextTemplateRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorTextTemplateResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveMediatorTextTemplateRequest $paramSaveMediatorTextTemplateRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMediatorTextTemplateResponse|bool
      */
-    public function saveMediatorTextTemplate(\Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorTextTemplateRequest $paramSaveMediatorTextTemplateRequest)
+    public function saveMediatorTextTemplate(\Pggns\MidocoApi\Crm\StructType\SaveMediatorTextTemplateRequest $paramSaveMediatorTextTemplateRequest)
     {
         try {
             $this->setResult($resultSaveMediatorTextTemplate = $this->getSoapClient()->__soapCall('saveMediatorTextTemplate', [
@@ -518,15 +518,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoAgencyRequest $paramSaveMidocoAgencyRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoAgencyResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveMidocoAgencyRequest $paramSaveMidocoAgencyRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMidocoAgencyResponse|bool
      */
-    public function saveMidocoAgency(\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoAgencyRequest $paramSaveMidocoAgencyRequest)
+    public function saveMidocoAgency(\Pggns\MidocoApi\Crm\StructType\SaveMidocoAgencyRequest $paramSaveMidocoAgencyRequest)
     {
         try {
             $this->setResult($resultSaveMidocoAgency = $this->getSoapClient()->__soapCall('saveMidocoAgency', [
@@ -545,15 +545,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorSettlementLevelRequest $paramSaveMediatorSettlementLevelRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorSettlementLevelResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveMediatorSettlementLevelRequest $paramSaveMediatorSettlementLevelRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMediatorSettlementLevelResponse|bool
      */
-    public function saveMediatorSettlementLevel(\Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorSettlementLevelRequest $paramSaveMediatorSettlementLevelRequest)
+    public function saveMediatorSettlementLevel(\Pggns\MidocoApi\Crm\StructType\SaveMediatorSettlementLevelRequest $paramSaveMediatorSettlementLevelRequest)
     {
         try {
             $this->setResult($resultSaveMediatorSettlementLevel = $this->getSoapClient()->__soapCall('saveMediatorSettlementLevel', [
@@ -572,15 +572,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorChargeRequest $paramSaveMediatorChargeRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorChargeResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveMediatorChargeRequest $paramSaveMediatorChargeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMediatorChargeResponse|bool
      */
-    public function saveMediatorCharge(\Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorChargeRequest $paramSaveMediatorChargeRequest)
+    public function saveMediatorCharge(\Pggns\MidocoApi\Crm\StructType\SaveMediatorChargeRequest $paramSaveMediatorChargeRequest)
     {
         try {
             $this->setResult($resultSaveMediatorCharge = $this->getSoapClient()->__soapCall('saveMediatorCharge', [
@@ -599,15 +599,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveGroupAdvisorRequest $paramSaveGroupAdvisorRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveGroupAdvisorResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveGroupAdvisorRequest $paramSaveGroupAdvisorRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveGroupAdvisorResponse|bool
      */
-    public function saveGroupAdvisor(\Pggns\MidocoApi\Api\Crm\StructType\SaveGroupAdvisorRequest $paramSaveGroupAdvisorRequest)
+    public function saveGroupAdvisor(\Pggns\MidocoApi\Crm\StructType\SaveGroupAdvisorRequest $paramSaveGroupAdvisorRequest)
     {
         try {
             $this->setResult($resultSaveGroupAdvisor = $this->getSoapClient()->__soapCall('saveGroupAdvisor', [
@@ -626,15 +626,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorRevenuesRequest $paramSaveMediatorRevenuesRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorRevenuesResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveMediatorRevenuesRequest $paramSaveMediatorRevenuesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMediatorRevenuesResponse|bool
      */
-    public function saveMediatorRevenues(\Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorRevenuesRequest $paramSaveMediatorRevenuesRequest)
+    public function saveMediatorRevenues(\Pggns\MidocoApi\Crm\StructType\SaveMediatorRevenuesRequest $paramSaveMediatorRevenuesRequest)
     {
         try {
             $this->setResult($resultSaveMediatorRevenues = $this->getSoapClient()->__soapCall('saveMediatorRevenues', [
@@ -653,15 +653,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoAgencyNumberRequest $paramSaveMidocoAgencyNumberRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoAgencyNumberResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveMidocoAgencyNumberRequest $paramSaveMidocoAgencyNumberRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMidocoAgencyNumberResponse|bool
      */
-    public function saveAgencyNumber(\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoAgencyNumberRequest $paramSaveMidocoAgencyNumberRequest)
+    public function saveAgencyNumber(\Pggns\MidocoApi\Crm\StructType\SaveMidocoAgencyNumberRequest $paramSaveMidocoAgencyNumberRequest)
     {
         try {
             $this->setResult($resultSaveAgencyNumber = $this->getSoapClient()->__soapCall('saveAgencyNumber', [
@@ -680,15 +680,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoSupplierReportFormatRequest $paramSaveMidocoSupplierReportFormatRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoSupplierReportFormatResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveMidocoSupplierReportFormatRequest $paramSaveMidocoSupplierReportFormatRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMidocoSupplierReportFormatResponse|bool
      */
-    public function saveMidocoSupplierReport(\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoSupplierReportFormatRequest $paramSaveMidocoSupplierReportFormatRequest)
+    public function saveMidocoSupplierReport(\Pggns\MidocoApi\Crm\StructType\SaveMidocoSupplierReportFormatRequest $paramSaveMidocoSupplierReportFormatRequest)
     {
         try {
             $this->setResult($resultSaveMidocoSupplierReport = $this->getSoapClient()->__soapCall('saveMidocoSupplierReport', [
@@ -707,15 +707,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveCrmNoticesRequest $paramSaveCrmNoticesRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCrmNoticesResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveCrmNoticesRequest $paramSaveCrmNoticesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCrmNoticesResponse|bool
      */
-    public function saveCrmNotices(\Pggns\MidocoApi\Api\Crm\StructType\SaveCrmNoticesRequest $paramSaveCrmNoticesRequest)
+    public function saveCrmNotices(\Pggns\MidocoApi\Crm\StructType\SaveCrmNoticesRequest $paramSaveCrmNoticesRequest)
     {
         try {
             $this->setResult($resultSaveCrmNotices = $this->getSoapClient()->__soapCall('saveCrmNotices', [
@@ -734,15 +734,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerCommissionDefinitionRequest $paramSaveCustomerCommissionDefinitionRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerCommissionDefinitionResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveCustomerCommissionDefinitionRequest $paramSaveCustomerCommissionDefinitionRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCustomerCommissionDefinitionResponse|bool
      */
-    public function saveCustomerCommissionDefinition(\Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerCommissionDefinitionRequest $paramSaveCustomerCommissionDefinitionRequest)
+    public function saveCustomerCommissionDefinition(\Pggns\MidocoApi\Crm\StructType\SaveCustomerCommissionDefinitionRequest $paramSaveCustomerCommissionDefinitionRequest)
     {
         try {
             $this->setResult($resultSaveCustomerCommissionDefinition = $this->getSoapClient()->__soapCall('saveCustomerCommissionDefinition', [
@@ -761,15 +761,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SavePrintRecipientRequest $paramSavePrintRecipientRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SavePrintRecipientResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SavePrintRecipientRequest $paramSavePrintRecipientRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SavePrintRecipientResponse|bool
      */
-    public function savePrintRecipient(\Pggns\MidocoApi\Api\Crm\StructType\SavePrintRecipientRequest $paramSavePrintRecipientRequest)
+    public function savePrintRecipient(\Pggns\MidocoApi\Crm\StructType\SavePrintRecipientRequest $paramSavePrintRecipientRequest)
     {
         try {
             $this->setResult($resultSavePrintRecipient = $this->getSoapClient()->__soapCall('savePrintRecipient', [
@@ -788,15 +788,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoMediatorRequest $paramSaveMidocoMediatorRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoMediatorResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveMidocoMediatorRequest $paramSaveMidocoMediatorRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMidocoMediatorResponse|bool
      */
-    public function saveMidocoMediator(\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoMediatorRequest $paramSaveMidocoMediatorRequest)
+    public function saveMidocoMediator(\Pggns\MidocoApi\Crm\StructType\SaveMidocoMediatorRequest $paramSaveMidocoMediatorRequest)
     {
         try {
             $this->setResult($resultSaveMidocoMediator = $this->getSoapClient()->__soapCall('saveMidocoMediator', [
@@ -815,15 +815,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveCrmPersonTravellerRequest $paramSaveCrmPersonTravellerRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCrmPersonTravellerResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveCrmPersonTravellerRequest $paramSaveCrmPersonTravellerRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCrmPersonTravellerResponse|bool
      */
-    public function saveCrmPersonTraveller(\Pggns\MidocoApi\Api\Crm\StructType\SaveCrmPersonTravellerRequest $paramSaveCrmPersonTravellerRequest)
+    public function saveCrmPersonTraveller(\Pggns\MidocoApi\Crm\StructType\SaveCrmPersonTravellerRequest $paramSaveCrmPersonTravellerRequest)
     {
         try {
             $this->setResult($resultSaveCrmPersonTraveller = $this->getSoapClient()->__soapCall('saveCrmPersonTraveller', [
@@ -842,15 +842,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveFrequentFlyerNumberRequest $paramSaveFrequentFlyerNumberRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveFrequentFlyerNumberResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveFrequentFlyerNumberRequest $paramSaveFrequentFlyerNumberRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveFrequentFlyerNumberResponse|bool
      */
-    public function saveFrequentFlyerNumber(\Pggns\MidocoApi\Api\Crm\StructType\SaveFrequentFlyerNumberRequest $paramSaveFrequentFlyerNumberRequest)
+    public function saveFrequentFlyerNumber(\Pggns\MidocoApi\Crm\StructType\SaveFrequentFlyerNumberRequest $paramSaveFrequentFlyerNumberRequest)
     {
         try {
             $this->setResult($resultSaveFrequentFlyerNumber = $this->getSoapClient()->__soapCall('saveFrequentFlyerNumber', [
@@ -869,15 +869,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerMfRequest $paramSaveCustomerMfRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerMfResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveCustomerMfRequest $paramSaveCustomerMfRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCustomerMfResponse|bool
      */
-    public function saveCustomerMf(\Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerMfRequest $paramSaveCustomerMfRequest)
+    public function saveCustomerMf(\Pggns\MidocoApi\Crm\StructType\SaveCustomerMfRequest $paramSaveCustomerMfRequest)
     {
         try {
             $this->setResult($resultSaveCustomerMf = $this->getSoapClient()->__soapCall('saveCustomerMf', [
@@ -896,15 +896,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveContactSourceRequest $paramSaveContactSourceRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveContactSourceResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveContactSourceRequest $paramSaveContactSourceRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveContactSourceResponse|bool
      */
-    public function saveContactSource(\Pggns\MidocoApi\Api\Crm\StructType\SaveContactSourceRequest $paramSaveContactSourceRequest)
+    public function saveContactSource(\Pggns\MidocoApi\Crm\StructType\SaveContactSourceRequest $paramSaveContactSourceRequest)
     {
         try {
             $this->setResult($resultSaveContactSource = $this->getSoapClient()->__soapCall('saveContactSource', [
@@ -923,15 +923,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveCreditorRequest $paramSaveCreditorRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCreditorResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveCreditorRequest $paramSaveCreditorRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCreditorResponse|bool
      */
-    public function saveCreditor(\Pggns\MidocoApi\Api\Crm\StructType\SaveCreditorRequest $paramSaveCreditorRequest)
+    public function saveCreditor(\Pggns\MidocoApi\Crm\StructType\SaveCreditorRequest $paramSaveCreditorRequest)
     {
         try {
             $this->setResult($resultSaveCreditor = $this->getSoapClient()->__soapCall('saveCreditor', [
@@ -950,15 +950,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveCommunicationHistoriesRequest $paramSaveCommunicationHistoriesRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCommunicationHistoriesResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveCommunicationHistoriesRequest $paramSaveCommunicationHistoriesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCommunicationHistoriesResponse|bool
      */
-    public function saveCommunicationHistories(\Pggns\MidocoApi\Api\Crm\StructType\SaveCommunicationHistoriesRequest $paramSaveCommunicationHistoriesRequest)
+    public function saveCommunicationHistories(\Pggns\MidocoApi\Crm\StructType\SaveCommunicationHistoriesRequest $paramSaveCommunicationHistoriesRequest)
     {
         try {
             $this->setResult($resultSaveCommunicationHistories = $this->getSoapClient()->__soapCall('saveCommunicationHistories', [
@@ -977,15 +977,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveCollectiveInvoiceSettingRequest $paramSaveCollectiveInvoiceSettingRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCollectiveInvoiceSettingResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveCollectiveInvoiceSettingRequest $paramSaveCollectiveInvoiceSettingRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCollectiveInvoiceSettingResponse|bool
      */
-    public function saveCollectiveInvoiceSetting(\Pggns\MidocoApi\Api\Crm\StructType\SaveCollectiveInvoiceSettingRequest $paramSaveCollectiveInvoiceSettingRequest)
+    public function saveCollectiveInvoiceSetting(\Pggns\MidocoApi\Crm\StructType\SaveCollectiveInvoiceSettingRequest $paramSaveCollectiveInvoiceSettingRequest)
     {
         try {
             $this->setResult($resultSaveCollectiveInvoiceSetting = $this->getSoapClient()->__soapCall('saveCollectiveInvoiceSetting', [
@@ -1004,15 +1004,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveAgencyCooperationHistoryRequest $paramSaveAgencyCooperationHistoryRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveAgencyCooperationHistoryResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveAgencyCooperationHistoryRequest $paramSaveAgencyCooperationHistoryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveAgencyCooperationHistoryResponse|bool
      */
-    public function saveAgencyCooperationHistory(\Pggns\MidocoApi\Api\Crm\StructType\SaveAgencyCooperationHistoryRequest $paramSaveAgencyCooperationHistoryRequest)
+    public function saveAgencyCooperationHistory(\Pggns\MidocoApi\Crm\StructType\SaveAgencyCooperationHistoryRequest $paramSaveAgencyCooperationHistoryRequest)
     {
         try {
             $this->setResult($resultSaveAgencyCooperationHistory = $this->getSoapClient()->__soapCall('saveAgencyCooperationHistory', [
@@ -1031,15 +1031,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoChargeRequest $paramSaveMidocoChargeRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoChargeResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveMidocoChargeRequest $paramSaveMidocoChargeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMidocoChargeResponse|bool
      */
-    public function saveMidocoCharge(\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoChargeRequest $paramSaveMidocoChargeRequest)
+    public function saveMidocoCharge(\Pggns\MidocoApi\Crm\StructType\SaveMidocoChargeRequest $paramSaveMidocoChargeRequest)
     {
         try {
             $this->setResult($resultSaveMidocoCharge = $this->getSoapClient()->__soapCall('saveMidocoCharge', [
@@ -1058,15 +1058,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoChargeOrgUnitRequest $paramSaveMidocoChargeOrgUnitRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoChargeOrgUnitResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveMidocoChargeOrgUnitRequest $paramSaveMidocoChargeOrgUnitRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMidocoChargeOrgUnitResponse|bool
      */
-    public function saveMidocoChargeOrgUnit(\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoChargeOrgUnitRequest $paramSaveMidocoChargeOrgUnitRequest)
+    public function saveMidocoChargeOrgUnit(\Pggns\MidocoApi\Crm\StructType\SaveMidocoChargeOrgUnitRequest $paramSaveMidocoChargeOrgUnitRequest)
     {
         try {
             $this->setResult($resultSaveMidocoChargeOrgUnit = $this->getSoapClient()->__soapCall('saveMidocoChargeOrgUnit', [
@@ -1085,15 +1085,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveCrmPrintTypeRequest $paramSaveCrmPrintTypeRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCrmPrintTypeResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveCrmPrintTypeRequest $paramSaveCrmPrintTypeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCrmPrintTypeResponse|bool
      */
-    public function saveCrmPrintType(\Pggns\MidocoApi\Api\Crm\StructType\SaveCrmPrintTypeRequest $paramSaveCrmPrintTypeRequest)
+    public function saveCrmPrintType(\Pggns\MidocoApi\Crm\StructType\SaveCrmPrintTypeRequest $paramSaveCrmPrintTypeRequest)
     {
         try {
             $this->setResult($resultSaveCrmPrintType = $this->getSoapClient()->__soapCall('saveCrmPrintType', [
@@ -1112,15 +1112,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoMandateRequest $paramSaveMidocoMandateRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoMandateResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveMidocoMandateRequest $paramSaveMidocoMandateRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMidocoMandateResponse|bool
      */
-    public function saveMidocoMandate(\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoMandateRequest $paramSaveMidocoMandateRequest)
+    public function saveMidocoMandate(\Pggns\MidocoApi\Crm\StructType\SaveMidocoMandateRequest $paramSaveMidocoMandateRequest)
     {
         try {
             $this->setResult($resultSaveMidocoMandate = $this->getSoapClient()->__soapCall('saveMidocoMandate', [
@@ -1139,15 +1139,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveAutoBillingMatrixRequest $paramSaveAutoBillingMatrixRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveAutoBillingMatrixResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveAutoBillingMatrixRequest $paramSaveAutoBillingMatrixRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveAutoBillingMatrixResponse|bool
      */
-    public function saveAutoBillingMatrix(\Pggns\MidocoApi\Api\Crm\StructType\SaveAutoBillingMatrixRequest $paramSaveAutoBillingMatrixRequest)
+    public function saveAutoBillingMatrix(\Pggns\MidocoApi\Crm\StructType\SaveAutoBillingMatrixRequest $paramSaveAutoBillingMatrixRequest)
     {
         try {
             $this->setResult($resultSaveAutoBillingMatrix = $this->getSoapClient()->__soapCall('saveAutoBillingMatrix', [
@@ -1166,15 +1166,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveCrmNoticeCommentRequest $paramSaveCrmNoticeCommentRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCrmNoticeCommentResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveCrmNoticeCommentRequest $paramSaveCrmNoticeCommentRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCrmNoticeCommentResponse|bool
      */
-    public function saveCrmNoticeComment(\Pggns\MidocoApi\Api\Crm\StructType\SaveCrmNoticeCommentRequest $paramSaveCrmNoticeCommentRequest)
+    public function saveCrmNoticeComment(\Pggns\MidocoApi\Crm\StructType\SaveCrmNoticeCommentRequest $paramSaveCrmNoticeCommentRequest)
     {
         try {
             $this->setResult($resultSaveCrmNoticeComment = $this->getSoapClient()->__soapCall('saveCrmNoticeComment', [
@@ -1193,15 +1193,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\SaveGroupConsentRequest $paramSaveGroupConsentRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveGroupConsentResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\SaveGroupConsentRequest $paramSaveGroupConsentRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveGroupConsentResponse|bool
      */
-    public function saveGroupConsent(\Pggns\MidocoApi\Api\Crm\StructType\SaveGroupConsentRequest $paramSaveGroupConsentRequest)
+    public function saveGroupConsent(\Pggns\MidocoApi\Crm\StructType\SaveGroupConsentRequest $paramSaveGroupConsentRequest)
     {
         try {
             $this->setResult($resultSaveGroupConsent = $this->getSoapClient()->__soapCall('saveGroupConsent', [
@@ -1218,7 +1218,7 @@ class Save extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveAddressResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveAgencyCooperationHistoryResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveAgencyDetailsResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveAutoBillingMatrixResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveBonusCardResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveCcCardResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveCollectiveInvoiceSettingResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveCommunicationHistoriesResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveCompanyCustomerResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveComplaintDocumentResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveComplaintReasonResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveComplaintResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveContactEntryResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveContactSourceResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveCreditorResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveCrmNoticeCommentResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveCrmNoticesResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveCrmPersonTravellerResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveCrmPrintTypeResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerCommissionDefinitionResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerCriteriaResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerMfResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveDebitCardResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveDebitorResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveDocumentResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveFrequentFlyerNumberResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveGroupAdvisorResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveGroupConsentResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorChargeResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorRevenuesResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorSettlementLevelResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveMediatorTextTemplateResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoAgencyNumberResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoAgencyResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoChargeOrgUnitResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoChargeResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoCrmCustomerPaymentResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoMandateResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoMediatorResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoSupplierReportFormatResponse|\Pggns\MidocoApi\Api\Crm\StructType\SavePrintRecipientResponse|\Pggns\MidocoApi\Api\Crm\StructType\SavePrivateCustomerResponse|\Pggns\MidocoApi\Api\Crm\StructType\SavePrivateCustomerWithContactAndTravellersResponse|\Pggns\MidocoApi\Api\Crm\StructType\SaveTravellerResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveAddressResponse|\Pggns\MidocoApi\Crm\StructType\SaveAgencyCooperationHistoryResponse|\Pggns\MidocoApi\Crm\StructType\SaveAgencyDetailsResponse|\Pggns\MidocoApi\Crm\StructType\SaveAutoBillingMatrixResponse|\Pggns\MidocoApi\Crm\StructType\SaveBonusCardResponse|\Pggns\MidocoApi\Crm\StructType\SaveCcCardResponse|\Pggns\MidocoApi\Crm\StructType\SaveCollectiveInvoiceSettingResponse|\Pggns\MidocoApi\Crm\StructType\SaveCommunicationHistoriesResponse|\Pggns\MidocoApi\Crm\StructType\SaveCompanyCustomerResponse|\Pggns\MidocoApi\Crm\StructType\SaveComplaintDocumentResponse|\Pggns\MidocoApi\Crm\StructType\SaveComplaintReasonResponse|\Pggns\MidocoApi\Crm\StructType\SaveComplaintResponse|\Pggns\MidocoApi\Crm\StructType\SaveContactEntryResponse|\Pggns\MidocoApi\Crm\StructType\SaveContactSourceResponse|\Pggns\MidocoApi\Crm\StructType\SaveCreditorResponse|\Pggns\MidocoApi\Crm\StructType\SaveCrmNoticeCommentResponse|\Pggns\MidocoApi\Crm\StructType\SaveCrmNoticesResponse|\Pggns\MidocoApi\Crm\StructType\SaveCrmPersonTravellerResponse|\Pggns\MidocoApi\Crm\StructType\SaveCrmPrintTypeResponse|\Pggns\MidocoApi\Crm\StructType\SaveCustomerCommissionDefinitionResponse|\Pggns\MidocoApi\Crm\StructType\SaveCustomerCriteriaResponse|\Pggns\MidocoApi\Crm\StructType\SaveCustomerMfResponse|\Pggns\MidocoApi\Crm\StructType\SaveDebitCardResponse|\Pggns\MidocoApi\Crm\StructType\SaveDebitorResponse|\Pggns\MidocoApi\Crm\StructType\SaveDocumentResponse|\Pggns\MidocoApi\Crm\StructType\SaveFrequentFlyerNumberResponse|\Pggns\MidocoApi\Crm\StructType\SaveGroupAdvisorResponse|\Pggns\MidocoApi\Crm\StructType\SaveGroupConsentResponse|\Pggns\MidocoApi\Crm\StructType\SaveMediatorChargeResponse|\Pggns\MidocoApi\Crm\StructType\SaveMediatorRevenuesResponse|\Pggns\MidocoApi\Crm\StructType\SaveMediatorSettlementLevelResponse|\Pggns\MidocoApi\Crm\StructType\SaveMediatorTextTemplateResponse|\Pggns\MidocoApi\Crm\StructType\SaveMidocoAgencyNumberResponse|\Pggns\MidocoApi\Crm\StructType\SaveMidocoAgencyResponse|\Pggns\MidocoApi\Crm\StructType\SaveMidocoChargeOrgUnitResponse|\Pggns\MidocoApi\Crm\StructType\SaveMidocoChargeResponse|\Pggns\MidocoApi\Crm\StructType\SaveMidocoCrmCustomerPaymentResponse|\Pggns\MidocoApi\Crm\StructType\SaveMidocoMandateResponse|\Pggns\MidocoApi\Crm\StructType\SaveMidocoMediatorResponse|\Pggns\MidocoApi\Crm\StructType\SaveMidocoSupplierReportFormatResponse|\Pggns\MidocoApi\Crm\StructType\SavePrintRecipientResponse|\Pggns\MidocoApi\Crm\StructType\SavePrivateCustomerResponse|\Pggns\MidocoApi\Crm\StructType\SavePrivateCustomerWithContactAndTravellersResponse|\Pggns\MidocoApi\Crm\StructType\SaveTravellerResponse
      */
     public function getResult()
     {

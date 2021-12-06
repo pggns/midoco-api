@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CreateCustomerLetterResponse extends AbstractStructBase
     /**
      * Set PrintjobContent value
      * @param string $printjobContent
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CreateCustomerLetterResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\CreateCustomerLetterResponse
      */
     public function setPrintjobContent(?string $printjobContent = null): self
     {

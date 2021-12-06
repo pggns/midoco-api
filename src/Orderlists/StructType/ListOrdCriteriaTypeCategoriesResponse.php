@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListOrdCriteriaTypeCategoriesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrdCriteriaTypeCategoryInfo
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo[]
      */
     protected ?array $MidocoOrdCriteriaTypeCategoryInfo = null;
     /**
      * Constructor method for ListOrdCriteriaTypeCategoriesResponse
      * @uses ListOrdCriteriaTypeCategoriesResponse::setMidocoOrdCriteriaTypeCategoryInfo()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo[] $midocoOrdCriteriaTypeCategoryInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo[] $midocoOrdCriteriaTypeCategoryInfo
      */
     public function __construct(?array $midocoOrdCriteriaTypeCategoryInfo = null)
     {
@@ -34,7 +34,7 @@ class ListOrdCriteriaTypeCategoriesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrdCriteriaTypeCategoryInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo[]
      */
     public function getMidocoOrdCriteriaTypeCategoryInfo(): ?array
     {
@@ -55,12 +55,12 @@ class ListOrdCriteriaTypeCategoriesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listOrdCriteriaTypeCategoriesResponseMidocoOrdCriteriaTypeCategoryInfoItem) {
             // validation for constraint: itemType
-            if (!$listOrdCriteriaTypeCategoriesResponseMidocoOrdCriteriaTypeCategoryInfoItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo) {
+            if (!$listOrdCriteriaTypeCategoriesResponseMidocoOrdCriteriaTypeCategoryInfoItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo) {
                 $invalidValues[] = is_object($listOrdCriteriaTypeCategoriesResponseMidocoOrdCriteriaTypeCategoryInfoItem) ? get_class($listOrdCriteriaTypeCategoriesResponseMidocoOrdCriteriaTypeCategoryInfoItem) : sprintf('%s(%s)', gettype($listOrdCriteriaTypeCategoriesResponseMidocoOrdCriteriaTypeCategoryInfoItem), var_export($listOrdCriteriaTypeCategoriesResponseMidocoOrdCriteriaTypeCategoryInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrdCriteriaTypeCategoryInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrdCriteriaTypeCategoryInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListOrdCriteriaTypeCategoriesResponse extends AbstractStructBase
     /**
      * Set MidocoOrdCriteriaTypeCategoryInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo[] $midocoOrdCriteriaTypeCategoryInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListOrdCriteriaTypeCategoriesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo[] $midocoOrdCriteriaTypeCategoryInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListOrdCriteriaTypeCategoriesResponse
      */
     public function setMidocoOrdCriteriaTypeCategoryInfo(?array $midocoOrdCriteriaTypeCategoryInfo = null): self
     {
@@ -85,14 +85,14 @@ class ListOrdCriteriaTypeCategoriesResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrdCriteriaTypeCategoryInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListOrdCriteriaTypeCategoriesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListOrdCriteriaTypeCategoriesResponse
      */
-    public function addToMidocoOrdCriteriaTypeCategoryInfo(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo $item): self
+    public function addToMidocoOrdCriteriaTypeCategoryInfo(\Pggns\MidocoApi\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrdCriteriaTypeCategoryInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrdCriteriaTypeCategoryInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOrdCriteriaTypeCategoryInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrdCriteriaTypeCategoryInfo[] = $item;
         

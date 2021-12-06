@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class ClientPerformanceLogListRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogListRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -110,7 +110,7 @@ class ClientPerformanceLogListRequest extends AbstractStructBase
     /**
      * Set actionName value
      * @param string $actionName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogListRequest
      */
     public function setActionName(?string $actionName = null): self
     {
@@ -133,7 +133,7 @@ class ClientPerformanceLogListRequest extends AbstractStructBase
     /**
      * Set includingChildren value
      * @param bool $includingChildren
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogListRequest
      */
     public function setIncludingChildren(?bool $includingChildren = null): self
     {
@@ -156,7 +156,7 @@ class ClientPerformanceLogListRequest extends AbstractStructBase
     /**
      * Set startTimeFrom1 value
      * @param string $startTimeFrom1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogListRequest
      */
     public function setStartTimeFrom1(?string $startTimeFrom1 = null): self
     {
@@ -179,7 +179,7 @@ class ClientPerformanceLogListRequest extends AbstractStructBase
     /**
      * Set startTimeTo1 value
      * @param string $startTimeTo1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogListRequest
      */
     public function setStartTimeTo1(?string $startTimeTo1 = null): self
     {
@@ -202,7 +202,7 @@ class ClientPerformanceLogListRequest extends AbstractStructBase
     /**
      * Set startTimeFrom2 value
      * @param string $startTimeFrom2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogListRequest
      */
     public function setStartTimeFrom2(?string $startTimeFrom2 = null): self
     {
@@ -225,7 +225,7 @@ class ClientPerformanceLogListRequest extends AbstractStructBase
     /**
      * Set startTimeTo2 value
      * @param string $startTimeTo2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogListRequest
      */
     public function setStartTimeTo2(?string $startTimeTo2 = null): self
     {

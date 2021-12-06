@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SuppCMappingChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCMappingChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCMappingChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -102,7 +102,7 @@ class SuppCMappingChgLogDTO extends AbstractStructBase
     /**
      * Set mainSupplierId value
      * @param string $mainSupplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCMappingChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCMappingChgLogDTO
      */
     public function setMainSupplierId(?string $mainSupplierId = null): self
     {
@@ -125,7 +125,7 @@ class SuppCMappingChgLogDTO extends AbstractStructBase
     /**
      * Set suppCancelCMappingId value
      * @param int $suppCancelCMappingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCMappingChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCMappingChgLogDTO
      */
     public function setSuppCancelCMappingId(?int $suppCancelCMappingId = null): self
     {
@@ -148,7 +148,7 @@ class SuppCMappingChgLogDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCMappingChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCMappingChgLogDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -171,7 +171,7 @@ class SuppCMappingChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCMappingChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCMappingChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -194,7 +194,7 @@ class SuppCMappingChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCMappingChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCMappingChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -215,7 +215,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -238,7 +238,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set customerCity value
      * @param string $customerCity
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setCustomerCity(?string $customerCity = null): self
     {
@@ -261,7 +261,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set customerCountry value
      * @param string $customerCountry
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setCustomerCountry(?string $customerCountry = null): self
     {
@@ -284,7 +284,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -307,7 +307,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -330,7 +330,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set customerPostalcode value
      * @param string $customerPostalcode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setCustomerPostalcode(?string $customerPostalcode = null): self
     {
@@ -353,7 +353,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set customerStreet value
      * @param string $customerStreet
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setCustomerStreet(?string $customerStreet = null): self
     {
@@ -376,7 +376,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set customerType value
      * @param string $customerType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setCustomerType(?string $customerType = null): self
     {
@@ -399,7 +399,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set customerVatid value
      * @param string $customerVatid
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setCustomerVatid(?string $customerVatid = null): self
     {
@@ -422,7 +422,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -445,7 +445,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set isVoidReceipt value
      * @param bool $isVoidReceipt
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setIsVoidReceipt(?bool $isVoidReceipt = null): self
     {
@@ -468,7 +468,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set printId value
      * @param int $printId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setPrintId(?int $printId = null): self
     {
@@ -491,7 +491,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set printingUser value
      * @param int $printingUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setPrintingUser(?int $printingUser = null): self
     {
@@ -514,7 +514,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -537,7 +537,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set receiptEndtime value
      * @param string $receiptEndtime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setReceiptEndtime(?string $receiptEndtime = null): self
     {
@@ -560,7 +560,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set receiptId value
      * @param int $receiptId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setReceiptId(?int $receiptId = null): self
     {
@@ -583,7 +583,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param int $receiptNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setReceiptNo(?int $receiptNo = null): self
     {
@@ -606,7 +606,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set receiptRecordId value
      * @param int $receiptRecordId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setReceiptRecordId(?int $receiptRecordId = null): self
     {
@@ -629,7 +629,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set receiptRecordSequence value
      * @param int $receiptRecordSequence
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setReceiptRecordSequence(?int $receiptRecordSequence = null): self
     {
@@ -652,7 +652,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set receiptStarttime value
      * @param string $receiptStarttime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setReceiptStarttime(?string $receiptStarttime = null): self
     {
@@ -675,7 +675,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set totalPayment value
      * @param float $totalPayment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setTotalPayment(?float $totalPayment = null): self
     {
@@ -698,7 +698,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set totalSaleAmount value
      * @param float $totalSaleAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setTotalSaleAmount(?float $totalSaleAmount = null): self
     {
@@ -721,7 +721,7 @@ class ReceiptRecordDTO extends AbstractStructBase
     /**
      * Set workstationId value
      * @param string $workstationId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordDTO
      */
     public function setWorkstationId(?string $workstationId = null): self
     {

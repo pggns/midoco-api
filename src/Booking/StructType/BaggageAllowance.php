@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -114,7 +114,7 @@ class BaggageAllowance extends AbstractStructBase
      * Set TravelerRefId value
      * @throws InvalidArgumentException
      * @param int[] $travelerRefId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BaggageAllowance
+     * @return \Pggns\MidocoApi\Booking\StructType\BaggageAllowance
      */
     public function setTravelerRefId(?array $travelerRefId = null): self
     {
@@ -130,7 +130,7 @@ class BaggageAllowance extends AbstractStructBase
      * Add item to TravelerRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BaggageAllowance
+     * @return \Pggns\MidocoApi\Booking\StructType\BaggageAllowance
      */
     public function addToTravelerRefId(int $item): self
     {
@@ -180,7 +180,7 @@ class BaggageAllowance extends AbstractStructBase
      * Set BookingDetailRefId value
      * @throws InvalidArgumentException
      * @param int[] $bookingDetailRefId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BaggageAllowance
+     * @return \Pggns\MidocoApi\Booking\StructType\BaggageAllowance
      */
     public function setBookingDetailRefId(?array $bookingDetailRefId = null): self
     {
@@ -196,7 +196,7 @@ class BaggageAllowance extends AbstractStructBase
      * Add item to BookingDetailRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BaggageAllowance
+     * @return \Pggns\MidocoApi\Booking\StructType\BaggageAllowance
      */
     public function addToBookingDetailRefId(int $item): self
     {
@@ -219,7 +219,7 @@ class BaggageAllowance extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BaggageAllowance
+     * @return \Pggns\MidocoApi\Booking\StructType\BaggageAllowance
      */
     public function setDescription(?string $description = null): self
     {
@@ -242,7 +242,7 @@ class BaggageAllowance extends AbstractStructBase
     /**
      * Set maxPieces value
      * @param int $maxPieces
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BaggageAllowance
+     * @return \Pggns\MidocoApi\Booking\StructType\BaggageAllowance
      */
     public function setMaxPieces(?int $maxPieces = null): self
     {
@@ -265,7 +265,7 @@ class BaggageAllowance extends AbstractStructBase
     /**
      * Set maxWeightPerPiece value
      * @param float $maxWeightPerPiece
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BaggageAllowance
+     * @return \Pggns\MidocoApi\Booking\StructType\BaggageAllowance
      */
     public function setMaxWeightPerPiece(?float $maxWeightPerPiece = null): self
     {
@@ -287,17 +287,17 @@ class BaggageAllowance extends AbstractStructBase
     }
     /**
      * Set weightUnit value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\WeightUnitsType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\WeightUnitsType::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\WeightUnitsType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\WeightUnitsType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $weightUnit
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BaggageAllowance
+     * @return \Pggns\MidocoApi\Booking\StructType\BaggageAllowance
      */
     public function setWeightUnit(?string $weightUnit = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\WeightUnitsType::valueIsValid($weightUnit)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\WeightUnitsType', is_array($weightUnit) ? implode(', ', $weightUnit) : var_export($weightUnit, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\WeightUnitsType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\WeightUnitsType::valueIsValid($weightUnit)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\WeightUnitsType', is_array($weightUnit) ? implode(', ', $weightUnit) : var_export($weightUnit, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\WeightUnitsType::getValidValues())), __LINE__);
         }
         $this->weightUnit = $weightUnit;
         

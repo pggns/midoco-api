@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class ProcessAssignDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ProcessAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ProcessAssignDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -94,7 +94,7 @@ class ProcessAssignDTO extends AbstractStructBase
     /**
      * Set eventId value
      * @param string $eventId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ProcessAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ProcessAssignDTO
      */
     public function setEventId(?string $eventId = null): self
     {
@@ -117,7 +117,7 @@ class ProcessAssignDTO extends AbstractStructBase
     /**
      * Set inheritable value
      * @param bool $inheritable
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ProcessAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ProcessAssignDTO
      */
     public function setInheritable(?bool $inheritable = null): self
     {
@@ -140,7 +140,7 @@ class ProcessAssignDTO extends AbstractStructBase
     /**
      * Set processName value
      * @param string $processName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ProcessAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ProcessAssignDTO
      */
     public function setProcessName(?string $processName = null): self
     {
@@ -163,7 +163,7 @@ class ProcessAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ProcessAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ProcessAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

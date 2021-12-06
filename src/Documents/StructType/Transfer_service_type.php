@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -419,7 +419,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setPosition(int $position): self
     {
@@ -442,7 +442,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set service_code value
      * @param string $service_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setService_code(?string $service_code = null): self
     {
@@ -465,7 +465,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set service_name value
      * @param string $service_name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setService_name(?string $service_name = null): self
     {
@@ -488,7 +488,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set persons_per_service value
      * @param string $persons_per_service
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setPersons_per_service(?string $persons_per_service = null): self
     {
@@ -511,7 +511,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set start_date value
      * @param string $start_date
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setStart_date(?string $start_date = null): self
     {
@@ -538,7 +538,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set end_date value
      * @param string $end_date
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setEnd_date(?string $end_date = null): self
     {
@@ -565,7 +565,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set start_time value
      * @param string $start_time
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setStart_time(?string $start_time = null): self
     {
@@ -592,7 +592,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set end_time value
      * @param string $end_time
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setEnd_time(?string $end_time = null): self
     {
@@ -619,7 +619,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set person_assignment value
      * @param string $person_assignment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setPerson_assignment(?string $person_assignment = null): self
     {
@@ -642,7 +642,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set service_status value
      * @param string $service_status
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setService_status(?string $service_status = null): self
     {
@@ -665,7 +665,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set service_price value
      * @param float $service_price
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setService_price(?float $service_price = null): self
     {
@@ -688,7 +688,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set service_currency value
      * @param string $service_currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setService_currency(?string $service_currency = 'EUR'): self
     {
@@ -711,7 +711,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set service_description value
      * @param string $service_description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setService_description(?string $service_description = null): self
     {
@@ -734,7 +734,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set departure_code value
      * @param string $departure_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setDeparture_code(?string $departure_code = null): self
     {
@@ -757,7 +757,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set departure_description value
      * @param string $departure_description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setDeparture_description(?string $departure_description = null): self
     {
@@ -780,7 +780,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set departure_location value
      * @param string $departure_location
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setDeparture_location(?string $departure_location = null): self
     {
@@ -803,7 +803,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set departure_point value
      * @param string $departure_point
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setDeparture_point(?string $departure_point = null): self
     {
@@ -826,7 +826,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set destination_code value
      * @param string $destination_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setDestination_code(?string $destination_code = null): self
     {
@@ -849,7 +849,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set destination_description value
      * @param string $destination_description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setDestination_description(?string $destination_description = null): self
     {
@@ -872,7 +872,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set return_departure_code value
      * @param string $return_departure_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setReturn_departure_code(?string $return_departure_code = null): self
     {
@@ -895,7 +895,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set return_departure_description value
      * @param string $return_departure_description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setReturn_departure_description(?string $return_departure_description = null): self
     {
@@ -918,7 +918,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set return_destination_code value
      * @param string $return_destination_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setReturn_destination_code(?string $return_destination_code = null): self
     {
@@ -941,7 +941,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set return_destination_description value
      * @param string $return_destination_description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setReturn_destination_description(?string $return_destination_description = null): self
     {
@@ -964,7 +964,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set baggage_allowance value
      * @param string $baggage_allowance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setBaggage_allowance(?string $baggage_allowance = null): self
     {
@@ -987,7 +987,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set duration value
      * @param string $duration
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setDuration(?string $duration = null): self
     {
@@ -1010,7 +1010,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set transfer_address1 value
      * @param string $transfer_address1
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setTransfer_address1(?string $transfer_address1 = null): self
     {
@@ -1033,7 +1033,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set transfer_address2 value
      * @param string $transfer_address2
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setTransfer_address2(?string $transfer_address2 = null): self
     {
@@ -1056,7 +1056,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set transfer_address3 value
      * @param string $transfer_address3
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setTransfer_address3(?string $transfer_address3 = null): self
     {
@@ -1079,7 +1079,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set transfer_address4 value
      * @param string $transfer_address4
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setTransfer_address4(?string $transfer_address4 = null): self
     {
@@ -1102,7 +1102,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set vehicle_code value
      * @param string $vehicle_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setVehicle_code(?string $vehicle_code = null): self
     {
@@ -1125,7 +1125,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set vehicle_description value
      * @param string $vehicle_description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setVehicle_description(?string $vehicle_description = null): self
     {
@@ -1148,7 +1148,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set type_of_transfer value
      * @param string $type_of_transfer
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setType_of_transfer(?string $type_of_transfer = null): self
     {
@@ -1170,17 +1170,17 @@ class Transfer_service_type extends AbstractStructBase
     }
     /**
      * Set direction value
-     * @uses \Pggns\MidocoApi\Api\Documents\EnumType\Direction::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Documents\EnumType\Direction::getValidValues()
+     * @uses \Pggns\MidocoApi\Documents\EnumType\Direction::valueIsValid()
+     * @uses \Pggns\MidocoApi\Documents\EnumType\Direction::getValidValues()
      * @throws InvalidArgumentException
      * @param string $direction
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setDirection(?string $direction = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Documents\EnumType\Direction::valueIsValid($direction)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Documents\EnumType\Direction', is_array($direction) ? implode(', ', $direction) : var_export($direction, true), implode(', ', \Pggns\MidocoApi\Api\Documents\EnumType\Direction::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Documents\EnumType\Direction::valueIsValid($direction)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Documents\EnumType\Direction', is_array($direction) ? implode(', ', $direction) : var_export($direction, true), implode(', ', \Pggns\MidocoApi\Documents\EnumType\Direction::getValidValues())), __LINE__);
         }
         $this->direction = $direction;
         
@@ -1197,7 +1197,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set emergency_Number value
      * @param string $emergency_Number
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setEmergency_Number(?string $emergency_Number = null): self
     {
@@ -1220,7 +1220,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set max_passengers value
      * @param int $max_passengers
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setMax_passengers(?int $max_passengers = null): self
     {
@@ -1243,7 +1243,7 @@ class Transfer_service_type extends AbstractStructBase
     /**
      * Set simpleService value
      * @param bool $simpleService
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Transfer_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Transfer_service_type
      */
     public function setSimpleService(?bool $simpleService = false): self
     {

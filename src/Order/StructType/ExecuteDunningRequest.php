@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class ExecuteDunningRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDunning
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDunning[]
      */
     protected ?array $MidocoDunning = null;
     /**
@@ -42,9 +42,9 @@ class ExecuteDunningRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: ordersd:MidocoDunningTemplate
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $MidocoDunningTemplate = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $MidocoDunningTemplate = null;
     /**
      * Constructor method for ExecuteDunningRequest
      * @uses ExecuteDunningRequest::setMidocoDunning()
@@ -52,13 +52,13 @@ class ExecuteDunningRequest extends AbstractStructBase
      * @uses ExecuteDunningRequest::setIsReexecute()
      * @uses ExecuteDunningRequest::setSupperssEmailSend()
      * @uses ExecuteDunningRequest::setMidocoDunningTemplate()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning[] $midocoDunning
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDunning[] $midocoDunning
      * @param bool $printIfNoEmail
      * @param bool $isReexecute
      * @param bool $supperssEmailSend
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate
      */
-    public function __construct(?array $midocoDunning = null, ?bool $printIfNoEmail = null, ?bool $isReexecute = null, ?bool $supperssEmailSend = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate = null)
+    public function __construct(?array $midocoDunning = null, ?bool $printIfNoEmail = null, ?bool $isReexecute = null, ?bool $supperssEmailSend = null, ?\Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate = null)
     {
         $this
             ->setMidocoDunning($midocoDunning)
@@ -69,7 +69,7 @@ class ExecuteDunningRequest extends AbstractStructBase
     }
     /**
      * Get MidocoDunning value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDunning[]
      */
     public function getMidocoDunning(): ?array
     {
@@ -90,12 +90,12 @@ class ExecuteDunningRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $executeDunningRequestMidocoDunningItem) {
             // validation for constraint: itemType
-            if (!$executeDunningRequestMidocoDunningItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning) {
+            if (!$executeDunningRequestMidocoDunningItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoDunning) {
                 $invalidValues[] = is_object($executeDunningRequestMidocoDunningItem) ? get_class($executeDunningRequestMidocoDunningItem) : sprintf('%s(%s)', gettype($executeDunningRequestMidocoDunningItem), var_export($executeDunningRequestMidocoDunningItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDunning property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDunning property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDunning, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -104,8 +104,8 @@ class ExecuteDunningRequest extends AbstractStructBase
     /**
      * Set MidocoDunning value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning[] $midocoDunning
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDunningRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDunning[] $midocoDunning
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDunningRequest
      */
     public function setMidocoDunning(?array $midocoDunning = null): self
     {
@@ -120,14 +120,14 @@ class ExecuteDunningRequest extends AbstractStructBase
     /**
      * Add item to MidocoDunning value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDunningRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDunning $item
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDunningRequest
      */
-    public function addToMidocoDunning(\Pggns\MidocoApi\Api\Order\StructType\MidocoDunning $item): self
+    public function addToMidocoDunning(\Pggns\MidocoApi\Order\StructType\MidocoDunning $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning) {
-            throw new InvalidArgumentException(sprintf('The MidocoDunning property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDunning, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoDunning) {
+            throw new InvalidArgumentException(sprintf('The MidocoDunning property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDunning, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDunning[] = $item;
         
@@ -144,7 +144,7 @@ class ExecuteDunningRequest extends AbstractStructBase
     /**
      * Set printIfNoEmail value
      * @param bool $printIfNoEmail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDunningRequest
      */
     public function setPrintIfNoEmail(?bool $printIfNoEmail = null): self
     {
@@ -167,7 +167,7 @@ class ExecuteDunningRequest extends AbstractStructBase
     /**
      * Set isReexecute value
      * @param bool $isReexecute
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDunningRequest
      */
     public function setIsReexecute(?bool $isReexecute = null): self
     {
@@ -190,7 +190,7 @@ class ExecuteDunningRequest extends AbstractStructBase
     /**
      * Set supperssEmailSend value
      * @param bool $supperssEmailSend
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDunningRequest
      */
     public function setSupperssEmailSend(?bool $supperssEmailSend = null): self
     {
@@ -204,18 +204,18 @@ class ExecuteDunningRequest extends AbstractStructBase
     }
     /**
      * Get MidocoDunningTemplate value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate|null
      */
-    public function getMidocoDunningTemplate(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate
+    public function getMidocoDunningTemplate(): ?\Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate
     {
         return $this->MidocoDunningTemplate;
     }
     /**
      * Set MidocoDunningTemplate value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteDunningRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteDunningRequest
      */
-    public function setMidocoDunningTemplate(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate = null): self
+    public function setMidocoDunningTemplate(?\Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate = null): self
     {
         $this->MidocoDunningTemplate = $midocoDunningTemplate;
         

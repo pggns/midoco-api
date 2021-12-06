@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class SendTssCertificatesMailResponse extends AbstractStructBase
     /**
      * Set successful value
      * @param bool $successful
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SendTssCertificatesMailResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\SendTssCertificatesMailResponse
      */
     public function setSuccessful(?bool $successful = false): self
     {

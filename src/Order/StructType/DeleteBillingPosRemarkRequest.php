@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class DeleteBillingPosRemarkRequest extends AbstractStructBase
     /**
      * Set parentInternalVersion value
      * @param int $parentInternalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPosRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingPosRemarkRequest
      */
     public function setParentInternalVersion(?int $parentInternalVersion = null): self
     {
@@ -86,7 +86,7 @@ class DeleteBillingPosRemarkRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPosRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingPosRemarkRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -109,7 +109,7 @@ class DeleteBillingPosRemarkRequest extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPosRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingPosRemarkRequest
      */
     public function setPosition(?int $position = null): self
     {
@@ -132,7 +132,7 @@ class DeleteBillingPosRemarkRequest extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPosRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingPosRemarkRequest
      */
     public function setPositionId(?int $positionId = null): self
     {

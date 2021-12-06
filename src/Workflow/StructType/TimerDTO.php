@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class TimerDTO extends AbstractStructBase
     /**
      * Set process value
      * @param string $process
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TimerDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TimerDTO
      */
     public function setProcess(?string $process = null): self
     {
@@ -78,7 +78,7 @@ class TimerDTO extends AbstractStructBase
     /**
      * Set subject value
      * @param int $subject
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TimerDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TimerDTO
      */
     public function setSubject(?int $subject = null): self
     {
@@ -101,7 +101,7 @@ class TimerDTO extends AbstractStructBase
     /**
      * Set timeout value
      * @param int $timeout
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TimerDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TimerDTO
      */
     public function setTimeout(?int $timeout = null): self
     {

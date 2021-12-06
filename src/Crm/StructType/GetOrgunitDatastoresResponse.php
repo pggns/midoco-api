@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetOrgunitDatastoresResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrgunitDatastore
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\DatastoreAssignDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\DatastoreAssignDTO[]
      */
     protected ?array $MidocoOrgunitDatastore = null;
     /**
      * Constructor method for GetOrgunitDatastoresResponse
      * @uses GetOrgunitDatastoresResponse::setMidocoOrgunitDatastore()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\DatastoreAssignDTO[] $midocoOrgunitDatastore
+     * @param \Pggns\MidocoApi\Crm\StructType\DatastoreAssignDTO[] $midocoOrgunitDatastore
      */
     public function __construct(?array $midocoOrgunitDatastore = null)
     {
@@ -34,7 +34,7 @@ class GetOrgunitDatastoresResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrgunitDatastore value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DatastoreAssignDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\DatastoreAssignDTO[]
      */
     public function getMidocoOrgunitDatastore(): ?array
     {
@@ -55,12 +55,12 @@ class GetOrgunitDatastoresResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrgunitDatastoresResponseMidocoOrgunitDatastoreItem) {
             // validation for constraint: itemType
-            if (!$getOrgunitDatastoresResponseMidocoOrgunitDatastoreItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\DatastoreAssignDTO) {
+            if (!$getOrgunitDatastoresResponseMidocoOrgunitDatastoreItem instanceof \Pggns\MidocoApi\Crm\StructType\DatastoreAssignDTO) {
                 $invalidValues[] = is_object($getOrgunitDatastoresResponseMidocoOrgunitDatastoreItem) ? get_class($getOrgunitDatastoresResponseMidocoOrgunitDatastoreItem) : sprintf('%s(%s)', gettype($getOrgunitDatastoresResponseMidocoOrgunitDatastoreItem), var_export($getOrgunitDatastoresResponseMidocoOrgunitDatastoreItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrgunitDatastore property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\DatastoreAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrgunitDatastore property can only contain items of type \Pggns\MidocoApi\Crm\StructType\DatastoreAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetOrgunitDatastoresResponse extends AbstractStructBase
     /**
      * Set MidocoOrgunitDatastore value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\DatastoreAssignDTO[] $midocoOrgunitDatastore
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetOrgunitDatastoresResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\DatastoreAssignDTO[] $midocoOrgunitDatastore
+     * @return \Pggns\MidocoApi\Crm\StructType\GetOrgunitDatastoresResponse
      */
     public function setMidocoOrgunitDatastore(?array $midocoOrgunitDatastore = null): self
     {
@@ -85,14 +85,14 @@ class GetOrgunitDatastoresResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrgunitDatastore value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\DatastoreAssignDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetOrgunitDatastoresResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\DatastoreAssignDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetOrgunitDatastoresResponse
      */
-    public function addToMidocoOrgunitDatastore(\Pggns\MidocoApi\Api\Crm\StructType\DatastoreAssignDTO $item): self
+    public function addToMidocoOrgunitDatastore(\Pggns\MidocoApi\Crm\StructType\DatastoreAssignDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\DatastoreAssignDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrgunitDatastore property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\DatastoreAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\DatastoreAssignDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrgunitDatastore property can only contain items of type \Pggns\MidocoApi\Crm\StructType\DatastoreAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrgunitDatastore[] = $item;
         

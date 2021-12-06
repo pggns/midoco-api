@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class PrepareAgenciesListForSettlementRequest extends AbstractStructBase
      * The MidocoAgencyProvisionSearchCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoAgencyProvisionSearchCriteria
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $MidocoAgencyProvisionSearchCriteria = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $MidocoAgencyProvisionSearchCriteria = null;
     /**
      * Constructor method for PrepareAgenciesListForSettlementRequest
      * @uses PrepareAgenciesListForSettlementRequest::setMidocoAgencyProvisionSearchCriteria()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria = null)
     {
         $this
             ->setMidocoAgencyProvisionSearchCriteria($midocoAgencyProvisionSearchCriteria);
     }
     /**
      * Get MidocoAgencyProvisionSearchCriteria value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria|null
      */
-    public function getMidocoAgencyProvisionSearchCriteria(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria
+    public function getMidocoAgencyProvisionSearchCriteria(): ?\Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria
     {
         return $this->MidocoAgencyProvisionSearchCriteria;
     }
     /**
      * Set MidocoAgencyProvisionSearchCriteria value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAgenciesListForSettlementRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAgenciesListForSettlementRequest
      */
-    public function setMidocoAgencyProvisionSearchCriteria(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria = null): self
+    public function setMidocoAgencyProvisionSearchCriteria(?\Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria = null): self
     {
         $this->MidocoAgencyProvisionSearchCriteria = $midocoAgencyProvisionSearchCriteria;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetAirportCountryResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoAirportCountry
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAirportCountry|null
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAirportCountry|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAirportCountry $MidocoAirportCountry = null;
+    protected ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAirportCountry $MidocoAirportCountry = null;
     /**
      * Constructor method for GetAirportCountryResponse
      * @uses GetAirportCountryResponse::setMidocoAirportCountry()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAirportCountry $midocoAirportCountry
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAirportCountry $midocoAirportCountry
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAirportCountry $midocoAirportCountry = null)
+    public function __construct(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAirportCountry $midocoAirportCountry = null)
     {
         $this
             ->setMidocoAirportCountry($midocoAirportCountry);
     }
     /**
      * Get MidocoAirportCountry value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAirportCountry|null
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAirportCountry|null
      */
-    public function getMidocoAirportCountry(): ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAirportCountry
+    public function getMidocoAirportCountry(): ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAirportCountry
     {
         return $this->MidocoAirportCountry;
     }
     /**
      * Set MidocoAirportCountry value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAirportCountry $midocoAirportCountry
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportCountryResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAirportCountry $midocoAirportCountry
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportCountryResponse
      */
-    public function setMidocoAirportCountry(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAirportCountry $midocoAirportCountry = null): self
+    public function setMidocoAirportCountry(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAirportCountry $midocoAirportCountry = null): self
     {
         $this->MidocoAirportCountry = $midocoAirportCountry;
         

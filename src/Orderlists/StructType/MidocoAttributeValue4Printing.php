@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoAttributeValue4Printing extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAttributeValue4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAttributeValue4Printing
      */
     public function setId(?int $id = null): self
     {
@@ -78,7 +78,7 @@ class MidocoAttributeValue4Printing extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAttributeValue4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAttributeValue4Printing
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -101,7 +101,7 @@ class MidocoAttributeValue4Printing extends AbstractStructBase
     /**
      * Set formatedValue value
      * @param string $formatedValue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAttributeValue4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAttributeValue4Printing
      */
     public function setFormatedValue(?string $formatedValue = null): self
     {

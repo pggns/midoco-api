@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteBillingPrintRequest extends AbstractStructBase
      * The MidocoBillingPrint
      * Meta information extracted from the WSDL
      * - ref: MidocoBillingPrint
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\BillingPrintDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO $MidocoBillingPrint = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\BillingPrintDTO $MidocoBillingPrint = null;
     /**
      * Constructor method for DeleteBillingPrintRequest
      * @uses DeleteBillingPrintRequest::setMidocoBillingPrint()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO $midocoBillingPrint
+     * @param \Pggns\MidocoApi\Order\StructType\BillingPrintDTO $midocoBillingPrint
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO $midocoBillingPrint = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\BillingPrintDTO $midocoBillingPrint = null)
     {
         $this
             ->setMidocoBillingPrint($midocoBillingPrint);
     }
     /**
      * Get MidocoBillingPrint value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPrintDTO|null
      */
-    public function getMidocoBillingPrint(): ?\Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO
+    public function getMidocoBillingPrint(): ?\Pggns\MidocoApi\Order\StructType\BillingPrintDTO
     {
         return $this->MidocoBillingPrint;
     }
     /**
      * Set MidocoBillingPrint value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO $midocoBillingPrint
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPrintRequest
+     * @param \Pggns\MidocoApi\Order\StructType\BillingPrintDTO $midocoBillingPrint
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingPrintRequest
      */
-    public function setMidocoBillingPrint(?\Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO $midocoBillingPrint = null): self
+    public function setMidocoBillingPrint(?\Pggns\MidocoApi\Order\StructType\BillingPrintDTO $midocoBillingPrint = null): self
     {
         $this->MidocoBillingPrint = $midocoBillingPrint;
         

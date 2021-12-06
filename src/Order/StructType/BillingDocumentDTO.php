@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -711,7 +711,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set accountOwner value
      * @param string $accountOwner
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setAccountOwner(?string $accountOwner = null): self
     {
@@ -734,7 +734,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set bankAccountNo value
      * @param string $bankAccountNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setBankAccountNo(?string $bankAccountNo = null): self
     {
@@ -757,7 +757,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set bankCountry value
      * @param string $bankCountry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setBankCountry(?string $bankCountry = null): self
     {
@@ -780,7 +780,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setBankName(?string $bankName = null): self
     {
@@ -803,7 +803,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set bankNo value
      * @param string $bankNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setBankNo(?string $bankNo = null): self
     {
@@ -826,7 +826,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set bankTransferOffsetDays value
      * @param int $bankTransferOffsetDays
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setBankTransferOffsetDays(?int $bankTransferOffsetDays = null): self
     {
@@ -849,7 +849,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set calculatedPrintDate value
      * @param string $calculatedPrintDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCalculatedPrintDate(?string $calculatedPrintDate = null): self
     {
@@ -872,7 +872,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set callDate value
      * @param string $callDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCallDate(?string $callDate = null): self
     {
@@ -895,7 +895,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCashBookId(?int $cashBookId = null): self
     {
@@ -918,7 +918,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set cashBookLine value
      * @param int $cashBookLine
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCashBookLine(?int $cashBookLine = null): self
     {
@@ -941,7 +941,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set cashBookPage value
      * @param int $cashBookPage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCashBookPage(?int $cashBookPage = null): self
     {
@@ -964,7 +964,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set cashBookPrintId value
      * @param int $cashBookPrintId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCashBookPrintId(?int $cashBookPrintId = null): self
     {
@@ -987,7 +987,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set ccPrintSignature value
      * @param bool $ccPrintSignature
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCcPrintSignature(?bool $ccPrintSignature = null): self
     {
@@ -1010,7 +1010,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -1033,7 +1033,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set clearingDate value
      * @param string $clearingDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setClearingDate(?string $clearingDate = null): self
     {
@@ -1056,7 +1056,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set collectInvReferenceNo value
      * @param int $collectInvReferenceNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCollectInvReferenceNo(?int $collectInvReferenceNo = null): self
     {
@@ -1079,7 +1079,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set collectInvSettingId value
      * @param int $collectInvSettingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCollectInvSettingId(?int $collectInvSettingId = null): self
     {
@@ -1102,7 +1102,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set consolidation value
      * @param string $consolidation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setConsolidation(?string $consolidation = null): self
     {
@@ -1125,7 +1125,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set contraAccount value
      * @param int $contraAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setContraAccount(?int $contraAccount = null): self
     {
@@ -1148,7 +1148,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCountry(?string $country = null): self
     {
@@ -1171,7 +1171,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set countryCategory value
      * @param string $countryCategory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCountryCategory(?string $countryCategory = null): self
     {
@@ -1194,7 +1194,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set createItInvoice value
      * @param bool $createItInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCreateItInvoice(?bool $createItInvoice = null): self
     {
@@ -1217,7 +1217,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set createNormalInvoice value
      * @param bool $createNormalInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCreateNormalInvoice(?bool $createNormalInvoice = null): self
     {
@@ -1240,7 +1240,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -1263,7 +1263,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -1286,7 +1286,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -1309,7 +1309,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -1332,7 +1332,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set debitCardCity value
      * @param string $debitCardCity
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setDebitCardCity(?string $debitCardCity = null): self
     {
@@ -1355,7 +1355,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set debitCardStreet value
      * @param string $debitCardStreet
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setDebitCardStreet(?string $debitCardStreet = null): self
     {
@@ -1378,7 +1378,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -1401,7 +1401,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set displayedCurrency value
      * @param string $displayedCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setDisplayedCurrency(?string $displayedCurrency = null): self
     {
@@ -1424,7 +1424,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set displayedCurrencyRate value
      * @param float $displayedCurrencyRate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setDisplayedCurrencyRate(?float $displayedCurrencyRate = null): self
     {
@@ -1447,7 +1447,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set displayedTotalPrice value
      * @param float $displayedTotalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setDisplayedTotalPrice(?float $displayedTotalPrice = null): self
     {
@@ -1470,7 +1470,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -1493,7 +1493,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set documentNo value
      * @param int $documentNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setDocumentNo(?int $documentNo = null): self
     {
@@ -1516,7 +1516,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -1539,7 +1539,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set dunningDate value
      * @param string $dunningDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setDunningDate(?string $dunningDate = null): self
     {
@@ -1562,7 +1562,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set dunningLevel value
      * @param int $dunningLevel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setDunningLevel(?int $dunningLevel = null): self
     {
@@ -1585,7 +1585,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set dunningLock value
      * @param bool $dunningLock
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setDunningLock(?bool $dunningLock = null): self
     {
@@ -1608,7 +1608,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set endorsement value
      * @param string $endorsement
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setEndorsement(?string $endorsement = null): self
     {
@@ -1631,7 +1631,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {
@@ -1654,7 +1654,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -1677,7 +1677,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -1700,7 +1700,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setIban(?string $iban = null): self
     {
@@ -1723,7 +1723,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -1746,7 +1746,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set invoicedAmount value
      * @param float $invoicedAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setInvoicedAmount(?float $invoicedAmount = null): self
     {
@@ -1769,7 +1769,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set isDeliveryReceipt value
      * @param bool $isDeliveryReceipt
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setIsDeliveryReceipt(?bool $isDeliveryReceipt = null): self
     {
@@ -1792,7 +1792,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -1815,7 +1815,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set isManuallyCreated value
      * @param bool $isManuallyCreated
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setIsManuallyCreated(?bool $isManuallyCreated = null): self
     {
@@ -1838,7 +1838,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set isRecurring value
      * @param bool $isRecurring
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setIsRecurring(?bool $isRecurring = null): self
     {
@@ -1861,7 +1861,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set isShadowDocument value
      * @param bool $isShadowDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setIsShadowDocument(?bool $isShadowDocument = null): self
     {
@@ -1884,7 +1884,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set isSpecialCustomer value
      * @param bool $isSpecialCustomer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setIsSpecialCustomer(?bool $isSpecialCustomer = null): self
     {
@@ -1907,7 +1907,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set issueDate value
      * @param string $issueDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setIssueDate(?string $issueDate = null): self
     {
@@ -1930,7 +1930,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setMandateId(?int $mandateId = null): self
     {
@@ -1953,7 +1953,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setMedia(?string $media = null): self
     {
@@ -1976,7 +1976,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param int $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setMediatorId(?int $mediatorId = null): self
     {
@@ -1999,7 +1999,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setName(?string $name = null): self
     {
@@ -2022,7 +2022,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set overrideAddress value
      * @param bool $overrideAddress
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setOverrideAddress(?bool $overrideAddress = null): self
     {
@@ -2045,7 +2045,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set paid value
      * @param bool $paid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setPaid(?bool $paid = null): self
     {
@@ -2068,7 +2068,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set paidDate value
      * @param string $paidDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setPaidDate(?string $paidDate = null): self
     {
@@ -2091,7 +2091,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set paymentConditionId value
      * @param string $paymentConditionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setPaymentConditionId(?string $paymentConditionId = null): self
     {
@@ -2114,7 +2114,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set paymentDueDate value
      * @param string $paymentDueDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setPaymentDueDate(?string $paymentDueDate = null): self
     {
@@ -2137,7 +2137,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -2160,7 +2160,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -2183,7 +2183,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set printAllTravellers value
      * @param bool $printAllTravellers
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setPrintAllTravellers(?bool $printAllTravellers = null): self
     {
@@ -2206,7 +2206,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set printGroupName value
      * @param bool $printGroupName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setPrintGroupName(?bool $printGroupName = null): self
     {
@@ -2229,7 +2229,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -2252,7 +2252,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set printingCount value
      * @param int $printingCount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setPrintingCount(?int $printingCount = null): self
     {
@@ -2275,7 +2275,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set printingDate value
      * @param string $printingDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setPrintingDate(?string $printingDate = null): self
     {
@@ -2298,7 +2298,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set printingUser value
      * @param int $printingUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setPrintingUser(?int $printingUser = null): self
     {
@@ -2321,7 +2321,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -2344,7 +2344,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set salutationId value
      * @param string $salutationId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setSalutationId(?string $salutationId = null): self
     {
@@ -2367,7 +2367,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set shadowDocumentId value
      * @param int $shadowDocumentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setShadowDocumentId(?int $shadowDocumentId = null): self
     {
@@ -2390,7 +2390,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set shadowDocumentUnitName value
      * @param string $shadowDocumentUnitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setShadowDocumentUnitName(?string $shadowDocumentUnitName = null): self
     {
@@ -2413,7 +2413,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -2436,7 +2436,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -2459,7 +2459,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set submitDate value
      * @param string $submitDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setSubmitDate(?string $submitDate = null): self
     {
@@ -2482,7 +2482,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set swiftBicCode value
      * @param string $swiftBicCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setSwiftBicCode(?string $swiftBicCode = null): self
     {
@@ -2505,7 +2505,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setTitle(?string $title = null): self
     {
@@ -2528,7 +2528,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -2551,7 +2551,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setType(?string $type = null): self
     {
@@ -2574,7 +2574,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -2597,7 +2597,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set usedDocumentNo value
      * @param int $usedDocumentNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setUsedDocumentNo(?int $usedDocumentNo = null): self
     {
@@ -2620,7 +2620,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setVatId(?string $vatId = null): self
     {
@@ -2643,7 +2643,7 @@ class BillingDocumentDTO extends AbstractStructBase
     /**
      * Set voidedDocumentNo value
      * @param int $voidedDocumentNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentDTO
      */
     public function setVoidedDocumentNo(?int $voidedDocumentNo = null): self
     {

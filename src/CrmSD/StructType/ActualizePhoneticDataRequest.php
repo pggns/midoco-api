@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class ActualizePhoneticDataRequest extends AbstractStructBase
     /**
      * Set generateOnlyAddresses value
      * @param bool $generateOnlyAddresses
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizePhoneticDataRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizePhoneticDataRequest
      */
     public function setGenerateOnlyAddresses(?bool $generateOnlyAddresses = false): self
     {

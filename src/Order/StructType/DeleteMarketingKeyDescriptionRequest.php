@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class DeleteMarketingKeyDescriptionRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMarketingKeyDescriptionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMarketingKeyDescriptionRequest
      */
     public function setType(?string $type = null): self
     {
@@ -78,7 +78,7 @@ class DeleteMarketingKeyDescriptionRequest extends AbstractStructBase
     /**
      * Set marketingKey value
      * @param string $marketingKey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMarketingKeyDescriptionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMarketingKeyDescriptionRequest
      */
     public function setMarketingKey(?string $marketingKey = null): self
     {
@@ -101,7 +101,7 @@ class DeleteMarketingKeyDescriptionRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMarketingKeyDescriptionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMarketingKeyDescriptionRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoInvoice extends InvoiceDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoInvoicePosition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoicePosition[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoInvoicePosition[]
      */
     protected ?array $MidocoInvoicePosition = null;
     /**
@@ -28,7 +28,7 @@ class MidocoInvoice extends InvoiceDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoInvoiceVatPosition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceVatPosition[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoInvoiceVatPosition[]
      */
     protected ?array $MidocoInvoiceVatPosition = null;
     /**
@@ -37,7 +37,7 @@ class MidocoInvoice extends InvoiceDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoInvoiceVatCalculation
-     * @var \Pggns\MidocoApi\Api\Order\StructType\InvoiceVatCalculationDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\InvoiceVatCalculationDTO[]
      */
     protected ?array $MidocoInvoiceVatCalculation = null;
     /**
@@ -45,9 +45,9 @@ class MidocoInvoice extends InvoiceDTO
      * @uses MidocoInvoice::setMidocoInvoicePosition()
      * @uses MidocoInvoice::setMidocoInvoiceVatPosition()
      * @uses MidocoInvoice::setMidocoInvoiceVatCalculation()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoicePosition[] $midocoInvoicePosition
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceVatPosition[] $midocoInvoiceVatPosition
-     * @param \Pggns\MidocoApi\Api\Order\StructType\InvoiceVatCalculationDTO[] $midocoInvoiceVatCalculation
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoInvoicePosition[] $midocoInvoicePosition
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoInvoiceVatPosition[] $midocoInvoiceVatPosition
+     * @param \Pggns\MidocoApi\Order\StructType\InvoiceVatCalculationDTO[] $midocoInvoiceVatCalculation
      */
     public function __construct(?array $midocoInvoicePosition = null, ?array $midocoInvoiceVatPosition = null, ?array $midocoInvoiceVatCalculation = null)
     {
@@ -58,7 +58,7 @@ class MidocoInvoice extends InvoiceDTO
     }
     /**
      * Get MidocoInvoicePosition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoicePosition[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoInvoicePosition[]
      */
     public function getMidocoInvoicePosition(): ?array
     {
@@ -79,12 +79,12 @@ class MidocoInvoice extends InvoiceDTO
         $invalidValues = [];
         foreach ($values as $midocoInvoiceMidocoInvoicePositionItem) {
             // validation for constraint: itemType
-            if (!$midocoInvoiceMidocoInvoicePositionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoicePosition) {
+            if (!$midocoInvoiceMidocoInvoicePositionItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoInvoicePosition) {
                 $invalidValues[] = is_object($midocoInvoiceMidocoInvoicePositionItem) ? get_class($midocoInvoiceMidocoInvoicePositionItem) : sprintf('%s(%s)', gettype($midocoInvoiceMidocoInvoicePositionItem), var_export($midocoInvoiceMidocoInvoicePositionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoInvoicePosition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoicePosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoInvoicePosition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoInvoicePosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -93,8 +93,8 @@ class MidocoInvoice extends InvoiceDTO
     /**
      * Set MidocoInvoicePosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoicePosition[] $midocoInvoicePosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoice
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoInvoicePosition[] $midocoInvoicePosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoInvoice
      */
     public function setMidocoInvoicePosition(?array $midocoInvoicePosition = null): self
     {
@@ -109,14 +109,14 @@ class MidocoInvoice extends InvoiceDTO
     /**
      * Add item to MidocoInvoicePosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoicePosition $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoice
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoInvoicePosition $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoInvoice
      */
-    public function addToMidocoInvoicePosition(\Pggns\MidocoApi\Api\Order\StructType\MidocoInvoicePosition $item): self
+    public function addToMidocoInvoicePosition(\Pggns\MidocoApi\Order\StructType\MidocoInvoicePosition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoicePosition) {
-            throw new InvalidArgumentException(sprintf('The MidocoInvoicePosition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoicePosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoInvoicePosition) {
+            throw new InvalidArgumentException(sprintf('The MidocoInvoicePosition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoInvoicePosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoInvoicePosition[] = $item;
         
@@ -124,7 +124,7 @@ class MidocoInvoice extends InvoiceDTO
     }
     /**
      * Get MidocoInvoiceVatPosition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceVatPosition[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoInvoiceVatPosition[]
      */
     public function getMidocoInvoiceVatPosition(): ?array
     {
@@ -145,12 +145,12 @@ class MidocoInvoice extends InvoiceDTO
         $invalidValues = [];
         foreach ($values as $midocoInvoiceMidocoInvoiceVatPositionItem) {
             // validation for constraint: itemType
-            if (!$midocoInvoiceMidocoInvoiceVatPositionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceVatPosition) {
+            if (!$midocoInvoiceMidocoInvoiceVatPositionItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoInvoiceVatPosition) {
                 $invalidValues[] = is_object($midocoInvoiceMidocoInvoiceVatPositionItem) ? get_class($midocoInvoiceMidocoInvoiceVatPositionItem) : sprintf('%s(%s)', gettype($midocoInvoiceMidocoInvoiceVatPositionItem), var_export($midocoInvoiceMidocoInvoiceVatPositionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoInvoiceVatPosition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceVatPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoInvoiceVatPosition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoInvoiceVatPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -159,8 +159,8 @@ class MidocoInvoice extends InvoiceDTO
     /**
      * Set MidocoInvoiceVatPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceVatPosition[] $midocoInvoiceVatPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoice
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoInvoiceVatPosition[] $midocoInvoiceVatPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoInvoice
      */
     public function setMidocoInvoiceVatPosition(?array $midocoInvoiceVatPosition = null): self
     {
@@ -175,14 +175,14 @@ class MidocoInvoice extends InvoiceDTO
     /**
      * Add item to MidocoInvoiceVatPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceVatPosition $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoice
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoInvoiceVatPosition $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoInvoice
      */
-    public function addToMidocoInvoiceVatPosition(\Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceVatPosition $item): self
+    public function addToMidocoInvoiceVatPosition(\Pggns\MidocoApi\Order\StructType\MidocoInvoiceVatPosition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceVatPosition) {
-            throw new InvalidArgumentException(sprintf('The MidocoInvoiceVatPosition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoiceVatPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoInvoiceVatPosition) {
+            throw new InvalidArgumentException(sprintf('The MidocoInvoiceVatPosition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoInvoiceVatPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoInvoiceVatPosition[] = $item;
         
@@ -190,7 +190,7 @@ class MidocoInvoice extends InvoiceDTO
     }
     /**
      * Get MidocoInvoiceVatCalculation value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceVatCalculationDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceVatCalculationDTO[]
      */
     public function getMidocoInvoiceVatCalculation(): ?array
     {
@@ -211,12 +211,12 @@ class MidocoInvoice extends InvoiceDTO
         $invalidValues = [];
         foreach ($values as $midocoInvoiceMidocoInvoiceVatCalculationItem) {
             // validation for constraint: itemType
-            if (!$midocoInvoiceMidocoInvoiceVatCalculationItem instanceof \Pggns\MidocoApi\Api\Order\StructType\InvoiceVatCalculationDTO) {
+            if (!$midocoInvoiceMidocoInvoiceVatCalculationItem instanceof \Pggns\MidocoApi\Order\StructType\InvoiceVatCalculationDTO) {
                 $invalidValues[] = is_object($midocoInvoiceMidocoInvoiceVatCalculationItem) ? get_class($midocoInvoiceMidocoInvoiceVatCalculationItem) : sprintf('%s(%s)', gettype($midocoInvoiceMidocoInvoiceVatCalculationItem), var_export($midocoInvoiceMidocoInvoiceVatCalculationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoInvoiceVatCalculation property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\InvoiceVatCalculationDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoInvoiceVatCalculation property can only contain items of type \Pggns\MidocoApi\Order\StructType\InvoiceVatCalculationDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -225,8 +225,8 @@ class MidocoInvoice extends InvoiceDTO
     /**
      * Set MidocoInvoiceVatCalculation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\InvoiceVatCalculationDTO[] $midocoInvoiceVatCalculation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoice
+     * @param \Pggns\MidocoApi\Order\StructType\InvoiceVatCalculationDTO[] $midocoInvoiceVatCalculation
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoInvoice
      */
     public function setMidocoInvoiceVatCalculation(?array $midocoInvoiceVatCalculation = null): self
     {
@@ -241,14 +241,14 @@ class MidocoInvoice extends InvoiceDTO
     /**
      * Add item to MidocoInvoiceVatCalculation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\InvoiceVatCalculationDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoInvoice
+     * @param \Pggns\MidocoApi\Order\StructType\InvoiceVatCalculationDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoInvoice
      */
-    public function addToMidocoInvoiceVatCalculation(\Pggns\MidocoApi\Api\Order\StructType\InvoiceVatCalculationDTO $item): self
+    public function addToMidocoInvoiceVatCalculation(\Pggns\MidocoApi\Order\StructType\InvoiceVatCalculationDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\InvoiceVatCalculationDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoInvoiceVatCalculation property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\InvoiceVatCalculationDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\InvoiceVatCalculationDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoInvoiceVatCalculation property can only contain items of type \Pggns\MidocoApi\Order\StructType\InvoiceVatCalculationDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoInvoiceVatCalculation[] = $item;
         

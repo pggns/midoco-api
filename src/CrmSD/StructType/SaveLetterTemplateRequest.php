@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class SaveLetterTemplateRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoLetterTemplate
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO $MidocoLetterTemplate = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO $MidocoLetterTemplate = null;
     /**
      * Constructor method for SaveLetterTemplateRequest
      * @uses SaveLetterTemplateRequest::setMidocoLetterTemplate()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO $midocoLetterTemplate
+     * @param \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO $midocoLetterTemplate
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO $midocoLetterTemplate = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO $midocoLetterTemplate = null)
     {
         $this
             ->setMidocoLetterTemplate($midocoLetterTemplate);
     }
     /**
      * Get MidocoLetterTemplate value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO|null
      */
-    public function getMidocoLetterTemplate(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO
+    public function getMidocoLetterTemplate(): ?\Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO
     {
         return $this->MidocoLetterTemplate;
     }
     /**
      * Set MidocoLetterTemplate value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO $midocoLetterTemplate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveLetterTemplateRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO $midocoLetterTemplate
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveLetterTemplateRequest
      */
-    public function setMidocoLetterTemplate(?\Pggns\MidocoApi\Api\CrmSD\StructType\LetterTemplateDTO $midocoLetterTemplate = null): self
+    public function setMidocoLetterTemplate(?\Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO $midocoLetterTemplate = null): self
     {
         $this->MidocoLetterTemplate = $midocoLetterTemplate;
         

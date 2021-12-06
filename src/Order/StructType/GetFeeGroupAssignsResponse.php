@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetFeeGroupAssignsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoFeeGroupAssign
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign[]
      */
     protected ?array $MidocoFeeGroupAssign = null;
     /**
      * Constructor method for GetFeeGroupAssignsResponse
      * @uses GetFeeGroupAssignsResponse::setMidocoFeeGroupAssign()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign[] $midocoFeeGroupAssign
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign[] $midocoFeeGroupAssign
      */
     public function __construct(?array $midocoFeeGroupAssign = null)
     {
@@ -34,7 +34,7 @@ class GetFeeGroupAssignsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoFeeGroupAssign value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign[]
      */
     public function getMidocoFeeGroupAssign(): ?array
     {
@@ -55,12 +55,12 @@ class GetFeeGroupAssignsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getFeeGroupAssignsResponseMidocoFeeGroupAssignItem) {
             // validation for constraint: itemType
-            if (!$getFeeGroupAssignsResponseMidocoFeeGroupAssignItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign) {
+            if (!$getFeeGroupAssignsResponseMidocoFeeGroupAssignItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign) {
                 $invalidValues[] = is_object($getFeeGroupAssignsResponseMidocoFeeGroupAssignItem) ? get_class($getFeeGroupAssignsResponseMidocoFeeGroupAssignItem) : sprintf('%s(%s)', gettype($getFeeGroupAssignsResponseMidocoFeeGroupAssignItem), var_export($getFeeGroupAssignsResponseMidocoFeeGroupAssignItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFeeGroupAssign property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFeeGroupAssign property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetFeeGroupAssignsResponse extends AbstractStructBase
     /**
      * Set MidocoFeeGroupAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign[] $midocoFeeGroupAssign
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFeeGroupAssignsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign[] $midocoFeeGroupAssign
+     * @return \Pggns\MidocoApi\Order\StructType\GetFeeGroupAssignsResponse
      */
     public function setMidocoFeeGroupAssign(?array $midocoFeeGroupAssign = null): self
     {
@@ -85,14 +85,14 @@ class GetFeeGroupAssignsResponse extends AbstractStructBase
     /**
      * Add item to MidocoFeeGroupAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFeeGroupAssignsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetFeeGroupAssignsResponse
      */
-    public function addToMidocoFeeGroupAssign(\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign $item): self
+    public function addToMidocoFeeGroupAssign(\Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign) {
-            throw new InvalidArgumentException(sprintf('The MidocoFeeGroupAssign property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign) {
+            throw new InvalidArgumentException(sprintf('The MidocoFeeGroupAssign property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFeeGroupAssign[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteMidocoAttributeChoiceValueResponse extends AbstractStructBase
      * The MidocoSystemAttributeChoiceValue
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeChoiceValue
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO|null
+     * @var \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO $MidocoSystemAttributeChoiceValue = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO $MidocoSystemAttributeChoiceValue = null;
     /**
      * Constructor method for DeleteMidocoAttributeChoiceValueResponse
      * @uses DeleteMidocoAttributeChoiceValueResponse::setMidocoSystemAttributeChoiceValue()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
+     * @param \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null)
     {
         $this
             ->setMidocoSystemAttributeChoiceValue($midocoSystemAttributeChoiceValue);
     }
     /**
      * Get MidocoSystemAttributeChoiceValue value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO|null
+     * @return \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO|null
      */
-    public function getMidocoSystemAttributeChoiceValue(): ?\Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO
+    public function getMidocoSystemAttributeChoiceValue(): ?\Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO
     {
         return $this->MidocoSystemAttributeChoiceValue;
     }
     /**
      * Set MidocoSystemAttributeChoiceValue value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DeleteMidocoAttributeChoiceValueResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
+     * @return \Pggns\MidocoApi\Booking\StructType\DeleteMidocoAttributeChoiceValueResponse
      */
-    public function setMidocoSystemAttributeChoiceValue(?\Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null): self
+    public function setMidocoSystemAttributeChoiceValue(?\Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null): self
     {
         $this->MidocoSystemAttributeChoiceValue = $midocoSystemAttributeChoiceValue;
         

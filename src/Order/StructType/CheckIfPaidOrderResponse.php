@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class CheckIfPaidOrderResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckIfPaidOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckIfPaidOrderResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -80,7 +80,7 @@ class CheckIfPaidOrderResponse extends AbstractStructBase
     /**
      * Set paid value
      * @param bool $paid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckIfPaidOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckIfPaidOrderResponse
      */
     public function setPaid(?bool $paid = null): self
     {
@@ -103,7 +103,7 @@ class CheckIfPaidOrderResponse extends AbstractStructBase
     /**
      * Set paidDate value
      * @param string $paidDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckIfPaidOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckIfPaidOrderResponse
      */
     public function setPaidDate(?string $paidDate = null): self
     {

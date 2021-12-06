@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -80,7 +80,7 @@ class MidocoGUIOnlinePaymentTransaction extends OnlinePaymentTransactionDTO
      * Set errorArgs value
      * @throws InvalidArgumentException
      * @param string[] $errorArgs
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoGUIOnlinePaymentTransaction
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoGUIOnlinePaymentTransaction
      */
     public function setErrorArgs(?array $errorArgs = null): self
     {
@@ -96,7 +96,7 @@ class MidocoGUIOnlinePaymentTransaction extends OnlinePaymentTransactionDTO
      * Add item to errorArgs value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoGUIOnlinePaymentTransaction
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoGUIOnlinePaymentTransaction
      */
     public function addToErrorArgs(string $item): self
     {
@@ -146,7 +146,7 @@ class MidocoGUIOnlinePaymentTransaction extends OnlinePaymentTransactionDTO
      * Set processor value
      * @throws InvalidArgumentException
      * @param string[] $processor
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoGUIOnlinePaymentTransaction
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoGUIOnlinePaymentTransaction
      */
     public function setProcessor(?array $processor = null): self
     {
@@ -162,7 +162,7 @@ class MidocoGUIOnlinePaymentTransaction extends OnlinePaymentTransactionDTO
      * Add item to processor value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoGUIOnlinePaymentTransaction
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoGUIOnlinePaymentTransaction
      */
     public function addToProcessor(string $item): self
     {

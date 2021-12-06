@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -53,7 +53,7 @@ class RemoveOrdCriteriaTypesFromCategoryRequest extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\RemoveOrdCriteriaTypesFromCategoryRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\RemoveOrdCriteriaTypesFromCategoryRequest
      */
     public function setCategoryId(int $categoryId): self
     {
@@ -103,7 +103,7 @@ class RemoveOrdCriteriaTypesFromCategoryRequest extends AbstractStructBase
      * Set MidocoOrdCriteriaTypeId value
      * @throws InvalidArgumentException
      * @param string[] $midocoOrdCriteriaTypeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\RemoveOrdCriteriaTypesFromCategoryRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\RemoveOrdCriteriaTypesFromCategoryRequest
      */
     public function setMidocoOrdCriteriaTypeId(?array $midocoOrdCriteriaTypeId = null): self
     {
@@ -119,7 +119,7 @@ class RemoveOrdCriteriaTypesFromCategoryRequest extends AbstractStructBase
      * Add item to MidocoOrdCriteriaTypeId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\RemoveOrdCriteriaTypesFromCategoryRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\RemoveOrdCriteriaTypesFromCategoryRequest
      */
     public function addToMidocoOrdCriteriaTypeId(string $item): self
     {

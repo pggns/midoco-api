@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoVatDivisionTemplate extends VatDivisionTemplateDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVatDivision
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\VatDivisionDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\VatDivisionDTO[]
      */
     protected ?array $MidocoVatDivision = null;
     /**
@@ -49,7 +49,7 @@ class MidocoVatDivisionTemplate extends VatDivisionTemplateDTO
      * @uses MidocoVatDivisionTemplate::setIsHistorical()
      * @uses MidocoVatDivisionTemplate::setValidDate()
      * @uses MidocoVatDivisionTemplate::setValidCreationTravel()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\VatDivisionDTO[] $midocoVatDivision
+     * @param \Pggns\MidocoApi\Orderlists\StructType\VatDivisionDTO[] $midocoVatDivision
      * @param bool $isInherited
      * @param bool $isHistorical
      * @param string $validDate
@@ -66,7 +66,7 @@ class MidocoVatDivisionTemplate extends VatDivisionTemplateDTO
     }
     /**
      * Get MidocoVatDivision value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatDivisionDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatDivisionDTO[]
      */
     public function getMidocoVatDivision(): ?array
     {
@@ -87,12 +87,12 @@ class MidocoVatDivisionTemplate extends VatDivisionTemplateDTO
         $invalidValues = [];
         foreach ($values as $midocoVatDivisionTemplateMidocoVatDivisionItem) {
             // validation for constraint: itemType
-            if (!$midocoVatDivisionTemplateMidocoVatDivisionItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\VatDivisionDTO) {
+            if (!$midocoVatDivisionTemplateMidocoVatDivisionItem instanceof \Pggns\MidocoApi\Orderlists\StructType\VatDivisionDTO) {
                 $invalidValues[] = is_object($midocoVatDivisionTemplateMidocoVatDivisionItem) ? get_class($midocoVatDivisionTemplateMidocoVatDivisionItem) : sprintf('%s(%s)', gettype($midocoVatDivisionTemplateMidocoVatDivisionItem), var_export($midocoVatDivisionTemplateMidocoVatDivisionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatDivision property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\VatDivisionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatDivision property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\VatDivisionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -101,8 +101,8 @@ class MidocoVatDivisionTemplate extends VatDivisionTemplateDTO
     /**
      * Set MidocoVatDivision value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\VatDivisionDTO[] $midocoVatDivision
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatDivisionTemplate
+     * @param \Pggns\MidocoApi\Orderlists\StructType\VatDivisionDTO[] $midocoVatDivision
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatDivisionTemplate
      */
     public function setMidocoVatDivision(?array $midocoVatDivision = null): self
     {
@@ -117,14 +117,14 @@ class MidocoVatDivisionTemplate extends VatDivisionTemplateDTO
     /**
      * Add item to MidocoVatDivision value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\VatDivisionDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatDivisionTemplate
+     * @param \Pggns\MidocoApi\Orderlists\StructType\VatDivisionDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatDivisionTemplate
      */
-    public function addToMidocoVatDivision(\Pggns\MidocoApi\Api\Orderlists\StructType\VatDivisionDTO $item): self
+    public function addToMidocoVatDivision(\Pggns\MidocoApi\Orderlists\StructType\VatDivisionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\VatDivisionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatDivision property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\VatDivisionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\VatDivisionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatDivision property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\VatDivisionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatDivision[] = $item;
         
@@ -141,7 +141,7 @@ class MidocoVatDivisionTemplate extends VatDivisionTemplateDTO
     /**
      * Set isInherited value
      * @param bool $isInherited
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatDivisionTemplate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatDivisionTemplate
      */
     public function setIsInherited(?bool $isInherited = null): self
     {
@@ -164,7 +164,7 @@ class MidocoVatDivisionTemplate extends VatDivisionTemplateDTO
     /**
      * Set isHistorical value
      * @param bool $isHistorical
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatDivisionTemplate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatDivisionTemplate
      */
     public function setIsHistorical(?bool $isHistorical = null): self
     {
@@ -187,7 +187,7 @@ class MidocoVatDivisionTemplate extends VatDivisionTemplateDTO
     /**
      * Set validDate value
      * @param string $validDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatDivisionTemplate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatDivisionTemplate
      */
     public function setValidDate(?string $validDate = null): self
     {
@@ -210,7 +210,7 @@ class MidocoVatDivisionTemplate extends VatDivisionTemplateDTO
     /**
      * Set validCreationTravel value
      * @param string $validCreationTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatDivisionTemplate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatDivisionTemplate
      */
     public function setValidCreationTravel(?string $validCreationTravel = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetMergedServiceStatiResponse extends AbstractStructBase
      * Set status value
      * @throws InvalidArgumentException
      * @param string[] $status
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetMergedServiceStatiResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\GetMergedServiceStatiResponse
      */
     public function setStatus(?array $status = null): self
     {
@@ -85,7 +85,7 @@ class GetMergedServiceStatiResponse extends AbstractStructBase
      * Add item to status value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetMergedServiceStatiResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\GetMergedServiceStatiResponse
      */
     public function addToStatus(string $item): self
     {

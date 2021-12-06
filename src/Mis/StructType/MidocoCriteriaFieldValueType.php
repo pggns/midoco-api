@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoCriteriaFieldValueType extends AbstractStructBase
     /**
      * Set valueFieldId value
      * @param string $valueFieldId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldValueType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldValueType
      */
     public function setValueFieldId(?string $valueFieldId = null): self
     {
@@ -70,7 +70,7 @@ class MidocoCriteriaFieldValueType extends AbstractStructBase
     /**
      * Set localizedValueFieldToDisplay value
      * @param string $localizedValueFieldToDisplay
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldValueType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldValueType
      */
     public function setLocalizedValueFieldToDisplay(?string $localizedValueFieldToDisplay = null): self
     {

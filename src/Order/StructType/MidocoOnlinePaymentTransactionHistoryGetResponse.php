@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,13 +20,13 @@ class MidocoOnlinePaymentTransactionHistoryGetResponse extends AbstractStructBas
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOnlinePaymentTransactionHistory
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransactionHistory[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransactionHistory[]
      */
     protected ?array $MidocoOnlinePaymentTransactionHistory = null;
     /**
      * Constructor method for MidocoOnlinePaymentTransactionHistoryGetResponse
      * @uses MidocoOnlinePaymentTransactionHistoryGetResponse::setMidocoOnlinePaymentTransactionHistory()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransactionHistory[] $midocoOnlinePaymentTransactionHistory
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransactionHistory[] $midocoOnlinePaymentTransactionHistory
      */
     public function __construct(?array $midocoOnlinePaymentTransactionHistory = null)
     {
@@ -35,7 +35,7 @@ class MidocoOnlinePaymentTransactionHistoryGetResponse extends AbstractStructBas
     }
     /**
      * Get MidocoOnlinePaymentTransactionHistory value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransactionHistory[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransactionHistory[]
      */
     public function getMidocoOnlinePaymentTransactionHistory(): ?array
     {
@@ -56,12 +56,12 @@ class MidocoOnlinePaymentTransactionHistoryGetResponse extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $midocoOnlinePaymentTransactionHistoryGetResponseMidocoOnlinePaymentTransactionHistoryItem) {
             // validation for constraint: itemType
-            if (!$midocoOnlinePaymentTransactionHistoryGetResponseMidocoOnlinePaymentTransactionHistoryItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransactionHistory) {
+            if (!$midocoOnlinePaymentTransactionHistoryGetResponseMidocoOnlinePaymentTransactionHistoryItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransactionHistory) {
                 $invalidValues[] = is_object($midocoOnlinePaymentTransactionHistoryGetResponseMidocoOnlinePaymentTransactionHistoryItem) ? get_class($midocoOnlinePaymentTransactionHistoryGetResponseMidocoOnlinePaymentTransactionHistoryItem) : sprintf('%s(%s)', gettype($midocoOnlinePaymentTransactionHistoryGetResponseMidocoOnlinePaymentTransactionHistoryItem), var_export($midocoOnlinePaymentTransactionHistoryGetResponseMidocoOnlinePaymentTransactionHistoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOnlinePaymentTransactionHistory property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransactionHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOnlinePaymentTransactionHistory property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransactionHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -70,8 +70,8 @@ class MidocoOnlinePaymentTransactionHistoryGetResponse extends AbstractStructBas
     /**
      * Set MidocoOnlinePaymentTransactionHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransactionHistory[] $midocoOnlinePaymentTransactionHistory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransactionHistoryGetResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransactionHistory[] $midocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransactionHistoryGetResponse
      */
     public function setMidocoOnlinePaymentTransactionHistory(?array $midocoOnlinePaymentTransactionHistory = null): self
     {
@@ -86,14 +86,14 @@ class MidocoOnlinePaymentTransactionHistoryGetResponse extends AbstractStructBas
     /**
      * Add item to MidocoOnlinePaymentTransactionHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransactionHistory $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransactionHistoryGetResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransactionHistory $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransactionHistoryGetResponse
      */
-    public function addToMidocoOnlinePaymentTransactionHistory(\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransactionHistory $item): self
+    public function addToMidocoOnlinePaymentTransactionHistory(\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransactionHistory $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransactionHistory) {
-            throw new InvalidArgumentException(sprintf('The MidocoOnlinePaymentTransactionHistory property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransactionHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransactionHistory) {
+            throw new InvalidArgumentException(sprintf('The MidocoOnlinePaymentTransactionHistory property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransactionHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOnlinePaymentTransactionHistory[] = $item;
         

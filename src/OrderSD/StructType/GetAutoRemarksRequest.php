@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetAutoRemarksRequest extends AbstractStructBase
      * The MidocoSupplierAutoRemark
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierAutoRemark
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAutoRemarkDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\SupplierAutoRemarkDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAutoRemarkDTO $MidocoSupplierAutoRemark = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\SupplierAutoRemarkDTO $MidocoSupplierAutoRemark = null;
     /**
      * The ignoreCultureId
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class GetAutoRemarksRequest extends AbstractStructBase
      * Constructor method for GetAutoRemarksRequest
      * @uses GetAutoRemarksRequest::setMidocoSupplierAutoRemark()
      * @uses GetAutoRemarksRequest::setIgnoreCultureId()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAutoRemarkDTO $midocoSupplierAutoRemark
+     * @param \Pggns\MidocoApi\OrderSD\StructType\SupplierAutoRemarkDTO $midocoSupplierAutoRemark
      * @param bool $ignoreCultureId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAutoRemarkDTO $midocoSupplierAutoRemark = null, ?bool $ignoreCultureId = false)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\SupplierAutoRemarkDTO $midocoSupplierAutoRemark = null, ?bool $ignoreCultureId = false)
     {
         $this
             ->setMidocoSupplierAutoRemark($midocoSupplierAutoRemark)
@@ -42,18 +42,18 @@ class GetAutoRemarksRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierAutoRemark value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAutoRemarkDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierAutoRemarkDTO|null
      */
-    public function getMidocoSupplierAutoRemark(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAutoRemarkDTO
+    public function getMidocoSupplierAutoRemark(): ?\Pggns\MidocoApi\OrderSD\StructType\SupplierAutoRemarkDTO
     {
         return $this->MidocoSupplierAutoRemark;
     }
     /**
      * Set MidocoSupplierAutoRemark value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAutoRemarkDTO $midocoSupplierAutoRemark
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAutoRemarksRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\SupplierAutoRemarkDTO $midocoSupplierAutoRemark
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAutoRemarksRequest
      */
-    public function setMidocoSupplierAutoRemark(?\Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAutoRemarkDTO $midocoSupplierAutoRemark = null): self
+    public function setMidocoSupplierAutoRemark(?\Pggns\MidocoApi\OrderSD\StructType\SupplierAutoRemarkDTO $midocoSupplierAutoRemark = null): self
     {
         $this->MidocoSupplierAutoRemark = $midocoSupplierAutoRemark;
         
@@ -70,7 +70,7 @@ class GetAutoRemarksRequest extends AbstractStructBase
     /**
      * Set ignoreCultureId value
      * @param bool $ignoreCultureId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAutoRemarksRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAutoRemarksRequest
      */
     public function setIgnoreCultureId(?bool $ignoreCultureId = false): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class SearchCustDoubleAddrResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustDoubleAddrInfo
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CustomerDoubleAddrInfo[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CustomerDoubleAddrInfo[]
      */
     protected ?array $MidocoCustDoubleAddrInfo = null;
     /**
@@ -33,7 +33,7 @@ class SearchCustDoubleAddrResponse extends AbstractStructBase
      * Constructor method for SearchCustDoubleAddrResponse
      * @uses SearchCustDoubleAddrResponse::setMidocoCustDoubleAddrInfo()
      * @uses SearchCustDoubleAddrResponse::setNumberOfResults()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerDoubleAddrInfo[] $midocoCustDoubleAddrInfo
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerDoubleAddrInfo[] $midocoCustDoubleAddrInfo
      * @param int $numberOfResults
      */
     public function __construct(?array $midocoCustDoubleAddrInfo = null, ?int $numberOfResults = null)
@@ -44,7 +44,7 @@ class SearchCustDoubleAddrResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCustDoubleAddrInfo value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerDoubleAddrInfo[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerDoubleAddrInfo[]
      */
     public function getMidocoCustDoubleAddrInfo(): ?array
     {
@@ -65,12 +65,12 @@ class SearchCustDoubleAddrResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchCustDoubleAddrResponseMidocoCustDoubleAddrInfoItem) {
             // validation for constraint: itemType
-            if (!$searchCustDoubleAddrResponseMidocoCustDoubleAddrInfoItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CustomerDoubleAddrInfo) {
+            if (!$searchCustDoubleAddrResponseMidocoCustDoubleAddrInfoItem instanceof \Pggns\MidocoApi\Crm\StructType\CustomerDoubleAddrInfo) {
                 $invalidValues[] = is_object($searchCustDoubleAddrResponseMidocoCustDoubleAddrInfoItem) ? get_class($searchCustDoubleAddrResponseMidocoCustDoubleAddrInfoItem) : sprintf('%s(%s)', gettype($searchCustDoubleAddrResponseMidocoCustDoubleAddrInfoItem), var_export($searchCustDoubleAddrResponseMidocoCustDoubleAddrInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustDoubleAddrInfo property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CustomerDoubleAddrInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustDoubleAddrInfo property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CustomerDoubleAddrInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -79,8 +79,8 @@ class SearchCustDoubleAddrResponse extends AbstractStructBase
     /**
      * Set MidocoCustDoubleAddrInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerDoubleAddrInfo[] $midocoCustDoubleAddrInfo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustDoubleAddrResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerDoubleAddrInfo[] $midocoCustDoubleAddrInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustDoubleAddrResponse
      */
     public function setMidocoCustDoubleAddrInfo(?array $midocoCustDoubleAddrInfo = null): self
     {
@@ -95,14 +95,14 @@ class SearchCustDoubleAddrResponse extends AbstractStructBase
     /**
      * Add item to MidocoCustDoubleAddrInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerDoubleAddrInfo $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustDoubleAddrResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerDoubleAddrInfo $item
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustDoubleAddrResponse
      */
-    public function addToMidocoCustDoubleAddrInfo(\Pggns\MidocoApi\Api\Crm\StructType\CustomerDoubleAddrInfo $item): self
+    public function addToMidocoCustDoubleAddrInfo(\Pggns\MidocoApi\Crm\StructType\CustomerDoubleAddrInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CustomerDoubleAddrInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustDoubleAddrInfo property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CustomerDoubleAddrInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CustomerDoubleAddrInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustDoubleAddrInfo property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CustomerDoubleAddrInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustDoubleAddrInfo[] = $item;
         
@@ -119,7 +119,7 @@ class SearchCustDoubleAddrResponse extends AbstractStructBase
     /**
      * Set numberOfResults value
      * @param int $numberOfResults
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustDoubleAddrResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustDoubleAddrResponse
      */
     public function setNumberOfResults(?int $numberOfResults = null): self
     {

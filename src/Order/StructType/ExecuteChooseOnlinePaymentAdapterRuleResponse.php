@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ExecuteChooseOnlinePaymentAdapterRuleResponse extends AbstractStructBase
     /**
      * Set adapterId value
      * @param string $adapterId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteChooseOnlinePaymentAdapterRuleResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteChooseOnlinePaymentAdapterRuleResponse
      */
     public function setAdapterId(?string $adapterId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -199,7 +199,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -222,7 +222,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setChargeId(?int $chargeId = null): self
     {
@@ -245,7 +245,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -268,7 +268,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -291,7 +291,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -314,7 +314,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -337,7 +337,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set externalDocName value
      * @param string $externalDocName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setExternalDocName(?string $externalDocName = null): self
     {
@@ -360,7 +360,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setId(?int $id = null): self
     {
@@ -383,7 +383,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set isCredit value
      * @param bool $isCredit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setIsCredit(?bool $isCredit = null): self
     {
@@ -406,7 +406,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -429,7 +429,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set medStlmntProdId value
      * @param int $medStlmntProdId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setMedStlmntProdId(?int $medStlmntProdId = null): self
     {
@@ -452,7 +452,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set mediatorBillingId value
      * @param int $mediatorBillingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setMediatorBillingId(?int $mediatorBillingId = null): self
     {
@@ -475,7 +475,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -498,7 +498,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set mediatorSettlementId value
      * @param int $mediatorSettlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setMediatorSettlementId(?int $mediatorSettlementId = null): self
     {
@@ -521,7 +521,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set nettoAmount value
      * @param float $nettoAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setNettoAmount(?float $nettoAmount = null): self
     {
@@ -544,7 +544,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -567,7 +567,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set settlementMonth value
      * @param string $settlementMonth
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setSettlementMonth(?string $settlementMonth = null): self
     {
@@ -590,7 +590,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -613,7 +613,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -636,7 +636,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -659,7 +659,7 @@ class MediatorChargeDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

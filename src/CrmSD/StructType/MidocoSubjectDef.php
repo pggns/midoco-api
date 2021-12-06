@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoSubjectDef extends SubjectDefDTO
     /**
      * Set isInherited value
      * @param bool $isInherited
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSubjectDef
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectDef
      */
     public function setIsInherited(?bool $isInherited = null): self
     {

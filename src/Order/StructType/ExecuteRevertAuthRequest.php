@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -32,9 +32,9 @@ class ExecuteRevertAuthRequest extends AbstractStructBase
      * The MidocoOnlinePaymentTransaction
      * Meta information extracted from the WSDL
      * - ref: MidocoOnlinePaymentTransaction
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction $MidocoOnlinePaymentTransaction = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction $MidocoOnlinePaymentTransaction = null;
     /**
      * Constructor method for ExecuteRevertAuthRequest
      * @uses ExecuteRevertAuthRequest::setDocumentId()
@@ -44,9 +44,9 @@ class ExecuteRevertAuthRequest extends AbstractStructBase
      * @param int $documentId
      * @param int $internalVersion
      * @param int $position
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction
      */
-    public function __construct(?int $documentId = null, ?int $internalVersion = null, ?int $position = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null)
+    public function __construct(?int $documentId = null, ?int $internalVersion = null, ?int $position = null, ?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null)
     {
         $this
             ->setDocumentId($documentId)
@@ -65,7 +65,7 @@ class ExecuteRevertAuthRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteRevertAuthRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteRevertAuthRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -88,7 +88,7 @@ class ExecuteRevertAuthRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteRevertAuthRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteRevertAuthRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -111,7 +111,7 @@ class ExecuteRevertAuthRequest extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteRevertAuthRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteRevertAuthRequest
      */
     public function setPosition(?int $position = null): self
     {
@@ -125,18 +125,18 @@ class ExecuteRevertAuthRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOnlinePaymentTransaction value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction|null
      */
-    public function getMidocoOnlinePaymentTransaction(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction
+    public function getMidocoOnlinePaymentTransaction(): ?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction
     {
         return $this->MidocoOnlinePaymentTransaction;
     }
     /**
      * Set MidocoOnlinePaymentTransaction value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteRevertAuthRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteRevertAuthRequest
      */
-    public function setMidocoOnlinePaymentTransaction(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null): self
+    public function setMidocoOnlinePaymentTransaction(?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null): self
     {
         $this->MidocoOnlinePaymentTransaction = $midocoOnlinePaymentTransaction;
         

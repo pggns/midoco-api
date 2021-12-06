@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,7 +20,7 @@ class Prices extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Booking_price[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Booking_price[]
      */
     protected ?array $booking_price = null;
     /**
@@ -28,7 +28,7 @@ class Prices extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Flight_price[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Flight_price[]
      */
     protected ?array $flight_price = null;
     /**
@@ -36,7 +36,7 @@ class Prices extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Fee[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Fee[]
      */
     protected ?array $fee = null;
     /**
@@ -44,7 +44,7 @@ class Prices extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Details_price[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Details_price[]
      */
     protected ?array $details_price = null;
     /**
@@ -78,10 +78,10 @@ class Prices extends AbstractStructBase
      * @uses Prices::setDisplayed_currency()
      * @uses Prices::setDisplayed_currency_rate()
      * @uses Prices::setBooking_currency_rate()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Booking_price[] $booking_price
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Flight_price[] $flight_price
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Fee[] $fee
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Details_price[] $details_price
+     * @param \Pggns\MidocoApi\Documents\StructType\Booking_price[] $booking_price
+     * @param \Pggns\MidocoApi\Documents\StructType\Flight_price[] $flight_price
+     * @param \Pggns\MidocoApi\Documents\StructType\Fee[] $fee
+     * @param \Pggns\MidocoApi\Documents\StructType\Details_price[] $details_price
      * @param string $displayed_currency
      * @param float $displayed_currency_rate
      * @param float $booking_currency_rate
@@ -99,7 +99,7 @@ class Prices extends AbstractStructBase
     }
     /**
      * Get booking_price value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Booking_price[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Booking_price[]
      */
     public function getBooking_price(): ?array
     {
@@ -120,12 +120,12 @@ class Prices extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pricesBooking_priceItem) {
             // validation for constraint: itemType
-            if (!$pricesBooking_priceItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Booking_price) {
+            if (!$pricesBooking_priceItem instanceof \Pggns\MidocoApi\Documents\StructType\Booking_price) {
                 $invalidValues[] = is_object($pricesBooking_priceItem) ? get_class($pricesBooking_priceItem) : sprintf('%s(%s)', gettype($pricesBooking_priceItem), var_export($pricesBooking_priceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The booking_price property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Booking_price, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The booking_price property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Booking_price, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -134,8 +134,8 @@ class Prices extends AbstractStructBase
     /**
      * Set booking_price value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Booking_price[] $booking_price
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Prices
+     * @param \Pggns\MidocoApi\Documents\StructType\Booking_price[] $booking_price
+     * @return \Pggns\MidocoApi\Documents\StructType\Prices
      */
     public function setBooking_price(?array $booking_price = null): self
     {
@@ -150,14 +150,14 @@ class Prices extends AbstractStructBase
     /**
      * Add item to booking_price value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Booking_price $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Prices
+     * @param \Pggns\MidocoApi\Documents\StructType\Booking_price $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Prices
      */
-    public function addToBooking_price(\Pggns\MidocoApi\Api\Documents\StructType\Booking_price $item): self
+    public function addToBooking_price(\Pggns\MidocoApi\Documents\StructType\Booking_price $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Booking_price) {
-            throw new InvalidArgumentException(sprintf('The booking_price property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Booking_price, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Booking_price) {
+            throw new InvalidArgumentException(sprintf('The booking_price property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Booking_price, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->booking_price[] = $this->{'booking-price'}[] = $item;
         
@@ -165,7 +165,7 @@ class Prices extends AbstractStructBase
     }
     /**
      * Get flight_price value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Flight_price[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Flight_price[]
      */
     public function getFlight_price(): ?array
     {
@@ -186,12 +186,12 @@ class Prices extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pricesFlight_priceItem) {
             // validation for constraint: itemType
-            if (!$pricesFlight_priceItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Flight_price) {
+            if (!$pricesFlight_priceItem instanceof \Pggns\MidocoApi\Documents\StructType\Flight_price) {
                 $invalidValues[] = is_object($pricesFlight_priceItem) ? get_class($pricesFlight_priceItem) : sprintf('%s(%s)', gettype($pricesFlight_priceItem), var_export($pricesFlight_priceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The flight_price property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Flight_price, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The flight_price property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Flight_price, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -200,8 +200,8 @@ class Prices extends AbstractStructBase
     /**
      * Set flight_price value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Flight_price[] $flight_price
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Prices
+     * @param \Pggns\MidocoApi\Documents\StructType\Flight_price[] $flight_price
+     * @return \Pggns\MidocoApi\Documents\StructType\Prices
      */
     public function setFlight_price(?array $flight_price = null): self
     {
@@ -216,14 +216,14 @@ class Prices extends AbstractStructBase
     /**
      * Add item to flight_price value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Flight_price $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Prices
+     * @param \Pggns\MidocoApi\Documents\StructType\Flight_price $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Prices
      */
-    public function addToFlight_price(\Pggns\MidocoApi\Api\Documents\StructType\Flight_price $item): self
+    public function addToFlight_price(\Pggns\MidocoApi\Documents\StructType\Flight_price $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Flight_price) {
-            throw new InvalidArgumentException(sprintf('The flight_price property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Flight_price, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Flight_price) {
+            throw new InvalidArgumentException(sprintf('The flight_price property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Flight_price, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->flight_price[] = $this->{'flight-price'}[] = $item;
         
@@ -231,7 +231,7 @@ class Prices extends AbstractStructBase
     }
     /**
      * Get fee value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Fee[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Fee[]
      */
     public function getFee(): ?array
     {
@@ -252,12 +252,12 @@ class Prices extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pricesFeeItem) {
             // validation for constraint: itemType
-            if (!$pricesFeeItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Fee) {
+            if (!$pricesFeeItem instanceof \Pggns\MidocoApi\Documents\StructType\Fee) {
                 $invalidValues[] = is_object($pricesFeeItem) ? get_class($pricesFeeItem) : sprintf('%s(%s)', gettype($pricesFeeItem), var_export($pricesFeeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The fee property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Fee, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The fee property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Fee, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -266,8 +266,8 @@ class Prices extends AbstractStructBase
     /**
      * Set fee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Fee[] $fee
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Prices
+     * @param \Pggns\MidocoApi\Documents\StructType\Fee[] $fee
+     * @return \Pggns\MidocoApi\Documents\StructType\Prices
      */
     public function setFee(?array $fee = null): self
     {
@@ -282,14 +282,14 @@ class Prices extends AbstractStructBase
     /**
      * Add item to fee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Fee $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Prices
+     * @param \Pggns\MidocoApi\Documents\StructType\Fee $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Prices
      */
-    public function addToFee(\Pggns\MidocoApi\Api\Documents\StructType\Fee $item): self
+    public function addToFee(\Pggns\MidocoApi\Documents\StructType\Fee $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Fee) {
-            throw new InvalidArgumentException(sprintf('The fee property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Fee, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Fee) {
+            throw new InvalidArgumentException(sprintf('The fee property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Fee, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->fee[] = $item;
         
@@ -297,7 +297,7 @@ class Prices extends AbstractStructBase
     }
     /**
      * Get details_price value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Details_price[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Details_price[]
      */
     public function getDetails_price(): ?array
     {
@@ -318,12 +318,12 @@ class Prices extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pricesDetails_priceItem) {
             // validation for constraint: itemType
-            if (!$pricesDetails_priceItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Details_price) {
+            if (!$pricesDetails_priceItem instanceof \Pggns\MidocoApi\Documents\StructType\Details_price) {
                 $invalidValues[] = is_object($pricesDetails_priceItem) ? get_class($pricesDetails_priceItem) : sprintf('%s(%s)', gettype($pricesDetails_priceItem), var_export($pricesDetails_priceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The details_price property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Details_price, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The details_price property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Details_price, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -332,8 +332,8 @@ class Prices extends AbstractStructBase
     /**
      * Set details_price value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Details_price[] $details_price
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Prices
+     * @param \Pggns\MidocoApi\Documents\StructType\Details_price[] $details_price
+     * @return \Pggns\MidocoApi\Documents\StructType\Prices
      */
     public function setDetails_price(?array $details_price = null): self
     {
@@ -348,14 +348,14 @@ class Prices extends AbstractStructBase
     /**
      * Add item to details_price value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Details_price $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Prices
+     * @param \Pggns\MidocoApi\Documents\StructType\Details_price $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Prices
      */
-    public function addToDetails_price(\Pggns\MidocoApi\Api\Documents\StructType\Details_price $item): self
+    public function addToDetails_price(\Pggns\MidocoApi\Documents\StructType\Details_price $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Details_price) {
-            throw new InvalidArgumentException(sprintf('The details_price property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Details_price, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Details_price) {
+            throw new InvalidArgumentException(sprintf('The details_price property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Details_price, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->details_price[] = $this->{'details-price'}[] = $item;
         
@@ -372,7 +372,7 @@ class Prices extends AbstractStructBase
     /**
      * Set displayed_currency value
      * @param string $displayed_currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Prices
+     * @return \Pggns\MidocoApi\Documents\StructType\Prices
      */
     public function setDisplayed_currency(?string $displayed_currency = null): self
     {
@@ -395,7 +395,7 @@ class Prices extends AbstractStructBase
     /**
      * Set displayed_currency_rate value
      * @param float $displayed_currency_rate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Prices
+     * @return \Pggns\MidocoApi\Documents\StructType\Prices
      */
     public function setDisplayed_currency_rate(?float $displayed_currency_rate = null): self
     {
@@ -418,7 +418,7 @@ class Prices extends AbstractStructBase
     /**
      * Set booking_currency_rate value
      * @param float $booking_currency_rate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Prices
+     * @return \Pggns\MidocoApi\Documents\StructType\Prices
      */
     public function setBooking_currency_rate(?float $booking_currency_rate = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -72,7 +72,7 @@ class CalculateEntryPeriodSumsRequest extends AbstractStructBase
     /**
      * Set bookingPeriodFrom value
      * @param int $bookingPeriodFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateEntryPeriodSumsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateEntryPeriodSumsRequest
      */
     public function setBookingPeriodFrom(?int $bookingPeriodFrom = null): self
     {
@@ -95,7 +95,7 @@ class CalculateEntryPeriodSumsRequest extends AbstractStructBase
     /**
      * Set bookingPeriodTo value
      * @param int $bookingPeriodTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateEntryPeriodSumsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateEntryPeriodSumsRequest
      */
     public function setBookingPeriodTo(?int $bookingPeriodTo = null): self
     {
@@ -118,7 +118,7 @@ class CalculateEntryPeriodSumsRequest extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateEntryPeriodSumsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateEntryPeriodSumsRequest
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -141,7 +141,7 @@ class CalculateEntryPeriodSumsRequest extends AbstractStructBase
     /**
      * Set reopened value
      * @param bool $reopened
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateEntryPeriodSumsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateEntryPeriodSumsRequest
      */
     public function setReopened(?bool $reopened = false): self
     {

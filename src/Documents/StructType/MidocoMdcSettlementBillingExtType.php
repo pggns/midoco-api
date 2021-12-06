@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoMdcSettlementBillingExtType extends MdcSettlementBillingDTO
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMdcSettlementBillingExtType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMdcSettlementBillingExtType
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -70,7 +70,7 @@ class MidocoMdcSettlementBillingExtType extends MdcSettlementBillingDTO
     /**
      * Set documentNo value
      * @param int $documentNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMdcSettlementBillingExtType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMdcSettlementBillingExtType
      */
     public function setDocumentNo(?int $documentNo = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set bookvat value
      * @param bool $bookvat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setBookvat(?bool $bookvat = null): self
     {
@@ -166,7 +166,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set commenttext value
      * @param string $commenttext
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setCommenttext(?string $commenttext = null): self
     {
@@ -189,7 +189,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set invoiceVatPositionId value
      * @param int $invoiceVatPositionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setInvoiceVatPositionId(?int $invoiceVatPositionId = null): self
     {
@@ -212,7 +212,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set isOwn value
      * @param bool $isOwn
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setIsOwn(?bool $isOwn = null): self
     {
@@ -235,7 +235,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -258,7 +258,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -281,7 +281,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set originalVatAmount value
      * @param float $originalVatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setOriginalVatAmount(?float $originalVatAmount = null): self
     {
@@ -304,7 +304,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set originalVatBase value
      * @param float $originalVatBase
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setOriginalVatBase(?float $originalVatBase = null): self
     {
@@ -327,7 +327,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set vatAddress value
      * @param string $vatAddress
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setVatAddress(?string $vatAddress = null): self
     {
@@ -350,7 +350,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -373,7 +373,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set vatBase value
      * @param float $vatBase
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setVatBase(?float $vatBase = null): self
     {
@@ -396,7 +396,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set vatDescription value
      * @param string $vatDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setVatDescription(?string $vatDescription = null): self
     {
@@ -419,7 +419,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setVatId(?string $vatId = null): self
     {
@@ -442,7 +442,7 @@ class PreparedInvoiceVatPositionDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedInvoiceVatPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedInvoiceVatPositionDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

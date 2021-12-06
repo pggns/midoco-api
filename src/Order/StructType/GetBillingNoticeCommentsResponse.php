@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetBillingNoticeCommentsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingNoticeComment
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BillingNoticeCommentDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\BillingNoticeCommentDTO[]
      */
     protected ?array $MidocoBillingNoticeComment = null;
     /**
      * Constructor method for GetBillingNoticeCommentsResponse
      * @uses GetBillingNoticeCommentsResponse::setMidocoBillingNoticeComment()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingNoticeCommentDTO[] $midocoBillingNoticeComment
+     * @param \Pggns\MidocoApi\Order\StructType\BillingNoticeCommentDTO[] $midocoBillingNoticeComment
      */
     public function __construct(?array $midocoBillingNoticeComment = null)
     {
@@ -34,7 +34,7 @@ class GetBillingNoticeCommentsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingNoticeComment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingNoticeCommentDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\BillingNoticeCommentDTO[]
      */
     public function getMidocoBillingNoticeComment(): ?array
     {
@@ -55,12 +55,12 @@ class GetBillingNoticeCommentsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBillingNoticeCommentsResponseMidocoBillingNoticeCommentItem) {
             // validation for constraint: itemType
-            if (!$getBillingNoticeCommentsResponseMidocoBillingNoticeCommentItem instanceof \Pggns\MidocoApi\Api\Order\StructType\BillingNoticeCommentDTO) {
+            if (!$getBillingNoticeCommentsResponseMidocoBillingNoticeCommentItem instanceof \Pggns\MidocoApi\Order\StructType\BillingNoticeCommentDTO) {
                 $invalidValues[] = is_object($getBillingNoticeCommentsResponseMidocoBillingNoticeCommentItem) ? get_class($getBillingNoticeCommentsResponseMidocoBillingNoticeCommentItem) : sprintf('%s(%s)', gettype($getBillingNoticeCommentsResponseMidocoBillingNoticeCommentItem), var_export($getBillingNoticeCommentsResponseMidocoBillingNoticeCommentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingNoticeComment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BillingNoticeCommentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingNoticeComment property can only contain items of type \Pggns\MidocoApi\Order\StructType\BillingNoticeCommentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetBillingNoticeCommentsResponse extends AbstractStructBase
     /**
      * Set MidocoBillingNoticeComment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingNoticeCommentDTO[] $midocoBillingNoticeComment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingNoticeCommentsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\BillingNoticeCommentDTO[] $midocoBillingNoticeComment
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingNoticeCommentsResponse
      */
     public function setMidocoBillingNoticeComment(?array $midocoBillingNoticeComment = null): self
     {
@@ -85,14 +85,14 @@ class GetBillingNoticeCommentsResponse extends AbstractStructBase
     /**
      * Add item to MidocoBillingNoticeComment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingNoticeCommentDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingNoticeCommentsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\BillingNoticeCommentDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingNoticeCommentsResponse
      */
-    public function addToMidocoBillingNoticeComment(\Pggns\MidocoApi\Api\Order\StructType\BillingNoticeCommentDTO $item): self
+    public function addToMidocoBillingNoticeComment(\Pggns\MidocoApi\Order\StructType\BillingNoticeCommentDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\BillingNoticeCommentDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingNoticeComment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BillingNoticeCommentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\BillingNoticeCommentDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingNoticeComment property can only contain items of type \Pggns\MidocoApi\Order\StructType\BillingNoticeCommentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingNoticeComment[] = $item;
         

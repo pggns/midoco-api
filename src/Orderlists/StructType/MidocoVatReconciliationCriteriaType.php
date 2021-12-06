@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -125,7 +125,7 @@ class MidocoVatReconciliationCriteriaType extends AbstractStructBase
      * Set vatCode value
      * @throws InvalidArgumentException
      * @param string[] $vatCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType
      */
     public function setVatCode(?array $vatCode = null): self
     {
@@ -141,7 +141,7 @@ class MidocoVatReconciliationCriteriaType extends AbstractStructBase
      * Add item to vatCode value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType
      */
     public function addToVatCode(string $item): self
     {
@@ -164,7 +164,7 @@ class MidocoVatReconciliationCriteriaType extends AbstractStructBase
     /**
      * Set bookingPeriodStart value
      * @param int $bookingPeriodStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType
      */
     public function setBookingPeriodStart(?int $bookingPeriodStart = null): self
     {
@@ -187,7 +187,7 @@ class MidocoVatReconciliationCriteriaType extends AbstractStructBase
     /**
      * Set bookingPeriodEnd value
      * @param int $bookingPeriodEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType
      */
     public function setBookingPeriodEnd(?int $bookingPeriodEnd = null): self
     {
@@ -210,7 +210,7 @@ class MidocoVatReconciliationCriteriaType extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -233,7 +233,7 @@ class MidocoVatReconciliationCriteriaType extends AbstractStructBase
     /**
      * Set receiptDateStart value
      * @param string $receiptDateStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType
      */
     public function setReceiptDateStart(?string $receiptDateStart = null): self
     {
@@ -256,7 +256,7 @@ class MidocoVatReconciliationCriteriaType extends AbstractStructBase
     /**
      * Set receiptDateEnd value
      * @param string $receiptDateEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType
      */
     public function setReceiptDateEnd(?string $receiptDateEnd = null): self
     {
@@ -279,7 +279,7 @@ class MidocoVatReconciliationCriteriaType extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType
      */
     public function setExportId(?int $exportId = null): self
     {
@@ -302,7 +302,7 @@ class MidocoVatReconciliationCriteriaType extends AbstractStructBase
     /**
      * Set isExported value
      * @param int $isExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType
      */
     public function setIsExported(?int $isExported = null): self
     {

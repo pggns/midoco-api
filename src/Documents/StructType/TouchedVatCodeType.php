@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class TouchedVatCodeType extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType
+     * @return \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -94,7 +94,7 @@ class TouchedVatCodeType extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType
+     * @return \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType
      */
     public function setVatPercent(?float $vatPercent = null): self
     {
@@ -117,7 +117,7 @@ class TouchedVatCodeType extends AbstractStructBase
     /**
      * Set isReverseCharge value
      * @param bool $isReverseCharge
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType
+     * @return \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType
      */
     public function setIsReverseCharge(?bool $isReverseCharge = null): self
     {
@@ -140,7 +140,7 @@ class TouchedVatCodeType extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType
+     * @return \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -163,7 +163,7 @@ class TouchedVatCodeType extends AbstractStructBase
     /**
      * Set vatBase value
      * @param float $vatBase
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType
+     * @return \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType
      */
     public function setVatBase(?float $vatBase = null): self
     {

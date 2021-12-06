@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class TravelAttrDefDTO extends AbstractStructBase
     /**
      * Set attrCode value
      * @param string $attrCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelAttrDefDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelAttrDefDTO
      */
     public function setAttrCode(?string $attrCode = null): self
     {
@@ -78,7 +78,7 @@ class TravelAttrDefDTO extends AbstractStructBase
     /**
      * Set attrDesc value
      * @param string $attrDesc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelAttrDefDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelAttrDefDTO
      */
     public function setAttrDesc(?string $attrDesc = null): self
     {
@@ -101,7 +101,7 @@ class TravelAttrDefDTO extends AbstractStructBase
     /**
      * Set attrId value
      * @param int $attrId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelAttrDefDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelAttrDefDTO
      */
     public function setAttrId(?int $attrId = null): self
     {

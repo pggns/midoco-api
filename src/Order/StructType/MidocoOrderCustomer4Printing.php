@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoOrderCustomer4Printing extends MidocoOrderCustomerType
     /**
      * Set addresseeLine1 value
      * @param string $addresseeLine1
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer4Printing
      */
     public function setAddresseeLine1(?string $addresseeLine1 = null): self
     {
@@ -86,7 +86,7 @@ class MidocoOrderCustomer4Printing extends MidocoOrderCustomerType
     /**
      * Set addresseeLine2 value
      * @param string $addresseeLine2
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer4Printing
      */
     public function setAddresseeLine2(?string $addresseeLine2 = null): self
     {
@@ -109,7 +109,7 @@ class MidocoOrderCustomer4Printing extends MidocoOrderCustomerType
     /**
      * Set mailSalutation value
      * @param string $mailSalutation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer4Printing
      */
     public function setMailSalutation(?string $mailSalutation = null): self
     {
@@ -132,7 +132,7 @@ class MidocoOrderCustomer4Printing extends MidocoOrderCustomerType
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer4Printing
      */
     public function setLanguage(?string $language = null): self
     {

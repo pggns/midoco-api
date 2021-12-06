@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -174,7 +174,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set contactPerson value
      * @param string $contactPerson
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setContactPerson(?string $contactPerson = null): self
     {
@@ -197,7 +197,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -220,7 +220,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set fax value
      * @param string $fax
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setFax(?string $fax = null): self
     {
@@ -243,7 +243,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -266,7 +266,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set mail value
      * @param string $mail
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setMail(?string $mail = null): self
     {
@@ -289,7 +289,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setRemark(?string $remark = null): self
     {
@@ -312,7 +312,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setState(?string $state = null): self
     {
@@ -335,7 +335,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -358,7 +358,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -381,7 +381,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set supplierName value
      * @param string $supplierName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setSupplierName(?string $supplierName = null): self
     {
@@ -404,7 +404,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set telephone value
      * @param string $telephone
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setTelephone(?string $telephone = null): self
     {
@@ -427,7 +427,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setVatId(?string $vatId = null): self
     {
@@ -450,7 +450,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set website value
      * @param string $website
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setWebsite(?string $website = null): self
     {
@@ -473,7 +473,7 @@ class TravelSupplierInfoDTO extends AbstractStructBase
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelSupplierInfoDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelSupplierInfoDTO
      */
     public function setZipCode(?string $zipCode = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,25 +20,25 @@ class GetFirstCustomerForCampaignWSResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoMisCampaignResultWS
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultWSType|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCampaignResultWSType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultWSType $MidocoMisCampaignResultWS = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MisCampaignResultWSType $MidocoMisCampaignResultWS = null;
     /**
      * The MidocoMisCustomerResult
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoMisCustomerResult
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO $MidocoMisCustomerResult = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO $MidocoMisCustomerResult = null;
     /**
      * Constructor method for GetFirstCustomerForCampaignWSResponse
      * @uses GetFirstCustomerForCampaignWSResponse::setMidocoMisCampaignResultWS()
      * @uses GetFirstCustomerForCampaignWSResponse::setMidocoMisCustomerResult()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultWSType $midocoMisCampaignResultWS
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO $midocoMisCustomerResult
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignResultWSType $midocoMisCampaignResultWS
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO $midocoMisCustomerResult
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultWSType $midocoMisCampaignResultWS = null, ?\Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO $midocoMisCustomerResult = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MisCampaignResultWSType $midocoMisCampaignResultWS = null, ?\Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO $midocoMisCustomerResult = null)
     {
         $this
             ->setMidocoMisCampaignResultWS($midocoMisCampaignResultWS)
@@ -46,18 +46,18 @@ class GetFirstCustomerForCampaignWSResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMisCampaignResultWS value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultWSType|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignResultWSType|null
      */
-    public function getMidocoMisCampaignResultWS(): ?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultWSType
+    public function getMidocoMisCampaignResultWS(): ?\Pggns\MidocoApi\Mis\StructType\MisCampaignResultWSType
     {
         return $this->MidocoMisCampaignResultWS;
     }
     /**
      * Set MidocoMisCampaignResultWS value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultWSType $midocoMisCampaignResultWS
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetFirstCustomerForCampaignWSResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignResultWSType $midocoMisCampaignResultWS
+     * @return \Pggns\MidocoApi\Mis\StructType\GetFirstCustomerForCampaignWSResponse
      */
-    public function setMidocoMisCampaignResultWS(?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultWSType $midocoMisCampaignResultWS = null): self
+    public function setMidocoMisCampaignResultWS(?\Pggns\MidocoApi\Mis\StructType\MisCampaignResultWSType $midocoMisCampaignResultWS = null): self
     {
         $this->MidocoMisCampaignResultWS = $midocoMisCampaignResultWS;
         
@@ -65,18 +65,18 @@ class GetFirstCustomerForCampaignWSResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMisCustomerResult value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO|null
      */
-    public function getMidocoMisCustomerResult(): ?\Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO
+    public function getMidocoMisCustomerResult(): ?\Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO
     {
         return $this->MidocoMisCustomerResult;
     }
     /**
      * Set MidocoMisCustomerResult value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO $midocoMisCustomerResult
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetFirstCustomerForCampaignWSResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO $midocoMisCustomerResult
+     * @return \Pggns\MidocoApi\Mis\StructType\GetFirstCustomerForCampaignWSResponse
      */
-    public function setMidocoMisCustomerResult(?\Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO $midocoMisCustomerResult = null): self
+    public function setMidocoMisCustomerResult(?\Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO $midocoMisCustomerResult = null): self
     {
         $this->MidocoMisCustomerResult = $midocoMisCustomerResult;
         

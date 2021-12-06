@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class AssignDebitorRequest extends AbstractStructBase
      * The MidocoDebitorAssign
      * Meta information extracted from the WSDL
      * - ref: MidocoDebitorAssign
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\DebitorAssignDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\DebitorAssignDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\DebitorAssignDTO $MidocoDebitorAssign = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\DebitorAssignDTO $MidocoDebitorAssign = null;
     /**
      * Constructor method for AssignDebitorRequest
      * @uses AssignDebitorRequest::setMidocoDebitorAssign()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DebitorAssignDTO $midocoDebitorAssign
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DebitorAssignDTO $midocoDebitorAssign
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\DebitorAssignDTO $midocoDebitorAssign = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\DebitorAssignDTO $midocoDebitorAssign = null)
     {
         $this
             ->setMidocoDebitorAssign($midocoDebitorAssign);
     }
     /**
      * Get MidocoDebitorAssign value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DebitorAssignDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitorAssignDTO|null
      */
-    public function getMidocoDebitorAssign(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\DebitorAssignDTO
+    public function getMidocoDebitorAssign(): ?\Pggns\MidocoApi\CrmSD\StructType\DebitorAssignDTO
     {
         return $this->MidocoDebitorAssign;
     }
     /**
      * Set MidocoDebitorAssign value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DebitorAssignDTO $midocoDebitorAssign
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignDebitorRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DebitorAssignDTO $midocoDebitorAssign
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignDebitorRequest
      */
-    public function setMidocoDebitorAssign(?\Pggns\MidocoApi\Api\CrmSD\StructType\DebitorAssignDTO $midocoDebitorAssign = null): self
+    public function setMidocoDebitorAssign(?\Pggns\MidocoApi\CrmSD\StructType\DebitorAssignDTO $midocoDebitorAssign = null): self
     {
         $this->MidocoDebitorAssign = $midocoDebitorAssign;
         

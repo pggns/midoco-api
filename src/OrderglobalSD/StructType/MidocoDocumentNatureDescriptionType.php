@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoDocumentNatureDescriptionType extends DocumentNatureDescriptionDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType
      */
     public function setInherited(?bool $inherited = null): self
     {
@@ -70,7 +70,7 @@ class MidocoDocumentNatureDescriptionType extends DocumentNatureDescriptionDTO
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureDescriptionType
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {

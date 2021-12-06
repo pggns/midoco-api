@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetUsedVolumeRequest extends AbstractStructBase
     /**
      * Set storeDate value
      * @param string $storeDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetUsedVolumeRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetUsedVolumeRequest
      */
     public function setStoreDate(?string $storeDate = null): self
     {
@@ -78,7 +78,7 @@ class GetUsedVolumeRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetUsedVolumeRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetUsedVolumeRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -101,7 +101,7 @@ class GetUsedVolumeRequest extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetUsedVolumeRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetUsedVolumeRequest
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {

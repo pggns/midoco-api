@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class StatistikAtLoadDataResponse extends AbstractStructBase
      * Set data value
      * @throws InvalidArgumentException
      * @param string[] $data
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtLoadDataResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtLoadDataResponse
      */
     public function setData(?array $data = null): self
     {
@@ -85,7 +85,7 @@ class StatistikAtLoadDataResponse extends AbstractStructBase
      * Add item to data value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StatistikAtLoadDataResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\StatistikAtLoadDataResponse
      */
     public function addToData(string $item): self
     {

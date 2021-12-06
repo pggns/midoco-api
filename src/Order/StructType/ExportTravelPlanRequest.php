@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -78,7 +78,7 @@ class ExportTravelPlanRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelPlanRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelPlanRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -101,7 +101,7 @@ class ExportTravelPlanRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelPlanRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelPlanRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -124,7 +124,7 @@ class ExportTravelPlanRequest extends AbstractStructBase
     /**
      * Set isPreview value
      * @param bool $isPreview
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelPlanRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelPlanRequest
      */
     public function setIsPreview(?bool $isPreview = false): self
     {
@@ -147,7 +147,7 @@ class ExportTravelPlanRequest extends AbstractStructBase
     /**
      * Set printMedia value
      * @param string $printMedia
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelPlanRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelPlanRequest
      */
     public function setPrintMedia(?string $printMedia = 'P'): self
     {
@@ -170,7 +170,7 @@ class ExportTravelPlanRequest extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelPlanRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelPlanRequest
      */
     public function setPrintType(?string $printType = null): self
     {

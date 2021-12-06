@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -36,7 +36,7 @@ class CcToken extends AbstractStructBase
      * - maxOccurs: 3
      * - minOccurs: 0
      * - ref: tokenAttributes
-     * @var \Pggns\MidocoApi\Api\Order\StructType\TokenAttributes[]
+     * @var \Pggns\MidocoApi\Order\StructType\TokenAttributes[]
      */
     protected ?array $tokenAttributes = null;
     /**
@@ -48,7 +48,7 @@ class CcToken extends AbstractStructBase
      * @param string $value
      * @param string $ccTokenType
      * @param bool $isRecurring
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TokenAttributes[] $tokenAttributes
+     * @param \Pggns\MidocoApi\Order\StructType\TokenAttributes[] $tokenAttributes
      */
     public function __construct(?string $value = null, ?string $ccTokenType = null, ?bool $isRecurring = null, ?array $tokenAttributes = null)
     {
@@ -69,7 +69,7 @@ class CcToken extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcToken
+     * @return \Pggns\MidocoApi\Order\StructType\CcToken
      */
     public function setValue(?string $value = null): self
     {
@@ -91,17 +91,17 @@ class CcToken extends AbstractStructBase
     }
     /**
      * Set ccTokenType value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\CcTokenType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\CcTokenType::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\CcTokenType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\CcTokenType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $ccTokenType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcToken
+     * @return \Pggns\MidocoApi\Order\StructType\CcToken
      */
     public function setCcTokenType(?string $ccTokenType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\CcTokenType::valueIsValid($ccTokenType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\CcTokenType', is_array($ccTokenType) ? implode(', ', $ccTokenType) : var_export($ccTokenType, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\CcTokenType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\CcTokenType::valueIsValid($ccTokenType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\CcTokenType', is_array($ccTokenType) ? implode(', ', $ccTokenType) : var_export($ccTokenType, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\CcTokenType::getValidValues())), __LINE__);
         }
         $this->ccTokenType = $ccTokenType;
         
@@ -118,7 +118,7 @@ class CcToken extends AbstractStructBase
     /**
      * Set isRecurring value
      * @param bool $isRecurring
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcToken
+     * @return \Pggns\MidocoApi\Order\StructType\CcToken
      */
     public function setIsRecurring(?bool $isRecurring = null): self
     {
@@ -132,7 +132,7 @@ class CcToken extends AbstractStructBase
     }
     /**
      * Get tokenAttributes value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TokenAttributes[]
+     * @return \Pggns\MidocoApi\Order\StructType\TokenAttributes[]
      */
     public function getTokenAttributes(): ?array
     {
@@ -153,12 +153,12 @@ class CcToken extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $ccTokenTokenAttributesItem) {
             // validation for constraint: itemType
-            if (!$ccTokenTokenAttributesItem instanceof \Pggns\MidocoApi\Api\Order\StructType\TokenAttributes) {
+            if (!$ccTokenTokenAttributesItem instanceof \Pggns\MidocoApi\Order\StructType\TokenAttributes) {
                 $invalidValues[] = is_object($ccTokenTokenAttributesItem) ? get_class($ccTokenTokenAttributesItem) : sprintf('%s(%s)', gettype($ccTokenTokenAttributesItem), var_export($ccTokenTokenAttributesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The tokenAttributes property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\TokenAttributes, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The tokenAttributes property can only contain items of type \Pggns\MidocoApi\Order\StructType\TokenAttributes, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -167,8 +167,8 @@ class CcToken extends AbstractStructBase
     /**
      * Set tokenAttributes value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TokenAttributes[] $tokenAttributes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcToken
+     * @param \Pggns\MidocoApi\Order\StructType\TokenAttributes[] $tokenAttributes
+     * @return \Pggns\MidocoApi\Order\StructType\CcToken
      */
     public function setTokenAttributes(?array $tokenAttributes = null): self
     {
@@ -187,14 +187,14 @@ class CcToken extends AbstractStructBase
     /**
      * Add item to tokenAttributes value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TokenAttributes $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcToken
+     * @param \Pggns\MidocoApi\Order\StructType\TokenAttributes $item
+     * @return \Pggns\MidocoApi\Order\StructType\CcToken
      */
-    public function addToTokenAttributes(\Pggns\MidocoApi\Api\Order\StructType\TokenAttributes $item): self
+    public function addToTokenAttributes(\Pggns\MidocoApi\Order\StructType\TokenAttributes $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\TokenAttributes) {
-            throw new InvalidArgumentException(sprintf('The tokenAttributes property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\TokenAttributes, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\TokenAttributes) {
+            throw new InvalidArgumentException(sprintf('The tokenAttributes property can only contain items of type \Pggns\MidocoApi\Order\StructType\TokenAttributes, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(3)
         if (is_array($this->tokenAttributes) && count($this->tokenAttributes) >= 3) {

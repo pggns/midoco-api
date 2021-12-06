@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class GetAvailableMiscPaymentSettingRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoMiscPaymentSetting
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\CashPaymentSettingDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\CashPaymentSettingDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\CashPaymentSettingDTO $MidocoMiscPaymentSetting = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\CashPaymentSettingDTO $MidocoMiscPaymentSetting = null;
     /**
      * The typeID
      * Meta information extracted from the WSDL
@@ -32,10 +32,10 @@ class GetAvailableMiscPaymentSettingRequest extends AbstractStructBase
      * Constructor method for GetAvailableMiscPaymentSettingRequest
      * @uses GetAvailableMiscPaymentSettingRequest::setMidocoMiscPaymentSetting()
      * @uses GetAvailableMiscPaymentSettingRequest::setTypeID()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting
      * @param string $typeID
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting = null, ?string $typeID = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting = null, ?string $typeID = null)
     {
         $this
             ->setMidocoMiscPaymentSetting($midocoMiscPaymentSetting)
@@ -43,18 +43,18 @@ class GetAvailableMiscPaymentSettingRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMiscPaymentSetting value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashPaymentSettingDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashPaymentSettingDTO|null
      */
-    public function getMidocoMiscPaymentSetting(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\CashPaymentSettingDTO
+    public function getMidocoMiscPaymentSetting(): ?\Pggns\MidocoApi\Orderlists\StructType\CashPaymentSettingDTO
     {
         return $this->MidocoMiscPaymentSetting;
     }
     /**
      * Set MidocoMiscPaymentSetting value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAvailableMiscPaymentSettingRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAvailableMiscPaymentSettingRequest
      */
-    public function setMidocoMiscPaymentSetting(?\Pggns\MidocoApi\Api\Orderlists\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting = null): self
+    public function setMidocoMiscPaymentSetting(?\Pggns\MidocoApi\Orderlists\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting = null): self
     {
         $this->MidocoMiscPaymentSetting = $midocoMiscPaymentSetting;
         
@@ -71,7 +71,7 @@ class GetAvailableMiscPaymentSettingRequest extends AbstractStructBase
     /**
      * Set typeID value
      * @param string $typeID
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAvailableMiscPaymentSettingRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAvailableMiscPaymentSettingRequest
      */
     public function setTypeID(?string $typeID = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class PaymentProviderEntryType extends EntryDTO
     /**
      * Set paymentProvider value
      * @param string $paymentProvider
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderEntryType
      */
     public function setPaymentProvider(?string $paymentProvider = null): self
     {
@@ -118,7 +118,7 @@ class PaymentProviderEntryType extends EntryDTO
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderEntryType
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -141,7 +141,7 @@ class PaymentProviderEntryType extends EntryDTO
     /**
      * Set settlementInvoiceNo value
      * @param string $settlementInvoiceNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderEntryType
      */
     public function setSettlementInvoiceNo(?string $settlementInvoiceNo = null): self
     {
@@ -164,7 +164,7 @@ class PaymentProviderEntryType extends EntryDTO
     /**
      * Set settlementAmount value
      * @param float $settlementAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderEntryType
      */
     public function setSettlementAmount(?float $settlementAmount = null): self
     {
@@ -187,7 +187,7 @@ class PaymentProviderEntryType extends EntryDTO
     /**
      * Set settlementBooked value
      * @param bool $settlementBooked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderEntryType
      */
     public function setSettlementBooked(?bool $settlementBooked = null): self
     {
@@ -210,7 +210,7 @@ class PaymentProviderEntryType extends EntryDTO
     /**
      * Set settlementCustomerField value
      * @param string $settlementCustomerField
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderEntryType
      */
     public function setSettlementCustomerField(?string $settlementCustomerField = null): self
     {
@@ -233,7 +233,7 @@ class PaymentProviderEntryType extends EntryDTO
     /**
      * Set entryCreationDate value
      * @param string $entryCreationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderEntryType
      */
     public function setEntryCreationDate(?string $entryCreationDate = null): self
     {
@@ -256,7 +256,7 @@ class PaymentProviderEntryType extends EntryDTO
     /**
      * Set settlementDifference value
      * @param float $settlementDifference
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderEntryType
      */
     public function setSettlementDifference(?float $settlementDifference = null): self
     {

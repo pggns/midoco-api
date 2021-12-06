@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class ReceiptExportOrgunitDTO extends AbstractStructBase
     /**
      * Set printId value
      * @param int $printId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptExportOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptExportOrgunitDTO
      */
     public function setPrintId(?int $printId = null): self
     {
@@ -126,7 +126,7 @@ class ReceiptExportOrgunitDTO extends AbstractStructBase
     /**
      * Set unitCity value
      * @param string $unitCity
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptExportOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptExportOrgunitDTO
      */
     public function setUnitCity(?string $unitCity = null): self
     {
@@ -149,7 +149,7 @@ class ReceiptExportOrgunitDTO extends AbstractStructBase
     /**
      * Set unitCountry value
      * @param string $unitCountry
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptExportOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptExportOrgunitDTO
      */
     public function setUnitCountry(?string $unitCountry = null): self
     {
@@ -172,7 +172,7 @@ class ReceiptExportOrgunitDTO extends AbstractStructBase
     /**
      * Set unitId value
      * @param int $unitId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptExportOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptExportOrgunitDTO
      */
     public function setUnitId(?int $unitId = null): self
     {
@@ -195,7 +195,7 @@ class ReceiptExportOrgunitDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptExportOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptExportOrgunitDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -218,7 +218,7 @@ class ReceiptExportOrgunitDTO extends AbstractStructBase
     /**
      * Set unitPostalcode value
      * @param string $unitPostalcode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptExportOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptExportOrgunitDTO
      */
     public function setUnitPostalcode(?string $unitPostalcode = null): self
     {
@@ -241,7 +241,7 @@ class ReceiptExportOrgunitDTO extends AbstractStructBase
     /**
      * Set unitPrintname value
      * @param string $unitPrintname
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptExportOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptExportOrgunitDTO
      */
     public function setUnitPrintname(?string $unitPrintname = null): self
     {
@@ -264,7 +264,7 @@ class ReceiptExportOrgunitDTO extends AbstractStructBase
     /**
      * Set unitStreet value
      * @param string $unitStreet
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptExportOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptExportOrgunitDTO
      */
     public function setUnitStreet(?string $unitStreet = null): self
     {
@@ -287,7 +287,7 @@ class ReceiptExportOrgunitDTO extends AbstractStructBase
     /**
      * Set unitVatid value
      * @param string $unitVatid
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptExportOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptExportOrgunitDTO
      */
     public function setUnitVatid(?string $unitVatid = null): self
     {

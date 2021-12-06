@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class LookupBankResponse extends AbstractStructBase
      * The MidocoBankNumber
      * Meta information extracted from the WSDL
      * - ref: MidocoBankNumber
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO $MidocoBankNumber = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO $MidocoBankNumber = null;
     /**
      * Constructor method for LookupBankResponse
      * @uses LookupBankResponse::setMidocoBankNumber()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO $midocoBankNumber
+     * @param \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO $midocoBankNumber
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO $midocoBankNumber = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO $midocoBankNumber = null)
     {
         $this
             ->setMidocoBankNumber($midocoBankNumber);
     }
     /**
      * Get MidocoBankNumber value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO|null
      */
-    public function getMidocoBankNumber(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO
+    public function getMidocoBankNumber(): ?\Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO
     {
         return $this->MidocoBankNumber;
     }
     /**
      * Set MidocoBankNumber value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO $midocoBankNumber
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\LookupBankResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO $midocoBankNumber
+     * @return \Pggns\MidocoApi\CrmSD\StructType\LookupBankResponse
      */
-    public function setMidocoBankNumber(?\Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO $midocoBankNumber = null): self
+    public function setMidocoBankNumber(?\Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO $midocoBankNumber = null): self
     {
         $this->MidocoBankNumber = $midocoBankNumber;
         

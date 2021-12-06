@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DuplicateRoleResponse extends AbstractStructBase
      * The MidocoDuplicateRoleInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoDuplicateRoleInfo
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoDuplicateRoleInfo|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoDuplicateRoleInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoDuplicateRoleInfo $MidocoDuplicateRoleInfo = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoDuplicateRoleInfo $MidocoDuplicateRoleInfo = null;
     /**
      * Constructor method for DuplicateRoleResponse
      * @uses DuplicateRoleResponse::setMidocoDuplicateRoleInfo()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo = null)
     {
         $this
             ->setMidocoDuplicateRoleInfo($midocoDuplicateRoleInfo);
     }
     /**
      * Get MidocoDuplicateRoleInfo value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoDuplicateRoleInfo|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoDuplicateRoleInfo|null
      */
-    public function getMidocoDuplicateRoleInfo(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoDuplicateRoleInfo
+    public function getMidocoDuplicateRoleInfo(): ?\Pggns\MidocoApi\Mis\StructType\MidocoDuplicateRoleInfo
     {
         return $this->MidocoDuplicateRoleInfo;
     }
     /**
      * Set MidocoDuplicateRoleInfo value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DuplicateRoleResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo
+     * @return \Pggns\MidocoApi\Mis\StructType\DuplicateRoleResponse
      */
-    public function setMidocoDuplicateRoleInfo(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo = null): self
+    public function setMidocoDuplicateRoleInfo(?\Pggns\MidocoApi\Mis\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo = null): self
     {
         $this->MidocoDuplicateRoleInfo = $midocoDuplicateRoleInfo;
         

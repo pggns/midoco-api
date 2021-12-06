@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set creationDateFrom value
      * @param string $creationDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchSupplierAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchSupplierAgencySettlementsRequest
      */
     public function setCreationDateFrom(?string $creationDateFrom = null): self
     {
@@ -126,7 +126,7 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set creationDateTo value
      * @param string $creationDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchSupplierAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchSupplierAgencySettlementsRequest
      */
     public function setCreationDateTo(?string $creationDateTo = null): self
     {
@@ -149,7 +149,7 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set settlementDateFrom value
      * @param string $settlementDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchSupplierAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchSupplierAgencySettlementsRequest
      */
     public function setSettlementDateFrom(?string $settlementDateFrom = null): self
     {
@@ -172,7 +172,7 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set settlementDateTo value
      * @param string $settlementDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchSupplierAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchSupplierAgencySettlementsRequest
      */
     public function setSettlementDateTo(?string $settlementDateTo = null): self
     {
@@ -195,7 +195,7 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchSupplierAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchSupplierAgencySettlementsRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -218,7 +218,7 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchSupplierAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchSupplierAgencySettlementsRequest
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -241,7 +241,7 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set booked value
      * @param bool $booked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchSupplierAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchSupplierAgencySettlementsRequest
      */
     public function setBooked(?bool $booked = null): self
     {
@@ -264,7 +264,7 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set checked value
      * @param bool $checked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchSupplierAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchSupplierAgencySettlementsRequest
      */
     public function setChecked(?bool $checked = null): self
     {
@@ -287,7 +287,7 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchSupplierAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchSupplierAgencySettlementsRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {

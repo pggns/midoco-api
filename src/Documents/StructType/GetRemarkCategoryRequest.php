@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetRemarkCategoryRequest extends AbstractStructBase
      * The MidocoRemarkCategory
      * Meta information extracted from the WSDL
      * - ref: MidocoRemarkCategory
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory $MidocoRemarkCategory = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory $MidocoRemarkCategory = null;
     /**
      * The showParentsOnly
      * @var bool|null
@@ -29,10 +29,10 @@ class GetRemarkCategoryRequest extends AbstractStructBase
      * Constructor method for GetRemarkCategoryRequest
      * @uses GetRemarkCategoryRequest::setMidocoRemarkCategory()
      * @uses GetRemarkCategoryRequest::setShowParentsOnly()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory
      * @param bool $showParentsOnly
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory = null, ?bool $showParentsOnly = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory = null, ?bool $showParentsOnly = null)
     {
         $this
             ->setMidocoRemarkCategory($midocoRemarkCategory)
@@ -40,18 +40,18 @@ class GetRemarkCategoryRequest extends AbstractStructBase
     }
     /**
      * Get MidocoRemarkCategory value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory|null
      */
-    public function getMidocoRemarkCategory(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory
+    public function getMidocoRemarkCategory(): ?\Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory
     {
         return $this->MidocoRemarkCategory;
     }
     /**
      * Set MidocoRemarkCategory value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetRemarkCategoryRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory
+     * @return \Pggns\MidocoApi\Documents\StructType\GetRemarkCategoryRequest
      */
-    public function setMidocoRemarkCategory(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory = null): self
+    public function setMidocoRemarkCategory(?\Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory = null): self
     {
         $this->MidocoRemarkCategory = $midocoRemarkCategory;
         
@@ -68,7 +68,7 @@ class GetRemarkCategoryRequest extends AbstractStructBase
     /**
      * Set showParentsOnly value
      * @param bool $showParentsOnly
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetRemarkCategoryRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetRemarkCategoryRequest
      */
     public function setShowParentsOnly(?bool $showParentsOnly = null): self
     {

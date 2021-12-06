@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class TaskViewTaskDetails extends Task
     /**
      * Set dynamicColumn value
      * @param string $dynamicColumn
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewTaskDetails
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewTaskDetails
      */
     public function setDynamicColumn(?string $dynamicColumn = null): self
     {
@@ -78,7 +78,7 @@ class TaskViewTaskDetails extends Task
     /**
      * Set creationUser value
      * @param string $creationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewTaskDetails
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewTaskDetails
      */
     public function setCreationUser(?string $creationUser = null): self
     {
@@ -101,7 +101,7 @@ class TaskViewTaskDetails extends Task
     /**
      * Set warningLevel value
      * @param int $warningLevel
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewTaskDetails
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewTaskDetails
      */
     public function setWarningLevel(?int $warningLevel = null): self
     {

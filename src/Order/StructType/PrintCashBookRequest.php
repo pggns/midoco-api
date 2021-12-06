@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -67,7 +67,7 @@ class PrintCashBookRequest extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintCashBookRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintCashBookRequest
      */
     public function setCashBookId(?int $cashBookId = null): self
     {
@@ -90,7 +90,7 @@ class PrintCashBookRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintCashBookRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintCashBookRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -113,7 +113,7 @@ class PrintCashBookRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintCashBookRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintCashBookRequest
      */
     public function setUserId(?int $userId = null): self
     {
@@ -136,7 +136,7 @@ class PrintCashBookRequest extends AbstractStructBase
     /**
      * Set printUsers value
      * @param bool $printUsers
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintCashBookRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintCashBookRequest
      */
     public function setPrintUsers(?bool $printUsers = null): self
     {

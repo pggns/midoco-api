@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -96,7 +96,7 @@ class GetPrintSelectsForCustomerRequest extends AbstractStructBase
      * Set handler value
      * @throws InvalidArgumentException
      * @param string[] $handler
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetPrintSelectsForCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPrintSelectsForCustomerRequest
      */
     public function setHandler(?array $handler = null): self
     {
@@ -112,7 +112,7 @@ class GetPrintSelectsForCustomerRequest extends AbstractStructBase
      * Add item to handler value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetPrintSelectsForCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPrintSelectsForCustomerRequest
      */
     public function addToHandler(string $item): self
     {
@@ -135,7 +135,7 @@ class GetPrintSelectsForCustomerRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetPrintSelectsForCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPrintSelectsForCustomerRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -158,7 +158,7 @@ class GetPrintSelectsForCustomerRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetPrintSelectsForCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPrintSelectsForCustomerRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -181,7 +181,7 @@ class GetPrintSelectsForCustomerRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetPrintSelectsForCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPrintSelectsForCustomerRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {

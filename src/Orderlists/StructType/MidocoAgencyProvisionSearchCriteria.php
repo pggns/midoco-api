@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -115,7 +115,7 @@ class MidocoAgencyProvisionSearchCriteria extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -138,7 +138,7 @@ class MidocoAgencyProvisionSearchCriteria extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -161,7 +161,7 @@ class MidocoAgencyProvisionSearchCriteria extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -184,7 +184,7 @@ class MidocoAgencyProvisionSearchCriteria extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -207,7 +207,7 @@ class MidocoAgencyProvisionSearchCriteria extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -230,7 +230,7 @@ class MidocoAgencyProvisionSearchCriteria extends AbstractStructBase
     /**
      * Set onlyPaid value
      * @param bool $onlyPaid
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
      */
     public function setOnlyPaid(?bool $onlyPaid = false): self
     {
@@ -253,7 +253,7 @@ class MidocoAgencyProvisionSearchCriteria extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -276,7 +276,7 @@ class MidocoAgencyProvisionSearchCriteria extends AbstractStructBase
     /**
      * Set domesticInternational value
      * @param string $domesticInternational
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
      */
     public function setDomesticInternational(?string $domesticInternational = 'ALL'): self
     {
@@ -299,7 +299,7 @@ class MidocoAgencyProvisionSearchCriteria extends AbstractStructBase
     /**
      * Set creationFromDate value
      * @param string $creationFromDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
      */
     public function setCreationFromDate(?string $creationFromDate = null): self
     {
@@ -322,7 +322,7 @@ class MidocoAgencyProvisionSearchCriteria extends AbstractStructBase
     /**
      * Set creationToDate value
      * @param string $creationToDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencyProvisionSearchCriteria
      */
     public function setCreationToDate(?string $creationToDate = null): self
     {

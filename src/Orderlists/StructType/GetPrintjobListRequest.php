@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -38,17 +38,17 @@ class GetPrintjobListRequest extends AbstractStructBase
     }
     /**
      * Set list_type value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\List_type::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\List_type::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\List_type::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\List_type::getValidValues()
      * @throws InvalidArgumentException
      * @param string $list_type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetPrintjobListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetPrintjobListRequest
      */
     public function setList_type(?string $list_type = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\List_type::valueIsValid($list_type)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\List_type', is_array($list_type) ? implode(', ', $list_type) : var_export($list_type, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\List_type::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\List_type::valueIsValid($list_type)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\List_type', is_array($list_type) ? implode(', ', $list_type) : var_export($list_type, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\List_type::getValidValues())), __LINE__);
         }
         $this->list_type = $list_type;
         

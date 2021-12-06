@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class MisCampaignAssignDTO extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignAssignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignAssignDTO
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -118,7 +118,7 @@ class MisCampaignAssignDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignAssignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignAssignDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -141,7 +141,7 @@ class MisCampaignAssignDTO extends AbstractStructBase
     /**
      * Set done value
      * @param bool $done
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignAssignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignAssignDTO
      */
     public function setDone(?bool $done = null): self
     {
@@ -164,7 +164,7 @@ class MisCampaignAssignDTO extends AbstractStructBase
     /**
      * Set executed value
      * @param bool $executed
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignAssignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignAssignDTO
      */
     public function setExecuted(?bool $executed = null): self
     {
@@ -187,7 +187,7 @@ class MisCampaignAssignDTO extends AbstractStructBase
     /**
      * Set feedback value
      * @param bool $feedback
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignAssignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignAssignDTO
      */
     public function setFeedback(?bool $feedback = null): self
     {
@@ -210,7 +210,7 @@ class MisCampaignAssignDTO extends AbstractStructBase
     /**
      * Set importedCampaignId value
      * @param int $importedCampaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignAssignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignAssignDTO
      */
     public function setImportedCampaignId(?int $importedCampaignId = null): self
     {
@@ -233,7 +233,7 @@ class MisCampaignAssignDTO extends AbstractStructBase
     /**
      * Set isImported value
      * @param bool $isImported
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignAssignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignAssignDTO
      */
     public function setIsImported(?bool $isImported = null): self
     {
@@ -256,7 +256,7 @@ class MisCampaignAssignDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignAssignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignAssignDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

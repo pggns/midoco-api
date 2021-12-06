@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoKaeraAccessData extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraAccessData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraAccessData
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -94,7 +94,7 @@ class MidocoKaeraAccessData extends AbstractStructBase
     /**
      * Set userName value
      * @param string $userName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraAccessData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraAccessData
      */
     public function setUserName(?string $userName = null): self
     {
@@ -117,7 +117,7 @@ class MidocoKaeraAccessData extends AbstractStructBase
     /**
      * Set passWord value
      * @param string $passWord
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraAccessData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraAccessData
      */
     public function setPassWord(?string $passWord = null): self
     {
@@ -140,7 +140,7 @@ class MidocoKaeraAccessData extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraAccessData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraAccessData
      */
     public function setUrl(?string $url = null): self
     {
@@ -163,7 +163,7 @@ class MidocoKaeraAccessData extends AbstractStructBase
     /**
      * Set timeout value
      * @param int $timeout
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraAccessData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraAccessData
      */
     public function setTimeout(?int $timeout = null): self
     {

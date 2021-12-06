@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class ActivityTypeAssignDTO extends AbstractStructBase
     /**
      * Set activity value
      * @param string $activity
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ActivityTypeAssignDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\ActivityTypeAssignDTO
      */
     public function setActivity(?string $activity = null): self
     {
@@ -86,7 +86,7 @@ class ActivityTypeAssignDTO extends AbstractStructBase
     /**
      * Set processName value
      * @param string $processName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ActivityTypeAssignDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\ActivityTypeAssignDTO
      */
     public function setProcessName(?string $processName = null): self
     {
@@ -109,7 +109,7 @@ class ActivityTypeAssignDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ActivityTypeAssignDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\ActivityTypeAssignDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -132,7 +132,7 @@ class ActivityTypeAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ActivityTypeAssignDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\ActivityTypeAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

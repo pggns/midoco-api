@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoAccessReport extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccessReport
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAccessReport
      */
     public function setReportId(?int $reportId = null): self
     {

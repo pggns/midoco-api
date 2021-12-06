@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class AnnouncePaymentResponse extends AbstractStructBase
     /**
      * Set totalPayment value
      * @param float $totalPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnouncePaymentResponse
+     * @return \Pggns\MidocoApi\Order\StructType\AnnouncePaymentResponse
      */
     public function setTotalPayment(?float $totalPayment = null): self
     {

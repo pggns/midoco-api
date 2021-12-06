@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
      * The MidocoDtazvTransactionInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoDtazvTransactionInfo
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo $MidocoDtazvTransactionInfo = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo $MidocoDtazvTransactionInfo = null;
     /**
      * The customerBankStreet
      * @var string|null
@@ -89,7 +89,7 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
      * @uses MidocoDtazvDirectDebitPosition::setCustomerOwnerName()
      * @uses MidocoDtazvDirectDebitPosition::setCustomerBankName()
      * @uses MidocoDtazvDirectDebitPosition::setBankTransferCollective()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo
      * @param string $customerBankStreet
      * @param string $customerBankCity
      * @param string $customerBankCountry
@@ -102,7 +102,7 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
      * @param string $customerBankName
      * @param bool $bankTransferCollective
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo = null, ?string $customerBankStreet = null, ?string $customerBankCity = null, ?string $customerBankCountry = null, ?string $customerAddressCity = null, ?string $customerAddressStreet = null, ?string $customerAddressCountry = null, ?string $customerBankAccountNo = null, ?string $customerBankNo = null, ?string $customerOwnerName = null, ?string $customerBankName = null, ?bool $bankTransferCollective = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo = null, ?string $customerBankStreet = null, ?string $customerBankCity = null, ?string $customerBankCountry = null, ?string $customerAddressCity = null, ?string $customerAddressStreet = null, ?string $customerAddressCountry = null, ?string $customerBankAccountNo = null, ?string $customerBankNo = null, ?string $customerOwnerName = null, ?string $customerBankName = null, ?bool $bankTransferCollective = null)
     {
         $this
             ->setMidocoDtazvTransactionInfo($midocoDtazvTransactionInfo)
@@ -120,18 +120,18 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
     }
     /**
      * Get MidocoDtazvTransactionInfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo|null
      */
-    public function getMidocoDtazvTransactionInfo(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo
+    public function getMidocoDtazvTransactionInfo(): ?\Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo
     {
         return $this->MidocoDtazvTransactionInfo;
     }
     /**
      * Set MidocoDtazvTransactionInfo value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvDirectDebitPosition
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvDirectDebitPosition
      */
-    public function setMidocoDtazvTransactionInfo(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo = null): self
+    public function setMidocoDtazvTransactionInfo(?\Pggns\MidocoApi\Documents\StructType\MidocoDtazvTransactionInfo $midocoDtazvTransactionInfo = null): self
     {
         $this->MidocoDtazvTransactionInfo = $midocoDtazvTransactionInfo;
         
@@ -148,7 +148,7 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
     /**
      * Set customerBankStreet value
      * @param string $customerBankStreet
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvDirectDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvDirectDebitPosition
      */
     public function setCustomerBankStreet(?string $customerBankStreet = null): self
     {
@@ -171,7 +171,7 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
     /**
      * Set customerBankCity value
      * @param string $customerBankCity
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvDirectDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvDirectDebitPosition
      */
     public function setCustomerBankCity(?string $customerBankCity = null): self
     {
@@ -194,7 +194,7 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
     /**
      * Set customerBankCountry value
      * @param string $customerBankCountry
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvDirectDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvDirectDebitPosition
      */
     public function setCustomerBankCountry(?string $customerBankCountry = null): self
     {
@@ -217,7 +217,7 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
     /**
      * Set customerAddressCity value
      * @param string $customerAddressCity
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvDirectDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvDirectDebitPosition
      */
     public function setCustomerAddressCity(?string $customerAddressCity = null): self
     {
@@ -240,7 +240,7 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
     /**
      * Set customerAddressStreet value
      * @param string $customerAddressStreet
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvDirectDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvDirectDebitPosition
      */
     public function setCustomerAddressStreet(?string $customerAddressStreet = null): self
     {
@@ -263,7 +263,7 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
     /**
      * Set customerAddressCountry value
      * @param string $customerAddressCountry
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvDirectDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvDirectDebitPosition
      */
     public function setCustomerAddressCountry(?string $customerAddressCountry = null): self
     {
@@ -286,7 +286,7 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
     /**
      * Set customerBankAccountNo value
      * @param string $customerBankAccountNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvDirectDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvDirectDebitPosition
      */
     public function setCustomerBankAccountNo(?string $customerBankAccountNo = null): self
     {
@@ -309,7 +309,7 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
     /**
      * Set customerBankNo value
      * @param string $customerBankNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvDirectDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvDirectDebitPosition
      */
     public function setCustomerBankNo(?string $customerBankNo = null): self
     {
@@ -332,7 +332,7 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
     /**
      * Set customerOwnerName value
      * @param string $customerOwnerName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvDirectDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvDirectDebitPosition
      */
     public function setCustomerOwnerName(?string $customerOwnerName = null): self
     {
@@ -355,7 +355,7 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
     /**
      * Set customerBankName value
      * @param string $customerBankName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvDirectDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvDirectDebitPosition
      */
     public function setCustomerBankName(?string $customerBankName = null): self
     {
@@ -378,7 +378,7 @@ class MidocoDtazvDirectDebitPosition extends MidocoOnlinePaymentTransactionPosit
     /**
      * Set bankTransferCollective value
      * @param bool $bankTransferCollective
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDtazvDirectDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDtazvDirectDebitPosition
      */
     public function setBankTransferCollective(?bool $bankTransferCollective = null): self
     {

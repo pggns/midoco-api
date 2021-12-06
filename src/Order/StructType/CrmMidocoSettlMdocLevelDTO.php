@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class CrmMidocoSettlMdocLevelDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlMdocLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlMdocLevelDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -94,7 +94,7 @@ class CrmMidocoSettlMdocLevelDTO extends AbstractStructBase
     /**
      * Set maxLimit value
      * @param int $maxLimit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlMdocLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlMdocLevelDTO
      */
     public function setMaxLimit(?int $maxLimit = null): self
     {
@@ -117,7 +117,7 @@ class CrmMidocoSettlMdocLevelDTO extends AbstractStructBase
     /**
      * Set minLimit value
      * @param int $minLimit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlMdocLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlMdocLevelDTO
      */
     public function setMinLimit(?int $minLimit = null): self
     {
@@ -140,7 +140,7 @@ class CrmMidocoSettlMdocLevelDTO extends AbstractStructBase
     /**
      * Set settlMdocId value
      * @param int $settlMdocId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlMdocLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlMdocLevelDTO
      */
     public function setSettlMdocId(?int $settlMdocId = null): self
     {
@@ -163,7 +163,7 @@ class CrmMidocoSettlMdocLevelDTO extends AbstractStructBase
     /**
      * Set settlMdocLevelId value
      * @param int $settlMdocLevelId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlMdocLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlMdocLevelDTO
      */
     public function setSettlMdocLevelId(?int $settlMdocLevelId = null): self
     {

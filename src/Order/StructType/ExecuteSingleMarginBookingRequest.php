@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ExecuteSingleMarginBookingRequest extends AbstractStructBase
     /**
      * Set packageMarginId value
      * @param int $packageMarginId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteSingleMarginBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteSingleMarginBookingRequest
      */
     public function setPackageMarginId(?int $packageMarginId = null): self
     {

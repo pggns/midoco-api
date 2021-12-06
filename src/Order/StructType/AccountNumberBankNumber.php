@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class AccountNumberBankNumber extends AbstractStructBase
     /**
      * Set accountNumber value
      * @param string $accountNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountNumberBankNumber
+     * @return \Pggns\MidocoApi\Order\StructType\AccountNumberBankNumber
      */
     public function setAccountNumber(?string $accountNumber = null): self
     {
@@ -78,7 +78,7 @@ class AccountNumberBankNumber extends AbstractStructBase
     /**
      * Set bankNumber value
      * @param string $bankNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountNumberBankNumber
+     * @return \Pggns\MidocoApi\Order\StructType\AccountNumberBankNumber
      */
     public function setBankNumber(?string $bankNumber = null): self
     {
@@ -101,7 +101,7 @@ class AccountNumberBankNumber extends AbstractStructBase
     /**
      * Set swiftCode value
      * @param string $swiftCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountNumberBankNumber
+     * @return \Pggns\MidocoApi\Order\StructType\AccountNumberBankNumber
      */
     public function setSwiftCode(?string $swiftCode = null): self
     {

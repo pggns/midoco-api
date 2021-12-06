@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class GetPrintTemplateResultRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintTemplateResultRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintTemplateResultRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -110,7 +110,7 @@ class GetPrintTemplateResultRequest extends AbstractStructBase
     /**
      * Set templateName value
      * @param string $templateName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintTemplateResultRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintTemplateResultRequest
      */
     public function setTemplateName(?string $templateName = null): self
     {
@@ -133,7 +133,7 @@ class GetPrintTemplateResultRequest extends AbstractStructBase
     /**
      * Set contentType value
      * @param string $contentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintTemplateResultRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintTemplateResultRequest
      */
     public function setContentType(?string $contentType = null): self
     {
@@ -156,7 +156,7 @@ class GetPrintTemplateResultRequest extends AbstractStructBase
     /**
      * Set sequenceName value
      * @param string $sequenceName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintTemplateResultRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintTemplateResultRequest
      */
     public function setSequenceName(?string $sequenceName = null): self
     {
@@ -179,7 +179,7 @@ class GetPrintTemplateResultRequest extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintTemplateResultRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintTemplateResultRequest
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -202,7 +202,7 @@ class GetPrintTemplateResultRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintTemplateResultRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintTemplateResultRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -225,7 +225,7 @@ class GetPrintTemplateResultRequest extends AbstractStructBase
     /**
      * Set docType value
      * @param string $docType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintTemplateResultRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintTemplateResultRequest
      */
     public function setDocType(?string $docType = null): self
     {

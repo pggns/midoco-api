@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,24 +17,24 @@ class SaveSellItemAndRevenueBookingRequest extends AbstractStructBase
      * The SellItemProvision
      * Meta information extracted from the WSDL
      * - ref: SellItemProvision
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType|null
+     * @var \Pggns\MidocoApi\Order\StructType\SellItemProvisionType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType $SellItemProvision = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\SellItemProvisionType $SellItemProvision = null;
     /**
      * The RevenueBookingInfo
      * Meta information extracted from the WSDL
      * - ref: RevenueBookingInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType|null
+     * @var \Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $RevenueBookingInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $RevenueBookingInfo = null;
     /**
      * Constructor method for SaveSellItemAndRevenueBookingRequest
      * @uses SaveSellItemAndRevenueBookingRequest::setSellItemProvision()
      * @uses SaveSellItemAndRevenueBookingRequest::setRevenueBookingInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType $sellItemProvision
-     * @param \Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $revenueBookingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemProvisionType $sellItemProvision
+     * @param \Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $revenueBookingInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType $sellItemProvision = null, ?\Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $revenueBookingInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\SellItemProvisionType $sellItemProvision = null, ?\Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $revenueBookingInfo = null)
     {
         $this
             ->setSellItemProvision($sellItemProvision)
@@ -42,18 +42,18 @@ class SaveSellItemAndRevenueBookingRequest extends AbstractStructBase
     }
     /**
      * Get SellItemProvision value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType|null
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemProvisionType|null
      */
-    public function getSellItemProvision(): ?\Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType
+    public function getSellItemProvision(): ?\Pggns\MidocoApi\Order\StructType\SellItemProvisionType
     {
         return $this->SellItemProvision;
     }
     /**
      * Set SellItemProvision value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType $sellItemProvision
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveSellItemAndRevenueBookingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemProvisionType $sellItemProvision
+     * @return \Pggns\MidocoApi\Order\StructType\SaveSellItemAndRevenueBookingRequest
      */
-    public function setSellItemProvision(?\Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType $sellItemProvision = null): self
+    public function setSellItemProvision(?\Pggns\MidocoApi\Order\StructType\SellItemProvisionType $sellItemProvision = null): self
     {
         $this->SellItemProvision = $sellItemProvision;
         
@@ -61,18 +61,18 @@ class SaveSellItemAndRevenueBookingRequest extends AbstractStructBase
     }
     /**
      * Get RevenueBookingInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType|null
+     * @return \Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType|null
      */
-    public function getRevenueBookingInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType
+    public function getRevenueBookingInfo(): ?\Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType
     {
         return $this->RevenueBookingInfo;
     }
     /**
      * Set RevenueBookingInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $revenueBookingInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveSellItemAndRevenueBookingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $revenueBookingInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SaveSellItemAndRevenueBookingRequest
      */
-    public function setRevenueBookingInfo(?\Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $revenueBookingInfo = null): self
+    public function setRevenueBookingInfo(?\Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $revenueBookingInfo = null): self
     {
         $this->RevenueBookingInfo = $revenueBookingInfo;
         

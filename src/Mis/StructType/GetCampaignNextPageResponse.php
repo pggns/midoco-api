@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class GetCampaignNextPageResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMisCampaignResult
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCampaignResultDTO[]
      */
     protected ?array $MidocoMisCampaignResult = null;
     /**
@@ -30,26 +30,26 @@ class GetCampaignNextPageResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMisCustomerResult
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO[]
      */
     protected ?array $MidocoMisCustomerResult = null;
     /**
      * The MidocoMisCampaign
      * Meta information extracted from the WSDL
      * - ref: MidocoMisCampaign
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $MidocoMisCampaign = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $MidocoMisCampaign = null;
     /**
      * Constructor method for GetCampaignNextPageResponse
      * @uses GetCampaignNextPageResponse::setMidocoMisCampaignResult()
      * @uses GetCampaignNextPageResponse::setMidocoMisCustomerResult()
      * @uses GetCampaignNextPageResponse::setMidocoMisCampaign()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultDTO[] $midocoMisCampaignResult
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO[] $midocoMisCustomerResult
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignResultDTO[] $midocoMisCampaignResult
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO[] $midocoMisCustomerResult
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
      */
-    public function __construct(?array $midocoMisCampaignResult = null, ?array $midocoMisCustomerResult = null, ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null)
+    public function __construct(?array $midocoMisCampaignResult = null, ?array $midocoMisCustomerResult = null, ?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null)
     {
         $this
             ->setMidocoMisCampaignResult($midocoMisCampaignResult)
@@ -58,7 +58,7 @@ class GetCampaignNextPageResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMisCampaignResult value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignResultDTO[]
      */
     public function getMidocoMisCampaignResult(): ?array
     {
@@ -79,12 +79,12 @@ class GetCampaignNextPageResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCampaignNextPageResponseMidocoMisCampaignResultItem) {
             // validation for constraint: itemType
-            if (!$getCampaignNextPageResponseMidocoMisCampaignResultItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultDTO) {
+            if (!$getCampaignNextPageResponseMidocoMisCampaignResultItem instanceof \Pggns\MidocoApi\Mis\StructType\MisCampaignResultDTO) {
                 $invalidValues[] = is_object($getCampaignNextPageResponseMidocoMisCampaignResultItem) ? get_class($getCampaignNextPageResponseMidocoMisCampaignResultItem) : sprintf('%s(%s)', gettype($getCampaignNextPageResponseMidocoMisCampaignResultItem), var_export($getCampaignNextPageResponseMidocoMisCampaignResultItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMisCampaignResult property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMisCampaignResult property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCampaignResultDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -93,8 +93,8 @@ class GetCampaignNextPageResponse extends AbstractStructBase
     /**
      * Set MidocoMisCampaignResult value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultDTO[] $midocoMisCampaignResult
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignNextPageResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignResultDTO[] $midocoMisCampaignResult
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignNextPageResponse
      */
     public function setMidocoMisCampaignResult(?array $midocoMisCampaignResult = null): self
     {
@@ -109,14 +109,14 @@ class GetCampaignNextPageResponse extends AbstractStructBase
     /**
      * Add item to MidocoMisCampaignResult value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignNextPageResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignResultDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignNextPageResponse
      */
-    public function addToMidocoMisCampaignResult(\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultDTO $item): self
+    public function addToMidocoMisCampaignResult(\Pggns\MidocoApi\Mis\StructType\MisCampaignResultDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMisCampaignResult property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MisCampaignResultDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMisCampaignResult property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCampaignResultDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMisCampaignResult[] = $item;
         
@@ -124,7 +124,7 @@ class GetCampaignNextPageResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMisCustomerResult value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO[]
      */
     public function getMidocoMisCustomerResult(): ?array
     {
@@ -145,12 +145,12 @@ class GetCampaignNextPageResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCampaignNextPageResponseMidocoMisCustomerResultItem) {
             // validation for constraint: itemType
-            if (!$getCampaignNextPageResponseMidocoMisCustomerResultItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO) {
+            if (!$getCampaignNextPageResponseMidocoMisCustomerResultItem instanceof \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO) {
                 $invalidValues[] = is_object($getCampaignNextPageResponseMidocoMisCustomerResultItem) ? get_class($getCampaignNextPageResponseMidocoMisCustomerResultItem) : sprintf('%s(%s)', gettype($getCampaignNextPageResponseMidocoMisCustomerResultItem), var_export($getCampaignNextPageResponseMidocoMisCustomerResultItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMisCustomerResult property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMisCustomerResult property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -159,8 +159,8 @@ class GetCampaignNextPageResponse extends AbstractStructBase
     /**
      * Set MidocoMisCustomerResult value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO[] $midocoMisCustomerResult
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignNextPageResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO[] $midocoMisCustomerResult
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignNextPageResponse
      */
     public function setMidocoMisCustomerResult(?array $midocoMisCustomerResult = null): self
     {
@@ -175,14 +175,14 @@ class GetCampaignNextPageResponse extends AbstractStructBase
     /**
      * Add item to MidocoMisCustomerResult value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignNextPageResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignNextPageResponse
      */
-    public function addToMidocoMisCustomerResult(\Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO $item): self
+    public function addToMidocoMisCustomerResult(\Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMisCustomerResult property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMisCustomerResult property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMisCustomerResult[] = $item;
         
@@ -190,18 +190,18 @@ class GetCampaignNextPageResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMisCampaign value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign|null
      */
-    public function getMidocoMisCampaign(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign
+    public function getMidocoMisCampaign(): ?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign
     {
         return $this->MidocoMisCampaign;
     }
     /**
      * Set MidocoMisCampaign value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignNextPageResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignNextPageResponse
      */
-    public function setMidocoMisCampaign(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null): self
+    public function setMidocoMisCampaign(?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null): self
     {
         $this->MidocoMisCampaign = $midocoMisCampaign;
         

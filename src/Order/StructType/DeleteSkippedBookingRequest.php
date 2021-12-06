@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class DeleteSkippedBookingRequest extends AbstractStructBase
     /**
      * Set externalId value
      * @param string $externalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSkippedBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSkippedBookingRequest
      */
     public function setExternalId(?string $externalId = null): self
     {
@@ -72,7 +72,7 @@ class DeleteSkippedBookingRequest extends AbstractStructBase
     /**
      * Set externalSystem value
      * @param string $externalSystem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSkippedBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSkippedBookingRequest
      */
     public function setExternalSystem(?string $externalSystem = null): self
     {

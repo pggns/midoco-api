@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMfLocalRequest extends AbstractStructBase
      * The MidocoMfLocal
      * Meta information extracted from the WSDL
      * - ref: MidocoMfLocal
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoMfLocal|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal $MidocoMfLocal = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoMfLocal $MidocoMfLocal = null;
     /**
      * Constructor method for SaveMfLocalRequest
      * @uses SaveMfLocalRequest::setMidocoMfLocal()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal $midocoMfLocal
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMfLocal $midocoMfLocal
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal $midocoMfLocal = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MidocoMfLocal $midocoMfLocal = null)
     {
         $this
             ->setMidocoMfLocal($midocoMfLocal);
     }
     /**
      * Get MidocoMfLocal value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoMfLocal|null
      */
-    public function getMidocoMfLocal(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal
+    public function getMidocoMfLocal(): ?\Pggns\MidocoApi\Mis\StructType\MidocoMfLocal
     {
         return $this->MidocoMfLocal;
     }
     /**
      * Set MidocoMfLocal value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal $midocoMfLocal
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveMfLocalRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMfLocal $midocoMfLocal
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveMfLocalRequest
      */
-    public function setMidocoMfLocal(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal $midocoMfLocal = null): self
+    public function setMidocoMfLocal(?\Pggns\MidocoApi\Mis\StructType\MidocoMfLocal $midocoMfLocal = null): self
     {
         $this->MidocoMfLocal = $midocoMfLocal;
         

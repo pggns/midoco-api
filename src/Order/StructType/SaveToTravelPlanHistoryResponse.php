@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SaveToTravelPlanHistoryResponse extends AbstractStructBase
     /**
      * Set historyId value
      * @param int $historyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveToTravelPlanHistoryResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveToTravelPlanHistoryResponse
      */
     public function setHistoryId(?int $historyId = null): self
     {

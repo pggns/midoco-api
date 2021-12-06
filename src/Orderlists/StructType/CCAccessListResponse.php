@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class CCAccessListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListType[]
      */
     protected ?array $MidocoCCAccessList = null;
     /**
@@ -32,7 +32,7 @@ class CCAccessListResponse extends AbstractStructBase
      * Constructor method for CCAccessListResponse
      * @uses CCAccessListResponse::setMidocoCCAccessList()
      * @uses CCAccessListResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListType[] $midocoCCAccessList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListType[] $midocoCCAccessList
      * @param int $noOfResults
      */
     public function __construct(?array $midocoCCAccessList = null, ?int $noOfResults = null)
@@ -43,7 +43,7 @@ class CCAccessListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCCAccessList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListType[]
      */
     public function getMidocoCCAccessList(): ?array
     {
@@ -64,12 +64,12 @@ class CCAccessListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $cCAccessListResponseMidocoCCAccessListItem) {
             // validation for constraint: itemType
-            if (!$cCAccessListResponseMidocoCCAccessListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListType) {
+            if (!$cCAccessListResponseMidocoCCAccessListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListType) {
                 $invalidValues[] = is_object($cCAccessListResponseMidocoCCAccessListItem) ? get_class($cCAccessListResponseMidocoCCAccessListItem) : sprintf('%s(%s)', gettype($cCAccessListResponseMidocoCCAccessListItem), var_export($cCAccessListResponseMidocoCCAccessListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCCAccessList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCCAccessList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -78,8 +78,8 @@ class CCAccessListResponse extends AbstractStructBase
     /**
      * Set MidocoCCAccessList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListType[] $midocoCCAccessList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CCAccessListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListType[] $midocoCCAccessList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CCAccessListResponse
      */
     public function setMidocoCCAccessList(?array $midocoCCAccessList = null): self
     {
@@ -94,14 +94,14 @@ class CCAccessListResponse extends AbstractStructBase
     /**
      * Add item to MidocoCCAccessList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CCAccessListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CCAccessListResponse
      */
-    public function addToMidocoCCAccessList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListType $item): self
+    public function addToMidocoCCAccessList(\Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCCAccessList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCCAccessList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCCAccessList[] = $item;
         
@@ -118,7 +118,7 @@ class CCAccessListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CCAccessListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CCAccessListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

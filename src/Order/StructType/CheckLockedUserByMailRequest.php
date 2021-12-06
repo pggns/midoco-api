@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class CheckLockedUserByMailRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckLockedUserByMailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckLockedUserByMailRequest
      */
     public function setCustomerId(int $customerId): self
     {
@@ -74,7 +74,7 @@ class CheckLockedUserByMailRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckLockedUserByMailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckLockedUserByMailRequest
      */
     public function setOrderId(int $orderId): self
     {

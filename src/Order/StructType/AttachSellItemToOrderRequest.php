@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoSellItemId
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemId[]
      */
     protected ?array $MidocoSellItemId = null;
     /**
@@ -26,9 +26,9 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoOrderId
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderId|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderId|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderId $MidocoOrderId = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderId $MidocoOrderId = null;
     /**
      * The adoptNotes
      * Meta information extracted from the WSDL
@@ -89,8 +89,8 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
      * @uses AttachSellItemToOrderRequest::setAdoptConfirmationGroup()
      * @uses AttachSellItemToOrderRequest::setAdoptSellingMode()
      * @uses AttachSellItemToOrderRequest::setCheckTravelDateRight()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId[] $midocoSellItemId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderId $midocoOrderId
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemId[] $midocoSellItemId
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderId $midocoOrderId
      * @param bool $adoptNotes
      * @param bool $adoptAttributes
      * @param bool $adoptAddtlSellData
@@ -99,7 +99,7 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
      * @param bool $adoptSellingMode
      * @param bool $checkTravelDateRight
      */
-    public function __construct(?array $midocoSellItemId = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderId $midocoOrderId = null, ?bool $adoptNotes = true, ?bool $adoptAttributes = true, ?bool $adoptAddtlSellData = true, ?bool $adoptRemarks = true, ?bool $adoptConfirmationGroup = true, ?bool $adoptSellingMode = true, ?bool $checkTravelDateRight = true)
+    public function __construct(?array $midocoSellItemId = null, ?\Pggns\MidocoApi\Order\StructType\MidocoOrderId $midocoOrderId = null, ?bool $adoptNotes = true, ?bool $adoptAttributes = true, ?bool $adoptAddtlSellData = true, ?bool $adoptRemarks = true, ?bool $adoptConfirmationGroup = true, ?bool $adoptSellingMode = true, ?bool $checkTravelDateRight = true)
     {
         $this
             ->setMidocoSellItemId($midocoSellItemId)
@@ -114,7 +114,7 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSellItemId value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemId[]
      */
     public function getMidocoSellItemId(): ?array
     {
@@ -135,12 +135,12 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $attachSellItemToOrderRequestMidocoSellItemIdItem) {
             // validation for constraint: itemType
-            if (!$attachSellItemToOrderRequestMidocoSellItemIdItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId) {
+            if (!$attachSellItemToOrderRequestMidocoSellItemIdItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemId) {
                 $invalidValues[] = is_object($attachSellItemToOrderRequestMidocoSellItemIdItem) ? get_class($attachSellItemToOrderRequestMidocoSellItemIdItem) : sprintf('%s(%s)', gettype($attachSellItemToOrderRequestMidocoSellItemIdItem), var_export($attachSellItemToOrderRequestMidocoSellItemIdItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellItemId property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellItemId property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemId, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -149,8 +149,8 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
     /**
      * Set MidocoSellItemId value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId[] $midocoSellItemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttachSellItemToOrderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemId[] $midocoSellItemId
+     * @return \Pggns\MidocoApi\Order\StructType\AttachSellItemToOrderRequest
      */
     public function setMidocoSellItemId(?array $midocoSellItemId = null): self
     {
@@ -165,14 +165,14 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
     /**
      * Add item to MidocoSellItemId value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttachSellItemToOrderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemId $item
+     * @return \Pggns\MidocoApi\Order\StructType\AttachSellItemToOrderRequest
      */
-    public function addToMidocoSellItemId(\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId $item): self
+    public function addToMidocoSellItemId(\Pggns\MidocoApi\Order\StructType\MidocoSellItemId $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellItemId property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemId) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellItemId property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemId, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellItemId[] = $item;
         
@@ -180,18 +180,18 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderId value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderId|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderId|null
      */
-    public function getMidocoOrderId(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderId
+    public function getMidocoOrderId(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderId
     {
         return $this->MidocoOrderId;
     }
     /**
      * Set MidocoOrderId value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderId $midocoOrderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttachSellItemToOrderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderId $midocoOrderId
+     * @return \Pggns\MidocoApi\Order\StructType\AttachSellItemToOrderRequest
      */
-    public function setMidocoOrderId(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderId $midocoOrderId = null): self
+    public function setMidocoOrderId(?\Pggns\MidocoApi\Order\StructType\MidocoOrderId $midocoOrderId = null): self
     {
         $this->MidocoOrderId = $midocoOrderId;
         
@@ -208,7 +208,7 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
     /**
      * Set adoptNotes value
      * @param bool $adoptNotes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttachSellItemToOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AttachSellItemToOrderRequest
      */
     public function setAdoptNotes(?bool $adoptNotes = true): self
     {
@@ -231,7 +231,7 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
     /**
      * Set adoptAttributes value
      * @param bool $adoptAttributes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttachSellItemToOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AttachSellItemToOrderRequest
      */
     public function setAdoptAttributes(?bool $adoptAttributes = true): self
     {
@@ -254,7 +254,7 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
     /**
      * Set adoptAddtlSellData value
      * @param bool $adoptAddtlSellData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttachSellItemToOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AttachSellItemToOrderRequest
      */
     public function setAdoptAddtlSellData(?bool $adoptAddtlSellData = true): self
     {
@@ -277,7 +277,7 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
     /**
      * Set adoptRemarks value
      * @param bool $adoptRemarks
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttachSellItemToOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AttachSellItemToOrderRequest
      */
     public function setAdoptRemarks(?bool $adoptRemarks = true): self
     {
@@ -300,7 +300,7 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
     /**
      * Set adoptConfirmationGroup value
      * @param bool $adoptConfirmationGroup
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttachSellItemToOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AttachSellItemToOrderRequest
      */
     public function setAdoptConfirmationGroup(?bool $adoptConfirmationGroup = true): self
     {
@@ -323,7 +323,7 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
     /**
      * Set adoptSellingMode value
      * @param bool $adoptSellingMode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttachSellItemToOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AttachSellItemToOrderRequest
      */
     public function setAdoptSellingMode(?bool $adoptSellingMode = true): self
     {
@@ -346,7 +346,7 @@ class AttachSellItemToOrderRequest extends AbstractStructBase
     /**
      * Set checkTravelDateRight value
      * @param bool $checkTravelDateRight
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttachSellItemToOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AttachSellItemToOrderRequest
      */
     public function setCheckTravelDateRight(?bool $checkTravelDateRight = true): self
     {

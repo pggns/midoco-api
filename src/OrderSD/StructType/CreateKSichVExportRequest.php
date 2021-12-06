@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class CreateKSichVExportRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CreateKSichVExportRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CreateKSichVExportRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -118,7 +118,7 @@ class CreateKSichVExportRequest extends AbstractStructBase
     /**
      * Set fullExport value
      * @param bool $fullExport
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CreateKSichVExportRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CreateKSichVExportRequest
      */
     public function setFullExport(?bool $fullExport = null): self
     {
@@ -141,7 +141,7 @@ class CreateKSichVExportRequest extends AbstractStructBase
     /**
      * Set receiptNoFrom value
      * @param string $receiptNoFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CreateKSichVExportRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CreateKSichVExportRequest
      */
     public function setReceiptNoFrom(?string $receiptNoFrom = null): self
     {
@@ -164,7 +164,7 @@ class CreateKSichVExportRequest extends AbstractStructBase
     /**
      * Set receiptNoTo value
      * @param string $receiptNoTo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CreateKSichVExportRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CreateKSichVExportRequest
      */
     public function setReceiptNoTo(?string $receiptNoTo = null): self
     {
@@ -187,7 +187,7 @@ class CreateKSichVExportRequest extends AbstractStructBase
     /**
      * Set transactionNoFrom value
      * @param string $transactionNoFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CreateKSichVExportRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CreateKSichVExportRequest
      */
     public function setTransactionNoFrom(?string $transactionNoFrom = null): self
     {
@@ -210,7 +210,7 @@ class CreateKSichVExportRequest extends AbstractStructBase
     /**
      * Set transactionNoTo value
      * @param string $transactionNoTo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CreateKSichVExportRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CreateKSichVExportRequest
      */
     public function setTransactionNoTo(?string $transactionNoTo = null): self
     {
@@ -233,7 +233,7 @@ class CreateKSichVExportRequest extends AbstractStructBase
     /**
      * Set AccountingDateFrom value
      * @param string $accountingDateFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CreateKSichVExportRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CreateKSichVExportRequest
      */
     public function setAccountingDateFrom(?string $accountingDateFrom = null): self
     {
@@ -256,7 +256,7 @@ class CreateKSichVExportRequest extends AbstractStructBase
     /**
      * Set AccountingDateTo value
      * @param string $accountingDateTo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CreateKSichVExportRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CreateKSichVExportRequest
      */
     public function setAccountingDateTo(?string $accountingDateTo = null): self
     {

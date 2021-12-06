@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchAssignedSavedReportsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:MidocoSavedReport
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoSavedReport[]
      */
     protected ?array $MidocoSavedReport = null;
     /**
      * Constructor method for SearchAssignedSavedReportsResponse
      * @uses SearchAssignedSavedReportsResponse::setMidocoSavedReport()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport[] $midocoSavedReport
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoSavedReport[] $midocoSavedReport
      */
     public function __construct(?array $midocoSavedReport = null)
     {
@@ -34,7 +34,7 @@ class SearchAssignedSavedReportsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSavedReport value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoSavedReport[]
      */
     public function getMidocoSavedReport(): ?array
     {
@@ -55,12 +55,12 @@ class SearchAssignedSavedReportsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchAssignedSavedReportsResponseMidocoSavedReportItem) {
             // validation for constraint: itemType
-            if (!$searchAssignedSavedReportsResponseMidocoSavedReportItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport) {
+            if (!$searchAssignedSavedReportsResponseMidocoSavedReportItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoSavedReport) {
                 $invalidValues[] = is_object($searchAssignedSavedReportsResponseMidocoSavedReportItem) ? get_class($searchAssignedSavedReportsResponseMidocoSavedReportItem) : sprintf('%s(%s)', gettype($searchAssignedSavedReportsResponseMidocoSavedReportItem), var_export($searchAssignedSavedReportsResponseMidocoSavedReportItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSavedReport property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSavedReport property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoSavedReport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchAssignedSavedReportsResponse extends AbstractStructBase
     /**
      * Set MidocoSavedReport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport[] $midocoSavedReport
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchAssignedSavedReportsResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoSavedReport[] $midocoSavedReport
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchAssignedSavedReportsResponse
      */
     public function setMidocoSavedReport(?array $midocoSavedReport = null): self
     {
@@ -85,14 +85,14 @@ class SearchAssignedSavedReportsResponse extends AbstractStructBase
     /**
      * Add item to MidocoSavedReport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchAssignedSavedReportsResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoSavedReport $item
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchAssignedSavedReportsResponse
      */
-    public function addToMidocoSavedReport(\Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport $item): self
+    public function addToMidocoSavedReport(\Pggns\MidocoApi\Mis\StructType\MidocoSavedReport $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport) {
-            throw new InvalidArgumentException(sprintf('The MidocoSavedReport property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoSavedReport) {
+            throw new InvalidArgumentException(sprintf('The MidocoSavedReport property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoSavedReport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSavedReport[] = $item;
         

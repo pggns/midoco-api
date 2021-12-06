@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class BonusCalculationDTO extends AbstractStructBase
     /**
      * Set bonusId value
      * @param int $bonusId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BonusCalculationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BonusCalculationDTO
      */
     public function setBonusId(?int $bonusId = null): self
     {
@@ -118,7 +118,7 @@ class BonusCalculationDTO extends AbstractStructBase
     /**
      * Set calculationBase value
      * @param string $calculationBase
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BonusCalculationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BonusCalculationDTO
      */
     public function setCalculationBase(?string $calculationBase = null): self
     {
@@ -141,7 +141,7 @@ class BonusCalculationDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BonusCalculationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BonusCalculationDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -164,7 +164,7 @@ class BonusCalculationDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BonusCalculationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BonusCalculationDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -187,7 +187,7 @@ class BonusCalculationDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BonusCalculationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BonusCalculationDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -210,7 +210,7 @@ class BonusCalculationDTO extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BonusCalculationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BonusCalculationDTO
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -233,7 +233,7 @@ class BonusCalculationDTO extends AbstractStructBase
     /**
      * Set isFinished value
      * @param bool $isFinished
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BonusCalculationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BonusCalculationDTO
      */
     public function setIsFinished(?bool $isFinished = null): self
     {
@@ -256,7 +256,7 @@ class BonusCalculationDTO extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BonusCalculationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BonusCalculationDTO
      */
     public function setStartDate(?string $startDate = null): self
     {

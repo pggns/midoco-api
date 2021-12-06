@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class MdcSettlementBillingFeeDTO extends AbstractStructBase
     /**
      * Set additionalBatches value
      * @param int $additionalBatches
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingFeeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingFeeDTO
      */
     public function setAdditionalBatches(?int $additionalBatches = null): self
     {
@@ -150,7 +150,7 @@ class MdcSettlementBillingFeeDTO extends AbstractStructBase
     /**
      * Set dynamicAmount value
      * @param float $dynamicAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingFeeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingFeeDTO
      */
     public function setDynamicAmount(?float $dynamicAmount = null): self
     {
@@ -173,7 +173,7 @@ class MdcSettlementBillingFeeDTO extends AbstractStructBase
     /**
      * Set flatRateAmount value
      * @param float $flatRateAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingFeeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingFeeDTO
      */
     public function setFlatRateAmount(?float $flatRateAmount = null): self
     {
@@ -196,7 +196,7 @@ class MdcSettlementBillingFeeDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingFeeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingFeeDTO
      */
     public function setId(?int $id = null): self
     {
@@ -219,7 +219,7 @@ class MdcSettlementBillingFeeDTO extends AbstractStructBase
     /**
      * Set includedQuantity value
      * @param int $includedQuantity
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingFeeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingFeeDTO
      */
     public function setIncludedQuantity(?int $includedQuantity = null): self
     {
@@ -242,7 +242,7 @@ class MdcSettlementBillingFeeDTO extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingFeeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingFeeDTO
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -265,7 +265,7 @@ class MdcSettlementBillingFeeDTO extends AbstractStructBase
     /**
      * Set mdcSettlementBillingId value
      * @param int $mdcSettlementBillingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingFeeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingFeeDTO
      */
     public function setMdcSettlementBillingId(?int $mdcSettlementBillingId = null): self
     {
@@ -288,7 +288,7 @@ class MdcSettlementBillingFeeDTO extends AbstractStructBase
     /**
      * Set noOfItems value
      * @param int $noOfItems
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingFeeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingFeeDTO
      */
     public function setNoOfItems(?int $noOfItems = null): self
     {
@@ -311,7 +311,7 @@ class MdcSettlementBillingFeeDTO extends AbstractStructBase
     /**
      * Set period value
      * @param string $period
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingFeeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingFeeDTO
      */
     public function setPeriod(?string $period = null): self
     {
@@ -334,7 +334,7 @@ class MdcSettlementBillingFeeDTO extends AbstractStructBase
     /**
      * Set settlementMonth value
      * @param string $settlementMonth
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingFeeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingFeeDTO
      */
     public function setSettlementMonth(?string $settlementMonth = null): self
     {
@@ -357,7 +357,7 @@ class MdcSettlementBillingFeeDTO extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingFeeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingFeeDTO
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -380,7 +380,7 @@ class MdcSettlementBillingFeeDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingFeeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingFeeDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

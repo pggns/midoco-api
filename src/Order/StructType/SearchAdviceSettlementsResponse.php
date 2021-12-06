@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchAdviceSettlementsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAdviceSettlement
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement[]
      */
     protected ?array $MidocoAdviceSettlement = null;
     /**
      * Constructor method for SearchAdviceSettlementsResponse
      * @uses SearchAdviceSettlementsResponse::setMidocoAdviceSettlement()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement[] $midocoAdviceSettlement
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement[] $midocoAdviceSettlement
      */
     public function __construct(?array $midocoAdviceSettlement = null)
     {
@@ -34,7 +34,7 @@ class SearchAdviceSettlementsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAdviceSettlement value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement[]
      */
     public function getMidocoAdviceSettlement(): ?array
     {
@@ -55,12 +55,12 @@ class SearchAdviceSettlementsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchAdviceSettlementsResponseMidocoAdviceSettlementItem) {
             // validation for constraint: itemType
-            if (!$searchAdviceSettlementsResponseMidocoAdviceSettlementItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement) {
+            if (!$searchAdviceSettlementsResponseMidocoAdviceSettlementItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement) {
                 $invalidValues[] = is_object($searchAdviceSettlementsResponseMidocoAdviceSettlementItem) ? get_class($searchAdviceSettlementsResponseMidocoAdviceSettlementItem) : sprintf('%s(%s)', gettype($searchAdviceSettlementsResponseMidocoAdviceSettlementItem), var_export($searchAdviceSettlementsResponseMidocoAdviceSettlementItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAdviceSettlement property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAdviceSettlement property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchAdviceSettlementsResponse extends AbstractStructBase
     /**
      * Set MidocoAdviceSettlement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement[] $midocoAdviceSettlement
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement[] $midocoAdviceSettlement
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsResponse
      */
     public function setMidocoAdviceSettlement(?array $midocoAdviceSettlement = null): self
     {
@@ -85,14 +85,14 @@ class SearchAdviceSettlementsResponse extends AbstractStructBase
     /**
      * Add item to MidocoAdviceSettlement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsResponse
      */
-    public function addToMidocoAdviceSettlement(\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement $item): self
+    public function addToMidocoAdviceSettlement(\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement) {
-            throw new InvalidArgumentException(sprintf('The MidocoAdviceSettlement property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlement, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement) {
+            throw new InvalidArgumentException(sprintf('The MidocoAdviceSettlement property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlement, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAdviceSettlement[] = $item;
         

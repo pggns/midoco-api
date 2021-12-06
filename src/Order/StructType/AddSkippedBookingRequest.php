@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class AddSkippedBookingRequest extends AbstractStructBase
      * The MidocoSkippedBooking
      * Meta information extracted from the WSDL
      * - ref: MidocoSkippedBooking
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\SkippedBookingDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO $MidocoSkippedBooking = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\SkippedBookingDTO $MidocoSkippedBooking = null;
     /**
      * Constructor method for AddSkippedBookingRequest
      * @uses AddSkippedBookingRequest::setMidocoSkippedBooking()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO $midocoSkippedBooking
+     * @param \Pggns\MidocoApi\Order\StructType\SkippedBookingDTO $midocoSkippedBooking
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO $midocoSkippedBooking = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\SkippedBookingDTO $midocoSkippedBooking = null)
     {
         $this
             ->setMidocoSkippedBooking($midocoSkippedBooking);
     }
     /**
      * Get MidocoSkippedBooking value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\SkippedBookingDTO|null
      */
-    public function getMidocoSkippedBooking(): ?\Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO
+    public function getMidocoSkippedBooking(): ?\Pggns\MidocoApi\Order\StructType\SkippedBookingDTO
     {
         return $this->MidocoSkippedBooking;
     }
     /**
      * Set MidocoSkippedBooking value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO $midocoSkippedBooking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddSkippedBookingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SkippedBookingDTO $midocoSkippedBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AddSkippedBookingRequest
      */
-    public function setMidocoSkippedBooking(?\Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO $midocoSkippedBooking = null): self
+    public function setMidocoSkippedBooking(?\Pggns\MidocoApi\Order\StructType\SkippedBookingDTO $midocoSkippedBooking = null): self
     {
         $this->MidocoSkippedBooking = $midocoSkippedBooking;
         

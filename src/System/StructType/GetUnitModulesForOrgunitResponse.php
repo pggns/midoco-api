@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetUnitModulesForOrgunitResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoUnitModule
-     * @var \Pggns\MidocoApi\Api\System\StructType\MidocoUnitModule[]
+     * @var \Pggns\MidocoApi\System\StructType\MidocoUnitModule[]
      */
     protected ?array $MidocoUnitModule = null;
     /**
      * Constructor method for GetUnitModulesForOrgunitResponse
      * @uses GetUnitModulesForOrgunitResponse::setMidocoUnitModule()
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoUnitModule[] $midocoUnitModule
+     * @param \Pggns\MidocoApi\System\StructType\MidocoUnitModule[] $midocoUnitModule
      */
     public function __construct(?array $midocoUnitModule = null)
     {
@@ -34,7 +34,7 @@ class GetUnitModulesForOrgunitResponse extends AbstractStructBase
     }
     /**
      * Get MidocoUnitModule value
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoUnitModule[]
+     * @return \Pggns\MidocoApi\System\StructType\MidocoUnitModule[]
      */
     public function getMidocoUnitModule(): ?array
     {
@@ -55,12 +55,12 @@ class GetUnitModulesForOrgunitResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getUnitModulesForOrgunitResponseMidocoUnitModuleItem) {
             // validation for constraint: itemType
-            if (!$getUnitModulesForOrgunitResponseMidocoUnitModuleItem instanceof \Pggns\MidocoApi\Api\System\StructType\MidocoUnitModule) {
+            if (!$getUnitModulesForOrgunitResponseMidocoUnitModuleItem instanceof \Pggns\MidocoApi\System\StructType\MidocoUnitModule) {
                 $invalidValues[] = is_object($getUnitModulesForOrgunitResponseMidocoUnitModuleItem) ? get_class($getUnitModulesForOrgunitResponseMidocoUnitModuleItem) : sprintf('%s(%s)', gettype($getUnitModulesForOrgunitResponseMidocoUnitModuleItem), var_export($getUnitModulesForOrgunitResponseMidocoUnitModuleItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoUnitModule property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\MidocoUnitModule, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoUnitModule property can only contain items of type \Pggns\MidocoApi\System\StructType\MidocoUnitModule, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetUnitModulesForOrgunitResponse extends AbstractStructBase
     /**
      * Set MidocoUnitModule value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoUnitModule[] $midocoUnitModule
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetUnitModulesForOrgunitResponse
+     * @param \Pggns\MidocoApi\System\StructType\MidocoUnitModule[] $midocoUnitModule
+     * @return \Pggns\MidocoApi\System\StructType\GetUnitModulesForOrgunitResponse
      */
     public function setMidocoUnitModule(?array $midocoUnitModule = null): self
     {
@@ -85,14 +85,14 @@ class GetUnitModulesForOrgunitResponse extends AbstractStructBase
     /**
      * Add item to MidocoUnitModule value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoUnitModule $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetUnitModulesForOrgunitResponse
+     * @param \Pggns\MidocoApi\System\StructType\MidocoUnitModule $item
+     * @return \Pggns\MidocoApi\System\StructType\GetUnitModulesForOrgunitResponse
      */
-    public function addToMidocoUnitModule(\Pggns\MidocoApi\Api\System\StructType\MidocoUnitModule $item): self
+    public function addToMidocoUnitModule(\Pggns\MidocoApi\System\StructType\MidocoUnitModule $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\MidocoUnitModule) {
-            throw new InvalidArgumentException(sprintf('The MidocoUnitModule property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\MidocoUnitModule, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\MidocoUnitModule) {
+            throw new InvalidArgumentException(sprintf('The MidocoUnitModule property can only contain items of type \Pggns\MidocoApi\System\StructType\MidocoUnitModule, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoUnitModule[] = $item;
         

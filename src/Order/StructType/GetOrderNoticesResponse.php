@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class GetOrderNoticesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderNoticeWithOrderNo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNoticeWithOrderNo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderNoticeWithOrderNo[]
      */
     protected ?array $MidocoOrderNoticeWithOrderNo = null;
     /**
@@ -30,15 +30,15 @@ class GetOrderNoticesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderNotice
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderNotice[]
      */
     protected ?array $MidocoOrderNotice = null;
     /**
      * Constructor method for GetOrderNoticesResponse
      * @uses GetOrderNoticesResponse::setMidocoOrderNoticeWithOrderNo()
      * @uses GetOrderNoticesResponse::setMidocoOrderNotice()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNoticeWithOrderNo[] $midocoOrderNoticeWithOrderNo
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice[] $midocoOrderNotice
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderNoticeWithOrderNo[] $midocoOrderNoticeWithOrderNo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderNotice[] $midocoOrderNotice
      */
     public function __construct(?array $midocoOrderNoticeWithOrderNo = null, ?array $midocoOrderNotice = null)
     {
@@ -48,7 +48,7 @@ class GetOrderNoticesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderNoticeWithOrderNo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNoticeWithOrderNo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderNoticeWithOrderNo[]
      */
     public function getMidocoOrderNoticeWithOrderNo(): ?array
     {
@@ -69,12 +69,12 @@ class GetOrderNoticesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderNoticesResponseMidocoOrderNoticeWithOrderNoItem) {
             // validation for constraint: itemType
-            if (!$getOrderNoticesResponseMidocoOrderNoticeWithOrderNoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNoticeWithOrderNo) {
+            if (!$getOrderNoticesResponseMidocoOrderNoticeWithOrderNoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderNoticeWithOrderNo) {
                 $invalidValues[] = is_object($getOrderNoticesResponseMidocoOrderNoticeWithOrderNoItem) ? get_class($getOrderNoticesResponseMidocoOrderNoticeWithOrderNoItem) : sprintf('%s(%s)', gettype($getOrderNoticesResponseMidocoOrderNoticeWithOrderNoItem), var_export($getOrderNoticesResponseMidocoOrderNoticeWithOrderNoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderNoticeWithOrderNo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNoticeWithOrderNo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderNoticeWithOrderNo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderNoticeWithOrderNo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -83,8 +83,8 @@ class GetOrderNoticesResponse extends AbstractStructBase
     /**
      * Set MidocoOrderNoticeWithOrderNo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNoticeWithOrderNo[] $midocoOrderNoticeWithOrderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderNoticeWithOrderNo[] $midocoOrderNoticeWithOrderNo
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesResponse
      */
     public function setMidocoOrderNoticeWithOrderNo(?array $midocoOrderNoticeWithOrderNo = null): self
     {
@@ -99,14 +99,14 @@ class GetOrderNoticesResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderNoticeWithOrderNo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNoticeWithOrderNo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderNoticeWithOrderNo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesResponse
      */
-    public function addToMidocoOrderNoticeWithOrderNo(\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNoticeWithOrderNo $item): self
+    public function addToMidocoOrderNoticeWithOrderNo(\Pggns\MidocoApi\Order\StructType\MidocoOrderNoticeWithOrderNo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNoticeWithOrderNo) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderNoticeWithOrderNo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNoticeWithOrderNo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderNoticeWithOrderNo) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderNoticeWithOrderNo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderNoticeWithOrderNo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderNoticeWithOrderNo[] = $item;
         
@@ -114,7 +114,7 @@ class GetOrderNoticesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderNotice value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderNotice[]
      */
     public function getMidocoOrderNotice(): ?array
     {
@@ -135,12 +135,12 @@ class GetOrderNoticesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderNoticesResponseMidocoOrderNoticeItem) {
             // validation for constraint: itemType
-            if (!$getOrderNoticesResponseMidocoOrderNoticeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice) {
+            if (!$getOrderNoticesResponseMidocoOrderNoticeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderNotice) {
                 $invalidValues[] = is_object($getOrderNoticesResponseMidocoOrderNoticeItem) ? get_class($getOrderNoticesResponseMidocoOrderNoticeItem) : sprintf('%s(%s)', gettype($getOrderNoticesResponseMidocoOrderNoticeItem), var_export($getOrderNoticesResponseMidocoOrderNoticeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderNotice property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderNotice property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -149,8 +149,8 @@ class GetOrderNoticesResponse extends AbstractStructBase
     /**
      * Set MidocoOrderNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice[] $midocoOrderNotice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderNotice[] $midocoOrderNotice
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesResponse
      */
     public function setMidocoOrderNotice(?array $midocoOrderNotice = null): self
     {
@@ -165,14 +165,14 @@ class GetOrderNoticesResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderNotice $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesResponse
      */
-    public function addToMidocoOrderNotice(\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice $item): self
+    public function addToMidocoOrderNotice(\Pggns\MidocoApi\Order\StructType\MidocoOrderNotice $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderNotice property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderNotice) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderNotice property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderNotice[] = $item;
         

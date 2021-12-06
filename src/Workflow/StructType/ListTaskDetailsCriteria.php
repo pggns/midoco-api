@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
      * - maxOccurs: 2
      * - minOccurs: 0
      * - ref: UnitCriteria
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\UnitCriteria[]
      */
     protected ?array $UnitCriteria = null;
     /**
@@ -115,7 +115,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
      * @uses ListTaskDetailsCriteria::setShowCreationUser()
      * @uses ListTaskDetailsCriteria::setAssignedQueue()
      * @uses ListTaskDetailsCriteria::setIncludeEmptyDueDate()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria[] $unitCriteria
+     * @param \Pggns\MidocoApi\Workflow\StructType\UnitCriteria[] $unitCriteria
      * @param string[] $queueName
      * @param string[] $ownerOrgunit
      * @param int[] $delegationUser
@@ -150,7 +150,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     }
     /**
      * Get UnitCriteria value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\UnitCriteria[]
      */
     public function getUnitCriteria(): ?array
     {
@@ -171,12 +171,12 @@ class ListTaskDetailsCriteria extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listTaskDetailsCriteriaUnitCriteriaItem) {
             // validation for constraint: itemType
-            if (!$listTaskDetailsCriteriaUnitCriteriaItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria) {
+            if (!$listTaskDetailsCriteriaUnitCriteriaItem instanceof \Pggns\MidocoApi\Workflow\StructType\UnitCriteria) {
                 $invalidValues[] = is_object($listTaskDetailsCriteriaUnitCriteriaItem) ? get_class($listTaskDetailsCriteriaUnitCriteriaItem) : sprintf('%s(%s)', gettype($listTaskDetailsCriteriaUnitCriteriaItem), var_export($listTaskDetailsCriteriaUnitCriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The UnitCriteria property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The UnitCriteria property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\UnitCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -185,8 +185,8 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     /**
      * Set UnitCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria[] $unitCriteria
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @param \Pggns\MidocoApi\Workflow\StructType\UnitCriteria[] $unitCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setUnitCriteria(?array $unitCriteria = null): self
     {
@@ -205,14 +205,14 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     /**
      * Add item to UnitCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @param \Pggns\MidocoApi\Workflow\StructType\UnitCriteria $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
-    public function addToUnitCriteria(\Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria $item): self
+    public function addToUnitCriteria(\Pggns\MidocoApi\Workflow\StructType\UnitCriteria $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria) {
-            throw new InvalidArgumentException(sprintf('The UnitCriteria property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\UnitCriteria) {
+            throw new InvalidArgumentException(sprintf('The UnitCriteria property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\UnitCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(2)
         if (is_array($this->UnitCriteria) && count($this->UnitCriteria) >= 2) {
@@ -260,7 +260,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
      * Set queueName value
      * @throws InvalidArgumentException
      * @param string[] $queueName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setQueueName(?array $queueName = null): self
     {
@@ -276,7 +276,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
      * Add item to queueName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function addToQueueName(string $item): self
     {
@@ -326,7 +326,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
      * Set ownerOrgunit value
      * @throws InvalidArgumentException
      * @param string[] $ownerOrgunit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setOwnerOrgunit(?array $ownerOrgunit = null): self
     {
@@ -342,7 +342,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
      * Add item to ownerOrgunit value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function addToOwnerOrgunit(string $item): self
     {
@@ -392,7 +392,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
      * Set delegationUser value
      * @throws InvalidArgumentException
      * @param int[] $delegationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setDelegationUser(?array $delegationUser = null): self
     {
@@ -408,7 +408,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
      * Add item to delegationUser value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function addToDelegationUser(int $item): self
     {
@@ -458,7 +458,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
      * Set taskTypes value
      * @throws InvalidArgumentException
      * @param string[] $taskTypes
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setTaskTypes(?array $taskTypes = null): self
     {
@@ -474,7 +474,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
      * Add item to taskTypes value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function addToTaskTypes(string $item): self
     {
@@ -497,7 +497,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     /**
      * Set priorityFrom value
      * @param int $priorityFrom
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setPriorityFrom(?int $priorityFrom = null): self
     {
@@ -520,7 +520,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     /**
      * Set fromDate value
      * @param string $fromDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setFromDate(?string $fromDate = null): self
     {
@@ -543,7 +543,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     /**
      * Set untilDate value
      * @param string $untilDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setUntilDate(?string $untilDate = null): self
     {
@@ -566,7 +566,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     /**
      * Set delegationFromDate value
      * @param string $delegationFromDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setDelegationFromDate(?string $delegationFromDate = null): self
     {
@@ -589,7 +589,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     /**
      * Set delegationToDate value
      * @param string $delegationToDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setDelegationToDate(?string $delegationToDate = null): self
     {
@@ -612,7 +612,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     /**
      * Set priorityTo value
      * @param int $priorityTo
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setPriorityTo(?int $priorityTo = null): self
     {
@@ -635,7 +635,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     /**
      * Set showCreationUser value
      * @param bool $showCreationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setShowCreationUser(?bool $showCreationUser = null): self
     {
@@ -658,7 +658,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     /**
      * Set assignedQueue value
      * @param string $assignedQueue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setAssignedQueue(?string $assignedQueue = null): self
     {
@@ -681,7 +681,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     /**
      * Set includeEmptyDueDate value
      * @param bool $includeEmptyDueDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsCriteria
      */
     public function setIncludeEmptyDueDate(?bool $includeEmptyDueDate = null): self
     {

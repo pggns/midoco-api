@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\ServiceType;
+namespace Pggns\MidocoApi\CrmSD\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Import extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\CrmSD\ServiceType\Import
+     * @return \Pggns\MidocoApi\CrmSD\ServiceType\Import
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Import extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ImportDictionaryNamesRequest $paramImportDictionaryNamesRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportDictionaryNamesResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ImportDictionaryNamesRequest $paramImportDictionaryNamesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportDictionaryNamesResponse|bool
      */
-    public function importDictionaryNames(\Pggns\MidocoApi\Api\CrmSD\StructType\ImportDictionaryNamesRequest $paramImportDictionaryNamesRequest)
+    public function importDictionaryNames(\Pggns\MidocoApi\CrmSD\StructType\ImportDictionaryNamesRequest $paramImportDictionaryNamesRequest)
     {
         try {
             $this->setResult($resultImportDictionaryNames = $this->getSoapClient()->__soapCall('importDictionaryNames', [
@@ -56,7 +56,7 @@ class Import extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportDictionaryNamesResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportDictionaryNamesResponse
      */
     public function getResult()
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetMidocoUserIdForExternCredentialsResponse extends AbstractStructBase
     /**
      * Set midocoUserId value
      * @param int $midocoUserId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMidocoUserIdForExternCredentialsResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMidocoUserIdForExternCredentialsResponse
      */
     public function setMidocoUserId(?int $midocoUserId = null): self
     {
@@ -70,7 +70,7 @@ class GetMidocoUserIdForExternCredentialsResponse extends AbstractStructBase
     /**
      * Set midocoOrgUnitName value
      * @param string $midocoOrgUnitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMidocoUserIdForExternCredentialsResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMidocoUserIdForExternCredentialsResponse
      */
     public function setMidocoOrgUnitName(?string $midocoOrgUnitName = null): self
     {

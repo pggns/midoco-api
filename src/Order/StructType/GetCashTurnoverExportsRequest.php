@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class GetCashTurnoverExportsRequest extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCashTurnoverExportsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetCashTurnoverExportsRequest
      */
     public function setCashBookId(int $cashBookId): self
     {
@@ -80,7 +80,7 @@ class GetCashTurnoverExportsRequest extends AbstractStructBase
     /**
      * Set exportDateFrom value
      * @param string $exportDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCashTurnoverExportsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetCashTurnoverExportsRequest
      */
     public function setExportDateFrom(?string $exportDateFrom = null): self
     {
@@ -103,7 +103,7 @@ class GetCashTurnoverExportsRequest extends AbstractStructBase
     /**
      * Set exportDateTo value
      * @param string $exportDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCashTurnoverExportsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetCashTurnoverExportsRequest
      */
     public function setExportDateTo(?string $exportDateTo = null): self
     {

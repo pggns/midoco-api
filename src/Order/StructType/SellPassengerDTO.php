@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set age value
      * @param int $age
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setAge(?int $age = null): self
     {
@@ -198,7 +198,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set birthDate value
      * @param string $birthDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setBirthDate(?string $birthDate = null): self
     {
@@ -221,7 +221,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set crsImportedName value
      * @param string $crsImportedName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setCrsImportedName(?string $crsImportedName = null): self
     {
@@ -244,7 +244,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set crsImportedSalutation value
      * @param string $crsImportedSalutation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setCrsImportedSalutation(?string $crsImportedSalutation = null): self
     {
@@ -267,7 +267,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set facesId value
      * @param string $facesId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setFacesId(?string $facesId = null): self
     {
@@ -290,7 +290,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -313,7 +313,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set gender value
      * @param int $gender
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setGender(?int $gender = null): self
     {
@@ -336,7 +336,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set ignoreInPartialInvoice value
      * @param bool $ignoreInPartialInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setIgnoreInPartialInvoice(?bool $ignoreInPartialInvoice = null): self
     {
@@ -359,7 +359,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -382,7 +382,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -405,7 +405,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set midocoCustomerId value
      * @param int $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setMidocoCustomerId(?int $midocoCustomerId = null): self
     {
@@ -428,7 +428,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setName(?string $name = null): self
     {
@@ -451,7 +451,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set nationality value
      * @param string $nationality
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setNationality(?string $nationality = null): self
     {
@@ -474,7 +474,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set positionNo value
      * @param int $positionNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setPositionNo(?int $positionNo = null): self
     {
@@ -497,7 +497,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set referenceNo value
      * @param string $referenceNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setReferenceNo(?string $referenceNo = null): self
     {
@@ -520,7 +520,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -543,7 +543,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set singlePrice value
      * @param float $singlePrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setSinglePrice(?float $singlePrice = null): self
     {
@@ -566,7 +566,7 @@ class SellPassengerDTO extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellPassengerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellPassengerDTO
      */
     public function setTitle(?string $title = null): self
     {

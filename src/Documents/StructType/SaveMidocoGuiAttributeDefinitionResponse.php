@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoGuiAttributeDefinitionResponse extends AbstractStructBase
      * The MidocoGuiAttributeDefinition
      * Meta information extracted from the WSDL
      * - ref: MidocoGuiAttributeDefinition
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\GuiAttributeDefinitionDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\GuiAttributeDefinitionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\GuiAttributeDefinitionDTO $MidocoGuiAttributeDefinition = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\GuiAttributeDefinitionDTO $MidocoGuiAttributeDefinition = null;
     /**
      * Constructor method for SaveMidocoGuiAttributeDefinitionResponse
      * @uses SaveMidocoGuiAttributeDefinitionResponse::setMidocoGuiAttributeDefinition()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition
+     * @param \Pggns\MidocoApi\Documents\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition = null)
     {
         $this
             ->setMidocoGuiAttributeDefinition($midocoGuiAttributeDefinition);
     }
     /**
      * Get MidocoGuiAttributeDefinition value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GuiAttributeDefinitionDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\GuiAttributeDefinitionDTO|null
      */
-    public function getMidocoGuiAttributeDefinition(): ?\Pggns\MidocoApi\Api\Documents\StructType\GuiAttributeDefinitionDTO
+    public function getMidocoGuiAttributeDefinition(): ?\Pggns\MidocoApi\Documents\StructType\GuiAttributeDefinitionDTO
     {
         return $this->MidocoGuiAttributeDefinition;
     }
     /**
      * Set MidocoGuiAttributeDefinition value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveMidocoGuiAttributeDefinitionResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveMidocoGuiAttributeDefinitionResponse
      */
-    public function setMidocoGuiAttributeDefinition(?\Pggns\MidocoApi\Api\Documents\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition = null): self
+    public function setMidocoGuiAttributeDefinition(?\Pggns\MidocoApi\Documents\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition = null): self
     {
         $this->MidocoGuiAttributeDefinition = $midocoGuiAttributeDefinition;
         

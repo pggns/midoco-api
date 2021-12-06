@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GenerateHTLMForCrossSellVersResponse extends AbstractStructBase
     /**
      * Set htmlString value
      * @param string $htmlString
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenerateHTLMForCrossSellVersResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GenerateHTLMForCrossSellVersResponse
      */
     public function setHtmlString(?string $htmlString = null): self
     {

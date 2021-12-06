@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set additionalInfo value
      * @param string $additionalInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\InsurerInfoType
      */
     public function setAdditionalInfo(?string $additionalInfo = null): self
     {
@@ -142,7 +142,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set addressId value
      * @param int $addressId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\InsurerInfoType
      */
     public function setAddressId(?int $addressId = null): self
     {
@@ -165,7 +165,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\InsurerInfoType
      */
     public function setCity(?string $city = null): self
     {
@@ -188,7 +188,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\InsurerInfoType
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -211,7 +211,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\InsurerInfoType
      */
     public function setEmail(?string $email = null): self
     {
@@ -234,7 +234,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set phone value
      * @param string $phone
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\InsurerInfoType
      */
     public function setPhone(?string $phone = null): self
     {
@@ -257,7 +257,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\InsurerInfoType
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -280,7 +280,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\InsurerInfoType
      */
     public function setStreet(?string $street = null): self
     {
@@ -303,7 +303,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\InsurerInfoType
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -326,7 +326,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\InsurerInfoType
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -349,7 +349,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\InsurerInfoType
      */
     public function setValidTo(?string $validTo = null): self
     {

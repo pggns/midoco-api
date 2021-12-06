@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteMidocoSystemOrgunitClosingRequest extends AbstractStructBase
     /**
      * Set closureId value
      * @param int $closureId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteMidocoSystemOrgunitClosingRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteMidocoSystemOrgunitClosingRequest
      */
     public function setClosureId(?int $closureId = null): self
     {

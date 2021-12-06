@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class RemoveNonReachableResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoMisCampaign
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $MidocoMisCampaign = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $MidocoMisCampaign = null;
     /**
      * Constructor method for RemoveNonReachableResponse
      * @uses RemoveNonReachableResponse::setMidocoMisCampaign()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null)
     {
         $this
             ->setMidocoMisCampaign($midocoMisCampaign);
     }
     /**
      * Get MidocoMisCampaign value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign|null
      */
-    public function getMidocoMisCampaign(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign
+    public function getMidocoMisCampaign(): ?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign
     {
         return $this->MidocoMisCampaign;
     }
     /**
      * Set MidocoMisCampaign value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\RemoveNonReachableResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
+     * @return \Pggns\MidocoApi\Mis\StructType\RemoveNonReachableResponse
      */
-    public function setMidocoMisCampaign(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null): self
+    public function setMidocoMisCampaign(?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null): self
     {
         $this->MidocoMisCampaign = $midocoMisCampaign;
         

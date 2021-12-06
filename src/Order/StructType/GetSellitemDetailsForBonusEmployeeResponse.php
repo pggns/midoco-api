@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSellitemDetailsForBonusEmployeeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: ordersd:MidocoBonusAssignmentSellitemDetails
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusAssignmentSellitemDetails[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBonusAssignmentSellitemDetails[]
      */
     protected ?array $MidocoBonusAssignmentSellitemDetails = null;
     /**
      * Constructor method for GetSellitemDetailsForBonusEmployeeResponse
      * @uses GetSellitemDetailsForBonusEmployeeResponse::setMidocoBonusAssignmentSellitemDetails()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusAssignmentSellitemDetails[] $midocoBonusAssignmentSellitemDetails
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBonusAssignmentSellitemDetails[] $midocoBonusAssignmentSellitemDetails
      */
     public function __construct(?array $midocoBonusAssignmentSellitemDetails = null)
     {
@@ -34,7 +34,7 @@ class GetSellitemDetailsForBonusEmployeeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBonusAssignmentSellitemDetails value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusAssignmentSellitemDetails[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBonusAssignmentSellitemDetails[]
      */
     public function getMidocoBonusAssignmentSellitemDetails(): ?array
     {
@@ -55,12 +55,12 @@ class GetSellitemDetailsForBonusEmployeeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSellitemDetailsForBonusEmployeeResponseMidocoBonusAssignmentSellitemDetailsItem) {
             // validation for constraint: itemType
-            if (!$getSellitemDetailsForBonusEmployeeResponseMidocoBonusAssignmentSellitemDetailsItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusAssignmentSellitemDetails) {
+            if (!$getSellitemDetailsForBonusEmployeeResponseMidocoBonusAssignmentSellitemDetailsItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBonusAssignmentSellitemDetails) {
                 $invalidValues[] = is_object($getSellitemDetailsForBonusEmployeeResponseMidocoBonusAssignmentSellitemDetailsItem) ? get_class($getSellitemDetailsForBonusEmployeeResponseMidocoBonusAssignmentSellitemDetailsItem) : sprintf('%s(%s)', gettype($getSellitemDetailsForBonusEmployeeResponseMidocoBonusAssignmentSellitemDetailsItem), var_export($getSellitemDetailsForBonusEmployeeResponseMidocoBonusAssignmentSellitemDetailsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBonusAssignmentSellitemDetails property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusAssignmentSellitemDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBonusAssignmentSellitemDetails property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBonusAssignmentSellitemDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSellitemDetailsForBonusEmployeeResponse extends AbstractStructBase
     /**
      * Set MidocoBonusAssignmentSellitemDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusAssignmentSellitemDetails[] $midocoBonusAssignmentSellitemDetails
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellitemDetailsForBonusEmployeeResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBonusAssignmentSellitemDetails[] $midocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellitemDetailsForBonusEmployeeResponse
      */
     public function setMidocoBonusAssignmentSellitemDetails(?array $midocoBonusAssignmentSellitemDetails = null): self
     {
@@ -85,14 +85,14 @@ class GetSellitemDetailsForBonusEmployeeResponse extends AbstractStructBase
     /**
      * Add item to MidocoBonusAssignmentSellitemDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusAssignmentSellitemDetails $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellitemDetailsForBonusEmployeeResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBonusAssignmentSellitemDetails $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellitemDetailsForBonusEmployeeResponse
      */
-    public function addToMidocoBonusAssignmentSellitemDetails(\Pggns\MidocoApi\Api\Order\StructType\MidocoBonusAssignmentSellitemDetails $item): self
+    public function addToMidocoBonusAssignmentSellitemDetails(\Pggns\MidocoApi\Order\StructType\MidocoBonusAssignmentSellitemDetails $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusAssignmentSellitemDetails) {
-            throw new InvalidArgumentException(sprintf('The MidocoBonusAssignmentSellitemDetails property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusAssignmentSellitemDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBonusAssignmentSellitemDetails) {
+            throw new InvalidArgumentException(sprintf('The MidocoBonusAssignmentSellitemDetails property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBonusAssignmentSellitemDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBonusAssignmentSellitemDetails[] = $item;
         

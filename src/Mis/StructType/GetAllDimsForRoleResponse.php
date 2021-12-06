@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetAllDimsForRoleResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMisDimension
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO[]
      */
     protected ?array $MidocoMisDimension = null;
     /**
      * Constructor method for GetAllDimsForRoleResponse
      * @uses GetAllDimsForRoleResponse::setMidocoMisDimension()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO[] $midocoMisDimension
+     * @param \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO[] $midocoMisDimension
      */
     public function __construct(?array $midocoMisDimension = null)
     {
@@ -36,7 +36,7 @@ class GetAllDimsForRoleResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMisDimension value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO[]
      */
     public function getMidocoMisDimension(): ?array
     {
@@ -57,12 +57,12 @@ class GetAllDimsForRoleResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllDimsForRoleResponseMidocoMisDimensionItem) {
             // validation for constraint: itemType
-            if (!$getAllDimsForRoleResponseMidocoMisDimensionItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO) {
+            if (!$getAllDimsForRoleResponseMidocoMisDimensionItem instanceof \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO) {
                 $invalidValues[] = is_object($getAllDimsForRoleResponseMidocoMisDimensionItem) ? get_class($getAllDimsForRoleResponseMidocoMisDimensionItem) : sprintf('%s(%s)', gettype($getAllDimsForRoleResponseMidocoMisDimensionItem), var_export($getAllDimsForRoleResponseMidocoMisDimensionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMisDimension property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMisDimension property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetAllDimsForRoleResponse extends AbstractStructBase
     /**
      * Set MidocoMisDimension value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO[] $midocoMisDimension
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAllDimsForRoleResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO[] $midocoMisDimension
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAllDimsForRoleResponse
      */
     public function setMidocoMisDimension(?array $midocoMisDimension = null): self
     {
@@ -87,14 +87,14 @@ class GetAllDimsForRoleResponse extends AbstractStructBase
     /**
      * Add item to MidocoMisDimension value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAllDimsForRoleResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAllDimsForRoleResponse
      */
-    public function addToMidocoMisDimension(\Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO $item): self
+    public function addToMidocoMisDimension(\Pggns\MidocoApi\Mis\StructType\MisDimensionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMisDimension property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisDimensionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMisDimension property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisDimensionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMisDimension[] = $item;
         

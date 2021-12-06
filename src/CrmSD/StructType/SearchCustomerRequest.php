@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,24 +18,24 @@ class SearchCustomerRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
      * The MidocoCrmSearchContact
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmSearchContact
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmSearchContactDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmSearchContactDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmSearchContactDTO $MidocoCrmSearchContact = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmSearchContactDTO $MidocoCrmSearchContact = null;
     /**
      * The MidocoMediatorTravels
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorTravels|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorTravels|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorTravels $MidocoMediatorTravels = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorTravels $MidocoMediatorTravels = null;
     /**
      * The maxReturned
      * @var int|null
@@ -127,9 +127,9 @@ class SearchCustomerRequest extends AbstractStructBase
      * @uses SearchCustomerRequest::setIncludeLockedCustomers()
      * @uses SearchCustomerRequest::setIban()
      * @uses SearchCustomerRequest::setCreditCard()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmSearchContactDTO $midocoCrmSearchContact
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorTravels $midocoMediatorTravels
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmSearchContactDTO $midocoCrmSearchContact
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorTravels $midocoMediatorTravels
      * @param int $maxReturned
      * @param string $filter
      * @param string $profileNo
@@ -144,7 +144,7 @@ class SearchCustomerRequest extends AbstractStructBase
      * @param string $iban
      * @param string $creditCard
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmSearchContactDTO $midocoCrmSearchContact = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorTravels $midocoMediatorTravels = null, ?int $maxReturned = null, ?string $filter = 'NONE', ?string $profileNo = null, ?bool $includePassengers = false, ?string $criteriaType = null, ?string $criteriaValue = null, ?string $neighbourType = null, ?string $mandateReference = null, ?bool $calledFromOrder = false, ?bool $calledFromOrderUtils = false, ?bool $includeLockedCustomers = null, ?string $iban = null, ?string $creditCard = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?\Pggns\MidocoApi\CrmSD\StructType\CrmSearchContactDTO $midocoCrmSearchContact = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorTravels $midocoMediatorTravels = null, ?int $maxReturned = null, ?string $filter = 'NONE', ?string $profileNo = null, ?bool $includePassengers = false, ?string $criteriaType = null, ?string $criteriaValue = null, ?string $neighbourType = null, ?string $mandateReference = null, ?bool $calledFromOrder = false, ?bool $calledFromOrderUtils = false, ?bool $includeLockedCustomers = null, ?string $iban = null, ?string $creditCard = null)
     {
         $this
             ->setMidocoCrmCustomer($midocoCrmCustomer)
@@ -166,18 +166,18 @@ class SearchCustomerRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         
@@ -185,18 +185,18 @@ class SearchCustomerRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmSearchContact value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmSearchContactDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmSearchContactDTO|null
      */
-    public function getMidocoCrmSearchContact(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmSearchContactDTO
+    public function getMidocoCrmSearchContact(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmSearchContactDTO
     {
         return $this->MidocoCrmSearchContact;
     }
     /**
      * Set MidocoCrmSearchContact value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmSearchContactDTO $midocoCrmSearchContact
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmSearchContactDTO $midocoCrmSearchContact
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
-    public function setMidocoCrmSearchContact(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmSearchContactDTO $midocoCrmSearchContact = null): self
+    public function setMidocoCrmSearchContact(?\Pggns\MidocoApi\CrmSD\StructType\CrmSearchContactDTO $midocoCrmSearchContact = null): self
     {
         $this->MidocoCrmSearchContact = $midocoCrmSearchContact;
         
@@ -204,18 +204,18 @@ class SearchCustomerRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMediatorTravels value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorTravels|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorTravels|null
      */
-    public function getMidocoMediatorTravels(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorTravels
+    public function getMidocoMediatorTravels(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorTravels
     {
         return $this->MidocoMediatorTravels;
     }
     /**
      * Set MidocoMediatorTravels value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorTravels $midocoMediatorTravels
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorTravels $midocoMediatorTravels
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
-    public function setMidocoMediatorTravels(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMediatorTravels $midocoMediatorTravels = null): self
+    public function setMidocoMediatorTravels(?\Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorTravels $midocoMediatorTravels = null): self
     {
         $this->MidocoMediatorTravels = $midocoMediatorTravels;
         
@@ -232,7 +232,7 @@ class SearchCustomerRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {
@@ -255,7 +255,7 @@ class SearchCustomerRequest extends AbstractStructBase
     /**
      * Set filter value
      * @param string $filter
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
     public function setFilter(?string $filter = 'NONE'): self
     {
@@ -278,7 +278,7 @@ class SearchCustomerRequest extends AbstractStructBase
     /**
      * Set profileNo value
      * @param string $profileNo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
     public function setProfileNo(?string $profileNo = null): self
     {
@@ -301,7 +301,7 @@ class SearchCustomerRequest extends AbstractStructBase
     /**
      * Set includePassengers value
      * @param bool $includePassengers
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
     public function setIncludePassengers(?bool $includePassengers = false): self
     {
@@ -324,7 +324,7 @@ class SearchCustomerRequest extends AbstractStructBase
     /**
      * Set criteriaType value
      * @param string $criteriaType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
     public function setCriteriaType(?string $criteriaType = null): self
     {
@@ -347,7 +347,7 @@ class SearchCustomerRequest extends AbstractStructBase
     /**
      * Set criteriaValue value
      * @param string $criteriaValue
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
     public function setCriteriaValue(?string $criteriaValue = null): self
     {
@@ -370,7 +370,7 @@ class SearchCustomerRequest extends AbstractStructBase
     /**
      * Set neighbourType value
      * @param string $neighbourType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
     public function setNeighbourType(?string $neighbourType = null): self
     {
@@ -393,7 +393,7 @@ class SearchCustomerRequest extends AbstractStructBase
     /**
      * Set mandateReference value
      * @param string $mandateReference
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
     public function setMandateReference(?string $mandateReference = null): self
     {
@@ -416,7 +416,7 @@ class SearchCustomerRequest extends AbstractStructBase
     /**
      * Set calledFromOrder value
      * @param bool $calledFromOrder
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
     public function setCalledFromOrder(?bool $calledFromOrder = false): self
     {
@@ -439,7 +439,7 @@ class SearchCustomerRequest extends AbstractStructBase
     /**
      * Set calledFromOrderUtils value
      * @param bool $calledFromOrderUtils
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
     public function setCalledFromOrderUtils(?bool $calledFromOrderUtils = false): self
     {
@@ -462,7 +462,7 @@ class SearchCustomerRequest extends AbstractStructBase
     /**
      * Set includeLockedCustomers value
      * @param bool $includeLockedCustomers
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
     public function setIncludeLockedCustomers(?bool $includeLockedCustomers = null): self
     {
@@ -485,7 +485,7 @@ class SearchCustomerRequest extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
     public function setIban(?string $iban = null): self
     {
@@ -508,7 +508,7 @@ class SearchCustomerRequest extends AbstractStructBase
     /**
      * Set creditCard value
      * @param string $creditCard
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerRequest
      */
     public function setCreditCard(?string $creditCard = null): self
     {

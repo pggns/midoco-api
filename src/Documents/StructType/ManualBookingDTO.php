@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -247,7 +247,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set automaticVat value
      * @param bool $automaticVat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setAutomaticVat(?bool $automaticVat = null): self
     {
@@ -270,7 +270,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set batchId value
      * @param int $batchId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setBatchId(?int $batchId = null): self
     {
@@ -293,7 +293,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set bookingAmount value
      * @param float $bookingAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setBookingAmount(?float $bookingAmount = null): self
     {
@@ -316,7 +316,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set bookingPeriod value
      * @param int $bookingPeriod
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setBookingPeriod(?int $bookingPeriod = null): self
     {
@@ -339,7 +339,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set bookingText value
      * @param string $bookingText
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setBookingText(?string $bookingText = null): self
     {
@@ -362,7 +362,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -385,7 +385,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -408,7 +408,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set costUnit value
      * @param string $costUnit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setCostUnit(?string $costUnit = null): self
     {
@@ -431,7 +431,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set crc32 value
      * @param string $crc32
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setCrc32(?string $crc32 = null): self
     {
@@ -454,7 +454,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -477,7 +477,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set creditEntry value
      * @param string $creditEntry
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setCreditEntry(?string $creditEntry = null): self
     {
@@ -500,7 +500,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -523,7 +523,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -546,7 +546,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set debitEntry value
      * @param string $debitEntry
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setDebitEntry(?string $debitEntry = null): self
     {
@@ -569,7 +569,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -592,7 +592,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -615,7 +615,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -638,7 +638,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -661,7 +661,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -684,7 +684,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -707,7 +707,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set reverseChargeCountry value
      * @param string $reverseChargeCountry
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setReverseChargeCountry(?string $reverseChargeCountry = null): self
     {
@@ -730,7 +730,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set skontoAmount value
      * @param float $skontoAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setSkontoAmount(?float $skontoAmount = null): self
     {
@@ -753,7 +753,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set skontoVatAmount value
      * @param float $skontoVatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setSkontoVatAmount(?float $skontoVatAmount = null): self
     {
@@ -776,7 +776,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -799,7 +799,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -822,7 +822,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setVatId(?string $vatId = null): self
     {
@@ -845,7 +845,7 @@ class ManualBookingDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualBookingDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

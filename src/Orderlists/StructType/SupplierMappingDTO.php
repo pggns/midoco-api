@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class SupplierMappingDTO extends AbstractStructBase
     /**
      * Set crsNameIn value
      * @param string $crsNameIn
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMappingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMappingDTO
      */
     public function setCrsNameIn(?string $crsNameIn = null): self
     {
@@ -150,7 +150,7 @@ class SupplierMappingDTO extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMappingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMappingDTO
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -173,7 +173,7 @@ class SupplierMappingDTO extends AbstractStructBase
     /**
      * Set isInheritable value
      * @param bool $isInheritable
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMappingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMappingDTO
      */
     public function setIsInheritable(?bool $isInheritable = null): self
     {
@@ -196,7 +196,7 @@ class SupplierMappingDTO extends AbstractStructBase
     /**
      * Set mappingId value
      * @param int $mappingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMappingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMappingDTO
      */
     public function setMappingId(?int $mappingId = null): self
     {
@@ -219,7 +219,7 @@ class SupplierMappingDTO extends AbstractStructBase
     /**
      * Set sourceExtSystemIn value
      * @param string $sourceExtSystemIn
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMappingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMappingDTO
      */
     public function setSourceExtSystemIn(?string $sourceExtSystemIn = null): self
     {
@@ -242,7 +242,7 @@ class SupplierMappingDTO extends AbstractStructBase
     /**
      * Set supplierIdIn value
      * @param string $supplierIdIn
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMappingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMappingDTO
      */
     public function setSupplierIdIn(?string $supplierIdIn = null): self
     {
@@ -265,7 +265,7 @@ class SupplierMappingDTO extends AbstractStructBase
     /**
      * Set supplierIdOut value
      * @param string $supplierIdOut
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMappingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMappingDTO
      */
     public function setSupplierIdOut(?string $supplierIdOut = null): self
     {
@@ -288,7 +288,7 @@ class SupplierMappingDTO extends AbstractStructBase
     /**
      * Set traveltypeIn value
      * @param string $traveltypeIn
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMappingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMappingDTO
      */
     public function setTraveltypeIn(?string $traveltypeIn = null): self
     {
@@ -311,7 +311,7 @@ class SupplierMappingDTO extends AbstractStructBase
     /**
      * Set traveltypeOut value
      * @param string $traveltypeOut
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMappingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMappingDTO
      */
     public function setTraveltypeOut(?string $traveltypeOut = null): self
     {
@@ -334,7 +334,7 @@ class SupplierMappingDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMappingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMappingDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -357,7 +357,7 @@ class SupplierMappingDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMappingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMappingDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -380,7 +380,7 @@ class SupplierMappingDTO extends AbstractStructBase
     /**
      * Set validUntil value
      * @param string $validUntil
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMappingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMappingDTO
      */
     public function setValidUntil(?string $validUntil = null): self
     {

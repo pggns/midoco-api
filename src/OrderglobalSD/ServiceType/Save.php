@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\ServiceType;
+namespace Pggns\MidocoApi\OrderglobalSD\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Save extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\ServiceType\Save
+     * @return \Pggns\MidocoApi\OrderglobalSD\ServiceType\Save
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveServiceStatusRequest $paramSaveServiceStatusRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveServiceStatusResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\SaveServiceStatusRequest $paramSaveServiceStatusRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SaveServiceStatusResponse|bool
      */
-    public function saveServiceStatus(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveServiceStatusRequest $paramSaveServiceStatusRequest)
+    public function saveServiceStatus(\Pggns\MidocoApi\OrderglobalSD\StructType\SaveServiceStatusRequest $paramSaveServiceStatusRequest)
     {
         try {
             $this->setResult($resultSaveServiceStatus = $this->getSoapClient()->__soapCall('saveServiceStatus', [
@@ -58,15 +58,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveCurrencyRequest $paramSaveCurrencyRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveCurrencyResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\SaveCurrencyRequest $paramSaveCurrencyRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SaveCurrencyResponse|bool
      */
-    public function saveCurrency(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveCurrencyRequest $paramSaveCurrencyRequest)
+    public function saveCurrency(\Pggns\MidocoApi\OrderglobalSD\StructType\SaveCurrencyRequest $paramSaveCurrencyRequest)
     {
         try {
             $this->setResult($resultSaveCurrency = $this->getSoapClient()->__soapCall('saveCurrency', [
@@ -85,15 +85,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveDbiUpdateRequest $paramSaveDbiUpdateRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveDbiUpdateResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\SaveDbiUpdateRequest $paramSaveDbiUpdateRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SaveDbiUpdateResponse|bool
      */
-    public function saveDbiUpdate(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveDbiUpdateRequest $paramSaveDbiUpdateRequest)
+    public function saveDbiUpdate(\Pggns\MidocoApi\OrderglobalSD\StructType\SaveDbiUpdateRequest $paramSaveDbiUpdateRequest)
     {
         try {
             $this->setResult($resultSaveDbiUpdate = $this->getSoapClient()->__soapCall('saveDbiUpdate', [
@@ -112,15 +112,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveDbiDefsRequest $paramSaveDbiDefsRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveDbiDefsResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\SaveDbiDefsRequest $paramSaveDbiDefsRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SaveDbiDefsResponse|bool
      */
-    public function saveDbiDefs(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveDbiDefsRequest $paramSaveDbiDefsRequest)
+    public function saveDbiDefs(\Pggns\MidocoApi\OrderglobalSD\StructType\SaveDbiDefsRequest $paramSaveDbiDefsRequest)
     {
         try {
             $this->setResult($resultSaveDbiDefs = $this->getSoapClient()->__soapCall('saveDbiDefs', [
@@ -137,7 +137,7 @@ class Save extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveCurrencyResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveDbiDefsResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveDbiUpdateResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveServiceStatusResponse
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SaveCurrencyResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\SaveDbiDefsResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\SaveDbiUpdateResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\SaveServiceStatusResponse
      */
     public function getResult()
     {

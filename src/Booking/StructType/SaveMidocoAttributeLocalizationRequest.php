@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
      * The MidocoSystemAttributeLocalization
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeLocalization
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO|null
+     * @var \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO $MidocoSystemAttributeLocalization = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO $MidocoSystemAttributeLocalization = null;
     /**
      * The isNew
      * @var bool|null
@@ -29,10 +29,10 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
      * Constructor method for SaveMidocoAttributeLocalizationRequest
      * @uses SaveMidocoAttributeLocalizationRequest::setMidocoSystemAttributeLocalization()
      * @uses SaveMidocoAttributeLocalizationRequest::setIsNew()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     * @param \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
      * @param bool $isNew
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null, ?bool $isNew = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null, ?bool $isNew = null)
     {
         $this
             ->setMidocoSystemAttributeLocalization($midocoSystemAttributeLocalization)
@@ -40,18 +40,18 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSystemAttributeLocalization value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO|null
+     * @return \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO|null
      */
-    public function getMidocoSystemAttributeLocalization(): ?\Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO
+    public function getMidocoSystemAttributeLocalization(): ?\Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO
     {
         return $this->MidocoSystemAttributeLocalization;
     }
     /**
      * Set MidocoSystemAttributeLocalization value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SaveMidocoAttributeLocalizationRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     * @return \Pggns\MidocoApi\Booking\StructType\SaveMidocoAttributeLocalizationRequest
      */
-    public function setMidocoSystemAttributeLocalization(?\Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null): self
+    public function setMidocoSystemAttributeLocalization(?\Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null): self
     {
         $this->MidocoSystemAttributeLocalization = $midocoSystemAttributeLocalization;
         
@@ -68,7 +68,7 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
     /**
      * Set isNew value
      * @param bool $isNew
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SaveMidocoAttributeLocalizationRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SaveMidocoAttributeLocalizationRequest
      */
     public function setIsNew(?bool $isNew = null): self
     {

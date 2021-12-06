@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CreateUserSessionResponse extends AbstractStructBase
     /**
      * Set sessionId value
      * @param string $sessionId
-     * @return \Pggns\MidocoApi\Api\System\StructType\CreateUserSessionResponse
+     * @return \Pggns\MidocoApi\System\StructType\CreateUserSessionResponse
      */
     public function setSessionId(?string $sessionId = null): self
     {

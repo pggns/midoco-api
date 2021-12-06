@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class NovomindRequest extends AbstractStructBase
     /**
      * Set accessToken value
      * @param string $accessToken
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\NovomindRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\NovomindRequest
      */
     public function setAccessToken(?string $accessToken = null): self
     {
@@ -94,7 +94,7 @@ class NovomindRequest extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\NovomindRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\NovomindRequest
      */
     public function setUrl(?string $url = null): self
     {
@@ -117,7 +117,7 @@ class NovomindRequest extends AbstractStructBase
     /**
      * Set methodType value
      * @param string $methodType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\NovomindRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\NovomindRequest
      */
     public function setMethodType(?string $methodType = null): self
     {
@@ -140,7 +140,7 @@ class NovomindRequest extends AbstractStructBase
     /**
      * Set method value
      * @param string $method
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\NovomindRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\NovomindRequest
      */
     public function setMethod(?string $method = null): self
     {
@@ -163,7 +163,7 @@ class NovomindRequest extends AbstractStructBase
     /**
      * Set data value
      * @param string $data
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\NovomindRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\NovomindRequest
      */
     public function setData(?string $data = null): self
     {

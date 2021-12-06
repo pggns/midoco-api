@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -198,7 +198,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set amountPerBatch value
      * @param float $amountPerBatch
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setAmountPerBatch(?float $amountPerBatch = null): self
     {
@@ -221,7 +221,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set batchQuantity value
      * @param int $batchQuantity
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setBatchQuantity(?int $batchQuantity = null): self
     {
@@ -244,7 +244,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setChargeId(?int $chargeId = null): self
     {
@@ -267,7 +267,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -290,7 +290,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set includedQuantity value
      * @param int $includedQuantity
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setIncludedQuantity(?int $includedQuantity = null): self
     {
@@ -313,7 +313,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set isCredit value
      * @param bool $isCredit
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setIsCredit(?bool $isCredit = null): self
     {
@@ -336,7 +336,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set isInteractive value
      * @param bool $isInteractive
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setIsInteractive(?bool $isInteractive = null): self
     {
@@ -359,7 +359,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set lastExecDate value
      * @param string $lastExecDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setLastExecDate(?string $lastExecDate = null): self
     {
@@ -382,7 +382,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set lastExecUserId value
      * @param int $lastExecUserId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setLastExecUserId(?int $lastExecUserId = null): self
     {
@@ -405,7 +405,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set modulId value
      * @param string $modulId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setModulId(?string $modulId = null): self
     {
@@ -428,7 +428,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set nettoAmount value
      * @param float $nettoAmount
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setNettoAmount(?float $nettoAmount = null): self
     {
@@ -451,7 +451,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -474,7 +474,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set schedulePeriod value
      * @param int $schedulePeriod
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setSchedulePeriod(?int $schedulePeriod = null): self
     {
@@ -497,7 +497,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set settlementType value
      * @param int $settlementType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setSettlementType(?int $settlementType = null): self
     {
@@ -520,7 +520,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -543,7 +543,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -566,7 +566,7 @@ class SettlementChargeDTO extends AbstractStructBase
     /**
      * Set useVat value
      * @param bool $useVat
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlementChargeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlementChargeDTO
      */
     public function setUseVat(?bool $useVat = null): self
     {

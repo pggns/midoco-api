@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -33,9 +33,9 @@ class SendBatchInvoiceEmailRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: mail:MidocoMailMessage
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
     /**
      * Constructor method for SendBatchInvoiceEmailRequest
      * @uses SendBatchInvoiceEmailRequest::setDocumentIds()
@@ -43,9 +43,9 @@ class SendBatchInvoiceEmailRequest extends AbstractStructBase
      * @uses SendBatchInvoiceEmailRequest::setMidocoMailMessage()
      * @param int[] $documentIds
      * @param bool $sendOneDocumentPerEmail
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
      */
-    public function __construct(?array $documentIds = null, ?bool $sendOneDocumentPerEmail = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null)
+    public function __construct(?array $documentIds = null, ?bool $sendOneDocumentPerEmail = null, ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null)
     {
         $this
             ->setDocumentIds($documentIds)
@@ -90,7 +90,7 @@ class SendBatchInvoiceEmailRequest extends AbstractStructBase
      * Set documentIds value
      * @throws InvalidArgumentException
      * @param int[] $documentIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SendBatchInvoiceEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SendBatchInvoiceEmailRequest
      */
     public function setDocumentIds(?array $documentIds = null): self
     {
@@ -106,7 +106,7 @@ class SendBatchInvoiceEmailRequest extends AbstractStructBase
      * Add item to documentIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SendBatchInvoiceEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SendBatchInvoiceEmailRequest
      */
     public function addToDocumentIds(int $item): self
     {
@@ -129,7 +129,7 @@ class SendBatchInvoiceEmailRequest extends AbstractStructBase
     /**
      * Set sendOneDocumentPerEmail value
      * @param bool $sendOneDocumentPerEmail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SendBatchInvoiceEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SendBatchInvoiceEmailRequest
      */
     public function setSendOneDocumentPerEmail(?bool $sendOneDocumentPerEmail = null): self
     {
@@ -143,18 +143,18 @@ class SendBatchInvoiceEmailRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMailMessage value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
     {
         return $this->MidocoMailMessage;
     }
     /**
      * Set MidocoMailMessage value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SendBatchInvoiceEmailRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @return \Pggns\MidocoApi\Order\StructType\SendBatchInvoiceEmailRequest
      */
-    public function setMidocoMailMessage(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
+    public function setMidocoMailMessage(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
     {
         $this->MidocoMailMessage = $midocoMailMessage;
         

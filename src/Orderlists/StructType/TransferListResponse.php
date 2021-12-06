@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class TransferListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTransferList
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListType[]
      */
     protected ?array $MidocoTransferList = null;
     /**
@@ -33,7 +33,7 @@ class TransferListResponse extends AbstractStructBase
      * Constructor method for TransferListResponse
      * @uses TransferListResponse::setMidocoTransferList()
      * @uses TransferListResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListType[] $midocoTransferList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListType[] $midocoTransferList
      * @param int $noOfResults
      */
     public function __construct(?array $midocoTransferList = null, ?int $noOfResults = null)
@@ -44,7 +44,7 @@ class TransferListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTransferList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListType[]
      */
     public function getMidocoTransferList(): ?array
     {
@@ -65,12 +65,12 @@ class TransferListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $transferListResponseMidocoTransferListItem) {
             // validation for constraint: itemType
-            if (!$transferListResponseMidocoTransferListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListType) {
+            if (!$transferListResponseMidocoTransferListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListType) {
                 $invalidValues[] = is_object($transferListResponseMidocoTransferListItem) ? get_class($transferListResponseMidocoTransferListItem) : sprintf('%s(%s)', gettype($transferListResponseMidocoTransferListItem), var_export($transferListResponseMidocoTransferListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTransferList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTransferList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -79,8 +79,8 @@ class TransferListResponse extends AbstractStructBase
     /**
      * Set MidocoTransferList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListType[] $midocoTransferList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListType[] $midocoTransferList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferListResponse
      */
     public function setMidocoTransferList(?array $midocoTransferList = null): self
     {
@@ -95,14 +95,14 @@ class TransferListResponse extends AbstractStructBase
     /**
      * Add item to MidocoTransferList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferListResponse
      */
-    public function addToMidocoTransferList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListType $item): self
+    public function addToMidocoTransferList(\Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListType) {
-            throw new InvalidArgumentException(sprintf('The MidocoTransferList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListType) {
+            throw new InvalidArgumentException(sprintf('The MidocoTransferList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTransferList[] = $item;
         
@@ -119,7 +119,7 @@ class TransferListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

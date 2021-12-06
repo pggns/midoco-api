@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Book extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Book
+     * @return \Pggns\MidocoApi\Order\ServiceType\Book
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -32,15 +32,15 @@ class Book extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BookSupplierAgencySettlementBookingRequest $paramBookSupplierAgencySettlementBookingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookSupplierAgencySettlementBookingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\BookSupplierAgencySettlementBookingRequest $paramBookSupplierAgencySettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookSupplierAgencySettlementBookingResponse|bool
      */
-    public function bookSupplierAgencySettlementBooking(\Pggns\MidocoApi\Api\Order\StructType\BookSupplierAgencySettlementBookingRequest $paramBookSupplierAgencySettlementBookingRequest)
+    public function bookSupplierAgencySettlementBooking(\Pggns\MidocoApi\Order\StructType\BookSupplierAgencySettlementBookingRequest $paramBookSupplierAgencySettlementBookingRequest)
     {
         try {
             $this->setResult($resultBookSupplierAgencySettlementBooking = $this->getSoapClient()->__soapCall('bookSupplierAgencySettlementBooking', [
@@ -59,15 +59,15 @@ class Book extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BookAdviceSettlementRequest $paramBookAdviceSettlementRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookAdviceSettlementResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\BookAdviceSettlementRequest $paramBookAdviceSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookAdviceSettlementResponse|bool
      */
-    public function bookAdviceSettlement(\Pggns\MidocoApi\Api\Order\StructType\BookAdviceSettlementRequest $paramBookAdviceSettlementRequest)
+    public function bookAdviceSettlement(\Pggns\MidocoApi\Order\StructType\BookAdviceSettlementRequest $paramBookAdviceSettlementRequest)
     {
         try {
             $this->setResult($resultBookAdviceSettlement = $this->getSoapClient()->__soapCall('bookAdviceSettlement', [
@@ -86,15 +86,15 @@ class Book extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BookPseudoRevenueBookingsRequest $paramBookPseudoRevenueBookingsRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookPseudoRevenueBookingsResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\BookPseudoRevenueBookingsRequest $paramBookPseudoRevenueBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookPseudoRevenueBookingsResponse|bool
      */
-    public function bookPseudoRevenueBookings(\Pggns\MidocoApi\Api\Order\StructType\BookPseudoRevenueBookingsRequest $paramBookPseudoRevenueBookingsRequest)
+    public function bookPseudoRevenueBookings(\Pggns\MidocoApi\Order\StructType\BookPseudoRevenueBookingsRequest $paramBookPseudoRevenueBookingsRequest)
     {
         try {
             $this->setResult($resultBookPseudoRevenueBookings = $this->getSoapClient()->__soapCall('bookPseudoRevenueBookings', [
@@ -114,15 +114,15 @@ class Book extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BookPaymentProviderSettlementBookingRequest $paramBookPaymentProviderSettlementBookingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookPaymentProviderSettlementBookingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\BookPaymentProviderSettlementBookingRequest $paramBookPaymentProviderSettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookPaymentProviderSettlementBookingResponse|bool
      */
-    public function bookPaymentProviderSettlementBooking(\Pggns\MidocoApi\Api\Order\StructType\BookPaymentProviderSettlementBookingRequest $paramBookPaymentProviderSettlementBookingRequest)
+    public function bookPaymentProviderSettlementBooking(\Pggns\MidocoApi\Order\StructType\BookPaymentProviderSettlementBookingRequest $paramBookPaymentProviderSettlementBookingRequest)
     {
         try {
             $this->setResult($resultBookPaymentProviderSettlementBooking = $this->getSoapClient()->__soapCall('bookPaymentProviderSettlementBooking', [
@@ -141,15 +141,15 @@ class Book extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BookMidocoVoucher4KickbackRequest $paramBookMidocoVoucher4KickbackRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookMidocoVoucher4KickbackResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\BookMidocoVoucher4KickbackRequest $paramBookMidocoVoucher4KickbackRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookMidocoVoucher4KickbackResponse|bool
      */
-    public function bookMidocoVoucher4Kickback(\Pggns\MidocoApi\Api\Order\StructType\BookMidocoVoucher4KickbackRequest $paramBookMidocoVoucher4KickbackRequest)
+    public function bookMidocoVoucher4Kickback(\Pggns\MidocoApi\Order\StructType\BookMidocoVoucher4KickbackRequest $paramBookMidocoVoucher4KickbackRequest)
     {
         try {
             $this->setResult($resultBookMidocoVoucher4Kickback = $this->getSoapClient()->__soapCall('bookMidocoVoucher4Kickback', [
@@ -166,7 +166,7 @@ class Book extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookAdviceSettlementResponse|\Pggns\MidocoApi\Api\Order\StructType\BookMidocoVoucher4KickbackResponse|\Pggns\MidocoApi\Api\Order\StructType\BookPaymentProviderSettlementBookingResponse|\Pggns\MidocoApi\Api\Order\StructType\BookPseudoRevenueBookingsResponse|\Pggns\MidocoApi\Api\Order\StructType\BookSupplierAgencySettlementBookingResponse
+     * @return \Pggns\MidocoApi\Order\StructType\BookAdviceSettlementResponse|\Pggns\MidocoApi\Order\StructType\BookMidocoVoucher4KickbackResponse|\Pggns\MidocoApi\Order\StructType\BookPaymentProviderSettlementBookingResponse|\Pggns\MidocoApi\Order\StructType\BookPseudoRevenueBookingsResponse|\Pggns\MidocoApi\Order\StructType\BookSupplierAgencySettlementBookingResponse
      */
     public function getResult()
     {

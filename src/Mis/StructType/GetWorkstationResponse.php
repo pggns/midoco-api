@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetWorkstationResponse extends AbstractStructBase
      * The MidocoWorkstation
      * Meta information extracted from the WSDL
      * - ref: MidocoWorkstation
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\WorkstationDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\WorkstationDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\WorkstationDTO $MidocoWorkstation = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\WorkstationDTO $MidocoWorkstation = null;
     /**
      * Constructor method for GetWorkstationResponse
      * @uses GetWorkstationResponse::setMidocoWorkstation()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\WorkstationDTO $midocoWorkstation
+     * @param \Pggns\MidocoApi\Mis\StructType\WorkstationDTO $midocoWorkstation
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\WorkstationDTO $midocoWorkstation = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\WorkstationDTO $midocoWorkstation = null)
     {
         $this
             ->setMidocoWorkstation($midocoWorkstation);
     }
     /**
      * Get MidocoWorkstation value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\WorkstationDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\WorkstationDTO|null
      */
-    public function getMidocoWorkstation(): ?\Pggns\MidocoApi\Api\Mis\StructType\WorkstationDTO
+    public function getMidocoWorkstation(): ?\Pggns\MidocoApi\Mis\StructType\WorkstationDTO
     {
         return $this->MidocoWorkstation;
     }
     /**
      * Set MidocoWorkstation value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\WorkstationDTO $midocoWorkstation
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetWorkstationResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\WorkstationDTO $midocoWorkstation
+     * @return \Pggns\MidocoApi\Mis\StructType\GetWorkstationResponse
      */
-    public function setMidocoWorkstation(?\Pggns\MidocoApi\Api\Mis\StructType\WorkstationDTO $midocoWorkstation = null): self
+    public function setMidocoWorkstation(?\Pggns\MidocoApi\Mis\StructType\WorkstationDTO $midocoWorkstation = null): self
     {
         $this->MidocoWorkstation = $midocoWorkstation;
         

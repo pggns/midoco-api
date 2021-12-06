@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveCcCardRequest extends AbstractStructBase
      * The MidocoCrmCcCard
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCcCard
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard $MidocoCrmCcCard = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard $MidocoCrmCcCard = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +29,10 @@ class SaveCcCardRequest extends AbstractStructBase
      * Constructor method for SaveCcCardRequest
      * @uses SaveCcCardRequest::setMidocoCrmCcCard()
      * @uses SaveCcCardRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard $midocoCrmCcCard
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard $midocoCrmCcCard
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard $midocoCrmCcCard = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard $midocoCrmCcCard = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoCrmCcCard($midocoCrmCcCard)
@@ -40,18 +40,18 @@ class SaveCcCardRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCcCard value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard|null
      */
-    public function getMidocoCrmCcCard(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard
+    public function getMidocoCrmCcCard(): ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard
     {
         return $this->MidocoCrmCcCard;
     }
     /**
      * Set MidocoCrmCcCard value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard $midocoCrmCcCard
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCcCardRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard $midocoCrmCcCard
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCcCardRequest
      */
-    public function setMidocoCrmCcCard(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard $midocoCrmCcCard = null): self
+    public function setMidocoCrmCcCard(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard $midocoCrmCcCard = null): self
     {
         $this->MidocoCrmCcCard = $midocoCrmCcCard;
         
@@ -68,7 +68,7 @@ class SaveCcCardRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCcCardRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCcCardRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

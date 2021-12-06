@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteAdapterAttrRequest extends AbstractStructBase
      * The MidocoAdapterAttr
      * Meta information extracted from the WSDL
      * - ref: MidocoAdapterAttr
-     * @var \Pggns\MidocoApi\Api\System\StructType\AdapterAttrDTO|null
+     * @var \Pggns\MidocoApi\System\StructType\AdapterAttrDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\System\StructType\AdapterAttrDTO $MidocoAdapterAttr = null;
+    protected ?\Pggns\MidocoApi\System\StructType\AdapterAttrDTO $MidocoAdapterAttr = null;
     /**
      * Constructor method for DeleteAdapterAttrRequest
      * @uses DeleteAdapterAttrRequest::setMidocoAdapterAttr()
-     * @param \Pggns\MidocoApi\Api\System\StructType\AdapterAttrDTO $midocoAdapterAttr
+     * @param \Pggns\MidocoApi\System\StructType\AdapterAttrDTO $midocoAdapterAttr
      */
-    public function __construct(?\Pggns\MidocoApi\Api\System\StructType\AdapterAttrDTO $midocoAdapterAttr = null)
+    public function __construct(?\Pggns\MidocoApi\System\StructType\AdapterAttrDTO $midocoAdapterAttr = null)
     {
         $this
             ->setMidocoAdapterAttr($midocoAdapterAttr);
     }
     /**
      * Get MidocoAdapterAttr value
-     * @return \Pggns\MidocoApi\Api\System\StructType\AdapterAttrDTO|null
+     * @return \Pggns\MidocoApi\System\StructType\AdapterAttrDTO|null
      */
-    public function getMidocoAdapterAttr(): ?\Pggns\MidocoApi\Api\System\StructType\AdapterAttrDTO
+    public function getMidocoAdapterAttr(): ?\Pggns\MidocoApi\System\StructType\AdapterAttrDTO
     {
         return $this->MidocoAdapterAttr;
     }
     /**
      * Set MidocoAdapterAttr value
-     * @param \Pggns\MidocoApi\Api\System\StructType\AdapterAttrDTO $midocoAdapterAttr
-     * @return \Pggns\MidocoApi\Api\System\StructType\DeleteAdapterAttrRequest
+     * @param \Pggns\MidocoApi\System\StructType\AdapterAttrDTO $midocoAdapterAttr
+     * @return \Pggns\MidocoApi\System\StructType\DeleteAdapterAttrRequest
      */
-    public function setMidocoAdapterAttr(?\Pggns\MidocoApi\Api\System\StructType\AdapterAttrDTO $midocoAdapterAttr = null): self
+    public function setMidocoAdapterAttr(?\Pggns\MidocoApi\System\StructType\AdapterAttrDTO $midocoAdapterAttr = null): self
     {
         $this->MidocoAdapterAttr = $midocoAdapterAttr;
         

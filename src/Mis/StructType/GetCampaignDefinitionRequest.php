@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetCampaignDefinitionRequest extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignDefinitionRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignDefinitionRequest
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -70,7 +70,7 @@ class GetCampaignDefinitionRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignDefinitionRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignDefinitionRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

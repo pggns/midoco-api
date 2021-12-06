@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SimuFeeRequest extends AbstractStructBase
     /**
      * Set orderNr value
      * @param int $orderNr
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SimuFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SimuFeeRequest
      */
     public function setOrderNr(?int $orderNr = null): self
     {
@@ -78,7 +78,7 @@ class SimuFeeRequest extends AbstractStructBase
     /**
      * Set feeGroup value
      * @param string $feeGroup
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SimuFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SimuFeeRequest
      */
     public function setFeeGroup(?string $feeGroup = null): self
     {
@@ -101,7 +101,7 @@ class SimuFeeRequest extends AbstractStructBase
     /**
      * Set newFeesOnly value
      * @param bool $newFeesOnly
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SimuFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SimuFeeRequest
      */
     public function setNewFeesOnly(?bool $newFeesOnly = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetCreditorRequest extends AbstractStructBase
     /**
      * Set creditorNo value
      * @param string $creditorNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCreditorRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCreditorRequest
      */
     public function setCreditorNo(?string $creditorNo = null): self
     {
@@ -70,7 +70,7 @@ class GetCreditorRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCreditorRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCreditorRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {

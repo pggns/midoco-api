@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,7 +17,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
      * The Attribute
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Attribute_1[]
+     * @var \Pggns\MidocoApi\Order\StructType\Attribute_1[]
      */
     protected ?array $Attribute = null;
     /**
@@ -179,7 +179,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
      * @uses MidocoAgencyProvisionDetails::setDestinationCode()
      * @uses MidocoAgencyProvisionDetails::setProvisionBaseAmount()
      * @uses MidocoAgencyProvisionDetails::setSupplierId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Attribute_1[] $attribute
+     * @param \Pggns\MidocoApi\Order\StructType\Attribute_1[] $attribute
      * @param int $orderNo
      * @param string $customerName
      * @param string $inkassoType
@@ -240,7 +240,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     }
     /**
      * Get Attribute value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Attribute_1[]
+     * @return \Pggns\MidocoApi\Order\StructType\Attribute_1[]
      */
     public function getAttribute(): ?array
     {
@@ -261,12 +261,12 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoAgencyProvisionDetailsAttributeItem) {
             // validation for constraint: itemType
-            if (!$midocoAgencyProvisionDetailsAttributeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\Attribute_1) {
+            if (!$midocoAgencyProvisionDetailsAttributeItem instanceof \Pggns\MidocoApi\Order\StructType\Attribute_1) {
                 $invalidValues[] = is_object($midocoAgencyProvisionDetailsAttributeItem) ? get_class($midocoAgencyProvisionDetailsAttributeItem) : sprintf('%s(%s)', gettype($midocoAgencyProvisionDetailsAttributeItem), var_export($midocoAgencyProvisionDetailsAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Attribute property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Attribute_1, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Attribute property can only contain items of type \Pggns\MidocoApi\Order\StructType\Attribute_1, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -275,8 +275,8 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set Attribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Attribute_1[] $attribute
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @param \Pggns\MidocoApi\Order\StructType\Attribute_1[] $attribute
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setAttribute(?array $attribute = null): self
     {
@@ -291,14 +291,14 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Add item to Attribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Attribute_1 $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @param \Pggns\MidocoApi\Order\StructType\Attribute_1 $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
-    public function addToAttribute(\Pggns\MidocoApi\Api\Order\StructType\Attribute_1 $item): self
+    public function addToAttribute(\Pggns\MidocoApi\Order\StructType\Attribute_1 $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\Attribute_1) {
-            throw new InvalidArgumentException(sprintf('The Attribute property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Attribute_1, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\Attribute_1) {
+            throw new InvalidArgumentException(sprintf('The Attribute property can only contain items of type \Pggns\MidocoApi\Order\StructType\Attribute_1, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Attribute[] = $item;
         
@@ -315,7 +315,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -338,7 +338,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -361,7 +361,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set inkassoType value
      * @param string $inkassoType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setInkassoType(?string $inkassoType = null): self
     {
@@ -384,7 +384,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -407,7 +407,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -430,7 +430,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set provisionAmount value
      * @param float $provisionAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setProvisionAmount(?float $provisionAmount = null): self
     {
@@ -453,7 +453,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set provisionVatAmount value
      * @param float $provisionVatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setProvisionVatAmount(?float $provisionVatAmount = null): self
     {
@@ -476,7 +476,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -499,7 +499,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set inkassoPrice value
      * @param float $inkassoPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setInkassoPrice(?float $inkassoPrice = null): self
     {
@@ -522,7 +522,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -545,7 +545,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -568,7 +568,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set provisionInsuranceAmount value
      * @param float $provisionInsuranceAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setProvisionInsuranceAmount(?float $provisionInsuranceAmount = null): self
     {
@@ -591,7 +591,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set isStorno value
      * @param bool $isStorno
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setIsStorno(?bool $isStorno = null): self
     {
@@ -614,7 +614,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -637,7 +637,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setDescription(?string $description = null): self
     {
@@ -660,7 +660,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setVatPercent(?float $vatPercent = null): self
     {
@@ -683,7 +683,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set extId value
      * @param string $extId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setExtId(?string $extId = null): self
     {
@@ -706,7 +706,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set includedVatAmount value
      * @param float $includedVatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setIncludedVatAmount(?float $includedVatAmount = null): self
     {
@@ -729,7 +729,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set filekey value
      * @param string $filekey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setFilekey(?string $filekey = null): self
     {
@@ -752,7 +752,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set taxPercent value
      * @param float $taxPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setTaxPercent(?float $taxPercent = null): self
     {
@@ -775,7 +775,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setProductType(?string $productType = null): self
     {
@@ -798,7 +798,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set areaDescription value
      * @param string $areaDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setAreaDescription(?string $areaDescription = null): self
     {
@@ -821,7 +821,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set externalId value
      * @param string $externalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setExternalId(?string $externalId = null): self
     {
@@ -844,7 +844,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -867,7 +867,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set provisionBaseAmount value
      * @param float $provisionBaseAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setProvisionBaseAmount(?float $provisionBaseAmount = null): self
     {
@@ -890,7 +890,7 @@ class MidocoAgencyProvisionDetails extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails
      */
     public function setSupplierId(?string $supplierId = null): self
     {

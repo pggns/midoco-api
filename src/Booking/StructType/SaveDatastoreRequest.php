@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveDatastoreRequest extends AbstractStructBase
      * The MidocoDatastore
      * Meta information extracted from the WSDL
      * - ref: MidocoDatastore
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\DatastoreDTO|null
+     * @var \Pggns\MidocoApi\Booking\StructType\DatastoreDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\DatastoreDTO $MidocoDatastore = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\DatastoreDTO $MidocoDatastore = null;
     /**
      * Constructor method for SaveDatastoreRequest
      * @uses SaveDatastoreRequest::setMidocoDatastore()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\DatastoreDTO $midocoDatastore
+     * @param \Pggns\MidocoApi\Booking\StructType\DatastoreDTO $midocoDatastore
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\DatastoreDTO $midocoDatastore = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\DatastoreDTO $midocoDatastore = null)
     {
         $this
             ->setMidocoDatastore($midocoDatastore);
     }
     /**
      * Get MidocoDatastore value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DatastoreDTO|null
+     * @return \Pggns\MidocoApi\Booking\StructType\DatastoreDTO|null
      */
-    public function getMidocoDatastore(): ?\Pggns\MidocoApi\Api\Booking\StructType\DatastoreDTO
+    public function getMidocoDatastore(): ?\Pggns\MidocoApi\Booking\StructType\DatastoreDTO
     {
         return $this->MidocoDatastore;
     }
     /**
      * Set MidocoDatastore value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\DatastoreDTO $midocoDatastore
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SaveDatastoreRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\DatastoreDTO $midocoDatastore
+     * @return \Pggns\MidocoApi\Booking\StructType\SaveDatastoreRequest
      */
-    public function setMidocoDatastore(?\Pggns\MidocoApi\Api\Booking\StructType\DatastoreDTO $midocoDatastore = null): self
+    public function setMidocoDatastore(?\Pggns\MidocoApi\Booking\StructType\DatastoreDTO $midocoDatastore = null): self
     {
         $this->MidocoDatastore = $midocoDatastore;
         

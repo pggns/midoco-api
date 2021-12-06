@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoSelectableItem extends AbstractStructBase
     /**
      * Set isSelected value
      * @param bool $isSelected
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoSelectableItem
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoSelectableItem
      */
     public function setIsSelected(?bool $isSelected = null): self
     {
@@ -70,7 +70,7 @@ class MidocoSelectableItem extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoSelectableItem
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoSelectableItem
      */
     public function setDescription(?string $description = null): self
     {

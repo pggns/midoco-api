@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetMdcSettlementBillingRequest extends AbstractStructBase
     /**
      * Set mdcSettlementBillingId value
      * @param int $mdcSettlementBillingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingRequest
      */
     public function setMdcSettlementBillingId(int $mdcSettlementBillingId): self
     {

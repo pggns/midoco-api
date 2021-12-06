@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class SaveCampaignRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoMisCampaign
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $MidocoMisCampaign = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $MidocoMisCampaign = null;
     /**
      * The orgUnit
      * Meta information extracted from the WSDL
@@ -51,7 +51,7 @@ class SaveCampaignRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: CustomerReference
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference[]
+     * @var \Pggns\MidocoApi\Mis\StructType\CustomerReference[]
      */
     protected ?array $CustomerReference = null;
     /**
@@ -67,14 +67,14 @@ class SaveCampaignRequest extends AbstractStructBase
      * @uses SaveCampaignRequest::setEstimatedOrgUnit()
      * @uses SaveCampaignRequest::setCustomerReference()
      * @uses SaveCampaignRequest::setType()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
      * @param string[] $orgUnit
      * @param int[] $estimatedNoOfResults
      * @param string[] $estimatedOrgUnit
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference[] $customerReference
+     * @param \Pggns\MidocoApi\Mis\StructType\CustomerReference[] $customerReference
      * @param string $type
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null, ?array $orgUnit = null, ?array $estimatedNoOfResults = null, ?array $estimatedOrgUnit = null, ?array $customerReference = null, ?string $type = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null, ?array $orgUnit = null, ?array $estimatedNoOfResults = null, ?array $estimatedOrgUnit = null, ?array $customerReference = null, ?string $type = null)
     {
         $this
             ->setMidocoMisCampaign($midocoMisCampaign)
@@ -86,18 +86,18 @@ class SaveCampaignRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMisCampaign value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign|null
      */
-    public function getMidocoMisCampaign(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign
+    public function getMidocoMisCampaign(): ?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign
     {
         return $this->MidocoMisCampaign;
     }
     /**
      * Set MidocoMisCampaign value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignRequest
      */
-    public function setMidocoMisCampaign(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null): self
+    public function setMidocoMisCampaign(?\Pggns\MidocoApi\Mis\StructType\MidocoMisCampaign $midocoMisCampaign = null): self
     {
         $this->MidocoMisCampaign = $midocoMisCampaign;
         
@@ -141,7 +141,7 @@ class SaveCampaignRequest extends AbstractStructBase
      * Set orgUnit value
      * @throws InvalidArgumentException
      * @param string[] $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignRequest
      */
     public function setOrgUnit(?array $orgUnit = null): self
     {
@@ -157,7 +157,7 @@ class SaveCampaignRequest extends AbstractStructBase
      * Add item to orgUnit value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignRequest
      */
     public function addToOrgUnit(string $item): self
     {
@@ -207,7 +207,7 @@ class SaveCampaignRequest extends AbstractStructBase
      * Set estimatedNoOfResults value
      * @throws InvalidArgumentException
      * @param int[] $estimatedNoOfResults
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignRequest
      */
     public function setEstimatedNoOfResults(?array $estimatedNoOfResults = null): self
     {
@@ -223,7 +223,7 @@ class SaveCampaignRequest extends AbstractStructBase
      * Add item to estimatedNoOfResults value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignRequest
      */
     public function addToEstimatedNoOfResults(int $item): self
     {
@@ -273,7 +273,7 @@ class SaveCampaignRequest extends AbstractStructBase
      * Set estimatedOrgUnit value
      * @throws InvalidArgumentException
      * @param string[] $estimatedOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignRequest
      */
     public function setEstimatedOrgUnit(?array $estimatedOrgUnit = null): self
     {
@@ -289,7 +289,7 @@ class SaveCampaignRequest extends AbstractStructBase
      * Add item to estimatedOrgUnit value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignRequest
      */
     public function addToEstimatedOrgUnit(string $item): self
     {
@@ -303,7 +303,7 @@ class SaveCampaignRequest extends AbstractStructBase
     }
     /**
      * Get CustomerReference value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference[]
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerReference[]
      */
     public function getCustomerReference(): ?array
     {
@@ -324,12 +324,12 @@ class SaveCampaignRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveCampaignRequestCustomerReferenceItem) {
             // validation for constraint: itemType
-            if (!$saveCampaignRequestCustomerReferenceItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference) {
+            if (!$saveCampaignRequestCustomerReferenceItem instanceof \Pggns\MidocoApi\Mis\StructType\CustomerReference) {
                 $invalidValues[] = is_object($saveCampaignRequestCustomerReferenceItem) ? get_class($saveCampaignRequestCustomerReferenceItem) : sprintf('%s(%s)', gettype($saveCampaignRequestCustomerReferenceItem), var_export($saveCampaignRequestCustomerReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CustomerReference property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CustomerReference property can only contain items of type \Pggns\MidocoApi\Mis\StructType\CustomerReference, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -338,8 +338,8 @@ class SaveCampaignRequest extends AbstractStructBase
     /**
      * Set CustomerReference value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference[] $customerReference
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\CustomerReference[] $customerReference
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignRequest
      */
     public function setCustomerReference(?array $customerReference = null): self
     {
@@ -354,14 +354,14 @@ class SaveCampaignRequest extends AbstractStructBase
     /**
      * Add item to CustomerReference value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\CustomerReference $item
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignRequest
      */
-    public function addToCustomerReference(\Pggns\MidocoApi\Api\Mis\StructType\CustomerReference $item): self
+    public function addToCustomerReference(\Pggns\MidocoApi\Mis\StructType\CustomerReference $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference) {
-            throw new InvalidArgumentException(sprintf('The CustomerReference property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\CustomerReference) {
+            throw new InvalidArgumentException(sprintf('The CustomerReference property can only contain items of type \Pggns\MidocoApi\Mis\StructType\CustomerReference, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CustomerReference[] = $item;
         
@@ -378,7 +378,7 @@ class SaveCampaignRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignRequest
      */
     public function setType(?string $type = null): self
     {

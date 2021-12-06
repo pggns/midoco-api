@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetMfLocalRequest extends AbstractStructBase
      * The MidocoMfLocal
      * Meta information extracted from the WSDL
      * - ref: MidocoMfLocal
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\MidocoMfLocal|null
+     * @var \Pggns\MidocoApi\Booking\StructType\MidocoMfLocal|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\MidocoMfLocal $MidocoMfLocal = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\MidocoMfLocal $MidocoMfLocal = null;
     /**
      * The unitName
      * @var string|null
@@ -29,10 +29,10 @@ class GetMfLocalRequest extends AbstractStructBase
      * Constructor method for GetMfLocalRequest
      * @uses GetMfLocalRequest::setMidocoMfLocal()
      * @uses GetMfLocalRequest::setUnitName()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoMfLocal $midocoMfLocal
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoMfLocal $midocoMfLocal
      * @param string $unitName
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\MidocoMfLocal $midocoMfLocal = null, ?string $unitName = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\MidocoMfLocal $midocoMfLocal = null, ?string $unitName = null)
     {
         $this
             ->setMidocoMfLocal($midocoMfLocal)
@@ -40,18 +40,18 @@ class GetMfLocalRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMfLocal value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoMfLocal|null
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoMfLocal|null
      */
-    public function getMidocoMfLocal(): ?\Pggns\MidocoApi\Api\Booking\StructType\MidocoMfLocal
+    public function getMidocoMfLocal(): ?\Pggns\MidocoApi\Booking\StructType\MidocoMfLocal
     {
         return $this->MidocoMfLocal;
     }
     /**
      * Set MidocoMfLocal value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoMfLocal $midocoMfLocal
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetMfLocalRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoMfLocal $midocoMfLocal
+     * @return \Pggns\MidocoApi\Booking\StructType\GetMfLocalRequest
      */
-    public function setMidocoMfLocal(?\Pggns\MidocoApi\Api\Booking\StructType\MidocoMfLocal $midocoMfLocal = null): self
+    public function setMidocoMfLocal(?\Pggns\MidocoApi\Booking\StructType\MidocoMfLocal $midocoMfLocal = null): self
     {
         $this->MidocoMfLocal = $midocoMfLocal;
         
@@ -68,7 +68,7 @@ class GetMfLocalRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetMfLocalRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\GetMfLocalRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

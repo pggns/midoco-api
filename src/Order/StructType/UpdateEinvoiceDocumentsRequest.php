@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -85,7 +85,7 @@ class UpdateEinvoiceDocumentsRequest extends AbstractStructBase
      * Set einvoiceId value
      * @throws InvalidArgumentException
      * @param int[] $einvoiceId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateEinvoiceDocumentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateEinvoiceDocumentsRequest
      */
     public function setEinvoiceId(?array $einvoiceId = null): self
     {
@@ -101,7 +101,7 @@ class UpdateEinvoiceDocumentsRequest extends AbstractStructBase
      * Add item to einvoiceId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateEinvoiceDocumentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateEinvoiceDocumentsRequest
      */
     public function addToEinvoiceId(int $item): self
     {
@@ -124,7 +124,7 @@ class UpdateEinvoiceDocumentsRequest extends AbstractStructBase
     /**
      * Set provisionBy value
      * @param int $provisionBy
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateEinvoiceDocumentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateEinvoiceDocumentsRequest
      */
     public function setProvisionBy(?int $provisionBy = null): self
     {
@@ -147,7 +147,7 @@ class UpdateEinvoiceDocumentsRequest extends AbstractStructBase
     /**
      * Set provisionTimestamp value
      * @param string $provisionTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateEinvoiceDocumentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateEinvoiceDocumentsRequest
      */
     public function setProvisionTimestamp(?string $provisionTimestamp = null): self
     {

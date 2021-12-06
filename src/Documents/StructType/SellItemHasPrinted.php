@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class SellItemHasPrinted extends AbstractStructBase
     /**
      * Set sellItemId value
      * @param int $sellItemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemHasPrinted
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemHasPrinted
      */
     public function setSellItemId(?int $sellItemId = null): self
     {
@@ -72,7 +72,7 @@ class SellItemHasPrinted extends AbstractStructBase
     /**
      * Set hasPrintedDocument value
      * @param bool $hasPrintedDocument
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemHasPrinted
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemHasPrinted
      */
     public function setHasPrintedDocument(?bool $hasPrintedDocument = false): self
     {

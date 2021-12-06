@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class ReceiptOnlinePaymentInfo extends OnlinePaymentInfoType
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: crm:MidocoCcToken
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCcToken[]
      */
     protected ?array $MidocoCcToken = null;
     /**
@@ -43,7 +43,7 @@ class ReceiptOnlinePaymentInfo extends OnlinePaymentInfoType
      * @uses ReceiptOnlinePaymentInfo::setCcValidMonth()
      * @uses ReceiptOnlinePaymentInfo::setCcValidYear()
      * @uses ReceiptOnlinePaymentInfo::setCcAutorisationCode()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken[] $midocoCcToken
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCcToken[] $midocoCcToken
      * @param int $ccValidMonth
      * @param int $ccValidYear
      * @param string $ccAutorisationCode
@@ -58,7 +58,7 @@ class ReceiptOnlinePaymentInfo extends OnlinePaymentInfoType
     }
     /**
      * Get MidocoCcToken value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCcToken[]
      */
     public function getMidocoCcToken(): ?array
     {
@@ -79,12 +79,12 @@ class ReceiptOnlinePaymentInfo extends OnlinePaymentInfoType
         $invalidValues = [];
         foreach ($values as $receiptOnlinePaymentInfoMidocoCcTokenItem) {
             // validation for constraint: itemType
-            if (!$receiptOnlinePaymentInfoMidocoCcTokenItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken) {
+            if (!$receiptOnlinePaymentInfoMidocoCcTokenItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoCcToken) {
                 $invalidValues[] = is_object($receiptOnlinePaymentInfoMidocoCcTokenItem) ? get_class($receiptOnlinePaymentInfoMidocoCcTokenItem) : sprintf('%s(%s)', gettype($receiptOnlinePaymentInfoMidocoCcTokenItem), var_export($receiptOnlinePaymentInfoMidocoCcTokenItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -93,8 +93,8 @@ class ReceiptOnlinePaymentInfo extends OnlinePaymentInfoType
     /**
      * Set MidocoCcToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken[] $midocoCcToken
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptOnlinePaymentInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCcToken[] $midocoCcToken
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptOnlinePaymentInfo
      */
     public function setMidocoCcToken(?array $midocoCcToken = null): self
     {
@@ -109,14 +109,14 @@ class ReceiptOnlinePaymentInfo extends OnlinePaymentInfoType
     /**
      * Add item to MidocoCcToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptOnlinePaymentInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCcToken $item
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptOnlinePaymentInfo
      */
-    public function addToMidocoCcToken(\Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken $item): self
+    public function addToMidocoCcToken(\Pggns\MidocoApi\Order\StructType\MidocoCcToken $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken) {
-            throw new InvalidArgumentException(sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoCcToken) {
+            throw new InvalidArgumentException(sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCcToken[] = $item;
         
@@ -133,7 +133,7 @@ class ReceiptOnlinePaymentInfo extends OnlinePaymentInfoType
     /**
      * Set ccValidMonth value
      * @param int $ccValidMonth
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptOnlinePaymentInfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptOnlinePaymentInfo
      */
     public function setCcValidMonth(?int $ccValidMonth = null): self
     {
@@ -156,7 +156,7 @@ class ReceiptOnlinePaymentInfo extends OnlinePaymentInfoType
     /**
      * Set ccValidYear value
      * @param int $ccValidYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptOnlinePaymentInfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptOnlinePaymentInfo
      */
     public function setCcValidYear(?int $ccValidYear = null): self
     {
@@ -179,7 +179,7 @@ class ReceiptOnlinePaymentInfo extends OnlinePaymentInfoType
     /**
      * Set ccAutorisationCode value
      * @param string $ccAutorisationCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptOnlinePaymentInfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptOnlinePaymentInfo
      */
     public function setCcAutorisationCode(?string $ccAutorisationCode = null): self
     {

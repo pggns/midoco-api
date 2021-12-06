@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetVerkDataPrintListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVerkDataPrint
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\VerkDataPrintDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\VerkDataPrintDTO[]
      */
     protected ?array $MidocoVerkDataPrint = null;
     /**
      * Constructor method for GetVerkDataPrintListResponse
      * @uses GetVerkDataPrintListResponse::setMidocoVerkDataPrint()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\VerkDataPrintDTO[] $midocoVerkDataPrint
+     * @param \Pggns\MidocoApi\Documents\StructType\VerkDataPrintDTO[] $midocoVerkDataPrint
      */
     public function __construct(?array $midocoVerkDataPrint = null)
     {
@@ -34,7 +34,7 @@ class GetVerkDataPrintListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVerkDataPrint value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VerkDataPrintDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\VerkDataPrintDTO[]
      */
     public function getMidocoVerkDataPrint(): ?array
     {
@@ -55,12 +55,12 @@ class GetVerkDataPrintListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getVerkDataPrintListResponseMidocoVerkDataPrintItem) {
             // validation for constraint: itemType
-            if (!$getVerkDataPrintListResponseMidocoVerkDataPrintItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\VerkDataPrintDTO) {
+            if (!$getVerkDataPrintListResponseMidocoVerkDataPrintItem instanceof \Pggns\MidocoApi\Documents\StructType\VerkDataPrintDTO) {
                 $invalidValues[] = is_object($getVerkDataPrintListResponseMidocoVerkDataPrintItem) ? get_class($getVerkDataPrintListResponseMidocoVerkDataPrintItem) : sprintf('%s(%s)', gettype($getVerkDataPrintListResponseMidocoVerkDataPrintItem), var_export($getVerkDataPrintListResponseMidocoVerkDataPrintItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVerkDataPrint property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\VerkDataPrintDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVerkDataPrint property can only contain items of type \Pggns\MidocoApi\Documents\StructType\VerkDataPrintDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetVerkDataPrintListResponse extends AbstractStructBase
     /**
      * Set MidocoVerkDataPrint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\VerkDataPrintDTO[] $midocoVerkDataPrint
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetVerkDataPrintListResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\VerkDataPrintDTO[] $midocoVerkDataPrint
+     * @return \Pggns\MidocoApi\Documents\StructType\GetVerkDataPrintListResponse
      */
     public function setMidocoVerkDataPrint(?array $midocoVerkDataPrint = null): self
     {
@@ -85,14 +85,14 @@ class GetVerkDataPrintListResponse extends AbstractStructBase
     /**
      * Add item to MidocoVerkDataPrint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\VerkDataPrintDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetVerkDataPrintListResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\VerkDataPrintDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetVerkDataPrintListResponse
      */
-    public function addToMidocoVerkDataPrint(\Pggns\MidocoApi\Api\Documents\StructType\VerkDataPrintDTO $item): self
+    public function addToMidocoVerkDataPrint(\Pggns\MidocoApi\Documents\StructType\VerkDataPrintDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\VerkDataPrintDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoVerkDataPrint property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\VerkDataPrintDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\VerkDataPrintDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoVerkDataPrint property can only contain items of type \Pggns\MidocoApi\Documents\StructType\VerkDataPrintDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVerkDataPrint[] = $item;
         

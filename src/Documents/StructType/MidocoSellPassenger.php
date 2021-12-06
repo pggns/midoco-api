@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,25 +18,25 @@ class MidocoSellPassenger extends SellPassengerDTO
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoPassengerInfosFlight
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO $MidocoPassengerInfosFlight = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO $MidocoPassengerInfosFlight = null;
     /**
      * The MidocoPassengerInfosRail
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoPassengerInfosRail
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO $MidocoPassengerInfosRail = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO $MidocoPassengerInfosRail = null;
     /**
      * Constructor method for MidocoSellPassenger
      * @uses MidocoSellPassenger::setMidocoPassengerInfosFlight()
      * @uses MidocoSellPassenger::setMidocoPassengerInfosRail()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail
+     * @param \Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight
+     * @param \Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight = null, ?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight = null, ?\Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail = null)
     {
         $this
             ->setMidocoPassengerInfosFlight($midocoPassengerInfosFlight)
@@ -44,18 +44,18 @@ class MidocoSellPassenger extends SellPassengerDTO
     }
     /**
      * Get MidocoPassengerInfosFlight value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO|null
      */
-    public function getMidocoPassengerInfosFlight(): ?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO
+    public function getMidocoPassengerInfosFlight(): ?\Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO
     {
         return $this->MidocoPassengerInfosFlight;
     }
     /**
      * Set MidocoPassengerInfosFlight value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellPassenger
+     * @param \Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellPassenger
      */
-    public function setMidocoPassengerInfosFlight(?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight = null): self
+    public function setMidocoPassengerInfosFlight(?\Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight = null): self
     {
         $this->MidocoPassengerInfosFlight = $midocoPassengerInfosFlight;
         
@@ -63,18 +63,18 @@ class MidocoSellPassenger extends SellPassengerDTO
     }
     /**
      * Get MidocoPassengerInfosRail value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO|null
      */
-    public function getMidocoPassengerInfosRail(): ?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO
+    public function getMidocoPassengerInfosRail(): ?\Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO
     {
         return $this->MidocoPassengerInfosRail;
     }
     /**
      * Set MidocoPassengerInfosRail value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellPassenger
+     * @param \Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellPassenger
      */
-    public function setMidocoPassengerInfosRail(?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail = null): self
+    public function setMidocoPassengerInfosRail(?\Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail = null): self
     {
         $this->MidocoPassengerInfosRail = $midocoPassengerInfosRail;
         

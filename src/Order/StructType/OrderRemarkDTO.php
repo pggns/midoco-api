@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class OrderRemarkDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -134,7 +134,7 @@ class OrderRemarkDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -157,7 +157,7 @@ class OrderRemarkDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -180,7 +180,7 @@ class OrderRemarkDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -203,7 +203,7 @@ class OrderRemarkDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -226,7 +226,7 @@ class OrderRemarkDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -249,7 +249,7 @@ class OrderRemarkDTO extends AbstractStructBase
     /**
      * Set printAllowed value
      * @param bool $printAllowed
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO
      */
     public function setPrintAllowed(?bool $printAllowed = null): self
     {
@@ -272,7 +272,7 @@ class OrderRemarkDTO extends AbstractStructBase
     /**
      * Set printMarker value
      * @param string $printMarker
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO
      */
     public function setPrintMarker(?string $printMarker = null): self
     {
@@ -295,7 +295,7 @@ class OrderRemarkDTO extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -318,7 +318,7 @@ class OrderRemarkDTO extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemarkDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemarkDTO
      */
     public function setRemark(?string $remark = null): self
     {

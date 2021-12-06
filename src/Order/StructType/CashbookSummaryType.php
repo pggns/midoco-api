@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class CashbookSummaryType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoCashbookSummaryDetail
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType[]
+     * @var \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType[]
      */
     protected ?array $MidocoCashbookSummaryDetail = null;
     /**
@@ -48,7 +48,7 @@ class CashbookSummaryType extends AbstractStructBase
      * @uses CashbookSummaryType::setUserName()
      * @uses CashbookSummaryType::setTotalAmount()
      * @uses CashbookSummaryType::setNoOfReceipts()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType[] $midocoCashbookSummaryDetail
+     * @param \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType[] $midocoCashbookSummaryDetail
      * @param string $cashBookId
      * @param string $userName
      * @param float $totalAmount
@@ -65,7 +65,7 @@ class CashbookSummaryType extends AbstractStructBase
     }
     /**
      * Get MidocoCashbookSummaryDetail value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType[]
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType[]
      */
     public function getMidocoCashbookSummaryDetail(): ?array
     {
@@ -86,12 +86,12 @@ class CashbookSummaryType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $cashbookSummaryTypeMidocoCashbookSummaryDetailItem) {
             // validation for constraint: itemType
-            if (!$cashbookSummaryTypeMidocoCashbookSummaryDetailItem instanceof \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType) {
+            if (!$cashbookSummaryTypeMidocoCashbookSummaryDetailItem instanceof \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType) {
                 $invalidValues[] = is_object($cashbookSummaryTypeMidocoCashbookSummaryDetailItem) ? get_class($cashbookSummaryTypeMidocoCashbookSummaryDetailItem) : sprintf('%s(%s)', gettype($cashbookSummaryTypeMidocoCashbookSummaryDetailItem), var_export($cashbookSummaryTypeMidocoCashbookSummaryDetailItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCashbookSummaryDetail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCashbookSummaryDetail property can only contain items of type \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -100,8 +100,8 @@ class CashbookSummaryType extends AbstractStructBase
     /**
      * Set MidocoCashbookSummaryDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType[] $midocoCashbookSummaryDetail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryType
+     * @param \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType[] $midocoCashbookSummaryDetail
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSummaryType
      */
     public function setMidocoCashbookSummaryDetail(?array $midocoCashbookSummaryDetail = null): self
     {
@@ -116,14 +116,14 @@ class CashbookSummaryType extends AbstractStructBase
     /**
      * Add item to MidocoCashbookSummaryDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryType
+     * @param \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType $item
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSummaryType
      */
-    public function addToMidocoCashbookSummaryDetail(\Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType $item): self
+    public function addToMidocoCashbookSummaryDetail(\Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCashbookSummaryDetail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCashbookSummaryDetail property can only contain items of type \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCashbookSummaryDetail[] = $item;
         
@@ -140,7 +140,7 @@ class CashbookSummaryType extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param string $cashBookId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryType
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSummaryType
      */
     public function setCashBookId(?string $cashBookId = null): self
     {
@@ -163,7 +163,7 @@ class CashbookSummaryType extends AbstractStructBase
     /**
      * Set userName value
      * @param string $userName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryType
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSummaryType
      */
     public function setUserName(?string $userName = null): self
     {
@@ -186,7 +186,7 @@ class CashbookSummaryType extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryType
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSummaryType
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -209,7 +209,7 @@ class CashbookSummaryType extends AbstractStructBase
     /**
      * Set noOfReceipts value
      * @param int $noOfReceipts
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryType
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSummaryType
      */
     public function setNoOfReceipts(?int $noOfReceipts = null): self
     {

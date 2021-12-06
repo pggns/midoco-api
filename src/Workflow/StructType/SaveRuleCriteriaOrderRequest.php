@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -25,17 +25,17 @@ class SaveRuleCriteriaOrderRequest extends AbstractStructBase
      * The MidocoRuleCriteriaOrder
      * Meta information extracted from the WSDL
      * - ref: MidocoRuleCriteriaOrder
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO $MidocoRuleCriteriaOrder = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO $MidocoRuleCriteriaOrder = null;
     /**
      * Constructor method for SaveRuleCriteriaOrderRequest
      * @uses SaveRuleCriteriaOrderRequest::setUnitName()
      * @uses SaveRuleCriteriaOrderRequest::setMidocoRuleCriteriaOrder()
      * @param string $unitName
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO $midocoRuleCriteriaOrder
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO $midocoRuleCriteriaOrder
      */
-    public function __construct(string $unitName, ?\Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO $midocoRuleCriteriaOrder = null)
+    public function __construct(string $unitName, ?\Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO $midocoRuleCriteriaOrder = null)
     {
         $this
             ->setUnitName($unitName)
@@ -52,7 +52,7 @@ class SaveRuleCriteriaOrderRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaOrderRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaOrderRequest
      */
     public function setUnitName(string $unitName): self
     {
@@ -66,18 +66,18 @@ class SaveRuleCriteriaOrderRequest extends AbstractStructBase
     }
     /**
      * Get MidocoRuleCriteriaOrder value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO|null
      */
-    public function getMidocoRuleCriteriaOrder(): ?\Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+    public function getMidocoRuleCriteriaOrder(): ?\Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
     {
         return $this->MidocoRuleCriteriaOrder;
     }
     /**
      * Set MidocoRuleCriteriaOrder value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO $midocoRuleCriteriaOrder
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaOrderRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO $midocoRuleCriteriaOrder
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaOrderRequest
      */
-    public function setMidocoRuleCriteriaOrder(?\Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO $midocoRuleCriteriaOrder = null): self
+    public function setMidocoRuleCriteriaOrder(?\Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO $midocoRuleCriteriaOrder = null): self
     {
         $this->MidocoRuleCriteriaOrder = $midocoRuleCriteriaOrder;
         

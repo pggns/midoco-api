@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SaveGroupConsentResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveGroupConsentResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveGroupConsentResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

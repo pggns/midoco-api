@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetCustomerCriteriaRequest extends AbstractStructBase
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The internalVersion
      * @var int|null
@@ -35,11 +35,11 @@ class GetCustomerCriteriaRequest extends AbstractStructBase
      * @uses GetCustomerCriteriaRequest::setMidocoCustomerId()
      * @uses GetCustomerCriteriaRequest::setInternalVersion()
      * @uses GetCustomerCriteriaRequest::setAttributeName()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId
      * @param int $internalVersion
      * @param string $attributeName
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?int $internalVersion = null, ?string $attributeName = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?int $internalVersion = null, ?string $attributeName = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -48,18 +48,18 @@ class GetCustomerCriteriaRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerCriteriaRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerCriteriaRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -76,7 +76,7 @@ class GetCustomerCriteriaRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerCriteriaRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerCriteriaRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -99,7 +99,7 @@ class GetCustomerCriteriaRequest extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerCriteriaRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerCriteriaRequest
      */
     public function setAttributeName(?string $attributeName = null): self
     {

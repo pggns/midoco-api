@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -73,7 +73,7 @@ class GetOrdersForMediatorRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrdersForMediatorRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrdersForMediatorRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -96,7 +96,7 @@ class GetOrdersForMediatorRequest extends AbstractStructBase
     /**
      * Set creationStartDate value
      * @param string $creationStartDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrdersForMediatorRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrdersForMediatorRequest
      */
     public function setCreationStartDate(?string $creationStartDate = null): self
     {
@@ -119,7 +119,7 @@ class GetOrdersForMediatorRequest extends AbstractStructBase
     /**
      * Set creationEndDate value
      * @param string $creationEndDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrdersForMediatorRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrdersForMediatorRequest
      */
     public function setCreationEndDate(?string $creationEndDate = null): self
     {
@@ -142,7 +142,7 @@ class GetOrdersForMediatorRequest extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrdersForMediatorRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrdersForMediatorRequest
      */
     public function setStatus(?string $status = null): self
     {
@@ -165,7 +165,7 @@ class GetOrdersForMediatorRequest extends AbstractStructBase
     /**
      * Set filter value
      * @param string $filter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrdersForMediatorRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrdersForMediatorRequest
      */
     public function setFilter(?string $filter = 'BOOKED'): self
     {

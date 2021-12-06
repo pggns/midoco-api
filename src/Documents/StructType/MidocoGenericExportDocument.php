@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class MidocoGenericExportDocument extends AbstractStructBase
      * The DocumentDescription
      * Meta information extracted from the WSDL
      * - ref: archive-message:DocumentDescription
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\DocumentDescription|null
+     * @var \Pggns\MidocoApi\Documents\StructType\DocumentDescription|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\DocumentDescription $DocumentDescription = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\DocumentDescription $DocumentDescription = null;
     /**
      * Constructor method for MidocoGenericExportDocument
      * @uses MidocoGenericExportDocument::setDocumentDescription()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\DocumentDescription $documentDescription
+     * @param \Pggns\MidocoApi\Documents\StructType\DocumentDescription $documentDescription
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\DocumentDescription $documentDescription = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\DocumentDescription $documentDescription = null)
     {
         $this
             ->setDocumentDescription($documentDescription);
     }
     /**
      * Get DocumentDescription value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentDescription|null
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentDescription|null
      */
-    public function getDocumentDescription(): ?\Pggns\MidocoApi\Api\Documents\StructType\DocumentDescription
+    public function getDocumentDescription(): ?\Pggns\MidocoApi\Documents\StructType\DocumentDescription
     {
         return $this->DocumentDescription;
     }
     /**
      * Set DocumentDescription value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\DocumentDescription $documentDescription
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericExportDocument
+     * @param \Pggns\MidocoApi\Documents\StructType\DocumentDescription $documentDescription
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoGenericExportDocument
      */
-    public function setDocumentDescription(?\Pggns\MidocoApi\Api\Documents\StructType\DocumentDescription $documentDescription = null): self
+    public function setDocumentDescription(?\Pggns\MidocoApi\Documents\StructType\DocumentDescription $documentDescription = null): self
     {
         $this->DocumentDescription = $documentDescription;
         

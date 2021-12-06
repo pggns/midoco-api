@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class WserviceUserDTO extends AbstractStructBase
     /**
      * Set allowed value
      * @param bool $allowed
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\WserviceUserDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\WserviceUserDTO
      */
     public function setAllowed(?bool $allowed = null): self
     {
@@ -78,7 +78,7 @@ class WserviceUserDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\WserviceUserDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\WserviceUserDTO
      */
     public function setName(?string $name = null): self
     {
@@ -101,7 +101,7 @@ class WserviceUserDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\WserviceUserDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\WserviceUserDTO
      */
     public function setUserId(?int $userId = null): self
     {

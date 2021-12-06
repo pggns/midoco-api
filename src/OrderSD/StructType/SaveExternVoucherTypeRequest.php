@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveExternVoucherTypeRequest extends AbstractStructBase
      * The MidocoExternVoucherType
      * Meta information extracted from the WSDL
      * - ref: MidocoExternVoucherType
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO $MidocoExternVoucherType = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO $MidocoExternVoucherType = null;
     /**
      * Constructor method for SaveExternVoucherTypeRequest
      * @uses SaveExternVoucherTypeRequest::setMidocoExternVoucherType()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO $midocoExternVoucherType
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO $midocoExternVoucherType
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO $midocoExternVoucherType = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO $midocoExternVoucherType = null)
     {
         $this
             ->setMidocoExternVoucherType($midocoExternVoucherType);
     }
     /**
      * Get MidocoExternVoucherType value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO|null
      */
-    public function getMidocoExternVoucherType(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO
+    public function getMidocoExternVoucherType(): ?\Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO
     {
         return $this->MidocoExternVoucherType;
     }
     /**
      * Set MidocoExternVoucherType value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO $midocoExternVoucherType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveExternVoucherTypeRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO $midocoExternVoucherType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveExternVoucherTypeRequest
      */
-    public function setMidocoExternVoucherType(?\Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO $midocoExternVoucherType = null): self
+    public function setMidocoExternVoucherType(?\Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO $midocoExternVoucherType = null): self
     {
         $this->MidocoExternVoucherType = $midocoExternVoucherType;
         

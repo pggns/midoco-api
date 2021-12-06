@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class EntryBooking extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryBooking
+     * @return \Pggns\MidocoApi\Order\StructType\EntryBooking
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -134,7 +134,7 @@ class EntryBooking extends AbstractStructBase
     /**
      * Set entryId value
      * @param string $entryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryBooking
+     * @return \Pggns\MidocoApi\Order\StructType\EntryBooking
      */
     public function setEntryId(?string $entryId = null): self
     {
@@ -157,7 +157,7 @@ class EntryBooking extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryBooking
+     * @return \Pggns\MidocoApi\Order\StructType\EntryBooking
      */
     public function setAmount(?float $amount = null): self
     {
@@ -180,7 +180,7 @@ class EntryBooking extends AbstractStructBase
     /**
      * Set isInvoice value
      * @param bool $isInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryBooking
+     * @return \Pggns\MidocoApi\Order\StructType\EntryBooking
      */
     public function setIsInvoice(?bool $isInvoice = null): self
     {
@@ -203,7 +203,7 @@ class EntryBooking extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryBooking
+     * @return \Pggns\MidocoApi\Order\StructType\EntryBooking
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -226,7 +226,7 @@ class EntryBooking extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryBooking
+     * @return \Pggns\MidocoApi\Order\StructType\EntryBooking
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -249,7 +249,7 @@ class EntryBooking extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryBooking
+     * @return \Pggns\MidocoApi\Order\StructType\EntryBooking
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -272,7 +272,7 @@ class EntryBooking extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryBooking
+     * @return \Pggns\MidocoApi\Order\StructType\EntryBooking
      */
     public function setCustomerId(?int $customerId = null): self
     {

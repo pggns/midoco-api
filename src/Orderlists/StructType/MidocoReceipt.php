@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class MidocoReceipt extends ReceiptDTO
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoReceiptPosition
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceiptPosition[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoReceiptPosition[]
      */
     protected ?array $MidocoReceiptPosition = null;
     /**
@@ -26,16 +26,16 @@ class MidocoReceipt extends ReceiptDTO
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoDebitInfoForReceipt
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitInfoForReceipt|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoDebitInfoForReceipt|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitInfoForReceipt $MidocoDebitInfoForReceipt = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoDebitInfoForReceipt $MidocoDebitInfoForReceipt = null;
     /**
      * The MidocoAdditionalInfoForReceipt
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAdditionalInfoForReceipt
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalInfoForReceipt[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalInfoForReceipt[]
      */
     protected ?array $MidocoAdditionalInfoForReceipt = null;
     /**
@@ -43,21 +43,21 @@ class MidocoReceipt extends ReceiptDTO
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoOnlinePaymentTransaction
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransaction|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransaction $MidocoOnlinePaymentTransaction = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction $MidocoOnlinePaymentTransaction = null;
     /**
      * Constructor method for MidocoReceipt
      * @uses MidocoReceipt::setMidocoReceiptPosition()
      * @uses MidocoReceipt::setMidocoDebitInfoForReceipt()
      * @uses MidocoReceipt::setMidocoAdditionalInfoForReceipt()
      * @uses MidocoReceipt::setMidocoOnlinePaymentTransaction()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceiptPosition[] $midocoReceiptPosition
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalInfoForReceipt[] $midocoAdditionalInfoForReceipt
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoReceiptPosition[] $midocoReceiptPosition
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalInfoForReceipt[] $midocoAdditionalInfoForReceipt
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction
      */
-    public function __construct(?array $midocoReceiptPosition = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt = null, ?array $midocoAdditionalInfoForReceipt = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null)
+    public function __construct(?array $midocoReceiptPosition = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt = null, ?array $midocoAdditionalInfoForReceipt = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null)
     {
         $this
             ->setMidocoReceiptPosition($midocoReceiptPosition)
@@ -67,7 +67,7 @@ class MidocoReceipt extends ReceiptDTO
     }
     /**
      * Get MidocoReceiptPosition value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceiptPosition[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoReceiptPosition[]
      */
     public function getMidocoReceiptPosition(): ?array
     {
@@ -88,12 +88,12 @@ class MidocoReceipt extends ReceiptDTO
         $invalidValues = [];
         foreach ($values as $midocoReceiptMidocoReceiptPositionItem) {
             // validation for constraint: itemType
-            if (!$midocoReceiptMidocoReceiptPositionItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceiptPosition) {
+            if (!$midocoReceiptMidocoReceiptPositionItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoReceiptPosition) {
                 $invalidValues[] = is_object($midocoReceiptMidocoReceiptPositionItem) ? get_class($midocoReceiptMidocoReceiptPositionItem) : sprintf('%s(%s)', gettype($midocoReceiptMidocoReceiptPositionItem), var_export($midocoReceiptMidocoReceiptPositionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoReceiptPosition property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceiptPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoReceiptPosition property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoReceiptPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -102,8 +102,8 @@ class MidocoReceipt extends ReceiptDTO
     /**
      * Set MidocoReceiptPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceiptPosition[] $midocoReceiptPosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceipt
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoReceiptPosition[] $midocoReceiptPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoReceipt
      */
     public function setMidocoReceiptPosition(?array $midocoReceiptPosition = null): self
     {
@@ -118,14 +118,14 @@ class MidocoReceipt extends ReceiptDTO
     /**
      * Add item to MidocoReceiptPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceiptPosition $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceipt
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoReceiptPosition $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoReceipt
      */
-    public function addToMidocoReceiptPosition(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceiptPosition $item): self
+    public function addToMidocoReceiptPosition(\Pggns\MidocoApi\Orderlists\StructType\MidocoReceiptPosition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceiptPosition) {
-            throw new InvalidArgumentException(sprintf('The MidocoReceiptPosition property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceiptPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoReceiptPosition) {
+            throw new InvalidArgumentException(sprintf('The MidocoReceiptPosition property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoReceiptPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoReceiptPosition[] = $item;
         
@@ -133,18 +133,18 @@ class MidocoReceipt extends ReceiptDTO
     }
     /**
      * Get MidocoDebitInfoForReceipt value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitInfoForReceipt|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDebitInfoForReceipt|null
      */
-    public function getMidocoDebitInfoForReceipt(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitInfoForReceipt
+    public function getMidocoDebitInfoForReceipt(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoDebitInfoForReceipt
     {
         return $this->MidocoDebitInfoForReceipt;
     }
     /**
      * Set MidocoDebitInfoForReceipt value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceipt
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoReceipt
      */
-    public function setMidocoDebitInfoForReceipt(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt = null): self
+    public function setMidocoDebitInfoForReceipt(?\Pggns\MidocoApi\Orderlists\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt = null): self
     {
         $this->MidocoDebitInfoForReceipt = $midocoDebitInfoForReceipt;
         
@@ -152,7 +152,7 @@ class MidocoReceipt extends ReceiptDTO
     }
     /**
      * Get MidocoAdditionalInfoForReceipt value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalInfoForReceipt[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalInfoForReceipt[]
      */
     public function getMidocoAdditionalInfoForReceipt(): ?array
     {
@@ -173,12 +173,12 @@ class MidocoReceipt extends ReceiptDTO
         $invalidValues = [];
         foreach ($values as $midocoReceiptMidocoAdditionalInfoForReceiptItem) {
             // validation for constraint: itemType
-            if (!$midocoReceiptMidocoAdditionalInfoForReceiptItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalInfoForReceipt) {
+            if (!$midocoReceiptMidocoAdditionalInfoForReceiptItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalInfoForReceipt) {
                 $invalidValues[] = is_object($midocoReceiptMidocoAdditionalInfoForReceiptItem) ? get_class($midocoReceiptMidocoAdditionalInfoForReceiptItem) : sprintf('%s(%s)', gettype($midocoReceiptMidocoAdditionalInfoForReceiptItem), var_export($midocoReceiptMidocoAdditionalInfoForReceiptItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAdditionalInfoForReceipt property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalInfoForReceipt, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAdditionalInfoForReceipt property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalInfoForReceipt, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -187,8 +187,8 @@ class MidocoReceipt extends ReceiptDTO
     /**
      * Set MidocoAdditionalInfoForReceipt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalInfoForReceipt[] $midocoAdditionalInfoForReceipt
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceipt
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalInfoForReceipt[] $midocoAdditionalInfoForReceipt
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoReceipt
      */
     public function setMidocoAdditionalInfoForReceipt(?array $midocoAdditionalInfoForReceipt = null): self
     {
@@ -203,14 +203,14 @@ class MidocoReceipt extends ReceiptDTO
     /**
      * Add item to MidocoAdditionalInfoForReceipt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalInfoForReceipt $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceipt
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalInfoForReceipt $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoReceipt
      */
-    public function addToMidocoAdditionalInfoForReceipt(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalInfoForReceipt $item): self
+    public function addToMidocoAdditionalInfoForReceipt(\Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalInfoForReceipt $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalInfoForReceipt) {
-            throw new InvalidArgumentException(sprintf('The MidocoAdditionalInfoForReceipt property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalInfoForReceipt, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalInfoForReceipt) {
+            throw new InvalidArgumentException(sprintf('The MidocoAdditionalInfoForReceipt property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalInfoForReceipt, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAdditionalInfoForReceipt[] = $item;
         
@@ -218,18 +218,18 @@ class MidocoReceipt extends ReceiptDTO
     }
     /**
      * Get MidocoOnlinePaymentTransaction value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransaction|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction|null
      */
-    public function getMidocoOnlinePaymentTransaction(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransaction
+    public function getMidocoOnlinePaymentTransaction(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction
     {
         return $this->MidocoOnlinePaymentTransaction;
     }
     /**
      * Set MidocoOnlinePaymentTransaction value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoReceipt
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoReceipt
      */
-    public function setMidocoOnlinePaymentTransaction(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null): self
+    public function setMidocoOnlinePaymentTransaction(?\Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null): self
     {
         $this->MidocoOnlinePaymentTransaction = $midocoOnlinePaymentTransaction;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class SupplierNoticeDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierNoticeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierNoticeDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -134,7 +134,7 @@ class SupplierNoticeDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierNoticeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierNoticeDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -157,7 +157,7 @@ class SupplierNoticeDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierNoticeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierNoticeDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -180,7 +180,7 @@ class SupplierNoticeDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierNoticeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierNoticeDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -203,7 +203,7 @@ class SupplierNoticeDTO extends AbstractStructBase
     /**
      * Set noticeId value
      * @param int $noticeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierNoticeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierNoticeDTO
      */
     public function setNoticeId(?int $noticeId = null): self
     {
@@ -226,7 +226,7 @@ class SupplierNoticeDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierNoticeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierNoticeDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -249,7 +249,7 @@ class SupplierNoticeDTO extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierNoticeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierNoticeDTO
      */
     public function setText(?string $text = null): self
     {
@@ -272,7 +272,7 @@ class SupplierNoticeDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierNoticeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierNoticeDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -295,7 +295,7 @@ class SupplierNoticeDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierNoticeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierNoticeDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -318,7 +318,7 @@ class SupplierNoticeDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierNoticeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierNoticeDTO
      */
     public function setValidTo(?string $validTo = null): self
     {

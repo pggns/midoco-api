@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetDirectDebitorsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDirectDebitor
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDirectDebitor[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoDirectDebitor[]
      */
     protected ?array $MidocoDirectDebitor = null;
     /**
      * Constructor method for GetDirectDebitorsResponse
      * @uses GetDirectDebitorsResponse::setMidocoDirectDebitor()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDirectDebitor[] $midocoDirectDebitor
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDirectDebitor[] $midocoDirectDebitor
      */
     public function __construct(?array $midocoDirectDebitor = null)
     {
@@ -34,7 +34,7 @@ class GetDirectDebitorsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDirectDebitor value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDirectDebitor[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDirectDebitor[]
      */
     public function getMidocoDirectDebitor(): ?array
     {
@@ -55,12 +55,12 @@ class GetDirectDebitorsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDirectDebitorsResponseMidocoDirectDebitorItem) {
             // validation for constraint: itemType
-            if (!$getDirectDebitorsResponseMidocoDirectDebitorItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDirectDebitor) {
+            if (!$getDirectDebitorsResponseMidocoDirectDebitorItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoDirectDebitor) {
                 $invalidValues[] = is_object($getDirectDebitorsResponseMidocoDirectDebitorItem) ? get_class($getDirectDebitorsResponseMidocoDirectDebitorItem) : sprintf('%s(%s)', gettype($getDirectDebitorsResponseMidocoDirectDebitorItem), var_export($getDirectDebitorsResponseMidocoDirectDebitorItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDirectDebitor property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDirectDebitor, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDirectDebitor property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoDirectDebitor, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetDirectDebitorsResponse extends AbstractStructBase
     /**
      * Set MidocoDirectDebitor value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDirectDebitor[] $midocoDirectDebitor
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetDirectDebitorsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDirectDebitor[] $midocoDirectDebitor
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDirectDebitorsResponse
      */
     public function setMidocoDirectDebitor(?array $midocoDirectDebitor = null): self
     {
@@ -85,14 +85,14 @@ class GetDirectDebitorsResponse extends AbstractStructBase
     /**
      * Add item to MidocoDirectDebitor value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDirectDebitor $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetDirectDebitorsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDirectDebitor $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDirectDebitorsResponse
      */
-    public function addToMidocoDirectDebitor(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDirectDebitor $item): self
+    public function addToMidocoDirectDebitor(\Pggns\MidocoApi\CrmSD\StructType\MidocoDirectDebitor $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDirectDebitor) {
-            throw new InvalidArgumentException(sprintf('The MidocoDirectDebitor property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDirectDebitor, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoDirectDebitor) {
+            throw new InvalidArgumentException(sprintf('The MidocoDirectDebitor property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoDirectDebitor, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDirectDebitor[] = $item;
         

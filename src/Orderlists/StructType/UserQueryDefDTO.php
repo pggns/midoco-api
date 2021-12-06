@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -287,7 +287,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set asTask value
      * @param bool $asTask
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setAsTask(?bool $asTask = null): self
     {
@@ -310,7 +310,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set assignItemId value
      * @param bool $assignItemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setAssignItemId(?bool $assignItemId = null): self
     {
@@ -333,7 +333,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set createNotices value
      * @param bool $createNotices
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setCreateNotices(?bool $createNotices = null): self
     {
@@ -356,7 +356,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -379,7 +379,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set dateFormat value
      * @param string $dateFormat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setDateFormat(?string $dateFormat = null): self
     {
@@ -402,7 +402,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set dateSeparator value
      * @param string $dateSeparator
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setDateSeparator(?string $dateSeparator = null): self
     {
@@ -425,7 +425,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set deadlineDate value
      * @param string $deadlineDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setDeadlineDate(?string $deadlineDate = null): self
     {
@@ -448,7 +448,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set decimalSeparator value
      * @param string $decimalSeparator
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setDecimalSeparator(?string $decimalSeparator = null): self
     {
@@ -471,7 +471,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set delegationQueue value
      * @param string $delegationQueue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setDelegationQueue(?string $delegationQueue = null): self
     {
@@ -494,7 +494,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set delegationRole value
      * @param int $delegationRole
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setDelegationRole(?int $delegationRole = null): self
     {
@@ -517,7 +517,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -540,7 +540,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -563,7 +563,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set emailText value
      * @param string $emailText
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setEmailText(?string $emailText = null): self
     {
@@ -586,7 +586,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set exportType value
      * @param string $exportType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setExportType(?string $exportType = null): self
     {
@@ -609,7 +609,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set fileType value
      * @param string $fileType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setFileType(?string $fileType = null): self
     {
@@ -632,7 +632,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set frequency value
      * @param string $frequency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setFrequency(?string $frequency = null): self
     {
@@ -655,7 +655,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set groupByFields value
      * @param string $groupByFields
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setGroupByFields(?string $groupByFields = null): self
     {
@@ -678,7 +678,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set inheritable value
      * @param bool $inheritable
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setInheritable(?bool $inheritable = null): self
     {
@@ -701,7 +701,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set isAutomatic value
      * @param bool $isAutomatic
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setIsAutomatic(?bool $isAutomatic = null): self
     {
@@ -724,7 +724,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set menuTemplate value
      * @param bool $menuTemplate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setMenuTemplate(?bool $menuTemplate = null): self
     {
@@ -747,7 +747,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set nextDate value
      * @param string $nextDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setNextDate(?string $nextDate = null): self
     {
@@ -770,7 +770,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set notice value
      * @param string $notice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setNotice(?string $notice = null): self
     {
@@ -793,7 +793,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set orderByFields value
      * @param string $orderByFields
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setOrderByFields(?string $orderByFields = null): self
     {
@@ -816,7 +816,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set outputFields value
      * @param string $outputFields
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setOutputFields(?string $outputFields = null): self
     {
@@ -839,7 +839,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set outputLocale value
      * @param string $outputLocale
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setOutputLocale(?string $outputLocale = null): self
     {
@@ -862,7 +862,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set queryId value
      * @param int $queryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setQueryId(?int $queryId = null): self
     {
@@ -885,7 +885,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set sftpCredentialName value
      * @param string $sftpCredentialName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setSftpCredentialName(?string $sftpCredentialName = null): self
     {
@@ -908,7 +908,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -931,7 +931,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -954,7 +954,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setType(?string $type = null): self
     {
@@ -977,7 +977,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -1000,7 +1000,7 @@ class UserQueryDefDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserQueryDefDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserQueryDefDTO
      */
     public function setUserId(?int $userId = null): self
     {

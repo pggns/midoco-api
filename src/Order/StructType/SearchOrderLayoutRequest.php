@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SearchOrderLayoutRequest extends AbstractStructBase
      * The MidocoOrderLayout
      * Meta information extracted from the WSDL
      * - ref: MidocoOrderLayout
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLayout|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderLayout|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLayout $MidocoOrderLayout = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderLayout $MidocoOrderLayout = null;
     /**
      * The unitName
      * @var string|null
@@ -29,10 +29,10 @@ class SearchOrderLayoutRequest extends AbstractStructBase
      * Constructor method for SearchOrderLayoutRequest
      * @uses SearchOrderLayoutRequest::setMidocoOrderLayout()
      * @uses SearchOrderLayoutRequest::setUnitName()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLayout $midocoOrderLayout
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderLayout $midocoOrderLayout
      * @param string $unitName
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLayout $midocoOrderLayout = null, ?string $unitName = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderLayout $midocoOrderLayout = null, ?string $unitName = null)
     {
         $this
             ->setMidocoOrderLayout($midocoOrderLayout)
@@ -40,18 +40,18 @@ class SearchOrderLayoutRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderLayout value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLayout|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderLayout|null
      */
-    public function getMidocoOrderLayout(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLayout
+    public function getMidocoOrderLayout(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderLayout
     {
         return $this->MidocoOrderLayout;
     }
     /**
      * Set MidocoOrderLayout value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLayout $midocoOrderLayout
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrderLayoutRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderLayout $midocoOrderLayout
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrderLayoutRequest
      */
-    public function setMidocoOrderLayout(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLayout $midocoOrderLayout = null): self
+    public function setMidocoOrderLayout(?\Pggns\MidocoApi\Order\StructType\MidocoOrderLayout $midocoOrderLayout = null): self
     {
         $this->MidocoOrderLayout = $midocoOrderLayout;
         
@@ -68,7 +68,7 @@ class SearchOrderLayoutRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrderLayoutRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrderLayoutRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

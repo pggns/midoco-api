@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class OrdCriteriaDefaultDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrdCriteriaDefaultDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrdCriteriaDefaultDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -78,7 +78,7 @@ class OrdCriteriaDefaultDTO extends AbstractStructBase
     /**
      * Set defaultValue value
      * @param string $defaultValue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrdCriteriaDefaultDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrdCriteriaDefaultDTO
      */
     public function setDefaultValue(?string $defaultValue = null): self
     {
@@ -101,7 +101,7 @@ class OrdCriteriaDefaultDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrdCriteriaDefaultDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrdCriteriaDefaultDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

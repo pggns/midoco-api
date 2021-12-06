@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class EditMidocoTextRemarkRequest extends AbstractStructBase
      * The MidocoTextRemark
      * Meta information extracted from the WSDL
      * - ref: MidocoTextRemark
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTextRemark|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoTextRemark|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTextRemark $MidocoTextRemark = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoTextRemark $MidocoTextRemark = null;
     /**
      * The cultureId
      * @var string|null
@@ -35,11 +35,11 @@ class EditMidocoTextRemarkRequest extends AbstractStructBase
      * @uses EditMidocoTextRemarkRequest::setMidocoTextRemark()
      * @uses EditMidocoTextRemarkRequest::setCultureId()
      * @uses EditMidocoTextRemarkRequest::setShortId()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTextRemark $midocoTextRemark
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoTextRemark $midocoTextRemark
      * @param string $cultureId
      * @param string $shortId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTextRemark $midocoTextRemark = null, ?string $cultureId = null, ?string $shortId = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoTextRemark $midocoTextRemark = null, ?string $cultureId = null, ?string $shortId = null)
     {
         $this
             ->setMidocoTextRemark($midocoTextRemark)
@@ -48,18 +48,18 @@ class EditMidocoTextRemarkRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTextRemark value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTextRemark|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoTextRemark|null
      */
-    public function getMidocoTextRemark(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTextRemark
+    public function getMidocoTextRemark(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoTextRemark
     {
         return $this->MidocoTextRemark;
     }
     /**
      * Set MidocoTextRemark value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTextRemark $midocoTextRemark
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\EditMidocoTextRemarkRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoTextRemark $midocoTextRemark
+     * @return \Pggns\MidocoApi\OrderSD\StructType\EditMidocoTextRemarkRequest
      */
-    public function setMidocoTextRemark(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTextRemark $midocoTextRemark = null): self
+    public function setMidocoTextRemark(?\Pggns\MidocoApi\OrderSD\StructType\MidocoTextRemark $midocoTextRemark = null): self
     {
         $this->MidocoTextRemark = $midocoTextRemark;
         
@@ -76,7 +76,7 @@ class EditMidocoTextRemarkRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\EditMidocoTextRemarkRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\EditMidocoTextRemarkRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -99,7 +99,7 @@ class EditMidocoTextRemarkRequest extends AbstractStructBase
     /**
      * Set shortId value
      * @param string $shortId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\EditMidocoTextRemarkRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\EditMidocoTextRemarkRequest
      */
     public function setShortId(?string $shortId = null): self
     {

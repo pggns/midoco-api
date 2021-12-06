@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -295,7 +295,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set algorithmPrefix value
      * @param string $algorithmPrefix
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setAlgorithmPrefix(?string $algorithmPrefix = null): self
     {
@@ -318,7 +318,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set amount0Vat value
      * @param float $amount0Vat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setAmount0Vat(?float $amount0Vat = null): self
     {
@@ -341,7 +341,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set amountFullVat value
      * @param float $amountFullVat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setAmountFullVat(?float $amountFullVat = null): self
     {
@@ -364,7 +364,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set amountIntermediate1Vat value
      * @param float $amountIntermediate1Vat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setAmountIntermediate1Vat(?float $amountIntermediate1Vat = null): self
     {
@@ -387,7 +387,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set amountIntermediate2Vat value
      * @param float $amountIntermediate2Vat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setAmountIntermediate2Vat(?float $amountIntermediate2Vat = null): self
     {
@@ -410,7 +410,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set amountSpecialVat value
      * @param float $amountSpecialVat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setAmountSpecialVat(?float $amountSpecialVat = null): self
     {
@@ -433,7 +433,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setCashBookId(?int $cashBookId = null): self
     {
@@ -456,7 +456,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set certificateId value
      * @param string $certificateId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setCertificateId(?string $certificateId = null): self
     {
@@ -479,7 +479,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set clientId value
      * @param string $clientId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setClientId(?string $clientId = null): self
     {
@@ -502,7 +502,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -525,7 +525,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set encryptedReceiptSignature value
      * @param string $encryptedReceiptSignature
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setEncryptedReceiptSignature(?string $encryptedReceiptSignature = null): self
     {
@@ -548,7 +548,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set encryptedTurnover value
      * @param string $encryptedTurnover
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setEncryptedTurnover(?string $encryptedTurnover = null): self
     {
@@ -571,7 +571,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set encryptionKeyRef value
      * @param string $encryptionKeyRef
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setEncryptionKeyRef(?string $encryptionKeyRef = null): self
     {
@@ -594,7 +594,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set endTime value
      * @param string $endTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setEndTime(?string $endTime = null): self
     {
@@ -617,7 +617,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set exportDate value
      * @param string $exportDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setExportDate(?string $exportDate = null): self
     {
@@ -640,7 +640,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setExportId(?int $exportId = null): self
     {
@@ -663,7 +663,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set failureReasonCode value
      * @param string $failureReasonCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setFailureReasonCode(?string $failureReasonCode = null): self
     {
@@ -686,7 +686,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set internalType value
      * @param string $internalType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setInternalType(?string $internalType = null): self
     {
@@ -709,7 +709,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -732,7 +732,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set lastTurnoverId value
      * @param int $lastTurnoverId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setLastTurnoverId(?int $lastTurnoverId = null): self
     {
@@ -755,7 +755,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set processType value
      * @param string $processType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setProcessType(?string $processType = null): self
     {
@@ -778,7 +778,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set receiptCounter value
      * @param int $receiptCounter
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setReceiptCounter(?int $receiptCounter = null): self
     {
@@ -801,7 +801,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set receiptId value
      * @param int $receiptId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setReceiptId(?int $receiptId = null): self
     {
@@ -824,7 +824,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set receiptIdentifier value
      * @param string $receiptIdentifier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setReceiptIdentifier(?string $receiptIdentifier = null): self
     {
@@ -847,7 +847,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set receiptSignature value
      * @param string $receiptSignature
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setReceiptSignature(?string $receiptSignature = null): self
     {
@@ -870,7 +870,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set receiptTimestamp value
      * @param string $receiptTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setReceiptTimestamp(?string $receiptTimestamp = null): self
     {
@@ -893,7 +893,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set signatureFailed value
      * @param bool $signatureFailed
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setSignatureFailed(?bool $signatureFailed = null): self
     {
@@ -916,7 +916,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set startTime value
      * @param string $startTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setStartTime(?string $startTime = null): self
     {
@@ -939,7 +939,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -962,7 +962,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set transactionNo value
      * @param int $transactionNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setTransactionNo(?int $transactionNo = null): self
     {
@@ -985,7 +985,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setTssId(?string $tssId = null): self
     {
@@ -1008,7 +1008,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set turnover value
      * @param float $turnover
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setTurnover(?float $turnover = null): self
     {
@@ -1031,7 +1031,7 @@ class CashTurnoverJournalDTO extends AbstractStructBase
     /**
      * Set turnoverId value
      * @param int $turnoverId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashTurnoverJournalDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashTurnoverJournalDTO
      */
     public function setTurnoverId(?int $turnoverId = null): self
     {

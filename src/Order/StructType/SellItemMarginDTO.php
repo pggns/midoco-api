@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class SellItemMarginDTO extends AbstractStructBase
     /**
      * Set costNet value
      * @param float $costNet
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
      */
     public function setCostNet(?float $costNet = null): self
     {
@@ -110,7 +110,7 @@ class SellItemMarginDTO extends AbstractStructBase
     /**
      * Set feeNet value
      * @param float $feeNet
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
      */
     public function setFeeNet(?float $feeNet = null): self
     {
@@ -133,7 +133,7 @@ class SellItemMarginDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -156,7 +156,7 @@ class SellItemMarginDTO extends AbstractStructBase
     /**
      * Set marginNet value
      * @param float $marginNet
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
      */
     public function setMarginNet(?float $marginNet = null): self
     {
@@ -179,7 +179,7 @@ class SellItemMarginDTO extends AbstractStructBase
     /**
      * Set salePriceNet value
      * @param float $salePriceNet
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
      */
     public function setSalePriceNet(?float $salePriceNet = null): self
     {
@@ -202,7 +202,7 @@ class SellItemMarginDTO extends AbstractStructBase
     /**
      * Set settlementDone value
      * @param bool $settlementDone
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
      */
     public function setSettlementDone(?bool $settlementDone = null): self
     {
@@ -225,7 +225,7 @@ class SellItemMarginDTO extends AbstractStructBase
     /**
      * Set updatedAt value
      * @param string $updatedAt
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
      */
     public function setUpdatedAt(?string $updatedAt = null): self
     {

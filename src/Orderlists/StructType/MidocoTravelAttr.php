@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoTravelAttr extends TravelAttrDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelAttr
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelAttr
      */
     public function setDescription(?string $description = null): self
     {

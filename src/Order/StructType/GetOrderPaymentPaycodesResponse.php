@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetOrderPaymentPaycodesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderPaymentPaycode
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderPaymentPaycodeDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\OrderPaymentPaycodeDTO[]
      */
     protected ?array $MidocoOrderPaymentPaycode = null;
     /**
      * Constructor method for GetOrderPaymentPaycodesResponse
      * @uses GetOrderPaymentPaycodesResponse::setMidocoOrderPaymentPaycode()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderPaymentPaycodeDTO[] $midocoOrderPaymentPaycode
+     * @param \Pggns\MidocoApi\Order\StructType\OrderPaymentPaycodeDTO[] $midocoOrderPaymentPaycode
      */
     public function __construct(?array $midocoOrderPaymentPaycode = null)
     {
@@ -34,7 +34,7 @@ class GetOrderPaymentPaycodesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderPaymentPaycode value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderPaymentPaycodeDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\OrderPaymentPaycodeDTO[]
      */
     public function getMidocoOrderPaymentPaycode(): ?array
     {
@@ -55,12 +55,12 @@ class GetOrderPaymentPaycodesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderPaymentPaycodesResponseMidocoOrderPaymentPaycodeItem) {
             // validation for constraint: itemType
-            if (!$getOrderPaymentPaycodesResponseMidocoOrderPaymentPaycodeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderPaymentPaycodeDTO) {
+            if (!$getOrderPaymentPaycodesResponseMidocoOrderPaymentPaycodeItem instanceof \Pggns\MidocoApi\Order\StructType\OrderPaymentPaycodeDTO) {
                 $invalidValues[] = is_object($getOrderPaymentPaycodesResponseMidocoOrderPaymentPaycodeItem) ? get_class($getOrderPaymentPaycodesResponseMidocoOrderPaymentPaycodeItem) : sprintf('%s(%s)', gettype($getOrderPaymentPaycodesResponseMidocoOrderPaymentPaycodeItem), var_export($getOrderPaymentPaycodesResponseMidocoOrderPaymentPaycodeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderPaymentPaycode property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderPaymentPaycodeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderPaymentPaycode property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderPaymentPaycodeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetOrderPaymentPaycodesResponse extends AbstractStructBase
     /**
      * Set MidocoOrderPaymentPaycode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderPaymentPaycodeDTO[] $midocoOrderPaymentPaycode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderPaymentPaycodesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderPaymentPaycodeDTO[] $midocoOrderPaymentPaycode
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderPaymentPaycodesResponse
      */
     public function setMidocoOrderPaymentPaycode(?array $midocoOrderPaymentPaycode = null): self
     {
@@ -85,14 +85,14 @@ class GetOrderPaymentPaycodesResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderPaymentPaycode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderPaymentPaycodeDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderPaymentPaycodesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderPaymentPaycodeDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderPaymentPaycodesResponse
      */
-    public function addToMidocoOrderPaymentPaycode(\Pggns\MidocoApi\Api\Order\StructType\OrderPaymentPaycodeDTO $item): self
+    public function addToMidocoOrderPaymentPaycode(\Pggns\MidocoApi\Order\StructType\OrderPaymentPaycodeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderPaymentPaycodeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderPaymentPaycode property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderPaymentPaycodeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\OrderPaymentPaycodeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderPaymentPaycode property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderPaymentPaycodeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderPaymentPaycode[] = $item;
         

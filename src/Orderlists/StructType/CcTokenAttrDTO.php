@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class CcTokenAttrDTO extends AbstractStructBase
     /**
      * Set attrName value
      * @param string $attrName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenAttrDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenAttrDTO
      */
     public function setAttrName(?string $attrName = null): self
     {
@@ -94,7 +94,7 @@ class CcTokenAttrDTO extends AbstractStructBase
     /**
      * Set attrPosition value
      * @param int $attrPosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenAttrDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenAttrDTO
      */
     public function setAttrPosition(?int $attrPosition = null): self
     {
@@ -117,7 +117,7 @@ class CcTokenAttrDTO extends AbstractStructBase
     /**
      * Set attrValue value
      * @param string $attrValue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenAttrDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenAttrDTO
      */
     public function setAttrValue(?string $attrValue = null): self
     {
@@ -140,7 +140,7 @@ class CcTokenAttrDTO extends AbstractStructBase
     /**
      * Set ccTokenType value
      * @param string $ccTokenType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenAttrDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenAttrDTO
      */
     public function setCcTokenType(?string $ccTokenType = null): self
     {
@@ -163,7 +163,7 @@ class CcTokenAttrDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenAttrDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenAttrDTO
      */
     public function setId(?int $id = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setDescription(?string $description = null): self
     {
@@ -174,7 +174,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set creationDateFrom value
      * @param string $creationDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setCreationDateFrom(?string $creationDateFrom = null): self
     {
@@ -197,7 +197,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set creationDateTo value
      * @param string $creationDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setCreationDateTo(?string $creationDateTo = null): self
     {
@@ -220,7 +220,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -243,7 +243,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set booked value
      * @param bool $booked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setBooked(?bool $booked = null): self
     {
@@ -266,7 +266,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set invoiceDateFrom value
      * @param string $invoiceDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setInvoiceDateFrom(?string $invoiceDateFrom = null): self
     {
@@ -289,7 +289,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set invoiceDateTo value
      * @param string $invoiceDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setInvoiceDateTo(?string $invoiceDateTo = null): self
     {
@@ -312,7 +312,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param string $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setInvoiceNo(?string $invoiceNo = null): self
     {
@@ -335,7 +335,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -358,7 +358,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set customerSurName value
      * @param string $customerSurName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setCustomerSurName(?string $customerSurName = null): self
     {
@@ -381,7 +381,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set customerForeName value
      * @param string $customerForeName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setCustomerForeName(?string $customerForeName = null): self
     {
@@ -404,7 +404,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -427,7 +427,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set isCommissionOnly value
      * @param bool $isCommissionOnly
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setIsCommissionOnly(?bool $isCommissionOnly = null): self
     {
@@ -450,7 +450,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set showOnlyInvoicedItems value
      * @param bool $showOnlyInvoicedItems
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setShowOnlyInvoicedItems(?bool $showOnlyInvoicedItems = null): self
     {
@@ -473,7 +473,7 @@ class SearchAdviceSettlementsRequest extends AbstractStructBase
     /**
      * Set invoiceCustomerId value
      * @param int $invoiceCustomerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchAdviceSettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchAdviceSettlementsRequest
      */
     public function setInvoiceCustomerId(?int $invoiceCustomerId = null): self
     {

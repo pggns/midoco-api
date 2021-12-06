@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class DestinationDocumentDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DestinationDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DestinationDocumentDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -134,7 +134,7 @@ class DestinationDocumentDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DestinationDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DestinationDocumentDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -157,7 +157,7 @@ class DestinationDocumentDTO extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DestinationDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DestinationDocumentDTO
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -180,7 +180,7 @@ class DestinationDocumentDTO extends AbstractStructBase
     /**
      * Set destinationType value
      * @param string $destinationType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DestinationDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DestinationDocumentDTO
      */
     public function setDestinationType(?string $destinationType = null): self
     {
@@ -203,7 +203,7 @@ class DestinationDocumentDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DestinationDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DestinationDocumentDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -226,7 +226,7 @@ class DestinationDocumentDTO extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DestinationDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DestinationDocumentDTO
      */
     public function setFileName(?string $fileName = null): self
     {
@@ -249,7 +249,7 @@ class DestinationDocumentDTO extends AbstractStructBase
     /**
      * Set fileSize value
      * @param int $fileSize
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DestinationDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DestinationDocumentDTO
      */
     public function setFileSize(?int $fileSize = null): self
     {
@@ -272,7 +272,7 @@ class DestinationDocumentDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DestinationDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DestinationDocumentDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -295,7 +295,7 @@ class DestinationDocumentDTO extends AbstractStructBase
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DestinationDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DestinationDocumentDTO
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {
@@ -318,7 +318,7 @@ class DestinationDocumentDTO extends AbstractStructBase
     /**
      * Set uploadDate value
      * @param string $uploadDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DestinationDocumentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DestinationDocumentDTO
      */
     public function setUploadDate(?string $uploadDate = null): self
     {

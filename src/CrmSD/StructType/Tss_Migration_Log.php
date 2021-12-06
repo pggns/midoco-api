@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,25 +18,25 @@ class Tss_Migration_Log extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: CancelTssClientResponse
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CancelTssClientResponse|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CancelTssClientResponse|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CancelTssClientResponse $CancelTssClientResponse = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CancelTssClientResponse $CancelTssClientResponse = null;
     /**
      * The CreateTssClientResponse
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: CreateTssClientResponse
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CreateTssClientResponse|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CreateTssClientResponse|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CreateTssClientResponse $CreateTssClientResponse = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CreateTssClientResponse $CreateTssClientResponse = null;
     /**
      * The SendTssPukMailResponse
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: SendTssPukMailResponse
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\SendTssPukMailResponse|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\SendTssPukMailResponse|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\SendTssPukMailResponse $SendTssPukMailResponse = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\SendTssPukMailResponse $SendTssPukMailResponse = null;
     /**
      * The Error
      * Meta information extracted from the WSDL
@@ -102,9 +102,9 @@ class Tss_Migration_Log extends AbstractStructBase
      * @uses Tss_Migration_Log::setPukMailSent()
      * @uses Tss_Migration_Log::setAdminName()
      * @uses Tss_Migration_Log::setAdminMail()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CancelTssClientResponse $cancelTssClientResponse
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CreateTssClientResponse $createTssClientResponse
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\SendTssPukMailResponse $sendTssPukMailResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CancelTssClientResponse $cancelTssClientResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CreateTssClientResponse $createTssClientResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\SendTssPukMailResponse $sendTssPukMailResponse
      * @param string $error
      * @param string $unitName
      * @param bool $successful
@@ -115,7 +115,7 @@ class Tss_Migration_Log extends AbstractStructBase
      * @param string $adminName
      * @param string $adminMail
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CancelTssClientResponse $cancelTssClientResponse = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\CreateTssClientResponse $createTssClientResponse = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\SendTssPukMailResponse $sendTssPukMailResponse = null, ?string $error = null, ?string $unitName = null, ?bool $successful = false, ?string $ignore_Reason = null, ?string $tSSv1_ID = null, ?string $tSSv2_ID = null, ?bool $pukMailSent = false, ?string $adminName = null, ?string $adminMail = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CancelTssClientResponse $cancelTssClientResponse = null, ?\Pggns\MidocoApi\CrmSD\StructType\CreateTssClientResponse $createTssClientResponse = null, ?\Pggns\MidocoApi\CrmSD\StructType\SendTssPukMailResponse $sendTssPukMailResponse = null, ?string $error = null, ?string $unitName = null, ?bool $successful = false, ?string $ignore_Reason = null, ?string $tSSv1_ID = null, ?string $tSSv2_ID = null, ?bool $pukMailSent = false, ?string $adminName = null, ?string $adminMail = null)
     {
         $this
             ->setCancelTssClientResponse($cancelTssClientResponse)
@@ -133,18 +133,18 @@ class Tss_Migration_Log extends AbstractStructBase
     }
     /**
      * Get CancelTssClientResponse value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CancelTssClientResponse|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CancelTssClientResponse|null
      */
-    public function getCancelTssClientResponse(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CancelTssClientResponse
+    public function getCancelTssClientResponse(): ?\Pggns\MidocoApi\CrmSD\StructType\CancelTssClientResponse
     {
         return $this->CancelTssClientResponse;
     }
     /**
      * Set CancelTssClientResponse value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CancelTssClientResponse $cancelTssClientResponse
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Tss_Migration_Log
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CancelTssClientResponse $cancelTssClientResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Log
      */
-    public function setCancelTssClientResponse(?\Pggns\MidocoApi\Api\CrmSD\StructType\CancelTssClientResponse $cancelTssClientResponse = null): self
+    public function setCancelTssClientResponse(?\Pggns\MidocoApi\CrmSD\StructType\CancelTssClientResponse $cancelTssClientResponse = null): self
     {
         $this->CancelTssClientResponse = $cancelTssClientResponse;
         
@@ -152,18 +152,18 @@ class Tss_Migration_Log extends AbstractStructBase
     }
     /**
      * Get CreateTssClientResponse value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CreateTssClientResponse|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CreateTssClientResponse|null
      */
-    public function getCreateTssClientResponse(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CreateTssClientResponse
+    public function getCreateTssClientResponse(): ?\Pggns\MidocoApi\CrmSD\StructType\CreateTssClientResponse
     {
         return $this->CreateTssClientResponse;
     }
     /**
      * Set CreateTssClientResponse value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CreateTssClientResponse $createTssClientResponse
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Tss_Migration_Log
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CreateTssClientResponse $createTssClientResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Log
      */
-    public function setCreateTssClientResponse(?\Pggns\MidocoApi\Api\CrmSD\StructType\CreateTssClientResponse $createTssClientResponse = null): self
+    public function setCreateTssClientResponse(?\Pggns\MidocoApi\CrmSD\StructType\CreateTssClientResponse $createTssClientResponse = null): self
     {
         $this->CreateTssClientResponse = $createTssClientResponse;
         
@@ -171,18 +171,18 @@ class Tss_Migration_Log extends AbstractStructBase
     }
     /**
      * Get SendTssPukMailResponse value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SendTssPukMailResponse|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SendTssPukMailResponse|null
      */
-    public function getSendTssPukMailResponse(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\SendTssPukMailResponse
+    public function getSendTssPukMailResponse(): ?\Pggns\MidocoApi\CrmSD\StructType\SendTssPukMailResponse
     {
         return $this->SendTssPukMailResponse;
     }
     /**
      * Set SendTssPukMailResponse value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\SendTssPukMailResponse $sendTssPukMailResponse
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Tss_Migration_Log
+     * @param \Pggns\MidocoApi\CrmSD\StructType\SendTssPukMailResponse $sendTssPukMailResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Log
      */
-    public function setSendTssPukMailResponse(?\Pggns\MidocoApi\Api\CrmSD\StructType\SendTssPukMailResponse $sendTssPukMailResponse = null): self
+    public function setSendTssPukMailResponse(?\Pggns\MidocoApi\CrmSD\StructType\SendTssPukMailResponse $sendTssPukMailResponse = null): self
     {
         $this->SendTssPukMailResponse = $sendTssPukMailResponse;
         
@@ -199,7 +199,7 @@ class Tss_Migration_Log extends AbstractStructBase
     /**
      * Set Error value
      * @param string $error
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Tss_Migration_Log
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Log
      */
     public function setError(?string $error = null): self
     {
@@ -222,7 +222,7 @@ class Tss_Migration_Log extends AbstractStructBase
     /**
      * Set UnitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Tss_Migration_Log
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Log
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -245,7 +245,7 @@ class Tss_Migration_Log extends AbstractStructBase
     /**
      * Set Successful value
      * @param bool $successful
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Tss_Migration_Log
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Log
      */
     public function setSuccessful(?bool $successful = false): self
     {
@@ -268,7 +268,7 @@ class Tss_Migration_Log extends AbstractStructBase
     /**
      * Set Ignore_Reason value
      * @param string $ignore_Reason
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Tss_Migration_Log
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Log
      */
     public function setIgnore_Reason(?string $ignore_Reason = null): self
     {
@@ -291,7 +291,7 @@ class Tss_Migration_Log extends AbstractStructBase
     /**
      * Set TSSv1_ID value
      * @param string $tSSv1_ID
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Tss_Migration_Log
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Log
      */
     public function setTSSv1_ID(?string $tSSv1_ID = null): self
     {
@@ -314,7 +314,7 @@ class Tss_Migration_Log extends AbstractStructBase
     /**
      * Set TSSv2_ID value
      * @param string $tSSv2_ID
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Tss_Migration_Log
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Log
      */
     public function setTSSv2_ID(?string $tSSv2_ID = null): self
     {
@@ -337,7 +337,7 @@ class Tss_Migration_Log extends AbstractStructBase
     /**
      * Set PukMailSent value
      * @param bool $pukMailSent
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Tss_Migration_Log
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Log
      */
     public function setPukMailSent(?bool $pukMailSent = false): self
     {
@@ -360,7 +360,7 @@ class Tss_Migration_Log extends AbstractStructBase
     /**
      * Set AdminName value
      * @param string $adminName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Tss_Migration_Log
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Log
      */
     public function setAdminName(?string $adminName = null): self
     {
@@ -383,7 +383,7 @@ class Tss_Migration_Log extends AbstractStructBase
     /**
      * Set AdminMail value
      * @param string $adminMail
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\Tss_Migration_Log
+     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Log
      */
     public function setAdminMail(?string $adminMail = null): self
     {

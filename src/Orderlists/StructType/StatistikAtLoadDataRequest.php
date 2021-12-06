@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -86,7 +86,7 @@ class StatistikAtLoadDataRequest extends AbstractStructBase
     /**
      * Set dataType value
      * @param string $dataType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\StatistikAtLoadDataRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\StatistikAtLoadDataRequest
      */
     public function setDataType(?string $dataType = null): self
     {
@@ -109,7 +109,7 @@ class StatistikAtLoadDataRequest extends AbstractStructBase
     /**
      * Set filterCityName value
      * @param string $filterCityName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\StatistikAtLoadDataRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\StatistikAtLoadDataRequest
      */
     public function setFilterCityName(?string $filterCityName = null): self
     {
@@ -132,7 +132,7 @@ class StatistikAtLoadDataRequest extends AbstractStructBase
     /**
      * Set filterPostalCode value
      * @param string $filterPostalCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\StatistikAtLoadDataRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\StatistikAtLoadDataRequest
      */
     public function setFilterPostalCode(?string $filterPostalCode = null): self
     {
@@ -155,7 +155,7 @@ class StatistikAtLoadDataRequest extends AbstractStructBase
     /**
      * Set filterRegion value
      * @param string $filterRegion
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\StatistikAtLoadDataRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\StatistikAtLoadDataRequest
      */
     public function setFilterRegion(?string $filterRegion = null): self
     {
@@ -178,7 +178,7 @@ class StatistikAtLoadDataRequest extends AbstractStructBase
     /**
      * Set filterStreetName value
      * @param string $filterStreetName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\StatistikAtLoadDataRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\StatistikAtLoadDataRequest
      */
     public function setFilterStreetName(?string $filterStreetName = null): self
     {

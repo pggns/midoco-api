@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SearchMediatorChargesRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorChargesRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -102,7 +102,7 @@ class SearchMediatorChargesRequest extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorChargesRequest
      */
     public function setChargeId(?int $chargeId = null): self
     {
@@ -125,7 +125,7 @@ class SearchMediatorChargesRequest extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorChargesRequest
      */
     public function setAmount(?float $amount = null): self
     {
@@ -148,7 +148,7 @@ class SearchMediatorChargesRequest extends AbstractStructBase
     /**
      * Set fromDate value
      * @param string $fromDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorChargesRequest
      */
     public function setFromDate(?string $fromDate = null): self
     {
@@ -171,7 +171,7 @@ class SearchMediatorChargesRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorChargesRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -194,7 +194,7 @@ class SearchMediatorChargesRequest extends AbstractStructBase
     /**
      * Set noOfRecords value
      * @param int $noOfRecords
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorChargesRequest
      */
     public function setNoOfRecords(?int $noOfRecords = null): self
     {

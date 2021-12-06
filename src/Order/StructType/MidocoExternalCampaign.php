@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,13 +20,13 @@ class MidocoExternalCampaign extends ExternalCampaignDTO
      * extCampId should be omitted, it will not be used. The externalReference can be used to provide a link that is accessible in the midoffice GUI. The recipient can be used to provide the email address to which a campaign mail was sent.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignAssignDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\ExternalCampaignAssignDTO[]
      */
     protected ?array $ExternalCampaignAssignment = null;
     /**
      * Constructor method for MidocoExternalCampaign
      * @uses MidocoExternalCampaign::setExternalCampaignAssignment()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignAssignDTO[] $externalCampaignAssignment
+     * @param \Pggns\MidocoApi\Order\StructType\ExternalCampaignAssignDTO[] $externalCampaignAssignment
      */
     public function __construct(?array $externalCampaignAssignment = null)
     {
@@ -35,7 +35,7 @@ class MidocoExternalCampaign extends ExternalCampaignDTO
     }
     /**
      * Get ExternalCampaignAssignment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignAssignDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalCampaignAssignDTO[]
      */
     public function getExternalCampaignAssignment(): ?array
     {
@@ -56,12 +56,12 @@ class MidocoExternalCampaign extends ExternalCampaignDTO
         $invalidValues = [];
         foreach ($values as $midocoExternalCampaignExternalCampaignAssignmentItem) {
             // validation for constraint: itemType
-            if (!$midocoExternalCampaignExternalCampaignAssignmentItem instanceof \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignAssignDTO) {
+            if (!$midocoExternalCampaignExternalCampaignAssignmentItem instanceof \Pggns\MidocoApi\Order\StructType\ExternalCampaignAssignDTO) {
                 $invalidValues[] = is_object($midocoExternalCampaignExternalCampaignAssignmentItem) ? get_class($midocoExternalCampaignExternalCampaignAssignmentItem) : sprintf('%s(%s)', gettype($midocoExternalCampaignExternalCampaignAssignmentItem), var_export($midocoExternalCampaignExternalCampaignAssignmentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ExternalCampaignAssignment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ExternalCampaignAssignment property can only contain items of type \Pggns\MidocoApi\Order\StructType\ExternalCampaignAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -70,8 +70,8 @@ class MidocoExternalCampaign extends ExternalCampaignDTO
     /**
      * Set ExternalCampaignAssignment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignAssignDTO[] $externalCampaignAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalCampaign
+     * @param \Pggns\MidocoApi\Order\StructType\ExternalCampaignAssignDTO[] $externalCampaignAssignment
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoExternalCampaign
      */
     public function setExternalCampaignAssignment(?array $externalCampaignAssignment = null): self
     {
@@ -86,14 +86,14 @@ class MidocoExternalCampaign extends ExternalCampaignDTO
     /**
      * Add item to ExternalCampaignAssignment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignAssignDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalCampaign
+     * @param \Pggns\MidocoApi\Order\StructType\ExternalCampaignAssignDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoExternalCampaign
      */
-    public function addToExternalCampaignAssignment(\Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignAssignDTO $item): self
+    public function addToExternalCampaignAssignment(\Pggns\MidocoApi\Order\StructType\ExternalCampaignAssignDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignAssignDTO) {
-            throw new InvalidArgumentException(sprintf('The ExternalCampaignAssignment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\ExternalCampaignAssignDTO) {
+            throw new InvalidArgumentException(sprintf('The ExternalCampaignAssignment property can only contain items of type \Pggns\MidocoApi\Order\StructType\ExternalCampaignAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ExternalCampaignAssignment[] = $item;
         

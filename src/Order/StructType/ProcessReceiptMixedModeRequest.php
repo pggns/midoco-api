@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ProcessReceiptMixedModeRequest extends AbstractStructBase
     /**
      * Set receiptId value
      * @param int $receiptId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProcessReceiptMixedModeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ProcessReceiptMixedModeRequest
      */
     public function setReceiptId(?int $receiptId = null): self
     {

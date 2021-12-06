@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetQueryCriteriaOpNamesRequest extends AbstractStructBase
     /**
      * Set fieldType value
      * @param string $fieldType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetQueryCriteriaOpNamesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetQueryCriteriaOpNamesRequest
      */
     public function setFieldType(?string $fieldType = null): self
     {

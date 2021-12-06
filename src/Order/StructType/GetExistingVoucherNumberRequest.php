@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -106,7 +106,7 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
     /**
      * Set voucherNo value
      * @param string $voucherNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExistingVoucherNumberRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
      */
     public function setVoucherNo(?string $voucherNo = null): self
     {
@@ -129,7 +129,7 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
     /**
      * Set dateFrom value
      * @param string $dateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExistingVoucherNumberRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
      */
     public function setDateFrom(?string $dateFrom = null): self
     {
@@ -152,7 +152,7 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
     /**
      * Set dateUntil value
      * @param string $dateUntil
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExistingVoucherNumberRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
      */
     public function setDateUntil(?string $dateUntil = null): self
     {
@@ -175,7 +175,7 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
     /**
      * Set showWithZeroPrice value
      * @param bool $showWithZeroPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExistingVoucherNumberRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
      */
     public function setShowWithZeroPrice(?bool $showWithZeroPrice = null): self
     {
@@ -198,7 +198,7 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
     /**
      * Set extendedInfo value
      * @param bool $extendedInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExistingVoucherNumberRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
      */
     public function setExtendedInfo(?bool $extendedInfo = null): self
     {
@@ -221,7 +221,7 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
     /**
      * Set sellitemId value
      * @param int $sellitemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExistingVoucherNumberRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
      */
     public function setSellitemId(?int $sellitemId = null): self
     {
@@ -244,7 +244,7 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExistingVoucherNumberRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -294,7 +294,7 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
      * Set voucherType value
      * @throws InvalidArgumentException
      * @param string[] $voucherType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExistingVoucherNumberRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
      */
     public function setVoucherType(?array $voucherType = null): self
     {
@@ -310,7 +310,7 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
      * Add item to voucherType value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExistingVoucherNumberRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
      */
     public function addToVoucherType(string $item): self
     {
@@ -333,7 +333,7 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
     /**
      * Set securityCode value
      * @param string $securityCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExistingVoucherNumberRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
      */
     public function setSecurityCode(?string $securityCode = null): self
     {

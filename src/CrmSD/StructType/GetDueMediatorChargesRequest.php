@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -59,7 +59,7 @@ class GetDueMediatorChargesRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetDueMediatorChargesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDueMediatorChargesRequest
      */
     public function setCustomerId(int $customerId): self
     {
@@ -82,7 +82,7 @@ class GetDueMediatorChargesRequest extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetDueMediatorChargesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDueMediatorChargesRequest
      */
     public function setDueDate(string $dueDate): self
     {
@@ -105,7 +105,7 @@ class GetDueMediatorChargesRequest extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetDueMediatorChargesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDueMediatorChargesRequest
      */
     public function setChargeId(?int $chargeId = null): self
     {

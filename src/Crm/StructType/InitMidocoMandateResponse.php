@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class InitMidocoMandateResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 1
      * - ref: MidocoMandate
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoMandate
      */
-    protected \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $MidocoMandate;
+    protected \Pggns\MidocoApi\Crm\StructType\MidocoMandate $MidocoMandate;
     /**
      * The isCompanyCustomer
      * Meta information extracted from the WSDL
@@ -32,10 +32,10 @@ class InitMidocoMandateResponse extends AbstractStructBase
      * Constructor method for InitMidocoMandateResponse
      * @uses InitMidocoMandateResponse::setMidocoMandate()
      * @uses InitMidocoMandateResponse::setIsCompanyCustomer()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $midocoMandate
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMandate $midocoMandate
      * @param bool $isCompanyCustomer
      */
-    public function __construct(\Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $midocoMandate, bool $isCompanyCustomer)
+    public function __construct(\Pggns\MidocoApi\Crm\StructType\MidocoMandate $midocoMandate, bool $isCompanyCustomer)
     {
         $this
             ->setMidocoMandate($midocoMandate)
@@ -43,18 +43,18 @@ class InitMidocoMandateResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMandate value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoMandate
      */
-    public function getMidocoMandate(): \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate
+    public function getMidocoMandate(): \Pggns\MidocoApi\Crm\StructType\MidocoMandate
     {
         return $this->MidocoMandate;
     }
     /**
      * Set MidocoMandate value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $midocoMandate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\InitMidocoMandateResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMandate $midocoMandate
+     * @return \Pggns\MidocoApi\Crm\StructType\InitMidocoMandateResponse
      */
-    public function setMidocoMandate(\Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $midocoMandate): self
+    public function setMidocoMandate(\Pggns\MidocoApi\Crm\StructType\MidocoMandate $midocoMandate): self
     {
         $this->MidocoMandate = $midocoMandate;
         
@@ -71,7 +71,7 @@ class InitMidocoMandateResponse extends AbstractStructBase
     /**
      * Set isCompanyCustomer value
      * @param bool $isCompanyCustomer
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\InitMidocoMandateResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\InitMidocoMandateResponse
      */
     public function setIsCompanyCustomer(bool $isCompanyCustomer): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetPrintQueue4OrgunitResponse extends AbstractStructBase
     /**
      * Set queueId value
      * @param int $queueId
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetPrintQueue4OrgunitResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetPrintQueue4OrgunitResponse
      */
     public function setQueueId(?int $queueId = null): self
     {

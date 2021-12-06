@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -167,7 +167,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -190,7 +190,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setTitle(?string $title = null): self
     {
@@ -213,7 +213,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setName(?string $name = null): self
     {
@@ -236,7 +236,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set firstName value
      * @param string $firstName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setFirstName(?string $firstName = null): self
     {
@@ -259,7 +259,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set birthday value
      * @param string $birthday
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setBirthday(?string $birthday = null): self
     {
@@ -282,7 +282,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set travelerType value
      * @param string $travelerType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setTravelerType(?string $travelerType = null): self
     {
@@ -305,7 +305,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setStreet(?string $street = null): self
     {
@@ -328,7 +328,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -351,7 +351,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -374,7 +374,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setCity(?string $city = null): self
     {
@@ -397,7 +397,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setCountry(?string $country = null): self
     {
@@ -420,7 +420,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set defaultEmail value
      * @param string $defaultEmail
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setDefaultEmail(?string $defaultEmail = null): self
     {
@@ -443,7 +443,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set defaultFax value
      * @param string $defaultFax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setDefaultFax(?string $defaultFax = null): self
     {
@@ -466,7 +466,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set defaultMobile value
      * @param string $defaultMobile
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setDefaultMobile(?string $defaultMobile = null): self
     {
@@ -489,7 +489,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set defaultPhone value
      * @param string $defaultPhone
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setDefaultPhone(?string $defaultPhone = null): self
     {
@@ -512,7 +512,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set defaultPhoneBusiness value
      * @param string $defaultPhoneBusiness
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setDefaultPhoneBusiness(?string $defaultPhoneBusiness = null): self
     {
@@ -535,7 +535,7 @@ class MidocoBirthdayListType extends AbstractStructBase
     /**
      * Set defaultWeb value
      * @param string $defaultWeb
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBirthdayListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBirthdayListType
      */
     public function setDefaultWeb(?string $defaultWeb = null): self
     {

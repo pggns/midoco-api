@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class GetBankNumberResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoBankCode[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoBankCode[]
      */
     protected ?array $MidocoBankCode = null;
     /**
      * Constructor method for GetBankNumberResponse
      * @uses GetBankNumberResponse::setMidocoBankCode()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBankCode[] $midocoBankCode
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBankCode[] $midocoBankCode
      */
     public function __construct(?array $midocoBankCode = null)
     {
@@ -33,7 +33,7 @@ class GetBankNumberResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBankCode value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBankCode[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBankCode[]
      */
     public function getMidocoBankCode(): ?array
     {
@@ -54,12 +54,12 @@ class GetBankNumberResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBankNumberResponseMidocoBankCodeItem) {
             // validation for constraint: itemType
-            if (!$getBankNumberResponseMidocoBankCodeItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoBankCode) {
+            if (!$getBankNumberResponseMidocoBankCodeItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoBankCode) {
                 $invalidValues[] = is_object($getBankNumberResponseMidocoBankCodeItem) ? get_class($getBankNumberResponseMidocoBankCodeItem) : sprintf('%s(%s)', gettype($getBankNumberResponseMidocoBankCodeItem), var_export($getBankNumberResponseMidocoBankCodeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBankCode property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoBankCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBankCode property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoBankCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class GetBankNumberResponse extends AbstractStructBase
     /**
      * Set MidocoBankCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBankCode[] $midocoBankCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetBankNumberResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBankCode[] $midocoBankCode
+     * @return \Pggns\MidocoApi\Documents\StructType\GetBankNumberResponse
      */
     public function setMidocoBankCode(?array $midocoBankCode = null): self
     {
@@ -84,14 +84,14 @@ class GetBankNumberResponse extends AbstractStructBase
     /**
      * Add item to MidocoBankCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBankCode $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetBankNumberResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBankCode $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetBankNumberResponse
      */
-    public function addToMidocoBankCode(\Pggns\MidocoApi\Api\Documents\StructType\MidocoBankCode $item): self
+    public function addToMidocoBankCode(\Pggns\MidocoApi\Documents\StructType\MidocoBankCode $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoBankCode) {
-            throw new InvalidArgumentException(sprintf('The MidocoBankCode property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoBankCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoBankCode) {
+            throw new InvalidArgumentException(sprintf('The MidocoBankCode property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoBankCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBankCode[] = $item;
         

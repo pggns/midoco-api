@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoSellItemTooltip extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemTooltip
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemTooltip
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -78,7 +78,7 @@ class MidocoSellItemTooltip extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemTooltip
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemTooltip
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -101,7 +101,7 @@ class MidocoSellItemTooltip extends AbstractStructBase
     /**
      * Set htmlTooltip value
      * @param string $htmlTooltip
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemTooltip
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemTooltip
      */
     public function setHtmlTooltip(?string $htmlTooltip = null): self
     {

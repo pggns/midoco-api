@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoSystemOrgunitClosingResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSystemOrgunitClosing
-     * @var \Pggns\MidocoApi\Api\System\StructType\OrgunitClosingDTO[]
+     * @var \Pggns\MidocoApi\System\StructType\OrgunitClosingDTO[]
      */
     protected ?array $MidocoSystemOrgunitClosing = null;
     /**
      * Constructor method for GetMidocoSystemOrgunitClosingResponse
      * @uses GetMidocoSystemOrgunitClosingResponse::setMidocoSystemOrgunitClosing()
-     * @param \Pggns\MidocoApi\Api\System\StructType\OrgunitClosingDTO[] $midocoSystemOrgunitClosing
+     * @param \Pggns\MidocoApi\System\StructType\OrgunitClosingDTO[] $midocoSystemOrgunitClosing
      */
     public function __construct(?array $midocoSystemOrgunitClosing = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoSystemOrgunitClosingResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSystemOrgunitClosing value
-     * @return \Pggns\MidocoApi\Api\System\StructType\OrgunitClosingDTO[]
+     * @return \Pggns\MidocoApi\System\StructType\OrgunitClosingDTO[]
      */
     public function getMidocoSystemOrgunitClosing(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoSystemOrgunitClosingResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem) {
             // validation for constraint: itemType
-            if (!$getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem instanceof \Pggns\MidocoApi\Api\System\StructType\OrgunitClosingDTO) {
+            if (!$getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem instanceof \Pggns\MidocoApi\System\StructType\OrgunitClosingDTO) {
                 $invalidValues[] = is_object($getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem) ? get_class($getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem) : sprintf('%s(%s)', gettype($getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem), var_export($getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSystemOrgunitClosing property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\OrgunitClosingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSystemOrgunitClosing property can only contain items of type \Pggns\MidocoApi\System\StructType\OrgunitClosingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoSystemOrgunitClosingResponse extends AbstractStructBase
     /**
      * Set MidocoSystemOrgunitClosing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\OrgunitClosingDTO[] $midocoSystemOrgunitClosing
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetMidocoSystemOrgunitClosingResponse
+     * @param \Pggns\MidocoApi\System\StructType\OrgunitClosingDTO[] $midocoSystemOrgunitClosing
+     * @return \Pggns\MidocoApi\System\StructType\GetMidocoSystemOrgunitClosingResponse
      */
     public function setMidocoSystemOrgunitClosing(?array $midocoSystemOrgunitClosing = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoSystemOrgunitClosingResponse extends AbstractStructBase
     /**
      * Add item to MidocoSystemOrgunitClosing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\OrgunitClosingDTO $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetMidocoSystemOrgunitClosingResponse
+     * @param \Pggns\MidocoApi\System\StructType\OrgunitClosingDTO $item
+     * @return \Pggns\MidocoApi\System\StructType\GetMidocoSystemOrgunitClosingResponse
      */
-    public function addToMidocoSystemOrgunitClosing(\Pggns\MidocoApi\Api\System\StructType\OrgunitClosingDTO $item): self
+    public function addToMidocoSystemOrgunitClosing(\Pggns\MidocoApi\System\StructType\OrgunitClosingDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\OrgunitClosingDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSystemOrgunitClosing property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\OrgunitClosingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\OrgunitClosingDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSystemOrgunitClosing property can only contain items of type \Pggns\MidocoApi\System\StructType\OrgunitClosingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSystemOrgunitClosing[] = $item;
         

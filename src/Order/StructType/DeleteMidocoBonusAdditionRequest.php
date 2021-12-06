@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteMidocoBonusAdditionRequest extends AbstractStructBase
      * The MidocoBonusAddition
      * Meta information extracted from the WSDL
      * - ref: MidocoBonusAddition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\BonusAdditionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO $MidocoBonusAddition = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\BonusAdditionDTO $MidocoBonusAddition = null;
     /**
      * Constructor method for DeleteMidocoBonusAdditionRequest
      * @uses DeleteMidocoBonusAdditionRequest::setMidocoBonusAddition()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO $midocoBonusAddition
+     * @param \Pggns\MidocoApi\Order\StructType\BonusAdditionDTO $midocoBonusAddition
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO $midocoBonusAddition = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\BonusAdditionDTO $midocoBonusAddition = null)
     {
         $this
             ->setMidocoBonusAddition($midocoBonusAddition);
     }
     /**
      * Get MidocoBonusAddition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\BonusAdditionDTO|null
      */
-    public function getMidocoBonusAddition(): ?\Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO
+    public function getMidocoBonusAddition(): ?\Pggns\MidocoApi\Order\StructType\BonusAdditionDTO
     {
         return $this->MidocoBonusAddition;
     }
     /**
      * Set MidocoBonusAddition value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO $midocoBonusAddition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoBonusAdditionRequest
+     * @param \Pggns\MidocoApi\Order\StructType\BonusAdditionDTO $midocoBonusAddition
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMidocoBonusAdditionRequest
      */
-    public function setMidocoBonusAddition(?\Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO $midocoBonusAddition = null): self
+    public function setMidocoBonusAddition(?\Pggns\MidocoApi\Order\StructType\BonusAdditionDTO $midocoBonusAddition = null): self
     {
         $this->MidocoBonusAddition = $midocoBonusAddition;
         

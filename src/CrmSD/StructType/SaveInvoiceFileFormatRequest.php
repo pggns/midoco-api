@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,25 +18,25 @@ class SaveInvoiceFileFormatRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoInvoiceFileFormat
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoInvoiceFileFormat|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceFileFormat|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoInvoiceFileFormat $MidocoInvoiceFileFormat = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceFileFormat $MidocoInvoiceFileFormat = null;
     /**
      * The MidocoInvoiceFileFormatContent
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoInvoiceFileFormatContent
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\InvoiceFileFormatContentDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\InvoiceFileFormatContentDTO $MidocoInvoiceFileFormatContent = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO $MidocoInvoiceFileFormatContent = null;
     /**
      * Constructor method for SaveInvoiceFileFormatRequest
      * @uses SaveInvoiceFileFormatRequest::setMidocoInvoiceFileFormat()
      * @uses SaveInvoiceFileFormatRequest::setMidocoInvoiceFileFormatContent()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoInvoiceFileFormat $midocoInvoiceFileFormat
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\InvoiceFileFormatContentDTO $midocoInvoiceFileFormatContent
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceFileFormat $midocoInvoiceFileFormat
+     * @param \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO $midocoInvoiceFileFormatContent
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoInvoiceFileFormat $midocoInvoiceFileFormat = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\InvoiceFileFormatContentDTO $midocoInvoiceFileFormatContent = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceFileFormat $midocoInvoiceFileFormat = null, ?\Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO $midocoInvoiceFileFormatContent = null)
     {
         $this
             ->setMidocoInvoiceFileFormat($midocoInvoiceFileFormat)
@@ -44,18 +44,18 @@ class SaveInvoiceFileFormatRequest extends AbstractStructBase
     }
     /**
      * Get MidocoInvoiceFileFormat value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoInvoiceFileFormat|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceFileFormat|null
      */
-    public function getMidocoInvoiceFileFormat(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoInvoiceFileFormat
+    public function getMidocoInvoiceFileFormat(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceFileFormat
     {
         return $this->MidocoInvoiceFileFormat;
     }
     /**
      * Set MidocoInvoiceFileFormat value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoInvoiceFileFormat $midocoInvoiceFileFormat
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveInvoiceFileFormatRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceFileFormat $midocoInvoiceFileFormat
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveInvoiceFileFormatRequest
      */
-    public function setMidocoInvoiceFileFormat(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoInvoiceFileFormat $midocoInvoiceFileFormat = null): self
+    public function setMidocoInvoiceFileFormat(?\Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceFileFormat $midocoInvoiceFileFormat = null): self
     {
         $this->MidocoInvoiceFileFormat = $midocoInvoiceFileFormat;
         
@@ -63,18 +63,18 @@ class SaveInvoiceFileFormatRequest extends AbstractStructBase
     }
     /**
      * Get MidocoInvoiceFileFormatContent value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\InvoiceFileFormatContentDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO|null
      */
-    public function getMidocoInvoiceFileFormatContent(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\InvoiceFileFormatContentDTO
+    public function getMidocoInvoiceFileFormatContent(): ?\Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO
     {
         return $this->MidocoInvoiceFileFormatContent;
     }
     /**
      * Set MidocoInvoiceFileFormatContent value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\InvoiceFileFormatContentDTO $midocoInvoiceFileFormatContent
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveInvoiceFileFormatRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO $midocoInvoiceFileFormatContent
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveInvoiceFileFormatRequest
      */
-    public function setMidocoInvoiceFileFormatContent(?\Pggns\MidocoApi\Api\CrmSD\StructType\InvoiceFileFormatContentDTO $midocoInvoiceFileFormatContent = null): self
+    public function setMidocoInvoiceFileFormatContent(?\Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO $midocoInvoiceFileFormatContent = null): self
     {
         $this->MidocoInvoiceFileFormatContent = $midocoInvoiceFileFormatContent;
         

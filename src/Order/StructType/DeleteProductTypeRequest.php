@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteProductTypeRequest extends AbstractStructBase
      * The MidocoProductType
      * Meta information extracted from the WSDL
      * - ref: MidocoProductType
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoProductTypeType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoProductTypeType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoProductTypeType $MidocoProductType = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoProductTypeType $MidocoProductType = null;
     /**
      * Constructor method for DeleteProductTypeRequest
      * @uses DeleteProductTypeRequest::setMidocoProductType()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoProductTypeType $midocoProductType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoProductTypeType $midocoProductType
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoProductTypeType $midocoProductType = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoProductTypeType $midocoProductType = null)
     {
         $this
             ->setMidocoProductType($midocoProductType);
     }
     /**
      * Get MidocoProductType value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoProductTypeType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoProductTypeType|null
      */
-    public function getMidocoProductType(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoProductTypeType
+    public function getMidocoProductType(): ?\Pggns\MidocoApi\Order\StructType\MidocoProductTypeType
     {
         return $this->MidocoProductType;
     }
     /**
      * Set MidocoProductType value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoProductTypeType $midocoProductType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteProductTypeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoProductTypeType $midocoProductType
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteProductTypeRequest
      */
-    public function setMidocoProductType(?\Pggns\MidocoApi\Api\Order\StructType\MidocoProductTypeType $midocoProductType = null): self
+    public function setMidocoProductType(?\Pggns\MidocoApi\Order\StructType\MidocoProductTypeType $midocoProductType = null): self
     {
         $this->MidocoProductType = $midocoProductType;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class DeleteAutoInvoiceConditionsRequest extends AbstractStructBase
     /**
      * Set conditionId value
      * @param int $conditionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteAutoInvoiceConditionsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteAutoInvoiceConditionsRequest
      */
     public function setConditionId(?int $conditionId = null): self
     {

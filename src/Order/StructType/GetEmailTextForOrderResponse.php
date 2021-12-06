@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetEmailTextForOrderResponse extends AbstractStructBase
     /**
      * Set subjectText value
      * @param string $subjectText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailTextForOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailTextForOrderResponse
      */
     public function setSubjectText(?string $subjectText = null): self
     {
@@ -70,7 +70,7 @@ class GetEmailTextForOrderResponse extends AbstractStructBase
     /**
      * Set bodyText value
      * @param string $bodyText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailTextForOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailTextForOrderResponse
      */
     public function setBodyText(?string $bodyText = null): self
     {

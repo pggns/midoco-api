@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set businessDivision value
      * @param string $businessDivision
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setBusinessDivision(?string $businessDivision = null): self
     {
@@ -182,7 +182,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -205,7 +205,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setStatus(?string $status = null): self
     {
@@ -228,7 +228,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set orderType value
      * @param string $orderType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setOrderType(?string $orderType = null): self
     {
@@ -251,7 +251,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set authorizedByName value
      * @param string $authorizedByName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setAuthorizedByName(?string $authorizedByName = null): self
     {
@@ -274,7 +274,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -297,7 +297,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -320,7 +320,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param string $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setOrderNo(?string $orderNo = null): self
     {
@@ -343,7 +343,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -366,7 +366,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -389,7 +389,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setPrice(?float $price = null): self
     {
@@ -412,7 +412,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set vkPrice value
      * @param float $vkPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setVkPrice(?float $vkPrice = null): self
     {
@@ -435,7 +435,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set ekPrice value
      * @param float $ekPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setEkPrice(?float $ekPrice = null): self
     {
@@ -458,7 +458,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set dbAbsAmount value
      * @param float $dbAbsAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setDbAbsAmount(?float $dbAbsAmount = null): self
     {
@@ -481,7 +481,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set dbPercent value
      * @param float $dbPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setDbPercent(?float $dbPercent = null): self
     {
@@ -504,7 +504,7 @@ class MidocoMarginExtListType extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListType
      */
     public function setComment(?string $comment = null): self
     {

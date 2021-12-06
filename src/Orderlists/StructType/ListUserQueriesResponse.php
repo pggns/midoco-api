@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListUserQueriesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoUserQueryInfo
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserQueryInfo[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoUserQueryInfo[]
      */
     protected ?array $MidocoUserQueryInfo = null;
     /**
      * Constructor method for ListUserQueriesResponse
      * @uses ListUserQueriesResponse::setMidocoUserQueryInfo()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserQueryInfo[] $midocoUserQueryInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoUserQueryInfo[] $midocoUserQueryInfo
      */
     public function __construct(?array $midocoUserQueryInfo = null)
     {
@@ -34,7 +34,7 @@ class ListUserQueriesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoUserQueryInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserQueryInfo[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoUserQueryInfo[]
      */
     public function getMidocoUserQueryInfo(): ?array
     {
@@ -55,12 +55,12 @@ class ListUserQueriesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listUserQueriesResponseMidocoUserQueryInfoItem) {
             // validation for constraint: itemType
-            if (!$listUserQueriesResponseMidocoUserQueryInfoItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserQueryInfo) {
+            if (!$listUserQueriesResponseMidocoUserQueryInfoItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoUserQueryInfo) {
                 $invalidValues[] = is_object($listUserQueriesResponseMidocoUserQueryInfoItem) ? get_class($listUserQueriesResponseMidocoUserQueryInfoItem) : sprintf('%s(%s)', gettype($listUserQueriesResponseMidocoUserQueryInfoItem), var_export($listUserQueriesResponseMidocoUserQueryInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoUserQueryInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserQueryInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoUserQueryInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoUserQueryInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListUserQueriesResponse extends AbstractStructBase
     /**
      * Set MidocoUserQueryInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserQueryInfo[] $midocoUserQueryInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListUserQueriesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoUserQueryInfo[] $midocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListUserQueriesResponse
      */
     public function setMidocoUserQueryInfo(?array $midocoUserQueryInfo = null): self
     {
@@ -85,14 +85,14 @@ class ListUserQueriesResponse extends AbstractStructBase
     /**
      * Add item to MidocoUserQueryInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserQueryInfo $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListUserQueriesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoUserQueryInfo $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListUserQueriesResponse
      */
-    public function addToMidocoUserQueryInfo(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserQueryInfo $item): self
+    public function addToMidocoUserQueryInfo(\Pggns\MidocoApi\Orderlists\StructType\MidocoUserQueryInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserQueryInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoUserQueryInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserQueryInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoUserQueryInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoUserQueryInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoUserQueryInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoUserQueryInfo[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class PrintUserBonusCalculationRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoBonusEmployee
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee[]
      */
     protected ?array $MidocoBonusEmployee = null;
     /**
@@ -36,7 +36,7 @@ class PrintUserBonusCalculationRequest extends AbstractStructBase
      * @uses PrintUserBonusCalculationRequest::setMidocoBonusEmployee()
      * @uses PrintUserBonusCalculationRequest::setIsPreview()
      * @uses PrintUserBonusCalculationRequest::setTest()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee[] $midocoBonusEmployee
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee[] $midocoBonusEmployee
      * @param bool $isPreview
      * @param bool $test
      */
@@ -49,7 +49,7 @@ class PrintUserBonusCalculationRequest extends AbstractStructBase
     }
     /**
      * Get MidocoBonusEmployee value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee[]
      */
     public function getMidocoBonusEmployee(): ?array
     {
@@ -70,12 +70,12 @@ class PrintUserBonusCalculationRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $printUserBonusCalculationRequestMidocoBonusEmployeeItem) {
             // validation for constraint: itemType
-            if (!$printUserBonusCalculationRequestMidocoBonusEmployeeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee) {
+            if (!$printUserBonusCalculationRequestMidocoBonusEmployeeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee) {
                 $invalidValues[] = is_object($printUserBonusCalculationRequestMidocoBonusEmployeeItem) ? get_class($printUserBonusCalculationRequestMidocoBonusEmployeeItem) : sprintf('%s(%s)', gettype($printUserBonusCalculationRequestMidocoBonusEmployeeItem), var_export($printUserBonusCalculationRequestMidocoBonusEmployeeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBonusEmployee property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBonusEmployee property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -84,8 +84,8 @@ class PrintUserBonusCalculationRequest extends AbstractStructBase
     /**
      * Set MidocoBonusEmployee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee[] $midocoBonusEmployee
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintUserBonusCalculationRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee[] $midocoBonusEmployee
+     * @return \Pggns\MidocoApi\Order\StructType\PrintUserBonusCalculationRequest
      */
     public function setMidocoBonusEmployee(?array $midocoBonusEmployee = null): self
     {
@@ -100,14 +100,14 @@ class PrintUserBonusCalculationRequest extends AbstractStructBase
     /**
      * Add item to MidocoBonusEmployee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintUserBonusCalculationRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee $item
+     * @return \Pggns\MidocoApi\Order\StructType\PrintUserBonusCalculationRequest
      */
-    public function addToMidocoBonusEmployee(\Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee $item): self
+    public function addToMidocoBonusEmployee(\Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee) {
-            throw new InvalidArgumentException(sprintf('The MidocoBonusEmployee property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployee, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee) {
+            throw new InvalidArgumentException(sprintf('The MidocoBonusEmployee property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployee, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBonusEmployee[] = $item;
         
@@ -124,7 +124,7 @@ class PrintUserBonusCalculationRequest extends AbstractStructBase
     /**
      * Set isPreview value
      * @param bool $isPreview
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintUserBonusCalculationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintUserBonusCalculationRequest
      */
     public function setIsPreview(?bool $isPreview = null): self
     {
@@ -147,7 +147,7 @@ class PrintUserBonusCalculationRequest extends AbstractStructBase
     /**
      * Set test value
      * @param bool $test
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintUserBonusCalculationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintUserBonusCalculationRequest
      */
     public function setTest(?bool $test = null): self
     {

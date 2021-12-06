@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MisCustomerResultDTO extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -94,7 +94,7 @@ class MisCustomerResultDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -117,7 +117,7 @@ class MisCustomerResultDTO extends AbstractStructBase
     /**
      * Set executed value
      * @param bool $executed
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO
      */
     public function setExecuted(?bool $executed = null): self
     {
@@ -140,7 +140,7 @@ class MisCustomerResultDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -163,7 +163,7 @@ class MisCustomerResultDTO extends AbstractStructBase
     /**
      * Set pageNo value
      * @param int $pageNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerResultDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerResultDTO
      */
     public function setPageNo(?int $pageNo = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetMidocoChargeRequest extends AbstractStructBase
     /**
      * Set crmChargeId value
      * @param int $crmChargeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMidocoChargeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMidocoChargeRequest
      */
     public function setCrmChargeId(int $crmChargeId): self
     {

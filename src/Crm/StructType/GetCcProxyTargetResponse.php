@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCcProxyTargetResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCcProxyTarget
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcProxyTarget[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCcProxyTarget[]
      */
     protected ?array $MidocoCcProxyTarget = null;
     /**
      * Constructor method for GetCcProxyTargetResponse
      * @uses GetCcProxyTargetResponse::setMidocoCcProxyTarget()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcProxyTarget[] $midocoCcProxyTarget
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCcProxyTarget[] $midocoCcProxyTarget
      */
     public function __construct(?array $midocoCcProxyTarget = null)
     {
@@ -34,7 +34,7 @@ class GetCcProxyTargetResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCcProxyTarget value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcProxyTarget[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCcProxyTarget[]
      */
     public function getMidocoCcProxyTarget(): ?array
     {
@@ -55,12 +55,12 @@ class GetCcProxyTargetResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCcProxyTargetResponseMidocoCcProxyTargetItem) {
             // validation for constraint: itemType
-            if (!$getCcProxyTargetResponseMidocoCcProxyTargetItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcProxyTarget) {
+            if (!$getCcProxyTargetResponseMidocoCcProxyTargetItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCcProxyTarget) {
                 $invalidValues[] = is_object($getCcProxyTargetResponseMidocoCcProxyTargetItem) ? get_class($getCcProxyTargetResponseMidocoCcProxyTargetItem) : sprintf('%s(%s)', gettype($getCcProxyTargetResponseMidocoCcProxyTargetItem), var_export($getCcProxyTargetResponseMidocoCcProxyTargetItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCcProxyTarget property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcProxyTarget, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCcProxyTarget property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCcProxyTarget, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCcProxyTargetResponse extends AbstractStructBase
     /**
      * Set MidocoCcProxyTarget value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcProxyTarget[] $midocoCcProxyTarget
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCcProxyTargetResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCcProxyTarget[] $midocoCcProxyTarget
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCcProxyTargetResponse
      */
     public function setMidocoCcProxyTarget(?array $midocoCcProxyTarget = null): self
     {
@@ -85,14 +85,14 @@ class GetCcProxyTargetResponse extends AbstractStructBase
     /**
      * Add item to MidocoCcProxyTarget value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcProxyTarget $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCcProxyTargetResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCcProxyTarget $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCcProxyTargetResponse
      */
-    public function addToMidocoCcProxyTarget(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCcProxyTarget $item): self
+    public function addToMidocoCcProxyTarget(\Pggns\MidocoApi\Crm\StructType\MidocoCcProxyTarget $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcProxyTarget) {
-            throw new InvalidArgumentException(sprintf('The MidocoCcProxyTarget property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcProxyTarget, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCcProxyTarget) {
+            throw new InvalidArgumentException(sprintf('The MidocoCcProxyTarget property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCcProxyTarget, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCcProxyTarget[] = $item;
         

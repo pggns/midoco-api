@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class CompareDatastoreEntryResponse extends AbstractStructBase
     /**
      * Set equals value
      * @param bool $equals
-     * @return \Pggns\MidocoApi\Api\System\StructType\CompareDatastoreEntryResponse
+     * @return \Pggns\MidocoApi\System\StructType\CompareDatastoreEntryResponse
      */
     public function setEquals(?bool $equals = false): self
     {

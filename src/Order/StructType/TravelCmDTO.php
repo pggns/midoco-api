@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -199,7 +199,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set area value
      * @param string $area
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setArea(?string $area = null): self
     {
@@ -222,7 +222,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set category value
      * @param float $category
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setCategory(?float $category = null): self
     {
@@ -245,7 +245,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -268,7 +268,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -291,7 +291,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set countryDesc value
      * @param string $countryDesc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setCountryDesc(?string $countryDesc = null): self
     {
@@ -314,7 +314,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set errorInfo value
      * @param string $errorInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setErrorInfo(?string $errorInfo = null): self
     {
@@ -337,7 +337,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set hotelChain value
      * @param string $hotelChain
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setHotelChain(?string $hotelChain = null): self
     {
@@ -360,7 +360,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set hotelCode value
      * @param string $hotelCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setHotelCode(?string $hotelCode = null): self
     {
@@ -383,7 +383,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set hotelName value
      * @param string $hotelName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setHotelName(?string $hotelName = null): self
     {
@@ -406,7 +406,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -429,7 +429,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set latitude value
      * @param float $latitude
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setLatitude(?float $latitude = null): self
     {
@@ -452,7 +452,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set location value
      * @param string $location
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setLocation(?string $location = null): self
     {
@@ -475,7 +475,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set longitude value
      * @param float $longitude
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setLongitude(?float $longitude = null): self
     {
@@ -498,7 +498,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set opicCode value
      * @param int $opicCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setOpicCode(?int $opicCode = null): self
     {
@@ -521,7 +521,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -544,7 +544,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set provider value
      * @param string $provider
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setProvider(?string $provider = null): self
     {
@@ -567,7 +567,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set region value
      * @param string $region
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setRegion(?string $region = null): self
     {
@@ -590,7 +590,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -613,7 +613,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -636,7 +636,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -659,7 +659,7 @@ class TravelCmDTO extends AbstractStructBase
     /**
      * Set travelType value
      * @param int $travelType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelCmDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelCmDTO
      */
     public function setTravelType(?int $travelType = null): self
     {

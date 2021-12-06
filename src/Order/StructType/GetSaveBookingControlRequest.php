@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetSaveBookingControlRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSaveBookingControlRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSaveBookingControlRequest
      */
     public function setUserId(?int $userId = null): self
     {
@@ -78,7 +78,7 @@ class GetSaveBookingControlRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSaveBookingControlRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSaveBookingControlRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -101,7 +101,7 @@ class GetSaveBookingControlRequest extends AbstractStructBase
     /**
      * Set isControlled value
      * @param bool $isControlled
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSaveBookingControlRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSaveBookingControlRequest
      */
     public function setIsControlled(?bool $isControlled = null): self
     {

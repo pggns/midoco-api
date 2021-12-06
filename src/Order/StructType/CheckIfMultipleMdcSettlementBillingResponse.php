@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class CheckIfMultipleMdcSettlementBillingResponse extends AbstractStructBase
      * Set docIds value
      * @throws InvalidArgumentException
      * @param int[] $docIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckIfMultipleMdcSettlementBillingResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckIfMultipleMdcSettlementBillingResponse
      */
     public function setDocIds(?array $docIds = null): self
     {
@@ -85,7 +85,7 @@ class CheckIfMultipleMdcSettlementBillingResponse extends AbstractStructBase
      * Add item to docIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckIfMultipleMdcSettlementBillingResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckIfMultipleMdcSettlementBillingResponse
      */
     public function addToDocIds(int $item): self
     {

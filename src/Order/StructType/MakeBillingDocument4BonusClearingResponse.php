@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -68,7 +68,7 @@ class MakeBillingDocument4BonusClearingResponse extends AbstractStructBase
      * Set printjobId value
      * @throws InvalidArgumentException
      * @param int[] $printjobId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocument4BonusClearingResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocument4BonusClearingResponse
      */
     public function setPrintjobId(?array $printjobId = null): self
     {
@@ -84,7 +84,7 @@ class MakeBillingDocument4BonusClearingResponse extends AbstractStructBase
      * Add item to printjobId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocument4BonusClearingResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocument4BonusClearingResponse
      */
     public function addToPrintjobId(int $item): self
     {

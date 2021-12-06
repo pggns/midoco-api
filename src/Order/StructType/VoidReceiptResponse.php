@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class VoidReceiptResponse extends AbstractStructBase
     /**
      * Set receiptId value
      * @param int $receiptId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidReceiptResponse
+     * @return \Pggns\MidocoApi\Order\StructType\VoidReceiptResponse
      */
     public function setReceiptId(int $receiptId): self
     {
@@ -72,7 +72,7 @@ class VoidReceiptResponse extends AbstractStructBase
     /**
      * Set printjobId value
      * @param int $printjobId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidReceiptResponse
+     * @return \Pggns\MidocoApi\Order\StructType\VoidReceiptResponse
      */
     public function setPrintjobId(?int $printjobId = null): self
     {

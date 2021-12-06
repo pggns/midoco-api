@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class MidocoImportCrmCampaign extends AbstractStructBase
     /**
      * Set extId value
      * @param int $extId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportCrmCampaign
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportCrmCampaign
      */
     public function setExtId(?int $extId = null): self
     {
@@ -126,7 +126,7 @@ class MidocoImportCrmCampaign extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportCrmCampaign
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportCrmCampaign
      */
     public function setDescription(?string $description = null): self
     {
@@ -149,7 +149,7 @@ class MidocoImportCrmCampaign extends AbstractStructBase
     /**
      * Set infoText value
      * @param string $infoText
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportCrmCampaign
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportCrmCampaign
      */
     public function setInfoText(?string $infoText = null): self
     {
@@ -172,7 +172,7 @@ class MidocoImportCrmCampaign extends AbstractStructBase
     /**
      * Set issueDate value
      * @param string $issueDate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportCrmCampaign
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportCrmCampaign
      */
     public function setIssueDate(?string $issueDate = null): self
     {
@@ -195,7 +195,7 @@ class MidocoImportCrmCampaign extends AbstractStructBase
     /**
      * Set campaignType value
      * @param string $campaignType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportCrmCampaign
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportCrmCampaign
      */
     public function setCampaignType(?string $campaignType = null): self
     {
@@ -218,7 +218,7 @@ class MidocoImportCrmCampaign extends AbstractStructBase
     /**
      * Set issueUser value
      * @param string $issueUser
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportCrmCampaign
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportCrmCampaign
      */
     public function setIssueUser(?string $issueUser = null): self
     {
@@ -241,7 +241,7 @@ class MidocoImportCrmCampaign extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportCrmCampaign
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportCrmCampaign
      */
     public function setRemark(?string $remark = null): self
     {
@@ -264,7 +264,7 @@ class MidocoImportCrmCampaign extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportCrmCampaign
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportCrmCampaign
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -287,7 +287,7 @@ class MidocoImportCrmCampaign extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoImportCrmCampaign
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoImportCrmCampaign
      */
     public function setOrgunit(?string $orgunit = null): self
     {

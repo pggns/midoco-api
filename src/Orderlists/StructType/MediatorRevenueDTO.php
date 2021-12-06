@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class MediatorRevenueDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorRevenueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorRevenueDTO
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -150,7 +150,7 @@ class MediatorRevenueDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorRevenueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorRevenueDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -173,7 +173,7 @@ class MediatorRevenueDTO extends AbstractStructBase
     /**
      * Set mediatorRevenueId value
      * @param int $mediatorRevenueId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorRevenueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorRevenueDTO
      */
     public function setMediatorRevenueId(?int $mediatorRevenueId = null): self
     {
@@ -196,7 +196,7 @@ class MediatorRevenueDTO extends AbstractStructBase
     /**
      * Set month value
      * @param int $month
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorRevenueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorRevenueDTO
      */
     public function setMonth(?int $month = null): self
     {
@@ -219,7 +219,7 @@ class MediatorRevenueDTO extends AbstractStructBase
     /**
      * Set pax value
      * @param int $pax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorRevenueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorRevenueDTO
      */
     public function setPax(?int $pax = null): self
     {
@@ -242,7 +242,7 @@ class MediatorRevenueDTO extends AbstractStructBase
     /**
      * Set paxLastYear value
      * @param int $paxLastYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorRevenueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorRevenueDTO
      */
     public function setPaxLastYear(?int $paxLastYear = null): self
     {
@@ -265,7 +265,7 @@ class MediatorRevenueDTO extends AbstractStructBase
     /**
      * Set paxLastYearEnd value
      * @param int $paxLastYearEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorRevenueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorRevenueDTO
      */
     public function setPaxLastYearEnd(?int $paxLastYearEnd = null): self
     {
@@ -288,7 +288,7 @@ class MediatorRevenueDTO extends AbstractStructBase
     /**
      * Set revenue value
      * @param float $revenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorRevenueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorRevenueDTO
      */
     public function setRevenue(?float $revenue = null): self
     {
@@ -311,7 +311,7 @@ class MediatorRevenueDTO extends AbstractStructBase
     /**
      * Set revenueLastYear value
      * @param float $revenueLastYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorRevenueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorRevenueDTO
      */
     public function setRevenueLastYear(?float $revenueLastYear = null): self
     {
@@ -334,7 +334,7 @@ class MediatorRevenueDTO extends AbstractStructBase
     /**
      * Set revenueLastYearEnd value
      * @param float $revenueLastYearEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorRevenueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorRevenueDTO
      */
     public function setRevenueLastYearEnd(?float $revenueLastYearEnd = null): self
     {
@@ -357,7 +357,7 @@ class MediatorRevenueDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorRevenueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorRevenueDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -380,7 +380,7 @@ class MediatorRevenueDTO extends AbstractStructBase
     /**
      * Set year value
      * @param int $year
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorRevenueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorRevenueDTO
      */
     public function setYear(?int $year = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class JasperReportParameterDTO extends AbstractStructBase
     /**
      * Set isHidden value
      * @param bool $isHidden
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\JasperReportParameterDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\JasperReportParameterDTO
      */
     public function setIsHidden(?bool $isHidden = null): self
     {
@@ -86,7 +86,7 @@ class JasperReportParameterDTO extends AbstractStructBase
     /**
      * Set multipleValues value
      * @param bool $multipleValues
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\JasperReportParameterDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\JasperReportParameterDTO
      */
     public function setMultipleValues(?bool $multipleValues = null): self
     {
@@ -109,7 +109,7 @@ class JasperReportParameterDTO extends AbstractStructBase
     /**
      * Set paramId value
      * @param int $paramId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\JasperReportParameterDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\JasperReportParameterDTO
      */
     public function setParamId(?int $paramId = null): self
     {
@@ -132,7 +132,7 @@ class JasperReportParameterDTO extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\JasperReportParameterDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\JasperReportParameterDTO
      */
     public function setReportId(?int $reportId = null): self
     {

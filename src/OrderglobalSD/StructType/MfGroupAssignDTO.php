@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MfGroupAssignDTO extends AbstractStructBase
     /**
      * Set dtoClass value
      * @param string $dtoClass
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MfGroupAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MfGroupAssignDTO
      */
     public function setDtoClass(?string $dtoClass = null): self
     {
@@ -86,7 +86,7 @@ class MfGroupAssignDTO extends AbstractStructBase
     /**
      * Set groupClass value
      * @param string $groupClass
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MfGroupAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MfGroupAssignDTO
      */
     public function setGroupClass(?string $groupClass = null): self
     {
@@ -109,7 +109,7 @@ class MfGroupAssignDTO extends AbstractStructBase
     /**
      * Set groupId value
      * @param string $groupId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MfGroupAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MfGroupAssignDTO
      */
     public function setGroupId(?string $groupId = null): self
     {
@@ -132,7 +132,7 @@ class MfGroupAssignDTO extends AbstractStructBase
     /**
      * Set isGui value
      * @param bool $isGui
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MfGroupAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MfGroupAssignDTO
      */
     public function setIsGui(?bool $isGui = null): self
     {

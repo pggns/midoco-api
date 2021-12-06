@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class MidocoReceiptInfoType extends AbstractStructBase
      * The MidocoReceiptInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoReceiptInfo
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo $MidocoReceiptInfo = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo $MidocoReceiptInfo = null;
     /**
      * Constructor method for MidocoReceiptInfoType
      * @uses MidocoReceiptInfoType::setMidocoReceiptInfo()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo $midocoReceiptInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo $midocoReceiptInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo $midocoReceiptInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo $midocoReceiptInfo = null)
     {
         $this
             ->setMidocoReceiptInfo($midocoReceiptInfo);
     }
     /**
      * Get MidocoReceiptInfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo|null
      */
-    public function getMidocoReceiptInfo(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+    public function getMidocoReceiptInfo(): ?\Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
     {
         return $this->MidocoReceiptInfo;
     }
     /**
      * Set MidocoReceiptInfo value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo $midocoReceiptInfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfoType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo $midocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfoType
      */
-    public function setMidocoReceiptInfo(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo $midocoReceiptInfo = null): self
+    public function setMidocoReceiptInfo(?\Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo $midocoReceiptInfo = null): self
     {
         $this->MidocoReceiptInfo = $midocoReceiptInfo;
         

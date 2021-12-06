@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class MidocoABTAListType extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -118,7 +118,7 @@ class MidocoABTAListType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -141,7 +141,7 @@ class MidocoABTAListType extends AbstractStructBase
     /**
      * Set salesInvTotal value
      * @param float $salesInvTotal
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType
      */
     public function setSalesInvTotal(?float $salesInvTotal = null): self
     {
@@ -164,7 +164,7 @@ class MidocoABTAListType extends AbstractStructBase
     /**
      * Set section value
      * @param string $section
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType
      */
     public function setSection(?string $section = null): self
     {
@@ -187,7 +187,7 @@ class MidocoABTAListType extends AbstractStructBase
     /**
      * Set field value
      * @param string $field
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType
      */
     public function setField(?string $field = null): self
     {
@@ -210,7 +210,7 @@ class MidocoABTAListType extends AbstractStructBase
     /**
      * Set pax value
      * @param int $pax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType
      */
     public function setPax(?int $pax = null): self
     {
@@ -233,7 +233,7 @@ class MidocoABTAListType extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -256,7 +256,7 @@ class MidocoABTAListType extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoABTAListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoABTAListType
      */
     public function setAccountId(?string $accountId = null): self
     {

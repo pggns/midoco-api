@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoCCSaleListType extends AbstractStructBase
     /**
      * Set cardType value
      * @param string $cardType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCSaleListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCSaleListType
      */
     public function setCardType(?string $cardType = null): self
     {
@@ -78,7 +78,7 @@ class MidocoCCSaleListType extends AbstractStructBase
     /**
      * Set captureDate value
      * @param string $captureDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCSaleListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCSaleListType
      */
     public function setCaptureDate(?string $captureDate = null): self
     {
@@ -101,7 +101,7 @@ class MidocoCCSaleListType extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCSaleListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCSaleListType
      */
     public function setAmount(?float $amount = null): self
     {

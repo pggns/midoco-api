@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class SaveDbiDefinitionRequest extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - ref: MidocoDbiDefinition
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefinitionType
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefinitionType
      */
-    protected \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefinitionType $MidocoDbiDefinition;
+    protected \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefinitionType $MidocoDbiDefinition;
     /**
      * Constructor method for SaveDbiDefinitionRequest
      * @uses SaveDbiDefinitionRequest::setMidocoDbiDefinition()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefinitionType $midocoDbiDefinition
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefinitionType $midocoDbiDefinition
      */
-    public function __construct(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefinitionType $midocoDbiDefinition)
+    public function __construct(\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefinitionType $midocoDbiDefinition)
     {
         $this
             ->setMidocoDbiDefinition($midocoDbiDefinition);
     }
     /**
      * Get MidocoDbiDefinition value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefinitionType
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefinitionType
      */
-    public function getMidocoDbiDefinition(): \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefinitionType
+    public function getMidocoDbiDefinition(): \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefinitionType
     {
         return $this->MidocoDbiDefinition;
     }
     /**
      * Set MidocoDbiDefinition value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefinitionType $midocoDbiDefinition
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveDbiDefinitionRequest
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefinitionType $midocoDbiDefinition
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SaveDbiDefinitionRequest
      */
-    public function setMidocoDbiDefinition(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefinitionType $midocoDbiDefinition): self
+    public function setMidocoDbiDefinition(\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefinitionType $midocoDbiDefinition): self
     {
         $this->MidocoDbiDefinition = $midocoDbiDefinition;
         

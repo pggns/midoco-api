@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetMidocoAgencyRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMidocoAgencyRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMidocoAgencyRequest
      */
     public function setAgencyId(string $agencyId): self
     {

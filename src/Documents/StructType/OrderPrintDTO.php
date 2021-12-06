@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class OrderPrintDTO extends AbstractStructBase
     /**
      * Set lastPrintDate value
      * @param string $lastPrintDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrintDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrintDTO
      */
     public function setLastPrintDate(?string $lastPrintDate = null): self
     {
@@ -86,7 +86,7 @@ class OrderPrintDTO extends AbstractStructBase
     /**
      * Set lastPrintUser value
      * @param int $lastPrintUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrintDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrintDTO
      */
     public function setLastPrintUser(?int $lastPrintUser = null): self
     {
@@ -109,7 +109,7 @@ class OrderPrintDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrintDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrintDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -132,7 +132,7 @@ class OrderPrintDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrintDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrintDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

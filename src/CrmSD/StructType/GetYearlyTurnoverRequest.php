@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetYearlyTurnoverRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetYearlyTurnoverRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetYearlyTurnoverRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -72,7 +72,7 @@ class GetYearlyTurnoverRequest extends AbstractStructBase
     /**
      * Set noOfYears value
      * @param int $noOfYears
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetYearlyTurnoverRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetYearlyTurnoverRequest
      */
     public function setNoOfYears(?int $noOfYears = 4): self
     {

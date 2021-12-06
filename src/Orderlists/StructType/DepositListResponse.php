@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class DepositListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDepositList
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListType[]
      */
     protected ?array $MidocoDepositList = null;
     /**
@@ -28,7 +28,7 @@ class DepositListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDepositListSums
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType[]
      */
     protected ?array $MidocoDepositListSums = null;
     /**
@@ -37,7 +37,7 @@ class DepositListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDepositListOverall
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListOverallType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListOverallType[]
      */
     protected ?array $MidocoDepositListOverall = null;
     /**
@@ -53,9 +53,9 @@ class DepositListResponse extends AbstractStructBase
      * @uses DepositListResponse::setMidocoDepositListSums()
      * @uses DepositListResponse::setMidocoDepositListOverall()
      * @uses DepositListResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListType[] $midocoDepositList
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType[] $midocoDepositListSums
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListOverallType[] $midocoDepositListOverall
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListType[] $midocoDepositList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType[] $midocoDepositListSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListOverallType[] $midocoDepositListOverall
      * @param int $noOfResults
      */
     public function __construct(?array $midocoDepositList = null, ?array $midocoDepositListSums = null, ?array $midocoDepositListOverall = null, ?int $noOfResults = null)
@@ -68,7 +68,7 @@ class DepositListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDepositList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListType[]
      */
     public function getMidocoDepositList(): ?array
     {
@@ -89,12 +89,12 @@ class DepositListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $depositListResponseMidocoDepositListItem) {
             // validation for constraint: itemType
-            if (!$depositListResponseMidocoDepositListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListType) {
+            if (!$depositListResponseMidocoDepositListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListType) {
                 $invalidValues[] = is_object($depositListResponseMidocoDepositListItem) ? get_class($depositListResponseMidocoDepositListItem) : sprintf('%s(%s)', gettype($depositListResponseMidocoDepositListItem), var_export($depositListResponseMidocoDepositListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDepositList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDepositList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -103,8 +103,8 @@ class DepositListResponse extends AbstractStructBase
     /**
      * Set MidocoDepositList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListType[] $midocoDepositList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DepositListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListType[] $midocoDepositList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DepositListResponse
      */
     public function setMidocoDepositList(?array $midocoDepositList = null): self
     {
@@ -119,14 +119,14 @@ class DepositListResponse extends AbstractStructBase
     /**
      * Add item to MidocoDepositList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DepositListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DepositListResponse
      */
-    public function addToMidocoDepositList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListType $item): self
+    public function addToMidocoDepositList(\Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListType) {
-            throw new InvalidArgumentException(sprintf('The MidocoDepositList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListType) {
+            throw new InvalidArgumentException(sprintf('The MidocoDepositList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDepositList[] = $item;
         
@@ -134,7 +134,7 @@ class DepositListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDepositListSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType[]
      */
     public function getMidocoDepositListSums(): ?array
     {
@@ -155,12 +155,12 @@ class DepositListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $depositListResponseMidocoDepositListSumsItem) {
             // validation for constraint: itemType
-            if (!$depositListResponseMidocoDepositListSumsItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType) {
+            if (!$depositListResponseMidocoDepositListSumsItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType) {
                 $invalidValues[] = is_object($depositListResponseMidocoDepositListSumsItem) ? get_class($depositListResponseMidocoDepositListSumsItem) : sprintf('%s(%s)', gettype($depositListResponseMidocoDepositListSumsItem), var_export($depositListResponseMidocoDepositListSumsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDepositListSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDepositListSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -169,8 +169,8 @@ class DepositListResponse extends AbstractStructBase
     /**
      * Set MidocoDepositListSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType[] $midocoDepositListSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DepositListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType[] $midocoDepositListSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DepositListResponse
      */
     public function setMidocoDepositListSums(?array $midocoDepositListSums = null): self
     {
@@ -185,14 +185,14 @@ class DepositListResponse extends AbstractStructBase
     /**
      * Add item to MidocoDepositListSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DepositListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DepositListResponse
      */
-    public function addToMidocoDepositListSums(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType $item): self
+    public function addToMidocoDepositListSums(\Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType) {
-            throw new InvalidArgumentException(sprintf('The MidocoDepositListSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType) {
+            throw new InvalidArgumentException(sprintf('The MidocoDepositListSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDepositListSums[] = $item;
         
@@ -200,7 +200,7 @@ class DepositListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDepositListOverall value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListOverallType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListOverallType[]
      */
     public function getMidocoDepositListOverall(): ?array
     {
@@ -221,12 +221,12 @@ class DepositListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $depositListResponseMidocoDepositListOverallItem) {
             // validation for constraint: itemType
-            if (!$depositListResponseMidocoDepositListOverallItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListOverallType) {
+            if (!$depositListResponseMidocoDepositListOverallItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListOverallType) {
                 $invalidValues[] = is_object($depositListResponseMidocoDepositListOverallItem) ? get_class($depositListResponseMidocoDepositListOverallItem) : sprintf('%s(%s)', gettype($depositListResponseMidocoDepositListOverallItem), var_export($depositListResponseMidocoDepositListOverallItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDepositListOverall property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListOverallType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDepositListOverall property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListOverallType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -235,8 +235,8 @@ class DepositListResponse extends AbstractStructBase
     /**
      * Set MidocoDepositListOverall value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListOverallType[] $midocoDepositListOverall
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DepositListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListOverallType[] $midocoDepositListOverall
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DepositListResponse
      */
     public function setMidocoDepositListOverall(?array $midocoDepositListOverall = null): self
     {
@@ -251,14 +251,14 @@ class DepositListResponse extends AbstractStructBase
     /**
      * Add item to MidocoDepositListOverall value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListOverallType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DepositListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListOverallType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DepositListResponse
      */
-    public function addToMidocoDepositListOverall(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListOverallType $item): self
+    public function addToMidocoDepositListOverall(\Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListOverallType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListOverallType) {
-            throw new InvalidArgumentException(sprintf('The MidocoDepositListOverall property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListOverallType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListOverallType) {
+            throw new InvalidArgumentException(sprintf('The MidocoDepositListOverall property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListOverallType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDepositListOverall[] = $item;
         
@@ -275,7 +275,7 @@ class DepositListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DepositListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DepositListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

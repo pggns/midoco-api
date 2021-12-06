@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -89,7 +89,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDbiDefValue
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue[]
      */
     protected ?array $MidocoDbiDefValue = null;
     /**
@@ -123,7 +123,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
      * @param string $vERK_KEY_REMARK1
      * @param string $vERK_KEY_REMARK2
      * @param string $dBI_INFO_KEY_DEBITOR
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue[] $midocoDbiDefValue
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue[] $midocoDbiDefValue
      */
     public function __construct(?int $orderId = null, ?int $itemId = null, ?int $passengerAssignment = null, ?string $vERK_KEY_COST_CENTRE = null, ?string $vERK_KEY_CUSTOMER_COST_CENTRE = null, ?string $vERK_KEY_CUSTOMER_PERSON_NO = null, ?string $vERK_KEY_CUSTOMER_PROJECT_NO = null, ?string $vERK_KEY_FUNDING = null, ?string $vERK_KEY_ORDER_DATE = null, ?string $vERK_KEY_ORDER_NO = null, ?string $vERK_KEY_ORDERER = null, ?string $vERK_KEY_REMARK1 = null, ?string $vERK_KEY_REMARK2 = null, ?string $dBI_INFO_KEY_DEBITOR = null, ?array $midocoDbiDefValue = null)
     {
@@ -155,7 +155,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -178,7 +178,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -201,7 +201,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set passengerAssignment value
      * @param int $passengerAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setPassengerAssignment(?int $passengerAssignment = null): self
     {
@@ -224,7 +224,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set VERK_KEY_COST_CENTRE value
      * @param string $vERK_KEY_COST_CENTRE
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setVERK_KEY_COST_CENTRE(?string $vERK_KEY_COST_CENTRE = null): self
     {
@@ -247,7 +247,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set VERK_KEY_CUSTOMER_COST_CENTRE value
      * @param string $vERK_KEY_CUSTOMER_COST_CENTRE
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setVERK_KEY_CUSTOMER_COST_CENTRE(?string $vERK_KEY_CUSTOMER_COST_CENTRE = null): self
     {
@@ -270,7 +270,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set VERK_KEY_CUSTOMER_PERSON_NO value
      * @param string $vERK_KEY_CUSTOMER_PERSON_NO
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setVERK_KEY_CUSTOMER_PERSON_NO(?string $vERK_KEY_CUSTOMER_PERSON_NO = null): self
     {
@@ -293,7 +293,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set VERK_KEY_CUSTOMER_PROJECT_NO value
      * @param string $vERK_KEY_CUSTOMER_PROJECT_NO
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setVERK_KEY_CUSTOMER_PROJECT_NO(?string $vERK_KEY_CUSTOMER_PROJECT_NO = null): self
     {
@@ -316,7 +316,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set VERK_KEY_FUNDING value
      * @param string $vERK_KEY_FUNDING
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setVERK_KEY_FUNDING(?string $vERK_KEY_FUNDING = null): self
     {
@@ -339,7 +339,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set VERK_KEY_ORDER_DATE value
      * @param string $vERK_KEY_ORDER_DATE
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setVERK_KEY_ORDER_DATE(?string $vERK_KEY_ORDER_DATE = null): self
     {
@@ -362,7 +362,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set VERK_KEY_ORDER_NO value
      * @param string $vERK_KEY_ORDER_NO
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setVERK_KEY_ORDER_NO(?string $vERK_KEY_ORDER_NO = null): self
     {
@@ -385,7 +385,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set VERK_KEY_ORDERER value
      * @param string $vERK_KEY_ORDERER
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setVERK_KEY_ORDERER(?string $vERK_KEY_ORDERER = null): self
     {
@@ -408,7 +408,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set VERK_KEY_REMARK1 value
      * @param string $vERK_KEY_REMARK1
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setVERK_KEY_REMARK1(?string $vERK_KEY_REMARK1 = null): self
     {
@@ -431,7 +431,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set VERK_KEY_REMARK2 value
      * @param string $vERK_KEY_REMARK2
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setVERK_KEY_REMARK2(?string $vERK_KEY_REMARK2 = null): self
     {
@@ -454,7 +454,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set DBI_INFO_KEY_DEBITOR value
      * @param string $dBI_INFO_KEY_DEBITOR
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setDBI_INFO_KEY_DEBITOR(?string $dBI_INFO_KEY_DEBITOR = null): self
     {
@@ -468,7 +468,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     }
     /**
      * Get MidocoDbiDefValue value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue[]
      */
     public function getMidocoDbiDefValue(): ?array
     {
@@ -489,12 +489,12 @@ class MidocoVerkDbiInfos extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoVerkDbiInfosMidocoDbiDefValueItem) {
             // validation for constraint: itemType
-            if (!$midocoVerkDbiInfosMidocoDbiDefValueItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue) {
+            if (!$midocoVerkDbiInfosMidocoDbiDefValueItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue) {
                 $invalidValues[] = is_object($midocoVerkDbiInfosMidocoDbiDefValueItem) ? get_class($midocoVerkDbiInfosMidocoDbiDefValueItem) : sprintf('%s(%s)', gettype($midocoVerkDbiInfosMidocoDbiDefValueItem), var_export($midocoVerkDbiInfosMidocoDbiDefValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDbiDefValue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDbiDefValue property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -503,8 +503,8 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Set MidocoDbiDefValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue[] $midocoDbiDefValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue[] $midocoDbiDefValue
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
     public function setMidocoDbiDefValue(?array $midocoDbiDefValue = null): self
     {
@@ -519,14 +519,14 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     /**
      * Add item to MidocoDbiDefValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVerkDbiInfos
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVerkDbiInfos
      */
-    public function addToMidocoDbiDefValue(\Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue $item): self
+    public function addToMidocoDbiDefValue(\Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue) {
-            throw new InvalidArgumentException(sprintf('The MidocoDbiDefValue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue) {
+            throw new InvalidArgumentException(sprintf('The MidocoDbiDefValue property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDbiDefValue[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CustomerExportLogDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerExportLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerExportLogDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -86,7 +86,7 @@ class CustomerExportLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerExportLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerExportLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -109,7 +109,7 @@ class CustomerExportLogDTO extends AbstractStructBase
     /**
      * Set transactionId value
      * @param int $transactionId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerExportLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerExportLogDTO
      */
     public function setTransactionId(?int $transactionId = null): self
     {
@@ -132,7 +132,7 @@ class CustomerExportLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerExportLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerExportLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

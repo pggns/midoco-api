@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -80,7 +80,7 @@ class GetConsentUnitsResponse extends AbstractStructBase
      * Set disabledUnitName value
      * @throws InvalidArgumentException
      * @param string[] $disabledUnitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetConsentUnitsResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\GetConsentUnitsResponse
      */
     public function setDisabledUnitName(?array $disabledUnitName = null): self
     {
@@ -96,7 +96,7 @@ class GetConsentUnitsResponse extends AbstractStructBase
      * Add item to disabledUnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetConsentUnitsResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\GetConsentUnitsResponse
      */
     public function addToDisabledUnitName(string $item): self
     {
@@ -146,7 +146,7 @@ class GetConsentUnitsResponse extends AbstractStructBase
      * Set unitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetConsentUnitsResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\GetConsentUnitsResponse
      */
     public function setUnitName(?array $unitName = null): self
     {
@@ -162,7 +162,7 @@ class GetConsentUnitsResponse extends AbstractStructBase
      * Add item to unitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetConsentUnitsResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\GetConsentUnitsResponse
      */
     public function addToUnitName(string $item): self
     {

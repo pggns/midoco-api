@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -157,7 +157,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
      * Set travelNo value
      * @throws InvalidArgumentException
      * @param string[] $travelNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelNoMarginsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelNoMarginsRequest
      */
     public function setTravelNo(?array $travelNo = null): self
     {
@@ -173,7 +173,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
      * Add item to travelNo value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelNoMarginsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelNoMarginsRequest
      */
     public function addToTravelNo(string $item): self
     {
@@ -196,7 +196,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
     /**
      * Set travelStartDateFrom value
      * @param string $travelStartDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelNoMarginsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelNoMarginsRequest
      */
     public function setTravelStartDateFrom(?string $travelStartDateFrom = null): self
     {
@@ -219,7 +219,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
     /**
      * Set travelStartDateTo value
      * @param string $travelStartDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelNoMarginsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelNoMarginsRequest
      */
     public function setTravelStartDateTo(?string $travelStartDateTo = null): self
     {
@@ -242,7 +242,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
     /**
      * Set settlementStartDate value
      * @param string $settlementStartDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelNoMarginsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelNoMarginsRequest
      */
     public function setSettlementStartDate(?string $settlementStartDate = null): self
     {
@@ -265,7 +265,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
     /**
      * Set settlementEndDate value
      * @param string $settlementEndDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelNoMarginsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelNoMarginsRequest
      */
     public function setSettlementEndDate(?string $settlementEndDate = null): self
     {
@@ -288,7 +288,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
     /**
      * Set isStorno value
      * @param bool $isStorno
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelNoMarginsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelNoMarginsRequest
      */
     public function setIsStorno(?bool $isStorno = null): self
     {
@@ -311,7 +311,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelNoMarginsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelNoMarginsRequest
      */
     public function setDestination(?string $destination = null): self
     {
@@ -334,7 +334,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelNoMarginsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelNoMarginsRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -357,7 +357,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
     /**
      * Set notBookedMargins value
      * @param bool $notBookedMargins
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelNoMarginsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelNoMarginsRequest
      */
     public function setNotBookedMargins(?bool $notBookedMargins = null): self
     {
@@ -380,7 +380,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
     /**
      * Set preventMarginBooking value
      * @param bool $preventMarginBooking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelNoMarginsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelNoMarginsRequest
      */
     public function setPreventMarginBooking(?bool $preventMarginBooking = null): self
     {
@@ -403,7 +403,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
     /**
      * Set notBookedIncomingInvoices value
      * @param bool $notBookedIncomingInvoices
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelNoMarginsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelNoMarginsRequest
      */
     public function setNotBookedIncomingInvoices(?bool $notBookedIncomingInvoices = null): self
     {
@@ -426,7 +426,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
     /**
      * Set orgunitName value
      * @param string $orgunitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelNoMarginsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelNoMarginsRequest
      */
     public function setOrgunitName(?string $orgunitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -50,7 +50,7 @@ class MidocoSegmentInfo extends AbstractStructBase
     /**
      * Set segmentNo value
      * @param int $segmentNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSegmentInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSegmentInfo
      */
     public function setSegmentNo(?int $segmentNo = null): self
     {
@@ -100,7 +100,7 @@ class MidocoSegmentInfo extends AbstractStructBase
      * Set documentNo value
      * @throws InvalidArgumentException
      * @param string[] $documentNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSegmentInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSegmentInfo
      */
     public function setDocumentNo(?array $documentNo = null): self
     {
@@ -116,7 +116,7 @@ class MidocoSegmentInfo extends AbstractStructBase
      * Add item to documentNo value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSegmentInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSegmentInfo
      */
     public function addToDocumentNo(string $item): self
     {

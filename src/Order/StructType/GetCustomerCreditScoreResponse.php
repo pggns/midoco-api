@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class GetCustomerCreditScoreResponse extends AbstractStructBase
     /**
      * Set techStatus value
      * @param string $techStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCustomerCreditScoreResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetCustomerCreditScoreResponse
      */
     public function setTechStatus(?string $techStatus = null): self
     {
@@ -94,7 +94,7 @@ class GetCustomerCreditScoreResponse extends AbstractStructBase
     /**
      * Set score value
      * @param int $score
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCustomerCreditScoreResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetCustomerCreditScoreResponse
      */
     public function setScore(?int $score = null): self
     {
@@ -117,7 +117,7 @@ class GetCustomerCreditScoreResponse extends AbstractStructBase
     /**
      * Set creditStatus value
      * @param string $creditStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCustomerCreditScoreResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetCustomerCreditScoreResponse
      */
     public function setCreditStatus(?string $creditStatus = null): self
     {
@@ -140,7 +140,7 @@ class GetCustomerCreditScoreResponse extends AbstractStructBase
     /**
      * Set textMessage value
      * @param string $textMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCustomerCreditScoreResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetCustomerCreditScoreResponse
      */
     public function setTextMessage(?string $textMessage = null): self
     {

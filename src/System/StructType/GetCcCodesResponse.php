@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetCcCodesResponse extends AbstractStructBase
      * Set CcCode value
      * @throws InvalidArgumentException
      * @param string[] $ccCode
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetCcCodesResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetCcCodesResponse
      */
     public function setCcCode(?array $ccCode = null): self
     {
@@ -85,7 +85,7 @@ class GetCcCodesResponse extends AbstractStructBase
      * Add item to CcCode value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetCcCodesResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetCcCodesResponse
      */
     public function addToCcCode(string $item): self
     {

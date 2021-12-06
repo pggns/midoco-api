@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class TotalPartialPaymentsResponse extends AbstractStructBase
     /**
      * Set totalPartialAmount value
      * @param float $totalPartialAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TotalPartialPaymentsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\TotalPartialPaymentsResponse
      */
     public function setTotalPartialAmount(?float $totalPartialAmount = null): self
     {

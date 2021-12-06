@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoTTVOutput extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTTVOutput
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTTVOutput
      */
     public function setProductType(?string $productType = null): self
     {
@@ -78,7 +78,7 @@ class MidocoTTVOutput extends AbstractStructBase
     /**
      * Set personCount value
      * @param int $personCount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTTVOutput
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTTVOutput
      */
     public function setPersonCount(?int $personCount = null): self
     {
@@ -101,7 +101,7 @@ class MidocoTTVOutput extends AbstractStructBase
     /**
      * Set ttv value
      * @param float $ttv
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTTVOutput
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTTVOutput
      */
     public function setTtv(?float $ttv = null): self
     {

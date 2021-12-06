@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -191,7 +191,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set enforceEuPassenger value
      * @param bool $enforceEuPassenger
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setEnforceEuPassenger(?bool $enforceEuPassenger = null): self
     {
@@ -214,7 +214,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set extensionAllowed value
      * @param bool $extensionAllowed
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setExtensionAllowed(?bool $extensionAllowed = null): self
     {
@@ -237,7 +237,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set fullTariff value
      * @param float $fullTariff
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setFullTariff(?float $fullTariff = null): self
     {
@@ -260,7 +260,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set insuranceTariffId value
      * @param int $insuranceTariffId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setInsuranceTariffId(?int $insuranceTariffId = null): self
     {
@@ -283,7 +283,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set insurer value
      * @param string $insurer
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setInsurer(?string $insurer = null): self
     {
@@ -306,7 +306,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -329,7 +329,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set isYearly value
      * @param bool $isYearly
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setIsYearly(?bool $isYearly = null): self
     {
@@ -352,7 +352,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set manualPrice value
      * @param bool $manualPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setManualPrice(?bool $manualPrice = null): self
     {
@@ -375,7 +375,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set partialStorno value
      * @param bool $partialStorno
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setPartialStorno(?bool $partialStorno = null): self
     {
@@ -398,7 +398,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set tariffCode value
      * @param string $tariffCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setTariffCode(?string $tariffCode = null): self
     {
@@ -421,7 +421,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set tariffPerPassengerAdditional value
      * @param float $tariffPerPassengerAdditional
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setTariffPerPassengerAdditional(?float $tariffPerPassengerAdditional = null): self
     {
@@ -444,7 +444,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set tariffPerPassengerDaily value
      * @param float $tariffPerPassengerDaily
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setTariffPerPassengerDaily(?float $tariffPerPassengerDaily = null): self
     {
@@ -467,7 +467,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set tariffPerPassengerPercent value
      * @param float $tariffPerPassengerPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setTariffPerPassengerPercent(?float $tariffPerPassengerPercent = null): self
     {
@@ -490,7 +490,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set tariffType value
      * @param string $tariffType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setTariffType(?string $tariffType = null): self
     {
@@ -513,7 +513,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set travelDurationMax value
      * @param int $travelDurationMax
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setTravelDurationMax(?int $travelDurationMax = null): self
     {
@@ -536,7 +536,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set travelDurationMin value
      * @param int $travelDurationMin
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setTravelDurationMin(?int $travelDurationMin = null): self
     {
@@ -559,7 +559,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set travelPriceMax value
      * @param float $travelPriceMax
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setTravelPriceMax(?float $travelPriceMax = null): self
     {
@@ -582,7 +582,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set travelPriceMin value
      * @param float $travelPriceMin
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setTravelPriceMin(?float $travelPriceMin = null): self
     {
@@ -605,7 +605,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -628,7 +628,7 @@ class InsuranceTariffDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceTariffDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceTariffDTO
      */
     public function setValidTo(?string $validTo = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetIncomingInvoiceResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoIncomingInvoice
-     * @var \Pggns\MidocoApi\Api\Order\StructType\IncomingInvoiceDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\IncomingInvoiceDTO[]
      */
     protected ?array $MidocoIncomingInvoice = null;
     /**
      * Constructor method for GetIncomingInvoiceResponse
      * @uses GetIncomingInvoiceResponse::setMidocoIncomingInvoice()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\IncomingInvoiceDTO[] $midocoIncomingInvoice
+     * @param \Pggns\MidocoApi\Order\StructType\IncomingInvoiceDTO[] $midocoIncomingInvoice
      */
     public function __construct(?array $midocoIncomingInvoice = null)
     {
@@ -34,7 +34,7 @@ class GetIncomingInvoiceResponse extends AbstractStructBase
     }
     /**
      * Get MidocoIncomingInvoice value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\IncomingInvoiceDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\IncomingInvoiceDTO[]
      */
     public function getMidocoIncomingInvoice(): ?array
     {
@@ -55,12 +55,12 @@ class GetIncomingInvoiceResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getIncomingInvoiceResponseMidocoIncomingInvoiceItem) {
             // validation for constraint: itemType
-            if (!$getIncomingInvoiceResponseMidocoIncomingInvoiceItem instanceof \Pggns\MidocoApi\Api\Order\StructType\IncomingInvoiceDTO) {
+            if (!$getIncomingInvoiceResponseMidocoIncomingInvoiceItem instanceof \Pggns\MidocoApi\Order\StructType\IncomingInvoiceDTO) {
                 $invalidValues[] = is_object($getIncomingInvoiceResponseMidocoIncomingInvoiceItem) ? get_class($getIncomingInvoiceResponseMidocoIncomingInvoiceItem) : sprintf('%s(%s)', gettype($getIncomingInvoiceResponseMidocoIncomingInvoiceItem), var_export($getIncomingInvoiceResponseMidocoIncomingInvoiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoIncomingInvoice property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\IncomingInvoiceDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoIncomingInvoice property can only contain items of type \Pggns\MidocoApi\Order\StructType\IncomingInvoiceDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetIncomingInvoiceResponse extends AbstractStructBase
     /**
      * Set MidocoIncomingInvoice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\IncomingInvoiceDTO[] $midocoIncomingInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetIncomingInvoiceResponse
+     * @param \Pggns\MidocoApi\Order\StructType\IncomingInvoiceDTO[] $midocoIncomingInvoice
+     * @return \Pggns\MidocoApi\Order\StructType\GetIncomingInvoiceResponse
      */
     public function setMidocoIncomingInvoice(?array $midocoIncomingInvoice = null): self
     {
@@ -85,14 +85,14 @@ class GetIncomingInvoiceResponse extends AbstractStructBase
     /**
      * Add item to MidocoIncomingInvoice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\IncomingInvoiceDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetIncomingInvoiceResponse
+     * @param \Pggns\MidocoApi\Order\StructType\IncomingInvoiceDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetIncomingInvoiceResponse
      */
-    public function addToMidocoIncomingInvoice(\Pggns\MidocoApi\Api\Order\StructType\IncomingInvoiceDTO $item): self
+    public function addToMidocoIncomingInvoice(\Pggns\MidocoApi\Order\StructType\IncomingInvoiceDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\IncomingInvoiceDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoIncomingInvoice property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\IncomingInvoiceDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\IncomingInvoiceDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoIncomingInvoice property can only contain items of type \Pggns\MidocoApi\Order\StructType\IncomingInvoiceDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoIncomingInvoice[] = $item;
         

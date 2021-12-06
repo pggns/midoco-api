@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoSimuFee extends CalcitemDTO
     /**
      * Set passengerName value
      * @param string $passengerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSimuFee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSimuFee
      */
     public function setPassengerName(?string $passengerName = null): self
     {
@@ -78,7 +78,7 @@ class MidocoSimuFee extends CalcitemDTO
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSimuFee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSimuFee
      */
     public function setAmount(?float $amount = null): self
     {
@@ -101,7 +101,7 @@ class MidocoSimuFee extends CalcitemDTO
     /**
      * Set taxPartPercent value
      * @param float $taxPartPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSimuFee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSimuFee
      */
     public function setTaxPartPercent(?float $taxPartPercent = null): self
     {

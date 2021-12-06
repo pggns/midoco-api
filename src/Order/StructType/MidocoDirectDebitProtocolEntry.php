@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -133,7 +133,7 @@ class MidocoDirectDebitProtocolEntry extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocolEntry
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocolEntry
      */
     public function setStatus(?string $status = null): self
     {
@@ -156,7 +156,7 @@ class MidocoDirectDebitProtocolEntry extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocolEntry
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocolEntry
      */
     public function setMessage(?string $message = null): self
     {
@@ -179,7 +179,7 @@ class MidocoDirectDebitProtocolEntry extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocolEntry
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocolEntry
      */
     public function setName(?string $name = null): self
     {
@@ -202,7 +202,7 @@ class MidocoDirectDebitProtocolEntry extends AbstractStructBase
     /**
      * Set bankNo value
      * @param string $bankNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocolEntry
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocolEntry
      */
     public function setBankNo(?string $bankNo = null): self
     {
@@ -225,7 +225,7 @@ class MidocoDirectDebitProtocolEntry extends AbstractStructBase
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocolEntry
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocolEntry
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -248,7 +248,7 @@ class MidocoDirectDebitProtocolEntry extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocolEntry
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocolEntry
      */
     public function setAmount(?float $amount = null): self
     {
@@ -271,7 +271,7 @@ class MidocoDirectDebitProtocolEntry extends AbstractStructBase
     /**
      * Set usage value
      * @param string $usage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocolEntry
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocolEntry
      */
     public function setUsage(?string $usage = null): self
     {
@@ -294,7 +294,7 @@ class MidocoDirectDebitProtocolEntry extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocolEntry
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocolEntry
      */
     public function setComment(?string $comment = null): self
     {
@@ -317,7 +317,7 @@ class MidocoDirectDebitProtocolEntry extends AbstractStructBase
     /**
      * Set count value
      * @param string $count
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocolEntry
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocolEntry
      */
     public function setCount(?string $count = null): self
     {
@@ -340,7 +340,7 @@ class MidocoDirectDebitProtocolEntry extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocolEntry
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocolEntry
      */
     public function setIban(?string $iban = null): self
     {
@@ -363,7 +363,7 @@ class MidocoDirectDebitProtocolEntry extends AbstractStructBase
     /**
      * Set bic value
      * @param string $bic
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitProtocolEntry
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitProtocolEntry
      */
     public function setBic(?string $bic = null): self
     {

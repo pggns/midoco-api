@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DestinationCodeDimensionDTO extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DestinationCodeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DestinationCodeDimensionDTO
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -70,7 +70,7 @@ class DestinationCodeDimensionDTO extends AbstractStructBase
     /**
      * Set destinationCodeId value
      * @param int $destinationCodeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DestinationCodeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DestinationCodeDimensionDTO
      */
     public function setDestinationCodeId(?int $destinationCodeId = null): self
     {

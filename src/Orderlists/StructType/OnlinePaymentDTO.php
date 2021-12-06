@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -215,7 +215,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set authAmount value
      * @param float $authAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setAuthAmount(?float $authAmount = null): self
     {
@@ -238,7 +238,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set authenticatedId value
      * @param string $authenticatedId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setAuthenticatedId(?string $authenticatedId = null): self
     {
@@ -261,7 +261,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set cardholderAuthApproval value
      * @param int $cardholderAuthApproval
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setCardholderAuthApproval(?int $cardholderAuthApproval = null): self
     {
@@ -284,7 +284,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set cardholderAuthVerification value
      * @param string $cardholderAuthVerification
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setCardholderAuthVerification(?string $cardholderAuthVerification = null): self
     {
@@ -307,7 +307,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -330,7 +330,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccOwner value
      * @param string $ccOwner
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setCcOwner(?string $ccOwner = null): self
     {
@@ -353,7 +353,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccToken value
      * @param string $ccToken
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setCcToken(?string $ccToken = null): self
     {
@@ -376,7 +376,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccTokenReference value
      * @param int $ccTokenReference
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setCcTokenReference(?int $ccTokenReference = null): self
     {
@@ -399,7 +399,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccTokenType value
      * @param string $ccTokenType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setCcTokenType(?string $ccTokenType = null): self
     {
@@ -422,7 +422,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -445,7 +445,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccValidMonth value
      * @param int $ccValidMonth
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setCcValidMonth(?int $ccValidMonth = null): self
     {
@@ -468,7 +468,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set ccValidYear value
      * @param int $ccValidYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setCcValidYear(?int $ccValidYear = null): self
     {
@@ -491,7 +491,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set cvvToken value
      * @param string $cvvToken
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setCvvToken(?string $cvvToken = null): self
     {
@@ -514,7 +514,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set dstid value
      * @param string $dstid
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setDstid(?string $dstid = null): self
     {
@@ -537,7 +537,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set electronicCommerceIndicator value
      * @param string $electronicCommerceIndicator
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setElectronicCommerceIndicator(?string $electronicCommerceIndicator = null): self
     {
@@ -560,7 +560,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set initialEcomTransactionId value
      * @param string $initialEcomTransactionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setInitialEcomTransactionId(?string $initialEcomTransactionId = null): self
     {
@@ -583,7 +583,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set isRecurring value
      * @param bool $isRecurring
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setIsRecurring(?bool $isRecurring = null): self
     {
@@ -606,7 +606,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -629,7 +629,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set paymentChannelIndicator value
      * @param string $paymentChannelIndicator
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setPaymentChannelIndicator(?string $paymentChannelIndicator = null): self
     {
@@ -652,7 +652,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set remainingAuthAmount value
      * @param float $remainingAuthAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setRemainingAuthAmount(?float $remainingAuthAmount = null): self
     {
@@ -675,7 +675,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set tokenChecked value
      * @param bool $tokenChecked
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setTokenChecked(?bool $tokenChecked = null): self
     {
@@ -698,7 +698,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set v3ds value
      * @param string $v3ds
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setV3ds(?string $v3ds = null): self
     {
@@ -721,7 +721,7 @@ class OnlinePaymentDTO extends AbstractStructBase
     /**
      * Set xid value
      * @param string $xid
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OnlinePaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
      */
     public function setXid(?string $xid = null): self
     {

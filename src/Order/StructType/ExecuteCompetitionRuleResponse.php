@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class ExecuteCompetitionRuleResponse extends AbstractStructBase
     /**
      * Set bonus value
      * @param float $bonus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteCompetitionRuleResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteCompetitionRuleResponse
      */
     public function setBonus(?float $bonus = null): self
     {
@@ -78,7 +78,7 @@ class ExecuteCompetitionRuleResponse extends AbstractStructBase
     /**
      * Set rulebase value
      * @param float $rulebase
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteCompetitionRuleResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteCompetitionRuleResponse
      */
     public function setRulebase(?float $rulebase = null): self
     {
@@ -101,7 +101,7 @@ class ExecuteCompetitionRuleResponse extends AbstractStructBase
     /**
      * Set noOfSellItems value
      * @param int $noOfSellItems
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteCompetitionRuleResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteCompetitionRuleResponse
      */
     public function setNoOfSellItems(?int $noOfSellItems = null): self
     {

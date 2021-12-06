@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class TaskViewTimeRestrictionDTO extends AbstractStructBase
     /**
      * Set taskViewName value
      * @param string $taskViewName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewTimeRestrictionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewTimeRestrictionDTO
      */
     public function setTaskViewName(?string $taskViewName = null): self
     {
@@ -94,7 +94,7 @@ class TaskViewTimeRestrictionDTO extends AbstractStructBase
     /**
      * Set timeEnd value
      * @param string $timeEnd
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewTimeRestrictionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewTimeRestrictionDTO
      */
     public function setTimeEnd(?string $timeEnd = null): self
     {
@@ -117,7 +117,7 @@ class TaskViewTimeRestrictionDTO extends AbstractStructBase
     /**
      * Set timeRestrictionId value
      * @param int $timeRestrictionId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewTimeRestrictionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewTimeRestrictionDTO
      */
     public function setTimeRestrictionId(?int $timeRestrictionId = null): self
     {
@@ -140,7 +140,7 @@ class TaskViewTimeRestrictionDTO extends AbstractStructBase
     /**
      * Set timeStart value
      * @param string $timeStart
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewTimeRestrictionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewTimeRestrictionDTO
      */
     public function setTimeStart(?string $timeStart = null): self
     {
@@ -163,7 +163,7 @@ class TaskViewTimeRestrictionDTO extends AbstractStructBase
     /**
      * Set weekdays value
      * @param string $weekdays
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewTimeRestrictionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewTimeRestrictionDTO
      */
     public function setWeekdays(?string $weekdays = null): self
     {

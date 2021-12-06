@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoBookingJournal extends BookingJournalDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoJournalAttribute
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\JournalAttributeDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\JournalAttributeDTO[]
      */
     protected ?array $MidocoJournalAttribute = null;
     /**
@@ -75,7 +75,7 @@ class MidocoBookingJournal extends BookingJournalDTO
      * @uses MidocoBookingJournal::setDisplayOrderId()
      * @uses MidocoBookingJournal::setAccountDescDebit()
      * @uses MidocoBookingJournal::setAccountDescCredit()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\JournalAttributeDTO[] $midocoJournalAttribute
+     * @param \Pggns\MidocoApi\Orderlists\StructType\JournalAttributeDTO[] $midocoJournalAttribute
      * @param int $customerId
      * @param int $voidJournalId
      * @param int $invoiceId
@@ -100,7 +100,7 @@ class MidocoBookingJournal extends BookingJournalDTO
     }
     /**
      * Get MidocoJournalAttribute value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JournalAttributeDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JournalAttributeDTO[]
      */
     public function getMidocoJournalAttribute(): ?array
     {
@@ -121,12 +121,12 @@ class MidocoBookingJournal extends BookingJournalDTO
         $invalidValues = [];
         foreach ($values as $midocoBookingJournalMidocoJournalAttributeItem) {
             // validation for constraint: itemType
-            if (!$midocoBookingJournalMidocoJournalAttributeItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\JournalAttributeDTO) {
+            if (!$midocoBookingJournalMidocoJournalAttributeItem instanceof \Pggns\MidocoApi\Orderlists\StructType\JournalAttributeDTO) {
                 $invalidValues[] = is_object($midocoBookingJournalMidocoJournalAttributeItem) ? get_class($midocoBookingJournalMidocoJournalAttributeItem) : sprintf('%s(%s)', gettype($midocoBookingJournalMidocoJournalAttributeItem), var_export($midocoBookingJournalMidocoJournalAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoJournalAttribute property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\JournalAttributeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoJournalAttribute property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\JournalAttributeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -135,8 +135,8 @@ class MidocoBookingJournal extends BookingJournalDTO
     /**
      * Set MidocoJournalAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\JournalAttributeDTO[] $midocoJournalAttribute
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingJournal
+     * @param \Pggns\MidocoApi\Orderlists\StructType\JournalAttributeDTO[] $midocoJournalAttribute
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingJournal
      */
     public function setMidocoJournalAttribute(?array $midocoJournalAttribute = null): self
     {
@@ -151,14 +151,14 @@ class MidocoBookingJournal extends BookingJournalDTO
     /**
      * Add item to MidocoJournalAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\JournalAttributeDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingJournal
+     * @param \Pggns\MidocoApi\Orderlists\StructType\JournalAttributeDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingJournal
      */
-    public function addToMidocoJournalAttribute(\Pggns\MidocoApi\Api\Orderlists\StructType\JournalAttributeDTO $item): self
+    public function addToMidocoJournalAttribute(\Pggns\MidocoApi\Orderlists\StructType\JournalAttributeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\JournalAttributeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoJournalAttribute property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\JournalAttributeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\JournalAttributeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoJournalAttribute property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\JournalAttributeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoJournalAttribute[] = $item;
         
@@ -175,7 +175,7 @@ class MidocoBookingJournal extends BookingJournalDTO
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingJournal
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingJournal
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -198,7 +198,7 @@ class MidocoBookingJournal extends BookingJournalDTO
     /**
      * Set voidJournalId value
      * @param int $voidJournalId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingJournal
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingJournal
      */
     public function setVoidJournalId(?int $voidJournalId = null): self
     {
@@ -221,7 +221,7 @@ class MidocoBookingJournal extends BookingJournalDTO
     /**
      * Set invoiceId value
      * @param int $invoiceId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingJournal
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingJournal
      */
     public function setInvoiceId(?int $invoiceId = null): self
     {
@@ -244,7 +244,7 @@ class MidocoBookingJournal extends BookingJournalDTO
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingJournal
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingJournal
      */
     public function setPosition(?int $position = null): self
     {
@@ -267,7 +267,7 @@ class MidocoBookingJournal extends BookingJournalDTO
     /**
      * Set displayOrderNo value
      * @param int $displayOrderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingJournal
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingJournal
      */
     public function setDisplayOrderNo(?int $displayOrderNo = null): self
     {
@@ -290,7 +290,7 @@ class MidocoBookingJournal extends BookingJournalDTO
     /**
      * Set displayOrderId value
      * @param int $displayOrderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingJournal
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingJournal
      */
     public function setDisplayOrderId(?int $displayOrderId = null): self
     {
@@ -313,7 +313,7 @@ class MidocoBookingJournal extends BookingJournalDTO
     /**
      * Set accountDescDebit value
      * @param string $accountDescDebit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingJournal
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingJournal
      */
     public function setAccountDescDebit(?string $accountDescDebit = null): self
     {
@@ -336,7 +336,7 @@ class MidocoBookingJournal extends BookingJournalDTO
     /**
      * Set accountDescCredit value
      * @param string $accountDescCredit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingJournal
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingJournal
      */
     public function setAccountDescCredit(?string $accountDescCredit = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveMidocoAgencyNumberRequest extends AbstractStructBase
      * The MidocoAgencyNumber
      * Meta information extracted from the WSDL
      * - ref: MidocoAgencyNumber
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO $MidocoAgencyNumber = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO $MidocoAgencyNumber = null;
     /**
      * The action
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SaveMidocoAgencyNumberRequest extends AbstractStructBase
      * Constructor method for SaveMidocoAgencyNumberRequest
      * @uses SaveMidocoAgencyNumberRequest::setMidocoAgencyNumber()
      * @uses SaveMidocoAgencyNumberRequest::setAction()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO $midocoAgencyNumber
+     * @param \Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO $midocoAgencyNumber
      * @param int $action
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO $midocoAgencyNumber = null, ?int $action = 0)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO $midocoAgencyNumber = null, ?int $action = 0)
     {
         $this
             ->setMidocoAgencyNumber($midocoAgencyNumber)
@@ -42,18 +42,18 @@ class SaveMidocoAgencyNumberRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAgencyNumber value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO|null
      */
-    public function getMidocoAgencyNumber(): ?\Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO
+    public function getMidocoAgencyNumber(): ?\Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO
     {
         return $this->MidocoAgencyNumber;
     }
     /**
      * Set MidocoAgencyNumber value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO $midocoAgencyNumber
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoAgencyNumberRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO $midocoAgencyNumber
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMidocoAgencyNumberRequest
      */
-    public function setMidocoAgencyNumber(?\Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO $midocoAgencyNumber = null): self
+    public function setMidocoAgencyNumber(?\Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO $midocoAgencyNumber = null): self
     {
         $this->MidocoAgencyNumber = $midocoAgencyNumber;
         
@@ -70,7 +70,7 @@ class SaveMidocoAgencyNumberRequest extends AbstractStructBase
     /**
      * Set action value
      * @param int $action
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoAgencyNumberRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMidocoAgencyNumberRequest
      */
     public function setAction(?int $action = 0): self
     {

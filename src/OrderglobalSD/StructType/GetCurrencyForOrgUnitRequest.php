@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetCurrencyForOrgUnitRequest extends AbstractStructBase
     /**
      * Set orgUnitName value
      * @param string $orgUnitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyForOrgUnitRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyForOrgUnitRequest
      */
     public function setOrgUnitName(?string $orgUnitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class MidocoPersonalNo extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPersonalNo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPersonalNo
      */
     public function setCustomerId(int $customerId): self
     {
@@ -74,7 +74,7 @@ class MidocoPersonalNo extends AbstractStructBase
     /**
      * Set personalNo value
      * @param string $personalNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPersonalNo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPersonalNo
      */
     public function setPersonalNo(string $personalNo): self
     {

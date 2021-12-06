@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SystemRulesetCompiledResult extends SystemRulesetDTO
     /**
      * Set errorText value
      * @param string $errorText
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SystemRulesetCompiledResult
+     * @return \Pggns\MidocoApi\Crm\StructType\SystemRulesetCompiledResult
      */
     public function setErrorText(?string $errorText = null): self
     {

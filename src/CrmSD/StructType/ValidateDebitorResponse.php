@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class ValidateDebitorResponse extends AbstractStructBase
     /**
      * Set isValid value
      * @param bool $isValid
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ValidateDebitorResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateDebitorResponse
      */
     public function setIsValid(?bool $isValid = null): self
     {

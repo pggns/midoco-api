@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MdcSettlementBillingBookingDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO
      */
     public function setId(?int $id = null): self
     {
@@ -110,7 +110,7 @@ class MdcSettlementBillingBookingDTO extends AbstractStructBase
     /**
      * Set mdcSettlementBillingId value
      * @param int $mdcSettlementBillingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO
      */
     public function setMdcSettlementBillingId(?int $mdcSettlementBillingId = null): self
     {
@@ -133,7 +133,7 @@ class MdcSettlementBillingBookingDTO extends AbstractStructBase
     /**
      * Set noOfBookings value
      * @param int $noOfBookings
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO
      */
     public function setNoOfBookings(?int $noOfBookings = null): self
     {
@@ -156,7 +156,7 @@ class MdcSettlementBillingBookingDTO extends AbstractStructBase
     /**
      * Set settlementMonth value
      * @param string $settlementMonth
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO
      */
     public function setSettlementMonth(?string $settlementMonth = null): self
     {
@@ -179,7 +179,7 @@ class MdcSettlementBillingBookingDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -202,7 +202,7 @@ class MdcSettlementBillingBookingDTO extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -225,7 +225,7 @@ class MdcSettlementBillingBookingDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

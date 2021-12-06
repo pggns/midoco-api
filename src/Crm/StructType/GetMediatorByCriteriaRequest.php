@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetMediatorByCriteriaRequest extends AbstractStructBase
     /**
      * Set criteria_name value
      * @param string $criteria_name
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMediatorByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMediatorByCriteriaRequest
      */
     public function setCriteria_name(?string $criteria_name = null): self
     {
@@ -70,7 +70,7 @@ class GetMediatorByCriteriaRequest extends AbstractStructBase
     /**
      * Set criteria_value value
      * @param string $criteria_value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMediatorByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMediatorByCriteriaRequest
      */
     public function setCriteria_value(?string $criteria_value = null): self
     {

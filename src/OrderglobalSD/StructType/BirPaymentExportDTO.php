@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class BirPaymentExportDTO extends AbstractStructBase
     /**
      * Set agencyNo value
      * @param string $agencyNo
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\BirPaymentExportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\BirPaymentExportDTO
      */
     public function setAgencyNo(?string $agencyNo = null): self
     {
@@ -158,7 +158,7 @@ class BirPaymentExportDTO extends AbstractStructBase
     /**
      * Set birPaymentId value
      * @param int $birPaymentId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\BirPaymentExportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\BirPaymentExportDTO
      */
     public function setBirPaymentId(?int $birPaymentId = null): self
     {
@@ -181,7 +181,7 @@ class BirPaymentExportDTO extends AbstractStructBase
     /**
      * Set businessUnitNo value
      * @param string $businessUnitNo
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\BirPaymentExportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\BirPaymentExportDTO
      */
     public function setBusinessUnitNo(?string $businessUnitNo = null): self
     {
@@ -204,7 +204,7 @@ class BirPaymentExportDTO extends AbstractStructBase
     /**
      * Set ccSlipNo value
      * @param string $ccSlipNo
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\BirPaymentExportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\BirPaymentExportDTO
      */
     public function setCcSlipNo(?string $ccSlipNo = null): self
     {
@@ -227,7 +227,7 @@ class BirPaymentExportDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\BirPaymentExportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\BirPaymentExportDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -250,7 +250,7 @@ class BirPaymentExportDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\BirPaymentExportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\BirPaymentExportDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -273,7 +273,7 @@ class BirPaymentExportDTO extends AbstractStructBase
     /**
      * Set documentNo value
      * @param int $documentNo
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\BirPaymentExportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\BirPaymentExportDTO
      */
     public function setDocumentNo(?int $documentNo = null): self
     {
@@ -296,7 +296,7 @@ class BirPaymentExportDTO extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\BirPaymentExportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\BirPaymentExportDTO
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -319,7 +319,7 @@ class BirPaymentExportDTO extends AbstractStructBase
     /**
      * Set exportedTimestamp value
      * @param string $exportedTimestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\BirPaymentExportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\BirPaymentExportDTO
      */
     public function setExportedTimestamp(?string $exportedTimestamp = null): self
     {
@@ -342,7 +342,7 @@ class BirPaymentExportDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\BirPaymentExportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\BirPaymentExportDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -365,7 +365,7 @@ class BirPaymentExportDTO extends AbstractStructBase
     /**
      * Set transactionDate value
      * @param string $transactionDate
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\BirPaymentExportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\BirPaymentExportDTO
      */
     public function setTransactionDate(?string $transactionDate = null): self
     {
@@ -388,7 +388,7 @@ class BirPaymentExportDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\BirPaymentExportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\BirPaymentExportDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -411,7 +411,7 @@ class BirPaymentExportDTO extends AbstractStructBase
     /**
      * Set versionNumber value
      * @param string $versionNumber
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\BirPaymentExportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\BirPaymentExportDTO
      */
     public function setVersionNumber(?string $versionNumber = null): self
     {

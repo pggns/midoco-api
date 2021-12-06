@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetUserQueryRequest extends AbstractStructBase
     /**
      * Set queryId value
      * @param int $queryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUserQueryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUserQueryRequest
      */
     public function setQueryId(?int $queryId = null): self
     {
@@ -70,7 +70,7 @@ class GetUserQueryRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetUserQueryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUserQueryRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

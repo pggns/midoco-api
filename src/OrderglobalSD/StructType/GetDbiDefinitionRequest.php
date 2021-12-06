@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,9 +19,9 @@ class GetDbiDefinitionRequest extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: mail:MidocoDbiCcInfo
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiCcInfo|null
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiCcInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiCcInfo $MidocoDbiCcInfo = null;
+    protected ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiCcInfo $MidocoDbiCcInfo = null;
     /**
      * The emailIfNew
      * Meta information extracted from the WSDL
@@ -45,12 +45,12 @@ class GetDbiDefinitionRequest extends AbstractStructBase
      * @uses GetDbiDefinitionRequest::setEmailIfNew()
      * @uses GetDbiDefinitionRequest::setPublisherId()
      * @uses GetDbiDefinitionRequest::setDbiItemType()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiCcInfo $midocoDbiCcInfo
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiCcInfo $midocoDbiCcInfo
      * @param bool $emailIfNew
      * @param string $publisherId
      * @param string $dbiItemType
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiCcInfo $midocoDbiCcInfo = null, ?bool $emailIfNew = true, ?string $publisherId = null, ?string $dbiItemType = null)
+    public function __construct(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiCcInfo $midocoDbiCcInfo = null, ?bool $emailIfNew = true, ?string $publisherId = null, ?string $dbiItemType = null)
     {
         $this
             ->setMidocoDbiCcInfo($midocoDbiCcInfo)
@@ -60,18 +60,18 @@ class GetDbiDefinitionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoDbiCcInfo value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiCcInfo|null
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiCcInfo|null
      */
-    public function getMidocoDbiCcInfo(): ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiCcInfo
+    public function getMidocoDbiCcInfo(): ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiCcInfo
     {
         return $this->MidocoDbiCcInfo;
     }
     /**
      * Set MidocoDbiCcInfo value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiCcInfo $midocoDbiCcInfo
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiDefinitionRequest
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiCcInfo $midocoDbiCcInfo
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiDefinitionRequest
      */
-    public function setMidocoDbiCcInfo(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiCcInfo $midocoDbiCcInfo = null): self
+    public function setMidocoDbiCcInfo(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiCcInfo $midocoDbiCcInfo = null): self
     {
         $this->MidocoDbiCcInfo = $midocoDbiCcInfo;
         
@@ -88,7 +88,7 @@ class GetDbiDefinitionRequest extends AbstractStructBase
     /**
      * Set emailIfNew value
      * @param bool $emailIfNew
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiDefinitionRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiDefinitionRequest
      */
     public function setEmailIfNew(?bool $emailIfNew = true): self
     {
@@ -111,7 +111,7 @@ class GetDbiDefinitionRequest extends AbstractStructBase
     /**
      * Set publisherId value
      * @param string $publisherId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiDefinitionRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiDefinitionRequest
      */
     public function setPublisherId(?string $publisherId = null): self
     {
@@ -134,7 +134,7 @@ class GetDbiDefinitionRequest extends AbstractStructBase
     /**
      * Set dbiItemType value
      * @param string $dbiItemType
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiDefinitionRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiDefinitionRequest
      */
     public function setDbiItemType(?string $dbiItemType = null): self
     {

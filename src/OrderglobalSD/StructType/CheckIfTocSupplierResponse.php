@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class CheckIfTocSupplierResponse extends AbstractStructBase
     /**
      * Set isTocSupplier value
      * @param bool $isTocSupplier
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CheckIfTocSupplierResponse
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CheckIfTocSupplierResponse
      */
     public function setIsTocSupplier(?bool $isTocSupplier = false): self
     {
@@ -80,7 +80,7 @@ class CheckIfTocSupplierResponse extends AbstractStructBase
     /**
      * Set supplierRegex value
      * @param string $supplierRegex
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CheckIfTocSupplierResponse
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CheckIfTocSupplierResponse
      */
     public function setSupplierRegex(?string $supplierRegex = null): self
     {
@@ -103,7 +103,7 @@ class CheckIfTocSupplierResponse extends AbstractStructBase
     /**
      * Set hotelRegex value
      * @param string $hotelRegex
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CheckIfTocSupplierResponse
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CheckIfTocSupplierResponse
      */
     public function setHotelRegex(?string $hotelRegex = null): self
     {

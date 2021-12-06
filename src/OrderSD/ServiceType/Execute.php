@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\ServiceType;
+namespace Pggns\MidocoApi\OrderSD\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Execute extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\OrderSD\ServiceType\Execute
+     * @return \Pggns\MidocoApi\OrderSD\ServiceType\Execute
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Execute extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteBillingQueryRequest $paramExecuteBillingQueryRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteBillingQueryResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ExecuteBillingQueryRequest $paramExecuteBillingQueryRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ExecuteBillingQueryResponse|bool
      */
-    public function executeBillingQuery(\Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteBillingQueryRequest $paramExecuteBillingQueryRequest)
+    public function executeBillingQuery(\Pggns\MidocoApi\OrderSD\StructType\ExecuteBillingQueryRequest $paramExecuteBillingQueryRequest)
     {
         try {
             $this->setResult($resultExecuteBillingQuery = $this->getSoapClient()->__soapCall('executeBillingQuery', [
@@ -58,15 +58,15 @@ class Execute extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteBookingsQueryRequest $paramExecuteBookingsQueryRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteBookingsQueryResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ExecuteBookingsQueryRequest $paramExecuteBookingsQueryRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ExecuteBookingsQueryResponse|bool
      */
-    public function executeBookingsQuery(\Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteBookingsQueryRequest $paramExecuteBookingsQueryRequest)
+    public function executeBookingsQuery(\Pggns\MidocoApi\OrderSD\StructType\ExecuteBookingsQueryRequest $paramExecuteBookingsQueryRequest)
     {
         try {
             $this->setResult($resultExecuteBookingsQuery = $this->getSoapClient()->__soapCall('executeBookingsQuery', [
@@ -85,15 +85,15 @@ class Execute extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteCustomerQueryRequest $paramExecuteCustomerQueryRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteCustomerQueryResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ExecuteCustomerQueryRequest $paramExecuteCustomerQueryRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ExecuteCustomerQueryResponse|bool
      */
-    public function executeCustomerQuery(\Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteCustomerQueryRequest $paramExecuteCustomerQueryRequest)
+    public function executeCustomerQuery(\Pggns\MidocoApi\OrderSD\StructType\ExecuteCustomerQueryRequest $paramExecuteCustomerQueryRequest)
     {
         try {
             $this->setResult($resultExecuteCustomerQuery = $this->getSoapClient()->__soapCall('executeCustomerQuery', [
@@ -112,15 +112,15 @@ class Execute extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteUserQueryRequest $paramExecuteUserQueryRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteUserQueryResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ExecuteUserQueryRequest $paramExecuteUserQueryRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ExecuteUserQueryResponse|bool
      */
-    public function executeUserQuery(\Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteUserQueryRequest $paramExecuteUserQueryRequest)
+    public function executeUserQuery(\Pggns\MidocoApi\OrderSD\StructType\ExecuteUserQueryRequest $paramExecuteUserQueryRequest)
     {
         try {
             $this->setResult($resultExecuteUserQuery = $this->getSoapClient()->__soapCall('executeUserQuery', [
@@ -139,15 +139,15 @@ class Execute extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteOrgunitQueryRequest $paramExecuteOrgunitQueryRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteOrgunitQueryResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ExecuteOrgunitQueryRequest $paramExecuteOrgunitQueryRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ExecuteOrgunitQueryResponse|bool
      */
-    public function executeOrgunitQuery(\Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteOrgunitQueryRequest $paramExecuteOrgunitQueryRequest)
+    public function executeOrgunitQuery(\Pggns\MidocoApi\OrderSD\StructType\ExecuteOrgunitQueryRequest $paramExecuteOrgunitQueryRequest)
     {
         try {
             $this->setResult($resultExecuteOrgunitQuery = $this->getSoapClient()->__soapCall('executeOrgunitQuery', [
@@ -164,7 +164,7 @@ class Execute extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteBillingQueryResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteBookingsQueryResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteCustomerQueryResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteOrgunitQueryResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\ExecuteUserQueryResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ExecuteBillingQueryResponse|\Pggns\MidocoApi\OrderSD\StructType\ExecuteBookingsQueryResponse|\Pggns\MidocoApi\OrderSD\StructType\ExecuteCustomerQueryResponse|\Pggns\MidocoApi\OrderSD\StructType\ExecuteOrgunitQueryResponse|\Pggns\MidocoApi\OrderSD\StructType\ExecuteUserQueryResponse
      */
     public function getResult()
     {

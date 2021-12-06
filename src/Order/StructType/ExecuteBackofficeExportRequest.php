@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -80,7 +80,7 @@ class ExecuteBackofficeExportRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteBackofficeExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteBackofficeExportRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -103,7 +103,7 @@ class ExecuteBackofficeExportRequest extends AbstractStructBase
     /**
      * Set exportDirectory value
      * @param string $exportDirectory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteBackofficeExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteBackofficeExportRequest
      */
     public function setExportDirectory(?string $exportDirectory = null): self
     {
@@ -126,7 +126,7 @@ class ExecuteBackofficeExportRequest extends AbstractStructBase
     /**
      * Set format value
      * @param string $format
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteBackofficeExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteBackofficeExportRequest
      */
     public function setFormat(?string $format = null): self
     {
@@ -149,7 +149,7 @@ class ExecuteBackofficeExportRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteBackofficeExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteBackofficeExportRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -176,7 +176,7 @@ class ExecuteBackofficeExportRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteBackofficeExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteBackofficeExportRequest
      */
     public function setEndDate(?string $endDate = null): self
     {

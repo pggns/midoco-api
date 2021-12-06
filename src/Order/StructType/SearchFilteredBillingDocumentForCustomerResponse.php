@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,13 +20,13 @@ class SearchFilteredBillingDocumentForCustomerResponse extends AbstractStructBas
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingSearchInfoExt
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingSearchInfoType[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingSearchInfoType[]
      */
     protected ?array $MidocoBillingSearchInfoExt = null;
     /**
      * Constructor method for SearchFilteredBillingDocumentForCustomerResponse
      * @uses SearchFilteredBillingDocumentForCustomerResponse::setMidocoBillingSearchInfoExt()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingSearchInfoType[] $midocoBillingSearchInfoExt
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingSearchInfoType[] $midocoBillingSearchInfoExt
      */
     public function __construct(?array $midocoBillingSearchInfoExt = null)
     {
@@ -35,7 +35,7 @@ class SearchFilteredBillingDocumentForCustomerResponse extends AbstractStructBas
     }
     /**
      * Get MidocoBillingSearchInfoExt value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingSearchInfoType[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingSearchInfoType[]
      */
     public function getMidocoBillingSearchInfoExt(): ?array
     {
@@ -56,12 +56,12 @@ class SearchFilteredBillingDocumentForCustomerResponse extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $searchFilteredBillingDocumentForCustomerResponseMidocoBillingSearchInfoExtItem) {
             // validation for constraint: itemType
-            if (!$searchFilteredBillingDocumentForCustomerResponseMidocoBillingSearchInfoExtItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingSearchInfoType) {
+            if (!$searchFilteredBillingDocumentForCustomerResponseMidocoBillingSearchInfoExtItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingSearchInfoType) {
                 $invalidValues[] = is_object($searchFilteredBillingDocumentForCustomerResponseMidocoBillingSearchInfoExtItem) ? get_class($searchFilteredBillingDocumentForCustomerResponseMidocoBillingSearchInfoExtItem) : sprintf('%s(%s)', gettype($searchFilteredBillingDocumentForCustomerResponseMidocoBillingSearchInfoExtItem), var_export($searchFilteredBillingDocumentForCustomerResponseMidocoBillingSearchInfoExtItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingSearchInfoExt property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingSearchInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingSearchInfoExt property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingSearchInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -70,8 +70,8 @@ class SearchFilteredBillingDocumentForCustomerResponse extends AbstractStructBas
     /**
      * Set MidocoBillingSearchInfoExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingSearchInfoType[] $midocoBillingSearchInfoExt
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchFilteredBillingDocumentForCustomerResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingSearchInfoType[] $midocoBillingSearchInfoExt
+     * @return \Pggns\MidocoApi\Order\StructType\SearchFilteredBillingDocumentForCustomerResponse
      */
     public function setMidocoBillingSearchInfoExt(?array $midocoBillingSearchInfoExt = null): self
     {
@@ -86,14 +86,14 @@ class SearchFilteredBillingDocumentForCustomerResponse extends AbstractStructBas
     /**
      * Add item to MidocoBillingSearchInfoExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingSearchInfoType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchFilteredBillingDocumentForCustomerResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingSearchInfoType $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchFilteredBillingDocumentForCustomerResponse
      */
-    public function addToMidocoBillingSearchInfoExt(\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingSearchInfoType $item): self
+    public function addToMidocoBillingSearchInfoExt(\Pggns\MidocoApi\Order\StructType\MidocoBillingSearchInfoType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingSearchInfoType) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingSearchInfoExt property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingSearchInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingSearchInfoType) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingSearchInfoExt property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingSearchInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingSearchInfoExt[] = $item;
         

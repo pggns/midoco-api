@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoDebitPaymentTransaction extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param int $receiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitPaymentTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitPaymentTransaction
      */
     public function setReceiptNo(?int $receiptNo = null): self
     {
@@ -70,7 +70,7 @@ class MidocoDebitPaymentTransaction extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitPaymentTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitPaymentTransaction
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {

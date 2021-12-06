@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class TaskDefinitionDTO extends AbstractStructBase
     /**
      * Set autoDelegee value
      * @param int $autoDelegee
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDefinitionDTO
      */
     public function setAutoDelegee(?int $autoDelegee = null): self
     {
@@ -126,7 +126,7 @@ class TaskDefinitionDTO extends AbstractStructBase
     /**
      * Set autoTaskQueue value
      * @param string $autoTaskQueue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDefinitionDTO
      */
     public function setAutoTaskQueue(?string $autoTaskQueue = null): self
     {
@@ -149,7 +149,7 @@ class TaskDefinitionDTO extends AbstractStructBase
     /**
      * Set daysToWarning1 value
      * @param int $daysToWarning1
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDefinitionDTO
      */
     public function setDaysToWarning1(?int $daysToWarning1 = null): self
     {
@@ -172,7 +172,7 @@ class TaskDefinitionDTO extends AbstractStructBase
     /**
      * Set daysToWarning2 value
      * @param int $daysToWarning2
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDefinitionDTO
      */
     public function setDaysToWarning2(?int $daysToWarning2 = null): self
     {
@@ -195,7 +195,7 @@ class TaskDefinitionDTO extends AbstractStructBase
     /**
      * Set isSystem value
      * @param bool $isSystem
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDefinitionDTO
      */
     public function setIsSystem(?bool $isSystem = null): self
     {
@@ -218,7 +218,7 @@ class TaskDefinitionDTO extends AbstractStructBase
     /**
      * Set preventDateChange value
      * @param bool $preventDateChange
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDefinitionDTO
      */
     public function setPreventDateChange(?bool $preventDateChange = null): self
     {
@@ -241,7 +241,7 @@ class TaskDefinitionDTO extends AbstractStructBase
     /**
      * Set priority value
      * @param int $priority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDefinitionDTO
      */
     public function setPriority(?int $priority = null): self
     {
@@ -264,7 +264,7 @@ class TaskDefinitionDTO extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDefinitionDTO
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -287,7 +287,7 @@ class TaskDefinitionDTO extends AbstractStructBase
     /**
      * Set warningReferenceDate value
      * @param string $warningReferenceDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDefinitionDTO
      */
     public function setWarningReferenceDate(?string $warningReferenceDate = null): self
     {

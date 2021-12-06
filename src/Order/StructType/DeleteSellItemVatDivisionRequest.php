@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteSellItemVatDivisionRequest extends AbstractStructBase
      * The MidocoSellItemVatDivision
      * Meta information extracted from the WSDL
      * - ref: MidocoSellItemVatDivision
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision $MidocoSellItemVatDivision = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision $MidocoSellItemVatDivision = null;
     /**
      * Constructor method for DeleteSellItemVatDivisionRequest
      * @uses DeleteSellItemVatDivisionRequest::setMidocoSellItemVatDivision()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision $midocoSellItemVatDivision
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision $midocoSellItemVatDivision
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision $midocoSellItemVatDivision = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision $midocoSellItemVatDivision = null)
     {
         $this
             ->setMidocoSellItemVatDivision($midocoSellItemVatDivision);
     }
     /**
      * Get MidocoSellItemVatDivision value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision|null
      */
-    public function getMidocoSellItemVatDivision(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision
+    public function getMidocoSellItemVatDivision(): ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision
     {
         return $this->MidocoSellItemVatDivision;
     }
     /**
      * Set MidocoSellItemVatDivision value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision $midocoSellItemVatDivision
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSellItemVatDivisionRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision $midocoSellItemVatDivision
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSellItemVatDivisionRequest
      */
-    public function setMidocoSellItemVatDivision(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision $midocoSellItemVatDivision = null): self
+    public function setMidocoSellItemVatDivision(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision $midocoSellItemVatDivision = null): self
     {
         $this->MidocoSellItemVatDivision = $midocoSellItemVatDivision;
         

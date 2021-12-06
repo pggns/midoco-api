@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -73,7 +73,7 @@ class MidocoDocumentNatureRetentionType extends DocumentNatureRetentionDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentNatureRetentionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentNatureRetentionType
      */
     public function setInherited(?bool $inherited = null): self
     {
@@ -96,7 +96,7 @@ class MidocoDocumentNatureRetentionType extends DocumentNatureRetentionDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentNatureRetentionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentNatureRetentionType
      */
     public function setDescription(?string $description = null): self
     {
@@ -119,7 +119,7 @@ class MidocoDocumentNatureRetentionType extends DocumentNatureRetentionDTO
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentNatureRetentionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentNatureRetentionType
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -142,7 +142,7 @@ class MidocoDocumentNatureRetentionType extends DocumentNatureRetentionDTO
     /**
      * Set isMeasuringInMonthsOtherwiseYears value
      * @param bool $isMeasuringInMonthsOtherwiseYears
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentNatureRetentionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentNatureRetentionType
      */
     public function setIsMeasuringInMonthsOtherwiseYears(?bool $isMeasuringInMonthsOtherwiseYears = true): self
     {
@@ -165,7 +165,7 @@ class MidocoDocumentNatureRetentionType extends DocumentNatureRetentionDTO
     /**
      * Set systemOnly value
      * @param bool $systemOnly
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentNatureRetentionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentNatureRetentionType
      */
     public function setSystemOnly(?bool $systemOnly = null): self
     {

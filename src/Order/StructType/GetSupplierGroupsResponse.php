@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -91,7 +91,7 @@ class GetSupplierGroupsResponse extends AbstractStructBase
      * Set group1 value
      * @throws InvalidArgumentException
      * @param string[] $group1
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierGroupsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierGroupsResponse
      */
     public function setGroup1(?array $group1 = null): self
     {
@@ -107,7 +107,7 @@ class GetSupplierGroupsResponse extends AbstractStructBase
      * Add item to group1 value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierGroupsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierGroupsResponse
      */
     public function addToGroup1(string $item): self
     {
@@ -157,7 +157,7 @@ class GetSupplierGroupsResponse extends AbstractStructBase
      * Set group2 value
      * @throws InvalidArgumentException
      * @param string[] $group2
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierGroupsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierGroupsResponse
      */
     public function setGroup2(?array $group2 = null): self
     {
@@ -173,7 +173,7 @@ class GetSupplierGroupsResponse extends AbstractStructBase
      * Add item to group2 value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierGroupsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierGroupsResponse
      */
     public function addToGroup2(string $item): self
     {
@@ -223,7 +223,7 @@ class GetSupplierGroupsResponse extends AbstractStructBase
      * Set group3 value
      * @throws InvalidArgumentException
      * @param string[] $group3
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierGroupsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierGroupsResponse
      */
     public function setGroup3(?array $group3 = null): self
     {
@@ -239,7 +239,7 @@ class GetSupplierGroupsResponse extends AbstractStructBase
      * Add item to group3 value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierGroupsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierGroupsResponse
      */
     public function addToGroup3(string $item): self
     {

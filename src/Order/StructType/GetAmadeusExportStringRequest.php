@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
      * The MidocoTravelItem
      * Meta information extracted from the WSDL
      * - ref: MidocoTravelItem
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTravelItemType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $MidocoTravelItem = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $MidocoTravelItem = null;
     /**
      * The returnJson
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
      * Constructor method for GetAmadeusExportStringRequest
      * @uses GetAmadeusExportStringRequest::setMidocoTravelItem()
      * @uses GetAmadeusExportStringRequest::setReturnJson()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $midocoTravelItem
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $midocoTravelItem
      * @param bool $returnJson
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $midocoTravelItem = null, ?bool $returnJson = false)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $midocoTravelItem = null, ?bool $returnJson = false)
     {
         $this
             ->setMidocoTravelItem($midocoTravelItem)
@@ -42,18 +42,18 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTravelItem value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTravelItemType|null
      */
-    public function getMidocoTravelItem(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType
+    public function getMidocoTravelItem(): ?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemType
     {
         return $this->MidocoTravelItem;
     }
     /**
      * Set MidocoTravelItem value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $midocoTravelItem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAmadeusExportStringRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $midocoTravelItem
+     * @return \Pggns\MidocoApi\Order\StructType\GetAmadeusExportStringRequest
      */
-    public function setMidocoTravelItem(?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $midocoTravelItem = null): self
+    public function setMidocoTravelItem(?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $midocoTravelItem = null): self
     {
         $this->MidocoTravelItem = $midocoTravelItem;
         
@@ -70,7 +70,7 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
     /**
      * Set returnJson value
      * @param bool $returnJson
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAmadeusExportStringRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAmadeusExportStringRequest
      */
     public function setReturnJson(?bool $returnJson = false): self
     {

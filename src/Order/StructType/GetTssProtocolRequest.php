@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetTssProtocolRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTssProtocolRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTssProtocolRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -78,7 +78,7 @@ class GetTssProtocolRequest extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTssProtocolRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTssProtocolRequest
      */
     public function setTssId(?string $tssId = null): self
     {
@@ -101,7 +101,7 @@ class GetTssProtocolRequest extends AbstractStructBase
     /**
      * Set exportId value
      * @param string $exportId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTssProtocolRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTssProtocolRequest
      */
     public function setExportId(?string $exportId = null): self
     {

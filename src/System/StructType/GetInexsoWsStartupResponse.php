@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetInexsoWsStartupResponse extends AbstractStructBase
     /**
      * Set startupUrl value
      * @param string $startupUrl
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoWsStartupResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoWsStartupResponse
      */
     public function setStartupUrl(?string $startupUrl = null): self
     {
@@ -70,7 +70,7 @@ class GetInexsoWsStartupResponse extends AbstractStructBase
     /**
      * Set preferredBrowser value
      * @param string $preferredBrowser
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoWsStartupResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoWsStartupResponse
      */
     public function setPreferredBrowser(?string $preferredBrowser = null): self
     {

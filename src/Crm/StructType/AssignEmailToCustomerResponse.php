@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,13 +20,13 @@ class AssignEmailToCustomerResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoCustomerInfo
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInfo[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInfo[]
      */
     protected ?array $MidocoCustomerInfo = null;
     /**
      * Constructor method for AssignEmailToCustomerResponse
      * @uses AssignEmailToCustomerResponse::setMidocoCustomerInfo()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInfo[] $midocoCustomerInfo
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInfo[] $midocoCustomerInfo
      */
     public function __construct(?array $midocoCustomerInfo = null)
     {
@@ -35,7 +35,7 @@ class AssignEmailToCustomerResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerInfo value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInfo[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInfo[]
      */
     public function getMidocoCustomerInfo(): ?array
     {
@@ -56,12 +56,12 @@ class AssignEmailToCustomerResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $assignEmailToCustomerResponseMidocoCustomerInfoItem) {
             // validation for constraint: itemType
-            if (!$assignEmailToCustomerResponseMidocoCustomerInfoItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInfo) {
+            if (!$assignEmailToCustomerResponseMidocoCustomerInfoItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInfo) {
                 $invalidValues[] = is_object($assignEmailToCustomerResponseMidocoCustomerInfoItem) ? get_class($assignEmailToCustomerResponseMidocoCustomerInfoItem) : sprintf('%s(%s)', gettype($assignEmailToCustomerResponseMidocoCustomerInfoItem), var_export($assignEmailToCustomerResponseMidocoCustomerInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerInfo property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerInfo property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -70,8 +70,8 @@ class AssignEmailToCustomerResponse extends AbstractStructBase
     /**
      * Set MidocoCustomerInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInfo[] $midocoCustomerInfo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AssignEmailToCustomerResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInfo[] $midocoCustomerInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\AssignEmailToCustomerResponse
      */
     public function setMidocoCustomerInfo(?array $midocoCustomerInfo = null): self
     {
@@ -86,14 +86,14 @@ class AssignEmailToCustomerResponse extends AbstractStructBase
     /**
      * Add item to MidocoCustomerInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInfo $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AssignEmailToCustomerResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInfo $item
+     * @return \Pggns\MidocoApi\Crm\StructType\AssignEmailToCustomerResponse
      */
-    public function addToMidocoCustomerInfo(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInfo $item): self
+    public function addToMidocoCustomerInfo(\Pggns\MidocoApi\Crm\StructType\MidocoCustomerInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerInfo property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerInfo property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerInfo[] = $item;
         

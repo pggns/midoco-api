@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSupplierTraveltypesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierTraveltype
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO[]
      */
     protected ?array $MidocoSupplierTraveltype = null;
     /**
      * Constructor method for GetSupplierTraveltypesResponse
      * @uses GetSupplierTraveltypesResponse::setMidocoSupplierTraveltype()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO[] $midocoSupplierTraveltype
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO[] $midocoSupplierTraveltype
      */
     public function __construct(?array $midocoSupplierTraveltype = null)
     {
@@ -34,7 +34,7 @@ class GetSupplierTraveltypesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierTraveltype value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO[]
      */
     public function getMidocoSupplierTraveltype(): ?array
     {
@@ -55,12 +55,12 @@ class GetSupplierTraveltypesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSupplierTraveltypesResponseMidocoSupplierTraveltypeItem) {
             // validation for constraint: itemType
-            if (!$getSupplierTraveltypesResponseMidocoSupplierTraveltypeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO) {
+            if (!$getSupplierTraveltypesResponseMidocoSupplierTraveltypeItem instanceof \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO) {
                 $invalidValues[] = is_object($getSupplierTraveltypesResponseMidocoSupplierTraveltypeItem) ? get_class($getSupplierTraveltypesResponseMidocoSupplierTraveltypeItem) : sprintf('%s(%s)', gettype($getSupplierTraveltypesResponseMidocoSupplierTraveltypeItem), var_export($getSupplierTraveltypesResponseMidocoSupplierTraveltypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierTraveltype property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierTraveltype property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSupplierTraveltypesResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierTraveltype value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO[] $midocoSupplierTraveltype
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierTraveltypesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO[] $midocoSupplierTraveltype
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierTraveltypesResponse
      */
     public function setMidocoSupplierTraveltype(?array $midocoSupplierTraveltype = null): self
     {
@@ -85,14 +85,14 @@ class GetSupplierTraveltypesResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierTraveltype value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierTraveltypesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierTraveltypesResponse
      */
-    public function addToMidocoSupplierTraveltype(\Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO $item): self
+    public function addToMidocoSupplierTraveltype(\Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierTraveltype property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierTraveltype property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierTraveltype[] = $item;
         

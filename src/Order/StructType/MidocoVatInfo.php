@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MidocoVatInfo extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVatInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVatInfo
      */
     public function setId(?string $id = null): self
     {
@@ -110,7 +110,7 @@ class MidocoVatInfo extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVatInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVatInfo
      */
     public function setDescription(?string $description = null): self
     {
@@ -133,7 +133,7 @@ class MidocoVatInfo extends AbstractStructBase
     /**
      * Set percent value
      * @param float $percent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVatInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVatInfo
      */
     public function setPercent(?float $percent = null): self
     {
@@ -156,7 +156,7 @@ class MidocoVatInfo extends AbstractStructBase
     /**
      * Set factor value
      * @param float $factor
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVatInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVatInfo
      */
     public function setFactor(?float $factor = null): self
     {
@@ -179,7 +179,7 @@ class MidocoVatInfo extends AbstractStructBase
     /**
      * Set base value
      * @param float $base
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVatInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVatInfo
      */
     public function setBase(?float $base = null): self
     {
@@ -202,7 +202,7 @@ class MidocoVatInfo extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVatInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVatInfo
      */
     public function setAmount(?float $amount = null): self
     {
@@ -225,7 +225,7 @@ class MidocoVatInfo extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVatInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVatInfo
      */
     public function setAddress(?string $address = null): self
     {

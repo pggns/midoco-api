@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,7 +17,7 @@ class MidocoReceiptInfo extends AbstractStructBase
      * The ReceiptPositioninfo
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\ReceiptPositioninfo[]
+     * @var \Pggns\MidocoApi\Documents\StructType\ReceiptPositioninfo[]
      */
     protected ?array $ReceiptPositioninfo = null;
     /**
@@ -25,24 +25,24 @@ class MidocoReceiptInfo extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: ReceiptOnlinePaymentInfo
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\ReceiptOnlinePaymentInfo|null
+     * @var \Pggns\MidocoApi\Documents\StructType\ReceiptOnlinePaymentInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\ReceiptOnlinePaymentInfo $ReceiptOnlinePaymentInfo = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\ReceiptOnlinePaymentInfo $ReceiptOnlinePaymentInfo = null;
     /**
      * The MidocoDebitInfoForReceipt
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoDebitInfoForReceipt
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitInfoForReceipt|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoDebitInfoForReceipt|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitInfoForReceipt $MidocoDebitInfoForReceipt = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoDebitInfoForReceipt $MidocoDebitInfoForReceipt = null;
     /**
      * The MidocoAdditionalInfoForReceipt
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAdditionalInfoForReceipt
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdditionalInfoForReceipt[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoAdditionalInfoForReceipt[]
      */
     protected ?array $MidocoAdditionalInfoForReceipt = null;
     /**
@@ -163,10 +163,10 @@ class MidocoReceiptInfo extends AbstractStructBase
      * @uses MidocoReceiptInfo::setVoucherItemCode()
      * @uses MidocoReceiptInfo::setMiscPaymentAccountID()
      * @uses MidocoReceiptInfo::setMiscPaymentRefNo()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ReceiptPositioninfo[] $receiptPositioninfo
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdditionalInfoForReceipt[] $midocoAdditionalInfoForReceipt
+     * @param \Pggns\MidocoApi\Documents\StructType\ReceiptPositioninfo[] $receiptPositioninfo
+     * @param \Pggns\MidocoApi\Documents\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoAdditionalInfoForReceipt[] $midocoAdditionalInfoForReceipt
      * @param int $cashBookId
      * @param string $paymentType
      * @param int $customerId
@@ -186,7 +186,7 @@ class MidocoReceiptInfo extends AbstractStructBase
      * @param string $miscPaymentAccountID
      * @param string $miscPaymentRefNo
      */
-    public function __construct(?array $receiptPositioninfo = null, ?\Pggns\MidocoApi\Api\Documents\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo = null, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt = null, ?array $midocoAdditionalInfoForReceipt = null, ?int $cashBookId = null, ?string $paymentType = null, ?int $customerId = null, ?string $forename = null, ?string $name = null, ?string $street = null, ?string $streetNo = null, ?string $country = null, ?string $postalCode = null, ?string $city = null, ?float $totalAmount = null, ?float $originalTotalAmount = null, ?string $originalCurrency = null, ?string $receiptDate = null, ?string $voucherNo = null, ?string $voucherItemCode = null, ?string $miscPaymentAccountID = null, ?string $miscPaymentRefNo = null)
+    public function __construct(?array $receiptPositioninfo = null, ?\Pggns\MidocoApi\Documents\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt = null, ?array $midocoAdditionalInfoForReceipt = null, ?int $cashBookId = null, ?string $paymentType = null, ?int $customerId = null, ?string $forename = null, ?string $name = null, ?string $street = null, ?string $streetNo = null, ?string $country = null, ?string $postalCode = null, ?string $city = null, ?float $totalAmount = null, ?float $originalTotalAmount = null, ?string $originalCurrency = null, ?string $receiptDate = null, ?string $voucherNo = null, ?string $voucherItemCode = null, ?string $miscPaymentAccountID = null, ?string $miscPaymentRefNo = null)
     {
         $this
             ->setReceiptPositioninfo($receiptPositioninfo)
@@ -214,7 +214,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     }
     /**
      * Get ReceiptPositioninfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptPositioninfo[]
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptPositioninfo[]
      */
     public function getReceiptPositioninfo(): ?array
     {
@@ -235,12 +235,12 @@ class MidocoReceiptInfo extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoReceiptInfoReceiptPositioninfoItem) {
             // validation for constraint: itemType
-            if (!$midocoReceiptInfoReceiptPositioninfoItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\ReceiptPositioninfo) {
+            if (!$midocoReceiptInfoReceiptPositioninfoItem instanceof \Pggns\MidocoApi\Documents\StructType\ReceiptPositioninfo) {
                 $invalidValues[] = is_object($midocoReceiptInfoReceiptPositioninfoItem) ? get_class($midocoReceiptInfoReceiptPositioninfoItem) : sprintf('%s(%s)', gettype($midocoReceiptInfoReceiptPositioninfoItem), var_export($midocoReceiptInfoReceiptPositioninfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ReceiptPositioninfo property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\ReceiptPositioninfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ReceiptPositioninfo property can only contain items of type \Pggns\MidocoApi\Documents\StructType\ReceiptPositioninfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -249,8 +249,8 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set ReceiptPositioninfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ReceiptPositioninfo[] $receiptPositioninfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\ReceiptPositioninfo[] $receiptPositioninfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setReceiptPositioninfo(?array $receiptPositioninfo = null): self
     {
@@ -265,14 +265,14 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Add item to ReceiptPositioninfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ReceiptPositioninfo $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\ReceiptPositioninfo $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
-    public function addToReceiptPositioninfo(\Pggns\MidocoApi\Api\Documents\StructType\ReceiptPositioninfo $item): self
+    public function addToReceiptPositioninfo(\Pggns\MidocoApi\Documents\StructType\ReceiptPositioninfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\ReceiptPositioninfo) {
-            throw new InvalidArgumentException(sprintf('The ReceiptPositioninfo property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\ReceiptPositioninfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\ReceiptPositioninfo) {
+            throw new InvalidArgumentException(sprintf('The ReceiptPositioninfo property can only contain items of type \Pggns\MidocoApi\Documents\StructType\ReceiptPositioninfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ReceiptPositioninfo[] = $item;
         
@@ -280,18 +280,18 @@ class MidocoReceiptInfo extends AbstractStructBase
     }
     /**
      * Get ReceiptOnlinePaymentInfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptOnlinePaymentInfo|null
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptOnlinePaymentInfo|null
      */
-    public function getReceiptOnlinePaymentInfo(): ?\Pggns\MidocoApi\Api\Documents\StructType\ReceiptOnlinePaymentInfo
+    public function getReceiptOnlinePaymentInfo(): ?\Pggns\MidocoApi\Documents\StructType\ReceiptOnlinePaymentInfo
     {
         return $this->ReceiptOnlinePaymentInfo;
     }
     /**
      * Set ReceiptOnlinePaymentInfo value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
-    public function setReceiptOnlinePaymentInfo(?\Pggns\MidocoApi\Api\Documents\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo = null): self
+    public function setReceiptOnlinePaymentInfo(?\Pggns\MidocoApi\Documents\StructType\ReceiptOnlinePaymentInfo $receiptOnlinePaymentInfo = null): self
     {
         $this->ReceiptOnlinePaymentInfo = $receiptOnlinePaymentInfo;
         
@@ -299,18 +299,18 @@ class MidocoReceiptInfo extends AbstractStructBase
     }
     /**
      * Get MidocoDebitInfoForReceipt value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitInfoForReceipt|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitInfoForReceipt|null
      */
-    public function getMidocoDebitInfoForReceipt(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitInfoForReceipt
+    public function getMidocoDebitInfoForReceipt(): ?\Pggns\MidocoApi\Documents\StructType\MidocoDebitInfoForReceipt
     {
         return $this->MidocoDebitInfoForReceipt;
     }
     /**
      * Set MidocoDebitInfoForReceipt value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
-    public function setMidocoDebitInfoForReceipt(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt = null): self
+    public function setMidocoDebitInfoForReceipt(?\Pggns\MidocoApi\Documents\StructType\MidocoDebitInfoForReceipt $midocoDebitInfoForReceipt = null): self
     {
         $this->MidocoDebitInfoForReceipt = $midocoDebitInfoForReceipt;
         
@@ -318,7 +318,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     }
     /**
      * Get MidocoAdditionalInfoForReceipt value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdditionalInfoForReceipt[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdditionalInfoForReceipt[]
      */
     public function getMidocoAdditionalInfoForReceipt(): ?array
     {
@@ -339,12 +339,12 @@ class MidocoReceiptInfo extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoReceiptInfoMidocoAdditionalInfoForReceiptItem) {
             // validation for constraint: itemType
-            if (!$midocoReceiptInfoMidocoAdditionalInfoForReceiptItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdditionalInfoForReceipt) {
+            if (!$midocoReceiptInfoMidocoAdditionalInfoForReceiptItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoAdditionalInfoForReceipt) {
                 $invalidValues[] = is_object($midocoReceiptInfoMidocoAdditionalInfoForReceiptItem) ? get_class($midocoReceiptInfoMidocoAdditionalInfoForReceiptItem) : sprintf('%s(%s)', gettype($midocoReceiptInfoMidocoAdditionalInfoForReceiptItem), var_export($midocoReceiptInfoMidocoAdditionalInfoForReceiptItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAdditionalInfoForReceipt property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdditionalInfoForReceipt, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAdditionalInfoForReceipt property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoAdditionalInfoForReceipt, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -353,8 +353,8 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set MidocoAdditionalInfoForReceipt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdditionalInfoForReceipt[] $midocoAdditionalInfoForReceipt
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoAdditionalInfoForReceipt[] $midocoAdditionalInfoForReceipt
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setMidocoAdditionalInfoForReceipt(?array $midocoAdditionalInfoForReceipt = null): self
     {
@@ -369,14 +369,14 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Add item to MidocoAdditionalInfoForReceipt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdditionalInfoForReceipt $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoAdditionalInfoForReceipt $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
-    public function addToMidocoAdditionalInfoForReceipt(\Pggns\MidocoApi\Api\Documents\StructType\MidocoAdditionalInfoForReceipt $item): self
+    public function addToMidocoAdditionalInfoForReceipt(\Pggns\MidocoApi\Documents\StructType\MidocoAdditionalInfoForReceipt $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdditionalInfoForReceipt) {
-            throw new InvalidArgumentException(sprintf('The MidocoAdditionalInfoForReceipt property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdditionalInfoForReceipt, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoAdditionalInfoForReceipt) {
+            throw new InvalidArgumentException(sprintf('The MidocoAdditionalInfoForReceipt property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoAdditionalInfoForReceipt, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAdditionalInfoForReceipt[] = $item;
         
@@ -393,7 +393,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setCashBookId(?int $cashBookId = null): self
     {
@@ -416,7 +416,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -439,7 +439,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -462,7 +462,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setForename(?string $forename = null): self
     {
@@ -485,7 +485,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setName(?string $name = null): self
     {
@@ -508,7 +508,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setStreet(?string $street = null): self
     {
@@ -531,7 +531,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -554,7 +554,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setCountry(?string $country = null): self
     {
@@ -577,7 +577,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -600,7 +600,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setCity(?string $city = null): self
     {
@@ -623,7 +623,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -646,7 +646,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set originalTotalAmount value
      * @param float $originalTotalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setOriginalTotalAmount(?float $originalTotalAmount = null): self
     {
@@ -669,7 +669,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -692,7 +692,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -715,7 +715,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set voucherNo value
      * @param string $voucherNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setVoucherNo(?string $voucherNo = null): self
     {
@@ -738,7 +738,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set voucherItemCode value
      * @param string $voucherItemCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setVoucherItemCode(?string $voucherItemCode = null): self
     {
@@ -761,7 +761,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set miscPaymentAccountID value
      * @param string $miscPaymentAccountID
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setMiscPaymentAccountID(?string $miscPaymentAccountID = null): self
     {
@@ -784,7 +784,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     /**
      * Set miscPaymentRefNo value
      * @param string $miscPaymentRefNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceiptInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceiptInfo
      */
     public function setMiscPaymentRefNo(?string $miscPaymentRefNo = null): self
     {

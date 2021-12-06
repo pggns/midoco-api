@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveAgencyDetailsRequest extends AbstractStructBase
      * The SaveMidocoAgencyDetails
      * Meta information extracted from the WSDL
      * - ref: SaveMidocoAgencyDetails
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\AgencyDetailDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\AgencyDetailDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\AgencyDetailDTO $SaveMidocoAgencyDetails = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\AgencyDetailDTO $SaveMidocoAgencyDetails = null;
     /**
      * The collectiveInvoice
      * Meta information extracted from the WSDL
@@ -37,11 +37,11 @@ class SaveAgencyDetailsRequest extends AbstractStructBase
      * @uses SaveAgencyDetailsRequest::setSaveMidocoAgencyDetails()
      * @uses SaveAgencyDetailsRequest::setCollectiveInvoice()
      * @uses SaveAgencyDetailsRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AgencyDetailDTO $saveMidocoAgencyDetails
+     * @param \Pggns\MidocoApi\Crm\StructType\AgencyDetailDTO $saveMidocoAgencyDetails
      * @param bool $collectiveInvoice
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\AgencyDetailDTO $saveMidocoAgencyDetails = null, ?bool $collectiveInvoice = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\AgencyDetailDTO $saveMidocoAgencyDetails = null, ?bool $collectiveInvoice = null, ?int $internalVersion = null)
     {
         $this
             ->setSaveMidocoAgencyDetails($saveMidocoAgencyDetails)
@@ -50,18 +50,18 @@ class SaveAgencyDetailsRequest extends AbstractStructBase
     }
     /**
      * Get SaveMidocoAgencyDetails value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyDetailDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyDetailDTO|null
      */
-    public function getSaveMidocoAgencyDetails(): ?\Pggns\MidocoApi\Api\Crm\StructType\AgencyDetailDTO
+    public function getSaveMidocoAgencyDetails(): ?\Pggns\MidocoApi\Crm\StructType\AgencyDetailDTO
     {
         return $this->SaveMidocoAgencyDetails;
     }
     /**
      * Set SaveMidocoAgencyDetails value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AgencyDetailDTO $saveMidocoAgencyDetails
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveAgencyDetailsRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\AgencyDetailDTO $saveMidocoAgencyDetails
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveAgencyDetailsRequest
      */
-    public function setSaveMidocoAgencyDetails(?\Pggns\MidocoApi\Api\Crm\StructType\AgencyDetailDTO $saveMidocoAgencyDetails = null): self
+    public function setSaveMidocoAgencyDetails(?\Pggns\MidocoApi\Crm\StructType\AgencyDetailDTO $saveMidocoAgencyDetails = null): self
     {
         $this->SaveMidocoAgencyDetails = $saveMidocoAgencyDetails;
         
@@ -78,7 +78,7 @@ class SaveAgencyDetailsRequest extends AbstractStructBase
     /**
      * Set collectiveInvoice value
      * @param bool $collectiveInvoice
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveAgencyDetailsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveAgencyDetailsRequest
      */
     public function setCollectiveInvoice(?bool $collectiveInvoice = null): self
     {
@@ -101,7 +101,7 @@ class SaveAgencyDetailsRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveAgencyDetailsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveAgencyDetailsRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

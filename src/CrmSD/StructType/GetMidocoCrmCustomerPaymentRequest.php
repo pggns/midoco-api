@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class GetMidocoCrmCustomerPaymentRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
      * The checkDebitCards
      * @var bool|null
@@ -30,10 +30,10 @@ class GetMidocoCrmCustomerPaymentRequest extends AbstractStructBase
      * Constructor method for GetMidocoCrmCustomerPaymentRequest
      * @uses GetMidocoCrmCustomerPaymentRequest::setMidocoCrmCustomer()
      * @uses GetMidocoCrmCustomerPaymentRequest::setCheckDebitCards()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
      * @param bool $checkDebitCards
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?bool $checkDebitCards = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?bool $checkDebitCards = null)
     {
         $this
             ->setMidocoCrmCustomer($midocoCrmCustomer)
@@ -41,18 +41,18 @@ class GetMidocoCrmCustomerPaymentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMidocoCrmCustomerPaymentRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoCrmCustomerPaymentRequest
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         
@@ -69,7 +69,7 @@ class GetMidocoCrmCustomerPaymentRequest extends AbstractStructBase
     /**
      * Set checkDebitCards value
      * @param bool $checkDebitCards
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMidocoCrmCustomerPaymentRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoCrmCustomerPaymentRequest
      */
     public function setCheckDebitCards(?bool $checkDebitCards = null): self
     {

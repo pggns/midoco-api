@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class MidocoOnlinePaymentHelper extends OnlinePaymentInfoType
     /**
      * Set ccValidMonth value
      * @param int $ccValidMonth
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentHelper
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentHelper
      */
     public function setCcValidMonth(?int $ccValidMonth = null): self
     {
@@ -80,7 +80,7 @@ class MidocoOnlinePaymentHelper extends OnlinePaymentInfoType
     /**
      * Set ccValidYear value
      * @param int $ccValidYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentHelper
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentHelper
      */
     public function setCcValidYear(?int $ccValidYear = null): self
     {
@@ -103,7 +103,7 @@ class MidocoOnlinePaymentHelper extends OnlinePaymentInfoType
     /**
      * Set isDocumentitemPayment value
      * @param bool $isDocumentitemPayment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentHelper
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentHelper
      */
     public function setIsDocumentitemPayment(?bool $isDocumentitemPayment = null): self
     {

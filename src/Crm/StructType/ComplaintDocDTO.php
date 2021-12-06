@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ComplaintDocDTO extends AbstractStructBase
     /**
      * Set complaintId value
      * @param int $complaintId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ComplaintDocDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\ComplaintDocDTO
      */
     public function setComplaintId(?int $complaintId = null): self
     {
@@ -70,7 +70,7 @@ class ComplaintDocDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ComplaintDocDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\ComplaintDocDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {

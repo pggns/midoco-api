@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SaveReportVersionResponse extends AbstractStructBase
     /**
      * Set success value
      * @param bool $success
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveReportVersionResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveReportVersionResponse
      */
     public function setSuccess(?bool $success = null): self
     {

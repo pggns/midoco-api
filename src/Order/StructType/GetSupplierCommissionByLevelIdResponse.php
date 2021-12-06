@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetSupplierCommissionByLevelIdResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoSupplierCommission
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SupplierCommissionDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\SupplierCommissionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\SupplierCommissionDTO $MidocoSupplierCommission = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\SupplierCommissionDTO $MidocoSupplierCommission = null;
     /**
      * Constructor method for GetSupplierCommissionByLevelIdResponse
      * @uses GetSupplierCommissionByLevelIdResponse::setMidocoSupplierCommission()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierCommissionDTO $midocoSupplierCommission
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierCommissionDTO $midocoSupplierCommission
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\SupplierCommissionDTO $midocoSupplierCommission = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\SupplierCommissionDTO $midocoSupplierCommission = null)
     {
         $this
             ->setMidocoSupplierCommission($midocoSupplierCommission);
     }
     /**
      * Get MidocoSupplierCommission value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierCommissionDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierCommissionDTO|null
      */
-    public function getMidocoSupplierCommission(): ?\Pggns\MidocoApi\Api\Order\StructType\SupplierCommissionDTO
+    public function getMidocoSupplierCommission(): ?\Pggns\MidocoApi\Order\StructType\SupplierCommissionDTO
     {
         return $this->MidocoSupplierCommission;
     }
     /**
      * Set MidocoSupplierCommission value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierCommissionDTO $midocoSupplierCommission
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierCommissionByLevelIdResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierCommissionDTO $midocoSupplierCommission
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierCommissionByLevelIdResponse
      */
-    public function setMidocoSupplierCommission(?\Pggns\MidocoApi\Api\Order\StructType\SupplierCommissionDTO $midocoSupplierCommission = null): self
+    public function setMidocoSupplierCommission(?\Pggns\MidocoApi\Order\StructType\SupplierCommissionDTO $midocoSupplierCommission = null): self
     {
         $this->MidocoSupplierCommission = $midocoSupplierCommission;
         

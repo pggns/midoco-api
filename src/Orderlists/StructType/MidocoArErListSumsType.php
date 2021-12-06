@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoArErListSumsType extends AbstractStructBase
     /**
      * Set outgoingIncoming value
      * @param string $outgoingIncoming
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType
      */
     public function setOutgoingIncoming(?string $outgoingIncoming = null): self
     {
@@ -94,7 +94,7 @@ class MidocoArErListSumsType extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -117,7 +117,7 @@ class MidocoArErListSumsType extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -140,7 +140,7 @@ class MidocoArErListSumsType extends AbstractStructBase
     /**
      * Set beforeAfterTravel value
      * @param string $beforeAfterTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType
      */
     public function setBeforeAfterTravel(?string $beforeAfterTravel = null): self
     {
@@ -163,7 +163,7 @@ class MidocoArErListSumsType extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoArErListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListSumsType
      */
     public function setAmount(?float $amount = null): self
     {

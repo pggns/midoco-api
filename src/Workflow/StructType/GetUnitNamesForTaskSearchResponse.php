@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetUnitNamesForTaskSearchResponse extends AbstractStructBase
      * Set unitNames value
      * @throws InvalidArgumentException
      * @param string[] $unitNames
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetUnitNamesForTaskSearchResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetUnitNamesForTaskSearchResponse
      */
     public function setUnitNames(?array $unitNames = null): self
     {
@@ -85,7 +85,7 @@ class GetUnitNamesForTaskSearchResponse extends AbstractStructBase
      * Add item to unitNames value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetUnitNamesForTaskSearchResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetUnitNamesForTaskSearchResponse
      */
     public function addToUnitNames(string $item): self
     {

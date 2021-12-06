@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class UsertaskDTO extends AbstractStructBase
     /**
      * Set done value
      * @param bool $done
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UsertaskDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UsertaskDTO
      */
     public function setDone(?bool $done = null): self
     {
@@ -78,7 +78,7 @@ class UsertaskDTO extends AbstractStructBase
     /**
      * Set task value
      * @param string $task
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UsertaskDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UsertaskDTO
      */
     public function setTask(?string $task = null): self
     {
@@ -101,7 +101,7 @@ class UsertaskDTO extends AbstractStructBase
     /**
      * Set taskId value
      * @param int $taskId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UsertaskDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\UsertaskDTO
      */
     public function setTaskId(?int $taskId = null): self
     {

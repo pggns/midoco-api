@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Update extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Update
+     * @return \Pggns\MidocoApi\Order\ServiceType\Update
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UpdateMediatorAmountsRequest $paramUpdateMediatorAmountsRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateMediatorAmountsResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\UpdateMediatorAmountsRequest $paramUpdateMediatorAmountsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateMediatorAmountsResponse|bool
      */
-    public function updateMediatorAmounts(\Pggns\MidocoApi\Api\Order\StructType\UpdateMediatorAmountsRequest $paramUpdateMediatorAmountsRequest)
+    public function updateMediatorAmounts(\Pggns\MidocoApi\Order\StructType\UpdateMediatorAmountsRequest $paramUpdateMediatorAmountsRequest)
     {
         try {
             $this->setResult($resultUpdateMediatorAmounts = $this->getSoapClient()->__soapCall('updateMediatorAmounts', [
@@ -58,15 +58,15 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UpdateOrderCooperationIdRequest $paramUpdateOrderCooperationIdRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateOrderCooperationIdResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\UpdateOrderCooperationIdRequest $paramUpdateOrderCooperationIdRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateOrderCooperationIdResponse|bool
      */
-    public function updateOrderCooperationId(\Pggns\MidocoApi\Api\Order\StructType\UpdateOrderCooperationIdRequest $paramUpdateOrderCooperationIdRequest)
+    public function updateOrderCooperationId(\Pggns\MidocoApi\Order\StructType\UpdateOrderCooperationIdRequest $paramUpdateOrderCooperationIdRequest)
     {
         try {
             $this->setResult($resultUpdateOrderCooperationId = $this->getSoapClient()->__soapCall('updateOrderCooperationId', [
@@ -85,15 +85,15 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UpdateChangeableReceiptPositionRequest $paramUpdateChangeableReceiptPositionRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateChangeableReceiptPositionResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\UpdateChangeableReceiptPositionRequest $paramUpdateChangeableReceiptPositionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateChangeableReceiptPositionResponse|bool
      */
-    public function updateChangeableReceiptPosition(\Pggns\MidocoApi\Api\Order\StructType\UpdateChangeableReceiptPositionRequest $paramUpdateChangeableReceiptPositionRequest)
+    public function updateChangeableReceiptPosition(\Pggns\MidocoApi\Order\StructType\UpdateChangeableReceiptPositionRequest $paramUpdateChangeableReceiptPositionRequest)
     {
         try {
             $this->setResult($resultUpdateChangeableReceiptPosition = $this->getSoapClient()->__soapCall('updateChangeableReceiptPosition', [
@@ -112,15 +112,15 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UpdateFlightTimeChangeEmailRequest $paramUpdateFlightTimeChangeEmailRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateFlightTimeChangeEmailResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\UpdateFlightTimeChangeEmailRequest $paramUpdateFlightTimeChangeEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateFlightTimeChangeEmailResponse|bool
      */
-    public function updateFlightTimeChangeEmail(\Pggns\MidocoApi\Api\Order\StructType\UpdateFlightTimeChangeEmailRequest $paramUpdateFlightTimeChangeEmailRequest)
+    public function updateFlightTimeChangeEmail(\Pggns\MidocoApi\Order\StructType\UpdateFlightTimeChangeEmailRequest $paramUpdateFlightTimeChangeEmailRequest)
     {
         try {
             $this->setResult($resultUpdateFlightTimeChangeEmail = $this->getSoapClient()->__soapCall('updateFlightTimeChangeEmail', [
@@ -139,15 +139,15 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UpdateFlightTimeChangeEmailDetRequest $paramUpdateFlightTimeChangeEmailDetRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateFlightTimeChangeEmailDetResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\UpdateFlightTimeChangeEmailDetRequest $paramUpdateFlightTimeChangeEmailDetRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateFlightTimeChangeEmailDetResponse|bool
      */
-    public function updateFlightTimeChangeEmailDet(\Pggns\MidocoApi\Api\Order\StructType\UpdateFlightTimeChangeEmailDetRequest $paramUpdateFlightTimeChangeEmailDetRequest)
+    public function updateFlightTimeChangeEmailDet(\Pggns\MidocoApi\Order\StructType\UpdateFlightTimeChangeEmailDetRequest $paramUpdateFlightTimeChangeEmailDetRequest)
     {
         try {
             $this->setResult($resultUpdateFlightTimeChangeEmailDet = $this->getSoapClient()->__soapCall('updateFlightTimeChangeEmailDet', [
@@ -167,15 +167,15 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UpdateSupplierAgencySettlementDetailRequest $paramUpdateSupplierAgencySettlementDetailRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateSupplierAgencySettlementDetailResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\UpdateSupplierAgencySettlementDetailRequest $paramUpdateSupplierAgencySettlementDetailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateSupplierAgencySettlementDetailResponse|bool
      */
-    public function updateSupplierAgencySettlementDetail(\Pggns\MidocoApi\Api\Order\StructType\UpdateSupplierAgencySettlementDetailRequest $paramUpdateSupplierAgencySettlementDetailRequest)
+    public function updateSupplierAgencySettlementDetail(\Pggns\MidocoApi\Order\StructType\UpdateSupplierAgencySettlementDetailRequest $paramUpdateSupplierAgencySettlementDetailRequest)
     {
         try {
             $this->setResult($resultUpdateSupplierAgencySettlementDetail = $this->getSoapClient()->__soapCall('updateSupplierAgencySettlementDetail', [
@@ -194,15 +194,15 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UpdatePackageMarginRequest $paramUpdatePackageMarginRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdatePackageMarginResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\UpdatePackageMarginRequest $paramUpdatePackageMarginRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdatePackageMarginResponse|bool
      */
-    public function updatePackageMargin(\Pggns\MidocoApi\Api\Order\StructType\UpdatePackageMarginRequest $paramUpdatePackageMarginRequest)
+    public function updatePackageMargin(\Pggns\MidocoApi\Order\StructType\UpdatePackageMarginRequest $paramUpdatePackageMarginRequest)
     {
         try {
             $this->setResult($resultUpdatePackageMargin = $this->getSoapClient()->__soapCall('updatePackageMargin', [
@@ -221,15 +221,15 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UpdateBookingStatusRequest $paramUpdateBookingStatusRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateBookingStatusResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\UpdateBookingStatusRequest $paramUpdateBookingStatusRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateBookingStatusResponse|bool
      */
-    public function updateBookingStatus(\Pggns\MidocoApi\Api\Order\StructType\UpdateBookingStatusRequest $paramUpdateBookingStatusRequest)
+    public function updateBookingStatus(\Pggns\MidocoApi\Order\StructType\UpdateBookingStatusRequest $paramUpdateBookingStatusRequest)
     {
         try {
             $this->setResult($resultUpdateBookingStatus = $this->getSoapClient()->__soapCall('updateBookingStatus', [
@@ -248,15 +248,15 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UpdateOrderPaymentInfoRequest $paramUpdateOrderPaymentInfoRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateOrderPaymentInfoResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\UpdateOrderPaymentInfoRequest $paramUpdateOrderPaymentInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateOrderPaymentInfoResponse|bool
      */
-    public function updateOrderPaymentInfo(\Pggns\MidocoApi\Api\Order\StructType\UpdateOrderPaymentInfoRequest $paramUpdateOrderPaymentInfoRequest)
+    public function updateOrderPaymentInfo(\Pggns\MidocoApi\Order\StructType\UpdateOrderPaymentInfoRequest $paramUpdateOrderPaymentInfoRequest)
     {
         try {
             $this->setResult($resultUpdateOrderPaymentInfo = $this->getSoapClient()->__soapCall('updateOrderPaymentInfo', [
@@ -273,7 +273,7 @@ class Update extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateBookingStatusResponse|\Pggns\MidocoApi\Api\Order\StructType\UpdateChangeableReceiptPositionResponse|\Pggns\MidocoApi\Api\Order\StructType\UpdateFlightTimeChangeEmailDetResponse|\Pggns\MidocoApi\Api\Order\StructType\UpdateFlightTimeChangeEmailResponse|\Pggns\MidocoApi\Api\Order\StructType\UpdateMediatorAmountsResponse|\Pggns\MidocoApi\Api\Order\StructType\UpdateOrderCooperationIdResponse|\Pggns\MidocoApi\Api\Order\StructType\UpdateOrderPaymentInfoResponse|\Pggns\MidocoApi\Api\Order\StructType\UpdatePackageMarginResponse|\Pggns\MidocoApi\Api\Order\StructType\UpdateSupplierAgencySettlementDetailResponse
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateBookingStatusResponse|\Pggns\MidocoApi\Order\StructType\UpdateChangeableReceiptPositionResponse|\Pggns\MidocoApi\Order\StructType\UpdateFlightTimeChangeEmailDetResponse|\Pggns\MidocoApi\Order\StructType\UpdateFlightTimeChangeEmailResponse|\Pggns\MidocoApi\Order\StructType\UpdateMediatorAmountsResponse|\Pggns\MidocoApi\Order\StructType\UpdateOrderCooperationIdResponse|\Pggns\MidocoApi\Order\StructType\UpdateOrderPaymentInfoResponse|\Pggns\MidocoApi\Order\StructType\UpdatePackageMarginResponse|\Pggns\MidocoApi\Order\StructType\UpdateSupplierAgencySettlementDetailResponse
      */
     public function getResult()
     {

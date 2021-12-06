@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CommissionDefinitionLevelDTO extends AbstractStructBase
     /**
      * Set commissionId value
      * @param int $commissionId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO
      */
     public function setCommissionId(?int $commissionId = null): self
     {
@@ -86,7 +86,7 @@ class CommissionDefinitionLevelDTO extends AbstractStructBase
     /**
      * Set leftMargin value
      * @param float $leftMargin
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO
      */
     public function setLeftMargin(?float $leftMargin = null): self
     {
@@ -109,7 +109,7 @@ class CommissionDefinitionLevelDTO extends AbstractStructBase
     /**
      * Set percent value
      * @param float $percent
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO
      */
     public function setPercent(?float $percent = null): self
     {
@@ -132,7 +132,7 @@ class CommissionDefinitionLevelDTO extends AbstractStructBase
     /**
      * Set rightMargin value
      * @param float $rightMargin
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CommissionDefinitionLevelDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CommissionDefinitionLevelDTO
      */
     public function setRightMargin(?float $rightMargin = null): self
     {

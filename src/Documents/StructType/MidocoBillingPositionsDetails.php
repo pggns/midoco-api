@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class MidocoBillingPositionsDetails extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionsDetails
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -150,7 +150,7 @@ class MidocoBillingPositionsDetails extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionsDetails
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -173,7 +173,7 @@ class MidocoBillingPositionsDetails extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionsDetails
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -196,7 +196,7 @@ class MidocoBillingPositionsDetails extends AbstractStructBase
     /**
      * Set calculatedPrintDate value
      * @param string $calculatedPrintDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionsDetails
      */
     public function setCalculatedPrintDate(?string $calculatedPrintDate = null): self
     {
@@ -219,7 +219,7 @@ class MidocoBillingPositionsDetails extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionsDetails
      */
     public function setAmount(?float $amount = null): self
     {
@@ -242,7 +242,7 @@ class MidocoBillingPositionsDetails extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionsDetails
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -265,7 +265,7 @@ class MidocoBillingPositionsDetails extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionsDetails
      */
     public function setDescription(?string $description = null): self
     {
@@ -288,7 +288,7 @@ class MidocoBillingPositionsDetails extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionsDetails
      */
     public function setVatPercent(?float $vatPercent = null): self
     {
@@ -311,7 +311,7 @@ class MidocoBillingPositionsDetails extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionsDetails
      */
     public function setPositionId(?int $positionId = null): self
     {
@@ -334,7 +334,7 @@ class MidocoBillingPositionsDetails extends AbstractStructBase
     /**
      * Set traveller value
      * @param string $traveller
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionsDetails
      */
     public function setTraveller(?string $traveller = null): self
     {
@@ -357,7 +357,7 @@ class MidocoBillingPositionsDetails extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionsDetails
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -380,7 +380,7 @@ class MidocoBillingPositionsDetails extends AbstractStructBase
     /**
      * Set referenceNo value
      * @param string $referenceNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionsDetails
      */
     public function setReferenceNo(?string $referenceNo = null): self
     {

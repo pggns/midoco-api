@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class PreviewBillingDocumentRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreviewBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PreviewBillingDocumentRequest
      */
     public function setDocumentId(int $documentId): self
     {
@@ -94,7 +94,7 @@ class PreviewBillingDocumentRequest extends AbstractStructBase
     /**
      * Set templateType value
      * @param string $templateType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreviewBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PreviewBillingDocumentRequest
      */
     public function setTemplateType(string $templateType): self
     {
@@ -117,7 +117,7 @@ class PreviewBillingDocumentRequest extends AbstractStructBase
     /**
      * Set printMedia value
      * @param string $printMedia
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreviewBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PreviewBillingDocumentRequest
      */
     public function setPrintMedia(?string $printMedia = 'P'): self
     {
@@ -140,7 +140,7 @@ class PreviewBillingDocumentRequest extends AbstractStructBase
     /**
      * Set isDraft value
      * @param bool $isDraft
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreviewBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PreviewBillingDocumentRequest
      */
     public function setIsDraft(?bool $isDraft = false): self
     {

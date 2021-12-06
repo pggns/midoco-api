@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class FilterMidocoSettlementCandidatesResponse extends AbstractStructBase
      * Set customerId value
      * @throws InvalidArgumentException
      * @param int[] $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\FilterMidocoSettlementCandidatesResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\FilterMidocoSettlementCandidatesResponse
      */
     public function setCustomerId(?array $customerId = null): self
     {
@@ -87,7 +87,7 @@ class FilterMidocoSettlementCandidatesResponse extends AbstractStructBase
      * Add item to customerId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\FilterMidocoSettlementCandidatesResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\FilterMidocoSettlementCandidatesResponse
      */
     public function addToCustomerId(int $item): self
     {

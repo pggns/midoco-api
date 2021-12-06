@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetSignatureDocRequest extends AbstractStructBase
     /**
      * Set signatureDocId value
      * @param int $signatureDocId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSignatureDocRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSignatureDocRequest
      */
     public function setSignatureDocId(?int $signatureDocId = null): self
     {
@@ -72,7 +72,7 @@ class GetSignatureDocRequest extends AbstractStructBase
     /**
      * Set forView value
      * @param bool $forView
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSignatureDocRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSignatureDocRequest
      */
     public function setForView(?bool $forView = false): self
     {

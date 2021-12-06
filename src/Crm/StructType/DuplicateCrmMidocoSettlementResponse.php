@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class DuplicateCrmMidocoSettlementResponse extends AbstractStructBase
      * The MidocoCrmMidocoSettlement
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmMidocoSettlement
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlement|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlement|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlement $MidocoCrmMidocoSettlement = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlement $MidocoCrmMidocoSettlement = null;
     /**
      * Constructor method for DuplicateCrmMidocoSettlementResponse
      * @uses DuplicateCrmMidocoSettlementResponse::setMidocoCrmMidocoSettlement()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlement $midocoCrmMidocoSettlement
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlement $midocoCrmMidocoSettlement
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlement $midocoCrmMidocoSettlement = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlement $midocoCrmMidocoSettlement = null)
     {
         $this
             ->setMidocoCrmMidocoSettlement($midocoCrmMidocoSettlement);
     }
     /**
      * Get MidocoCrmMidocoSettlement value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlement|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlement|null
      */
-    public function getMidocoCrmMidocoSettlement(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlement
+    public function getMidocoCrmMidocoSettlement(): ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlement
     {
         return $this->MidocoCrmMidocoSettlement;
     }
     /**
      * Set MidocoCrmMidocoSettlement value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlement $midocoCrmMidocoSettlement
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DuplicateCrmMidocoSettlementResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlement $midocoCrmMidocoSettlement
+     * @return \Pggns\MidocoApi\Crm\StructType\DuplicateCrmMidocoSettlementResponse
      */
-    public function setMidocoCrmMidocoSettlement(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmMidocoSettlement $midocoCrmMidocoSettlement = null): self
+    public function setMidocoCrmMidocoSettlement(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmMidocoSettlement $midocoCrmMidocoSettlement = null): self
     {
         $this->MidocoCrmMidocoSettlement = $midocoCrmMidocoSettlement;
         

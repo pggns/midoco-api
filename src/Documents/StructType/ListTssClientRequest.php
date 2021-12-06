@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -25,9 +25,9 @@ class ListTssClientRequest extends AbstractStructBase
      * The MidocoTssClient
      * Meta information extracted from the WSDL
      * - ref: MidocoTssClient
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoTssClient|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient $MidocoTssClient = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoTssClient $MidocoTssClient = null;
     /**
      * The extern
      * @var bool|null
@@ -39,10 +39,10 @@ class ListTssClientRequest extends AbstractStructBase
      * @uses ListTssClientRequest::setMidocoTssClient()
      * @uses ListTssClientRequest::setExtern()
      * @param string[] $unit
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient $midocoTssClient
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTssClient $midocoTssClient
      * @param bool $extern
      */
-    public function __construct(?array $unit = null, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient $midocoTssClient = null, ?bool $extern = null)
+    public function __construct(?array $unit = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoTssClient $midocoTssClient = null, ?bool $extern = null)
     {
         $this
             ->setUnit($unit)
@@ -87,7 +87,7 @@ class ListTssClientRequest extends AbstractStructBase
      * Set unit value
      * @throws InvalidArgumentException
      * @param string[] $unit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListTssClientRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListTssClientRequest
      */
     public function setUnit(?array $unit = null): self
     {
@@ -103,7 +103,7 @@ class ListTssClientRequest extends AbstractStructBase
      * Add item to unit value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListTssClientRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListTssClientRequest
      */
     public function addToUnit(string $item): self
     {
@@ -117,18 +117,18 @@ class ListTssClientRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTssClient value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTssClient|null
      */
-    public function getMidocoTssClient(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient
+    public function getMidocoTssClient(): ?\Pggns\MidocoApi\Documents\StructType\MidocoTssClient
     {
         return $this->MidocoTssClient;
     }
     /**
      * Set MidocoTssClient value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient $midocoTssClient
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListTssClientRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTssClient $midocoTssClient
+     * @return \Pggns\MidocoApi\Documents\StructType\ListTssClientRequest
      */
-    public function setMidocoTssClient(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient $midocoTssClient = null): self
+    public function setMidocoTssClient(?\Pggns\MidocoApi\Documents\StructType\MidocoTssClient $midocoTssClient = null): self
     {
         $this->MidocoTssClient = $midocoTssClient;
         
@@ -145,7 +145,7 @@ class ListTssClientRequest extends AbstractStructBase
     /**
      * Set extern value
      * @param bool $extern
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListTssClientRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListTssClientRequest
      */
     public function setExtern(?bool $extern = null): self
     {

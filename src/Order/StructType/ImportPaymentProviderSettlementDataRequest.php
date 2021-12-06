@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class ImportPaymentProviderSettlementDataRequest extends AbstractStructBase
     /**
      * Set Data value
      * @param string $data
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportPaymentProviderSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportPaymentProviderSettlementDataRequest
      */
     public function setData(?string $data = null): self
     {
@@ -126,7 +126,7 @@ class ImportPaymentProviderSettlementDataRequest extends AbstractStructBase
     /**
      * Set paymentProviderId value
      * @param string $paymentProviderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportPaymentProviderSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportPaymentProviderSettlementDataRequest
      */
     public function setPaymentProviderId(?string $paymentProviderId = null): self
     {
@@ -149,7 +149,7 @@ class ImportPaymentProviderSettlementDataRequest extends AbstractStructBase
     /**
      * Set format value
      * @param string $format
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportPaymentProviderSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportPaymentProviderSettlementDataRequest
      */
     public function setFormat(?string $format = null): self
     {
@@ -172,7 +172,7 @@ class ImportPaymentProviderSettlementDataRequest extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportPaymentProviderSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportPaymentProviderSettlementDataRequest
      */
     public function setFileName(?string $fileName = null): self
     {
@@ -195,7 +195,7 @@ class ImportPaymentProviderSettlementDataRequest extends AbstractStructBase
     /**
      * Set delimiter value
      * @param string $delimiter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportPaymentProviderSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportPaymentProviderSettlementDataRequest
      */
     public function setDelimiter(?string $delimiter = null): self
     {
@@ -218,7 +218,7 @@ class ImportPaymentProviderSettlementDataRequest extends AbstractStructBase
     /**
      * Set dateFormat value
      * @param string $dateFormat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportPaymentProviderSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportPaymentProviderSettlementDataRequest
      */
     public function setDateFormat(?string $dateFormat = null): self
     {
@@ -241,7 +241,7 @@ class ImportPaymentProviderSettlementDataRequest extends AbstractStructBase
     /**
      * Set decimalDelimiter value
      * @param string $decimalDelimiter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportPaymentProviderSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportPaymentProviderSettlementDataRequest
      */
     public function setDecimalDelimiter(?string $decimalDelimiter = null): self
     {
@@ -264,7 +264,7 @@ class ImportPaymentProviderSettlementDataRequest extends AbstractStructBase
     /**
      * Set genericDataFormat value
      * @param string $genericDataFormat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportPaymentProviderSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportPaymentProviderSettlementDataRequest
      */
     public function setGenericDataFormat(?string $genericDataFormat = null): self
     {
@@ -287,7 +287,7 @@ class ImportPaymentProviderSettlementDataRequest extends AbstractStructBase
     /**
      * Set textInQuotes value
      * @param bool $textInQuotes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportPaymentProviderSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportPaymentProviderSettlementDataRequest
      */
     public function setTextInQuotes(?bool $textInQuotes = null): self
     {

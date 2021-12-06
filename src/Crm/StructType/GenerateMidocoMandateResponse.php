@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GenerateMidocoMandateResponse extends AbstractStructBase
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GenerateMidocoMandateResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\GenerateMidocoMandateResponse
      */
     public function setMandateId(?int $mandateId = null): self
     {

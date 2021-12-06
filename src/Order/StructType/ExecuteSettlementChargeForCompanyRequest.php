@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -32,7 +32,7 @@ class ExecuteSettlementChargeForCompanyRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: ordersd:MidocoSettlementCharge
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\SettlementChargeDTO[]
      */
     protected ?array $MidocoSettlementCharge = null;
     /**
@@ -48,7 +48,7 @@ class ExecuteSettlementChargeForCompanyRequest extends AbstractStructBase
      * @uses ExecuteSettlementChargeForCompanyRequest::setChargeId()
      * @param int $customerId
      * @param string $month
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO[] $midocoSettlementCharge
+     * @param \Pggns\MidocoApi\Order\StructType\SettlementChargeDTO[] $midocoSettlementCharge
      * @param int $chargeId
      */
     public function __construct(int $customerId, string $month, ?array $midocoSettlementCharge = null, ?int $chargeId = null)
@@ -70,7 +70,7 @@ class ExecuteSettlementChargeForCompanyRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteSettlementChargeForCompanyRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteSettlementChargeForCompanyRequest
      */
     public function setCustomerId(int $customerId): self
     {
@@ -92,17 +92,17 @@ class ExecuteSettlementChargeForCompanyRequest extends AbstractStructBase
     }
     /**
      * Set month value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\Month::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\Month::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\Month::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\Month::getValidValues()
      * @throws InvalidArgumentException
      * @param string $month
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteSettlementChargeForCompanyRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteSettlementChargeForCompanyRequest
      */
     public function setMonth(string $month): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\Month::valueIsValid($month)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\Month', is_array($month) ? implode(', ', $month) : var_export($month, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\Month::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\Month::valueIsValid($month)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\Month', is_array($month) ? implode(', ', $month) : var_export($month, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\Month::getValidValues())), __LINE__);
         }
         $this->month = $month;
         
@@ -110,7 +110,7 @@ class ExecuteSettlementChargeForCompanyRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSettlementCharge value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\SettlementChargeDTO[]
      */
     public function getMidocoSettlementCharge(): ?array
     {
@@ -131,12 +131,12 @@ class ExecuteSettlementChargeForCompanyRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $executeSettlementChargeForCompanyRequestMidocoSettlementChargeItem) {
             // validation for constraint: itemType
-            if (!$executeSettlementChargeForCompanyRequestMidocoSettlementChargeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO) {
+            if (!$executeSettlementChargeForCompanyRequestMidocoSettlementChargeItem instanceof \Pggns\MidocoApi\Order\StructType\SettlementChargeDTO) {
                 $invalidValues[] = is_object($executeSettlementChargeForCompanyRequestMidocoSettlementChargeItem) ? get_class($executeSettlementChargeForCompanyRequestMidocoSettlementChargeItem) : sprintf('%s(%s)', gettype($executeSettlementChargeForCompanyRequestMidocoSettlementChargeItem), var_export($executeSettlementChargeForCompanyRequestMidocoSettlementChargeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSettlementCharge property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSettlementCharge property can only contain items of type \Pggns\MidocoApi\Order\StructType\SettlementChargeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -145,8 +145,8 @@ class ExecuteSettlementChargeForCompanyRequest extends AbstractStructBase
     /**
      * Set MidocoSettlementCharge value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO[] $midocoSettlementCharge
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteSettlementChargeForCompanyRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SettlementChargeDTO[] $midocoSettlementCharge
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteSettlementChargeForCompanyRequest
      */
     public function setMidocoSettlementCharge(?array $midocoSettlementCharge = null): self
     {
@@ -161,14 +161,14 @@ class ExecuteSettlementChargeForCompanyRequest extends AbstractStructBase
     /**
      * Add item to MidocoSettlementCharge value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteSettlementChargeForCompanyRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SettlementChargeDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteSettlementChargeForCompanyRequest
      */
-    public function addToMidocoSettlementCharge(\Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO $item): self
+    public function addToMidocoSettlementCharge(\Pggns\MidocoApi\Order\StructType\SettlementChargeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSettlementCharge property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SettlementChargeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SettlementChargeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSettlementCharge property can only contain items of type \Pggns\MidocoApi\Order\StructType\SettlementChargeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSettlementCharge[] = $item;
         
@@ -185,7 +185,7 @@ class ExecuteSettlementChargeForCompanyRequest extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteSettlementChargeForCompanyRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteSettlementChargeForCompanyRequest
      */
     public function setChargeId(?int $chargeId = null): self
     {

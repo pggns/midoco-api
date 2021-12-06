@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetAvailableCardDescriptionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCardDescription
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CardDescriptionDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CardDescriptionDTO[]
      */
     protected ?array $MidocoCardDescription = null;
     /**
      * Constructor method for GetAvailableCardDescriptionsResponse
      * @uses GetAvailableCardDescriptionsResponse::setMidocoCardDescription()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CardDescriptionDTO[] $midocoCardDescription
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CardDescriptionDTO[] $midocoCardDescription
      */
     public function __construct(?array $midocoCardDescription = null)
     {
@@ -36,7 +36,7 @@ class GetAvailableCardDescriptionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCardDescription value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CardDescriptionDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CardDescriptionDTO[]
      */
     public function getMidocoCardDescription(): ?array
     {
@@ -57,12 +57,12 @@ class GetAvailableCardDescriptionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailableCardDescriptionsResponseMidocoCardDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getAvailableCardDescriptionsResponseMidocoCardDescriptionItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CardDescriptionDTO) {
+            if (!$getAvailableCardDescriptionsResponseMidocoCardDescriptionItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CardDescriptionDTO) {
                 $invalidValues[] = is_object($getAvailableCardDescriptionsResponseMidocoCardDescriptionItem) ? get_class($getAvailableCardDescriptionsResponseMidocoCardDescriptionItem) : sprintf('%s(%s)', gettype($getAvailableCardDescriptionsResponseMidocoCardDescriptionItem), var_export($getAvailableCardDescriptionsResponseMidocoCardDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCardDescription property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CardDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCardDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CardDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetAvailableCardDescriptionsResponse extends AbstractStructBase
     /**
      * Set MidocoCardDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CardDescriptionDTO[] $midocoCardDescription
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAvailableCardDescriptionsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CardDescriptionDTO[] $midocoCardDescription
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAvailableCardDescriptionsResponse
      */
     public function setMidocoCardDescription(?array $midocoCardDescription = null): self
     {
@@ -87,14 +87,14 @@ class GetAvailableCardDescriptionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCardDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CardDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAvailableCardDescriptionsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CardDescriptionDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAvailableCardDescriptionsResponse
      */
-    public function addToMidocoCardDescription(\Pggns\MidocoApi\Api\CrmSD\StructType\CardDescriptionDTO $item): self
+    public function addToMidocoCardDescription(\Pggns\MidocoApi\CrmSD\StructType\CardDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CardDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCardDescription property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CardDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CardDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCardDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CardDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCardDescription[] = $item;
         

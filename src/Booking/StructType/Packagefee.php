@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -228,7 +228,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set fee_code value
      * @param string $fee_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setFee_code(?string $fee_code = null): self
     {
@@ -251,7 +251,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set fee_description value
      * @param string $fee_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setFee_description(?string $fee_description = null): self
     {
@@ -274,7 +274,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set total_price value
      * @param float $total_price
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setTotal_price(?float $total_price = null): self
     {
@@ -297,7 +297,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -320,7 +320,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set vat_free_amount value
      * @param float $vat_free_amount
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setVat_free_amount(?float $vat_free_amount = null): self
     {
@@ -343,7 +343,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set taxable_amount value
      * @param float $taxable_amount
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setTaxable_amount(?float $taxable_amount = null): self
     {
@@ -366,7 +366,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set vat_included value
      * @param bool $vat_included
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setVat_included(?bool $vat_included = null): self
     {
@@ -389,7 +389,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set fee_calculation_info value
      * @param string $fee_calculation_info
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setFee_calculation_info(?string $fee_calculation_info = null): self
     {
@@ -412,7 +412,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set supplier_id value
      * @param string $supplier_id
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setSupplier_id(?string $supplier_id = null): self
     {
@@ -435,7 +435,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setStatus(?string $status = 'OK'): self
     {
@@ -458,7 +458,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setPosition(?int $position = null): self
     {
@@ -481,7 +481,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set prevent_printing value
      * @param bool $prevent_printing
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setPrevent_printing(?bool $prevent_printing = null): self
     {
@@ -504,7 +504,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set feeCode value
      * @param string $feeCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setFeeCode(?string $feeCode = null): self
     {
@@ -527,7 +527,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set feeDescription value
      * @param string $feeDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setFeeDescription(?string $feeDescription = null): self
     {
@@ -550,7 +550,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -573,7 +573,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set vatFreeAmount value
      * @param float $vatFreeAmount
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setVatFreeAmount(?float $vatFreeAmount = null): self
     {
@@ -596,7 +596,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set taxableAmount value
      * @param float $taxableAmount
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setTaxableAmount(?float $taxableAmount = null): self
     {
@@ -619,7 +619,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set vatIncluded value
      * @param bool $vatIncluded
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setVatIncluded(?bool $vatIncluded = null): self
     {
@@ -642,7 +642,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set feeCalculationInfo value
      * @param string $feeCalculationInfo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setFeeCalculationInfo(?string $feeCalculationInfo = null): self
     {
@@ -665,7 +665,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -688,7 +688,7 @@ class Packagefee extends AbstractStructBase
     /**
      * Set preventPrinting value
      * @param bool $preventPrinting
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Packagefee
+     * @return \Pggns\MidocoApi\Booking\StructType\Packagefee
      */
     public function setPreventPrinting(?bool $preventPrinting = null): self
     {

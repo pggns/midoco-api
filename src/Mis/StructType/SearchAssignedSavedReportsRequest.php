@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SearchAssignedSavedReportsRequest extends AbstractStructBase
      * The MidocoJasperReport
      * Meta information extracted from the WSDL
      * - ref: system:MidocoJasperReport
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReport|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoJasperReport|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReport $MidocoJasperReport = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoJasperReport $MidocoJasperReport = null;
     /**
      * The reportType
      * @var string|null
@@ -29,10 +29,10 @@ class SearchAssignedSavedReportsRequest extends AbstractStructBase
      * Constructor method for SearchAssignedSavedReportsRequest
      * @uses SearchAssignedSavedReportsRequest::setMidocoJasperReport()
      * @uses SearchAssignedSavedReportsRequest::setReportType()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReport $midocoJasperReport
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoJasperReport $midocoJasperReport
      * @param string $reportType
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReport $midocoJasperReport = null, ?string $reportType = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MidocoJasperReport $midocoJasperReport = null, ?string $reportType = null)
     {
         $this
             ->setMidocoJasperReport($midocoJasperReport)
@@ -40,18 +40,18 @@ class SearchAssignedSavedReportsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoJasperReport value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReport|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoJasperReport|null
      */
-    public function getMidocoJasperReport(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReport
+    public function getMidocoJasperReport(): ?\Pggns\MidocoApi\Mis\StructType\MidocoJasperReport
     {
         return $this->MidocoJasperReport;
     }
     /**
      * Set MidocoJasperReport value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReport $midocoJasperReport
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchAssignedSavedReportsRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoJasperReport $midocoJasperReport
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchAssignedSavedReportsRequest
      */
-    public function setMidocoJasperReport(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReport $midocoJasperReport = null): self
+    public function setMidocoJasperReport(?\Pggns\MidocoApi\Mis\StructType\MidocoJasperReport $midocoJasperReport = null): self
     {
         $this->MidocoJasperReport = $midocoJasperReport;
         
@@ -68,7 +68,7 @@ class SearchAssignedSavedReportsRequest extends AbstractStructBase
     /**
      * Set reportType value
      * @param string $reportType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchAssignedSavedReportsRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchAssignedSavedReportsRequest
      */
     public function setReportType(?string $reportType = null): self
     {

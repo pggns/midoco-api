@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class LookupBankRequest extends AbstractStructBase
      * The MidocoBankLookup
      * Meta information extracted from the WSDL
      * - ref: MidocoBankLookup
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\BankLookupDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\BankLookupDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\BankLookupDTO $MidocoBankLookup = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\BankLookupDTO $MidocoBankLookup = null;
     /**
      * Constructor method for LookupBankRequest
      * @uses LookupBankRequest::setMidocoBankLookup()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\BankLookupDTO $midocoBankLookup
+     * @param \Pggns\MidocoApi\CrmSD\StructType\BankLookupDTO $midocoBankLookup
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\BankLookupDTO $midocoBankLookup = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\BankLookupDTO $midocoBankLookup = null)
     {
         $this
             ->setMidocoBankLookup($midocoBankLookup);
     }
     /**
      * Get MidocoBankLookup value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\BankLookupDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\BankLookupDTO|null
      */
-    public function getMidocoBankLookup(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\BankLookupDTO
+    public function getMidocoBankLookup(): ?\Pggns\MidocoApi\CrmSD\StructType\BankLookupDTO
     {
         return $this->MidocoBankLookup;
     }
     /**
      * Set MidocoBankLookup value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\BankLookupDTO $midocoBankLookup
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\LookupBankRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\BankLookupDTO $midocoBankLookup
+     * @return \Pggns\MidocoApi\CrmSD\StructType\LookupBankRequest
      */
-    public function setMidocoBankLookup(?\Pggns\MidocoApi\Api\CrmSD\StructType\BankLookupDTO $midocoBankLookup = null): self
+    public function setMidocoBankLookup(?\Pggns\MidocoApi\CrmSD\StructType\BankLookupDTO $midocoBankLookup = null): self
     {
         $this->MidocoBankLookup = $midocoBankLookup;
         

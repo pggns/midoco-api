@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class TaskViewUnitDTO extends AbstractStructBase
     /**
      * Set taskViewName value
      * @param string $taskViewName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewUnitDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewUnitDTO
      */
     public function setTaskViewName(?string $taskViewName = null): self
     {
@@ -70,7 +70,7 @@ class TaskViewUnitDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewUnitDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewUnitDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

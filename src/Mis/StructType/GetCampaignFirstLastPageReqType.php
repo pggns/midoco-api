@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetCampaignFirstLastPageReqType extends AbstractStructBase
      * The MidocoCrmCampaign
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCampaign
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $MidocoCrmCampaign = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $MidocoCrmCampaign = null;
     /**
      * The orgUnit
      * @var string|null
@@ -29,10 +29,10 @@ class GetCampaignFirstLastPageReqType extends AbstractStructBase
      * Constructor method for GetCampaignFirstLastPageReqType
      * @uses GetCampaignFirstLastPageReqType::setMidocoCrmCampaign()
      * @uses GetCampaignFirstLastPageReqType::setOrgUnit()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
      * @param string $orgUnit
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null, ?string $orgUnit = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null, ?string $orgUnit = null)
     {
         $this
             ->setMidocoCrmCampaign($midocoCrmCampaign)
@@ -40,18 +40,18 @@ class GetCampaignFirstLastPageReqType extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCampaign value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO|null
      */
-    public function getMidocoCrmCampaign(): ?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO
+    public function getMidocoCrmCampaign(): ?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO
     {
         return $this->MidocoCrmCampaign;
     }
     /**
      * Set MidocoCrmCampaign value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFirstLastPageReqType
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignFirstLastPageReqType
      */
-    public function setMidocoCrmCampaign(?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null): self
+    public function setMidocoCrmCampaign(?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null): self
     {
         $this->MidocoCrmCampaign = $midocoCrmCampaign;
         
@@ -68,7 +68,7 @@ class GetCampaignFirstLastPageReqType extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFirstLastPageReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignFirstLastPageReqType
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

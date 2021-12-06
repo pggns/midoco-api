@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class RecompileRulesetsRequest extends AbstractStructBase
      * Set SystemRuleset2CompileIds value
      * @throws InvalidArgumentException
      * @param int[] $systemRuleset2CompileIds
-     * @return \Pggns\MidocoApi\Api\System\StructType\RecompileRulesetsRequest
+     * @return \Pggns\MidocoApi\System\StructType\RecompileRulesetsRequest
      */
     public function setSystemRuleset2CompileIds(?array $systemRuleset2CompileIds = null): self
     {
@@ -85,7 +85,7 @@ class RecompileRulesetsRequest extends AbstractStructBase
      * Add item to SystemRuleset2CompileIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\RecompileRulesetsRequest
+     * @return \Pggns\MidocoApi\System\StructType\RecompileRulesetsRequest
      */
     public function addToSystemRuleset2CompileIds(int $item): self
     {

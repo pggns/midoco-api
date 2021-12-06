@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MidocoCashbookQrCodeData extends AbstractStructBase
     /**
      * Set start value
      * @param string $start
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCashbookQrCodeData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCashbookQrCodeData
      */
     public function setStart(?string $start = null): self
     {
@@ -134,7 +134,7 @@ class MidocoCashbookQrCodeData extends AbstractStructBase
     /**
      * Set end value
      * @param string $end
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCashbookQrCodeData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCashbookQrCodeData
      */
     public function setEnd(?string $end = null): self
     {
@@ -157,7 +157,7 @@ class MidocoCashbookQrCodeData extends AbstractStructBase
     /**
      * Set transactionNo value
      * @param string $transactionNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCashbookQrCodeData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCashbookQrCodeData
      */
     public function setTransactionNo(?string $transactionNo = null): self
     {
@@ -180,7 +180,7 @@ class MidocoCashbookQrCodeData extends AbstractStructBase
     /**
      * Set signatureCounter value
      * @param string $signatureCounter
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCashbookQrCodeData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCashbookQrCodeData
      */
     public function setSignatureCounter(?string $signatureCounter = null): self
     {
@@ -203,7 +203,7 @@ class MidocoCashbookQrCodeData extends AbstractStructBase
     /**
      * Set serialNumber value
      * @param string $serialNumber
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCashbookQrCodeData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCashbookQrCodeData
      */
     public function setSerialNumber(?string $serialNumber = null): self
     {
@@ -226,7 +226,7 @@ class MidocoCashbookQrCodeData extends AbstractStructBase
     /**
      * Set algorithmus value
      * @param string $algorithmus
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCashbookQrCodeData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCashbookQrCodeData
      */
     public function setAlgorithmus(?string $algorithmus = null): self
     {
@@ -249,7 +249,7 @@ class MidocoCashbookQrCodeData extends AbstractStructBase
     /**
      * Set key value
      * @param string $key
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCashbookQrCodeData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCashbookQrCodeData
      */
     public function setKey(?string $key = null): self
     {
@@ -272,7 +272,7 @@ class MidocoCashbookQrCodeData extends AbstractStructBase
     /**
      * Set signature value
      * @param string $signature
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCashbookQrCodeData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCashbookQrCodeData
      */
     public function setSignature(?string $signature = null): self
     {
@@ -295,7 +295,7 @@ class MidocoCashbookQrCodeData extends AbstractStructBase
     /**
      * Set processType value
      * @param string $processType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCashbookQrCodeData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCashbookQrCodeData
      */
     public function setProcessType(?string $processType = null): self
     {
@@ -318,7 +318,7 @@ class MidocoCashbookQrCodeData extends AbstractStructBase
     /**
      * Set timeFormat value
      * @param string $timeFormat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCashbookQrCodeData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCashbookQrCodeData
      */
     public function setTimeFormat(?string $timeFormat = null): self
     {

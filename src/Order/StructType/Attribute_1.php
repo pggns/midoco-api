@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class Attribute_1 extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Attribute_1
+     * @return \Pggns\MidocoApi\Order\StructType\Attribute_1
      */
     public function setName(?string $name = null): self
     {
@@ -70,7 +70,7 @@ class Attribute_1 extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Attribute_1
+     * @return \Pggns\MidocoApi\Order\StructType\Attribute_1
      */
     public function setValue(?string $value = null): self
     {

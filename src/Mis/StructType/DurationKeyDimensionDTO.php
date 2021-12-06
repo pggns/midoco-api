@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class DurationKeyDimensionDTO extends AbstractStructBase
     /**
      * Set durationKey value
      * @param string $durationKey
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DurationKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DurationKeyDimensionDTO
      */
     public function setDurationKey(?string $durationKey = null): self
     {
@@ -86,7 +86,7 @@ class DurationKeyDimensionDTO extends AbstractStructBase
     /**
      * Set durationKeyDescription value
      * @param string $durationKeyDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DurationKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DurationKeyDimensionDTO
      */
     public function setDurationKeyDescription(?string $durationKeyDescription = null): self
     {
@@ -109,7 +109,7 @@ class DurationKeyDimensionDTO extends AbstractStructBase
     /**
      * Set durationKeyId value
      * @param int $durationKeyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DurationKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DurationKeyDimensionDTO
      */
     public function setDurationKeyId(?int $durationKeyId = null): self
     {
@@ -132,7 +132,7 @@ class DurationKeyDimensionDTO extends AbstractStructBase
     /**
      * Set durationKeyLocDescr value
      * @param string $durationKeyLocDescr
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DurationKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DurationKeyDimensionDTO
      */
     public function setDurationKeyLocDescr(?string $durationKeyLocDescr = null): self
     {

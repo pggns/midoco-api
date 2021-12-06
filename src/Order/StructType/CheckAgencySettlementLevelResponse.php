@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CheckAgencySettlementLevelResponse extends AbstractStructBase
     /**
      * Set overlapsExistingSettlement value
      * @param bool $overlapsExistingSettlement
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckAgencySettlementLevelResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckAgencySettlementLevelResponse
      */
     public function setOverlapsExistingSettlement(?bool $overlapsExistingSettlement = null): self
     {

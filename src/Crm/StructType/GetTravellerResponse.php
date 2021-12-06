@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetTravellerResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmTraveller
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmTraveller[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller[]
      */
     protected ?array $MidocoCrmTraveller = null;
     /**
      * Constructor method for GetTravellerResponse
      * @uses GetTravellerResponse::setMidocoCrmTraveller()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmTraveller[] $midocoCrmTraveller
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller[] $midocoCrmTraveller
      */
     public function __construct(?array $midocoCrmTraveller = null)
     {
@@ -36,7 +36,7 @@ class GetTravellerResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmTraveller value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmTraveller[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller[]
      */
     public function getMidocoCrmTraveller(): ?array
     {
@@ -57,12 +57,12 @@ class GetTravellerResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTravellerResponseMidocoCrmTravellerItem) {
             // validation for constraint: itemType
-            if (!$getTravellerResponseMidocoCrmTravellerItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmTraveller) {
+            if (!$getTravellerResponseMidocoCrmTravellerItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller) {
                 $invalidValues[] = is_object($getTravellerResponseMidocoCrmTravellerItem) ? get_class($getTravellerResponseMidocoCrmTravellerItem) : sprintf('%s(%s)', gettype($getTravellerResponseMidocoCrmTravellerItem), var_export($getTravellerResponseMidocoCrmTravellerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmTraveller property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmTraveller, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmTraveller property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetTravellerResponse extends AbstractStructBase
     /**
      * Set MidocoCrmTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmTraveller[] $midocoCrmTraveller
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTravellerResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller[] $midocoCrmTraveller
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTravellerResponse
      */
     public function setMidocoCrmTraveller(?array $midocoCrmTraveller = null): self
     {
@@ -87,14 +87,14 @@ class GetTravellerResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmTraveller $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTravellerResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTravellerResponse
      */
-    public function addToMidocoCrmTraveller(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmTraveller $item): self
+    public function addToMidocoCrmTraveller(\Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmTraveller) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmTraveller property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmTraveller, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmTraveller property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmTraveller[] = $item;
         

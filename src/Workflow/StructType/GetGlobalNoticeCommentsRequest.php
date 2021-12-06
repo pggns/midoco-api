@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetGlobalNoticeCommentsRequest extends AbstractStructBase
     /**
      * Set noticeId value
      * @param int $noticeId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticeCommentsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticeCommentsRequest
      */
     public function setNoticeId(?int $noticeId = null): self
     {

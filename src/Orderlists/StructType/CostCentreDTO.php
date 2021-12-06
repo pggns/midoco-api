@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class CostCentreDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CostCentreDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CostCentreDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -70,7 +70,7 @@ class CostCentreDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CostCentreDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CostCentreDTO
      */
     public function setDescription(?string $description = null): self
     {

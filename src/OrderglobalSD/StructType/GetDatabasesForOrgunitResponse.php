@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetDatabasesForOrgunitResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDatabaseType
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDatabaseType[]
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDatabaseType[]
      */
     protected ?array $MidocoDatabaseType = null;
     /**
      * Constructor method for GetDatabasesForOrgunitResponse
      * @uses GetDatabasesForOrgunitResponse::setMidocoDatabaseType()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDatabaseType[] $midocoDatabaseType
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDatabaseType[] $midocoDatabaseType
      */
     public function __construct(?array $midocoDatabaseType = null)
     {
@@ -34,7 +34,7 @@ class GetDatabasesForOrgunitResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDatabaseType value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDatabaseType[]
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDatabaseType[]
      */
     public function getMidocoDatabaseType(): ?array
     {
@@ -55,12 +55,12 @@ class GetDatabasesForOrgunitResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDatabasesForOrgunitResponseMidocoDatabaseTypeItem) {
             // validation for constraint: itemType
-            if (!$getDatabasesForOrgunitResponseMidocoDatabaseTypeItem instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDatabaseType) {
+            if (!$getDatabasesForOrgunitResponseMidocoDatabaseTypeItem instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDatabaseType) {
                 $invalidValues[] = is_object($getDatabasesForOrgunitResponseMidocoDatabaseTypeItem) ? get_class($getDatabasesForOrgunitResponseMidocoDatabaseTypeItem) : sprintf('%s(%s)', gettype($getDatabasesForOrgunitResponseMidocoDatabaseTypeItem), var_export($getDatabasesForOrgunitResponseMidocoDatabaseTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDatabaseType property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDatabaseType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDatabaseType property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDatabaseType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetDatabasesForOrgunitResponse extends AbstractStructBase
     /**
      * Set MidocoDatabaseType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDatabaseType[] $midocoDatabaseType
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDatabasesForOrgunitResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDatabaseType[] $midocoDatabaseType
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDatabasesForOrgunitResponse
      */
     public function setMidocoDatabaseType(?array $midocoDatabaseType = null): self
     {
@@ -85,14 +85,14 @@ class GetDatabasesForOrgunitResponse extends AbstractStructBase
     /**
      * Add item to MidocoDatabaseType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDatabaseType $item
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDatabasesForOrgunitResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDatabaseType $item
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDatabasesForOrgunitResponse
      */
-    public function addToMidocoDatabaseType(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDatabaseType $item): self
+    public function addToMidocoDatabaseType(\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDatabaseType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDatabaseType) {
-            throw new InvalidArgumentException(sprintf('The MidocoDatabaseType property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDatabaseType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDatabaseType) {
+            throw new InvalidArgumentException(sprintf('The MidocoDatabaseType property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDatabaseType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDatabaseType[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetAttributeDefinitionLocalizationRequest extends AbstractStructBase
      * The MidocoAttributeDefinition
      * Meta information extracted from the WSDL
      * - ref: MidocoAttributeDefinition
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\AttributeDefinitionType|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\AttributeDefinitionType|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\AttributeDefinitionType $MidocoAttributeDefinition = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\AttributeDefinitionType $MidocoAttributeDefinition = null;
     /**
      * Constructor method for GetAttributeDefinitionLocalizationRequest
      * @uses GetAttributeDefinitionLocalizationRequest::setMidocoAttributeDefinition()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\AttributeDefinitionType $midocoAttributeDefinition
+     * @param \Pggns\MidocoApi\OrderSD\StructType\AttributeDefinitionType $midocoAttributeDefinition
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\AttributeDefinitionType $midocoAttributeDefinition = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\AttributeDefinitionType $midocoAttributeDefinition = null)
     {
         $this
             ->setMidocoAttributeDefinition($midocoAttributeDefinition);
     }
     /**
      * Get MidocoAttributeDefinition value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AttributeDefinitionType|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AttributeDefinitionType|null
      */
-    public function getMidocoAttributeDefinition(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\AttributeDefinitionType
+    public function getMidocoAttributeDefinition(): ?\Pggns\MidocoApi\OrderSD\StructType\AttributeDefinitionType
     {
         return $this->MidocoAttributeDefinition;
     }
     /**
      * Set MidocoAttributeDefinition value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\AttributeDefinitionType $midocoAttributeDefinition
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAttributeDefinitionLocalizationRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\AttributeDefinitionType $midocoAttributeDefinition
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAttributeDefinitionLocalizationRequest
      */
-    public function setMidocoAttributeDefinition(?\Pggns\MidocoApi\Api\OrderSD\StructType\AttributeDefinitionType $midocoAttributeDefinition = null): self
+    public function setMidocoAttributeDefinition(?\Pggns\MidocoApi\OrderSD\StructType\AttributeDefinitionType $midocoAttributeDefinition = null): self
     {
         $this->MidocoAttributeDefinition = $midocoAttributeDefinition;
         

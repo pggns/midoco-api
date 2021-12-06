@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class GetCcProxyHandlersResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoCcProxyHandler
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CcproxyHandlerDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\CcproxyHandlerDTO[]
      */
     protected ?array $MidocoCcProxyHandler = null;
     /**
      * Constructor method for GetCcProxyHandlersResponse
      * @uses GetCcProxyHandlersResponse::setMidocoCcProxyHandler()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CcproxyHandlerDTO[] $midocoCcProxyHandler
+     * @param \Pggns\MidocoApi\Order\StructType\CcproxyHandlerDTO[] $midocoCcProxyHandler
      */
     public function __construct(?array $midocoCcProxyHandler = null)
     {
@@ -33,7 +33,7 @@ class GetCcProxyHandlersResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCcProxyHandler value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcproxyHandlerDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\CcproxyHandlerDTO[]
      */
     public function getMidocoCcProxyHandler(): ?array
     {
@@ -54,12 +54,12 @@ class GetCcProxyHandlersResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCcProxyHandlersResponseMidocoCcProxyHandlerItem) {
             // validation for constraint: itemType
-            if (!$getCcProxyHandlersResponseMidocoCcProxyHandlerItem instanceof \Pggns\MidocoApi\Api\Order\StructType\CcproxyHandlerDTO) {
+            if (!$getCcProxyHandlersResponseMidocoCcProxyHandlerItem instanceof \Pggns\MidocoApi\Order\StructType\CcproxyHandlerDTO) {
                 $invalidValues[] = is_object($getCcProxyHandlersResponseMidocoCcProxyHandlerItem) ? get_class($getCcProxyHandlersResponseMidocoCcProxyHandlerItem) : sprintf('%s(%s)', gettype($getCcProxyHandlersResponseMidocoCcProxyHandlerItem), var_export($getCcProxyHandlersResponseMidocoCcProxyHandlerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCcProxyHandler property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CcproxyHandlerDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCcProxyHandler property can only contain items of type \Pggns\MidocoApi\Order\StructType\CcproxyHandlerDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class GetCcProxyHandlersResponse extends AbstractStructBase
     /**
      * Set MidocoCcProxyHandler value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CcproxyHandlerDTO[] $midocoCcProxyHandler
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCcProxyHandlersResponse
+     * @param \Pggns\MidocoApi\Order\StructType\CcproxyHandlerDTO[] $midocoCcProxyHandler
+     * @return \Pggns\MidocoApi\Order\StructType\GetCcProxyHandlersResponse
      */
     public function setMidocoCcProxyHandler(?array $midocoCcProxyHandler = null): self
     {
@@ -84,14 +84,14 @@ class GetCcProxyHandlersResponse extends AbstractStructBase
     /**
      * Add item to MidocoCcProxyHandler value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CcproxyHandlerDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCcProxyHandlersResponse
+     * @param \Pggns\MidocoApi\Order\StructType\CcproxyHandlerDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetCcProxyHandlersResponse
      */
-    public function addToMidocoCcProxyHandler(\Pggns\MidocoApi\Api\Order\StructType\CcproxyHandlerDTO $item): self
+    public function addToMidocoCcProxyHandler(\Pggns\MidocoApi\Order\StructType\CcproxyHandlerDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\CcproxyHandlerDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCcProxyHandler property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CcproxyHandlerDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\CcproxyHandlerDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCcProxyHandler property can only contain items of type \Pggns\MidocoApi\Order\StructType\CcproxyHandlerDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCcProxyHandler[] = $item;
         

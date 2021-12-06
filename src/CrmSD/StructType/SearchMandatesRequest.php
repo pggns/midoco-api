@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class SearchMandatesRequest extends AbstractStructBase
     /**
      * Set mandateReference value
      * @param string $mandateReference
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMandatesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMandatesRequest
      */
     public function setMandateReference(?string $mandateReference = null): self
     {
@@ -92,7 +92,7 @@ class SearchMandatesRequest extends AbstractStructBase
     /**
      * Set isOrderMandate value
      * @param bool $isOrderMandate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMandatesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMandatesRequest
      */
     public function setIsOrderMandate(?bool $isOrderMandate = null): self
     {
@@ -115,7 +115,7 @@ class SearchMandatesRequest extends AbstractStructBase
     /**
      * Set isBillingMandate value
      * @param bool $isBillingMandate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMandatesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMandatesRequest
      */
     public function setIsBillingMandate(?bool $isBillingMandate = null): self
     {
@@ -138,7 +138,7 @@ class SearchMandatesRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMandatesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMandatesRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

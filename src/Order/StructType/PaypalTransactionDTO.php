@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -198,7 +198,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set contextParameter value
      * @param string $contextParameter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setContextParameter(?string $contextParameter = null): self
     {
@@ -221,7 +221,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setId(?int $id = null): self
     {
@@ -244,7 +244,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set lastStatus value
      * @param int $lastStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setLastStatus(?int $lastStatus = null): self
     {
@@ -267,7 +267,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -290,7 +290,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set originalTransaction value
      * @param int $originalTransaction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setOriginalTransaction(?int $originalTransaction = null): self
     {
@@ -313,7 +313,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set payerId value
      * @param string $payerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setPayerId(?string $payerId = null): self
     {
@@ -336,7 +336,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set paymentModel value
      * @param int $paymentModel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setPaymentModel(?int $paymentModel = null): self
     {
@@ -359,7 +359,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set paypalId value
      * @param string $paypalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setPaypalId(?string $paypalId = null): self
     {
@@ -382,7 +382,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set paypalOrderTransaction value
      * @param int $paypalOrderTransaction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setPaypalOrderTransaction(?int $paypalOrderTransaction = null): self
     {
@@ -405,7 +405,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set paypalPayerEmail value
      * @param string $paypalPayerEmail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setPaypalPayerEmail(?string $paypalPayerEmail = null): self
     {
@@ -428,7 +428,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set paypalPayerForename value
      * @param string $paypalPayerForename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setPaypalPayerForename(?string $paypalPayerForename = null): self
     {
@@ -451,7 +451,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set paypalPayerLastname value
      * @param string $paypalPayerLastname
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setPaypalPayerLastname(?string $paypalPayerLastname = null): self
     {
@@ -474,7 +474,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set paypalReason value
      * @param string $paypalReason
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setPaypalReason(?string $paypalReason = null): self
     {
@@ -497,7 +497,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set paypalStatus value
      * @param string $paypalStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setPaypalStatus(?string $paypalStatus = null): self
     {
@@ -520,7 +520,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set previousStatus value
      * @param int $previousStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setPreviousStatus(?int $previousStatus = null): self
     {
@@ -543,7 +543,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set transactionDate value
      * @param string $transactionDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setTransactionDate(?string $transactionDate = null): self
     {
@@ -566,7 +566,7 @@ class PaypalTransactionDTO extends AbstractStructBase
     /**
      * Set transactionType value
      * @param int $transactionType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaypalTransactionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaypalTransactionDTO
      */
     public function setTransactionType(?int $transactionType = null): self
     {

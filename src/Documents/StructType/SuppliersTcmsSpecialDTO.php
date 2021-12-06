@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SuppliersTcmsSpecialDTO extends AbstractStructBase
     /**
      * Set hcodeRegex value
      * @param string $hcodeRegex
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppliersTcmsSpecialDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppliersTcmsSpecialDTO
      */
     public function setHcodeRegex(?string $hcodeRegex = null): self
     {
@@ -78,7 +78,7 @@ class SuppliersTcmsSpecialDTO extends AbstractStructBase
     /**
      * Set scodeRegex value
      * @param string $scodeRegex
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppliersTcmsSpecialDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppliersTcmsSpecialDTO
      */
     public function setScodeRegex(?string $scodeRegex = null): self
     {
@@ -101,7 +101,7 @@ class SuppliersTcmsSpecialDTO extends AbstractStructBase
     /**
      * Set supplierCode value
      * @param string $supplierCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppliersTcmsSpecialDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppliersTcmsSpecialDTO
      */
     public function setSupplierCode(?string $supplierCode = null): self
     {

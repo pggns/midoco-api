@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveKaeraInsuranceRequest extends AbstractStructBase
      * The MidocoPackageInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoPackageInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\PackageitemDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $MidocoPackageInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\PackageitemDTO $MidocoPackageInfo = null;
     /**
      * The toCancel
      * @var bool|null
@@ -29,10 +29,10 @@ class SaveKaeraInsuranceRequest extends AbstractStructBase
      * Constructor method for SaveKaeraInsuranceRequest
      * @uses SaveKaeraInsuranceRequest::setMidocoPackageInfo()
      * @uses SaveKaeraInsuranceRequest::setToCancel()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $midocoPackageInfo
+     * @param \Pggns\MidocoApi\Order\StructType\PackageitemDTO $midocoPackageInfo
      * @param bool $toCancel
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $midocoPackageInfo = null, ?bool $toCancel = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\PackageitemDTO $midocoPackageInfo = null, ?bool $toCancel = null)
     {
         $this
             ->setMidocoPackageInfo($midocoPackageInfo)
@@ -40,18 +40,18 @@ class SaveKaeraInsuranceRequest extends AbstractStructBase
     }
     /**
      * Get MidocoPackageInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\PackageitemDTO|null
      */
-    public function getMidocoPackageInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO
+    public function getMidocoPackageInfo(): ?\Pggns\MidocoApi\Order\StructType\PackageitemDTO
     {
         return $this->MidocoPackageInfo;
     }
     /**
      * Set MidocoPackageInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $midocoPackageInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveKaeraInsuranceRequest
+     * @param \Pggns\MidocoApi\Order\StructType\PackageitemDTO $midocoPackageInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SaveKaeraInsuranceRequest
      */
-    public function setMidocoPackageInfo(?\Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $midocoPackageInfo = null): self
+    public function setMidocoPackageInfo(?\Pggns\MidocoApi\Order\StructType\PackageitemDTO $midocoPackageInfo = null): self
     {
         $this->MidocoPackageInfo = $midocoPackageInfo;
         
@@ -68,7 +68,7 @@ class SaveKaeraInsuranceRequest extends AbstractStructBase
     /**
      * Set toCancel value
      * @param bool $toCancel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveKaeraInsuranceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveKaeraInsuranceRequest
      */
     public function setToCancel(?bool $toCancel = null): self
     {

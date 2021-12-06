@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -182,7 +182,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -205,7 +205,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set bookingPeriod value
      * @param int $bookingPeriod
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setBookingPeriod(?int $bookingPeriod = null): self
     {
@@ -228,7 +228,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -251,7 +251,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -274,7 +274,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -297,7 +297,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -320,7 +320,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set entryId value
      * @param string $entryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setEntryId(?string $entryId = null): self
     {
@@ -343,7 +343,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setExportId(?int $exportId = null): self
     {
@@ -366,7 +366,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -389,7 +389,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -412,7 +412,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -435,7 +435,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set totalInvoicedAmount value
      * @param float $totalInvoicedAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setTotalInvoicedAmount(?float $totalInvoicedAmount = null): self
     {
@@ -458,7 +458,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set totalOrigInvoicedAmount value
      * @param float $totalOrigInvoicedAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setTotalOrigInvoicedAmount(?float $totalOrigInvoicedAmount = null): self
     {
@@ -481,7 +481,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set totalOrigPaidAmount value
      * @param float $totalOrigPaidAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setTotalOrigPaidAmount(?float $totalOrigPaidAmount = null): self
     {
@@ -504,7 +504,7 @@ class EntryPeriodSumDTO extends AbstractStructBase
     /**
      * Set totalPaidAmount value
      * @param float $totalPaidAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EntryPeriodSumDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EntryPeriodSumDTO
      */
     public function setTotalPaidAmount(?float $totalPaidAmount = null): self
     {

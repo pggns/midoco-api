@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -68,7 +68,7 @@ class AnnounceBookingMessageResponse extends AbstractStructBase
     /**
      * Set OrderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceBookingMessageResponse
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceBookingMessageResponse
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -91,7 +91,7 @@ class AnnounceBookingMessageResponse extends AbstractStructBase
     /**
      * Set OrderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceBookingMessageResponse
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceBookingMessageResponse
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -114,7 +114,7 @@ class AnnounceBookingMessageResponse extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceBookingMessageResponse
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceBookingMessageResponse
      */
     public function setUnitName(?string $unitName = null): self
     {

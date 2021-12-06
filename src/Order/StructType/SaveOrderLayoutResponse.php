@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SaveOrderLayoutResponse extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderLayoutResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderLayoutResponse
      */
     public function setTemplateId(?int $templateId = null): self
     {

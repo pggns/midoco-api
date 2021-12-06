@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class BillingAdvisedPaymentDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAdvisedPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -86,7 +86,7 @@ class BillingAdvisedPaymentDTO extends AbstractStructBase
     /**
      * Set paymentStatus value
      * @param string $paymentStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAdvisedPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO
      */
     public function setPaymentStatus(?string $paymentStatus = null): self
     {
@@ -109,7 +109,7 @@ class BillingAdvisedPaymentDTO extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAdvisedPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -132,7 +132,7 @@ class BillingAdvisedPaymentDTO extends AbstractStructBase
     /**
      * Set referenceNo value
      * @param string $referenceNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAdvisedPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO
      */
     public function setReferenceNo(?string $referenceNo = null): self
     {

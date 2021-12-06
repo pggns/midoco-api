@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -80,7 +80,7 @@ class MidocoBillingEinvoice extends BillingEinvoiceDTO
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingEinvoice
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingEinvoice
      */
     public function setType(?string $type = null): self
     {
@@ -103,7 +103,7 @@ class MidocoBillingEinvoice extends BillingEinvoiceDTO
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingEinvoice
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingEinvoice
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -126,7 +126,7 @@ class MidocoBillingEinvoice extends BillingEinvoiceDTO
     /**
      * Set routingIdRequired value
      * @param bool $routingIdRequired
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingEinvoice
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingEinvoice
      */
     public function setRoutingIdRequired(?bool $routingIdRequired = true): self
     {
@@ -149,7 +149,7 @@ class MidocoBillingEinvoice extends BillingEinvoiceDTO
     /**
      * Set supplierNoRequired value
      * @param bool $supplierNoRequired
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingEinvoice
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingEinvoice
      */
     public function setSupplierNoRequired(?bool $supplierNoRequired = true): self
     {
@@ -172,7 +172,7 @@ class MidocoBillingEinvoice extends BillingEinvoiceDTO
     /**
      * Set orderRefRequired value
      * @param bool $orderRefRequired
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingEinvoice
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingEinvoice
      */
     public function setOrderRefRequired(?bool $orderRefRequired = false): self
     {

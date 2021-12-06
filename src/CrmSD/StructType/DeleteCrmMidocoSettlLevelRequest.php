@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteCrmMidocoSettlLevelRequest extends AbstractStructBase
     /**
      * Set levelId value
      * @param int $levelId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCrmMidocoSettlLevelRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCrmMidocoSettlLevelRequest
      */
     public function setLevelId(?int $levelId = null): self
     {

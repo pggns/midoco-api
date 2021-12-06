@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class MidocoImportContactType extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportContactType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportContactType
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -126,7 +126,7 @@ class MidocoImportContactType extends AbstractStructBase
     /**
      * Set mediaId value
      * @param string $mediaId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportContactType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportContactType
      */
     public function setMediaId(?string $mediaId = null): self
     {
@@ -149,7 +149,7 @@ class MidocoImportContactType extends AbstractStructBase
     /**
      * Set contactData value
      * @param string $contactData
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportContactType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportContactType
      */
     public function setContactData(?string $contactData = null): self
     {
@@ -172,7 +172,7 @@ class MidocoImportContactType extends AbstractStructBase
     /**
      * Set contactUrl value
      * @param string $contactUrl
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportContactType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportContactType
      */
     public function setContactUrl(?string $contactUrl = null): self
     {
@@ -195,7 +195,7 @@ class MidocoImportContactType extends AbstractStructBase
     /**
      * Set useForMailing value
      * @param bool $useForMailing
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportContactType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportContactType
      */
     public function setUseForMailing(?bool $useForMailing = null): self
     {
@@ -218,7 +218,7 @@ class MidocoImportContactType extends AbstractStructBase
     /**
      * Set useAsDefault value
      * @param bool $useAsDefault
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportContactType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportContactType
      */
     public function setUseAsDefault(?bool $useAsDefault = null): self
     {
@@ -241,7 +241,7 @@ class MidocoImportContactType extends AbstractStructBase
     /**
      * Set mailingStatus value
      * @param string $mailingStatus
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportContactType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportContactType
      */
     public function setMailingStatus(?string $mailingStatus = null): self
     {
@@ -264,7 +264,7 @@ class MidocoImportContactType extends AbstractStructBase
     /**
      * Set notProvided value
      * @param bool $notProvided
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportContactType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportContactType
      */
     public function setNotProvided(?bool $notProvided = null): self
     {
@@ -287,7 +287,7 @@ class MidocoImportContactType extends AbstractStructBase
     /**
      * Set notAvailable value
      * @param bool $notAvailable
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoImportContactType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoImportContactType
      */
     public function setNotAvailable(?bool $notAvailable = null): self
     {

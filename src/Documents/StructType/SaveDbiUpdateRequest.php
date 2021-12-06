@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveDbiUpdateRequest extends AbstractStructBase
      * The MidocoDbiUpdate
      * Meta information extracted from the WSDL
      * - ref: MidocoDbiUpdate
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $MidocoDbiUpdate = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $MidocoDbiUpdate = null;
     /**
      * The isUpdateTaxVerification
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SaveDbiUpdateRequest extends AbstractStructBase
      * Constructor method for SaveDbiUpdateRequest
      * @uses SaveDbiUpdateRequest::setMidocoDbiUpdate()
      * @uses SaveDbiUpdateRequest::setIsUpdateTaxVerification()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate
+     * @param \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate
      * @param bool $isUpdateTaxVerification
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate = null, ?bool $isUpdateTaxVerification = true)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate = null, ?bool $isUpdateTaxVerification = true)
     {
         $this
             ->setMidocoDbiUpdate($midocoDbiUpdate)
@@ -42,18 +42,18 @@ class SaveDbiUpdateRequest extends AbstractStructBase
     }
     /**
      * Get MidocoDbiUpdate value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO|null
      */
-    public function getMidocoDbiUpdate(): ?\Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO
+    public function getMidocoDbiUpdate(): ?\Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO
     {
         return $this->MidocoDbiUpdate;
     }
     /**
      * Set MidocoDbiUpdate value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveDbiUpdateRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveDbiUpdateRequest
      */
-    public function setMidocoDbiUpdate(?\Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate = null): self
+    public function setMidocoDbiUpdate(?\Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate = null): self
     {
         $this->MidocoDbiUpdate = $midocoDbiUpdate;
         
@@ -70,7 +70,7 @@ class SaveDbiUpdateRequest extends AbstractStructBase
     /**
      * Set isUpdateTaxVerification value
      * @param bool $isUpdateTaxVerification
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveDbiUpdateRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveDbiUpdateRequest
      */
     public function setIsUpdateTaxVerification(?bool $isUpdateTaxVerification = true): self
     {

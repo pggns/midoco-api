@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetMergedMfRequest extends AbstractStructBase
      * The MidocoMf
      * Meta information extracted from the WSDL
      * - ref: MidocoMf
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoMf|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoMf|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoMf $MidocoMf = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoMf $MidocoMf = null;
     /**
      * Constructor method for GetMergedMfRequest
      * @uses GetMergedMfRequest::setMidocoMf()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMf $midocoMf
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMf $midocoMf
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoMf $midocoMf = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoMf $midocoMf = null)
     {
         $this
             ->setMidocoMf($midocoMf);
     }
     /**
      * Get MidocoMf value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoMf|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoMf|null
      */
-    public function getMidocoMf(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoMf
+    public function getMidocoMf(): ?\Pggns\MidocoApi\Crm\StructType\MidocoMf
     {
         return $this->MidocoMf;
     }
     /**
      * Set MidocoMf value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMf $midocoMf
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMergedMfRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMf $midocoMf
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMergedMfRequest
      */
-    public function setMidocoMf(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoMf $midocoMf = null): self
+    public function setMidocoMf(?\Pggns\MidocoApi\Crm\StructType\MidocoMf $midocoMf = null): self
     {
         $this->MidocoMf = $midocoMf;
         

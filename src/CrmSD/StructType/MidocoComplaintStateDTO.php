@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoComplaintStateDTO extends ComplaintStateDTO
     /**
      * Set localizedDescription value
      * @param string $localizedDescription
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoComplaintStateDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoComplaintStateDTO
      */
     public function setLocalizedDescription(?string $localizedDescription = null): self
     {

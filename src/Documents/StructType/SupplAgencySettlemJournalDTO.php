@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -311,7 +311,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set automaticVat value
      * @param bool $automaticVat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setAutomaticVat(?bool $automaticVat = null): self
     {
@@ -334,7 +334,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set booked value
      * @param bool $booked
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setBooked(?bool $booked = null): self
     {
@@ -357,7 +357,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set bookingAmount value
      * @param float $bookingAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setBookingAmount(?float $bookingAmount = null): self
     {
@@ -380,7 +380,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set bookingPeriod value
      * @param int $bookingPeriod
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setBookingPeriod(?int $bookingPeriod = null): self
     {
@@ -403,7 +403,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -426,7 +426,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set bookingText value
      * @param string $bookingText
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setBookingText(?string $bookingText = null): self
     {
@@ -449,7 +449,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -472,7 +472,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -495,7 +495,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set costUnit value
      * @param string $costUnit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setCostUnit(?string $costUnit = null): self
     {
@@ -518,7 +518,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -541,7 +541,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -564,7 +564,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -587,7 +587,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set creditEntry value
      * @param string $creditEntry
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setCreditEntry(?string $creditEntry = null): self
     {
@@ -610,7 +610,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -633,7 +633,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -656,7 +656,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set debitEntry value
      * @param string $debitEntry
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setDebitEntry(?string $debitEntry = null): self
     {
@@ -679,7 +679,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -702,7 +702,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set exchangeRate value
      * @param float $exchangeRate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setExchangeRate(?float $exchangeRate = null): self
     {
@@ -725,7 +725,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set exportDate value
      * @param string $exportDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setExportDate(?string $exportDate = null): self
     {
@@ -748,7 +748,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setExportId(?int $exportId = null): self
     {
@@ -771,7 +771,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -794,7 +794,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set journalId value
      * @param int $journalId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setJournalId(?int $journalId = null): self
     {
@@ -817,7 +817,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set journalPosition value
      * @param int $journalPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setJournalPosition(?int $journalPosition = null): self
     {
@@ -840,7 +840,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -863,7 +863,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -886,7 +886,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -909,7 +909,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -932,7 +932,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -955,7 +955,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -978,7 +978,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set skontoAmount value
      * @param float $skontoAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setSkontoAmount(?float $skontoAmount = null): self
     {
@@ -1001,7 +1001,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set skontoVatAmount value
      * @param float $skontoVatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setSkontoVatAmount(?float $skontoVatAmount = null): self
     {
@@ -1024,7 +1024,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -1047,7 +1047,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -1070,7 +1070,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setVatId(?string $vatId = null): self
     {
@@ -1093,7 +1093,7 @@ class SupplAgencySettlemJournalDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemJournalDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

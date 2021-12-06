@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class TextTemplateTypeExtDTO extends TextTemplateTypeDTO
     /**
      * Set isInherited value
      * @param bool $isInherited
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TextTemplateTypeExtDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TextTemplateTypeExtDTO
      */
     public function setIsInherited(?bool $isInherited = null): self
     {

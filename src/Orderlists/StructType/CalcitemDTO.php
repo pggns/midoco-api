@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -174,7 +174,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setCode(?string $code = null): self
     {
@@ -197,7 +197,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -220,7 +220,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set discountOfPtrItemId value
      * @param int $discountOfPtrItemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setDiscountOfPtrItemId(?int $discountOfPtrItemId = null): self
     {
@@ -243,7 +243,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set feeAssignId value
      * @param int $feeAssignId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setFeeAssignId(?int $feeAssignId = null): self
     {
@@ -266,7 +266,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set feeCategory value
      * @param string $feeCategory
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setFeeCategory(?string $feeCategory = null): self
     {
@@ -289,7 +289,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set feePercent value
      * @param float $feePercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setFeePercent(?float $feePercent = null): self
     {
@@ -312,7 +312,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set isAgencyFee value
      * @param bool $isAgencyFee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setIsAgencyFee(?bool $isAgencyFee = null): self
     {
@@ -335,7 +335,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set isFeeGroup value
      * @param bool $isFeeGroup
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setIsFeeGroup(?bool $isFeeGroup = null): self
     {
@@ -358,7 +358,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set isPercentValueRounded value
      * @param bool $isPercentValueRounded
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setIsPercentValueRounded(?bool $isPercentValueRounded = null): self
     {
@@ -381,7 +381,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set isReverseCharge value
      * @param bool $isReverseCharge
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setIsReverseCharge(?bool $isReverseCharge = null): self
     {
@@ -404,7 +404,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -427,7 +427,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set passengerAssignment value
      * @param int $passengerAssignment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setPassengerAssignment(?int $passengerAssignment = null): self
     {
@@ -450,7 +450,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -473,7 +473,7 @@ class CalcitemDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CalcitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

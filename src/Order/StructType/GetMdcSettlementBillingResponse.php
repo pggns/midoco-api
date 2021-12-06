@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMdcSettlementBillingRevenue
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingRevenueDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingRevenueDTO[]
      */
     protected ?array $MidocoMdcSettlementBillingRevenue = null;
     /**
@@ -28,7 +28,7 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMdcSettlementBillingOrder
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingOrderDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingOrderDTO[]
      */
     protected ?array $MidocoMdcSettlementBillingOrder = null;
     /**
@@ -37,7 +37,7 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMdcSettlementBillingBooking
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO[]
      */
     protected ?array $MidocoMdcSettlementBillingBooking = null;
     /**
@@ -46,7 +46,7 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMdcSettlementBillingFee
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingFeeDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingFeeDTO[]
      */
     protected ?array $MidocoMdcSettlementBillingFee = null;
     /**
@@ -55,7 +55,7 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMdcSettlementBillingMdoc
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingMdocDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingMdocDTO[]
      */
     protected ?array $MidocoMdcSettlementBillingMdoc = null;
     /**
@@ -64,7 +64,7 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMdcSettlementCharge
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO[]
      */
     protected ?array $MidocoMdcSettlementCharge = null;
     /**
@@ -81,12 +81,12 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
      * @uses GetMdcSettlementBillingResponse::setMidocoMdcSettlementBillingMdoc()
      * @uses GetMdcSettlementBillingResponse::setMidocoMdcSettlementCharge()
      * @uses GetMdcSettlementBillingResponse::setTotalChargeAmount()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingRevenueDTO[] $midocoMdcSettlementBillingRevenue
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingOrderDTO[] $midocoMdcSettlementBillingOrder
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO[] $midocoMdcSettlementBillingBooking
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingFeeDTO[] $midocoMdcSettlementBillingFee
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingMdocDTO[] $midocoMdcSettlementBillingMdoc
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO[] $midocoMdcSettlementCharge
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingRevenueDTO[] $midocoMdcSettlementBillingRevenue
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingOrderDTO[] $midocoMdcSettlementBillingOrder
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO[] $midocoMdcSettlementBillingBooking
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingFeeDTO[] $midocoMdcSettlementBillingFee
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingMdocDTO[] $midocoMdcSettlementBillingMdoc
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO[] $midocoMdcSettlementCharge
      * @param float $totalChargeAmount
      */
     public function __construct(?array $midocoMdcSettlementBillingRevenue = null, ?array $midocoMdcSettlementBillingOrder = null, ?array $midocoMdcSettlementBillingBooking = null, ?array $midocoMdcSettlementBillingFee = null, ?array $midocoMdcSettlementBillingMdoc = null, ?array $midocoMdcSettlementCharge = null, ?float $totalChargeAmount = null)
@@ -102,7 +102,7 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMdcSettlementBillingRevenue value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingRevenueDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingRevenueDTO[]
      */
     public function getMidocoMdcSettlementBillingRevenue(): ?array
     {
@@ -123,12 +123,12 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMdcSettlementBillingResponseMidocoMdcSettlementBillingRevenueItem) {
             // validation for constraint: itemType
-            if (!$getMdcSettlementBillingResponseMidocoMdcSettlementBillingRevenueItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingRevenueDTO) {
+            if (!$getMdcSettlementBillingResponseMidocoMdcSettlementBillingRevenueItem instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingRevenueDTO) {
                 $invalidValues[] = is_object($getMdcSettlementBillingResponseMidocoMdcSettlementBillingRevenueItem) ? get_class($getMdcSettlementBillingResponseMidocoMdcSettlementBillingRevenueItem) : sprintf('%s(%s)', gettype($getMdcSettlementBillingResponseMidocoMdcSettlementBillingRevenueItem), var_export($getMdcSettlementBillingResponseMidocoMdcSettlementBillingRevenueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMdcSettlementBillingRevenue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingRevenueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMdcSettlementBillingRevenue property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingRevenueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -137,8 +137,8 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     /**
      * Set MidocoMdcSettlementBillingRevenue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingRevenueDTO[] $midocoMdcSettlementBillingRevenue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingRevenueDTO[] $midocoMdcSettlementBillingRevenue
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse
      */
     public function setMidocoMdcSettlementBillingRevenue(?array $midocoMdcSettlementBillingRevenue = null): self
     {
@@ -153,14 +153,14 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     /**
      * Add item to MidocoMdcSettlementBillingRevenue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingRevenueDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingRevenueDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse
      */
-    public function addToMidocoMdcSettlementBillingRevenue(\Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingRevenueDTO $item): self
+    public function addToMidocoMdcSettlementBillingRevenue(\Pggns\MidocoApi\Order\StructType\MdcSettlementBillingRevenueDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingRevenueDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementBillingRevenue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingRevenueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingRevenueDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementBillingRevenue property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingRevenueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMdcSettlementBillingRevenue[] = $item;
         
@@ -168,7 +168,7 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMdcSettlementBillingOrder value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingOrderDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingOrderDTO[]
      */
     public function getMidocoMdcSettlementBillingOrder(): ?array
     {
@@ -189,12 +189,12 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMdcSettlementBillingResponseMidocoMdcSettlementBillingOrderItem) {
             // validation for constraint: itemType
-            if (!$getMdcSettlementBillingResponseMidocoMdcSettlementBillingOrderItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingOrderDTO) {
+            if (!$getMdcSettlementBillingResponseMidocoMdcSettlementBillingOrderItem instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingOrderDTO) {
                 $invalidValues[] = is_object($getMdcSettlementBillingResponseMidocoMdcSettlementBillingOrderItem) ? get_class($getMdcSettlementBillingResponseMidocoMdcSettlementBillingOrderItem) : sprintf('%s(%s)', gettype($getMdcSettlementBillingResponseMidocoMdcSettlementBillingOrderItem), var_export($getMdcSettlementBillingResponseMidocoMdcSettlementBillingOrderItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMdcSettlementBillingOrder property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingOrderDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMdcSettlementBillingOrder property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingOrderDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -203,8 +203,8 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     /**
      * Set MidocoMdcSettlementBillingOrder value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingOrderDTO[] $midocoMdcSettlementBillingOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingOrderDTO[] $midocoMdcSettlementBillingOrder
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse
      */
     public function setMidocoMdcSettlementBillingOrder(?array $midocoMdcSettlementBillingOrder = null): self
     {
@@ -219,14 +219,14 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     /**
      * Add item to MidocoMdcSettlementBillingOrder value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingOrderDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingOrderDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse
      */
-    public function addToMidocoMdcSettlementBillingOrder(\Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingOrderDTO $item): self
+    public function addToMidocoMdcSettlementBillingOrder(\Pggns\MidocoApi\Order\StructType\MdcSettlementBillingOrderDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingOrderDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementBillingOrder property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingOrderDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingOrderDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementBillingOrder property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingOrderDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMdcSettlementBillingOrder[] = $item;
         
@@ -234,7 +234,7 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMdcSettlementBillingBooking value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO[]
      */
     public function getMidocoMdcSettlementBillingBooking(): ?array
     {
@@ -255,12 +255,12 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMdcSettlementBillingResponseMidocoMdcSettlementBillingBookingItem) {
             // validation for constraint: itemType
-            if (!$getMdcSettlementBillingResponseMidocoMdcSettlementBillingBookingItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO) {
+            if (!$getMdcSettlementBillingResponseMidocoMdcSettlementBillingBookingItem instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO) {
                 $invalidValues[] = is_object($getMdcSettlementBillingResponseMidocoMdcSettlementBillingBookingItem) ? get_class($getMdcSettlementBillingResponseMidocoMdcSettlementBillingBookingItem) : sprintf('%s(%s)', gettype($getMdcSettlementBillingResponseMidocoMdcSettlementBillingBookingItem), var_export($getMdcSettlementBillingResponseMidocoMdcSettlementBillingBookingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMdcSettlementBillingBooking property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMdcSettlementBillingBooking property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -269,8 +269,8 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     /**
      * Set MidocoMdcSettlementBillingBooking value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO[] $midocoMdcSettlementBillingBooking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO[] $midocoMdcSettlementBillingBooking
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse
      */
     public function setMidocoMdcSettlementBillingBooking(?array $midocoMdcSettlementBillingBooking = null): self
     {
@@ -285,14 +285,14 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     /**
      * Add item to MidocoMdcSettlementBillingBooking value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse
      */
-    public function addToMidocoMdcSettlementBillingBooking(\Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO $item): self
+    public function addToMidocoMdcSettlementBillingBooking(\Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementBillingBooking property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingBookingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementBillingBooking property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingBookingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMdcSettlementBillingBooking[] = $item;
         
@@ -300,7 +300,7 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMdcSettlementBillingFee value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingFeeDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingFeeDTO[]
      */
     public function getMidocoMdcSettlementBillingFee(): ?array
     {
@@ -321,12 +321,12 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMdcSettlementBillingResponseMidocoMdcSettlementBillingFeeItem) {
             // validation for constraint: itemType
-            if (!$getMdcSettlementBillingResponseMidocoMdcSettlementBillingFeeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingFeeDTO) {
+            if (!$getMdcSettlementBillingResponseMidocoMdcSettlementBillingFeeItem instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingFeeDTO) {
                 $invalidValues[] = is_object($getMdcSettlementBillingResponseMidocoMdcSettlementBillingFeeItem) ? get_class($getMdcSettlementBillingResponseMidocoMdcSettlementBillingFeeItem) : sprintf('%s(%s)', gettype($getMdcSettlementBillingResponseMidocoMdcSettlementBillingFeeItem), var_export($getMdcSettlementBillingResponseMidocoMdcSettlementBillingFeeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMdcSettlementBillingFee property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingFeeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMdcSettlementBillingFee property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingFeeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -335,8 +335,8 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     /**
      * Set MidocoMdcSettlementBillingFee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingFeeDTO[] $midocoMdcSettlementBillingFee
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingFeeDTO[] $midocoMdcSettlementBillingFee
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse
      */
     public function setMidocoMdcSettlementBillingFee(?array $midocoMdcSettlementBillingFee = null): self
     {
@@ -351,14 +351,14 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     /**
      * Add item to MidocoMdcSettlementBillingFee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingFeeDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingFeeDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse
      */
-    public function addToMidocoMdcSettlementBillingFee(\Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingFeeDTO $item): self
+    public function addToMidocoMdcSettlementBillingFee(\Pggns\MidocoApi\Order\StructType\MdcSettlementBillingFeeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingFeeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementBillingFee property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingFeeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingFeeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementBillingFee property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingFeeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMdcSettlementBillingFee[] = $item;
         
@@ -366,7 +366,7 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMdcSettlementBillingMdoc value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingMdocDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingMdocDTO[]
      */
     public function getMidocoMdcSettlementBillingMdoc(): ?array
     {
@@ -387,12 +387,12 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMdcSettlementBillingResponseMidocoMdcSettlementBillingMdocItem) {
             // validation for constraint: itemType
-            if (!$getMdcSettlementBillingResponseMidocoMdcSettlementBillingMdocItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingMdocDTO) {
+            if (!$getMdcSettlementBillingResponseMidocoMdcSettlementBillingMdocItem instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingMdocDTO) {
                 $invalidValues[] = is_object($getMdcSettlementBillingResponseMidocoMdcSettlementBillingMdocItem) ? get_class($getMdcSettlementBillingResponseMidocoMdcSettlementBillingMdocItem) : sprintf('%s(%s)', gettype($getMdcSettlementBillingResponseMidocoMdcSettlementBillingMdocItem), var_export($getMdcSettlementBillingResponseMidocoMdcSettlementBillingMdocItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMdcSettlementBillingMdoc property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingMdocDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMdcSettlementBillingMdoc property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingMdocDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -401,8 +401,8 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     /**
      * Set MidocoMdcSettlementBillingMdoc value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingMdocDTO[] $midocoMdcSettlementBillingMdoc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingMdocDTO[] $midocoMdcSettlementBillingMdoc
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse
      */
     public function setMidocoMdcSettlementBillingMdoc(?array $midocoMdcSettlementBillingMdoc = null): self
     {
@@ -417,14 +417,14 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     /**
      * Add item to MidocoMdcSettlementBillingMdoc value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingMdocDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingMdocDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse
      */
-    public function addToMidocoMdcSettlementBillingMdoc(\Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingMdocDTO $item): self
+    public function addToMidocoMdcSettlementBillingMdoc(\Pggns\MidocoApi\Order\StructType\MdcSettlementBillingMdocDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingMdocDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementBillingMdoc property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementBillingMdocDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingMdocDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementBillingMdoc property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementBillingMdocDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMdcSettlementBillingMdoc[] = $item;
         
@@ -432,7 +432,7 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMdcSettlementCharge value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO[]
      */
     public function getMidocoMdcSettlementCharge(): ?array
     {
@@ -453,12 +453,12 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMdcSettlementBillingResponseMidocoMdcSettlementChargeItem) {
             // validation for constraint: itemType
-            if (!$getMdcSettlementBillingResponseMidocoMdcSettlementChargeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO) {
+            if (!$getMdcSettlementBillingResponseMidocoMdcSettlementChargeItem instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO) {
                 $invalidValues[] = is_object($getMdcSettlementBillingResponseMidocoMdcSettlementChargeItem) ? get_class($getMdcSettlementBillingResponseMidocoMdcSettlementChargeItem) : sprintf('%s(%s)', gettype($getMdcSettlementBillingResponseMidocoMdcSettlementChargeItem), var_export($getMdcSettlementBillingResponseMidocoMdcSettlementChargeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMdcSettlementCharge property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMdcSettlementCharge property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -467,8 +467,8 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     /**
      * Set MidocoMdcSettlementCharge value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO[] $midocoMdcSettlementCharge
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO[] $midocoMdcSettlementCharge
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse
      */
     public function setMidocoMdcSettlementCharge(?array $midocoMdcSettlementCharge = null): self
     {
@@ -483,14 +483,14 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     /**
      * Add item to MidocoMdcSettlementCharge value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse
      */
-    public function addToMidocoMdcSettlementCharge(\Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO $item): self
+    public function addToMidocoMdcSettlementCharge(\Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementCharge property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementCharge property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMdcSettlementCharge[] = $item;
         
@@ -507,7 +507,7 @@ class GetMdcSettlementBillingResponse extends AbstractStructBase
     /**
      * Set totalChargeAmount value
      * @param float $totalChargeAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMdcSettlementBillingResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse
      */
     public function setTotalChargeAmount(?float $totalChargeAmount = null): self
     {

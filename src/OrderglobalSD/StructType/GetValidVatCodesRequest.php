@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetValidVatCodesRequest extends AbstractStructBase
      * The MidocoVatDefinition
      * Meta information extracted from the WSDL
      * - ref: MidocoVatDefinition
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition|null
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition $MidocoVatDefinition = null;
+    protected ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition $MidocoVatDefinition = null;
     /**
      * The isOutputVat
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class GetValidVatCodesRequest extends AbstractStructBase
      * Constructor method for GetValidVatCodesRequest
      * @uses GetValidVatCodesRequest::setMidocoVatDefinition()
      * @uses GetValidVatCodesRequest::setIsOutputVat()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition $midocoVatDefinition
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition $midocoVatDefinition
      * @param bool $isOutputVat
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition $midocoVatDefinition = null, ?bool $isOutputVat = null)
+    public function __construct(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition $midocoVatDefinition = null, ?bool $isOutputVat = null)
     {
         $this
             ->setMidocoVatDefinition($midocoVatDefinition)
@@ -42,18 +42,18 @@ class GetValidVatCodesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoVatDefinition value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition|null
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition|null
      */
-    public function getMidocoVatDefinition(): ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition
+    public function getMidocoVatDefinition(): ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition
     {
         return $this->MidocoVatDefinition;
     }
     /**
      * Set MidocoVatDefinition value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition $midocoVatDefinition
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetValidVatCodesRequest
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition $midocoVatDefinition
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetValidVatCodesRequest
      */
-    public function setMidocoVatDefinition(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition $midocoVatDefinition = null): self
+    public function setMidocoVatDefinition(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition $midocoVatDefinition = null): self
     {
         $this->MidocoVatDefinition = $midocoVatDefinition;
         
@@ -70,7 +70,7 @@ class GetValidVatCodesRequest extends AbstractStructBase
     /**
      * Set isOutputVat value
      * @param bool $isOutputVat
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetValidVatCodesRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetValidVatCodesRequest
      */
     public function setIsOutputVat(?bool $isOutputVat = null): self
     {

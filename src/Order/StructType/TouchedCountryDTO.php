@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class TouchedCountryDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TouchedCountryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TouchedCountryDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -78,7 +78,7 @@ class TouchedCountryDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TouchedCountryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TouchedCountryDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -101,7 +101,7 @@ class TouchedCountryDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TouchedCountryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TouchedCountryDTO
      */
     public function setPosition(?int $position = null): self
     {

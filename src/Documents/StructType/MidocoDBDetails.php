@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -207,7 +207,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set auftrag value
      * @param string $auftrag
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setAuftrag(?string $auftrag = null): self
     {
@@ -230,7 +230,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set lstg value
      * @param string $lstg
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setLstg(?string $lstg = null): self
     {
@@ -253,7 +253,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set lstgId value
      * @param string $lstgId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setLstgId(?string $lstgId = null): self
     {
@@ -276,7 +276,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setText(?string $text = null): self
     {
@@ -299,7 +299,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set adapter value
      * @param string $adapter
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setAdapter(?string $adapter = null): self
     {
@@ -322,7 +322,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set personen value
      * @param string $personen
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setPersonen(?string $personen = null): self
     {
@@ -345,7 +345,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set erm value
      * @param string $erm
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setErm(?string $erm = null): self
     {
@@ -368,7 +368,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set tarifText value
      * @param string $tarifText
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setTarifText(?string $tarifText = null): self
     {
@@ -391,7 +391,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set departure value
      * @param string $departure
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setDeparture(?string $departure = null): self
     {
@@ -414,7 +414,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setDestination(?string $destination = null): self
     {
@@ -437,7 +437,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set returnDeparture value
      * @param string $returnDeparture
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setReturnDeparture(?string $returnDeparture = null): self
     {
@@ -460,7 +460,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set returnDestination value
      * @param string $returnDestination
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setReturnDestination(?string $returnDestination = null): self
     {
@@ -483,7 +483,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set companyCustomer value
      * @param string $companyCustomer
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setCompanyCustomer(?string $companyCustomer = null): self
     {
@@ -506,7 +506,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set trafficType value
      * @param string $trafficType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setTrafficType(?string $trafficType = null): self
     {
@@ -529,7 +529,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setCategory(?string $category = null): self
     {
@@ -552,7 +552,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set priceType value
      * @param string $priceType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setPriceType(?string $priceType = null): self
     {
@@ -575,7 +575,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set globalPrice value
      * @param string $globalPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setGlobalPrice(?string $globalPrice = null): self
     {
@@ -598,7 +598,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set direction value
      * @param string $direction
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setDirection(?string $direction = null): self
     {
@@ -621,7 +621,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set bookingClass value
      * @param string $bookingClass
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setBookingClass(?string $bookingClass = null): self
     {
@@ -644,7 +644,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set payment value
      * @param string $payment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setPayment(?string $payment = null): self
     {
@@ -667,7 +667,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setDate(?string $date = null): self
     {
@@ -690,7 +690,7 @@ class MidocoDBDetails extends AbstractStructBase
     /**
      * Set approvalCode value
      * @param string $approvalCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDBDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDBDetails
      */
     public function setApprovalCode(?string $approvalCode = null): self
     {

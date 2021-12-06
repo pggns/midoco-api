@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAttributeDefinitions4UserResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAttributeDefinition
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionType[]
      */
     protected ?array $MidocoAttributeDefinition = null;
     /**
      * Constructor method for GetAttributeDefinitions4UserResponse
      * @uses GetAttributeDefinitions4UserResponse::setMidocoAttributeDefinition()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionType[] $midocoAttributeDefinition
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionType[] $midocoAttributeDefinition
      */
     public function __construct(?array $midocoAttributeDefinition = null)
     {
@@ -34,7 +34,7 @@ class GetAttributeDefinitions4UserResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAttributeDefinition value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionType[]
      */
     public function getMidocoAttributeDefinition(): ?array
     {
@@ -55,12 +55,12 @@ class GetAttributeDefinitions4UserResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAttributeDefinitions4UserResponseMidocoAttributeDefinitionItem) {
             // validation for constraint: itemType
-            if (!$getAttributeDefinitions4UserResponseMidocoAttributeDefinitionItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionType) {
+            if (!$getAttributeDefinitions4UserResponseMidocoAttributeDefinitionItem instanceof \Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionType) {
                 $invalidValues[] = is_object($getAttributeDefinitions4UserResponseMidocoAttributeDefinitionItem) ? get_class($getAttributeDefinitions4UserResponseMidocoAttributeDefinitionItem) : sprintf('%s(%s)', gettype($getAttributeDefinitions4UserResponseMidocoAttributeDefinitionItem), var_export($getAttributeDefinitions4UserResponseMidocoAttributeDefinitionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAttributeDefinition property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAttributeDefinition property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAttributeDefinitions4UserResponse extends AbstractStructBase
     /**
      * Set MidocoAttributeDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionType[] $midocoAttributeDefinition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAttributeDefinitions4UserResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionType[] $midocoAttributeDefinition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAttributeDefinitions4UserResponse
      */
     public function setMidocoAttributeDefinition(?array $midocoAttributeDefinition = null): self
     {
@@ -85,14 +85,14 @@ class GetAttributeDefinitions4UserResponse extends AbstractStructBase
     /**
      * Add item to MidocoAttributeDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAttributeDefinitions4UserResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAttributeDefinitions4UserResponse
      */
-    public function addToMidocoAttributeDefinition(\Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionType $item): self
+    public function addToMidocoAttributeDefinition(\Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionType) {
-            throw new InvalidArgumentException(sprintf('The MidocoAttributeDefinition property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionType) {
+            throw new InvalidArgumentException(sprintf('The MidocoAttributeDefinition property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAttributeDefinition[] = $item;
         

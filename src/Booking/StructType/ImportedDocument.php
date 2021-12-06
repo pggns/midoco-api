@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -67,7 +67,7 @@ class ImportedDocument extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\ImportedDocument
+     * @return \Pggns\MidocoApi\Booking\StructType\ImportedDocument
      */
     public function setName(string $name): self
     {
@@ -90,7 +90,7 @@ class ImportedDocument extends AbstractStructBase
     /**
      * Set content value
      * @param string $content
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\ImportedDocument
+     * @return \Pggns\MidocoApi\Booking\StructType\ImportedDocument
      */
     public function setContent(?string $content = null): self
     {
@@ -113,7 +113,7 @@ class ImportedDocument extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\ImportedDocument
+     * @return \Pggns\MidocoApi\Booking\StructType\ImportedDocument
      */
     public function setDescription(?string $description = null): self
     {
@@ -136,7 +136,7 @@ class ImportedDocument extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\ImportedDocument
+     * @return \Pggns\MidocoApi\Booking\StructType\ImportedDocument
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {

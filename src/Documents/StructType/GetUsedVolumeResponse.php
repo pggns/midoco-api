@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetUsedVolumeResponse extends AbstractStructBase
      * The MidocoUsedVolume
      * Meta information extracted from the WSDL
      * - ref: MidocoUsedVolume
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO $MidocoUsedVolume = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO $MidocoUsedVolume = null;
     /**
      * Constructor method for GetUsedVolumeResponse
      * @uses GetUsedVolumeResponse::setMidocoUsedVolume()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO $midocoUsedVolume
+     * @param \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO $midocoUsedVolume
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO $midocoUsedVolume = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO $midocoUsedVolume = null)
     {
         $this
             ->setMidocoUsedVolume($midocoUsedVolume);
     }
     /**
      * Get MidocoUsedVolume value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO|null
      */
-    public function getMidocoUsedVolume(): ?\Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO
+    public function getMidocoUsedVolume(): ?\Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO
     {
         return $this->MidocoUsedVolume;
     }
     /**
      * Set MidocoUsedVolume value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO $midocoUsedVolume
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetUsedVolumeResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO $midocoUsedVolume
+     * @return \Pggns\MidocoApi\Documents\StructType\GetUsedVolumeResponse
      */
-    public function setMidocoUsedVolume(?\Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO $midocoUsedVolume = null): self
+    public function setMidocoUsedVolume(?\Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO $midocoUsedVolume = null): self
     {
         $this->MidocoUsedVolume = $midocoUsedVolume;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingRemark
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\BillingRemarkDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\BillingRemarkDTO[]
      */
     protected ?array $MidocoBillingRemark = null;
     /**
@@ -27,16 +27,16 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoBillingAttribute
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\BillingAttributeDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\BillingAttributeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\BillingAttributeDTO $MidocoBillingAttribute = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\BillingAttributeDTO $MidocoBillingAttribute = null;
     /**
      * The MidocoBillingVatCalculation
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingVatCalculation
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingVatCalculation[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoBillingVatCalculation[]
      */
     protected ?array $MidocoBillingVatCalculation = null;
     /**
@@ -45,7 +45,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingPosition
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionType[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionType[]
      */
     protected ?array $MidocoBillingPosition = null;
     /**
@@ -53,24 +53,24 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoBillingOnlinePayment
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingOnlinePayment|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoBillingOnlinePayment|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingOnlinePayment $MidocoBillingOnlinePayment = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoBillingOnlinePayment $MidocoBillingOnlinePayment = null;
     /**
      * The MidocoBillingAdvisedPayment
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoBillingAdvisedPayment
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\BillingAdvisedPaymentDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\BillingAdvisedPaymentDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\BillingAdvisedPaymentDTO $MidocoBillingAdvisedPayment = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\BillingAdvisedPaymentDTO $MidocoBillingAdvisedPayment = null;
     /**
      * The MidocoOrderBilling
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderBilling
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderBilling[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoOrderBilling[]
      */
     protected ?array $MidocoOrderBilling = null;
     /**
@@ -79,7 +79,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingPrint
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\BillingPrintDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\BillingPrintDTO[]
      */
     protected ?array $MidocoBillingPrint = null;
     /**
@@ -88,18 +88,18 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoEinvoiceDocument
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoEinvoiceDocument|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoEinvoiceDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoEinvoiceDocument $MidocoEinvoiceDocument = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoEinvoiceDocument $MidocoEinvoiceDocument = null;
     /**
      * The MidocoBillingEinvoice
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoBillingEinvoice
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingEinvoice|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoBillingEinvoice|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingEinvoice $MidocoBillingEinvoice = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoBillingEinvoice $MidocoBillingEinvoice = null;
     /**
      * The unitAlias
      * @var string|null
@@ -150,16 +150,16 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
      * @uses MidocoBillingDocumentType::setConfirmationGroup()
      * @uses MidocoBillingDocumentType::setStoreUntil()
      * @uses MidocoBillingDocumentType::setIsDraft()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\BillingRemarkDTO[] $midocoBillingRemark
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\BillingAttributeDTO $midocoBillingAttribute
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingVatCalculation[] $midocoBillingVatCalculation
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionType[] $midocoBillingPosition
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderBilling[] $midocoOrderBilling
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\BillingPrintDTO[] $midocoBillingPrint
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingEinvoice $midocoBillingEinvoice
+     * @param \Pggns\MidocoApi\Documents\StructType\BillingRemarkDTO[] $midocoBillingRemark
+     * @param \Pggns\MidocoApi\Documents\StructType\BillingAttributeDTO $midocoBillingAttribute
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBillingVatCalculation[] $midocoBillingVatCalculation
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionType[] $midocoBillingPosition
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment
+     * @param \Pggns\MidocoApi\Documents\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderBilling[] $midocoOrderBilling
+     * @param \Pggns\MidocoApi\Documents\StructType\BillingPrintDTO[] $midocoBillingPrint
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBillingEinvoice $midocoBillingEinvoice
      * @param string $unitAlias
      * @param int $dbiStatus
      * @param int $cancellationDocNo
@@ -167,7 +167,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
      * @param string $storeUntil
      * @param bool $isDraft
      */
-    public function __construct(?array $midocoBillingRemark = null, ?\Pggns\MidocoApi\Api\Documents\StructType\BillingAttributeDTO $midocoBillingAttribute = null, ?array $midocoBillingVatCalculation = null, ?array $midocoBillingPosition = null, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment = null, ?\Pggns\MidocoApi\Api\Documents\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment = null, ?array $midocoOrderBilling = null, ?array $midocoBillingPrint = null, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument = null, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingEinvoice $midocoBillingEinvoice = null, ?string $unitAlias = null, ?int $dbiStatus = null, ?int $cancellationDocNo = null, ?string $confirmationGroup = null, ?string $storeUntil = null, ?bool $isDraft = false)
+    public function __construct(?array $midocoBillingRemark = null, ?\Pggns\MidocoApi\Documents\StructType\BillingAttributeDTO $midocoBillingAttribute = null, ?array $midocoBillingVatCalculation = null, ?array $midocoBillingPosition = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment = null, ?\Pggns\MidocoApi\Documents\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment = null, ?array $midocoOrderBilling = null, ?array $midocoBillingPrint = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoBillingEinvoice $midocoBillingEinvoice = null, ?string $unitAlias = null, ?int $dbiStatus = null, ?int $cancellationDocNo = null, ?string $confirmationGroup = null, ?string $storeUntil = null, ?bool $isDraft = false)
     {
         $this
             ->setMidocoBillingRemark($midocoBillingRemark)
@@ -189,7 +189,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     }
     /**
      * Get MidocoBillingRemark value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BillingRemarkDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\BillingRemarkDTO[]
      */
     public function getMidocoBillingRemark(): ?array
     {
@@ -210,12 +210,12 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
         $invalidValues = [];
         foreach ($values as $midocoBillingDocumentTypeMidocoBillingRemarkItem) {
             // validation for constraint: itemType
-            if (!$midocoBillingDocumentTypeMidocoBillingRemarkItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\BillingRemarkDTO) {
+            if (!$midocoBillingDocumentTypeMidocoBillingRemarkItem instanceof \Pggns\MidocoApi\Documents\StructType\BillingRemarkDTO) {
                 $invalidValues[] = is_object($midocoBillingDocumentTypeMidocoBillingRemarkItem) ? get_class($midocoBillingDocumentTypeMidocoBillingRemarkItem) : sprintf('%s(%s)', gettype($midocoBillingDocumentTypeMidocoBillingRemarkItem), var_export($midocoBillingDocumentTypeMidocoBillingRemarkItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingRemark property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\BillingRemarkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingRemark property can only contain items of type \Pggns\MidocoApi\Documents\StructType\BillingRemarkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -224,8 +224,8 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Set MidocoBillingRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\BillingRemarkDTO[] $midocoBillingRemark
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\BillingRemarkDTO[] $midocoBillingRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
     public function setMidocoBillingRemark(?array $midocoBillingRemark = null): self
     {
@@ -240,14 +240,14 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Add item to MidocoBillingRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\BillingRemarkDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\BillingRemarkDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
-    public function addToMidocoBillingRemark(\Pggns\MidocoApi\Api\Documents\StructType\BillingRemarkDTO $item): self
+    public function addToMidocoBillingRemark(\Pggns\MidocoApi\Documents\StructType\BillingRemarkDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\BillingRemarkDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingRemark property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\BillingRemarkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\BillingRemarkDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingRemark property can only contain items of type \Pggns\MidocoApi\Documents\StructType\BillingRemarkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingRemark[] = $item;
         
@@ -255,18 +255,18 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     }
     /**
      * Get MidocoBillingAttribute value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BillingAttributeDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\BillingAttributeDTO|null
      */
-    public function getMidocoBillingAttribute(): ?\Pggns\MidocoApi\Api\Documents\StructType\BillingAttributeDTO
+    public function getMidocoBillingAttribute(): ?\Pggns\MidocoApi\Documents\StructType\BillingAttributeDTO
     {
         return $this->MidocoBillingAttribute;
     }
     /**
      * Set MidocoBillingAttribute value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\BillingAttributeDTO $midocoBillingAttribute
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\BillingAttributeDTO $midocoBillingAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
-    public function setMidocoBillingAttribute(?\Pggns\MidocoApi\Api\Documents\StructType\BillingAttributeDTO $midocoBillingAttribute = null): self
+    public function setMidocoBillingAttribute(?\Pggns\MidocoApi\Documents\StructType\BillingAttributeDTO $midocoBillingAttribute = null): self
     {
         $this->MidocoBillingAttribute = $midocoBillingAttribute;
         
@@ -274,7 +274,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     }
     /**
      * Get MidocoBillingVatCalculation value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingVatCalculation[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingVatCalculation[]
      */
     public function getMidocoBillingVatCalculation(): ?array
     {
@@ -295,12 +295,12 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
         $invalidValues = [];
         foreach ($values as $midocoBillingDocumentTypeMidocoBillingVatCalculationItem) {
             // validation for constraint: itemType
-            if (!$midocoBillingDocumentTypeMidocoBillingVatCalculationItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingVatCalculation) {
+            if (!$midocoBillingDocumentTypeMidocoBillingVatCalculationItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoBillingVatCalculation) {
                 $invalidValues[] = is_object($midocoBillingDocumentTypeMidocoBillingVatCalculationItem) ? get_class($midocoBillingDocumentTypeMidocoBillingVatCalculationItem) : sprintf('%s(%s)', gettype($midocoBillingDocumentTypeMidocoBillingVatCalculationItem), var_export($midocoBillingDocumentTypeMidocoBillingVatCalculationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingVatCalculation property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingVatCalculation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingVatCalculation property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoBillingVatCalculation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -309,8 +309,8 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Set MidocoBillingVatCalculation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingVatCalculation[] $midocoBillingVatCalculation
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBillingVatCalculation[] $midocoBillingVatCalculation
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
     public function setMidocoBillingVatCalculation(?array $midocoBillingVatCalculation = null): self
     {
@@ -325,14 +325,14 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Add item to MidocoBillingVatCalculation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingVatCalculation $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBillingVatCalculation $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
-    public function addToMidocoBillingVatCalculation(\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingVatCalculation $item): self
+    public function addToMidocoBillingVatCalculation(\Pggns\MidocoApi\Documents\StructType\MidocoBillingVatCalculation $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingVatCalculation) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingVatCalculation property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingVatCalculation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoBillingVatCalculation) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingVatCalculation property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoBillingVatCalculation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingVatCalculation[] = $item;
         
@@ -340,7 +340,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     }
     /**
      * Get MidocoBillingPosition value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionType[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionType[]
      */
     public function getMidocoBillingPosition(): ?array
     {
@@ -361,12 +361,12 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
         $invalidValues = [];
         foreach ($values as $midocoBillingDocumentTypeMidocoBillingPositionItem) {
             // validation for constraint: itemType
-            if (!$midocoBillingDocumentTypeMidocoBillingPositionItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionType) {
+            if (!$midocoBillingDocumentTypeMidocoBillingPositionItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionType) {
                 $invalidValues[] = is_object($midocoBillingDocumentTypeMidocoBillingPositionItem) ? get_class($midocoBillingDocumentTypeMidocoBillingPositionItem) : sprintf('%s(%s)', gettype($midocoBillingDocumentTypeMidocoBillingPositionItem), var_export($midocoBillingDocumentTypeMidocoBillingPositionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingPosition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingPosition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -375,8 +375,8 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Set MidocoBillingPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionType[] $midocoBillingPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionType[] $midocoBillingPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
     public function setMidocoBillingPosition(?array $midocoBillingPosition = null): self
     {
@@ -391,14 +391,14 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Add item to MidocoBillingPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionType $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionType $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
-    public function addToMidocoBillingPosition(\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionType $item): self
+    public function addToMidocoBillingPosition(\Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionType) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingPosition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionType) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingPosition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingPosition[] = $item;
         
@@ -406,18 +406,18 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     }
     /**
      * Get MidocoBillingOnlinePayment value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingOnlinePayment|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingOnlinePayment|null
      */
-    public function getMidocoBillingOnlinePayment(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingOnlinePayment
+    public function getMidocoBillingOnlinePayment(): ?\Pggns\MidocoApi\Documents\StructType\MidocoBillingOnlinePayment
     {
         return $this->MidocoBillingOnlinePayment;
     }
     /**
      * Set MidocoBillingOnlinePayment value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
-    public function setMidocoBillingOnlinePayment(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment = null): self
+    public function setMidocoBillingOnlinePayment(?\Pggns\MidocoApi\Documents\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment = null): self
     {
         $this->MidocoBillingOnlinePayment = $midocoBillingOnlinePayment;
         
@@ -425,18 +425,18 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     }
     /**
      * Get MidocoBillingAdvisedPayment value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BillingAdvisedPaymentDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\BillingAdvisedPaymentDTO|null
      */
-    public function getMidocoBillingAdvisedPayment(): ?\Pggns\MidocoApi\Api\Documents\StructType\BillingAdvisedPaymentDTO
+    public function getMidocoBillingAdvisedPayment(): ?\Pggns\MidocoApi\Documents\StructType\BillingAdvisedPaymentDTO
     {
         return $this->MidocoBillingAdvisedPayment;
     }
     /**
      * Set MidocoBillingAdvisedPayment value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
-    public function setMidocoBillingAdvisedPayment(?\Pggns\MidocoApi\Api\Documents\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment = null): self
+    public function setMidocoBillingAdvisedPayment(?\Pggns\MidocoApi\Documents\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment = null): self
     {
         $this->MidocoBillingAdvisedPayment = $midocoBillingAdvisedPayment;
         
@@ -444,7 +444,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     }
     /**
      * Get MidocoOrderBilling value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderBilling[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderBilling[]
      */
     public function getMidocoOrderBilling(): ?array
     {
@@ -465,12 +465,12 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
         $invalidValues = [];
         foreach ($values as $midocoBillingDocumentTypeMidocoOrderBillingItem) {
             // validation for constraint: itemType
-            if (!$midocoBillingDocumentTypeMidocoOrderBillingItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderBilling) {
+            if (!$midocoBillingDocumentTypeMidocoOrderBillingItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoOrderBilling) {
                 $invalidValues[] = is_object($midocoBillingDocumentTypeMidocoOrderBillingItem) ? get_class($midocoBillingDocumentTypeMidocoOrderBillingItem) : sprintf('%s(%s)', gettype($midocoBillingDocumentTypeMidocoOrderBillingItem), var_export($midocoBillingDocumentTypeMidocoOrderBillingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderBilling property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderBilling, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderBilling property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoOrderBilling, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -479,8 +479,8 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Set MidocoOrderBilling value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderBilling[] $midocoOrderBilling
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderBilling[] $midocoOrderBilling
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
     public function setMidocoOrderBilling(?array $midocoOrderBilling = null): self
     {
@@ -495,14 +495,14 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Add item to MidocoOrderBilling value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderBilling $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderBilling $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
-    public function addToMidocoOrderBilling(\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderBilling $item): self
+    public function addToMidocoOrderBilling(\Pggns\MidocoApi\Documents\StructType\MidocoOrderBilling $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderBilling) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderBilling property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderBilling, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoOrderBilling) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderBilling property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoOrderBilling, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderBilling[] = $item;
         
@@ -510,7 +510,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     }
     /**
      * Get MidocoBillingPrint value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BillingPrintDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\BillingPrintDTO[]
      */
     public function getMidocoBillingPrint(): ?array
     {
@@ -531,12 +531,12 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
         $invalidValues = [];
         foreach ($values as $midocoBillingDocumentTypeMidocoBillingPrintItem) {
             // validation for constraint: itemType
-            if (!$midocoBillingDocumentTypeMidocoBillingPrintItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\BillingPrintDTO) {
+            if (!$midocoBillingDocumentTypeMidocoBillingPrintItem instanceof \Pggns\MidocoApi\Documents\StructType\BillingPrintDTO) {
                 $invalidValues[] = is_object($midocoBillingDocumentTypeMidocoBillingPrintItem) ? get_class($midocoBillingDocumentTypeMidocoBillingPrintItem) : sprintf('%s(%s)', gettype($midocoBillingDocumentTypeMidocoBillingPrintItem), var_export($midocoBillingDocumentTypeMidocoBillingPrintItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingPrint property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\BillingPrintDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingPrint property can only contain items of type \Pggns\MidocoApi\Documents\StructType\BillingPrintDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -545,8 +545,8 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Set MidocoBillingPrint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\BillingPrintDTO[] $midocoBillingPrint
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\BillingPrintDTO[] $midocoBillingPrint
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
     public function setMidocoBillingPrint(?array $midocoBillingPrint = null): self
     {
@@ -561,14 +561,14 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Add item to MidocoBillingPrint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\BillingPrintDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\BillingPrintDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
-    public function addToMidocoBillingPrint(\Pggns\MidocoApi\Api\Documents\StructType\BillingPrintDTO $item): self
+    public function addToMidocoBillingPrint(\Pggns\MidocoApi\Documents\StructType\BillingPrintDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\BillingPrintDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingPrint property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\BillingPrintDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\BillingPrintDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingPrint property can only contain items of type \Pggns\MidocoApi\Documents\StructType\BillingPrintDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingPrint[] = $item;
         
@@ -576,18 +576,18 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     }
     /**
      * Get MidocoEinvoiceDocument value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoEinvoiceDocument|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoEinvoiceDocument|null
      */
-    public function getMidocoEinvoiceDocument(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoEinvoiceDocument
+    public function getMidocoEinvoiceDocument(): ?\Pggns\MidocoApi\Documents\StructType\MidocoEinvoiceDocument
     {
         return $this->MidocoEinvoiceDocument;
     }
     /**
      * Set MidocoEinvoiceDocument value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
-    public function setMidocoEinvoiceDocument(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument = null): self
+    public function setMidocoEinvoiceDocument(?\Pggns\MidocoApi\Documents\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument = null): self
     {
         $this->MidocoEinvoiceDocument = $midocoEinvoiceDocument;
         
@@ -595,18 +595,18 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     }
     /**
      * Get MidocoBillingEinvoice value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingEinvoice|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingEinvoice|null
      */
-    public function getMidocoBillingEinvoice(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingEinvoice
+    public function getMidocoBillingEinvoice(): ?\Pggns\MidocoApi\Documents\StructType\MidocoBillingEinvoice
     {
         return $this->MidocoBillingEinvoice;
     }
     /**
      * Set MidocoBillingEinvoice value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingEinvoice $midocoBillingEinvoice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBillingEinvoice $midocoBillingEinvoice
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
-    public function setMidocoBillingEinvoice(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingEinvoice $midocoBillingEinvoice = null): self
+    public function setMidocoBillingEinvoice(?\Pggns\MidocoApi\Documents\StructType\MidocoBillingEinvoice $midocoBillingEinvoice = null): self
     {
         $this->MidocoBillingEinvoice = $midocoBillingEinvoice;
         
@@ -623,7 +623,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Set unitAlias value
      * @param string $unitAlias
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
     public function setUnitAlias(?string $unitAlias = null): self
     {
@@ -646,7 +646,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Set dbiStatus value
      * @param int $dbiStatus
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
     public function setDbiStatus(?int $dbiStatus = null): self
     {
@@ -669,7 +669,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Set cancellationDocNo value
      * @param int $cancellationDocNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
     public function setCancellationDocNo(?int $cancellationDocNo = null): self
     {
@@ -692,7 +692,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Set confirmationGroup value
      * @param string $confirmationGroup
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
     public function setConfirmationGroup(?string $confirmationGroup = null): self
     {
@@ -715,7 +715,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {
@@ -738,7 +738,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     /**
      * Set isDraft value
      * @param bool $isDraft
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocumentType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocumentType
      */
     public function setIsDraft(?bool $isDraft = false): self
     {

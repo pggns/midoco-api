@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteSupplierTraveltypeRequest extends AbstractStructBase
      * The MidocoSupplierTraveltype
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierTraveltype
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO $MidocoSupplierTraveltype = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO $MidocoSupplierTraveltype = null;
     /**
      * Constructor method for DeleteSupplierTraveltypeRequest
      * @uses DeleteSupplierTraveltypeRequest::setMidocoSupplierTraveltype()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO $midocoSupplierTraveltype
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO $midocoSupplierTraveltype
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO $midocoSupplierTraveltype = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO $midocoSupplierTraveltype = null)
     {
         $this
             ->setMidocoSupplierTraveltype($midocoSupplierTraveltype);
     }
     /**
      * Get MidocoSupplierTraveltype value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO|null
      */
-    public function getMidocoSupplierTraveltype(): ?\Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO
+    public function getMidocoSupplierTraveltype(): ?\Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO
     {
         return $this->MidocoSupplierTraveltype;
     }
     /**
      * Set MidocoSupplierTraveltype value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO $midocoSupplierTraveltype
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierTraveltypeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO $midocoSupplierTraveltype
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSupplierTraveltypeRequest
      */
-    public function setMidocoSupplierTraveltype(?\Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO $midocoSupplierTraveltype = null): self
+    public function setMidocoSupplierTraveltype(?\Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO $midocoSupplierTraveltype = null): self
     {
         $this->MidocoSupplierTraveltype = $midocoSupplierTraveltype;
         

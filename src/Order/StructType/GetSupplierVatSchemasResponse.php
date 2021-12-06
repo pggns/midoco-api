@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSupplierVatSchemasResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierVatSchema
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SupplierVatSchemaDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\SupplierVatSchemaDTO[]
      */
     protected ?array $MidocoSupplierVatSchema = null;
     /**
      * Constructor method for GetSupplierVatSchemasResponse
      * @uses GetSupplierVatSchemasResponse::setMidocoSupplierVatSchema()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierVatSchemaDTO[] $midocoSupplierVatSchema
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierVatSchemaDTO[] $midocoSupplierVatSchema
      */
     public function __construct(?array $midocoSupplierVatSchema = null)
     {
@@ -34,7 +34,7 @@ class GetSupplierVatSchemasResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierVatSchema value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierVatSchemaDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierVatSchemaDTO[]
      */
     public function getMidocoSupplierVatSchema(): ?array
     {
@@ -55,12 +55,12 @@ class GetSupplierVatSchemasResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSupplierVatSchemasResponseMidocoSupplierVatSchemaItem) {
             // validation for constraint: itemType
-            if (!$getSupplierVatSchemasResponseMidocoSupplierVatSchemaItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplierVatSchemaDTO) {
+            if (!$getSupplierVatSchemasResponseMidocoSupplierVatSchemaItem instanceof \Pggns\MidocoApi\Order\StructType\SupplierVatSchemaDTO) {
                 $invalidValues[] = is_object($getSupplierVatSchemasResponseMidocoSupplierVatSchemaItem) ? get_class($getSupplierVatSchemasResponseMidocoSupplierVatSchemaItem) : sprintf('%s(%s)', gettype($getSupplierVatSchemasResponseMidocoSupplierVatSchemaItem), var_export($getSupplierVatSchemasResponseMidocoSupplierVatSchemaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierVatSchema property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplierVatSchemaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierVatSchema property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplierVatSchemaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSupplierVatSchemasResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierVatSchema value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierVatSchemaDTO[] $midocoSupplierVatSchema
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierVatSchemasResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierVatSchemaDTO[] $midocoSupplierVatSchema
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierVatSchemasResponse
      */
     public function setMidocoSupplierVatSchema(?array $midocoSupplierVatSchema = null): self
     {
@@ -85,14 +85,14 @@ class GetSupplierVatSchemasResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierVatSchema value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierVatSchemaDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierVatSchemasResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierVatSchemaDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierVatSchemasResponse
      */
-    public function addToMidocoSupplierVatSchema(\Pggns\MidocoApi\Api\Order\StructType\SupplierVatSchemaDTO $item): self
+    public function addToMidocoSupplierVatSchema(\Pggns\MidocoApi\Order\StructType\SupplierVatSchemaDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplierVatSchemaDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierVatSchema property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplierVatSchemaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SupplierVatSchemaDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierVatSchema property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplierVatSchemaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierVatSchema[] = $item;
         

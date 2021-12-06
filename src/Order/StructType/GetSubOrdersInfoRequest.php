@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class GetSubOrdersInfoRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSubOrdersInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSubOrdersInfoRequest
      */
     public function setOrderId(int $orderId): self
     {
@@ -80,7 +80,7 @@ class GetSubOrdersInfoRequest extends AbstractStructBase
     /**
      * Set isSubOrder value
      * @param bool $isSubOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSubOrdersInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSubOrdersInfoRequest
      */
     public function setIsSubOrder(?bool $isSubOrder = null): self
     {
@@ -103,7 +103,7 @@ class GetSubOrdersInfoRequest extends AbstractStructBase
     /**
      * Set containsTravelNoItems value
      * @param bool $containsTravelNoItems
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSubOrdersInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSubOrdersInfoRequest
      */
     public function setContainsTravelNoItems(?bool $containsTravelNoItems = null): self
     {

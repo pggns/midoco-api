@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetDebitCardTypesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDebitCardType
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\DebitCardTypeDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\DebitCardTypeDTO[]
      */
     protected ?array $MidocoDebitCardType = null;
     /**
      * Constructor method for GetDebitCardTypesResponse
      * @uses GetDebitCardTypesResponse::setMidocoDebitCardType()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\DebitCardTypeDTO[] $midocoDebitCardType
+     * @param \Pggns\MidocoApi\Crm\StructType\DebitCardTypeDTO[] $midocoDebitCardType
      */
     public function __construct(?array $midocoDebitCardType = null)
     {
@@ -34,7 +34,7 @@ class GetDebitCardTypesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDebitCardType value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DebitCardTypeDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\DebitCardTypeDTO[]
      */
     public function getMidocoDebitCardType(): ?array
     {
@@ -55,12 +55,12 @@ class GetDebitCardTypesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDebitCardTypesResponseMidocoDebitCardTypeItem) {
             // validation for constraint: itemType
-            if (!$getDebitCardTypesResponseMidocoDebitCardTypeItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\DebitCardTypeDTO) {
+            if (!$getDebitCardTypesResponseMidocoDebitCardTypeItem instanceof \Pggns\MidocoApi\Crm\StructType\DebitCardTypeDTO) {
                 $invalidValues[] = is_object($getDebitCardTypesResponseMidocoDebitCardTypeItem) ? get_class($getDebitCardTypesResponseMidocoDebitCardTypeItem) : sprintf('%s(%s)', gettype($getDebitCardTypesResponseMidocoDebitCardTypeItem), var_export($getDebitCardTypesResponseMidocoDebitCardTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDebitCardType property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\DebitCardTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDebitCardType property can only contain items of type \Pggns\MidocoApi\Crm\StructType\DebitCardTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetDebitCardTypesResponse extends AbstractStructBase
     /**
      * Set MidocoDebitCardType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\DebitCardTypeDTO[] $midocoDebitCardType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDebitCardTypesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\DebitCardTypeDTO[] $midocoDebitCardType
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDebitCardTypesResponse
      */
     public function setMidocoDebitCardType(?array $midocoDebitCardType = null): self
     {
@@ -85,14 +85,14 @@ class GetDebitCardTypesResponse extends AbstractStructBase
     /**
      * Add item to MidocoDebitCardType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\DebitCardTypeDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDebitCardTypesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\DebitCardTypeDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDebitCardTypesResponse
      */
-    public function addToMidocoDebitCardType(\Pggns\MidocoApi\Api\Crm\StructType\DebitCardTypeDTO $item): self
+    public function addToMidocoDebitCardType(\Pggns\MidocoApi\Crm\StructType\DebitCardTypeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\DebitCardTypeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoDebitCardType property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\DebitCardTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\DebitCardTypeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoDebitCardType property can only contain items of type \Pggns\MidocoApi\Crm\StructType\DebitCardTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDebitCardType[] = $item;
         

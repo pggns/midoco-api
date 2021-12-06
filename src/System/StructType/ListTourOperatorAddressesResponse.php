@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListTourOperatorAddressesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTourOperatorAddress
-     * @var \Pggns\MidocoApi\Api\System\StructType\MidocoTourOperatorAddress[]
+     * @var \Pggns\MidocoApi\System\StructType\MidocoTourOperatorAddress[]
      */
     protected ?array $MidocoTourOperatorAddress = null;
     /**
      * Constructor method for ListTourOperatorAddressesResponse
      * @uses ListTourOperatorAddressesResponse::setMidocoTourOperatorAddress()
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoTourOperatorAddress[] $midocoTourOperatorAddress
+     * @param \Pggns\MidocoApi\System\StructType\MidocoTourOperatorAddress[] $midocoTourOperatorAddress
      */
     public function __construct(?array $midocoTourOperatorAddress = null)
     {
@@ -34,7 +34,7 @@ class ListTourOperatorAddressesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTourOperatorAddress value
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoTourOperatorAddress[]
+     * @return \Pggns\MidocoApi\System\StructType\MidocoTourOperatorAddress[]
      */
     public function getMidocoTourOperatorAddress(): ?array
     {
@@ -55,12 +55,12 @@ class ListTourOperatorAddressesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listTourOperatorAddressesResponseMidocoTourOperatorAddressItem) {
             // validation for constraint: itemType
-            if (!$listTourOperatorAddressesResponseMidocoTourOperatorAddressItem instanceof \Pggns\MidocoApi\Api\System\StructType\MidocoTourOperatorAddress) {
+            if (!$listTourOperatorAddressesResponseMidocoTourOperatorAddressItem instanceof \Pggns\MidocoApi\System\StructType\MidocoTourOperatorAddress) {
                 $invalidValues[] = is_object($listTourOperatorAddressesResponseMidocoTourOperatorAddressItem) ? get_class($listTourOperatorAddressesResponseMidocoTourOperatorAddressItem) : sprintf('%s(%s)', gettype($listTourOperatorAddressesResponseMidocoTourOperatorAddressItem), var_export($listTourOperatorAddressesResponseMidocoTourOperatorAddressItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTourOperatorAddress property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\MidocoTourOperatorAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTourOperatorAddress property can only contain items of type \Pggns\MidocoApi\System\StructType\MidocoTourOperatorAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListTourOperatorAddressesResponse extends AbstractStructBase
     /**
      * Set MidocoTourOperatorAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoTourOperatorAddress[] $midocoTourOperatorAddress
-     * @return \Pggns\MidocoApi\Api\System\StructType\ListTourOperatorAddressesResponse
+     * @param \Pggns\MidocoApi\System\StructType\MidocoTourOperatorAddress[] $midocoTourOperatorAddress
+     * @return \Pggns\MidocoApi\System\StructType\ListTourOperatorAddressesResponse
      */
     public function setMidocoTourOperatorAddress(?array $midocoTourOperatorAddress = null): self
     {
@@ -85,14 +85,14 @@ class ListTourOperatorAddressesResponse extends AbstractStructBase
     /**
      * Add item to MidocoTourOperatorAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoTourOperatorAddress $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\ListTourOperatorAddressesResponse
+     * @param \Pggns\MidocoApi\System\StructType\MidocoTourOperatorAddress $item
+     * @return \Pggns\MidocoApi\System\StructType\ListTourOperatorAddressesResponse
      */
-    public function addToMidocoTourOperatorAddress(\Pggns\MidocoApi\Api\System\StructType\MidocoTourOperatorAddress $item): self
+    public function addToMidocoTourOperatorAddress(\Pggns\MidocoApi\System\StructType\MidocoTourOperatorAddress $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\MidocoTourOperatorAddress) {
-            throw new InvalidArgumentException(sprintf('The MidocoTourOperatorAddress property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\MidocoTourOperatorAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\MidocoTourOperatorAddress) {
+            throw new InvalidArgumentException(sprintf('The MidocoTourOperatorAddress property can only contain items of type \Pggns\MidocoApi\System\StructType\MidocoTourOperatorAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTourOperatorAddress[] = $item;
         

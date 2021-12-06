@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class SaveCcProxyTargetRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - ref: MidocoCcProxyTarget
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCcProxyTarget|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCcProxyTarget|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCcProxyTarget $MidocoCcProxyTarget = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoCcProxyTarget $MidocoCcProxyTarget = null;
     /**
      * Constructor method for SaveCcProxyTargetRequest
      * @uses SaveCcProxyTargetRequest::setMidocoCcProxyTarget()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCcProxyTarget $midocoCcProxyTarget
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCcProxyTarget $midocoCcProxyTarget
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCcProxyTarget $midocoCcProxyTarget = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoCcProxyTarget $midocoCcProxyTarget = null)
     {
         $this
             ->setMidocoCcProxyTarget($midocoCcProxyTarget);
     }
     /**
      * Get MidocoCcProxyTarget value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCcProxyTarget|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCcProxyTarget|null
      */
-    public function getMidocoCcProxyTarget(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCcProxyTarget
+    public function getMidocoCcProxyTarget(): ?\Pggns\MidocoApi\Order\StructType\MidocoCcProxyTarget
     {
         return $this->MidocoCcProxyTarget;
     }
     /**
      * Set MidocoCcProxyTarget value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCcProxyTarget $midocoCcProxyTarget
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveCcProxyTargetRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCcProxyTarget $midocoCcProxyTarget
+     * @return \Pggns\MidocoApi\Order\StructType\SaveCcProxyTargetRequest
      */
-    public function setMidocoCcProxyTarget(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCcProxyTarget $midocoCcProxyTarget = null): self
+    public function setMidocoCcProxyTarget(?\Pggns\MidocoApi\Order\StructType\MidocoCcProxyTarget $midocoCcProxyTarget = null): self
     {
         $this->MidocoCcProxyTarget = $midocoCcProxyTarget;
         

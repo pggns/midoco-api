@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class MidocoCommunicationHistory extends CommunicationHistoryDTO
      * Set Ids value
      * @throws InvalidArgumentException
      * @param int[] $ids
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory
      */
     public function setIds(?array $ids = null): self
     {
@@ -85,7 +85,7 @@ class MidocoCommunicationHistory extends CommunicationHistoryDTO
      * Add item to Ids value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory
      */
     public function addToIds(int $item): self
     {

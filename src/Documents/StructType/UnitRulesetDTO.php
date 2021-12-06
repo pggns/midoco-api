@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class UnitRulesetDTO extends AbstractStructBase
     /**
      * Set rulesetId value
      * @param int $rulesetId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UnitRulesetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UnitRulesetDTO
      */
     public function setRulesetId(?int $rulesetId = null): self
     {
@@ -70,7 +70,7 @@ class UnitRulesetDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UnitRulesetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UnitRulesetDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class GetCurrencyByISOCodeResponse extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoCurrency
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO|null
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO $MidocoCurrency = null;
+    protected ?\Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO $MidocoCurrency = null;
     /**
      * Constructor method for GetCurrencyByISOCodeResponse
      * @uses GetCurrencyByISOCodeResponse::setMidocoCurrency()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO $midocoCurrency
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO $midocoCurrency
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO $midocoCurrency = null)
+    public function __construct(?\Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO $midocoCurrency = null)
     {
         $this
             ->setMidocoCurrency($midocoCurrency);
     }
     /**
      * Get MidocoCurrency value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO|null
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO|null
      */
-    public function getMidocoCurrency(): ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO
+    public function getMidocoCurrency(): ?\Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO
     {
         return $this->MidocoCurrency;
     }
     /**
      * Set MidocoCurrency value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO $midocoCurrency
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyByISOCodeResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO $midocoCurrency
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyByISOCodeResponse
      */
-    public function setMidocoCurrency(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO $midocoCurrency = null): self
+    public function setMidocoCurrency(?\Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO $midocoCurrency = null): self
     {
         $this->MidocoCurrency = $midocoCurrency;
         

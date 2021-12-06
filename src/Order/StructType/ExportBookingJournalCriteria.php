@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class ExportBookingJournalCriteria extends AbstractStructBase
     /**
      * Set booking_year value
      * @param int $booking_year
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalCriteria
      */
     public function setBooking_year(?int $booking_year = null): self
     {
@@ -126,7 +126,7 @@ class ExportBookingJournalCriteria extends AbstractStructBase
     /**
      * Set booking_period value
      * @param int $booking_period
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalCriteria
      */
     public function setBooking_period(?int $booking_period = null): self
     {
@@ -149,7 +149,7 @@ class ExportBookingJournalCriteria extends AbstractStructBase
     /**
      * Set to_date value
      * @param string $to_date
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalCriteria
      */
     public function setTo_date(?string $to_date = null): self
     {
@@ -172,7 +172,7 @@ class ExportBookingJournalCriteria extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalCriteria
      */
     public function setComment(?string $comment = null): self
     {
@@ -195,7 +195,7 @@ class ExportBookingJournalCriteria extends AbstractStructBase
     /**
      * Set export_future value
      * @param bool $export_future
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalCriteria
      */
     public function setExport_future(?bool $export_future = null): self
     {
@@ -218,7 +218,7 @@ class ExportBookingJournalCriteria extends AbstractStructBase
     /**
      * Set export_period_only value
      * @param bool $export_period_only
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalCriteria
      */
     public function setExport_period_only(?bool $export_period_only = null): self
     {
@@ -241,7 +241,7 @@ class ExportBookingJournalCriteria extends AbstractStructBase
     /**
      * Set account_ids value
      * @param string $account_ids
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalCriteria
      */
     public function setAccount_ids(?string $account_ids = null): self
     {
@@ -264,7 +264,7 @@ class ExportBookingJournalCriteria extends AbstractStructBase
     /**
      * Set account_types value
      * @param string $account_types
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalCriteria
      */
     public function setAccount_types(?string $account_types = null): self
     {
@@ -287,7 +287,7 @@ class ExportBookingJournalCriteria extends AbstractStructBase
     /**
      * Set from_date value
      * @param string $from_date
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalCriteria
      */
     public function setFrom_date(?string $from_date = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class SellItemSavingDTO extends AbstractStructBase
     /**
      * Set airlineLowestFare value
      * @param string $airlineLowestFare
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemSavingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemSavingDTO
      */
     public function setAirlineLowestFare(?string $airlineLowestFare = null): self
     {
@@ -134,7 +134,7 @@ class SellItemSavingDTO extends AbstractStructBase
     /**
      * Set detailsAssign value
      * @param string $detailsAssign
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemSavingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemSavingDTO
      */
     public function setDetailsAssign(?string $detailsAssign = null): self
     {
@@ -157,7 +157,7 @@ class SellItemSavingDTO extends AbstractStructBase
     /**
      * Set highestFare value
      * @param float $highestFare
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemSavingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemSavingDTO
      */
     public function setHighestFare(?float $highestFare = null): self
     {
@@ -180,7 +180,7 @@ class SellItemSavingDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemSavingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemSavingDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -203,7 +203,7 @@ class SellItemSavingDTO extends AbstractStructBase
     /**
      * Set lowestFare value
      * @param float $lowestFare
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemSavingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemSavingDTO
      */
     public function setLowestFare(?float $lowestFare = null): self
     {
@@ -226,7 +226,7 @@ class SellItemSavingDTO extends AbstractStructBase
     /**
      * Set manual value
      * @param bool $manual
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemSavingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemSavingDTO
      */
     public function setManual(?bool $manual = null): self
     {
@@ -249,7 +249,7 @@ class SellItemSavingDTO extends AbstractStructBase
     /**
      * Set reasonCode value
      * @param string $reasonCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemSavingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemSavingDTO
      */
     public function setReasonCode(?string $reasonCode = null): self
     {
@@ -272,7 +272,7 @@ class SellItemSavingDTO extends AbstractStructBase
     /**
      * Set reasonCode2 value
      * @param string $reasonCode2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemSavingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemSavingDTO
      */
     public function setReasonCode2(?string $reasonCode2 = null): self
     {
@@ -295,7 +295,7 @@ class SellItemSavingDTO extends AbstractStructBase
     /**
      * Set savingId value
      * @param int $savingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemSavingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemSavingDTO
      */
     public function setSavingId(?int $savingId = null): self
     {
@@ -318,7 +318,7 @@ class SellItemSavingDTO extends AbstractStructBase
     /**
      * Set tarifCode value
      * @param string $tarifCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemSavingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemSavingDTO
      */
     public function setTarifCode(?string $tarifCode = null): self
     {

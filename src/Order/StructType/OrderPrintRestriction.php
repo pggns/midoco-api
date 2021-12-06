@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class OrderPrintRestriction extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: SellItemPrintRestriction
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintRestriction[]
+     * @var \Pggns\MidocoApi\Order\StructType\SellItemPrintRestriction[]
      */
     protected ?array $SellItemPrintRestriction = null;
     /**
@@ -61,7 +61,7 @@ class OrderPrintRestriction extends AbstractStructBase
      * @uses OrderPrintRestriction::setSuggestSelectiveInvoice()
      * @uses OrderPrintRestriction::setDisableExplVoidInvoice()
      * @uses OrderPrintRestriction::setSuggestExplVoidInvoice()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintRestriction[] $sellItemPrintRestriction
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemPrintRestriction[] $sellItemPrintRestriction
      * @param bool $disableOrderInvoice
      * @param bool $disableSelectiveInvoice
      * @param bool $suggestOrderInvoice
@@ -82,7 +82,7 @@ class OrderPrintRestriction extends AbstractStructBase
     }
     /**
      * Get SellItemPrintRestriction value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintRestriction[]
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemPrintRestriction[]
      */
     public function getSellItemPrintRestriction(): ?array
     {
@@ -103,12 +103,12 @@ class OrderPrintRestriction extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $orderPrintRestrictionSellItemPrintRestrictionItem) {
             // validation for constraint: itemType
-            if (!$orderPrintRestrictionSellItemPrintRestrictionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintRestriction) {
+            if (!$orderPrintRestrictionSellItemPrintRestrictionItem instanceof \Pggns\MidocoApi\Order\StructType\SellItemPrintRestriction) {
                 $invalidValues[] = is_object($orderPrintRestrictionSellItemPrintRestrictionItem) ? get_class($orderPrintRestrictionSellItemPrintRestrictionItem) : sprintf('%s(%s)', gettype($orderPrintRestrictionSellItemPrintRestrictionItem), var_export($orderPrintRestrictionSellItemPrintRestrictionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The SellItemPrintRestriction property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintRestriction, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The SellItemPrintRestriction property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemPrintRestriction, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -117,8 +117,8 @@ class OrderPrintRestriction extends AbstractStructBase
     /**
      * Set SellItemPrintRestriction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintRestriction[] $sellItemPrintRestriction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemPrintRestriction[] $sellItemPrintRestriction
+     * @return \Pggns\MidocoApi\Order\StructType\OrderPrintRestriction
      */
     public function setSellItemPrintRestriction(?array $sellItemPrintRestriction = null): self
     {
@@ -133,14 +133,14 @@ class OrderPrintRestriction extends AbstractStructBase
     /**
      * Add item to SellItemPrintRestriction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintRestriction $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemPrintRestriction $item
+     * @return \Pggns\MidocoApi\Order\StructType\OrderPrintRestriction
      */
-    public function addToSellItemPrintRestriction(\Pggns\MidocoApi\Api\Order\StructType\SellItemPrintRestriction $item): self
+    public function addToSellItemPrintRestriction(\Pggns\MidocoApi\Order\StructType\SellItemPrintRestriction $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintRestriction) {
-            throw new InvalidArgumentException(sprintf('The SellItemPrintRestriction property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemPrintRestriction, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SellItemPrintRestriction) {
+            throw new InvalidArgumentException(sprintf('The SellItemPrintRestriction property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemPrintRestriction, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->SellItemPrintRestriction[] = $item;
         
@@ -157,7 +157,7 @@ class OrderPrintRestriction extends AbstractStructBase
     /**
      * Set disableOrderInvoice value
      * @param bool $disableOrderInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction
+     * @return \Pggns\MidocoApi\Order\StructType\OrderPrintRestriction
      */
     public function setDisableOrderInvoice(?bool $disableOrderInvoice = null): self
     {
@@ -180,7 +180,7 @@ class OrderPrintRestriction extends AbstractStructBase
     /**
      * Set disableSelectiveInvoice value
      * @param bool $disableSelectiveInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction
+     * @return \Pggns\MidocoApi\Order\StructType\OrderPrintRestriction
      */
     public function setDisableSelectiveInvoice(?bool $disableSelectiveInvoice = null): self
     {
@@ -203,7 +203,7 @@ class OrderPrintRestriction extends AbstractStructBase
     /**
      * Set suggestOrderInvoice value
      * @param bool $suggestOrderInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction
+     * @return \Pggns\MidocoApi\Order\StructType\OrderPrintRestriction
      */
     public function setSuggestOrderInvoice(?bool $suggestOrderInvoice = null): self
     {
@@ -226,7 +226,7 @@ class OrderPrintRestriction extends AbstractStructBase
     /**
      * Set suggestSelectiveInvoice value
      * @param bool $suggestSelectiveInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction
+     * @return \Pggns\MidocoApi\Order\StructType\OrderPrintRestriction
      */
     public function setSuggestSelectiveInvoice(?bool $suggestSelectiveInvoice = null): self
     {
@@ -249,7 +249,7 @@ class OrderPrintRestriction extends AbstractStructBase
     /**
      * Set disableExplVoidInvoice value
      * @param bool $disableExplVoidInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction
+     * @return \Pggns\MidocoApi\Order\StructType\OrderPrintRestriction
      */
     public function setDisableExplVoidInvoice(?bool $disableExplVoidInvoice = null): self
     {
@@ -272,7 +272,7 @@ class OrderPrintRestriction extends AbstractStructBase
     /**
      * Set suggestExplVoidInvoice value
      * @param bool $suggestExplVoidInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction
+     * @return \Pggns\MidocoApi\Order\StructType\OrderPrintRestriction
      */
     public function setSuggestExplVoidInvoice(?bool $suggestExplVoidInvoice = null): self
     {

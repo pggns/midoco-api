@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderInfo
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +70,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderInfo
      */
     public function setOrderId(?int $orderId = null): self
     {

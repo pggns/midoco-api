@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class CheckIfPaidBillingDocResponse extends AbstractStructBase
     /**
      * Set paid value
      * @param bool $paid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckIfPaidBillingDocResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckIfPaidBillingDocResponse
      */
     public function setPaid(?bool $paid = null): self
     {
@@ -72,7 +72,7 @@ class CheckIfPaidBillingDocResponse extends AbstractStructBase
     /**
      * Set paidDate value
      * @param string $paidDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckIfPaidBillingDocResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckIfPaidBillingDocResponse
      */
     public function setPaidDate(?string $paidDate = null): self
     {

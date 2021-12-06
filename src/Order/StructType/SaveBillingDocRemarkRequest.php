@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,9 +15,9 @@ class SaveBillingDocRemarkRequest extends AbstractStructBase
 {
     /**
      * The remark
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BillingRemarkDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\BillingRemarkDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\BillingRemarkDTO $remark = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\BillingRemarkDTO $remark = null;
     /**
      * The parentInternalVersion
      * @var int|null
@@ -27,10 +27,10 @@ class SaveBillingDocRemarkRequest extends AbstractStructBase
      * Constructor method for SaveBillingDocRemarkRequest
      * @uses SaveBillingDocRemarkRequest::setRemark()
      * @uses SaveBillingDocRemarkRequest::setParentInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingRemarkDTO $remark
+     * @param \Pggns\MidocoApi\Order\StructType\BillingRemarkDTO $remark
      * @param int $parentInternalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\BillingRemarkDTO $remark = null, ?int $parentInternalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\BillingRemarkDTO $remark = null, ?int $parentInternalVersion = null)
     {
         $this
             ->setRemark($remark)
@@ -38,18 +38,18 @@ class SaveBillingDocRemarkRequest extends AbstractStructBase
     }
     /**
      * Get remark value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingRemarkDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\BillingRemarkDTO|null
      */
-    public function getRemark(): ?\Pggns\MidocoApi\Api\Order\StructType\BillingRemarkDTO
+    public function getRemark(): ?\Pggns\MidocoApi\Order\StructType\BillingRemarkDTO
     {
         return $this->remark;
     }
     /**
      * Set remark value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingRemarkDTO $remark
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingDocRemarkRequest
+     * @param \Pggns\MidocoApi\Order\StructType\BillingRemarkDTO $remark
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingDocRemarkRequest
      */
-    public function setRemark(?\Pggns\MidocoApi\Api\Order\StructType\BillingRemarkDTO $remark = null): self
+    public function setRemark(?\Pggns\MidocoApi\Order\StructType\BillingRemarkDTO $remark = null): self
     {
         $this->remark = $remark;
         
@@ -66,7 +66,7 @@ class SaveBillingDocRemarkRequest extends AbstractStructBase
     /**
      * Set parentInternalVersion value
      * @param int $parentInternalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingDocRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingDocRemarkRequest
      */
     public function setParentInternalVersion(?int $parentInternalVersion = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,9 +20,9 @@ class BankAccount extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - ref: IbanBic
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\IbanBic|null
+     * @var \Pggns\MidocoApi\Booking\StructType\IbanBic|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\IbanBic $IbanBic = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\IbanBic $IbanBic = null;
     /**
      * The AccountNumberBankNumber
      * Meta information extracted from the WSDL
@@ -30,9 +30,9 @@ class BankAccount extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - ref: AccountNumberBankNumber
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\AccountNumberBankNumber|null
+     * @var \Pggns\MidocoApi\Booking\StructType\AccountNumberBankNumber|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\AccountNumberBankNumber $AccountNumberBankNumber = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\AccountNumberBankNumber $AccountNumberBankNumber = null;
     /**
      * The bankAccountId
      * @var int|null
@@ -61,14 +61,14 @@ class BankAccount extends AbstractStructBase
      * @uses BankAccount::setBankName()
      * @uses BankAccount::setBankCity()
      * @uses BankAccount::setOwnerName()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\IbanBic $ibanBic
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AccountNumberBankNumber $accountNumberBankNumber
+     * @param \Pggns\MidocoApi\Booking\StructType\IbanBic $ibanBic
+     * @param \Pggns\MidocoApi\Booking\StructType\AccountNumberBankNumber $accountNumberBankNumber
      * @param int $bankAccountId
      * @param string $bankName
      * @param string $bankCity
      * @param string $ownerName
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\IbanBic $ibanBic = null, ?\Pggns\MidocoApi\Api\Booking\StructType\AccountNumberBankNumber $accountNumberBankNumber = null, ?int $bankAccountId = null, ?string $bankName = null, ?string $bankCity = null, ?string $ownerName = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\IbanBic $ibanBic = null, ?\Pggns\MidocoApi\Booking\StructType\AccountNumberBankNumber $accountNumberBankNumber = null, ?int $bankAccountId = null, ?string $bankName = null, ?string $bankCity = null, ?string $ownerName = null)
     {
         $this
             ->setIbanBic($ibanBic)
@@ -80,9 +80,9 @@ class BankAccount extends AbstractStructBase
     }
     /**
      * Get IbanBic value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\IbanBic|null
+     * @return \Pggns\MidocoApi\Booking\StructType\IbanBic|null
      */
-    public function getIbanBic(): ?\Pggns\MidocoApi\Api\Booking\StructType\IbanBic
+    public function getIbanBic(): ?\Pggns\MidocoApi\Booking\StructType\IbanBic
     {
         return isset($this->IbanBic) ? $this->IbanBic : null;
     }
@@ -120,10 +120,10 @@ class BankAccount extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\IbanBic $ibanBic
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BankAccount
+     * @param \Pggns\MidocoApi\Booking\StructType\IbanBic $ibanBic
+     * @return \Pggns\MidocoApi\Booking\StructType\BankAccount
      */
-    public function setIbanBic(?\Pggns\MidocoApi\Api\Booking\StructType\IbanBic $ibanBic = null): self
+    public function setIbanBic(?\Pggns\MidocoApi\Booking\StructType\IbanBic $ibanBic = null): self
     {
         // validation for constraint: choice(IbanBic, AccountNumberBankNumber)
         if ('' !== ($ibanBicChoiceErrorMessage = self::validateIbanBicForChoiceConstraintsFromSetIbanBic($ibanBic))) {
@@ -139,9 +139,9 @@ class BankAccount extends AbstractStructBase
     }
     /**
      * Get AccountNumberBankNumber value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AccountNumberBankNumber|null
+     * @return \Pggns\MidocoApi\Booking\StructType\AccountNumberBankNumber|null
      */
-    public function getAccountNumberBankNumber(): ?\Pggns\MidocoApi\Api\Booking\StructType\AccountNumberBankNumber
+    public function getAccountNumberBankNumber(): ?\Pggns\MidocoApi\Booking\StructType\AccountNumberBankNumber
     {
         return isset($this->AccountNumberBankNumber) ? $this->AccountNumberBankNumber : null;
     }
@@ -179,10 +179,10 @@ class BankAccount extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AccountNumberBankNumber $accountNumberBankNumber
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BankAccount
+     * @param \Pggns\MidocoApi\Booking\StructType\AccountNumberBankNumber $accountNumberBankNumber
+     * @return \Pggns\MidocoApi\Booking\StructType\BankAccount
      */
-    public function setAccountNumberBankNumber(?\Pggns\MidocoApi\Api\Booking\StructType\AccountNumberBankNumber $accountNumberBankNumber = null): self
+    public function setAccountNumberBankNumber(?\Pggns\MidocoApi\Booking\StructType\AccountNumberBankNumber $accountNumberBankNumber = null): self
     {
         // validation for constraint: choice(IbanBic, AccountNumberBankNumber)
         if ('' !== ($accountNumberBankNumberChoiceErrorMessage = self::validateAccountNumberBankNumberForChoiceConstraintsFromSetAccountNumberBankNumber($accountNumberBankNumber))) {
@@ -207,7 +207,7 @@ class BankAccount extends AbstractStructBase
     /**
      * Set bankAccountId value
      * @param int $bankAccountId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BankAccount
+     * @return \Pggns\MidocoApi\Booking\StructType\BankAccount
      */
     public function setBankAccountId(?int $bankAccountId = null): self
     {
@@ -230,7 +230,7 @@ class BankAccount extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BankAccount
+     * @return \Pggns\MidocoApi\Booking\StructType\BankAccount
      */
     public function setBankName(?string $bankName = null): self
     {
@@ -253,7 +253,7 @@ class BankAccount extends AbstractStructBase
     /**
      * Set bankCity value
      * @param string $bankCity
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BankAccount
+     * @return \Pggns\MidocoApi\Booking\StructType\BankAccount
      */
     public function setBankCity(?string $bankCity = null): self
     {
@@ -276,7 +276,7 @@ class BankAccount extends AbstractStructBase
     /**
      * Set ownerName value
      * @param string $ownerName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BankAccount
+     * @return \Pggns\MidocoApi\Booking\StructType\BankAccount
      */
     public function setOwnerName(?string $ownerName = null): self
     {

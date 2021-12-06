@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetUserWithCrsExpedientResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoUser
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoUser[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoUser[]
      */
     protected ?array $MidocoUser = null;
     /**
      * Constructor method for GetUserWithCrsExpedientResponse
      * @uses GetUserWithCrsExpedientResponse::setMidocoUser()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoUser[] $midocoUser
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoUser[] $midocoUser
      */
     public function __construct(?array $midocoUser = null)
     {
@@ -34,7 +34,7 @@ class GetUserWithCrsExpedientResponse extends AbstractStructBase
     }
     /**
      * Get MidocoUser value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoUser[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUser[]
      */
     public function getMidocoUser(): ?array
     {
@@ -55,12 +55,12 @@ class GetUserWithCrsExpedientResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getUserWithCrsExpedientResponseMidocoUserItem) {
             // validation for constraint: itemType
-            if (!$getUserWithCrsExpedientResponseMidocoUserItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoUser) {
+            if (!$getUserWithCrsExpedientResponseMidocoUserItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoUser) {
                 $invalidValues[] = is_object($getUserWithCrsExpedientResponseMidocoUserItem) ? get_class($getUserWithCrsExpedientResponseMidocoUserItem) : sprintf('%s(%s)', gettype($getUserWithCrsExpedientResponseMidocoUserItem), var_export($getUserWithCrsExpedientResponseMidocoUserItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoUser property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoUser, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoUser property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoUser, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetUserWithCrsExpedientResponse extends AbstractStructBase
     /**
      * Set MidocoUser value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoUser[] $midocoUser
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetUserWithCrsExpedientResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoUser[] $midocoUser
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetUserWithCrsExpedientResponse
      */
     public function setMidocoUser(?array $midocoUser = null): self
     {
@@ -85,14 +85,14 @@ class GetUserWithCrsExpedientResponse extends AbstractStructBase
     /**
      * Add item to MidocoUser value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoUser $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetUserWithCrsExpedientResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoUser $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetUserWithCrsExpedientResponse
      */
-    public function addToMidocoUser(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoUser $item): self
+    public function addToMidocoUser(\Pggns\MidocoApi\CrmSD\StructType\MidocoUser $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoUser) {
-            throw new InvalidArgumentException(sprintf('The MidocoUser property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoUser, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoUser) {
+            throw new InvalidArgumentException(sprintf('The MidocoUser property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoUser, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoUser[] = $item;
         

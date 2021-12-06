@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class AnnounceAmaTirMessageRequest extends AbstractStructBase
     /**
      * Set TirData value
      * @param string $tirData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceAmaTirMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceAmaTirMessageRequest
      */
     public function setTirData(?string $tirData = null): self
     {

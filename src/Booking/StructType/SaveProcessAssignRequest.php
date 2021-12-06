@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveProcessAssignRequest extends AbstractStructBase
      * The MidocoProcessAssign
      * Meta information extracted from the WSDL
      * - ref: MidocoProcessAssign
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\ProcessAssignDTO|null
+     * @var \Pggns\MidocoApi\Booking\StructType\ProcessAssignDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\ProcessAssignDTO $MidocoProcessAssign = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\ProcessAssignDTO $MidocoProcessAssign = null;
     /**
      * Constructor method for SaveProcessAssignRequest
      * @uses SaveProcessAssignRequest::setMidocoProcessAssign()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\ProcessAssignDTO $midocoProcessAssign
+     * @param \Pggns\MidocoApi\Booking\StructType\ProcessAssignDTO $midocoProcessAssign
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\ProcessAssignDTO $midocoProcessAssign = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\ProcessAssignDTO $midocoProcessAssign = null)
     {
         $this
             ->setMidocoProcessAssign($midocoProcessAssign);
     }
     /**
      * Get MidocoProcessAssign value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\ProcessAssignDTO|null
+     * @return \Pggns\MidocoApi\Booking\StructType\ProcessAssignDTO|null
      */
-    public function getMidocoProcessAssign(): ?\Pggns\MidocoApi\Api\Booking\StructType\ProcessAssignDTO
+    public function getMidocoProcessAssign(): ?\Pggns\MidocoApi\Booking\StructType\ProcessAssignDTO
     {
         return $this->MidocoProcessAssign;
     }
     /**
      * Set MidocoProcessAssign value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\ProcessAssignDTO $midocoProcessAssign
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SaveProcessAssignRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\ProcessAssignDTO $midocoProcessAssign
+     * @return \Pggns\MidocoApi\Booking\StructType\SaveProcessAssignRequest
      */
-    public function setMidocoProcessAssign(?\Pggns\MidocoApi\Api\Booking\StructType\ProcessAssignDTO $midocoProcessAssign = null): self
+    public function setMidocoProcessAssign(?\Pggns\MidocoApi\Booking\StructType\ProcessAssignDTO $midocoProcessAssign = null): self
     {
         $this->MidocoProcessAssign = $midocoProcessAssign;
         

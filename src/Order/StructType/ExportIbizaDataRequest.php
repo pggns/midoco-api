@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -77,7 +77,7 @@ class ExportIbizaDataRequest extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportIbizaDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportIbizaDataRequest
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -100,7 +100,7 @@ class ExportIbizaDataRequest extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportIbizaDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportIbizaDataRequest
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -123,7 +123,7 @@ class ExportIbizaDataRequest extends AbstractStructBase
     /**
      * Set format value
      * @param string $format
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportIbizaDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportIbizaDataRequest
      */
     public function setFormat(?string $format = null): self
     {
@@ -146,7 +146,7 @@ class ExportIbizaDataRequest extends AbstractStructBase
     /**
      * Set exportDirectory value
      * @param string $exportDirectory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportIbizaDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportIbizaDataRequest
      */
     public function setExportDirectory(?string $exportDirectory = null): self
     {
@@ -169,7 +169,7 @@ class ExportIbizaDataRequest extends AbstractStructBase
     /**
      * Set itemTypes value
      * @param string $itemTypes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportIbizaDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportIbizaDataRequest
      */
     public function setItemTypes(?string $itemTypes = null): self
     {

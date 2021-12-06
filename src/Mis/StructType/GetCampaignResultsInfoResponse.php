@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCampaignResultsInfoResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: CampaignResultsInfo
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo[]
+     * @var \Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo[]
      */
     protected ?array $CampaignResultsInfo = null;
     /**
      * Constructor method for GetCampaignResultsInfoResponse
      * @uses GetCampaignResultsInfoResponse::setCampaignResultsInfo()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo[] $campaignResultsInfo
+     * @param \Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo[] $campaignResultsInfo
      */
     public function __construct(?array $campaignResultsInfo = null)
     {
@@ -34,7 +34,7 @@ class GetCampaignResultsInfoResponse extends AbstractStructBase
     }
     /**
      * Get CampaignResultsInfo value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo[]
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo[]
      */
     public function getCampaignResultsInfo(): ?array
     {
@@ -55,12 +55,12 @@ class GetCampaignResultsInfoResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCampaignResultsInfoResponseCampaignResultsInfoItem) {
             // validation for constraint: itemType
-            if (!$getCampaignResultsInfoResponseCampaignResultsInfoItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo) {
+            if (!$getCampaignResultsInfoResponseCampaignResultsInfoItem instanceof \Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo) {
                 $invalidValues[] = is_object($getCampaignResultsInfoResponseCampaignResultsInfoItem) ? get_class($getCampaignResultsInfoResponseCampaignResultsInfoItem) : sprintf('%s(%s)', gettype($getCampaignResultsInfoResponseCampaignResultsInfoItem), var_export($getCampaignResultsInfoResponseCampaignResultsInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CampaignResultsInfo property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CampaignResultsInfo property can only contain items of type \Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCampaignResultsInfoResponse extends AbstractStructBase
     /**
      * Set CampaignResultsInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo[] $campaignResultsInfo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignResultsInfoResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo[] $campaignResultsInfo
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignResultsInfoResponse
      */
     public function setCampaignResultsInfo(?array $campaignResultsInfo = null): self
     {
@@ -85,14 +85,14 @@ class GetCampaignResultsInfoResponse extends AbstractStructBase
     /**
      * Add item to CampaignResultsInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignResultsInfoResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignResultsInfoResponse
      */
-    public function addToCampaignResultsInfo(\Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo $item): self
+    public function addToCampaignResultsInfo(\Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo) {
-            throw new InvalidArgumentException(sprintf('The CampaignResultsInfo property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo) {
+            throw new InvalidArgumentException(sprintf('The CampaignResultsInfo property can only contain items of type \Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CampaignResultsInfo[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class Traveler extends AbstractStructBase
      * Set CreditCardRefId value
      * @throws InvalidArgumentException
      * @param int[] $creditCardRefId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Traveler
+     * @return \Pggns\MidocoApi\Order\StructType\Traveler
      */
     public function setCreditCardRefId(?array $creditCardRefId = null): self
     {
@@ -175,7 +175,7 @@ class Traveler extends AbstractStructBase
      * Add item to CreditCardRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Traveler
+     * @return \Pggns\MidocoApi\Order\StructType\Traveler
      */
     public function addToCreditCardRefId(int $item): self
     {
@@ -225,7 +225,7 @@ class Traveler extends AbstractStructBase
      * Set BankAccountRefId value
      * @throws InvalidArgumentException
      * @param int[] $bankAccountRefId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Traveler
+     * @return \Pggns\MidocoApi\Order\StructType\Traveler
      */
     public function setBankAccountRefId(?array $bankAccountRefId = null): self
     {
@@ -241,7 +241,7 @@ class Traveler extends AbstractStructBase
      * Add item to BankAccountRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Traveler
+     * @return \Pggns\MidocoApi\Order\StructType\Traveler
      */
     public function addToBankAccountRefId(int $item): self
     {
@@ -264,7 +264,7 @@ class Traveler extends AbstractStructBase
     /**
      * Set travelerId value
      * @param int $travelerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Traveler
+     * @return \Pggns\MidocoApi\Order\StructType\Traveler
      */
     public function setTravelerId(?int $travelerId = null): self
     {
@@ -286,17 +286,17 @@ class Traveler extends AbstractStructBase
     }
     /**
      * Set salutation value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\SalutationType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\SalutationType::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\SalutationType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\SalutationType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Traveler
+     * @return \Pggns\MidocoApi\Order\StructType\Traveler
      */
     public function setSalutation(?string $salutation = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\SalutationType::valueIsValid($salutation)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\SalutationType', is_array($salutation) ? implode(', ', $salutation) : var_export($salutation, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\SalutationType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\SalutationType::valueIsValid($salutation)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\SalutationType', is_array($salutation) ? implode(', ', $salutation) : var_export($salutation, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\SalutationType::getValidValues())), __LINE__);
         }
         $this->salutation = $salutation;
         
@@ -313,7 +313,7 @@ class Traveler extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Traveler
+     * @return \Pggns\MidocoApi\Order\StructType\Traveler
      */
     public function setTitle(?string $title = null): self
     {
@@ -336,7 +336,7 @@ class Traveler extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Traveler
+     * @return \Pggns\MidocoApi\Order\StructType\Traveler
      */
     public function setName(?string $name = null): self
     {
@@ -359,7 +359,7 @@ class Traveler extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Traveler
+     * @return \Pggns\MidocoApi\Order\StructType\Traveler
      */
     public function setForename(?string $forename = null): self
     {
@@ -381,17 +381,17 @@ class Traveler extends AbstractStructBase
     }
     /**
      * Set gender value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\GenderType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\GenderType::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\GenderType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\GenderType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $gender
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Traveler
+     * @return \Pggns\MidocoApi\Order\StructType\Traveler
      */
     public function setGender(?string $gender = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\GenderType::valueIsValid($gender)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\GenderType', is_array($gender) ? implode(', ', $gender) : var_export($gender, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\GenderType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\GenderType::valueIsValid($gender)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\GenderType', is_array($gender) ? implode(', ', $gender) : var_export($gender, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\GenderType::getValidValues())), __LINE__);
         }
         $this->gender = $gender;
         
@@ -408,7 +408,7 @@ class Traveler extends AbstractStructBase
     /**
      * Set birthDate value
      * @param string $birthDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Traveler
+     * @return \Pggns\MidocoApi\Order\StructType\Traveler
      */
     public function setBirthDate(?string $birthDate = null): self
     {
@@ -435,7 +435,7 @@ class Traveler extends AbstractStructBase
     /**
      * Set midocoCustomerId value
      * @param int $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Traveler
+     * @return \Pggns\MidocoApi\Order\StructType\Traveler
      */
     public function setMidocoCustomerId(?int $midocoCustomerId = null): self
     {
@@ -458,7 +458,7 @@ class Traveler extends AbstractStructBase
     /**
      * Set nationality value
      * @param string $nationality
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Traveler
+     * @return \Pggns\MidocoApi\Order\StructType\Traveler
      */
     public function setNationality(?string $nationality = null): self
     {

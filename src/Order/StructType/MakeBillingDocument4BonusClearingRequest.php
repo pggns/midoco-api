@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class MakeBillingDocument4BonusClearingRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocument4BonusClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocument4BonusClearingRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -99,7 +99,7 @@ class MakeBillingDocument4BonusClearingRequest extends AbstractStructBase
      * Set positionId value
      * @throws InvalidArgumentException
      * @param int[] $positionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocument4BonusClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocument4BonusClearingRequest
      */
     public function setPositionId(?array $positionId = null): self
     {
@@ -115,7 +115,7 @@ class MakeBillingDocument4BonusClearingRequest extends AbstractStructBase
      * Add item to positionId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocument4BonusClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocument4BonusClearingRequest
      */
     public function addToPositionId(int $item): self
     {

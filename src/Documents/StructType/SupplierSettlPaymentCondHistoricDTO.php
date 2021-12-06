@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class SupplierSettlPaymentCondHistoricDTO extends AbstractStructBase
     /**
      * Set depositDays value
      * @param int $depositDays
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
      */
     public function setDepositDays(?int $depositDays = null): self
     {
@@ -142,7 +142,7 @@ class SupplierSettlPaymentCondHistoricDTO extends AbstractStructBase
     /**
      * Set depositMinAmount value
      * @param float $depositMinAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
      */
     public function setDepositMinAmount(?float $depositMinAmount = null): self
     {
@@ -165,7 +165,7 @@ class SupplierSettlPaymentCondHistoricDTO extends AbstractStructBase
     /**
      * Set depositPercent value
      * @param float $depositPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
      */
     public function setDepositPercent(?float $depositPercent = null): self
     {
@@ -188,7 +188,7 @@ class SupplierSettlPaymentCondHistoricDTO extends AbstractStructBase
     /**
      * Set finalPaymentDays value
      * @param int $finalPaymentDays
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
      */
     public function setFinalPaymentDays(?int $finalPaymentDays = null): self
     {
@@ -211,7 +211,7 @@ class SupplierSettlPaymentCondHistoricDTO extends AbstractStructBase
     /**
      * Set maxDepositAmount value
      * @param float $maxDepositAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
      */
     public function setMaxDepositAmount(?float $maxDepositAmount = null): self
     {
@@ -234,7 +234,7 @@ class SupplierSettlPaymentCondHistoricDTO extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
      */
     public function setSettlementType(?string $settlementType = null): self
     {
@@ -257,7 +257,7 @@ class SupplierSettlPaymentCondHistoricDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -280,7 +280,7 @@ class SupplierSettlPaymentCondHistoricDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -303,7 +303,7 @@ class SupplierSettlPaymentCondHistoricDTO extends AbstractStructBase
     /**
      * Set validCreationTravel value
      * @param string $validCreationTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
      */
     public function setValidCreationTravel(?string $validCreationTravel = null): self
     {
@@ -326,7 +326,7 @@ class SupplierSettlPaymentCondHistoricDTO extends AbstractStructBase
     /**
      * Set validDate value
      * @param string $validDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
      */
     public function setValidDate(?string $validDate = null): self
     {
@@ -349,7 +349,7 @@ class SupplierSettlPaymentCondHistoricDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlPaymentCondHistoricDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

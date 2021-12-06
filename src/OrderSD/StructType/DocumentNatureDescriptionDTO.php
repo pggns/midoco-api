@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class DocumentNatureDescriptionDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DocumentNatureDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DocumentNatureDescriptionDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -86,7 +86,7 @@ class DocumentNatureDescriptionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DocumentNatureDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DocumentNatureDescriptionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -109,7 +109,7 @@ class DocumentNatureDescriptionDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DocumentNatureDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DocumentNatureDescriptionDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -132,7 +132,7 @@ class DocumentNatureDescriptionDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DocumentNatureDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DocumentNatureDescriptionDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

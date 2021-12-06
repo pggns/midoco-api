@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SuppTemplAChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SuppTemplAChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SuppTemplAChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -102,7 +102,7 @@ class SuppTemplAChangeLogDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SuppTemplAChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SuppTemplAChangeLogDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -125,7 +125,7 @@ class SuppTemplAChangeLogDTO extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SuppTemplAChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SuppTemplAChangeLogDTO
      */
     public function setTemplateId(?int $templateId = null): self
     {
@@ -148,7 +148,7 @@ class SuppTemplAChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SuppTemplAChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SuppTemplAChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -171,7 +171,7 @@ class SuppTemplAChangeLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SuppTemplAChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SuppTemplAChangeLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -194,7 +194,7 @@ class SuppTemplAChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SuppTemplAChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SuppTemplAChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

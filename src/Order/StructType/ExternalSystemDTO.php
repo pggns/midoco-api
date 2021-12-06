@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ExternalSystemDTO extends AbstractStructBase
     /**
      * Set systemName value
      * @param string $systemName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalSystemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalSystemDTO
      */
     public function setSystemName(?string $systemName = null): self
     {
@@ -70,7 +70,7 @@ class ExternalSystemDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalSystemDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalSystemDTO
      */
     public function setType(?string $type = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class GetDebitInfoResponse extends AbstractStructBase
      * The MidocoDebitInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoDebitInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType $MidocoDebitInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType $MidocoDebitInfo = null;
     /**
      * Constructor method for GetDebitInfoResponse
      * @uses GetDebitInfoResponse::setMidocoDebitInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType $midocoDebitInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType $midocoDebitInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType $midocoDebitInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType $midocoDebitInfo = null)
     {
         $this
             ->setMidocoDebitInfo($midocoDebitInfo);
     }
     /**
      * Get MidocoDebitInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType|null
      */
-    public function getMidocoDebitInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType
+    public function getMidocoDebitInfo(): ?\Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType
     {
         return $this->MidocoDebitInfo;
     }
     /**
      * Set MidocoDebitInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType $midocoDebitInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetDebitInfoResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType $midocoDebitInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetDebitInfoResponse
      */
-    public function setMidocoDebitInfo(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType $midocoDebitInfo = null): self
+    public function setMidocoDebitInfo(?\Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType $midocoDebitInfo = null): self
     {
         $this->MidocoDebitInfo = $midocoDebitInfo;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class SubitemStatus extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus
+     * @return \Pggns\MidocoApi\Order\StructType\SubitemStatus
      */
     public function setPrice(?float $price = null): self
     {
@@ -118,7 +118,7 @@ class SubitemStatus extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus
+     * @return \Pggns\MidocoApi\Order\StructType\SubitemStatus
      */
     public function setStatus(?string $status = null): self
     {
@@ -141,7 +141,7 @@ class SubitemStatus extends AbstractStructBase
     /**
      * Set noOfPersons value
      * @param int $noOfPersons
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus
+     * @return \Pggns\MidocoApi\Order\StructType\SubitemStatus
      */
     public function setNoOfPersons(?int $noOfPersons = null): self
     {
@@ -164,7 +164,7 @@ class SubitemStatus extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus
+     * @return \Pggns\MidocoApi\Order\StructType\SubitemStatus
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -187,7 +187,7 @@ class SubitemStatus extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus
+     * @return \Pggns\MidocoApi\Order\StructType\SubitemStatus
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -210,7 +210,7 @@ class SubitemStatus extends AbstractStructBase
     /**
      * Set extId value
      * @param string $extId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus
+     * @return \Pggns\MidocoApi\Order\StructType\SubitemStatus
      */
     public function setExtId(?string $extId = null): self
     {
@@ -233,7 +233,7 @@ class SubitemStatus extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus
+     * @return \Pggns\MidocoApi\Order\StructType\SubitemStatus
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -256,7 +256,7 @@ class SubitemStatus extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus
+     * @return \Pggns\MidocoApi\Order\StructType\SubitemStatus
      */
     public function setBookingId(?string $bookingId = null): self
     {

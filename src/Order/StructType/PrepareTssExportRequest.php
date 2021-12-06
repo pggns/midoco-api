@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -125,7 +125,7 @@ class PrepareTssExportRequest extends AbstractStructBase
      * Set unitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareTssExportRequest
      */
     public function setUnitName(?array $unitName = null): self
     {
@@ -141,7 +141,7 @@ class PrepareTssExportRequest extends AbstractStructBase
      * Add item to unitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareTssExportRequest
      */
     public function addToUnitName(string $item): self
     {
@@ -164,7 +164,7 @@ class PrepareTssExportRequest extends AbstractStructBase
     /**
      * Set complete value
      * @param bool $complete
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareTssExportRequest
      */
     public function setComplete(?bool $complete = null): self
     {
@@ -187,7 +187,7 @@ class PrepareTssExportRequest extends AbstractStructBase
     /**
      * Set dateFrom value
      * @param string $dateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareTssExportRequest
      */
     public function setDateFrom(?string $dateFrom = null): self
     {
@@ -210,7 +210,7 @@ class PrepareTssExportRequest extends AbstractStructBase
     /**
      * Set dateTo value
      * @param string $dateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareTssExportRequest
      */
     public function setDateTo(?string $dateTo = null): self
     {
@@ -233,7 +233,7 @@ class PrepareTssExportRequest extends AbstractStructBase
     /**
      * Set transactionNoFrom value
      * @param int $transactionNoFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareTssExportRequest
      */
     public function setTransactionNoFrom(?int $transactionNoFrom = null): self
     {
@@ -256,7 +256,7 @@ class PrepareTssExportRequest extends AbstractStructBase
     /**
      * Set transactionNoTo value
      * @param int $transactionNoTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareTssExportRequest
      */
     public function setTransactionNoTo(?int $transactionNoTo = null): self
     {
@@ -279,7 +279,7 @@ class PrepareTssExportRequest extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param int $receiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareTssExportRequest
      */
     public function setReceiptNo(?int $receiptNo = null): self
     {
@@ -302,7 +302,7 @@ class PrepareTssExportRequest extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareTssExportRequest
      */
     public function setTssId(?string $tssId = null): self
     {

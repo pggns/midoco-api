@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class Tss_Migration_Summary extends AbstractStructBase
     /**
      * Set completed value
      * @param int $completed
-     * @return \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary
+     * @return \Pggns\MidocoApi\System\StructType\Tss_Migration_Summary
      */
     public function setCompleted(?int $completed = null): self
     {
@@ -102,7 +102,7 @@ class Tss_Migration_Summary extends AbstractStructBase
     /**
      * Set failed value
      * @param int $failed
-     * @return \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary
+     * @return \Pggns\MidocoApi\System\StructType\Tss_Migration_Summary
      */
     public function setFailed(?int $failed = null): self
     {
@@ -125,7 +125,7 @@ class Tss_Migration_Summary extends AbstractStructBase
     /**
      * Set ignored value
      * @param int $ignored
-     * @return \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary
+     * @return \Pggns\MidocoApi\System\StructType\Tss_Migration_Summary
      */
     public function setIgnored(?int $ignored = null): self
     {
@@ -148,7 +148,7 @@ class Tss_Migration_Summary extends AbstractStructBase
     /**
      * Set start value
      * @param string $start
-     * @return \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary
+     * @return \Pggns\MidocoApi\System\StructType\Tss_Migration_Summary
      */
     public function setStart(?string $start = null): self
     {
@@ -171,7 +171,7 @@ class Tss_Migration_Summary extends AbstractStructBase
     /**
      * Set end value
      * @param string $end
-     * @return \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary
+     * @return \Pggns\MidocoApi\System\StructType\Tss_Migration_Summary
      */
     public function setEnd(?string $end = null): self
     {
@@ -194,7 +194,7 @@ class Tss_Migration_Summary extends AbstractStructBase
     /**
      * Set elapsed_ms value
      * @param int $elapsed_ms
-     * @return \Pggns\MidocoApi\Api\System\StructType\Tss_Migration_Summary
+     * @return \Pggns\MidocoApi\System\StructType\Tss_Migration_Summary
      */
     public function setElapsed_ms(?int $elapsed_ms = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class AnnounceGdsMessageRequest extends AbstractStructBase
      * The MidocoGDSBooking
      * Meta information extracted from the WSDL
      * - ref: gds_message:MidocoGDSBooking
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\MidocoGDSBooking|null
+     * @var \Pggns\MidocoApi\Booking\StructType\MidocoGDSBooking|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\MidocoGDSBooking $MidocoGDSBooking = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\MidocoGDSBooking $MidocoGDSBooking = null;
     /**
      * Constructor method for AnnounceGdsMessageRequest
      * @uses AnnounceGdsMessageRequest::setMidocoGDSBooking()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoGDSBooking $midocoGDSBooking
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoGDSBooking $midocoGDSBooking
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\MidocoGDSBooking $midocoGDSBooking = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\MidocoGDSBooking $midocoGDSBooking = null)
     {
         $this
             ->setMidocoGDSBooking($midocoGDSBooking);
     }
     /**
      * Get MidocoGDSBooking value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoGDSBooking|null
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoGDSBooking|null
      */
-    public function getMidocoGDSBooking(): ?\Pggns\MidocoApi\Api\Booking\StructType\MidocoGDSBooking
+    public function getMidocoGDSBooking(): ?\Pggns\MidocoApi\Booking\StructType\MidocoGDSBooking
     {
         return $this->MidocoGDSBooking;
     }
     /**
      * Set MidocoGDSBooking value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoGDSBooking $midocoGDSBooking
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AnnounceGdsMessageRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoGDSBooking $midocoGDSBooking
+     * @return \Pggns\MidocoApi\Booking\StructType\AnnounceGdsMessageRequest
      */
-    public function setMidocoGDSBooking(?\Pggns\MidocoApi\Api\Booking\StructType\MidocoGDSBooking $midocoGDSBooking = null): self
+    public function setMidocoGDSBooking(?\Pggns\MidocoApi\Booking\StructType\MidocoGDSBooking $midocoGDSBooking = null): self
     {
         $this->MidocoGDSBooking = $midocoGDSBooking;
         

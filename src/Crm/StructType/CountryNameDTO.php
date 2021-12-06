@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CountryNameDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param string $countryId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CountryNameDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CountryNameDTO
      */
     public function setCountryId(?string $countryId = null): self
     {
@@ -78,7 +78,7 @@ class CountryNameDTO extends AbstractStructBase
     /**
      * Set countryLocalized value
      * @param string $countryLocalized
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CountryNameDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CountryNameDTO
      */
     public function setCountryLocalized(?string $countryLocalized = null): self
     {
@@ -101,7 +101,7 @@ class CountryNameDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CountryNameDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CountryNameDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {

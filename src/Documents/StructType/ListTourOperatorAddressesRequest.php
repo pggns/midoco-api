@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ListTourOperatorAddressesRequest extends AbstractStructBase
     /**
      * Set touroperatorId value
      * @param int $touroperatorId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListTourOperatorAddressesRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListTourOperatorAddressesRequest
      */
     public function setTouroperatorId(?int $touroperatorId = null): self
     {

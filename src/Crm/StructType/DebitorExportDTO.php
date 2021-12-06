@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DebitorExportDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DebitorExportDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\DebitorExportDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -70,7 +70,7 @@ class DebitorExportDTO extends AbstractStructBase
     /**
      * Set lastExportData value
      * @param string $lastExportData
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DebitorExportDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\DebitorExportDTO
      */
     public function setLastExportData(?string $lastExportData = null): self
     {

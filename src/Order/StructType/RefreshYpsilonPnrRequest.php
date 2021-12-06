@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class RefreshYpsilonPnrRequest extends AbstractStructBase
     /**
      * Set consolidator value
      * @param string $consolidator
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RefreshYpsilonPnrRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RefreshYpsilonPnrRequest
      */
     public function setConsolidator(?string $consolidator = null): self
     {
@@ -78,7 +78,7 @@ class RefreshYpsilonPnrRequest extends AbstractStructBase
     /**
      * Set agent value
      * @param string $agent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RefreshYpsilonPnrRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RefreshYpsilonPnrRequest
      */
     public function setAgent(?string $agent = null): self
     {
@@ -101,7 +101,7 @@ class RefreshYpsilonPnrRequest extends AbstractStructBase
     /**
      * Set pnrId value
      * @param string $pnrId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RefreshYpsilonPnrRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RefreshYpsilonPnrRequest
      */
     public function setPnrId(?string $pnrId = null): self
     {

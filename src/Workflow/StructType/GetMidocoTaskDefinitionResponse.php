@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoTaskDefinitionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTaskDefinition
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition[]
      */
     protected ?array $MidocoTaskDefinition = null;
     /**
      * Constructor method for GetMidocoTaskDefinitionResponse
      * @uses GetMidocoTaskDefinitionResponse::setMidocoTaskDefinition()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition[] $midocoTaskDefinition
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition[] $midocoTaskDefinition
      */
     public function __construct(?array $midocoTaskDefinition = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoTaskDefinitionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTaskDefinition value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition[]
      */
     public function getMidocoTaskDefinition(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoTaskDefinitionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoTaskDefinitionResponseMidocoTaskDefinitionItem) {
             // validation for constraint: itemType
-            if (!$getMidocoTaskDefinitionResponseMidocoTaskDefinitionItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition) {
+            if (!$getMidocoTaskDefinitionResponseMidocoTaskDefinitionItem instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition) {
                 $invalidValues[] = is_object($getMidocoTaskDefinitionResponseMidocoTaskDefinitionItem) ? get_class($getMidocoTaskDefinitionResponseMidocoTaskDefinitionItem) : sprintf('%s(%s)', gettype($getMidocoTaskDefinitionResponseMidocoTaskDefinitionItem), var_export($getMidocoTaskDefinitionResponseMidocoTaskDefinitionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTaskDefinition property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTaskDefinition property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoTaskDefinitionResponse extends AbstractStructBase
     /**
      * Set MidocoTaskDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition[] $midocoTaskDefinition
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetMidocoTaskDefinitionResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition[] $midocoTaskDefinition
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetMidocoTaskDefinitionResponse
      */
     public function setMidocoTaskDefinition(?array $midocoTaskDefinition = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoTaskDefinitionResponse extends AbstractStructBase
     /**
      * Add item to MidocoTaskDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetMidocoTaskDefinitionResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetMidocoTaskDefinitionResponse
      */
-    public function addToMidocoTaskDefinition(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition $item): self
+    public function addToMidocoTaskDefinition(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition) {
-            throw new InvalidArgumentException(sprintf('The MidocoTaskDefinition property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition) {
+            throw new InvalidArgumentException(sprintf('The MidocoTaskDefinition property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTaskDefinition[] = $item;
         

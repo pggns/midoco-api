@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class JournalExportDTO extends AbstractStructBase
     /**
      * Set checksum value
      * @param int $checksum
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JournalExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JournalExportDTO
      */
     public function setChecksum(?int $checksum = null): self
     {
@@ -110,7 +110,7 @@ class JournalExportDTO extends AbstractStructBase
     /**
      * Set comments value
      * @param string $comments
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JournalExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JournalExportDTO
      */
     public function setComments(?string $comments = null): self
     {
@@ -133,7 +133,7 @@ class JournalExportDTO extends AbstractStructBase
     /**
      * Set exportDate value
      * @param string $exportDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JournalExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JournalExportDTO
      */
     public function setExportDate(?string $exportDate = null): self
     {
@@ -156,7 +156,7 @@ class JournalExportDTO extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JournalExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JournalExportDTO
      */
     public function setExportId(?int $exportId = null): self
     {
@@ -179,7 +179,7 @@ class JournalExportDTO extends AbstractStructBase
     /**
      * Set exportUser value
      * @param int $exportUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JournalExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JournalExportDTO
      */
     public function setExportUser(?int $exportUser = null): self
     {
@@ -202,7 +202,7 @@ class JournalExportDTO extends AbstractStructBase
     /**
      * Set numberOfRows value
      * @param int $numberOfRows
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JournalExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JournalExportDTO
      */
     public function setNumberOfRows(?int $numberOfRows = null): self
     {
@@ -225,7 +225,7 @@ class JournalExportDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JournalExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JournalExportDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

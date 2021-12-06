@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetDictionaryNameResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDictionaryName
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO[]
      */
     protected ?array $MidocoDictionaryName = null;
     /**
      * Constructor method for GetDictionaryNameResponse
      * @uses GetDictionaryNameResponse::setMidocoDictionaryName()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO[] $midocoDictionaryName
+     * @param \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO[] $midocoDictionaryName
      */
     public function __construct(?array $midocoDictionaryName = null)
     {
@@ -34,7 +34,7 @@ class GetDictionaryNameResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDictionaryName value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO[]
      */
     public function getMidocoDictionaryName(): ?array
     {
@@ -55,12 +55,12 @@ class GetDictionaryNameResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDictionaryNameResponseMidocoDictionaryNameItem) {
             // validation for constraint: itemType
-            if (!$getDictionaryNameResponseMidocoDictionaryNameItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO) {
+            if (!$getDictionaryNameResponseMidocoDictionaryNameItem instanceof \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO) {
                 $invalidValues[] = is_object($getDictionaryNameResponseMidocoDictionaryNameItem) ? get_class($getDictionaryNameResponseMidocoDictionaryNameItem) : sprintf('%s(%s)', gettype($getDictionaryNameResponseMidocoDictionaryNameItem), var_export($getDictionaryNameResponseMidocoDictionaryNameItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDictionaryName property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDictionaryName property can only contain items of type \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetDictionaryNameResponse extends AbstractStructBase
     /**
      * Set MidocoDictionaryName value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO[] $midocoDictionaryName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDictionaryNameResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO[] $midocoDictionaryName
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDictionaryNameResponse
      */
     public function setMidocoDictionaryName(?array $midocoDictionaryName = null): self
     {
@@ -85,14 +85,14 @@ class GetDictionaryNameResponse extends AbstractStructBase
     /**
      * Add item to MidocoDictionaryName value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDictionaryNameResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDictionaryNameResponse
      */
-    public function addToMidocoDictionaryName(\Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO $item): self
+    public function addToMidocoDictionaryName(\Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoDictionaryName property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoDictionaryName property can only contain items of type \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDictionaryName[] = $item;
         

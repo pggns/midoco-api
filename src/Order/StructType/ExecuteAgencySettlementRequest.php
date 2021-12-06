@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class ExecuteAgencySettlementRequest extends AbstractStructBase
      * The MidocoAgencyProvisionSearchCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoAgencyProvisionSearchCriteria
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $MidocoAgencyProvisionSearchCriteria = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $MidocoAgencyProvisionSearchCriteria = null;
     /**
      * The settlementId
      * @var int|null
@@ -59,7 +59,7 @@ class ExecuteAgencySettlementRequest extends AbstractStructBase
      * @uses ExecuteAgencySettlementRequest::setReceiptDate()
      * @uses ExecuteAgencySettlementRequest::setPreventPrint()
      * @uses ExecuteAgencySettlementRequest::setDryRun()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria
      * @param int $settlementId
      * @param string $agencyId
      * @param string $agencyDebitorNo
@@ -67,7 +67,7 @@ class ExecuteAgencySettlementRequest extends AbstractStructBase
      * @param bool $preventPrint
      * @param bool $dryRun
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria = null, ?int $settlementId = null, ?string $agencyId = null, ?string $agencyDebitorNo = null, ?string $receiptDate = null, ?bool $preventPrint = null, ?bool $dryRun = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria = null, ?int $settlementId = null, ?string $agencyId = null, ?string $agencyDebitorNo = null, ?string $receiptDate = null, ?bool $preventPrint = null, ?bool $dryRun = null)
     {
         $this
             ->setMidocoAgencyProvisionSearchCriteria($midocoAgencyProvisionSearchCriteria)
@@ -80,18 +80,18 @@ class ExecuteAgencySettlementRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAgencyProvisionSearchCriteria value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria|null
      */
-    public function getMidocoAgencyProvisionSearchCriteria(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria
+    public function getMidocoAgencyProvisionSearchCriteria(): ?\Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria
     {
         return $this->MidocoAgencyProvisionSearchCriteria;
     }
     /**
      * Set MidocoAgencyProvisionSearchCriteria value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementRequest
      */
-    public function setMidocoAgencyProvisionSearchCriteria(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria = null): self
+    public function setMidocoAgencyProvisionSearchCriteria(?\Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionSearchCriteria $midocoAgencyProvisionSearchCriteria = null): self
     {
         $this->MidocoAgencyProvisionSearchCriteria = $midocoAgencyProvisionSearchCriteria;
         
@@ -108,7 +108,7 @@ class ExecuteAgencySettlementRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -131,7 +131,7 @@ class ExecuteAgencySettlementRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -154,7 +154,7 @@ class ExecuteAgencySettlementRequest extends AbstractStructBase
     /**
      * Set agencyDebitorNo value
      * @param string $agencyDebitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementRequest
      */
     public function setAgencyDebitorNo(?string $agencyDebitorNo = null): self
     {
@@ -177,7 +177,7 @@ class ExecuteAgencySettlementRequest extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementRequest
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -200,7 +200,7 @@ class ExecuteAgencySettlementRequest extends AbstractStructBase
     /**
      * Set preventPrint value
      * @param bool $preventPrint
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementRequest
      */
     public function setPreventPrint(?bool $preventPrint = null): self
     {
@@ -223,7 +223,7 @@ class ExecuteAgencySettlementRequest extends AbstractStructBase
     /**
      * Set dryRun value
      * @param bool $dryRun
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementRequest
      */
     public function setDryRun(?bool $dryRun = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class PrintTypeAssignDTO extends AbstractStructBase
     /**
      * Set isMandatory value
      * @param bool $isMandatory
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\PrintTypeAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\PrintTypeAssignDTO
      */
     public function setIsMandatory(?bool $isMandatory = null): self
     {
@@ -94,7 +94,7 @@ class PrintTypeAssignDTO extends AbstractStructBase
     /**
      * Set noOfCopies value
      * @param int $noOfCopies
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\PrintTypeAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\PrintTypeAssignDTO
      */
     public function setNoOfCopies(?int $noOfCopies = null): self
     {
@@ -117,7 +117,7 @@ class PrintTypeAssignDTO extends AbstractStructBase
     /**
      * Set printPosition value
      * @param int $printPosition
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\PrintTypeAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\PrintTypeAssignDTO
      */
     public function setPrintPosition(?int $printPosition = null): self
     {
@@ -140,7 +140,7 @@ class PrintTypeAssignDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\PrintTypeAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\PrintTypeAssignDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -163,7 +163,7 @@ class PrintTypeAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\PrintTypeAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\PrintTypeAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

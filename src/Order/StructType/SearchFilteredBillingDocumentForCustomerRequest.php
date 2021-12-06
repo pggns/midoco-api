@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SearchFilteredBillingDocumentForCustomerRequest extends AbstractStructBase
     /**
      * Set MidocoCollectiveBillingCriteria value
      * @param string $midocoCollectiveBillingCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchFilteredBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchFilteredBillingDocumentForCustomerRequest
      */
     public function setMidocoCollectiveBillingCriteria(?string $midocoCollectiveBillingCriteria = null): self
     {

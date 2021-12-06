@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -247,7 +247,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set accountBuyAcc value
      * @param string $accountBuyAcc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setAccountBuyAcc(?string $accountBuyAcc = null): self
     {
@@ -270,7 +270,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set accountBuyBus value
      * @param string $accountBuyBus
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setAccountBuyBus(?string $accountBuyBus = null): self
     {
@@ -293,7 +293,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set accountBuyCar value
      * @param string $accountBuyCar
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setAccountBuyCar(?string $accountBuyCar = null): self
     {
@@ -316,7 +316,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set accountBuyDb value
      * @param string $accountBuyDb
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setAccountBuyDb(?string $accountBuyDb = null): self
     {
@@ -339,7 +339,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set accountBuyDiverse value
      * @param string $accountBuyDiverse
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setAccountBuyDiverse(?string $accountBuyDiverse = null): self
     {
@@ -362,7 +362,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set accountBuyFlightBsp value
      * @param string $accountBuyFlightBsp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setAccountBuyFlightBsp(?string $accountBuyFlightBsp = null): self
     {
@@ -385,7 +385,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set accountBuyFlightDiverse value
      * @param string $accountBuyFlightDiverse
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setAccountBuyFlightDiverse(?string $accountBuyFlightDiverse = null): self
     {
@@ -408,7 +408,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set accountBuyShip value
      * @param string $accountBuyShip
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setAccountBuyShip(?string $accountBuyShip = null): self
     {
@@ -431,7 +431,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set accountBuyTouristic value
      * @param string $accountBuyTouristic
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setAccountBuyTouristic(?string $accountBuyTouristic = null): self
     {
@@ -454,7 +454,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set accountSell value
      * @param string $accountSell
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setAccountSell(?string $accountSell = null): self
     {
@@ -477,7 +477,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set accountSupplierInkasso value
      * @param string $accountSupplierInkasso
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setAccountSupplierInkasso(?string $accountSupplierInkasso = null): self
     {
@@ -500,7 +500,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set active value
      * @param bool $active
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setActive(?bool $active = null): self
     {
@@ -523,7 +523,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set b2cPercent value
      * @param float $b2cPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setB2cPercent(?float $b2cPercent = null): self
     {
@@ -546,7 +546,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -569,7 +569,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -592,7 +592,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -615,7 +615,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set descrLong value
      * @param string $descrLong
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setDescrLong(?string $descrLong = null): self
     {
@@ -638,7 +638,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set descrShort value
      * @param string $descrShort
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setDescrShort(?string $descrShort = null): self
     {
@@ -661,7 +661,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -684,7 +684,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set enableCommission value
      * @param bool $enableCommission
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setEnableCommission(?bool $enableCommission = null): self
     {
@@ -707,7 +707,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -730,7 +730,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -753,7 +753,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set notTakeDates value
      * @param bool $notTakeDates
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setNotTakeDates(?bool $notTakeDates = null): self
     {
@@ -776,7 +776,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -799,7 +799,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -822,7 +822,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set travelEnd value
      * @param string $travelEnd
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setTravelEnd(?string $travelEnd = null): self
     {
@@ -845,7 +845,7 @@ class TravelNumberDTO extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelNumberDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNumberDTO
      */
     public function setTravelNo(?string $travelNo = null): self
     {

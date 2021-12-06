@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveProductTypeRequest extends AbstractStructBase
      * The MidocoProductType
      * Meta information extracted from the WSDL
      * - ref: MidocoProductType
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType $MidocoProductType = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType $MidocoProductType = null;
     /**
      * Constructor method for SaveProductTypeRequest
      * @uses SaveProductTypeRequest::setMidocoProductType()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType $midocoProductType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType $midocoProductType
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType $midocoProductType = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType $midocoProductType = null)
     {
         $this
             ->setMidocoProductType($midocoProductType);
     }
     /**
      * Get MidocoProductType value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType|null
      */
-    public function getMidocoProductType(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType
+    public function getMidocoProductType(): ?\Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType
     {
         return $this->MidocoProductType;
     }
     /**
      * Set MidocoProductType value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType $midocoProductType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveProductTypeRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType $midocoProductType
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveProductTypeRequest
      */
-    public function setMidocoProductType(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType $midocoProductType = null): self
+    public function setMidocoProductType(?\Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType $midocoProductType = null): self
     {
         $this->MidocoProductType = $midocoProductType;
         

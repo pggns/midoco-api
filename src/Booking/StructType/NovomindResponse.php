@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class NovomindResponse extends AbstractStructBase
     /**
      * Set result value
      * @param int $result
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\NovomindResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\NovomindResponse
      */
     public function setResult(?int $result = null): self
     {
@@ -70,7 +70,7 @@ class NovomindResponse extends AbstractStructBase
     /**
      * Set accessToken value
      * @param string $accessToken
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\NovomindResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\NovomindResponse
      */
     public function setAccessToken(?string $accessToken = null): self
     {

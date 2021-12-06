@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetPPTransactionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPaypalTransaction
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPaypalTransaction[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPaypalTransaction[]
      */
     protected ?array $MidocoPaypalTransaction = null;
     /**
      * Constructor method for GetPPTransactionsResponse
      * @uses GetPPTransactionsResponse::setMidocoPaypalTransaction()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaypalTransaction[] $midocoPaypalTransaction
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaypalTransaction[] $midocoPaypalTransaction
      */
     public function __construct(?array $midocoPaypalTransaction = null)
     {
@@ -34,7 +34,7 @@ class GetPPTransactionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPaypalTransaction value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaypalTransaction[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaypalTransaction[]
      */
     public function getMidocoPaypalTransaction(): ?array
     {
@@ -55,12 +55,12 @@ class GetPPTransactionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPPTransactionsResponseMidocoPaypalTransactionItem) {
             // validation for constraint: itemType
-            if (!$getPPTransactionsResponseMidocoPaypalTransactionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPaypalTransaction) {
+            if (!$getPPTransactionsResponseMidocoPaypalTransactionItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoPaypalTransaction) {
                 $invalidValues[] = is_object($getPPTransactionsResponseMidocoPaypalTransactionItem) ? get_class($getPPTransactionsResponseMidocoPaypalTransactionItem) : sprintf('%s(%s)', gettype($getPPTransactionsResponseMidocoPaypalTransactionItem), var_export($getPPTransactionsResponseMidocoPaypalTransactionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPaypalTransaction property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPaypalTransaction, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPaypalTransaction property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPaypalTransaction, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetPPTransactionsResponse extends AbstractStructBase
     /**
      * Set MidocoPaypalTransaction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaypalTransaction[] $midocoPaypalTransaction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPPTransactionsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaypalTransaction[] $midocoPaypalTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\GetPPTransactionsResponse
      */
     public function setMidocoPaypalTransaction(?array $midocoPaypalTransaction = null): self
     {
@@ -85,14 +85,14 @@ class GetPPTransactionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoPaypalTransaction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaypalTransaction $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPPTransactionsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaypalTransaction $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetPPTransactionsResponse
      */
-    public function addToMidocoPaypalTransaction(\Pggns\MidocoApi\Api\Order\StructType\MidocoPaypalTransaction $item): self
+    public function addToMidocoPaypalTransaction(\Pggns\MidocoApi\Order\StructType\MidocoPaypalTransaction $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPaypalTransaction) {
-            throw new InvalidArgumentException(sprintf('The MidocoPaypalTransaction property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPaypalTransaction, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoPaypalTransaction) {
+            throw new InvalidArgumentException(sprintf('The MidocoPaypalTransaction property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPaypalTransaction, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPaypalTransaction[] = $item;
         

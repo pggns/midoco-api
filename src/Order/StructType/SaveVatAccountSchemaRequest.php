@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveVatAccountSchemaRequest extends AbstractStructBase
      * The MidocoVatAccountSchema
      * Meta information extracted from the WSDL
      * - ref: MidocoVatAccountSchema
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema $MidocoVatAccountSchema = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema $MidocoVatAccountSchema = null;
     /**
      * Constructor method for SaveVatAccountSchemaRequest
      * @uses SaveVatAccountSchemaRequest::setMidocoVatAccountSchema()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema $midocoVatAccountSchema
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema $midocoVatAccountSchema
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema $midocoVatAccountSchema = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema $midocoVatAccountSchema = null)
     {
         $this
             ->setMidocoVatAccountSchema($midocoVatAccountSchema);
     }
     /**
      * Get MidocoVatAccountSchema value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema|null
      */
-    public function getMidocoVatAccountSchema(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema
+    public function getMidocoVatAccountSchema(): ?\Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema
     {
         return $this->MidocoVatAccountSchema;
     }
     /**
      * Set MidocoVatAccountSchema value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema $midocoVatAccountSchema
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveVatAccountSchemaRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema $midocoVatAccountSchema
+     * @return \Pggns\MidocoApi\Order\StructType\SaveVatAccountSchemaRequest
      */
-    public function setMidocoVatAccountSchema(?\Pggns\MidocoApi\Api\Order\StructType\MidocoVatAccountSchema $midocoVatAccountSchema = null): self
+    public function setMidocoVatAccountSchema(?\Pggns\MidocoApi\Order\StructType\MidocoVatAccountSchema $midocoVatAccountSchema = null): self
     {
         $this->MidocoVatAccountSchema = $midocoVatAccountSchema;
         

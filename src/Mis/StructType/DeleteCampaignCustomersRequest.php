@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class DeleteCampaignCustomersRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoCustomerIdType[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoCustomerIdType[]
      */
     protected ?array $MidocoCustomerId = null;
     /**
@@ -31,7 +31,7 @@ class DeleteCampaignCustomersRequest extends AbstractStructBase
      * Constructor method for DeleteCampaignCustomersRequest
      * @uses DeleteCampaignCustomersRequest::setMidocoCustomerId()
      * @uses DeleteCampaignCustomersRequest::setCampaignId()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCustomerIdType[] $midocoCustomerId
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCustomerIdType[] $midocoCustomerId
      * @param int $campaignId
      */
     public function __construct(?array $midocoCustomerId = null, ?int $campaignId = null)
@@ -42,7 +42,7 @@ class DeleteCampaignCustomersRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCustomerIdType[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCustomerIdType[]
      */
     public function getMidocoCustomerId(): ?array
     {
@@ -63,12 +63,12 @@ class DeleteCampaignCustomersRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteCampaignCustomersRequestMidocoCustomerIdItem) {
             // validation for constraint: itemType
-            if (!$deleteCampaignCustomersRequestMidocoCustomerIdItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoCustomerIdType) {
+            if (!$deleteCampaignCustomersRequestMidocoCustomerIdItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoCustomerIdType) {
                 $invalidValues[] = is_object($deleteCampaignCustomersRequestMidocoCustomerIdItem) ? get_class($deleteCampaignCustomersRequestMidocoCustomerIdItem) : sprintf('%s(%s)', gettype($deleteCampaignCustomersRequestMidocoCustomerIdItem), var_export($deleteCampaignCustomersRequestMidocoCustomerIdItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerId property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoCustomerIdType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerId property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoCustomerIdType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,8 +77,8 @@ class DeleteCampaignCustomersRequest extends AbstractStructBase
     /**
      * Set MidocoCustomerId value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCustomerIdType[] $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteCampaignCustomersRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCustomerIdType[] $midocoCustomerId
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteCampaignCustomersRequest
      */
     public function setMidocoCustomerId(?array $midocoCustomerId = null): self
     {
@@ -93,14 +93,14 @@ class DeleteCampaignCustomersRequest extends AbstractStructBase
     /**
      * Add item to MidocoCustomerId value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCustomerIdType $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteCampaignCustomersRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCustomerIdType $item
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteCampaignCustomersRequest
      */
-    public function addToMidocoCustomerId(\Pggns\MidocoApi\Api\Mis\StructType\MidocoCustomerIdType $item): self
+    public function addToMidocoCustomerId(\Pggns\MidocoApi\Mis\StructType\MidocoCustomerIdType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoCustomerIdType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerId property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoCustomerIdType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoCustomerIdType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerId property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoCustomerIdType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerId[] = $item;
         
@@ -117,7 +117,7 @@ class DeleteCampaignCustomersRequest extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteCampaignCustomersRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteCampaignCustomersRequest
      */
     public function setCampaignId(?int $campaignId = null): self
     {

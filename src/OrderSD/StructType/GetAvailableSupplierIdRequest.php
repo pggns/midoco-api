@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class GetAvailableSupplierIdRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierIdRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierIdRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -74,7 +74,7 @@ class GetAvailableSupplierIdRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierIdRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierIdRequest
      */
     public function setEndDate(?string $endDate = null): self
     {

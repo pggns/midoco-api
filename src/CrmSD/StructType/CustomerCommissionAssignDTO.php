@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CustomerCommissionAssignDTO extends AbstractStructBase
     /**
      * Set commissionId value
      * @param int $commissionId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerCommissionAssignDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerCommissionAssignDTO
      */
     public function setCommissionId(?int $commissionId = null): self
     {
@@ -86,7 +86,7 @@ class CustomerCommissionAssignDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerCommissionAssignDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerCommissionAssignDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -109,7 +109,7 @@ class CustomerCommissionAssignDTO extends AbstractStructBase
     /**
      * Set isPaidToCooperation value
      * @param bool $isPaidToCooperation
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerCommissionAssignDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerCommissionAssignDTO
      */
     public function setIsPaidToCooperation(?bool $isPaidToCooperation = null): self
     {
@@ -132,7 +132,7 @@ class CustomerCommissionAssignDTO extends AbstractStructBase
     /**
      * Set useCooperationTurnover value
      * @param bool $useCooperationTurnover
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerCommissionAssignDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerCommissionAssignDTO
      */
     public function setUseCooperationTurnover(?bool $useCooperationTurnover = null): self
     {

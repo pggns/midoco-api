@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class DeleteOrgunitDatastoresRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoOrgunitDatastore
-     * @var \Pggns\MidocoApi\Api\Order\StructType\DatastoreAssignDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\DatastoreAssignDTO[]
      */
     protected ?array $MidocoOrgunitDatastore = null;
     /**
      * Constructor method for DeleteOrgunitDatastoresRequest
      * @uses DeleteOrgunitDatastoresRequest::setMidocoOrgunitDatastore()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DatastoreAssignDTO[] $midocoOrgunitDatastore
+     * @param \Pggns\MidocoApi\Order\StructType\DatastoreAssignDTO[] $midocoOrgunitDatastore
      */
     public function __construct(?array $midocoOrgunitDatastore = null)
     {
@@ -33,7 +33,7 @@ class DeleteOrgunitDatastoresRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrgunitDatastore value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DatastoreAssignDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\DatastoreAssignDTO[]
      */
     public function getMidocoOrgunitDatastore(): ?array
     {
@@ -54,12 +54,12 @@ class DeleteOrgunitDatastoresRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteOrgunitDatastoresRequestMidocoOrgunitDatastoreItem) {
             // validation for constraint: itemType
-            if (!$deleteOrgunitDatastoresRequestMidocoOrgunitDatastoreItem instanceof \Pggns\MidocoApi\Api\Order\StructType\DatastoreAssignDTO) {
+            if (!$deleteOrgunitDatastoresRequestMidocoOrgunitDatastoreItem instanceof \Pggns\MidocoApi\Order\StructType\DatastoreAssignDTO) {
                 $invalidValues[] = is_object($deleteOrgunitDatastoresRequestMidocoOrgunitDatastoreItem) ? get_class($deleteOrgunitDatastoresRequestMidocoOrgunitDatastoreItem) : sprintf('%s(%s)', gettype($deleteOrgunitDatastoresRequestMidocoOrgunitDatastoreItem), var_export($deleteOrgunitDatastoresRequestMidocoOrgunitDatastoreItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrgunitDatastore property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\DatastoreAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrgunitDatastore property can only contain items of type \Pggns\MidocoApi\Order\StructType\DatastoreAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class DeleteOrgunitDatastoresRequest extends AbstractStructBase
     /**
      * Set MidocoOrgunitDatastore value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DatastoreAssignDTO[] $midocoOrgunitDatastore
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrgunitDatastoresRequest
+     * @param \Pggns\MidocoApi\Order\StructType\DatastoreAssignDTO[] $midocoOrgunitDatastore
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrgunitDatastoresRequest
      */
     public function setMidocoOrgunitDatastore(?array $midocoOrgunitDatastore = null): self
     {
@@ -84,14 +84,14 @@ class DeleteOrgunitDatastoresRequest extends AbstractStructBase
     /**
      * Add item to MidocoOrgunitDatastore value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DatastoreAssignDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrgunitDatastoresRequest
+     * @param \Pggns\MidocoApi\Order\StructType\DatastoreAssignDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrgunitDatastoresRequest
      */
-    public function addToMidocoOrgunitDatastore(\Pggns\MidocoApi\Api\Order\StructType\DatastoreAssignDTO $item): self
+    public function addToMidocoOrgunitDatastore(\Pggns\MidocoApi\Order\StructType\DatastoreAssignDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\DatastoreAssignDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrgunitDatastore property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\DatastoreAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\DatastoreAssignDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrgunitDatastore property can only contain items of type \Pggns\MidocoApi\Order\StructType\DatastoreAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrgunitDatastore[] = $item;
         

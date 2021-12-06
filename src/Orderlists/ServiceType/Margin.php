@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\ServiceType;
+namespace Pggns\MidocoApi\Orderlists\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Margin extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Orderlists\ServiceType\Margin
+     * @return \Pggns\MidocoApi\Orderlists\ServiceType\Margin
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Margin extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MarginListRequest $paramMarginListRequest
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MarginListResponse|bool
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MarginListRequest $paramMarginListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MarginListResponse|bool
      */
-    public function marginDataList(\Pggns\MidocoApi\Api\Orderlists\StructType\MarginListRequest $paramMarginListRequest)
+    public function marginDataList(\Pggns\MidocoApi\Orderlists\StructType\MarginListRequest $paramMarginListRequest)
     {
         try {
             $this->setResult($resultMarginDataList = $this->getSoapClient()->__soapCall('marginDataList', [
@@ -58,15 +58,15 @@ class Margin extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MarginExtListRequest $paramMarginExtListRequest
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MarginExtListResponse|bool
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MarginExtListRequest $paramMarginExtListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MarginExtListResponse|bool
      */
-    public function marginExtDataList(\Pggns\MidocoApi\Api\Orderlists\StructType\MarginExtListRequest $paramMarginExtListRequest)
+    public function marginExtDataList(\Pggns\MidocoApi\Orderlists\StructType\MarginExtListRequest $paramMarginExtListRequest)
     {
         try {
             $this->setResult($resultMarginExtDataList = $this->getSoapClient()->__soapCall('marginExtDataList', [
@@ -83,7 +83,7 @@ class Margin extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MarginExtListResponse|\Pggns\MidocoApi\Api\Orderlists\StructType\MarginListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MarginExtListResponse|\Pggns\MidocoApi\Orderlists\StructType\MarginListResponse
      */
     public function getResult()
     {

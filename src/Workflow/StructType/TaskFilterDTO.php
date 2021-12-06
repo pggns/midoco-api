@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -89,7 +89,7 @@ class TaskFilterDTO extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTaskViewColumns
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns[]
      */
     protected ?array $MidocoTaskViewColumns = null;
     /**
@@ -117,7 +117,7 @@ class TaskFilterDTO extends AbstractStructBase
      * @param string $toDelegationDate
      * @param string $fromPriority
      * @param string $toPriority
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns[] $midocoTaskViewColumns
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns[] $midocoTaskViewColumns
      */
     public function __construct(string $fromDueDate, ?string $taskViewName = null, ?array $userIds = null, ?array $orgUnits = null, ?array $queues = null, ?array $taskTypes = null, ?string $toDueDate = null, ?string $fromDelegationDate = null, ?string $toDelegationDate = null, ?string $fromPriority = null, ?string $toPriority = null, ?array $midocoTaskViewColumns = null)
     {
@@ -146,7 +146,7 @@ class TaskFilterDTO extends AbstractStructBase
     /**
      * Set fromDueDate value
      * @param string $fromDueDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function setFromDueDate(string $fromDueDate): self
     {
@@ -169,7 +169,7 @@ class TaskFilterDTO extends AbstractStructBase
     /**
      * Set taskViewName value
      * @param string $taskViewName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function setTaskViewName(?string $taskViewName = null): self
     {
@@ -219,7 +219,7 @@ class TaskFilterDTO extends AbstractStructBase
      * Set userIds value
      * @throws InvalidArgumentException
      * @param int[] $userIds
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function setUserIds(?array $userIds = null): self
     {
@@ -235,7 +235,7 @@ class TaskFilterDTO extends AbstractStructBase
      * Add item to userIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function addToUserIds(int $item): self
     {
@@ -285,7 +285,7 @@ class TaskFilterDTO extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -301,7 +301,7 @@ class TaskFilterDTO extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function addToOrgUnits(string $item): self
     {
@@ -351,7 +351,7 @@ class TaskFilterDTO extends AbstractStructBase
      * Set queues value
      * @throws InvalidArgumentException
      * @param string[] $queues
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function setQueues(?array $queues = null): self
     {
@@ -367,7 +367,7 @@ class TaskFilterDTO extends AbstractStructBase
      * Add item to queues value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function addToQueues(string $item): self
     {
@@ -417,7 +417,7 @@ class TaskFilterDTO extends AbstractStructBase
      * Set taskTypes value
      * @throws InvalidArgumentException
      * @param string[] $taskTypes
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function setTaskTypes(?array $taskTypes = null): self
     {
@@ -433,7 +433,7 @@ class TaskFilterDTO extends AbstractStructBase
      * Add item to taskTypes value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function addToTaskTypes(string $item): self
     {
@@ -456,7 +456,7 @@ class TaskFilterDTO extends AbstractStructBase
     /**
      * Set toDueDate value
      * @param string $toDueDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function setToDueDate(?string $toDueDate = null): self
     {
@@ -479,7 +479,7 @@ class TaskFilterDTO extends AbstractStructBase
     /**
      * Set fromDelegationDate value
      * @param string $fromDelegationDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function setFromDelegationDate(?string $fromDelegationDate = null): self
     {
@@ -502,7 +502,7 @@ class TaskFilterDTO extends AbstractStructBase
     /**
      * Set toDelegationDate value
      * @param string $toDelegationDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function setToDelegationDate(?string $toDelegationDate = null): self
     {
@@ -525,7 +525,7 @@ class TaskFilterDTO extends AbstractStructBase
     /**
      * Set fromPriority value
      * @param string $fromPriority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function setFromPriority(?string $fromPriority = null): self
     {
@@ -548,7 +548,7 @@ class TaskFilterDTO extends AbstractStructBase
     /**
      * Set toPriority value
      * @param string $toPriority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function setToPriority(?string $toPriority = null): self
     {
@@ -562,7 +562,7 @@ class TaskFilterDTO extends AbstractStructBase
     }
     /**
      * Get MidocoTaskViewColumns value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns[]
      */
     public function getMidocoTaskViewColumns(): ?array
     {
@@ -583,12 +583,12 @@ class TaskFilterDTO extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $taskFilterDTOMidocoTaskViewColumnsItem) {
             // validation for constraint: itemType
-            if (!$taskFilterDTOMidocoTaskViewColumnsItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns) {
+            if (!$taskFilterDTOMidocoTaskViewColumnsItem instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns) {
                 $invalidValues[] = is_object($taskFilterDTOMidocoTaskViewColumnsItem) ? get_class($taskFilterDTOMidocoTaskViewColumnsItem) : sprintf('%s(%s)', gettype($taskFilterDTOMidocoTaskViewColumnsItem), var_export($taskFilterDTOMidocoTaskViewColumnsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTaskViewColumns property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTaskViewColumns property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -597,8 +597,8 @@ class TaskFilterDTO extends AbstractStructBase
     /**
      * Set MidocoTaskViewColumns value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns[] $midocoTaskViewColumns
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns[] $midocoTaskViewColumns
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
     public function setMidocoTaskViewColumns(?array $midocoTaskViewColumns = null): self
     {
@@ -613,14 +613,14 @@ class TaskFilterDTO extends AbstractStructBase
     /**
      * Add item to MidocoTaskViewColumns value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskFilterDTO
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskFilterDTO
      */
-    public function addToMidocoTaskViewColumns(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns $item): self
+    public function addToMidocoTaskViewColumns(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns) {
-            throw new InvalidArgumentException(sprintf('The MidocoTaskViewColumns property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns) {
+            throw new InvalidArgumentException(sprintf('The MidocoTaskViewColumns property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTaskViewColumns[] = $item;
         

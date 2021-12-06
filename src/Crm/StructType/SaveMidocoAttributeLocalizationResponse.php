@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoAttributeLocalizationResponse extends AbstractStructBase
      * The MidocoSystemAttributeLocalization
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeLocalization
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\AttributeDefinitionLocalDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\AttributeDefinitionLocalDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\AttributeDefinitionLocalDTO $MidocoSystemAttributeLocalization = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\AttributeDefinitionLocalDTO $MidocoSystemAttributeLocalization = null;
     /**
      * Constructor method for SaveMidocoAttributeLocalizationResponse
      * @uses SaveMidocoAttributeLocalizationResponse::setMidocoSystemAttributeLocalization()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     * @param \Pggns\MidocoApi\Crm\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null)
     {
         $this
             ->setMidocoSystemAttributeLocalization($midocoSystemAttributeLocalization);
     }
     /**
      * Get MidocoSystemAttributeLocalization value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AttributeDefinitionLocalDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\AttributeDefinitionLocalDTO|null
      */
-    public function getMidocoSystemAttributeLocalization(): ?\Pggns\MidocoApi\Api\Crm\StructType\AttributeDefinitionLocalDTO
+    public function getMidocoSystemAttributeLocalization(): ?\Pggns\MidocoApi\Crm\StructType\AttributeDefinitionLocalDTO
     {
         return $this->MidocoSystemAttributeLocalization;
     }
     /**
      * Set MidocoSystemAttributeLocalization value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveMidocoAttributeLocalizationResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveMidocoAttributeLocalizationResponse
      */
-    public function setMidocoSystemAttributeLocalization(?\Pggns\MidocoApi\Api\Crm\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null): self
+    public function setMidocoSystemAttributeLocalization(?\Pggns\MidocoApi\Crm\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null): self
     {
         $this->MidocoSystemAttributeLocalization = $midocoSystemAttributeLocalization;
         

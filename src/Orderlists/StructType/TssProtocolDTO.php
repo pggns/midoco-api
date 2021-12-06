@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set clientId value
      * @param string $clientId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setClientId(?string $clientId = null): self
     {
@@ -174,7 +174,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -197,7 +197,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -220,7 +220,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set endTimestamp value
      * @param string $endTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setEndTimestamp(?string $endTimestamp = null): self
     {
@@ -243,7 +243,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set exportId value
      * @param string $exportId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setExportId(?string $exportId = null): self
     {
@@ -266,7 +266,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set extUrl value
      * @param string $extUrl
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setExtUrl(?string $extUrl = null): self
     {
@@ -289,7 +289,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set isAutomatic value
      * @param bool $isAutomatic
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setIsAutomatic(?bool $isAutomatic = null): self
     {
@@ -312,7 +312,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set numRecords value
      * @param int $numRecords
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setNumRecords(?int $numRecords = null): self
     {
@@ -335,7 +335,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -358,7 +358,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set startTimestamp value
      * @param string $startTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setStartTimestamp(?string $startTimestamp = null): self
     {
@@ -381,7 +381,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -404,7 +404,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setTssId(?string $tssId = null): self
     {
@@ -427,7 +427,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set tssProtocolId value
      * @param int $tssProtocolId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setTssProtocolId(?int $tssProtocolId = null): self
     {
@@ -450,7 +450,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set tssSystem value
      * @param string $tssSystem
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setTssSystem(?string $tssSystem = null): self
     {
@@ -473,7 +473,7 @@ class TssProtocolDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TssProtocolDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TssProtocolDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

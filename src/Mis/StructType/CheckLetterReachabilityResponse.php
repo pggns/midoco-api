@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -42,7 +42,7 @@ class CheckLetterReachabilityResponse extends AbstractStructBase
     /**
      * Set isByLetterReachable value
      * @param bool $isByLetterReachable
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CheckLetterReachabilityResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\CheckLetterReachabilityResponse
      */
     public function setIsByLetterReachable(?bool $isByLetterReachable = null): self
     {

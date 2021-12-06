@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class SearchKSichVExportProtocolResponse extends AbstractStructBase
      * Set MidocoTssExportProtocol value
      * @throws InvalidArgumentException
      * @param string[] $midocoTssExportProtocol
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchKSichVExportProtocolResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchKSichVExportProtocolResponse
      */
     public function setMidocoTssExportProtocol(?array $midocoTssExportProtocol = null): self
     {
@@ -85,7 +85,7 @@ class SearchKSichVExportProtocolResponse extends AbstractStructBase
      * Add item to MidocoTssExportProtocol value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchKSichVExportProtocolResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchKSichVExportProtocolResponse
      */
     public function addToMidocoTssExportProtocol(string $item): self
     {

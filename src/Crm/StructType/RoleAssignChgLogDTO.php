@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class RoleAssignChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\RoleAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\RoleAssignChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -102,7 +102,7 @@ class RoleAssignChgLogDTO extends AbstractStructBase
     /**
      * Set chgUserId value
      * @param int $chgUserId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\RoleAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\RoleAssignChgLogDTO
      */
     public function setChgUserId(?int $chgUserId = null): self
     {
@@ -125,7 +125,7 @@ class RoleAssignChgLogDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\RoleAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\RoleAssignChgLogDTO
      */
     public function setRoleId(?int $roleId = null): self
     {
@@ -148,7 +148,7 @@ class RoleAssignChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\RoleAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\RoleAssignChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -171,7 +171,7 @@ class RoleAssignChgLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\RoleAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\RoleAssignChgLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -194,7 +194,7 @@ class RoleAssignChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\RoleAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\RoleAssignChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

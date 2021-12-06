@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveMidocoAttributeChoiceValueRequest extends AbstractStructBase
      * The MidocoSystemAttributeChoiceValue
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeChoiceValue
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO|null
+     * @var \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO $MidocoSystemAttributeChoiceValue = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO $MidocoSystemAttributeChoiceValue = null;
     /**
      * The isNew
      * @var bool|null
@@ -29,10 +29,10 @@ class SaveMidocoAttributeChoiceValueRequest extends AbstractStructBase
      * Constructor method for SaveMidocoAttributeChoiceValueRequest
      * @uses SaveMidocoAttributeChoiceValueRequest::setMidocoSystemAttributeChoiceValue()
      * @uses SaveMidocoAttributeChoiceValueRequest::setIsNew()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
+     * @param \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
      * @param bool $isNew
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null, ?bool $isNew = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null, ?bool $isNew = null)
     {
         $this
             ->setMidocoSystemAttributeChoiceValue($midocoSystemAttributeChoiceValue)
@@ -40,18 +40,18 @@ class SaveMidocoAttributeChoiceValueRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSystemAttributeChoiceValue value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO|null
+     * @return \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO|null
      */
-    public function getMidocoSystemAttributeChoiceValue(): ?\Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO
+    public function getMidocoSystemAttributeChoiceValue(): ?\Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO
     {
         return $this->MidocoSystemAttributeChoiceValue;
     }
     /**
      * Set MidocoSystemAttributeChoiceValue value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SaveMidocoAttributeChoiceValueRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
+     * @return \Pggns\MidocoApi\Booking\StructType\SaveMidocoAttributeChoiceValueRequest
      */
-    public function setMidocoSystemAttributeChoiceValue(?\Pggns\MidocoApi\Api\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null): self
+    public function setMidocoSystemAttributeChoiceValue(?\Pggns\MidocoApi\Booking\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null): self
     {
         $this->MidocoSystemAttributeChoiceValue = $midocoSystemAttributeChoiceValue;
         
@@ -68,7 +68,7 @@ class SaveMidocoAttributeChoiceValueRequest extends AbstractStructBase
     /**
      * Set isNew value
      * @param bool $isNew
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SaveMidocoAttributeChoiceValueRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SaveMidocoAttributeChoiceValueRequest
      */
     public function setIsNew(?bool $isNew = null): self
     {

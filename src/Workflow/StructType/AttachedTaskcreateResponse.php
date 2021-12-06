@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class AttachedTaskcreateResponse extends AbstractStructBase
      * The MidocoTask
      * Meta information extracted from the WSDL
      * - ref: MidocoTask
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\Task|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\Task|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\Task $MidocoTask = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\Task $MidocoTask = null;
     /**
      * Constructor method for AttachedTaskcreateResponse
      * @uses AttachedTaskcreateResponse::setMidocoTask()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\Task $midocoTask
+     * @param \Pggns\MidocoApi\Workflow\StructType\Task $midocoTask
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\Task $midocoTask = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\Task $midocoTask = null)
     {
         $this
             ->setMidocoTask($midocoTask);
     }
     /**
      * Get MidocoTask value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task|null
      */
-    public function getMidocoTask(): ?\Pggns\MidocoApi\Api\Workflow\StructType\Task
+    public function getMidocoTask(): ?\Pggns\MidocoApi\Workflow\StructType\Task
     {
         return $this->MidocoTask;
     }
     /**
      * Set MidocoTask value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\Task $midocoTask
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\AttachedTaskcreateResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\Task $midocoTask
+     * @return \Pggns\MidocoApi\Workflow\StructType\AttachedTaskcreateResponse
      */
-    public function setMidocoTask(?\Pggns\MidocoApi\Api\Workflow\StructType\Task $midocoTask = null): self
+    public function setMidocoTask(?\Pggns\MidocoApi\Workflow\StructType\Task $midocoTask = null): self
     {
         $this->MidocoTask = $midocoTask;
         

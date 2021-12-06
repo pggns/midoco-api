@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetMidocoCachedDataKeyRequest extends AbstractStructBase
     /**
      * Set loaderKey value
      * @param string $loaderKey
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetMidocoCachedDataKeyRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetMidocoCachedDataKeyRequest
      */
     public function setLoaderKey(?string $loaderKey = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetAvailableOrderLockReasonDescriptionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderLockReasonDescription
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDescriptionDTO[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDescriptionDTO[]
      */
     protected ?array $MidocoOrderLockReasonDescription = null;
     /**
      * Constructor method for GetAvailableOrderLockReasonDescriptionsResponse
      * @uses GetAvailableOrderLockReasonDescriptionsResponse::setMidocoOrderLockReasonDescription()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDescriptionDTO[] $midocoOrderLockReasonDescription
+     * @param \Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDescriptionDTO[] $midocoOrderLockReasonDescription
      */
     public function __construct(?array $midocoOrderLockReasonDescription = null)
     {
@@ -36,7 +36,7 @@ class GetAvailableOrderLockReasonDescriptionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderLockReasonDescription value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDescriptionDTO[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDescriptionDTO[]
      */
     public function getMidocoOrderLockReasonDescription(): ?array
     {
@@ -57,12 +57,12 @@ class GetAvailableOrderLockReasonDescriptionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailableOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getAvailableOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDescriptionDTO) {
+            if (!$getAvailableOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem instanceof \Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDescriptionDTO) {
                 $invalidValues[] = is_object($getAvailableOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem) ? get_class($getAvailableOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem) : sprintf('%s(%s)', gettype($getAvailableOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem), var_export($getAvailableOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderLockReasonDescription property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderLockReasonDescription property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetAvailableOrderLockReasonDescriptionsResponse extends AbstractStructBase
     /**
      * Set MidocoOrderLockReasonDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDescriptionDTO[] $midocoOrderLockReasonDescription
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableOrderLockReasonDescriptionsResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDescriptionDTO[] $midocoOrderLockReasonDescription
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableOrderLockReasonDescriptionsResponse
      */
     public function setMidocoOrderLockReasonDescription(?array $midocoOrderLockReasonDescription = null): self
     {
@@ -87,14 +87,14 @@ class GetAvailableOrderLockReasonDescriptionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderLockReasonDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableOrderLockReasonDescriptionsResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDescriptionDTO $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableOrderLockReasonDescriptionsResponse
      */
-    public function addToMidocoOrderLockReasonDescription(\Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDescriptionDTO $item): self
+    public function addToMidocoOrderLockReasonDescription(\Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderLockReasonDescription property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderLockReasonDescription property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderLockReasonDescription[] = $item;
         

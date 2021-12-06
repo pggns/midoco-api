@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoCCAccessListCriteriaType extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListCriteriaType
      */
     public function setUserId(?int $userId = null): self
     {
@@ -86,7 +86,7 @@ class MidocoCCAccessListCriteriaType extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListCriteriaType
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -109,7 +109,7 @@ class MidocoCCAccessListCriteriaType extends AbstractStructBase
     /**
      * Set dateFrom value
      * @param string $dateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListCriteriaType
      */
     public function setDateFrom(?string $dateFrom = null): self
     {
@@ -132,7 +132,7 @@ class MidocoCCAccessListCriteriaType extends AbstractStructBase
     /**
      * Set dateTo value
      * @param string $dateTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListCriteriaType
      */
     public function setDateTo(?string $dateTo = null): self
     {

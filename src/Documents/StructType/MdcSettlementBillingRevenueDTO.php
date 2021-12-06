@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MdcSettlementBillingRevenueDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingRevenueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingRevenueDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -134,7 +134,7 @@ class MdcSettlementBillingRevenueDTO extends AbstractStructBase
     /**
      * Set amountProPassenger value
      * @param float $amountProPassenger
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingRevenueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingRevenueDTO
      */
     public function setAmountProPassenger(?float $amountProPassenger = null): self
     {
@@ -157,7 +157,7 @@ class MdcSettlementBillingRevenueDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingRevenueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingRevenueDTO
      */
     public function setId(?int $id = null): self
     {
@@ -180,7 +180,7 @@ class MdcSettlementBillingRevenueDTO extends AbstractStructBase
     /**
      * Set mdcSettlementBillingId value
      * @param int $mdcSettlementBillingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingRevenueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingRevenueDTO
      */
     public function setMdcSettlementBillingId(?int $mdcSettlementBillingId = null): self
     {
@@ -203,7 +203,7 @@ class MdcSettlementBillingRevenueDTO extends AbstractStructBase
     /**
      * Set noOfPassengers value
      * @param int $noOfPassengers
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingRevenueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingRevenueDTO
      */
     public function setNoOfPassengers(?int $noOfPassengers = null): self
     {
@@ -226,7 +226,7 @@ class MdcSettlementBillingRevenueDTO extends AbstractStructBase
     /**
      * Set percentFromAmount value
      * @param float $percentFromAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingRevenueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingRevenueDTO
      */
     public function setPercentFromAmount(?float $percentFromAmount = null): self
     {
@@ -249,7 +249,7 @@ class MdcSettlementBillingRevenueDTO extends AbstractStructBase
     /**
      * Set settlementMonth value
      * @param string $settlementMonth
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingRevenueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingRevenueDTO
      */
     public function setSettlementMonth(?string $settlementMonth = null): self
     {
@@ -272,7 +272,7 @@ class MdcSettlementBillingRevenueDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingRevenueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingRevenueDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -295,7 +295,7 @@ class MdcSettlementBillingRevenueDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingRevenueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingRevenueDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -318,7 +318,7 @@ class MdcSettlementBillingRevenueDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MdcSettlementBillingRevenueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MdcSettlementBillingRevenueDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

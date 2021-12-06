@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoSellPassengerInfo extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassengerInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassengerInfo
      */
     public function setName(?string $name = null): self
     {
@@ -102,7 +102,7 @@ class MidocoSellPassengerInfo extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassengerInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassengerInfo
      */
     public function setForename(?string $forename = null): self
     {
@@ -125,7 +125,7 @@ class MidocoSellPassengerInfo extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassengerInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassengerInfo
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -148,7 +148,7 @@ class MidocoSellPassengerInfo extends AbstractStructBase
     /**
      * Set crsImportedName value
      * @param string $crsImportedName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassengerInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassengerInfo
      */
     public function setCrsImportedName(?string $crsImportedName = null): self
     {
@@ -171,7 +171,7 @@ class MidocoSellPassengerInfo extends AbstractStructBase
     /**
      * Set crsImportedSalutation value
      * @param string $crsImportedSalutation
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassengerInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassengerInfo
      */
     public function setCrsImportedSalutation(?string $crsImportedSalutation = null): self
     {
@@ -194,7 +194,7 @@ class MidocoSellPassengerInfo extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassengerInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassengerInfo
      */
     public function setTitle(?string $title = null): self
     {

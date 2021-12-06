@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoCrsSystemResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrsSystem
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrsSystem[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoCrsSystem[]
      */
     protected ?array $MidocoCrsSystem = null;
     /**
      * Constructor method for GetMidocoCrsSystemResponse
      * @uses GetMidocoCrsSystemResponse::setMidocoCrsSystem()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrsSystem[] $midocoCrsSystem
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCrsSystem[] $midocoCrsSystem
      */
     public function __construct(?array $midocoCrsSystem = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoCrsSystemResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrsSystem value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrsSystem[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCrsSystem[]
      */
     public function getMidocoCrsSystem(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoCrsSystemResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoCrsSystemResponseMidocoCrsSystemItem) {
             // validation for constraint: itemType
-            if (!$getMidocoCrsSystemResponseMidocoCrsSystemItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrsSystem) {
+            if (!$getMidocoCrsSystemResponseMidocoCrsSystemItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCrsSystem) {
                 $invalidValues[] = is_object($getMidocoCrsSystemResponseMidocoCrsSystemItem) ? get_class($getMidocoCrsSystemResponseMidocoCrsSystemItem) : sprintf('%s(%s)', gettype($getMidocoCrsSystemResponseMidocoCrsSystemItem), var_export($getMidocoCrsSystemResponseMidocoCrsSystemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrsSystem property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrsSystem, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrsSystem property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCrsSystem, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoCrsSystemResponse extends AbstractStructBase
     /**
      * Set MidocoCrsSystem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrsSystem[] $midocoCrsSystem
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMidocoCrsSystemResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCrsSystem[] $midocoCrsSystem
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMidocoCrsSystemResponse
      */
     public function setMidocoCrsSystem(?array $midocoCrsSystem = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoCrsSystemResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrsSystem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrsSystem $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMidocoCrsSystemResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCrsSystem $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMidocoCrsSystemResponse
      */
-    public function addToMidocoCrsSystem(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrsSystem $item): self
+    public function addToMidocoCrsSystem(\Pggns\MidocoApi\Orderlists\StructType\MidocoCrsSystem $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrsSystem) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrsSystem property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrsSystem, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCrsSystem) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrsSystem property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCrsSystem, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrsSystem[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoCcReportRecord extends AbstractStructBase
     /**
      * Set adapter value
      * @param string $adapter
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord
      */
     public function setAdapter(?string $adapter = null): self
     {
@@ -102,7 +102,7 @@ class MidocoCcReportRecord extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -125,7 +125,7 @@ class MidocoCcReportRecord extends AbstractStructBase
     /**
      * Set sumExported value
      * @param float $sumExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord
      */
     public function setSumExported(?float $sumExported = null): self
     {
@@ -148,7 +148,7 @@ class MidocoCcReportRecord extends AbstractStructBase
     /**
      * Set sumCreated value
      * @param float $sumCreated
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord
      */
     public function setSumCreated(?float $sumCreated = null): self
     {
@@ -171,7 +171,7 @@ class MidocoCcReportRecord extends AbstractStructBase
     /**
      * Set countExported value
      * @param int $countExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord
      */
     public function setCountExported(?int $countExported = null): self
     {
@@ -194,7 +194,7 @@ class MidocoCcReportRecord extends AbstractStructBase
     /**
      * Set countCreated value
      * @param int $countCreated
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcReportRecord
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcReportRecord
      */
     public function setCountCreated(?int $countCreated = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class UnitModuleDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\UnitModuleDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModuleDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -86,7 +86,7 @@ class UnitModuleDTO extends AbstractStructBase
     /**
      * Set inheritable value
      * @param bool $inheritable
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\UnitModuleDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModuleDTO
      */
     public function setInheritable(?bool $inheritable = null): self
     {
@@ -109,7 +109,7 @@ class UnitModuleDTO extends AbstractStructBase
     /**
      * Set modulId value
      * @param string $modulId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\UnitModuleDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModuleDTO
      */
     public function setModulId(?string $modulId = null): self
     {
@@ -132,7 +132,7 @@ class UnitModuleDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\UnitModuleDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModuleDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

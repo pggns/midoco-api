@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetMerlinExportStringResponse extends AbstractStructBase
     /**
      * Set responseString value
      * @param string $responseString
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMerlinExportStringResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMerlinExportStringResponse
      */
     public function setResponseString(?string $responseString = null): self
     {

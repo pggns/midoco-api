@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class AttributePositionDTO extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributePositionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributePositionDTO
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -78,7 +78,7 @@ class AttributePositionDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributePositionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributePositionDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -101,7 +101,7 @@ class AttributePositionDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AttributePositionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AttributePositionDTO
      */
     public function setType(?string $type = null): self
     {

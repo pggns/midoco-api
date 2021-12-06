@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SSOFacesResponse extends AbstractStructBase
     /**
      * Set targetUrl value
      * @param string $targetUrl
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SSOFacesResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SSOFacesResponse
      */
     public function setTargetUrl(?string $targetUrl = null): self
     {
@@ -86,7 +86,7 @@ class SSOFacesResponse extends AbstractStructBase
     /**
      * Set sessionId value
      * @param string $sessionId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SSOFacesResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SSOFacesResponse
      */
     public function setSessionId(?string $sessionId = null): self
     {
@@ -109,7 +109,7 @@ class SSOFacesResponse extends AbstractStructBase
     /**
      * Set samlResponseInBase64 value
      * @param string $samlResponseInBase64
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SSOFacesResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SSOFacesResponse
      */
     public function setSamlResponseInBase64(?string $samlResponseInBase64 = null): self
     {
@@ -132,7 +132,7 @@ class SSOFacesResponse extends AbstractStructBase
     /**
      * Set samlDeflatedSamlResponseWithinHTTPGET value
      * @param string $samlDeflatedSamlResponseWithinHTTPGET
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SSOFacesResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SSOFacesResponse
      */
     public function setSamlDeflatedSamlResponseWithinHTTPGET(?string $samlDeflatedSamlResponseWithinHTTPGET = null): self
     {

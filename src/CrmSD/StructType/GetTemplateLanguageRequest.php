@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetTemplateLanguageRequest extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetTemplateLanguageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTemplateLanguageRequest
      */
     public function setTemplateId(?int $templateId = null): self
     {
@@ -78,7 +78,7 @@ class GetTemplateLanguageRequest extends AbstractStructBase
     /**
      * Set languageId value
      * @param string $languageId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetTemplateLanguageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTemplateLanguageRequest
      */
     public function setLanguageId(?string $languageId = null): self
     {
@@ -101,7 +101,7 @@ class GetTemplateLanguageRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetTemplateLanguageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTemplateLanguageRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

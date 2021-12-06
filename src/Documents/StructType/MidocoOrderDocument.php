@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoOrderDocument extends OrderDocumentDTO
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderDocument
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +70,7 @@ class MidocoOrderDocument extends OrderDocumentDTO
     /**
      * Set orgunitDocument value
      * @param bool $orgunitDocument
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderDocument
      */
     public function setOrgunitDocument(?bool $orgunitDocument = null): self
     {

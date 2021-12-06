@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set bookingAmount value
      * @param float $bookingAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setBookingAmount(?float $bookingAmount = null): self
     {
@@ -174,7 +174,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set bookingPeriod value
      * @param int $bookingPeriod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setBookingPeriod(?int $bookingPeriod = null): self
     {
@@ -197,7 +197,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -220,7 +220,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -243,7 +243,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -266,7 +266,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set creditEntry value
      * @param string $creditEntry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setCreditEntry(?string $creditEntry = null): self
     {
@@ -289,7 +289,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -312,7 +312,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set debitEntry value
      * @param string $debitEntry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setDebitEntry(?string $debitEntry = null): self
     {
@@ -335,7 +335,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set deferralId value
      * @param int $deferralId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setDeferralId(?int $deferralId = null): self
     {
@@ -358,7 +358,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set deferralPositionId value
      * @param int $deferralPositionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setDeferralPositionId(?int $deferralPositionId = null): self
     {
@@ -381,7 +381,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -404,7 +404,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -427,7 +427,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -450,7 +450,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -473,7 +473,7 @@ class InvoiceDeferralPositionDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\InvoiceDeferralPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\InvoiceDeferralPositionDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

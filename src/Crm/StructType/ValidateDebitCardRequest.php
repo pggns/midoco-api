@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class ValidateDebitCardRequest extends AbstractStructBase
      * The MidocoCrmDebitCard
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmDebitCard
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard $MidocoCrmDebitCard = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $MidocoCrmDebitCard = null;
     /**
      * Constructor method for ValidateDebitCardRequest
      * @uses ValidateDebitCardRequest::setMidocoCrmDebitCard()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null)
     {
         $this
             ->setMidocoCrmDebitCard($midocoCrmDebitCard);
     }
     /**
      * Get MidocoCrmDebitCard value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard|null
      */
-    public function getMidocoCrmDebitCard(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard
+    public function getMidocoCrmDebitCard(): ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard
     {
         return $this->MidocoCrmDebitCard;
     }
     /**
      * Set MidocoCrmDebitCard value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ValidateDebitCardRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
+     * @return \Pggns\MidocoApi\Crm\StructType\ValidateDebitCardRequest
      */
-    public function setMidocoCrmDebitCard(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null): self
+    public function setMidocoCrmDebitCard(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null): self
     {
         $this->MidocoCrmDebitCard = $midocoCrmDebitCard;
         

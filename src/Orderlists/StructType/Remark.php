@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -75,7 +75,7 @@ class Remark extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Remark
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Remark
      */
     public function setPosition(int $position): self
     {
@@ -98,7 +98,7 @@ class Remark extends AbstractStructBase
     /**
      * Set print_allowed value
      * @param bool $print_allowed
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Remark
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Remark
      */
     public function setPrint_allowed(?bool $print_allowed = null): self
     {
@@ -121,7 +121,7 @@ class Remark extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Remark
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Remark
      */
     public function setText(?string $text = null): self
     {
@@ -144,7 +144,7 @@ class Remark extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Remark
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Remark
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -167,7 +167,7 @@ class Remark extends AbstractStructBase
     /**
      * Set servicePosition value
      * @param int $servicePosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Remark
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Remark
      */
     public function setServicePosition(?int $servicePosition = null): self
     {

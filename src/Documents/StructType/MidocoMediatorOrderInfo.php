@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -167,7 +167,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -190,7 +190,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -213,7 +213,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -236,7 +236,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -259,7 +259,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setName(?string $name = null): self
     {
@@ -282,7 +282,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setForename(?string $forename = null): self
     {
@@ -305,7 +305,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set companyName value
      * @param string $companyName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setCompanyName(?string $companyName = null): self
     {
@@ -328,7 +328,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -351,7 +351,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -374,7 +374,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -397,7 +397,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -420,7 +420,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -443,7 +443,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setStatus(?string $status = null): self
     {
@@ -466,7 +466,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set itemPrice value
      * @param float $itemPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setItemPrice(?float $itemPrice = null): self
     {
@@ -489,7 +489,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set settlementMonth value
      * @param string $settlementMonth
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setSettlementMonth(?string $settlementMonth = null): self
     {
@@ -512,7 +512,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set mediatorAmount value
      * @param float $mediatorAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setMediatorAmount(?float $mediatorAmount = null): self
     {
@@ -535,7 +535,7 @@ class MidocoMediatorOrderInfo extends AbstractStructBase
     /**
      * Set checkedByFormular value
      * @param bool $checkedByFormular
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorOrderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorOrderInfo
      */
     public function setCheckedByFormular(?bool $checkedByFormular = null): self
     {

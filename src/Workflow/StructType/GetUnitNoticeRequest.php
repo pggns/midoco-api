@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetUnitNoticeRequest extends AbstractStructBase
     /**
      * Set midocoOrgUnitName value
      * @param string $midocoOrgUnitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetUnitNoticeRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetUnitNoticeRequest
      */
     public function setMidocoOrgUnitName(?string $midocoOrgUnitName = null): self
     {

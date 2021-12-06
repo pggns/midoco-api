@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MidocoDepositListSumsType extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -110,7 +110,7 @@ class MidocoDepositListSumsType extends AbstractStructBase
     /**
      * Set invoicedAmount value
      * @param float $invoicedAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType
      */
     public function setInvoicedAmount(?float $invoicedAmount = null): self
     {
@@ -133,7 +133,7 @@ class MidocoDepositListSumsType extends AbstractStructBase
     /**
      * Set payedAmount value
      * @param float $payedAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType
      */
     public function setPayedAmount(?float $payedAmount = null): self
     {
@@ -156,7 +156,7 @@ class MidocoDepositListSumsType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -179,7 +179,7 @@ class MidocoDepositListSumsType extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -202,7 +202,7 @@ class MidocoDepositListSumsType extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -225,7 +225,7 @@ class MidocoDepositListSumsType extends AbstractStructBase
     /**
      * Set inkassoPrice value
      * @param float $inkassoPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListSumsType
      */
     public function setInkassoPrice(?float $inkassoPrice = null): self
     {

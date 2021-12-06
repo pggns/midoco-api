@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAssignedMidocoChargeOu
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoChargeOuDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\AssignedMidocoChargeOuDTO[]
      */
     protected ?array $MidocoAssignedMidocoChargeOu = null;
     /**
      * Constructor method for MidocoCrmMidocoCharge
      * @uses MidocoCrmMidocoCharge::setMidocoAssignedMidocoChargeOu()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoChargeOuDTO[] $midocoAssignedMidocoChargeOu
+     * @param \Pggns\MidocoApi\Order\StructType\AssignedMidocoChargeOuDTO[] $midocoAssignedMidocoChargeOu
      */
     public function __construct(?array $midocoAssignedMidocoChargeOu = null)
     {
@@ -34,7 +34,7 @@ class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
     }
     /**
      * Get MidocoAssignedMidocoChargeOu value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoChargeOuDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\AssignedMidocoChargeOuDTO[]
      */
     public function getMidocoAssignedMidocoChargeOu(): ?array
     {
@@ -55,12 +55,12 @@ class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
         $invalidValues = [];
         foreach ($values as $midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem instanceof \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoChargeOuDTO) {
+            if (!$midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem instanceof \Pggns\MidocoApi\Order\StructType\AssignedMidocoChargeOuDTO) {
                 $invalidValues[] = is_object($midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem) ? get_class($midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem) : sprintf('%s(%s)', gettype($midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem), var_export($midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAssignedMidocoChargeOu property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoChargeOuDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAssignedMidocoChargeOu property can only contain items of type \Pggns\MidocoApi\Order\StructType\AssignedMidocoChargeOuDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
     /**
      * Set MidocoAssignedMidocoChargeOu value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoChargeOuDTO[] $midocoAssignedMidocoChargeOu
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCrmMidocoCharge
+     * @param \Pggns\MidocoApi\Order\StructType\AssignedMidocoChargeOuDTO[] $midocoAssignedMidocoChargeOu
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCrmMidocoCharge
      */
     public function setMidocoAssignedMidocoChargeOu(?array $midocoAssignedMidocoChargeOu = null): self
     {
@@ -85,14 +85,14 @@ class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
     /**
      * Add item to MidocoAssignedMidocoChargeOu value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoChargeOuDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCrmMidocoCharge
+     * @param \Pggns\MidocoApi\Order\StructType\AssignedMidocoChargeOuDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCrmMidocoCharge
      */
-    public function addToMidocoAssignedMidocoChargeOu(\Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoChargeOuDTO $item): self
+    public function addToMidocoAssignedMidocoChargeOu(\Pggns\MidocoApi\Order\StructType\AssignedMidocoChargeOuDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoChargeOuDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoChargeOu property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoChargeOuDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\AssignedMidocoChargeOuDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoChargeOu property can only contain items of type \Pggns\MidocoApi\Order\StructType\AssignedMidocoChargeOuDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAssignedMidocoChargeOu[] = $item;
         

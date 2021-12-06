@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,9 +20,9 @@ class ListAssignedMidocoFeeTypesRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoFeeType
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType $MidocoFeeType = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType $MidocoFeeType = null;
     /**
      * The referenceDate
      * @var string|null
@@ -32,10 +32,10 @@ class ListAssignedMidocoFeeTypesRequest extends AbstractStructBase
      * Constructor method for ListAssignedMidocoFeeTypesRequest
      * @uses ListAssignedMidocoFeeTypesRequest::setMidocoFeeType()
      * @uses ListAssignedMidocoFeeTypesRequest::setReferenceDate()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType $midocoFeeType
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType $midocoFeeType
      * @param string $referenceDate
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType $midocoFeeType = null, ?string $referenceDate = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType $midocoFeeType = null, ?string $referenceDate = null)
     {
         $this
             ->setMidocoFeeType($midocoFeeType)
@@ -43,18 +43,18 @@ class ListAssignedMidocoFeeTypesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoFeeType value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType|null
      */
-    public function getMidocoFeeType(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType
+    public function getMidocoFeeType(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType
     {
         return $this->MidocoFeeType;
     }
     /**
      * Set MidocoFeeType value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType $midocoFeeType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ListAssignedMidocoFeeTypesRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType $midocoFeeType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ListAssignedMidocoFeeTypesRequest
      */
-    public function setMidocoFeeType(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType $midocoFeeType = null): self
+    public function setMidocoFeeType(?\Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType $midocoFeeType = null): self
     {
         $this->MidocoFeeType = $midocoFeeType;
         
@@ -71,7 +71,7 @@ class ListAssignedMidocoFeeTypesRequest extends AbstractStructBase
     /**
      * Set referenceDate value
      * @param string $referenceDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ListAssignedMidocoFeeTypesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ListAssignedMidocoFeeTypesRequest
      */
     public function setReferenceDate(?string $referenceDate = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetCollectiveInvoiceSettingsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCollectiveInvoiceSetting
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO[]
      */
     protected ?array $MidocoCollectiveInvoiceSetting = null;
     /**
      * Constructor method for GetCollectiveInvoiceSettingsResponse
      * @uses GetCollectiveInvoiceSettingsResponse::setMidocoCollectiveInvoiceSetting()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO[] $midocoCollectiveInvoiceSetting
+     * @param \Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO[] $midocoCollectiveInvoiceSetting
      */
     public function __construct(?array $midocoCollectiveInvoiceSetting = null)
     {
@@ -36,7 +36,7 @@ class GetCollectiveInvoiceSettingsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCollectiveInvoiceSetting value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO[]
      */
     public function getMidocoCollectiveInvoiceSetting(): ?array
     {
@@ -57,12 +57,12 @@ class GetCollectiveInvoiceSettingsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCollectiveInvoiceSettingsResponseMidocoCollectiveInvoiceSettingItem) {
             // validation for constraint: itemType
-            if (!$getCollectiveInvoiceSettingsResponseMidocoCollectiveInvoiceSettingItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO) {
+            if (!$getCollectiveInvoiceSettingsResponseMidocoCollectiveInvoiceSettingItem instanceof \Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO) {
                 $invalidValues[] = is_object($getCollectiveInvoiceSettingsResponseMidocoCollectiveInvoiceSettingItem) ? get_class($getCollectiveInvoiceSettingsResponseMidocoCollectiveInvoiceSettingItem) : sprintf('%s(%s)', gettype($getCollectiveInvoiceSettingsResponseMidocoCollectiveInvoiceSettingItem), var_export($getCollectiveInvoiceSettingsResponseMidocoCollectiveInvoiceSettingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCollectiveInvoiceSetting property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCollectiveInvoiceSetting property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetCollectiveInvoiceSettingsResponse extends AbstractStructBase
     /**
      * Set MidocoCollectiveInvoiceSetting value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO[] $midocoCollectiveInvoiceSetting
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCollectiveInvoiceSettingsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO[] $midocoCollectiveInvoiceSetting
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCollectiveInvoiceSettingsResponse
      */
     public function setMidocoCollectiveInvoiceSetting(?array $midocoCollectiveInvoiceSetting = null): self
     {
@@ -87,14 +87,14 @@ class GetCollectiveInvoiceSettingsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCollectiveInvoiceSetting value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCollectiveInvoiceSettingsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCollectiveInvoiceSettingsResponse
      */
-    public function addToMidocoCollectiveInvoiceSetting(\Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO $item): self
+    public function addToMidocoCollectiveInvoiceSetting(\Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCollectiveInvoiceSetting property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CollectInvSettingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCollectiveInvoiceSetting property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CollectInvSettingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCollectiveInvoiceSetting[] = $item;
         

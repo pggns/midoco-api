@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class GetAccountEntriesForDebitorRequest extends AbstractStructBase
      * The AccountEntriesSearchCriteria
      * Meta information extracted from the WSDL
      * - ref: AccountEntriesSearchCriteria
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AccountEntriesSearchCriteria|null
+     * @var \Pggns\MidocoApi\Order\StructType\AccountEntriesSearchCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\AccountEntriesSearchCriteria $AccountEntriesSearchCriteria = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\AccountEntriesSearchCriteria $AccountEntriesSearchCriteria = null;
     /**
      * The MidocoOrderByInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:MidocoOrderByInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[]
      */
     protected ?array $MidocoOrderByInfo = null;
     /**
@@ -51,13 +51,13 @@ class GetAccountEntriesForDebitorRequest extends AbstractStructBase
      * @uses GetAccountEntriesForDebitorRequest::setBeginIndex()
      * @uses GetAccountEntriesForDebitorRequest::setEndIndex()
      * @uses GetAccountEntriesForDebitorRequest::setUseCacheForPages()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AccountEntriesSearchCriteria $accountEntriesSearchCriteria
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo[] $midocoOrderByInfo
+     * @param \Pggns\MidocoApi\Order\StructType\AccountEntriesSearchCriteria $accountEntriesSearchCriteria
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[] $midocoOrderByInfo
      * @param int $beginIndex
      * @param int $endIndex
      * @param bool $useCacheForPages
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\AccountEntriesSearchCriteria $accountEntriesSearchCriteria = null, ?array $midocoOrderByInfo = null, ?int $beginIndex = null, ?int $endIndex = null, ?bool $useCacheForPages = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\AccountEntriesSearchCriteria $accountEntriesSearchCriteria = null, ?array $midocoOrderByInfo = null, ?int $beginIndex = null, ?int $endIndex = null, ?bool $useCacheForPages = null)
     {
         $this
             ->setAccountEntriesSearchCriteria($accountEntriesSearchCriteria)
@@ -68,18 +68,18 @@ class GetAccountEntriesForDebitorRequest extends AbstractStructBase
     }
     /**
      * Get AccountEntriesSearchCriteria value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountEntriesSearchCriteria|null
+     * @return \Pggns\MidocoApi\Order\StructType\AccountEntriesSearchCriteria|null
      */
-    public function getAccountEntriesSearchCriteria(): ?\Pggns\MidocoApi\Api\Order\StructType\AccountEntriesSearchCriteria
+    public function getAccountEntriesSearchCriteria(): ?\Pggns\MidocoApi\Order\StructType\AccountEntriesSearchCriteria
     {
         return $this->AccountEntriesSearchCriteria;
     }
     /**
      * Set AccountEntriesSearchCriteria value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AccountEntriesSearchCriteria $accountEntriesSearchCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorRequest
+     * @param \Pggns\MidocoApi\Order\StructType\AccountEntriesSearchCriteria $accountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorRequest
      */
-    public function setAccountEntriesSearchCriteria(?\Pggns\MidocoApi\Api\Order\StructType\AccountEntriesSearchCriteria $accountEntriesSearchCriteria = null): self
+    public function setAccountEntriesSearchCriteria(?\Pggns\MidocoApi\Order\StructType\AccountEntriesSearchCriteria $accountEntriesSearchCriteria = null): self
     {
         $this->AccountEntriesSearchCriteria = $accountEntriesSearchCriteria;
         
@@ -87,7 +87,7 @@ class GetAccountEntriesForDebitorRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderByInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[]
      */
     public function getMidocoOrderByInfo(): ?array
     {
@@ -108,12 +108,12 @@ class GetAccountEntriesForDebitorRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAccountEntriesForDebitorRequestMidocoOrderByInfoItem) {
             // validation for constraint: itemType
-            if (!$getAccountEntriesForDebitorRequestMidocoOrderByInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo) {
+            if (!$getAccountEntriesForDebitorRequestMidocoOrderByInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo) {
                 $invalidValues[] = is_object($getAccountEntriesForDebitorRequestMidocoOrderByInfoItem) ? get_class($getAccountEntriesForDebitorRequestMidocoOrderByInfoItem) : sprintf('%s(%s)', gettype($getAccountEntriesForDebitorRequestMidocoOrderByInfoItem), var_export($getAccountEntriesForDebitorRequestMidocoOrderByInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderByInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderByInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -122,8 +122,8 @@ class GetAccountEntriesForDebitorRequest extends AbstractStructBase
     /**
      * Set MidocoOrderByInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo[] $midocoOrderByInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[] $midocoOrderByInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorRequest
      */
     public function setMidocoOrderByInfo(?array $midocoOrderByInfo = null): self
     {
@@ -138,14 +138,14 @@ class GetAccountEntriesForDebitorRequest extends AbstractStructBase
     /**
      * Add item to MidocoOrderByInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorRequest
      */
-    public function addToMidocoOrderByInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo $item): self
+    public function addToMidocoOrderByInfo(\Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderByInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderByInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderByInfo[] = $item;
         
@@ -162,7 +162,7 @@ class GetAccountEntriesForDebitorRequest extends AbstractStructBase
     /**
      * Set beginIndex value
      * @param int $beginIndex
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorRequest
      */
     public function setBeginIndex(?int $beginIndex = null): self
     {
@@ -185,7 +185,7 @@ class GetAccountEntriesForDebitorRequest extends AbstractStructBase
     /**
      * Set endIndex value
      * @param int $endIndex
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorRequest
      */
     public function setEndIndex(?int $endIndex = null): self
     {
@@ -208,7 +208,7 @@ class GetAccountEntriesForDebitorRequest extends AbstractStructBase
     /**
      * Set useCacheForPages value
      * @param bool $useCacheForPages
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorRequest
      */
     public function setUseCacheForPages(?bool $useCacheForPages = null): self
     {

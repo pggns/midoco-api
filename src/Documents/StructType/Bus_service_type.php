@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -367,7 +367,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setPosition(int $position): self
     {
@@ -390,7 +390,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set service_code value
      * @param string $service_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setService_code(?string $service_code = null): self
     {
@@ -413,7 +413,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set service_name value
      * @param string $service_name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setService_name(?string $service_name = null): self
     {
@@ -436,7 +436,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set service_description value
      * @param string $service_description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setService_description(?string $service_description = null): self
     {
@@ -459,7 +459,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set accomodation_code value
      * @param string $accomodation_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setAccomodation_code(?string $accomodation_code = null): self
     {
@@ -482,7 +482,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set accomodation_desc value
      * @param string $accomodation_desc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setAccomodation_desc(?string $accomodation_desc = null): self
     {
@@ -505,7 +505,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set outward_from_date value
      * @param string $outward_from_date
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setOutward_from_date(?string $outward_from_date = null): self
     {
@@ -532,7 +532,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set outward_from_time value
      * @param string $outward_from_time
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setOutward_from_time(?string $outward_from_time = null): self
     {
@@ -559,7 +559,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set outward_from_city_code value
      * @param string $outward_from_city_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setOutward_from_city_code(?string $outward_from_city_code = null): self
     {
@@ -586,7 +586,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set outward_from_city_desc value
      * @param string $outward_from_city_desc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setOutward_from_city_desc(?string $outward_from_city_desc = null): self
     {
@@ -613,7 +613,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set outward_to_date value
      * @param string $outward_to_date
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setOutward_to_date(?string $outward_to_date = null): self
     {
@@ -640,7 +640,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set outward_to_time value
      * @param string $outward_to_time
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setOutward_to_time(?string $outward_to_time = null): self
     {
@@ -667,7 +667,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set outward_to_city_code value
      * @param string $outward_to_city_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setOutward_to_city_code(?string $outward_to_city_code = null): self
     {
@@ -694,7 +694,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set outward_to_city_desc value
      * @param string $outward_to_city_desc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setOutward_to_city_desc(?string $outward_to_city_desc = null): self
     {
@@ -721,7 +721,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set outward_seat value
      * @param string $outward_seat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setOutward_seat(?string $outward_seat = null): self
     {
@@ -744,7 +744,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set outward_platform value
      * @param string $outward_platform
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setOutward_platform(?string $outward_platform = null): self
     {
@@ -767,7 +767,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set return_from_date value
      * @param string $return_from_date
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setReturn_from_date(?string $return_from_date = null): self
     {
@@ -794,7 +794,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set return_from_time value
      * @param string $return_from_time
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setReturn_from_time(?string $return_from_time = null): self
     {
@@ -821,7 +821,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set return_from_city_code value
      * @param string $return_from_city_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setReturn_from_city_code(?string $return_from_city_code = null): self
     {
@@ -848,7 +848,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set return_from_city_desc value
      * @param string $return_from_city_desc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setReturn_from_city_desc(?string $return_from_city_desc = null): self
     {
@@ -875,7 +875,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set return_to_date value
      * @param string $return_to_date
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setReturn_to_date(?string $return_to_date = null): self
     {
@@ -902,7 +902,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set return_to_time value
      * @param string $return_to_time
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setReturn_to_time(?string $return_to_time = null): self
     {
@@ -929,7 +929,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set return_to_city_code value
      * @param string $return_to_city_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setReturn_to_city_code(?string $return_to_city_code = null): self
     {
@@ -956,7 +956,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set return_to_city_desc value
      * @param string $return_to_city_desc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setReturn_to_city_desc(?string $return_to_city_desc = null): self
     {
@@ -983,7 +983,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set return_seat value
      * @param string $return_seat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setReturn_seat(?string $return_seat = null): self
     {
@@ -1006,7 +1006,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set return_platform value
      * @param string $return_platform
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setReturn_platform(?string $return_platform = null): self
     {
@@ -1029,7 +1029,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set transfer value
      * @param string $transfer
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setTransfer(?string $transfer = null): self
     {
@@ -1052,7 +1052,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set service_status value
      * @param string $service_status
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setService_status(?string $service_status = null): self
     {
@@ -1075,7 +1075,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set person_assignment value
      * @param string $person_assignment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setPerson_assignment(?string $person_assignment = null): self
     {
@@ -1098,7 +1098,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set service_price value
      * @param float $service_price
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setService_price(?float $service_price = null): self
     {
@@ -1121,7 +1121,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setCurrency(?string $currency = 'EUR'): self
     {
@@ -1144,7 +1144,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set vat_included value
      * @param bool $vat_included
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setVat_included(?bool $vat_included = false): self
     {
@@ -1167,7 +1167,7 @@ class Bus_service_type extends AbstractStructBase
     /**
      * Set pax_per_service value
      * @param int $pax_per_service
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Bus_service_type
+     * @return \Pggns\MidocoApi\Documents\StructType\Bus_service_type
      */
     public function setPax_per_service(?int $pax_per_service = null): self
     {

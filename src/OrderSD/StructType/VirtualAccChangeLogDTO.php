@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class VirtualAccChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VirtualAccChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -86,7 +86,7 @@ class VirtualAccChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VirtualAccChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -109,7 +109,7 @@ class VirtualAccChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VirtualAccChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {
@@ -132,7 +132,7 @@ class VirtualAccChangeLogDTO extends AbstractStructBase
     /**
      * Set virtualAccountId value
      * @param int $virtualAccountId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VirtualAccChangeLogDTO
      */
     public function setVirtualAccountId(?int $virtualAccountId = null): self
     {

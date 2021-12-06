@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class SuppCommChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCommChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCommChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -94,7 +94,7 @@ class SuppCommChangeLogDTO extends AbstractStructBase
     /**
      * Set commissionId value
      * @param string $commissionId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCommChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCommChangeLogDTO
      */
     public function setCommissionId(?string $commissionId = null): self
     {
@@ -117,7 +117,7 @@ class SuppCommChangeLogDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCommChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCommChangeLogDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -140,7 +140,7 @@ class SuppCommChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCommChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCommChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -163,7 +163,7 @@ class SuppCommChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCommChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCommChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

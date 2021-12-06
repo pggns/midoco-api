@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class GetPrintDetailsForUsersRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: PrintDetailsForBonusEmployee
-     * @var \Pggns\MidocoApi\Api\Order\StructType\PrintDetailsForBonusEmployee[]
+     * @var \Pggns\MidocoApi\Order\StructType\PrintDetailsForBonusEmployee[]
      */
     protected ?array $PrintDetailsForBonusEmployee = null;
     /**
      * Constructor method for GetPrintDetailsForUsersRequest
      * @uses GetPrintDetailsForUsersRequest::setPrintDetailsForBonusEmployee()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrintDetailsForBonusEmployee[] $printDetailsForBonusEmployee
+     * @param \Pggns\MidocoApi\Order\StructType\PrintDetailsForBonusEmployee[] $printDetailsForBonusEmployee
      */
     public function __construct(?array $printDetailsForBonusEmployee = null)
     {
@@ -33,7 +33,7 @@ class GetPrintDetailsForUsersRequest extends AbstractStructBase
     }
     /**
      * Get PrintDetailsForBonusEmployee value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintDetailsForBonusEmployee[]
+     * @return \Pggns\MidocoApi\Order\StructType\PrintDetailsForBonusEmployee[]
      */
     public function getPrintDetailsForBonusEmployee(): ?array
     {
@@ -54,12 +54,12 @@ class GetPrintDetailsForUsersRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPrintDetailsForUsersRequestPrintDetailsForBonusEmployeeItem) {
             // validation for constraint: itemType
-            if (!$getPrintDetailsForUsersRequestPrintDetailsForBonusEmployeeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\PrintDetailsForBonusEmployee) {
+            if (!$getPrintDetailsForUsersRequestPrintDetailsForBonusEmployeeItem instanceof \Pggns\MidocoApi\Order\StructType\PrintDetailsForBonusEmployee) {
                 $invalidValues[] = is_object($getPrintDetailsForUsersRequestPrintDetailsForBonusEmployeeItem) ? get_class($getPrintDetailsForUsersRequestPrintDetailsForBonusEmployeeItem) : sprintf('%s(%s)', gettype($getPrintDetailsForUsersRequestPrintDetailsForBonusEmployeeItem), var_export($getPrintDetailsForUsersRequestPrintDetailsForBonusEmployeeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The PrintDetailsForBonusEmployee property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\PrintDetailsForBonusEmployee, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The PrintDetailsForBonusEmployee property can only contain items of type \Pggns\MidocoApi\Order\StructType\PrintDetailsForBonusEmployee, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class GetPrintDetailsForUsersRequest extends AbstractStructBase
     /**
      * Set PrintDetailsForBonusEmployee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrintDetailsForBonusEmployee[] $printDetailsForBonusEmployee
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintDetailsForUsersRequest
+     * @param \Pggns\MidocoApi\Order\StructType\PrintDetailsForBonusEmployee[] $printDetailsForBonusEmployee
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintDetailsForUsersRequest
      */
     public function setPrintDetailsForBonusEmployee(?array $printDetailsForBonusEmployee = null): self
     {
@@ -84,14 +84,14 @@ class GetPrintDetailsForUsersRequest extends AbstractStructBase
     /**
      * Add item to PrintDetailsForBonusEmployee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrintDetailsForBonusEmployee $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintDetailsForUsersRequest
+     * @param \Pggns\MidocoApi\Order\StructType\PrintDetailsForBonusEmployee $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintDetailsForUsersRequest
      */
-    public function addToPrintDetailsForBonusEmployee(\Pggns\MidocoApi\Api\Order\StructType\PrintDetailsForBonusEmployee $item): self
+    public function addToPrintDetailsForBonusEmployee(\Pggns\MidocoApi\Order\StructType\PrintDetailsForBonusEmployee $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\PrintDetailsForBonusEmployee) {
-            throw new InvalidArgumentException(sprintf('The PrintDetailsForBonusEmployee property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\PrintDetailsForBonusEmployee, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\PrintDetailsForBonusEmployee) {
+            throw new InvalidArgumentException(sprintf('The PrintDetailsForBonusEmployee property can only contain items of type \Pggns\MidocoApi\Order\StructType\PrintDetailsForBonusEmployee, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->PrintDetailsForBonusEmployee[] = $item;
         

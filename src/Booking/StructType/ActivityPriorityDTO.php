@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class ActivityPriorityDTO extends AbstractStructBase
     /**
      * Set priority value
      * @param int $priority
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\ActivityPriorityDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\ActivityPriorityDTO
      */
     public function setPriority(?int $priority = null): self
     {
@@ -78,7 +78,7 @@ class ActivityPriorityDTO extends AbstractStructBase
     /**
      * Set timeframe value
      * @param int $timeframe
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\ActivityPriorityDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\ActivityPriorityDTO
      */
     public function setTimeframe(?int $timeframe = null): self
     {
@@ -101,7 +101,7 @@ class ActivityPriorityDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\ActivityPriorityDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\ActivityPriorityDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

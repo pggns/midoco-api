@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class ExportMessageDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportMessageDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportMessageDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -94,7 +94,7 @@ class ExportMessageDTO extends AbstractStructBase
     /**
      * Set messageId value
      * @param int $messageId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportMessageDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportMessageDTO
      */
     public function setMessageId(?int $messageId = null): self
     {
@@ -117,7 +117,7 @@ class ExportMessageDTO extends AbstractStructBase
     /**
      * Set messageType value
      * @param string $messageType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportMessageDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportMessageDTO
      */
     public function setMessageType(?string $messageType = null): self
     {
@@ -140,7 +140,7 @@ class ExportMessageDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportMessageDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportMessageDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -163,7 +163,7 @@ class ExportMessageDTO extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExportMessageDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExportMessageDTO
      */
     public function setText(?string $text = null): self
     {

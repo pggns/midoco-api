@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class DeleteHedgeCurrencyRateRequest extends AbstractStructBase
     /**
      * Set fromCurrency value
      * @param string $fromCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteHedgeCurrencyRateRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteHedgeCurrencyRateRequest
      */
     public function setFromCurrency(?string $fromCurrency = null): self
     {
@@ -86,7 +86,7 @@ class DeleteHedgeCurrencyRateRequest extends AbstractStructBase
     /**
      * Set toCurrency value
      * @param string $toCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteHedgeCurrencyRateRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteHedgeCurrencyRateRequest
      */
     public function setToCurrency(?string $toCurrency = null): self
     {
@@ -109,7 +109,7 @@ class DeleteHedgeCurrencyRateRequest extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteHedgeCurrencyRateRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteHedgeCurrencyRateRequest
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -132,7 +132,7 @@ class DeleteHedgeCurrencyRateRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteHedgeCurrencyRateRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteHedgeCurrencyRateRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

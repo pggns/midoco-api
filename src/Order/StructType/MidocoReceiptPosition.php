@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoReceiptPosition extends ReceiptPositionDTO
     /**
      * Set generateVoucher value
      * @param bool $generateVoucher
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoReceiptPosition
      */
     public function setGenerateVoucher(?bool $generateVoucher = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DeleteMidocoOrgUnitGuiAttributeRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DeleteMidocoOrgUnitGuiAttributeRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\DeleteMidocoOrgUnitGuiAttributeRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +70,7 @@ class DeleteMidocoOrgUnitGuiAttributeRequest extends AbstractStructBase
     /**
      * Set attributeId value
      * @param int $attributeId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DeleteMidocoOrgUnitGuiAttributeRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\DeleteMidocoOrgUnitGuiAttributeRequest
      */
     public function setAttributeId(?int $attributeId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class MidocoDeferralArErListCriteriaType extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErListCriteriaType
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -118,7 +118,7 @@ class MidocoDeferralArErListCriteriaType extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErListCriteriaType
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -141,7 +141,7 @@ class MidocoDeferralArErListCriteriaType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErListCriteriaType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -164,7 +164,7 @@ class MidocoDeferralArErListCriteriaType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErListCriteriaType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -187,7 +187,7 @@ class MidocoDeferralArErListCriteriaType extends AbstractStructBase
     /**
      * Set crsType value
      * @param string $crsType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErListCriteriaType
      */
     public function setCrsType(?string $crsType = null): self
     {
@@ -210,7 +210,7 @@ class MidocoDeferralArErListCriteriaType extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErListCriteriaType
      */
     public function setType(?string $type = null): self
     {
@@ -233,7 +233,7 @@ class MidocoDeferralArErListCriteriaType extends AbstractStructBase
     /**
      * Set orgUnits value
      * @param string $orgUnits
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErListCriteriaType
      */
     public function setOrgUnits(?string $orgUnits = null): self
     {
@@ -256,7 +256,7 @@ class MidocoDeferralArErListCriteriaType extends AbstractStructBase
     /**
      * Set excludedOrgUnits value
      * @param string $excludedOrgUnits
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErListCriteriaType
      */
     public function setExcludedOrgUnits(?string $excludedOrgUnits = null): self
     {

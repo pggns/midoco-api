@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class CampaignSearchDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignSearchDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -102,7 +102,7 @@ class CampaignSearchDTO extends AbstractStructBase
     /**
      * Set issueDate value
      * @param string $issueDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignSearchDTO
      */
     public function setIssueDate(?string $issueDate = null): self
     {
@@ -125,7 +125,7 @@ class CampaignSearchDTO extends AbstractStructBase
     /**
      * Set visibility value
      * @param int $visibility
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignSearchDTO
      */
     public function setVisibility(?int $visibility = null): self
     {
@@ -148,7 +148,7 @@ class CampaignSearchDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignSearchDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -171,7 +171,7 @@ class CampaignSearchDTO extends AbstractStructBase
     /**
      * Set creatingUser value
      * @param string $creatingUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignSearchDTO
      */
     public function setCreatingUser(?string $creatingUser = null): self
     {
@@ -194,7 +194,7 @@ class CampaignSearchDTO extends AbstractStructBase
     /**
      * Set searchType value
      * @param string $searchType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignSearchDTO
      */
     public function setSearchType(?string $searchType = null): self
     {

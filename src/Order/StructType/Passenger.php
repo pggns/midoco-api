@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class Passenger extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Passenger
+     * @return \Pggns\MidocoApi\Order\StructType\Passenger
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -102,7 +102,7 @@ class Passenger extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Passenger
+     * @return \Pggns\MidocoApi\Order\StructType\Passenger
      */
     public function setTitle(?string $title = null): self
     {
@@ -125,7 +125,7 @@ class Passenger extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Passenger
+     * @return \Pggns\MidocoApi\Order\StructType\Passenger
      */
     public function setForename(?string $forename = null): self
     {
@@ -148,7 +148,7 @@ class Passenger extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Passenger
+     * @return \Pggns\MidocoApi\Order\StructType\Passenger
      */
     public function setName(?string $name = null): self
     {
@@ -171,7 +171,7 @@ class Passenger extends AbstractStructBase
     /**
      * Set age value
      * @param int $age
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Passenger
+     * @return \Pggns\MidocoApi\Order\StructType\Passenger
      */
     public function setAge(?int $age = null): self
     {

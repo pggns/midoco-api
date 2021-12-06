@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SaveEditVoucherResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVoucher
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoVoucher[]
      */
     protected ?array $MidocoVoucher = null;
     /**
      * Constructor method for SaveEditVoucherResponse
      * @uses SaveEditVoucherResponse::setMidocoVoucher()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher[] $midocoVoucher
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVoucher[] $midocoVoucher
      */
     public function __construct(?array $midocoVoucher = null)
     {
@@ -34,7 +34,7 @@ class SaveEditVoucherResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVoucher value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVoucher[]
      */
     public function getMidocoVoucher(): ?array
     {
@@ -55,12 +55,12 @@ class SaveEditVoucherResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveEditVoucherResponseMidocoVoucherItem) {
             // validation for constraint: itemType
-            if (!$saveEditVoucherResponseMidocoVoucherItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher) {
+            if (!$saveEditVoucherResponseMidocoVoucherItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoVoucher) {
                 $invalidValues[] = is_object($saveEditVoucherResponseMidocoVoucherItem) ? get_class($saveEditVoucherResponseMidocoVoucherItem) : sprintf('%s(%s)', gettype($saveEditVoucherResponseMidocoVoucherItem), var_export($saveEditVoucherResponseMidocoVoucherItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVoucher property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVoucher property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoVoucher, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SaveEditVoucherResponse extends AbstractStructBase
     /**
      * Set MidocoVoucher value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher[] $midocoVoucher
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVoucher[] $midocoVoucher
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherResponse
      */
     public function setMidocoVoucher(?array $midocoVoucher = null): self
     {
@@ -85,14 +85,14 @@ class SaveEditVoucherResponse extends AbstractStructBase
     /**
      * Add item to MidocoVoucher value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEditVoucherResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVoucher $item
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEditVoucherResponse
      */
-    public function addToMidocoVoucher(\Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher $item): self
+    public function addToMidocoVoucher(\Pggns\MidocoApi\Order\StructType\MidocoVoucher $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher) {
-            throw new InvalidArgumentException(sprintf('The MidocoVoucher property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoVoucher) {
+            throw new InvalidArgumentException(sprintf('The MidocoVoucher property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoVoucher, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVoucher[] = $item;
         

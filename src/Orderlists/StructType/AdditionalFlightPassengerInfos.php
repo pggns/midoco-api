@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class AdditionalFlightPassengerInfos extends AbstractStructBase
     /**
      * Set frequent_flyer_type value
      * @param string $frequent_flyer_type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalFlightPassengerInfos
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalFlightPassengerInfos
      */
     public function setFrequent_flyer_type(?string $frequent_flyer_type = null): self
     {
@@ -126,7 +126,7 @@ class AdditionalFlightPassengerInfos extends AbstractStructBase
     /**
      * Set frequent_flyer_no value
      * @param string $frequent_flyer_no
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalFlightPassengerInfos
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalFlightPassengerInfos
      */
     public function setFrequent_flyer_no(?string $frequent_flyer_no = null): self
     {
@@ -149,7 +149,7 @@ class AdditionalFlightPassengerInfos extends AbstractStructBase
     /**
      * Set frequent_flyer_airline value
      * @param string $frequent_flyer_airline
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalFlightPassengerInfos
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalFlightPassengerInfos
      */
     public function setFrequent_flyer_airline(?string $frequent_flyer_airline = null): self
     {
@@ -172,7 +172,7 @@ class AdditionalFlightPassengerInfos extends AbstractStructBase
     /**
      * Set identity_card_type value
      * @param string $identity_card_type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalFlightPassengerInfos
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalFlightPassengerInfos
      */
     public function setIdentity_card_type(?string $identity_card_type = null): self
     {
@@ -195,7 +195,7 @@ class AdditionalFlightPassengerInfos extends AbstractStructBase
     /**
      * Set identity_card_no value
      * @param string $identity_card_no
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalFlightPassengerInfos
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalFlightPassengerInfos
      */
     public function setIdentity_card_no(?string $identity_card_no = null): self
     {
@@ -218,7 +218,7 @@ class AdditionalFlightPassengerInfos extends AbstractStructBase
     /**
      * Set identity_card_required value
      * @param bool $identity_card_required
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalFlightPassengerInfos
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalFlightPassengerInfos
      */
     public function setIdentity_card_required(?bool $identity_card_required = false): self
     {
@@ -241,7 +241,7 @@ class AdditionalFlightPassengerInfos extends AbstractStructBase
     /**
      * Set ticket_mail value
      * @param bool $ticket_mail
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalFlightPassengerInfos
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalFlightPassengerInfos
      */
     public function setTicket_mail(?bool $ticket_mail = false): self
     {

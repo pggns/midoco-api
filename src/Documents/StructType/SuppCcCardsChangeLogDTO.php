@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SuppCcCardsChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppCcCardsChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppCcCardsChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -102,7 +102,7 @@ class SuppCcCardsChangeLogDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppCcCardsChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppCcCardsChangeLogDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -125,7 +125,7 @@ class SuppCcCardsChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppCcCardsChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppCcCardsChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -148,7 +148,7 @@ class SuppCcCardsChangeLogDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppCcCardsChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppCcCardsChangeLogDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -171,7 +171,7 @@ class SuppCcCardsChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppCcCardsChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppCcCardsChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {
@@ -194,7 +194,7 @@ class SuppCcCardsChangeLogDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppCcCardsChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppCcCardsChangeLogDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

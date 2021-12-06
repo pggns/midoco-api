@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveBookingJournalRequest extends AbstractStructBase
      * The MidocoBookingJournal
      * Meta information extracted from the WSDL
      * - ref: MidocoBookingJournal
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal $MidocoBookingJournal = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBookingJournal $MidocoBookingJournal = null;
     /**
      * The useOnlyOrgUnitCurrency
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SaveBookingJournalRequest extends AbstractStructBase
      * Constructor method for SaveBookingJournalRequest
      * @uses SaveBookingJournalRequest::setMidocoBookingJournal()
      * @uses SaveBookingJournalRequest::setUseOnlyOrgUnitCurrency()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal $midocoBookingJournal
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal $midocoBookingJournal
      * @param bool $useOnlyOrgUnitCurrency
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal $midocoBookingJournal = null, ?bool $useOnlyOrgUnitCurrency = false)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBookingJournal $midocoBookingJournal = null, ?bool $useOnlyOrgUnitCurrency = false)
     {
         $this
             ->setMidocoBookingJournal($midocoBookingJournal)
@@ -42,18 +42,18 @@ class SaveBookingJournalRequest extends AbstractStructBase
     }
     /**
      * Get MidocoBookingJournal value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal|null
      */
-    public function getMidocoBookingJournal(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal
+    public function getMidocoBookingJournal(): ?\Pggns\MidocoApi\Order\StructType\MidocoBookingJournal
     {
         return $this->MidocoBookingJournal;
     }
     /**
      * Set MidocoBookingJournal value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal $midocoBookingJournal
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBookingJournalRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal $midocoBookingJournal
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBookingJournalRequest
      */
-    public function setMidocoBookingJournal(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal $midocoBookingJournal = null): self
+    public function setMidocoBookingJournal(?\Pggns\MidocoApi\Order\StructType\MidocoBookingJournal $midocoBookingJournal = null): self
     {
         $this->MidocoBookingJournal = $midocoBookingJournal;
         
@@ -70,7 +70,7 @@ class SaveBookingJournalRequest extends AbstractStructBase
     /**
      * Set useOnlyOrgUnitCurrency value
      * @param bool $useOnlyOrgUnitCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBookingJournalRequest
      */
     public function setUseOnlyOrgUnitCurrency(?bool $useOnlyOrgUnitCurrency = false): self
     {

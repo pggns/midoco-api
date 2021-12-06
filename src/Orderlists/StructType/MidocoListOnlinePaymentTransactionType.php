@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoListOnlinePaymentTransactionType extends OnlinePaymentTransactionDTO
     /**
      * Set adapter value
      * @param string $adapter
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoListOnlinePaymentTransactionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoListOnlinePaymentTransactionType
      */
     public function setAdapter(?string $adapter = null): self
     {

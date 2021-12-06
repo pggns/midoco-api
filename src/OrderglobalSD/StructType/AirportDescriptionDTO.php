@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class AirportDescriptionDTO extends AbstractStructBase
     /**
      * Set airportCode value
      * @param string $airportCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDescriptionDTO
      */
     public function setAirportCode(?string $airportCode = null): self
     {
@@ -78,7 +78,7 @@ class AirportDescriptionDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDescriptionDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -101,7 +101,7 @@ class AirportDescriptionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDescriptionDTO
      */
     public function setDescription(?string $description = null): self
     {

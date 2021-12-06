@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class SendSMSMessageResponse extends AbstractStructBase
      * Set error value
      * @throws InvalidArgumentException
      * @param string[] $error
-     * @return \Pggns\MidocoApi\Api\System\StructType\SendSMSMessageResponse
+     * @return \Pggns\MidocoApi\System\StructType\SendSMSMessageResponse
      */
     public function setError(?array $error = null): self
     {
@@ -85,7 +85,7 @@ class SendSMSMessageResponse extends AbstractStructBase
      * Add item to error value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\SendSMSMessageResponse
+     * @return \Pggns\MidocoApi\System\StructType\SendSMSMessageResponse
      */
     public function addToError(string $item): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetDocumentsRequest extends AbstractStructBase
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The beginIndex
      * @var int|null
@@ -41,12 +41,12 @@ class GetDocumentsRequest extends AbstractStructBase
      * @uses GetDocumentsRequest::setBeginIndex()
      * @uses GetDocumentsRequest::setEndIndex()
      * @uses GetDocumentsRequest::setIsManual()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId
      * @param int $beginIndex
      * @param int $endIndex
      * @param bool $isManual
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?int $beginIndex = null, ?int $endIndex = null, ?bool $isManual = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?int $beginIndex = null, ?int $endIndex = null, ?bool $isManual = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -56,18 +56,18 @@ class GetDocumentsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDocumentsRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDocumentsRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -84,7 +84,7 @@ class GetDocumentsRequest extends AbstractStructBase
     /**
      * Set beginIndex value
      * @param int $beginIndex
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDocumentsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDocumentsRequest
      */
     public function setBeginIndex(?int $beginIndex = null): self
     {
@@ -107,7 +107,7 @@ class GetDocumentsRequest extends AbstractStructBase
     /**
      * Set endIndex value
      * @param int $endIndex
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDocumentsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDocumentsRequest
      */
     public function setEndIndex(?int $endIndex = null): self
     {
@@ -130,7 +130,7 @@ class GetDocumentsRequest extends AbstractStructBase
     /**
      * Set isManual value
      * @param bool $isManual
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDocumentsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDocumentsRequest
      */
     public function setIsManual(?bool $isManual = null): self
     {

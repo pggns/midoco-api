@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoCollectiveInvoicePrintPreselectionData extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCollectiveInvoicePrintPreselectionData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCollectiveInvoicePrintPreselectionData
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -102,7 +102,7 @@ class MidocoCollectiveInvoicePrintPreselectionData extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCollectiveInvoicePrintPreselectionData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCollectiveInvoicePrintPreselectionData
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -125,7 +125,7 @@ class MidocoCollectiveInvoicePrintPreselectionData extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCollectiveInvoicePrintPreselectionData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCollectiveInvoicePrintPreselectionData
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -148,7 +148,7 @@ class MidocoCollectiveInvoicePrintPreselectionData extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCollectiveInvoicePrintPreselectionData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCollectiveInvoicePrintPreselectionData
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -171,7 +171,7 @@ class MidocoCollectiveInvoicePrintPreselectionData extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCollectiveInvoicePrintPreselectionData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCollectiveInvoicePrintPreselectionData
      */
     public function setPrice(?float $price = null): self
     {
@@ -194,7 +194,7 @@ class MidocoCollectiveInvoicePrintPreselectionData extends AbstractStructBase
     /**
      * Set email value
      * @param bool $email
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCollectiveInvoicePrintPreselectionData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCollectiveInvoicePrintPreselectionData
      */
     public function setEmail(?bool $email = null): self
     {

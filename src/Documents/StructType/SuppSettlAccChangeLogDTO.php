@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class SuppSettlAccChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppSettlAccChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppSettlAccChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -110,7 +110,7 @@ class SuppSettlAccChangeLogDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppSettlAccChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppSettlAccChangeLogDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -133,7 +133,7 @@ class SuppSettlAccChangeLogDTO extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppSettlAccChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppSettlAccChangeLogDTO
      */
     public function setSettlementType(?string $settlementType = null): self
     {
@@ -156,7 +156,7 @@ class SuppSettlAccChangeLogDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppSettlAccChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppSettlAccChangeLogDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -179,7 +179,7 @@ class SuppSettlAccChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppSettlAccChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppSettlAccChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -202,7 +202,7 @@ class SuppSettlAccChangeLogDTO extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppSettlAccChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppSettlAccChangeLogDTO
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -225,7 +225,7 @@ class SuppSettlAccChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppSettlAccChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppSettlAccChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

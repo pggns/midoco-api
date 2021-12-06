@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoContactType extends ContactTypeDTO
     /**
      * Set isLocallyDefined value
      * @param bool $isLocallyDefined
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoContactType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoContactType
      */
     public function setIsLocallyDefined(?bool $isLocallyDefined = null): self
     {

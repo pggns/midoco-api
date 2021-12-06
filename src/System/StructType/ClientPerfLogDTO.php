@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class ClientPerfLogDTO extends AbstractStructBase
     /**
      * Set duration value
      * @param int $duration
-     * @return \Pggns\MidocoApi\Api\System\StructType\ClientPerfLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\ClientPerfLogDTO
      */
     public function setDuration(?int $duration = null): self
     {
@@ -110,7 +110,7 @@ class ClientPerfLogDTO extends AbstractStructBase
     /**
      * Set logActionName value
      * @param string $logActionName
-     * @return \Pggns\MidocoApi\Api\System\StructType\ClientPerfLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\ClientPerfLogDTO
      */
     public function setLogActionName(?string $logActionName = null): self
     {
@@ -133,7 +133,7 @@ class ClientPerfLogDTO extends AbstractStructBase
     /**
      * Set logId value
      * @param int $logId
-     * @return \Pggns\MidocoApi\Api\System\StructType\ClientPerfLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\ClientPerfLogDTO
      */
     public function setLogId(?int $logId = null): self
     {
@@ -156,7 +156,7 @@ class ClientPerfLogDTO extends AbstractStructBase
     /**
      * Set params value
      * @param string $params
-     * @return \Pggns\MidocoApi\Api\System\StructType\ClientPerfLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\ClientPerfLogDTO
      */
     public function setParams(?string $params = null): self
     {
@@ -179,7 +179,7 @@ class ClientPerfLogDTO extends AbstractStructBase
     /**
      * Set startTime value
      * @param string $startTime
-     * @return \Pggns\MidocoApi\Api\System\StructType\ClientPerfLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\ClientPerfLogDTO
      */
     public function setStartTime(?string $startTime = null): self
     {
@@ -202,7 +202,7 @@ class ClientPerfLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\ClientPerfLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\ClientPerfLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -225,7 +225,7 @@ class ClientPerfLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\System\StructType\ClientPerfLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\ClientPerfLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DeleteMarketingKeyRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMarketingKeyRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMarketingKeyRequest
      */
     public function setType(?string $type = null): self
     {
@@ -70,7 +70,7 @@ class DeleteMarketingKeyRequest extends AbstractStructBase
     /**
      * Set marketingKey value
      * @param string $marketingKey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMarketingKeyRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMarketingKeyRequest
      */
     public function setMarketingKey(?string $marketingKey = null): self
     {

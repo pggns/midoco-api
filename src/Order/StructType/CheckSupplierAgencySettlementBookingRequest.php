@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class CheckSupplierAgencySettlementBookingRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementBookingRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -94,7 +94,7 @@ class CheckSupplierAgencySettlementBookingRequest extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementBookingRequest
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -117,7 +117,7 @@ class CheckSupplierAgencySettlementBookingRequest extends AbstractStructBase
     /**
      * Set sellItemId value
      * @param int $sellItemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementBookingRequest
      */
     public function setSellItemId(?int $sellItemId = null): self
     {
@@ -140,7 +140,7 @@ class CheckSupplierAgencySettlementBookingRequest extends AbstractStructBase
     /**
      * Set provPercent value
      * @param float $provPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementBookingRequest
      */
     public function setProvPercent(?float $provPercent = null): self
     {
@@ -163,7 +163,7 @@ class CheckSupplierAgencySettlementBookingRequest extends AbstractStructBase
     /**
      * Set backupData value
      * @param string $backupData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementBookingRequest
      */
     public function setBackupData(?string $backupData = null): self
     {

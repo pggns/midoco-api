@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class ExecuteMediatorSettlementResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSettlementInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo[]
      */
     protected ?array $MidocoSettlementInfo = null;
     /**
@@ -34,7 +34,7 @@ class ExecuteMediatorSettlementResponse extends AbstractStructBase
      * Constructor method for ExecuteMediatorSettlementResponse
      * @uses ExecuteMediatorSettlementResponse::setMidocoSettlementInfo()
      * @uses ExecuteMediatorSettlementResponse::setPdfForPreview()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo[] $midocoSettlementInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo[] $midocoSettlementInfo
      * @param string[] $pdfForPreview
      */
     public function __construct(?array $midocoSettlementInfo = null, ?array $pdfForPreview = null)
@@ -45,7 +45,7 @@ class ExecuteMediatorSettlementResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSettlementInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo[]
      */
     public function getMidocoSettlementInfo(): ?array
     {
@@ -66,12 +66,12 @@ class ExecuteMediatorSettlementResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $executeMediatorSettlementResponseMidocoSettlementInfoItem) {
             // validation for constraint: itemType
-            if (!$executeMediatorSettlementResponseMidocoSettlementInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo) {
+            if (!$executeMediatorSettlementResponseMidocoSettlementInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo) {
                 $invalidValues[] = is_object($executeMediatorSettlementResponseMidocoSettlementInfoItem) ? get_class($executeMediatorSettlementResponseMidocoSettlementInfoItem) : sprintf('%s(%s)', gettype($executeMediatorSettlementResponseMidocoSettlementInfoItem), var_export($executeMediatorSettlementResponseMidocoSettlementInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSettlementInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSettlementInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -80,8 +80,8 @@ class ExecuteMediatorSettlementResponse extends AbstractStructBase
     /**
      * Set MidocoSettlementInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo[] $midocoSettlementInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo[] $midocoSettlementInfo
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementResponse
      */
     public function setMidocoSettlementInfo(?array $midocoSettlementInfo = null): self
     {
@@ -96,14 +96,14 @@ class ExecuteMediatorSettlementResponse extends AbstractStructBase
     /**
      * Add item to MidocoSettlementInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementResponse
      */
-    public function addToMidocoSettlementInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo $item): self
+    public function addToMidocoSettlementInfo(\Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoSettlementInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoSettlementInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSettlementInfo[] = $item;
         
@@ -147,7 +147,7 @@ class ExecuteMediatorSettlementResponse extends AbstractStructBase
      * Set pdfForPreview value
      * @throws InvalidArgumentException
      * @param string[] $pdfForPreview
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementResponse
      */
     public function setPdfForPreview(?array $pdfForPreview = null): self
     {
@@ -163,7 +163,7 @@ class ExecuteMediatorSettlementResponse extends AbstractStructBase
      * Add item to pdfForPreview value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementResponse
      */
     public function addToPdfForPreview(string $item): self
     {

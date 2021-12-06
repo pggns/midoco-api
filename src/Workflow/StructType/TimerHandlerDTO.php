@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class TimerHandlerDTO extends AbstractStructBase
     /**
      * Set process value
      * @param string $process
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TimerHandlerDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TimerHandlerDTO
      */
     public function setProcess(?string $process = null): self
     {
@@ -70,7 +70,7 @@ class TimerHandlerDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TimerHandlerDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TimerHandlerDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {

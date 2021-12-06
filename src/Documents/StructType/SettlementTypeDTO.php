@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class SettlementTypeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -110,7 +110,7 @@ class SettlementTypeDTO extends AbstractStructBase
     /**
      * Set hidden value
      * @param bool $hidden
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO
      */
     public function setHidden(?bool $hidden = null): self
     {
@@ -133,7 +133,7 @@ class SettlementTypeDTO extends AbstractStructBase
     /**
      * Set isCredit value
      * @param bool $isCredit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO
      */
     public function setIsCredit(?bool $isCredit = null): self
     {
@@ -156,7 +156,7 @@ class SettlementTypeDTO extends AbstractStructBase
     /**
      * Set isDebit value
      * @param bool $isDebit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO
      */
     public function setIsDebit(?bool $isDebit = null): self
     {
@@ -179,7 +179,7 @@ class SettlementTypeDTO extends AbstractStructBase
     /**
      * Set isOwnCc value
      * @param bool $isOwnCc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO
      */
     public function setIsOwnCc(?bool $isOwnCc = null): self
     {
@@ -202,7 +202,7 @@ class SettlementTypeDTO extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO
      */
     public function setSettlementType(?string $settlementType = null): self
     {
@@ -225,7 +225,7 @@ class SettlementTypeDTO extends AbstractStructBase
     /**
      * Set valutaImmediately value
      * @param bool $valutaImmediately
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SettlementTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SettlementTypeDTO
      */
     public function setValutaImmediately(?bool $valutaImmediately = null): self
     {

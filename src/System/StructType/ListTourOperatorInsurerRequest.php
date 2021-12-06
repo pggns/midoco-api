@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class ListTourOperatorInsurerRequest extends AbstractStructBase
     /**
      * Set touroperatorId value
      * @param int $touroperatorId
-     * @return \Pggns\MidocoApi\Api\System\StructType\ListTourOperatorInsurerRequest
+     * @return \Pggns\MidocoApi\System\StructType\ListTourOperatorInsurerRequest
      */
     public function setTouroperatorId(?int $touroperatorId = null): self
     {
@@ -78,7 +78,7 @@ class ListTourOperatorInsurerRequest extends AbstractStructBase
     /**
      * Set insurerId value
      * @param int $insurerId
-     * @return \Pggns\MidocoApi\Api\System\StructType\ListTourOperatorInsurerRequest
+     * @return \Pggns\MidocoApi\System\StructType\ListTourOperatorInsurerRequest
      */
     public function setInsurerId(?int $insurerId = null): self
     {
@@ -101,7 +101,7 @@ class ListTourOperatorInsurerRequest extends AbstractStructBase
     /**
      * Set isAssessor value
      * @param bool $isAssessor
-     * @return \Pggns\MidocoApi\Api\System\StructType\ListTourOperatorInsurerRequest
+     * @return \Pggns\MidocoApi\System\StructType\ListTourOperatorInsurerRequest
      */
     public function setIsAssessor(?bool $isAssessor = null): self
     {

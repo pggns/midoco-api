@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -32,9 +32,9 @@ class SaveBillingEmailRequest extends AbstractStructBase
      * The MidocoMailMessage
      * Meta information extracted from the WSDL
      * - ref: mail:MidocoMailMessage
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
     /**
      * Constructor method for SaveBillingEmailRequest
      * @uses SaveBillingEmailRequest::setDocumentId()
@@ -44,9 +44,9 @@ class SaveBillingEmailRequest extends AbstractStructBase
      * @param int $documentId
      * @param string $media
      * @param int $repositoryId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
      */
-    public function __construct(?int $documentId = null, ?string $media = null, ?int $repositoryId = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null)
+    public function __construct(?int $documentId = null, ?string $media = null, ?int $repositoryId = null, ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null)
     {
         $this
             ->setDocumentId($documentId)
@@ -65,7 +65,7 @@ class SaveBillingEmailRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingEmailRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -88,7 +88,7 @@ class SaveBillingEmailRequest extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingEmailRequest
      */
     public function setMedia(?string $media = null): self
     {
@@ -111,7 +111,7 @@ class SaveBillingEmailRequest extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingEmailRequest
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -125,18 +125,18 @@ class SaveBillingEmailRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMailMessage value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
     {
         return $this->MidocoMailMessage;
     }
     /**
      * Set MidocoMailMessage value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingEmailRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingEmailRequest
      */
-    public function setMidocoMailMessage(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
+    public function setMidocoMailMessage(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
     {
         $this->MidocoMailMessage = $midocoMailMessage;
         

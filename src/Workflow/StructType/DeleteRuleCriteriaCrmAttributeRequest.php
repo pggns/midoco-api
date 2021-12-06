@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -50,7 +50,7 @@ class DeleteRuleCriteriaCrmAttributeRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaCrmAttributeRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmAttributeRequest
      */
     public function setUnitName(string $unitName): self
     {
@@ -73,7 +73,7 @@ class DeleteRuleCriteriaCrmAttributeRequest extends AbstractStructBase
     /**
      * Set attributeId value
      * @param int $attributeId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaCrmAttributeRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmAttributeRequest
      */
     public function setAttributeId(?int $attributeId = null): self
     {

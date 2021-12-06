@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteSupplierCancelConditionResponse extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteSupplierCancelConditionResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteSupplierCancelConditionResponse
      */
     public function setMessage(?string $message = null): self
     {

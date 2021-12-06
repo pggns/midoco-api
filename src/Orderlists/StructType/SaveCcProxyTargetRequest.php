@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class SaveCcProxyTargetRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - ref: MidocoCcProxyTarget
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcProxyTarget|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoCcProxyTarget|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcProxyTarget $MidocoCcProxyTarget = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoCcProxyTarget $MidocoCcProxyTarget = null;
     /**
      * Constructor method for SaveCcProxyTargetRequest
      * @uses SaveCcProxyTargetRequest::setMidocoCcProxyTarget()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcProxyTarget $midocoCcProxyTarget
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCcProxyTarget $midocoCcProxyTarget
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcProxyTarget $midocoCcProxyTarget = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoCcProxyTarget $midocoCcProxyTarget = null)
     {
         $this
             ->setMidocoCcProxyTarget($midocoCcProxyTarget);
     }
     /**
      * Get MidocoCcProxyTarget value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcProxyTarget|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcProxyTarget|null
      */
-    public function getMidocoCcProxyTarget(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcProxyTarget
+    public function getMidocoCcProxyTarget(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoCcProxyTarget
     {
         return $this->MidocoCcProxyTarget;
     }
     /**
      * Set MidocoCcProxyTarget value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcProxyTarget $midocoCcProxyTarget
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveCcProxyTargetRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCcProxyTarget $midocoCcProxyTarget
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveCcProxyTargetRequest
      */
-    public function setMidocoCcProxyTarget(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcProxyTarget $midocoCcProxyTarget = null): self
+    public function setMidocoCcProxyTarget(?\Pggns\MidocoApi\Orderlists\StructType\MidocoCcProxyTarget $midocoCcProxyTarget = null): self
     {
         $this->MidocoCcProxyTarget = $midocoCcProxyTarget;
         

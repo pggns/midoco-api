@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -93,7 +93,7 @@ class MidocoQueryCriteria extends AbstractStructBase
      * Set value value
      * @throws InvalidArgumentException
      * @param string[] $value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryCriteria
      */
     public function setValue(?array $value = null): self
     {
@@ -109,7 +109,7 @@ class MidocoQueryCriteria extends AbstractStructBase
      * Add item to value value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryCriteria
      */
     public function addToValue(string $item): self
     {
@@ -132,7 +132,7 @@ class MidocoQueryCriteria extends AbstractStructBase
     /**
      * Set fieldName value
      * @param string $fieldName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryCriteria
      */
     public function setFieldName(?string $fieldName = null): self
     {
@@ -155,7 +155,7 @@ class MidocoQueryCriteria extends AbstractStructBase
     /**
      * Set opName value
      * @param string $opName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryCriteria
      */
     public function setOpName(?string $opName = null): self
     {
@@ -178,7 +178,7 @@ class MidocoQueryCriteria extends AbstractStructBase
     /**
      * Set visible value
      * @param bool $visible
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryCriteria
      */
     public function setVisible(?bool $visible = null): self
     {

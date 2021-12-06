@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetVatAccountAssignsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVatAccountAssign
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountAssignDTO[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\VatAccountAssignDTO[]
      */
     protected ?array $MidocoVatAccountAssign = null;
     /**
      * Constructor method for GetVatAccountAssignsResponse
      * @uses GetVatAccountAssignsResponse::setMidocoVatAccountAssign()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountAssignDTO[] $midocoVatAccountAssign
+     * @param \Pggns\MidocoApi\OrderSD\StructType\VatAccountAssignDTO[] $midocoVatAccountAssign
      */
     public function __construct(?array $midocoVatAccountAssign = null)
     {
@@ -34,7 +34,7 @@ class GetVatAccountAssignsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVatAccountAssign value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountAssignDTO[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VatAccountAssignDTO[]
      */
     public function getMidocoVatAccountAssign(): ?array
     {
@@ -55,12 +55,12 @@ class GetVatAccountAssignsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getVatAccountAssignsResponseMidocoVatAccountAssignItem) {
             // validation for constraint: itemType
-            if (!$getVatAccountAssignsResponseMidocoVatAccountAssignItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountAssignDTO) {
+            if (!$getVatAccountAssignsResponseMidocoVatAccountAssignItem instanceof \Pggns\MidocoApi\OrderSD\StructType\VatAccountAssignDTO) {
                 $invalidValues[] = is_object($getVatAccountAssignsResponseMidocoVatAccountAssignItem) ? get_class($getVatAccountAssignsResponseMidocoVatAccountAssignItem) : sprintf('%s(%s)', gettype($getVatAccountAssignsResponseMidocoVatAccountAssignItem), var_export($getVatAccountAssignsResponseMidocoVatAccountAssignItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatAccountAssign property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatAccountAssign property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\VatAccountAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetVatAccountAssignsResponse extends AbstractStructBase
     /**
      * Set MidocoVatAccountAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountAssignDTO[] $midocoVatAccountAssign
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetVatAccountAssignsResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\VatAccountAssignDTO[] $midocoVatAccountAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetVatAccountAssignsResponse
      */
     public function setMidocoVatAccountAssign(?array $midocoVatAccountAssign = null): self
     {
@@ -85,14 +85,14 @@ class GetVatAccountAssignsResponse extends AbstractStructBase
     /**
      * Add item to MidocoVatAccountAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountAssignDTO $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetVatAccountAssignsResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\VatAccountAssignDTO $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetVatAccountAssignsResponse
      */
-    public function addToMidocoVatAccountAssign(\Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountAssignDTO $item): self
+    public function addToMidocoVatAccountAssign(\Pggns\MidocoApi\OrderSD\StructType\VatAccountAssignDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountAssignDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatAccountAssign property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\VatAccountAssignDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatAccountAssign property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\VatAccountAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatAccountAssign[] = $item;
         

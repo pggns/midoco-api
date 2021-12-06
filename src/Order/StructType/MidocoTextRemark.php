@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class MidocoTextRemark extends RemarkDTO
     /**
      * Set cultureName value
      * @param string $cultureName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTextRemark
      */
     public function setCultureName(?string $cultureName = null): self
     {
@@ -150,7 +150,7 @@ class MidocoTextRemark extends RemarkDTO
     /**
      * Set useInEMailAsInteger value
      * @param int $useInEMailAsInteger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTextRemark
      */
     public function setUseInEMailAsInteger(?int $useInEMailAsInteger = null): self
     {
@@ -173,7 +173,7 @@ class MidocoTextRemark extends RemarkDTO
     /**
      * Set useInOrderAsInteger value
      * @param int $useInOrderAsInteger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTextRemark
      */
     public function setUseInOrderAsInteger(?int $useInOrderAsInteger = null): self
     {
@@ -196,7 +196,7 @@ class MidocoTextRemark extends RemarkDTO
     /**
      * Set useInServiceAsInteger value
      * @param int $useInServiceAsInteger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTextRemark
      */
     public function setUseInServiceAsInteger(?int $useInServiceAsInteger = null): self
     {
@@ -219,7 +219,7 @@ class MidocoTextRemark extends RemarkDTO
     /**
      * Set constraintOrgunitAsInteger value
      * @param int $constraintOrgunitAsInteger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTextRemark
      */
     public function setConstraintOrgunitAsInteger(?int $constraintOrgunitAsInteger = null): self
     {
@@ -242,7 +242,7 @@ class MidocoTextRemark extends RemarkDTO
     /**
      * Set constraintSupplierAsInteger value
      * @param int $constraintSupplierAsInteger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTextRemark
      */
     public function setConstraintSupplierAsInteger(?int $constraintSupplierAsInteger = null): self
     {
@@ -265,7 +265,7 @@ class MidocoTextRemark extends RemarkDTO
     /**
      * Set flightTimeChangeAsInteger value
      * @param int $flightTimeChangeAsInteger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTextRemark
      */
     public function setFlightTimeChangeAsInteger(?int $flightTimeChangeAsInteger = null): self
     {
@@ -288,7 +288,7 @@ class MidocoTextRemark extends RemarkDTO
     /**
      * Set useInVerkAsInteger value
      * @param int $useInVerkAsInteger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTextRemark
      */
     public function setUseInVerkAsInteger(?int $useInVerkAsInteger = null): self
     {
@@ -311,7 +311,7 @@ class MidocoTextRemark extends RemarkDTO
     /**
      * Set useInNoticeAsInteger value
      * @param int $useInNoticeAsInteger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTextRemark
      */
     public function setUseInNoticeAsInteger(?int $useInNoticeAsInteger = null): self
     {
@@ -334,7 +334,7 @@ class MidocoTextRemark extends RemarkDTO
     /**
      * Set useAsTaskAsInteger value
      * @param int $useAsTaskAsInteger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTextRemark
      */
     public function setUseAsTaskAsInteger(?int $useAsTaskAsInteger = null): self
     {
@@ -357,7 +357,7 @@ class MidocoTextRemark extends RemarkDTO
     /**
      * Set useInAdditServiceAsInteger value
      * @param int $useInAdditServiceAsInteger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTextRemark
      */
     public function setUseInAdditServiceAsInteger(?int $useInAdditServiceAsInteger = null): self
     {
@@ -380,7 +380,7 @@ class MidocoTextRemark extends RemarkDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTextRemark
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {

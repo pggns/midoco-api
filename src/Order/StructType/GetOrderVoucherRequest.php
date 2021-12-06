@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetOrderVoucherRequest extends AbstractStructBase
     /**
      * Set voucherId value
      * @param int $voucherId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderVoucherRequest
      */
     public function setVoucherId(?int $voucherId = null): self
     {
@@ -70,7 +70,7 @@ class GetOrderVoucherRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderVoucherRequest
      */
     public function setOrderId(?int $orderId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetSavedReportRequest extends AbstractStructBase
      * The MidocoSavedReport
      * Meta information extracted from the WSDL
      * - ref: system:MidocoSavedReport
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoSavedReport|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport $MidocoSavedReport = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoSavedReport $MidocoSavedReport = null;
     /**
      * Constructor method for GetSavedReportRequest
      * @uses GetSavedReportRequest::setMidocoSavedReport()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport $midocoSavedReport
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoSavedReport $midocoSavedReport
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport $midocoSavedReport = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MidocoSavedReport $midocoSavedReport = null)
     {
         $this
             ->setMidocoSavedReport($midocoSavedReport);
     }
     /**
      * Get MidocoSavedReport value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoSavedReport|null
      */
-    public function getMidocoSavedReport(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport
+    public function getMidocoSavedReport(): ?\Pggns\MidocoApi\Mis\StructType\MidocoSavedReport
     {
         return $this->MidocoSavedReport;
     }
     /**
      * Set MidocoSavedReport value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport $midocoSavedReport
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetSavedReportRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoSavedReport $midocoSavedReport
+     * @return \Pggns\MidocoApi\Mis\StructType\GetSavedReportRequest
      */
-    public function setMidocoSavedReport(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReport $midocoSavedReport = null): self
+    public function setMidocoSavedReport(?\Pggns\MidocoApi\Mis\StructType\MidocoSavedReport $midocoSavedReport = null): self
     {
         $this->MidocoSavedReport = $midocoSavedReport;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoCustomerOrder extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerOrder
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCustomerOrder
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -70,7 +70,7 @@ class MidocoCustomerOrder extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerOrder
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCustomerOrder
      */
     public function setOrderNo(?int $orderNo = null): self
     {

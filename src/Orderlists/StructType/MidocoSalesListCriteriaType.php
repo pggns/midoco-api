@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -133,7 +133,7 @@ class MidocoSalesListCriteriaType extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListCriteriaType
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -149,7 +149,7 @@ class MidocoSalesListCriteriaType extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListCriteriaType
      */
     public function addToOrgUnits(string $item): self
     {
@@ -172,7 +172,7 @@ class MidocoSalesListCriteriaType extends AbstractStructBase
     /**
      * Set travelStartDate value
      * @param string $travelStartDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListCriteriaType
      */
     public function setTravelStartDate(?string $travelStartDate = null): self
     {
@@ -195,7 +195,7 @@ class MidocoSalesListCriteriaType extends AbstractStructBase
     /**
      * Set travelEndDate value
      * @param string $travelEndDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListCriteriaType
      */
     public function setTravelEndDate(?string $travelEndDate = null): self
     {
@@ -218,7 +218,7 @@ class MidocoSalesListCriteriaType extends AbstractStructBase
     /**
      * Set creationStartDate value
      * @param string $creationStartDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListCriteriaType
      */
     public function setCreationStartDate(?string $creationStartDate = null): self
     {
@@ -241,7 +241,7 @@ class MidocoSalesListCriteriaType extends AbstractStructBase
     /**
      * Set creationEndDate value
      * @param string $creationEndDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListCriteriaType
      */
     public function setCreationEndDate(?string $creationEndDate = null): self
     {
@@ -264,7 +264,7 @@ class MidocoSalesListCriteriaType extends AbstractStructBase
     /**
      * Set priceStartDate value
      * @param string $priceStartDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListCriteriaType
      */
     public function setPriceStartDate(?string $priceStartDate = null): self
     {
@@ -287,7 +287,7 @@ class MidocoSalesListCriteriaType extends AbstractStructBase
     /**
      * Set priceEndDate value
      * @param string $priceEndDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListCriteriaType
      */
     public function setPriceEndDate(?string $priceEndDate = null): self
     {
@@ -310,7 +310,7 @@ class MidocoSalesListCriteriaType extends AbstractStructBase
     /**
      * Set employee value
      * @param int $employee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListCriteriaType
      */
     public function setEmployee(?int $employee = null): self
     {
@@ -333,7 +333,7 @@ class MidocoSalesListCriteriaType extends AbstractStructBase
     /**
      * Set listType value
      * @param int $listType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListCriteriaType
      */
     public function setListType(?int $listType = null): self
     {

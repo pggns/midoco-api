@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class OrderLockPeriodDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderLockPeriodDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderLockPeriodDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -126,7 +126,7 @@ class OrderLockPeriodDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderLockPeriodDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderLockPeriodDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -149,7 +149,7 @@ class OrderLockPeriodDTO extends AbstractStructBase
     /**
      * Set forAllChildren value
      * @param bool $forAllChildren
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderLockPeriodDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderLockPeriodDTO
      */
     public function setForAllChildren(?bool $forAllChildren = null): self
     {
@@ -172,7 +172,7 @@ class OrderLockPeriodDTO extends AbstractStructBase
     /**
      * Set lockPeriodEnd value
      * @param string $lockPeriodEnd
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderLockPeriodDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderLockPeriodDTO
      */
     public function setLockPeriodEnd(?string $lockPeriodEnd = null): self
     {
@@ -195,7 +195,7 @@ class OrderLockPeriodDTO extends AbstractStructBase
     /**
      * Set lockPeriodId value
      * @param int $lockPeriodId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderLockPeriodDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderLockPeriodDTO
      */
     public function setLockPeriodId(?int $lockPeriodId = null): self
     {
@@ -218,7 +218,7 @@ class OrderLockPeriodDTO extends AbstractStructBase
     /**
      * Set lockPeriodStart value
      * @param string $lockPeriodStart
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderLockPeriodDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderLockPeriodDTO
      */
     public function setLockPeriodStart(?string $lockPeriodStart = null): self
     {
@@ -241,7 +241,7 @@ class OrderLockPeriodDTO extends AbstractStructBase
     /**
      * Set suspendUser value
      * @param int $suspendUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderLockPeriodDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderLockPeriodDTO
      */
     public function setSuspendUser(?int $suspendUser = null): self
     {
@@ -264,7 +264,7 @@ class OrderLockPeriodDTO extends AbstractStructBase
     /**
      * Set suspended value
      * @param bool $suspended
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderLockPeriodDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderLockPeriodDTO
      */
     public function setSuspended(?bool $suspended = null): self
     {
@@ -287,7 +287,7 @@ class OrderLockPeriodDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderLockPeriodDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderLockPeriodDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

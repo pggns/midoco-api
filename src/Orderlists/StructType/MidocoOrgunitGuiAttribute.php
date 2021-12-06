@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoOrgunitGuiAttribute extends OrgunitGuiAttributeDTO
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrgunitGuiAttribute
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrgunitGuiAttribute
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -78,7 +78,7 @@ class MidocoOrgunitGuiAttribute extends OrgunitGuiAttributeDTO
     /**
      * Set group value
      * @param string $group
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrgunitGuiAttribute
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrgunitGuiAttribute
      */
     public function setGroup(?string $group = null): self
     {
@@ -101,7 +101,7 @@ class MidocoOrgunitGuiAttribute extends OrgunitGuiAttributeDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrgunitGuiAttribute
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrgunitGuiAttribute
      */
     public function setDescription(?string $description = null): self
     {

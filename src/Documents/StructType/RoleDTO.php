@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class RoleDTO extends AbstractStructBase
     /**
      * Set grade value
      * @param int $grade
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RoleDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RoleDTO
      */
     public function setGrade(?int $grade = null): self
     {
@@ -94,7 +94,7 @@ class RoleDTO extends AbstractStructBase
     /**
      * Set isRoleInherited value
      * @param bool $isRoleInherited
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RoleDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RoleDTO
      */
     public function setIsRoleInherited(?bool $isRoleInherited = null): self
     {
@@ -117,7 +117,7 @@ class RoleDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RoleDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RoleDTO
      */
     public function setRoleId(?int $roleId = null): self
     {
@@ -140,7 +140,7 @@ class RoleDTO extends AbstractStructBase
     /**
      * Set roleName value
      * @param string $roleName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RoleDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RoleDTO
      */
     public function setRoleName(?string $roleName = null): self
     {
@@ -163,7 +163,7 @@ class RoleDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RoleDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RoleDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetProductTypeMediatorConditionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoProductTypeMediatorCondition
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO[]
      */
     protected ?array $MidocoProductTypeMediatorCondition = null;
     /**
      * Constructor method for GetProductTypeMediatorConditionsResponse
      * @uses GetProductTypeMediatorConditionsResponse::setMidocoProductTypeMediatorCondition()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO[] $midocoProductTypeMediatorCondition
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO[] $midocoProductTypeMediatorCondition
      */
     public function __construct(?array $midocoProductTypeMediatorCondition = null)
     {
@@ -34,7 +34,7 @@ class GetProductTypeMediatorConditionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoProductTypeMediatorCondition value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO[]
      */
     public function getMidocoProductTypeMediatorCondition(): ?array
     {
@@ -55,12 +55,12 @@ class GetProductTypeMediatorConditionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getProductTypeMediatorConditionsResponseMidocoProductTypeMediatorConditionItem) {
             // validation for constraint: itemType
-            if (!$getProductTypeMediatorConditionsResponseMidocoProductTypeMediatorConditionItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO) {
+            if (!$getProductTypeMediatorConditionsResponseMidocoProductTypeMediatorConditionItem instanceof \Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO) {
                 $invalidValues[] = is_object($getProductTypeMediatorConditionsResponseMidocoProductTypeMediatorConditionItem) ? get_class($getProductTypeMediatorConditionsResponseMidocoProductTypeMediatorConditionItem) : sprintf('%s(%s)', gettype($getProductTypeMediatorConditionsResponseMidocoProductTypeMediatorConditionItem), var_export($getProductTypeMediatorConditionsResponseMidocoProductTypeMediatorConditionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoProductTypeMediatorCondition property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoProductTypeMediatorCondition property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetProductTypeMediatorConditionsResponse extends AbstractStructBase
     /**
      * Set MidocoProductTypeMediatorCondition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO[] $midocoProductTypeMediatorCondition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetProductTypeMediatorConditionsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO[] $midocoProductTypeMediatorCondition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetProductTypeMediatorConditionsResponse
      */
     public function setMidocoProductTypeMediatorCondition(?array $midocoProductTypeMediatorCondition = null): self
     {
@@ -85,14 +85,14 @@ class GetProductTypeMediatorConditionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoProductTypeMediatorCondition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetProductTypeMediatorConditionsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetProductTypeMediatorConditionsResponse
      */
-    public function addToMidocoProductTypeMediatorCondition(\Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO $item): self
+    public function addToMidocoProductTypeMediatorCondition(\Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoProductTypeMediatorCondition property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoProductTypeMediatorCondition property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoProductTypeMediatorCondition[] = $item;
         

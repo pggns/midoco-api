@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class CdfTitle extends AbstractStructBase
     /**
      * Set fieldId value
      * @param string $fieldId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CdfTitle
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CdfTitle
      */
     public function setFieldId(?string $fieldId = null): self
     {
@@ -70,7 +70,7 @@ class CdfTitle extends AbstractStructBase
     /**
      * Set fieldName value
      * @param string $fieldName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CdfTitle
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CdfTitle
      */
     public function setFieldName(?string $fieldName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetOrgunitForCrsAgencyResponse extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgunitForCrsAgencyResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgunitForCrsAgencyResponse
      */
     public function setOrgunit(?string $orgunit = null): self
     {

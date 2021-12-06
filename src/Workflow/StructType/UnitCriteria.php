@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -90,7 +90,7 @@ class UnitCriteria extends AbstractStructBase
      * Set creationOrgunit value
      * @throws InvalidArgumentException
      * @param string[] $creationOrgunit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\UnitCriteria
      */
     public function setCreationOrgunit(?array $creationOrgunit = null): self
     {
@@ -106,7 +106,7 @@ class UnitCriteria extends AbstractStructBase
      * Add item to creationOrgunit value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\UnitCriteria
      */
     public function addToCreationOrgunit(string $item): self
     {
@@ -156,7 +156,7 @@ class UnitCriteria extends AbstractStructBase
      * Set delegateOrgunit value
      * @throws InvalidArgumentException
      * @param string[] $delegateOrgunit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\UnitCriteria
      */
     public function setDelegateOrgunit(?array $delegateOrgunit = null): self
     {
@@ -172,7 +172,7 @@ class UnitCriteria extends AbstractStructBase
      * Add item to delegateOrgunit value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\UnitCriteria
      */
     public function addToDelegateOrgunit(string $item): self
     {
@@ -195,7 +195,7 @@ class UnitCriteria extends AbstractStructBase
     /**
      * Set negateDelegateOrgunit value
      * @param bool $negateDelegateOrgunit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\UnitCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\UnitCriteria
      */
     public function setNegateDelegateOrgunit(?bool $negateDelegateOrgunit = false): self
     {

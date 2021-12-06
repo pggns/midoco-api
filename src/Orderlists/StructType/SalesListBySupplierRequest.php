@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SalesListBySupplierRequest extends AbstractStructBase
      * The MidocoSalesListBySupplierCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoSalesListBySupplierCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $MidocoSalesListBySupplierCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $MidocoSalesListBySupplierCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SalesListBySupplierRequest extends AbstractStructBase
      * Constructor method for SalesListBySupplierRequest
      * @uses SalesListBySupplierRequest::setMidocoSalesListBySupplierCriteria()
      * @uses SalesListBySupplierRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoSalesListBySupplierCriteria($midocoSalesListBySupplierCriteria)
@@ -42,18 +42,18 @@ class SalesListBySupplierRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSalesListBySupplierCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType|null
      */
-    public function getMidocoSalesListBySupplierCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType
+    public function getMidocoSalesListBySupplierCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType
     {
         return $this->MidocoSalesListBySupplierCriteria;
     }
     /**
      * Set MidocoSalesListBySupplierCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierRequest
      */
-    public function setMidocoSalesListBySupplierCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria = null): self
+    public function setMidocoSalesListBySupplierCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria = null): self
     {
         $this->MidocoSalesListBySupplierCriteria = $midocoSalesListBySupplierCriteria;
         
@@ -70,7 +70,7 @@ class SalesListBySupplierRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetAssignedSuppliersToTemplateRequest extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedSuppliersToTemplateRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAssignedSuppliersToTemplateRequest
      */
     public function setTemplateId(int $templateId): self
     {
@@ -72,7 +72,7 @@ class GetAssignedSuppliersToTemplateRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedSuppliersToTemplateRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAssignedSuppliersToTemplateRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

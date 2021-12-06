@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetCostCentersFromTopMostOrgUnitResponse extends AbstractStructBase
      * Set costCentre value
      * @throws InvalidArgumentException
      * @param string[] $costCentre
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetCostCentersFromTopMostOrgUnitResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\GetCostCentersFromTopMostOrgUnitResponse
      */
     public function setCostCentre(?array $costCentre = null): self
     {
@@ -85,7 +85,7 @@ class GetCostCentersFromTopMostOrgUnitResponse extends AbstractStructBase
      * Add item to costCentre value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetCostCentersFromTopMostOrgUnitResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\GetCostCentersFromTopMostOrgUnitResponse
      */
     public function addToCostCentre(string $item): self
     {

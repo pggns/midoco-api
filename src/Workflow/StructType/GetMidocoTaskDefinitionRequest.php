@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetMidocoTaskDefinitionRequest extends AbstractStructBase
      * The MidocoTaskDefinition
      * Meta information extracted from the WSDL
      * - ref: MidocoTaskDefinition
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition $MidocoTaskDefinition = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition $MidocoTaskDefinition = null;
     /**
      * The orgunit
      * @var string|null
@@ -29,10 +29,10 @@ class GetMidocoTaskDefinitionRequest extends AbstractStructBase
      * Constructor method for GetMidocoTaskDefinitionRequest
      * @uses GetMidocoTaskDefinitionRequest::setMidocoTaskDefinition()
      * @uses GetMidocoTaskDefinitionRequest::setOrgunit()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition $midocoTaskDefinition
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition $midocoTaskDefinition
      * @param string $orgunit
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition $midocoTaskDefinition = null, ?string $orgunit = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition $midocoTaskDefinition = null, ?string $orgunit = null)
     {
         $this
             ->setMidocoTaskDefinition($midocoTaskDefinition)
@@ -40,18 +40,18 @@ class GetMidocoTaskDefinitionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTaskDefinition value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition|null
      */
-    public function getMidocoTaskDefinition(): ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition
+    public function getMidocoTaskDefinition(): ?\Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition
     {
         return $this->MidocoTaskDefinition;
     }
     /**
      * Set MidocoTaskDefinition value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition $midocoTaskDefinition
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetMidocoTaskDefinitionRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition $midocoTaskDefinition
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetMidocoTaskDefinitionRequest
      */
-    public function setMidocoTaskDefinition(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskDefinition $midocoTaskDefinition = null): self
+    public function setMidocoTaskDefinition(?\Pggns\MidocoApi\Workflow\StructType\MidocoTaskDefinition $midocoTaskDefinition = null): self
     {
         $this->MidocoTaskDefinition = $midocoTaskDefinition;
         
@@ -68,7 +68,7 @@ class GetMidocoTaskDefinitionRequest extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetMidocoTaskDefinitionRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetMidocoTaskDefinitionRequest
      */
     public function setOrgunit(?string $orgunit = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -129,7 +129,7 @@ class GetCommunicationHistoriesRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCommunicationHistoriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -152,7 +152,7 @@ class GetCommunicationHistoriesRequest extends AbstractStructBase
     /**
      * Set docType value
      * @param string $docType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCommunicationHistoriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesRequest
      */
     public function setDocType(?string $docType = null): self
     {
@@ -175,7 +175,7 @@ class GetCommunicationHistoriesRequest extends AbstractStructBase
     /**
      * Set deliveryType value
      * @param string $deliveryType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCommunicationHistoriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesRequest
      */
     public function setDeliveryType(?string $deliveryType = null): self
     {
@@ -198,7 +198,7 @@ class GetCommunicationHistoriesRequest extends AbstractStructBase
     /**
      * Set templateName value
      * @param string $templateName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCommunicationHistoriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesRequest
      */
     public function setTemplateName(?string $templateName = null): self
     {
@@ -221,7 +221,7 @@ class GetCommunicationHistoriesRequest extends AbstractStructBase
     /**
      * Set creationTimeFrom value
      * @param string $creationTimeFrom
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCommunicationHistoriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesRequest
      */
     public function setCreationTimeFrom(?string $creationTimeFrom = null): self
     {
@@ -244,7 +244,7 @@ class GetCommunicationHistoriesRequest extends AbstractStructBase
     /**
      * Set creationTimeTo value
      * @param string $creationTimeTo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCommunicationHistoriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesRequest
      */
     public function setCreationTimeTo(?string $creationTimeTo = null): self
     {
@@ -267,7 +267,7 @@ class GetCommunicationHistoriesRequest extends AbstractStructBase
     /**
      * Set printTimeFrom value
      * @param string $printTimeFrom
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCommunicationHistoriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesRequest
      */
     public function setPrintTimeFrom(?string $printTimeFrom = null): self
     {
@@ -290,7 +290,7 @@ class GetCommunicationHistoriesRequest extends AbstractStructBase
     /**
      * Set printTimeTo value
      * @param string $printTimeTo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCommunicationHistoriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesRequest
      */
     public function setPrintTimeTo(?string $printTimeTo = null): self
     {
@@ -313,7 +313,7 @@ class GetCommunicationHistoriesRequest extends AbstractStructBase
     /**
      * Set timePrintedFrom value
      * @param string $timePrintedFrom
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCommunicationHistoriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesRequest
      */
     public function setTimePrintedFrom(?string $timePrintedFrom = null): self
     {
@@ -336,7 +336,7 @@ class GetCommunicationHistoriesRequest extends AbstractStructBase
     /**
      * Set timePrintedTo value
      * @param string $timePrintedTo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCommunicationHistoriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesRequest
      */
     public function setTimePrintedTo(?string $timePrintedTo = null): self
     {
@@ -359,7 +359,7 @@ class GetCommunicationHistoriesRequest extends AbstractStructBase
     /**
      * Set isPrinted value
      * @param bool $isPrinted
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCommunicationHistoriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesRequest
      */
     public function setIsPrinted(?bool $isPrinted = null): self
     {
@@ -382,7 +382,7 @@ class GetCommunicationHistoriesRequest extends AbstractStructBase
     /**
      * Set isGroupBy value
      * @param bool $isGroupBy
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCommunicationHistoriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesRequest
      */
     public function setIsGroupBy(?bool $isGroupBy = false): self
     {

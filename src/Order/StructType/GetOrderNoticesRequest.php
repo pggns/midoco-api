@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -183,7 +183,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
      * Set types value
      * @throws InvalidArgumentException
      * @param string[] $types
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setTypes(?array $types = null): self
     {
@@ -199,7 +199,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
      * Add item to types value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function addToTypes(string $item): self
     {
@@ -222,7 +222,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -245,7 +245,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setPosition(?int $position = null): self
     {
@@ -268,7 +268,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set sortOrder value
      * @param string $sortOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setSortOrder(?string $sortOrder = null): self
     {
@@ -291,7 +291,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set orgunitName value
      * @param string $orgunitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setOrgunitName(?string $orgunitName = null): self
     {
@@ -314,7 +314,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set selection value
      * @param string $selection
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setSelection(?string $selection = null): self
     {
@@ -337,7 +337,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set fromFinishTimestamp value
      * @param string $fromFinishTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setFromFinishTimestamp(?string $fromFinishTimestamp = null): self
     {
@@ -360,7 +360,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set untilFinishTimestamp value
      * @param string $untilFinishTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setUntilFinishTimestamp(?string $untilFinishTimestamp = null): self
     {
@@ -383,7 +383,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set fromCreationTimestamp value
      * @param string $fromCreationTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setFromCreationTimestamp(?string $fromCreationTimestamp = null): self
     {
@@ -406,7 +406,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set untilCreationTimestamp value
      * @param string $untilCreationTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setUntilCreationTimestamp(?string $untilCreationTimestamp = null): self
     {
@@ -429,7 +429,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set delegationQueue value
      * @param string $delegationQueue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setDelegationQueue(?string $delegationQueue = null): self
     {
@@ -452,7 +452,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set notice value
      * @param string $notice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setNotice(?string $notice = null): self
     {
@@ -475,7 +475,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -498,7 +498,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set finishUser value
      * @param int $finishUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setFinishUser(?int $finishUser = null): self
     {
@@ -521,7 +521,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     /**
      * Set withOrderNo value
      * @param bool $withOrderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderNoticesRequest
      */
     public function setWithOrderNo(?bool $withOrderNo = false): self
     {

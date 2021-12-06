@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -73,7 +73,7 @@ class SearchTssProtocolRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTssProtocolRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTssProtocolRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -96,7 +96,7 @@ class SearchTssProtocolRequest extends AbstractStructBase
     /**
      * Set exportId value
      * @param string $exportId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTssProtocolRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTssProtocolRequest
      */
     public function setExportId(?string $exportId = null): self
     {
@@ -119,7 +119,7 @@ class SearchTssProtocolRequest extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTssProtocolRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTssProtocolRequest
      */
     public function setTssId(?string $tssId = null): self
     {
@@ -142,7 +142,7 @@ class SearchTssProtocolRequest extends AbstractStructBase
     /**
      * Set dateFrom value
      * @param string $dateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTssProtocolRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTssProtocolRequest
      */
     public function setDateFrom(?string $dateFrom = null): self
     {
@@ -165,7 +165,7 @@ class SearchTssProtocolRequest extends AbstractStructBase
     /**
      * Set dateTo value
      * @param string $dateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTssProtocolRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTssProtocolRequest
      */
     public function setDateTo(?string $dateTo = null): self
     {

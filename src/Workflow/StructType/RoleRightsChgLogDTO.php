@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class RoleRightsChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RoleRightsChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RoleRightsChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -94,7 +94,7 @@ class RoleRightsChgLogDTO extends AbstractStructBase
     /**
      * Set rightId value
      * @param string $rightId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RoleRightsChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RoleRightsChgLogDTO
      */
     public function setRightId(?string $rightId = null): self
     {
@@ -117,7 +117,7 @@ class RoleRightsChgLogDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RoleRightsChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RoleRightsChgLogDTO
      */
     public function setRoleId(?int $roleId = null): self
     {
@@ -140,7 +140,7 @@ class RoleRightsChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RoleRightsChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RoleRightsChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -163,7 +163,7 @@ class RoleRightsChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RoleRightsChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RoleRightsChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

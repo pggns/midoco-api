@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -247,7 +247,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set Satzart value
      * @param string $satzart
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setSatzart(?string $satzart = null): self
     {
@@ -270,7 +270,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set mandnr_ms value
      * @param string $mandnr_ms
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setMandnr_ms(?string $mandnr_ms = null): self
     {
@@ -293,7 +293,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set bereich value
      * @param string $bereich
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setBereich(?string $bereich = null): self
     {
@@ -316,7 +316,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set bereichlfd value
      * @param string $bereichlfd
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setBereichlfd(?string $bereichlfd = null): self
     {
@@ -339,7 +339,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set belegkat value
      * @param string $belegkat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setBelegkat(?string $belegkat = null): self
     {
@@ -362,7 +362,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set kz_sv value
      * @param string $kz_sv
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setKz_sv(?string $kz_sv = null): self
     {
@@ -385,7 +385,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set belnr value
      * @param string $belnr
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setBelnr(?string $belnr = null): self
     {
@@ -408,7 +408,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set beldat value
      * @param string $beldat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setBeldat(?string $beldat = null): self
     {
@@ -431,7 +431,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set frbelnr value
      * @param string $frbelnr
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setFrbelnr(?string $frbelnr = null): self
     {
@@ -454,7 +454,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setText(?string $text = null): self
     {
@@ -477,7 +477,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set perdat value
      * @param string $perdat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setPerdat(?string $perdat = null): self
     {
@@ -500,7 +500,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set perdat_uva value
      * @param string $perdat_uva
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setPerdat_uva(?string $perdat_uva = null): self
     {
@@ -523,7 +523,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set kz_sy value
      * @param string $kz_sy
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setKz_sy(?string $kz_sy = null): self
     {
@@ -546,7 +546,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set kz_fw value
      * @param string $kz_fw
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setKz_fw(?string $kz_fw = null): self
     {
@@ -569,7 +569,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set kz_gw value
      * @param string $kz_gw
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setKz_gw(?string $kz_gw = null): self
     {
@@ -592,7 +592,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set fwfaktor value
      * @param string $fwfaktor
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setFwfaktor(?string $fwfaktor = null): self
     {
@@ -615,7 +615,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set fwkurs value
      * @param string $fwkurs
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setFwkurs(?string $fwkurs = null): self
     {
@@ -638,7 +638,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set fwvariante value
      * @param string $fwvariante
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setFwvariante(?string $fwvariante = null): self
     {
@@ -661,7 +661,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set kz_ustart value
      * @param string $kz_ustart
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setKz_ustart(?string $kz_ustart = null): self
     {
@@ -684,7 +684,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set kz_zibuch value
      * @param string $kz_zibuch
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setKz_zibuch(?string $kz_zibuch = null): self
     {
@@ -707,7 +707,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set zm_art value
      * @param string $zm_art
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setZm_art(?string $zm_art = null): self
     {
@@ -730,7 +730,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set bereichsart value
      * @param string $bereichsart
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setBereichsart(?string $bereichsart = null): self
     {
@@ -753,7 +753,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set bauvorhaben value
      * @param string $bauvorhaben
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setBauvorhaben(?string $bauvorhaben = null): self
     {
@@ -776,7 +776,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set bauteil value
      * @param string $bauteil
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setBauteil(?string $bauteil = null): self
     {
@@ -799,7 +799,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set dokuid value
      * @param string $dokuid
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setDokuid(?string $dokuid = null): self
     {
@@ -822,7 +822,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set ustid value
      * @param string $ustid
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setUstid(?string $ustid = null): self
     {
@@ -845,7 +845,7 @@ class JETFIBUBelegKopf extends AbstractStructBase
     /**
      * Set notiz value
      * @param string $notiz
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\JETFIBUBelegKopf
+     * @return \Pggns\MidocoApi\Documents\StructType\JETFIBUBelegKopf
      */
     public function setNotiz(?string $notiz = null): self
     {

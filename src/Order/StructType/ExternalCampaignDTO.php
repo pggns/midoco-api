@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class ExternalCampaignDTO extends AbstractStructBase
     /**
      * Set campaignType value
      * @param string $campaignType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalCampaignDTO
      */
     public function setCampaignType(?string $campaignType = null): self
     {
@@ -126,7 +126,7 @@ class ExternalCampaignDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalCampaignDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -149,7 +149,7 @@ class ExternalCampaignDTO extends AbstractStructBase
     /**
      * Set extCampId value
      * @param int $extCampId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalCampaignDTO
      */
     public function setExtCampId(?int $extCampId = null): self
     {
@@ -172,7 +172,7 @@ class ExternalCampaignDTO extends AbstractStructBase
     /**
      * Set externalId value
      * @param int $externalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalCampaignDTO
      */
     public function setExternalId(?int $externalId = null): self
     {
@@ -195,7 +195,7 @@ class ExternalCampaignDTO extends AbstractStructBase
     /**
      * Set externalSystem value
      * @param string $externalSystem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalCampaignDTO
      */
     public function setExternalSystem(?string $externalSystem = null): self
     {
@@ -218,7 +218,7 @@ class ExternalCampaignDTO extends AbstractStructBase
     /**
      * Set issueTime value
      * @param string $issueTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalCampaignDTO
      */
     public function setIssueTime(?string $issueTime = null): self
     {
@@ -241,7 +241,7 @@ class ExternalCampaignDTO extends AbstractStructBase
     /**
      * Set numberOfRecipients value
      * @param int $numberOfRecipients
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalCampaignDTO
      */
     public function setNumberOfRecipients(?int $numberOfRecipients = null): self
     {
@@ -264,7 +264,7 @@ class ExternalCampaignDTO extends AbstractStructBase
     /**
      * Set sender value
      * @param string $sender
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalCampaignDTO
      */
     public function setSender(?string $sender = null): self
     {
@@ -287,7 +287,7 @@ class ExternalCampaignDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExternalCampaignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ExternalCampaignDTO
      */
     public function setUserId(?int $userId = null): self
     {

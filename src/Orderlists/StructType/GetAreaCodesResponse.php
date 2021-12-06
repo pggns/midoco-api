@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAreaCodesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAreaCode
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAreaCode[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode[]
      */
     protected ?array $MidocoAreaCode = null;
     /**
      * Constructor method for GetAreaCodesResponse
      * @uses GetAreaCodesResponse::setMidocoAreaCode()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAreaCode[] $midocoAreaCode
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode[] $midocoAreaCode
      */
     public function __construct(?array $midocoAreaCode = null)
     {
@@ -34,7 +34,7 @@ class GetAreaCodesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAreaCode value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAreaCode[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode[]
      */
     public function getMidocoAreaCode(): ?array
     {
@@ -55,12 +55,12 @@ class GetAreaCodesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAreaCodesResponseMidocoAreaCodeItem) {
             // validation for constraint: itemType
-            if (!$getAreaCodesResponseMidocoAreaCodeItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAreaCode) {
+            if (!$getAreaCodesResponseMidocoAreaCodeItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode) {
                 $invalidValues[] = is_object($getAreaCodesResponseMidocoAreaCodeItem) ? get_class($getAreaCodesResponseMidocoAreaCodeItem) : sprintf('%s(%s)', gettype($getAreaCodesResponseMidocoAreaCodeItem), var_export($getAreaCodesResponseMidocoAreaCodeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAreaCode property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAreaCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAreaCode property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAreaCodesResponse extends AbstractStructBase
     /**
      * Set MidocoAreaCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAreaCode[] $midocoAreaCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAreaCodesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode[] $midocoAreaCode
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAreaCodesResponse
      */
     public function setMidocoAreaCode(?array $midocoAreaCode = null): self
     {
@@ -85,14 +85,14 @@ class GetAreaCodesResponse extends AbstractStructBase
     /**
      * Add item to MidocoAreaCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAreaCode $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAreaCodesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAreaCodesResponse
      */
-    public function addToMidocoAreaCode(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAreaCode $item): self
+    public function addToMidocoAreaCode(\Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAreaCode) {
-            throw new InvalidArgumentException(sprintf('The MidocoAreaCode property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAreaCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode) {
+            throw new InvalidArgumentException(sprintf('The MidocoAreaCode property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAreaCode[] = $item;
         

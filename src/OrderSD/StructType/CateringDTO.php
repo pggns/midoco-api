@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class CateringDTO extends AbstractStructBase
     /**
      * Set cateringCode value
      * @param string $cateringCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CateringDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CateringDTO
      */
     public function setCateringCode(?string $cateringCode = null): self
     {
@@ -70,7 +70,7 @@ class CateringDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CateringDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CateringDTO
      */
     public function setDescription(?string $description = null): self
     {

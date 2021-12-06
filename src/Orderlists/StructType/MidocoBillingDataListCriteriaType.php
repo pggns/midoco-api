@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class MidocoBillingDataListCriteriaType extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListCriteriaType
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -118,7 +118,7 @@ class MidocoBillingDataListCriteriaType extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListCriteriaType
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -141,7 +141,7 @@ class MidocoBillingDataListCriteriaType extends AbstractStructBase
     /**
      * Set receiptDateStart value
      * @param string $receiptDateStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListCriteriaType
      */
     public function setReceiptDateStart(?string $receiptDateStart = null): self
     {
@@ -164,7 +164,7 @@ class MidocoBillingDataListCriteriaType extends AbstractStructBase
     /**
      * Set receiptDateEnd value
      * @param string $receiptDateEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListCriteriaType
      */
     public function setReceiptDateEnd(?string $receiptDateEnd = null): self
     {
@@ -187,7 +187,7 @@ class MidocoBillingDataListCriteriaType extends AbstractStructBase
     /**
      * Set unprintedInvoices value
      * @param bool $unprintedInvoices
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListCriteriaType
      */
     public function setUnprintedInvoices(?bool $unprintedInvoices = null): self
     {
@@ -210,7 +210,7 @@ class MidocoBillingDataListCriteriaType extends AbstractStructBase
     /**
      * Set completelyPaid value
      * @param bool $completelyPaid
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListCriteriaType
      */
     public function setCompletelyPaid(?bool $completelyPaid = null): self
     {
@@ -233,7 +233,7 @@ class MidocoBillingDataListCriteriaType extends AbstractStructBase
     /**
      * Set excludeVoidedInvoices value
      * @param bool $excludeVoidedInvoices
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListCriteriaType
      */
     public function setExcludeVoidedInvoices(?bool $excludeVoidedInvoices = null): self
     {
@@ -256,7 +256,7 @@ class MidocoBillingDataListCriteriaType extends AbstractStructBase
     /**
      * Set isCustomerInvoiceDetailReport value
      * @param bool $isCustomerInvoiceDetailReport
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListCriteriaType
      */
     public function setIsCustomerInvoiceDetailReport(?bool $isCustomerInvoiceDetailReport = null): self
     {

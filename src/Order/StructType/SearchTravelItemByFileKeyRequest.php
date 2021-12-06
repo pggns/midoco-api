@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SearchTravelItemByFileKeyRequest extends AbstractStructBase
      * The MidocoTravelItemInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoTravelItemInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemInfoType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTravelItemInfoType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemInfoType $MidocoTravelItemInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemInfoType $MidocoTravelItemInfo = null;
     /**
      * Constructor method for SearchTravelItemByFileKeyRequest
      * @uses SearchTravelItemByFileKeyRequest::setMidocoTravelItemInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemInfoType $midocoTravelItemInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelItemInfoType $midocoTravelItemInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemInfoType $midocoTravelItemInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemInfoType $midocoTravelItemInfo = null)
     {
         $this
             ->setMidocoTravelItemInfo($midocoTravelItemInfo);
     }
     /**
      * Get MidocoTravelItemInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemInfoType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTravelItemInfoType|null
      */
-    public function getMidocoTravelItemInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemInfoType
+    public function getMidocoTravelItemInfo(): ?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemInfoType
     {
         return $this->MidocoTravelItemInfo;
     }
     /**
      * Set MidocoTravelItemInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemInfoType $midocoTravelItemInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTravelItemByFileKeyRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelItemInfoType $midocoTravelItemInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTravelItemByFileKeyRequest
      */
-    public function setMidocoTravelItemInfo(?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemInfoType $midocoTravelItemInfo = null): self
+    public function setMidocoTravelItemInfo(?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemInfoType $midocoTravelItemInfo = null): self
     {
         $this->MidocoTravelItemInfo = $midocoTravelItemInfo;
         

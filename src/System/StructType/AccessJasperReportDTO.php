@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class AccessJasperReportDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\System\StructType\AccessJasperReportDTO
+     * @return \Pggns\MidocoApi\System\StructType\AccessJasperReportDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -78,7 +78,7 @@ class AccessJasperReportDTO extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\Api\System\StructType\AccessJasperReportDTO
+     * @return \Pggns\MidocoApi\System\StructType\AccessJasperReportDTO
      */
     public function setReportId(?int $reportId = null): self
     {
@@ -101,7 +101,7 @@ class AccessJasperReportDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\System\StructType\AccessJasperReportDTO
+     * @return \Pggns\MidocoApi\System\StructType\AccessJasperReportDTO
      */
     public function setRoleId(?int $roleId = null): self
     {

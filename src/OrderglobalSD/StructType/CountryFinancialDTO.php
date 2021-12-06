@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class CountryFinancialDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CountryFinancialDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CountryFinancialDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -102,7 +102,7 @@ class CountryFinancialDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CountryFinancialDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CountryFinancialDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -125,7 +125,7 @@ class CountryFinancialDTO extends AbstractStructBase
     /**
      * Set euSince value
      * @param string $euSince
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CountryFinancialDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CountryFinancialDTO
      */
     public function setEuSince(?string $euSince = null): self
     {
@@ -148,7 +148,7 @@ class CountryFinancialDTO extends AbstractStructBase
     /**
      * Set euUntil value
      * @param string $euUntil
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CountryFinancialDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CountryFinancialDTO
      */
     public function setEuUntil(?string $euUntil = null): self
     {
@@ -171,7 +171,7 @@ class CountryFinancialDTO extends AbstractStructBase
     /**
      * Set isEea value
      * @param bool $isEea
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CountryFinancialDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CountryFinancialDTO
      */
     public function setIsEea(?bool $isEea = null): self
     {
@@ -194,7 +194,7 @@ class CountryFinancialDTO extends AbstractStructBase
     /**
      * Set isEu value
      * @param bool $isEu
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CountryFinancialDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CountryFinancialDTO
      */
     public function setIsEu(?bool $isEu = null): self
     {

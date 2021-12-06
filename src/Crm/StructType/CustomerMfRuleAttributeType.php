@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -46,17 +46,17 @@ class CustomerMfRuleAttributeType extends AbstractStructBase
     }
     /**
      * Set name value
-     * @uses \Pggns\MidocoApi\Api\Crm\EnumType\CustomerMfRuleAttributeTypeNames::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Crm\EnumType\CustomerMfRuleAttributeTypeNames::getValidValues()
+     * @uses \Pggns\MidocoApi\Crm\EnumType\CustomerMfRuleAttributeTypeNames::valueIsValid()
+     * @uses \Pggns\MidocoApi\Crm\EnumType\CustomerMfRuleAttributeTypeNames::getValidValues()
      * @throws InvalidArgumentException
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerMfRuleAttributeType
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMfRuleAttributeType
      */
     public function setName(?string $name = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Crm\EnumType\CustomerMfRuleAttributeTypeNames::valueIsValid($name)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Crm\EnumType\CustomerMfRuleAttributeTypeNames', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\Api\Crm\EnumType\CustomerMfRuleAttributeTypeNames::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Crm\EnumType\CustomerMfRuleAttributeTypeNames::valueIsValid($name)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Crm\EnumType\CustomerMfRuleAttributeTypeNames', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\Crm\EnumType\CustomerMfRuleAttributeTypeNames::getValidValues())), __LINE__);
         }
         $this->name = $name;
         
@@ -73,7 +73,7 @@ class CustomerMfRuleAttributeType extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerMfRuleAttributeType
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMfRuleAttributeType
      */
     public function setValue(?string $value = null): self
     {

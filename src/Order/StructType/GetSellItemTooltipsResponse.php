@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSellItemTooltipsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellItemTooltip
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemTooltip[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemTooltip[]
      */
     protected ?array $MidocoSellItemTooltip = null;
     /**
      * Constructor method for GetSellItemTooltipsResponse
      * @uses GetSellItemTooltipsResponse::setMidocoSellItemTooltip()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemTooltip[] $midocoSellItemTooltip
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemTooltip[] $midocoSellItemTooltip
      */
     public function __construct(?array $midocoSellItemTooltip = null)
     {
@@ -34,7 +34,7 @@ class GetSellItemTooltipsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSellItemTooltip value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemTooltip[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemTooltip[]
      */
     public function getMidocoSellItemTooltip(): ?array
     {
@@ -55,12 +55,12 @@ class GetSellItemTooltipsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSellItemTooltipsResponseMidocoSellItemTooltipItem) {
             // validation for constraint: itemType
-            if (!$getSellItemTooltipsResponseMidocoSellItemTooltipItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemTooltip) {
+            if (!$getSellItemTooltipsResponseMidocoSellItemTooltipItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemTooltip) {
                 $invalidValues[] = is_object($getSellItemTooltipsResponseMidocoSellItemTooltipItem) ? get_class($getSellItemTooltipsResponseMidocoSellItemTooltipItem) : sprintf('%s(%s)', gettype($getSellItemTooltipsResponseMidocoSellItemTooltipItem), var_export($getSellItemTooltipsResponseMidocoSellItemTooltipItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellItemTooltip property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemTooltip, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellItemTooltip property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemTooltip, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSellItemTooltipsResponse extends AbstractStructBase
     /**
      * Set MidocoSellItemTooltip value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemTooltip[] $midocoSellItemTooltip
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemTooltipsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemTooltip[] $midocoSellItemTooltip
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemTooltipsResponse
      */
     public function setMidocoSellItemTooltip(?array $midocoSellItemTooltip = null): self
     {
@@ -85,14 +85,14 @@ class GetSellItemTooltipsResponse extends AbstractStructBase
     /**
      * Add item to MidocoSellItemTooltip value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemTooltip $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemTooltipsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemTooltip $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemTooltipsResponse
      */
-    public function addToMidocoSellItemTooltip(\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemTooltip $item): self
+    public function addToMidocoSellItemTooltip(\Pggns\MidocoApi\Order\StructType\MidocoSellItemTooltip $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemTooltip) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellItemTooltip property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemTooltip, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemTooltip) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellItemTooltip property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemTooltip, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellItemTooltip[] = $item;
         

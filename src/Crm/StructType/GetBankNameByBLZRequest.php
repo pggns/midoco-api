@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetBankNameByBLZRequest extends AbstractStructBase
     /**
      * Set blz value
      * @param string $blz
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetBankNameByBLZRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetBankNameByBLZRequest
      */
     public function setBlz(?string $blz = null): self
     {

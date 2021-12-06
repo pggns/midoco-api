@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -166,7 +166,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set client value
      * @param string $client
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setClient(?string $client = null): self
     {
@@ -189,7 +189,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setCode(?string $code = null): self
     {
@@ -212,7 +212,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -235,7 +235,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -258,7 +258,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set extId value
      * @param string $extId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setExtId(?string $extId = null): self
     {
@@ -281,7 +281,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -304,7 +304,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -327,7 +327,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -350,7 +350,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -373,7 +373,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set payDate value
      * @param string $payDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setPayDate(?string $payDate = null): self
     {
@@ -396,7 +396,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setType(?string $type = null): self
     {
@@ -419,7 +419,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set usedDate value
      * @param string $usedDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setUsedDate(?string $usedDate = null): self
     {
@@ -442,7 +442,7 @@ class OrderVoucherDTO extends AbstractStructBase
     /**
      * Set voucherId value
      * @param int $voucherId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderVoucherDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderVoucherDTO
      */
     public function setVoucherId(?int $voucherId = null): self
     {

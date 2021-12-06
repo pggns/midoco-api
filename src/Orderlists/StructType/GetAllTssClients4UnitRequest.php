@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class GetAllTssClients4UnitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAllTssClients4UnitRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAllTssClients4UnitRequest
      */
     public function setUnitName(string $unitName): self
     {
@@ -74,7 +74,7 @@ class GetAllTssClients4UnitRequest extends AbstractStructBase
     /**
      * Set tssSystem value
      * @param string $tssSystem
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAllTssClients4UnitRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAllTssClients4UnitRequest
      */
     public function setTssSystem(string $tssSystem): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetAvailableLockReasonDescriptionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmLockDescription
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmLockDescriptionDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmLockDescriptionDTO[]
      */
     protected ?array $MidocoCrmLockDescription = null;
     /**
      * Constructor method for GetAvailableLockReasonDescriptionsResponse
      * @uses GetAvailableLockReasonDescriptionsResponse::setMidocoCrmLockDescription()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmLockDescriptionDTO[] $midocoCrmLockDescription
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmLockDescriptionDTO[] $midocoCrmLockDescription
      */
     public function __construct(?array $midocoCrmLockDescription = null)
     {
@@ -36,7 +36,7 @@ class GetAvailableLockReasonDescriptionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmLockDescription value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmLockDescriptionDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmLockDescriptionDTO[]
      */
     public function getMidocoCrmLockDescription(): ?array
     {
@@ -57,12 +57,12 @@ class GetAvailableLockReasonDescriptionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailableLockReasonDescriptionsResponseMidocoCrmLockDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getAvailableLockReasonDescriptionsResponseMidocoCrmLockDescriptionItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmLockDescriptionDTO) {
+            if (!$getAvailableLockReasonDescriptionsResponseMidocoCrmLockDescriptionItem instanceof \Pggns\MidocoApi\Crm\StructType\CrmLockDescriptionDTO) {
                 $invalidValues[] = is_object($getAvailableLockReasonDescriptionsResponseMidocoCrmLockDescriptionItem) ? get_class($getAvailableLockReasonDescriptionsResponseMidocoCrmLockDescriptionItem) : sprintf('%s(%s)', gettype($getAvailableLockReasonDescriptionsResponseMidocoCrmLockDescriptionItem), var_export($getAvailableLockReasonDescriptionsResponseMidocoCrmLockDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmLockDescription property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmLockDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmLockDescription property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmLockDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetAvailableLockReasonDescriptionsResponse extends AbstractStructBase
     /**
      * Set MidocoCrmLockDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmLockDescriptionDTO[] $midocoCrmLockDescription
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetAvailableLockReasonDescriptionsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmLockDescriptionDTO[] $midocoCrmLockDescription
+     * @return \Pggns\MidocoApi\Crm\StructType\GetAvailableLockReasonDescriptionsResponse
      */
     public function setMidocoCrmLockDescription(?array $midocoCrmLockDescription = null): self
     {
@@ -87,14 +87,14 @@ class GetAvailableLockReasonDescriptionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmLockDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmLockDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetAvailableLockReasonDescriptionsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmLockDescriptionDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetAvailableLockReasonDescriptionsResponse
      */
-    public function addToMidocoCrmLockDescription(\Pggns\MidocoApi\Api\Crm\StructType\CrmLockDescriptionDTO $item): self
+    public function addToMidocoCrmLockDescription(\Pggns\MidocoApi\Crm\StructType\CrmLockDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmLockDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmLockDescription property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmLockDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CrmLockDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmLockDescription property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmLockDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmLockDescription[] = $item;
         

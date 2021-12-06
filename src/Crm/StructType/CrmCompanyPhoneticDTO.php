@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CrmCompanyPhoneticDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmCompanyPhoneticDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmCompanyPhoneticDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +78,7 @@ class CrmCompanyPhoneticDTO extends AbstractStructBase
     /**
      * Set exactOrganisationName value
      * @param string $exactOrganisationName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmCompanyPhoneticDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmCompanyPhoneticDTO
      */
     public function setExactOrganisationName(?string $exactOrganisationName = null): self
     {
@@ -101,7 +101,7 @@ class CrmCompanyPhoneticDTO extends AbstractStructBase
     /**
      * Set organisationName value
      * @param string $organisationName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmCompanyPhoneticDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmCompanyPhoneticDTO
      */
     public function setOrganisationName(?string $organisationName = null): self
     {

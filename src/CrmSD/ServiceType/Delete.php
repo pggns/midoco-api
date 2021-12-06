@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\ServiceType;
+namespace Pggns\MidocoApi\CrmSD\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Delete extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\CrmSD\ServiceType\Delete
+     * @return \Pggns\MidocoApi\CrmSD\ServiceType\Delete
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteExternalSystemRequest $paramDeleteExternalSystemRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteExternalSystemResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteExternalSystemRequest $paramDeleteExternalSystemRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteExternalSystemResponse|bool
      */
-    public function deleteExternalSystem(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteExternalSystemRequest $paramDeleteExternalSystemRequest)
+    public function deleteExternalSystem(\Pggns\MidocoApi\CrmSD\StructType\DeleteExternalSystemRequest $paramDeleteExternalSystemRequest)
     {
         try {
             $this->setResult($resultDeleteExternalSystem = $this->getSoapClient()->__soapCall('deleteExternalSystem', [
@@ -58,15 +58,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteExternalSystemAttributeRequest $paramDeleteExternalSystemAttributeRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteExternalSystemAttributeResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteExternalSystemAttributeRequest $paramDeleteExternalSystemAttributeRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteExternalSystemAttributeResponse|bool
      */
-    public function deleteExternalSystemAttribute(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteExternalSystemAttributeRequest $paramDeleteExternalSystemAttributeRequest)
+    public function deleteExternalSystemAttribute(\Pggns\MidocoApi\CrmSD\StructType\DeleteExternalSystemAttributeRequest $paramDeleteExternalSystemAttributeRequest)
     {
         try {
             $this->setResult($resultDeleteExternalSystemAttribute = $this->getSoapClient()->__soapCall('deleteExternalSystemAttribute', [
@@ -85,15 +85,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteInvoiceFileFormatRequest $paramDeleteInvoiceFileFormatRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteInvoiceFileFormatResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteInvoiceFileFormatRequest $paramDeleteInvoiceFileFormatRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteInvoiceFileFormatResponse|bool
      */
-    public function deleteInvoiceFileFormat(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteInvoiceFileFormatRequest $paramDeleteInvoiceFileFormatRequest)
+    public function deleteInvoiceFileFormat(\Pggns\MidocoApi\CrmSD\StructType\DeleteInvoiceFileFormatRequest $paramDeleteInvoiceFileFormatRequest)
     {
         try {
             $this->setResult($resultDeleteInvoiceFileFormat = $this->getSoapClient()->__soapCall('deleteInvoiceFileFormat', [
@@ -112,15 +112,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDebitCardTypeRequest $paramDeleteDebitCardTypeRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDebitCardTypeResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteDebitCardTypeRequest $paramDeleteDebitCardTypeRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteDebitCardTypeResponse|bool
      */
-    public function deleteDebitCardType(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDebitCardTypeRequest $paramDeleteDebitCardTypeRequest)
+    public function deleteDebitCardType(\Pggns\MidocoApi\CrmSD\StructType\DeleteDebitCardTypeRequest $paramDeleteDebitCardTypeRequest)
     {
         try {
             $this->setResult($resultDeleteDebitCardType = $this->getSoapClient()->__soapCall('deleteDebitCardType', [
@@ -139,15 +139,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteJobFunctionRequest $paramDeleteJobFunctionRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteJobFunctionResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteJobFunctionRequest $paramDeleteJobFunctionRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteJobFunctionResponse|bool
      */
-    public function deleteJobFunction(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteJobFunctionRequest $paramDeleteJobFunctionRequest)
+    public function deleteJobFunction(\Pggns\MidocoApi\CrmSD\StructType\DeleteJobFunctionRequest $paramDeleteJobFunctionRequest)
     {
         try {
             $this->setResult($resultDeleteJobFunction = $this->getSoapClient()->__soapCall('deleteJobFunction', [
@@ -166,15 +166,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCommissionDefinitionRequest $paramDeleteCommissionDefinitionRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCommissionDefinitionResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteCommissionDefinitionRequest $paramDeleteCommissionDefinitionRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCommissionDefinitionResponse|bool
      */
-    public function deleteCommissionDefinition(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCommissionDefinitionRequest $paramDeleteCommissionDefinitionRequest)
+    public function deleteCommissionDefinition(\Pggns\MidocoApi\CrmSD\StructType\DeleteCommissionDefinitionRequest $paramDeleteCommissionDefinitionRequest)
     {
         try {
             $this->setResult($resultDeleteCommissionDefinition = $this->getSoapClient()->__soapCall('deleteCommissionDefinition', [
@@ -193,15 +193,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCommissionDefinitionLevelRequest $paramDeleteCommissionDefinitionLevelRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCommissionDefinitionLevelResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteCommissionDefinitionLevelRequest $paramDeleteCommissionDefinitionLevelRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCommissionDefinitionLevelResponse|bool
      */
-    public function deleteCommissionDefinitionLevel(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCommissionDefinitionLevelRequest $paramDeleteCommissionDefinitionLevelRequest)
+    public function deleteCommissionDefinitionLevel(\Pggns\MidocoApi\CrmSD\StructType\DeleteCommissionDefinitionLevelRequest $paramDeleteCommissionDefinitionLevelRequest)
     {
         try {
             $this->setResult($resultDeleteCommissionDefinitionLevel = $this->getSoapClient()->__soapCall('deleteCommissionDefinitionLevel', [
@@ -221,15 +221,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCriteriaTypeCategoryDescriptionRequest $paramDeleteCriteriaTypeCategoryDescriptionRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCriteriaTypeCategoryDescriptionResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteCriteriaTypeCategoryDescriptionRequest $paramDeleteCriteriaTypeCategoryDescriptionRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCriteriaTypeCategoryDescriptionResponse|bool
      */
-    public function deleteCriteriaTypeCategoryDescription(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCriteriaTypeCategoryDescriptionRequest $paramDeleteCriteriaTypeCategoryDescriptionRequest)
+    public function deleteCriteriaTypeCategoryDescription(\Pggns\MidocoApi\CrmSD\StructType\DeleteCriteriaTypeCategoryDescriptionRequest $paramDeleteCriteriaTypeCategoryDescriptionRequest)
     {
         try {
             $this->setResult($resultDeleteCriteriaTypeCategoryDescription = $this->getSoapClient()->__soapCall('deleteCriteriaTypeCategoryDescription', [
@@ -248,15 +248,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCriteriaTypeCategoryRequest $paramDeleteCriteriaTypeCategoryRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCriteriaTypeCategoryResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteCriteriaTypeCategoryRequest $paramDeleteCriteriaTypeCategoryRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCriteriaTypeCategoryResponse|bool
      */
-    public function deleteCriteriaTypeCategory(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCriteriaTypeCategoryRequest $paramDeleteCriteriaTypeCategoryRequest)
+    public function deleteCriteriaTypeCategory(\Pggns\MidocoApi\CrmSD\StructType\DeleteCriteriaTypeCategoryRequest $paramDeleteCriteriaTypeCategoryRequest)
     {
         try {
             $this->setResult($resultDeleteCriteriaTypeCategory = $this->getSoapClient()->__soapCall('deleteCriteriaTypeCategory', [
@@ -275,15 +275,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeletePaymentConditionRequest $paramDeletePaymentConditionRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeletePaymentConditionResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeletePaymentConditionRequest $paramDeletePaymentConditionRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeletePaymentConditionResponse|bool
      */
-    public function deletePaymentCondition(\Pggns\MidocoApi\Api\CrmSD\StructType\DeletePaymentConditionRequest $paramDeletePaymentConditionRequest)
+    public function deletePaymentCondition(\Pggns\MidocoApi\CrmSD\StructType\DeletePaymentConditionRequest $paramDeletePaymentConditionRequest)
     {
         try {
             $this->setResult($resultDeletePaymentCondition = $this->getSoapClient()->__soapCall('deletePaymentCondition', [
@@ -302,15 +302,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDictionaryNameRequest $paramDeleteDictionaryNameRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDictionaryNameResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteDictionaryNameRequest $paramDeleteDictionaryNameRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteDictionaryNameResponse|bool
      */
-    public function deleteDictionaryName(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDictionaryNameRequest $paramDeleteDictionaryNameRequest)
+    public function deleteDictionaryName(\Pggns\MidocoApi\CrmSD\StructType\DeleteDictionaryNameRequest $paramDeleteDictionaryNameRequest)
     {
         try {
             $this->setResult($resultDeleteDictionaryName = $this->getSoapClient()->__soapCall('deleteDictionaryName', [
@@ -329,15 +329,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteLetterTemplateRequest $paramDeleteLetterTemplateRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteLetterTemplateResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteLetterTemplateRequest $paramDeleteLetterTemplateRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteLetterTemplateResponse|bool
      */
-    public function deleteLetterTemplate(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteLetterTemplateRequest $paramDeleteLetterTemplateRequest)
+    public function deleteLetterTemplate(\Pggns\MidocoApi\CrmSD\StructType\DeleteLetterTemplateRequest $paramDeleteLetterTemplateRequest)
     {
         try {
             $this->setResult($resultDeleteLetterTemplate = $this->getSoapClient()->__soapCall('deleteLetterTemplate', [
@@ -356,15 +356,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteBookingSourceRequest $paramDeleteBookingSourceRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteBookingSourceResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteBookingSourceRequest $paramDeleteBookingSourceRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteBookingSourceResponse|bool
      */
-    public function deleteBookingSource(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteBookingSourceRequest $paramDeleteBookingSourceRequest)
+    public function deleteBookingSource(\Pggns\MidocoApi\CrmSD\StructType\DeleteBookingSourceRequest $paramDeleteBookingSourceRequest)
     {
         try {
             $this->setResult($resultDeleteBookingSource = $this->getSoapClient()->__soapCall('deleteBookingSource', [
@@ -383,15 +383,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteTextTemplateTypeRequest $paramDeleteTextTemplateTypeRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteTextTemplateTypeResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteTextTemplateTypeRequest $paramDeleteTextTemplateTypeRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteTextTemplateTypeResponse|bool
      */
-    public function deleteTextTemplateType(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteTextTemplateTypeRequest $paramDeleteTextTemplateTypeRequest)
+    public function deleteTextTemplateType(\Pggns\MidocoApi\CrmSD\StructType\DeleteTextTemplateTypeRequest $paramDeleteTextTemplateTypeRequest)
     {
         try {
             $this->setResult($resultDeleteTextTemplateType = $this->getSoapClient()->__soapCall('deleteTextTemplateType', [
@@ -410,15 +410,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeletePersonTitleRequest $paramDeletePersonTitleRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeletePersonTitleResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeletePersonTitleRequest $paramDeletePersonTitleRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeletePersonTitleResponse|bool
      */
-    public function deletePersonTitle(\Pggns\MidocoApi\Api\CrmSD\StructType\DeletePersonTitleRequest $paramDeletePersonTitleRequest)
+    public function deletePersonTitle(\Pggns\MidocoApi\CrmSD\StructType\DeletePersonTitleRequest $paramDeletePersonTitleRequest)
     {
         try {
             $this->setResult($resultDeletePersonTitle = $this->getSoapClient()->__soapCall('deletePersonTitle', [
@@ -437,15 +437,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteConsentRequest $paramDeleteConsentRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteConsentResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteConsentRequest $paramDeleteConsentRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteConsentResponse|bool
      */
-    public function deleteConsent(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteConsentRequest $paramDeleteConsentRequest)
+    public function deleteConsent(\Pggns\MidocoApi\CrmSD\StructType\DeleteConsentRequest $paramDeleteConsentRequest)
     {
         try {
             $this->setResult($resultDeleteConsent = $this->getSoapClient()->__soapCall('deleteConsent', [
@@ -464,15 +464,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteConsentUnitsRequest $paramDeleteConsentUnitsRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteConsentUnitsResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DeleteConsentUnitsRequest $paramDeleteConsentUnitsRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteConsentUnitsResponse|bool
      */
-    public function deleteConsentUnits(\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteConsentUnitsRequest $paramDeleteConsentUnitsRequest)
+    public function deleteConsentUnits(\Pggns\MidocoApi\CrmSD\StructType\DeleteConsentUnitsRequest $paramDeleteConsentUnitsRequest)
     {
         try {
             $this->setResult($resultDeleteConsentUnits = $this->getSoapClient()->__soapCall('deleteConsentUnits', [
@@ -489,7 +489,7 @@ class Delete extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteBookingSourceResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCommissionDefinitionLevelResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCommissionDefinitionResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteConsentResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteConsentUnitsResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCriteriaTypeCategoryDescriptionResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCriteriaTypeCategoryResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDebitCardTypeResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDictionaryNameResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteExternalSystemAttributeResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteExternalSystemResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteInvoiceFileFormatResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteJobFunctionResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteLetterTemplateResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeletePaymentConditionResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeletePersonTitleResponse|\Pggns\MidocoApi\Api\CrmSD\StructType\DeleteTextTemplateTypeResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteBookingSourceResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteCommissionDefinitionLevelResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteCommissionDefinitionResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteConsentResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteConsentUnitsResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteCriteriaTypeCategoryDescriptionResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteCriteriaTypeCategoryResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteDebitCardTypeResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteDictionaryNameResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteExternalSystemAttributeResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteExternalSystemResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteInvoiceFileFormatResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteJobFunctionResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteLetterTemplateResponse|\Pggns\MidocoApi\CrmSD\StructType\DeletePaymentConditionResponse|\Pggns\MidocoApi\CrmSD\StructType\DeletePersonTitleResponse|\Pggns\MidocoApi\CrmSD\StructType\DeleteTextTemplateTypeResponse
      */
     public function getResult()
     {

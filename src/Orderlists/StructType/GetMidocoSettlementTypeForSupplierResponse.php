@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoSettlementTypeForSupplierResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSettlementType
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO[]
      */
     protected ?array $MidocoSettlementType = null;
     /**
      * Constructor method for GetMidocoSettlementTypeForSupplierResponse
      * @uses GetMidocoSettlementTypeForSupplierResponse::setMidocoSettlementType()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO[] $midocoSettlementType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO[] $midocoSettlementType
      */
     public function __construct(?array $midocoSettlementType = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoSettlementTypeForSupplierResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSettlementType value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO[]
      */
     public function getMidocoSettlementType(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoSettlementTypeForSupplierResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoSettlementTypeForSupplierResponseMidocoSettlementTypeItem) {
             // validation for constraint: itemType
-            if (!$getMidocoSettlementTypeForSupplierResponseMidocoSettlementTypeItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO) {
+            if (!$getMidocoSettlementTypeForSupplierResponseMidocoSettlementTypeItem instanceof \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO) {
                 $invalidValues[] = is_object($getMidocoSettlementTypeForSupplierResponseMidocoSettlementTypeItem) ? get_class($getMidocoSettlementTypeForSupplierResponseMidocoSettlementTypeItem) : sprintf('%s(%s)', gettype($getMidocoSettlementTypeForSupplierResponseMidocoSettlementTypeItem), var_export($getMidocoSettlementTypeForSupplierResponseMidocoSettlementTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSettlementType property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSettlementType property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoSettlementTypeForSupplierResponse extends AbstractStructBase
     /**
      * Set MidocoSettlementType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO[] $midocoSettlementType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMidocoSettlementTypeForSupplierResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO[] $midocoSettlementType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMidocoSettlementTypeForSupplierResponse
      */
     public function setMidocoSettlementType(?array $midocoSettlementType = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoSettlementTypeForSupplierResponse extends AbstractStructBase
     /**
      * Add item to MidocoSettlementType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMidocoSettlementTypeForSupplierResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMidocoSettlementTypeForSupplierResponse
      */
-    public function addToMidocoSettlementType(\Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO $item): self
+    public function addToMidocoSettlementType(\Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSettlementType property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSettlementType property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSettlementType[] = $item;
         

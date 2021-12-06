@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoDocumentItem extends DocumentitemDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDocumentTax
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentTaxType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentTaxType[]
      */
     protected ?array $MidocoDocumentTax = null;
     /**
@@ -28,15 +28,15 @@ class MidocoDocumentItem extends DocumentitemDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDocFlightDetail
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\DocFlightDetailDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\DocFlightDetailDTO[]
      */
     protected ?array $MidocoDocFlightDetail = null;
     /**
      * Constructor method for MidocoDocumentItem
      * @uses MidocoDocumentItem::setMidocoDocumentTax()
      * @uses MidocoDocumentItem::setMidocoDocFlightDetail()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentTaxType[] $midocoDocumentTax
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\DocFlightDetailDTO[] $midocoDocFlightDetail
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentTaxType[] $midocoDocumentTax
+     * @param \Pggns\MidocoApi\Orderlists\StructType\DocFlightDetailDTO[] $midocoDocFlightDetail
      */
     public function __construct(?array $midocoDocumentTax = null, ?array $midocoDocFlightDetail = null)
     {
@@ -46,7 +46,7 @@ class MidocoDocumentItem extends DocumentitemDTO
     }
     /**
      * Get MidocoDocumentTax value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentTaxType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentTaxType[]
      */
     public function getMidocoDocumentTax(): ?array
     {
@@ -67,12 +67,12 @@ class MidocoDocumentItem extends DocumentitemDTO
         $invalidValues = [];
         foreach ($values as $midocoDocumentItemMidocoDocumentTaxItem) {
             // validation for constraint: itemType
-            if (!$midocoDocumentItemMidocoDocumentTaxItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentTaxType) {
+            if (!$midocoDocumentItemMidocoDocumentTaxItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentTaxType) {
                 $invalidValues[] = is_object($midocoDocumentItemMidocoDocumentTaxItem) ? get_class($midocoDocumentItemMidocoDocumentTaxItem) : sprintf('%s(%s)', gettype($midocoDocumentItemMidocoDocumentTaxItem), var_export($midocoDocumentItemMidocoDocumentTaxItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDocumentTax property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentTaxType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDocumentTax property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentTaxType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -81,8 +81,8 @@ class MidocoDocumentItem extends DocumentitemDTO
     /**
      * Set MidocoDocumentTax value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentTaxType[] $midocoDocumentTax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentItem
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentTaxType[] $midocoDocumentTax
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentItem
      */
     public function setMidocoDocumentTax(?array $midocoDocumentTax = null): self
     {
@@ -97,14 +97,14 @@ class MidocoDocumentItem extends DocumentitemDTO
     /**
      * Add item to MidocoDocumentTax value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentTaxType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentItem
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentTaxType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentItem
      */
-    public function addToMidocoDocumentTax(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentTaxType $item): self
+    public function addToMidocoDocumentTax(\Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentTaxType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentTaxType) {
-            throw new InvalidArgumentException(sprintf('The MidocoDocumentTax property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentTaxType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentTaxType) {
+            throw new InvalidArgumentException(sprintf('The MidocoDocumentTax property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentTaxType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDocumentTax[] = $item;
         
@@ -112,7 +112,7 @@ class MidocoDocumentItem extends DocumentitemDTO
     }
     /**
      * Get MidocoDocFlightDetail value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DocFlightDetailDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DocFlightDetailDTO[]
      */
     public function getMidocoDocFlightDetail(): ?array
     {
@@ -133,12 +133,12 @@ class MidocoDocumentItem extends DocumentitemDTO
         $invalidValues = [];
         foreach ($values as $midocoDocumentItemMidocoDocFlightDetailItem) {
             // validation for constraint: itemType
-            if (!$midocoDocumentItemMidocoDocFlightDetailItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\DocFlightDetailDTO) {
+            if (!$midocoDocumentItemMidocoDocFlightDetailItem instanceof \Pggns\MidocoApi\Orderlists\StructType\DocFlightDetailDTO) {
                 $invalidValues[] = is_object($midocoDocumentItemMidocoDocFlightDetailItem) ? get_class($midocoDocumentItemMidocoDocFlightDetailItem) : sprintf('%s(%s)', gettype($midocoDocumentItemMidocoDocFlightDetailItem), var_export($midocoDocumentItemMidocoDocFlightDetailItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDocFlightDetail property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\DocFlightDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDocFlightDetail property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\DocFlightDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,8 +147,8 @@ class MidocoDocumentItem extends DocumentitemDTO
     /**
      * Set MidocoDocFlightDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\DocFlightDetailDTO[] $midocoDocFlightDetail
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentItem
+     * @param \Pggns\MidocoApi\Orderlists\StructType\DocFlightDetailDTO[] $midocoDocFlightDetail
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentItem
      */
     public function setMidocoDocFlightDetail(?array $midocoDocFlightDetail = null): self
     {
@@ -163,14 +163,14 @@ class MidocoDocumentItem extends DocumentitemDTO
     /**
      * Add item to MidocoDocFlightDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\DocFlightDetailDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentItem
+     * @param \Pggns\MidocoApi\Orderlists\StructType\DocFlightDetailDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentItem
      */
-    public function addToMidocoDocFlightDetail(\Pggns\MidocoApi\Api\Orderlists\StructType\DocFlightDetailDTO $item): self
+    public function addToMidocoDocFlightDetail(\Pggns\MidocoApi\Orderlists\StructType\DocFlightDetailDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\DocFlightDetailDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoDocFlightDetail property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\DocFlightDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\DocFlightDetailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoDocFlightDetail property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\DocFlightDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDocFlightDetail[] = $item;
         

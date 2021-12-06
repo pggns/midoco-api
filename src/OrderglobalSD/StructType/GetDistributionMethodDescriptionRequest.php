@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetDistributionMethodDescriptionRequest extends AbstractStructBase
     /**
      * Set extSystem value
      * @param string $extSystem
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDistributionMethodDescriptionRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDistributionMethodDescriptionRequest
      */
     public function setExtSystem(?string $extSystem = null): self
     {
@@ -70,7 +70,7 @@ class GetDistributionMethodDescriptionRequest extends AbstractStructBase
     /**
      * Set distributionCode value
      * @param string $distributionCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDistributionMethodDescriptionRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDistributionMethodDescriptionRequest
      */
     public function setDistributionCode(?string $distributionCode = null): self
     {

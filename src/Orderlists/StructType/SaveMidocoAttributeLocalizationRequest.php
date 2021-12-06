@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
      * The MidocoSystemAttributeLocalization
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeLocalization
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionLocalDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionLocalDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionLocalDTO $MidocoSystemAttributeLocalization = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionLocalDTO $MidocoSystemAttributeLocalization = null;
     /**
      * The isNew
      * @var bool|null
@@ -29,10 +29,10 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
      * Constructor method for SaveMidocoAttributeLocalizationRequest
      * @uses SaveMidocoAttributeLocalizationRequest::setMidocoSystemAttributeLocalization()
      * @uses SaveMidocoAttributeLocalizationRequest::setIsNew()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
      * @param bool $isNew
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null, ?bool $isNew = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null, ?bool $isNew = null)
     {
         $this
             ->setMidocoSystemAttributeLocalization($midocoSystemAttributeLocalization)
@@ -40,18 +40,18 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSystemAttributeLocalization value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionLocalDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionLocalDTO|null
      */
-    public function getMidocoSystemAttributeLocalization(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionLocalDTO
+    public function getMidocoSystemAttributeLocalization(): ?\Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionLocalDTO
     {
         return $this->MidocoSystemAttributeLocalization;
     }
     /**
      * Set MidocoSystemAttributeLocalization value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveMidocoAttributeLocalizationRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveMidocoAttributeLocalizationRequest
      */
-    public function setMidocoSystemAttributeLocalization(?\Pggns\MidocoApi\Api\Orderlists\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null): self
+    public function setMidocoSystemAttributeLocalization(?\Pggns\MidocoApi\Orderlists\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null): self
     {
         $this->MidocoSystemAttributeLocalization = $midocoSystemAttributeLocalization;
         
@@ -68,7 +68,7 @@ class SaveMidocoAttributeLocalizationRequest extends AbstractStructBase
     /**
      * Set isNew value
      * @param bool $isNew
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveMidocoAttributeLocalizationRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveMidocoAttributeLocalizationRequest
      */
     public function setIsNew(?bool $isNew = null): self
     {

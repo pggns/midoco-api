@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class AnnounceSunnyCarsMessageRequest extends AbstractStructBase
     /**
      * Set ScarData value
      * @param string $scarData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceSunnyCarsMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceSunnyCarsMessageRequest
      */
     public function setScarData(?string $scarData = null): self
     {

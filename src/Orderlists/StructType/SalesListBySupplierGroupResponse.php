@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class SalesListBySupplierGroupResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSalesListsBySupplierGroup
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType[]
      */
     protected ?array $MidocoSalesListsBySupplierGroup = null;
     /**
@@ -31,19 +31,19 @@ class SalesListBySupplierGroupResponse extends AbstractStructBase
     protected ?int $noOfResults = null;
     /**
      * The SalesListsBySupplierGroupSums
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $SalesListsBySupplierGroupSums = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $SalesListsBySupplierGroupSums = null;
     /**
      * Constructor method for SalesListBySupplierGroupResponse
      * @uses SalesListBySupplierGroupResponse::setMidocoSalesListsBySupplierGroup()
      * @uses SalesListBySupplierGroupResponse::setNoOfResults()
      * @uses SalesListBySupplierGroupResponse::setSalesListsBySupplierGroupSums()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType[] $midocoSalesListsBySupplierGroup
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType[] $midocoSalesListsBySupplierGroup
      * @param int $noOfResults
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $salesListsBySupplierGroupSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $salesListsBySupplierGroupSums
      */
-    public function __construct(?array $midocoSalesListsBySupplierGroup = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $salesListsBySupplierGroupSums = null)
+    public function __construct(?array $midocoSalesListsBySupplierGroup = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $salesListsBySupplierGroupSums = null)
     {
         $this
             ->setMidocoSalesListsBySupplierGroup($midocoSalesListsBySupplierGroup)
@@ -52,7 +52,7 @@ class SalesListBySupplierGroupResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSalesListsBySupplierGroup value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType[]
      */
     public function getMidocoSalesListsBySupplierGroup(): ?array
     {
@@ -73,12 +73,12 @@ class SalesListBySupplierGroupResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $salesListBySupplierGroupResponseMidocoSalesListsBySupplierGroupItem) {
             // validation for constraint: itemType
-            if (!$salesListBySupplierGroupResponseMidocoSalesListsBySupplierGroupItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType) {
+            if (!$salesListBySupplierGroupResponseMidocoSalesListsBySupplierGroupItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType) {
                 $invalidValues[] = is_object($salesListBySupplierGroupResponseMidocoSalesListsBySupplierGroupItem) ? get_class($salesListBySupplierGroupResponseMidocoSalesListsBySupplierGroupItem) : sprintf('%s(%s)', gettype($salesListBySupplierGroupResponseMidocoSalesListsBySupplierGroupItem), var_export($salesListBySupplierGroupResponseMidocoSalesListsBySupplierGroupItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSalesListsBySupplierGroup property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSalesListsBySupplierGroup property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -87,8 +87,8 @@ class SalesListBySupplierGroupResponse extends AbstractStructBase
     /**
      * Set MidocoSalesListsBySupplierGroup value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType[] $midocoSalesListsBySupplierGroup
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierGroupResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType[] $midocoSalesListsBySupplierGroup
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierGroupResponse
      */
     public function setMidocoSalesListsBySupplierGroup(?array $midocoSalesListsBySupplierGroup = null): self
     {
@@ -103,14 +103,14 @@ class SalesListBySupplierGroupResponse extends AbstractStructBase
     /**
      * Add item to MidocoSalesListsBySupplierGroup value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierGroupResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierGroupResponse
      */
-    public function addToMidocoSalesListsBySupplierGroup(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $item): self
+    public function addToMidocoSalesListsBySupplierGroup(\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType) {
-            throw new InvalidArgumentException(sprintf('The MidocoSalesListsBySupplierGroup property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType) {
+            throw new InvalidArgumentException(sprintf('The MidocoSalesListsBySupplierGroup property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSalesListsBySupplierGroup[] = $item;
         
@@ -127,7 +127,7 @@ class SalesListBySupplierGroupResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierGroupResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierGroupResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {
@@ -141,18 +141,18 @@ class SalesListBySupplierGroupResponse extends AbstractStructBase
     }
     /**
      * Get SalesListsBySupplierGroupSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType|null
      */
-    public function getSalesListsBySupplierGroupSums(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType
+    public function getSalesListsBySupplierGroupSums(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType
     {
         return $this->SalesListsBySupplierGroupSums;
     }
     /**
      * Set SalesListsBySupplierGroupSums value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $salesListsBySupplierGroupSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierGroupResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $salesListsBySupplierGroupSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierGroupResponse
      */
-    public function setSalesListsBySupplierGroupSums(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $salesListsBySupplierGroupSums = null): self
+    public function setSalesListsBySupplierGroupSums(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsBySupplierGroupType $salesListsBySupplierGroupSums = null): self
     {
         $this->SalesListsBySupplierGroupSums = $salesListsBySupplierGroupSums;
         

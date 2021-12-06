@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class OrgunitExternalLinkDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -118,7 +118,7 @@ class OrgunitExternalLinkDTO extends AbstractStructBase
     /**
      * Set extLinkId value
      * @param int $extLinkId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO
      */
     public function setExtLinkId(?int $extLinkId = null): self
     {
@@ -141,7 +141,7 @@ class OrgunitExternalLinkDTO extends AbstractStructBase
     /**
      * Set link value
      * @param string $link
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO
      */
     public function setLink(?string $link = null): self
     {
@@ -164,7 +164,7 @@ class OrgunitExternalLinkDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO
      */
     public function setName(?string $name = null): self
     {
@@ -187,7 +187,7 @@ class OrgunitExternalLinkDTO extends AbstractStructBase
     /**
      * Set parentId value
      * @param int $parentId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO
      */
     public function setParentId(?int $parentId = null): self
     {
@@ -210,7 +210,7 @@ class OrgunitExternalLinkDTO extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO
      */
     public function setPassword(?string $password = null): self
     {
@@ -233,7 +233,7 @@ class OrgunitExternalLinkDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -256,7 +256,7 @@ class OrgunitExternalLinkDTO extends AbstractStructBase
     /**
      * Set users value
      * @param string $users
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO
      */
     public function setUsers(?string $users = null): self
     {

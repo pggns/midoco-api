@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -207,7 +207,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -230,7 +230,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set accountOwner value
      * @param string $accountOwner
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setAccountOwner(?string $accountOwner = null): self
     {
@@ -253,7 +253,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set bankCountry value
      * @param string $bankCountry
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setBankCountry(?string $bankCountry = null): self
     {
@@ -276,7 +276,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setBankName(?string $bankName = null): self
     {
@@ -299,7 +299,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set bankNo value
      * @param string $bankNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setBankNo(?string $bankNo = null): self
     {
@@ -322,7 +322,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set bankTransferOffsetDays value
      * @param int $bankTransferOffsetDays
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setBankTransferOffsetDays(?int $bankTransferOffsetDays = null): self
     {
@@ -345,7 +345,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -368,7 +368,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set debitor value
      * @param string $debitor
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setDebitor(?string $debitor = null): self
     {
@@ -391,7 +391,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set entry value
      * @param string $entry
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setEntry(?string $entry = null): self
     {
@@ -414,7 +414,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setIban(?string $iban = null): self
     {
@@ -437,7 +437,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set isProcessed value
      * @param bool $isProcessed
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setIsProcessed(?bool $isProcessed = null): self
     {
@@ -460,7 +460,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set isRecurring value
      * @param bool $isRecurring
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setIsRecurring(?bool $isRecurring = null): self
     {
@@ -483,7 +483,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set issueDate value
      * @param string $issueDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setIssueDate(?string $issueDate = null): self
     {
@@ -506,7 +506,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set lastBankTransferOffsetDays value
      * @param int $lastBankTransferOffsetDays
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setLastBankTransferOffsetDays(?int $lastBankTransferOffsetDays = null): self
     {
@@ -529,7 +529,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set lastIssueDate value
      * @param string $lastIssueDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setLastIssueDate(?string $lastIssueDate = null): self
     {
@@ -552,7 +552,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set lastSubmitDate value
      * @param string $lastSubmitDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setLastSubmitDate(?string $lastSubmitDate = null): self
     {
@@ -575,7 +575,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setMandateId(?int $mandateId = null): self
     {
@@ -598,7 +598,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -621,7 +621,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set receiptId value
      * @param int $receiptId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setReceiptId(?int $receiptId = null): self
     {
@@ -644,7 +644,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -667,7 +667,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set submitDate value
      * @param string $submitDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setSubmitDate(?string $submitDate = null): self
     {
@@ -690,7 +690,7 @@ class DebitInfoDTO extends AbstractStructBase
     /**
      * Set swiftBicCode value
      * @param string $swiftBicCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitInfoDTO
      */
     public function setSwiftBicCode(?string $swiftBicCode = null): self
     {

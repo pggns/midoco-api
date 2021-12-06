@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class RowMetadataType extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCampaignField
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\CampaignFieldType[]
+     * @var \Pggns\MidocoApi\Mis\StructType\CampaignFieldType[]
      */
     protected ?array $MidocoCampaignField = null;
     /**
@@ -31,7 +31,7 @@ class RowMetadataType extends AbstractStructBase
      * Constructor method for RowMetadataType
      * @uses RowMetadataType::setMidocoCampaignField()
      * @uses RowMetadataType::setNoOfColumns()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CampaignFieldType[] $midocoCampaignField
+     * @param \Pggns\MidocoApi\Mis\StructType\CampaignFieldType[] $midocoCampaignField
      * @param int $noOfColumns
      */
     public function __construct(?array $midocoCampaignField = null, ?int $noOfColumns = null)
@@ -42,7 +42,7 @@ class RowMetadataType extends AbstractStructBase
     }
     /**
      * Get MidocoCampaignField value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignFieldType[]
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignFieldType[]
      */
     public function getMidocoCampaignField(): ?array
     {
@@ -63,12 +63,12 @@ class RowMetadataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $rowMetadataTypeMidocoCampaignFieldItem) {
             // validation for constraint: itemType
-            if (!$rowMetadataTypeMidocoCampaignFieldItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\CampaignFieldType) {
+            if (!$rowMetadataTypeMidocoCampaignFieldItem instanceof \Pggns\MidocoApi\Mis\StructType\CampaignFieldType) {
                 $invalidValues[] = is_object($rowMetadataTypeMidocoCampaignFieldItem) ? get_class($rowMetadataTypeMidocoCampaignFieldItem) : sprintf('%s(%s)', gettype($rowMetadataTypeMidocoCampaignFieldItem), var_export($rowMetadataTypeMidocoCampaignFieldItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCampaignField property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\CampaignFieldType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCampaignField property can only contain items of type \Pggns\MidocoApi\Mis\StructType\CampaignFieldType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,8 +77,8 @@ class RowMetadataType extends AbstractStructBase
     /**
      * Set MidocoCampaignField value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CampaignFieldType[] $midocoCampaignField
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\RowMetadataType
+     * @param \Pggns\MidocoApi\Mis\StructType\CampaignFieldType[] $midocoCampaignField
+     * @return \Pggns\MidocoApi\Mis\StructType\RowMetadataType
      */
     public function setMidocoCampaignField(?array $midocoCampaignField = null): self
     {
@@ -93,14 +93,14 @@ class RowMetadataType extends AbstractStructBase
     /**
      * Add item to MidocoCampaignField value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CampaignFieldType $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\RowMetadataType
+     * @param \Pggns\MidocoApi\Mis\StructType\CampaignFieldType $item
+     * @return \Pggns\MidocoApi\Mis\StructType\RowMetadataType
      */
-    public function addToMidocoCampaignField(\Pggns\MidocoApi\Api\Mis\StructType\CampaignFieldType $item): self
+    public function addToMidocoCampaignField(\Pggns\MidocoApi\Mis\StructType\CampaignFieldType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\CampaignFieldType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCampaignField property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\CampaignFieldType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\CampaignFieldType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCampaignField property can only contain items of type \Pggns\MidocoApi\Mis\StructType\CampaignFieldType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCampaignField[] = $item;
         
@@ -117,7 +117,7 @@ class RowMetadataType extends AbstractStructBase
     /**
      * Set noOfColumns value
      * @param int $noOfColumns
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\RowMetadataType
+     * @return \Pggns\MidocoApi\Mis\StructType\RowMetadataType
      */
     public function setNoOfColumns(?int $noOfColumns = null): self
     {

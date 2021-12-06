@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Online extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Online
+     * @return \Pggns\MidocoApi\Order\ServiceType\Online
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Online extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SearchTssProtocolRequest $paramSearchTssProtocolRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTssProtocolResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\SearchTssProtocolRequest $paramSearchTssProtocolRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTssProtocolResponse|bool
      */
-    public function onlineSearchTssProtocol(\Pggns\MidocoApi\Api\Order\StructType\SearchTssProtocolRequest $paramSearchTssProtocolRequest)
+    public function onlineSearchTssProtocol(\Pggns\MidocoApi\Order\StructType\SearchTssProtocolRequest $paramSearchTssProtocolRequest)
     {
         try {
             $this->setResult($resultOnlineSearchTssProtocol = $this->getSoapClient()->__soapCall('onlineSearchTssProtocol', [
@@ -58,15 +58,15 @@ class Online extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\GetTssProtocolRequest $paramGetTssProtocolRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTssProtocolResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\GetTssProtocolRequest $paramGetTssProtocolRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTssProtocolResponse|bool
      */
-    public function onlineGetTssProtocol(\Pggns\MidocoApi\Api\Order\StructType\GetTssProtocolRequest $paramGetTssProtocolRequest)
+    public function onlineGetTssProtocol(\Pggns\MidocoApi\Order\StructType\GetTssProtocolRequest $paramGetTssProtocolRequest)
     {
         try {
             $this->setResult($resultOnlineGetTssProtocol = $this->getSoapClient()->__soapCall('onlineGetTssProtocol', [
@@ -83,7 +83,7 @@ class Online extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTssProtocolResponse|\Pggns\MidocoApi\Api\Order\StructType\SearchTssProtocolResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetTssProtocolResponse|\Pggns\MidocoApi\Order\StructType\SearchTssProtocolResponse
      */
     public function getResult()
     {

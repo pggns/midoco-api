@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteTravelNumberRequest extends AbstractStructBase
      * The MidocoTravelNumber
      * Meta information extracted from the WSDL
      * - ref: MidocoTravelNumber
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber $MidocoTravelNumber = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber $MidocoTravelNumber = null;
     /**
      * Constructor method for DeleteTravelNumberRequest
      * @uses DeleteTravelNumberRequest::setMidocoTravelNumber()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber = null)
     {
         $this
             ->setMidocoTravelNumber($midocoTravelNumber);
     }
     /**
      * Get MidocoTravelNumber value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber|null
      */
-    public function getMidocoTravelNumber(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber
+    public function getMidocoTravelNumber(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber
     {
         return $this->MidocoTravelNumber;
     }
     /**
      * Set MidocoTravelNumber value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteTravelNumberRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteTravelNumberRequest
      */
-    public function setMidocoTravelNumber(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber = null): self
+    public function setMidocoTravelNumber(?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber = null): self
     {
         $this->MidocoTravelNumber = $midocoTravelNumber;
         

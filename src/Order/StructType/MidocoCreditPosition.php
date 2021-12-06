@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoCreditPosition extends AbstractStructBase
     /**
      * Set receiptId value
      * @param int $receiptId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCreditPosition
      */
     public function setReceiptId(?int $receiptId = null): self
     {
@@ -70,7 +70,7 @@ class MidocoCreditPosition extends AbstractStructBase
     /**
      * Set onlinePaymentRestAmount value
      * @param float $onlinePaymentRestAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCreditPosition
      */
     public function setOnlinePaymentRestAmount(?float $onlinePaymentRestAmount = null): self
     {

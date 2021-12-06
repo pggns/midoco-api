@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,33 +15,33 @@ class CreateExternalCampaignResponseType extends ExternalCampaignDTO
 {
     /**
      * The CustomerIds
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CustomerIds|null
+     * @var \Pggns\MidocoApi\Order\StructType\CustomerIds|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\CustomerIds $CustomerIds = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\CustomerIds $CustomerIds = null;
     /**
      * Constructor method for CreateExternalCampaignResponseType
      * @uses CreateExternalCampaignResponseType::setCustomerIds()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CustomerIds $customerIds
+     * @param \Pggns\MidocoApi\Order\StructType\CustomerIds $customerIds
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\CustomerIds $customerIds = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\CustomerIds $customerIds = null)
     {
         $this
             ->setCustomerIds($customerIds);
     }
     /**
      * Get CustomerIds value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CustomerIds|null
+     * @return \Pggns\MidocoApi\Order\StructType\CustomerIds|null
      */
-    public function getCustomerIds(): ?\Pggns\MidocoApi\Api\Order\StructType\CustomerIds
+    public function getCustomerIds(): ?\Pggns\MidocoApi\Order\StructType\CustomerIds
     {
         return $this->CustomerIds;
     }
     /**
      * Set CustomerIds value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CustomerIds $customerIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateExternalCampaignResponseType
+     * @param \Pggns\MidocoApi\Order\StructType\CustomerIds $customerIds
+     * @return \Pggns\MidocoApi\Order\StructType\CreateExternalCampaignResponseType
      */
-    public function setCustomerIds(?\Pggns\MidocoApi\Api\Order\StructType\CustomerIds $customerIds = null): self
+    public function setCustomerIds(?\Pggns\MidocoApi\Order\StructType\CustomerIds $customerIds = null): self
     {
         $this->CustomerIds = $customerIds;
         

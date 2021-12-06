@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSubjectElementsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSubjectElement
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSubjectElement[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSubjectElement[]
      */
     protected ?array $MidocoSubjectElement = null;
     /**
      * Constructor method for GetSubjectElementsResponse
      * @uses GetSubjectElementsResponse::setMidocoSubjectElement()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSubjectElement[] $midocoSubjectElement
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSubjectElement[] $midocoSubjectElement
      */
     public function __construct(?array $midocoSubjectElement = null)
     {
@@ -34,7 +34,7 @@ class GetSubjectElementsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSubjectElement value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSubjectElement[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSubjectElement[]
      */
     public function getMidocoSubjectElement(): ?array
     {
@@ -55,12 +55,12 @@ class GetSubjectElementsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSubjectElementsResponseMidocoSubjectElementItem) {
             // validation for constraint: itemType
-            if (!$getSubjectElementsResponseMidocoSubjectElementItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSubjectElement) {
+            if (!$getSubjectElementsResponseMidocoSubjectElementItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSubjectElement) {
                 $invalidValues[] = is_object($getSubjectElementsResponseMidocoSubjectElementItem) ? get_class($getSubjectElementsResponseMidocoSubjectElementItem) : sprintf('%s(%s)', gettype($getSubjectElementsResponseMidocoSubjectElementItem), var_export($getSubjectElementsResponseMidocoSubjectElementItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSubjectElement property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSubjectElement, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSubjectElement property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSubjectElement, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSubjectElementsResponse extends AbstractStructBase
     /**
      * Set MidocoSubjectElement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSubjectElement[] $midocoSubjectElement
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSubjectElementsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSubjectElement[] $midocoSubjectElement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSubjectElementsResponse
      */
     public function setMidocoSubjectElement(?array $midocoSubjectElement = null): self
     {
@@ -85,14 +85,14 @@ class GetSubjectElementsResponse extends AbstractStructBase
     /**
      * Add item to MidocoSubjectElement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSubjectElement $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSubjectElementsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSubjectElement $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSubjectElementsResponse
      */
-    public function addToMidocoSubjectElement(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSubjectElement $item): self
+    public function addToMidocoSubjectElement(\Pggns\MidocoApi\Orderlists\StructType\MidocoSubjectElement $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSubjectElement) {
-            throw new InvalidArgumentException(sprintf('The MidocoSubjectElement property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSubjectElement, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSubjectElement) {
+            throw new InvalidArgumentException(sprintf('The MidocoSubjectElement property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSubjectElement, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSubjectElement[] = $item;
         

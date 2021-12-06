@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class SupplierDocumentDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDocumentDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -118,7 +118,7 @@ class SupplierDocumentDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDocumentDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -141,7 +141,7 @@ class SupplierDocumentDTO extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDocumentDTO
      */
     public function setFileName(?string $fileName = null): self
     {
@@ -164,7 +164,7 @@ class SupplierDocumentDTO extends AbstractStructBase
     /**
      * Set fileSize value
      * @param int $fileSize
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDocumentDTO
      */
     public function setFileSize(?int $fileSize = null): self
     {
@@ -187,7 +187,7 @@ class SupplierDocumentDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDocumentDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -210,7 +210,7 @@ class SupplierDocumentDTO extends AbstractStructBase
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDocumentDTO
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {
@@ -233,7 +233,7 @@ class SupplierDocumentDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDocumentDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -256,7 +256,7 @@ class SupplierDocumentDTO extends AbstractStructBase
     /**
      * Set uploadDate value
      * @param string $uploadDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDocumentDTO
      */
     public function setUploadDate(?string $uploadDate = null): self
     {

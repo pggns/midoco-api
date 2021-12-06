@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -52,7 +52,7 @@ class DeleteBillingPositionRequest extends AbstractStructBase
     /**
      * Set parentInternalVersion value
      * @param int $parentInternalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPositionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingPositionRequest
      */
     public function setParentInternalVersion(int $parentInternalVersion): self
     {
@@ -102,7 +102,7 @@ class DeleteBillingPositionRequest extends AbstractStructBase
      * Set positionId value
      * @throws InvalidArgumentException
      * @param int[] $positionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPositionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingPositionRequest
      */
     public function setPositionId(?array $positionId = null): self
     {
@@ -118,7 +118,7 @@ class DeleteBillingPositionRequest extends AbstractStructBase
      * Add item to positionId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPositionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingPositionRequest
      */
     public function addToPositionId(int $item): self
     {

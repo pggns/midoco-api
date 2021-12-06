@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetAccomodationCodesRequest extends AbstractStructBase
      * The MidocoAccomodationCode
      * Meta information extracted from the WSDL
      * - ref: MidocoAccomodationCode
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode $MidocoAccomodationCode = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode $MidocoAccomodationCode = null;
     /**
      * Constructor method for GetAccomodationCodesRequest
      * @uses GetAccomodationCodesRequest::setMidocoAccomodationCode()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode $midocoAccomodationCode
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode $midocoAccomodationCode
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode $midocoAccomodationCode = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode $midocoAccomodationCode = null)
     {
         $this
             ->setMidocoAccomodationCode($midocoAccomodationCode);
     }
     /**
      * Get MidocoAccomodationCode value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode|null
      */
-    public function getMidocoAccomodationCode(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode
+    public function getMidocoAccomodationCode(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode
     {
         return $this->MidocoAccomodationCode;
     }
     /**
      * Set MidocoAccomodationCode value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode $midocoAccomodationCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAccomodationCodesRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode $midocoAccomodationCode
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAccomodationCodesRequest
      */
-    public function setMidocoAccomodationCode(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode $midocoAccomodationCode = null): self
+    public function setMidocoAccomodationCode(?\Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode $midocoAccomodationCode = null): self
     {
         $this->MidocoAccomodationCode = $midocoAccomodationCode;
         

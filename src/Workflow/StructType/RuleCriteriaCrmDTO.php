@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class RuleCriteriaCrmDTO extends AbstractStructBase
     /**
      * Set criteriaId value
      * @param int $criteriaId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmDTO
      */
     public function setCriteriaId(?int $criteriaId = null): self
     {
@@ -78,7 +78,7 @@ class RuleCriteriaCrmDTO extends AbstractStructBase
     /**
      * Set definitionId value
      * @param int $definitionId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmDTO
      */
     public function setDefinitionId(?int $definitionId = null): self
     {
@@ -101,7 +101,7 @@ class RuleCriteriaCrmDTO extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmDTO
      */
     public function setType(?int $type = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -62,7 +62,7 @@ class ListAsCampaignRequest extends AbstractStructBase
     /**
      * Set queryType value
      * @param string $queryType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ListAsCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\ListAsCampaignRequest
      */
     public function setQueryType(?string $queryType = null): self
     {
@@ -112,7 +112,7 @@ class ListAsCampaignRequest extends AbstractStructBase
      * Set campaignData value
      * @throws InvalidArgumentException
      * @param int[] $campaignData
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ListAsCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\ListAsCampaignRequest
      */
     public function setCampaignData(?array $campaignData = null): self
     {
@@ -128,7 +128,7 @@ class ListAsCampaignRequest extends AbstractStructBase
      * Add item to campaignData value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ListAsCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\ListAsCampaignRequest
      */
     public function addToCampaignData(int $item): self
     {
@@ -151,7 +151,7 @@ class ListAsCampaignRequest extends AbstractStructBase
     /**
      * Set campaignDescription value
      * @param string $campaignDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ListAsCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\ListAsCampaignRequest
      */
     public function setCampaignDescription(?string $campaignDescription = null): self
     {

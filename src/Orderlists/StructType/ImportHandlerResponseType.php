@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -88,7 +88,7 @@ class ImportHandlerResponseType extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ImportHandlerResponseType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ImportHandlerResponseType
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -111,7 +111,7 @@ class ImportHandlerResponseType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ImportHandlerResponseType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ImportHandlerResponseType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -134,7 +134,7 @@ class ImportHandlerResponseType extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ImportHandlerResponseType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ImportHandlerResponseType
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -157,7 +157,7 @@ class ImportHandlerResponseType extends AbstractStructBase
     /**
      * Set result value
      * @param string $result
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ImportHandlerResponseType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ImportHandlerResponseType
      */
     public function setResult(?string $result = null): self
     {
@@ -180,7 +180,7 @@ class ImportHandlerResponseType extends AbstractStructBase
     /**
      * Set error value
      * @param string $error
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ImportHandlerResponseType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ImportHandlerResponseType
      */
     public function setError(?string $error = null): self
     {

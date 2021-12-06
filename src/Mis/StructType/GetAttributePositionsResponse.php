@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetAttributePositionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAttributePosition
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoAttributePosition[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoAttributePosition[]
      */
     protected ?array $MidocoAttributePosition = null;
     /**
      * Constructor method for GetAttributePositionsResponse
      * @uses GetAttributePositionsResponse::setMidocoAttributePosition()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoAttributePosition[] $midocoAttributePosition
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoAttributePosition[] $midocoAttributePosition
      */
     public function __construct(?array $midocoAttributePosition = null)
     {
@@ -36,7 +36,7 @@ class GetAttributePositionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAttributePosition value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoAttributePosition[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoAttributePosition[]
      */
     public function getMidocoAttributePosition(): ?array
     {
@@ -57,12 +57,12 @@ class GetAttributePositionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAttributePositionsResponseMidocoAttributePositionItem) {
             // validation for constraint: itemType
-            if (!$getAttributePositionsResponseMidocoAttributePositionItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoAttributePosition) {
+            if (!$getAttributePositionsResponseMidocoAttributePositionItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoAttributePosition) {
                 $invalidValues[] = is_object($getAttributePositionsResponseMidocoAttributePositionItem) ? get_class($getAttributePositionsResponseMidocoAttributePositionItem) : sprintf('%s(%s)', gettype($getAttributePositionsResponseMidocoAttributePositionItem), var_export($getAttributePositionsResponseMidocoAttributePositionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAttributePosition property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoAttributePosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAttributePosition property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoAttributePosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetAttributePositionsResponse extends AbstractStructBase
     /**
      * Set MidocoAttributePosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoAttributePosition[] $midocoAttributePosition
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAttributePositionsResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoAttributePosition[] $midocoAttributePosition
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAttributePositionsResponse
      */
     public function setMidocoAttributePosition(?array $midocoAttributePosition = null): self
     {
@@ -87,14 +87,14 @@ class GetAttributePositionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoAttributePosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoAttributePosition $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAttributePositionsResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoAttributePosition $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAttributePositionsResponse
      */
-    public function addToMidocoAttributePosition(\Pggns\MidocoApi\Api\Mis\StructType\MidocoAttributePosition $item): self
+    public function addToMidocoAttributePosition(\Pggns\MidocoApi\Mis\StructType\MidocoAttributePosition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoAttributePosition) {
-            throw new InvalidArgumentException(sprintf('The MidocoAttributePosition property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoAttributePosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoAttributePosition) {
+            throw new InvalidArgumentException(sprintf('The MidocoAttributePosition property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoAttributePosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAttributePosition[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class IsValidCcProxySingleUseTokenResponse extends AbstractStructBase
     /**
      * Set valid value
      * @param bool $valid
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\IsValidCcProxySingleUseTokenResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\IsValidCcProxySingleUseTokenResponse
      */
     public function setValid(?bool $valid = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveDunningTemplateAssignRequest extends AbstractStructBase
      * The MidocoDunningTemplateAssign
      * Meta information extracted from the WSDL
      * - ref: MidocoDunningTemplateAssign
-     * @var \Pggns\MidocoApi\Api\Order\StructType\DunningTemplateAssignDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\DunningTemplateAssignDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\DunningTemplateAssignDTO $MidocoDunningTemplateAssign = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\DunningTemplateAssignDTO $MidocoDunningTemplateAssign = null;
     /**
      * Constructor method for SaveDunningTemplateAssignRequest
      * @uses SaveDunningTemplateAssignRequest::setMidocoDunningTemplateAssign()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DunningTemplateAssignDTO $midocoDunningTemplateAssign
+     * @param \Pggns\MidocoApi\Order\StructType\DunningTemplateAssignDTO $midocoDunningTemplateAssign
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\DunningTemplateAssignDTO $midocoDunningTemplateAssign = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\DunningTemplateAssignDTO $midocoDunningTemplateAssign = null)
     {
         $this
             ->setMidocoDunningTemplateAssign($midocoDunningTemplateAssign);
     }
     /**
      * Get MidocoDunningTemplateAssign value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningTemplateAssignDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\DunningTemplateAssignDTO|null
      */
-    public function getMidocoDunningTemplateAssign(): ?\Pggns\MidocoApi\Api\Order\StructType\DunningTemplateAssignDTO
+    public function getMidocoDunningTemplateAssign(): ?\Pggns\MidocoApi\Order\StructType\DunningTemplateAssignDTO
     {
         return $this->MidocoDunningTemplateAssign;
     }
     /**
      * Set MidocoDunningTemplateAssign value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DunningTemplateAssignDTO $midocoDunningTemplateAssign
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveDunningTemplateAssignRequest
+     * @param \Pggns\MidocoApi\Order\StructType\DunningTemplateAssignDTO $midocoDunningTemplateAssign
+     * @return \Pggns\MidocoApi\Order\StructType\SaveDunningTemplateAssignRequest
      */
-    public function setMidocoDunningTemplateAssign(?\Pggns\MidocoApi\Api\Order\StructType\DunningTemplateAssignDTO $midocoDunningTemplateAssign = null): self
+    public function setMidocoDunningTemplateAssign(?\Pggns\MidocoApi\Order\StructType\DunningTemplateAssignDTO $midocoDunningTemplateAssign = null): self
     {
         $this->MidocoDunningTemplateAssign = $midocoDunningTemplateAssign;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class GetCampaignResultsInfoRequest extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignResultsInfoRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignResultsInfoRequest
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -88,7 +88,7 @@ class GetCampaignResultsInfoRequest extends AbstractStructBase
     /**
      * Set campaignOrgUnit value
      * @param string $campaignOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignResultsInfoRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignResultsInfoRequest
      */
     public function setCampaignOrgUnit(?string $campaignOrgUnit = null): self
     {
@@ -111,7 +111,7 @@ class GetCampaignResultsInfoRequest extends AbstractStructBase
     /**
      * Set notExecutedOnly value
      * @param bool $notExecutedOnly
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignResultsInfoRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignResultsInfoRequest
      */
     public function setNotExecutedOnly(?bool $notExecutedOnly = true): self
     {
@@ -134,7 +134,7 @@ class GetCampaignResultsInfoRequest extends AbstractStructBase
     /**
      * Set maxResults value
      * @param int $maxResults
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignResultsInfoRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignResultsInfoRequest
      */
     public function setMaxResults(?int $maxResults = null): self
     {

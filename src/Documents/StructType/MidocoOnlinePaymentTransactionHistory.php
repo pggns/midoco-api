@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set transactionId value
      * @param int $transactionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setTransactionId(?int $transactionId = null): self
     {
@@ -174,7 +174,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -197,7 +197,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -220,7 +220,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set ccReceiptNo value
      * @param int $ccReceiptNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setCcReceiptNo(?int $ccReceiptNo = null): self
     {
@@ -243,7 +243,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set receiptId value
      * @param int $receiptId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setReceiptId(?int $receiptId = null): self
     {
@@ -266,7 +266,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set expiryMonthYear value
      * @param string $expiryMonthYear
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setExpiryMonthYear(?string $expiryMonthYear = null): self
     {
@@ -289,7 +289,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setAction(?string $action = null): self
     {
@@ -312,7 +312,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set approvalCode value
      * @param string $approvalCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setApprovalCode(?string $approvalCode = null): self
     {
@@ -335,7 +335,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setAmount(?float $amount = null): self
     {
@@ -358,7 +358,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set user value
      * @param int $user
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setUser(?int $user = null): self
     {
@@ -381,7 +381,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -404,7 +404,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setStatus(?string $status = null): self
     {
@@ -427,7 +427,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -450,7 +450,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set errorDescriptionCode value
      * @param string $errorDescriptionCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setErrorDescriptionCode(?string $errorDescriptionCode = null): self
     {
@@ -473,7 +473,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransactionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransactionHistory
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {

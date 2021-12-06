@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class AdapterAssignChgLogDTO extends AbstractStructBase
     /**
      * Set adapterId value
      * @param string $adapterId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AdapterAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AdapterAssignChgLogDTO
      */
     public function setAdapterId(?string $adapterId = null): self
     {
@@ -94,7 +94,7 @@ class AdapterAssignChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AdapterAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AdapterAssignChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -117,7 +117,7 @@ class AdapterAssignChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AdapterAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AdapterAssignChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -140,7 +140,7 @@ class AdapterAssignChgLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AdapterAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AdapterAssignChgLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -163,7 +163,7 @@ class AdapterAssignChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AdapterAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AdapterAssignChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

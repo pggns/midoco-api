@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class SaveOrderLockPeriodResponse extends AbstractStructBase
     /**
      * Set lockPeriodId value
      * @param int $lockPeriodId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderLockPeriodResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderLockPeriodResponse
      */
     public function setLockPeriodId(?int $lockPeriodId = null): self
     {

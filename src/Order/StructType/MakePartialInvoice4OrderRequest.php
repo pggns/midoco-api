@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -25,9 +25,9 @@ class MakePartialInvoice4OrderRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoOrderCustomer
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $MidocoOrderCustomer = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $MidocoOrderCustomer = null;
     /**
      * The partialInvoiceAmount
      * @var float|null
@@ -47,11 +47,11 @@ class MakePartialInvoice4OrderRequest extends AbstractStructBase
      * @uses MakePartialInvoice4OrderRequest::setPartialInvoiceAmount()
      * @uses MakePartialInvoice4OrderRequest::setOnlyVoid()
      * @param int $orderId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer
      * @param float $partialInvoiceAmount
      * @param bool $onlyVoid
      */
-    public function __construct(int $orderId, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer = null, ?float $partialInvoiceAmount = null, ?bool $onlyVoid = false)
+    public function __construct(int $orderId, ?\Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer = null, ?float $partialInvoiceAmount = null, ?bool $onlyVoid = false)
     {
         $this
             ->setOrderId($orderId)
@@ -70,7 +70,7 @@ class MakePartialInvoice4OrderRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakePartialInvoice4OrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakePartialInvoice4OrderRequest
      */
     public function setOrderId(int $orderId): self
     {
@@ -84,18 +84,18 @@ class MakePartialInvoice4OrderRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderCustomer value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer|null
      */
-    public function getMidocoOrderCustomer(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer
+    public function getMidocoOrderCustomer(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer
     {
         return $this->MidocoOrderCustomer;
     }
     /**
      * Set MidocoOrderCustomer value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakePartialInvoice4OrderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MakePartialInvoice4OrderRequest
      */
-    public function setMidocoOrderCustomer(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer = null): self
+    public function setMidocoOrderCustomer(?\Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer = null): self
     {
         $this->MidocoOrderCustomer = $midocoOrderCustomer;
         
@@ -112,7 +112,7 @@ class MakePartialInvoice4OrderRequest extends AbstractStructBase
     /**
      * Set partialInvoiceAmount value
      * @param float $partialInvoiceAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakePartialInvoice4OrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakePartialInvoice4OrderRequest
      */
     public function setPartialInvoiceAmount(?float $partialInvoiceAmount = null): self
     {
@@ -135,7 +135,7 @@ class MakePartialInvoice4OrderRequest extends AbstractStructBase
     /**
      * Set onlyVoid value
      * @param bool $onlyVoid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakePartialInvoice4OrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakePartialInvoice4OrderRequest
      */
     public function setOnlyVoid(?bool $onlyVoid = false): self
     {

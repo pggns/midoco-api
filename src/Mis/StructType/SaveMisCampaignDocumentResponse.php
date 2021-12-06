@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class SaveMisCampaignDocumentResponse extends AbstractStructBase
     /**
      * Set misDocumentId value
      * @param int $misDocumentId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveMisCampaignDocumentResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveMisCampaignDocumentResponse
      */
     public function setMisDocumentId(?int $misDocumentId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -226,7 +226,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setPosition(int $position): self
     {
@@ -249,7 +249,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set service_code value
      * @param string $service_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setService_code(?string $service_code = null): self
     {
@@ -272,7 +272,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set service_name value
      * @param string $service_name
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setService_name(?string $service_name = null): self
     {
@@ -295,7 +295,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set accomodation value
      * @param string $accomodation
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setAccomodation(?string $accomodation = null): self
     {
@@ -318,7 +318,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set catering value
      * @param string $catering
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setCatering(?string $catering = null): self
     {
@@ -341,7 +341,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set persons_per_service value
      * @param string $persons_per_service
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setPersons_per_service(?string $persons_per_service = null): self
     {
@@ -364,7 +364,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set no_of_services value
      * @param string $no_of_services
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setNo_of_services(?string $no_of_services = null): self
     {
@@ -387,7 +387,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set start_date value
      * @param string $start_date
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setStart_date(?string $start_date = null): self
     {
@@ -414,7 +414,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set end_date value
      * @param string $end_date
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setEnd_date(?string $end_date = null): self
     {
@@ -441,7 +441,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set person_assignment value
      * @param string $person_assignment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setPerson_assignment(?string $person_assignment = null): self
     {
@@ -464,7 +464,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set service_status value
      * @param string $service_status
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setService_status(?string $service_status = null): self
     {
@@ -487,7 +487,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set service_price value
      * @param float $service_price
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setService_price(?float $service_price = null): self
     {
@@ -510,7 +510,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set service_currency value
      * @param string $service_currency
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setService_currency(?string $service_currency = 'EUR'): self
     {
@@ -533,7 +533,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set service_description value
      * @param string $service_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setService_description(?string $service_description = null): self
     {
@@ -556,7 +556,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set location_description value
      * @param string $location_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setLocation_description(?string $location_description = null): self
     {
@@ -579,7 +579,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set departure_time value
      * @param string $departure_time
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setDeparture_time(?string $departure_time = null): self
     {
@@ -606,7 +606,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set arrival_time value
      * @param string $arrival_time
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setArrival_time(?string $arrival_time = null): self
     {
@@ -633,7 +633,7 @@ class Generic_service_type extends AbstractStructBase
     /**
      * Set simpleService value
      * @param bool $simpleService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type
      */
     public function setSimpleService(?bool $simpleService = false): self
     {

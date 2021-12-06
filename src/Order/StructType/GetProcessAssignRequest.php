@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetProcessAssignRequest extends AbstractStructBase
      * The MidocoProcessAssignCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoProcessAssignCriteria
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoProcessAssignCriteria|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoProcessAssignCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoProcessAssignCriteria $MidocoProcessAssignCriteria = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoProcessAssignCriteria $MidocoProcessAssignCriteria = null;
     /**
      * Constructor method for GetProcessAssignRequest
      * @uses GetProcessAssignRequest::setMidocoProcessAssignCriteria()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoProcessAssignCriteria $midocoProcessAssignCriteria
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoProcessAssignCriteria $midocoProcessAssignCriteria
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoProcessAssignCriteria $midocoProcessAssignCriteria = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoProcessAssignCriteria $midocoProcessAssignCriteria = null)
     {
         $this
             ->setMidocoProcessAssignCriteria($midocoProcessAssignCriteria);
     }
     /**
      * Get MidocoProcessAssignCriteria value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoProcessAssignCriteria|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoProcessAssignCriteria|null
      */
-    public function getMidocoProcessAssignCriteria(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoProcessAssignCriteria
+    public function getMidocoProcessAssignCriteria(): ?\Pggns\MidocoApi\Order\StructType\MidocoProcessAssignCriteria
     {
         return $this->MidocoProcessAssignCriteria;
     }
     /**
      * Set MidocoProcessAssignCriteria value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoProcessAssignCriteria $midocoProcessAssignCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetProcessAssignRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoProcessAssignCriteria $midocoProcessAssignCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\GetProcessAssignRequest
      */
-    public function setMidocoProcessAssignCriteria(?\Pggns\MidocoApi\Api\Order\StructType\MidocoProcessAssignCriteria $midocoProcessAssignCriteria = null): self
+    public function setMidocoProcessAssignCriteria(?\Pggns\MidocoApi\Order\StructType\MidocoProcessAssignCriteria $midocoProcessAssignCriteria = null): self
     {
         $this->MidocoProcessAssignCriteria = $midocoProcessAssignCriteria;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,24 +19,24 @@ class GetMidocoAgencySettlementOrderDetailsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAgencyProvisionDetails
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails[]
      */
     protected ?array $MidocoAgencyProvisionDetails = null;
     /**
      * The MidocoAgencySettlement
      * Meta information extracted from the WSDL
      * - ref: MidocoAgencySettlement
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\AgencySettlementDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO $MidocoAgencySettlement = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\AgencySettlementDTO $MidocoAgencySettlement = null;
     /**
      * Constructor method for GetMidocoAgencySettlementOrderDetailsResponse
      * @uses GetMidocoAgencySettlementOrderDetailsResponse::setMidocoAgencyProvisionDetails()
      * @uses GetMidocoAgencySettlementOrderDetailsResponse::setMidocoAgencySettlement()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails[] $midocoAgencyProvisionDetails
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO $midocoAgencySettlement
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails[] $midocoAgencyProvisionDetails
+     * @param \Pggns\MidocoApi\Order\StructType\AgencySettlementDTO $midocoAgencySettlement
      */
-    public function __construct(?array $midocoAgencyProvisionDetails = null, ?\Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO $midocoAgencySettlement = null)
+    public function __construct(?array $midocoAgencyProvisionDetails = null, ?\Pggns\MidocoApi\Order\StructType\AgencySettlementDTO $midocoAgencySettlement = null)
     {
         $this
             ->setMidocoAgencyProvisionDetails($midocoAgencyProvisionDetails)
@@ -44,7 +44,7 @@ class GetMidocoAgencySettlementOrderDetailsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAgencyProvisionDetails value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails[]
      */
     public function getMidocoAgencyProvisionDetails(): ?array
     {
@@ -65,12 +65,12 @@ class GetMidocoAgencySettlementOrderDetailsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoAgencySettlementOrderDetailsResponseMidocoAgencyProvisionDetailsItem) {
             // validation for constraint: itemType
-            if (!$getMidocoAgencySettlementOrderDetailsResponseMidocoAgencyProvisionDetailsItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails) {
+            if (!$getMidocoAgencySettlementOrderDetailsResponseMidocoAgencyProvisionDetailsItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails) {
                 $invalidValues[] = is_object($getMidocoAgencySettlementOrderDetailsResponseMidocoAgencyProvisionDetailsItem) ? get_class($getMidocoAgencySettlementOrderDetailsResponseMidocoAgencyProvisionDetailsItem) : sprintf('%s(%s)', gettype($getMidocoAgencySettlementOrderDetailsResponseMidocoAgencyProvisionDetailsItem), var_export($getMidocoAgencySettlementOrderDetailsResponseMidocoAgencyProvisionDetailsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAgencyProvisionDetails property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAgencyProvisionDetails property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -79,8 +79,8 @@ class GetMidocoAgencySettlementOrderDetailsResponse extends AbstractStructBase
     /**
      * Set MidocoAgencyProvisionDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails[] $midocoAgencyProvisionDetails
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoAgencySettlementOrderDetailsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails[] $midocoAgencyProvisionDetails
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoAgencySettlementOrderDetailsResponse
      */
     public function setMidocoAgencyProvisionDetails(?array $midocoAgencyProvisionDetails = null): self
     {
@@ -95,14 +95,14 @@ class GetMidocoAgencySettlementOrderDetailsResponse extends AbstractStructBase
     /**
      * Add item to MidocoAgencyProvisionDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoAgencySettlementOrderDetailsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoAgencySettlementOrderDetailsResponse
      */
-    public function addToMidocoAgencyProvisionDetails(\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails $item): self
+    public function addToMidocoAgencyProvisionDetails(\Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails) {
-            throw new InvalidArgumentException(sprintf('The MidocoAgencyProvisionDetails property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyProvisionDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails) {
+            throw new InvalidArgumentException(sprintf('The MidocoAgencyProvisionDetails property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAgencyProvisionDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAgencyProvisionDetails[] = $item;
         
@@ -110,18 +110,18 @@ class GetMidocoAgencySettlementOrderDetailsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAgencySettlement value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\AgencySettlementDTO|null
      */
-    public function getMidocoAgencySettlement(): ?\Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO
+    public function getMidocoAgencySettlement(): ?\Pggns\MidocoApi\Order\StructType\AgencySettlementDTO
     {
         return $this->MidocoAgencySettlement;
     }
     /**
      * Set MidocoAgencySettlement value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO $midocoAgencySettlement
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoAgencySettlementOrderDetailsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\AgencySettlementDTO $midocoAgencySettlement
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoAgencySettlementOrderDetailsResponse
      */
-    public function setMidocoAgencySettlement(?\Pggns\MidocoApi\Api\Order\StructType\AgencySettlementDTO $midocoAgencySettlement = null): self
+    public function setMidocoAgencySettlement(?\Pggns\MidocoApi\Order\StructType\AgencySettlementDTO $midocoAgencySettlement = null): self
     {
         $this->MidocoAgencySettlement = $midocoAgencySettlement;
         

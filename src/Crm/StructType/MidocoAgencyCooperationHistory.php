@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoAgencyCooperationHistory extends AgencyCooperationHistoryDTO
     /**
      * Set cooperationName value
      * @param string $cooperationName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoAgencyCooperationHistory
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoAgencyCooperationHistory
      */
     public function setCooperationName(?string $cooperationName = null): self
     {

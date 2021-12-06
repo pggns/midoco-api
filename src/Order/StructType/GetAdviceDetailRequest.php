@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetAdviceDetailRequest extends AbstractStructBase
     /**
      * Set detailId value
      * @param int $detailId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAdviceDetailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAdviceDetailRequest
      */
     public function setDetailId(int $detailId): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MisFlightCarrierDTO extends AbstractStructBase
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightCarrierDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightCarrierDTO
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -102,7 +102,7 @@ class MisFlightCarrierDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightCarrierDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightCarrierDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -125,7 +125,7 @@ class MisFlightCarrierDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightCarrierDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightCarrierDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -148,7 +148,7 @@ class MisFlightCarrierDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightCarrierDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightCarrierDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -171,7 +171,7 @@ class MisFlightCarrierDTO extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightCarrierDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightCarrierDTO
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -194,7 +194,7 @@ class MisFlightCarrierDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisFlightCarrierDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisFlightCarrierDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

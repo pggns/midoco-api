@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CloseOrderNoticeRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CloseOrderNoticeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CloseOrderNoticeRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -78,7 +78,7 @@ class CloseOrderNoticeRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CloseOrderNoticeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CloseOrderNoticeRequest
      */
     public function setType(?string $type = null): self
     {
@@ -101,7 +101,7 @@ class CloseOrderNoticeRequest extends AbstractStructBase
     /**
      * Set finished value
      * @param bool $finished
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CloseOrderNoticeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CloseOrderNoticeRequest
      */
     public function setFinished(?bool $finished = null): self
     {

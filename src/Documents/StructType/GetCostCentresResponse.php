@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCostCentresResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCostCentre
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoCostCentre[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoCostCentre[]
      */
     protected ?array $MidocoCostCentre = null;
     /**
      * Constructor method for GetCostCentresResponse
      * @uses GetCostCentresResponse::setMidocoCostCentre()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoCostCentre[] $midocoCostCentre
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoCostCentre[] $midocoCostCentre
      */
     public function __construct(?array $midocoCostCentre = null)
     {
@@ -34,7 +34,7 @@ class GetCostCentresResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCostCentre value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCostCentre[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCostCentre[]
      */
     public function getMidocoCostCentre(): ?array
     {
@@ -55,12 +55,12 @@ class GetCostCentresResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCostCentresResponseMidocoCostCentreItem) {
             // validation for constraint: itemType
-            if (!$getCostCentresResponseMidocoCostCentreItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoCostCentre) {
+            if (!$getCostCentresResponseMidocoCostCentreItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoCostCentre) {
                 $invalidValues[] = is_object($getCostCentresResponseMidocoCostCentreItem) ? get_class($getCostCentresResponseMidocoCostCentreItem) : sprintf('%s(%s)', gettype($getCostCentresResponseMidocoCostCentreItem), var_export($getCostCentresResponseMidocoCostCentreItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCostCentre property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoCostCentre, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCostCentre property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoCostCentre, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCostCentresResponse extends AbstractStructBase
     /**
      * Set MidocoCostCentre value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoCostCentre[] $midocoCostCentre
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetCostCentresResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoCostCentre[] $midocoCostCentre
+     * @return \Pggns\MidocoApi\Documents\StructType\GetCostCentresResponse
      */
     public function setMidocoCostCentre(?array $midocoCostCentre = null): self
     {
@@ -85,14 +85,14 @@ class GetCostCentresResponse extends AbstractStructBase
     /**
      * Add item to MidocoCostCentre value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoCostCentre $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetCostCentresResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoCostCentre $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetCostCentresResponse
      */
-    public function addToMidocoCostCentre(\Pggns\MidocoApi\Api\Documents\StructType\MidocoCostCentre $item): self
+    public function addToMidocoCostCentre(\Pggns\MidocoApi\Documents\StructType\MidocoCostCentre $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoCostCentre) {
-            throw new InvalidArgumentException(sprintf('The MidocoCostCentre property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoCostCentre, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoCostCentre) {
+            throw new InvalidArgumentException(sprintf('The MidocoCostCentre property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoCostCentre, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCostCentre[] = $item;
         

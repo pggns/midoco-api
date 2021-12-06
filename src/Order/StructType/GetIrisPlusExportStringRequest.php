@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
      * The MidocoTravelItem
      * Meta information extracted from the WSDL
      * - ref: MidocoTravelItem
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTravelItemType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $MidocoTravelItem = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $MidocoTravelItem = null;
     /**
      * The MidocoPackageInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoPackageInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\PackageitemDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $MidocoPackageInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\PackageitemDTO $MidocoPackageInfo = null;
     /**
      * The itemId
      * @var int|null
@@ -37,11 +37,11 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
      * @uses GetIrisPlusExportStringRequest::setMidocoTravelItem()
      * @uses GetIrisPlusExportStringRequest::setMidocoPackageInfo()
      * @uses GetIrisPlusExportStringRequest::setItemId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $midocoTravelItem
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $midocoPackageInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $midocoTravelItem
+     * @param \Pggns\MidocoApi\Order\StructType\PackageitemDTO $midocoPackageInfo
      * @param int $itemId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $midocoTravelItem = null, ?\Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $midocoPackageInfo = null, ?int $itemId = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $midocoTravelItem = null, ?\Pggns\MidocoApi\Order\StructType\PackageitemDTO $midocoPackageInfo = null, ?int $itemId = null)
     {
         $this
             ->setMidocoTravelItem($midocoTravelItem)
@@ -50,18 +50,18 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTravelItem value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTravelItemType|null
      */
-    public function getMidocoTravelItem(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType
+    public function getMidocoTravelItem(): ?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemType
     {
         return $this->MidocoTravelItem;
     }
     /**
      * Set MidocoTravelItem value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $midocoTravelItem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetIrisPlusExportStringRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $midocoTravelItem
+     * @return \Pggns\MidocoApi\Order\StructType\GetIrisPlusExportStringRequest
      */
-    public function setMidocoTravelItem(?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $midocoTravelItem = null): self
+    public function setMidocoTravelItem(?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $midocoTravelItem = null): self
     {
         $this->MidocoTravelItem = $midocoTravelItem;
         
@@ -69,18 +69,18 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
     }
     /**
      * Get MidocoPackageInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\PackageitemDTO|null
      */
-    public function getMidocoPackageInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO
+    public function getMidocoPackageInfo(): ?\Pggns\MidocoApi\Order\StructType\PackageitemDTO
     {
         return $this->MidocoPackageInfo;
     }
     /**
      * Set MidocoPackageInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $midocoPackageInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetIrisPlusExportStringRequest
+     * @param \Pggns\MidocoApi\Order\StructType\PackageitemDTO $midocoPackageInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetIrisPlusExportStringRequest
      */
-    public function setMidocoPackageInfo(?\Pggns\MidocoApi\Api\Order\StructType\PackageitemDTO $midocoPackageInfo = null): self
+    public function setMidocoPackageInfo(?\Pggns\MidocoApi\Order\StructType\PackageitemDTO $midocoPackageInfo = null): self
     {
         $this->MidocoPackageInfo = $midocoPackageInfo;
         
@@ -97,7 +97,7 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetIrisPlusExportStringRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetIrisPlusExportStringRequest
      */
     public function setItemId(?int $itemId = null): self
     {

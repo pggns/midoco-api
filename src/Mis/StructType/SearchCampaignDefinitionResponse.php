@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class SearchCampaignDefinitionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMisCampaignCriteria
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO[]
      */
     protected ?array $MidocoMisCampaignCriteria = null;
     /**
@@ -30,15 +30,15 @@ class SearchCampaignDefinitionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMisCampaignOutput
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO[]
      */
     protected ?array $MidocoMisCampaignOutput = null;
     /**
      * Constructor method for SearchCampaignDefinitionResponse
      * @uses SearchCampaignDefinitionResponse::setMidocoMisCampaignCriteria()
      * @uses SearchCampaignDefinitionResponse::setMidocoMisCampaignOutput()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO[] $midocoMisCampaignCriteria
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO[] $midocoMisCampaignOutput
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO[] $midocoMisCampaignCriteria
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO[] $midocoMisCampaignOutput
      */
     public function __construct(?array $midocoMisCampaignCriteria = null, ?array $midocoMisCampaignOutput = null)
     {
@@ -48,7 +48,7 @@ class SearchCampaignDefinitionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMisCampaignCriteria value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO[]
      */
     public function getMidocoMisCampaignCriteria(): ?array
     {
@@ -69,12 +69,12 @@ class SearchCampaignDefinitionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchCampaignDefinitionResponseMidocoMisCampaignCriteriaItem) {
             // validation for constraint: itemType
-            if (!$searchCampaignDefinitionResponseMidocoMisCampaignCriteriaItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO) {
+            if (!$searchCampaignDefinitionResponseMidocoMisCampaignCriteriaItem instanceof \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO) {
                 $invalidValues[] = is_object($searchCampaignDefinitionResponseMidocoMisCampaignCriteriaItem) ? get_class($searchCampaignDefinitionResponseMidocoMisCampaignCriteriaItem) : sprintf('%s(%s)', gettype($searchCampaignDefinitionResponseMidocoMisCampaignCriteriaItem), var_export($searchCampaignDefinitionResponseMidocoMisCampaignCriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMisCampaignCriteria property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMisCampaignCriteria property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -83,8 +83,8 @@ class SearchCampaignDefinitionResponse extends AbstractStructBase
     /**
      * Set MidocoMisCampaignCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO[] $midocoMisCampaignCriteria
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchCampaignDefinitionResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO[] $midocoMisCampaignCriteria
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchCampaignDefinitionResponse
      */
     public function setMidocoMisCampaignCriteria(?array $midocoMisCampaignCriteria = null): self
     {
@@ -99,14 +99,14 @@ class SearchCampaignDefinitionResponse extends AbstractStructBase
     /**
      * Add item to MidocoMisCampaignCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchCampaignDefinitionResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchCampaignDefinitionResponse
      */
-    public function addToMidocoMisCampaignCriteria(\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO $item): self
+    public function addToMidocoMisCampaignCriteria(\Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMisCampaignCriteria property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignCriteriaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMisCampaignCriteria property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCampaignCriteriaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMisCampaignCriteria[] = $item;
         
@@ -114,7 +114,7 @@ class SearchCampaignDefinitionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMisCampaignOutput value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO[]
      */
     public function getMidocoMisCampaignOutput(): ?array
     {
@@ -135,12 +135,12 @@ class SearchCampaignDefinitionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchCampaignDefinitionResponseMidocoMisCampaignOutputItem) {
             // validation for constraint: itemType
-            if (!$searchCampaignDefinitionResponseMidocoMisCampaignOutputItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO) {
+            if (!$searchCampaignDefinitionResponseMidocoMisCampaignOutputItem instanceof \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO) {
                 $invalidValues[] = is_object($searchCampaignDefinitionResponseMidocoMisCampaignOutputItem) ? get_class($searchCampaignDefinitionResponseMidocoMisCampaignOutputItem) : sprintf('%s(%s)', gettype($searchCampaignDefinitionResponseMidocoMisCampaignOutputItem), var_export($searchCampaignDefinitionResponseMidocoMisCampaignOutputItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMisCampaignOutput property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMisCampaignOutput property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -149,8 +149,8 @@ class SearchCampaignDefinitionResponse extends AbstractStructBase
     /**
      * Set MidocoMisCampaignOutput value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO[] $midocoMisCampaignOutput
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchCampaignDefinitionResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO[] $midocoMisCampaignOutput
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchCampaignDefinitionResponse
      */
     public function setMidocoMisCampaignOutput(?array $midocoMisCampaignOutput = null): self
     {
@@ -165,14 +165,14 @@ class SearchCampaignDefinitionResponse extends AbstractStructBase
     /**
      * Add item to MidocoMisCampaignOutput value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchCampaignDefinitionResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchCampaignDefinitionResponse
      */
-    public function addToMidocoMisCampaignOutput(\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO $item): self
+    public function addToMidocoMisCampaignOutput(\Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMisCampaignOutput property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOutputDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMisCampaignOutput property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCampaignOutputDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMisCampaignOutput[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -110,7 +110,7 @@ class AdditionalCreditCardInfo extends AbstractStructBase
      * Set TravelerRefId value
      * @throws InvalidArgumentException
      * @param int[] $travelerRefId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AdditionalCreditCardInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\AdditionalCreditCardInfo
      */
     public function setTravelerRefId(?array $travelerRefId = null): self
     {
@@ -126,7 +126,7 @@ class AdditionalCreditCardInfo extends AbstractStructBase
      * Add item to TravelerRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AdditionalCreditCardInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\AdditionalCreditCardInfo
      */
     public function addToTravelerRefId(int $item): self
     {
@@ -176,7 +176,7 @@ class AdditionalCreditCardInfo extends AbstractStructBase
      * Set BookingPositionRefId value
      * @throws InvalidArgumentException
      * @param int[] $bookingPositionRefId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AdditionalCreditCardInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\AdditionalCreditCardInfo
      */
     public function setBookingPositionRefId(?array $bookingPositionRefId = null): self
     {
@@ -192,7 +192,7 @@ class AdditionalCreditCardInfo extends AbstractStructBase
      * Add item to BookingPositionRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AdditionalCreditCardInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\AdditionalCreditCardInfo
      */
     public function addToBookingPositionRefId(int $item): self
     {
@@ -242,7 +242,7 @@ class AdditionalCreditCardInfo extends AbstractStructBase
      * Set BookingDetailRefId value
      * @throws InvalidArgumentException
      * @param int[] $bookingDetailRefId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AdditionalCreditCardInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\AdditionalCreditCardInfo
      */
     public function setBookingDetailRefId(?array $bookingDetailRefId = null): self
     {
@@ -258,7 +258,7 @@ class AdditionalCreditCardInfo extends AbstractStructBase
      * Add item to BookingDetailRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AdditionalCreditCardInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\AdditionalCreditCardInfo
      */
     public function addToBookingDetailRefId(int $item): self
     {
@@ -280,17 +280,17 @@ class AdditionalCreditCardInfo extends AbstractStructBase
     }
     /**
      * Set name value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\AdditionalCreditCardInfoNameType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\AdditionalCreditCardInfoNameType::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\AdditionalCreditCardInfoNameType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\AdditionalCreditCardInfoNameType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AdditionalCreditCardInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\AdditionalCreditCardInfo
      */
     public function setName(?string $name = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\AdditionalCreditCardInfoNameType::valueIsValid($name)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\AdditionalCreditCardInfoNameType', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\AdditionalCreditCardInfoNameType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\AdditionalCreditCardInfoNameType::valueIsValid($name)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\AdditionalCreditCardInfoNameType', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\AdditionalCreditCardInfoNameType::getValidValues())), __LINE__);
         }
         $this->name = $name;
         
@@ -307,7 +307,7 @@ class AdditionalCreditCardInfo extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AdditionalCreditCardInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\AdditionalCreditCardInfo
      */
     public function setValue(?string $value = null): self
     {

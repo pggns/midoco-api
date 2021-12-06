@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class SaveBillingOnlinePaymentResponse extends AbstractStructBase
      * The MidocoBillingOnlinePayment
      * Meta information extracted from the WSDL
      * - ref: MidocoBillingOnlinePayment
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingOnlinePayment|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingOnlinePayment|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingOnlinePayment $MidocoBillingOnlinePayment = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBillingOnlinePayment $MidocoBillingOnlinePayment = null;
     /**
      * Constructor method for SaveBillingOnlinePaymentResponse
      * @uses SaveBillingOnlinePaymentResponse::setMidocoBillingOnlinePayment()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment = null)
     {
         $this
             ->setMidocoBillingOnlinePayment($midocoBillingOnlinePayment);
     }
     /**
      * Get MidocoBillingOnlinePayment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingOnlinePayment|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingOnlinePayment|null
      */
-    public function getMidocoBillingOnlinePayment(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingOnlinePayment
+    public function getMidocoBillingOnlinePayment(): ?\Pggns\MidocoApi\Order\StructType\MidocoBillingOnlinePayment
     {
         return $this->MidocoBillingOnlinePayment;
     }
     /**
      * Set MidocoBillingOnlinePayment value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingOnlinePaymentResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingOnlinePaymentResponse
      */
-    public function setMidocoBillingOnlinePayment(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment = null): self
+    public function setMidocoBillingOnlinePayment(?\Pggns\MidocoApi\Order\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment = null): self
     {
         $this->MidocoBillingOnlinePayment = $midocoBillingOnlinePayment;
         

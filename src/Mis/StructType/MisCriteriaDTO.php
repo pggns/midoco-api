@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MisCriteriaDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCriteriaDTO
      */
     public function setCategoryId(?int $categoryId = null): self
     {
@@ -102,7 +102,7 @@ class MisCriteriaDTO extends AbstractStructBase
     /**
      * Set criteriaId value
      * @param int $criteriaId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCriteriaDTO
      */
     public function setCriteriaId(?int $criteriaId = null): self
     {
@@ -125,7 +125,7 @@ class MisCriteriaDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCriteriaDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -148,7 +148,7 @@ class MisCriteriaDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCriteriaDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -171,7 +171,7 @@ class MisCriteriaDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCriteriaDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -194,7 +194,7 @@ class MisCriteriaDTO extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCriteriaDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCriteriaDTO
      */
     public function setValue(?string $value = null): self
     {

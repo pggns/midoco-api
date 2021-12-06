@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CheckUserAccessForOrgunitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CheckUserAccessForOrgunitRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CheckUserAccessForOrgunitRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

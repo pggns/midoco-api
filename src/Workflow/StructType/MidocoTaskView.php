@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoTaskView extends TaskViewDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTaskViewDescription
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewDescription[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewDescription[]
      */
     protected ?array $MidocoTaskViewDescription = null;
     /**
@@ -28,7 +28,7 @@ class MidocoTaskView extends TaskViewDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTaskViewUser
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser[]
      */
     protected ?array $MidocoTaskViewUser = null;
     /**
@@ -37,7 +37,7 @@ class MidocoTaskView extends TaskViewDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTaskViewTimeRestriction
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewTimeRestriction[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewTimeRestriction[]
      */
     protected ?array $MidocoTaskViewTimeRestriction = null;
     /**
@@ -46,7 +46,7 @@ class MidocoTaskView extends TaskViewDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTaskViewUnit
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUnit[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUnit[]
      */
     protected ?array $MidocoTaskViewUnit = null;
     /**
@@ -55,10 +55,10 @@ class MidocoTaskView extends TaskViewDTO
      * @uses MidocoTaskView::setMidocoTaskViewUser()
      * @uses MidocoTaskView::setMidocoTaskViewTimeRestriction()
      * @uses MidocoTaskView::setMidocoTaskViewUnit()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewDescription[] $midocoTaskViewDescription
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser[] $midocoTaskViewUser
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewTimeRestriction[] $midocoTaskViewTimeRestriction
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUnit[] $midocoTaskViewUnit
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewDescription[] $midocoTaskViewDescription
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser[] $midocoTaskViewUser
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewTimeRestriction[] $midocoTaskViewTimeRestriction
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUnit[] $midocoTaskViewUnit
      */
     public function __construct(?array $midocoTaskViewDescription = null, ?array $midocoTaskViewUser = null, ?array $midocoTaskViewTimeRestriction = null, ?array $midocoTaskViewUnit = null)
     {
@@ -70,7 +70,7 @@ class MidocoTaskView extends TaskViewDTO
     }
     /**
      * Get MidocoTaskViewDescription value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewDescription[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewDescription[]
      */
     public function getMidocoTaskViewDescription(): ?array
     {
@@ -91,12 +91,12 @@ class MidocoTaskView extends TaskViewDTO
         $invalidValues = [];
         foreach ($values as $midocoTaskViewMidocoTaskViewDescriptionItem) {
             // validation for constraint: itemType
-            if (!$midocoTaskViewMidocoTaskViewDescriptionItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewDescription) {
+            if (!$midocoTaskViewMidocoTaskViewDescriptionItem instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewDescription) {
                 $invalidValues[] = is_object($midocoTaskViewMidocoTaskViewDescriptionItem) ? get_class($midocoTaskViewMidocoTaskViewDescriptionItem) : sprintf('%s(%s)', gettype($midocoTaskViewMidocoTaskViewDescriptionItem), var_export($midocoTaskViewMidocoTaskViewDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTaskViewDescription property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewDescription, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTaskViewDescription property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewDescription, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -105,8 +105,8 @@ class MidocoTaskView extends TaskViewDTO
     /**
      * Set MidocoTaskViewDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewDescription[] $midocoTaskViewDescription
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewDescription[] $midocoTaskViewDescription
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView
      */
     public function setMidocoTaskViewDescription(?array $midocoTaskViewDescription = null): self
     {
@@ -121,14 +121,14 @@ class MidocoTaskView extends TaskViewDTO
     /**
      * Add item to MidocoTaskViewDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewDescription $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewDescription $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView
      */
-    public function addToMidocoTaskViewDescription(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewDescription $item): self
+    public function addToMidocoTaskViewDescription(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewDescription $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewDescription) {
-            throw new InvalidArgumentException(sprintf('The MidocoTaskViewDescription property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewDescription, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewDescription) {
+            throw new InvalidArgumentException(sprintf('The MidocoTaskViewDescription property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewDescription, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTaskViewDescription[] = $item;
         
@@ -136,7 +136,7 @@ class MidocoTaskView extends TaskViewDTO
     }
     /**
      * Get MidocoTaskViewUser value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser[]
      */
     public function getMidocoTaskViewUser(): ?array
     {
@@ -157,12 +157,12 @@ class MidocoTaskView extends TaskViewDTO
         $invalidValues = [];
         foreach ($values as $midocoTaskViewMidocoTaskViewUserItem) {
             // validation for constraint: itemType
-            if (!$midocoTaskViewMidocoTaskViewUserItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser) {
+            if (!$midocoTaskViewMidocoTaskViewUserItem instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser) {
                 $invalidValues[] = is_object($midocoTaskViewMidocoTaskViewUserItem) ? get_class($midocoTaskViewMidocoTaskViewUserItem) : sprintf('%s(%s)', gettype($midocoTaskViewMidocoTaskViewUserItem), var_export($midocoTaskViewMidocoTaskViewUserItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTaskViewUser property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTaskViewUser property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -171,8 +171,8 @@ class MidocoTaskView extends TaskViewDTO
     /**
      * Set MidocoTaskViewUser value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser[] $midocoTaskViewUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser[] $midocoTaskViewUser
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView
      */
     public function setMidocoTaskViewUser(?array $midocoTaskViewUser = null): self
     {
@@ -187,14 +187,14 @@ class MidocoTaskView extends TaskViewDTO
     /**
      * Add item to MidocoTaskViewUser value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView
      */
-    public function addToMidocoTaskViewUser(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser $item): self
+    public function addToMidocoTaskViewUser(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser) {
-            throw new InvalidArgumentException(sprintf('The MidocoTaskViewUser property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser) {
+            throw new InvalidArgumentException(sprintf('The MidocoTaskViewUser property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTaskViewUser[] = $item;
         
@@ -202,7 +202,7 @@ class MidocoTaskView extends TaskViewDTO
     }
     /**
      * Get MidocoTaskViewTimeRestriction value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewTimeRestriction[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewTimeRestriction[]
      */
     public function getMidocoTaskViewTimeRestriction(): ?array
     {
@@ -223,12 +223,12 @@ class MidocoTaskView extends TaskViewDTO
         $invalidValues = [];
         foreach ($values as $midocoTaskViewMidocoTaskViewTimeRestrictionItem) {
             // validation for constraint: itemType
-            if (!$midocoTaskViewMidocoTaskViewTimeRestrictionItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewTimeRestriction) {
+            if (!$midocoTaskViewMidocoTaskViewTimeRestrictionItem instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewTimeRestriction) {
                 $invalidValues[] = is_object($midocoTaskViewMidocoTaskViewTimeRestrictionItem) ? get_class($midocoTaskViewMidocoTaskViewTimeRestrictionItem) : sprintf('%s(%s)', gettype($midocoTaskViewMidocoTaskViewTimeRestrictionItem), var_export($midocoTaskViewMidocoTaskViewTimeRestrictionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTaskViewTimeRestriction property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewTimeRestriction, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTaskViewTimeRestriction property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewTimeRestriction, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -237,8 +237,8 @@ class MidocoTaskView extends TaskViewDTO
     /**
      * Set MidocoTaskViewTimeRestriction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewTimeRestriction[] $midocoTaskViewTimeRestriction
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewTimeRestriction[] $midocoTaskViewTimeRestriction
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView
      */
     public function setMidocoTaskViewTimeRestriction(?array $midocoTaskViewTimeRestriction = null): self
     {
@@ -253,14 +253,14 @@ class MidocoTaskView extends TaskViewDTO
     /**
      * Add item to MidocoTaskViewTimeRestriction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewTimeRestriction $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewTimeRestriction $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView
      */
-    public function addToMidocoTaskViewTimeRestriction(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewTimeRestriction $item): self
+    public function addToMidocoTaskViewTimeRestriction(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewTimeRestriction $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewTimeRestriction) {
-            throw new InvalidArgumentException(sprintf('The MidocoTaskViewTimeRestriction property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewTimeRestriction, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewTimeRestriction) {
+            throw new InvalidArgumentException(sprintf('The MidocoTaskViewTimeRestriction property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewTimeRestriction, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTaskViewTimeRestriction[] = $item;
         
@@ -268,7 +268,7 @@ class MidocoTaskView extends TaskViewDTO
     }
     /**
      * Get MidocoTaskViewUnit value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUnit[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUnit[]
      */
     public function getMidocoTaskViewUnit(): ?array
     {
@@ -289,12 +289,12 @@ class MidocoTaskView extends TaskViewDTO
         $invalidValues = [];
         foreach ($values as $midocoTaskViewMidocoTaskViewUnitItem) {
             // validation for constraint: itemType
-            if (!$midocoTaskViewMidocoTaskViewUnitItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUnit) {
+            if (!$midocoTaskViewMidocoTaskViewUnitItem instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUnit) {
                 $invalidValues[] = is_object($midocoTaskViewMidocoTaskViewUnitItem) ? get_class($midocoTaskViewMidocoTaskViewUnitItem) : sprintf('%s(%s)', gettype($midocoTaskViewMidocoTaskViewUnitItem), var_export($midocoTaskViewMidocoTaskViewUnitItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTaskViewUnit property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUnit, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTaskViewUnit property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUnit, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -303,8 +303,8 @@ class MidocoTaskView extends TaskViewDTO
     /**
      * Set MidocoTaskViewUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUnit[] $midocoTaskViewUnit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUnit[] $midocoTaskViewUnit
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView
      */
     public function setMidocoTaskViewUnit(?array $midocoTaskViewUnit = null): self
     {
@@ -319,14 +319,14 @@ class MidocoTaskView extends TaskViewDTO
     /**
      * Add item to MidocoTaskViewUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUnit $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUnit $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView
      */
-    public function addToMidocoTaskViewUnit(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUnit $item): self
+    public function addToMidocoTaskViewUnit(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUnit $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUnit) {
-            throw new InvalidArgumentException(sprintf('The MidocoTaskViewUnit property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUnit, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUnit) {
+            throw new InvalidArgumentException(sprintf('The MidocoTaskViewUnit property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUnit, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTaskViewUnit[] = $item;
         

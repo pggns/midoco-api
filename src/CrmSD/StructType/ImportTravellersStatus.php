@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ImportTravellersStatus extends AbstractStructBase
     /**
      * Set countSaved value
      * @param int $countSaved
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportTravellersStatus
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportTravellersStatus
      */
     public function setCountSaved(?int $countSaved = null): self
     {
@@ -70,7 +70,7 @@ class ImportTravellersStatus extends AbstractStructBase
     /**
      * Set countNotSaved value
      * @param int $countNotSaved
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportTravellersStatus
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportTravellersStatus
      */
     public function setCountNotSaved(?int $countNotSaved = null): self
     {

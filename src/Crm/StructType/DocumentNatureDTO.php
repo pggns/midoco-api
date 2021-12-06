@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class DocumentNatureDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DocumentNatureDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\DocumentNatureDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -86,7 +86,7 @@ class DocumentNatureDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DocumentNatureDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\DocumentNatureDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -109,7 +109,7 @@ class DocumentNatureDTO extends AbstractStructBase
     /**
      * Set systemOnly value
      * @param bool $systemOnly
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DocumentNatureDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\DocumentNatureDTO
      */
     public function setSystemOnly(?bool $systemOnly = null): self
     {
@@ -132,7 +132,7 @@ class DocumentNatureDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DocumentNatureDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\DocumentNatureDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

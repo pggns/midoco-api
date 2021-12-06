@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class SaveConsentRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 1
      * - ref: MidocoConsent
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoConsent
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoConsent
      */
-    protected \Pggns\MidocoApi\Api\Order\StructType\MidocoConsent $MidocoConsent;
+    protected \Pggns\MidocoApi\Order\StructType\MidocoConsent $MidocoConsent;
     /**
      * Constructor method for SaveConsentRequest
      * @uses SaveConsentRequest::setMidocoConsent()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoConsent $midocoConsent
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoConsent $midocoConsent
      */
-    public function __construct(\Pggns\MidocoApi\Api\Order\StructType\MidocoConsent $midocoConsent)
+    public function __construct(\Pggns\MidocoApi\Order\StructType\MidocoConsent $midocoConsent)
     {
         $this
             ->setMidocoConsent($midocoConsent);
     }
     /**
      * Get MidocoConsent value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoConsent
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoConsent
      */
-    public function getMidocoConsent(): \Pggns\MidocoApi\Api\Order\StructType\MidocoConsent
+    public function getMidocoConsent(): \Pggns\MidocoApi\Order\StructType\MidocoConsent
     {
         return $this->MidocoConsent;
     }
     /**
      * Set MidocoConsent value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoConsent $midocoConsent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveConsentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoConsent $midocoConsent
+     * @return \Pggns\MidocoApi\Order\StructType\SaveConsentRequest
      */
-    public function setMidocoConsent(\Pggns\MidocoApi\Api\Order\StructType\MidocoConsent $midocoConsent): self
+    public function setMidocoConsent(\Pggns\MidocoApi\Order\StructType\MidocoConsent $midocoConsent): self
     {
         $this->MidocoConsent = $midocoConsent;
         

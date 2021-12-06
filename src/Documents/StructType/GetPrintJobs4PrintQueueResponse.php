@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetPrintJobs4PrintQueueResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTempPrintjobInfo
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoTempPrintjobInfo[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoTempPrintjobInfo[]
      */
     protected ?array $MidocoTempPrintjobInfo = null;
     /**
@@ -37,7 +37,7 @@ class GetPrintJobs4PrintQueueResponse extends AbstractStructBase
      * @uses GetPrintJobs4PrintQueueResponse::setMidocoTempPrintjobInfo()
      * @uses GetPrintJobs4PrintQueueResponse::setLocked()
      * @uses GetPrintJobs4PrintQueueResponse::setLockedUserId()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTempPrintjobInfo[] $midocoTempPrintjobInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTempPrintjobInfo[] $midocoTempPrintjobInfo
      * @param bool $locked
      * @param int $lockedUserId
      */
@@ -50,7 +50,7 @@ class GetPrintJobs4PrintQueueResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTempPrintjobInfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTempPrintjobInfo[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTempPrintjobInfo[]
      */
     public function getMidocoTempPrintjobInfo(): ?array
     {
@@ -71,12 +71,12 @@ class GetPrintJobs4PrintQueueResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPrintJobs4PrintQueueResponseMidocoTempPrintjobInfoItem) {
             // validation for constraint: itemType
-            if (!$getPrintJobs4PrintQueueResponseMidocoTempPrintjobInfoItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoTempPrintjobInfo) {
+            if (!$getPrintJobs4PrintQueueResponseMidocoTempPrintjobInfoItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoTempPrintjobInfo) {
                 $invalidValues[] = is_object($getPrintJobs4PrintQueueResponseMidocoTempPrintjobInfoItem) ? get_class($getPrintJobs4PrintQueueResponseMidocoTempPrintjobInfoItem) : sprintf('%s(%s)', gettype($getPrintJobs4PrintQueueResponseMidocoTempPrintjobInfoItem), var_export($getPrintJobs4PrintQueueResponseMidocoTempPrintjobInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTempPrintjobInfo property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoTempPrintjobInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTempPrintjobInfo property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoTempPrintjobInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class GetPrintJobs4PrintQueueResponse extends AbstractStructBase
     /**
      * Set MidocoTempPrintjobInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTempPrintjobInfo[] $midocoTempPrintjobInfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetPrintJobs4PrintQueueResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTempPrintjobInfo[] $midocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\GetPrintJobs4PrintQueueResponse
      */
     public function setMidocoTempPrintjobInfo(?array $midocoTempPrintjobInfo = null): self
     {
@@ -101,14 +101,14 @@ class GetPrintJobs4PrintQueueResponse extends AbstractStructBase
     /**
      * Add item to MidocoTempPrintjobInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTempPrintjobInfo $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetPrintJobs4PrintQueueResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTempPrintjobInfo $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetPrintJobs4PrintQueueResponse
      */
-    public function addToMidocoTempPrintjobInfo(\Pggns\MidocoApi\Api\Documents\StructType\MidocoTempPrintjobInfo $item): self
+    public function addToMidocoTempPrintjobInfo(\Pggns\MidocoApi\Documents\StructType\MidocoTempPrintjobInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoTempPrintjobInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoTempPrintjobInfo property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoTempPrintjobInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoTempPrintjobInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoTempPrintjobInfo property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoTempPrintjobInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTempPrintjobInfo[] = $item;
         
@@ -125,7 +125,7 @@ class GetPrintJobs4PrintQueueResponse extends AbstractStructBase
     /**
      * Set locked value
      * @param bool $locked
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetPrintJobs4PrintQueueResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\GetPrintJobs4PrintQueueResponse
      */
     public function setLocked(?bool $locked = null): self
     {
@@ -148,7 +148,7 @@ class GetPrintJobs4PrintQueueResponse extends AbstractStructBase
     /**
      * Set lockedUserId value
      * @param int $lockedUserId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetPrintJobs4PrintQueueResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\GetPrintJobs4PrintQueueResponse
      */
     public function setLockedUserId(?int $lockedUserId = null): self
     {

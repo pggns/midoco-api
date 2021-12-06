@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,13 +20,13 @@ class GetCrmPersonTravellerMaritalStatusDescriptionsResponse extends AbstractStr
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmPersonTravellerMaritalStatusDescription
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmTravellerMaStatusDescrDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmTravellerMaStatusDescrDTO[]
      */
     protected ?array $MidocoCrmPersonTravellerMaritalStatusDescription = null;
     /**
      * Constructor method for GetCrmPersonTravellerMaritalStatusDescriptionsResponse
      * @uses GetCrmPersonTravellerMaritalStatusDescriptionsResponse::setMidocoCrmPersonTravellerMaritalStatusDescription()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTravellerMaStatusDescrDTO[] $midocoCrmPersonTravellerMaritalStatusDescription
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTravellerMaStatusDescrDTO[] $midocoCrmPersonTravellerMaritalStatusDescription
      */
     public function __construct(?array $midocoCrmPersonTravellerMaritalStatusDescription = null)
     {
@@ -35,7 +35,7 @@ class GetCrmPersonTravellerMaritalStatusDescriptionsResponse extends AbstractStr
     }
     /**
      * Get MidocoCrmPersonTravellerMaritalStatusDescription value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmTravellerMaStatusDescrDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmTravellerMaStatusDescrDTO[]
      */
     public function getMidocoCrmPersonTravellerMaritalStatusDescription(): ?array
     {
@@ -56,12 +56,12 @@ class GetCrmPersonTravellerMaritalStatusDescriptionsResponse extends AbstractStr
         $invalidValues = [];
         foreach ($values as $getCrmPersonTravellerMaritalStatusDescriptionsResponseMidocoCrmPersonTravellerMaritalStatusDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getCrmPersonTravellerMaritalStatusDescriptionsResponseMidocoCrmPersonTravellerMaritalStatusDescriptionItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmTravellerMaStatusDescrDTO) {
+            if (!$getCrmPersonTravellerMaritalStatusDescriptionsResponseMidocoCrmPersonTravellerMaritalStatusDescriptionItem instanceof \Pggns\MidocoApi\Crm\StructType\CrmTravellerMaStatusDescrDTO) {
                 $invalidValues[] = is_object($getCrmPersonTravellerMaritalStatusDescriptionsResponseMidocoCrmPersonTravellerMaritalStatusDescriptionItem) ? get_class($getCrmPersonTravellerMaritalStatusDescriptionsResponseMidocoCrmPersonTravellerMaritalStatusDescriptionItem) : sprintf('%s(%s)', gettype($getCrmPersonTravellerMaritalStatusDescriptionsResponseMidocoCrmPersonTravellerMaritalStatusDescriptionItem), var_export($getCrmPersonTravellerMaritalStatusDescriptionsResponseMidocoCrmPersonTravellerMaritalStatusDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmPersonTravellerMaritalStatusDescription property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmTravellerMaStatusDescrDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmPersonTravellerMaritalStatusDescription property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmTravellerMaStatusDescrDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -70,8 +70,8 @@ class GetCrmPersonTravellerMaritalStatusDescriptionsResponse extends AbstractStr
     /**
      * Set MidocoCrmPersonTravellerMaritalStatusDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTravellerMaStatusDescrDTO[] $midocoCrmPersonTravellerMaritalStatusDescription
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCrmPersonTravellerMaritalStatusDescriptionsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTravellerMaStatusDescrDTO[] $midocoCrmPersonTravellerMaritalStatusDescription
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCrmPersonTravellerMaritalStatusDescriptionsResponse
      */
     public function setMidocoCrmPersonTravellerMaritalStatusDescription(?array $midocoCrmPersonTravellerMaritalStatusDescription = null): self
     {
@@ -86,14 +86,14 @@ class GetCrmPersonTravellerMaritalStatusDescriptionsResponse extends AbstractStr
     /**
      * Add item to MidocoCrmPersonTravellerMaritalStatusDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTravellerMaStatusDescrDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCrmPersonTravellerMaritalStatusDescriptionsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTravellerMaStatusDescrDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCrmPersonTravellerMaritalStatusDescriptionsResponse
      */
-    public function addToMidocoCrmPersonTravellerMaritalStatusDescription(\Pggns\MidocoApi\Api\Crm\StructType\CrmTravellerMaStatusDescrDTO $item): self
+    public function addToMidocoCrmPersonTravellerMaritalStatusDescription(\Pggns\MidocoApi\Crm\StructType\CrmTravellerMaStatusDescrDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmTravellerMaStatusDescrDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmPersonTravellerMaritalStatusDescription property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmTravellerMaStatusDescrDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CrmTravellerMaStatusDescrDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmPersonTravellerMaritalStatusDescription property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmTravellerMaStatusDescrDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmPersonTravellerMaritalStatusDescription[] = $item;
         

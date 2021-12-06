@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,13 +20,13 @@ class SaveEInvoiceGatewayResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoEInvoiceGateway
-     * @var \Pggns\MidocoApi\Api\Order\StructType\EinvoiceGatewayDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\EinvoiceGatewayDTO[]
      */
     protected ?array $MidocoEInvoiceGateway = null;
     /**
      * Constructor method for SaveEInvoiceGatewayResponse
      * @uses SaveEInvoiceGatewayResponse::setMidocoEInvoiceGateway()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\EinvoiceGatewayDTO[] $midocoEInvoiceGateway
+     * @param \Pggns\MidocoApi\Order\StructType\EinvoiceGatewayDTO[] $midocoEInvoiceGateway
      */
     public function __construct(?array $midocoEInvoiceGateway = null)
     {
@@ -35,7 +35,7 @@ class SaveEInvoiceGatewayResponse extends AbstractStructBase
     }
     /**
      * Get MidocoEInvoiceGateway value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EinvoiceGatewayDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\EinvoiceGatewayDTO[]
      */
     public function getMidocoEInvoiceGateway(): ?array
     {
@@ -56,12 +56,12 @@ class SaveEInvoiceGatewayResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveEInvoiceGatewayResponseMidocoEInvoiceGatewayItem) {
             // validation for constraint: itemType
-            if (!$saveEInvoiceGatewayResponseMidocoEInvoiceGatewayItem instanceof \Pggns\MidocoApi\Api\Order\StructType\EinvoiceGatewayDTO) {
+            if (!$saveEInvoiceGatewayResponseMidocoEInvoiceGatewayItem instanceof \Pggns\MidocoApi\Order\StructType\EinvoiceGatewayDTO) {
                 $invalidValues[] = is_object($saveEInvoiceGatewayResponseMidocoEInvoiceGatewayItem) ? get_class($saveEInvoiceGatewayResponseMidocoEInvoiceGatewayItem) : sprintf('%s(%s)', gettype($saveEInvoiceGatewayResponseMidocoEInvoiceGatewayItem), var_export($saveEInvoiceGatewayResponseMidocoEInvoiceGatewayItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoEInvoiceGateway property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\EinvoiceGatewayDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoEInvoiceGateway property can only contain items of type \Pggns\MidocoApi\Order\StructType\EinvoiceGatewayDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -70,8 +70,8 @@ class SaveEInvoiceGatewayResponse extends AbstractStructBase
     /**
      * Set MidocoEInvoiceGateway value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\EinvoiceGatewayDTO[] $midocoEInvoiceGateway
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEInvoiceGatewayResponse
+     * @param \Pggns\MidocoApi\Order\StructType\EinvoiceGatewayDTO[] $midocoEInvoiceGateway
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEInvoiceGatewayResponse
      */
     public function setMidocoEInvoiceGateway(?array $midocoEInvoiceGateway = null): self
     {
@@ -86,14 +86,14 @@ class SaveEInvoiceGatewayResponse extends AbstractStructBase
     /**
      * Add item to MidocoEInvoiceGateway value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\EinvoiceGatewayDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveEInvoiceGatewayResponse
+     * @param \Pggns\MidocoApi\Order\StructType\EinvoiceGatewayDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\SaveEInvoiceGatewayResponse
      */
-    public function addToMidocoEInvoiceGateway(\Pggns\MidocoApi\Api\Order\StructType\EinvoiceGatewayDTO $item): self
+    public function addToMidocoEInvoiceGateway(\Pggns\MidocoApi\Order\StructType\EinvoiceGatewayDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\EinvoiceGatewayDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoEInvoiceGateway property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\EinvoiceGatewayDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\EinvoiceGatewayDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoEInvoiceGateway property can only contain items of type \Pggns\MidocoApi\Order\StructType\EinvoiceGatewayDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoEInvoiceGateway[] = $item;
         

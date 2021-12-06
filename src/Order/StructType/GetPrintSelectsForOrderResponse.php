@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetPrintSelectsForOrderResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:MidocoPrintSelect
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelect[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPrintSelect[]
      */
     protected ?array $MidocoPrintSelect = null;
     /**
@@ -28,7 +28,7 @@ class GetPrintSelectsForOrderResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPrintSelectionGroupForOrder
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelectionGroupForOrder[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPrintSelectionGroupForOrder[]
      */
     protected ?array $MidocoPrintSelectionGroupForOrder = null;
     /**
@@ -36,19 +36,19 @@ class GetPrintSelectsForOrderResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: OrderPrintRestriction
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction|null
+     * @var \Pggns\MidocoApi\Order\StructType\OrderPrintRestriction|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction $OrderPrintRestriction = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\OrderPrintRestriction $OrderPrintRestriction = null;
     /**
      * Constructor method for GetPrintSelectsForOrderResponse
      * @uses GetPrintSelectsForOrderResponse::setMidocoPrintSelect()
      * @uses GetPrintSelectsForOrderResponse::setMidocoPrintSelectionGroupForOrder()
      * @uses GetPrintSelectsForOrderResponse::setOrderPrintRestriction()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelect[] $midocoPrintSelect
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelectionGroupForOrder[] $midocoPrintSelectionGroupForOrder
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction $orderPrintRestriction
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPrintSelect[] $midocoPrintSelect
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPrintSelectionGroupForOrder[] $midocoPrintSelectionGroupForOrder
+     * @param \Pggns\MidocoApi\Order\StructType\OrderPrintRestriction $orderPrintRestriction
      */
-    public function __construct(?array $midocoPrintSelect = null, ?array $midocoPrintSelectionGroupForOrder = null, ?\Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction $orderPrintRestriction = null)
+    public function __construct(?array $midocoPrintSelect = null, ?array $midocoPrintSelectionGroupForOrder = null, ?\Pggns\MidocoApi\Order\StructType\OrderPrintRestriction $orderPrintRestriction = null)
     {
         $this
             ->setMidocoPrintSelect($midocoPrintSelect)
@@ -57,7 +57,7 @@ class GetPrintSelectsForOrderResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPrintSelect value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelect[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPrintSelect[]
      */
     public function getMidocoPrintSelect(): ?array
     {
@@ -78,12 +78,12 @@ class GetPrintSelectsForOrderResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPrintSelectsForOrderResponseMidocoPrintSelectItem) {
             // validation for constraint: itemType
-            if (!$getPrintSelectsForOrderResponseMidocoPrintSelectItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelect) {
+            if (!$getPrintSelectsForOrderResponseMidocoPrintSelectItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoPrintSelect) {
                 $invalidValues[] = is_object($getPrintSelectsForOrderResponseMidocoPrintSelectItem) ? get_class($getPrintSelectsForOrderResponseMidocoPrintSelectItem) : sprintf('%s(%s)', gettype($getPrintSelectsForOrderResponseMidocoPrintSelectItem), var_export($getPrintSelectsForOrderResponseMidocoPrintSelectItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelect, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPrintSelect, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -92,8 +92,8 @@ class GetPrintSelectsForOrderResponse extends AbstractStructBase
     /**
      * Set MidocoPrintSelect value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelect[] $midocoPrintSelect
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintSelectsForOrderResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPrintSelect[] $midocoPrintSelect
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintSelectsForOrderResponse
      */
     public function setMidocoPrintSelect(?array $midocoPrintSelect = null): self
     {
@@ -108,14 +108,14 @@ class GetPrintSelectsForOrderResponse extends AbstractStructBase
     /**
      * Add item to MidocoPrintSelect value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelect $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintSelectsForOrderResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPrintSelect $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintSelectsForOrderResponse
      */
-    public function addToMidocoPrintSelect(\Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelect $item): self
+    public function addToMidocoPrintSelect(\Pggns\MidocoApi\Order\StructType\MidocoPrintSelect $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelect) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelect, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoPrintSelect) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPrintSelect, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintSelect[] = $item;
         
@@ -123,7 +123,7 @@ class GetPrintSelectsForOrderResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPrintSelectionGroupForOrder value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelectionGroupForOrder[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPrintSelectionGroupForOrder[]
      */
     public function getMidocoPrintSelectionGroupForOrder(): ?array
     {
@@ -144,12 +144,12 @@ class GetPrintSelectsForOrderResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPrintSelectsForOrderResponseMidocoPrintSelectionGroupForOrderItem) {
             // validation for constraint: itemType
-            if (!$getPrintSelectsForOrderResponseMidocoPrintSelectionGroupForOrderItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelectionGroupForOrder) {
+            if (!$getPrintSelectsForOrderResponseMidocoPrintSelectionGroupForOrderItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoPrintSelectionGroupForOrder) {
                 $invalidValues[] = is_object($getPrintSelectsForOrderResponseMidocoPrintSelectionGroupForOrderItem) ? get_class($getPrintSelectsForOrderResponseMidocoPrintSelectionGroupForOrderItem) : sprintf('%s(%s)', gettype($getPrintSelectsForOrderResponseMidocoPrintSelectionGroupForOrderItem), var_export($getPrintSelectsForOrderResponseMidocoPrintSelectionGroupForOrderItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintSelectionGroupForOrder property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelectionGroupForOrder, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintSelectionGroupForOrder property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPrintSelectionGroupForOrder, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -158,8 +158,8 @@ class GetPrintSelectsForOrderResponse extends AbstractStructBase
     /**
      * Set MidocoPrintSelectionGroupForOrder value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelectionGroupForOrder[] $midocoPrintSelectionGroupForOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintSelectsForOrderResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPrintSelectionGroupForOrder[] $midocoPrintSelectionGroupForOrder
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintSelectsForOrderResponse
      */
     public function setMidocoPrintSelectionGroupForOrder(?array $midocoPrintSelectionGroupForOrder = null): self
     {
@@ -174,14 +174,14 @@ class GetPrintSelectsForOrderResponse extends AbstractStructBase
     /**
      * Add item to MidocoPrintSelectionGroupForOrder value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelectionGroupForOrder $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintSelectsForOrderResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPrintSelectionGroupForOrder $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintSelectsForOrderResponse
      */
-    public function addToMidocoPrintSelectionGroupForOrder(\Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelectionGroupForOrder $item): self
+    public function addToMidocoPrintSelectionGroupForOrder(\Pggns\MidocoApi\Order\StructType\MidocoPrintSelectionGroupForOrder $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelectionGroupForOrder) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintSelectionGroupForOrder property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelectionGroupForOrder, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoPrintSelectionGroupForOrder) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintSelectionGroupForOrder property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPrintSelectionGroupForOrder, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintSelectionGroupForOrder[] = $item;
         
@@ -189,18 +189,18 @@ class GetPrintSelectsForOrderResponse extends AbstractStructBase
     }
     /**
      * Get OrderPrintRestriction value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction|null
+     * @return \Pggns\MidocoApi\Order\StructType\OrderPrintRestriction|null
      */
-    public function getOrderPrintRestriction(): ?\Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction
+    public function getOrderPrintRestriction(): ?\Pggns\MidocoApi\Order\StructType\OrderPrintRestriction
     {
         return $this->OrderPrintRestriction;
     }
     /**
      * Set OrderPrintRestriction value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction $orderPrintRestriction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintSelectsForOrderResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderPrintRestriction $orderPrintRestriction
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintSelectsForOrderResponse
      */
-    public function setOrderPrintRestriction(?\Pggns\MidocoApi\Api\Order\StructType\OrderPrintRestriction $orderPrintRestriction = null): self
+    public function setOrderPrintRestriction(?\Pggns\MidocoApi\Order\StructType\OrderPrintRestriction $orderPrintRestriction = null): self
     {
         $this->OrderPrintRestriction = $orderPrintRestriction;
         

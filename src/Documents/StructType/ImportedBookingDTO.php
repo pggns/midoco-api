@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class ImportedBookingDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ImportedBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ImportedBookingDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -86,7 +86,7 @@ class ImportedBookingDTO extends AbstractStructBase
     /**
      * Set importTime value
      * @param string $importTime
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ImportedBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ImportedBookingDTO
      */
     public function setImportTime(?string $importTime = null): self
     {
@@ -109,7 +109,7 @@ class ImportedBookingDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ImportedBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ImportedBookingDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -132,7 +132,7 @@ class ImportedBookingDTO extends AbstractStructBase
     /**
      * Set updateTime value
      * @param string $updateTime
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ImportedBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ImportedBookingDTO
      */
     public function setUpdateTime(?string $updateTime = null): self
     {

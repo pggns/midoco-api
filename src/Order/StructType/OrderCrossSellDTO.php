@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class OrderCrossSellDTO extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -94,7 +94,7 @@ class OrderCrossSellDTO extends AbstractStructBase
     /**
      * Set attributeValue value
      * @param string $attributeValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO
      */
     public function setAttributeValue(?string $attributeValue = null): self
     {
@@ -117,7 +117,7 @@ class OrderCrossSellDTO extends AbstractStructBase
     /**
      * Set crossSellType value
      * @param string $crossSellType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO
      */
     public function setCrossSellType(?string $crossSellType = null): self
     {
@@ -140,7 +140,7 @@ class OrderCrossSellDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO
      */
     public function setId(?int $id = null): self
     {
@@ -163,7 +163,7 @@ class OrderCrossSellDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO
      */
     public function setOrderId(?int $orderId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class AccountChangeLogDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountChangeLogDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -94,7 +94,7 @@ class AccountChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -117,7 +117,7 @@ class AccountChangeLogDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountChangeLogDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -140,7 +140,7 @@ class AccountChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -163,7 +163,7 @@ class AccountChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

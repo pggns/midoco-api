@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class JobFunctionDTO extends AbstractStructBase
     /**
      * Set jobFunction value
      * @param string $jobFunction
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JobFunctionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JobFunctionDTO
      */
     public function setJobFunction(?string $jobFunction = null): self
     {

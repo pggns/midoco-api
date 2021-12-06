@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetDunningTemplatesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDunningTemplate
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDunningTemplate[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoDunningTemplate[]
      */
     protected ?array $MidocoDunningTemplate = null;
     /**
      * Constructor method for GetDunningTemplatesResponse
      * @uses GetDunningTemplatesResponse::setMidocoDunningTemplate()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDunningTemplate[] $midocoDunningTemplate
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDunningTemplate[] $midocoDunningTemplate
      */
     public function __construct(?array $midocoDunningTemplate = null)
     {
@@ -34,7 +34,7 @@ class GetDunningTemplatesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDunningTemplate value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDunningTemplate[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDunningTemplate[]
      */
     public function getMidocoDunningTemplate(): ?array
     {
@@ -55,12 +55,12 @@ class GetDunningTemplatesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDunningTemplatesResponseMidocoDunningTemplateItem) {
             // validation for constraint: itemType
-            if (!$getDunningTemplatesResponseMidocoDunningTemplateItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDunningTemplate) {
+            if (!$getDunningTemplatesResponseMidocoDunningTemplateItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDunningTemplate) {
                 $invalidValues[] = is_object($getDunningTemplatesResponseMidocoDunningTemplateItem) ? get_class($getDunningTemplatesResponseMidocoDunningTemplateItem) : sprintf('%s(%s)', gettype($getDunningTemplatesResponseMidocoDunningTemplateItem), var_export($getDunningTemplatesResponseMidocoDunningTemplateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDunningTemplate property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDunningTemplate, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDunningTemplate property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDunningTemplate, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetDunningTemplatesResponse extends AbstractStructBase
     /**
      * Set MidocoDunningTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDunningTemplate[] $midocoDunningTemplate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetDunningTemplatesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDunningTemplate[] $midocoDunningTemplate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetDunningTemplatesResponse
      */
     public function setMidocoDunningTemplate(?array $midocoDunningTemplate = null): self
     {
@@ -85,14 +85,14 @@ class GetDunningTemplatesResponse extends AbstractStructBase
     /**
      * Add item to MidocoDunningTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDunningTemplate $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetDunningTemplatesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDunningTemplate $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetDunningTemplatesResponse
      */
-    public function addToMidocoDunningTemplate(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDunningTemplate $item): self
+    public function addToMidocoDunningTemplate(\Pggns\MidocoApi\Orderlists\StructType\MidocoDunningTemplate $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDunningTemplate) {
-            throw new InvalidArgumentException(sprintf('The MidocoDunningTemplate property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDunningTemplate, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDunningTemplate) {
+            throw new InvalidArgumentException(sprintf('The MidocoDunningTemplate property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDunningTemplate, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDunningTemplate[] = $item;
         

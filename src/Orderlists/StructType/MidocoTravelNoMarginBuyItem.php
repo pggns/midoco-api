@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNoMarginBuyItem
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNoMarginBuyItem
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -134,7 +134,7 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNoMarginBuyItem
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNoMarginBuyItem
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -157,7 +157,7 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNoMarginBuyItem
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNoMarginBuyItem
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -180,7 +180,7 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNoMarginBuyItem
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNoMarginBuyItem
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -203,7 +203,7 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNoMarginBuyItem
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNoMarginBuyItem
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -226,7 +226,7 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNoMarginBuyItem
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNoMarginBuyItem
      */
     public function setStatus(?string $status = null): self
     {
@@ -249,7 +249,7 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
     /**
      * Set itemPrice value
      * @param float $itemPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNoMarginBuyItem
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNoMarginBuyItem
      */
     public function setItemPrice(?float $itemPrice = null): self
     {
@@ -272,7 +272,7 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
     /**
      * Set openSupplierInvoiceAmount value
      * @param float $openSupplierInvoiceAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNoMarginBuyItem
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNoMarginBuyItem
      */
     public function setOpenSupplierInvoiceAmount(?float $openSupplierInvoiceAmount = null): self
     {
@@ -295,7 +295,7 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
     /**
      * Set revenueAmount value
      * @param float $revenueAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNoMarginBuyItem
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNoMarginBuyItem
      */
     public function setRevenueAmount(?float $revenueAmount = null): self
     {
@@ -318,7 +318,7 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNoMarginBuyItem
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNoMarginBuyItem
      */
     public function setSettlementType(?string $settlementType = null): self
     {

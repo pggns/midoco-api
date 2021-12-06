@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -89,7 +89,7 @@ class ConsentType extends AbstractStructBase
     /**
      * Set consentId value
      * @param string $consentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConsentType
+     * @return \Pggns\MidocoApi\Order\StructType\ConsentType
      */
     public function setConsentId(?string $consentId = null): self
     {
@@ -112,7 +112,7 @@ class ConsentType extends AbstractStructBase
     /**
      * Set groupId value
      * @param string $groupId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConsentType
+     * @return \Pggns\MidocoApi\Order\StructType\ConsentType
      */
     public function setGroupId(?string $groupId = null): self
     {
@@ -135,7 +135,7 @@ class ConsentType extends AbstractStructBase
     /**
      * Set groupContactPermitted value
      * @param bool $groupContactPermitted
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConsentType
+     * @return \Pggns\MidocoApi\Order\StructType\ConsentType
      */
     public function setGroupContactPermitted(?bool $groupContactPermitted = null): self
     {
@@ -158,7 +158,7 @@ class ConsentType extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConsentType
+     * @return \Pggns\MidocoApi\Order\StructType\ConsentType
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -181,7 +181,7 @@ class ConsentType extends AbstractStructBase
     /**
      * Set mailingProhibted value
      * @param bool $mailingProhibted
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConsentType
+     * @return \Pggns\MidocoApi\Order\StructType\ConsentType
      */
     public function setMailingProhibted(?bool $mailingProhibted = null): self
     {
@@ -204,7 +204,7 @@ class ConsentType extends AbstractStructBase
     /**
      * Set mailingStatus value
      * @param string $mailingStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConsentType
+     * @return \Pggns\MidocoApi\Order\StructType\ConsentType
      */
     public function setMailingStatus(?string $mailingStatus = null): self
     {
@@ -227,7 +227,7 @@ class ConsentType extends AbstractStructBase
     /**
      * Set updateCrmCustomer value
      * @param bool $updateCrmCustomer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConsentType
+     * @return \Pggns\MidocoApi\Order\StructType\ConsentType
      */
     public function setUpdateCrmCustomer(?bool $updateCrmCustomer = true): self
     {

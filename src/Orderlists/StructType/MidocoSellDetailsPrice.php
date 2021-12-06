@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoSellDetailsPrice extends SellDetailsPriceDTO
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellDetailsPrice
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellDetailsPrice
      */
     public function setCurrency(?string $currency = null): self
     {

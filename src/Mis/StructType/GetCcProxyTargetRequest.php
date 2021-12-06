@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -97,7 +97,7 @@ class GetCcProxyTargetRequest extends AbstractStructBase
     /**
      * Set targetId value
      * @param string $targetId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCcProxyTargetRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCcProxyTargetRequest
      */
     public function setTargetId(?string $targetId = null): self
     {
@@ -120,7 +120,7 @@ class GetCcProxyTargetRequest extends AbstractStructBase
     /**
      * Set processingUser value
      * @param int $processingUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCcProxyTargetRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCcProxyTargetRequest
      */
     public function setProcessingUser(?int $processingUser = null): self
     {
@@ -143,7 +143,7 @@ class GetCcProxyTargetRequest extends AbstractStructBase
     /**
      * Set targetUrl value
      * @param string $targetUrl
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCcProxyTargetRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCcProxyTargetRequest
      */
     public function setTargetUrl(?string $targetUrl = null): self
     {
@@ -166,7 +166,7 @@ class GetCcProxyTargetRequest extends AbstractStructBase
     /**
      * Set direction value
      * @param string $direction
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCcProxyTargetRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCcProxyTargetRequest
      */
     public function setDirection(?string $direction = null): self
     {
@@ -189,7 +189,7 @@ class GetCcProxyTargetRequest extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCcProxyTargetRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCcProxyTargetRequest
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -212,7 +212,7 @@ class GetCcProxyTargetRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCcProxyTargetRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCcProxyTargetRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

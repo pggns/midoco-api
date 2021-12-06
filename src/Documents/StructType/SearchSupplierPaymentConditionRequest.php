@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,24 +17,24 @@ class SearchSupplierPaymentConditionRequest extends AbstractStructBase
      * The MidocoSupplierPaymentCondition
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierPaymentCondition
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierPaymentCondition|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSupplierPaymentCondition|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierPaymentCondition $MidocoSupplierPaymentCondition = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierPaymentCondition $MidocoSupplierPaymentCondition = null;
     /**
      * The MidocoSupplier
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplier
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $MidocoSupplier = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $MidocoSupplier = null;
     /**
      * Constructor method for SearchSupplierPaymentConditionRequest
      * @uses SearchSupplierPaymentConditionRequest::setMidocoSupplierPaymentCondition()
      * @uses SearchSupplierPaymentConditionRequest::setMidocoSupplier()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierPaymentCondition $midocoSupplierPaymentCondition
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $midocoSupplier
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierPaymentCondition $midocoSupplierPaymentCondition
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $midocoSupplier
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierPaymentCondition $midocoSupplierPaymentCondition = null, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $midocoSupplier = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierPaymentCondition $midocoSupplierPaymentCondition = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $midocoSupplier = null)
     {
         $this
             ->setMidocoSupplierPaymentCondition($midocoSupplierPaymentCondition)
@@ -42,18 +42,18 @@ class SearchSupplierPaymentConditionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierPaymentCondition value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierPaymentCondition|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierPaymentCondition|null
      */
-    public function getMidocoSupplierPaymentCondition(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierPaymentCondition
+    public function getMidocoSupplierPaymentCondition(): ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierPaymentCondition
     {
         return $this->MidocoSupplierPaymentCondition;
     }
     /**
      * Set MidocoSupplierPaymentCondition value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierPaymentCondition $midocoSupplierPaymentCondition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchSupplierPaymentConditionRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierPaymentCondition $midocoSupplierPaymentCondition
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchSupplierPaymentConditionRequest
      */
-    public function setMidocoSupplierPaymentCondition(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierPaymentCondition $midocoSupplierPaymentCondition = null): self
+    public function setMidocoSupplierPaymentCondition(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierPaymentCondition $midocoSupplierPaymentCondition = null): self
     {
         $this->MidocoSupplierPaymentCondition = $midocoSupplierPaymentCondition;
         
@@ -61,18 +61,18 @@ class SearchSupplierPaymentConditionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplier value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType|null
      */
-    public function getMidocoSupplier(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType
+    public function getMidocoSupplier(): ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierType
     {
         return $this->MidocoSupplier;
     }
     /**
      * Set MidocoSupplier value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $midocoSupplier
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchSupplierPaymentConditionRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $midocoSupplier
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchSupplierPaymentConditionRequest
      */
-    public function setMidocoSupplier(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $midocoSupplier = null): self
+    public function setMidocoSupplier(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $midocoSupplier = null): self
     {
         $this->MidocoSupplier = $midocoSupplier;
         

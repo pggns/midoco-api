@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class SellItemImportHistoryDTO extends AbstractStructBase
     /**
      * Set hotelCode value
      * @param string $hotelCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemImportHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemImportHistoryDTO
      */
     public function setHotelCode(?string $hotelCode = null): self
     {
@@ -142,7 +142,7 @@ class SellItemImportHistoryDTO extends AbstractStructBase
     /**
      * Set importMessageType value
      * @param string $importMessageType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemImportHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemImportHistoryDTO
      */
     public function setImportMessageType(?string $importMessageType = null): self
     {
@@ -165,7 +165,7 @@ class SellItemImportHistoryDTO extends AbstractStructBase
     /**
      * Set importSystem value
      * @param string $importSystem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemImportHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemImportHistoryDTO
      */
     public function setImportSystem(?string $importSystem = null): self
     {
@@ -188,7 +188,7 @@ class SellItemImportHistoryDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemImportHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemImportHistoryDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -211,7 +211,7 @@ class SellItemImportHistoryDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemImportHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemImportHistoryDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -234,7 +234,7 @@ class SellItemImportHistoryDTO extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemImportHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemImportHistoryDTO
      */
     public function setPrice(?float $price = null): self
     {
@@ -257,7 +257,7 @@ class SellItemImportHistoryDTO extends AbstractStructBase
     /**
      * Set sihId value
      * @param int $sihId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemImportHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemImportHistoryDTO
      */
     public function setSihId(?int $sihId = null): self
     {
@@ -280,7 +280,7 @@ class SellItemImportHistoryDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemImportHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemImportHistoryDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -303,7 +303,7 @@ class SellItemImportHistoryDTO extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemImportHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemImportHistoryDTO
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -326,7 +326,7 @@ class SellItemImportHistoryDTO extends AbstractStructBase
     /**
      * Set travelDestination value
      * @param string $travelDestination
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemImportHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemImportHistoryDTO
      */
     public function setTravelDestination(?string $travelDestination = null): self
     {
@@ -349,7 +349,7 @@ class SellItemImportHistoryDTO extends AbstractStructBase
     /**
      * Set travellerCount value
      * @param int $travellerCount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemImportHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemImportHistoryDTO
      */
     public function setTravellerCount(?int $travellerCount = null): self
     {

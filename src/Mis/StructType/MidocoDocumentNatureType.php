@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoDocumentNatureType extends DocumentNatureDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoDocumentNatureType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoDocumentNatureType
      */
     public function setInherited(?bool $inherited = null): self
     {

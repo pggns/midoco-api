@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoSupplierCcCard extends SupplierCcCardDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {
@@ -70,7 +70,7 @@ class MidocoSupplierCcCard extends SupplierCcCardDTO
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard
      */
     public function setOrgunit(?string $orgunit = null): self
     {

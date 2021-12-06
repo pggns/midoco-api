@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmMidocoSettlLevel
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO[]
      */
     protected ?array $MidocoCrmMidocoSettlLevel = null;
     /**
@@ -28,7 +28,7 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmMidocoSettlFee
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlFeeDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlFeeDTO[]
      */
     protected ?array $MidocoCrmMidocoSettlFee = null;
     /**
@@ -37,7 +37,7 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAssignedMidocoSettlOUnit
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoSettlOUnitDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\AssignedMidocoSettlOUnitDTO[]
      */
     protected ?array $MidocoAssignedMidocoSettlOUnit = null;
     /**
@@ -45,9 +45,9 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
      * @uses MidocoCrmMidocoSettlement::setMidocoCrmMidocoSettlLevel()
      * @uses MidocoCrmMidocoSettlement::setMidocoCrmMidocoSettlFee()
      * @uses MidocoCrmMidocoSettlement::setMidocoAssignedMidocoSettlOUnit()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO[] $midocoCrmMidocoSettlLevel
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlFeeDTO[] $midocoCrmMidocoSettlFee
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoSettlOUnitDTO[] $midocoAssignedMidocoSettlOUnit
+     * @param \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO[] $midocoCrmMidocoSettlLevel
+     * @param \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlFeeDTO[] $midocoCrmMidocoSettlFee
+     * @param \Pggns\MidocoApi\Order\StructType\AssignedMidocoSettlOUnitDTO[] $midocoAssignedMidocoSettlOUnit
      */
     public function __construct(?array $midocoCrmMidocoSettlLevel = null, ?array $midocoCrmMidocoSettlFee = null, ?array $midocoAssignedMidocoSettlOUnit = null)
     {
@@ -58,7 +58,7 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
     }
     /**
      * Get MidocoCrmMidocoSettlLevel value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO[]
      */
     public function getMidocoCrmMidocoSettlLevel(): ?array
     {
@@ -79,12 +79,12 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
         $invalidValues = [];
         foreach ($values as $midocoCrmMidocoSettlementMidocoCrmMidocoSettlLevelItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmMidocoSettlementMidocoCrmMidocoSettlLevelItem instanceof \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO) {
+            if (!$midocoCrmMidocoSettlementMidocoCrmMidocoSettlLevelItem instanceof \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO) {
                 $invalidValues[] = is_object($midocoCrmMidocoSettlementMidocoCrmMidocoSettlLevelItem) ? get_class($midocoCrmMidocoSettlementMidocoCrmMidocoSettlLevelItem) : sprintf('%s(%s)', gettype($midocoCrmMidocoSettlementMidocoCrmMidocoSettlLevelItem), var_export($midocoCrmMidocoSettlementMidocoCrmMidocoSettlLevelItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmMidocoSettlLevel property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmMidocoSettlLevel property can only contain items of type \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -93,8 +93,8 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
     /**
      * Set MidocoCrmMidocoSettlLevel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO[] $midocoCrmMidocoSettlLevel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCrmMidocoSettlement
+     * @param \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO[] $midocoCrmMidocoSettlLevel
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCrmMidocoSettlement
      */
     public function setMidocoCrmMidocoSettlLevel(?array $midocoCrmMidocoSettlLevel = null): self
     {
@@ -109,14 +109,14 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
     /**
      * Add item to MidocoCrmMidocoSettlLevel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCrmMidocoSettlement
+     * @param \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCrmMidocoSettlement
      */
-    public function addToMidocoCrmMidocoSettlLevel(\Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO $item): self
+    public function addToMidocoCrmMidocoSettlLevel(\Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlLevel property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlLevel property can only contain items of type \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmMidocoSettlLevel[] = $item;
         
@@ -124,7 +124,7 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
     }
     /**
      * Get MidocoCrmMidocoSettlFee value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlFeeDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlFeeDTO[]
      */
     public function getMidocoCrmMidocoSettlFee(): ?array
     {
@@ -145,12 +145,12 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
         $invalidValues = [];
         foreach ($values as $midocoCrmMidocoSettlementMidocoCrmMidocoSettlFeeItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmMidocoSettlementMidocoCrmMidocoSettlFeeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlFeeDTO) {
+            if (!$midocoCrmMidocoSettlementMidocoCrmMidocoSettlFeeItem instanceof \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlFeeDTO) {
                 $invalidValues[] = is_object($midocoCrmMidocoSettlementMidocoCrmMidocoSettlFeeItem) ? get_class($midocoCrmMidocoSettlementMidocoCrmMidocoSettlFeeItem) : sprintf('%s(%s)', gettype($midocoCrmMidocoSettlementMidocoCrmMidocoSettlFeeItem), var_export($midocoCrmMidocoSettlementMidocoCrmMidocoSettlFeeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmMidocoSettlFee property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlFeeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmMidocoSettlFee property can only contain items of type \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlFeeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -159,8 +159,8 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
     /**
      * Set MidocoCrmMidocoSettlFee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlFeeDTO[] $midocoCrmMidocoSettlFee
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCrmMidocoSettlement
+     * @param \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlFeeDTO[] $midocoCrmMidocoSettlFee
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCrmMidocoSettlement
      */
     public function setMidocoCrmMidocoSettlFee(?array $midocoCrmMidocoSettlFee = null): self
     {
@@ -175,14 +175,14 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
     /**
      * Add item to MidocoCrmMidocoSettlFee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlFeeDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCrmMidocoSettlement
+     * @param \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlFeeDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCrmMidocoSettlement
      */
-    public function addToMidocoCrmMidocoSettlFee(\Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlFeeDTO $item): self
+    public function addToMidocoCrmMidocoSettlFee(\Pggns\MidocoApi\Order\StructType\CrmMidocoSettlFeeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlFeeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlFee property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlFeeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlFeeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlFee property can only contain items of type \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlFeeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmMidocoSettlFee[] = $item;
         
@@ -190,7 +190,7 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
     }
     /**
      * Get MidocoAssignedMidocoSettlOUnit value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoSettlOUnitDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\AssignedMidocoSettlOUnitDTO[]
      */
     public function getMidocoAssignedMidocoSettlOUnit(): ?array
     {
@@ -211,12 +211,12 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
         $invalidValues = [];
         foreach ($values as $midocoCrmMidocoSettlementMidocoAssignedMidocoSettlOUnitItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmMidocoSettlementMidocoAssignedMidocoSettlOUnitItem instanceof \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoSettlOUnitDTO) {
+            if (!$midocoCrmMidocoSettlementMidocoAssignedMidocoSettlOUnitItem instanceof \Pggns\MidocoApi\Order\StructType\AssignedMidocoSettlOUnitDTO) {
                 $invalidValues[] = is_object($midocoCrmMidocoSettlementMidocoAssignedMidocoSettlOUnitItem) ? get_class($midocoCrmMidocoSettlementMidocoAssignedMidocoSettlOUnitItem) : sprintf('%s(%s)', gettype($midocoCrmMidocoSettlementMidocoAssignedMidocoSettlOUnitItem), var_export($midocoCrmMidocoSettlementMidocoAssignedMidocoSettlOUnitItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAssignedMidocoSettlOUnit property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoSettlOUnitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAssignedMidocoSettlOUnit property can only contain items of type \Pggns\MidocoApi\Order\StructType\AssignedMidocoSettlOUnitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -225,8 +225,8 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
     /**
      * Set MidocoAssignedMidocoSettlOUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoSettlOUnitDTO[] $midocoAssignedMidocoSettlOUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCrmMidocoSettlement
+     * @param \Pggns\MidocoApi\Order\StructType\AssignedMidocoSettlOUnitDTO[] $midocoAssignedMidocoSettlOUnit
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCrmMidocoSettlement
      */
     public function setMidocoAssignedMidocoSettlOUnit(?array $midocoAssignedMidocoSettlOUnit = null): self
     {
@@ -241,14 +241,14 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
     /**
      * Add item to MidocoAssignedMidocoSettlOUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoSettlOUnitDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCrmMidocoSettlement
+     * @param \Pggns\MidocoApi\Order\StructType\AssignedMidocoSettlOUnitDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCrmMidocoSettlement
      */
-    public function addToMidocoAssignedMidocoSettlOUnit(\Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoSettlOUnitDTO $item): self
+    public function addToMidocoAssignedMidocoSettlOUnit(\Pggns\MidocoApi\Order\StructType\AssignedMidocoSettlOUnitDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoSettlOUnitDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoSettlOUnit property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AssignedMidocoSettlOUnitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\AssignedMidocoSettlOUnitDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoSettlOUnit property can only contain items of type \Pggns\MidocoApi\Order\StructType\AssignedMidocoSettlOUnitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAssignedMidocoSettlOUnit[] = $item;
         

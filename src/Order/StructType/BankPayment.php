@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -62,7 +62,7 @@ class BankPayment extends AbstractStructBase
     /**
      * Set BankAccountRefId value
      * @param int $bankAccountRefId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankPayment
+     * @return \Pggns\MidocoApi\Order\StructType\BankPayment
      */
     public function setBankAccountRefId(?int $bankAccountRefId = null): self
     {
@@ -85,7 +85,7 @@ class BankPayment extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankPayment
+     * @return \Pggns\MidocoApi\Order\StructType\BankPayment
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -108,7 +108,7 @@ class BankPayment extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankPayment
+     * @return \Pggns\MidocoApi\Order\StructType\BankPayment
      */
     public function setCurrency(?string $currency = null): self
     {

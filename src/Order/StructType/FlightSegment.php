@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -80,7 +80,7 @@ class FlightSegment extends SegmentType
      * Set TravelerRefId value
      * @throws InvalidArgumentException
      * @param int[] $travelerRefId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightSegment
+     * @return \Pggns\MidocoApi\Order\StructType\FlightSegment
      */
     public function setTravelerRefId(?array $travelerRefId = null): self
     {
@@ -96,7 +96,7 @@ class FlightSegment extends SegmentType
      * Add item to TravelerRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightSegment
+     * @return \Pggns\MidocoApi\Order\StructType\FlightSegment
      */
     public function addToTravelerRefId(int $item): self
     {
@@ -119,7 +119,7 @@ class FlightSegment extends SegmentType
     /**
      * Set bookingDetailId value
      * @param int $bookingDetailId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightSegment
+     * @return \Pggns\MidocoApi\Order\StructType\FlightSegment
      */
     public function setBookingDetailId(?int $bookingDetailId = null): self
     {

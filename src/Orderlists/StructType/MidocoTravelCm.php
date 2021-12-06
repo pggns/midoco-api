@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoTravelCm extends TravelCmDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTravelAttr
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelAttr[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelAttr[]
      */
     protected ?array $MidocoTravelAttr = null;
     /**
@@ -28,15 +28,15 @@ class MidocoTravelCm extends TravelCmDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTravelExtraData
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\TravelExtraDataDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\TravelExtraDataDTO[]
      */
     protected ?array $MidocoTravelExtraData = null;
     /**
      * Constructor method for MidocoTravelCm
      * @uses MidocoTravelCm::setMidocoTravelAttr()
      * @uses MidocoTravelCm::setMidocoTravelExtraData()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelAttr[] $midocoTravelAttr
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\TravelExtraDataDTO[] $midocoTravelExtraData
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelAttr[] $midocoTravelAttr
+     * @param \Pggns\MidocoApi\Orderlists\StructType\TravelExtraDataDTO[] $midocoTravelExtraData
      */
     public function __construct(?array $midocoTravelAttr = null, ?array $midocoTravelExtraData = null)
     {
@@ -46,7 +46,7 @@ class MidocoTravelCm extends TravelCmDTO
     }
     /**
      * Get MidocoTravelAttr value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelAttr[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelAttr[]
      */
     public function getMidocoTravelAttr(): ?array
     {
@@ -67,12 +67,12 @@ class MidocoTravelCm extends TravelCmDTO
         $invalidValues = [];
         foreach ($values as $midocoTravelCmMidocoTravelAttrItem) {
             // validation for constraint: itemType
-            if (!$midocoTravelCmMidocoTravelAttrItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelAttr) {
+            if (!$midocoTravelCmMidocoTravelAttrItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelAttr) {
                 $invalidValues[] = is_object($midocoTravelCmMidocoTravelAttrItem) ? get_class($midocoTravelCmMidocoTravelAttrItem) : sprintf('%s(%s)', gettype($midocoTravelCmMidocoTravelAttrItem), var_export($midocoTravelCmMidocoTravelAttrItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTravelAttr property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelAttr, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTravelAttr property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelAttr, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -81,8 +81,8 @@ class MidocoTravelCm extends TravelCmDTO
     /**
      * Set MidocoTravelAttr value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelAttr[] $midocoTravelAttr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelCm
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelAttr[] $midocoTravelAttr
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelCm
      */
     public function setMidocoTravelAttr(?array $midocoTravelAttr = null): self
     {
@@ -97,14 +97,14 @@ class MidocoTravelCm extends TravelCmDTO
     /**
      * Add item to MidocoTravelAttr value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelAttr $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelCm
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelAttr $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelCm
      */
-    public function addToMidocoTravelAttr(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelAttr $item): self
+    public function addToMidocoTravelAttr(\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelAttr $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelAttr) {
-            throw new InvalidArgumentException(sprintf('The MidocoTravelAttr property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelAttr, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelAttr) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelAttr property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelAttr, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTravelAttr[] = $item;
         
@@ -112,7 +112,7 @@ class MidocoTravelCm extends TravelCmDTO
     }
     /**
      * Get MidocoTravelExtraData value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelExtraDataDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelExtraDataDTO[]
      */
     public function getMidocoTravelExtraData(): ?array
     {
@@ -133,12 +133,12 @@ class MidocoTravelCm extends TravelCmDTO
         $invalidValues = [];
         foreach ($values as $midocoTravelCmMidocoTravelExtraDataItem) {
             // validation for constraint: itemType
-            if (!$midocoTravelCmMidocoTravelExtraDataItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\TravelExtraDataDTO) {
+            if (!$midocoTravelCmMidocoTravelExtraDataItem instanceof \Pggns\MidocoApi\Orderlists\StructType\TravelExtraDataDTO) {
                 $invalidValues[] = is_object($midocoTravelCmMidocoTravelExtraDataItem) ? get_class($midocoTravelCmMidocoTravelExtraDataItem) : sprintf('%s(%s)', gettype($midocoTravelCmMidocoTravelExtraDataItem), var_export($midocoTravelCmMidocoTravelExtraDataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTravelExtraData property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\TravelExtraDataDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTravelExtraData property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\TravelExtraDataDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,8 +147,8 @@ class MidocoTravelCm extends TravelCmDTO
     /**
      * Set MidocoTravelExtraData value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\TravelExtraDataDTO[] $midocoTravelExtraData
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelCm
+     * @param \Pggns\MidocoApi\Orderlists\StructType\TravelExtraDataDTO[] $midocoTravelExtraData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelCm
      */
     public function setMidocoTravelExtraData(?array $midocoTravelExtraData = null): self
     {
@@ -163,14 +163,14 @@ class MidocoTravelCm extends TravelCmDTO
     /**
      * Add item to MidocoTravelExtraData value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\TravelExtraDataDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelCm
+     * @param \Pggns\MidocoApi\Orderlists\StructType\TravelExtraDataDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelCm
      */
-    public function addToMidocoTravelExtraData(\Pggns\MidocoApi\Api\Orderlists\StructType\TravelExtraDataDTO $item): self
+    public function addToMidocoTravelExtraData(\Pggns\MidocoApi\Orderlists\StructType\TravelExtraDataDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\TravelExtraDataDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoTravelExtraData property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\TravelExtraDataDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\TravelExtraDataDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelExtraData property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\TravelExtraDataDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTravelExtraData[] = $item;
         

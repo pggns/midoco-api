@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAvailableDocumentTypesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDocumentType
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDocumentTypeDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentTypeDTO[]
      */
     protected ?array $MidocoDocumentType = null;
     /**
      * Constructor method for GetAvailableDocumentTypesResponse
      * @uses GetAvailableDocumentTypesResponse::setMidocoDocumentType()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDocumentTypeDTO[] $midocoDocumentType
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentTypeDTO[] $midocoDocumentType
      */
     public function __construct(?array $midocoDocumentType = null)
     {
@@ -34,7 +34,7 @@ class GetAvailableDocumentTypesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDocumentType value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDocumentTypeDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentTypeDTO[]
      */
     public function getMidocoDocumentType(): ?array
     {
@@ -55,12 +55,12 @@ class GetAvailableDocumentTypesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailableDocumentTypesResponseMidocoDocumentTypeItem) {
             // validation for constraint: itemType
-            if (!$getAvailableDocumentTypesResponseMidocoDocumentTypeItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDocumentTypeDTO) {
+            if (!$getAvailableDocumentTypesResponseMidocoDocumentTypeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentTypeDTO) {
                 $invalidValues[] = is_object($getAvailableDocumentTypesResponseMidocoDocumentTypeItem) ? get_class($getAvailableDocumentTypesResponseMidocoDocumentTypeItem) : sprintf('%s(%s)', gettype($getAvailableDocumentTypesResponseMidocoDocumentTypeItem), var_export($getAvailableDocumentTypesResponseMidocoDocumentTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDocumentType property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDocumentTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDocumentType property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAvailableDocumentTypesResponse extends AbstractStructBase
     /**
      * Set MidocoDocumentType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDocumentTypeDTO[] $midocoDocumentType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAvailableDocumentTypesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentTypeDTO[] $midocoDocumentType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAvailableDocumentTypesResponse
      */
     public function setMidocoDocumentType(?array $midocoDocumentType = null): self
     {
@@ -85,14 +85,14 @@ class GetAvailableDocumentTypesResponse extends AbstractStructBase
     /**
      * Add item to MidocoDocumentType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDocumentTypeDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAvailableDocumentTypesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentTypeDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAvailableDocumentTypesResponse
      */
-    public function addToMidocoDocumentType(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDocumentTypeDTO $item): self
+    public function addToMidocoDocumentType(\Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentTypeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDocumentTypeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoDocumentType property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoDocumentTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentTypeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoDocumentType property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDocumentType[] = $item;
         

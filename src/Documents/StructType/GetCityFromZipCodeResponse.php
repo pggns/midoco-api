@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetCityFromZipCodeResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCity
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\CityDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\CityDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\CityDTO $MidocoCity = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\CityDTO $MidocoCity = null;
     /**
      * Constructor method for GetCityFromZipCodeResponse
      * @uses GetCityFromZipCodeResponse::setMidocoCity()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\CityDTO $midocoCity
+     * @param \Pggns\MidocoApi\Documents\StructType\CityDTO $midocoCity
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\CityDTO $midocoCity = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\CityDTO $midocoCity = null)
     {
         $this
             ->setMidocoCity($midocoCity);
     }
     /**
      * Get MidocoCity value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\CityDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\CityDTO|null
      */
-    public function getMidocoCity(): ?\Pggns\MidocoApi\Api\Documents\StructType\CityDTO
+    public function getMidocoCity(): ?\Pggns\MidocoApi\Documents\StructType\CityDTO
     {
         return $this->MidocoCity;
     }
     /**
      * Set MidocoCity value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\CityDTO $midocoCity
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetCityFromZipCodeResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\CityDTO $midocoCity
+     * @return \Pggns\MidocoApi\Documents\StructType\GetCityFromZipCodeResponse
      */
-    public function setMidocoCity(?\Pggns\MidocoApi\Api\Documents\StructType\CityDTO $midocoCity = null): self
+    public function setMidocoCity(?\Pggns\MidocoApi\Documents\StructType\CityDTO $midocoCity = null): self
     {
         $this->MidocoCity = $midocoCity;
         

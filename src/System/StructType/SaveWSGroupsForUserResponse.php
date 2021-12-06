@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class SaveWSGroupsForUserResponse extends AbstractStructBase
      * Set processedWSGroups value
      * @throws InvalidArgumentException
      * @param int[] $processedWSGroups
-     * @return \Pggns\MidocoApi\Api\System\StructType\SaveWSGroupsForUserResponse
+     * @return \Pggns\MidocoApi\System\StructType\SaveWSGroupsForUserResponse
      */
     public function setProcessedWSGroups(?array $processedWSGroups = null): self
     {
@@ -85,7 +85,7 @@ class SaveWSGroupsForUserResponse extends AbstractStructBase
      * Add item to processedWSGroups value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\SaveWSGroupsForUserResponse
+     * @return \Pggns\MidocoApi\System\StructType\SaveWSGroupsForUserResponse
      */
     public function addToProcessedWSGroups(int $item): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -43,7 +43,7 @@ class GetEInvoiceGatewayRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetEInvoiceGatewayRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetEInvoiceGatewayRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SalesListByPaymentTypeRequest extends AbstractStructBase
      * The MidocoSalesListByPaymentTypeCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoSalesListByPaymentTypeCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType $MidocoSalesListByPaymentTypeCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType $MidocoSalesListByPaymentTypeCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SalesListByPaymentTypeRequest extends AbstractStructBase
      * Constructor method for SalesListByPaymentTypeRequest
      * @uses SalesListByPaymentTypeRequest::setMidocoSalesListByPaymentTypeCriteria()
      * @uses SalesListByPaymentTypeRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType $midocoSalesListByPaymentTypeCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType $midocoSalesListByPaymentTypeCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType $midocoSalesListByPaymentTypeCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType $midocoSalesListByPaymentTypeCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoSalesListByPaymentTypeCriteria($midocoSalesListByPaymentTypeCriteria)
@@ -42,18 +42,18 @@ class SalesListByPaymentTypeRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSalesListByPaymentTypeCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType|null
      */
-    public function getMidocoSalesListByPaymentTypeCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
+    public function getMidocoSalesListByPaymentTypeCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
     {
         return $this->MidocoSalesListByPaymentTypeCriteria;
     }
     /**
      * Set MidocoSalesListByPaymentTypeCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType $midocoSalesListByPaymentTypeCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByPaymentTypeRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType $midocoSalesListByPaymentTypeCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByPaymentTypeRequest
      */
-    public function setMidocoSalesListByPaymentTypeCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType $midocoSalesListByPaymentTypeCriteria = null): self
+    public function setMidocoSalesListByPaymentTypeCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType $midocoSalesListByPaymentTypeCriteria = null): self
     {
         $this->MidocoSalesListByPaymentTypeCriteria = $midocoSalesListByPaymentTypeCriteria;
         
@@ -70,7 +70,7 @@ class SalesListByPaymentTypeRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByPaymentTypeRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByPaymentTypeRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

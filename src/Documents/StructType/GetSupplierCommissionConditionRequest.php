@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -89,7 +89,7 @@ class GetSupplierCommissionConditionRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierCommissionConditionRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierCommissionConditionRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -112,7 +112,7 @@ class GetSupplierCommissionConditionRequest extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierCommissionConditionRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierCommissionConditionRequest
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -135,7 +135,7 @@ class GetSupplierCommissionConditionRequest extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierCommissionConditionRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierCommissionConditionRequest
      */
     public function setProductType(?string $productType = null): self
     {
@@ -158,7 +158,7 @@ class GetSupplierCommissionConditionRequest extends AbstractStructBase
     /**
      * Set forStorno value
      * @param bool $forStorno
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierCommissionConditionRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierCommissionConditionRequest
      */
     public function setForStorno(?bool $forStorno = null): self
     {
@@ -181,7 +181,7 @@ class GetSupplierCommissionConditionRequest extends AbstractStructBase
     /**
      * Set bookingCreationDate value
      * @param string $bookingCreationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierCommissionConditionRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierCommissionConditionRequest
      */
     public function setBookingCreationDate(?string $bookingCreationDate = null): self
     {
@@ -204,7 +204,7 @@ class GetSupplierCommissionConditionRequest extends AbstractStructBase
     /**
      * Set bookingTravelDate value
      * @param string $bookingTravelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierCommissionConditionRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierCommissionConditionRequest
      */
     public function setBookingTravelDate(?string $bookingTravelDate = null): self
     {
@@ -227,7 +227,7 @@ class GetSupplierCommissionConditionRequest extends AbstractStructBase
     /**
      * Set handlingType value
      * @param string $handlingType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierCommissionConditionRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierCommissionConditionRequest
      */
     public function setHandlingType(?string $handlingType = null): self
     {

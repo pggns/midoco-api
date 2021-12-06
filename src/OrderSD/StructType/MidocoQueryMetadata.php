@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class MidocoQueryMetadata extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoQueryField
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryField[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryField[]
      */
     protected ?array $MidocoQueryField = null;
     /**
      * Constructor method for MidocoQueryMetadata
      * @uses MidocoQueryMetadata::setMidocoQueryField()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryField[] $midocoQueryField
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryField[] $midocoQueryField
      */
     public function __construct(?array $midocoQueryField = null)
     {
@@ -33,7 +33,7 @@ class MidocoQueryMetadata extends AbstractStructBase
     }
     /**
      * Get MidocoQueryField value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryField[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryField[]
      */
     public function getMidocoQueryField(): ?array
     {
@@ -54,12 +54,12 @@ class MidocoQueryMetadata extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoQueryMetadataMidocoQueryFieldItem) {
             // validation for constraint: itemType
-            if (!$midocoQueryMetadataMidocoQueryFieldItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryField) {
+            if (!$midocoQueryMetadataMidocoQueryFieldItem instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryField) {
                 $invalidValues[] = is_object($midocoQueryMetadataMidocoQueryFieldItem) ? get_class($midocoQueryMetadataMidocoQueryFieldItem) : sprintf('%s(%s)', gettype($midocoQueryMetadataMidocoQueryFieldItem), var_export($midocoQueryMetadataMidocoQueryFieldItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoQueryField property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryField, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoQueryField property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryField, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class MidocoQueryMetadata extends AbstractStructBase
     /**
      * Set MidocoQueryField value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryField[] $midocoQueryField
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryMetadata
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryField[] $midocoQueryField
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryMetadata
      */
     public function setMidocoQueryField(?array $midocoQueryField = null): self
     {
@@ -84,14 +84,14 @@ class MidocoQueryMetadata extends AbstractStructBase
     /**
      * Add item to MidocoQueryField value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryField $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryMetadata
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryField $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryMetadata
      */
-    public function addToMidocoQueryField(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryField $item): self
+    public function addToMidocoQueryField(\Pggns\MidocoApi\OrderSD\StructType\MidocoQueryField $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryField) {
-            throw new InvalidArgumentException(sprintf('The MidocoQueryField property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoQueryField, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryField) {
+            throw new InvalidArgumentException(sprintf('The MidocoQueryField property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryField, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoQueryField[] = $item;
         

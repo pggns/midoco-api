@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -24,7 +24,7 @@ class ExportTravelPlanResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAdditionalPrintDocument
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument[]
      */
     protected ?array $MidocoAdditionalPrintDocument = null;
     /**
@@ -32,7 +32,7 @@ class ExportTravelPlanResponse extends AbstractStructBase
      * @uses ExportTravelPlanResponse::setTravelPlanData()
      * @uses ExportTravelPlanResponse::setMidocoAdditionalPrintDocument()
      * @param string $travelPlanData
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument[] $midocoAdditionalPrintDocument
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument[] $midocoAdditionalPrintDocument
      */
     public function __construct(?string $travelPlanData = null, ?array $midocoAdditionalPrintDocument = null)
     {
@@ -51,7 +51,7 @@ class ExportTravelPlanResponse extends AbstractStructBase
     /**
      * Set TravelPlanData value
      * @param string $travelPlanData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelPlanResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelPlanResponse
      */
     public function setTravelPlanData(?string $travelPlanData = null): self
     {
@@ -65,7 +65,7 @@ class ExportTravelPlanResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAdditionalPrintDocument value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument[]
      */
     public function getMidocoAdditionalPrintDocument(): ?array
     {
@@ -86,12 +86,12 @@ class ExportTravelPlanResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $exportTravelPlanResponseMidocoAdditionalPrintDocumentItem) {
             // validation for constraint: itemType
-            if (!$exportTravelPlanResponseMidocoAdditionalPrintDocumentItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument) {
+            if (!$exportTravelPlanResponseMidocoAdditionalPrintDocumentItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument) {
                 $invalidValues[] = is_object($exportTravelPlanResponseMidocoAdditionalPrintDocumentItem) ? get_class($exportTravelPlanResponseMidocoAdditionalPrintDocumentItem) : sprintf('%s(%s)', gettype($exportTravelPlanResponseMidocoAdditionalPrintDocumentItem), var_export($exportTravelPlanResponseMidocoAdditionalPrintDocumentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAdditionalPrintDocument property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAdditionalPrintDocument property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -100,8 +100,8 @@ class ExportTravelPlanResponse extends AbstractStructBase
     /**
      * Set MidocoAdditionalPrintDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument[] $midocoAdditionalPrintDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelPlanResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument[] $midocoAdditionalPrintDocument
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelPlanResponse
      */
     public function setMidocoAdditionalPrintDocument(?array $midocoAdditionalPrintDocument = null): self
     {
@@ -116,14 +116,14 @@ class ExportTravelPlanResponse extends AbstractStructBase
     /**
      * Add item to MidocoAdditionalPrintDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelPlanResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument $item
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelPlanResponse
      */
-    public function addToMidocoAdditionalPrintDocument(\Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument $item): self
+    public function addToMidocoAdditionalPrintDocument(\Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument) {
-            throw new InvalidArgumentException(sprintf('The MidocoAdditionalPrintDocument property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAdditionalPrintDocument, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument) {
+            throw new InvalidArgumentException(sprintf('The MidocoAdditionalPrintDocument property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAdditionalPrintDocument, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAdditionalPrintDocument[] = $item;
         

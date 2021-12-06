@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoOrgUnitAttr extends AbstractStructBase
     /**
      * Set key value
      * @param string $key
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoOrgUnitAttr
+     * @return \Pggns\MidocoApi\System\StructType\MidocoOrgUnitAttr
      */
     public function setKey(?string $key = null): self
     {
@@ -70,7 +70,7 @@ class MidocoOrgUnitAttr extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoOrgUnitAttr
+     * @return \Pggns\MidocoApi\System\StructType\MidocoOrgUnitAttr
      */
     public function setValue(?string $value = null): self
     {

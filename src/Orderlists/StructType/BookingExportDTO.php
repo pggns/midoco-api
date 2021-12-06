@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class BookingExportDTO extends AbstractStructBase
     /**
      * Set acknowledgeTime value
      * @param string $acknowledgeTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BookingExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingExportDTO
      */
     public function setAcknowledgeTime(?string $acknowledgeTime = null): self
     {
@@ -110,7 +110,7 @@ class BookingExportDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BookingExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingExportDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -133,7 +133,7 @@ class BookingExportDTO extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BookingExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingExportDTO
      */
     public function setExportId(?int $exportId = null): self
     {
@@ -156,7 +156,7 @@ class BookingExportDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BookingExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingExportDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -179,7 +179,7 @@ class BookingExportDTO extends AbstractStructBase
     /**
      * Set pickupTime value
      * @param string $pickupTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BookingExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingExportDTO
      */
     public function setPickupTime(?string $pickupTime = null): self
     {
@@ -202,7 +202,7 @@ class BookingExportDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BookingExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingExportDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -225,7 +225,7 @@ class BookingExportDTO extends AbstractStructBase
     /**
      * Set systemName value
      * @param string $systemName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BookingExportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingExportDTO
      */
     public function setSystemName(?string $systemName = null): self
     {

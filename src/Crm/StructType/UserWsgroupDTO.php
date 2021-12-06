@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class UserWsgroupDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\UserWsgroupDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\UserWsgroupDTO
      */
     public function setUserId(?int $userId = null): self
     {
@@ -70,7 +70,7 @@ class UserWsgroupDTO extends AbstractStructBase
     /**
      * Set wsgroup value
      * @param string $wsgroup
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\UserWsgroupDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\UserWsgroupDTO
      */
     public function setWsgroup(?string $wsgroup = null): self
     {

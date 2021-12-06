@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetOrgUnitSequenceResponse extends AbstractStructBase
     /**
      * Set seqValue value
      * @param int $seqValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrgUnitSequenceResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrgUnitSequenceResponse
      */
     public function setSeqValue(?int $seqValue = null): self
     {

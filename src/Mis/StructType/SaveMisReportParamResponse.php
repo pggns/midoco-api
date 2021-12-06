@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class SaveMisReportParamResponse extends AbstractStructBase
     /**
      * Set parameterId value
      * @param int $parameterId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveMisReportParamResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveMisReportParamResponse
      */
     public function setParameterId(?int $parameterId = null): self
     {
@@ -72,7 +72,7 @@ class SaveMisReportParamResponse extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveMisReportParamResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveMisReportParamResponse
      */
     public function setReportId(?int $reportId = null): self
     {

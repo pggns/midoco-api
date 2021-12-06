@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DuplicateRoleRequest extends AbstractStructBase
      * The MidocoDuplicateRoleInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoDuplicateRoleInfo
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoDuplicateRoleInfo|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoDuplicateRoleInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoDuplicateRoleInfo $MidocoDuplicateRoleInfo = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\MidocoDuplicateRoleInfo $MidocoDuplicateRoleInfo = null;
     /**
      * Constructor method for DuplicateRoleRequest
      * @uses DuplicateRoleRequest::setMidocoDuplicateRoleInfo()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo = null)
     {
         $this
             ->setMidocoDuplicateRoleInfo($midocoDuplicateRoleInfo);
     }
     /**
      * Get MidocoDuplicateRoleInfo value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoDuplicateRoleInfo|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoDuplicateRoleInfo|null
      */
-    public function getMidocoDuplicateRoleInfo(): ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoDuplicateRoleInfo
+    public function getMidocoDuplicateRoleInfo(): ?\Pggns\MidocoApi\Workflow\StructType\MidocoDuplicateRoleInfo
     {
         return $this->MidocoDuplicateRoleInfo;
     }
     /**
      * Set MidocoDuplicateRoleInfo value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DuplicateRoleRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo
+     * @return \Pggns\MidocoApi\Workflow\StructType\DuplicateRoleRequest
      */
-    public function setMidocoDuplicateRoleInfo(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo = null): self
+    public function setMidocoDuplicateRoleInfo(?\Pggns\MidocoApi\Workflow\StructType\MidocoDuplicateRoleInfo $midocoDuplicateRoleInfo = null): self
     {
         $this->MidocoDuplicateRoleInfo = $midocoDuplicateRoleInfo;
         

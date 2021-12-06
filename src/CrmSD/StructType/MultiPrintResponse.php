@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class MultiPrintResponse extends AbstractStructBase
      * The MidocoMailMessage
      * Meta information extracted from the WSDL
      * - ref: mail:MidocoMailMessage
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailMessageType|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoMailMessageType|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailMessageType $MidocoMailMessage = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoMailMessageType $MidocoMailMessage = null;
     /**
      * The historyId
      * Meta information extracted from the WSDL
@@ -41,7 +41,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: system:MidocoMailDescription4Inexso
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailDescription4Inexso[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoMailDescription4Inexso[]
      */
     protected ?array $MidocoMailDescription4Inexso = null;
     /**
@@ -50,12 +50,12 @@ class MultiPrintResponse extends AbstractStructBase
      * @uses MultiPrintResponse::setHistoryId()
      * @uses MultiPrintResponse::setRtfData()
      * @uses MultiPrintResponse::setMidocoMailDescription4Inexso()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailMessageType $midocoMailMessage
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMailMessageType $midocoMailMessage
      * @param int[] $historyId
      * @param string[] $rtfData
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailDescription4Inexso[] $midocoMailDescription4Inexso
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMailDescription4Inexso[] $midocoMailDescription4Inexso
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailMessageType $midocoMailMessage = null, ?array $historyId = null, ?array $rtfData = null, ?array $midocoMailDescription4Inexso = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoMailMessageType $midocoMailMessage = null, ?array $historyId = null, ?array $rtfData = null, ?array $midocoMailDescription4Inexso = null)
     {
         $this
             ->setMidocoMailMessage($midocoMailMessage)
@@ -65,18 +65,18 @@ class MultiPrintResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMailMessage value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailMessageType|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMailMessageType|null
      */
-    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailMessageType
+    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoMailMessageType
     {
         return $this->MidocoMailMessage;
     }
     /**
      * Set MidocoMailMessage value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailMessageType $midocoMailMessage
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MultiPrintResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMailMessageType $midocoMailMessage
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MultiPrintResponse
      */
-    public function setMidocoMailMessage(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailMessageType $midocoMailMessage = null): self
+    public function setMidocoMailMessage(?\Pggns\MidocoApi\CrmSD\StructType\MidocoMailMessageType $midocoMailMessage = null): self
     {
         $this->MidocoMailMessage = $midocoMailMessage;
         
@@ -120,7 +120,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Set historyId value
      * @throws InvalidArgumentException
      * @param int[] $historyId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MultiPrintResponse
      */
     public function setHistoryId(?array $historyId = null): self
     {
@@ -136,7 +136,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Add item to historyId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MultiPrintResponse
      */
     public function addToHistoryId(int $item): self
     {
@@ -186,7 +186,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Set rtfData value
      * @throws InvalidArgumentException
      * @param string[] $rtfData
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MultiPrintResponse
      */
     public function setRtfData(?array $rtfData = null): self
     {
@@ -202,7 +202,7 @@ class MultiPrintResponse extends AbstractStructBase
      * Add item to rtfData value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MultiPrintResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MultiPrintResponse
      */
     public function addToRtfData(string $item): self
     {
@@ -216,7 +216,7 @@ class MultiPrintResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMailDescription4Inexso value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailDescription4Inexso[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMailDescription4Inexso[]
      */
     public function getMidocoMailDescription4Inexso(): ?array
     {
@@ -237,12 +237,12 @@ class MultiPrintResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $multiPrintResponseMidocoMailDescription4InexsoItem) {
             // validation for constraint: itemType
-            if (!$multiPrintResponseMidocoMailDescription4InexsoItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailDescription4Inexso) {
+            if (!$multiPrintResponseMidocoMailDescription4InexsoItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMailDescription4Inexso) {
                 $invalidValues[] = is_object($multiPrintResponseMidocoMailDescription4InexsoItem) ? get_class($multiPrintResponseMidocoMailDescription4InexsoItem) : sprintf('%s(%s)', gettype($multiPrintResponseMidocoMailDescription4InexsoItem), var_export($multiPrintResponseMidocoMailDescription4InexsoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMailDescription4Inexso property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailDescription4Inexso, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMailDescription4Inexso property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMailDescription4Inexso, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -251,8 +251,8 @@ class MultiPrintResponse extends AbstractStructBase
     /**
      * Set MidocoMailDescription4Inexso value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailDescription4Inexso[] $midocoMailDescription4Inexso
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MultiPrintResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMailDescription4Inexso[] $midocoMailDescription4Inexso
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MultiPrintResponse
      */
     public function setMidocoMailDescription4Inexso(?array $midocoMailDescription4Inexso = null): self
     {
@@ -267,14 +267,14 @@ class MultiPrintResponse extends AbstractStructBase
     /**
      * Add item to MidocoMailDescription4Inexso value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailDescription4Inexso $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MultiPrintResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMailDescription4Inexso $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MultiPrintResponse
      */
-    public function addToMidocoMailDescription4Inexso(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailDescription4Inexso $item): self
+    public function addToMidocoMailDescription4Inexso(\Pggns\MidocoApi\CrmSD\StructType\MidocoMailDescription4Inexso $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailDescription4Inexso) {
-            throw new InvalidArgumentException(sprintf('The MidocoMailDescription4Inexso property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMailDescription4Inexso, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMailDescription4Inexso) {
+            throw new InvalidArgumentException(sprintf('The MidocoMailDescription4Inexso property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMailDescription4Inexso, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMailDescription4Inexso[] = $item;
         

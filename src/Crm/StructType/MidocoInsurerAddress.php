@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoInsurerAddress extends InsurerAddressDTO
     /**
      * Set insurerName value
      * @param string $insurerName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoInsurerAddress
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoInsurerAddress
      */
     public function setInsurerName(?string $insurerName = null): self
     {

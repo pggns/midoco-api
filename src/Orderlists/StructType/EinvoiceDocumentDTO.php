@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class EinvoiceDocumentDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceDocumentDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -150,7 +150,7 @@ class EinvoiceDocumentDTO extends AbstractStructBase
     /**
      * Set documentExportDate value
      * @param string $documentExportDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceDocumentDTO
      */
     public function setDocumentExportDate(?string $documentExportDate = null): self
     {
@@ -173,7 +173,7 @@ class EinvoiceDocumentDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceDocumentDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -196,7 +196,7 @@ class EinvoiceDocumentDTO extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceDocumentDTO
      */
     public function setFileName(?string $fileName = null): self
     {
@@ -219,7 +219,7 @@ class EinvoiceDocumentDTO extends AbstractStructBase
     /**
      * Set fileType value
      * @param string $fileType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceDocumentDTO
      */
     public function setFileType(?string $fileType = null): self
     {
@@ -242,7 +242,7 @@ class EinvoiceDocumentDTO extends AbstractStructBase
     /**
      * Set gateway value
      * @param string $gateway
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceDocumentDTO
      */
     public function setGateway(?string $gateway = null): self
     {
@@ -265,7 +265,7 @@ class EinvoiceDocumentDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceDocumentDTO
      */
     public function setId(?int $id = null): self
     {
@@ -288,7 +288,7 @@ class EinvoiceDocumentDTO extends AbstractStructBase
     /**
      * Set isDocumentExported value
      * @param bool $isDocumentExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceDocumentDTO
      */
     public function setIsDocumentExported(?bool $isDocumentExported = null): self
     {
@@ -311,7 +311,7 @@ class EinvoiceDocumentDTO extends AbstractStructBase
     /**
      * Set orderRef value
      * @param string $orderRef
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceDocumentDTO
      */
     public function setOrderRef(?string $orderRef = null): self
     {
@@ -334,7 +334,7 @@ class EinvoiceDocumentDTO extends AbstractStructBase
     /**
      * Set provisionBy value
      * @param int $provisionBy
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceDocumentDTO
      */
     public function setProvisionBy(?int $provisionBy = null): self
     {
@@ -357,7 +357,7 @@ class EinvoiceDocumentDTO extends AbstractStructBase
     /**
      * Set provisionTimestamp value
      * @param string $provisionTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceDocumentDTO
      */
     public function setProvisionTimestamp(?string $provisionTimestamp = null): self
     {
@@ -380,7 +380,7 @@ class EinvoiceDocumentDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceDocumentDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

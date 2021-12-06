@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoVoucher extends VoucherDTO
     /**
      * Set forCustomer value
      * @param string $forCustomer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVoucher
      */
     public function setForCustomer(?string $forCustomer = null): self
     {
@@ -70,7 +70,7 @@ class MidocoVoucher extends VoucherDTO
     /**
      * Set fromCustomer value
      * @param string $fromCustomer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVoucher
      */
     public function setFromCustomer(?string $fromCustomer = null): self
     {

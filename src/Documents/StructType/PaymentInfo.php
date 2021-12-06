@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class PaymentInfo extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentInfo
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -86,7 +86,7 @@ class PaymentInfo extends AbstractStructBase
     /**
      * Set creditCardType value
      * @param string $creditCardType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentInfo
      */
     public function setCreditCardType(?string $creditCardType = null): self
     {
@@ -109,7 +109,7 @@ class PaymentInfo extends AbstractStructBase
     /**
      * Set maskCreditCardNumber value
      * @param string $maskCreditCardNumber
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentInfo
      */
     public function setMaskCreditCardNumber(?string $maskCreditCardNumber = null): self
     {
@@ -132,7 +132,7 @@ class PaymentInfo extends AbstractStructBase
     /**
      * Set IBAN value
      * @param string $iBAN
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentInfo
      */
     public function setIBAN(?string $iBAN = null): self
     {

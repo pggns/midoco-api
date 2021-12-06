@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -122,7 +122,7 @@ class SpecialServiceRequest extends AbstractStructBase
      * Set BookingDetailRefId value
      * @throws InvalidArgumentException
      * @param int[] $bookingDetailRefId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest
      */
     public function setBookingDetailRefId(?array $bookingDetailRefId = null): self
     {
@@ -138,7 +138,7 @@ class SpecialServiceRequest extends AbstractStructBase
      * Add item to BookingDetailRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest
      */
     public function addToBookingDetailRefId(int $item): self
     {
@@ -188,7 +188,7 @@ class SpecialServiceRequest extends AbstractStructBase
      * Set TravelerRefId value
      * @throws InvalidArgumentException
      * @param int[] $travelerRefId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest
      */
     public function setTravelerRefId(?array $travelerRefId = null): self
     {
@@ -204,7 +204,7 @@ class SpecialServiceRequest extends AbstractStructBase
      * Add item to TravelerRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest
      */
     public function addToTravelerRefId(int $item): self
     {
@@ -227,7 +227,7 @@ class SpecialServiceRequest extends AbstractStructBase
     /**
      * Set ssrId value
      * @param int $ssrId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest
      */
     public function setSsrId(?int $ssrId = null): self
     {
@@ -250,7 +250,7 @@ class SpecialServiceRequest extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest
      */
     public function setCode(?string $code = null): self
     {
@@ -273,7 +273,7 @@ class SpecialServiceRequest extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest
      */
     public function setDescription(?string $description = null): self
     {
@@ -296,7 +296,7 @@ class SpecialServiceRequest extends AbstractStructBase
     /**
      * Set seat value
      * @param string $seat
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest
      */
     public function setSeat(?string $seat = null): self
     {
@@ -319,7 +319,7 @@ class SpecialServiceRequest extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SpecialServiceRequest
      */
     public function setStatus(?string $status = null): self
     {

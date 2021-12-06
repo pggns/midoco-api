@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -68,7 +68,7 @@ class GetAgenciesWithCollectiveInvoiceResponse extends AbstractStructBase
      * Set agencyId value
      * @throws InvalidArgumentException
      * @param string[] $agencyId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAgenciesWithCollectiveInvoiceResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgenciesWithCollectiveInvoiceResponse
      */
     public function setAgencyId(?array $agencyId = null): self
     {
@@ -84,7 +84,7 @@ class GetAgenciesWithCollectiveInvoiceResponse extends AbstractStructBase
      * Add item to agencyId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAgenciesWithCollectiveInvoiceResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgenciesWithCollectiveInvoiceResponse
      */
     public function addToAgencyId(string $item): self
     {

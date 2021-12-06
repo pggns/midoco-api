@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetProductTypesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoProductType
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType[]
      */
     protected ?array $MidocoProductType = null;
     /**
      * Constructor method for GetProductTypesResponse
      * @uses GetProductTypesResponse::setMidocoProductType()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType[] $midocoProductType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType[] $midocoProductType
      */
     public function __construct(?array $midocoProductType = null)
     {
@@ -34,7 +34,7 @@ class GetProductTypesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoProductType value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType[]
      */
     public function getMidocoProductType(): ?array
     {
@@ -55,12 +55,12 @@ class GetProductTypesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getProductTypesResponseMidocoProductTypeItem) {
             // validation for constraint: itemType
-            if (!$getProductTypesResponseMidocoProductTypeItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType) {
+            if (!$getProductTypesResponseMidocoProductTypeItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType) {
                 $invalidValues[] = is_object($getProductTypesResponseMidocoProductTypeItem) ? get_class($getProductTypesResponseMidocoProductTypeItem) : sprintf('%s(%s)', gettype($getProductTypesResponseMidocoProductTypeItem), var_export($getProductTypesResponseMidocoProductTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoProductType property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoProductType property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetProductTypesResponse extends AbstractStructBase
     /**
      * Set MidocoProductType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType[] $midocoProductType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetProductTypesResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType[] $midocoProductType
+     * @return \Pggns\MidocoApi\Documents\StructType\GetProductTypesResponse
      */
     public function setMidocoProductType(?array $midocoProductType = null): self
     {
@@ -85,14 +85,14 @@ class GetProductTypesResponse extends AbstractStructBase
     /**
      * Add item to MidocoProductType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetProductTypesResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetProductTypesResponse
      */
-    public function addToMidocoProductType(\Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType $item): self
+    public function addToMidocoProductType(\Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType) {
-            throw new InvalidArgumentException(sprintf('The MidocoProductType property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoProductTypeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType) {
+            throw new InvalidArgumentException(sprintf('The MidocoProductType property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoProductTypeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoProductType[] = $item;
         

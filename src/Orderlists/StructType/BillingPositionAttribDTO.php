@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set approvalCode value
      * @param string $approvalCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setApprovalCode(?string $approvalCode = null): self
     {
@@ -174,7 +174,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set changingUser value
      * @param int $changingUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setChangingUser(?int $changingUser = null): self
     {
@@ -197,7 +197,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -220,7 +220,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set customData value
      * @param string $customData
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setCustomData(?string $customData = null): self
     {
@@ -243,7 +243,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set customDbHeader value
      * @param string $customDbHeader
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setCustomDbHeader(?string $customDbHeader = null): self
     {
@@ -266,7 +266,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set customType value
      * @param string $customType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setCustomType(?string $customType = null): self
     {
@@ -289,7 +289,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set orderNo value
      * @param string $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setOrderNo(?string $orderNo = null): self
     {
@@ -312,7 +312,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set personalNo value
      * @param string $personalNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setPersonalNo(?string $personalNo = null): self
     {
@@ -335,7 +335,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setPositionId(?int $positionId = null): self
     {
@@ -358,7 +358,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set projectNo value
      * @param string $projectNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setProjectNo(?string $projectNo = null): self
     {
@@ -381,7 +381,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set secPrice value
      * @param float $secPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setSecPrice(?float $secPrice = null): self
     {
@@ -404,7 +404,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set sellingUser value
      * @param int $sellingUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setSellingUser(?int $sellingUser = null): self
     {
@@ -427,7 +427,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set travellerId value
      * @param int $travellerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setTravellerId(?int $travellerId = null): self
     {
@@ -450,7 +450,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set travellerName value
      * @param string $travellerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setTravellerName(?string $travellerName = null): self
     {
@@ -473,7 +473,7 @@ class BillingPositionAttribDTO extends AbstractStructBase
     /**
      * Set voucherNo value
      * @param string $voucherNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionAttribDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionAttribDTO
      */
     public function setVoucherNo(?string $voucherNo = null): self
     {

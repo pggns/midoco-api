@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -271,7 +271,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set baseBuyingPrice value
      * @param float $baseBuyingPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setBaseBuyingPrice(?float $baseBuyingPrice = null): self
     {
@@ -294,7 +294,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set baseCurrency value
      * @param string $baseCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setBaseCurrency(?string $baseCurrency = null): self
     {
@@ -317,7 +317,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set baseSellingPrice value
      * @param float $baseSellingPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setBaseSellingPrice(?float $baseSellingPrice = null): self
     {
@@ -340,7 +340,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set calculatedRevenue value
      * @param float $calculatedRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setCalculatedRevenue(?float $calculatedRevenue = null): self
     {
@@ -363,7 +363,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set commissionPercentage value
      * @param float $commissionPercentage
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setCommissionPercentage(?float $commissionPercentage = null): self
     {
@@ -386,7 +386,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set customerAdoptPurchaseValue value
      * @param bool $customerAdoptPurchaseValue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setCustomerAdoptPurchaseValue(?bool $customerAdoptPurchaseValue = null): self
     {
@@ -409,7 +409,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set customerCurrency value
      * @param string $customerCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setCustomerCurrency(?string $customerCurrency = null): self
     {
@@ -432,7 +432,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set customerCurrencyRate value
      * @param float $customerCurrencyRate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setCustomerCurrencyRate(?float $customerCurrencyRate = null): self
     {
@@ -455,7 +455,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set customerSellingPrice value
      * @param float $customerSellingPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setCustomerSellingPrice(?float $customerSellingPrice = null): self
     {
@@ -478,7 +478,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set grantedRevenue value
      * @param float $grantedRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setGrantedRevenue(?float $grantedRevenue = null): self
     {
@@ -501,7 +501,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set isCustomCustomerFxAmount value
      * @param bool $isCustomCustomerFxAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setIsCustomCustomerFxAmount(?bool $isCustomCustomerFxAmount = null): self
     {
@@ -524,7 +524,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set isIndividualSupplierCurrencyRate value
      * @param bool $isIndividualSupplierCurrencyRate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setIsIndividualSupplierCurrencyRate(?bool $isIndividualSupplierCurrencyRate = null): self
     {
@@ -547,7 +547,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -570,7 +570,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set manualRevenue value
      * @param bool $manualRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setManualRevenue(?bool $manualRevenue = null): self
     {
@@ -593,7 +593,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set marginBase value
      * @param float $marginBase
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setMarginBase(?float $marginBase = null): self
     {
@@ -616,7 +616,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set marginCoreValueIndicator value
      * @param int $marginCoreValueIndicator
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setMarginCoreValueIndicator(?int $marginCoreValueIndicator = null): self
     {
@@ -639,7 +639,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set marginCustomer value
      * @param float $marginCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setMarginCustomer(?float $marginCustomer = null): self
     {
@@ -662,7 +662,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set marginPercentage value
      * @param float $marginPercentage
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setMarginPercentage(?float $marginPercentage = null): self
     {
@@ -685,7 +685,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set marginSupplier value
      * @param float $marginSupplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setMarginSupplier(?float $marginSupplier = null): self
     {
@@ -708,7 +708,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set modeRevenueCalculation value
      * @param string $modeRevenueCalculation
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setModeRevenueCalculation(?string $modeRevenueCalculation = null): self
     {
@@ -731,7 +731,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set originalCalculatedRevenue value
      * @param float $originalCalculatedRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setOriginalCalculatedRevenue(?float $originalCalculatedRevenue = null): self
     {
@@ -754,7 +754,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set originalGrantedRevenue value
      * @param float $originalGrantedRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setOriginalGrantedRevenue(?float $originalGrantedRevenue = null): self
     {
@@ -777,7 +777,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set originalSupplierCommissionAmount value
      * @param float $originalSupplierCommissionAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setOriginalSupplierCommissionAmount(?float $originalSupplierCommissionAmount = null): self
     {
@@ -800,7 +800,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set pricingCalculationMode value
      * @param int $pricingCalculationMode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setPricingCalculationMode(?int $pricingCalculationMode = null): self
     {
@@ -823,7 +823,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set sellItemCoreValueIndicator value
      * @param int $sellItemCoreValueIndicator
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setSellItemCoreValueIndicator(?int $sellItemCoreValueIndicator = null): self
     {
@@ -846,7 +846,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set supplierBuyingPrice value
      * @param float $supplierBuyingPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setSupplierBuyingPrice(?float $supplierBuyingPrice = null): self
     {
@@ -869,7 +869,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set supplierCommissionAmount value
      * @param float $supplierCommissionAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setSupplierCommissionAmount(?float $supplierCommissionAmount = null): self
     {
@@ -892,7 +892,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set supplierCurrency value
      * @param string $supplierCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setSupplierCurrency(?string $supplierCurrency = null): self
     {
@@ -915,7 +915,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set supplierCurrencyRate value
      * @param float $supplierCurrencyRate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setSupplierCurrencyRate(?float $supplierCurrencyRate = null): self
     {
@@ -938,7 +938,7 @@ class SellItemPricingDTO extends AbstractStructBase
     /**
      * Set supplierSellingPrice value
      * @param float $supplierSellingPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemPricingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
      */
     public function setSupplierSellingPrice(?float $supplierSellingPrice = null): self
     {

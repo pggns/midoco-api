@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetCampaignFieldValuesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCriteriaValue
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldValueType[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldValueType[]
      */
     protected ?array $MidocoCriteriaValue = null;
     /**
      * Constructor method for GetCampaignFieldValuesResponse
      * @uses GetCampaignFieldValuesResponse::setMidocoCriteriaValue()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldValueType[] $midocoCriteriaValue
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldValueType[] $midocoCriteriaValue
      */
     public function __construct(?array $midocoCriteriaValue = null)
     {
@@ -36,7 +36,7 @@ class GetCampaignFieldValuesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCriteriaValue value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldValueType[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldValueType[]
      */
     public function getMidocoCriteriaValue(): ?array
     {
@@ -57,12 +57,12 @@ class GetCampaignFieldValuesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCampaignFieldValuesResponseMidocoCriteriaValueItem) {
             // validation for constraint: itemType
-            if (!$getCampaignFieldValuesResponseMidocoCriteriaValueItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldValueType) {
+            if (!$getCampaignFieldValuesResponseMidocoCriteriaValueItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldValueType) {
                 $invalidValues[] = is_object($getCampaignFieldValuesResponseMidocoCriteriaValueItem) ? get_class($getCampaignFieldValuesResponseMidocoCriteriaValueItem) : sprintf('%s(%s)', gettype($getCampaignFieldValuesResponseMidocoCriteriaValueItem), var_export($getCampaignFieldValuesResponseMidocoCriteriaValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCriteriaValue property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldValueType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCriteriaValue property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldValueType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetCampaignFieldValuesResponse extends AbstractStructBase
     /**
      * Set MidocoCriteriaValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldValueType[] $midocoCriteriaValue
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFieldValuesResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldValueType[] $midocoCriteriaValue
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignFieldValuesResponse
      */
     public function setMidocoCriteriaValue(?array $midocoCriteriaValue = null): self
     {
@@ -87,14 +87,14 @@ class GetCampaignFieldValuesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCriteriaValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldValueType $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignFieldValuesResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldValueType $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignFieldValuesResponse
      */
-    public function addToMidocoCriteriaValue(\Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldValueType $item): self
+    public function addToMidocoCriteriaValue(\Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldValueType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldValueType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCriteriaValue property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldValueType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldValueType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCriteriaValue property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldValueType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCriteriaValue[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class OrgLicensDTO extends AbstractStructBase
     /**
      * Set licenseKey value
      * @param string $licenseKey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrgLicensDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrgLicensDTO
      */
     public function setLicenseKey(?string $licenseKey = null): self
     {
@@ -70,7 +70,7 @@ class OrgLicensDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrgLicensDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrgLicensDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

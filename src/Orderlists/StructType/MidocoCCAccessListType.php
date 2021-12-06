@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoCCAccessListType extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListType
      */
     public function setUserId(?int $userId = null): self
     {
@@ -78,7 +78,7 @@ class MidocoCCAccessListType extends AbstractStructBase
     /**
      * Set accessTimestamp value
      * @param string $accessTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListType
      */
     public function setAccessTimestamp(?string $accessTimestamp = null): self
     {
@@ -101,7 +101,7 @@ class MidocoCCAccessListType extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListType
      */
     public function setCcNo(?string $ccNo = null): self
     {

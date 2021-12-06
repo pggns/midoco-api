@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class QuestionValueDTO extends AbstractStructBase
     /**
      * Set isDefault value
      * @param bool $isDefault
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\QuestionValueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\QuestionValueDTO
      */
     public function setIsDefault(?bool $isDefault = null): self
     {
@@ -86,7 +86,7 @@ class QuestionValueDTO extends AbstractStructBase
     /**
      * Set questionId value
      * @param int $questionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\QuestionValueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\QuestionValueDTO
      */
     public function setQuestionId(?int $questionId = null): self
     {
@@ -109,7 +109,7 @@ class QuestionValueDTO extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\QuestionValueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\QuestionValueDTO
      */
     public function setValue(?string $value = null): self
     {
@@ -132,7 +132,7 @@ class QuestionValueDTO extends AbstractStructBase
     /**
      * Set valueId value
      * @param int $valueId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\QuestionValueDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\QuestionValueDTO
      */
     public function setValueId(?int $valueId = null): self
     {

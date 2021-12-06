@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetOrderLockReasonDescriptionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderLockReasonDescription
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderLockReasonDescriptionDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\OrderLockReasonDescriptionDTO[]
      */
     protected ?array $MidocoOrderLockReasonDescription = null;
     /**
      * Constructor method for GetOrderLockReasonDescriptionsResponse
      * @uses GetOrderLockReasonDescriptionsResponse::setMidocoOrderLockReasonDescription()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderLockReasonDescriptionDTO[] $midocoOrderLockReasonDescription
+     * @param \Pggns\MidocoApi\Order\StructType\OrderLockReasonDescriptionDTO[] $midocoOrderLockReasonDescription
      */
     public function __construct(?array $midocoOrderLockReasonDescription = null)
     {
@@ -36,7 +36,7 @@ class GetOrderLockReasonDescriptionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderLockReasonDescription value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderLockReasonDescriptionDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\OrderLockReasonDescriptionDTO[]
      */
     public function getMidocoOrderLockReasonDescription(): ?array
     {
@@ -57,12 +57,12 @@ class GetOrderLockReasonDescriptionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderLockReasonDescriptionDTO) {
+            if (!$getOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem instanceof \Pggns\MidocoApi\Order\StructType\OrderLockReasonDescriptionDTO) {
                 $invalidValues[] = is_object($getOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem) ? get_class($getOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem) : sprintf('%s(%s)', gettype($getOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem), var_export($getOrderLockReasonDescriptionsResponseMidocoOrderLockReasonDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderLockReasonDescription property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderLockReasonDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderLockReasonDescription property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderLockReasonDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetOrderLockReasonDescriptionsResponse extends AbstractStructBase
     /**
      * Set MidocoOrderLockReasonDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderLockReasonDescriptionDTO[] $midocoOrderLockReasonDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderLockReasonDescriptionsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderLockReasonDescriptionDTO[] $midocoOrderLockReasonDescription
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderLockReasonDescriptionsResponse
      */
     public function setMidocoOrderLockReasonDescription(?array $midocoOrderLockReasonDescription = null): self
     {
@@ -87,14 +87,14 @@ class GetOrderLockReasonDescriptionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderLockReasonDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderLockReasonDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderLockReasonDescriptionsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderLockReasonDescriptionDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderLockReasonDescriptionsResponse
      */
-    public function addToMidocoOrderLockReasonDescription(\Pggns\MidocoApi\Api\Order\StructType\OrderLockReasonDescriptionDTO $item): self
+    public function addToMidocoOrderLockReasonDescription(\Pggns\MidocoApi\Order\StructType\OrderLockReasonDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderLockReasonDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderLockReasonDescription property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderLockReasonDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\OrderLockReasonDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderLockReasonDescription property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderLockReasonDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderLockReasonDescription[] = $item;
         

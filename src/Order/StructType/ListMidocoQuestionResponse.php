@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListMidocoQuestionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoQuestion
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoQuestion[]
      */
     protected ?array $MidocoQuestion = null;
     /**
      * Constructor method for ListMidocoQuestionResponse
      * @uses ListMidocoQuestionResponse::setMidocoQuestion()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion[] $midocoQuestion
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoQuestion[] $midocoQuestion
      */
     public function __construct(?array $midocoQuestion = null)
     {
@@ -34,7 +34,7 @@ class ListMidocoQuestionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoQuestion value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoQuestion[]
      */
     public function getMidocoQuestion(): ?array
     {
@@ -55,12 +55,12 @@ class ListMidocoQuestionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listMidocoQuestionResponseMidocoQuestionItem) {
             // validation for constraint: itemType
-            if (!$listMidocoQuestionResponseMidocoQuestionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion) {
+            if (!$listMidocoQuestionResponseMidocoQuestionItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoQuestion) {
                 $invalidValues[] = is_object($listMidocoQuestionResponseMidocoQuestionItem) ? get_class($listMidocoQuestionResponseMidocoQuestionItem) : sprintf('%s(%s)', gettype($listMidocoQuestionResponseMidocoQuestionItem), var_export($listMidocoQuestionResponseMidocoQuestionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoQuestion property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoQuestion property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoQuestion, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListMidocoQuestionResponse extends AbstractStructBase
     /**
      * Set MidocoQuestion value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion[] $midocoQuestion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ListMidocoQuestionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoQuestion[] $midocoQuestion
+     * @return \Pggns\MidocoApi\Order\StructType\ListMidocoQuestionResponse
      */
     public function setMidocoQuestion(?array $midocoQuestion = null): self
     {
@@ -85,14 +85,14 @@ class ListMidocoQuestionResponse extends AbstractStructBase
     /**
      * Add item to MidocoQuestion value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ListMidocoQuestionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoQuestion $item
+     * @return \Pggns\MidocoApi\Order\StructType\ListMidocoQuestionResponse
      */
-    public function addToMidocoQuestion(\Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion $item): self
+    public function addToMidocoQuestion(\Pggns\MidocoApi\Order\StructType\MidocoQuestion $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion) {
-            throw new InvalidArgumentException(sprintf('The MidocoQuestion property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoQuestion) {
+            throw new InvalidArgumentException(sprintf('The MidocoQuestion property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoQuestion, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoQuestion[] = $item;
         

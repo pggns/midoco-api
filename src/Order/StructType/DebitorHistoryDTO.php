@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class DebitorHistoryDTO extends AbstractStructBase
     /**
      * Set agent value
      * @param string $agent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorHistoryDTO
      */
     public function setAgent(?string $agent = null): self
     {
@@ -110,7 +110,7 @@ class DebitorHistoryDTO extends AbstractStructBase
     /**
      * Set branch value
      * @param string $branch
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorHistoryDTO
      */
     public function setBranch(?string $branch = null): self
     {
@@ -133,7 +133,7 @@ class DebitorHistoryDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorHistoryDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -156,7 +156,7 @@ class DebitorHistoryDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorHistoryDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -179,7 +179,7 @@ class DebitorHistoryDTO extends AbstractStructBase
     /**
      * Set historyId value
      * @param int $historyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorHistoryDTO
      */
     public function setHistoryId(?int $historyId = null): self
     {
@@ -202,7 +202,7 @@ class DebitorHistoryDTO extends AbstractStructBase
     /**
      * Set isImport value
      * @param bool $isImport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorHistoryDTO
      */
     public function setIsImport(?bool $isImport = null): self
     {
@@ -225,7 +225,7 @@ class DebitorHistoryDTO extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorHistoryDTO
      */
     public function setVersion(?string $version = null): self
     {

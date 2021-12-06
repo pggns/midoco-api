@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -26,9 +26,9 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      * - choiceMinOccurs: 1
      * - minOccurs: 0
      * - ref: order:MidocoBillingDocument
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocument|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
     /**
      * The MidocoInvoice
      * Meta information extracted from the WSDL
@@ -37,9 +37,9 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      * - choiceMinOccurs: 1
      * - minOccurs: 0
      * - ref: order:MidocoInvoice
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoice|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoInvoice|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoice $MidocoInvoice = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoInvoice $MidocoInvoice = null;
     /**
      * The MidocoReceipt
      * Meta information extracted from the WSDL
@@ -48,9 +48,9 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      * - choiceMinOccurs: 1
      * - minOccurs: 0
      * - ref: order:MidocoReceipt
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceipt|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoReceipt|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoReceipt $MidocoReceipt = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoReceipt $MidocoReceipt = null;
     /**
      * The refDocumentNumber
      * @var string|null
@@ -64,12 +64,12 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      * @uses MidocoExtDocumentDesc::setMidocoReceipt()
      * @uses MidocoExtDocumentDesc::setRefDocumentNumber()
      * @param string $documentType
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocument $midocoBillingDocument
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoice $midocoInvoice
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceipt $midocoReceipt
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoInvoice $midocoInvoice
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoReceipt $midocoReceipt
      * @param string $refDocumentNumber
      */
-    public function __construct(?string $documentType = null, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoice $midocoInvoice = null, ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoReceipt $midocoReceipt = null, ?string $refDocumentNumber = null)
+    public function __construct(?string $documentType = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoInvoice $midocoInvoice = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoReceipt $midocoReceipt = null, ?string $refDocumentNumber = null)
     {
         $this
             ->setDocumentType($documentType)
@@ -88,17 +88,17 @@ class MidocoExtDocumentDesc extends AbstractStructBase
     }
     /**
      * Set documentType value
-     * @uses \Pggns\MidocoApi\Api\Documents\EnumType\ExtDocumentType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Documents\EnumType\ExtDocumentType::getValidValues()
+     * @uses \Pggns\MidocoApi\Documents\EnumType\ExtDocumentType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Documents\EnumType\ExtDocumentType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc
      */
     public function setDocumentType(?string $documentType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Documents\EnumType\ExtDocumentType::valueIsValid($documentType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Documents\EnumType\ExtDocumentType', is_array($documentType) ? implode(', ', $documentType) : var_export($documentType, true), implode(', ', \Pggns\MidocoApi\Api\Documents\EnumType\ExtDocumentType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Documents\EnumType\ExtDocumentType::valueIsValid($documentType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Documents\EnumType\ExtDocumentType', is_array($documentType) ? implode(', ', $documentType) : var_export($documentType, true), implode(', ', \Pggns\MidocoApi\Documents\EnumType\ExtDocumentType::getValidValues())), __LINE__);
         }
         $this->documentType = $documentType;
         
@@ -106,9 +106,9 @@ class MidocoExtDocumentDesc extends AbstractStructBase
     }
     /**
      * Get MidocoBillingDocument value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocument|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocument|null
      */
-    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocument
+    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Documents\StructType\MidocoBillingDocument
     {
         return isset($this->MidocoBillingDocument) ? $this->MidocoBillingDocument : null;
     }
@@ -147,10 +147,10 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocument $midocoBillingDocument
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc
      */
-    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
+    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Documents\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
     {
         // validation for constraint: choice(MidocoBillingDocument, MidocoInvoice, MidocoReceipt)
         if ('' !== ($midocoBillingDocumentChoiceErrorMessage = self::validateMidocoBillingDocumentForChoiceConstraintsFromSetMidocoBillingDocument($midocoBillingDocument))) {
@@ -166,9 +166,9 @@ class MidocoExtDocumentDesc extends AbstractStructBase
     }
     /**
      * Get MidocoInvoice value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoice|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoInvoice|null
      */
-    public function getMidocoInvoice(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoice
+    public function getMidocoInvoice(): ?\Pggns\MidocoApi\Documents\StructType\MidocoInvoice
     {
         return isset($this->MidocoInvoice) ? $this->MidocoInvoice : null;
     }
@@ -207,10 +207,10 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoice $midocoInvoice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoInvoice $midocoInvoice
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc
      */
-    public function setMidocoInvoice(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoice $midocoInvoice = null): self
+    public function setMidocoInvoice(?\Pggns\MidocoApi\Documents\StructType\MidocoInvoice $midocoInvoice = null): self
     {
         // validation for constraint: choice(MidocoBillingDocument, MidocoInvoice, MidocoReceipt)
         if ('' !== ($midocoInvoiceChoiceErrorMessage = self::validateMidocoInvoiceForChoiceConstraintsFromSetMidocoInvoice($midocoInvoice))) {
@@ -226,9 +226,9 @@ class MidocoExtDocumentDesc extends AbstractStructBase
     }
     /**
      * Get MidocoReceipt value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceipt|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoReceipt|null
      */
-    public function getMidocoReceipt(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoReceipt
+    public function getMidocoReceipt(): ?\Pggns\MidocoApi\Documents\StructType\MidocoReceipt
     {
         return isset($this->MidocoReceipt) ? $this->MidocoReceipt : null;
     }
@@ -267,10 +267,10 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoReceipt $midocoReceipt
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoReceipt $midocoReceipt
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc
      */
-    public function setMidocoReceipt(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoReceipt $midocoReceipt = null): self
+    public function setMidocoReceipt(?\Pggns\MidocoApi\Documents\StructType\MidocoReceipt $midocoReceipt = null): self
     {
         // validation for constraint: choice(MidocoBillingDocument, MidocoInvoice, MidocoReceipt)
         if ('' !== ($midocoReceiptChoiceErrorMessage = self::validateMidocoReceiptForChoiceConstraintsFromSetMidocoReceipt($midocoReceipt))) {
@@ -295,7 +295,7 @@ class MidocoExtDocumentDesc extends AbstractStructBase
     /**
      * Set refDocumentNumber value
      * @param string $refDocumentNumber
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoExtDocumentDesc
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc
      */
     public function setRefDocumentNumber(?string $refDocumentNumber = null): self
     {

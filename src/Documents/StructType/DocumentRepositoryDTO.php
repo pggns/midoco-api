@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class DocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set contentType value
      * @param string $contentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryDTO
      */
     public function setContentType(?string $contentType = null): self
     {
@@ -118,7 +118,7 @@ class DocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -141,7 +141,7 @@ class DocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -164,7 +164,7 @@ class DocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set documentContent value
      * @param string $documentContent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryDTO
      */
     public function setDocumentContent(?string $documentContent = null): self
     {
@@ -187,7 +187,7 @@ class DocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set documentRefId value
      * @param int $documentRefId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryDTO
      */
     public function setDocumentRefId(?int $documentRefId = null): self
     {
@@ -210,7 +210,7 @@ class DocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryDTO
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -233,7 +233,7 @@ class DocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -256,7 +256,7 @@ class DocumentRepositoryDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class CheckSupplierAgencySettlementResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:MidocoFault
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoFaultType[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoFaultType[]
      */
     protected ?array $MidocoFault = null;
     /**
      * Constructor method for CheckSupplierAgencySettlementResponse
      * @uses CheckSupplierAgencySettlementResponse::setMidocoFault()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFaultType[] $midocoFault
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFaultType[] $midocoFault
      */
     public function __construct(?array $midocoFault = null)
     {
@@ -34,7 +34,7 @@ class CheckSupplierAgencySettlementResponse extends AbstractStructBase
     }
     /**
      * Get MidocoFault value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFaultType[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFaultType[]
      */
     public function getMidocoFault(): ?array
     {
@@ -55,12 +55,12 @@ class CheckSupplierAgencySettlementResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $checkSupplierAgencySettlementResponseMidocoFaultItem) {
             // validation for constraint: itemType
-            if (!$checkSupplierAgencySettlementResponseMidocoFaultItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFaultType) {
+            if (!$checkSupplierAgencySettlementResponseMidocoFaultItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoFaultType) {
                 $invalidValues[] = is_object($checkSupplierAgencySettlementResponseMidocoFaultItem) ? get_class($checkSupplierAgencySettlementResponseMidocoFaultItem) : sprintf('%s(%s)', gettype($checkSupplierAgencySettlementResponseMidocoFaultItem), var_export($checkSupplierAgencySettlementResponseMidocoFaultItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFault property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFaultType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFault property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFaultType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class CheckSupplierAgencySettlementResponse extends AbstractStructBase
     /**
      * Set MidocoFault value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFaultType[] $midocoFault
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFaultType[] $midocoFault
+     * @return \Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementResponse
      */
     public function setMidocoFault(?array $midocoFault = null): self
     {
@@ -85,14 +85,14 @@ class CheckSupplierAgencySettlementResponse extends AbstractStructBase
     /**
      * Add item to MidocoFault value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFaultType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFaultType $item
+     * @return \Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementResponse
      */
-    public function addToMidocoFault(\Pggns\MidocoApi\Api\Order\StructType\MidocoFaultType $item): self
+    public function addToMidocoFault(\Pggns\MidocoApi\Order\StructType\MidocoFaultType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFaultType) {
-            throw new InvalidArgumentException(sprintf('The MidocoFault property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFaultType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoFaultType) {
+            throw new InvalidArgumentException(sprintf('The MidocoFault property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFaultType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFault[] = $item;
         

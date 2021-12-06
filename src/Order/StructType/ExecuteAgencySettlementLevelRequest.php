@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -112,7 +112,7 @@ class ExecuteAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set travelDateFrom value
      * @param string $travelDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementLevelRequest
      */
     public function setTravelDateFrom(string $travelDateFrom): self
     {
@@ -135,7 +135,7 @@ class ExecuteAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set travelDateTo value
      * @param string $travelDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementLevelRequest
      */
     public function setTravelDateTo(string $travelDateTo): self
     {
@@ -158,7 +158,7 @@ class ExecuteAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set compareTravelDateFrom value
      * @param string $compareTravelDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementLevelRequest
      */
     public function setCompareTravelDateFrom(string $compareTravelDateFrom): self
     {
@@ -181,7 +181,7 @@ class ExecuteAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set compareTravelDateTo value
      * @param string $compareTravelDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementLevelRequest
      */
     public function setCompareTravelDateTo(string $compareTravelDateTo): self
     {
@@ -204,7 +204,7 @@ class ExecuteAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementLevelRequest
      */
     public function setSettlementType(string $settlementType): self
     {
@@ -254,7 +254,7 @@ class ExecuteAgencySettlementLevelRequest extends AbstractStructBase
      * Set ID value
      * @throws InvalidArgumentException
      * @param string[] $iD
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementLevelRequest
      */
     public function setID(?array $iD = null): self
     {
@@ -270,7 +270,7 @@ class ExecuteAgencySettlementLevelRequest extends AbstractStructBase
      * Add item to ID value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementLevelRequest
      */
     public function addToID(string $item): self
     {
@@ -293,7 +293,7 @@ class ExecuteAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set invoiceByEmail value
      * @param bool $invoiceByEmail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementLevelRequest
      */
     public function setInvoiceByEmail(?bool $invoiceByEmail = false): self
     {
@@ -316,7 +316,7 @@ class ExecuteAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set isPreview value
      * @param bool $isPreview
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementLevelRequest
      */
     public function setIsPreview(?bool $isPreview = true): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveContactMediaDescriptionResponse extends AbstractStructBase
      * The MidocoContactMediaDescription
      * Meta information extracted from the WSDL
      * - ref: MidocoContactMediaDescription
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MediaDescriptionDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MediaDescriptionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MediaDescriptionDTO $MidocoContactMediaDescription = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MediaDescriptionDTO $MidocoContactMediaDescription = null;
     /**
      * Constructor method for SaveContactMediaDescriptionResponse
      * @uses SaveContactMediaDescriptionResponse::setMidocoContactMediaDescription()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MediaDescriptionDTO $midocoContactMediaDescription
+     * @param \Pggns\MidocoApi\Crm\StructType\MediaDescriptionDTO $midocoContactMediaDescription
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MediaDescriptionDTO $midocoContactMediaDescription = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MediaDescriptionDTO $midocoContactMediaDescription = null)
     {
         $this
             ->setMidocoContactMediaDescription($midocoContactMediaDescription);
     }
     /**
      * Get MidocoContactMediaDescription value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MediaDescriptionDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MediaDescriptionDTO|null
      */
-    public function getMidocoContactMediaDescription(): ?\Pggns\MidocoApi\Api\Crm\StructType\MediaDescriptionDTO
+    public function getMidocoContactMediaDescription(): ?\Pggns\MidocoApi\Crm\StructType\MediaDescriptionDTO
     {
         return $this->MidocoContactMediaDescription;
     }
     /**
      * Set MidocoContactMediaDescription value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MediaDescriptionDTO $midocoContactMediaDescription
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveContactMediaDescriptionResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MediaDescriptionDTO $midocoContactMediaDescription
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveContactMediaDescriptionResponse
      */
-    public function setMidocoContactMediaDescription(?\Pggns\MidocoApi\Api\Crm\StructType\MediaDescriptionDTO $midocoContactMediaDescription = null): self
+    public function setMidocoContactMediaDescription(?\Pggns\MidocoApi\Crm\StructType\MediaDescriptionDTO $midocoContactMediaDescription = null): self
     {
         $this->MidocoContactMediaDescription = $midocoContactMediaDescription;
         

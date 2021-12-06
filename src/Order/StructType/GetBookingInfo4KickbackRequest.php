@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetBookingInfo4KickbackRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingInfo4KickbackRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingInfo4KickbackRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {

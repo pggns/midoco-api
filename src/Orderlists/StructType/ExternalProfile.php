@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class ExternalProfile extends AbstractStructBase
     /**
      * Set gds value
      * @param string $gds
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalProfile
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExternalProfile
      */
     public function setGds(?string $gds = null): self
     {
@@ -78,7 +78,7 @@ class ExternalProfile extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalProfile
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExternalProfile
      */
     public function setId(?string $id = null): self
     {
@@ -101,7 +101,7 @@ class ExternalProfile extends AbstractStructBase
     /**
      * Set version value
      * @param int $version
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExternalProfile
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExternalProfile
      */
     public function setVersion(?int $version = null): self
     {

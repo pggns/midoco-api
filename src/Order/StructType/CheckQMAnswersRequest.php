@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CheckQMAnswersRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckQMAnswersRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckQMAnswersRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -78,7 +78,7 @@ class CheckQMAnswersRequest extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckQMAnswersRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckQMAnswersRequest
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -101,7 +101,7 @@ class CheckQMAnswersRequest extends AbstractStructBase
     /**
      * Set noticeText value
      * @param string $noticeText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckQMAnswersRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckQMAnswersRequest
      */
     public function setNoticeText(?string $noticeText = null): self
     {

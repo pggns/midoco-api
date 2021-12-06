@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class MidocoAdditionalPrintDocument extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdditionalPrintDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdditionalPrintDocument
      */
     public function setName(string $name): self
     {
@@ -84,7 +84,7 @@ class MidocoAdditionalPrintDocument extends AbstractStructBase
     /**
      * Set data value
      * @param string $data
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdditionalPrintDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdditionalPrintDocument
      */
     public function setData(string $data): self
     {
@@ -107,7 +107,7 @@ class MidocoAdditionalPrintDocument extends AbstractStructBase
     /**
      * Set mimeType value
      * @param string $mimeType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdditionalPrintDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdditionalPrintDocument
      */
     public function setMimeType(?string $mimeType = 'application/pdf'): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -140,7 +140,7 @@ class Debit_payment extends AbstractStructBase
     /**
      * Set bank_name value
      * @param string $bank_name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Debit_payment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Debit_payment
      */
     public function setBank_name(?string $bank_name = null): self
     {
@@ -163,7 +163,7 @@ class Debit_payment extends AbstractStructBase
     /**
      * Set bank_number value
      * @param string $bank_number
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Debit_payment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Debit_payment
      */
     public function setBank_number(?string $bank_number = null): self
     {
@@ -186,7 +186,7 @@ class Debit_payment extends AbstractStructBase
     /**
      * Set account_no value
      * @param string $account_no
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Debit_payment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Debit_payment
      */
     public function setAccount_no(?string $account_no = null): self
     {
@@ -209,7 +209,7 @@ class Debit_payment extends AbstractStructBase
     /**
      * Set account_owner value
      * @param string $account_owner
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Debit_payment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Debit_payment
      */
     public function setAccount_owner(?string $account_owner = null): self
     {
@@ -232,7 +232,7 @@ class Debit_payment extends AbstractStructBase
     /**
      * Set bank_country value
      * @param string $bank_country
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Debit_payment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Debit_payment
      */
     public function setBank_country(?string $bank_country = 'DE'): self
     {
@@ -255,7 +255,7 @@ class Debit_payment extends AbstractStructBase
     /**
      * Set is_iban value
      * @param bool $is_iban
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Debit_payment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Debit_payment
      */
     public function setIs_iban(?bool $is_iban = false): self
     {
@@ -278,7 +278,7 @@ class Debit_payment extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Debit_payment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Debit_payment
      */
     public function setIban(?string $iban = null): self
     {
@@ -301,7 +301,7 @@ class Debit_payment extends AbstractStructBase
     /**
      * Set swift_bic_code value
      * @param string $swift_bic_code
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Debit_payment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Debit_payment
      */
     public function setSwift_bic_code(?string $swift_bic_code = null): self
     {
@@ -324,7 +324,7 @@ class Debit_payment extends AbstractStructBase
     /**
      * Set bank_city value
      * @param string $bank_city
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Debit_payment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Debit_payment
      */
     public function setBank_city(?string $bank_city = null): self
     {
@@ -347,7 +347,7 @@ class Debit_payment extends AbstractStructBase
     /**
      * Set bank_street value
      * @param string $bank_street
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Debit_payment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Debit_payment
      */
     public function setBank_street(?string $bank_street = null): self
     {
@@ -370,7 +370,7 @@ class Debit_payment extends AbstractStructBase
     /**
      * Set mandate_reference value
      * @param string $mandate_reference
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Debit_payment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Debit_payment
      */
     public function setMandate_reference(?string $mandate_reference = null): self
     {

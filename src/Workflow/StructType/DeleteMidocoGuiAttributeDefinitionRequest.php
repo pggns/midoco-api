@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteMidocoGuiAttributeDefinitionRequest extends AbstractStructBase
     /**
      * Set attributeId value
      * @param int $attributeId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoGuiAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteMidocoGuiAttributeDefinitionRequest
      */
     public function setAttributeId(?int $attributeId = null): self
     {

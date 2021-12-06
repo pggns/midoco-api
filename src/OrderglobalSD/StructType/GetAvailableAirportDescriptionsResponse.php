@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetAvailableAirportDescriptionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAirportDescription
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDescriptionDTO[]
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDescriptionDTO[]
      */
     protected ?array $MidocoAirportDescription = null;
     /**
      * Constructor method for GetAvailableAirportDescriptionsResponse
      * @uses GetAvailableAirportDescriptionsResponse::setMidocoAirportDescription()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDescriptionDTO[] $midocoAirportDescription
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDescriptionDTO[] $midocoAirportDescription
      */
     public function __construct(?array $midocoAirportDescription = null)
     {
@@ -36,7 +36,7 @@ class GetAvailableAirportDescriptionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAirportDescription value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDescriptionDTO[]
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDescriptionDTO[]
      */
     public function getMidocoAirportDescription(): ?array
     {
@@ -57,12 +57,12 @@ class GetAvailableAirportDescriptionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailableAirportDescriptionsResponseMidocoAirportDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getAvailableAirportDescriptionsResponseMidocoAirportDescriptionItem instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDescriptionDTO) {
+            if (!$getAvailableAirportDescriptionsResponseMidocoAirportDescriptionItem instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDescriptionDTO) {
                 $invalidValues[] = is_object($getAvailableAirportDescriptionsResponseMidocoAirportDescriptionItem) ? get_class($getAvailableAirportDescriptionsResponseMidocoAirportDescriptionItem) : sprintf('%s(%s)', gettype($getAvailableAirportDescriptionsResponseMidocoAirportDescriptionItem), var_export($getAvailableAirportDescriptionsResponseMidocoAirportDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAirportDescription property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAirportDescription property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetAvailableAirportDescriptionsResponse extends AbstractStructBase
     /**
      * Set MidocoAirportDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDescriptionDTO[] $midocoAirportDescription
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableAirportDescriptionsResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDescriptionDTO[] $midocoAirportDescription
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableAirportDescriptionsResponse
      */
     public function setMidocoAirportDescription(?array $midocoAirportDescription = null): self
     {
@@ -87,14 +87,14 @@ class GetAvailableAirportDescriptionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoAirportDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableAirportDescriptionsResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDescriptionDTO $item
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableAirportDescriptionsResponse
      */
-    public function addToMidocoAirportDescription(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDescriptionDTO $item): self
+    public function addToMidocoAirportDescription(\Pggns\MidocoApi\OrderglobalSD\StructType\AirportDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAirportDescription property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirportDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAirportDescription property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\AirportDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAirportDescription[] = $item;
         

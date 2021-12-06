@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetCrmCustomerPaymentGroupFeeResponse extends AbstractStructBase
     /**
      * Set groupFee value
      * @param string $groupFee
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmCustomerPaymentGroupFeeResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmCustomerPaymentGroupFeeResponse
      */
     public function setGroupFee(?string $groupFee = null): self
     {

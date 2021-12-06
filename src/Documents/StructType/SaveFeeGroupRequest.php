@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveFeeGroupRequest extends AbstractStructBase
      * The MidocoFeeGroup
      * Meta information extracted from the WSDL
      * - ref: MidocoFeeGroup
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoFeeGroup|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoFeeGroup|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoFeeGroup $MidocoFeeGroup = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoFeeGroup $MidocoFeeGroup = null;
     /**
      * The feeGroupToCopyAssignmentsFrom
      * @var string|null
@@ -35,11 +35,11 @@ class SaveFeeGroupRequest extends AbstractStructBase
      * @uses SaveFeeGroupRequest::setMidocoFeeGroup()
      * @uses SaveFeeGroupRequest::setFeeGroupToCopyAssignmentsFrom()
      * @uses SaveFeeGroupRequest::setDeleteExistingAssignments()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoFeeGroup $midocoFeeGroup
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoFeeGroup $midocoFeeGroup
      * @param string $feeGroupToCopyAssignmentsFrom
      * @param bool $deleteExistingAssignments
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoFeeGroup $midocoFeeGroup = null, ?string $feeGroupToCopyAssignmentsFrom = null, ?bool $deleteExistingAssignments = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoFeeGroup $midocoFeeGroup = null, ?string $feeGroupToCopyAssignmentsFrom = null, ?bool $deleteExistingAssignments = null)
     {
         $this
             ->setMidocoFeeGroup($midocoFeeGroup)
@@ -48,18 +48,18 @@ class SaveFeeGroupRequest extends AbstractStructBase
     }
     /**
      * Get MidocoFeeGroup value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFeeGroup|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFeeGroup|null
      */
-    public function getMidocoFeeGroup(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoFeeGroup
+    public function getMidocoFeeGroup(): ?\Pggns\MidocoApi\Documents\StructType\MidocoFeeGroup
     {
         return $this->MidocoFeeGroup;
     }
     /**
      * Set MidocoFeeGroup value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoFeeGroup $midocoFeeGroup
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveFeeGroupRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoFeeGroup $midocoFeeGroup
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveFeeGroupRequest
      */
-    public function setMidocoFeeGroup(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoFeeGroup $midocoFeeGroup = null): self
+    public function setMidocoFeeGroup(?\Pggns\MidocoApi\Documents\StructType\MidocoFeeGroup $midocoFeeGroup = null): self
     {
         $this->MidocoFeeGroup = $midocoFeeGroup;
         
@@ -76,7 +76,7 @@ class SaveFeeGroupRequest extends AbstractStructBase
     /**
      * Set feeGroupToCopyAssignmentsFrom value
      * @param string $feeGroupToCopyAssignmentsFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveFeeGroupRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveFeeGroupRequest
      */
     public function setFeeGroupToCopyAssignmentsFrom(?string $feeGroupToCopyAssignmentsFrom = null): self
     {
@@ -99,7 +99,7 @@ class SaveFeeGroupRequest extends AbstractStructBase
     /**
      * Set deleteExistingAssignments value
      * @param bool $deleteExistingAssignments
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveFeeGroupRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveFeeGroupRequest
      */
     public function setDeleteExistingAssignments(?bool $deleteExistingAssignments = null): self
     {

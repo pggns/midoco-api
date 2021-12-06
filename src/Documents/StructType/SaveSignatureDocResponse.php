@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class SaveSignatureDocResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoSignatureDoc
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc $MidocoSignatureDoc = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc $MidocoSignatureDoc = null;
     /**
      * Constructor method for SaveSignatureDocResponse
      * @uses SaveSignatureDocResponse::setMidocoSignatureDoc()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc $midocoSignatureDoc
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc $midocoSignatureDoc
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc $midocoSignatureDoc = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc $midocoSignatureDoc = null)
     {
         $this
             ->setMidocoSignatureDoc($midocoSignatureDoc);
     }
     /**
      * Get MidocoSignatureDoc value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc|null
      */
-    public function getMidocoSignatureDoc(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc
+    public function getMidocoSignatureDoc(): ?\Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc
     {
         return $this->MidocoSignatureDoc;
     }
     /**
      * Set MidocoSignatureDoc value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc $midocoSignatureDoc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveSignatureDocResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc $midocoSignatureDoc
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveSignatureDocResponse
      */
-    public function setMidocoSignatureDoc(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSignatureDoc $midocoSignatureDoc = null): self
+    public function setMidocoSignatureDoc(?\Pggns\MidocoApi\Documents\StructType\MidocoSignatureDoc $midocoSignatureDoc = null): self
     {
         $this->MidocoSignatureDoc = $midocoSignatureDoc;
         

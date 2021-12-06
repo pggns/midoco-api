@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CountryTokenDTO extends AbstractStructBase
     /**
      * Set crsConstraint value
      * @param string $crsConstraint
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CountryTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CountryTokenDTO
      */
     public function setCrsConstraint(?string $crsConstraint = null): self
     {
@@ -86,7 +86,7 @@ class CountryTokenDTO extends AbstractStructBase
     /**
      * Set forLocalization value
      * @param string $forLocalization
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CountryTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CountryTokenDTO
      */
     public function setForLocalization(?string $forLocalization = null): self
     {
@@ -109,7 +109,7 @@ class CountryTokenDTO extends AbstractStructBase
     /**
      * Set iso2 value
      * @param string $iso2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CountryTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CountryTokenDTO
      */
     public function setIso2(?string $iso2 = null): self
     {
@@ -132,7 +132,7 @@ class CountryTokenDTO extends AbstractStructBase
     /**
      * Set token value
      * @param string $token
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CountryTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CountryTokenDTO
      */
     public function setToken(?string $token = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoOrderContactHistory extends OrderContactHistoryDTO
     /**
      * Set userLogin value
      * @param string $userLogin
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory
      */
     public function setUserLogin(?string $userLogin = null): self
     {

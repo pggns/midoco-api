@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,13 +20,13 @@ class Hints extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Hint[]
+     * @var \Pggns\MidocoApi\Order\StructType\Hint[]
      */
     protected ?array $hint = null;
     /**
      * Constructor method for hints
      * @uses Hints::setHint()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Hint[] $hint
+     * @param \Pggns\MidocoApi\Order\StructType\Hint[] $hint
      */
     public function __construct(?array $hint = null)
     {
@@ -35,7 +35,7 @@ class Hints extends AbstractStructBase
     }
     /**
      * Get hint value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Hint[]
+     * @return \Pggns\MidocoApi\Order\StructType\Hint[]
      */
     public function getHint(): ?array
     {
@@ -56,12 +56,12 @@ class Hints extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $hintsHintItem) {
             // validation for constraint: itemType
-            if (!$hintsHintItem instanceof \Pggns\MidocoApi\Api\Order\StructType\Hint) {
+            if (!$hintsHintItem instanceof \Pggns\MidocoApi\Order\StructType\Hint) {
                 $invalidValues[] = is_object($hintsHintItem) ? get_class($hintsHintItem) : sprintf('%s(%s)', gettype($hintsHintItem), var_export($hintsHintItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The hint property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Hint, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The hint property can only contain items of type \Pggns\MidocoApi\Order\StructType\Hint, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -70,8 +70,8 @@ class Hints extends AbstractStructBase
     /**
      * Set hint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Hint[] $hint
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Hints
+     * @param \Pggns\MidocoApi\Order\StructType\Hint[] $hint
+     * @return \Pggns\MidocoApi\Order\StructType\Hints
      */
     public function setHint(?array $hint = null): self
     {
@@ -86,14 +86,14 @@ class Hints extends AbstractStructBase
     /**
      * Add item to hint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Hint $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Hints
+     * @param \Pggns\MidocoApi\Order\StructType\Hint $item
+     * @return \Pggns\MidocoApi\Order\StructType\Hints
      */
-    public function addToHint(\Pggns\MidocoApi\Api\Order\StructType\Hint $item): self
+    public function addToHint(\Pggns\MidocoApi\Order\StructType\Hint $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\Hint) {
-            throw new InvalidArgumentException(sprintf('The hint property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Hint, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\Hint) {
+            throw new InvalidArgumentException(sprintf('The hint property can only contain items of type \Pggns\MidocoApi\Order\StructType\Hint, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->hint[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class DeleteMidocoSettlementTypeRequest extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoSettlementTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMidocoSettlementTypeRequest
      */
     public function setSettlementType(string $settlementType): self
     {

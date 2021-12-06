@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class VirtualAccountDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VirtualAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VirtualAccountDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -110,7 +110,7 @@ class VirtualAccountDTO extends AbstractStructBase
     /**
      * Set bookingPeriod value
      * @param int $bookingPeriod
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VirtualAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VirtualAccountDTO
      */
     public function setBookingPeriod(?int $bookingPeriod = null): self
     {
@@ -133,7 +133,7 @@ class VirtualAccountDTO extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VirtualAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VirtualAccountDTO
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -156,7 +156,7 @@ class VirtualAccountDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VirtualAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VirtualAccountDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -179,7 +179,7 @@ class VirtualAccountDTO extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VirtualAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VirtualAccountDTO
      */
     public function setProductType(?string $productType = null): self
     {
@@ -202,7 +202,7 @@ class VirtualAccountDTO extends AbstractStructBase
     /**
      * Set usedAccount value
      * @param string $usedAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VirtualAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VirtualAccountDTO
      */
     public function setUsedAccount(?string $usedAccount = null): self
     {
@@ -225,7 +225,7 @@ class VirtualAccountDTO extends AbstractStructBase
     /**
      * Set virtualAccountId value
      * @param int $virtualAccountId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VirtualAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VirtualAccountDTO
      */
     public function setVirtualAccountId(?int $virtualAccountId = null): self
     {

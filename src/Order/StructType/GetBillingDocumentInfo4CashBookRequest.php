@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetBillingDocumentInfo4CashBookRequest extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param string $cashBookId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocumentInfo4CashBookRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentInfo4CashBookRequest
      */
     public function setCashBookId(?string $cashBookId = null): self
     {
@@ -70,7 +70,7 @@ class GetBillingDocumentInfo4CashBookRequest extends AbstractStructBase
     /**
      * Set toDate value
      * @param string $toDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocumentInfo4CashBookRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentInfo4CashBookRequest
      */
     public function setToDate(?string $toDate = null): self
     {

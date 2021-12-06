@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class MidocoFlightSegmentDetails4Printing extends FlightSegmentDetailDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellPassenger
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassenger[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassenger[]
      */
     protected ?array $MidocoSellPassenger = null;
     /**
      * Constructor method for MidocoFlightSegmentDetails4Printing
      * @uses MidocoFlightSegmentDetails4Printing::setMidocoSellPassenger()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassenger[] $midocoSellPassenger
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassenger[] $midocoSellPassenger
      */
     public function __construct(?array $midocoSellPassenger = null)
     {
@@ -34,7 +34,7 @@ class MidocoFlightSegmentDetails4Printing extends FlightSegmentDetailDTO
     }
     /**
      * Get MidocoSellPassenger value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassenger[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassenger[]
      */
     public function getMidocoSellPassenger(): ?array
     {
@@ -55,12 +55,12 @@ class MidocoFlightSegmentDetails4Printing extends FlightSegmentDetailDTO
         $invalidValues = [];
         foreach ($values as $midocoFlightSegmentDetails4PrintingMidocoSellPassengerItem) {
             // validation for constraint: itemType
-            if (!$midocoFlightSegmentDetails4PrintingMidocoSellPassengerItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassenger) {
+            if (!$midocoFlightSegmentDetails4PrintingMidocoSellPassengerItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassenger) {
                 $invalidValues[] = is_object($midocoFlightSegmentDetails4PrintingMidocoSellPassengerItem) ? get_class($midocoFlightSegmentDetails4PrintingMidocoSellPassengerItem) : sprintf('%s(%s)', gettype($midocoFlightSegmentDetails4PrintingMidocoSellPassengerItem), var_export($midocoFlightSegmentDetails4PrintingMidocoSellPassengerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassenger, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassenger, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class MidocoFlightSegmentDetails4Printing extends FlightSegmentDetailDTO
     /**
      * Set MidocoSellPassenger value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassenger[] $midocoSellPassenger
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightSegmentDetails4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassenger[] $midocoSellPassenger
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightSegmentDetails4Printing
      */
     public function setMidocoSellPassenger(?array $midocoSellPassenger = null): self
     {
@@ -85,14 +85,14 @@ class MidocoFlightSegmentDetails4Printing extends FlightSegmentDetailDTO
     /**
      * Add item to MidocoSellPassenger value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassenger $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightSegmentDetails4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassenger $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightSegmentDetails4Printing
      */
-    public function addToMidocoSellPassenger(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassenger $item): self
+    public function addToMidocoSellPassenger(\Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassenger $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassenger) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellPassenger, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassenger) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSellPassenger, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellPassenger[] = $item;
         

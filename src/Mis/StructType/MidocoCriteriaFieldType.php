@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MidocoCriteriaFieldType extends AbstractStructBase
     /**
      * Set keyField value
      * @param string $keyField
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType
      */
     public function setKeyField(?string $keyField = null): self
     {
@@ -134,7 +134,7 @@ class MidocoCriteriaFieldType extends AbstractStructBase
     /**
      * Set database value
      * @param string $database
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType
      */
     public function setDatabase(?string $database = null): self
     {
@@ -157,7 +157,7 @@ class MidocoCriteriaFieldType extends AbstractStructBase
     /**
      * Set tableFieldId value
      * @param string $tableFieldId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType
      */
     public function setTableFieldId(?string $tableFieldId = null): self
     {
@@ -180,7 +180,7 @@ class MidocoCriteriaFieldType extends AbstractStructBase
     /**
      * Set fieldId value
      * @param string $fieldId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType
      */
     public function setFieldId(?string $fieldId = null): self
     {
@@ -203,7 +203,7 @@ class MidocoCriteriaFieldType extends AbstractStructBase
     /**
      * Set fieldIdSqlTypeId value
      * @param int $fieldIdSqlTypeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType
      */
     public function setFieldIdSqlTypeId(?int $fieldIdSqlTypeId = null): self
     {
@@ -226,7 +226,7 @@ class MidocoCriteriaFieldType extends AbstractStructBase
     /**
      * Set tableFieldDisplay value
      * @param string $tableFieldDisplay
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType
      */
     public function setTableFieldDisplay(?string $tableFieldDisplay = null): self
     {
@@ -249,7 +249,7 @@ class MidocoCriteriaFieldType extends AbstractStructBase
     /**
      * Set fieldDisplay value
      * @param string $fieldDisplay
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType
      */
     public function setFieldDisplay(?string $fieldDisplay = null): self
     {
@@ -272,7 +272,7 @@ class MidocoCriteriaFieldType extends AbstractStructBase
     /**
      * Set fieldDisplaySqlTypeId value
      * @param int $fieldDisplaySqlTypeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType
      */
     public function setFieldDisplaySqlTypeId(?int $fieldDisplaySqlTypeId = null): self
     {
@@ -295,7 +295,7 @@ class MidocoCriteriaFieldType extends AbstractStructBase
     /**
      * Set tableFieldCultureId value
      * @param string $tableFieldCultureId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType
      */
     public function setTableFieldCultureId(?string $tableFieldCultureId = null): self
     {
@@ -318,7 +318,7 @@ class MidocoCriteriaFieldType extends AbstractStructBase
     /**
      * Set fieldCultureId value
      * @param string $fieldCultureId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType
      */
     public function setFieldCultureId(?string $fieldCultureId = null): self
     {

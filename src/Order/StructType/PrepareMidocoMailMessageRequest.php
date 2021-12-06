@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class PrepareMidocoMailMessageRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMidocoMailMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMidocoMailMessageRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {

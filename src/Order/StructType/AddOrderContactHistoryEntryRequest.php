@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class AddOrderContactHistoryEntryRequest extends AbstractStructBase
      * The MidocoOrderContactHistory
      * Meta information extracted from the WSDL
      * - ref: MidocoOrderContactHistory
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory $MidocoOrderContactHistory = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory $MidocoOrderContactHistory = null;
     /**
      * Constructor method for AddOrderContactHistoryEntryRequest
      * @uses AddOrderContactHistoryEntryRequest::setMidocoOrderContactHistory()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory $midocoOrderContactHistory
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory $midocoOrderContactHistory
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory $midocoOrderContactHistory = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory $midocoOrderContactHistory = null)
     {
         $this
             ->setMidocoOrderContactHistory($midocoOrderContactHistory);
     }
     /**
      * Get MidocoOrderContactHistory value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory|null
      */
-    public function getMidocoOrderContactHistory(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory
+    public function getMidocoOrderContactHistory(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory
     {
         return $this->MidocoOrderContactHistory;
     }
     /**
      * Set MidocoOrderContactHistory value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory $midocoOrderContactHistory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddOrderContactHistoryEntryRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory $midocoOrderContactHistory
+     * @return \Pggns\MidocoApi\Order\StructType\AddOrderContactHistoryEntryRequest
      */
-    public function setMidocoOrderContactHistory(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory $midocoOrderContactHistory = null): self
+    public function setMidocoOrderContactHistory(?\Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory $midocoOrderContactHistory = null): self
     {
         $this->MidocoOrderContactHistory = $midocoOrderContactHistory;
         

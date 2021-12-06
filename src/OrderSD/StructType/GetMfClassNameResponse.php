@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -68,7 +68,7 @@ class GetMfClassNameResponse extends AbstractStructBase
      * Set className value
      * @throws InvalidArgumentException
      * @param string[] $className
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMfClassNameResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMfClassNameResponse
      */
     public function setClassName(?array $className = null): self
     {
@@ -84,7 +84,7 @@ class GetMfClassNameResponse extends AbstractStructBase
      * Add item to className value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMfClassNameResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMfClassNameResponse
      */
     public function addToClassName(string $item): self
     {

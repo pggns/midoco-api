@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class OrgattribvalueDTO extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\OrgattribvalueDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\OrgattribvalueDTO
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -78,7 +78,7 @@ class OrgattribvalueDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\OrgattribvalueDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\OrgattribvalueDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -101,7 +101,7 @@ class OrgattribvalueDTO extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\OrgattribvalueDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\OrgattribvalueDTO
      */
     public function setValue(?string $value = null): self
     {

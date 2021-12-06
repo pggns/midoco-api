@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CashBookITChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookITChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookITChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -86,7 +86,7 @@ class CashBookITChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookITChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookITChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -109,7 +109,7 @@ class CashBookITChangeLogDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookITChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookITChangeLogDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -132,7 +132,7 @@ class CashBookITChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookITChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookITChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

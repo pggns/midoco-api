@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MediatorConditionInfo extends MediatorConditionDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorConditionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorConditionInfo
      */
     public function setDescription(?string $description = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoPaymentProviderSettlementError extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentProviderSettlementError
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentProviderSettlementError
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -86,7 +86,7 @@ class MidocoPaymentProviderSettlementError extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentProviderSettlementError
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentProviderSettlementError
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -109,7 +109,7 @@ class MidocoPaymentProviderSettlementError extends AbstractStructBase
     /**
      * Set errorText value
      * @param string $errorText
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentProviderSettlementError
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentProviderSettlementError
      */
     public function setErrorText(?string $errorText = null): self
     {
@@ -132,7 +132,7 @@ class MidocoPaymentProviderSettlementError extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentProviderSettlementError
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentProviderSettlementError
      */
     public function setCode(?string $code = null): self
     {

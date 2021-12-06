@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchMdcSettlementBillingsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMdcSettlementBillingExt
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMdcSettlementBillingExtType[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMdcSettlementBillingExtType[]
      */
     protected ?array $MidocoMdcSettlementBillingExt = null;
     /**
      * Constructor method for SearchMdcSettlementBillingsResponse
      * @uses SearchMdcSettlementBillingsResponse::setMidocoMdcSettlementBillingExt()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMdcSettlementBillingExtType[] $midocoMdcSettlementBillingExt
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMdcSettlementBillingExtType[] $midocoMdcSettlementBillingExt
      */
     public function __construct(?array $midocoMdcSettlementBillingExt = null)
     {
@@ -34,7 +34,7 @@ class SearchMdcSettlementBillingsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMdcSettlementBillingExt value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMdcSettlementBillingExtType[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMdcSettlementBillingExtType[]
      */
     public function getMidocoMdcSettlementBillingExt(): ?array
     {
@@ -55,12 +55,12 @@ class SearchMdcSettlementBillingsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchMdcSettlementBillingsResponseMidocoMdcSettlementBillingExtItem) {
             // validation for constraint: itemType
-            if (!$searchMdcSettlementBillingsResponseMidocoMdcSettlementBillingExtItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoMdcSettlementBillingExtType) {
+            if (!$searchMdcSettlementBillingsResponseMidocoMdcSettlementBillingExtItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoMdcSettlementBillingExtType) {
                 $invalidValues[] = is_object($searchMdcSettlementBillingsResponseMidocoMdcSettlementBillingExtItem) ? get_class($searchMdcSettlementBillingsResponseMidocoMdcSettlementBillingExtItem) : sprintf('%s(%s)', gettype($searchMdcSettlementBillingsResponseMidocoMdcSettlementBillingExtItem), var_export($searchMdcSettlementBillingsResponseMidocoMdcSettlementBillingExtItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMdcSettlementBillingExt property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoMdcSettlementBillingExtType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMdcSettlementBillingExt property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoMdcSettlementBillingExtType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchMdcSettlementBillingsResponse extends AbstractStructBase
     /**
      * Set MidocoMdcSettlementBillingExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMdcSettlementBillingExtType[] $midocoMdcSettlementBillingExt
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMdcSettlementBillingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMdcSettlementBillingExtType[] $midocoMdcSettlementBillingExt
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMdcSettlementBillingsResponse
      */
     public function setMidocoMdcSettlementBillingExt(?array $midocoMdcSettlementBillingExt = null): self
     {
@@ -85,14 +85,14 @@ class SearchMdcSettlementBillingsResponse extends AbstractStructBase
     /**
      * Add item to MidocoMdcSettlementBillingExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMdcSettlementBillingExtType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMdcSettlementBillingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMdcSettlementBillingExtType $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMdcSettlementBillingsResponse
      */
-    public function addToMidocoMdcSettlementBillingExt(\Pggns\MidocoApi\Api\Order\StructType\MidocoMdcSettlementBillingExtType $item): self
+    public function addToMidocoMdcSettlementBillingExt(\Pggns\MidocoApi\Order\StructType\MidocoMdcSettlementBillingExtType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoMdcSettlementBillingExtType) {
-            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementBillingExt property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoMdcSettlementBillingExtType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoMdcSettlementBillingExtType) {
+            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementBillingExt property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoMdcSettlementBillingExtType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMdcSettlementBillingExt[] = $item;
         

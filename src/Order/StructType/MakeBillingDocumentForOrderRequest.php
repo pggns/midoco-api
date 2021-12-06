@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellPassenger
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[]
      */
     protected ?array $MidocoSellPassenger = null;
     /**
@@ -30,7 +30,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDetailedBillingPositionInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDetailedBillingPositionInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDetailedBillingPositionInfo[]
      */
     protected ?array $MidocoDetailedBillingPositionInfo = null;
     /**
@@ -38,17 +38,17 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoOnlinePaymentHelper
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper $MidocoOnlinePaymentHelper = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper $MidocoOnlinePaymentHelper = null;
     /**
      * The MidocoCustomerInfo
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: crm:MidocoCustomerInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerInfo|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCustomerInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerInfo $MidocoCustomerInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoCustomerInfo $MidocoCustomerInfo = null;
     /**
      * The confirmationGroup
      * @var string|null
@@ -179,10 +179,10 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
      * @uses MakeBillingDocumentForOrderRequest::setPrintAllTravellersNames()
      * @uses MakeBillingDocumentForOrderRequest::setCreateITInvoice()
      * @uses MakeBillingDocumentForOrderRequest::setCreateNormalInvoice()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDetailedBillingPositionInfo[] $midocoDetailedBillingPositionInfo
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerInfo $midocoCustomerInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDetailedBillingPositionInfo[] $midocoDetailedBillingPositionInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCustomerInfo $midocoCustomerInfo
      * @param string $confirmationGroup
      * @param int $documentInternalVersion
      * @param int $documentId
@@ -203,7 +203,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
      * @param bool $createITInvoice
      * @param bool $createNormalInvoice
      */
-    public function __construct(?array $midocoSellPassenger = null, ?array $midocoDetailedBillingPositionInfo = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerInfo $midocoCustomerInfo = null, ?string $confirmationGroup = null, ?int $documentInternalVersion = null, ?int $documentId = null, ?bool $createNewDocument = null, ?bool $deleteExistingDocument = null, ?int $orderId = null, ?int $cashBookId = null, ?int $orderInternalVersion = null, ?string $calculatedPrintDate = null, ?bool $partialPayment = null, ?float $partialAmount = null, ?string $preferredType = null, ?string $paymentType = null, ?string $documentType = null, ?bool $collectiveInvoice = null, ?bool $printGroupName = false, ?bool $printAllTravellersNames = false, ?bool $createITInvoice = false, ?bool $createNormalInvoice = false)
+    public function __construct(?array $midocoSellPassenger = null, ?array $midocoDetailedBillingPositionInfo = null, ?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper = null, ?\Pggns\MidocoApi\Order\StructType\MidocoCustomerInfo $midocoCustomerInfo = null, ?string $confirmationGroup = null, ?int $documentInternalVersion = null, ?int $documentId = null, ?bool $createNewDocument = null, ?bool $deleteExistingDocument = null, ?int $orderId = null, ?int $cashBookId = null, ?int $orderInternalVersion = null, ?string $calculatedPrintDate = null, ?bool $partialPayment = null, ?float $partialAmount = null, ?string $preferredType = null, ?string $paymentType = null, ?string $documentType = null, ?bool $collectiveInvoice = null, ?bool $printGroupName = false, ?bool $printAllTravellersNames = false, ?bool $createITInvoice = false, ?bool $createNormalInvoice = false)
     {
         $this
             ->setMidocoSellPassenger($midocoSellPassenger)
@@ -232,7 +232,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSellPassenger value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[]
      */
     public function getMidocoSellPassenger(): ?array
     {
@@ -253,12 +253,12 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $makeBillingDocumentForOrderRequestMidocoSellPassengerItem) {
             // validation for constraint: itemType
-            if (!$makeBillingDocumentForOrderRequestMidocoSellPassengerItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger) {
+            if (!$makeBillingDocumentForOrderRequestMidocoSellPassengerItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger) {
                 $invalidValues[] = is_object($makeBillingDocumentForOrderRequestMidocoSellPassengerItem) ? get_class($makeBillingDocumentForOrderRequestMidocoSellPassengerItem) : sprintf('%s(%s)', gettype($makeBillingDocumentForOrderRequestMidocoSellPassengerItem), var_export($makeBillingDocumentForOrderRequestMidocoSellPassengerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -267,8 +267,8 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set MidocoSellPassenger value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setMidocoSellPassenger(?array $midocoSellPassenger = null): self
     {
@@ -283,14 +283,14 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Add item to MidocoSellPassenger value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger $item
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
-    public function addToMidocoSellPassenger(\Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger $item): self
+    public function addToMidocoSellPassenger(\Pggns\MidocoApi\Order\StructType\MidocoSellPassenger $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellPassenger[] = $item;
         
@@ -298,7 +298,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     }
     /**
      * Get MidocoDetailedBillingPositionInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDetailedBillingPositionInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDetailedBillingPositionInfo[]
      */
     public function getMidocoDetailedBillingPositionInfo(): ?array
     {
@@ -319,12 +319,12 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $makeBillingDocumentForOrderRequestMidocoDetailedBillingPositionInfoItem) {
             // validation for constraint: itemType
-            if (!$makeBillingDocumentForOrderRequestMidocoDetailedBillingPositionInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDetailedBillingPositionInfo) {
+            if (!$makeBillingDocumentForOrderRequestMidocoDetailedBillingPositionInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoDetailedBillingPositionInfo) {
                 $invalidValues[] = is_object($makeBillingDocumentForOrderRequestMidocoDetailedBillingPositionInfoItem) ? get_class($makeBillingDocumentForOrderRequestMidocoDetailedBillingPositionInfoItem) : sprintf('%s(%s)', gettype($makeBillingDocumentForOrderRequestMidocoDetailedBillingPositionInfoItem), var_export($makeBillingDocumentForOrderRequestMidocoDetailedBillingPositionInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDetailedBillingPositionInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDetailedBillingPositionInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDetailedBillingPositionInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDetailedBillingPositionInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -333,8 +333,8 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set MidocoDetailedBillingPositionInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDetailedBillingPositionInfo[] $midocoDetailedBillingPositionInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDetailedBillingPositionInfo[] $midocoDetailedBillingPositionInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setMidocoDetailedBillingPositionInfo(?array $midocoDetailedBillingPositionInfo = null): self
     {
@@ -349,14 +349,14 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Add item to MidocoDetailedBillingPositionInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDetailedBillingPositionInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDetailedBillingPositionInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
-    public function addToMidocoDetailedBillingPositionInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoDetailedBillingPositionInfo $item): self
+    public function addToMidocoDetailedBillingPositionInfo(\Pggns\MidocoApi\Order\StructType\MidocoDetailedBillingPositionInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDetailedBillingPositionInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoDetailedBillingPositionInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDetailedBillingPositionInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoDetailedBillingPositionInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoDetailedBillingPositionInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDetailedBillingPositionInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDetailedBillingPositionInfo[] = $item;
         
@@ -364,18 +364,18 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOnlinePaymentHelper value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper|null
      */
-    public function getMidocoOnlinePaymentHelper(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper
+    public function getMidocoOnlinePaymentHelper(): ?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper
     {
         return $this->MidocoOnlinePaymentHelper;
     }
     /**
      * Set MidocoOnlinePaymentHelper value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
-    public function setMidocoOnlinePaymentHelper(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper = null): self
+    public function setMidocoOnlinePaymentHelper(?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper = null): self
     {
         $this->MidocoOnlinePaymentHelper = $midocoOnlinePaymentHelper;
         
@@ -383,18 +383,18 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerInfo|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerInfo|null
      */
-    public function getMidocoCustomerInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerInfo
+    public function getMidocoCustomerInfo(): ?\Pggns\MidocoApi\Order\StructType\MidocoCustomerInfo
     {
         return $this->MidocoCustomerInfo;
     }
     /**
      * Set MidocoCustomerInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerInfo $midocoCustomerInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCustomerInfo $midocoCustomerInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
-    public function setMidocoCustomerInfo(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerInfo $midocoCustomerInfo = null): self
+    public function setMidocoCustomerInfo(?\Pggns\MidocoApi\Order\StructType\MidocoCustomerInfo $midocoCustomerInfo = null): self
     {
         $this->MidocoCustomerInfo = $midocoCustomerInfo;
         
@@ -411,7 +411,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set confirmationGroup value
      * @param string $confirmationGroup
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setConfirmationGroup(?string $confirmationGroup = null): self
     {
@@ -434,7 +434,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set documentInternalVersion value
      * @param int $documentInternalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setDocumentInternalVersion(?int $documentInternalVersion = null): self
     {
@@ -457,7 +457,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -480,7 +480,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set createNewDocument value
      * @param bool $createNewDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setCreateNewDocument(?bool $createNewDocument = null): self
     {
@@ -503,7 +503,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set deleteExistingDocument value
      * @param bool $deleteExistingDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setDeleteExistingDocument(?bool $deleteExistingDocument = null): self
     {
@@ -526,7 +526,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -549,7 +549,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setCashBookId(?int $cashBookId = null): self
     {
@@ -572,7 +572,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set orderInternalVersion value
      * @param int $orderInternalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setOrderInternalVersion(?int $orderInternalVersion = null): self
     {
@@ -595,7 +595,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set calculatedPrintDate value
      * @param string $calculatedPrintDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setCalculatedPrintDate(?string $calculatedPrintDate = null): self
     {
@@ -618,7 +618,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set partialPayment value
      * @param bool $partialPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setPartialPayment(?bool $partialPayment = null): self
     {
@@ -641,7 +641,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set partialAmount value
      * @param float $partialAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setPartialAmount(?float $partialAmount = null): self
     {
@@ -664,7 +664,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set preferredType value
      * @param string $preferredType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setPreferredType(?string $preferredType = null): self
     {
@@ -687,7 +687,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -710,7 +710,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -733,7 +733,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set collectiveInvoice value
      * @param bool $collectiveInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setCollectiveInvoice(?bool $collectiveInvoice = null): self
     {
@@ -756,7 +756,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set printGroupName value
      * @param bool $printGroupName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setPrintGroupName(?bool $printGroupName = false): self
     {
@@ -779,7 +779,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set printAllTravellersNames value
      * @param bool $printAllTravellersNames
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setPrintAllTravellersNames(?bool $printAllTravellersNames = false): self
     {
@@ -802,7 +802,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set createITInvoice value
      * @param bool $createITInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setCreateITInvoice(?bool $createITInvoice = false): self
     {
@@ -825,7 +825,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     /**
      * Set createNormalInvoice value
      * @param bool $createNormalInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
      */
     public function setCreateNormalInvoice(?bool $createNormalInvoice = false): self
     {

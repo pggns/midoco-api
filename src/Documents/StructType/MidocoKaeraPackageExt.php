@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class MidocoKaeraPackageExt extends AbstractStructBase
      * The MidocoPackageInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoPackageInfo
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\PackageitemDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO $MidocoPackageInfo = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\PackageitemDTO $MidocoPackageInfo = null;
     /**
      * The success
      * @var bool|null
@@ -35,11 +35,11 @@ class MidocoKaeraPackageExt extends AbstractStructBase
      * @uses MidocoKaeraPackageExt::setMidocoPackageInfo()
      * @uses MidocoKaeraPackageExt::setSuccess()
      * @uses MidocoKaeraPackageExt::setDescription()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO $midocoPackageInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\PackageitemDTO $midocoPackageInfo
      * @param bool $success
      * @param string $description
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO $midocoPackageInfo = null, ?bool $success = null, ?string $description = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\PackageitemDTO $midocoPackageInfo = null, ?bool $success = null, ?string $description = null)
     {
         $this
             ->setMidocoPackageInfo($midocoPackageInfo)
@@ -48,18 +48,18 @@ class MidocoKaeraPackageExt extends AbstractStructBase
     }
     /**
      * Get MidocoPackageInfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageitemDTO|null
      */
-    public function getMidocoPackageInfo(): ?\Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO
+    public function getMidocoPackageInfo(): ?\Pggns\MidocoApi\Documents\StructType\PackageitemDTO
     {
         return $this->MidocoPackageInfo;
     }
     /**
      * Set MidocoPackageInfo value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO $midocoPackageInfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoKaeraPackageExt
+     * @param \Pggns\MidocoApi\Documents\StructType\PackageitemDTO $midocoPackageInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoKaeraPackageExt
      */
-    public function setMidocoPackageInfo(?\Pggns\MidocoApi\Api\Documents\StructType\PackageitemDTO $midocoPackageInfo = null): self
+    public function setMidocoPackageInfo(?\Pggns\MidocoApi\Documents\StructType\PackageitemDTO $midocoPackageInfo = null): self
     {
         $this->MidocoPackageInfo = $midocoPackageInfo;
         
@@ -76,7 +76,7 @@ class MidocoKaeraPackageExt extends AbstractStructBase
     /**
      * Set success value
      * @param bool $success
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoKaeraPackageExt
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoKaeraPackageExt
      */
     public function setSuccess(?bool $success = null): self
     {
@@ -99,7 +99,7 @@ class MidocoKaeraPackageExt extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoKaeraPackageExt
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoKaeraPackageExt
      */
     public function setDescription(?string $description = null): self
     {

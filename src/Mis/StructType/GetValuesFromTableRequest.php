@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class GetValuesFromTableRequest extends AbstractStructBase
     /**
      * Set tableName value
      * @param string $tableName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetValuesFromTableRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetValuesFromTableRequest
      */
     public function setTableName(string $tableName): self
     {
@@ -84,7 +84,7 @@ class GetValuesFromTableRequest extends AbstractStructBase
     /**
      * Set fieldName value
      * @param string $fieldName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetValuesFromTableRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetValuesFromTableRequest
      */
     public function setFieldName(string $fieldName): self
     {
@@ -107,7 +107,7 @@ class GetValuesFromTableRequest extends AbstractStructBase
     /**
      * Set datastoreType value
      * @param string $datastoreType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetValuesFromTableRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetValuesFromTableRequest
      */
     public function setDatastoreType(?string $datastoreType = 'MIS'): self
     {

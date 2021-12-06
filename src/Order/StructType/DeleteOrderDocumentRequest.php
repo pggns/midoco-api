@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteOrderDocumentRequest extends AbstractStructBase
     /**
      * Set orderDocumentId value
      * @param int $orderDocumentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrderDocumentRequest
      */
     public function setOrderDocumentId(?int $orderDocumentId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MidocoSellItemInfo4SearchOrder extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -134,7 +134,7 @@ class MidocoSellItemInfo4SearchOrder extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -157,7 +157,7 @@ class MidocoSellItemInfo4SearchOrder extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -180,7 +180,7 @@ class MidocoSellItemInfo4SearchOrder extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -203,7 +203,7 @@ class MidocoSellItemInfo4SearchOrder extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
      */
     public function setStatus(?string $status = null): self
     {
@@ -226,7 +226,7 @@ class MidocoSellItemInfo4SearchOrder extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
      */
     public function setPrice(?float $price = null): self
     {
@@ -249,7 +249,7 @@ class MidocoSellItemInfo4SearchOrder extends AbstractStructBase
     /**
      * Set crs value
      * @param string $crs
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
      */
     public function setCrs(?string $crs = null): self
     {
@@ -272,7 +272,7 @@ class MidocoSellItemInfo4SearchOrder extends AbstractStructBase
     /**
      * Set noOfPersons value
      * @param int $noOfPersons
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
      */
     public function setNoOfPersons(?int $noOfPersons = null): self
     {
@@ -295,7 +295,7 @@ class MidocoSellItemInfo4SearchOrder extends AbstractStructBase
     /**
      * Set displayedPrice value
      * @param float $displayedPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
      */
     public function setDisplayedPrice(?float $displayedPrice = null): self
     {
@@ -318,7 +318,7 @@ class MidocoSellItemInfo4SearchOrder extends AbstractStructBase
     /**
      * Set displayedCurrency value
      * @param string $displayedCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4SearchOrder
      */
     public function setDisplayedCurrency(?string $displayedCurrency = null): self
     {

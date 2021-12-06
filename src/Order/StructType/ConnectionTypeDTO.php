@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class ConnectionTypeDTO extends AbstractStructBase
     /**
      * Set connectionTypeCode value
      * @param string $connectionTypeCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConnectionTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConnectionTypeDTO
      */
     public function setConnectionTypeCode(?string $connectionTypeCode = null): self
     {
@@ -86,7 +86,7 @@ class ConnectionTypeDTO extends AbstractStructBase
     /**
      * Set connectionTypeId value
      * @param int $connectionTypeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConnectionTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConnectionTypeDTO
      */
     public function setConnectionTypeId(?int $connectionTypeId = null): self
     {
@@ -109,7 +109,7 @@ class ConnectionTypeDTO extends AbstractStructBase
     /**
      * Set gender value
      * @param int $gender
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConnectionTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConnectionTypeDTO
      */
     public function setGender(?int $gender = null): self
     {
@@ -132,7 +132,7 @@ class ConnectionTypeDTO extends AbstractStructBase
     /**
      * Set reverseConTypeId value
      * @param int $reverseConTypeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConnectionTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConnectionTypeDTO
      */
     public function setReverseConTypeId(?int $reverseConTypeId = null): self
     {

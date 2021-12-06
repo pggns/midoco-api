@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,7 +17,7 @@ class PerformEntryClearingRequest extends AbstractStructBase
      * The clearingEntry
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \Pggns\MidocoApi\Api\Order\StructType\EntryDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\EntryDTO[]
      */
     protected ?array $clearingEntry = null;
     /**
@@ -59,7 +59,7 @@ class PerformEntryClearingRequest extends AbstractStructBase
      * @uses PerformEntryClearingRequest::setBookingText()
      * @uses PerformEntryClearingRequest::setCurrency()
      * @uses PerformEntryClearingRequest::setExchangeRate()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\EntryDTO[] $clearingEntry
+     * @param \Pggns\MidocoApi\Order\StructType\EntryDTO[] $clearingEntry
      * @param string $receiptNo
      * @param string $receiptDate
      * @param string $accountId
@@ -80,7 +80,7 @@ class PerformEntryClearingRequest extends AbstractStructBase
     }
     /**
      * Get clearingEntry value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\EntryDTO[]
      */
     public function getClearingEntry(): ?array
     {
@@ -101,12 +101,12 @@ class PerformEntryClearingRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $performEntryClearingRequestClearingEntryItem) {
             // validation for constraint: itemType
-            if (!$performEntryClearingRequestClearingEntryItem instanceof \Pggns\MidocoApi\Api\Order\StructType\EntryDTO) {
+            if (!$performEntryClearingRequestClearingEntryItem instanceof \Pggns\MidocoApi\Order\StructType\EntryDTO) {
                 $invalidValues[] = is_object($performEntryClearingRequestClearingEntryItem) ? get_class($performEntryClearingRequestClearingEntryItem) : sprintf('%s(%s)', gettype($performEntryClearingRequestClearingEntryItem), var_export($performEntryClearingRequestClearingEntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The clearingEntry property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\EntryDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The clearingEntry property can only contain items of type \Pggns\MidocoApi\Order\StructType\EntryDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -115,8 +115,8 @@ class PerformEntryClearingRequest extends AbstractStructBase
     /**
      * Set clearingEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\EntryDTO[] $clearingEntry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformEntryClearingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\EntryDTO[] $clearingEntry
+     * @return \Pggns\MidocoApi\Order\StructType\PerformEntryClearingRequest
      */
     public function setClearingEntry(?array $clearingEntry = null): self
     {
@@ -131,14 +131,14 @@ class PerformEntryClearingRequest extends AbstractStructBase
     /**
      * Add item to clearingEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\EntryDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformEntryClearingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\EntryDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\PerformEntryClearingRequest
      */
-    public function addToClearingEntry(\Pggns\MidocoApi\Api\Order\StructType\EntryDTO $item): self
+    public function addToClearingEntry(\Pggns\MidocoApi\Order\StructType\EntryDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\EntryDTO) {
-            throw new InvalidArgumentException(sprintf('The clearingEntry property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\EntryDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\EntryDTO) {
+            throw new InvalidArgumentException(sprintf('The clearingEntry property can only contain items of type \Pggns\MidocoApi\Order\StructType\EntryDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->clearingEntry[] = $item;
         
@@ -155,7 +155,7 @@ class PerformEntryClearingRequest extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformEntryClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PerformEntryClearingRequest
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -178,7 +178,7 @@ class PerformEntryClearingRequest extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformEntryClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PerformEntryClearingRequest
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -201,7 +201,7 @@ class PerformEntryClearingRequest extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformEntryClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PerformEntryClearingRequest
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -224,7 +224,7 @@ class PerformEntryClearingRequest extends AbstractStructBase
     /**
      * Set bookingText value
      * @param string $bookingText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformEntryClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PerformEntryClearingRequest
      */
     public function setBookingText(?string $bookingText = null): self
     {
@@ -247,7 +247,7 @@ class PerformEntryClearingRequest extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformEntryClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PerformEntryClearingRequest
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -270,7 +270,7 @@ class PerformEntryClearingRequest extends AbstractStructBase
     /**
      * Set exchangeRate value
      * @param float $exchangeRate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformEntryClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PerformEntryClearingRequest
      */
     public function setExchangeRate(?float $exchangeRate = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class ImportSupplierSettlementDataRequest extends AbstractStructBase
     /**
      * Set Data value
      * @param string $data
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportSupplierSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportSupplierSettlementDataRequest
      */
     public function setData(?string $data = null): self
     {
@@ -118,7 +118,7 @@ class ImportSupplierSettlementDataRequest extends AbstractStructBase
     /**
      * Set sourceSystem value
      * @param string $sourceSystem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportSupplierSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportSupplierSettlementDataRequest
      */
     public function setSourceSystem(?string $sourceSystem = null): self
     {
@@ -141,7 +141,7 @@ class ImportSupplierSettlementDataRequest extends AbstractStructBase
     /**
      * Set delimiter value
      * @param string $delimiter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportSupplierSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportSupplierSettlementDataRequest
      */
     public function setDelimiter(?string $delimiter = null): self
     {
@@ -164,7 +164,7 @@ class ImportSupplierSettlementDataRequest extends AbstractStructBase
     /**
      * Set dateFormat value
      * @param string $dateFormat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportSupplierSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportSupplierSettlementDataRequest
      */
     public function setDateFormat(?string $dateFormat = null): self
     {
@@ -187,7 +187,7 @@ class ImportSupplierSettlementDataRequest extends AbstractStructBase
     /**
      * Set decimalDelimiter value
      * @param string $decimalDelimiter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportSupplierSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportSupplierSettlementDataRequest
      */
     public function setDecimalDelimiter(?string $decimalDelimiter = null): self
     {
@@ -210,7 +210,7 @@ class ImportSupplierSettlementDataRequest extends AbstractStructBase
     /**
      * Set supplierDataFormat value
      * @param string $supplierDataFormat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportSupplierSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportSupplierSettlementDataRequest
      */
     public function setSupplierDataFormat(?string $supplierDataFormat = null): self
     {
@@ -233,7 +233,7 @@ class ImportSupplierSettlementDataRequest extends AbstractStructBase
     /**
      * Set textInQuotes value
      * @param bool $textInQuotes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportSupplierSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportSupplierSettlementDataRequest
      */
     public function setTextInQuotes(?bool $textInQuotes = null): self
     {
@@ -256,7 +256,7 @@ class ImportSupplierSettlementDataRequest extends AbstractStructBase
     /**
      * Set settlementDate value
      * @param string $settlementDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportSupplierSettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportSupplierSettlementDataRequest
      */
     public function setSettlementDate(?string $settlementDate = null): self
     {

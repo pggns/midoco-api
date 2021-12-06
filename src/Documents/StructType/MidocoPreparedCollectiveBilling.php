@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoPreparedCollectiveBilling extends AbstractStructBase
     /**
      * Set midocoCustomerId value
      * @param int $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPreparedCollectiveBilling
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPreparedCollectiveBilling
      */
     public function setMidocoCustomerId(?int $midocoCustomerId = null): self
     {
@@ -102,7 +102,7 @@ class MidocoPreparedCollectiveBilling extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPreparedCollectiveBilling
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPreparedCollectiveBilling
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -125,7 +125,7 @@ class MidocoPreparedCollectiveBilling extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPreparedCollectiveBilling
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPreparedCollectiveBilling
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -148,7 +148,7 @@ class MidocoPreparedCollectiveBilling extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPreparedCollectiveBilling
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPreparedCollectiveBilling
      */
     public function setName(?string $name = null): self
     {
@@ -171,7 +171,7 @@ class MidocoPreparedCollectiveBilling extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPreparedCollectiveBilling
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPreparedCollectiveBilling
      */
     public function setForename(?string $forename = null): self
     {
@@ -194,7 +194,7 @@ class MidocoPreparedCollectiveBilling extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPreparedCollectiveBilling
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPreparedCollectiveBilling
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {

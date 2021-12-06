@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class MarginListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType[]
      */
     protected ?array $MidocoMarginList = null;
     /**
@@ -32,7 +32,7 @@ class MarginListResponse extends AbstractStructBase
      * Constructor method for MarginListResponse
      * @uses MarginListResponse::setMidocoMarginList()
      * @uses MarginListResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType[] $midocoMarginList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType[] $midocoMarginList
      * @param int $noOfResults
      */
     public function __construct(?array $midocoMarginList = null, ?int $noOfResults = null)
@@ -43,7 +43,7 @@ class MarginListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMarginList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType[]
      */
     public function getMidocoMarginList(): ?array
     {
@@ -64,12 +64,12 @@ class MarginListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $marginListResponseMidocoMarginListItem) {
             // validation for constraint: itemType
-            if (!$marginListResponseMidocoMarginListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType) {
+            if (!$marginListResponseMidocoMarginListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType) {
                 $invalidValues[] = is_object($marginListResponseMidocoMarginListItem) ? get_class($marginListResponseMidocoMarginListItem) : sprintf('%s(%s)', gettype($marginListResponseMidocoMarginListItem), var_export($marginListResponseMidocoMarginListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMarginList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMarginList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -78,8 +78,8 @@ class MarginListResponse extends AbstractStructBase
     /**
      * Set MidocoMarginList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType[] $midocoMarginList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MarginListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType[] $midocoMarginList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MarginListResponse
      */
     public function setMidocoMarginList(?array $midocoMarginList = null): self
     {
@@ -94,14 +94,14 @@ class MarginListResponse extends AbstractStructBase
     /**
      * Add item to MidocoMarginList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MarginListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MarginListResponse
      */
-    public function addToMidocoMarginList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType $item): self
+    public function addToMidocoMarginList(\Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType) {
-            throw new InvalidArgumentException(sprintf('The MidocoMarginList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType) {
+            throw new InvalidArgumentException(sprintf('The MidocoMarginList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMarginList[] = $item;
         
@@ -118,7 +118,7 @@ class MarginListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MarginListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MarginListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

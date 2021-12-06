@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class UpdateTempPrintjobInfoResponse extends AbstractStructBase
      * The MidocoTempPrintjobInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoTempPrintjobInfo
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoTempPrintjobInfo|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoTempPrintjobInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoTempPrintjobInfo $MidocoTempPrintjobInfo = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoTempPrintjobInfo $MidocoTempPrintjobInfo = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +29,10 @@ class UpdateTempPrintjobInfoResponse extends AbstractStructBase
      * Constructor method for UpdateTempPrintjobInfoResponse
      * @uses UpdateTempPrintjobInfoResponse::setMidocoTempPrintjobInfo()
      * @uses UpdateTempPrintjobInfoResponse::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoTempPrintjobInfo $midocoTempPrintjobInfo
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoTempPrintjobInfo $midocoTempPrintjobInfo
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoTempPrintjobInfo $midocoTempPrintjobInfo = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MidocoTempPrintjobInfo $midocoTempPrintjobInfo = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoTempPrintjobInfo($midocoTempPrintjobInfo)
@@ -40,18 +40,18 @@ class UpdateTempPrintjobInfoResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTempPrintjobInfo value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoTempPrintjobInfo|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoTempPrintjobInfo|null
      */
-    public function getMidocoTempPrintjobInfo(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoTempPrintjobInfo
+    public function getMidocoTempPrintjobInfo(): ?\Pggns\MidocoApi\Mis\StructType\MidocoTempPrintjobInfo
     {
         return $this->MidocoTempPrintjobInfo;
     }
     /**
      * Set MidocoTempPrintjobInfo value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoTempPrintjobInfo $midocoTempPrintjobInfo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\UpdateTempPrintjobInfoResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoTempPrintjobInfo $midocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Mis\StructType\UpdateTempPrintjobInfoResponse
      */
-    public function setMidocoTempPrintjobInfo(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoTempPrintjobInfo $midocoTempPrintjobInfo = null): self
+    public function setMidocoTempPrintjobInfo(?\Pggns\MidocoApi\Mis\StructType\MidocoTempPrintjobInfo $midocoTempPrintjobInfo = null): self
     {
         $this->MidocoTempPrintjobInfo = $midocoTempPrintjobInfo;
         
@@ -68,7 +68,7 @@ class UpdateTempPrintjobInfoResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\UpdateTempPrintjobInfoResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\UpdateTempPrintjobInfoResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

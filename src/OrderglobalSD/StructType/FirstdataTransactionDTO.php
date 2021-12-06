@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class FirstdataTransactionDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\FirstdataTransactionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\FirstdataTransactionDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -150,7 +150,7 @@ class FirstdataTransactionDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\FirstdataTransactionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\FirstdataTransactionDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -173,7 +173,7 @@ class FirstdataTransactionDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\FirstdataTransactionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\FirstdataTransactionDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -196,7 +196,7 @@ class FirstdataTransactionDTO extends AbstractStructBase
     /**
      * Set exportTimestamp value
      * @param string $exportTimestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\FirstdataTransactionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\FirstdataTransactionDTO
      */
     public function setExportTimestamp(?string $exportTimestamp = null): self
     {
@@ -219,7 +219,7 @@ class FirstdataTransactionDTO extends AbstractStructBase
     /**
      * Set firstDataLine value
      * @param string $firstDataLine
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\FirstdataTransactionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\FirstdataTransactionDTO
      */
     public function setFirstDataLine(?string $firstDataLine = null): self
     {
@@ -242,7 +242,7 @@ class FirstdataTransactionDTO extends AbstractStructBase
     /**
      * Set firstDataXmlLine value
      * @param string $firstDataXmlLine
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\FirstdataTransactionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\FirstdataTransactionDTO
      */
     public function setFirstDataXmlLine(?string $firstDataXmlLine = null): self
     {
@@ -265,7 +265,7 @@ class FirstdataTransactionDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\FirstdataTransactionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\FirstdataTransactionDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -288,7 +288,7 @@ class FirstdataTransactionDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\FirstdataTransactionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\FirstdataTransactionDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -311,7 +311,7 @@ class FirstdataTransactionDTO extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\FirstdataTransactionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\FirstdataTransactionDTO
      */
     public function setPositionId(?int $positionId = null): self
     {
@@ -334,7 +334,7 @@ class FirstdataTransactionDTO extends AbstractStructBase
     /**
      * Set recordType value
      * @param string $recordType
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\FirstdataTransactionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\FirstdataTransactionDTO
      */
     public function setRecordType(?string $recordType = null): self
     {
@@ -357,7 +357,7 @@ class FirstdataTransactionDTO extends AbstractStructBase
     /**
      * Set transactionId value
      * @param int $transactionId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\FirstdataTransactionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\FirstdataTransactionDTO
      */
     public function setTransactionId(?int $transactionId = null): self
     {
@@ -380,7 +380,7 @@ class FirstdataTransactionDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\FirstdataTransactionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\FirstdataTransactionDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

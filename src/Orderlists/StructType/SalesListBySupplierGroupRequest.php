@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SalesListBySupplierGroupRequest extends AbstractStructBase
      * The MidocoSalesListBySupplierGroupCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoSalesListBySupplierGroupCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType $MidocoSalesListBySupplierGroupCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType $MidocoSalesListBySupplierGroupCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SalesListBySupplierGroupRequest extends AbstractStructBase
      * Constructor method for SalesListBySupplierGroupRequest
      * @uses SalesListBySupplierGroupRequest::setMidocoSalesListBySupplierGroupCriteria()
      * @uses SalesListBySupplierGroupRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType $midocoSalesListBySupplierGroupCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType $midocoSalesListBySupplierGroupCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType $midocoSalesListBySupplierGroupCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType $midocoSalesListBySupplierGroupCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoSalesListBySupplierGroupCriteria($midocoSalesListBySupplierGroupCriteria)
@@ -42,18 +42,18 @@ class SalesListBySupplierGroupRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSalesListBySupplierGroupCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType|null
      */
-    public function getMidocoSalesListBySupplierGroupCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType
+    public function getMidocoSalesListBySupplierGroupCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType
     {
         return $this->MidocoSalesListBySupplierGroupCriteria;
     }
     /**
      * Set MidocoSalesListBySupplierGroupCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType $midocoSalesListBySupplierGroupCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierGroupRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType $midocoSalesListBySupplierGroupCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierGroupRequest
      */
-    public function setMidocoSalesListBySupplierGroupCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType $midocoSalesListBySupplierGroupCriteria = null): self
+    public function setMidocoSalesListBySupplierGroupCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierGroupCriteriaType $midocoSalesListBySupplierGroupCriteria = null): self
     {
         $this->MidocoSalesListBySupplierGroupCriteria = $midocoSalesListBySupplierGroupCriteria;
         
@@ -70,7 +70,7 @@ class SalesListBySupplierGroupRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierGroupRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierGroupRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

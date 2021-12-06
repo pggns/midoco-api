@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SimilarAddressDTO extends CrmAddressDTO
     /**
      * Set validateEntries value
      * @param bool $validateEntries
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SimilarAddressDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SimilarAddressDTO
      */
     public function setValidateEntries(?bool $validateEntries = null): self
     {

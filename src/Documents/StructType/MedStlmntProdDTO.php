@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set addlDocumentId value
      * @param int $addlDocumentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setAddlDocumentId(?int $addlDocumentId = null): self
     {
@@ -174,7 +174,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set calculatedRevenue value
      * @param float $calculatedRevenue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setCalculatedRevenue(?float $calculatedRevenue = null): self
     {
@@ -197,7 +197,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set created value
      * @param string $created
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setCreated(?string $created = null): self
     {
@@ -220,7 +220,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set creatingUser value
      * @param int $creatingUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setCreatingUser(?int $creatingUser = null): self
     {
@@ -243,7 +243,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -266,7 +266,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set fulfillAmount value
      * @param float $fulfillAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setFulfillAmount(?float $fulfillAmount = null): self
     {
@@ -289,7 +289,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set fulfillPercent value
      * @param float $fulfillPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setFulfillPercent(?float $fulfillPercent = null): self
     {
@@ -312,7 +312,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set isPreview value
      * @param bool $isPreview
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setIsPreview(?bool $isPreview = null): self
     {
@@ -335,7 +335,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set medStlmntProdId value
      * @param int $medStlmntProdId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setMedStlmntProdId(?int $medStlmntProdId = null): self
     {
@@ -358,7 +358,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -381,7 +381,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set nettoRevenue value
      * @param float $nettoRevenue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setNettoRevenue(?float $nettoRevenue = null): self
     {
@@ -404,7 +404,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -427,7 +427,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set settlementDate value
      * @param string $settlementDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setSettlementDate(?string $settlementDate = null): self
     {
@@ -450,7 +450,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set sumBookingPrice value
      * @param float $sumBookingPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setSumBookingPrice(?float $sumBookingPrice = null): self
     {
@@ -473,7 +473,7 @@ class MedStlmntProdDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MedStlmntProdDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MedStlmntProdDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

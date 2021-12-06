@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class HistoryDocumentDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HistoryDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\HistoryDocumentDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -134,7 +134,7 @@ class HistoryDocumentDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HistoryDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\HistoryDocumentDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -157,7 +157,7 @@ class HistoryDocumentDTO extends AbstractStructBase
     /**
      * Set diffRepositoryId value
      * @param int $diffRepositoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HistoryDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\HistoryDocumentDTO
      */
     public function setDiffRepositoryId(?int $diffRepositoryId = null): self
     {
@@ -180,7 +180,7 @@ class HistoryDocumentDTO extends AbstractStructBase
     /**
      * Set processed value
      * @param bool $processed
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HistoryDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\HistoryDocumentDTO
      */
     public function setProcessed(?bool $processed = null): self
     {
@@ -203,7 +203,7 @@ class HistoryDocumentDTO extends AbstractStructBase
     /**
      * Set refId value
      * @param string $refId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HistoryDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\HistoryDocumentDTO
      */
     public function setRefId(?string $refId = null): self
     {
@@ -226,7 +226,7 @@ class HistoryDocumentDTO extends AbstractStructBase
     /**
      * Set subType value
      * @param string $subType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HistoryDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\HistoryDocumentDTO
      */
     public function setSubType(?string $subType = null): self
     {
@@ -249,7 +249,7 @@ class HistoryDocumentDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HistoryDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\HistoryDocumentDTO
      */
     public function setType(?string $type = null): self
     {
@@ -272,7 +272,7 @@ class HistoryDocumentDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HistoryDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\HistoryDocumentDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -295,7 +295,7 @@ class HistoryDocumentDTO extends AbstractStructBase
     /**
      * Set versionId value
      * @param int $versionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HistoryDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\HistoryDocumentDTO
      */
     public function setVersionId(?int $versionId = null): self
     {
@@ -318,7 +318,7 @@ class HistoryDocumentDTO extends AbstractStructBase
     /**
      * Set xml value
      * @param string $xml
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HistoryDocumentDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\HistoryDocumentDTO
      */
     public function setXml(?string $xml = null): self
     {

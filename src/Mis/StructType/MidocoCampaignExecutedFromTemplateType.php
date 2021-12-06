@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoCampaignExecutedFromTemplateType extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignExecutedFromTemplateType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCampaignExecutedFromTemplateType
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -78,7 +78,7 @@ class MidocoCampaignExecutedFromTemplateType extends AbstractStructBase
     /**
      * Set campaignOrgUnit value
      * @param string $campaignOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignExecutedFromTemplateType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCampaignExecutedFromTemplateType
      */
     public function setCampaignOrgUnit(?string $campaignOrgUnit = null): self
     {
@@ -101,7 +101,7 @@ class MidocoCampaignExecutedFromTemplateType extends AbstractStructBase
     /**
      * Set campaignNoOfResutls value
      * @param int $campaignNoOfResutls
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignExecutedFromTemplateType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCampaignExecutedFromTemplateType
      */
     public function setCampaignNoOfResutls(?int $campaignNoOfResutls = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveAccountResponse extends AbstractStructBase
      * The MidocoAccount
      * Meta information extracted from the WSDL
      * - ref: MidocoAccount
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAccount|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAccount|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAccount $MidocoAccount = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoAccount $MidocoAccount = null;
     /**
      * Constructor method for SaveAccountResponse
      * @uses SaveAccountResponse::setMidocoAccount()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAccount $midocoAccount
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAccount $midocoAccount
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAccount $midocoAccount = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoAccount $midocoAccount = null)
     {
         $this
             ->setMidocoAccount($midocoAccount);
     }
     /**
      * Get MidocoAccount value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAccount|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAccount|null
      */
-    public function getMidocoAccount(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAccount
+    public function getMidocoAccount(): ?\Pggns\MidocoApi\Order\StructType\MidocoAccount
     {
         return $this->MidocoAccount;
     }
     /**
      * Set MidocoAccount value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAccount $midocoAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveAccountResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAccount $midocoAccount
+     * @return \Pggns\MidocoApi\Order\StructType\SaveAccountResponse
      */
-    public function setMidocoAccount(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAccount $midocoAccount = null): self
+    public function setMidocoAccount(?\Pggns\MidocoApi\Order\StructType\MidocoAccount $midocoAccount = null): self
     {
         $this->MidocoAccount = $midocoAccount;
         

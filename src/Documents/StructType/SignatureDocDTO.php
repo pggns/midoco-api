@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -191,7 +191,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -214,7 +214,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -237,7 +237,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set custName value
      * @param string $custName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setCustName(?string $custName = null): self
     {
@@ -260,7 +260,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set dispatchTimestamp value
      * @param string $dispatchTimestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setDispatchTimestamp(?string $dispatchTimestamp = null): self
     {
@@ -283,7 +283,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set dispatchType value
      * @param string $dispatchType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setDispatchType(?string $dispatchType = null): self
     {
@@ -306,7 +306,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set documentFilename value
      * @param string $documentFilename
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setDocumentFilename(?string $documentFilename = null): self
     {
@@ -329,7 +329,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set documentFolder value
      * @param string $documentFolder
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setDocumentFolder(?string $documentFolder = null): self
     {
@@ -352,7 +352,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set documentName value
      * @param string $documentName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setDocumentName(?string $documentName = null): self
     {
@@ -375,7 +375,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -398,7 +398,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set isMoved value
      * @param bool $isMoved
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setIsMoved(?bool $isMoved = null): self
     {
@@ -421,7 +421,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set isSigned value
      * @param bool $isSigned
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setIsSigned(?bool $isSigned = null): self
     {
@@ -444,7 +444,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set originalDocumentContent value
      * @param string $originalDocumentContent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setOriginalDocumentContent(?string $originalDocumentContent = null): self
     {
@@ -467,7 +467,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set refId value
      * @param int $refId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setRefId(?int $refId = null): self
     {
@@ -490,7 +490,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set refType value
      * @param string $refType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setRefType(?string $refType = null): self
     {
@@ -513,7 +513,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -536,7 +536,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set signatureDocId value
      * @param int $signatureDocId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setSignatureDocId(?int $signatureDocId = null): self
     {
@@ -559,7 +559,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set signatureTime value
      * @param string $signatureTime
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setSignatureTime(?string $signatureTime = null): self
     {
@@ -582,7 +582,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set signedBy value
      * @param string $signedBy
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setSignedBy(?string $signedBy = null): self
     {
@@ -605,7 +605,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set signedDocumentContent value
      * @param string $signedDocumentContent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setSignedDocumentContent(?string $signedDocumentContent = null): self
     {
@@ -628,7 +628,7 @@ class SignatureDocDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureDocDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureDocDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

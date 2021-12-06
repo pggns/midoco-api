@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAssignedMidocoChargeOu
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoChargeOuDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO[]
      */
     protected ?array $MidocoAssignedMidocoChargeOu = null;
     /**
@@ -73,7 +73,7 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
      * @uses CrmMidocoChargeInfoType::setUseVat()
      * @uses CrmMidocoChargeInfoType::setDescription()
      * @uses CrmMidocoChargeInfoType::setNettoAmount()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoChargeOuDTO[] $midocoAssignedMidocoChargeOu
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO[] $midocoAssignedMidocoChargeOu
      * @param string $accountId
      * @param bool $isCredit
      * @param bool $isInteractive
@@ -98,7 +98,7 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
     }
     /**
      * Get MidocoAssignedMidocoChargeOu value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoChargeOuDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO[]
      */
     public function getMidocoAssignedMidocoChargeOu(): ?array
     {
@@ -119,12 +119,12 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
         $invalidValues = [];
         foreach ($values as $crmMidocoChargeInfoTypeMidocoAssignedMidocoChargeOuItem) {
             // validation for constraint: itemType
-            if (!$crmMidocoChargeInfoTypeMidocoAssignedMidocoChargeOuItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoChargeOuDTO) {
+            if (!$crmMidocoChargeInfoTypeMidocoAssignedMidocoChargeOuItem instanceof \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO) {
                 $invalidValues[] = is_object($crmMidocoChargeInfoTypeMidocoAssignedMidocoChargeOuItem) ? get_class($crmMidocoChargeInfoTypeMidocoAssignedMidocoChargeOuItem) : sprintf('%s(%s)', gettype($crmMidocoChargeInfoTypeMidocoAssignedMidocoChargeOuItem), var_export($crmMidocoChargeInfoTypeMidocoAssignedMidocoChargeOuItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAssignedMidocoChargeOu property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoChargeOuDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAssignedMidocoChargeOu property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -133,8 +133,8 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
     /**
      * Set MidocoAssignedMidocoChargeOu value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoChargeOuDTO[] $midocoAssignedMidocoChargeOu
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoChargeInfoType
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO[] $midocoAssignedMidocoChargeOu
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoChargeInfoType
      */
     public function setMidocoAssignedMidocoChargeOu(?array $midocoAssignedMidocoChargeOu = null): self
     {
@@ -149,14 +149,14 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
     /**
      * Add item to MidocoAssignedMidocoChargeOu value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoChargeOuDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoChargeInfoType
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoChargeInfoType
      */
-    public function addToMidocoAssignedMidocoChargeOu(\Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoChargeOuDTO $item): self
+    public function addToMidocoAssignedMidocoChargeOu(\Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoChargeOuDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoChargeOu property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoChargeOuDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoChargeOu property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAssignedMidocoChargeOu[] = $item;
         
@@ -173,7 +173,7 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoChargeInfoType
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -196,7 +196,7 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
     /**
      * Set isCredit value
      * @param bool $isCredit
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoChargeInfoType
      */
     public function setIsCredit(?bool $isCredit = null): self
     {
@@ -219,7 +219,7 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
     /**
      * Set isInteractive value
      * @param bool $isInteractive
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoChargeInfoType
      */
     public function setIsInteractive(?bool $isInteractive = null): self
     {
@@ -242,7 +242,7 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoChargeInfoType
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -265,7 +265,7 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
     /**
      * Set schedulePeriod value
      * @param int $schedulePeriod
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoChargeInfoType
      */
     public function setSchedulePeriod(?int $schedulePeriod = null): self
     {
@@ -288,7 +288,7 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
     /**
      * Set useVat value
      * @param bool $useVat
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoChargeInfoType
      */
     public function setUseVat(?bool $useVat = null): self
     {
@@ -311,7 +311,7 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoChargeInfoType
      */
     public function setDescription(?string $description = null): self
     {
@@ -334,7 +334,7 @@ class CrmMidocoChargeInfoType extends CrmMidocoChargeDTO
     /**
      * Set nettoAmount value
      * @param float $nettoAmount
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoChargeInfoType
      */
     public function setNettoAmount(?float $nettoAmount = null): self
     {

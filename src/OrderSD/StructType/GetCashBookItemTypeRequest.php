@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetCashBookItemTypeRequest extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetCashBookItemTypeRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetCashBookItemTypeRequest
      */
     public function setTypeId(string $typeId): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteDunningTemplateRequest extends AbstractStructBase
      * The MidocoDunningTemplate
      * Meta information extracted from the WSDL
      * - ref: MidocoDunningTemplate
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $MidocoDunningTemplate = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $MidocoDunningTemplate = null;
     /**
      * Constructor method for DeleteDunningTemplateRequest
      * @uses DeleteDunningTemplateRequest::setMidocoDunningTemplate()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate = null)
     {
         $this
             ->setMidocoDunningTemplate($midocoDunningTemplate);
     }
     /**
      * Get MidocoDunningTemplate value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate|null
      */
-    public function getMidocoDunningTemplate(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate
+    public function getMidocoDunningTemplate(): ?\Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate
     {
         return $this->MidocoDunningTemplate;
     }
     /**
      * Set MidocoDunningTemplate value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteDunningTemplateRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteDunningTemplateRequest
      */
-    public function setMidocoDunningTemplate(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate = null): self
+    public function setMidocoDunningTemplate(?\Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate = null): self
     {
         $this->MidocoDunningTemplate = $midocoDunningTemplate;
         

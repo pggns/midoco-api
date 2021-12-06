@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoMisCampaignOrgUnitsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMisCampaignOrgUnit
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO[]
      */
     protected ?array $MidocoMisCampaignOrgUnit = null;
     /**
      * Constructor method for GetMidocoMisCampaignOrgUnitsResponse
      * @uses GetMidocoMisCampaignOrgUnitsResponse::setMidocoMisCampaignOrgUnit()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO[] $midocoMisCampaignOrgUnit
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO[] $midocoMisCampaignOrgUnit
      */
     public function __construct(?array $midocoMisCampaignOrgUnit = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoMisCampaignOrgUnitsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMisCampaignOrgUnit value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO[]
      */
     public function getMidocoMisCampaignOrgUnit(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoMisCampaignOrgUnitsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoMisCampaignOrgUnitsResponseMidocoMisCampaignOrgUnitItem) {
             // validation for constraint: itemType
-            if (!$getMidocoMisCampaignOrgUnitsResponseMidocoMisCampaignOrgUnitItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO) {
+            if (!$getMidocoMisCampaignOrgUnitsResponseMidocoMisCampaignOrgUnitItem instanceof \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO) {
                 $invalidValues[] = is_object($getMidocoMisCampaignOrgUnitsResponseMidocoMisCampaignOrgUnitItem) ? get_class($getMidocoMisCampaignOrgUnitsResponseMidocoMisCampaignOrgUnitItem) : sprintf('%s(%s)', gettype($getMidocoMisCampaignOrgUnitsResponseMidocoMisCampaignOrgUnitItem), var_export($getMidocoMisCampaignOrgUnitsResponseMidocoMisCampaignOrgUnitItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMisCampaignOrgUnit property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMisCampaignOrgUnit property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoMisCampaignOrgUnitsResponse extends AbstractStructBase
     /**
      * Set MidocoMisCampaignOrgUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO[] $midocoMisCampaignOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoMisCampaignOrgUnitsResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO[] $midocoMisCampaignOrgUnit
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoMisCampaignOrgUnitsResponse
      */
     public function setMidocoMisCampaignOrgUnit(?array $midocoMisCampaignOrgUnit = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoMisCampaignOrgUnitsResponse extends AbstractStructBase
     /**
      * Add item to MidocoMisCampaignOrgUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoMisCampaignOrgUnitsResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoMisCampaignOrgUnitsResponse
      */
-    public function addToMidocoMisCampaignOrgUnit(\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO $item): self
+    public function addToMidocoMisCampaignOrgUnit(\Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMisCampaignOrgUnit property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMisCampaignOrgUnit property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMisCampaignOrgUnit[] = $item;
         

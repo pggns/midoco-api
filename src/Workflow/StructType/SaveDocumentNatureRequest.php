@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveDocumentNatureRequest extends AbstractStructBase
      * The MidocoDocumentNature
      * Meta information extracted from the WSDL
      * - ref: MidocoDocumentNature
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureType|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureType $MidocoDocumentNature = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureType $MidocoDocumentNature = null;
     /**
      * Constructor method for SaveDocumentNatureRequest
      * @uses SaveDocumentNatureRequest::setMidocoDocumentNature()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureType $midocoDocumentNature
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureType $midocoDocumentNature
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureType $midocoDocumentNature = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureType $midocoDocumentNature = null)
     {
         $this
             ->setMidocoDocumentNature($midocoDocumentNature);
     }
     /**
      * Get MidocoDocumentNature value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureType|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureType|null
      */
-    public function getMidocoDocumentNature(): ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureType
+    public function getMidocoDocumentNature(): ?\Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureType
     {
         return $this->MidocoDocumentNature;
     }
     /**
      * Set MidocoDocumentNature value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureType $midocoDocumentNature
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveDocumentNatureRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureType $midocoDocumentNature
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveDocumentNatureRequest
      */
-    public function setMidocoDocumentNature(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureType $midocoDocumentNature = null): self
+    public function setMidocoDocumentNature(?\Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureType $midocoDocumentNature = null): self
     {
         $this->MidocoDocumentNature = $midocoDocumentNature;
         

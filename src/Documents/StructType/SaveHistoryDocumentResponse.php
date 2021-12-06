@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class SaveHistoryDocumentResponse extends AbstractStructBase
     /**
      * Set refId value
      * @param string $refId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveHistoryDocumentResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveHistoryDocumentResponse
      */
     public function setRefId(?string $refId = null): self
     {
@@ -70,7 +70,7 @@ class SaveHistoryDocumentResponse extends AbstractStructBase
     /**
      * Set versionId value
      * @param int $versionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveHistoryDocumentResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveHistoryDocumentResponse
      */
     public function setVersionId(?int $versionId = null): self
     {

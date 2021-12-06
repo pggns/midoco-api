@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoActionAtEmtpyType extends AbstractStructBase
     /**
      * Set action value
      * @param int $action
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoActionAtEmtpyType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoActionAtEmtpyType
      */
     public function setAction(?int $action = null): self
     {
@@ -70,7 +70,7 @@ class MidocoActionAtEmtpyType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoActionAtEmtpyType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoActionAtEmtpyType
      */
     public function setDescription(?string $description = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -66,7 +66,7 @@ class ExportBillingDocumentRequest extends AbstractStructBase
     /**
      * Set billingDocId value
      * @param int $billingDocId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBillingDocumentRequest
      */
     public function setBillingDocId(int $billingDocId): self
     {
@@ -89,7 +89,7 @@ class ExportBillingDocumentRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBillingDocumentRequest
      */
     public function setType(?string $type = 'ORIGINAL'): self
     {
@@ -112,7 +112,7 @@ class ExportBillingDocumentRequest extends AbstractStructBase
     /**
      * Set printMedia value
      * @param string $printMedia
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBillingDocumentRequest
      */
     public function setPrintMedia(?string $printMedia = 'P'): self
     {

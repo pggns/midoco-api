@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class TaskViewDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -110,7 +110,7 @@ class TaskViewDTO extends AbstractStructBase
     /**
      * Set creationUnit value
      * @param string $creationUnit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewDTO
      */
     public function setCreationUnit(?string $creationUnit = null): self
     {
@@ -133,7 +133,7 @@ class TaskViewDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -156,7 +156,7 @@ class TaskViewDTO extends AbstractStructBase
     /**
      * Set filterDefinition value
      * @param string $filterDefinition
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewDTO
      */
     public function setFilterDefinition(?string $filterDefinition = null): self
     {
@@ -179,7 +179,7 @@ class TaskViewDTO extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewDTO
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -202,7 +202,7 @@ class TaskViewDTO extends AbstractStructBase
     /**
      * Set taskViewName value
      * @param string $taskViewName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewDTO
      */
     public function setTaskViewName(?string $taskViewName = null): self
     {
@@ -225,7 +225,7 @@ class TaskViewDTO extends AbstractStructBase
     /**
      * Set taskViewType value
      * @param string $taskViewType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewDTO
      */
     public function setTaskViewType(?string $taskViewType = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class MidocoPriceDetailType extends PriceDetailDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDocumentItem
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDocumentItem[]
      */
     protected ?array $MidocoDocumentItem = null;
     /**
      * Constructor method for MidocoPriceDetailType
      * @uses MidocoPriceDetailType::setMidocoDocumentItem()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem[] $midocoDocumentItem
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDocumentItem[] $midocoDocumentItem
      */
     public function __construct(?array $midocoDocumentItem = null)
     {
@@ -34,7 +34,7 @@ class MidocoPriceDetailType extends PriceDetailDTO
     }
     /**
      * Get MidocoDocumentItem value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDocumentItem[]
      */
     public function getMidocoDocumentItem(): ?array
     {
@@ -55,12 +55,12 @@ class MidocoPriceDetailType extends PriceDetailDTO
         $invalidValues = [];
         foreach ($values as $midocoPriceDetailTypeMidocoDocumentItemItem) {
             // validation for constraint: itemType
-            if (!$midocoPriceDetailTypeMidocoDocumentItemItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem) {
+            if (!$midocoPriceDetailTypeMidocoDocumentItemItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoDocumentItem) {
                 $invalidValues[] = is_object($midocoPriceDetailTypeMidocoDocumentItemItem) ? get_class($midocoPriceDetailTypeMidocoDocumentItemItem) : sprintf('%s(%s)', gettype($midocoPriceDetailTypeMidocoDocumentItemItem), var_export($midocoPriceDetailTypeMidocoDocumentItemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDocumentItem property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDocumentItem property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDocumentItem, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class MidocoPriceDetailType extends PriceDetailDTO
     /**
      * Set MidocoDocumentItem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem[] $midocoDocumentItem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPriceDetailType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDocumentItem[] $midocoDocumentItem
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPriceDetailType
      */
     public function setMidocoDocumentItem(?array $midocoDocumentItem = null): self
     {
@@ -85,14 +85,14 @@ class MidocoPriceDetailType extends PriceDetailDTO
     /**
      * Add item to MidocoDocumentItem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPriceDetailType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDocumentItem $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPriceDetailType
      */
-    public function addToMidocoDocumentItem(\Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem $item): self
+    public function addToMidocoDocumentItem(\Pggns\MidocoApi\Order\StructType\MidocoDocumentItem $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem) {
-            throw new InvalidArgumentException(sprintf('The MidocoDocumentItem property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoDocumentItem) {
+            throw new InvalidArgumentException(sprintf('The MidocoDocumentItem property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDocumentItem, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDocumentItem[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class PerformIrisPlusLoginRequest extends AbstractStructBase
     /**
      * Set isExternal value
      * @param bool $isExternal
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformIrisPlusLoginRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PerformIrisPlusLoginRequest
      */
     public function setIsExternal(?bool $isExternal = false): self
     {
@@ -110,7 +110,7 @@ class PerformIrisPlusLoginRequest extends AbstractStructBase
     /**
      * Set irisPort value
      * @param string $irisPort
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformIrisPlusLoginRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PerformIrisPlusLoginRequest
      */
     public function setIrisPort(?string $irisPort = null): self
     {
@@ -133,7 +133,7 @@ class PerformIrisPlusLoginRequest extends AbstractStructBase
     /**
      * Set isUserLogin value
      * @param bool $isUserLogin
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformIrisPlusLoginRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PerformIrisPlusLoginRequest
      */
     public function setIsUserLogin(?bool $isUserLogin = null): self
     {
@@ -156,7 +156,7 @@ class PerformIrisPlusLoginRequest extends AbstractStructBase
     /**
      * Set selectedAgencyId value
      * @param string $selectedAgencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformIrisPlusLoginRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PerformIrisPlusLoginRequest
      */
     public function setSelectedAgencyId(?string $selectedAgencyId = null): self
     {
@@ -179,7 +179,7 @@ class PerformIrisPlusLoginRequest extends AbstractStructBase
     /**
      * Set activeOrgunit value
      * @param string $activeOrgunit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformIrisPlusLoginRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PerformIrisPlusLoginRequest
      */
     public function setActiveOrgunit(?string $activeOrgunit = null): self
     {
@@ -202,7 +202,7 @@ class PerformIrisPlusLoginRequest extends AbstractStructBase
     /**
      * Set additionalWorkflow value
      * @param string $additionalWorkflow
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PerformIrisPlusLoginRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PerformIrisPlusLoginRequest
      */
     public function setAdditionalWorkflow(?string $additionalWorkflow = null): self
     {

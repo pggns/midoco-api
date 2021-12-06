@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class MisCampaignDocumentDTO extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -142,7 +142,7 @@ class MisCampaignDocumentDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -165,7 +165,7 @@ class MisCampaignDocumentDTO extends AbstractStructBase
     /**
      * Set documentDate value
      * @param string $documentDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO
      */
     public function setDocumentDate(?string $documentDate = null): self
     {
@@ -188,7 +188,7 @@ class MisCampaignDocumentDTO extends AbstractStructBase
     /**
      * Set documentName value
      * @param string $documentName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO
      */
     public function setDocumentName(?string $documentName = null): self
     {
@@ -211,7 +211,7 @@ class MisCampaignDocumentDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -234,7 +234,7 @@ class MisCampaignDocumentDTO extends AbstractStructBase
     /**
      * Set documentSize value
      * @param int $documentSize
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO
      */
     public function setDocumentSize(?int $documentSize = null): self
     {
@@ -257,7 +257,7 @@ class MisCampaignDocumentDTO extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -280,7 +280,7 @@ class MisCampaignDocumentDTO extends AbstractStructBase
     /**
      * Set misDocumentId value
      * @param int $misDocumentId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO
      */
     public function setMisDocumentId(?int $misDocumentId = null): self
     {
@@ -303,7 +303,7 @@ class MisCampaignDocumentDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -326,7 +326,7 @@ class MisCampaignDocumentDTO extends AbstractStructBase
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {
@@ -349,7 +349,7 @@ class MisCampaignDocumentDTO extends AbstractStructBase
     /**
      * Set uploadDate value
      * @param string $uploadDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO
      */
     public function setUploadDate(?string $uploadDate = null): self
     {

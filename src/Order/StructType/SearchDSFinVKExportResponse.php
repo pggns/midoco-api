@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchDSFinVKExportResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDSFinVKExport
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport[]
      */
     protected ?array $MidocoDSFinVKExport = null;
     /**
      * Constructor method for SearchDSFinVKExportResponse
      * @uses SearchDSFinVKExportResponse::setMidocoDSFinVKExport()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport[] $midocoDSFinVKExport
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport[] $midocoDSFinVKExport
      */
     public function __construct(?array $midocoDSFinVKExport = null)
     {
@@ -34,7 +34,7 @@ class SearchDSFinVKExportResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDSFinVKExport value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport[]
      */
     public function getMidocoDSFinVKExport(): ?array
     {
@@ -55,12 +55,12 @@ class SearchDSFinVKExportResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchDSFinVKExportResponseMidocoDSFinVKExportItem) {
             // validation for constraint: itemType
-            if (!$searchDSFinVKExportResponseMidocoDSFinVKExportItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport) {
+            if (!$searchDSFinVKExportResponseMidocoDSFinVKExportItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport) {
                 $invalidValues[] = is_object($searchDSFinVKExportResponseMidocoDSFinVKExportItem) ? get_class($searchDSFinVKExportResponseMidocoDSFinVKExportItem) : sprintf('%s(%s)', gettype($searchDSFinVKExportResponseMidocoDSFinVKExportItem), var_export($searchDSFinVKExportResponseMidocoDSFinVKExportItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDSFinVKExport property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDSFinVKExport property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchDSFinVKExportResponse extends AbstractStructBase
     /**
      * Set MidocoDSFinVKExport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport[] $midocoDSFinVKExport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchDSFinVKExportResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport[] $midocoDSFinVKExport
+     * @return \Pggns\MidocoApi\Order\StructType\SearchDSFinVKExportResponse
      */
     public function setMidocoDSFinVKExport(?array $midocoDSFinVKExport = null): self
     {
@@ -85,14 +85,14 @@ class SearchDSFinVKExportResponse extends AbstractStructBase
     /**
      * Add item to MidocoDSFinVKExport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchDSFinVKExportResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchDSFinVKExportResponse
      */
-    public function addToMidocoDSFinVKExport(\Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport $item): self
+    public function addToMidocoDSFinVKExport(\Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport) {
-            throw new InvalidArgumentException(sprintf('The MidocoDSFinVKExport property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDSFinVKExport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport) {
+            throw new InvalidArgumentException(sprintf('The MidocoDSFinVKExport property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDSFinVKExport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDSFinVKExport[] = $item;
         

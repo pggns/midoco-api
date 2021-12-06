@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoExportNamesTableChooserValue extends AbstractStructBase
     /**
      * Set travellerIsSelected value
      * @param bool $travellerIsSelected
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoExportNamesTableChooserValue
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoExportNamesTableChooserValue
      */
     public function setTravellerIsSelected(?bool $travellerIsSelected = null): self
     {
@@ -94,7 +94,7 @@ class MidocoExportNamesTableChooserValue extends AbstractStructBase
     /**
      * Set travellerName value
      * @param string $travellerName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoExportNamesTableChooserValue
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoExportNamesTableChooserValue
      */
     public function setTravellerName(?string $travellerName = null): self
     {
@@ -117,7 +117,7 @@ class MidocoExportNamesTableChooserValue extends AbstractStructBase
     /**
      * Set travellerId value
      * @param int $travellerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoExportNamesTableChooserValue
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoExportNamesTableChooserValue
      */
     public function setTravellerId(?int $travellerId = null): self
     {
@@ -140,7 +140,7 @@ class MidocoExportNamesTableChooserValue extends AbstractStructBase
     /**
      * Set additionalIsSelected value
      * @param bool $additionalIsSelected
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoExportNamesTableChooserValue
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoExportNamesTableChooserValue
      */
     public function setAdditionalIsSelected(?bool $additionalIsSelected = null): self
     {
@@ -163,7 +163,7 @@ class MidocoExportNamesTableChooserValue extends AbstractStructBase
     /**
      * Set additionalName value
      * @param string $additionalName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoExportNamesTableChooserValue
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoExportNamesTableChooserValue
      */
     public function setAdditionalName(?string $additionalName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -148,7 +148,7 @@ class InsuranceServiceType extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType
      */
     public function setPosition(int $position): self
     {
@@ -171,7 +171,7 @@ class InsuranceServiceType extends AbstractStructBase
     /**
      * Set tariffCode value
      * @param string $tariffCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType
      */
     public function setTariffCode(?string $tariffCode = null): self
     {
@@ -194,7 +194,7 @@ class InsuranceServiceType extends AbstractStructBase
     /**
      * Set tariffDescription value
      * @param string $tariffDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType
      */
     public function setTariffDescription(?string $tariffDescription = null): self
     {
@@ -217,7 +217,7 @@ class InsuranceServiceType extends AbstractStructBase
     /**
      * Set personsPerService value
      * @param string $personsPerService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType
      */
     public function setPersonsPerService(?string $personsPerService = null): self
     {
@@ -240,7 +240,7 @@ class InsuranceServiceType extends AbstractStructBase
     /**
      * Set noOfServices value
      * @param int $noOfServices
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType
      */
     public function setNoOfServices(?int $noOfServices = null): self
     {
@@ -263,7 +263,7 @@ class InsuranceServiceType extends AbstractStructBase
     /**
      * Set validStart value
      * @param string $validStart
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType
      */
     public function setValidStart(?string $validStart = null): self
     {
@@ -290,7 +290,7 @@ class InsuranceServiceType extends AbstractStructBase
     /**
      * Set validEnd value
      * @param string $validEnd
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType
      */
     public function setValidEnd(?string $validEnd = null): self
     {
@@ -313,7 +313,7 @@ class InsuranceServiceType extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {
@@ -336,7 +336,7 @@ class InsuranceServiceType extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {
@@ -359,7 +359,7 @@ class InsuranceServiceType extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -382,7 +382,7 @@ class InsuranceServiceType extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -405,7 +405,7 @@ class InsuranceServiceType extends AbstractStructBase
     /**
      * Set isAnnual value
      * @param bool $isAnnual
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType
      */
     public function setIsAnnual(?bool $isAnnual = null): self
     {
@@ -428,7 +428,7 @@ class InsuranceServiceType extends AbstractStructBase
     /**
      * Set annualValidTo value
      * @param string $annualValidTo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType
      */
     public function setAnnualValidTo(?string $annualValidTo = null): self
     {

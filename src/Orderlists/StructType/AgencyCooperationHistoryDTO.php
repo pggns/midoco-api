@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class AgencyCooperationHistoryDTO extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencyCooperationHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencyCooperationHistoryDTO
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -102,7 +102,7 @@ class AgencyCooperationHistoryDTO extends AbstractStructBase
     /**
      * Set creatingUser value
      * @param int $creatingUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencyCooperationHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencyCooperationHistoryDTO
      */
     public function setCreatingUser(?int $creatingUser = null): self
     {
@@ -125,7 +125,7 @@ class AgencyCooperationHistoryDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencyCooperationHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencyCooperationHistoryDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -148,7 +148,7 @@ class AgencyCooperationHistoryDTO extends AbstractStructBase
     /**
      * Set dateCreated value
      * @param string $dateCreated
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencyCooperationHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencyCooperationHistoryDTO
      */
     public function setDateCreated(?string $dateCreated = null): self
     {
@@ -171,7 +171,7 @@ class AgencyCooperationHistoryDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencyCooperationHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencyCooperationHistoryDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -194,7 +194,7 @@ class AgencyCooperationHistoryDTO extends AbstractStructBase
     /**
      * Set validUntil value
      * @param string $validUntil
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencyCooperationHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencyCooperationHistoryDTO
      */
     public function setValidUntil(?string $validUntil = null): self
     {

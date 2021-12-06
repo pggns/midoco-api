@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class PrintAllUsersBonusCalculationRequest extends AbstractStructBase
     /**
      * Set bonusId value
      * @param int $bonusId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAllUsersBonusCalculationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAllUsersBonusCalculationRequest
      */
     public function setBonusId(?int $bonusId = null): self
     {
@@ -80,7 +80,7 @@ class PrintAllUsersBonusCalculationRequest extends AbstractStructBase
     /**
      * Set isPreview value
      * @param bool $isPreview
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAllUsersBonusCalculationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAllUsersBonusCalculationRequest
      */
     public function setIsPreview(?bool $isPreview = null): self
     {
@@ -103,7 +103,7 @@ class PrintAllUsersBonusCalculationRequest extends AbstractStructBase
     /**
      * Set isSummaryOnly value
      * @param bool $isSummaryOnly
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAllUsersBonusCalculationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAllUsersBonusCalculationRequest
      */
     public function setIsSummaryOnly(?bool $isSummaryOnly = false): self
     {

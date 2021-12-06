@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MisCubeDTO extends AbstractStructBase
     /**
      * Set cubeId value
      * @param int $cubeId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MisCubeDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\MisCubeDTO
      */
     public function setCubeId(?int $cubeId = null): self
     {
@@ -86,7 +86,7 @@ class MisCubeDTO extends AbstractStructBase
     /**
      * Set cubeName value
      * @param string $cubeName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MisCubeDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\MisCubeDTO
      */
     public function setCubeName(?string $cubeName = null): self
     {
@@ -109,7 +109,7 @@ class MisCubeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MisCubeDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\MisCubeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -132,7 +132,7 @@ class MisCubeDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MisCubeDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\MisCubeDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

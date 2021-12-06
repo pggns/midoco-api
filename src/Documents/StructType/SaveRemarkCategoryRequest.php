@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveRemarkCategoryRequest extends AbstractStructBase
      * The MidocoRemarkCategory
      * Meta information extracted from the WSDL
      * - ref: MidocoRemarkCategory
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory $MidocoRemarkCategory = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory $MidocoRemarkCategory = null;
     /**
      * Constructor method for SaveRemarkCategoryRequest
      * @uses SaveRemarkCategoryRequest::setMidocoRemarkCategory()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory = null)
     {
         $this
             ->setMidocoRemarkCategory($midocoRemarkCategory);
     }
     /**
      * Get MidocoRemarkCategory value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory|null
      */
-    public function getMidocoRemarkCategory(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory
+    public function getMidocoRemarkCategory(): ?\Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory
     {
         return $this->MidocoRemarkCategory;
     }
     /**
      * Set MidocoRemarkCategory value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveRemarkCategoryRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveRemarkCategoryRequest
      */
-    public function setMidocoRemarkCategory(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory = null): self
+    public function setMidocoRemarkCategory(?\Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory $midocoRemarkCategory = null): self
     {
         $this->MidocoRemarkCategory = $midocoRemarkCategory;
         

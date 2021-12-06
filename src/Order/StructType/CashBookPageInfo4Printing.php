@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -46,7 +46,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: CashBookLineInfo4Printing
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing[]
+     * @var \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing[]
      */
     protected ?array $CashBookLineInfo4Printing = null;
     /**
@@ -55,7 +55,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: CashBookReceiptPosition4Printing
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CashBookReceiptPosition4Printing[]
+     * @var \Pggns\MidocoApi\Order\StructType\CashBookReceiptPosition4Printing[]
      */
     protected ?array $CashBookReceiptPosition4Printing = null;
     /**
@@ -110,8 +110,8 @@ class CashBookPageInfo4Printing extends AbstractStructBase
      * @param float $balanceStart
      * @param float $balanceEnd
      * @param string $paymentType
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing[] $cashBookLineInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashBookReceiptPosition4Printing[] $cashBookReceiptPosition4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing[] $cashBookLineInfo4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\CashBookReceiptPosition4Printing[] $cashBookReceiptPosition4Printing
      * @param float $cashBalanceStart
      * @param float $cashBalanceEnd
      * @param float $sumExpenses
@@ -147,7 +147,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Set pageNo value
      * @param string $pageNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
     public function setPageNo(?string $pageNo = null): self
     {
@@ -170,7 +170,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Set pageCounter value
      * @param int $pageCounter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
     public function setPageCounter(?int $pageCounter = null): self
     {
@@ -193,7 +193,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Set balanceStart value
      * @param float $balanceStart
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
     public function setBalanceStart(?float $balanceStart = null): self
     {
@@ -216,7 +216,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Set balanceEnd value
      * @param float $balanceEnd
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
     public function setBalanceEnd(?float $balanceEnd = null): self
     {
@@ -239,7 +239,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -253,7 +253,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     }
     /**
      * Get CashBookLineInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing[]
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing[]
      */
     public function getCashBookLineInfo4Printing(): ?array
     {
@@ -274,12 +274,12 @@ class CashBookPageInfo4Printing extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $cashBookPageInfo4PrintingCashBookLineInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$cashBookPageInfo4PrintingCashBookLineInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing) {
+            if (!$cashBookPageInfo4PrintingCashBookLineInfo4PrintingItem instanceof \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing) {
                 $invalidValues[] = is_object($cashBookPageInfo4PrintingCashBookLineInfo4PrintingItem) ? get_class($cashBookPageInfo4PrintingCashBookLineInfo4PrintingItem) : sprintf('%s(%s)', gettype($cashBookPageInfo4PrintingCashBookLineInfo4PrintingItem), var_export($cashBookPageInfo4PrintingCashBookLineInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CashBookLineInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CashBookLineInfo4Printing property can only contain items of type \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -288,8 +288,8 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Set CashBookLineInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing[] $cashBookLineInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing[] $cashBookLineInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
     public function setCashBookLineInfo4Printing(?array $cashBookLineInfo4Printing = null): self
     {
@@ -304,14 +304,14 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Add item to CashBookLineInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing $item
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
-    public function addToCashBookLineInfo4Printing(\Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing $item): self
+    public function addToCashBookLineInfo4Printing(\Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing) {
-            throw new InvalidArgumentException(sprintf('The CashBookLineInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing) {
+            throw new InvalidArgumentException(sprintf('The CashBookLineInfo4Printing property can only contain items of type \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CashBookLineInfo4Printing[] = $item;
         
@@ -319,7 +319,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     }
     /**
      * Get CashBookReceiptPosition4Printing value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookReceiptPosition4Printing[]
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookReceiptPosition4Printing[]
      */
     public function getCashBookReceiptPosition4Printing(): ?array
     {
@@ -340,12 +340,12 @@ class CashBookPageInfo4Printing extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $cashBookPageInfo4PrintingCashBookReceiptPosition4PrintingItem) {
             // validation for constraint: itemType
-            if (!$cashBookPageInfo4PrintingCashBookReceiptPosition4PrintingItem instanceof \Pggns\MidocoApi\Api\Order\StructType\CashBookReceiptPosition4Printing) {
+            if (!$cashBookPageInfo4PrintingCashBookReceiptPosition4PrintingItem instanceof \Pggns\MidocoApi\Order\StructType\CashBookReceiptPosition4Printing) {
                 $invalidValues[] = is_object($cashBookPageInfo4PrintingCashBookReceiptPosition4PrintingItem) ? get_class($cashBookPageInfo4PrintingCashBookReceiptPosition4PrintingItem) : sprintf('%s(%s)', gettype($cashBookPageInfo4PrintingCashBookReceiptPosition4PrintingItem), var_export($cashBookPageInfo4PrintingCashBookReceiptPosition4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CashBookReceiptPosition4Printing property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CashBookReceiptPosition4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CashBookReceiptPosition4Printing property can only contain items of type \Pggns\MidocoApi\Order\StructType\CashBookReceiptPosition4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -354,8 +354,8 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Set CashBookReceiptPosition4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashBookReceiptPosition4Printing[] $cashBookReceiptPosition4Printing
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\CashBookReceiptPosition4Printing[] $cashBookReceiptPosition4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
     public function setCashBookReceiptPosition4Printing(?array $cashBookReceiptPosition4Printing = null): self
     {
@@ -370,14 +370,14 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Add item to CashBookReceiptPosition4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashBookReceiptPosition4Printing $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\CashBookReceiptPosition4Printing $item
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
-    public function addToCashBookReceiptPosition4Printing(\Pggns\MidocoApi\Api\Order\StructType\CashBookReceiptPosition4Printing $item): self
+    public function addToCashBookReceiptPosition4Printing(\Pggns\MidocoApi\Order\StructType\CashBookReceiptPosition4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\CashBookReceiptPosition4Printing) {
-            throw new InvalidArgumentException(sprintf('The CashBookReceiptPosition4Printing property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CashBookReceiptPosition4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\CashBookReceiptPosition4Printing) {
+            throw new InvalidArgumentException(sprintf('The CashBookReceiptPosition4Printing property can only contain items of type \Pggns\MidocoApi\Order\StructType\CashBookReceiptPosition4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CashBookReceiptPosition4Printing[] = $item;
         
@@ -394,7 +394,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Set cashBalanceStart value
      * @param float $cashBalanceStart
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
     public function setCashBalanceStart(?float $cashBalanceStart = null): self
     {
@@ -417,7 +417,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Set cashBalanceEnd value
      * @param float $cashBalanceEnd
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
     public function setCashBalanceEnd(?float $cashBalanceEnd = null): self
     {
@@ -440,7 +440,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Set sumExpenses value
      * @param float $sumExpenses
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
     public function setSumExpenses(?float $sumExpenses = null): self
     {
@@ -463,7 +463,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Set sumReceipts value
      * @param float $sumReceipts
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
     public function setSumReceipts(?float $sumReceipts = null): self
     {
@@ -486,7 +486,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Set printSum value
      * @param bool $printSum
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
     public function setPrintSum(?bool $printSum = null): self
     {
@@ -509,7 +509,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookPageInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookPageInfo4Printing
      */
     public function setCurrency(?string $currency = null): self
     {

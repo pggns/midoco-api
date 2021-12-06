@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CashbookSumType extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSumType
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSumType
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -78,7 +78,7 @@ class CashbookSumType extends AbstractStructBase
     /**
      * Set cardType value
      * @param string $cardType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSumType
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSumType
      */
     public function setCardType(?string $cardType = null): self
     {
@@ -101,7 +101,7 @@ class CashbookSumType extends AbstractStructBase
     /**
      * Set sum value
      * @param float $sum
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSumType
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSumType
      */
     public function setSum(?float $sum = null): self
     {

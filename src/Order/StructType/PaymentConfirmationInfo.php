@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class PaymentConfirmationInfo extends AbstractStructBase
     /**
      * Set orderPaymentId value
      * @param int $orderPaymentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentConfirmationInfo
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentConfirmationInfo
      */
     public function setOrderPaymentId(?int $orderPaymentId = null): self
     {
@@ -78,7 +78,7 @@ class PaymentConfirmationInfo extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentConfirmationInfo
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentConfirmationInfo
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -101,7 +101,7 @@ class PaymentConfirmationInfo extends AbstractStructBase
     /**
      * Set isFinalPaymentReceived value
      * @param bool $isFinalPaymentReceived
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentConfirmationInfo
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentConfirmationInfo
      */
     public function setIsFinalPaymentReceived(?bool $isFinalPaymentReceived = null): self
     {

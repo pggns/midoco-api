@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoAgencySettlementResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: SearchMidocoAgencyProvisionInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo[]
      */
     protected ?array $SearchMidocoAgencyProvisionInfo = null;
     /**
      * Constructor method for GetMidocoAgencySettlementResponse
      * @uses GetMidocoAgencySettlementResponse::setSearchMidocoAgencyProvisionInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo[] $searchMidocoAgencyProvisionInfo
+     * @param \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo[] $searchMidocoAgencyProvisionInfo
      */
     public function __construct(?array $searchMidocoAgencyProvisionInfo = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoAgencySettlementResponse extends AbstractStructBase
     }
     /**
      * Get SearchMidocoAgencyProvisionInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo[]
      */
     public function getSearchMidocoAgencyProvisionInfo(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoAgencySettlementResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoAgencySettlementResponseSearchMidocoAgencyProvisionInfoItem) {
             // validation for constraint: itemType
-            if (!$getMidocoAgencySettlementResponseSearchMidocoAgencyProvisionInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo) {
+            if (!$getMidocoAgencySettlementResponseSearchMidocoAgencyProvisionInfoItem instanceof \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo) {
                 $invalidValues[] = is_object($getMidocoAgencySettlementResponseSearchMidocoAgencyProvisionInfoItem) ? get_class($getMidocoAgencySettlementResponseSearchMidocoAgencyProvisionInfoItem) : sprintf('%s(%s)', gettype($getMidocoAgencySettlementResponseSearchMidocoAgencyProvisionInfoItem), var_export($getMidocoAgencySettlementResponseSearchMidocoAgencyProvisionInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The SearchMidocoAgencyProvisionInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The SearchMidocoAgencyProvisionInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoAgencySettlementResponse extends AbstractStructBase
     /**
      * Set SearchMidocoAgencyProvisionInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo[] $searchMidocoAgencyProvisionInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoAgencySettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo[] $searchMidocoAgencyProvisionInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoAgencySettlementResponse
      */
     public function setSearchMidocoAgencyProvisionInfo(?array $searchMidocoAgencyProvisionInfo = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoAgencySettlementResponse extends AbstractStructBase
     /**
      * Add item to SearchMidocoAgencyProvisionInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoAgencySettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoAgencySettlementResponse
      */
-    public function addToSearchMidocoAgencyProvisionInfo(\Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo $item): self
+    public function addToSearchMidocoAgencyProvisionInfo(\Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo) {
-            throw new InvalidArgumentException(sprintf('The SearchMidocoAgencyProvisionInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SearchMidocoAgencyProvisionInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo) {
+            throw new InvalidArgumentException(sprintf('The SearchMidocoAgencyProvisionInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\SearchMidocoAgencyProvisionInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->SearchMidocoAgencyProvisionInfo[] = $item;
         

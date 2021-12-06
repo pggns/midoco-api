@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -76,7 +76,7 @@ class Company_data extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Company_data
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Company_data
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -99,7 +99,7 @@ class Company_data extends AbstractStructBase
     /**
      * Set contact_person value
      * @param string $contact_person
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Company_data
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Company_data
      */
     public function setContact_person(?string $contact_person = null): self
     {
@@ -122,7 +122,7 @@ class Company_data extends AbstractStructBase
     /**
      * Set organisation_name value
      * @param string $organisation_name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Company_data
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Company_data
      */
     public function setOrganisation_name(?string $organisation_name = null): self
     {
@@ -145,7 +145,7 @@ class Company_data extends AbstractStructBase
     /**
      * Set vat_id value
      * @param string $vat_id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Company_data
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Company_data
      */
     public function setVat_id(?string $vat_id = null): self
     {

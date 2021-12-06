@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class MidocoKaeraBondWithId extends AbstractStructBase
     /**
      * Set bondid value
      * @param string $bondid
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoKaeraBondWithId
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoKaeraBondWithId
      */
     public function setBondid(?string $bondid = null): self
     {
@@ -126,7 +126,7 @@ class MidocoKaeraBondWithId extends AbstractStructBase
     /**
      * Set policynumber value
      * @param string $policynumber
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoKaeraBondWithId
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoKaeraBondWithId
      */
     public function setPolicynumber(?string $policynumber = null): self
     {
@@ -149,7 +149,7 @@ class MidocoKaeraBondWithId extends AbstractStructBase
     /**
      * Set vaiduntil value
      * @param string $vaiduntil
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoKaeraBondWithId
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoKaeraBondWithId
      */
     public function setVaiduntil(?string $vaiduntil = null): self
     {
@@ -172,7 +172,7 @@ class MidocoKaeraBondWithId extends AbstractStructBase
     /**
      * Set validfrom value
      * @param string $validfrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoKaeraBondWithId
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoKaeraBondWithId
      */
     public function setValidfrom(?string $validfrom = null): self
     {
@@ -195,7 +195,7 @@ class MidocoKaeraBondWithId extends AbstractStructBase
     /**
      * Set amoundBondsLeft value
      * @param int $amoundBondsLeft
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoKaeraBondWithId
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoKaeraBondWithId
      */
     public function setAmoundBondsLeft(?int $amoundBondsLeft = null): self
     {
@@ -218,7 +218,7 @@ class MidocoKaeraBondWithId extends AbstractStructBase
     /**
      * Set bondTravelcostLeft value
      * @param float $bondTravelcostLeft
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoKaeraBondWithId
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoKaeraBondWithId
      */
     public function setBondTravelcostLeft(?float $bondTravelcostLeft = null): self
     {
@@ -241,7 +241,7 @@ class MidocoKaeraBondWithId extends AbstractStructBase
     /**
      * Set returnCode value
      * @param int $returnCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoKaeraBondWithId
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoKaeraBondWithId
      */
     public function setReturnCode(?int $returnCode = null): self
     {
@@ -264,7 +264,7 @@ class MidocoKaeraBondWithId extends AbstractStructBase
     /**
      * Set bondPdf value
      * @param string $bondPdf
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoKaeraBondWithId
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoKaeraBondWithId
      */
     public function setBondPdf(?string $bondPdf = null): self
     {
@@ -287,7 +287,7 @@ class MidocoKaeraBondWithId extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoKaeraBondWithId
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoKaeraBondWithId
      */
     public function setDescription(?string $description = null): self
     {

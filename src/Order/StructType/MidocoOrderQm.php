@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,25 +17,25 @@ class MidocoOrderQm extends OrderQmDTO
      * The MidocoQuestion
      * Meta information extracted from the WSDL
      * - ref: ordersd:MidocoQuestion
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoQuestion|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion $MidocoQuestion = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoQuestion $MidocoQuestion = null;
     /**
      * The MidocoOrderQmAnswerDTO
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderQmAnswerDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\OrderQmAnswerDTO[]
      */
     protected ?array $MidocoOrderQmAnswerDTO = null;
     /**
      * Constructor method for MidocoOrderQm
      * @uses MidocoOrderQm::setMidocoQuestion()
      * @uses MidocoOrderQm::setMidocoOrderQmAnswerDTO()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion $midocoQuestion
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderQmAnswerDTO[] $midocoOrderQmAnswerDTO
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoQuestion $midocoQuestion
+     * @param \Pggns\MidocoApi\Order\StructType\OrderQmAnswerDTO[] $midocoOrderQmAnswerDTO
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion $midocoQuestion = null, ?array $midocoOrderQmAnswerDTO = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoQuestion $midocoQuestion = null, ?array $midocoOrderQmAnswerDTO = null)
     {
         $this
             ->setMidocoQuestion($midocoQuestion)
@@ -43,18 +43,18 @@ class MidocoOrderQm extends OrderQmDTO
     }
     /**
      * Get MidocoQuestion value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoQuestion|null
      */
-    public function getMidocoQuestion(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion
+    public function getMidocoQuestion(): ?\Pggns\MidocoApi\Order\StructType\MidocoQuestion
     {
         return $this->MidocoQuestion;
     }
     /**
      * Set MidocoQuestion value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion $midocoQuestion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoQuestion $midocoQuestion
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderQm
      */
-    public function setMidocoQuestion(?\Pggns\MidocoApi\Api\Order\StructType\MidocoQuestion $midocoQuestion = null): self
+    public function setMidocoQuestion(?\Pggns\MidocoApi\Order\StructType\MidocoQuestion $midocoQuestion = null): self
     {
         $this->MidocoQuestion = $midocoQuestion;
         
@@ -62,7 +62,7 @@ class MidocoOrderQm extends OrderQmDTO
     }
     /**
      * Get MidocoOrderQmAnswerDTO value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderQmAnswerDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\OrderQmAnswerDTO[]
      */
     public function getMidocoOrderQmAnswerDTO(): ?array
     {
@@ -83,12 +83,12 @@ class MidocoOrderQm extends OrderQmDTO
         $invalidValues = [];
         foreach ($values as $midocoOrderQmMidocoOrderQmAnswerDTOItem) {
             // validation for constraint: itemType
-            if (!$midocoOrderQmMidocoOrderQmAnswerDTOItem instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderQmAnswerDTO) {
+            if (!$midocoOrderQmMidocoOrderQmAnswerDTOItem instanceof \Pggns\MidocoApi\Order\StructType\OrderQmAnswerDTO) {
                 $invalidValues[] = is_object($midocoOrderQmMidocoOrderQmAnswerDTOItem) ? get_class($midocoOrderQmMidocoOrderQmAnswerDTOItem) : sprintf('%s(%s)', gettype($midocoOrderQmMidocoOrderQmAnswerDTOItem), var_export($midocoOrderQmMidocoOrderQmAnswerDTOItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderQmAnswerDTO property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderQmAnswerDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderQmAnswerDTO property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderQmAnswerDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -97,8 +97,8 @@ class MidocoOrderQm extends OrderQmDTO
     /**
      * Set MidocoOrderQmAnswerDTO value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderQmAnswerDTO[] $midocoOrderQmAnswerDTO
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm
+     * @param \Pggns\MidocoApi\Order\StructType\OrderQmAnswerDTO[] $midocoOrderQmAnswerDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderQm
      */
     public function setMidocoOrderQmAnswerDTO(?array $midocoOrderQmAnswerDTO = null): self
     {
@@ -113,14 +113,14 @@ class MidocoOrderQm extends OrderQmDTO
     /**
      * Add item to MidocoOrderQmAnswerDTO value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderQmAnswerDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm
+     * @param \Pggns\MidocoApi\Order\StructType\OrderQmAnswerDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderQm
      */
-    public function addToMidocoOrderQmAnswerDTO(\Pggns\MidocoApi\Api\Order\StructType\OrderQmAnswerDTO $item): self
+    public function addToMidocoOrderQmAnswerDTO(\Pggns\MidocoApi\Order\StructType\OrderQmAnswerDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderQmAnswerDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderQmAnswerDTO property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderQmAnswerDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\OrderQmAnswerDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderQmAnswerDTO property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderQmAnswerDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderQmAnswerDTO[] = $item;
         

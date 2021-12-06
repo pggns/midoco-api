@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Preview extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Preview
+     * @return \Pggns\MidocoApi\Order\ServiceType\Preview
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Preview extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PreviewBillingDocumentRequest $paramPreviewBillingDocumentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreviewBillingDocumentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PreviewBillingDocumentRequest $paramPreviewBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PreviewBillingDocumentResponse|bool
      */
-    public function previewBillingDocument(\Pggns\MidocoApi\Api\Order\StructType\PreviewBillingDocumentRequest $paramPreviewBillingDocumentRequest)
+    public function previewBillingDocument(\Pggns\MidocoApi\Order\StructType\PreviewBillingDocumentRequest $paramPreviewBillingDocumentRequest)
     {
         try {
             $this->setResult($resultPreviewBillingDocument = $this->getSoapClient()->__soapCall('previewBillingDocument', [
@@ -58,15 +58,15 @@ class Preview extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PreviewCashbookForCrtUserRequest $paramPreviewCashbookForCrtUserRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreviewCashbookForCrtUserResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PreviewCashbookForCrtUserRequest $paramPreviewCashbookForCrtUserRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PreviewCashbookForCrtUserResponse|bool
      */
-    public function previewCashbookForCrtUser(\Pggns\MidocoApi\Api\Order\StructType\PreviewCashbookForCrtUserRequest $paramPreviewCashbookForCrtUserRequest)
+    public function previewCashbookForCrtUser(\Pggns\MidocoApi\Order\StructType\PreviewCashbookForCrtUserRequest $paramPreviewCashbookForCrtUserRequest)
     {
         try {
             $this->setResult($resultPreviewCashbookForCrtUser = $this->getSoapClient()->__soapCall('previewCashbookForCrtUser', [
@@ -83,7 +83,7 @@ class Preview extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreviewBillingDocumentResponse|\Pggns\MidocoApi\Api\Order\StructType\PreviewCashbookForCrtUserResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PreviewBillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\PreviewCashbookForCrtUserResponse
      */
     public function getResult()
     {

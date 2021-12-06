@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DeleteOldProcessedBookingsRequest extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOldProcessedBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOldProcessedBookingsRequest
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -70,7 +70,7 @@ class DeleteOldProcessedBookingsRequest extends AbstractStructBase
     /**
      * Set externalSystem value
      * @param string $externalSystem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOldProcessedBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOldProcessedBookingsRequest
      */
     public function setExternalSystem(?string $externalSystem = null): self
     {

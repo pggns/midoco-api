@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetExecutedCampaignsForTemplateResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCampaignExecutedFromTemplate
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignExecutedFromTemplateType[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoCampaignExecutedFromTemplateType[]
      */
     protected ?array $MidocoCampaignExecutedFromTemplate = null;
     /**
      * Constructor method for GetExecutedCampaignsForTemplateResponse
      * @uses GetExecutedCampaignsForTemplateResponse::setMidocoCampaignExecutedFromTemplate()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignExecutedFromTemplateType[] $midocoCampaignExecutedFromTemplate
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCampaignExecutedFromTemplateType[] $midocoCampaignExecutedFromTemplate
      */
     public function __construct(?array $midocoCampaignExecutedFromTemplate = null)
     {
@@ -34,7 +34,7 @@ class GetExecutedCampaignsForTemplateResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCampaignExecutedFromTemplate value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignExecutedFromTemplateType[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCampaignExecutedFromTemplateType[]
      */
     public function getMidocoCampaignExecutedFromTemplate(): ?array
     {
@@ -55,12 +55,12 @@ class GetExecutedCampaignsForTemplateResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getExecutedCampaignsForTemplateResponseMidocoCampaignExecutedFromTemplateItem) {
             // validation for constraint: itemType
-            if (!$getExecutedCampaignsForTemplateResponseMidocoCampaignExecutedFromTemplateItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignExecutedFromTemplateType) {
+            if (!$getExecutedCampaignsForTemplateResponseMidocoCampaignExecutedFromTemplateItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoCampaignExecutedFromTemplateType) {
                 $invalidValues[] = is_object($getExecutedCampaignsForTemplateResponseMidocoCampaignExecutedFromTemplateItem) ? get_class($getExecutedCampaignsForTemplateResponseMidocoCampaignExecutedFromTemplateItem) : sprintf('%s(%s)', gettype($getExecutedCampaignsForTemplateResponseMidocoCampaignExecutedFromTemplateItem), var_export($getExecutedCampaignsForTemplateResponseMidocoCampaignExecutedFromTemplateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCampaignExecutedFromTemplate property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignExecutedFromTemplateType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCampaignExecutedFromTemplate property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoCampaignExecutedFromTemplateType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetExecutedCampaignsForTemplateResponse extends AbstractStructBase
     /**
      * Set MidocoCampaignExecutedFromTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignExecutedFromTemplateType[] $midocoCampaignExecutedFromTemplate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetExecutedCampaignsForTemplateResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCampaignExecutedFromTemplateType[] $midocoCampaignExecutedFromTemplate
+     * @return \Pggns\MidocoApi\Mis\StructType\GetExecutedCampaignsForTemplateResponse
      */
     public function setMidocoCampaignExecutedFromTemplate(?array $midocoCampaignExecutedFromTemplate = null): self
     {
@@ -85,14 +85,14 @@ class GetExecutedCampaignsForTemplateResponse extends AbstractStructBase
     /**
      * Add item to MidocoCampaignExecutedFromTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignExecutedFromTemplateType $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetExecutedCampaignsForTemplateResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCampaignExecutedFromTemplateType $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetExecutedCampaignsForTemplateResponse
      */
-    public function addToMidocoCampaignExecutedFromTemplate(\Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignExecutedFromTemplateType $item): self
+    public function addToMidocoCampaignExecutedFromTemplate(\Pggns\MidocoApi\Mis\StructType\MidocoCampaignExecutedFromTemplateType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignExecutedFromTemplateType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCampaignExecutedFromTemplate property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignExecutedFromTemplateType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoCampaignExecutedFromTemplateType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCampaignExecutedFromTemplate property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoCampaignExecutedFromTemplateType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCampaignExecutedFromTemplate[] = $item;
         

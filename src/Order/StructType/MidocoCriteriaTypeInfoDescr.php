@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class MidocoCriteriaTypeInfoDescr extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCriteriaTypeInfoDescr
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCriteriaTypeInfoDescr
      */
     public function setCategoryId(int $categoryId): self
     {
@@ -92,7 +92,7 @@ class MidocoCriteriaTypeInfoDescr extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCriteriaTypeInfoDescr
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCriteriaTypeInfoDescr
      */
     public function setTypeId(string $typeId): self
     {
@@ -115,7 +115,7 @@ class MidocoCriteriaTypeInfoDescr extends AbstractStructBase
     /**
      * Set guiPosition value
      * @param int $guiPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCriteriaTypeInfoDescr
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCriteriaTypeInfoDescr
      */
     public function setGuiPosition(int $guiPosition): self
     {
@@ -138,7 +138,7 @@ class MidocoCriteriaTypeInfoDescr extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCriteriaTypeInfoDescr
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCriteriaTypeInfoDescr
      */
     public function setDescription(?string $description = null): self
     {

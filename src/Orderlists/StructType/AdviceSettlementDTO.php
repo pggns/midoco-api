@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -198,7 +198,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -221,7 +221,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -244,7 +244,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set documentExportDate value
      * @param string $documentExportDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setDocumentExportDate(?string $documentExportDate = null): self
     {
@@ -267,7 +267,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set invoiceCustomerId value
      * @param int $invoiceCustomerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setInvoiceCustomerId(?int $invoiceCustomerId = null): self
     {
@@ -290,7 +290,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set invoiceDate value
      * @param string $invoiceDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setInvoiceDate(?string $invoiceDate = null): self
     {
@@ -313,7 +313,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param string $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setInvoiceNo(?string $invoiceNo = null): self
     {
@@ -336,7 +336,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -359,7 +359,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set isCommissionOnly value
      * @param bool $isCommissionOnly
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setIsCommissionOnly(?bool $isCommissionOnly = null): self
     {
@@ -382,7 +382,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set isDocumentExported value
      * @param bool $isDocumentExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setIsDocumentExported(?bool $isDocumentExported = null): self
     {
@@ -405,7 +405,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -428,7 +428,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -451,7 +451,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set sumCommission value
      * @param float $sumCommission
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setSumCommission(?float $sumCommission = null): self
     {
@@ -474,7 +474,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set sumControl value
      * @param float $sumControl
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setSumControl(?float $sumControl = null): self
     {
@@ -497,7 +497,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set sumDiAmount value
      * @param float $sumDiAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setSumDiAmount(?float $sumDiAmount = null): self
     {
@@ -520,7 +520,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set sumTravelPrice value
      * @param float $sumTravelPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setSumTravelPrice(?float $sumTravelPrice = null): self
     {
@@ -543,7 +543,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set sumVatAmount value
      * @param float $sumVatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setSumVatAmount(?float $sumVatAmount = null): self
     {
@@ -566,7 +566,7 @@ class AdviceSettlementDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdviceSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdviceSettlementDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

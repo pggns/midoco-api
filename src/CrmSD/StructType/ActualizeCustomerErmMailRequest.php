@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -117,7 +117,7 @@ class ActualizeCustomerErmMailRequest extends AbstractStructBase
     /**
      * Set mailId value
      * @param int $mailId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerErmMailRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerErmMailRequest
      */
     public function setMailId(?int $mailId = null): self
     {
@@ -140,7 +140,7 @@ class ActualizeCustomerErmMailRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerErmMailRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerErmMailRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -163,7 +163,7 @@ class ActualizeCustomerErmMailRequest extends AbstractStructBase
     /**
      * Set ermType value
      * @param string $ermType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerErmMailRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerErmMailRequest
      */
     public function setErmType(?string $ermType = null): self
     {
@@ -186,7 +186,7 @@ class ActualizeCustomerErmMailRequest extends AbstractStructBase
     /**
      * Set receipient value
      * @param string $receipient
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerErmMailRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerErmMailRequest
      */
     public function setReceipient(?string $receipient = null): self
     {
@@ -209,7 +209,7 @@ class ActualizeCustomerErmMailRequest extends AbstractStructBase
     /**
      * Set sender value
      * @param string $sender
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerErmMailRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerErmMailRequest
      */
     public function setSender(?string $sender = null): self
     {
@@ -232,7 +232,7 @@ class ActualizeCustomerErmMailRequest extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerErmMailRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerErmMailRequest
      */
     public function setSubject(?string $subject = null): self
     {
@@ -255,7 +255,7 @@ class ActualizeCustomerErmMailRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerErmMailRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerErmMailRequest
      */
     public function setType(?string $type = null): self
     {
@@ -278,7 +278,7 @@ class ActualizeCustomerErmMailRequest extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerErmMailRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerErmMailRequest
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -301,7 +301,7 @@ class ActualizeCustomerErmMailRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerErmMailRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerErmMailRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CustomerExportPositionDTO extends AbstractStructBase
     /**
      * Set customer value
      * @param string $customer
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerExportPositionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerExportPositionDTO
      */
     public function setCustomer(?string $customer = null): self
     {
@@ -86,7 +86,7 @@ class CustomerExportPositionDTO extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerExportPositionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerExportPositionDTO
      */
     public function setExportId(?int $exportId = null): self
     {
@@ -109,7 +109,7 @@ class CustomerExportPositionDTO extends AbstractStructBase
     /**
      * Set exportedData value
      * @param string $exportedData
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerExportPositionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerExportPositionDTO
      */
     public function setExportedData(?string $exportedData = null): self
     {
@@ -132,7 +132,7 @@ class CustomerExportPositionDTO extends AbstractStructBase
     /**
      * Set posType value
      * @param string $posType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerExportPositionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerExportPositionDTO
      */
     public function setPosType(?string $posType = null): self
     {

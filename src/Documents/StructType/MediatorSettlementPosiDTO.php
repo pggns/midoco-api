@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MediatorSettlementPosiDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorSettlementPosiDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorSettlementPosiDTO
      */
     public function setId(?int $id = null): self
     {
@@ -86,7 +86,7 @@ class MediatorSettlementPosiDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorSettlementPosiDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorSettlementPosiDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -109,7 +109,7 @@ class MediatorSettlementPosiDTO extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorSettlementPosiDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorSettlementPosiDTO
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -132,7 +132,7 @@ class MediatorSettlementPosiDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorSettlementPosiDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorSettlementPosiDTO
      */
     public function setPosition(?int $position = null): self
     {

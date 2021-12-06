@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class GetMyTaskViewUserRequest extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - ref: MidocoTaskViewUser
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser
      */
-    protected \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser $MidocoTaskViewUser;
+    protected \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser $MidocoTaskViewUser;
     /**
      * Constructor method for GetMyTaskViewUserRequest
      * @uses GetMyTaskViewUserRequest::setMidocoTaskViewUser()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser $midocoTaskViewUser
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser $midocoTaskViewUser
      */
-    public function __construct(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser $midocoTaskViewUser)
+    public function __construct(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser $midocoTaskViewUser)
     {
         $this
             ->setMidocoTaskViewUser($midocoTaskViewUser);
     }
     /**
      * Get MidocoTaskViewUser value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser
      */
-    public function getMidocoTaskViewUser(): \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser
+    public function getMidocoTaskViewUser(): \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser
     {
         return $this->MidocoTaskViewUser;
     }
     /**
      * Set MidocoTaskViewUser value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser $midocoTaskViewUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetMyTaskViewUserRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser $midocoTaskViewUser
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetMyTaskViewUserRequest
      */
-    public function setMidocoTaskViewUser(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewUser $midocoTaskViewUser): self
+    public function setMidocoTaskViewUser(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewUser $midocoTaskViewUser): self
     {
         $this->MidocoTaskViewUser = $midocoTaskViewUser;
         

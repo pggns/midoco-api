@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -96,17 +96,17 @@ class CCPaymentAdditionalInfo extends AbstractStructBase
     }
     /**
      * Set name value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\Name::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\Name::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\Name::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\Name::getValidValues()
      * @throws InvalidArgumentException
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CCPaymentAdditionalInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\CCPaymentAdditionalInfo
      */
     public function setName(?string $name = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\Name::valueIsValid($name)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\Name', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\Name::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\Name::valueIsValid($name)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\Name', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\Name::getValidValues())), __LINE__);
         }
         $this->name = $name;
         
@@ -123,7 +123,7 @@ class CCPaymentAdditionalInfo extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CCPaymentAdditionalInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\CCPaymentAdditionalInfo
      */
     public function setValue(?string $value = null): self
     {
@@ -146,7 +146,7 @@ class CCPaymentAdditionalInfo extends AbstractStructBase
     /**
      * Set booking_id value
      * @param string $booking_id
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CCPaymentAdditionalInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\CCPaymentAdditionalInfo
      */
     public function setBooking_id(?string $booking_id = null): self
     {
@@ -169,7 +169,7 @@ class CCPaymentAdditionalInfo extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CCPaymentAdditionalInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\CCPaymentAdditionalInfo
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -192,7 +192,7 @@ class CCPaymentAdditionalInfo extends AbstractStructBase
     /**
      * Set person_assignment value
      * @param string $person_assignment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CCPaymentAdditionalInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\CCPaymentAdditionalInfo
      */
     public function setPerson_assignment(?string $person_assignment = null): self
     {
@@ -215,7 +215,7 @@ class CCPaymentAdditionalInfo extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CCPaymentAdditionalInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\CCPaymentAdditionalInfo
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -238,7 +238,7 @@ class CCPaymentAdditionalInfo extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CCPaymentAdditionalInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\CCPaymentAdditionalInfo
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {

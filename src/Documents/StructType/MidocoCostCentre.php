@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class MidocoCostCentre extends CostCentreDTO
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCostCentre
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCostCentre
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -72,7 +72,7 @@ class MidocoCostCentre extends CostCentreDTO
     /**
      * Set isOrgunitCostCentre value
      * @param bool $isOrgunitCostCentre
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCostCentre
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCostCentre
      */
     public function setIsOrgunitCostCentre(?bool $isOrgunitCostCentre = false): self
     {

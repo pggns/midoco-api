@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class SaveTravelCMSResponse extends AbstractStructBase
     /**
      * Set statusOk value
      * @param bool $statusOk
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveTravelCMSResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveTravelCMSResponse
      */
     public function setStatusOk(?bool $statusOk = null): self
     {
@@ -70,7 +70,7 @@ class SaveTravelCMSResponse extends AbstractStructBase
     /**
      * Set countAttributes value
      * @param int $countAttributes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveTravelCMSResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveTravelCMSResponse
      */
     public function setCountAttributes(?int $countAttributes = null): self
     {

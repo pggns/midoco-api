@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteCollectiveInvoiceSettingRequest extends AbstractStructBase
     /**
      * Set settingId value
      * @param int $settingId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteCollectiveInvoiceSettingRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteCollectiveInvoiceSettingRequest
      */
     public function setSettingId(?int $settingId = null): self
     {

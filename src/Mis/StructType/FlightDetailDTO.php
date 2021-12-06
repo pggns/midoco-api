@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class FlightDetailDTO extends AbstractStructBase
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightDetailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightDetailDTO
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -118,7 +118,7 @@ class FlightDetailDTO extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightDetailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightDetailDTO
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -141,7 +141,7 @@ class FlightDetailDTO extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightDetailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightDetailDTO
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -164,7 +164,7 @@ class FlightDetailDTO extends AbstractStructBase
     /**
      * Set flightDate value
      * @param string $flightDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightDetailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightDetailDTO
      */
     public function setFlightDate(?string $flightDate = null): self
     {
@@ -187,7 +187,7 @@ class FlightDetailDTO extends AbstractStructBase
     /**
      * Set midocoItemId value
      * @param int $midocoItemId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightDetailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightDetailDTO
      */
     public function setMidocoItemId(?int $midocoItemId = null): self
     {
@@ -210,7 +210,7 @@ class FlightDetailDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightDetailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightDetailDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -233,7 +233,7 @@ class FlightDetailDTO extends AbstractStructBase
     /**
      * Set sellItemId value
      * @param int $sellItemId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightDetailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightDetailDTO
      */
     public function setSellItemId(?int $sellItemId = null): self
     {
@@ -256,7 +256,7 @@ class FlightDetailDTO extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FlightDetailDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FlightDetailDTO
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {

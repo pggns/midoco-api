@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoUnitRuleset extends UnitRulesetDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoUnitRuleset
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoUnitRuleset
      */
     public function setInherited(?bool $inherited = null): self
     {
@@ -86,7 +86,7 @@ class MidocoUnitRuleset extends UnitRulesetDTO
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoUnitRuleset
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoUnitRuleset
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -109,7 +109,7 @@ class MidocoUnitRuleset extends UnitRulesetDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoUnitRuleset
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoUnitRuleset
      */
     public function setDescription(?string $description = null): self
     {
@@ -132,7 +132,7 @@ class MidocoUnitRuleset extends UnitRulesetDTO
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoUnitRuleset
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoUnitRuleset
      */
     public function setModifyDate(?string $modifyDate = null): self
     {

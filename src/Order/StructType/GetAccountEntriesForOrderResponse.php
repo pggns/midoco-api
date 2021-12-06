@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetAccountEntriesForOrderResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderAccountEntry
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAccountEntry[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderAccountEntry[]
      */
     protected ?array $MidocoOrderAccountEntry = null;
     /**
@@ -43,7 +43,7 @@ class GetAccountEntriesForOrderResponse extends AbstractStructBase
      * @uses GetAccountEntriesForOrderResponse::setTotalNoOfRecords()
      * @uses GetAccountEntriesForOrderResponse::setTotalDueAmount()
      * @uses GetAccountEntriesForOrderResponse::setTotalAmount()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAccountEntry[] $midocoOrderAccountEntry
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderAccountEntry[] $midocoOrderAccountEntry
      * @param int $totalNoOfRecords
      * @param float $totalDueAmount
      * @param float $totalAmount
@@ -58,7 +58,7 @@ class GetAccountEntriesForOrderResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderAccountEntry value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAccountEntry[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderAccountEntry[]
      */
     public function getMidocoOrderAccountEntry(): ?array
     {
@@ -79,12 +79,12 @@ class GetAccountEntriesForOrderResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAccountEntriesForOrderResponseMidocoOrderAccountEntryItem) {
             // validation for constraint: itemType
-            if (!$getAccountEntriesForOrderResponseMidocoOrderAccountEntryItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAccountEntry) {
+            if (!$getAccountEntriesForOrderResponseMidocoOrderAccountEntryItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderAccountEntry) {
                 $invalidValues[] = is_object($getAccountEntriesForOrderResponseMidocoOrderAccountEntryItem) ? get_class($getAccountEntriesForOrderResponseMidocoOrderAccountEntryItem) : sprintf('%s(%s)', gettype($getAccountEntriesForOrderResponseMidocoOrderAccountEntryItem), var_export($getAccountEntriesForOrderResponseMidocoOrderAccountEntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderAccountEntry property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAccountEntry, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderAccountEntry property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderAccountEntry, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -93,8 +93,8 @@ class GetAccountEntriesForOrderResponse extends AbstractStructBase
     /**
      * Set MidocoOrderAccountEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAccountEntry[] $midocoOrderAccountEntry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForOrderResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderAccountEntry[] $midocoOrderAccountEntry
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderResponse
      */
     public function setMidocoOrderAccountEntry(?array $midocoOrderAccountEntry = null): self
     {
@@ -109,14 +109,14 @@ class GetAccountEntriesForOrderResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderAccountEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAccountEntry $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForOrderResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderAccountEntry $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderResponse
      */
-    public function addToMidocoOrderAccountEntry(\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAccountEntry $item): self
+    public function addToMidocoOrderAccountEntry(\Pggns\MidocoApi\Order\StructType\MidocoOrderAccountEntry $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAccountEntry) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderAccountEntry property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAccountEntry, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderAccountEntry) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderAccountEntry property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderAccountEntry, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderAccountEntry[] = $item;
         
@@ -133,7 +133,7 @@ class GetAccountEntriesForOrderResponse extends AbstractStructBase
     /**
      * Set totalNoOfRecords value
      * @param int $totalNoOfRecords
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderResponse
      */
     public function setTotalNoOfRecords(?int $totalNoOfRecords = null): self
     {
@@ -156,7 +156,7 @@ class GetAccountEntriesForOrderResponse extends AbstractStructBase
     /**
      * Set totalDueAmount value
      * @param float $totalDueAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderResponse
      */
     public function setTotalDueAmount(?float $totalDueAmount = null): self
     {
@@ -179,7 +179,7 @@ class GetAccountEntriesForOrderResponse extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderResponse
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {

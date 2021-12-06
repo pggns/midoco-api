@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetTempPrintJobResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoTempPrintjob
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjob|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjob|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjob $MidocoTempPrintjob = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjob $MidocoTempPrintjob = null;
     /**
      * Constructor method for GetTempPrintJobResponse
      * @uses GetTempPrintJobResponse::setMidocoTempPrintjob()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjob $midocoTempPrintjob
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjob $midocoTempPrintjob
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjob $midocoTempPrintjob = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjob $midocoTempPrintjob = null)
     {
         $this
             ->setMidocoTempPrintjob($midocoTempPrintjob);
     }
     /**
      * Get MidocoTempPrintjob value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjob|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjob|null
      */
-    public function getMidocoTempPrintjob(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjob
+    public function getMidocoTempPrintjob(): ?\Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjob
     {
         return $this->MidocoTempPrintjob;
     }
     /**
      * Set MidocoTempPrintjob value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjob $midocoTempPrintjob
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTempPrintJobResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjob $midocoTempPrintjob
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTempPrintJobResponse
      */
-    public function setMidocoTempPrintjob(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjob $midocoTempPrintjob = null): self
+    public function setMidocoTempPrintjob(?\Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjob $midocoTempPrintjob = null): self
     {
         $this->MidocoTempPrintjob = $midocoTempPrintjob;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteDatastoreResponse extends AbstractStructBase
      * The MidocoDatastore
      * Meta information extracted from the WSDL
      * - ref: MidocoDatastore
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\DatastoreDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\DatastoreDTO $MidocoDatastore = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO $MidocoDatastore = null;
     /**
      * Constructor method for DeleteDatastoreResponse
      * @uses DeleteDatastoreResponse::setMidocoDatastore()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DatastoreDTO $midocoDatastore
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO $midocoDatastore
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\DatastoreDTO $midocoDatastore = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO $midocoDatastore = null)
     {
         $this
             ->setMidocoDatastore($midocoDatastore);
     }
     /**
      * Get MidocoDatastore value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DatastoreDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO|null
      */
-    public function getMidocoDatastore(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\DatastoreDTO
+    public function getMidocoDatastore(): ?\Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO
     {
         return $this->MidocoDatastore;
     }
     /**
      * Set MidocoDatastore value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\DatastoreDTO $midocoDatastore
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDatastoreResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO $midocoDatastore
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteDatastoreResponse
      */
-    public function setMidocoDatastore(?\Pggns\MidocoApi\Api\CrmSD\StructType\DatastoreDTO $midocoDatastore = null): self
+    public function setMidocoDatastore(?\Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO $midocoDatastore = null): self
     {
         $this->MidocoDatastore = $midocoDatastore;
         

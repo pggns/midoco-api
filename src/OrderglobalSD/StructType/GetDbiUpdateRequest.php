@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetDbiUpdateRequest extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiUpdateRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiUpdateRequest
      */
     public function setCcNo(string $ccNo): self
     {

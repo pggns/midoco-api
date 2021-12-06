@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SearchBankRequest extends AbstractStructBase
      * The MidocoBankSearch
      * Meta information extracted from the WSDL
      * - ref: MidocoBankSearch
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\BankSearchDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\BankSearchDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\BankSearchDTO $MidocoBankSearch = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\BankSearchDTO $MidocoBankSearch = null;
     /**
      * Constructor method for SearchBankRequest
      * @uses SearchBankRequest::setMidocoBankSearch()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\BankSearchDTO $midocoBankSearch
+     * @param \Pggns\MidocoApi\Crm\StructType\BankSearchDTO $midocoBankSearch
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\BankSearchDTO $midocoBankSearch = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\BankSearchDTO $midocoBankSearch = null)
     {
         $this
             ->setMidocoBankSearch($midocoBankSearch);
     }
     /**
      * Get MidocoBankSearch value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\BankSearchDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\BankSearchDTO|null
      */
-    public function getMidocoBankSearch(): ?\Pggns\MidocoApi\Api\Crm\StructType\BankSearchDTO
+    public function getMidocoBankSearch(): ?\Pggns\MidocoApi\Crm\StructType\BankSearchDTO
     {
         return $this->MidocoBankSearch;
     }
     /**
      * Set MidocoBankSearch value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\BankSearchDTO $midocoBankSearch
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchBankRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\BankSearchDTO $midocoBankSearch
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchBankRequest
      */
-    public function setMidocoBankSearch(?\Pggns\MidocoApi\Api\Crm\StructType\BankSearchDTO $midocoBankSearch = null): self
+    public function setMidocoBankSearch(?\Pggns\MidocoApi\Crm\StructType\BankSearchDTO $midocoBankSearch = null): self
     {
         $this->MidocoBankSearch = $midocoBankSearch;
         

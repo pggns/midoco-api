@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class MidocoDebitInfoType extends AbstractStructBase
     /**
      * Set debitPayment value
      * @param bool $debitPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType
      */
     public function setDebitPayment(?bool $debitPayment = null): self
     {
@@ -142,7 +142,7 @@ class MidocoDebitInfoType extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType
      */
     public function setBankName(?string $bankName = null): self
     {
@@ -165,7 +165,7 @@ class MidocoDebitInfoType extends AbstractStructBase
     /**
      * Set bankNo value
      * @param string $bankNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType
      */
     public function setBankNo(?string $bankNo = null): self
     {
@@ -188,7 +188,7 @@ class MidocoDebitInfoType extends AbstractStructBase
     /**
      * Set bankCountry value
      * @param string $bankCountry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType
      */
     public function setBankCountry(?string $bankCountry = null): self
     {
@@ -211,7 +211,7 @@ class MidocoDebitInfoType extends AbstractStructBase
     /**
      * Set bankAccountNo value
      * @param string $bankAccountNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType
      */
     public function setBankAccountNo(?string $bankAccountNo = null): self
     {
@@ -234,7 +234,7 @@ class MidocoDebitInfoType extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType
      */
     public function setIban(?string $iban = null): self
     {
@@ -257,7 +257,7 @@ class MidocoDebitInfoType extends AbstractStructBase
     /**
      * Set swiftBicCode value
      * @param string $swiftBicCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType
      */
     public function setSwiftBicCode(?string $swiftBicCode = null): self
     {
@@ -280,7 +280,7 @@ class MidocoDebitInfoType extends AbstractStructBase
     /**
      * Set bankStreet value
      * @param string $bankStreet
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType
      */
     public function setBankStreet(?string $bankStreet = null): self
     {
@@ -303,7 +303,7 @@ class MidocoDebitInfoType extends AbstractStructBase
     /**
      * Set bankCity value
      * @param string $bankCity
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType
      */
     public function setBankCity(?string $bankCity = null): self
     {
@@ -326,7 +326,7 @@ class MidocoDebitInfoType extends AbstractStructBase
     /**
      * Set accountOwner value
      * @param string $accountOwner
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType
      */
     public function setAccountOwner(?string $accountOwner = null): self
     {
@@ -349,7 +349,7 @@ class MidocoDebitInfoType extends AbstractStructBase
     /**
      * Set mandateId value
      * @param string $mandateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType
      */
     public function setMandateId(?string $mandateId = null): self
     {

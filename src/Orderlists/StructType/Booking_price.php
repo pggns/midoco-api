@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -215,7 +215,7 @@ class Booking_price extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\Vat_division[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\Vat_division[]
      */
     protected ?array $vat_division = null;
     /**
@@ -331,7 +331,7 @@ class Booking_price extends AbstractStructBase
      * @param string $supplier_deposit_date
      * @param string $supplier_final_payment_date
      * @param float $supplier_commission_amount
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Vat_division[] $vat_division
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Vat_division[] $vat_division
      * @param float $commission_value
      * @param float $commission_percent
      * @param string $mode_revenue_calculation
@@ -387,7 +387,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setPosition(int $position): self
     {
@@ -410,7 +410,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -433,7 +433,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set catalog value
      * @param string $catalog
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setCatalog(?string $catalog = null): self
     {
@@ -456,7 +456,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set booking_id value
      * @param string $booking_id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setBooking_id(?string $booking_id = null): self
     {
@@ -479,7 +479,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set deposit value
      * @param float $deposit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setDeposit(?float $deposit = null): self
     {
@@ -501,17 +501,17 @@ class Booking_price extends AbstractStructBase
     }
     /**
      * Set deposit_payment_type value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Deposit_payment_type::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Deposit_payment_type::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Deposit_payment_type::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Deposit_payment_type::getValidValues()
      * @throws InvalidArgumentException
      * @param string $deposit_payment_type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setDeposit_payment_type(?string $deposit_payment_type = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\Deposit_payment_type::valueIsValid($deposit_payment_type)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\Deposit_payment_type', is_array($deposit_payment_type) ? implode(', ', $deposit_payment_type) : var_export($deposit_payment_type, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\Deposit_payment_type::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\Deposit_payment_type::valueIsValid($deposit_payment_type)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\Deposit_payment_type', is_array($deposit_payment_type) ? implode(', ', $deposit_payment_type) : var_export($deposit_payment_type, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\Deposit_payment_type::getValidValues())), __LINE__);
         }
         $this->deposit_payment_type = $this->{'deposit-payment-type'} = $deposit_payment_type;
         
@@ -528,7 +528,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set total_price value
      * @param float $total_price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setTotal_price(?float $total_price = null): self
     {
@@ -551,7 +551,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set hide_service_prices value
      * @param bool $hide_service_prices
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setHide_service_prices(?bool $hide_service_prices = false): self
     {
@@ -573,17 +573,17 @@ class Booking_price extends AbstractStructBase
     }
     /**
      * Set payment_type value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Payment_type::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Payment_type::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Payment_type::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Payment_type::getValidValues()
      * @throws InvalidArgumentException
      * @param string $payment_type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setPayment_type(?string $payment_type = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\Payment_type::valueIsValid($payment_type)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\Payment_type', is_array($payment_type) ? implode(', ', $payment_type) : var_export($payment_type, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\Payment_type::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\Payment_type::valueIsValid($payment_type)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\Payment_type', is_array($payment_type) ? implode(', ', $payment_type) : var_export($payment_type, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\Payment_type::getValidValues())), __LINE__);
         }
         $this->payment_type = $this->{'payment-type'} = $payment_type;
         
@@ -600,7 +600,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set extPaymentType value
      * @param string $extPaymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setExtPaymentType(?string $extPaymentType = null): self
     {
@@ -627,7 +627,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -650,7 +650,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set vat_included value
      * @param bool $vat_included
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setVat_included(?bool $vat_included = null): self
     {
@@ -673,7 +673,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set sale_price value
      * @param float $sale_price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setSale_price(?float $sale_price = null): self
     {
@@ -696,7 +696,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set original_price value
      * @param float $original_price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setOriginal_price(?float $original_price = null): self
     {
@@ -719,7 +719,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set original_currency value
      * @param string $original_currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setOriginal_currency(?string $original_currency = null): self
     {
@@ -742,7 +742,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set customer_selling_price value
      * @param float $customer_selling_price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setCustomer_selling_price(?float $customer_selling_price = null): self
     {
@@ -765,7 +765,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set revenue_amount value
      * @param float $revenue_amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setRevenue_amount(?float $revenue_amount = null): self
     {
@@ -788,7 +788,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set reduced_vat_fraction value
      * @param float $reduced_vat_fraction
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setReduced_vat_fraction(?float $reduced_vat_fraction = null): self
     {
@@ -811,7 +811,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set deposit_date value
      * @param string $deposit_date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setDeposit_date(?string $deposit_date = null): self
     {
@@ -838,7 +838,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set final_payment_date value
      * @param string $final_payment_date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setFinal_payment_date(?string $final_payment_date = null): self
     {
@@ -865,7 +865,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set supplier_deposit_amount value
      * @param float $supplier_deposit_amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setSupplier_deposit_amount(?float $supplier_deposit_amount = null): self
     {
@@ -888,7 +888,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set supplier_deposit_date value
      * @param string $supplier_deposit_date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setSupplier_deposit_date(?string $supplier_deposit_date = null): self
     {
@@ -915,7 +915,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set supplier_final_payment_date value
      * @param string $supplier_final_payment_date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setSupplier_final_payment_date(?string $supplier_final_payment_date = null): self
     {
@@ -942,7 +942,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set supplier_commission_amount value
      * @param float $supplier_commission_amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setSupplier_commission_amount(?float $supplier_commission_amount = null): self
     {
@@ -956,7 +956,7 @@ class Booking_price extends AbstractStructBase
     }
     /**
      * Get vat_division value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Vat_division[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Vat_division[]
      */
     public function getVat_division(): ?array
     {
@@ -977,12 +977,12 @@ class Booking_price extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $booking_priceVat_divisionItem) {
             // validation for constraint: itemType
-            if (!$booking_priceVat_divisionItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\Vat_division) {
+            if (!$booking_priceVat_divisionItem instanceof \Pggns\MidocoApi\Orderlists\StructType\Vat_division) {
                 $invalidValues[] = is_object($booking_priceVat_divisionItem) ? get_class($booking_priceVat_divisionItem) : sprintf('%s(%s)', gettype($booking_priceVat_divisionItem), var_export($booking_priceVat_divisionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The vat_division property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\Vat_division, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The vat_division property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\Vat_division, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -991,8 +991,8 @@ class Booking_price extends AbstractStructBase
     /**
      * Set vat_division value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Vat_division[] $vat_division
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Vat_division[] $vat_division
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setVat_division(?array $vat_division = null): self
     {
@@ -1007,14 +1007,14 @@ class Booking_price extends AbstractStructBase
     /**
      * Add item to vat_division value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Vat_division $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Vat_division $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
-    public function addToVat_division(\Pggns\MidocoApi\Api\Orderlists\StructType\Vat_division $item): self
+    public function addToVat_division(\Pggns\MidocoApi\Orderlists\StructType\Vat_division $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\Vat_division) {
-            throw new InvalidArgumentException(sprintf('The vat_division property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\Vat_division, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\Vat_division) {
+            throw new InvalidArgumentException(sprintf('The vat_division property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\Vat_division, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->vat_division[] = $item;
         
@@ -1031,7 +1031,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set commission_value value
      * @param float $commission_value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setCommission_value(?float $commission_value = null): self
     {
@@ -1054,7 +1054,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set commission_percent value
      * @param float $commission_percent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setCommission_percent(?float $commission_percent = null): self
     {
@@ -1076,17 +1076,17 @@ class Booking_price extends AbstractStructBase
     }
     /**
      * Set mode_revenue_calculation value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Mode_revenue_calculation::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Mode_revenue_calculation::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Mode_revenue_calculation::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Mode_revenue_calculation::getValidValues()
      * @throws InvalidArgumentException
      * @param string $mode_revenue_calculation
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setMode_revenue_calculation(?string $mode_revenue_calculation = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\Mode_revenue_calculation::valueIsValid($mode_revenue_calculation)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\Mode_revenue_calculation', is_array($mode_revenue_calculation) ? implode(', ', $mode_revenue_calculation) : var_export($mode_revenue_calculation, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\Mode_revenue_calculation::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\Mode_revenue_calculation::valueIsValid($mode_revenue_calculation)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\Mode_revenue_calculation', is_array($mode_revenue_calculation) ? implode(', ', $mode_revenue_calculation) : var_export($mode_revenue_calculation, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\Mode_revenue_calculation::getValidValues())), __LINE__);
         }
         $this->mode_revenue_calculation = $this->{'mode-revenue-calculation'} = $mode_revenue_calculation;
         
@@ -1103,7 +1103,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set value_revenue_calculation value
      * @param float $value_revenue_calculation
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setValue_revenue_calculation(?float $value_revenue_calculation = null): self
     {
@@ -1126,7 +1126,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set buy_currency_rate value
      * @param float $buy_currency_rate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setBuy_currency_rate(?float $buy_currency_rate = null): self
     {
@@ -1149,7 +1149,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set fee_amount value
      * @param float $fee_amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setFee_amount(?float $fee_amount = null): self
     {
@@ -1172,7 +1172,7 @@ class Booking_price extends AbstractStructBase
     /**
      * Set calculated_mediator_amount value
      * @param float $calculated_mediator_amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Booking_price
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking_price
      */
     public function setCalculated_mediator_amount(?float $calculated_mediator_amount = null): self
     {

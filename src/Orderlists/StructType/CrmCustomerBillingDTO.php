@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CrmCustomerBillingDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerBillingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerBillingDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -86,7 +86,7 @@ class CrmCustomerBillingDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerBillingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerBillingDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -109,7 +109,7 @@ class CrmCustomerBillingDTO extends AbstractStructBase
     /**
      * Set documentUnitName value
      * @param string $documentUnitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerBillingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerBillingDTO
      */
     public function setDocumentUnitName(?string $documentUnitName = null): self
     {
@@ -132,7 +132,7 @@ class CrmCustomerBillingDTO extends AbstractStructBase
     /**
      * Set isCollective value
      * @param bool $isCollective
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerBillingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerBillingDTO
      */
     public function setIsCollective(?bool $isCollective = null): self
     {

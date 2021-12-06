@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class TaskQueuesChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueuesChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskQueuesChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -86,7 +86,7 @@ class TaskQueuesChgLogDTO extends AbstractStructBase
     /**
      * Set taskQueueName value
      * @param string $taskQueueName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueuesChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskQueuesChgLogDTO
      */
     public function setTaskQueueName(?string $taskQueueName = null): self
     {
@@ -109,7 +109,7 @@ class TaskQueuesChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueuesChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskQueuesChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -132,7 +132,7 @@ class TaskQueuesChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueuesChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskQueuesChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CrmSubjectAssignDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmSubjectAssignDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmSubjectAssignDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +78,7 @@ class CrmSubjectAssignDTO extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmSubjectAssignDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmSubjectAssignDTO
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -101,7 +101,7 @@ class CrmSubjectAssignDTO extends AbstractStructBase
     /**
      * Set subjectDefId value
      * @param string $subjectDefId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmSubjectAssignDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmSubjectAssignDTO
      */
     public function setSubjectDefId(?string $subjectDefId = null): self
     {

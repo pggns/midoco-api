@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class MidocoFlightDuration extends AbstractStructBase
     /**
      * Set time value
      * @param string $time
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDuration
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDuration
      */
     public function setTime(?string $time = null): self
     {
@@ -72,7 +72,7 @@ class MidocoFlightDuration extends AbstractStructBase
     /**
      * Set days value
      * @param string $days
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDuration
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDuration
      */
     public function setDays(?string $days = null): self
     {

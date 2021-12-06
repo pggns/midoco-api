@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetActualConsentRequest extends AbstractStructBase
     /**
      * Set isGroup value
      * @param bool $isGroup
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetActualConsentRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetActualConsentRequest
      */
     public function setIsGroup(?bool $isGroup = null): self
     {
@@ -78,7 +78,7 @@ class GetActualConsentRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetActualConsentRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetActualConsentRequest
      */
     public function setType(?string $type = null): self
     {
@@ -101,7 +101,7 @@ class GetActualConsentRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetActualConsentRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetActualConsentRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

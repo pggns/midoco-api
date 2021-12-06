@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class Address extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Address
+     * @return \Pggns\MidocoApi\Order\StructType\Address
      */
     public function setStreet(?string $street = null): self
     {
@@ -134,7 +134,7 @@ class Address extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Address
+     * @return \Pggns\MidocoApi\Order\StructType\Address
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -157,7 +157,7 @@ class Address extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Address
+     * @return \Pggns\MidocoApi\Order\StructType\Address
      */
     public function setState(?string $state = null): self
     {
@@ -180,7 +180,7 @@ class Address extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Address
+     * @return \Pggns\MidocoApi\Order\StructType\Address
      */
     public function setCountry(?string $country = null): self
     {
@@ -207,7 +207,7 @@ class Address extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Address
+     * @return \Pggns\MidocoApi\Order\StructType\Address
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -230,7 +230,7 @@ class Address extends AbstractStructBase
     /**
      * Set postOfficeBox value
      * @param string $postOfficeBox
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Address
+     * @return \Pggns\MidocoApi\Order\StructType\Address
      */
     public function setPostOfficeBox(?string $postOfficeBox = null): self
     {
@@ -253,7 +253,7 @@ class Address extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Address
+     * @return \Pggns\MidocoApi\Order\StructType\Address
      */
     public function setCity(?string $city = null): self
     {
@@ -276,7 +276,7 @@ class Address extends AbstractStructBase
     /**
      * Set endorsement value
      * @param string $endorsement
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Address
+     * @return \Pggns\MidocoApi\Order\StructType\Address
      */
     public function setEndorsement(?string $endorsement = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveBookingPeriodRequest extends AbstractStructBase
      * The MidocoBookingPeriod
      * Meta information extracted from the WSDL
      * - ref: MidocoBookingPeriod
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingPeriod|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBookingPeriod|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingPeriod $MidocoBookingPeriod = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBookingPeriod $MidocoBookingPeriod = null;
     /**
      * The pastYearsToClose
      * Meta information extracted from the WSDL
@@ -32,10 +32,10 @@ class SaveBookingPeriodRequest extends AbstractStructBase
      * Constructor method for SaveBookingPeriodRequest
      * @uses SaveBookingPeriodRequest::setMidocoBookingPeriod()
      * @uses SaveBookingPeriodRequest::setPastYearsToClose()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingPeriod $midocoBookingPeriod
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingPeriod $midocoBookingPeriod
      * @param int[] $pastYearsToClose
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingPeriod $midocoBookingPeriod = null, ?array $pastYearsToClose = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBookingPeriod $midocoBookingPeriod = null, ?array $pastYearsToClose = null)
     {
         $this
             ->setMidocoBookingPeriod($midocoBookingPeriod)
@@ -43,18 +43,18 @@ class SaveBookingPeriodRequest extends AbstractStructBase
     }
     /**
      * Get MidocoBookingPeriod value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingPeriod|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingPeriod|null
      */
-    public function getMidocoBookingPeriod(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingPeriod
+    public function getMidocoBookingPeriod(): ?\Pggns\MidocoApi\Order\StructType\MidocoBookingPeriod
     {
         return $this->MidocoBookingPeriod;
     }
     /**
      * Set MidocoBookingPeriod value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingPeriod $midocoBookingPeriod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBookingPeriodRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingPeriod $midocoBookingPeriod
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBookingPeriodRequest
      */
-    public function setMidocoBookingPeriod(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingPeriod $midocoBookingPeriod = null): self
+    public function setMidocoBookingPeriod(?\Pggns\MidocoApi\Order\StructType\MidocoBookingPeriod $midocoBookingPeriod = null): self
     {
         $this->MidocoBookingPeriod = $midocoBookingPeriod;
         
@@ -98,7 +98,7 @@ class SaveBookingPeriodRequest extends AbstractStructBase
      * Set pastYearsToClose value
      * @throws InvalidArgumentException
      * @param int[] $pastYearsToClose
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBookingPeriodRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBookingPeriodRequest
      */
     public function setPastYearsToClose(?array $pastYearsToClose = null): self
     {
@@ -114,7 +114,7 @@ class SaveBookingPeriodRequest extends AbstractStructBase
      * Add item to pastYearsToClose value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBookingPeriodRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBookingPeriodRequest
      */
     public function addToPastYearsToClose(int $item): self
     {

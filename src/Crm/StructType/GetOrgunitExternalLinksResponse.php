@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetOrgunitExternalLinksResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrgunitExternalLink
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\OrgunitExternalLinkDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\OrgunitExternalLinkDTO[]
      */
     protected ?array $MidocoOrgunitExternalLink = null;
     /**
      * Constructor method for GetOrgunitExternalLinksResponse
      * @uses GetOrgunitExternalLinksResponse::setMidocoOrgunitExternalLink()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\OrgunitExternalLinkDTO[] $midocoOrgunitExternalLink
+     * @param \Pggns\MidocoApi\Crm\StructType\OrgunitExternalLinkDTO[] $midocoOrgunitExternalLink
      */
     public function __construct(?array $midocoOrgunitExternalLink = null)
     {
@@ -34,7 +34,7 @@ class GetOrgunitExternalLinksResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrgunitExternalLink value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\OrgunitExternalLinkDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\OrgunitExternalLinkDTO[]
      */
     public function getMidocoOrgunitExternalLink(): ?array
     {
@@ -55,12 +55,12 @@ class GetOrgunitExternalLinksResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrgunitExternalLinksResponseMidocoOrgunitExternalLinkItem) {
             // validation for constraint: itemType
-            if (!$getOrgunitExternalLinksResponseMidocoOrgunitExternalLinkItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\OrgunitExternalLinkDTO) {
+            if (!$getOrgunitExternalLinksResponseMidocoOrgunitExternalLinkItem instanceof \Pggns\MidocoApi\Crm\StructType\OrgunitExternalLinkDTO) {
                 $invalidValues[] = is_object($getOrgunitExternalLinksResponseMidocoOrgunitExternalLinkItem) ? get_class($getOrgunitExternalLinksResponseMidocoOrgunitExternalLinkItem) : sprintf('%s(%s)', gettype($getOrgunitExternalLinksResponseMidocoOrgunitExternalLinkItem), var_export($getOrgunitExternalLinksResponseMidocoOrgunitExternalLinkItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrgunitExternalLink property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\OrgunitExternalLinkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrgunitExternalLink property can only contain items of type \Pggns\MidocoApi\Crm\StructType\OrgunitExternalLinkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetOrgunitExternalLinksResponse extends AbstractStructBase
     /**
      * Set MidocoOrgunitExternalLink value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\OrgunitExternalLinkDTO[] $midocoOrgunitExternalLink
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetOrgunitExternalLinksResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\OrgunitExternalLinkDTO[] $midocoOrgunitExternalLink
+     * @return \Pggns\MidocoApi\Crm\StructType\GetOrgunitExternalLinksResponse
      */
     public function setMidocoOrgunitExternalLink(?array $midocoOrgunitExternalLink = null): self
     {
@@ -85,14 +85,14 @@ class GetOrgunitExternalLinksResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrgunitExternalLink value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\OrgunitExternalLinkDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetOrgunitExternalLinksResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\OrgunitExternalLinkDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetOrgunitExternalLinksResponse
      */
-    public function addToMidocoOrgunitExternalLink(\Pggns\MidocoApi\Api\Crm\StructType\OrgunitExternalLinkDTO $item): self
+    public function addToMidocoOrgunitExternalLink(\Pggns\MidocoApi\Crm\StructType\OrgunitExternalLinkDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\OrgunitExternalLinkDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrgunitExternalLink property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\OrgunitExternalLinkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\OrgunitExternalLinkDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrgunitExternalLink property can only contain items of type \Pggns\MidocoApi\Crm\StructType\OrgunitExternalLinkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrgunitExternalLink[] = $item;
         

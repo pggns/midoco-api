@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ModifyOrderWorkflowRequest extends AbstractStructBase
     /**
      * Set start_travel value
      * @param string $start_travel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ModifyOrderWorkflowRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ModifyOrderWorkflowRequest
      */
     public function setStart_travel(?string $start_travel = null): self
     {

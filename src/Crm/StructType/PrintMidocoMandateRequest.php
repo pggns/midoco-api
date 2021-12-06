@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class PrintMidocoMandateRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 1
      * - ref: MidocoMandate
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoMandate
      */
-    protected \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $MidocoMandate;
+    protected \Pggns\MidocoApi\Crm\StructType\MidocoMandate $MidocoMandate;
     /**
      * Constructor method for PrintMidocoMandateRequest
      * @uses PrintMidocoMandateRequest::setMidocoMandate()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $midocoMandate
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMandate $midocoMandate
      */
-    public function __construct(\Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $midocoMandate)
+    public function __construct(\Pggns\MidocoApi\Crm\StructType\MidocoMandate $midocoMandate)
     {
         $this
             ->setMidocoMandate($midocoMandate);
     }
     /**
      * Get MidocoMandate value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoMandate
      */
-    public function getMidocoMandate(): \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate
+    public function getMidocoMandate(): \Pggns\MidocoApi\Crm\StructType\MidocoMandate
     {
         return $this->MidocoMandate;
     }
     /**
      * Set MidocoMandate value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $midocoMandate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PrintMidocoMandateRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMandate $midocoMandate
+     * @return \Pggns\MidocoApi\Crm\StructType\PrintMidocoMandateRequest
      */
-    public function setMidocoMandate(\Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $midocoMandate): self
+    public function setMidocoMandate(\Pggns\MidocoApi\Crm\StructType\MidocoMandate $midocoMandate): self
     {
         $this->MidocoMandate = $midocoMandate;
         

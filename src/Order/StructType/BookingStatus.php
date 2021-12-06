@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class BookingStatus extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus[]
+     * @var \Pggns\MidocoApi\Order\StructType\SubitemStatus[]
      */
     protected ?array $subitemStatus = null;
     /**
@@ -72,7 +72,7 @@ class BookingStatus extends AbstractStructBase
      * @uses BookingStatus::setExtId()
      * @uses BookingStatus::setSupplierId()
      * @uses BookingStatus::setBookingId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus[] $subitemStatus
+     * @param \Pggns\MidocoApi\Order\StructType\SubitemStatus[] $subitemStatus
      * @param float $price
      * @param string $status
      * @param int $noOfPersons
@@ -97,7 +97,7 @@ class BookingStatus extends AbstractStructBase
     }
     /**
      * Get subitemStatus value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus[]
+     * @return \Pggns\MidocoApi\Order\StructType\SubitemStatus[]
      */
     public function getSubitemStatus(): ?array
     {
@@ -118,12 +118,12 @@ class BookingStatus extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingStatusSubitemStatusItem) {
             // validation for constraint: itemType
-            if (!$bookingStatusSubitemStatusItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus) {
+            if (!$bookingStatusSubitemStatusItem instanceof \Pggns\MidocoApi\Order\StructType\SubitemStatus) {
                 $invalidValues[] = is_object($bookingStatusSubitemStatusItem) ? get_class($bookingStatusSubitemStatusItem) : sprintf('%s(%s)', gettype($bookingStatusSubitemStatusItem), var_export($bookingStatusSubitemStatusItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The subitemStatus property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The subitemStatus property can only contain items of type \Pggns\MidocoApi\Order\StructType\SubitemStatus, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -132,8 +132,8 @@ class BookingStatus extends AbstractStructBase
     /**
      * Set subitemStatus value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus[] $subitemStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingStatus
+     * @param \Pggns\MidocoApi\Order\StructType\SubitemStatus[] $subitemStatus
+     * @return \Pggns\MidocoApi\Order\StructType\BookingStatus
      */
     public function setSubitemStatus(?array $subitemStatus = null): self
     {
@@ -148,14 +148,14 @@ class BookingStatus extends AbstractStructBase
     /**
      * Add item to subitemStatus value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingStatus
+     * @param \Pggns\MidocoApi\Order\StructType\SubitemStatus $item
+     * @return \Pggns\MidocoApi\Order\StructType\BookingStatus
      */
-    public function addToSubitemStatus(\Pggns\MidocoApi\Api\Order\StructType\SubitemStatus $item): self
+    public function addToSubitemStatus(\Pggns\MidocoApi\Order\StructType\SubitemStatus $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus) {
-            throw new InvalidArgumentException(sprintf('The subitemStatus property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SubitemStatus, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SubitemStatus) {
+            throw new InvalidArgumentException(sprintf('The subitemStatus property can only contain items of type \Pggns\MidocoApi\Order\StructType\SubitemStatus, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->subitemStatus[] = $item;
         
@@ -172,7 +172,7 @@ class BookingStatus extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\BookingStatus
      */
     public function setPrice(?float $price = null): self
     {
@@ -195,7 +195,7 @@ class BookingStatus extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\BookingStatus
      */
     public function setStatus(?string $status = null): self
     {
@@ -218,7 +218,7 @@ class BookingStatus extends AbstractStructBase
     /**
      * Set noOfPersons value
      * @param int $noOfPersons
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\BookingStatus
      */
     public function setNoOfPersons(?int $noOfPersons = null): self
     {
@@ -241,7 +241,7 @@ class BookingStatus extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\BookingStatus
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -264,7 +264,7 @@ class BookingStatus extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\BookingStatus
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -287,7 +287,7 @@ class BookingStatus extends AbstractStructBase
     /**
      * Set extId value
      * @param string $extId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\BookingStatus
      */
     public function setExtId(?string $extId = null): self
     {
@@ -310,7 +310,7 @@ class BookingStatus extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\BookingStatus
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -333,7 +333,7 @@ class BookingStatus extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\BookingStatus
      */
     public function setBookingId(?string $bookingId = null): self
     {

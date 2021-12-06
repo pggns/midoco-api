@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -225,7 +225,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set accountFrom value
      * @param string $accountFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setAccountFrom(?string $accountFrom = null): self
     {
@@ -248,7 +248,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set accountTo value
      * @param string $accountTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setAccountTo(?string $accountTo = null): self
     {
@@ -271,7 +271,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set accountIds value
      * @param string $accountIds
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setAccountIds(?string $accountIds = null): self
     {
@@ -294,7 +294,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set accountType value
      * @param string $accountType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setAccountType(?string $accountType = null): self
     {
@@ -317,7 +317,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set dueDateFrom value
      * @param string $dueDateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setDueDateFrom(?string $dueDateFrom = null): self
     {
@@ -340,7 +340,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set dueDateTo value
      * @param string $dueDateTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setDueDateTo(?string $dueDateTo = null): self
     {
@@ -363,7 +363,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -386,7 +386,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -409,7 +409,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set entryId value
      * @param string $entryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setEntryId(?string $entryId = null): self
     {
@@ -432,7 +432,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set exportIdFrom value
      * @param string $exportIdFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setExportIdFrom(?string $exportIdFrom = null): self
     {
@@ -455,7 +455,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set exportIdTo value
      * @param string $exportIdTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setExportIdTo(?string $exportIdTo = null): self
     {
@@ -478,7 +478,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -501,7 +501,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set receiptDateFrom value
      * @param string $receiptDateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setReceiptDateFrom(?string $receiptDateFrom = null): self
     {
@@ -524,7 +524,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set receiptDateTo value
      * @param string $receiptDateTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setReceiptDateTo(?string $receiptDateTo = null): self
     {
@@ -547,7 +547,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set bookingDateFrom value
      * @param string $bookingDateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setBookingDateFrom(?string $bookingDateFrom = null): self
     {
@@ -570,7 +570,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set bookingDateTo value
      * @param string $bookingDateTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setBookingDateTo(?string $bookingDateTo = null): self
     {
@@ -593,7 +593,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set balanceMode value
      * @param int $balanceMode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setBalanceMode(?int $balanceMode = 0): self
     {
@@ -616,7 +616,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set bookingPeriodFrom value
      * @param int $bookingPeriodFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setBookingPeriodFrom(?int $bookingPeriodFrom = null): self
     {
@@ -639,7 +639,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set bookingPeriodTo value
      * @param int $bookingPeriodTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setBookingPeriodTo(?int $bookingPeriodTo = null): self
     {
@@ -662,7 +662,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set bookingYearFrom value
      * @param int $bookingYearFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setBookingYearFrom(?int $bookingYearFrom = null): self
     {
@@ -685,7 +685,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set bookingYearTo value
      * @param int $bookingYearTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setBookingYearTo(?int $bookingYearTo = null): self
     {
@@ -708,7 +708,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -731,7 +731,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -754,7 +754,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
     /**
      * Set processingLock value
      * @param bool $processingLock
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AccountEntriesSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AccountEntriesSearchCriteria
      */
     public function setProcessingLock(?bool $processingLock = null): self
     {

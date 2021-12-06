@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 1
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginIntervalType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType[]
      */
     protected array $MidocoMarginInterval;
     /**
@@ -69,7 +69,7 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
      * @uses MidocoMarginListCriteriaType::setTravelDateEnd()
      * @uses MidocoMarginListCriteriaType::setIncludeAgencyCommission()
      * @uses MidocoMarginListCriteriaType::setIncludeMediatorCommission()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginIntervalType[] $midocoMarginInterval
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType[] $midocoMarginInterval
      * @param string[] $orgUnits
      * @param string $creationDateStart
      * @param string $creationDateEnd
@@ -92,7 +92,7 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
     }
     /**
      * Get MidocoMarginInterval value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginIntervalType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType[]
      */
     public function getMidocoMarginInterval(): array
     {
@@ -113,12 +113,12 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoMarginListCriteriaTypeMidocoMarginIntervalItem) {
             // validation for constraint: itemType
-            if (!$midocoMarginListCriteriaTypeMidocoMarginIntervalItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginIntervalType) {
+            if (!$midocoMarginListCriteriaTypeMidocoMarginIntervalItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType) {
                 $invalidValues[] = is_object($midocoMarginListCriteriaTypeMidocoMarginIntervalItem) ? get_class($midocoMarginListCriteriaTypeMidocoMarginIntervalItem) : sprintf('%s(%s)', gettype($midocoMarginListCriteriaTypeMidocoMarginIntervalItem), var_export($midocoMarginListCriteriaTypeMidocoMarginIntervalItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMarginInterval property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginIntervalType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMarginInterval property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -127,8 +127,8 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
     /**
      * Set MidocoMarginInterval value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginIntervalType[] $midocoMarginInterval
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListCriteriaType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType[] $midocoMarginInterval
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListCriteriaType
      */
     public function setMidocoMarginInterval(array $midocoMarginInterval): self
     {
@@ -143,14 +143,14 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
     /**
      * Add item to MidocoMarginInterval value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginIntervalType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListCriteriaType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListCriteriaType
      */
-    public function addToMidocoMarginInterval(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginIntervalType $item): self
+    public function addToMidocoMarginInterval(\Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginIntervalType) {
-            throw new InvalidArgumentException(sprintf('The MidocoMarginInterval property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginIntervalType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType) {
+            throw new InvalidArgumentException(sprintf('The MidocoMarginInterval property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMarginInterval[] = $item;
         
@@ -194,7 +194,7 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListCriteriaType
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -210,7 +210,7 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListCriteriaType
      */
     public function addToOrgUnits(string $item): self
     {
@@ -233,7 +233,7 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
     /**
      * Set creationDateStart value
      * @param string $creationDateStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListCriteriaType
      */
     public function setCreationDateStart(?string $creationDateStart = null): self
     {
@@ -256,7 +256,7 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
     /**
      * Set creationDateEnd value
      * @param string $creationDateEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListCriteriaType
      */
     public function setCreationDateEnd(?string $creationDateEnd = null): self
     {
@@ -279,7 +279,7 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
     /**
      * Set travelDateStart value
      * @param string $travelDateStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListCriteriaType
      */
     public function setTravelDateStart(?string $travelDateStart = null): self
     {
@@ -302,7 +302,7 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
     /**
      * Set travelDateEnd value
      * @param string $travelDateEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListCriteriaType
      */
     public function setTravelDateEnd(?string $travelDateEnd = null): self
     {
@@ -325,7 +325,7 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
     /**
      * Set includeAgencyCommission value
      * @param bool $includeAgencyCommission
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListCriteriaType
      */
     public function setIncludeAgencyCommission(?bool $includeAgencyCommission = null): self
     {
@@ -348,7 +348,7 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
     /**
      * Set includeMediatorCommission value
      * @param bool $includeMediatorCommission
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListCriteriaType
      */
     public function setIncludeMediatorCommission(?bool $includeMediatorCommission = null): self
     {

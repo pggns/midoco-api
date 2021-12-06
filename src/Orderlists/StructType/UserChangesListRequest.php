@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class UserChangesListRequest extends AbstractStructBase
      * The MidocoUserChangesListCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoUserChangesListCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListCriteriaType $MidocoUserChangesListCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListCriteriaType $MidocoUserChangesListCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class UserChangesListRequest extends AbstractStructBase
      * Constructor method for UserChangesListRequest
      * @uses UserChangesListRequest::setMidocoUserChangesListCriteria()
      * @uses UserChangesListRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListCriteriaType $midocoUserChangesListCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListCriteriaType $midocoUserChangesListCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListCriteriaType $midocoUserChangesListCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListCriteriaType $midocoUserChangesListCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoUserChangesListCriteria($midocoUserChangesListCriteria)
@@ -42,18 +42,18 @@ class UserChangesListRequest extends AbstractStructBase
     }
     /**
      * Get MidocoUserChangesListCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListCriteriaType|null
      */
-    public function getMidocoUserChangesListCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListCriteriaType
+    public function getMidocoUserChangesListCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListCriteriaType
     {
         return $this->MidocoUserChangesListCriteria;
     }
     /**
      * Set MidocoUserChangesListCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListCriteriaType $midocoUserChangesListCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserChangesListRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListCriteriaType $midocoUserChangesListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserChangesListRequest
      */
-    public function setMidocoUserChangesListCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesListCriteriaType $midocoUserChangesListCriteria = null): self
+    public function setMidocoUserChangesListCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesListCriteriaType $midocoUserChangesListCriteria = null): self
     {
         $this->MidocoUserChangesListCriteria = $midocoUserChangesListCriteria;
         
@@ -70,7 +70,7 @@ class UserChangesListRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UserChangesListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UserChangesListRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

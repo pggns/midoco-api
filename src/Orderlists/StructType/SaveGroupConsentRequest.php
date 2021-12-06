@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class SaveGroupConsentRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 1
      * - ref: MidocoGroupConsent
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoGroupConsent
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoGroupConsent
      */
-    protected \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoGroupConsent $MidocoGroupConsent;
+    protected \Pggns\MidocoApi\Orderlists\StructType\MidocoGroupConsent $MidocoGroupConsent;
     /**
      * The customerId
      * @var int|null
@@ -36,11 +36,11 @@ class SaveGroupConsentRequest extends AbstractStructBase
      * @uses SaveGroupConsentRequest::setMidocoGroupConsent()
      * @uses SaveGroupConsentRequest::setCustomerId()
      * @uses SaveGroupConsentRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoGroupConsent $midocoGroupConsent
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoGroupConsent $midocoGroupConsent
      * @param int $customerId
      * @param int $internalVersion
      */
-    public function __construct(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoGroupConsent $midocoGroupConsent, ?int $customerId = null, ?int $internalVersion = null)
+    public function __construct(\Pggns\MidocoApi\Orderlists\StructType\MidocoGroupConsent $midocoGroupConsent, ?int $customerId = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoGroupConsent($midocoGroupConsent)
@@ -49,18 +49,18 @@ class SaveGroupConsentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoGroupConsent value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoGroupConsent
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoGroupConsent
      */
-    public function getMidocoGroupConsent(): \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoGroupConsent
+    public function getMidocoGroupConsent(): \Pggns\MidocoApi\Orderlists\StructType\MidocoGroupConsent
     {
         return $this->MidocoGroupConsent;
     }
     /**
      * Set MidocoGroupConsent value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoGroupConsent $midocoGroupConsent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveGroupConsentRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoGroupConsent $midocoGroupConsent
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveGroupConsentRequest
      */
-    public function setMidocoGroupConsent(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoGroupConsent $midocoGroupConsent): self
+    public function setMidocoGroupConsent(\Pggns\MidocoApi\Orderlists\StructType\MidocoGroupConsent $midocoGroupConsent): self
     {
         $this->MidocoGroupConsent = $midocoGroupConsent;
         
@@ -77,7 +77,7 @@ class SaveGroupConsentRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveGroupConsentRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveGroupConsentRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -100,7 +100,7 @@ class SaveGroupConsentRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveGroupConsentRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveGroupConsentRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -77,7 +77,7 @@ class Cc_information extends AbstractStructBase
     /**
      * Set cc_type value
      * @param string $cc_type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_information
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_information
      */
     public function setCc_type(?string $cc_type = null): self
     {
@@ -104,7 +104,7 @@ class Cc_information extends AbstractStructBase
     /**
      * Set cc_number value
      * @param string $cc_number
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_information
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_information
      */
     public function setCc_number(?string $cc_number = null): self
     {
@@ -127,7 +127,7 @@ class Cc_information extends AbstractStructBase
     /**
      * Set cc_valid value
      * @param string $cc_valid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_information
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_information
      */
     public function setCc_valid(?string $cc_valid = null): self
     {
@@ -150,7 +150,7 @@ class Cc_information extends AbstractStructBase
     /**
      * Set cc_paid_amount value
      * @param float $cc_paid_amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_information
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_information
      */
     public function setCc_paid_amount(?float $cc_paid_amount = null): self
     {

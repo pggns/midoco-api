@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SaveTempPrintjobResponse extends AbstractStructBase
     /**
      * Set printjobId value
      * @param int $printjobId
-     * @return \Pggns\MidocoApi\Api\System\StructType\SaveTempPrintjobResponse
+     * @return \Pggns\MidocoApi\System\StructType\SaveTempPrintjobResponse
      */
     public function setPrintjobId(?int $printjobId = null): self
     {

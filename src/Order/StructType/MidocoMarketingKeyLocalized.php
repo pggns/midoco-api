@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoMarketingKeyLocalized extends MarketingKeyDTO
     /**
      * Set locDescription value
      * @param string $locDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMarketingKeyLocalized
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMarketingKeyLocalized
      */
     public function setLocDescription(?string $locDescription = null): self
     {

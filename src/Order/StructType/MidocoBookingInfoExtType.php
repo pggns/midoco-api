@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoBookingInfoExtType extends MidocoBookingInfoType
     /**
      * Set subAgency value
      * @param string $subAgency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoExtType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoExtType
      */
     public function setSubAgency(?string $subAgency = null): self
     {
@@ -70,7 +70,7 @@ class MidocoBookingInfoExtType extends MidocoBookingInfoType
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoExtType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoExtType
      */
     public function setCooperationId(?string $cooperationId = null): self
     {

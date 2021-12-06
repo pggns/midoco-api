@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class PaymentProviderDTO extends AbstractStructBase
     /**
      * Set accountFeeNoVat value
      * @param string $accountFeeNoVat
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\PaymentProviderDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\PaymentProviderDTO
      */
     public function setAccountFeeNoVat(?string $accountFeeNoVat = null): self
     {
@@ -126,7 +126,7 @@ class PaymentProviderDTO extends AbstractStructBase
     /**
      * Set accountFeeVat value
      * @param string $accountFeeVat
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\PaymentProviderDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\PaymentProviderDTO
      */
     public function setAccountFeeVat(?string $accountFeeVat = null): self
     {
@@ -149,7 +149,7 @@ class PaymentProviderDTO extends AbstractStructBase
     /**
      * Set costCentreFeeNoVat value
      * @param string $costCentreFeeNoVat
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\PaymentProviderDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\PaymentProviderDTO
      */
     public function setCostCentreFeeNoVat(?string $costCentreFeeNoVat = null): self
     {
@@ -172,7 +172,7 @@ class PaymentProviderDTO extends AbstractStructBase
     /**
      * Set costCentreFeeVat value
      * @param string $costCentreFeeVat
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\PaymentProviderDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\PaymentProviderDTO
      */
     public function setCostCentreFeeVat(?string $costCentreFeeVat = null): self
     {
@@ -195,7 +195,7 @@ class PaymentProviderDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\PaymentProviderDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\PaymentProviderDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -218,7 +218,7 @@ class PaymentProviderDTO extends AbstractStructBase
     /**
      * Set entryAccount value
      * @param string $entryAccount
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\PaymentProviderDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\PaymentProviderDTO
      */
     public function setEntryAccount(?string $entryAccount = null): self
     {
@@ -241,7 +241,7 @@ class PaymentProviderDTO extends AbstractStructBase
     /**
      * Set formatId value
      * @param string $formatId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\PaymentProviderDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\PaymentProviderDTO
      */
     public function setFormatId(?string $formatId = null): self
     {
@@ -264,7 +264,7 @@ class PaymentProviderDTO extends AbstractStructBase
     /**
      * Set ignoreFees value
      * @param bool $ignoreFees
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\PaymentProviderDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\PaymentProviderDTO
      */
     public function setIgnoreFees(?bool $ignoreFees = null): self
     {
@@ -287,7 +287,7 @@ class PaymentProviderDTO extends AbstractStructBase
     /**
      * Set paymentProviderId value
      * @param string $paymentProviderId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\PaymentProviderDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\PaymentProviderDTO
      */
     public function setPaymentProviderId(?string $paymentProviderId = null): self
     {

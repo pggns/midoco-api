@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class OrgTemplateTextDTO extends AbstractStructBase
     /**
      * Set orgTemplateId value
      * @param int $orgTemplateId
-     * @return \Pggns\MidocoApi\Api\System\StructType\OrgTemplateTextDTO
+     * @return \Pggns\MidocoApi\System\StructType\OrgTemplateTextDTO
      */
     public function setOrgTemplateId(?int $orgTemplateId = null): self
     {
@@ -94,7 +94,7 @@ class OrgTemplateTextDTO extends AbstractStructBase
     /**
      * Set printTypes value
      * @param string $printTypes
-     * @return \Pggns\MidocoApi\Api\System\StructType\OrgTemplateTextDTO
+     * @return \Pggns\MidocoApi\System\StructType\OrgTemplateTextDTO
      */
     public function setPrintTypes(?string $printTypes = null): self
     {
@@ -117,7 +117,7 @@ class OrgTemplateTextDTO extends AbstractStructBase
     /**
      * Set templateText value
      * @param string $templateText
-     * @return \Pggns\MidocoApi\Api\System\StructType\OrgTemplateTextDTO
+     * @return \Pggns\MidocoApi\System\StructType\OrgTemplateTextDTO
      */
     public function setTemplateText(?string $templateText = null): self
     {
@@ -140,7 +140,7 @@ class OrgTemplateTextDTO extends AbstractStructBase
     /**
      * Set templateType value
      * @param string $templateType
-     * @return \Pggns\MidocoApi\Api\System\StructType\OrgTemplateTextDTO
+     * @return \Pggns\MidocoApi\System\StructType\OrgTemplateTextDTO
      */
     public function setTemplateType(?string $templateType = null): self
     {
@@ -163,7 +163,7 @@ class OrgTemplateTextDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\OrgTemplateTextDTO
+     * @return \Pggns\MidocoApi\System\StructType\OrgTemplateTextDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SupplierVatSchemaDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierVatSchemaDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierVatSchemaDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -86,7 +86,7 @@ class SupplierVatSchemaDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierVatSchemaDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierVatSchemaDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -109,7 +109,7 @@ class SupplierVatSchemaDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierVatSchemaDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierVatSchemaDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -132,7 +132,7 @@ class SupplierVatSchemaDTO extends AbstractStructBase
     /**
      * Set vatSchemaId value
      * @param int $vatSchemaId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierVatSchemaDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierVatSchemaDTO
      */
     public function setVatSchemaId(?int $vatSchemaId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class CultureAssignDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CultureAssignDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\CultureAssignDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -70,7 +70,7 @@ class CultureAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CultureAssignDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\CultureAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

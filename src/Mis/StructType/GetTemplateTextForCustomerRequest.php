@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class GetTemplateTextForCustomerRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -110,7 +110,7 @@ class GetTemplateTextForCustomerRequest extends AbstractStructBase
     /**
      * Set customerOrgUnit value
      * @param string $customerOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest
      */
     public function setCustomerOrgUnit(?string $customerOrgUnit = null): self
     {
@@ -133,7 +133,7 @@ class GetTemplateTextForCustomerRequest extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest
      */
     public function setLanguage(?string $language = null): self
     {
@@ -156,7 +156,7 @@ class GetTemplateTextForCustomerRequest extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest
      */
     public function setTemplateId(?int $templateId = null): self
     {
@@ -179,7 +179,7 @@ class GetTemplateTextForCustomerRequest extends AbstractStructBase
     /**
      * Set templateOrgUnit value
      * @param string $templateOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest
      */
     public function setTemplateOrgUnit(?string $templateOrgUnit = null): self
     {
@@ -202,7 +202,7 @@ class GetTemplateTextForCustomerRequest extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -225,7 +225,7 @@ class GetTemplateTextForCustomerRequest extends AbstractStructBase
     /**
      * Set campaignOrgUnit value
      * @param string $campaignOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest
      */
     public function setCampaignOrgUnit(?string $campaignOrgUnit = null): self
     {

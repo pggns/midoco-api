@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class PrintTemplateTextForCustomerRequest extends AbstractStructBase
      * The GetTemplateTextForCustomerRequest
      * Meta information extracted from the WSDL
      * - ref: GetTemplateTextForCustomerRequest
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest|null
+     * @var \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest $GetTemplateTextForCustomerRequest = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest $GetTemplateTextForCustomerRequest = null;
     /**
      * The ignoreIfExecuted
      * Meta information extracted from the WSDL
@@ -39,11 +39,11 @@ class PrintTemplateTextForCustomerRequest extends AbstractStructBase
      * @uses PrintTemplateTextForCustomerRequest::setGetTemplateTextForCustomerRequest()
      * @uses PrintTemplateTextForCustomerRequest::setIgnoreIfExecuted()
      * @uses PrintTemplateTextForCustomerRequest::setOutput()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest $getTemplateTextForCustomerRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest $getTemplateTextForCustomerRequest
      * @param bool $ignoreIfExecuted
      * @param string $output
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest $getTemplateTextForCustomerRequest = null, ?bool $ignoreIfExecuted = true, ?string $output = 'PREVIEW_PRINT')
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest $getTemplateTextForCustomerRequest = null, ?bool $ignoreIfExecuted = true, ?string $output = 'PREVIEW_PRINT')
     {
         $this
             ->setGetTemplateTextForCustomerRequest($getTemplateTextForCustomerRequest)
@@ -52,18 +52,18 @@ class PrintTemplateTextForCustomerRequest extends AbstractStructBase
     }
     /**
      * Get GetTemplateTextForCustomerRequest value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest|null
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest|null
      */
-    public function getGetTemplateTextForCustomerRequest(): ?\Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest
+    public function getGetTemplateTextForCustomerRequest(): ?\Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest
     {
         return $this->GetTemplateTextForCustomerRequest;
     }
     /**
      * Set GetTemplateTextForCustomerRequest value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest $getTemplateTextForCustomerRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PrintTemplateTextForCustomerRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest $getTemplateTextForCustomerRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\PrintTemplateTextForCustomerRequest
      */
-    public function setGetTemplateTextForCustomerRequest(?\Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerRequest $getTemplateTextForCustomerRequest = null): self
+    public function setGetTemplateTextForCustomerRequest(?\Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerRequest $getTemplateTextForCustomerRequest = null): self
     {
         $this->GetTemplateTextForCustomerRequest = $getTemplateTextForCustomerRequest;
         
@@ -80,7 +80,7 @@ class PrintTemplateTextForCustomerRequest extends AbstractStructBase
     /**
      * Set ignoreIfExecuted value
      * @param bool $ignoreIfExecuted
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PrintTemplateTextForCustomerRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\PrintTemplateTextForCustomerRequest
      */
     public function setIgnoreIfExecuted(?bool $ignoreIfExecuted = true): self
     {
@@ -103,7 +103,7 @@ class PrintTemplateTextForCustomerRequest extends AbstractStructBase
     /**
      * Set output value
      * @param string $output
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PrintTemplateTextForCustomerRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\PrintTemplateTextForCustomerRequest
      */
     public function setOutput(?string $output = 'PREVIEW_PRINT'): self
     {

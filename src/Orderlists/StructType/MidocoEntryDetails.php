@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoEntryDetails extends DebitorAccountEntryType
     /**
      * Set dunningLock value
      * @param bool $dunningLock
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoEntryDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoEntryDetails
      */
     public function setDunningLock(?bool $dunningLock = null): self
     {

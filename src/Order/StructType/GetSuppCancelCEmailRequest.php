@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetSuppCancelCEmailRequest extends AbstractStructBase
     /**
      * Set suppCancelCEmailId value
      * @param int $suppCancelCEmailId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSuppCancelCEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSuppCancelCEmailRequest
      */
     public function setSuppCancelCEmailId(?int $suppCancelCEmailId = null): self
     {

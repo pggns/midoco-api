@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -199,7 +199,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set cardNo value
      * @param string $cardNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setCardNo(?string $cardNo = null): self
     {
@@ -222,7 +222,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set cardType value
      * @param string $cardType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setCardType(?string $cardType = null): self
     {
@@ -245,7 +245,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set cvc value
      * @param string $cvc
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setCvc(?string $cvc = null): self
     {
@@ -268,7 +268,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set cvcToken value
      * @param string $cvcToken
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setCvcToken(?string $cvcToken = null): self
     {
@@ -291,7 +291,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set isBonus value
      * @param bool $isBonus
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setIsBonus(?bool $isBonus = null): self
     {
@@ -314,7 +314,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set issuer value
      * @param string $issuer
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setIssuer(?string $issuer = null): self
     {
@@ -337,7 +337,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set owner value
      * @param string $owner
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setOwner(?string $owner = null): self
     {
@@ -360,7 +360,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set validMonth value
      * @param int $validMonth
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setValidMonth(?int $validMonth = null): self
     {
@@ -383,7 +383,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set validYear value
      * @param int $validYear
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setValidYear(?int $validYear = null): self
     {
@@ -406,7 +406,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set typeDescription value
      * @param string $typeDescription
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setTypeDescription(?string $typeDescription = null): self
     {
@@ -429,7 +429,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set ccCardId value
      * @param int $ccCardId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setCcCardId(?int $ccCardId = null): self
     {
@@ -452,7 +452,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -475,7 +475,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set authAmount value
      * @param float $authAmount
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setAuthAmount(?float $authAmount = null): self
     {
@@ -498,7 +498,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set cardholderAuthVerification value
      * @param string $cardholderAuthVerification
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setCardholderAuthVerification(?string $cardholderAuthVerification = null): self
     {
@@ -521,7 +521,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set dstid value
      * @param string $dstid
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setDstid(?string $dstid = null): self
     {
@@ -544,7 +544,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set electronicCommerceIndicator value
      * @param string $electronicCommerceIndicator
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setElectronicCommerceIndicator(?string $electronicCommerceIndicator = null): self
     {
@@ -567,7 +567,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set paymentChannelIndicator value
      * @param string $paymentChannelIndicator
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setPaymentChannelIndicator(?string $paymentChannelIndicator = null): self
     {
@@ -590,7 +590,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set RemainingAuthAmount value
      * @param float $remainingAuthAmount
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setRemainingAuthAmount(?float $remainingAuthAmount = null): self
     {
@@ -613,7 +613,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set v3ds value
      * @param string $v3ds
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setV3ds(?string $v3ds = null): self
     {
@@ -636,7 +636,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set xid value
      * @param string $xid
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setXid(?string $xid = null): self
     {
@@ -659,7 +659,7 @@ class CcCardDTO extends AbstractStructBase
     /**
      * Set initialEcomTransactionId value
      * @param string $initialEcomTransactionId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcCardDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcCardDTO
      */
     public function setInitialEcomTransactionId(?string $initialEcomTransactionId = null): self
     {

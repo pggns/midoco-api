@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetRemarkOrgunitsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoRemarkOrgunit
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit[]
      */
     protected ?array $MidocoRemarkOrgunit = null;
     /**
      * Constructor method for GetRemarkOrgunitsResponse
      * @uses GetRemarkOrgunitsResponse::setMidocoRemarkOrgunit()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit[] $midocoRemarkOrgunit
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit[] $midocoRemarkOrgunit
      */
     public function __construct(?array $midocoRemarkOrgunit = null)
     {
@@ -34,7 +34,7 @@ class GetRemarkOrgunitsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoRemarkOrgunit value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit[]
      */
     public function getMidocoRemarkOrgunit(): ?array
     {
@@ -55,12 +55,12 @@ class GetRemarkOrgunitsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getRemarkOrgunitsResponseMidocoRemarkOrgunitItem) {
             // validation for constraint: itemType
-            if (!$getRemarkOrgunitsResponseMidocoRemarkOrgunitItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit) {
+            if (!$getRemarkOrgunitsResponseMidocoRemarkOrgunitItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit) {
                 $invalidValues[] = is_object($getRemarkOrgunitsResponseMidocoRemarkOrgunitItem) ? get_class($getRemarkOrgunitsResponseMidocoRemarkOrgunitItem) : sprintf('%s(%s)', gettype($getRemarkOrgunitsResponseMidocoRemarkOrgunitItem), var_export($getRemarkOrgunitsResponseMidocoRemarkOrgunitItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRemarkOrgunit property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRemarkOrgunit property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetRemarkOrgunitsResponse extends AbstractStructBase
     /**
      * Set MidocoRemarkOrgunit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit[] $midocoRemarkOrgunit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetRemarkOrgunitsResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit[] $midocoRemarkOrgunit
+     * @return \Pggns\MidocoApi\Documents\StructType\GetRemarkOrgunitsResponse
      */
     public function setMidocoRemarkOrgunit(?array $midocoRemarkOrgunit = null): self
     {
@@ -85,14 +85,14 @@ class GetRemarkOrgunitsResponse extends AbstractStructBase
     /**
      * Add item to MidocoRemarkOrgunit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetRemarkOrgunitsResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetRemarkOrgunitsResponse
      */
-    public function addToMidocoRemarkOrgunit(\Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit $item): self
+    public function addToMidocoRemarkOrgunit(\Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit) {
-            throw new InvalidArgumentException(sprintf('The MidocoRemarkOrgunit property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkOrgunit, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit) {
+            throw new InvalidArgumentException(sprintf('The MidocoRemarkOrgunit property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoRemarkOrgunit, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRemarkOrgunit[] = $item;
         

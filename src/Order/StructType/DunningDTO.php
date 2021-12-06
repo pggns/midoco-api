@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -191,7 +191,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -214,7 +214,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set documentExportDate value
      * @param string $documentExportDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setDocumentExportDate(?string $documentExportDate = null): self
     {
@@ -237,7 +237,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -260,7 +260,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -283,7 +283,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set dunningAmount value
      * @param float $dunningAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setDunningAmount(?float $dunningAmount = null): self
     {
@@ -306,7 +306,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set dunningCharge value
      * @param float $dunningCharge
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setDunningCharge(?float $dunningCharge = null): self
     {
@@ -329,7 +329,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set dunningLevel value
      * @param int $dunningLevel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setDunningLevel(?int $dunningLevel = null): self
     {
@@ -352,7 +352,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set dunningTemplateId value
      * @param int $dunningTemplateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setDunningTemplateId(?int $dunningTemplateId = null): self
     {
@@ -375,7 +375,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set excUserId value
      * @param int $excUserId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setExcUserId(?int $excUserId = null): self
     {
@@ -398,7 +398,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set forStorno value
      * @param bool $forStorno
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setForStorno(?bool $forStorno = null): self
     {
@@ -421,7 +421,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -444,7 +444,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setId(?int $id = null): self
     {
@@ -467,7 +467,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set inkassoPrice value
      * @param float $inkassoPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setInkassoPrice(?float $inkassoPrice = null): self
     {
@@ -490,7 +490,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set isDepositPayment value
      * @param bool $isDepositPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setIsDepositPayment(?bool $isDepositPayment = null): self
     {
@@ -513,7 +513,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set isDocumentExported value
      * @param bool $isDocumentExported
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setIsDocumentExported(?bool $isDocumentExported = null): self
     {
@@ -536,7 +536,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setMedia(?string $media = null): self
     {
@@ -559,7 +559,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setName(?string $name = null): self
     {
@@ -582,7 +582,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -605,7 +605,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -628,7 +628,7 @@ class DunningDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DunningDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

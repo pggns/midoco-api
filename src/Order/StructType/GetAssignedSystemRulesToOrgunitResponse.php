@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAssignedSystemRulesToOrgunitResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoUnitRuleset
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoUnitRuleset[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoUnitRuleset[]
      */
     protected ?array $MidocoUnitRuleset = null;
     /**
      * Constructor method for GetAssignedSystemRulesToOrgunitResponse
      * @uses GetAssignedSystemRulesToOrgunitResponse::setMidocoUnitRuleset()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoUnitRuleset[] $midocoUnitRuleset
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoUnitRuleset[] $midocoUnitRuleset
      */
     public function __construct(?array $midocoUnitRuleset = null)
     {
@@ -34,7 +34,7 @@ class GetAssignedSystemRulesToOrgunitResponse extends AbstractStructBase
     }
     /**
      * Get MidocoUnitRuleset value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUnitRuleset[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUnitRuleset[]
      */
     public function getMidocoUnitRuleset(): ?array
     {
@@ -55,12 +55,12 @@ class GetAssignedSystemRulesToOrgunitResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAssignedSystemRulesToOrgunitResponseMidocoUnitRulesetItem) {
             // validation for constraint: itemType
-            if (!$getAssignedSystemRulesToOrgunitResponseMidocoUnitRulesetItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoUnitRuleset) {
+            if (!$getAssignedSystemRulesToOrgunitResponseMidocoUnitRulesetItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoUnitRuleset) {
                 $invalidValues[] = is_object($getAssignedSystemRulesToOrgunitResponseMidocoUnitRulesetItem) ? get_class($getAssignedSystemRulesToOrgunitResponseMidocoUnitRulesetItem) : sprintf('%s(%s)', gettype($getAssignedSystemRulesToOrgunitResponseMidocoUnitRulesetItem), var_export($getAssignedSystemRulesToOrgunitResponseMidocoUnitRulesetItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoUnitRuleset property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoUnitRuleset, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoUnitRuleset property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoUnitRuleset, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAssignedSystemRulesToOrgunitResponse extends AbstractStructBase
     /**
      * Set MidocoUnitRuleset value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoUnitRuleset[] $midocoUnitRuleset
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAssignedSystemRulesToOrgunitResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoUnitRuleset[] $midocoUnitRuleset
+     * @return \Pggns\MidocoApi\Order\StructType\GetAssignedSystemRulesToOrgunitResponse
      */
     public function setMidocoUnitRuleset(?array $midocoUnitRuleset = null): self
     {
@@ -85,14 +85,14 @@ class GetAssignedSystemRulesToOrgunitResponse extends AbstractStructBase
     /**
      * Add item to MidocoUnitRuleset value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoUnitRuleset $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAssignedSystemRulesToOrgunitResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoUnitRuleset $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetAssignedSystemRulesToOrgunitResponse
      */
-    public function addToMidocoUnitRuleset(\Pggns\MidocoApi\Api\Order\StructType\MidocoUnitRuleset $item): self
+    public function addToMidocoUnitRuleset(\Pggns\MidocoApi\Order\StructType\MidocoUnitRuleset $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoUnitRuleset) {
-            throw new InvalidArgumentException(sprintf('The MidocoUnitRuleset property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoUnitRuleset, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoUnitRuleset) {
+            throw new InvalidArgumentException(sprintf('The MidocoUnitRuleset property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoUnitRuleset, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoUnitRuleset[] = $item;
         

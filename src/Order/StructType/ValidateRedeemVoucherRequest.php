@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class ValidateRedeemVoucherRequest extends AbstractStructBase
      * The MidocoOrder
      * Meta information extracted from the WSDL
      * - ref: MidocoOrder
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $MidocoOrder = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $MidocoOrder = null;
     /**
      * The voucherNo
      * @var string|null
@@ -29,10 +29,10 @@ class ValidateRedeemVoucherRequest extends AbstractStructBase
      * Constructor method for ValidateRedeemVoucherRequest
      * @uses ValidateRedeemVoucherRequest::setMidocoOrder()
      * @uses ValidateRedeemVoucherRequest::setVoucherNo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
      * @param string $voucherNo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null, ?string $voucherNo = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null, ?string $voucherNo = null)
     {
         $this
             ->setMidocoOrder($midocoOrder)
@@ -40,18 +40,18 @@ class ValidateRedeemVoucherRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrder value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    public function getMidocoOrder(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType
+    public function getMidocoOrder(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType
     {
         return $this->MidocoOrder;
     }
     /**
      * Set MidocoOrder value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ValidateRedeemVoucherRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
+     * @return \Pggns\MidocoApi\Order\StructType\ValidateRedeemVoucherRequest
      */
-    public function setMidocoOrder(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null): self
+    public function setMidocoOrder(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null): self
     {
         $this->MidocoOrder = $midocoOrder;
         
@@ -68,7 +68,7 @@ class ValidateRedeemVoucherRequest extends AbstractStructBase
     /**
      * Set voucherNo value
      * @param string $voucherNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ValidateRedeemVoucherRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ValidateRedeemVoucherRequest
      */
     public function setVoucherNo(?string $voucherNo = null): self
     {

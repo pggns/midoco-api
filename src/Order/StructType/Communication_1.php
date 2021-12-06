@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,17 +63,17 @@ class Communication_1 extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\CommunicationType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\CommunicationType::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\CommunicationType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\CommunicationType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Communication_1
+     * @return \Pggns\MidocoApi\Order\StructType\Communication_1
      */
     public function setType(string $type): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\CommunicationType::valueIsValid($type)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\CommunicationType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\CommunicationType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\CommunicationType::valueIsValid($type)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\CommunicationType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\CommunicationType::getValidValues())), __LINE__);
         }
         $this->type = $type;
         
@@ -90,7 +90,7 @@ class Communication_1 extends AbstractStructBase
     /**
      * Set communicationData value
      * @param string $communicationData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Communication_1
+     * @return \Pggns\MidocoApi\Order\StructType\Communication_1
      */
     public function setCommunicationData(?string $communicationData = null): self
     {
@@ -113,7 +113,7 @@ class Communication_1 extends AbstractStructBase
     /**
      * Set useForMailing value
      * @param bool $useForMailing
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Communication_1
+     * @return \Pggns\MidocoApi\Order\StructType\Communication_1
      */
     public function setUseForMailing(?bool $useForMailing = true): self
     {

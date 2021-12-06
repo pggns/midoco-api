@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -183,7 +183,7 @@ class MidocoCustomerBooking extends AbstractStructBase
      * Set PrintTypeId value
      * @throws InvalidArgumentException
      * @param string[] $printTypeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setPrintTypeId(?array $printTypeId = null): self
     {
@@ -199,7 +199,7 @@ class MidocoCustomerBooking extends AbstractStructBase
      * Add item to PrintTypeId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function addToPrintTypeId(string $item): self
     {
@@ -222,7 +222,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -245,7 +245,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -268,7 +268,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -291,7 +291,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setName(?string $name = null): self
     {
@@ -314,7 +314,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setForename(?string $forename = null): self
     {
@@ -337,7 +337,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -360,7 +360,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -383,7 +383,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set departureDescription value
      * @param string $departureDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setDepartureDescription(?string $departureDescription = null): self
     {
@@ -406,7 +406,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -429,7 +429,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set toBePaid value
      * @param float $toBePaid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setToBePaid(?float $toBePaid = 0): self
     {
@@ -452,7 +452,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set departureTime value
      * @param string $departureTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setDepartureTime(?string $departureTime = null): self
     {
@@ -475,7 +475,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -498,7 +498,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -521,7 +521,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     /**
      * Set airportPayment value
      * @param bool $airportPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerBooking
      */
     public function setAirportPayment(?bool $airportPayment = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DuplicateSupplierInfoRequest extends AbstractStructBase
      * The MidocoDuplicateSupplierInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoDuplicateSupplierInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDuplicateSupplierInfo|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDuplicateSupplierInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDuplicateSupplierInfo $MidocoDuplicateSupplierInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoDuplicateSupplierInfo $MidocoDuplicateSupplierInfo = null;
     /**
      * Constructor method for DuplicateSupplierInfoRequest
      * @uses DuplicateSupplierInfoRequest::setMidocoDuplicateSupplierInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDuplicateSupplierInfo $midocoDuplicateSupplierInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDuplicateSupplierInfo $midocoDuplicateSupplierInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDuplicateSupplierInfo $midocoDuplicateSupplierInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoDuplicateSupplierInfo $midocoDuplicateSupplierInfo = null)
     {
         $this
             ->setMidocoDuplicateSupplierInfo($midocoDuplicateSupplierInfo);
     }
     /**
      * Get MidocoDuplicateSupplierInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDuplicateSupplierInfo|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDuplicateSupplierInfo|null
      */
-    public function getMidocoDuplicateSupplierInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDuplicateSupplierInfo
+    public function getMidocoDuplicateSupplierInfo(): ?\Pggns\MidocoApi\Order\StructType\MidocoDuplicateSupplierInfo
     {
         return $this->MidocoDuplicateSupplierInfo;
     }
     /**
      * Set MidocoDuplicateSupplierInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDuplicateSupplierInfo $midocoDuplicateSupplierInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateSupplierInfoRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDuplicateSupplierInfo $midocoDuplicateSupplierInfo
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateSupplierInfoRequest
      */
-    public function setMidocoDuplicateSupplierInfo(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDuplicateSupplierInfo $midocoDuplicateSupplierInfo = null): self
+    public function setMidocoDuplicateSupplierInfo(?\Pggns\MidocoApi\Order\StructType\MidocoDuplicateSupplierInfo $midocoDuplicateSupplierInfo = null): self
     {
         $this->MidocoDuplicateSupplierInfo = $midocoDuplicateSupplierInfo;
         

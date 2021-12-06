@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,24 +17,24 @@ class GetLinkToExternalReservationRequest extends AbstractStructBase
      * The MidocoOrder
      * Meta information extracted from the WSDL
      * - ref: MidocoOrder
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $MidocoOrder = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $MidocoOrder = null;
     /**
      * The MidocoOrderCustomer
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoOrderCustomer
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $MidocoOrderCustomer = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $MidocoOrderCustomer = null;
     /**
      * The MidocoTravelItem
      * Meta information extracted from the WSDL
      * - ref: MidocoTravelItem
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTravelItemType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $MidocoTravelItem = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $MidocoTravelItem = null;
     /**
      * The isNew
      * @var bool|null
@@ -64,15 +64,15 @@ class GetLinkToExternalReservationRequest extends AbstractStructBase
      * @uses GetLinkToExternalReservationRequest::setAdapterId()
      * @uses GetLinkToExternalReservationRequest::setUpdateAction()
      * @uses GetLinkToExternalReservationRequest::setSelectedTaxiAgency()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $midocoTravelItem
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $midocoTravelItem
      * @param bool $isNew
      * @param string $adapterId
      * @param bool $updateAction
      * @param string $selectedTaxiAgency
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $midocoTravelItem = null, ?bool $isNew = null, ?string $adapterId = null, ?bool $updateAction = null, ?string $selectedTaxiAgency = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null, ?\Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer = null, ?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $midocoTravelItem = null, ?bool $isNew = null, ?string $adapterId = null, ?bool $updateAction = null, ?string $selectedTaxiAgency = null)
     {
         $this
             ->setMidocoOrder($midocoOrder)
@@ -85,18 +85,18 @@ class GetLinkToExternalReservationRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrder value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    public function getMidocoOrder(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType
+    public function getMidocoOrder(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType
     {
         return $this->MidocoOrder;
     }
     /**
      * Set MidocoOrder value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetLinkToExternalReservationRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
+     * @return \Pggns\MidocoApi\Order\StructType\GetLinkToExternalReservationRequest
      */
-    public function setMidocoOrder(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null): self
+    public function setMidocoOrder(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null): self
     {
         $this->MidocoOrder = $midocoOrder;
         
@@ -104,18 +104,18 @@ class GetLinkToExternalReservationRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderCustomer value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer|null
      */
-    public function getMidocoOrderCustomer(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer
+    public function getMidocoOrderCustomer(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer
     {
         return $this->MidocoOrderCustomer;
     }
     /**
      * Set MidocoOrderCustomer value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetLinkToExternalReservationRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\GetLinkToExternalReservationRequest
      */
-    public function setMidocoOrderCustomer(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer = null): self
+    public function setMidocoOrderCustomer(?\Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer = null): self
     {
         $this->MidocoOrderCustomer = $midocoOrderCustomer;
         
@@ -123,18 +123,18 @@ class GetLinkToExternalReservationRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTravelItem value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTravelItemType|null
      */
-    public function getMidocoTravelItem(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType
+    public function getMidocoTravelItem(): ?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemType
     {
         return $this->MidocoTravelItem;
     }
     /**
      * Set MidocoTravelItem value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $midocoTravelItem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetLinkToExternalReservationRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $midocoTravelItem
+     * @return \Pggns\MidocoApi\Order\StructType\GetLinkToExternalReservationRequest
      */
-    public function setMidocoTravelItem(?\Pggns\MidocoApi\Api\Order\StructType\MidocoTravelItemType $midocoTravelItem = null): self
+    public function setMidocoTravelItem(?\Pggns\MidocoApi\Order\StructType\MidocoTravelItemType $midocoTravelItem = null): self
     {
         $this->MidocoTravelItem = $midocoTravelItem;
         
@@ -151,7 +151,7 @@ class GetLinkToExternalReservationRequest extends AbstractStructBase
     /**
      * Set isNew value
      * @param bool $isNew
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetLinkToExternalReservationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetLinkToExternalReservationRequest
      */
     public function setIsNew(?bool $isNew = null): self
     {
@@ -174,7 +174,7 @@ class GetLinkToExternalReservationRequest extends AbstractStructBase
     /**
      * Set adapterId value
      * @param string $adapterId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetLinkToExternalReservationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetLinkToExternalReservationRequest
      */
     public function setAdapterId(?string $adapterId = null): self
     {
@@ -197,7 +197,7 @@ class GetLinkToExternalReservationRequest extends AbstractStructBase
     /**
      * Set updateAction value
      * @param bool $updateAction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetLinkToExternalReservationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetLinkToExternalReservationRequest
      */
     public function setUpdateAction(?bool $updateAction = null): self
     {
@@ -220,7 +220,7 @@ class GetLinkToExternalReservationRequest extends AbstractStructBase
     /**
      * Set selectedTaxiAgency value
      * @param string $selectedTaxiAgency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetLinkToExternalReservationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetLinkToExternalReservationRequest
      */
     public function setSelectedTaxiAgency(?string $selectedTaxiAgency = null): self
     {

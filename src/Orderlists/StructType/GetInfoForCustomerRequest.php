@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -102,7 +102,7 @@ class GetInfoForCustomerRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetInfoForCustomerRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -125,7 +125,7 @@ class GetInfoForCustomerRequest extends AbstractStructBase
     /**
      * Set travelStart value
      * @param string $travelStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetInfoForCustomerRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerRequest
      */
     public function setTravelStart(?string $travelStart = null): self
     {
@@ -148,7 +148,7 @@ class GetInfoForCustomerRequest extends AbstractStructBase
     /**
      * Set travelEnd value
      * @param string $travelEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetInfoForCustomerRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerRequest
      */
     public function setTravelEnd(?string $travelEnd = null): self
     {
@@ -171,7 +171,7 @@ class GetInfoForCustomerRequest extends AbstractStructBase
     /**
      * Set createdStart value
      * @param string $createdStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetInfoForCustomerRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerRequest
      */
     public function setCreatedStart(?string $createdStart = null): self
     {
@@ -194,7 +194,7 @@ class GetInfoForCustomerRequest extends AbstractStructBase
     /**
      * Set createdEnd value
      * @param string $createdEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetInfoForCustomerRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerRequest
      */
     public function setCreatedEnd(?string $createdEnd = null): self
     {
@@ -217,7 +217,7 @@ class GetInfoForCustomerRequest extends AbstractStructBase
     /**
      * Set employee value
      * @param int $employee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetInfoForCustomerRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerRequest
      */
     public function setEmployee(?int $employee = null): self
     {
@@ -267,7 +267,7 @@ class GetInfoForCustomerRequest extends AbstractStructBase
      * Set unitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetInfoForCustomerRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerRequest
      */
     public function setUnitName(?array $unitName = null): self
     {
@@ -283,7 +283,7 @@ class GetInfoForCustomerRequest extends AbstractStructBase
      * Add item to unitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetInfoForCustomerRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerRequest
      */
     public function addToUnitName(string $item): self
     {

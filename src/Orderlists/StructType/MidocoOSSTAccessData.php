@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoOSSTAccessData extends AbstractStructBase
     /**
      * Set userName value
      * @param string $userName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOSSTAccessData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOSSTAccessData
      */
     public function setUserName(?string $userName = null): self
     {
@@ -86,7 +86,7 @@ class MidocoOSSTAccessData extends AbstractStructBase
     /**
      * Set passWord value
      * @param string $passWord
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOSSTAccessData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOSSTAccessData
      */
     public function setPassWord(?string $passWord = null): self
     {
@@ -109,7 +109,7 @@ class MidocoOSSTAccessData extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOSSTAccessData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOSSTAccessData
      */
     public function setUrl(?string $url = null): self
     {
@@ -132,7 +132,7 @@ class MidocoOSSTAccessData extends AbstractStructBase
     /**
      * Set timeout value
      * @param int $timeout
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOSSTAccessData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOSSTAccessData
      */
     public function setTimeout(?int $timeout = null): self
     {

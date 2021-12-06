@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAvailableSupplierHistoricResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplier
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType[]
      */
     protected ?array $MidocoSupplier = null;
     /**
      * Constructor method for GetAvailableSupplierHistoricResponse
      * @uses GetAvailableSupplierHistoricResponse::setMidocoSupplier()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType[] $midocoSupplier
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType[] $midocoSupplier
      */
     public function __construct(?array $midocoSupplier = null)
     {
@@ -34,7 +34,7 @@ class GetAvailableSupplierHistoricResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplier value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType[]
      */
     public function getMidocoSupplier(): ?array
     {
@@ -55,12 +55,12 @@ class GetAvailableSupplierHistoricResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailableSupplierHistoricResponseMidocoSupplierItem) {
             // validation for constraint: itemType
-            if (!$getAvailableSupplierHistoricResponseMidocoSupplierItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType) {
+            if (!$getAvailableSupplierHistoricResponseMidocoSupplierItem instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType) {
                 $invalidValues[] = is_object($getAvailableSupplierHistoricResponseMidocoSupplierItem) ? get_class($getAvailableSupplierHistoricResponseMidocoSupplierItem) : sprintf('%s(%s)', gettype($getAvailableSupplierHistoricResponseMidocoSupplierItem), var_export($getAvailableSupplierHistoricResponseMidocoSupplierItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplier property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplier property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAvailableSupplierHistoricResponse extends AbstractStructBase
     /**
      * Set MidocoSupplier value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType[] $midocoSupplier
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierHistoricResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType[] $midocoSupplier
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierHistoricResponse
      */
     public function setMidocoSupplier(?array $midocoSupplier = null): self
     {
@@ -85,14 +85,14 @@ class GetAvailableSupplierHistoricResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplier value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierHistoricResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierHistoricResponse
      */
-    public function addToMidocoSupplier(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType $item): self
+    public function addToMidocoSupplier(\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplier property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplier property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplier[] = $item;
         

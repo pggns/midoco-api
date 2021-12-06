@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class PrintTypeDTO extends AbstractStructBase
     /**
      * Set channel value
      * @param int $channel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintTypeDTO
      */
     public function setChannel(?int $channel = null): self
     {
@@ -86,7 +86,7 @@ class PrintTypeDTO extends AbstractStructBase
     /**
      * Set handler value
      * @param string $handler
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintTypeDTO
      */
     public function setHandler(?string $handler = null): self
     {
@@ -109,7 +109,7 @@ class PrintTypeDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintTypeDTO
      */
     public function setName(?string $name = null): self
     {
@@ -132,7 +132,7 @@ class PrintTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

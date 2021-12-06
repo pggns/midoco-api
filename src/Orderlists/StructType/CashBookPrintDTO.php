@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set carryOver value
      * @param float $carryOver
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setCarryOver(?float $carryOver = null): self
     {
@@ -198,7 +198,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setCashBookId(?int $cashBookId = null): self
     {
@@ -221,7 +221,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set documentExportDate value
      * @param string $documentExportDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setDocumentExportDate(?string $documentExportDate = null): self
     {
@@ -244,7 +244,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set endPage value
      * @param int $endPage
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setEndPage(?int $endPage = null): self
     {
@@ -267,7 +267,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set finishTimestamp value
      * @param string $finishTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setFinishTimestamp(?string $finishTimestamp = null): self
     {
@@ -290,7 +290,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set forUser value
      * @param int $forUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setForUser(?int $forUser = null): self
     {
@@ -313,7 +313,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set foreignCarryOver value
      * @param float $foreignCarryOver
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setForeignCarryOver(?float $foreignCarryOver = null): self
     {
@@ -336,7 +336,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set foreignPrintBalance value
      * @param float $foreignPrintBalance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setForeignPrintBalance(?float $foreignPrintBalance = null): self
     {
@@ -359,7 +359,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set isDocumentExported value
      * @param bool $isDocumentExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setIsDocumentExported(?bool $isDocumentExported = null): self
     {
@@ -382,7 +382,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set isFinished value
      * @param bool $isFinished
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setIsFinished(?bool $isFinished = null): self
     {
@@ -405,7 +405,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set midocoVersion value
      * @param string $midocoVersion
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setMidocoVersion(?string $midocoVersion = null): self
     {
@@ -428,7 +428,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set printId value
      * @param int $printId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setPrintId(?int $printId = null): self
     {
@@ -451,7 +451,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set printSequenceid value
      * @param int $printSequenceid
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setPrintSequenceid(?int $printSequenceid = null): self
     {
@@ -474,7 +474,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set printingBalance value
      * @param float $printingBalance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setPrintingBalance(?float $printingBalance = null): self
     {
@@ -497,7 +497,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set printingDate value
      * @param string $printingDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setPrintingDate(?string $printingDate = null): self
     {
@@ -520,7 +520,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set printingUser value
      * @param int $printingUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setPrintingUser(?int $printingUser = null): self
     {
@@ -543,7 +543,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -566,7 +566,7 @@ class CashBookPrintDTO extends AbstractStructBase
     /**
      * Set startPage value
      * @param int $startPage
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookPrintDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookPrintDTO
      */
     public function setStartPage(?int $startPage = null): self
     {

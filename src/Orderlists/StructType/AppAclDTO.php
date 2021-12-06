@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class AppAclDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AppAclDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AppAclDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -78,7 +78,7 @@ class AppAclDTO extends AbstractStructBase
     /**
      * Set ipAddr value
      * @param string $ipAddr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AppAclDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AppAclDTO
      */
     public function setIpAddr(?string $ipAddr = null): self
     {
@@ -101,7 +101,7 @@ class AppAclDTO extends AbstractStructBase
     /**
      * Set modulId value
      * @param string $modulId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AppAclDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AppAclDTO
      */
     public function setModulId(?string $modulId = null): self
     {

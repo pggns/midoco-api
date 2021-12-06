@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class CrmCustomerEinvoiceDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerEinvoiceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerEinvoiceDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -134,7 +134,7 @@ class CrmCustomerEinvoiceDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerEinvoiceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerEinvoiceDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -157,7 +157,7 @@ class CrmCustomerEinvoiceDTO extends AbstractStructBase
     /**
      * Set gateway value
      * @param string $gateway
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerEinvoiceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerEinvoiceDTO
      */
     public function setGateway(?string $gateway = null): self
     {
@@ -180,7 +180,7 @@ class CrmCustomerEinvoiceDTO extends AbstractStructBase
     /**
      * Set isOrderRefRequired value
      * @param bool $isOrderRefRequired
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerEinvoiceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerEinvoiceDTO
      */
     public function setIsOrderRefRequired(?bool $isOrderRefRequired = null): self
     {
@@ -203,7 +203,7 @@ class CrmCustomerEinvoiceDTO extends AbstractStructBase
     /**
      * Set isRoutingIdRequired value
      * @param bool $isRoutingIdRequired
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerEinvoiceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerEinvoiceDTO
      */
     public function setIsRoutingIdRequired(?bool $isRoutingIdRequired = null): self
     {
@@ -226,7 +226,7 @@ class CrmCustomerEinvoiceDTO extends AbstractStructBase
     /**
      * Set isSupplierNoRequired value
      * @param bool $isSupplierNoRequired
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerEinvoiceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerEinvoiceDTO
      */
     public function setIsSupplierNoRequired(?bool $isSupplierNoRequired = null): self
     {
@@ -249,7 +249,7 @@ class CrmCustomerEinvoiceDTO extends AbstractStructBase
     /**
      * Set routingId value
      * @param string $routingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerEinvoiceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerEinvoiceDTO
      */
     public function setRoutingId(?string $routingId = null): self
     {
@@ -272,7 +272,7 @@ class CrmCustomerEinvoiceDTO extends AbstractStructBase
     /**
      * Set sellerTradeParty value
      * @param string $sellerTradeParty
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerEinvoiceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerEinvoiceDTO
      */
     public function setSellerTradeParty(?string $sellerTradeParty = null): self
     {
@@ -295,7 +295,7 @@ class CrmCustomerEinvoiceDTO extends AbstractStructBase
     /**
      * Set supplierNo value
      * @param string $supplierNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerEinvoiceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerEinvoiceDTO
      */
     public function setSupplierNo(?string $supplierNo = null): self
     {
@@ -318,7 +318,7 @@ class CrmCustomerEinvoiceDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmCustomerEinvoiceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmCustomerEinvoiceDTO
      */
     public function setType(?string $type = null): self
     {

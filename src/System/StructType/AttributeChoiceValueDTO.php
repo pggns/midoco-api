@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class AttributeChoiceValueDTO extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO
+     * @return \Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -86,7 +86,7 @@ class AttributeChoiceValueDTO extends AbstractStructBase
     /**
      * Set choiceValue value
      * @param string $choiceValue
-     * @return \Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO
+     * @return \Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO
      */
     public function setChoiceValue(?string $choiceValue = null): self
     {
@@ -109,7 +109,7 @@ class AttributeChoiceValueDTO extends AbstractStructBase
     /**
      * Set contextId value
      * @param string $contextId
-     * @return \Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO
+     * @return \Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO
      */
     public function setContextId(?string $contextId = null): self
     {
@@ -132,7 +132,7 @@ class AttributeChoiceValueDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO
+     * @return \Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListMidocoOrgTemplateTextResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrgTemplateTextInfo
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrgTemplateTextInfo[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoOrgTemplateTextInfo[]
      */
     protected ?array $MidocoOrgTemplateTextInfo = null;
     /**
      * Constructor method for ListMidocoOrgTemplateTextResponse
      * @uses ListMidocoOrgTemplateTextResponse::setMidocoOrgTemplateTextInfo()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrgTemplateTextInfo[] $midocoOrgTemplateTextInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrgTemplateTextInfo[] $midocoOrgTemplateTextInfo
      */
     public function __construct(?array $midocoOrgTemplateTextInfo = null)
     {
@@ -34,7 +34,7 @@ class ListMidocoOrgTemplateTextResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrgTemplateTextInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrgTemplateTextInfo[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrgTemplateTextInfo[]
      */
     public function getMidocoOrgTemplateTextInfo(): ?array
     {
@@ -55,12 +55,12 @@ class ListMidocoOrgTemplateTextResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listMidocoOrgTemplateTextResponseMidocoOrgTemplateTextInfoItem) {
             // validation for constraint: itemType
-            if (!$listMidocoOrgTemplateTextResponseMidocoOrgTemplateTextInfoItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrgTemplateTextInfo) {
+            if (!$listMidocoOrgTemplateTextResponseMidocoOrgTemplateTextInfoItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOrgTemplateTextInfo) {
                 $invalidValues[] = is_object($listMidocoOrgTemplateTextResponseMidocoOrgTemplateTextInfoItem) ? get_class($listMidocoOrgTemplateTextResponseMidocoOrgTemplateTextInfoItem) : sprintf('%s(%s)', gettype($listMidocoOrgTemplateTextResponseMidocoOrgTemplateTextInfoItem), var_export($listMidocoOrgTemplateTextResponseMidocoOrgTemplateTextInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrgTemplateTextInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrgTemplateTextInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrgTemplateTextInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOrgTemplateTextInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListMidocoOrgTemplateTextResponse extends AbstractStructBase
     /**
      * Set MidocoOrgTemplateTextInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrgTemplateTextInfo[] $midocoOrgTemplateTextInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListMidocoOrgTemplateTextResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrgTemplateTextInfo[] $midocoOrgTemplateTextInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListMidocoOrgTemplateTextResponse
      */
     public function setMidocoOrgTemplateTextInfo(?array $midocoOrgTemplateTextInfo = null): self
     {
@@ -85,14 +85,14 @@ class ListMidocoOrgTemplateTextResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrgTemplateTextInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrgTemplateTextInfo $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListMidocoOrgTemplateTextResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrgTemplateTextInfo $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListMidocoOrgTemplateTextResponse
      */
-    public function addToMidocoOrgTemplateTextInfo(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrgTemplateTextInfo $item): self
+    public function addToMidocoOrgTemplateTextInfo(\Pggns\MidocoApi\Orderlists\StructType\MidocoOrgTemplateTextInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrgTemplateTextInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrgTemplateTextInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrgTemplateTextInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOrgTemplateTextInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrgTemplateTextInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOrgTemplateTextInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrgTemplateTextInfo[] = $item;
         

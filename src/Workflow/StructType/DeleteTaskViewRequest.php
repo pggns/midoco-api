@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class DeleteTaskViewRequest extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - ref: MidocoTaskView
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView
      */
-    protected \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView $MidocoTaskView;
+    protected \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView $MidocoTaskView;
     /**
      * Constructor method for DeleteTaskViewRequest
      * @uses DeleteTaskViewRequest::setMidocoTaskView()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView $midocoTaskView
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView $midocoTaskView
      */
-    public function __construct(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView $midocoTaskView)
+    public function __construct(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskView $midocoTaskView)
     {
         $this
             ->setMidocoTaskView($midocoTaskView);
     }
     /**
      * Get MidocoTaskView value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView
      */
-    public function getMidocoTaskView(): \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView
+    public function getMidocoTaskView(): \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView
     {
         return $this->MidocoTaskView;
     }
     /**
      * Set MidocoTaskView value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView $midocoTaskView
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteTaskViewRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskView $midocoTaskView
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteTaskViewRequest
      */
-    public function setMidocoTaskView(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskView $midocoTaskView): self
+    public function setMidocoTaskView(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskView $midocoTaskView): self
     {
         $this->MidocoTaskView = $midocoTaskView;
         

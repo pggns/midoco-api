@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class PreviewCommunicationHistoryRequest extends AbstractStructBase
     /**
      * Set templateName value
      * @param string $templateName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PreviewCommunicationHistoryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\PreviewCommunicationHistoryRequest
      */
     public function setTemplateName(?string $templateName = null): self
     {
@@ -86,7 +86,7 @@ class PreviewCommunicationHistoryRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PreviewCommunicationHistoryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\PreviewCommunicationHistoryRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -109,7 +109,7 @@ class PreviewCommunicationHistoryRequest extends AbstractStructBase
     /**
      * Set mediator value
      * @param string $mediator
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PreviewCommunicationHistoryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\PreviewCommunicationHistoryRequest
      */
     public function setMediator(?string $mediator = null): self
     {
@@ -132,7 +132,7 @@ class PreviewCommunicationHistoryRequest extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PreviewCommunicationHistoryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\PreviewCommunicationHistoryRequest
      */
     public function setTravelNo(?string $travelNo = null): self
     {

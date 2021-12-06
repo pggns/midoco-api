@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetDeleteReasons4CustomerRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDeleteReasons4CustomerRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDeleteReasons4CustomerRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {

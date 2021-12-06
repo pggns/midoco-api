@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoSupplierDocumentShipping extends SupplierDocumentShippingDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierDocumentShipping
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierDocumentShipping
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {
@@ -70,7 +70,7 @@ class MidocoSupplierDocumentShipping extends SupplierDocumentShippingDTO
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierDocumentShipping
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierDocumentShipping
      */
     public function setOrgunit(?string $orgunit = null): self
     {

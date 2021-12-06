@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class PseudoRevenueBookingInfo extends RevenueBookingInfoType
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPseudoRevenueBookingDetail
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType[]
      */
     protected ?array $MidocoPseudoRevenueBookingDetail = null;
     /**
@@ -28,7 +28,7 @@ class PseudoRevenueBookingInfo extends RevenueBookingInfoType
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: RevenueBookingInfo
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\RevenueBookingInfoType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingInfoType[]
      */
     protected ?array $RevenueBookingInfo = null;
     /**
@@ -41,8 +41,8 @@ class PseudoRevenueBookingInfo extends RevenueBookingInfoType
      * @uses PseudoRevenueBookingInfo::setMidocoPseudoRevenueBookingDetail()
      * @uses PseudoRevenueBookingInfo::setRevenueBookingInfo()
      * @uses PseudoRevenueBookingInfo::setAccount()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType[] $midocoPseudoRevenueBookingDetail
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\RevenueBookingInfoType[] $revenueBookingInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType[] $midocoPseudoRevenueBookingDetail
+     * @param \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingInfoType[] $revenueBookingInfo
      * @param string $account
      */
     public function __construct(?array $midocoPseudoRevenueBookingDetail = null, ?array $revenueBookingInfo = null, ?string $account = null)
@@ -54,7 +54,7 @@ class PseudoRevenueBookingInfo extends RevenueBookingInfoType
     }
     /**
      * Get MidocoPseudoRevenueBookingDetail value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType[]
      */
     public function getMidocoPseudoRevenueBookingDetail(): ?array
     {
@@ -75,12 +75,12 @@ class PseudoRevenueBookingInfo extends RevenueBookingInfoType
         $invalidValues = [];
         foreach ($values as $pseudoRevenueBookingInfoMidocoPseudoRevenueBookingDetailItem) {
             // validation for constraint: itemType
-            if (!$pseudoRevenueBookingInfoMidocoPseudoRevenueBookingDetailItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType) {
+            if (!$pseudoRevenueBookingInfoMidocoPseudoRevenueBookingDetailItem instanceof \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType) {
                 $invalidValues[] = is_object($pseudoRevenueBookingInfoMidocoPseudoRevenueBookingDetailItem) ? get_class($pseudoRevenueBookingInfoMidocoPseudoRevenueBookingDetailItem) : sprintf('%s(%s)', gettype($pseudoRevenueBookingInfoMidocoPseudoRevenueBookingDetailItem), var_export($pseudoRevenueBookingInfoMidocoPseudoRevenueBookingDetailItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPseudoRevenueBookingDetail property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPseudoRevenueBookingDetail property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -89,8 +89,8 @@ class PseudoRevenueBookingInfo extends RevenueBookingInfoType
     /**
      * Set MidocoPseudoRevenueBookingDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType[] $midocoPseudoRevenueBookingDetail
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType[] $midocoPseudoRevenueBookingDetail
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingInfo
      */
     public function setMidocoPseudoRevenueBookingDetail(?array $midocoPseudoRevenueBookingDetail = null): self
     {
@@ -105,14 +105,14 @@ class PseudoRevenueBookingInfo extends RevenueBookingInfoType
     /**
      * Add item to MidocoPseudoRevenueBookingDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingInfo
      */
-    public function addToMidocoPseudoRevenueBookingDetail(\Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType $item): self
+    public function addToMidocoPseudoRevenueBookingDetail(\Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType) {
-            throw new InvalidArgumentException(sprintf('The MidocoPseudoRevenueBookingDetail property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType) {
+            throw new InvalidArgumentException(sprintf('The MidocoPseudoRevenueBookingDetail property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPseudoRevenueBookingDetail[] = $item;
         
@@ -120,7 +120,7 @@ class PseudoRevenueBookingInfo extends RevenueBookingInfoType
     }
     /**
      * Get RevenueBookingInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\RevenueBookingInfoType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingInfoType[]
      */
     public function getRevenueBookingInfo(): ?array
     {
@@ -141,12 +141,12 @@ class PseudoRevenueBookingInfo extends RevenueBookingInfoType
         $invalidValues = [];
         foreach ($values as $pseudoRevenueBookingInfoRevenueBookingInfoItem) {
             // validation for constraint: itemType
-            if (!$pseudoRevenueBookingInfoRevenueBookingInfoItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\RevenueBookingInfoType) {
+            if (!$pseudoRevenueBookingInfoRevenueBookingInfoItem instanceof \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingInfoType) {
                 $invalidValues[] = is_object($pseudoRevenueBookingInfoRevenueBookingInfoItem) ? get_class($pseudoRevenueBookingInfoRevenueBookingInfoItem) : sprintf('%s(%s)', gettype($pseudoRevenueBookingInfoRevenueBookingInfoItem), var_export($pseudoRevenueBookingInfoRevenueBookingInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The RevenueBookingInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\RevenueBookingInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The RevenueBookingInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -155,8 +155,8 @@ class PseudoRevenueBookingInfo extends RevenueBookingInfoType
     /**
      * Set RevenueBookingInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\RevenueBookingInfoType[] $revenueBookingInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingInfoType[] $revenueBookingInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingInfo
      */
     public function setRevenueBookingInfo(?array $revenueBookingInfo = null): self
     {
@@ -171,14 +171,14 @@ class PseudoRevenueBookingInfo extends RevenueBookingInfoType
     /**
      * Add item to RevenueBookingInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\RevenueBookingInfoType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingInfoType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingInfo
      */
-    public function addToRevenueBookingInfo(\Pggns\MidocoApi\Api\Orderlists\StructType\RevenueBookingInfoType $item): self
+    public function addToRevenueBookingInfo(\Pggns\MidocoApi\Orderlists\StructType\RevenueBookingInfoType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\RevenueBookingInfoType) {
-            throw new InvalidArgumentException(sprintf('The RevenueBookingInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\RevenueBookingInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingInfoType) {
+            throw new InvalidArgumentException(sprintf('The RevenueBookingInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->RevenueBookingInfo[] = $item;
         
@@ -195,7 +195,7 @@ class PseudoRevenueBookingInfo extends RevenueBookingInfoType
     /**
      * Set account value
      * @param string $account
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingInfo
      */
     public function setAccount(?string $account = null): self
     {

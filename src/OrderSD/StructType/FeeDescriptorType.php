@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class FeeDescriptorType extends FeeTypeDTO
     /**
      * Set ticketType value
      * @param string $ticketType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeDescriptorType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeDescriptorType
      */
     public function setTicketType(?string $ticketType = null): self
     {
@@ -158,7 +158,7 @@ class FeeDescriptorType extends FeeTypeDTO
     /**
      * Set departureGeographicalCategory value
      * @param string $departureGeographicalCategory
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeDescriptorType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeDescriptorType
      */
     public function setDepartureGeographicalCategory(?string $departureGeographicalCategory = null): self
     {
@@ -181,7 +181,7 @@ class FeeDescriptorType extends FeeTypeDTO
     /**
      * Set feeGroupValue value
      * @param float $feeGroupValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeDescriptorType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeDescriptorType
      */
     public function setFeeGroupValue(?float $feeGroupValue = null): self
     {
@@ -204,7 +204,7 @@ class FeeDescriptorType extends FeeTypeDTO
     /**
      * Set sellItemAttribute value
      * @param string $sellItemAttribute
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeDescriptorType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeDescriptorType
      */
     public function setSellItemAttribute(?string $sellItemAttribute = null): self
     {
@@ -227,7 +227,7 @@ class FeeDescriptorType extends FeeTypeDTO
     /**
      * Set sellItemAttributeValue value
      * @param string $sellItemAttributeValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeDescriptorType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeDescriptorType
      */
     public function setSellItemAttributeValue(?string $sellItemAttributeValue = null): self
     {
@@ -250,7 +250,7 @@ class FeeDescriptorType extends FeeTypeDTO
     /**
      * Set orderAttribute value
      * @param string $orderAttribute
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeDescriptorType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeDescriptorType
      */
     public function setOrderAttribute(?string $orderAttribute = null): self
     {
@@ -273,7 +273,7 @@ class FeeDescriptorType extends FeeTypeDTO
     /**
      * Set orderAttributeValue value
      * @param string $orderAttributeValue
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeDescriptorType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeDescriptorType
      */
     public function setOrderAttributeValue(?string $orderAttributeValue = null): self
     {
@@ -296,7 +296,7 @@ class FeeDescriptorType extends FeeTypeDTO
     /**
      * Set feeGroup value
      * @param string $feeGroup
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeDescriptorType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeDescriptorType
      */
     public function setFeeGroup(?string $feeGroup = null): self
     {
@@ -319,7 +319,7 @@ class FeeDescriptorType extends FeeTypeDTO
     /**
      * Set feeCategory value
      * @param string $feeCategory
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeDescriptorType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeDescriptorType
      */
     public function setFeeCategory(?string $feeCategory = null): self
     {
@@ -342,7 +342,7 @@ class FeeDescriptorType extends FeeTypeDTO
     /**
      * Set feeGroupComment value
      * @param string $feeGroupComment
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeDescriptorType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeDescriptorType
      */
     public function setFeeGroupComment(?string $feeGroupComment = null): self
     {
@@ -365,7 +365,7 @@ class FeeDescriptorType extends FeeTypeDTO
     /**
      * Set feePriority value
      * @param int $feePriority
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeDescriptorType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeDescriptorType
      */
     public function setFeePriority(?int $feePriority = null): self
     {
@@ -388,7 +388,7 @@ class FeeDescriptorType extends FeeTypeDTO
     /**
      * Set feeAssignId value
      * @param string $feeAssignId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeDescriptorType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeDescriptorType
      */
     public function setFeeAssignId(?string $feeAssignId = null): self
     {
@@ -411,7 +411,7 @@ class FeeDescriptorType extends FeeTypeDTO
     /**
      * Set geographicalCategory value
      * @param string $geographicalCategory
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeDescriptorType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeDescriptorType
      */
     public function setGeographicalCategory(?string $geographicalCategory = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetSupplierVatSchemasRequest extends AbstractStructBase
      * The MidocoSupplierVatSchema
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierVatSchema
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierVatSchemaDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\SupplierVatSchemaDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\SupplierVatSchemaDTO $MidocoSupplierVatSchema = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\SupplierVatSchemaDTO $MidocoSupplierVatSchema = null;
     /**
      * Constructor method for GetSupplierVatSchemasRequest
      * @uses GetSupplierVatSchemasRequest::setMidocoSupplierVatSchema()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierVatSchemaDTO $midocoSupplierVatSchema
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SupplierVatSchemaDTO $midocoSupplierVatSchema
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\SupplierVatSchemaDTO $midocoSupplierVatSchema = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\SupplierVatSchemaDTO $midocoSupplierVatSchema = null)
     {
         $this
             ->setMidocoSupplierVatSchema($midocoSupplierVatSchema);
     }
     /**
      * Get MidocoSupplierVatSchema value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierVatSchemaDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierVatSchemaDTO|null
      */
-    public function getMidocoSupplierVatSchema(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\SupplierVatSchemaDTO
+    public function getMidocoSupplierVatSchema(): ?\Pggns\MidocoApi\Orderlists\StructType\SupplierVatSchemaDTO
     {
         return $this->MidocoSupplierVatSchema;
     }
     /**
      * Set MidocoSupplierVatSchema value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierVatSchemaDTO $midocoSupplierVatSchema
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSupplierVatSchemasRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SupplierVatSchemaDTO $midocoSupplierVatSchema
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSupplierVatSchemasRequest
      */
-    public function setMidocoSupplierVatSchema(?\Pggns\MidocoApi\Api\Orderlists\StructType\SupplierVatSchemaDTO $midocoSupplierVatSchema = null): self
+    public function setMidocoSupplierVatSchema(?\Pggns\MidocoApi\Orderlists\StructType\SupplierVatSchemaDTO $midocoSupplierVatSchema = null): self
     {
         $this->MidocoSupplierVatSchema = $midocoSupplierVatSchema;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoAirportFullDescription extends AirportDTO
     /**
      * Set localizedDescription value
      * @param string $localizedDescription
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescription
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAirportFullDescription
      */
     public function setLocalizedDescription(?string $localizedDescription = null): self
     {
@@ -70,7 +70,7 @@ class MidocoAirportFullDescription extends AirportDTO
     /**
      * Set isEUCountry value
      * @param bool $isEUCountry
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescription
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAirportFullDescription
      */
     public function setIsEUCountry(?bool $isEUCountry = null): self
     {

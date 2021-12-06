@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoCustomerInvoice extends CrmCustomerBillingDTO
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInvoice
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInvoice
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -102,7 +102,7 @@ class MidocoCustomerInvoice extends CrmCustomerBillingDTO
     /**
      * Set documentRefNo value
      * @param int $documentRefNo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInvoice
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInvoice
      */
     public function setDocumentRefNo(?int $documentRefNo = null): self
     {
@@ -125,7 +125,7 @@ class MidocoCustomerInvoice extends CrmCustomerBillingDTO
     /**
      * Set noOfPositions value
      * @param int $noOfPositions
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInvoice
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInvoice
      */
     public function setNoOfPositions(?int $noOfPositions = null): self
     {
@@ -148,7 +148,7 @@ class MidocoCustomerInvoice extends CrmCustomerBillingDTO
     /**
      * Set invoicedAmount value
      * @param float $invoicedAmount
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInvoice
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInvoice
      */
     public function setInvoicedAmount(?float $invoicedAmount = null): self
     {
@@ -171,7 +171,7 @@ class MidocoCustomerInvoice extends CrmCustomerBillingDTO
     /**
      * Set calculatedPrintDate value
      * @param string $calculatedPrintDate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInvoice
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInvoice
      */
     public function setCalculatedPrintDate(?string $calculatedPrintDate = null): self
     {
@@ -194,7 +194,7 @@ class MidocoCustomerInvoice extends CrmCustomerBillingDTO
     /**
      * Set deliveryReceipt value
      * @param bool $deliveryReceipt
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerInvoice
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInvoice
      */
     public function setDeliveryReceipt(?bool $deliveryReceipt = null): self
     {

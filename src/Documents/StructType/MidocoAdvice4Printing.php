@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoAdvice4Printing extends AdviceSettlementDTO
     /**
      * Set sumSupplierInvoice value
      * @param float $sumSupplierInvoice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdvice4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdvice4Printing
      */
     public function setSumSupplierInvoice(?float $sumSupplierInvoice = null): self
     {
@@ -102,7 +102,7 @@ class MidocoAdvice4Printing extends AdviceSettlementDTO
     /**
      * Set sumVatIncl value
      * @param float $sumVatIncl
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdvice4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdvice4Printing
      */
     public function setSumVatIncl(?float $sumVatIncl = null): self
     {
@@ -125,7 +125,7 @@ class MidocoAdvice4Printing extends AdviceSettlementDTO
     /**
      * Set sumVatFree value
      * @param float $sumVatFree
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdvice4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdvice4Printing
      */
     public function setSumVatFree(?float $sumVatFree = null): self
     {
@@ -148,7 +148,7 @@ class MidocoAdvice4Printing extends AdviceSettlementDTO
     /**
      * Set sumVat value
      * @param float $sumVat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdvice4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdvice4Printing
      */
     public function setSumVat(?float $sumVat = null): self
     {
@@ -171,7 +171,7 @@ class MidocoAdvice4Printing extends AdviceSettlementDTO
     /**
      * Set sumTotal value
      * @param float $sumTotal
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdvice4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdvice4Printing
      */
     public function setSumTotal(?float $sumTotal = null): self
     {
@@ -194,7 +194,7 @@ class MidocoAdvice4Printing extends AdviceSettlementDTO
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdvice4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdvice4Printing
      */
     public function setCurrency(?string $currency = null): self
     {

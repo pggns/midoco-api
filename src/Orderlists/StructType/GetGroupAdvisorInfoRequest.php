@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -77,7 +77,7 @@ class GetGroupAdvisorInfoRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param int $mediatorId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetGroupAdvisorInfoRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetGroupAdvisorInfoRequest
      */
     public function setMediatorId(?int $mediatorId = null): self
     {
@@ -100,7 +100,7 @@ class GetGroupAdvisorInfoRequest extends AbstractStructBase
     /**
      * Set travelStart value
      * @param string $travelStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetGroupAdvisorInfoRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetGroupAdvisorInfoRequest
      */
     public function setTravelStart(?string $travelStart = null): self
     {
@@ -123,7 +123,7 @@ class GetGroupAdvisorInfoRequest extends AbstractStructBase
     /**
      * Set travelEnd value
      * @param string $travelEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetGroupAdvisorInfoRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetGroupAdvisorInfoRequest
      */
     public function setTravelEnd(?string $travelEnd = null): self
     {
@@ -146,7 +146,7 @@ class GetGroupAdvisorInfoRequest extends AbstractStructBase
     /**
      * Set createdStart value
      * @param string $createdStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetGroupAdvisorInfoRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetGroupAdvisorInfoRequest
      */
     public function setCreatedStart(?string $createdStart = null): self
     {
@@ -169,7 +169,7 @@ class GetGroupAdvisorInfoRequest extends AbstractStructBase
     /**
      * Set createdEnd value
      * @param string $createdEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetGroupAdvisorInfoRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetGroupAdvisorInfoRequest
      */
     public function setCreatedEnd(?string $createdEnd = null): self
     {

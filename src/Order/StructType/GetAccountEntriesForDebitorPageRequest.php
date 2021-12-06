@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetAccountEntriesForDebitorPageRequest extends AbstractStructBase
     /**
      * Set cacheId value
      * @param int $cacheId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorPageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorPageRequest
      */
     public function setCacheId(?int $cacheId = null): self
     {
@@ -70,7 +70,7 @@ class GetAccountEntriesForDebitorPageRequest extends AbstractStructBase
     /**
      * Set pageNo value
      * @param int $pageNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForDebitorPageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorPageRequest
      */
     public function setPageNo(?int $pageNo = null): self
     {

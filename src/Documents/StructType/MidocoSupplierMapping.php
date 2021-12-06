@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoSupplierMapping extends SupplierMappingDTO
     /**
      * Set isInherit value
      * @param bool $isInherit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierMapping
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierMapping
      */
     public function setIsInherit(?bool $isInherit = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class BillingAttributeDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAttributeDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -150,7 +150,7 @@ class BillingAttributeDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAttributeDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -173,7 +173,7 @@ class BillingAttributeDTO extends AbstractStructBase
     /**
      * Set orderDate value
      * @param string $orderDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAttributeDTO
      */
     public function setOrderDate(?string $orderDate = null): self
     {
@@ -196,7 +196,7 @@ class BillingAttributeDTO extends AbstractStructBase
     /**
      * Set ordererId value
      * @param int $ordererId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAttributeDTO
      */
     public function setOrdererId(?int $ordererId = null): self
     {
@@ -219,7 +219,7 @@ class BillingAttributeDTO extends AbstractStructBase
     /**
      * Set ordererName value
      * @param string $ordererName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAttributeDTO
      */
     public function setOrdererName(?string $ordererName = null): self
     {
@@ -242,7 +242,7 @@ class BillingAttributeDTO extends AbstractStructBase
     /**
      * Set personalNo value
      * @param string $personalNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAttributeDTO
      */
     public function setPersonalNo(?string $personalNo = null): self
     {
@@ -265,7 +265,7 @@ class BillingAttributeDTO extends AbstractStructBase
     /**
      * Set projectNo value
      * @param string $projectNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAttributeDTO
      */
     public function setProjectNo(?string $projectNo = null): self
     {
@@ -288,7 +288,7 @@ class BillingAttributeDTO extends AbstractStructBase
     /**
      * Set remark1 value
      * @param string $remark1
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAttributeDTO
      */
     public function setRemark1(?string $remark1 = null): self
     {
@@ -311,7 +311,7 @@ class BillingAttributeDTO extends AbstractStructBase
     /**
      * Set remark2 value
      * @param string $remark2
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAttributeDTO
      */
     public function setRemark2(?string $remark2 = null): self
     {
@@ -334,7 +334,7 @@ class BillingAttributeDTO extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAttributeDTO
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -357,7 +357,7 @@ class BillingAttributeDTO extends AbstractStructBase
     /**
      * Set travellerId value
      * @param int $travellerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAttributeDTO
      */
     public function setTravellerId(?int $travellerId = null): self
     {
@@ -380,7 +380,7 @@ class BillingAttributeDTO extends AbstractStructBase
     /**
      * Set travellerName value
      * @param string $travellerName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingAttributeDTO
      */
     public function setTravellerName(?string $travellerName = null): self
     {

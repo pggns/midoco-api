@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\ServiceType;
+namespace Pggns\MidocoApi\System\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Modify extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\System\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\System\ServiceType\Modify
+     * @return \Pggns\MidocoApi\System\ServiceType\Modify
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\System\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Modify extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\System\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\System\StructType\ModifyTssClientRequest $paramModifyTssClientRequest
-     * @return \Pggns\MidocoApi\Api\System\StructType\ModifyTssClientResponse|bool
+     * @param \Pggns\MidocoApi\System\StructType\ModifyTssClientRequest $paramModifyTssClientRequest
+     * @return \Pggns\MidocoApi\System\StructType\ModifyTssClientResponse|bool
      */
-    public function modifyTssClient(\Pggns\MidocoApi\Api\System\StructType\ModifyTssClientRequest $paramModifyTssClientRequest)
+    public function modifyTssClient(\Pggns\MidocoApi\System\StructType\ModifyTssClientRequest $paramModifyTssClientRequest)
     {
         try {
             $this->setResult($resultModifyTssClient = $this->getSoapClient()->__soapCall('modifyTssClient', [
@@ -56,7 +56,7 @@ class Modify extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\System\StructType\ModifyTssClientResponse
+     * @return \Pggns\MidocoApi\System\StructType\ModifyTssClientResponse
      */
     public function getResult()
     {

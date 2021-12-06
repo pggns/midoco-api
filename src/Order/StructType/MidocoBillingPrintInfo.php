@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -50,7 +50,7 @@ class MidocoBillingPrintInfo extends AbstractStructBase
     /**
      * Set printDate value
      * @param string $printDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPrintInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPrintInfo
      */
     public function setPrintDate(?string $printDate = null): self
     {
@@ -77,7 +77,7 @@ class MidocoBillingPrintInfo extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPrintInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPrintInfo
      */
     public function setAmount(?float $amount = null): self
     {

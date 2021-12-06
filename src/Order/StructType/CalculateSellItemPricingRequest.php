@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,25 +18,25 @@ class CalculateSellItemPricingRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoSellItemPricing
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing $MidocoSellItemPricing = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing $MidocoSellItemPricing = null;
     /**
      * The MidocoSellItem
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoSellItem
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $MidocoSellItem = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemType $MidocoSellItem = null;
     /**
      * Constructor method for CalculateSellItemPricingRequest
      * @uses CalculateSellItemPricingRequest::setMidocoSellItemPricing()
      * @uses CalculateSellItemPricingRequest::setMidocoSellItem()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $midocoSellItem
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemType $midocoSellItem
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $midocoSellItem = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing = null, ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemType $midocoSellItem = null)
     {
         $this
             ->setMidocoSellItemPricing($midocoSellItemPricing)
@@ -44,18 +44,18 @@ class CalculateSellItemPricingRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSellItemPricing value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing|null
      */
-    public function getMidocoSellItemPricing(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing
+    public function getMidocoSellItemPricing(): ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing
     {
         return $this->MidocoSellItemPricing;
     }
     /**
      * Set MidocoSellItemPricing value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateSellItemPricingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateSellItemPricingRequest
      */
-    public function setMidocoSellItemPricing(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing = null): self
+    public function setMidocoSellItemPricing(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing = null): self
     {
         $this->MidocoSellItemPricing = $midocoSellItemPricing;
         
@@ -63,18 +63,18 @@ class CalculateSellItemPricingRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSellItem value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemType|null
      */
-    public function getMidocoSellItem(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType
+    public function getMidocoSellItem(): ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemType
     {
         return $this->MidocoSellItem;
     }
     /**
      * Set MidocoSellItem value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $midocoSellItem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateSellItemPricingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemType $midocoSellItem
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateSellItemPricingRequest
      */
-    public function setMidocoSellItem(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemType $midocoSellItem = null): self
+    public function setMidocoSellItem(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemType $midocoSellItem = null): self
     {
         $this->MidocoSellItem = $midocoSellItem;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -98,7 +98,7 @@ class AdditionalBillingInfo extends AbstractStructBase
      * Set TravelerRefId value
      * @throws InvalidArgumentException
      * @param int[] $travelerRefId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo
+     * @return \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo
      */
     public function setTravelerRefId(?array $travelerRefId = null): self
     {
@@ -114,7 +114,7 @@ class AdditionalBillingInfo extends AbstractStructBase
      * Add item to TravelerRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo
+     * @return \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo
      */
     public function addToTravelerRefId(int $item): self
     {
@@ -164,7 +164,7 @@ class AdditionalBillingInfo extends AbstractStructBase
      * Set BookingPositionRefId value
      * @throws InvalidArgumentException
      * @param int[] $bookingPositionRefId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo
+     * @return \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo
      */
     public function setBookingPositionRefId(?array $bookingPositionRefId = null): self
     {
@@ -180,7 +180,7 @@ class AdditionalBillingInfo extends AbstractStructBase
      * Add item to BookingPositionRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo
+     * @return \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo
      */
     public function addToBookingPositionRefId(int $item): self
     {
@@ -202,17 +202,17 @@ class AdditionalBillingInfo extends AbstractStructBase
     }
     /**
      * Set name value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\AdditionalBillingInfoNameType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\AdditionalBillingInfoNameType::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\AdditionalBillingInfoNameType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\AdditionalBillingInfoNameType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo
+     * @return \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo
      */
     public function setName(?string $name = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\AdditionalBillingInfoNameType::valueIsValid($name)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\AdditionalBillingInfoNameType', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\AdditionalBillingInfoNameType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\AdditionalBillingInfoNameType::valueIsValid($name)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\AdditionalBillingInfoNameType', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\AdditionalBillingInfoNameType::getValidValues())), __LINE__);
         }
         $this->name = $name;
         
@@ -229,7 +229,7 @@ class AdditionalBillingInfo extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo
+     * @return \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo
      */
     public function setValue(?string $value = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class OrderLayoutOrgunitDTO extends AbstractStructBase
     /**
      * Set asNeighbor value
      * @param bool $asNeighbor
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderLayoutOrgunitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderLayoutOrgunitDTO
      */
     public function setAsNeighbor(?bool $asNeighbor = null): self
     {
@@ -78,7 +78,7 @@ class OrderLayoutOrgunitDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderLayoutOrgunitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderLayoutOrgunitDTO
      */
     public function setId(?int $id = null): self
     {
@@ -101,7 +101,7 @@ class OrderLayoutOrgunitDTO extends AbstractStructBase
     /**
      * Set notAllowedUnit value
      * @param string $notAllowedUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderLayoutOrgunitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderLayoutOrgunitDTO
      */
     public function setNotAllowedUnit(?string $notAllowedUnit = null): self
     {

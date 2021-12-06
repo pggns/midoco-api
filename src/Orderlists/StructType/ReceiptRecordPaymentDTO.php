@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class ReceiptRecordPaymentDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordPaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordPaymentDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -94,7 +94,7 @@ class ReceiptRecordPaymentDTO extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordPaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordPaymentDTO
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -117,7 +117,7 @@ class ReceiptRecordPaymentDTO extends AbstractStructBase
     /**
      * Set paidAmountLocalCurrency value
      * @param float $paidAmountLocalCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordPaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordPaymentDTO
      */
     public function setPaidAmountLocalCurrency(?float $paidAmountLocalCurrency = null): self
     {
@@ -140,7 +140,7 @@ class ReceiptRecordPaymentDTO extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordPaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordPaymentDTO
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -163,7 +163,7 @@ class ReceiptRecordPaymentDTO extends AbstractStructBase
     /**
      * Set receiptRecordId value
      * @param int $receiptRecordId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptRecordPaymentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptRecordPaymentDTO
      */
     public function setReceiptRecordId(?int $receiptRecordId = null): self
     {

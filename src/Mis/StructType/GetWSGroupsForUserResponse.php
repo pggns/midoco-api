@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetWSGroupsForUserResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoWsGroup
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\WsgroupDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\WsgroupDTO[]
      */
     protected ?array $MidocoWsGroup = null;
     /**
      * Constructor method for GetWSGroupsForUserResponse
      * @uses GetWSGroupsForUserResponse::setMidocoWsGroup()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\WsgroupDTO[] $midocoWsGroup
+     * @param \Pggns\MidocoApi\Mis\StructType\WsgroupDTO[] $midocoWsGroup
      */
     public function __construct(?array $midocoWsGroup = null)
     {
@@ -34,7 +34,7 @@ class GetWSGroupsForUserResponse extends AbstractStructBase
     }
     /**
      * Get MidocoWsGroup value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\WsgroupDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\WsgroupDTO[]
      */
     public function getMidocoWsGroup(): ?array
     {
@@ -55,12 +55,12 @@ class GetWSGroupsForUserResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getWSGroupsForUserResponseMidocoWsGroupItem) {
             // validation for constraint: itemType
-            if (!$getWSGroupsForUserResponseMidocoWsGroupItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\WsgroupDTO) {
+            if (!$getWSGroupsForUserResponseMidocoWsGroupItem instanceof \Pggns\MidocoApi\Mis\StructType\WsgroupDTO) {
                 $invalidValues[] = is_object($getWSGroupsForUserResponseMidocoWsGroupItem) ? get_class($getWSGroupsForUserResponseMidocoWsGroupItem) : sprintf('%s(%s)', gettype($getWSGroupsForUserResponseMidocoWsGroupItem), var_export($getWSGroupsForUserResponseMidocoWsGroupItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoWsGroup property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\WsgroupDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoWsGroup property can only contain items of type \Pggns\MidocoApi\Mis\StructType\WsgroupDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetWSGroupsForUserResponse extends AbstractStructBase
     /**
      * Set MidocoWsGroup value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\WsgroupDTO[] $midocoWsGroup
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetWSGroupsForUserResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\WsgroupDTO[] $midocoWsGroup
+     * @return \Pggns\MidocoApi\Mis\StructType\GetWSGroupsForUserResponse
      */
     public function setMidocoWsGroup(?array $midocoWsGroup = null): self
     {
@@ -85,14 +85,14 @@ class GetWSGroupsForUserResponse extends AbstractStructBase
     /**
      * Add item to MidocoWsGroup value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\WsgroupDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetWSGroupsForUserResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\WsgroupDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetWSGroupsForUserResponse
      */
-    public function addToMidocoWsGroup(\Pggns\MidocoApi\Api\Mis\StructType\WsgroupDTO $item): self
+    public function addToMidocoWsGroup(\Pggns\MidocoApi\Mis\StructType\WsgroupDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\WsgroupDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoWsGroup property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\WsgroupDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\WsgroupDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoWsGroup property can only contain items of type \Pggns\MidocoApi\Mis\StructType\WsgroupDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoWsGroup[] = $item;
         

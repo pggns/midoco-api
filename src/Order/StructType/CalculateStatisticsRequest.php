@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class CalculateStatisticsRequest extends AbstractStructBase
      * Set itemId value
      * @throws InvalidArgumentException
      * @param int[] $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateStatisticsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateStatisticsRequest
      */
     public function setItemId(?array $itemId = null): self
     {
@@ -85,7 +85,7 @@ class CalculateStatisticsRequest extends AbstractStructBase
      * Add item to itemId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateStatisticsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateStatisticsRequest
      */
     public function addToItemId(int $item): self
     {

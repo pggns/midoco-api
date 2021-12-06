@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class PushBackSequenceValueRequest extends AbstractStructBase
     /**
      * Set sequenceId value
      * @param int $sequenceId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PushBackSequenceValueRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\PushBackSequenceValueRequest
      */
     public function setSequenceId(?int $sequenceId = null): self
     {
@@ -70,7 +70,7 @@ class PushBackSequenceValueRequest extends AbstractStructBase
     /**
      * Set value value
      * @param int $value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PushBackSequenceValueRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\PushBackSequenceValueRequest
      */
     public function setValue(?int $value = null): self
     {

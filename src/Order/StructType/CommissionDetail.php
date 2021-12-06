@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -91,7 +91,7 @@ class CommissionDetail extends AbstractStructBase
     /**
      * Set orderNo value
      * @param string $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommissionDetail
+     * @return \Pggns\MidocoApi\Order\StructType\CommissionDetail
      */
     public function setOrderNo(string $orderNo): self
     {
@@ -114,7 +114,7 @@ class CommissionDetail extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommissionDetail
+     * @return \Pggns\MidocoApi\Order\StructType\CommissionDetail
      */
     public function setCustomerName(string $customerName): self
     {
@@ -137,7 +137,7 @@ class CommissionDetail extends AbstractStructBase
     /**
      * Set travelPrice value
      * @param float $travelPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommissionDetail
+     * @return \Pggns\MidocoApi\Order\StructType\CommissionDetail
      */
     public function setTravelPrice(?float $travelPrice = null): self
     {
@@ -160,7 +160,7 @@ class CommissionDetail extends AbstractStructBase
     /**
      * Set calculatedCommission value
      * @param float $calculatedCommission
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommissionDetail
+     * @return \Pggns\MidocoApi\Order\StructType\CommissionDetail
      */
     public function setCalculatedCommission(?float $calculatedCommission = null): self
     {
@@ -183,7 +183,7 @@ class CommissionDetail extends AbstractStructBase
     /**
      * Set payedCommission value
      * @param float $payedCommission
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommissionDetail
+     * @return \Pggns\MidocoApi\Order\StructType\CommissionDetail
      */
     public function setPayedCommission(?float $payedCommission = null): self
     {
@@ -206,7 +206,7 @@ class CommissionDetail extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommissionDetail
+     * @return \Pggns\MidocoApi\Order\StructType\CommissionDetail
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -229,7 +229,7 @@ class CommissionDetail extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommissionDetail
+     * @return \Pggns\MidocoApi\Order\StructType\CommissionDetail
      */
     public function setCreationDate(?string $creationDate = null): self
     {

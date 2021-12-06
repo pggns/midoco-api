@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class BillingPositionDbiInfoDTO extends AbstractStructBase
     /**
      * Set dbiInfo value
      * @param string $dbiInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionDbiInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionDbiInfoDTO
      */
     public function setDbiInfo(?string $dbiInfo = null): self
     {
@@ -94,7 +94,7 @@ class BillingPositionDbiInfoDTO extends AbstractStructBase
     /**
      * Set dbiKey value
      * @param string $dbiKey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionDbiInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionDbiInfoDTO
      */
     public function setDbiKey(?string $dbiKey = null): self
     {
@@ -117,7 +117,7 @@ class BillingPositionDbiInfoDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionDbiInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionDbiInfoDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -140,7 +140,7 @@ class BillingPositionDbiInfoDTO extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionDbiInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionDbiInfoDTO
      */
     public function setPositionId(?int $positionId = null): self
     {
@@ -163,7 +163,7 @@ class BillingPositionDbiInfoDTO extends AbstractStructBase
     /**
      * Set printingLabel value
      * @param string $printingLabel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPositionDbiInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPositionDbiInfoDTO
      */
     public function setPrintingLabel(?string $printingLabel = null): self
     {

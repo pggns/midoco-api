@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -341,7 +341,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAccomodationDetailsInfo4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing[]
      */
     protected ?array $MidocoAccomodationDetailsInfo4Printing = null;
     /**
@@ -349,7 +349,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\CarDetailDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\CarDetailDTO[]
      */
     protected ?array $MidocoCarDetailInfo4Printing = null;
     /**
@@ -358,7 +358,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoFlightDetailsInfo4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetailsInfo4Printing[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetailsInfo4Printing[]
      */
     protected ?array $MidocoFlightDetailsInfo4Printing = null;
     /**
@@ -366,7 +366,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\InsuranceDetailDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\InsuranceDetailDTO[]
      */
     protected ?array $MidocoInsuranceDetailInfo4Printing = null;
     /**
@@ -375,7 +375,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTravelDetailsInfo4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDetailDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\TravelDetailDTO[]
      */
     protected ?array $MidocoTravelDetailsInfo4Printing = null;
     /**
@@ -384,7 +384,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCalcItemDetailsInfo4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing[]
      */
     protected ?array $MidocoCalcItemDetailsInfo4Printing = null;
     /**
@@ -393,7 +393,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPassengerInfo4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPassengerInfo4Printing[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoPassengerInfo4Printing[]
      */
     protected ?array $MidocoPassengerInfo4Printing = null;
     /**
@@ -402,7 +402,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCruiseDetailsInfo4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing[]
      */
     protected ?array $MidocoCruiseDetailsInfo4Printing = null;
     /**
@@ -411,7 +411,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAttributeValue4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAttributeValue4Printing[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoAttributeValue4Printing[]
      */
     protected ?array $MidocoAttributeValue4Printing = null;
     /**
@@ -419,7 +419,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[]
      */
     protected ?array $MidocoRemarks = null;
     /**
@@ -427,7 +427,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[]
      */
     protected ?array $MidocoRemarksAbove = null;
     /**
@@ -435,7 +435,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[]
      */
     protected ?array $MidocoRemarksAfterService = null;
     /**
@@ -443,7 +443,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[]
      */
     protected ?array $MidocoRemarksEnd = null;
     /**
@@ -452,7 +452,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoHint
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHintType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoHintType[]
      */
     protected ?array $MidocoHint = null;
     /**
@@ -461,7 +461,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBusDetailsInfo4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBusDetailsInfo4Printing[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBusDetailsInfo4Printing[]
      */
     protected ?array $MidocoBusDetailsInfo4Printing = null;
     /**
@@ -470,7 +470,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoRailDetailsInfo4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRailDetailsInfo4Printing[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoRailDetailsInfo4Printing[]
      */
     protected ?array $MidocoRailDetailsInfo4Printing = null;
     /**
@@ -479,7 +479,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPackageDetailsInfo4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4Printing[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4Printing[]
      */
     protected ?array $MidocoPackageDetailsInfo4Printing = null;
     /**
@@ -488,7 +488,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAdditionalService
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalService[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalService[]
      */
     protected ?array $MidocoAdditionalService = null;
     /**
@@ -497,7 +497,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoEventDetailsInfo4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoEventDetailsInfo4Printing[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoEventDetailsInfo4Printing[]
      */
     protected ?array $MidocoEventDetailsInfo4Printing = null;
     /**
@@ -506,7 +506,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDocumentitem4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentitem4Printing[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentitem4Printing[]
      */
     protected ?array $MidocoDocumentitem4Printing = null;
     /**
@@ -515,7 +515,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTransferDetailsInfo4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferDetailsInfo4Printing[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferDetailsInfo4Printing[]
      */
     protected ?array $MidocoTransferDetailsInfo4Printing = null;
     /**
@@ -524,7 +524,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellDetailsPrice
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellDetailsPrice[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSellDetailsPrice[]
      */
     protected ?array $MidocoSellDetailsPrice = null;
     /**
@@ -532,24 +532,24 @@ class MidocoSellItemDetails extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: ordersd:MidocoSupplier
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType $MidocoSupplier = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType $MidocoSupplier = null;
     /**
      * The MidocoSupplierAddress
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: ordersd:MidocoSupplierAddress
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress $MidocoSupplierAddress = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress $MidocoSupplierAddress = null;
     /**
      * The MidocoSupplierTemplate
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: ordersd:MidocoSupplierTemplate
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierTemplateDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\SupplierTemplateDTO[]
      */
     protected ?array $MidocoSupplierTemplate = null;
     /**
@@ -643,9 +643,9 @@ class MidocoSellItemDetails extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: ordersd:MidocoTravelNumber
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber $MidocoTravelNumber = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber $MidocoTravelNumber = null;
     /**
      * Constructor method for MidocoSellItemDetails
      * @uses MidocoSellItemDetails::setItemId()
@@ -800,31 +800,31 @@ class MidocoSellItemDetails extends AbstractStructBase
      * @param string $productType
      * @param string $bookingReference
      * @param string $articleType
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing[] $midocoAccomodationDetailsInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CarDetailDTO[] $midocoCarDetailInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetailsInfo4Printing[] $midocoFlightDetailsInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\InsuranceDetailDTO[] $midocoInsuranceDetailInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDetailDTO[] $midocoTravelDetailsInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing[] $midocoCalcItemDetailsInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPassengerInfo4Printing[] $midocoPassengerInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing[] $midocoCruiseDetailsInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAttributeValue4Printing[] $midocoAttributeValue4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[] $midocoRemarks
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[] $midocoRemarksAbove
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[] $midocoRemarksAfterService
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[] $midocoRemarksEnd
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHintType[] $midocoHint
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBusDetailsInfo4Printing[] $midocoBusDetailsInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRailDetailsInfo4Printing[] $midocoRailDetailsInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4Printing[] $midocoPackageDetailsInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalService[] $midocoAdditionalService
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoEventDetailsInfo4Printing[] $midocoEventDetailsInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentitem4Printing[] $midocoDocumentitem4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferDetailsInfo4Printing[] $midocoTransferDetailsInfo4Printing
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellDetailsPrice[] $midocoSellDetailsPrice
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType $midocoSupplier
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress $midocoSupplierAddress
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierTemplateDTO[] $midocoSupplierTemplate
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing[] $midocoAccomodationDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CarDetailDTO[] $midocoCarDetailInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetailsInfo4Printing[] $midocoFlightDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\InsuranceDetailDTO[] $midocoInsuranceDetailInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\TravelDetailDTO[] $midocoTravelDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing[] $midocoCalcItemDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoPassengerInfo4Printing[] $midocoPassengerInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing[] $midocoCruiseDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAttributeValue4Printing[] $midocoAttributeValue4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[] $midocoRemarks
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[] $midocoRemarksAbove
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[] $midocoRemarksAfterService
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[] $midocoRemarksEnd
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoHintType[] $midocoHint
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBusDetailsInfo4Printing[] $midocoBusDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRailDetailsInfo4Printing[] $midocoRailDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4Printing[] $midocoPackageDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalService[] $midocoAdditionalService
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoEventDetailsInfo4Printing[] $midocoEventDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentitem4Printing[] $midocoDocumentitem4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferDetailsInfo4Printing[] $midocoTransferDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSellDetailsPrice[] $midocoSellDetailsPrice
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType $midocoSupplier
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress $midocoSupplierAddress
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SupplierTemplateDTO[] $midocoSupplierTemplate
      * @param string[] $touchedCountry
      * @param string $travelTypeDescription
      * @param bool $immediatePayment
@@ -837,9 +837,9 @@ class MidocoSellItemDetails extends AbstractStructBase
      * @param int $sellingMode
      * @param string $transfer
      * @param string $noOfNights
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber
      */
-    public function __construct(?int $itemId = null, ?string $itemType = null, ?string $originalBookingId = null, ?string $supplierId = null, ?string $supplierName = null, ?string $travelType = null, ?string $startTravel = null, ?string $endTravel = null, ?string $accountId = null, ?string $areaDescription = null, ?string $departureCode = null, ?string $departureDescription = null, ?string $destinationCode = null, ?string $destinationDescription = null, ?string $accomodationCode = null, ?string $accomodationDescription = null, ?string $cruiseCode = null, ?string $cruiseDescription = null, ?string $itemDescription = null, ?string $cateringDescription = null, ?string $roomDescription = null, ?string $itemReferenceNo = null, ?string $insuranceDescription = null, ?string $status = null, ?bool $isStorno = null, ?string $stornoDate = null, ?string $bookingDate = null, ?string $creationUser = null, ?string $creationDate = null, ?string $carrier = null, ?string $carrierName = null, ?string $flightNo = null, ?string $departureTime = null, ?string $arrivalTime = null, ?string $days = null, ?string $returnDepartureCode = null, ?string $returnDepartureDescription = null, ?string $returnDestinationCode = null, ?string $returnDestinationDescription = null, ?string $returnCarrier = null, ?string $returnCarrierName = null, ?string $returnFlightNo = null, ?string $returnDepartureTime = null, ?string $returnArrivalTime = null, ?string $returnDays = null, ?bool $preventPrinting = false, ?string $extId = null, ?string $extSystem = null, ?string $locationDescription = null, ?float $depositAmount = null, ?string $depositPaymentType = null, ?string $finalPaymentType = null, ?bool $isOneWay = null, ?string $feeCode = null, ?string $productType = null, ?string $bookingReference = null, ?string $articleType = null, ?array $midocoAccomodationDetailsInfo4Printing = null, ?array $midocoCarDetailInfo4Printing = null, ?array $midocoFlightDetailsInfo4Printing = null, ?array $midocoInsuranceDetailInfo4Printing = null, ?array $midocoTravelDetailsInfo4Printing = null, ?array $midocoCalcItemDetailsInfo4Printing = null, ?array $midocoPassengerInfo4Printing = null, ?array $midocoCruiseDetailsInfo4Printing = null, ?array $midocoAttributeValue4Printing = null, ?array $midocoRemarks = null, ?array $midocoRemarksAbove = null, ?array $midocoRemarksAfterService = null, ?array $midocoRemarksEnd = null, ?array $midocoHint = null, ?array $midocoBusDetailsInfo4Printing = null, ?array $midocoRailDetailsInfo4Printing = null, ?array $midocoPackageDetailsInfo4Printing = null, ?array $midocoAdditionalService = null, ?array $midocoEventDetailsInfo4Printing = null, ?array $midocoDocumentitem4Printing = null, ?array $midocoTransferDetailsInfo4Printing = null, ?array $midocoSellDetailsPrice = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType $midocoSupplier = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress $midocoSupplierAddress = null, ?array $midocoSupplierTemplate = null, ?array $touchedCountry = null, ?string $travelTypeDescription = null, ?bool $immediatePayment = false, ?string $forCustomer = null, ?string $fromCustomer = null, ?int $voucherQuantity = null, ?float $voucherSinglePrice = null, ?float $revenuePercent = null, ?string $confirmationGroup = null, ?int $sellingMode = null, ?string $transfer = null, ?string $noOfNights = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber = null)
+    public function __construct(?int $itemId = null, ?string $itemType = null, ?string $originalBookingId = null, ?string $supplierId = null, ?string $supplierName = null, ?string $travelType = null, ?string $startTravel = null, ?string $endTravel = null, ?string $accountId = null, ?string $areaDescription = null, ?string $departureCode = null, ?string $departureDescription = null, ?string $destinationCode = null, ?string $destinationDescription = null, ?string $accomodationCode = null, ?string $accomodationDescription = null, ?string $cruiseCode = null, ?string $cruiseDescription = null, ?string $itemDescription = null, ?string $cateringDescription = null, ?string $roomDescription = null, ?string $itemReferenceNo = null, ?string $insuranceDescription = null, ?string $status = null, ?bool $isStorno = null, ?string $stornoDate = null, ?string $bookingDate = null, ?string $creationUser = null, ?string $creationDate = null, ?string $carrier = null, ?string $carrierName = null, ?string $flightNo = null, ?string $departureTime = null, ?string $arrivalTime = null, ?string $days = null, ?string $returnDepartureCode = null, ?string $returnDepartureDescription = null, ?string $returnDestinationCode = null, ?string $returnDestinationDescription = null, ?string $returnCarrier = null, ?string $returnCarrierName = null, ?string $returnFlightNo = null, ?string $returnDepartureTime = null, ?string $returnArrivalTime = null, ?string $returnDays = null, ?bool $preventPrinting = false, ?string $extId = null, ?string $extSystem = null, ?string $locationDescription = null, ?float $depositAmount = null, ?string $depositPaymentType = null, ?string $finalPaymentType = null, ?bool $isOneWay = null, ?string $feeCode = null, ?string $productType = null, ?string $bookingReference = null, ?string $articleType = null, ?array $midocoAccomodationDetailsInfo4Printing = null, ?array $midocoCarDetailInfo4Printing = null, ?array $midocoFlightDetailsInfo4Printing = null, ?array $midocoInsuranceDetailInfo4Printing = null, ?array $midocoTravelDetailsInfo4Printing = null, ?array $midocoCalcItemDetailsInfo4Printing = null, ?array $midocoPassengerInfo4Printing = null, ?array $midocoCruiseDetailsInfo4Printing = null, ?array $midocoAttributeValue4Printing = null, ?array $midocoRemarks = null, ?array $midocoRemarksAbove = null, ?array $midocoRemarksAfterService = null, ?array $midocoRemarksEnd = null, ?array $midocoHint = null, ?array $midocoBusDetailsInfo4Printing = null, ?array $midocoRailDetailsInfo4Printing = null, ?array $midocoPackageDetailsInfo4Printing = null, ?array $midocoAdditionalService = null, ?array $midocoEventDetailsInfo4Printing = null, ?array $midocoDocumentitem4Printing = null, ?array $midocoTransferDetailsInfo4Printing = null, ?array $midocoSellDetailsPrice = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType $midocoSupplier = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress $midocoSupplierAddress = null, ?array $midocoSupplierTemplate = null, ?array $touchedCountry = null, ?string $travelTypeDescription = null, ?bool $immediatePayment = false, ?string $forCustomer = null, ?string $fromCustomer = null, ?int $voucherQuantity = null, ?float $voucherSinglePrice = null, ?float $revenuePercent = null, ?string $confirmationGroup = null, ?int $sellingMode = null, ?string $transfer = null, ?string $noOfNights = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber = null)
     {
         $this
             ->setItemId($itemId)
@@ -949,7 +949,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -972,7 +972,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -995,7 +995,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set originalBookingId value
      * @param string $originalBookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setOriginalBookingId(?string $originalBookingId = null): self
     {
@@ -1018,7 +1018,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -1041,7 +1041,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set supplierName value
      * @param string $supplierName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setSupplierName(?string $supplierName = null): self
     {
@@ -1064,7 +1064,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -1087,7 +1087,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -1110,7 +1110,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -1133,7 +1133,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -1156,7 +1156,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set areaDescription value
      * @param string $areaDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setAreaDescription(?string $areaDescription = null): self
     {
@@ -1179,7 +1179,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -1202,7 +1202,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set departureDescription value
      * @param string $departureDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setDepartureDescription(?string $departureDescription = null): self
     {
@@ -1225,7 +1225,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -1248,7 +1248,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set destinationDescription value
      * @param string $destinationDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setDestinationDescription(?string $destinationDescription = null): self
     {
@@ -1271,7 +1271,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set accomodationCode value
      * @param string $accomodationCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setAccomodationCode(?string $accomodationCode = null): self
     {
@@ -1294,7 +1294,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set accomodationDescription value
      * @param string $accomodationDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setAccomodationDescription(?string $accomodationDescription = null): self
     {
@@ -1317,7 +1317,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set cruiseCode value
      * @param string $cruiseCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setCruiseCode(?string $cruiseCode = null): self
     {
@@ -1340,7 +1340,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set cruiseDescription value
      * @param string $cruiseDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setCruiseDescription(?string $cruiseDescription = null): self
     {
@@ -1363,7 +1363,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set itemDescription value
      * @param string $itemDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setItemDescription(?string $itemDescription = null): self
     {
@@ -1386,7 +1386,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set cateringDescription value
      * @param string $cateringDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setCateringDescription(?string $cateringDescription = null): self
     {
@@ -1409,7 +1409,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set roomDescription value
      * @param string $roomDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setRoomDescription(?string $roomDescription = null): self
     {
@@ -1432,7 +1432,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set itemReferenceNo value
      * @param string $itemReferenceNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setItemReferenceNo(?string $itemReferenceNo = null): self
     {
@@ -1455,7 +1455,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set insuranceDescription value
      * @param string $insuranceDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setInsuranceDescription(?string $insuranceDescription = null): self
     {
@@ -1478,7 +1478,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setStatus(?string $status = null): self
     {
@@ -1501,7 +1501,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set isStorno value
      * @param bool $isStorno
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setIsStorno(?bool $isStorno = null): self
     {
@@ -1524,7 +1524,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set stornoDate value
      * @param string $stornoDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setStornoDate(?string $stornoDate = null): self
     {
@@ -1547,7 +1547,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -1570,7 +1570,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set creationUser value
      * @param string $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setCreationUser(?string $creationUser = null): self
     {
@@ -1593,7 +1593,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -1616,7 +1616,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -1639,7 +1639,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set carrierName value
      * @param string $carrierName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setCarrierName(?string $carrierName = null): self
     {
@@ -1662,7 +1662,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set flightNo value
      * @param string $flightNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setFlightNo(?string $flightNo = null): self
     {
@@ -1685,7 +1685,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set departureTime value
      * @param string $departureTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setDepartureTime(?string $departureTime = null): self
     {
@@ -1708,7 +1708,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set arrivalTime value
      * @param string $arrivalTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setArrivalTime(?string $arrivalTime = null): self
     {
@@ -1731,7 +1731,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set days value
      * @param string $days
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setDays(?string $days = null): self
     {
@@ -1754,7 +1754,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set returnDepartureCode value
      * @param string $returnDepartureCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setReturnDepartureCode(?string $returnDepartureCode = null): self
     {
@@ -1777,7 +1777,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set returnDepartureDescription value
      * @param string $returnDepartureDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setReturnDepartureDescription(?string $returnDepartureDescription = null): self
     {
@@ -1800,7 +1800,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set returnDestinationCode value
      * @param string $returnDestinationCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setReturnDestinationCode(?string $returnDestinationCode = null): self
     {
@@ -1823,7 +1823,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set returnDestinationDescription value
      * @param string $returnDestinationDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setReturnDestinationDescription(?string $returnDestinationDescription = null): self
     {
@@ -1846,7 +1846,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set returnCarrier value
      * @param string $returnCarrier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setReturnCarrier(?string $returnCarrier = null): self
     {
@@ -1869,7 +1869,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set returnCarrierName value
      * @param string $returnCarrierName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setReturnCarrierName(?string $returnCarrierName = null): self
     {
@@ -1892,7 +1892,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set returnFlightNo value
      * @param string $returnFlightNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setReturnFlightNo(?string $returnFlightNo = null): self
     {
@@ -1915,7 +1915,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set returnDepartureTime value
      * @param string $returnDepartureTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setReturnDepartureTime(?string $returnDepartureTime = null): self
     {
@@ -1938,7 +1938,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set returnArrivalTime value
      * @param string $returnArrivalTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setReturnArrivalTime(?string $returnArrivalTime = null): self
     {
@@ -1961,7 +1961,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set returnDays value
      * @param string $returnDays
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setReturnDays(?string $returnDays = null): self
     {
@@ -1984,7 +1984,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set preventPrinting value
      * @param bool $preventPrinting
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setPreventPrinting(?bool $preventPrinting = false): self
     {
@@ -2007,7 +2007,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set extId value
      * @param string $extId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setExtId(?string $extId = null): self
     {
@@ -2030,7 +2030,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set extSystem value
      * @param string $extSystem
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setExtSystem(?string $extSystem = null): self
     {
@@ -2053,7 +2053,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set locationDescription value
      * @param string $locationDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setLocationDescription(?string $locationDescription = null): self
     {
@@ -2076,7 +2076,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set depositAmount value
      * @param float $depositAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setDepositAmount(?float $depositAmount = null): self
     {
@@ -2099,7 +2099,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set depositPaymentType value
      * @param string $depositPaymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setDepositPaymentType(?string $depositPaymentType = null): self
     {
@@ -2122,7 +2122,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set finalPaymentType value
      * @param string $finalPaymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setFinalPaymentType(?string $finalPaymentType = null): self
     {
@@ -2145,7 +2145,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set isOneWay value
      * @param bool $isOneWay
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setIsOneWay(?bool $isOneWay = null): self
     {
@@ -2168,7 +2168,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set feeCode value
      * @param string $feeCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setFeeCode(?string $feeCode = null): self
     {
@@ -2191,7 +2191,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setProductType(?string $productType = null): self
     {
@@ -2214,7 +2214,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set bookingReference value
      * @param string $bookingReference
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setBookingReference(?string $bookingReference = null): self
     {
@@ -2237,7 +2237,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set articleType value
      * @param string $articleType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setArticleType(?string $articleType = null): self
     {
@@ -2251,7 +2251,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoAccomodationDetailsInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing[]
      */
     public function getMidocoAccomodationDetailsInfo4Printing(): ?array
     {
@@ -2272,12 +2272,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoAccomodationDetailsInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoAccomodationDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing) {
+            if (!$midocoSellItemDetailsMidocoAccomodationDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoAccomodationDetailsInfo4PrintingItem) ? get_class($midocoSellItemDetailsMidocoAccomodationDetailsInfo4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoAccomodationDetailsInfo4PrintingItem), var_export($midocoSellItemDetailsMidocoAccomodationDetailsInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAccomodationDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAccomodationDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2286,8 +2286,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoAccomodationDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing[] $midocoAccomodationDetailsInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing[] $midocoAccomodationDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoAccomodationDetailsInfo4Printing(?array $midocoAccomodationDetailsInfo4Printing = null): self
     {
@@ -2302,14 +2302,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoAccomodationDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoAccomodationDetailsInfo4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing $item): self
+    public function addToMidocoAccomodationDetailsInfo4Printing(\Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoAccomodationDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoAccomodationDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAccomodationDetailsInfo4Printing[] = $item;
         
@@ -2317,7 +2317,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoCarDetailInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CarDetailDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CarDetailDTO[]
      */
     public function getMidocoCarDetailInfo4Printing(): ?array
     {
@@ -2338,12 +2338,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoCarDetailInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoCarDetailInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\CarDetailDTO) {
+            if (!$midocoSellItemDetailsMidocoCarDetailInfo4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\CarDetailDTO) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoCarDetailInfo4PrintingItem) ? get_class($midocoSellItemDetailsMidocoCarDetailInfo4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoCarDetailInfo4PrintingItem), var_export($midocoSellItemDetailsMidocoCarDetailInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCarDetailInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\CarDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCarDetailInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\CarDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2352,8 +2352,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoCarDetailInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CarDetailDTO[] $midocoCarDetailInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CarDetailDTO[] $midocoCarDetailInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoCarDetailInfo4Printing(?array $midocoCarDetailInfo4Printing = null): self
     {
@@ -2368,14 +2368,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoCarDetailInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CarDetailDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CarDetailDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoCarDetailInfo4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\CarDetailDTO $item): self
+    public function addToMidocoCarDetailInfo4Printing(\Pggns\MidocoApi\Orderlists\StructType\CarDetailDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\CarDetailDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCarDetailInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\CarDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\CarDetailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCarDetailInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\CarDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCarDetailInfo4Printing[] = $item;
         
@@ -2383,7 +2383,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoFlightDetailsInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetailsInfo4Printing[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetailsInfo4Printing[]
      */
     public function getMidocoFlightDetailsInfo4Printing(): ?array
     {
@@ -2404,12 +2404,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoFlightDetailsInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoFlightDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetailsInfo4Printing) {
+            if (!$midocoSellItemDetailsMidocoFlightDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetailsInfo4Printing) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoFlightDetailsInfo4PrintingItem) ? get_class($midocoSellItemDetailsMidocoFlightDetailsInfo4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoFlightDetailsInfo4PrintingItem), var_export($midocoSellItemDetailsMidocoFlightDetailsInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFlightDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFlightDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2418,8 +2418,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoFlightDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetailsInfo4Printing[] $midocoFlightDetailsInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetailsInfo4Printing[] $midocoFlightDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoFlightDetailsInfo4Printing(?array $midocoFlightDetailsInfo4Printing = null): self
     {
@@ -2434,14 +2434,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoFlightDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetailsInfo4Printing $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetailsInfo4Printing $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoFlightDetailsInfo4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetailsInfo4Printing $item): self
+    public function addToMidocoFlightDetailsInfo4Printing(\Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetailsInfo4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetailsInfo4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoFlightDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetailsInfo4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoFlightDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFlightDetailsInfo4Printing[] = $item;
         
@@ -2449,7 +2449,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoInsuranceDetailInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InsuranceDetailDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InsuranceDetailDTO[]
      */
     public function getMidocoInsuranceDetailInfo4Printing(): ?array
     {
@@ -2470,12 +2470,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoInsuranceDetailInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoInsuranceDetailInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\InsuranceDetailDTO) {
+            if (!$midocoSellItemDetailsMidocoInsuranceDetailInfo4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\InsuranceDetailDTO) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoInsuranceDetailInfo4PrintingItem) ? get_class($midocoSellItemDetailsMidocoInsuranceDetailInfo4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoInsuranceDetailInfo4PrintingItem), var_export($midocoSellItemDetailsMidocoInsuranceDetailInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoInsuranceDetailInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\InsuranceDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoInsuranceDetailInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\InsuranceDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2484,8 +2484,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoInsuranceDetailInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\InsuranceDetailDTO[] $midocoInsuranceDetailInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\InsuranceDetailDTO[] $midocoInsuranceDetailInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoInsuranceDetailInfo4Printing(?array $midocoInsuranceDetailInfo4Printing = null): self
     {
@@ -2500,14 +2500,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoInsuranceDetailInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\InsuranceDetailDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\InsuranceDetailDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoInsuranceDetailInfo4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\InsuranceDetailDTO $item): self
+    public function addToMidocoInsuranceDetailInfo4Printing(\Pggns\MidocoApi\Orderlists\StructType\InsuranceDetailDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\InsuranceDetailDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoInsuranceDetailInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\InsuranceDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\InsuranceDetailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoInsuranceDetailInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\InsuranceDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoInsuranceDetailInfo4Printing[] = $item;
         
@@ -2515,7 +2515,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoTravelDetailsInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDetailDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDetailDTO[]
      */
     public function getMidocoTravelDetailsInfo4Printing(): ?array
     {
@@ -2536,12 +2536,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoTravelDetailsInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoTravelDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDetailDTO) {
+            if (!$midocoSellItemDetailsMidocoTravelDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\TravelDetailDTO) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoTravelDetailsInfo4PrintingItem) ? get_class($midocoSellItemDetailsMidocoTravelDetailsInfo4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoTravelDetailsInfo4PrintingItem), var_export($midocoSellItemDetailsMidocoTravelDetailsInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTravelDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTravelDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\TravelDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2550,8 +2550,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoTravelDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDetailDTO[] $midocoTravelDetailsInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\TravelDetailDTO[] $midocoTravelDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoTravelDetailsInfo4Printing(?array $midocoTravelDetailsInfo4Printing = null): self
     {
@@ -2566,14 +2566,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoTravelDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDetailDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\TravelDetailDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoTravelDetailsInfo4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\TravelDetailDTO $item): self
+    public function addToMidocoTravelDetailsInfo4Printing(\Pggns\MidocoApi\Orderlists\StructType\TravelDetailDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDetailDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoTravelDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\TravelDetailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\TravelDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTravelDetailsInfo4Printing[] = $item;
         
@@ -2581,7 +2581,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoCalcItemDetailsInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing[]
      */
     public function getMidocoCalcItemDetailsInfo4Printing(): ?array
     {
@@ -2602,12 +2602,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoCalcItemDetailsInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoCalcItemDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing) {
+            if (!$midocoSellItemDetailsMidocoCalcItemDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoCalcItemDetailsInfo4PrintingItem) ? get_class($midocoSellItemDetailsMidocoCalcItemDetailsInfo4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoCalcItemDetailsInfo4PrintingItem), var_export($midocoSellItemDetailsMidocoCalcItemDetailsInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCalcItemDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCalcItemDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2616,8 +2616,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoCalcItemDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing[] $midocoCalcItemDetailsInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing[] $midocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoCalcItemDetailsInfo4Printing(?array $midocoCalcItemDetailsInfo4Printing = null): self
     {
@@ -2632,14 +2632,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoCalcItemDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoCalcItemDetailsInfo4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing $item): self
+    public function addToMidocoCalcItemDetailsInfo4Printing(\Pggns\MidocoApi\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoCalcItemDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoCalcItemDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCalcItemDetailsInfo4Printing[] = $item;
         
@@ -2647,7 +2647,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoPassengerInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPassengerInfo4Printing[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoPassengerInfo4Printing[]
      */
     public function getMidocoPassengerInfo4Printing(): ?array
     {
@@ -2668,12 +2668,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoPassengerInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoPassengerInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPassengerInfo4Printing) {
+            if (!$midocoSellItemDetailsMidocoPassengerInfo4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoPassengerInfo4Printing) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoPassengerInfo4PrintingItem) ? get_class($midocoSellItemDetailsMidocoPassengerInfo4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoPassengerInfo4PrintingItem), var_export($midocoSellItemDetailsMidocoPassengerInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPassengerInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPassengerInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPassengerInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoPassengerInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2682,8 +2682,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoPassengerInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPassengerInfo4Printing[] $midocoPassengerInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoPassengerInfo4Printing[] $midocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoPassengerInfo4Printing(?array $midocoPassengerInfo4Printing = null): self
     {
@@ -2698,14 +2698,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoPassengerInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPassengerInfo4Printing $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoPassengerInfo4Printing $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoPassengerInfo4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPassengerInfo4Printing $item): self
+    public function addToMidocoPassengerInfo4Printing(\Pggns\MidocoApi\Orderlists\StructType\MidocoPassengerInfo4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPassengerInfo4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoPassengerInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPassengerInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoPassengerInfo4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoPassengerInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoPassengerInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPassengerInfo4Printing[] = $item;
         
@@ -2713,7 +2713,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoCruiseDetailsInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing[]
      */
     public function getMidocoCruiseDetailsInfo4Printing(): ?array
     {
@@ -2734,12 +2734,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoCruiseDetailsInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoCruiseDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing) {
+            if (!$midocoSellItemDetailsMidocoCruiseDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoCruiseDetailsInfo4PrintingItem) ? get_class($midocoSellItemDetailsMidocoCruiseDetailsInfo4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoCruiseDetailsInfo4PrintingItem), var_export($midocoSellItemDetailsMidocoCruiseDetailsInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCruiseDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCruiseDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2748,8 +2748,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoCruiseDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing[] $midocoCruiseDetailsInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing[] $midocoCruiseDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoCruiseDetailsInfo4Printing(?array $midocoCruiseDetailsInfo4Printing = null): self
     {
@@ -2764,14 +2764,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoCruiseDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoCruiseDetailsInfo4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing $item): self
+    public function addToMidocoCruiseDetailsInfo4Printing(\Pggns\MidocoApi\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoCruiseDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoCruiseDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCruiseDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCruiseDetailsInfo4Printing[] = $item;
         
@@ -2779,7 +2779,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoAttributeValue4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAttributeValue4Printing[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAttributeValue4Printing[]
      */
     public function getMidocoAttributeValue4Printing(): ?array
     {
@@ -2800,12 +2800,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoAttributeValue4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoAttributeValue4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAttributeValue4Printing) {
+            if (!$midocoSellItemDetailsMidocoAttributeValue4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAttributeValue4Printing) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoAttributeValue4PrintingItem) ? get_class($midocoSellItemDetailsMidocoAttributeValue4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoAttributeValue4PrintingItem), var_export($midocoSellItemDetailsMidocoAttributeValue4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAttributeValue4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAttributeValue4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAttributeValue4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAttributeValue4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2814,8 +2814,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoAttributeValue4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAttributeValue4Printing[] $midocoAttributeValue4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAttributeValue4Printing[] $midocoAttributeValue4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoAttributeValue4Printing(?array $midocoAttributeValue4Printing = null): self
     {
@@ -2830,14 +2830,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoAttributeValue4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAttributeValue4Printing $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAttributeValue4Printing $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoAttributeValue4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAttributeValue4Printing $item): self
+    public function addToMidocoAttributeValue4Printing(\Pggns\MidocoApi\Orderlists\StructType\MidocoAttributeValue4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAttributeValue4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoAttributeValue4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAttributeValue4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAttributeValue4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoAttributeValue4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAttributeValue4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAttributeValue4Printing[] = $item;
         
@@ -2845,7 +2845,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoRemarks value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[]
      */
     public function getMidocoRemarks(): ?array
     {
@@ -2866,12 +2866,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoRemarksItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoRemarksItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType) {
+            if (!$midocoSellItemDetailsMidocoRemarksItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoRemarksItem) ? get_class($midocoSellItemDetailsMidocoRemarksItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoRemarksItem), var_export($midocoSellItemDetailsMidocoRemarksItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRemarks property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRemarks property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2880,8 +2880,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoRemarks value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[] $midocoRemarks
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[] $midocoRemarks
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoRemarks(?array $midocoRemarks = null): self
     {
@@ -2896,14 +2896,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoRemarks value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoRemarks(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType $item): self
+    public function addToMidocoRemarks(\Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType) {
-            throw new InvalidArgumentException(sprintf('The MidocoRemarks property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType) {
+            throw new InvalidArgumentException(sprintf('The MidocoRemarks property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRemarks[] = $item;
         
@@ -2911,7 +2911,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoRemarksAbove value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[]
      */
     public function getMidocoRemarksAbove(): ?array
     {
@@ -2932,12 +2932,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoRemarksAboveItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoRemarksAboveItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType) {
+            if (!$midocoSellItemDetailsMidocoRemarksAboveItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoRemarksAboveItem) ? get_class($midocoSellItemDetailsMidocoRemarksAboveItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoRemarksAboveItem), var_export($midocoSellItemDetailsMidocoRemarksAboveItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRemarksAbove property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRemarksAbove property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2946,8 +2946,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoRemarksAbove value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[] $midocoRemarksAbove
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[] $midocoRemarksAbove
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoRemarksAbove(?array $midocoRemarksAbove = null): self
     {
@@ -2962,14 +2962,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoRemarksAbove value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoRemarksAbove(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType $item): self
+    public function addToMidocoRemarksAbove(\Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType) {
-            throw new InvalidArgumentException(sprintf('The MidocoRemarksAbove property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType) {
+            throw new InvalidArgumentException(sprintf('The MidocoRemarksAbove property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRemarksAbove[] = $item;
         
@@ -2977,7 +2977,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoRemarksAfterService value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[]
      */
     public function getMidocoRemarksAfterService(): ?array
     {
@@ -2998,12 +2998,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoRemarksAfterServiceItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoRemarksAfterServiceItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType) {
+            if (!$midocoSellItemDetailsMidocoRemarksAfterServiceItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoRemarksAfterServiceItem) ? get_class($midocoSellItemDetailsMidocoRemarksAfterServiceItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoRemarksAfterServiceItem), var_export($midocoSellItemDetailsMidocoRemarksAfterServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRemarksAfterService property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRemarksAfterService property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3012,8 +3012,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoRemarksAfterService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[] $midocoRemarksAfterService
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[] $midocoRemarksAfterService
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoRemarksAfterService(?array $midocoRemarksAfterService = null): self
     {
@@ -3028,14 +3028,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoRemarksAfterService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoRemarksAfterService(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType $item): self
+    public function addToMidocoRemarksAfterService(\Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType) {
-            throw new InvalidArgumentException(sprintf('The MidocoRemarksAfterService property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType) {
+            throw new InvalidArgumentException(sprintf('The MidocoRemarksAfterService property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRemarksAfterService[] = $item;
         
@@ -3043,7 +3043,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoRemarksEnd value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[]
      */
     public function getMidocoRemarksEnd(): ?array
     {
@@ -3064,12 +3064,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoRemarksEndItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoRemarksEndItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType) {
+            if (!$midocoSellItemDetailsMidocoRemarksEndItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoRemarksEndItem) ? get_class($midocoSellItemDetailsMidocoRemarksEndItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoRemarksEndItem), var_export($midocoSellItemDetailsMidocoRemarksEndItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRemarksEnd property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRemarksEnd property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3078,8 +3078,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoRemarksEnd value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType[] $midocoRemarksEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType[] $midocoRemarksEnd
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoRemarksEnd(?array $midocoRemarksEnd = null): self
     {
@@ -3094,14 +3094,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoRemarksEnd value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoRemarksEnd(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType $item): self
+    public function addToMidocoRemarksEnd(\Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType) {
-            throw new InvalidArgumentException(sprintf('The MidocoRemarksEnd property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType) {
+            throw new InvalidArgumentException(sprintf('The MidocoRemarksEnd property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRemarksEnd[] = $item;
         
@@ -3109,7 +3109,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoHint value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHintType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoHintType[]
      */
     public function getMidocoHint(): ?array
     {
@@ -3130,12 +3130,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoHintItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoHintItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHintType) {
+            if (!$midocoSellItemDetailsMidocoHintItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoHintType) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoHintItem) ? get_class($midocoSellItemDetailsMidocoHintItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoHintItem), var_export($midocoSellItemDetailsMidocoHintItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoHint property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHintType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoHint property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoHintType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3144,8 +3144,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoHint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHintType[] $midocoHint
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoHintType[] $midocoHint
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoHint(?array $midocoHint = null): self
     {
@@ -3160,14 +3160,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoHint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHintType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoHintType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoHint(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHintType $item): self
+    public function addToMidocoHint(\Pggns\MidocoApi\Orderlists\StructType\MidocoHintType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHintType) {
-            throw new InvalidArgumentException(sprintf('The MidocoHint property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHintType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoHintType) {
+            throw new InvalidArgumentException(sprintf('The MidocoHint property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoHintType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoHint[] = $item;
         
@@ -3175,7 +3175,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoBusDetailsInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBusDetailsInfo4Printing[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBusDetailsInfo4Printing[]
      */
     public function getMidocoBusDetailsInfo4Printing(): ?array
     {
@@ -3196,12 +3196,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoBusDetailsInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoBusDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBusDetailsInfo4Printing) {
+            if (!$midocoSellItemDetailsMidocoBusDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBusDetailsInfo4Printing) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoBusDetailsInfo4PrintingItem) ? get_class($midocoSellItemDetailsMidocoBusDetailsInfo4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoBusDetailsInfo4PrintingItem), var_export($midocoSellItemDetailsMidocoBusDetailsInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBusDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBusDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBusDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBusDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3210,8 +3210,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoBusDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBusDetailsInfo4Printing[] $midocoBusDetailsInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBusDetailsInfo4Printing[] $midocoBusDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoBusDetailsInfo4Printing(?array $midocoBusDetailsInfo4Printing = null): self
     {
@@ -3226,14 +3226,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoBusDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBusDetailsInfo4Printing $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBusDetailsInfo4Printing $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoBusDetailsInfo4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBusDetailsInfo4Printing $item): self
+    public function addToMidocoBusDetailsInfo4Printing(\Pggns\MidocoApi\Orderlists\StructType\MidocoBusDetailsInfo4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBusDetailsInfo4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoBusDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBusDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBusDetailsInfo4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoBusDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBusDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBusDetailsInfo4Printing[] = $item;
         
@@ -3241,7 +3241,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoRailDetailsInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRailDetailsInfo4Printing[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoRailDetailsInfo4Printing[]
      */
     public function getMidocoRailDetailsInfo4Printing(): ?array
     {
@@ -3262,12 +3262,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoRailDetailsInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoRailDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRailDetailsInfo4Printing) {
+            if (!$midocoSellItemDetailsMidocoRailDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRailDetailsInfo4Printing) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoRailDetailsInfo4PrintingItem) ? get_class($midocoSellItemDetailsMidocoRailDetailsInfo4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoRailDetailsInfo4PrintingItem), var_export($midocoSellItemDetailsMidocoRailDetailsInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRailDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRailDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRailDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRailDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3276,8 +3276,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoRailDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRailDetailsInfo4Printing[] $midocoRailDetailsInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRailDetailsInfo4Printing[] $midocoRailDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoRailDetailsInfo4Printing(?array $midocoRailDetailsInfo4Printing = null): self
     {
@@ -3292,14 +3292,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoRailDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRailDetailsInfo4Printing $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRailDetailsInfo4Printing $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoRailDetailsInfo4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRailDetailsInfo4Printing $item): self
+    public function addToMidocoRailDetailsInfo4Printing(\Pggns\MidocoApi\Orderlists\StructType\MidocoRailDetailsInfo4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRailDetailsInfo4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoRailDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRailDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRailDetailsInfo4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoRailDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRailDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRailDetailsInfo4Printing[] = $item;
         
@@ -3307,7 +3307,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoPackageDetailsInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4Printing[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4Printing[]
      */
     public function getMidocoPackageDetailsInfo4Printing(): ?array
     {
@@ -3328,12 +3328,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoPackageDetailsInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoPackageDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4Printing) {
+            if (!$midocoSellItemDetailsMidocoPackageDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4Printing) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoPackageDetailsInfo4PrintingItem) ? get_class($midocoSellItemDetailsMidocoPackageDetailsInfo4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoPackageDetailsInfo4PrintingItem), var_export($midocoSellItemDetailsMidocoPackageDetailsInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPackageDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPackageDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3342,8 +3342,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoPackageDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4Printing[] $midocoPackageDetailsInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4Printing[] $midocoPackageDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoPackageDetailsInfo4Printing(?array $midocoPackageDetailsInfo4Printing = null): self
     {
@@ -3358,14 +3358,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoPackageDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4Printing $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4Printing $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoPackageDetailsInfo4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4Printing $item): self
+    public function addToMidocoPackageDetailsInfo4Printing(\Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoPackageDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoPackageDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPackageDetailsInfo4Printing[] = $item;
         
@@ -3373,7 +3373,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoAdditionalService value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalService[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalService[]
      */
     public function getMidocoAdditionalService(): ?array
     {
@@ -3394,12 +3394,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoAdditionalServiceItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoAdditionalServiceItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalService) {
+            if (!$midocoSellItemDetailsMidocoAdditionalServiceItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalService) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoAdditionalServiceItem) ? get_class($midocoSellItemDetailsMidocoAdditionalServiceItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoAdditionalServiceItem), var_export($midocoSellItemDetailsMidocoAdditionalServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAdditionalService property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalService, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAdditionalService property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalService, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3408,8 +3408,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoAdditionalService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalService[] $midocoAdditionalService
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalService[] $midocoAdditionalService
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoAdditionalService(?array $midocoAdditionalService = null): self
     {
@@ -3424,14 +3424,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoAdditionalService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalService $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalService $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoAdditionalService(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalService $item): self
+    public function addToMidocoAdditionalService(\Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalService $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalService) {
-            throw new InvalidArgumentException(sprintf('The MidocoAdditionalService property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdditionalService, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalService) {
+            throw new InvalidArgumentException(sprintf('The MidocoAdditionalService property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAdditionalService, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAdditionalService[] = $item;
         
@@ -3439,7 +3439,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoEventDetailsInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoEventDetailsInfo4Printing[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoEventDetailsInfo4Printing[]
      */
     public function getMidocoEventDetailsInfo4Printing(): ?array
     {
@@ -3460,12 +3460,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoEventDetailsInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoEventDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoEventDetailsInfo4Printing) {
+            if (!$midocoSellItemDetailsMidocoEventDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoEventDetailsInfo4Printing) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoEventDetailsInfo4PrintingItem) ? get_class($midocoSellItemDetailsMidocoEventDetailsInfo4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoEventDetailsInfo4PrintingItem), var_export($midocoSellItemDetailsMidocoEventDetailsInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoEventDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoEventDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoEventDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoEventDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3474,8 +3474,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoEventDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoEventDetailsInfo4Printing[] $midocoEventDetailsInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoEventDetailsInfo4Printing[] $midocoEventDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoEventDetailsInfo4Printing(?array $midocoEventDetailsInfo4Printing = null): self
     {
@@ -3490,14 +3490,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoEventDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoEventDetailsInfo4Printing $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoEventDetailsInfo4Printing $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoEventDetailsInfo4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoEventDetailsInfo4Printing $item): self
+    public function addToMidocoEventDetailsInfo4Printing(\Pggns\MidocoApi\Orderlists\StructType\MidocoEventDetailsInfo4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoEventDetailsInfo4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoEventDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoEventDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoEventDetailsInfo4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoEventDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoEventDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoEventDetailsInfo4Printing[] = $item;
         
@@ -3505,7 +3505,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoDocumentitem4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentitem4Printing[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentitem4Printing[]
      */
     public function getMidocoDocumentitem4Printing(): ?array
     {
@@ -3526,12 +3526,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoDocumentitem4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoDocumentitem4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentitem4Printing) {
+            if (!$midocoSellItemDetailsMidocoDocumentitem4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentitem4Printing) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoDocumentitem4PrintingItem) ? get_class($midocoSellItemDetailsMidocoDocumentitem4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoDocumentitem4PrintingItem), var_export($midocoSellItemDetailsMidocoDocumentitem4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDocumentitem4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentitem4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDocumentitem4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentitem4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3540,8 +3540,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoDocumentitem4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentitem4Printing[] $midocoDocumentitem4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentitem4Printing[] $midocoDocumentitem4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoDocumentitem4Printing(?array $midocoDocumentitem4Printing = null): self
     {
@@ -3556,14 +3556,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoDocumentitem4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentitem4Printing $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentitem4Printing $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoDocumentitem4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentitem4Printing $item): self
+    public function addToMidocoDocumentitem4Printing(\Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentitem4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentitem4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoDocumentitem4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDocumentitem4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentitem4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoDocumentitem4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentitem4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDocumentitem4Printing[] = $item;
         
@@ -3571,7 +3571,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoTransferDetailsInfo4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferDetailsInfo4Printing[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferDetailsInfo4Printing[]
      */
     public function getMidocoTransferDetailsInfo4Printing(): ?array
     {
@@ -3592,12 +3592,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoTransferDetailsInfo4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoTransferDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferDetailsInfo4Printing) {
+            if (!$midocoSellItemDetailsMidocoTransferDetailsInfo4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferDetailsInfo4Printing) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoTransferDetailsInfo4PrintingItem) ? get_class($midocoSellItemDetailsMidocoTransferDetailsInfo4PrintingItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoTransferDetailsInfo4PrintingItem), var_export($midocoSellItemDetailsMidocoTransferDetailsInfo4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTransferDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTransferDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferDetailsInfo4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3606,8 +3606,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoTransferDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferDetailsInfo4Printing[] $midocoTransferDetailsInfo4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferDetailsInfo4Printing[] $midocoTransferDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoTransferDetailsInfo4Printing(?array $midocoTransferDetailsInfo4Printing = null): self
     {
@@ -3622,14 +3622,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoTransferDetailsInfo4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferDetailsInfo4Printing $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferDetailsInfo4Printing $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoTransferDetailsInfo4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferDetailsInfo4Printing $item): self
+    public function addToMidocoTransferDetailsInfo4Printing(\Pggns\MidocoApi\Orderlists\StructType\MidocoTransferDetailsInfo4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferDetailsInfo4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoTransferDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferDetailsInfo4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoTransferDetailsInfo4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferDetailsInfo4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTransferDetailsInfo4Printing[] = $item;
         
@@ -3637,7 +3637,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoSellDetailsPrice value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellDetailsPrice[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellDetailsPrice[]
      */
     public function getMidocoSellDetailsPrice(): ?array
     {
@@ -3658,12 +3658,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoSellDetailsPriceItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoSellDetailsPriceItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellDetailsPrice) {
+            if (!$midocoSellItemDetailsMidocoSellDetailsPriceItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSellDetailsPrice) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoSellDetailsPriceItem) ? get_class($midocoSellItemDetailsMidocoSellDetailsPriceItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoSellDetailsPriceItem), var_export($midocoSellItemDetailsMidocoSellDetailsPriceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellDetailsPrice property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellDetailsPrice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellDetailsPrice property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSellDetailsPrice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3672,8 +3672,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoSellDetailsPrice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellDetailsPrice[] $midocoSellDetailsPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSellDetailsPrice[] $midocoSellDetailsPrice
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoSellDetailsPrice(?array $midocoSellDetailsPrice = null): self
     {
@@ -3688,14 +3688,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoSellDetailsPrice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellDetailsPrice $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSellDetailsPrice $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoSellDetailsPrice(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellDetailsPrice $item): self
+    public function addToMidocoSellDetailsPrice(\Pggns\MidocoApi\Orderlists\StructType\MidocoSellDetailsPrice $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellDetailsPrice) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellDetailsPrice property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellDetailsPrice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSellDetailsPrice) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellDetailsPrice property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSellDetailsPrice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellDetailsPrice[] = $item;
         
@@ -3703,18 +3703,18 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoSupplier value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType|null
      */
-    public function getMidocoSupplier(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType
+    public function getMidocoSupplier(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType
     {
         return $this->MidocoSupplier;
     }
     /**
      * Set MidocoSupplier value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType $midocoSupplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType $midocoSupplier
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function setMidocoSupplier(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType $midocoSupplier = null): self
+    public function setMidocoSupplier(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType $midocoSupplier = null): self
     {
         $this->MidocoSupplier = $midocoSupplier;
         
@@ -3722,18 +3722,18 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierAddress value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress|null
      */
-    public function getMidocoSupplierAddress(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress
+    public function getMidocoSupplierAddress(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress
     {
         return $this->MidocoSupplierAddress;
     }
     /**
      * Set MidocoSupplierAddress value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress $midocoSupplierAddress
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress $midocoSupplierAddress
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function setMidocoSupplierAddress(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAddress $midocoSupplierAddress = null): self
+    public function setMidocoSupplierAddress(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAddress $midocoSupplierAddress = null): self
     {
         $this->MidocoSupplierAddress = $midocoSupplierAddress;
         
@@ -3741,7 +3741,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierTemplate value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierTemplateDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierTemplateDTO[]
      */
     public function getMidocoSupplierTemplate(): ?array
     {
@@ -3762,12 +3762,12 @@ class MidocoSellItemDetails extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSellItemDetailsMidocoSupplierTemplateItem) {
             // validation for constraint: itemType
-            if (!$midocoSellItemDetailsMidocoSupplierTemplateItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierTemplateDTO) {
+            if (!$midocoSellItemDetailsMidocoSupplierTemplateItem instanceof \Pggns\MidocoApi\Orderlists\StructType\SupplierTemplateDTO) {
                 $invalidValues[] = is_object($midocoSellItemDetailsMidocoSupplierTemplateItem) ? get_class($midocoSellItemDetailsMidocoSupplierTemplateItem) : sprintf('%s(%s)', gettype($midocoSellItemDetailsMidocoSupplierTemplateItem), var_export($midocoSellItemDetailsMidocoSupplierTemplateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierTemplate property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierTemplateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierTemplate property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\SupplierTemplateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3776,8 +3776,8 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set MidocoSupplierTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierTemplateDTO[] $midocoSupplierTemplate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SupplierTemplateDTO[] $midocoSupplierTemplate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setMidocoSupplierTemplate(?array $midocoSupplierTemplate = null): self
     {
@@ -3792,14 +3792,14 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Add item to MidocoSupplierTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierTemplateDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SupplierTemplateDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function addToMidocoSupplierTemplate(\Pggns\MidocoApi\Api\Orderlists\StructType\SupplierTemplateDTO $item): self
+    public function addToMidocoSupplierTemplate(\Pggns\MidocoApi\Orderlists\StructType\SupplierTemplateDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierTemplateDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierTemplate property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierTemplateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\SupplierTemplateDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierTemplate property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\SupplierTemplateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierTemplate[] = $item;
         
@@ -3843,7 +3843,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * Set touchedCountry value
      * @throws InvalidArgumentException
      * @param string[] $touchedCountry
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setTouchedCountry(?array $touchedCountry = null): self
     {
@@ -3859,7 +3859,7 @@ class MidocoSellItemDetails extends AbstractStructBase
      * Add item to touchedCountry value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function addToTouchedCountry(string $item): self
     {
@@ -3882,7 +3882,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set travelTypeDescription value
      * @param string $travelTypeDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setTravelTypeDescription(?string $travelTypeDescription = null): self
     {
@@ -3905,7 +3905,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set immediatePayment value
      * @param bool $immediatePayment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setImmediatePayment(?bool $immediatePayment = false): self
     {
@@ -3928,7 +3928,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set forCustomer value
      * @param string $forCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setForCustomer(?string $forCustomer = null): self
     {
@@ -3951,7 +3951,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set fromCustomer value
      * @param string $fromCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setFromCustomer(?string $fromCustomer = null): self
     {
@@ -3974,7 +3974,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set voucherQuantity value
      * @param int $voucherQuantity
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setVoucherQuantity(?int $voucherQuantity = null): self
     {
@@ -3997,7 +3997,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set voucherSinglePrice value
      * @param float $voucherSinglePrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setVoucherSinglePrice(?float $voucherSinglePrice = null): self
     {
@@ -4020,7 +4020,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set revenuePercent value
      * @param float $revenuePercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setRevenuePercent(?float $revenuePercent = null): self
     {
@@ -4043,7 +4043,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set confirmationGroup value
      * @param string $confirmationGroup
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setConfirmationGroup(?string $confirmationGroup = null): self
     {
@@ -4066,7 +4066,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set sellingMode value
      * @param int $sellingMode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setSellingMode(?int $sellingMode = null): self
     {
@@ -4089,7 +4089,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set transfer value
      * @param string $transfer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setTransfer(?string $transfer = null): self
     {
@@ -4112,7 +4112,7 @@ class MidocoSellItemDetails extends AbstractStructBase
     /**
      * Set noOfNights value
      * @param string $noOfNights
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
     public function setNoOfNights(?string $noOfNights = null): self
     {
@@ -4126,18 +4126,18 @@ class MidocoSellItemDetails extends AbstractStructBase
     }
     /**
      * Get MidocoTravelNumber value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber|null
      */
-    public function getMidocoTravelNumber(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber
+    public function getMidocoTravelNumber(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber
     {
         return $this->MidocoTravelNumber;
     }
     /**
      * Set MidocoTravelNumber value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemDetails
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemDetails
      */
-    public function setMidocoTravelNumber(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber = null): self
+    public function setMidocoTravelNumber(?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelNumber $midocoTravelNumber = null): self
     {
         $this->MidocoTravelNumber = $midocoTravelNumber;
         

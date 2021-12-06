@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteSupplierFreeStornoDaysRequest extends AbstractStructBase
      * The MidocoSupplierFreeStornoDays
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierFreeStornoDays
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierFreeStornoDayDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\SupplierFreeStornoDayDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\SupplierFreeStornoDayDTO $MidocoSupplierFreeStornoDays = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\SupplierFreeStornoDayDTO $MidocoSupplierFreeStornoDays = null;
     /**
      * Constructor method for DeleteSupplierFreeStornoDaysRequest
      * @uses DeleteSupplierFreeStornoDaysRequest::setMidocoSupplierFreeStornoDays()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierFreeStornoDayDTO $midocoSupplierFreeStornoDays
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SupplierFreeStornoDayDTO $midocoSupplierFreeStornoDays
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\SupplierFreeStornoDayDTO $midocoSupplierFreeStornoDays = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\SupplierFreeStornoDayDTO $midocoSupplierFreeStornoDays = null)
     {
         $this
             ->setMidocoSupplierFreeStornoDays($midocoSupplierFreeStornoDays);
     }
     /**
      * Get MidocoSupplierFreeStornoDays value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierFreeStornoDayDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierFreeStornoDayDTO|null
      */
-    public function getMidocoSupplierFreeStornoDays(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\SupplierFreeStornoDayDTO
+    public function getMidocoSupplierFreeStornoDays(): ?\Pggns\MidocoApi\Orderlists\StructType\SupplierFreeStornoDayDTO
     {
         return $this->MidocoSupplierFreeStornoDays;
     }
     /**
      * Set MidocoSupplierFreeStornoDays value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierFreeStornoDayDTO $midocoSupplierFreeStornoDays
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteSupplierFreeStornoDaysRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SupplierFreeStornoDayDTO $midocoSupplierFreeStornoDays
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteSupplierFreeStornoDaysRequest
      */
-    public function setMidocoSupplierFreeStornoDays(?\Pggns\MidocoApi\Api\Orderlists\StructType\SupplierFreeStornoDayDTO $midocoSupplierFreeStornoDays = null): self
+    public function setMidocoSupplierFreeStornoDays(?\Pggns\MidocoApi\Orderlists\StructType\SupplierFreeStornoDayDTO $midocoSupplierFreeStornoDays = null): self
     {
         $this->MidocoSupplierFreeStornoDays = $midocoSupplierFreeStornoDays;
         

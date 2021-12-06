@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class SaveWorkingUserRequest extends AbstractStructBase
     /**
      * Set workingUser value
      * @param int $workingUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveWorkingUserRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveWorkingUserRequest
      */
     public function setWorkingUser(?int $workingUser = null): self
     {
@@ -94,7 +94,7 @@ class SaveWorkingUserRequest extends AbstractStructBase
     /**
      * Set workingTimeStamp value
      * @param string $workingTimeStamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveWorkingUserRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveWorkingUserRequest
      */
     public function setWorkingTimeStamp(?string $workingTimeStamp = null): self
     {
@@ -117,7 +117,7 @@ class SaveWorkingUserRequest extends AbstractStructBase
     /**
      * Set subjectId value
      * @param int $subjectId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveWorkingUserRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveWorkingUserRequest
      */
     public function setSubjectId(?int $subjectId = null): self
     {
@@ -140,7 +140,7 @@ class SaveWorkingUserRequest extends AbstractStructBase
     /**
      * Set activity value
      * @param string $activity
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveWorkingUserRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveWorkingUserRequest
      */
     public function setActivity(?string $activity = null): self
     {
@@ -163,7 +163,7 @@ class SaveWorkingUserRequest extends AbstractStructBase
     /**
      * Set process value
      * @param string $process
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveWorkingUserRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveWorkingUserRequest
      */
     public function setProcess(?string $process = null): self
     {

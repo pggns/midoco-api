@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetAutoInvoiceConditionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAutoInvoiceCondition
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionDTO[]
      */
     protected ?array $MidocoAutoInvoiceCondition = null;
     /**
      * Constructor method for GetAutoInvoiceConditionsResponse
      * @uses GetAutoInvoiceConditionsResponse::setMidocoAutoInvoiceCondition()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionDTO[] $midocoAutoInvoiceCondition
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionDTO[] $midocoAutoInvoiceCondition
      */
     public function __construct(?array $midocoAutoInvoiceCondition = null)
     {
@@ -36,7 +36,7 @@ class GetAutoInvoiceConditionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAutoInvoiceCondition value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionDTO[]
      */
     public function getMidocoAutoInvoiceCondition(): ?array
     {
@@ -57,12 +57,12 @@ class GetAutoInvoiceConditionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAutoInvoiceConditionsResponseMidocoAutoInvoiceConditionItem) {
             // validation for constraint: itemType
-            if (!$getAutoInvoiceConditionsResponseMidocoAutoInvoiceConditionItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionDTO) {
+            if (!$getAutoInvoiceConditionsResponseMidocoAutoInvoiceConditionItem instanceof \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionDTO) {
                 $invalidValues[] = is_object($getAutoInvoiceConditionsResponseMidocoAutoInvoiceConditionItem) ? get_class($getAutoInvoiceConditionsResponseMidocoAutoInvoiceConditionItem) : sprintf('%s(%s)', gettype($getAutoInvoiceConditionsResponseMidocoAutoInvoiceConditionItem), var_export($getAutoInvoiceConditionsResponseMidocoAutoInvoiceConditionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAutoInvoiceCondition property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAutoInvoiceCondition property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetAutoInvoiceConditionsResponse extends AbstractStructBase
     /**
      * Set MidocoAutoInvoiceCondition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionDTO[] $midocoAutoInvoiceCondition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAutoInvoiceConditionsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionDTO[] $midocoAutoInvoiceCondition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAutoInvoiceConditionsResponse
      */
     public function setMidocoAutoInvoiceCondition(?array $midocoAutoInvoiceCondition = null): self
     {
@@ -87,14 +87,14 @@ class GetAutoInvoiceConditionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoAutoInvoiceCondition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAutoInvoiceConditionsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAutoInvoiceConditionsResponse
      */
-    public function addToMidocoAutoInvoiceCondition(\Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionDTO $item): self
+    public function addToMidocoAutoInvoiceCondition(\Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAutoInvoiceCondition property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAutoInvoiceCondition property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAutoInvoiceCondition[] = $item;
         

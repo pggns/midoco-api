@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetContactMediaResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoContactMediaExt
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactMediaExt[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoContactMediaExt[]
      */
     protected ?array $MidocoContactMediaExt = null;
     /**
      * Constructor method for GetContactMediaResponse
      * @uses GetContactMediaResponse::setMidocoContactMediaExt()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactMediaExt[] $midocoContactMediaExt
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactMediaExt[] $midocoContactMediaExt
      */
     public function __construct(?array $midocoContactMediaExt = null)
     {
@@ -36,7 +36,7 @@ class GetContactMediaResponse extends AbstractStructBase
     }
     /**
      * Get MidocoContactMediaExt value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactMediaExt[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactMediaExt[]
      */
     public function getMidocoContactMediaExt(): ?array
     {
@@ -57,12 +57,12 @@ class GetContactMediaResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getContactMediaResponseMidocoContactMediaExtItem) {
             // validation for constraint: itemType
-            if (!$getContactMediaResponseMidocoContactMediaExtItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactMediaExt) {
+            if (!$getContactMediaResponseMidocoContactMediaExtItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactMediaExt) {
                 $invalidValues[] = is_object($getContactMediaResponseMidocoContactMediaExtItem) ? get_class($getContactMediaResponseMidocoContactMediaExtItem) : sprintf('%s(%s)', gettype($getContactMediaResponseMidocoContactMediaExtItem), var_export($getContactMediaResponseMidocoContactMediaExtItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactMediaExt property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactMediaExt, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactMediaExt property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactMediaExt, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetContactMediaResponse extends AbstractStructBase
     /**
      * Set MidocoContactMediaExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactMediaExt[] $midocoContactMediaExt
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetContactMediaResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactMediaExt[] $midocoContactMediaExt
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetContactMediaResponse
      */
     public function setMidocoContactMediaExt(?array $midocoContactMediaExt = null): self
     {
@@ -87,14 +87,14 @@ class GetContactMediaResponse extends AbstractStructBase
     /**
      * Add item to MidocoContactMediaExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactMediaExt $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetContactMediaResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactMediaExt $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetContactMediaResponse
      */
-    public function addToMidocoContactMediaExt(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactMediaExt $item): self
+    public function addToMidocoContactMediaExt(\Pggns\MidocoApi\CrmSD\StructType\MidocoContactMediaExt $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactMediaExt) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactMediaExt property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactMediaExt, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactMediaExt) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactMediaExt property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactMediaExt, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactMediaExt[] = $item;
         

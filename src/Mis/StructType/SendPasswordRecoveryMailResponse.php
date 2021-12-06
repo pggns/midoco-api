@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SendPasswordRecoveryMailResponse extends AbstractStructBase
     /**
      * Set oneTimeCode value
      * @param string $oneTimeCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SendPasswordRecoveryMailResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SendPasswordRecoveryMailResponse
      */
     public function setOneTimeCode(?string $oneTimeCode = null): self
     {

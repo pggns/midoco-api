@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMiscPaymentSettingRequest extends AbstractStructBase
      * The MidocoMiscPaymentSetting
      * Meta information extracted from the WSDL
      * - ref: MidocoMiscPaymentSetting
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CashPaymentSettingDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\CashPaymentSettingDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\CashPaymentSettingDTO $MidocoMiscPaymentSetting = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\CashPaymentSettingDTO $MidocoMiscPaymentSetting = null;
     /**
      * Constructor method for SaveMiscPaymentSettingRequest
      * @uses SaveMiscPaymentSettingRequest::setMidocoMiscPaymentSetting()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting
+     * @param \Pggns\MidocoApi\Order\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting = null)
     {
         $this
             ->setMidocoMiscPaymentSetting($midocoMiscPaymentSetting);
     }
     /**
      * Get MidocoMiscPaymentSetting value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashPaymentSettingDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\CashPaymentSettingDTO|null
      */
-    public function getMidocoMiscPaymentSetting(): ?\Pggns\MidocoApi\Api\Order\StructType\CashPaymentSettingDTO
+    public function getMidocoMiscPaymentSetting(): ?\Pggns\MidocoApi\Order\StructType\CashPaymentSettingDTO
     {
         return $this->MidocoMiscPaymentSetting;
     }
     /**
      * Set MidocoMiscPaymentSetting value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMiscPaymentSettingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMiscPaymentSettingRequest
      */
-    public function setMidocoMiscPaymentSetting(?\Pggns\MidocoApi\Api\Order\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting = null): self
+    public function setMidocoMiscPaymentSetting(?\Pggns\MidocoApi\Order\StructType\CashPaymentSettingDTO $midocoMiscPaymentSetting = null): self
     {
         $this->MidocoMiscPaymentSetting = $midocoMiscPaymentSetting;
         

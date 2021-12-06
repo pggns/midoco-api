@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class AutoGenMidocoMandatesRequest extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AutoGenMidocoMandatesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AutoGenMidocoMandatesRequest
      */
     public function setStartTravel(?string $startTravel = null): self
     {

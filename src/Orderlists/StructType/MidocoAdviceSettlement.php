@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoAdviceSettlement extends AdviceSettlementDTO
     /**
      * Set invoiceId value
      * @param int $invoiceId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceSettlement
      */
     public function setInvoiceId(?int $invoiceId = null): self
     {

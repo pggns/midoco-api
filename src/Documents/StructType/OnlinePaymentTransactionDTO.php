@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -343,7 +343,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -366,7 +366,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set approvalCode value
      * @param string $approvalCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setApprovalCode(?string $approvalCode = null): self
     {
@@ -389,7 +389,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set basePositionId value
      * @param int $basePositionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setBasePositionId(?int $basePositionId = null): self
     {
@@ -412,7 +412,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set calculatedPaymentDate value
      * @param string $calculatedPaymentDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setCalculatedPaymentDate(?string $calculatedPaymentDate = null): self
     {
@@ -435,7 +435,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set captureDate value
      * @param string $captureDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setCaptureDate(?string $captureDate = null): self
     {
@@ -458,7 +458,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set captureDone value
      * @param int $captureDone
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setCaptureDone(?int $captureDone = null): self
     {
@@ -481,7 +481,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -504,7 +504,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set ccReceiptNo value
      * @param int $ccReceiptNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setCcReceiptNo(?int $ccReceiptNo = null): self
     {
@@ -527,7 +527,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set ccToken value
      * @param string $ccToken
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setCcToken(?string $ccToken = null): self
     {
@@ -550,7 +550,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set ccTokenType value
      * @param string $ccTokenType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setCcTokenType(?string $ccTokenType = null): self
     {
@@ -573,7 +573,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -596,7 +596,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set ccValidMonth value
      * @param int $ccValidMonth
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setCcValidMonth(?int $ccValidMonth = null): self
     {
@@ -619,7 +619,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set ccValidYear value
      * @param int $ccValidYear
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setCcValidYear(?int $ccValidYear = null): self
     {
@@ -642,7 +642,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -665,7 +665,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -688,7 +688,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set dstid value
      * @param string $dstid
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setDstid(?string $dstid = null): self
     {
@@ -711,7 +711,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {
@@ -734,7 +734,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -757,7 +757,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set errorDescriptionCode value
      * @param string $errorDescriptionCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setErrorDescriptionCode(?string $errorDescriptionCode = null): self
     {
@@ -780,7 +780,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set externalId value
      * @param string $externalId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setExternalId(?string $externalId = null): self
     {
@@ -803,7 +803,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set initialEcomTransactionId value
      * @param string $initialEcomTransactionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setInitialEcomTransactionId(?string $initialEcomTransactionId = null): self
     {
@@ -826,7 +826,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set isDeposit value
      * @param bool $isDeposit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setIsDeposit(?bool $isDeposit = null): self
     {
@@ -849,7 +849,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set isRecurring value
      * @param bool $isRecurring
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setIsRecurring(?bool $isRecurring = null): self
     {
@@ -872,7 +872,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -895,7 +895,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set manualApprovalCode value
      * @param string $manualApprovalCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setManualApprovalCode(?string $manualApprovalCode = null): self
     {
@@ -918,7 +918,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -941,7 +941,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set paymentChannelIndicator value
      * @param string $paymentChannelIndicator
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setPaymentChannelIndicator(?string $paymentChannelIndicator = null): self
     {
@@ -964,7 +964,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set posCode value
      * @param string $posCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setPosCode(?string $posCode = null): self
     {
@@ -987,7 +987,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set tokenChecked value
      * @param bool $tokenChecked
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setTokenChecked(?bool $tokenChecked = null): self
     {
@@ -1010,7 +1010,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set transactionId value
      * @param int $transactionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setTransactionId(?int $transactionId = null): self
     {
@@ -1033,7 +1033,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set transactionRefId value
      * @param string $transactionRefId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setTransactionRefId(?string $transactionRefId = null): self
     {
@@ -1056,7 +1056,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set usedAdapter value
      * @param string $usedAdapter
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setUsedAdapter(?string $usedAdapter = null): self
     {
@@ -1079,7 +1079,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set vat2AmountExtern value
      * @param float $vat2AmountExtern
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setVat2AmountExtern(?float $vat2AmountExtern = null): self
     {
@@ -1102,7 +1102,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set vat2BaseExtern value
      * @param float $vat2BaseExtern
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setVat2BaseExtern(?float $vat2BaseExtern = null): self
     {
@@ -1125,7 +1125,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set vat2PercentExtern value
      * @param float $vat2PercentExtern
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setVat2PercentExtern(?float $vat2PercentExtern = null): self
     {
@@ -1148,7 +1148,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set vatAmountExtern value
      * @param float $vatAmountExtern
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setVatAmountExtern(?float $vatAmountExtern = null): self
     {
@@ -1171,7 +1171,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set vatBaseExtern value
      * @param float $vatBaseExtern
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setVatBaseExtern(?float $vatBaseExtern = null): self
     {
@@ -1194,7 +1194,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set vatPercentExtern value
      * @param float $vatPercentExtern
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setVatPercentExtern(?float $vatPercentExtern = null): self
     {
@@ -1217,7 +1217,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
     /**
      * Set xid value
      * @param string $xid
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OnlinePaymentTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OnlinePaymentTransactionDTO
      */
     public function setXid(?string $xid = null): self
     {

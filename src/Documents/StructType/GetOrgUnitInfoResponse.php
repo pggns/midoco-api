@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,26 +17,26 @@ class GetOrgUnitInfoResponse extends AbstractStructBase
      * The MidocoOrgunit
      * Meta information extracted from the WSDL
      * - ref: MidocoOrgunit
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\OrgunitDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\OrgunitDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\OrgunitDTO $MidocoOrgunit = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\OrgunitDTO $MidocoOrgunit = null;
     /**
      * The MidocoOrgUnitAttr
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrgUnitAttr
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrgUnitAttr[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoOrgUnitAttr[]
      */
     protected ?array $MidocoOrgUnitAttr = null;
     /**
      * Constructor method for GetOrgUnitInfoResponse
      * @uses GetOrgUnitInfoResponse::setMidocoOrgunit()
      * @uses GetOrgUnitInfoResponse::setMidocoOrgUnitAttr()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\OrgunitDTO $midocoOrgunit
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrgUnitAttr[] $midocoOrgUnitAttr
+     * @param \Pggns\MidocoApi\Documents\StructType\OrgunitDTO $midocoOrgunit
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrgUnitAttr[] $midocoOrgUnitAttr
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\OrgunitDTO $midocoOrgunit = null, ?array $midocoOrgUnitAttr = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\OrgunitDTO $midocoOrgunit = null, ?array $midocoOrgUnitAttr = null)
     {
         $this
             ->setMidocoOrgunit($midocoOrgunit)
@@ -44,18 +44,18 @@ class GetOrgUnitInfoResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrgunit value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrgunitDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\OrgunitDTO|null
      */
-    public function getMidocoOrgunit(): ?\Pggns\MidocoApi\Api\Documents\StructType\OrgunitDTO
+    public function getMidocoOrgunit(): ?\Pggns\MidocoApi\Documents\StructType\OrgunitDTO
     {
         return $this->MidocoOrgunit;
     }
     /**
      * Set MidocoOrgunit value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\OrgunitDTO $midocoOrgunit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrgUnitInfoResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\OrgunitDTO $midocoOrgunit
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrgUnitInfoResponse
      */
-    public function setMidocoOrgunit(?\Pggns\MidocoApi\Api\Documents\StructType\OrgunitDTO $midocoOrgunit = null): self
+    public function setMidocoOrgunit(?\Pggns\MidocoApi\Documents\StructType\OrgunitDTO $midocoOrgunit = null): self
     {
         $this->MidocoOrgunit = $midocoOrgunit;
         
@@ -63,7 +63,7 @@ class GetOrgUnitInfoResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrgUnitAttr value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrgUnitAttr[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrgUnitAttr[]
      */
     public function getMidocoOrgUnitAttr(): ?array
     {
@@ -84,12 +84,12 @@ class GetOrgUnitInfoResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrgUnitInfoResponseMidocoOrgUnitAttrItem) {
             // validation for constraint: itemType
-            if (!$getOrgUnitInfoResponseMidocoOrgUnitAttrItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrgUnitAttr) {
+            if (!$getOrgUnitInfoResponseMidocoOrgUnitAttrItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoOrgUnitAttr) {
                 $invalidValues[] = is_object($getOrgUnitInfoResponseMidocoOrgUnitAttrItem) ? get_class($getOrgUnitInfoResponseMidocoOrgUnitAttrItem) : sprintf('%s(%s)', gettype($getOrgUnitInfoResponseMidocoOrgUnitAttrItem), var_export($getOrgUnitInfoResponseMidocoOrgUnitAttrItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrgUnitAttr property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrgUnitAttr, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrgUnitAttr property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoOrgUnitAttr, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -98,8 +98,8 @@ class GetOrgUnitInfoResponse extends AbstractStructBase
     /**
      * Set MidocoOrgUnitAttr value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrgUnitAttr[] $midocoOrgUnitAttr
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrgUnitInfoResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrgUnitAttr[] $midocoOrgUnitAttr
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrgUnitInfoResponse
      */
     public function setMidocoOrgUnitAttr(?array $midocoOrgUnitAttr = null): self
     {
@@ -114,14 +114,14 @@ class GetOrgUnitInfoResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrgUnitAttr value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrgUnitAttr $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrgUnitInfoResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrgUnitAttr $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrgUnitInfoResponse
      */
-    public function addToMidocoOrgUnitAttr(\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrgUnitAttr $item): self
+    public function addToMidocoOrgUnitAttr(\Pggns\MidocoApi\Documents\StructType\MidocoOrgUnitAttr $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrgUnitAttr) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrgUnitAttr property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrgUnitAttr, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoOrgUnitAttr) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrgUnitAttr property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoOrgUnitAttr, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrgUnitAttr[] = $item;
         

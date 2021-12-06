@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoFeeGroup extends FeeGroupDTO
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeGroup
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeGroup
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +70,7 @@ class MidocoFeeGroup extends FeeGroupDTO
     /**
      * Set isHierarchical value
      * @param bool $isHierarchical
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeGroup
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeGroup
      */
     public function setIsHierarchical(?bool $isHierarchical = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -83,7 +83,7 @@ class ExportJournalDataRequest extends AbstractStructBase
     /**
      * Set booking_year value
      * @param int $booking_year
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportJournalDataRequest
      */
     public function setBooking_year(?int $booking_year = null): self
     {
@@ -106,7 +106,7 @@ class ExportJournalDataRequest extends AbstractStructBase
     /**
      * Set booking_period value
      * @param int $booking_period
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportJournalDataRequest
      */
     public function setBooking_period(?int $booking_period = null): self
     {
@@ -129,7 +129,7 @@ class ExportJournalDataRequest extends AbstractStructBase
     /**
      * Set to_date value
      * @param string $to_date
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportJournalDataRequest
      */
     public function setTo_date(?string $to_date = null): self
     {
@@ -152,7 +152,7 @@ class ExportJournalDataRequest extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportJournalDataRequest
      */
     public function setComment(?string $comment = null): self
     {
@@ -175,7 +175,7 @@ class ExportJournalDataRequest extends AbstractStructBase
     /**
      * Set export_future value
      * @param bool $export_future
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportJournalDataRequest
      */
     public function setExport_future(?bool $export_future = false): self
     {
@@ -198,7 +198,7 @@ class ExportJournalDataRequest extends AbstractStructBase
     /**
      * Set export_old_years value
      * @param bool $export_old_years
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportJournalDataRequest
      */
     public function setExport_old_years(?bool $export_old_years = false): self
     {

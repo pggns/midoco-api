@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -366,7 +366,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setPosition(int $position): self
     {
@@ -389,7 +389,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set serviceCode value
      * @param string $serviceCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setServiceCode(?string $serviceCode = null): self
     {
@@ -412,7 +412,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set serviceName value
      * @param string $serviceName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setServiceName(?string $serviceName = null): self
     {
@@ -435,7 +435,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set serviceDescription value
      * @param string $serviceDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setServiceDescription(?string $serviceDescription = null): self
     {
@@ -458,7 +458,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set accomodation value
      * @param string $accomodation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setAccomodation(?string $accomodation = null): self
     {
@@ -481,7 +481,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set accomodationDescription value
      * @param string $accomodationDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setAccomodationDescription(?string $accomodationDescription = null): self
     {
@@ -504,7 +504,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set catering value
      * @param string $catering
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setCatering(?string $catering = null): self
     {
@@ -527,7 +527,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set cateringDescription value
      * @param string $cateringDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setCateringDescription(?string $cateringDescription = null): self
     {
@@ -550,7 +550,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set locationDescription value
      * @param string $locationDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setLocationDescription(?string $locationDescription = null): self
     {
@@ -573,7 +573,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set allocation value
      * @param string $allocation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setAllocation(?string $allocation = null): self
     {
@@ -596,7 +596,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set noOfServices value
      * @param string $noOfServices
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setNoOfServices(?string $noOfServices = null): self
     {
@@ -619,7 +619,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -646,7 +646,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -673,7 +673,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {
@@ -696,7 +696,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {
@@ -719,7 +719,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -742,7 +742,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setCurrency(?string $currency = 'EUR'): self
     {
@@ -765,7 +765,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set vatIncluded value
      * @param bool $vatIncluded
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setVatIncluded(?bool $vatIncluded = false): self
     {
@@ -788,7 +788,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set country_description value
      * @param string $country_description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setCountry_description(?string $country_description = null): self
     {
@@ -811,7 +811,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set transfer_description value
      * @param string $transfer_description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setTransfer_description(?string $transfer_description = null): self
     {
@@ -834,7 +834,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set address_line1 value
      * @param string $address_line1
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setAddress_line1(?string $address_line1 = null): self
     {
@@ -857,7 +857,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set address_line2 value
      * @param string $address_line2
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setAddress_line2(?string $address_line2 = null): self
     {
@@ -880,7 +880,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set address_line3 value
      * @param string $address_line3
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setAddress_line3(?string $address_line3 = null): self
     {
@@ -903,7 +903,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set address_line4 value
      * @param string $address_line4
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setAddress_line4(?string $address_line4 = null): self
     {
@@ -926,7 +926,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set emergency_Number value
      * @param string $emergency_Number
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setEmergency_Number(?string $emergency_Number = null): self
     {
@@ -949,7 +949,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set corporateDiscount value
      * @param string $corporateDiscount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setCorporateDiscount(?string $corporateDiscount = null): self
     {
@@ -999,7 +999,7 @@ class AccomodationServiceType extends AbstractStructBase
      * Set travelerRefId value
      * @throws InvalidArgumentException
      * @param int[] $travelerRefId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setTravelerRefId(?array $travelerRefId = null): self
     {
@@ -1015,7 +1015,7 @@ class AccomodationServiceType extends AbstractStructBase
      * Add item to travelerRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function addToTravelerRefId(int $item): self
     {
@@ -1038,7 +1038,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set chain value
      * @param string $chain
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setChain(?string $chain = null): self
     {
@@ -1061,7 +1061,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setCategory(?string $category = null): self
     {
@@ -1084,7 +1084,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -1107,7 +1107,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -1130,7 +1130,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -1153,7 +1153,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set extId value
      * @param string $extId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setExtId(?string $extId = null): self
     {
@@ -1176,7 +1176,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set sourceSystem value
      * @param string $sourceSystem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setSourceSystem(?string $sourceSystem = null): self
     {
@@ -1199,7 +1199,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set sourceExtId value
      * @param string $sourceExtId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setSourceExtId(?string $sourceExtId = null): self
     {
@@ -1222,7 +1222,7 @@ class AccomodationServiceType extends AbstractStructBase
     /**
      * Set airportCode value
      * @param string $airportCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccomodationServiceType
+     * @return \Pggns\MidocoApi\Order\StructType\AccomodationServiceType
      */
     public function setAirportCode(?string $airportCode = null): self
     {

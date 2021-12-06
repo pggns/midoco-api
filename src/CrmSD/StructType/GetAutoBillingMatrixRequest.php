@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class GetAutoBillingMatrixRequest extends AbstractStructBase
     /**
      * Set crsName value
      * @param string $crsName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAutoBillingMatrixRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAutoBillingMatrixRequest
      */
     public function setCrsName(?string $crsName = null): self
     {
@@ -94,7 +94,7 @@ class GetAutoBillingMatrixRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAutoBillingMatrixRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAutoBillingMatrixRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -117,7 +117,7 @@ class GetAutoBillingMatrixRequest extends AbstractStructBase
     /**
      * Set deliveryType value
      * @param string $deliveryType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAutoBillingMatrixRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAutoBillingMatrixRequest
      */
     public function setDeliveryType(?string $deliveryType = null): self
     {
@@ -140,7 +140,7 @@ class GetAutoBillingMatrixRequest extends AbstractStructBase
     /**
      * Set isFeeRequired value
      * @param bool $isFeeRequired
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAutoBillingMatrixRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAutoBillingMatrixRequest
      */
     public function setIsFeeRequired(?bool $isFeeRequired = null): self
     {
@@ -163,7 +163,7 @@ class GetAutoBillingMatrixRequest extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAutoBillingMatrixRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAutoBillingMatrixRequest
      */
     public function setTravelType(?string $travelType = null): self
     {

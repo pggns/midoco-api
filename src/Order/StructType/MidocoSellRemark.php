@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoSellRemark extends SellRemarkDTO
     /**
      * Set passengerAssignment value
      * @param string $passengerAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellRemark
      */
     public function setPassengerAssignment(?string $passengerAssignment = null): self
     {
@@ -70,7 +70,7 @@ class MidocoSellRemark extends SellRemarkDTO
     /**
      * Set segmentAssignment value
      * @param string $segmentAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellRemark
      */
     public function setSegmentAssignment(?string $segmentAssignment = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class OrderCreditCheckLogDTO extends AbstractStructBase
     /**
      * Set creditCheckId value
      * @param int $creditCheckId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderCreditCheckLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCreditCheckLogDTO
      */
     public function setCreditCheckId(?int $creditCheckId = null): self
     {
@@ -110,7 +110,7 @@ class OrderCreditCheckLogDTO extends AbstractStructBase
     /**
      * Set logTimestamp value
      * @param string $logTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderCreditCheckLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCreditCheckLogDTO
      */
     public function setLogTimestamp(?string $logTimestamp = null): self
     {
@@ -133,7 +133,7 @@ class OrderCreditCheckLogDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderCreditCheckLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCreditCheckLogDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -156,7 +156,7 @@ class OrderCreditCheckLogDTO extends AbstractStructBase
     /**
      * Set requestString value
      * @param string $requestString
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderCreditCheckLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCreditCheckLogDTO
      */
     public function setRequestString(?string $requestString = null): self
     {
@@ -179,7 +179,7 @@ class OrderCreditCheckLogDTO extends AbstractStructBase
     /**
      * Set responseString value
      * @param string $responseString
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderCreditCheckLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCreditCheckLogDTO
      */
     public function setResponseString(?string $responseString = null): self
     {
@@ -202,7 +202,7 @@ class OrderCreditCheckLogDTO extends AbstractStructBase
     /**
      * Set techStatus value
      * @param string $techStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderCreditCheckLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCreditCheckLogDTO
      */
     public function setTechStatus(?string $techStatus = null): self
     {
@@ -225,7 +225,7 @@ class OrderCreditCheckLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderCreditCheckLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCreditCheckLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SimuFeeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSimuFee
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSimuFee[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSimuFee[]
      */
     protected ?array $MidocoSimuFee = null;
     /**
      * Constructor method for SimuFeeResponse
      * @uses SimuFeeResponse::setMidocoSimuFee()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSimuFee[] $midocoSimuFee
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSimuFee[] $midocoSimuFee
      */
     public function __construct(?array $midocoSimuFee = null)
     {
@@ -34,7 +34,7 @@ class SimuFeeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSimuFee value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSimuFee[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSimuFee[]
      */
     public function getMidocoSimuFee(): ?array
     {
@@ -55,12 +55,12 @@ class SimuFeeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $simuFeeResponseMidocoSimuFeeItem) {
             // validation for constraint: itemType
-            if (!$simuFeeResponseMidocoSimuFeeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSimuFee) {
+            if (!$simuFeeResponseMidocoSimuFeeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSimuFee) {
                 $invalidValues[] = is_object($simuFeeResponseMidocoSimuFeeItem) ? get_class($simuFeeResponseMidocoSimuFeeItem) : sprintf('%s(%s)', gettype($simuFeeResponseMidocoSimuFeeItem), var_export($simuFeeResponseMidocoSimuFeeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSimuFee property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSimuFee, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSimuFee property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSimuFee, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SimuFeeResponse extends AbstractStructBase
     /**
      * Set MidocoSimuFee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSimuFee[] $midocoSimuFee
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SimuFeeResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSimuFee[] $midocoSimuFee
+     * @return \Pggns\MidocoApi\Order\StructType\SimuFeeResponse
      */
     public function setMidocoSimuFee(?array $midocoSimuFee = null): self
     {
@@ -85,14 +85,14 @@ class SimuFeeResponse extends AbstractStructBase
     /**
      * Add item to MidocoSimuFee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSimuFee $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SimuFeeResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSimuFee $item
+     * @return \Pggns\MidocoApi\Order\StructType\SimuFeeResponse
      */
-    public function addToMidocoSimuFee(\Pggns\MidocoApi\Api\Order\StructType\MidocoSimuFee $item): self
+    public function addToMidocoSimuFee(\Pggns\MidocoApi\Order\StructType\MidocoSimuFee $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSimuFee) {
-            throw new InvalidArgumentException(sprintf('The MidocoSimuFee property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSimuFee, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSimuFee) {
+            throw new InvalidArgumentException(sprintf('The MidocoSimuFee property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSimuFee, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSimuFee[] = $item;
         

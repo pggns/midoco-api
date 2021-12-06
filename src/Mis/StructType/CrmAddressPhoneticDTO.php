@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class CrmAddressPhoneticDTO extends AbstractStructBase
     /**
      * Set addressId value
      * @param int $addressId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmAddressPhoneticDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmAddressPhoneticDTO
      */
     public function setAddressId(?int $addressId = null): self
     {
@@ -94,7 +94,7 @@ class CrmAddressPhoneticDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmAddressPhoneticDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmAddressPhoneticDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -117,7 +117,7 @@ class CrmAddressPhoneticDTO extends AbstractStructBase
     /**
      * Set exactCity value
      * @param string $exactCity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmAddressPhoneticDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmAddressPhoneticDTO
      */
     public function setExactCity(?string $exactCity = null): self
     {
@@ -140,7 +140,7 @@ class CrmAddressPhoneticDTO extends AbstractStructBase
     /**
      * Set exactStreet value
      * @param string $exactStreet
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmAddressPhoneticDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmAddressPhoneticDTO
      */
     public function setExactStreet(?string $exactStreet = null): self
     {
@@ -163,7 +163,7 @@ class CrmAddressPhoneticDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmAddressPhoneticDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmAddressPhoneticDTO
      */
     public function setStreet(?string $street = null): self
     {

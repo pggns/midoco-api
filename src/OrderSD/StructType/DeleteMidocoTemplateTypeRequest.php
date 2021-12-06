@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class DeleteMidocoTemplateTypeRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteMidocoTemplateTypeRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteMidocoTemplateTypeRequest
      */
     public function setType(string $type): self
     {

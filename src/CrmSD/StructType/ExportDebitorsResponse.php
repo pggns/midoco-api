@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ExportDebitorsResponse extends AbstractStructBase
     /**
      * Set AccountData value
      * @param string $accountData
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ExportDebitorsResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ExportDebitorsResponse
      */
     public function setAccountData(?string $accountData = null): self
     {
@@ -70,7 +70,7 @@ class ExportDebitorsResponse extends AbstractStructBase
     /**
      * Set numberOfRows value
      * @param int $numberOfRows
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ExportDebitorsResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ExportDebitorsResponse
      */
     public function setNumberOfRows(?int $numberOfRows = null): self
     {

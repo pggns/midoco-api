@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CustomerExportDTO extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerExportDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerExportDTO
      */
     public function setExportId(?int $exportId = null): self
     {
@@ -78,7 +78,7 @@ class CustomerExportDTO extends AbstractStructBase
     /**
      * Set exportTimestamp value
      * @param string $exportTimestamp
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerExportDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerExportDTO
      */
     public function setExportTimestamp(?string $exportTimestamp = null): self
     {
@@ -101,7 +101,7 @@ class CustomerExportDTO extends AbstractStructBase
     /**
      * Set exportType value
      * @param string $exportType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerExportDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerExportDTO
      */
     public function setExportType(?string $exportType = null): self
     {

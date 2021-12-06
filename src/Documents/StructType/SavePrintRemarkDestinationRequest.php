@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SavePrintRemarkDestinationRequest extends AbstractStructBase
      * The MidocoPrintRemarkDestination
      * Meta information extracted from the WSDL
      * - ref: MidocoPrintRemarkDestination
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoPrintRemarkDestination|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoPrintRemarkDestination|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoPrintRemarkDestination $MidocoPrintRemarkDestination = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoPrintRemarkDestination $MidocoPrintRemarkDestination = null;
     /**
      * The unitName
      * @var string|null
@@ -29,10 +29,10 @@ class SavePrintRemarkDestinationRequest extends AbstractStructBase
      * Constructor method for SavePrintRemarkDestinationRequest
      * @uses SavePrintRemarkDestinationRequest::setMidocoPrintRemarkDestination()
      * @uses SavePrintRemarkDestinationRequest::setUnitName()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoPrintRemarkDestination $midocoPrintRemarkDestination
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoPrintRemarkDestination $midocoPrintRemarkDestination
      * @param string $unitName
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoPrintRemarkDestination $midocoPrintRemarkDestination = null, ?string $unitName = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoPrintRemarkDestination $midocoPrintRemarkDestination = null, ?string $unitName = null)
     {
         $this
             ->setMidocoPrintRemarkDestination($midocoPrintRemarkDestination)
@@ -40,18 +40,18 @@ class SavePrintRemarkDestinationRequest extends AbstractStructBase
     }
     /**
      * Get MidocoPrintRemarkDestination value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPrintRemarkDestination|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPrintRemarkDestination|null
      */
-    public function getMidocoPrintRemarkDestination(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoPrintRemarkDestination
+    public function getMidocoPrintRemarkDestination(): ?\Pggns\MidocoApi\Documents\StructType\MidocoPrintRemarkDestination
     {
         return $this->MidocoPrintRemarkDestination;
     }
     /**
      * Set MidocoPrintRemarkDestination value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoPrintRemarkDestination $midocoPrintRemarkDestination
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SavePrintRemarkDestinationRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoPrintRemarkDestination $midocoPrintRemarkDestination
+     * @return \Pggns\MidocoApi\Documents\StructType\SavePrintRemarkDestinationRequest
      */
-    public function setMidocoPrintRemarkDestination(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoPrintRemarkDestination $midocoPrintRemarkDestination = null): self
+    public function setMidocoPrintRemarkDestination(?\Pggns\MidocoApi\Documents\StructType\MidocoPrintRemarkDestination $midocoPrintRemarkDestination = null): self
     {
         $this->MidocoPrintRemarkDestination = $midocoPrintRemarkDestination;
         
@@ -68,7 +68,7 @@ class SavePrintRemarkDestinationRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SavePrintRemarkDestinationRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SavePrintRemarkDestinationRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

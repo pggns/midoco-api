@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetOrgunitExternalLinksRequest extends AbstractStructBase
      * The MidocoOrgunitExternalLink
      * Meta information extracted from the WSDL
      * - ref: MidocoOrgunitExternalLink
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO|null
+     * @var \Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO $MidocoOrgunitExternalLink = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO $MidocoOrgunitExternalLink = null;
     /**
      * Constructor method for GetOrgunitExternalLinksRequest
      * @uses GetOrgunitExternalLinksRequest::setMidocoOrgunitExternalLink()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink
+     * @param \Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink = null)
     {
         $this
             ->setMidocoOrgunitExternalLink($midocoOrgunitExternalLink);
     }
     /**
      * Get MidocoOrgunitExternalLink value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO|null
+     * @return \Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO|null
      */
-    public function getMidocoOrgunitExternalLink(): ?\Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO
+    public function getMidocoOrgunitExternalLink(): ?\Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO
     {
         return $this->MidocoOrgunitExternalLink;
     }
     /**
      * Set MidocoOrgunitExternalLink value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetOrgunitExternalLinksRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink
+     * @return \Pggns\MidocoApi\Booking\StructType\GetOrgunitExternalLinksRequest
      */
-    public function setMidocoOrgunitExternalLink(?\Pggns\MidocoApi\Api\Booking\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink = null): self
+    public function setMidocoOrgunitExternalLink(?\Pggns\MidocoApi\Booking\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink = null): self
     {
         $this->MidocoOrgunitExternalLink = $midocoOrgunitExternalLink;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetAvailableCampaignFieldsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCampaignFieldExt
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignFieldExt[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoCampaignFieldExt[]
      */
     protected ?array $MidocoCampaignFieldExt = null;
     /**
      * Constructor method for GetAvailableCampaignFieldsResponse
      * @uses GetAvailableCampaignFieldsResponse::setMidocoCampaignFieldExt()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignFieldExt[] $midocoCampaignFieldExt
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCampaignFieldExt[] $midocoCampaignFieldExt
      */
     public function __construct(?array $midocoCampaignFieldExt = null)
     {
@@ -36,7 +36,7 @@ class GetAvailableCampaignFieldsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCampaignFieldExt value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignFieldExt[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCampaignFieldExt[]
      */
     public function getMidocoCampaignFieldExt(): ?array
     {
@@ -57,12 +57,12 @@ class GetAvailableCampaignFieldsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailableCampaignFieldsResponseMidocoCampaignFieldExtItem) {
             // validation for constraint: itemType
-            if (!$getAvailableCampaignFieldsResponseMidocoCampaignFieldExtItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignFieldExt) {
+            if (!$getAvailableCampaignFieldsResponseMidocoCampaignFieldExtItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoCampaignFieldExt) {
                 $invalidValues[] = is_object($getAvailableCampaignFieldsResponseMidocoCampaignFieldExtItem) ? get_class($getAvailableCampaignFieldsResponseMidocoCampaignFieldExtItem) : sprintf('%s(%s)', gettype($getAvailableCampaignFieldsResponseMidocoCampaignFieldExtItem), var_export($getAvailableCampaignFieldsResponseMidocoCampaignFieldExtItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCampaignFieldExt property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignFieldExt, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCampaignFieldExt property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoCampaignFieldExt, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetAvailableCampaignFieldsResponse extends AbstractStructBase
     /**
      * Set MidocoCampaignFieldExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignFieldExt[] $midocoCampaignFieldExt
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAvailableCampaignFieldsResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCampaignFieldExt[] $midocoCampaignFieldExt
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAvailableCampaignFieldsResponse
      */
     public function setMidocoCampaignFieldExt(?array $midocoCampaignFieldExt = null): self
     {
@@ -87,14 +87,14 @@ class GetAvailableCampaignFieldsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCampaignFieldExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignFieldExt $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAvailableCampaignFieldsResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCampaignFieldExt $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAvailableCampaignFieldsResponse
      */
-    public function addToMidocoCampaignFieldExt(\Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignFieldExt $item): self
+    public function addToMidocoCampaignFieldExt(\Pggns\MidocoApi\Mis\StructType\MidocoCampaignFieldExt $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignFieldExt) {
-            throw new InvalidArgumentException(sprintf('The MidocoCampaignFieldExt property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoCampaignFieldExt, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoCampaignFieldExt) {
+            throw new InvalidArgumentException(sprintf('The MidocoCampaignFieldExt property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoCampaignFieldExt, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCampaignFieldExt[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetBillingPrintInfoResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingPrintInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPrintInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingPrintInfo[]
      */
     protected ?array $MidocoBillingPrintInfo = null;
     /**
@@ -43,7 +43,7 @@ class GetBillingPrintInfoResponse extends AbstractStructBase
      * @uses GetBillingPrintInfoResponse::setAllowPartialPayments()
      * @uses GetBillingPrintInfoResponse::setReachedTotalOrderInkasso()
      * @uses GetBillingPrintInfoResponse::setAllowCollectiveInvoice()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPrintInfo[] $midocoBillingPrintInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPrintInfo[] $midocoBillingPrintInfo
      * @param bool $allowPartialPayments
      * @param bool $reachedTotalOrderInkasso
      * @param bool $allowCollectiveInvoice
@@ -58,7 +58,7 @@ class GetBillingPrintInfoResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingPrintInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPrintInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPrintInfo[]
      */
     public function getMidocoBillingPrintInfo(): ?array
     {
@@ -79,12 +79,12 @@ class GetBillingPrintInfoResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBillingPrintInfoResponseMidocoBillingPrintInfoItem) {
             // validation for constraint: itemType
-            if (!$getBillingPrintInfoResponseMidocoBillingPrintInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPrintInfo) {
+            if (!$getBillingPrintInfoResponseMidocoBillingPrintInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingPrintInfo) {
                 $invalidValues[] = is_object($getBillingPrintInfoResponseMidocoBillingPrintInfoItem) ? get_class($getBillingPrintInfoResponseMidocoBillingPrintInfoItem) : sprintf('%s(%s)', gettype($getBillingPrintInfoResponseMidocoBillingPrintInfoItem), var_export($getBillingPrintInfoResponseMidocoBillingPrintInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingPrintInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPrintInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingPrintInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingPrintInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -93,8 +93,8 @@ class GetBillingPrintInfoResponse extends AbstractStructBase
     /**
      * Set MidocoBillingPrintInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPrintInfo[] $midocoBillingPrintInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPrintInfoResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPrintInfo[] $midocoBillingPrintInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPrintInfoResponse
      */
     public function setMidocoBillingPrintInfo(?array $midocoBillingPrintInfo = null): self
     {
@@ -109,14 +109,14 @@ class GetBillingPrintInfoResponse extends AbstractStructBase
     /**
      * Add item to MidocoBillingPrintInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPrintInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPrintInfoResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPrintInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPrintInfoResponse
      */
-    public function addToMidocoBillingPrintInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPrintInfo $item): self
+    public function addToMidocoBillingPrintInfo(\Pggns\MidocoApi\Order\StructType\MidocoBillingPrintInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPrintInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingPrintInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPrintInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingPrintInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingPrintInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingPrintInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingPrintInfo[] = $item;
         
@@ -133,7 +133,7 @@ class GetBillingPrintInfoResponse extends AbstractStructBase
     /**
      * Set allowPartialPayments value
      * @param bool $allowPartialPayments
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPrintInfoResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPrintInfoResponse
      */
     public function setAllowPartialPayments(?bool $allowPartialPayments = null): self
     {
@@ -156,7 +156,7 @@ class GetBillingPrintInfoResponse extends AbstractStructBase
     /**
      * Set reachedTotalOrderInkasso value
      * @param bool $reachedTotalOrderInkasso
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPrintInfoResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPrintInfoResponse
      */
     public function setReachedTotalOrderInkasso(?bool $reachedTotalOrderInkasso = null): self
     {
@@ -179,7 +179,7 @@ class GetBillingPrintInfoResponse extends AbstractStructBase
     /**
      * Set allowCollectiveInvoice value
      * @param bool $allowCollectiveInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPrintInfoResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPrintInfoResponse
      */
     public function setAllowCollectiveInvoice(?bool $allowCollectiveInvoice = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteOrgunitExternalLinksRequest extends AbstractStructBase
     /**
      * Set extLinkId value
      * @param int $extLinkId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DeleteOrgunitExternalLinksRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DeleteOrgunitExternalLinksRequest
      */
     public function setExtLinkId(?int $extLinkId = null): self
     {

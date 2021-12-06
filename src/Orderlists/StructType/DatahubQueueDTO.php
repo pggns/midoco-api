@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -183,7 +183,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -206,7 +206,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set env value
      * @param string $env
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setEnv(?string $env = null): self
     {
@@ -229,7 +229,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set externalSystem value
      * @param string $externalSystem
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setExternalSystem(?string $externalSystem = null): self
     {
@@ -252,7 +252,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setId(?int $id = null): self
     {
@@ -275,7 +275,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set importError value
      * @param string $importError
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setImportError(?string $importError = null): self
     {
@@ -298,7 +298,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set importUser value
      * @param int $importUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setImportUser(?int $importUser = null): self
     {
@@ -321,7 +321,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set importableAloneAfter value
      * @param string $importableAloneAfter
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setImportableAloneAfter(?string $importableAloneAfter = null): self
     {
@@ -344,7 +344,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set isIgnored value
      * @param bool $isIgnored
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setIsIgnored(?bool $isIgnored = null): self
     {
@@ -367,7 +367,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set isImportableAlone value
      * @param bool $isImportableAlone
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setIsImportableAlone(?bool $isImportableAlone = null): self
     {
@@ -390,7 +390,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set isImported value
      * @param bool $isImported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setIsImported(?bool $isImported = null): self
     {
@@ -413,7 +413,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set isProcessed value
      * @param bool $isProcessed
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setIsProcessed(?bool $isProcessed = null): self
     {
@@ -436,7 +436,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set messageBytes value
      * @param string $messageBytes
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setMessageBytes(?string $messageBytes = null): self
     {
@@ -459,7 +459,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set messageType value
      * @param string $messageType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setMessageType(?string $messageType = null): self
     {
@@ -482,7 +482,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -505,7 +505,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set processedTime value
      * @param string $processedTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setProcessedTime(?string $processedTime = null): self
     {
@@ -528,7 +528,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set processingStart value
      * @param string $processingStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setProcessingStart(?string $processingStart = null): self
     {
@@ -551,7 +551,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set reservationId value
      * @param string $reservationId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setReservationId(?string $reservationId = null): self
     {
@@ -574,7 +574,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set systemId value
      * @param string $systemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setSystemId(?string $systemId = null): self
     {
@@ -597,7 +597,7 @@ class DatahubQueueDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatahubQueueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

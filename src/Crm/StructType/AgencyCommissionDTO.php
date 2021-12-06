@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class AgencyCommissionDTO extends AbstractStructBase
     /**
      * Set agencyCommissionId value
      * @param int $agencyCommissionId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyCommissionDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyCommissionDTO
      */
     public function setAgencyCommissionId(?int $agencyCommissionId = null): self
     {
@@ -102,7 +102,7 @@ class AgencyCommissionDTO extends AbstractStructBase
     /**
      * Set bookedUntil value
      * @param string $bookedUntil
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyCommissionDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyCommissionDTO
      */
     public function setBookedUntil(?string $bookedUntil = null): self
     {
@@ -125,7 +125,7 @@ class AgencyCommissionDTO extends AbstractStructBase
     /**
      * Set commissionLevelId value
      * @param string $commissionLevelId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyCommissionDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyCommissionDTO
      */
     public function setCommissionLevelId(?string $commissionLevelId = null): self
     {
@@ -148,7 +148,7 @@ class AgencyCommissionDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyCommissionDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyCommissionDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -171,7 +171,7 @@ class AgencyCommissionDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyCommissionDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyCommissionDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -194,7 +194,7 @@ class AgencyCommissionDTO extends AbstractStructBase
     /**
      * Set validUntil value
      * @param string $validUntil
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyCommissionDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyCommissionDTO
      */
     public function setValidUntil(?string $validUntil = null): self
     {

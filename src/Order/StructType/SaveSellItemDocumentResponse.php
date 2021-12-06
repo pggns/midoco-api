@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveSellItemDocumentResponse extends AbstractStructBase
      * The MidocoSellItemDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoSellItemDocument
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO $MidocoSellItemDocument = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO $MidocoSellItemDocument = null;
     /**
      * Constructor method for SaveSellItemDocumentResponse
      * @uses SaveSellItemDocumentResponse::setMidocoSellItemDocument()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO $midocoSellItemDocument
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO $midocoSellItemDocument
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO $midocoSellItemDocument = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO $midocoSellItemDocument = null)
     {
         $this
             ->setMidocoSellItemDocument($midocoSellItemDocument);
     }
     /**
      * Get MidocoSellItemDocument value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO|null
      */
-    public function getMidocoSellItemDocument(): ?\Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO
+    public function getMidocoSellItemDocument(): ?\Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO
     {
         return $this->MidocoSellItemDocument;
     }
     /**
      * Set MidocoSellItemDocument value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO $midocoSellItemDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveSellItemDocumentResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO $midocoSellItemDocument
+     * @return \Pggns\MidocoApi\Order\StructType\SaveSellItemDocumentResponse
      */
-    public function setMidocoSellItemDocument(?\Pggns\MidocoApi\Api\Order\StructType\SellItemDocumentDTO $midocoSellItemDocument = null): self
+    public function setMidocoSellItemDocument(?\Pggns\MidocoApi\Order\StructType\SellItemDocumentDTO $midocoSellItemDocument = null): self
     {
         $this->MidocoSellItemDocument = $midocoSellItemDocument;
         

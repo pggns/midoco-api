@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -80,7 +80,7 @@ class GetGeographicalCategoryRequest extends AbstractStructBase
      * Set countryCode value
      * @throws InvalidArgumentException
      * @param string[] $countryCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetGeographicalCategoryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetGeographicalCategoryRequest
      */
     public function setCountryCode(?array $countryCode = null): self
     {
@@ -96,7 +96,7 @@ class GetGeographicalCategoryRequest extends AbstractStructBase
      * Add item to countryCode value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetGeographicalCategoryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetGeographicalCategoryRequest
      */
     public function addToCountryCode(string $item): self
     {
@@ -119,7 +119,7 @@ class GetGeographicalCategoryRequest extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetGeographicalCategoryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetGeographicalCategoryRequest
      */
     public function setTravelDate(?string $travelDate = null): self
     {

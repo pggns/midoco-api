@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoRemarkCategory extends RemarkCategoryDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoRemarkCategoryDesc
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\RemarkCategoryDescDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\RemarkCategoryDescDTO[]
      */
     protected ?array $MidocoRemarkCategoryDesc = null;
     /**
@@ -37,7 +37,7 @@ class MidocoRemarkCategory extends RemarkCategoryDTO
      * @uses MidocoRemarkCategory::setMidocoRemarkCategoryDesc()
      * @uses MidocoRemarkCategory::setIsInheritance()
      * @uses MidocoRemarkCategory::setCalcedDesc()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\RemarkCategoryDescDTO[] $midocoRemarkCategoryDesc
+     * @param \Pggns\MidocoApi\Documents\StructType\RemarkCategoryDescDTO[] $midocoRemarkCategoryDesc
      * @param bool $isInheritance
      * @param string $calcedDesc
      */
@@ -50,7 +50,7 @@ class MidocoRemarkCategory extends RemarkCategoryDTO
     }
     /**
      * Get MidocoRemarkCategoryDesc value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RemarkCategoryDescDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\RemarkCategoryDescDTO[]
      */
     public function getMidocoRemarkCategoryDesc(): ?array
     {
@@ -71,12 +71,12 @@ class MidocoRemarkCategory extends RemarkCategoryDTO
         $invalidValues = [];
         foreach ($values as $midocoRemarkCategoryMidocoRemarkCategoryDescItem) {
             // validation for constraint: itemType
-            if (!$midocoRemarkCategoryMidocoRemarkCategoryDescItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\RemarkCategoryDescDTO) {
+            if (!$midocoRemarkCategoryMidocoRemarkCategoryDescItem instanceof \Pggns\MidocoApi\Documents\StructType\RemarkCategoryDescDTO) {
                 $invalidValues[] = is_object($midocoRemarkCategoryMidocoRemarkCategoryDescItem) ? get_class($midocoRemarkCategoryMidocoRemarkCategoryDescItem) : sprintf('%s(%s)', gettype($midocoRemarkCategoryMidocoRemarkCategoryDescItem), var_export($midocoRemarkCategoryMidocoRemarkCategoryDescItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRemarkCategoryDesc property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\RemarkCategoryDescDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRemarkCategoryDesc property can only contain items of type \Pggns\MidocoApi\Documents\StructType\RemarkCategoryDescDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class MidocoRemarkCategory extends RemarkCategoryDTO
     /**
      * Set MidocoRemarkCategoryDesc value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\RemarkCategoryDescDTO[] $midocoRemarkCategoryDesc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory
+     * @param \Pggns\MidocoApi\Documents\StructType\RemarkCategoryDescDTO[] $midocoRemarkCategoryDesc
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory
      */
     public function setMidocoRemarkCategoryDesc(?array $midocoRemarkCategoryDesc = null): self
     {
@@ -101,14 +101,14 @@ class MidocoRemarkCategory extends RemarkCategoryDTO
     /**
      * Add item to MidocoRemarkCategoryDesc value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\RemarkCategoryDescDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory
+     * @param \Pggns\MidocoApi\Documents\StructType\RemarkCategoryDescDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory
      */
-    public function addToMidocoRemarkCategoryDesc(\Pggns\MidocoApi\Api\Documents\StructType\RemarkCategoryDescDTO $item): self
+    public function addToMidocoRemarkCategoryDesc(\Pggns\MidocoApi\Documents\StructType\RemarkCategoryDescDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\RemarkCategoryDescDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoRemarkCategoryDesc property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\RemarkCategoryDescDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\RemarkCategoryDescDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoRemarkCategoryDesc property can only contain items of type \Pggns\MidocoApi\Documents\StructType\RemarkCategoryDescDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRemarkCategoryDesc[] = $item;
         
@@ -125,7 +125,7 @@ class MidocoRemarkCategory extends RemarkCategoryDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {
@@ -148,7 +148,7 @@ class MidocoRemarkCategory extends RemarkCategoryDTO
     /**
      * Set calcedDesc value
      * @param string $calcedDesc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemarkCategory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemarkCategory
      */
     public function setCalcedDesc(?string $calcedDesc = null): self
     {

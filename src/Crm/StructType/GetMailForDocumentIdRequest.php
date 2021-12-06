@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,24 +19,24 @@ class GetMailForDocumentIdRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 1
      * - ref: MidocoDocumentBinary
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoDocumentBinary[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoDocumentBinary[]
      */
     protected array $MidocoDocumentBinary;
     /**
      * The MidocoCrmCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
      * Constructor method for GetMailForDocumentIdRequest
      * @uses GetMailForDocumentIdRequest::setMidocoDocumentBinary()
      * @uses GetMailForDocumentIdRequest::setMidocoCrmCustomer()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoDocumentBinary[] $midocoDocumentBinary
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoDocumentBinary[] $midocoDocumentBinary
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer
      */
-    public function __construct(array $midocoDocumentBinary, ?\Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer = null)
+    public function __construct(array $midocoDocumentBinary, ?\Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer = null)
     {
         $this
             ->setMidocoDocumentBinary($midocoDocumentBinary)
@@ -44,7 +44,7 @@ class GetMailForDocumentIdRequest extends AbstractStructBase
     }
     /**
      * Get MidocoDocumentBinary value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoDocumentBinary[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoDocumentBinary[]
      */
     public function getMidocoDocumentBinary(): array
     {
@@ -65,12 +65,12 @@ class GetMailForDocumentIdRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMailForDocumentIdRequestMidocoDocumentBinaryItem) {
             // validation for constraint: itemType
-            if (!$getMailForDocumentIdRequestMidocoDocumentBinaryItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoDocumentBinary) {
+            if (!$getMailForDocumentIdRequestMidocoDocumentBinaryItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoDocumentBinary) {
                 $invalidValues[] = is_object($getMailForDocumentIdRequestMidocoDocumentBinaryItem) ? get_class($getMailForDocumentIdRequestMidocoDocumentBinaryItem) : sprintf('%s(%s)', gettype($getMailForDocumentIdRequestMidocoDocumentBinaryItem), var_export($getMailForDocumentIdRequestMidocoDocumentBinaryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDocumentBinary property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoDocumentBinary, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDocumentBinary property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoDocumentBinary, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -79,8 +79,8 @@ class GetMailForDocumentIdRequest extends AbstractStructBase
     /**
      * Set MidocoDocumentBinary value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoDocumentBinary[] $midocoDocumentBinary
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMailForDocumentIdRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoDocumentBinary[] $midocoDocumentBinary
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMailForDocumentIdRequest
      */
     public function setMidocoDocumentBinary(array $midocoDocumentBinary): self
     {
@@ -95,14 +95,14 @@ class GetMailForDocumentIdRequest extends AbstractStructBase
     /**
      * Add item to MidocoDocumentBinary value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoDocumentBinary $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMailForDocumentIdRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoDocumentBinary $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMailForDocumentIdRequest
      */
-    public function addToMidocoDocumentBinary(\Pggns\MidocoApi\Api\Crm\StructType\MidocoDocumentBinary $item): self
+    public function addToMidocoDocumentBinary(\Pggns\MidocoApi\Crm\StructType\MidocoDocumentBinary $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoDocumentBinary) {
-            throw new InvalidArgumentException(sprintf('The MidocoDocumentBinary property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoDocumentBinary, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoDocumentBinary) {
+            throw new InvalidArgumentException(sprintf('The MidocoDocumentBinary property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoDocumentBinary, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDocumentBinary[] = $item;
         
@@ -110,18 +110,18 @@ class GetMailForDocumentIdRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMailForDocumentIdRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMailForDocumentIdRequest
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         

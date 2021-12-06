@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAgencyCooperationHistory
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoAgencyCooperationHistory[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory[]
      */
     protected ?array $MidocoAgencyCooperationHistory = null;
     /**
@@ -31,7 +31,7 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
      * Constructor method for GetAgencyCooperationHistoryResponse
      * @uses GetAgencyCooperationHistoryResponse::setMidocoAgencyCooperationHistory()
      * @uses GetAgencyCooperationHistoryResponse::setCurrentCooperationId()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoAgencyCooperationHistory[] $midocoAgencyCooperationHistory
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory[] $midocoAgencyCooperationHistory
      * @param string $currentCooperationId
      */
     public function __construct(?array $midocoAgencyCooperationHistory = null, ?string $currentCooperationId = null)
@@ -42,7 +42,7 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAgencyCooperationHistory value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoAgencyCooperationHistory[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory[]
      */
     public function getMidocoAgencyCooperationHistory(): ?array
     {
@@ -63,12 +63,12 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem) {
             // validation for constraint: itemType
-            if (!$getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoAgencyCooperationHistory) {
+            if (!$getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory) {
                 $invalidValues[] = is_object($getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem) ? get_class($getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem) : sprintf('%s(%s)', gettype($getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem), var_export($getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAgencyCooperationHistory property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoAgencyCooperationHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAgencyCooperationHistory property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,8 +77,8 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
     /**
      * Set MidocoAgencyCooperationHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoAgencyCooperationHistory[] $midocoAgencyCooperationHistory
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAgencyCooperationHistoryResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory[] $midocoAgencyCooperationHistory
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgencyCooperationHistoryResponse
      */
     public function setMidocoAgencyCooperationHistory(?array $midocoAgencyCooperationHistory = null): self
     {
@@ -93,14 +93,14 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
     /**
      * Add item to MidocoAgencyCooperationHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoAgencyCooperationHistory $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAgencyCooperationHistoryResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgencyCooperationHistoryResponse
      */
-    public function addToMidocoAgencyCooperationHistory(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoAgencyCooperationHistory $item): self
+    public function addToMidocoAgencyCooperationHistory(\Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoAgencyCooperationHistory) {
-            throw new InvalidArgumentException(sprintf('The MidocoAgencyCooperationHistory property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoAgencyCooperationHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory) {
+            throw new InvalidArgumentException(sprintf('The MidocoAgencyCooperationHistory property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAgencyCooperationHistory[] = $item;
         
@@ -117,7 +117,7 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
     /**
      * Set currentCooperationId value
      * @param string $currentCooperationId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAgencyCooperationHistoryResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgencyCooperationHistoryResponse
      */
     public function setCurrentCooperationId(?string $currentCooperationId = null): self
     {

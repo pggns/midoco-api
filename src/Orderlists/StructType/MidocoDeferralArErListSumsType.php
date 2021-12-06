@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoDeferralArErListSumsType extends AbstractStructBase
     /**
      * Set outgoingIncoming value
      * @param string $outgoingIncoming
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErListSumsType
      */
     public function setOutgoingIncoming(?string $outgoingIncoming = null): self
     {
@@ -86,7 +86,7 @@ class MidocoDeferralArErListSumsType extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErListSumsType
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -109,7 +109,7 @@ class MidocoDeferralArErListSumsType extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErListSumsType
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -132,7 +132,7 @@ class MidocoDeferralArErListSumsType extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDeferralArErListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDeferralArErListSumsType
      */
     public function setAmount(?float $amount = null): self
     {

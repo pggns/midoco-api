@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetFilteredBillingDocumentsForOrderRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFilteredBillingDocumentsForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetFilteredBillingDocumentsForOrderRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -70,7 +70,7 @@ class GetFilteredBillingDocumentsForOrderRequest extends AbstractStructBase
     /**
      * Set filter value
      * @param string $filter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFilteredBillingDocumentsForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetFilteredBillingDocumentsForOrderRequest
      */
     public function setFilter(?string $filter = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class ProdTypesMediatorCondDTO extends AbstractStructBase
     /**
      * Set isRevenueFromMargin value
      * @param bool $isRevenueFromMargin
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO
      */
     public function setIsRevenueFromMargin(?bool $isRevenueFromMargin = null): self
     {
@@ -86,7 +86,7 @@ class ProdTypesMediatorCondDTO extends AbstractStructBase
     /**
      * Set mediatorType value
      * @param string $mediatorType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO
      */
     public function setMediatorType(?string $mediatorType = null): self
     {
@@ -109,7 +109,7 @@ class ProdTypesMediatorCondDTO extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO
      */
     public function setProductType(?string $productType = null): self
     {
@@ -132,7 +132,7 @@ class ProdTypesMediatorCondDTO extends AbstractStructBase
     /**
      * Set revenuePercent value
      * @param float $revenuePercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ProdTypesMediatorCondDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ProdTypesMediatorCondDTO
      */
     public function setRevenuePercent(?float $revenuePercent = null): self
     {

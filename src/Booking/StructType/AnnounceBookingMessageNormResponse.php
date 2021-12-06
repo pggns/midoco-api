@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -36,9 +36,9 @@ class AnnounceBookingMessageNormResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: mbm_norm:VoucherInfo
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\VoucherInfo|null
+     * @var \Pggns\MidocoApi\Booking\StructType\VoucherInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\VoucherInfo $VoucherInfo = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\VoucherInfo $VoucherInfo = null;
     /**
      * Constructor method for AnnounceBookingMessageNormResponse
      * @uses AnnounceBookingMessageNormResponse::setOrderId()
@@ -46,9 +46,9 @@ class AnnounceBookingMessageNormResponse extends AbstractStructBase
      * @uses AnnounceBookingMessageNormResponse::setVoucherInfo()
      * @param int $orderId
      * @param int $orderNo
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\VoucherInfo $voucherInfo
+     * @param \Pggns\MidocoApi\Booking\StructType\VoucherInfo $voucherInfo
      */
-    public function __construct(?int $orderId = null, ?int $orderNo = null, ?\Pggns\MidocoApi\Api\Booking\StructType\VoucherInfo $voucherInfo = null)
+    public function __construct(?int $orderId = null, ?int $orderNo = null, ?\Pggns\MidocoApi\Booking\StructType\VoucherInfo $voucherInfo = null)
     {
         $this
             ->setOrderId($orderId)
@@ -66,7 +66,7 @@ class AnnounceBookingMessageNormResponse extends AbstractStructBase
     /**
      * Set OrderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AnnounceBookingMessageNormResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\AnnounceBookingMessageNormResponse
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -89,7 +89,7 @@ class AnnounceBookingMessageNormResponse extends AbstractStructBase
     /**
      * Set OrderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AnnounceBookingMessageNormResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\AnnounceBookingMessageNormResponse
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -103,18 +103,18 @@ class AnnounceBookingMessageNormResponse extends AbstractStructBase
     }
     /**
      * Get VoucherInfo value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\VoucherInfo|null
+     * @return \Pggns\MidocoApi\Booking\StructType\VoucherInfo|null
      */
-    public function getVoucherInfo(): ?\Pggns\MidocoApi\Api\Booking\StructType\VoucherInfo
+    public function getVoucherInfo(): ?\Pggns\MidocoApi\Booking\StructType\VoucherInfo
     {
         return $this->VoucherInfo;
     }
     /**
      * Set VoucherInfo value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\VoucherInfo $voucherInfo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AnnounceBookingMessageNormResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\VoucherInfo $voucherInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\AnnounceBookingMessageNormResponse
      */
-    public function setVoucherInfo(?\Pggns\MidocoApi\Api\Booking\StructType\VoucherInfo $voucherInfo = null): self
+    public function setVoucherInfo(?\Pggns\MidocoApi\Booking\StructType\VoucherInfo $voucherInfo = null): self
     {
         $this->VoucherInfo = $voucherInfo;
         

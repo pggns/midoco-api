@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSequencePoolsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSequencePool
-     * @var \Pggns\MidocoApi\Api\System\StructType\SequencePoolDTO[]
+     * @var \Pggns\MidocoApi\System\StructType\SequencePoolDTO[]
      */
     protected ?array $MidocoSequencePool = null;
     /**
      * Constructor method for GetSequencePoolsResponse
      * @uses GetSequencePoolsResponse::setMidocoSequencePool()
-     * @param \Pggns\MidocoApi\Api\System\StructType\SequencePoolDTO[] $midocoSequencePool
+     * @param \Pggns\MidocoApi\System\StructType\SequencePoolDTO[] $midocoSequencePool
      */
     public function __construct(?array $midocoSequencePool = null)
     {
@@ -34,7 +34,7 @@ class GetSequencePoolsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSequencePool value
-     * @return \Pggns\MidocoApi\Api\System\StructType\SequencePoolDTO[]
+     * @return \Pggns\MidocoApi\System\StructType\SequencePoolDTO[]
      */
     public function getMidocoSequencePool(): ?array
     {
@@ -55,12 +55,12 @@ class GetSequencePoolsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSequencePoolsResponseMidocoSequencePoolItem) {
             // validation for constraint: itemType
-            if (!$getSequencePoolsResponseMidocoSequencePoolItem instanceof \Pggns\MidocoApi\Api\System\StructType\SequencePoolDTO) {
+            if (!$getSequencePoolsResponseMidocoSequencePoolItem instanceof \Pggns\MidocoApi\System\StructType\SequencePoolDTO) {
                 $invalidValues[] = is_object($getSequencePoolsResponseMidocoSequencePoolItem) ? get_class($getSequencePoolsResponseMidocoSequencePoolItem) : sprintf('%s(%s)', gettype($getSequencePoolsResponseMidocoSequencePoolItem), var_export($getSequencePoolsResponseMidocoSequencePoolItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSequencePool property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\SequencePoolDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSequencePool property can only contain items of type \Pggns\MidocoApi\System\StructType\SequencePoolDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSequencePoolsResponse extends AbstractStructBase
     /**
      * Set MidocoSequencePool value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\SequencePoolDTO[] $midocoSequencePool
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetSequencePoolsResponse
+     * @param \Pggns\MidocoApi\System\StructType\SequencePoolDTO[] $midocoSequencePool
+     * @return \Pggns\MidocoApi\System\StructType\GetSequencePoolsResponse
      */
     public function setMidocoSequencePool(?array $midocoSequencePool = null): self
     {
@@ -85,14 +85,14 @@ class GetSequencePoolsResponse extends AbstractStructBase
     /**
      * Add item to MidocoSequencePool value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\SequencePoolDTO $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetSequencePoolsResponse
+     * @param \Pggns\MidocoApi\System\StructType\SequencePoolDTO $item
+     * @return \Pggns\MidocoApi\System\StructType\GetSequencePoolsResponse
      */
-    public function addToMidocoSequencePool(\Pggns\MidocoApi\Api\System\StructType\SequencePoolDTO $item): self
+    public function addToMidocoSequencePool(\Pggns\MidocoApi\System\StructType\SequencePoolDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\SequencePoolDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSequencePool property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\SequencePoolDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\SequencePoolDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSequencePool property can only contain items of type \Pggns\MidocoApi\System\StructType\SequencePoolDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSequencePool[] = $item;
         

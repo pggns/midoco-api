@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class SaveGlobalNoticesRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoGlobalNotice
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGlobalNotice[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoGlobalNotice[]
      */
     protected ?array $MidocoGlobalNotice = null;
     /**
@@ -38,7 +38,7 @@ class SaveGlobalNoticesRequest extends AbstractStructBase
      * @uses SaveGlobalNoticesRequest::setMidocoGlobalNotice()
      * @uses SaveGlobalNoticesRequest::setManuallyCreatedTask()
      * @uses SaveGlobalNoticesRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGlobalNotice[] $midocoGlobalNotice
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoGlobalNotice[] $midocoGlobalNotice
      * @param bool $manuallyCreatedTask
      * @param int $internalVersion
      */
@@ -51,7 +51,7 @@ class SaveGlobalNoticesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoGlobalNotice value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGlobalNotice[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoGlobalNotice[]
      */
     public function getMidocoGlobalNotice(): ?array
     {
@@ -72,12 +72,12 @@ class SaveGlobalNoticesRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveGlobalNoticesRequestMidocoGlobalNoticeItem) {
             // validation for constraint: itemType
-            if (!$saveGlobalNoticesRequestMidocoGlobalNoticeItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGlobalNotice) {
+            if (!$saveGlobalNoticesRequestMidocoGlobalNoticeItem instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoGlobalNotice) {
                 $invalidValues[] = is_object($saveGlobalNoticesRequestMidocoGlobalNoticeItem) ? get_class($saveGlobalNoticesRequestMidocoGlobalNoticeItem) : sprintf('%s(%s)', gettype($saveGlobalNoticesRequestMidocoGlobalNoticeItem), var_export($saveGlobalNoticesRequestMidocoGlobalNoticeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoGlobalNotice property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGlobalNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoGlobalNotice property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoGlobalNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -86,8 +86,8 @@ class SaveGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set MidocoGlobalNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGlobalNotice[] $midocoGlobalNotice
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveGlobalNoticesRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoGlobalNotice[] $midocoGlobalNotice
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveGlobalNoticesRequest
      */
     public function setMidocoGlobalNotice(?array $midocoGlobalNotice = null): self
     {
@@ -102,14 +102,14 @@ class SaveGlobalNoticesRequest extends AbstractStructBase
     /**
      * Add item to MidocoGlobalNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGlobalNotice $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveGlobalNoticesRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoGlobalNotice $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveGlobalNoticesRequest
      */
-    public function addToMidocoGlobalNotice(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoGlobalNotice $item): self
+    public function addToMidocoGlobalNotice(\Pggns\MidocoApi\Workflow\StructType\MidocoGlobalNotice $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGlobalNotice) {
-            throw new InvalidArgumentException(sprintf('The MidocoGlobalNotice property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGlobalNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoGlobalNotice) {
+            throw new InvalidArgumentException(sprintf('The MidocoGlobalNotice property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoGlobalNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoGlobalNotice[] = $item;
         
@@ -126,7 +126,7 @@ class SaveGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set manuallyCreatedTask value
      * @param bool $manuallyCreatedTask
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveGlobalNoticesRequest
      */
     public function setManuallyCreatedTask(?bool $manuallyCreatedTask = null): self
     {
@@ -149,7 +149,7 @@ class SaveGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveGlobalNoticesRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

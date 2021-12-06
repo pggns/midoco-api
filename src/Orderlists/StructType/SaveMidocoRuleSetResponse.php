@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SaveMidocoRuleSetResponse extends AbstractStructBase
     /**
      * Set ruleId value
      * @param int $ruleId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveMidocoRuleSetResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveMidocoRuleSetResponse
      */
     public function setRuleId(?int $ruleId = null): self
     {

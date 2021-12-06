@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class GetTaskViewTaskDetailsRequest extends AbstractStructBase
      * The TaskOverviewCriteria
      * Meta information extracted from the WSDL
      * - ref: TaskOverviewCriteria
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria $TaskOverviewCriteria = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria $TaskOverviewCriteria = null;
     /**
      * The MidocoTaskViewColumns
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTaskViewColumns
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns[]
      */
     protected ?array $MidocoTaskViewColumns = null;
     /**
@@ -41,11 +41,11 @@ class GetTaskViewTaskDetailsRequest extends AbstractStructBase
      * @uses GetTaskViewTaskDetailsRequest::setTaskOverviewCriteria()
      * @uses GetTaskViewTaskDetailsRequest::setMidocoTaskViewColumns()
      * @uses GetTaskViewTaskDetailsRequest::setIsCounterOnly()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns[] $midocoTaskViewColumns
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns[] $midocoTaskViewColumns
      * @param bool $isCounterOnly
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria = null, ?array $midocoTaskViewColumns = null, ?bool $isCounterOnly = false)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria = null, ?array $midocoTaskViewColumns = null, ?bool $isCounterOnly = false)
     {
         $this
             ->setTaskOverviewCriteria($taskOverviewCriteria)
@@ -54,18 +54,18 @@ class GetTaskViewTaskDetailsRequest extends AbstractStructBase
     }
     /**
      * Get TaskOverviewCriteria value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria|null
      */
-    public function getTaskOverviewCriteria(): ?\Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria
+    public function getTaskOverviewCriteria(): ?\Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria
     {
         return $this->TaskOverviewCriteria;
     }
     /**
      * Set TaskOverviewCriteria value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskViewTaskDetailsRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskViewTaskDetailsRequest
      */
-    public function setTaskOverviewCriteria(?\Pggns\MidocoApi\Api\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria = null): self
+    public function setTaskOverviewCriteria(?\Pggns\MidocoApi\Workflow\StructType\TaskOverviewCriteria $taskOverviewCriteria = null): self
     {
         $this->TaskOverviewCriteria = $taskOverviewCriteria;
         
@@ -73,7 +73,7 @@ class GetTaskViewTaskDetailsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTaskViewColumns value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns[]
      */
     public function getMidocoTaskViewColumns(): ?array
     {
@@ -94,12 +94,12 @@ class GetTaskViewTaskDetailsRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTaskViewTaskDetailsRequestMidocoTaskViewColumnsItem) {
             // validation for constraint: itemType
-            if (!$getTaskViewTaskDetailsRequestMidocoTaskViewColumnsItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns) {
+            if (!$getTaskViewTaskDetailsRequestMidocoTaskViewColumnsItem instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns) {
                 $invalidValues[] = is_object($getTaskViewTaskDetailsRequestMidocoTaskViewColumnsItem) ? get_class($getTaskViewTaskDetailsRequestMidocoTaskViewColumnsItem) : sprintf('%s(%s)', gettype($getTaskViewTaskDetailsRequestMidocoTaskViewColumnsItem), var_export($getTaskViewTaskDetailsRequestMidocoTaskViewColumnsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTaskViewColumns property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTaskViewColumns property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -108,8 +108,8 @@ class GetTaskViewTaskDetailsRequest extends AbstractStructBase
     /**
      * Set MidocoTaskViewColumns value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns[] $midocoTaskViewColumns
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskViewTaskDetailsRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns[] $midocoTaskViewColumns
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskViewTaskDetailsRequest
      */
     public function setMidocoTaskViewColumns(?array $midocoTaskViewColumns = null): self
     {
@@ -124,14 +124,14 @@ class GetTaskViewTaskDetailsRequest extends AbstractStructBase
     /**
      * Add item to MidocoTaskViewColumns value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskViewTaskDetailsRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskViewTaskDetailsRequest
      */
-    public function addToMidocoTaskViewColumns(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns $item): self
+    public function addToMidocoTaskViewColumns(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns) {
-            throw new InvalidArgumentException(sprintf('The MidocoTaskViewColumns property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns) {
+            throw new InvalidArgumentException(sprintf('The MidocoTaskViewColumns property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTaskViewColumns[] = $item;
         
@@ -148,7 +148,7 @@ class GetTaskViewTaskDetailsRequest extends AbstractStructBase
     /**
      * Set isCounterOnly value
      * @param bool $isCounterOnly
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskViewTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskViewTaskDetailsRequest
      */
     public function setIsCounterOnly(?bool $isCounterOnly = false): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetFeeGroupAssignsRequest extends AbstractStructBase
      * The MidocoFeeGroupAssign
      * Meta information extracted from the WSDL
      * - ref: MidocoFeeGroupAssign
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign $MidocoFeeGroupAssign = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign $MidocoFeeGroupAssign = null;
     /**
      * The groupId
      * Meta information extracted from the WSDL
@@ -40,11 +40,11 @@ class GetFeeGroupAssignsRequest extends AbstractStructBase
      * @uses GetFeeGroupAssignsRequest::setMidocoFeeGroupAssign()
      * @uses GetFeeGroupAssignsRequest::setGroupId()
      * @uses GetFeeGroupAssignsRequest::setOnlyFromOwnDb()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign
      * @param int[] $groupId
      * @param bool $onlyFromOwnDb
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign = null, ?array $groupId = null, ?bool $onlyFromOwnDb = false)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign = null, ?array $groupId = null, ?bool $onlyFromOwnDb = false)
     {
         $this
             ->setMidocoFeeGroupAssign($midocoFeeGroupAssign)
@@ -53,18 +53,18 @@ class GetFeeGroupAssignsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoFeeGroupAssign value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign|null
      */
-    public function getMidocoFeeGroupAssign(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign
+    public function getMidocoFeeGroupAssign(): ?\Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign
     {
         return $this->MidocoFeeGroupAssign;
     }
     /**
      * Set MidocoFeeGroupAssign value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFeeGroupAssignsRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign
+     * @return \Pggns\MidocoApi\Order\StructType\GetFeeGroupAssignsRequest
      */
-    public function setMidocoFeeGroupAssign(?\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign = null): self
+    public function setMidocoFeeGroupAssign(?\Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign = null): self
     {
         $this->MidocoFeeGroupAssign = $midocoFeeGroupAssign;
         
@@ -108,7 +108,7 @@ class GetFeeGroupAssignsRequest extends AbstractStructBase
      * Set groupId value
      * @throws InvalidArgumentException
      * @param int[] $groupId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFeeGroupAssignsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetFeeGroupAssignsRequest
      */
     public function setGroupId(?array $groupId = null): self
     {
@@ -124,7 +124,7 @@ class GetFeeGroupAssignsRequest extends AbstractStructBase
      * Add item to groupId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFeeGroupAssignsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetFeeGroupAssignsRequest
      */
     public function addToGroupId(int $item): self
     {
@@ -147,7 +147,7 @@ class GetFeeGroupAssignsRequest extends AbstractStructBase
     /**
      * Set onlyFromOwnDb value
      * @param bool $onlyFromOwnDb
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFeeGroupAssignsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetFeeGroupAssignsRequest
      */
     public function setOnlyFromOwnDb(?bool $onlyFromOwnDb = false): self
     {

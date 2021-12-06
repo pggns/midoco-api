@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class AutoInvoiceConditionsChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionsChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionsChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -94,7 +94,7 @@ class AutoInvoiceConditionsChangeLogDTO extends AbstractStructBase
     /**
      * Set conditionId value
      * @param int $conditionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionsChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionsChangeLogDTO
      */
     public function setConditionId(?int $conditionId = null): self
     {
@@ -117,7 +117,7 @@ class AutoInvoiceConditionsChangeLogDTO extends AbstractStructBase
     /**
      * Set diffData value
      * @param string $diffData
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionsChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionsChangeLogDTO
      */
     public function setDiffData(?string $diffData = null): self
     {
@@ -140,7 +140,7 @@ class AutoInvoiceConditionsChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionsChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionsChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -163,7 +163,7 @@ class AutoInvoiceConditionsChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AutoInvoiceConditionsChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AutoInvoiceConditionsChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

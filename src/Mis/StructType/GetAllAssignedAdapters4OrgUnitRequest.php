@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetAllAssignedAdapters4OrgUnitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAllAssignedAdapters4OrgUnitRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAllAssignedAdapters4OrgUnitRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

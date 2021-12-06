@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -367,7 +367,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -390,7 +390,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set callDate value
      * @param string $callDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setCallDate(?string $callDate = null): self
     {
@@ -413,7 +413,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -436,7 +436,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setCountry(?string $country = null): self
     {
@@ -459,7 +459,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -482,7 +482,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -505,7 +505,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -528,7 +528,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -551,7 +551,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -574,7 +574,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set depositAmount value
      * @param float $depositAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setDepositAmount(?float $depositAmount = null): self
     {
@@ -597,7 +597,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set depositDate value
      * @param string $depositDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setDepositDate(?string $depositDate = null): self
     {
@@ -620,7 +620,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set documentExportDate value
      * @param string $documentExportDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setDocumentExportDate(?string $documentExportDate = null): self
     {
@@ -643,7 +643,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -666,7 +666,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -689,7 +689,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set exchangeRate value
      * @param float $exchangeRate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setExchangeRate(?float $exchangeRate = null): self
     {
@@ -712,7 +712,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setFileName(?string $fileName = null): self
     {
@@ -735,7 +735,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set finalPaymentAmount value
      * @param float $finalPaymentAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setFinalPaymentAmount(?float $finalPaymentAmount = null): self
     {
@@ -758,7 +758,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set finalPaymentDate value
      * @param string $finalPaymentDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setFinalPaymentDate(?string $finalPaymentDate = null): self
     {
@@ -781,7 +781,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -804,7 +804,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set invoiceId value
      * @param int $invoiceId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setInvoiceId(?int $invoiceId = null): self
     {
@@ -827,7 +827,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set invoiceLogicVersion value
      * @param int $invoiceLogicVersion
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setInvoiceLogicVersion(?int $invoiceLogicVersion = null): self
     {
@@ -850,7 +850,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param int $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setInvoiceNo(?int $invoiceNo = null): self
     {
@@ -873,7 +873,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set isDeposit value
      * @param bool $isDeposit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setIsDeposit(?bool $isDeposit = null): self
     {
@@ -896,7 +896,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set isDiffInvoice value
      * @param bool $isDiffInvoice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setIsDiffInvoice(?bool $isDiffInvoice = null): self
     {
@@ -919,7 +919,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set isDocumentExported value
      * @param bool $isDocumentExported
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setIsDocumentExported(?bool $isDocumentExported = null): self
     {
@@ -942,7 +942,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set isReprint value
      * @param bool $isReprint
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setIsReprint(?bool $isReprint = null): self
     {
@@ -965,7 +965,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set isVoided value
      * @param bool $isVoided
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setIsVoided(?bool $isVoided = null): self
     {
@@ -988,7 +988,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setMedia(?string $media = null): self
     {
@@ -1011,7 +1011,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setName(?string $name = null): self
     {
@@ -1034,7 +1034,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set orderDocumentId value
      * @param int $orderDocumentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setOrderDocumentId(?int $orderDocumentId = null): self
     {
@@ -1057,7 +1057,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -1080,7 +1080,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -1103,7 +1103,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -1126,7 +1126,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set partialInvoice value
      * @param bool $partialInvoice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setPartialInvoice(?bool $partialInvoice = null): self
     {
@@ -1149,7 +1149,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -1172,7 +1172,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -1195,7 +1195,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set reverseChargeCountry value
      * @param string $reverseChargeCountry
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setReverseChargeCountry(?string $reverseChargeCountry = null): self
     {
@@ -1218,7 +1218,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -1241,7 +1241,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -1264,7 +1264,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -1287,7 +1287,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setVatId(?string $vatId = null): self
     {
@@ -1310,7 +1310,7 @@ class InvoiceDTO extends AbstractStructBase
     /**
      * Set voidInvoiceId value
      * @param int $voidInvoiceId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InvoiceDTO
      */
     public function setVoidInvoiceId(?int $voidInvoiceId = null): self
     {

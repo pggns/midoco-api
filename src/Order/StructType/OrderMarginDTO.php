@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set agencyCommission value
      * @param float $agencyCommission
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setAgencyCommission(?float $agencyCommission = null): self
     {
@@ -166,7 +166,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set calculatedMarginServices value
      * @param float $calculatedMarginServices
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setCalculatedMarginServices(?float $calculatedMarginServices = null): self
     {
@@ -189,7 +189,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set category value
      * @param int $category
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setCategory(?int $category = null): self
     {
@@ -212,7 +212,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set comments value
      * @param string $comments
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setComments(?string $comments = null): self
     {
@@ -235,7 +235,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set feeAmount value
      * @param float $feeAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setFeeAmount(?float $feeAmount = null): self
     {
@@ -258,7 +258,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set marginServices value
      * @param float $marginServices
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setMarginServices(?float $marginServices = null): self
     {
@@ -281,7 +281,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set mediatorCommission value
      * @param float $mediatorCommission
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setMediatorCommission(?float $mediatorCommission = null): self
     {
@@ -304,7 +304,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -327,7 +327,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -350,7 +350,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -373,7 +373,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set percentCommission value
      * @param float $percentCommission
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setPercentCommission(?float $percentCommission = null): self
     {
@@ -396,7 +396,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set percentMarginServices value
      * @param float $percentMarginServices
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setPercentMarginServices(?float $percentMarginServices = null): self
     {
@@ -419,7 +419,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set purchaseExpense value
      * @param float $purchaseExpense
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setPurchaseExpense(?float $purchaseExpense = null): self
     {
@@ -442,7 +442,7 @@ class OrderMarginDTO extends AbstractStructBase
     /**
      * Set smallerMarginAllowed value
      * @param bool $smallerMarginAllowed
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO
      */
     public function setSmallerMarginAllowed(?bool $smallerMarginAllowed = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoTravelPlan extends TravelPlanHistoryDTO
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTravelPlan
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTravelPlan
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {

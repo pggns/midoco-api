@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,33 +15,33 @@ class CreateExternalCampaignResponseType extends ExternalCampaignDTO
 {
     /**
      * The CustomerIds
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIds|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerIds|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIds $CustomerIds = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIds $CustomerIds = null;
     /**
      * Constructor method for CreateExternalCampaignResponseType
      * @uses CreateExternalCampaignResponseType::setCustomerIds()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIds $customerIds
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIds $customerIds
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIds $customerIds = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIds $customerIds = null)
     {
         $this
             ->setCustomerIds($customerIds);
     }
     /**
      * Get CustomerIds value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIds|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIds|null
      */
-    public function getCustomerIds(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIds
+    public function getCustomerIds(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIds
     {
         return $this->CustomerIds;
     }
     /**
      * Set CustomerIds value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIds $customerIds
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CreateExternalCampaignResponseType
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIds $customerIds
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CreateExternalCampaignResponseType
      */
-    public function setCustomerIds(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIds $customerIds = null): self
+    public function setCustomerIds(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIds $customerIds = null): self
     {
         $this->CustomerIds = $customerIds;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SellItemTravelnoMarginDTO extends AbstractStructBase
     /**
      * Set isStorno value
      * @param bool $isStorno
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemTravelnoMarginDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemTravelnoMarginDTO
      */
     public function setIsStorno(?bool $isStorno = null): self
     {
@@ -86,7 +86,7 @@ class SellItemTravelnoMarginDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemTravelnoMarginDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemTravelnoMarginDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -109,7 +109,7 @@ class SellItemTravelnoMarginDTO extends AbstractStructBase
     /**
      * Set settlementDate value
      * @param string $settlementDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemTravelnoMarginDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemTravelnoMarginDTO
      */
     public function setSettlementDate(?string $settlementDate = null): self
     {
@@ -132,7 +132,7 @@ class SellItemTravelnoMarginDTO extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemTravelnoMarginDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemTravelnoMarginDTO
      */
     public function setTravelNo(?string $travelNo = null): self
     {

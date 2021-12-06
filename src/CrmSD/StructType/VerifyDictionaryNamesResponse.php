@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class VerifyDictionaryNamesResponse extends AbstractStructBase
      * Set possibleInvalidNames value
      * @throws InvalidArgumentException
      * @param string[] $possibleInvalidNames
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\VerifyDictionaryNamesResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\VerifyDictionaryNamesResponse
      */
     public function setPossibleInvalidNames(?array $possibleInvalidNames = null): self
     {
@@ -85,7 +85,7 @@ class VerifyDictionaryNamesResponse extends AbstractStructBase
      * Add item to possibleInvalidNames value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\VerifyDictionaryNamesResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\VerifyDictionaryNamesResponse
      */
     public function addToPossibleInvalidNames(string $item): self
     {

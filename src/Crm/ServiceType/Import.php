@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\ServiceType;
+namespace Pggns\MidocoApi\Crm\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Import extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Crm\ServiceType\Import
+     * @return \Pggns\MidocoApi\Crm\ServiceType\Import
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Import extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\ImportCRMCsvRequest $paramImportCRMCsvRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ImportCRMCsvResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\ImportCRMCsvRequest $paramImportCRMCsvRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\ImportCRMCsvResponse|bool
      */
-    public function importCRMCsv(\Pggns\MidocoApi\Api\Crm\StructType\ImportCRMCsvRequest $paramImportCRMCsvRequest)
+    public function importCRMCsv(\Pggns\MidocoApi\Crm\StructType\ImportCRMCsvRequest $paramImportCRMCsvRequest)
     {
         try {
             $this->setResult($resultImportCRMCsv = $this->getSoapClient()->__soapCall('importCRMCsv', [
@@ -58,15 +58,15 @@ class Import extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\ImportRawCustomerRequest $paramImportRawCustomerRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ImportRawCustomerResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\ImportRawCustomerRequest $paramImportRawCustomerRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\ImportRawCustomerResponse|bool
      */
-    public function importRawCustomer(\Pggns\MidocoApi\Api\Crm\StructType\ImportRawCustomerRequest $paramImportRawCustomerRequest)
+    public function importRawCustomer(\Pggns\MidocoApi\Crm\StructType\ImportRawCustomerRequest $paramImportRawCustomerRequest)
     {
         try {
             $this->setResult($resultImportRawCustomer = $this->getSoapClient()->__soapCall('importRawCustomer', [
@@ -83,7 +83,7 @@ class Import extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ImportCRMCsvResponse|\Pggns\MidocoApi\Api\Crm\StructType\ImportRawCustomerResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\ImportCRMCsvResponse|\Pggns\MidocoApi\Crm\StructType\ImportRawCustomerResponse
      */
     public function getResult()
     {

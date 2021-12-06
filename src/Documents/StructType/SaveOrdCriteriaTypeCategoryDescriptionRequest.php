@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveOrdCriteriaTypeCategoryDescriptionRequest extends AbstractStructBase
      * The MidocoOrdCriteriaTypeCategoryDescription
      * Meta information extracted from the WSDL
      * - ref: MidocoOrdCriteriaTypeCategoryDescription
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\OrdCritTypeCatDescrDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\OrdCritTypeCatDescrDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\OrdCritTypeCatDescrDTO $MidocoOrdCriteriaTypeCategoryDescription = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\OrdCritTypeCatDescrDTO $MidocoOrdCriteriaTypeCategoryDescription = null;
     /**
      * Constructor method for SaveOrdCriteriaTypeCategoryDescriptionRequest
      * @uses SaveOrdCriteriaTypeCategoryDescriptionRequest::setMidocoOrdCriteriaTypeCategoryDescription()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\OrdCritTypeCatDescrDTO $midocoOrdCriteriaTypeCategoryDescription
+     * @param \Pggns\MidocoApi\Documents\StructType\OrdCritTypeCatDescrDTO $midocoOrdCriteriaTypeCategoryDescription
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\OrdCritTypeCatDescrDTO $midocoOrdCriteriaTypeCategoryDescription = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\OrdCritTypeCatDescrDTO $midocoOrdCriteriaTypeCategoryDescription = null)
     {
         $this
             ->setMidocoOrdCriteriaTypeCategoryDescription($midocoOrdCriteriaTypeCategoryDescription);
     }
     /**
      * Get MidocoOrdCriteriaTypeCategoryDescription value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrdCritTypeCatDescrDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\OrdCritTypeCatDescrDTO|null
      */
-    public function getMidocoOrdCriteriaTypeCategoryDescription(): ?\Pggns\MidocoApi\Api\Documents\StructType\OrdCritTypeCatDescrDTO
+    public function getMidocoOrdCriteriaTypeCategoryDescription(): ?\Pggns\MidocoApi\Documents\StructType\OrdCritTypeCatDescrDTO
     {
         return $this->MidocoOrdCriteriaTypeCategoryDescription;
     }
     /**
      * Set MidocoOrdCriteriaTypeCategoryDescription value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\OrdCritTypeCatDescrDTO $midocoOrdCriteriaTypeCategoryDescription
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveOrdCriteriaTypeCategoryDescriptionRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\OrdCritTypeCatDescrDTO $midocoOrdCriteriaTypeCategoryDescription
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveOrdCriteriaTypeCategoryDescriptionRequest
      */
-    public function setMidocoOrdCriteriaTypeCategoryDescription(?\Pggns\MidocoApi\Api\Documents\StructType\OrdCritTypeCatDescrDTO $midocoOrdCriteriaTypeCategoryDescription = null): self
+    public function setMidocoOrdCriteriaTypeCategoryDescription(?\Pggns\MidocoApi\Documents\StructType\OrdCritTypeCatDescrDTO $midocoOrdCriteriaTypeCategoryDescription = null): self
     {
         $this->MidocoOrdCriteriaTypeCategoryDescription = $midocoOrdCriteriaTypeCategoryDescription;
         

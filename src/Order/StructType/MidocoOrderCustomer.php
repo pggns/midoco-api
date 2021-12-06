@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoOrderCustomer extends OrderCustomerDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCommunication
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCommunication[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCommunication[]
      */
     protected ?array $MidocoCommunication = null;
     /**
@@ -27,9 +27,9 @@ class MidocoOrderCustomer extends OrderCustomerDTO
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoConsentCustomer
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoConsentCommunicationType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoConsentCommunicationType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoConsentCommunicationType $MidocoConsentCustomer = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoConsentCommunicationType $MidocoConsentCustomer = null;
     /**
      * The overrideExistingOrderCustomer
      * @var bool|null
@@ -46,12 +46,12 @@ class MidocoOrderCustomer extends OrderCustomerDTO
      * @uses MidocoOrderCustomer::setMidocoConsentCustomer()
      * @uses MidocoOrderCustomer::setOverrideExistingOrderCustomer()
      * @uses MidocoOrderCustomer::setLanguage()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCommunication[] $midocoCommunication
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoConsentCommunicationType $midocoConsentCustomer
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCommunication[] $midocoCommunication
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoConsentCommunicationType $midocoConsentCustomer
      * @param bool $overrideExistingOrderCustomer
      * @param string $language
      */
-    public function __construct(?array $midocoCommunication = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoConsentCommunicationType $midocoConsentCustomer = null, ?bool $overrideExistingOrderCustomer = null, ?string $language = null)
+    public function __construct(?array $midocoCommunication = null, ?\Pggns\MidocoApi\Order\StructType\MidocoConsentCommunicationType $midocoConsentCustomer = null, ?bool $overrideExistingOrderCustomer = null, ?string $language = null)
     {
         $this
             ->setMidocoCommunication($midocoCommunication)
@@ -61,7 +61,7 @@ class MidocoOrderCustomer extends OrderCustomerDTO
     }
     /**
      * Get MidocoCommunication value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCommunication[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCommunication[]
      */
     public function getMidocoCommunication(): ?array
     {
@@ -82,12 +82,12 @@ class MidocoOrderCustomer extends OrderCustomerDTO
         $invalidValues = [];
         foreach ($values as $midocoOrderCustomerMidocoCommunicationItem) {
             // validation for constraint: itemType
-            if (!$midocoOrderCustomerMidocoCommunicationItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCommunication) {
+            if (!$midocoOrderCustomerMidocoCommunicationItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoCommunication) {
                 $invalidValues[] = is_object($midocoOrderCustomerMidocoCommunicationItem) ? get_class($midocoOrderCustomerMidocoCommunicationItem) : sprintf('%s(%s)', gettype($midocoOrderCustomerMidocoCommunicationItem), var_export($midocoOrderCustomerMidocoCommunicationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCommunication property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCommunication, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCommunication property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCommunication, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -96,8 +96,8 @@ class MidocoOrderCustomer extends OrderCustomerDTO
     /**
      * Set MidocoCommunication value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCommunication[] $midocoCommunication
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCommunication[] $midocoCommunication
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer
      */
     public function setMidocoCommunication(?array $midocoCommunication = null): self
     {
@@ -112,14 +112,14 @@ class MidocoOrderCustomer extends OrderCustomerDTO
     /**
      * Add item to MidocoCommunication value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCommunication $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCommunication $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer
      */
-    public function addToMidocoCommunication(\Pggns\MidocoApi\Api\Order\StructType\MidocoCommunication $item): self
+    public function addToMidocoCommunication(\Pggns\MidocoApi\Order\StructType\MidocoCommunication $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCommunication) {
-            throw new InvalidArgumentException(sprintf('The MidocoCommunication property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCommunication, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoCommunication) {
+            throw new InvalidArgumentException(sprintf('The MidocoCommunication property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCommunication, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCommunication[] = $item;
         
@@ -127,18 +127,18 @@ class MidocoOrderCustomer extends OrderCustomerDTO
     }
     /**
      * Get MidocoConsentCustomer value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoConsentCommunicationType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoConsentCommunicationType|null
      */
-    public function getMidocoConsentCustomer(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoConsentCommunicationType
+    public function getMidocoConsentCustomer(): ?\Pggns\MidocoApi\Order\StructType\MidocoConsentCommunicationType
     {
         return $this->MidocoConsentCustomer;
     }
     /**
      * Set MidocoConsentCustomer value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoConsentCommunicationType $midocoConsentCustomer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoConsentCommunicationType $midocoConsentCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer
      */
-    public function setMidocoConsentCustomer(?\Pggns\MidocoApi\Api\Order\StructType\MidocoConsentCommunicationType $midocoConsentCustomer = null): self
+    public function setMidocoConsentCustomer(?\Pggns\MidocoApi\Order\StructType\MidocoConsentCommunicationType $midocoConsentCustomer = null): self
     {
         $this->MidocoConsentCustomer = $midocoConsentCustomer;
         
@@ -155,7 +155,7 @@ class MidocoOrderCustomer extends OrderCustomerDTO
     /**
      * Set overrideExistingOrderCustomer value
      * @param bool $overrideExistingOrderCustomer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer
      */
     public function setOverrideExistingOrderCustomer(?bool $overrideExistingOrderCustomer = null): self
     {
@@ -178,7 +178,7 @@ class MidocoOrderCustomer extends OrderCustomerDTO
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer
      */
     public function setLanguage(?string $language = null): self
     {

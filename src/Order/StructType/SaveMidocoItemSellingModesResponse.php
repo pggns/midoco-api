@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SaveMidocoItemSellingModesResponse extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMidocoItemSellingModesResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMidocoItemSellingModesResponse
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -78,7 +78,7 @@ class SaveMidocoItemSellingModesResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMidocoItemSellingModesResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMidocoItemSellingModesResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -101,7 +101,7 @@ class SaveMidocoItemSellingModesResponse extends AbstractStructBase
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMidocoItemSellingModesResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMidocoItemSellingModesResponse
      */
     public function setErrorMessage(?string $errorMessage = null): self
     {

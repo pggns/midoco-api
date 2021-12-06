@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoDocumentNatureType extends DocumentNatureDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoDocumentNatureType
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoDocumentNatureType
      */
     public function setInherited(?bool $inherited = null): self
     {

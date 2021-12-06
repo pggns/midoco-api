@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoDebitInfoForReceipt extends DebitInfoDTO
     /**
      * Set bookingText value
      * @param string $bookingText
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitInfoForReceipt
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitInfoForReceipt
      */
     public function setBookingText(?string $bookingText = null): self
     {
@@ -70,7 +70,7 @@ class MidocoDebitInfoForReceipt extends DebitInfoDTO
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitInfoForReceipt
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitInfoForReceipt
      */
     public function setType(?string $type = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetSellItemProvisionRequest extends AbstractStructBase
      * The SellItemProvisionSearchCriteria
      * Meta information extracted from the WSDL
      * - ref: SellItemProvisionSearchCriteria
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionSearchCriteriaType|null
+     * @var \Pggns\MidocoApi\Order\StructType\SellItemProvisionSearchCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionSearchCriteriaType $SellItemProvisionSearchCriteria = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\SellItemProvisionSearchCriteriaType $SellItemProvisionSearchCriteria = null;
     /**
      * The adviceSettlementId
      * @var int|null
@@ -29,10 +29,10 @@ class GetSellItemProvisionRequest extends AbstractStructBase
      * Constructor method for GetSellItemProvisionRequest
      * @uses GetSellItemProvisionRequest::setSellItemProvisionSearchCriteria()
      * @uses GetSellItemProvisionRequest::setAdviceSettlementId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionSearchCriteriaType $sellItemProvisionSearchCriteria
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemProvisionSearchCriteriaType $sellItemProvisionSearchCriteria
      * @param int $adviceSettlementId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionSearchCriteriaType $sellItemProvisionSearchCriteria = null, ?int $adviceSettlementId = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\SellItemProvisionSearchCriteriaType $sellItemProvisionSearchCriteria = null, ?int $adviceSettlementId = null)
     {
         $this
             ->setSellItemProvisionSearchCriteria($sellItemProvisionSearchCriteria)
@@ -40,18 +40,18 @@ class GetSellItemProvisionRequest extends AbstractStructBase
     }
     /**
      * Get SellItemProvisionSearchCriteria value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionSearchCriteriaType|null
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemProvisionSearchCriteriaType|null
      */
-    public function getSellItemProvisionSearchCriteria(): ?\Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionSearchCriteriaType
+    public function getSellItemProvisionSearchCriteria(): ?\Pggns\MidocoApi\Order\StructType\SellItemProvisionSearchCriteriaType
     {
         return $this->SellItemProvisionSearchCriteria;
     }
     /**
      * Set SellItemProvisionSearchCriteria value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionSearchCriteriaType $sellItemProvisionSearchCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemProvisionRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemProvisionSearchCriteriaType $sellItemProvisionSearchCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemProvisionRequest
      */
-    public function setSellItemProvisionSearchCriteria(?\Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionSearchCriteriaType $sellItemProvisionSearchCriteria = null): self
+    public function setSellItemProvisionSearchCriteria(?\Pggns\MidocoApi\Order\StructType\SellItemProvisionSearchCriteriaType $sellItemProvisionSearchCriteria = null): self
     {
         $this->SellItemProvisionSearchCriteria = $sellItemProvisionSearchCriteria;
         
@@ -68,7 +68,7 @@ class GetSellItemProvisionRequest extends AbstractStructBase
     /**
      * Set adviceSettlementId value
      * @param int $adviceSettlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemProvisionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemProvisionRequest
      */
     public function setAdviceSettlementId(?int $adviceSettlementId = null): self
     {

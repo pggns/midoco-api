@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetOrderInternalVersionResponse extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderInternalVersionResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderInternalVersionResponse
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -78,7 +78,7 @@ class GetOrderInternalVersionResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderInternalVersionResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderInternalVersionResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -101,7 +101,7 @@ class GetOrderInternalVersionResponse extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderInternalVersionResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderInternalVersionResponse
      */
     public function setModifyUser(?int $modifyUser = null): self
     {

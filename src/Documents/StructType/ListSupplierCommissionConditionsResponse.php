@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListSupplierCommissionConditionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierCommissionCondition
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCommissionCondition[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCommissionCondition[]
      */
     protected ?array $MidocoSupplierCommissionCondition = null;
     /**
      * Constructor method for ListSupplierCommissionConditionsResponse
      * @uses ListSupplierCommissionConditionsResponse::setMidocoSupplierCommissionCondition()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCommissionCondition[] $midocoSupplierCommissionCondition
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCommissionCondition[] $midocoSupplierCommissionCondition
      */
     public function __construct(?array $midocoSupplierCommissionCondition = null)
     {
@@ -34,7 +34,7 @@ class ListSupplierCommissionConditionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierCommissionCondition value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCommissionCondition[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCommissionCondition[]
      */
     public function getMidocoSupplierCommissionCondition(): ?array
     {
@@ -55,12 +55,12 @@ class ListSupplierCommissionConditionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listSupplierCommissionConditionsResponseMidocoSupplierCommissionConditionItem) {
             // validation for constraint: itemType
-            if (!$listSupplierCommissionConditionsResponseMidocoSupplierCommissionConditionItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCommissionCondition) {
+            if (!$listSupplierCommissionConditionsResponseMidocoSupplierCommissionConditionItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCommissionCondition) {
                 $invalidValues[] = is_object($listSupplierCommissionConditionsResponseMidocoSupplierCommissionConditionItem) ? get_class($listSupplierCommissionConditionsResponseMidocoSupplierCommissionConditionItem) : sprintf('%s(%s)', gettype($listSupplierCommissionConditionsResponseMidocoSupplierCommissionConditionItem), var_export($listSupplierCommissionConditionsResponseMidocoSupplierCommissionConditionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierCommissionCondition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCommissionCondition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierCommissionCondition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCommissionCondition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListSupplierCommissionConditionsResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierCommissionCondition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCommissionCondition[] $midocoSupplierCommissionCondition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSupplierCommissionConditionsResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCommissionCondition[] $midocoSupplierCommissionCondition
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSupplierCommissionConditionsResponse
      */
     public function setMidocoSupplierCommissionCondition(?array $midocoSupplierCommissionCondition = null): self
     {
@@ -85,14 +85,14 @@ class ListSupplierCommissionConditionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierCommissionCondition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCommissionCondition $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSupplierCommissionConditionsResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCommissionCondition $item
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSupplierCommissionConditionsResponse
      */
-    public function addToMidocoSupplierCommissionCondition(\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCommissionCondition $item): self
+    public function addToMidocoSupplierCommissionCondition(\Pggns\MidocoApi\Documents\StructType\MidocoSupplierCommissionCondition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCommissionCondition) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierCommissionCondition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCommissionCondition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCommissionCondition) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierCommissionCondition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCommissionCondition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierCommissionCondition[] = $item;
         

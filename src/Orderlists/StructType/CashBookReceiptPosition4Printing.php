@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class CashBookReceiptPosition4Printing extends ReceiptPositionDTO
     /**
      * Set receiptNo value
      * @param int $receiptNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookReceiptPosition4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookReceiptPosition4Printing
      */
     public function setReceiptNo(?int $receiptNo = null): self
     {
@@ -142,7 +142,7 @@ class CashBookReceiptPosition4Printing extends ReceiptPositionDTO
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookReceiptPosition4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookReceiptPosition4Printing
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -165,7 +165,7 @@ class CashBookReceiptPosition4Printing extends ReceiptPositionDTO
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookReceiptPosition4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookReceiptPosition4Printing
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -188,7 +188,7 @@ class CashBookReceiptPosition4Printing extends ReceiptPositionDTO
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookReceiptPosition4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookReceiptPosition4Printing
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -211,7 +211,7 @@ class CashBookReceiptPosition4Printing extends ReceiptPositionDTO
     /**
      * Set creationUser value
      * @param string $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookReceiptPosition4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookReceiptPosition4Printing
      */
     public function setCreationUser(?string $creationUser = null): self
     {
@@ -234,7 +234,7 @@ class CashBookReceiptPosition4Printing extends ReceiptPositionDTO
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookReceiptPosition4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookReceiptPosition4Printing
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -257,7 +257,7 @@ class CashBookReceiptPosition4Printing extends ReceiptPositionDTO
     /**
      * Set isExpense value
      * @param bool $isExpense
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookReceiptPosition4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookReceiptPosition4Printing
      */
     public function setIsExpense(?bool $isExpense = null): self
     {
@@ -280,7 +280,7 @@ class CashBookReceiptPosition4Printing extends ReceiptPositionDTO
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookReceiptPosition4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookReceiptPosition4Printing
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -303,7 +303,7 @@ class CashBookReceiptPosition4Printing extends ReceiptPositionDTO
     /**
      * Set total4CcType value
      * @param float $total4CcType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookReceiptPosition4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookReceiptPosition4Printing
      */
     public function setTotal4CcType(?float $total4CcType = null): self
     {
@@ -326,7 +326,7 @@ class CashBookReceiptPosition4Printing extends ReceiptPositionDTO
     /**
      * Set paymentAccount value
      * @param string $paymentAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookReceiptPosition4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookReceiptPosition4Printing
      */
     public function setPaymentAccount(?string $paymentAccount = null): self
     {
@@ -349,7 +349,7 @@ class CashBookReceiptPosition4Printing extends ReceiptPositionDTO
     /**
      * Set signatureFailure value
      * @param string $signatureFailure
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookReceiptPosition4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookReceiptPosition4Printing
      */
     public function setSignatureFailure(?string $signatureFailure = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class FeeMultiEditRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoFeeMultiEdit
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeMultiEdit[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoFeeMultiEdit[]
      */
     protected ?array $MidocoFeeMultiEdit = null;
     /**
@@ -28,15 +28,15 @@ class FeeMultiEditRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoFeeGroupAssign
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign[]
      */
     protected ?array $MidocoFeeGroupAssign = null;
     /**
      * Constructor method for FeeMultiEditRequest
      * @uses FeeMultiEditRequest::setMidocoFeeMultiEdit()
      * @uses FeeMultiEditRequest::setMidocoFeeGroupAssign()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeMultiEdit[] $midocoFeeMultiEdit
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign[] $midocoFeeGroupAssign
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeMultiEdit[] $midocoFeeMultiEdit
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign[] $midocoFeeGroupAssign
      */
     public function __construct(?array $midocoFeeMultiEdit = null, ?array $midocoFeeGroupAssign = null)
     {
@@ -46,7 +46,7 @@ class FeeMultiEditRequest extends AbstractStructBase
     }
     /**
      * Get MidocoFeeMultiEdit value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeMultiEdit[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeMultiEdit[]
      */
     public function getMidocoFeeMultiEdit(): ?array
     {
@@ -67,12 +67,12 @@ class FeeMultiEditRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $feeMultiEditRequestMidocoFeeMultiEditItem) {
             // validation for constraint: itemType
-            if (!$feeMultiEditRequestMidocoFeeMultiEditItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeMultiEdit) {
+            if (!$feeMultiEditRequestMidocoFeeMultiEditItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoFeeMultiEdit) {
                 $invalidValues[] = is_object($feeMultiEditRequestMidocoFeeMultiEditItem) ? get_class($feeMultiEditRequestMidocoFeeMultiEditItem) : sprintf('%s(%s)', gettype($feeMultiEditRequestMidocoFeeMultiEditItem), var_export($feeMultiEditRequestMidocoFeeMultiEditItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFeeMultiEdit property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeMultiEdit, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFeeMultiEdit property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFeeMultiEdit, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -81,8 +81,8 @@ class FeeMultiEditRequest extends AbstractStructBase
     /**
      * Set MidocoFeeMultiEdit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeMultiEdit[] $midocoFeeMultiEdit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FeeMultiEditRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeMultiEdit[] $midocoFeeMultiEdit
+     * @return \Pggns\MidocoApi\Order\StructType\FeeMultiEditRequest
      */
     public function setMidocoFeeMultiEdit(?array $midocoFeeMultiEdit = null): self
     {
@@ -97,14 +97,14 @@ class FeeMultiEditRequest extends AbstractStructBase
     /**
      * Add item to MidocoFeeMultiEdit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeMultiEdit $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FeeMultiEditRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeMultiEdit $item
+     * @return \Pggns\MidocoApi\Order\StructType\FeeMultiEditRequest
      */
-    public function addToMidocoFeeMultiEdit(\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeMultiEdit $item): self
+    public function addToMidocoFeeMultiEdit(\Pggns\MidocoApi\Order\StructType\MidocoFeeMultiEdit $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeMultiEdit) {
-            throw new InvalidArgumentException(sprintf('The MidocoFeeMultiEdit property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeMultiEdit, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoFeeMultiEdit) {
+            throw new InvalidArgumentException(sprintf('The MidocoFeeMultiEdit property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFeeMultiEdit, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFeeMultiEdit[] = $item;
         
@@ -112,7 +112,7 @@ class FeeMultiEditRequest extends AbstractStructBase
     }
     /**
      * Get MidocoFeeGroupAssign value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign[]
      */
     public function getMidocoFeeGroupAssign(): ?array
     {
@@ -133,12 +133,12 @@ class FeeMultiEditRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $feeMultiEditRequestMidocoFeeGroupAssignItem) {
             // validation for constraint: itemType
-            if (!$feeMultiEditRequestMidocoFeeGroupAssignItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign) {
+            if (!$feeMultiEditRequestMidocoFeeGroupAssignItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign) {
                 $invalidValues[] = is_object($feeMultiEditRequestMidocoFeeGroupAssignItem) ? get_class($feeMultiEditRequestMidocoFeeGroupAssignItem) : sprintf('%s(%s)', gettype($feeMultiEditRequestMidocoFeeGroupAssignItem), var_export($feeMultiEditRequestMidocoFeeGroupAssignItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFeeGroupAssign property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFeeGroupAssign property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,8 +147,8 @@ class FeeMultiEditRequest extends AbstractStructBase
     /**
      * Set MidocoFeeGroupAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign[] $midocoFeeGroupAssign
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FeeMultiEditRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign[] $midocoFeeGroupAssign
+     * @return \Pggns\MidocoApi\Order\StructType\FeeMultiEditRequest
      */
     public function setMidocoFeeGroupAssign(?array $midocoFeeGroupAssign = null): self
     {
@@ -163,14 +163,14 @@ class FeeMultiEditRequest extends AbstractStructBase
     /**
      * Add item to MidocoFeeGroupAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FeeMultiEditRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign $item
+     * @return \Pggns\MidocoApi\Order\StructType\FeeMultiEditRequest
      */
-    public function addToMidocoFeeGroupAssign(\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign $item): self
+    public function addToMidocoFeeGroupAssign(\Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign) {
-            throw new InvalidArgumentException(sprintf('The MidocoFeeGroupAssign property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeGroupAssign, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign) {
+            throw new InvalidArgumentException(sprintf('The MidocoFeeGroupAssign property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFeeGroupAssign, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFeeGroupAssign[] = $item;
         

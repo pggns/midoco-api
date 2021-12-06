@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoAdviceDetailVatDiv extends AdviceDetailVatDivDTO
     /**
      * Set nettoAmount value
      * @param float $nettoAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceDetailVatDiv
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceDetailVatDiv
      */
     public function setNettoAmount(?float $nettoAmount = null): self
     {
@@ -78,7 +78,7 @@ class MidocoAdviceDetailVatDiv extends AdviceDetailVatDivDTO
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceDetailVatDiv
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceDetailVatDiv
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -101,7 +101,7 @@ class MidocoAdviceDetailVatDiv extends AdviceDetailVatDivDTO
     /**
      * Set bruttoAmount value
      * @param float $bruttoAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceDetailVatDiv
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceDetailVatDiv
      */
     public function setBruttoAmount(?float $bruttoAmount = null): self
     {

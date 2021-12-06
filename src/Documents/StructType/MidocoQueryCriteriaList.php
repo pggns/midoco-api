@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoQueryCriteriaList extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoQueryCriteria
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteria[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteria[]
      */
     protected ?array $MidocoQueryCriteria = null;
     /**
@@ -49,7 +49,7 @@ class MidocoQueryCriteriaList extends AbstractStructBase
      * @uses MidocoQueryCriteriaList::setCategory()
      * @uses MidocoQueryCriteriaList::setExistent()
      * @uses MidocoQueryCriteriaList::setInPackage()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteria[] $midocoQueryCriteria
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteria[] $midocoQueryCriteria
      * @param int $displayIndex
      * @param string $category
      * @param bool $existent
@@ -66,7 +66,7 @@ class MidocoQueryCriteriaList extends AbstractStructBase
     }
     /**
      * Get MidocoQueryCriteria value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteria[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteria[]
      */
     public function getMidocoQueryCriteria(): ?array
     {
@@ -87,12 +87,12 @@ class MidocoQueryCriteriaList extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoQueryCriteriaListMidocoQueryCriteriaItem) {
             // validation for constraint: itemType
-            if (!$midocoQueryCriteriaListMidocoQueryCriteriaItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteria) {
+            if (!$midocoQueryCriteriaListMidocoQueryCriteriaItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteria) {
                 $invalidValues[] = is_object($midocoQueryCriteriaListMidocoQueryCriteriaItem) ? get_class($midocoQueryCriteriaListMidocoQueryCriteriaItem) : sprintf('%s(%s)', gettype($midocoQueryCriteriaListMidocoQueryCriteriaItem), var_export($midocoQueryCriteriaListMidocoQueryCriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoQueryCriteria property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoQueryCriteria property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -101,8 +101,8 @@ class MidocoQueryCriteriaList extends AbstractStructBase
     /**
      * Set MidocoQueryCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteria[] $midocoQueryCriteria
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteriaList
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteria[] $midocoQueryCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteriaList
      */
     public function setMidocoQueryCriteria(?array $midocoQueryCriteria = null): self
     {
@@ -117,14 +117,14 @@ class MidocoQueryCriteriaList extends AbstractStructBase
     /**
      * Add item to MidocoQueryCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteria $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteriaList
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteria $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteriaList
      */
-    public function addToMidocoQueryCriteria(\Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteria $item): self
+    public function addToMidocoQueryCriteria(\Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteria $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteria) {
-            throw new InvalidArgumentException(sprintf('The MidocoQueryCriteria property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteria) {
+            throw new InvalidArgumentException(sprintf('The MidocoQueryCriteria property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoQueryCriteria[] = $item;
         
@@ -141,7 +141,7 @@ class MidocoQueryCriteriaList extends AbstractStructBase
     /**
      * Set displayIndex value
      * @param int $displayIndex
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteriaList
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteriaList
      */
     public function setDisplayIndex(?int $displayIndex = null): self
     {
@@ -164,7 +164,7 @@ class MidocoQueryCriteriaList extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteriaList
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteriaList
      */
     public function setCategory(?string $category = null): self
     {
@@ -187,7 +187,7 @@ class MidocoQueryCriteriaList extends AbstractStructBase
     /**
      * Set existent value
      * @param bool $existent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteriaList
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteriaList
      */
     public function setExistent(?bool $existent = null): self
     {
@@ -210,7 +210,7 @@ class MidocoQueryCriteriaList extends AbstractStructBase
     /**
      * Set inPackage value
      * @param bool $inPackage
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryCriteriaList
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQueryCriteriaList
      */
     public function setInPackage(?bool $inPackage = null): self
     {

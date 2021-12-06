@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class SafegatewayTransactionLogDTO extends AbstractStructBase
     /**
      * Set department value
      * @param string $department
-     * @return \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
      */
     public function setDepartment(?string $department = null): self
     {
@@ -142,7 +142,7 @@ class SafegatewayTransactionLogDTO extends AbstractStructBase
     /**
      * Set httpStatus value
      * @param int $httpStatus
-     * @return \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
      */
     public function setHttpStatus(?int $httpStatus = null): self
     {
@@ -165,7 +165,7 @@ class SafegatewayTransactionLogDTO extends AbstractStructBase
     /**
      * Set iframeAccess value
      * @param bool $iframeAccess
-     * @return \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
      */
     public function setIframeAccess(?bool $iframeAccess = null): self
     {
@@ -188,7 +188,7 @@ class SafegatewayTransactionLogDTO extends AbstractStructBase
     /**
      * Set numDecrypted value
      * @param int $numDecrypted
-     * @return \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
      */
     public function setNumDecrypted(?int $numDecrypted = null): self
     {
@@ -211,7 +211,7 @@ class SafegatewayTransactionLogDTO extends AbstractStructBase
     /**
      * Set numEncrypted value
      * @param int $numEncrypted
-     * @return \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
      */
     public function setNumEncrypted(?int $numEncrypted = null): self
     {
@@ -234,7 +234,7 @@ class SafegatewayTransactionLogDTO extends AbstractStructBase
     /**
      * Set proxyTimestamp value
      * @param string $proxyTimestamp
-     * @return \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
      */
     public function setProxyTimestamp(?string $proxyTimestamp = null): self
     {
@@ -257,7 +257,7 @@ class SafegatewayTransactionLogDTO extends AbstractStructBase
     /**
      * Set requestId value
      * @param int $requestId
-     * @return \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
      */
     public function setRequestId(?int $requestId = null): self
     {
@@ -280,7 +280,7 @@ class SafegatewayTransactionLogDTO extends AbstractStructBase
     /**
      * Set requestPath value
      * @param string $requestPath
-     * @return \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
      */
     public function setRequestPath(?string $requestPath = null): self
     {
@@ -303,7 +303,7 @@ class SafegatewayTransactionLogDTO extends AbstractStructBase
     /**
      * Set targetId value
      * @param string $targetId
-     * @return \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
      */
     public function setTargetId(?string $targetId = null): self
     {
@@ -326,7 +326,7 @@ class SafegatewayTransactionLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -349,7 +349,7 @@ class SafegatewayTransactionLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\ServiceType;
+namespace Pggns\MidocoApi\OrderSD\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Get extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\OrderSD\ServiceType\Get
+     * @return \Pggns\MidocoApi\OrderSD\ServiceType\Get
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierRequest $paramGetAvailableSupplierRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierRequest $paramGetAvailableSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierResponse|bool
      */
-    public function getAvailableSuppliers(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierRequest $paramGetAvailableSupplierRequest)
+    public function getAvailableSuppliers(\Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierRequest $paramGetAvailableSupplierRequest)
     {
         try {
             $this->setResult($resultGetAvailableSuppliers = $this->getSoapClient()->__soapCall('getAvailableSuppliers', [
@@ -58,15 +58,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAddressRequest $paramGetSupplierAddressRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAddressResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAddressRequest $paramGetSupplierAddressRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAddressResponse|bool
      */
-    public function getAvailableSupplierAddresses(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAddressRequest $paramGetSupplierAddressRequest)
+    public function getAvailableSupplierAddresses(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierAddressRequest $paramGetSupplierAddressRequest)
     {
         try {
             $this->setResult($resultGetAvailableSupplierAddresses = $this->getSoapClient()->__soapCall('getAvailableSupplierAddresses', [
@@ -85,15 +85,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCcCardRequest $paramGetSupplierCcCardRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCcCardResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierCcCardRequest $paramGetSupplierCcCardRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierCcCardResponse|bool
      */
-    public function getAvailableSupplierCcCard(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCcCardRequest $paramGetSupplierCcCardRequest)
+    public function getAvailableSupplierCcCard(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierCcCardRequest $paramGetSupplierCcCardRequest)
     {
         try {
             $this->setResult($resultGetAvailableSupplierCcCard = $this->getSoapClient()->__soapCall('getAvailableSupplierCcCard', [
@@ -112,15 +112,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAccountAssignRequest $paramGetSupplierAccountAssignRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAccountAssignResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAccountAssignRequest $paramGetSupplierAccountAssignRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAccountAssignResponse|bool
      */
-    public function getAvailableSupplierAccountAssign(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAccountAssignRequest $paramGetSupplierAccountAssignRequest)
+    public function getAvailableSupplierAccountAssign(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierAccountAssignRequest $paramGetSupplierAccountAssignRequest)
     {
         try {
             $this->setResult($resultGetAvailableSupplierAccountAssign = $this->getSoapClient()->__soapCall('getAvailableSupplierAccountAssign', [
@@ -140,15 +140,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierDocumentShippingRequest $paramGetSupplierDocumentShippingRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierDocumentShippingResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierDocumentShippingRequest $paramGetSupplierDocumentShippingRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierDocumentShippingResponse|bool
      */
-    public function getAvailableSupplierDocumentShipping(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierDocumentShippingRequest $paramGetSupplierDocumentShippingRequest)
+    public function getAvailableSupplierDocumentShipping(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierDocumentShippingRequest $paramGetSupplierDocumentShippingRequest)
     {
         try {
             $this->setResult($resultGetAvailableSupplierDocumentShipping = $this->getSoapClient()->__soapCall('getAvailableSupplierDocumentShipping', [
@@ -168,15 +168,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierPaymentConditionRequest $paramGetSupplierPaymentConditionRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierPaymentConditionResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierPaymentConditionRequest $paramGetSupplierPaymentConditionRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierPaymentConditionResponse|bool
      */
-    public function getAvailableSupplierPaymentCondition(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierPaymentConditionRequest $paramGetSupplierPaymentConditionRequest)
+    public function getAvailableSupplierPaymentCondition(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierPaymentConditionRequest $paramGetSupplierPaymentConditionRequest)
     {
         try {
             $this->setResult($resultGetAvailableSupplierPaymentCondition = $this->getSoapClient()->__soapCall('getAvailableSupplierPaymentCondition', [
@@ -196,15 +196,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCancelConditionRequest $paramGetSupplierCancelConditionRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCancelConditionResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierCancelConditionRequest $paramGetSupplierCancelConditionRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierCancelConditionResponse|bool
      */
-    public function getAvailableSupplierCancelCondition(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCancelConditionRequest $paramGetSupplierCancelConditionRequest)
+    public function getAvailableSupplierCancelCondition(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierCancelConditionRequest $paramGetSupplierCancelConditionRequest)
     {
         try {
             $this->setResult($resultGetAvailableSupplierCancelCondition = $this->getSoapClient()->__soapCall('getAvailableSupplierCancelCondition', [
@@ -223,15 +223,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedSuppCancelCMappingRequest $paramGetAssignedSuppCancelCMappingRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedSuppCancelCMappingResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAssignedSuppCancelCMappingRequest $paramGetAssignedSuppCancelCMappingRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAssignedSuppCancelCMappingResponse|bool
      */
-    public function getAssignedSuppCancelCMapping(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedSuppCancelCMappingRequest $paramGetAssignedSuppCancelCMappingRequest)
+    public function getAssignedSuppCancelCMapping(\Pggns\MidocoApi\OrderSD\StructType\GetAssignedSuppCancelCMappingRequest $paramGetAssignedSuppCancelCMappingRequest)
     {
         try {
             $this->setResult($resultGetAssignedSuppCancelCMapping = $this->getSoapClient()->__soapCall('getAssignedSuppCancelCMapping', [
@@ -250,15 +250,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSuppCancelCMappingRequest $paramGetSuppCancelCMappingRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSuppCancelCMappingResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSuppCancelCMappingRequest $paramGetSuppCancelCMappingRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSuppCancelCMappingResponse|bool
      */
-    public function getSuppCancelCMapping(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSuppCancelCMappingRequest $paramGetSuppCancelCMappingRequest)
+    public function getSuppCancelCMapping(\Pggns\MidocoApi\OrderSD\StructType\GetSuppCancelCMappingRequest $paramGetSuppCancelCMappingRequest)
     {
         try {
             $this->setResult($resultGetSuppCancelCMapping = $this->getSoapClient()->__soapCall('getSuppCancelCMapping', [
@@ -277,15 +277,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSuppCancelCEmailRequest $paramGetSuppCancelCEmailRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSuppCancelCEmailResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSuppCancelCEmailRequest $paramGetSuppCancelCEmailRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSuppCancelCEmailResponse|bool
      */
-    public function getSuppCancelCEmail(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSuppCancelCEmailRequest $paramGetSuppCancelCEmailRequest)
+    public function getSuppCancelCEmail(\Pggns\MidocoApi\OrderSD\StructType\GetSuppCancelCEmailRequest $paramGetSuppCancelCEmailRequest)
     {
         try {
             $this->setResult($resultGetSuppCancelCEmail = $this->getSoapClient()->__soapCall('getSuppCancelCEmail', [
@@ -304,15 +304,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSpecifiedSupplierPaymentConditionRequest $paramGetSpecifiedSupplierPaymentConditionRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSpecifiedSupplierPaymentConditionResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSpecifiedSupplierPaymentConditionRequest $paramGetSpecifiedSupplierPaymentConditionRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSpecifiedSupplierPaymentConditionResponse|bool
      */
-    public function getSupplierPaymentCondition(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSpecifiedSupplierPaymentConditionRequest $paramGetSpecifiedSupplierPaymentConditionRequest)
+    public function getSupplierPaymentCondition(\Pggns\MidocoApi\OrderSD\StructType\GetSpecifiedSupplierPaymentConditionRequest $paramGetSpecifiedSupplierPaymentConditionRequest)
     {
         try {
             $this->setResult($resultGetSupplierPaymentCondition = $this->getSoapClient()->__soapCall('getSupplierPaymentCondition', [
@@ -331,15 +331,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableAccountsRequest $paramGetAvailableAccountsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableAccountsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAvailableAccountsRequest $paramGetAvailableAccountsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableAccountsResponse|bool
      */
-    public function getAvailableAccounts(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableAccountsRequest $paramGetAvailableAccountsRequest)
+    public function getAvailableAccounts(\Pggns\MidocoApi\OrderSD\StructType\GetAvailableAccountsRequest $paramGetAvailableAccountsRequest)
     {
         try {
             $this->setResult($resultGetAvailableAccounts = $this->getSoapClient()->__soapCall('getAvailableAccounts', [
@@ -358,15 +358,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAccountsFromAccountAssignRequest $paramGetAccountsFromAccountAssignRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAccountsFromAccountAssignResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAccountsFromAccountAssignRequest $paramGetAccountsFromAccountAssignRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAccountsFromAccountAssignResponse|bool
      */
-    public function getAccountsFromSupplier(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAccountsFromAccountAssignRequest $paramGetAccountsFromAccountAssignRequest)
+    public function getAccountsFromSupplier(\Pggns\MidocoApi\OrderSD\StructType\GetAccountsFromAccountAssignRequest $paramGetAccountsFromAccountAssignRequest)
     {
         try {
             $this->setResult($resultGetAccountsFromSupplier = $this->getSoapClient()->__soapCall('getAccountsFromSupplier', [
@@ -385,15 +385,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTextRemarksRequest $paramGetMidocoTextRemarksRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTextRemarksResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoTextRemarksRequest $paramGetMidocoTextRemarksRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoTextRemarksResponse|bool
      */
-    public function getTextRemarks(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTextRemarksRequest $paramGetMidocoTextRemarksRequest)
+    public function getTextRemarks(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoTextRemarksRequest $paramGetMidocoTextRemarksRequest)
     {
         try {
             $this->setResult($resultGetTextRemarks = $this->getSoapClient()->__soapCall('getTextRemarks', [
@@ -412,15 +412,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetDeliveriesForCultureRequest $paramGetDeliveriesForCultureRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetDeliveriesForCultureResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetDeliveriesForCultureRequest $paramGetDeliveriesForCultureRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetDeliveriesForCultureResponse|bool
      */
-    public function getDeliveryForCulture(\Pggns\MidocoApi\Api\OrderSD\StructType\GetDeliveriesForCultureRequest $paramGetDeliveriesForCultureRequest)
+    public function getDeliveryForCulture(\Pggns\MidocoApi\OrderSD\StructType\GetDeliveriesForCultureRequest $paramGetDeliveriesForCultureRequest)
     {
         try {
             $this->setResult($resultGetDeliveryForCulture = $this->getSoapClient()->__soapCall('getDeliveryForCulture', [
@@ -439,15 +439,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoRuleTypesRequest $paramGetMidocoRuleTypesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoRuleTypesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoRuleTypesRequest $paramGetMidocoRuleTypesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoRuleTypesResponse|bool
      */
-    public function getMidocoRuleTypes(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoRuleTypesRequest $paramGetMidocoRuleTypesRequest)
+    public function getMidocoRuleTypes(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoRuleTypesRequest $paramGetMidocoRuleTypesRequest)
     {
         try {
             $this->setResult($resultGetMidocoRuleTypes = $this->getSoapClient()->__soapCall('getMidocoRuleTypes', [
@@ -466,15 +466,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetRuleSetsRequest $paramGetRuleSetsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetRuleSetsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetRuleSetsRequest $paramGetRuleSetsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetRuleSetsResponse|bool
      */
-    public function getMidocoRuleSets(\Pggns\MidocoApi\Api\OrderSD\StructType\GetRuleSetsRequest $paramGetRuleSetsRequest)
+    public function getMidocoRuleSets(\Pggns\MidocoApi\OrderSD\StructType\GetRuleSetsRequest $paramGetRuleSetsRequest)
     {
         try {
             $this->setResult($resultGetMidocoRuleSets = $this->getSoapClient()->__soapCall('getMidocoRuleSets', [
@@ -493,15 +493,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedOrgunitsForRuleRequest $paramGetAssignedOrgunitsForRuleRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedOrgunitsForRuleResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAssignedOrgunitsForRuleRequest $paramGetAssignedOrgunitsForRuleRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAssignedOrgunitsForRuleResponse|bool
      */
-    public function getAssignedOrgunitsForRule(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedOrgunitsForRuleRequest $paramGetAssignedOrgunitsForRuleRequest)
+    public function getAssignedOrgunitsForRule(\Pggns\MidocoApi\OrderSD\StructType\GetAssignedOrgunitsForRuleRequest $paramGetAssignedOrgunitsForRuleRequest)
     {
         try {
             $this->setResult($resultGetAssignedOrgunitsForRule = $this->getSoapClient()->__soapCall('getAssignedOrgunitsForRule', [
@@ -520,15 +520,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedMidocoRuleSetRequest $paramGetAssignedMidocoRuleSetRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedMidocoRuleSetResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAssignedMidocoRuleSetRequest $paramGetAssignedMidocoRuleSetRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAssignedMidocoRuleSetResponse|bool
      */
-    public function getAssignedRuleSet(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedMidocoRuleSetRequest $paramGetAssignedMidocoRuleSetRequest)
+    public function getAssignedRuleSet(\Pggns\MidocoApi\OrderSD\StructType\GetAssignedMidocoRuleSetRequest $paramGetAssignedMidocoRuleSetRequest)
     {
         try {
             $this->setResult($resultGetAssignedRuleSet = $this->getSoapClient()->__soapCall('getAssignedRuleSet', [
@@ -547,15 +547,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedMidocoRuleSetForOrgunitRequest $paramGetAssignedMidocoRuleSetForOrgunitRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedMidocoRuleSetForOrgunitResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAssignedMidocoRuleSetForOrgunitRequest $paramGetAssignedMidocoRuleSetForOrgunitRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAssignedMidocoRuleSetForOrgunitResponse|bool
      */
-    public function getAssignedMidocoRuleSetForOrgunit(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedMidocoRuleSetForOrgunitRequest $paramGetAssignedMidocoRuleSetForOrgunitRequest)
+    public function getAssignedMidocoRuleSetForOrgunit(\Pggns\MidocoApi\OrderSD\StructType\GetAssignedMidocoRuleSetForOrgunitRequest $paramGetAssignedMidocoRuleSetForOrgunitRequest)
     {
         try {
             $this->setResult($resultGetAssignedMidocoRuleSetForOrgunit = $this->getSoapClient()->__soapCall('getAssignedMidocoRuleSetForOrgunit', [
@@ -574,15 +574,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoFeeTypeRequest $paramGetMidocoFeeTypeRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoFeeTypeResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoFeeTypeRequest $paramGetMidocoFeeTypeRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoFeeTypeResponse|bool
      */
-    public function getMidocoFeeType(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoFeeTypeRequest $paramGetMidocoFeeTypeRequest)
+    public function getMidocoFeeType(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoFeeTypeRequest $paramGetMidocoFeeTypeRequest)
     {
         try {
             $this->setResult($resultGetMidocoFeeType = $this->getSoapClient()->__soapCall('getMidocoFeeType', [
@@ -601,15 +601,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetBankAccountRequest $paramGetBankAccountRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetBankAccountResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetBankAccountRequest $paramGetBankAccountRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetBankAccountResponse|bool
      */
-    public function getBankAccount(\Pggns\MidocoApi\Api\OrderSD\StructType\GetBankAccountRequest $paramGetBankAccountRequest)
+    public function getBankAccount(\Pggns\MidocoApi\OrderSD\StructType\GetBankAccountRequest $paramGetBankAccountRequest)
     {
         try {
             $this->setResult($resultGetBankAccount = $this->getSoapClient()->__soapCall('getBankAccount', [
@@ -628,15 +628,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetBankAccounts4OrgUnitRequest $paramGetBankAccounts4OrgUnitRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetBankAccounts4OrgUnitResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetBankAccounts4OrgUnitRequest $paramGetBankAccounts4OrgUnitRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetBankAccounts4OrgUnitResponse|bool
      */
-    public function getBankAccounts4OrgUnit(\Pggns\MidocoApi\Api\OrderSD\StructType\GetBankAccounts4OrgUnitRequest $paramGetBankAccounts4OrgUnitRequest)
+    public function getBankAccounts4OrgUnit(\Pggns\MidocoApi\OrderSD\StructType\GetBankAccounts4OrgUnitRequest $paramGetBankAccounts4OrgUnitRequest)
     {
         try {
             $this->setResult($resultGetBankAccounts4OrgUnit = $this->getSoapClient()->__soapCall('getBankAccounts4OrgUnit', [
@@ -655,15 +655,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTemplatesRequest $paramGetMidocoTemplatesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTemplatesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoTemplatesRequest $paramGetMidocoTemplatesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoTemplatesResponse|bool
      */
-    public function getMidocoTemplates(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTemplatesRequest $paramGetMidocoTemplatesRequest)
+    public function getMidocoTemplates(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoTemplatesRequest $paramGetMidocoTemplatesRequest)
     {
         try {
             $this->setResult($resultGetMidocoTemplates = $this->getSoapClient()->__soapCall('getMidocoTemplates', [
@@ -682,15 +682,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTemplateTypesRequest $paramGetMidocoTemplateTypesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTemplateTypesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoTemplateTypesRequest $paramGetMidocoTemplateTypesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoTemplateTypesResponse|bool
      */
-    public function getMidocoTemplateTypes(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTemplateTypesRequest $paramGetMidocoTemplateTypesRequest)
+    public function getMidocoTemplateTypes(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoTemplateTypesRequest $paramGetMidocoTemplateTypesRequest)
     {
         try {
             $this->setResult($resultGetMidocoTemplateTypes = $this->getSoapClient()->__soapCall('getMidocoTemplateTypes', [
@@ -709,15 +709,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierTemplateRequest $paramGetMidocoSupplierTemplateRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierTemplateResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierTemplateRequest $paramGetMidocoSupplierTemplateRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierTemplateResponse|bool
      */
-    public function getMidocoSupplierTemplate(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierTemplateRequest $paramGetMidocoSupplierTemplateRequest)
+    public function getMidocoSupplierTemplate(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierTemplateRequest $paramGetMidocoSupplierTemplateRequest)
     {
         try {
             $this->setResult($resultGetMidocoSupplierTemplate = $this->getSoapClient()->__soapCall('getMidocoSupplierTemplate', [
@@ -736,15 +736,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedSuppliersToTemplateRequest $paramGetAssignedSuppliersToTemplateRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedSuppliersToTemplateResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAssignedSuppliersToTemplateRequest $paramGetAssignedSuppliersToTemplateRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAssignedSuppliersToTemplateResponse|bool
      */
-    public function getAssignedSuppliersToTemplate(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedSuppliersToTemplateRequest $paramGetAssignedSuppliersToTemplateRequest)
+    public function getAssignedSuppliersToTemplate(\Pggns\MidocoApi\OrderSD\StructType\GetAssignedSuppliersToTemplateRequest $paramGetAssignedSuppliersToTemplateRequest)
     {
         try {
             $this->setResult($resultGetAssignedSuppliersToTemplate = $this->getSoapClient()->__soapCall('getAssignedSuppliersToTemplate', [
@@ -763,15 +763,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierCommissionRequest $paramGetMidocoSupplierCommissionRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierCommissionResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierCommissionRequest $paramGetMidocoSupplierCommissionRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierCommissionResponse|bool
      */
-    public function getMidocoSupplierCommissions(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierCommissionRequest $paramGetMidocoSupplierCommissionRequest)
+    public function getMidocoSupplierCommissions(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierCommissionRequest $paramGetMidocoSupplierCommissionRequest)
     {
         try {
             $this->setResult($resultGetMidocoSupplierCommissions = $this->getSoapClient()->__soapCall('getMidocoSupplierCommissions', [
@@ -790,15 +790,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCommissionByLevelIdRequest $paramGetSupplierCommissionByLevelIdRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCommissionByLevelIdResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierCommissionByLevelIdRequest $paramGetSupplierCommissionByLevelIdRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierCommissionByLevelIdResponse|bool
      */
-    public function getSupplierCommissionByLevelId(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCommissionByLevelIdRequest $paramGetSupplierCommissionByLevelIdRequest)
+    public function getSupplierCommissionByLevelId(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierCommissionByLevelIdRequest $paramGetSupplierCommissionByLevelIdRequest)
     {
         try {
             $this->setResult($resultGetSupplierCommissionByLevelId = $this->getSoapClient()->__soapCall('getSupplierCommissionByLevelId', [
@@ -817,15 +817,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetCashBookItemTypeRequest $paramGetCashBookItemTypeRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetCashBookItemTypeResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetCashBookItemTypeRequest $paramGetCashBookItemTypeRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetCashBookItemTypeResponse|bool
      */
-    public function getCashBookItemType(\Pggns\MidocoApi\Api\OrderSD\StructType\GetCashBookItemTypeRequest $paramGetCashBookItemTypeRequest)
+    public function getCashBookItemType(\Pggns\MidocoApi\OrderSD\StructType\GetCashBookItemTypeRequest $paramGetCashBookItemTypeRequest)
     {
         try {
             $this->setResult($resultGetCashBookItemType = $this->getSoapClient()->__soapCall('getCashBookItemType', [
@@ -844,15 +844,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAccomodationCodesRequest $paramGetAccomodationCodesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAccomodationCodesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAccomodationCodesRequest $paramGetAccomodationCodesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAccomodationCodesResponse|bool
      */
-    public function getAccomodationCodes(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAccomodationCodesRequest $paramGetAccomodationCodesRequest)
+    public function getAccomodationCodes(\Pggns\MidocoApi\OrderSD\StructType\GetAccomodationCodesRequest $paramGetAccomodationCodesRequest)
     {
         try {
             $this->setResult($resultGetAccomodationCodes = $this->getSoapClient()->__soapCall('getAccomodationCodes', [
@@ -871,15 +871,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetCateringCodesRequest $paramGetCateringCodesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetCateringCodesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetCateringCodesRequest $paramGetCateringCodesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetCateringCodesResponse|bool
      */
-    public function getCateringCodes(\Pggns\MidocoApi\Api\OrderSD\StructType\GetCateringCodesRequest $paramGetCateringCodesRequest)
+    public function getCateringCodes(\Pggns\MidocoApi\OrderSD\StructType\GetCateringCodesRequest $paramGetCateringCodesRequest)
     {
         try {
             $this->setResult($resultGetCateringCodes = $this->getSoapClient()->__soapCall('getCateringCodes', [
@@ -898,15 +898,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAreaCodesRequest $paramGetAreaCodesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAreaCodesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAreaCodesRequest $paramGetAreaCodesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAreaCodesResponse|bool
      */
-    public function getAreaCodes(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAreaCodesRequest $paramGetAreaCodesRequest)
+    public function getAreaCodes(\Pggns\MidocoApi\OrderSD\StructType\GetAreaCodesRequest $paramGetAreaCodesRequest)
     {
         try {
             $this->setResult($resultGetAreaCodes = $this->getSoapClient()->__soapCall('getAreaCodes', [
@@ -925,15 +925,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarkOrgunitsRequest $paramGetRemarkOrgunitsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarkOrgunitsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetRemarkOrgunitsRequest $paramGetRemarkOrgunitsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetRemarkOrgunitsResponse|bool
      */
-    public function getRemarkOrgunits(\Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarkOrgunitsRequest $paramGetRemarkOrgunitsRequest)
+    public function getRemarkOrgunits(\Pggns\MidocoApi\OrderSD\StructType\GetRemarkOrgunitsRequest $paramGetRemarkOrgunitsRequest)
     {
         try {
             $this->setResult($resultGetRemarkOrgunits = $this->getSoapClient()->__soapCall('getRemarkOrgunits', [
@@ -952,15 +952,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierSettlementAccountsRequest $paramGetSupplierSettlementAccountsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierSettlementAccountsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierSettlementAccountsRequest $paramGetSupplierSettlementAccountsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierSettlementAccountsResponse|bool
      */
-    public function getSupplierSettlementAccounts(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierSettlementAccountsRequest $paramGetSupplierSettlementAccountsRequest)
+    public function getSupplierSettlementAccounts(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierSettlementAccountsRequest $paramGetSupplierSettlementAccountsRequest)
     {
         try {
             $this->setResult($resultGetSupplierSettlementAccounts = $this->getSoapClient()->__soapCall('getSupplierSettlementAccounts', [
@@ -979,15 +979,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarkSuppliersRequest $paramGetRemarkSuppliersRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarkSuppliersResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetRemarkSuppliersRequest $paramGetRemarkSuppliersRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetRemarkSuppliersResponse|bool
      */
-    public function getRemarkSuppliers(\Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarkSuppliersRequest $paramGetRemarkSuppliersRequest)
+    public function getRemarkSuppliers(\Pggns\MidocoApi\OrderSD\StructType\GetRemarkSuppliersRequest $paramGetRemarkSuppliersRequest)
     {
         try {
             $this->setResult($resultGetRemarkSuppliers = $this->getSoapClient()->__soapCall('getRemarkSuppliers', [
@@ -1006,15 +1006,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetShortRemarkIdentifiersRequest $paramGetShortRemarkIdentifiersRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetShortRemarkIdentifiersResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetShortRemarkIdentifiersRequest $paramGetShortRemarkIdentifiersRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetShortRemarkIdentifiersResponse|bool
      */
-    public function getShortRemarkIdentifiers(\Pggns\MidocoApi\Api\OrderSD\StructType\GetShortRemarkIdentifiersRequest $paramGetShortRemarkIdentifiersRequest)
+    public function getShortRemarkIdentifiers(\Pggns\MidocoApi\OrderSD\StructType\GetShortRemarkIdentifiersRequest $paramGetShortRemarkIdentifiersRequest)
     {
         try {
             $this->setResult($resultGetShortRemarkIdentifiers = $this->getSoapClient()->__soapCall('getShortRemarkIdentifiers', [
@@ -1033,15 +1033,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierInkassoModesRequest $paramGetSupplierInkassoModesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierInkassoModesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierInkassoModesRequest $paramGetSupplierInkassoModesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierInkassoModesResponse|bool
      */
-    public function getSupplierInkassoModes(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierInkassoModesRequest $paramGetSupplierInkassoModesRequest)
+    public function getSupplierInkassoModes(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierInkassoModesRequest $paramGetSupplierInkassoModesRequest)
     {
         try {
             $this->setResult($resultGetSupplierInkassoModes = $this->getSoapClient()->__soapCall('getSupplierInkassoModes', [
@@ -1060,15 +1060,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAgenciesRequest $paramGetSupplierAgenciesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAgenciesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAgenciesRequest $paramGetSupplierAgenciesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAgenciesResponse|bool
      */
-    public function getSupplierAgencies(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAgenciesRequest $paramGetSupplierAgenciesRequest)
+    public function getSupplierAgencies(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierAgenciesRequest $paramGetSupplierAgenciesRequest)
     {
         try {
             $this->setResult($resultGetSupplierAgencies = $this->getSoapClient()->__soapCall('getSupplierAgencies', [
@@ -1087,15 +1087,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAgencyRequest $paramGetSupplierAgencyRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAgencyResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAgencyRequest $paramGetSupplierAgencyRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAgencyResponse|bool
      */
-    public function getSupplierAgency(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAgencyRequest $paramGetSupplierAgencyRequest)
+    public function getSupplierAgency(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierAgencyRequest $paramGetSupplierAgencyRequest)
     {
         try {
             $this->setResult($resultGetSupplierAgency = $this->getSoapClient()->__soapCall('getSupplierAgency', [
@@ -1114,15 +1114,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAgencyReservationRequest $paramGetSupplierAgencyReservationRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAgencyReservationResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAgencyReservationRequest $paramGetSupplierAgencyReservationRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAgencyReservationResponse|bool
      */
-    public function getSupplierAgencyReservation(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAgencyReservationRequest $paramGetSupplierAgencyReservationRequest)
+    public function getSupplierAgencyReservation(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierAgencyReservationRequest $paramGetSupplierAgencyReservationRequest)
     {
         try {
             $this->setResult($resultGetSupplierAgencyReservation = $this->getSoapClient()->__soapCall('getSupplierAgencyReservation', [
@@ -1141,15 +1141,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierRequest $paramGetSupplierRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierRequest $paramGetSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierResponse|bool
      */
-    public function getSupplier(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierRequest $paramGetSupplierRequest)
+    public function getSupplier(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierRequest $paramGetSupplierRequest)
     {
         try {
             $this->setResult($resultGetSupplier = $this->getSoapClient()->__soapCall('getSupplier', [
@@ -1168,15 +1168,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetQueryCriteriaOpNamesRequest $paramGetQueryCriteriaOpNamesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetQueryCriteriaOpNamesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetQueryCriteriaOpNamesRequest $paramGetQueryCriteriaOpNamesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetQueryCriteriaOpNamesResponse|bool
      */
-    public function getQueryCriteriaOpNames(\Pggns\MidocoApi\Api\OrderSD\StructType\GetQueryCriteriaOpNamesRequest $paramGetQueryCriteriaOpNamesRequest)
+    public function getQueryCriteriaOpNames(\Pggns\MidocoApi\OrderSD\StructType\GetQueryCriteriaOpNamesRequest $paramGetQueryCriteriaOpNamesRequest)
     {
         try {
             $this->setResult($resultGetQueryCriteriaOpNames = $this->getSoapClient()->__soapCall('getQueryCriteriaOpNames', [
@@ -1195,15 +1195,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableQueryCriteriaOpsRequest $paramGetAvailableQueryCriteriaOpsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableQueryCriteriaOpsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAvailableQueryCriteriaOpsRequest $paramGetAvailableQueryCriteriaOpsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableQueryCriteriaOpsResponse|bool
      */
-    public function getAvailableQueryCriteriaOps(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableQueryCriteriaOpsRequest $paramGetAvailableQueryCriteriaOpsRequest)
+    public function getAvailableQueryCriteriaOps(\Pggns\MidocoApi\OrderSD\StructType\GetAvailableQueryCriteriaOpsRequest $paramGetAvailableQueryCriteriaOpsRequest)
     {
         try {
             $this->setResult($resultGetAvailableQueryCriteriaOps = $this->getSoapClient()->__soapCall('getAvailableQueryCriteriaOps', [
@@ -1222,15 +1222,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableQueryFieldsRequest $paramGetAvailableQueryFieldsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableQueryFieldsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAvailableQueryFieldsRequest $paramGetAvailableQueryFieldsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableQueryFieldsResponse|bool
      */
-    public function getAvailableQueryFields(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableQueryFieldsRequest $paramGetAvailableQueryFieldsRequest)
+    public function getAvailableQueryFields(\Pggns\MidocoApi\OrderSD\StructType\GetAvailableQueryFieldsRequest $paramGetAvailableQueryFieldsRequest)
     {
         try {
             $this->setResult($resultGetAvailableQueryFields = $this->getSoapClient()->__soapCall('getAvailableQueryFields', [
@@ -1249,15 +1249,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetQueryPageRequest $paramGetQueryPageRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetQueryPageResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetQueryPageRequest $paramGetQueryPageRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetQueryPageResponse|bool
      */
-    public function getQueryPage(\Pggns\MidocoApi\Api\OrderSD\StructType\GetQueryPageRequest $paramGetQueryPageRequest)
+    public function getQueryPage(\Pggns\MidocoApi\OrderSD\StructType\GetQueryPageRequest $paramGetQueryPageRequest)
     {
         try {
             $this->setResult($resultGetQueryPage = $this->getSoapClient()->__soapCall('getQueryPage', [
@@ -1276,15 +1276,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetUserQueryRequest $paramGetUserQueryRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetUserQueryResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetUserQueryRequest $paramGetUserQueryRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetUserQueryResponse|bool
      */
-    public function getUserQuery(\Pggns\MidocoApi\Api\OrderSD\StructType\GetUserQueryRequest $paramGetUserQueryRequest)
+    public function getUserQuery(\Pggns\MidocoApi\OrderSD\StructType\GetUserQueryRequest $paramGetUserQueryRequest)
     {
         try {
             $this->setResult($resultGetUserQuery = $this->getSoapClient()->__soapCall('getUserQuery', [
@@ -1303,15 +1303,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetDunningLettersRequest $paramGetDunningLettersRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetDunningLettersResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetDunningLettersRequest $paramGetDunningLettersRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetDunningLettersResponse|bool
      */
-    public function getDunningLetters(\Pggns\MidocoApi\Api\OrderSD\StructType\GetDunningLettersRequest $paramGetDunningLettersRequest)
+    public function getDunningLetters(\Pggns\MidocoApi\OrderSD\StructType\GetDunningLettersRequest $paramGetDunningLettersRequest)
     {
         try {
             $this->setResult($resultGetDunningLetters = $this->getSoapClient()->__soapCall('getDunningLetters', [
@@ -1330,15 +1330,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetQueryFieldValuesRequest $paramGetQueryFieldValuesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetQueryFieldValuesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetQueryFieldValuesRequest $paramGetQueryFieldValuesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetQueryFieldValuesResponse|bool
      */
-    public function getQueryFieldValues(\Pggns\MidocoApi\Api\OrderSD\StructType\GetQueryFieldValuesRequest $paramGetQueryFieldValuesRequest)
+    public function getQueryFieldValues(\Pggns\MidocoApi\OrderSD\StructType\GetQueryFieldValuesRequest $paramGetQueryFieldValuesRequest)
     {
         try {
             $this->setResult($resultGetQueryFieldValues = $this->getSoapClient()->__soapCall('getQueryFieldValues', [
@@ -1357,15 +1357,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetProductTypeMediatorConditionsRequest $paramGetProductTypeMediatorConditionsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetProductTypeMediatorConditionsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetProductTypeMediatorConditionsRequest $paramGetProductTypeMediatorConditionsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetProductTypeMediatorConditionsResponse|bool
      */
-    public function getProductTypeMediatorConditions(\Pggns\MidocoApi\Api\OrderSD\StructType\GetProductTypeMediatorConditionsRequest $paramGetProductTypeMediatorConditionsRequest)
+    public function getProductTypeMediatorConditions(\Pggns\MidocoApi\OrderSD\StructType\GetProductTypeMediatorConditionsRequest $paramGetProductTypeMediatorConditionsRequest)
     {
         try {
             $this->setResult($resultGetProductTypeMediatorConditions = $this->getSoapClient()->__soapCall('getProductTypeMediatorConditions', [
@@ -1384,15 +1384,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeTypeForOrgunitRequest $paramGetFeeTypeForOrgunitRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeTypeForOrgunitResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetFeeTypeForOrgunitRequest $paramGetFeeTypeForOrgunitRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetFeeTypeForOrgunitResponse|bool
      */
-    public function getFeeTypeForOrgunit(\Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeTypeForOrgunitRequest $paramGetFeeTypeForOrgunitRequest)
+    public function getFeeTypeForOrgunit(\Pggns\MidocoApi\OrderSD\StructType\GetFeeTypeForOrgunitRequest $paramGetFeeTypeForOrgunitRequest)
     {
         try {
             $this->setResult($resultGetFeeTypeForOrgunit = $this->getSoapClient()->__soapCall('getFeeTypeForOrgunit', [
@@ -1411,15 +1411,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeGroupAssignsRequest $paramGetFeeGroupAssignsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeGroupAssignsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetFeeGroupAssignsRequest $paramGetFeeGroupAssignsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetFeeGroupAssignsResponse|bool
      */
-    public function getFeeGroupAssigns(\Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeGroupAssignsRequest $paramGetFeeGroupAssignsRequest)
+    public function getFeeGroupAssigns(\Pggns\MidocoApi\OrderSD\StructType\GetFeeGroupAssignsRequest $paramGetFeeGroupAssignsRequest)
     {
         try {
             $this->setResult($resultGetFeeGroupAssigns = $this->getSoapClient()->__soapCall('getFeeGroupAssigns', [
@@ -1438,15 +1438,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeGroupsRequest $paramGetFeeGroupsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeGroupsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetFeeGroupsRequest $paramGetFeeGroupsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetFeeGroupsResponse|bool
      */
-    public function getFeeGroups(\Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeGroupsRequest $paramGetFeeGroupsRequest)
+    public function getFeeGroups(\Pggns\MidocoApi\OrderSD\StructType\GetFeeGroupsRequest $paramGetFeeGroupsRequest)
     {
         try {
             $this->setResult($resultGetFeeGroups = $this->getSoapClient()->__soapCall('getFeeGroups', [
@@ -1465,15 +1465,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierByAccountRequest $paramGetSupplierByAccountRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierByAccountResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierByAccountRequest $paramGetSupplierByAccountRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierByAccountResponse|bool
      */
-    public function getSupplierByAccount(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierByAccountRequest $paramGetSupplierByAccountRequest)
+    public function getSupplierByAccount(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierByAccountRequest $paramGetSupplierByAccountRequest)
     {
         try {
             $this->setResult($resultGetSupplierByAccount = $this->getSoapClient()->__soapCall('getSupplierByAccount', [
@@ -1492,15 +1492,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoPrintOptionRequest $paramGetMidocoPrintOptionRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoPrintOptionResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoPrintOptionRequest $paramGetMidocoPrintOptionRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoPrintOptionResponse|bool
      */
-    public function getMidocoPrintOption(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoPrintOptionRequest $paramGetMidocoPrintOptionRequest)
+    public function getMidocoPrintOption(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoPrintOptionRequest $paramGetMidocoPrintOptionRequest)
     {
         try {
             $this->setResult($resultGetMidocoPrintOption = $this->getSoapClient()->__soapCall('getMidocoPrintOption', [
@@ -1519,15 +1519,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAutoRemarksRequest $paramGetAutoRemarksRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAutoRemarksResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAutoRemarksRequest $paramGetAutoRemarksRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAutoRemarksResponse|bool
      */
-    public function getAutoRemarks(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAutoRemarksRequest $paramGetAutoRemarksRequest)
+    public function getAutoRemarks(\Pggns\MidocoApi\OrderSD\StructType\GetAutoRemarksRequest $paramGetAutoRemarksRequest)
     {
         try {
             $this->setResult($resultGetAutoRemarks = $this->getSoapClient()->__soapCall('getAutoRemarks', [
@@ -1546,15 +1546,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierTraveltypesRequest $paramGetSupplierTraveltypesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierTraveltypesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierTraveltypesRequest $paramGetSupplierTraveltypesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierTraveltypesResponse|bool
      */
-    public function getSupplierTraveltypes(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierTraveltypesRequest $paramGetSupplierTraveltypesRequest)
+    public function getSupplierTraveltypes(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierTraveltypesRequest $paramGetSupplierTraveltypesRequest)
     {
         try {
             $this->setResult($resultGetSupplierTraveltypes = $this->getSoapClient()->__soapCall('getSupplierTraveltypes', [
@@ -1573,15 +1573,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeysForTypeRequest $paramGetMarketingKeysForTypeRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeysForTypeResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeysForTypeRequest $paramGetMarketingKeysForTypeRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeysForTypeResponse|bool
      */
-    public function getMarketingKeysForType(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeysForTypeRequest $paramGetMarketingKeysForTypeRequest)
+    public function getMarketingKeysForType(\Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeysForTypeRequest $paramGetMarketingKeysForTypeRequest)
     {
         try {
             $this->setResult($resultGetMarketingKeysForType = $this->getSoapClient()->__soapCall('getMarketingKeysForType', [
@@ -1600,15 +1600,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeysLocalizedForTypeRequest $paramGetMarketingKeysLocalizedForTypeRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeysLocalizedForTypeResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeysLocalizedForTypeRequest $paramGetMarketingKeysLocalizedForTypeRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeysLocalizedForTypeResponse|bool
      */
-    public function getMarketingKeysLocalizedForType(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeysLocalizedForTypeRequest $paramGetMarketingKeysLocalizedForTypeRequest)
+    public function getMarketingKeysLocalizedForType(\Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeysLocalizedForTypeRequest $paramGetMarketingKeysLocalizedForTypeRequest)
     {
         try {
             $this->setResult($resultGetMarketingKeysLocalizedForType = $this->getSoapClient()->__soapCall('getMarketingKeysLocalizedForType', [
@@ -1627,15 +1627,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeyDescriptionsForTypeRequest $paramGetMarketingKeyDescriptionsForTypeRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeyDescriptionsForTypeResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeyDescriptionsForTypeRequest $paramGetMarketingKeyDescriptionsForTypeRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeyDescriptionsForTypeResponse|bool
      */
-    public function getMarketingKeyDescriptionsForType(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeyDescriptionsForTypeRequest $paramGetMarketingKeyDescriptionsForTypeRequest)
+    public function getMarketingKeyDescriptionsForType(\Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeyDescriptionsForTypeRequest $paramGetMarketingKeyDescriptionsForTypeRequest)
     {
         try {
             $this->setResult($resultGetMarketingKeyDescriptionsForType = $this->getSoapClient()->__soapCall('getMarketingKeyDescriptionsForType', [
@@ -1654,15 +1654,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetBookingTextsRequest $paramGetBookingTextsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetBookingTextsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetBookingTextsRequest $paramGetBookingTextsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetBookingTextsResponse|bool
      */
-    public function getBookingTexts(\Pggns\MidocoApi\Api\OrderSD\StructType\GetBookingTextsRequest $paramGetBookingTextsRequest)
+    public function getBookingTexts(\Pggns\MidocoApi\OrderSD\StructType\GetBookingTextsRequest $paramGetBookingTextsRequest)
     {
         try {
             $this->setResult($resultGetBookingTexts = $this->getSoapClient()->__soapCall('getBookingTexts', [
@@ -1681,15 +1681,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierImportFormatRequest $paramGetMidocoSupplierImportFormatRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierImportFormatResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierImportFormatRequest $paramGetMidocoSupplierImportFormatRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierImportFormatResponse|bool
      */
-    public function getMidocoSupplierImportFormat(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierImportFormatRequest $paramGetMidocoSupplierImportFormatRequest)
+    public function getMidocoSupplierImportFormat(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierImportFormatRequest $paramGetMidocoSupplierImportFormatRequest)
     {
         try {
             $this->setResult($resultGetMidocoSupplierImportFormat = $this->getSoapClient()->__soapCall('getMidocoSupplierImportFormat', [
@@ -1708,15 +1708,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSettlementTypesRequest $paramGetMidocoSettlementTypesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSettlementTypesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoSettlementTypesRequest $paramGetMidocoSettlementTypesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoSettlementTypesResponse|bool
      */
-    public function getMidocoSettlementTypes(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSettlementTypesRequest $paramGetMidocoSettlementTypesRequest)
+    public function getMidocoSettlementTypes(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoSettlementTypesRequest $paramGetMidocoSettlementTypesRequest)
     {
         try {
             $this->setResult($resultGetMidocoSettlementTypes = $this->getSoapClient()->__soapCall('getMidocoSettlementTypes', [
@@ -1735,15 +1735,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetCurrencyRateRequest $paramGetCurrencyRateRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetCurrencyRateResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetCurrencyRateRequest $paramGetCurrencyRateRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetCurrencyRateResponse|bool
      */
-    public function getCurrencyRate(\Pggns\MidocoApi\Api\OrderSD\StructType\GetCurrencyRateRequest $paramGetCurrencyRateRequest)
+    public function getCurrencyRate(\Pggns\MidocoApi\OrderSD\StructType\GetCurrencyRateRequest $paramGetCurrencyRateRequest)
     {
         try {
             $this->setResult($resultGetCurrencyRate = $this->getSoapClient()->__soapCall('getCurrencyRate', [
@@ -1762,15 +1762,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetHedgeCurrencyRateRequest $paramGetHedgeCurrencyRateRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetHedgeCurrencyRateResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetHedgeCurrencyRateRequest $paramGetHedgeCurrencyRateRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetHedgeCurrencyRateResponse|bool
      */
-    public function getHedgeCurrencyRate(\Pggns\MidocoApi\Api\OrderSD\StructType\GetHedgeCurrencyRateRequest $paramGetHedgeCurrencyRateRequest)
+    public function getHedgeCurrencyRate(\Pggns\MidocoApi\OrderSD\StructType\GetHedgeCurrencyRateRequest $paramGetHedgeCurrencyRateRequest)
     {
         try {
             $this->setResult($resultGetHedgeCurrencyRate = $this->getSoapClient()->__soapCall('getHedgeCurrencyRate', [
@@ -1789,15 +1789,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierIdRequest $paramGetAvailableSupplierIdRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierIdResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierIdRequest $paramGetAvailableSupplierIdRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierIdResponse|bool
      */
-    public function getAvailableSupplierId(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierIdRequest $paramGetAvailableSupplierIdRequest)
+    public function getAvailableSupplierId(\Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierIdRequest $paramGetAvailableSupplierIdRequest)
     {
         try {
             $this->setResult($resultGetAvailableSupplierId = $this->getSoapClient()->__soapCall('getAvailableSupplierId', [
@@ -1816,15 +1816,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetTravelNumberRequest $paramGetTravelNumberRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetTravelNumberResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetTravelNumberRequest $paramGetTravelNumberRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetTravelNumberResponse|bool
      */
-    public function getTravelNumber(\Pggns\MidocoApi\Api\OrderSD\StructType\GetTravelNumberRequest $paramGetTravelNumberRequest)
+    public function getTravelNumber(\Pggns\MidocoApi\OrderSD\StructType\GetTravelNumberRequest $paramGetTravelNumberRequest)
     {
         try {
             $this->setResult($resultGetTravelNumber = $this->getSoapClient()->__soapCall('getTravelNumber', [
@@ -1843,15 +1843,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetCostCentresRequest $paramGetCostCentresRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetCostCentresResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetCostCentresRequest $paramGetCostCentresRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetCostCentresResponse|bool
      */
-    public function getCostCentres(\Pggns\MidocoApi\Api\OrderSD\StructType\GetCostCentresRequest $paramGetCostCentresRequest)
+    public function getCostCentres(\Pggns\MidocoApi\OrderSD\StructType\GetCostCentresRequest $paramGetCostCentresRequest)
     {
         try {
             $this->setResult($resultGetCostCentres = $this->getSoapClient()->__soapCall('getCostCentres', [
@@ -1870,15 +1870,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAddressListRequest $paramGetSupplierAddressListRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAddressListResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAddressListRequest $paramGetSupplierAddressListRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAddressListResponse|bool
      */
-    public function getAvailableSupplierAddressesList(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAddressListRequest $paramGetSupplierAddressListRequest)
+    public function getAvailableSupplierAddressesList(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierAddressListRequest $paramGetSupplierAddressListRequest)
     {
         try {
             $this->setResult($resultGetAvailableSupplierAddressesList = $this->getSoapClient()->__soapCall('getAvailableSupplierAddressesList', [
@@ -1897,15 +1897,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierNoticesRequest $paramGetSupplierNoticesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierNoticesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierNoticesRequest $paramGetSupplierNoticesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierNoticesResponse|bool
      */
-    public function getSupplierNotices(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierNoticesRequest $paramGetSupplierNoticesRequest)
+    public function getSupplierNotices(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierNoticesRequest $paramGetSupplierNoticesRequest)
     {
         try {
             $this->setResult($resultGetSupplierNotices = $this->getSoapClient()->__soapCall('getSupplierNotices', [
@@ -1924,15 +1924,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarks4OrgunitRequest $paramGetRemarks4OrgunitRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarks4OrgunitResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetRemarks4OrgunitRequest $paramGetRemarks4OrgunitRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetRemarks4OrgunitResponse|bool
      */
-    public function getRemarks4Orgunit(\Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarks4OrgunitRequest $paramGetRemarks4OrgunitRequest)
+    public function getRemarks4Orgunit(\Pggns\MidocoApi\OrderSD\StructType\GetRemarks4OrgunitRequest $paramGetRemarks4OrgunitRequest)
     {
         try {
             $this->setResult($resultGetRemarks4Orgunit = $this->getSoapClient()->__soapCall('getRemarks4Orgunit', [
@@ -1951,15 +1951,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableMiscPaymentSettingRequest $paramGetAvailableMiscPaymentSettingRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableMiscPaymentSettingResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAvailableMiscPaymentSettingRequest $paramGetAvailableMiscPaymentSettingRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableMiscPaymentSettingResponse|bool
      */
-    public function getAvailableMiscPaymentSettings(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableMiscPaymentSettingRequest $paramGetAvailableMiscPaymentSettingRequest)
+    public function getAvailableMiscPaymentSettings(\Pggns\MidocoApi\OrderSD\StructType\GetAvailableMiscPaymentSettingRequest $paramGetAvailableMiscPaymentSettingRequest)
     {
         try {
             $this->setResult($resultGetAvailableMiscPaymentSettings = $this->getSoapClient()->__soapCall('getAvailableMiscPaymentSettings', [
@@ -1978,15 +1978,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierTemplatesRequest $paramGetMidocoSupplierTemplatesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierTemplatesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierTemplatesRequest $paramGetMidocoSupplierTemplatesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierTemplatesResponse|bool
      */
-    public function getMidocoSupplierTemplates(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierTemplatesRequest $paramGetMidocoSupplierTemplatesRequest)
+    public function getMidocoSupplierTemplates(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierTemplatesRequest $paramGetMidocoSupplierTemplatesRequest)
     {
         try {
             $this->setResult($resultGetMidocoSupplierTemplates = $this->getSoapClient()->__soapCall('getMidocoSupplierTemplates', [
@@ -2005,15 +2005,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoCrsSystemRequest $paramGetMidocoCrsSystemRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoCrsSystemResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoCrsSystemRequest $paramGetMidocoCrsSystemRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoCrsSystemResponse|bool
      */
-    public function getMidocoCrsSystem(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoCrsSystemRequest $paramGetMidocoCrsSystemRequest)
+    public function getMidocoCrsSystem(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoCrsSystemRequest $paramGetMidocoCrsSystemRequest)
     {
         try {
             $this->setResult($resultGetMidocoCrsSystem = $this->getSoapClient()->__soapCall('getMidocoCrsSystem', [
@@ -2032,15 +2032,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoQuestionRequest $paramGetMidocoQuestionRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoQuestionResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoQuestionRequest $paramGetMidocoQuestionRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoQuestionResponse|bool
      */
-    public function getMidocoQuestion(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoQuestionRequest $paramGetMidocoQuestionRequest)
+    public function getMidocoQuestion(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoQuestionRequest $paramGetMidocoQuestionRequest)
     {
         try {
             $this->setResult($resultGetMidocoQuestion = $this->getSoapClient()->__soapCall('getMidocoQuestion', [
@@ -2059,15 +2059,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoQuestionValueRequest $paramGetMidocoQuestionValueRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoQuestionValueResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoQuestionValueRequest $paramGetMidocoQuestionValueRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoQuestionValueResponse|bool
      */
-    public function getMidocoQuestionValue(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoQuestionValueRequest $paramGetMidocoQuestionValueRequest)
+    public function getMidocoQuestionValue(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoQuestionValueRequest $paramGetMidocoQuestionValueRequest)
     {
         try {
             $this->setResult($resultGetMidocoQuestionValue = $this->getSoapClient()->__soapCall('getMidocoQuestionValue', [
@@ -2086,15 +2086,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetOrderLockReasonsRequest $paramGetOrderLockReasonsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetOrderLockReasonsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetOrderLockReasonsRequest $paramGetOrderLockReasonsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetOrderLockReasonsResponse|bool
      */
-    public function getOrderLockReasons(\Pggns\MidocoApi\Api\OrderSD\StructType\GetOrderLockReasonsRequest $paramGetOrderLockReasonsRequest)
+    public function getOrderLockReasons(\Pggns\MidocoApi\OrderSD\StructType\GetOrderLockReasonsRequest $paramGetOrderLockReasonsRequest)
     {
         try {
             $this->setResult($resultGetOrderLockReasons = $this->getSoapClient()->__soapCall('getOrderLockReasons', [
@@ -2113,15 +2113,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableOrderLockReasonsRequest $paramGetAvailableOrderLockReasonsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableOrderLockReasonsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAvailableOrderLockReasonsRequest $paramGetAvailableOrderLockReasonsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableOrderLockReasonsResponse|bool
      */
-    public function getAvailableOrderLockReasons(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableOrderLockReasonsRequest $paramGetAvailableOrderLockReasonsRequest)
+    public function getAvailableOrderLockReasons(\Pggns\MidocoApi\OrderSD\StructType\GetAvailableOrderLockReasonsRequest $paramGetAvailableOrderLockReasonsRequest)
     {
         try {
             $this->setResult($resultGetAvailableOrderLockReasons = $this->getSoapClient()->__soapCall('getAvailableOrderLockReasons', [
@@ -2140,15 +2140,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetOrderLockReasonDescriptionsRequest $paramGetOrderLockReasonDescriptionsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetOrderLockReasonDescriptionsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetOrderLockReasonDescriptionsRequest $paramGetOrderLockReasonDescriptionsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetOrderLockReasonDescriptionsResponse|bool
      */
-    public function getOrderLockReasonDescriptions(\Pggns\MidocoApi\Api\OrderSD\StructType\GetOrderLockReasonDescriptionsRequest $paramGetOrderLockReasonDescriptionsRequest)
+    public function getOrderLockReasonDescriptions(\Pggns\MidocoApi\OrderSD\StructType\GetOrderLockReasonDescriptionsRequest $paramGetOrderLockReasonDescriptionsRequest)
     {
         try {
             $this->setResult($resultGetOrderLockReasonDescriptions = $this->getSoapClient()->__soapCall('getOrderLockReasonDescriptions', [
@@ -2168,15 +2168,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableOrderLockReasonDescriptionsRequest $paramGetAvailableOrderLockReasonDescriptionsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableOrderLockReasonDescriptionsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAvailableOrderLockReasonDescriptionsRequest $paramGetAvailableOrderLockReasonDescriptionsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableOrderLockReasonDescriptionsResponse|bool
      */
-    public function getAvailableOrderLockReasonDescriptions(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableOrderLockReasonDescriptionsRequest $paramGetAvailableOrderLockReasonDescriptionsRequest)
+    public function getAvailableOrderLockReasonDescriptions(\Pggns\MidocoApi\OrderSD\StructType\GetAvailableOrderLockReasonDescriptionsRequest $paramGetAvailableOrderLockReasonDescriptionsRequest)
     {
         try {
             $this->setResult($resultGetAvailableOrderLockReasonDescriptions = $this->getSoapClient()->__soapCall('getAvailableOrderLockReasonDescriptions', [
@@ -2195,15 +2195,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetTravelNumberAutoRemarksRequest $paramGetTravelNumberAutoRemarksRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetTravelNumberAutoRemarksResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetTravelNumberAutoRemarksRequest $paramGetTravelNumberAutoRemarksRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetTravelNumberAutoRemarksResponse|bool
      */
-    public function getTravelNumberAutoRemarks(\Pggns\MidocoApi\Api\OrderSD\StructType\GetTravelNumberAutoRemarksRequest $paramGetTravelNumberAutoRemarksRequest)
+    public function getTravelNumberAutoRemarks(\Pggns\MidocoApi\OrderSD\StructType\GetTravelNumberAutoRemarksRequest $paramGetTravelNumberAutoRemarksRequest)
     {
         try {
             $this->setResult($resultGetTravelNumberAutoRemarks = $this->getSoapClient()->__soapCall('getTravelNumberAutoRemarks', [
@@ -2222,15 +2222,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetTravelNumberDocumentsRequest $paramGetTravelNumberDocumentsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetTravelNumberDocumentsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetTravelNumberDocumentsRequest $paramGetTravelNumberDocumentsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetTravelNumberDocumentsResponse|bool
      */
-    public function getTravelNumberDocuments(\Pggns\MidocoApi\Api\OrderSD\StructType\GetTravelNumberDocumentsRequest $paramGetTravelNumberDocumentsRequest)
+    public function getTravelNumberDocuments(\Pggns\MidocoApi\OrderSD\StructType\GetTravelNumberDocumentsRequest $paramGetTravelNumberDocumentsRequest)
     {
         try {
             $this->setResult($resultGetTravelNumberDocuments = $this->getSoapClient()->__soapCall('getTravelNumberDocuments', [
@@ -2249,15 +2249,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetDestinationAutoRemarksRequest $paramGetDestinationAutoRemarksRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetDestinationAutoRemarksResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetDestinationAutoRemarksRequest $paramGetDestinationAutoRemarksRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetDestinationAutoRemarksResponse|bool
      */
-    public function getDestinationAutoRemarks(\Pggns\MidocoApi\Api\OrderSD\StructType\GetDestinationAutoRemarksRequest $paramGetDestinationAutoRemarksRequest)
+    public function getDestinationAutoRemarks(\Pggns\MidocoApi\OrderSD\StructType\GetDestinationAutoRemarksRequest $paramGetDestinationAutoRemarksRequest)
     {
         try {
             $this->setResult($resultGetDestinationAutoRemarks = $this->getSoapClient()->__soapCall('getDestinationAutoRemarks', [
@@ -2276,15 +2276,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetDestinationDocumentsRequest $paramGetDestinationDocumentsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetDestinationDocumentsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetDestinationDocumentsRequest $paramGetDestinationDocumentsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetDestinationDocumentsResponse|bool
      */
-    public function getDestinationDocuments(\Pggns\MidocoApi\Api\OrderSD\StructType\GetDestinationDocumentsRequest $paramGetDestinationDocumentsRequest)
+    public function getDestinationDocuments(\Pggns\MidocoApi\OrderSD\StructType\GetDestinationDocumentsRequest $paramGetDestinationDocumentsRequest)
     {
         try {
             $this->setResult($resultGetDestinationDocuments = $this->getSoapClient()->__soapCall('getDestinationDocuments', [
@@ -2303,15 +2303,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierDisabledUnitsRequest $paramGetSupplierDisabledUnitsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierDisabledUnitsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierDisabledUnitsRequest $paramGetSupplierDisabledUnitsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierDisabledUnitsResponse|bool
      */
-    public function getSupplierDisabledUnits(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierDisabledUnitsRequest $paramGetSupplierDisabledUnitsRequest)
+    public function getSupplierDisabledUnits(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierDisabledUnitsRequest $paramGetSupplierDisabledUnitsRequest)
     {
         try {
             $this->setResult($resultGetSupplierDisabledUnits = $this->getSoapClient()->__soapCall('getSupplierDisabledUnits', [
@@ -2330,15 +2330,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierDocumentsRequest $paramGetSupplierDocumentsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierDocumentsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierDocumentsRequest $paramGetSupplierDocumentsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierDocumentsResponse|bool
      */
-    public function getSupplierDocuments(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierDocumentsRequest $paramGetSupplierDocumentsRequest)
+    public function getSupplierDocuments(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierDocumentsRequest $paramGetSupplierDocumentsRequest)
     {
         try {
             $this->setResult($resultGetSupplierDocuments = $this->getSoapClient()->__soapCall('getSupplierDocuments', [
@@ -2357,15 +2357,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSettlementTypeForSupplierRequest $paramGetMidocoSettlementTypeForSupplierRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSettlementTypeForSupplierResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMidocoSettlementTypeForSupplierRequest $paramGetMidocoSettlementTypeForSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoSettlementTypeForSupplierResponse|bool
      */
-    public function getMidocoSettlementTypeForSupplier(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSettlementTypeForSupplierRequest $paramGetMidocoSettlementTypeForSupplierRequest)
+    public function getMidocoSettlementTypeForSupplier(\Pggns\MidocoApi\OrderSD\StructType\GetMidocoSettlementTypeForSupplierRequest $paramGetMidocoSettlementTypeForSupplierRequest)
     {
         try {
             $this->setResult($resultGetMidocoSettlementTypeForSupplier = $this->getSoapClient()->__soapCall('getMidocoSettlementTypeForSupplier', [
@@ -2384,15 +2384,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetProductTypeSupplierRequest $paramGetProductTypeSupplierRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetProductTypeSupplierResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetProductTypeSupplierRequest $paramGetProductTypeSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetProductTypeSupplierResponse|bool
      */
-    public function getProductTypeSupplier(\Pggns\MidocoApi\Api\OrderSD\StructType\GetProductTypeSupplierRequest $paramGetProductTypeSupplierRequest)
+    public function getProductTypeSupplier(\Pggns\MidocoApi\OrderSD\StructType\GetProductTypeSupplierRequest $paramGetProductTypeSupplierRequest)
     {
         try {
             $this->setResult($resultGetProductTypeSupplier = $this->getSoapClient()->__soapCall('getProductTypeSupplier', [
@@ -2412,15 +2412,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetOrdCriteriaTypeCategoryDescriptionsRequest $paramGetOrdCriteriaTypeCategoryDescriptionsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetOrdCriteriaTypeCategoryDescriptionsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetOrdCriteriaTypeCategoryDescriptionsRequest $paramGetOrdCriteriaTypeCategoryDescriptionsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetOrdCriteriaTypeCategoryDescriptionsResponse|bool
      */
-    public function getOrdCriteriaTypeCategoryDescriptions(\Pggns\MidocoApi\Api\OrderSD\StructType\GetOrdCriteriaTypeCategoryDescriptionsRequest $paramGetOrdCriteriaTypeCategoryDescriptionsRequest)
+    public function getOrdCriteriaTypeCategoryDescriptions(\Pggns\MidocoApi\OrderSD\StructType\GetOrdCriteriaTypeCategoryDescriptionsRequest $paramGetOrdCriteriaTypeCategoryDescriptionsRequest)
     {
         try {
             $this->setResult($resultGetOrdCriteriaTypeCategoryDescriptions = $this->getSoapClient()->__soapCall('getOrdCriteriaTypeCategoryDescriptions', [
@@ -2439,15 +2439,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetOrdCriteriaTypesForCategoryRequest $paramGetOrdCriteriaTypesForCategoryRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetOrdCriteriaTypesForCategoryResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetOrdCriteriaTypesForCategoryRequest $paramGetOrdCriteriaTypesForCategoryRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetOrdCriteriaTypesForCategoryResponse|bool
      */
-    public function getOrdCriteriaTypesForCategory(\Pggns\MidocoApi\Api\OrderSD\StructType\GetOrdCriteriaTypesForCategoryRequest $paramGetOrdCriteriaTypesForCategoryRequest)
+    public function getOrdCriteriaTypesForCategory(\Pggns\MidocoApi\OrderSD\StructType\GetOrdCriteriaTypesForCategoryRequest $paramGetOrdCriteriaTypesForCategoryRequest)
     {
         try {
             $this->setResult($resultGetOrdCriteriaTypesForCategory = $this->getSoapClient()->__soapCall('getOrdCriteriaTypesForCategory', [
@@ -2466,15 +2466,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAllOrdCriteriaDescriptionsRequest $paramGetAllOrdCriteriaDescriptionsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAllOrdCriteriaDescriptionsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAllOrdCriteriaDescriptionsRequest $paramGetAllOrdCriteriaDescriptionsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAllOrdCriteriaDescriptionsResponse|bool
      */
-    public function getAllOrdCriteriaDescriptions(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAllOrdCriteriaDescriptionsRequest $paramGetAllOrdCriteriaDescriptionsRequest)
+    public function getAllOrdCriteriaDescriptions(\Pggns\MidocoApi\OrderSD\StructType\GetAllOrdCriteriaDescriptionsRequest $paramGetAllOrdCriteriaDescriptionsRequest)
     {
         try {
             $this->setResult($resultGetAllOrdCriteriaDescriptions = $this->getSoapClient()->__soapCall('getAllOrdCriteriaDescriptions', [
@@ -2493,15 +2493,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetMatchingProductTypeSupplierRequest $paramGetMatchingProductTypeSupplierRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMatchingProductTypeSupplierResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetMatchingProductTypeSupplierRequest $paramGetMatchingProductTypeSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMatchingProductTypeSupplierResponse|bool
      */
-    public function getMatchingProductTypeSupplier(\Pggns\MidocoApi\Api\OrderSD\StructType\GetMatchingProductTypeSupplierRequest $paramGetMatchingProductTypeSupplierRequest)
+    public function getMatchingProductTypeSupplier(\Pggns\MidocoApi\OrderSD\StructType\GetMatchingProductTypeSupplierRequest $paramGetMatchingProductTypeSupplierRequest)
     {
         try {
             $this->setResult($resultGetMatchingProductTypeSupplier = $this->getSoapClient()->__soapCall('getMatchingProductTypeSupplier', [
@@ -2520,15 +2520,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetVoucherTypeRequest $paramGetVoucherTypeRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetVoucherTypeResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetVoucherTypeRequest $paramGetVoucherTypeRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetVoucherTypeResponse|bool
      */
-    public function getVoucherType(\Pggns\MidocoApi\Api\OrderSD\StructType\GetVoucherTypeRequest $paramGetVoucherTypeRequest)
+    public function getVoucherType(\Pggns\MidocoApi\OrderSD\StructType\GetVoucherTypeRequest $paramGetVoucherTypeRequest)
     {
         try {
             $this->setResult($resultGetVoucherType = $this->getSoapClient()->__soapCall('getVoucherType', [
@@ -2547,15 +2547,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetExternVoucherTypeRequest $paramGetExternVoucherTypeRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetExternVoucherTypeResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetExternVoucherTypeRequest $paramGetExternVoucherTypeRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetExternVoucherTypeResponse|bool
      */
-    public function getExternVoucherType(\Pggns\MidocoApi\Api\OrderSD\StructType\GetExternVoucherTypeRequest $paramGetExternVoucherTypeRequest)
+    public function getExternVoucherType(\Pggns\MidocoApi\OrderSD\StructType\GetExternVoucherTypeRequest $paramGetExternVoucherTypeRequest)
     {
         try {
             $this->setResult($resultGetExternVoucherType = $this->getSoapClient()->__soapCall('getExternVoucherType', [
@@ -2574,15 +2574,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierShipNamesRequest $paramGetSupplierShipNamesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierShipNamesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierShipNamesRequest $paramGetSupplierShipNamesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierShipNamesResponse|bool
      */
-    public function getSupplierShipNames(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierShipNamesRequest $paramGetSupplierShipNamesRequest)
+    public function getSupplierShipNames(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierShipNamesRequest $paramGetSupplierShipNamesRequest)
     {
         try {
             $this->setResult($resultGetSupplierShipNames = $this->getSoapClient()->__soapCall('getSupplierShipNames', [
@@ -2601,15 +2601,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierHistoricRequest $paramGetAvailableSupplierHistoricRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierHistoricResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierHistoricRequest $paramGetAvailableSupplierHistoricRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierHistoricResponse|bool
      */
-    public function getAvailableSupplierHistorics(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierHistoricRequest $paramGetAvailableSupplierHistoricRequest)
+    public function getAvailableSupplierHistorics(\Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierHistoricRequest $paramGetAvailableSupplierHistoricRequest)
     {
         try {
             $this->setResult($resultGetAvailableSupplierHistorics = $this->getSoapClient()->__soapCall('getAvailableSupplierHistorics', [
@@ -2628,15 +2628,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSpecifiedSupplierSettlementDiffRequest $paramGetSpecifiedSupplierSettlementDiffRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSpecifiedSupplierSettlementDiffResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSpecifiedSupplierSettlementDiffRequest $paramGetSpecifiedSupplierSettlementDiffRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSpecifiedSupplierSettlementDiffResponse|bool
      */
-    public function getSupplierSettlementDiff(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSpecifiedSupplierSettlementDiffRequest $paramGetSpecifiedSupplierSettlementDiffRequest)
+    public function getSupplierSettlementDiff(\Pggns\MidocoApi\OrderSD\StructType\GetSpecifiedSupplierSettlementDiffRequest $paramGetSpecifiedSupplierSettlementDiffRequest)
     {
         try {
             $this->setResult($resultGetSupplierSettlementDiff = $this->getSoapClient()->__soapCall('getSupplierSettlementDiff', [
@@ -2655,15 +2655,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCommissionConditionRequest $paramGetSupplierCommissionConditionRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCommissionConditionResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierCommissionConditionRequest $paramGetSupplierCommissionConditionRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierCommissionConditionResponse|bool
      */
-    public function getSupplierCommissionCondition(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCommissionConditionRequest $paramGetSupplierCommissionConditionRequest)
+    public function getSupplierCommissionCondition(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierCommissionConditionRequest $paramGetSupplierCommissionConditionRequest)
     {
         try {
             $this->setResult($resultGetSupplierCommissionCondition = $this->getSoapClient()->__soapCall('getSupplierCommissionCondition', [
@@ -2682,15 +2682,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierSettlPaymentConditionRequest $paramGetSupplierSettlPaymentConditionRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierSettlPaymentConditionResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetSupplierSettlPaymentConditionRequest $paramGetSupplierSettlPaymentConditionRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierSettlPaymentConditionResponse|bool
      */
-    public function getSupplierSettlPaymentCondition(\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierSettlPaymentConditionRequest $paramGetSupplierSettlPaymentConditionRequest)
+    public function getSupplierSettlPaymentCondition(\Pggns\MidocoApi\OrderSD\StructType\GetSupplierSettlPaymentConditionRequest $paramGetSupplierSettlPaymentConditionRequest)
     {
         try {
             $this->setResult($resultGetSupplierSettlPaymentCondition = $this->getSoapClient()->__soapCall('getSupplierSettlPaymentCondition', [
@@ -2709,15 +2709,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierNamesRequest $paramGetAvailableSupplierNamesRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierNamesResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierNamesRequest $paramGetAvailableSupplierNamesRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierNamesResponse|bool
      */
-    public function getAvailableSupplierNames(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierNamesRequest $paramGetAvailableSupplierNamesRequest)
+    public function getAvailableSupplierNames(\Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierNamesRequest $paramGetAvailableSupplierNamesRequest)
     {
         try {
             $this->setResult($resultGetAvailableSupplierNames = $this->getSoapClient()->__soapCall('getAvailableSupplierNames', [
@@ -2736,15 +2736,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetPaymentProvidersRequest $paramGetPaymentProvidersRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetPaymentProvidersResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetPaymentProvidersRequest $paramGetPaymentProvidersRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetPaymentProvidersResponse|bool
      */
-    public function getPaymentProviders(\Pggns\MidocoApi\Api\OrderSD\StructType\GetPaymentProvidersRequest $paramGetPaymentProvidersRequest)
+    public function getPaymentProviders(\Pggns\MidocoApi\OrderSD\StructType\GetPaymentProvidersRequest $paramGetPaymentProvidersRequest)
     {
         try {
             $this->setResult($resultGetPaymentProviders = $this->getSoapClient()->__soapCall('getPaymentProviders', [
@@ -2763,15 +2763,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetPaymentProviderImportFormatRequest $paramGetPaymentProviderImportFormatRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetPaymentProviderImportFormatResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetPaymentProviderImportFormatRequest $paramGetPaymentProviderImportFormatRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetPaymentProviderImportFormatResponse|bool
      */
-    public function getPaymentProviderImportFormat(\Pggns\MidocoApi\Api\OrderSD\StructType\GetPaymentProviderImportFormatRequest $paramGetPaymentProviderImportFormatRequest)
+    public function getPaymentProviderImportFormat(\Pggns\MidocoApi\OrderSD\StructType\GetPaymentProviderImportFormatRequest $paramGetPaymentProviderImportFormatRequest)
     {
         try {
             $this->setResult($resultGetPaymentProviderImportFormat = $this->getSoapClient()->__soapCall('getPaymentProviderImportFormat', [
@@ -2790,15 +2790,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetATOLClassificationsRequest $paramGetATOLClassificationsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetATOLClassificationsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetATOLClassificationsRequest $paramGetATOLClassificationsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetATOLClassificationsResponse|bool
      */
-    public function getATOLClassifications(\Pggns\MidocoApi\Api\OrderSD\StructType\GetATOLClassificationsRequest $paramGetATOLClassificationsRequest)
+    public function getATOLClassifications(\Pggns\MidocoApi\OrderSD\StructType\GetATOLClassificationsRequest $paramGetATOLClassificationsRequest)
     {
         try {
             $this->setResult($resultGetATOLClassifications = $this->getSoapClient()->__soapCall('getATOLClassifications', [
@@ -2817,15 +2817,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetCabinClassRequest $paramGetCabinClassRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetCabinClassResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetCabinClassRequest $paramGetCabinClassRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetCabinClassResponse|bool
      */
-    public function getCabinClass(\Pggns\MidocoApi\Api\OrderSD\StructType\GetCabinClassRequest $paramGetCabinClassRequest)
+    public function getCabinClass(\Pggns\MidocoApi\OrderSD\StructType\GetCabinClassRequest $paramGetCabinClassRequest)
     {
         try {
             $this->setResult($resultGetCabinClass = $this->getSoapClient()->__soapCall('getCabinClass', [
@@ -2844,15 +2844,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\GetAutoInvoiceConditionsRequest $paramGetAutoInvoiceConditionsRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAutoInvoiceConditionsResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\GetAutoInvoiceConditionsRequest $paramGetAutoInvoiceConditionsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAutoInvoiceConditionsResponse|bool
      */
-    public function getAutoInvoiceConditions(\Pggns\MidocoApi\Api\OrderSD\StructType\GetAutoInvoiceConditionsRequest $paramGetAutoInvoiceConditionsRequest)
+    public function getAutoInvoiceConditions(\Pggns\MidocoApi\OrderSD\StructType\GetAutoInvoiceConditionsRequest $paramGetAutoInvoiceConditionsRequest)
     {
         try {
             $this->setResult($resultGetAutoInvoiceConditions = $this->getSoapClient()->__soapCall('getAutoInvoiceConditions', [
@@ -2869,7 +2869,7 @@ class Get extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAccomodationCodesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAccountsFromAccountAssignResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAllOrdCriteriaDescriptionsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAreaCodesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedMidocoRuleSetForOrgunitResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedMidocoRuleSetResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedOrgunitsForRuleResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedSuppCancelCMappingResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAssignedSuppliersToTemplateResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetATOLClassificationsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAutoInvoiceConditionsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAutoRemarksResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableAccountsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableMiscPaymentSettingResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableOrderLockReasonDescriptionsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableOrderLockReasonsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableQueryCriteriaOpsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableQueryFieldsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierHistoricResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierIdResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierNamesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetAvailableSupplierResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetBankAccountResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetBankAccounts4OrgUnitResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetBookingTextsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetCabinClassResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetCashBookItemTypeResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetCateringCodesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetCostCentresResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetCurrencyRateResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetDeliveriesForCultureResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetDestinationAutoRemarksResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetDestinationDocumentsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetDunningLettersResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetExternVoucherTypeResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeGroupAssignsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeGroupsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeTypeForOrgunitResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetHedgeCurrencyRateResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeyDescriptionsForTypeResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeysForTypeResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeysLocalizedForTypeResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMatchingProductTypeSupplierResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoCrsSystemResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoFeeTypeResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoPrintOptionResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoQuestionResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoQuestionValueResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoRuleTypesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSettlementTypeForSupplierResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSettlementTypesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierCommissionResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierImportFormatResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierTemplateResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoSupplierTemplatesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTemplatesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTemplateTypesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTextRemarksResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetOrdCriteriaTypeCategoryDescriptionsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetOrdCriteriaTypesForCategoryResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetOrderLockReasonDescriptionsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetOrderLockReasonsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetPaymentProviderImportFormatResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetPaymentProvidersResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetProductTypeMediatorConditionsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetProductTypeSupplierResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetQueryCriteriaOpNamesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetQueryFieldValuesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetQueryPageResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarkOrgunitsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarks4OrgunitResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarkSuppliersResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetRuleSetsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetShortRemarkIdentifiersResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSpecifiedSupplierPaymentConditionResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSpecifiedSupplierSettlementDiffResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSuppCancelCEmailResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSuppCancelCMappingResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAccountAssignResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAddressListResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAddressResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAgenciesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAgencyReservationResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAgencyResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierByAccountResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCancelConditionResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCcCardResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCommissionByLevelIdResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierCommissionConditionResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierDisabledUnitsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierDocumentShippingResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierDocumentsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierInkassoModesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierNoticesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierPaymentConditionResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierSettlementAccountsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierSettlPaymentConditionResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierShipNamesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierTraveltypesResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetTravelNumberAutoRemarksResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetTravelNumberDocumentsResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetTravelNumberResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetUserQueryResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\GetVoucherTypeResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAccomodationCodesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAccountsFromAccountAssignResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAllOrdCriteriaDescriptionsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAreaCodesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAssignedMidocoRuleSetForOrgunitResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAssignedMidocoRuleSetResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAssignedOrgunitsForRuleResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAssignedSuppCancelCMappingResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAssignedSuppliersToTemplateResponse|\Pggns\MidocoApi\OrderSD\StructType\GetATOLClassificationsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAutoInvoiceConditionsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAutoRemarksResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAvailableAccountsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAvailableMiscPaymentSettingResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAvailableOrderLockReasonDescriptionsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAvailableOrderLockReasonsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAvailableQueryCriteriaOpsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAvailableQueryFieldsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierHistoricResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierIdResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierNamesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetAvailableSupplierResponse|\Pggns\MidocoApi\OrderSD\StructType\GetBankAccountResponse|\Pggns\MidocoApi\OrderSD\StructType\GetBankAccounts4OrgUnitResponse|\Pggns\MidocoApi\OrderSD\StructType\GetBookingTextsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetCabinClassResponse|\Pggns\MidocoApi\OrderSD\StructType\GetCashBookItemTypeResponse|\Pggns\MidocoApi\OrderSD\StructType\GetCateringCodesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetCostCentresResponse|\Pggns\MidocoApi\OrderSD\StructType\GetCurrencyRateResponse|\Pggns\MidocoApi\OrderSD\StructType\GetDeliveriesForCultureResponse|\Pggns\MidocoApi\OrderSD\StructType\GetDestinationAutoRemarksResponse|\Pggns\MidocoApi\OrderSD\StructType\GetDestinationDocumentsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetDunningLettersResponse|\Pggns\MidocoApi\OrderSD\StructType\GetExternVoucherTypeResponse|\Pggns\MidocoApi\OrderSD\StructType\GetFeeGroupAssignsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetFeeGroupsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetFeeTypeForOrgunitResponse|\Pggns\MidocoApi\OrderSD\StructType\GetHedgeCurrencyRateResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeyDescriptionsForTypeResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeysForTypeResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeysLocalizedForTypeResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMatchingProductTypeSupplierResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoCrsSystemResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoFeeTypeResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoPrintOptionResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoQuestionResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoQuestionValueResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoRuleTypesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoSettlementTypeForSupplierResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoSettlementTypesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierCommissionResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierImportFormatResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierTemplateResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoSupplierTemplatesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoTemplatesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoTemplateTypesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetMidocoTextRemarksResponse|\Pggns\MidocoApi\OrderSD\StructType\GetOrdCriteriaTypeCategoryDescriptionsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetOrdCriteriaTypesForCategoryResponse|\Pggns\MidocoApi\OrderSD\StructType\GetOrderLockReasonDescriptionsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetOrderLockReasonsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetPaymentProviderImportFormatResponse|\Pggns\MidocoApi\OrderSD\StructType\GetPaymentProvidersResponse|\Pggns\MidocoApi\OrderSD\StructType\GetProductTypeMediatorConditionsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetProductTypeSupplierResponse|\Pggns\MidocoApi\OrderSD\StructType\GetQueryCriteriaOpNamesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetQueryFieldValuesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetQueryPageResponse|\Pggns\MidocoApi\OrderSD\StructType\GetRemarkOrgunitsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetRemarks4OrgunitResponse|\Pggns\MidocoApi\OrderSD\StructType\GetRemarkSuppliersResponse|\Pggns\MidocoApi\OrderSD\StructType\GetRuleSetsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetShortRemarkIdentifiersResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSpecifiedSupplierPaymentConditionResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSpecifiedSupplierSettlementDiffResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSuppCancelCEmailResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSuppCancelCMappingResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierAccountAssignResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierAddressListResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierAddressResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierAgenciesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierAgencyReservationResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierAgencyResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierByAccountResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierCancelConditionResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierCcCardResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierCommissionByLevelIdResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierCommissionConditionResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierDisabledUnitsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierDocumentShippingResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierDocumentsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierInkassoModesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierNoticesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierPaymentConditionResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierSettlementAccountsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierSettlPaymentConditionResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierShipNamesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetSupplierTraveltypesResponse|\Pggns\MidocoApi\OrderSD\StructType\GetTravelNumberAutoRemarksResponse|\Pggns\MidocoApi\OrderSD\StructType\GetTravelNumberDocumentsResponse|\Pggns\MidocoApi\OrderSD\StructType\GetTravelNumberResponse|\Pggns\MidocoApi\OrderSD\StructType\GetUserQueryResponse|\Pggns\MidocoApi\OrderSD\StructType\GetVoucherTypeResponse
      */
     public function getResult()
     {

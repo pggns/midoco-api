@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class VatAccountSchemaDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatAccountSchemaDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatAccountSchemaDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -126,7 +126,7 @@ class VatAccountSchemaDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatAccountSchemaDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatAccountSchemaDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -149,7 +149,7 @@ class VatAccountSchemaDTO extends AbstractStructBase
     /**
      * Set isDefault value
      * @param bool $isDefault
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatAccountSchemaDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatAccountSchemaDTO
      */
     public function setIsDefault(?bool $isDefault = null): self
     {
@@ -172,7 +172,7 @@ class VatAccountSchemaDTO extends AbstractStructBase
     /**
      * Set isDefaultOtherB2c value
      * @param bool $isDefaultOtherB2c
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatAccountSchemaDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatAccountSchemaDTO
      */
     public function setIsDefaultOtherB2c(?bool $isDefaultOtherB2c = null): self
     {
@@ -195,7 +195,7 @@ class VatAccountSchemaDTO extends AbstractStructBase
     /**
      * Set isDefaultOwnAccount value
      * @param bool $isDefaultOwnAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatAccountSchemaDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatAccountSchemaDTO
      */
     public function setIsDefaultOwnAccount(?bool $isDefaultOwnAccount = null): self
     {
@@ -218,7 +218,7 @@ class VatAccountSchemaDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatAccountSchemaDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatAccountSchemaDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -241,7 +241,7 @@ class VatAccountSchemaDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatAccountSchemaDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatAccountSchemaDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -264,7 +264,7 @@ class VatAccountSchemaDTO extends AbstractStructBase
     /**
      * Set schemaName value
      * @param string $schemaName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatAccountSchemaDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatAccountSchemaDTO
      */
     public function setSchemaName(?string $schemaName = null): self
     {
@@ -287,7 +287,7 @@ class VatAccountSchemaDTO extends AbstractStructBase
     /**
      * Set vatSchemaId value
      * @param int $vatSchemaId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatAccountSchemaDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatAccountSchemaDTO
      */
     public function setVatSchemaId(?int $vatSchemaId = null): self
     {

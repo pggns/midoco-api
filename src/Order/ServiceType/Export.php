@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Export extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Export
+     * @return \Pggns\MidocoApi\Order\ServiceType\Export
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportAgencySettlementDataRequest $paramExportAgencySettlementDataRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportAgencySettlementDataResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportAgencySettlementDataRequest $paramExportAgencySettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportAgencySettlementDataResponse|bool
      */
-    public function exportAgencySettlementData(\Pggns\MidocoApi\Api\Order\StructType\ExportAgencySettlementDataRequest $paramExportAgencySettlementDataRequest)
+    public function exportAgencySettlementData(\Pggns\MidocoApi\Order\StructType\ExportAgencySettlementDataRequest $paramExportAgencySettlementDataRequest)
     {
         try {
             $this->setResult($resultExportAgencySettlementData = $this->getSoapClient()->__soapCall('exportAgencySettlementData', [
@@ -58,15 +58,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalCriteria $paramExportBookingJournalRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportBookingJournalCriteria $paramExportBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalResponse|bool
      */
-    public function exportBookingJournal(\Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalCriteria $paramExportBookingJournalRequest)
+    public function exportBookingJournal(\Pggns\MidocoApi\Order\StructType\ExportBookingJournalCriteria $paramExportBookingJournalRequest)
     {
         try {
             $this->setResult($resultExportBookingJournal = $this->getSoapClient()->__soapCall('exportBookingJournal', [
@@ -85,15 +85,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalCriteria $paramExportBookingJournalFileRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalFileResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportBookingJournalCriteria $paramExportBookingJournalFileRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalFileResponse|bool
      */
-    public function exportBookingJournalFile(\Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalCriteria $paramExportBookingJournalFileRequest)
+    public function exportBookingJournalFile(\Pggns\MidocoApi\Order\StructType\ExportBookingJournalCriteria $paramExportBookingJournalFileRequest)
     {
         try {
             $this->setResult($resultExportBookingJournalFile = $this->getSoapClient()->__soapCall('exportBookingJournalFile', [
@@ -112,15 +112,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportTravelRegistrationRequest $paramExportTravelRegistrationRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelRegistrationResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportTravelRegistrationRequest $paramExportTravelRegistrationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelRegistrationResponse|bool
      */
-    public function exportTravelRegistration(\Pggns\MidocoApi\Api\Order\StructType\ExportTravelRegistrationRequest $paramExportTravelRegistrationRequest)
+    public function exportTravelRegistration(\Pggns\MidocoApi\Order\StructType\ExportTravelRegistrationRequest $paramExportTravelRegistrationRequest)
     {
         try {
             $this->setResult($resultExportTravelRegistration = $this->getSoapClient()->__soapCall('exportTravelRegistration', [
@@ -139,15 +139,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportTravelPlanRequest $paramExportTravelPlanRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelPlanResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportTravelPlanRequest $paramExportTravelPlanRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelPlanResponse|bool
      */
-    public function exportTravelPlan(\Pggns\MidocoApi\Api\Order\StructType\ExportTravelPlanRequest $paramExportTravelPlanRequest)
+    public function exportTravelPlan(\Pggns\MidocoApi\Order\StructType\ExportTravelPlanRequest $paramExportTravelPlanRequest)
     {
         try {
             $this->setResult($resultExportTravelPlan = $this->getSoapClient()->__soapCall('exportTravelPlan', [
@@ -166,15 +166,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportBillingDocumentRequest $paramExportBillingDocumentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBillingDocumentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportBillingDocumentRequest $paramExportBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBillingDocumentResponse|bool
      */
-    public function exportBillingDocument(\Pggns\MidocoApi\Api\Order\StructType\ExportBillingDocumentRequest $paramExportBillingDocumentRequest)
+    public function exportBillingDocument(\Pggns\MidocoApi\Order\StructType\ExportBillingDocumentRequest $paramExportBillingDocumentRequest)
     {
         try {
             $this->setResult($resultExportBillingDocument = $this->getSoapClient()->__soapCall('exportBillingDocument', [
@@ -193,15 +193,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportOrderInvoiceRequest $paramExportOrderInvoiceRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportOrderInvoiceResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportOrderInvoiceRequest $paramExportOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportOrderInvoiceResponse|bool
      */
-    public function exportOrderInvoice(\Pggns\MidocoApi\Api\Order\StructType\ExportOrderInvoiceRequest $paramExportOrderInvoiceRequest)
+    public function exportOrderInvoice(\Pggns\MidocoApi\Order\StructType\ExportOrderInvoiceRequest $paramExportOrderInvoiceRequest)
     {
         try {
             $this->setResult($resultExportOrderInvoice = $this->getSoapClient()->__soapCall('exportOrderInvoice', [
@@ -220,15 +220,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportPrintedAgencySettlementsRequest $paramExportPrintedAgencySettlementsRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportPrintedAgencySettlementsResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportPrintedAgencySettlementsRequest $paramExportPrintedAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportPrintedAgencySettlementsResponse|bool
      */
-    public function exportPrintedAgencySettlements(\Pggns\MidocoApi\Api\Order\StructType\ExportPrintedAgencySettlementsRequest $paramExportPrintedAgencySettlementsRequest)
+    public function exportPrintedAgencySettlements(\Pggns\MidocoApi\Order\StructType\ExportPrintedAgencySettlementsRequest $paramExportPrintedAgencySettlementsRequest)
     {
         try {
             $this->setResult($resultExportPrintedAgencySettlements = $this->getSoapClient()->__soapCall('exportPrintedAgencySettlements', [
@@ -247,15 +247,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportIbizaDataRequest $paramExportIbizaDataRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportIbizaDataResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportIbizaDataRequest $paramExportIbizaDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportIbizaDataResponse|bool
      */
-    public function exportIbizaData(\Pggns\MidocoApi\Api\Order\StructType\ExportIbizaDataRequest $paramExportIbizaDataRequest)
+    public function exportIbizaData(\Pggns\MidocoApi\Order\StructType\ExportIbizaDataRequest $paramExportIbizaDataRequest)
     {
         try {
             $this->setResult($resultExportIbizaData = $this->getSoapClient()->__soapCall('exportIbizaData', [
@@ -274,15 +274,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportReweDataRequest $paramExportReweDataRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportReweDataResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportReweDataRequest $paramExportReweDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportReweDataResponse|bool
      */
-    public function exportReweData(\Pggns\MidocoApi\Api\Order\StructType\ExportReweDataRequest $paramExportReweDataRequest)
+    public function exportReweData(\Pggns\MidocoApi\Order\StructType\ExportReweDataRequest $paramExportReweDataRequest)
     {
         try {
             $this->setResult($resultExportReweData = $this->getSoapClient()->__soapCall('exportReweData', [
@@ -301,15 +301,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportAutomaticSettlementRequest $paramExportAutomaticSettlementRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportAutomaticSettlementResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportAutomaticSettlementRequest $paramExportAutomaticSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportAutomaticSettlementResponse|bool
      */
-    public function exportAutomaticSettlement(\Pggns\MidocoApi\Api\Order\StructType\ExportAutomaticSettlementRequest $paramExportAutomaticSettlementRequest)
+    public function exportAutomaticSettlement(\Pggns\MidocoApi\Order\StructType\ExportAutomaticSettlementRequest $paramExportAutomaticSettlementRequest)
     {
         try {
             $this->setResult($resultExportAutomaticSettlement = $this->getSoapClient()->__soapCall('exportAutomaticSettlement', [
@@ -328,15 +328,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataRequest $paramExportJournalDataRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportJournalDataRequest $paramExportJournalDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportJournalDataResponse|bool
      */
-    public function exportJournalData(\Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataRequest $paramExportJournalDataRequest)
+    public function exportJournalData(\Pggns\MidocoApi\Order\StructType\ExportJournalDataRequest $paramExportJournalDataRequest)
     {
         try {
             $this->setResult($resultExportJournalData = $this->getSoapClient()->__soapCall('exportJournalData', [
@@ -355,15 +355,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportSilverSurferDataRequest $paramExportSilverSurferDataRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportSilverSurferDataResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportSilverSurferDataRequest $paramExportSilverSurferDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportSilverSurferDataResponse|bool
      */
-    public function exportSilverSurferData(\Pggns\MidocoApi\Api\Order\StructType\ExportSilverSurferDataRequest $paramExportSilverSurferDataRequest)
+    public function exportSilverSurferData(\Pggns\MidocoApi\Order\StructType\ExportSilverSurferDataRequest $paramExportSilverSurferDataRequest)
     {
         try {
             $this->setResult($resultExportSilverSurferData = $this->getSoapClient()->__soapCall('exportSilverSurferData', [
@@ -382,15 +382,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportSettlementOverviewRequest $paramExportSettlementOverviewRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportSettlementOverviewResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportSettlementOverviewRequest $paramExportSettlementOverviewRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportSettlementOverviewResponse|bool
      */
-    public function exportSettlementsOverview(\Pggns\MidocoApi\Api\Order\StructType\ExportSettlementOverviewRequest $paramExportSettlementOverviewRequest)
+    public function exportSettlementsOverview(\Pggns\MidocoApi\Order\StructType\ExportSettlementOverviewRequest $paramExportSettlementOverviewRequest)
     {
         try {
             $this->setResult($resultExportSettlementsOverview = $this->getSoapClient()->__soapCall('exportSettlementsOverview', [
@@ -409,15 +409,15 @@ class Export extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportCashTurnoverRequest $paramExportCashTurnoverRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportCashTurnoverResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\ExportCashTurnoverRequest $paramExportCashTurnoverRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportCashTurnoverResponse|bool
      */
-    public function exportCashTurnover(\Pggns\MidocoApi\Api\Order\StructType\ExportCashTurnoverRequest $paramExportCashTurnoverRequest)
+    public function exportCashTurnover(\Pggns\MidocoApi\Order\StructType\ExportCashTurnoverRequest $paramExportCashTurnoverRequest)
     {
         try {
             $this->setResult($resultExportCashTurnover = $this->getSoapClient()->__soapCall('exportCashTurnover', [
@@ -434,7 +434,7 @@ class Export extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportAgencySettlementDataResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportAutomaticSettlementResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportBillingDocumentResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalFileResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportCashTurnoverResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportIbizaDataResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportJournalDataResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportOrderInvoiceResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportPrintedAgencySettlementsResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportReweDataResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportSettlementOverviewResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportSilverSurferDataResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportTravelPlanResponse|\Pggns\MidocoApi\Api\Order\StructType\ExportTravelRegistrationResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportAgencySettlementDataResponse|\Pggns\MidocoApi\Order\StructType\ExportAutomaticSettlementResponse|\Pggns\MidocoApi\Order\StructType\ExportBillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\ExportBookingJournalFileResponse|\Pggns\MidocoApi\Order\StructType\ExportBookingJournalResponse|\Pggns\MidocoApi\Order\StructType\ExportCashTurnoverResponse|\Pggns\MidocoApi\Order\StructType\ExportIbizaDataResponse|\Pggns\MidocoApi\Order\StructType\ExportJournalDataResponse|\Pggns\MidocoApi\Order\StructType\ExportOrderInvoiceResponse|\Pggns\MidocoApi\Order\StructType\ExportPrintedAgencySettlementsResponse|\Pggns\MidocoApi\Order\StructType\ExportReweDataResponse|\Pggns\MidocoApi\Order\StructType\ExportSettlementOverviewResponse|\Pggns\MidocoApi\Order\StructType\ExportSilverSurferDataResponse|\Pggns\MidocoApi\Order\StructType\ExportTravelPlanResponse|\Pggns\MidocoApi\Order\StructType\ExportTravelRegistrationResponse
      */
     public function getResult()
     {

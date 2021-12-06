@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -25,17 +25,17 @@ class MarkTravelplanHistoryEmailsSentRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: mail:MidocoMailMessage
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
     /**
      * Constructor method for MarkTravelplanHistoryEmailsSentRequest
      * @uses MarkTravelplanHistoryEmailsSentRequest::setHistoryId()
      * @uses MarkTravelplanHistoryEmailsSentRequest::setMidocoMailMessage()
      * @param int[] $historyId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
      */
-    public function __construct(?array $historyId = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null)
+    public function __construct(?array $historyId = null, ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null)
     {
         $this
             ->setHistoryId($historyId)
@@ -79,7 +79,7 @@ class MarkTravelplanHistoryEmailsSentRequest extends AbstractStructBase
      * Set historyId value
      * @throws InvalidArgumentException
      * @param int[] $historyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarkTravelplanHistoryEmailsSentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MarkTravelplanHistoryEmailsSentRequest
      */
     public function setHistoryId(?array $historyId = null): self
     {
@@ -95,7 +95,7 @@ class MarkTravelplanHistoryEmailsSentRequest extends AbstractStructBase
      * Add item to historyId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarkTravelplanHistoryEmailsSentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MarkTravelplanHistoryEmailsSentRequest
      */
     public function addToHistoryId(int $item): self
     {
@@ -109,18 +109,18 @@ class MarkTravelplanHistoryEmailsSentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMailMessage value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
     {
         return $this->MidocoMailMessage;
     }
     /**
      * Set MidocoMailMessage value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarkTravelplanHistoryEmailsSentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @return \Pggns\MidocoApi\Order\StructType\MarkTravelplanHistoryEmailsSentRequest
      */
-    public function setMidocoMailMessage(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
+    public function setMidocoMailMessage(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
     {
         $this->MidocoMailMessage = $midocoMailMessage;
         

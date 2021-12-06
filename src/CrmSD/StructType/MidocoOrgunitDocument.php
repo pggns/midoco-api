@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoOrgunitDocument extends OrgunitdocumentDTO
     /**
      * Set content value
      * @param string $content
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrgunitDocument
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgunitDocument
      */
     public function setContent(?string $content = null): self
     {

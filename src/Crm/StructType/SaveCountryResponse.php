@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveCountryResponse extends AbstractStructBase
      * The MidocoCountry
      * Meta information extracted from the WSDL
      * - ref: MidocoCountry
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CountryDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CountryDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CountryDTO $MidocoCountry = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CountryDTO $MidocoCountry = null;
     /**
      * Constructor method for SaveCountryResponse
      * @uses SaveCountryResponse::setMidocoCountry()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CountryDTO $midocoCountry
+     * @param \Pggns\MidocoApi\Crm\StructType\CountryDTO $midocoCountry
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CountryDTO $midocoCountry = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CountryDTO $midocoCountry = null)
     {
         $this
             ->setMidocoCountry($midocoCountry);
     }
     /**
      * Get MidocoCountry value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CountryDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CountryDTO|null
      */
-    public function getMidocoCountry(): ?\Pggns\MidocoApi\Api\Crm\StructType\CountryDTO
+    public function getMidocoCountry(): ?\Pggns\MidocoApi\Crm\StructType\CountryDTO
     {
         return $this->MidocoCountry;
     }
     /**
      * Set MidocoCountry value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CountryDTO $midocoCountry
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCountryResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CountryDTO $midocoCountry
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCountryResponse
      */
-    public function setMidocoCountry(?\Pggns\MidocoApi\Api\Crm\StructType\CountryDTO $midocoCountry = null): self
+    public function setMidocoCountry(?\Pggns\MidocoApi\Crm\StructType\CountryDTO $midocoCountry = null): self
     {
         $this->MidocoCountry = $midocoCountry;
         

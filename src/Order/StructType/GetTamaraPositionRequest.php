@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetTamaraPositionRequest extends AbstractStructBase
     /**
      * Set transactionId value
      * @param int $transactionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTamaraPositionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTamaraPositionRequest
      */
     public function setTransactionId(?int $transactionId = null): self
     {
@@ -70,7 +70,7 @@ class GetTamaraPositionRequest extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTamaraPositionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTamaraPositionRequest
      */
     public function setPosition(?int $position = null): self
     {

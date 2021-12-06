@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetOrgunitNameForBookingIdRequest extends AbstractStructBase
     /**
      * Set externalSystem value
      * @param string $externalSystem
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrgunitNameForBookingIdRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrgunitNameForBookingIdRequest
      */
     public function setExternalSystem(?string $externalSystem = null): self
     {
@@ -70,7 +70,7 @@ class GetOrgunitNameForBookingIdRequest extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrgunitNameForBookingIdRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrgunitNameForBookingIdRequest
      */
     public function setBookingId(?string $bookingId = null): self
     {

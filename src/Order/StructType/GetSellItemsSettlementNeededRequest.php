@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -179,7 +179,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -202,7 +202,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set supplierSettlementGroup value
      * @param string $supplierSettlementGroup
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setSupplierSettlementGroup(?string $supplierSettlementGroup = null): self
     {
@@ -225,7 +225,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -248,7 +248,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -271,7 +271,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -294,7 +294,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set sellItemId value
      * @param int $sellItemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setSellItemId(?int $sellItemId = null): self
     {
@@ -317,7 +317,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set creationDateFrom value
      * @param string $creationDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setCreationDateFrom(?string $creationDateFrom = null): self
     {
@@ -340,7 +340,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set creationDateTo value
      * @param string $creationDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setCreationDateTo(?string $creationDateTo = null): self
     {
@@ -363,7 +363,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set travelDateFrom value
      * @param string $travelDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setTravelDateFrom(?string $travelDateFrom = null): self
     {
@@ -386,7 +386,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set travelDateTo value
      * @param string $travelDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setTravelDateTo(?string $travelDateTo = null): self
     {
@@ -409,7 +409,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set booked value
      * @param bool $booked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setBooked(?bool $booked = null): self
     {
@@ -432,7 +432,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set checked value
      * @param bool $checked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setChecked(?bool $checked = null): self
     {
@@ -455,7 +455,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set errors value
      * @param bool $errors
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setErrors(?bool $errors = null): self
     {
@@ -478,7 +478,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set diff value
      * @param bool $diff
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setDiff(?bool $diff = null): self
     {
@@ -501,7 +501,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set noSettlementsYet value
      * @param bool $noSettlementsYet
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setNoSettlementsYet(?bool $noSettlementsYet = null): self
     {
@@ -524,7 +524,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set showSkippedBookings value
      * @param bool $showSkippedBookings
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setShowSkippedBookings(?bool $showSkippedBookings = null): self
     {
@@ -547,7 +547,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set ticketNo value
      * @param string $ticketNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setTicketNo(?string $ticketNo = null): self
     {
@@ -570,7 +570,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
     /**
      * Set settlementPosition value
      * @param int $settlementPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemsSettlementNeededRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
      */
     public function setSettlementPosition(?int $settlementPosition = null): self
     {

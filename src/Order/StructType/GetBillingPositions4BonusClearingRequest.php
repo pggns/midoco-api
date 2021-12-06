@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class GetBillingPositions4BonusClearingRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositions4BonusClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositions4BonusClearingRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -88,7 +88,7 @@ class GetBillingPositions4BonusClearingRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositions4BonusClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositions4BonusClearingRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -111,7 +111,7 @@ class GetBillingPositions4BonusClearingRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositions4BonusClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositions4BonusClearingRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -161,7 +161,7 @@ class GetBillingPositions4BonusClearingRequest extends AbstractStructBase
      * Set bonusType value
      * @throws InvalidArgumentException
      * @param string[] $bonusType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositions4BonusClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositions4BonusClearingRequest
      */
     public function setBonusType(?array $bonusType = null): self
     {
@@ -177,7 +177,7 @@ class GetBillingPositions4BonusClearingRequest extends AbstractStructBase
      * Add item to bonusType value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositions4BonusClearingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositions4BonusClearingRequest
      */
     public function addToBonusType(string $item): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveTemplateLanguageRequest extends AbstractStructBase
      * The MidocoCrmTemplateLanguage
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmTemplateLanguage
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO $MidocoCrmTemplateLanguage = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO $MidocoCrmTemplateLanguage = null;
     /**
      * The unitName
      * @var string|null
@@ -29,10 +29,10 @@ class SaveTemplateLanguageRequest extends AbstractStructBase
      * Constructor method for SaveTemplateLanguageRequest
      * @uses SaveTemplateLanguageRequest::setMidocoCrmTemplateLanguage()
      * @uses SaveTemplateLanguageRequest::setUnitName()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage
      * @param string $unitName
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage = null, ?string $unitName = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage = null, ?string $unitName = null)
     {
         $this
             ->setMidocoCrmTemplateLanguage($midocoCrmTemplateLanguage)
@@ -40,18 +40,18 @@ class SaveTemplateLanguageRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmTemplateLanguage value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO|null
      */
-    public function getMidocoCrmTemplateLanguage(): ?\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO
+    public function getMidocoCrmTemplateLanguage(): ?\Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO
     {
         return $this->MidocoCrmTemplateLanguage;
     }
     /**
      * Set MidocoCrmTemplateLanguage value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveTemplateLanguageRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveTemplateLanguageRequest
      */
-    public function setMidocoCrmTemplateLanguage(?\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage = null): self
+    public function setMidocoCrmTemplateLanguage(?\Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO $midocoCrmTemplateLanguage = null): self
     {
         $this->MidocoCrmTemplateLanguage = $midocoCrmTemplateLanguage;
         
@@ -68,7 +68,7 @@ class SaveTemplateLanguageRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveTemplateLanguageRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveTemplateLanguageRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

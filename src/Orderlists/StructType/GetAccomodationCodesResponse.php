@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAccomodationCodesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAccomodationCode
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode[]
      */
     protected ?array $MidocoAccomodationCode = null;
     /**
      * Constructor method for GetAccomodationCodesResponse
      * @uses GetAccomodationCodesResponse::setMidocoAccomodationCode()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode[] $midocoAccomodationCode
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode[] $midocoAccomodationCode
      */
     public function __construct(?array $midocoAccomodationCode = null)
     {
@@ -34,7 +34,7 @@ class GetAccomodationCodesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAccomodationCode value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode[]
      */
     public function getMidocoAccomodationCode(): ?array
     {
@@ -55,12 +55,12 @@ class GetAccomodationCodesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAccomodationCodesResponseMidocoAccomodationCodeItem) {
             // validation for constraint: itemType
-            if (!$getAccomodationCodesResponseMidocoAccomodationCodeItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode) {
+            if (!$getAccomodationCodesResponseMidocoAccomodationCodeItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode) {
                 $invalidValues[] = is_object($getAccomodationCodesResponseMidocoAccomodationCodeItem) ? get_class($getAccomodationCodesResponseMidocoAccomodationCodeItem) : sprintf('%s(%s)', gettype($getAccomodationCodesResponseMidocoAccomodationCodeItem), var_export($getAccomodationCodesResponseMidocoAccomodationCodeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAccomodationCode property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAccomodationCode property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAccomodationCodesResponse extends AbstractStructBase
     /**
      * Set MidocoAccomodationCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode[] $midocoAccomodationCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAccomodationCodesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode[] $midocoAccomodationCode
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAccomodationCodesResponse
      */
     public function setMidocoAccomodationCode(?array $midocoAccomodationCode = null): self
     {
@@ -85,14 +85,14 @@ class GetAccomodationCodesResponse extends AbstractStructBase
     /**
      * Add item to MidocoAccomodationCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAccomodationCodesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAccomodationCodesResponse
      */
-    public function addToMidocoAccomodationCode(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode $item): self
+    public function addToMidocoAccomodationCode(\Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode) {
-            throw new InvalidArgumentException(sprintf('The MidocoAccomodationCode property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAccomodationCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode) {
+            throw new InvalidArgumentException(sprintf('The MidocoAccomodationCode property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAccomodationCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAccomodationCode[] = $item;
         

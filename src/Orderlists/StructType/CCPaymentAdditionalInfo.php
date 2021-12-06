@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -76,17 +76,17 @@ class CCPaymentAdditionalInfo extends AbstractStructBase
     }
     /**
      * Set name value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Name::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Name::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Name::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Name::getValidValues()
      * @throws InvalidArgumentException
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CCPaymentAdditionalInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CCPaymentAdditionalInfo
      */
     public function setName(?string $name = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\Name::valueIsValid($name)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\Name', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\Name::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\Name::valueIsValid($name)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\Name', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\Name::getValidValues())), __LINE__);
         }
         $this->name = $name;
         
@@ -103,7 +103,7 @@ class CCPaymentAdditionalInfo extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CCPaymentAdditionalInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CCPaymentAdditionalInfo
      */
     public function setValue(?string $value = null): self
     {
@@ -126,7 +126,7 @@ class CCPaymentAdditionalInfo extends AbstractStructBase
     /**
      * Set booking_id value
      * @param string $booking_id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CCPaymentAdditionalInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CCPaymentAdditionalInfo
      */
     public function setBooking_id(?string $booking_id = null): self
     {
@@ -149,7 +149,7 @@ class CCPaymentAdditionalInfo extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CCPaymentAdditionalInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CCPaymentAdditionalInfo
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -172,7 +172,7 @@ class CCPaymentAdditionalInfo extends AbstractStructBase
     /**
      * Set person_assignment value
      * @param string $person_assignment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CCPaymentAdditionalInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CCPaymentAdditionalInfo
      */
     public function setPerson_assignment(?string $person_assignment = null): self
     {

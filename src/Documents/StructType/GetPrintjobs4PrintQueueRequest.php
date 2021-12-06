@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class GetPrintjobs4PrintQueueRequest extends AbstractStructBase
     /**
      * Set queueId value
      * @param int $queueId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetPrintjobs4PrintQueueRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetPrintjobs4PrintQueueRequest
      */
     public function setQueueId(?int $queueId = null): self
     {
@@ -86,7 +86,7 @@ class GetPrintjobs4PrintQueueRequest extends AbstractStructBase
     /**
      * Set lastPrintJobId value
      * @param int $lastPrintJobId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetPrintjobs4PrintQueueRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetPrintjobs4PrintQueueRequest
      */
     public function setLastPrintJobId(?int $lastPrintJobId = null): self
     {
@@ -109,7 +109,7 @@ class GetPrintjobs4PrintQueueRequest extends AbstractStructBase
     /**
      * Set workstationId value
      * @param string $workstationId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetPrintjobs4PrintQueueRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetPrintjobs4PrintQueueRequest
      */
     public function setWorkstationId(?string $workstationId = null): self
     {
@@ -132,7 +132,7 @@ class GetPrintjobs4PrintQueueRequest extends AbstractStructBase
     /**
      * Set forceLockQueue value
      * @param bool $forceLockQueue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetPrintjobs4PrintQueueRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetPrintjobs4PrintQueueRequest
      */
     public function setForceLockQueue(?bool $forceLockQueue = null): self
     {

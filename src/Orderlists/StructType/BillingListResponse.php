@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class BillingListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingListResults
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType[]
      */
     protected ?array $MidocoBillingListResults = null;
     /**
@@ -31,19 +31,19 @@ class BillingListResponse extends AbstractStructBase
     protected ?int $noOfResults = null;
     /**
      * The Sums
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType $Sums = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType $Sums = null;
     /**
      * Constructor method for BillingListResponse
      * @uses BillingListResponse::setMidocoBillingListResults()
      * @uses BillingListResponse::setNoOfResults()
      * @uses BillingListResponse::setSums()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType[] $midocoBillingListResults
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType[] $midocoBillingListResults
      * @param int $noOfResults
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType $sums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType $sums
      */
-    public function __construct(?array $midocoBillingListResults = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType $sums = null)
+    public function __construct(?array $midocoBillingListResults = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType $sums = null)
     {
         $this
             ->setMidocoBillingListResults($midocoBillingListResults)
@@ -52,7 +52,7 @@ class BillingListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingListResults value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType[]
      */
     public function getMidocoBillingListResults(): ?array
     {
@@ -73,12 +73,12 @@ class BillingListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $billingListResponseMidocoBillingListResultsItem) {
             // validation for constraint: itemType
-            if (!$billingListResponseMidocoBillingListResultsItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType) {
+            if (!$billingListResponseMidocoBillingListResultsItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType) {
                 $invalidValues[] = is_object($billingListResponseMidocoBillingListResultsItem) ? get_class($billingListResponseMidocoBillingListResultsItem) : sprintf('%s(%s)', gettype($billingListResponseMidocoBillingListResultsItem), var_export($billingListResponseMidocoBillingListResultsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingListResults property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingListResults property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -87,8 +87,8 @@ class BillingListResponse extends AbstractStructBase
     /**
      * Set MidocoBillingListResults value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType[] $midocoBillingListResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType[] $midocoBillingListResults
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingListResponse
      */
     public function setMidocoBillingListResults(?array $midocoBillingListResults = null): self
     {
@@ -103,14 +103,14 @@ class BillingListResponse extends AbstractStructBase
     /**
      * Add item to MidocoBillingListResults value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingListResponse
      */
-    public function addToMidocoBillingListResults(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType $item): self
+    public function addToMidocoBillingListResults(\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingListResults property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingListResults property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingListResults[] = $item;
         
@@ -127,7 +127,7 @@ class BillingListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {
@@ -141,18 +141,18 @@ class BillingListResponse extends AbstractStructBase
     }
     /**
      * Get Sums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType|null
      */
-    public function getSums(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType
+    public function getSums(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType
     {
         return $this->Sums;
     }
     /**
      * Set Sums value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType $sums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType $sums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingListResponse
      */
-    public function setSums(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType $sums = null): self
+    public function setSums(?\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType $sums = null): self
     {
         $this->Sums = $sums;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -62,14 +62,14 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     protected ?string $currency = null;
     /**
      * The printingUser
-     * @var \Pggns\MidocoApi\Api\Order\StructType\UserDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\UserDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\UserDTO $printingUser = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\UserDTO $printingUser = null;
     /**
      * The creationUser
-     * @var \Pggns\MidocoApi\Api\Order\StructType\UserDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\UserDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\UserDTO $creationUser = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\UserDTO $creationUser = null;
     /**
      * The documentId
      * @var int|null
@@ -110,13 +110,13 @@ class CashBookLineInfo4Printing extends AbstractStructBase
      * @param string $debitorNo
      * @param string $paymentType
      * @param string $currency
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UserDTO $printingUser
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UserDTO $creationUser
+     * @param \Pggns\MidocoApi\Order\StructType\UserDTO $printingUser
+     * @param \Pggns\MidocoApi\Order\StructType\UserDTO $creationUser
      * @param int $documentId
      * @param float $paymentValue
      * @param string $signatureFailure
      */
-    public function __construct(?string $documentNo = null, ?string $documentDate = null, ?float $totalPrice = null, ?string $customerName = null, ?string $customerId = null, ?string $description1stBillingPosition = null, ?string $debitorNo = null, ?string $paymentType = null, ?string $currency = null, ?\Pggns\MidocoApi\Api\Order\StructType\UserDTO $printingUser = null, ?\Pggns\MidocoApi\Api\Order\StructType\UserDTO $creationUser = null, ?int $documentId = null, ?float $paymentValue = null, ?string $signatureFailure = null)
+    public function __construct(?string $documentNo = null, ?string $documentDate = null, ?float $totalPrice = null, ?string $customerName = null, ?string $customerId = null, ?string $description1stBillingPosition = null, ?string $debitorNo = null, ?string $paymentType = null, ?string $currency = null, ?\Pggns\MidocoApi\Order\StructType\UserDTO $printingUser = null, ?\Pggns\MidocoApi\Order\StructType\UserDTO $creationUser = null, ?int $documentId = null, ?float $paymentValue = null, ?string $signatureFailure = null)
     {
         $this
             ->setDocumentNo($documentNo)
@@ -145,7 +145,7 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     /**
      * Set documentNo value
      * @param string $documentNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
     public function setDocumentNo(?string $documentNo = null): self
     {
@@ -168,7 +168,7 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     /**
      * Set documentDate value
      * @param string $documentDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
     public function setDocumentDate(?string $documentDate = null): self
     {
@@ -191,7 +191,7 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -214,7 +214,7 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -237,7 +237,7 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -260,7 +260,7 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     /**
      * Set description1stBillingPosition value
      * @param string $description1stBillingPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
     public function setDescription1stBillingPosition(?string $description1stBillingPosition = null): self
     {
@@ -283,7 +283,7 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -306,7 +306,7 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -329,7 +329,7 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -343,18 +343,18 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     }
     /**
      * Get printingUser value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UserDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\UserDTO|null
      */
-    public function getPrintingUser(): ?\Pggns\MidocoApi\Api\Order\StructType\UserDTO
+    public function getPrintingUser(): ?\Pggns\MidocoApi\Order\StructType\UserDTO
     {
         return $this->printingUser;
     }
     /**
      * Set printingUser value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UserDTO $printingUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\UserDTO $printingUser
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
-    public function setPrintingUser(?\Pggns\MidocoApi\Api\Order\StructType\UserDTO $printingUser = null): self
+    public function setPrintingUser(?\Pggns\MidocoApi\Order\StructType\UserDTO $printingUser = null): self
     {
         $this->printingUser = $printingUser;
         
@@ -362,18 +362,18 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     }
     /**
      * Get creationUser value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UserDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\UserDTO|null
      */
-    public function getCreationUser(): ?\Pggns\MidocoApi\Api\Order\StructType\UserDTO
+    public function getCreationUser(): ?\Pggns\MidocoApi\Order\StructType\UserDTO
     {
         return $this->creationUser;
     }
     /**
      * Set creationUser value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\UserDTO $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\UserDTO $creationUser
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
-    public function setCreationUser(?\Pggns\MidocoApi\Api\Order\StructType\UserDTO $creationUser = null): self
+    public function setCreationUser(?\Pggns\MidocoApi\Order\StructType\UserDTO $creationUser = null): self
     {
         $this->creationUser = $creationUser;
         
@@ -390,7 +390,7 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -413,7 +413,7 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     /**
      * Set paymentValue value
      * @param float $paymentValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
     public function setPaymentValue(?float $paymentValue = null): self
     {
@@ -436,7 +436,7 @@ class CashBookLineInfo4Printing extends AbstractStructBase
     /**
      * Set signatureFailure value
      * @param string $signatureFailure
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookLineInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookLineInfo4Printing
      */
     public function setSignatureFailure(?string $signatureFailure = null): self
     {

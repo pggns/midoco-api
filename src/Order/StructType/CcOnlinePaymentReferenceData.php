@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class CcOnlinePaymentReferenceData extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcOnlinePaymentReferenceData
+     * @return \Pggns\MidocoApi\Order\StructType\CcOnlinePaymentReferenceData
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -94,7 +94,7 @@ class CcOnlinePaymentReferenceData extends AbstractStructBase
     /**
      * Set extBookingId value
      * @param string $extBookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcOnlinePaymentReferenceData
+     * @return \Pggns\MidocoApi\Order\StructType\CcOnlinePaymentReferenceData
      */
     public function setExtBookingId(?string $extBookingId = null): self
     {
@@ -117,7 +117,7 @@ class CcOnlinePaymentReferenceData extends AbstractStructBase
     /**
      * Set bookingType value
      * @param string $bookingType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcOnlinePaymentReferenceData
+     * @return \Pggns\MidocoApi\Order\StructType\CcOnlinePaymentReferenceData
      */
     public function setBookingType(?string $bookingType = null): self
     {
@@ -140,7 +140,7 @@ class CcOnlinePaymentReferenceData extends AbstractStructBase
     /**
      * Set portal value
      * @param string $portal
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcOnlinePaymentReferenceData
+     * @return \Pggns\MidocoApi\Order\StructType\CcOnlinePaymentReferenceData
      */
     public function setPortal(?string $portal = null): self
     {
@@ -163,7 +163,7 @@ class CcOnlinePaymentReferenceData extends AbstractStructBase
     /**
      * Set bookingDescription value
      * @param string $bookingDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcOnlinePaymentReferenceData
+     * @return \Pggns\MidocoApi\Order\StructType\CcOnlinePaymentReferenceData
      */
     public function setBookingDescription(?string $bookingDescription = null): self
     {

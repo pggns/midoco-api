@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -404,7 +404,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -427,7 +427,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set surname value
      * @param string $surname
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setSurname(?string $surname = null): self
     {
@@ -450,7 +450,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setForename(?string $forename = null): self
     {
@@ -473,7 +473,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param string $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setOrderNo(?string $orderNo = null): self
     {
@@ -496,7 +496,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -519,7 +519,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set billingNo value
      * @param int $billingNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setBillingNo(?int $billingNo = null): self
     {
@@ -542,7 +542,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set travelStartDate value
      * @param string $travelStartDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setTravelStartDate(?string $travelStartDate = null): self
     {
@@ -565,7 +565,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set travelEndDate value
      * @param string $travelEndDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setTravelEndDate(?string $travelEndDate = null): self
     {
@@ -588,7 +588,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set creationStartDate value
      * @param string $creationStartDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setCreationStartDate(?string $creationStartDate = null): self
     {
@@ -611,7 +611,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set creationEndDate value
      * @param string $creationEndDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setCreationEndDate(?string $creationEndDate = null): self
     {
@@ -634,7 +634,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set createdByUserId value
      * @param int $createdByUserId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setCreatedByUserId(?int $createdByUserId = null): self
     {
@@ -657,7 +657,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set orgunitName value
      * @param string $orgunitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setOrgunitName(?string $orgunitName = null): self
     {
@@ -680,7 +680,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set crsBookingId value
      * @param string $crsBookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setCrsBookingId(?string $crsBookingId = null): self
     {
@@ -703,7 +703,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set sellItemId value
      * @param int $sellItemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setSellItemId(?int $sellItemId = null): self
     {
@@ -726,7 +726,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -749,7 +749,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set mediatorAffiliate value
      * @param string $mediatorAffiliate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setMediatorAffiliate(?string $mediatorAffiliate = null): self
     {
@@ -772,7 +772,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set tourOperatorId value
      * @param string $tourOperatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setTourOperatorId(?string $tourOperatorId = null): self
     {
@@ -795,7 +795,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param int $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setInvoiceNo(?int $invoiceNo = null): self
     {
@@ -818,7 +818,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set ticketNo value
      * @param string $ticketNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setTicketNo(?string $ticketNo = null): self
     {
@@ -841,7 +841,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -864,7 +864,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set newOrders value
      * @param bool $newOrders
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setNewOrders(?bool $newOrders = null): self
     {
@@ -887,7 +887,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set ccNumber value
      * @param string $ccNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setCcNumber(?string $ccNumber = null): self
     {
@@ -910,7 +910,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set ccReceiptNo value
      * @param int $ccReceiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setCcReceiptNo(?int $ccReceiptNo = null): self
     {
@@ -933,7 +933,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set ccApprovalCode value
      * @param string $ccApprovalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setCcApprovalCode(?string $ccApprovalCode = null): self
     {
@@ -956,7 +956,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set groupReservation value
      * @param bool $groupReservation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setGroupReservation(?bool $groupReservation = null): self
     {
@@ -979,7 +979,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set zeroprice value
      * @param bool $zeroprice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setZeroprice(?bool $zeroprice = null): self
     {
@@ -1002,7 +1002,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set railDocumentNo value
      * @param string $railDocumentNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setRailDocumentNo(?string $railDocumentNo = null): self
     {
@@ -1025,7 +1025,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -1048,7 +1048,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set includePassengers value
      * @param bool $includePassengers
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setIncludePassengers(?bool $includePassengers = false): self
     {
@@ -1071,7 +1071,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set customerType value
      * @param string $customerType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setCustomerType(?string $customerType = null): self
     {
@@ -1094,7 +1094,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setTravelNo(?string $travelNo = null): self
     {
@@ -1117,7 +1117,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set mandateReference value
      * @param string $mandateReference
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setMandateReference(?string $mandateReference = null): self
     {
@@ -1140,7 +1140,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set includeSuborders value
      * @param bool $includeSuborders
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setIncludeSuborders(?bool $includeSuborders = false): self
     {
@@ -1163,7 +1163,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set subordersAllowed value
      * @param bool $subordersAllowed
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setSubordersAllowed(?bool $subordersAllowed = false): self
     {
@@ -1186,7 +1186,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setCity(?string $city = null): self
     {
@@ -1209,7 +1209,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -1232,7 +1232,7 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
      */
     public function setStreet(?string $street = null): self
     {

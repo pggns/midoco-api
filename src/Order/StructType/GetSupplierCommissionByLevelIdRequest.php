@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetSupplierCommissionByLevelIdRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierCommissionByLevelIdRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierCommissionByLevelIdRequest
      */
     public function setSupplierId(string $supplierId): self
     {
@@ -72,7 +72,7 @@ class GetSupplierCommissionByLevelIdRequest extends AbstractStructBase
     /**
      * Set commissionLevelId value
      * @param string $commissionLevelId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierCommissionByLevelIdRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierCommissionByLevelIdRequest
      */
     public function setCommissionLevelId(?string $commissionLevelId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetSavedReportListRequest extends AbstractStructBase
     /**
      * Set versionId value
      * @param int $versionId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetSavedReportListRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetSavedReportListRequest
      */
     public function setVersionId(?int $versionId = null): self
     {
@@ -70,7 +70,7 @@ class GetSavedReportListRequest extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetSavedReportListRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetSavedReportListRequest
      */
     public function setReportId(?int $reportId = null): self
     {

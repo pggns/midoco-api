@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class SaveAutoInvoiceConditionsRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 1
      * - ref: MidocoAutoInvoiceCondition
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\AutoInvoiceConditionDTO
+     * @var \Pggns\MidocoApi\Documents\StructType\AutoInvoiceConditionDTO
      */
-    protected \Pggns\MidocoApi\Api\Documents\StructType\AutoInvoiceConditionDTO $MidocoAutoInvoiceCondition;
+    protected \Pggns\MidocoApi\Documents\StructType\AutoInvoiceConditionDTO $MidocoAutoInvoiceCondition;
     /**
      * Constructor method for SaveAutoInvoiceConditionsRequest
      * @uses SaveAutoInvoiceConditionsRequest::setMidocoAutoInvoiceCondition()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition
+     * @param \Pggns\MidocoApi\Documents\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition
      */
-    public function __construct(\Pggns\MidocoApi\Api\Documents\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition)
+    public function __construct(\Pggns\MidocoApi\Documents\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition)
     {
         $this
             ->setMidocoAutoInvoiceCondition($midocoAutoInvoiceCondition);
     }
     /**
      * Get MidocoAutoInvoiceCondition value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\AutoInvoiceConditionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\AutoInvoiceConditionDTO
      */
-    public function getMidocoAutoInvoiceCondition(): \Pggns\MidocoApi\Api\Documents\StructType\AutoInvoiceConditionDTO
+    public function getMidocoAutoInvoiceCondition(): \Pggns\MidocoApi\Documents\StructType\AutoInvoiceConditionDTO
     {
         return $this->MidocoAutoInvoiceCondition;
     }
     /**
      * Set MidocoAutoInvoiceCondition value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveAutoInvoiceConditionsRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveAutoInvoiceConditionsRequest
      */
-    public function setMidocoAutoInvoiceCondition(\Pggns\MidocoApi\Api\Documents\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition): self
+    public function setMidocoAutoInvoiceCondition(\Pggns\MidocoApi\Documents\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition): self
     {
         $this->MidocoAutoInvoiceCondition = $midocoAutoInvoiceCondition;
         

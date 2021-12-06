@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class ListAssignedMidocoFeeTypesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoFeeType
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType[]
      */
     protected ?array $MidocoFeeType = null;
     /**
      * Constructor method for ListAssignedMidocoFeeTypesResponse
      * @uses ListAssignedMidocoFeeTypesResponse::setMidocoFeeType()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType[] $midocoFeeType
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType[] $midocoFeeType
      */
     public function __construct(?array $midocoFeeType = null)
     {
@@ -36,7 +36,7 @@ class ListAssignedMidocoFeeTypesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoFeeType value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType[]
      */
     public function getMidocoFeeType(): ?array
     {
@@ -57,12 +57,12 @@ class ListAssignedMidocoFeeTypesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listAssignedMidocoFeeTypesResponseMidocoFeeTypeItem) {
             // validation for constraint: itemType
-            if (!$listAssignedMidocoFeeTypesResponseMidocoFeeTypeItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType) {
+            if (!$listAssignedMidocoFeeTypesResponseMidocoFeeTypeItem instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType) {
                 $invalidValues[] = is_object($listAssignedMidocoFeeTypesResponseMidocoFeeTypeItem) ? get_class($listAssignedMidocoFeeTypesResponseMidocoFeeTypeItem) : sprintf('%s(%s)', gettype($listAssignedMidocoFeeTypesResponseMidocoFeeTypeItem), var_export($listAssignedMidocoFeeTypesResponseMidocoFeeTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFeeType property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFeeType property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class ListAssignedMidocoFeeTypesResponse extends AbstractStructBase
     /**
      * Set MidocoFeeType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType[] $midocoFeeType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ListAssignedMidocoFeeTypesResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType[] $midocoFeeType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ListAssignedMidocoFeeTypesResponse
      */
     public function setMidocoFeeType(?array $midocoFeeType = null): self
     {
@@ -87,14 +87,14 @@ class ListAssignedMidocoFeeTypesResponse extends AbstractStructBase
     /**
      * Add item to MidocoFeeType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ListAssignedMidocoFeeTypesResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ListAssignedMidocoFeeTypesResponse
      */
-    public function addToMidocoFeeType(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType $item): self
+    public function addToMidocoFeeType(\Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType) {
-            throw new InvalidArgumentException(sprintf('The MidocoFeeType property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoFeeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType) {
+            throw new InvalidArgumentException(sprintf('The MidocoFeeType property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoFeeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFeeType[] = $item;
         

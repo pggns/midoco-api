@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetVatAccountRequest extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetVatAccountRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetVatAccountRequest
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -70,7 +70,7 @@ class GetVatAccountRequest extends AbstractStructBase
     /**
      * Set validDate value
      * @param string $validDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetVatAccountRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetVatAccountRequest
      */
     public function setValidDate(?string $validDate = null): self
     {

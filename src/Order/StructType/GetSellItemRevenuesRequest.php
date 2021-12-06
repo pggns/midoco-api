@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetSellItemRevenuesRequest extends AbstractStructBase
     /**
      * Set sellItemId value
      * @param int $sellItemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemRevenuesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemRevenuesRequest
      */
     public function setSellItemId(int $sellItemId): self
     {

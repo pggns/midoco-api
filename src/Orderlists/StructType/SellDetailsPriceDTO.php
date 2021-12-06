@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class SellDetailsPriceDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellDetailsPriceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellDetailsPriceDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -126,7 +126,7 @@ class SellDetailsPriceDTO extends AbstractStructBase
     /**
      * Set detailsPriceId value
      * @param int $detailsPriceId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellDetailsPriceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellDetailsPriceDTO
      */
     public function setDetailsPriceId(?int $detailsPriceId = null): self
     {
@@ -149,7 +149,7 @@ class SellDetailsPriceDTO extends AbstractStructBase
     /**
      * Set hiddenFee value
      * @param float $hiddenFee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellDetailsPriceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellDetailsPriceDTO
      */
     public function setHiddenFee(?float $hiddenFee = null): self
     {
@@ -172,7 +172,7 @@ class SellDetailsPriceDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellDetailsPriceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellDetailsPriceDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -195,7 +195,7 @@ class SellDetailsPriceDTO extends AbstractStructBase
     /**
      * Set passengerAssignment value
      * @param string $passengerAssignment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellDetailsPriceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellDetailsPriceDTO
      */
     public function setPassengerAssignment(?string $passengerAssignment = null): self
     {
@@ -218,7 +218,7 @@ class SellDetailsPriceDTO extends AbstractStructBase
     /**
      * Set priceMultiply value
      * @param int $priceMultiply
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellDetailsPriceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellDetailsPriceDTO
      */
     public function setPriceMultiply(?int $priceMultiply = null): self
     {
@@ -241,7 +241,7 @@ class SellDetailsPriceDTO extends AbstractStructBase
     /**
      * Set servicePosition value
      * @param int $servicePosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellDetailsPriceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellDetailsPriceDTO
      */
     public function setServicePosition(?int $servicePosition = null): self
     {
@@ -264,7 +264,7 @@ class SellDetailsPriceDTO extends AbstractStructBase
     /**
      * Set singlePrice value
      * @param float $singlePrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellDetailsPriceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellDetailsPriceDTO
      */
     public function setSinglePrice(?float $singlePrice = null): self
     {
@@ -287,7 +287,7 @@ class SellDetailsPriceDTO extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellDetailsPriceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellDetailsPriceDTO
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {

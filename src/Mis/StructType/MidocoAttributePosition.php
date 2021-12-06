@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoAttributePosition extends AttributePositionDTO
     /**
      * Set localizedName value
      * @param string $localizedName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoAttributePosition
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoAttributePosition
      */
     public function setLocalizedName(?string $localizedName = null): self
     {

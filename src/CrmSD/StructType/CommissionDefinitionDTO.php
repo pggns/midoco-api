@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class CommissionDefinitionDTO extends AbstractStructBase
     /**
      * Set accountIdNoVat value
      * @param string $accountIdNoVat
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CommissionDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO
      */
     public function setAccountIdNoVat(?string $accountIdNoVat = null): self
     {
@@ -118,7 +118,7 @@ class CommissionDefinitionDTO extends AbstractStructBase
     /**
      * Set accountIdVat value
      * @param string $accountIdVat
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CommissionDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO
      */
     public function setAccountIdVat(?string $accountIdVat = null): self
     {
@@ -141,7 +141,7 @@ class CommissionDefinitionDTO extends AbstractStructBase
     /**
      * Set commissionId value
      * @param int $commissionId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CommissionDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO
      */
     public function setCommissionId(?int $commissionId = null): self
     {
@@ -164,7 +164,7 @@ class CommissionDefinitionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CommissionDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -187,7 +187,7 @@ class CommissionDefinitionDTO extends AbstractStructBase
     /**
      * Set hasLevels value
      * @param bool $hasLevels
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CommissionDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO
      */
     public function setHasLevels(?bool $hasLevels = null): self
     {
@@ -210,7 +210,7 @@ class CommissionDefinitionDTO extends AbstractStructBase
     /**
      * Set isProgression value
      * @param bool $isProgression
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CommissionDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO
      */
     public function setIsProgression(?bool $isProgression = null): self
     {
@@ -233,7 +233,7 @@ class CommissionDefinitionDTO extends AbstractStructBase
     /**
      * Set percent value
      * @param float $percent
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CommissionDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO
      */
     public function setPercent(?float $percent = null): self
     {
@@ -256,7 +256,7 @@ class CommissionDefinitionDTO extends AbstractStructBase
     /**
      * Set usePercentsInLevels value
      * @param bool $usePercentsInLevels
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CommissionDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO
      */
     public function setUsePercentsInLevels(?bool $usePercentsInLevels = null): self
     {

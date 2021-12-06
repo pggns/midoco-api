@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class RegisterFairplaneResponse extends AbstractStructBase
     /**
      * Set response value
      * @param string $response
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RegisterFairplaneResponse
+     * @return \Pggns\MidocoApi\Order\StructType\RegisterFairplaneResponse
      */
     public function setResponse(?string $response = null): self
     {

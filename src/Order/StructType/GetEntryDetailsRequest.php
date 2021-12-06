@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetEntryDetailsRequest extends AbstractStructBase
      * The MidocoDebitorAccountEntry
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType|null
+     * @var \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType $MidocoDebitorAccountEntry = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType $MidocoDebitorAccountEntry = null;
     /**
      * Constructor method for GetEntryDetailsRequest
      * @uses GetEntryDetailsRequest::setMidocoDebitorAccountEntry()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType $midocoDebitorAccountEntry
+     * @param \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType $midocoDebitorAccountEntry
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType $midocoDebitorAccountEntry = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType $midocoDebitorAccountEntry = null)
     {
         $this
             ->setMidocoDebitorAccountEntry($midocoDebitorAccountEntry);
     }
     /**
      * Get MidocoDebitorAccountEntry value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType|null
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType|null
      */
-    public function getMidocoDebitorAccountEntry(): ?\Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+    public function getMidocoDebitorAccountEntry(): ?\Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
     {
         return $this->MidocoDebitorAccountEntry;
     }
     /**
      * Set MidocoDebitorAccountEntry value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType $midocoDebitorAccountEntry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEntryDetailsRequest
+     * @param \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType $midocoDebitorAccountEntry
+     * @return \Pggns\MidocoApi\Order\StructType\GetEntryDetailsRequest
      */
-    public function setMidocoDebitorAccountEntry(?\Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType $midocoDebitorAccountEntry = null): self
+    public function setMidocoDebitorAccountEntry(?\Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType $midocoDebitorAccountEntry = null): self
     {
         $this->MidocoDebitorAccountEntry = $midocoDebitorAccountEntry;
         

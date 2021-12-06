@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SearchBillingDunningRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDunningRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -102,7 +102,7 @@ class SearchBillingDunningRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDunningRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -125,7 +125,7 @@ class SearchBillingDunningRequest extends AbstractStructBase
     /**
      * Set fromDunningLevel value
      * @param int $fromDunningLevel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDunningRequest
      */
     public function setFromDunningLevel(?int $fromDunningLevel = null): self
     {
@@ -148,7 +148,7 @@ class SearchBillingDunningRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDunningRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -171,7 +171,7 @@ class SearchBillingDunningRequest extends AbstractStructBase
     /**
      * Set toDunningLevel value
      * @param int $toDunningLevel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDunningRequest
      */
     public function setToDunningLevel(?int $toDunningLevel = null): self
     {
@@ -194,7 +194,7 @@ class SearchBillingDunningRequest extends AbstractStructBase
     /**
      * Set searchCriteria value
      * @param string $searchCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDunningRequest
      */
     public function setSearchCriteria(?string $searchCriteria = null): self
     {

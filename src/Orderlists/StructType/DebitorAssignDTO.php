@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class DebitorAssignDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorAssignDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -78,7 +78,7 @@ class DebitorAssignDTO extends AbstractStructBase
     /**
      * Set forCompany value
      * @param bool $forCompany
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorAssignDTO
      */
     public function setForCompany(?bool $forCompany = null): self
     {
@@ -101,7 +101,7 @@ class DebitorAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

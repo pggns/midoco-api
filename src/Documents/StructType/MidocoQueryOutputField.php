@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class MidocoQueryOutputField extends AbstractStructBase
     /**
      * Set fieldName value
      * @param string $fieldName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryOutputField
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQueryOutputField
      */
     public function setFieldName(?string $fieldName = null): self
     {
@@ -88,7 +88,7 @@ class MidocoQueryOutputField extends AbstractStructBase
     /**
      * Set orderAscendent value
      * @param bool $orderAscendent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryOutputField
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQueryOutputField
      */
     public function setOrderAscendent(?bool $orderAscendent = true): self
     {
@@ -111,7 +111,7 @@ class MidocoQueryOutputField extends AbstractStructBase
     /**
      * Set orderByPosition value
      * @param int $orderByPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryOutputField
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQueryOutputField
      */
     public function setOrderByPosition(?int $orderByPosition = null): self
     {
@@ -134,7 +134,7 @@ class MidocoQueryOutputField extends AbstractStructBase
     /**
      * Set visible value
      * @param bool $visible
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoQueryOutputField
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoQueryOutputField
      */
     public function setVisible(?bool $visible = null): self
     {

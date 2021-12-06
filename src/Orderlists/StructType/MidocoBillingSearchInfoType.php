@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -166,7 +166,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setName(?string $name = null): self
     {
@@ -189,7 +189,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setForename(?string $forename = null): self
     {
@@ -212,7 +212,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -235,7 +235,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set documentNo value
      * @param string $documentNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setDocumentNo(?string $documentNo = null): self
     {
@@ -258,7 +258,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -281,7 +281,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set printingDate value
      * @param string $printingDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setPrintingDate(?string $printingDate = null): self
     {
@@ -304,7 +304,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -327,7 +327,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set invoicedAmount value
      * @param float $invoicedAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setInvoicedAmount(?float $invoicedAmount = null): self
     {
@@ -350,7 +350,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set travellerName value
      * @param string $travellerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setTravellerName(?string $travellerName = null): self
     {
@@ -373,7 +373,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -396,7 +396,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set isSpecialCustomer value
      * @param bool $isSpecialCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setIsSpecialCustomer(?bool $isSpecialCustomer = null): self
     {
@@ -419,7 +419,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set invoiceToEmail value
      * @param string $invoiceToEmail
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setInvoiceToEmail(?string $invoiceToEmail = null): self
     {
@@ -442,7 +442,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingSearchInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
      */
     public function setCustomerId(?int $customerId = null): self
     {

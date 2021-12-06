@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SupplierDimensionDTO extends AbstractStructBase
     /**
      * Set group1 value
      * @param string $group1
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SupplierDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SupplierDimensionDTO
      */
     public function setGroup1(?string $group1 = null): self
     {
@@ -102,7 +102,7 @@ class SupplierDimensionDTO extends AbstractStructBase
     /**
      * Set group2 value
      * @param string $group2
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SupplierDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SupplierDimensionDTO
      */
     public function setGroup2(?string $group2 = null): self
     {
@@ -125,7 +125,7 @@ class SupplierDimensionDTO extends AbstractStructBase
     /**
      * Set group3 value
      * @param string $group3
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SupplierDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SupplierDimensionDTO
      */
     public function setGroup3(?string $group3 = null): self
     {
@@ -148,7 +148,7 @@ class SupplierDimensionDTO extends AbstractStructBase
     /**
      * Set midocoSupplierId value
      * @param string $midocoSupplierId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SupplierDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SupplierDimensionDTO
      */
     public function setMidocoSupplierId(?string $midocoSupplierId = null): self
     {
@@ -171,7 +171,7 @@ class SupplierDimensionDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SupplierDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SupplierDimensionDTO
      */
     public function setName(?string $name = null): self
     {
@@ -194,7 +194,7 @@ class SupplierDimensionDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param int $supplierId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SupplierDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SupplierDimensionDTO
      */
     public function setSupplierId(?int $supplierId = null): self
     {

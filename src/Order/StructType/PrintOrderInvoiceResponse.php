@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class PrintOrderInvoiceResponse extends AbstractStructBase
      * Set PrintjobId value
      * @throws InvalidArgumentException
      * @param int[] $printjobId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceResponse
      */
     public function setPrintjobId(?array $printjobId = null): self
     {
@@ -95,7 +95,7 @@ class PrintOrderInvoiceResponse extends AbstractStructBase
      * Add item to PrintjobId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceResponse
      */
     public function addToPrintjobId(int $item): self
     {
@@ -118,7 +118,7 @@ class PrintOrderInvoiceResponse extends AbstractStructBase
     /**
      * Set Errormessage value
      * @param string $errormessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceResponse
      */
     public function setErrormessage(?string $errormessage = null): self
     {

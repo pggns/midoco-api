@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SearchCustomerByPhoneRequest extends AbstractStructBase
     /**
      * Set phoneNo value
      * @param string $phoneNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByPhoneRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneRequest
      */
     public function setPhoneNo(?string $phoneNo = null): self
     {
@@ -102,7 +102,7 @@ class SearchCustomerByPhoneRequest extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByPhoneRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneRequest
      */
     public function setName(?string $name = null): self
     {
@@ -125,7 +125,7 @@ class SearchCustomerByPhoneRequest extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByPhoneRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneRequest
      */
     public function setForename(?string $forename = null): self
     {
@@ -148,7 +148,7 @@ class SearchCustomerByPhoneRequest extends AbstractStructBase
     /**
      * Set contactId value
      * @param int $contactId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByPhoneRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneRequest
      */
     public function setContactId(?int $contactId = null): self
     {
@@ -171,7 +171,7 @@ class SearchCustomerByPhoneRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByPhoneRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -194,7 +194,7 @@ class SearchCustomerByPhoneRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByPhoneRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

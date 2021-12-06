@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetTemplateTextForCustomerResponse extends AbstractStructBase
     /**
      * Set translation value
      * @param string $translation
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTemplateTextForCustomerResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTemplateTextForCustomerResponse
      */
     public function setTranslation(?string $translation = null): self
     {

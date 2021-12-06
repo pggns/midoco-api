@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class ManualDtausTransactionDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualDtausTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualDtausTransactionDTO
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -94,7 +94,7 @@ class ManualDtausTransactionDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualDtausTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualDtausTransactionDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -117,7 +117,7 @@ class ManualDtausTransactionDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param int $isExported
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualDtausTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualDtausTransactionDTO
      */
     public function setIsExported(?int $isExported = null): self
     {
@@ -140,7 +140,7 @@ class ManualDtausTransactionDTO extends AbstractStructBase
     /**
      * Set isPayed value
      * @param int $isPayed
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualDtausTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualDtausTransactionDTO
      */
     public function setIsPayed(?int $isPayed = null): self
     {
@@ -163,7 +163,7 @@ class ManualDtausTransactionDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualDtausTransactionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualDtausTransactionDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {

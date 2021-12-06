@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SellItemEinvoiceDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemEinvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemEinvoiceDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -102,7 +102,7 @@ class SellItemEinvoiceDTO extends AbstractStructBase
     /**
      * Set gateway value
      * @param string $gateway
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemEinvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemEinvoiceDTO
      */
     public function setGateway(?string $gateway = null): self
     {
@@ -125,7 +125,7 @@ class SellItemEinvoiceDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemEinvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemEinvoiceDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -148,7 +148,7 @@ class SellItemEinvoiceDTO extends AbstractStructBase
     /**
      * Set orderRef value
      * @param string $orderRef
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemEinvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemEinvoiceDTO
      */
     public function setOrderRef(?string $orderRef = null): self
     {
@@ -171,7 +171,7 @@ class SellItemEinvoiceDTO extends AbstractStructBase
     /**
      * Set routingId value
      * @param string $routingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemEinvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemEinvoiceDTO
      */
     public function setRoutingId(?string $routingId = null): self
     {
@@ -194,7 +194,7 @@ class SellItemEinvoiceDTO extends AbstractStructBase
     /**
      * Set supplierNo value
      * @param string $supplierNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemEinvoiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemEinvoiceDTO
      */
     public function setSupplierNo(?string $supplierNo = null): self
     {

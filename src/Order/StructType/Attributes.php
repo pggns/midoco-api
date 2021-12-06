@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class Attributes extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: attributetype
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Attributetype[]
+     * @var \Pggns\MidocoApi\Order\StructType\Attributetype[]
      */
     protected ?array $attributetype = null;
     /**
@@ -37,7 +37,7 @@ class Attributes extends AbstractStructBase
      * @uses Attributes::setAttributetype()
      * @uses Attributes::setType()
      * @uses Attributes::setCount()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Attributetype[] $attributetype
+     * @param \Pggns\MidocoApi\Order\StructType\Attributetype[] $attributetype
      * @param string $type
      * @param int $count
      */
@@ -50,7 +50,7 @@ class Attributes extends AbstractStructBase
     }
     /**
      * Get attributetype value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Attributetype[]
+     * @return \Pggns\MidocoApi\Order\StructType\Attributetype[]
      */
     public function getAttributetype(): ?array
     {
@@ -71,12 +71,12 @@ class Attributes extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $attributesAttributetypeItem) {
             // validation for constraint: itemType
-            if (!$attributesAttributetypeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\Attributetype) {
+            if (!$attributesAttributetypeItem instanceof \Pggns\MidocoApi\Order\StructType\Attributetype) {
                 $invalidValues[] = is_object($attributesAttributetypeItem) ? get_class($attributesAttributetypeItem) : sprintf('%s(%s)', gettype($attributesAttributetypeItem), var_export($attributesAttributetypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attributetype property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Attributetype, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attributetype property can only contain items of type \Pggns\MidocoApi\Order\StructType\Attributetype, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class Attributes extends AbstractStructBase
     /**
      * Set attributetype value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Attributetype[] $attributetype
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Attributes
+     * @param \Pggns\MidocoApi\Order\StructType\Attributetype[] $attributetype
+     * @return \Pggns\MidocoApi\Order\StructType\Attributes
      */
     public function setAttributetype(?array $attributetype = null): self
     {
@@ -101,14 +101,14 @@ class Attributes extends AbstractStructBase
     /**
      * Add item to attributetype value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Attributetype $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Attributes
+     * @param \Pggns\MidocoApi\Order\StructType\Attributetype $item
+     * @return \Pggns\MidocoApi\Order\StructType\Attributes
      */
-    public function addToAttributetype(\Pggns\MidocoApi\Api\Order\StructType\Attributetype $item): self
+    public function addToAttributetype(\Pggns\MidocoApi\Order\StructType\Attributetype $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\Attributetype) {
-            throw new InvalidArgumentException(sprintf('The attributetype property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Attributetype, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\Attributetype) {
+            throw new InvalidArgumentException(sprintf('The attributetype property can only contain items of type \Pggns\MidocoApi\Order\StructType\Attributetype, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attributetype[] = $item;
         
@@ -125,7 +125,7 @@ class Attributes extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Attributes
+     * @return \Pggns\MidocoApi\Order\StructType\Attributes
      */
     public function setType(?string $type = null): self
     {
@@ -148,7 +148,7 @@ class Attributes extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Attributes
+     * @return \Pggns\MidocoApi\Order\StructType\Attributes
      */
     public function setCount(?int $count = null): self
     {

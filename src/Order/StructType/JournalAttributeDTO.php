@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class JournalAttributeDTO extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JournalAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\JournalAttributeDTO
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -78,7 +78,7 @@ class JournalAttributeDTO extends AbstractStructBase
     /**
      * Set attribValue value
      * @param string $attribValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JournalAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\JournalAttributeDTO
      */
     public function setAttribValue(?string $attribValue = null): self
     {
@@ -101,7 +101,7 @@ class JournalAttributeDTO extends AbstractStructBase
     /**
      * Set journalId value
      * @param int $journalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\JournalAttributeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\JournalAttributeDTO
      */
     public function setJournalId(?int $journalId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class VermiLinkAttributes extends AbstractStructBase
      * The MidocoOrderCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoOrderCustomer
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderCustomer|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoOrderCustomer|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderCustomer $MidocoOrderCustomer = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoOrderCustomer $MidocoOrderCustomer = null;
     /**
      * The MidocoSellPassenger
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellPassenger
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellPassenger[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSellPassenger[]
      */
     protected ?array $MidocoSellPassenger = null;
     /**
@@ -132,8 +132,8 @@ class VermiLinkAttributes extends AbstractStructBase
      * @uses VermiLinkAttributes::setCountryCode()
      * @uses VermiLinkAttributes::setCountryDesc()
      * @uses VermiLinkAttributes::setItemPrice()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderCustomer $midocoOrderCustomer
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellPassenger[] $midocoSellPassenger
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderCustomer $midocoOrderCustomer
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSellPassenger[] $midocoSellPassenger
      * @param string[] $serviceCode
      * @param int $orderId
      * @param int $orderNo
@@ -151,7 +151,7 @@ class VermiLinkAttributes extends AbstractStructBase
      * @param string $countryDesc
      * @param float $itemPrice
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderCustomer $midocoOrderCustomer = null, ?array $midocoSellPassenger = null, ?array $serviceCode = null, ?int $orderId = null, ?int $orderNo = null, ?int $itemId = null, ?int $midocoUserId = null, ?string $midocoUserName = null, ?string $mediator = null, ?string $extSystem = null, ?string $extId = null, ?string $supplierId = null, ?string $bookingId = null, ?string $startTravel = null, ?string $endTravel = null, ?string $countryCode = null, ?string $countryDesc = null, ?float $itemPrice = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoOrderCustomer $midocoOrderCustomer = null, ?array $midocoSellPassenger = null, ?array $serviceCode = null, ?int $orderId = null, ?int $orderNo = null, ?int $itemId = null, ?int $midocoUserId = null, ?string $midocoUserName = null, ?string $mediator = null, ?string $extSystem = null, ?string $extId = null, ?string $supplierId = null, ?string $bookingId = null, ?string $startTravel = null, ?string $endTravel = null, ?string $countryCode = null, ?string $countryDesc = null, ?float $itemPrice = null)
     {
         $this
             ->setMidocoOrderCustomer($midocoOrderCustomer)
@@ -175,18 +175,18 @@ class VermiLinkAttributes extends AbstractStructBase
     }
     /**
      * Get MidocoOrderCustomer value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderCustomer|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderCustomer|null
      */
-    public function getMidocoOrderCustomer(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderCustomer
+    public function getMidocoOrderCustomer(): ?\Pggns\MidocoApi\Documents\StructType\MidocoOrderCustomer
     {
         return $this->MidocoOrderCustomer;
     }
     /**
      * Set MidocoOrderCustomer value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderCustomer $midocoOrderCustomer
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderCustomer $midocoOrderCustomer
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
-    public function setMidocoOrderCustomer(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderCustomer $midocoOrderCustomer = null): self
+    public function setMidocoOrderCustomer(?\Pggns\MidocoApi\Documents\StructType\MidocoOrderCustomer $midocoOrderCustomer = null): self
     {
         $this->MidocoOrderCustomer = $midocoOrderCustomer;
         
@@ -194,7 +194,7 @@ class VermiLinkAttributes extends AbstractStructBase
     }
     /**
      * Get MidocoSellPassenger value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellPassenger[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellPassenger[]
      */
     public function getMidocoSellPassenger(): ?array
     {
@@ -215,12 +215,12 @@ class VermiLinkAttributes extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $vermiLinkAttributesMidocoSellPassengerItem) {
             // validation for constraint: itemType
-            if (!$vermiLinkAttributesMidocoSellPassengerItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellPassenger) {
+            if (!$vermiLinkAttributesMidocoSellPassengerItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSellPassenger) {
                 $invalidValues[] = is_object($vermiLinkAttributesMidocoSellPassengerItem) ? get_class($vermiLinkAttributesMidocoSellPassengerItem) : sprintf('%s(%s)', gettype($vermiLinkAttributesMidocoSellPassengerItem), var_export($vermiLinkAttributesMidocoSellPassengerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellPassenger, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSellPassenger, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -229,8 +229,8 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set MidocoSellPassenger value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellPassenger[] $midocoSellPassenger
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSellPassenger[] $midocoSellPassenger
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setMidocoSellPassenger(?array $midocoSellPassenger = null): self
     {
@@ -245,14 +245,14 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Add item to MidocoSellPassenger value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellPassenger $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSellPassenger $item
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
-    public function addToMidocoSellPassenger(\Pggns\MidocoApi\Api\Documents\StructType\MidocoSellPassenger $item): self
+    public function addToMidocoSellPassenger(\Pggns\MidocoApi\Documents\StructType\MidocoSellPassenger $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellPassenger) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellPassenger, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSellPassenger) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSellPassenger, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellPassenger[] = $item;
         
@@ -296,7 +296,7 @@ class VermiLinkAttributes extends AbstractStructBase
      * Set serviceCode value
      * @throws InvalidArgumentException
      * @param string[] $serviceCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setServiceCode(?array $serviceCode = null): self
     {
@@ -312,7 +312,7 @@ class VermiLinkAttributes extends AbstractStructBase
      * Add item to serviceCode value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function addToServiceCode(string $item): self
     {
@@ -335,7 +335,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -358,7 +358,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -381,7 +381,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -404,7 +404,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set midocoUserId value
      * @param int $midocoUserId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setMidocoUserId(?int $midocoUserId = null): self
     {
@@ -427,7 +427,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set midocoUserName value
      * @param string $midocoUserName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setMidocoUserName(?string $midocoUserName = null): self
     {
@@ -450,7 +450,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set mediator value
      * @param string $mediator
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setMediator(?string $mediator = null): self
     {
@@ -473,7 +473,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set extSystem value
      * @param string $extSystem
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setExtSystem(?string $extSystem = null): self
     {
@@ -496,7 +496,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set extId value
      * @param string $extId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setExtId(?string $extId = null): self
     {
@@ -519,7 +519,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -542,7 +542,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -565,7 +565,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -588,7 +588,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -611,7 +611,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -634,7 +634,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set countryDesc value
      * @param string $countryDesc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setCountryDesc(?string $countryDesc = null): self
     {
@@ -657,7 +657,7 @@ class VermiLinkAttributes extends AbstractStructBase
     /**
      * Set itemPrice value
      * @param float $itemPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VermiLinkAttributes
+     * @return \Pggns\MidocoApi\Documents\StructType\VermiLinkAttributes
      */
     public function setItemPrice(?float $itemPrice = null): self
     {

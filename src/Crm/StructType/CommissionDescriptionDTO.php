@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CommissionDescriptionDTO extends AbstractStructBase
     /**
      * Set commissionId value
      * @param string $commissionId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CommissionDescriptionDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CommissionDescriptionDTO
      */
     public function setCommissionId(?string $commissionId = null): self
     {
@@ -78,7 +78,7 @@ class CommissionDescriptionDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CommissionDescriptionDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CommissionDescriptionDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -101,7 +101,7 @@ class CommissionDescriptionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CommissionDescriptionDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CommissionDescriptionDTO
      */
     public function setDescription(?string $description = null): self
     {

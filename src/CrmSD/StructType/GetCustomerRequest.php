@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetCustomerRequest extends AbstractStructBase
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The fetchHistory
      * Meta information extracted from the WSDL
@@ -58,13 +58,13 @@ class GetCustomerRequest extends AbstractStructBase
      * @uses GetCustomerRequest::setWithDetails()
      * @uses GetCustomerRequest::setCalledFromOrder()
      * @uses GetCustomerRequest::setOverruleRightCrmDisplayMediator()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
      * @param bool $fetchHistory
      * @param bool $withDetails
      * @param bool $calledFromOrder
      * @param bool $overruleRightCrmDisplayMediator
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?bool $fetchHistory = true, ?bool $withDetails = true, ?bool $calledFromOrder = false, ?bool $overruleRightCrmDisplayMediator = false)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?bool $fetchHistory = true, ?bool $withDetails = true, ?bool $calledFromOrder = false, ?bool $overruleRightCrmDisplayMediator = false)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -75,18 +75,18 @@ class GetCustomerRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -103,7 +103,7 @@ class GetCustomerRequest extends AbstractStructBase
     /**
      * Set fetchHistory value
      * @param bool $fetchHistory
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerRequest
      */
     public function setFetchHistory(?bool $fetchHistory = true): self
     {
@@ -126,7 +126,7 @@ class GetCustomerRequest extends AbstractStructBase
     /**
      * Set withDetails value
      * @param bool $withDetails
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerRequest
      */
     public function setWithDetails(?bool $withDetails = true): self
     {
@@ -149,7 +149,7 @@ class GetCustomerRequest extends AbstractStructBase
     /**
      * Set calledFromOrder value
      * @param bool $calledFromOrder
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerRequest
      */
     public function setCalledFromOrder(?bool $calledFromOrder = false): self
     {
@@ -172,7 +172,7 @@ class GetCustomerRequest extends AbstractStructBase
     /**
      * Set overruleRightCrmDisplayMediator value
      * @param bool $overruleRightCrmDisplayMediator
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerRequest
      */
     public function setOverruleRightCrmDisplayMediator(?bool $overruleRightCrmDisplayMediator = false): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMfRequest extends AbstractStructBase
      * The MidocoMf
      * Meta information extracted from the WSDL
      * - ref: MidocoMf
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMf|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMf|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMf $MidocoMf = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMf $MidocoMf = null;
     /**
      * Constructor method for SaveMfRequest
      * @uses SaveMfRequest::setMidocoMf()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMf $midocoMf
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMf $midocoMf
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMf $midocoMf = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoMf $midocoMf = null)
     {
         $this
             ->setMidocoMf($midocoMf);
     }
     /**
      * Get MidocoMf value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMf|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMf|null
      */
-    public function getMidocoMf(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMf
+    public function getMidocoMf(): ?\Pggns\MidocoApi\Order\StructType\MidocoMf
     {
         return $this->MidocoMf;
     }
     /**
      * Set MidocoMf value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMf $midocoMf
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMfRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMf $midocoMf
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMfRequest
      */
-    public function setMidocoMf(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMf $midocoMf = null): self
+    public function setMidocoMf(?\Pggns\MidocoApi\Order\StructType\MidocoMf $midocoMf = null): self
     {
         $this->MidocoMf = $midocoMf;
         

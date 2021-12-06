@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteSupplierDocumentRequest extends AbstractStructBase
      * The MidocoSupplierDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierDocument
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierDocument|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierDocument $MidocoSupplierDocument = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierDocument $MidocoSupplierDocument = null;
     /**
      * Constructor method for DeleteSupplierDocumentRequest
      * @uses DeleteSupplierDocumentRequest::setMidocoSupplierDocument()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierDocument $midocoSupplierDocument
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierDocument $midocoSupplierDocument
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierDocument $midocoSupplierDocument = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierDocument $midocoSupplierDocument = null)
     {
         $this
             ->setMidocoSupplierDocument($midocoSupplierDocument);
     }
     /**
      * Get MidocoSupplierDocument value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierDocument|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierDocument|null
      */
-    public function getMidocoSupplierDocument(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierDocument
+    public function getMidocoSupplierDocument(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierDocument
     {
         return $this->MidocoSupplierDocument;
     }
     /**
      * Set MidocoSupplierDocument value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierDocument $midocoSupplierDocument
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteSupplierDocumentRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierDocument $midocoSupplierDocument
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteSupplierDocumentRequest
      */
-    public function setMidocoSupplierDocument(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierDocument $midocoSupplierDocument = null): self
+    public function setMidocoSupplierDocument(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierDocument $midocoSupplierDocument = null): self
     {
         $this->MidocoSupplierDocument = $midocoSupplierDocument;
         

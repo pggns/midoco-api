@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,26 +19,26 @@ class MidocoDbiDefinitionType extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - ref: MidocoDbiUpdate
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO
+     * @var \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO
      */
-    protected \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $MidocoDbiUpdate;
+    protected \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $MidocoDbiUpdate;
     /**
      * The MidocoDbiDefs
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDbiDefs
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs[]
      */
     protected ?array $MidocoDbiDefs = null;
     /**
      * Constructor method for MidocoDbiDefinitionType
      * @uses MidocoDbiDefinitionType::setMidocoDbiUpdate()
      * @uses MidocoDbiDefinitionType::setMidocoDbiDefs()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs[] $midocoDbiDefs
+     * @param \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs[] $midocoDbiDefs
      */
-    public function __construct(\Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate, ?array $midocoDbiDefs = null)
+    public function __construct(\Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate, ?array $midocoDbiDefs = null)
     {
         $this
             ->setMidocoDbiUpdate($midocoDbiUpdate)
@@ -46,18 +46,18 @@ class MidocoDbiDefinitionType extends AbstractStructBase
     }
     /**
      * Get MidocoDbiUpdate value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO
      */
-    public function getMidocoDbiUpdate(): \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO
+    public function getMidocoDbiUpdate(): \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO
     {
         return $this->MidocoDbiUpdate;
     }
     /**
      * Set MidocoDbiUpdate value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefinitionType
+     * @param \Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefinitionType
      */
-    public function setMidocoDbiUpdate(\Pggns\MidocoApi\Api\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate): self
+    public function setMidocoDbiUpdate(\Pggns\MidocoApi\Documents\StructType\DbiUpdateDTO $midocoDbiUpdate): self
     {
         $this->MidocoDbiUpdate = $midocoDbiUpdate;
         
@@ -65,7 +65,7 @@ class MidocoDbiDefinitionType extends AbstractStructBase
     }
     /**
      * Get MidocoDbiDefs value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs[]
      */
     public function getMidocoDbiDefs(): ?array
     {
@@ -86,12 +86,12 @@ class MidocoDbiDefinitionType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoDbiDefinitionTypeMidocoDbiDefsItem) {
             // validation for constraint: itemType
-            if (!$midocoDbiDefinitionTypeMidocoDbiDefsItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs) {
+            if (!$midocoDbiDefinitionTypeMidocoDbiDefsItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs) {
                 $invalidValues[] = is_object($midocoDbiDefinitionTypeMidocoDbiDefsItem) ? get_class($midocoDbiDefinitionTypeMidocoDbiDefsItem) : sprintf('%s(%s)', gettype($midocoDbiDefinitionTypeMidocoDbiDefsItem), var_export($midocoDbiDefinitionTypeMidocoDbiDefsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDbiDefs property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDbiDefs property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -100,8 +100,8 @@ class MidocoDbiDefinitionType extends AbstractStructBase
     /**
      * Set MidocoDbiDefs value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs[] $midocoDbiDefs
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefinitionType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs[] $midocoDbiDefs
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefinitionType
      */
     public function setMidocoDbiDefs(?array $midocoDbiDefs = null): self
     {
@@ -116,14 +116,14 @@ class MidocoDbiDefinitionType extends AbstractStructBase
     /**
      * Add item to MidocoDbiDefs value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefinitionType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefinitionType
      */
-    public function addToMidocoDbiDefs(\Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs $item): self
+    public function addToMidocoDbiDefs(\Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs) {
-            throw new InvalidArgumentException(sprintf('The MidocoDbiDefs property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefs, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs) {
+            throw new InvalidArgumentException(sprintf('The MidocoDbiDefs property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefs, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDbiDefs[] = $item;
         

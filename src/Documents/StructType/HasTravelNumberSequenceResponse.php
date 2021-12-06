@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class HasTravelNumberSequenceResponse extends AbstractStructBase
     /**
      * Set hasSequence value
      * @param bool $hasSequence
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HasTravelNumberSequenceResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\HasTravelNumberSequenceResponse
      */
     public function setHasSequence(?bool $hasSequence = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class MidocoSavedReportExt extends JasperReportDTO
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: JasperReportType
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\JasperReportType[]
+     * @var \Pggns\MidocoApi\Booking\StructType\JasperReportType[]
      */
     protected ?array $JasperReportType = null;
     /**
      * Constructor method for MidocoSavedReportExt
      * @uses MidocoSavedReportExt::setJasperReportType()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\JasperReportType[] $jasperReportType
+     * @param \Pggns\MidocoApi\Booking\StructType\JasperReportType[] $jasperReportType
      */
     public function __construct(?array $jasperReportType = null)
     {
@@ -33,7 +33,7 @@ class MidocoSavedReportExt extends JasperReportDTO
     }
     /**
      * Get JasperReportType value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\JasperReportType[]
+     * @return \Pggns\MidocoApi\Booking\StructType\JasperReportType[]
      */
     public function getJasperReportType(): ?array
     {
@@ -54,12 +54,12 @@ class MidocoSavedReportExt extends JasperReportDTO
         $invalidValues = [];
         foreach ($values as $midocoSavedReportExtJasperReportTypeItem) {
             // validation for constraint: itemType
-            if (!$midocoSavedReportExtJasperReportTypeItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\JasperReportType) {
+            if (!$midocoSavedReportExtJasperReportTypeItem instanceof \Pggns\MidocoApi\Booking\StructType\JasperReportType) {
                 $invalidValues[] = is_object($midocoSavedReportExtJasperReportTypeItem) ? get_class($midocoSavedReportExtJasperReportTypeItem) : sprintf('%s(%s)', gettype($midocoSavedReportExtJasperReportTypeItem), var_export($midocoSavedReportExtJasperReportTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The JasperReportType property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\JasperReportType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The JasperReportType property can only contain items of type \Pggns\MidocoApi\Booking\StructType\JasperReportType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class MidocoSavedReportExt extends JasperReportDTO
     /**
      * Set JasperReportType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\JasperReportType[] $jasperReportType
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoSavedReportExt
+     * @param \Pggns\MidocoApi\Booking\StructType\JasperReportType[] $jasperReportType
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoSavedReportExt
      */
     public function setJasperReportType(?array $jasperReportType = null): self
     {
@@ -84,14 +84,14 @@ class MidocoSavedReportExt extends JasperReportDTO
     /**
      * Add item to JasperReportType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\JasperReportType $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoSavedReportExt
+     * @param \Pggns\MidocoApi\Booking\StructType\JasperReportType $item
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoSavedReportExt
      */
-    public function addToJasperReportType(\Pggns\MidocoApi\Api\Booking\StructType\JasperReportType $item): self
+    public function addToJasperReportType(\Pggns\MidocoApi\Booking\StructType\JasperReportType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\JasperReportType) {
-            throw new InvalidArgumentException(sprintf('The JasperReportType property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\JasperReportType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\JasperReportType) {
+            throw new InvalidArgumentException(sprintf('The JasperReportType property can only contain items of type \Pggns\MidocoApi\Booking\StructType\JasperReportType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->JasperReportType[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class OrgattribDTO extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrgattribDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrgattribDTO
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -70,7 +70,7 @@ class OrgattribDTO extends AbstractStructBase
     /**
      * Set isSystem value
      * @param bool $isSystem
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrgattribDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrgattribDTO
      */
     public function setIsSystem(?bool $isSystem = null): self
     {

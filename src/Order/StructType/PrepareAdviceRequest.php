@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class PrepareAdviceRequest extends PrepareAdviceInfoRequest
     /**
      * Set creditorFrom value
      * @param string $creditorFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceRequest
      */
     public function setCreditorFrom(?string $creditorFrom = null): self
     {
@@ -118,7 +118,7 @@ class PrepareAdviceRequest extends PrepareAdviceInfoRequest
     /**
      * Set creditorTo value
      * @param string $creditorTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceRequest
      */
     public function setCreditorTo(?string $creditorTo = null): self
     {
@@ -141,7 +141,7 @@ class PrepareAdviceRequest extends PrepareAdviceInfoRequest
     /**
      * Set groupByCreditor value
      * @param bool $groupByCreditor
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceRequest
      */
     public function setGroupByCreditor(?bool $groupByCreditor = null): self
     {
@@ -164,7 +164,7 @@ class PrepareAdviceRequest extends PrepareAdviceInfoRequest
     /**
      * Set onlyPaid value
      * @param bool $onlyPaid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceRequest
      */
     public function setOnlyPaid(?bool $onlyPaid = null): self
     {
@@ -187,7 +187,7 @@ class PrepareAdviceRequest extends PrepareAdviceInfoRequest
     /**
      * Set supplierDepositAmount value
      * @param float $supplierDepositAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceRequest
      */
     public function setSupplierDepositAmount(?float $supplierDepositAmount = null): self
     {
@@ -210,7 +210,7 @@ class PrepareAdviceRequest extends PrepareAdviceInfoRequest
     /**
      * Set supplierDepositDate value
      * @param string $supplierDepositDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceRequest
      */
     public function setSupplierDepositDate(?string $supplierDepositDate = null): self
     {
@@ -233,7 +233,7 @@ class PrepareAdviceRequest extends PrepareAdviceInfoRequest
     /**
      * Set supplierFinalPaymentDate value
      * @param string $supplierFinalPaymentDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceRequest
      */
     public function setSupplierFinalPaymentDate(?string $supplierFinalPaymentDate = null): self
     {
@@ -256,7 +256,7 @@ class PrepareAdviceRequest extends PrepareAdviceInfoRequest
     /**
      * Set supplierCommissionAmount value
      * @param float $supplierCommissionAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceRequest
      */
     public function setSupplierCommissionAmount(?float $supplierCommissionAmount = null): self
     {

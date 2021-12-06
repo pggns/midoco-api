@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMfDefResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMfDef
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoMfDef[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoMfDef[]
      */
     protected ?array $MidocoMfDef = null;
     /**
      * Constructor method for GetMfDefResponse
      * @uses GetMfDefResponse::setMidocoMfDef()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMfDef[] $midocoMfDef
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMfDef[] $midocoMfDef
      */
     public function __construct(?array $midocoMfDef = null)
     {
@@ -34,7 +34,7 @@ class GetMfDefResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMfDef value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoMfDef[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoMfDef[]
      */
     public function getMidocoMfDef(): ?array
     {
@@ -55,12 +55,12 @@ class GetMfDefResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMfDefResponseMidocoMfDefItem) {
             // validation for constraint: itemType
-            if (!$getMfDefResponseMidocoMfDefItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoMfDef) {
+            if (!$getMfDefResponseMidocoMfDefItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoMfDef) {
                 $invalidValues[] = is_object($getMfDefResponseMidocoMfDefItem) ? get_class($getMfDefResponseMidocoMfDefItem) : sprintf('%s(%s)', gettype($getMfDefResponseMidocoMfDefItem), var_export($getMfDefResponseMidocoMfDefItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMfDef property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoMfDef, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMfDef property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoMfDef, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMfDefResponse extends AbstractStructBase
     /**
      * Set MidocoMfDef value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMfDef[] $midocoMfDef
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMfDefResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMfDef[] $midocoMfDef
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMfDefResponse
      */
     public function setMidocoMfDef(?array $midocoMfDef = null): self
     {
@@ -85,14 +85,14 @@ class GetMfDefResponse extends AbstractStructBase
     /**
      * Add item to MidocoMfDef value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMfDef $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMfDefResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMfDef $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMfDefResponse
      */
-    public function addToMidocoMfDef(\Pggns\MidocoApi\Api\Crm\StructType\MidocoMfDef $item): self
+    public function addToMidocoMfDef(\Pggns\MidocoApi\Crm\StructType\MidocoMfDef $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoMfDef) {
-            throw new InvalidArgumentException(sprintf('The MidocoMfDef property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoMfDef, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoMfDef) {
+            throw new InvalidArgumentException(sprintf('The MidocoMfDef property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoMfDef, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMfDef[] = $item;
         

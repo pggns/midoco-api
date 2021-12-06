@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetATOLClassificationsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoATOLType
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\AtolTypeDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\AtolTypeDTO[]
      */
     protected ?array $MidocoATOLType = null;
     /**
      * Constructor method for GetATOLClassificationsResponse
      * @uses GetATOLClassificationsResponse::setMidocoATOLType()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AtolTypeDTO[] $midocoATOLType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AtolTypeDTO[] $midocoATOLType
      */
     public function __construct(?array $midocoATOLType = null)
     {
@@ -34,7 +34,7 @@ class GetATOLClassificationsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoATOLType value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AtolTypeDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AtolTypeDTO[]
      */
     public function getMidocoATOLType(): ?array
     {
@@ -55,12 +55,12 @@ class GetATOLClassificationsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getATOLClassificationsResponseMidocoATOLTypeItem) {
             // validation for constraint: itemType
-            if (!$getATOLClassificationsResponseMidocoATOLTypeItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\AtolTypeDTO) {
+            if (!$getATOLClassificationsResponseMidocoATOLTypeItem instanceof \Pggns\MidocoApi\Orderlists\StructType\AtolTypeDTO) {
                 $invalidValues[] = is_object($getATOLClassificationsResponseMidocoATOLTypeItem) ? get_class($getATOLClassificationsResponseMidocoATOLTypeItem) : sprintf('%s(%s)', gettype($getATOLClassificationsResponseMidocoATOLTypeItem), var_export($getATOLClassificationsResponseMidocoATOLTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoATOLType property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\AtolTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoATOLType property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\AtolTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetATOLClassificationsResponse extends AbstractStructBase
     /**
      * Set MidocoATOLType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AtolTypeDTO[] $midocoATOLType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetATOLClassificationsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AtolTypeDTO[] $midocoATOLType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetATOLClassificationsResponse
      */
     public function setMidocoATOLType(?array $midocoATOLType = null): self
     {
@@ -85,14 +85,14 @@ class GetATOLClassificationsResponse extends AbstractStructBase
     /**
      * Add item to MidocoATOLType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AtolTypeDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetATOLClassificationsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AtolTypeDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetATOLClassificationsResponse
      */
-    public function addToMidocoATOLType(\Pggns\MidocoApi\Api\Orderlists\StructType\AtolTypeDTO $item): self
+    public function addToMidocoATOLType(\Pggns\MidocoApi\Orderlists\StructType\AtolTypeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\AtolTypeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoATOLType property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\AtolTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\AtolTypeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoATOLType property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\AtolTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoATOLType[] = $item;
         

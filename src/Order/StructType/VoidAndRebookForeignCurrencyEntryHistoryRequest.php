@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -76,7 +76,7 @@ class VoidAndRebookForeignCurrencyEntryHistoryRequest extends AbstractStructBase
      * Set entryHistoryId value
      * @throws InvalidArgumentException
      * @param int[] $entryHistoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryRequest
      */
     public function setEntryHistoryId(?array $entryHistoryId = null): self
     {
@@ -92,7 +92,7 @@ class VoidAndRebookForeignCurrencyEntryHistoryRequest extends AbstractStructBase
      * Add item to entryHistoryId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryRequest
      */
     public function addToEntryHistoryId(int $item): self
     {
@@ -115,7 +115,7 @@ class VoidAndRebookForeignCurrencyEntryHistoryRequest extends AbstractStructBase
     /**
      * Set newInvoicedAmount value
      * @param float $newInvoicedAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidAndRebookForeignCurrencyEntryHistoryRequest
      */
     public function setNewInvoicedAmount(?float $newInvoicedAmount = null): self
     {

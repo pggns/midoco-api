@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSupplierMappingResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierMapping
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierMapping[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierMapping[]
      */
     protected ?array $MidocoSupplierMapping = null;
     /**
      * Constructor method for GetSupplierMappingResponse
      * @uses GetSupplierMappingResponse::setMidocoSupplierMapping()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierMapping[] $midocoSupplierMapping
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierMapping[] $midocoSupplierMapping
      */
     public function __construct(?array $midocoSupplierMapping = null)
     {
@@ -34,7 +34,7 @@ class GetSupplierMappingResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierMapping value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierMapping[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierMapping[]
      */
     public function getMidocoSupplierMapping(): ?array
     {
@@ -55,12 +55,12 @@ class GetSupplierMappingResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSupplierMappingResponseMidocoSupplierMappingItem) {
             // validation for constraint: itemType
-            if (!$getSupplierMappingResponseMidocoSupplierMappingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierMapping) {
+            if (!$getSupplierMappingResponseMidocoSupplierMappingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierMapping) {
                 $invalidValues[] = is_object($getSupplierMappingResponseMidocoSupplierMappingItem) ? get_class($getSupplierMappingResponseMidocoSupplierMappingItem) : sprintf('%s(%s)', gettype($getSupplierMappingResponseMidocoSupplierMappingItem), var_export($getSupplierMappingResponseMidocoSupplierMappingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierMapping property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierMapping, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierMapping property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierMapping, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSupplierMappingResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierMapping value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierMapping[] $midocoSupplierMapping
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSupplierMappingResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierMapping[] $midocoSupplierMapping
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSupplierMappingResponse
      */
     public function setMidocoSupplierMapping(?array $midocoSupplierMapping = null): self
     {
@@ -85,14 +85,14 @@ class GetSupplierMappingResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierMapping value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierMapping $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSupplierMappingResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierMapping $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSupplierMappingResponse
      */
-    public function addToMidocoSupplierMapping(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierMapping $item): self
+    public function addToMidocoSupplierMapping(\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierMapping $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierMapping) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierMapping property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierMapping, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierMapping) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierMapping property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierMapping, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierMapping[] = $item;
         

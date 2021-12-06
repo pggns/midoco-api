@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class TransactionSyncNumberDTO extends AbstractStructBase
     /**
      * Set posId value
      * @param string $posId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransactionSyncNumberDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransactionSyncNumberDTO
      */
     public function setPosId(?string $posId = null): self
     {
@@ -70,7 +70,7 @@ class TransactionSyncNumberDTO extends AbstractStructBase
     /**
      * Set syncNumber value
      * @param int $syncNumber
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransactionSyncNumberDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransactionSyncNumberDTO
      */
     public function setSyncNumber(?int $syncNumber = null): self
     {

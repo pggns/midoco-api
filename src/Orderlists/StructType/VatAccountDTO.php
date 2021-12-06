@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class VatAccountDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatAccountDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -86,7 +86,7 @@ class VatAccountDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatAccountDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -109,7 +109,7 @@ class VatAccountDTO extends AbstractStructBase
     /**
      * Set validUntil value
      * @param string $validUntil
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatAccountDTO
      */
     public function setValidUntil(?string $validUntil = null): self
     {
@@ -132,7 +132,7 @@ class VatAccountDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatAccountDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {

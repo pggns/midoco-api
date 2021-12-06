@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoListenerType extends AbstractStructBase
     /**
      * Set listener value
      * @param string $listener
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoListenerType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoListenerType
      */
     public function setListener(?string $listener = null): self
     {
@@ -70,7 +70,7 @@ class MidocoListenerType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoListenerType
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoListenerType
      */
     public function setDescription(?string $description = null): self
     {

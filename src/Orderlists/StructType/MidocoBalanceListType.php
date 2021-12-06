@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MidocoBalanceListType extends AbstractStructBase
     /**
      * Set bookingPeriod value
      * @param int $bookingPeriod
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType
      */
     public function setBookingPeriod(?int $bookingPeriod = null): self
     {
@@ -110,7 +110,7 @@ class MidocoBalanceListType extends AbstractStructBase
     /**
      * Set balanceSheetPosition value
      * @param string $balanceSheetPosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType
      */
     public function setBalanceSheetPosition(?string $balanceSheetPosition = null): self
     {
@@ -133,7 +133,7 @@ class MidocoBalanceListType extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -156,7 +156,7 @@ class MidocoBalanceListType extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -179,7 +179,7 @@ class MidocoBalanceListType extends AbstractStructBase
     /**
      * Set debitAmount value
      * @param float $debitAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType
      */
     public function setDebitAmount(?float $debitAmount = null): self
     {
@@ -202,7 +202,7 @@ class MidocoBalanceListType extends AbstractStructBase
     /**
      * Set creditAmount value
      * @param float $creditAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType
      */
     public function setCreditAmount(?float $creditAmount = null): self
     {
@@ -225,7 +225,7 @@ class MidocoBalanceListType extends AbstractStructBase
     /**
      * Set balance value
      * @param float $balance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType
      */
     public function setBalance(?float $balance = null): self
     {

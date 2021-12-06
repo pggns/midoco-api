@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class ExportAutomaticSettlementRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportAutomaticSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportAutomaticSettlementRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -72,7 +72,7 @@ class ExportAutomaticSettlementRequest extends AbstractStructBase
     /**
      * Set exportAs value
      * @param string $exportAs
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportAutomaticSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportAutomaticSettlementRequest
      */
     public function setExportAs(?string $exportAs = 'CSV'): self
     {

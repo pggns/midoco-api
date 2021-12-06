@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class UpdateGrantedProvisionForSellItemResponse extends AbstractStructBase
     /**
      * Set grantedProvision value
      * @param float $grantedProvision
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateGrantedProvisionForSellItemResponse
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateGrantedProvisionForSellItemResponse
      */
     public function setGrantedProvision(?float $grantedProvision = null): self
     {

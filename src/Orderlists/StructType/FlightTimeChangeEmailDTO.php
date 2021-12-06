@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class FlightTimeChangeEmailDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightTimeChangeEmailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightTimeChangeEmailDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -126,7 +126,7 @@ class FlightTimeChangeEmailDTO extends AbstractStructBase
     /**
      * Set emailId value
      * @param int $emailId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightTimeChangeEmailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightTimeChangeEmailDTO
      */
     public function setEmailId(?int $emailId = null): self
     {
@@ -149,7 +149,7 @@ class FlightTimeChangeEmailDTO extends AbstractStructBase
     /**
      * Set emailSender value
      * @param string $emailSender
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightTimeChangeEmailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightTimeChangeEmailDTO
      */
     public function setEmailSender(?string $emailSender = null): self
     {
@@ -172,7 +172,7 @@ class FlightTimeChangeEmailDTO extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightTimeChangeEmailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightTimeChangeEmailDTO
      */
     public function setOrgunit(?string $orgunit = null): self
     {
@@ -195,7 +195,7 @@ class FlightTimeChangeEmailDTO extends AbstractStructBase
     /**
      * Set receivedDate value
      * @param string $receivedDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightTimeChangeEmailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightTimeChangeEmailDTO
      */
     public function setReceivedDate(?string $receivedDate = null): self
     {
@@ -218,7 +218,7 @@ class FlightTimeChangeEmailDTO extends AbstractStructBase
     /**
      * Set status value
      * @param int $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightTimeChangeEmailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightTimeChangeEmailDTO
      */
     public function setStatus(?int $status = null): self
     {
@@ -241,7 +241,7 @@ class FlightTimeChangeEmailDTO extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightTimeChangeEmailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightTimeChangeEmailDTO
      */
     public function setSubject(?string $subject = null): self
     {
@@ -264,7 +264,7 @@ class FlightTimeChangeEmailDTO extends AbstractStructBase
     /**
      * Set workStartTime value
      * @param string $workStartTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightTimeChangeEmailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightTimeChangeEmailDTO
      */
     public function setWorkStartTime(?string $workStartTime = null): self
     {
@@ -287,7 +287,7 @@ class FlightTimeChangeEmailDTO extends AbstractStructBase
     /**
      * Set workingUser value
      * @param int $workingUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FlightTimeChangeEmailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FlightTimeChangeEmailDTO
      */
     public function setWorkingUser(?int $workingUser = null): self
     {

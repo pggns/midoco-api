@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class GetBillingDocumentForCustomerRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentForCustomerRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -86,7 +86,7 @@ class GetBillingDocumentForCustomerRequest extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentForCustomerRequest
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -109,7 +109,7 @@ class GetBillingDocumentForCustomerRequest extends AbstractStructBase
     /**
      * Set toDate value
      * @param string $toDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentForCustomerRequest
      */
     public function setToDate(?string $toDate = null): self
     {
@@ -132,7 +132,7 @@ class GetBillingDocumentForCustomerRequest extends AbstractStructBase
     /**
      * Set fromDate value
      * @param string $fromDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentForCustomerRequest
      */
     public function setFromDate(?string $fromDate = null): self
     {

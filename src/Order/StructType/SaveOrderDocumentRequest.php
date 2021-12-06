@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -22,17 +22,17 @@ class SaveOrderDocumentRequest extends AbstractStructBase
      * The MidocoOrderDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoOrderDocument
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument $MidocoOrderDocument = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $MidocoOrderDocument = null;
     /**
      * Constructor method for SaveOrderDocumentRequest
      * @uses SaveOrderDocumentRequest::setExecuteOrderWorkflow()
      * @uses SaveOrderDocumentRequest::setMidocoOrderDocument()
      * @param bool $executeOrderWorkflow
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument $midocoOrderDocument
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $midocoOrderDocument
      */
-    public function __construct(?bool $executeOrderWorkflow = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument $midocoOrderDocument = null)
+    public function __construct(?bool $executeOrderWorkflow = null, ?\Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $midocoOrderDocument = null)
     {
         $this
             ->setExecuteOrderWorkflow($executeOrderWorkflow)
@@ -49,7 +49,7 @@ class SaveOrderDocumentRequest extends AbstractStructBase
     /**
      * Set executeOrderWorkflow value
      * @param bool $executeOrderWorkflow
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderDocumentRequest
      */
     public function setExecuteOrderWorkflow(?bool $executeOrderWorkflow = null): self
     {
@@ -63,18 +63,18 @@ class SaveOrderDocumentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderDocument value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderDocument|null
      */
-    public function getMidocoOrderDocument(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument
+    public function getMidocoOrderDocument(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderDocument
     {
         return $this->MidocoOrderDocument;
     }
     /**
      * Set MidocoOrderDocument value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument $midocoOrderDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderDocumentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $midocoOrderDocument
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderDocumentRequest
      */
-    public function setMidocoOrderDocument(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderDocument $midocoOrderDocument = null): self
+    public function setMidocoOrderDocument(?\Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $midocoOrderDocument = null): self
     {
         $this->MidocoOrderDocument = $midocoOrderDocument;
         

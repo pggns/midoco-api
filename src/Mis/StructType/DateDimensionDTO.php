@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class DateDimensionDTO extends AbstractStructBase
     /**
      * Set databaseDate value
      * @param string $databaseDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DateDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DateDimensionDTO
      */
     public function setDatabaseDate(?string $databaseDate = null): self
     {
@@ -126,7 +126,7 @@ class DateDimensionDTO extends AbstractStructBase
     /**
      * Set dateId value
      * @param int $dateId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DateDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DateDimensionDTO
      */
     public function setDateId(?int $dateId = null): self
     {
@@ -149,7 +149,7 @@ class DateDimensionDTO extends AbstractStructBase
     /**
      * Set dayNoInMonth value
      * @param int $dayNoInMonth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DateDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DateDimensionDTO
      */
     public function setDayNoInMonth(?int $dayNoInMonth = null): self
     {
@@ -172,7 +172,7 @@ class DateDimensionDTO extends AbstractStructBase
     /**
      * Set dayOfWeek value
      * @param string $dayOfWeek
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DateDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DateDimensionDTO
      */
     public function setDayOfWeek(?string $dayOfWeek = null): self
     {
@@ -195,7 +195,7 @@ class DateDimensionDTO extends AbstractStructBase
     /**
      * Set month value
      * @param int $month
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DateDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DateDimensionDTO
      */
     public function setMonth(?int $month = null): self
     {
@@ -218,7 +218,7 @@ class DateDimensionDTO extends AbstractStructBase
     /**
      * Set quarter value
      * @param int $quarter
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DateDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DateDimensionDTO
      */
     public function setQuarter(?int $quarter = null): self
     {
@@ -241,7 +241,7 @@ class DateDimensionDTO extends AbstractStructBase
     /**
      * Set weekNoInYear value
      * @param int $weekNoInYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DateDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DateDimensionDTO
      */
     public function setWeekNoInYear(?int $weekNoInYear = null): self
     {
@@ -264,7 +264,7 @@ class DateDimensionDTO extends AbstractStructBase
     /**
      * Set weekend value
      * @param bool $weekend
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DateDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DateDimensionDTO
      */
     public function setWeekend(?bool $weekend = null): self
     {
@@ -287,7 +287,7 @@ class DateDimensionDTO extends AbstractStructBase
     /**
      * Set year value
      * @param int $year
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DateDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DateDimensionDTO
      */
     public function setYear(?int $year = null): self
     {

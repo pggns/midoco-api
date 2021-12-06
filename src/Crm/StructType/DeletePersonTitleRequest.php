@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class DeletePersonTitleRequest extends AbstractStructBase
     /**
      * Set titleId value
      * @param int $titleId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeletePersonTitleRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeletePersonTitleRequest
      */
     public function setTitleId(?int $titleId = null): self
     {

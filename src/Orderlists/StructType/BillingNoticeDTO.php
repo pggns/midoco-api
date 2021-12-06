@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -191,7 +191,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set asTask value
      * @param bool $asTask
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setAsTask(?bool $asTask = null): self
     {
@@ -214,7 +214,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set creationOrgunit value
      * @param string $creationOrgunit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setCreationOrgunit(?string $creationOrgunit = null): self
     {
@@ -237,7 +237,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -260,7 +260,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -283,7 +283,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set delegationOrgunit value
      * @param string $delegationOrgunit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setDelegationOrgunit(?string $delegationOrgunit = null): self
     {
@@ -306,7 +306,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set delegationQueue value
      * @param string $delegationQueue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setDelegationQueue(?string $delegationQueue = null): self
     {
@@ -329,7 +329,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set delegationUser value
      * @param int $delegationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setDelegationUser(?int $delegationUser = null): self
     {
@@ -352,7 +352,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -375,7 +375,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -398,7 +398,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set finishTimestamp value
      * @param string $finishTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setFinishTimestamp(?string $finishTimestamp = null): self
     {
@@ -421,7 +421,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set finishUser value
      * @param int $finishUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setFinishUser(?int $finishUser = null): self
     {
@@ -444,7 +444,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set finished value
      * @param bool $finished
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setFinished(?bool $finished = null): self
     {
@@ -467,7 +467,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set isSpecialCustomer value
      * @param bool $isSpecialCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setIsSpecialCustomer(?bool $isSpecialCustomer = null): self
     {
@@ -490,7 +490,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -513,7 +513,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -536,7 +536,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set notice value
      * @param string $notice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setNotice(?string $notice = null): self
     {
@@ -559,7 +559,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -582,7 +582,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set priority value
      * @param int $priority
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setPriority(?int $priority = null): self
     {
@@ -605,7 +605,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set startTime value
      * @param string $startTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setStartTime(?string $startTime = null): self
     {
@@ -628,7 +628,7 @@ class BillingNoticeDTO extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingNoticeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
      */
     public function setTaskType(?string $taskType = null): self
     {

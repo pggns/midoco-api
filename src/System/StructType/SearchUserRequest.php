@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class SearchUserRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoUser
-     * @var \Pggns\MidocoApi\Api\System\StructType\MidocoUser|null
+     * @var \Pggns\MidocoApi\System\StructType\MidocoUser|null
      */
-    protected ?\Pggns\MidocoApi\Api\System\StructType\MidocoUser $MidocoUser = null;
+    protected ?\Pggns\MidocoApi\System\StructType\MidocoUser $MidocoUser = null;
     /**
      * The unitName
      * Meta information extracted from the WSDL
@@ -67,14 +67,14 @@ class SearchUserRequest extends AbstractStructBase
      * @uses SearchUserRequest::setCrsExpedient()
      * @uses SearchUserRequest::setCrsExpedientText()
      * @uses SearchUserRequest::setUserAttribute()
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoUser $midocoUser
+     * @param \Pggns\MidocoApi\System\StructType\MidocoUser $midocoUser
      * @param string[] $unitName
      * @param int[] $roleId
      * @param string[] $crsExpedient
      * @param string $crsExpedientText
      * @param string $userAttribute
      */
-    public function __construct(?\Pggns\MidocoApi\Api\System\StructType\MidocoUser $midocoUser = null, ?array $unitName = null, ?array $roleId = null, ?array $crsExpedient = null, ?string $crsExpedientText = null, ?string $userAttribute = null)
+    public function __construct(?\Pggns\MidocoApi\System\StructType\MidocoUser $midocoUser = null, ?array $unitName = null, ?array $roleId = null, ?array $crsExpedient = null, ?string $crsExpedientText = null, ?string $userAttribute = null)
     {
         $this
             ->setMidocoUser($midocoUser)
@@ -86,18 +86,18 @@ class SearchUserRequest extends AbstractStructBase
     }
     /**
      * Get MidocoUser value
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoUser|null
+     * @return \Pggns\MidocoApi\System\StructType\MidocoUser|null
      */
-    public function getMidocoUser(): ?\Pggns\MidocoApi\Api\System\StructType\MidocoUser
+    public function getMidocoUser(): ?\Pggns\MidocoApi\System\StructType\MidocoUser
     {
         return $this->MidocoUser;
     }
     /**
      * Set MidocoUser value
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoUser $midocoUser
-     * @return \Pggns\MidocoApi\Api\System\StructType\SearchUserRequest
+     * @param \Pggns\MidocoApi\System\StructType\MidocoUser $midocoUser
+     * @return \Pggns\MidocoApi\System\StructType\SearchUserRequest
      */
-    public function setMidocoUser(?\Pggns\MidocoApi\Api\System\StructType\MidocoUser $midocoUser = null): self
+    public function setMidocoUser(?\Pggns\MidocoApi\System\StructType\MidocoUser $midocoUser = null): self
     {
         $this->MidocoUser = $midocoUser;
         
@@ -141,7 +141,7 @@ class SearchUserRequest extends AbstractStructBase
      * Set unitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\SearchUserRequest
+     * @return \Pggns\MidocoApi\System\StructType\SearchUserRequest
      */
     public function setUnitName(?array $unitName = null): self
     {
@@ -157,7 +157,7 @@ class SearchUserRequest extends AbstractStructBase
      * Add item to unitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\SearchUserRequest
+     * @return \Pggns\MidocoApi\System\StructType\SearchUserRequest
      */
     public function addToUnitName(string $item): self
     {
@@ -207,7 +207,7 @@ class SearchUserRequest extends AbstractStructBase
      * Set roleId value
      * @throws InvalidArgumentException
      * @param int[] $roleId
-     * @return \Pggns\MidocoApi\Api\System\StructType\SearchUserRequest
+     * @return \Pggns\MidocoApi\System\StructType\SearchUserRequest
      */
     public function setRoleId(?array $roleId = null): self
     {
@@ -223,7 +223,7 @@ class SearchUserRequest extends AbstractStructBase
      * Add item to roleId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\SearchUserRequest
+     * @return \Pggns\MidocoApi\System\StructType\SearchUserRequest
      */
     public function addToRoleId(int $item): self
     {
@@ -273,7 +273,7 @@ class SearchUserRequest extends AbstractStructBase
      * Set crsExpedient value
      * @throws InvalidArgumentException
      * @param string[] $crsExpedient
-     * @return \Pggns\MidocoApi\Api\System\StructType\SearchUserRequest
+     * @return \Pggns\MidocoApi\System\StructType\SearchUserRequest
      */
     public function setCrsExpedient(?array $crsExpedient = null): self
     {
@@ -289,7 +289,7 @@ class SearchUserRequest extends AbstractStructBase
      * Add item to crsExpedient value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\SearchUserRequest
+     * @return \Pggns\MidocoApi\System\StructType\SearchUserRequest
      */
     public function addToCrsExpedient(string $item): self
     {
@@ -312,7 +312,7 @@ class SearchUserRequest extends AbstractStructBase
     /**
      * Set crsExpedientText value
      * @param string $crsExpedientText
-     * @return \Pggns\MidocoApi\Api\System\StructType\SearchUserRequest
+     * @return \Pggns\MidocoApi\System\StructType\SearchUserRequest
      */
     public function setCrsExpedientText(?string $crsExpedientText = null): self
     {
@@ -335,7 +335,7 @@ class SearchUserRequest extends AbstractStructBase
     /**
      * Set userAttribute value
      * @param string $userAttribute
-     * @return \Pggns\MidocoApi\Api\System\StructType\SearchUserRequest
+     * @return \Pggns\MidocoApi\System\StructType\SearchUserRequest
      */
     public function setUserAttribute(?string $userAttribute = null): self
     {

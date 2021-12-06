@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Refresh extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Refresh
+     * @return \Pggns\MidocoApi\Order\ServiceType\Refresh
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Refresh extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\RefreshYpsilonPnrRequest $paramRefreshYpsilonPnrRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RefreshYpsilonPnrResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\RefreshYpsilonPnrRequest $paramRefreshYpsilonPnrRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RefreshYpsilonPnrResponse|bool
      */
-    public function refreshYpsilonPnr(\Pggns\MidocoApi\Api\Order\StructType\RefreshYpsilonPnrRequest $paramRefreshYpsilonPnrRequest)
+    public function refreshYpsilonPnr(\Pggns\MidocoApi\Order\StructType\RefreshYpsilonPnrRequest $paramRefreshYpsilonPnrRequest)
     {
         try {
             $this->setResult($resultRefreshYpsilonPnr = $this->getSoapClient()->__soapCall('refreshYpsilonPnr', [
@@ -58,15 +58,15 @@ class Refresh extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\RefreshDefaultFeesRequest $paramRefreshDefaultFeesRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RefreshDefaultFeesResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\RefreshDefaultFeesRequest $paramRefreshDefaultFeesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RefreshDefaultFeesResponse|bool
      */
-    public function refreshDefaultFees(\Pggns\MidocoApi\Api\Order\StructType\RefreshDefaultFeesRequest $paramRefreshDefaultFeesRequest)
+    public function refreshDefaultFees(\Pggns\MidocoApi\Order\StructType\RefreshDefaultFeesRequest $paramRefreshDefaultFeesRequest)
     {
         try {
             $this->setResult($resultRefreshDefaultFees = $this->getSoapClient()->__soapCall('refreshDefaultFees', [
@@ -83,7 +83,7 @@ class Refresh extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RefreshDefaultFeesResponse|\Pggns\MidocoApi\Api\Order\StructType\RefreshYpsilonPnrResponse
+     * @return \Pggns\MidocoApi\Order\StructType\RefreshDefaultFeesResponse|\Pggns\MidocoApi\Order\StructType\RefreshYpsilonPnrResponse
      */
     public function getResult()
     {

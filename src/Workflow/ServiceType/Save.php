@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\ServiceType;
+namespace Pggns\MidocoApi\Workflow\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Save extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Workflow\ServiceType\Save
+     * @return \Pggns\MidocoApi\Workflow\ServiceType\Save
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveTaskRequest $paramSaveTaskRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveTaskResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveTaskRequest $paramSaveTaskRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveTaskResponse|bool
      */
-    public function saveTask(\Pggns\MidocoApi\Api\Workflow\StructType\SaveTaskRequest $paramSaveTaskRequest)
+    public function saveTask(\Pggns\MidocoApi\Workflow\StructType\SaveTaskRequest $paramSaveTaskRequest)
     {
         try {
             $this->setResult($resultSaveTask = $this->getSoapClient()->__soapCall('saveTask', [
@@ -58,15 +58,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveGlobalNoticesRequest $paramSaveGlobalNoticesRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveGlobalNoticesResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveGlobalNoticesRequest $paramSaveGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveGlobalNoticesResponse|bool
      */
-    public function saveGlobalNotices(\Pggns\MidocoApi\Api\Workflow\StructType\SaveGlobalNoticesRequest $paramSaveGlobalNoticesRequest)
+    public function saveGlobalNotices(\Pggns\MidocoApi\Workflow\StructType\SaveGlobalNoticesRequest $paramSaveGlobalNoticesRequest)
     {
         try {
             $this->setResult($resultSaveGlobalNotices = $this->getSoapClient()->__soapCall('saveGlobalNotices', [
@@ -85,15 +85,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveGlobalNoticeCommentRequest $paramSaveGlobalNoticeCommentRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveGlobalNoticeCommentResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveGlobalNoticeCommentRequest $paramSaveGlobalNoticeCommentRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveGlobalNoticeCommentResponse|bool
      */
-    public function saveGlobalNoticeComment(\Pggns\MidocoApi\Api\Workflow\StructType\SaveGlobalNoticeCommentRequest $paramSaveGlobalNoticeCommentRequest)
+    public function saveGlobalNoticeComment(\Pggns\MidocoApi\Workflow\StructType\SaveGlobalNoticeCommentRequest $paramSaveGlobalNoticeCommentRequest)
     {
         try {
             $this->setResult($resultSaveGlobalNoticeComment = $this->getSoapClient()->__soapCall('saveGlobalNoticeComment', [
@@ -112,15 +112,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskDefinitionRequest $paramSaveMidocoTaskDefinitionRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskDefinitionResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskDefinitionRequest $paramSaveMidocoTaskDefinitionRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskDefinitionResponse|bool
      */
-    public function saveMidocoTaskDefinition(\Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskDefinitionRequest $paramSaveMidocoTaskDefinitionRequest)
+    public function saveMidocoTaskDefinition(\Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskDefinitionRequest $paramSaveMidocoTaskDefinitionRequest)
     {
         try {
             $this->setResult($resultSaveMidocoTaskDefinition = $this->getSoapClient()->__soapCall('saveMidocoTaskDefinition', [
@@ -139,15 +139,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskPriorityRequest $paramSaveMidocoTaskPriorityRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskPriorityResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskPriorityRequest $paramSaveMidocoTaskPriorityRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskPriorityResponse|bool
      */
-    public function saveMidocoTaskPriority(\Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskPriorityRequest $paramSaveMidocoTaskPriorityRequest)
+    public function saveMidocoTaskPriority(\Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskPriorityRequest $paramSaveMidocoTaskPriorityRequest)
     {
         try {
             $this->setResult($resultSaveMidocoTaskPriority = $this->getSoapClient()->__soapCall('saveMidocoTaskPriority', [
@@ -167,15 +167,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskDefinitionDescriptionRequest $paramSaveMidocoTaskDefinitionDescriptionRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskDefinitionDescriptionResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskDefinitionDescriptionRequest $paramSaveMidocoTaskDefinitionDescriptionRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskDefinitionDescriptionResponse|bool
      */
-    public function saveMidocoTaskDefinitionDescription(\Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskDefinitionDescriptionRequest $paramSaveMidocoTaskDefinitionDescriptionRequest)
+    public function saveMidocoTaskDefinitionDescription(\Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskDefinitionDescriptionRequest $paramSaveMidocoTaskDefinitionDescriptionRequest)
     {
         try {
             $this->setResult($resultSaveMidocoTaskDefinitionDescription = $this->getSoapClient()->__soapCall('saveMidocoTaskDefinitionDescription', [
@@ -194,15 +194,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveWorkingUserRequest $paramSaveWorkingUserRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveWorkingUserResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveWorkingUserRequest $paramSaveWorkingUserRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveWorkingUserResponse|bool
      */
-    public function saveWorkingUser(\Pggns\MidocoApi\Api\Workflow\StructType\SaveWorkingUserRequest $paramSaveWorkingUserRequest)
+    public function saveWorkingUser(\Pggns\MidocoApi\Workflow\StructType\SaveWorkingUserRequest $paramSaveWorkingUserRequest)
     {
         try {
             $this->setResult($resultSaveWorkingUser = $this->getSoapClient()->__soapCall('saveWorkingUser', [
@@ -221,15 +221,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleDefinitionRequest $paramSaveRuleDefinitionRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleDefinitionResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveRuleDefinitionRequest $paramSaveRuleDefinitionRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveRuleDefinitionResponse|bool
      */
-    public function saveRuleDefinition(\Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleDefinitionRequest $paramSaveRuleDefinitionRequest)
+    public function saveRuleDefinition(\Pggns\MidocoApi\Workflow\StructType\SaveRuleDefinitionRequest $paramSaveRuleDefinitionRequest)
     {
         try {
             $this->setResult($resultSaveRuleDefinition = $this->getSoapClient()->__soapCall('saveRuleDefinition', [
@@ -248,15 +248,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaOrderRequest $paramSaveRuleCriteriaOrderRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaOrderResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaOrderRequest $paramSaveRuleCriteriaOrderRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaOrderResponse|bool
      */
-    public function saveRuleCriteriaOrder(\Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaOrderRequest $paramSaveRuleCriteriaOrderRequest)
+    public function saveRuleCriteriaOrder(\Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaOrderRequest $paramSaveRuleCriteriaOrderRequest)
     {
         try {
             $this->setResult($resultSaveRuleCriteriaOrder = $this->getSoapClient()->__soapCall('saveRuleCriteriaOrder', [
@@ -275,15 +275,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaCrmAttributeRequest $paramSaveRuleCriteriaCrmAttributeRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaCrmAttributeResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaCrmAttributeRequest $paramSaveRuleCriteriaCrmAttributeRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaCrmAttributeResponse|bool
      */
-    public function saveRuleCriteriaCrmAttribute(\Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaCrmAttributeRequest $paramSaveRuleCriteriaCrmAttributeRequest)
+    public function saveRuleCriteriaCrmAttribute(\Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaCrmAttributeRequest $paramSaveRuleCriteriaCrmAttributeRequest)
     {
         try {
             $this->setResult($resultSaveRuleCriteriaCrmAttribute = $this->getSoapClient()->__soapCall('saveRuleCriteriaCrmAttribute', [
@@ -302,15 +302,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaCrmRequest $paramSaveRuleCriteriaCrmRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaCrmResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaCrmRequest $paramSaveRuleCriteriaCrmRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaCrmResponse|bool
      */
-    public function saveRuleCriteriaCrm(\Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaCrmRequest $paramSaveRuleCriteriaCrmRequest)
+    public function saveRuleCriteriaCrm(\Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaCrmRequest $paramSaveRuleCriteriaCrmRequest)
     {
         try {
             $this->setResult($resultSaveRuleCriteriaCrm = $this->getSoapClient()->__soapCall('saveRuleCriteriaCrm', [
@@ -329,15 +329,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaOrderAttributeRequest $paramSaveRuleCriteriaOrderAttributeRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaOrderAttributeResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaOrderAttributeRequest $paramSaveRuleCriteriaOrderAttributeRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaOrderAttributeResponse|bool
      */
-    public function saveRuleCriteriaOrderAttribute(\Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaOrderAttributeRequest $paramSaveRuleCriteriaOrderAttributeRequest)
+    public function saveRuleCriteriaOrderAttribute(\Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaOrderAttributeRequest $paramSaveRuleCriteriaOrderAttributeRequest)
     {
         try {
             $this->setResult($resultSaveRuleCriteriaOrderAttribute = $this->getSoapClient()->__soapCall('saveRuleCriteriaOrderAttribute', [
@@ -356,15 +356,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveMyTaskViewsRequest $paramSaveMyTaskViewsRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveMyTaskViewsResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveMyTaskViewsRequest $paramSaveMyTaskViewsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveMyTaskViewsResponse|bool
      */
-    public function saveMyTaskViews(\Pggns\MidocoApi\Api\Workflow\StructType\SaveMyTaskViewsRequest $paramSaveMyTaskViewsRequest)
+    public function saveMyTaskViews(\Pggns\MidocoApi\Workflow\StructType\SaveMyTaskViewsRequest $paramSaveMyTaskViewsRequest)
     {
         try {
             $this->setResult($resultSaveMyTaskViews = $this->getSoapClient()->__soapCall('saveMyTaskViews', [
@@ -383,15 +383,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveMyTaskViewQueuesRequest $paramSaveMyTaskViewQueuesRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveMyTaskViewQueuesResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveMyTaskViewQueuesRequest $paramSaveMyTaskViewQueuesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveMyTaskViewQueuesResponse|bool
      */
-    public function saveMyTaskViewQueues(\Pggns\MidocoApi\Api\Workflow\StructType\SaveMyTaskViewQueuesRequest $paramSaveMyTaskViewQueuesRequest)
+    public function saveMyTaskViewQueues(\Pggns\MidocoApi\Workflow\StructType\SaveMyTaskViewQueuesRequest $paramSaveMyTaskViewQueuesRequest)
     {
         try {
             $this->setResult($resultSaveMyTaskViewQueues = $this->getSoapClient()->__soapCall('saveMyTaskViewQueues', [
@@ -410,15 +410,15 @@ class Save extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\SaveMyTaskViewUnitsRequest $paramSaveMyTaskViewUnitsRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveMyTaskViewUnitsResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\SaveMyTaskViewUnitsRequest $paramSaveMyTaskViewUnitsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveMyTaskViewUnitsResponse|bool
      */
-    public function saveMyTaskViewUnits(\Pggns\MidocoApi\Api\Workflow\StructType\SaveMyTaskViewUnitsRequest $paramSaveMyTaskViewUnitsRequest)
+    public function saveMyTaskViewUnits(\Pggns\MidocoApi\Workflow\StructType\SaveMyTaskViewUnitsRequest $paramSaveMyTaskViewUnitsRequest)
     {
         try {
             $this->setResult($resultSaveMyTaskViewUnits = $this->getSoapClient()->__soapCall('saveMyTaskViewUnits', [
@@ -435,7 +435,7 @@ class Save extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveGlobalNoticeCommentResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveGlobalNoticesResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskDefinitionDescriptionResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskDefinitionResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskPriorityResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveMyTaskViewQueuesResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveMyTaskViewsResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveMyTaskViewUnitsResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaCrmAttributeResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaCrmResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaOrderAttributeResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleCriteriaOrderResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveRuleDefinitionResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveTaskResponse|\Pggns\MidocoApi\Api\Workflow\StructType\SaveWorkingUserResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveGlobalNoticeCommentResponse|\Pggns\MidocoApi\Workflow\StructType\SaveGlobalNoticesResponse|\Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskDefinitionDescriptionResponse|\Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskDefinitionResponse|\Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskPriorityResponse|\Pggns\MidocoApi\Workflow\StructType\SaveMyTaskViewQueuesResponse|\Pggns\MidocoApi\Workflow\StructType\SaveMyTaskViewsResponse|\Pggns\MidocoApi\Workflow\StructType\SaveMyTaskViewUnitsResponse|\Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaCrmAttributeResponse|\Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaCrmResponse|\Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaOrderAttributeResponse|\Pggns\MidocoApi\Workflow\StructType\SaveRuleCriteriaOrderResponse|\Pggns\MidocoApi\Workflow\StructType\SaveRuleDefinitionResponse|\Pggns\MidocoApi\Workflow\StructType\SaveTaskResponse|\Pggns\MidocoApi\Workflow\StructType\SaveWorkingUserResponse
      */
     public function getResult()
     {

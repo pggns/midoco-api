@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class PaymentAccrualSearchCriteria extends AbstractStructBase
     /**
      * Set accountFrom value
      * @param string $accountFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentAccrualSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentAccrualSearchCriteria
      */
     public function setAccountFrom(?string $accountFrom = null): self
     {
@@ -150,7 +150,7 @@ class PaymentAccrualSearchCriteria extends AbstractStructBase
     /**
      * Set accountTo value
      * @param string $accountTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentAccrualSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentAccrualSearchCriteria
      */
     public function setAccountTo(?string $accountTo = null): self
     {
@@ -173,7 +173,7 @@ class PaymentAccrualSearchCriteria extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentAccrualSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentAccrualSearchCriteria
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -196,7 +196,7 @@ class PaymentAccrualSearchCriteria extends AbstractStructBase
     /**
      * Set entryId value
      * @param string $entryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentAccrualSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentAccrualSearchCriteria
      */
     public function setEntryId(?string $entryId = null): self
     {
@@ -219,7 +219,7 @@ class PaymentAccrualSearchCriteria extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentAccrualSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentAccrualSearchCriteria
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -242,7 +242,7 @@ class PaymentAccrualSearchCriteria extends AbstractStructBase
     /**
      * Set travelDateFrom value
      * @param string $travelDateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentAccrualSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentAccrualSearchCriteria
      */
     public function setTravelDateFrom(?string $travelDateFrom = null): self
     {
@@ -265,7 +265,7 @@ class PaymentAccrualSearchCriteria extends AbstractStructBase
     /**
      * Set travelDateTo value
      * @param string $travelDateTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentAccrualSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentAccrualSearchCriteria
      */
     public function setTravelDateTo(?string $travelDateTo = null): self
     {
@@ -288,7 +288,7 @@ class PaymentAccrualSearchCriteria extends AbstractStructBase
     /**
      * Set bookingPeriodFrom value
      * @param int $bookingPeriodFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentAccrualSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentAccrualSearchCriteria
      */
     public function setBookingPeriodFrom(?int $bookingPeriodFrom = null): self
     {
@@ -311,7 +311,7 @@ class PaymentAccrualSearchCriteria extends AbstractStructBase
     /**
      * Set bookingPeriodTo value
      * @param int $bookingPeriodTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentAccrualSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentAccrualSearchCriteria
      */
     public function setBookingPeriodTo(?int $bookingPeriodTo = null): self
     {
@@ -334,7 +334,7 @@ class PaymentAccrualSearchCriteria extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentAccrualSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentAccrualSearchCriteria
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -357,7 +357,7 @@ class PaymentAccrualSearchCriteria extends AbstractStructBase
     /**
      * Set filterAutomaticValues value
      * @param bool $filterAutomaticValues
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentAccrualSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentAccrualSearchCriteria
      */
     public function setFilterAutomaticValues(?bool $filterAutomaticValues = null): self
     {
@@ -380,7 +380,7 @@ class PaymentAccrualSearchCriteria extends AbstractStructBase
     /**
      * Set filterBalancedPositions value
      * @param bool $filterBalancedPositions
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentAccrualSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentAccrualSearchCriteria
      */
     public function setFilterBalancedPositions(?bool $filterBalancedPositions = null): self
     {

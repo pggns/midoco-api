@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class TemplateTypeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TemplateTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TemplateTypeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -70,7 +70,7 @@ class TemplateTypeDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TemplateTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TemplateTypeDTO
      */
     public function setType(?string $type = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class DbiDefinitionHistoryDTO extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -118,7 +118,7 @@ class DbiDefinitionHistoryDTO extends AbstractStructBase
     /**
      * Set dbiDefinitionHistoryId value
      * @param int $dbiDefinitionHistoryId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
      */
     public function setDbiDefinitionHistoryId(?int $dbiDefinitionHistoryId = null): self
     {
@@ -141,7 +141,7 @@ class DbiDefinitionHistoryDTO extends AbstractStructBase
     /**
      * Set modifyKey value
      * @param string $modifyKey
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
      */
     public function setModifyKey(?string $modifyKey = null): self
     {
@@ -164,7 +164,7 @@ class DbiDefinitionHistoryDTO extends AbstractStructBase
     /**
      * Set modifySubKey value
      * @param string $modifySubKey
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
      */
     public function setModifySubKey(?string $modifySubKey = null): self
     {
@@ -187,7 +187,7 @@ class DbiDefinitionHistoryDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -210,7 +210,7 @@ class DbiDefinitionHistoryDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -233,7 +233,7 @@ class DbiDefinitionHistoryDTO extends AbstractStructBase
     /**
      * Set modifyValue value
      * @param string $modifyValue
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
      */
     public function setModifyValue(?string $modifyValue = null): self
     {
@@ -256,7 +256,7 @@ class DbiDefinitionHistoryDTO extends AbstractStructBase
     /**
      * Set oldValue value
      * @param string $oldValue
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefinitionHistoryDTO
      */
     public function setOldValue(?string $oldValue = null): self
     {

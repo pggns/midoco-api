@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class SuppAAssignChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppAAssignChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppAAssignChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -110,7 +110,7 @@ class SuppAAssignChangeLogDTO extends AbstractStructBase
     /**
      * Set destinationKey value
      * @param string $destinationKey
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppAAssignChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppAAssignChangeLogDTO
      */
     public function setDestinationKey(?string $destinationKey = null): self
     {
@@ -133,7 +133,7 @@ class SuppAAssignChangeLogDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppAAssignChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppAAssignChangeLogDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -156,7 +156,7 @@ class SuppAAssignChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppAAssignChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppAAssignChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -179,7 +179,7 @@ class SuppAAssignChangeLogDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppAAssignChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppAAssignChangeLogDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -202,7 +202,7 @@ class SuppAAssignChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppAAssignChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppAAssignChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {
@@ -225,7 +225,7 @@ class SuppAAssignChangeLogDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppAAssignChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppAAssignChangeLogDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

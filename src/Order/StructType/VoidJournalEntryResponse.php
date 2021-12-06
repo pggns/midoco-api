@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class VoidJournalEntryResponse extends AbstractStructBase
     /**
      * Set journal_id value
      * @param int $journal_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidJournalEntryResponse
+     * @return \Pggns\MidocoApi\Order\StructType\VoidJournalEntryResponse
      */
     public function setJournal_id(?int $journal_id = null): self
     {

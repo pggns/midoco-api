@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -166,7 +166,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -189,7 +189,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set surname value
      * @param string $surname
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setSurname(?string $surname = null): self
     {
@@ -212,7 +212,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setForename(?string $forename = null): self
     {
@@ -235,7 +235,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -258,7 +258,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set documentNo value
      * @param int $documentNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setDocumentNo(?int $documentNo = null): self
     {
@@ -281,7 +281,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -304,7 +304,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -327,7 +327,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set printDate value
      * @param string $printDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setPrintDate(?string $printDate = null): self
     {
@@ -350,7 +350,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -373,7 +373,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -396,7 +396,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -419,7 +419,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -442,7 +442,7 @@ class MidocoCollectiveBillingCriteria extends AbstractStructBase
     /**
      * Set printingUser value
      * @param int $printingUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBillingCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBillingCriteria
      */
     public function setPrintingUser(?int $printingUser = null): self
     {

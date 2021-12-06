@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetTemplateLanguagesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmTemplateLanguage
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO[]
      */
     protected ?array $MidocoCrmTemplateLanguage = null;
     /**
      * Constructor method for GetTemplateLanguagesResponse
      * @uses GetTemplateLanguagesResponse::setMidocoCrmTemplateLanguage()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO[] $midocoCrmTemplateLanguage
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO[] $midocoCrmTemplateLanguage
      */
     public function __construct(?array $midocoCrmTemplateLanguage = null)
     {
@@ -36,7 +36,7 @@ class GetTemplateLanguagesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmTemplateLanguage value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO[]
      */
     public function getMidocoCrmTemplateLanguage(): ?array
     {
@@ -57,12 +57,12 @@ class GetTemplateLanguagesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTemplateLanguagesResponseMidocoCrmTemplateLanguageItem) {
             // validation for constraint: itemType
-            if (!$getTemplateLanguagesResponseMidocoCrmTemplateLanguageItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO) {
+            if (!$getTemplateLanguagesResponseMidocoCrmTemplateLanguageItem instanceof \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO) {
                 $invalidValues[] = is_object($getTemplateLanguagesResponseMidocoCrmTemplateLanguageItem) ? get_class($getTemplateLanguagesResponseMidocoCrmTemplateLanguageItem) : sprintf('%s(%s)', gettype($getTemplateLanguagesResponseMidocoCrmTemplateLanguageItem), var_export($getTemplateLanguagesResponseMidocoCrmTemplateLanguageItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmTemplateLanguage property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmTemplateLanguage property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetTemplateLanguagesResponse extends AbstractStructBase
     /**
      * Set MidocoCrmTemplateLanguage value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO[] $midocoCrmTemplateLanguage
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTemplateLanguagesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO[] $midocoCrmTemplateLanguage
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTemplateLanguagesResponse
      */
     public function setMidocoCrmTemplateLanguage(?array $midocoCrmTemplateLanguage = null): self
     {
@@ -87,14 +87,14 @@ class GetTemplateLanguagesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmTemplateLanguage value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTemplateLanguagesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTemplateLanguagesResponse
      */
-    public function addToMidocoCrmTemplateLanguage(\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO $item): self
+    public function addToMidocoCrmTemplateLanguage(\Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmTemplateLanguage property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateLanguageDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmTemplateLanguage property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmTemplateLanguageDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmTemplateLanguage[] = $item;
         

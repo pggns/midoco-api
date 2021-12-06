@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteFeeGroupRequest extends AbstractStructBase
     /**
      * Set feeGroupId value
      * @param int $feeGroupId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteFeeGroupRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteFeeGroupRequest
      */
     public function setFeeGroupId(?int $feeGroupId = null): self
     {

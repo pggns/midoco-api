@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetOrderLockPeriodRequest extends AbstractStructBase
      * The MidocoOrderLockPeriod
      * Meta information extracted from the WSDL
      * - ref: MidocoOrderLockPeriod
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod $MidocoOrderLockPeriod = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod $MidocoOrderLockPeriod = null;
     /**
      * Constructor method for GetOrderLockPeriodRequest
      * @uses GetOrderLockPeriodRequest::setMidocoOrderLockPeriod()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod $midocoOrderLockPeriod
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod $midocoOrderLockPeriod
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod $midocoOrderLockPeriod = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod $midocoOrderLockPeriod = null)
     {
         $this
             ->setMidocoOrderLockPeriod($midocoOrderLockPeriod);
     }
     /**
      * Get MidocoOrderLockPeriod value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod|null
      */
-    public function getMidocoOrderLockPeriod(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod
+    public function getMidocoOrderLockPeriod(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod
     {
         return $this->MidocoOrderLockPeriod;
     }
     /**
      * Set MidocoOrderLockPeriod value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod $midocoOrderLockPeriod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderLockPeriodRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod $midocoOrderLockPeriod
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderLockPeriodRequest
      */
-    public function setMidocoOrderLockPeriod(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod $midocoOrderLockPeriod = null): self
+    public function setMidocoOrderLockPeriod(?\Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod $midocoOrderLockPeriod = null): self
     {
         $this->MidocoOrderLockPeriod = $midocoOrderLockPeriod;
         

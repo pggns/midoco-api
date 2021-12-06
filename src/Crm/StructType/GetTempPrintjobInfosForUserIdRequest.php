@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetTempPrintjobInfosForUserIdRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTempPrintjobInfosForUserIdRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTempPrintjobInfosForUserIdRequest
      */
     public function setUserId(?int $userId = null): self
     {

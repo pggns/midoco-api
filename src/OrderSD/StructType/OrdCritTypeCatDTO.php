@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class OrdCritTypeCatDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\OrdCritTypeCatDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\OrdCritTypeCatDTO
      */
     public function setCategoryId(?int $categoryId = null): self
     {
@@ -70,7 +70,7 @@ class OrdCritTypeCatDTO extends AbstractStructBase
     /**
      * Set guiPosition value
      * @param int $guiPosition
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\OrdCritTypeCatDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\OrdCritTypeCatDTO
      */
     public function setGuiPosition(?int $guiPosition = null): self
     {

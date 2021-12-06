@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class GetFeeTypeForOrgunitResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoFeeTypeOrgUnit
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeTypeOrgUnit[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeTypeOrgUnit[]
      */
     protected ?array $MidocoFeeTypeOrgUnit = null;
     /**
      * Constructor method for GetFeeTypeForOrgunitResponse
      * @uses GetFeeTypeForOrgunitResponse::setMidocoFeeTypeOrgUnit()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeTypeOrgUnit[] $midocoFeeTypeOrgUnit
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeTypeOrgUnit[] $midocoFeeTypeOrgUnit
      */
     public function __construct(?array $midocoFeeTypeOrgUnit = null)
     {
@@ -33,7 +33,7 @@ class GetFeeTypeForOrgunitResponse extends AbstractStructBase
     }
     /**
      * Get MidocoFeeTypeOrgUnit value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeTypeOrgUnit[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeTypeOrgUnit[]
      */
     public function getMidocoFeeTypeOrgUnit(): ?array
     {
@@ -54,12 +54,12 @@ class GetFeeTypeForOrgunitResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getFeeTypeForOrgunitResponseMidocoFeeTypeOrgUnitItem) {
             // validation for constraint: itemType
-            if (!$getFeeTypeForOrgunitResponseMidocoFeeTypeOrgUnitItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeTypeOrgUnit) {
+            if (!$getFeeTypeForOrgunitResponseMidocoFeeTypeOrgUnitItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeTypeOrgUnit) {
                 $invalidValues[] = is_object($getFeeTypeForOrgunitResponseMidocoFeeTypeOrgUnitItem) ? get_class($getFeeTypeForOrgunitResponseMidocoFeeTypeOrgUnitItem) : sprintf('%s(%s)', gettype($getFeeTypeForOrgunitResponseMidocoFeeTypeOrgUnitItem), var_export($getFeeTypeForOrgunitResponseMidocoFeeTypeOrgUnitItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFeeTypeOrgUnit property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeTypeOrgUnit, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFeeTypeOrgUnit property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeTypeOrgUnit, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class GetFeeTypeForOrgunitResponse extends AbstractStructBase
     /**
      * Set MidocoFeeTypeOrgUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeTypeOrgUnit[] $midocoFeeTypeOrgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetFeeTypeForOrgunitResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeTypeOrgUnit[] $midocoFeeTypeOrgUnit
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetFeeTypeForOrgunitResponse
      */
     public function setMidocoFeeTypeOrgUnit(?array $midocoFeeTypeOrgUnit = null): self
     {
@@ -84,14 +84,14 @@ class GetFeeTypeForOrgunitResponse extends AbstractStructBase
     /**
      * Add item to MidocoFeeTypeOrgUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeTypeOrgUnit $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetFeeTypeForOrgunitResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeTypeOrgUnit $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetFeeTypeForOrgunitResponse
      */
-    public function addToMidocoFeeTypeOrgUnit(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeTypeOrgUnit $item): self
+    public function addToMidocoFeeTypeOrgUnit(\Pggns\MidocoApi\Orderlists\StructType\MidocoFeeTypeOrgUnit $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeTypeOrgUnit) {
-            throw new InvalidArgumentException(sprintf('The MidocoFeeTypeOrgUnit property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeTypeOrgUnit, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeTypeOrgUnit) {
+            throw new InvalidArgumentException(sprintf('The MidocoFeeTypeOrgUnit property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeTypeOrgUnit, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFeeTypeOrgUnit[] = $item;
         

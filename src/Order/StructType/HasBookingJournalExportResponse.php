@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class HasBookingJournalExportResponse extends AbstractStructBase
     /**
      * Set hasExport value
      * @param bool $hasExport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\HasBookingJournalExportResponse
+     * @return \Pggns\MidocoApi\Order\StructType\HasBookingJournalExportResponse
      */
     public function setHasExport(?bool $hasExport = null): self
     {

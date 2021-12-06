@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoDocumentBinary extends AbstractStructBase
     /**
      * Set docName value
      * @param string $docName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoDocumentBinary
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoDocumentBinary
      */
     public function setDocName(?string $docName = null): self
     {
@@ -70,7 +70,7 @@ class MidocoDocumentBinary extends AbstractStructBase
     /**
      * Set docContent value
      * @param string $docContent
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoDocumentBinary
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoDocumentBinary
      */
     public function setDocContent(?string $docContent = null): self
     {

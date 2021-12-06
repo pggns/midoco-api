@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\ServiceType;
+namespace Pggns\MidocoApi\CrmSD\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Verify extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\CrmSD\ServiceType\Verify
+     * @return \Pggns\MidocoApi\CrmSD\ServiceType\Verify
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Verify extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\VerifyDictionaryNamesRequest $paramVerifyDictionaryNamesRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\VerifyDictionaryNamesResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\VerifyDictionaryNamesRequest $paramVerifyDictionaryNamesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\VerifyDictionaryNamesResponse|bool
      */
-    public function verifyDictionaryNames(\Pggns\MidocoApi\Api\CrmSD\StructType\VerifyDictionaryNamesRequest $paramVerifyDictionaryNamesRequest)
+    public function verifyDictionaryNames(\Pggns\MidocoApi\CrmSD\StructType\VerifyDictionaryNamesRequest $paramVerifyDictionaryNamesRequest)
     {
         try {
             $this->setResult($resultVerifyDictionaryNames = $this->getSoapClient()->__soapCall('verifyDictionaryNames', [
@@ -56,7 +56,7 @@ class Verify extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\VerifyDictionaryNamesResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\VerifyDictionaryNamesResponse
      */
     public function getResult()
     {

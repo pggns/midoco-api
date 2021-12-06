@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoImportContactHistory extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoImportContactHistory
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoImportContactHistory
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -94,7 +94,7 @@ class MidocoImportContactHistory extends AbstractStructBase
     /**
      * Set contactTypeId value
      * @param string $contactTypeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoImportContactHistory
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoImportContactHistory
      */
     public function setContactTypeId(?string $contactTypeId = null): self
     {
@@ -117,7 +117,7 @@ class MidocoImportContactHistory extends AbstractStructBase
     /**
      * Set contactDescription value
      * @param string $contactDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoImportContactHistory
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoImportContactHistory
      */
     public function setContactDescription(?string $contactDescription = null): self
     {
@@ -140,7 +140,7 @@ class MidocoImportContactHistory extends AbstractStructBase
     /**
      * Set contactDirection value
      * @param string $contactDirection
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoImportContactHistory
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoImportContactHistory
      */
     public function setContactDirection(?string $contactDirection = null): self
     {
@@ -163,7 +163,7 @@ class MidocoImportContactHistory extends AbstractStructBase
     /**
      * Set userId value
      * @param string $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoImportContactHistory
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoImportContactHistory
      */
     public function setUserId(?string $userId = null): self
     {

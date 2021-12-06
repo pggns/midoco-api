@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetNamePrefixListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoNamePrefix
-     * @var \Pggns\MidocoApi\Api\Order\StructType\NamePrefixDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\NamePrefixDTO[]
      */
     protected ?array $MidocoNamePrefix = null;
     /**
      * Constructor method for GetNamePrefixListResponse
      * @uses GetNamePrefixListResponse::setMidocoNamePrefix()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\NamePrefixDTO[] $midocoNamePrefix
+     * @param \Pggns\MidocoApi\Order\StructType\NamePrefixDTO[] $midocoNamePrefix
      */
     public function __construct(?array $midocoNamePrefix = null)
     {
@@ -34,7 +34,7 @@ class GetNamePrefixListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoNamePrefix value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\NamePrefixDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\NamePrefixDTO[]
      */
     public function getMidocoNamePrefix(): ?array
     {
@@ -55,12 +55,12 @@ class GetNamePrefixListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getNamePrefixListResponseMidocoNamePrefixItem) {
             // validation for constraint: itemType
-            if (!$getNamePrefixListResponseMidocoNamePrefixItem instanceof \Pggns\MidocoApi\Api\Order\StructType\NamePrefixDTO) {
+            if (!$getNamePrefixListResponseMidocoNamePrefixItem instanceof \Pggns\MidocoApi\Order\StructType\NamePrefixDTO) {
                 $invalidValues[] = is_object($getNamePrefixListResponseMidocoNamePrefixItem) ? get_class($getNamePrefixListResponseMidocoNamePrefixItem) : sprintf('%s(%s)', gettype($getNamePrefixListResponseMidocoNamePrefixItem), var_export($getNamePrefixListResponseMidocoNamePrefixItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoNamePrefix property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\NamePrefixDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoNamePrefix property can only contain items of type \Pggns\MidocoApi\Order\StructType\NamePrefixDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetNamePrefixListResponse extends AbstractStructBase
     /**
      * Set MidocoNamePrefix value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\NamePrefixDTO[] $midocoNamePrefix
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetNamePrefixListResponse
+     * @param \Pggns\MidocoApi\Order\StructType\NamePrefixDTO[] $midocoNamePrefix
+     * @return \Pggns\MidocoApi\Order\StructType\GetNamePrefixListResponse
      */
     public function setMidocoNamePrefix(?array $midocoNamePrefix = null): self
     {
@@ -85,14 +85,14 @@ class GetNamePrefixListResponse extends AbstractStructBase
     /**
      * Add item to MidocoNamePrefix value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\NamePrefixDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetNamePrefixListResponse
+     * @param \Pggns\MidocoApi\Order\StructType\NamePrefixDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetNamePrefixListResponse
      */
-    public function addToMidocoNamePrefix(\Pggns\MidocoApi\Api\Order\StructType\NamePrefixDTO $item): self
+    public function addToMidocoNamePrefix(\Pggns\MidocoApi\Order\StructType\NamePrefixDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\NamePrefixDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoNamePrefix property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\NamePrefixDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\NamePrefixDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoNamePrefix property can only contain items of type \Pggns\MidocoApi\Order\StructType\NamePrefixDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoNamePrefix[] = $item;
         

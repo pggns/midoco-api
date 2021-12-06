@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetAirlineForBSPCodeRequest extends AbstractStructBase
     /**
      * Set bspCode value
      * @param string $bspCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirlineForBSPCodeRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirlineForBSPCodeRequest
      */
     public function setBspCode(?string $bspCode = null): self
     {
@@ -72,7 +72,7 @@ class GetAirlineForBSPCodeRequest extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirlineForBSPCodeRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirlineForBSPCodeRequest
      */
     public function setCountryCode(?string $countryCode = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveContactMediaDescriptionRequest extends AbstractStructBase
      * The MidocoContactMediaDescription
      * Meta information extracted from the WSDL
      * - ref: MidocoContactMediaDescription
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO $MidocoContactMediaDescription = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO $MidocoContactMediaDescription = null;
     /**
      * Constructor method for SaveContactMediaDescriptionRequest
      * @uses SaveContactMediaDescriptionRequest::setMidocoContactMediaDescription()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO $midocoContactMediaDescription
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO $midocoContactMediaDescription
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO $midocoContactMediaDescription = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO $midocoContactMediaDescription = null)
     {
         $this
             ->setMidocoContactMediaDescription($midocoContactMediaDescription);
     }
     /**
      * Get MidocoContactMediaDescription value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO|null
      */
-    public function getMidocoContactMediaDescription(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO
+    public function getMidocoContactMediaDescription(): ?\Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO
     {
         return $this->MidocoContactMediaDescription;
     }
     /**
      * Set MidocoContactMediaDescription value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO $midocoContactMediaDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveContactMediaDescriptionRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO $midocoContactMediaDescription
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveContactMediaDescriptionRequest
      */
-    public function setMidocoContactMediaDescription(?\Pggns\MidocoApi\Api\Orderlists\StructType\MediaDescriptionDTO $midocoContactMediaDescription = null): self
+    public function setMidocoContactMediaDescription(?\Pggns\MidocoApi\Orderlists\StructType\MediaDescriptionDTO $midocoContactMediaDescription = null): self
     {
         $this->MidocoContactMediaDescription = $midocoContactMediaDescription;
         

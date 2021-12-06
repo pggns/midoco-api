@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoCriteriaDescriptionCategory extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCriteriaDescriptionCategory
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCriteriaDescriptionCategory
      */
     public function setCategoryId(?int $categoryId = null): self
     {
@@ -94,7 +94,7 @@ class MidocoCriteriaDescriptionCategory extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCriteriaDescriptionCategory
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCriteriaDescriptionCategory
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -117,7 +117,7 @@ class MidocoCriteriaDescriptionCategory extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCriteriaDescriptionCategory
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCriteriaDescriptionCategory
      */
     public function setDescription(?string $description = null): self
     {
@@ -140,7 +140,7 @@ class MidocoCriteriaDescriptionCategory extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCriteriaDescriptionCategory
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCriteriaDescriptionCategory
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -163,7 +163,7 @@ class MidocoCriteriaDescriptionCategory extends AbstractStructBase
     /**
      * Set guiCategoryPosition value
      * @param int $guiCategoryPosition
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCriteriaDescriptionCategory
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCriteriaDescriptionCategory
      */
     public function setGuiCategoryPosition(?int $guiCategoryPosition = null): self
     {

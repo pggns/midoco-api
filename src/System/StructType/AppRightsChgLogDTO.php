@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class AppRightsChgLogDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\System\StructType\AppRightsChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\AppRightsChgLogDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -94,7 +94,7 @@ class AppRightsChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\System\StructType\AppRightsChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\AppRightsChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -117,7 +117,7 @@ class AppRightsChgLogDTO extends AbstractStructBase
     /**
      * Set rightName value
      * @param string $rightName
-     * @return \Pggns\MidocoApi\Api\System\StructType\AppRightsChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\AppRightsChgLogDTO
      */
     public function setRightName(?string $rightName = null): self
     {
@@ -140,7 +140,7 @@ class AppRightsChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\System\StructType\AppRightsChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\AppRightsChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -163,7 +163,7 @@ class AppRightsChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\System\StructType\AppRightsChgLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\AppRightsChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

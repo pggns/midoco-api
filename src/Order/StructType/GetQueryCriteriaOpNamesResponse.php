@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetQueryCriteriaOpNamesResponse extends AbstractStructBase
      * Set CriteriaOpName value
      * @throws InvalidArgumentException
      * @param string[] $criteriaOpName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetQueryCriteriaOpNamesResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetQueryCriteriaOpNamesResponse
      */
     public function setCriteriaOpName(?array $criteriaOpName = null): self
     {
@@ -85,7 +85,7 @@ class GetQueryCriteriaOpNamesResponse extends AbstractStructBase
      * Add item to CriteriaOpName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetQueryCriteriaOpNamesResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetQueryCriteriaOpNamesResponse
      */
     public function addToCriteriaOpName(string $item): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSkippedBookingsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSkippedBooking
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\SkippedBookingDTO[]
      */
     protected ?array $MidocoSkippedBooking = null;
     /**
      * Constructor method for GetSkippedBookingsResponse
      * @uses GetSkippedBookingsResponse::setMidocoSkippedBooking()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO[] $midocoSkippedBooking
+     * @param \Pggns\MidocoApi\Order\StructType\SkippedBookingDTO[] $midocoSkippedBooking
      */
     public function __construct(?array $midocoSkippedBooking = null)
     {
@@ -34,7 +34,7 @@ class GetSkippedBookingsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSkippedBooking value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\SkippedBookingDTO[]
      */
     public function getMidocoSkippedBooking(): ?array
     {
@@ -55,12 +55,12 @@ class GetSkippedBookingsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSkippedBookingsResponseMidocoSkippedBookingItem) {
             // validation for constraint: itemType
-            if (!$getSkippedBookingsResponseMidocoSkippedBookingItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO) {
+            if (!$getSkippedBookingsResponseMidocoSkippedBookingItem instanceof \Pggns\MidocoApi\Order\StructType\SkippedBookingDTO) {
                 $invalidValues[] = is_object($getSkippedBookingsResponseMidocoSkippedBookingItem) ? get_class($getSkippedBookingsResponseMidocoSkippedBookingItem) : sprintf('%s(%s)', gettype($getSkippedBookingsResponseMidocoSkippedBookingItem), var_export($getSkippedBookingsResponseMidocoSkippedBookingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSkippedBooking property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSkippedBooking property can only contain items of type \Pggns\MidocoApi\Order\StructType\SkippedBookingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSkippedBookingsResponse extends AbstractStructBase
     /**
      * Set MidocoSkippedBooking value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO[] $midocoSkippedBooking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSkippedBookingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SkippedBookingDTO[] $midocoSkippedBooking
+     * @return \Pggns\MidocoApi\Order\StructType\GetSkippedBookingsResponse
      */
     public function setMidocoSkippedBooking(?array $midocoSkippedBooking = null): self
     {
@@ -85,14 +85,14 @@ class GetSkippedBookingsResponse extends AbstractStructBase
     /**
      * Add item to MidocoSkippedBooking value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSkippedBookingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SkippedBookingDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSkippedBookingsResponse
      */
-    public function addToMidocoSkippedBooking(\Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO $item): self
+    public function addToMidocoSkippedBooking(\Pggns\MidocoApi\Order\StructType\SkippedBookingDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSkippedBooking property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SkippedBookingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SkippedBookingDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSkippedBooking property can only contain items of type \Pggns\MidocoApi\Order\StructType\SkippedBookingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSkippedBooking[] = $item;
         

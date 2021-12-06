@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class BillingInfo extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: CreditCard
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CreditCard[]
+     * @var \Pggns\MidocoApi\Order\StructType\CreditCard[]
      */
     protected ?array $CreditCard = null;
     /**
@@ -28,7 +28,7 @@ class BillingInfo extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: BankAccount
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BankAccount[]
+     * @var \Pggns\MidocoApi\Order\StructType\BankAccount[]
      */
     protected ?array $BankAccount = null;
     /**
@@ -37,7 +37,7 @@ class BillingInfo extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: AdditionalBillingInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo[]
      */
     protected ?array $AdditionalBillingInfo = null;
     /**
@@ -46,7 +46,7 @@ class BillingInfo extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: AdditionalCreditCardInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AdditionalCreditCardInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\AdditionalCreditCardInfo[]
      */
     protected ?array $AdditionalCreditCardInfo = null;
     /**
@@ -55,10 +55,10 @@ class BillingInfo extends AbstractStructBase
      * @uses BillingInfo::setBankAccount()
      * @uses BillingInfo::setAdditionalBillingInfo()
      * @uses BillingInfo::setAdditionalCreditCardInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreditCard[] $creditCard
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BankAccount[] $bankAccount
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo[] $additionalBillingInfo
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalCreditCardInfo[] $additionalCreditCardInfo
+     * @param \Pggns\MidocoApi\Order\StructType\CreditCard[] $creditCard
+     * @param \Pggns\MidocoApi\Order\StructType\BankAccount[] $bankAccount
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo[] $additionalBillingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalCreditCardInfo[] $additionalCreditCardInfo
      */
     public function __construct(?array $creditCard = null, ?array $bankAccount = null, ?array $additionalBillingInfo = null, ?array $additionalCreditCardInfo = null)
     {
@@ -70,7 +70,7 @@ class BillingInfo extends AbstractStructBase
     }
     /**
      * Get CreditCard value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreditCard[]
+     * @return \Pggns\MidocoApi\Order\StructType\CreditCard[]
      */
     public function getCreditCard(): ?array
     {
@@ -91,12 +91,12 @@ class BillingInfo extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $billingInfoCreditCardItem) {
             // validation for constraint: itemType
-            if (!$billingInfoCreditCardItem instanceof \Pggns\MidocoApi\Api\Order\StructType\CreditCard) {
+            if (!$billingInfoCreditCardItem instanceof \Pggns\MidocoApi\Order\StructType\CreditCard) {
                 $invalidValues[] = is_object($billingInfoCreditCardItem) ? get_class($billingInfoCreditCardItem) : sprintf('%s(%s)', gettype($billingInfoCreditCardItem), var_export($billingInfoCreditCardItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CreditCard property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CreditCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CreditCard property can only contain items of type \Pggns\MidocoApi\Order\StructType\CreditCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -105,8 +105,8 @@ class BillingInfo extends AbstractStructBase
     /**
      * Set CreditCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreditCard[] $creditCard
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\CreditCard[] $creditCard
+     * @return \Pggns\MidocoApi\Order\StructType\BillingInfo
      */
     public function setCreditCard(?array $creditCard = null): self
     {
@@ -121,14 +121,14 @@ class BillingInfo extends AbstractStructBase
     /**
      * Add item to CreditCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreditCard $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\CreditCard $item
+     * @return \Pggns\MidocoApi\Order\StructType\BillingInfo
      */
-    public function addToCreditCard(\Pggns\MidocoApi\Api\Order\StructType\CreditCard $item): self
+    public function addToCreditCard(\Pggns\MidocoApi\Order\StructType\CreditCard $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\CreditCard) {
-            throw new InvalidArgumentException(sprintf('The CreditCard property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CreditCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\CreditCard) {
+            throw new InvalidArgumentException(sprintf('The CreditCard property can only contain items of type \Pggns\MidocoApi\Order\StructType\CreditCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CreditCard[] = $item;
         
@@ -136,7 +136,7 @@ class BillingInfo extends AbstractStructBase
     }
     /**
      * Get BankAccount value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankAccount[]
+     * @return \Pggns\MidocoApi\Order\StructType\BankAccount[]
      */
     public function getBankAccount(): ?array
     {
@@ -157,12 +157,12 @@ class BillingInfo extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $billingInfoBankAccountItem) {
             // validation for constraint: itemType
-            if (!$billingInfoBankAccountItem instanceof \Pggns\MidocoApi\Api\Order\StructType\BankAccount) {
+            if (!$billingInfoBankAccountItem instanceof \Pggns\MidocoApi\Order\StructType\BankAccount) {
                 $invalidValues[] = is_object($billingInfoBankAccountItem) ? get_class($billingInfoBankAccountItem) : sprintf('%s(%s)', gettype($billingInfoBankAccountItem), var_export($billingInfoBankAccountItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The BankAccount property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BankAccount, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The BankAccount property can only contain items of type \Pggns\MidocoApi\Order\StructType\BankAccount, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -171,8 +171,8 @@ class BillingInfo extends AbstractStructBase
     /**
      * Set BankAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BankAccount[] $bankAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\BankAccount[] $bankAccount
+     * @return \Pggns\MidocoApi\Order\StructType\BillingInfo
      */
     public function setBankAccount(?array $bankAccount = null): self
     {
@@ -187,14 +187,14 @@ class BillingInfo extends AbstractStructBase
     /**
      * Add item to BankAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BankAccount $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\BankAccount $item
+     * @return \Pggns\MidocoApi\Order\StructType\BillingInfo
      */
-    public function addToBankAccount(\Pggns\MidocoApi\Api\Order\StructType\BankAccount $item): self
+    public function addToBankAccount(\Pggns\MidocoApi\Order\StructType\BankAccount $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\BankAccount) {
-            throw new InvalidArgumentException(sprintf('The BankAccount property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BankAccount, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\BankAccount) {
+            throw new InvalidArgumentException(sprintf('The BankAccount property can only contain items of type \Pggns\MidocoApi\Order\StructType\BankAccount, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->BankAccount[] = $item;
         
@@ -202,7 +202,7 @@ class BillingInfo extends AbstractStructBase
     }
     /**
      * Get AdditionalBillingInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo[]
      */
     public function getAdditionalBillingInfo(): ?array
     {
@@ -223,12 +223,12 @@ class BillingInfo extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $billingInfoAdditionalBillingInfoItem) {
             // validation for constraint: itemType
-            if (!$billingInfoAdditionalBillingInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo) {
+            if (!$billingInfoAdditionalBillingInfoItem instanceof \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo) {
                 $invalidValues[] = is_object($billingInfoAdditionalBillingInfoItem) ? get_class($billingInfoAdditionalBillingInfoItem) : sprintf('%s(%s)', gettype($billingInfoAdditionalBillingInfoItem), var_export($billingInfoAdditionalBillingInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AdditionalBillingInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AdditionalBillingInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -237,8 +237,8 @@ class BillingInfo extends AbstractStructBase
     /**
      * Set AdditionalBillingInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo[] $additionalBillingInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo[] $additionalBillingInfo
+     * @return \Pggns\MidocoApi\Order\StructType\BillingInfo
      */
     public function setAdditionalBillingInfo(?array $additionalBillingInfo = null): self
     {
@@ -253,14 +253,14 @@ class BillingInfo extends AbstractStructBase
     /**
      * Add item to AdditionalBillingInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\BillingInfo
      */
-    public function addToAdditionalBillingInfo(\Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo $item): self
+    public function addToAdditionalBillingInfo(\Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo) {
-            throw new InvalidArgumentException(sprintf('The AdditionalBillingInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AdditionalBillingInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo) {
+            throw new InvalidArgumentException(sprintf('The AdditionalBillingInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\AdditionalBillingInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AdditionalBillingInfo[] = $item;
         
@@ -268,7 +268,7 @@ class BillingInfo extends AbstractStructBase
     }
     /**
      * Get AdditionalCreditCardInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdditionalCreditCardInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\AdditionalCreditCardInfo[]
      */
     public function getAdditionalCreditCardInfo(): ?array
     {
@@ -289,12 +289,12 @@ class BillingInfo extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $billingInfoAdditionalCreditCardInfoItem) {
             // validation for constraint: itemType
-            if (!$billingInfoAdditionalCreditCardInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\AdditionalCreditCardInfo) {
+            if (!$billingInfoAdditionalCreditCardInfoItem instanceof \Pggns\MidocoApi\Order\StructType\AdditionalCreditCardInfo) {
                 $invalidValues[] = is_object($billingInfoAdditionalCreditCardInfoItem) ? get_class($billingInfoAdditionalCreditCardInfoItem) : sprintf('%s(%s)', gettype($billingInfoAdditionalCreditCardInfoItem), var_export($billingInfoAdditionalCreditCardInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AdditionalCreditCardInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AdditionalCreditCardInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AdditionalCreditCardInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\AdditionalCreditCardInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -303,8 +303,8 @@ class BillingInfo extends AbstractStructBase
     /**
      * Set AdditionalCreditCardInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalCreditCardInfo[] $additionalCreditCardInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalCreditCardInfo[] $additionalCreditCardInfo
+     * @return \Pggns\MidocoApi\Order\StructType\BillingInfo
      */
     public function setAdditionalCreditCardInfo(?array $additionalCreditCardInfo = null): self
     {
@@ -319,14 +319,14 @@ class BillingInfo extends AbstractStructBase
     /**
      * Add item to AdditionalCreditCardInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalCreditCardInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalCreditCardInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\BillingInfo
      */
-    public function addToAdditionalCreditCardInfo(\Pggns\MidocoApi\Api\Order\StructType\AdditionalCreditCardInfo $item): self
+    public function addToAdditionalCreditCardInfo(\Pggns\MidocoApi\Order\StructType\AdditionalCreditCardInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\AdditionalCreditCardInfo) {
-            throw new InvalidArgumentException(sprintf('The AdditionalCreditCardInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AdditionalCreditCardInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\AdditionalCreditCardInfo) {
+            throw new InvalidArgumentException(sprintf('The AdditionalCreditCardInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\AdditionalCreditCardInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AdditionalCreditCardInfo[] = $item;
         

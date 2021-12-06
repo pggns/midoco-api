@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -104,17 +104,17 @@ class PrivateData_1 extends AbstractStructBase
     }
     /**
      * Set salutation value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\SalutationType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\SalutationType::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\SalutationType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\SalutationType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData_1
      */
     public function setSalutation(?string $salutation = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\SalutationType::valueIsValid($salutation)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\SalutationType', is_array($salutation) ? implode(', ', $salutation) : var_export($salutation, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\SalutationType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\SalutationType::valueIsValid($salutation)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\SalutationType', is_array($salutation) ? implode(', ', $salutation) : var_export($salutation, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\SalutationType::getValidValues())), __LINE__);
         }
         $this->salutation = $salutation;
         
@@ -131,7 +131,7 @@ class PrivateData_1 extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData_1
      */
     public function setTitle(?string $title = null): self
     {
@@ -154,7 +154,7 @@ class PrivateData_1 extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData_1
      */
     public function setForename(?string $forename = null): self
     {
@@ -177,7 +177,7 @@ class PrivateData_1 extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData_1
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -200,7 +200,7 @@ class PrivateData_1 extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData_1
      */
     public function setName(?string $name = null): self
     {
@@ -223,7 +223,7 @@ class PrivateData_1 extends AbstractStructBase
     /**
      * Set birthday value
      * @param string $birthday
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData_1
      */
     public function setBirthday(?string $birthday = null): self
     {
@@ -249,17 +249,17 @@ class PrivateData_1 extends AbstractStructBase
     }
     /**
      * Set gender value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\GenderType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\GenderType::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\GenderType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\GenderType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $gender
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData_1
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData_1
      */
     public function setGender(?string $gender = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\GenderType::valueIsValid($gender)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\GenderType', is_array($gender) ? implode(', ', $gender) : var_export($gender, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\GenderType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\GenderType::valueIsValid($gender)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\GenderType', is_array($gender) ? implode(', ', $gender) : var_export($gender, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\GenderType::getValidValues())), __LINE__);
         }
         $this->gender = $gender;
         

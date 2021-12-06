@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class PrintAllUsersBonusCalculationResponse extends AbstractStructBase
     /**
      * Set PrintjobId value
      * @param int $printjobId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAllUsersBonusCalculationResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAllUsersBonusCalculationResponse
      */
     public function setPrintjobId(?int $printjobId = null): self
     {
@@ -70,7 +70,7 @@ class PrintAllUsersBonusCalculationResponse extends AbstractStructBase
     /**
      * Set bytes value
      * @param string $bytes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAllUsersBonusCalculationResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAllUsersBonusCalculationResponse
      */
     public function setBytes(?string $bytes = null): self
     {

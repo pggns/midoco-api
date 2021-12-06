@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class HedgeCurrencyRequest extends AbstractStructBase
     /**
      * Set fromCurrency value
      * @param string $fromCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HedgeCurrencyRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\HedgeCurrencyRequest
      */
     public function setFromCurrency(?string $fromCurrency = null): self
     {
@@ -86,7 +86,7 @@ class HedgeCurrencyRequest extends AbstractStructBase
     /**
      * Set toCurrency value
      * @param string $toCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HedgeCurrencyRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\HedgeCurrencyRequest
      */
     public function setToCurrency(?string $toCurrency = null): self
     {
@@ -109,7 +109,7 @@ class HedgeCurrencyRequest extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HedgeCurrencyRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\HedgeCurrencyRequest
      */
     public function setDate(?string $date = null): self
     {
@@ -132,7 +132,7 @@ class HedgeCurrencyRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\HedgeCurrencyRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\HedgeCurrencyRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

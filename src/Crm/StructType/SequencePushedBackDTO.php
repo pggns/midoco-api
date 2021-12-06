@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class SequencePushedBackDTO extends AbstractStructBase
     /**
      * Set sequenceId value
      * @param int $sequenceId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SequencePushedBackDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\SequencePushedBackDTO
      */
     public function setSequenceId(?int $sequenceId = null): self
     {
@@ -70,7 +70,7 @@ class SequencePushedBackDTO extends AbstractStructBase
     /**
      * Set value value
      * @param int $value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SequencePushedBackDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\SequencePushedBackDTO
      */
     public function setValue(?int $value = null): self
     {

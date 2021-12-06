@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class GetOrgUnitsInSameDBRequest extends AbstractStructBase
     /**
      * Set dbType value
      * @param string $dbType
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgUnitsInSameDBRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgUnitsInSameDBRequest
      */
     public function setDbType(?string $dbType = null): self
     {
@@ -80,7 +80,7 @@ class GetOrgUnitsInSameDBRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgUnitsInSameDBRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgUnitsInSameDBRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -103,7 +103,7 @@ class GetOrgUnitsInSameDBRequest extends AbstractStructBase
     /**
      * Set useMidocoAsTopUnit value
      * @param bool $useMidocoAsTopUnit
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgUnitsInSameDBRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgUnitsInSameDBRequest
      */
     public function setUseMidocoAsTopUnit(?bool $useMidocoAsTopUnit = false): self
     {

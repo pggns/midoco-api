@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class UserattribDescriptionDTO extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UserattribDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UserattribDescriptionDTO
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -78,7 +78,7 @@ class UserattribDescriptionDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UserattribDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UserattribDescriptionDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -101,7 +101,7 @@ class UserattribDescriptionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UserattribDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UserattribDescriptionDTO
      */
     public function setDescription(?string $description = null): self
     {

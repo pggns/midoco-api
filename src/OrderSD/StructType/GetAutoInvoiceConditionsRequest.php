@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -27,17 +27,17 @@ class GetAutoInvoiceConditionsRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - ref: MidocoAutoInvoiceCondition
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO $MidocoAutoInvoiceCondition = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO $MidocoAutoInvoiceCondition = null;
     /**
      * Constructor method for GetAutoInvoiceConditionsRequest
      * @uses GetAutoInvoiceConditionsRequest::setOrgUnit()
      * @uses GetAutoInvoiceConditionsRequest::setMidocoAutoInvoiceCondition()
      * @param string $orgUnit
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition
+     * @param \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition
      */
-    public function __construct(?string $orgUnit = null, ?\Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition = null)
+    public function __construct(?string $orgUnit = null, ?\Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition = null)
     {
         $this
             ->setOrgUnit($orgUnit)
@@ -54,7 +54,7 @@ class GetAutoInvoiceConditionsRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAutoInvoiceConditionsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAutoInvoiceConditionsRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -68,18 +68,18 @@ class GetAutoInvoiceConditionsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAutoInvoiceCondition value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO|null
      */
-    public function getMidocoAutoInvoiceCondition(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO
+    public function getMidocoAutoInvoiceCondition(): ?\Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO
     {
         return $this->MidocoAutoInvoiceCondition;
     }
     /**
      * Set MidocoAutoInvoiceCondition value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAutoInvoiceConditionsRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAutoInvoiceConditionsRequest
      */
-    public function setMidocoAutoInvoiceCondition(?\Pggns\MidocoApi\Api\OrderSD\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition = null): self
+    public function setMidocoAutoInvoiceCondition(?\Pggns\MidocoApi\OrderSD\StructType\AutoInvoiceConditionDTO $midocoAutoInvoiceCondition = null): self
     {
         $this->MidocoAutoInvoiceCondition = $midocoAutoInvoiceCondition;
         

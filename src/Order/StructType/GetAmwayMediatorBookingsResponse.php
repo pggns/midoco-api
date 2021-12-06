@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class GetAmwayMediatorBookingsResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBookings[]
+     * @var \Pggns\MidocoApi\Order\StructType\AmwayMediatorBookings[]
      */
     protected ?array $AmwayMediatorBookings = null;
     /**
      * Constructor method for GetAmwayMediatorBookingsResponse
      * @uses GetAmwayMediatorBookingsResponse::setAmwayMediatorBookings()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBookings[] $amwayMediatorBookings
+     * @param \Pggns\MidocoApi\Order\StructType\AmwayMediatorBookings[] $amwayMediatorBookings
      */
     public function __construct(?array $amwayMediatorBookings = null)
     {
@@ -33,7 +33,7 @@ class GetAmwayMediatorBookingsResponse extends AbstractStructBase
     }
     /**
      * Get AmwayMediatorBookings value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBookings[]
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBookings[]
      */
     public function getAmwayMediatorBookings(): ?array
     {
@@ -54,12 +54,12 @@ class GetAmwayMediatorBookingsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAmwayMediatorBookingsResponseAmwayMediatorBookingsItem) {
             // validation for constraint: itemType
-            if (!$getAmwayMediatorBookingsResponseAmwayMediatorBookingsItem instanceof \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBookings) {
+            if (!$getAmwayMediatorBookingsResponseAmwayMediatorBookingsItem instanceof \Pggns\MidocoApi\Order\StructType\AmwayMediatorBookings) {
                 $invalidValues[] = is_object($getAmwayMediatorBookingsResponseAmwayMediatorBookingsItem) ? get_class($getAmwayMediatorBookingsResponseAmwayMediatorBookingsItem) : sprintf('%s(%s)', gettype($getAmwayMediatorBookingsResponseAmwayMediatorBookingsItem), var_export($getAmwayMediatorBookingsResponseAmwayMediatorBookingsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AmwayMediatorBookings property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBookings, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AmwayMediatorBookings property can only contain items of type \Pggns\MidocoApi\Order\StructType\AmwayMediatorBookings, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class GetAmwayMediatorBookingsResponse extends AbstractStructBase
     /**
      * Set AmwayMediatorBookings value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBookings[] $amwayMediatorBookings
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAmwayMediatorBookingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\AmwayMediatorBookings[] $amwayMediatorBookings
+     * @return \Pggns\MidocoApi\Order\StructType\GetAmwayMediatorBookingsResponse
      */
     public function setAmwayMediatorBookings(?array $amwayMediatorBookings = null): self
     {
@@ -84,14 +84,14 @@ class GetAmwayMediatorBookingsResponse extends AbstractStructBase
     /**
      * Add item to AmwayMediatorBookings value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBookings $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAmwayMediatorBookingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\AmwayMediatorBookings $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetAmwayMediatorBookingsResponse
      */
-    public function addToAmwayMediatorBookings(\Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBookings $item): self
+    public function addToAmwayMediatorBookings(\Pggns\MidocoApi\Order\StructType\AmwayMediatorBookings $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBookings) {
-            throw new InvalidArgumentException(sprintf('The AmwayMediatorBookings property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBookings, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\AmwayMediatorBookings) {
+            throw new InvalidArgumentException(sprintf('The AmwayMediatorBookings property can only contain items of type \Pggns\MidocoApi\Order\StructType\AmwayMediatorBookings, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AmwayMediatorBookings[] = $item;
         

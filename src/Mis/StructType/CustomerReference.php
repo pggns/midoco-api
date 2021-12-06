@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class CustomerReference extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerReference
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -102,7 +102,7 @@ class CustomerReference extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerReference
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -125,7 +125,7 @@ class CustomerReference extends AbstractStructBase
     /**
      * Set externalReference value
      * @param string $externalReference
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerReference
      */
     public function setExternalReference(?string $externalReference = null): self
     {
@@ -148,7 +148,7 @@ class CustomerReference extends AbstractStructBase
     /**
      * Set sender value
      * @param string $sender
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerReference
      */
     public function setSender(?string $sender = null): self
     {
@@ -171,7 +171,7 @@ class CustomerReference extends AbstractStructBase
     /**
      * Set recipientInfo value
      * @param string $recipientInfo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerReference
      */
     public function setRecipientInfo(?string $recipientInfo = null): self
     {
@@ -194,7 +194,7 @@ class CustomerReference extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustomerReference
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerReference
      */
     public function setDescription(?string $description = null): self
     {

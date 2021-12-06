@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class CrmMediatorChargeInfoType extends CrmMediatorChargeDTO
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMediatorChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -118,7 +118,7 @@ class CrmMediatorChargeInfoType extends CrmMediatorChargeDTO
     /**
      * Set isCredit value
      * @param bool $isCredit
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMediatorChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType
      */
     public function setIsCredit(?bool $isCredit = null): self
     {
@@ -141,7 +141,7 @@ class CrmMediatorChargeInfoType extends CrmMediatorChargeDTO
     /**
      * Set isInteractive value
      * @param bool $isInteractive
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMediatorChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType
      */
     public function setIsInteractive(?bool $isInteractive = null): self
     {
@@ -164,7 +164,7 @@ class CrmMediatorChargeInfoType extends CrmMediatorChargeDTO
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMediatorChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -187,7 +187,7 @@ class CrmMediatorChargeInfoType extends CrmMediatorChargeDTO
     /**
      * Set schedulePeriod value
      * @param int $schedulePeriod
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMediatorChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType
      */
     public function setSchedulePeriod(?int $schedulePeriod = null): self
     {
@@ -210,7 +210,7 @@ class CrmMediatorChargeInfoType extends CrmMediatorChargeDTO
     /**
      * Set useVat value
      * @param bool $useVat
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMediatorChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType
      */
     public function setUseVat(?bool $useVat = null): self
     {
@@ -233,7 +233,7 @@ class CrmMediatorChargeInfoType extends CrmMediatorChargeDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMediatorChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType
      */
     public function setDescription(?string $description = null): self
     {
@@ -256,7 +256,7 @@ class CrmMediatorChargeInfoType extends CrmMediatorChargeDTO
     /**
      * Set nettoAmount value
      * @param float $nettoAmount
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMediatorChargeInfoType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType
      */
     public function setNettoAmount(?float $nettoAmount = null): self
     {

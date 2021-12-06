@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class MidocoGeneralNotice extends GlobalNoticeDTO
     /**
      * Set manuallyCreatedTask value
      * @param bool $manuallyCreatedTask
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGeneralNotice
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoGeneralNotice
      */
     public function setManuallyCreatedTask(?bool $manuallyCreatedTask = null): self
     {
@@ -126,7 +126,7 @@ class MidocoGeneralNotice extends GlobalNoticeDTO
     /**
      * Set delegationComment value
      * @param string $delegationComment
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGeneralNotice
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoGeneralNotice
      */
     public function setDelegationComment(?string $delegationComment = null): self
     {
@@ -149,7 +149,7 @@ class MidocoGeneralNotice extends GlobalNoticeDTO
     /**
      * Set refId value
      * @param int $refId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGeneralNotice
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoGeneralNotice
      */
     public function setRefId(?int $refId = null): self
     {
@@ -172,7 +172,7 @@ class MidocoGeneralNotice extends GlobalNoticeDTO
     /**
      * Set deadlineDate value
      * @param string $deadlineDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGeneralNotice
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoGeneralNotice
      */
     public function setDeadlineDate(?string $deadlineDate = null): self
     {
@@ -195,7 +195,7 @@ class MidocoGeneralNotice extends GlobalNoticeDTO
     /**
      * Set isSpecialCustomer value
      * @param bool $isSpecialCustomer
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGeneralNotice
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoGeneralNotice
      */
     public function setIsSpecialCustomer(?bool $isSpecialCustomer = null): self
     {
@@ -218,7 +218,7 @@ class MidocoGeneralNotice extends GlobalNoticeDTO
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGeneralNotice
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoGeneralNotice
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -241,7 +241,7 @@ class MidocoGeneralNotice extends GlobalNoticeDTO
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGeneralNotice
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoGeneralNotice
      */
     public function setPosition(?int $position = null): self
     {
@@ -264,7 +264,7 @@ class MidocoGeneralNotice extends GlobalNoticeDTO
     /**
      * Set printAllowed value
      * @param bool $printAllowed
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGeneralNotice
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoGeneralNotice
      */
     public function setPrintAllowed(?bool $printAllowed = null): self
     {
@@ -287,7 +287,7 @@ class MidocoGeneralNotice extends GlobalNoticeDTO
     /**
      * Set ruleDefinitionId value
      * @param int $ruleDefinitionId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGeneralNotice
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoGeneralNotice
      */
     public function setRuleDefinitionId(?int $ruleDefinitionId = null): self
     {

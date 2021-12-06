@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetSupplierAddressRequest extends AbstractStructBase
      * The MidocoSupplier
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplier
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $MidocoSupplier = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $MidocoSupplier = null;
     /**
      * The orgunit
      * @var string|null
@@ -41,12 +41,12 @@ class GetSupplierAddressRequest extends AbstractStructBase
      * @uses GetSupplierAddressRequest::setOrgunit()
      * @uses GetSupplierAddressRequest::setTraveltype()
      * @uses GetSupplierAddressRequest::setDestination()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $midocoSupplier
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $midocoSupplier
      * @param string $orgunit
      * @param string $traveltype
      * @param string $destination
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $midocoSupplier = null, ?string $orgunit = null, ?string $traveltype = null, ?string $destination = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $midocoSupplier = null, ?string $orgunit = null, ?string $traveltype = null, ?string $destination = null)
     {
         $this
             ->setMidocoSupplier($midocoSupplier)
@@ -56,18 +56,18 @@ class GetSupplierAddressRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplier value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType|null
      */
-    public function getMidocoSupplier(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType
+    public function getMidocoSupplier(): ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierType
     {
         return $this->MidocoSupplier;
     }
     /**
      * Set MidocoSupplier value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $midocoSupplier
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierAddressRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $midocoSupplier
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierAddressRequest
      */
-    public function setMidocoSupplier(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierType $midocoSupplier = null): self
+    public function setMidocoSupplier(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierType $midocoSupplier = null): self
     {
         $this->MidocoSupplier = $midocoSupplier;
         
@@ -84,7 +84,7 @@ class GetSupplierAddressRequest extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierAddressRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierAddressRequest
      */
     public function setOrgunit(?string $orgunit = null): self
     {
@@ -107,7 +107,7 @@ class GetSupplierAddressRequest extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierAddressRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierAddressRequest
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -130,7 +130,7 @@ class GetSupplierAddressRequest extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierAddressRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierAddressRequest
      */
     public function setDestination(?string $destination = null): self
     {

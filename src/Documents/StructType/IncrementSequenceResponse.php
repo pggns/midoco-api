@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class IncrementSequenceResponse extends AbstractStructBase
     /**
      * Set currentValue value
      * @param int $currentValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\IncrementSequenceResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\IncrementSequenceResponse
      */
     public function setCurrentValue(?int $currentValue = null): self
     {
@@ -70,7 +70,7 @@ class IncrementSequenceResponse extends AbstractStructBase
     /**
      * Set sequenceId value
      * @param int $sequenceId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\IncrementSequenceResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\IncrementSequenceResponse
      */
     public function setSequenceId(?int $sequenceId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class Compensation2GoNotificationResponseType extends AbstractStructBase
     /**
      * Set code value
      * @param int $code
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Compensation2GoNotificationResponseType
+     * @return \Pggns\MidocoApi\Order\StructType\Compensation2GoNotificationResponseType
      */
     public function setCode(?int $code = null): self
     {
@@ -70,7 +70,7 @@ class Compensation2GoNotificationResponseType extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Compensation2GoNotificationResponseType
+     * @return \Pggns\MidocoApi\Order\StructType\Compensation2GoNotificationResponseType
      */
     public function setStatus(?string $status = null): self
     {

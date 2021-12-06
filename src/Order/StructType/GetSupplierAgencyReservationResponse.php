@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSupplierAgencyReservationResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierAgencyReservation
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencyReservation[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencyReservation[]
      */
     protected ?array $MidocoSupplierAgencyReservation = null;
     /**
      * Constructor method for GetSupplierAgencyReservationResponse
      * @uses GetSupplierAgencyReservationResponse::setMidocoSupplierAgencyReservation()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencyReservation[] $midocoSupplierAgencyReservation
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencyReservation[] $midocoSupplierAgencyReservation
      */
     public function __construct(?array $midocoSupplierAgencyReservation = null)
     {
@@ -34,7 +34,7 @@ class GetSupplierAgencyReservationResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierAgencyReservation value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencyReservation[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencyReservation[]
      */
     public function getMidocoSupplierAgencyReservation(): ?array
     {
@@ -55,12 +55,12 @@ class GetSupplierAgencyReservationResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSupplierAgencyReservationResponseMidocoSupplierAgencyReservationItem) {
             // validation for constraint: itemType
-            if (!$getSupplierAgencyReservationResponseMidocoSupplierAgencyReservationItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencyReservation) {
+            if (!$getSupplierAgencyReservationResponseMidocoSupplierAgencyReservationItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencyReservation) {
                 $invalidValues[] = is_object($getSupplierAgencyReservationResponseMidocoSupplierAgencyReservationItem) ? get_class($getSupplierAgencyReservationResponseMidocoSupplierAgencyReservationItem) : sprintf('%s(%s)', gettype($getSupplierAgencyReservationResponseMidocoSupplierAgencyReservationItem), var_export($getSupplierAgencyReservationResponseMidocoSupplierAgencyReservationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierAgencyReservation property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencyReservation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierAgencyReservation property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencyReservation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSupplierAgencyReservationResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierAgencyReservation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencyReservation[] $midocoSupplierAgencyReservation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencyReservationResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencyReservation[] $midocoSupplierAgencyReservation
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencyReservationResponse
      */
     public function setMidocoSupplierAgencyReservation(?array $midocoSupplierAgencyReservation = null): self
     {
@@ -85,14 +85,14 @@ class GetSupplierAgencyReservationResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierAgencyReservation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencyReservation $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierAgencyReservationResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencyReservation $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierAgencyReservationResponse
      */
-    public function addToMidocoSupplierAgencyReservation(\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencyReservation $item): self
+    public function addToMidocoSupplierAgencyReservation(\Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencyReservation $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencyReservation) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierAgencyReservation property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencyReservation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencyReservation) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierAgencyReservation property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencyReservation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierAgencyReservation[] = $item;
         

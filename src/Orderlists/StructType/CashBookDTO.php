@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -167,7 +167,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -190,7 +190,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set actualBalance value
      * @param float $actualBalance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setActualBalance(?float $actualBalance = null): self
     {
@@ -213,7 +213,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set autoBalance value
      * @param bool $autoBalance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setAutoBalance(?bool $autoBalance = null): self
     {
@@ -236,7 +236,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setCashBookId(?int $cashBookId = null): self
     {
@@ -259,7 +259,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -282,7 +282,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set foreignBalance value
      * @param float $foreignBalance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setForeignBalance(?float $foreignBalance = null): self
     {
@@ -305,7 +305,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set foreignCurrency value
      * @param string $foreignCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setForeignCurrency(?string $foreignCurrency = null): self
     {
@@ -328,7 +328,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set foreignPrintBalance value
      * @param float $foreignPrintBalance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setForeignPrintBalance(?float $foreignPrintBalance = null): self
     {
@@ -351,7 +351,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set isDefault value
      * @param bool $isDefault
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setIsDefault(?bool $isDefault = null): self
     {
@@ -374,7 +374,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set nextPrintingPage value
      * @param int $nextPrintingPage
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setNextPrintingPage(?int $nextPrintingPage = null): self
     {
@@ -397,7 +397,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set notifyEmail value
      * @param string $notifyEmail
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setNotifyEmail(?string $notifyEmail = null): self
     {
@@ -420,7 +420,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set printingBalance value
      * @param float $printingBalance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setPrintingBalance(?float $printingBalance = null): self
     {
@@ -443,7 +443,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set receiptNoAct value
      * @param int $receiptNoAct
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setReceiptNoAct(?int $receiptNoAct = null): self
     {
@@ -466,7 +466,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set receiptNoEnd value
      * @param int $receiptNoEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setReceiptNoEnd(?int $receiptNoEnd = null): self
     {
@@ -489,7 +489,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set receiptNoStart value
      * @param int $receiptNoStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setReceiptNoStart(?int $receiptNoStart = null): self
     {
@@ -512,7 +512,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -535,7 +535,7 @@ class CashBookDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CashBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
      */
     public function setUserId(?int $userId = null): self
     {

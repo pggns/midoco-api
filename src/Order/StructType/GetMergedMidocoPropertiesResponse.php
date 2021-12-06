@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class GetMergedMidocoPropertiesResponse extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoProperties
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoProperties|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoProperties|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoProperties $MidocoProperties = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoProperties $MidocoProperties = null;
     /**
      * Constructor method for GetMergedMidocoPropertiesResponse
      * @uses GetMergedMidocoPropertiesResponse::setMidocoProperties()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoProperties $midocoProperties
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoProperties $midocoProperties
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoProperties $midocoProperties = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoProperties $midocoProperties = null)
     {
         $this
             ->setMidocoProperties($midocoProperties);
     }
     /**
      * Get MidocoProperties value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoProperties|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoProperties|null
      */
-    public function getMidocoProperties(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoProperties
+    public function getMidocoProperties(): ?\Pggns\MidocoApi\Order\StructType\MidocoProperties
     {
         return $this->MidocoProperties;
     }
     /**
      * Set MidocoProperties value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoProperties $midocoProperties
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedMidocoPropertiesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoProperties $midocoProperties
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedMidocoPropertiesResponse
      */
-    public function setMidocoProperties(?\Pggns\MidocoApi\Api\Order\StructType\MidocoProperties $midocoProperties = null): self
+    public function setMidocoProperties(?\Pggns\MidocoApi\Order\StructType\MidocoProperties $midocoProperties = null): self
     {
         $this->MidocoProperties = $midocoProperties;
         

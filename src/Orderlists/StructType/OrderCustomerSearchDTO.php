@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -174,7 +174,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set cityPhonetic value
      * @param string $cityPhonetic
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setCityPhonetic(?string $cityPhonetic = null): self
     {
@@ -197,7 +197,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -220,7 +220,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -243,7 +243,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set forenamePhonetic value
      * @param string $forenamePhonetic
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setForenamePhonetic(?string $forenamePhonetic = null): self
     {
@@ -266,7 +266,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setName(?string $name = null): self
     {
@@ -289,7 +289,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set namePhonetic value
      * @param string $namePhonetic
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setNamePhonetic(?string $namePhonetic = null): self
     {
@@ -312,7 +312,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -335,7 +335,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -358,7 +358,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set sellItemId value
      * @param int $sellItemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setSellItemId(?int $sellItemId = null): self
     {
@@ -381,7 +381,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -404,7 +404,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -427,7 +427,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set streetPhonetic value
      * @param string $streetPhonetic
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setStreetPhonetic(?string $streetPhonetic = null): self
     {
@@ -450,7 +450,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setType(?string $type = null): self
     {
@@ -473,7 +473,7 @@ class OrderCustomerSearchDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderCustomerSearchDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderCustomerSearchDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class BookingPeriodDTO extends AbstractStructBase
     /**
      * Set bookingPeriodClosed value
      * @param int $bookingPeriodClosed
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingPeriodDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingPeriodDTO
      */
     public function setBookingPeriodClosed(?int $bookingPeriodClosed = null): self
     {
@@ -78,7 +78,7 @@ class BookingPeriodDTO extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingPeriodDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingPeriodDTO
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -101,7 +101,7 @@ class BookingPeriodDTO extends AbstractStructBase
     /**
      * Set carriedForward value
      * @param bool $carriedForward
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingPeriodDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingPeriodDTO
      */
     public function setCarriedForward(?bool $carriedForward = null): self
     {

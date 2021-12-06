@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class SellInsuranceCertificateDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellInsuranceCertificateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellInsuranceCertificateDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -134,7 +134,7 @@ class SellInsuranceCertificateDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellInsuranceCertificateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellInsuranceCertificateDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -157,7 +157,7 @@ class SellInsuranceCertificateDTO extends AbstractStructBase
     /**
      * Set insuranceId value
      * @param int $insuranceId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellInsuranceCertificateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellInsuranceCertificateDTO
      */
     public function setInsuranceId(?int $insuranceId = null): self
     {
@@ -180,7 +180,7 @@ class SellInsuranceCertificateDTO extends AbstractStructBase
     /**
      * Set isCanceled value
      * @param bool $isCanceled
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellInsuranceCertificateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellInsuranceCertificateDTO
      */
     public function setIsCanceled(?bool $isCanceled = null): self
     {
@@ -203,7 +203,7 @@ class SellInsuranceCertificateDTO extends AbstractStructBase
     /**
      * Set isOsstCanceled value
      * @param bool $isOsstCanceled
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellInsuranceCertificateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellInsuranceCertificateDTO
      */
     public function setIsOsstCanceled(?bool $isOsstCanceled = null): self
     {
@@ -226,7 +226,7 @@ class SellInsuranceCertificateDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellInsuranceCertificateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellInsuranceCertificateDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -249,7 +249,7 @@ class SellInsuranceCertificateDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellInsuranceCertificateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellInsuranceCertificateDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -272,7 +272,7 @@ class SellInsuranceCertificateDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellInsuranceCertificateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellInsuranceCertificateDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -295,7 +295,7 @@ class SellInsuranceCertificateDTO extends AbstractStructBase
     /**
      * Set orderDocumentId value
      * @param int $orderDocumentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellInsuranceCertificateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellInsuranceCertificateDTO
      */
     public function setOrderDocumentId(?int $orderDocumentId = null): self
     {
@@ -318,7 +318,7 @@ class SellInsuranceCertificateDTO extends AbstractStructBase
     /**
      * Set osstFileName value
      * @param string $osstFileName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellInsuranceCertificateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellInsuranceCertificateDTO
      */
     public function setOsstFileName(?string $osstFileName = null): self
     {

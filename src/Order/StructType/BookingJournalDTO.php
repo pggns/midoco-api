@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -367,7 +367,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set automaticVat value
      * @param bool $automaticVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setAutomaticVat(?bool $automaticVat = null): self
     {
@@ -390,7 +390,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set bookingAmount value
      * @param float $bookingAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setBookingAmount(?float $bookingAmount = null): self
     {
@@ -413,7 +413,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set bookingPeriod value
      * @param int $bookingPeriod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setBookingPeriod(?int $bookingPeriod = null): self
     {
@@ -436,7 +436,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set bookingReversal value
      * @param bool $bookingReversal
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setBookingReversal(?bool $bookingReversal = null): self
     {
@@ -459,7 +459,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set bookingSource value
      * @param int $bookingSource
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setBookingSource(?int $bookingSource = null): self
     {
@@ -482,7 +482,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set bookingText value
      * @param string $bookingText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setBookingText(?string $bookingText = null): self
     {
@@ -505,7 +505,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -528,7 +528,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -551,7 +551,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set costUnit value
      * @param string $costUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setCostUnit(?string $costUnit = null): self
     {
@@ -574,7 +574,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -597,7 +597,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -620,7 +620,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -643,7 +643,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set creditEntry value
      * @param string $creditEntry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setCreditEntry(?string $creditEntry = null): self
     {
@@ -666,7 +666,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -689,7 +689,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -712,7 +712,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set debitEntry value
      * @param string $debitEntry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setDebitEntry(?string $debitEntry = null): self
     {
@@ -735,7 +735,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set deferralPositionId value
      * @param int $deferralPositionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setDeferralPositionId(?int $deferralPositionId = null): self
     {
@@ -758,7 +758,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -781,7 +781,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -804,7 +804,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set exchangeRate value
      * @param float $exchangeRate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setExchangeRate(?float $exchangeRate = null): self
     {
@@ -827,7 +827,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set exportCode value
      * @param string $exportCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setExportCode(?string $exportCode = null): self
     {
@@ -850,7 +850,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set exportDate value
      * @param string $exportDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setExportDate(?string $exportDate = null): self
     {
@@ -873,7 +873,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setExportId(?int $exportId = null): self
     {
@@ -896,7 +896,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -919,7 +919,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set isInvoice value
      * @param bool $isInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setIsInvoice(?bool $isInvoice = null): self
     {
@@ -942,7 +942,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -965,7 +965,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set journalId value
      * @param int $journalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setJournalId(?int $journalId = null): self
     {
@@ -988,7 +988,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set masterJournalId value
      * @param int $masterJournalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setMasterJournalId(?int $masterJournalId = null): self
     {
@@ -1011,7 +1011,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -1034,7 +1034,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -1057,7 +1057,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -1080,7 +1080,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -1103,7 +1103,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -1126,7 +1126,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set revenueId value
      * @param int $revenueId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setRevenueId(?int $revenueId = null): self
     {
@@ -1149,7 +1149,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set reverseChargeCountry value
      * @param string $reverseChargeCountry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setReverseChargeCountry(?string $reverseChargeCountry = null): self
     {
@@ -1172,7 +1172,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set skontoAmount value
      * @param float $skontoAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setSkontoAmount(?float $skontoAmount = null): self
     {
@@ -1195,7 +1195,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set skontoVatAmount value
      * @param float $skontoVatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setSkontoVatAmount(?float $skontoVatAmount = null): self
     {
@@ -1218,7 +1218,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -1241,7 +1241,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -1264,7 +1264,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -1287,7 +1287,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setVatId(?string $vatId = null): self
     {
@@ -1310,7 +1310,7 @@ class BookingJournalDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BookingJournalDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

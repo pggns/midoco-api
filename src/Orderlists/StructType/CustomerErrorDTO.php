@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class CustomerErrorDTO extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustomerErrorDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustomerErrorDTO
      */
     public function setCategory(?string $category = null): self
     {
@@ -94,7 +94,7 @@ class CustomerErrorDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustomerErrorDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustomerErrorDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -117,7 +117,7 @@ class CustomerErrorDTO extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustomerErrorDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustomerErrorDTO
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {
@@ -140,7 +140,7 @@ class CustomerErrorDTO extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustomerErrorDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustomerErrorDTO
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -163,7 +163,7 @@ class CustomerErrorDTO extends AbstractStructBase
     /**
      * Set errorParameters value
      * @param string $errorParameters
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustomerErrorDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustomerErrorDTO
      */
     public function setErrorParameters(?string $errorParameters = null): self
     {

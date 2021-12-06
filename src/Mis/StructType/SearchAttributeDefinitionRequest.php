@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SearchAttributeDefinitionRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchAttributeDefinitionRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -86,7 +86,7 @@ class SearchAttributeDefinitionRequest extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchAttributeDefinitionRequest
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -109,7 +109,7 @@ class SearchAttributeDefinitionRequest extends AbstractStructBase
     /**
      * Set contextId value
      * @param string $contextId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchAttributeDefinitionRequest
      */
     public function setContextId(?string $contextId = null): self
     {
@@ -132,7 +132,7 @@ class SearchAttributeDefinitionRequest extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchAttributeDefinitionRequest
      */
     public function setType(?int $type = null): self
     {

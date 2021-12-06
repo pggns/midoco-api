@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMfGroupRequest extends AbstractStructBase
      * The MidocoMfGroup
      * Meta information extracted from the WSDL
      * - ref: MidocoMfGroup
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMfGroup|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMfGroup|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMfGroup $MidocoMfGroup = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMfGroup $MidocoMfGroup = null;
     /**
      * Constructor method for SaveMfGroupRequest
      * @uses SaveMfGroupRequest::setMidocoMfGroup()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMfGroup $midocoMfGroup
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMfGroup $midocoMfGroup
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMfGroup $midocoMfGroup = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoMfGroup $midocoMfGroup = null)
     {
         $this
             ->setMidocoMfGroup($midocoMfGroup);
     }
     /**
      * Get MidocoMfGroup value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMfGroup|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMfGroup|null
      */
-    public function getMidocoMfGroup(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMfGroup
+    public function getMidocoMfGroup(): ?\Pggns\MidocoApi\Order\StructType\MidocoMfGroup
     {
         return $this->MidocoMfGroup;
     }
     /**
      * Set MidocoMfGroup value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMfGroup $midocoMfGroup
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMfGroupRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMfGroup $midocoMfGroup
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMfGroupRequest
      */
-    public function setMidocoMfGroup(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMfGroup $midocoMfGroup = null): self
+    public function setMidocoMfGroup(?\Pggns\MidocoApi\Order\StructType\MidocoMfGroup $midocoMfGroup = null): self
     {
         $this->MidocoMfGroup = $midocoMfGroup;
         

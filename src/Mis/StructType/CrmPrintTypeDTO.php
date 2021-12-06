@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CrmPrintTypeDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPrintTypeDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPrintTypeDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +78,7 @@ class CrmPrintTypeDTO extends AbstractStructBase
     /**
      * Set noOfCopies value
      * @param int $noOfCopies
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPrintTypeDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPrintTypeDTO
      */
     public function setNoOfCopies(?int $noOfCopies = null): self
     {
@@ -101,7 +101,7 @@ class CrmPrintTypeDTO extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmPrintTypeDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmPrintTypeDTO
      */
     public function setPrintType(?string $printType = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,17 +18,17 @@ class PrintAdviceResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: mail:MidocoMailMessage
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
     /**
      * The MidocoMailDescription4Inexso
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: system:MidocoMailDescription4Inexso
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $MidocoMailDescription4Inexso = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $MidocoMailDescription4Inexso = null;
     /**
      * The printJobIds
      * Meta information extracted from the WSDL
@@ -66,14 +66,14 @@ class PrintAdviceResponse extends AbstractStructBase
      * @uses PrintAdviceResponse::setData()
      * @uses PrintAdviceResponse::setFopMsg()
      * @uses PrintAdviceResponse::setName()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso
      * @param int[] $printJobIds
      * @param string[] $data
      * @param string[] $fopMsg
      * @param string $name
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso = null, ?array $printJobIds = null, ?array $data = null, ?array $fopMsg = null, ?string $name = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?\Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso = null, ?array $printJobIds = null, ?array $data = null, ?array $fopMsg = null, ?string $name = null)
     {
         $this
             ->setMidocoMailMessage($midocoMailMessage)
@@ -85,18 +85,18 @@ class PrintAdviceResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMailMessage value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
     {
         return $this->MidocoMailMessage;
     }
     /**
      * Set MidocoMailMessage value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceResponse
      */
-    public function setMidocoMailMessage(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
+    public function setMidocoMailMessage(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
     {
         $this->MidocoMailMessage = $midocoMailMessage;
         
@@ -104,18 +104,18 @@ class PrintAdviceResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMailDescription4Inexso value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso|null
      */
-    public function getMidocoMailDescription4Inexso(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso
+    public function getMidocoMailDescription4Inexso(): ?\Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso
     {
         return $this->MidocoMailDescription4Inexso;
     }
     /**
      * Set MidocoMailDescription4Inexso value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceResponse
      */
-    public function setMidocoMailDescription4Inexso(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso = null): self
+    public function setMidocoMailDescription4Inexso(?\Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso = null): self
     {
         $this->MidocoMailDescription4Inexso = $midocoMailDescription4Inexso;
         
@@ -159,7 +159,7 @@ class PrintAdviceResponse extends AbstractStructBase
      * Set printJobIds value
      * @throws InvalidArgumentException
      * @param int[] $printJobIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceResponse
      */
     public function setPrintJobIds(?array $printJobIds = null): self
     {
@@ -175,7 +175,7 @@ class PrintAdviceResponse extends AbstractStructBase
      * Add item to printJobIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceResponse
      */
     public function addToPrintJobIds(int $item): self
     {
@@ -225,7 +225,7 @@ class PrintAdviceResponse extends AbstractStructBase
      * Set data value
      * @throws InvalidArgumentException
      * @param string[] $data
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceResponse
      */
     public function setData(?array $data = null): self
     {
@@ -241,7 +241,7 @@ class PrintAdviceResponse extends AbstractStructBase
      * Add item to data value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceResponse
      */
     public function addToData(string $item): self
     {
@@ -291,7 +291,7 @@ class PrintAdviceResponse extends AbstractStructBase
      * Set fopMsg value
      * @throws InvalidArgumentException
      * @param string[] $fopMsg
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceResponse
      */
     public function setFopMsg(?array $fopMsg = null): self
     {
@@ -307,7 +307,7 @@ class PrintAdviceResponse extends AbstractStructBase
      * Add item to fopMsg value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceResponse
      */
     public function addToFopMsg(string $item): self
     {
@@ -330,7 +330,7 @@ class PrintAdviceResponse extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAdviceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceResponse
      */
     public function setName(?string $name = null): self
     {

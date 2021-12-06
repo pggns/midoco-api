@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class QmPrintDTO extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\QmPrintDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\QmPrintDTO
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -70,7 +70,7 @@ class QmPrintDTO extends AbstractStructBase
     /**
      * Set qmId value
      * @param int $qmId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\QmPrintDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\QmPrintDTO
      */
     public function setQmId(?int $qmId = null): self
     {

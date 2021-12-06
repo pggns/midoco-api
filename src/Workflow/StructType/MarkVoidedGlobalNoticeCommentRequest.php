@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class MarkVoidedGlobalNoticeCommentRequest extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoGlobalNoticeComment
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO $MidocoGlobalNoticeComment = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO $MidocoGlobalNoticeComment = null;
     /**
      * Constructor method for MarkVoidedGlobalNoticeCommentRequest
      * @uses MarkVoidedGlobalNoticeCommentRequest::setMidocoGlobalNoticeComment()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO $midocoGlobalNoticeComment
+     * @param \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO $midocoGlobalNoticeComment
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO $midocoGlobalNoticeComment = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO $midocoGlobalNoticeComment = null)
     {
         $this
             ->setMidocoGlobalNoticeComment($midocoGlobalNoticeComment);
     }
     /**
      * Get MidocoGlobalNoticeComment value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO|null
      */
-    public function getMidocoGlobalNoticeComment(): ?\Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO
+    public function getMidocoGlobalNoticeComment(): ?\Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO
     {
         return $this->MidocoGlobalNoticeComment;
     }
     /**
      * Set MidocoGlobalNoticeComment value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO $midocoGlobalNoticeComment
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MarkVoidedGlobalNoticeCommentRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO $midocoGlobalNoticeComment
+     * @return \Pggns\MidocoApi\Workflow\StructType\MarkVoidedGlobalNoticeCommentRequest
      */
-    public function setMidocoGlobalNoticeComment(?\Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO $midocoGlobalNoticeComment = null): self
+    public function setMidocoGlobalNoticeComment(?\Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO $midocoGlobalNoticeComment = null): self
     {
         $this->MidocoGlobalNoticeComment = $midocoGlobalNoticeComment;
         

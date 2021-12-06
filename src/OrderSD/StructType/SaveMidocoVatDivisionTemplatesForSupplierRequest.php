@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class SaveMidocoVatDivisionTemplatesForSupplierRequest extends AbstractStructBas
      * The MidocoVatDivisionTemplate
      * Meta information extracted from the WSDL
      * - ref: MidocoVatDivisionTemplate
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate $MidocoVatDivisionTemplate = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate $MidocoVatDivisionTemplate = null;
     /**
      * The supplierId
      * @var string|null
@@ -30,10 +30,10 @@ class SaveMidocoVatDivisionTemplatesForSupplierRequest extends AbstractStructBas
      * Constructor method for SaveMidocoVatDivisionTemplatesForSupplierRequest
      * @uses SaveMidocoVatDivisionTemplatesForSupplierRequest::setMidocoVatDivisionTemplate()
      * @uses SaveMidocoVatDivisionTemplatesForSupplierRequest::setSupplierId()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate $midocoVatDivisionTemplate
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate $midocoVatDivisionTemplate
      * @param string $supplierId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate $midocoVatDivisionTemplate = null, ?string $supplierId = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate $midocoVatDivisionTemplate = null, ?string $supplierId = null)
     {
         $this
             ->setMidocoVatDivisionTemplate($midocoVatDivisionTemplate)
@@ -41,18 +41,18 @@ class SaveMidocoVatDivisionTemplatesForSupplierRequest extends AbstractStructBas
     }
     /**
      * Get MidocoVatDivisionTemplate value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate|null
      */
-    public function getMidocoVatDivisionTemplate(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate
+    public function getMidocoVatDivisionTemplate(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate
     {
         return $this->MidocoVatDivisionTemplate;
     }
     /**
      * Set MidocoVatDivisionTemplate value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate $midocoVatDivisionTemplate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveMidocoVatDivisionTemplatesForSupplierRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate $midocoVatDivisionTemplate
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveMidocoVatDivisionTemplatesForSupplierRequest
      */
-    public function setMidocoVatDivisionTemplate(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate $midocoVatDivisionTemplate = null): self
+    public function setMidocoVatDivisionTemplate(?\Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate $midocoVatDivisionTemplate = null): self
     {
         $this->MidocoVatDivisionTemplate = $midocoVatDivisionTemplate;
         
@@ -69,7 +69,7 @@ class SaveMidocoVatDivisionTemplatesForSupplierRequest extends AbstractStructBas
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveMidocoVatDivisionTemplatesForSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveMidocoVatDivisionTemplatesForSupplierRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {

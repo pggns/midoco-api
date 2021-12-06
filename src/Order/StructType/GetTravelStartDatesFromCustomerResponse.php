@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class GetTravelStartDatesFromCustomerResponse extends AbstractStructBase
      * Set startTravelDate value
      * @throws InvalidArgumentException
      * @param string[] $startTravelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelStartDatesFromCustomerResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelStartDatesFromCustomerResponse
      */
     public function setStartTravelDate(?array $startTravelDate = null): self
     {
@@ -87,7 +87,7 @@ class GetTravelStartDatesFromCustomerResponse extends AbstractStructBase
      * Add item to startTravelDate value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelStartDatesFromCustomerResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelStartDatesFromCustomerResponse
      */
     public function addToStartTravelDate(string $item): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class GetRedeemVoucherInfoResponse extends AbstractStructBase
     /**
      * Set soldBy value
      * @param int $soldBy
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRedeemVoucherInfoResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetRedeemVoucherInfoResponse
      */
     public function setSoldBy(?int $soldBy = null): self
     {
@@ -118,7 +118,7 @@ class GetRedeemVoucherInfoResponse extends AbstractStructBase
     /**
      * Set soldAt value
      * @param string $soldAt
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRedeemVoucherInfoResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetRedeemVoucherInfoResponse
      */
     public function setSoldAt(?string $soldAt = null): self
     {
@@ -141,7 +141,7 @@ class GetRedeemVoucherInfoResponse extends AbstractStructBase
     /**
      * Set soldValue value
      * @param float $soldValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRedeemVoucherInfoResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetRedeemVoucherInfoResponse
      */
     public function setSoldValue(?float $soldValue = null): self
     {
@@ -164,7 +164,7 @@ class GetRedeemVoucherInfoResponse extends AbstractStructBase
     /**
      * Set redeemBy value
      * @param int $redeemBy
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRedeemVoucherInfoResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetRedeemVoucherInfoResponse
      */
     public function setRedeemBy(?int $redeemBy = null): self
     {
@@ -187,7 +187,7 @@ class GetRedeemVoucherInfoResponse extends AbstractStructBase
     /**
      * Set redeemAt value
      * @param string $redeemAt
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRedeemVoucherInfoResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetRedeemVoucherInfoResponse
      */
     public function setRedeemAt(?string $redeemAt = null): self
     {
@@ -210,7 +210,7 @@ class GetRedeemVoucherInfoResponse extends AbstractStructBase
     /**
      * Set redeemValue value
      * @param float $redeemValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRedeemVoucherInfoResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetRedeemVoucherInfoResponse
      */
     public function setRedeemValue(?float $redeemValue = null): self
     {
@@ -233,7 +233,7 @@ class GetRedeemVoucherInfoResponse extends AbstractStructBase
     /**
      * Set remainingValue value
      * @param float $remainingValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRedeemVoucherInfoResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetRedeemVoucherInfoResponse
      */
     public function setRemainingValue(?float $remainingValue = null): self
     {
@@ -256,7 +256,7 @@ class GetRedeemVoucherInfoResponse extends AbstractStructBase
     /**
      * Set expiryDate value
      * @param string $expiryDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRedeemVoucherInfoResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetRedeemVoucherInfoResponse
      */
     public function setExpiryDate(?string $expiryDate = null): self
     {

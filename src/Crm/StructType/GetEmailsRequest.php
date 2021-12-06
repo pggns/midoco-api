@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class GetEmailsRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetEmailsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetEmailsRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -86,7 +86,7 @@ class GetEmailsRequest extends AbstractStructBase
     /**
      * Set deliveryCustomerId value
      * @param int $deliveryCustomerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetEmailsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetEmailsRequest
      */
     public function setDeliveryCustomerId(?int $deliveryCustomerId = null): self
     {
@@ -109,7 +109,7 @@ class GetEmailsRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetEmailsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetEmailsRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -132,7 +132,7 @@ class GetEmailsRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetEmailsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetEmailsRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {

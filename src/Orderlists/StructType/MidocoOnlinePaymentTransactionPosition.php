@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -149,7 +149,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: Usage
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\Usage[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\Usage[]
      */
     protected ?array $Usage = null;
     /**
@@ -203,7 +203,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
      * @param string $errorBundle
      * @param string $errorArgs
      * @param string $errorDescription
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Usage[] $usage
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Usage[] $usage
      * @param bool $isManual
      * @param string $currency
      */
@@ -243,7 +243,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -266,7 +266,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set foreName value
      * @param string $foreName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setForeName(?string $foreName = null): self
     {
@@ -289,7 +289,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setName(?string $name = null): self
     {
@@ -312,7 +312,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set debitType value
      * @param int $debitType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setDebitType(?int $debitType = null): self
     {
@@ -335,7 +335,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setAmount(?float $amount = null): self
     {
@@ -358,7 +358,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set invoiceId value
      * @param int $invoiceId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setInvoiceId(?int $invoiceId = null): self
     {
@@ -381,7 +381,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param string $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setInvoiceNo(?string $invoiceNo = null): self
     {
@@ -404,7 +404,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -427,7 +427,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -450,7 +450,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setDate(?string $date = null): self
     {
@@ -473,7 +473,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set isDeposit value
      * @param bool $isDeposit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setIsDeposit(?bool $isDeposit = null): self
     {
@@ -496,7 +496,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set invoiceType value
      * @param string $invoiceType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setInvoiceType(?string $invoiceType = null): self
     {
@@ -519,7 +519,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set departureDate value
      * @param string $departureDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setDepartureDate(?string $departureDate = null): self
     {
@@ -542,7 +542,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -565,7 +565,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -588,7 +588,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {
@@ -611,7 +611,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set errorArgs value
      * @param string $errorArgs
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setErrorArgs(?string $errorArgs = null): self
     {
@@ -634,7 +634,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set errorDescription value
      * @param string $errorDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setErrorDescription(?string $errorDescription = null): self
     {
@@ -648,7 +648,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     }
     /**
      * Get Usage value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Usage[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Usage[]
      */
     public function getUsage(): ?array
     {
@@ -669,12 +669,12 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoOnlinePaymentTransactionPositionUsageItem) {
             // validation for constraint: itemType
-            if (!$midocoOnlinePaymentTransactionPositionUsageItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\Usage) {
+            if (!$midocoOnlinePaymentTransactionPositionUsageItem instanceof \Pggns\MidocoApi\Orderlists\StructType\Usage) {
                 $invalidValues[] = is_object($midocoOnlinePaymentTransactionPositionUsageItem) ? get_class($midocoOnlinePaymentTransactionPositionUsageItem) : sprintf('%s(%s)', gettype($midocoOnlinePaymentTransactionPositionUsageItem), var_export($midocoOnlinePaymentTransactionPositionUsageItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Usage property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\Usage, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Usage property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\Usage, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -683,8 +683,8 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set Usage value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Usage[] $usage
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Usage[] $usage
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setUsage(?array $usage = null): self
     {
@@ -699,14 +699,14 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Add item to Usage value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Usage $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Usage $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
-    public function addToUsage(\Pggns\MidocoApi\Api\Orderlists\StructType\Usage $item): self
+    public function addToUsage(\Pggns\MidocoApi\Orderlists\StructType\Usage $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\Usage) {
-            throw new InvalidArgumentException(sprintf('The Usage property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\Usage, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\Usage) {
+            throw new InvalidArgumentException(sprintf('The Usage property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\Usage, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Usage[] = $item;
         
@@ -723,7 +723,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set isManual value
      * @param bool $isManual
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setIsManual(?bool $isManual = null): self
     {
@@ -746,7 +746,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
      */
     public function setCurrency(?string $currency = null): self
     {

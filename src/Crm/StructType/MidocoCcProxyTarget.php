@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class MidocoCcProxyTarget extends CcproxyTargetDTO
      * - maxOccurs: 1
      * - minOccurs: 1
      * - ref: MidocoCcProxyHandler
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CcproxyHandlerDTO
+     * @var \Pggns\MidocoApi\Crm\StructType\CcproxyHandlerDTO
      */
-    protected \Pggns\MidocoApi\Api\Crm\StructType\CcproxyHandlerDTO $MidocoCcProxyHandler;
+    protected \Pggns\MidocoApi\Crm\StructType\CcproxyHandlerDTO $MidocoCcProxyHandler;
     /**
      * Constructor method for MidocoCcProxyTarget
      * @uses MidocoCcProxyTarget::setMidocoCcProxyHandler()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CcproxyHandlerDTO $midocoCcProxyHandler
+     * @param \Pggns\MidocoApi\Crm\StructType\CcproxyHandlerDTO $midocoCcProxyHandler
      */
-    public function __construct(\Pggns\MidocoApi\Api\Crm\StructType\CcproxyHandlerDTO $midocoCcProxyHandler)
+    public function __construct(\Pggns\MidocoApi\Crm\StructType\CcproxyHandlerDTO $midocoCcProxyHandler)
     {
         $this
             ->setMidocoCcProxyHandler($midocoCcProxyHandler);
     }
     /**
      * Get MidocoCcProxyHandler value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CcproxyHandlerDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CcproxyHandlerDTO
      */
-    public function getMidocoCcProxyHandler(): \Pggns\MidocoApi\Api\Crm\StructType\CcproxyHandlerDTO
+    public function getMidocoCcProxyHandler(): \Pggns\MidocoApi\Crm\StructType\CcproxyHandlerDTO
     {
         return $this->MidocoCcProxyHandler;
     }
     /**
      * Set MidocoCcProxyHandler value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CcproxyHandlerDTO $midocoCcProxyHandler
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcProxyTarget
+     * @param \Pggns\MidocoApi\Crm\StructType\CcproxyHandlerDTO $midocoCcProxyHandler
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCcProxyTarget
      */
-    public function setMidocoCcProxyHandler(\Pggns\MidocoApi\Api\Crm\StructType\CcproxyHandlerDTO $midocoCcProxyHandler): self
+    public function setMidocoCcProxyHandler(\Pggns\MidocoApi\Crm\StructType\CcproxyHandlerDTO $midocoCcProxyHandler): self
     {
         $this->MidocoCcProxyHandler = $midocoCcProxyHandler;
         

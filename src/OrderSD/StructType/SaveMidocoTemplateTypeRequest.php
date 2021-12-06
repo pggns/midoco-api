@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoTemplateTypeRequest extends AbstractStructBase
      * The MidocoTemplateType
      * Meta information extracted from the WSDL
      * - ref: MidocoTemplateType
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO $MidocoTemplateType = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO $MidocoTemplateType = null;
     /**
      * Constructor method for SaveMidocoTemplateTypeRequest
      * @uses SaveMidocoTemplateTypeRequest::setMidocoTemplateType()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO $midocoTemplateType
+     * @param \Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO $midocoTemplateType
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO $midocoTemplateType = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO $midocoTemplateType = null)
     {
         $this
             ->setMidocoTemplateType($midocoTemplateType);
     }
     /**
      * Get MidocoTemplateType value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO|null
      */
-    public function getMidocoTemplateType(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO
+    public function getMidocoTemplateType(): ?\Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO
     {
         return $this->MidocoTemplateType;
     }
     /**
      * Set MidocoTemplateType value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO $midocoTemplateType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveMidocoTemplateTypeRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO $midocoTemplateType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveMidocoTemplateTypeRequest
      */
-    public function setMidocoTemplateType(?\Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO $midocoTemplateType = null): self
+    public function setMidocoTemplateType(?\Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO $midocoTemplateType = null): self
     {
         $this->MidocoTemplateType = $midocoTemplateType;
         

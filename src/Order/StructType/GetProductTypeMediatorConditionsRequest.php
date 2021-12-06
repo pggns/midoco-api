@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetProductTypeMediatorConditionsRequest extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetProductTypeMediatorConditionsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetProductTypeMediatorConditionsRequest
      */
     public function setProductType(?string $productType = null): self
     {
@@ -70,7 +70,7 @@ class GetProductTypeMediatorConditionsRequest extends AbstractStructBase
     /**
      * Set mediatorType value
      * @param string $mediatorType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetProductTypeMediatorConditionsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetProductTypeMediatorConditionsRequest
      */
     public function setMediatorType(?string $mediatorType = null): self
     {

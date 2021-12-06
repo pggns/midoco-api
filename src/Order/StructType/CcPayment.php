@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class CcPayment extends AbstractStructBase
      * - documentation: Additional air plus flight payments
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CCPaymentAdditionalInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\CCPaymentAdditionalInfo[]
      */
     protected ?array $ccAdditionalInfo = null;
     /**
@@ -73,7 +73,7 @@ class CcPayment extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: ccToken
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CcToken[]
+     * @var \Pggns\MidocoApi\Order\StructType\CcToken[]
      */
     protected ?array $ccToken = null;
     /**
@@ -180,9 +180,9 @@ class CcPayment extends AbstractStructBase
      * @param string $ccValidYear
      * @param string $ccValidMonth
      * @param string $cvcCode
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CCPaymentAdditionalInfo[] $ccAdditionalInfo
+     * @param \Pggns\MidocoApi\Order\StructType\CCPaymentAdditionalInfo[] $ccAdditionalInfo
      * @param string $cardHolder
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CcToken[] $ccToken
+     * @param \Pggns\MidocoApi\Order\StructType\CcToken[] $ccToken
      * @param string $paymentChannelIndicator
      * @param string $cardholderAuthVerification
      * @param string $electronicCommerceIndicator
@@ -227,7 +227,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -250,7 +250,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set ccNumber value
      * @param string $ccNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setCcNumber(?string $ccNumber = null): self
     {
@@ -273,7 +273,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set ccValidYear value
      * @param string $ccValidYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setCcValidYear(?string $ccValidYear = null): self
     {
@@ -300,7 +300,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set ccValidMonth value
      * @param string $ccValidMonth
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setCcValidMonth(?string $ccValidMonth = null): self
     {
@@ -327,7 +327,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set cvcCode value
      * @param string $cvcCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setCvcCode(?string $cvcCode = null): self
     {
@@ -345,7 +345,7 @@ class CcPayment extends AbstractStructBase
     }
     /**
      * Get ccAdditionalInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CCPaymentAdditionalInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\CCPaymentAdditionalInfo[]
      */
     public function getCcAdditionalInfo(): ?array
     {
@@ -366,12 +366,12 @@ class CcPayment extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $ccPaymentCcAdditionalInfoItem) {
             // validation for constraint: itemType
-            if (!$ccPaymentCcAdditionalInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\CCPaymentAdditionalInfo) {
+            if (!$ccPaymentCcAdditionalInfoItem instanceof \Pggns\MidocoApi\Order\StructType\CCPaymentAdditionalInfo) {
                 $invalidValues[] = is_object($ccPaymentCcAdditionalInfoItem) ? get_class($ccPaymentCcAdditionalInfoItem) : sprintf('%s(%s)', gettype($ccPaymentCcAdditionalInfoItem), var_export($ccPaymentCcAdditionalInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ccAdditionalInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CCPaymentAdditionalInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ccAdditionalInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\CCPaymentAdditionalInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -380,8 +380,8 @@ class CcPayment extends AbstractStructBase
     /**
      * Set ccAdditionalInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CCPaymentAdditionalInfo[] $ccAdditionalInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @param \Pggns\MidocoApi\Order\StructType\CCPaymentAdditionalInfo[] $ccAdditionalInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setCcAdditionalInfo(?array $ccAdditionalInfo = null): self
     {
@@ -396,14 +396,14 @@ class CcPayment extends AbstractStructBase
     /**
      * Add item to ccAdditionalInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CCPaymentAdditionalInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @param \Pggns\MidocoApi\Order\StructType\CCPaymentAdditionalInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
-    public function addToCcAdditionalInfo(\Pggns\MidocoApi\Api\Order\StructType\CCPaymentAdditionalInfo $item): self
+    public function addToCcAdditionalInfo(\Pggns\MidocoApi\Order\StructType\CCPaymentAdditionalInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\CCPaymentAdditionalInfo) {
-            throw new InvalidArgumentException(sprintf('The ccAdditionalInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CCPaymentAdditionalInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\CCPaymentAdditionalInfo) {
+            throw new InvalidArgumentException(sprintf('The ccAdditionalInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\CCPaymentAdditionalInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ccAdditionalInfo[] = $item;
         
@@ -420,7 +420,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set cardHolder value
      * @param string $cardHolder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setCardHolder(?string $cardHolder = null): self
     {
@@ -434,7 +434,7 @@ class CcPayment extends AbstractStructBase
     }
     /**
      * Get ccToken value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcToken[]
+     * @return \Pggns\MidocoApi\Order\StructType\CcToken[]
      */
     public function getCcToken(): ?array
     {
@@ -455,12 +455,12 @@ class CcPayment extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $ccPaymentCcTokenItem) {
             // validation for constraint: itemType
-            if (!$ccPaymentCcTokenItem instanceof \Pggns\MidocoApi\Api\Order\StructType\CcToken) {
+            if (!$ccPaymentCcTokenItem instanceof \Pggns\MidocoApi\Order\StructType\CcToken) {
                 $invalidValues[] = is_object($ccPaymentCcTokenItem) ? get_class($ccPaymentCcTokenItem) : sprintf('%s(%s)', gettype($ccPaymentCcTokenItem), var_export($ccPaymentCcTokenItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ccToken property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ccToken property can only contain items of type \Pggns\MidocoApi\Order\StructType\CcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -469,8 +469,8 @@ class CcPayment extends AbstractStructBase
     /**
      * Set ccToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CcToken[] $ccToken
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @param \Pggns\MidocoApi\Order\StructType\CcToken[] $ccToken
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setCcToken(?array $ccToken = null): self
     {
@@ -485,14 +485,14 @@ class CcPayment extends AbstractStructBase
     /**
      * Add item to ccToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CcToken $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @param \Pggns\MidocoApi\Order\StructType\CcToken $item
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
-    public function addToCcToken(\Pggns\MidocoApi\Api\Order\StructType\CcToken $item): self
+    public function addToCcToken(\Pggns\MidocoApi\Order\StructType\CcToken $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\CcToken) {
-            throw new InvalidArgumentException(sprintf('The ccToken property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\CcToken) {
+            throw new InvalidArgumentException(sprintf('The ccToken property can only contain items of type \Pggns\MidocoApi\Order\StructType\CcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ccToken[] = $item;
         
@@ -509,7 +509,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set paymentChannelIndicator value
      * @param string $paymentChannelIndicator
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setPaymentChannelIndicator(?string $paymentChannelIndicator = null): self
     {
@@ -532,7 +532,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set cardholderAuthVerification value
      * @param string $cardholderAuthVerification
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setCardholderAuthVerification(?string $cardholderAuthVerification = null): self
     {
@@ -555,7 +555,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set electronicCommerceIndicator value
      * @param string $electronicCommerceIndicator
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setElectronicCommerceIndicator(?string $electronicCommerceIndicator = null): self
     {
@@ -578,7 +578,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set xid value
      * @param string $xid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setXid(?string $xid = null): self
     {
@@ -601,7 +601,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set authAmount value
      * @param float $authAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setAuthAmount(?float $authAmount = null): self
     {
@@ -624,7 +624,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set remainingAuthAmount value
      * @param float $remainingAuthAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setRemainingAuthAmount(?float $remainingAuthAmount = null): self
     {
@@ -647,7 +647,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set v3ds value
      * @param string $v3ds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setV3ds(?string $v3ds = null): self
     {
@@ -670,7 +670,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set dstid value
      * @param string $dstid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setDstid(?string $dstid = null): self
     {
@@ -693,7 +693,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set initialEcomTransactionId value
      * @param string $initialEcomTransactionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setInitialEcomTransactionId(?string $initialEcomTransactionId = null): self
     {
@@ -716,7 +716,7 @@ class CcPayment extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcPayment
+     * @return \Pggns\MidocoApi\Order\StructType\CcPayment
      */
     public function setPosition(?int $position = null): self
     {

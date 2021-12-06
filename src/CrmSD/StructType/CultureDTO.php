@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CultureDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CultureDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CultureDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -86,7 +86,7 @@ class CultureDTO extends AbstractStructBase
     /**
      * Set isCustomerLanguage value
      * @param bool $isCustomerLanguage
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CultureDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CultureDTO
      */
     public function setIsCustomerLanguage(?bool $isCustomerLanguage = null): self
     {
@@ -109,7 +109,7 @@ class CultureDTO extends AbstractStructBase
     /**
      * Set isLoginLanguage value
      * @param bool $isLoginLanguage
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CultureDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CultureDTO
      */
     public function setIsLoginLanguage(?bool $isLoginLanguage = null): self
     {
@@ -132,7 +132,7 @@ class CultureDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CultureDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CultureDTO
      */
     public function setName(?string $name = null): self
     {

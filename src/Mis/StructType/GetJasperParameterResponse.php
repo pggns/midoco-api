@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class GetJasperParameterResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: system:MidocoJasperParameterForDisplay
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay $MidocoJasperParameterForDisplay = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay $MidocoJasperParameterForDisplay = null;
     /**
      * Constructor method for GetJasperParameterResponse
      * @uses GetJasperParameterResponse::setMidocoJasperParameterForDisplay()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay $midocoJasperParameterForDisplay
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay $midocoJasperParameterForDisplay
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay $midocoJasperParameterForDisplay = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay $midocoJasperParameterForDisplay = null)
     {
         $this
             ->setMidocoJasperParameterForDisplay($midocoJasperParameterForDisplay);
     }
     /**
      * Get MidocoJasperParameterForDisplay value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay|null
      */
-    public function getMidocoJasperParameterForDisplay(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay
+    public function getMidocoJasperParameterForDisplay(): ?\Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay
     {
         return $this->MidocoJasperParameterForDisplay;
     }
     /**
      * Set MidocoJasperParameterForDisplay value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay $midocoJasperParameterForDisplay
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetJasperParameterResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay $midocoJasperParameterForDisplay
+     * @return \Pggns\MidocoApi\Mis\StructType\GetJasperParameterResponse
      */
-    public function setMidocoJasperParameterForDisplay(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterForDisplay $midocoJasperParameterForDisplay = null): self
+    public function setMidocoJasperParameterForDisplay(?\Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterForDisplay $midocoJasperParameterForDisplay = null): self
     {
         $this->MidocoJasperParameterForDisplay = $midocoJasperParameterForDisplay;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoProfileAttribute extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: GdsProfileAttribute
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\GdsProfileAttribute[]
+     * @var \Pggns\MidocoApi\Documents\StructType\GdsProfileAttribute[]
      */
     protected ?array $GdsProfileAttribute = null;
     /**
@@ -43,7 +43,7 @@ class MidocoProfileAttribute extends AbstractStructBase
      * @uses MidocoProfileAttribute::setId()
      * @uses MidocoProfileAttribute::setType()
      * @uses MidocoProfileAttribute::setValue()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\GdsProfileAttribute[] $gdsProfileAttribute
+     * @param \Pggns\MidocoApi\Documents\StructType\GdsProfileAttribute[] $gdsProfileAttribute
      * @param int $id
      * @param string $type
      * @param string $value
@@ -58,7 +58,7 @@ class MidocoProfileAttribute extends AbstractStructBase
     }
     /**
      * Get GdsProfileAttribute value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GdsProfileAttribute[]
+     * @return \Pggns\MidocoApi\Documents\StructType\GdsProfileAttribute[]
      */
     public function getGdsProfileAttribute(): ?array
     {
@@ -79,12 +79,12 @@ class MidocoProfileAttribute extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoProfileAttributeGdsProfileAttributeItem) {
             // validation for constraint: itemType
-            if (!$midocoProfileAttributeGdsProfileAttributeItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\GdsProfileAttribute) {
+            if (!$midocoProfileAttributeGdsProfileAttributeItem instanceof \Pggns\MidocoApi\Documents\StructType\GdsProfileAttribute) {
                 $invalidValues[] = is_object($midocoProfileAttributeGdsProfileAttributeItem) ? get_class($midocoProfileAttributeGdsProfileAttributeItem) : sprintf('%s(%s)', gettype($midocoProfileAttributeGdsProfileAttributeItem), var_export($midocoProfileAttributeGdsProfileAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The GdsProfileAttribute property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\GdsProfileAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The GdsProfileAttribute property can only contain items of type \Pggns\MidocoApi\Documents\StructType\GdsProfileAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -93,8 +93,8 @@ class MidocoProfileAttribute extends AbstractStructBase
     /**
      * Set GdsProfileAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\GdsProfileAttribute[] $gdsProfileAttribute
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute
+     * @param \Pggns\MidocoApi\Documents\StructType\GdsProfileAttribute[] $gdsProfileAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute
      */
     public function setGdsProfileAttribute(?array $gdsProfileAttribute = null): self
     {
@@ -109,14 +109,14 @@ class MidocoProfileAttribute extends AbstractStructBase
     /**
      * Add item to GdsProfileAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\GdsProfileAttribute $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute
+     * @param \Pggns\MidocoApi\Documents\StructType\GdsProfileAttribute $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute
      */
-    public function addToGdsProfileAttribute(\Pggns\MidocoApi\Api\Documents\StructType\GdsProfileAttribute $item): self
+    public function addToGdsProfileAttribute(\Pggns\MidocoApi\Documents\StructType\GdsProfileAttribute $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\GdsProfileAttribute) {
-            throw new InvalidArgumentException(sprintf('The GdsProfileAttribute property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\GdsProfileAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\GdsProfileAttribute) {
+            throw new InvalidArgumentException(sprintf('The GdsProfileAttribute property can only contain items of type \Pggns\MidocoApi\Documents\StructType\GdsProfileAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->GdsProfileAttribute[] = $item;
         
@@ -133,7 +133,7 @@ class MidocoProfileAttribute extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute
      */
     public function setId(?int $id = null): self
     {
@@ -156,7 +156,7 @@ class MidocoProfileAttribute extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute
      */
     public function setType(?string $type = null): self
     {
@@ -179,7 +179,7 @@ class MidocoProfileAttribute extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute
      */
     public function setValue(?string $value = null): self
     {

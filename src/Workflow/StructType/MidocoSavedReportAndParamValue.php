@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,24 +18,24 @@ class MidocoSavedReportAndParamValue extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoJasperReportParamValue
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\JasperReportParamValueDTO[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\JasperReportParamValueDTO[]
      */
     protected ?array $MidocoJasperReportParamValue = null;
     /**
      * The MidocoSavedReport
      * Meta information extracted from the WSDL
      * - ref: MidocoSavedReport
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoSavedReport|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoSavedReport|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoSavedReport $MidocoSavedReport = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\MidocoSavedReport $MidocoSavedReport = null;
     /**
      * Constructor method for MidocoSavedReportAndParamValue
      * @uses MidocoSavedReportAndParamValue::setMidocoJasperReportParamValue()
      * @uses MidocoSavedReportAndParamValue::setMidocoSavedReport()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\JasperReportParamValueDTO[] $midocoJasperReportParamValue
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoSavedReport $midocoSavedReport
+     * @param \Pggns\MidocoApi\Workflow\StructType\JasperReportParamValueDTO[] $midocoJasperReportParamValue
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoSavedReport $midocoSavedReport
      */
-    public function __construct(?array $midocoJasperReportParamValue = null, ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoSavedReport $midocoSavedReport = null)
+    public function __construct(?array $midocoJasperReportParamValue = null, ?\Pggns\MidocoApi\Workflow\StructType\MidocoSavedReport $midocoSavedReport = null)
     {
         $this
             ->setMidocoJasperReportParamValue($midocoJasperReportParamValue)
@@ -43,7 +43,7 @@ class MidocoSavedReportAndParamValue extends AbstractStructBase
     }
     /**
      * Get MidocoJasperReportParamValue value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\JasperReportParamValueDTO[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\JasperReportParamValueDTO[]
      */
     public function getMidocoJasperReportParamValue(): ?array
     {
@@ -64,12 +64,12 @@ class MidocoSavedReportAndParamValue extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSavedReportAndParamValueMidocoJasperReportParamValueItem) {
             // validation for constraint: itemType
-            if (!$midocoSavedReportAndParamValueMidocoJasperReportParamValueItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\JasperReportParamValueDTO) {
+            if (!$midocoSavedReportAndParamValueMidocoJasperReportParamValueItem instanceof \Pggns\MidocoApi\Workflow\StructType\JasperReportParamValueDTO) {
                 $invalidValues[] = is_object($midocoSavedReportAndParamValueMidocoJasperReportParamValueItem) ? get_class($midocoSavedReportAndParamValueMidocoJasperReportParamValueItem) : sprintf('%s(%s)', gettype($midocoSavedReportAndParamValueMidocoJasperReportParamValueItem), var_export($midocoSavedReportAndParamValueMidocoJasperReportParamValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoJasperReportParamValue property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\JasperReportParamValueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoJasperReportParamValue property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\JasperReportParamValueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -78,8 +78,8 @@ class MidocoSavedReportAndParamValue extends AbstractStructBase
     /**
      * Set MidocoJasperReportParamValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\JasperReportParamValueDTO[] $midocoJasperReportParamValue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoSavedReportAndParamValue
+     * @param \Pggns\MidocoApi\Workflow\StructType\JasperReportParamValueDTO[] $midocoJasperReportParamValue
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoSavedReportAndParamValue
      */
     public function setMidocoJasperReportParamValue(?array $midocoJasperReportParamValue = null): self
     {
@@ -94,14 +94,14 @@ class MidocoSavedReportAndParamValue extends AbstractStructBase
     /**
      * Add item to MidocoJasperReportParamValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\JasperReportParamValueDTO $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoSavedReportAndParamValue
+     * @param \Pggns\MidocoApi\Workflow\StructType\JasperReportParamValueDTO $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoSavedReportAndParamValue
      */
-    public function addToMidocoJasperReportParamValue(\Pggns\MidocoApi\Api\Workflow\StructType\JasperReportParamValueDTO $item): self
+    public function addToMidocoJasperReportParamValue(\Pggns\MidocoApi\Workflow\StructType\JasperReportParamValueDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\JasperReportParamValueDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoJasperReportParamValue property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\JasperReportParamValueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\JasperReportParamValueDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoJasperReportParamValue property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\JasperReportParamValueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoJasperReportParamValue[] = $item;
         
@@ -109,18 +109,18 @@ class MidocoSavedReportAndParamValue extends AbstractStructBase
     }
     /**
      * Get MidocoSavedReport value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoSavedReport|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoSavedReport|null
      */
-    public function getMidocoSavedReport(): ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoSavedReport
+    public function getMidocoSavedReport(): ?\Pggns\MidocoApi\Workflow\StructType\MidocoSavedReport
     {
         return $this->MidocoSavedReport;
     }
     /**
      * Set MidocoSavedReport value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoSavedReport $midocoSavedReport
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoSavedReportAndParamValue
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoSavedReport $midocoSavedReport
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoSavedReportAndParamValue
      */
-    public function setMidocoSavedReport(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoSavedReport $midocoSavedReport = null): self
+    public function setMidocoSavedReport(?\Pggns\MidocoApi\Workflow\StructType\MidocoSavedReport $midocoSavedReport = null): self
     {
         $this->MidocoSavedReport = $midocoSavedReport;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\ServiceType;
+namespace Pggns\MidocoApi\Workflow\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Delete extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Workflow\ServiceType\Delete
+     * @return \Pggns\MidocoApi\Workflow\ServiceType\Delete
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\DeleteSubjectRequest $paramDeleteSubjectRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteSubjectResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\DeleteSubjectRequest $paramDeleteSubjectRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteSubjectResponse|bool
      */
-    public function deleteSubject(\Pggns\MidocoApi\Api\Workflow\StructType\DeleteSubjectRequest $paramDeleteSubjectRequest)
+    public function deleteSubject(\Pggns\MidocoApi\Workflow\StructType\DeleteSubjectRequest $paramDeleteSubjectRequest)
     {
         try {
             $this->setResult($resultDeleteSubject = $this->getSoapClient()->__soapCall('deleteSubject', [
@@ -58,15 +58,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\DeleteGlobalNoticesRequest $paramDeleteGlobalNoticesRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteGlobalNoticesResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\DeleteGlobalNoticesRequest $paramDeleteGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteGlobalNoticesResponse|bool
      */
-    public function deleteGlobalNotices(\Pggns\MidocoApi\Api\Workflow\StructType\DeleteGlobalNoticesRequest $paramDeleteGlobalNoticesRequest)
+    public function deleteGlobalNotices(\Pggns\MidocoApi\Workflow\StructType\DeleteGlobalNoticesRequest $paramDeleteGlobalNoticesRequest)
     {
         try {
             $this->setResult($resultDeleteGlobalNotices = $this->getSoapClient()->__soapCall('deleteGlobalNotices', [
@@ -85,15 +85,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskDefinitionRequest $paramDeleteMidocoTaskDefinitionRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskDefinitionResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskDefinitionRequest $paramDeleteMidocoTaskDefinitionRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskDefinitionResponse|bool
      */
-    public function deleteMidocoTaskDefinition(\Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskDefinitionRequest $paramDeleteMidocoTaskDefinitionRequest)
+    public function deleteMidocoTaskDefinition(\Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskDefinitionRequest $paramDeleteMidocoTaskDefinitionRequest)
     {
         try {
             $this->setResult($resultDeleteMidocoTaskDefinition = $this->getSoapClient()->__soapCall('deleteMidocoTaskDefinition', [
@@ -112,15 +112,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskPriorityRequest $paramDeleteMidocoTaskPriorityRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskPriorityResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskPriorityRequest $paramDeleteMidocoTaskPriorityRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskPriorityResponse|bool
      */
-    public function deleteMidocoTaskPriority(\Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskPriorityRequest $paramDeleteMidocoTaskPriorityRequest)
+    public function deleteMidocoTaskPriority(\Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskPriorityRequest $paramDeleteMidocoTaskPriorityRequest)
     {
         try {
             $this->setResult($resultDeleteMidocoTaskPriority = $this->getSoapClient()->__soapCall('deleteMidocoTaskPriority', [
@@ -140,15 +140,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskDefinitionDescriptionRequest $paramDeleteMidocoTaskDefinitionDescriptionRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskDefinitionDescriptionResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskDefinitionDescriptionRequest $paramDeleteMidocoTaskDefinitionDescriptionRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskDefinitionDescriptionResponse|bool
      */
-    public function deleteMidocoTaskDefinitionDescription(\Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskDefinitionDescriptionRequest $paramDeleteMidocoTaskDefinitionDescriptionRequest)
+    public function deleteMidocoTaskDefinitionDescription(\Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskDefinitionDescriptionRequest $paramDeleteMidocoTaskDefinitionDescriptionRequest)
     {
         try {
             $this->setResult($resultDeleteMidocoTaskDefinitionDescription = $this->getSoapClient()->__soapCall('deleteMidocoTaskDefinitionDescription', [
@@ -167,15 +167,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleDefinitionRequest $paramDeleteRuleDefinitionRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleDefinitionResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\DeleteRuleDefinitionRequest $paramDeleteRuleDefinitionRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteRuleDefinitionResponse|bool
      */
-    public function deleteRuleDefinition(\Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleDefinitionRequest $paramDeleteRuleDefinitionRequest)
+    public function deleteRuleDefinition(\Pggns\MidocoApi\Workflow\StructType\DeleteRuleDefinitionRequest $paramDeleteRuleDefinitionRequest)
     {
         try {
             $this->setResult($resultDeleteRuleDefinition = $this->getSoapClient()->__soapCall('deleteRuleDefinition', [
@@ -194,15 +194,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaOrderRequest $paramDeleteRuleCriteriaOrderRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaOrderResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaOrderRequest $paramDeleteRuleCriteriaOrderRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaOrderResponse|bool
      */
-    public function deleteRuleCriteriaOrder(\Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaOrderRequest $paramDeleteRuleCriteriaOrderRequest)
+    public function deleteRuleCriteriaOrder(\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaOrderRequest $paramDeleteRuleCriteriaOrderRequest)
     {
         try {
             $this->setResult($resultDeleteRuleCriteriaOrder = $this->getSoapClient()->__soapCall('deleteRuleCriteriaOrder', [
@@ -221,15 +221,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaCrmAttributeRequest $paramDeleteRuleCriteriaCrmAttributeRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaCrmAttributeResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmAttributeRequest $paramDeleteRuleCriteriaCrmAttributeRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmAttributeResponse|bool
      */
-    public function deleteRuleCriteriaCrmAttribute(\Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaCrmAttributeRequest $paramDeleteRuleCriteriaCrmAttributeRequest)
+    public function deleteRuleCriteriaCrmAttribute(\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmAttributeRequest $paramDeleteRuleCriteriaCrmAttributeRequest)
     {
         try {
             $this->setResult($resultDeleteRuleCriteriaCrmAttribute = $this->getSoapClient()->__soapCall('deleteRuleCriteriaCrmAttribute', [
@@ -248,15 +248,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaCrmRequest $paramDeleteRuleCriteriaCrmRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaCrmResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmRequest $paramDeleteRuleCriteriaCrmRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmResponse|bool
      */
-    public function deleteRuleCriteriaCrm(\Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaCrmRequest $paramDeleteRuleCriteriaCrmRequest)
+    public function deleteRuleCriteriaCrm(\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmRequest $paramDeleteRuleCriteriaCrmRequest)
     {
         try {
             $this->setResult($resultDeleteRuleCriteriaCrm = $this->getSoapClient()->__soapCall('deleteRuleCriteriaCrm', [
@@ -275,15 +275,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaOrderAttributeRequest $paramDeleteRuleCriteriaOrderAttributeRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaOrderAttributeResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaOrderAttributeRequest $paramDeleteRuleCriteriaOrderAttributeRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaOrderAttributeResponse|bool
      */
-    public function deleteRuleCriteriaOrderAttribute(\Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaOrderAttributeRequest $paramDeleteRuleCriteriaOrderAttributeRequest)
+    public function deleteRuleCriteriaOrderAttribute(\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaOrderAttributeRequest $paramDeleteRuleCriteriaOrderAttributeRequest)
     {
         try {
             $this->setResult($resultDeleteRuleCriteriaOrderAttribute = $this->getSoapClient()->__soapCall('deleteRuleCriteriaOrderAttribute', [
@@ -300,7 +300,7 @@ class Delete extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteGlobalNoticesResponse|\Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskDefinitionDescriptionResponse|\Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskDefinitionResponse|\Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskPriorityResponse|\Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaCrmAttributeResponse|\Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaCrmResponse|\Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaOrderAttributeResponse|\Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleCriteriaOrderResponse|\Pggns\MidocoApi\Api\Workflow\StructType\DeleteRuleDefinitionResponse|\Pggns\MidocoApi\Api\Workflow\StructType\DeleteSubjectResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteGlobalNoticesResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskDefinitionDescriptionResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskDefinitionResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskPriorityResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmAttributeResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaOrderAttributeResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaOrderResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleDefinitionResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteSubjectResponse
      */
     public function getResult()
     {

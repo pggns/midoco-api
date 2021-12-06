@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMarketingKeysLocalizedForTypeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMarketingKeyLocalized
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMarketingKeyLocalized[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoMarketingKeyLocalized[]
      */
     protected ?array $MidocoMarketingKeyLocalized = null;
     /**
      * Constructor method for GetMarketingKeysLocalizedForTypeResponse
      * @uses GetMarketingKeysLocalizedForTypeResponse::setMidocoMarketingKeyLocalized()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMarketingKeyLocalized[] $midocoMarketingKeyLocalized
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoMarketingKeyLocalized[] $midocoMarketingKeyLocalized
      */
     public function __construct(?array $midocoMarketingKeyLocalized = null)
     {
@@ -34,7 +34,7 @@ class GetMarketingKeysLocalizedForTypeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMarketingKeyLocalized value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMarketingKeyLocalized[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoMarketingKeyLocalized[]
      */
     public function getMidocoMarketingKeyLocalized(): ?array
     {
@@ -55,12 +55,12 @@ class GetMarketingKeysLocalizedForTypeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMarketingKeysLocalizedForTypeResponseMidocoMarketingKeyLocalizedItem) {
             // validation for constraint: itemType
-            if (!$getMarketingKeysLocalizedForTypeResponseMidocoMarketingKeyLocalizedItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMarketingKeyLocalized) {
+            if (!$getMarketingKeysLocalizedForTypeResponseMidocoMarketingKeyLocalizedItem instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoMarketingKeyLocalized) {
                 $invalidValues[] = is_object($getMarketingKeysLocalizedForTypeResponseMidocoMarketingKeyLocalizedItem) ? get_class($getMarketingKeysLocalizedForTypeResponseMidocoMarketingKeyLocalizedItem) : sprintf('%s(%s)', gettype($getMarketingKeysLocalizedForTypeResponseMidocoMarketingKeyLocalizedItem), var_export($getMarketingKeysLocalizedForTypeResponseMidocoMarketingKeyLocalizedItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMarketingKeyLocalized property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMarketingKeyLocalized, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMarketingKeyLocalized property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoMarketingKeyLocalized, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMarketingKeysLocalizedForTypeResponse extends AbstractStructBase
     /**
      * Set MidocoMarketingKeyLocalized value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMarketingKeyLocalized[] $midocoMarketingKeyLocalized
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeysLocalizedForTypeResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoMarketingKeyLocalized[] $midocoMarketingKeyLocalized
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeysLocalizedForTypeResponse
      */
     public function setMidocoMarketingKeyLocalized(?array $midocoMarketingKeyLocalized = null): self
     {
@@ -85,14 +85,14 @@ class GetMarketingKeysLocalizedForTypeResponse extends AbstractStructBase
     /**
      * Add item to MidocoMarketingKeyLocalized value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMarketingKeyLocalized $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeysLocalizedForTypeResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoMarketingKeyLocalized $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeysLocalizedForTypeResponse
      */
-    public function addToMidocoMarketingKeyLocalized(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMarketingKeyLocalized $item): self
+    public function addToMidocoMarketingKeyLocalized(\Pggns\MidocoApi\OrderSD\StructType\MidocoMarketingKeyLocalized $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMarketingKeyLocalized) {
-            throw new InvalidArgumentException(sprintf('The MidocoMarketingKeyLocalized property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMarketingKeyLocalized, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoMarketingKeyLocalized) {
+            throw new InvalidArgumentException(sprintf('The MidocoMarketingKeyLocalized property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoMarketingKeyLocalized, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMarketingKeyLocalized[] = $item;
         

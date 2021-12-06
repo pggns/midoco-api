@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoFeeGroupAssign extends FeeAssignDTO
     /**
      * Set feeGroupComment value
      * @param string $feeGroupComment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeGroupAssign
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeGroupAssign
      */
     public function setFeeGroupComment(?string $feeGroupComment = null): self
     {

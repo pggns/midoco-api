@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class FlightBooking extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: FlightSegment
-     * @var \Pggns\MidocoApi\Api\Order\StructType\FlightSegment[]
+     * @var \Pggns\MidocoApi\Order\StructType\FlightSegment[]
      */
     protected ?array $FlightSegment = null;
     /**
@@ -28,7 +28,7 @@ class FlightBooking extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: Ticket
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Ticket_1[]
+     * @var \Pggns\MidocoApi\Order\StructType\Ticket_1[]
      */
     protected ?array $Ticket = null;
     /**
@@ -37,7 +37,7 @@ class FlightBooking extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: TicketPrice
-     * @var \Pggns\MidocoApi\Api\Order\StructType\TicketPrice[]
+     * @var \Pggns\MidocoApi\Order\StructType\TicketPrice[]
      */
     protected ?array $TicketPrice = null;
     /**
@@ -46,7 +46,7 @@ class FlightBooking extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: SpecialServiceRequest
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest_1[]
+     * @var \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest_1[]
      */
     protected ?array $SpecialServiceRequest = null;
     /**
@@ -55,7 +55,7 @@ class FlightBooking extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: BaggageAllowance
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowance[]
+     * @var \Pggns\MidocoApi\Order\StructType\BaggageAllowance[]
      */
     protected ?array $BaggageAllowance = null;
     /**
@@ -73,7 +73,7 @@ class FlightBooking extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: TravelerTotalPrice
-     * @var \Pggns\MidocoApi\Api\Order\StructType\TravelerTotalPrice[]
+     * @var \Pggns\MidocoApi\Order\StructType\TravelerTotalPrice[]
      */
     protected ?array $TravelerTotalPrice = null;
     /**
@@ -146,13 +146,13 @@ class FlightBooking extends AbstractStructBase
      * @uses FlightBooking::setExtId()
      * @uses FlightBooking::setSourceSystem()
      * @uses FlightBooking::setSourceExtId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\FlightSegment[] $flightSegment
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Ticket_1[] $ticket
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TicketPrice[] $ticketPrice
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest_1[] $specialServiceRequest
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowance[] $baggageAllowance
+     * @param \Pggns\MidocoApi\Order\StructType\FlightSegment[] $flightSegment
+     * @param \Pggns\MidocoApi\Order\StructType\Ticket_1[] $ticket
+     * @param \Pggns\MidocoApi\Order\StructType\TicketPrice[] $ticketPrice
+     * @param \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest_1[] $specialServiceRequest
+     * @param \Pggns\MidocoApi\Order\StructType\BaggageAllowance[] $baggageAllowance
      * @param int[] $travelerRefId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TravelerTotalPrice[] $travelerTotalPrice
+     * @param \Pggns\MidocoApi\Order\StructType\TravelerTotalPrice[] $travelerTotalPrice
      * @param int $bookingPosition
      * @param string $supplierId
      * @param string $bookingId
@@ -185,7 +185,7 @@ class FlightBooking extends AbstractStructBase
     }
     /**
      * Get FlightSegment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightSegment[]
+     * @return \Pggns\MidocoApi\Order\StructType\FlightSegment[]
      */
     public function getFlightSegment(): ?array
     {
@@ -206,12 +206,12 @@ class FlightBooking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $flightBookingFlightSegmentItem) {
             // validation for constraint: itemType
-            if (!$flightBookingFlightSegmentItem instanceof \Pggns\MidocoApi\Api\Order\StructType\FlightSegment) {
+            if (!$flightBookingFlightSegmentItem instanceof \Pggns\MidocoApi\Order\StructType\FlightSegment) {
                 $invalidValues[] = is_object($flightBookingFlightSegmentItem) ? get_class($flightBookingFlightSegmentItem) : sprintf('%s(%s)', gettype($flightBookingFlightSegmentItem), var_export($flightBookingFlightSegmentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The FlightSegment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\FlightSegment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The FlightSegment property can only contain items of type \Pggns\MidocoApi\Order\StructType\FlightSegment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -220,8 +220,8 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set FlightSegment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\FlightSegment[] $flightSegment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @param \Pggns\MidocoApi\Order\StructType\FlightSegment[] $flightSegment
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setFlightSegment(?array $flightSegment = null): self
     {
@@ -236,14 +236,14 @@ class FlightBooking extends AbstractStructBase
     /**
      * Add item to FlightSegment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\FlightSegment $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @param \Pggns\MidocoApi\Order\StructType\FlightSegment $item
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
-    public function addToFlightSegment(\Pggns\MidocoApi\Api\Order\StructType\FlightSegment $item): self
+    public function addToFlightSegment(\Pggns\MidocoApi\Order\StructType\FlightSegment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\FlightSegment) {
-            throw new InvalidArgumentException(sprintf('The FlightSegment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\FlightSegment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\FlightSegment) {
+            throw new InvalidArgumentException(sprintf('The FlightSegment property can only contain items of type \Pggns\MidocoApi\Order\StructType\FlightSegment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->FlightSegment[] = $item;
         
@@ -251,7 +251,7 @@ class FlightBooking extends AbstractStructBase
     }
     /**
      * Get Ticket value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Ticket_1[]
+     * @return \Pggns\MidocoApi\Order\StructType\Ticket_1[]
      */
     public function getTicket(): ?array
     {
@@ -272,12 +272,12 @@ class FlightBooking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $flightBookingTicketItem) {
             // validation for constraint: itemType
-            if (!$flightBookingTicketItem instanceof \Pggns\MidocoApi\Api\Order\StructType\Ticket_1) {
+            if (!$flightBookingTicketItem instanceof \Pggns\MidocoApi\Order\StructType\Ticket_1) {
                 $invalidValues[] = is_object($flightBookingTicketItem) ? get_class($flightBookingTicketItem) : sprintf('%s(%s)', gettype($flightBookingTicketItem), var_export($flightBookingTicketItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Ticket property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Ticket_1, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Ticket property can only contain items of type \Pggns\MidocoApi\Order\StructType\Ticket_1, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -286,8 +286,8 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set Ticket value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Ticket_1[] $ticket
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @param \Pggns\MidocoApi\Order\StructType\Ticket_1[] $ticket
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setTicket(?array $ticket = null): self
     {
@@ -302,14 +302,14 @@ class FlightBooking extends AbstractStructBase
     /**
      * Add item to Ticket value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Ticket_1 $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @param \Pggns\MidocoApi\Order\StructType\Ticket_1 $item
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
-    public function addToTicket(\Pggns\MidocoApi\Api\Order\StructType\Ticket_1 $item): self
+    public function addToTicket(\Pggns\MidocoApi\Order\StructType\Ticket_1 $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\Ticket_1) {
-            throw new InvalidArgumentException(sprintf('The Ticket property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Ticket_1, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\Ticket_1) {
+            throw new InvalidArgumentException(sprintf('The Ticket property can only contain items of type \Pggns\MidocoApi\Order\StructType\Ticket_1, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Ticket[] = $item;
         
@@ -317,7 +317,7 @@ class FlightBooking extends AbstractStructBase
     }
     /**
      * Get TicketPrice value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TicketPrice[]
+     * @return \Pggns\MidocoApi\Order\StructType\TicketPrice[]
      */
     public function getTicketPrice(): ?array
     {
@@ -338,12 +338,12 @@ class FlightBooking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $flightBookingTicketPriceItem) {
             // validation for constraint: itemType
-            if (!$flightBookingTicketPriceItem instanceof \Pggns\MidocoApi\Api\Order\StructType\TicketPrice) {
+            if (!$flightBookingTicketPriceItem instanceof \Pggns\MidocoApi\Order\StructType\TicketPrice) {
                 $invalidValues[] = is_object($flightBookingTicketPriceItem) ? get_class($flightBookingTicketPriceItem) : sprintf('%s(%s)', gettype($flightBookingTicketPriceItem), var_export($flightBookingTicketPriceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The TicketPrice property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\TicketPrice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The TicketPrice property can only contain items of type \Pggns\MidocoApi\Order\StructType\TicketPrice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -352,8 +352,8 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set TicketPrice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TicketPrice[] $ticketPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @param \Pggns\MidocoApi\Order\StructType\TicketPrice[] $ticketPrice
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setTicketPrice(?array $ticketPrice = null): self
     {
@@ -368,14 +368,14 @@ class FlightBooking extends AbstractStructBase
     /**
      * Add item to TicketPrice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TicketPrice $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @param \Pggns\MidocoApi\Order\StructType\TicketPrice $item
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
-    public function addToTicketPrice(\Pggns\MidocoApi\Api\Order\StructType\TicketPrice $item): self
+    public function addToTicketPrice(\Pggns\MidocoApi\Order\StructType\TicketPrice $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\TicketPrice) {
-            throw new InvalidArgumentException(sprintf('The TicketPrice property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\TicketPrice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\TicketPrice) {
+            throw new InvalidArgumentException(sprintf('The TicketPrice property can only contain items of type \Pggns\MidocoApi\Order\StructType\TicketPrice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->TicketPrice[] = $item;
         
@@ -383,7 +383,7 @@ class FlightBooking extends AbstractStructBase
     }
     /**
      * Get SpecialServiceRequest value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest_1[]
+     * @return \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest_1[]
      */
     public function getSpecialServiceRequest(): ?array
     {
@@ -404,12 +404,12 @@ class FlightBooking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $flightBookingSpecialServiceRequestItem) {
             // validation for constraint: itemType
-            if (!$flightBookingSpecialServiceRequestItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest_1) {
+            if (!$flightBookingSpecialServiceRequestItem instanceof \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest_1) {
                 $invalidValues[] = is_object($flightBookingSpecialServiceRequestItem) ? get_class($flightBookingSpecialServiceRequestItem) : sprintf('%s(%s)', gettype($flightBookingSpecialServiceRequestItem), var_export($flightBookingSpecialServiceRequestItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The SpecialServiceRequest property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest_1, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The SpecialServiceRequest property can only contain items of type \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest_1, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -418,8 +418,8 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set SpecialServiceRequest value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest_1[] $specialServiceRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @param \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest_1[] $specialServiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setSpecialServiceRequest(?array $specialServiceRequest = null): self
     {
@@ -434,14 +434,14 @@ class FlightBooking extends AbstractStructBase
     /**
      * Add item to SpecialServiceRequest value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest_1 $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @param \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest_1 $item
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
-    public function addToSpecialServiceRequest(\Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest_1 $item): self
+    public function addToSpecialServiceRequest(\Pggns\MidocoApi\Order\StructType\SpecialServiceRequest_1 $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest_1) {
-            throw new InvalidArgumentException(sprintf('The SpecialServiceRequest property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest_1, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest_1) {
+            throw new InvalidArgumentException(sprintf('The SpecialServiceRequest property can only contain items of type \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest_1, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->SpecialServiceRequest[] = $item;
         
@@ -449,7 +449,7 @@ class FlightBooking extends AbstractStructBase
     }
     /**
      * Get BaggageAllowance value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowance[]
+     * @return \Pggns\MidocoApi\Order\StructType\BaggageAllowance[]
      */
     public function getBaggageAllowance(): ?array
     {
@@ -470,12 +470,12 @@ class FlightBooking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $flightBookingBaggageAllowanceItem) {
             // validation for constraint: itemType
-            if (!$flightBookingBaggageAllowanceItem instanceof \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowance) {
+            if (!$flightBookingBaggageAllowanceItem instanceof \Pggns\MidocoApi\Order\StructType\BaggageAllowance) {
                 $invalidValues[] = is_object($flightBookingBaggageAllowanceItem) ? get_class($flightBookingBaggageAllowanceItem) : sprintf('%s(%s)', gettype($flightBookingBaggageAllowanceItem), var_export($flightBookingBaggageAllowanceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The BaggageAllowance property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowance, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The BaggageAllowance property can only contain items of type \Pggns\MidocoApi\Order\StructType\BaggageAllowance, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -484,8 +484,8 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set BaggageAllowance value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowance[] $baggageAllowance
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @param \Pggns\MidocoApi\Order\StructType\BaggageAllowance[] $baggageAllowance
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setBaggageAllowance(?array $baggageAllowance = null): self
     {
@@ -500,14 +500,14 @@ class FlightBooking extends AbstractStructBase
     /**
      * Add item to BaggageAllowance value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowance $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @param \Pggns\MidocoApi\Order\StructType\BaggageAllowance $item
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
-    public function addToBaggageAllowance(\Pggns\MidocoApi\Api\Order\StructType\BaggageAllowance $item): self
+    public function addToBaggageAllowance(\Pggns\MidocoApi\Order\StructType\BaggageAllowance $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowance) {
-            throw new InvalidArgumentException(sprintf('The BaggageAllowance property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowance, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\BaggageAllowance) {
+            throw new InvalidArgumentException(sprintf('The BaggageAllowance property can only contain items of type \Pggns\MidocoApi\Order\StructType\BaggageAllowance, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->BaggageAllowance[] = $item;
         
@@ -551,7 +551,7 @@ class FlightBooking extends AbstractStructBase
      * Set TravelerRefId value
      * @throws InvalidArgumentException
      * @param int[] $travelerRefId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setTravelerRefId(?array $travelerRefId = null): self
     {
@@ -567,7 +567,7 @@ class FlightBooking extends AbstractStructBase
      * Add item to TravelerRefId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function addToTravelerRefId(int $item): self
     {
@@ -581,7 +581,7 @@ class FlightBooking extends AbstractStructBase
     }
     /**
      * Get TravelerTotalPrice value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelerTotalPrice[]
+     * @return \Pggns\MidocoApi\Order\StructType\TravelerTotalPrice[]
      */
     public function getTravelerTotalPrice(): ?array
     {
@@ -602,12 +602,12 @@ class FlightBooking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $flightBookingTravelerTotalPriceItem) {
             // validation for constraint: itemType
-            if (!$flightBookingTravelerTotalPriceItem instanceof \Pggns\MidocoApi\Api\Order\StructType\TravelerTotalPrice) {
+            if (!$flightBookingTravelerTotalPriceItem instanceof \Pggns\MidocoApi\Order\StructType\TravelerTotalPrice) {
                 $invalidValues[] = is_object($flightBookingTravelerTotalPriceItem) ? get_class($flightBookingTravelerTotalPriceItem) : sprintf('%s(%s)', gettype($flightBookingTravelerTotalPriceItem), var_export($flightBookingTravelerTotalPriceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The TravelerTotalPrice property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\TravelerTotalPrice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The TravelerTotalPrice property can only contain items of type \Pggns\MidocoApi\Order\StructType\TravelerTotalPrice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -616,8 +616,8 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set TravelerTotalPrice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TravelerTotalPrice[] $travelerTotalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @param \Pggns\MidocoApi\Order\StructType\TravelerTotalPrice[] $travelerTotalPrice
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setTravelerTotalPrice(?array $travelerTotalPrice = null): self
     {
@@ -632,14 +632,14 @@ class FlightBooking extends AbstractStructBase
     /**
      * Add item to TravelerTotalPrice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TravelerTotalPrice $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @param \Pggns\MidocoApi\Order\StructType\TravelerTotalPrice $item
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
-    public function addToTravelerTotalPrice(\Pggns\MidocoApi\Api\Order\StructType\TravelerTotalPrice $item): self
+    public function addToTravelerTotalPrice(\Pggns\MidocoApi\Order\StructType\TravelerTotalPrice $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\TravelerTotalPrice) {
-            throw new InvalidArgumentException(sprintf('The TravelerTotalPrice property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\TravelerTotalPrice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\TravelerTotalPrice) {
+            throw new InvalidArgumentException(sprintf('The TravelerTotalPrice property can only contain items of type \Pggns\MidocoApi\Order\StructType\TravelerTotalPrice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->TravelerTotalPrice[] = $item;
         
@@ -656,7 +656,7 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -679,7 +679,7 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -702,7 +702,7 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -725,7 +725,7 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -752,7 +752,7 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -775,7 +775,7 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -798,7 +798,7 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set extId value
      * @param string $extId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setExtId(?string $extId = null): self
     {
@@ -821,7 +821,7 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set sourceSystem value
      * @param string $sourceSystem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setSourceSystem(?string $sourceSystem = null): self
     {
@@ -844,7 +844,7 @@ class FlightBooking extends AbstractStructBase
     /**
      * Set sourceExtId value
      * @param string $sourceExtId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightBooking
+     * @return \Pggns\MidocoApi\Order\StructType\FlightBooking
      */
     public function setSourceExtId(?string $sourceExtId = null): self
     {

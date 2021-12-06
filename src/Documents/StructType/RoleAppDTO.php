@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class RoleAppDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RoleAppDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RoleAppDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -78,7 +78,7 @@ class RoleAppDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RoleAppDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RoleAppDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -101,7 +101,7 @@ class RoleAppDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RoleAppDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RoleAppDTO
      */
     public function setRoleId(?int $roleId = null): self
     {

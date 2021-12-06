@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAgencyNumbersResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAgencyNumber
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO[]
      */
     protected ?array $MidocoAgencyNumber = null;
     /**
      * Constructor method for GetAgencyNumbersResponse
      * @uses GetAgencyNumbersResponse::setMidocoAgencyNumber()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO[] $midocoAgencyNumber
+     * @param \Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO[] $midocoAgencyNumber
      */
     public function __construct(?array $midocoAgencyNumber = null)
     {
@@ -34,7 +34,7 @@ class GetAgencyNumbersResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAgencyNumber value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO[]
      */
     public function getMidocoAgencyNumber(): ?array
     {
@@ -55,12 +55,12 @@ class GetAgencyNumbersResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAgencyNumbersResponseMidocoAgencyNumberItem) {
             // validation for constraint: itemType
-            if (!$getAgencyNumbersResponseMidocoAgencyNumberItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO) {
+            if (!$getAgencyNumbersResponseMidocoAgencyNumberItem instanceof \Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO) {
                 $invalidValues[] = is_object($getAgencyNumbersResponseMidocoAgencyNumberItem) ? get_class($getAgencyNumbersResponseMidocoAgencyNumberItem) : sprintf('%s(%s)', gettype($getAgencyNumbersResponseMidocoAgencyNumberItem), var_export($getAgencyNumbersResponseMidocoAgencyNumberItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAgencyNumber property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAgencyNumber property can only contain items of type \Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAgencyNumbersResponse extends AbstractStructBase
     /**
      * Set MidocoAgencyNumber value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO[] $midocoAgencyNumber
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetAgencyNumbersResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO[] $midocoAgencyNumber
+     * @return \Pggns\MidocoApi\Crm\StructType\GetAgencyNumbersResponse
      */
     public function setMidocoAgencyNumber(?array $midocoAgencyNumber = null): self
     {
@@ -85,14 +85,14 @@ class GetAgencyNumbersResponse extends AbstractStructBase
     /**
      * Add item to MidocoAgencyNumber value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetAgencyNumbersResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetAgencyNumbersResponse
      */
-    public function addToMidocoAgencyNumber(\Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO $item): self
+    public function addToMidocoAgencyNumber(\Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAgencyNumber property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\AgencyNumberDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAgencyNumber property can only contain items of type \Pggns\MidocoApi\Crm\StructType\AgencyNumberDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAgencyNumber[] = $item;
         

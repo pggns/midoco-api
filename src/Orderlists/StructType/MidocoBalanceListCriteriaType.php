@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -181,7 +181,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
      * Set accountType value
      * @throws InvalidArgumentException
      * @param string[] $accountType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setAccountType(?array $accountType = null): self
     {
@@ -197,7 +197,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
      * Add item to accountType value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function addToAccountType(string $item): self
     {
@@ -220,7 +220,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set accountIdFrom value
      * @param string $accountIdFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setAccountIdFrom(?string $accountIdFrom = null): self
     {
@@ -243,7 +243,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set accountIdTo value
      * @param string $accountIdTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setAccountIdTo(?string $accountIdTo = null): self
     {
@@ -266,7 +266,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set bookingPeriodStart value
      * @param int $bookingPeriodStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setBookingPeriodStart(?int $bookingPeriodStart = null): self
     {
@@ -289,7 +289,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set bookingPeriodEnd value
      * @param int $bookingPeriodEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setBookingPeriodEnd(?int $bookingPeriodEnd = null): self
     {
@@ -312,7 +312,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -335,7 +335,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set bookingDateStart value
      * @param string $bookingDateStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setBookingDateStart(?string $bookingDateStart = null): self
     {
@@ -358,7 +358,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set bookingDateEnd value
      * @param string $bookingDateEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setBookingDateEnd(?string $bookingDateEnd = null): self
     {
@@ -381,7 +381,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set useSummaryAccounts value
      * @param bool $useSummaryAccounts
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setUseSummaryAccounts(?bool $useSummaryAccounts = null): self
     {
@@ -404,7 +404,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set receiptDateStart value
      * @param string $receiptDateStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setReceiptDateStart(?string $receiptDateStart = null): self
     {
@@ -427,7 +427,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set receiptDateEnd value
      * @param string $receiptDateEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setReceiptDateEnd(?string $receiptDateEnd = null): self
     {
@@ -450,7 +450,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setExportId(?int $exportId = null): self
     {
@@ -473,7 +473,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -496,7 +496,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set monthlyView value
      * @param bool $monthlyView
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setMonthlyView(?bool $monthlyView = null): self
     {
@@ -519,7 +519,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     /**
      * Set isSortBalancePosition value
      * @param bool $isSortBalancePosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
      */
     public function setIsSortBalancePosition(?bool $isSortBalancePosition = null): self
     {

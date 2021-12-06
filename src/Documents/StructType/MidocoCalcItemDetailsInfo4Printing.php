@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellItemVatDivision
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemVatDivision[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSellItemVatDivision[]
      */
     protected ?array $MidocoSellItemVatDivision = null;
     /**
@@ -104,7 +104,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoInvoicePosition
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoicePosition[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoInvoicePosition[]
      */
     protected ?array $MidocoInvoicePosition = null;
     /**
@@ -113,7 +113,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoInvoiceVatPosition
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoiceVatPosition[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoInvoiceVatPosition[]
      */
     protected ?array $MidocoInvoiceVatPosition = null;
     /**
@@ -121,7 +121,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\FeeTypeLocalization[]
+     * @var \Pggns\MidocoApi\Documents\StructType\FeeTypeLocalization[]
      */
     protected ?array $FeeTypeLocalization = null;
     /**
@@ -144,7 +144,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTouchedVatCode
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType[]
+     * @var \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType[]
      */
     protected ?array $MidocoTouchedVatCode = null;
     /**
@@ -182,13 +182,13 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
      * @param int $passengerAssignment
      * @param string $supplierVatPercent
      * @param float $supplierVatAmount
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemVatDivision[] $midocoSellItemVatDivision
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoicePosition[] $midocoInvoicePosition
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoiceVatPosition[] $midocoInvoiceVatPosition
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\FeeTypeLocalization[] $feeTypeLocalization
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSellItemVatDivision[] $midocoSellItemVatDivision
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoInvoicePosition[] $midocoInvoicePosition
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoInvoiceVatPosition[] $midocoInvoiceVatPosition
+     * @param \Pggns\MidocoApi\Documents\StructType\FeeTypeLocalization[] $feeTypeLocalization
      * @param bool $isSegmentMultiply
      * @param bool $isTravellerMultiply
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType[] $midocoTouchedVatCode
+     * @param \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType[] $midocoTouchedVatCode
      */
     public function __construct(?string $supplier = null, ?string $creationDate = null, ?string $description = null, ?string $bookingId = null, ?string $status = null, ?float $price = null, ?float $oldPrice = null, ?int $itemId = null, ?array $remarks = null, ?bool $isReverseCharge = null, ?int $passengerAssignment = null, ?string $supplierVatPercent = null, ?float $supplierVatAmount = null, ?array $midocoSellItemVatDivision = null, ?array $midocoInvoicePosition = null, ?array $midocoInvoiceVatPosition = null, ?array $feeTypeLocalization = null, ?bool $isSegmentMultiply = null, ?bool $isTravellerMultiply = null, ?array $midocoTouchedVatCode = null)
     {
@@ -225,7 +225,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -248,7 +248,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -271,7 +271,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setDescription(?string $description = null): self
     {
@@ -294,7 +294,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -317,7 +317,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setStatus(?string $status = null): self
     {
@@ -340,7 +340,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setPrice(?float $price = null): self
     {
@@ -363,7 +363,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set oldPrice value
      * @param float $oldPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setOldPrice(?float $oldPrice = null): self
     {
@@ -386,7 +386,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -436,7 +436,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
      * Set remarks value
      * @throws InvalidArgumentException
      * @param string[] $remarks
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setRemarks(?array $remarks = null): self
     {
@@ -452,7 +452,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
      * Add item to remarks value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function addToRemarks(string $item): self
     {
@@ -475,7 +475,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set isReverseCharge value
      * @param bool $isReverseCharge
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setIsReverseCharge(?bool $isReverseCharge = null): self
     {
@@ -498,7 +498,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set passengerAssignment value
      * @param int $passengerAssignment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setPassengerAssignment(?int $passengerAssignment = null): self
     {
@@ -521,7 +521,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set supplierVatPercent value
      * @param string $supplierVatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setSupplierVatPercent(?string $supplierVatPercent = null): self
     {
@@ -544,7 +544,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set supplierVatAmount value
      * @param float $supplierVatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setSupplierVatAmount(?float $supplierVatAmount = null): self
     {
@@ -558,7 +558,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     }
     /**
      * Get MidocoSellItemVatDivision value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemVatDivision[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSellItemVatDivision[]
      */
     public function getMidocoSellItemVatDivision(): ?array
     {
@@ -579,12 +579,12 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCalcItemDetailsInfo4PrintingMidocoSellItemVatDivisionItem) {
             // validation for constraint: itemType
-            if (!$midocoCalcItemDetailsInfo4PrintingMidocoSellItemVatDivisionItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemVatDivision) {
+            if (!$midocoCalcItemDetailsInfo4PrintingMidocoSellItemVatDivisionItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSellItemVatDivision) {
                 $invalidValues[] = is_object($midocoCalcItemDetailsInfo4PrintingMidocoSellItemVatDivisionItem) ? get_class($midocoCalcItemDetailsInfo4PrintingMidocoSellItemVatDivisionItem) : sprintf('%s(%s)', gettype($midocoCalcItemDetailsInfo4PrintingMidocoSellItemVatDivisionItem), var_export($midocoCalcItemDetailsInfo4PrintingMidocoSellItemVatDivisionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellItemVatDivision property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemVatDivision, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellItemVatDivision property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSellItemVatDivision, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -593,8 +593,8 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set MidocoSellItemVatDivision value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemVatDivision[] $midocoSellItemVatDivision
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSellItemVatDivision[] $midocoSellItemVatDivision
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setMidocoSellItemVatDivision(?array $midocoSellItemVatDivision = null): self
     {
@@ -609,14 +609,14 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Add item to MidocoSellItemVatDivision value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemVatDivision $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSellItemVatDivision $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
-    public function addToMidocoSellItemVatDivision(\Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemVatDivision $item): self
+    public function addToMidocoSellItemVatDivision(\Pggns\MidocoApi\Documents\StructType\MidocoSellItemVatDivision $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemVatDivision) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellItemVatDivision property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSellItemVatDivision, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSellItemVatDivision) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellItemVatDivision property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSellItemVatDivision, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellItemVatDivision[] = $item;
         
@@ -624,7 +624,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     }
     /**
      * Get MidocoInvoicePosition value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoicePosition[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoInvoicePosition[]
      */
     public function getMidocoInvoicePosition(): ?array
     {
@@ -645,12 +645,12 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCalcItemDetailsInfo4PrintingMidocoInvoicePositionItem) {
             // validation for constraint: itemType
-            if (!$midocoCalcItemDetailsInfo4PrintingMidocoInvoicePositionItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoicePosition) {
+            if (!$midocoCalcItemDetailsInfo4PrintingMidocoInvoicePositionItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoInvoicePosition) {
                 $invalidValues[] = is_object($midocoCalcItemDetailsInfo4PrintingMidocoInvoicePositionItem) ? get_class($midocoCalcItemDetailsInfo4PrintingMidocoInvoicePositionItem) : sprintf('%s(%s)', gettype($midocoCalcItemDetailsInfo4PrintingMidocoInvoicePositionItem), var_export($midocoCalcItemDetailsInfo4PrintingMidocoInvoicePositionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoInvoicePosition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoicePosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoInvoicePosition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoInvoicePosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -659,8 +659,8 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set MidocoInvoicePosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoicePosition[] $midocoInvoicePosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoInvoicePosition[] $midocoInvoicePosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setMidocoInvoicePosition(?array $midocoInvoicePosition = null): self
     {
@@ -675,14 +675,14 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Add item to MidocoInvoicePosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoicePosition $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoInvoicePosition $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
-    public function addToMidocoInvoicePosition(\Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoicePosition $item): self
+    public function addToMidocoInvoicePosition(\Pggns\MidocoApi\Documents\StructType\MidocoInvoicePosition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoicePosition) {
-            throw new InvalidArgumentException(sprintf('The MidocoInvoicePosition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoicePosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoInvoicePosition) {
+            throw new InvalidArgumentException(sprintf('The MidocoInvoicePosition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoInvoicePosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoInvoicePosition[] = $item;
         
@@ -690,7 +690,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     }
     /**
      * Get MidocoInvoiceVatPosition value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoiceVatPosition[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoInvoiceVatPosition[]
      */
     public function getMidocoInvoiceVatPosition(): ?array
     {
@@ -711,12 +711,12 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCalcItemDetailsInfo4PrintingMidocoInvoiceVatPositionItem) {
             // validation for constraint: itemType
-            if (!$midocoCalcItemDetailsInfo4PrintingMidocoInvoiceVatPositionItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoiceVatPosition) {
+            if (!$midocoCalcItemDetailsInfo4PrintingMidocoInvoiceVatPositionItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoInvoiceVatPosition) {
                 $invalidValues[] = is_object($midocoCalcItemDetailsInfo4PrintingMidocoInvoiceVatPositionItem) ? get_class($midocoCalcItemDetailsInfo4PrintingMidocoInvoiceVatPositionItem) : sprintf('%s(%s)', gettype($midocoCalcItemDetailsInfo4PrintingMidocoInvoiceVatPositionItem), var_export($midocoCalcItemDetailsInfo4PrintingMidocoInvoiceVatPositionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoInvoiceVatPosition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoiceVatPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoInvoiceVatPosition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoInvoiceVatPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -725,8 +725,8 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set MidocoInvoiceVatPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoiceVatPosition[] $midocoInvoiceVatPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoInvoiceVatPosition[] $midocoInvoiceVatPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setMidocoInvoiceVatPosition(?array $midocoInvoiceVatPosition = null): self
     {
@@ -741,14 +741,14 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Add item to MidocoInvoiceVatPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoiceVatPosition $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoInvoiceVatPosition $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
-    public function addToMidocoInvoiceVatPosition(\Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoiceVatPosition $item): self
+    public function addToMidocoInvoiceVatPosition(\Pggns\MidocoApi\Documents\StructType\MidocoInvoiceVatPosition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoiceVatPosition) {
-            throw new InvalidArgumentException(sprintf('The MidocoInvoiceVatPosition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoInvoiceVatPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoInvoiceVatPosition) {
+            throw new InvalidArgumentException(sprintf('The MidocoInvoiceVatPosition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoInvoiceVatPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoInvoiceVatPosition[] = $item;
         
@@ -756,7 +756,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     }
     /**
      * Get FeeTypeLocalization value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\FeeTypeLocalization[]
+     * @return \Pggns\MidocoApi\Documents\StructType\FeeTypeLocalization[]
      */
     public function getFeeTypeLocalization(): ?array
     {
@@ -777,12 +777,12 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCalcItemDetailsInfo4PrintingFeeTypeLocalizationItem) {
             // validation for constraint: itemType
-            if (!$midocoCalcItemDetailsInfo4PrintingFeeTypeLocalizationItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\FeeTypeLocalization) {
+            if (!$midocoCalcItemDetailsInfo4PrintingFeeTypeLocalizationItem instanceof \Pggns\MidocoApi\Documents\StructType\FeeTypeLocalization) {
                 $invalidValues[] = is_object($midocoCalcItemDetailsInfo4PrintingFeeTypeLocalizationItem) ? get_class($midocoCalcItemDetailsInfo4PrintingFeeTypeLocalizationItem) : sprintf('%s(%s)', gettype($midocoCalcItemDetailsInfo4PrintingFeeTypeLocalizationItem), var_export($midocoCalcItemDetailsInfo4PrintingFeeTypeLocalizationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The FeeTypeLocalization property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\FeeTypeLocalization, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The FeeTypeLocalization property can only contain items of type \Pggns\MidocoApi\Documents\StructType\FeeTypeLocalization, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -791,8 +791,8 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set FeeTypeLocalization value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\FeeTypeLocalization[] $feeTypeLocalization
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\FeeTypeLocalization[] $feeTypeLocalization
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setFeeTypeLocalization(?array $feeTypeLocalization = null): self
     {
@@ -807,14 +807,14 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Add item to FeeTypeLocalization value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\FeeTypeLocalization $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\FeeTypeLocalization $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
-    public function addToFeeTypeLocalization(\Pggns\MidocoApi\Api\Documents\StructType\FeeTypeLocalization $item): self
+    public function addToFeeTypeLocalization(\Pggns\MidocoApi\Documents\StructType\FeeTypeLocalization $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\FeeTypeLocalization) {
-            throw new InvalidArgumentException(sprintf('The FeeTypeLocalization property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\FeeTypeLocalization, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\FeeTypeLocalization) {
+            throw new InvalidArgumentException(sprintf('The FeeTypeLocalization property can only contain items of type \Pggns\MidocoApi\Documents\StructType\FeeTypeLocalization, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->FeeTypeLocalization[] = $item;
         
@@ -831,7 +831,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set isSegmentMultiply value
      * @param bool $isSegmentMultiply
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setIsSegmentMultiply(?bool $isSegmentMultiply = null): self
     {
@@ -854,7 +854,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set isTravellerMultiply value
      * @param bool $isTravellerMultiply
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setIsTravellerMultiply(?bool $isTravellerMultiply = null): self
     {
@@ -868,7 +868,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     }
     /**
      * Get MidocoTouchedVatCode value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType[]
+     * @return \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType[]
      */
     public function getMidocoTouchedVatCode(): ?array
     {
@@ -889,12 +889,12 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCalcItemDetailsInfo4PrintingMidocoTouchedVatCodeItem) {
             // validation for constraint: itemType
-            if (!$midocoCalcItemDetailsInfo4PrintingMidocoTouchedVatCodeItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType) {
+            if (!$midocoCalcItemDetailsInfo4PrintingMidocoTouchedVatCodeItem instanceof \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType) {
                 $invalidValues[] = is_object($midocoCalcItemDetailsInfo4PrintingMidocoTouchedVatCodeItem) ? get_class($midocoCalcItemDetailsInfo4PrintingMidocoTouchedVatCodeItem) : sprintf('%s(%s)', gettype($midocoCalcItemDetailsInfo4PrintingMidocoTouchedVatCodeItem), var_export($midocoCalcItemDetailsInfo4PrintingMidocoTouchedVatCodeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTouchedVatCode property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTouchedVatCode property can only contain items of type \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -903,8 +903,8 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Set MidocoTouchedVatCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType[] $midocoTouchedVatCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType[] $midocoTouchedVatCode
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
     public function setMidocoTouchedVatCode(?array $midocoTouchedVatCode = null): self
     {
@@ -919,14 +919,14 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     /**
      * Add item to MidocoTouchedVatCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCalcItemDetailsInfo4Printing
      */
-    public function addToMidocoTouchedVatCode(\Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType $item): self
+    public function addToMidocoTouchedVatCode(\Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType) {
-            throw new InvalidArgumentException(sprintf('The MidocoTouchedVatCode property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\TouchedVatCodeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType) {
+            throw new InvalidArgumentException(sprintf('The MidocoTouchedVatCode property can only contain items of type \Pggns\MidocoApi\Documents\StructType\TouchedVatCodeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTouchedVatCode[] = $item;
         

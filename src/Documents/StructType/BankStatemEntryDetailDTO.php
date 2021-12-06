@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class BankStatemEntryDetailDTO extends AbstractStructBase
     /**
      * Set accountPosition value
      * @param int $accountPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatemEntryDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatemEntryDetailDTO
      */
     public function setAccountPosition(?int $accountPosition = null): self
     {
@@ -158,7 +158,7 @@ class BankStatemEntryDetailDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatemEntryDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatemEntryDetailDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -181,7 +181,7 @@ class BankStatemEntryDetailDTO extends AbstractStructBase
     /**
      * Set amountWithoutCharges value
      * @param float $amountWithoutCharges
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatemEntryDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatemEntryDetailDTO
      */
     public function setAmountWithoutCharges(?float $amountWithoutCharges = null): self
     {
@@ -204,7 +204,7 @@ class BankStatemEntryDetailDTO extends AbstractStructBase
     /**
      * Set creditorAccount value
      * @param string $creditorAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatemEntryDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatemEntryDetailDTO
      */
     public function setCreditorAccount(?string $creditorAccount = null): self
     {
@@ -227,7 +227,7 @@ class BankStatemEntryDetailDTO extends AbstractStructBase
     /**
      * Set creditorDesc value
      * @param string $creditorDesc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatemEntryDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatemEntryDetailDTO
      */
     public function setCreditorDesc(?string $creditorDesc = null): self
     {
@@ -250,7 +250,7 @@ class BankStatemEntryDetailDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatemEntryDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatemEntryDetailDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -273,7 +273,7 @@ class BankStatemEntryDetailDTO extends AbstractStructBase
     /**
      * Set debitorAccount value
      * @param string $debitorAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatemEntryDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatemEntryDetailDTO
      */
     public function setDebitorAccount(?string $debitorAccount = null): self
     {
@@ -296,7 +296,7 @@ class BankStatemEntryDetailDTO extends AbstractStructBase
     /**
      * Set debitorDesc value
      * @param string $debitorDesc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatemEntryDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatemEntryDetailDTO
      */
     public function setDebitorDesc(?string $debitorDesc = null): self
     {
@@ -319,7 +319,7 @@ class BankStatemEntryDetailDTO extends AbstractStructBase
     /**
      * Set endToEndId value
      * @param string $endToEndId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatemEntryDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatemEntryDetailDTO
      */
     public function setEndToEndId(?string $endToEndId = null): self
     {
@@ -342,7 +342,7 @@ class BankStatemEntryDetailDTO extends AbstractStructBase
     /**
      * Set entryPosition value
      * @param int $entryPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatemEntryDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatemEntryDetailDTO
      */
     public function setEntryPosition(?int $entryPosition = null): self
     {
@@ -365,7 +365,7 @@ class BankStatemEntryDetailDTO extends AbstractStructBase
     /**
      * Set msgId value
      * @param string $msgId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatemEntryDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatemEntryDetailDTO
      */
     public function setMsgId(?string $msgId = null): self
     {
@@ -388,7 +388,7 @@ class BankStatemEntryDetailDTO extends AbstractStructBase
     /**
      * Set pos value
      * @param int $pos
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatemEntryDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatemEntryDetailDTO
      */
     public function setPos(?int $pos = null): self
     {
@@ -411,7 +411,7 @@ class BankStatemEntryDetailDTO extends AbstractStructBase
     /**
      * Set statementId value
      * @param int $statementId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatemEntryDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatemEntryDetailDTO
      */
     public function setStatementId(?int $statementId = null): self
     {

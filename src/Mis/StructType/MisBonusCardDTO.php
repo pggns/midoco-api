@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MisBonusCardDTO extends AbstractStructBase
     /**
      * Set cardNo value
      * @param string $cardNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisBonusCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisBonusCardDTO
      */
     public function setCardNo(?string $cardNo = null): self
     {
@@ -102,7 +102,7 @@ class MisBonusCardDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisBonusCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisBonusCardDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -125,7 +125,7 @@ class MisBonusCardDTO extends AbstractStructBase
     /**
      * Set issuer value
      * @param string $issuer
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisBonusCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisBonusCardDTO
      */
     public function setIssuer(?string $issuer = null): self
     {
@@ -148,7 +148,7 @@ class MisBonusCardDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisBonusCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisBonusCardDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -171,7 +171,7 @@ class MisBonusCardDTO extends AbstractStructBase
     /**
      * Set validMonth value
      * @param int $validMonth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisBonusCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisBonusCardDTO
      */
     public function setValidMonth(?int $validMonth = null): self
     {
@@ -194,7 +194,7 @@ class MisBonusCardDTO extends AbstractStructBase
     /**
      * Set validYear value
      * @param int $validYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisBonusCardDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisBonusCardDTO
      */
     public function setValidYear(?int $validYear = null): self
     {

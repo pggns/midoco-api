@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetPackageInfoForBookingResponse extends AbstractStructBase
     /**
      * Set packageId value
      * @param string $packageId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPackageInfoForBookingResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPackageInfoForBookingResponse
      */
     public function setPackageId(?string $packageId = null): self
     {
@@ -78,7 +78,7 @@ class GetPackageInfoForBookingResponse extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPackageInfoForBookingResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPackageInfoForBookingResponse
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -101,7 +101,7 @@ class GetPackageInfoForBookingResponse extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPackageInfoForBookingResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPackageInfoForBookingResponse
      */
     public function setTravelType(?string $travelType = null): self
     {

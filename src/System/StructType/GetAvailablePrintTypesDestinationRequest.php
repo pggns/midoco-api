@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetAvailablePrintTypesDestinationRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAvailablePrintTypesDestinationRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetAvailablePrintTypesDestinationRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +70,7 @@ class GetAvailablePrintTypesDestinationRequest extends AbstractStructBase
     /**
      * Set template value
      * @param string $template
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAvailablePrintTypesDestinationRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetAvailablePrintTypesDestinationRequest
      */
     public function setTemplate(?string $template = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MisCustStatDataPYearDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataPYearDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataPYearDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -86,7 +86,7 @@ class MisCustStatDataPYearDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataPYearDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataPYearDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -109,7 +109,7 @@ class MisCustStatDataPYearDTO extends AbstractStructBase
     /**
      * Set priceSumYear value
      * @param float $priceSumYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataPYearDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataPYearDTO
      */
     public function setPriceSumYear(?float $priceSumYear = null): self
     {
@@ -132,7 +132,7 @@ class MisCustStatDataPYearDTO extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataPYearDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataPYearDTO
      */
     public function setStartDate(?string $startDate = null): self
     {

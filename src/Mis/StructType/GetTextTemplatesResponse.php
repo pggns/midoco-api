@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetTextTemplatesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCampaignTemplate
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignTemplateDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\CrmCampaignTemplateDTO[]
      */
     protected ?array $MidocoCampaignTemplate = null;
     /**
      * Constructor method for GetTextTemplatesResponse
      * @uses GetTextTemplatesResponse::setMidocoCampaignTemplate()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignTemplateDTO[] $midocoCampaignTemplate
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmCampaignTemplateDTO[] $midocoCampaignTemplate
      */
     public function __construct(?array $midocoCampaignTemplate = null)
     {
@@ -36,7 +36,7 @@ class GetTextTemplatesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCampaignTemplate value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignTemplateDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmCampaignTemplateDTO[]
      */
     public function getMidocoCampaignTemplate(): ?array
     {
@@ -57,12 +57,12 @@ class GetTextTemplatesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTextTemplatesResponseMidocoCampaignTemplateItem) {
             // validation for constraint: itemType
-            if (!$getTextTemplatesResponseMidocoCampaignTemplateItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignTemplateDTO) {
+            if (!$getTextTemplatesResponseMidocoCampaignTemplateItem instanceof \Pggns\MidocoApi\Mis\StructType\CrmCampaignTemplateDTO) {
                 $invalidValues[] = is_object($getTextTemplatesResponseMidocoCampaignTemplateItem) ? get_class($getTextTemplatesResponseMidocoCampaignTemplateItem) : sprintf('%s(%s)', gettype($getTextTemplatesResponseMidocoCampaignTemplateItem), var_export($getTextTemplatesResponseMidocoCampaignTemplateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCampaignTemplate property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignTemplateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCampaignTemplate property can only contain items of type \Pggns\MidocoApi\Mis\StructType\CrmCampaignTemplateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetTextTemplatesResponse extends AbstractStructBase
     /**
      * Set MidocoCampaignTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignTemplateDTO[] $midocoCampaignTemplate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTextTemplatesResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmCampaignTemplateDTO[] $midocoCampaignTemplate
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTextTemplatesResponse
      */
     public function setMidocoCampaignTemplate(?array $midocoCampaignTemplate = null): self
     {
@@ -87,14 +87,14 @@ class GetTextTemplatesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCampaignTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignTemplateDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTextTemplatesResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmCampaignTemplateDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTextTemplatesResponse
      */
-    public function addToMidocoCampaignTemplate(\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignTemplateDTO $item): self
+    public function addToMidocoCampaignTemplate(\Pggns\MidocoApi\Mis\StructType\CrmCampaignTemplateDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignTemplateDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCampaignTemplate property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignTemplateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\CrmCampaignTemplateDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCampaignTemplate property can only contain items of type \Pggns\MidocoApi\Mis\StructType\CrmCampaignTemplateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCampaignTemplate[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -81,7 +81,7 @@ class GetFeeGroupsRequest extends AbstractStructBase
     /**
      * Set groupId value
      * @param int $groupId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeGroupsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetFeeGroupsRequest
      */
     public function setGroupId(?int $groupId = null): self
     {
@@ -104,7 +104,7 @@ class GetFeeGroupsRequest extends AbstractStructBase
     /**
      * Set group value
      * @param string $group
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeGroupsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetFeeGroupsRequest
      */
     public function setGroup(?string $group = null): self
     {
@@ -127,7 +127,7 @@ class GetFeeGroupsRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeGroupsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetFeeGroupsRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -150,7 +150,7 @@ class GetFeeGroupsRequest extends AbstractStructBase
     /**
      * Set allUnits value
      * @param bool $allUnits
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeGroupsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetFeeGroupsRequest
      */
     public function setAllUnits(?bool $allUnits = null): self
     {
@@ -173,7 +173,7 @@ class GetFeeGroupsRequest extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeGroupsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetFeeGroupsRequest
      */
     public function setDescription(?string $description = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ValidateAddressDTO extends CrmAddressDTO
     /**
      * Set validationId value
      * @param string $validationId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ValidateAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\ValidateAddressDTO
      */
     public function setValidationId(?string $validationId = null): self
     {

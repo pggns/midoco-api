@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class HotelListRequest extends AbstractStructBase
      * The MidocoHotelListCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoHotelListCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListCriteriaType $MidocoHotelListCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListCriteriaType $MidocoHotelListCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class HotelListRequest extends AbstractStructBase
      * Constructor method for HotelListRequest
      * @uses HotelListRequest::setMidocoHotelListCriteria()
      * @uses HotelListRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListCriteriaType $midocoHotelListCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListCriteriaType $midocoHotelListCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListCriteriaType $midocoHotelListCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListCriteriaType $midocoHotelListCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoHotelListCriteria($midocoHotelListCriteria)
@@ -42,18 +42,18 @@ class HotelListRequest extends AbstractStructBase
     }
     /**
      * Get MidocoHotelListCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListCriteriaType|null
      */
-    public function getMidocoHotelListCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListCriteriaType
+    public function getMidocoHotelListCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListCriteriaType
     {
         return $this->MidocoHotelListCriteria;
     }
     /**
      * Set MidocoHotelListCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListCriteriaType $midocoHotelListCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\HotelListRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListCriteriaType $midocoHotelListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\HotelListRequest
      */
-    public function setMidocoHotelListCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListCriteriaType $midocoHotelListCriteria = null): self
+    public function setMidocoHotelListCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListCriteriaType $midocoHotelListCriteria = null): self
     {
         $this->MidocoHotelListCriteria = $midocoHotelListCriteria;
         
@@ -70,7 +70,7 @@ class HotelListRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\HotelListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\HotelListRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

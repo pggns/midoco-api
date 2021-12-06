@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveSupplierSettlementAccountRequest extends AbstractStructBase
      * The MidocoSupplierSettlementAccount
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierSettlementAccount
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementAccount|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementAccount|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementAccount $MidocoSupplierSettlementAccount = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementAccount $MidocoSupplierSettlementAccount = null;
     /**
      * Constructor method for SaveSupplierSettlementAccountRequest
      * @uses SaveSupplierSettlementAccountRequest::setMidocoSupplierSettlementAccount()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementAccount $midocoSupplierSettlementAccount
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementAccount $midocoSupplierSettlementAccount
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementAccount $midocoSupplierSettlementAccount = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementAccount $midocoSupplierSettlementAccount = null)
     {
         $this
             ->setMidocoSupplierSettlementAccount($midocoSupplierSettlementAccount);
     }
     /**
      * Get MidocoSupplierSettlementAccount value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementAccount|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementAccount|null
      */
-    public function getMidocoSupplierSettlementAccount(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementAccount
+    public function getMidocoSupplierSettlementAccount(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementAccount
     {
         return $this->MidocoSupplierSettlementAccount;
     }
     /**
      * Set MidocoSupplierSettlementAccount value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementAccount $midocoSupplierSettlementAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveSupplierSettlementAccountRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementAccount $midocoSupplierSettlementAccount
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveSupplierSettlementAccountRequest
      */
-    public function setMidocoSupplierSettlementAccount(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementAccount $midocoSupplierSettlementAccount = null): self
+    public function setMidocoSupplierSettlementAccount(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementAccount $midocoSupplierSettlementAccount = null): self
     {
         $this->MidocoSupplierSettlementAccount = $midocoSupplierSettlementAccount;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteCentralCampaignAssignedOrgUnitRequest extends AbstractStructBase
     /**
      * Set campaignOrgUnitId value
      * @param int $campaignOrgUnitId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteCentralCampaignAssignedOrgUnitRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteCentralCampaignAssignedOrgUnitRequest
      */
     public function setCampaignOrgUnitId(?int $campaignOrgUnitId = null): self
     {

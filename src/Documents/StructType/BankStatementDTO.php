@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class BankStatementDTO extends AbstractStructBase
     /**
      * Set files value
      * @param string $files
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementDTO
      */
     public function setFiles(?string $files = null): self
     {
@@ -86,7 +86,7 @@ class BankStatementDTO extends AbstractStructBase
     /**
      * Set readDate value
      * @param string $readDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementDTO
      */
     public function setReadDate(?string $readDate = null): self
     {
@@ -109,7 +109,7 @@ class BankStatementDTO extends AbstractStructBase
     /**
      * Set readUser value
      * @param int $readUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementDTO
      */
     public function setReadUser(?int $readUser = null): self
     {
@@ -132,7 +132,7 @@ class BankStatementDTO extends AbstractStructBase
     /**
      * Set statementId value
      * @param int $statementId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementDTO
      */
     public function setStatementId(?int $statementId = null): self
     {

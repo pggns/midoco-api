@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoVoucherInfo4Printing extends VoucherDTO
     /**
      * Set creationUser value
      * @param string $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVoucherInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVoucherInfo4Printing
      */
     public function setCreationUser(?string $creationUser = null): self
     {
@@ -94,7 +94,7 @@ class MidocoVoucherInfo4Printing extends VoucherDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVoucherInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVoucherInfo4Printing
      */
     public function setDescription(?string $description = null): self
     {
@@ -117,7 +117,7 @@ class MidocoVoucherInfo4Printing extends VoucherDTO
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVoucherInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVoucherInfo4Printing
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -140,7 +140,7 @@ class MidocoVoucherInfo4Printing extends VoucherDTO
     /**
      * Set voucherNoStart value
      * @param string $voucherNoStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVoucherInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVoucherInfo4Printing
      */
     public function setVoucherNoStart(?string $voucherNoStart = null): self
     {
@@ -163,7 +163,7 @@ class MidocoVoucherInfo4Printing extends VoucherDTO
     /**
      * Set voucherNoEnd value
      * @param string $voucherNoEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVoucherInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVoucherInfo4Printing
      */
     public function setVoucherNoEnd(?string $voucherNoEnd = null): self
     {

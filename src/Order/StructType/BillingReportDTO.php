@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class BillingReportDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingReportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingReportDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -134,7 +134,7 @@ class BillingReportDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingReportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingReportDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -157,7 +157,7 @@ class BillingReportDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingReportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingReportDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -180,7 +180,7 @@ class BillingReportDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingReportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingReportDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -203,7 +203,7 @@ class BillingReportDTO extends AbstractStructBase
     /**
      * Set nvsOrderNo value
      * @param string $nvsOrderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingReportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingReportDTO
      */
     public function setNvsOrderNo(?string $nvsOrderNo = null): self
     {
@@ -226,7 +226,7 @@ class BillingReportDTO extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingReportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingReportDTO
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -249,7 +249,7 @@ class BillingReportDTO extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingReportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingReportDTO
      */
     public function setPositionId(?int $positionId = null): self
     {
@@ -272,7 +272,7 @@ class BillingReportDTO extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingReportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingReportDTO
      */
     public function setPrice(?float $price = null): self
     {
@@ -295,7 +295,7 @@ class BillingReportDTO extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingReportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingReportDTO
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -318,7 +318,7 @@ class BillingReportDTO extends AbstractStructBase
     /**
      * Set referenceNo value
      * @param string $referenceNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingReportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingReportDTO
      */
     public function setReferenceNo(?string $referenceNo = null): self
     {

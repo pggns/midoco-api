@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DeleteCommunicationHistoriesResponse extends AbstractStructBase
     /**
      * Set result value
      * @param bool $result
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteCommunicationHistoriesResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteCommunicationHistoriesResponse
      */
     public function setResult(?bool $result = null): self
     {
@@ -70,7 +70,7 @@ class DeleteCommunicationHistoriesResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteCommunicationHistoriesResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteCommunicationHistoriesResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

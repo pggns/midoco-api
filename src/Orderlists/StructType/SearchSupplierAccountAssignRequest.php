@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,24 +17,24 @@ class SearchSupplierAccountAssignRequest extends AbstractStructBase
      * The MidocoSupplierAccountAssign
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierAccountAssign
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAccountAssign|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAccountAssign|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAccountAssign $MidocoSupplierAccountAssign = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAccountAssign $MidocoSupplierAccountAssign = null;
     /**
      * The MidocoSupplier
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplier
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType $MidocoSupplier = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType $MidocoSupplier = null;
     /**
      * Constructor method for SearchSupplierAccountAssignRequest
      * @uses SearchSupplierAccountAssignRequest::setMidocoSupplierAccountAssign()
      * @uses SearchSupplierAccountAssignRequest::setMidocoSupplier()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType $midocoSupplier
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType $midocoSupplier
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType $midocoSupplier = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType $midocoSupplier = null)
     {
         $this
             ->setMidocoSupplierAccountAssign($midocoSupplierAccountAssign)
@@ -42,18 +42,18 @@ class SearchSupplierAccountAssignRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierAccountAssign value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAccountAssign|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAccountAssign|null
      */
-    public function getMidocoSupplierAccountAssign(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAccountAssign
+    public function getMidocoSupplierAccountAssign(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAccountAssign
     {
         return $this->MidocoSupplierAccountAssign;
     }
     /**
      * Set MidocoSupplierAccountAssign value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SearchSupplierAccountAssignRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SearchSupplierAccountAssignRequest
      */
-    public function setMidocoSupplierAccountAssign(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign = null): self
+    public function setMidocoSupplierAccountAssign(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierAccountAssign $midocoSupplierAccountAssign = null): self
     {
         $this->MidocoSupplierAccountAssign = $midocoSupplierAccountAssign;
         
@@ -61,18 +61,18 @@ class SearchSupplierAccountAssignRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplier value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType|null
      */
-    public function getMidocoSupplier(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType
+    public function getMidocoSupplier(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType
     {
         return $this->MidocoSupplier;
     }
     /**
      * Set MidocoSupplier value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType $midocoSupplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SearchSupplierAccountAssignRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType $midocoSupplier
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SearchSupplierAccountAssignRequest
      */
-    public function setMidocoSupplier(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierType $midocoSupplier = null): self
+    public function setMidocoSupplier(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierType $midocoSupplier = null): self
     {
         $this->MidocoSupplier = $midocoSupplier;
         

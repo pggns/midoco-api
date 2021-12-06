@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class GetSavedReportListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: system:MidocoSavedReportSameParamList
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReportSameParamList[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoSavedReportSameParamList[]
      */
     protected ?array $MidocoSavedReportSameParamList = null;
     /**
      * Constructor method for GetSavedReportListResponse
      * @uses GetSavedReportListResponse::setMidocoSavedReportSameParamList()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReportSameParamList[] $midocoSavedReportSameParamList
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoSavedReportSameParamList[] $midocoSavedReportSameParamList
      */
     public function __construct(?array $midocoSavedReportSameParamList = null)
     {
@@ -33,7 +33,7 @@ class GetSavedReportListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSavedReportSameParamList value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReportSameParamList[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoSavedReportSameParamList[]
      */
     public function getMidocoSavedReportSameParamList(): ?array
     {
@@ -54,12 +54,12 @@ class GetSavedReportListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSavedReportListResponseMidocoSavedReportSameParamListItem) {
             // validation for constraint: itemType
-            if (!$getSavedReportListResponseMidocoSavedReportSameParamListItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReportSameParamList) {
+            if (!$getSavedReportListResponseMidocoSavedReportSameParamListItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoSavedReportSameParamList) {
                 $invalidValues[] = is_object($getSavedReportListResponseMidocoSavedReportSameParamListItem) ? get_class($getSavedReportListResponseMidocoSavedReportSameParamListItem) : sprintf('%s(%s)', gettype($getSavedReportListResponseMidocoSavedReportSameParamListItem), var_export($getSavedReportListResponseMidocoSavedReportSameParamListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSavedReportSameParamList property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReportSameParamList, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSavedReportSameParamList property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoSavedReportSameParamList, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class GetSavedReportListResponse extends AbstractStructBase
     /**
      * Set MidocoSavedReportSameParamList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReportSameParamList[] $midocoSavedReportSameParamList
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetSavedReportListResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoSavedReportSameParamList[] $midocoSavedReportSameParamList
+     * @return \Pggns\MidocoApi\Mis\StructType\GetSavedReportListResponse
      */
     public function setMidocoSavedReportSameParamList(?array $midocoSavedReportSameParamList = null): self
     {
@@ -84,14 +84,14 @@ class GetSavedReportListResponse extends AbstractStructBase
     /**
      * Add item to MidocoSavedReportSameParamList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReportSameParamList $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetSavedReportListResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoSavedReportSameParamList $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetSavedReportListResponse
      */
-    public function addToMidocoSavedReportSameParamList(\Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReportSameParamList $item): self
+    public function addToMidocoSavedReportSameParamList(\Pggns\MidocoApi\Mis\StructType\MidocoSavedReportSameParamList $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReportSameParamList) {
-            throw new InvalidArgumentException(sprintf('The MidocoSavedReportSameParamList property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoSavedReportSameParamList, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoSavedReportSameParamList) {
+            throw new InvalidArgumentException(sprintf('The MidocoSavedReportSameParamList property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoSavedReportSameParamList, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSavedReportSameParamList[] = $item;
         

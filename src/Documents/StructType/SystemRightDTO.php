@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SystemRightDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SystemRightDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SystemRightDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -78,7 +78,7 @@ class SystemRightDTO extends AbstractStructBase
     /**
      * Set isDefault value
      * @param bool $isDefault
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SystemRightDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SystemRightDTO
      */
     public function setIsDefault(?bool $isDefault = null): self
     {
@@ -101,7 +101,7 @@ class SystemRightDTO extends AbstractStructBase
     /**
      * Set rightId value
      * @param string $rightId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SystemRightDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SystemRightDTO
      */
     public function setRightId(?string $rightId = null): self
     {

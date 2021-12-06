@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class BonusAdditionDTO extends AbstractStructBase
     /**
      * Set additionId value
      * @param int $additionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BonusAdditionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BonusAdditionDTO
      */
     public function setAdditionId(?int $additionId = null): self
     {
@@ -94,7 +94,7 @@ class BonusAdditionDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BonusAdditionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BonusAdditionDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -117,7 +117,7 @@ class BonusAdditionDTO extends AbstractStructBase
     /**
      * Set bonusId value
      * @param int $bonusId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BonusAdditionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BonusAdditionDTO
      */
     public function setBonusId(?int $bonusId = null): self
     {
@@ -140,7 +140,7 @@ class BonusAdditionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BonusAdditionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BonusAdditionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -163,7 +163,7 @@ class BonusAdditionDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BonusAdditionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BonusAdditionDTO
      */
     public function setUserId(?int $userId = null): self
     {

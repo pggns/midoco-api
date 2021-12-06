@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetAttributeDefinitionLocalizationResponse extends AbstractStructBase
     /**
      * Set localization value
      * @param string $localization
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAttributeDefinitionLocalizationResponse
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAttributeDefinitionLocalizationResponse
      */
     public function setLocalization(?string $localization = null): self
     {

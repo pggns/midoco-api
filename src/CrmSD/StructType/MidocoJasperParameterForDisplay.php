@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoJasperParameterForDisplay extends JasperParameterDTO
     /**
      * Set localizedName value
      * @param string $localizedName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoJasperParameterForDisplay
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoJasperParameterForDisplay
      */
     public function setLocalizedName(?string $localizedName = null): self
     {

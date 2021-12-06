@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SavePrintRecipientRequest extends AbstractStructBase
      * The MidocoPrintRecipient
      * Meta information extracted from the WSDL
      * - ref: MidocoPrintRecipient
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoPrintRecipient|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoPrintRecipient $MidocoPrintRecipient = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient $MidocoPrintRecipient = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +29,10 @@ class SavePrintRecipientRequest extends AbstractStructBase
      * Constructor method for SavePrintRecipientRequest
      * @uses SavePrintRecipientRequest::setMidocoPrintRecipient()
      * @uses SavePrintRecipientRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoPrintRecipient $midocoPrintRecipient
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient $midocoPrintRecipient
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoPrintRecipient $midocoPrintRecipient = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient $midocoPrintRecipient = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoPrintRecipient($midocoPrintRecipient)
@@ -40,18 +40,18 @@ class SavePrintRecipientRequest extends AbstractStructBase
     }
     /**
      * Get MidocoPrintRecipient value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoPrintRecipient|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient|null
      */
-    public function getMidocoPrintRecipient(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoPrintRecipient
+    public function getMidocoPrintRecipient(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient
     {
         return $this->MidocoPrintRecipient;
     }
     /**
      * Set MidocoPrintRecipient value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoPrintRecipient $midocoPrintRecipient
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SavePrintRecipientRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient $midocoPrintRecipient
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SavePrintRecipientRequest
      */
-    public function setMidocoPrintRecipient(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoPrintRecipient $midocoPrintRecipient = null): self
+    public function setMidocoPrintRecipient(?\Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient $midocoPrintRecipient = null): self
     {
         $this->MidocoPrintRecipient = $midocoPrintRecipient;
         
@@ -68,7 +68,7 @@ class SavePrintRecipientRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SavePrintRecipientRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SavePrintRecipientRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

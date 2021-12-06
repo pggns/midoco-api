@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -174,7 +174,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -197,7 +197,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set baseAmount value
      * @param float $baseAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setBaseAmount(?float $baseAmount = null): self
     {
@@ -220,7 +220,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -243,7 +243,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set bookingPrice value
      * @param float $bookingPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setBookingPrice(?float $bookingPrice = null): self
     {
@@ -266,7 +266,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set calculatedCommissionAmount value
      * @param float $calculatedCommissionAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setCalculatedCommissionAmount(?float $calculatedCommissionAmount = null): self
     {
@@ -289,7 +289,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set commissionPercent value
      * @param float $commissionPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setCommissionPercent(?float $commissionPercent = null): self
     {
@@ -312,7 +312,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -335,7 +335,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set excludedFromTotal value
      * @param bool $excludedFromTotal
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setExcludedFromTotal(?bool $excludedFromTotal = null): self
     {
@@ -358,7 +358,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set feeAmount value
      * @param float $feeAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setFeeAmount(?float $feeAmount = null): self
     {
@@ -381,7 +381,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -404,7 +404,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set mediatorBillingId value
      * @param int $mediatorBillingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setMediatorBillingId(?int $mediatorBillingId = null): self
     {
@@ -427,7 +427,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set paidCommissionAmount value
      * @param float $paidCommissionAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setPaidCommissionAmount(?float $paidCommissionAmount = null): self
     {
@@ -450,7 +450,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -473,7 +473,7 @@ class MediatorBillingDetailDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

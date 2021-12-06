@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -207,7 +207,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -230,7 +230,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set mediatorName value
      * @param string $mediatorName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setMediatorName(?string $mediatorName = null): self
     {
@@ -253,7 +253,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -276,7 +276,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set commissionPercent value
      * @param float $commissionPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setCommissionPercent(?float $commissionPercent = null): self
     {
@@ -299,7 +299,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set commissionAmount value
      * @param float $commissionAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setCommissionAmount(?float $commissionAmount = null): self
     {
@@ -322,7 +322,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set wotAmount value
      * @param float $wotAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setWotAmount(?float $wotAmount = null): self
     {
@@ -345,7 +345,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set specialAmount value
      * @param float $specialAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setSpecialAmount(?float $specialAmount = null): self
     {
@@ -368,7 +368,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set flightAmount value
      * @param float $flightAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setFlightAmount(?float $flightAmount = null): self
     {
@@ -391,7 +391,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set hmrAmount value
      * @param float $hmrAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setHmrAmount(?float $hmrAmount = null): self
     {
@@ -414,7 +414,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set noCommissionAmount value
      * @param float $noCommissionAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setNoCommissionAmount(?float $noCommissionAmount = null): self
     {
@@ -437,7 +437,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set noOfBookings value
      * @param int $noOfBookings
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setNoOfBookings(?int $noOfBookings = null): self
     {
@@ -460,7 +460,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set specialNoOfBookings value
      * @param int $specialNoOfBookings
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setSpecialNoOfBookings(?int $specialNoOfBookings = null): self
     {
@@ -483,7 +483,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set wotNoOfBookings value
      * @param int $wotNoOfBookings
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setWotNoOfBookings(?int $wotNoOfBookings = null): self
     {
@@ -506,7 +506,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set flightNoOfBookings value
      * @param int $flightNoOfBookings
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setFlightNoOfBookings(?int $flightNoOfBookings = null): self
     {
@@ -529,7 +529,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set hmrNoOfBookings value
      * @param int $hmrNoOfBookings
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setHmrNoOfBookings(?int $hmrNoOfBookings = null): self
     {
@@ -552,7 +552,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set noCommissionNoOfBookings value
      * @param int $noCommissionNoOfBookings
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setNoCommissionNoOfBookings(?int $noCommissionNoOfBookings = null): self
     {
@@ -575,7 +575,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set wotPartPercent value
      * @param float $wotPartPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setWotPartPercent(?float $wotPartPercent = null): self
     {
@@ -598,7 +598,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set specialPartPercent value
      * @param float $specialPartPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setSpecialPartPercent(?float $specialPartPercent = null): self
     {
@@ -621,7 +621,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set flightPartPercent value
      * @param float $flightPartPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setFlightPartPercent(?float $flightPartPercent = null): self
     {
@@ -644,7 +644,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set hmrPartPercent value
      * @param float $hmrPartPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setHmrPartPercent(?float $hmrPartPercent = null): self
     {
@@ -667,7 +667,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set noCommissionPartPercent value
      * @param float $noCommissionPartPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setNoCommissionPartPercent(?float $noCommissionPartPercent = null): self
     {
@@ -690,7 +690,7 @@ class GroupAdvisorSettlementDetail extends AbstractStructBase
     /**
      * Set allBookingsTotalAmount value
      * @param float $allBookingsTotalAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlementDetail
      */
     public function setAllBookingsTotalAmount(?float $allBookingsTotalAmount = null): self
     {

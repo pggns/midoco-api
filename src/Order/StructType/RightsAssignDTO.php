@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class RightsAssignDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RightsAssignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RightsAssignDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -78,7 +78,7 @@ class RightsAssignDTO extends AbstractStructBase
     /**
      * Set rightId value
      * @param string $rightId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RightsAssignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RightsAssignDTO
      */
     public function setRightId(?string $rightId = null): self
     {
@@ -101,7 +101,7 @@ class RightsAssignDTO extends AbstractStructBase
     /**
      * Set rightName value
      * @param string $rightName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RightsAssignDTO
+     * @return \Pggns\MidocoApi\Order\StructType\RightsAssignDTO
      */
     public function setRightName(?string $rightName = null): self
     {

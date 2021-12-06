@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoBillingListResultsType extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -94,7 +94,7 @@ class MidocoBillingListResultsType extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -117,7 +117,7 @@ class MidocoBillingListResultsType extends AbstractStructBase
     /**
      * Set numberOfPositions value
      * @param int $numberOfPositions
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType
      */
     public function setNumberOfPositions(?int $numberOfPositions = null): self
     {
@@ -140,7 +140,7 @@ class MidocoBillingListResultsType extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -163,7 +163,7 @@ class MidocoBillingListResultsType extends AbstractStructBase
     /**
      * Set totalVat value
      * @param float $totalVat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListResultsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListResultsType
      */
     public function setTotalVat(?float $totalVat = null): self
     {

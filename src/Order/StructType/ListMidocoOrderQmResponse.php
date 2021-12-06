@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListMidocoOrderQmResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderQm
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderQm[]
      */
     protected ?array $MidocoOrderQm = null;
     /**
      * Constructor method for ListMidocoOrderQmResponse
      * @uses ListMidocoOrderQmResponse::setMidocoOrderQm()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm[] $midocoOrderQm
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderQm[] $midocoOrderQm
      */
     public function __construct(?array $midocoOrderQm = null)
     {
@@ -34,7 +34,7 @@ class ListMidocoOrderQmResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderQm value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderQm[]
      */
     public function getMidocoOrderQm(): ?array
     {
@@ -55,12 +55,12 @@ class ListMidocoOrderQmResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listMidocoOrderQmResponseMidocoOrderQmItem) {
             // validation for constraint: itemType
-            if (!$listMidocoOrderQmResponseMidocoOrderQmItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm) {
+            if (!$listMidocoOrderQmResponseMidocoOrderQmItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderQm) {
                 $invalidValues[] = is_object($listMidocoOrderQmResponseMidocoOrderQmItem) ? get_class($listMidocoOrderQmResponseMidocoOrderQmItem) : sprintf('%s(%s)', gettype($listMidocoOrderQmResponseMidocoOrderQmItem), var_export($listMidocoOrderQmResponseMidocoOrderQmItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderQm property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderQm property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderQm, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListMidocoOrderQmResponse extends AbstractStructBase
     /**
      * Set MidocoOrderQm value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm[] $midocoOrderQm
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ListMidocoOrderQmResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderQm[] $midocoOrderQm
+     * @return \Pggns\MidocoApi\Order\StructType\ListMidocoOrderQmResponse
      */
     public function setMidocoOrderQm(?array $midocoOrderQm = null): self
     {
@@ -85,14 +85,14 @@ class ListMidocoOrderQmResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderQm value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ListMidocoOrderQmResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderQm $item
+     * @return \Pggns\MidocoApi\Order\StructType\ListMidocoOrderQmResponse
      */
-    public function addToMidocoOrderQm(\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm $item): self
+    public function addToMidocoOrderQm(\Pggns\MidocoApi\Order\StructType\MidocoOrderQm $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderQm property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderQm) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderQm property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderQm, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderQm[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class RoleAssignDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RoleAssignDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\RoleAssignDTO
      */
     public function setRoleId(?int $roleId = null): self
     {
@@ -78,7 +78,7 @@ class RoleAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RoleAssignDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\RoleAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -101,7 +101,7 @@ class RoleAssignDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RoleAssignDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\RoleAssignDTO
      */
     public function setUserId(?int $userId = null): self
     {

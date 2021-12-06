@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -81,7 +81,7 @@ class DonateKickbackRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DonateKickbackRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DonateKickbackRequest
      */
     public function setCustomerId(int $customerId): self
     {
@@ -104,7 +104,7 @@ class DonateKickbackRequest extends AbstractStructBase
     /**
      * Set travelStartDate value
      * @param string $travelStartDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DonateKickbackRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DonateKickbackRequest
      */
     public function setTravelStartDate(string $travelStartDate): self
     {
@@ -127,7 +127,7 @@ class DonateKickbackRequest extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DonateKickbackRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DonateKickbackRequest
      */
     public function setBookingId(string $bookingId): self
     {
@@ -150,7 +150,7 @@ class DonateKickbackRequest extends AbstractStructBase
     /**
      * Set donationAmount value
      * @param float $donationAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DonateKickbackRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DonateKickbackRequest
      */
     public function setDonationAmount(float $donationAmount): self
     {
@@ -173,7 +173,7 @@ class DonateKickbackRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DonateKickbackRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DonateKickbackRequest
      */
     public function setMediatorId(string $mediatorId): self
     {

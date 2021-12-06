@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class TicketCoupon extends SegmentType
     /**
      * Set couponId value
      * @param int $couponId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TicketCoupon
+     * @return \Pggns\MidocoApi\Order\StructType\TicketCoupon
      */
     public function setCouponId(?int $couponId = null): self
     {

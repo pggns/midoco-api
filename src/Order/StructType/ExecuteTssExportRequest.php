@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -113,7 +113,7 @@ class ExecuteTssExportRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteTssExportRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -136,7 +136,7 @@ class ExecuteTssExportRequest extends AbstractStructBase
     /**
      * Set isAutomatic value
      * @param bool $isAutomatic
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteTssExportRequest
      */
     public function setIsAutomatic(?bool $isAutomatic = null): self
     {
@@ -159,7 +159,7 @@ class ExecuteTssExportRequest extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteTssExportRequest
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -182,7 +182,7 @@ class ExecuteTssExportRequest extends AbstractStructBase
     /**
      * Set transactionNo value
      * @param int $transactionNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteTssExportRequest
      */
     public function setTransactionNo(?int $transactionNo = null): self
     {
@@ -205,7 +205,7 @@ class ExecuteTssExportRequest extends AbstractStructBase
     /**
      * Set transactionNoFrom value
      * @param int $transactionNoFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteTssExportRequest
      */
     public function setTransactionNoFrom(?int $transactionNoFrom = null): self
     {
@@ -228,7 +228,7 @@ class ExecuteTssExportRequest extends AbstractStructBase
     /**
      * Set transactionNoTo value
      * @param int $transactionNoTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteTssExportRequest
      */
     public function setTransactionNoTo(?int $transactionNoTo = null): self
     {
@@ -251,7 +251,7 @@ class ExecuteTssExportRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteTssExportRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -274,7 +274,7 @@ class ExecuteTssExportRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteTssExportRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -297,7 +297,7 @@ class ExecuteTssExportRequest extends AbstractStructBase
     /**
      * Set exportAfterCancel value
      * @param bool $exportAfterCancel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteTssExportRequest
      */
     public function setExportAfterCancel(?bool $exportAfterCancel = false): self
     {
@@ -320,7 +320,7 @@ class ExecuteTssExportRequest extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteTssExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteTssExportRequest
      */
     public function setTssId(?string $tssId = null): self
     {

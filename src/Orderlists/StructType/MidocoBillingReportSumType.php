@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class MidocoBillingReportSumType extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportSumType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportSumType
      */
     public function setUserId(?int $userId = null): self
     {
@@ -126,7 +126,7 @@ class MidocoBillingReportSumType extends AbstractStructBase
     /**
      * Set creationUser value
      * @param string $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportSumType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportSumType
      */
     public function setCreationUser(?string $creationUser = null): self
     {
@@ -149,7 +149,7 @@ class MidocoBillingReportSumType extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportSumType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportSumType
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -172,7 +172,7 @@ class MidocoBillingReportSumType extends AbstractStructBase
     /**
      * Set cashAmount value
      * @param float $cashAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportSumType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportSumType
      */
     public function setCashAmount(?float $cashAmount = null): self
     {
@@ -195,7 +195,7 @@ class MidocoBillingReportSumType extends AbstractStructBase
     /**
      * Set ccCardAmount value
      * @param float $ccCardAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportSumType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportSumType
      */
     public function setCcCardAmount(?float $ccCardAmount = null): self
     {
@@ -218,7 +218,7 @@ class MidocoBillingReportSumType extends AbstractStructBase
     /**
      * Set ecCardAmount value
      * @param float $ecCardAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportSumType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportSumType
      */
     public function setEcCardAmount(?float $ecCardAmount = null): self
     {
@@ -241,7 +241,7 @@ class MidocoBillingReportSumType extends AbstractStructBase
     /**
      * Set invoiceAmount value
      * @param float $invoiceAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportSumType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportSumType
      */
     public function setInvoiceAmount(?float $invoiceAmount = null): self
     {
@@ -264,7 +264,7 @@ class MidocoBillingReportSumType extends AbstractStructBase
     /**
      * Set voucherAmount value
      * @param float $voucherAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportSumType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportSumType
      */
     public function setVoucherAmount(?float $voucherAmount = null): self
     {
@@ -287,7 +287,7 @@ class MidocoBillingReportSumType extends AbstractStructBase
     /**
      * Set othersAmount value
      * @param float $othersAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingReportSumType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingReportSumType
      */
     public function setOthersAmount(?float $othersAmount = null): self
     {

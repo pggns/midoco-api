@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -46,17 +46,17 @@ class CheckPasswordStrengthResponse extends AbstractStructBase
     }
     /**
      * Set strengthColor value
-     * @uses \Pggns\MidocoApi\Api\Mis\EnumType\StrengthColor::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Mis\EnumType\StrengthColor::getValidValues()
+     * @uses \Pggns\MidocoApi\Mis\EnumType\StrengthColor::valueIsValid()
+     * @uses \Pggns\MidocoApi\Mis\EnumType\StrengthColor::getValidValues()
      * @throws InvalidArgumentException
      * @param string $strengthColor
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CheckPasswordStrengthResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\CheckPasswordStrengthResponse
      */
     public function setStrengthColor(?string $strengthColor = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Mis\EnumType\StrengthColor::valueIsValid($strengthColor)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Mis\EnumType\StrengthColor', is_array($strengthColor) ? implode(', ', $strengthColor) : var_export($strengthColor, true), implode(', ', \Pggns\MidocoApi\Api\Mis\EnumType\StrengthColor::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Mis\EnumType\StrengthColor::valueIsValid($strengthColor)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Mis\EnumType\StrengthColor', is_array($strengthColor) ? implode(', ', $strengthColor) : var_export($strengthColor, true), implode(', ', \Pggns\MidocoApi\Mis\EnumType\StrengthColor::getValidValues())), __LINE__);
         }
         $this->strengthColor = $strengthColor;
         
@@ -73,7 +73,7 @@ class CheckPasswordStrengthResponse extends AbstractStructBase
     /**
      * Set suggestion value
      * @param string $suggestion
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CheckPasswordStrengthResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\CheckPasswordStrengthResponse
      */
     public function setSuggestion(?string $suggestion = null): self
     {

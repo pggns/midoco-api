@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class PrintSupplierReportForMediatorResponse extends AbstractStructBase
      * Set printJobId value
      * @throws InvalidArgumentException
      * @param int[] $printJobId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PrintSupplierReportForMediatorResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\PrintSupplierReportForMediatorResponse
      */
     public function setPrintJobId(?array $printJobId = null): self
     {
@@ -85,7 +85,7 @@ class PrintSupplierReportForMediatorResponse extends AbstractStructBase
      * Add item to printJobId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PrintSupplierReportForMediatorResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\PrintSupplierReportForMediatorResponse
      */
     public function addToPrintJobId(int $item): self
     {

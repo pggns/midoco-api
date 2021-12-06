@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class FillJasperReportResponse extends AbstractStructBase
     /**
      * Set file value
      * @param string $file
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FillJasperReportResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\FillJasperReportResponse
      */
     public function setFile(?string $file = null): self
     {
@@ -72,7 +72,7 @@ class FillJasperReportResponse extends AbstractStructBase
     /**
      * Set preferredFileName value
      * @param string $preferredFileName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FillJasperReportResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\FillJasperReportResponse
      */
     public function setPreferredFileName(?string $preferredFileName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoItemSellingModesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoItemSellingMode
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoItemSellingMode[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoItemSellingMode[]
      */
     protected ?array $MidocoItemSellingMode = null;
     /**
      * Constructor method for GetMidocoItemSellingModesResponse
      * @uses GetMidocoItemSellingModesResponse::setMidocoItemSellingMode()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoItemSellingMode[] $midocoItemSellingMode
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoItemSellingMode[] $midocoItemSellingMode
      */
     public function __construct(?array $midocoItemSellingMode = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoItemSellingModesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoItemSellingMode value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoItemSellingMode[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoItemSellingMode[]
      */
     public function getMidocoItemSellingMode(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoItemSellingModesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoItemSellingModesResponseMidocoItemSellingModeItem) {
             // validation for constraint: itemType
-            if (!$getMidocoItemSellingModesResponseMidocoItemSellingModeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoItemSellingMode) {
+            if (!$getMidocoItemSellingModesResponseMidocoItemSellingModeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoItemSellingMode) {
                 $invalidValues[] = is_object($getMidocoItemSellingModesResponseMidocoItemSellingModeItem) ? get_class($getMidocoItemSellingModesResponseMidocoItemSellingModeItem) : sprintf('%s(%s)', gettype($getMidocoItemSellingModesResponseMidocoItemSellingModeItem), var_export($getMidocoItemSellingModesResponseMidocoItemSellingModeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoItemSellingMode property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoItemSellingMode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoItemSellingMode property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoItemSellingMode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoItemSellingModesResponse extends AbstractStructBase
     /**
      * Set MidocoItemSellingMode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoItemSellingMode[] $midocoItemSellingMode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoItemSellingModesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoItemSellingMode[] $midocoItemSellingMode
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoItemSellingModesResponse
      */
     public function setMidocoItemSellingMode(?array $midocoItemSellingMode = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoItemSellingModesResponse extends AbstractStructBase
     /**
      * Add item to MidocoItemSellingMode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoItemSellingMode $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoItemSellingModesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoItemSellingMode $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoItemSellingModesResponse
      */
-    public function addToMidocoItemSellingMode(\Pggns\MidocoApi\Api\Order\StructType\MidocoItemSellingMode $item): self
+    public function addToMidocoItemSellingMode(\Pggns\MidocoApi\Order\StructType\MidocoItemSellingMode $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoItemSellingMode) {
-            throw new InvalidArgumentException(sprintf('The MidocoItemSellingMode property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoItemSellingMode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoItemSellingMode) {
+            throw new InvalidArgumentException(sprintf('The MidocoItemSellingMode property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoItemSellingMode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoItemSellingMode[] = $item;
         

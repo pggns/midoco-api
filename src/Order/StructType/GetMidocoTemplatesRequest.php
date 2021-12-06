@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class GetMidocoTemplatesRequest extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoTemplatesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoTemplatesRequest
      */
     public function setDescription(?string $description = null): self
     {
@@ -94,7 +94,7 @@ class GetMidocoTemplatesRequest extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoTemplatesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoTemplatesRequest
      */
     public function setTemplateId(?int $templateId = null): self
     {
@@ -117,7 +117,7 @@ class GetMidocoTemplatesRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoTemplatesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoTemplatesRequest
      */
     public function setType(?string $type = null): self
     {
@@ -140,7 +140,7 @@ class GetMidocoTemplatesRequest extends AbstractStructBase
     /**
      * Set isDefault value
      * @param bool $isDefault
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoTemplatesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoTemplatesRequest
      */
     public function setIsDefault(?bool $isDefault = null): self
     {
@@ -163,7 +163,7 @@ class GetMidocoTemplatesRequest extends AbstractStructBase
     /**
      * Set subType value
      * @param string $subType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoTemplatesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoTemplatesRequest
      */
     public function setSubType(?string $subType = null): self
     {

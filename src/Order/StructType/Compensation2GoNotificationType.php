@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class Compensation2GoNotificationType extends AbstractStructBase
     /**
      * Set status value
      * @param int $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Compensation2GoNotificationType
+     * @return \Pggns\MidocoApi\Order\StructType\Compensation2GoNotificationType
      */
     public function setStatus(?int $status = null): self
     {
@@ -118,7 +118,7 @@ class Compensation2GoNotificationType extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Compensation2GoNotificationType
+     * @return \Pggns\MidocoApi\Order\StructType\Compensation2GoNotificationType
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -141,7 +141,7 @@ class Compensation2GoNotificationType extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Compensation2GoNotificationType
+     * @return \Pggns\MidocoApi\Order\StructType\Compensation2GoNotificationType
      */
     public function setPosition(?int $position = null): self
     {
@@ -164,7 +164,7 @@ class Compensation2GoNotificationType extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Compensation2GoNotificationType
+     * @return \Pggns\MidocoApi\Order\StructType\Compensation2GoNotificationType
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -187,7 +187,7 @@ class Compensation2GoNotificationType extends AbstractStructBase
     /**
      * Set claimValue value
      * @param float $claimValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Compensation2GoNotificationType
+     * @return \Pggns\MidocoApi\Order\StructType\Compensation2GoNotificationType
      */
     public function setClaimValue(?float $claimValue = null): self
     {
@@ -210,7 +210,7 @@ class Compensation2GoNotificationType extends AbstractStructBase
     /**
      * Set compensationValue value
      * @param float $compensationValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Compensation2GoNotificationType
+     * @return \Pggns\MidocoApi\Order\StructType\Compensation2GoNotificationType
      */
     public function setCompensationValue(?float $compensationValue = null): self
     {
@@ -233,7 +233,7 @@ class Compensation2GoNotificationType extends AbstractStructBase
     /**
      * Set canceled value
      * @param bool $canceled
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Compensation2GoNotificationType
+     * @return \Pggns\MidocoApi\Order\StructType\Compensation2GoNotificationType
      */
     public function setCanceled(?bool $canceled = null): self
     {
@@ -256,7 +256,7 @@ class Compensation2GoNotificationType extends AbstractStructBase
     /**
      * Set delay value
      * @param int $delay
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Compensation2GoNotificationType
+     * @return \Pggns\MidocoApi\Order\StructType\Compensation2GoNotificationType
      */
     public function setDelay(?int $delay = null): self
     {

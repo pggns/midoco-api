@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoBonusAdditionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBonusAddition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\BonusAdditionDTO[]
      */
     protected ?array $MidocoBonusAddition = null;
     /**
      * Constructor method for GetMidocoBonusAdditionResponse
      * @uses GetMidocoBonusAdditionResponse::setMidocoBonusAddition()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO[] $midocoBonusAddition
+     * @param \Pggns\MidocoApi\Order\StructType\BonusAdditionDTO[] $midocoBonusAddition
      */
     public function __construct(?array $midocoBonusAddition = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoBonusAdditionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBonusAddition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\BonusAdditionDTO[]
      */
     public function getMidocoBonusAddition(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoBonusAdditionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoBonusAdditionResponseMidocoBonusAdditionItem) {
             // validation for constraint: itemType
-            if (!$getMidocoBonusAdditionResponseMidocoBonusAdditionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO) {
+            if (!$getMidocoBonusAdditionResponseMidocoBonusAdditionItem instanceof \Pggns\MidocoApi\Order\StructType\BonusAdditionDTO) {
                 $invalidValues[] = is_object($getMidocoBonusAdditionResponseMidocoBonusAdditionItem) ? get_class($getMidocoBonusAdditionResponseMidocoBonusAdditionItem) : sprintf('%s(%s)', gettype($getMidocoBonusAdditionResponseMidocoBonusAdditionItem), var_export($getMidocoBonusAdditionResponseMidocoBonusAdditionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBonusAddition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBonusAddition property can only contain items of type \Pggns\MidocoApi\Order\StructType\BonusAdditionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoBonusAdditionResponse extends AbstractStructBase
     /**
      * Set MidocoBonusAddition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO[] $midocoBonusAddition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoBonusAdditionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\BonusAdditionDTO[] $midocoBonusAddition
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoBonusAdditionResponse
      */
     public function setMidocoBonusAddition(?array $midocoBonusAddition = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoBonusAdditionResponse extends AbstractStructBase
     /**
      * Add item to MidocoBonusAddition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoBonusAdditionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\BonusAdditionDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoBonusAdditionResponse
      */
-    public function addToMidocoBonusAddition(\Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO $item): self
+    public function addToMidocoBonusAddition(\Pggns\MidocoApi\Order\StructType\BonusAdditionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoBonusAddition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BonusAdditionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\BonusAdditionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBonusAddition property can only contain items of type \Pggns\MidocoApi\Order\StructType\BonusAdditionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBonusAddition[] = $item;
         

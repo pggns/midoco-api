@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ParameterValue extends AbstractStructBase
     /**
      * Set isIncluded value
      * @param bool $isIncluded
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ParameterValue
+     * @return \Pggns\MidocoApi\Mis\StructType\ParameterValue
      */
     public function setIsIncluded(?bool $isIncluded = null): self
     {
@@ -70,7 +70,7 @@ class ParameterValue extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ParameterValue
+     * @return \Pggns\MidocoApi\Mis\StructType\ParameterValue
      */
     public function setValue(?string $value = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class SupplierInkassoModeType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierInkassoModeType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierInkassoModeType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -70,7 +70,7 @@ class SupplierInkassoModeType extends AbstractStructBase
     /**
      * Set mode value
      * @param int $mode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierInkassoModeType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierInkassoModeType
      */
     public function setMode(?int $mode = null): self
     {

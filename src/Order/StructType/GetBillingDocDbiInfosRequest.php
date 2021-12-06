@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class GetBillingDocDbiInfosRequest extends AbstractStructBase
     /**
      * Set dbiInfoType value
      * @param string $dbiInfoType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocDbiInfosRequest
      */
     public function setDbiInfoType(?string $dbiInfoType = null): self
     {
@@ -102,7 +102,7 @@ class GetBillingDocDbiInfosRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocDbiInfosRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -125,7 +125,7 @@ class GetBillingDocDbiInfosRequest extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocDbiInfosRequest
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -148,7 +148,7 @@ class GetBillingDocDbiInfosRequest extends AbstractStructBase
     /**
      * Set passengerAssignment value
      * @param int $passengerAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocDbiInfosRequest
      */
     public function setPassengerAssignment(?int $passengerAssignment = null): self
     {
@@ -171,7 +171,7 @@ class GetBillingDocDbiInfosRequest extends AbstractStructBase
     /**
      * Set dbiKey value
      * @param string $dbiKey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocDbiInfosRequest
      */
     public function setDbiKey(?string $dbiKey = null): self
     {
@@ -194,7 +194,7 @@ class GetBillingDocDbiInfosRequest extends AbstractStructBase
     /**
      * Set dbiArea value
      * @param string $dbiArea
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocDbiInfosRequest
      */
     public function setDbiArea(?string $dbiArea = null): self
     {

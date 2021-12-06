@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SaveDebitInfoForReceiptResponse extends AbstractStructBase
     /**
      * Set ok value
      * @param bool $ok
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveDebitInfoForReceiptResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveDebitInfoForReceiptResponse
      */
     public function setOk(?bool $ok = null): self
     {

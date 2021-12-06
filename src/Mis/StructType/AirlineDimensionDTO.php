@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class AirlineDimensionDTO extends AbstractStructBase
     /**
      * Set airlineId value
      * @param int $airlineId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AirlineDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AirlineDimensionDTO
      */
     public function setAirlineId(?int $airlineId = null): self
     {
@@ -86,7 +86,7 @@ class AirlineDimensionDTO extends AbstractStructBase
     /**
      * Set bspCode value
      * @param string $bspCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AirlineDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AirlineDimensionDTO
      */
     public function setBspCode(?string $bspCode = null): self
     {
@@ -109,7 +109,7 @@ class AirlineDimensionDTO extends AbstractStructBase
     /**
      * Set carrierCode value
      * @param string $carrierCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AirlineDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AirlineDimensionDTO
      */
     public function setCarrierCode(?string $carrierCode = null): self
     {
@@ -132,7 +132,7 @@ class AirlineDimensionDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AirlineDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AirlineDimensionDTO
      */
     public function setName(?string $name = null): self
     {

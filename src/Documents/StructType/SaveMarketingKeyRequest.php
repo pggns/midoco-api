@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMarketingKeyRequest extends AbstractStructBase
      * The MidocoMarketingKey
      * Meta information extracted from the WSDL
      * - ref: MidocoMarketingKey
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO $MidocoMarketingKey = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO $MidocoMarketingKey = null;
     /**
      * Constructor method for SaveMarketingKeyRequest
      * @uses SaveMarketingKeyRequest::setMidocoMarketingKey()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO $midocoMarketingKey
+     * @param \Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO $midocoMarketingKey
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO $midocoMarketingKey = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO $midocoMarketingKey = null)
     {
         $this
             ->setMidocoMarketingKey($midocoMarketingKey);
     }
     /**
      * Get MidocoMarketingKey value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO|null
      */
-    public function getMidocoMarketingKey(): ?\Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO
+    public function getMidocoMarketingKey(): ?\Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO
     {
         return $this->MidocoMarketingKey;
     }
     /**
      * Set MidocoMarketingKey value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO $midocoMarketingKey
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveMarketingKeyRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO $midocoMarketingKey
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveMarketingKeyRequest
      */
-    public function setMidocoMarketingKey(?\Pggns\MidocoApi\Api\Documents\StructType\MarketingKeyDTO $midocoMarketingKey = null): self
+    public function setMidocoMarketingKey(?\Pggns\MidocoApi\Documents\StructType\MarketingKeyDTO $midocoMarketingKey = null): self
     {
         $this->MidocoMarketingKey = $midocoMarketingKey;
         

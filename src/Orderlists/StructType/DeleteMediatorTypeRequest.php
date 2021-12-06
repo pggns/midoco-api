@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteMediatorTypeRequest extends AbstractStructBase
      * The MediatorTypeInfo
      * Meta information extracted from the WSDL
      * - ref: MediatorTypeInfo
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorTypeDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MediatorTypeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MediatorTypeDTO $MediatorTypeInfo = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MediatorTypeDTO $MediatorTypeInfo = null;
     /**
      * Constructor method for DeleteMediatorTypeRequest
      * @uses DeleteMediatorTypeRequest::setMediatorTypeInfo()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorTypeDTO $mediatorTypeInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MediatorTypeDTO $mediatorTypeInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MediatorTypeDTO $mediatorTypeInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MediatorTypeDTO $mediatorTypeInfo = null)
     {
         $this
             ->setMediatorTypeInfo($mediatorTypeInfo);
     }
     /**
      * Get MediatorTypeInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorTypeDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorTypeDTO|null
      */
-    public function getMediatorTypeInfo(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MediatorTypeDTO
+    public function getMediatorTypeInfo(): ?\Pggns\MidocoApi\Orderlists\StructType\MediatorTypeDTO
     {
         return $this->MediatorTypeInfo;
     }
     /**
      * Set MediatorTypeInfo value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorTypeDTO $mediatorTypeInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteMediatorTypeRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MediatorTypeDTO $mediatorTypeInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteMediatorTypeRequest
      */
-    public function setMediatorTypeInfo(?\Pggns\MidocoApi\Api\Orderlists\StructType\MediatorTypeDTO $mediatorTypeInfo = null): self
+    public function setMediatorTypeInfo(?\Pggns\MidocoApi\Orderlists\StructType\MediatorTypeDTO $mediatorTypeInfo = null): self
     {
         $this->MediatorTypeInfo = $mediatorTypeInfo;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class UpdateChangeableReceiptPositionRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoReceiptPosition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptPosition|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoReceiptPosition|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptPosition $MidocoReceiptPosition = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoReceiptPosition $MidocoReceiptPosition = null;
     /**
      * The vatCode
      * @var string|null
@@ -30,10 +30,10 @@ class UpdateChangeableReceiptPositionRequest extends AbstractStructBase
      * Constructor method for UpdateChangeableReceiptPositionRequest
      * @uses UpdateChangeableReceiptPositionRequest::setMidocoReceiptPosition()
      * @uses UpdateChangeableReceiptPositionRequest::setVatCode()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptPosition $midocoReceiptPosition
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoReceiptPosition $midocoReceiptPosition
      * @param string $vatCode
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptPosition $midocoReceiptPosition = null, ?string $vatCode = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoReceiptPosition $midocoReceiptPosition = null, ?string $vatCode = null)
     {
         $this
             ->setMidocoReceiptPosition($midocoReceiptPosition)
@@ -41,18 +41,18 @@ class UpdateChangeableReceiptPositionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoReceiptPosition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptPosition|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoReceiptPosition|null
      */
-    public function getMidocoReceiptPosition(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptPosition
+    public function getMidocoReceiptPosition(): ?\Pggns\MidocoApi\Order\StructType\MidocoReceiptPosition
     {
         return $this->MidocoReceiptPosition;
     }
     /**
      * Set MidocoReceiptPosition value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptPosition $midocoReceiptPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateChangeableReceiptPositionRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoReceiptPosition $midocoReceiptPosition
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateChangeableReceiptPositionRequest
      */
-    public function setMidocoReceiptPosition(?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceiptPosition $midocoReceiptPosition = null): self
+    public function setMidocoReceiptPosition(?\Pggns\MidocoApi\Order\StructType\MidocoReceiptPosition $midocoReceiptPosition = null): self
     {
         $this->MidocoReceiptPosition = $midocoReceiptPosition;
         
@@ -69,7 +69,7 @@ class UpdateChangeableReceiptPositionRequest extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateChangeableReceiptPositionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateChangeableReceiptPositionRequest
      */
     public function setVatCode(?string $vatCode = null): self
     {

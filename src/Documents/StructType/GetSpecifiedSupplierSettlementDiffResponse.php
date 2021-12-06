@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,33 +15,33 @@ class GetSpecifiedSupplierSettlementDiffResponse extends AbstractStructBase
 {
     /**
      * The SupplierSettlemDiffInfo
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemDiffDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\SupplierSettlemDiffDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemDiffDTO $SupplierSettlemDiffInfo = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\SupplierSettlemDiffDTO $SupplierSettlemDiffInfo = null;
     /**
      * Constructor method for GetSpecifiedSupplierSettlementDiffResponse
      * @uses GetSpecifiedSupplierSettlementDiffResponse::setSupplierSettlemDiffInfo()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemDiffDTO $supplierSettlemDiffInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\SupplierSettlemDiffDTO $supplierSettlemDiffInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemDiffDTO $supplierSettlemDiffInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\SupplierSettlemDiffDTO $supplierSettlemDiffInfo = null)
     {
         $this
             ->setSupplierSettlemDiffInfo($supplierSettlemDiffInfo);
     }
     /**
      * Get SupplierSettlemDiffInfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemDiffDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierSettlemDiffDTO|null
      */
-    public function getSupplierSettlemDiffInfo(): ?\Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemDiffDTO
+    public function getSupplierSettlemDiffInfo(): ?\Pggns\MidocoApi\Documents\StructType\SupplierSettlemDiffDTO
     {
         return $this->SupplierSettlemDiffInfo;
     }
     /**
      * Set SupplierSettlemDiffInfo value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemDiffDTO $supplierSettlemDiffInfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSpecifiedSupplierSettlementDiffResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\SupplierSettlemDiffDTO $supplierSettlemDiffInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSpecifiedSupplierSettlementDiffResponse
      */
-    public function setSupplierSettlemDiffInfo(?\Pggns\MidocoApi\Api\Documents\StructType\SupplierSettlemDiffDTO $supplierSettlemDiffInfo = null): self
+    public function setSupplierSettlemDiffInfo(?\Pggns\MidocoApi\Documents\StructType\SupplierSettlemDiffDTO $supplierSettlemDiffInfo = null): self
     {
         $this->SupplierSettlemDiffInfo = $supplierSettlemDiffInfo;
         

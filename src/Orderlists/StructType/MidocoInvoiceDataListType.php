@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoInvoiceDataListType extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -94,7 +94,7 @@ class MidocoInvoiceDataListType extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param int $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType
      */
     public function setInvoiceNo(?int $invoiceNo = null): self
     {
@@ -117,7 +117,7 @@ class MidocoInvoiceDataListType extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType
      */
     public function setAmount(?float $amount = null): self
     {
@@ -140,7 +140,7 @@ class MidocoInvoiceDataListType extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -163,7 +163,7 @@ class MidocoInvoiceDataListType extends AbstractStructBase
     /**
      * Set exportDate value
      * @param string $exportDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType
      */
     public function setExportDate(?string $exportDate = null): self
     {

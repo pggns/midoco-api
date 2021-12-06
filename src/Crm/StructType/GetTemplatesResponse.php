@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetTemplatesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmTemplate
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO[]
      */
     protected ?array $MidocoCrmTemplate = null;
     /**
      * Constructor method for GetTemplatesResponse
      * @uses GetTemplatesResponse::setMidocoCrmTemplate()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO[] $midocoCrmTemplate
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO[] $midocoCrmTemplate
      */
     public function __construct(?array $midocoCrmTemplate = null)
     {
@@ -36,7 +36,7 @@ class GetTemplatesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmTemplate value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO[]
      */
     public function getMidocoCrmTemplate(): ?array
     {
@@ -57,12 +57,12 @@ class GetTemplatesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTemplatesResponseMidocoCrmTemplateItem) {
             // validation for constraint: itemType
-            if (!$getTemplatesResponseMidocoCrmTemplateItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO) {
+            if (!$getTemplatesResponseMidocoCrmTemplateItem instanceof \Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO) {
                 $invalidValues[] = is_object($getTemplatesResponseMidocoCrmTemplateItem) ? get_class($getTemplatesResponseMidocoCrmTemplateItem) : sprintf('%s(%s)', gettype($getTemplatesResponseMidocoCrmTemplateItem), var_export($getTemplatesResponseMidocoCrmTemplateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmTemplate property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmTemplate property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetTemplatesResponse extends AbstractStructBase
     /**
      * Set MidocoCrmTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO[] $midocoCrmTemplate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTemplatesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO[] $midocoCrmTemplate
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTemplatesResponse
      */
     public function setMidocoCrmTemplate(?array $midocoCrmTemplate = null): self
     {
@@ -87,14 +87,14 @@ class GetTemplatesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTemplatesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTemplatesResponse
      */
-    public function addToMidocoCrmTemplate(\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO $item): self
+    public function addToMidocoCrmTemplate(\Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmTemplate property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmTemplate property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmTemplate[] = $item;
         

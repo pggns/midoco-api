@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ExportBillingDocumentResponse extends AbstractStructBase
     /**
      * Set BillingDocumentData value
      * @param string $billingDocumentData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBillingDocumentResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBillingDocumentResponse
      */
     public function setBillingDocumentData(?string $billingDocumentData = null): self
     {

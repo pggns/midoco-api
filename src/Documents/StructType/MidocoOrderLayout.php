@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class MidocoOrderLayout extends OrderLayoutDTO
      * The MidocoOrder
      * Meta information extracted from the WSDL
      * - ref: MidocoOrder
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderType|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoOrderType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderType $MidocoOrder = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoOrderType $MidocoOrder = null;
     /**
      * The typeDescription
      * @var string|null
@@ -29,10 +29,10 @@ class MidocoOrderLayout extends OrderLayoutDTO
      * Constructor method for MidocoOrderLayout
      * @uses MidocoOrderLayout::setMidocoOrder()
      * @uses MidocoOrderLayout::setTypeDescription()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderType $midocoOrder
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderType $midocoOrder
      * @param string $typeDescription
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderType $midocoOrder = null, ?string $typeDescription = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoOrderType $midocoOrder = null, ?string $typeDescription = null)
     {
         $this
             ->setMidocoOrder($midocoOrder)
@@ -40,18 +40,18 @@ class MidocoOrderLayout extends OrderLayoutDTO
     }
     /**
      * Get MidocoOrder value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderType|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderType|null
      */
-    public function getMidocoOrder(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderType
+    public function getMidocoOrder(): ?\Pggns\MidocoApi\Documents\StructType\MidocoOrderType
     {
         return $this->MidocoOrder;
     }
     /**
      * Set MidocoOrder value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderType $midocoOrder
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderLayout
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOrderType $midocoOrder
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderLayout
      */
-    public function setMidocoOrder(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderType $midocoOrder = null): self
+    public function setMidocoOrder(?\Pggns\MidocoApi\Documents\StructType\MidocoOrderType $midocoOrder = null): self
     {
         $this->MidocoOrder = $midocoOrder;
         
@@ -68,7 +68,7 @@ class MidocoOrderLayout extends OrderLayoutDTO
     /**
      * Set typeDescription value
      * @param string $typeDescription
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderLayout
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderLayout
      */
     public function setTypeDescription(?string $typeDescription = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class DebitorChangeLogDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorChangeLogDTO
      */
     public function setAction(?string $action = null): self
     {
@@ -86,7 +86,7 @@ class DebitorChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -109,7 +109,7 @@ class DebitorChangeLogDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorChangeLogDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -132,7 +132,7 @@ class DebitorChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {

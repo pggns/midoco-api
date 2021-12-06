@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetRolesFromProcessRoleAssignResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoProcessRoleAssign
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoProcessRoleAssign[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoProcessRoleAssign[]
      */
     protected ?array $MidocoProcessRoleAssign = null;
     /**
      * Constructor method for GetRolesFromProcessRoleAssignResponse
      * @uses GetRolesFromProcessRoleAssignResponse::setMidocoProcessRoleAssign()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoProcessRoleAssign[] $midocoProcessRoleAssign
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoProcessRoleAssign[] $midocoProcessRoleAssign
      */
     public function __construct(?array $midocoProcessRoleAssign = null)
     {
@@ -34,7 +34,7 @@ class GetRolesFromProcessRoleAssignResponse extends AbstractStructBase
     }
     /**
      * Get MidocoProcessRoleAssign value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoProcessRoleAssign[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoProcessRoleAssign[]
      */
     public function getMidocoProcessRoleAssign(): ?array
     {
@@ -55,12 +55,12 @@ class GetRolesFromProcessRoleAssignResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getRolesFromProcessRoleAssignResponseMidocoProcessRoleAssignItem) {
             // validation for constraint: itemType
-            if (!$getRolesFromProcessRoleAssignResponseMidocoProcessRoleAssignItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoProcessRoleAssign) {
+            if (!$getRolesFromProcessRoleAssignResponseMidocoProcessRoleAssignItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoProcessRoleAssign) {
                 $invalidValues[] = is_object($getRolesFromProcessRoleAssignResponseMidocoProcessRoleAssignItem) ? get_class($getRolesFromProcessRoleAssignResponseMidocoProcessRoleAssignItem) : sprintf('%s(%s)', gettype($getRolesFromProcessRoleAssignResponseMidocoProcessRoleAssignItem), var_export($getRolesFromProcessRoleAssignResponseMidocoProcessRoleAssignItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoProcessRoleAssign property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoProcessRoleAssign, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoProcessRoleAssign property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoProcessRoleAssign, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetRolesFromProcessRoleAssignResponse extends AbstractStructBase
     /**
      * Set MidocoProcessRoleAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoProcessRoleAssign[] $midocoProcessRoleAssign
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetRolesFromProcessRoleAssignResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoProcessRoleAssign[] $midocoProcessRoleAssign
+     * @return \Pggns\MidocoApi\Documents\StructType\GetRolesFromProcessRoleAssignResponse
      */
     public function setMidocoProcessRoleAssign(?array $midocoProcessRoleAssign = null): self
     {
@@ -85,14 +85,14 @@ class GetRolesFromProcessRoleAssignResponse extends AbstractStructBase
     /**
      * Add item to MidocoProcessRoleAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoProcessRoleAssign $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetRolesFromProcessRoleAssignResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoProcessRoleAssign $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetRolesFromProcessRoleAssignResponse
      */
-    public function addToMidocoProcessRoleAssign(\Pggns\MidocoApi\Api\Documents\StructType\MidocoProcessRoleAssign $item): self
+    public function addToMidocoProcessRoleAssign(\Pggns\MidocoApi\Documents\StructType\MidocoProcessRoleAssign $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoProcessRoleAssign) {
-            throw new InvalidArgumentException(sprintf('The MidocoProcessRoleAssign property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoProcessRoleAssign, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoProcessRoleAssign) {
+            throw new InvalidArgumentException(sprintf('The MidocoProcessRoleAssign property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoProcessRoleAssign, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoProcessRoleAssign[] = $item;
         

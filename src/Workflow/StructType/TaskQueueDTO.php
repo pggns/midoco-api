@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class TaskQueueDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskQueueDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -102,7 +102,7 @@ class TaskQueueDTO extends AbstractStructBase
     /**
      * Set creationUnit value
      * @param string $creationUnit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskQueueDTO
      */
     public function setCreationUnit(?string $creationUnit = null): self
     {
@@ -125,7 +125,7 @@ class TaskQueueDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskQueueDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -148,7 +148,7 @@ class TaskQueueDTO extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskQueueDTO
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -171,7 +171,7 @@ class TaskQueueDTO extends AbstractStructBase
     /**
      * Set isGlobal value
      * @param bool $isGlobal
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskQueueDTO
      */
     public function setIsGlobal(?bool $isGlobal = null): self
     {
@@ -194,7 +194,7 @@ class TaskQueueDTO extends AbstractStructBase
     /**
      * Set taskQueueName value
      * @param string $taskQueueName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskQueueDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskQueueDTO
      */
     public function setTaskQueueName(?string $taskQueueName = null): self
     {

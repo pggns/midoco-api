@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class ExecuteGroupAdvisorSettlementResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: GroupAdvisorSettlement
-     * @var \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlement[]
+     * @var \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlement[]
      */
     protected ?array $GroupAdvisorSettlement = null;
     /**
@@ -28,15 +28,15 @@ class ExecuteGroupAdvisorSettlementResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MediatorError
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MediatorErrorType[]
+     * @var \Pggns\MidocoApi\Order\StructType\MediatorErrorType[]
      */
     protected ?array $MediatorError = null;
     /**
      * Constructor method for ExecuteGroupAdvisorSettlementResponse
      * @uses ExecuteGroupAdvisorSettlementResponse::setGroupAdvisorSettlement()
      * @uses ExecuteGroupAdvisorSettlementResponse::setMediatorError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlement[] $groupAdvisorSettlement
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorErrorType[] $mediatorError
+     * @param \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlement[] $groupAdvisorSettlement
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorErrorType[] $mediatorError
      */
     public function __construct(?array $groupAdvisorSettlement = null, ?array $mediatorError = null)
     {
@@ -46,7 +46,7 @@ class ExecuteGroupAdvisorSettlementResponse extends AbstractStructBase
     }
     /**
      * Get GroupAdvisorSettlement value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlement[]
+     * @return \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlement[]
      */
     public function getGroupAdvisorSettlement(): ?array
     {
@@ -67,12 +67,12 @@ class ExecuteGroupAdvisorSettlementResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $executeGroupAdvisorSettlementResponseGroupAdvisorSettlementItem) {
             // validation for constraint: itemType
-            if (!$executeGroupAdvisorSettlementResponseGroupAdvisorSettlementItem instanceof \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlement) {
+            if (!$executeGroupAdvisorSettlementResponseGroupAdvisorSettlementItem instanceof \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlement) {
                 $invalidValues[] = is_object($executeGroupAdvisorSettlementResponseGroupAdvisorSettlementItem) ? get_class($executeGroupAdvisorSettlementResponseGroupAdvisorSettlementItem) : sprintf('%s(%s)', gettype($executeGroupAdvisorSettlementResponseGroupAdvisorSettlementItem), var_export($executeGroupAdvisorSettlementResponseGroupAdvisorSettlementItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The GroupAdvisorSettlement property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlement, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The GroupAdvisorSettlement property can only contain items of type \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlement, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -81,8 +81,8 @@ class ExecuteGroupAdvisorSettlementResponse extends AbstractStructBase
     /**
      * Set GroupAdvisorSettlement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlement[] $groupAdvisorSettlement
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteGroupAdvisorSettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlement[] $groupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteGroupAdvisorSettlementResponse
      */
     public function setGroupAdvisorSettlement(?array $groupAdvisorSettlement = null): self
     {
@@ -97,14 +97,14 @@ class ExecuteGroupAdvisorSettlementResponse extends AbstractStructBase
     /**
      * Add item to GroupAdvisorSettlement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlement $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteGroupAdvisorSettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlement $item
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteGroupAdvisorSettlementResponse
      */
-    public function addToGroupAdvisorSettlement(\Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlement $item): self
+    public function addToGroupAdvisorSettlement(\Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlement $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlement) {
-            throw new InvalidArgumentException(sprintf('The GroupAdvisorSettlement property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\GroupAdvisorSettlement, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlement) {
+            throw new InvalidArgumentException(sprintf('The GroupAdvisorSettlement property can only contain items of type \Pggns\MidocoApi\Order\StructType\GroupAdvisorSettlement, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->GroupAdvisorSettlement[] = $item;
         
@@ -112,7 +112,7 @@ class ExecuteGroupAdvisorSettlementResponse extends AbstractStructBase
     }
     /**
      * Get MediatorError value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorErrorType[]
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorErrorType[]
      */
     public function getMediatorError(): ?array
     {
@@ -133,12 +133,12 @@ class ExecuteGroupAdvisorSettlementResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $executeGroupAdvisorSettlementResponseMediatorErrorItem) {
             // validation for constraint: itemType
-            if (!$executeGroupAdvisorSettlementResponseMediatorErrorItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MediatorErrorType) {
+            if (!$executeGroupAdvisorSettlementResponseMediatorErrorItem instanceof \Pggns\MidocoApi\Order\StructType\MediatorErrorType) {
                 $invalidValues[] = is_object($executeGroupAdvisorSettlementResponseMediatorErrorItem) ? get_class($executeGroupAdvisorSettlementResponseMediatorErrorItem) : sprintf('%s(%s)', gettype($executeGroupAdvisorSettlementResponseMediatorErrorItem), var_export($executeGroupAdvisorSettlementResponseMediatorErrorItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MediatorError property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MediatorErrorType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MediatorError property can only contain items of type \Pggns\MidocoApi\Order\StructType\MediatorErrorType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,8 +147,8 @@ class ExecuteGroupAdvisorSettlementResponse extends AbstractStructBase
     /**
      * Set MediatorError value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorErrorType[] $mediatorError
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteGroupAdvisorSettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorErrorType[] $mediatorError
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteGroupAdvisorSettlementResponse
      */
     public function setMediatorError(?array $mediatorError = null): self
     {
@@ -163,14 +163,14 @@ class ExecuteGroupAdvisorSettlementResponse extends AbstractStructBase
     /**
      * Add item to MediatorError value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorErrorType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteGroupAdvisorSettlementResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorErrorType $item
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteGroupAdvisorSettlementResponse
      */
-    public function addToMediatorError(\Pggns\MidocoApi\Api\Order\StructType\MediatorErrorType $item): self
+    public function addToMediatorError(\Pggns\MidocoApi\Order\StructType\MediatorErrorType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MediatorErrorType) {
-            throw new InvalidArgumentException(sprintf('The MediatorError property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MediatorErrorType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MediatorErrorType) {
+            throw new InvalidArgumentException(sprintf('The MediatorError property can only contain items of type \Pggns\MidocoApi\Order\StructType\MediatorErrorType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MediatorError[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetBillingPositions4AgencyFeeTypeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAgencyFeeTypeBillingPosition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition[]
      */
     protected ?array $MidocoAgencyFeeTypeBillingPosition = null;
     /**
      * Constructor method for GetBillingPositions4AgencyFeeTypeResponse
      * @uses GetBillingPositions4AgencyFeeTypeResponse::setMidocoAgencyFeeTypeBillingPosition()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition[] $midocoAgencyFeeTypeBillingPosition
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition[] $midocoAgencyFeeTypeBillingPosition
      */
     public function __construct(?array $midocoAgencyFeeTypeBillingPosition = null)
     {
@@ -34,7 +34,7 @@ class GetBillingPositions4AgencyFeeTypeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAgencyFeeTypeBillingPosition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition[]
      */
     public function getMidocoAgencyFeeTypeBillingPosition(): ?array
     {
@@ -55,12 +55,12 @@ class GetBillingPositions4AgencyFeeTypeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBillingPositions4AgencyFeeTypeResponseMidocoAgencyFeeTypeBillingPositionItem) {
             // validation for constraint: itemType
-            if (!$getBillingPositions4AgencyFeeTypeResponseMidocoAgencyFeeTypeBillingPositionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition) {
+            if (!$getBillingPositions4AgencyFeeTypeResponseMidocoAgencyFeeTypeBillingPositionItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition) {
                 $invalidValues[] = is_object($getBillingPositions4AgencyFeeTypeResponseMidocoAgencyFeeTypeBillingPositionItem) ? get_class($getBillingPositions4AgencyFeeTypeResponseMidocoAgencyFeeTypeBillingPositionItem) : sprintf('%s(%s)', gettype($getBillingPositions4AgencyFeeTypeResponseMidocoAgencyFeeTypeBillingPositionItem), var_export($getBillingPositions4AgencyFeeTypeResponseMidocoAgencyFeeTypeBillingPositionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAgencyFeeTypeBillingPosition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAgencyFeeTypeBillingPosition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetBillingPositions4AgencyFeeTypeResponse extends AbstractStructBase
     /**
      * Set MidocoAgencyFeeTypeBillingPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition[] $midocoAgencyFeeTypeBillingPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositions4AgencyFeeTypeResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition[] $midocoAgencyFeeTypeBillingPosition
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositions4AgencyFeeTypeResponse
      */
     public function setMidocoAgencyFeeTypeBillingPosition(?array $midocoAgencyFeeTypeBillingPosition = null): self
     {
@@ -85,14 +85,14 @@ class GetBillingPositions4AgencyFeeTypeResponse extends AbstractStructBase
     /**
      * Add item to MidocoAgencyFeeTypeBillingPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositions4AgencyFeeTypeResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositions4AgencyFeeTypeResponse
      */
-    public function addToMidocoAgencyFeeTypeBillingPosition(\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition $item): self
+    public function addToMidocoAgencyFeeTypeBillingPosition(\Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition) {
-            throw new InvalidArgumentException(sprintf('The MidocoAgencyFeeTypeBillingPosition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition) {
+            throw new InvalidArgumentException(sprintf('The MidocoAgencyFeeTypeBillingPosition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAgencyFeeTypeBillingPosition[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,7 +17,7 @@ class MidocoJasperParameterValue extends AbstractStructBase
      * The ParameterValue
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\ParameterValue[]
+     * @var \Pggns\MidocoApi\Mis\StructType\ParameterValue[]
      */
     protected ?array $ParameterValue = null;
     /**
@@ -29,7 +29,7 @@ class MidocoJasperParameterValue extends AbstractStructBase
      * Constructor method for MidocoJasperParameterValue
      * @uses MidocoJasperParameterValue::setParameterValue()
      * @uses MidocoJasperParameterValue::setParamId()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\ParameterValue[] $parameterValue
+     * @param \Pggns\MidocoApi\Mis\StructType\ParameterValue[] $parameterValue
      * @param int $paramId
      */
     public function __construct(?array $parameterValue = null, ?int $paramId = null)
@@ -40,7 +40,7 @@ class MidocoJasperParameterValue extends AbstractStructBase
     }
     /**
      * Get ParameterValue value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ParameterValue[]
+     * @return \Pggns\MidocoApi\Mis\StructType\ParameterValue[]
      */
     public function getParameterValue(): ?array
     {
@@ -61,12 +61,12 @@ class MidocoJasperParameterValue extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoJasperParameterValueParameterValueItem) {
             // validation for constraint: itemType
-            if (!$midocoJasperParameterValueParameterValueItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\ParameterValue) {
+            if (!$midocoJasperParameterValueParameterValueItem instanceof \Pggns\MidocoApi\Mis\StructType\ParameterValue) {
                 $invalidValues[] = is_object($midocoJasperParameterValueParameterValueItem) ? get_class($midocoJasperParameterValueParameterValueItem) : sprintf('%s(%s)', gettype($midocoJasperParameterValueParameterValueItem), var_export($midocoJasperParameterValueParameterValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ParameterValue property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\ParameterValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ParameterValue property can only contain items of type \Pggns\MidocoApi\Mis\StructType\ParameterValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -75,8 +75,8 @@ class MidocoJasperParameterValue extends AbstractStructBase
     /**
      * Set ParameterValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\ParameterValue[] $parameterValue
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterValue
+     * @param \Pggns\MidocoApi\Mis\StructType\ParameterValue[] $parameterValue
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterValue
      */
     public function setParameterValue(?array $parameterValue = null): self
     {
@@ -91,14 +91,14 @@ class MidocoJasperParameterValue extends AbstractStructBase
     /**
      * Add item to ParameterValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\ParameterValue $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterValue
+     * @param \Pggns\MidocoApi\Mis\StructType\ParameterValue $item
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterValue
      */
-    public function addToParameterValue(\Pggns\MidocoApi\Api\Mis\StructType\ParameterValue $item): self
+    public function addToParameterValue(\Pggns\MidocoApi\Mis\StructType\ParameterValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\ParameterValue) {
-            throw new InvalidArgumentException(sprintf('The ParameterValue property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\ParameterValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\ParameterValue) {
+            throw new InvalidArgumentException(sprintf('The ParameterValue property can only contain items of type \Pggns\MidocoApi\Mis\StructType\ParameterValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ParameterValue[] = $item;
         
@@ -115,7 +115,7 @@ class MidocoJasperParameterValue extends AbstractStructBase
     /**
      * Set paramId value
      * @param int $paramId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperParameterValue
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoJasperParameterValue
      */
     public function setParamId(?int $paramId = null): self
     {

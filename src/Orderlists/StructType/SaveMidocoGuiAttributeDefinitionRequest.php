@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoGuiAttributeDefinitionRequest extends AbstractStructBase
      * The MidocoGuiAttributeDefinition
      * Meta information extracted from the WSDL
      * - ref: MidocoGuiAttributeDefinition
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\GuiAttributeDefinitionDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\GuiAttributeDefinitionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\GuiAttributeDefinitionDTO $MidocoGuiAttributeDefinition = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\GuiAttributeDefinitionDTO $MidocoGuiAttributeDefinition = null;
     /**
      * Constructor method for SaveMidocoGuiAttributeDefinitionRequest
      * @uses SaveMidocoGuiAttributeDefinitionRequest::setMidocoGuiAttributeDefinition()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition
+     * @param \Pggns\MidocoApi\Orderlists\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition = null)
     {
         $this
             ->setMidocoGuiAttributeDefinition($midocoGuiAttributeDefinition);
     }
     /**
      * Get MidocoGuiAttributeDefinition value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GuiAttributeDefinitionDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GuiAttributeDefinitionDTO|null
      */
-    public function getMidocoGuiAttributeDefinition(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\GuiAttributeDefinitionDTO
+    public function getMidocoGuiAttributeDefinition(): ?\Pggns\MidocoApi\Orderlists\StructType\GuiAttributeDefinitionDTO
     {
         return $this->MidocoGuiAttributeDefinition;
     }
     /**
      * Set MidocoGuiAttributeDefinition value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveMidocoGuiAttributeDefinitionRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveMidocoGuiAttributeDefinitionRequest
      */
-    public function setMidocoGuiAttributeDefinition(?\Pggns\MidocoApi\Api\Orderlists\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition = null): self
+    public function setMidocoGuiAttributeDefinition(?\Pggns\MidocoApi\Orderlists\StructType\GuiAttributeDefinitionDTO $midocoGuiAttributeDefinition = null): self
     {
         $this->MidocoGuiAttributeDefinition = $midocoGuiAttributeDefinition;
         

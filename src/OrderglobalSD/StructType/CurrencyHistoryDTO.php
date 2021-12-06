@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class CurrencyHistoryDTO extends AbstractStructBase
     /**
      * Set fromCurrency value
      * @param string $fromCurrency
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyHistoryDTO
      */
     public function setFromCurrency(?string $fromCurrency = null): self
     {
@@ -118,7 +118,7 @@ class CurrencyHistoryDTO extends AbstractStructBase
     /**
      * Set rateAvg value
      * @param float $rateAvg
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyHistoryDTO
      */
     public function setRateAvg(?float $rateAvg = null): self
     {
@@ -141,7 +141,7 @@ class CurrencyHistoryDTO extends AbstractStructBase
     /**
      * Set rateBuy value
      * @param float $rateBuy
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyHistoryDTO
      */
     public function setRateBuy(?float $rateBuy = null): self
     {
@@ -164,7 +164,7 @@ class CurrencyHistoryDTO extends AbstractStructBase
     /**
      * Set rateSell value
      * @param float $rateSell
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyHistoryDTO
      */
     public function setRateSell(?float $rateSell = null): self
     {
@@ -187,7 +187,7 @@ class CurrencyHistoryDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyHistoryDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -210,7 +210,7 @@ class CurrencyHistoryDTO extends AbstractStructBase
     /**
      * Set toCurrency value
      * @param string $toCurrency
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyHistoryDTO
      */
     public function setToCurrency(?string $toCurrency = null): self
     {
@@ -233,7 +233,7 @@ class CurrencyHistoryDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyHistoryDTO
      */
     public function setUserId(?int $userId = null): self
     {
@@ -256,7 +256,7 @@ class CurrencyHistoryDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyHistoryDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyHistoryDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

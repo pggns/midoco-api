@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoJournalPosition extends BookingJournalDTO
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoJournalPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoJournalPosition
      */
     public function setType(?string $type = null): self
     {

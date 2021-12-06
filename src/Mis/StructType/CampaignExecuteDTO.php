@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class CampaignExecuteDTO extends AbstractStructBase
      * The MidocoCrmCampaign
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCampaign
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $MidocoCrmCampaign = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $MidocoCrmCampaign = null;
     /**
      * The MidocoCampaignTemplateId
      * Meta information extracted from the WSDL
      * - ref: MidocoCampaignTemplateId
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO $MidocoCampaignTemplateId = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO $MidocoCampaignTemplateId = null;
     /**
      * The startTime
      * @var string|null
@@ -43,12 +43,12 @@ class CampaignExecuteDTO extends AbstractStructBase
      * @uses CampaignExecuteDTO::setMidocoCampaignTemplateId()
      * @uses CampaignExecuteDTO::setStartTime()
      * @uses CampaignExecuteDTO::setAction()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
+     * @param \Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId
      * @param string $startTime
      * @param string $action
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null, ?\Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId = null, ?string $startTime = null, ?string $action = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null, ?\Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId = null, ?string $startTime = null, ?string $action = null)
     {
         $this
             ->setMidocoCrmCampaign($midocoCrmCampaign)
@@ -58,18 +58,18 @@ class CampaignExecuteDTO extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCampaign value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO|null
      */
-    public function getMidocoCrmCampaign(): ?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO
+    public function getMidocoCrmCampaign(): ?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO
     {
         return $this->MidocoCrmCampaign;
     }
     /**
      * Set MidocoCrmCampaign value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignExecuteDTO
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignExecuteDTO
      */
-    public function setMidocoCrmCampaign(?\Pggns\MidocoApi\Api\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null): self
+    public function setMidocoCrmCampaign(?\Pggns\MidocoApi\Mis\StructType\CrmCampaignDTO $midocoCrmCampaign = null): self
     {
         $this->MidocoCrmCampaign = $midocoCrmCampaign;
         
@@ -77,18 +77,18 @@ class CampaignExecuteDTO extends AbstractStructBase
     }
     /**
      * Get MidocoCampaignTemplateId value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO|null
      */
-    public function getMidocoCampaignTemplateId(): ?\Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO
+    public function getMidocoCampaignTemplateId(): ?\Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO
     {
         return $this->MidocoCampaignTemplateId;
     }
     /**
      * Set MidocoCampaignTemplateId value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignExecuteDTO
+     * @param \Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignExecuteDTO
      */
-    public function setMidocoCampaignTemplateId(?\Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId = null): self
+    public function setMidocoCampaignTemplateId(?\Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId = null): self
     {
         $this->MidocoCampaignTemplateId = $midocoCampaignTemplateId;
         
@@ -105,7 +105,7 @@ class CampaignExecuteDTO extends AbstractStructBase
     /**
      * Set startTime value
      * @param string $startTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignExecuteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignExecuteDTO
      */
     public function setStartTime(?string $startTime = null): self
     {
@@ -128,7 +128,7 @@ class CampaignExecuteDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignExecuteDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignExecuteDTO
      */
     public function setAction(?string $action = null): self
     {

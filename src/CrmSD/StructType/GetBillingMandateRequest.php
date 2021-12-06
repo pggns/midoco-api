@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -43,7 +43,7 @@ class GetBillingMandateRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param string $documentId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetBillingMandateRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetBillingMandateRequest
      */
     public function setDocumentId(string $documentId): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SourceSystemDescriptionDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SourceSystemDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SourceSystemDescriptionDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -86,7 +86,7 @@ class SourceSystemDescriptionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SourceSystemDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SourceSystemDescriptionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -109,7 +109,7 @@ class SourceSystemDescriptionDTO extends AbstractStructBase
     /**
      * Set extSystem value
      * @param string $extSystem
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SourceSystemDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SourceSystemDescriptionDTO
      */
     public function setExtSystem(?string $extSystem = null): self
     {
@@ -132,7 +132,7 @@ class SourceSystemDescriptionDTO extends AbstractStructBase
     /**
      * Set sourceSystemId value
      * @param string $sourceSystemId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SourceSystemDescriptionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SourceSystemDescriptionDTO
      */
     public function setSourceSystemId(?string $sourceSystemId = null): self
     {

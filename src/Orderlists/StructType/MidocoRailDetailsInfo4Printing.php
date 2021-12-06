@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -26,7 +26,7 @@ class MidocoRailDetailsInfo4Printing extends RailDetailDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoRailRouting4Printing
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\RailDetailDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\RailDetailDTO[]
      */
     protected ?array $MidocoRailRouting4Printing = null;
     /**
@@ -34,7 +34,7 @@ class MidocoRailDetailsInfo4Printing extends RailDetailDTO
      * @uses MidocoRailDetailsInfo4Printing::setNoOfNights()
      * @uses MidocoRailDetailsInfo4Printing::setMidocoRailRouting4Printing()
      * @param string $noOfNights
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\RailDetailDTO[] $midocoRailRouting4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\RailDetailDTO[] $midocoRailRouting4Printing
      */
     public function __construct(?string $noOfNights = null, ?array $midocoRailRouting4Printing = null)
     {
@@ -53,7 +53,7 @@ class MidocoRailDetailsInfo4Printing extends RailDetailDTO
     /**
      * Set noOfNights value
      * @param string $noOfNights
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRailDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoRailDetailsInfo4Printing
      */
     public function setNoOfNights(?string $noOfNights = null): self
     {
@@ -67,7 +67,7 @@ class MidocoRailDetailsInfo4Printing extends RailDetailDTO
     }
     /**
      * Get MidocoRailRouting4Printing value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\RailDetailDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RailDetailDTO[]
      */
     public function getMidocoRailRouting4Printing(): ?array
     {
@@ -88,12 +88,12 @@ class MidocoRailDetailsInfo4Printing extends RailDetailDTO
         $invalidValues = [];
         foreach ($values as $midocoRailDetailsInfo4PrintingMidocoRailRouting4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoRailDetailsInfo4PrintingMidocoRailRouting4PrintingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\RailDetailDTO) {
+            if (!$midocoRailDetailsInfo4PrintingMidocoRailRouting4PrintingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\RailDetailDTO) {
                 $invalidValues[] = is_object($midocoRailDetailsInfo4PrintingMidocoRailRouting4PrintingItem) ? get_class($midocoRailDetailsInfo4PrintingMidocoRailRouting4PrintingItem) : sprintf('%s(%s)', gettype($midocoRailDetailsInfo4PrintingMidocoRailRouting4PrintingItem), var_export($midocoRailDetailsInfo4PrintingMidocoRailRouting4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRailRouting4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\RailDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRailRouting4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\RailDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -102,8 +102,8 @@ class MidocoRailDetailsInfo4Printing extends RailDetailDTO
     /**
      * Set MidocoRailRouting4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\RailDetailDTO[] $midocoRailRouting4Printing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRailDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\RailDetailDTO[] $midocoRailRouting4Printing
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoRailDetailsInfo4Printing
      */
     public function setMidocoRailRouting4Printing(?array $midocoRailRouting4Printing = null): self
     {
@@ -118,14 +118,14 @@ class MidocoRailDetailsInfo4Printing extends RailDetailDTO
     /**
      * Add item to MidocoRailRouting4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\RailDetailDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRailDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Orderlists\StructType\RailDetailDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoRailDetailsInfo4Printing
      */
-    public function addToMidocoRailRouting4Printing(\Pggns\MidocoApi\Api\Orderlists\StructType\RailDetailDTO $item): self
+    public function addToMidocoRailRouting4Printing(\Pggns\MidocoApi\Orderlists\StructType\RailDetailDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\RailDetailDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoRailRouting4Printing property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\RailDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\RailDetailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoRailRouting4Printing property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\RailDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRailRouting4Printing[] = $item;
         

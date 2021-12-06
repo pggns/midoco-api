@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetSupplierInvoiceListRequest extends AbstractStructBase
      * The MidocoSupplierInvoiceListCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierInvoiceListCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListCriteria|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListCriteria $MidocoSupplierInvoiceListCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListCriteria $MidocoSupplierInvoiceListCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class GetSupplierInvoiceListRequest extends AbstractStructBase
      * Constructor method for GetSupplierInvoiceListRequest
      * @uses GetSupplierInvoiceListRequest::setMidocoSupplierInvoiceListCriteria()
      * @uses GetSupplierInvoiceListRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListCriteria $midocoSupplierInvoiceListCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListCriteria $midocoSupplierInvoiceListCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListCriteria $midocoSupplierInvoiceListCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListCriteria $midocoSupplierInvoiceListCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoSupplierInvoiceListCriteria($midocoSupplierInvoiceListCriteria)
@@ -42,18 +42,18 @@ class GetSupplierInvoiceListRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierInvoiceListCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListCriteria|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListCriteria|null
      */
-    public function getMidocoSupplierInvoiceListCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListCriteria
+    public function getMidocoSupplierInvoiceListCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListCriteria
     {
         return $this->MidocoSupplierInvoiceListCriteria;
     }
     /**
      * Set MidocoSupplierInvoiceListCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListCriteria $midocoSupplierInvoiceListCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSupplierInvoiceListRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListCriteria $midocoSupplierInvoiceListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSupplierInvoiceListRequest
      */
-    public function setMidocoSupplierInvoiceListCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListCriteria $midocoSupplierInvoiceListCriteria = null): self
+    public function setMidocoSupplierInvoiceListCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListCriteria $midocoSupplierInvoiceListCriteria = null): self
     {
         $this->MidocoSupplierInvoiceListCriteria = $midocoSupplierInvoiceListCriteria;
         
@@ -70,7 +70,7 @@ class GetSupplierInvoiceListRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSupplierInvoiceListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSupplierInvoiceListRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

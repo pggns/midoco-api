@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -46,7 +46,7 @@ class MediatorCommision extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\TourOperatorGroup[]
+     * @var \Pggns\MidocoApi\Order\StructType\TourOperatorGroup[]
      */
     protected ?array $TourOperatorGroup = null;
     /**
@@ -60,7 +60,7 @@ class MediatorCommision extends AbstractStructBase
      * @param float $totalTravelPrice
      * @param float $totalCalculatedCommission
      * @param float $totalPayedCommission
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TourOperatorGroup[] $tourOperatorGroup
+     * @param \Pggns\MidocoApi\Order\StructType\TourOperatorGroup[] $tourOperatorGroup
      */
     public function __construct(string $mediatorId, float $totalTravelPrice, float $totalCalculatedCommission, float $totalPayedCommission, ?array $tourOperatorGroup = null)
     {
@@ -82,7 +82,7 @@ class MediatorCommision extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommision
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommision
      */
     public function setMediatorId(string $mediatorId): self
     {
@@ -105,7 +105,7 @@ class MediatorCommision extends AbstractStructBase
     /**
      * Set totalTravelPrice value
      * @param float $totalTravelPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommision
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommision
      */
     public function setTotalTravelPrice(float $totalTravelPrice): self
     {
@@ -128,7 +128,7 @@ class MediatorCommision extends AbstractStructBase
     /**
      * Set totalCalculatedCommission value
      * @param float $totalCalculatedCommission
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommision
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommision
      */
     public function setTotalCalculatedCommission(float $totalCalculatedCommission): self
     {
@@ -151,7 +151,7 @@ class MediatorCommision extends AbstractStructBase
     /**
      * Set totalPayedCommission value
      * @param float $totalPayedCommission
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommision
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommision
      */
     public function setTotalPayedCommission(float $totalPayedCommission): self
     {
@@ -165,7 +165,7 @@ class MediatorCommision extends AbstractStructBase
     }
     /**
      * Get TourOperatorGroup value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TourOperatorGroup[]
+     * @return \Pggns\MidocoApi\Order\StructType\TourOperatorGroup[]
      */
     public function getTourOperatorGroup(): ?array
     {
@@ -186,12 +186,12 @@ class MediatorCommision extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $mediatorCommisionTourOperatorGroupItem) {
             // validation for constraint: itemType
-            if (!$mediatorCommisionTourOperatorGroupItem instanceof \Pggns\MidocoApi\Api\Order\StructType\TourOperatorGroup) {
+            if (!$mediatorCommisionTourOperatorGroupItem instanceof \Pggns\MidocoApi\Order\StructType\TourOperatorGroup) {
                 $invalidValues[] = is_object($mediatorCommisionTourOperatorGroupItem) ? get_class($mediatorCommisionTourOperatorGroupItem) : sprintf('%s(%s)', gettype($mediatorCommisionTourOperatorGroupItem), var_export($mediatorCommisionTourOperatorGroupItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The TourOperatorGroup property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\TourOperatorGroup, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The TourOperatorGroup property can only contain items of type \Pggns\MidocoApi\Order\StructType\TourOperatorGroup, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -200,8 +200,8 @@ class MediatorCommision extends AbstractStructBase
     /**
      * Set TourOperatorGroup value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TourOperatorGroup[] $tourOperatorGroup
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommision
+     * @param \Pggns\MidocoApi\Order\StructType\TourOperatorGroup[] $tourOperatorGroup
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommision
      */
     public function setTourOperatorGroup(?array $tourOperatorGroup = null): self
     {
@@ -216,14 +216,14 @@ class MediatorCommision extends AbstractStructBase
     /**
      * Add item to TourOperatorGroup value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\TourOperatorGroup $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommision
+     * @param \Pggns\MidocoApi\Order\StructType\TourOperatorGroup $item
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommision
      */
-    public function addToTourOperatorGroup(\Pggns\MidocoApi\Api\Order\StructType\TourOperatorGroup $item): self
+    public function addToTourOperatorGroup(\Pggns\MidocoApi\Order\StructType\TourOperatorGroup $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\TourOperatorGroup) {
-            throw new InvalidArgumentException(sprintf('The TourOperatorGroup property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\TourOperatorGroup, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\TourOperatorGroup) {
+            throw new InvalidArgumentException(sprintf('The TourOperatorGroup property can only contain items of type \Pggns\MidocoApi\Order\StructType\TourOperatorGroup, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->TourOperatorGroup[] = $item;
         

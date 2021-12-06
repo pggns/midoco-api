@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ImportCRMCsvResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmImportErrors
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmImportErrors[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmImportErrors[]
      */
     protected ?array $MidocoCrmImportErrors = null;
     /**
      * Constructor method for ImportCRMCsvResponse
      * @uses ImportCRMCsvResponse::setMidocoCrmImportErrors()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmImportErrors[] $midocoCrmImportErrors
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmImportErrors[] $midocoCrmImportErrors
      */
     public function __construct(?array $midocoCrmImportErrors = null)
     {
@@ -34,7 +34,7 @@ class ImportCRMCsvResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmImportErrors value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmImportErrors[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmImportErrors[]
      */
     public function getMidocoCrmImportErrors(): ?array
     {
@@ -55,12 +55,12 @@ class ImportCRMCsvResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $importCRMCsvResponseMidocoCrmImportErrorsItem) {
             // validation for constraint: itemType
-            if (!$importCRMCsvResponseMidocoCrmImportErrorsItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmImportErrors) {
+            if (!$importCRMCsvResponseMidocoCrmImportErrorsItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmImportErrors) {
                 $invalidValues[] = is_object($importCRMCsvResponseMidocoCrmImportErrorsItem) ? get_class($importCRMCsvResponseMidocoCrmImportErrorsItem) : sprintf('%s(%s)', gettype($importCRMCsvResponseMidocoCrmImportErrorsItem), var_export($importCRMCsvResponseMidocoCrmImportErrorsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmImportErrors property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmImportErrors, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmImportErrors property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmImportErrors, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ImportCRMCsvResponse extends AbstractStructBase
     /**
      * Set MidocoCrmImportErrors value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmImportErrors[] $midocoCrmImportErrors
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ImportCRMCsvResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmImportErrors[] $midocoCrmImportErrors
+     * @return \Pggns\MidocoApi\Crm\StructType\ImportCRMCsvResponse
      */
     public function setMidocoCrmImportErrors(?array $midocoCrmImportErrors = null): self
     {
@@ -85,14 +85,14 @@ class ImportCRMCsvResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmImportErrors value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmImportErrors $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ImportCRMCsvResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmImportErrors $item
+     * @return \Pggns\MidocoApi\Crm\StructType\ImportCRMCsvResponse
      */
-    public function addToMidocoCrmImportErrors(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmImportErrors $item): self
+    public function addToMidocoCrmImportErrors(\Pggns\MidocoApi\Crm\StructType\MidocoCrmImportErrors $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmImportErrors) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmImportErrors property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmImportErrors, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmImportErrors) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmImportErrors property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmImportErrors, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmImportErrors[] = $item;
         

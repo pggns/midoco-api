@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteContactMediaRequest extends AbstractStructBase
      * The MidocoContactMedia
      * Meta information extracted from the WSDL
      * - ref: MidocoContactMedia
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\ContactMediaDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\ContactMediaDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\ContactMediaDTO $MidocoContactMedia = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\ContactMediaDTO $MidocoContactMedia = null;
     /**
      * Constructor method for DeleteContactMediaRequest
      * @uses DeleteContactMediaRequest::setMidocoContactMedia()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ContactMediaDTO $midocoContactMedia
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ContactMediaDTO $midocoContactMedia
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\ContactMediaDTO $midocoContactMedia = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\ContactMediaDTO $midocoContactMedia = null)
     {
         $this
             ->setMidocoContactMedia($midocoContactMedia);
     }
     /**
      * Get MidocoContactMedia value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ContactMediaDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ContactMediaDTO|null
      */
-    public function getMidocoContactMedia(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\ContactMediaDTO
+    public function getMidocoContactMedia(): ?\Pggns\MidocoApi\Orderlists\StructType\ContactMediaDTO
     {
         return $this->MidocoContactMedia;
     }
     /**
      * Set MidocoContactMedia value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ContactMediaDTO $midocoContactMedia
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteContactMediaRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ContactMediaDTO $midocoContactMedia
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteContactMediaRequest
      */
-    public function setMidocoContactMedia(?\Pggns\MidocoApi\Api\Orderlists\StructType\ContactMediaDTO $midocoContactMedia = null): self
+    public function setMidocoContactMedia(?\Pggns\MidocoApi\Orderlists\StructType\ContactMediaDTO $midocoContactMedia = null): self
     {
         $this->MidocoContactMedia = $midocoContactMedia;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetLastImportedCrsRemarksResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoImportedCrsRemark
-     * @var \Pggns\MidocoApi\Api\Order\StructType\ImportedCrsRemarkDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\ImportedCrsRemarkDTO[]
      */
     protected ?array $MidocoImportedCrsRemark = null;
     /**
      * Constructor method for GetLastImportedCrsRemarksResponse
      * @uses GetLastImportedCrsRemarksResponse::setMidocoImportedCrsRemark()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ImportedCrsRemarkDTO[] $midocoImportedCrsRemark
+     * @param \Pggns\MidocoApi\Order\StructType\ImportedCrsRemarkDTO[] $midocoImportedCrsRemark
      */
     public function __construct(?array $midocoImportedCrsRemark = null)
     {
@@ -34,7 +34,7 @@ class GetLastImportedCrsRemarksResponse extends AbstractStructBase
     }
     /**
      * Get MidocoImportedCrsRemark value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportedCrsRemarkDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\ImportedCrsRemarkDTO[]
      */
     public function getMidocoImportedCrsRemark(): ?array
     {
@@ -55,12 +55,12 @@ class GetLastImportedCrsRemarksResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getLastImportedCrsRemarksResponseMidocoImportedCrsRemarkItem) {
             // validation for constraint: itemType
-            if (!$getLastImportedCrsRemarksResponseMidocoImportedCrsRemarkItem instanceof \Pggns\MidocoApi\Api\Order\StructType\ImportedCrsRemarkDTO) {
+            if (!$getLastImportedCrsRemarksResponseMidocoImportedCrsRemarkItem instanceof \Pggns\MidocoApi\Order\StructType\ImportedCrsRemarkDTO) {
                 $invalidValues[] = is_object($getLastImportedCrsRemarksResponseMidocoImportedCrsRemarkItem) ? get_class($getLastImportedCrsRemarksResponseMidocoImportedCrsRemarkItem) : sprintf('%s(%s)', gettype($getLastImportedCrsRemarksResponseMidocoImportedCrsRemarkItem), var_export($getLastImportedCrsRemarksResponseMidocoImportedCrsRemarkItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoImportedCrsRemark property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ImportedCrsRemarkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoImportedCrsRemark property can only contain items of type \Pggns\MidocoApi\Order\StructType\ImportedCrsRemarkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetLastImportedCrsRemarksResponse extends AbstractStructBase
     /**
      * Set MidocoImportedCrsRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ImportedCrsRemarkDTO[] $midocoImportedCrsRemark
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetLastImportedCrsRemarksResponse
+     * @param \Pggns\MidocoApi\Order\StructType\ImportedCrsRemarkDTO[] $midocoImportedCrsRemark
+     * @return \Pggns\MidocoApi\Order\StructType\GetLastImportedCrsRemarksResponse
      */
     public function setMidocoImportedCrsRemark(?array $midocoImportedCrsRemark = null): self
     {
@@ -85,14 +85,14 @@ class GetLastImportedCrsRemarksResponse extends AbstractStructBase
     /**
      * Add item to MidocoImportedCrsRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ImportedCrsRemarkDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetLastImportedCrsRemarksResponse
+     * @param \Pggns\MidocoApi\Order\StructType\ImportedCrsRemarkDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetLastImportedCrsRemarksResponse
      */
-    public function addToMidocoImportedCrsRemark(\Pggns\MidocoApi\Api\Order\StructType\ImportedCrsRemarkDTO $item): self
+    public function addToMidocoImportedCrsRemark(\Pggns\MidocoApi\Order\StructType\ImportedCrsRemarkDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\ImportedCrsRemarkDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoImportedCrsRemark property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ImportedCrsRemarkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\ImportedCrsRemarkDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoImportedCrsRemark property can only contain items of type \Pggns\MidocoApi\Order\StructType\ImportedCrsRemarkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoImportedCrsRemark[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ListMidocoOrgTemplateTextRequest extends AbstractStructBase
     /**
      * Set org_unit_name value
      * @param string $org_unit_name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListMidocoOrgTemplateTextRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListMidocoOrgTemplateTextRequest
      */
     public function setOrg_unit_name(?string $org_unit_name = null): self
     {

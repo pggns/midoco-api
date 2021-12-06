@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetPaymentAccrualForCreditorResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCreditorPaymentAccrual
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditorPaymentAccrual[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCreditorPaymentAccrual[]
      */
     protected ?array $MidocoCreditorPaymentAccrual = null;
     /**
@@ -49,7 +49,7 @@ class GetPaymentAccrualForCreditorResponse extends AbstractStructBase
      * @uses GetPaymentAccrualForCreditorResponse::setTotalInvoicedAmount()
      * @uses GetPaymentAccrualForCreditorResponse::setTotalPaidAmount()
      * @uses GetPaymentAccrualForCreditorResponse::setTotalDueAmount()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditorPaymentAccrual[] $midocoCreditorPaymentAccrual
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCreditorPaymentAccrual[] $midocoCreditorPaymentAccrual
      * @param int $totalNoOfRecords
      * @param float $totalInvoicedAmount
      * @param float $totalPaidAmount
@@ -66,7 +66,7 @@ class GetPaymentAccrualForCreditorResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCreditorPaymentAccrual value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditorPaymentAccrual[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCreditorPaymentAccrual[]
      */
     public function getMidocoCreditorPaymentAccrual(): ?array
     {
@@ -87,12 +87,12 @@ class GetPaymentAccrualForCreditorResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPaymentAccrualForCreditorResponseMidocoCreditorPaymentAccrualItem) {
             // validation for constraint: itemType
-            if (!$getPaymentAccrualForCreditorResponseMidocoCreditorPaymentAccrualItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditorPaymentAccrual) {
+            if (!$getPaymentAccrualForCreditorResponseMidocoCreditorPaymentAccrualItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoCreditorPaymentAccrual) {
                 $invalidValues[] = is_object($getPaymentAccrualForCreditorResponseMidocoCreditorPaymentAccrualItem) ? get_class($getPaymentAccrualForCreditorResponseMidocoCreditorPaymentAccrualItem) : sprintf('%s(%s)', gettype($getPaymentAccrualForCreditorResponseMidocoCreditorPaymentAccrualItem), var_export($getPaymentAccrualForCreditorResponseMidocoCreditorPaymentAccrualItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCreditorPaymentAccrual property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditorPaymentAccrual, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCreditorPaymentAccrual property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCreditorPaymentAccrual, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -101,8 +101,8 @@ class GetPaymentAccrualForCreditorResponse extends AbstractStructBase
     /**
      * Set MidocoCreditorPaymentAccrual value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditorPaymentAccrual[] $midocoCreditorPaymentAccrual
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentAccrualForCreditorResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCreditorPaymentAccrual[] $midocoCreditorPaymentAccrual
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentAccrualForCreditorResponse
      */
     public function setMidocoCreditorPaymentAccrual(?array $midocoCreditorPaymentAccrual = null): self
     {
@@ -117,14 +117,14 @@ class GetPaymentAccrualForCreditorResponse extends AbstractStructBase
     /**
      * Add item to MidocoCreditorPaymentAccrual value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditorPaymentAccrual $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentAccrualForCreditorResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCreditorPaymentAccrual $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentAccrualForCreditorResponse
      */
-    public function addToMidocoCreditorPaymentAccrual(\Pggns\MidocoApi\Api\Order\StructType\MidocoCreditorPaymentAccrual $item): self
+    public function addToMidocoCreditorPaymentAccrual(\Pggns\MidocoApi\Order\StructType\MidocoCreditorPaymentAccrual $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditorPaymentAccrual) {
-            throw new InvalidArgumentException(sprintf('The MidocoCreditorPaymentAccrual property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditorPaymentAccrual, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoCreditorPaymentAccrual) {
+            throw new InvalidArgumentException(sprintf('The MidocoCreditorPaymentAccrual property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCreditorPaymentAccrual, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCreditorPaymentAccrual[] = $item;
         
@@ -141,7 +141,7 @@ class GetPaymentAccrualForCreditorResponse extends AbstractStructBase
     /**
      * Set totalNoOfRecords value
      * @param int $totalNoOfRecords
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentAccrualForCreditorResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentAccrualForCreditorResponse
      */
     public function setTotalNoOfRecords(?int $totalNoOfRecords = null): self
     {
@@ -164,7 +164,7 @@ class GetPaymentAccrualForCreditorResponse extends AbstractStructBase
     /**
      * Set totalInvoicedAmount value
      * @param float $totalInvoicedAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentAccrualForCreditorResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentAccrualForCreditorResponse
      */
     public function setTotalInvoicedAmount(?float $totalInvoicedAmount = null): self
     {
@@ -187,7 +187,7 @@ class GetPaymentAccrualForCreditorResponse extends AbstractStructBase
     /**
      * Set totalPaidAmount value
      * @param float $totalPaidAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentAccrualForCreditorResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentAccrualForCreditorResponse
      */
     public function setTotalPaidAmount(?float $totalPaidAmount = null): self
     {
@@ -210,7 +210,7 @@ class GetPaymentAccrualForCreditorResponse extends AbstractStructBase
     /**
      * Set totalDueAmount value
      * @param float $totalDueAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentAccrualForCreditorResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentAccrualForCreditorResponse
      */
     public function setTotalDueAmount(?float $totalDueAmount = null): self
     {

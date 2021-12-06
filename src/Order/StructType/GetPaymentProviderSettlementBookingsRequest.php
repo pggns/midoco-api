@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class GetPaymentProviderSettlementBookingsRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentProviderSettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementBookingsRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -102,7 +102,7 @@ class GetPaymentProviderSettlementBookingsRequest extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentProviderSettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementBookingsRequest
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -125,7 +125,7 @@ class GetPaymentProviderSettlementBookingsRequest extends AbstractStructBase
     /**
      * Set booked value
      * @param bool $booked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentProviderSettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementBookingsRequest
      */
     public function setBooked(?bool $booked = null): self
     {
@@ -148,7 +148,7 @@ class GetPaymentProviderSettlementBookingsRequest extends AbstractStructBase
     /**
      * Set checked value
      * @param bool $checked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentProviderSettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementBookingsRequest
      */
     public function setChecked(?bool $checked = null): self
     {
@@ -171,7 +171,7 @@ class GetPaymentProviderSettlementBookingsRequest extends AbstractStructBase
     /**
      * Set errors value
      * @param bool $errors
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentProviderSettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementBookingsRequest
      */
     public function setErrors(?bool $errors = null): self
     {
@@ -194,7 +194,7 @@ class GetPaymentProviderSettlementBookingsRequest extends AbstractStructBase
     /**
      * Set entryId value
      * @param string $entryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentProviderSettlementBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementBookingsRequest
      */
     public function setEntryId(?string $entryId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class SupplierAccountAssignDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierAccountAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierAccountAssignDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -126,7 +126,7 @@ class SupplierAccountAssignDTO extends AbstractStructBase
     /**
      * Set destinationKey value
      * @param string $destinationKey
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierAccountAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierAccountAssignDTO
      */
     public function setDestinationKey(?string $destinationKey = null): self
     {
@@ -149,7 +149,7 @@ class SupplierAccountAssignDTO extends AbstractStructBase
     /**
      * Set forDi value
      * @param bool $forDi
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierAccountAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierAccountAssignDTO
      */
     public function setForDi(?bool $forDi = null): self
     {
@@ -172,7 +172,7 @@ class SupplierAccountAssignDTO extends AbstractStructBase
     /**
      * Set forStorno value
      * @param bool $forStorno
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierAccountAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierAccountAssignDTO
      */
     public function setForStorno(?bool $forStorno = null): self
     {
@@ -195,7 +195,7 @@ class SupplierAccountAssignDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierAccountAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierAccountAssignDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -218,7 +218,7 @@ class SupplierAccountAssignDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierAccountAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierAccountAssignDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -241,7 +241,7 @@ class SupplierAccountAssignDTO extends AbstractStructBase
     /**
      * Set ticketType value
      * @param string $ticketType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierAccountAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierAccountAssignDTO
      */
     public function setTicketType(?string $ticketType = null): self
     {
@@ -264,7 +264,7 @@ class SupplierAccountAssignDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierAccountAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierAccountAssignDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -287,7 +287,7 @@ class SupplierAccountAssignDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierAccountAssignDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierAccountAssignDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

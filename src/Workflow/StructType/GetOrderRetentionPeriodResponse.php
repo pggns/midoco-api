@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetOrderRetentionPeriodResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderRetentionPeriod
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoOrderRetentionPeriod[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoOrderRetentionPeriod[]
      */
     protected ?array $MidocoOrderRetentionPeriod = null;
     /**
      * Constructor method for GetOrderRetentionPeriodResponse
      * @uses GetOrderRetentionPeriodResponse::setMidocoOrderRetentionPeriod()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoOrderRetentionPeriod[] $midocoOrderRetentionPeriod
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoOrderRetentionPeriod[] $midocoOrderRetentionPeriod
      */
     public function __construct(?array $midocoOrderRetentionPeriod = null)
     {
@@ -34,7 +34,7 @@ class GetOrderRetentionPeriodResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderRetentionPeriod value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoOrderRetentionPeriod[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoOrderRetentionPeriod[]
      */
     public function getMidocoOrderRetentionPeriod(): ?array
     {
@@ -55,12 +55,12 @@ class GetOrderRetentionPeriodResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderRetentionPeriodResponseMidocoOrderRetentionPeriodItem) {
             // validation for constraint: itemType
-            if (!$getOrderRetentionPeriodResponseMidocoOrderRetentionPeriodItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoOrderRetentionPeriod) {
+            if (!$getOrderRetentionPeriodResponseMidocoOrderRetentionPeriodItem instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoOrderRetentionPeriod) {
                 $invalidValues[] = is_object($getOrderRetentionPeriodResponseMidocoOrderRetentionPeriodItem) ? get_class($getOrderRetentionPeriodResponseMidocoOrderRetentionPeriodItem) : sprintf('%s(%s)', gettype($getOrderRetentionPeriodResponseMidocoOrderRetentionPeriodItem), var_export($getOrderRetentionPeriodResponseMidocoOrderRetentionPeriodItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderRetentionPeriod property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoOrderRetentionPeriod, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderRetentionPeriod property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoOrderRetentionPeriod, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetOrderRetentionPeriodResponse extends AbstractStructBase
     /**
      * Set MidocoOrderRetentionPeriod value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoOrderRetentionPeriod[] $midocoOrderRetentionPeriod
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetOrderRetentionPeriodResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoOrderRetentionPeriod[] $midocoOrderRetentionPeriod
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetOrderRetentionPeriodResponse
      */
     public function setMidocoOrderRetentionPeriod(?array $midocoOrderRetentionPeriod = null): self
     {
@@ -85,14 +85,14 @@ class GetOrderRetentionPeriodResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderRetentionPeriod value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoOrderRetentionPeriod $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetOrderRetentionPeriodResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoOrderRetentionPeriod $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetOrderRetentionPeriodResponse
      */
-    public function addToMidocoOrderRetentionPeriod(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoOrderRetentionPeriod $item): self
+    public function addToMidocoOrderRetentionPeriod(\Pggns\MidocoApi\Workflow\StructType\MidocoOrderRetentionPeriod $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoOrderRetentionPeriod) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderRetentionPeriod property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoOrderRetentionPeriod, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoOrderRetentionPeriod) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderRetentionPeriod property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoOrderRetentionPeriod, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderRetentionPeriod[] = $item;
         

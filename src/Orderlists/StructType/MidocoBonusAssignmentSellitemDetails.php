@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -182,7 +182,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -205,7 +205,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -228,7 +228,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -251,7 +251,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set numberOfPersons value
      * @param int $numberOfPersons
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setNumberOfPersons(?int $numberOfPersons = null): self
     {
@@ -274,7 +274,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setPrice(?float $price = null): self
     {
@@ -297,7 +297,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set bonus value
      * @param float $bonus
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setBonus(?float $bonus = null): self
     {
@@ -320,7 +320,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -343,7 +343,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set storno value
      * @param bool $storno
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setStorno(?bool $storno = null): self
     {
@@ -366,7 +366,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set ruleAmountBase value
      * @param float $ruleAmountBase
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setRuleAmountBase(?float $ruleAmountBase = null): self
     {
@@ -389,7 +389,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set revenue value
      * @param float $revenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setRevenue(?float $revenue = null): self
     {
@@ -412,7 +412,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -435,7 +435,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -458,7 +458,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -481,7 +481,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setDescription(?string $description = null): self
     {
@@ -504,7 +504,7 @@ class MidocoBonusAssignmentSellitemDetails extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusAssignmentSellitemDetails
      */
     public function setCustomerName(?string $customerName = null): self
     {

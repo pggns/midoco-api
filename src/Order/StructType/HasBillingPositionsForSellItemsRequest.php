@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,13 +20,13 @@ class HasBillingPositionsForSellItemsRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoSellItemId
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemId[]
      */
     protected ?array $MidocoSellItemId = null;
     /**
      * Constructor method for HasBillingPositionsForSellItemsRequest
      * @uses HasBillingPositionsForSellItemsRequest::setMidocoSellItemId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId[] $midocoSellItemId
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemId[] $midocoSellItemId
      */
     public function __construct(?array $midocoSellItemId = null)
     {
@@ -35,7 +35,7 @@ class HasBillingPositionsForSellItemsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSellItemId value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemId[]
      */
     public function getMidocoSellItemId(): ?array
     {
@@ -56,12 +56,12 @@ class HasBillingPositionsForSellItemsRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $hasBillingPositionsForSellItemsRequestMidocoSellItemIdItem) {
             // validation for constraint: itemType
-            if (!$hasBillingPositionsForSellItemsRequestMidocoSellItemIdItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId) {
+            if (!$hasBillingPositionsForSellItemsRequestMidocoSellItemIdItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemId) {
                 $invalidValues[] = is_object($hasBillingPositionsForSellItemsRequestMidocoSellItemIdItem) ? get_class($hasBillingPositionsForSellItemsRequestMidocoSellItemIdItem) : sprintf('%s(%s)', gettype($hasBillingPositionsForSellItemsRequestMidocoSellItemIdItem), var_export($hasBillingPositionsForSellItemsRequestMidocoSellItemIdItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellItemId property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellItemId property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemId, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -70,8 +70,8 @@ class HasBillingPositionsForSellItemsRequest extends AbstractStructBase
     /**
      * Set MidocoSellItemId value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId[] $midocoSellItemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\HasBillingPositionsForSellItemsRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemId[] $midocoSellItemId
+     * @return \Pggns\MidocoApi\Order\StructType\HasBillingPositionsForSellItemsRequest
      */
     public function setMidocoSellItemId(?array $midocoSellItemId = null): self
     {
@@ -86,14 +86,14 @@ class HasBillingPositionsForSellItemsRequest extends AbstractStructBase
     /**
      * Add item to MidocoSellItemId value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\HasBillingPositionsForSellItemsRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemId $item
+     * @return \Pggns\MidocoApi\Order\StructType\HasBillingPositionsForSellItemsRequest
      */
-    public function addToMidocoSellItemId(\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId $item): self
+    public function addToMidocoSellItemId(\Pggns\MidocoApi\Order\StructType\MidocoSellItemId $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellItemId property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemId) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellItemId property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemId, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellItemId[] = $item;
         

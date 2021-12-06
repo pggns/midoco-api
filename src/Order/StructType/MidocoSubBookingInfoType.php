@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,16 +18,16 @@ class MidocoSubBookingInfoType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoOrderCustomer
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $MidocoOrderCustomer = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $MidocoOrderCustomer = null;
     /**
      * The MidocoSellPassenger
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellPassenger
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[]
      */
     protected ?array $MidocoSellPassenger = null;
     /**
@@ -88,8 +88,8 @@ class MidocoSubBookingInfoType extends AbstractStructBase
      * @uses MidocoSubBookingInfoType::setItemType()
      * @uses MidocoSubBookingInfoType::setSubBookingId()
      * @uses MidocoSubBookingInfoType::setSubBookingAmount()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
      * @param int $position
      * @param int $customerId
      * @param string $customerName
@@ -100,7 +100,7 @@ class MidocoSubBookingInfoType extends AbstractStructBase
      * @param string $subBookingId
      * @param float $subBookingAmount
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer = null, ?array $midocoSellPassenger = null, ?int $position = null, ?int $customerId = null, ?string $customerName = null, ?string $customerForename = null, ?bool $isSubItem = null, ?int $positionReference = null, ?string $itemType = null, ?string $subBookingId = null, ?float $subBookingAmount = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer = null, ?array $midocoSellPassenger = null, ?int $position = null, ?int $customerId = null, ?string $customerName = null, ?string $customerForename = null, ?bool $isSubItem = null, ?int $positionReference = null, ?string $itemType = null, ?string $subBookingId = null, ?float $subBookingAmount = null)
     {
         $this
             ->setMidocoOrderCustomer($midocoOrderCustomer)
@@ -117,18 +117,18 @@ class MidocoSubBookingInfoType extends AbstractStructBase
     }
     /**
      * Get MidocoOrderCustomer value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer|null
      */
-    public function getMidocoOrderCustomer(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer
+    public function getMidocoOrderCustomer(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer
     {
         return $this->MidocoOrderCustomer;
     }
     /**
      * Set MidocoOrderCustomer value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSubBookingInfoType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSubBookingInfoType
      */
-    public function setMidocoOrderCustomer(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer = null): self
+    public function setMidocoOrderCustomer(?\Pggns\MidocoApi\Order\StructType\MidocoOrderCustomer $midocoOrderCustomer = null): self
     {
         $this->MidocoOrderCustomer = $midocoOrderCustomer;
         
@@ -136,7 +136,7 @@ class MidocoSubBookingInfoType extends AbstractStructBase
     }
     /**
      * Get MidocoSellPassenger value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[]
      */
     public function getMidocoSellPassenger(): ?array
     {
@@ -157,12 +157,12 @@ class MidocoSubBookingInfoType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSubBookingInfoTypeMidocoSellPassengerItem) {
             // validation for constraint: itemType
-            if (!$midocoSubBookingInfoTypeMidocoSellPassengerItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger) {
+            if (!$midocoSubBookingInfoTypeMidocoSellPassengerItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger) {
                 $invalidValues[] = is_object($midocoSubBookingInfoTypeMidocoSellPassengerItem) ? get_class($midocoSubBookingInfoTypeMidocoSellPassengerItem) : sprintf('%s(%s)', gettype($midocoSubBookingInfoTypeMidocoSellPassengerItem), var_export($midocoSubBookingInfoTypeMidocoSellPassengerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -171,8 +171,8 @@ class MidocoSubBookingInfoType extends AbstractStructBase
     /**
      * Set MidocoSellPassenger value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSubBookingInfoType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSubBookingInfoType
      */
     public function setMidocoSellPassenger(?array $midocoSellPassenger = null): self
     {
@@ -187,14 +187,14 @@ class MidocoSubBookingInfoType extends AbstractStructBase
     /**
      * Add item to MidocoSellPassenger value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSubBookingInfoType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSubBookingInfoType
      */
-    public function addToMidocoSellPassenger(\Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger $item): self
+    public function addToMidocoSellPassenger(\Pggns\MidocoApi\Order\StructType\MidocoSellPassenger $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellPassenger[] = $item;
         
@@ -211,7 +211,7 @@ class MidocoSubBookingInfoType extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSubBookingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSubBookingInfoType
      */
     public function setPosition(?int $position = null): self
     {
@@ -234,7 +234,7 @@ class MidocoSubBookingInfoType extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSubBookingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSubBookingInfoType
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -257,7 +257,7 @@ class MidocoSubBookingInfoType extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSubBookingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSubBookingInfoType
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -280,7 +280,7 @@ class MidocoSubBookingInfoType extends AbstractStructBase
     /**
      * Set customerForename value
      * @param string $customerForename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSubBookingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSubBookingInfoType
      */
     public function setCustomerForename(?string $customerForename = null): self
     {
@@ -303,7 +303,7 @@ class MidocoSubBookingInfoType extends AbstractStructBase
     /**
      * Set isSubItem value
      * @param bool $isSubItem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSubBookingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSubBookingInfoType
      */
     public function setIsSubItem(?bool $isSubItem = null): self
     {
@@ -326,7 +326,7 @@ class MidocoSubBookingInfoType extends AbstractStructBase
     /**
      * Set positionReference value
      * @param int $positionReference
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSubBookingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSubBookingInfoType
      */
     public function setPositionReference(?int $positionReference = null): self
     {
@@ -349,7 +349,7 @@ class MidocoSubBookingInfoType extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSubBookingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSubBookingInfoType
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -372,7 +372,7 @@ class MidocoSubBookingInfoType extends AbstractStructBase
     /**
      * Set subBookingId value
      * @param string $subBookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSubBookingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSubBookingInfoType
      */
     public function setSubBookingId(?string $subBookingId = null): self
     {
@@ -395,7 +395,7 @@ class MidocoSubBookingInfoType extends AbstractStructBase
     /**
      * Set subBookingAmount value
      * @param float $subBookingAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSubBookingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSubBookingInfoType
      */
     public function setSubBookingAmount(?float $subBookingAmount = null): self
     {

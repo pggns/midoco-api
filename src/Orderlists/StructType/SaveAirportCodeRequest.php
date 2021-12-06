@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveAirportCodeRequest extends AbstractStructBase
      * The MidocoAirportCode
      * Meta information extracted from the WSDL
      * - ref: MidocoAirportCode
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAirportCode|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoAirportCode|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAirportCode $MidocoAirportCode = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoAirportCode $MidocoAirportCode = null;
     /**
      * Constructor method for SaveAirportCodeRequest
      * @uses SaveAirportCodeRequest::setMidocoAirportCode()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAirportCode $midocoAirportCode
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAirportCode $midocoAirportCode
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAirportCode $midocoAirportCode = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoAirportCode $midocoAirportCode = null)
     {
         $this
             ->setMidocoAirportCode($midocoAirportCode);
     }
     /**
      * Get MidocoAirportCode value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAirportCode|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAirportCode|null
      */
-    public function getMidocoAirportCode(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAirportCode
+    public function getMidocoAirportCode(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoAirportCode
     {
         return $this->MidocoAirportCode;
     }
     /**
      * Set MidocoAirportCode value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAirportCode $midocoAirportCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveAirportCodeRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAirportCode $midocoAirportCode
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveAirportCodeRequest
      */
-    public function setMidocoAirportCode(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAirportCode $midocoAirportCode = null): self
+    public function setMidocoAirportCode(?\Pggns\MidocoApi\Orderlists\StructType\MidocoAirportCode $midocoAirportCode = null): self
     {
         $this->MidocoAirportCode = $midocoAirportCode;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSettlementInfoDetail
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfoDetail[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfoDetail[]
      */
     protected ?array $MidocoSettlementInfoDetail = null;
     /**
@@ -30,15 +30,15 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMediatorCharge
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO[]
      */
     protected ?array $MidocoMediatorCharge = null;
     /**
      * Constructor method for GetSettlementInfoDetailsResponse
      * @uses GetSettlementInfoDetailsResponse::setMidocoSettlementInfoDetail()
      * @uses GetSettlementInfoDetailsResponse::setMidocoMediatorCharge()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfoDetail[] $midocoSettlementInfoDetail
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO[] $midocoMediatorCharge
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfoDetail[] $midocoSettlementInfoDetail
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO[] $midocoMediatorCharge
      */
     public function __construct(?array $midocoSettlementInfoDetail = null, ?array $midocoMediatorCharge = null)
     {
@@ -48,7 +48,7 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSettlementInfoDetail value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfoDetail[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfoDetail[]
      */
     public function getMidocoSettlementInfoDetail(): ?array
     {
@@ -69,12 +69,12 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSettlementInfoDetailsResponseMidocoSettlementInfoDetailItem) {
             // validation for constraint: itemType
-            if (!$getSettlementInfoDetailsResponseMidocoSettlementInfoDetailItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfoDetail) {
+            if (!$getSettlementInfoDetailsResponseMidocoSettlementInfoDetailItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfoDetail) {
                 $invalidValues[] = is_object($getSettlementInfoDetailsResponseMidocoSettlementInfoDetailItem) ? get_class($getSettlementInfoDetailsResponseMidocoSettlementInfoDetailItem) : sprintf('%s(%s)', gettype($getSettlementInfoDetailsResponseMidocoSettlementInfoDetailItem), var_export($getSettlementInfoDetailsResponseMidocoSettlementInfoDetailItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSettlementInfoDetail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfoDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSettlementInfoDetail property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfoDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -83,8 +83,8 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
     /**
      * Set MidocoSettlementInfoDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfoDetail[] $midocoSettlementInfoDetail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSettlementInfoDetailsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfoDetail[] $midocoSettlementInfoDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GetSettlementInfoDetailsResponse
      */
     public function setMidocoSettlementInfoDetail(?array $midocoSettlementInfoDetail = null): self
     {
@@ -99,14 +99,14 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
     /**
      * Add item to MidocoSettlementInfoDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfoDetail $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSettlementInfoDetailsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfoDetail $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSettlementInfoDetailsResponse
      */
-    public function addToMidocoSettlementInfoDetail(\Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfoDetail $item): self
+    public function addToMidocoSettlementInfoDetail(\Pggns\MidocoApi\Order\StructType\MidocoSettlementInfoDetail $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfoDetail) {
-            throw new InvalidArgumentException(sprintf('The MidocoSettlementInfoDetail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSettlementInfoDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfoDetail) {
+            throw new InvalidArgumentException(sprintf('The MidocoSettlementInfoDetail property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSettlementInfoDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSettlementInfoDetail[] = $item;
         
@@ -114,7 +114,7 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMediatorCharge value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO[]
      */
     public function getMidocoMediatorCharge(): ?array
     {
@@ -135,12 +135,12 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSettlementInfoDetailsResponseMidocoMediatorChargeItem) {
             // validation for constraint: itemType
-            if (!$getSettlementInfoDetailsResponseMidocoMediatorChargeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO) {
+            if (!$getSettlementInfoDetailsResponseMidocoMediatorChargeItem instanceof \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO) {
                 $invalidValues[] = is_object($getSettlementInfoDetailsResponseMidocoMediatorChargeItem) ? get_class($getSettlementInfoDetailsResponseMidocoMediatorChargeItem) : sprintf('%s(%s)', gettype($getSettlementInfoDetailsResponseMidocoMediatorChargeItem), var_export($getSettlementInfoDetailsResponseMidocoMediatorChargeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMediatorCharge property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMediatorCharge property can only contain items of type \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -149,8 +149,8 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
     /**
      * Set MidocoMediatorCharge value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO[] $midocoMediatorCharge
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSettlementInfoDetailsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO[] $midocoMediatorCharge
+     * @return \Pggns\MidocoApi\Order\StructType\GetSettlementInfoDetailsResponse
      */
     public function setMidocoMediatorCharge(?array $midocoMediatorCharge = null): self
     {
@@ -165,14 +165,14 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
     /**
      * Add item to MidocoMediatorCharge value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSettlementInfoDetailsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSettlementInfoDetailsResponse
      */
-    public function addToMidocoMediatorCharge(\Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO $item): self
+    public function addToMidocoMediatorCharge(\Pggns\MidocoApi\Order\StructType\MediatorChargeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMediatorCharge property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMediatorCharge property can only contain items of type \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMediatorCharge[] = $item;
         

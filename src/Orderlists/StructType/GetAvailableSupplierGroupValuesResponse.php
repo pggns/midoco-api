@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetAvailableSupplierGroupValuesResponse extends AbstractStructBase
      * Set groupValue value
      * @throws InvalidArgumentException
      * @param string[] $groupValue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAvailableSupplierGroupValuesResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAvailableSupplierGroupValuesResponse
      */
     public function setGroupValue(?array $groupValue = null): self
     {
@@ -85,7 +85,7 @@ class GetAvailableSupplierGroupValuesResponse extends AbstractStructBase
      * Add item to groupValue value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAvailableSupplierGroupValuesResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAvailableSupplierGroupValuesResponse
      */
     public function addToGroupValue(string $item): self
     {

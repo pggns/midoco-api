@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,26 +19,26 @@ class GetSellItemRevenuesResponse extends AbstractStructBase
      * The MidocoBookingInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoBookingInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType $MidocoBookingInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType $MidocoBookingInfo = null;
     /**
      * The MidocoPreparedRevenueBooking
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPreparedRevenueBooking
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking[]
      */
     protected ?array $MidocoPreparedRevenueBooking = null;
     /**
      * Constructor method for GetSellItemRevenuesResponse
      * @uses GetSellItemRevenuesResponse::setMidocoBookingInfo()
      * @uses GetSellItemRevenuesResponse::setMidocoPreparedRevenueBooking()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType $midocoBookingInfo
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking[] $midocoPreparedRevenueBooking
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType $midocoBookingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking[] $midocoPreparedRevenueBooking
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType $midocoBookingInfo = null, ?array $midocoPreparedRevenueBooking = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType $midocoBookingInfo = null, ?array $midocoPreparedRevenueBooking = null)
     {
         $this
             ->setMidocoBookingInfo($midocoBookingInfo)
@@ -46,18 +46,18 @@ class GetSellItemRevenuesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBookingInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType|null
      */
-    public function getMidocoBookingInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType
+    public function getMidocoBookingInfo(): ?\Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType
     {
         return $this->MidocoBookingInfo;
     }
     /**
      * Set MidocoBookingInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType $midocoBookingInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemRevenuesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType $midocoBookingInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemRevenuesResponse
      */
-    public function setMidocoBookingInfo(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfoType $midocoBookingInfo = null): self
+    public function setMidocoBookingInfo(?\Pggns\MidocoApi\Order\StructType\MidocoBookingInfoType $midocoBookingInfo = null): self
     {
         $this->MidocoBookingInfo = $midocoBookingInfo;
         
@@ -65,7 +65,7 @@ class GetSellItemRevenuesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPreparedRevenueBooking value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking[]
      */
     public function getMidocoPreparedRevenueBooking(): ?array
     {
@@ -86,12 +86,12 @@ class GetSellItemRevenuesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSellItemRevenuesResponseMidocoPreparedRevenueBookingItem) {
             // validation for constraint: itemType
-            if (!$getSellItemRevenuesResponseMidocoPreparedRevenueBookingItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking) {
+            if (!$getSellItemRevenuesResponseMidocoPreparedRevenueBookingItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking) {
                 $invalidValues[] = is_object($getSellItemRevenuesResponseMidocoPreparedRevenueBookingItem) ? get_class($getSellItemRevenuesResponseMidocoPreparedRevenueBookingItem) : sprintf('%s(%s)', gettype($getSellItemRevenuesResponseMidocoPreparedRevenueBookingItem), var_export($getSellItemRevenuesResponseMidocoPreparedRevenueBookingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPreparedRevenueBooking property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPreparedRevenueBooking property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -100,8 +100,8 @@ class GetSellItemRevenuesResponse extends AbstractStructBase
     /**
      * Set MidocoPreparedRevenueBooking value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking[] $midocoPreparedRevenueBooking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemRevenuesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking[] $midocoPreparedRevenueBooking
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemRevenuesResponse
      */
     public function setMidocoPreparedRevenueBooking(?array $midocoPreparedRevenueBooking = null): self
     {
@@ -116,14 +116,14 @@ class GetSellItemRevenuesResponse extends AbstractStructBase
     /**
      * Add item to MidocoPreparedRevenueBooking value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemRevenuesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemRevenuesResponse
      */
-    public function addToMidocoPreparedRevenueBooking(\Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking $item): self
+    public function addToMidocoPreparedRevenueBooking(\Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking) {
-            throw new InvalidArgumentException(sprintf('The MidocoPreparedRevenueBooking property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking) {
+            throw new InvalidArgumentException(sprintf('The MidocoPreparedRevenueBooking property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPreparedRevenueBooking[] = $item;
         

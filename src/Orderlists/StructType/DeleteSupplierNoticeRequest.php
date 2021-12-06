@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteSupplierNoticeRequest extends AbstractStructBase
      * The MidocoSupplierNotice
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierNotice
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierNotice|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierNotice|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierNotice $MidocoSupplierNotice = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierNotice $MidocoSupplierNotice = null;
     /**
      * Constructor method for DeleteSupplierNoticeRequest
      * @uses DeleteSupplierNoticeRequest::setMidocoSupplierNotice()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierNotice $midocoSupplierNotice
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierNotice $midocoSupplierNotice
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierNotice $midocoSupplierNotice = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierNotice $midocoSupplierNotice = null)
     {
         $this
             ->setMidocoSupplierNotice($midocoSupplierNotice);
     }
     /**
      * Get MidocoSupplierNotice value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierNotice|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierNotice|null
      */
-    public function getMidocoSupplierNotice(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierNotice
+    public function getMidocoSupplierNotice(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierNotice
     {
         return $this->MidocoSupplierNotice;
     }
     /**
      * Set MidocoSupplierNotice value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierNotice $midocoSupplierNotice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteSupplierNoticeRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierNotice $midocoSupplierNotice
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteSupplierNoticeRequest
      */
-    public function setMidocoSupplierNotice(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierNotice $midocoSupplierNotice = null): self
+    public function setMidocoSupplierNotice(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierNotice $midocoSupplierNotice = null): self
     {
         $this->MidocoSupplierNotice = $midocoSupplierNotice;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchMediatorChargesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMediatorCharge
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO[]
      */
     protected ?array $MidocoMediatorCharge = null;
     /**
      * Constructor method for SearchMediatorChargesResponse
      * @uses SearchMediatorChargesResponse::setMidocoMediatorCharge()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO[] $midocoMediatorCharge
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO[] $midocoMediatorCharge
      */
     public function __construct(?array $midocoMediatorCharge = null)
     {
@@ -34,7 +34,7 @@ class SearchMediatorChargesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMediatorCharge value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO[]
      */
     public function getMidocoMediatorCharge(): ?array
     {
@@ -55,12 +55,12 @@ class SearchMediatorChargesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchMediatorChargesResponseMidocoMediatorChargeItem) {
             // validation for constraint: itemType
-            if (!$searchMediatorChargesResponseMidocoMediatorChargeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO) {
+            if (!$searchMediatorChargesResponseMidocoMediatorChargeItem instanceof \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO) {
                 $invalidValues[] = is_object($searchMediatorChargesResponseMidocoMediatorChargeItem) ? get_class($searchMediatorChargesResponseMidocoMediatorChargeItem) : sprintf('%s(%s)', gettype($searchMediatorChargesResponseMidocoMediatorChargeItem), var_export($searchMediatorChargesResponseMidocoMediatorChargeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMediatorCharge property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMediatorCharge property can only contain items of type \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchMediatorChargesResponse extends AbstractStructBase
     /**
      * Set MidocoMediatorCharge value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO[] $midocoMediatorCharge
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorChargesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO[] $midocoMediatorCharge
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorChargesResponse
      */
     public function setMidocoMediatorCharge(?array $midocoMediatorCharge = null): self
     {
@@ -85,14 +85,14 @@ class SearchMediatorChargesResponse extends AbstractStructBase
     /**
      * Add item to MidocoMediatorCharge value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorChargesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorChargesResponse
      */
-    public function addToMidocoMediatorCharge(\Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO $item): self
+    public function addToMidocoMediatorCharge(\Pggns\MidocoApi\Order\StructType\MediatorChargeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMediatorCharge property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MediatorChargeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMediatorCharge property can only contain items of type \Pggns\MidocoApi\Order\StructType\MediatorChargeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMediatorCharge[] = $item;
         

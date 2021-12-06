@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class MidocoDebitPosition extends MidocoDebit
     /**
      * Set purpose value
      * @param string $purpose
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitPosition
      */
     public function setPurpose(?string $purpose = null): self
     {
@@ -118,7 +118,7 @@ class MidocoDebitPosition extends MidocoDebit
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitPosition
      */
     public function setIban(?string $iban = null): self
     {
@@ -141,7 +141,7 @@ class MidocoDebitPosition extends MidocoDebit
     /**
      * Set swiftBicCode value
      * @param string $swiftBicCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitPosition
      */
     public function setSwiftBicCode(?string $swiftBicCode = null): self
     {
@@ -164,7 +164,7 @@ class MidocoDebitPosition extends MidocoDebit
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitPosition
      */
     public function setMandateId(?int $mandateId = null): self
     {
@@ -187,7 +187,7 @@ class MidocoDebitPosition extends MidocoDebit
     /**
      * Set executionDate value
      * @param string $executionDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitPosition
      */
     public function setExecutionDate(?string $executionDate = null): self
     {
@@ -210,7 +210,7 @@ class MidocoDebitPosition extends MidocoDebit
     /**
      * Set mandateReference value
      * @param string $mandateReference
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitPosition
      */
     public function setMandateReference(?string $mandateReference = null): self
     {
@@ -233,7 +233,7 @@ class MidocoDebitPosition extends MidocoDebit
     /**
      * Set isRecurrent value
      * @param bool $isRecurrent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitPosition
      */
     public function setIsRecurrent(?bool $isRecurrent = null): self
     {
@@ -256,7 +256,7 @@ class MidocoDebitPosition extends MidocoDebit
     /**
      * Set mandateType value
      * @param string $mandateType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitPosition
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitPosition
      */
     public function setMandateType(?string $mandateType = null): self
     {

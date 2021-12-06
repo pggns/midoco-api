@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveTemplateRequest extends AbstractStructBase
      * The MidocoCrmTemplate
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmTemplate
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO $MidocoCrmTemplate = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO $MidocoCrmTemplate = null;
     /**
      * Constructor method for SaveTemplateRequest
      * @uses SaveTemplateRequest::setMidocoCrmTemplate()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO $midocoCrmTemplate
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO $midocoCrmTemplate
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO $midocoCrmTemplate = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO $midocoCrmTemplate = null)
     {
         $this
             ->setMidocoCrmTemplate($midocoCrmTemplate);
     }
     /**
      * Get MidocoCrmTemplate value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO|null
      */
-    public function getMidocoCrmTemplate(): ?\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO
+    public function getMidocoCrmTemplate(): ?\Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO
     {
         return $this->MidocoCrmTemplate;
     }
     /**
      * Set MidocoCrmTemplate value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO $midocoCrmTemplate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveTemplateRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO $midocoCrmTemplate
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveTemplateRequest
      */
-    public function setMidocoCrmTemplate(?\Pggns\MidocoApi\Api\Crm\StructType\CrmTemplateDTO $midocoCrmTemplate = null): self
+    public function setMidocoCrmTemplate(?\Pggns\MidocoApi\Crm\StructType\CrmTemplateDTO $midocoCrmTemplate = null): self
     {
         $this->MidocoCrmTemplate = $midocoCrmTemplate;
         

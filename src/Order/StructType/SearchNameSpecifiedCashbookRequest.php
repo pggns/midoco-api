@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SearchNameSpecifiedCashbookRequest extends AbstractStructBase
     /**
      * Set cashBookName value
      * @param string $cashBookName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchNameSpecifiedCashbookRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchNameSpecifiedCashbookRequest
      */
     public function setCashBookName(?string $cashBookName = null): self
     {

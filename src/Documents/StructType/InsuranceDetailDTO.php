@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set annualValidTo value
      * @param string $annualValidTo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setAnnualValidTo(?string $annualValidTo = null): self
     {
@@ -182,7 +182,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -205,7 +205,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -228,7 +228,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set isAnnual value
      * @param bool $isAnnual
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setIsAnnual(?bool $isAnnual = null): self
     {
@@ -251,7 +251,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set isGroup value
      * @param bool $isGroup
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setIsGroup(?bool $isGroup = null): self
     {
@@ -274,7 +274,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -297,7 +297,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set paxAssigned value
      * @param string $paxAssigned
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setPaxAssigned(?string $paxAssigned = null): self
     {
@@ -320,7 +320,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set paxPerService value
      * @param int $paxPerService
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setPaxPerService(?int $paxPerService = null): self
     {
@@ -343,7 +343,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set pibLink value
      * @param string $pibLink
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setPibLink(?string $pibLink = null): self
     {
@@ -366,7 +366,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set positionNo value
      * @param int $positionNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setPositionNo(?int $positionNo = null): self
     {
@@ -389,7 +389,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set referencePosition value
      * @param int $referencePosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setReferencePosition(?int $referencePosition = null): self
     {
@@ -412,7 +412,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -435,7 +435,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set tariffCode value
      * @param string $tariffCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setTariffCode(?string $tariffCode = null): self
     {
@@ -458,7 +458,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -481,7 +481,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -504,7 +504,7 @@ class InsuranceDetailDTO extends AbstractStructBase
     /**
      * Set validUntil value
      * @param string $validUntil
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\InsuranceDetailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\InsuranceDetailDTO
      */
     public function setValidUntil(?string $validUntil = null): self
     {

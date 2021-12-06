@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class GetTravelDocsPrintInfoRequest extends AbstractStructBase
     /**
      * Set orgUnitName value
      * @param string $orgUnitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelDocsPrintInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoRequest
      */
     public function setOrgUnitName(?string $orgUnitName = null): self
     {
@@ -142,7 +142,7 @@ class GetTravelDocsPrintInfoRequest extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelDocsPrintInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoRequest
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -165,7 +165,7 @@ class GetTravelDocsPrintInfoRequest extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelDocsPrintInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoRequest
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -188,7 +188,7 @@ class GetTravelDocsPrintInfoRequest extends AbstractStructBase
     /**
      * Set paymentReceived value
      * @param bool $paymentReceived
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelDocsPrintInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoRequest
      */
     public function setPaymentReceived(?bool $paymentReceived = null): self
     {
@@ -211,7 +211,7 @@ class GetTravelDocsPrintInfoRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelDocsPrintInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -234,7 +234,7 @@ class GetTravelDocsPrintInfoRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelDocsPrintInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -257,7 +257,7 @@ class GetTravelDocsPrintInfoRequest extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelDocsPrintInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoRequest
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -280,7 +280,7 @@ class GetTravelDocsPrintInfoRequest extends AbstractStructBase
     /**
      * Set group1 value
      * @param string $group1
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelDocsPrintInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoRequest
      */
     public function setGroup1(?string $group1 = null): self
     {
@@ -303,7 +303,7 @@ class GetTravelDocsPrintInfoRequest extends AbstractStructBase
     /**
      * Set group2 value
      * @param string $group2
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelDocsPrintInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoRequest
      */
     public function setGroup2(?string $group2 = null): self
     {
@@ -326,7 +326,7 @@ class GetTravelDocsPrintInfoRequest extends AbstractStructBase
     /**
      * Set group3 value
      * @param string $group3
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelDocsPrintInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoRequest
      */
     public function setGroup3(?string $group3 = null): self
     {
@@ -349,7 +349,7 @@ class GetTravelDocsPrintInfoRequest extends AbstractStructBase
     /**
      * Set document value
      * @param string $document
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTravelDocsPrintInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoRequest
      */
     public function setDocument(?string $document = null): self
     {

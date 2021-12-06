@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -171,7 +171,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set short_name value
      * @param string $short_name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setShort_name(?string $short_name = null): self
     {
@@ -194,7 +194,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set reseller_id value
      * @param string $reseller_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setReseller_id(?string $reseller_id = null): self
     {
@@ -217,7 +217,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setName(?string $name = null): self
     {
@@ -240,7 +240,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setStreet(?string $street = null): self
     {
@@ -263,7 +263,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set street_no value
      * @param string $street_no
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setStreet_no(?string $street_no = null): self
     {
@@ -286,7 +286,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set zip_code value
      * @param string $zip_code
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setZip_code(?string $zip_code = null): self
     {
@@ -309,7 +309,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setCity(?string $city = null): self
     {
@@ -332,7 +332,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setPhone(?string $phone = null): self
     {
@@ -355,7 +355,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set fax value
      * @param string $fax
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setFax(?string $fax = null): self
     {
@@ -378,7 +378,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setEmail(?string $email = null): self
     {
@@ -401,7 +401,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set shortName value
      * @param string $shortName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setShortName(?string $shortName = null): self
     {
@@ -424,7 +424,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set resellerId value
      * @param string $resellerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setResellerId(?string $resellerId = null): self
     {
@@ -447,7 +447,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -470,7 +470,7 @@ class AgencyInfoType extends AbstractStructBase
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyInfoType
      */
     public function setZipCode(?string $zipCode = null): self
     {

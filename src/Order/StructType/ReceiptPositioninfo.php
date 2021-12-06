@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -167,7 +167,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set positionNo value
      * @param int $positionNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setPositionNo(?int $positionNo = null): self
     {
@@ -190,7 +190,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set itemCode value
      * @param string $itemCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setItemCode(?string $itemCode = null): self
     {
@@ -213,7 +213,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setAmount(?float $amount = null): self
     {
@@ -236,7 +236,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -259,7 +259,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -282,7 +282,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -305,7 +305,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setVatPercent(?float $vatPercent = null): self
     {
@@ -328,7 +328,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set bookingText value
      * @param string $bookingText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setBookingText(?string $bookingText = null): self
     {
@@ -351,7 +351,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set referenceNo value
      * @param string $referenceNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setReferenceNo(?string $referenceNo = null): self
     {
@@ -374,7 +374,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set orderid value
      * @param int $orderid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setOrderid(?int $orderid = null): self
     {
@@ -397,7 +397,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set manuallyAdjustable value
      * @param bool $manuallyAdjustable
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setManuallyAdjustable(?bool $manuallyAdjustable = null): self
     {
@@ -420,7 +420,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set isExpense value
      * @param bool $isExpense
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setIsExpense(?bool $isExpense = null): self
     {
@@ -443,7 +443,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -466,7 +466,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set originalVatAmount value
      * @param float $originalVatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setOriginalVatAmount(?float $originalVatAmount = null): self
     {
@@ -489,7 +489,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -512,7 +512,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set articleType value
      * @param string $articleType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setArticleType(?string $articleType = null): self
     {
@@ -535,7 +535,7 @@ class ReceiptPositioninfo extends AbstractStructBase
     /**
      * Set generateVoucher value
      * @param bool $generateVoucher
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReceiptPositioninfo
+     * @return \Pggns\MidocoApi\Order\StructType\ReceiptPositioninfo
      */
     public function setGenerateVoucher(?bool $generateVoucher = null): self
     {

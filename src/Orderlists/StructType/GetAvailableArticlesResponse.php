@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAvailableArticlesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoArticle
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\ArticleDTO[]
      */
     protected ?array $MidocoArticle = null;
     /**
      * Constructor method for GetAvailableArticlesResponse
      * @uses GetAvailableArticlesResponse::setMidocoArticle()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO[] $midocoArticle
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ArticleDTO[] $midocoArticle
      */
     public function __construct(?array $midocoArticle = null)
     {
@@ -34,7 +34,7 @@ class GetAvailableArticlesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoArticle value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ArticleDTO[]
      */
     public function getMidocoArticle(): ?array
     {
@@ -55,12 +55,12 @@ class GetAvailableArticlesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailableArticlesResponseMidocoArticleItem) {
             // validation for constraint: itemType
-            if (!$getAvailableArticlesResponseMidocoArticleItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO) {
+            if (!$getAvailableArticlesResponseMidocoArticleItem instanceof \Pggns\MidocoApi\Orderlists\StructType\ArticleDTO) {
                 $invalidValues[] = is_object($getAvailableArticlesResponseMidocoArticleItem) ? get_class($getAvailableArticlesResponseMidocoArticleItem) : sprintf('%s(%s)', gettype($getAvailableArticlesResponseMidocoArticleItem), var_export($getAvailableArticlesResponseMidocoArticleItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoArticle property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoArticle property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\ArticleDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAvailableArticlesResponse extends AbstractStructBase
     /**
      * Set MidocoArticle value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO[] $midocoArticle
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAvailableArticlesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ArticleDTO[] $midocoArticle
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAvailableArticlesResponse
      */
     public function setMidocoArticle(?array $midocoArticle = null): self
     {
@@ -85,14 +85,14 @@ class GetAvailableArticlesResponse extends AbstractStructBase
     /**
      * Add item to MidocoArticle value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAvailableArticlesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ArticleDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAvailableArticlesResponse
      */
-    public function addToMidocoArticle(\Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO $item): self
+    public function addToMidocoArticle(\Pggns\MidocoApi\Orderlists\StructType\ArticleDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoArticle property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\ArticleDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\ArticleDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoArticle property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\ArticleDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoArticle[] = $item;
         

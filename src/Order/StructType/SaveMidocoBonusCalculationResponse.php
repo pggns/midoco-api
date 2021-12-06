@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -77,7 +77,7 @@ class SaveMidocoBonusCalculationResponse extends AbstractStructBase
      * Set users value
      * @throws InvalidArgumentException
      * @param int[] $users
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMidocoBonusCalculationResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMidocoBonusCalculationResponse
      */
     public function setUsers(?array $users = null): self
     {
@@ -93,7 +93,7 @@ class SaveMidocoBonusCalculationResponse extends AbstractStructBase
      * Add item to users value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMidocoBonusCalculationResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMidocoBonusCalculationResponse
      */
     public function addToUsers(int $item): self
     {
@@ -116,7 +116,7 @@ class SaveMidocoBonusCalculationResponse extends AbstractStructBase
     /**
      * Set bonusId value
      * @param int $bonusId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMidocoBonusCalculationResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMidocoBonusCalculationResponse
      */
     public function setBonusId(?int $bonusId = null): self
     {

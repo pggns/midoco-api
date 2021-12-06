@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetEntryHistoryResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoEntryHistory
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoEntryHistory[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoEntryHistory[]
      */
     protected ?array $MidocoEntryHistory = null;
     /**
      * Constructor method for GetEntryHistoryResponse
      * @uses GetEntryHistoryResponse::setMidocoEntryHistory()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoEntryHistory[] $midocoEntryHistory
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoEntryHistory[] $midocoEntryHistory
      */
     public function __construct(?array $midocoEntryHistory = null)
     {
@@ -34,7 +34,7 @@ class GetEntryHistoryResponse extends AbstractStructBase
     }
     /**
      * Get MidocoEntryHistory value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoEntryHistory[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoEntryHistory[]
      */
     public function getMidocoEntryHistory(): ?array
     {
@@ -55,12 +55,12 @@ class GetEntryHistoryResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getEntryHistoryResponseMidocoEntryHistoryItem) {
             // validation for constraint: itemType
-            if (!$getEntryHistoryResponseMidocoEntryHistoryItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoEntryHistory) {
+            if (!$getEntryHistoryResponseMidocoEntryHistoryItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoEntryHistory) {
                 $invalidValues[] = is_object($getEntryHistoryResponseMidocoEntryHistoryItem) ? get_class($getEntryHistoryResponseMidocoEntryHistoryItem) : sprintf('%s(%s)', gettype($getEntryHistoryResponseMidocoEntryHistoryItem), var_export($getEntryHistoryResponseMidocoEntryHistoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoEntryHistory property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoEntryHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoEntryHistory property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoEntryHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetEntryHistoryResponse extends AbstractStructBase
     /**
      * Set MidocoEntryHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoEntryHistory[] $midocoEntryHistory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEntryHistoryResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoEntryHistory[] $midocoEntryHistory
+     * @return \Pggns\MidocoApi\Order\StructType\GetEntryHistoryResponse
      */
     public function setMidocoEntryHistory(?array $midocoEntryHistory = null): self
     {
@@ -85,14 +85,14 @@ class GetEntryHistoryResponse extends AbstractStructBase
     /**
      * Add item to MidocoEntryHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoEntryHistory $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEntryHistoryResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoEntryHistory $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetEntryHistoryResponse
      */
-    public function addToMidocoEntryHistory(\Pggns\MidocoApi\Api\Order\StructType\MidocoEntryHistory $item): self
+    public function addToMidocoEntryHistory(\Pggns\MidocoApi\Order\StructType\MidocoEntryHistory $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoEntryHistory) {
-            throw new InvalidArgumentException(sprintf('The MidocoEntryHistory property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoEntryHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoEntryHistory) {
+            throw new InvalidArgumentException(sprintf('The MidocoEntryHistory property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoEntryHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoEntryHistory[] = $item;
         

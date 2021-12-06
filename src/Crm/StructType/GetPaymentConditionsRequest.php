@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetPaymentConditionsRequest extends AbstractStructBase
     /**
      * Set conditionId value
      * @param string $conditionId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetPaymentConditionsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetPaymentConditionsRequest
      */
     public function setConditionId(?string $conditionId = null): self
     {

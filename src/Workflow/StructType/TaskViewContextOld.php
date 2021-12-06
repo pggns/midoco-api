@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class TaskViewContextOld extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: TaskViewSingleContext
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewSingleContext[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\TaskViewSingleContext[]
      */
     protected ?array $TaskViewSingleContext = null;
     /**
      * Constructor method for TaskViewContextOld
      * @uses TaskViewContextOld::setTaskViewSingleContext()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewSingleContext[] $taskViewSingleContext
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskViewSingleContext[] $taskViewSingleContext
      */
     public function __construct(?array $taskViewSingleContext = null)
     {
@@ -34,7 +34,7 @@ class TaskViewContextOld extends AbstractStructBase
     }
     /**
      * Get TaskViewSingleContext value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewSingleContext[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewSingleContext[]
      */
     public function getTaskViewSingleContext(): ?array
     {
@@ -55,12 +55,12 @@ class TaskViewContextOld extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $taskViewContextOldTaskViewSingleContextItem) {
             // validation for constraint: itemType
-            if (!$taskViewContextOldTaskViewSingleContextItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewSingleContext) {
+            if (!$taskViewContextOldTaskViewSingleContextItem instanceof \Pggns\MidocoApi\Workflow\StructType\TaskViewSingleContext) {
                 $invalidValues[] = is_object($taskViewContextOldTaskViewSingleContextItem) ? get_class($taskViewContextOldTaskViewSingleContextItem) : sprintf('%s(%s)', gettype($taskViewContextOldTaskViewSingleContextItem), var_export($taskViewContextOldTaskViewSingleContextItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The TaskViewSingleContext property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewSingleContext, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The TaskViewSingleContext property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\TaskViewSingleContext, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class TaskViewContextOld extends AbstractStructBase
     /**
      * Set TaskViewSingleContext value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewSingleContext[] $taskViewSingleContext
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextOld
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskViewSingleContext[] $taskViewSingleContext
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewContextOld
      */
     public function setTaskViewSingleContext(?array $taskViewSingleContext = null): self
     {
@@ -85,14 +85,14 @@ class TaskViewContextOld extends AbstractStructBase
     /**
      * Add item to TaskViewSingleContext value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewSingleContext $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewContextOld
+     * @param \Pggns\MidocoApi\Workflow\StructType\TaskViewSingleContext $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewContextOld
      */
-    public function addToTaskViewSingleContext(\Pggns\MidocoApi\Api\Workflow\StructType\TaskViewSingleContext $item): self
+    public function addToTaskViewSingleContext(\Pggns\MidocoApi\Workflow\StructType\TaskViewSingleContext $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewSingleContext) {
-            throw new InvalidArgumentException(sprintf('The TaskViewSingleContext property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewSingleContext, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\TaskViewSingleContext) {
+            throw new InvalidArgumentException(sprintf('The TaskViewSingleContext property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\TaskViewSingleContext, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->TaskViewSingleContext[] = $item;
         

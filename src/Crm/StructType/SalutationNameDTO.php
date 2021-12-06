@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SalutationNameDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SalutationNameDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\SalutationNameDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -86,7 +86,7 @@ class SalutationNameDTO extends AbstractStructBase
     /**
      * Set letter value
      * @param string $letter
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SalutationNameDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\SalutationNameDTO
      */
     public function setLetter(?string $letter = null): self
     {
@@ -109,7 +109,7 @@ class SalutationNameDTO extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SalutationNameDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\SalutationNameDTO
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -132,7 +132,7 @@ class SalutationNameDTO extends AbstractStructBase
     /**
      * Set salutationId value
      * @param string $salutationId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SalutationNameDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\SalutationNameDTO
      */
     public function setSalutationId(?string $salutationId = null): self
     {

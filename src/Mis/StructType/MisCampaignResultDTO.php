@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MisCampaignResultDTO extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignResultDTO
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -78,7 +78,7 @@ class MisCampaignResultDTO extends AbstractStructBase
     /**
      * Set pageContent value
      * @param string $pageContent
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignResultDTO
      */
     public function setPageContent(?string $pageContent = null): self
     {
@@ -101,7 +101,7 @@ class MisCampaignResultDTO extends AbstractStructBase
     /**
      * Set pageNo value
      * @param int $pageNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignResultDTO
      */
     public function setPageNo(?int $pageNo = null): self
     {

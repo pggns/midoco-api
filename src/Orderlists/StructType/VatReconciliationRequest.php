@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class VatReconciliationRequest extends AbstractStructBase
      * The MidocoVatReconciliationCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoVatReconciliationCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType $MidocoVatReconciliationCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType $MidocoVatReconciliationCriteria = null;
     /**
      * Constructor method for VatReconciliationRequest
      * @uses VatReconciliationRequest::setMidocoVatReconciliationCriteria()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType $midocoVatReconciliationCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType $midocoVatReconciliationCriteria
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType $midocoVatReconciliationCriteria = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType $midocoVatReconciliationCriteria = null)
     {
         $this
             ->setMidocoVatReconciliationCriteria($midocoVatReconciliationCriteria);
     }
     /**
      * Get MidocoVatReconciliationCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType|null
      */
-    public function getMidocoVatReconciliationCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType
+    public function getMidocoVatReconciliationCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType
     {
         return $this->MidocoVatReconciliationCriteria;
     }
     /**
      * Set MidocoVatReconciliationCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType $midocoVatReconciliationCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatReconciliationRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType $midocoVatReconciliationCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatReconciliationRequest
      */
-    public function setMidocoVatReconciliationCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatReconciliationCriteriaType $midocoVatReconciliationCriteria = null): self
+    public function setMidocoVatReconciliationCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoVatReconciliationCriteriaType $midocoVatReconciliationCriteria = null): self
     {
         $this->MidocoVatReconciliationCriteria = $midocoVatReconciliationCriteria;
         

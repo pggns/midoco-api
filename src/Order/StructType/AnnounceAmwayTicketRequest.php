@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -27,7 +27,7 @@ class AnnounceAmwayTicketRequest extends AbstractStructBase
      * The ticket
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Ticket[]
+     * @var \Pggns\MidocoApi\Order\StructType\Ticket[]
      */
     protected ?array $ticket = null;
     /**
@@ -37,7 +37,7 @@ class AnnounceAmwayTicketRequest extends AbstractStructBase
      * @uses AnnounceAmwayTicketRequest::setTicket()
      * @param int $orderNo
      * @param string $filekey
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Ticket[] $ticket
+     * @param \Pggns\MidocoApi\Order\StructType\Ticket[] $ticket
      */
     public function __construct(?int $orderNo = null, ?string $filekey = null, ?array $ticket = null)
     {
@@ -57,7 +57,7 @@ class AnnounceAmwayTicketRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceAmwayTicketRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceAmwayTicketRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -80,7 +80,7 @@ class AnnounceAmwayTicketRequest extends AbstractStructBase
     /**
      * Set filekey value
      * @param string $filekey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceAmwayTicketRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceAmwayTicketRequest
      */
     public function setFilekey(?string $filekey = null): self
     {
@@ -94,7 +94,7 @@ class AnnounceAmwayTicketRequest extends AbstractStructBase
     }
     /**
      * Get ticket value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Ticket[]
+     * @return \Pggns\MidocoApi\Order\StructType\Ticket[]
      */
     public function getTicket(): ?array
     {
@@ -115,12 +115,12 @@ class AnnounceAmwayTicketRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $announceAmwayTicketRequestTicketItem) {
             // validation for constraint: itemType
-            if (!$announceAmwayTicketRequestTicketItem instanceof \Pggns\MidocoApi\Api\Order\StructType\Ticket) {
+            if (!$announceAmwayTicketRequestTicketItem instanceof \Pggns\MidocoApi\Order\StructType\Ticket) {
                 $invalidValues[] = is_object($announceAmwayTicketRequestTicketItem) ? get_class($announceAmwayTicketRequestTicketItem) : sprintf('%s(%s)', gettype($announceAmwayTicketRequestTicketItem), var_export($announceAmwayTicketRequestTicketItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ticket property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Ticket, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ticket property can only contain items of type \Pggns\MidocoApi\Order\StructType\Ticket, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -129,8 +129,8 @@ class AnnounceAmwayTicketRequest extends AbstractStructBase
     /**
      * Set ticket value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Ticket[] $ticket
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceAmwayTicketRequest
+     * @param \Pggns\MidocoApi\Order\StructType\Ticket[] $ticket
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceAmwayTicketRequest
      */
     public function setTicket(?array $ticket = null): self
     {
@@ -145,14 +145,14 @@ class AnnounceAmwayTicketRequest extends AbstractStructBase
     /**
      * Add item to ticket value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Ticket $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceAmwayTicketRequest
+     * @param \Pggns\MidocoApi\Order\StructType\Ticket $item
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceAmwayTicketRequest
      */
-    public function addToTicket(\Pggns\MidocoApi\Api\Order\StructType\Ticket $item): self
+    public function addToTicket(\Pggns\MidocoApi\Order\StructType\Ticket $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\Ticket) {
-            throw new InvalidArgumentException(sprintf('The ticket property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Ticket, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\Ticket) {
+            throw new InvalidArgumentException(sprintf('The ticket property can only contain items of type \Pggns\MidocoApi\Order\StructType\Ticket, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ticket[] = $item;
         

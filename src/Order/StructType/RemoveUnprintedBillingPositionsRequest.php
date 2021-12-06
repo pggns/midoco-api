@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class RemoveUnprintedBillingPositionsRequest extends AbstractStructBase
     /**
      * Set orderIds value
      * @param string $orderIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RemoveUnprintedBillingPositionsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RemoveUnprintedBillingPositionsRequest
      */
     public function setOrderIds(?string $orderIds = null): self
     {

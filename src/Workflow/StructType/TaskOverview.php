@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class TaskOverview extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverview
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -126,7 +126,7 @@ class TaskOverview extends AbstractStructBase
     /**
      * Set size value
      * @param int $size
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverview
      */
     public function setSize(?int $size = null): self
     {
@@ -149,7 +149,7 @@ class TaskOverview extends AbstractStructBase
     /**
      * Set delegateQueue value
      * @param string $delegateQueue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverview
      */
     public function setDelegateQueue(?string $delegateQueue = null): self
     {
@@ -172,7 +172,7 @@ class TaskOverview extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverview
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -195,7 +195,7 @@ class TaskOverview extends AbstractStructBase
     /**
      * Set priority value
      * @param int $priority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverview
      */
     public function setPriority(?int $priority = null): self
     {
@@ -218,7 +218,7 @@ class TaskOverview extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverview
      */
     public function setDescription(?string $description = null): self
     {
@@ -241,7 +241,7 @@ class TaskOverview extends AbstractStructBase
     /**
      * Set delegationUser value
      * @param int $delegationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverview
      */
     public function setDelegationUser(?int $delegationUser = null): self
     {
@@ -264,7 +264,7 @@ class TaskOverview extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverview
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -287,7 +287,7 @@ class TaskOverview extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverview
      */
     public function setUserId(?int $userId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class SupplierHistoricalInfo extends AbstractStructBase
     /**
      * Set validDate value
      * @param string $validDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierHistoricalInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierHistoricalInfo
      */
     public function setValidDate(?string $validDate = null): self
     {
@@ -70,7 +70,7 @@ class SupplierHistoricalInfo extends AbstractStructBase
     /**
      * Set validCreationTravel value
      * @param string $validCreationTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierHistoricalInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierHistoricalInfo
      */
     public function setValidCreationTravel(?string $validCreationTravel = null): self
     {

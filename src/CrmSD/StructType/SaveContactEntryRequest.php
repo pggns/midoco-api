@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class SaveContactEntryRequest extends AbstractStructBase
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The MidocoContactEntry
      * Meta information extracted from the WSDL
      * - ref: MidocoContactEntry
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType $MidocoContactEntry = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $MidocoContactEntry = null;
     /**
      * The isManually
      * Meta information extracted from the WSDL
@@ -46,12 +46,12 @@ class SaveContactEntryRequest extends AbstractStructBase
      * @uses SaveContactEntryRequest::setMidocoContactEntry()
      * @uses SaveContactEntryRequest::setIsManually()
      * @uses SaveContactEntryRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType $midocoContactEntry
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $midocoContactEntry
      * @param bool $isManually
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType $midocoContactEntry = null, ?bool $isManually = false, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $midocoContactEntry = null, ?bool $isManually = false, ?int $internalVersion = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -61,18 +61,18 @@ class SaveContactEntryRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveContactEntryRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveContactEntryRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -80,18 +80,18 @@ class SaveContactEntryRequest extends AbstractStructBase
     }
     /**
      * Get MidocoContactEntry value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType|null
      */
-    public function getMidocoContactEntry(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType
+    public function getMidocoContactEntry(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType
     {
         return $this->MidocoContactEntry;
     }
     /**
      * Set MidocoContactEntry value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType $midocoContactEntry
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveContactEntryRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $midocoContactEntry
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveContactEntryRequest
      */
-    public function setMidocoContactEntry(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactEntryType $midocoContactEntry = null): self
+    public function setMidocoContactEntry(?\Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $midocoContactEntry = null): self
     {
         $this->MidocoContactEntry = $midocoContactEntry;
         
@@ -108,7 +108,7 @@ class SaveContactEntryRequest extends AbstractStructBase
     /**
      * Set isManually value
      * @param bool $isManually
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveContactEntryRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveContactEntryRequest
      */
     public function setIsManually(?bool $isManually = false): self
     {
@@ -131,7 +131,7 @@ class SaveContactEntryRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveContactEntryRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveContactEntryRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

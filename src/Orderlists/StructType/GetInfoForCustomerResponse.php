@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,16 +18,16 @@ class GetInfoForCustomerResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer[]
      */
     protected ?array $InfoForCustomer = null;
     /**
      * The InfoForCustomerSum
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer $InfoForCustomerSum = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer $InfoForCustomerSum = null;
     /**
      * The noOfResults
      * @var int|null
@@ -38,11 +38,11 @@ class GetInfoForCustomerResponse extends AbstractStructBase
      * @uses GetInfoForCustomerResponse::setInfoForCustomer()
      * @uses GetInfoForCustomerResponse::setInfoForCustomerSum()
      * @uses GetInfoForCustomerResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer[] $infoForCustomer
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer $infoForCustomerSum
+     * @param \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer[] $infoForCustomer
+     * @param \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer $infoForCustomerSum
      * @param int $noOfResults
      */
-    public function __construct(?array $infoForCustomer = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer $infoForCustomerSum = null, ?int $noOfResults = null)
+    public function __construct(?array $infoForCustomer = null, ?\Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer $infoForCustomerSum = null, ?int $noOfResults = null)
     {
         $this
             ->setInfoForCustomer($infoForCustomer)
@@ -51,7 +51,7 @@ class GetInfoForCustomerResponse extends AbstractStructBase
     }
     /**
      * Get InfoForCustomer value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer[]
      */
     public function getInfoForCustomer(): ?array
     {
@@ -72,12 +72,12 @@ class GetInfoForCustomerResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getInfoForCustomerResponseInfoForCustomerItem) {
             // validation for constraint: itemType
-            if (!$getInfoForCustomerResponseInfoForCustomerItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer) {
+            if (!$getInfoForCustomerResponseInfoForCustomerItem instanceof \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer) {
                 $invalidValues[] = is_object($getInfoForCustomerResponseInfoForCustomerItem) ? get_class($getInfoForCustomerResponseInfoForCustomerItem) : sprintf('%s(%s)', gettype($getInfoForCustomerResponseInfoForCustomerItem), var_export($getInfoForCustomerResponseInfoForCustomerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The InfoForCustomer property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The InfoForCustomer property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -86,8 +86,8 @@ class GetInfoForCustomerResponse extends AbstractStructBase
     /**
      * Set InfoForCustomer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer[] $infoForCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetInfoForCustomerResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer[] $infoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerResponse
      */
     public function setInfoForCustomer(?array $infoForCustomer = null): self
     {
@@ -102,14 +102,14 @@ class GetInfoForCustomerResponse extends AbstractStructBase
     /**
      * Add item to InfoForCustomer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetInfoForCustomerResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerResponse
      */
-    public function addToInfoForCustomer(\Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer $item): self
+    public function addToInfoForCustomer(\Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer) {
-            throw new InvalidArgumentException(sprintf('The InfoForCustomer property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer) {
+            throw new InvalidArgumentException(sprintf('The InfoForCustomer property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->InfoForCustomer[] = $item;
         
@@ -117,18 +117,18 @@ class GetInfoForCustomerResponse extends AbstractStructBase
     }
     /**
      * Get InfoForCustomerSum value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer|null
      */
-    public function getInfoForCustomerSum(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+    public function getInfoForCustomerSum(): ?\Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
     {
         return $this->InfoForCustomerSum;
     }
     /**
      * Set InfoForCustomerSum value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer $infoForCustomerSum
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetInfoForCustomerResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer $infoForCustomerSum
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerResponse
      */
-    public function setInfoForCustomerSum(?\Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer $infoForCustomerSum = null): self
+    public function setInfoForCustomerSum(?\Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer $infoForCustomerSum = null): self
     {
         $this->InfoForCustomerSum = $infoForCustomerSum;
         
@@ -145,7 +145,7 @@ class GetInfoForCustomerResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetInfoForCustomerResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

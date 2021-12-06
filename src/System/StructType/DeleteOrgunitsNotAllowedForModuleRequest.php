@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -93,7 +93,7 @@ class DeleteOrgunitsNotAllowedForModuleRequest extends AbstractStructBase
      * Set UnitNameNotAllowed value
      * @throws InvalidArgumentException
      * @param string[] $unitNameNotAllowed
-     * @return \Pggns\MidocoApi\Api\System\StructType\DeleteOrgunitsNotAllowedForModuleRequest
+     * @return \Pggns\MidocoApi\System\StructType\DeleteOrgunitsNotAllowedForModuleRequest
      */
     public function setUnitNameNotAllowed(?array $unitNameNotAllowed = null): self
     {
@@ -109,7 +109,7 @@ class DeleteOrgunitsNotAllowedForModuleRequest extends AbstractStructBase
      * Add item to UnitNameNotAllowed value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\DeleteOrgunitsNotAllowedForModuleRequest
+     * @return \Pggns\MidocoApi\System\StructType\DeleteOrgunitsNotAllowedForModuleRequest
      */
     public function addToUnitNameNotAllowed(string $item): self
     {
@@ -132,7 +132,7 @@ class DeleteOrgunitsNotAllowedForModuleRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\DeleteOrgunitsNotAllowedForModuleRequest
+     * @return \Pggns\MidocoApi\System\StructType\DeleteOrgunitsNotAllowedForModuleRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -155,7 +155,7 @@ class DeleteOrgunitsNotAllowedForModuleRequest extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\System\StructType\DeleteOrgunitsNotAllowedForModuleRequest
+     * @return \Pggns\MidocoApi\System\StructType\DeleteOrgunitsNotAllowedForModuleRequest
      */
     public function setAppId(?string $appId = null): self
     {
@@ -178,7 +178,7 @@ class DeleteOrgunitsNotAllowedForModuleRequest extends AbstractStructBase
     /**
      * Set modulId value
      * @param string $modulId
-     * @return \Pggns\MidocoApi\Api\System\StructType\DeleteOrgunitsNotAllowedForModuleRequest
+     * @return \Pggns\MidocoApi\System\StructType\DeleteOrgunitsNotAllowedForModuleRequest
      */
     public function setModulId(?string $modulId = null): self
     {

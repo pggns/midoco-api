@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SearchJournalExportsRequest extends AbstractStructBase
     /**
      * Set exportDateFrom value
      * @param string $exportDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchJournalExportsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchJournalExportsRequest
      */
     public function setExportDateFrom(?string $exportDateFrom = null): self
     {
@@ -78,7 +78,7 @@ class SearchJournalExportsRequest extends AbstractStructBase
     /**
      * Set exportDateTo value
      * @param string $exportDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchJournalExportsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchJournalExportsRequest
      */
     public function setExportDateTo(?string $exportDateTo = null): self
     {
@@ -101,7 +101,7 @@ class SearchJournalExportsRequest extends AbstractStructBase
     /**
      * Set exportUser value
      * @param string $exportUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchJournalExportsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchJournalExportsRequest
      */
     public function setExportUser(?string $exportUser = null): self
     {

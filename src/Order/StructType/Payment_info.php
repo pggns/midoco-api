@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,23 +20,23 @@ class Payment_info extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Cc_payment[]
+     * @var \Pggns\MidocoApi\Order\StructType\Cc_payment[]
      */
     protected ?array $cc_payment = null;
     /**
      * The debit_payment
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Debit_payment|null
+     * @var \Pggns\MidocoApi\Order\StructType\Debit_payment|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\Debit_payment $debit_payment = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\Debit_payment $debit_payment = null;
     /**
      * The advised_payment
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Advised_payment|null
+     * @var \Pggns\MidocoApi\Order\StructType\Advised_payment|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\Advised_payment $advised_payment = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\Advised_payment $advised_payment = null;
     /**
      * The preferred_payment_type
      * @var string|null
@@ -48,12 +48,12 @@ class Payment_info extends AbstractStructBase
      * @uses Payment_info::setDebit_payment()
      * @uses Payment_info::setAdvised_payment()
      * @uses Payment_info::setPreferred_payment_type()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Cc_payment[] $cc_payment
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Debit_payment $debit_payment
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Advised_payment $advised_payment
+     * @param \Pggns\MidocoApi\Order\StructType\Cc_payment[] $cc_payment
+     * @param \Pggns\MidocoApi\Order\StructType\Debit_payment $debit_payment
+     * @param \Pggns\MidocoApi\Order\StructType\Advised_payment $advised_payment
      * @param string $preferred_payment_type
      */
-    public function __construct(?array $cc_payment = null, ?\Pggns\MidocoApi\Api\Order\StructType\Debit_payment $debit_payment = null, ?\Pggns\MidocoApi\Api\Order\StructType\Advised_payment $advised_payment = null, ?string $preferred_payment_type = null)
+    public function __construct(?array $cc_payment = null, ?\Pggns\MidocoApi\Order\StructType\Debit_payment $debit_payment = null, ?\Pggns\MidocoApi\Order\StructType\Advised_payment $advised_payment = null, ?string $preferred_payment_type = null)
     {
         $this
             ->setCc_payment($cc_payment)
@@ -63,7 +63,7 @@ class Payment_info extends AbstractStructBase
     }
     /**
      * Get cc_payment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_payment[]
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_payment[]
      */
     public function getCc_payment(): ?array
     {
@@ -84,12 +84,12 @@ class Payment_info extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $payment_infoCc_paymentItem) {
             // validation for constraint: itemType
-            if (!$payment_infoCc_paymentItem instanceof \Pggns\MidocoApi\Api\Order\StructType\Cc_payment) {
+            if (!$payment_infoCc_paymentItem instanceof \Pggns\MidocoApi\Order\StructType\Cc_payment) {
                 $invalidValues[] = is_object($payment_infoCc_paymentItem) ? get_class($payment_infoCc_paymentItem) : sprintf('%s(%s)', gettype($payment_infoCc_paymentItem), var_export($payment_infoCc_paymentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The cc_payment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Cc_payment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The cc_payment property can only contain items of type \Pggns\MidocoApi\Order\StructType\Cc_payment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -98,8 +98,8 @@ class Payment_info extends AbstractStructBase
     /**
      * Set cc_payment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Cc_payment[] $cc_payment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Payment_info
+     * @param \Pggns\MidocoApi\Order\StructType\Cc_payment[] $cc_payment
+     * @return \Pggns\MidocoApi\Order\StructType\Payment_info
      */
     public function setCc_payment(?array $cc_payment = null): self
     {
@@ -114,14 +114,14 @@ class Payment_info extends AbstractStructBase
     /**
      * Add item to cc_payment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Cc_payment $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Payment_info
+     * @param \Pggns\MidocoApi\Order\StructType\Cc_payment $item
+     * @return \Pggns\MidocoApi\Order\StructType\Payment_info
      */
-    public function addToCc_payment(\Pggns\MidocoApi\Api\Order\StructType\Cc_payment $item): self
+    public function addToCc_payment(\Pggns\MidocoApi\Order\StructType\Cc_payment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\Cc_payment) {
-            throw new InvalidArgumentException(sprintf('The cc_payment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Cc_payment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\Cc_payment) {
+            throw new InvalidArgumentException(sprintf('The cc_payment property can only contain items of type \Pggns\MidocoApi\Order\StructType\Cc_payment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->cc_payment[] = $this->{'cc-payment'}[] = $item;
         
@@ -129,18 +129,18 @@ class Payment_info extends AbstractStructBase
     }
     /**
      * Get debit_payment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Debit_payment|null
+     * @return \Pggns\MidocoApi\Order\StructType\Debit_payment|null
      */
-    public function getDebit_payment(): ?\Pggns\MidocoApi\Api\Order\StructType\Debit_payment
+    public function getDebit_payment(): ?\Pggns\MidocoApi\Order\StructType\Debit_payment
     {
         return $this->{'debit-payment'};
     }
     /**
      * Set debit_payment value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Debit_payment $debit_payment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Payment_info
+     * @param \Pggns\MidocoApi\Order\StructType\Debit_payment $debit_payment
+     * @return \Pggns\MidocoApi\Order\StructType\Payment_info
      */
-    public function setDebit_payment(?\Pggns\MidocoApi\Api\Order\StructType\Debit_payment $debit_payment = null): self
+    public function setDebit_payment(?\Pggns\MidocoApi\Order\StructType\Debit_payment $debit_payment = null): self
     {
         $this->debit_payment = $this->{'debit-payment'} = $debit_payment;
         
@@ -148,18 +148,18 @@ class Payment_info extends AbstractStructBase
     }
     /**
      * Get advised_payment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Advised_payment|null
+     * @return \Pggns\MidocoApi\Order\StructType\Advised_payment|null
      */
-    public function getAdvised_payment(): ?\Pggns\MidocoApi\Api\Order\StructType\Advised_payment
+    public function getAdvised_payment(): ?\Pggns\MidocoApi\Order\StructType\Advised_payment
     {
         return $this->{'advised-payment'};
     }
     /**
      * Set advised_payment value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Advised_payment $advised_payment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Payment_info
+     * @param \Pggns\MidocoApi\Order\StructType\Advised_payment $advised_payment
+     * @return \Pggns\MidocoApi\Order\StructType\Payment_info
      */
-    public function setAdvised_payment(?\Pggns\MidocoApi\Api\Order\StructType\Advised_payment $advised_payment = null): self
+    public function setAdvised_payment(?\Pggns\MidocoApi\Order\StructType\Advised_payment $advised_payment = null): self
     {
         $this->advised_payment = $this->{'advised-payment'} = $advised_payment;
         
@@ -175,17 +175,17 @@ class Payment_info extends AbstractStructBase
     }
     /**
      * Set preferred_payment_type value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\PaymentType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\PaymentType::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\PaymentType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\PaymentType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $preferred_payment_type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Payment_info
+     * @return \Pggns\MidocoApi\Order\StructType\Payment_info
      */
     public function setPreferred_payment_type(?string $preferred_payment_type = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\PaymentType::valueIsValid($preferred_payment_type)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\PaymentType', is_array($preferred_payment_type) ? implode(', ', $preferred_payment_type) : var_export($preferred_payment_type, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\PaymentType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\PaymentType::valueIsValid($preferred_payment_type)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\PaymentType', is_array($preferred_payment_type) ? implode(', ', $preferred_payment_type) : var_export($preferred_payment_type, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\PaymentType::getValidValues())), __LINE__);
         }
         $this->preferred_payment_type = $this->{'preferred-payment-type'} = $preferred_payment_type;
         

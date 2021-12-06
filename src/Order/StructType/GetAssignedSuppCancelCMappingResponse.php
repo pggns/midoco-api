@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAssignedSuppCancelCMappingResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSuppCancelCMapping
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCMapping[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCMapping[]
      */
     protected ?array $MidocoSuppCancelCMapping = null;
     /**
      * Constructor method for GetAssignedSuppCancelCMappingResponse
      * @uses GetAssignedSuppCancelCMappingResponse::setMidocoSuppCancelCMapping()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCMapping[] $midocoSuppCancelCMapping
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCMapping[] $midocoSuppCancelCMapping
      */
     public function __construct(?array $midocoSuppCancelCMapping = null)
     {
@@ -34,7 +34,7 @@ class GetAssignedSuppCancelCMappingResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSuppCancelCMapping value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCMapping[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCMapping[]
      */
     public function getMidocoSuppCancelCMapping(): ?array
     {
@@ -55,12 +55,12 @@ class GetAssignedSuppCancelCMappingResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAssignedSuppCancelCMappingResponseMidocoSuppCancelCMappingItem) {
             // validation for constraint: itemType
-            if (!$getAssignedSuppCancelCMappingResponseMidocoSuppCancelCMappingItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCMapping) {
+            if (!$getAssignedSuppCancelCMappingResponseMidocoSuppCancelCMappingItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCMapping) {
                 $invalidValues[] = is_object($getAssignedSuppCancelCMappingResponseMidocoSuppCancelCMappingItem) ? get_class($getAssignedSuppCancelCMappingResponseMidocoSuppCancelCMappingItem) : sprintf('%s(%s)', gettype($getAssignedSuppCancelCMappingResponseMidocoSuppCancelCMappingItem), var_export($getAssignedSuppCancelCMappingResponseMidocoSuppCancelCMappingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSuppCancelCMapping property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCMapping, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSuppCancelCMapping property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCMapping, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAssignedSuppCancelCMappingResponse extends AbstractStructBase
     /**
      * Set MidocoSuppCancelCMapping value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCMapping[] $midocoSuppCancelCMapping
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAssignedSuppCancelCMappingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCMapping[] $midocoSuppCancelCMapping
+     * @return \Pggns\MidocoApi\Order\StructType\GetAssignedSuppCancelCMappingResponse
      */
     public function setMidocoSuppCancelCMapping(?array $midocoSuppCancelCMapping = null): self
     {
@@ -85,14 +85,14 @@ class GetAssignedSuppCancelCMappingResponse extends AbstractStructBase
     /**
      * Add item to MidocoSuppCancelCMapping value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCMapping $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAssignedSuppCancelCMappingResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCMapping $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetAssignedSuppCancelCMappingResponse
      */
-    public function addToMidocoSuppCancelCMapping(\Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCMapping $item): self
+    public function addToMidocoSuppCancelCMapping(\Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCMapping $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCMapping) {
-            throw new InvalidArgumentException(sprintf('The MidocoSuppCancelCMapping property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCMapping, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCMapping) {
+            throw new InvalidArgumentException(sprintf('The MidocoSuppCancelCMapping property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCMapping, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSuppCancelCMapping[] = $item;
         

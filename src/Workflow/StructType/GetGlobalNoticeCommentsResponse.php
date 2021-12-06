@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetGlobalNoticeCommentsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoGlobalNoticeComment
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO[]
      */
     protected ?array $MidocoGlobalNoticeComment = null;
     /**
      * Constructor method for GetGlobalNoticeCommentsResponse
      * @uses GetGlobalNoticeCommentsResponse::setMidocoGlobalNoticeComment()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO[] $midocoGlobalNoticeComment
+     * @param \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO[] $midocoGlobalNoticeComment
      */
     public function __construct(?array $midocoGlobalNoticeComment = null)
     {
@@ -34,7 +34,7 @@ class GetGlobalNoticeCommentsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoGlobalNoticeComment value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO[]
      */
     public function getMidocoGlobalNoticeComment(): ?array
     {
@@ -55,12 +55,12 @@ class GetGlobalNoticeCommentsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getGlobalNoticeCommentsResponseMidocoGlobalNoticeCommentItem) {
             // validation for constraint: itemType
-            if (!$getGlobalNoticeCommentsResponseMidocoGlobalNoticeCommentItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO) {
+            if (!$getGlobalNoticeCommentsResponseMidocoGlobalNoticeCommentItem instanceof \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO) {
                 $invalidValues[] = is_object($getGlobalNoticeCommentsResponseMidocoGlobalNoticeCommentItem) ? get_class($getGlobalNoticeCommentsResponseMidocoGlobalNoticeCommentItem) : sprintf('%s(%s)', gettype($getGlobalNoticeCommentsResponseMidocoGlobalNoticeCommentItem), var_export($getGlobalNoticeCommentsResponseMidocoGlobalNoticeCommentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoGlobalNoticeComment property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoGlobalNoticeComment property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetGlobalNoticeCommentsResponse extends AbstractStructBase
     /**
      * Set MidocoGlobalNoticeComment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO[] $midocoGlobalNoticeComment
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticeCommentsResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO[] $midocoGlobalNoticeComment
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticeCommentsResponse
      */
     public function setMidocoGlobalNoticeComment(?array $midocoGlobalNoticeComment = null): self
     {
@@ -85,14 +85,14 @@ class GetGlobalNoticeCommentsResponse extends AbstractStructBase
     /**
      * Add item to MidocoGlobalNoticeComment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticeCommentsResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticeCommentsResponse
      */
-    public function addToMidocoGlobalNoticeComment(\Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO $item): self
+    public function addToMidocoGlobalNoticeComment(\Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoGlobalNoticeComment property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoGlobalNoticeComment property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoGlobalNoticeComment[] = $item;
         

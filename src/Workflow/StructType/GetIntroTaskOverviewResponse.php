@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetIntroTaskOverviewResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: IntroTaskOverview
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview[]
      */
     protected ?array $IntroTaskOverview = null;
     /**
      * Constructor method for GetIntroTaskOverviewResponse
      * @uses GetIntroTaskOverviewResponse::setIntroTaskOverview()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview[] $introTaskOverview
+     * @param \Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview[] $introTaskOverview
      */
     public function __construct(?array $introTaskOverview = null)
     {
@@ -34,7 +34,7 @@ class GetIntroTaskOverviewResponse extends AbstractStructBase
     }
     /**
      * Get IntroTaskOverview value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview[]
      */
     public function getIntroTaskOverview(): ?array
     {
@@ -55,12 +55,12 @@ class GetIntroTaskOverviewResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getIntroTaskOverviewResponseIntroTaskOverviewItem) {
             // validation for constraint: itemType
-            if (!$getIntroTaskOverviewResponseIntroTaskOverviewItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview) {
+            if (!$getIntroTaskOverviewResponseIntroTaskOverviewItem instanceof \Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview) {
                 $invalidValues[] = is_object($getIntroTaskOverviewResponseIntroTaskOverviewItem) ? get_class($getIntroTaskOverviewResponseIntroTaskOverviewItem) : sprintf('%s(%s)', gettype($getIntroTaskOverviewResponseIntroTaskOverviewItem), var_export($getIntroTaskOverviewResponseIntroTaskOverviewItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The IntroTaskOverview property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The IntroTaskOverview property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetIntroTaskOverviewResponse extends AbstractStructBase
     /**
      * Set IntroTaskOverview value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview[] $introTaskOverview
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetIntroTaskOverviewResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview[] $introTaskOverview
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetIntroTaskOverviewResponse
      */
     public function setIntroTaskOverview(?array $introTaskOverview = null): self
     {
@@ -85,14 +85,14 @@ class GetIntroTaskOverviewResponse extends AbstractStructBase
     /**
      * Add item to IntroTaskOverview value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetIntroTaskOverviewResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetIntroTaskOverviewResponse
      */
-    public function addToIntroTaskOverview(\Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview $item): self
+    public function addToIntroTaskOverview(\Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview) {
-            throw new InvalidArgumentException(sprintf('The IntroTaskOverview property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\IntroTaskOverview, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview) {
+            throw new InvalidArgumentException(sprintf('The IntroTaskOverview property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\IntroTaskOverview, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->IntroTaskOverview[] = $item;
         

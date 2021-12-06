@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class CashbookSummaryDetailType extends AbstractStructBase
     /**
      * Set documentNo value
      * @param int $documentNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType
      */
     public function setDocumentNo(?int $documentNo = null): self
     {
@@ -94,7 +94,7 @@ class CashbookSummaryDetailType extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -117,7 +117,7 @@ class CashbookSummaryDetailType extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -140,7 +140,7 @@ class CashbookSummaryDetailType extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -163,7 +163,7 @@ class CashbookSummaryDetailType extends AbstractStructBase
     /**
      * Set printingDate value
      * @param string $printingDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashbookSummaryDetailType
+     * @return \Pggns\MidocoApi\Order\StructType\CashbookSummaryDetailType
      */
     public function setPrintingDate(?string $printingDate = null): self
     {

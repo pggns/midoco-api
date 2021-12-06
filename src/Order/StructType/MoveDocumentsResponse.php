@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MoveDocumentsResponse extends AbstractStructBase
     /**
      * Set newOrderId value
      * @param int $newOrderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MoveDocumentsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MoveDocumentsResponse
      */
     public function setNewOrderId(?int $newOrderId = null): self
     {
@@ -70,7 +70,7 @@ class MoveDocumentsResponse extends AbstractStructBase
     /**
      * Set newOrderNo value
      * @param int $newOrderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MoveDocumentsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MoveDocumentsResponse
      */
     public function setNewOrderNo(?int $newOrderNo = null): self
     {

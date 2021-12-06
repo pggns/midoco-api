@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class FeeTypeChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeTypeChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeTypeChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -86,7 +86,7 @@ class FeeTypeChangeLogDTO extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeTypeChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeTypeChangeLogDTO
      */
     public function setCode(?string $code = null): self
     {
@@ -109,7 +109,7 @@ class FeeTypeChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeTypeChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeTypeChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -132,7 +132,7 @@ class FeeTypeChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FeeTypeChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FeeTypeChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

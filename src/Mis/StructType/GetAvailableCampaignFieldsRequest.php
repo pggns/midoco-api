@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetAvailableCampaignFieldsRequest extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAvailableCampaignFieldsRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAvailableCampaignFieldsRequest
      */
     public function setLanguage(?string $language = null): self
     {

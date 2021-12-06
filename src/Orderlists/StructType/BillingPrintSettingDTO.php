@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class BillingPrintSettingDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPrintSettingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPrintSettingDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -94,7 +94,7 @@ class BillingPrintSettingDTO extends AbstractStructBase
     /**
      * Set printIndividualPrices value
      * @param bool $printIndividualPrices
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPrintSettingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPrintSettingDTO
      */
     public function setPrintIndividualPrices(?bool $printIndividualPrices = null): self
     {
@@ -117,7 +117,7 @@ class BillingPrintSettingDTO extends AbstractStructBase
     /**
      * Set printRoute value
      * @param bool $printRoute
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPrintSettingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPrintSettingDTO
      */
     public function setPrintRoute(?bool $printRoute = null): self
     {
@@ -140,7 +140,7 @@ class BillingPrintSettingDTO extends AbstractStructBase
     /**
      * Set printTravellers value
      * @param bool $printTravellers
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPrintSettingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPrintSettingDTO
      */
     public function setPrintTravellers(?bool $printTravellers = null): self
     {
@@ -163,7 +163,7 @@ class BillingPrintSettingDTO extends AbstractStructBase
     /**
      * Set useRemarks value
      * @param bool $useRemarks
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingPrintSettingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingPrintSettingDTO
      */
     public function setUseRemarks(?bool $useRemarks = null): self
     {

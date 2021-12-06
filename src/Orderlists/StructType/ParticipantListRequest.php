@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class ParticipantListRequest extends AbstractStructBase
      * The MidocoParticipantListCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoParticipantListCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType $MidocoParticipantListCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType $MidocoParticipantListCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class ParticipantListRequest extends AbstractStructBase
      * Constructor method for ParticipantListRequest
      * @uses ParticipantListRequest::setMidocoParticipantListCriteria()
      * @uses ParticipantListRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType $midocoParticipantListCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType $midocoParticipantListCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType $midocoParticipantListCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType $midocoParticipantListCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoParticipantListCriteria($midocoParticipantListCriteria)
@@ -42,18 +42,18 @@ class ParticipantListRequest extends AbstractStructBase
     }
     /**
      * Get MidocoParticipantListCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType|null
      */
-    public function getMidocoParticipantListCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType
+    public function getMidocoParticipantListCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType
     {
         return $this->MidocoParticipantListCriteria;
     }
     /**
      * Set MidocoParticipantListCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType $midocoParticipantListCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ParticipantListRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType $midocoParticipantListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ParticipantListRequest
      */
-    public function setMidocoParticipantListCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantListCriteriaType $midocoParticipantListCriteria = null): self
+    public function setMidocoParticipantListCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantListCriteriaType $midocoParticipantListCriteria = null): self
     {
         $this->MidocoParticipantListCriteria = $midocoParticipantListCriteria;
         
@@ -70,7 +70,7 @@ class ParticipantListRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ParticipantListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ParticipantListRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

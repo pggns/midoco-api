@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class DeleteCashBookItemTypeRequest extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteCashBookItemTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteCashBookItemTypeRequest
      */
     public function setTypeId(string $typeId): self
     {

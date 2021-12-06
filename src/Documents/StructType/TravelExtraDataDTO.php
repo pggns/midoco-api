@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class TravelExtraDataDTO extends AbstractStructBase
     /**
      * Set attribute value
      * @param string $attribute
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelExtraDataDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelExtraDataDTO
      */
     public function setAttribute(?string $attribute = null): self
     {
@@ -86,7 +86,7 @@ class TravelExtraDataDTO extends AbstractStructBase
     /**
      * Set hotelCode value
      * @param string $hotelCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelExtraDataDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelExtraDataDTO
      */
     public function setHotelCode(?string $hotelCode = null): self
     {
@@ -109,7 +109,7 @@ class TravelExtraDataDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelExtraDataDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelExtraDataDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -132,7 +132,7 @@ class TravelExtraDataDTO extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TravelExtraDataDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelExtraDataDTO
      */
     public function setValue(?string $value = null): self
     {

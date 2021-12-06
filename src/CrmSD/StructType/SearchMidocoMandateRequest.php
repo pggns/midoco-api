@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class SearchMidocoMandateRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoMandate
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate $MidocoMandate = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoMandate $MidocoMandate = null;
     /**
      * The mandateType
      * @var string|null
@@ -102,7 +102,7 @@ class SearchMidocoMandateRequest extends AbstractStructBase
      * @uses SearchMidocoMandateRequest::setIsUsed()
      * @uses SearchMidocoMandateRequest::setMandateReference()
      * @uses SearchMidocoMandateRequest::setIban()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate $midocoMandate
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate $midocoMandate
      * @param string $mandateType
      * @param int $customerId
      * @param int $orderId
@@ -114,7 +114,7 @@ class SearchMidocoMandateRequest extends AbstractStructBase
      * @param string $mandateReference
      * @param string $iban
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate $midocoMandate = null, ?string $mandateType = null, ?int $customerId = null, ?int $orderId = null, ?int $documentId = null, ?int $receiptId = null, ?bool $isActive = null, ?int $mandateId = null, ?bool $isUsed = null, ?string $mandateReference = null, ?string $iban = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoMandate $midocoMandate = null, ?string $mandateType = null, ?int $customerId = null, ?int $orderId = null, ?int $documentId = null, ?int $receiptId = null, ?bool $isActive = null, ?int $mandateId = null, ?bool $isUsed = null, ?string $mandateReference = null, ?string $iban = null)
     {
         $this
             ->setMidocoMandate($midocoMandate)
@@ -131,18 +131,18 @@ class SearchMidocoMandateRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMandate value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate|null
      */
-    public function getMidocoMandate(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate
+    public function getMidocoMandate(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoMandate
     {
         return $this->MidocoMandate;
     }
     /**
      * Set MidocoMandate value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate $midocoMandate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMidocoMandateRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate $midocoMandate
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoMandateRequest
      */
-    public function setMidocoMandate(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate $midocoMandate = null): self
+    public function setMidocoMandate(?\Pggns\MidocoApi\CrmSD\StructType\MidocoMandate $midocoMandate = null): self
     {
         $this->MidocoMandate = $midocoMandate;
         
@@ -159,7 +159,7 @@ class SearchMidocoMandateRequest extends AbstractStructBase
     /**
      * Set mandateType value
      * @param string $mandateType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMidocoMandateRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoMandateRequest
      */
     public function setMandateType(?string $mandateType = null): self
     {
@@ -182,7 +182,7 @@ class SearchMidocoMandateRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMidocoMandateRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoMandateRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -205,7 +205,7 @@ class SearchMidocoMandateRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMidocoMandateRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoMandateRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -228,7 +228,7 @@ class SearchMidocoMandateRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMidocoMandateRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoMandateRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -251,7 +251,7 @@ class SearchMidocoMandateRequest extends AbstractStructBase
     /**
      * Set receiptId value
      * @param int $receiptId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMidocoMandateRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoMandateRequest
      */
     public function setReceiptId(?int $receiptId = null): self
     {
@@ -274,7 +274,7 @@ class SearchMidocoMandateRequest extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMidocoMandateRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoMandateRequest
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -297,7 +297,7 @@ class SearchMidocoMandateRequest extends AbstractStructBase
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMidocoMandateRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoMandateRequest
      */
     public function setMandateId(?int $mandateId = null): self
     {
@@ -320,7 +320,7 @@ class SearchMidocoMandateRequest extends AbstractStructBase
     /**
      * Set isUsed value
      * @param bool $isUsed
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMidocoMandateRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoMandateRequest
      */
     public function setIsUsed(?bool $isUsed = null): self
     {
@@ -343,7 +343,7 @@ class SearchMidocoMandateRequest extends AbstractStructBase
     /**
      * Set mandateReference value
      * @param string $mandateReference
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMidocoMandateRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoMandateRequest
      */
     public function setMandateReference(?string $mandateReference = null): self
     {
@@ -366,7 +366,7 @@ class SearchMidocoMandateRequest extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMidocoMandateRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoMandateRequest
      */
     public function setIban(?string $iban = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoAccount extends AccountDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoAccount
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoAccount
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {
@@ -70,7 +70,7 @@ class MidocoAccount extends AccountDTO
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoAccount
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoAccount
      */
     public function setOrgunit(?string $orgunit = null): self
     {

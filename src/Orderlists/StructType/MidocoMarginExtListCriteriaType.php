@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoMarginExtListCriteriaType extends MidocoMarginListCriteriaType
     /**
      * Set authorizedAtStart value
      * @param string $authorizedAtStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListCriteriaType
      */
     public function setAuthorizedAtStart(?string $authorizedAtStart = null): self
     {
@@ -94,7 +94,7 @@ class MidocoMarginExtListCriteriaType extends MidocoMarginListCriteriaType
     /**
      * Set authorizedAtEnd value
      * @param string $authorizedAtEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListCriteriaType
      */
     public function setAuthorizedAtEnd(?string $authorizedAtEnd = null): self
     {
@@ -117,7 +117,7 @@ class MidocoMarginExtListCriteriaType extends MidocoMarginListCriteriaType
     /**
      * Set authorizeComent value
      * @param string $authorizeComent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListCriteriaType
      */
     public function setAuthorizeComent(?string $authorizeComent = null): self
     {
@@ -140,7 +140,7 @@ class MidocoMarginExtListCriteriaType extends MidocoMarginListCriteriaType
     /**
      * Set authorizedById value
      * @param int $authorizedById
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListCriteriaType
      */
     public function setAuthorizedById(?int $authorizedById = null): self
     {
@@ -163,7 +163,7 @@ class MidocoMarginExtListCriteriaType extends MidocoMarginListCriteriaType
     /**
      * Set smallerMarginAllowed value
      * @param bool $smallerMarginAllowed
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginExtListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginExtListCriteriaType
      */
     public function setSmallerMarginAllowed(?bool $smallerMarginAllowed = null): self
     {

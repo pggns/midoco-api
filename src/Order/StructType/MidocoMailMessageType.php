@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -78,7 +78,7 @@ class MidocoMailMessageType extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMailAttachment
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailAttachmentType[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailAttachmentType[]
      */
     protected ?array $MidocoMailAttachment = null;
     /**
@@ -87,7 +87,7 @@ class MidocoMailMessageType extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMailHeader
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailHeaderType[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailHeaderType[]
      */
     protected ?array $MidocoMailHeader = null;
     /**
@@ -136,8 +136,8 @@ class MidocoMailMessageType extends AbstractStructBase
      * @param string $text
      * @param string $replyTo
      * @param string $htmlContent
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailAttachmentType[] $midocoMailAttachment
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailHeaderType[] $midocoMailHeader
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailAttachmentType[] $midocoMailAttachment
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailHeaderType[] $midocoMailHeader
      * @param int $externDocumentId
      * @param bool $dontMail
      * @param string $mailRelay
@@ -199,7 +199,7 @@ class MidocoMailMessageType extends AbstractStructBase
      * Set To value
      * @throws InvalidArgumentException
      * @param string[] $to
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setTo(?array $to = null): self
     {
@@ -215,7 +215,7 @@ class MidocoMailMessageType extends AbstractStructBase
      * Add item to To value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function addToTo(string $item): self
     {
@@ -238,7 +238,7 @@ class MidocoMailMessageType extends AbstractStructBase
     /**
      * Set From value
      * @param string $from
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setFrom(?string $from = null): self
     {
@@ -288,7 +288,7 @@ class MidocoMailMessageType extends AbstractStructBase
      * Set Cc value
      * @throws InvalidArgumentException
      * @param string[] $cc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setCc(?array $cc = null): self
     {
@@ -304,7 +304,7 @@ class MidocoMailMessageType extends AbstractStructBase
      * Add item to Cc value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function addToCc(string $item): self
     {
@@ -354,7 +354,7 @@ class MidocoMailMessageType extends AbstractStructBase
      * Set Bcc value
      * @throws InvalidArgumentException
      * @param string[] $bcc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setBcc(?array $bcc = null): self
     {
@@ -370,7 +370,7 @@ class MidocoMailMessageType extends AbstractStructBase
      * Add item to Bcc value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function addToBcc(string $item): self
     {
@@ -393,7 +393,7 @@ class MidocoMailMessageType extends AbstractStructBase
     /**
      * Set Subject value
      * @param string $subject
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setSubject(?string $subject = null): self
     {
@@ -416,7 +416,7 @@ class MidocoMailMessageType extends AbstractStructBase
     /**
      * Set Text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setText(?string $text = null): self
     {
@@ -439,7 +439,7 @@ class MidocoMailMessageType extends AbstractStructBase
     /**
      * Set ReplyTo value
      * @param string $replyTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setReplyTo(?string $replyTo = null): self
     {
@@ -462,7 +462,7 @@ class MidocoMailMessageType extends AbstractStructBase
     /**
      * Set HtmlContent value
      * @param string $htmlContent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setHtmlContent(?string $htmlContent = null): self
     {
@@ -476,7 +476,7 @@ class MidocoMailMessageType extends AbstractStructBase
     }
     /**
      * Get MidocoMailAttachment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailAttachmentType[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailAttachmentType[]
      */
     public function getMidocoMailAttachment(): ?array
     {
@@ -497,12 +497,12 @@ class MidocoMailMessageType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoMailMessageTypeMidocoMailAttachmentItem) {
             // validation for constraint: itemType
-            if (!$midocoMailMessageTypeMidocoMailAttachmentItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoMailAttachmentType) {
+            if (!$midocoMailMessageTypeMidocoMailAttachmentItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoMailAttachmentType) {
                 $invalidValues[] = is_object($midocoMailMessageTypeMidocoMailAttachmentItem) ? get_class($midocoMailMessageTypeMidocoMailAttachmentItem) : sprintf('%s(%s)', gettype($midocoMailMessageTypeMidocoMailAttachmentItem), var_export($midocoMailMessageTypeMidocoMailAttachmentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMailAttachment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoMailAttachmentType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMailAttachment property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoMailAttachmentType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -511,8 +511,8 @@ class MidocoMailMessageType extends AbstractStructBase
     /**
      * Set MidocoMailAttachment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailAttachmentType[] $midocoMailAttachment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailAttachmentType[] $midocoMailAttachment
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setMidocoMailAttachment(?array $midocoMailAttachment = null): self
     {
@@ -527,14 +527,14 @@ class MidocoMailMessageType extends AbstractStructBase
     /**
      * Add item to MidocoMailAttachment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailAttachmentType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailAttachmentType $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
-    public function addToMidocoMailAttachment(\Pggns\MidocoApi\Api\Order\StructType\MidocoMailAttachmentType $item): self
+    public function addToMidocoMailAttachment(\Pggns\MidocoApi\Order\StructType\MidocoMailAttachmentType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoMailAttachmentType) {
-            throw new InvalidArgumentException(sprintf('The MidocoMailAttachment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoMailAttachmentType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoMailAttachmentType) {
+            throw new InvalidArgumentException(sprintf('The MidocoMailAttachment property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoMailAttachmentType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMailAttachment[] = $item;
         
@@ -542,7 +542,7 @@ class MidocoMailMessageType extends AbstractStructBase
     }
     /**
      * Get MidocoMailHeader value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailHeaderType[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailHeaderType[]
      */
     public function getMidocoMailHeader(): ?array
     {
@@ -563,12 +563,12 @@ class MidocoMailMessageType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoMailMessageTypeMidocoMailHeaderItem) {
             // validation for constraint: itemType
-            if (!$midocoMailMessageTypeMidocoMailHeaderItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoMailHeaderType) {
+            if (!$midocoMailMessageTypeMidocoMailHeaderItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoMailHeaderType) {
                 $invalidValues[] = is_object($midocoMailMessageTypeMidocoMailHeaderItem) ? get_class($midocoMailMessageTypeMidocoMailHeaderItem) : sprintf('%s(%s)', gettype($midocoMailMessageTypeMidocoMailHeaderItem), var_export($midocoMailMessageTypeMidocoMailHeaderItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMailHeader property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoMailHeaderType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMailHeader property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoMailHeaderType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -577,8 +577,8 @@ class MidocoMailMessageType extends AbstractStructBase
     /**
      * Set MidocoMailHeader value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailHeaderType[] $midocoMailHeader
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailHeaderType[] $midocoMailHeader
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setMidocoMailHeader(?array $midocoMailHeader = null): self
     {
@@ -593,14 +593,14 @@ class MidocoMailMessageType extends AbstractStructBase
     /**
      * Add item to MidocoMailHeader value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailHeaderType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailHeaderType $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
-    public function addToMidocoMailHeader(\Pggns\MidocoApi\Api\Order\StructType\MidocoMailHeaderType $item): self
+    public function addToMidocoMailHeader(\Pggns\MidocoApi\Order\StructType\MidocoMailHeaderType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoMailHeaderType) {
-            throw new InvalidArgumentException(sprintf('The MidocoMailHeader property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoMailHeaderType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoMailHeaderType) {
+            throw new InvalidArgumentException(sprintf('The MidocoMailHeader property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoMailHeaderType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMailHeader[] = $item;
         
@@ -617,7 +617,7 @@ class MidocoMailMessageType extends AbstractStructBase
     /**
      * Set externDocumentId value
      * @param int $externDocumentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setExternDocumentId(?int $externDocumentId = null): self
     {
@@ -640,7 +640,7 @@ class MidocoMailMessageType extends AbstractStructBase
     /**
      * Set dontMail value
      * @param bool $dontMail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setDontMail(?bool $dontMail = false): self
     {
@@ -663,7 +663,7 @@ class MidocoMailMessageType extends AbstractStructBase
     /**
      * Set mailRelay value
      * @param string $mailRelay
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setMailRelay(?string $mailRelay = null): self
     {
@@ -686,7 +686,7 @@ class MidocoMailMessageType extends AbstractStructBase
     /**
      * Set mailQueueId value
      * @param int $mailQueueId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
      */
     public function setMailQueueId(?int $mailQueueId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DiscountSellItemCodeListRequest extends AbstractStructBase
     /**
      * Set sellItemCode value
      * @param string $sellItemCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DiscountSellItemCodeListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DiscountSellItemCodeListRequest
      */
     public function setSellItemCode(?string $sellItemCode = null): self
     {
@@ -70,7 +70,7 @@ class DiscountSellItemCodeListRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DiscountSellItemCodeListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DiscountSellItemCodeListRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

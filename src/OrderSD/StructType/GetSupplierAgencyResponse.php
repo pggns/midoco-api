@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetSupplierAgencyResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoSupplierAgency
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyDTO $MidocoSupplierAgency = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyDTO $MidocoSupplierAgency = null;
     /**
      * Constructor method for GetSupplierAgencyResponse
      * @uses GetSupplierAgencyResponse::setMidocoSupplierAgency()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyDTO $midocoSupplierAgency
+     * @param \Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyDTO $midocoSupplierAgency
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyDTO $midocoSupplierAgency = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyDTO $midocoSupplierAgency = null)
     {
         $this
             ->setMidocoSupplierAgency($midocoSupplierAgency);
     }
     /**
      * Get MidocoSupplierAgency value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyDTO|null
      */
-    public function getMidocoSupplierAgency(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyDTO
+    public function getMidocoSupplierAgency(): ?\Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyDTO
     {
         return $this->MidocoSupplierAgency;
     }
     /**
      * Set MidocoSupplierAgency value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyDTO $midocoSupplierAgency
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAgencyResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyDTO $midocoSupplierAgency
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAgencyResponse
      */
-    public function setMidocoSupplierAgency(?\Pggns\MidocoApi\Api\OrderSD\StructType\SupplierAgencyDTO $midocoSupplierAgency = null): self
+    public function setMidocoSupplierAgency(?\Pggns\MidocoApi\OrderSD\StructType\SupplierAgencyDTO $midocoSupplierAgency = null): self
     {
         $this->MidocoSupplierAgency = $midocoSupplierAgency;
         

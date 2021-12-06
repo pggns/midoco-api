@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class MidocoContactMediaExt extends ContactMediaExtDTO
     /**
      * Set contactGroup value
      * @param int $contactGroup
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoContactMediaExt
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoContactMediaExt
      */
     public function setContactGroup(?int $contactGroup = 0): self
     {
@@ -72,7 +72,7 @@ class MidocoContactMediaExt extends ContactMediaExtDTO
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoContactMediaExt
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoContactMediaExt
      */
     public function setPosition(?int $position = null): self
     {

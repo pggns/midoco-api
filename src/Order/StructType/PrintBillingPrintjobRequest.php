@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class PrintBillingPrintjobRequest extends AbstractStructBase
      * The CreateBillingPrintjobRequest
      * Meta information extracted from the WSDL
      * - ref: CreateBillingPrintjobRequest
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest|null
+     * @var \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest $CreateBillingPrintjobRequest = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest $CreateBillingPrintjobRequest = null;
     /**
      * The preview
      * Meta information extracted from the WSDL
@@ -45,12 +45,12 @@ class PrintBillingPrintjobRequest extends AbstractStructBase
      * @uses PrintBillingPrintjobRequest::setPreview()
      * @uses PrintBillingPrintjobRequest::setInvokeFinishDocument()
      * @uses PrintBillingPrintjobRequest::setReceiptDate()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest $createBillingPrintjobRequest
+     * @param \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest $createBillingPrintjobRequest
      * @param bool $preview
      * @param bool $invokeFinishDocument
      * @param string $receiptDate
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest $createBillingPrintjobRequest = null, ?bool $preview = false, ?bool $invokeFinishDocument = false, ?string $receiptDate = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest $createBillingPrintjobRequest = null, ?bool $preview = false, ?bool $invokeFinishDocument = false, ?string $receiptDate = null)
     {
         $this
             ->setCreateBillingPrintjobRequest($createBillingPrintjobRequest)
@@ -60,18 +60,18 @@ class PrintBillingPrintjobRequest extends AbstractStructBase
     }
     /**
      * Get CreateBillingPrintjobRequest value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest|null
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest|null
      */
-    public function getCreateBillingPrintjobRequest(): ?\Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest
+    public function getCreateBillingPrintjobRequest(): ?\Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest
     {
         return $this->CreateBillingPrintjobRequest;
     }
     /**
      * Set CreateBillingPrintjobRequest value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest $createBillingPrintjobRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintBillingPrintjobRequest
+     * @param \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest $createBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintBillingPrintjobRequest
      */
-    public function setCreateBillingPrintjobRequest(?\Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest $createBillingPrintjobRequest = null): self
+    public function setCreateBillingPrintjobRequest(?\Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest $createBillingPrintjobRequest = null): self
     {
         $this->CreateBillingPrintjobRequest = $createBillingPrintjobRequest;
         
@@ -88,7 +88,7 @@ class PrintBillingPrintjobRequest extends AbstractStructBase
     /**
      * Set preview value
      * @param bool $preview
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintBillingPrintjobRequest
      */
     public function setPreview(?bool $preview = false): self
     {
@@ -111,7 +111,7 @@ class PrintBillingPrintjobRequest extends AbstractStructBase
     /**
      * Set invokeFinishDocument value
      * @param bool $invokeFinishDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintBillingPrintjobRequest
      */
     public function setInvokeFinishDocument(?bool $invokeFinishDocument = false): self
     {
@@ -134,7 +134,7 @@ class PrintBillingPrintjobRequest extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintBillingPrintjobRequest
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {

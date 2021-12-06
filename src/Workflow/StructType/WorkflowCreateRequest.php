@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class WorkflowCreateRequest extends AbstractStructBase
     /**
      * Set process value
      * @param string $process
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\WorkflowCreateRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\WorkflowCreateRequest
      */
     public function setProcess(?string $process = null): self
     {
@@ -70,7 +70,7 @@ class WorkflowCreateRequest extends AbstractStructBase
     /**
      * Set user_value value
      * @param string $user_value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\WorkflowCreateRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\WorkflowCreateRequest
      */
     public function setUser_value(?string $user_value = null): self
     {

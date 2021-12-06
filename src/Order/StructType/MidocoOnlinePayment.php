@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoOnlinePayment extends OnlinePaymentDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: crm:MidocoCcToken
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCcToken[]
      */
     protected ?array $MidocoCcToken = null;
     /**
@@ -33,7 +33,7 @@ class MidocoOnlinePayment extends OnlinePaymentDTO
      * Constructor method for MidocoOnlinePayment
      * @uses MidocoOnlinePayment::setMidocoCcToken()
      * @uses MidocoOnlinePayment::setCvc()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken[] $midocoCcToken
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCcToken[] $midocoCcToken
      * @param string $cvc
      */
     public function __construct(?array $midocoCcToken = null, ?string $cvc = null)
@@ -44,7 +44,7 @@ class MidocoOnlinePayment extends OnlinePaymentDTO
     }
     /**
      * Get MidocoCcToken value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCcToken[]
      */
     public function getMidocoCcToken(): ?array
     {
@@ -65,12 +65,12 @@ class MidocoOnlinePayment extends OnlinePaymentDTO
         $invalidValues = [];
         foreach ($values as $midocoOnlinePaymentMidocoCcTokenItem) {
             // validation for constraint: itemType
-            if (!$midocoOnlinePaymentMidocoCcTokenItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken) {
+            if (!$midocoOnlinePaymentMidocoCcTokenItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoCcToken) {
                 $invalidValues[] = is_object($midocoOnlinePaymentMidocoCcTokenItem) ? get_class($midocoOnlinePaymentMidocoCcTokenItem) : sprintf('%s(%s)', gettype($midocoOnlinePaymentMidocoCcTokenItem), var_export($midocoOnlinePaymentMidocoCcTokenItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -79,8 +79,8 @@ class MidocoOnlinePayment extends OnlinePaymentDTO
     /**
      * Set MidocoCcToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken[] $midocoCcToken
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePayment
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCcToken[] $midocoCcToken
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOnlinePayment
      */
     public function setMidocoCcToken(?array $midocoCcToken = null): self
     {
@@ -95,14 +95,14 @@ class MidocoOnlinePayment extends OnlinePaymentDTO
     /**
      * Add item to MidocoCcToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePayment
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCcToken $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOnlinePayment
      */
-    public function addToMidocoCcToken(\Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken $item): self
+    public function addToMidocoCcToken(\Pggns\MidocoApi\Order\StructType\MidocoCcToken $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken) {
-            throw new InvalidArgumentException(sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoCcToken) {
+            throw new InvalidArgumentException(sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCcToken[] = $item;
         
@@ -119,7 +119,7 @@ class MidocoOnlinePayment extends OnlinePaymentDTO
     /**
      * Set cvc value
      * @param string $cvc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePayment
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOnlinePayment
      */
     public function setCvc(?string $cvc = null): self
     {

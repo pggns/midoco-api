@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteSftpCredentialRequest extends AbstractStructBase
      * The MidocoSftpCredential
      * Meta information extracted from the WSDL
      * - ref: MidocoSftpCredential
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\SftpCredentialDTO|null
+     * @var \Pggns\MidocoApi\Booking\StructType\SftpCredentialDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\SftpCredentialDTO $MidocoSftpCredential = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\SftpCredentialDTO $MidocoSftpCredential = null;
     /**
      * Constructor method for DeleteSftpCredentialRequest
      * @uses DeleteSftpCredentialRequest::setMidocoSftpCredential()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\SftpCredentialDTO $midocoSftpCredential
+     * @param \Pggns\MidocoApi\Booking\StructType\SftpCredentialDTO $midocoSftpCredential
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\SftpCredentialDTO $midocoSftpCredential = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\SftpCredentialDTO $midocoSftpCredential = null)
     {
         $this
             ->setMidocoSftpCredential($midocoSftpCredential);
     }
     /**
      * Get MidocoSftpCredential value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SftpCredentialDTO|null
+     * @return \Pggns\MidocoApi\Booking\StructType\SftpCredentialDTO|null
      */
-    public function getMidocoSftpCredential(): ?\Pggns\MidocoApi\Api\Booking\StructType\SftpCredentialDTO
+    public function getMidocoSftpCredential(): ?\Pggns\MidocoApi\Booking\StructType\SftpCredentialDTO
     {
         return $this->MidocoSftpCredential;
     }
     /**
      * Set MidocoSftpCredential value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\SftpCredentialDTO $midocoSftpCredential
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DeleteSftpCredentialRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\SftpCredentialDTO $midocoSftpCredential
+     * @return \Pggns\MidocoApi\Booking\StructType\DeleteSftpCredentialRequest
      */
-    public function setMidocoSftpCredential(?\Pggns\MidocoApi\Api\Booking\StructType\SftpCredentialDTO $midocoSftpCredential = null): self
+    public function setMidocoSftpCredential(?\Pggns\MidocoApi\Booking\StructType\SftpCredentialDTO $midocoSftpCredential = null): self
     {
         $this->MidocoSftpCredential = $midocoSftpCredential;
         

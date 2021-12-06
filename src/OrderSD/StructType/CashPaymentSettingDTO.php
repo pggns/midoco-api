@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class CashPaymentSettingDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CashPaymentSettingDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CashPaymentSettingDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -102,7 +102,7 @@ class CashPaymentSettingDTO extends AbstractStructBase
     /**
      * Set hint value
      * @param string $hint
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CashPaymentSettingDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CashPaymentSettingDTO
      */
     public function setHint(?string $hint = null): self
     {
@@ -125,7 +125,7 @@ class CashPaymentSettingDTO extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CashPaymentSettingDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CashPaymentSettingDTO
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -148,7 +148,7 @@ class CashPaymentSettingDTO extends AbstractStructBase
     /**
      * Set isRightNeeded value
      * @param bool $isRightNeeded
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CashPaymentSettingDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CashPaymentSettingDTO
      */
     public function setIsRightNeeded(?bool $isRightNeeded = null): self
     {
@@ -171,7 +171,7 @@ class CashPaymentSettingDTO extends AbstractStructBase
     /**
      * Set refNoNeeded value
      * @param bool $refNoNeeded
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CashPaymentSettingDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CashPaymentSettingDTO
      */
     public function setRefNoNeeded(?bool $refNoNeeded = null): self
     {
@@ -194,7 +194,7 @@ class CashPaymentSettingDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CashPaymentSettingDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CashPaymentSettingDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

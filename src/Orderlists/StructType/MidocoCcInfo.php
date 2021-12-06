@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoCcInfo extends AbstractStructBase
     /**
      * Set cardNo value
      * @param string $cardNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcInfo
      */
     public function setCardNo(?string $cardNo = null): self
     {
@@ -102,7 +102,7 @@ class MidocoCcInfo extends AbstractStructBase
     /**
      * Set cardValidMonth value
      * @param int $cardValidMonth
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcInfo
      */
     public function setCardValidMonth(?int $cardValidMonth = null): self
     {
@@ -125,7 +125,7 @@ class MidocoCcInfo extends AbstractStructBase
     /**
      * Set cardValidYear value
      * @param int $cardValidYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcInfo
      */
     public function setCardValidYear(?int $cardValidYear = null): self
     {
@@ -148,7 +148,7 @@ class MidocoCcInfo extends AbstractStructBase
     /**
      * Set cardHolder value
      * @param string $cardHolder
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcInfo
      */
     public function setCardHolder(?string $cardHolder = null): self
     {
@@ -171,7 +171,7 @@ class MidocoCcInfo extends AbstractStructBase
     /**
      * Set cardType value
      * @param string $cardType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcInfo
      */
     public function setCardType(?string $cardType = null): self
     {
@@ -194,7 +194,7 @@ class MidocoCcInfo extends AbstractStructBase
     /**
      * Set cardCvc value
      * @param string $cardCvc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCcInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCcInfo
      */
     public function setCardCvc(?string $cardCvc = null): self
     {

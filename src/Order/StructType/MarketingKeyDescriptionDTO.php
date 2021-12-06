@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MarketingKeyDescriptionDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarketingKeyDescriptionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MarketingKeyDescriptionDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -86,7 +86,7 @@ class MarketingKeyDescriptionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarketingKeyDescriptionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MarketingKeyDescriptionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -109,7 +109,7 @@ class MarketingKeyDescriptionDTO extends AbstractStructBase
     /**
      * Set marketingKey value
      * @param string $marketingKey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarketingKeyDescriptionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MarketingKeyDescriptionDTO
      */
     public function setMarketingKey(?string $marketingKey = null): self
     {
@@ -132,7 +132,7 @@ class MarketingKeyDescriptionDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarketingKeyDescriptionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MarketingKeyDescriptionDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

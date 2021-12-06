@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class SaveSafegatewayTransactionLogResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * @var \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+     * @var \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
      */
-    protected \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO $SafegatewayTransaction;
+    protected \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO $SafegatewayTransaction;
     /**
      * Constructor method for SaveSafegatewayTransactionLogResponse
      * @uses SaveSafegatewayTransactionLogResponse::setSafegatewayTransaction()
-     * @param \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO $safegatewayTransaction
+     * @param \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO $safegatewayTransaction
      */
-    public function __construct(\Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO $safegatewayTransaction)
+    public function __construct(\Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO $safegatewayTransaction)
     {
         $this
             ->setSafegatewayTransaction($safegatewayTransaction);
     }
     /**
      * Get SafegatewayTransaction value
-     * @return \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+     * @return \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
      */
-    public function getSafegatewayTransaction(): \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO
+    public function getSafegatewayTransaction(): \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO
     {
         return $this->SafegatewayTransaction;
     }
     /**
      * Set SafegatewayTransaction value
-     * @param \Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO $safegatewayTransaction
-     * @return \Pggns\MidocoApi\Api\System\StructType\SaveSafegatewayTransactionLogResponse
+     * @param \Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO $safegatewayTransaction
+     * @return \Pggns\MidocoApi\System\StructType\SaveSafegatewayTransactionLogResponse
      */
-    public function setSafegatewayTransaction(\Pggns\MidocoApi\Api\System\StructType\SafegatewayTransactionLogDTO $safegatewayTransaction): self
+    public function setSafegatewayTransaction(\Pggns\MidocoApi\System\StructType\SafegatewayTransactionLogDTO $safegatewayTransaction): self
     {
         $this->SafegatewayTransaction = $safegatewayTransaction;
         

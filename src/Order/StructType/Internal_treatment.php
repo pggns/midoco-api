@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,9 +19,9 @@ class Internal_treatment extends AbstractStructBase
      * The lock
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Lock|null
+     * @var \Pggns\MidocoApi\Order\StructType\Lock|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\Lock $lock = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\Lock $lock = null;
     /**
      * The preset_order_no
      * Meta information extracted from the WSDL
@@ -49,12 +49,12 @@ class Internal_treatment extends AbstractStructBase
      * @uses Internal_treatment::setPreset_order_no()
      * @uses Internal_treatment::setDeliveryType()
      * @uses Internal_treatment::setLegalCountry()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Lock $lock
+     * @param \Pggns\MidocoApi\Order\StructType\Lock $lock
      * @param int $preset_order_no
      * @param string $deliveryType
      * @param string $legalCountry
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\Lock $lock = null, ?int $preset_order_no = null, ?string $deliveryType = null, ?string $legalCountry = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\Lock $lock = null, ?int $preset_order_no = null, ?string $deliveryType = null, ?string $legalCountry = null)
     {
         $this
             ->setLock($lock)
@@ -64,18 +64,18 @@ class Internal_treatment extends AbstractStructBase
     }
     /**
      * Get lock value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Lock|null
+     * @return \Pggns\MidocoApi\Order\StructType\Lock|null
      */
-    public function getLock(): ?\Pggns\MidocoApi\Api\Order\StructType\Lock
+    public function getLock(): ?\Pggns\MidocoApi\Order\StructType\Lock
     {
         return $this->lock;
     }
     /**
      * Set lock value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Lock $lock
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Internal_treatment
+     * @param \Pggns\MidocoApi\Order\StructType\Lock $lock
+     * @return \Pggns\MidocoApi\Order\StructType\Internal_treatment
      */
-    public function setLock(?\Pggns\MidocoApi\Api\Order\StructType\Lock $lock = null): self
+    public function setLock(?\Pggns\MidocoApi\Order\StructType\Lock $lock = null): self
     {
         $this->lock = $lock;
         
@@ -92,7 +92,7 @@ class Internal_treatment extends AbstractStructBase
     /**
      * Set preset_order_no value
      * @param int $preset_order_no
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Internal_treatment
+     * @return \Pggns\MidocoApi\Order\StructType\Internal_treatment
      */
     public function setPreset_order_no(?int $preset_order_no = null): self
     {
@@ -115,7 +115,7 @@ class Internal_treatment extends AbstractStructBase
     /**
      * Set deliveryType value
      * @param string $deliveryType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Internal_treatment
+     * @return \Pggns\MidocoApi\Order\StructType\Internal_treatment
      */
     public function setDeliveryType(?string $deliveryType = null): self
     {
@@ -138,7 +138,7 @@ class Internal_treatment extends AbstractStructBase
     /**
      * Set legalCountry value
      * @param string $legalCountry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Internal_treatment
+     * @return \Pggns\MidocoApi\Order\StructType\Internal_treatment
      */
     public function setLegalCountry(?string $legalCountry = null): self
     {

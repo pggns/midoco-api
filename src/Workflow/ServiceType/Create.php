@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\ServiceType;
+namespace Pggns\MidocoApi\Workflow\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Create extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Workflow\ServiceType\Create
+     * @return \Pggns\MidocoApi\Workflow\ServiceType\Create
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\CreateTaskRequest $paramCreateTaskRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\CreateTaskResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\CreateTaskRequest $paramCreateTaskRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\CreateTaskResponse|bool
      */
-    public function createTask(\Pggns\MidocoApi\Api\Workflow\StructType\CreateTaskRequest $paramCreateTaskRequest)
+    public function createTask(\Pggns\MidocoApi\Workflow\StructType\CreateTaskRequest $paramCreateTaskRequest)
     {
         try {
             $this->setResult($resultCreateTask = $this->getSoapClient()->__soapCall('createTask', [
@@ -58,15 +58,15 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\AttachedTaskcreateRequest $paramAttachedTaskcreateRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\AttachedTaskcreateResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\AttachedTaskcreateRequest $paramAttachedTaskcreateRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\AttachedTaskcreateResponse|bool
      */
-    public function createAttachedTask(\Pggns\MidocoApi\Api\Workflow\StructType\AttachedTaskcreateRequest $paramAttachedTaskcreateRequest)
+    public function createAttachedTask(\Pggns\MidocoApi\Workflow\StructType\AttachedTaskcreateRequest $paramAttachedTaskcreateRequest)
     {
         try {
             $this->setResult($resultCreateAttachedTask = $this->getSoapClient()->__soapCall('createAttachedTask', [
@@ -83,7 +83,7 @@ class Create extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\AttachedTaskcreateResponse|\Pggns\MidocoApi\Api\Workflow\StructType\CreateTaskResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\AttachedTaskcreateResponse|\Pggns\MidocoApi\Workflow\StructType\CreateTaskResponse
      */
     public function getResult()
     {

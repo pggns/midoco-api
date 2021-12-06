@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class AgencyNumberDTO extends AbstractStructBase
     /**
      * Set agencyNo value
      * @param string $agencyNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyNumberDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyNumberDTO
      */
     public function setAgencyNo(?string $agencyNo = null): self
     {
@@ -102,7 +102,7 @@ class AgencyNumberDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyNumberDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyNumberDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -125,7 +125,7 @@ class AgencyNumberDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyNumberDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyNumberDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -148,7 +148,7 @@ class AgencyNumberDTO extends AbstractStructBase
     /**
      * Set isLocked value
      * @param bool $isLocked
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyNumberDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyNumberDTO
      */
     public function setIsLocked(?bool $isLocked = null): self
     {
@@ -171,7 +171,7 @@ class AgencyNumberDTO extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyNumberDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyNumberDTO
      */
     public function setRemark(?string $remark = null): self
     {
@@ -194,7 +194,7 @@ class AgencyNumberDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AgencyNumberDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AgencyNumberDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoMandateGenErrorCrm extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandateGenErrorCrm
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoMandateGenErrorCrm
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -70,7 +70,7 @@ class MidocoMandateGenErrorCrm extends AbstractStructBase
     /**
      * Set errorText value
      * @param string $errorText
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandateGenErrorCrm
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoMandateGenErrorCrm
      */
     public function setErrorText(?string $errorText = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CompileRulesetRequest extends AbstractStructBase
     /**
      * Set rulesetId value
      * @param int $rulesetId
-     * @return \Pggns\MidocoApi\Api\System\StructType\CompileRulesetRequest
+     * @return \Pggns\MidocoApi\System\StructType\CompileRulesetRequest
      */
     public function setRulesetId(?int $rulesetId = null): self
     {

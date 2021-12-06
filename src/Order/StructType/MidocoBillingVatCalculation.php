@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoBillingVatCalculation extends BillingVatCalculationDTO
     /**
      * Set displayedVatAmount value
      * @param float $displayedVatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingVatCalculation
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingVatCalculation
      */
     public function setDisplayedVatAmount(?float $displayedVatAmount = null): self
     {
@@ -70,7 +70,7 @@ class MidocoBillingVatCalculation extends BillingVatCalculationDTO
     /**
      * Set displayedVatBase value
      * @param float $displayedVatBase
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingVatCalculation
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingVatCalculation
      */
     public function setDisplayedVatBase(?float $displayedVatBase = null): self
     {

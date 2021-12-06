@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,26 +19,26 @@ class VoidBillingDocumentResponse extends AbstractStructBase
      * The MidocoBillingDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoBillingDocument
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
     /**
      * The MidocoOnlinePaymentTransaction
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOnlinePaymentTransaction
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction[]
      */
     protected ?array $MidocoOnlinePaymentTransaction = null;
     /**
      * Constructor method for VoidBillingDocumentResponse
      * @uses VoidBillingDocumentResponse::setMidocoBillingDocument()
      * @uses VoidBillingDocumentResponse::setMidocoOnlinePaymentTransaction()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction[] $midocoOnlinePaymentTransaction
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction[] $midocoOnlinePaymentTransaction
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?array $midocoOnlinePaymentTransaction = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?array $midocoOnlinePaymentTransaction = null)
     {
         $this
             ->setMidocoBillingDocument($midocoBillingDocument)
@@ -46,18 +46,18 @@ class VoidBillingDocumentResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingDocument value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument|null
      */
-    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument
+    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument
     {
         return $this->MidocoBillingDocument;
     }
     /**
      * Set MidocoBillingDocument value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidBillingDocumentResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @return \Pggns\MidocoApi\Order\StructType\VoidBillingDocumentResponse
      */
-    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
+    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
     {
         $this->MidocoBillingDocument = $midocoBillingDocument;
         
@@ -65,7 +65,7 @@ class VoidBillingDocumentResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOnlinePaymentTransaction value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction[]
      */
     public function getMidocoOnlinePaymentTransaction(): ?array
     {
@@ -86,12 +86,12 @@ class VoidBillingDocumentResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $voidBillingDocumentResponseMidocoOnlinePaymentTransactionItem) {
             // validation for constraint: itemType
-            if (!$voidBillingDocumentResponseMidocoOnlinePaymentTransactionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction) {
+            if (!$voidBillingDocumentResponseMidocoOnlinePaymentTransactionItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction) {
                 $invalidValues[] = is_object($voidBillingDocumentResponseMidocoOnlinePaymentTransactionItem) ? get_class($voidBillingDocumentResponseMidocoOnlinePaymentTransactionItem) : sprintf('%s(%s)', gettype($voidBillingDocumentResponseMidocoOnlinePaymentTransactionItem), var_export($voidBillingDocumentResponseMidocoOnlinePaymentTransactionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOnlinePaymentTransaction property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOnlinePaymentTransaction property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -100,8 +100,8 @@ class VoidBillingDocumentResponse extends AbstractStructBase
     /**
      * Set MidocoOnlinePaymentTransaction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction[] $midocoOnlinePaymentTransaction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidBillingDocumentResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction[] $midocoOnlinePaymentTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\VoidBillingDocumentResponse
      */
     public function setMidocoOnlinePaymentTransaction(?array $midocoOnlinePaymentTransaction = null): self
     {
@@ -116,14 +116,14 @@ class VoidBillingDocumentResponse extends AbstractStructBase
     /**
      * Add item to MidocoOnlinePaymentTransaction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidBillingDocumentResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction $item
+     * @return \Pggns\MidocoApi\Order\StructType\VoidBillingDocumentResponse
      */
-    public function addToMidocoOnlinePaymentTransaction(\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction $item): self
+    public function addToMidocoOnlinePaymentTransaction(\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction) {
-            throw new InvalidArgumentException(sprintf('The MidocoOnlinePaymentTransaction property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction) {
+            throw new InvalidArgumentException(sprintf('The MidocoOnlinePaymentTransaction property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOnlinePaymentTransaction[] = $item;
         

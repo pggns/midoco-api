@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class RuleCriteriaCrmAttributeDTO extends AbstractStructBase
     /**
      * Set attributeId value
      * @param int $attributeId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO
      */
     public function setAttributeId(?int $attributeId = null): self
     {
@@ -86,7 +86,7 @@ class RuleCriteriaCrmAttributeDTO extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -109,7 +109,7 @@ class RuleCriteriaCrmAttributeDTO extends AbstractStructBase
     /**
      * Set attributeValue value
      * @param string $attributeValue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO
      */
     public function setAttributeValue(?string $attributeValue = null): self
     {
@@ -132,7 +132,7 @@ class RuleCriteriaCrmAttributeDTO extends AbstractStructBase
     /**
      * Set criteriaId value
      * @param int $criteriaId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO
      */
     public function setCriteriaId(?int $criteriaId = null): self
     {

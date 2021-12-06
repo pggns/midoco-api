@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,17 +18,17 @@ class GenerateMandateReferenceRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 1
      * - ref: MidocoMandate
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoMandate
      */
-    protected \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $MidocoMandate;
+    protected \Pggns\MidocoApi\Crm\StructType\MidocoMandate $MidocoMandate;
     /**
      * The MidocoCrmDebitCard
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmDebitCard
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard $MidocoCrmDebitCard = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $MidocoCrmDebitCard = null;
     /**
      * The customerType
      * Meta information extracted from the WSDL
@@ -41,11 +41,11 @@ class GenerateMandateReferenceRequest extends AbstractStructBase
      * @uses GenerateMandateReferenceRequest::setMidocoMandate()
      * @uses GenerateMandateReferenceRequest::setMidocoCrmDebitCard()
      * @uses GenerateMandateReferenceRequest::setCustomerType()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $midocoMandate
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMandate $midocoMandate
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
      * @param string $customerType
      */
-    public function __construct(\Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $midocoMandate, ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null, ?string $customerType = null)
+    public function __construct(\Pggns\MidocoApi\Crm\StructType\MidocoMandate $midocoMandate, ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null, ?string $customerType = null)
     {
         $this
             ->setMidocoMandate($midocoMandate)
@@ -54,18 +54,18 @@ class GenerateMandateReferenceRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMandate value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoMandate
      */
-    public function getMidocoMandate(): \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate
+    public function getMidocoMandate(): \Pggns\MidocoApi\Crm\StructType\MidocoMandate
     {
         return $this->MidocoMandate;
     }
     /**
      * Set MidocoMandate value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $midocoMandate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GenerateMandateReferenceRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMandate $midocoMandate
+     * @return \Pggns\MidocoApi\Crm\StructType\GenerateMandateReferenceRequest
      */
-    public function setMidocoMandate(\Pggns\MidocoApi\Api\Crm\StructType\MidocoMandate $midocoMandate): self
+    public function setMidocoMandate(\Pggns\MidocoApi\Crm\StructType\MidocoMandate $midocoMandate): self
     {
         $this->MidocoMandate = $midocoMandate;
         
@@ -73,18 +73,18 @@ class GenerateMandateReferenceRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmDebitCard value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard|null
      */
-    public function getMidocoCrmDebitCard(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard
+    public function getMidocoCrmDebitCard(): ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard
     {
         return $this->MidocoCrmDebitCard;
     }
     /**
      * Set MidocoCrmDebitCard value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GenerateMandateReferenceRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
+     * @return \Pggns\MidocoApi\Crm\StructType\GenerateMandateReferenceRequest
      */
-    public function setMidocoCrmDebitCard(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null): self
+    public function setMidocoCrmDebitCard(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null): self
     {
         $this->MidocoCrmDebitCard = $midocoCrmDebitCard;
         
@@ -101,7 +101,7 @@ class GenerateMandateReferenceRequest extends AbstractStructBase
     /**
      * Set customerType value
      * @param string $customerType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GenerateMandateReferenceRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GenerateMandateReferenceRequest
      */
     public function setCustomerType(?string $customerType = null): self
     {

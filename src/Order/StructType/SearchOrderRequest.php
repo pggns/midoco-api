@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SearchOrderRequest extends AbstractStructBase
      * The MidocoSearchOrderCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoSearchOrderCriteria
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType $MidocoSearchOrderCriteria = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType $MidocoSearchOrderCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SearchOrderRequest extends AbstractStructBase
      * Constructor method for SearchOrderRequest
      * @uses SearchOrderRequest::setMidocoSearchOrderCriteria()
      * @uses SearchOrderRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType $midocoSearchOrderCriteria
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType $midocoSearchOrderCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType $midocoSearchOrderCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType $midocoSearchOrderCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoSearchOrderCriteria($midocoSearchOrderCriteria)
@@ -42,18 +42,18 @@ class SearchOrderRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSearchOrderCriteria value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType|null
      */
-    public function getMidocoSearchOrderCriteria(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType
+    public function getMidocoSearchOrderCriteria(): ?\Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType
     {
         return $this->MidocoSearchOrderCriteria;
     }
     /**
      * Set MidocoSearchOrderCriteria value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType $midocoSearchOrderCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType $midocoSearchOrderCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrderRequest
      */
-    public function setMidocoSearchOrderCriteria(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSearchOrderCriteriaType $midocoSearchOrderCriteria = null): self
+    public function setMidocoSearchOrderCriteria(?\Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType $midocoSearchOrderCriteria = null): self
     {
         $this->MidocoSearchOrderCriteria = $midocoSearchOrderCriteria;
         
@@ -70,7 +70,7 @@ class SearchOrderRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrderRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

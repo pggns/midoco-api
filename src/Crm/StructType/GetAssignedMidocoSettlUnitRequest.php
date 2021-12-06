@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetAssignedMidocoSettlUnitRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetAssignedMidocoSettlUnitRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetAssignedMidocoSettlUnitRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -70,7 +70,7 @@ class GetAssignedMidocoSettlUnitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetAssignedMidocoSettlUnitRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetAssignedMidocoSettlUnitRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

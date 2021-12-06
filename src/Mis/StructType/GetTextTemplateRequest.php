@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetTextTemplateRequest extends AbstractStructBase
      * The MidocoCampaignTemplateId
      * Meta information extracted from the WSDL
      * - ref: MidocoCampaignTemplateId
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO $MidocoCampaignTemplateId = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO $MidocoCampaignTemplateId = null;
     /**
      * Constructor method for GetTextTemplateRequest
      * @uses GetTextTemplateRequest::setMidocoCampaignTemplateId()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId
+     * @param \Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId = null)
     {
         $this
             ->setMidocoCampaignTemplateId($midocoCampaignTemplateId);
     }
     /**
      * Get MidocoCampaignTemplateId value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO|null
      */
-    public function getMidocoCampaignTemplateId(): ?\Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO
+    public function getMidocoCampaignTemplateId(): ?\Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO
     {
         return $this->MidocoCampaignTemplateId;
     }
     /**
      * Set MidocoCampaignTemplateId value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTextTemplateRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTextTemplateRequest
      */
-    public function setMidocoCampaignTemplateId(?\Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId = null): self
+    public function setMidocoCampaignTemplateId(?\Pggns\MidocoApi\Mis\StructType\CampaignTemplateIdDTO $midocoCampaignTemplateId = null): self
     {
         $this->MidocoCampaignTemplateId = $midocoCampaignTemplateId;
         

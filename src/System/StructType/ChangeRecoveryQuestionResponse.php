@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class ChangeRecoveryQuestionResponse extends AbstractStructBase
     /**
      * Set success value
      * @param bool $success
-     * @return \Pggns\MidocoApi\Api\System\StructType\ChangeRecoveryQuestionResponse
+     * @return \Pggns\MidocoApi\System\StructType\ChangeRecoveryQuestionResponse
      */
     public function setSuccess(?bool $success = false): self
     {
@@ -72,7 +72,7 @@ class ChangeRecoveryQuestionResponse extends AbstractStructBase
     /**
      * Set reason value
      * @param string $reason
-     * @return \Pggns\MidocoApi\Api\System\StructType\ChangeRecoveryQuestionResponse
+     * @return \Pggns\MidocoApi\System\StructType\ChangeRecoveryQuestionResponse
      */
     public function setReason(?string $reason = null): self
     {

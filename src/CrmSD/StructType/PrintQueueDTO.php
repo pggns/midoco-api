@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class PrintQueueDTO extends AbstractStructBase
     /**
      * Set creationUnitName value
      * @param string $creationUnitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\PrintQueueDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintQueueDTO
      */
     public function setCreationUnitName(?string $creationUnitName = null): self
     {
@@ -94,7 +94,7 @@ class PrintQueueDTO extends AbstractStructBase
     /**
      * Set lastAccessTime value
      * @param string $lastAccessTime
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\PrintQueueDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintQueueDTO
      */
     public function setLastAccessTime(?string $lastAccessTime = null): self
     {
@@ -117,7 +117,7 @@ class PrintQueueDTO extends AbstractStructBase
     /**
      * Set lastWorkstationId value
      * @param string $lastWorkstationId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\PrintQueueDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintQueueDTO
      */
     public function setLastWorkstationId(?string $lastWorkstationId = null): self
     {
@@ -140,7 +140,7 @@ class PrintQueueDTO extends AbstractStructBase
     /**
      * Set queueId value
      * @param int $queueId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\PrintQueueDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintQueueDTO
      */
     public function setQueueId(?int $queueId = null): self
     {
@@ -163,7 +163,7 @@ class PrintQueueDTO extends AbstractStructBase
     /**
      * Set queueName value
      * @param string $queueName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\PrintQueueDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintQueueDTO
      */
     public function setQueueName(?string $queueName = null): self
     {

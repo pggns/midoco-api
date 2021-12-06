@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetPaymentConditionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPaymentCondition
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO[]
      */
     protected ?array $MidocoPaymentCondition = null;
     /**
      * Constructor method for GetPaymentConditionsResponse
      * @uses GetPaymentConditionsResponse::setMidocoPaymentCondition()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO[] $midocoPaymentCondition
+     * @param \Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO[] $midocoPaymentCondition
      */
     public function __construct(?array $midocoPaymentCondition = null)
     {
@@ -34,7 +34,7 @@ class GetPaymentConditionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPaymentCondition value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO[]
      */
     public function getMidocoPaymentCondition(): ?array
     {
@@ -55,12 +55,12 @@ class GetPaymentConditionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPaymentConditionsResponseMidocoPaymentConditionItem) {
             // validation for constraint: itemType
-            if (!$getPaymentConditionsResponseMidocoPaymentConditionItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO) {
+            if (!$getPaymentConditionsResponseMidocoPaymentConditionItem instanceof \Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO) {
                 $invalidValues[] = is_object($getPaymentConditionsResponseMidocoPaymentConditionItem) ? get_class($getPaymentConditionsResponseMidocoPaymentConditionItem) : sprintf('%s(%s)', gettype($getPaymentConditionsResponseMidocoPaymentConditionItem), var_export($getPaymentConditionsResponseMidocoPaymentConditionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPaymentCondition property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPaymentCondition property can only contain items of type \Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetPaymentConditionsResponse extends AbstractStructBase
     /**
      * Set MidocoPaymentCondition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO[] $midocoPaymentCondition
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetPaymentConditionsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO[] $midocoPaymentCondition
+     * @return \Pggns\MidocoApi\Crm\StructType\GetPaymentConditionsResponse
      */
     public function setMidocoPaymentCondition(?array $midocoPaymentCondition = null): self
     {
@@ -85,14 +85,14 @@ class GetPaymentConditionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoPaymentCondition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetPaymentConditionsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetPaymentConditionsResponse
      */
-    public function addToMidocoPaymentCondition(\Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO $item): self
+    public function addToMidocoPaymentCondition(\Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoPaymentCondition property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoPaymentCondition property can only contain items of type \Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPaymentCondition[] = $item;
         

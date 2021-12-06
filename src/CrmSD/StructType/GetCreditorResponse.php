@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class GetCreditorResponse extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoCreditor
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CreditorDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CreditorDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CreditorDTO $MidocoCreditor = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CreditorDTO $MidocoCreditor = null;
     /**
      * Constructor method for GetCreditorResponse
      * @uses GetCreditorResponse::setMidocoCreditor()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CreditorDTO $midocoCreditor
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CreditorDTO $midocoCreditor
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CreditorDTO $midocoCreditor = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CreditorDTO $midocoCreditor = null)
     {
         $this
             ->setMidocoCreditor($midocoCreditor);
     }
     /**
      * Get MidocoCreditor value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CreditorDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CreditorDTO|null
      */
-    public function getMidocoCreditor(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CreditorDTO
+    public function getMidocoCreditor(): ?\Pggns\MidocoApi\CrmSD\StructType\CreditorDTO
     {
         return $this->MidocoCreditor;
     }
     /**
      * Set MidocoCreditor value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CreditorDTO $midocoCreditor
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCreditorResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CreditorDTO $midocoCreditor
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCreditorResponse
      */
-    public function setMidocoCreditor(?\Pggns\MidocoApi\Api\CrmSD\StructType\CreditorDTO $midocoCreditor = null): self
+    public function setMidocoCreditor(?\Pggns\MidocoApi\CrmSD\StructType\CreditorDTO $midocoCreditor = null): self
     {
         $this->MidocoCreditor = $midocoCreditor;
         

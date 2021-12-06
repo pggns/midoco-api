@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoTooltipTravelersForItem extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTooltipTravelersForItem
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTooltipTravelersForItem
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -70,7 +70,7 @@ class MidocoTooltipTravelersForItem extends AbstractStructBase
     /**
      * Set tooltip value
      * @param string $tooltip
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTooltipTravelersForItem
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTooltipTravelersForItem
      */
     public function setTooltip(?string $tooltip = null): self
     {

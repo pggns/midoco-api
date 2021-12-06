@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class MidocoTempPrintjobInfo extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjobInfo
      */
     public function setComment(?string $comment = null): self
     {
@@ -142,7 +142,7 @@ class MidocoTempPrintjobInfo extends AbstractStructBase
     /**
      * Set creatingUser value
      * @param int $creatingUser
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjobInfo
      */
     public function setCreatingUser(?int $creatingUser = null): self
     {
@@ -165,7 +165,7 @@ class MidocoTempPrintjobInfo extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjobInfo
      */
     public function setId(?int $id = null): self
     {
@@ -188,7 +188,7 @@ class MidocoTempPrintjobInfo extends AbstractStructBase
     /**
      * Set isPreview value
      * @param bool $isPreview
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjobInfo
      */
     public function setIsPreview(?bool $isPreview = null): self
     {
@@ -211,7 +211,7 @@ class MidocoTempPrintjobInfo extends AbstractStructBase
     /**
      * Set isPrinted value
      * @param bool $isPrinted
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjobInfo
      */
     public function setIsPrinted(?bool $isPrinted = null): self
     {
@@ -234,7 +234,7 @@ class MidocoTempPrintjobInfo extends AbstractStructBase
     /**
      * Set numCopies value
      * @param int $numCopies
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjobInfo
      */
     public function setNumCopies(?int $numCopies = null): self
     {
@@ -257,7 +257,7 @@ class MidocoTempPrintjobInfo extends AbstractStructBase
     /**
      * Set printTimestamp value
      * @param string $printTimestamp
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjobInfo
      */
     public function setPrintTimestamp(?string $printTimestamp = null): self
     {
@@ -280,7 +280,7 @@ class MidocoTempPrintjobInfo extends AbstractStructBase
     /**
      * Set printjobId value
      * @param string $printjobId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjobInfo
      */
     public function setPrintjobId(?string $printjobId = null): self
     {
@@ -303,7 +303,7 @@ class MidocoTempPrintjobInfo extends AbstractStructBase
     /**
      * Set timeCreated value
      * @param string $timeCreated
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjobInfo
      */
     public function setTimeCreated(?string $timeCreated = null): self
     {
@@ -326,7 +326,7 @@ class MidocoTempPrintjobInfo extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjobInfo
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -349,7 +349,7 @@ class MidocoTempPrintjobInfo extends AbstractStructBase
     /**
      * Set status value
      * @param int $status
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoTempPrintjobInfo
      */
     public function setStatus(?int $status = null): self
     {

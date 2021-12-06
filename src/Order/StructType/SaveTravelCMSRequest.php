@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -89,7 +89,7 @@ class SaveTravelCMSRequest extends AbstractStructBase
      * @uses \DOMDocument::saveXML()
      * @uses \DOMNode::item()
      * @param \DOMDocument|string|null $any
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveTravelCMSRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveTravelCMSRequest
      */
     public function setAny($any = null): self
     {
@@ -112,7 +112,7 @@ class SaveTravelCMSRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveTravelCMSRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveTravelCMSRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -135,7 +135,7 @@ class SaveTravelCMSRequest extends AbstractStructBase
     /**
      * Set hotelcode value
      * @param string $hotelcode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveTravelCMSRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveTravelCMSRequest
      */
     public function setHotelcode(?string $hotelcode = null): self
     {
@@ -158,7 +158,7 @@ class SaveTravelCMSRequest extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveTravelCMSRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveTravelCMSRequest
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -181,7 +181,7 @@ class SaveTravelCMSRequest extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveTravelCMSRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveTravelCMSRequest
      */
     public function setStatus(?string $status = null): self
     {
@@ -204,7 +204,7 @@ class SaveTravelCMSRequest extends AbstractStructBase
     /**
      * Set errorInfo value
      * @param string $errorInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveTravelCMSRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveTravelCMSRequest
      */
     public function setErrorInfo(?string $errorInfo = null): self
     {

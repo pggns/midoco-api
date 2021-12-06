@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,26 +17,26 @@ class SaveSupplAgencySettlemBookRequest extends AbstractStructBase
      * The MidocoSupplierAgencySettlementBooking
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierAgencySettlementBooking
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking $MidocoSupplierAgencySettlementBooking = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking $MidocoSupplierAgencySettlementBooking = null;
     /**
      * The MidocoSupplierAgencySettlementBookings
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierAgencySettlementBookings
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemBookDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemBookDTO[]
      */
     protected ?array $MidocoSupplierAgencySettlementBookings = null;
     /**
      * Constructor method for SaveSupplAgencySettlemBookRequest
      * @uses SaveSupplAgencySettlemBookRequest::setMidocoSupplierAgencySettlementBooking()
      * @uses SaveSupplAgencySettlemBookRequest::setMidocoSupplierAgencySettlementBookings()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking $midocoSupplierAgencySettlementBooking
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemBookDTO[] $midocoSupplierAgencySettlementBookings
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking $midocoSupplierAgencySettlementBooking
+     * @param \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemBookDTO[] $midocoSupplierAgencySettlementBookings
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking $midocoSupplierAgencySettlementBooking = null, ?array $midocoSupplierAgencySettlementBookings = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking $midocoSupplierAgencySettlementBooking = null, ?array $midocoSupplierAgencySettlementBookings = null)
     {
         $this
             ->setMidocoSupplierAgencySettlementBooking($midocoSupplierAgencySettlementBooking)
@@ -44,18 +44,18 @@ class SaveSupplAgencySettlemBookRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierAgencySettlementBooking value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking|null
      */
-    public function getMidocoSupplierAgencySettlementBooking(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking
+    public function getMidocoSupplierAgencySettlementBooking(): ?\Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking
     {
         return $this->MidocoSupplierAgencySettlementBooking;
     }
     /**
      * Set MidocoSupplierAgencySettlementBooking value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking $midocoSupplierAgencySettlementBooking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveSupplAgencySettlemBookRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking $midocoSupplierAgencySettlementBooking
+     * @return \Pggns\MidocoApi\Order\StructType\SaveSupplAgencySettlemBookRequest
      */
-    public function setMidocoSupplierAgencySettlementBooking(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking $midocoSupplierAgencySettlementBooking = null): self
+    public function setMidocoSupplierAgencySettlementBooking(?\Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking $midocoSupplierAgencySettlementBooking = null): self
     {
         $this->MidocoSupplierAgencySettlementBooking = $midocoSupplierAgencySettlementBooking;
         
@@ -63,7 +63,7 @@ class SaveSupplAgencySettlemBookRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierAgencySettlementBookings value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemBookDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemBookDTO[]
      */
     public function getMidocoSupplierAgencySettlementBookings(): ?array
     {
@@ -84,12 +84,12 @@ class SaveSupplAgencySettlemBookRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveSupplAgencySettlemBookRequestMidocoSupplierAgencySettlementBookingsItem) {
             // validation for constraint: itemType
-            if (!$saveSupplAgencySettlemBookRequestMidocoSupplierAgencySettlementBookingsItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemBookDTO) {
+            if (!$saveSupplAgencySettlemBookRequestMidocoSupplierAgencySettlementBookingsItem instanceof \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemBookDTO) {
                 $invalidValues[] = is_object($saveSupplAgencySettlemBookRequestMidocoSupplierAgencySettlementBookingsItem) ? get_class($saveSupplAgencySettlemBookRequestMidocoSupplierAgencySettlementBookingsItem) : sprintf('%s(%s)', gettype($saveSupplAgencySettlemBookRequestMidocoSupplierAgencySettlementBookingsItem), var_export($saveSupplAgencySettlemBookRequestMidocoSupplierAgencySettlementBookingsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierAgencySettlementBookings property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemBookDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierAgencySettlementBookings property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemBookDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -98,8 +98,8 @@ class SaveSupplAgencySettlemBookRequest extends AbstractStructBase
     /**
      * Set MidocoSupplierAgencySettlementBookings value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemBookDTO[] $midocoSupplierAgencySettlementBookings
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveSupplAgencySettlemBookRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemBookDTO[] $midocoSupplierAgencySettlementBookings
+     * @return \Pggns\MidocoApi\Order\StructType\SaveSupplAgencySettlemBookRequest
      */
     public function setMidocoSupplierAgencySettlementBookings(?array $midocoSupplierAgencySettlementBookings = null): self
     {
@@ -114,14 +114,14 @@ class SaveSupplAgencySettlemBookRequest extends AbstractStructBase
     /**
      * Add item to MidocoSupplierAgencySettlementBookings value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemBookDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveSupplAgencySettlemBookRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemBookDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\SaveSupplAgencySettlemBookRequest
      */
-    public function addToMidocoSupplierAgencySettlementBookings(\Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemBookDTO $item): self
+    public function addToMidocoSupplierAgencySettlementBookings(\Pggns\MidocoApi\Order\StructType\SupplAgencySettlemBookDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemBookDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierAgencySettlementBookings property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplAgencySettlemBookDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemBookDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierAgencySettlementBookings property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplAgencySettlemBookDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierAgencySettlementBookings[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetSupplierAddressListRequest extends AbstractStructBase
      * The MidocoSupplier
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplier
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType $MidocoSupplier = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType $MidocoSupplier = null;
     /**
      * The orgunit
      * @var string|null
@@ -29,10 +29,10 @@ class GetSupplierAddressListRequest extends AbstractStructBase
      * Constructor method for GetSupplierAddressListRequest
      * @uses GetSupplierAddressListRequest::setMidocoSupplier()
      * @uses GetSupplierAddressListRequest::setOrgunit()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType $midocoSupplier
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType $midocoSupplier
      * @param string $orgunit
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType $midocoSupplier = null, ?string $orgunit = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType $midocoSupplier = null, ?string $orgunit = null)
     {
         $this
             ->setMidocoSupplier($midocoSupplier)
@@ -40,18 +40,18 @@ class GetSupplierAddressListRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplier value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType|null
      */
-    public function getMidocoSupplier(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType
+    public function getMidocoSupplier(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType
     {
         return $this->MidocoSupplier;
     }
     /**
      * Set MidocoSupplier value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType $midocoSupplier
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAddressListRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType $midocoSupplier
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAddressListRequest
      */
-    public function setMidocoSupplier(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierType $midocoSupplier = null): self
+    public function setMidocoSupplier(?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierType $midocoSupplier = null): self
     {
         $this->MidocoSupplier = $midocoSupplier;
         
@@ -68,7 +68,7 @@ class GetSupplierAddressListRequest extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetSupplierAddressListRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetSupplierAddressListRequest
      */
     public function setOrgunit(?string $orgunit = null): self
     {

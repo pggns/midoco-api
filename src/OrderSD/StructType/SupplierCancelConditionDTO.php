@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class SupplierCancelConditionDTO extends AbstractStructBase
     /**
      * Set daysBeforeTravel value
      * @param int $daysBeforeTravel
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierCancelConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierCancelConditionDTO
      */
     public function setDaysBeforeTravel(?int $daysBeforeTravel = null): self
     {
@@ -126,7 +126,7 @@ class SupplierCancelConditionDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierCancelConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierCancelConditionDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -149,7 +149,7 @@ class SupplierCancelConditionDTO extends AbstractStructBase
     /**
      * Set feeCode value
      * @param string $feeCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierCancelConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierCancelConditionDTO
      */
     public function setFeeCode(?string $feeCode = null): self
     {
@@ -172,7 +172,7 @@ class SupplierCancelConditionDTO extends AbstractStructBase
     /**
      * Set feeSupplier value
      * @param string $feeSupplier
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierCancelConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierCancelConditionDTO
      */
     public function setFeeSupplier(?string $feeSupplier = null): self
     {
@@ -195,7 +195,7 @@ class SupplierCancelConditionDTO extends AbstractStructBase
     /**
      * Set minAmount value
      * @param float $minAmount
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierCancelConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierCancelConditionDTO
      */
     public function setMinAmount(?float $minAmount = null): self
     {
@@ -218,7 +218,7 @@ class SupplierCancelConditionDTO extends AbstractStructBase
     /**
      * Set percent value
      * @param float $percent
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierCancelConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierCancelConditionDTO
      */
     public function setPercent(?float $percent = null): self
     {
@@ -241,7 +241,7 @@ class SupplierCancelConditionDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierCancelConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierCancelConditionDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -264,7 +264,7 @@ class SupplierCancelConditionDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierCancelConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierCancelConditionDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -287,7 +287,7 @@ class SupplierCancelConditionDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierCancelConditionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierCancelConditionDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveMediatorTextTemplateRequest extends AbstractStructBase
      * The MidocoCustomerTextTemplate
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerTextTemplate
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\TextTemplateDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateDTO $MidocoCustomerTextTemplate = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\TextTemplateDTO $MidocoCustomerTextTemplate = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +29,10 @@ class SaveMediatorTextTemplateRequest extends AbstractStructBase
      * Constructor method for SaveMediatorTextTemplateRequest
      * @uses SaveMediatorTextTemplateRequest::setMidocoCustomerTextTemplate()
      * @uses SaveMediatorTextTemplateRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateDTO $midocoCustomerTextTemplate
+     * @param \Pggns\MidocoApi\CrmSD\StructType\TextTemplateDTO $midocoCustomerTextTemplate
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateDTO $midocoCustomerTextTemplate = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\TextTemplateDTO $midocoCustomerTextTemplate = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoCustomerTextTemplate($midocoCustomerTextTemplate)
@@ -40,18 +40,18 @@ class SaveMediatorTextTemplateRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerTextTemplate value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TextTemplateDTO|null
      */
-    public function getMidocoCustomerTextTemplate(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateDTO
+    public function getMidocoCustomerTextTemplate(): ?\Pggns\MidocoApi\CrmSD\StructType\TextTemplateDTO
     {
         return $this->MidocoCustomerTextTemplate;
     }
     /**
      * Set MidocoCustomerTextTemplate value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateDTO $midocoCustomerTextTemplate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMediatorTextTemplateRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\TextTemplateDTO $midocoCustomerTextTemplate
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorTextTemplateRequest
      */
-    public function setMidocoCustomerTextTemplate(?\Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateDTO $midocoCustomerTextTemplate = null): self
+    public function setMidocoCustomerTextTemplate(?\Pggns\MidocoApi\CrmSD\StructType\TextTemplateDTO $midocoCustomerTextTemplate = null): self
     {
         $this->MidocoCustomerTextTemplate = $midocoCustomerTextTemplate;
         
@@ -68,7 +68,7 @@ class SaveMediatorTextTemplateRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMediatorTextTemplateRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorTextTemplateRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class DeleteDocumentRequest extends AbstractStructBase
      * The MidocoCrmDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmDocument
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO $MidocoCrmDocument = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO $MidocoCrmDocument = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +29,10 @@ class DeleteDocumentRequest extends AbstractStructBase
      * Constructor method for DeleteDocumentRequest
      * @uses DeleteDocumentRequest::setMidocoCrmDocument()
      * @uses DeleteDocumentRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO $midocoCrmDocument
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO $midocoCrmDocument
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO $midocoCrmDocument = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO $midocoCrmDocument = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoCrmDocument($midocoCrmDocument)
@@ -40,18 +40,18 @@ class DeleteDocumentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmDocument value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO|null
      */
-    public function getMidocoCrmDocument(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+    public function getMidocoCrmDocument(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
     {
         return $this->MidocoCrmDocument;
     }
     /**
      * Set MidocoCrmDocument value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO $midocoCrmDocument
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDocumentRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO $midocoCrmDocument
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteDocumentRequest
      */
-    public function setMidocoCrmDocument(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO $midocoCrmDocument = null): self
+    public function setMidocoCrmDocument(?\Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO $midocoCrmDocument = null): self
     {
         $this->MidocoCrmDocument = $midocoCrmDocument;
         
@@ -68,7 +68,7 @@ class DeleteDocumentRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDocumentRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteDocumentRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

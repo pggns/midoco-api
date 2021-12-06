@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MisReportParamDTO extends AbstractStructBase
     /**
      * Set allowMultiple value
      * @param bool $allowMultiple
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MisReportParamDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportParamDTO
      */
     public function setAllowMultiple(?bool $allowMultiple = null): self
     {
@@ -134,7 +134,7 @@ class MisReportParamDTO extends AbstractStructBase
     /**
      * Set defaultValue value
      * @param string $defaultValue
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MisReportParamDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportParamDTO
      */
     public function setDefaultValue(?string $defaultValue = null): self
     {
@@ -157,7 +157,7 @@ class MisReportParamDTO extends AbstractStructBase
     /**
      * Set granularity value
      * @param int $granularity
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MisReportParamDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportParamDTO
      */
     public function setGranularity(?int $granularity = null): self
     {
@@ -180,7 +180,7 @@ class MisReportParamDTO extends AbstractStructBase
     /**
      * Set isVisible value
      * @param bool $isVisible
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MisReportParamDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportParamDTO
      */
     public function setIsVisible(?bool $isVisible = null): self
     {
@@ -203,7 +203,7 @@ class MisReportParamDTO extends AbstractStructBase
     /**
      * Set mondrianType value
      * @param string $mondrianType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MisReportParamDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportParamDTO
      */
     public function setMondrianType(?string $mondrianType = null): self
     {
@@ -226,7 +226,7 @@ class MisReportParamDTO extends AbstractStructBase
     /**
      * Set paramDescription value
      * @param string $paramDescription
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MisReportParamDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportParamDTO
      */
     public function setParamDescription(?string $paramDescription = null): self
     {
@@ -249,7 +249,7 @@ class MisReportParamDTO extends AbstractStructBase
     /**
      * Set paramName value
      * @param string $paramName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MisReportParamDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportParamDTO
      */
     public function setParamName(?string $paramName = null): self
     {
@@ -272,7 +272,7 @@ class MisReportParamDTO extends AbstractStructBase
     /**
      * Set paramType value
      * @param string $paramType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MisReportParamDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportParamDTO
      */
     public function setParamType(?string $paramType = null): self
     {
@@ -295,7 +295,7 @@ class MisReportParamDTO extends AbstractStructBase
     /**
      * Set parameterId value
      * @param int $parameterId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MisReportParamDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportParamDTO
      */
     public function setParameterId(?int $parameterId = null): self
     {
@@ -318,7 +318,7 @@ class MisReportParamDTO extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MisReportParamDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportParamDTO
      */
     public function setReportId(?int $reportId = null): self
     {

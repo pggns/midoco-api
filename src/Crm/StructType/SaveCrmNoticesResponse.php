@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,7 +20,7 @@ class SaveCrmNoticesResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoCrmNotice
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmNotice[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmNotice[]
      */
     protected ?array $MidocoCrmNotice = null;
     /**
@@ -32,7 +32,7 @@ class SaveCrmNoticesResponse extends AbstractStructBase
      * Constructor method for SaveCrmNoticesResponse
      * @uses SaveCrmNoticesResponse::setMidocoCrmNotice()
      * @uses SaveCrmNoticesResponse::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmNotice[] $midocoCrmNotice
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmNotice[] $midocoCrmNotice
      * @param int $internalVersion
      */
     public function __construct(?array $midocoCrmNotice = null, ?int $internalVersion = null)
@@ -43,7 +43,7 @@ class SaveCrmNoticesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmNotice value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmNotice[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmNotice[]
      */
     public function getMidocoCrmNotice(): ?array
     {
@@ -64,12 +64,12 @@ class SaveCrmNoticesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveCrmNoticesResponseMidocoCrmNoticeItem) {
             // validation for constraint: itemType
-            if (!$saveCrmNoticesResponseMidocoCrmNoticeItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmNotice) {
+            if (!$saveCrmNoticesResponseMidocoCrmNoticeItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmNotice) {
                 $invalidValues[] = is_object($saveCrmNoticesResponseMidocoCrmNoticeItem) ? get_class($saveCrmNoticesResponseMidocoCrmNoticeItem) : sprintf('%s(%s)', gettype($saveCrmNoticesResponseMidocoCrmNoticeItem), var_export($saveCrmNoticesResponseMidocoCrmNoticeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmNotice property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmNotice property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -78,8 +78,8 @@ class SaveCrmNoticesResponse extends AbstractStructBase
     /**
      * Set MidocoCrmNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmNotice[] $midocoCrmNotice
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCrmNoticesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmNotice[] $midocoCrmNotice
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCrmNoticesResponse
      */
     public function setMidocoCrmNotice(?array $midocoCrmNotice = null): self
     {
@@ -94,14 +94,14 @@ class SaveCrmNoticesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmNotice $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCrmNoticesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmNotice $item
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCrmNoticesResponse
      */
-    public function addToMidocoCrmNotice(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmNotice $item): self
+    public function addToMidocoCrmNotice(\Pggns\MidocoApi\Crm\StructType\MidocoCrmNotice $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmNotice) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmNotice property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmNotice) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmNotice property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmNotice[] = $item;
         
@@ -118,7 +118,7 @@ class SaveCrmNoticesResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCrmNoticesResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCrmNoticesResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

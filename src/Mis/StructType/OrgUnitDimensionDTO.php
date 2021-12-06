@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class OrgUnitDimensionDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgUnitDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgUnitDimensionDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -126,7 +126,7 @@ class OrgUnitDimensionDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgUnitDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgUnitDimensionDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -149,7 +149,7 @@ class OrgUnitDimensionDTO extends AbstractStructBase
     /**
      * Set midocoOrgUnit value
      * @param string $midocoOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgUnitDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgUnitDimensionDTO
      */
     public function setMidocoOrgUnit(?string $midocoOrgUnit = null): self
     {
@@ -172,7 +172,7 @@ class OrgUnitDimensionDTO extends AbstractStructBase
     /**
      * Set orgUnitId value
      * @param int $orgUnitId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgUnitDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgUnitDimensionDTO
      */
     public function setOrgUnitId(?int $orgUnitId = null): self
     {
@@ -195,7 +195,7 @@ class OrgUnitDimensionDTO extends AbstractStructBase
     /**
      * Set parentId value
      * @param int $parentId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgUnitDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgUnitDimensionDTO
      */
     public function setParentId(?int $parentId = null): self
     {
@@ -218,7 +218,7 @@ class OrgUnitDimensionDTO extends AbstractStructBase
     /**
      * Set parentOrgUnit value
      * @param string $parentOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgUnitDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgUnitDimensionDTO
      */
     public function setParentOrgUnit(?string $parentOrgUnit = null): self
     {
@@ -241,7 +241,7 @@ class OrgUnitDimensionDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgUnitDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgUnitDimensionDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -264,7 +264,7 @@ class OrgUnitDimensionDTO extends AbstractStructBase
     /**
      * Set printName value
      * @param string $printName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgUnitDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgUnitDimensionDTO
      */
     public function setPrintName(?string $printName = null): self
     {
@@ -287,7 +287,7 @@ class OrgUnitDimensionDTO extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\OrgUnitDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\OrgUnitDimensionDTO
      */
     public function setState(?string $state = null): self
     {

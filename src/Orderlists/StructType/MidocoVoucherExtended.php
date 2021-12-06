@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoVoucherExtended extends VoucherDTO
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVoucherExtended
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVoucherExtended
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -86,7 +86,7 @@ class MidocoVoucherExtended extends VoucherDTO
     /**
      * Set allowPartialUse value
      * @param bool $allowPartialUse
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVoucherExtended
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVoucherExtended
      */
     public function setAllowPartialUse(?bool $allowPartialUse = null): self
     {
@@ -109,7 +109,7 @@ class MidocoVoucherExtended extends VoucherDTO
     /**
      * Set forCustomer value
      * @param string $forCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVoucherExtended
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVoucherExtended
      */
     public function setForCustomer(?string $forCustomer = null): self
     {
@@ -132,7 +132,7 @@ class MidocoVoucherExtended extends VoucherDTO
     /**
      * Set fromCustomer value
      * @param string $fromCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVoucherExtended
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVoucherExtended
      */
     public function setFromCustomer(?string $fromCustomer = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoAgencySettlementSearchCriteria extends AbstractStructBase
     /**
      * Set creationStartDate value
      * @param string $creationStartDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementSearchCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementSearchCriteria
      */
     public function setCreationStartDate(?string $creationStartDate = null): self
     {
@@ -78,7 +78,7 @@ class MidocoAgencySettlementSearchCriteria extends AbstractStructBase
     /**
      * Set creationEndDate value
      * @param string $creationEndDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementSearchCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementSearchCriteria
      */
     public function setCreationEndDate(?string $creationEndDate = null): self
     {
@@ -101,7 +101,7 @@ class MidocoAgencySettlementSearchCriteria extends AbstractStructBase
     /**
      * Set agencyNo value
      * @param string $agencyNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementSearchCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementSearchCriteria
      */
     public function setAgencyNo(?string $agencyNo = null): self
     {

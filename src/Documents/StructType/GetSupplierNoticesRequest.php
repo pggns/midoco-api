@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetSupplierNoticesRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierNoticesRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierNoticesRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -78,7 +78,7 @@ class GetSupplierNoticesRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierNoticesRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierNoticesRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -101,7 +101,7 @@ class GetSupplierNoticesRequest extends AbstractStructBase
     /**
      * Set isValid value
      * @param bool $isValid
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierNoticesRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierNoticesRequest
      */
     public function setIsValid(?bool $isValid = null): self
     {

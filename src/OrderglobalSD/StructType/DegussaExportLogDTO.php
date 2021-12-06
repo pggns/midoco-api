@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DegussaExportLogDTO extends AbstractStructBase
     /**
      * Set degussaExportLogId value
      * @param int $degussaExportLogId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaExportLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaExportLogDTO
      */
     public function setDegussaExportLogId(?int $degussaExportLogId = null): self
     {
@@ -70,7 +70,7 @@ class DegussaExportLogDTO extends AbstractStructBase
     /**
      * Set exportTimestamp value
      * @param string $exportTimestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaExportLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaExportLogDTO
      */
     public function setExportTimestamp(?string $exportTimestamp = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class FareTypeDimensionDTO extends AbstractStructBase
     /**
      * Set fareType value
      * @param string $fareType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FareTypeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FareTypeDimensionDTO
      */
     public function setFareType(?string $fareType = null): self
     {
@@ -70,7 +70,7 @@ class FareTypeDimensionDTO extends AbstractStructBase
     /**
      * Set fareTypeId value
      * @param int $fareTypeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\FareTypeDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\FareTypeDimensionDTO
      */
     public function setFareTypeId(?int $fareTypeId = null): self
     {

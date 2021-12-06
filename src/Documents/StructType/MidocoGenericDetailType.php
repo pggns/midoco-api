@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -81,7 +81,7 @@ class MidocoGenericDetailType extends GenericDetailDTO
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoGenericDetailType
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -104,7 +104,7 @@ class MidocoGenericDetailType extends GenericDetailDTO
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoGenericDetailType
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -127,7 +127,7 @@ class MidocoGenericDetailType extends GenericDetailDTO
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoGenericDetailType
      */
     public function setStatus(?string $status = null): self
     {
@@ -150,7 +150,7 @@ class MidocoGenericDetailType extends GenericDetailDTO
     /**
      * Set paxAssigned value
      * @param string $paxAssigned
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoGenericDetailType
      */
     public function setPaxAssigned(?string $paxAssigned = null): self
     {
@@ -173,7 +173,7 @@ class MidocoGenericDetailType extends GenericDetailDTO
     /**
      * Set personsPerService value
      * @param int $personsPerService
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoGenericDetailType
      */
     public function setPersonsPerService(?int $personsPerService = null): self
     {

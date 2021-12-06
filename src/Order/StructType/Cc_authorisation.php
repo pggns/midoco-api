@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -52,9 +52,9 @@ class Cc_authorisation extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: cc-token
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Cc_token|null
+     * @var \Pggns\MidocoApi\Order\StructType\Cc_token|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\Cc_token $cc_token = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\Cc_token $cc_token = null;
     /**
      * The position
      * @var int|null
@@ -82,11 +82,11 @@ class Cc_authorisation extends AbstractStructBase
      * @param bool $capture_executed
      * @param string $cc_type
      * @param string $cc_number
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Cc_token $cc_token
+     * @param \Pggns\MidocoApi\Order\StructType\Cc_token $cc_token
      * @param int $position
      * @param string $transaction_ref_id
      */
-    public function __construct(?string $auth_code = null, ?float $auth_amount = null, ?string $currency = null, ?bool $capture_executed = null, ?string $cc_type = null, ?string $cc_number = null, ?\Pggns\MidocoApi\Api\Order\StructType\Cc_token $cc_token = null, ?int $position = null, ?string $transaction_ref_id = null)
+    public function __construct(?string $auth_code = null, ?float $auth_amount = null, ?string $currency = null, ?bool $capture_executed = null, ?string $cc_type = null, ?string $cc_number = null, ?\Pggns\MidocoApi\Order\StructType\Cc_token $cc_token = null, ?int $position = null, ?string $transaction_ref_id = null)
     {
         $this
             ->setAuth_code($auth_code)
@@ -110,7 +110,7 @@ class Cc_authorisation extends AbstractStructBase
     /**
      * Set auth_code value
      * @param string $auth_code
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_authorisation
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_authorisation
      */
     public function setAuth_code(?string $auth_code = null): self
     {
@@ -133,7 +133,7 @@ class Cc_authorisation extends AbstractStructBase
     /**
      * Set auth_amount value
      * @param float $auth_amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_authorisation
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_authorisation
      */
     public function setAuth_amount(?float $auth_amount = null): self
     {
@@ -156,7 +156,7 @@ class Cc_authorisation extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_authorisation
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_authorisation
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -179,7 +179,7 @@ class Cc_authorisation extends AbstractStructBase
     /**
      * Set capture_executed value
      * @param bool $capture_executed
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_authorisation
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_authorisation
      */
     public function setCapture_executed(?bool $capture_executed = null): self
     {
@@ -202,7 +202,7 @@ class Cc_authorisation extends AbstractStructBase
     /**
      * Set cc_type value
      * @param string $cc_type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_authorisation
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_authorisation
      */
     public function setCc_type(?string $cc_type = null): self
     {
@@ -225,7 +225,7 @@ class Cc_authorisation extends AbstractStructBase
     /**
      * Set cc_number value
      * @param string $cc_number
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_authorisation
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_authorisation
      */
     public function setCc_number(?string $cc_number = null): self
     {
@@ -239,18 +239,18 @@ class Cc_authorisation extends AbstractStructBase
     }
     /**
      * Get cc_token value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_token|null
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_token|null
      */
-    public function getCc_token(): ?\Pggns\MidocoApi\Api\Order\StructType\Cc_token
+    public function getCc_token(): ?\Pggns\MidocoApi\Order\StructType\Cc_token
     {
         return $this->{'cc-token'};
     }
     /**
      * Set cc_token value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Cc_token $cc_token
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_authorisation
+     * @param \Pggns\MidocoApi\Order\StructType\Cc_token $cc_token
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_authorisation
      */
-    public function setCc_token(?\Pggns\MidocoApi\Api\Order\StructType\Cc_token $cc_token = null): self
+    public function setCc_token(?\Pggns\MidocoApi\Order\StructType\Cc_token $cc_token = null): self
     {
         $this->cc_token = $this->{'cc-token'} = $cc_token;
         
@@ -267,7 +267,7 @@ class Cc_authorisation extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_authorisation
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_authorisation
      */
     public function setPosition(?int $position = null): self
     {
@@ -290,7 +290,7 @@ class Cc_authorisation extends AbstractStructBase
     /**
      * Set transaction_ref_id value
      * @param string $transaction_ref_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Cc_authorisation
+     * @return \Pggns\MidocoApi\Order\StructType\Cc_authorisation
      */
     public function setTransaction_ref_id(?string $transaction_ref_id = null): self
     {

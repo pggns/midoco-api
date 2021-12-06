@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoSupplierCommissionCondition extends SupplierCommissionCondDTO
     /**
      * Set isInherited value
      * @param bool $isInherited
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierCommissionCondition
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierCommissionCondition
      */
     public function setIsInherited(?bool $isInherited = null): self
     {

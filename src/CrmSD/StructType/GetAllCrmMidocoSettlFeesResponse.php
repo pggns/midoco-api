@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetAllCrmMidocoSettlFeesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmMidocoSettlFee
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlFeeDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO[]
      */
     protected ?array $MidocoCrmMidocoSettlFee = null;
     /**
      * Constructor method for GetAllCrmMidocoSettlFeesResponse
      * @uses GetAllCrmMidocoSettlFeesResponse::setMidocoCrmMidocoSettlFee()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlFeeDTO[] $midocoCrmMidocoSettlFee
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO[] $midocoCrmMidocoSettlFee
      */
     public function __construct(?array $midocoCrmMidocoSettlFee = null)
     {
@@ -36,7 +36,7 @@ class GetAllCrmMidocoSettlFeesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmMidocoSettlFee value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlFeeDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO[]
      */
     public function getMidocoCrmMidocoSettlFee(): ?array
     {
@@ -57,12 +57,12 @@ class GetAllCrmMidocoSettlFeesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllCrmMidocoSettlFeesResponseMidocoCrmMidocoSettlFeeItem) {
             // validation for constraint: itemType
-            if (!$getAllCrmMidocoSettlFeesResponseMidocoCrmMidocoSettlFeeItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlFeeDTO) {
+            if (!$getAllCrmMidocoSettlFeesResponseMidocoCrmMidocoSettlFeeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO) {
                 $invalidValues[] = is_object($getAllCrmMidocoSettlFeesResponseMidocoCrmMidocoSettlFeeItem) ? get_class($getAllCrmMidocoSettlFeesResponseMidocoCrmMidocoSettlFeeItem) : sprintf('%s(%s)', gettype($getAllCrmMidocoSettlFeesResponseMidocoCrmMidocoSettlFeeItem), var_export($getAllCrmMidocoSettlFeesResponseMidocoCrmMidocoSettlFeeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmMidocoSettlFee property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlFeeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmMidocoSettlFee property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetAllCrmMidocoSettlFeesResponse extends AbstractStructBase
     /**
      * Set MidocoCrmMidocoSettlFee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlFeeDTO[] $midocoCrmMidocoSettlFee
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAllCrmMidocoSettlFeesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO[] $midocoCrmMidocoSettlFee
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllCrmMidocoSettlFeesResponse
      */
     public function setMidocoCrmMidocoSettlFee(?array $midocoCrmMidocoSettlFee = null): self
     {
@@ -87,14 +87,14 @@ class GetAllCrmMidocoSettlFeesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmMidocoSettlFee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlFeeDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAllCrmMidocoSettlFeesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllCrmMidocoSettlFeesResponse
      */
-    public function addToMidocoCrmMidocoSettlFee(\Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlFeeDTO $item): self
+    public function addToMidocoCrmMidocoSettlFee(\Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlFeeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlFee property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlFeeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlFee property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmMidocoSettlFee[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -27,7 +27,7 @@ class GetMidocoExportListRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: KeyValue
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\KeyValue[]
+     * @var \Pggns\MidocoApi\Mis\StructType\KeyValue[]
      */
     protected ?array $KeyValue = null;
     /**
@@ -53,7 +53,7 @@ class GetMidocoExportListRequest extends AbstractStructBase
      * @uses GetMidocoExportListRequest::setReportName()
      * @uses GetMidocoExportListRequest::setFormat()
      * @param string[] $dtos
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\KeyValue[] $keyValue
+     * @param \Pggns\MidocoApi\Mis\StructType\KeyValue[] $keyValue
      * @param string $dtoClassName
      * @param string $reportName
      * @param string $format
@@ -105,7 +105,7 @@ class GetMidocoExportListRequest extends AbstractStructBase
      * Set dtos value
      * @throws InvalidArgumentException
      * @param string[] $dtos
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoExportListRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoExportListRequest
      */
     public function setDtos(?array $dtos = null): self
     {
@@ -121,7 +121,7 @@ class GetMidocoExportListRequest extends AbstractStructBase
      * Add item to dtos value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoExportListRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoExportListRequest
      */
     public function addToDtos(string $item): self
     {
@@ -135,7 +135,7 @@ class GetMidocoExportListRequest extends AbstractStructBase
     }
     /**
      * Get KeyValue value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\KeyValue[]
+     * @return \Pggns\MidocoApi\Mis\StructType\KeyValue[]
      */
     public function getKeyValue(): ?array
     {
@@ -156,12 +156,12 @@ class GetMidocoExportListRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoExportListRequestKeyValueItem) {
             // validation for constraint: itemType
-            if (!$getMidocoExportListRequestKeyValueItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\KeyValue) {
+            if (!$getMidocoExportListRequestKeyValueItem instanceof \Pggns\MidocoApi\Mis\StructType\KeyValue) {
                 $invalidValues[] = is_object($getMidocoExportListRequestKeyValueItem) ? get_class($getMidocoExportListRequestKeyValueItem) : sprintf('%s(%s)', gettype($getMidocoExportListRequestKeyValueItem), var_export($getMidocoExportListRequestKeyValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The KeyValue property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\KeyValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The KeyValue property can only contain items of type \Pggns\MidocoApi\Mis\StructType\KeyValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -170,8 +170,8 @@ class GetMidocoExportListRequest extends AbstractStructBase
     /**
      * Set KeyValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\KeyValue[] $keyValue
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoExportListRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\KeyValue[] $keyValue
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoExportListRequest
      */
     public function setKeyValue(?array $keyValue = null): self
     {
@@ -186,14 +186,14 @@ class GetMidocoExportListRequest extends AbstractStructBase
     /**
      * Add item to KeyValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\KeyValue $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoExportListRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\KeyValue $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoExportListRequest
      */
-    public function addToKeyValue(\Pggns\MidocoApi\Api\Mis\StructType\KeyValue $item): self
+    public function addToKeyValue(\Pggns\MidocoApi\Mis\StructType\KeyValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\KeyValue) {
-            throw new InvalidArgumentException(sprintf('The KeyValue property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\KeyValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\KeyValue) {
+            throw new InvalidArgumentException(sprintf('The KeyValue property can only contain items of type \Pggns\MidocoApi\Mis\StructType\KeyValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->KeyValue[] = $item;
         
@@ -210,7 +210,7 @@ class GetMidocoExportListRequest extends AbstractStructBase
     /**
      * Set dtoClassName value
      * @param string $dtoClassName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoExportListRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoExportListRequest
      */
     public function setDtoClassName(?string $dtoClassName = null): self
     {
@@ -233,7 +233,7 @@ class GetMidocoExportListRequest extends AbstractStructBase
     /**
      * Set reportName value
      * @param string $reportName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoExportListRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoExportListRequest
      */
     public function setReportName(?string $reportName = null): self
     {
@@ -256,7 +256,7 @@ class GetMidocoExportListRequest extends AbstractStructBase
     /**
      * Set format value
      * @param string $format
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMidocoExportListRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoExportListRequest
      */
     public function setFormat(?string $format = null): self
     {

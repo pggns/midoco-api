@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetDunningLettersRequest extends AbstractStructBase
      * The MidocoDunningLetter
      * Meta information extracted from the WSDL
      * - ref: MidocoDunningLetter
-     * @var \Pggns\MidocoApi\Api\Order\StructType\DunningLetterDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\DunningLetterDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\DunningLetterDTO $MidocoDunningLetter = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\DunningLetterDTO $MidocoDunningLetter = null;
     /**
      * Constructor method for GetDunningLettersRequest
      * @uses GetDunningLettersRequest::setMidocoDunningLetter()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DunningLetterDTO $midocoDunningLetter
+     * @param \Pggns\MidocoApi\Order\StructType\DunningLetterDTO $midocoDunningLetter
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\DunningLetterDTO $midocoDunningLetter = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\DunningLetterDTO $midocoDunningLetter = null)
     {
         $this
             ->setMidocoDunningLetter($midocoDunningLetter);
     }
     /**
      * Get MidocoDunningLetter value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DunningLetterDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\DunningLetterDTO|null
      */
-    public function getMidocoDunningLetter(): ?\Pggns\MidocoApi\Api\Order\StructType\DunningLetterDTO
+    public function getMidocoDunningLetter(): ?\Pggns\MidocoApi\Order\StructType\DunningLetterDTO
     {
         return $this->MidocoDunningLetter;
     }
     /**
      * Set MidocoDunningLetter value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DunningLetterDTO $midocoDunningLetter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetDunningLettersRequest
+     * @param \Pggns\MidocoApi\Order\StructType\DunningLetterDTO $midocoDunningLetter
+     * @return \Pggns\MidocoApi\Order\StructType\GetDunningLettersRequest
      */
-    public function setMidocoDunningLetter(?\Pggns\MidocoApi\Api\Order\StructType\DunningLetterDTO $midocoDunningLetter = null): self
+    public function setMidocoDunningLetter(?\Pggns\MidocoApi\Order\StructType\DunningLetterDTO $midocoDunningLetter = null): self
     {
         $this->MidocoDunningLetter = $midocoDunningLetter;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -24,9 +24,9 @@ class SearchBillingDocumentRequest extends AbstractStructBase
      * The MidocoBillingDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoBillingDocument
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $MidocoBillingDocument = null;
     /**
      * The creationUserId
      * @var int|null
@@ -104,7 +104,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
      * @uses SearchBillingDocumentRequest::setMandateReference()
      * @uses SearchBillingDocumentRequest::setIsInvoiceToEmailNeeded()
      * @param bool $listPrinted
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument
      * @param int $creationUserId
      * @param int $printingUserId
      * @param int $orderNo
@@ -118,7 +118,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
      * @param string $mandateReference
      * @param bool $isInvoiceToEmailNeeded
      */
-    public function __construct(bool $listPrinted, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?int $creationUserId = null, ?int $printingUserId = null, ?int $orderNo = null, ?int $ccReceiptNo = null, ?string $ccApprovalCode = null, ?string $ccNo = null, ?string $creationDateTo = null, ?string $creationDateFrom = null, ?string $printingDateTo = null, ?string $printingDateFrom = null, ?string $mandateReference = null, ?bool $isInvoiceToEmailNeeded = null)
+    public function __construct(bool $listPrinted, ?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?int $creationUserId = null, ?int $printingUserId = null, ?int $orderNo = null, ?int $ccReceiptNo = null, ?string $ccApprovalCode = null, ?string $ccNo = null, ?string $creationDateTo = null, ?string $creationDateFrom = null, ?string $printingDateTo = null, ?string $printingDateFrom = null, ?string $mandateReference = null, ?bool $isInvoiceToEmailNeeded = null)
     {
         $this
             ->setListPrinted($listPrinted)
@@ -147,7 +147,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     /**
      * Set listPrinted value
      * @param bool $listPrinted
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
     public function setListPrinted(bool $listPrinted): self
     {
@@ -161,18 +161,18 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoBillingDocument value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument|null
      */
-    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument
+    public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument
     {
         return $this->MidocoBillingDocument;
     }
     /**
      * Set MidocoBillingDocument value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
-    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
+    public function setMidocoBillingDocument(?\Pggns\MidocoApi\Order\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
     {
         $this->MidocoBillingDocument = $midocoBillingDocument;
         
@@ -189,7 +189,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     /**
      * Set creationUserId value
      * @param int $creationUserId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
     public function setCreationUserId(?int $creationUserId = null): self
     {
@@ -212,7 +212,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     /**
      * Set printingUserId value
      * @param int $printingUserId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
     public function setPrintingUserId(?int $printingUserId = null): self
     {
@@ -235,7 +235,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -258,7 +258,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     /**
      * Set ccReceiptNo value
      * @param int $ccReceiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
     public function setCcReceiptNo(?int $ccReceiptNo = null): self
     {
@@ -281,7 +281,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     /**
      * Set ccApprovalCode value
      * @param string $ccApprovalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
     public function setCcApprovalCode(?string $ccApprovalCode = null): self
     {
@@ -304,7 +304,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -327,7 +327,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     /**
      * Set creationDateTo value
      * @param string $creationDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
     public function setCreationDateTo(?string $creationDateTo = null): self
     {
@@ -350,7 +350,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     /**
      * Set creationDateFrom value
      * @param string $creationDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
     public function setCreationDateFrom(?string $creationDateFrom = null): self
     {
@@ -373,7 +373,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     /**
      * Set printingDateTo value
      * @param string $printingDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
     public function setPrintingDateTo(?string $printingDateTo = null): self
     {
@@ -396,7 +396,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     /**
      * Set printingDateFrom value
      * @param string $printingDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
     public function setPrintingDateFrom(?string $printingDateFrom = null): self
     {
@@ -419,7 +419,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     /**
      * Set mandateReference value
      * @param string $mandateReference
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
     public function setMandateReference(?string $mandateReference = null): self
     {
@@ -442,7 +442,7 @@ class SearchBillingDocumentRequest extends AbstractStructBase
     /**
      * Set isInvoiceToEmailNeeded value
      * @param bool $isInvoiceToEmailNeeded
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDocumentRequest
      */
     public function setIsInvoiceToEmailNeeded(?bool $isInvoiceToEmailNeeded = null): self
     {

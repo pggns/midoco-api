@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class MidocoQueryField extends AbstractStructBase
     /**
      * Set fieldName value
      * @param string $fieldName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryField
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryField
      */
     public function setFieldName(?string $fieldName = null): self
     {
@@ -126,7 +126,7 @@ class MidocoQueryField extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryField
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryField
      */
     public function setCategory(?string $category = null): self
     {
@@ -149,7 +149,7 @@ class MidocoQueryField extends AbstractStructBase
     /**
      * Set localizedCategory value
      * @param string $localizedCategory
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryField
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryField
      */
     public function setLocalizedCategory(?string $localizedCategory = null): self
     {
@@ -172,7 +172,7 @@ class MidocoQueryField extends AbstractStructBase
     /**
      * Set dbFieldName value
      * @param string $dbFieldName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryField
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryField
      */
     public function setDbFieldName(?string $dbFieldName = null): self
     {
@@ -195,7 +195,7 @@ class MidocoQueryField extends AbstractStructBase
     /**
      * Set localizedName value
      * @param string $localizedName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryField
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryField
      */
     public function setLocalizedName(?string $localizedName = null): self
     {
@@ -218,7 +218,7 @@ class MidocoQueryField extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryField
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryField
      */
     public function setType(?string $type = null): self
     {
@@ -241,7 +241,7 @@ class MidocoQueryField extends AbstractStructBase
     /**
      * Set predefinedValues value
      * @param bool $predefinedValues
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryField
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryField
      */
     public function setPredefinedValues(?bool $predefinedValues = null): self
     {
@@ -264,7 +264,7 @@ class MidocoQueryField extends AbstractStructBase
     /**
      * Set visible value
      * @param bool $visible
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryField
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryField
      */
     public function setVisible(?bool $visible = null): self
     {
@@ -287,7 +287,7 @@ class MidocoQueryField extends AbstractStructBase
     /**
      * Set function value
      * @param bool $function
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQueryField
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryField
      */
     public function setFunction(?bool $function = null): self
     {

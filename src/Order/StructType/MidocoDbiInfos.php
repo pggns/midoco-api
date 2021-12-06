@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -199,7 +199,7 @@ class MidocoDbiInfos extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDbiDefValue
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue[]
      */
     protected ?array $MidocoDbiDefValue = null;
     /**
@@ -277,7 +277,7 @@ class MidocoDbiInfos extends AbstractStructBase
      * @param string $f2DB
      * @param string $f3DB
      * @param string $f4DB
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue[] $midocoDbiDefValue
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue[] $midocoDbiDefValue
      */
     public function __construct(?int $orderId = null, ?int $itemId = null, ?int $passengerAssignment = null, ?string $aE = null, ?string $aK = null, ?string $aU = null, ?string $bD = null, ?string $dS = null, ?string $iK = null, ?string $kS = null, ?string $pK = null, ?string $pR = null, ?string $rZ = null, ?string $rD = null, ?string $uS = null, ?string $bS = null, ?string $f1 = null, ?string $f2 = null, ?string $f3 = null, ?string $f4 = null, ?string $f5 = null, ?string $f6 = null, ?string $f7 = null, ?string $f8 = null, ?string $f9 = null, ?string $f10 = null, ?string $kSDB = null, ?string $pKDB = null, ?string $rDDB = null, ?string $uSDB = null, ?string $rZDB = null, ?string $bSDB = null, ?string $f1DB = null, ?string $f2DB = null, ?string $f3DB = null, ?string $f4DB = null, ?array $midocoDbiDefValue = null)
     {
@@ -331,7 +331,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -354,7 +354,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -377,7 +377,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set passengerAssignment value
      * @param int $passengerAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setPassengerAssignment(?int $passengerAssignment = null): self
     {
@@ -400,7 +400,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set AE value
      * @param string $aE
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setAE(?string $aE = null): self
     {
@@ -423,7 +423,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set AK value
      * @param string $aK
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setAK(?string $aK = null): self
     {
@@ -446,7 +446,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set AU value
      * @param string $aU
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setAU(?string $aU = null): self
     {
@@ -469,7 +469,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set BD value
      * @param string $bD
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setBD(?string $bD = null): self
     {
@@ -492,7 +492,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set DS value
      * @param string $dS
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setDS(?string $dS = null): self
     {
@@ -515,7 +515,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set IK value
      * @param string $iK
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setIK(?string $iK = null): self
     {
@@ -538,7 +538,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set KS value
      * @param string $kS
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setKS(?string $kS = null): self
     {
@@ -561,7 +561,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set PK value
      * @param string $pK
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setPK(?string $pK = null): self
     {
@@ -584,7 +584,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set PR value
      * @param string $pR
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setPR(?string $pR = null): self
     {
@@ -607,7 +607,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set RZ value
      * @param string $rZ
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setRZ(?string $rZ = null): self
     {
@@ -630,7 +630,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set RD value
      * @param string $rD
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setRD(?string $rD = null): self
     {
@@ -653,7 +653,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set US value
      * @param string $uS
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setUS(?string $uS = null): self
     {
@@ -676,7 +676,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set BS value
      * @param string $bS
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setBS(?string $bS = null): self
     {
@@ -699,7 +699,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F1 value
      * @param string $f1
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF1(?string $f1 = null): self
     {
@@ -722,7 +722,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F2 value
      * @param string $f2
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF2(?string $f2 = null): self
     {
@@ -745,7 +745,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F3 value
      * @param string $f3
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF3(?string $f3 = null): self
     {
@@ -768,7 +768,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F4 value
      * @param string $f4
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF4(?string $f4 = null): self
     {
@@ -791,7 +791,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F5 value
      * @param string $f5
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF5(?string $f5 = null): self
     {
@@ -814,7 +814,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F6 value
      * @param string $f6
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF6(?string $f6 = null): self
     {
@@ -837,7 +837,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F7 value
      * @param string $f7
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF7(?string $f7 = null): self
     {
@@ -860,7 +860,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F8 value
      * @param string $f8
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF8(?string $f8 = null): self
     {
@@ -883,7 +883,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F9 value
      * @param string $f9
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF9(?string $f9 = null): self
     {
@@ -906,7 +906,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F10 value
      * @param string $f10
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF10(?string $f10 = null): self
     {
@@ -929,7 +929,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set KSDB value
      * @param string $kSDB
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setKSDB(?string $kSDB = null): self
     {
@@ -952,7 +952,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set PKDB value
      * @param string $pKDB
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setPKDB(?string $pKDB = null): self
     {
@@ -975,7 +975,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set RDDB value
      * @param string $rDDB
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setRDDB(?string $rDDB = null): self
     {
@@ -998,7 +998,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set USDB value
      * @param string $uSDB
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setUSDB(?string $uSDB = null): self
     {
@@ -1021,7 +1021,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set RZDB value
      * @param string $rZDB
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setRZDB(?string $rZDB = null): self
     {
@@ -1044,7 +1044,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set BSDB value
      * @param string $bSDB
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setBSDB(?string $bSDB = null): self
     {
@@ -1067,7 +1067,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F1DB value
      * @param string $f1DB
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF1DB(?string $f1DB = null): self
     {
@@ -1090,7 +1090,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F2DB value
      * @param string $f2DB
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF2DB(?string $f2DB = null): self
     {
@@ -1113,7 +1113,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F3DB value
      * @param string $f3DB
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF3DB(?string $f3DB = null): self
     {
@@ -1136,7 +1136,7 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set F4DB value
      * @param string $f4DB
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setF4DB(?string $f4DB = null): self
     {
@@ -1150,7 +1150,7 @@ class MidocoDbiInfos extends AbstractStructBase
     }
     /**
      * Get MidocoDbiDefValue value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue[]
      */
     public function getMidocoDbiDefValue(): ?array
     {
@@ -1171,12 +1171,12 @@ class MidocoDbiInfos extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoDbiInfosMidocoDbiDefValueItem) {
             // validation for constraint: itemType
-            if (!$midocoDbiInfosMidocoDbiDefValueItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue) {
+            if (!$midocoDbiInfosMidocoDbiDefValueItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue) {
                 $invalidValues[] = is_object($midocoDbiInfosMidocoDbiDefValueItem) ? get_class($midocoDbiInfosMidocoDbiDefValueItem) : sprintf('%s(%s)', gettype($midocoDbiInfosMidocoDbiDefValueItem), var_export($midocoDbiInfosMidocoDbiDefValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDbiDefValue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDbiDefValue property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -1185,8 +1185,8 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Set MidocoDbiDefValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue[] $midocoDbiDefValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue[] $midocoDbiDefValue
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
     public function setMidocoDbiDefValue(?array $midocoDbiDefValue = null): self
     {
@@ -1201,14 +1201,14 @@ class MidocoDbiInfos extends AbstractStructBase
     /**
      * Add item to MidocoDbiDefValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiInfos
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDbiInfos
      */
-    public function addToMidocoDbiDefValue(\Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue $item): self
+    public function addToMidocoDbiDefValue(\Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue) {
-            throw new InvalidArgumentException(sprintf('The MidocoDbiDefValue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDbiDefValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue) {
+            throw new InvalidArgumentException(sprintf('The MidocoDbiDefValue property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDbiDefValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDbiDefValue[] = $item;
         

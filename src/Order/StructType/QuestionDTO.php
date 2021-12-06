@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -215,7 +215,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set activated value
      * @param bool $activated
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setActivated(?bool $activated = null): self
     {
@@ -238,7 +238,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set activatedDate value
      * @param string $activatedDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setActivatedDate(?string $activatedDate = null): self
     {
@@ -261,7 +261,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set activatedUser value
      * @param int $activatedUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setActivatedUser(?int $activatedUser = null): self
     {
@@ -284,7 +284,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set answerPredefinedValues value
      * @param bool $answerPredefinedValues
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setAnswerPredefinedValues(?bool $answerPredefinedValues = null): self
     {
@@ -307,7 +307,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set answerRequired value
      * @param bool $answerRequired
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setAnswerRequired(?bool $answerRequired = null): self
     {
@@ -330,7 +330,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set answerType value
      * @param string $answerType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setAnswerType(?string $answerType = null): self
     {
@@ -353,7 +353,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set commentEnabled value
      * @param bool $commentEnabled
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setCommentEnabled(?bool $commentEnabled = null): self
     {
@@ -376,7 +376,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -399,7 +399,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -422,7 +422,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set customerType value
      * @param string $customerType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setCustomerType(?string $customerType = null): self
     {
@@ -445,7 +445,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set displayPosition value
      * @param int $displayPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setDisplayPosition(?int $displayPosition = null): self
     {
@@ -468,7 +468,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -491,7 +491,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -514,7 +514,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set multipleSelection value
      * @param bool $multipleSelection
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setMultipleSelection(?bool $multipleSelection = null): self
     {
@@ -537,7 +537,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setPrice(?float $price = null): self
     {
@@ -560,7 +560,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set questionId value
      * @param int $questionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setQuestionId(?int $questionId = null): self
     {
@@ -583,7 +583,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set questionText value
      * @param string $questionText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setQuestionText(?string $questionText = null): self
     {
@@ -606,7 +606,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set required value
      * @param bool $required
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setRequired(?bool $required = null): self
     {
@@ -629,7 +629,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set roles value
      * @param string $roles
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setRoles(?string $roles = null): self
     {
@@ -652,7 +652,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -675,7 +675,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set suppliersId value
      * @param string $suppliersId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setSuppliersId(?string $suppliersId = null): self
     {
@@ -698,7 +698,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set validEndDate value
      * @param string $validEndDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setValidEndDate(?string $validEndDate = null): self
     {
@@ -721,7 +721,7 @@ class QuestionDTO extends AbstractStructBase
     /**
      * Set validStartDate value
      * @param string $validStartDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\QuestionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\QuestionDTO
      */
     public function setValidStartDate(?string $validStartDate = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class GetMidocoCCSaleListResponse extends AbstractStructBase
      * Set MidocoCCSaleListType value
      * @throws InvalidArgumentException
      * @param string[] $midocoCCSaleListType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMidocoCCSaleListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMidocoCCSaleListResponse
      */
     public function setMidocoCCSaleListType(?array $midocoCCSaleListType = null): self
     {
@@ -95,7 +95,7 @@ class GetMidocoCCSaleListResponse extends AbstractStructBase
      * Add item to MidocoCCSaleListType value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMidocoCCSaleListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMidocoCCSaleListResponse
      */
     public function addToMidocoCCSaleListType(string $item): self
     {
@@ -118,7 +118,7 @@ class GetMidocoCCSaleListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetMidocoCCSaleListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetMidocoCCSaleListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

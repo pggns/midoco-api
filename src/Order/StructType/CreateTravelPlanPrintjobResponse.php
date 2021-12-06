@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CreateTravelPlanPrintjobResponse extends AbstractStructBase
     /**
      * Set PrintJobContent value
      * @param string $printJobContent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobResponse
      */
     public function setPrintJobContent(?string $printJobContent = null): self
     {

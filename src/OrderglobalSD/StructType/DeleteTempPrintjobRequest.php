@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteTempPrintjobRequest extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DeleteTempPrintjobRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DeleteTempPrintjobRequest
      */
     public function setId(?int $id = null): self
     {

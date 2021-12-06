@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetBookingJournalRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:MidocoOrderByInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[]
      */
     protected ?array $MidocoOrderByInfo = null;
     /**
@@ -179,7 +179,7 @@ class GetBookingJournalRequest extends AbstractStructBase
      * @uses GetBookingJournalRequest::setCostCentres()
      * @uses GetBookingJournalRequest::setExportCodes()
      * @uses GetBookingJournalRequest::setJournalId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo[] $midocoOrderByInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[] $midocoOrderByInfo
      * @param string $from_date
      * @param string $to_date
      * @param string $accountIds
@@ -238,7 +238,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderByInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[]
      */
     public function getMidocoOrderByInfo(): ?array
     {
@@ -259,12 +259,12 @@ class GetBookingJournalRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBookingJournalRequestMidocoOrderByInfoItem) {
             // validation for constraint: itemType
-            if (!$getBookingJournalRequestMidocoOrderByInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo) {
+            if (!$getBookingJournalRequestMidocoOrderByInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo) {
                 $invalidValues[] = is_object($getBookingJournalRequestMidocoOrderByInfoItem) ? get_class($getBookingJournalRequestMidocoOrderByInfoItem) : sprintf('%s(%s)', gettype($getBookingJournalRequestMidocoOrderByInfoItem), var_export($getBookingJournalRequestMidocoOrderByInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderByInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderByInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -273,8 +273,8 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set MidocoOrderByInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo[] $midocoOrderByInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[] $midocoOrderByInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setMidocoOrderByInfo(?array $midocoOrderByInfo = null): self
     {
@@ -289,14 +289,14 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Add item to MidocoOrderByInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
-    public function addToMidocoOrderByInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo $item): self
+    public function addToMidocoOrderByInfo(\Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderByInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderByInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderByInfo[] = $item;
         
@@ -313,7 +313,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set from_date value
      * @param string $from_date
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setFrom_date(?string $from_date = null): self
     {
@@ -336,7 +336,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set to_date value
      * @param string $to_date
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setTo_date(?string $to_date = null): self
     {
@@ -359,7 +359,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set accountIds value
      * @param string $accountIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setAccountIds(?string $accountIds = null): self
     {
@@ -382,7 +382,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set accountType value
      * @param string $accountType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setAccountType(?string $accountType = null): self
     {
@@ -405,7 +405,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set export_done value
      * @param bool $export_done
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setExport_done(?bool $export_done = null): self
     {
@@ -428,7 +428,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set booking_year value
      * @param int $booking_year
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setBooking_year(?int $booking_year = null): self
     {
@@ -451,7 +451,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set from_booking_period value
      * @param int $from_booking_period
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setFrom_booking_period(?int $from_booking_period = null): self
     {
@@ -474,7 +474,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set to_booking_period value
      * @param int $to_booking_period
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setTo_booking_period(?int $to_booking_period = null): self
     {
@@ -497,7 +497,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set bookingDateFrom value
      * @param string $bookingDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setBookingDateFrom(?string $bookingDateFrom = null): self
     {
@@ -520,7 +520,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set bookingDateTo value
      * @param string $bookingDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setBookingDateTo(?string $bookingDateTo = null): self
     {
@@ -543,7 +543,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set entry_id value
      * @param string $entry_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setEntry_id(?string $entry_id = null): self
     {
@@ -566,7 +566,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set export_id value
      * @param int $export_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setExport_id(?int $export_id = null): self
     {
@@ -589,7 +589,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set beginIndex value
      * @param int $beginIndex
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setBeginIndex(?int $beginIndex = null): self
     {
@@ -612,7 +612,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set endIndex value
      * @param int $endIndex
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setEndIndex(?int $endIndex = null): self
     {
@@ -635,7 +635,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set bookingText value
      * @param string $bookingText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setBookingText(?string $bookingText = null): self
     {
@@ -658,7 +658,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set buildSum value
      * @param bool $buildSum
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setBuildSum(?bool $buildSum = null): self
     {
@@ -681,7 +681,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set onlyReverseCharges value
      * @param bool $onlyReverseCharges
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setOnlyReverseCharges(?bool $onlyReverseCharges = null): self
     {
@@ -704,7 +704,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -727,7 +727,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set creationDateFrom value
      * @param string $creationDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setCreationDateFrom(?string $creationDateFrom = null): self
     {
@@ -750,7 +750,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set creationDateTo value
      * @param string $creationDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setCreationDateTo(?string $creationDateTo = null): self
     {
@@ -773,7 +773,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -796,7 +796,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set bookingAmount value
      * @param float $bookingAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setBookingAmount(?float $bookingAmount = null): self
     {
@@ -819,7 +819,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set costCentres value
      * @param string $costCentres
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setCostCentres(?string $costCentres = null): self
     {
@@ -842,7 +842,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set exportCodes value
      * @param string $exportCodes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setExportCodes(?string $exportCodes = null): self
     {
@@ -865,7 +865,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     /**
      * Set journalId value
      * @param int $journalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
      */
     public function setJournalId(?int $journalId = null): self
     {

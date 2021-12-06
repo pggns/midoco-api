@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -81,7 +81,7 @@ class SearchBookingIdRequest extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBookingIdRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBookingIdRequest
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -104,7 +104,7 @@ class SearchBookingIdRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBookingIdRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBookingIdRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -127,7 +127,7 @@ class SearchBookingIdRequest extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBookingIdRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBookingIdRequest
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -150,7 +150,7 @@ class SearchBookingIdRequest extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBookingIdRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBookingIdRequest
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -173,7 +173,7 @@ class SearchBookingIdRequest extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBookingIdRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBookingIdRequest
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -196,7 +196,7 @@ class SearchBookingIdRequest extends AbstractStructBase
     /**
      * Set checkDates value
      * @param bool $checkDates
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBookingIdRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBookingIdRequest
      */
     public function setCheckDates(?bool $checkDates = true): self
     {

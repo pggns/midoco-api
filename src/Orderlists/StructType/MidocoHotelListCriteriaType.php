@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoHotelListCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListCriteriaType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -78,7 +78,7 @@ class MidocoHotelListCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set hotelCode value
      * @param string $hotelCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListCriteriaType
      */
     public function setHotelCode(?string $hotelCode = null): self
     {
@@ -101,7 +101,7 @@ class MidocoHotelListCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set hotelName value
      * @param string $hotelName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoHotelListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoHotelListCriteriaType
      */
     public function setHotelName(?string $hotelName = null): self
     {

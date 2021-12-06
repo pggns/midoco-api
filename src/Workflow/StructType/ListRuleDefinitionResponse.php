@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListRuleDefinitionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoRuleDefinition
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO[]
      */
     protected ?array $MidocoRuleDefinition = null;
     /**
      * Constructor method for ListRuleDefinitionResponse
      * @uses ListRuleDefinitionResponse::setMidocoRuleDefinition()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO[] $midocoRuleDefinition
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO[] $midocoRuleDefinition
      */
     public function __construct(?array $midocoRuleDefinition = null)
     {
@@ -34,7 +34,7 @@ class ListRuleDefinitionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoRuleDefinition value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO[]
      */
     public function getMidocoRuleDefinition(): ?array
     {
@@ -55,12 +55,12 @@ class ListRuleDefinitionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listRuleDefinitionResponseMidocoRuleDefinitionItem) {
             // validation for constraint: itemType
-            if (!$listRuleDefinitionResponseMidocoRuleDefinitionItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO) {
+            if (!$listRuleDefinitionResponseMidocoRuleDefinitionItem instanceof \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO) {
                 $invalidValues[] = is_object($listRuleDefinitionResponseMidocoRuleDefinitionItem) ? get_class($listRuleDefinitionResponseMidocoRuleDefinitionItem) : sprintf('%s(%s)', gettype($listRuleDefinitionResponseMidocoRuleDefinitionItem), var_export($listRuleDefinitionResponseMidocoRuleDefinitionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRuleDefinition property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRuleDefinition property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListRuleDefinitionResponse extends AbstractStructBase
     /**
      * Set MidocoRuleDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO[] $midocoRuleDefinition
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleDefinitionResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO[] $midocoRuleDefinition
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleDefinitionResponse
      */
     public function setMidocoRuleDefinition(?array $midocoRuleDefinition = null): self
     {
@@ -85,14 +85,14 @@ class ListRuleDefinitionResponse extends AbstractStructBase
     /**
      * Add item to MidocoRuleDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleDefinitionResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleDefinitionResponse
      */
-    public function addToMidocoRuleDefinition(\Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO $item): self
+    public function addToMidocoRuleDefinition(\Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoRuleDefinition property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoRuleDefinition property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRuleDefinition[] = $item;
         

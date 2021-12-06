@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -320,7 +320,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setPosition(int $position): self
     {
@@ -343,7 +343,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set service_code value
      * @param string $service_code
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setService_code(?string $service_code = null): self
     {
@@ -366,7 +366,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set service_name value
      * @param string $service_name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setService_name(?string $service_name = null): self
     {
@@ -389,7 +389,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set no_of_tickets value
      * @param int $no_of_tickets
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setNo_of_tickets(?int $no_of_tickets = null): self
     {
@@ -412,7 +412,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set start_date value
      * @param string $start_date
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setStart_date(?string $start_date = null): self
     {
@@ -439,7 +439,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set end_date value
      * @param string $end_date
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setEnd_date(?string $end_date = null): self
     {
@@ -466,7 +466,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set start_time value
      * @param string $start_time
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setStart_time(?string $start_time = null): self
     {
@@ -493,7 +493,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set end_time value
      * @param string $end_time
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setEnd_time(?string $end_time = null): self
     {
@@ -520,7 +520,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setDescription(?string $description = null): self
     {
@@ -543,7 +543,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setName(?string $name = null): self
     {
@@ -566,7 +566,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set organizer value
      * @param string $organizer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setOrganizer(?string $organizer = null): self
     {
@@ -589,7 +589,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set location_address1 value
      * @param string $location_address1
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setLocation_address1(?string $location_address1 = null): self
     {
@@ -612,7 +612,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set location_address2 value
      * @param string $location_address2
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setLocation_address2(?string $location_address2 = null): self
     {
@@ -635,7 +635,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set location_address3 value
      * @param string $location_address3
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setLocation_address3(?string $location_address3 = null): self
     {
@@ -658,7 +658,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set location_address4 value
      * @param string $location_address4
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setLocation_address4(?string $location_address4 = null): self
     {
@@ -681,7 +681,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set location_name value
      * @param string $location_name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setLocation_name(?string $location_name = null): self
     {
@@ -704,7 +704,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set seat_area value
      * @param string $seat_area
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setSeat_area(?string $seat_area = null): self
     {
@@ -727,7 +727,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set row value
      * @param string $row
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setRow(?string $row = null): self
     {
@@ -750,7 +750,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set seat_no value
      * @param string $seat_no
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setSeat_no(?string $seat_no = null): self
     {
@@ -773,7 +773,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set total_price value
      * @param float $total_price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setTotal_price(?float $total_price = null): self
     {
@@ -796,7 +796,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set advance_sale_price value
      * @param float $advance_sale_price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setAdvance_sale_price(?float $advance_sale_price = null): self
     {
@@ -819,7 +819,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set service_status value
      * @param string $service_status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setService_status(?string $service_status = null): self
     {
@@ -842,7 +842,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set person_assignment value
      * @param string $person_assignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setPerson_assignment(?string $person_assignment = null): self
     {
@@ -865,7 +865,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setPrice(?float $price = null): self
     {
@@ -888,7 +888,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setCurrency(?string $currency = 'EUR'): self
     {
@@ -911,7 +911,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set discount_type value
      * @param string $discount_type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setDiscount_type(?string $discount_type = null): self
     {
@@ -934,7 +934,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set booking_reference value
      * @param string $booking_reference
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setBooking_reference(?string $booking_reference = null): self
     {
@@ -957,7 +957,7 @@ class Event_service_type extends AbstractStructBase
     /**
      * Set ticket_category value
      * @param string $ticket_category
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Event_service_type
+     * @return \Pggns\MidocoApi\Order\StructType\Event_service_type
      */
     public function setTicket_category(?string $ticket_category = null): self
     {

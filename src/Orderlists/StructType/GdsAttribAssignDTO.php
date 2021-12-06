@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class GdsAttribAssignDTO extends AbstractStructBase
     /**
      * Set attributeId value
      * @param string $attributeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GdsAttribAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GdsAttribAssignDTO
      */
     public function setAttributeId(?string $attributeId = null): self
     {
@@ -102,7 +102,7 @@ class GdsAttribAssignDTO extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GdsAttribAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GdsAttribAssignDTO
      */
     public function setCategory(?string $category = null): self
     {
@@ -125,7 +125,7 @@ class GdsAttribAssignDTO extends AbstractStructBase
     /**
      * Set gdsId value
      * @param string $gdsId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GdsAttribAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GdsAttribAssignDTO
      */
     public function setGdsId(?string $gdsId = null): self
     {
@@ -148,7 +148,7 @@ class GdsAttribAssignDTO extends AbstractStructBase
     /**
      * Set informationType value
      * @param string $informationType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GdsAttribAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GdsAttribAssignDTO
      */
     public function setInformationType(?string $informationType = null): self
     {
@@ -171,7 +171,7 @@ class GdsAttribAssignDTO extends AbstractStructBase
     /**
      * Set prefix value
      * @param string $prefix
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GdsAttribAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GdsAttribAssignDTO
      */
     public function setPrefix(?string $prefix = null): self
     {
@@ -194,7 +194,7 @@ class GdsAttribAssignDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GdsAttribAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GdsAttribAssignDTO
      */
     public function setType(?string $type = null): self
     {

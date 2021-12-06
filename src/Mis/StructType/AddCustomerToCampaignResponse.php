@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class AddCustomerToCampaignResponse extends AbstractStructBase
     /**
      * Set result value
      * @param string $result
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AddCustomerToCampaignResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\AddCustomerToCampaignResponse
      */
     public function setResult(?string $result = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class ImportMediatorChargesRequest extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMediatorChargesRequest
      */
     public function setAccountId(string $accountId): self
     {
@@ -134,7 +134,7 @@ class ImportMediatorChargesRequest extends AbstractStructBase
     /**
      * Set accountIdNoVat value
      * @param string $accountIdNoVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMediatorChargesRequest
      */
     public function setAccountIdNoVat(string $accountIdNoVat): self
     {
@@ -157,7 +157,7 @@ class ImportMediatorChargesRequest extends AbstractStructBase
     /**
      * Set settlementMonth value
      * @param string $settlementMonth
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMediatorChargesRequest
      */
     public function setSettlementMonth(string $settlementMonth): self
     {
@@ -184,7 +184,7 @@ class ImportMediatorChargesRequest extends AbstractStructBase
     /**
      * Set CSVCData value
      * @param string $cSVCData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMediatorChargesRequest
      */
     public function setCSVCData(?string $cSVCData = null): self
     {
@@ -207,7 +207,7 @@ class ImportMediatorChargesRequest extends AbstractStructBase
     /**
      * Set accountIdRC value
      * @param string $accountIdRC
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMediatorChargesRequest
      */
     public function setAccountIdRC(?string $accountIdRC = null): self
     {
@@ -230,7 +230,7 @@ class ImportMediatorChargesRequest extends AbstractStructBase
     /**
      * Set delimiter value
      * @param string $delimiter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMediatorChargesRequest
      */
     public function setDelimiter(?string $delimiter = '|'): self
     {
@@ -253,7 +253,7 @@ class ImportMediatorChargesRequest extends AbstractStructBase
     /**
      * Set decimalDelimiter value
      * @param string $decimalDelimiter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMediatorChargesRequest
      */
     public function setDecimalDelimiter(?string $decimalDelimiter = '.'): self
     {
@@ -276,7 +276,7 @@ class ImportMediatorChargesRequest extends AbstractStructBase
     /**
      * Set isCharge value
      * @param bool $isCharge
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportMediatorChargesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportMediatorChargesRequest
      */
     public function setIsCharge(?bool $isCharge = true): self
     {

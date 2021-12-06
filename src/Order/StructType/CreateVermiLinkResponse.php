@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CreateVermiLinkResponse extends AbstractStructBase
     /**
      * Set link value
      * @param string $link
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateVermiLinkResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateVermiLinkResponse
      */
     public function setLink(?string $link = null): self
     {

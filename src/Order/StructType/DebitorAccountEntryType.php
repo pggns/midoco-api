@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -215,7 +215,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -238,7 +238,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -261,7 +261,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -284,7 +284,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set dueAmount value
      * @param float $dueAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setDueAmount(?float $dueAmount = null): self
     {
@@ -307,7 +307,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set company value
      * @param string $company
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setCompany(?string $company = null): self
     {
@@ -330,7 +330,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set customer value
      * @param string $customer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setCustomer(?string $customer = null): self
     {
@@ -353,7 +353,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set entryId value
      * @param string $entryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setEntryId(?string $entryId = null): self
     {
@@ -376,7 +376,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -399,7 +399,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set invoicedAmount value
      * @param float $invoicedAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setInvoicedAmount(?float $invoicedAmount = null): self
     {
@@ -422,7 +422,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -445,7 +445,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -468,7 +468,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set accountType value
      * @param string $accountType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setAccountType(?string $accountType = null): self
     {
@@ -491,7 +491,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set originalPaidAmount value
      * @param float $originalPaidAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setOriginalPaidAmount(?float $originalPaidAmount = null): self
     {
@@ -514,7 +514,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set originalInvoicedAmount value
      * @param float $originalInvoicedAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setOriginalInvoicedAmount(?float $originalInvoicedAmount = null): self
     {
@@ -537,7 +537,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set originalDueAmount value
      * @param float $originalDueAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setOriginalDueAmount(?float $originalDueAmount = null): self
     {
@@ -560,7 +560,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -583,7 +583,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -606,7 +606,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set oppositeAccountId value
      * @param string $oppositeAccountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setOppositeAccountId(?string $oppositeAccountId = null): self
     {
@@ -629,7 +629,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setComment(?string $comment = null): self
     {
@@ -652,7 +652,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set commentUser value
      * @param int $commentUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setCommentUser(?int $commentUser = null): self
     {
@@ -675,7 +675,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set commentDatetime value
      * @param string $commentDatetime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setCommentDatetime(?string $commentDatetime = null): self
     {
@@ -698,7 +698,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set hasTask value
      * @param bool $hasTask
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setHasTask(?bool $hasTask = null): self
     {
@@ -721,7 +721,7 @@ class DebitorAccountEntryType extends AbstractStructBase
     /**
      * Set processingLock value
      * @param bool $processingLock
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DebitorAccountEntryType
+     * @return \Pggns\MidocoApi\Order\StructType\DebitorAccountEntryType
      */
     public function setProcessingLock(?bool $processingLock = null): self
     {

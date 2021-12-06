@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -271,7 +271,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set sellItemId value
      * @param int $sellItemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setSellItemId(?int $sellItemId = null): self
     {
@@ -294,7 +294,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set tourOperator value
      * @param string $tourOperator
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setTourOperator(?string $tourOperator = null): self
     {
@@ -317,7 +317,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -340,7 +340,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set firstService value
      * @param string $firstService
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setFirstService(?string $firstService = null): self
     {
@@ -363,7 +363,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set firstTraveller value
      * @param string $firstTraveller
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setFirstTraveller(?string $firstTraveller = null): self
     {
@@ -386,7 +386,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -409,7 +409,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -432,7 +432,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set noOfPassengers value
      * @param int $noOfPassengers
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setNoOfPassengers(?int $noOfPassengers = null): self
     {
@@ -455,7 +455,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -478,7 +478,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set displayedTotalPrice value
      * @param float $displayedTotalPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setDisplayedTotalPrice(?float $displayedTotalPrice = null): self
     {
@@ -501,7 +501,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set displayedCurrency value
      * @param string $displayedCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setDisplayedCurrency(?string $displayedCurrency = null): self
     {
@@ -524,7 +524,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setStatus(?string $status = null): self
     {
@@ -547,7 +547,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set workingUser value
      * @param int $workingUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setWorkingUser(?int $workingUser = null): self
     {
@@ -570,7 +570,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set workingTimestamp value
      * @param string $workingTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setWorkingTimestamp(?string $workingTimestamp = null): self
     {
@@ -593,7 +593,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -616,7 +616,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set bookingReference value
      * @param string $bookingReference
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setBookingReference(?string $bookingReference = null): self
     {
@@ -639,7 +639,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -662,7 +662,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set externalSystem value
      * @param string $externalSystem
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setExternalSystem(?string $externalSystem = null): self
     {
@@ -685,7 +685,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -708,7 +708,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -731,7 +731,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set invoiceCustomer value
      * @param string $invoiceCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setInvoiceCustomer(?string $invoiceCustomer = null): self
     {
@@ -754,7 +754,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set unitAlias value
      * @param string $unitAlias
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setUnitAlias(?string $unitAlias = null): self
     {
@@ -777,7 +777,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -800,7 +800,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set mediatorAffiliate value
      * @param string $mediatorAffiliate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setMediatorAffiliate(?string $mediatorAffiliate = null): self
     {
@@ -823,7 +823,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set isNew value
      * @param bool $isNew
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setIsNew(?bool $isNew = null): self
     {
@@ -846,7 +846,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -869,7 +869,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set debitor value
      * @param string $debitor
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setDebitor(?string $debitor = null): self
     {
@@ -892,7 +892,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set isSpecialCustomer value
      * @param bool $isSpecialCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setIsSpecialCustomer(?bool $isSpecialCustomer = null): self
     {
@@ -915,7 +915,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -938,7 +938,7 @@ class MidocoBookingInfoType extends AbstractStructBase
     /**
      * Set handlingType value
      * @param string $handlingType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBookingInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingInfoType
      */
     public function setHandlingType(?string $handlingType = null): self
     {

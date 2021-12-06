@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class VatDivisionTemplateDTO extends AbstractStructBase
     /**
      * Set active value
      * @param bool $active
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionTemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatDivisionTemplateDTO
      */
     public function setActive(?bool $active = null): self
     {
@@ -142,7 +142,7 @@ class VatDivisionTemplateDTO extends AbstractStructBase
     /**
      * Set changeable value
      * @param bool $changeable
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionTemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatDivisionTemplateDTO
      */
     public function setChangeable(?bool $changeable = null): self
     {
@@ -165,7 +165,7 @@ class VatDivisionTemplateDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionTemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatDivisionTemplateDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -188,7 +188,7 @@ class VatDivisionTemplateDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionTemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatDivisionTemplateDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -211,7 +211,7 @@ class VatDivisionTemplateDTO extends AbstractStructBase
     /**
      * Set forInvoicing value
      * @param bool $forInvoicing
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionTemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatDivisionTemplateDTO
      */
     public function setForInvoicing(?bool $forInvoicing = null): self
     {
@@ -234,7 +234,7 @@ class VatDivisionTemplateDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionTemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatDivisionTemplateDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -257,7 +257,7 @@ class VatDivisionTemplateDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionTemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatDivisionTemplateDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -280,7 +280,7 @@ class VatDivisionTemplateDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionTemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatDivisionTemplateDTO
      */
     public function setName(?string $name = null): self
     {
@@ -303,7 +303,7 @@ class VatDivisionTemplateDTO extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionTemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatDivisionTemplateDTO
      */
     public function setSettlementType(?string $settlementType = null): self
     {
@@ -326,7 +326,7 @@ class VatDivisionTemplateDTO extends AbstractStructBase
     /**
      * Set vatDivTemplId value
      * @param int $vatDivTemplId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionTemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatDivisionTemplateDTO
      */
     public function setVatDivTemplId(?int $vatDivTemplId = null): self
     {
@@ -349,7 +349,7 @@ class VatDivisionTemplateDTO extends AbstractStructBase
     /**
      * Set vatSchemaId value
      * @param int $vatSchemaId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionTemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\VatDivisionTemplateDTO
      */
     public function setVatSchemaId(?int $vatSchemaId = null): self
     {

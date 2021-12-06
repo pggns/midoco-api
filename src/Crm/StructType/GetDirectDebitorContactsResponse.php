@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class GetDirectDebitorContactsResponse extends AbstractStructBase
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The MidocoContactEntry
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoContactEntry
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType[]
      */
     protected ?array $MidocoContactEntry = null;
     /**
@@ -41,11 +41,11 @@ class GetDirectDebitorContactsResponse extends AbstractStructBase
      * @uses GetDirectDebitorContactsResponse::setMidocoCustomerId()
      * @uses GetDirectDebitorContactsResponse::setMidocoContactEntry()
      * @uses GetDirectDebitorContactsResponse::setNeedsSignature()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType[] $midocoContactEntry
      * @param bool $needsSignature
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?array $midocoContactEntry = null, ?bool $needsSignature = false)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?array $midocoContactEntry = null, ?bool $needsSignature = false)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -54,18 +54,18 @@ class GetDirectDebitorContactsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDirectDebitorContactsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDirectDebitorContactsResponse
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\Api\Crm\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -73,7 +73,7 @@ class GetDirectDebitorContactsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoContactEntry value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType[]
      */
     public function getMidocoContactEntry(): ?array
     {
@@ -94,12 +94,12 @@ class GetDirectDebitorContactsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDirectDebitorContactsResponseMidocoContactEntryItem) {
             // validation for constraint: itemType
-            if (!$getDirectDebitorContactsResponseMidocoContactEntryItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType) {
+            if (!$getDirectDebitorContactsResponseMidocoContactEntryItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType) {
                 $invalidValues[] = is_object($getDirectDebitorContactsResponseMidocoContactEntryItem) ? get_class($getDirectDebitorContactsResponseMidocoContactEntryItem) : sprintf('%s(%s)', gettype($getDirectDebitorContactsResponseMidocoContactEntryItem), var_export($getDirectDebitorContactsResponseMidocoContactEntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -108,8 +108,8 @@ class GetDirectDebitorContactsResponse extends AbstractStructBase
     /**
      * Set MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType[] $midocoContactEntry
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDirectDebitorContactsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDirectDebitorContactsResponse
      */
     public function setMidocoContactEntry(?array $midocoContactEntry = null): self
     {
@@ -124,14 +124,14 @@ class GetDirectDebitorContactsResponse extends AbstractStructBase
     /**
      * Add item to MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDirectDebitorContactsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDirectDebitorContactsResponse
      */
-    public function addToMidocoContactEntry(\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType $item): self
+    public function addToMidocoContactEntry(\Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactEntry[] = $item;
         
@@ -148,7 +148,7 @@ class GetDirectDebitorContactsResponse extends AbstractStructBase
     /**
      * Set needsSignature value
      * @param bool $needsSignature
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetDirectDebitorContactsResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\GetDirectDebitorContactsResponse
      */
     public function setNeedsSignature(?bool $needsSignature = false): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetSupplierCancelConditionRequest extends AbstractStructBase
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierCancelConditionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierCancelConditionRequest
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {
@@ -78,7 +78,7 @@ class GetSupplierCancelConditionRequest extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierCancelConditionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierCancelConditionRequest
      */
     public function setOrgunit(?string $orgunit = null): self
     {
@@ -101,7 +101,7 @@ class GetSupplierCancelConditionRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierCancelConditionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierCancelConditionRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {

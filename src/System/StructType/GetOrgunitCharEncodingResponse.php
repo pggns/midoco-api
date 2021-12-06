@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetOrgunitCharEncodingResponse extends AbstractStructBase
     /**
      * Set orgunitCharEncoding value
      * @param string $orgunitCharEncoding
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgunitCharEncodingResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgunitCharEncodingResponse
      */
     public function setOrgunitCharEncoding(?string $orgunitCharEncoding = null): self
     {

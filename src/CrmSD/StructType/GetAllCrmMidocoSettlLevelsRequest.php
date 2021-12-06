@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetAllCrmMidocoSettlLevelsRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAllCrmMidocoSettlLevelsRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllCrmMidocoSettlLevelsRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {

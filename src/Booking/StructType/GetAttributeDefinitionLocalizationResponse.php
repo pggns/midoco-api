@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetAttributeDefinitionLocalizationResponse extends AbstractStructBase
     /**
      * Set localization value
      * @param string $localization
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetAttributeDefinitionLocalizationResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\GetAttributeDefinitionLocalizationResponse
      */
     public function setLocalization(?string $localization = null): self
     {

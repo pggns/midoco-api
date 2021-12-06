@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -311,7 +311,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -334,7 +334,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set creatingUser value
      * @param int $creatingUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setCreatingUser(?int $creatingUser = null): self
     {
@@ -357,7 +357,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set dateOfIssue value
      * @param string $dateOfIssue
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setDateOfIssue(?string $dateOfIssue = null): self
     {
@@ -380,7 +380,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -403,7 +403,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -426,7 +426,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set exportFilename value
      * @param string $exportFilename
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setExportFilename(?string $exportFilename = null): self
     {
@@ -449,7 +449,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set exportTime value
      * @param string $exportTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setExportTime(?string $exportTime = null): self
     {
@@ -472,7 +472,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set finishedBy value
      * @param int $finishedBy
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setFinishedBy(?int $finishedBy = null): self
     {
@@ -495,7 +495,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set finishedTime value
      * @param string $finishedTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setFinishedTime(?string $finishedTime = null): self
     {
@@ -518,7 +518,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set frequency value
      * @param string $frequency
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setFrequency(?string $frequency = null): self
     {
@@ -541,7 +541,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set importSystem value
      * @param string $importSystem
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setImportSystem(?string $importSystem = null): self
     {
@@ -564,7 +564,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set importedCampaignId value
      * @param int $importedCampaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setImportedCampaignId(?int $importedCampaignId = null): self
     {
@@ -587,7 +587,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set isDeleted value
      * @param bool $isDeleted
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setIsDeleted(?bool $isDeleted = null): self
     {
@@ -610,7 +610,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set isExecuted value
      * @param bool $isExecuted
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setIsExecuted(?bool $isExecuted = null): self
     {
@@ -633,7 +633,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set isFinished value
      * @param bool $isFinished
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setIsFinished(?bool $isFinished = null): self
     {
@@ -656,7 +656,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set isImported value
      * @param bool $isImported
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setIsImported(?bool $isImported = null): self
     {
@@ -679,7 +679,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set isLite value
      * @param bool $isLite
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setIsLite(?bool $isLite = null): self
     {
@@ -702,7 +702,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set isReadonly value
      * @param bool $isReadonly
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setIsReadonly(?bool $isReadonly = null): self
     {
@@ -725,7 +725,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set isSupercampaign value
      * @param bool $isSupercampaign
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setIsSupercampaign(?bool $isSupercampaign = null): self
     {
@@ -748,7 +748,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set isTemplate value
      * @param bool $isTemplate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setIsTemplate(?bool $isTemplate = null): self
     {
@@ -771,7 +771,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set noOfCustomers value
      * @param int $noOfCustomers
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setNoOfCustomers(?int $noOfCustomers = null): self
     {
@@ -794,7 +794,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {
@@ -817,7 +817,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set onHold value
      * @param bool $onHold
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setOnHold(?bool $onHold = null): self
     {
@@ -840,7 +840,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -863,7 +863,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set orgunitslistInclude value
      * @param bool $orgunitslistInclude
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setOrgunitslistInclude(?bool $orgunitslistInclude = null): self
     {
@@ -886,7 +886,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set pageSize value
      * @param int $pageSize
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setPageSize(?int $pageSize = null): self
     {
@@ -909,7 +909,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set parentTemplateId value
      * @param int $parentTemplateId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setParentTemplateId(?int $parentTemplateId = null): self
     {
@@ -932,7 +932,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set parentTemplateOrgUnit value
      * @param string $parentTemplateOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setParentTemplateOrgUnit(?string $parentTemplateOrgUnit = null): self
     {
@@ -955,7 +955,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set rowMetadata value
      * @param string $rowMetadata
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setRowMetadata(?string $rowMetadata = null): self
     {
@@ -978,7 +978,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set startTime value
      * @param string $startTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setStartTime(?string $startTime = null): self
     {
@@ -1001,7 +1001,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setTemplateId(?int $templateId = null): self
     {
@@ -1024,7 +1024,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set templateOrgUnit value
      * @param string $templateOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setTemplateOrgUnit(?string $templateOrgUnit = null): self
     {
@@ -1047,7 +1047,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setType(?string $type = null): self
     {
@@ -1070,7 +1070,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set visibility value
      * @param int $visibility
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setVisibility(?int $visibility = null): self
     {
@@ -1093,7 +1093,7 @@ class MisCampaignDTO extends AbstractStructBase
     /**
      * Set waitingForExec value
      * @param bool $waitingForExec
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDTO
      */
     public function setWaitingForExec(?bool $waitingForExec = null): self
     {

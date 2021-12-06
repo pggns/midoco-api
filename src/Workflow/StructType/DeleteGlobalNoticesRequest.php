@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -59,7 +59,7 @@ class DeleteGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set noticeId value
      * @param int $noticeId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteGlobalNoticesRequest
      */
     public function setNoticeId(int $noticeId): self
     {
@@ -82,7 +82,7 @@ class DeleteGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteGlobalNoticesRequest
      */
     public function setPosition(int $position): self
     {
@@ -105,7 +105,7 @@ class DeleteGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteGlobalNoticesRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

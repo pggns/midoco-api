@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class DeleteSupplierAgencySettlementResponse extends AbstractStructBase
      * Set errorSettlementIds value
      * @throws InvalidArgumentException
      * @param int[] $errorSettlementIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSupplierAgencySettlementResponse
      */
     public function setErrorSettlementIds(?array $errorSettlementIds = null): self
     {
@@ -85,7 +85,7 @@ class DeleteSupplierAgencySettlementResponse extends AbstractStructBase
      * Add item to errorSettlementIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSupplierAgencySettlementResponse
      */
     public function addToErrorSettlementIds(int $item): self
     {

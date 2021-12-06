@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetMarketingKeysLocalizedForTypeRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeysLocalizedForTypeRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeysLocalizedForTypeRequest
      */
     public function setType(?string $type = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetOrgUnitsInSameDBForUserRequest extends AbstractStructBase
     /**
      * Set dbType value
      * @param string $dbType
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgUnitsInSameDBForUserRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgUnitsInSameDBForUserRequest
      */
     public function setDbType(?string $dbType = null): self
     {
@@ -72,7 +72,7 @@ class GetOrgUnitsInSameDBForUserRequest extends AbstractStructBase
     /**
      * Set checkOverwriteUnit value
      * @param bool $checkOverwriteUnit
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetOrgUnitsInSameDBForUserRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetOrgUnitsInSameDBForUserRequest
      */
     public function setCheckOverwriteUnit(?bool $checkOverwriteUnit = true): self
     {

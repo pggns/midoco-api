@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteBillingDocDbiInfosRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingDocDbiInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocDbiInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingDocDbiInfo[]
      */
     protected ?array $MidocoBillingDocDbiInfo = null;
     /**
@@ -53,7 +53,7 @@ class DeleteBillingDocDbiInfosRequest extends AbstractStructBase
      * @param int $documentId
      * @param int $itemId
      * @param int $passengerAssignment
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocDbiInfo[] $midocoBillingDocDbiInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocDbiInfo[] $midocoBillingDocDbiInfo
      */
     public function __construct(?string $dbiInfoType = null, ?int $documentId = null, ?int $itemId = null, ?int $passengerAssignment = null, ?array $midocoBillingDocDbiInfo = null)
     {
@@ -75,7 +75,7 @@ class DeleteBillingDocDbiInfosRequest extends AbstractStructBase
     /**
      * Set dbiInfoType value
      * @param string $dbiInfoType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocDbiInfosRequest
      */
     public function setDbiInfoType(?string $dbiInfoType = null): self
     {
@@ -98,7 +98,7 @@ class DeleteBillingDocDbiInfosRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocDbiInfosRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -121,7 +121,7 @@ class DeleteBillingDocDbiInfosRequest extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocDbiInfosRequest
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -144,7 +144,7 @@ class DeleteBillingDocDbiInfosRequest extends AbstractStructBase
     /**
      * Set passengerAssignment value
      * @param int $passengerAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocDbiInfosRequest
      */
     public function setPassengerAssignment(?int $passengerAssignment = null): self
     {
@@ -158,7 +158,7 @@ class DeleteBillingDocDbiInfosRequest extends AbstractStructBase
     }
     /**
      * Get MidocoBillingDocDbiInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocDbiInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocDbiInfo[]
      */
     public function getMidocoBillingDocDbiInfo(): ?array
     {
@@ -179,12 +179,12 @@ class DeleteBillingDocDbiInfosRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteBillingDocDbiInfosRequestMidocoBillingDocDbiInfoItem) {
             // validation for constraint: itemType
-            if (!$deleteBillingDocDbiInfosRequestMidocoBillingDocDbiInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocDbiInfo) {
+            if (!$deleteBillingDocDbiInfosRequestMidocoBillingDocDbiInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingDocDbiInfo) {
                 $invalidValues[] = is_object($deleteBillingDocDbiInfosRequestMidocoBillingDocDbiInfoItem) ? get_class($deleteBillingDocDbiInfosRequestMidocoBillingDocDbiInfoItem) : sprintf('%s(%s)', gettype($deleteBillingDocDbiInfosRequestMidocoBillingDocDbiInfoItem), var_export($deleteBillingDocDbiInfosRequestMidocoBillingDocDbiInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingDocDbiInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocDbiInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingDocDbiInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingDocDbiInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -193,8 +193,8 @@ class DeleteBillingDocDbiInfosRequest extends AbstractStructBase
     /**
      * Set MidocoBillingDocDbiInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocDbiInfo[] $midocoBillingDocDbiInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocDbiInfosRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocDbiInfo[] $midocoBillingDocDbiInfo
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocDbiInfosRequest
      */
     public function setMidocoBillingDocDbiInfo(?array $midocoBillingDocDbiInfo = null): self
     {
@@ -209,14 +209,14 @@ class DeleteBillingDocDbiInfosRequest extends AbstractStructBase
     /**
      * Add item to MidocoBillingDocDbiInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocDbiInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocDbiInfosRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDocDbiInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocDbiInfosRequest
      */
-    public function addToMidocoBillingDocDbiInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocDbiInfo $item): self
+    public function addToMidocoBillingDocDbiInfo(\Pggns\MidocoApi\Order\StructType\MidocoBillingDocDbiInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocDbiInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingDocDbiInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDocDbiInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingDocDbiInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingDocDbiInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingDocDbiInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingDocDbiInfo[] = $item;
         

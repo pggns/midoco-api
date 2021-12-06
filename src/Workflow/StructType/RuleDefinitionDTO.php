@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -191,7 +191,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set active value
      * @param bool $active
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setActive(?bool $active = null): self
     {
@@ -214,7 +214,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set activeFrom value
      * @param string $activeFrom
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setActiveFrom(?string $activeFrom = null): self
     {
@@ -237,7 +237,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set activeTo value
      * @param string $activeTo
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setActiveTo(?string $activeTo = null): self
     {
@@ -260,7 +260,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set assignedQueue value
      * @param string $assignedQueue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setAssignedQueue(?string $assignedQueue = null): self
     {
@@ -283,7 +283,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -306,7 +306,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -329,7 +329,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set daysToLive value
      * @param int $daysToLive
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setDaysToLive(?int $daysToLive = null): self
     {
@@ -352,7 +352,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set definitionId value
      * @param int $definitionId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setDefinitionId(?int $definitionId = null): self
     {
@@ -375,7 +375,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set dueDateAttribute value
      * @param string $dueDateAttribute
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setDueDateAttribute(?string $dueDateAttribute = null): self
     {
@@ -398,7 +398,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set dueDateDays value
      * @param int $dueDateDays
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setDueDateDays(?int $dueDateDays = null): self
     {
@@ -421,7 +421,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set dueDateType value
      * @param int $dueDateType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setDueDateType(?int $dueDateType = null): self
     {
@@ -444,7 +444,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -467,7 +467,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -490,7 +490,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setOrgunit(?string $orgunit = null): self
     {
@@ -513,7 +513,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set orgunitFor value
      * @param string $orgunitFor
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setOrgunitFor(?string $orgunitFor = null): self
     {
@@ -536,7 +536,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set role value
      * @param int $role
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setRole(?int $role = null): self
     {
@@ -559,7 +559,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set taskCreationDays value
      * @param int $taskCreationDays
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setTaskCreationDays(?int $taskCreationDays = null): self
     {
@@ -582,7 +582,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set taskDefinitionType value
      * @param string $taskDefinitionType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setTaskDefinitionType(?string $taskDefinitionType = null): self
     {
@@ -605,7 +605,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set taskText value
      * @param string $taskText
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setTaskText(?string $taskText = null): self
     {
@@ -628,7 +628,7 @@ class RuleDefinitionDTO extends AbstractStructBase
     /**
      * Set taskType value
      * @param int $taskType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleDefinitionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleDefinitionDTO
      */
     public function setTaskType(?int $taskType = null): self
     {

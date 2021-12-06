@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -254,9 +254,9 @@ class RailServiceType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: ccInformation
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\CcInformation|null
+     * @var \Pggns\MidocoApi\Booking\StructType\CcInformation|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\CcInformation $ccInformation = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\CcInformation $ccInformation = null;
     /**
      * Constructor method for railServiceType
      * @uses RailServiceType::setPosition()
@@ -330,9 +330,9 @@ class RailServiceType extends AbstractStructBase
      * @param string $lastCancelDate
      * @param int $noOfChildren
      * @param string $ticketCategory
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CcInformation $ccInformation
+     * @param \Pggns\MidocoApi\Booking\StructType\CcInformation $ccInformation
      */
-    public function __construct(int $position, ?string $serviceCode = null, ?string $serviceName = null, ?string $serviceDescription = null, ?string $departureDate = null, ?string $departureTime = null, ?string $departureCode = null, ?string $departureDesc = null, ?string $departurePlatform = null, ?string $arrivalDate = null, ?string $arrivalTime = null, ?string $arrivalCode = null, ?string $arrivalDesc = null, ?string $arrivalPlatform = null, ?string $bookingClass = null, ?string $tariffCode = null, ?string $tariffDesc = null, ?string $trainNo = null, ?string $trainType = null, ?string $waggon = null, ?string $partition = null, ?string $seat = null, ?string $documentNo = null, ?string $serviceStatus = null, ?string $personAssignment = null, ?float $servicePrice = null, ?string $currency = 'EUR', ?bool $vatIncluded = false, ?int $paxPerService = null, ?string $reductionCode = null, ?string $reductionDesc = null, ?string $validFrom = null, ?string $lastCancelDate = null, ?int $noOfChildren = null, ?string $ticketCategory = null, ?\Pggns\MidocoApi\Api\Booking\StructType\CcInformation $ccInformation = null)
+    public function __construct(int $position, ?string $serviceCode = null, ?string $serviceName = null, ?string $serviceDescription = null, ?string $departureDate = null, ?string $departureTime = null, ?string $departureCode = null, ?string $departureDesc = null, ?string $departurePlatform = null, ?string $arrivalDate = null, ?string $arrivalTime = null, ?string $arrivalCode = null, ?string $arrivalDesc = null, ?string $arrivalPlatform = null, ?string $bookingClass = null, ?string $tariffCode = null, ?string $tariffDesc = null, ?string $trainNo = null, ?string $trainType = null, ?string $waggon = null, ?string $partition = null, ?string $seat = null, ?string $documentNo = null, ?string $serviceStatus = null, ?string $personAssignment = null, ?float $servicePrice = null, ?string $currency = 'EUR', ?bool $vatIncluded = false, ?int $paxPerService = null, ?string $reductionCode = null, ?string $reductionDesc = null, ?string $validFrom = null, ?string $lastCancelDate = null, ?int $noOfChildren = null, ?string $ticketCategory = null, ?\Pggns\MidocoApi\Booking\StructType\CcInformation $ccInformation = null)
     {
         $this
             ->setPosition($position)
@@ -383,7 +383,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setPosition(int $position): self
     {
@@ -406,7 +406,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set serviceCode value
      * @param string $serviceCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setServiceCode(?string $serviceCode = null): self
     {
@@ -429,7 +429,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set serviceName value
      * @param string $serviceName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setServiceName(?string $serviceName = null): self
     {
@@ -452,7 +452,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set serviceDescription value
      * @param string $serviceDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setServiceDescription(?string $serviceDescription = null): self
     {
@@ -475,7 +475,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set departureDate value
      * @param string $departureDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setDepartureDate(?string $departureDate = null): self
     {
@@ -502,7 +502,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set departureTime value
      * @param string $departureTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setDepartureTime(?string $departureTime = null): self
     {
@@ -529,7 +529,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -556,7 +556,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set departureDesc value
      * @param string $departureDesc
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setDepartureDesc(?string $departureDesc = null): self
     {
@@ -583,7 +583,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set departurePlatform value
      * @param string $departurePlatform
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setDeparturePlatform(?string $departurePlatform = null): self
     {
@@ -606,7 +606,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set arrivalDate value
      * @param string $arrivalDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setArrivalDate(?string $arrivalDate = null): self
     {
@@ -633,7 +633,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set arrivalTime value
      * @param string $arrivalTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setArrivalTime(?string $arrivalTime = null): self
     {
@@ -660,7 +660,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set arrivalCode value
      * @param string $arrivalCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setArrivalCode(?string $arrivalCode = null): self
     {
@@ -687,7 +687,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set arrivalDesc value
      * @param string $arrivalDesc
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setArrivalDesc(?string $arrivalDesc = null): self
     {
@@ -714,7 +714,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set arrivalPlatform value
      * @param string $arrivalPlatform
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setArrivalPlatform(?string $arrivalPlatform = null): self
     {
@@ -737,7 +737,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set bookingClass value
      * @param string $bookingClass
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setBookingClass(?string $bookingClass = null): self
     {
@@ -760,7 +760,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set tariffCode value
      * @param string $tariffCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setTariffCode(?string $tariffCode = null): self
     {
@@ -783,7 +783,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set tariffDesc value
      * @param string $tariffDesc
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setTariffDesc(?string $tariffDesc = null): self
     {
@@ -806,7 +806,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set trainNo value
      * @param string $trainNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setTrainNo(?string $trainNo = null): self
     {
@@ -829,7 +829,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set trainType value
      * @param string $trainType
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setTrainType(?string $trainType = null): self
     {
@@ -852,7 +852,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set waggon value
      * @param string $waggon
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setWaggon(?string $waggon = null): self
     {
@@ -875,7 +875,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set partition value
      * @param string $partition
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setPartition(?string $partition = null): self
     {
@@ -898,7 +898,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set seat value
      * @param string $seat
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setSeat(?string $seat = null): self
     {
@@ -921,7 +921,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set documentNo value
      * @param string $documentNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setDocumentNo(?string $documentNo = null): self
     {
@@ -944,7 +944,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {
@@ -967,7 +967,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {
@@ -990,7 +990,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set servicePrice value
      * @param float $servicePrice
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setServicePrice(?float $servicePrice = null): self
     {
@@ -1013,7 +1013,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setCurrency(?string $currency = 'EUR'): self
     {
@@ -1036,7 +1036,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set vatIncluded value
      * @param bool $vatIncluded
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setVatIncluded(?bool $vatIncluded = false): self
     {
@@ -1059,7 +1059,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set paxPerService value
      * @param int $paxPerService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setPaxPerService(?int $paxPerService = null): self
     {
@@ -1082,7 +1082,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set reductionCode value
      * @param string $reductionCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setReductionCode(?string $reductionCode = null): self
     {
@@ -1105,7 +1105,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set reductionDesc value
      * @param string $reductionDesc
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setReductionDesc(?string $reductionDesc = null): self
     {
@@ -1128,7 +1128,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -1155,7 +1155,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set lastCancelDate value
      * @param string $lastCancelDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setLastCancelDate(?string $lastCancelDate = null): self
     {
@@ -1182,7 +1182,7 @@ class RailServiceType extends AbstractStructBase
     /**
      * Set noOfChildren value
      * @param int $noOfChildren
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setNoOfChildren(?int $noOfChildren = null): self
     {
@@ -1204,17 +1204,17 @@ class RailServiceType extends AbstractStructBase
     }
     /**
      * Set ticketCategory value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\TicketCategory::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\TicketCategory::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\TicketCategory::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\TicketCategory::getValidValues()
      * @throws InvalidArgumentException
      * @param string $ticketCategory
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
     public function setTicketCategory(?string $ticketCategory = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\TicketCategory::valueIsValid($ticketCategory)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\TicketCategory', is_array($ticketCategory) ? implode(', ', $ticketCategory) : var_export($ticketCategory, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\TicketCategory::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\TicketCategory::valueIsValid($ticketCategory)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\TicketCategory', is_array($ticketCategory) ? implode(', ', $ticketCategory) : var_export($ticketCategory, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\TicketCategory::getValidValues())), __LINE__);
         }
         $this->ticketCategory = $ticketCategory;
         
@@ -1222,18 +1222,18 @@ class RailServiceType extends AbstractStructBase
     }
     /**
      * Get ccInformation value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CcInformation|null
+     * @return \Pggns\MidocoApi\Booking\StructType\CcInformation|null
      */
-    public function getCcInformation(): ?\Pggns\MidocoApi\Api\Booking\StructType\CcInformation
+    public function getCcInformation(): ?\Pggns\MidocoApi\Booking\StructType\CcInformation
     {
         return $this->ccInformation;
     }
     /**
      * Set ccInformation value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CcInformation $ccInformation
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType
+     * @param \Pggns\MidocoApi\Booking\StructType\CcInformation $ccInformation
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
      */
-    public function setCcInformation(?\Pggns\MidocoApi\Api\Booking\StructType\CcInformation $ccInformation = null): self
+    public function setCcInformation(?\Pggns\MidocoApi\Booking\StructType\CcInformation $ccInformation = null): self
     {
         $this->ccInformation = $ccInformation;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchMdcSettlementChargesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMdcSettlementCharge
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO[]
      */
     protected ?array $MidocoMdcSettlementCharge = null;
     /**
      * Constructor method for SearchMdcSettlementChargesResponse
      * @uses SearchMdcSettlementChargesResponse::setMidocoMdcSettlementCharge()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO[] $midocoMdcSettlementCharge
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO[] $midocoMdcSettlementCharge
      */
     public function __construct(?array $midocoMdcSettlementCharge = null)
     {
@@ -34,7 +34,7 @@ class SearchMdcSettlementChargesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMdcSettlementCharge value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO[]
      */
     public function getMidocoMdcSettlementCharge(): ?array
     {
@@ -55,12 +55,12 @@ class SearchMdcSettlementChargesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchMdcSettlementChargesResponseMidocoMdcSettlementChargeItem) {
             // validation for constraint: itemType
-            if (!$searchMdcSettlementChargesResponseMidocoMdcSettlementChargeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO) {
+            if (!$searchMdcSettlementChargesResponseMidocoMdcSettlementChargeItem instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO) {
                 $invalidValues[] = is_object($searchMdcSettlementChargesResponseMidocoMdcSettlementChargeItem) ? get_class($searchMdcSettlementChargesResponseMidocoMdcSettlementChargeItem) : sprintf('%s(%s)', gettype($searchMdcSettlementChargesResponseMidocoMdcSettlementChargeItem), var_export($searchMdcSettlementChargesResponseMidocoMdcSettlementChargeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMdcSettlementCharge property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMdcSettlementCharge property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchMdcSettlementChargesResponse extends AbstractStructBase
     /**
      * Set MidocoMdcSettlementCharge value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO[] $midocoMdcSettlementCharge
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMdcSettlementChargesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO[] $midocoMdcSettlementCharge
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMdcSettlementChargesResponse
      */
     public function setMidocoMdcSettlementCharge(?array $midocoMdcSettlementCharge = null): self
     {
@@ -85,14 +85,14 @@ class SearchMdcSettlementChargesResponse extends AbstractStructBase
     /**
      * Add item to MidocoMdcSettlementCharge value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMdcSettlementChargesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMdcSettlementChargesResponse
      */
-    public function addToMidocoMdcSettlementCharge(\Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO $item): self
+    public function addToMidocoMdcSettlementCharge(\Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementCharge property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MdcSettlementChargeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMdcSettlementCharge property can only contain items of type \Pggns\MidocoApi\Order\StructType\MdcSettlementChargeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMdcSettlementCharge[] = $item;
         

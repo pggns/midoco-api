@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class UpdateFlightTimeChangeEmailResponse extends AbstractStructBase
     /**
      * Set emailId value
      * @param int $emailId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateFlightTimeChangeEmailResponse
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateFlightTimeChangeEmailResponse
      */
     public function setEmailId(?int $emailId = null): self
     {

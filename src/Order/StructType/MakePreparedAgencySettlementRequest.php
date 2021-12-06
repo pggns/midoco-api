@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class MakePreparedAgencySettlementRequest extends AbstractStructBase
      * The MakeBillingDocumentForAgencySettlementRequest
      * Meta information extracted from the WSDL
      * - ref: MakeBillingDocumentForAgencySettlementRequest
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementRequest|null
+     * @var \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementRequest|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementRequest $MakeBillingDocumentForAgencySettlementRequest = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementRequest $MakeBillingDocumentForAgencySettlementRequest = null;
     /**
      * Constructor method for MakePreparedAgencySettlementRequest
      * @uses MakePreparedAgencySettlementRequest::setMakeBillingDocumentForAgencySettlementRequest()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementRequest $makeBillingDocumentForAgencySettlementRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementRequest $makeBillingDocumentForAgencySettlementRequest
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementRequest $makeBillingDocumentForAgencySettlementRequest = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementRequest $makeBillingDocumentForAgencySettlementRequest = null)
     {
         $this
             ->setMakeBillingDocumentForAgencySettlementRequest($makeBillingDocumentForAgencySettlementRequest);
     }
     /**
      * Get MakeBillingDocumentForAgencySettlementRequest value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementRequest|null
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementRequest|null
      */
-    public function getMakeBillingDocumentForAgencySettlementRequest(): ?\Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementRequest
+    public function getMakeBillingDocumentForAgencySettlementRequest(): ?\Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementRequest
     {
         return $this->MakeBillingDocumentForAgencySettlementRequest;
     }
     /**
      * Set MakeBillingDocumentForAgencySettlementRequest value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementRequest $makeBillingDocumentForAgencySettlementRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakePreparedAgencySettlementRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementRequest $makeBillingDocumentForAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakePreparedAgencySettlementRequest
      */
-    public function setMakeBillingDocumentForAgencySettlementRequest(?\Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForAgencySettlementRequest $makeBillingDocumentForAgencySettlementRequest = null): self
+    public function setMakeBillingDocumentForAgencySettlementRequest(?\Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForAgencySettlementRequest $makeBillingDocumentForAgencySettlementRequest = null): self
     {
         $this->MakeBillingDocumentForAgencySettlementRequest = $makeBillingDocumentForAgencySettlementRequest;
         

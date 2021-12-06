@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -72,7 +72,7 @@ class ExportAgencySettlementDataRequest extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportAgencySettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportAgencySettlementDataRequest
      */
     public function setDate(?string $date = null): self
     {
@@ -99,7 +99,7 @@ class ExportAgencySettlementDataRequest extends AbstractStructBase
     /**
      * Set tourOperator value
      * @param string $tourOperator
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportAgencySettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportAgencySettlementDataRequest
      */
     public function setTourOperator(?string $tourOperator = null): self
     {
@@ -122,7 +122,7 @@ class ExportAgencySettlementDataRequest extends AbstractStructBase
     /**
      * Set exportSubOrgUnits value
      * @param bool $exportSubOrgUnits
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportAgencySettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportAgencySettlementDataRequest
      */
     public function setExportSubOrgUnits(?bool $exportSubOrgUnits = false): self
     {
@@ -145,7 +145,7 @@ class ExportAgencySettlementDataRequest extends AbstractStructBase
     /**
      * Set noOfMonths value
      * @param int $noOfMonths
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportAgencySettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportAgencySettlementDataRequest
      */
     public function setNoOfMonths(?int $noOfMonths = 3): self
     {

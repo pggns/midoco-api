@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class CcTokenDTO extends AbstractStructBase
     /**
      * Set ccOwner value
      * @param string $ccOwner
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenDTO
      */
     public function setCcOwner(?string $ccOwner = null): self
     {
@@ -134,7 +134,7 @@ class CcTokenDTO extends AbstractStructBase
     /**
      * Set ccToken value
      * @param string $ccToken
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenDTO
      */
     public function setCcToken(?string $ccToken = null): self
     {
@@ -157,7 +157,7 @@ class CcTokenDTO extends AbstractStructBase
     /**
      * Set ccTokenSkills value
      * @param int $ccTokenSkills
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenDTO
      */
     public function setCcTokenSkills(?int $ccTokenSkills = null): self
     {
@@ -180,7 +180,7 @@ class CcTokenDTO extends AbstractStructBase
     /**
      * Set ccTokenType value
      * @param string $ccTokenType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenDTO
      */
     public function setCcTokenType(?string $ccTokenType = null): self
     {
@@ -203,7 +203,7 @@ class CcTokenDTO extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenDTO
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -226,7 +226,7 @@ class CcTokenDTO extends AbstractStructBase
     /**
      * Set ccValidMonth value
      * @param int $ccValidMonth
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenDTO
      */
     public function setCcValidMonth(?int $ccValidMonth = null): self
     {
@@ -249,7 +249,7 @@ class CcTokenDTO extends AbstractStructBase
     /**
      * Set ccValidYear value
      * @param int $ccValidYear
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenDTO
      */
     public function setCcValidYear(?int $ccValidYear = null): self
     {
@@ -272,7 +272,7 @@ class CcTokenDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -295,7 +295,7 @@ class CcTokenDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenDTO
      */
     public function setId(?int $id = null): self
     {
@@ -318,7 +318,7 @@ class CcTokenDTO extends AbstractStructBase
     /**
      * Set isRecurring value
      * @param bool $isRecurring
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenDTO
      */
     public function setIsRecurring(?bool $isRecurring = null): self
     {

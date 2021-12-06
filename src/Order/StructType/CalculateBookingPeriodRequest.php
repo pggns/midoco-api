@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CalculateBookingPeriodRequest extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateBookingPeriodRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateBookingPeriodRequest
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {

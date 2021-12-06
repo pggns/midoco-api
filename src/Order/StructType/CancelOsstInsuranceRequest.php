@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class CancelOsstInsuranceRequest extends AbstractStructBase
     /**
      * Set osstInsuranceId value
      * @param int $osstInsuranceId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CancelOsstInsuranceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CancelOsstInsuranceRequest
      */
     public function setOsstInsuranceId(?int $osstInsuranceId = null): self
     {
@@ -70,7 +70,7 @@ class CancelOsstInsuranceRequest extends AbstractStructBase
     /**
      * Set reason value
      * @param string $reason
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CancelOsstInsuranceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CancelOsstInsuranceRequest
      */
     public function setReason(?string $reason = null): self
     {

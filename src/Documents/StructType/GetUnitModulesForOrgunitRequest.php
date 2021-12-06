@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetUnitModulesForOrgunitRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - ref: MidocoUnitModule
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoUnitModule|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoUnitModule|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoUnitModule $MidocoUnitModule = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoUnitModule $MidocoUnitModule = null;
     /**
      * Constructor method for GetUnitModulesForOrgunitRequest
      * @uses GetUnitModulesForOrgunitRequest::setMidocoUnitModule()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoUnitModule $midocoUnitModule
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoUnitModule $midocoUnitModule
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoUnitModule $midocoUnitModule = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoUnitModule $midocoUnitModule = null)
     {
         $this
             ->setMidocoUnitModule($midocoUnitModule);
     }
     /**
      * Get MidocoUnitModule value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoUnitModule|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoUnitModule|null
      */
-    public function getMidocoUnitModule(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoUnitModule
+    public function getMidocoUnitModule(): ?\Pggns\MidocoApi\Documents\StructType\MidocoUnitModule
     {
         return $this->MidocoUnitModule;
     }
     /**
      * Set MidocoUnitModule value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoUnitModule $midocoUnitModule
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetUnitModulesForOrgunitRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoUnitModule $midocoUnitModule
+     * @return \Pggns\MidocoApi\Documents\StructType\GetUnitModulesForOrgunitRequest
      */
-    public function setMidocoUnitModule(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoUnitModule $midocoUnitModule = null): self
+    public function setMidocoUnitModule(?\Pggns\MidocoApi\Documents\StructType\MidocoUnitModule $midocoUnitModule = null): self
     {
         $this->MidocoUnitModule = $midocoUnitModule;
         

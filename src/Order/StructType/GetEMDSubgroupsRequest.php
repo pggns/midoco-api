@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetEMDSubgroupsRequest extends AbstractStructBase
     /**
      * Set emdType value
      * @param string $emdType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEMDSubgroupsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEMDSubgroupsRequest
      */
     public function setEmdType(string $emdType): self
     {

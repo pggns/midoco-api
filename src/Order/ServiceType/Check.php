@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Check extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Check
+     * @return \Pggns\MidocoApi\Order\ServiceType\Check
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CheckAccess_TravelDataForCustomerRequest $paramCheckAccess_TravelDataForCustomerRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckAccess_TravelDataForCustomerResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CheckAccess_TravelDataForCustomerRequest $paramCheckAccess_TravelDataForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckAccess_TravelDataForCustomerResponse|bool
      */
-    public function checkAccessTravelDataForCustomer(\Pggns\MidocoApi\Api\Order\StructType\CheckAccess_TravelDataForCustomerRequest $paramCheckAccess_TravelDataForCustomerRequest)
+    public function checkAccessTravelDataForCustomer(\Pggns\MidocoApi\Order\StructType\CheckAccess_TravelDataForCustomerRequest $paramCheckAccess_TravelDataForCustomerRequest)
     {
         try {
             $this->setResult($resultCheckAccessTravelDataForCustomer = $this->getSoapClient()->__soapCall('checkAccessTravelDataForCustomer', [
@@ -58,15 +58,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CheckIfPaidBillingDocRequest $paramCheckIfPaidBillingDocRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckIfPaidBillingDocResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CheckIfPaidBillingDocRequest $paramCheckIfPaidBillingDocRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckIfPaidBillingDocResponse|bool
      */
-    public function checkIfPaidBillingDoc(\Pggns\MidocoApi\Api\Order\StructType\CheckIfPaidBillingDocRequest $paramCheckIfPaidBillingDocRequest)
+    public function checkIfPaidBillingDoc(\Pggns\MidocoApi\Order\StructType\CheckIfPaidBillingDocRequest $paramCheckIfPaidBillingDocRequest)
     {
         try {
             $this->setResult($resultCheckIfPaidBillingDoc = $this->getSoapClient()->__soapCall('checkIfPaidBillingDoc', [
@@ -85,15 +85,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CheckIfPaidOrderRequest $paramCheckIfPaidOrderRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckIfPaidOrderResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CheckIfPaidOrderRequest $paramCheckIfPaidOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckIfPaidOrderResponse|bool
      */
-    public function checkIfPaidOrder(\Pggns\MidocoApi\Api\Order\StructType\CheckIfPaidOrderRequest $paramCheckIfPaidOrderRequest)
+    public function checkIfPaidOrder(\Pggns\MidocoApi\Order\StructType\CheckIfPaidOrderRequest $paramCheckIfPaidOrderRequest)
     {
         try {
             $this->setResult($resultCheckIfPaidOrder = $this->getSoapClient()->__soapCall('checkIfPaidOrder', [
@@ -113,15 +113,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementBookingRequest $paramCheckSupplierAgencySettlementBookingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementBookingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementBookingRequest $paramCheckSupplierAgencySettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementBookingResponse|bool
      */
-    public function checkSupplierAgencySettlementBooking(\Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementBookingRequest $paramCheckSupplierAgencySettlementBookingRequest)
+    public function checkSupplierAgencySettlementBooking(\Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementBookingRequest $paramCheckSupplierAgencySettlementBookingRequest)
     {
         try {
             $this->setResult($resultCheckSupplierAgencySettlementBooking = $this->getSoapClient()->__soapCall('checkSupplierAgencySettlementBooking', [
@@ -140,15 +140,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CheckCreditLimitRequest $paramCheckCreditLimitRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckCreditLimitResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CheckCreditLimitRequest $paramCheckCreditLimitRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckCreditLimitResponse|bool
      */
-    public function checkCreditLimit(\Pggns\MidocoApi\Api\Order\StructType\CheckCreditLimitRequest $paramCheckCreditLimitRequest)
+    public function checkCreditLimit(\Pggns\MidocoApi\Order\StructType\CheckCreditLimitRequest $paramCheckCreditLimitRequest)
     {
         try {
             $this->setResult($resultCheckCreditLimit = $this->getSoapClient()->__soapCall('checkCreditLimit', [
@@ -167,15 +167,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CheckCreditLimitByOrderRequest $paramCheckCreditLimitByOrderRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckCreditLimitByOrderResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CheckCreditLimitByOrderRequest $paramCheckCreditLimitByOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckCreditLimitByOrderResponse|bool
      */
-    public function checkCreditLimitByOrder(\Pggns\MidocoApi\Api\Order\StructType\CheckCreditLimitByOrderRequest $paramCheckCreditLimitByOrderRequest)
+    public function checkCreditLimitByOrder(\Pggns\MidocoApi\Order\StructType\CheckCreditLimitByOrderRequest $paramCheckCreditLimitByOrderRequest)
     {
         try {
             $this->setResult($resultCheckCreditLimitByOrder = $this->getSoapClient()->__soapCall('checkCreditLimitByOrder', [
@@ -194,15 +194,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CheckLockedUserByMailRequest $paramCheckLockedUserByMailRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckLockedUserByMailResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CheckLockedUserByMailRequest $paramCheckLockedUserByMailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckLockedUserByMailResponse|bool
      */
-    public function checkLockedUserByMail(\Pggns\MidocoApi\Api\Order\StructType\CheckLockedUserByMailRequest $paramCheckLockedUserByMailRequest)
+    public function checkLockedUserByMail(\Pggns\MidocoApi\Order\StructType\CheckLockedUserByMailRequest $paramCheckLockedUserByMailRequest)
     {
         try {
             $this->setResult($resultCheckLockedUserByMail = $this->getSoapClient()->__soapCall('checkLockedUserByMail', [
@@ -222,15 +222,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CheckIfMultipleMdcSettlementBillingRequest $paramCheckIfMultipleMdcSettlementBillingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckIfMultipleMdcSettlementBillingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CheckIfMultipleMdcSettlementBillingRequest $paramCheckIfMultipleMdcSettlementBillingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckIfMultipleMdcSettlementBillingResponse|bool
      */
-    public function checkIfMultipleMdcSettlementBilling(\Pggns\MidocoApi\Api\Order\StructType\CheckIfMultipleMdcSettlementBillingRequest $paramCheckIfMultipleMdcSettlementBillingRequest)
+    public function checkIfMultipleMdcSettlementBilling(\Pggns\MidocoApi\Order\StructType\CheckIfMultipleMdcSettlementBillingRequest $paramCheckIfMultipleMdcSettlementBillingRequest)
     {
         try {
             $this->setResult($resultCheckIfMultipleMdcSettlementBilling = $this->getSoapClient()->__soapCall('checkIfMultipleMdcSettlementBilling', [
@@ -249,15 +249,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CheckAgencySettlementLevelRequest $paramCheckAgencySettlementLevelRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckAgencySettlementLevelResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CheckAgencySettlementLevelRequest $paramCheckAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckAgencySettlementLevelResponse|bool
      */
-    public function checkExistingAgencySettlementLevel(\Pggns\MidocoApi\Api\Order\StructType\CheckAgencySettlementLevelRequest $paramCheckAgencySettlementLevelRequest)
+    public function checkExistingAgencySettlementLevel(\Pggns\MidocoApi\Order\StructType\CheckAgencySettlementLevelRequest $paramCheckAgencySettlementLevelRequest)
     {
         try {
             $this->setResult($resultCheckExistingAgencySettlementLevel = $this->getSoapClient()->__soapCall('checkExistingAgencySettlementLevel', [
@@ -277,15 +277,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CheckPaymentProviderSettlementBookingRequest $paramCheckPaymentProviderSettlementBookingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckPaymentProviderSettlementBookingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CheckPaymentProviderSettlementBookingRequest $paramCheckPaymentProviderSettlementBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckPaymentProviderSettlementBookingResponse|bool
      */
-    public function checkPaymentProviderSettlementBooking(\Pggns\MidocoApi\Api\Order\StructType\CheckPaymentProviderSettlementBookingRequest $paramCheckPaymentProviderSettlementBookingRequest)
+    public function checkPaymentProviderSettlementBooking(\Pggns\MidocoApi\Order\StructType\CheckPaymentProviderSettlementBookingRequest $paramCheckPaymentProviderSettlementBookingRequest)
     {
         try {
             $this->setResult($resultCheckPaymentProviderSettlementBooking = $this->getSoapClient()->__soapCall('checkPaymentProviderSettlementBooking', [
@@ -304,15 +304,15 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementRequest $paramCheckSupplierAgencySettlementRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementRequest $paramCheckSupplierAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementResponse|bool
      */
-    public function checkSupplierAgencySettlement(\Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementRequest $paramCheckSupplierAgencySettlementRequest)
+    public function checkSupplierAgencySettlement(\Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementRequest $paramCheckSupplierAgencySettlementRequest)
     {
         try {
             $this->setResult($resultCheckSupplierAgencySettlement = $this->getSoapClient()->__soapCall('checkSupplierAgencySettlement', [
@@ -329,7 +329,7 @@ class Check extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckAccess_TravelDataForCustomerResponse|\Pggns\MidocoApi\Api\Order\StructType\CheckAgencySettlementLevelResponse|\Pggns\MidocoApi\Api\Order\StructType\CheckCreditLimitByOrderResponse|\Pggns\MidocoApi\Api\Order\StructType\CheckCreditLimitResponse|\Pggns\MidocoApi\Api\Order\StructType\CheckIfMultipleMdcSettlementBillingResponse|\Pggns\MidocoApi\Api\Order\StructType\CheckIfPaidBillingDocResponse|\Pggns\MidocoApi\Api\Order\StructType\CheckIfPaidOrderResponse|\Pggns\MidocoApi\Api\Order\StructType\CheckLockedUserByMailResponse|\Pggns\MidocoApi\Api\Order\StructType\CheckPaymentProviderSettlementBookingResponse|\Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementBookingResponse|\Pggns\MidocoApi\Api\Order\StructType\CheckSupplierAgencySettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckAccess_TravelDataForCustomerResponse|\Pggns\MidocoApi\Order\StructType\CheckAgencySettlementLevelResponse|\Pggns\MidocoApi\Order\StructType\CheckCreditLimitByOrderResponse|\Pggns\MidocoApi\Order\StructType\CheckCreditLimitResponse|\Pggns\MidocoApi\Order\StructType\CheckIfMultipleMdcSettlementBillingResponse|\Pggns\MidocoApi\Order\StructType\CheckIfPaidBillingDocResponse|\Pggns\MidocoApi\Order\StructType\CheckIfPaidOrderResponse|\Pggns\MidocoApi\Order\StructType\CheckLockedUserByMailResponse|\Pggns\MidocoApi\Order\StructType\CheckPaymentProviderSettlementBookingResponse|\Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementBookingResponse|\Pggns\MidocoApi\Order\StructType\CheckSupplierAgencySettlementResponse
      */
     public function getResult()
     {

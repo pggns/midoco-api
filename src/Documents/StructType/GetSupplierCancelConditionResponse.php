@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSupplierCancelConditionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierCancelCondition
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition[]
      */
     protected ?array $MidocoSupplierCancelCondition = null;
     /**
      * Constructor method for GetSupplierCancelConditionResponse
      * @uses GetSupplierCancelConditionResponse::setMidocoSupplierCancelCondition()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition[] $midocoSupplierCancelCondition
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition[] $midocoSupplierCancelCondition
      */
     public function __construct(?array $midocoSupplierCancelCondition = null)
     {
@@ -34,7 +34,7 @@ class GetSupplierCancelConditionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierCancelCondition value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition[]
      */
     public function getMidocoSupplierCancelCondition(): ?array
     {
@@ -55,12 +55,12 @@ class GetSupplierCancelConditionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSupplierCancelConditionResponseMidocoSupplierCancelConditionItem) {
             // validation for constraint: itemType
-            if (!$getSupplierCancelConditionResponseMidocoSupplierCancelConditionItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition) {
+            if (!$getSupplierCancelConditionResponseMidocoSupplierCancelConditionItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition) {
                 $invalidValues[] = is_object($getSupplierCancelConditionResponseMidocoSupplierCancelConditionItem) ? get_class($getSupplierCancelConditionResponseMidocoSupplierCancelConditionItem) : sprintf('%s(%s)', gettype($getSupplierCancelConditionResponseMidocoSupplierCancelConditionItem), var_export($getSupplierCancelConditionResponseMidocoSupplierCancelConditionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierCancelCondition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierCancelCondition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSupplierCancelConditionResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierCancelCondition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition[] $midocoSupplierCancelCondition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierCancelConditionResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition[] $midocoSupplierCancelCondition
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierCancelConditionResponse
      */
     public function setMidocoSupplierCancelCondition(?array $midocoSupplierCancelCondition = null): self
     {
@@ -85,14 +85,14 @@ class GetSupplierCancelConditionResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierCancelCondition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSupplierCancelConditionResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSupplierCancelConditionResponse
      */
-    public function addToMidocoSupplierCancelCondition(\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition $item): self
+    public function addToMidocoSupplierCancelCondition(\Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierCancelCondition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierCancelCondition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierCancelCondition[] = $item;
         

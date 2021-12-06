@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ListCriteriaTypeCategoriesRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ListCriteriaTypeCategoriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ListCriteriaTypeCategoriesRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {

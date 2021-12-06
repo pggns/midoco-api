@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class CommunicationDTO extends AbstractStructBase
     /**
      * Set addressType value
      * @param string $addressType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommunicationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CommunicationDTO
      */
     public function setAddressType(?string $addressType = null): self
     {
@@ -118,7 +118,7 @@ class CommunicationDTO extends AbstractStructBase
     /**
      * Set consentTimestamp value
      * @param string $consentTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommunicationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CommunicationDTO
      */
     public function setConsentTimestamp(?string $consentTimestamp = null): self
     {
@@ -141,7 +141,7 @@ class CommunicationDTO extends AbstractStructBase
     /**
      * Set data value
      * @param string $data
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommunicationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CommunicationDTO
      */
     public function setData(?string $data = null): self
     {
@@ -164,7 +164,7 @@ class CommunicationDTO extends AbstractStructBase
     /**
      * Set emailChecked value
      * @param int $emailChecked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommunicationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CommunicationDTO
      */
     public function setEmailChecked(?int $emailChecked = null): self
     {
@@ -187,7 +187,7 @@ class CommunicationDTO extends AbstractStructBase
     /**
      * Set externalConsentId value
      * @param string $externalConsentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommunicationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CommunicationDTO
      */
     public function setExternalConsentId(?string $externalConsentId = null): self
     {
@@ -210,7 +210,7 @@ class CommunicationDTO extends AbstractStructBase
     /**
      * Set mediaType value
      * @param string $mediaType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommunicationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CommunicationDTO
      */
     public function setMediaType(?string $mediaType = null): self
     {
@@ -233,7 +233,7 @@ class CommunicationDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommunicationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CommunicationDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -256,7 +256,7 @@ class CommunicationDTO extends AbstractStructBase
     /**
      * Set useForMailing value
      * @param bool $useForMailing
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CommunicationDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CommunicationDTO
      */
     public function setUseForMailing(?bool $useForMailing = null): self
     {

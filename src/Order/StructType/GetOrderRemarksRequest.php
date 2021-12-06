@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetOrderRemarksRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderRemarksRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderRemarksRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -70,7 +70,7 @@ class GetOrderRemarksRequest extends AbstractStructBase
     /**
      * Set sortOrder value
      * @param string $sortOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderRemarksRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderRemarksRequest
      */
     public function setSortOrder(?string $sortOrder = null): self
     {

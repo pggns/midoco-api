@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteRemarkOrgunitRequest extends AbstractStructBase
      * The MidocoRemarkOrgunit
      * Meta information extracted from the WSDL
      * - ref: MidocoRemarkOrgunit
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkOrgunit|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkOrgunit|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkOrgunit $MidocoRemarkOrgunit = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkOrgunit $MidocoRemarkOrgunit = null;
     /**
      * Constructor method for DeleteRemarkOrgunitRequest
      * @uses DeleteRemarkOrgunitRequest::setMidocoRemarkOrgunit()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit = null)
     {
         $this
             ->setMidocoRemarkOrgunit($midocoRemarkOrgunit);
     }
     /**
      * Get MidocoRemarkOrgunit value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkOrgunit|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkOrgunit|null
      */
-    public function getMidocoRemarkOrgunit(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkOrgunit
+    public function getMidocoRemarkOrgunit(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkOrgunit
     {
         return $this->MidocoRemarkOrgunit;
     }
     /**
      * Set MidocoRemarkOrgunit value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteRemarkOrgunitRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteRemarkOrgunitRequest
      */
-    public function setMidocoRemarkOrgunit(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit = null): self
+    public function setMidocoRemarkOrgunit(?\Pggns\MidocoApi\Orderlists\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit = null): self
     {
         $this->MidocoRemarkOrgunit = $midocoRemarkOrgunit;
         

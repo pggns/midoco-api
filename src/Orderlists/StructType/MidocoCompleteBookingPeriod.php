@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class MidocoCompleteBookingPeriod extends BookingPeriodDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBookingPeriodAccount
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO[]
      */
     protected ?array $MidocoBookingPeriodAccount = null;
     /**
      * Constructor method for MidocoCompleteBookingPeriod
      * @uses MidocoCompleteBookingPeriod::setMidocoBookingPeriodAccount()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO[] $midocoBookingPeriodAccount
+     * @param \Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO[] $midocoBookingPeriodAccount
      */
     public function __construct(?array $midocoBookingPeriodAccount = null)
     {
@@ -34,7 +34,7 @@ class MidocoCompleteBookingPeriod extends BookingPeriodDTO
     }
     /**
      * Get MidocoBookingPeriodAccount value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO[]
      */
     public function getMidocoBookingPeriodAccount(): ?array
     {
@@ -55,12 +55,12 @@ class MidocoCompleteBookingPeriod extends BookingPeriodDTO
         $invalidValues = [];
         foreach ($values as $midocoCompleteBookingPeriodMidocoBookingPeriodAccountItem) {
             // validation for constraint: itemType
-            if (!$midocoCompleteBookingPeriodMidocoBookingPeriodAccountItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO) {
+            if (!$midocoCompleteBookingPeriodMidocoBookingPeriodAccountItem instanceof \Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO) {
                 $invalidValues[] = is_object($midocoCompleteBookingPeriodMidocoBookingPeriodAccountItem) ? get_class($midocoCompleteBookingPeriodMidocoBookingPeriodAccountItem) : sprintf('%s(%s)', gettype($midocoCompleteBookingPeriodMidocoBookingPeriodAccountItem), var_export($midocoCompleteBookingPeriodMidocoBookingPeriodAccountItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBookingPeriodAccount property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBookingPeriodAccount property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class MidocoCompleteBookingPeriod extends BookingPeriodDTO
     /**
      * Set MidocoBookingPeriodAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO[] $midocoBookingPeriodAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCompleteBookingPeriod
+     * @param \Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO[] $midocoBookingPeriodAccount
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCompleteBookingPeriod
      */
     public function setMidocoBookingPeriodAccount(?array $midocoBookingPeriodAccount = null): self
     {
@@ -85,14 +85,14 @@ class MidocoCompleteBookingPeriod extends BookingPeriodDTO
     /**
      * Add item to MidocoBookingPeriodAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCompleteBookingPeriod
+     * @param \Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCompleteBookingPeriod
      */
-    public function addToMidocoBookingPeriodAccount(\Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO $item): self
+    public function addToMidocoBookingPeriodAccount(\Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoBookingPeriodAccount property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\BookingPeriodAccountDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBookingPeriodAccount property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\BookingPeriodAccountDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBookingPeriodAccount[] = $item;
         

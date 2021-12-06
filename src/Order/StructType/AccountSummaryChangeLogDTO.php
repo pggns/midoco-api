@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class AccountSummaryChangeLogDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryChangeLogDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -126,7 +126,7 @@ class AccountSummaryChangeLogDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryChangeLogDTO
      */
     public function setAction(?string $action = null): self
     {
@@ -149,7 +149,7 @@ class AccountSummaryChangeLogDTO extends AbstractStructBase
     /**
      * Set bookingPeriod value
      * @param int $bookingPeriod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryChangeLogDTO
      */
     public function setBookingPeriod(?int $bookingPeriod = null): self
     {
@@ -172,7 +172,7 @@ class AccountSummaryChangeLogDTO extends AbstractStructBase
     /**
      * Set bookingYear value
      * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryChangeLogDTO
      */
     public function setBookingYear(?int $bookingYear = null): self
     {
@@ -195,7 +195,7 @@ class AccountSummaryChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -218,7 +218,7 @@ class AccountSummaryChangeLogDTO extends AbstractStructBase
     /**
      * Set creditAmount value
      * @param float $creditAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryChangeLogDTO
      */
     public function setCreditAmount(?float $creditAmount = null): self
     {
@@ -241,7 +241,7 @@ class AccountSummaryChangeLogDTO extends AbstractStructBase
     /**
      * Set debitAmount value
      * @param float $debitAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryChangeLogDTO
      */
     public function setDebitAmount(?float $debitAmount = null): self
     {
@@ -264,7 +264,7 @@ class AccountSummaryChangeLogDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryChangeLogDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -287,7 +287,7 @@ class AccountSummaryChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountSummaryChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AccountSummaryChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {

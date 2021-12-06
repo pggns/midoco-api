@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class DestinationKeyDimensionDTO extends AbstractStructBase
     /**
      * Set destinationKey value
      * @param string $destinationKey
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DestinationKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DestinationKeyDimensionDTO
      */
     public function setDestinationKey(?string $destinationKey = null): self
     {
@@ -86,7 +86,7 @@ class DestinationKeyDimensionDTO extends AbstractStructBase
     /**
      * Set destinationKeyDescription value
      * @param string $destinationKeyDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DestinationKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DestinationKeyDimensionDTO
      */
     public function setDestinationKeyDescription(?string $destinationKeyDescription = null): self
     {
@@ -109,7 +109,7 @@ class DestinationKeyDimensionDTO extends AbstractStructBase
     /**
      * Set destinationKeyId value
      * @param int $destinationKeyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DestinationKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DestinationKeyDimensionDTO
      */
     public function setDestinationKeyId(?int $destinationKeyId = null): self
     {
@@ -132,7 +132,7 @@ class DestinationKeyDimensionDTO extends AbstractStructBase
     /**
      * Set destinationKeyLocDescr value
      * @param string $destinationKeyLocDescr
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DestinationKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\DestinationKeyDimensionDTO
      */
     public function setDestinationKeyLocDescr(?string $destinationKeyLocDescr = null): self
     {

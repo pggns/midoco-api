@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoMandatoryType extends AbstractStructBase
     /**
      * Set mandatory value
      * @param int $mandatory
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMandatoryType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoMandatoryType
      */
     public function setMandatory(?int $mandatory = null): self
     {
@@ -70,7 +70,7 @@ class MidocoMandatoryType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoMandatoryType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoMandatoryType
      */
     public function setDescription(?string $description = null): self
     {

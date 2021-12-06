@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoItemSellingMode extends MidocoItemSellingModeType
     /**
      * Set atolIndex value
      * @param int $atolIndex
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoItemSellingMode
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoItemSellingMode
      */
     public function setAtolIndex(?int $atolIndex = null): self
     {
@@ -70,7 +70,7 @@ class MidocoItemSellingMode extends MidocoItemSellingModeType
     /**
      * Set atolPeriod value
      * @param string $atolPeriod
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoItemSellingMode
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoItemSellingMode
      */
     public function setAtolPeriod(?string $atolPeriod = null): self
     {

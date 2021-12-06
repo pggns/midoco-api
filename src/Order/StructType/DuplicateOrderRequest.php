@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -83,7 +83,7 @@ class DuplicateOrderRequest extends AbstractStructBase
     /**
      * Set sourceOrderId value
      * @param int $sourceOrderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateOrderRequest
      */
     public function setSourceOrderId(?int $sourceOrderId = null): self
     {
@@ -106,7 +106,7 @@ class DuplicateOrderRequest extends AbstractStructBase
     /**
      * Set targetOrgunit value
      * @param string $targetOrgunit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateOrderRequest
      */
     public function setTargetOrgunit(?string $targetOrgunit = null): self
     {
@@ -129,7 +129,7 @@ class DuplicateOrderRequest extends AbstractStructBase
     /**
      * Set preserveOrderNo value
      * @param bool $preserveOrderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateOrderRequest
      */
     public function setPreserveOrderNo(?bool $preserveOrderNo = true): self
     {
@@ -152,7 +152,7 @@ class DuplicateOrderRequest extends AbstractStructBase
     /**
      * Set excludeItemTypes value
      * @param string $excludeItemTypes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateOrderRequest
      */
     public function setExcludeItemTypes(?string $excludeItemTypes = null): self
     {
@@ -175,7 +175,7 @@ class DuplicateOrderRequest extends AbstractStructBase
     /**
      * Set dryRun value
      * @param bool $dryRun
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DuplicateOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DuplicateOrderRequest
      */
     public function setDryRun(?bool $dryRun = false): self
     {

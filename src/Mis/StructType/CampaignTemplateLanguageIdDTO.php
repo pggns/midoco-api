@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class CampaignTemplateLanguageIdDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateLanguageIdDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignTemplateLanguageIdDTO
      */
     public function setId(?int $id = null): self
     {
@@ -70,7 +70,7 @@ class CampaignTemplateLanguageIdDTO extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignTemplateLanguageIdDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignTemplateLanguageIdDTO
      */
     public function setLanguage(?string $language = null): self
     {

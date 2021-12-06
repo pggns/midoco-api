@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SelectableFeeType extends FeeTypeDTO
     /**
      * Set selected value
      * @param bool $selected
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SelectableFeeType
+     * @return \Pggns\MidocoApi\Documents\StructType\SelectableFeeType
      */
     public function setSelected(?bool $selected = null): self
     {

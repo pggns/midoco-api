@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class DtausTransactionPurposeDTO extends AbstractStructBase
     /**
      * Set fileid value
      * @param int $fileid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionPurposeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionPurposeDTO
      */
     public function setFileid(?int $fileid = null): self
     {
@@ -94,7 +94,7 @@ class DtausTransactionPurposeDTO extends AbstractStructBase
     /**
      * Set purposePosition value
      * @param int $purposePosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionPurposeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionPurposeDTO
      */
     public function setPurposePosition(?int $purposePosition = null): self
     {
@@ -117,7 +117,7 @@ class DtausTransactionPurposeDTO extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionPurposeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionPurposeDTO
      */
     public function setText(?string $text = null): self
     {
@@ -140,7 +140,7 @@ class DtausTransactionPurposeDTO extends AbstractStructBase
     /**
      * Set transactionPosition value
      * @param int $transactionPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionPurposeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionPurposeDTO
      */
     public function setTransactionPosition(?int $transactionPosition = null): self
     {
@@ -163,7 +163,7 @@ class DtausTransactionPurposeDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DtausTransactionPurposeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\DtausTransactionPurposeDTO
      */
     public function setType(?string $type = null): self
     {

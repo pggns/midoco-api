@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ReprintReceiptResponse extends AbstractStructBase
     /**
      * Set printId value
      * @param int $printId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReprintReceiptResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ReprintReceiptResponse
      */
     public function setPrintId(?int $printId = null): self
     {
@@ -70,7 +70,7 @@ class ReprintReceiptResponse extends AbstractStructBase
     /**
      * Set bytes value
      * @param string $bytes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ReprintReceiptResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ReprintReceiptResponse
      */
     public function setBytes(?string $bytes = null): self
     {

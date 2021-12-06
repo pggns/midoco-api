@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class AnnounceAmaAirMessageRequest extends AbstractStructBase
     /**
      * Set AirData value
      * @param string $airData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceAmaAirMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceAmaAirMessageRequest
      */
     public function setAirData(?string $airData = null): self
     {

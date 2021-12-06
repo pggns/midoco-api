@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class PaypalTransactionLogDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaypalTransactionLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaypalTransactionLogDTO
      */
     public function setId(?int $id = null): self
     {
@@ -94,7 +94,7 @@ class PaypalTransactionLogDTO extends AbstractStructBase
     /**
      * Set requestString value
      * @param string $requestString
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaypalTransactionLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaypalTransactionLogDTO
      */
     public function setRequestString(?string $requestString = null): self
     {
@@ -117,7 +117,7 @@ class PaypalTransactionLogDTO extends AbstractStructBase
     /**
      * Set responseString value
      * @param string $responseString
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaypalTransactionLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaypalTransactionLogDTO
      */
     public function setResponseString(?string $responseString = null): self
     {
@@ -140,7 +140,7 @@ class PaypalTransactionLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaypalTransactionLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaypalTransactionLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -163,7 +163,7 @@ class PaypalTransactionLogDTO extends AbstractStructBase
     /**
      * Set transactionId value
      * @param int $transactionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaypalTransactionLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaypalTransactionLogDTO
      */
     public function setTransactionId(?int $transactionId = null): self
     {

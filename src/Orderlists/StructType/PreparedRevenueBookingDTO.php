@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -223,7 +223,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set adviceDetailId value
      * @param int $adviceDetailId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setAdviceDetailId(?int $adviceDetailId = null): self
     {
@@ -246,7 +246,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set bookingAmount value
      * @param float $bookingAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setBookingAmount(?float $bookingAmount = null): self
     {
@@ -269,7 +269,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set bruttoPrice value
      * @param float $bruttoPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setBruttoPrice(?float $bruttoPrice = null): self
     {
@@ -292,7 +292,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set creationType value
      * @param string $creationType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setCreationType(?string $creationType = null): self
     {
@@ -315,7 +315,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -338,7 +338,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set isDeposit value
      * @param bool $isDeposit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setIsDeposit(?bool $isDeposit = null): self
     {
@@ -361,7 +361,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -384,7 +384,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -407,7 +407,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set originalRevenueInclVat value
      * @param float $originalRevenueInclVat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setOriginalRevenueInclVat(?float $originalRevenueInclVat = null): self
     {
@@ -430,7 +430,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set originalRevenueInsurance value
      * @param float $originalRevenueInsurance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setOriginalRevenueInsurance(?float $originalRevenueInsurance = null): self
     {
@@ -453,7 +453,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set originalRevenueVatFree value
      * @param float $originalRevenueVatFree
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setOriginalRevenueVatFree(?float $originalRevenueVatFree = null): self
     {
@@ -476,7 +476,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set preparedRevenueId value
      * @param int $preparedRevenueId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setPreparedRevenueId(?int $preparedRevenueId = null): self
     {
@@ -499,7 +499,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -522,7 +522,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -545,7 +545,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set revenueInclVat value
      * @param float $revenueInclVat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setRevenueInclVat(?float $revenueInclVat = null): self
     {
@@ -568,7 +568,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set revenueInsurance value
      * @param float $revenueInsurance
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setRevenueInsurance(?float $revenueInsurance = null): self
     {
@@ -591,7 +591,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set revenueVatFree value
      * @param float $revenueVatFree
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setRevenueVatFree(?float $revenueVatFree = null): self
     {
@@ -614,7 +614,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set stornoAccounts value
      * @param bool $stornoAccounts
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setStornoAccounts(?bool $stornoAccounts = null): self
     {
@@ -637,7 +637,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set suppSettlemId value
      * @param int $suppSettlemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setSuppSettlemId(?int $suppSettlemId = null): self
     {
@@ -660,7 +660,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set suppSettlemPos value
      * @param int $suppSettlemPos
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setSuppSettlemPos(?int $suppSettlemPos = null): self
     {
@@ -683,7 +683,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set supplierDiAmount value
      * @param float $supplierDiAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setSupplierDiAmount(?float $supplierDiAmount = null): self
     {
@@ -706,7 +706,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -729,7 +729,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set supplierInvoiceAmount value
      * @param float $supplierInvoiceAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setSupplierInvoiceAmount(?float $supplierInvoiceAmount = null): self
     {
@@ -752,7 +752,7 @@ class PreparedRevenueBookingDTO extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueBookingDTO
      */
     public function setTravelType(?string $travelType = null): self
     {

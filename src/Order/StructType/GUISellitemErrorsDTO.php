@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GUISellitemErrorsDTO extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GUISellitemErrorsDTO
+     * @return \Pggns\MidocoApi\Order\StructType\GUISellitemErrorsDTO
      */
     public function setCategory(?string $category = null): self
     {
@@ -70,7 +70,7 @@ class GUISellitemErrorsDTO extends AbstractStructBase
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GUISellitemErrorsDTO
+     * @return \Pggns\MidocoApi\Order\StructType\GUISellitemErrorsDTO
      */
     public function setErrorMessage(?string $errorMessage = null): self
     {

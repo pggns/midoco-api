@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -215,7 +215,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -238,7 +238,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -261,7 +261,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set projectNo value
      * @param string $projectNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setProjectNo(?string $projectNo = null): self
     {
@@ -284,7 +284,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -307,7 +307,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -330,7 +330,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set travelFrom value
      * @param string $travelFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setTravelFrom(?string $travelFrom = null): self
     {
@@ -353,7 +353,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set travelUntil value
      * @param string $travelUntil
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setTravelUntil(?string $travelUntil = null): self
     {
@@ -376,7 +376,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set traveller value
      * @param string $traveller
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setTraveller(?string $traveller = null): self
     {
@@ -399,7 +399,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set personalNo value
      * @param string $personalNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setPersonalNo(?string $personalNo = null): self
     {
@@ -422,7 +422,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set customerCostCenter value
      * @param string $customerCostCenter
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setCustomerCostCenter(?string $customerCostCenter = null): self
     {
@@ -445,7 +445,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setRemark(?string $remark = null): self
     {
@@ -468,7 +468,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set feeCode value
      * @param string $feeCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setFeeCode(?string $feeCode = null): self
     {
@@ -491,7 +491,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set feeDescription value
      * @param string $feeDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setFeeDescription(?string $feeDescription = null): self
     {
@@ -514,7 +514,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set feePrice value
      * @param float $feePrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setFeePrice(?float $feePrice = null): self
     {
@@ -537,7 +537,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set originalBookingId value
      * @param string $originalBookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setOriginalBookingId(?string $originalBookingId = null): self
     {
@@ -560,7 +560,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -583,7 +583,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set flightNo value
      * @param string $flightNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setFlightNo(?string $flightNo = null): self
     {
@@ -606,7 +606,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set hotelNo value
      * @param string $hotelNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setHotelNo(?string $hotelNo = null): self
     {
@@ -629,7 +629,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set trainNo value
      * @param string $trainNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setTrainNo(?string $trainNo = null): self
     {
@@ -652,7 +652,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set carNo value
      * @param string $carNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setCarNo(?string $carNo = null): self
     {
@@ -675,7 +675,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set airline value
      * @param string $airline
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setAirline(?string $airline = null): self
     {
@@ -698,7 +698,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setDestination(?string $destination = null): self
     {
@@ -721,7 +721,7 @@ class InfoForCustomer extends AbstractStructBase
     /**
      * Set flightPrice value
      * @param float $flightPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InfoForCustomer
      */
     public function setFlightPrice(?float $flightPrice = null): self
     {

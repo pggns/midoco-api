@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class GroupAdviserDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GroupAdviserDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\GroupAdviserDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -94,7 +94,7 @@ class GroupAdviserDTO extends AbstractStructBase
     /**
      * Set groupAdviserCustomerId value
      * @param int $groupAdviserCustomerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GroupAdviserDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\GroupAdviserDTO
      */
     public function setGroupAdviserCustomerId(?int $groupAdviserCustomerId = null): self
     {
@@ -117,7 +117,7 @@ class GroupAdviserDTO extends AbstractStructBase
     /**
      * Set provisionPercent value
      * @param float $provisionPercent
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GroupAdviserDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\GroupAdviserDTO
      */
     public function setProvisionPercent(?float $provisionPercent = null): self
     {
@@ -140,7 +140,7 @@ class GroupAdviserDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GroupAdviserDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\GroupAdviserDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -163,7 +163,7 @@ class GroupAdviserDTO extends AbstractStructBase
     /**
      * Set validUntil value
      * @param string $validUntil
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GroupAdviserDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\GroupAdviserDTO
      */
     public function setValidUntil(?string $validUntil = null): self
     {

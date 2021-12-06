@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetWorkstationResponse extends AbstractStructBase
      * The MidocoWorkstation
      * Meta information extracted from the WSDL
      * - ref: MidocoWorkstation
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\WorkstationDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\WorkstationDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\WorkstationDTO $MidocoWorkstation = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\WorkstationDTO $MidocoWorkstation = null;
     /**
      * Constructor method for GetWorkstationResponse
      * @uses GetWorkstationResponse::setMidocoWorkstation()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\WorkstationDTO $midocoWorkstation
+     * @param \Pggns\MidocoApi\CrmSD\StructType\WorkstationDTO $midocoWorkstation
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\WorkstationDTO $midocoWorkstation = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\WorkstationDTO $midocoWorkstation = null)
     {
         $this
             ->setMidocoWorkstation($midocoWorkstation);
     }
     /**
      * Get MidocoWorkstation value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\WorkstationDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\WorkstationDTO|null
      */
-    public function getMidocoWorkstation(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\WorkstationDTO
+    public function getMidocoWorkstation(): ?\Pggns\MidocoApi\CrmSD\StructType\WorkstationDTO
     {
         return $this->MidocoWorkstation;
     }
     /**
      * Set MidocoWorkstation value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\WorkstationDTO $midocoWorkstation
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetWorkstationResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\WorkstationDTO $midocoWorkstation
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetWorkstationResponse
      */
-    public function setMidocoWorkstation(?\Pggns\MidocoApi\Api\CrmSD\StructType\WorkstationDTO $midocoWorkstation = null): self
+    public function setMidocoWorkstation(?\Pggns\MidocoApi\CrmSD\StructType\WorkstationDTO $midocoWorkstation = null): self
     {
         $this->MidocoWorkstation = $midocoWorkstation;
         

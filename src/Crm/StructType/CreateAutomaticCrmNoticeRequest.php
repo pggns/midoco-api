@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class CreateAutomaticCrmNoticeRequest extends AbstractStructBase
      * The MidocoCrmCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
      * The typeAttribute
      * @var bool|null
@@ -35,11 +35,11 @@ class CreateAutomaticCrmNoticeRequest extends AbstractStructBase
      * @uses CreateAutomaticCrmNoticeRequest::setMidocoCrmCustomer()
      * @uses CreateAutomaticCrmNoticeRequest::setTypeAttribute()
      * @uses CreateAutomaticCrmNoticeRequest::setRuleDefinitionId()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer
      * @param bool $typeAttribute
      * @param int $ruleDefinitionId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?bool $typeAttribute = null, ?int $ruleDefinitionId = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?bool $typeAttribute = null, ?int $ruleDefinitionId = null)
     {
         $this
             ->setMidocoCrmCustomer($midocoCrmCustomer)
@@ -48,18 +48,18 @@ class CreateAutomaticCrmNoticeRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CreateAutomaticCrmNoticeRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\Crm\StructType\CreateAutomaticCrmNoticeRequest
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Crm\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         
@@ -76,7 +76,7 @@ class CreateAutomaticCrmNoticeRequest extends AbstractStructBase
     /**
      * Set typeAttribute value
      * @param bool $typeAttribute
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CreateAutomaticCrmNoticeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\CreateAutomaticCrmNoticeRequest
      */
     public function setTypeAttribute(?bool $typeAttribute = null): self
     {
@@ -99,7 +99,7 @@ class CreateAutomaticCrmNoticeRequest extends AbstractStructBase
     /**
      * Set ruleDefinitionId value
      * @param int $ruleDefinitionId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CreateAutomaticCrmNoticeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\CreateAutomaticCrmNoticeRequest
      */
     public function setRuleDefinitionId(?int $ruleDefinitionId = null): self
     {

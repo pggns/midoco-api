@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteComplaintReasonRequest extends AbstractStructBase
      * The MidocoComplaintReason
      * Meta information extracted from the WSDL
      * - ref: MidocoComplaintReason
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\ComplaintReasonDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\ComplaintReasonDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\ComplaintReasonDTO $MidocoComplaintReason = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\ComplaintReasonDTO $MidocoComplaintReason = null;
     /**
      * Constructor method for DeleteComplaintReasonRequest
      * @uses DeleteComplaintReasonRequest::setMidocoComplaintReason()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\ComplaintReasonDTO $midocoComplaintReason
+     * @param \Pggns\MidocoApi\Crm\StructType\ComplaintReasonDTO $midocoComplaintReason
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\ComplaintReasonDTO $midocoComplaintReason = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\ComplaintReasonDTO $midocoComplaintReason = null)
     {
         $this
             ->setMidocoComplaintReason($midocoComplaintReason);
     }
     /**
      * Get MidocoComplaintReason value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ComplaintReasonDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\ComplaintReasonDTO|null
      */
-    public function getMidocoComplaintReason(): ?\Pggns\MidocoApi\Api\Crm\StructType\ComplaintReasonDTO
+    public function getMidocoComplaintReason(): ?\Pggns\MidocoApi\Crm\StructType\ComplaintReasonDTO
     {
         return $this->MidocoComplaintReason;
     }
     /**
      * Set MidocoComplaintReason value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\ComplaintReasonDTO $midocoComplaintReason
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteComplaintReasonRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\ComplaintReasonDTO $midocoComplaintReason
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteComplaintReasonRequest
      */
-    public function setMidocoComplaintReason(?\Pggns\MidocoApi\Api\Crm\StructType\ComplaintReasonDTO $midocoComplaintReason = null): self
+    public function setMidocoComplaintReason(?\Pggns\MidocoApi\Crm\StructType\ComplaintReasonDTO $midocoComplaintReason = null): self
     {
         $this->MidocoComplaintReason = $midocoComplaintReason;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoAgencySettlementProcess extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementProcess
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementProcess
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -102,7 +102,7 @@ class MidocoAgencySettlementProcess extends AbstractStructBase
     /**
      * Set isPrinting value
      * @param bool $isPrinting
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementProcess
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementProcess
      */
     public function setIsPrinting(?bool $isPrinting = null): self
     {
@@ -125,7 +125,7 @@ class MidocoAgencySettlementProcess extends AbstractStructBase
     /**
      * Set isMailing value
      * @param bool $isMailing
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementProcess
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementProcess
      */
     public function setIsMailing(?bool $isMailing = null): self
     {
@@ -148,7 +148,7 @@ class MidocoAgencySettlementProcess extends AbstractStructBase
     /**
      * Set orders value
      * @param int $orders
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementProcess
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementProcess
      */
     public function setOrders(?int $orders = null): self
     {
@@ -171,7 +171,7 @@ class MidocoAgencySettlementProcess extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementProcess
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementProcess
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -194,7 +194,7 @@ class MidocoAgencySettlementProcess extends AbstractStructBase
     /**
      * Set containsStorno value
      * @param bool $containsStorno
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAgencySettlementProcess
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencySettlementProcess
      */
     public function setContainsStorno(?bool $containsStorno = null): self
     {

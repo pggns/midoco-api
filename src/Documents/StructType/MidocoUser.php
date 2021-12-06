@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class MidocoUser extends UserDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrsExpedient
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\CrsExpedientDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\CrsExpedientDTO[]
      */
     protected ?array $MidocoCrsExpedient = null;
     /**
      * Constructor method for MidocoUser
      * @uses MidocoUser::setMidocoCrsExpedient()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\CrsExpedientDTO[] $midocoCrsExpedient
+     * @param \Pggns\MidocoApi\Documents\StructType\CrsExpedientDTO[] $midocoCrsExpedient
      */
     public function __construct(?array $midocoCrsExpedient = null)
     {
@@ -34,7 +34,7 @@ class MidocoUser extends UserDTO
     }
     /**
      * Get MidocoCrsExpedient value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\CrsExpedientDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\CrsExpedientDTO[]
      */
     public function getMidocoCrsExpedient(): ?array
     {
@@ -55,12 +55,12 @@ class MidocoUser extends UserDTO
         $invalidValues = [];
         foreach ($values as $midocoUserMidocoCrsExpedientItem) {
             // validation for constraint: itemType
-            if (!$midocoUserMidocoCrsExpedientItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\CrsExpedientDTO) {
+            if (!$midocoUserMidocoCrsExpedientItem instanceof \Pggns\MidocoApi\Documents\StructType\CrsExpedientDTO) {
                 $invalidValues[] = is_object($midocoUserMidocoCrsExpedientItem) ? get_class($midocoUserMidocoCrsExpedientItem) : sprintf('%s(%s)', gettype($midocoUserMidocoCrsExpedientItem), var_export($midocoUserMidocoCrsExpedientItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrsExpedient property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\CrsExpedientDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrsExpedient property can only contain items of type \Pggns\MidocoApi\Documents\StructType\CrsExpedientDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class MidocoUser extends UserDTO
     /**
      * Set MidocoCrsExpedient value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\CrsExpedientDTO[] $midocoCrsExpedient
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoUser
+     * @param \Pggns\MidocoApi\Documents\StructType\CrsExpedientDTO[] $midocoCrsExpedient
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoUser
      */
     public function setMidocoCrsExpedient(?array $midocoCrsExpedient = null): self
     {
@@ -85,14 +85,14 @@ class MidocoUser extends UserDTO
     /**
      * Add item to MidocoCrsExpedient value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\CrsExpedientDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoUser
+     * @param \Pggns\MidocoApi\Documents\StructType\CrsExpedientDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoUser
      */
-    public function addToMidocoCrsExpedient(\Pggns\MidocoApi\Api\Documents\StructType\CrsExpedientDTO $item): self
+    public function addToMidocoCrsExpedient(\Pggns\MidocoApi\Documents\StructType\CrsExpedientDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\CrsExpedientDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrsExpedient property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\CrsExpedientDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\CrsExpedientDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrsExpedient property can only contain items of type \Pggns\MidocoApi\Documents\StructType\CrsExpedientDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrsExpedient[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class AccessDimensionDTO extends AbstractStructBase
     /**
      * Set dimensionName value
      * @param string $dimensionName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AccessDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AccessDimensionDTO
      */
     public function setDimensionName(?string $dimensionName = null): self
     {
@@ -78,7 +78,7 @@ class AccessDimensionDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AccessDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AccessDimensionDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -101,7 +101,7 @@ class AccessDimensionDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AccessDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\AccessDimensionDTO
      */
     public function setRoleId(?int $roleId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class GetReportWithSameParamResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: system:JasperReport
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\JasperReport[]
+     * @var \Pggns\MidocoApi\Mis\StructType\JasperReport[]
      */
     protected ?array $JasperReport = null;
     /**
      * Constructor method for GetReportWithSameParamResponse
      * @uses GetReportWithSameParamResponse::setJasperReport()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\JasperReport[] $jasperReport
+     * @param \Pggns\MidocoApi\Mis\StructType\JasperReport[] $jasperReport
      */
     public function __construct(?array $jasperReport = null)
     {
@@ -33,7 +33,7 @@ class GetReportWithSameParamResponse extends AbstractStructBase
     }
     /**
      * Get JasperReport value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\JasperReport[]
+     * @return \Pggns\MidocoApi\Mis\StructType\JasperReport[]
      */
     public function getJasperReport(): ?array
     {
@@ -54,12 +54,12 @@ class GetReportWithSameParamResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getReportWithSameParamResponseJasperReportItem) {
             // validation for constraint: itemType
-            if (!$getReportWithSameParamResponseJasperReportItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\JasperReport) {
+            if (!$getReportWithSameParamResponseJasperReportItem instanceof \Pggns\MidocoApi\Mis\StructType\JasperReport) {
                 $invalidValues[] = is_object($getReportWithSameParamResponseJasperReportItem) ? get_class($getReportWithSameParamResponseJasperReportItem) : sprintf('%s(%s)', gettype($getReportWithSameParamResponseJasperReportItem), var_export($getReportWithSameParamResponseJasperReportItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The JasperReport property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\JasperReport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The JasperReport property can only contain items of type \Pggns\MidocoApi\Mis\StructType\JasperReport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class GetReportWithSameParamResponse extends AbstractStructBase
     /**
      * Set JasperReport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\JasperReport[] $jasperReport
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetReportWithSameParamResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\JasperReport[] $jasperReport
+     * @return \Pggns\MidocoApi\Mis\StructType\GetReportWithSameParamResponse
      */
     public function setJasperReport(?array $jasperReport = null): self
     {
@@ -84,14 +84,14 @@ class GetReportWithSameParamResponse extends AbstractStructBase
     /**
      * Add item to JasperReport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\JasperReport $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetReportWithSameParamResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\JasperReport $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetReportWithSameParamResponse
      */
-    public function addToJasperReport(\Pggns\MidocoApi\Api\Mis\StructType\JasperReport $item): self
+    public function addToJasperReport(\Pggns\MidocoApi\Mis\StructType\JasperReport $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\JasperReport) {
-            throw new InvalidArgumentException(sprintf('The JasperReport property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\JasperReport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\JasperReport) {
+            throw new InvalidArgumentException(sprintf('The JasperReport property can only contain items of type \Pggns\MidocoApi\Mis\StructType\JasperReport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->JasperReport[] = $item;
         

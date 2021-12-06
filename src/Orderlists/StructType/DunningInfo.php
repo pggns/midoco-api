@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -85,7 +85,7 @@ class DunningInfo extends AbstractStructBase
     /**
      * Set dunning_date value
      * @param string $dunning_date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningInfo
      */
     public function setDunning_date(?string $dunning_date = null): self
     {
@@ -112,7 +112,7 @@ class DunningInfo extends AbstractStructBase
     /**
      * Set payment_due_date value
      * @param string $payment_due_date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningInfo
      */
     public function setPayment_due_date(?string $payment_due_date = null): self
     {
@@ -139,7 +139,7 @@ class DunningInfo extends AbstractStructBase
     /**
      * Set deposit_dunning_date value
      * @param string $deposit_dunning_date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningInfo
      */
     public function setDeposit_dunning_date(?string $deposit_dunning_date = null): self
     {
@@ -166,7 +166,7 @@ class DunningInfo extends AbstractStructBase
     /**
      * Set deposit_payment_due_date value
      * @param string $deposit_payment_due_date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningInfo
      */
     public function setDeposit_payment_due_date(?string $deposit_payment_due_date = null): self
     {

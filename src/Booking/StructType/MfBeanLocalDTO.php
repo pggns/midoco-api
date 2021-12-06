@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MfBeanLocalDTO extends AbstractStructBase
     /**
      * Set bean value
      * @param string $bean
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MfBeanLocalDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\MfBeanLocalDTO
      */
     public function setBean(?string $bean = null): self
     {
@@ -78,7 +78,7 @@ class MfBeanLocalDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MfBeanLocalDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\MfBeanLocalDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -101,7 +101,7 @@ class MfBeanLocalDTO extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MfBeanLocalDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\MfBeanLocalDTO
      */
     public function setLocale(?string $locale = null): self
     {

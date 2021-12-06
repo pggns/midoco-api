@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetAdviceDetailResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoAdviceSettlementDetail
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $MidocoAdviceSettlementDetail = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $MidocoAdviceSettlementDetail = null;
     /**
      * Constructor method for GetAdviceDetailResponse
      * @uses GetAdviceDetailResponse::setMidocoAdviceSettlementDetail()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail = null)
     {
         $this
             ->setMidocoAdviceSettlementDetail($midocoAdviceSettlementDetail);
     }
     /**
      * Get MidocoAdviceSettlementDetail value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail|null
      */
-    public function getMidocoAdviceSettlementDetail(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail
+    public function getMidocoAdviceSettlementDetail(): ?\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail
     {
         return $this->MidocoAdviceSettlementDetail;
     }
     /**
      * Set MidocoAdviceSettlementDetail value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAdviceDetailResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GetAdviceDetailResponse
      */
-    public function setMidocoAdviceSettlementDetail(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail = null): self
+    public function setMidocoAdviceSettlementDetail(?\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail = null): self
     {
         $this->MidocoAdviceSettlementDetail = $midocoAdviceSettlementDetail;
         

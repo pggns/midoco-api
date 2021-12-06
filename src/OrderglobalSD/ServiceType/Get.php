@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\ServiceType;
+namespace Pggns\MidocoApi\OrderglobalSD\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Get extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\ServiceType\Get
+     * @return \Pggns\MidocoApi\OrderglobalSD\ServiceType\Get
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportDescriptionRequest $paramGetAirportDescriptionRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportDescriptionResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportDescriptionRequest $paramGetAirportDescriptionRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportDescriptionResponse|bool
      */
-    public function getAirportDescription(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportDescriptionRequest $paramGetAirportDescriptionRequest)
+    public function getAirportDescription(\Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportDescriptionRequest $paramGetAirportDescriptionRequest)
     {
         try {
             $this->setResult($resultGetAirportDescription = $this->getSoapClient()->__soapCall('getAirportDescription', [
@@ -58,15 +58,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportDescriptionWithLanguageRequest $paramGetAirportDescriptionWithLanguageRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportDescriptionWithLanguageResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportDescriptionWithLanguageRequest $paramGetAirportDescriptionWithLanguageRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportDescriptionWithLanguageResponse|bool
      */
-    public function getAirportDescriptionWithLanguage(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportDescriptionWithLanguageRequest $paramGetAirportDescriptionWithLanguageRequest)
+    public function getAirportDescriptionWithLanguage(\Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportDescriptionWithLanguageRequest $paramGetAirportDescriptionWithLanguageRequest)
     {
         try {
             $this->setResult($resultGetAirportDescriptionWithLanguage = $this->getSoapClient()->__soapCall('getAirportDescriptionWithLanguage', [
@@ -85,15 +85,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAirportFullDescriptionRequest $paramMidocoAirportFullDescriptionRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAirportFullDescriptionResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAirportFullDescriptionRequest $paramMidocoAirportFullDescriptionRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAirportFullDescriptionResponse|bool
      */
-    public function getAirportFullDescription(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAirportFullDescriptionRequest $paramMidocoAirportFullDescriptionRequest)
+    public function getAirportFullDescription(\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAirportFullDescriptionRequest $paramMidocoAirportFullDescriptionRequest)
     {
         try {
             $this->setResult($resultGetAirportFullDescription = $this->getSoapClient()->__soapCall('getAirportFullDescription', [
@@ -112,15 +112,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableAirportDescriptionsRequest $paramGetAvailableAirportDescriptionsRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableAirportDescriptionsResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableAirportDescriptionsRequest $paramGetAvailableAirportDescriptionsRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableAirportDescriptionsResponse|bool
      */
-    public function getAvailableAirportDescriptions(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableAirportDescriptionsRequest $paramGetAvailableAirportDescriptionsRequest)
+    public function getAvailableAirportDescriptions(\Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableAirportDescriptionsRequest $paramGetAvailableAirportDescriptionsRequest)
     {
         try {
             $this->setResult($resultGetAvailableAirportDescriptions = $this->getSoapClient()->__soapCall('getAvailableAirportDescriptions', [
@@ -139,15 +139,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableAirlineDescriptionsRequest $paramGetAvailableAirlineDescriptionsRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableAirlineDescriptionsResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableAirlineDescriptionsRequest $paramGetAvailableAirlineDescriptionsRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableAirlineDescriptionsResponse|bool
      */
-    public function getAvailableAirlineDescriptions(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableAirlineDescriptionsRequest $paramGetAvailableAirlineDescriptionsRequest)
+    public function getAvailableAirlineDescriptions(\Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableAirlineDescriptionsRequest $paramGetAvailableAirlineDescriptionsRequest)
     {
         try {
             $this->setResult($resultGetAvailableAirlineDescriptions = $this->getSoapClient()->__soapCall('getAvailableAirlineDescriptions', [
@@ -166,15 +166,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetVATPercentsRequest $paramGetVATPercentsRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetVATPercentsResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetVATPercentsRequest $paramGetVATPercentsRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetVATPercentsResponse|bool
      */
-    public function getVATPercents(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetVATPercentsRequest $paramGetVATPercentsRequest)
+    public function getVATPercents(\Pggns\MidocoApi\OrderglobalSD\StructType\GetVATPercentsRequest $paramGetVATPercentsRequest)
     {
         try {
             $this->setResult($resultGetVATPercents = $this->getSoapClient()->__soapCall('getVATPercents', [
@@ -193,15 +193,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyForCountryRequest $paramGetCurrencyForCountryRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyForCountryResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyForCountryRequest $paramGetCurrencyForCountryRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyForCountryResponse|bool
      */
-    public function getCurrencyForCountry(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyForCountryRequest $paramGetCurrencyForCountryRequest)
+    public function getCurrencyForCountry(\Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyForCountryRequest $paramGetCurrencyForCountryRequest)
     {
         try {
             $this->setResult($resultGetCurrencyForCountry = $this->getSoapClient()->__soapCall('getCurrencyForCountry', [
@@ -220,15 +220,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAccountPlanRequest $paramGetAccountPlanRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAccountPlanResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetAccountPlanRequest $paramGetAccountPlanRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAccountPlanResponse|bool
      */
-    public function getAccountPlan(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAccountPlanRequest $paramGetAccountPlanRequest)
+    public function getAccountPlan(\Pggns\MidocoApi\OrderglobalSD\StructType\GetAccountPlanRequest $paramGetAccountPlanRequest)
     {
         try {
             $this->setResult($resultGetAccountPlan = $this->getSoapClient()->__soapCall('getAccountPlan', [
@@ -247,15 +247,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyForOrgUnitRequest $paramGetCurrencyForOrgUnitRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyForOrgUnitResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyForOrgUnitRequest $paramGetCurrencyForOrgUnitRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyForOrgUnitResponse|bool
      */
-    public function getCurrencyForOrgUnit(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyForOrgUnitRequest $paramGetCurrencyForOrgUnitRequest)
+    public function getCurrencyForOrgUnit(\Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyForOrgUnitRequest $paramGetCurrencyForOrgUnitRequest)
     {
         try {
             $this->setResult($resultGetCurrencyForOrgUnit = $this->getSoapClient()->__soapCall('getCurrencyForOrgUnit', [
@@ -274,15 +274,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirlineForBSPCodeRequest $paramGetAirlineForBSPCodeRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirlineForBSPCodeResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirlineForBSPCodeRequest $paramGetAirlineForBSPCodeRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirlineForBSPCodeResponse|bool
      */
-    public function getAirlineForBSPCode(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirlineForBSPCodeRequest $paramGetAirlineForBSPCodeRequest)
+    public function getAirlineForBSPCode(\Pggns\MidocoApi\OrderglobalSD\StructType\GetAirlineForBSPCodeRequest $paramGetAirlineForBSPCodeRequest)
     {
         try {
             $this->setResult($resultGetAirlineForBSPCode = $this->getSoapClient()->__soapCall('getAirlineForBSPCode', [
@@ -301,15 +301,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirlineByCodeRequest $paramGetAirlineByCodeRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirlineByCodeResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirlineByCodeRequest $paramGetAirlineByCodeRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirlineByCodeResponse|bool
      */
-    public function getAirlineByCode(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirlineByCodeRequest $paramGetAirlineByCodeRequest)
+    public function getAirlineByCode(\Pggns\MidocoApi\OrderglobalSD\StructType\GetAirlineByCodeRequest $paramGetAirlineByCodeRequest)
     {
         try {
             $this->setResult($resultGetAirlineByCode = $this->getSoapClient()->__soapCall('getAirlineByCode', [
@@ -328,15 +328,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetValidVatCodesRequest $paramGetValidVatCodesRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetValidVatCodesResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetValidVatCodesRequest $paramGetValidVatCodesRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetValidVatCodesResponse|bool
      */
-    public function getValidVatCodes(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetValidVatCodesRequest $paramGetValidVatCodesRequest)
+    public function getValidVatCodes(\Pggns\MidocoApi\OrderglobalSD\StructType\GetValidVatCodesRequest $paramGetValidVatCodesRequest)
     {
         try {
             $this->setResult($resultGetValidVatCodes = $this->getSoapClient()->__soapCall('getValidVatCodes', [
@@ -355,15 +355,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportCountryRequest $paramGetAirportCountryRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportCountryResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportCountryRequest $paramGetAirportCountryRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportCountryResponse|bool
      */
-    public function getAirportCountry(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportCountryRequest $paramGetAirportCountryRequest)
+    public function getAirportCountry(\Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportCountryRequest $paramGetAirportCountryRequest)
     {
         try {
             $this->setResult($resultGetAirportCountry = $this->getSoapClient()->__soapCall('getAirportCountry', [
@@ -382,15 +382,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetMergedServiceStatusRequest $paramGetMergedServiceStatusRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetMergedServiceStatusResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetMergedServiceStatusRequest $paramGetMergedServiceStatusRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetMergedServiceStatusResponse|bool
      */
-    public function getMergedServiceStatus(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetMergedServiceStatusRequest $paramGetMergedServiceStatusRequest)
+    public function getMergedServiceStatus(\Pggns\MidocoApi\OrderglobalSD\StructType\GetMergedServiceStatusRequest $paramGetMergedServiceStatusRequest)
     {
         try {
             $this->setResult($resultGetMergedServiceStatus = $this->getSoapClient()->__soapCall('getMergedServiceStatus', [
@@ -409,15 +409,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetMergedServiceStatiRequest $paramGetMergedServiceStatiRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetMergedServiceStatiResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetMergedServiceStatiRequest $paramGetMergedServiceStatiRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetMergedServiceStatiResponse|bool
      */
-    public function getMergedServiceStati(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetMergedServiceStatiRequest $paramGetMergedServiceStatiRequest)
+    public function getMergedServiceStati(\Pggns\MidocoApi\OrderglobalSD\StructType\GetMergedServiceStatiRequest $paramGetMergedServiceStatiRequest)
     {
         try {
             $this->setResult($resultGetMergedServiceStati = $this->getSoapClient()->__soapCall('getMergedServiceStati', [
@@ -436,15 +436,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableCurrenciesRequest $paramGetAvailableCurrenciesRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableCurrenciesResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableCurrenciesRequest $paramGetAvailableCurrenciesRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableCurrenciesResponse|bool
      */
-    public function getAvailableCurrencies(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableCurrenciesRequest $paramGetAvailableCurrenciesRequest)
+    public function getAvailableCurrencies(\Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableCurrenciesRequest $paramGetAvailableCurrenciesRequest)
     {
         try {
             $this->setResult($resultGetAvailableCurrencies = $this->getSoapClient()->__soapCall('getAvailableCurrencies', [
@@ -463,15 +463,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiUpdateRequest $paramGetDbiUpdateRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiUpdateResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiUpdateRequest $paramGetDbiUpdateRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiUpdateResponse|bool
      */
-    public function getDbiUpdate(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiUpdateRequest $paramGetDbiUpdateRequest)
+    public function getDbiUpdate(\Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiUpdateRequest $paramGetDbiUpdateRequest)
     {
         try {
             $this->setResult($resultGetDbiUpdate = $this->getSoapClient()->__soapCall('getDbiUpdate', [
@@ -490,15 +490,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiDefinitionHistoryRequest $paramGetDbiDefinitionHistoryRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiDefinitionHistoryResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiDefinitionHistoryRequest $paramGetDbiDefinitionHistoryRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiDefinitionHistoryResponse|bool
      */
-    public function getDbiDefinitionHistory(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiDefinitionHistoryRequest $paramGetDbiDefinitionHistoryRequest)
+    public function getDbiDefinitionHistory(\Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiDefinitionHistoryRequest $paramGetDbiDefinitionHistoryRequest)
     {
         try {
             $this->setResult($resultGetDbiDefinitionHistory = $this->getSoapClient()->__soapCall('getDbiDefinitionHistory', [
@@ -517,15 +517,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyByISOCodeRequest $paramGetCurrencyByISOCodeRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyByISOCodeResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyByISOCodeRequest $paramGetCurrencyByISOCodeRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyByISOCodeResponse|bool
      */
-    public function getCurrencyByISOCode(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyByISOCodeRequest $paramGetCurrencyByISOCodeRequest)
+    public function getCurrencyByISOCode(\Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyByISOCodeRequest $paramGetCurrencyByISOCodeRequest)
     {
         try {
             $this->setResult($resultGetCurrencyByISOCode = $this->getSoapClient()->__soapCall('getCurrencyByISOCode', [
@@ -544,15 +544,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyRequest $paramGetCurrencyRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyRequest $paramGetCurrencyRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyResponse|bool
      */
-    public function getCurrency(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyRequest $paramGetCurrencyRequest)
+    public function getCurrency(\Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyRequest $paramGetCurrencyRequest)
     {
         try {
             $this->setResult($resultGetCurrency = $this->getSoapClient()->__soapCall('getCurrency', [
@@ -571,15 +571,15 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDistributionMethodDescriptionRequest $paramGetDistributionMethodDescriptionRequest
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDistributionMethodDescriptionResponse|bool
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\GetDistributionMethodDescriptionRequest $paramGetDistributionMethodDescriptionRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDistributionMethodDescriptionResponse|bool
      */
-    public function getDistributionMethodDescription(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDistributionMethodDescriptionRequest $paramGetDistributionMethodDescriptionRequest)
+    public function getDistributionMethodDescription(\Pggns\MidocoApi\OrderglobalSD\StructType\GetDistributionMethodDescriptionRequest $paramGetDistributionMethodDescriptionRequest)
     {
         try {
             $this->setResult($resultGetDistributionMethodDescription = $this->getSoapClient()->__soapCall('getDistributionMethodDescription', [
@@ -596,7 +596,7 @@ class Get extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAccountPlanResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirlineByCodeResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirlineForBSPCodeResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportCountryResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportDescriptionResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAirportDescriptionWithLanguageResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableAirlineDescriptionsResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableAirportDescriptionsResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAvailableCurrenciesResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyByISOCodeResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyForCountryResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyForOrgUnitResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetCurrencyResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiDefinitionHistoryResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiUpdateResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDistributionMethodDescriptionResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetMergedServiceStatiResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetMergedServiceStatusResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetValidVatCodesResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetVATPercentsResponse|\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAirportFullDescriptionResponse
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAccountPlanResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetAirlineByCodeResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetAirlineForBSPCodeResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportCountryResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportDescriptionResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetAirportDescriptionWithLanguageResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableAirlineDescriptionsResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableAirportDescriptionsResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetAvailableCurrenciesResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyByISOCodeResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyForCountryResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyForOrgUnitResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetCurrencyResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiDefinitionHistoryResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiUpdateResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetDistributionMethodDescriptionResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetMergedServiceStatiResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetMergedServiceStatusResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetValidVatCodesResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\GetVATPercentsResponse|\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAirportFullDescriptionResponse
      */
     public function getResult()
     {

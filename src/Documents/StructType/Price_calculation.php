@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -81,7 +81,7 @@ class Price_calculation extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation
+     * @return \Pggns\MidocoApi\Documents\StructType\Price_calculation
      */
     public function setPosition(?int $position = null): self
     {
@@ -104,7 +104,7 @@ class Price_calculation extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation
+     * @return \Pggns\MidocoApi\Documents\StructType\Price_calculation
      */
     public function setId(?string $id = null): self
     {
@@ -127,7 +127,7 @@ class Price_calculation extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation
+     * @return \Pggns\MidocoApi\Documents\StructType\Price_calculation
      */
     public function setType(?string $type = null): self
     {
@@ -150,7 +150,7 @@ class Price_calculation extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation
+     * @return \Pggns\MidocoApi\Documents\StructType\Price_calculation
      */
     public function setDescription(?string $description = null): self
     {
@@ -173,7 +173,7 @@ class Price_calculation extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation
+     * @return \Pggns\MidocoApi\Documents\StructType\Price_calculation
      */
     public function setAmount(?float $amount = null): self
     {
@@ -196,7 +196,7 @@ class Price_calculation extends AbstractStructBase
     /**
      * Set booking_reference value
      * @param int $booking_reference
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation
+     * @return \Pggns\MidocoApi\Documents\StructType\Price_calculation
      */
     public function setBooking_reference(?int $booking_reference = null): self
     {

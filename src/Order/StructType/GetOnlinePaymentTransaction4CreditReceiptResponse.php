@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,13 +20,13 @@ class GetOnlinePaymentTransaction4CreditReceiptResponse extends AbstractStructBa
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCreditPosition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditPosition[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCreditPosition[]
      */
     protected ?array $MidocoCreditPosition = null;
     /**
      * Constructor method for GetOnlinePaymentTransaction4CreditReceiptResponse
      * @uses GetOnlinePaymentTransaction4CreditReceiptResponse::setMidocoCreditPosition()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditPosition[] $midocoCreditPosition
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCreditPosition[] $midocoCreditPosition
      */
     public function __construct(?array $midocoCreditPosition = null)
     {
@@ -35,7 +35,7 @@ class GetOnlinePaymentTransaction4CreditReceiptResponse extends AbstractStructBa
     }
     /**
      * Get MidocoCreditPosition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditPosition[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCreditPosition[]
      */
     public function getMidocoCreditPosition(): ?array
     {
@@ -56,12 +56,12 @@ class GetOnlinePaymentTransaction4CreditReceiptResponse extends AbstractStructBa
         $invalidValues = [];
         foreach ($values as $getOnlinePaymentTransaction4CreditReceiptResponseMidocoCreditPositionItem) {
             // validation for constraint: itemType
-            if (!$getOnlinePaymentTransaction4CreditReceiptResponseMidocoCreditPositionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditPosition) {
+            if (!$getOnlinePaymentTransaction4CreditReceiptResponseMidocoCreditPositionItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoCreditPosition) {
                 $invalidValues[] = is_object($getOnlinePaymentTransaction4CreditReceiptResponseMidocoCreditPositionItem) ? get_class($getOnlinePaymentTransaction4CreditReceiptResponseMidocoCreditPositionItem) : sprintf('%s(%s)', gettype($getOnlinePaymentTransaction4CreditReceiptResponseMidocoCreditPositionItem), var_export($getOnlinePaymentTransaction4CreditReceiptResponseMidocoCreditPositionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCreditPosition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCreditPosition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCreditPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -70,8 +70,8 @@ class GetOnlinePaymentTransaction4CreditReceiptResponse extends AbstractStructBa
     /**
      * Set MidocoCreditPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditPosition[] $midocoCreditPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOnlinePaymentTransaction4CreditReceiptResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCreditPosition[] $midocoCreditPosition
+     * @return \Pggns\MidocoApi\Order\StructType\GetOnlinePaymentTransaction4CreditReceiptResponse
      */
     public function setMidocoCreditPosition(?array $midocoCreditPosition = null): self
     {
@@ -86,14 +86,14 @@ class GetOnlinePaymentTransaction4CreditReceiptResponse extends AbstractStructBa
     /**
      * Add item to MidocoCreditPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditPosition $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOnlinePaymentTransaction4CreditReceiptResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCreditPosition $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOnlinePaymentTransaction4CreditReceiptResponse
      */
-    public function addToMidocoCreditPosition(\Pggns\MidocoApi\Api\Order\StructType\MidocoCreditPosition $item): self
+    public function addToMidocoCreditPosition(\Pggns\MidocoApi\Order\StructType\MidocoCreditPosition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditPosition) {
-            throw new InvalidArgumentException(sprintf('The MidocoCreditPosition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCreditPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoCreditPosition) {
+            throw new InvalidArgumentException(sprintf('The MidocoCreditPosition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCreditPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCreditPosition[] = $item;
         

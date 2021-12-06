@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class DeleteBillingDocRemarkRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocRemarkRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -78,7 +78,7 @@ class DeleteBillingDocRemarkRequest extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocRemarkRequest
      */
     public function setPosition(?int $position = null): self
     {
@@ -101,7 +101,7 @@ class DeleteBillingDocRemarkRequest extends AbstractStructBase
     /**
      * Set parentInternalVersion value
      * @param int $parentInternalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocRemarkRequest
      */
     public function setParentInternalVersion(?int $parentInternalVersion = null): self
     {

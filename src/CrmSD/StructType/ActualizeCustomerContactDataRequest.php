@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class ActualizeCustomerContactDataRequest extends AbstractStructBase
      * - maxOccurs: 2
      * - minOccurs: 0
      * - ref: MidocoContactType
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactType[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoContactType[]
      */
     protected ?array $MidocoContactType = null;
     /**
@@ -36,7 +36,7 @@ class ActualizeCustomerContactDataRequest extends AbstractStructBase
      * Constructor method for ActualizeCustomerContactDataRequest
      * @uses ActualizeCustomerContactDataRequest::setMidocoContactType()
      * @uses ActualizeCustomerContactDataRequest::setWaitForExecute()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactType[] $midocoContactType
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactType[] $midocoContactType
      * @param bool $waitForExecute
      */
     public function __construct(?array $midocoContactType = null, ?bool $waitForExecute = false)
@@ -47,7 +47,7 @@ class ActualizeCustomerContactDataRequest extends AbstractStructBase
     }
     /**
      * Get MidocoContactType value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactType[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactType[]
      */
     public function getMidocoContactType(): ?array
     {
@@ -68,12 +68,12 @@ class ActualizeCustomerContactDataRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $actualizeCustomerContactDataRequestMidocoContactTypeItem) {
             // validation for constraint: itemType
-            if (!$actualizeCustomerContactDataRequestMidocoContactTypeItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactType) {
+            if (!$actualizeCustomerContactDataRequestMidocoContactTypeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactType) {
                 $invalidValues[] = is_object($actualizeCustomerContactDataRequestMidocoContactTypeItem) ? get_class($actualizeCustomerContactDataRequestMidocoContactTypeItem) : sprintf('%s(%s)', gettype($actualizeCustomerContactDataRequestMidocoContactTypeItem), var_export($actualizeCustomerContactDataRequestMidocoContactTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactType property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactType property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -82,8 +82,8 @@ class ActualizeCustomerContactDataRequest extends AbstractStructBase
     /**
      * Set MidocoContactType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactType[] $midocoContactType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerContactDataRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactType[] $midocoContactType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerContactDataRequest
      */
     public function setMidocoContactType(?array $midocoContactType = null): self
     {
@@ -102,14 +102,14 @@ class ActualizeCustomerContactDataRequest extends AbstractStructBase
     /**
      * Add item to MidocoContactType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactType $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerContactDataRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactType $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerContactDataRequest
      */
-    public function addToMidocoContactType(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactType $item): self
+    public function addToMidocoContactType(\Pggns\MidocoApi\CrmSD\StructType\MidocoContactType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactType) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactType property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactType) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactType property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(2)
         if (is_array($this->MidocoContactType) && count($this->MidocoContactType) >= 2) {
@@ -130,7 +130,7 @@ class ActualizeCustomerContactDataRequest extends AbstractStructBase
     /**
      * Set waitForExecute value
      * @param bool $waitForExecute
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerContactDataRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerContactDataRequest
      */
     public function setWaitForExecute(?bool $waitForExecute = false): self
     {

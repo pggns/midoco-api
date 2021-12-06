@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class IbanBic extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\Order\StructType\IbanBic
+     * @return \Pggns\MidocoApi\Order\StructType\IbanBic
      */
     public function setIban(?string $iban = null): self
     {
@@ -70,7 +70,7 @@ class IbanBic extends AbstractStructBase
     /**
      * Set bic value
      * @param string $bic
-     * @return \Pggns\MidocoApi\Api\Order\StructType\IbanBic
+     * @return \Pggns\MidocoApi\Order\StructType\IbanBic
      */
     public function setBic(?string $bic = null): self
     {

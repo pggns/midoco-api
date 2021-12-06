@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetEinvoiceDocumentRequest extends AbstractStructBase
      * The MidocoEinvoiceDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoEinvoiceDocument
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoEinvoiceDocument|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoEinvoiceDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoEinvoiceDocument $MidocoEinvoiceDocument = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoEinvoiceDocument $MidocoEinvoiceDocument = null;
     /**
      * The providedDateFrom
      * @var string|null
@@ -41,12 +41,12 @@ class GetEinvoiceDocumentRequest extends AbstractStructBase
      * @uses GetEinvoiceDocumentRequest::setProvidedDateFrom()
      * @uses GetEinvoiceDocumentRequest::setProvidedDateTo()
      * @uses GetEinvoiceDocumentRequest::setIsProvided()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument
      * @param string $providedDateFrom
      * @param string $providedDateTo
      * @param bool $isProvided
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument = null, ?string $providedDateFrom = null, ?string $providedDateTo = null, ?bool $isProvided = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument = null, ?string $providedDateFrom = null, ?string $providedDateTo = null, ?bool $isProvided = null)
     {
         $this
             ->setMidocoEinvoiceDocument($midocoEinvoiceDocument)
@@ -56,18 +56,18 @@ class GetEinvoiceDocumentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoEinvoiceDocument value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoEinvoiceDocument|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoEinvoiceDocument|null
      */
-    public function getMidocoEinvoiceDocument(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoEinvoiceDocument
+    public function getMidocoEinvoiceDocument(): ?\Pggns\MidocoApi\Order\StructType\MidocoEinvoiceDocument
     {
         return $this->MidocoEinvoiceDocument;
     }
     /**
      * Set MidocoEinvoiceDocument value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEinvoiceDocumentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument
+     * @return \Pggns\MidocoApi\Order\StructType\GetEinvoiceDocumentRequest
      */
-    public function setMidocoEinvoiceDocument(?\Pggns\MidocoApi\Api\Order\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument = null): self
+    public function setMidocoEinvoiceDocument(?\Pggns\MidocoApi\Order\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument = null): self
     {
         $this->MidocoEinvoiceDocument = $midocoEinvoiceDocument;
         
@@ -84,7 +84,7 @@ class GetEinvoiceDocumentRequest extends AbstractStructBase
     /**
      * Set providedDateFrom value
      * @param string $providedDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEinvoiceDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEinvoiceDocumentRequest
      */
     public function setProvidedDateFrom(?string $providedDateFrom = null): self
     {
@@ -107,7 +107,7 @@ class GetEinvoiceDocumentRequest extends AbstractStructBase
     /**
      * Set providedDateTo value
      * @param string $providedDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEinvoiceDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEinvoiceDocumentRequest
      */
     public function setProvidedDateTo(?string $providedDateTo = null): self
     {
@@ -130,7 +130,7 @@ class GetEinvoiceDocumentRequest extends AbstractStructBase
     /**
      * Set isProvided value
      * @param bool $isProvided
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEinvoiceDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEinvoiceDocumentRequest
      */
     public function setIsProvided(?bool $isProvided = null): self
     {

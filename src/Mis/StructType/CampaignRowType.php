@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class CampaignRowType extends AbstractStructBase
      * Set columnContent value
      * @throws InvalidArgumentException
      * @param string[] $columnContent
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignRowType
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignRowType
      */
     public function setColumnContent(?array $columnContent = null): self
     {
@@ -85,7 +85,7 @@ class CampaignRowType extends AbstractStructBase
      * Add item to columnContent value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignRowType
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignRowType
      */
     public function addToColumnContent(string $item): self
     {

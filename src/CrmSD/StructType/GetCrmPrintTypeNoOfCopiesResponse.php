@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetCrmPrintTypeNoOfCopiesResponse extends AbstractStructBase
     /**
      * Set noOfCopies value
      * @param int $noOfCopies
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmPrintTypeNoOfCopiesResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmPrintTypeNoOfCopiesResponse
      */
     public function setNoOfCopies(?int $noOfCopies = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteOrdersDbiInfosRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrdersDbiInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrdersDbiInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrdersDbiInfo[]
      */
     protected ?array $MidocoOrdersDbiInfo = null;
     /**
@@ -53,7 +53,7 @@ class DeleteOrdersDbiInfosRequest extends AbstractStructBase
      * @param int $orderId
      * @param int $itemId
      * @param int $passengerAssignment
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrdersDbiInfo[] $midocoOrdersDbiInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrdersDbiInfo[] $midocoOrdersDbiInfo
      */
     public function __construct(?string $dbiInfoType = null, ?int $orderId = null, ?int $itemId = null, ?int $passengerAssignment = null, ?array $midocoOrdersDbiInfo = null)
     {
@@ -75,7 +75,7 @@ class DeleteOrdersDbiInfosRequest extends AbstractStructBase
     /**
      * Set dbiInfoType value
      * @param string $dbiInfoType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrdersDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrdersDbiInfosRequest
      */
     public function setDbiInfoType(?string $dbiInfoType = null): self
     {
@@ -98,7 +98,7 @@ class DeleteOrdersDbiInfosRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrdersDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrdersDbiInfosRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -121,7 +121,7 @@ class DeleteOrdersDbiInfosRequest extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrdersDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrdersDbiInfosRequest
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -144,7 +144,7 @@ class DeleteOrdersDbiInfosRequest extends AbstractStructBase
     /**
      * Set passengerAssignment value
      * @param int $passengerAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrdersDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrdersDbiInfosRequest
      */
     public function setPassengerAssignment(?int $passengerAssignment = null): self
     {
@@ -158,7 +158,7 @@ class DeleteOrdersDbiInfosRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrdersDbiInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrdersDbiInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrdersDbiInfo[]
      */
     public function getMidocoOrdersDbiInfo(): ?array
     {
@@ -179,12 +179,12 @@ class DeleteOrdersDbiInfosRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteOrdersDbiInfosRequestMidocoOrdersDbiInfoItem) {
             // validation for constraint: itemType
-            if (!$deleteOrdersDbiInfosRequestMidocoOrdersDbiInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrdersDbiInfo) {
+            if (!$deleteOrdersDbiInfosRequestMidocoOrdersDbiInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrdersDbiInfo) {
                 $invalidValues[] = is_object($deleteOrdersDbiInfosRequestMidocoOrdersDbiInfoItem) ? get_class($deleteOrdersDbiInfosRequestMidocoOrdersDbiInfoItem) : sprintf('%s(%s)', gettype($deleteOrdersDbiInfosRequestMidocoOrdersDbiInfoItem), var_export($deleteOrdersDbiInfosRequestMidocoOrdersDbiInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrdersDbiInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrdersDbiInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrdersDbiInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrdersDbiInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -193,8 +193,8 @@ class DeleteOrdersDbiInfosRequest extends AbstractStructBase
     /**
      * Set MidocoOrdersDbiInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrdersDbiInfo[] $midocoOrdersDbiInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrdersDbiInfosRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrdersDbiInfo[] $midocoOrdersDbiInfo
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrdersDbiInfosRequest
      */
     public function setMidocoOrdersDbiInfo(?array $midocoOrdersDbiInfo = null): self
     {
@@ -209,14 +209,14 @@ class DeleteOrdersDbiInfosRequest extends AbstractStructBase
     /**
      * Add item to MidocoOrdersDbiInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrdersDbiInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrdersDbiInfosRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrdersDbiInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrdersDbiInfosRequest
      */
-    public function addToMidocoOrdersDbiInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoOrdersDbiInfo $item): self
+    public function addToMidocoOrdersDbiInfo(\Pggns\MidocoApi\Order\StructType\MidocoOrdersDbiInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrdersDbiInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrdersDbiInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrdersDbiInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrdersDbiInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrdersDbiInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrdersDbiInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrdersDbiInfo[] = $item;
         

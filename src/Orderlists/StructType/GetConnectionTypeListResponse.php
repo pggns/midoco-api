@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetConnectionTypeListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoConnectionType
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectionTypeDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\ConnectionTypeDTO[]
      */
     protected ?array $MidocoConnectionType = null;
     /**
      * Constructor method for GetConnectionTypeListResponse
      * @uses GetConnectionTypeListResponse::setMidocoConnectionType()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectionTypeDTO[] $midocoConnectionType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ConnectionTypeDTO[] $midocoConnectionType
      */
     public function __construct(?array $midocoConnectionType = null)
     {
@@ -34,7 +34,7 @@ class GetConnectionTypeListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoConnectionType value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectionTypeDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ConnectionTypeDTO[]
      */
     public function getMidocoConnectionType(): ?array
     {
@@ -55,12 +55,12 @@ class GetConnectionTypeListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getConnectionTypeListResponseMidocoConnectionTypeItem) {
             // validation for constraint: itemType
-            if (!$getConnectionTypeListResponseMidocoConnectionTypeItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectionTypeDTO) {
+            if (!$getConnectionTypeListResponseMidocoConnectionTypeItem instanceof \Pggns\MidocoApi\Orderlists\StructType\ConnectionTypeDTO) {
                 $invalidValues[] = is_object($getConnectionTypeListResponseMidocoConnectionTypeItem) ? get_class($getConnectionTypeListResponseMidocoConnectionTypeItem) : sprintf('%s(%s)', gettype($getConnectionTypeListResponseMidocoConnectionTypeItem), var_export($getConnectionTypeListResponseMidocoConnectionTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoConnectionType property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectionTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoConnectionType property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\ConnectionTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetConnectionTypeListResponse extends AbstractStructBase
     /**
      * Set MidocoConnectionType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectionTypeDTO[] $midocoConnectionType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetConnectionTypeListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ConnectionTypeDTO[] $midocoConnectionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetConnectionTypeListResponse
      */
     public function setMidocoConnectionType(?array $midocoConnectionType = null): self
     {
@@ -85,14 +85,14 @@ class GetConnectionTypeListResponse extends AbstractStructBase
     /**
      * Add item to MidocoConnectionType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectionTypeDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetConnectionTypeListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ConnectionTypeDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetConnectionTypeListResponse
      */
-    public function addToMidocoConnectionType(\Pggns\MidocoApi\Api\Orderlists\StructType\ConnectionTypeDTO $item): self
+    public function addToMidocoConnectionType(\Pggns\MidocoApi\Orderlists\StructType\ConnectionTypeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectionTypeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoConnectionType property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectionTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\ConnectionTypeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoConnectionType property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\ConnectionTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoConnectionType[] = $item;
         

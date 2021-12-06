@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class ExecuteQueryReqType extends AbstractStructBase
      * The MidocoMisCustomerQuery
      * Meta information extracted from the WSDL
      * - ref: MidocoMisCustomerQuery
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO $MidocoMisCustomerQuery = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO $MidocoMisCustomerQuery = null;
     /**
      * The returnedPageSize
      * @var int|null
@@ -83,7 +83,7 @@ class ExecuteQueryReqType extends AbstractStructBase
      * @uses ExecuteQueryReqType::setOrgUnitToExecuteCentralCampaign()
      * @uses ExecuteQueryReqType::setOrgUnitToSave()
      * @uses ExecuteQueryReqType::setJustSave()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery
      * @param int $returnedPageSize
      * @param int $parentTemplateId
      * @param string $parentTemplateOrgUnit
@@ -95,7 +95,7 @@ class ExecuteQueryReqType extends AbstractStructBase
      * @param string $orgUnitToSave
      * @param bool $justSave
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery = null, ?int $returnedPageSize = null, ?int $parentTemplateId = null, ?string $parentTemplateOrgUnit = null, ?bool $isReadOnly = null, ?bool $justForEstimateOnly = null, ?string $estimateForOrgUnit = null, ?string $campaignType = null, ?string $orgUnitToExecuteCentralCampaign = null, ?string $orgUnitToSave = null, ?bool $justSave = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery = null, ?int $returnedPageSize = null, ?int $parentTemplateId = null, ?string $parentTemplateOrgUnit = null, ?bool $isReadOnly = null, ?bool $justForEstimateOnly = null, ?string $estimateForOrgUnit = null, ?string $campaignType = null, ?string $orgUnitToExecuteCentralCampaign = null, ?string $orgUnitToSave = null, ?bool $justSave = null)
     {
         $this
             ->setMidocoMisCustomerQuery($midocoMisCustomerQuery)
@@ -112,18 +112,18 @@ class ExecuteQueryReqType extends AbstractStructBase
     }
     /**
      * Get MidocoMisCustomerQuery value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO|null
      */
-    public function getMidocoMisCustomerQuery(): ?\Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO
+    public function getMidocoMisCustomerQuery(): ?\Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO
     {
         return $this->MidocoMisCustomerQuery;
     }
     /**
      * Set MidocoMisCustomerQuery value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExecuteQueryReqType
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery
+     * @return \Pggns\MidocoApi\Mis\StructType\ExecuteQueryReqType
      */
-    public function setMidocoMisCustomerQuery(?\Pggns\MidocoApi\Api\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery = null): self
+    public function setMidocoMisCustomerQuery(?\Pggns\MidocoApi\Mis\StructType\MisCustomerQueryDTO $midocoMisCustomerQuery = null): self
     {
         $this->MidocoMisCustomerQuery = $midocoMisCustomerQuery;
         
@@ -140,7 +140,7 @@ class ExecuteQueryReqType extends AbstractStructBase
     /**
      * Set returnedPageSize value
      * @param int $returnedPageSize
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExecuteQueryReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\ExecuteQueryReqType
      */
     public function setReturnedPageSize(?int $returnedPageSize = null): self
     {
@@ -163,7 +163,7 @@ class ExecuteQueryReqType extends AbstractStructBase
     /**
      * Set parentTemplateId value
      * @param int $parentTemplateId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExecuteQueryReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\ExecuteQueryReqType
      */
     public function setParentTemplateId(?int $parentTemplateId = null): self
     {
@@ -186,7 +186,7 @@ class ExecuteQueryReqType extends AbstractStructBase
     /**
      * Set parentTemplateOrgUnit value
      * @param string $parentTemplateOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExecuteQueryReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\ExecuteQueryReqType
      */
     public function setParentTemplateOrgUnit(?string $parentTemplateOrgUnit = null): self
     {
@@ -209,7 +209,7 @@ class ExecuteQueryReqType extends AbstractStructBase
     /**
      * Set isReadOnly value
      * @param bool $isReadOnly
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExecuteQueryReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\ExecuteQueryReqType
      */
     public function setIsReadOnly(?bool $isReadOnly = null): self
     {
@@ -232,7 +232,7 @@ class ExecuteQueryReqType extends AbstractStructBase
     /**
      * Set justForEstimateOnly value
      * @param bool $justForEstimateOnly
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExecuteQueryReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\ExecuteQueryReqType
      */
     public function setJustForEstimateOnly(?bool $justForEstimateOnly = null): self
     {
@@ -255,7 +255,7 @@ class ExecuteQueryReqType extends AbstractStructBase
     /**
      * Set estimateForOrgUnit value
      * @param string $estimateForOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExecuteQueryReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\ExecuteQueryReqType
      */
     public function setEstimateForOrgUnit(?string $estimateForOrgUnit = null): self
     {
@@ -278,7 +278,7 @@ class ExecuteQueryReqType extends AbstractStructBase
     /**
      * Set campaignType value
      * @param string $campaignType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExecuteQueryReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\ExecuteQueryReqType
      */
     public function setCampaignType(?string $campaignType = null): self
     {
@@ -301,7 +301,7 @@ class ExecuteQueryReqType extends AbstractStructBase
     /**
      * Set orgUnitToExecuteCentralCampaign value
      * @param string $orgUnitToExecuteCentralCampaign
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExecuteQueryReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\ExecuteQueryReqType
      */
     public function setOrgUnitToExecuteCentralCampaign(?string $orgUnitToExecuteCentralCampaign = null): self
     {
@@ -324,7 +324,7 @@ class ExecuteQueryReqType extends AbstractStructBase
     /**
      * Set orgUnitToSave value
      * @param string $orgUnitToSave
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExecuteQueryReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\ExecuteQueryReqType
      */
     public function setOrgUnitToSave(?string $orgUnitToSave = null): self
     {
@@ -347,7 +347,7 @@ class ExecuteQueryReqType extends AbstractStructBase
     /**
      * Set justSave value
      * @param bool $justSave
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExecuteQueryReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\ExecuteQueryReqType
      */
     public function setJustSave(?bool $justSave = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: GroupAdvisorSettlementDetail
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlementDetail[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlementDetail[]
      */
     protected ?array $GroupAdvisorSettlementDetail = null;
     /**
@@ -163,7 +163,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
      * @uses GroupAdvisorSettlement::setHmrTotalPartPercent()
      * @uses GroupAdvisorSettlement::setNoCommissionTotalPartPercent()
      * @uses GroupAdvisorSettlement::setAllBookingsTotalAmount()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlementDetail[] $groupAdvisorSettlementDetail
+     * @param \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlementDetail[] $groupAdvisorSettlementDetail
      * @param string $mediatorId
      * @param string $mediatorName
      * @param float $totalAmount
@@ -218,7 +218,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     }
     /**
      * Get GroupAdvisorSettlementDetail value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlementDetail[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlementDetail[]
      */
     public function getGroupAdvisorSettlementDetail(): ?array
     {
@@ -239,12 +239,12 @@ class GroupAdvisorSettlement extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $groupAdvisorSettlementGroupAdvisorSettlementDetailItem) {
             // validation for constraint: itemType
-            if (!$groupAdvisorSettlementGroupAdvisorSettlementDetailItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlementDetail) {
+            if (!$groupAdvisorSettlementGroupAdvisorSettlementDetailItem instanceof \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlementDetail) {
                 $invalidValues[] = is_object($groupAdvisorSettlementGroupAdvisorSettlementDetailItem) ? get_class($groupAdvisorSettlementGroupAdvisorSettlementDetailItem) : sprintf('%s(%s)', gettype($groupAdvisorSettlementGroupAdvisorSettlementDetailItem), var_export($groupAdvisorSettlementGroupAdvisorSettlementDetailItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The GroupAdvisorSettlementDetail property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlementDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The GroupAdvisorSettlementDetail property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlementDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -253,8 +253,8 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set GroupAdvisorSettlementDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlementDetail[] $groupAdvisorSettlementDetail
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @param \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlementDetail[] $groupAdvisorSettlementDetail
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setGroupAdvisorSettlementDetail(?array $groupAdvisorSettlementDetail = null): self
     {
@@ -269,14 +269,14 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Add item to GroupAdvisorSettlementDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlementDetail $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @param \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlementDetail $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
-    public function addToGroupAdvisorSettlementDetail(\Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlementDetail $item): self
+    public function addToGroupAdvisorSettlementDetail(\Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlementDetail $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlementDetail) {
-            throw new InvalidArgumentException(sprintf('The GroupAdvisorSettlementDetail property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlementDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlementDetail) {
+            throw new InvalidArgumentException(sprintf('The GroupAdvisorSettlementDetail property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlementDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->GroupAdvisorSettlementDetail[] = $item;
         
@@ -293,7 +293,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -316,7 +316,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set mediatorName value
      * @param string $mediatorName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setMediatorName(?string $mediatorName = null): self
     {
@@ -339,7 +339,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -362,7 +362,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set commissionAmount value
      * @param float $commissionAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setCommissionAmount(?float $commissionAmount = null): self
     {
@@ -385,7 +385,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set fromDate value
      * @param string $fromDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setFromDate(?string $fromDate = null): self
     {
@@ -408,7 +408,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set toDate value
      * @param string $toDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setToDate(?string $toDate = null): self
     {
@@ -431,7 +431,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set wotTotalAmount value
      * @param float $wotTotalAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setWotTotalAmount(?float $wotTotalAmount = null): self
     {
@@ -454,7 +454,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set specialTotalAmount value
      * @param float $specialTotalAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setSpecialTotalAmount(?float $specialTotalAmount = null): self
     {
@@ -477,7 +477,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set flightTotalAmount value
      * @param float $flightTotalAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setFlightTotalAmount(?float $flightTotalAmount = null): self
     {
@@ -500,7 +500,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set hmrTotalAmount value
      * @param float $hmrTotalAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setHmrTotalAmount(?float $hmrTotalAmount = null): self
     {
@@ -523,7 +523,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set noCommissionTotalAmount value
      * @param float $noCommissionTotalAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setNoCommissionTotalAmount(?float $noCommissionTotalAmount = null): self
     {
@@ -546,7 +546,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set totalNoOfBookings value
      * @param int $totalNoOfBookings
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setTotalNoOfBookings(?int $totalNoOfBookings = null): self
     {
@@ -569,7 +569,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set specialNoOfBookings value
      * @param int $specialNoOfBookings
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setSpecialNoOfBookings(?int $specialNoOfBookings = null): self
     {
@@ -592,7 +592,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set wotNoOfBookings value
      * @param int $wotNoOfBookings
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setWotNoOfBookings(?int $wotNoOfBookings = null): self
     {
@@ -615,7 +615,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set flightNoOfBookings value
      * @param int $flightNoOfBookings
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setFlightNoOfBookings(?int $flightNoOfBookings = null): self
     {
@@ -638,7 +638,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set hmrNoOfBookings value
      * @param int $hmrNoOfBookings
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setHmrNoOfBookings(?int $hmrNoOfBookings = null): self
     {
@@ -661,7 +661,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set noCommissionNoOfBookings value
      * @param int $noCommissionNoOfBookings
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setNoCommissionNoOfBookings(?int $noCommissionNoOfBookings = null): self
     {
@@ -684,7 +684,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set wotTotalPartPercent value
      * @param float $wotTotalPartPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setWotTotalPartPercent(?float $wotTotalPartPercent = null): self
     {
@@ -707,7 +707,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set specialTotalPartPercent value
      * @param float $specialTotalPartPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setSpecialTotalPartPercent(?float $specialTotalPartPercent = null): self
     {
@@ -730,7 +730,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set flightTotalPartPercent value
      * @param float $flightTotalPartPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setFlightTotalPartPercent(?float $flightTotalPartPercent = null): self
     {
@@ -753,7 +753,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set hmrTotalPartPercent value
      * @param float $hmrTotalPartPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setHmrTotalPartPercent(?float $hmrTotalPartPercent = null): self
     {
@@ -776,7 +776,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set noCommissionTotalPartPercent value
      * @param float $noCommissionTotalPartPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setNoCommissionTotalPartPercent(?float $noCommissionTotalPartPercent = null): self
     {
@@ -799,7 +799,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     /**
      * Set allBookingsTotalAmount value
      * @param float $allBookingsTotalAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorSettlement
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorSettlement
      */
     public function setAllBookingsTotalAmount(?float $allBookingsTotalAmount = null): self
     {

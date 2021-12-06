@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MidocoDirectDebitor extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoDirectDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoDirectDebitor
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -110,7 +110,7 @@ class MidocoDirectDebitor extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoDirectDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoDirectDebitor
      */
     public function setDescription(?string $description = null): self
     {
@@ -133,7 +133,7 @@ class MidocoDirectDebitor extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoDirectDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoDirectDebitor
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -156,7 +156,7 @@ class MidocoDirectDebitor extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoDirectDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoDirectDebitor
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -179,7 +179,7 @@ class MidocoDirectDebitor extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoDirectDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoDirectDebitor
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -202,7 +202,7 @@ class MidocoDirectDebitor extends AbstractStructBase
     /**
      * Set isDeleted value
      * @param bool $isDeleted
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoDirectDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoDirectDebitor
      */
     public function setIsDeleted(?bool $isDeleted = null): self
     {
@@ -225,7 +225,7 @@ class MidocoDirectDebitor extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoDirectDebitor
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoDirectDebitor
      */
     public function setCurrency(?string $currency = null): self
     {

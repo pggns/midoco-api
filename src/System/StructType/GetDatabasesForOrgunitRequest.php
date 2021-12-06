@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetDatabasesForOrgunitRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetDatabasesForOrgunitRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetDatabasesForOrgunitRequest
      */
     public function setType(?string $type = null): self
     {
@@ -70,7 +70,7 @@ class GetDatabasesForOrgunitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetDatabasesForOrgunitRequest
+     * @return \Pggns\MidocoApi\System\StructType\GetDatabasesForOrgunitRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

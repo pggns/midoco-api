@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MidocoKaeraTravelData extends AbstractStructBase
     /**
      * Set bookingdate value
      * @param string $bookingdate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraTravelData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraTravelData
      */
     public function setBookingdate(?string $bookingdate = null): self
     {
@@ -134,7 +134,7 @@ class MidocoKaeraTravelData extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraTravelData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraTravelData
      */
     public function setCountry(?string $country = null): self
     {
@@ -157,7 +157,7 @@ class MidocoKaeraTravelData extends AbstractStructBase
     /**
      * Set customerfirstname value
      * @param string $customerfirstname
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraTravelData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraTravelData
      */
     public function setCustomerfirstname(?string $customerfirstname = null): self
     {
@@ -180,7 +180,7 @@ class MidocoKaeraTravelData extends AbstractStructBase
     /**
      * Set customername value
      * @param string $customername
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraTravelData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraTravelData
      */
     public function setCustomername(?string $customername = null): self
     {
@@ -203,7 +203,7 @@ class MidocoKaeraTravelData extends AbstractStructBase
     /**
      * Set numberpersons value
      * @param int $numberpersons
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraTravelData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraTravelData
      */
     public function setNumberpersons(?int $numberpersons = null): self
     {
@@ -226,7 +226,7 @@ class MidocoKaeraTravelData extends AbstractStructBase
     /**
      * Set travelcost value
      * @param float $travelcost
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraTravelData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraTravelData
      */
     public function setTravelcost(?float $travelcost = null): self
     {
@@ -249,7 +249,7 @@ class MidocoKaeraTravelData extends AbstractStructBase
     /**
      * Set travelend value
      * @param string $travelend
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraTravelData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraTravelData
      */
     public function setTravelend(?string $travelend = null): self
     {
@@ -272,7 +272,7 @@ class MidocoKaeraTravelData extends AbstractStructBase
     /**
      * Set travelstart value
      * @param string $travelstart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraTravelData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraTravelData
      */
     public function setTravelstart(?string $travelstart = null): self
     {
@@ -295,7 +295,7 @@ class MidocoKaeraTravelData extends AbstractStructBase
     /**
      * Set traveltype value
      * @param int $traveltype
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraTravelData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraTravelData
      */
     public function setTraveltype(?int $traveltype = null): self
     {
@@ -318,7 +318,7 @@ class MidocoKaeraTravelData extends AbstractStructBase
     /**
      * Set travelCategory value
      * @param int $travelCategory
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoKaeraTravelData
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoKaeraTravelData
      */
     public function setTravelCategory(?int $travelCategory = null): self
     {

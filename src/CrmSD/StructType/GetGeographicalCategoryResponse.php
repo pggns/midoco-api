@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetGeographicalCategoryResponse extends AbstractStructBase
     /**
      * Set geographicalCategory value
      * @param string $geographicalCategory
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetGeographicalCategoryResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetGeographicalCategoryResponse
      */
     public function setGeographicalCategory(?string $geographicalCategory = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class BlacklistedCcCardDTO extends AbstractStructBase
     /**
      * Set token value
      * @param string $token
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BlacklistedCcCardDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BlacklistedCcCardDTO
      */
     public function setToken(?string $token = null): self
     {

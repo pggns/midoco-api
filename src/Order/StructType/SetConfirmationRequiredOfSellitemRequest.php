@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -24,7 +24,7 @@ class SetConfirmationRequiredOfSellitemRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierMailNotReceivedInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SupplierMailNotReceivedInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\SupplierMailNotReceivedInfo[]
      */
     protected ?array $MidocoSupplierMailNotReceivedInfo = null;
     /**
@@ -32,7 +32,7 @@ class SetConfirmationRequiredOfSellitemRequest extends AbstractStructBase
      * @uses SetConfirmationRequiredOfSellitemRequest::setSupplierId()
      * @uses SetConfirmationRequiredOfSellitemRequest::setMidocoSupplierMailNotReceivedInfo()
      * @param string $supplierId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierMailNotReceivedInfo[] $midocoSupplierMailNotReceivedInfo
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierMailNotReceivedInfo[] $midocoSupplierMailNotReceivedInfo
      */
     public function __construct(?string $supplierId = null, ?array $midocoSupplierMailNotReceivedInfo = null)
     {
@@ -51,7 +51,7 @@ class SetConfirmationRequiredOfSellitemRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SetConfirmationRequiredOfSellitemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SetConfirmationRequiredOfSellitemRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -65,7 +65,7 @@ class SetConfirmationRequiredOfSellitemRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierMailNotReceivedInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierMailNotReceivedInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierMailNotReceivedInfo[]
      */
     public function getMidocoSupplierMailNotReceivedInfo(): ?array
     {
@@ -86,12 +86,12 @@ class SetConfirmationRequiredOfSellitemRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $setConfirmationRequiredOfSellitemRequestMidocoSupplierMailNotReceivedInfoItem) {
             // validation for constraint: itemType
-            if (!$setConfirmationRequiredOfSellitemRequestMidocoSupplierMailNotReceivedInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplierMailNotReceivedInfo) {
+            if (!$setConfirmationRequiredOfSellitemRequestMidocoSupplierMailNotReceivedInfoItem instanceof \Pggns\MidocoApi\Order\StructType\SupplierMailNotReceivedInfo) {
                 $invalidValues[] = is_object($setConfirmationRequiredOfSellitemRequestMidocoSupplierMailNotReceivedInfoItem) ? get_class($setConfirmationRequiredOfSellitemRequestMidocoSupplierMailNotReceivedInfoItem) : sprintf('%s(%s)', gettype($setConfirmationRequiredOfSellitemRequestMidocoSupplierMailNotReceivedInfoItem), var_export($setConfirmationRequiredOfSellitemRequestMidocoSupplierMailNotReceivedInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierMailNotReceivedInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplierMailNotReceivedInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierMailNotReceivedInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplierMailNotReceivedInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -100,8 +100,8 @@ class SetConfirmationRequiredOfSellitemRequest extends AbstractStructBase
     /**
      * Set MidocoSupplierMailNotReceivedInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierMailNotReceivedInfo[] $midocoSupplierMailNotReceivedInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SetConfirmationRequiredOfSellitemRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierMailNotReceivedInfo[] $midocoSupplierMailNotReceivedInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SetConfirmationRequiredOfSellitemRequest
      */
     public function setMidocoSupplierMailNotReceivedInfo(?array $midocoSupplierMailNotReceivedInfo = null): self
     {
@@ -116,14 +116,14 @@ class SetConfirmationRequiredOfSellitemRequest extends AbstractStructBase
     /**
      * Add item to MidocoSupplierMailNotReceivedInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierMailNotReceivedInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SetConfirmationRequiredOfSellitemRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierMailNotReceivedInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\SetConfirmationRequiredOfSellitemRequest
      */
-    public function addToMidocoSupplierMailNotReceivedInfo(\Pggns\MidocoApi\Api\Order\StructType\SupplierMailNotReceivedInfo $item): self
+    public function addToMidocoSupplierMailNotReceivedInfo(\Pggns\MidocoApi\Order\StructType\SupplierMailNotReceivedInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SupplierMailNotReceivedInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierMailNotReceivedInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SupplierMailNotReceivedInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SupplierMailNotReceivedInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierMailNotReceivedInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\SupplierMailNotReceivedInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierMailNotReceivedInfo[] = $item;
         

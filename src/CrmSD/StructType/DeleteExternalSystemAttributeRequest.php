@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class DeleteExternalSystemAttributeRequest extends AbstractStructBase
     /**
      * Set systemName value
      * @param string $systemName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteExternalSystemAttributeRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteExternalSystemAttributeRequest
      */
     public function setSystemName(?string $systemName = null): self
     {
@@ -78,7 +78,7 @@ class DeleteExternalSystemAttributeRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteExternalSystemAttributeRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteExternalSystemAttributeRequest
      */
     public function setType(?string $type = null): self
     {
@@ -101,7 +101,7 @@ class DeleteExternalSystemAttributeRequest extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteExternalSystemAttributeRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteExternalSystemAttributeRequest
      */
     public function setAttributeName(?string $attributeName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class DeleteDbiDefsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDbiDefs
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefs[]
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefs[]
      */
     protected ?array $MidocoDbiDefs = null;
     /**
      * Constructor method for DeleteDbiDefsResponse
      * @uses DeleteDbiDefsResponse::setMidocoDbiDefs()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefs[] $midocoDbiDefs
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefs[] $midocoDbiDefs
      */
     public function __construct(?array $midocoDbiDefs = null)
     {
@@ -34,7 +34,7 @@ class DeleteDbiDefsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDbiDefs value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefs[]
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefs[]
      */
     public function getMidocoDbiDefs(): ?array
     {
@@ -55,12 +55,12 @@ class DeleteDbiDefsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteDbiDefsResponseMidocoDbiDefsItem) {
             // validation for constraint: itemType
-            if (!$deleteDbiDefsResponseMidocoDbiDefsItem instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefs) {
+            if (!$deleteDbiDefsResponseMidocoDbiDefsItem instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefs) {
                 $invalidValues[] = is_object($deleteDbiDefsResponseMidocoDbiDefsItem) ? get_class($deleteDbiDefsResponseMidocoDbiDefsItem) : sprintf('%s(%s)', gettype($deleteDbiDefsResponseMidocoDbiDefsItem), var_export($deleteDbiDefsResponseMidocoDbiDefsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDbiDefs property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefs, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDbiDefs property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefs, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class DeleteDbiDefsResponse extends AbstractStructBase
     /**
      * Set MidocoDbiDefs value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefs[] $midocoDbiDefs
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DeleteDbiDefsResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefs[] $midocoDbiDefs
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DeleteDbiDefsResponse
      */
     public function setMidocoDbiDefs(?array $midocoDbiDefs = null): self
     {
@@ -85,14 +85,14 @@ class DeleteDbiDefsResponse extends AbstractStructBase
     /**
      * Add item to MidocoDbiDefs value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefs $item
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DeleteDbiDefsResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefs $item
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DeleteDbiDefsResponse
      */
-    public function addToMidocoDbiDefs(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefs $item): self
+    public function addToMidocoDbiDefs(\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefs $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefs) {
-            throw new InvalidArgumentException(sprintf('The MidocoDbiDefs property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDbiDefs, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefs) {
+            throw new InvalidArgumentException(sprintf('The MidocoDbiDefs property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDbiDefs, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDbiDefs[] = $item;
         

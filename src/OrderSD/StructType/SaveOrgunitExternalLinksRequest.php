@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveOrgunitExternalLinksRequest extends AbstractStructBase
      * The MidocoOrgunitExternalLink
      * Meta information extracted from the WSDL
      * - ref: MidocoOrgunitExternalLink
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitExternalLinkDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\OrgunitExternalLinkDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitExternalLinkDTO $MidocoOrgunitExternalLink = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\OrgunitExternalLinkDTO $MidocoOrgunitExternalLink = null;
     /**
      * Constructor method for SaveOrgunitExternalLinksRequest
      * @uses SaveOrgunitExternalLinksRequest::setMidocoOrgunitExternalLink()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink
+     * @param \Pggns\MidocoApi\OrderSD\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink = null)
     {
         $this
             ->setMidocoOrgunitExternalLink($midocoOrgunitExternalLink);
     }
     /**
      * Get MidocoOrgunitExternalLink value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitExternalLinkDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\OrgunitExternalLinkDTO|null
      */
-    public function getMidocoOrgunitExternalLink(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitExternalLinkDTO
+    public function getMidocoOrgunitExternalLink(): ?\Pggns\MidocoApi\OrderSD\StructType\OrgunitExternalLinkDTO
     {
         return $this->MidocoOrgunitExternalLink;
     }
     /**
      * Set MidocoOrgunitExternalLink value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveOrgunitExternalLinksRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveOrgunitExternalLinksRequest
      */
-    public function setMidocoOrgunitExternalLink(?\Pggns\MidocoApi\Api\OrderSD\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink = null): self
+    public function setMidocoOrgunitExternalLink(?\Pggns\MidocoApi\OrderSD\StructType\OrgunitExternalLinkDTO $midocoOrgunitExternalLink = null): self
     {
         $this->MidocoOrgunitExternalLink = $midocoOrgunitExternalLink;
         

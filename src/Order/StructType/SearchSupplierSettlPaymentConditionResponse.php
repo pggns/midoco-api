@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchSupplierSettlPaymentConditionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierSettlPaymentCondition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlPaymentCondition[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlPaymentCondition[]
      */
     protected ?array $MidocoSupplierSettlPaymentCondition = null;
     /**
      * Constructor method for SearchSupplierSettlPaymentConditionResponse
      * @uses SearchSupplierSettlPaymentConditionResponse::setMidocoSupplierSettlPaymentCondition()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlPaymentCondition[] $midocoSupplierSettlPaymentCondition
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlPaymentCondition[] $midocoSupplierSettlPaymentCondition
      */
     public function __construct(?array $midocoSupplierSettlPaymentCondition = null)
     {
@@ -34,7 +34,7 @@ class SearchSupplierSettlPaymentConditionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierSettlPaymentCondition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlPaymentCondition[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlPaymentCondition[]
      */
     public function getMidocoSupplierSettlPaymentCondition(): ?array
     {
@@ -55,12 +55,12 @@ class SearchSupplierSettlPaymentConditionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchSupplierSettlPaymentConditionResponseMidocoSupplierSettlPaymentConditionItem) {
             // validation for constraint: itemType
-            if (!$searchSupplierSettlPaymentConditionResponseMidocoSupplierSettlPaymentConditionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlPaymentCondition) {
+            if (!$searchSupplierSettlPaymentConditionResponseMidocoSupplierSettlPaymentConditionItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlPaymentCondition) {
                 $invalidValues[] = is_object($searchSupplierSettlPaymentConditionResponseMidocoSupplierSettlPaymentConditionItem) ? get_class($searchSupplierSettlPaymentConditionResponseMidocoSupplierSettlPaymentConditionItem) : sprintf('%s(%s)', gettype($searchSupplierSettlPaymentConditionResponseMidocoSupplierSettlPaymentConditionItem), var_export($searchSupplierSettlPaymentConditionResponseMidocoSupplierSettlPaymentConditionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierSettlPaymentCondition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlPaymentCondition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierSettlPaymentCondition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlPaymentCondition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchSupplierSettlPaymentConditionResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierSettlPaymentCondition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlPaymentCondition[] $midocoSupplierSettlPaymentCondition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchSupplierSettlPaymentConditionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlPaymentCondition[] $midocoSupplierSettlPaymentCondition
+     * @return \Pggns\MidocoApi\Order\StructType\SearchSupplierSettlPaymentConditionResponse
      */
     public function setMidocoSupplierSettlPaymentCondition(?array $midocoSupplierSettlPaymentCondition = null): self
     {
@@ -85,14 +85,14 @@ class SearchSupplierSettlPaymentConditionResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierSettlPaymentCondition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlPaymentCondition $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchSupplierSettlPaymentConditionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlPaymentCondition $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchSupplierSettlPaymentConditionResponse
      */
-    public function addToMidocoSupplierSettlPaymentCondition(\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlPaymentCondition $item): self
+    public function addToMidocoSupplierSettlPaymentCondition(\Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlPaymentCondition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlPaymentCondition) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierSettlPaymentCondition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlPaymentCondition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlPaymentCondition) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierSettlPaymentCondition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlPaymentCondition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierSettlPaymentCondition[] = $item;
         

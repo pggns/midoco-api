@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class MediatorBillingDetailsExt extends MediatorBillingDetailDTO
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailsExt
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailsExt
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -126,7 +126,7 @@ class MediatorBillingDetailsExt extends MediatorBillingDetailDTO
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailsExt
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailsExt
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -149,7 +149,7 @@ class MediatorBillingDetailsExt extends MediatorBillingDetailDTO
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailsExt
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailsExt
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -172,7 +172,7 @@ class MediatorBillingDetailsExt extends MediatorBillingDetailDTO
     /**
      * Set pax value
      * @param int $pax
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailsExt
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailsExt
      */
     public function setPax(?int $pax = null): self
     {
@@ -195,7 +195,7 @@ class MediatorBillingDetailsExt extends MediatorBillingDetailDTO
     /**
      * Set bookingCreationDate value
      * @param string $bookingCreationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailsExt
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailsExt
      */
     public function setBookingCreationDate(?string $bookingCreationDate = null): self
     {
@@ -218,7 +218,7 @@ class MediatorBillingDetailsExt extends MediatorBillingDetailDTO
     /**
      * Set bookingCount value
      * @param int $bookingCount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailsExt
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailsExt
      */
     public function setBookingCount(?int $bookingCount = null): self
     {
@@ -241,7 +241,7 @@ class MediatorBillingDetailsExt extends MediatorBillingDetailDTO
     /**
      * Set agencySortName value
      * @param string $agencySortName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailsExt
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailsExt
      */
     public function setAgencySortName(?string $agencySortName = null): self
     {
@@ -264,7 +264,7 @@ class MediatorBillingDetailsExt extends MediatorBillingDetailDTO
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailsExt
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailsExt
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -287,7 +287,7 @@ class MediatorBillingDetailsExt extends MediatorBillingDetailDTO
     /**
      * Set mediatorAffiliate value
      * @param string $mediatorAffiliate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorBillingDetailsExt
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorBillingDetailsExt
      */
     public function setMediatorAffiliate(?string $mediatorAffiliate = null): self
     {

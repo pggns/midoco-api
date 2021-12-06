@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoAssessorInfo extends InsurerInfoType
     /**
      * Set insuranceCode value
      * @param string $insuranceCode
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoAssessorInfo
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoAssessorInfo
      */
     public function setInsuranceCode(?string $insuranceCode = null): self
     {
@@ -70,7 +70,7 @@ class MidocoAssessorInfo extends InsurerInfoType
     /**
      * Set isAssessor value
      * @param bool $isAssessor
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoAssessorInfo
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoAssessorInfo
      */
     public function setIsAssessor(?bool $isAssessor = null): self
     {

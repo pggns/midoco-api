@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveDestinationAutoRemarkRequest extends AbstractStructBase
      * The MidocoDestinationAutoRemark
      * Meta information extracted from the WSDL
      * - ref: MidocoDestinationAutoRemark
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\DestinationAutoRemarkDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\DestinationAutoRemarkDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\DestinationAutoRemarkDTO $MidocoDestinationAutoRemark = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\DestinationAutoRemarkDTO $MidocoDestinationAutoRemark = null;
     /**
      * Constructor method for SaveDestinationAutoRemarkRequest
      * @uses SaveDestinationAutoRemarkRequest::setMidocoDestinationAutoRemark()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\DestinationAutoRemarkDTO $midocoDestinationAutoRemark
+     * @param \Pggns\MidocoApi\Documents\StructType\DestinationAutoRemarkDTO $midocoDestinationAutoRemark
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\DestinationAutoRemarkDTO $midocoDestinationAutoRemark = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\DestinationAutoRemarkDTO $midocoDestinationAutoRemark = null)
     {
         $this
             ->setMidocoDestinationAutoRemark($midocoDestinationAutoRemark);
     }
     /**
      * Get MidocoDestinationAutoRemark value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DestinationAutoRemarkDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\DestinationAutoRemarkDTO|null
      */
-    public function getMidocoDestinationAutoRemark(): ?\Pggns\MidocoApi\Api\Documents\StructType\DestinationAutoRemarkDTO
+    public function getMidocoDestinationAutoRemark(): ?\Pggns\MidocoApi\Documents\StructType\DestinationAutoRemarkDTO
     {
         return $this->MidocoDestinationAutoRemark;
     }
     /**
      * Set MidocoDestinationAutoRemark value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\DestinationAutoRemarkDTO $midocoDestinationAutoRemark
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveDestinationAutoRemarkRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\DestinationAutoRemarkDTO $midocoDestinationAutoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveDestinationAutoRemarkRequest
      */
-    public function setMidocoDestinationAutoRemark(?\Pggns\MidocoApi\Api\Documents\StructType\DestinationAutoRemarkDTO $midocoDestinationAutoRemark = null): self
+    public function setMidocoDestinationAutoRemark(?\Pggns\MidocoApi\Documents\StructType\DestinationAutoRemarkDTO $midocoDestinationAutoRemark = null): self
     {
         $this->MidocoDestinationAutoRemark = $midocoDestinationAutoRemark;
         

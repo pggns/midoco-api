@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
      * The MidocoCrmCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
      * The MidocoSelectedCrmPersonTraveller
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSelectedCrmPersonTraveller
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[]
      */
     protected ?array $MidocoSelectedCrmPersonTraveller = null;
     /**
@@ -61,14 +61,14 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
      * @uses GetIrisPlusExportStringRequest::setIsExportCustomer()
      * @uses GetIrisPlusExportStringRequest::setExportBirthday()
      * @uses GetIrisPlusExportStringRequest::setExportAge()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[] $midocoSelectedCrmPersonTraveller
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[] $midocoSelectedCrmPersonTraveller
      * @param bool $isNewConnected
      * @param bool $isExportCustomer
      * @param bool $exportBirthday
      * @param bool $exportAge
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?array $midocoSelectedCrmPersonTraveller = null, ?bool $isNewConnected = false, ?bool $isExportCustomer = false, ?bool $exportBirthday = null, ?bool $exportAge = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?array $midocoSelectedCrmPersonTraveller = null, ?bool $isNewConnected = false, ?bool $isExportCustomer = false, ?bool $exportBirthday = null, ?bool $exportAge = null)
     {
         $this
             ->setMidocoCrmCustomer($midocoCrmCustomer)
@@ -80,18 +80,18 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetIrisPlusExportStringRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetIrisPlusExportStringRequest
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         
@@ -99,7 +99,7 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSelectedCrmPersonTraveller value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[]
      */
     public function getMidocoSelectedCrmPersonTraveller(): ?array
     {
@@ -120,12 +120,12 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getIrisPlusExportStringRequestMidocoSelectedCrmPersonTravellerItem) {
             // validation for constraint: itemType
-            if (!$getIrisPlusExportStringRequestMidocoSelectedCrmPersonTravellerItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller) {
+            if (!$getIrisPlusExportStringRequestMidocoSelectedCrmPersonTravellerItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller) {
                 $invalidValues[] = is_object($getIrisPlusExportStringRequestMidocoSelectedCrmPersonTravellerItem) ? get_class($getIrisPlusExportStringRequestMidocoSelectedCrmPersonTravellerItem) : sprintf('%s(%s)', gettype($getIrisPlusExportStringRequestMidocoSelectedCrmPersonTravellerItem), var_export($getIrisPlusExportStringRequestMidocoSelectedCrmPersonTravellerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSelectedCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSelectedCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -134,8 +134,8 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
     /**
      * Set MidocoSelectedCrmPersonTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[] $midocoSelectedCrmPersonTraveller
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetIrisPlusExportStringRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[] $midocoSelectedCrmPersonTraveller
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetIrisPlusExportStringRequest
      */
     public function setMidocoSelectedCrmPersonTraveller(?array $midocoSelectedCrmPersonTraveller = null): self
     {
@@ -150,14 +150,14 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
     /**
      * Add item to MidocoSelectedCrmPersonTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetIrisPlusExportStringRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetIrisPlusExportStringRequest
      */
-    public function addToMidocoSelectedCrmPersonTraveller(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller $item): self
+    public function addToMidocoSelectedCrmPersonTraveller(\Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller) {
-            throw new InvalidArgumentException(sprintf('The MidocoSelectedCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller) {
+            throw new InvalidArgumentException(sprintf('The MidocoSelectedCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSelectedCrmPersonTraveller[] = $item;
         
@@ -174,7 +174,7 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
     /**
      * Set isNewConnected value
      * @param bool $isNewConnected
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetIrisPlusExportStringRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetIrisPlusExportStringRequest
      */
     public function setIsNewConnected(?bool $isNewConnected = false): self
     {
@@ -197,7 +197,7 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
     /**
      * Set isExportCustomer value
      * @param bool $isExportCustomer
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetIrisPlusExportStringRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetIrisPlusExportStringRequest
      */
     public function setIsExportCustomer(?bool $isExportCustomer = false): self
     {
@@ -220,7 +220,7 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
     /**
      * Set exportBirthday value
      * @param bool $exportBirthday
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetIrisPlusExportStringRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetIrisPlusExportStringRequest
      */
     public function setExportBirthday(?bool $exportBirthday = null): self
     {
@@ -243,7 +243,7 @@ class GetIrisPlusExportStringRequest extends AbstractStructBase
     /**
      * Set exportAge value
      * @param bool $exportAge
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetIrisPlusExportStringRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetIrisPlusExportStringRequest
      */
     public function setExportAge(?bool $exportAge = null): self
     {

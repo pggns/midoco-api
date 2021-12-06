@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ReprintMidocoSettlementRequest extends AbstractStructBase
     /**
      * Set reprintDocumentId value
      * @param int $reprintDocumentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReprintMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReprintMidocoSettlementRequest
      */
     public function setReprintDocumentId(?int $reprintDocumentId = null): self
     {

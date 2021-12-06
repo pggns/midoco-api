@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteMfDefRequest extends AbstractStructBase
      * The MidocoMfDef
      * Meta information extracted from the WSDL
      * - ref: MidocoMfDef
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMfDef|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMfDef|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMfDef $MidocoMfDef = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMfDef $MidocoMfDef = null;
     /**
      * Constructor method for DeleteMfDefRequest
      * @uses DeleteMfDefRequest::setMidocoMfDef()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMfDef $midocoMfDef
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMfDef $midocoMfDef
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMfDef $midocoMfDef = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoMfDef $midocoMfDef = null)
     {
         $this
             ->setMidocoMfDef($midocoMfDef);
     }
     /**
      * Get MidocoMfDef value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMfDef|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMfDef|null
      */
-    public function getMidocoMfDef(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMfDef
+    public function getMidocoMfDef(): ?\Pggns\MidocoApi\Order\StructType\MidocoMfDef
     {
         return $this->MidocoMfDef;
     }
     /**
      * Set MidocoMfDef value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMfDef $midocoMfDef
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMfDefRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMfDef $midocoMfDef
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMfDefRequest
      */
-    public function setMidocoMfDef(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMfDef $midocoMfDef = null): self
+    public function setMidocoMfDef(?\Pggns\MidocoApi\Order\StructType\MidocoMfDef $midocoMfDef = null): self
     {
         $this->MidocoMfDef = $midocoMfDef;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class OrderVersionExportDTO extends AbstractStructBase
     /**
      * Set exportTime value
      * @param string $exportTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderVersionExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderVersionExportDTO
      */
     public function setExportTime(?string $exportTime = null): self
     {
@@ -94,7 +94,7 @@ class OrderVersionExportDTO extends AbstractStructBase
     /**
      * Set extSystem value
      * @param string $extSystem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderVersionExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderVersionExportDTO
      */
     public function setExtSystem(?string $extSystem = null): self
     {
@@ -117,7 +117,7 @@ class OrderVersionExportDTO extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderVersionExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderVersionExportDTO
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -140,7 +140,7 @@ class OrderVersionExportDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderVersionExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderVersionExportDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -163,7 +163,7 @@ class OrderVersionExportDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderVersionExportDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderVersionExportDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

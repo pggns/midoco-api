@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class AdditionalServiceDTO extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalServiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalServiceDTO
      */
     public function setCode(?string $code = null): self
     {
@@ -110,7 +110,7 @@ class AdditionalServiceDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalServiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalServiceDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -133,7 +133,7 @@ class AdditionalServiceDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalServiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalServiceDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -156,7 +156,7 @@ class AdditionalServiceDTO extends AbstractStructBase
     /**
      * Set includedInTotal value
      * @param bool $includedInTotal
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalServiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalServiceDTO
      */
     public function setIncludedInTotal(?bool $includedInTotal = null): self
     {
@@ -179,7 +179,7 @@ class AdditionalServiceDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalServiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalServiceDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -202,7 +202,7 @@ class AdditionalServiceDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalServiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalServiceDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -225,7 +225,7 @@ class AdditionalServiceDTO extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalServiceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalServiceDTO
      */
     public function setPrice(?float $price = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class ItemTypeDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ItemTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ItemTypeDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -86,7 +86,7 @@ class ItemTypeDTO extends AbstractStructBase
     /**
      * Set localizedDesc value
      * @param string $localizedDesc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ItemTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ItemTypeDTO
      */
     public function setLocalizedDesc(?string $localizedDesc = null): self
     {
@@ -109,7 +109,7 @@ class ItemTypeDTO extends AbstractStructBase
     /**
      * Set typeDesc value
      * @param string $typeDesc
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ItemTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ItemTypeDTO
      */
     public function setTypeDesc(?string $typeDesc = null): self
     {
@@ -132,7 +132,7 @@ class ItemTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param int $typeId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ItemTypeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ItemTypeDTO
      */
     public function setTypeId(?int $typeId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -72,7 +72,7 @@ class GetBillingReportRequest extends AbstractStructBase
     /**
      * Set fromReceiptDate value
      * @param string $fromReceiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetBillingReportRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetBillingReportRequest
      */
     public function setFromReceiptDate(string $fromReceiptDate): self
     {
@@ -95,7 +95,7 @@ class GetBillingReportRequest extends AbstractStructBase
     /**
      * Set toReceiptDate value
      * @param string $toReceiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetBillingReportRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetBillingReportRequest
      */
     public function setToReceiptDate(string $toReceiptDate): self
     {
@@ -145,7 +145,7 @@ class GetBillingReportRequest extends AbstractStructBase
      * Set creationUser value
      * @throws InvalidArgumentException
      * @param int[] $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetBillingReportRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetBillingReportRequest
      */
     public function setCreationUser(?array $creationUser = null): self
     {
@@ -161,7 +161,7 @@ class GetBillingReportRequest extends AbstractStructBase
      * Add item to creationUser value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetBillingReportRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetBillingReportRequest
      */
     public function addToCreationUser(int $item): self
     {
@@ -184,7 +184,7 @@ class GetBillingReportRequest extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetBillingReportRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetBillingReportRequest
      */
     public function setPaymentType(?string $paymentType = null): self
     {

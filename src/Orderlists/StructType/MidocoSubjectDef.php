@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoSubjectDef extends SubjectDefDTO
     /**
      * Set isInherited value
      * @param bool $isInherited
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSubjectDef
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSubjectDef
      */
     public function setIsInherited(?bool $isInherited = null): self
     {

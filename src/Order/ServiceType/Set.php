@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Set extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Set
+     * @return \Pggns\MidocoApi\Order\ServiceType\Set
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Set extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SetFinishedFlagRequest $paramSetFinishedFlagRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SetFinishedFlagResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\SetFinishedFlagRequest $paramSetFinishedFlagRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SetFinishedFlagResponse|bool
      */
-    public function setFinishedFlag(\Pggns\MidocoApi\Api\Order\StructType\SetFinishedFlagRequest $paramSetFinishedFlagRequest)
+    public function setFinishedFlag(\Pggns\MidocoApi\Order\StructType\SetFinishedFlagRequest $paramSetFinishedFlagRequest)
     {
         try {
             $this->setResult($resultSetFinishedFlag = $this->getSoapClient()->__soapCall('setFinishedFlag', [
@@ -58,15 +58,15 @@ class Set extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SetConfirmationRequiredOfSellitemRequest $paramSetConfirmationRequiredOfSellitemRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SetConfirmationRequiredOfSellitemResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\SetConfirmationRequiredOfSellitemRequest $paramSetConfirmationRequiredOfSellitemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SetConfirmationRequiredOfSellitemResponse|bool
      */
-    public function setConfirmationRequiredOfSellitem(\Pggns\MidocoApi\Api\Order\StructType\SetConfirmationRequiredOfSellitemRequest $paramSetConfirmationRequiredOfSellitemRequest)
+    public function setConfirmationRequiredOfSellitem(\Pggns\MidocoApi\Order\StructType\SetConfirmationRequiredOfSellitemRequest $paramSetConfirmationRequiredOfSellitemRequest)
     {
         try {
             $this->setResult($resultSetConfirmationRequiredOfSellitem = $this->getSoapClient()->__soapCall('setConfirmationRequiredOfSellitem', [
@@ -83,7 +83,7 @@ class Set extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SetConfirmationRequiredOfSellitemResponse|\Pggns\MidocoApi\Api\Order\StructType\SetFinishedFlagResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SetConfirmationRequiredOfSellitemResponse|\Pggns\MidocoApi\Order\StructType\SetFinishedFlagResponse
      */
     public function getResult()
     {

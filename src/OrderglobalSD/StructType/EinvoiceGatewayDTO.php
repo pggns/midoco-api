@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class EinvoiceGatewayDTO extends AbstractStructBase
     /**
      * Set configuration value
      * @param string $configuration
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\EinvoiceGatewayDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\EinvoiceGatewayDTO
      */
     public function setConfiguration(?string $configuration = null): self
     {
@@ -86,7 +86,7 @@ class EinvoiceGatewayDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\EinvoiceGatewayDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\EinvoiceGatewayDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -109,7 +109,7 @@ class EinvoiceGatewayDTO extends AbstractStructBase
     /**
      * Set gateway value
      * @param string $gateway
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\EinvoiceGatewayDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\EinvoiceGatewayDTO
      */
     public function setGateway(?string $gateway = null): self
     {
@@ -132,7 +132,7 @@ class EinvoiceGatewayDTO extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\EinvoiceGatewayDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\EinvoiceGatewayDTO
      */
     public function setUrl(?string $url = null): self
     {

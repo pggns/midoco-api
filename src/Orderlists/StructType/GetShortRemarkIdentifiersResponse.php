@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetShortRemarkIdentifiersResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTextRemark
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark[]
      */
     protected ?array $MidocoTextRemark = null;
     /**
      * Constructor method for GetShortRemarkIdentifiersResponse
      * @uses GetShortRemarkIdentifiersResponse::setMidocoTextRemark()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark[] $midocoTextRemark
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark[] $midocoTextRemark
      */
     public function __construct(?array $midocoTextRemark = null)
     {
@@ -34,7 +34,7 @@ class GetShortRemarkIdentifiersResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTextRemark value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark[]
      */
     public function getMidocoTextRemark(): ?array
     {
@@ -55,12 +55,12 @@ class GetShortRemarkIdentifiersResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getShortRemarkIdentifiersResponseMidocoTextRemarkItem) {
             // validation for constraint: itemType
-            if (!$getShortRemarkIdentifiersResponseMidocoTextRemarkItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark) {
+            if (!$getShortRemarkIdentifiersResponseMidocoTextRemarkItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark) {
                 $invalidValues[] = is_object($getShortRemarkIdentifiersResponseMidocoTextRemarkItem) ? get_class($getShortRemarkIdentifiersResponseMidocoTextRemarkItem) : sprintf('%s(%s)', gettype($getShortRemarkIdentifiersResponseMidocoTextRemarkItem), var_export($getShortRemarkIdentifiersResponseMidocoTextRemarkItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTextRemark property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTextRemark property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetShortRemarkIdentifiersResponse extends AbstractStructBase
     /**
      * Set MidocoTextRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark[] $midocoTextRemark
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetShortRemarkIdentifiersResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark[] $midocoTextRemark
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetShortRemarkIdentifiersResponse
      */
     public function setMidocoTextRemark(?array $midocoTextRemark = null): self
     {
@@ -85,14 +85,14 @@ class GetShortRemarkIdentifiersResponse extends AbstractStructBase
     /**
      * Add item to MidocoTextRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetShortRemarkIdentifiersResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetShortRemarkIdentifiersResponse
      */
-    public function addToMidocoTextRemark(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark $item): self
+    public function addToMidocoTextRemark(\Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark) {
-            throw new InvalidArgumentException(sprintf('The MidocoTextRemark property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTextRemark, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark) {
+            throw new InvalidArgumentException(sprintf('The MidocoTextRemark property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoTextRemark, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTextRemark[] = $item;
         

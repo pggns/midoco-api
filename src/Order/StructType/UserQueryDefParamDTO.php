@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class UserQueryDefParamDTO extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UserQueryDefParamDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UserQueryDefParamDTO
      */
     public function setCategory(?string $category = null): self
     {
@@ -134,7 +134,7 @@ class UserQueryDefParamDTO extends AbstractStructBase
     /**
      * Set displayIndex value
      * @param int $displayIndex
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UserQueryDefParamDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UserQueryDefParamDTO
      */
     public function setDisplayIndex(?int $displayIndex = null): self
     {
@@ -157,7 +157,7 @@ class UserQueryDefParamDTO extends AbstractStructBase
     /**
      * Set existent value
      * @param bool $existent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UserQueryDefParamDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UserQueryDefParamDTO
      */
     public function setExistent(?bool $existent = null): self
     {
@@ -180,7 +180,7 @@ class UserQueryDefParamDTO extends AbstractStructBase
     /**
      * Set fieldDbname value
      * @param string $fieldDbname
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UserQueryDefParamDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UserQueryDefParamDTO
      */
     public function setFieldDbname(?string $fieldDbname = null): self
     {
@@ -203,7 +203,7 @@ class UserQueryDefParamDTO extends AbstractStructBase
     /**
      * Set inPackage value
      * @param bool $inPackage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UserQueryDefParamDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UserQueryDefParamDTO
      */
     public function setInPackage(?bool $inPackage = null): self
     {
@@ -226,7 +226,7 @@ class UserQueryDefParamDTO extends AbstractStructBase
     /**
      * Set operation value
      * @param string $operation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UserQueryDefParamDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UserQueryDefParamDTO
      */
     public function setOperation(?string $operation = null): self
     {
@@ -249,7 +249,7 @@ class UserQueryDefParamDTO extends AbstractStructBase
     /**
      * Set paramValues value
      * @param string $paramValues
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UserQueryDefParamDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UserQueryDefParamDTO
      */
     public function setParamValues(?string $paramValues = null): self
     {
@@ -272,7 +272,7 @@ class UserQueryDefParamDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UserQueryDefParamDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UserQueryDefParamDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -295,7 +295,7 @@ class UserQueryDefParamDTO extends AbstractStructBase
     /**
      * Set queryId value
      * @param int $queryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UserQueryDefParamDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UserQueryDefParamDTO
      */
     public function setQueryId(?int $queryId = null): self
     {
@@ -318,7 +318,7 @@ class UserQueryDefParamDTO extends AbstractStructBase
     /**
      * Set visible value
      * @param bool $visible
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UserQueryDefParamDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UserQueryDefParamDTO
      */
     public function setVisible(?bool $visible = null): self
     {

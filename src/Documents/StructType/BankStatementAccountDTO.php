@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class BankStatementAccountDTO extends AbstractStructBase
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementAccountDTO
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -134,7 +134,7 @@ class BankStatementAccountDTO extends AbstractStructBase
     /**
      * Set accountPosition value
      * @param int $accountPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementAccountDTO
      */
     public function setAccountPosition(?int $accountPosition = null): self
     {
@@ -157,7 +157,7 @@ class BankStatementAccountDTO extends AbstractStructBase
     /**
      * Set bankNo value
      * @param string $bankNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementAccountDTO
      */
     public function setBankNo(?string $bankNo = null): self
     {
@@ -180,7 +180,7 @@ class BankStatementAccountDTO extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementAccountDTO
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -203,7 +203,7 @@ class BankStatementAccountDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementAccountDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -226,7 +226,7 @@ class BankStatementAccountDTO extends AbstractStructBase
     /**
      * Set endBalance value
      * @param float $endBalance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementAccountDTO
      */
     public function setEndBalance(?float $endBalance = null): self
     {
@@ -249,7 +249,7 @@ class BankStatementAccountDTO extends AbstractStructBase
     /**
      * Set pageNo value
      * @param string $pageNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementAccountDTO
      */
     public function setPageNo(?string $pageNo = null): self
     {
@@ -272,7 +272,7 @@ class BankStatementAccountDTO extends AbstractStructBase
     /**
      * Set startBalance value
      * @param float $startBalance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementAccountDTO
      */
     public function setStartBalance(?float $startBalance = null): self
     {
@@ -295,7 +295,7 @@ class BankStatementAccountDTO extends AbstractStructBase
     /**
      * Set statementId value
      * @param int $statementId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementAccountDTO
      */
     public function setStatementId(?int $statementId = null): self
     {
@@ -318,7 +318,7 @@ class BankStatementAccountDTO extends AbstractStructBase
     /**
      * Set statementNo value
      * @param string $statementNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankStatementAccountDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankStatementAccountDTO
      */
     public function setStatementNo(?string $statementNo = null): self
     {

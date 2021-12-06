@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteAdviceSettlementDetailRequest extends AbstractStructBase
     /**
      * Set detailId value
      * @param int $detailId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteAdviceSettlementDetailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteAdviceSettlementDetailRequest
      */
     public function setDetailId(?int $detailId = null): self
     {

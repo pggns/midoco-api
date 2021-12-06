@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListUsedVolumeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoUsedVolume
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO[]
      */
     protected ?array $MidocoUsedVolume = null;
     /**
      * Constructor method for ListUsedVolumeResponse
      * @uses ListUsedVolumeResponse::setMidocoUsedVolume()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO[] $midocoUsedVolume
+     * @param \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO[] $midocoUsedVolume
      */
     public function __construct(?array $midocoUsedVolume = null)
     {
@@ -34,7 +34,7 @@ class ListUsedVolumeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoUsedVolume value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO[]
      */
     public function getMidocoUsedVolume(): ?array
     {
@@ -55,12 +55,12 @@ class ListUsedVolumeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listUsedVolumeResponseMidocoUsedVolumeItem) {
             // validation for constraint: itemType
-            if (!$listUsedVolumeResponseMidocoUsedVolumeItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO) {
+            if (!$listUsedVolumeResponseMidocoUsedVolumeItem instanceof \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO) {
                 $invalidValues[] = is_object($listUsedVolumeResponseMidocoUsedVolumeItem) ? get_class($listUsedVolumeResponseMidocoUsedVolumeItem) : sprintf('%s(%s)', gettype($listUsedVolumeResponseMidocoUsedVolumeItem), var_export($listUsedVolumeResponseMidocoUsedVolumeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoUsedVolume property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoUsedVolume property can only contain items of type \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListUsedVolumeResponse extends AbstractStructBase
     /**
      * Set MidocoUsedVolume value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO[] $midocoUsedVolume
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListUsedVolumeResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO[] $midocoUsedVolume
+     * @return \Pggns\MidocoApi\Documents\StructType\ListUsedVolumeResponse
      */
     public function setMidocoUsedVolume(?array $midocoUsedVolume = null): self
     {
@@ -85,14 +85,14 @@ class ListUsedVolumeResponse extends AbstractStructBase
     /**
      * Add item to MidocoUsedVolume value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListUsedVolumeResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\ListUsedVolumeResponse
      */
-    public function addToMidocoUsedVolume(\Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO $item): self
+    public function addToMidocoUsedVolume(\Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoUsedVolume property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoUsedVolume property can only contain items of type \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoUsedVolume[] = $item;
         

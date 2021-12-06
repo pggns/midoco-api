@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class UserAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UserAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UserAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +70,7 @@ class UserAssignDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UserAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UserAssignDTO
      */
     public function setUserId(?int $userId = null): self
     {

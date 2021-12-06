@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class GdsProfileAttribute extends AbstractStructBase
     /**
      * Set gds value
      * @param string $gds
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GdsProfileAttribute
+     * @return \Pggns\MidocoApi\Crm\StructType\GdsProfileAttribute
      */
     public function setGds(?string $gds = null): self
     {
@@ -94,7 +94,7 @@ class GdsProfileAttribute extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GdsProfileAttribute
+     * @return \Pggns\MidocoApi\Crm\StructType\GdsProfileAttribute
      */
     public function setType(?string $type = null): self
     {
@@ -117,7 +117,7 @@ class GdsProfileAttribute extends AbstractStructBase
     /**
      * Set subType value
      * @param string $subType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GdsProfileAttribute
+     * @return \Pggns\MidocoApi\Crm\StructType\GdsProfileAttribute
      */
     public function setSubType(?string $subType = null): self
     {
@@ -140,7 +140,7 @@ class GdsProfileAttribute extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GdsProfileAttribute
+     * @return \Pggns\MidocoApi\Crm\StructType\GdsProfileAttribute
      */
     public function setCategory(?string $category = null): self
     {
@@ -163,7 +163,7 @@ class GdsProfileAttribute extends AbstractStructBase
     /**
      * Set translatedValue value
      * @param string $translatedValue
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GdsProfileAttribute
+     * @return \Pggns\MidocoApi\Crm\StructType\GdsProfileAttribute
      */
     public function setTranslatedValue(?string $translatedValue = null): self
     {

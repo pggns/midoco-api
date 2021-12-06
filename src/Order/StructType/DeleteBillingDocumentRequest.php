@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class DeleteBillingDocumentRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentRequest
      */
     public function setInternalVersion(int $internalVersion): self
     {
@@ -74,7 +74,7 @@ class DeleteBillingDocumentRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentRequest
      */
     public function setDocumentId(int $documentId): self
     {

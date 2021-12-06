@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class NovomindNewEmailJSONRequest extends AbstractStructBase
     /**
      * Set midocoMail value
      * @param string $midocoMail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\NovomindNewEmailJSONRequest
+     * @return \Pggns\MidocoApi\Order\StructType\NovomindNewEmailJSONRequest
      */
     public function setMidocoMail(?string $midocoMail = null): self
     {
@@ -70,7 +70,7 @@ class NovomindNewEmailJSONRequest extends AbstractStructBase
     /**
      * Set map value
      * @param string $map
-     * @return \Pggns\MidocoApi\Api\Order\StructType\NovomindNewEmailJSONRequest
+     * @return \Pggns\MidocoApi\Order\StructType\NovomindNewEmailJSONRequest
      */
     public function setMap(?string $map = null): self
     {

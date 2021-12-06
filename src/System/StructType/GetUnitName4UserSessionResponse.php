@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetUnitName4UserSessionResponse extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetUnitName4UserSessionResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetUnitName4UserSessionResponse
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -78,7 +78,7 @@ class GetUnitName4UserSessionResponse extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetUnitName4UserSessionResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetUnitName4UserSessionResponse
      */
     public function setName(?string $name = null): self
     {
@@ -101,7 +101,7 @@ class GetUnitName4UserSessionResponse extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetUnitName4UserSessionResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetUnitName4UserSessionResponse
      */
     public function setForename(?string $forename = null): self
     {

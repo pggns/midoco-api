@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class MakeReceiptResponse extends AbstractStructBase
      * The MidocoReceipt
      * Meta information extracted from the WSDL
      * - ref: MidocoReceipt
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoReceipt|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoReceipt|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceipt $MidocoReceipt = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoReceipt $MidocoReceipt = null;
     /**
      * The printJob
      * @var string|null
@@ -29,10 +29,10 @@ class MakeReceiptResponse extends AbstractStructBase
      * Constructor method for MakeReceiptResponse
      * @uses MakeReceiptResponse::setMidocoReceipt()
      * @uses MakeReceiptResponse::setPrintJob()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoReceipt $midocoReceipt
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoReceipt $midocoReceipt
      * @param string $printJob
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceipt $midocoReceipt = null, ?string $printJob = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoReceipt $midocoReceipt = null, ?string $printJob = null)
     {
         $this
             ->setMidocoReceipt($midocoReceipt)
@@ -40,18 +40,18 @@ class MakeReceiptResponse extends AbstractStructBase
     }
     /**
      * Get MidocoReceipt value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoReceipt|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoReceipt|null
      */
-    public function getMidocoReceipt(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceipt
+    public function getMidocoReceipt(): ?\Pggns\MidocoApi\Order\StructType\MidocoReceipt
     {
         return $this->MidocoReceipt;
     }
     /**
      * Set MidocoReceipt value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoReceipt $midocoReceipt
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeReceiptResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoReceipt $midocoReceipt
+     * @return \Pggns\MidocoApi\Order\StructType\MakeReceiptResponse
      */
-    public function setMidocoReceipt(?\Pggns\MidocoApi\Api\Order\StructType\MidocoReceipt $midocoReceipt = null): self
+    public function setMidocoReceipt(?\Pggns\MidocoApi\Order\StructType\MidocoReceipt $midocoReceipt = null): self
     {
         $this->MidocoReceipt = $midocoReceipt;
         
@@ -68,7 +68,7 @@ class MakeReceiptResponse extends AbstractStructBase
     /**
      * Set printJob value
      * @param string $printJob
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeReceiptResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MakeReceiptResponse
      */
     public function setPrintJob(?string $printJob = null): self
     {

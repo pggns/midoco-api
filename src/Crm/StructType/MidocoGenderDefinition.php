@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoGenderDefinition extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoGenderDefinition
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoGenderDefinition
      */
     public function setDescription(?string $description = null): self
     {
@@ -70,7 +70,7 @@ class MidocoGenderDefinition extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoGenderDefinition
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoGenderDefinition
      */
     public function setId(?string $id = null): self
     {

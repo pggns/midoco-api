@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetFeeTypeGroupsResponse extends AbstractStructBase
      * Set feeGroup value
      * @throws InvalidArgumentException
      * @param string[] $feeGroup
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeTypeGroupsResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetFeeTypeGroupsResponse
      */
     public function setFeeGroup(?array $feeGroup = null): self
     {
@@ -85,7 +85,7 @@ class GetFeeTypeGroupsResponse extends AbstractStructBase
      * Add item to feeGroup value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetFeeTypeGroupsResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetFeeTypeGroupsResponse
      */
     public function addToFeeGroup(string $item): self
     {

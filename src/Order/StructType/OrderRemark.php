@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class OrderRemark extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemark
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemark
      */
     public function setPosition(int $position): self
     {
@@ -84,7 +84,7 @@ class OrderRemark extends AbstractStructBase
     /**
      * Set printAllowed value
      * @param bool $printAllowed
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemark
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemark
      */
     public function setPrintAllowed(?bool $printAllowed = true): self
     {
@@ -107,7 +107,7 @@ class OrderRemark extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderRemark
+     * @return \Pggns\MidocoApi\Order\StructType\OrderRemark
      */
     public function setText(?string $text = null): self
     {

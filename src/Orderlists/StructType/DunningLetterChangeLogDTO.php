@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class DunningLetterChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -102,7 +102,7 @@ class DunningLetterChangeLogDTO extends AbstractStructBase
     /**
      * Set dunningLevel value
      * @param int $dunningLevel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterChangeLogDTO
      */
     public function setDunningLevel(?int $dunningLevel = null): self
     {
@@ -125,7 +125,7 @@ class DunningLetterChangeLogDTO extends AbstractStructBase
     /**
      * Set forDeposit value
      * @param bool $forDeposit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterChangeLogDTO
      */
     public function setForDeposit(?bool $forDeposit = null): self
     {
@@ -148,7 +148,7 @@ class DunningLetterChangeLogDTO extends AbstractStructBase
     /**
      * Set forStorno value
      * @param bool $forStorno
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterChangeLogDTO
      */
     public function setForStorno(?bool $forStorno = null): self
     {
@@ -171,7 +171,7 @@ class DunningLetterChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -194,7 +194,7 @@ class DunningLetterChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningLetterChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningLetterChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

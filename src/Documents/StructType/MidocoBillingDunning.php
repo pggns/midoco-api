@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class MidocoBillingDunning extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDunning
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -142,7 +142,7 @@ class MidocoBillingDunning extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDunning
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -165,7 +165,7 @@ class MidocoBillingDunning extends AbstractStructBase
     /**
      * Set dunningAmount value
      * @param float $dunningAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDunning
      */
     public function setDunningAmount(?float $dunningAmount = null): self
     {
@@ -188,7 +188,7 @@ class MidocoBillingDunning extends AbstractStructBase
     /**
      * Set dunningCharge value
      * @param float $dunningCharge
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDunning
      */
     public function setDunningCharge(?float $dunningCharge = null): self
     {
@@ -211,7 +211,7 @@ class MidocoBillingDunning extends AbstractStructBase
     /**
      * Set dunningLevel value
      * @param int $dunningLevel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDunning
      */
     public function setDunningLevel(?int $dunningLevel = null): self
     {
@@ -234,7 +234,7 @@ class MidocoBillingDunning extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDunning
      */
     public function setForename(?string $forename = null): self
     {
@@ -257,7 +257,7 @@ class MidocoBillingDunning extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDunning
      */
     public function setId(?int $id = null): self
     {
@@ -280,7 +280,7 @@ class MidocoBillingDunning extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDunning
      */
     public function setName(?string $name = null): self
     {
@@ -303,7 +303,7 @@ class MidocoBillingDunning extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDunning
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -326,7 +326,7 @@ class MidocoBillingDunning extends AbstractStructBase
     /**
      * Set documentNo value
      * @param int $documentNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDunning
      */
     public function setDocumentNo(?int $documentNo = null): self
     {
@@ -349,7 +349,7 @@ class MidocoBillingDunning extends AbstractStructBase
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingDunning
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingDunning
      */
     public function setAccountNo(?string $accountNo = null): self
     {

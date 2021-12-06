@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MakeBillingDocumentForSellItemRequest extends AbstractStructBase
     /**
      * Set documentInternalVersion value
      * @param int $documentInternalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForSellItemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForSellItemRequest
      */
     public function setDocumentInternalVersion(?int $documentInternalVersion = null): self
     {
@@ -94,7 +94,7 @@ class MakeBillingDocumentForSellItemRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForSellItemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForSellItemRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -117,7 +117,7 @@ class MakeBillingDocumentForSellItemRequest extends AbstractStructBase
     /**
      * Set createNewDocument value
      * @param bool $createNewDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForSellItemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForSellItemRequest
      */
     public function setCreateNewDocument(?bool $createNewDocument = null): self
     {
@@ -140,7 +140,7 @@ class MakeBillingDocumentForSellItemRequest extends AbstractStructBase
     /**
      * Set deleteExistingDocument value
      * @param bool $deleteExistingDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForSellItemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForSellItemRequest
      */
     public function setDeleteExistingDocument(?bool $deleteExistingDocument = null): self
     {
@@ -163,7 +163,7 @@ class MakeBillingDocumentForSellItemRequest extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForSellItemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForSellItemRequest
      */
     public function setItemId(?int $itemId = null): self
     {

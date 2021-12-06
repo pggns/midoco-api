@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class RemarkCategoryDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param string $categoryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\RemarkCategoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RemarkCategoryDTO
      */
     public function setCategoryId(?string $categoryId = null): self
     {
@@ -94,7 +94,7 @@ class RemarkCategoryDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\RemarkCategoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RemarkCategoryDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -117,7 +117,7 @@ class RemarkCategoryDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\RemarkCategoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RemarkCategoryDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -140,7 +140,7 @@ class RemarkCategoryDTO extends AbstractStructBase
     /**
      * Set parentCategoryId value
      * @param string $parentCategoryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\RemarkCategoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RemarkCategoryDTO
      */
     public function setParentCategoryId(?string $parentCategoryId = null): self
     {
@@ -163,7 +163,7 @@ class RemarkCategoryDTO extends AbstractStructBase
     /**
      * Set positionNo value
      * @param int $positionNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\RemarkCategoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RemarkCategoryDTO
      */
     public function setPositionNo(?int $positionNo = null): self
     {

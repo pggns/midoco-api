@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class PaymentReminderInfo extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentReminderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentReminderInfo
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -70,7 +70,7 @@ class PaymentReminderInfo extends AbstractStructBase
     /**
      * Set forDeposit value
      * @param bool $forDeposit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PaymentReminderInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\PaymentReminderInfo
      */
     public function setForDeposit(?bool $forDeposit = null): self
     {

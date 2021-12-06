@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -351,7 +351,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set areaDescription value
      * @param string $areaDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setAreaDescription(?string $areaDescription = null): self
     {
@@ -374,7 +374,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set carDescription value
      * @param string $carDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setCarDescription(?string $carDescription = null): self
     {
@@ -397,7 +397,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set carSupplier value
      * @param string $carSupplier
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setCarSupplier(?string $carSupplier = null): self
     {
@@ -420,7 +420,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set carType value
      * @param string $carType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setCarType(?string $carType = null): self
     {
@@ -443,7 +443,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setCategory(?string $category = null): self
     {
@@ -466,7 +466,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set collectionInfo value
      * @param string $collectionInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setCollectionInfo(?string $collectionInfo = null): self
     {
@@ -489,7 +489,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set corporateDiscount value
      * @param string $corporateDiscount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setCorporateDiscount(?string $corporateDiscount = null): self
     {
@@ -512,7 +512,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -535,7 +535,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set countryDescription value
      * @param string $countryDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setCountryDescription(?string $countryDescription = null): self
     {
@@ -558,7 +558,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -581,7 +581,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set deliveryInfo value
      * @param string $deliveryInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setDeliveryInfo(?string $deliveryInfo = null): self
     {
@@ -604,7 +604,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set destinationArea value
      * @param string $destinationArea
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setDestinationArea(?string $destinationArea = null): self
     {
@@ -627,7 +627,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set dropoffInfo value
      * @param string $dropoffInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setDropoffInfo(?string $dropoffInfo = null): self
     {
@@ -650,7 +650,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set flightNo value
      * @param string $flightNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setFlightNo(?string $flightNo = null): self
     {
@@ -673,7 +673,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set insuranceDescription value
      * @param string $insuranceDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setInsuranceDescription(?string $insuranceDescription = null): self
     {
@@ -696,7 +696,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set insuranceType value
      * @param string $insuranceType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setInsuranceType(?string $insuranceType = null): self
     {
@@ -719,7 +719,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -742,7 +742,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set noOfServices value
      * @param int $noOfServices
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setNoOfServices(?int $noOfServices = null): self
     {
@@ -765,7 +765,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set pickupCode value
      * @param string $pickupCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setPickupCode(?string $pickupCode = null): self
     {
@@ -788,7 +788,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set pickupDate value
      * @param string $pickupDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setPickupDate(?string $pickupDate = null): self
     {
@@ -811,7 +811,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set pickupDescription value
      * @param string $pickupDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setPickupDescription(?string $pickupDescription = null): self
     {
@@ -834,7 +834,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set pickupInfo value
      * @param string $pickupInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setPickupInfo(?string $pickupInfo = null): self
     {
@@ -857,7 +857,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set pickupTime value
      * @param string $pickupTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setPickupTime(?string $pickupTime = null): self
     {
@@ -880,7 +880,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -903,7 +903,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set referencePosition value
      * @param int $referencePosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setReferencePosition(?int $referencePosition = null): self
     {
@@ -926,7 +926,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set regionCode value
      * @param string $regionCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setRegionCode(?string $regionCode = null): self
     {
@@ -949,7 +949,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set regionDescription value
      * @param string $regionDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setRegionDescription(?string $regionDescription = null): self
     {
@@ -972,7 +972,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set returnAreaDescription value
      * @param string $returnAreaDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setReturnAreaDescription(?string $returnAreaDescription = null): self
     {
@@ -995,7 +995,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set returnCode value
      * @param string $returnCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setReturnCode(?string $returnCode = null): self
     {
@@ -1018,7 +1018,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set returnCountryCode value
      * @param string $returnCountryCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setReturnCountryCode(?string $returnCountryCode = null): self
     {
@@ -1041,7 +1041,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set returnCountryDescription value
      * @param string $returnCountryDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setReturnCountryDescription(?string $returnCountryDescription = null): self
     {
@@ -1064,7 +1064,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set returnDate value
      * @param string $returnDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setReturnDate(?string $returnDate = null): self
     {
@@ -1087,7 +1087,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set returnDescription value
      * @param string $returnDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setReturnDescription(?string $returnDescription = null): self
     {
@@ -1110,7 +1110,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set returnDestinationArea value
      * @param string $returnDestinationArea
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setReturnDestinationArea(?string $returnDestinationArea = null): self
     {
@@ -1133,7 +1133,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set returnTime value
      * @param string $returnTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setReturnTime(?string $returnTime = null): self
     {
@@ -1156,7 +1156,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set serviceCode value
      * @param string $serviceCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setServiceCode(?string $serviceCode = null): self
     {
@@ -1179,7 +1179,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set serviceName value
      * @param string $serviceName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setServiceName(?string $serviceName = null): self
     {
@@ -1202,7 +1202,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set servicePrice value
      * @param float $servicePrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setServicePrice(?float $servicePrice = null): self
     {
@@ -1225,7 +1225,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {
@@ -1248,7 +1248,7 @@ class CarDetailDTO extends AbstractStructBase
     /**
      * Set vatIncluded value
      * @param bool $vatIncluded
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CarDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CarDetailDTO
      */
     public function setVatIncluded(?bool $vatIncluded = null): self
     {

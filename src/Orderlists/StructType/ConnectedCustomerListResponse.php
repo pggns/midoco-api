@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class ConnectedCustomerListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoConnectedCustomerList
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType[]
      */
     protected ?array $MidocoConnectedCustomerList = null;
     /**
@@ -31,19 +31,19 @@ class ConnectedCustomerListResponse extends AbstractStructBase
     protected ?int $noOfResults = null;
     /**
      * The MidocoConnectedCustomerListSums
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType $MidocoConnectedCustomerListSums = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType $MidocoConnectedCustomerListSums = null;
     /**
      * Constructor method for ConnectedCustomerListResponse
      * @uses ConnectedCustomerListResponse::setMidocoConnectedCustomerList()
      * @uses ConnectedCustomerListResponse::setNoOfResults()
      * @uses ConnectedCustomerListResponse::setMidocoConnectedCustomerListSums()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType[] $midocoConnectedCustomerList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType[] $midocoConnectedCustomerList
      * @param int $noOfResults
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType $midocoConnectedCustomerListSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType $midocoConnectedCustomerListSums
      */
-    public function __construct(?array $midocoConnectedCustomerList = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType $midocoConnectedCustomerListSums = null)
+    public function __construct(?array $midocoConnectedCustomerList = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType $midocoConnectedCustomerListSums = null)
     {
         $this
             ->setMidocoConnectedCustomerList($midocoConnectedCustomerList)
@@ -52,7 +52,7 @@ class ConnectedCustomerListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoConnectedCustomerList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType[]
      */
     public function getMidocoConnectedCustomerList(): ?array
     {
@@ -73,12 +73,12 @@ class ConnectedCustomerListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $connectedCustomerListResponseMidocoConnectedCustomerListItem) {
             // validation for constraint: itemType
-            if (!$connectedCustomerListResponseMidocoConnectedCustomerListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType) {
+            if (!$connectedCustomerListResponseMidocoConnectedCustomerListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType) {
                 $invalidValues[] = is_object($connectedCustomerListResponseMidocoConnectedCustomerListItem) ? get_class($connectedCustomerListResponseMidocoConnectedCustomerListItem) : sprintf('%s(%s)', gettype($connectedCustomerListResponseMidocoConnectedCustomerListItem), var_export($connectedCustomerListResponseMidocoConnectedCustomerListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoConnectedCustomerList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoConnectedCustomerList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -87,8 +87,8 @@ class ConnectedCustomerListResponse extends AbstractStructBase
     /**
      * Set MidocoConnectedCustomerList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType[] $midocoConnectedCustomerList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectedCustomerListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType[] $midocoConnectedCustomerList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ConnectedCustomerListResponse
      */
     public function setMidocoConnectedCustomerList(?array $midocoConnectedCustomerList = null): self
     {
@@ -103,14 +103,14 @@ class ConnectedCustomerListResponse extends AbstractStructBase
     /**
      * Add item to MidocoConnectedCustomerList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectedCustomerListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ConnectedCustomerListResponse
      */
-    public function addToMidocoConnectedCustomerList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType $item): self
+    public function addToMidocoConnectedCustomerList(\Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType) {
-            throw new InvalidArgumentException(sprintf('The MidocoConnectedCustomerList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType) {
+            throw new InvalidArgumentException(sprintf('The MidocoConnectedCustomerList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoConnectedCustomerList[] = $item;
         
@@ -127,7 +127,7 @@ class ConnectedCustomerListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectedCustomerListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ConnectedCustomerListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {
@@ -141,18 +141,18 @@ class ConnectedCustomerListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoConnectedCustomerListSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType|null
      */
-    public function getMidocoConnectedCustomerListSums(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+    public function getMidocoConnectedCustomerListSums(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
     {
         return $this->MidocoConnectedCustomerListSums;
     }
     /**
      * Set MidocoConnectedCustomerListSums value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType $midocoConnectedCustomerListSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectedCustomerListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType $midocoConnectedCustomerListSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ConnectedCustomerListResponse
      */
-    public function setMidocoConnectedCustomerListSums(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType $midocoConnectedCustomerListSums = null): self
+    public function setMidocoConnectedCustomerListSums(?\Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType $midocoConnectedCustomerListSums = null): self
     {
         $this->MidocoConnectedCustomerListSums = $midocoConnectedCustomerListSums;
         

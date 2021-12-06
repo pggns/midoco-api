@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -199,7 +199,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set size value
      * @param int $size
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setSize(?int $size = null): self
     {
@@ -222,7 +222,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set checksum value
      * @param string $checksum
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setChecksum(?string $checksum = null): self
     {
@@ -245,7 +245,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -268,7 +268,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set creationUserId value
      * @param int $creationUserId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setCreationUserId(?int $creationUserId = null): self
     {
@@ -291,7 +291,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set creationUserName value
      * @param string $creationUserName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setCreationUserName(?string $creationUserName = null): self
     {
@@ -314,7 +314,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set repository value
      * @param string $repository
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setRepository(?string $repository = null): self
     {
@@ -337,7 +337,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param string $repositoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setRepositoryId(?string $repositoryId = null): self
     {
@@ -360,7 +360,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setName(?string $name = null): self
     {
@@ -383,7 +383,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set extension value
      * @param string $extension
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setExtension(?string $extension = null): self
     {
@@ -406,7 +406,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setType(?string $type = null): self
     {
@@ -429,7 +429,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set mimeType value
      * @param string $mimeType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setMimeType(?string $mimeType = null): self
     {
@@ -452,7 +452,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set lastExportDate value
      * @param string $lastExportDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setLastExportDate(?string $lastExportDate = null): self
     {
@@ -475,7 +475,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set exportedFileName value
      * @param string $exportedFileName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setExportedFileName(?string $exportedFileName = null): self
     {
@@ -498,7 +498,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set signed value
      * @param bool $signed
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setSigned(?bool $signed = null): self
     {
@@ -521,7 +521,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -544,7 +544,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {
@@ -567,7 +567,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set isManual value
      * @param bool $isManual
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setIsManual(?bool $isManual = null): self
     {
@@ -590,7 +590,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set uploadDate value
      * @param string $uploadDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setUploadDate(?string $uploadDate = null): self
     {
@@ -613,7 +613,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -636,7 +636,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setDescription(?string $description = null): self
     {
@@ -659,7 +659,7 @@ class StandardDocument extends AbstractStructBase
     /**
      * Set internalType value
      * @param string $internalType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\StandardDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\StandardDocument
      */
     public function setInternalType(?string $internalType = null): self
     {

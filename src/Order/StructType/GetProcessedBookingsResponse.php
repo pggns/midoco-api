@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetProcessedBookingsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoProcessedBooking
-     * @var \Pggns\MidocoApi\Api\Order\StructType\ProcessedBookingDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\ProcessedBookingDTO[]
      */
     protected ?array $MidocoProcessedBooking = null;
     /**
      * Constructor method for GetProcessedBookingsResponse
      * @uses GetProcessedBookingsResponse::setMidocoProcessedBooking()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ProcessedBookingDTO[] $midocoProcessedBooking
+     * @param \Pggns\MidocoApi\Order\StructType\ProcessedBookingDTO[] $midocoProcessedBooking
      */
     public function __construct(?array $midocoProcessedBooking = null)
     {
@@ -34,7 +34,7 @@ class GetProcessedBookingsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoProcessedBooking value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProcessedBookingDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\ProcessedBookingDTO[]
      */
     public function getMidocoProcessedBooking(): ?array
     {
@@ -55,12 +55,12 @@ class GetProcessedBookingsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getProcessedBookingsResponseMidocoProcessedBookingItem) {
             // validation for constraint: itemType
-            if (!$getProcessedBookingsResponseMidocoProcessedBookingItem instanceof \Pggns\MidocoApi\Api\Order\StructType\ProcessedBookingDTO) {
+            if (!$getProcessedBookingsResponseMidocoProcessedBookingItem instanceof \Pggns\MidocoApi\Order\StructType\ProcessedBookingDTO) {
                 $invalidValues[] = is_object($getProcessedBookingsResponseMidocoProcessedBookingItem) ? get_class($getProcessedBookingsResponseMidocoProcessedBookingItem) : sprintf('%s(%s)', gettype($getProcessedBookingsResponseMidocoProcessedBookingItem), var_export($getProcessedBookingsResponseMidocoProcessedBookingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoProcessedBooking property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ProcessedBookingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoProcessedBooking property can only contain items of type \Pggns\MidocoApi\Order\StructType\ProcessedBookingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetProcessedBookingsResponse extends AbstractStructBase
     /**
      * Set MidocoProcessedBooking value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ProcessedBookingDTO[] $midocoProcessedBooking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetProcessedBookingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\ProcessedBookingDTO[] $midocoProcessedBooking
+     * @return \Pggns\MidocoApi\Order\StructType\GetProcessedBookingsResponse
      */
     public function setMidocoProcessedBooking(?array $midocoProcessedBooking = null): self
     {
@@ -85,14 +85,14 @@ class GetProcessedBookingsResponse extends AbstractStructBase
     /**
      * Add item to MidocoProcessedBooking value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ProcessedBookingDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetProcessedBookingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\ProcessedBookingDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetProcessedBookingsResponse
      */
-    public function addToMidocoProcessedBooking(\Pggns\MidocoApi\Api\Order\StructType\ProcessedBookingDTO $item): self
+    public function addToMidocoProcessedBooking(\Pggns\MidocoApi\Order\StructType\ProcessedBookingDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\ProcessedBookingDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoProcessedBooking property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ProcessedBookingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\ProcessedBookingDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoProcessedBooking property can only contain items of type \Pggns\MidocoApi\Order\StructType\ProcessedBookingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoProcessedBooking[] = $item;
         

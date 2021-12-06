@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -68,7 +68,7 @@ class SearchDuplicatedAdviceSettlementDetailResponse extends AbstractStructBase
      * Set duplicatedDetailId value
      * @throws InvalidArgumentException
      * @param int[] $duplicatedDetailId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchDuplicatedAdviceSettlementDetailResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchDuplicatedAdviceSettlementDetailResponse
      */
     public function setDuplicatedDetailId(?array $duplicatedDetailId = null): self
     {
@@ -84,7 +84,7 @@ class SearchDuplicatedAdviceSettlementDetailResponse extends AbstractStructBase
      * Add item to duplicatedDetailId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchDuplicatedAdviceSettlementDetailResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchDuplicatedAdviceSettlementDetailResponse
      */
     public function addToDuplicatedDetailId(int $item): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class UpdateContactEntriesRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO[]
      */
     protected ?array $MidocoCustomerId = null;
     /**
      * Constructor method for UpdateContactEntriesRequest
      * @uses UpdateContactEntriesRequest::setMidocoCustomerId()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO[] $midocoCustomerId
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO[] $midocoCustomerId
      */
     public function __construct(?array $midocoCustomerId = null)
     {
@@ -36,7 +36,7 @@ class UpdateContactEntriesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO[]
      */
     public function getMidocoCustomerId(): ?array
     {
@@ -57,12 +57,12 @@ class UpdateContactEntriesRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $updateContactEntriesRequestMidocoCustomerIdItem) {
             // validation for constraint: itemType
-            if (!$updateContactEntriesRequestMidocoCustomerIdItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO) {
+            if (!$updateContactEntriesRequestMidocoCustomerIdItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO) {
                 $invalidValues[] = is_object($updateContactEntriesRequestMidocoCustomerIdItem) ? get_class($updateContactEntriesRequestMidocoCustomerIdItem) : sprintf('%s(%s)', gettype($updateContactEntriesRequestMidocoCustomerIdItem), var_export($updateContactEntriesRequestMidocoCustomerIdItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerId property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerId property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class UpdateContactEntriesRequest extends AbstractStructBase
     /**
      * Set MidocoCustomerId value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO[] $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\UpdateContactEntriesRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO[] $midocoCustomerId
+     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateContactEntriesRequest
      */
     public function setMidocoCustomerId(?array $midocoCustomerId = null): self
     {
@@ -87,14 +87,14 @@ class UpdateContactEntriesRequest extends AbstractStructBase
     /**
      * Add item to MidocoCustomerId value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\UpdateContactEntriesRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateContactEntriesRequest
      */
-    public function addToMidocoCustomerId(\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $item): self
+    public function addToMidocoCustomerId(\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerId property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerId property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerId[] = $item;
         

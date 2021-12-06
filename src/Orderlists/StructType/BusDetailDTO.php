@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -359,7 +359,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set accomodationCode value
      * @param string $accomodationCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setAccomodationCode(?string $accomodationCode = null): self
     {
@@ -382,7 +382,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set accomodationDesc value
      * @param string $accomodationDesc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setAccomodationDesc(?string $accomodationDesc = null): self
     {
@@ -405,7 +405,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setCategory(?string $category = null): self
     {
@@ -428,7 +428,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set cateringCode value
      * @param string $cateringCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setCateringCode(?string $cateringCode = null): self
     {
@@ -451,7 +451,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set cateringDescription value
      * @param string $cateringDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setCateringDescription(?string $cateringDescription = null): self
     {
@@ -474,7 +474,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -497,7 +497,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -520,7 +520,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set noOfNights value
      * @param string $noOfNights
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setNoOfNights(?string $noOfNights = null): self
     {
@@ -543,7 +543,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set outFromCityCode value
      * @param string $outFromCityCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setOutFromCityCode(?string $outFromCityCode = null): self
     {
@@ -566,7 +566,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set outFromCityDesc value
      * @param string $outFromCityDesc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setOutFromCityDesc(?string $outFromCityDesc = null): self
     {
@@ -589,7 +589,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set outFromDate value
      * @param string $outFromDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setOutFromDate(?string $outFromDate = null): self
     {
@@ -612,7 +612,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set outFromTime value
      * @param string $outFromTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setOutFromTime(?string $outFromTime = null): self
     {
@@ -635,7 +635,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set outPlatform value
      * @param string $outPlatform
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setOutPlatform(?string $outPlatform = null): self
     {
@@ -658,7 +658,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set outSeat value
      * @param string $outSeat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setOutSeat(?string $outSeat = null): self
     {
@@ -681,7 +681,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set outToCityCode value
      * @param string $outToCityCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setOutToCityCode(?string $outToCityCode = null): self
     {
@@ -704,7 +704,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set outToCityDesc value
      * @param string $outToCityDesc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setOutToCityDesc(?string $outToCityDesc = null): self
     {
@@ -727,7 +727,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set outToDate value
      * @param string $outToDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setOutToDate(?string $outToDate = null): self
     {
@@ -750,7 +750,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set outToTime value
      * @param string $outToTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setOutToTime(?string $outToTime = null): self
     {
@@ -773,7 +773,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set paxPerServices value
      * @param int $paxPerServices
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setPaxPerServices(?int $paxPerServices = null): self
     {
@@ -796,7 +796,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {
@@ -819,7 +819,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -842,7 +842,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set referencePosition value
      * @param int $referencePosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setReferencePosition(?int $referencePosition = null): self
     {
@@ -865,7 +865,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set retFromCityCode value
      * @param string $retFromCityCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setRetFromCityCode(?string $retFromCityCode = null): self
     {
@@ -888,7 +888,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set retFromCityDesc value
      * @param string $retFromCityDesc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setRetFromCityDesc(?string $retFromCityDesc = null): self
     {
@@ -911,7 +911,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set retFromDate value
      * @param string $retFromDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setRetFromDate(?string $retFromDate = null): self
     {
@@ -934,7 +934,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set retFromTime value
      * @param string $retFromTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setRetFromTime(?string $retFromTime = null): self
     {
@@ -957,7 +957,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set retPlatform value
      * @param string $retPlatform
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setRetPlatform(?string $retPlatform = null): self
     {
@@ -980,7 +980,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set retSeat value
      * @param string $retSeat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setRetSeat(?string $retSeat = null): self
     {
@@ -1003,7 +1003,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set retToCityCode value
      * @param string $retToCityCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setRetToCityCode(?string $retToCityCode = null): self
     {
@@ -1026,7 +1026,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set retToCityDesc value
      * @param string $retToCityDesc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setRetToCityDesc(?string $retToCityDesc = null): self
     {
@@ -1049,7 +1049,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set retToDate value
      * @param string $retToDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setRetToDate(?string $retToDate = null): self
     {
@@ -1072,7 +1072,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set retToTime value
      * @param string $retToTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setRetToTime(?string $retToTime = null): self
     {
@@ -1095,7 +1095,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set roomCode value
      * @param string $roomCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setRoomCode(?string $roomCode = null): self
     {
@@ -1118,7 +1118,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set roomDescription value
      * @param string $roomDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setRoomDescription(?string $roomDescription = null): self
     {
@@ -1141,7 +1141,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set serviceCode value
      * @param string $serviceCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setServiceCode(?string $serviceCode = null): self
     {
@@ -1164,7 +1164,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set serviceDesc value
      * @param string $serviceDesc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setServiceDesc(?string $serviceDesc = null): self
     {
@@ -1187,7 +1187,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set serviceName value
      * @param string $serviceName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setServiceName(?string $serviceName = null): self
     {
@@ -1210,7 +1210,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set servicePrice value
      * @param float $servicePrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setServicePrice(?float $servicePrice = null): self
     {
@@ -1233,7 +1233,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {
@@ -1256,7 +1256,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set transfer value
      * @param string $transfer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setTransfer(?string $transfer = null): self
     {
@@ -1279,7 +1279,7 @@ class BusDetailDTO extends AbstractStructBase
     /**
      * Set vatIncluded value
      * @param bool $vatIncluded
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BusDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BusDetailDTO
      */
     public function setVatIncluded(?bool $vatIncluded = null): self
     {

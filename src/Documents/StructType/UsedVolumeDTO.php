@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class UsedVolumeDTO extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO
      */
     public function setCount(?int $count = null): self
     {
@@ -102,7 +102,7 @@ class UsedVolumeDTO extends AbstractStructBase
     /**
      * Set documentCreationDate value
      * @param string $documentCreationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO
      */
     public function setDocumentCreationDate(?string $documentCreationDate = null): self
     {
@@ -125,7 +125,7 @@ class UsedVolumeDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -148,7 +148,7 @@ class UsedVolumeDTO extends AbstractStructBase
     /**
      * Set forCharging value
      * @param bool $forCharging
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO
      */
     public function setForCharging(?bool $forCharging = null): self
     {
@@ -171,7 +171,7 @@ class UsedVolumeDTO extends AbstractStructBase
     /**
      * Set size value
      * @param int $size
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO
      */
     public function setSize(?int $size = null): self
     {
@@ -194,7 +194,7 @@ class UsedVolumeDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UsedVolumeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UsedVolumeDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

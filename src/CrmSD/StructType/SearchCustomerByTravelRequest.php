@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SearchCustomerByTravelRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerByTravelRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByTravelRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -78,7 +78,7 @@ class SearchCustomerByTravelRequest extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerByTravelRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByTravelRequest
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -101,7 +101,7 @@ class SearchCustomerByTravelRequest extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchCustomerByTravelRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByTravelRequest
      */
     public function setTravelDate(?string $travelDate = null): self
     {

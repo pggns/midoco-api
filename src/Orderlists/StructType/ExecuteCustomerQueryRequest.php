@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class ExecuteCustomerQueryRequest extends AbstractStructBase
      * The MidocoQuery
      * Meta information extracted from the WSDL
      * - ref: MidocoQuery
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQuery|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoQuery|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQuery $MidocoQuery = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoQuery $MidocoQuery = null;
     /**
      * Constructor method for ExecuteCustomerQueryRequest
      * @uses ExecuteCustomerQueryRequest::setMidocoQuery()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQuery $midocoQuery
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoQuery $midocoQuery
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQuery $midocoQuery = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoQuery $midocoQuery = null)
     {
         $this
             ->setMidocoQuery($midocoQuery);
     }
     /**
      * Get MidocoQuery value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQuery|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQuery|null
      */
-    public function getMidocoQuery(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQuery
+    public function getMidocoQuery(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoQuery
     {
         return $this->MidocoQuery;
     }
     /**
      * Set MidocoQuery value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQuery $midocoQuery
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ExecuteCustomerQueryRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoQuery $midocoQuery
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ExecuteCustomerQueryRequest
      */
-    public function setMidocoQuery(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoQuery $midocoQuery = null): self
+    public function setMidocoQuery(?\Pggns\MidocoApi\Orderlists\StructType\MidocoQuery $midocoQuery = null): self
     {
         $this->MidocoQuery = $midocoQuery;
         

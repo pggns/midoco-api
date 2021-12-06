@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class GetPaymentAccrualForCreditorRequest extends AbstractStructBase
      * The PaymentAccrualSearchCriteria
      * Meta information extracted from the WSDL
      * - ref: PaymentAccrualSearchCriteria
-     * @var \Pggns\MidocoApi\Api\Order\StructType\PaymentAccrualSearchCriteria|null
+     * @var \Pggns\MidocoApi\Order\StructType\PaymentAccrualSearchCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\PaymentAccrualSearchCriteria $PaymentAccrualSearchCriteria = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\PaymentAccrualSearchCriteria $PaymentAccrualSearchCriteria = null;
     /**
      * The MidocoOrderByInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:MidocoOrderByInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[]
      */
     protected ?array $MidocoOrderByInfo = null;
     /**
@@ -45,12 +45,12 @@ class GetPaymentAccrualForCreditorRequest extends AbstractStructBase
      * @uses GetPaymentAccrualForCreditorRequest::setMidocoOrderByInfo()
      * @uses GetPaymentAccrualForCreditorRequest::setBeginIndex()
      * @uses GetPaymentAccrualForCreditorRequest::setEndIndex()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PaymentAccrualSearchCriteria $paymentAccrualSearchCriteria
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo[] $midocoOrderByInfo
+     * @param \Pggns\MidocoApi\Order\StructType\PaymentAccrualSearchCriteria $paymentAccrualSearchCriteria
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[] $midocoOrderByInfo
      * @param int $beginIndex
      * @param int $endIndex
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\PaymentAccrualSearchCriteria $paymentAccrualSearchCriteria = null, ?array $midocoOrderByInfo = null, ?int $beginIndex = null, ?int $endIndex = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\PaymentAccrualSearchCriteria $paymentAccrualSearchCriteria = null, ?array $midocoOrderByInfo = null, ?int $beginIndex = null, ?int $endIndex = null)
     {
         $this
             ->setPaymentAccrualSearchCriteria($paymentAccrualSearchCriteria)
@@ -60,18 +60,18 @@ class GetPaymentAccrualForCreditorRequest extends AbstractStructBase
     }
     /**
      * Get PaymentAccrualSearchCriteria value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentAccrualSearchCriteria|null
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentAccrualSearchCriteria|null
      */
-    public function getPaymentAccrualSearchCriteria(): ?\Pggns\MidocoApi\Api\Order\StructType\PaymentAccrualSearchCriteria
+    public function getPaymentAccrualSearchCriteria(): ?\Pggns\MidocoApi\Order\StructType\PaymentAccrualSearchCriteria
     {
         return $this->PaymentAccrualSearchCriteria;
     }
     /**
      * Set PaymentAccrualSearchCriteria value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PaymentAccrualSearchCriteria $paymentAccrualSearchCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentAccrualForCreditorRequest
+     * @param \Pggns\MidocoApi\Order\StructType\PaymentAccrualSearchCriteria $paymentAccrualSearchCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentAccrualForCreditorRequest
      */
-    public function setPaymentAccrualSearchCriteria(?\Pggns\MidocoApi\Api\Order\StructType\PaymentAccrualSearchCriteria $paymentAccrualSearchCriteria = null): self
+    public function setPaymentAccrualSearchCriteria(?\Pggns\MidocoApi\Order\StructType\PaymentAccrualSearchCriteria $paymentAccrualSearchCriteria = null): self
     {
         $this->PaymentAccrualSearchCriteria = $paymentAccrualSearchCriteria;
         
@@ -79,7 +79,7 @@ class GetPaymentAccrualForCreditorRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderByInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[]
      */
     public function getMidocoOrderByInfo(): ?array
     {
@@ -100,12 +100,12 @@ class GetPaymentAccrualForCreditorRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPaymentAccrualForCreditorRequestMidocoOrderByInfoItem) {
             // validation for constraint: itemType
-            if (!$getPaymentAccrualForCreditorRequestMidocoOrderByInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo) {
+            if (!$getPaymentAccrualForCreditorRequestMidocoOrderByInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo) {
                 $invalidValues[] = is_object($getPaymentAccrualForCreditorRequestMidocoOrderByInfoItem) ? get_class($getPaymentAccrualForCreditorRequestMidocoOrderByInfoItem) : sprintf('%s(%s)', gettype($getPaymentAccrualForCreditorRequestMidocoOrderByInfoItem), var_export($getPaymentAccrualForCreditorRequestMidocoOrderByInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderByInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderByInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -114,8 +114,8 @@ class GetPaymentAccrualForCreditorRequest extends AbstractStructBase
     /**
      * Set MidocoOrderByInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo[] $midocoOrderByInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentAccrualForCreditorRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[] $midocoOrderByInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentAccrualForCreditorRequest
      */
     public function setMidocoOrderByInfo(?array $midocoOrderByInfo = null): self
     {
@@ -130,14 +130,14 @@ class GetPaymentAccrualForCreditorRequest extends AbstractStructBase
     /**
      * Add item to MidocoOrderByInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentAccrualForCreditorRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentAccrualForCreditorRequest
      */
-    public function addToMidocoOrderByInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo $item): self
+    public function addToMidocoOrderByInfo(\Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderByInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderByInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderByInfo[] = $item;
         
@@ -154,7 +154,7 @@ class GetPaymentAccrualForCreditorRequest extends AbstractStructBase
     /**
      * Set beginIndex value
      * @param int $beginIndex
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentAccrualForCreditorRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentAccrualForCreditorRequest
      */
     public function setBeginIndex(?int $beginIndex = null): self
     {
@@ -177,7 +177,7 @@ class GetPaymentAccrualForCreditorRequest extends AbstractStructBase
     /**
      * Set endIndex value
      * @param int $endIndex
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentAccrualForCreditorRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentAccrualForCreditorRequest
      */
     public function setEndIndex(?int $endIndex = null): self
     {

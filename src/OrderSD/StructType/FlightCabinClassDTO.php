@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class FlightCabinClassDTO extends AbstractStructBase
     /**
      * Set airlineCode value
      * @param string $airlineCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FlightCabinClassDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FlightCabinClassDTO
      */
     public function setAirlineCode(?string $airlineCode = null): self
     {
@@ -110,7 +110,7 @@ class FlightCabinClassDTO extends AbstractStructBase
     /**
      * Set bookingClass value
      * @param string $bookingClass
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FlightCabinClassDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FlightCabinClassDTO
      */
     public function setBookingClass(?string $bookingClass = null): self
     {
@@ -133,7 +133,7 @@ class FlightCabinClassDTO extends AbstractStructBase
     /**
      * Set cabinClass value
      * @param string $cabinClass
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FlightCabinClassDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FlightCabinClassDTO
      */
     public function setCabinClass(?string $cabinClass = null): self
     {
@@ -156,7 +156,7 @@ class FlightCabinClassDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FlightCabinClassDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FlightCabinClassDTO
      */
     public function setId(?int $id = null): self
     {
@@ -179,7 +179,7 @@ class FlightCabinClassDTO extends AbstractStructBase
     /**
      * Set route value
      * @param string $route
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FlightCabinClassDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FlightCabinClassDTO
      */
     public function setRoute(?string $route = null): self
     {
@@ -202,7 +202,7 @@ class FlightCabinClassDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FlightCabinClassDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FlightCabinClassDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -225,7 +225,7 @@ class FlightCabinClassDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\FlightCabinClassDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\FlightCabinClassDTO
      */
     public function setValidTo(?string $validTo = null): self
     {

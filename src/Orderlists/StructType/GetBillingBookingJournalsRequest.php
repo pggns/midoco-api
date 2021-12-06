@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetBillingBookingJournalsRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetBillingBookingJournalsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetBillingBookingJournalsRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class CustProfileAttrDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustProfileAttrDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -94,7 +94,7 @@ class CustProfileAttrDTO extends AbstractStructBase
     /**
      * Set gdsAttributeId value
      * @param string $gdsAttributeId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustProfileAttrDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO
      */
     public function setGdsAttributeId(?string $gdsAttributeId = null): self
     {
@@ -117,7 +117,7 @@ class CustProfileAttrDTO extends AbstractStructBase
     /**
      * Set gdsAttributeValue value
      * @param string $gdsAttributeValue
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustProfileAttrDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO
      */
     public function setGdsAttributeValue(?string $gdsAttributeValue = null): self
     {
@@ -140,7 +140,7 @@ class CustProfileAttrDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustProfileAttrDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -163,7 +163,7 @@ class CustProfileAttrDTO extends AbstractStructBase
     /**
      * Set profileAttrId value
      * @param int $profileAttrId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustProfileAttrDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO
      */
     public function setProfileAttrId(?int $profileAttrId = null): self
     {

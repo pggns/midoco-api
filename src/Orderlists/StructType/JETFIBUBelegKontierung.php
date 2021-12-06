@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -1023,7 +1023,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set Satzart value
      * @param string $satzart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setSatzart(?string $satzart = null): self
     {
@@ -1046,7 +1046,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set mandnr_bib value
      * @param string $mandnr_bib
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setMandnr_bib(?string $mandnr_bib = null): self
     {
@@ -1069,7 +1069,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set bereich_bib value
      * @param string $bereich_bib
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setBereich_bib(?string $bereich_bib = null): self
     {
@@ -1092,7 +1092,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set bereichlfd_bib value
      * @param string $bereichlfd_bib
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setBereichlfd_bib(?string $bereichlfd_bib = null): self
     {
@@ -1115,7 +1115,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set biktlfd value
      * @param string $biktlfd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setBiktlfd(?string $biktlfd = null): self
     {
@@ -1138,7 +1138,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kz_kt value
      * @param string $kz_kt
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKz_kt(?string $kz_kt = null): self
     {
@@ -1161,7 +1161,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set mandnr_kto value
      * @param string $mandnr_kto
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setMandnr_kto(?string $mandnr_kto = null): self
     {
@@ -1184,7 +1184,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set ktonr value
      * @param string $ktonr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKtonr(?string $ktonr = null): self
     {
@@ -1207,7 +1207,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kz_buart value
      * @param string $kz_buart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKz_buart(?string $kz_buart = null): self
     {
@@ -1230,7 +1230,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kz_sh value
      * @param string $kz_sh
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKz_sh(?string $kz_sh = null): self
     {
@@ -1253,7 +1253,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kz_storno value
      * @param string $kz_storno
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKz_storno(?string $kz_storno = null): self
     {
@@ -1276,7 +1276,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kz_svkategorie value
      * @param string $kz_svkategorie
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKz_svkategorie(?string $kz_svkategorie = null): self
     {
@@ -1299,7 +1299,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setText(?string $text = null): self
     {
@@ -1322,7 +1322,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kz_ustbuch value
      * @param string $kz_ustbuch
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKz_ustbuch(?string $kz_ustbuch = null): self
     {
@@ -1345,7 +1345,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kz_ust value
      * @param string $kz_ust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKz_ust(?string $kz_ust = null): self
     {
@@ -1368,7 +1368,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set ustdat value
      * @param string $ustdat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setUstdat(?string $ustdat = null): self
     {
@@ -1391,7 +1391,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kz_ustart value
      * @param string $kz_ustart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKz_ustart(?string $kz_ustart = null): self
     {
@@ -1414,7 +1414,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kz_fw value
      * @param string $kz_fw
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKz_fw(?string $kz_fw = null): self
     {
@@ -1437,7 +1437,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set fwvariante value
      * @param string $fwvariante
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setFwvariante(?string $fwvariante = null): self
     {
@@ -1460,7 +1460,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set fwbetr value
      * @param string $fwbetr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setFwbetr(?string $fwbetr = null): self
     {
@@ -1483,7 +1483,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set betr value
      * @param string $betr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setBetr(?string $betr = null): self
     {
@@ -1506,7 +1506,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set fwustbetr value
      * @param string $fwustbetr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setFwustbetr(?string $fwustbetr = null): self
     {
@@ -1529,7 +1529,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set ustbetr value
      * @param string $ustbetr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setUstbetr(?string $ustbetr = null): self
     {
@@ -1552,7 +1552,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set skbetr value
      * @param string $skbetr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setSkbetr(?string $skbetr = null): self
     {
@@ -1575,7 +1575,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set skfaebetr value
      * @param string $skfaebetr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setSkfaebetr(?string $skfaebetr = null): self
     {
@@ -1598,7 +1598,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set fwzinsbetr value
      * @param string $fwzinsbetr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setFwzinsbetr(?string $fwzinsbetr = null): self
     {
@@ -1621,7 +1621,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set zinsbetr value
      * @param string $zinsbetr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setZinsbetr(?string $zinsbetr = null): self
     {
@@ -1644,7 +1644,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set fwnaustbetr value
      * @param string $fwnaustbetr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setFwnaustbetr(?string $fwnaustbetr = null): self
     {
@@ -1667,7 +1667,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set naustbetr value
      * @param string $naustbetr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setNaustbetr(?string $naustbetr = null): self
     {
@@ -1690,7 +1690,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set valdat value
      * @param string $valdat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setValdat(?string $valdat = null): self
     {
@@ -1713,7 +1713,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set scrita value
      * @param string $scrita
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setScrita(?string $scrita = null): self
     {
@@ -1736,7 +1736,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set scritb value
      * @param string $scritb
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setScritb(?string $scritb = null): self
     {
@@ -1759,7 +1759,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set scritc value
      * @param string $scritc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setScritc(?string $scritc = null): self
     {
@@ -1782,7 +1782,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set scritd value
      * @param string $scritd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setScritd(?string $scritd = null): self
     {
@@ -1805,7 +1805,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set scrite value
      * @param string $scrite
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setScrite(?string $scrite = null): self
     {
@@ -1828,7 +1828,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set scritf value
      * @param string $scritf
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setScritf(?string $scritf = null): self
     {
@@ -1851,7 +1851,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set perdat_uva value
      * @param string $perdat_uva
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setPerdat_uva(?string $perdat_uva = null): self
     {
@@ -1874,7 +1874,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set notiz value
      * @param string $notiz
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setNotiz(?string $notiz = null): self
     {
@@ -1897,7 +1897,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_nr value
      * @param string $op_nr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_nr(?string $op_nr = null): self
     {
@@ -1920,7 +1920,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_subopnr value
      * @param string $op_subopnr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_subopnr(?string $op_subopnr = null): self
     {
@@ -1943,7 +1943,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ratennr value
      * @param string $op_ratennr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ratennr(?string $op_ratennr = null): self
     {
@@ -1966,7 +1966,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_skbetr_max value
      * @param string $op_skbetr_max
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_skbetr_max(?string $op_skbetr_max = null): self
     {
@@ -1989,7 +1989,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_zlgkond value
      * @param string $op_zlgkond
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_zlgkond(?string $op_zlgkond = null): self
     {
@@ -2012,7 +2012,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_przsk1 value
      * @param string $op_przsk1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_przsk1(?string $op_przsk1 = null): self
     {
@@ -2035,7 +2035,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_tage1 value
      * @param string $op_tage1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_tage1(?string $op_tage1 = null): self
     {
@@ -2058,7 +2058,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_przsk2 value
      * @param string $op_przsk2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_przsk2(?string $op_przsk2 = null): self
     {
@@ -2081,7 +2081,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_tage2 value
      * @param string $op_tage2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_tage2(?string $op_tage2 = null): self
     {
@@ -2104,7 +2104,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_tage_ntto value
      * @param string $op_tage_ntto
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_tage_ntto(?string $op_tage_ntto = null): self
     {
@@ -2127,7 +2127,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_mhstuf value
      * @param string $op_mhstuf
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_mhstuf(?string $op_mhstuf = null): self
     {
@@ -2150,7 +2150,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_mhsperre value
      * @param string $op_mhsperre
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_mhsperre(?string $op_mhsperre = null): self
     {
@@ -2173,7 +2173,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_zvksperre value
      * @param string $op_zvksperre
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_zvksperre(?string $op_zvksperre = null): self
     {
@@ -2196,7 +2196,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_mhanschr value
      * @param string $op_mhanschr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_mhanschr(?string $op_mhanschr = null): self
     {
@@ -2219,7 +2219,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_text value
      * @param string $op_text
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_text(?string $op_text = null): self
     {
@@ -2242,7 +2242,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_refnr_vesr value
      * @param string $op_refnr_vesr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_refnr_vesr(?string $op_refnr_vesr = null): self
     {
@@ -2265,7 +2265,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_vesr_tnr value
      * @param string $op_vesr_tnr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_vesr_tnr(?string $op_vesr_tnr = null): self
     {
@@ -2288,7 +2288,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_anrede value
      * @param string $op_ma_anrede
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_anrede(?string $op_ma_anrede = null): self
     {
@@ -2311,7 +2311,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_name1 value
      * @param string $op_ma_name1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_name1(?string $op_ma_name1 = null): self
     {
@@ -2334,7 +2334,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_name2 value
      * @param string $op_ma_name2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_name2(?string $op_ma_name2 = null): self
     {
@@ -2357,7 +2357,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_name3 value
      * @param string $op_ma_name3
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_name3(?string $op_ma_name3 = null): self
     {
@@ -2380,7 +2380,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_emailadr1 value
      * @param string $op_ma_emailadr1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_emailadr1(?string $op_ma_emailadr1 = null): self
     {
@@ -2403,7 +2403,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_emailname1 value
      * @param string $op_ma_emailname1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_emailname1(?string $op_ma_emailname1 = null): self
     {
@@ -2426,7 +2426,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_emailadr2 value
      * @param string $op_ma_emailadr2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_emailadr2(?string $op_ma_emailadr2 = null): self
     {
@@ -2449,7 +2449,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_emailname2 value
      * @param string $op_ma_emailname2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_emailname2(?string $op_ma_emailname2 = null): self
     {
@@ -2472,7 +2472,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_www_adresse value
      * @param string $op_ma_www_adresse
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_www_adresse(?string $op_ma_www_adresse = null): self
     {
@@ -2495,7 +2495,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_telnr1 value
      * @param string $op_ma_telnr1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_telnr1(?string $op_ma_telnr1 = null): self
     {
@@ -2518,7 +2518,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_telnr2 value
      * @param string $op_ma_telnr2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_telnr2(?string $op_ma_telnr2 = null): self
     {
@@ -2541,7 +2541,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_telefaxnr value
      * @param string $op_ma_telefaxnr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_telefaxnr(?string $op_ma_telefaxnr = null): self
     {
@@ -2564,7 +2564,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_telefaxnr2 value
      * @param string $op_ma_telefaxnr2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_telefaxnr2(?string $op_ma_telefaxnr2 = null): self
     {
@@ -2587,7 +2587,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_strasse value
      * @param string $op_ma_strasse
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_strasse(?string $op_ma_strasse = null): self
     {
@@ -2610,7 +2610,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_strasse2 value
      * @param string $op_ma_strasse2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_strasse2(?string $op_ma_strasse2 = null): self
     {
@@ -2633,7 +2633,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_kz_land value
      * @param string $op_ma_kz_land
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_kz_land(?string $op_ma_kz_land = null): self
     {
@@ -2656,7 +2656,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_landbez value
      * @param string $op_ma_landbez
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_landbez(?string $op_ma_landbez = null): self
     {
@@ -2679,7 +2679,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_plz value
      * @param string $op_ma_plz
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_plz(?string $op_ma_plz = null): self
     {
@@ -2702,7 +2702,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_ma_ort value
      * @param string $op_ma_ort
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_ma_ort(?string $op_ma_ort = null): self
     {
@@ -2725,7 +2725,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_anrede value
      * @param string $op_za_anrede
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_anrede(?string $op_za_anrede = null): self
     {
@@ -2748,7 +2748,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_name1 value
      * @param string $op_za_name1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_name1(?string $op_za_name1 = null): self
     {
@@ -2771,7 +2771,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_name2 value
      * @param string $op_za_name2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_name2(?string $op_za_name2 = null): self
     {
@@ -2794,7 +2794,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_name3 value
      * @param string $op_za_name3
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_name3(?string $op_za_name3 = null): self
     {
@@ -2817,7 +2817,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_emailadr1 value
      * @param string $op_za_emailadr1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_emailadr1(?string $op_za_emailadr1 = null): self
     {
@@ -2840,7 +2840,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_emailname1 value
      * @param string $op_za_emailname1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_emailname1(?string $op_za_emailname1 = null): self
     {
@@ -2863,7 +2863,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_emailadr2 value
      * @param string $op_za_emailadr2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_emailadr2(?string $op_za_emailadr2 = null): self
     {
@@ -2886,7 +2886,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_emailname2 value
      * @param string $op_za_emailname2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_emailname2(?string $op_za_emailname2 = null): self
     {
@@ -2909,7 +2909,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_www_adresse value
      * @param string $op_za_www_adresse
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_www_adresse(?string $op_za_www_adresse = null): self
     {
@@ -2932,7 +2932,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_telnr1 value
      * @param string $op_za_telnr1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_telnr1(?string $op_za_telnr1 = null): self
     {
@@ -2955,7 +2955,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_telnr2 value
      * @param string $op_za_telnr2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_telnr2(?string $op_za_telnr2 = null): self
     {
@@ -2978,7 +2978,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_telefaxnr value
      * @param string $op_za_telefaxnr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_telefaxnr(?string $op_za_telefaxnr = null): self
     {
@@ -3001,7 +3001,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_telefaxnr2 value
      * @param string $op_za_telefaxnr2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_telefaxnr2(?string $op_za_telefaxnr2 = null): self
     {
@@ -3024,7 +3024,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_strasse value
      * @param string $op_za_strasse
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_strasse(?string $op_za_strasse = null): self
     {
@@ -3047,7 +3047,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_strasse2 value
      * @param string $op_za_strasse2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_strasse2(?string $op_za_strasse2 = null): self
     {
@@ -3070,7 +3070,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_kz_land value
      * @param string $op_za_kz_land
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_kz_land(?string $op_za_kz_land = null): self
     {
@@ -3093,7 +3093,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_landbez value
      * @param string $op_za_landbez
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_landbez(?string $op_za_landbez = null): self
     {
@@ -3116,7 +3116,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_plz value
      * @param string $op_za_plz
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_plz(?string $op_za_plz = null): self
     {
@@ -3139,7 +3139,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_za_ort value
      * @param string $op_za_ort
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_za_ort(?string $op_za_ort = null): self
     {
@@ -3162,7 +3162,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_frktonr value
      * @param string $op_frktonr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_frktonr(?string $op_frktonr = null): self
     {
@@ -3185,7 +3185,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_zvanschr value
      * @param string $op_zvanschr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_zvanschr(?string $op_zvanschr = null): self
     {
@@ -3208,7 +3208,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_bk_kz_land value
      * @param string $op_bk_kz_land
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_bk_kz_land(?string $op_bk_kz_land = null): self
     {
@@ -3231,7 +3231,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_bk_blz value
      * @param string $op_bk_blz
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_bk_blz(?string $op_bk_blz = null): self
     {
@@ -3254,7 +3254,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_bk_bankktonr value
      * @param string $op_bk_bankktonr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_bk_bankktonr(?string $op_bk_bankktonr = null): self
     {
@@ -3277,7 +3277,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_banknr value
      * @param string $op_banknr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_banknr(?string $op_banknr = null): self
     {
@@ -3300,7 +3300,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set op_notiz value
      * @param string $op_notiz
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setOp_notiz(?string $op_notiz = null): self
     {
@@ -3323,7 +3323,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kr_buch value
      * @param string $kr_buch
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKr_buch(?string $kr_buch = null): self
     {
@@ -3346,7 +3346,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kr_art value
      * @param string $kr_art
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKr_art(?string $kr_art = null): self
     {
@@ -3369,7 +3369,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kr_kstnr value
      * @param string $kr_kstnr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKr_kstnr(?string $kr_kstnr = null): self
     {
@@ -3392,7 +3392,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kr_buart value
      * @param string $kr_buart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKr_buart(?string $kr_buart = null): self
     {
@@ -3415,7 +3415,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kr_kstnr_zd value
      * @param string $kr_kstnr_zd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKr_kstnr_zd(?string $kr_kstnr_zd = null): self
     {
@@ -3438,7 +3438,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kr_koanr value
      * @param string $kr_koanr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKr_koanr(?string $kr_koanr = null): self
     {
@@ -3461,7 +3461,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kr_koanr_extern value
      * @param string $kr_koanr_extern
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKr_koanr_extern(?string $kr_koanr_extern = null): self
     {
@@ -3484,7 +3484,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kr_perdat value
      * @param string $kr_perdat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKr_perdat(?string $kr_perdat = null): self
     {
@@ -3507,7 +3507,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kr_fwbetr value
      * @param string $kr_fwbetr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKr_fwbetr(?string $kr_fwbetr = null): self
     {
@@ -3530,7 +3530,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kr_betr value
      * @param string $kr_betr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKr_betr(?string $kr_betr = null): self
     {
@@ -3553,7 +3553,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kr_menge value
      * @param string $kr_menge
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKr_menge(?string $kr_menge = null): self
     {
@@ -3576,7 +3576,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set kr_text value
      * @param string $kr_text
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setKr_text(?string $kr_text = null): self
     {
@@ -3599,7 +3599,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set ev_nr value
      * @param string $ev_nr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setEv_nr(?string $ev_nr = null): self
     {
@@ -3622,7 +3622,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set ev_faedat value
      * @param string $ev_faedat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setEv_faedat(?string $ev_faedat = null): self
     {
@@ -3645,7 +3645,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set ev_prol value
      * @param string $ev_prol
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setEv_prol(?string $ev_prol = null): self
     {
@@ -3668,7 +3668,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set ev_text value
      * @param string $ev_text
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setEv_text(?string $ev_text = null): self
     {
@@ -3691,7 +3691,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set ev_aussteller value
      * @param string $ev_aussteller
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setEv_aussteller(?string $ev_aussteller = null): self
     {
@@ -3714,7 +3714,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set ev_bezogener value
      * @param string $ev_bezogener
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setEv_bezogener(?string $ev_bezogener = null): self
     {
@@ -3737,7 +3737,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set ev_zahlstelle value
      * @param string $ev_zahlstelle
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setEv_zahlstelle(?string $ev_zahlstelle = null): self
     {
@@ -3760,7 +3760,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set ts_dhrlbetr value
      * @param string $ts_dhrlbetr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setTs_dhrlbetr(?string $ts_dhrlbetr = null): self
     {
@@ -3783,7 +3783,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set ts_dhrlfaedat value
      * @param string $ts_dhrlfaedat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setTs_dhrlfaedat(?string $ts_dhrlfaedat = null): self
     {
@@ -3806,7 +3806,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set ts_kz_drl_ber value
      * @param string $ts_kz_drl_ber
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setTs_kz_drl_ber(?string $ts_kz_drl_ber = null): self
     {
@@ -3829,7 +3829,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set eust_ktonr value
      * @param string $eust_ktonr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setEust_ktonr(?string $eust_ktonr = null): self
     {
@@ -3852,7 +3852,7 @@ class JETFIBUBelegKontierung extends AbstractStructBase
     /**
      * Set eust_opnr value
      * @param string $eust_opnr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JETFIBUBelegKontierung
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JETFIBUBelegKontierung
      */
     public function setEust_opnr(?string $eust_opnr = null): self
     {

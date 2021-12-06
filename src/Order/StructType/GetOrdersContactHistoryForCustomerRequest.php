@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetOrdersContactHistoryForCustomerRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrdersContactHistoryForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrdersContactHistoryForCustomerRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {

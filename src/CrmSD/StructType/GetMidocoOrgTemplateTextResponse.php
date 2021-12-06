@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetMidocoOrgTemplateTextResponse extends AbstractStructBase
      * The MidocoOrgTemplateText
      * Meta information extracted from the WSDL
      * - ref: MidocoOrgTemplateText
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrgTemplateText|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgTemplateText|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrgTemplateText $MidocoOrgTemplateText = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoOrgTemplateText $MidocoOrgTemplateText = null;
     /**
      * Constructor method for GetMidocoOrgTemplateTextResponse
      * @uses GetMidocoOrgTemplateTextResponse::setMidocoOrgTemplateText()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText = null)
     {
         $this
             ->setMidocoOrgTemplateText($midocoOrgTemplateText);
     }
     /**
      * Get MidocoOrgTemplateText value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrgTemplateText|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgTemplateText|null
      */
-    public function getMidocoOrgTemplateText(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrgTemplateText
+    public function getMidocoOrgTemplateText(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoOrgTemplateText
     {
         return $this->MidocoOrgTemplateText;
     }
     /**
      * Set MidocoOrgTemplateText value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMidocoOrgTemplateTextResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoOrgTemplateTextResponse
      */
-    public function setMidocoOrgTemplateText(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText = null): self
+    public function setMidocoOrgTemplateText(?\Pggns\MidocoApi\CrmSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText = null): self
     {
         $this->MidocoOrgTemplateText = $midocoOrgTemplateText;
         

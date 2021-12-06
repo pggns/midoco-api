@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -99,7 +99,7 @@ class PrivateData extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -122,7 +122,7 @@ class PrivateData extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData
      */
     public function setTitle(?string $title = null): self
     {
@@ -145,7 +145,7 @@ class PrivateData extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData
      */
     public function setForename(?string $forename = null): self
     {
@@ -168,7 +168,7 @@ class PrivateData extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData
      */
     public function setName(?string $name = null): self
     {
@@ -191,7 +191,7 @@ class PrivateData extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -214,7 +214,7 @@ class PrivateData extends AbstractStructBase
     /**
      * Set birthday value
      * @param string $birthday
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\PrivateData
+     * @return \Pggns\MidocoApi\Booking\StructType\PrivateData
      */
     public function setBirthday(?string $birthday = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SupplierShipNameDTO extends AbstractStructBase
     /**
      * Set shipName value
      * @param string $shipName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierShipNameDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierShipNameDTO
      */
     public function setShipName(?string $shipName = null): self
     {
@@ -78,7 +78,7 @@ class SupplierShipNameDTO extends AbstractStructBase
     /**
      * Set shipNameId value
      * @param int $shipNameId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierShipNameDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierShipNameDTO
      */
     public function setShipNameId(?int $shipNameId = null): self
     {
@@ -101,7 +101,7 @@ class SupplierShipNameDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierShipNameDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierShipNameDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

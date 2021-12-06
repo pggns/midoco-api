@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -191,7 +191,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set connectionType value
      * @param int $connectionType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setConnectionType(?int $connectionType = null): self
     {
@@ -214,7 +214,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set originCustomerId value
      * @param int $originCustomerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setOriginCustomerId(?int $originCustomerId = null): self
     {
@@ -237,7 +237,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set forenameOfCust value
      * @param string $forenameOfCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setForenameOfCust(?string $forenameOfCust = null): self
     {
@@ -260,7 +260,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set nameOfCust value
      * @param string $nameOfCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setNameOfCust(?string $nameOfCust = null): self
     {
@@ -283,7 +283,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set streetOfCust value
      * @param string $streetOfCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setStreetOfCust(?string $streetOfCust = null): self
     {
@@ -306,7 +306,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set streetNoOfCust value
      * @param string $streetNoOfCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setStreetNoOfCust(?string $streetNoOfCust = null): self
     {
@@ -329,7 +329,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set postalCodeOfCust value
      * @param string $postalCodeOfCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setPostalCodeOfCust(?string $postalCodeOfCust = null): self
     {
@@ -352,7 +352,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set cityOfCust value
      * @param string $cityOfCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setCityOfCust(?string $cityOfCust = null): self
     {
@@ -375,7 +375,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set assignedCustomerId value
      * @param int $assignedCustomerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setAssignedCustomerId(?int $assignedCustomerId = null): self
     {
@@ -398,7 +398,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set forenameOfLinkedCust value
      * @param string $forenameOfLinkedCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setForenameOfLinkedCust(?string $forenameOfLinkedCust = null): self
     {
@@ -421,7 +421,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set nameOfLinkedCust value
      * @param string $nameOfLinkedCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setNameOfLinkedCust(?string $nameOfLinkedCust = null): self
     {
@@ -444,7 +444,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set streetOfLinkedCust value
      * @param string $streetOfLinkedCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setStreetOfLinkedCust(?string $streetOfLinkedCust = null): self
     {
@@ -467,7 +467,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set streetNoOfLinkedCust value
      * @param string $streetNoOfLinkedCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setStreetNoOfLinkedCust(?string $streetNoOfLinkedCust = null): self
     {
@@ -490,7 +490,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set postalCodeOfLinkedCust value
      * @param string $postalCodeOfLinkedCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setPostalCodeOfLinkedCust(?string $postalCodeOfLinkedCust = null): self
     {
@@ -513,7 +513,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set cityOfLinkedCust value
      * @param string $cityOfLinkedCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setCityOfLinkedCust(?string $cityOfLinkedCust = null): self
     {
@@ -536,7 +536,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set firstBookingDateOfLinkedCust value
      * @param string $firstBookingDateOfLinkedCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setFirstBookingDateOfLinkedCust(?string $firstBookingDateOfLinkedCust = null): self
     {
@@ -559,7 +559,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set lastBookingDateOfLinkedCust value
      * @param string $lastBookingDateOfLinkedCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setLastBookingDateOfLinkedCust(?string $lastBookingDateOfLinkedCust = null): self
     {
@@ -582,7 +582,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set lastTravelDateOfLinkedCust value
      * @param string $lastTravelDateOfLinkedCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setLastTravelDateOfLinkedCust(?string $lastTravelDateOfLinkedCust = null): self
     {
@@ -605,7 +605,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set statusLastTravOfLinkedCust value
      * @param string $statusLastTravOfLinkedCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setStatusLastTravOfLinkedCust(?string $statusLastTravOfLinkedCust = null): self
     {
@@ -628,7 +628,7 @@ class MidocoConnectedCustomerListType extends AbstractStructBase
     /**
      * Set priceLastTravOfLinkedCust value
      * @param float $priceLastTravOfLinkedCust
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListType
      */
     public function setPriceLastTravOfLinkedCust(?float $priceLastTravOfLinkedCust = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchVirtualAccountResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVirtualAccount
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccountDTO[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\VirtualAccountDTO[]
      */
     protected ?array $MidocoVirtualAccount = null;
     /**
      * Constructor method for SearchVirtualAccountResponse
      * @uses SearchVirtualAccountResponse::setMidocoVirtualAccount()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccountDTO[] $midocoVirtualAccount
+     * @param \Pggns\MidocoApi\OrderSD\StructType\VirtualAccountDTO[] $midocoVirtualAccount
      */
     public function __construct(?array $midocoVirtualAccount = null)
     {
@@ -34,7 +34,7 @@ class SearchVirtualAccountResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVirtualAccount value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccountDTO[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VirtualAccountDTO[]
      */
     public function getMidocoVirtualAccount(): ?array
     {
@@ -55,12 +55,12 @@ class SearchVirtualAccountResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchVirtualAccountResponseMidocoVirtualAccountItem) {
             // validation for constraint: itemType
-            if (!$searchVirtualAccountResponseMidocoVirtualAccountItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccountDTO) {
+            if (!$searchVirtualAccountResponseMidocoVirtualAccountItem instanceof \Pggns\MidocoApi\OrderSD\StructType\VirtualAccountDTO) {
                 $invalidValues[] = is_object($searchVirtualAccountResponseMidocoVirtualAccountItem) ? get_class($searchVirtualAccountResponseMidocoVirtualAccountItem) : sprintf('%s(%s)', gettype($searchVirtualAccountResponseMidocoVirtualAccountItem), var_export($searchVirtualAccountResponseMidocoVirtualAccountItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVirtualAccount property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccountDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVirtualAccount property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\VirtualAccountDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchVirtualAccountResponse extends AbstractStructBase
     /**
      * Set MidocoVirtualAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccountDTO[] $midocoVirtualAccount
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SearchVirtualAccountResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\VirtualAccountDTO[] $midocoVirtualAccount
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SearchVirtualAccountResponse
      */
     public function setMidocoVirtualAccount(?array $midocoVirtualAccount = null): self
     {
@@ -85,14 +85,14 @@ class SearchVirtualAccountResponse extends AbstractStructBase
     /**
      * Add item to MidocoVirtualAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccountDTO $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SearchVirtualAccountResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\VirtualAccountDTO $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SearchVirtualAccountResponse
      */
-    public function addToMidocoVirtualAccount(\Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccountDTO $item): self
+    public function addToMidocoVirtualAccount(\Pggns\MidocoApi\OrderSD\StructType\VirtualAccountDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccountDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoVirtualAccount property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\VirtualAccountDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\VirtualAccountDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoVirtualAccount property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\VirtualAccountDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVirtualAccount[] = $item;
         

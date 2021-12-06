@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoRuleAssignSearchCriteria extends AbstractStructBase
     /**
      * Set ruleId value
      * @param int $ruleId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoRuleAssignSearchCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoRuleAssignSearchCriteria
      */
     public function setRuleId(?int $ruleId = null): self
     {

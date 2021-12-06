@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CashBookNextPageDTO extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookNextPageDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookNextPageDTO
      */
     public function setCashBookId(?int $cashBookId = null): self
     {
@@ -78,7 +78,7 @@ class CashBookNextPageDTO extends AbstractStructBase
     /**
      * Set nextPrintingPage value
      * @param int $nextPrintingPage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookNextPageDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookNextPageDTO
      */
     public function setNextPrintingPage(?int $nextPrintingPage = null): self
     {
@@ -101,7 +101,7 @@ class CashBookNextPageDTO extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookNextPageDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookNextPageDTO
      */
     public function setPaymentType(?string $paymentType = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoFlightSegmentDetails4Printing
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightSegmentDetails4Printing[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoFlightSegmentDetails4Printing[]
      */
     protected ?array $MidocoFlightSegmentDetails4Printing = null;
     /**
@@ -27,15 +27,15 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoFlightDuration
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDuration|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoFlightDuration|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDuration $MidocoFlightDuration = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoFlightDuration $MidocoFlightDuration = null;
     /**
      * The MidocoRemarks
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkType[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoRemarkType[]
      */
     protected ?array $MidocoRemarks = null;
     /**
@@ -85,9 +85,9 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
      * @uses MidocoFlightDetailsInfo4Printing::setOperatingCarrierName()
      * @uses MidocoFlightDetailsInfo4Printing::setOperatingCarrierVatId()
      * @uses MidocoFlightDetailsInfo4Printing::setOperatingCarrierAddress()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightSegmentDetails4Printing[] $midocoFlightSegmentDetails4Printing
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDuration $midocoFlightDuration
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkType[] $midocoRemarks
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFlightSegmentDetails4Printing[] $midocoFlightSegmentDetails4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFlightDuration $midocoFlightDuration
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoRemarkType[] $midocoRemarks
      * @param string $carrierName
      * @param string $carrierVatId
      * @param string $carrierAddress
@@ -96,7 +96,7 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
      * @param string $operatingCarrierVatId
      * @param string $operatingCarrierAddress
      */
-    public function __construct(?array $midocoFlightSegmentDetails4Printing = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDuration $midocoFlightDuration = null, ?array $midocoRemarks = null, ?string $carrierName = null, ?string $carrierVatId = null, ?string $carrierAddress = null, ?string $days = null, ?string $operatingCarrierName = null, ?string $operatingCarrierVatId = null, ?string $operatingCarrierAddress = null)
+    public function __construct(?array $midocoFlightSegmentDetails4Printing = null, ?\Pggns\MidocoApi\Order\StructType\MidocoFlightDuration $midocoFlightDuration = null, ?array $midocoRemarks = null, ?string $carrierName = null, ?string $carrierVatId = null, ?string $carrierAddress = null, ?string $days = null, ?string $operatingCarrierName = null, ?string $operatingCarrierVatId = null, ?string $operatingCarrierAddress = null)
     {
         $this
             ->setMidocoFlightSegmentDetails4Printing($midocoFlightSegmentDetails4Printing)
@@ -112,7 +112,7 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     }
     /**
      * Get MidocoFlightSegmentDetails4Printing value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightSegmentDetails4Printing[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightSegmentDetails4Printing[]
      */
     public function getMidocoFlightSegmentDetails4Printing(): ?array
     {
@@ -133,12 +133,12 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
         $invalidValues = [];
         foreach ($values as $midocoFlightDetailsInfo4PrintingMidocoFlightSegmentDetails4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoFlightDetailsInfo4PrintingMidocoFlightSegmentDetails4PrintingItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightSegmentDetails4Printing) {
+            if (!$midocoFlightDetailsInfo4PrintingMidocoFlightSegmentDetails4PrintingItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoFlightSegmentDetails4Printing) {
                 $invalidValues[] = is_object($midocoFlightDetailsInfo4PrintingMidocoFlightSegmentDetails4PrintingItem) ? get_class($midocoFlightDetailsInfo4PrintingMidocoFlightSegmentDetails4PrintingItem) : sprintf('%s(%s)', gettype($midocoFlightDetailsInfo4PrintingMidocoFlightSegmentDetails4PrintingItem), var_export($midocoFlightDetailsInfo4PrintingMidocoFlightSegmentDetails4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFlightSegmentDetails4Printing property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightSegmentDetails4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFlightSegmentDetails4Printing property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFlightSegmentDetails4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,8 +147,8 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     /**
      * Set MidocoFlightSegmentDetails4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightSegmentDetails4Printing[] $midocoFlightSegmentDetails4Printing
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFlightSegmentDetails4Printing[] $midocoFlightSegmentDetails4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDetailsInfo4Printing
      */
     public function setMidocoFlightSegmentDetails4Printing(?array $midocoFlightSegmentDetails4Printing = null): self
     {
@@ -163,14 +163,14 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     /**
      * Add item to MidocoFlightSegmentDetails4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightSegmentDetails4Printing $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFlightSegmentDetails4Printing $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDetailsInfo4Printing
      */
-    public function addToMidocoFlightSegmentDetails4Printing(\Pggns\MidocoApi\Api\Order\StructType\MidocoFlightSegmentDetails4Printing $item): self
+    public function addToMidocoFlightSegmentDetails4Printing(\Pggns\MidocoApi\Order\StructType\MidocoFlightSegmentDetails4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightSegmentDetails4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoFlightSegmentDetails4Printing property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightSegmentDetails4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoFlightSegmentDetails4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoFlightSegmentDetails4Printing property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFlightSegmentDetails4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFlightSegmentDetails4Printing[] = $item;
         
@@ -178,18 +178,18 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     }
     /**
      * Get MidocoFlightDuration value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDuration|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDuration|null
      */
-    public function getMidocoFlightDuration(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDuration
+    public function getMidocoFlightDuration(): ?\Pggns\MidocoApi\Order\StructType\MidocoFlightDuration
     {
         return $this->MidocoFlightDuration;
     }
     /**
      * Set MidocoFlightDuration value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDuration $midocoFlightDuration
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFlightDuration $midocoFlightDuration
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDetailsInfo4Printing
      */
-    public function setMidocoFlightDuration(?\Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDuration $midocoFlightDuration = null): self
+    public function setMidocoFlightDuration(?\Pggns\MidocoApi\Order\StructType\MidocoFlightDuration $midocoFlightDuration = null): self
     {
         $this->MidocoFlightDuration = $midocoFlightDuration;
         
@@ -197,7 +197,7 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     }
     /**
      * Get MidocoRemarks value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkType[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoRemarkType[]
      */
     public function getMidocoRemarks(): ?array
     {
@@ -218,12 +218,12 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
         $invalidValues = [];
         foreach ($values as $midocoFlightDetailsInfo4PrintingMidocoRemarksItem) {
             // validation for constraint: itemType
-            if (!$midocoFlightDetailsInfo4PrintingMidocoRemarksItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkType) {
+            if (!$midocoFlightDetailsInfo4PrintingMidocoRemarksItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoRemarkType) {
                 $invalidValues[] = is_object($midocoFlightDetailsInfo4PrintingMidocoRemarksItem) ? get_class($midocoFlightDetailsInfo4PrintingMidocoRemarksItem) : sprintf('%s(%s)', gettype($midocoFlightDetailsInfo4PrintingMidocoRemarksItem), var_export($midocoFlightDetailsInfo4PrintingMidocoRemarksItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRemarks property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRemarks property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoRemarkType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -232,8 +232,8 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     /**
      * Set MidocoRemarks value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkType[] $midocoRemarks
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoRemarkType[] $midocoRemarks
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDetailsInfo4Printing
      */
     public function setMidocoRemarks(?array $midocoRemarks = null): self
     {
@@ -248,14 +248,14 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     /**
      * Add item to MidocoRemarks value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetailsInfo4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoRemarkType $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDetailsInfo4Printing
      */
-    public function addToMidocoRemarks(\Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkType $item): self
+    public function addToMidocoRemarks(\Pggns\MidocoApi\Order\StructType\MidocoRemarkType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkType) {
-            throw new InvalidArgumentException(sprintf('The MidocoRemarks property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoRemarkType) {
+            throw new InvalidArgumentException(sprintf('The MidocoRemarks property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoRemarkType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRemarks[] = $item;
         
@@ -272,7 +272,7 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     /**
      * Set carrierName value
      * @param string $carrierName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDetailsInfo4Printing
      */
     public function setCarrierName(?string $carrierName = null): self
     {
@@ -295,7 +295,7 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     /**
      * Set carrierVatId value
      * @param string $carrierVatId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDetailsInfo4Printing
      */
     public function setCarrierVatId(?string $carrierVatId = null): self
     {
@@ -318,7 +318,7 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     /**
      * Set carrierAddress value
      * @param string $carrierAddress
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDetailsInfo4Printing
      */
     public function setCarrierAddress(?string $carrierAddress = null): self
     {
@@ -341,7 +341,7 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     /**
      * Set days value
      * @param string $days
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDetailsInfo4Printing
      */
     public function setDays(?string $days = null): self
     {
@@ -364,7 +364,7 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     /**
      * Set operatingCarrierName value
      * @param string $operatingCarrierName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDetailsInfo4Printing
      */
     public function setOperatingCarrierName(?string $operatingCarrierName = null): self
     {
@@ -387,7 +387,7 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     /**
      * Set operatingCarrierVatId value
      * @param string $operatingCarrierVatId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDetailsInfo4Printing
      */
     public function setOperatingCarrierVatId(?string $operatingCarrierVatId = null): self
     {
@@ -410,7 +410,7 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     /**
      * Set operatingCarrierAddress value
      * @param string $operatingCarrierAddress
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightDetailsInfo4Printing
      */
     public function setOperatingCarrierAddress(?string $operatingCarrierAddress = null): self
     {

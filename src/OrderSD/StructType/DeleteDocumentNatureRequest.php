@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteDocumentNatureRequest extends AbstractStructBase
      * The MidocoDocumentNature
      * Meta information extracted from the WSDL
      * - ref: MidocoDocumentNature
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDocumentNatureType|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoDocumentNatureType|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDocumentNatureType $MidocoDocumentNature = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoDocumentNatureType $MidocoDocumentNature = null;
     /**
      * Constructor method for DeleteDocumentNatureRequest
      * @uses DeleteDocumentNatureRequest::setMidocoDocumentNature()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDocumentNatureType $midocoDocumentNature
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoDocumentNatureType $midocoDocumentNature
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDocumentNatureType $midocoDocumentNature = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoDocumentNatureType $midocoDocumentNature = null)
     {
         $this
             ->setMidocoDocumentNature($midocoDocumentNature);
     }
     /**
      * Get MidocoDocumentNature value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDocumentNatureType|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoDocumentNatureType|null
      */
-    public function getMidocoDocumentNature(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDocumentNatureType
+    public function getMidocoDocumentNature(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoDocumentNatureType
     {
         return $this->MidocoDocumentNature;
     }
     /**
      * Set MidocoDocumentNature value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDocumentNatureType $midocoDocumentNature
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteDocumentNatureRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoDocumentNatureType $midocoDocumentNature
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteDocumentNatureRequest
      */
-    public function setMidocoDocumentNature(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoDocumentNatureType $midocoDocumentNature = null): self
+    public function setMidocoDocumentNature(?\Pggns\MidocoApi\OrderSD\StructType\MidocoDocumentNatureType $midocoDocumentNature = null): self
     {
         $this->MidocoDocumentNature = $midocoDocumentNature;
         

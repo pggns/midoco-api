@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class GetExportChangedOrdersRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExportChangedOrdersRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExportChangedOrdersRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -84,7 +84,7 @@ class GetExportChangedOrdersRequest extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExportChangedOrdersRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExportChangedOrdersRequest
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {
@@ -115,7 +115,7 @@ class GetExportChangedOrdersRequest extends AbstractStructBase
     /**
      * Set markAsExported value
      * @param bool $markAsExported
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExportChangedOrdersRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExportChangedOrdersRequest
      */
     public function setMarkAsExported(?bool $markAsExported = true): self
     {

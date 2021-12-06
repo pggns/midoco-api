@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class ImportDictionaryNamesRequest extends AbstractStructBase
     /**
      * Set importData value
      * @param string $importData
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ImportDictionaryNamesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\ImportDictionaryNamesRequest
      */
     public function setImportData(?string $importData = null): self
     {
@@ -78,7 +78,7 @@ class ImportDictionaryNamesRequest extends AbstractStructBase
     /**
      * Set appendMode value
      * @param bool $appendMode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ImportDictionaryNamesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\ImportDictionaryNamesRequest
      */
     public function setAppendMode(?bool $appendMode = null): self
     {
@@ -101,7 +101,7 @@ class ImportDictionaryNamesRequest extends AbstractStructBase
     /**
      * Set replaceMode value
      * @param bool $replaceMode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ImportDictionaryNamesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\ImportDictionaryNamesRequest
      */
     public function setReplaceMode(?bool $replaceMode = null): self
     {

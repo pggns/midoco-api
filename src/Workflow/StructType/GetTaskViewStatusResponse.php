@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetTaskViewStatusResponse extends AbstractStructBase
     /**
      * Set isRefresh value
      * @param bool $isRefresh
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskViewStatusResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskViewStatusResponse
      */
     public function setIsRefresh(?bool $isRefresh = null): self
     {

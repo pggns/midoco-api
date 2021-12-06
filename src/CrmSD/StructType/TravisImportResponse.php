@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,29 +15,29 @@ class TravisImportResponse extends AbstractStructBase
 {
     /**
      * The ImportCustomersStatus
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\ImportCustomersStatus|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\ImportCustomersStatus|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportCustomersStatus $ImportCustomersStatus = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\ImportCustomersStatus $ImportCustomersStatus = null;
     /**
      * The ImportContactsStatus
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\ImportContactsStatus|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\ImportContactsStatus|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportContactsStatus $ImportContactsStatus = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\ImportContactsStatus $ImportContactsStatus = null;
     /**
      * The ImportAttributesStatus
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\ImportAttributesStatus|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\ImportAttributesStatus|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportAttributesStatus $ImportAttributesStatus = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\ImportAttributesStatus $ImportAttributesStatus = null;
     /**
      * The ImportBookingsStatus
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\ImportBookingsStatus|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\ImportBookingsStatus|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportBookingsStatus $ImportBookingsStatus = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\ImportBookingsStatus $ImportBookingsStatus = null;
     /**
      * The ImportTravellersStatus
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\ImportTravellersStatus|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\ImportTravellersStatus|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportTravellersStatus $ImportTravellersStatus = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\ImportTravellersStatus $ImportTravellersStatus = null;
     /**
      * Constructor method for TravisImportResponse
      * @uses TravisImportResponse::setImportCustomersStatus()
@@ -45,13 +45,13 @@ class TravisImportResponse extends AbstractStructBase
      * @uses TravisImportResponse::setImportAttributesStatus()
      * @uses TravisImportResponse::setImportBookingsStatus()
      * @uses TravisImportResponse::setImportTravellersStatus()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ImportCustomersStatus $importCustomersStatus
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ImportContactsStatus $importContactsStatus
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ImportAttributesStatus $importAttributesStatus
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ImportBookingsStatus $importBookingsStatus
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ImportTravellersStatus $importTravellersStatus
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ImportCustomersStatus $importCustomersStatus
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ImportContactsStatus $importContactsStatus
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ImportAttributesStatus $importAttributesStatus
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ImportBookingsStatus $importBookingsStatus
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ImportTravellersStatus $importTravellersStatus
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportCustomersStatus $importCustomersStatus = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportContactsStatus $importContactsStatus = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportAttributesStatus $importAttributesStatus = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportBookingsStatus $importBookingsStatus = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportTravellersStatus $importTravellersStatus = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\ImportCustomersStatus $importCustomersStatus = null, ?\Pggns\MidocoApi\CrmSD\StructType\ImportContactsStatus $importContactsStatus = null, ?\Pggns\MidocoApi\CrmSD\StructType\ImportAttributesStatus $importAttributesStatus = null, ?\Pggns\MidocoApi\CrmSD\StructType\ImportBookingsStatus $importBookingsStatus = null, ?\Pggns\MidocoApi\CrmSD\StructType\ImportTravellersStatus $importTravellersStatus = null)
     {
         $this
             ->setImportCustomersStatus($importCustomersStatus)
@@ -62,18 +62,18 @@ class TravisImportResponse extends AbstractStructBase
     }
     /**
      * Get ImportCustomersStatus value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportCustomersStatus|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportCustomersStatus|null
      */
-    public function getImportCustomersStatus(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportCustomersStatus
+    public function getImportCustomersStatus(): ?\Pggns\MidocoApi\CrmSD\StructType\ImportCustomersStatus
     {
         return $this->ImportCustomersStatus;
     }
     /**
      * Set ImportCustomersStatus value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ImportCustomersStatus $importCustomersStatus
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ImportCustomersStatus $importCustomersStatus
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportResponse
      */
-    public function setImportCustomersStatus(?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportCustomersStatus $importCustomersStatus = null): self
+    public function setImportCustomersStatus(?\Pggns\MidocoApi\CrmSD\StructType\ImportCustomersStatus $importCustomersStatus = null): self
     {
         $this->ImportCustomersStatus = $importCustomersStatus;
         
@@ -81,18 +81,18 @@ class TravisImportResponse extends AbstractStructBase
     }
     /**
      * Get ImportContactsStatus value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportContactsStatus|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportContactsStatus|null
      */
-    public function getImportContactsStatus(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportContactsStatus
+    public function getImportContactsStatus(): ?\Pggns\MidocoApi\CrmSD\StructType\ImportContactsStatus
     {
         return $this->ImportContactsStatus;
     }
     /**
      * Set ImportContactsStatus value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ImportContactsStatus $importContactsStatus
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ImportContactsStatus $importContactsStatus
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportResponse
      */
-    public function setImportContactsStatus(?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportContactsStatus $importContactsStatus = null): self
+    public function setImportContactsStatus(?\Pggns\MidocoApi\CrmSD\StructType\ImportContactsStatus $importContactsStatus = null): self
     {
         $this->ImportContactsStatus = $importContactsStatus;
         
@@ -100,18 +100,18 @@ class TravisImportResponse extends AbstractStructBase
     }
     /**
      * Get ImportAttributesStatus value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportAttributesStatus|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportAttributesStatus|null
      */
-    public function getImportAttributesStatus(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportAttributesStatus
+    public function getImportAttributesStatus(): ?\Pggns\MidocoApi\CrmSD\StructType\ImportAttributesStatus
     {
         return $this->ImportAttributesStatus;
     }
     /**
      * Set ImportAttributesStatus value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ImportAttributesStatus $importAttributesStatus
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ImportAttributesStatus $importAttributesStatus
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportResponse
      */
-    public function setImportAttributesStatus(?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportAttributesStatus $importAttributesStatus = null): self
+    public function setImportAttributesStatus(?\Pggns\MidocoApi\CrmSD\StructType\ImportAttributesStatus $importAttributesStatus = null): self
     {
         $this->ImportAttributesStatus = $importAttributesStatus;
         
@@ -119,18 +119,18 @@ class TravisImportResponse extends AbstractStructBase
     }
     /**
      * Get ImportBookingsStatus value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportBookingsStatus|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportBookingsStatus|null
      */
-    public function getImportBookingsStatus(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportBookingsStatus
+    public function getImportBookingsStatus(): ?\Pggns\MidocoApi\CrmSD\StructType\ImportBookingsStatus
     {
         return $this->ImportBookingsStatus;
     }
     /**
      * Set ImportBookingsStatus value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ImportBookingsStatus $importBookingsStatus
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ImportBookingsStatus $importBookingsStatus
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportResponse
      */
-    public function setImportBookingsStatus(?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportBookingsStatus $importBookingsStatus = null): self
+    public function setImportBookingsStatus(?\Pggns\MidocoApi\CrmSD\StructType\ImportBookingsStatus $importBookingsStatus = null): self
     {
         $this->ImportBookingsStatus = $importBookingsStatus;
         
@@ -138,18 +138,18 @@ class TravisImportResponse extends AbstractStructBase
     }
     /**
      * Get ImportTravellersStatus value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportTravellersStatus|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportTravellersStatus|null
      */
-    public function getImportTravellersStatus(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportTravellersStatus
+    public function getImportTravellersStatus(): ?\Pggns\MidocoApi\CrmSD\StructType\ImportTravellersStatus
     {
         return $this->ImportTravellersStatus;
     }
     /**
      * Set ImportTravellersStatus value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ImportTravellersStatus $importTravellersStatus
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ImportTravellersStatus $importTravellersStatus
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportResponse
      */
-    public function setImportTravellersStatus(?\Pggns\MidocoApi\Api\CrmSD\StructType\ImportTravellersStatus $importTravellersStatus = null): self
+    public function setImportTravellersStatus(?\Pggns\MidocoApi\CrmSD\StructType\ImportTravellersStatus $importTravellersStatus = null): self
     {
         $this->ImportTravellersStatus = $importTravellersStatus;
         

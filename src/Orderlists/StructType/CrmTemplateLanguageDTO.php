@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CrmTemplateLanguageDTO extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmTemplateLanguageDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmTemplateLanguageDTO
      */
     public function setLanguage(?string $language = null): self
     {
@@ -78,7 +78,7 @@ class CrmTemplateLanguageDTO extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmTemplateLanguageDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmTemplateLanguageDTO
      */
     public function setTemplateId(?int $templateId = null): self
     {
@@ -101,7 +101,7 @@ class CrmTemplateLanguageDTO extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmTemplateLanguageDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmTemplateLanguageDTO
      */
     public function setText(?string $text = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetVatDivisionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVatDivision
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\VatDivisionDTO[]
      */
     protected ?array $MidocoVatDivision = null;
     /**
      * Constructor method for GetVatDivisionsResponse
      * @uses GetVatDivisionsResponse::setMidocoVatDivision()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionDTO[] $midocoVatDivision
+     * @param \Pggns\MidocoApi\Documents\StructType\VatDivisionDTO[] $midocoVatDivision
      */
     public function __construct(?array $midocoVatDivision = null)
     {
@@ -34,7 +34,7 @@ class GetVatDivisionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVatDivision value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\VatDivisionDTO[]
      */
     public function getMidocoVatDivision(): ?array
     {
@@ -55,12 +55,12 @@ class GetVatDivisionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getVatDivisionsResponseMidocoVatDivisionItem) {
             // validation for constraint: itemType
-            if (!$getVatDivisionsResponseMidocoVatDivisionItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionDTO) {
+            if (!$getVatDivisionsResponseMidocoVatDivisionItem instanceof \Pggns\MidocoApi\Documents\StructType\VatDivisionDTO) {
                 $invalidValues[] = is_object($getVatDivisionsResponseMidocoVatDivisionItem) ? get_class($getVatDivisionsResponseMidocoVatDivisionItem) : sprintf('%s(%s)', gettype($getVatDivisionsResponseMidocoVatDivisionItem), var_export($getVatDivisionsResponseMidocoVatDivisionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatDivision property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatDivision property can only contain items of type \Pggns\MidocoApi\Documents\StructType\VatDivisionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetVatDivisionsResponse extends AbstractStructBase
     /**
      * Set MidocoVatDivision value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionDTO[] $midocoVatDivision
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetVatDivisionsResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\VatDivisionDTO[] $midocoVatDivision
+     * @return \Pggns\MidocoApi\Documents\StructType\GetVatDivisionsResponse
      */
     public function setMidocoVatDivision(?array $midocoVatDivision = null): self
     {
@@ -85,14 +85,14 @@ class GetVatDivisionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoVatDivision value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetVatDivisionsResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\VatDivisionDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetVatDivisionsResponse
      */
-    public function addToMidocoVatDivision(\Pggns\MidocoApi\Api\Documents\StructType\VatDivisionDTO $item): self
+    public function addToMidocoVatDivision(\Pggns\MidocoApi\Documents\StructType\VatDivisionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatDivision property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\VatDivisionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\VatDivisionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatDivision property can only contain items of type \Pggns\MidocoApi\Documents\StructType\VatDivisionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatDivision[] = $item;
         

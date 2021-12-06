@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class DeleteCheckDtdAnswerRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 1
      * - ref: MidocoCheckDtdAnswer
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer
      */
-    protected \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer $MidocoCheckDtdAnswer;
+    protected \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer $MidocoCheckDtdAnswer;
     /**
      * Constructor method for DeleteCheckDtdAnswerRequest
      * @uses DeleteCheckDtdAnswerRequest::setMidocoCheckDtdAnswer()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer
      */
-    public function __construct(\Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer)
+    public function __construct(\Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer)
     {
         $this
             ->setMidocoCheckDtdAnswer($midocoCheckDtdAnswer);
     }
     /**
      * Get MidocoCheckDtdAnswer value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer
      */
-    public function getMidocoCheckDtdAnswer(): \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer
+    public function getMidocoCheckDtdAnswer(): \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer
     {
         return $this->MidocoCheckDtdAnswer;
     }
     /**
      * Set MidocoCheckDtdAnswer value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteCheckDtdAnswerRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteCheckDtdAnswerRequest
      */
-    public function setMidocoCheckDtdAnswer(\Pggns\MidocoApi\Api\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer): self
+    public function setMidocoCheckDtdAnswer(\Pggns\MidocoApi\Order\StructType\MidocoCheckDtdAnswer $midocoCheckDtdAnswer): self
     {
         $this->MidocoCheckDtdAnswer = $midocoCheckDtdAnswer;
         

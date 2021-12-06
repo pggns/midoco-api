@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetCrmMidocoSettlFeeRequest extends AbstractStructBase
     /**
      * Set feeId value
      * @param int $feeId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmMidocoSettlFeeRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmMidocoSettlFeeRequest
      */
     public function setFeeId(?int $feeId = null): self
     {

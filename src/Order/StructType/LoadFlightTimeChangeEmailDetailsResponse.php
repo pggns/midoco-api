@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class LoadFlightTimeChangeEmailDetailsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoFlightTimeChangeEmail
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChangeEmailType[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChangeEmailType[]
      */
     protected ?array $MidocoFlightTimeChangeEmail = null;
     /**
      * Constructor method for LoadFlightTimeChangeEmailDetailsResponse
      * @uses LoadFlightTimeChangeEmailDetailsResponse::setMidocoFlightTimeChangeEmail()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChangeEmailType[] $midocoFlightTimeChangeEmail
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChangeEmailType[] $midocoFlightTimeChangeEmail
      */
     public function __construct(?array $midocoFlightTimeChangeEmail = null)
     {
@@ -36,7 +36,7 @@ class LoadFlightTimeChangeEmailDetailsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoFlightTimeChangeEmail value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChangeEmailType[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChangeEmailType[]
      */
     public function getMidocoFlightTimeChangeEmail(): ?array
     {
@@ -57,12 +57,12 @@ class LoadFlightTimeChangeEmailDetailsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $loadFlightTimeChangeEmailDetailsResponseMidocoFlightTimeChangeEmailItem) {
             // validation for constraint: itemType
-            if (!$loadFlightTimeChangeEmailDetailsResponseMidocoFlightTimeChangeEmailItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChangeEmailType) {
+            if (!$loadFlightTimeChangeEmailDetailsResponseMidocoFlightTimeChangeEmailItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChangeEmailType) {
                 $invalidValues[] = is_object($loadFlightTimeChangeEmailDetailsResponseMidocoFlightTimeChangeEmailItem) ? get_class($loadFlightTimeChangeEmailDetailsResponseMidocoFlightTimeChangeEmailItem) : sprintf('%s(%s)', gettype($loadFlightTimeChangeEmailDetailsResponseMidocoFlightTimeChangeEmailItem), var_export($loadFlightTimeChangeEmailDetailsResponseMidocoFlightTimeChangeEmailItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFlightTimeChangeEmail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChangeEmailType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFlightTimeChangeEmail property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChangeEmailType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class LoadFlightTimeChangeEmailDetailsResponse extends AbstractStructBase
     /**
      * Set MidocoFlightTimeChangeEmail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChangeEmailType[] $midocoFlightTimeChangeEmail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\LoadFlightTimeChangeEmailDetailsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChangeEmailType[] $midocoFlightTimeChangeEmail
+     * @return \Pggns\MidocoApi\Order\StructType\LoadFlightTimeChangeEmailDetailsResponse
      */
     public function setMidocoFlightTimeChangeEmail(?array $midocoFlightTimeChangeEmail = null): self
     {
@@ -87,14 +87,14 @@ class LoadFlightTimeChangeEmailDetailsResponse extends AbstractStructBase
     /**
      * Add item to MidocoFlightTimeChangeEmail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChangeEmailType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\LoadFlightTimeChangeEmailDetailsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChangeEmailType $item
+     * @return \Pggns\MidocoApi\Order\StructType\LoadFlightTimeChangeEmailDetailsResponse
      */
-    public function addToMidocoFlightTimeChangeEmail(\Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChangeEmailType $item): self
+    public function addToMidocoFlightTimeChangeEmail(\Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChangeEmailType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChangeEmailType) {
-            throw new InvalidArgumentException(sprintf('The MidocoFlightTimeChangeEmail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFlightTimeChangeEmailType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChangeEmailType) {
+            throw new InvalidArgumentException(sprintf('The MidocoFlightTimeChangeEmail property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFlightTimeChangeEmailType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFlightTimeChangeEmail[] = $item;
         

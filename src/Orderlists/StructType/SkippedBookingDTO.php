@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SkippedBookingDTO extends AbstractStructBase
     /**
      * Set externalId value
      * @param string $externalId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SkippedBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SkippedBookingDTO
      */
     public function setExternalId(?string $externalId = null): self
     {
@@ -102,7 +102,7 @@ class SkippedBookingDTO extends AbstractStructBase
     /**
      * Set externalSystem value
      * @param string $externalSystem
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SkippedBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SkippedBookingDTO
      */
     public function setExternalSystem(?string $externalSystem = null): self
     {
@@ -125,7 +125,7 @@ class SkippedBookingDTO extends AbstractStructBase
     /**
      * Set messageSubtype value
      * @param string $messageSubtype
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SkippedBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SkippedBookingDTO
      */
     public function setMessageSubtype(?string $messageSubtype = null): self
     {
@@ -148,7 +148,7 @@ class SkippedBookingDTO extends AbstractStructBase
     /**
      * Set messageText value
      * @param string $messageText
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SkippedBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SkippedBookingDTO
      */
     public function setMessageText(?string $messageText = null): self
     {
@@ -171,7 +171,7 @@ class SkippedBookingDTO extends AbstractStructBase
     /**
      * Set messageType value
      * @param string $messageType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SkippedBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SkippedBookingDTO
      */
     public function setMessageType(?string $messageType = null): self
     {
@@ -194,7 +194,7 @@ class SkippedBookingDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SkippedBookingDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SkippedBookingDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {

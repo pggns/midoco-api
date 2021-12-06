@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class GetOrderRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -94,7 +94,7 @@ class GetOrderRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -117,7 +117,7 @@ class GetOrderRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -140,7 +140,7 @@ class GetOrderRequest extends AbstractStructBase
     /**
      * Set maskCcNo value
      * @param bool $maskCcNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderRequest
      */
     public function setMaskCcNo(?bool $maskCcNo = null): self
     {
@@ -163,7 +163,7 @@ class GetOrderRequest extends AbstractStructBase
     /**
      * Set withDetails value
      * @param bool $withDetails
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderRequest
      */
     public function setWithDetails(?bool $withDetails = null): self
     {

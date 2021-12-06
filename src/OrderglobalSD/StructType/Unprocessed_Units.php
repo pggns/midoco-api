@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class Unprocessed_Units extends AbstractStructBase
      * Set UnitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\Unprocessed_Units
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\Unprocessed_Units
      */
     public function setUnitName(array $unitName): self
     {
@@ -85,7 +85,7 @@ class Unprocessed_Units extends AbstractStructBase
      * Add item to UnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\Unprocessed_Units
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\Unprocessed_Units
      */
     public function addToUnitName(string $item): self
     {

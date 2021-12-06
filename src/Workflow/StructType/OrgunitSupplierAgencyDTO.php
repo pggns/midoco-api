@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class OrgunitSupplierAgencyDTO extends AbstractStructBase
     /**
      * Set agencyNo value
      * @param string $agencyNo
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\OrgunitSupplierAgencyDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\OrgunitSupplierAgencyDTO
      */
     public function setAgencyNo(?string $agencyNo = null): self
     {
@@ -78,7 +78,7 @@ class OrgunitSupplierAgencyDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\OrgunitSupplierAgencyDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\OrgunitSupplierAgencyDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -101,7 +101,7 @@ class OrgunitSupplierAgencyDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\OrgunitSupplierAgencyDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\OrgunitSupplierAgencyDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

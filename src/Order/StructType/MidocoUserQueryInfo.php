@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -267,7 +267,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set queryId value
      * @param int $queryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setQueryId(?int $queryId = null): self
     {
@@ -290,7 +290,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set queryName value
      * @param string $queryName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setQueryName(?string $queryName = null): self
     {
@@ -313,7 +313,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set creationUser value
      * @param string $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setCreationUser(?string $creationUser = null): self
     {
@@ -336,7 +336,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -359,7 +359,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set isAutomatic value
      * @param bool $isAutomatic
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setIsAutomatic(?bool $isAutomatic = null): self
     {
@@ -382,7 +382,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set frequency value
      * @param string $frequency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setFrequency(?string $frequency = null): self
     {
@@ -405,7 +405,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -428,7 +428,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set nextDate value
      * @param string $nextDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setNextDate(?string $nextDate = null): self
     {
@@ -451,7 +451,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setEmail(?string $email = null): self
     {
@@ -474,7 +474,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -497,7 +497,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set emailText value
      * @param string $emailText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setEmailText(?string $emailText = null): self
     {
@@ -520,7 +520,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set menuTemplate value
      * @param bool $menuTemplate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setMenuTemplate(?bool $menuTemplate = null): self
     {
@@ -543,7 +543,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set inheritable value
      * @param bool $inheritable
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setInheritable(?bool $inheritable = null): self
     {
@@ -566,7 +566,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set noticeTemplate value
      * @param string $noticeTemplate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setNoticeTemplate(?string $noticeTemplate = ''): self
     {
@@ -589,7 +589,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set createNotices value
      * @param bool $createNotices
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setCreateNotices(?bool $createNotices = false): self
     {
@@ -612,7 +612,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set asTask value
      * @param bool $asTask
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setAsTask(?bool $asTask = false): self
     {
@@ -635,7 +635,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set notice value
      * @param string $notice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setNotice(?string $notice = ''): self
     {
@@ -658,7 +658,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setTaskType(?string $taskType = ''): self
     {
@@ -681,7 +681,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set assignItemId value
      * @param bool $assignItemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setAssignItemId(?bool $assignItemId = false): self
     {
@@ -704,7 +704,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set delegationQueue value
      * @param string $delegationQueue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setDelegationQueue(?string $delegationQueue = null): self
     {
@@ -727,7 +727,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set deadlineDate value
      * @param string $deadlineDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setDeadlineDate(?string $deadlineDate = null): self
     {
@@ -750,7 +750,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set outputLocale value
      * @param string $outputLocale
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setOutputLocale(?string $outputLocale = null): self
     {
@@ -773,7 +773,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set exportType value
      * @param string $exportType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setExportType(?string $exportType = null): self
     {
@@ -796,7 +796,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set dateFormat value
      * @param string $dateFormat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setDateFormat(?string $dateFormat = null): self
     {
@@ -819,7 +819,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set sftpCredentialName value
      * @param string $sftpCredentialName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setSftpCredentialName(?string $sftpCredentialName = null): self
     {
@@ -842,7 +842,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set dateSeparator value
      * @param string $dateSeparator
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setDateSeparator(?string $dateSeparator = null): self
     {
@@ -865,7 +865,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set decimalSeparator value
      * @param string $decimalSeparator
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setDecimalSeparator(?string $decimalSeparator = null): self
     {
@@ -888,7 +888,7 @@ class MidocoUserQueryInfo extends AbstractStructBase
     /**
      * Set fileType value
      * @param string $fileType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoUserQueryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoUserQueryInfo
      */
     public function setFileType(?string $fileType = null): self
     {

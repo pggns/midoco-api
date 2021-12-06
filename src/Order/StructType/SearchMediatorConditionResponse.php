@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchMediatorConditionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MediatorConditionInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MediatorConditionInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MediatorConditionInfo[]
      */
     protected ?array $MediatorConditionInfo = null;
     /**
      * Constructor method for SearchMediatorConditionResponse
      * @uses SearchMediatorConditionResponse::setMediatorConditionInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorConditionInfo[] $mediatorConditionInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorConditionInfo[] $mediatorConditionInfo
      */
     public function __construct(?array $mediatorConditionInfo = null)
     {
@@ -34,7 +34,7 @@ class SearchMediatorConditionResponse extends AbstractStructBase
     }
     /**
      * Get MediatorConditionInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorConditionInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorConditionInfo[]
      */
     public function getMediatorConditionInfo(): ?array
     {
@@ -55,12 +55,12 @@ class SearchMediatorConditionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchMediatorConditionResponseMediatorConditionInfoItem) {
             // validation for constraint: itemType
-            if (!$searchMediatorConditionResponseMediatorConditionInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MediatorConditionInfo) {
+            if (!$searchMediatorConditionResponseMediatorConditionInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MediatorConditionInfo) {
                 $invalidValues[] = is_object($searchMediatorConditionResponseMediatorConditionInfoItem) ? get_class($searchMediatorConditionResponseMediatorConditionInfoItem) : sprintf('%s(%s)', gettype($searchMediatorConditionResponseMediatorConditionInfoItem), var_export($searchMediatorConditionResponseMediatorConditionInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MediatorConditionInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MediatorConditionInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MediatorConditionInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MediatorConditionInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchMediatorConditionResponse extends AbstractStructBase
     /**
      * Set MediatorConditionInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorConditionInfo[] $mediatorConditionInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorConditionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorConditionInfo[] $mediatorConditionInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorConditionResponse
      */
     public function setMediatorConditionInfo(?array $mediatorConditionInfo = null): self
     {
@@ -85,14 +85,14 @@ class SearchMediatorConditionResponse extends AbstractStructBase
     /**
      * Add item to MediatorConditionInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorConditionInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorConditionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorConditionInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorConditionResponse
      */
-    public function addToMediatorConditionInfo(\Pggns\MidocoApi\Api\Order\StructType\MediatorConditionInfo $item): self
+    public function addToMediatorConditionInfo(\Pggns\MidocoApi\Order\StructType\MediatorConditionInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MediatorConditionInfo) {
-            throw new InvalidArgumentException(sprintf('The MediatorConditionInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MediatorConditionInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MediatorConditionInfo) {
+            throw new InvalidArgumentException(sprintf('The MediatorConditionInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MediatorConditionInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MediatorConditionInfo[] = $item;
         

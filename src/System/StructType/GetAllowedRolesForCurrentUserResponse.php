@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAllowedRolesForCurrentUserResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoRole
-     * @var \Pggns\MidocoApi\Api\System\StructType\RoleDTO[]
+     * @var \Pggns\MidocoApi\System\StructType\RoleDTO[]
      */
     protected ?array $MidocoRole = null;
     /**
      * Constructor method for GetAllowedRolesForCurrentUserResponse
      * @uses GetAllowedRolesForCurrentUserResponse::setMidocoRole()
-     * @param \Pggns\MidocoApi\Api\System\StructType\RoleDTO[] $midocoRole
+     * @param \Pggns\MidocoApi\System\StructType\RoleDTO[] $midocoRole
      */
     public function __construct(?array $midocoRole = null)
     {
@@ -34,7 +34,7 @@ class GetAllowedRolesForCurrentUserResponse extends AbstractStructBase
     }
     /**
      * Get MidocoRole value
-     * @return \Pggns\MidocoApi\Api\System\StructType\RoleDTO[]
+     * @return \Pggns\MidocoApi\System\StructType\RoleDTO[]
      */
     public function getMidocoRole(): ?array
     {
@@ -55,12 +55,12 @@ class GetAllowedRolesForCurrentUserResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllowedRolesForCurrentUserResponseMidocoRoleItem) {
             // validation for constraint: itemType
-            if (!$getAllowedRolesForCurrentUserResponseMidocoRoleItem instanceof \Pggns\MidocoApi\Api\System\StructType\RoleDTO) {
+            if (!$getAllowedRolesForCurrentUserResponseMidocoRoleItem instanceof \Pggns\MidocoApi\System\StructType\RoleDTO) {
                 $invalidValues[] = is_object($getAllowedRolesForCurrentUserResponseMidocoRoleItem) ? get_class($getAllowedRolesForCurrentUserResponseMidocoRoleItem) : sprintf('%s(%s)', gettype($getAllowedRolesForCurrentUserResponseMidocoRoleItem), var_export($getAllowedRolesForCurrentUserResponseMidocoRoleItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRole property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\RoleDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRole property can only contain items of type \Pggns\MidocoApi\System\StructType\RoleDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAllowedRolesForCurrentUserResponse extends AbstractStructBase
     /**
      * Set MidocoRole value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\RoleDTO[] $midocoRole
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAllowedRolesForCurrentUserResponse
+     * @param \Pggns\MidocoApi\System\StructType\RoleDTO[] $midocoRole
+     * @return \Pggns\MidocoApi\System\StructType\GetAllowedRolesForCurrentUserResponse
      */
     public function setMidocoRole(?array $midocoRole = null): self
     {
@@ -85,14 +85,14 @@ class GetAllowedRolesForCurrentUserResponse extends AbstractStructBase
     /**
      * Add item to MidocoRole value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\RoleDTO $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAllowedRolesForCurrentUserResponse
+     * @param \Pggns\MidocoApi\System\StructType\RoleDTO $item
+     * @return \Pggns\MidocoApi\System\StructType\GetAllowedRolesForCurrentUserResponse
      */
-    public function addToMidocoRole(\Pggns\MidocoApi\Api\System\StructType\RoleDTO $item): self
+    public function addToMidocoRole(\Pggns\MidocoApi\System\StructType\RoleDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\RoleDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoRole property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\RoleDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\RoleDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoRole property can only contain items of type \Pggns\MidocoApi\System\StructType\RoleDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRole[] = $item;
         

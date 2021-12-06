@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class PrepareAgenciesListForSettlementResponse extends AbstractStructBase
      * Set AgencyId value
      * @throws InvalidArgumentException
      * @param string[] $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAgenciesListForSettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAgenciesListForSettlementResponse
      */
     public function setAgencyId(?array $agencyId = null): self
     {
@@ -85,7 +85,7 @@ class PrepareAgenciesListForSettlementResponse extends AbstractStructBase
      * Add item to AgencyId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAgenciesListForSettlementResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAgenciesListForSettlementResponse
      */
     public function addToAgencyId(string $item): self
     {

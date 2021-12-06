@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ActivityTypeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\ActivityTypeDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\ActivityTypeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -70,7 +70,7 @@ class ActivityTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\ActivityTypeDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\ActivityTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

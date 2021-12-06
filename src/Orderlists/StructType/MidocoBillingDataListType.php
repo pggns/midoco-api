@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -1367,7 +1367,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -1390,7 +1390,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -1413,7 +1413,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param int $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setInvoiceNo(?int $invoiceNo = null): self
     {
@@ -1436,7 +1436,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -1459,7 +1459,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -1482,7 +1482,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set passenger value
      * @param string $passenger
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setPassenger(?string $passenger = null): self
     {
@@ -1505,7 +1505,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setDestination(?string $destination = null): self
     {
@@ -1528,7 +1528,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -1551,7 +1551,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set routing value
      * @param string $routing
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setRouting(?string $routing = null): self
     {
@@ -1574,7 +1574,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -1597,7 +1597,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setDescription(?string $description = null): self
     {
@@ -1620,7 +1620,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set referenceNo value
      * @param string $referenceNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setReferenceNo(?string $referenceNo = null): self
     {
@@ -1643,7 +1643,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set departureDate value
      * @param string $departureDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setDepartureDate(?string $departureDate = null): self
     {
@@ -1666,7 +1666,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set returnDate value
      * @param string $returnDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setReturnDate(?string $returnDate = null): self
     {
@@ -1689,7 +1689,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set netAmount value
      * @param float $netAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setNetAmount(?float $netAmount = null): self
     {
@@ -1712,7 +1712,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -1735,7 +1735,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set payableAmount value
      * @param float $payableAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setPayableAmount(?float $payableAmount = null): self
     {
@@ -1758,7 +1758,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField1 value
      * @param string $cdfField1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField1(?string $cdfField1 = null): self
     {
@@ -1781,7 +1781,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField2 value
      * @param string $cdfField2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField2(?string $cdfField2 = null): self
     {
@@ -1804,7 +1804,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField3 value
      * @param string $cdfField3
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField3(?string $cdfField3 = null): self
     {
@@ -1827,7 +1827,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField4 value
      * @param string $cdfField4
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField4(?string $cdfField4 = null): self
     {
@@ -1850,7 +1850,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField5 value
      * @param string $cdfField5
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField5(?string $cdfField5 = null): self
     {
@@ -1873,7 +1873,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField6 value
      * @param string $cdfField6
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField6(?string $cdfField6 = null): self
     {
@@ -1896,7 +1896,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField7 value
      * @param string $cdfField7
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField7(?string $cdfField7 = null): self
     {
@@ -1919,7 +1919,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField8 value
      * @param string $cdfField8
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField8(?string $cdfField8 = null): self
     {
@@ -1942,7 +1942,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField9 value
      * @param string $cdfField9
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField9(?string $cdfField9 = null): self
     {
@@ -1965,7 +1965,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField10 value
      * @param string $cdfField10
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField10(?string $cdfField10 = null): self
     {
@@ -1988,7 +1988,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField11 value
      * @param string $cdfField11
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField11(?string $cdfField11 = null): self
     {
@@ -2011,7 +2011,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField12 value
      * @param string $cdfField12
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField12(?string $cdfField12 = null): self
     {
@@ -2034,7 +2034,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField13 value
      * @param string $cdfField13
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField13(?string $cdfField13 = null): self
     {
@@ -2057,7 +2057,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField14 value
      * @param string $cdfField14
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField14(?string $cdfField14 = null): self
     {
@@ -2080,7 +2080,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField15 value
      * @param string $cdfField15
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField15(?string $cdfField15 = null): self
     {
@@ -2103,7 +2103,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField16 value
      * @param string $cdfField16
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField16(?string $cdfField16 = null): self
     {
@@ -2126,7 +2126,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField17 value
      * @param string $cdfField17
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField17(?string $cdfField17 = null): self
     {
@@ -2149,7 +2149,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField18 value
      * @param string $cdfField18
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField18(?string $cdfField18 = null): self
     {
@@ -2172,7 +2172,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField19 value
      * @param string $cdfField19
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField19(?string $cdfField19 = null): self
     {
@@ -2195,7 +2195,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField20 value
      * @param string $cdfField20
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField20(?string $cdfField20 = null): self
     {
@@ -2218,7 +2218,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField21 value
      * @param string $cdfField21
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField21(?string $cdfField21 = null): self
     {
@@ -2241,7 +2241,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField22 value
      * @param string $cdfField22
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField22(?string $cdfField22 = null): self
     {
@@ -2264,7 +2264,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField23 value
      * @param string $cdfField23
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField23(?string $cdfField23 = null): self
     {
@@ -2287,7 +2287,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField24 value
      * @param string $cdfField24
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField24(?string $cdfField24 = null): self
     {
@@ -2310,7 +2310,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField25 value
      * @param string $cdfField25
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField25(?string $cdfField25 = null): self
     {
@@ -2333,7 +2333,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField26 value
      * @param string $cdfField26
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField26(?string $cdfField26 = null): self
     {
@@ -2356,7 +2356,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField27 value
      * @param string $cdfField27
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField27(?string $cdfField27 = null): self
     {
@@ -2379,7 +2379,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField28 value
      * @param string $cdfField28
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField28(?string $cdfField28 = null): self
     {
@@ -2402,7 +2402,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField29 value
      * @param string $cdfField29
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField29(?string $cdfField29 = null): self
     {
@@ -2425,7 +2425,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField30 value
      * @param string $cdfField30
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField30(?string $cdfField30 = null): self
     {
@@ -2448,7 +2448,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField31 value
      * @param string $cdfField31
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField31(?string $cdfField31 = null): self
     {
@@ -2471,7 +2471,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField32 value
      * @param string $cdfField32
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField32(?string $cdfField32 = null): self
     {
@@ -2494,7 +2494,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField33 value
      * @param string $cdfField33
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField33(?string $cdfField33 = null): self
     {
@@ -2517,7 +2517,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField34 value
      * @param string $cdfField34
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField34(?string $cdfField34 = null): self
     {
@@ -2540,7 +2540,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField35 value
      * @param string $cdfField35
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField35(?string $cdfField35 = null): self
     {
@@ -2563,7 +2563,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField36 value
      * @param string $cdfField36
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField36(?string $cdfField36 = null): self
     {
@@ -2586,7 +2586,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField37 value
      * @param string $cdfField37
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField37(?string $cdfField37 = null): self
     {
@@ -2609,7 +2609,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField38 value
      * @param string $cdfField38
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField38(?string $cdfField38 = null): self
     {
@@ -2632,7 +2632,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField39 value
      * @param string $cdfField39
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField39(?string $cdfField39 = null): self
     {
@@ -2655,7 +2655,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField40 value
      * @param string $cdfField40
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField40(?string $cdfField40 = null): self
     {
@@ -2678,7 +2678,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField41 value
      * @param string $cdfField41
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField41(?string $cdfField41 = null): self
     {
@@ -2701,7 +2701,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField42 value
      * @param string $cdfField42
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField42(?string $cdfField42 = null): self
     {
@@ -2724,7 +2724,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField43 value
      * @param string $cdfField43
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField43(?string $cdfField43 = null): self
     {
@@ -2747,7 +2747,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField44 value
      * @param string $cdfField44
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField44(?string $cdfField44 = null): self
     {
@@ -2770,7 +2770,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField45 value
      * @param string $cdfField45
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField45(?string $cdfField45 = null): self
     {
@@ -2793,7 +2793,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField46 value
      * @param string $cdfField46
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField46(?string $cdfField46 = null): self
     {
@@ -2816,7 +2816,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField47 value
      * @param string $cdfField47
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField47(?string $cdfField47 = null): self
     {
@@ -2839,7 +2839,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField48 value
      * @param string $cdfField48
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField48(?string $cdfField48 = null): self
     {
@@ -2862,7 +2862,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField49 value
      * @param string $cdfField49
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField49(?string $cdfField49 = null): self
     {
@@ -2885,7 +2885,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField50 value
      * @param string $cdfField50
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField50(?string $cdfField50 = null): self
     {
@@ -2908,7 +2908,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField51 value
      * @param string $cdfField51
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField51(?string $cdfField51 = null): self
     {
@@ -2931,7 +2931,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField52 value
      * @param string $cdfField52
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField52(?string $cdfField52 = null): self
     {
@@ -2954,7 +2954,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField53 value
      * @param string $cdfField53
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField53(?string $cdfField53 = null): self
     {
@@ -2977,7 +2977,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField54 value
      * @param string $cdfField54
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField54(?string $cdfField54 = null): self
     {
@@ -3000,7 +3000,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField55 value
      * @param string $cdfField55
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField55(?string $cdfField55 = null): self
     {
@@ -3023,7 +3023,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField56 value
      * @param string $cdfField56
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField56(?string $cdfField56 = null): self
     {
@@ -3046,7 +3046,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField57 value
      * @param string $cdfField57
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField57(?string $cdfField57 = null): self
     {
@@ -3069,7 +3069,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField58 value
      * @param string $cdfField58
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField58(?string $cdfField58 = null): self
     {
@@ -3092,7 +3092,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField59 value
      * @param string $cdfField59
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField59(?string $cdfField59 = null): self
     {
@@ -3115,7 +3115,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField60 value
      * @param string $cdfField60
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField60(?string $cdfField60 = null): self
     {
@@ -3138,7 +3138,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField61 value
      * @param string $cdfField61
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField61(?string $cdfField61 = null): self
     {
@@ -3161,7 +3161,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField62 value
      * @param string $cdfField62
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField62(?string $cdfField62 = null): self
     {
@@ -3184,7 +3184,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField63 value
      * @param string $cdfField63
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField63(?string $cdfField63 = null): self
     {
@@ -3207,7 +3207,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField64 value
      * @param string $cdfField64
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField64(?string $cdfField64 = null): self
     {
@@ -3230,7 +3230,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField65 value
      * @param string $cdfField65
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField65(?string $cdfField65 = null): self
     {
@@ -3253,7 +3253,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField66 value
      * @param string $cdfField66
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField66(?string $cdfField66 = null): self
     {
@@ -3276,7 +3276,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField67 value
      * @param string $cdfField67
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField67(?string $cdfField67 = null): self
     {
@@ -3299,7 +3299,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField68 value
      * @param string $cdfField68
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField68(?string $cdfField68 = null): self
     {
@@ -3322,7 +3322,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField69 value
      * @param string $cdfField69
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField69(?string $cdfField69 = null): self
     {
@@ -3345,7 +3345,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField70 value
      * @param string $cdfField70
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField70(?string $cdfField70 = null): self
     {
@@ -3368,7 +3368,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField71 value
      * @param string $cdfField71
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField71(?string $cdfField71 = null): self
     {
@@ -3391,7 +3391,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField72 value
      * @param string $cdfField72
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField72(?string $cdfField72 = null): self
     {
@@ -3414,7 +3414,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField73 value
      * @param string $cdfField73
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField73(?string $cdfField73 = null): self
     {
@@ -3437,7 +3437,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField74 value
      * @param string $cdfField74
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField74(?string $cdfField74 = null): self
     {
@@ -3460,7 +3460,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField75 value
      * @param string $cdfField75
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField75(?string $cdfField75 = null): self
     {
@@ -3483,7 +3483,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField76 value
      * @param string $cdfField76
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField76(?string $cdfField76 = null): self
     {
@@ -3506,7 +3506,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField77 value
      * @param string $cdfField77
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField77(?string $cdfField77 = null): self
     {
@@ -3529,7 +3529,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField78 value
      * @param string $cdfField78
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField78(?string $cdfField78 = null): self
     {
@@ -3552,7 +3552,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField79 value
      * @param string $cdfField79
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField79(?string $cdfField79 = null): self
     {
@@ -3575,7 +3575,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField80 value
      * @param string $cdfField80
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField80(?string $cdfField80 = null): self
     {
@@ -3598,7 +3598,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField81 value
      * @param string $cdfField81
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField81(?string $cdfField81 = null): self
     {
@@ -3621,7 +3621,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField82 value
      * @param string $cdfField82
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField82(?string $cdfField82 = null): self
     {
@@ -3644,7 +3644,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField83 value
      * @param string $cdfField83
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField83(?string $cdfField83 = null): self
     {
@@ -3667,7 +3667,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField84 value
      * @param string $cdfField84
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField84(?string $cdfField84 = null): self
     {
@@ -3690,7 +3690,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField85 value
      * @param string $cdfField85
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField85(?string $cdfField85 = null): self
     {
@@ -3713,7 +3713,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField86 value
      * @param string $cdfField86
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField86(?string $cdfField86 = null): self
     {
@@ -3736,7 +3736,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField87 value
      * @param string $cdfField87
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField87(?string $cdfField87 = null): self
     {
@@ -3759,7 +3759,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField88 value
      * @param string $cdfField88
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField88(?string $cdfField88 = null): self
     {
@@ -3782,7 +3782,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField89 value
      * @param string $cdfField89
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField89(?string $cdfField89 = null): self
     {
@@ -3805,7 +3805,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField90 value
      * @param string $cdfField90
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField90(?string $cdfField90 = null): self
     {
@@ -3828,7 +3828,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField91 value
      * @param string $cdfField91
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField91(?string $cdfField91 = null): self
     {
@@ -3851,7 +3851,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField92 value
      * @param string $cdfField92
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField92(?string $cdfField92 = null): self
     {
@@ -3874,7 +3874,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField93 value
      * @param string $cdfField93
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField93(?string $cdfField93 = null): self
     {
@@ -3897,7 +3897,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField94 value
      * @param string $cdfField94
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField94(?string $cdfField94 = null): self
     {
@@ -3920,7 +3920,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField95 value
      * @param string $cdfField95
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField95(?string $cdfField95 = null): self
     {
@@ -3943,7 +3943,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField96 value
      * @param string $cdfField96
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField96(?string $cdfField96 = null): self
     {
@@ -3966,7 +3966,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField97 value
      * @param string $cdfField97
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField97(?string $cdfField97 = null): self
     {
@@ -3989,7 +3989,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField98 value
      * @param string $cdfField98
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField98(?string $cdfField98 = null): self
     {
@@ -4012,7 +4012,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField99 value
      * @param string $cdfField99
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField99(?string $cdfField99 = null): self
     {
@@ -4035,7 +4035,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField100 value
      * @param string $cdfField100
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField100(?string $cdfField100 = null): self
     {
@@ -4058,7 +4058,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField101 value
      * @param string $cdfField101
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField101(?string $cdfField101 = null): self
     {
@@ -4081,7 +4081,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField102 value
      * @param string $cdfField102
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField102(?string $cdfField102 = null): self
     {
@@ -4104,7 +4104,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField103 value
      * @param string $cdfField103
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField103(?string $cdfField103 = null): self
     {
@@ -4127,7 +4127,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField104 value
      * @param string $cdfField104
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField104(?string $cdfField104 = null): self
     {
@@ -4150,7 +4150,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField105 value
      * @param string $cdfField105
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField105(?string $cdfField105 = null): self
     {
@@ -4173,7 +4173,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField106 value
      * @param string $cdfField106
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField106(?string $cdfField106 = null): self
     {
@@ -4196,7 +4196,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField107 value
      * @param string $cdfField107
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField107(?string $cdfField107 = null): self
     {
@@ -4219,7 +4219,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField108 value
      * @param string $cdfField108
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField108(?string $cdfField108 = null): self
     {
@@ -4242,7 +4242,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField109 value
      * @param string $cdfField109
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField109(?string $cdfField109 = null): self
     {
@@ -4265,7 +4265,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField110 value
      * @param string $cdfField110
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField110(?string $cdfField110 = null): self
     {
@@ -4288,7 +4288,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField111 value
      * @param string $cdfField111
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField111(?string $cdfField111 = null): self
     {
@@ -4311,7 +4311,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField112 value
      * @param string $cdfField112
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField112(?string $cdfField112 = null): self
     {
@@ -4334,7 +4334,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField113 value
      * @param string $cdfField113
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField113(?string $cdfField113 = null): self
     {
@@ -4357,7 +4357,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField114 value
      * @param string $cdfField114
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField114(?string $cdfField114 = null): self
     {
@@ -4380,7 +4380,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField115 value
      * @param string $cdfField115
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField115(?string $cdfField115 = null): self
     {
@@ -4403,7 +4403,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField116 value
      * @param string $cdfField116
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField116(?string $cdfField116 = null): self
     {
@@ -4426,7 +4426,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField117 value
      * @param string $cdfField117
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField117(?string $cdfField117 = null): self
     {
@@ -4449,7 +4449,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField118 value
      * @param string $cdfField118
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField118(?string $cdfField118 = null): self
     {
@@ -4472,7 +4472,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField119 value
      * @param string $cdfField119
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField119(?string $cdfField119 = null): self
     {
@@ -4495,7 +4495,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField120 value
      * @param string $cdfField120
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField120(?string $cdfField120 = null): self
     {
@@ -4518,7 +4518,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField121 value
      * @param string $cdfField121
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField121(?string $cdfField121 = null): self
     {
@@ -4541,7 +4541,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField122 value
      * @param string $cdfField122
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField122(?string $cdfField122 = null): self
     {
@@ -4564,7 +4564,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField123 value
      * @param string $cdfField123
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField123(?string $cdfField123 = null): self
     {
@@ -4587,7 +4587,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField124 value
      * @param string $cdfField124
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField124(?string $cdfField124 = null): self
     {
@@ -4610,7 +4610,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField125 value
      * @param string $cdfField125
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField125(?string $cdfField125 = null): self
     {
@@ -4633,7 +4633,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField126 value
      * @param string $cdfField126
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField126(?string $cdfField126 = null): self
     {
@@ -4656,7 +4656,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField127 value
      * @param string $cdfField127
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField127(?string $cdfField127 = null): self
     {
@@ -4679,7 +4679,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField128 value
      * @param string $cdfField128
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField128(?string $cdfField128 = null): self
     {
@@ -4702,7 +4702,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField129 value
      * @param string $cdfField129
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField129(?string $cdfField129 = null): self
     {
@@ -4725,7 +4725,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField130 value
      * @param string $cdfField130
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField130(?string $cdfField130 = null): self
     {
@@ -4748,7 +4748,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField131 value
      * @param string $cdfField131
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField131(?string $cdfField131 = null): self
     {
@@ -4771,7 +4771,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField132 value
      * @param string $cdfField132
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField132(?string $cdfField132 = null): self
     {
@@ -4794,7 +4794,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField133 value
      * @param string $cdfField133
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField133(?string $cdfField133 = null): self
     {
@@ -4817,7 +4817,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField134 value
      * @param string $cdfField134
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField134(?string $cdfField134 = null): self
     {
@@ -4840,7 +4840,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField135 value
      * @param string $cdfField135
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField135(?string $cdfField135 = null): self
     {
@@ -4863,7 +4863,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField136 value
      * @param string $cdfField136
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField136(?string $cdfField136 = null): self
     {
@@ -4886,7 +4886,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField137 value
      * @param string $cdfField137
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField137(?string $cdfField137 = null): self
     {
@@ -4909,7 +4909,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField138 value
      * @param string $cdfField138
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField138(?string $cdfField138 = null): self
     {
@@ -4932,7 +4932,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField139 value
      * @param string $cdfField139
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField139(?string $cdfField139 = null): self
     {
@@ -4955,7 +4955,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField140 value
      * @param string $cdfField140
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField140(?string $cdfField140 = null): self
     {
@@ -4978,7 +4978,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField141 value
      * @param string $cdfField141
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField141(?string $cdfField141 = null): self
     {
@@ -5001,7 +5001,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField142 value
      * @param string $cdfField142
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField142(?string $cdfField142 = null): self
     {
@@ -5024,7 +5024,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField143 value
      * @param string $cdfField143
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField143(?string $cdfField143 = null): self
     {
@@ -5047,7 +5047,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField144 value
      * @param string $cdfField144
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField144(?string $cdfField144 = null): self
     {
@@ -5070,7 +5070,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField145 value
      * @param string $cdfField145
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField145(?string $cdfField145 = null): self
     {
@@ -5093,7 +5093,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField146 value
      * @param string $cdfField146
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField146(?string $cdfField146 = null): self
     {
@@ -5116,7 +5116,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField147 value
      * @param string $cdfField147
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField147(?string $cdfField147 = null): self
     {
@@ -5139,7 +5139,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField148 value
      * @param string $cdfField148
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField148(?string $cdfField148 = null): self
     {
@@ -5162,7 +5162,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField149 value
      * @param string $cdfField149
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField149(?string $cdfField149 = null): self
     {
@@ -5185,7 +5185,7 @@ class MidocoBillingDataListType extends AbstractStructBase
     /**
      * Set cdfField150 value
      * @param string $cdfField150
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType
      */
     public function setCdfField150(?string $cdfField150 = null): self
     {

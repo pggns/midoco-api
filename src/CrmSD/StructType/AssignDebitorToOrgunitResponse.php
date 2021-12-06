@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class AssignDebitorToOrgunitResponse extends AbstractStructBase
     /**
      * Set result value
      * @param bool $result
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignDebitorToOrgunitResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignDebitorToOrgunitResponse
      */
     public function setResult(?bool $result = null): self
     {

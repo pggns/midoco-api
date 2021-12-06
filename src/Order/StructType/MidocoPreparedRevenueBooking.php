@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoPreparedRevenueBooking extends PreparedRevenueBookingDTO
     /**
      * Set booked value
      * @param bool $booked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking
      */
     public function setBooked(?bool $booked = null): self
     {
@@ -94,7 +94,7 @@ class MidocoPreparedRevenueBooking extends PreparedRevenueBookingDTO
     /**
      * Set bookingSource value
      * @param string $bookingSource
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking
      */
     public function setBookingSource(?string $bookingSource = null): self
     {
@@ -117,7 +117,7 @@ class MidocoPreparedRevenueBooking extends PreparedRevenueBookingDTO
     /**
      * Set inkassoMode value
      * @param string $inkassoMode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking
      */
     public function setInkassoMode(?string $inkassoMode = null): self
     {
@@ -140,7 +140,7 @@ class MidocoPreparedRevenueBooking extends PreparedRevenueBookingDTO
     /**
      * Set isVoided value
      * @param bool $isVoided
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking
      */
     public function setIsVoided(?bool $isVoided = null): self
     {
@@ -163,7 +163,7 @@ class MidocoPreparedRevenueBooking extends PreparedRevenueBookingDTO
     /**
      * Set skipBooking value
      * @param bool $skipBooking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPreparedRevenueBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPreparedRevenueBooking
      */
     public function setSkipBooking(?bool $skipBooking = null): self
     {

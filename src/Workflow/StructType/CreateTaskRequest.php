@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class CreateTaskRequest extends AbstractStructBase
     /**
      * Set task value
      * @param string $task
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\CreateTaskRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\CreateTaskRequest
      */
     public function setTask(?string $task = null): self
     {
@@ -110,7 +110,7 @@ class CreateTaskRequest extends AbstractStructBase
     /**
      * Set delegated_queue value
      * @param string $delegated_queue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\CreateTaskRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\CreateTaskRequest
      */
     public function setDelegated_queue(?string $delegated_queue = null): self
     {
@@ -133,7 +133,7 @@ class CreateTaskRequest extends AbstractStructBase
     /**
      * Set due_date value
      * @param string $due_date
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\CreateTaskRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\CreateTaskRequest
      */
     public function setDue_date(?string $due_date = null): self
     {
@@ -156,7 +156,7 @@ class CreateTaskRequest extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\CreateTaskRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\CreateTaskRequest
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -179,7 +179,7 @@ class CreateTaskRequest extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\CreateTaskRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\CreateTaskRequest
      */
     public function setComment(?string $comment = null): self
     {
@@ -202,7 +202,7 @@ class CreateTaskRequest extends AbstractStructBase
     /**
      * Set priority value
      * @param int $priority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\CreateTaskRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\CreateTaskRequest
      */
     public function setPriority(?int $priority = null): self
     {
@@ -225,7 +225,7 @@ class CreateTaskRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\CreateTaskRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\CreateTaskRequest
      */
     public function setUserId(?int $userId = null): self
     {

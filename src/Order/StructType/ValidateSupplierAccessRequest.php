@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ValidateSupplierAccessRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ValidateSupplierAccessRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ValidateSupplierAccessRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -70,7 +70,7 @@ class ValidateSupplierAccessRequest extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ValidateSupplierAccessRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ValidateSupplierAccessRequest
      */
     public function setPassword(?string $password = null): self
     {

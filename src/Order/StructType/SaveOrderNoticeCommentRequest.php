@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class SaveOrderNoticeCommentRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoOrderNoticeComment
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO $MidocoOrderNoticeComment = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO $MidocoOrderNoticeComment = null;
     /**
      * The internalVersion
      * @var int|null
@@ -30,10 +30,10 @@ class SaveOrderNoticeCommentRequest extends AbstractStructBase
      * Constructor method for SaveOrderNoticeCommentRequest
      * @uses SaveOrderNoticeCommentRequest::setMidocoOrderNoticeComment()
      * @uses SaveOrderNoticeCommentRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO $midocoOrderNoticeComment
+     * @param \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO $midocoOrderNoticeComment
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO $midocoOrderNoticeComment = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO $midocoOrderNoticeComment = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoOrderNoticeComment($midocoOrderNoticeComment)
@@ -41,18 +41,18 @@ class SaveOrderNoticeCommentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderNoticeComment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO|null
      */
-    public function getMidocoOrderNoticeComment(): ?\Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO
+    public function getMidocoOrderNoticeComment(): ?\Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO
     {
         return $this->MidocoOrderNoticeComment;
     }
     /**
      * Set MidocoOrderNoticeComment value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO $midocoOrderNoticeComment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderNoticeCommentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO $midocoOrderNoticeComment
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderNoticeCommentRequest
      */
-    public function setMidocoOrderNoticeComment(?\Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO $midocoOrderNoticeComment = null): self
+    public function setMidocoOrderNoticeComment(?\Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO $midocoOrderNoticeComment = null): self
     {
         $this->MidocoOrderNoticeComment = $midocoOrderNoticeComment;
         
@@ -69,7 +69,7 @@ class SaveOrderNoticeCommentRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderNoticeCommentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderNoticeCommentRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

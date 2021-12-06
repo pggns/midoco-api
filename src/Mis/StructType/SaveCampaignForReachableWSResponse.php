@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class SaveCampaignForReachableWSResponse extends AbstractStructBase
      * The MidocoMisCampaignWS
      * Meta information extracted from the WSDL
      * - ref: MidocoMisCampaignWS
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCampaignWSType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType $MidocoMisCampaignWS = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MisCampaignWSType $MidocoMisCampaignWS = null;
     /**
      * Constructor method for SaveCampaignForReachableWSResponse
      * @uses SaveCampaignForReachableWSResponse::setMidocoMisCampaignWS()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS = null)
     {
         $this
             ->setMidocoMisCampaignWS($midocoMisCampaignWS);
     }
     /**
      * Get MidocoMisCampaignWS value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignWSType|null
      */
-    public function getMidocoMisCampaignWS(): ?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType
+    public function getMidocoMisCampaignWS(): ?\Pggns\MidocoApi\Mis\StructType\MisCampaignWSType
     {
         return $this->MidocoMisCampaignWS;
     }
     /**
      * Set MidocoMisCampaignWS value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCampaignForReachableWSResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCampaignForReachableWSResponse
      */
-    public function setMidocoMisCampaignWS(?\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS = null): self
+    public function setMidocoMisCampaignWS(?\Pggns\MidocoApi\Mis\StructType\MisCampaignWSType $midocoMisCampaignWS = null): self
     {
         $this->MidocoMisCampaignWS = $midocoMisCampaignWS;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetMidocoQuestionRequest extends AbstractStructBase
     /**
      * Set questionId value
      * @param int $questionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoQuestionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoQuestionRequest
      */
     public function setQuestionId(?int $questionId = null): self
     {

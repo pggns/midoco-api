@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class OrderPaymentPaycodeDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderPaymentPaycodeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderPaymentPaycodeDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -142,7 +142,7 @@ class OrderPaymentPaycodeDTO extends AbstractStructBase
     /**
      * Set isDeposit value
      * @param bool $isDeposit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderPaymentPaycodeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderPaymentPaycodeDTO
      */
     public function setIsDeposit(?bool $isDeposit = null): self
     {
@@ -165,7 +165,7 @@ class OrderPaymentPaycodeDTO extends AbstractStructBase
     /**
      * Set lastStatusDate value
      * @param string $lastStatusDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderPaymentPaycodeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderPaymentPaycodeDTO
      */
     public function setLastStatusDate(?string $lastStatusDate = null): self
     {
@@ -188,7 +188,7 @@ class OrderPaymentPaycodeDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderPaymentPaycodeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderPaymentPaycodeDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -211,7 +211,7 @@ class OrderPaymentPaycodeDTO extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderPaymentPaycodeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderPaymentPaycodeDTO
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -234,7 +234,7 @@ class OrderPaymentPaycodeDTO extends AbstractStructBase
     /**
      * Set payAmount value
      * @param float $payAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderPaymentPaycodeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderPaymentPaycodeDTO
      */
     public function setPayAmount(?float $payAmount = null): self
     {
@@ -257,7 +257,7 @@ class OrderPaymentPaycodeDTO extends AbstractStructBase
     /**
      * Set paycode value
      * @param string $paycode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderPaymentPaycodeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderPaymentPaycodeDTO
      */
     public function setPaycode(?string $paycode = null): self
     {
@@ -280,7 +280,7 @@ class OrderPaymentPaycodeDTO extends AbstractStructBase
     /**
      * Set paymentId value
      * @param int $paymentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderPaymentPaycodeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderPaymentPaycodeDTO
      */
     public function setPaymentId(?int $paymentId = null): self
     {
@@ -303,7 +303,7 @@ class OrderPaymentPaycodeDTO extends AbstractStructBase
     /**
      * Set transactionNumber value
      * @param string $transactionNumber
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderPaymentPaycodeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderPaymentPaycodeDTO
      */
     public function setTransactionNumber(?string $transactionNumber = null): self
     {
@@ -326,7 +326,7 @@ class OrderPaymentPaycodeDTO extends AbstractStructBase
     /**
      * Set transactionStatus value
      * @param string $transactionStatus
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderPaymentPaycodeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderPaymentPaycodeDTO
      */
     public function setTransactionStatus(?string $transactionStatus = null): self
     {
@@ -349,7 +349,7 @@ class OrderPaymentPaycodeDTO extends AbstractStructBase
     /**
      * Set transactionStatusReason value
      * @param string $transactionStatusReason
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderPaymentPaycodeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderPaymentPaycodeDTO
      */
     public function setTransactionStatusReason(?string $transactionStatusReason = null): self
     {

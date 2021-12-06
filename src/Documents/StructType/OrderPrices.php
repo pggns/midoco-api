@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class OrderPrices extends AbstractStructBase
     /**
      * Set deposit value
      * @param float $deposit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrices
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrices
      */
     public function setDeposit(?float $deposit = null): self
     {
@@ -142,7 +142,7 @@ class OrderPrices extends AbstractStructBase
     /**
      * Set inkasso value
      * @param float $inkasso
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrices
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrices
      */
     public function setInkasso(?float $inkasso = null): self
     {
@@ -165,7 +165,7 @@ class OrderPrices extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrices
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrices
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -188,7 +188,7 @@ class OrderPrices extends AbstractStructBase
     /**
      * Set displayedDeposit value
      * @param float $displayedDeposit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrices
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrices
      */
     public function setDisplayedDeposit(?float $displayedDeposit = null): self
     {
@@ -211,7 +211,7 @@ class OrderPrices extends AbstractStructBase
     /**
      * Set displayedInkasso value
      * @param float $displayedInkasso
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrices
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrices
      */
     public function setDisplayedInkasso(?float $displayedInkasso = null): self
     {
@@ -234,7 +234,7 @@ class OrderPrices extends AbstractStructBase
     /**
      * Set displayedTotalPrice value
      * @param float $displayedTotalPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrices
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrices
      */
     public function setDisplayedTotalPrice(?float $displayedTotalPrice = null): self
     {
@@ -257,7 +257,7 @@ class OrderPrices extends AbstractStructBase
     /**
      * Set depositDate value
      * @param string $depositDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrices
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrices
      */
     public function setDepositDate(?string $depositDate = null): self
     {
@@ -280,7 +280,7 @@ class OrderPrices extends AbstractStructBase
     /**
      * Set finalDate value
      * @param string $finalDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrices
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrices
      */
     public function setFinalDate(?string $finalDate = null): self
     {
@@ -303,7 +303,7 @@ class OrderPrices extends AbstractStructBase
     /**
      * Set isStorno value
      * @param bool $isStorno
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrices
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrices
      */
     public function setIsStorno(?bool $isStorno = null): self
     {
@@ -326,7 +326,7 @@ class OrderPrices extends AbstractStructBase
     /**
      * Set depositPreset value
      * @param bool $depositPreset
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrices
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrices
      */
     public function setDepositPreset(?bool $depositPreset = null): self
     {
@@ -349,7 +349,7 @@ class OrderPrices extends AbstractStructBase
     /**
      * Set totalPayment value
      * @param float $totalPayment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderPrices
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderPrices
      */
     public function setTotalPayment(?float $totalPayment = null): self
     {

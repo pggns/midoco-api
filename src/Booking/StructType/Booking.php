@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -269,7 +269,7 @@ class Booking extends AbstractStructBase
      * - documentation: Used to store information about an unspecified booking (like a leisure booking, which contains multiple services)
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Generic_service_type[]
      */
     protected ?array $generic_service = null;
     /**
@@ -278,7 +278,7 @@ class Booking extends AbstractStructBase
      * - documentation: Special information about a car rental
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Car_service_type[]
      */
     protected ?array $car_service = null;
     /**
@@ -287,7 +287,7 @@ class Booking extends AbstractStructBase
      * - documentation: Information in case of a flight-only booking
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Flight_service_type[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Flight_service_type[]
      */
     protected ?array $flight_service = null;
     /**
@@ -296,7 +296,7 @@ class Booking extends AbstractStructBase
      * - documentation: Information in case of a accomodation only booking (like hotel, holiday flat etc.)
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Accomodation_service_type[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Accomodation_service_type[]
      */
     protected ?array $accomodation_service = null;
     /**
@@ -305,7 +305,7 @@ class Booking extends AbstractStructBase
      * - documentation: Special insurance based info in case of a insurance-only booking
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Insurance_service_type[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Insurance_service_type[]
      */
     protected ?array $insurance_service = null;
     /**
@@ -314,7 +314,7 @@ class Booking extends AbstractStructBase
      * - documentation: Used to store information about an tranfer bookings
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Transfer_service_type[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Transfer_service_type[]
      */
     protected ?array $transfer_service = null;
     /**
@@ -323,7 +323,7 @@ class Booking extends AbstractStructBase
      * - documentation: Information in case of a bus only booking
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Bus_service_type[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Bus_service_type[]
      */
     protected ?array $bus_service = null;
     /**
@@ -332,7 +332,7 @@ class Booking extends AbstractStructBase
      * - documentation: Information in case of a rail only booking
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Rail_service_type[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Rail_service_type[]
      */
     protected ?array $rail_service = null;
     /**
@@ -341,7 +341,7 @@ class Booking extends AbstractStructBase
      * - documentation: Information in case of a cruise only booking
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Cruise_service_type[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Cruise_service_type[]
      */
     protected ?array $cruise_service = null;
     /**
@@ -349,23 +349,23 @@ class Booking extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Event_service_type[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Event_service_type[]
      */
     protected ?array $event_service = null;
     /**
      * The hints
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Hints|null
+     * @var \Pggns\MidocoApi\Booking\StructType\Hints|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\Hints $hints = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\Hints $hints = null;
     /**
      * The person
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: person
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Person[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Person[]
      */
     protected ?array $person = null;
     /**
@@ -373,7 +373,7 @@ class Booking extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Cc_authorisation[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Cc_authorisation[]
      */
     protected ?array $cc_authorisation = null;
     /**
@@ -381,7 +381,7 @@ class Booking extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Midoco_cc_authorisation[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Midoco_cc_authorisation[]
      */
     protected ?array $midoco_cc_authorisation = null;
     /**
@@ -389,7 +389,7 @@ class Booking extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Remark[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Remark[]
      */
     protected ?array $remark = null;
     /**
@@ -398,7 +398,7 @@ class Booking extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: saving
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Saving[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Saving[]
      */
     protected ?array $saving = null;
     /**
@@ -406,7 +406,7 @@ class Booking extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Attribute[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Attribute[]
      */
     protected ?array $attribute = null;
     /**
@@ -415,7 +415,7 @@ class Booking extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: AdditionalService
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\AdditionalService[]
+     * @var \Pggns\MidocoApi\Booking\StructType\AdditionalService[]
      */
     protected ?array $AdditionalService = null;
     /**
@@ -460,7 +460,7 @@ class Booking extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: ExternalPayment
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\ExternalPayment[]
+     * @var \Pggns\MidocoApi\Booking\StructType\ExternalPayment[]
      */
     protected ?array $ExternalPayment = null;
     /**
@@ -839,7 +839,7 @@ class Booking extends AbstractStructBase
      * - documentation: Used to store information about an unspecified booking (like a leisure booking, which contains multiple services)
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType[]
+     * @var \Pggns\MidocoApi\Booking\StructType\GenericServiceType[]
      */
     protected ?array $genericService = null;
     /**
@@ -848,7 +848,7 @@ class Booking extends AbstractStructBase
      * - documentation: Special information about a car rental
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\CarServiceType[]
+     * @var \Pggns\MidocoApi\Booking\StructType\CarServiceType[]
      */
     protected ?array $carService = null;
     /**
@@ -857,7 +857,7 @@ class Booking extends AbstractStructBase
      * - documentation: Information in case of a flightOnly booking
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType[]
+     * @var \Pggns\MidocoApi\Booking\StructType\FlightServiceType[]
      */
     protected ?array $flightService = null;
     /**
@@ -866,7 +866,7 @@ class Booking extends AbstractStructBase
      * - documentation: Information in case of a accomodation only booking (like hotel, holiday flat etc.)
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\AccomodationServiceType[]
+     * @var \Pggns\MidocoApi\Booking\StructType\AccomodationServiceType[]
      */
     protected ?array $accomodationService = null;
     /**
@@ -875,7 +875,7 @@ class Booking extends AbstractStructBase
      * - documentation: Special insurance based info in case of a insuranceOnly booking
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType[]
+     * @var \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType[]
      */
     protected ?array $insuranceService = null;
     /**
@@ -884,7 +884,7 @@ class Booking extends AbstractStructBase
      * - documentation: Used to store information about an tranfer bookings
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\TransferServiceType[]
+     * @var \Pggns\MidocoApi\Booking\StructType\TransferServiceType[]
      */
     protected ?array $transferService = null;
     /**
@@ -893,7 +893,7 @@ class Booking extends AbstractStructBase
      * - documentation: Information in case of a bus only booking
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\BusServiceType[]
+     * @var \Pggns\MidocoApi\Booking\StructType\BusServiceType[]
      */
     protected ?array $busService = null;
     /**
@@ -902,7 +902,7 @@ class Booking extends AbstractStructBase
      * - documentation: Information in case of a rail only booking
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType[]
+     * @var \Pggns\MidocoApi\Booking\StructType\RailServiceType[]
      */
     protected ?array $railService = null;
     /**
@@ -911,7 +911,7 @@ class Booking extends AbstractStructBase
      * - documentation: Information in case of a cruise only booking
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType[]
+     * @var \Pggns\MidocoApi\Booking\StructType\CruiseServiceType[]
      */
     protected ?array $cruiseService = null;
     /**
@@ -919,7 +919,7 @@ class Booking extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\EventServiceType[]
+     * @var \Pggns\MidocoApi\Booking\StructType\EventServiceType[]
      */
     protected ?array $eventService = null;
     /**
@@ -927,7 +927,7 @@ class Booking extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\CcAuthorisation[]
+     * @var \Pggns\MidocoApi\Booking\StructType\CcAuthorisation[]
      */
     protected ?array $ccAuthorisation = null;
     /**
@@ -935,7 +935,7 @@ class Booking extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcAuthorisation[]
+     * @var \Pggns\MidocoApi\Booking\StructType\MidocoCcAuthorisation[]
      */
     protected ?array $midocoCcAuthorisation = null;
     /**
@@ -1261,29 +1261,29 @@ class Booking extends AbstractStructBase
      * @param string $flight_no
      * @param string $return_carrier
      * @param string $return_flight_no
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type[] $generic_service
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type[] $car_service
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Flight_service_type[] $flight_service
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Accomodation_service_type[] $accomodation_service
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Insurance_service_type[] $insurance_service
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Transfer_service_type[] $transfer_service
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Bus_service_type[] $bus_service
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Rail_service_type[] $rail_service
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Cruise_service_type[] $cruise_service
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Event_service_type[] $event_service
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Hints $hints
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Person[] $person
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Cc_authorisation[] $cc_authorisation
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Midoco_cc_authorisation[] $midoco_cc_authorisation
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Remark[] $remark
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Saving[] $saving
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Attribute[] $attribute
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AdditionalService[] $additionalService
+     * @param \Pggns\MidocoApi\Booking\StructType\Generic_service_type[] $generic_service
+     * @param \Pggns\MidocoApi\Booking\StructType\Car_service_type[] $car_service
+     * @param \Pggns\MidocoApi\Booking\StructType\Flight_service_type[] $flight_service
+     * @param \Pggns\MidocoApi\Booking\StructType\Accomodation_service_type[] $accomodation_service
+     * @param \Pggns\MidocoApi\Booking\StructType\Insurance_service_type[] $insurance_service
+     * @param \Pggns\MidocoApi\Booking\StructType\Transfer_service_type[] $transfer_service
+     * @param \Pggns\MidocoApi\Booking\StructType\Bus_service_type[] $bus_service
+     * @param \Pggns\MidocoApi\Booking\StructType\Rail_service_type[] $rail_service
+     * @param \Pggns\MidocoApi\Booking\StructType\Cruise_service_type[] $cruise_service
+     * @param \Pggns\MidocoApi\Booking\StructType\Event_service_type[] $event_service
+     * @param \Pggns\MidocoApi\Booking\StructType\Hints $hints
+     * @param \Pggns\MidocoApi\Booking\StructType\Person[] $person
+     * @param \Pggns\MidocoApi\Booking\StructType\Cc_authorisation[] $cc_authorisation
+     * @param \Pggns\MidocoApi\Booking\StructType\Midoco_cc_authorisation[] $midoco_cc_authorisation
+     * @param \Pggns\MidocoApi\Booking\StructType\Remark[] $remark
+     * @param \Pggns\MidocoApi\Booking\StructType\Saving[] $saving
+     * @param \Pggns\MidocoApi\Booking\StructType\Attribute[] $attribute
+     * @param \Pggns\MidocoApi\Booking\StructType\AdditionalService[] $additionalService
      * @param string $departure_time
      * @param string $arrival_time
      * @param string $return_departure_time
      * @param string $return_arrival_time
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\ExternalPayment[] $externalPayment
+     * @param \Pggns\MidocoApi\Booking\StructType\ExternalPayment[] $externalPayment
      * @param string $travel_no
      * @param string $travel_no_description
      * @param string $catalog
@@ -1333,18 +1333,18 @@ class Booking extends AbstractStructBase
      * @param string $flightNo
      * @param string $returnCarrier
      * @param string $returnFlightNo
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType[] $genericService
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CarServiceType[] $carService
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType[] $flightService
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AccomodationServiceType[] $accomodationService
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType[] $insuranceService
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\TransferServiceType[] $transferService
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\BusServiceType[] $busService
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType[] $railService
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType[] $cruiseService
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\EventServiceType[] $eventService
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CcAuthorisation[] $ccAuthorisation
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcAuthorisation[] $midocoCcAuthorisation
+     * @param \Pggns\MidocoApi\Booking\StructType\GenericServiceType[] $genericService
+     * @param \Pggns\MidocoApi\Booking\StructType\CarServiceType[] $carService
+     * @param \Pggns\MidocoApi\Booking\StructType\FlightServiceType[] $flightService
+     * @param \Pggns\MidocoApi\Booking\StructType\AccomodationServiceType[] $accomodationService
+     * @param \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType[] $insuranceService
+     * @param \Pggns\MidocoApi\Booking\StructType\TransferServiceType[] $transferService
+     * @param \Pggns\MidocoApi\Booking\StructType\BusServiceType[] $busService
+     * @param \Pggns\MidocoApi\Booking\StructType\RailServiceType[] $railService
+     * @param \Pggns\MidocoApi\Booking\StructType\CruiseServiceType[] $cruiseService
+     * @param \Pggns\MidocoApi\Booking\StructType\EventServiceType[] $eventService
+     * @param \Pggns\MidocoApi\Booking\StructType\CcAuthorisation[] $ccAuthorisation
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoCcAuthorisation[] $midocoCcAuthorisation
      * @param string $departureTime
      * @param string $arrivalTime
      * @param string $returnDepartureTime
@@ -1367,7 +1367,7 @@ class Booking extends AbstractStructBase
      * @param string $contractTime
      * @param string $settlementType
      */
-    public function __construct(string $supplier, int $position, ?int $option_period = null, ?string $service_description = null, ?string $accomodation_code = null, ?string $accomodation_description = null, ?string $departure_code = null, ?string $departure_description = null, ?string $destination_code = null, ?string $destination_description = null, ?string $return_departure_code = null, ?string $return_departure_description = null, ?string $return_destination_code = null, ?string $return_destination_description = null, ?string $return_code = null, ?string $return_description = null, ?string $catering_description = null, ?string $room_description = null, ?string $insurance_description = null, ?string $area_code = null, ?string $area_description = null, ?string $location_description = null, ?string $country = null, ?string $country_description = null, ?string $cruise_description = null, ?string $source_ext_id = null, ?string $source_ext_system = null, ?string $carrier = null, ?string $flight_no = null, ?string $return_carrier = null, ?string $return_flight_no = null, ?array $generic_service = null, ?array $car_service = null, ?array $flight_service = null, ?array $accomodation_service = null, ?array $insurance_service = null, ?array $transfer_service = null, ?array $bus_service = null, ?array $rail_service = null, ?array $cruise_service = null, ?array $event_service = null, ?\Pggns\MidocoApi\Api\Booking\StructType\Hints $hints = null, ?array $person = null, ?array $cc_authorisation = null, ?array $midoco_cc_authorisation = null, ?array $remark = null, ?array $saving = null, ?array $attribute = null, ?array $additionalService = null, ?string $departure_time = null, ?string $arrival_time = null, ?string $return_departure_time = null, ?string $return_arrival_time = null, ?array $externalPayment = null, ?string $travel_no = null, ?string $travel_no_description = null, ?string $catalog = null, ?string $product_type = null, ?bool $is_request = false, ?bool $is_option = false, ?bool $is_one_way = false, ?string $booking_id = null, ?string $booking_version = null, ?string $supplier_agency = null, ?string $reference_booking_id = null, ?string $reference_type = null, ?string $reference_url = null, ?int $price_ref = null, ?int $package_ref = null, ?bool $prevent_printing = null, ?string $category = null, ?string $booking_date = null, ?string $creation_date = null, ?string $selling_mode = null, ?string $confirmation_group = null, ?bool $mobility_indicator = null, ?string $contract_time = null, ?string $transfer = null, ?string $settlement_type = null, ?int $optionPeriod = null, ?string $serviceDescription = null, ?string $accomodationCode = null, ?string $accomodationDescription = null, ?string $departureCode = null, ?string $departureDescription = null, ?string $destinationCode = null, ?string $destinationDescription = null, ?string $returnDepartureCode = null, ?string $returnDepartureDescription = null, ?string $returnDestinationCode = null, ?string $returnDestinationDescription = null, ?string $returnCode = null, ?string $returnDescription = null, ?string $cateringDescription = null, ?string $roomDescription = null, ?string $insuranceDescription = null, ?string $locationDescription = null, ?string $countryDescription = null, ?string $sourceExtId = null, ?string $sourceExtSystem = null, ?string $flightNo = null, ?string $returnCarrier = null, ?string $returnFlightNo = null, ?array $genericService = null, ?array $carService = null, ?array $flightService = null, ?array $accomodationService = null, ?array $insuranceService = null, ?array $transferService = null, ?array $busService = null, ?array $railService = null, ?array $cruiseService = null, ?array $eventService = null, ?array $ccAuthorisation = null, ?array $midocoCcAuthorisation = null, ?string $departureTime = null, ?string $arrivalTime = null, ?string $returnDepartureTime = null, ?string $returnArrivalTime = null, ?string $travelNo = null, ?string $travelNoDescription = null, ?string $productType = null, ?string $bookingId = null, ?string $bookingVersion = null, ?string $referenceBookingId = null, ?string $referenceType = null, ?int $priceRef = null, ?int $packageRef = null, ?bool $preventPrinting = null, ?string $bookingDate = null, ?string $creationDate = null, ?string $sellingMode = null, ?string $confirmationGroup = null, ?bool $mobilityIndicator = null, ?string $contractTime = null, ?string $settlementType = null)
+    public function __construct(string $supplier, int $position, ?int $option_period = null, ?string $service_description = null, ?string $accomodation_code = null, ?string $accomodation_description = null, ?string $departure_code = null, ?string $departure_description = null, ?string $destination_code = null, ?string $destination_description = null, ?string $return_departure_code = null, ?string $return_departure_description = null, ?string $return_destination_code = null, ?string $return_destination_description = null, ?string $return_code = null, ?string $return_description = null, ?string $catering_description = null, ?string $room_description = null, ?string $insurance_description = null, ?string $area_code = null, ?string $area_description = null, ?string $location_description = null, ?string $country = null, ?string $country_description = null, ?string $cruise_description = null, ?string $source_ext_id = null, ?string $source_ext_system = null, ?string $carrier = null, ?string $flight_no = null, ?string $return_carrier = null, ?string $return_flight_no = null, ?array $generic_service = null, ?array $car_service = null, ?array $flight_service = null, ?array $accomodation_service = null, ?array $insurance_service = null, ?array $transfer_service = null, ?array $bus_service = null, ?array $rail_service = null, ?array $cruise_service = null, ?array $event_service = null, ?\Pggns\MidocoApi\Booking\StructType\Hints $hints = null, ?array $person = null, ?array $cc_authorisation = null, ?array $midoco_cc_authorisation = null, ?array $remark = null, ?array $saving = null, ?array $attribute = null, ?array $additionalService = null, ?string $departure_time = null, ?string $arrival_time = null, ?string $return_departure_time = null, ?string $return_arrival_time = null, ?array $externalPayment = null, ?string $travel_no = null, ?string $travel_no_description = null, ?string $catalog = null, ?string $product_type = null, ?bool $is_request = false, ?bool $is_option = false, ?bool $is_one_way = false, ?string $booking_id = null, ?string $booking_version = null, ?string $supplier_agency = null, ?string $reference_booking_id = null, ?string $reference_type = null, ?string $reference_url = null, ?int $price_ref = null, ?int $package_ref = null, ?bool $prevent_printing = null, ?string $category = null, ?string $booking_date = null, ?string $creation_date = null, ?string $selling_mode = null, ?string $confirmation_group = null, ?bool $mobility_indicator = null, ?string $contract_time = null, ?string $transfer = null, ?string $settlement_type = null, ?int $optionPeriod = null, ?string $serviceDescription = null, ?string $accomodationCode = null, ?string $accomodationDescription = null, ?string $departureCode = null, ?string $departureDescription = null, ?string $destinationCode = null, ?string $destinationDescription = null, ?string $returnDepartureCode = null, ?string $returnDepartureDescription = null, ?string $returnDestinationCode = null, ?string $returnDestinationDescription = null, ?string $returnCode = null, ?string $returnDescription = null, ?string $cateringDescription = null, ?string $roomDescription = null, ?string $insuranceDescription = null, ?string $locationDescription = null, ?string $countryDescription = null, ?string $sourceExtId = null, ?string $sourceExtSystem = null, ?string $flightNo = null, ?string $returnCarrier = null, ?string $returnFlightNo = null, ?array $genericService = null, ?array $carService = null, ?array $flightService = null, ?array $accomodationService = null, ?array $insuranceService = null, ?array $transferService = null, ?array $busService = null, ?array $railService = null, ?array $cruiseService = null, ?array $eventService = null, ?array $ccAuthorisation = null, ?array $midocoCcAuthorisation = null, ?string $departureTime = null, ?string $arrivalTime = null, ?string $returnDepartureTime = null, ?string $returnArrivalTime = null, ?string $travelNo = null, ?string $travelNoDescription = null, ?string $productType = null, ?string $bookingId = null, ?string $bookingVersion = null, ?string $referenceBookingId = null, ?string $referenceType = null, ?int $priceRef = null, ?int $packageRef = null, ?bool $preventPrinting = null, ?string $bookingDate = null, ?string $creationDate = null, ?string $sellingMode = null, ?string $confirmationGroup = null, ?bool $mobilityIndicator = null, ?string $contractTime = null, ?string $settlementType = null)
     {
         $this
             ->setSupplier($supplier)
@@ -1518,7 +1518,7 @@ class Booking extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setSupplier(string $supplier): self
     {
@@ -1541,7 +1541,7 @@ class Booking extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setPosition(int $position): self
     {
@@ -1564,7 +1564,7 @@ class Booking extends AbstractStructBase
     /**
      * Set option_period value
      * @param int $option_period
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setOption_period(?int $option_period = null): self
     {
@@ -1587,7 +1587,7 @@ class Booking extends AbstractStructBase
     /**
      * Set service_description value
      * @param string $service_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setService_description(?string $service_description = null): self
     {
@@ -1610,7 +1610,7 @@ class Booking extends AbstractStructBase
     /**
      * Set accomodation_code value
      * @param string $accomodation_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setAccomodation_code(?string $accomodation_code = null): self
     {
@@ -1633,7 +1633,7 @@ class Booking extends AbstractStructBase
     /**
      * Set accomodation_description value
      * @param string $accomodation_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setAccomodation_description(?string $accomodation_description = null): self
     {
@@ -1656,7 +1656,7 @@ class Booking extends AbstractStructBase
     /**
      * Set departure_code value
      * @param string $departure_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setDeparture_code(?string $departure_code = null): self
     {
@@ -1683,7 +1683,7 @@ class Booking extends AbstractStructBase
     /**
      * Set departure_description value
      * @param string $departure_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setDeparture_description(?string $departure_description = null): self
     {
@@ -1706,7 +1706,7 @@ class Booking extends AbstractStructBase
     /**
      * Set destination_code value
      * @param string $destination_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setDestination_code(?string $destination_code = null): self
     {
@@ -1733,7 +1733,7 @@ class Booking extends AbstractStructBase
     /**
      * Set destination_description value
      * @param string $destination_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setDestination_description(?string $destination_description = null): self
     {
@@ -1756,7 +1756,7 @@ class Booking extends AbstractStructBase
     /**
      * Set return_departure_code value
      * @param string $return_departure_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturn_departure_code(?string $return_departure_code = null): self
     {
@@ -1783,7 +1783,7 @@ class Booking extends AbstractStructBase
     /**
      * Set return_departure_description value
      * @param string $return_departure_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturn_departure_description(?string $return_departure_description = null): self
     {
@@ -1806,7 +1806,7 @@ class Booking extends AbstractStructBase
     /**
      * Set return_destination_code value
      * @param string $return_destination_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturn_destination_code(?string $return_destination_code = null): self
     {
@@ -1833,7 +1833,7 @@ class Booking extends AbstractStructBase
     /**
      * Set return_destination_description value
      * @param string $return_destination_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturn_destination_description(?string $return_destination_description = null): self
     {
@@ -1856,7 +1856,7 @@ class Booking extends AbstractStructBase
     /**
      * Set return_code value
      * @param string $return_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturn_code(?string $return_code = null): self
     {
@@ -1879,7 +1879,7 @@ class Booking extends AbstractStructBase
     /**
      * Set return_description value
      * @param string $return_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturn_description(?string $return_description = null): self
     {
@@ -1902,7 +1902,7 @@ class Booking extends AbstractStructBase
     /**
      * Set catering_description value
      * @param string $catering_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCatering_description(?string $catering_description = null): self
     {
@@ -1925,7 +1925,7 @@ class Booking extends AbstractStructBase
     /**
      * Set room_description value
      * @param string $room_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setRoom_description(?string $room_description = null): self
     {
@@ -1948,7 +1948,7 @@ class Booking extends AbstractStructBase
     /**
      * Set insurance_description value
      * @param string $insurance_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setInsurance_description(?string $insurance_description = null): self
     {
@@ -1971,7 +1971,7 @@ class Booking extends AbstractStructBase
     /**
      * Set area_code value
      * @param string $area_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setArea_code(?string $area_code = null): self
     {
@@ -1994,7 +1994,7 @@ class Booking extends AbstractStructBase
     /**
      * Set area_description value
      * @param string $area_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setArea_description(?string $area_description = null): self
     {
@@ -2017,7 +2017,7 @@ class Booking extends AbstractStructBase
     /**
      * Set location_description value
      * @param string $location_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setLocation_description(?string $location_description = null): self
     {
@@ -2040,7 +2040,7 @@ class Booking extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCountry(?string $country = null): self
     {
@@ -2063,7 +2063,7 @@ class Booking extends AbstractStructBase
     /**
      * Set country_description value
      * @param string $country_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCountry_description(?string $country_description = null): self
     {
@@ -2086,7 +2086,7 @@ class Booking extends AbstractStructBase
     /**
      * Set cruise_description value
      * @param string $cruise_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCruise_description(?string $cruise_description = null): self
     {
@@ -2109,7 +2109,7 @@ class Booking extends AbstractStructBase
     /**
      * Set source_ext_id value
      * @param string $source_ext_id
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setSource_ext_id(?string $source_ext_id = null): self
     {
@@ -2132,7 +2132,7 @@ class Booking extends AbstractStructBase
     /**
      * Set source_ext_system value
      * @param string $source_ext_system
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setSource_ext_system(?string $source_ext_system = null): self
     {
@@ -2155,7 +2155,7 @@ class Booking extends AbstractStructBase
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -2178,7 +2178,7 @@ class Booking extends AbstractStructBase
     /**
      * Set flight_no value
      * @param string $flight_no
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setFlight_no(?string $flight_no = null): self
     {
@@ -2201,7 +2201,7 @@ class Booking extends AbstractStructBase
     /**
      * Set return_carrier value
      * @param string $return_carrier
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturn_carrier(?string $return_carrier = null): self
     {
@@ -2224,7 +2224,7 @@ class Booking extends AbstractStructBase
     /**
      * Set return_flight_no value
      * @param string $return_flight_no
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturn_flight_no(?string $return_flight_no = null): self
     {
@@ -2238,7 +2238,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get generic_service value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Generic_service_type[]
      */
     public function getGeneric_service(): ?array
     {
@@ -2259,12 +2259,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingGeneric_serviceItem) {
             // validation for constraint: itemType
-            if (!$bookingGeneric_serviceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type) {
+            if (!$bookingGeneric_serviceItem instanceof \Pggns\MidocoApi\Booking\StructType\Generic_service_type) {
                 $invalidValues[] = is_object($bookingGeneric_serviceItem) ? get_class($bookingGeneric_serviceItem) : sprintf('%s(%s)', gettype($bookingGeneric_serviceItem), var_export($bookingGeneric_serviceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The generic_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The generic_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Generic_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2273,8 +2273,8 @@ class Booking extends AbstractStructBase
     /**
      * Set generic_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type[] $generic_service
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Generic_service_type[] $generic_service
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setGeneric_service(?array $generic_service = null): self
     {
@@ -2289,14 +2289,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to generic_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Generic_service_type $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToGeneric_service(\Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type $item): self
+    public function addToGeneric_service(\Pggns\MidocoApi\Booking\StructType\Generic_service_type $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type) {
-            throw new InvalidArgumentException(sprintf('The generic_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Generic_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Generic_service_type) {
+            throw new InvalidArgumentException(sprintf('The generic_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Generic_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->generic_service[] = $this->{'generic-service'}[] = $item;
         
@@ -2304,7 +2304,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get car_service value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type[]
      */
     public function getCar_service(): ?array
     {
@@ -2325,12 +2325,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingCar_serviceItem) {
             // validation for constraint: itemType
-            if (!$bookingCar_serviceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type) {
+            if (!$bookingCar_serviceItem instanceof \Pggns\MidocoApi\Booking\StructType\Car_service_type) {
                 $invalidValues[] = is_object($bookingCar_serviceItem) ? get_class($bookingCar_serviceItem) : sprintf('%s(%s)', gettype($bookingCar_serviceItem), var_export($bookingCar_serviceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The car_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The car_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Car_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2339,8 +2339,8 @@ class Booking extends AbstractStructBase
     /**
      * Set car_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type[] $car_service
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Car_service_type[] $car_service
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCar_service(?array $car_service = null): self
     {
@@ -2355,14 +2355,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to car_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Car_service_type $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToCar_service(\Pggns\MidocoApi\Api\Booking\StructType\Car_service_type $item): self
+    public function addToCar_service(\Pggns\MidocoApi\Booking\StructType\Car_service_type $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type) {
-            throw new InvalidArgumentException(sprintf('The car_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Car_service_type) {
+            throw new InvalidArgumentException(sprintf('The car_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Car_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->car_service[] = $this->{'car-service'}[] = $item;
         
@@ -2370,7 +2370,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get flight_service value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_service_type[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_service_type[]
      */
     public function getFlight_service(): ?array
     {
@@ -2391,12 +2391,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingFlight_serviceItem) {
             // validation for constraint: itemType
-            if (!$bookingFlight_serviceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Flight_service_type) {
+            if (!$bookingFlight_serviceItem instanceof \Pggns\MidocoApi\Booking\StructType\Flight_service_type) {
                 $invalidValues[] = is_object($bookingFlight_serviceItem) ? get_class($bookingFlight_serviceItem) : sprintf('%s(%s)', gettype($bookingFlight_serviceItem), var_export($bookingFlight_serviceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The flight_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Flight_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The flight_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Flight_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2405,8 +2405,8 @@ class Booking extends AbstractStructBase
     /**
      * Set flight_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Flight_service_type[] $flight_service
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Flight_service_type[] $flight_service
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setFlight_service(?array $flight_service = null): self
     {
@@ -2421,14 +2421,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to flight_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Flight_service_type $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Flight_service_type $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToFlight_service(\Pggns\MidocoApi\Api\Booking\StructType\Flight_service_type $item): self
+    public function addToFlight_service(\Pggns\MidocoApi\Booking\StructType\Flight_service_type $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Flight_service_type) {
-            throw new InvalidArgumentException(sprintf('The flight_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Flight_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Flight_service_type) {
+            throw new InvalidArgumentException(sprintf('The flight_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Flight_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->flight_service[] = $this->{'flight-service'}[] = $item;
         
@@ -2436,7 +2436,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get accomodation_service value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Accomodation_service_type[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Accomodation_service_type[]
      */
     public function getAccomodation_service(): ?array
     {
@@ -2457,12 +2457,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingAccomodation_serviceItem) {
             // validation for constraint: itemType
-            if (!$bookingAccomodation_serviceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Accomodation_service_type) {
+            if (!$bookingAccomodation_serviceItem instanceof \Pggns\MidocoApi\Booking\StructType\Accomodation_service_type) {
                 $invalidValues[] = is_object($bookingAccomodation_serviceItem) ? get_class($bookingAccomodation_serviceItem) : sprintf('%s(%s)', gettype($bookingAccomodation_serviceItem), var_export($bookingAccomodation_serviceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The accomodation_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Accomodation_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The accomodation_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Accomodation_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2471,8 +2471,8 @@ class Booking extends AbstractStructBase
     /**
      * Set accomodation_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Accomodation_service_type[] $accomodation_service
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Accomodation_service_type[] $accomodation_service
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setAccomodation_service(?array $accomodation_service = null): self
     {
@@ -2487,14 +2487,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to accomodation_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Accomodation_service_type $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Accomodation_service_type $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToAccomodation_service(\Pggns\MidocoApi\Api\Booking\StructType\Accomodation_service_type $item): self
+    public function addToAccomodation_service(\Pggns\MidocoApi\Booking\StructType\Accomodation_service_type $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Accomodation_service_type) {
-            throw new InvalidArgumentException(sprintf('The accomodation_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Accomodation_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Accomodation_service_type) {
+            throw new InvalidArgumentException(sprintf('The accomodation_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Accomodation_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->accomodation_service[] = $this->{'accomodation-service'}[] = $item;
         
@@ -2502,7 +2502,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get insurance_service value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Insurance_service_type[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Insurance_service_type[]
      */
     public function getInsurance_service(): ?array
     {
@@ -2523,12 +2523,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingInsurance_serviceItem) {
             // validation for constraint: itemType
-            if (!$bookingInsurance_serviceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Insurance_service_type) {
+            if (!$bookingInsurance_serviceItem instanceof \Pggns\MidocoApi\Booking\StructType\Insurance_service_type) {
                 $invalidValues[] = is_object($bookingInsurance_serviceItem) ? get_class($bookingInsurance_serviceItem) : sprintf('%s(%s)', gettype($bookingInsurance_serviceItem), var_export($bookingInsurance_serviceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The insurance_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Insurance_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The insurance_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Insurance_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2537,8 +2537,8 @@ class Booking extends AbstractStructBase
     /**
      * Set insurance_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Insurance_service_type[] $insurance_service
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Insurance_service_type[] $insurance_service
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setInsurance_service(?array $insurance_service = null): self
     {
@@ -2553,14 +2553,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to insurance_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Insurance_service_type $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Insurance_service_type $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToInsurance_service(\Pggns\MidocoApi\Api\Booking\StructType\Insurance_service_type $item): self
+    public function addToInsurance_service(\Pggns\MidocoApi\Booking\StructType\Insurance_service_type $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Insurance_service_type) {
-            throw new InvalidArgumentException(sprintf('The insurance_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Insurance_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Insurance_service_type) {
+            throw new InvalidArgumentException(sprintf('The insurance_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Insurance_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->insurance_service[] = $this->{'insurance-service'}[] = $item;
         
@@ -2568,7 +2568,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get transfer_service value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Transfer_service_type[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Transfer_service_type[]
      */
     public function getTransfer_service(): ?array
     {
@@ -2589,12 +2589,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingTransfer_serviceItem) {
             // validation for constraint: itemType
-            if (!$bookingTransfer_serviceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Transfer_service_type) {
+            if (!$bookingTransfer_serviceItem instanceof \Pggns\MidocoApi\Booking\StructType\Transfer_service_type) {
                 $invalidValues[] = is_object($bookingTransfer_serviceItem) ? get_class($bookingTransfer_serviceItem) : sprintf('%s(%s)', gettype($bookingTransfer_serviceItem), var_export($bookingTransfer_serviceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The transfer_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Transfer_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The transfer_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Transfer_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2603,8 +2603,8 @@ class Booking extends AbstractStructBase
     /**
      * Set transfer_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Transfer_service_type[] $transfer_service
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Transfer_service_type[] $transfer_service
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setTransfer_service(?array $transfer_service = null): self
     {
@@ -2619,14 +2619,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to transfer_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Transfer_service_type $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Transfer_service_type $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToTransfer_service(\Pggns\MidocoApi\Api\Booking\StructType\Transfer_service_type $item): self
+    public function addToTransfer_service(\Pggns\MidocoApi\Booking\StructType\Transfer_service_type $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Transfer_service_type) {
-            throw new InvalidArgumentException(sprintf('The transfer_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Transfer_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Transfer_service_type) {
+            throw new InvalidArgumentException(sprintf('The transfer_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Transfer_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->transfer_service[] = $this->{'transfer-service'}[] = $item;
         
@@ -2634,7 +2634,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get bus_service value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Bus_service_type[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Bus_service_type[]
      */
     public function getBus_service(): ?array
     {
@@ -2655,12 +2655,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingBus_serviceItem) {
             // validation for constraint: itemType
-            if (!$bookingBus_serviceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Bus_service_type) {
+            if (!$bookingBus_serviceItem instanceof \Pggns\MidocoApi\Booking\StructType\Bus_service_type) {
                 $invalidValues[] = is_object($bookingBus_serviceItem) ? get_class($bookingBus_serviceItem) : sprintf('%s(%s)', gettype($bookingBus_serviceItem), var_export($bookingBus_serviceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The bus_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Bus_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The bus_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Bus_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2669,8 +2669,8 @@ class Booking extends AbstractStructBase
     /**
      * Set bus_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Bus_service_type[] $bus_service
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Bus_service_type[] $bus_service
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setBus_service(?array $bus_service = null): self
     {
@@ -2685,14 +2685,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to bus_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Bus_service_type $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Bus_service_type $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToBus_service(\Pggns\MidocoApi\Api\Booking\StructType\Bus_service_type $item): self
+    public function addToBus_service(\Pggns\MidocoApi\Booking\StructType\Bus_service_type $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Bus_service_type) {
-            throw new InvalidArgumentException(sprintf('The bus_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Bus_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Bus_service_type) {
+            throw new InvalidArgumentException(sprintf('The bus_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Bus_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->bus_service[] = $this->{'bus-service'}[] = $item;
         
@@ -2700,7 +2700,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get rail_service value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Rail_service_type[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Rail_service_type[]
      */
     public function getRail_service(): ?array
     {
@@ -2721,12 +2721,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingRail_serviceItem) {
             // validation for constraint: itemType
-            if (!$bookingRail_serviceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Rail_service_type) {
+            if (!$bookingRail_serviceItem instanceof \Pggns\MidocoApi\Booking\StructType\Rail_service_type) {
                 $invalidValues[] = is_object($bookingRail_serviceItem) ? get_class($bookingRail_serviceItem) : sprintf('%s(%s)', gettype($bookingRail_serviceItem), var_export($bookingRail_serviceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The rail_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Rail_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The rail_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Rail_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2735,8 +2735,8 @@ class Booking extends AbstractStructBase
     /**
      * Set rail_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Rail_service_type[] $rail_service
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Rail_service_type[] $rail_service
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setRail_service(?array $rail_service = null): self
     {
@@ -2751,14 +2751,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to rail_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Rail_service_type $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Rail_service_type $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToRail_service(\Pggns\MidocoApi\Api\Booking\StructType\Rail_service_type $item): self
+    public function addToRail_service(\Pggns\MidocoApi\Booking\StructType\Rail_service_type $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Rail_service_type) {
-            throw new InvalidArgumentException(sprintf('The rail_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Rail_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Rail_service_type) {
+            throw new InvalidArgumentException(sprintf('The rail_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Rail_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->rail_service[] = $this->{'rail-service'}[] = $item;
         
@@ -2766,7 +2766,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get cruise_service value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Cruise_service_type[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Cruise_service_type[]
      */
     public function getCruise_service(): ?array
     {
@@ -2787,12 +2787,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingCruise_serviceItem) {
             // validation for constraint: itemType
-            if (!$bookingCruise_serviceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Cruise_service_type) {
+            if (!$bookingCruise_serviceItem instanceof \Pggns\MidocoApi\Booking\StructType\Cruise_service_type) {
                 $invalidValues[] = is_object($bookingCruise_serviceItem) ? get_class($bookingCruise_serviceItem) : sprintf('%s(%s)', gettype($bookingCruise_serviceItem), var_export($bookingCruise_serviceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The cruise_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Cruise_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The cruise_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Cruise_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2801,8 +2801,8 @@ class Booking extends AbstractStructBase
     /**
      * Set cruise_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Cruise_service_type[] $cruise_service
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Cruise_service_type[] $cruise_service
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCruise_service(?array $cruise_service = null): self
     {
@@ -2817,14 +2817,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to cruise_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Cruise_service_type $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Cruise_service_type $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToCruise_service(\Pggns\MidocoApi\Api\Booking\StructType\Cruise_service_type $item): self
+    public function addToCruise_service(\Pggns\MidocoApi\Booking\StructType\Cruise_service_type $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Cruise_service_type) {
-            throw new InvalidArgumentException(sprintf('The cruise_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Cruise_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Cruise_service_type) {
+            throw new InvalidArgumentException(sprintf('The cruise_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Cruise_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->cruise_service[] = $this->{'cruise-service'}[] = $item;
         
@@ -2832,7 +2832,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get event_service value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Event_service_type[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Event_service_type[]
      */
     public function getEvent_service(): ?array
     {
@@ -2853,12 +2853,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingEvent_serviceItem) {
             // validation for constraint: itemType
-            if (!$bookingEvent_serviceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Event_service_type) {
+            if (!$bookingEvent_serviceItem instanceof \Pggns\MidocoApi\Booking\StructType\Event_service_type) {
                 $invalidValues[] = is_object($bookingEvent_serviceItem) ? get_class($bookingEvent_serviceItem) : sprintf('%s(%s)', gettype($bookingEvent_serviceItem), var_export($bookingEvent_serviceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The event_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Event_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The event_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Event_service_type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2867,8 +2867,8 @@ class Booking extends AbstractStructBase
     /**
      * Set event_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Event_service_type[] $event_service
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Event_service_type[] $event_service
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setEvent_service(?array $event_service = null): self
     {
@@ -2883,14 +2883,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to event_service value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Event_service_type $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Event_service_type $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToEvent_service(\Pggns\MidocoApi\Api\Booking\StructType\Event_service_type $item): self
+    public function addToEvent_service(\Pggns\MidocoApi\Booking\StructType\Event_service_type $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Event_service_type) {
-            throw new InvalidArgumentException(sprintf('The event_service property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Event_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Event_service_type) {
+            throw new InvalidArgumentException(sprintf('The event_service property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Event_service_type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->event_service[] = $this->{'event-service'}[] = $item;
         
@@ -2898,18 +2898,18 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get hints value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Hints|null
+     * @return \Pggns\MidocoApi\Booking\StructType\Hints|null
      */
-    public function getHints(): ?\Pggns\MidocoApi\Api\Booking\StructType\Hints
+    public function getHints(): ?\Pggns\MidocoApi\Booking\StructType\Hints
     {
         return $this->hints;
     }
     /**
      * Set hints value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Hints $hints
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Hints $hints
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function setHints(?\Pggns\MidocoApi\Api\Booking\StructType\Hints $hints = null): self
+    public function setHints(?\Pggns\MidocoApi\Booking\StructType\Hints $hints = null): self
     {
         $this->hints = $hints;
         
@@ -2917,7 +2917,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get person value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Person[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Person[]
      */
     public function getPerson(): ?array
     {
@@ -2938,12 +2938,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingPersonItem) {
             // validation for constraint: itemType
-            if (!$bookingPersonItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Person) {
+            if (!$bookingPersonItem instanceof \Pggns\MidocoApi\Booking\StructType\Person) {
                 $invalidValues[] = is_object($bookingPersonItem) ? get_class($bookingPersonItem) : sprintf('%s(%s)', gettype($bookingPersonItem), var_export($bookingPersonItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The person property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Person, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The person property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Person, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2952,8 +2952,8 @@ class Booking extends AbstractStructBase
     /**
      * Set person value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Person[] $person
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Person[] $person
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setPerson(?array $person = null): self
     {
@@ -2968,14 +2968,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to person value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Person $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Person $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToPerson(\Pggns\MidocoApi\Api\Booking\StructType\Person $item): self
+    public function addToPerson(\Pggns\MidocoApi\Booking\StructType\Person $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Person) {
-            throw new InvalidArgumentException(sprintf('The person property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Person, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Person) {
+            throw new InvalidArgumentException(sprintf('The person property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Person, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->person[] = $item;
         
@@ -2983,7 +2983,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get cc_authorisation value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Cc_authorisation[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Cc_authorisation[]
      */
     public function getCc_authorisation(): ?array
     {
@@ -3004,12 +3004,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingCc_authorisationItem) {
             // validation for constraint: itemType
-            if (!$bookingCc_authorisationItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Cc_authorisation) {
+            if (!$bookingCc_authorisationItem instanceof \Pggns\MidocoApi\Booking\StructType\Cc_authorisation) {
                 $invalidValues[] = is_object($bookingCc_authorisationItem) ? get_class($bookingCc_authorisationItem) : sprintf('%s(%s)', gettype($bookingCc_authorisationItem), var_export($bookingCc_authorisationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The cc_authorisation property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Cc_authorisation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The cc_authorisation property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Cc_authorisation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3018,8 +3018,8 @@ class Booking extends AbstractStructBase
     /**
      * Set cc_authorisation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Cc_authorisation[] $cc_authorisation
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Cc_authorisation[] $cc_authorisation
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCc_authorisation(?array $cc_authorisation = null): self
     {
@@ -3034,14 +3034,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to cc_authorisation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Cc_authorisation $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Cc_authorisation $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToCc_authorisation(\Pggns\MidocoApi\Api\Booking\StructType\Cc_authorisation $item): self
+    public function addToCc_authorisation(\Pggns\MidocoApi\Booking\StructType\Cc_authorisation $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Cc_authorisation) {
-            throw new InvalidArgumentException(sprintf('The cc_authorisation property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Cc_authorisation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Cc_authorisation) {
+            throw new InvalidArgumentException(sprintf('The cc_authorisation property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Cc_authorisation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->cc_authorisation[] = $this->{'cc-authorisation'}[] = $item;
         
@@ -3049,7 +3049,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get midoco_cc_authorisation value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Midoco_cc_authorisation[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Midoco_cc_authorisation[]
      */
     public function getMidoco_cc_authorisation(): ?array
     {
@@ -3070,12 +3070,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingMidoco_cc_authorisationItem) {
             // validation for constraint: itemType
-            if (!$bookingMidoco_cc_authorisationItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Midoco_cc_authorisation) {
+            if (!$bookingMidoco_cc_authorisationItem instanceof \Pggns\MidocoApi\Booking\StructType\Midoco_cc_authorisation) {
                 $invalidValues[] = is_object($bookingMidoco_cc_authorisationItem) ? get_class($bookingMidoco_cc_authorisationItem) : sprintf('%s(%s)', gettype($bookingMidoco_cc_authorisationItem), var_export($bookingMidoco_cc_authorisationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The midoco_cc_authorisation property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Midoco_cc_authorisation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The midoco_cc_authorisation property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Midoco_cc_authorisation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3084,8 +3084,8 @@ class Booking extends AbstractStructBase
     /**
      * Set midoco_cc_authorisation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Midoco_cc_authorisation[] $midoco_cc_authorisation
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Midoco_cc_authorisation[] $midoco_cc_authorisation
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setMidoco_cc_authorisation(?array $midoco_cc_authorisation = null): self
     {
@@ -3100,14 +3100,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to midoco_cc_authorisation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Midoco_cc_authorisation $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Midoco_cc_authorisation $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToMidoco_cc_authorisation(\Pggns\MidocoApi\Api\Booking\StructType\Midoco_cc_authorisation $item): self
+    public function addToMidoco_cc_authorisation(\Pggns\MidocoApi\Booking\StructType\Midoco_cc_authorisation $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Midoco_cc_authorisation) {
-            throw new InvalidArgumentException(sprintf('The midoco_cc_authorisation property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Midoco_cc_authorisation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Midoco_cc_authorisation) {
+            throw new InvalidArgumentException(sprintf('The midoco_cc_authorisation property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Midoco_cc_authorisation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->midoco_cc_authorisation[] = $this->{'midoco-cc-authorisation'}[] = $item;
         
@@ -3115,7 +3115,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get remark value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Remark[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Remark[]
      */
     public function getRemark(): ?array
     {
@@ -3136,12 +3136,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingRemarkItem) {
             // validation for constraint: itemType
-            if (!$bookingRemarkItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Remark) {
+            if (!$bookingRemarkItem instanceof \Pggns\MidocoApi\Booking\StructType\Remark) {
                 $invalidValues[] = is_object($bookingRemarkItem) ? get_class($bookingRemarkItem) : sprintf('%s(%s)', gettype($bookingRemarkItem), var_export($bookingRemarkItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The remark property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Remark, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The remark property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Remark, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3150,8 +3150,8 @@ class Booking extends AbstractStructBase
     /**
      * Set remark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Remark[] $remark
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Remark[] $remark
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setRemark(?array $remark = null): self
     {
@@ -3166,14 +3166,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to remark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Remark $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Remark $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToRemark(\Pggns\MidocoApi\Api\Booking\StructType\Remark $item): self
+    public function addToRemark(\Pggns\MidocoApi\Booking\StructType\Remark $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Remark) {
-            throw new InvalidArgumentException(sprintf('The remark property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Remark, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Remark) {
+            throw new InvalidArgumentException(sprintf('The remark property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Remark, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->remark[] = $item;
         
@@ -3181,7 +3181,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get saving value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Saving[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Saving[]
      */
     public function getSaving(): ?array
     {
@@ -3202,12 +3202,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingSavingItem) {
             // validation for constraint: itemType
-            if (!$bookingSavingItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Saving) {
+            if (!$bookingSavingItem instanceof \Pggns\MidocoApi\Booking\StructType\Saving) {
                 $invalidValues[] = is_object($bookingSavingItem) ? get_class($bookingSavingItem) : sprintf('%s(%s)', gettype($bookingSavingItem), var_export($bookingSavingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The saving property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Saving, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The saving property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Saving, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3216,8 +3216,8 @@ class Booking extends AbstractStructBase
     /**
      * Set saving value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Saving[] $saving
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Saving[] $saving
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setSaving(?array $saving = null): self
     {
@@ -3232,14 +3232,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to saving value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Saving $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Saving $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToSaving(\Pggns\MidocoApi\Api\Booking\StructType\Saving $item): self
+    public function addToSaving(\Pggns\MidocoApi\Booking\StructType\Saving $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Saving) {
-            throw new InvalidArgumentException(sprintf('The saving property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Saving, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Saving) {
+            throw new InvalidArgumentException(sprintf('The saving property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Saving, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->saving[] = $item;
         
@@ -3247,7 +3247,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get attribute value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Attribute[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Attribute[]
      */
     public function getAttribute(): ?array
     {
@@ -3268,12 +3268,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingAttributeItem) {
             // validation for constraint: itemType
-            if (!$bookingAttributeItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Attribute) {
+            if (!$bookingAttributeItem instanceof \Pggns\MidocoApi\Booking\StructType\Attribute) {
                 $invalidValues[] = is_object($bookingAttributeItem) ? get_class($bookingAttributeItem) : sprintf('%s(%s)', gettype($bookingAttributeItem), var_export($bookingAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attribute property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Attribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attribute property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Attribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3282,8 +3282,8 @@ class Booking extends AbstractStructBase
     /**
      * Set attribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Attribute[] $attribute
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Attribute[] $attribute
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setAttribute(?array $attribute = null): self
     {
@@ -3298,14 +3298,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to attribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Attribute $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\Attribute $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToAttribute(\Pggns\MidocoApi\Api\Booking\StructType\Attribute $item): self
+    public function addToAttribute(\Pggns\MidocoApi\Booking\StructType\Attribute $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Attribute) {
-            throw new InvalidArgumentException(sprintf('The attribute property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Attribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Attribute) {
+            throw new InvalidArgumentException(sprintf('The attribute property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Attribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attribute[] = $item;
         
@@ -3313,7 +3313,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get AdditionalService value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AdditionalService[]
+     * @return \Pggns\MidocoApi\Booking\StructType\AdditionalService[]
      */
     public function getAdditionalService(): ?array
     {
@@ -3334,12 +3334,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingAdditionalServiceItem) {
             // validation for constraint: itemType
-            if (!$bookingAdditionalServiceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\AdditionalService) {
+            if (!$bookingAdditionalServiceItem instanceof \Pggns\MidocoApi\Booking\StructType\AdditionalService) {
                 $invalidValues[] = is_object($bookingAdditionalServiceItem) ? get_class($bookingAdditionalServiceItem) : sprintf('%s(%s)', gettype($bookingAdditionalServiceItem), var_export($bookingAdditionalServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AdditionalService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\AdditionalService, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AdditionalService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\AdditionalService, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3348,8 +3348,8 @@ class Booking extends AbstractStructBase
     /**
      * Set AdditionalService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AdditionalService[] $additionalService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\AdditionalService[] $additionalService
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setAdditionalService(?array $additionalService = null): self
     {
@@ -3364,14 +3364,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to AdditionalService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AdditionalService $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\AdditionalService $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToAdditionalService(\Pggns\MidocoApi\Api\Booking\StructType\AdditionalService $item): self
+    public function addToAdditionalService(\Pggns\MidocoApi\Booking\StructType\AdditionalService $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\AdditionalService) {
-            throw new InvalidArgumentException(sprintf('The AdditionalService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\AdditionalService, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\AdditionalService) {
+            throw new InvalidArgumentException(sprintf('The AdditionalService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\AdditionalService, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AdditionalService[] = $item;
         
@@ -3388,7 +3388,7 @@ class Booking extends AbstractStructBase
     /**
      * Set departure_time value
      * @param string $departure_time
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setDeparture_time(?string $departure_time = null): self
     {
@@ -3415,7 +3415,7 @@ class Booking extends AbstractStructBase
     /**
      * Set arrival_time value
      * @param string $arrival_time
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setArrival_time(?string $arrival_time = null): self
     {
@@ -3442,7 +3442,7 @@ class Booking extends AbstractStructBase
     /**
      * Set return_departure_time value
      * @param string $return_departure_time
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturn_departure_time(?string $return_departure_time = null): self
     {
@@ -3469,7 +3469,7 @@ class Booking extends AbstractStructBase
     /**
      * Set return_arrival_time value
      * @param string $return_arrival_time
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturn_arrival_time(?string $return_arrival_time = null): self
     {
@@ -3487,7 +3487,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get ExternalPayment value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\ExternalPayment[]
+     * @return \Pggns\MidocoApi\Booking\StructType\ExternalPayment[]
      */
     public function getExternalPayment(): ?array
     {
@@ -3508,12 +3508,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingExternalPaymentItem) {
             // validation for constraint: itemType
-            if (!$bookingExternalPaymentItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\ExternalPayment) {
+            if (!$bookingExternalPaymentItem instanceof \Pggns\MidocoApi\Booking\StructType\ExternalPayment) {
                 $invalidValues[] = is_object($bookingExternalPaymentItem) ? get_class($bookingExternalPaymentItem) : sprintf('%s(%s)', gettype($bookingExternalPaymentItem), var_export($bookingExternalPaymentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\ExternalPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Booking\StructType\ExternalPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -3522,8 +3522,8 @@ class Booking extends AbstractStructBase
     /**
      * Set ExternalPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\ExternalPayment[] $externalPayment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\ExternalPayment[] $externalPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setExternalPayment(?array $externalPayment = null): self
     {
@@ -3538,14 +3538,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to ExternalPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\ExternalPayment $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\ExternalPayment $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToExternalPayment(\Pggns\MidocoApi\Api\Booking\StructType\ExternalPayment $item): self
+    public function addToExternalPayment(\Pggns\MidocoApi\Booking\StructType\ExternalPayment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\ExternalPayment) {
-            throw new InvalidArgumentException(sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\ExternalPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\ExternalPayment) {
+            throw new InvalidArgumentException(sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Booking\StructType\ExternalPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ExternalPayment[] = $item;
         
@@ -3562,7 +3562,7 @@ class Booking extends AbstractStructBase
     /**
      * Set travel_no value
      * @param string $travel_no
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setTravel_no(?string $travel_no = null): self
     {
@@ -3585,7 +3585,7 @@ class Booking extends AbstractStructBase
     /**
      * Set travel_no_description value
      * @param string $travel_no_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setTravel_no_description(?string $travel_no_description = null): self
     {
@@ -3608,7 +3608,7 @@ class Booking extends AbstractStructBase
     /**
      * Set catalog value
      * @param string $catalog
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCatalog(?string $catalog = null): self
     {
@@ -3631,7 +3631,7 @@ class Booking extends AbstractStructBase
     /**
      * Set product_type value
      * @param string $product_type
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setProduct_type(?string $product_type = null): self
     {
@@ -3654,7 +3654,7 @@ class Booking extends AbstractStructBase
     /**
      * Set is_request value
      * @param bool $is_request
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setIs_request(?bool $is_request = false): self
     {
@@ -3677,7 +3677,7 @@ class Booking extends AbstractStructBase
     /**
      * Set is_option value
      * @param bool $is_option
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setIs_option(?bool $is_option = false): self
     {
@@ -3700,7 +3700,7 @@ class Booking extends AbstractStructBase
     /**
      * Set is_one_way value
      * @param bool $is_one_way
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setIs_one_way(?bool $is_one_way = false): self
     {
@@ -3723,7 +3723,7 @@ class Booking extends AbstractStructBase
     /**
      * Set booking_id value
      * @param string $booking_id
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setBooking_id(?string $booking_id = null): self
     {
@@ -3746,7 +3746,7 @@ class Booking extends AbstractStructBase
     /**
      * Set booking_version value
      * @param string $booking_version
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setBooking_version(?string $booking_version = null): self
     {
@@ -3769,7 +3769,7 @@ class Booking extends AbstractStructBase
     /**
      * Set supplier_agency value
      * @param string $supplier_agency
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setSupplier_agency(?string $supplier_agency = null): self
     {
@@ -3792,7 +3792,7 @@ class Booking extends AbstractStructBase
     /**
      * Set reference_booking_id value
      * @param string $reference_booking_id
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReference_booking_id(?string $reference_booking_id = null): self
     {
@@ -3815,7 +3815,7 @@ class Booking extends AbstractStructBase
     /**
      * Set reference_type value
      * @param string $reference_type
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReference_type(?string $reference_type = null): self
     {
@@ -3838,7 +3838,7 @@ class Booking extends AbstractStructBase
     /**
      * Set reference_url value
      * @param string $reference_url
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReference_url(?string $reference_url = null): self
     {
@@ -3861,7 +3861,7 @@ class Booking extends AbstractStructBase
     /**
      * Set price_ref value
      * @param int $price_ref
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setPrice_ref(?int $price_ref = null): self
     {
@@ -3884,7 +3884,7 @@ class Booking extends AbstractStructBase
     /**
      * Set package_ref value
      * @param int $package_ref
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setPackage_ref(?int $package_ref = null): self
     {
@@ -3907,7 +3907,7 @@ class Booking extends AbstractStructBase
     /**
      * Set prevent_printing value
      * @param bool $prevent_printing
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setPrevent_printing(?bool $prevent_printing = null): self
     {
@@ -3930,7 +3930,7 @@ class Booking extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCategory(?string $category = null): self
     {
@@ -3953,7 +3953,7 @@ class Booking extends AbstractStructBase
     /**
      * Set booking_date value
      * @param string $booking_date
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setBooking_date(?string $booking_date = null): self
     {
@@ -3976,7 +3976,7 @@ class Booking extends AbstractStructBase
     /**
      * Set creation_date value
      * @param string $creation_date
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCreation_date(?string $creation_date = null): self
     {
@@ -3998,17 +3998,17 @@ class Booking extends AbstractStructBase
     }
     /**
      * Set selling_mode value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\BookingSellingModeType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\BookingSellingModeType::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\BookingSellingModeType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\BookingSellingModeType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $selling_mode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setSelling_mode(?string $selling_mode = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\BookingSellingModeType::valueIsValid($selling_mode)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\BookingSellingModeType', is_array($selling_mode) ? implode(', ', $selling_mode) : var_export($selling_mode, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\BookingSellingModeType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\BookingSellingModeType::valueIsValid($selling_mode)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\BookingSellingModeType', is_array($selling_mode) ? implode(', ', $selling_mode) : var_export($selling_mode, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\BookingSellingModeType::getValidValues())), __LINE__);
         }
         $this->selling_mode = $this->{'selling-mode'} = $selling_mode;
         
@@ -4025,7 +4025,7 @@ class Booking extends AbstractStructBase
     /**
      * Set confirmation_group value
      * @param string $confirmation_group
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setConfirmation_group(?string $confirmation_group = null): self
     {
@@ -4048,7 +4048,7 @@ class Booking extends AbstractStructBase
     /**
      * Set mobility_indicator value
      * @param bool $mobility_indicator
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setMobility_indicator(?bool $mobility_indicator = null): self
     {
@@ -4071,7 +4071,7 @@ class Booking extends AbstractStructBase
     /**
      * Set contract_time value
      * @param string $contract_time
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setContract_time(?string $contract_time = null): self
     {
@@ -4094,7 +4094,7 @@ class Booking extends AbstractStructBase
     /**
      * Set transfer value
      * @param string $transfer
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setTransfer(?string $transfer = null): self
     {
@@ -4117,7 +4117,7 @@ class Booking extends AbstractStructBase
     /**
      * Set settlement_type value
      * @param string $settlement_type
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setSettlement_type(?string $settlement_type = null): self
     {
@@ -4140,7 +4140,7 @@ class Booking extends AbstractStructBase
     /**
      * Set optionPeriod value
      * @param int $optionPeriod
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setOptionPeriod(?int $optionPeriod = null): self
     {
@@ -4163,7 +4163,7 @@ class Booking extends AbstractStructBase
     /**
      * Set serviceDescription value
      * @param string $serviceDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setServiceDescription(?string $serviceDescription = null): self
     {
@@ -4186,7 +4186,7 @@ class Booking extends AbstractStructBase
     /**
      * Set accomodationCode value
      * @param string $accomodationCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setAccomodationCode(?string $accomodationCode = null): self
     {
@@ -4209,7 +4209,7 @@ class Booking extends AbstractStructBase
     /**
      * Set accomodationDescription value
      * @param string $accomodationDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setAccomodationDescription(?string $accomodationDescription = null): self
     {
@@ -4232,7 +4232,7 @@ class Booking extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -4259,7 +4259,7 @@ class Booking extends AbstractStructBase
     /**
      * Set departureDescription value
      * @param string $departureDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setDepartureDescription(?string $departureDescription = null): self
     {
@@ -4282,7 +4282,7 @@ class Booking extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -4309,7 +4309,7 @@ class Booking extends AbstractStructBase
     /**
      * Set destinationDescription value
      * @param string $destinationDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setDestinationDescription(?string $destinationDescription = null): self
     {
@@ -4332,7 +4332,7 @@ class Booking extends AbstractStructBase
     /**
      * Set returnDepartureCode value
      * @param string $returnDepartureCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturnDepartureCode(?string $returnDepartureCode = null): self
     {
@@ -4359,7 +4359,7 @@ class Booking extends AbstractStructBase
     /**
      * Set returnDepartureDescription value
      * @param string $returnDepartureDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturnDepartureDescription(?string $returnDepartureDescription = null): self
     {
@@ -4382,7 +4382,7 @@ class Booking extends AbstractStructBase
     /**
      * Set returnDestinationCode value
      * @param string $returnDestinationCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturnDestinationCode(?string $returnDestinationCode = null): self
     {
@@ -4409,7 +4409,7 @@ class Booking extends AbstractStructBase
     /**
      * Set returnDestinationDescription value
      * @param string $returnDestinationDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturnDestinationDescription(?string $returnDestinationDescription = null): self
     {
@@ -4432,7 +4432,7 @@ class Booking extends AbstractStructBase
     /**
      * Set returnCode value
      * @param string $returnCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturnCode(?string $returnCode = null): self
     {
@@ -4455,7 +4455,7 @@ class Booking extends AbstractStructBase
     /**
      * Set returnDescription value
      * @param string $returnDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturnDescription(?string $returnDescription = null): self
     {
@@ -4478,7 +4478,7 @@ class Booking extends AbstractStructBase
     /**
      * Set cateringDescription value
      * @param string $cateringDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCateringDescription(?string $cateringDescription = null): self
     {
@@ -4501,7 +4501,7 @@ class Booking extends AbstractStructBase
     /**
      * Set roomDescription value
      * @param string $roomDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setRoomDescription(?string $roomDescription = null): self
     {
@@ -4524,7 +4524,7 @@ class Booking extends AbstractStructBase
     /**
      * Set insuranceDescription value
      * @param string $insuranceDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setInsuranceDescription(?string $insuranceDescription = null): self
     {
@@ -4547,7 +4547,7 @@ class Booking extends AbstractStructBase
     /**
      * Set locationDescription value
      * @param string $locationDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setLocationDescription(?string $locationDescription = null): self
     {
@@ -4570,7 +4570,7 @@ class Booking extends AbstractStructBase
     /**
      * Set countryDescription value
      * @param string $countryDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCountryDescription(?string $countryDescription = null): self
     {
@@ -4593,7 +4593,7 @@ class Booking extends AbstractStructBase
     /**
      * Set sourceExtId value
      * @param string $sourceExtId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setSourceExtId(?string $sourceExtId = null): self
     {
@@ -4616,7 +4616,7 @@ class Booking extends AbstractStructBase
     /**
      * Set sourceExtSystem value
      * @param string $sourceExtSystem
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setSourceExtSystem(?string $sourceExtSystem = null): self
     {
@@ -4639,7 +4639,7 @@ class Booking extends AbstractStructBase
     /**
      * Set flightNo value
      * @param string $flightNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setFlightNo(?string $flightNo = null): self
     {
@@ -4662,7 +4662,7 @@ class Booking extends AbstractStructBase
     /**
      * Set returnCarrier value
      * @param string $returnCarrier
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturnCarrier(?string $returnCarrier = null): self
     {
@@ -4685,7 +4685,7 @@ class Booking extends AbstractStructBase
     /**
      * Set returnFlightNo value
      * @param string $returnFlightNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturnFlightNo(?string $returnFlightNo = null): self
     {
@@ -4699,7 +4699,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get genericService value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType[]
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType[]
      */
     public function getGenericService(): ?array
     {
@@ -4720,12 +4720,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingGenericServiceItem) {
             // validation for constraint: itemType
-            if (!$bookingGenericServiceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType) {
+            if (!$bookingGenericServiceItem instanceof \Pggns\MidocoApi\Booking\StructType\GenericServiceType) {
                 $invalidValues[] = is_object($bookingGenericServiceItem) ? get_class($bookingGenericServiceItem) : sprintf('%s(%s)', gettype($bookingGenericServiceItem), var_export($bookingGenericServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The genericService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The genericService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\GenericServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -4734,8 +4734,8 @@ class Booking extends AbstractStructBase
     /**
      * Set genericService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType[] $genericService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\GenericServiceType[] $genericService
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setGenericService(?array $genericService = null): self
     {
@@ -4750,14 +4750,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to genericService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\GenericServiceType $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToGenericService(\Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType $item): self
+    public function addToGenericService(\Pggns\MidocoApi\Booking\StructType\GenericServiceType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType) {
-            throw new InvalidArgumentException(sprintf('The genericService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\GenericServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\GenericServiceType) {
+            throw new InvalidArgumentException(sprintf('The genericService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\GenericServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->genericService[] = $item;
         
@@ -4765,7 +4765,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get carService value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CarServiceType[]
+     * @return \Pggns\MidocoApi\Booking\StructType\CarServiceType[]
      */
     public function getCarService(): ?array
     {
@@ -4786,12 +4786,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingCarServiceItem) {
             // validation for constraint: itemType
-            if (!$bookingCarServiceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\CarServiceType) {
+            if (!$bookingCarServiceItem instanceof \Pggns\MidocoApi\Booking\StructType\CarServiceType) {
                 $invalidValues[] = is_object($bookingCarServiceItem) ? get_class($bookingCarServiceItem) : sprintf('%s(%s)', gettype($bookingCarServiceItem), var_export($bookingCarServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The carService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\CarServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The carService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\CarServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -4800,8 +4800,8 @@ class Booking extends AbstractStructBase
     /**
      * Set carService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CarServiceType[] $carService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\CarServiceType[] $carService
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCarService(?array $carService = null): self
     {
@@ -4816,14 +4816,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to carService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CarServiceType $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\CarServiceType $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToCarService(\Pggns\MidocoApi\Api\Booking\StructType\CarServiceType $item): self
+    public function addToCarService(\Pggns\MidocoApi\Booking\StructType\CarServiceType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\CarServiceType) {
-            throw new InvalidArgumentException(sprintf('The carService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\CarServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\CarServiceType) {
+            throw new InvalidArgumentException(sprintf('The carService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\CarServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->carService[] = $item;
         
@@ -4831,7 +4831,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get flightService value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType[]
+     * @return \Pggns\MidocoApi\Booking\StructType\FlightServiceType[]
      */
     public function getFlightService(): ?array
     {
@@ -4852,12 +4852,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingFlightServiceItem) {
             // validation for constraint: itemType
-            if (!$bookingFlightServiceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType) {
+            if (!$bookingFlightServiceItem instanceof \Pggns\MidocoApi\Booking\StructType\FlightServiceType) {
                 $invalidValues[] = is_object($bookingFlightServiceItem) ? get_class($bookingFlightServiceItem) : sprintf('%s(%s)', gettype($bookingFlightServiceItem), var_export($bookingFlightServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The flightService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The flightService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\FlightServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -4866,8 +4866,8 @@ class Booking extends AbstractStructBase
     /**
      * Set flightService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType[] $flightService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\FlightServiceType[] $flightService
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setFlightService(?array $flightService = null): self
     {
@@ -4882,14 +4882,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to flightService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\FlightServiceType $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToFlightService(\Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType $item): self
+    public function addToFlightService(\Pggns\MidocoApi\Booking\StructType\FlightServiceType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType) {
-            throw new InvalidArgumentException(sprintf('The flightService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\FlightServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\FlightServiceType) {
+            throw new InvalidArgumentException(sprintf('The flightService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\FlightServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->flightService[] = $item;
         
@@ -4897,7 +4897,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get accomodationService value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AccomodationServiceType[]
+     * @return \Pggns\MidocoApi\Booking\StructType\AccomodationServiceType[]
      */
     public function getAccomodationService(): ?array
     {
@@ -4918,12 +4918,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingAccomodationServiceItem) {
             // validation for constraint: itemType
-            if (!$bookingAccomodationServiceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\AccomodationServiceType) {
+            if (!$bookingAccomodationServiceItem instanceof \Pggns\MidocoApi\Booking\StructType\AccomodationServiceType) {
                 $invalidValues[] = is_object($bookingAccomodationServiceItem) ? get_class($bookingAccomodationServiceItem) : sprintf('%s(%s)', gettype($bookingAccomodationServiceItem), var_export($bookingAccomodationServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The accomodationService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\AccomodationServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The accomodationService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\AccomodationServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -4932,8 +4932,8 @@ class Booking extends AbstractStructBase
     /**
      * Set accomodationService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AccomodationServiceType[] $accomodationService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\AccomodationServiceType[] $accomodationService
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setAccomodationService(?array $accomodationService = null): self
     {
@@ -4948,14 +4948,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to accomodationService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\AccomodationServiceType $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\AccomodationServiceType $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToAccomodationService(\Pggns\MidocoApi\Api\Booking\StructType\AccomodationServiceType $item): self
+    public function addToAccomodationService(\Pggns\MidocoApi\Booking\StructType\AccomodationServiceType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\AccomodationServiceType) {
-            throw new InvalidArgumentException(sprintf('The accomodationService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\AccomodationServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\AccomodationServiceType) {
+            throw new InvalidArgumentException(sprintf('The accomodationService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\AccomodationServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->accomodationService[] = $item;
         
@@ -4963,7 +4963,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get insuranceService value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType[]
+     * @return \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType[]
      */
     public function getInsuranceService(): ?array
     {
@@ -4984,12 +4984,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingInsuranceServiceItem) {
             // validation for constraint: itemType
-            if (!$bookingInsuranceServiceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType) {
+            if (!$bookingInsuranceServiceItem instanceof \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType) {
                 $invalidValues[] = is_object($bookingInsuranceServiceItem) ? get_class($bookingInsuranceServiceItem) : sprintf('%s(%s)', gettype($bookingInsuranceServiceItem), var_export($bookingInsuranceServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The insuranceService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The insuranceService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -4998,8 +4998,8 @@ class Booking extends AbstractStructBase
     /**
      * Set insuranceService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType[] $insuranceService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType[] $insuranceService
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setInsuranceService(?array $insuranceService = null): self
     {
@@ -5014,14 +5014,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to insuranceService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToInsuranceService(\Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType $item): self
+    public function addToInsuranceService(\Pggns\MidocoApi\Booking\StructType\InsuranceServiceType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType) {
-            throw new InvalidArgumentException(sprintf('The insuranceService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\InsuranceServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType) {
+            throw new InvalidArgumentException(sprintf('The insuranceService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\InsuranceServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->insuranceService[] = $item;
         
@@ -5029,7 +5029,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get transferService value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TransferServiceType[]
+     * @return \Pggns\MidocoApi\Booking\StructType\TransferServiceType[]
      */
     public function getTransferService(): ?array
     {
@@ -5050,12 +5050,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingTransferServiceItem) {
             // validation for constraint: itemType
-            if (!$bookingTransferServiceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\TransferServiceType) {
+            if (!$bookingTransferServiceItem instanceof \Pggns\MidocoApi\Booking\StructType\TransferServiceType) {
                 $invalidValues[] = is_object($bookingTransferServiceItem) ? get_class($bookingTransferServiceItem) : sprintf('%s(%s)', gettype($bookingTransferServiceItem), var_export($bookingTransferServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The transferService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\TransferServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The transferService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\TransferServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -5064,8 +5064,8 @@ class Booking extends AbstractStructBase
     /**
      * Set transferService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\TransferServiceType[] $transferService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\TransferServiceType[] $transferService
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setTransferService(?array $transferService = null): self
     {
@@ -5080,14 +5080,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to transferService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\TransferServiceType $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\TransferServiceType $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToTransferService(\Pggns\MidocoApi\Api\Booking\StructType\TransferServiceType $item): self
+    public function addToTransferService(\Pggns\MidocoApi\Booking\StructType\TransferServiceType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\TransferServiceType) {
-            throw new InvalidArgumentException(sprintf('The transferService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\TransferServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\TransferServiceType) {
+            throw new InvalidArgumentException(sprintf('The transferService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\TransferServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->transferService[] = $item;
         
@@ -5095,7 +5095,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get busService value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\BusServiceType[]
+     * @return \Pggns\MidocoApi\Booking\StructType\BusServiceType[]
      */
     public function getBusService(): ?array
     {
@@ -5116,12 +5116,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingBusServiceItem) {
             // validation for constraint: itemType
-            if (!$bookingBusServiceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\BusServiceType) {
+            if (!$bookingBusServiceItem instanceof \Pggns\MidocoApi\Booking\StructType\BusServiceType) {
                 $invalidValues[] = is_object($bookingBusServiceItem) ? get_class($bookingBusServiceItem) : sprintf('%s(%s)', gettype($bookingBusServiceItem), var_export($bookingBusServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The busService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\BusServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The busService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\BusServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -5130,8 +5130,8 @@ class Booking extends AbstractStructBase
     /**
      * Set busService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\BusServiceType[] $busService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\BusServiceType[] $busService
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setBusService(?array $busService = null): self
     {
@@ -5146,14 +5146,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to busService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\BusServiceType $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\BusServiceType $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToBusService(\Pggns\MidocoApi\Api\Booking\StructType\BusServiceType $item): self
+    public function addToBusService(\Pggns\MidocoApi\Booking\StructType\BusServiceType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\BusServiceType) {
-            throw new InvalidArgumentException(sprintf('The busService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\BusServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\BusServiceType) {
+            throw new InvalidArgumentException(sprintf('The busService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\BusServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->busService[] = $item;
         
@@ -5161,7 +5161,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get railService value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType[]
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType[]
      */
     public function getRailService(): ?array
     {
@@ -5182,12 +5182,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingRailServiceItem) {
             // validation for constraint: itemType
-            if (!$bookingRailServiceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType) {
+            if (!$bookingRailServiceItem instanceof \Pggns\MidocoApi\Booking\StructType\RailServiceType) {
                 $invalidValues[] = is_object($bookingRailServiceItem) ? get_class($bookingRailServiceItem) : sprintf('%s(%s)', gettype($bookingRailServiceItem), var_export($bookingRailServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The railService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The railService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\RailServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -5196,8 +5196,8 @@ class Booking extends AbstractStructBase
     /**
      * Set railService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType[] $railService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\RailServiceType[] $railService
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setRailService(?array $railService = null): self
     {
@@ -5212,14 +5212,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to railService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\RailServiceType $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToRailService(\Pggns\MidocoApi\Api\Booking\StructType\RailServiceType $item): self
+    public function addToRailService(\Pggns\MidocoApi\Booking\StructType\RailServiceType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType) {
-            throw new InvalidArgumentException(sprintf('The railService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\RailServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\RailServiceType) {
+            throw new InvalidArgumentException(sprintf('The railService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\RailServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->railService[] = $item;
         
@@ -5227,7 +5227,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get cruiseService value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType[]
+     * @return \Pggns\MidocoApi\Booking\StructType\CruiseServiceType[]
      */
     public function getCruiseService(): ?array
     {
@@ -5248,12 +5248,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingCruiseServiceItem) {
             // validation for constraint: itemType
-            if (!$bookingCruiseServiceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType) {
+            if (!$bookingCruiseServiceItem instanceof \Pggns\MidocoApi\Booking\StructType\CruiseServiceType) {
                 $invalidValues[] = is_object($bookingCruiseServiceItem) ? get_class($bookingCruiseServiceItem) : sprintf('%s(%s)', gettype($bookingCruiseServiceItem), var_export($bookingCruiseServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The cruiseService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The cruiseService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\CruiseServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -5262,8 +5262,8 @@ class Booking extends AbstractStructBase
     /**
      * Set cruiseService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType[] $cruiseService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\CruiseServiceType[] $cruiseService
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCruiseService(?array $cruiseService = null): self
     {
@@ -5278,14 +5278,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to cruiseService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\CruiseServiceType $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToCruiseService(\Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType $item): self
+    public function addToCruiseService(\Pggns\MidocoApi\Booking\StructType\CruiseServiceType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType) {
-            throw new InvalidArgumentException(sprintf('The cruiseService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\CruiseServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\CruiseServiceType) {
+            throw new InvalidArgumentException(sprintf('The cruiseService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\CruiseServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->cruiseService[] = $item;
         
@@ -5293,7 +5293,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get eventService value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\EventServiceType[]
+     * @return \Pggns\MidocoApi\Booking\StructType\EventServiceType[]
      */
     public function getEventService(): ?array
     {
@@ -5314,12 +5314,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingEventServiceItem) {
             // validation for constraint: itemType
-            if (!$bookingEventServiceItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\EventServiceType) {
+            if (!$bookingEventServiceItem instanceof \Pggns\MidocoApi\Booking\StructType\EventServiceType) {
                 $invalidValues[] = is_object($bookingEventServiceItem) ? get_class($bookingEventServiceItem) : sprintf('%s(%s)', gettype($bookingEventServiceItem), var_export($bookingEventServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The eventService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\EventServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The eventService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\EventServiceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -5328,8 +5328,8 @@ class Booking extends AbstractStructBase
     /**
      * Set eventService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\EventServiceType[] $eventService
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\EventServiceType[] $eventService
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setEventService(?array $eventService = null): self
     {
@@ -5344,14 +5344,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to eventService value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\EventServiceType $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\EventServiceType $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToEventService(\Pggns\MidocoApi\Api\Booking\StructType\EventServiceType $item): self
+    public function addToEventService(\Pggns\MidocoApi\Booking\StructType\EventServiceType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\EventServiceType) {
-            throw new InvalidArgumentException(sprintf('The eventService property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\EventServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\EventServiceType) {
+            throw new InvalidArgumentException(sprintf('The eventService property can only contain items of type \Pggns\MidocoApi\Booking\StructType\EventServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->eventService[] = $item;
         
@@ -5359,7 +5359,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get ccAuthorisation value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CcAuthorisation[]
+     * @return \Pggns\MidocoApi\Booking\StructType\CcAuthorisation[]
      */
     public function getCcAuthorisation(): ?array
     {
@@ -5380,12 +5380,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingCcAuthorisationItem) {
             // validation for constraint: itemType
-            if (!$bookingCcAuthorisationItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\CcAuthorisation) {
+            if (!$bookingCcAuthorisationItem instanceof \Pggns\MidocoApi\Booking\StructType\CcAuthorisation) {
                 $invalidValues[] = is_object($bookingCcAuthorisationItem) ? get_class($bookingCcAuthorisationItem) : sprintf('%s(%s)', gettype($bookingCcAuthorisationItem), var_export($bookingCcAuthorisationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ccAuthorisation property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\CcAuthorisation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ccAuthorisation property can only contain items of type \Pggns\MidocoApi\Booking\StructType\CcAuthorisation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -5394,8 +5394,8 @@ class Booking extends AbstractStructBase
     /**
      * Set ccAuthorisation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CcAuthorisation[] $ccAuthorisation
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\CcAuthorisation[] $ccAuthorisation
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCcAuthorisation(?array $ccAuthorisation = null): self
     {
@@ -5410,14 +5410,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to ccAuthorisation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\CcAuthorisation $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\CcAuthorisation $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToCcAuthorisation(\Pggns\MidocoApi\Api\Booking\StructType\CcAuthorisation $item): self
+    public function addToCcAuthorisation(\Pggns\MidocoApi\Booking\StructType\CcAuthorisation $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\CcAuthorisation) {
-            throw new InvalidArgumentException(sprintf('The ccAuthorisation property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\CcAuthorisation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\CcAuthorisation) {
+            throw new InvalidArgumentException(sprintf('The ccAuthorisation property can only contain items of type \Pggns\MidocoApi\Booking\StructType\CcAuthorisation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ccAuthorisation[] = $item;
         
@@ -5425,7 +5425,7 @@ class Booking extends AbstractStructBase
     }
     /**
      * Get midocoCcAuthorisation value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcAuthorisation[]
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoCcAuthorisation[]
      */
     public function getMidocoCcAuthorisation(): ?array
     {
@@ -5446,12 +5446,12 @@ class Booking extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bookingMidocoCcAuthorisationItem) {
             // validation for constraint: itemType
-            if (!$bookingMidocoCcAuthorisationItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcAuthorisation) {
+            if (!$bookingMidocoCcAuthorisationItem instanceof \Pggns\MidocoApi\Booking\StructType\MidocoCcAuthorisation) {
                 $invalidValues[] = is_object($bookingMidocoCcAuthorisationItem) ? get_class($bookingMidocoCcAuthorisationItem) : sprintf('%s(%s)', gettype($bookingMidocoCcAuthorisationItem), var_export($bookingMidocoCcAuthorisationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The midocoCcAuthorisation property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcAuthorisation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The midocoCcAuthorisation property can only contain items of type \Pggns\MidocoApi\Booking\StructType\MidocoCcAuthorisation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -5460,8 +5460,8 @@ class Booking extends AbstractStructBase
     /**
      * Set midocoCcAuthorisation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcAuthorisation[] $midocoCcAuthorisation
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoCcAuthorisation[] $midocoCcAuthorisation
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setMidocoCcAuthorisation(?array $midocoCcAuthorisation = null): self
     {
@@ -5476,14 +5476,14 @@ class Booking extends AbstractStructBase
     /**
      * Add item to midocoCcAuthorisation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcAuthorisation $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoCcAuthorisation $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
-    public function addToMidocoCcAuthorisation(\Pggns\MidocoApi\Api\Booking\StructType\MidocoCcAuthorisation $item): self
+    public function addToMidocoCcAuthorisation(\Pggns\MidocoApi\Booking\StructType\MidocoCcAuthorisation $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcAuthorisation) {
-            throw new InvalidArgumentException(sprintf('The midocoCcAuthorisation property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\MidocoCcAuthorisation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\MidocoCcAuthorisation) {
+            throw new InvalidArgumentException(sprintf('The midocoCcAuthorisation property can only contain items of type \Pggns\MidocoApi\Booking\StructType\MidocoCcAuthorisation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->midocoCcAuthorisation[] = $item;
         
@@ -5500,7 +5500,7 @@ class Booking extends AbstractStructBase
     /**
      * Set departureTime value
      * @param string $departureTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setDepartureTime(?string $departureTime = null): self
     {
@@ -5527,7 +5527,7 @@ class Booking extends AbstractStructBase
     /**
      * Set arrivalTime value
      * @param string $arrivalTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setArrivalTime(?string $arrivalTime = null): self
     {
@@ -5554,7 +5554,7 @@ class Booking extends AbstractStructBase
     /**
      * Set returnDepartureTime value
      * @param string $returnDepartureTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturnDepartureTime(?string $returnDepartureTime = null): self
     {
@@ -5581,7 +5581,7 @@ class Booking extends AbstractStructBase
     /**
      * Set returnArrivalTime value
      * @param string $returnArrivalTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReturnArrivalTime(?string $returnArrivalTime = null): self
     {
@@ -5608,7 +5608,7 @@ class Booking extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setTravelNo(?string $travelNo = null): self
     {
@@ -5631,7 +5631,7 @@ class Booking extends AbstractStructBase
     /**
      * Set travelNoDescription value
      * @param string $travelNoDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setTravelNoDescription(?string $travelNoDescription = null): self
     {
@@ -5654,7 +5654,7 @@ class Booking extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setProductType(?string $productType = null): self
     {
@@ -5677,7 +5677,7 @@ class Booking extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -5700,7 +5700,7 @@ class Booking extends AbstractStructBase
     /**
      * Set bookingVersion value
      * @param string $bookingVersion
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setBookingVersion(?string $bookingVersion = null): self
     {
@@ -5723,7 +5723,7 @@ class Booking extends AbstractStructBase
     /**
      * Set referenceBookingId value
      * @param string $referenceBookingId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReferenceBookingId(?string $referenceBookingId = null): self
     {
@@ -5746,7 +5746,7 @@ class Booking extends AbstractStructBase
     /**
      * Set referenceType value
      * @param string $referenceType
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setReferenceType(?string $referenceType = null): self
     {
@@ -5769,7 +5769,7 @@ class Booking extends AbstractStructBase
     /**
      * Set priceRef value
      * @param int $priceRef
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setPriceRef(?int $priceRef = null): self
     {
@@ -5792,7 +5792,7 @@ class Booking extends AbstractStructBase
     /**
      * Set packageRef value
      * @param int $packageRef
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setPackageRef(?int $packageRef = null): self
     {
@@ -5815,7 +5815,7 @@ class Booking extends AbstractStructBase
     /**
      * Set preventPrinting value
      * @param bool $preventPrinting
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setPreventPrinting(?bool $preventPrinting = null): self
     {
@@ -5838,7 +5838,7 @@ class Booking extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -5861,7 +5861,7 @@ class Booking extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -5883,17 +5883,17 @@ class Booking extends AbstractStructBase
     }
     /**
      * Set sellingMode value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\BookingSellingModeType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\BookingSellingModeType::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\BookingSellingModeType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\BookingSellingModeType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $sellingMode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setSellingMode(?string $sellingMode = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\BookingSellingModeType::valueIsValid($sellingMode)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\BookingSellingModeType', is_array($sellingMode) ? implode(', ', $sellingMode) : var_export($sellingMode, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\BookingSellingModeType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\BookingSellingModeType::valueIsValid($sellingMode)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\BookingSellingModeType', is_array($sellingMode) ? implode(', ', $sellingMode) : var_export($sellingMode, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\BookingSellingModeType::getValidValues())), __LINE__);
         }
         $this->sellingMode = $sellingMode;
         
@@ -5910,7 +5910,7 @@ class Booking extends AbstractStructBase
     /**
      * Set confirmationGroup value
      * @param string $confirmationGroup
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setConfirmationGroup(?string $confirmationGroup = null): self
     {
@@ -5933,7 +5933,7 @@ class Booking extends AbstractStructBase
     /**
      * Set mobilityIndicator value
      * @param bool $mobilityIndicator
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setMobilityIndicator(?bool $mobilityIndicator = null): self
     {
@@ -5956,7 +5956,7 @@ class Booking extends AbstractStructBase
     /**
      * Set contractTime value
      * @param string $contractTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setContractTime(?string $contractTime = null): self
     {
@@ -5979,7 +5979,7 @@ class Booking extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Booking
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking
      */
     public function setSettlementType(?string $settlementType = null): self
     {

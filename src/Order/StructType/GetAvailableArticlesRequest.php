@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetAvailableArticlesRequest extends AbstractStructBase
      * The MidocoArticle
      * Meta information extracted from the WSDL
      * - ref: MidocoArticle
-     * @var \Pggns\MidocoApi\Api\Order\StructType\ArticleDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\ArticleDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\ArticleDTO $MidocoArticle = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\ArticleDTO $MidocoArticle = null;
     /**
      * The startDate
      * Meta information extracted from the WSDL
@@ -39,11 +39,11 @@ class GetAvailableArticlesRequest extends AbstractStructBase
      * @uses GetAvailableArticlesRequest::setMidocoArticle()
      * @uses GetAvailableArticlesRequest::setStartDate()
      * @uses GetAvailableArticlesRequest::setEndDate()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ArticleDTO $midocoArticle
+     * @param \Pggns\MidocoApi\Order\StructType\ArticleDTO $midocoArticle
      * @param string $startDate
      * @param string $endDate
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\ArticleDTO $midocoArticle = null, ?string $startDate = null, ?string $endDate = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\ArticleDTO $midocoArticle = null, ?string $startDate = null, ?string $endDate = null)
     {
         $this
             ->setMidocoArticle($midocoArticle)
@@ -52,18 +52,18 @@ class GetAvailableArticlesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoArticle value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ArticleDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\ArticleDTO|null
      */
-    public function getMidocoArticle(): ?\Pggns\MidocoApi\Api\Order\StructType\ArticleDTO
+    public function getMidocoArticle(): ?\Pggns\MidocoApi\Order\StructType\ArticleDTO
     {
         return $this->MidocoArticle;
     }
     /**
      * Set MidocoArticle value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ArticleDTO $midocoArticle
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAvailableArticlesRequest
+     * @param \Pggns\MidocoApi\Order\StructType\ArticleDTO $midocoArticle
+     * @return \Pggns\MidocoApi\Order\StructType\GetAvailableArticlesRequest
      */
-    public function setMidocoArticle(?\Pggns\MidocoApi\Api\Order\StructType\ArticleDTO $midocoArticle = null): self
+    public function setMidocoArticle(?\Pggns\MidocoApi\Order\StructType\ArticleDTO $midocoArticle = null): self
     {
         $this->MidocoArticle = $midocoArticle;
         
@@ -80,7 +80,7 @@ class GetAvailableArticlesRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAvailableArticlesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAvailableArticlesRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -103,7 +103,7 @@ class GetAvailableArticlesRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAvailableArticlesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAvailableArticlesRequest
      */
     public function setEndDate(?string $endDate = null): self
     {

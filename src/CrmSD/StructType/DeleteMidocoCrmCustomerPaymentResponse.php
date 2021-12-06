@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteMidocoCrmCustomerPaymentResponse extends AbstractStructBase
     /**
      * Set result value
      * @param bool $result
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteMidocoCrmCustomerPaymentResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteMidocoCrmCustomerPaymentResponse
      */
     public function setResult(?bool $result = null): self
     {

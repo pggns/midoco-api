@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class MidocoProperties extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoProperty
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoProperty[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoProperty[]
      */
     protected ?array $MidocoProperty = null;
     /**
      * Constructor method for MidocoProperties
      * @uses MidocoProperties::setMidocoProperty()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoProperty[] $midocoProperty
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoProperty[] $midocoProperty
      */
     public function __construct(?array $midocoProperty = null)
     {
@@ -34,7 +34,7 @@ class MidocoProperties extends AbstractStructBase
     }
     /**
      * Get MidocoProperty value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoProperty[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoProperty[]
      */
     public function getMidocoProperty(): ?array
     {
@@ -55,12 +55,12 @@ class MidocoProperties extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoPropertiesMidocoPropertyItem) {
             // validation for constraint: itemType
-            if (!$midocoPropertiesMidocoPropertyItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoProperty) {
+            if (!$midocoPropertiesMidocoPropertyItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoProperty) {
                 $invalidValues[] = is_object($midocoPropertiesMidocoPropertyItem) ? get_class($midocoPropertiesMidocoPropertyItem) : sprintf('%s(%s)', gettype($midocoPropertiesMidocoPropertyItem), var_export($midocoPropertiesMidocoPropertyItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoProperty property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoProperty, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoProperty property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoProperty, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class MidocoProperties extends AbstractStructBase
     /**
      * Set MidocoProperty value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoProperty[] $midocoProperty
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoProperties
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoProperty[] $midocoProperty
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoProperties
      */
     public function setMidocoProperty(?array $midocoProperty = null): self
     {
@@ -85,14 +85,14 @@ class MidocoProperties extends AbstractStructBase
     /**
      * Add item to MidocoProperty value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoProperty $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoProperties
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoProperty $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoProperties
      */
-    public function addToMidocoProperty(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoProperty $item): self
+    public function addToMidocoProperty(\Pggns\MidocoApi\Orderlists\StructType\MidocoProperty $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoProperty) {
-            throw new InvalidArgumentException(sprintf('The MidocoProperty property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoProperty, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoProperty) {
+            throw new InvalidArgumentException(sprintf('The MidocoProperty property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoProperty, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoProperty[] = $item;
         

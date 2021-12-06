@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class PassengerInfosFlightDTO extends AbstractStructBase
     /**
      * Set baggageAllowance value
      * @param string $baggageAllowance
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PassengerInfosFlightDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PassengerInfosFlightDTO
      */
     public function setBaggageAllowance(?string $baggageAllowance = null): self
     {
@@ -150,7 +150,7 @@ class PassengerInfosFlightDTO extends AbstractStructBase
     /**
      * Set frequentFlyerAirline value
      * @param string $frequentFlyerAirline
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PassengerInfosFlightDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PassengerInfosFlightDTO
      */
     public function setFrequentFlyerAirline(?string $frequentFlyerAirline = null): self
     {
@@ -173,7 +173,7 @@ class PassengerInfosFlightDTO extends AbstractStructBase
     /**
      * Set frequentFlyerNo value
      * @param string $frequentFlyerNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PassengerInfosFlightDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PassengerInfosFlightDTO
      */
     public function setFrequentFlyerNo(?string $frequentFlyerNo = null): self
     {
@@ -196,7 +196,7 @@ class PassengerInfosFlightDTO extends AbstractStructBase
     /**
      * Set frequentFlyerType value
      * @param string $frequentFlyerType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PassengerInfosFlightDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PassengerInfosFlightDTO
      */
     public function setFrequentFlyerType(?string $frequentFlyerType = null): self
     {
@@ -219,7 +219,7 @@ class PassengerInfosFlightDTO extends AbstractStructBase
     /**
      * Set identityCardNo value
      * @param string $identityCardNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PassengerInfosFlightDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PassengerInfosFlightDTO
      */
     public function setIdentityCardNo(?string $identityCardNo = null): self
     {
@@ -242,7 +242,7 @@ class PassengerInfosFlightDTO extends AbstractStructBase
     /**
      * Set identityCardRequired value
      * @param bool $identityCardRequired
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PassengerInfosFlightDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PassengerInfosFlightDTO
      */
     public function setIdentityCardRequired(?bool $identityCardRequired = null): self
     {
@@ -265,7 +265,7 @@ class PassengerInfosFlightDTO extends AbstractStructBase
     /**
      * Set identityCardType value
      * @param string $identityCardType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PassengerInfosFlightDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PassengerInfosFlightDTO
      */
     public function setIdentityCardType(?string $identityCardType = null): self
     {
@@ -288,7 +288,7 @@ class PassengerInfosFlightDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PassengerInfosFlightDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PassengerInfosFlightDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -311,7 +311,7 @@ class PassengerInfosFlightDTO extends AbstractStructBase
     /**
      * Set passengerKey value
      * @param string $passengerKey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PassengerInfosFlightDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PassengerInfosFlightDTO
      */
     public function setPassengerKey(?string $passengerKey = null): self
     {
@@ -334,7 +334,7 @@ class PassengerInfosFlightDTO extends AbstractStructBase
     /**
      * Set positionNo value
      * @param int $positionNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PassengerInfosFlightDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PassengerInfosFlightDTO
      */
     public function setPositionNo(?int $positionNo = null): self
     {
@@ -357,7 +357,7 @@ class PassengerInfosFlightDTO extends AbstractStructBase
     /**
      * Set preventPrinting value
      * @param bool $preventPrinting
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PassengerInfosFlightDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PassengerInfosFlightDTO
      */
     public function setPreventPrinting(?bool $preventPrinting = null): self
     {
@@ -380,7 +380,7 @@ class PassengerInfosFlightDTO extends AbstractStructBase
     /**
      * Set ticketMail value
      * @param bool $ticketMail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PassengerInfosFlightDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PassengerInfosFlightDTO
      */
     public function setTicketMail(?bool $ticketMail = null): self
     {

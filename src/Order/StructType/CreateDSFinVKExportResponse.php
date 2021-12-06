@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CreateDSFinVKExportResponse extends AbstractStructBase
     /**
      * Set exportFileName value
      * @param string $exportFileName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportResponse
      */
     public function setExportFileName(?string $exportFileName = null): self
     {
@@ -86,7 +86,7 @@ class CreateDSFinVKExportResponse extends AbstractStructBase
     /**
      * Set exportFileSize value
      * @param int $exportFileSize
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportResponse
      */
     public function setExportFileSize(?int $exportFileSize = null): self
     {
@@ -109,7 +109,7 @@ class CreateDSFinVKExportResponse extends AbstractStructBase
     /**
      * Set exportFile value
      * @param string $exportFile
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportResponse
      */
     public function setExportFile(?string $exportFile = null): self
     {
@@ -132,7 +132,7 @@ class CreateDSFinVKExportResponse extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportResponse
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

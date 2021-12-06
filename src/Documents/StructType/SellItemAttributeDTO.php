@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class SellItemAttributeDTO extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemAttributeDTO
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -118,7 +118,7 @@ class SellItemAttributeDTO extends AbstractStructBase
     /**
      * Set attributeValue value
      * @param string $attributeValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemAttributeDTO
      */
     public function setAttributeValue(?string $attributeValue = null): self
     {
@@ -141,7 +141,7 @@ class SellItemAttributeDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemAttributeDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -164,7 +164,7 @@ class SellItemAttributeDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemAttributeDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -187,7 +187,7 @@ class SellItemAttributeDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemAttributeDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -210,7 +210,7 @@ class SellItemAttributeDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemAttributeDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -233,7 +233,7 @@ class SellItemAttributeDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemAttributeDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -256,7 +256,7 @@ class SellItemAttributeDTO extends AbstractStructBase
     /**
      * Set preventPrinting value
      * @param bool $preventPrinting
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemAttributeDTO
      */
     public function setPreventPrinting(?bool $preventPrinting = null): self
     {

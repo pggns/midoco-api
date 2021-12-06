@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class SaveMidocoFeeTypeRequest extends AbstractStructBase
      * The MidocoFeeType
      * Meta information extracted from the WSDL
      * - ref: MidocoFeeType
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoFeeType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeType $MidocoFeeType = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoFeeType $MidocoFeeType = null;
     /**
      * Constructor method for SaveMidocoFeeTypeRequest
      * @uses SaveMidocoFeeTypeRequest::setMidocoFeeType()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeType $midocoFeeType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeType $midocoFeeType
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeType $midocoFeeType = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoFeeType $midocoFeeType = null)
     {
         $this
             ->setMidocoFeeType($midocoFeeType);
     }
     /**
      * Get MidocoFeeType value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeType|null
      */
-    public function getMidocoFeeType(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeType
+    public function getMidocoFeeType(): ?\Pggns\MidocoApi\Order\StructType\MidocoFeeType
     {
         return $this->MidocoFeeType;
     }
     /**
      * Set MidocoFeeType value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeType $midocoFeeType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMidocoFeeTypeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFeeType $midocoFeeType
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMidocoFeeTypeRequest
      */
-    public function setMidocoFeeType(?\Pggns\MidocoApi\Api\Order\StructType\MidocoFeeType $midocoFeeType = null): self
+    public function setMidocoFeeType(?\Pggns\MidocoApi\Order\StructType\MidocoFeeType $midocoFeeType = null): self
     {
         $this->MidocoFeeType = $midocoFeeType;
         

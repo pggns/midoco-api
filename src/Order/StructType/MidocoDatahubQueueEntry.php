@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoDatahubQueueEntry extends DatahubQueueDTO
      * The MidocoDatahubQueueBookingReference
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueBookingReference[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueBookingReference[]
      */
     protected ?array $MidocoDatahubQueueBookingReference = null;
     /**
@@ -41,7 +41,7 @@ class MidocoDatahubQueueEntry extends DatahubQueueDTO
      * @uses MidocoDatahubQueueEntry::setMidocoDatahubQueueBookingReference()
      * @uses MidocoDatahubQueueEntry::setIsProcessing()
      * @uses MidocoDatahubQueueEntry::setOrderNo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueBookingReference[] $midocoDatahubQueueBookingReference
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueBookingReference[] $midocoDatahubQueueBookingReference
      * @param bool $isProcessing
      * @param int $orderNo
      */
@@ -54,7 +54,7 @@ class MidocoDatahubQueueEntry extends DatahubQueueDTO
     }
     /**
      * Get MidocoDatahubQueueBookingReference value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueBookingReference[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueBookingReference[]
      */
     public function getMidocoDatahubQueueBookingReference(): ?array
     {
@@ -75,12 +75,12 @@ class MidocoDatahubQueueEntry extends DatahubQueueDTO
         $invalidValues = [];
         foreach ($values as $midocoDatahubQueueEntryMidocoDatahubQueueBookingReferenceItem) {
             // validation for constraint: itemType
-            if (!$midocoDatahubQueueEntryMidocoDatahubQueueBookingReferenceItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueBookingReference) {
+            if (!$midocoDatahubQueueEntryMidocoDatahubQueueBookingReferenceItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueBookingReference) {
                 $invalidValues[] = is_object($midocoDatahubQueueEntryMidocoDatahubQueueBookingReferenceItem) ? get_class($midocoDatahubQueueEntryMidocoDatahubQueueBookingReferenceItem) : sprintf('%s(%s)', gettype($midocoDatahubQueueEntryMidocoDatahubQueueBookingReferenceItem), var_export($midocoDatahubQueueEntryMidocoDatahubQueueBookingReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDatahubQueueBookingReference property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueBookingReference, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDatahubQueueBookingReference property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueBookingReference, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -89,8 +89,8 @@ class MidocoDatahubQueueEntry extends DatahubQueueDTO
     /**
      * Set MidocoDatahubQueueBookingReference value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueBookingReference[] $midocoDatahubQueueBookingReference
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueEntry
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueBookingReference[] $midocoDatahubQueueBookingReference
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueEntry
      */
     public function setMidocoDatahubQueueBookingReference(?array $midocoDatahubQueueBookingReference = null): self
     {
@@ -105,14 +105,14 @@ class MidocoDatahubQueueEntry extends DatahubQueueDTO
     /**
      * Add item to MidocoDatahubQueueBookingReference value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueBookingReference $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueEntry
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueBookingReference $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueEntry
      */
-    public function addToMidocoDatahubQueueBookingReference(\Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueBookingReference $item): self
+    public function addToMidocoDatahubQueueBookingReference(\Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueBookingReference $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueBookingReference) {
-            throw new InvalidArgumentException(sprintf('The MidocoDatahubQueueBookingReference property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueBookingReference, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueBookingReference) {
+            throw new InvalidArgumentException(sprintf('The MidocoDatahubQueueBookingReference property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueBookingReference, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDatahubQueueBookingReference[] = $item;
         
@@ -129,7 +129,7 @@ class MidocoDatahubQueueEntry extends DatahubQueueDTO
     /**
      * Set isProcessing value
      * @param bool $isProcessing
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueEntry
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueEntry
      */
     public function setIsProcessing(?bool $isProcessing = null): self
     {
@@ -152,7 +152,7 @@ class MidocoDatahubQueueEntry extends DatahubQueueDTO
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDatahubQueueEntry
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDatahubQueueEntry
      */
     public function setOrderNo(?int $orderNo = null): self
     {

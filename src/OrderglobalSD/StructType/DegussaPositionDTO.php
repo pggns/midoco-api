@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -167,7 +167,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -190,7 +190,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -213,7 +213,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setCountry(?string $country = null): self
     {
@@ -236,7 +236,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -259,7 +259,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -282,7 +282,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set degussaLine value
      * @param string $degussaLine
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setDegussaLine(?string $degussaLine = null): self
     {
@@ -305,7 +305,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set degussaPositionId value
      * @param int $degussaPositionId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setDegussaPositionId(?int $degussaPositionId = null): self
     {
@@ -328,7 +328,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set degussaTransactionId value
      * @param int $degussaTransactionId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setDegussaTransactionId(?int $degussaTransactionId = null): self
     {
@@ -351,7 +351,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set degussaXmlLine value
      * @param string $degussaXmlLine
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setDegussaXmlLine(?string $degussaXmlLine = null): self
     {
@@ -374,7 +374,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -397,7 +397,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set exportTimestamp value
      * @param string $exportTimestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setExportTimestamp(?string $exportTimestamp = null): self
     {
@@ -420,7 +420,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set feeBookingId value
      * @param string $feeBookingId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setFeeBookingId(?string $feeBookingId = null): self
     {
@@ -443,7 +443,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set fileType value
      * @param string $fileType
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setFileType(?string $fileType = null): self
     {
@@ -466,7 +466,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -489,7 +489,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -512,7 +512,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set recordType value
      * @param string $recordType
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setRecordType(?string $recordType = null): self
     {
@@ -535,7 +535,7 @@ class DegussaPositionDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DegussaPositionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DegussaPositionDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class MidocoCrmCustomerPayment extends CrmCustomerPaymentDTO
      * Meta information extracted from the WSDL
      * - documentation: Data-structure providing all information needed to decide which format an e-invoice must have and where it should be routed.
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\CrmCustomerEinvoiceDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\CrmCustomerEinvoiceDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\CrmCustomerEinvoiceDTO $CustomerEInvoiceSetting = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\CrmCustomerEinvoiceDTO $CustomerEInvoiceSetting = null;
     /**
      * The assignedDebitor
      * @var string|null
@@ -72,7 +72,7 @@ class MidocoCrmCustomerPayment extends CrmCustomerPaymentDTO
      * @uses MidocoCrmCustomerPayment::setExistDebitCards()
      * @uses MidocoCrmCustomerPayment::setCurrency()
      * @uses MidocoCrmCustomerPayment::setVatType()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\CrmCustomerEinvoiceDTO $customerEInvoiceSetting
+     * @param \Pggns\MidocoApi\Documents\StructType\CrmCustomerEinvoiceDTO $customerEInvoiceSetting
      * @param string $assignedDebitor
      * @param string $assignedCreditor
      * @param string $diverseDebitor
@@ -82,7 +82,7 @@ class MidocoCrmCustomerPayment extends CrmCustomerPaymentDTO
      * @param string $currency
      * @param string $vatType
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\CrmCustomerEinvoiceDTO $customerEInvoiceSetting = null, ?string $assignedDebitor = null, ?string $assignedCreditor = null, ?string $diverseDebitor = null, ?bool $bankTransfer = null, ?bool $makeNewOrder = null, ?bool $existDebitCards = null, ?string $currency = null, ?string $vatType = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\CrmCustomerEinvoiceDTO $customerEInvoiceSetting = null, ?string $assignedDebitor = null, ?string $assignedCreditor = null, ?string $diverseDebitor = null, ?bool $bankTransfer = null, ?bool $makeNewOrder = null, ?bool $existDebitCards = null, ?string $currency = null, ?string $vatType = null)
     {
         $this
             ->setCustomerEInvoiceSetting($customerEInvoiceSetting)
@@ -97,18 +97,18 @@ class MidocoCrmCustomerPayment extends CrmCustomerPaymentDTO
     }
     /**
      * Get CustomerEInvoiceSetting value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\CrmCustomerEinvoiceDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\CrmCustomerEinvoiceDTO|null
      */
-    public function getCustomerEInvoiceSetting(): ?\Pggns\MidocoApi\Api\Documents\StructType\CrmCustomerEinvoiceDTO
+    public function getCustomerEInvoiceSetting(): ?\Pggns\MidocoApi\Documents\StructType\CrmCustomerEinvoiceDTO
     {
         return $this->CustomerEInvoiceSetting;
     }
     /**
      * Set CustomerEInvoiceSetting value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\CrmCustomerEinvoiceDTO $customerEInvoiceSetting
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrmCustomerPayment
+     * @param \Pggns\MidocoApi\Documents\StructType\CrmCustomerEinvoiceDTO $customerEInvoiceSetting
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCrmCustomerPayment
      */
-    public function setCustomerEInvoiceSetting(?\Pggns\MidocoApi\Api\Documents\StructType\CrmCustomerEinvoiceDTO $customerEInvoiceSetting = null): self
+    public function setCustomerEInvoiceSetting(?\Pggns\MidocoApi\Documents\StructType\CrmCustomerEinvoiceDTO $customerEInvoiceSetting = null): self
     {
         $this->CustomerEInvoiceSetting = $customerEInvoiceSetting;
         
@@ -125,7 +125,7 @@ class MidocoCrmCustomerPayment extends CrmCustomerPaymentDTO
     /**
      * Set assignedDebitor value
      * @param string $assignedDebitor
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrmCustomerPayment
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCrmCustomerPayment
      */
     public function setAssignedDebitor(?string $assignedDebitor = null): self
     {
@@ -148,7 +148,7 @@ class MidocoCrmCustomerPayment extends CrmCustomerPaymentDTO
     /**
      * Set assignedCreditor value
      * @param string $assignedCreditor
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrmCustomerPayment
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCrmCustomerPayment
      */
     public function setAssignedCreditor(?string $assignedCreditor = null): self
     {
@@ -171,7 +171,7 @@ class MidocoCrmCustomerPayment extends CrmCustomerPaymentDTO
     /**
      * Set diverseDebitor value
      * @param string $diverseDebitor
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrmCustomerPayment
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCrmCustomerPayment
      */
     public function setDiverseDebitor(?string $diverseDebitor = null): self
     {
@@ -194,7 +194,7 @@ class MidocoCrmCustomerPayment extends CrmCustomerPaymentDTO
     /**
      * Set bankTransfer value
      * @param bool $bankTransfer
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrmCustomerPayment
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCrmCustomerPayment
      */
     public function setBankTransfer(?bool $bankTransfer = null): self
     {
@@ -217,7 +217,7 @@ class MidocoCrmCustomerPayment extends CrmCustomerPaymentDTO
     /**
      * Set makeNewOrder value
      * @param bool $makeNewOrder
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrmCustomerPayment
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCrmCustomerPayment
      */
     public function setMakeNewOrder(?bool $makeNewOrder = null): self
     {
@@ -240,7 +240,7 @@ class MidocoCrmCustomerPayment extends CrmCustomerPaymentDTO
     /**
      * Set existDebitCards value
      * @param bool $existDebitCards
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrmCustomerPayment
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCrmCustomerPayment
      */
     public function setExistDebitCards(?bool $existDebitCards = null): self
     {
@@ -263,7 +263,7 @@ class MidocoCrmCustomerPayment extends CrmCustomerPaymentDTO
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrmCustomerPayment
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCrmCustomerPayment
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -285,17 +285,17 @@ class MidocoCrmCustomerPayment extends CrmCustomerPaymentDTO
     }
     /**
      * Set vatType value
-     * @uses \Pggns\MidocoApi\Api\Documents\EnumType\MidocoCrmCustomerPaymentVatTypeType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Documents\EnumType\MidocoCrmCustomerPaymentVatTypeType::getValidValues()
+     * @uses \Pggns\MidocoApi\Documents\EnumType\MidocoCrmCustomerPaymentVatTypeType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Documents\EnumType\MidocoCrmCustomerPaymentVatTypeType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $vatType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrmCustomerPayment
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCrmCustomerPayment
      */
     public function setVatType(?string $vatType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Documents\EnumType\MidocoCrmCustomerPaymentVatTypeType::valueIsValid($vatType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Documents\EnumType\MidocoCrmCustomerPaymentVatTypeType', is_array($vatType) ? implode(', ', $vatType) : var_export($vatType, true), implode(', ', \Pggns\MidocoApi\Api\Documents\EnumType\MidocoCrmCustomerPaymentVatTypeType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Documents\EnumType\MidocoCrmCustomerPaymentVatTypeType::valueIsValid($vatType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Documents\EnumType\MidocoCrmCustomerPaymentVatTypeType', is_array($vatType) ? implode(', ', $vatType) : var_export($vatType, true), implode(', ', \Pggns\MidocoApi\Documents\EnumType\MidocoCrmCustomerPaymentVatTypeType::getValidValues())), __LINE__);
         }
         $this->vatType = $vatType;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetTravelNumberVatDivTemplsRequest extends AbstractStructBase
      * The MidocoTravelNumberVatDivTempl
      * Meta information extracted from the WSDL
      * - ref: MidocoTravelNumberVatDivTempl
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberVatDivTemplDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\TravelNumberVatDivTemplDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberVatDivTemplDTO $MidocoTravelNumberVatDivTempl = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\TravelNumberVatDivTemplDTO $MidocoTravelNumberVatDivTempl = null;
     /**
      * Constructor method for GetTravelNumberVatDivTemplsRequest
      * @uses GetTravelNumberVatDivTemplsRequest::setMidocoTravelNumberVatDivTempl()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberVatDivTemplDTO $midocoTravelNumberVatDivTempl
+     * @param \Pggns\MidocoApi\OrderSD\StructType\TravelNumberVatDivTemplDTO $midocoTravelNumberVatDivTempl
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberVatDivTemplDTO $midocoTravelNumberVatDivTempl = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\TravelNumberVatDivTemplDTO $midocoTravelNumberVatDivTempl = null)
     {
         $this
             ->setMidocoTravelNumberVatDivTempl($midocoTravelNumberVatDivTempl);
     }
     /**
      * Get MidocoTravelNumberVatDivTempl value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberVatDivTemplDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\TravelNumberVatDivTemplDTO|null
      */
-    public function getMidocoTravelNumberVatDivTempl(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberVatDivTemplDTO
+    public function getMidocoTravelNumberVatDivTempl(): ?\Pggns\MidocoApi\OrderSD\StructType\TravelNumberVatDivTemplDTO
     {
         return $this->MidocoTravelNumberVatDivTempl;
     }
     /**
      * Set MidocoTravelNumberVatDivTempl value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberVatDivTemplDTO $midocoTravelNumberVatDivTempl
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetTravelNumberVatDivTemplsRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\TravelNumberVatDivTemplDTO $midocoTravelNumberVatDivTempl
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetTravelNumberVatDivTemplsRequest
      */
-    public function setMidocoTravelNumberVatDivTempl(?\Pggns\MidocoApi\Api\OrderSD\StructType\TravelNumberVatDivTemplDTO $midocoTravelNumberVatDivTempl = null): self
+    public function setMidocoTravelNumberVatDivTempl(?\Pggns\MidocoApi\OrderSD\StructType\TravelNumberVatDivTemplDTO $midocoTravelNumberVatDivTempl = null): self
     {
         $this->MidocoTravelNumberVatDivTempl = $midocoTravelNumberVatDivTempl;
         

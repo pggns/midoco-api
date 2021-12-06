@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCrmNoticeCommentsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmNoticeComment
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO[]
      */
     protected ?array $MidocoCrmNoticeComment = null;
     /**
      * Constructor method for GetCrmNoticeCommentsResponse
      * @uses GetCrmNoticeCommentsResponse::setMidocoCrmNoticeComment()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO[] $midocoCrmNoticeComment
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO[] $midocoCrmNoticeComment
      */
     public function __construct(?array $midocoCrmNoticeComment = null)
     {
@@ -34,7 +34,7 @@ class GetCrmNoticeCommentsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmNoticeComment value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO[]
      */
     public function getMidocoCrmNoticeComment(): ?array
     {
@@ -55,12 +55,12 @@ class GetCrmNoticeCommentsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCrmNoticeCommentsResponseMidocoCrmNoticeCommentItem) {
             // validation for constraint: itemType
-            if (!$getCrmNoticeCommentsResponseMidocoCrmNoticeCommentItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO) {
+            if (!$getCrmNoticeCommentsResponseMidocoCrmNoticeCommentItem instanceof \Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO) {
                 $invalidValues[] = is_object($getCrmNoticeCommentsResponseMidocoCrmNoticeCommentItem) ? get_class($getCrmNoticeCommentsResponseMidocoCrmNoticeCommentItem) : sprintf('%s(%s)', gettype($getCrmNoticeCommentsResponseMidocoCrmNoticeCommentItem), var_export($getCrmNoticeCommentsResponseMidocoCrmNoticeCommentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmNoticeComment property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmNoticeComment property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCrmNoticeCommentsResponse extends AbstractStructBase
     /**
      * Set MidocoCrmNoticeComment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO[] $midocoCrmNoticeComment
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCrmNoticeCommentsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO[] $midocoCrmNoticeComment
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCrmNoticeCommentsResponse
      */
     public function setMidocoCrmNoticeComment(?array $midocoCrmNoticeComment = null): self
     {
@@ -85,14 +85,14 @@ class GetCrmNoticeCommentsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmNoticeComment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCrmNoticeCommentsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCrmNoticeCommentsResponse
      */
-    public function addToMidocoCrmNoticeComment(\Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO $item): self
+    public function addToMidocoCrmNoticeComment(\Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmNoticeComment property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmNoticeComment property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmNoticeComment[] = $item;
         

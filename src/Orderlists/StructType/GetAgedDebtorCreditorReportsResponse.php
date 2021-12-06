@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class GetAgedDebtorCreditorReportsResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoAgedDebtorCreditorReportsPosition
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition[]
      */
     protected ?array $MidocoAgedDebtorCreditorReportsPosition = null;
     /**
@@ -30,7 +30,7 @@ class GetAgedDebtorCreditorReportsResponse extends AbstractStructBase
      * Constructor method for GetAgedDebtorCreditorReportsResponse
      * @uses GetAgedDebtorCreditorReportsResponse::setMidocoAgedDebtorCreditorReportsPosition()
      * @uses GetAgedDebtorCreditorReportsResponse::setSumPositions()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition[] $midocoAgedDebtorCreditorReportsPosition
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition[] $midocoAgedDebtorCreditorReportsPosition
      * @param float $sumPositions
      */
     public function __construct(?array $midocoAgedDebtorCreditorReportsPosition = null, ?float $sumPositions = null)
@@ -41,7 +41,7 @@ class GetAgedDebtorCreditorReportsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAgedDebtorCreditorReportsPosition value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition[]
      */
     public function getMidocoAgedDebtorCreditorReportsPosition(): ?array
     {
@@ -62,12 +62,12 @@ class GetAgedDebtorCreditorReportsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAgedDebtorCreditorReportsResponseMidocoAgedDebtorCreditorReportsPositionItem) {
             // validation for constraint: itemType
-            if (!$getAgedDebtorCreditorReportsResponseMidocoAgedDebtorCreditorReportsPositionItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition) {
+            if (!$getAgedDebtorCreditorReportsResponseMidocoAgedDebtorCreditorReportsPositionItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition) {
                 $invalidValues[] = is_object($getAgedDebtorCreditorReportsResponseMidocoAgedDebtorCreditorReportsPositionItem) ? get_class($getAgedDebtorCreditorReportsResponseMidocoAgedDebtorCreditorReportsPositionItem) : sprintf('%s(%s)', gettype($getAgedDebtorCreditorReportsResponseMidocoAgedDebtorCreditorReportsPositionItem), var_export($getAgedDebtorCreditorReportsResponseMidocoAgedDebtorCreditorReportsPositionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAgedDebtorCreditorReportsPosition property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAgedDebtorCreditorReportsPosition property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -76,8 +76,8 @@ class GetAgedDebtorCreditorReportsResponse extends AbstractStructBase
     /**
      * Set MidocoAgedDebtorCreditorReportsPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition[] $midocoAgedDebtorCreditorReportsPosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAgedDebtorCreditorReportsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition[] $midocoAgedDebtorCreditorReportsPosition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAgedDebtorCreditorReportsResponse
      */
     public function setMidocoAgedDebtorCreditorReportsPosition(?array $midocoAgedDebtorCreditorReportsPosition = null): self
     {
@@ -92,14 +92,14 @@ class GetAgedDebtorCreditorReportsResponse extends AbstractStructBase
     /**
      * Add item to MidocoAgedDebtorCreditorReportsPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAgedDebtorCreditorReportsResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAgedDebtorCreditorReportsResponse
      */
-    public function addToMidocoAgedDebtorCreditorReportsPosition(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition $item): self
+    public function addToMidocoAgedDebtorCreditorReportsPosition(\Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition) {
-            throw new InvalidArgumentException(sprintf('The MidocoAgedDebtorCreditorReportsPosition property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition) {
+            throw new InvalidArgumentException(sprintf('The MidocoAgedDebtorCreditorReportsPosition property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAgedDebtorCreditorReportsPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAgedDebtorCreditorReportsPosition[] = $item;
         
@@ -116,7 +116,7 @@ class GetAgedDebtorCreditorReportsResponse extends AbstractStructBase
     /**
      * Set sumPositions value
      * @param float $sumPositions
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAgedDebtorCreditorReportsResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAgedDebtorCreditorReportsResponse
      */
     public function setSumPositions(?float $sumPositions = null): self
     {

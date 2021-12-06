@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class GetAllCitiesFromZipCodeRequest extends AbstractStructBase
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetAllCitiesFromZipCodeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetAllCitiesFromZipCodeRequest
      */
     public function setZipCode(?string $zipCode = null): self
     {
@@ -84,7 +84,7 @@ class GetAllCitiesFromZipCodeRequest extends AbstractStructBase
     /**
      * Set cityName value
      * @param string $cityName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetAllCitiesFromZipCodeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetAllCitiesFromZipCodeRequest
      */
     public function setCityName(?string $cityName = null): self
     {
@@ -107,7 +107,7 @@ class GetAllCitiesFromZipCodeRequest extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetAllCitiesFromZipCodeRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetAllCitiesFromZipCodeRequest
      */
     public function setCountryCode(?string $countryCode = null): self
     {

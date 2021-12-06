@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class FrequentFlyerNumberDTO extends AbstractStructBase
     /**
      * Set active value
      * @param bool $active
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FrequentFlyerNumberDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FrequentFlyerNumberDTO
      */
     public function setActive(?bool $active = null): self
     {
@@ -94,7 +94,7 @@ class FrequentFlyerNumberDTO extends AbstractStructBase
     /**
      * Set airlineCode value
      * @param string $airlineCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FrequentFlyerNumberDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FrequentFlyerNumberDTO
      */
     public function setAirlineCode(?string $airlineCode = null): self
     {
@@ -117,7 +117,7 @@ class FrequentFlyerNumberDTO extends AbstractStructBase
     /**
      * Set airlineTier value
      * @param string $airlineTier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FrequentFlyerNumberDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FrequentFlyerNumberDTO
      */
     public function setAirlineTier(?string $airlineTier = null): self
     {
@@ -140,7 +140,7 @@ class FrequentFlyerNumberDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FrequentFlyerNumberDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FrequentFlyerNumberDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -163,7 +163,7 @@ class FrequentFlyerNumberDTO extends AbstractStructBase
     /**
      * Set ffnNumber value
      * @param string $ffnNumber
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FrequentFlyerNumberDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FrequentFlyerNumberDTO
      */
     public function setFfnNumber(?string $ffnNumber = null): self
     {

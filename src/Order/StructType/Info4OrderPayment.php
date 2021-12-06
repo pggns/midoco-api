@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class Info4OrderPayment extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Info4OrderPayment
+     * @return \Pggns\MidocoApi\Order\StructType\Info4OrderPayment
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -86,7 +86,7 @@ class Info4OrderPayment extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Info4OrderPayment
+     * @return \Pggns\MidocoApi\Order\StructType\Info4OrderPayment
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -109,7 +109,7 @@ class Info4OrderPayment extends AbstractStructBase
     /**
      * Set paymentMethod value
      * @param string $paymentMethod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Info4OrderPayment
+     * @return \Pggns\MidocoApi\Order\StructType\Info4OrderPayment
      */
     public function setPaymentMethod(?string $paymentMethod = null): self
     {
@@ -132,7 +132,7 @@ class Info4OrderPayment extends AbstractStructBase
     /**
      * Set voucherNo value
      * @param string $voucherNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Info4OrderPayment
+     * @return \Pggns\MidocoApi\Order\StructType\Info4OrderPayment
      */
     public function setVoucherNo(?string $voucherNo = null): self
     {

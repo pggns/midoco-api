@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteProcessedBookingRequest extends AbstractStructBase
     /**
      * Set externalId value
      * @param string $externalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteProcessedBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteProcessedBookingRequest
      */
     public function setExternalId(?string $externalId = null): self
     {

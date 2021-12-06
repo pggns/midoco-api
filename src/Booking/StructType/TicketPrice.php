@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class TicketPrice extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: TaxDetail
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\TaxDetail[]
+     * @var \Pggns\MidocoApi\Booking\StructType\TaxDetail[]
      */
     protected ?array $TaxDetail = null;
     /**
@@ -122,7 +122,7 @@ class TicketPrice extends AbstractStructBase
      * @uses TicketPrice::setCommission()
      * @uses TicketPrice::setCommissionPercent()
      * @uses TicketPrice::setCommissionVatAmount()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\TaxDetail[] $taxDetail
+     * @param \Pggns\MidocoApi\Booking\StructType\TaxDetail[] $taxDetail
      * @param int $ticketPriceId
      * @param float $baseFare
      * @param string $fareType
@@ -161,7 +161,7 @@ class TicketPrice extends AbstractStructBase
     }
     /**
      * Get TaxDetail value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TaxDetail[]
+     * @return \Pggns\MidocoApi\Booking\StructType\TaxDetail[]
      */
     public function getTaxDetail(): ?array
     {
@@ -182,12 +182,12 @@ class TicketPrice extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $ticketPriceTaxDetailItem) {
             // validation for constraint: itemType
-            if (!$ticketPriceTaxDetailItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\TaxDetail) {
+            if (!$ticketPriceTaxDetailItem instanceof \Pggns\MidocoApi\Booking\StructType\TaxDetail) {
                 $invalidValues[] = is_object($ticketPriceTaxDetailItem) ? get_class($ticketPriceTaxDetailItem) : sprintf('%s(%s)', gettype($ticketPriceTaxDetailItem), var_export($ticketPriceTaxDetailItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The TaxDetail property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\TaxDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The TaxDetail property can only contain items of type \Pggns\MidocoApi\Booking\StructType\TaxDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -196,8 +196,8 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set TaxDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\TaxDetail[] $taxDetail
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @param \Pggns\MidocoApi\Booking\StructType\TaxDetail[] $taxDetail
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setTaxDetail(?array $taxDetail = null): self
     {
@@ -212,14 +212,14 @@ class TicketPrice extends AbstractStructBase
     /**
      * Add item to TaxDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\TaxDetail $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @param \Pggns\MidocoApi\Booking\StructType\TaxDetail $item
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
-    public function addToTaxDetail(\Pggns\MidocoApi\Api\Booking\StructType\TaxDetail $item): self
+    public function addToTaxDetail(\Pggns\MidocoApi\Booking\StructType\TaxDetail $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\TaxDetail) {
-            throw new InvalidArgumentException(sprintf('The TaxDetail property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\TaxDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\TaxDetail) {
+            throw new InvalidArgumentException(sprintf('The TaxDetail property can only contain items of type \Pggns\MidocoApi\Booking\StructType\TaxDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->TaxDetail[] = $item;
         
@@ -236,7 +236,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set ticketPriceId value
      * @param int $ticketPriceId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setTicketPriceId(?int $ticketPriceId = null): self
     {
@@ -259,7 +259,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set baseFare value
      * @param float $baseFare
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setBaseFare(?float $baseFare = null): self
     {
@@ -281,17 +281,17 @@ class TicketPrice extends AbstractStructBase
     }
     /**
      * Set fareType value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\FareType_1::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\FareType_1::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\FareType_1::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\FareType_1::getValidValues()
      * @throws InvalidArgumentException
      * @param string $fareType
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setFareType(?string $fareType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\FareType_1::valueIsValid($fareType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\FareType_1', is_array($fareType) ? implode(', ', $fareType) : var_export($fareType, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\FareType_1::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\FareType_1::valueIsValid($fareType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\FareType_1', is_array($fareType) ? implode(', ', $fareType) : var_export($fareType, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\FareType_1::getValidValues())), __LINE__);
         }
         $this->fareType = $fareType;
         
@@ -308,7 +308,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set totalTax value
      * @param float $totalTax
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setTotalTax(?float $totalTax = null): self
     {
@@ -331,7 +331,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set ticketingPrice value
      * @param float $ticketingPrice
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setTicketingPrice(?float $ticketingPrice = null): self
     {
@@ -354,7 +354,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -381,7 +381,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set agencyFee value
      * @param float $agencyFee
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setAgencyFee(?float $agencyFee = null): self
     {
@@ -404,7 +404,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set airlineFee value
      * @param float $airlineFee
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setAirlineFee(?float $airlineFee = null): self
     {
@@ -427,7 +427,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set tourCode value
      * @param string $tourCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setTourCode(?string $tourCode = null): self
     {
@@ -450,7 +450,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set endorsement value
      * @param string $endorsement
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setEndorsement(?string $endorsement = null): self
     {
@@ -473,7 +473,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set ticketDesignator value
      * @param string $ticketDesignator
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setTicketDesignator(?string $ticketDesignator = null): self
     {
@@ -496,7 +496,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set cancellationFee value
      * @param float $cancellationFee
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setCancellationFee(?float $cancellationFee = null): self
     {
@@ -519,7 +519,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set commission value
      * @param float $commission
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setCommission(?float $commission = null): self
     {
@@ -542,7 +542,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set commissionPercent value
      * @param float $commissionPercent
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setCommissionPercent(?float $commissionPercent = null): self
     {
@@ -565,7 +565,7 @@ class TicketPrice extends AbstractStructBase
     /**
      * Set commissionVatAmount value
      * @param float $commissionVatAmount
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\TicketPrice
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketPrice
      */
     public function setCommissionVatAmount(?float $commissionVatAmount = null): self
     {

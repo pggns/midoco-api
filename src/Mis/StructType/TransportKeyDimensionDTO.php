@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class TransportKeyDimensionDTO extends AbstractStructBase
     /**
      * Set transportKey value
      * @param string $transportKey
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\TransportKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\TransportKeyDimensionDTO
      */
     public function setTransportKey(?string $transportKey = null): self
     {
@@ -86,7 +86,7 @@ class TransportKeyDimensionDTO extends AbstractStructBase
     /**
      * Set transportKeyDescription value
      * @param string $transportKeyDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\TransportKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\TransportKeyDimensionDTO
      */
     public function setTransportKeyDescription(?string $transportKeyDescription = null): self
     {
@@ -109,7 +109,7 @@ class TransportKeyDimensionDTO extends AbstractStructBase
     /**
      * Set transportKeyId value
      * @param int $transportKeyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\TransportKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\TransportKeyDimensionDTO
      */
     public function setTransportKeyId(?int $transportKeyId = null): self
     {
@@ -132,7 +132,7 @@ class TransportKeyDimensionDTO extends AbstractStructBase
     /**
      * Set transportKeyLocDescr value
      * @param string $transportKeyLocDescr
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\TransportKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\TransportKeyDimensionDTO
      */
     public function setTransportKeyLocDescr(?string $transportKeyLocDescr = null): self
     {

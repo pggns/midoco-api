@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCustomerCategoriesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerCategory
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerCategory[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCustomerCategory[]
      */
     protected ?array $MidocoCustomerCategory = null;
     /**
      * Constructor method for GetCustomerCategoriesResponse
      * @uses GetCustomerCategoriesResponse::setMidocoCustomerCategory()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerCategory[] $midocoCustomerCategory
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerCategory[] $midocoCustomerCategory
      */
     public function __construct(?array $midocoCustomerCategory = null)
     {
@@ -34,7 +34,7 @@ class GetCustomerCategoriesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerCategory value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerCategory[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCustomerCategory[]
      */
     public function getMidocoCustomerCategory(): ?array
     {
@@ -55,12 +55,12 @@ class GetCustomerCategoriesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCustomerCategoriesResponseMidocoCustomerCategoryItem) {
             // validation for constraint: itemType
-            if (!$getCustomerCategoriesResponseMidocoCustomerCategoryItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerCategory) {
+            if (!$getCustomerCategoriesResponseMidocoCustomerCategoryItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCustomerCategory) {
                 $invalidValues[] = is_object($getCustomerCategoriesResponseMidocoCustomerCategoryItem) ? get_class($getCustomerCategoriesResponseMidocoCustomerCategoryItem) : sprintf('%s(%s)', gettype($getCustomerCategoriesResponseMidocoCustomerCategoryItem), var_export($getCustomerCategoriesResponseMidocoCustomerCategoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerCategory property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerCategory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerCategory property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCustomerCategory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCustomerCategoriesResponse extends AbstractStructBase
     /**
      * Set MidocoCustomerCategory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerCategory[] $midocoCustomerCategory
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerCategoriesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerCategory[] $midocoCustomerCategory
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerCategoriesResponse
      */
     public function setMidocoCustomerCategory(?array $midocoCustomerCategory = null): self
     {
@@ -85,14 +85,14 @@ class GetCustomerCategoriesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCustomerCategory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerCategory $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerCategoriesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerCategory $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerCategoriesResponse
      */
-    public function addToMidocoCustomerCategory(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerCategory $item): self
+    public function addToMidocoCustomerCategory(\Pggns\MidocoApi\Crm\StructType\MidocoCustomerCategory $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerCategory) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerCategory property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerCategory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCustomerCategory) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerCategory property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCustomerCategory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerCategory[] = $item;
         

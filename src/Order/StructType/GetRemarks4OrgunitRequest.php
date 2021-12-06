@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,24 +17,24 @@ class GetRemarks4OrgunitRequest extends AbstractStructBase
      * The MidocoRemarkOrgunit
      * Meta information extracted from the WSDL
      * - ref: MidocoRemarkOrgunit
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkOrgunit|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoRemarkOrgunit|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkOrgunit $MidocoRemarkOrgunit = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoRemarkOrgunit $MidocoRemarkOrgunit = null;
     /**
      * The MidocoTextRemark
      * Meta information extracted from the WSDL
      * - ref: MidocoTextRemark
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTextRemark|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark $MidocoTextRemark = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoTextRemark $MidocoTextRemark = null;
     /**
      * Constructor method for GetRemarks4OrgunitRequest
      * @uses GetRemarks4OrgunitRequest::setMidocoRemarkOrgunit()
      * @uses GetRemarks4OrgunitRequest::setMidocoTextRemark()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark $midocoTextRemark
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTextRemark $midocoTextRemark
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark $midocoTextRemark = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit = null, ?\Pggns\MidocoApi\Order\StructType\MidocoTextRemark $midocoTextRemark = null)
     {
         $this
             ->setMidocoRemarkOrgunit($midocoRemarkOrgunit)
@@ -42,18 +42,18 @@ class GetRemarks4OrgunitRequest extends AbstractStructBase
     }
     /**
      * Get MidocoRemarkOrgunit value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkOrgunit|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoRemarkOrgunit|null
      */
-    public function getMidocoRemarkOrgunit(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkOrgunit
+    public function getMidocoRemarkOrgunit(): ?\Pggns\MidocoApi\Order\StructType\MidocoRemarkOrgunit
     {
         return $this->MidocoRemarkOrgunit;
     }
     /**
      * Set MidocoRemarkOrgunit value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRemarks4OrgunitRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit
+     * @return \Pggns\MidocoApi\Order\StructType\GetRemarks4OrgunitRequest
      */
-    public function setMidocoRemarkOrgunit(?\Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit = null): self
+    public function setMidocoRemarkOrgunit(?\Pggns\MidocoApi\Order\StructType\MidocoRemarkOrgunit $midocoRemarkOrgunit = null): self
     {
         $this->MidocoRemarkOrgunit = $midocoRemarkOrgunit;
         
@@ -61,18 +61,18 @@ class GetRemarks4OrgunitRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTextRemark value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTextRemark|null
      */
-    public function getMidocoTextRemark(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark
+    public function getMidocoTextRemark(): ?\Pggns\MidocoApi\Order\StructType\MidocoTextRemark
     {
         return $this->MidocoTextRemark;
     }
     /**
      * Set MidocoTextRemark value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark $midocoTextRemark
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRemarks4OrgunitRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTextRemark $midocoTextRemark
+     * @return \Pggns\MidocoApi\Order\StructType\GetRemarks4OrgunitRequest
      */
-    public function setMidocoTextRemark(?\Pggns\MidocoApi\Api\Order\StructType\MidocoTextRemark $midocoTextRemark = null): self
+    public function setMidocoTextRemark(?\Pggns\MidocoApi\Order\StructType\MidocoTextRemark $midocoTextRemark = null): self
     {
         $this->MidocoTextRemark = $midocoTextRemark;
         

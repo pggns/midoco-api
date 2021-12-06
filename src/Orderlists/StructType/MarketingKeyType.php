@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class MarketingKeyType extends MarketingKeyDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMarketingKeyDescription
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MarketingKeyDescriptionType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MarketingKeyDescriptionType[]
      */
     protected ?array $MidocoMarketingKeyDescription = null;
     /**
      * Constructor method for MarketingKeyType
      * @uses MarketingKeyType::setMidocoMarketingKeyDescription()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MarketingKeyDescriptionType[] $midocoMarketingKeyDescription
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MarketingKeyDescriptionType[] $midocoMarketingKeyDescription
      */
     public function __construct(?array $midocoMarketingKeyDescription = null)
     {
@@ -34,7 +34,7 @@ class MarketingKeyType extends MarketingKeyDTO
     }
     /**
      * Get MidocoMarketingKeyDescription value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MarketingKeyDescriptionType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MarketingKeyDescriptionType[]
      */
     public function getMidocoMarketingKeyDescription(): ?array
     {
@@ -55,12 +55,12 @@ class MarketingKeyType extends MarketingKeyDTO
         $invalidValues = [];
         foreach ($values as $marketingKeyTypeMidocoMarketingKeyDescriptionItem) {
             // validation for constraint: itemType
-            if (!$marketingKeyTypeMidocoMarketingKeyDescriptionItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MarketingKeyDescriptionType) {
+            if (!$marketingKeyTypeMidocoMarketingKeyDescriptionItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MarketingKeyDescriptionType) {
                 $invalidValues[] = is_object($marketingKeyTypeMidocoMarketingKeyDescriptionItem) ? get_class($marketingKeyTypeMidocoMarketingKeyDescriptionItem) : sprintf('%s(%s)', gettype($marketingKeyTypeMidocoMarketingKeyDescriptionItem), var_export($marketingKeyTypeMidocoMarketingKeyDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMarketingKeyDescription property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MarketingKeyDescriptionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMarketingKeyDescription property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MarketingKeyDescriptionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class MarketingKeyType extends MarketingKeyDTO
     /**
      * Set MidocoMarketingKeyDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MarketingKeyDescriptionType[] $midocoMarketingKeyDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MarketingKeyType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MarketingKeyDescriptionType[] $midocoMarketingKeyDescription
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MarketingKeyType
      */
     public function setMidocoMarketingKeyDescription(?array $midocoMarketingKeyDescription = null): self
     {
@@ -85,14 +85,14 @@ class MarketingKeyType extends MarketingKeyDTO
     /**
      * Add item to MidocoMarketingKeyDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MarketingKeyDescriptionType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MarketingKeyType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MarketingKeyDescriptionType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MarketingKeyType
      */
-    public function addToMidocoMarketingKeyDescription(\Pggns\MidocoApi\Api\Orderlists\StructType\MarketingKeyDescriptionType $item): self
+    public function addToMidocoMarketingKeyDescription(\Pggns\MidocoApi\Orderlists\StructType\MarketingKeyDescriptionType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MarketingKeyDescriptionType) {
-            throw new InvalidArgumentException(sprintf('The MidocoMarketingKeyDescription property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MarketingKeyDescriptionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MarketingKeyDescriptionType) {
+            throw new InvalidArgumentException(sprintf('The MidocoMarketingKeyDescription property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MarketingKeyDescriptionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMarketingKeyDescription[] = $item;
         

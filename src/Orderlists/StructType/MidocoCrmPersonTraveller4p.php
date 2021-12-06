@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoCrmPersonTraveller4p extends CrmPersonTravellerDTO
     /**
      * Set travellerTypeDesc value
      * @param string $travellerTypeDesc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmPersonTraveller4p
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmPersonTraveller4p
      */
     public function setTravellerTypeDesc(?string $travellerTypeDesc = null): self
     {

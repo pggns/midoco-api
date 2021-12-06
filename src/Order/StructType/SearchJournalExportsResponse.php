@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchJournalExportsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoJournalExport
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoJournalExport[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoJournalExport[]
      */
     protected ?array $MidocoJournalExport = null;
     /**
      * Constructor method for SearchJournalExportsResponse
      * @uses SearchJournalExportsResponse::setMidocoJournalExport()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoJournalExport[] $midocoJournalExport
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoJournalExport[] $midocoJournalExport
      */
     public function __construct(?array $midocoJournalExport = null)
     {
@@ -34,7 +34,7 @@ class SearchJournalExportsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoJournalExport value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoJournalExport[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoJournalExport[]
      */
     public function getMidocoJournalExport(): ?array
     {
@@ -55,12 +55,12 @@ class SearchJournalExportsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchJournalExportsResponseMidocoJournalExportItem) {
             // validation for constraint: itemType
-            if (!$searchJournalExportsResponseMidocoJournalExportItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoJournalExport) {
+            if (!$searchJournalExportsResponseMidocoJournalExportItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoJournalExport) {
                 $invalidValues[] = is_object($searchJournalExportsResponseMidocoJournalExportItem) ? get_class($searchJournalExportsResponseMidocoJournalExportItem) : sprintf('%s(%s)', gettype($searchJournalExportsResponseMidocoJournalExportItem), var_export($searchJournalExportsResponseMidocoJournalExportItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoJournalExport property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoJournalExport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoJournalExport property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoJournalExport, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchJournalExportsResponse extends AbstractStructBase
     /**
      * Set MidocoJournalExport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoJournalExport[] $midocoJournalExport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchJournalExportsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoJournalExport[] $midocoJournalExport
+     * @return \Pggns\MidocoApi\Order\StructType\SearchJournalExportsResponse
      */
     public function setMidocoJournalExport(?array $midocoJournalExport = null): self
     {
@@ -85,14 +85,14 @@ class SearchJournalExportsResponse extends AbstractStructBase
     /**
      * Add item to MidocoJournalExport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoJournalExport $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchJournalExportsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoJournalExport $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchJournalExportsResponse
      */
-    public function addToMidocoJournalExport(\Pggns\MidocoApi\Api\Order\StructType\MidocoJournalExport $item): self
+    public function addToMidocoJournalExport(\Pggns\MidocoApi\Order\StructType\MidocoJournalExport $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoJournalExport) {
-            throw new InvalidArgumentException(sprintf('The MidocoJournalExport property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoJournalExport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoJournalExport) {
+            throw new InvalidArgumentException(sprintf('The MidocoJournalExport property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoJournalExport, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoJournalExport[] = $item;
         

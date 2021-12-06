@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetOrderLockReasonDescriptionsRequest extends AbstractStructBase
      * The MidocoOrderLockReason
      * Meta information extracted from the WSDL
      * - ref: MidocoOrderLockReason
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDTO $MidocoOrderLockReason = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDTO $MidocoOrderLockReason = null;
     /**
      * Constructor method for GetOrderLockReasonDescriptionsRequest
      * @uses GetOrderLockReasonDescriptionsRequest::setMidocoOrderLockReason()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDTO $midocoOrderLockReason
+     * @param \Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDTO $midocoOrderLockReason
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDTO $midocoOrderLockReason = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDTO $midocoOrderLockReason = null)
     {
         $this
             ->setMidocoOrderLockReason($midocoOrderLockReason);
     }
     /**
      * Get MidocoOrderLockReason value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDTO|null
      */
-    public function getMidocoOrderLockReason(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDTO
+    public function getMidocoOrderLockReason(): ?\Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDTO
     {
         return $this->MidocoOrderLockReason;
     }
     /**
      * Set MidocoOrderLockReason value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDTO $midocoOrderLockReason
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetOrderLockReasonDescriptionsRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDTO $midocoOrderLockReason
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetOrderLockReasonDescriptionsRequest
      */
-    public function setMidocoOrderLockReason(?\Pggns\MidocoApi\Api\OrderSD\StructType\OrderLockReasonDTO $midocoOrderLockReason = null): self
+    public function setMidocoOrderLockReason(?\Pggns\MidocoApi\OrderSD\StructType\OrderLockReasonDTO $midocoOrderLockReason = null): self
     {
         $this->MidocoOrderLockReason = $midocoOrderLockReason;
         

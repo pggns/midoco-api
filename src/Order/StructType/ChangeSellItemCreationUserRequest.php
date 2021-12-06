@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ChangeSellItemCreationUserRequest extends AbstractStructBase
     /**
      * Set sellItemId value
      * @param int $sellItemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ChangeSellItemCreationUserRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ChangeSellItemCreationUserRequest
      */
     public function setSellItemId(?int $sellItemId = null): self
     {
@@ -70,7 +70,7 @@ class ChangeSellItemCreationUserRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ChangeSellItemCreationUserRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ChangeSellItemCreationUserRequest
      */
     public function setUserId(?int $userId = null): self
     {

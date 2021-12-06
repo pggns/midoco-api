@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MoveCustomerDocumentIntoLastOrderRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MoveCustomerDocumentIntoLastOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MoveCustomerDocumentIntoLastOrderRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +78,7 @@ class MoveCustomerDocumentIntoLastOrderRequest extends AbstractStructBase
     /**
      * Set customerUnitName value
      * @param string $customerUnitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MoveCustomerDocumentIntoLastOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MoveCustomerDocumentIntoLastOrderRequest
      */
     public function setCustomerUnitName(?string $customerUnitName = null): self
     {
@@ -101,7 +101,7 @@ class MoveCustomerDocumentIntoLastOrderRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MoveCustomerDocumentIntoLastOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MoveCustomerDocumentIntoLastOrderRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {

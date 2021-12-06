@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class ExecuteCompetitionRuleRequest extends AbstractStructBase
      * The MidocoBonusCalculation
      * Meta information extracted from the WSDL
      * - ref: MidocoBonusCalculation
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusCalculation|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBonusCalculation|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBonusCalculation $MidocoBonusCalculation = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBonusCalculation $MidocoBonusCalculation = null;
     /**
      * The bonusId
      * @var int|null
@@ -41,12 +41,12 @@ class ExecuteCompetitionRuleRequest extends AbstractStructBase
      * @uses ExecuteCompetitionRuleRequest::setBonusId()
      * @uses ExecuteCompetitionRuleRequest::setRuleContent()
      * @uses ExecuteCompetitionRuleRequest::setCreationUser()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusCalculation $midocoBonusCalculation
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBonusCalculation $midocoBonusCalculation
      * @param int $bonusId
      * @param string $ruleContent
      * @param int $creationUser
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBonusCalculation $midocoBonusCalculation = null, ?int $bonusId = null, ?string $ruleContent = null, ?int $creationUser = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBonusCalculation $midocoBonusCalculation = null, ?int $bonusId = null, ?string $ruleContent = null, ?int $creationUser = null)
     {
         $this
             ->setMidocoBonusCalculation($midocoBonusCalculation)
@@ -56,18 +56,18 @@ class ExecuteCompetitionRuleRequest extends AbstractStructBase
     }
     /**
      * Get MidocoBonusCalculation value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusCalculation|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBonusCalculation|null
      */
-    public function getMidocoBonusCalculation(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBonusCalculation
+    public function getMidocoBonusCalculation(): ?\Pggns\MidocoApi\Order\StructType\MidocoBonusCalculation
     {
         return $this->MidocoBonusCalculation;
     }
     /**
      * Set MidocoBonusCalculation value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusCalculation $midocoBonusCalculation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteCompetitionRuleRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBonusCalculation $midocoBonusCalculation
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteCompetitionRuleRequest
      */
-    public function setMidocoBonusCalculation(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBonusCalculation $midocoBonusCalculation = null): self
+    public function setMidocoBonusCalculation(?\Pggns\MidocoApi\Order\StructType\MidocoBonusCalculation $midocoBonusCalculation = null): self
     {
         $this->MidocoBonusCalculation = $midocoBonusCalculation;
         
@@ -84,7 +84,7 @@ class ExecuteCompetitionRuleRequest extends AbstractStructBase
     /**
      * Set bonusId value
      * @param int $bonusId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteCompetitionRuleRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteCompetitionRuleRequest
      */
     public function setBonusId(?int $bonusId = null): self
     {
@@ -107,7 +107,7 @@ class ExecuteCompetitionRuleRequest extends AbstractStructBase
     /**
      * Set ruleContent value
      * @param string $ruleContent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteCompetitionRuleRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteCompetitionRuleRequest
      */
     public function setRuleContent(?string $ruleContent = null): self
     {
@@ -130,7 +130,7 @@ class ExecuteCompetitionRuleRequest extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteCompetitionRuleRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteCompetitionRuleRequest
      */
     public function setCreationUser(?int $creationUser = null): self
     {

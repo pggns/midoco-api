@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class CheckLockedUserByMailResponse extends AbstractStructBase
     /**
      * Set lockedByMail value
      * @param bool $lockedByMail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckLockedUserByMailResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckLockedUserByMailResponse
      */
     public function setLockedByMail(bool $lockedByMail): self
     {
@@ -72,7 +72,7 @@ class CheckLockedUserByMailResponse extends AbstractStructBase
     /**
      * Set lockedCustId value
      * @param int $lockedCustId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckLockedUserByMailResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckLockedUserByMailResponse
      */
     public function setLockedCustId(?int $lockedCustId = null): self
     {

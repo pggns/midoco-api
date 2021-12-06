@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteCashbookRequest extends AbstractStructBase
      * The CashBookInfo
      * Meta information extracted from the WSDL
      * - ref: CashBookInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo|null
+     * @var \Pggns\MidocoApi\Order\StructType\CashBookInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\CashBookInfo $CashBookInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\CashBookInfo $CashBookInfo = null;
     /**
      * Constructor method for DeleteCashbookRequest
      * @uses DeleteCashbookRequest::setCashBookInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo $cashBookInfo
+     * @param \Pggns\MidocoApi\Order\StructType\CashBookInfo $cashBookInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\CashBookInfo $cashBookInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\CashBookInfo $cashBookInfo = null)
     {
         $this
             ->setCashBookInfo($cashBookInfo);
     }
     /**
      * Get CashBookInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo|null
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookInfo|null
      */
-    public function getCashBookInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\CashBookInfo
+    public function getCashBookInfo(): ?\Pggns\MidocoApi\Order\StructType\CashBookInfo
     {
         return $this->CashBookInfo;
     }
     /**
      * Set CashBookInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo $cashBookInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteCashbookRequest
+     * @param \Pggns\MidocoApi\Order\StructType\CashBookInfo $cashBookInfo
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteCashbookRequest
      */
-    public function setCashBookInfo(?\Pggns\MidocoApi\Api\Order\StructType\CashBookInfo $cashBookInfo = null): self
+    public function setCashBookInfo(?\Pggns\MidocoApi\Order\StructType\CashBookInfo $cashBookInfo = null): self
     {
         $this->CashBookInfo = $cashBookInfo;
         

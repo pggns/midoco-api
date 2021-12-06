@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoPrintOptionRequest extends AbstractStructBase
      * The MidocoPrintOption
      * Meta information extracted from the WSDL
      * - ref: MidocoPrintOption
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\PrintOptionDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\PrintOptionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\PrintOptionDTO $MidocoPrintOption = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\PrintOptionDTO $MidocoPrintOption = null;
     /**
      * Constructor method for SaveMidocoPrintOptionRequest
      * @uses SaveMidocoPrintOptionRequest::setMidocoPrintOption()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PrintOptionDTO $midocoPrintOption
+     * @param \Pggns\MidocoApi\Documents\StructType\PrintOptionDTO $midocoPrintOption
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\PrintOptionDTO $midocoPrintOption = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\PrintOptionDTO $midocoPrintOption = null)
     {
         $this
             ->setMidocoPrintOption($midocoPrintOption);
     }
     /**
      * Get MidocoPrintOption value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PrintOptionDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\PrintOptionDTO|null
      */
-    public function getMidocoPrintOption(): ?\Pggns\MidocoApi\Api\Documents\StructType\PrintOptionDTO
+    public function getMidocoPrintOption(): ?\Pggns\MidocoApi\Documents\StructType\PrintOptionDTO
     {
         return $this->MidocoPrintOption;
     }
     /**
      * Set MidocoPrintOption value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PrintOptionDTO $midocoPrintOption
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveMidocoPrintOptionRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\PrintOptionDTO $midocoPrintOption
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveMidocoPrintOptionRequest
      */
-    public function setMidocoPrintOption(?\Pggns\MidocoApi\Api\Documents\StructType\PrintOptionDTO $midocoPrintOption = null): self
+    public function setMidocoPrintOption(?\Pggns\MidocoApi\Documents\StructType\PrintOptionDTO $midocoPrintOption = null): self
     {
         $this->MidocoPrintOption = $midocoPrintOption;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class NationalityDTO extends AbstractStructBase
     /**
      * Set nationalityCode value
      * @param string $nationalityCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\NationalityDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\NationalityDTO
      */
     public function setNationalityCode(?string $nationalityCode = null): self
     {
@@ -70,7 +70,7 @@ class NationalityDTO extends AbstractStructBase
     /**
      * Set shortDescription value
      * @param string $shortDescription
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\NationalityDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\NationalityDTO
      */
     public function setShortDescription(?string $shortDescription = null): self
     {

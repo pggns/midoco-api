@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetValidVatCodesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVatDefinition
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition[]
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition[]
      */
     protected ?array $MidocoVatDefinition = null;
     /**
      * Constructor method for GetValidVatCodesResponse
      * @uses GetValidVatCodesResponse::setMidocoVatDefinition()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition[] $midocoVatDefinition
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition[] $midocoVatDefinition
      */
     public function __construct(?array $midocoVatDefinition = null)
     {
@@ -34,7 +34,7 @@ class GetValidVatCodesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVatDefinition value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition[]
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition[]
      */
     public function getMidocoVatDefinition(): ?array
     {
@@ -55,12 +55,12 @@ class GetValidVatCodesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getValidVatCodesResponseMidocoVatDefinitionItem) {
             // validation for constraint: itemType
-            if (!$getValidVatCodesResponseMidocoVatDefinitionItem instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition) {
+            if (!$getValidVatCodesResponseMidocoVatDefinitionItem instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition) {
                 $invalidValues[] = is_object($getValidVatCodesResponseMidocoVatDefinitionItem) ? get_class($getValidVatCodesResponseMidocoVatDefinitionItem) : sprintf('%s(%s)', gettype($getValidVatCodesResponseMidocoVatDefinitionItem), var_export($getValidVatCodesResponseMidocoVatDefinitionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatDefinition property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatDefinition property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetValidVatCodesResponse extends AbstractStructBase
     /**
      * Set MidocoVatDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition[] $midocoVatDefinition
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetValidVatCodesResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition[] $midocoVatDefinition
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetValidVatCodesResponse
      */
     public function setMidocoVatDefinition(?array $midocoVatDefinition = null): self
     {
@@ -85,14 +85,14 @@ class GetValidVatCodesResponse extends AbstractStructBase
     /**
      * Add item to MidocoVatDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition $item
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetValidVatCodesResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition $item
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetValidVatCodesResponse
      */
-    public function addToMidocoVatDefinition(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition $item): self
+    public function addToMidocoVatDefinition(\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatDefinition property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoVatDefinition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatDefinition property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoVatDefinition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatDefinition[] = $item;
         

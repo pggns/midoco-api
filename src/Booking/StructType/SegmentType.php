@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -268,7 +268,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set aircraftType value
      * @param string $aircraftType
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setAircraftType(?string $aircraftType = null): self
     {
@@ -291,7 +291,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set arrivalDate value
      * @param string $arrivalDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setArrivalDate(?string $arrivalDate = null): self
     {
@@ -318,7 +318,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set arrivalTime value
      * @param string $arrivalTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setArrivalTime(?string $arrivalTime = null): self
     {
@@ -345,7 +345,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set bookingClass value
      * @param string $bookingClass
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setBookingClass(?string $bookingClass = null): self
     {
@@ -368,7 +368,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set baggageAllowance value
      * @param string $baggageAllowance
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setBaggageAllowance(?string $baggageAllowance = null): self
     {
@@ -391,7 +391,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set cabinClass value
      * @param string $cabinClass
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setCabinClass(?string $cabinClass = null): self
     {
@@ -414,7 +414,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -437,7 +437,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set checkinTime value
      * @param string $checkinTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setCheckinTime(?string $checkinTime = null): self
     {
@@ -464,7 +464,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set classDescription value
      * @param string $classDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setClassDescription(?string $classDescription = null): self
     {
@@ -487,7 +487,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -514,7 +514,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set departureDate value
      * @param string $departureDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setDepartureDate(?string $departureDate = null): self
     {
@@ -541,7 +541,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set departureDescription value
      * @param string $departureDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setDepartureDescription(?string $departureDescription = null): self
     {
@@ -564,7 +564,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set departureTerminal value
      * @param string $departureTerminal
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setDepartureTerminal(?string $departureTerminal = null): self
     {
@@ -587,7 +587,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set departureTime value
      * @param string $departureTime
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setDepartureTime(?string $departureTime = null): self
     {
@@ -614,7 +614,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -641,7 +641,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set destinationDescription value
      * @param string $destinationDescription
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setDestinationDescription(?string $destinationDescription = null): self
     {
@@ -664,7 +664,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set duration value
      * @param string $duration
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setDuration(?string $duration = null): self
     {
@@ -687,7 +687,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set fareBase value
      * @param string $fareBase
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setFareBase(?string $fareBase = null): self
     {
@@ -710,7 +710,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set flightNo value
      * @param string $flightNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setFlightNo(?string $flightNo = null): self
     {
@@ -733,7 +733,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set openSegment value
      * @param bool $openSegment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setOpenSegment(?bool $openSegment = null): self
     {
@@ -756,7 +756,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set operatingCarrier value
      * @param string $operatingCarrier
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setOperatingCarrier(?string $operatingCarrier = null): self
     {
@@ -779,7 +779,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set operatingCarrierFlightNo value
      * @param string $operatingCarrierFlightNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setOperatingCarrierFlightNo(?string $operatingCarrierFlightNo = null): self
     {
@@ -802,7 +802,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set preventPrinting value
      * @param bool $preventPrinting
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setPreventPrinting(?bool $preventPrinting = null): self
     {
@@ -825,7 +825,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set segmentNumber value
      * @param int $segmentNumber
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setSegmentNumber(?int $segmentNumber = null): self
     {
@@ -848,7 +848,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {
@@ -871,7 +871,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set stopoverCount value
      * @param int $stopoverCount
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setStopoverCount(?int $stopoverCount = null): self
     {
@@ -894,7 +894,7 @@ class SegmentType extends AbstractStructBase
     /**
      * Set miles value
      * @param int $miles
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SegmentType
+     * @return \Pggns\MidocoApi\Booking\StructType\SegmentType
      */
     public function setMiles(?int $miles = null): self
     {

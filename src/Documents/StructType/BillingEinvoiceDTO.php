@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class BillingEinvoiceDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BillingEinvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BillingEinvoiceDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -110,7 +110,7 @@ class BillingEinvoiceDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BillingEinvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BillingEinvoiceDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -133,7 +133,7 @@ class BillingEinvoiceDTO extends AbstractStructBase
     /**
      * Set gateway value
      * @param string $gateway
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BillingEinvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BillingEinvoiceDTO
      */
     public function setGateway(?string $gateway = null): self
     {
@@ -156,7 +156,7 @@ class BillingEinvoiceDTO extends AbstractStructBase
     /**
      * Set orderRef value
      * @param string $orderRef
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BillingEinvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BillingEinvoiceDTO
      */
     public function setOrderRef(?string $orderRef = null): self
     {
@@ -179,7 +179,7 @@ class BillingEinvoiceDTO extends AbstractStructBase
     /**
      * Set routingId value
      * @param string $routingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BillingEinvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BillingEinvoiceDTO
      */
     public function setRoutingId(?string $routingId = null): self
     {
@@ -202,7 +202,7 @@ class BillingEinvoiceDTO extends AbstractStructBase
     /**
      * Set sellerTradeParty value
      * @param string $sellerTradeParty
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BillingEinvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BillingEinvoiceDTO
      */
     public function setSellerTradeParty(?string $sellerTradeParty = null): self
     {
@@ -225,7 +225,7 @@ class BillingEinvoiceDTO extends AbstractStructBase
     /**
      * Set supplierNo value
      * @param string $supplierNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BillingEinvoiceDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BillingEinvoiceDTO
      */
     public function setSupplierNo(?string $supplierNo = null): self
     {

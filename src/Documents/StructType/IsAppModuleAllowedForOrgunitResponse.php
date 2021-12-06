@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class IsAppModuleAllowedForOrgunitResponse extends AbstractStructBase
     /**
      * Set isAllowed value
      * @param bool $isAllowed
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\IsAppModuleAllowedForOrgunitResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\IsAppModuleAllowedForOrgunitResponse
      */
     public function setIsAllowed(?bool $isAllowed = null): self
     {

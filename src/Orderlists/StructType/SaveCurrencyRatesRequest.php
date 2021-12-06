@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SaveCurrencyRatesRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCurrencyRate
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCurrencyRate[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoCurrencyRate[]
      */
     protected ?array $MidocoCurrencyRate = null;
     /**
      * Constructor method for SaveCurrencyRatesRequest
      * @uses SaveCurrencyRatesRequest::setMidocoCurrencyRate()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCurrencyRate[] $midocoCurrencyRate
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCurrencyRate[] $midocoCurrencyRate
      */
     public function __construct(?array $midocoCurrencyRate = null)
     {
@@ -34,7 +34,7 @@ class SaveCurrencyRatesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCurrencyRate value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCurrencyRate[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCurrencyRate[]
      */
     public function getMidocoCurrencyRate(): ?array
     {
@@ -55,12 +55,12 @@ class SaveCurrencyRatesRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveCurrencyRatesRequestMidocoCurrencyRateItem) {
             // validation for constraint: itemType
-            if (!$saveCurrencyRatesRequestMidocoCurrencyRateItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCurrencyRate) {
+            if (!$saveCurrencyRatesRequestMidocoCurrencyRateItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCurrencyRate) {
                 $invalidValues[] = is_object($saveCurrencyRatesRequestMidocoCurrencyRateItem) ? get_class($saveCurrencyRatesRequestMidocoCurrencyRateItem) : sprintf('%s(%s)', gettype($saveCurrencyRatesRequestMidocoCurrencyRateItem), var_export($saveCurrencyRatesRequestMidocoCurrencyRateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCurrencyRate property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCurrencyRate, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCurrencyRate property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCurrencyRate, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SaveCurrencyRatesRequest extends AbstractStructBase
     /**
      * Set MidocoCurrencyRate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCurrencyRate[] $midocoCurrencyRate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveCurrencyRatesRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCurrencyRate[] $midocoCurrencyRate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveCurrencyRatesRequest
      */
     public function setMidocoCurrencyRate(?array $midocoCurrencyRate = null): self
     {
@@ -85,14 +85,14 @@ class SaveCurrencyRatesRequest extends AbstractStructBase
     /**
      * Add item to MidocoCurrencyRate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCurrencyRate $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveCurrencyRatesRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCurrencyRate $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveCurrencyRatesRequest
      */
-    public function addToMidocoCurrencyRate(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCurrencyRate $item): self
+    public function addToMidocoCurrencyRate(\Pggns\MidocoApi\Orderlists\StructType\MidocoCurrencyRate $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCurrencyRate) {
-            throw new InvalidArgumentException(sprintf('The MidocoCurrencyRate property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCurrencyRate, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCurrencyRate) {
+            throw new InvalidArgumentException(sprintf('The MidocoCurrencyRate property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCurrencyRate, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCurrencyRate[] = $item;
         

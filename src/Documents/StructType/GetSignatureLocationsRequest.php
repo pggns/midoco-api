@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetSignatureLocationsRequest extends AbstractStructBase
     /**
      * Set signatureDocId value
      * @param int $signatureDocId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSignatureLocationsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSignatureLocationsRequest
      */
     public function setSignatureDocId(?int $signatureDocId = null): self
     {

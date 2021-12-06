@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMergedServiceStatusResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoServiceStatus
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\ServiceStatusDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\ServiceStatusDTO[]
      */
     protected ?array $MidocoServiceStatus = null;
     /**
      * Constructor method for GetMergedServiceStatusResponse
      * @uses GetMergedServiceStatusResponse::setMidocoServiceStatus()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ServiceStatusDTO[] $midocoServiceStatus
+     * @param \Pggns\MidocoApi\Documents\StructType\ServiceStatusDTO[] $midocoServiceStatus
      */
     public function __construct(?array $midocoServiceStatus = null)
     {
@@ -34,7 +34,7 @@ class GetMergedServiceStatusResponse extends AbstractStructBase
     }
     /**
      * Get MidocoServiceStatus value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ServiceStatusDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\ServiceStatusDTO[]
      */
     public function getMidocoServiceStatus(): ?array
     {
@@ -55,12 +55,12 @@ class GetMergedServiceStatusResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMergedServiceStatusResponseMidocoServiceStatusItem) {
             // validation for constraint: itemType
-            if (!$getMergedServiceStatusResponseMidocoServiceStatusItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\ServiceStatusDTO) {
+            if (!$getMergedServiceStatusResponseMidocoServiceStatusItem instanceof \Pggns\MidocoApi\Documents\StructType\ServiceStatusDTO) {
                 $invalidValues[] = is_object($getMergedServiceStatusResponseMidocoServiceStatusItem) ? get_class($getMergedServiceStatusResponseMidocoServiceStatusItem) : sprintf('%s(%s)', gettype($getMergedServiceStatusResponseMidocoServiceStatusItem), var_export($getMergedServiceStatusResponseMidocoServiceStatusItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoServiceStatus property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\ServiceStatusDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoServiceStatus property can only contain items of type \Pggns\MidocoApi\Documents\StructType\ServiceStatusDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMergedServiceStatusResponse extends AbstractStructBase
     /**
      * Set MidocoServiceStatus value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ServiceStatusDTO[] $midocoServiceStatus
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetMergedServiceStatusResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\ServiceStatusDTO[] $midocoServiceStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\GetMergedServiceStatusResponse
      */
     public function setMidocoServiceStatus(?array $midocoServiceStatus = null): self
     {
@@ -85,14 +85,14 @@ class GetMergedServiceStatusResponse extends AbstractStructBase
     /**
      * Add item to MidocoServiceStatus value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ServiceStatusDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetMergedServiceStatusResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\ServiceStatusDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetMergedServiceStatusResponse
      */
-    public function addToMidocoServiceStatus(\Pggns\MidocoApi\Api\Documents\StructType\ServiceStatusDTO $item): self
+    public function addToMidocoServiceStatus(\Pggns\MidocoApi\Documents\StructType\ServiceStatusDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\ServiceStatusDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoServiceStatus property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\ServiceStatusDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\ServiceStatusDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoServiceStatus property can only contain items of type \Pggns\MidocoApi\Documents\StructType\ServiceStatusDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoServiceStatus[] = $item;
         

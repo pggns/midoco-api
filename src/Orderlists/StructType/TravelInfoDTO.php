@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class TravelInfoDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelInfoDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -150,7 +150,7 @@ class TravelInfoDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelInfoDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -173,7 +173,7 @@ class TravelInfoDTO extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelInfoDTO
      */
     public function setSettlementType(?string $settlementType = null): self
     {
@@ -196,7 +196,7 @@ class TravelInfoDTO extends AbstractStructBase
     /**
      * Set destinationKey value
      * @param string $destinationKey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelInfoDTO
      */
     public function setDestinationKey(?string $destinationKey = null): self
     {
@@ -219,7 +219,7 @@ class TravelInfoDTO extends AbstractStructBase
     /**
      * Set fallbackDestinationKey value
      * @param string $fallbackDestinationKey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelInfoDTO
      */
     public function setFallbackDestinationKey(?string $fallbackDestinationKey = null): self
     {
@@ -242,7 +242,7 @@ class TravelInfoDTO extends AbstractStructBase
     /**
      * Set strictDestination value
      * @param bool $strictDestination
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelInfoDTO
      */
     public function setStrictDestination(?bool $strictDestination = null): self
     {
@@ -265,7 +265,7 @@ class TravelInfoDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelInfoDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -288,7 +288,7 @@ class TravelInfoDTO extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelInfoDTO
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -311,7 +311,7 @@ class TravelInfoDTO extends AbstractStructBase
     /**
      * Set forStorno value
      * @param bool $forStorno
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelInfoDTO
      */
     public function setForStorno(?bool $forStorno = null): self
     {
@@ -334,7 +334,7 @@ class TravelInfoDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelInfoDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -357,7 +357,7 @@ class TravelInfoDTO extends AbstractStructBase
     /**
      * Set ticketType value
      * @param string $ticketType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelInfoDTO
      */
     public function setTicketType(?string $ticketType = null): self
     {
@@ -380,7 +380,7 @@ class TravelInfoDTO extends AbstractStructBase
     /**
      * Set forDi value
      * @param bool $forDi
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelInfoDTO
      */
     public function setForDi(?bool $forDi = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class UnfinishedTaskTypeStatisticsErrorMessage extends AbstractStructBase
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\UnfinishedTaskTypeStatisticsErrorMessage
+     * @return \Pggns\MidocoApi\Orderlists\StructType\UnfinishedTaskTypeStatisticsErrorMessage
      */
     public function setErrorMessage(?string $errorMessage = null): self
     {

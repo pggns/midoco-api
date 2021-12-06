@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetFairplaneDetailsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoFairplaneStatus
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoFairplaneStatus[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoFairplaneStatus[]
      */
     protected ?array $MidocoFairplaneStatus = null;
     /**
      * Constructor method for GetFairplaneDetailsResponse
      * @uses GetFairplaneDetailsResponse::setMidocoFairplaneStatus()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFairplaneStatus[] $midocoFairplaneStatus
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFairplaneStatus[] $midocoFairplaneStatus
      */
     public function __construct(?array $midocoFairplaneStatus = null)
     {
@@ -34,7 +34,7 @@ class GetFairplaneDetailsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoFairplaneStatus value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFairplaneStatus[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFairplaneStatus[]
      */
     public function getMidocoFairplaneStatus(): ?array
     {
@@ -55,12 +55,12 @@ class GetFairplaneDetailsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getFairplaneDetailsResponseMidocoFairplaneStatusItem) {
             // validation for constraint: itemType
-            if (!$getFairplaneDetailsResponseMidocoFairplaneStatusItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFairplaneStatus) {
+            if (!$getFairplaneDetailsResponseMidocoFairplaneStatusItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoFairplaneStatus) {
                 $invalidValues[] = is_object($getFairplaneDetailsResponseMidocoFairplaneStatusItem) ? get_class($getFairplaneDetailsResponseMidocoFairplaneStatusItem) : sprintf('%s(%s)', gettype($getFairplaneDetailsResponseMidocoFairplaneStatusItem), var_export($getFairplaneDetailsResponseMidocoFairplaneStatusItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFairplaneStatus property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFairplaneStatus, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFairplaneStatus property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFairplaneStatus, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetFairplaneDetailsResponse extends AbstractStructBase
     /**
      * Set MidocoFairplaneStatus value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFairplaneStatus[] $midocoFairplaneStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFairplaneDetailsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFairplaneStatus[] $midocoFairplaneStatus
+     * @return \Pggns\MidocoApi\Order\StructType\GetFairplaneDetailsResponse
      */
     public function setMidocoFairplaneStatus(?array $midocoFairplaneStatus = null): self
     {
@@ -85,14 +85,14 @@ class GetFairplaneDetailsResponse extends AbstractStructBase
     /**
      * Add item to MidocoFairplaneStatus value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoFairplaneStatus $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFairplaneDetailsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoFairplaneStatus $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetFairplaneDetailsResponse
      */
-    public function addToMidocoFairplaneStatus(\Pggns\MidocoApi\Api\Order\StructType\MidocoFairplaneStatus $item): self
+    public function addToMidocoFairplaneStatus(\Pggns\MidocoApi\Order\StructType\MidocoFairplaneStatus $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoFairplaneStatus) {
-            throw new InvalidArgumentException(sprintf('The MidocoFairplaneStatus property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoFairplaneStatus, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoFairplaneStatus) {
+            throw new InvalidArgumentException(sprintf('The MidocoFairplaneStatus property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoFairplaneStatus, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFairplaneStatus[] = $item;
         

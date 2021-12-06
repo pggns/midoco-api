@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrgUnitElement
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType[]
      */
     protected ?array $MidocoOrgUnitElement = null;
     /**
@@ -67,7 +67,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
      * @param bool $isProductiv
      * @param bool $isTest
      * @param bool $isAvailableByUser
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType[] $midocoOrgUnitElement
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType[] $midocoOrgUnitElement
      */
     public function __construct(?string $parent = null, ?string $unitName = null, ?string $printName = null, ?bool $isProductiv = null, ?bool $isTest = null, ?bool $isAvailableByUser = null, ?array $midocoOrgUnitElement = null)
     {
@@ -91,7 +91,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set parent value
      * @param string $parent
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType
      */
     public function setParent(?string $parent = null): self
     {
@@ -114,7 +114,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -137,7 +137,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set printName value
      * @param string $printName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType
      */
     public function setPrintName(?string $printName = null): self
     {
@@ -160,7 +160,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set isProductiv value
      * @param bool $isProductiv
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType
      */
     public function setIsProductiv(?bool $isProductiv = null): self
     {
@@ -183,7 +183,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set isTest value
      * @param bool $isTest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType
      */
     public function setIsTest(?bool $isTest = null): self
     {
@@ -206,7 +206,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set isAvailableByUser value
      * @param bool $isAvailableByUser
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType
      */
     public function setIsAvailableByUser(?bool $isAvailableByUser = null): self
     {
@@ -220,7 +220,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     }
     /**
      * Get MidocoOrgUnitElement value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType[]
      */
     public function getMidocoOrgUnitElement(): ?array
     {
@@ -241,12 +241,12 @@ class MidocoOrgUnitElementType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoOrgUnitElementTypeMidocoOrgUnitElementItem) {
             // validation for constraint: itemType
-            if (!$midocoOrgUnitElementTypeMidocoOrgUnitElementItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType) {
+            if (!$midocoOrgUnitElementTypeMidocoOrgUnitElementItem instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType) {
                 $invalidValues[] = is_object($midocoOrgUnitElementTypeMidocoOrgUnitElementItem) ? get_class($midocoOrgUnitElementTypeMidocoOrgUnitElementItem) : sprintf('%s(%s)', gettype($midocoOrgUnitElementTypeMidocoOrgUnitElementItem), var_export($midocoOrgUnitElementTypeMidocoOrgUnitElementItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrgUnitElement property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrgUnitElement property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -255,8 +255,8 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set MidocoOrgUnitElement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType[] $midocoOrgUnitElement
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType[] $midocoOrgUnitElement
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType
      */
     public function setMidocoOrgUnitElement(?array $midocoOrgUnitElement = null): self
     {
@@ -271,14 +271,14 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Add item to MidocoOrgUnitElement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType
      */
-    public function addToMidocoOrgUnitElement(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType $item): self
+    public function addToMidocoOrgUnitElement(\Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrgUnitElement property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgUnitElementType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrgUnitElement property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgUnitElementType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrgUnitElement[] = $item;
         

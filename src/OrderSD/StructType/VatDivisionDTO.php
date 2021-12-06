@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class VatDivisionDTO extends AbstractStructBase
     /**
      * Set bookvat value
      * @param bool $bookvat
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VatDivisionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VatDivisionDTO
      */
     public function setBookvat(?bool $bookvat = null): self
     {
@@ -110,7 +110,7 @@ class VatDivisionDTO extends AbstractStructBase
     /**
      * Set commenttext value
      * @param string $commenttext
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VatDivisionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VatDivisionDTO
      */
     public function setCommenttext(?string $commenttext = null): self
     {
@@ -133,7 +133,7 @@ class VatDivisionDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VatDivisionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VatDivisionDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -156,7 +156,7 @@ class VatDivisionDTO extends AbstractStructBase
     /**
      * Set ratio value
      * @param float $ratio
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VatDivisionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VatDivisionDTO
      */
     public function setRatio(?float $ratio = null): self
     {
@@ -179,7 +179,7 @@ class VatDivisionDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VatDivisionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VatDivisionDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -202,7 +202,7 @@ class VatDivisionDTO extends AbstractStructBase
     /**
      * Set vatDivTemplId value
      * @param int $vatDivTemplId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VatDivisionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VatDivisionDTO
      */
     public function setVatDivTemplId(?int $vatDivTemplId = null): self
     {
@@ -225,7 +225,7 @@ class VatDivisionDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VatDivisionDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VatDivisionDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

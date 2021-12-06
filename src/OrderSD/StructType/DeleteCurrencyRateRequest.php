@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class DeleteCurrencyRateRequest extends AbstractStructBase
     /**
      * Set fromCurrency value
      * @param string $fromCurrency
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteCurrencyRateRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteCurrencyRateRequest
      */
     public function setFromCurrency(?string $fromCurrency = null): self
     {
@@ -94,7 +94,7 @@ class DeleteCurrencyRateRequest extends AbstractStructBase
     /**
      * Set toCurrency value
      * @param string $toCurrency
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteCurrencyRateRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteCurrencyRateRequest
      */
     public function setToCurrency(?string $toCurrency = null): self
     {
@@ -117,7 +117,7 @@ class DeleteCurrencyRateRequest extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteCurrencyRateRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteCurrencyRateRequest
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -140,7 +140,7 @@ class DeleteCurrencyRateRequest extends AbstractStructBase
     /**
      * Set isGlobal value
      * @param bool $isGlobal
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteCurrencyRateRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteCurrencyRateRequest
      */
     public function setIsGlobal(?bool $isGlobal = null): self
     {
@@ -163,7 +163,7 @@ class DeleteCurrencyRateRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteCurrencyRateRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteCurrencyRateRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

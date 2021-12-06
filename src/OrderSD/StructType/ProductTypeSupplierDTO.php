@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class ProductTypeSupplierDTO extends AbstractStructBase
     /**
      * Set isDefault value
      * @param bool $isDefault
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ProductTypeSupplierDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ProductTypeSupplierDTO
      */
     public function setIsDefault(?bool $isDefault = null): self
     {
@@ -86,7 +86,7 @@ class ProductTypeSupplierDTO extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ProductTypeSupplierDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ProductTypeSupplierDTO
      */
     public function setProductType(?string $productType = null): self
     {
@@ -109,7 +109,7 @@ class ProductTypeSupplierDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ProductTypeSupplierDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ProductTypeSupplierDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -132,7 +132,7 @@ class ProductTypeSupplierDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ProductTypeSupplierDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ProductTypeSupplierDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

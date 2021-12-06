@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MfGroupLocalDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MfGroupLocalDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MfGroupLocalDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -86,7 +86,7 @@ class MfGroupLocalDTO extends AbstractStructBase
     /**
      * Set groupId value
      * @param string $groupId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MfGroupLocalDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MfGroupLocalDTO
      */
     public function setGroupId(?string $groupId = null): self
     {
@@ -109,7 +109,7 @@ class MfGroupLocalDTO extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MfGroupLocalDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MfGroupLocalDTO
      */
     public function setLocale(?string $locale = null): self
     {
@@ -132,7 +132,7 @@ class MfGroupLocalDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MfGroupLocalDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MfGroupLocalDTO
      */
     public function setName(?string $name = null): self
     {

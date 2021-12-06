@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetComplaintDocumentsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmDocument
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO[]
      */
     protected ?array $MidocoCrmDocument = null;
     /**
      * Constructor method for GetComplaintDocumentsResponse
      * @uses GetComplaintDocumentsResponse::setMidocoCrmDocument()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO[] $midocoCrmDocument
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO[] $midocoCrmDocument
      */
     public function __construct(?array $midocoCrmDocument = null)
     {
@@ -36,7 +36,7 @@ class GetComplaintDocumentsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmDocument value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO[]
      */
     public function getMidocoCrmDocument(): ?array
     {
@@ -57,12 +57,12 @@ class GetComplaintDocumentsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getComplaintDocumentsResponseMidocoCrmDocumentItem) {
             // validation for constraint: itemType
-            if (!$getComplaintDocumentsResponseMidocoCrmDocumentItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO) {
+            if (!$getComplaintDocumentsResponseMidocoCrmDocumentItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO) {
                 $invalidValues[] = is_object($getComplaintDocumentsResponseMidocoCrmDocumentItem) ? get_class($getComplaintDocumentsResponseMidocoCrmDocumentItem) : sprintf('%s(%s)', gettype($getComplaintDocumentsResponseMidocoCrmDocumentItem), var_export($getComplaintDocumentsResponseMidocoCrmDocumentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmDocument property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmDocument property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetComplaintDocumentsResponse extends AbstractStructBase
     /**
      * Set MidocoCrmDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO[] $midocoCrmDocument
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetComplaintDocumentsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO[] $midocoCrmDocument
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetComplaintDocumentsResponse
      */
     public function setMidocoCrmDocument(?array $midocoCrmDocument = null): self
     {
@@ -87,14 +87,14 @@ class GetComplaintDocumentsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetComplaintDocumentsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetComplaintDocumentsResponse
      */
-    public function addToMidocoCrmDocument(\Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO $item): self
+    public function addToMidocoCrmDocument(\Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmDocument property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmDocument property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmDocument[] = $item;
         

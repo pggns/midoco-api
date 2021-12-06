@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class CustomerCategoryDTO extends AbstractStructBase
     /**
      * Set customerCategory value
      * @param string $customerCategory
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerCategoryDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerCategoryDTO
      */
     public function setCustomerCategory(?string $customerCategory = null): self
     {
@@ -118,7 +118,7 @@ class CustomerCategoryDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerCategoryDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerCategoryDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -141,7 +141,7 @@ class CustomerCategoryDTO extends AbstractStructBase
     /**
      * Set isAdressLocked value
      * @param bool $isAdressLocked
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerCategoryDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerCategoryDTO
      */
     public function setIsAdressLocked(?bool $isAdressLocked = null): self
     {
@@ -164,7 +164,7 @@ class CustomerCategoryDTO extends AbstractStructBase
     /**
      * Set isChangeable value
      * @param bool $isChangeable
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerCategoryDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerCategoryDTO
      */
     public function setIsChangeable(?bool $isChangeable = null): self
     {
@@ -187,7 +187,7 @@ class CustomerCategoryDTO extends AbstractStructBase
     /**
      * Set isContactLocked value
      * @param bool $isContactLocked
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerCategoryDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerCategoryDTO
      */
     public function setIsContactLocked(?bool $isContactLocked = null): self
     {
@@ -210,7 +210,7 @@ class CustomerCategoryDTO extends AbstractStructBase
     /**
      * Set isMainInfoLocked value
      * @param bool $isMainInfoLocked
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerCategoryDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerCategoryDTO
      */
     public function setIsMainInfoLocked(?bool $isMainInfoLocked = null): self
     {
@@ -233,7 +233,7 @@ class CustomerCategoryDTO extends AbstractStructBase
     /**
      * Set isNoMandatoryFields value
      * @param bool $isNoMandatoryFields
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerCategoryDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerCategoryDTO
      */
     public function setIsNoMandatoryFields(?bool $isNoMandatoryFields = null): self
     {
@@ -256,7 +256,7 @@ class CustomerCategoryDTO extends AbstractStructBase
     /**
      * Set isPaymentLocked value
      * @param bool $isPaymentLocked
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerCategoryDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerCategoryDTO
      */
     public function setIsPaymentLocked(?bool $isPaymentLocked = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -83,7 +83,7 @@ class GetEmailText4PrintTypeRequest extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailText4PrintTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailText4PrintTypeRequest
      */
     public function setMedia(?string $media = null): self
     {
@@ -106,7 +106,7 @@ class GetEmailText4PrintTypeRequest extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailText4PrintTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailText4PrintTypeRequest
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -129,7 +129,7 @@ class GetEmailText4PrintTypeRequest extends AbstractStructBase
     /**
      * Set templateId value
      * @param string $templateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailText4PrintTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailText4PrintTypeRequest
      */
     public function setTemplateId(?string $templateId = null): self
     {
@@ -152,7 +152,7 @@ class GetEmailText4PrintTypeRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailText4PrintTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailText4PrintTypeRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -202,7 +202,7 @@ class GetEmailText4PrintTypeRequest extends AbstractStructBase
      * Set repositoryId value
      * @throws InvalidArgumentException
      * @param int[] $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailText4PrintTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailText4PrintTypeRequest
      */
     public function setRepositoryId(?array $repositoryId = null): self
     {
@@ -218,7 +218,7 @@ class GetEmailText4PrintTypeRequest extends AbstractStructBase
      * Add item to repositoryId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailText4PrintTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailText4PrintTypeRequest
      */
     public function addToRepositoryId(int $item): self
     {
@@ -268,7 +268,7 @@ class GetEmailText4PrintTypeRequest extends AbstractStructBase
      * Set fileName value
      * @throws InvalidArgumentException
      * @param string[] $fileName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailText4PrintTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailText4PrintTypeRequest
      */
     public function setFileName(?array $fileName = null): self
     {
@@ -284,7 +284,7 @@ class GetEmailText4PrintTypeRequest extends AbstractStructBase
      * Add item to fileName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailText4PrintTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailText4PrintTypeRequest
      */
     public function addToFileName(string $item): self
     {

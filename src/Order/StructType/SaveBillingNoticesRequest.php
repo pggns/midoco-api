@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class SaveBillingNoticesRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoBillingNotice
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice[]
      */
     protected ?array $MidocoBillingNotice = null;
     /**
@@ -38,7 +38,7 @@ class SaveBillingNoticesRequest extends AbstractStructBase
      * @uses SaveBillingNoticesRequest::setMidocoBillingNotice()
      * @uses SaveBillingNoticesRequest::setManuallyCreatedTask()
      * @uses SaveBillingNoticesRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice[] $midocoBillingNotice
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice[] $midocoBillingNotice
      * @param bool $manuallyCreatedTask
      * @param int $internalVersion
      */
@@ -51,7 +51,7 @@ class SaveBillingNoticesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoBillingNotice value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice[]
      */
     public function getMidocoBillingNotice(): ?array
     {
@@ -72,12 +72,12 @@ class SaveBillingNoticesRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveBillingNoticesRequestMidocoBillingNoticeItem) {
             // validation for constraint: itemType
-            if (!$saveBillingNoticesRequestMidocoBillingNoticeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice) {
+            if (!$saveBillingNoticesRequestMidocoBillingNoticeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice) {
                 $invalidValues[] = is_object($saveBillingNoticesRequestMidocoBillingNoticeItem) ? get_class($saveBillingNoticesRequestMidocoBillingNoticeItem) : sprintf('%s(%s)', gettype($saveBillingNoticesRequestMidocoBillingNoticeItem), var_export($saveBillingNoticesRequestMidocoBillingNoticeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingNotice property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingNotice property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -86,8 +86,8 @@ class SaveBillingNoticesRequest extends AbstractStructBase
     /**
      * Set MidocoBillingNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice[] $midocoBillingNotice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingNoticesRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice[] $midocoBillingNotice
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingNoticesRequest
      */
     public function setMidocoBillingNotice(?array $midocoBillingNotice = null): self
     {
@@ -102,14 +102,14 @@ class SaveBillingNoticesRequest extends AbstractStructBase
     /**
      * Add item to MidocoBillingNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingNoticesRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice $item
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingNoticesRequest
      */
-    public function addToMidocoBillingNotice(\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice $item): self
+    public function addToMidocoBillingNotice(\Pggns\MidocoApi\Order\StructType\MidocoBillingNotice $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingNotice property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingNotice property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingNotice[] = $item;
         
@@ -126,7 +126,7 @@ class SaveBillingNoticesRequest extends AbstractStructBase
     /**
      * Set manuallyCreatedTask value
      * @param bool $manuallyCreatedTask
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingNoticesRequest
      */
     public function setManuallyCreatedTask(?bool $manuallyCreatedTask = null): self
     {
@@ -149,7 +149,7 @@ class SaveBillingNoticesRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingNoticesRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

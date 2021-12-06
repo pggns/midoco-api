@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -82,7 +82,7 @@ class CheckAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set travelDateFrom value
      * @param string $travelDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckAgencySettlementLevelRequest
      */
     public function setTravelDateFrom(string $travelDateFrom): self
     {
@@ -105,7 +105,7 @@ class CheckAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set travelDateTo value
      * @param string $travelDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckAgencySettlementLevelRequest
      */
     public function setTravelDateTo(string $travelDateTo): self
     {
@@ -128,7 +128,7 @@ class CheckAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckAgencySettlementLevelRequest
      */
     public function setSettlementType(string $settlementType): self
     {
@@ -178,7 +178,7 @@ class CheckAgencySettlementLevelRequest extends AbstractStructBase
      * Set ID value
      * @throws InvalidArgumentException
      * @param string[] $iD
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckAgencySettlementLevelRequest
      */
     public function setID(?array $iD = null): self
     {
@@ -194,7 +194,7 @@ class CheckAgencySettlementLevelRequest extends AbstractStructBase
      * Add item to ID value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckAgencySettlementLevelRequest
      */
     public function addToID(string $item): self
     {
@@ -217,7 +217,7 @@ class CheckAgencySettlementLevelRequest extends AbstractStructBase
     /**
      * Set isPreview value
      * @param bool $isPreview
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckAgencySettlementLevelRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckAgencySettlementLevelRequest
      */
     public function setIsPreview(?bool $isPreview = true): self
     {

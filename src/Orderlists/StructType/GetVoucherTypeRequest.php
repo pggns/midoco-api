@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetVoucherTypeRequest extends AbstractStructBase
      * The MidocoVoucherType
      * Meta information extracted from the WSDL
      * - ref: MidocoVoucherType
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\VoucherTypeDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\VoucherTypeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\VoucherTypeDTO $MidocoVoucherType = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\VoucherTypeDTO $MidocoVoucherType = null;
     /**
      * The supplierId
      * @var string|null
@@ -35,11 +35,11 @@ class GetVoucherTypeRequest extends AbstractStructBase
      * @uses GetVoucherTypeRequest::setMidocoVoucherType()
      * @uses GetVoucherTypeRequest::setSupplierId()
      * @uses GetVoucherTypeRequest::setValidNow()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\VoucherTypeDTO $midocoVoucherType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\VoucherTypeDTO $midocoVoucherType
      * @param string $supplierId
      * @param bool $validNow
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\VoucherTypeDTO $midocoVoucherType = null, ?string $supplierId = null, ?bool $validNow = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\VoucherTypeDTO $midocoVoucherType = null, ?string $supplierId = null, ?bool $validNow = null)
     {
         $this
             ->setMidocoVoucherType($midocoVoucherType)
@@ -48,18 +48,18 @@ class GetVoucherTypeRequest extends AbstractStructBase
     }
     /**
      * Get MidocoVoucherType value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VoucherTypeDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VoucherTypeDTO|null
      */
-    public function getMidocoVoucherType(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\VoucherTypeDTO
+    public function getMidocoVoucherType(): ?\Pggns\MidocoApi\Orderlists\StructType\VoucherTypeDTO
     {
         return $this->MidocoVoucherType;
     }
     /**
      * Set MidocoVoucherType value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\VoucherTypeDTO $midocoVoucherType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetVoucherTypeRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\VoucherTypeDTO $midocoVoucherType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetVoucherTypeRequest
      */
-    public function setMidocoVoucherType(?\Pggns\MidocoApi\Api\Orderlists\StructType\VoucherTypeDTO $midocoVoucherType = null): self
+    public function setMidocoVoucherType(?\Pggns\MidocoApi\Orderlists\StructType\VoucherTypeDTO $midocoVoucherType = null): self
     {
         $this->MidocoVoucherType = $midocoVoucherType;
         
@@ -76,7 +76,7 @@ class GetVoucherTypeRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetVoucherTypeRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetVoucherTypeRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -99,7 +99,7 @@ class GetVoucherTypeRequest extends AbstractStructBase
     /**
      * Set validNow value
      * @param bool $validNow
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetVoucherTypeRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetVoucherTypeRequest
      */
     public function setValidNow(?bool $validNow = null): self
     {

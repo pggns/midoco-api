@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -101,7 +101,7 @@ class SearchBankAccountRequest extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchBankAccountRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchBankAccountRequest
      */
     public function setIban(?string $iban = null): self
     {
@@ -124,7 +124,7 @@ class SearchBankAccountRequest extends AbstractStructBase
     /**
      * Set bic value
      * @param string $bic
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchBankAccountRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchBankAccountRequest
      */
     public function setBic(?string $bic = null): self
     {
@@ -147,7 +147,7 @@ class SearchBankAccountRequest extends AbstractStructBase
     /**
      * Set bankNo value
      * @param string $bankNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchBankAccountRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchBankAccountRequest
      */
     public function setBankNo(?string $bankNo = null): self
     {
@@ -170,7 +170,7 @@ class SearchBankAccountRequest extends AbstractStructBase
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchBankAccountRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchBankAccountRequest
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -193,7 +193,7 @@ class SearchBankAccountRequest extends AbstractStructBase
     /**
      * Set intermediateAccountDebit value
      * @param int $intermediateAccountDebit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchBankAccountRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchBankAccountRequest
      */
     public function setIntermediateAccountDebit(?int $intermediateAccountDebit = null): self
     {
@@ -216,7 +216,7 @@ class SearchBankAccountRequest extends AbstractStructBase
     /**
      * Set intermediateAccountCredit value
      * @param int $intermediateAccountCredit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchBankAccountRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchBankAccountRequest
      */
     public function setIntermediateAccountCredit(?int $intermediateAccountCredit = null): self
     {
@@ -239,7 +239,7 @@ class SearchBankAccountRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchBankAccountRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchBankAccountRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

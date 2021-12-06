@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetSupplierInvoiceListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierInvoiceList
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListType[]
      */
     protected ?array $MidocoSupplierInvoiceList = null;
     /**
@@ -33,7 +33,7 @@ class GetSupplierInvoiceListResponse extends AbstractStructBase
      * Constructor method for GetSupplierInvoiceListResponse
      * @uses GetSupplierInvoiceListResponse::setMidocoSupplierInvoiceList()
      * @uses GetSupplierInvoiceListResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListType[] $midocoSupplierInvoiceList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListType[] $midocoSupplierInvoiceList
      * @param int $noOfResults
      */
     public function __construct(?array $midocoSupplierInvoiceList = null, ?int $noOfResults = null)
@@ -44,7 +44,7 @@ class GetSupplierInvoiceListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierInvoiceList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListType[]
      */
     public function getMidocoSupplierInvoiceList(): ?array
     {
@@ -65,12 +65,12 @@ class GetSupplierInvoiceListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSupplierInvoiceListResponseMidocoSupplierInvoiceListItem) {
             // validation for constraint: itemType
-            if (!$getSupplierInvoiceListResponseMidocoSupplierInvoiceListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListType) {
+            if (!$getSupplierInvoiceListResponseMidocoSupplierInvoiceListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListType) {
                 $invalidValues[] = is_object($getSupplierInvoiceListResponseMidocoSupplierInvoiceListItem) ? get_class($getSupplierInvoiceListResponseMidocoSupplierInvoiceListItem) : sprintf('%s(%s)', gettype($getSupplierInvoiceListResponseMidocoSupplierInvoiceListItem), var_export($getSupplierInvoiceListResponseMidocoSupplierInvoiceListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierInvoiceList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierInvoiceList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -79,8 +79,8 @@ class GetSupplierInvoiceListResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierInvoiceList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListType[] $midocoSupplierInvoiceList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSupplierInvoiceListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListType[] $midocoSupplierInvoiceList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSupplierInvoiceListResponse
      */
     public function setMidocoSupplierInvoiceList(?array $midocoSupplierInvoiceList = null): self
     {
@@ -95,14 +95,14 @@ class GetSupplierInvoiceListResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierInvoiceList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSupplierInvoiceListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSupplierInvoiceListResponse
      */
-    public function addToMidocoSupplierInvoiceList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListType $item): self
+    public function addToMidocoSupplierInvoiceList(\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListType) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierInvoiceList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierInvoiceListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListType) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierInvoiceList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierInvoiceListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierInvoiceList[] = $item;
         
@@ -119,7 +119,7 @@ class GetSupplierInvoiceListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSupplierInvoiceListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSupplierInvoiceListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class OpenErCsvExportResponse extends AbstractStructBase
     /**
      * Set zippedCsvContent value
      * @param string $zippedCsvContent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OpenErCsvExportResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OpenErCsvExportResponse
      */
     public function setZippedCsvContent(?string $zippedCsvContent = null): self
     {
@@ -72,7 +72,7 @@ class OpenErCsvExportResponse extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OpenErCsvExportResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OpenErCsvExportResponse
      */
     public function setFileName(?string $fileName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class PackageAirlineData extends AbstractStructBase
     /**
      * Set packageCode value
      * @param string $packageCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageAirlineData
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageAirlineData
      */
     public function setPackageCode(?string $packageCode = null): self
     {
@@ -94,7 +94,7 @@ class PackageAirlineData extends AbstractStructBase
     /**
      * Set bspCode value
      * @param string $bspCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageAirlineData
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageAirlineData
      */
     public function setBspCode(?string $bspCode = null): self
     {
@@ -117,7 +117,7 @@ class PackageAirlineData extends AbstractStructBase
     /**
      * Set carrierCode value
      * @param string $carrierCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageAirlineData
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageAirlineData
      */
     public function setCarrierCode(?string $carrierCode = null): self
     {
@@ -140,7 +140,7 @@ class PackageAirlineData extends AbstractStructBase
     /**
      * Set allNoVatTickets value
      * @param bool $allNoVatTickets
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageAirlineData
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageAirlineData
      */
     public function setAllNoVatTickets(?bool $allNoVatTickets = null): self
     {
@@ -163,7 +163,7 @@ class PackageAirlineData extends AbstractStructBase
     /**
      * Set allITPositions value
      * @param bool $allITPositions
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PackageAirlineData
+     * @return \Pggns\MidocoApi\Documents\StructType\PackageAirlineData
      */
     public function setAllITPositions(?bool $allITPositions = null): self
     {

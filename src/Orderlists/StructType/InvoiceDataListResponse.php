@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class InvoiceDataListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType[]
      */
     protected ?array $MidocoInvoiceDataList = null;
     /**
@@ -26,7 +26,7 @@ class InvoiceDataListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListSumsType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListSumsType[]
      */
     protected ?array $MidocoInvoiceDataListSums = null;
     /**
@@ -41,8 +41,8 @@ class InvoiceDataListResponse extends AbstractStructBase
      * @uses InvoiceDataListResponse::setMidocoInvoiceDataList()
      * @uses InvoiceDataListResponse::setMidocoInvoiceDataListSums()
      * @uses InvoiceDataListResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType[] $midocoInvoiceDataList
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListSumsType[] $midocoInvoiceDataListSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType[] $midocoInvoiceDataList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListSumsType[] $midocoInvoiceDataListSums
      * @param int $noOfResults
      */
     public function __construct(?array $midocoInvoiceDataList = null, ?array $midocoInvoiceDataListSums = null, ?int $noOfResults = null)
@@ -54,7 +54,7 @@ class InvoiceDataListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoInvoiceDataList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType[]
      */
     public function getMidocoInvoiceDataList(): ?array
     {
@@ -75,12 +75,12 @@ class InvoiceDataListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $invoiceDataListResponseMidocoInvoiceDataListItem) {
             // validation for constraint: itemType
-            if (!$invoiceDataListResponseMidocoInvoiceDataListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType) {
+            if (!$invoiceDataListResponseMidocoInvoiceDataListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType) {
                 $invalidValues[] = is_object($invoiceDataListResponseMidocoInvoiceDataListItem) ? get_class($invoiceDataListResponseMidocoInvoiceDataListItem) : sprintf('%s(%s)', gettype($invoiceDataListResponseMidocoInvoiceDataListItem), var_export($invoiceDataListResponseMidocoInvoiceDataListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoInvoiceDataList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoInvoiceDataList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -89,8 +89,8 @@ class InvoiceDataListResponse extends AbstractStructBase
     /**
      * Set MidocoInvoiceDataList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType[] $midocoInvoiceDataList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InvoiceDataListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType[] $midocoInvoiceDataList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InvoiceDataListResponse
      */
     public function setMidocoInvoiceDataList(?array $midocoInvoiceDataList = null): self
     {
@@ -105,14 +105,14 @@ class InvoiceDataListResponse extends AbstractStructBase
     /**
      * Add item to MidocoInvoiceDataList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InvoiceDataListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InvoiceDataListResponse
      */
-    public function addToMidocoInvoiceDataList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType $item): self
+    public function addToMidocoInvoiceDataList(\Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType) {
-            throw new InvalidArgumentException(sprintf('The MidocoInvoiceDataList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType) {
+            throw new InvalidArgumentException(sprintf('The MidocoInvoiceDataList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoInvoiceDataList[] = $item;
         
@@ -120,7 +120,7 @@ class InvoiceDataListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoInvoiceDataListSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListSumsType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListSumsType[]
      */
     public function getMidocoInvoiceDataListSums(): ?array
     {
@@ -141,12 +141,12 @@ class InvoiceDataListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $invoiceDataListResponseMidocoInvoiceDataListSumsItem) {
             // validation for constraint: itemType
-            if (!$invoiceDataListResponseMidocoInvoiceDataListSumsItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListSumsType) {
+            if (!$invoiceDataListResponseMidocoInvoiceDataListSumsItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListSumsType) {
                 $invalidValues[] = is_object($invoiceDataListResponseMidocoInvoiceDataListSumsItem) ? get_class($invoiceDataListResponseMidocoInvoiceDataListSumsItem) : sprintf('%s(%s)', gettype($invoiceDataListResponseMidocoInvoiceDataListSumsItem), var_export($invoiceDataListResponseMidocoInvoiceDataListSumsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoInvoiceDataListSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListSumsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoInvoiceDataListSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListSumsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -155,8 +155,8 @@ class InvoiceDataListResponse extends AbstractStructBase
     /**
      * Set MidocoInvoiceDataListSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListSumsType[] $midocoInvoiceDataListSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InvoiceDataListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListSumsType[] $midocoInvoiceDataListSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InvoiceDataListResponse
      */
     public function setMidocoInvoiceDataListSums(?array $midocoInvoiceDataListSums = null): self
     {
@@ -171,14 +171,14 @@ class InvoiceDataListResponse extends AbstractStructBase
     /**
      * Add item to MidocoInvoiceDataListSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListSumsType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InvoiceDataListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListSumsType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InvoiceDataListResponse
      */
-    public function addToMidocoInvoiceDataListSums(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListSumsType $item): self
+    public function addToMidocoInvoiceDataListSums(\Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListSumsType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListSumsType) {
-            throw new InvalidArgumentException(sprintf('The MidocoInvoiceDataListSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListSumsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListSumsType) {
+            throw new InvalidArgumentException(sprintf('The MidocoInvoiceDataListSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListSumsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoInvoiceDataListSums[] = $item;
         
@@ -195,7 +195,7 @@ class InvoiceDataListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InvoiceDataListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InvoiceDataListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

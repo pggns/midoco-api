@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Agency extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Agency
+     * @return \Pggns\MidocoApi\Order\ServiceType\Agency
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -32,15 +32,15 @@ class Agency extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AgencySettlementBookingSetItemPriceRequest $paramAgencySettlementBookingSetItemPriceRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencySettlementBookingSetItemPriceResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\AgencySettlementBookingSetItemPriceRequest $paramAgencySettlementBookingSetItemPriceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AgencySettlementBookingSetItemPriceResponse|bool
      */
-    public function agencySettlementBookingSetItemPrice(\Pggns\MidocoApi\Api\Order\StructType\AgencySettlementBookingSetItemPriceRequest $paramAgencySettlementBookingSetItemPriceRequest)
+    public function agencySettlementBookingSetItemPrice(\Pggns\MidocoApi\Order\StructType\AgencySettlementBookingSetItemPriceRequest $paramAgencySettlementBookingSetItemPriceRequest)
     {
         try {
             $this->setResult($resultAgencySettlementBookingSetItemPrice = $this->getSoapClient()->__soapCall('agencySettlementBookingSetItemPrice', [
@@ -57,7 +57,7 @@ class Agency extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencySettlementBookingSetItemPriceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\AgencySettlementBookingSetItemPriceResponse
      */
     public function getResult()
     {

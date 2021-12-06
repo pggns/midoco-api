@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,7 +20,7 @@ class AnnouncePaymentRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: AnnounceOrderPayment
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AnnounceOrderPayment[]
+     * @var \Pggns\MidocoApi\Order\StructType\AnnounceOrderPayment[]
      */
     protected ?array $AnnounceOrderPayment = null;
     /**
@@ -58,7 +58,7 @@ class AnnouncePaymentRequest extends AbstractStructBase
      * @uses AnnouncePaymentRequest::setSupplierId()
      * @uses AnnouncePaymentRequest::setBookingId()
      * @uses AnnouncePaymentRequest::setDontImportExistingPayments()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AnnounceOrderPayment[] $announceOrderPayment
+     * @param \Pggns\MidocoApi\Order\StructType\AnnounceOrderPayment[] $announceOrderPayment
      * @param int $orderId
      * @param int $orderNo
      * @param string $supplierId
@@ -77,7 +77,7 @@ class AnnouncePaymentRequest extends AbstractStructBase
     }
     /**
      * Get AnnounceOrderPayment value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceOrderPayment[]
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceOrderPayment[]
      */
     public function getAnnounceOrderPayment(): ?array
     {
@@ -98,12 +98,12 @@ class AnnouncePaymentRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $announcePaymentRequestAnnounceOrderPaymentItem) {
             // validation for constraint: itemType
-            if (!$announcePaymentRequestAnnounceOrderPaymentItem instanceof \Pggns\MidocoApi\Api\Order\StructType\AnnounceOrderPayment) {
+            if (!$announcePaymentRequestAnnounceOrderPaymentItem instanceof \Pggns\MidocoApi\Order\StructType\AnnounceOrderPayment) {
                 $invalidValues[] = is_object($announcePaymentRequestAnnounceOrderPaymentItem) ? get_class($announcePaymentRequestAnnounceOrderPaymentItem) : sprintf('%s(%s)', gettype($announcePaymentRequestAnnounceOrderPaymentItem), var_export($announcePaymentRequestAnnounceOrderPaymentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AnnounceOrderPayment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AnnounceOrderPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AnnounceOrderPayment property can only contain items of type \Pggns\MidocoApi\Order\StructType\AnnounceOrderPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -112,8 +112,8 @@ class AnnouncePaymentRequest extends AbstractStructBase
     /**
      * Set AnnounceOrderPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AnnounceOrderPayment[] $announceOrderPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnouncePaymentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\AnnounceOrderPayment[] $announceOrderPayment
+     * @return \Pggns\MidocoApi\Order\StructType\AnnouncePaymentRequest
      */
     public function setAnnounceOrderPayment(?array $announceOrderPayment = null): self
     {
@@ -128,14 +128,14 @@ class AnnouncePaymentRequest extends AbstractStructBase
     /**
      * Add item to AnnounceOrderPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AnnounceOrderPayment $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnouncePaymentRequest
+     * @param \Pggns\MidocoApi\Order\StructType\AnnounceOrderPayment $item
+     * @return \Pggns\MidocoApi\Order\StructType\AnnouncePaymentRequest
      */
-    public function addToAnnounceOrderPayment(\Pggns\MidocoApi\Api\Order\StructType\AnnounceOrderPayment $item): self
+    public function addToAnnounceOrderPayment(\Pggns\MidocoApi\Order\StructType\AnnounceOrderPayment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\AnnounceOrderPayment) {
-            throw new InvalidArgumentException(sprintf('The AnnounceOrderPayment property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AnnounceOrderPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\AnnounceOrderPayment) {
+            throw new InvalidArgumentException(sprintf('The AnnounceOrderPayment property can only contain items of type \Pggns\MidocoApi\Order\StructType\AnnounceOrderPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AnnounceOrderPayment[] = $item;
         
@@ -152,7 +152,7 @@ class AnnouncePaymentRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnouncePaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnouncePaymentRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -175,7 +175,7 @@ class AnnouncePaymentRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnouncePaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnouncePaymentRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -198,7 +198,7 @@ class AnnouncePaymentRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnouncePaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnouncePaymentRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -221,7 +221,7 @@ class AnnouncePaymentRequest extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnouncePaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnouncePaymentRequest
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -244,7 +244,7 @@ class AnnouncePaymentRequest extends AbstractStructBase
     /**
      * Set dontImportExistingPayments value
      * @param bool $dontImportExistingPayments
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnouncePaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnouncePaymentRequest
      */
     public function setDontImportExistingPayments(?bool $dontImportExistingPayments = false): self
     {

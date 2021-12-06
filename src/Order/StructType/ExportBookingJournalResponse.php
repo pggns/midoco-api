@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class ExportBookingJournalResponse extends AbstractStructBase
     /**
      * Set repository_id value
      * @param int $repository_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalResponse
      */
     public function setRepository_id(?int $repository_id = null): self
     {
@@ -86,7 +86,7 @@ class ExportBookingJournalResponse extends AbstractStructBase
     /**
      * Set checksum value
      * @param int $checksum
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalResponse
      */
     public function setChecksum(?int $checksum = null): self
     {
@@ -109,7 +109,7 @@ class ExportBookingJournalResponse extends AbstractStructBase
     /**
      * Set errorCounter value
      * @param int $errorCounter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalResponse
      */
     public function setErrorCounter(?int $errorCounter = null): self
     {
@@ -132,7 +132,7 @@ class ExportBookingJournalResponse extends AbstractStructBase
     /**
      * Set successCounter value
      * @param int $successCounter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportBookingJournalResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ExportBookingJournalResponse
      */
     public function setSuccessCounter(?int $successCounter = null): self
     {

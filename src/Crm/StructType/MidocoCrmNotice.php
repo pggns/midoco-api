@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoCrmNotice extends CrmNoticeDTO
     /**
      * Set delegationComment value
      * @param string $delegationComment
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmNotice
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmNotice
      */
     public function setDelegationComment(?string $delegationComment = null): self
     {

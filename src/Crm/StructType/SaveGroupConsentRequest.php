@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class SaveGroupConsentRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 1
      * - ref: MidocoGroupConsent
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoGroupConsent
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoGroupConsent
      */
-    protected \Pggns\MidocoApi\Api\Crm\StructType\MidocoGroupConsent $MidocoGroupConsent;
+    protected \Pggns\MidocoApi\Crm\StructType\MidocoGroupConsent $MidocoGroupConsent;
     /**
      * The customerId
      * @var int|null
@@ -36,11 +36,11 @@ class SaveGroupConsentRequest extends AbstractStructBase
      * @uses SaveGroupConsentRequest::setMidocoGroupConsent()
      * @uses SaveGroupConsentRequest::setCustomerId()
      * @uses SaveGroupConsentRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoGroupConsent $midocoGroupConsent
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoGroupConsent $midocoGroupConsent
      * @param int $customerId
      * @param int $internalVersion
      */
-    public function __construct(\Pggns\MidocoApi\Api\Crm\StructType\MidocoGroupConsent $midocoGroupConsent, ?int $customerId = null, ?int $internalVersion = null)
+    public function __construct(\Pggns\MidocoApi\Crm\StructType\MidocoGroupConsent $midocoGroupConsent, ?int $customerId = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoGroupConsent($midocoGroupConsent)
@@ -49,18 +49,18 @@ class SaveGroupConsentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoGroupConsent value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoGroupConsent
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoGroupConsent
      */
-    public function getMidocoGroupConsent(): \Pggns\MidocoApi\Api\Crm\StructType\MidocoGroupConsent
+    public function getMidocoGroupConsent(): \Pggns\MidocoApi\Crm\StructType\MidocoGroupConsent
     {
         return $this->MidocoGroupConsent;
     }
     /**
      * Set MidocoGroupConsent value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoGroupConsent $midocoGroupConsent
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveGroupConsentRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoGroupConsent $midocoGroupConsent
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveGroupConsentRequest
      */
-    public function setMidocoGroupConsent(\Pggns\MidocoApi\Api\Crm\StructType\MidocoGroupConsent $midocoGroupConsent): self
+    public function setMidocoGroupConsent(\Pggns\MidocoApi\Crm\StructType\MidocoGroupConsent $midocoGroupConsent): self
     {
         $this->MidocoGroupConsent = $midocoGroupConsent;
         
@@ -77,7 +77,7 @@ class SaveGroupConsentRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveGroupConsentRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveGroupConsentRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -100,7 +100,7 @@ class SaveGroupConsentRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveGroupConsentRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveGroupConsentRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

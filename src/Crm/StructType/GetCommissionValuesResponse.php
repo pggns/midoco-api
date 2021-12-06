@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetCommissionValuesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCommissionValue
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CommissionValueDTO[]
      */
     protected ?array $MidocoCommissionValue = null;
     /**
      * Constructor method for GetCommissionValuesResponse
      * @uses GetCommissionValuesResponse::setMidocoCommissionValue()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO[] $midocoCommissionValue
+     * @param \Pggns\MidocoApi\Crm\StructType\CommissionValueDTO[] $midocoCommissionValue
      */
     public function __construct(?array $midocoCommissionValue = null)
     {
@@ -36,7 +36,7 @@ class GetCommissionValuesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCommissionValue value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CommissionValueDTO[]
      */
     public function getMidocoCommissionValue(): ?array
     {
@@ -57,12 +57,12 @@ class GetCommissionValuesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCommissionValuesResponseMidocoCommissionValueItem) {
             // validation for constraint: itemType
-            if (!$getCommissionValuesResponseMidocoCommissionValueItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO) {
+            if (!$getCommissionValuesResponseMidocoCommissionValueItem instanceof \Pggns\MidocoApi\Crm\StructType\CommissionValueDTO) {
                 $invalidValues[] = is_object($getCommissionValuesResponseMidocoCommissionValueItem) ? get_class($getCommissionValuesResponseMidocoCommissionValueItem) : sprintf('%s(%s)', gettype($getCommissionValuesResponseMidocoCommissionValueItem), var_export($getCommissionValuesResponseMidocoCommissionValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCommissionValue property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCommissionValue property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CommissionValueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetCommissionValuesResponse extends AbstractStructBase
     /**
      * Set MidocoCommissionValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO[] $midocoCommissionValue
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCommissionValuesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CommissionValueDTO[] $midocoCommissionValue
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCommissionValuesResponse
      */
     public function setMidocoCommissionValue(?array $midocoCommissionValue = null): self
     {
@@ -87,14 +87,14 @@ class GetCommissionValuesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCommissionValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCommissionValuesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CommissionValueDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCommissionValuesResponse
      */
-    public function addToMidocoCommissionValue(\Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO $item): self
+    public function addToMidocoCommissionValue(\Pggns\MidocoApi\Crm\StructType\CommissionValueDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCommissionValue property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CommissionValueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CommissionValueDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCommissionValue property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CommissionValueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCommissionValue[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetDocumentNatureRetentionsRequest extends AbstractStructBase
      * The MidocoDocumentNatureRetention
      * Meta information extracted from the WSDL
      * - ref: MidocoDocumentNatureRetention
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureRetentionType|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureRetentionType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureRetentionType $MidocoDocumentNatureRetention = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureRetentionType $MidocoDocumentNatureRetention = null;
     /**
      * Constructor method for GetDocumentNatureRetentionsRequest
      * @uses GetDocumentNatureRetentionsRequest::setMidocoDocumentNatureRetention()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention = null)
     {
         $this
             ->setMidocoDocumentNatureRetention($midocoDocumentNatureRetention);
     }
     /**
      * Get MidocoDocumentNatureRetention value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureRetentionType|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureRetentionType|null
      */
-    public function getMidocoDocumentNatureRetention(): ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureRetentionType
+    public function getMidocoDocumentNatureRetention(): ?\Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureRetentionType
     {
         return $this->MidocoDocumentNatureRetention;
     }
     /**
      * Set MidocoDocumentNatureRetention value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetDocumentNatureRetentionsRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetDocumentNatureRetentionsRequest
      */
-    public function setMidocoDocumentNatureRetention(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention = null): self
+    public function setMidocoDocumentNatureRetention(?\Pggns\MidocoApi\Workflow\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention = null): self
     {
         $this->MidocoDocumentNatureRetention = $midocoDocumentNatureRetention;
         

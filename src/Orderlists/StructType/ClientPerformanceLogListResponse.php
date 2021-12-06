@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,22 +18,22 @@ class ClientPerformanceLogListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogInfoType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogInfoType[]
      */
     protected ?array $ClientPerformanceLogInfo = null;
     /**
      * The ClientPerformanceLogSumInfo
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType $ClientPerformanceLogSumInfo = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType $ClientPerformanceLogSumInfo = null;
     /**
      * Constructor method for ClientPerformanceLogListResponse
      * @uses ClientPerformanceLogListResponse::setClientPerformanceLogInfo()
      * @uses ClientPerformanceLogListResponse::setClientPerformanceLogSumInfo()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogInfoType[] $clientPerformanceLogInfo
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType $clientPerformanceLogSumInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogInfoType[] $clientPerformanceLogInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType $clientPerformanceLogSumInfo
      */
-    public function __construct(?array $clientPerformanceLogInfo = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType $clientPerformanceLogSumInfo = null)
+    public function __construct(?array $clientPerformanceLogInfo = null, ?\Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType $clientPerformanceLogSumInfo = null)
     {
         $this
             ->setClientPerformanceLogInfo($clientPerformanceLogInfo)
@@ -41,7 +41,7 @@ class ClientPerformanceLogListResponse extends AbstractStructBase
     }
     /**
      * Get ClientPerformanceLogInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogInfoType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogInfoType[]
      */
     public function getClientPerformanceLogInfo(): ?array
     {
@@ -62,12 +62,12 @@ class ClientPerformanceLogListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $clientPerformanceLogListResponseClientPerformanceLogInfoItem) {
             // validation for constraint: itemType
-            if (!$clientPerformanceLogListResponseClientPerformanceLogInfoItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogInfoType) {
+            if (!$clientPerformanceLogListResponseClientPerformanceLogInfoItem instanceof \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogInfoType) {
                 $invalidValues[] = is_object($clientPerformanceLogListResponseClientPerformanceLogInfoItem) ? get_class($clientPerformanceLogListResponseClientPerformanceLogInfoItem) : sprintf('%s(%s)', gettype($clientPerformanceLogListResponseClientPerformanceLogInfoItem), var_export($clientPerformanceLogListResponseClientPerformanceLogInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ClientPerformanceLogInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ClientPerformanceLogInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -76,8 +76,8 @@ class ClientPerformanceLogListResponse extends AbstractStructBase
     /**
      * Set ClientPerformanceLogInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogInfoType[] $clientPerformanceLogInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogInfoType[] $clientPerformanceLogInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogListResponse
      */
     public function setClientPerformanceLogInfo(?array $clientPerformanceLogInfo = null): self
     {
@@ -92,14 +92,14 @@ class ClientPerformanceLogListResponse extends AbstractStructBase
     /**
      * Add item to ClientPerformanceLogInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogInfoType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogInfoType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogListResponse
      */
-    public function addToClientPerformanceLogInfo(\Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogInfoType $item): self
+    public function addToClientPerformanceLogInfo(\Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogInfoType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogInfoType) {
-            throw new InvalidArgumentException(sprintf('The ClientPerformanceLogInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogInfoType) {
+            throw new InvalidArgumentException(sprintf('The ClientPerformanceLogInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ClientPerformanceLogInfo[] = $item;
         
@@ -107,18 +107,18 @@ class ClientPerformanceLogListResponse extends AbstractStructBase
     }
     /**
      * Get ClientPerformanceLogSumInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType|null
      */
-    public function getClientPerformanceLogSumInfo(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType
+    public function getClientPerformanceLogSumInfo(): ?\Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType
     {
         return $this->ClientPerformanceLogSumInfo;
     }
     /**
      * Set ClientPerformanceLogSumInfo value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType $clientPerformanceLogSumInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType $clientPerformanceLogSumInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogListResponse
      */
-    public function setClientPerformanceLogSumInfo(?\Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType $clientPerformanceLogSumInfo = null): self
+    public function setClientPerformanceLogSumInfo(?\Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType $clientPerformanceLogSumInfo = null): self
     {
         $this->ClientPerformanceLogSumInfo = $clientPerformanceLogSumInfo;
         

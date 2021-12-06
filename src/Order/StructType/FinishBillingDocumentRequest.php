@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class FinishBillingDocumentRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FinishBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\FinishBillingDocumentRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -70,7 +70,7 @@ class FinishBillingDocumentRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FinishBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\FinishBillingDocumentRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {

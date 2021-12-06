@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveProcessAssignRequest extends AbstractStructBase
      * The MidocoProcessAssign
      * Meta information extracted from the WSDL
      * - ref: MidocoProcessAssign
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\ProcessAssignDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\ProcessAssignDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\ProcessAssignDTO $MidocoProcessAssign = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\ProcessAssignDTO $MidocoProcessAssign = null;
     /**
      * Constructor method for SaveProcessAssignRequest
      * @uses SaveProcessAssignRequest::setMidocoProcessAssign()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ProcessAssignDTO $midocoProcessAssign
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ProcessAssignDTO $midocoProcessAssign
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\ProcessAssignDTO $midocoProcessAssign = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\ProcessAssignDTO $midocoProcessAssign = null)
     {
         $this
             ->setMidocoProcessAssign($midocoProcessAssign);
     }
     /**
      * Get MidocoProcessAssign value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ProcessAssignDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ProcessAssignDTO|null
      */
-    public function getMidocoProcessAssign(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\ProcessAssignDTO
+    public function getMidocoProcessAssign(): ?\Pggns\MidocoApi\OrderSD\StructType\ProcessAssignDTO
     {
         return $this->MidocoProcessAssign;
     }
     /**
      * Set MidocoProcessAssign value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\ProcessAssignDTO $midocoProcessAssign
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveProcessAssignRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\ProcessAssignDTO $midocoProcessAssign
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveProcessAssignRequest
      */
-    public function setMidocoProcessAssign(?\Pggns\MidocoApi\Api\OrderSD\StructType\ProcessAssignDTO $midocoProcessAssign = null): self
+    public function setMidocoProcessAssign(?\Pggns\MidocoApi\OrderSD\StructType\ProcessAssignDTO $midocoProcessAssign = null): self
     {
         $this->MidocoProcessAssign = $midocoProcessAssign;
         

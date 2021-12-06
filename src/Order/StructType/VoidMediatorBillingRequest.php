@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class VoidMediatorBillingRequest extends AbstractStructBase
     /**
      * Set mediatorBillingId value
      * @param int $mediatorBillingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VoidMediatorBillingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\VoidMediatorBillingRequest
      */
     public function setMediatorBillingId(int $mediatorBillingId): self
     {

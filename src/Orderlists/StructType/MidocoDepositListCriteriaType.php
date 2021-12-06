@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -109,7 +109,7 @@ class MidocoDepositListCriteriaType extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListCriteriaType
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -125,7 +125,7 @@ class MidocoDepositListCriteriaType extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListCriteriaType
      */
     public function addToOrgUnits(string $item): self
     {
@@ -148,7 +148,7 @@ class MidocoDepositListCriteriaType extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListCriteriaType
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -171,7 +171,7 @@ class MidocoDepositListCriteriaType extends AbstractStructBase
     /**
      * Set debitorFrom value
      * @param string $debitorFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListCriteriaType
      */
     public function setDebitorFrom(?string $debitorFrom = null): self
     {
@@ -194,7 +194,7 @@ class MidocoDepositListCriteriaType extends AbstractStructBase
     /**
      * Set debitorTo value
      * @param string $debitorTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListCriteriaType
      */
     public function setDebitorTo(?string $debitorTo = null): self
     {
@@ -217,7 +217,7 @@ class MidocoDepositListCriteriaType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListCriteriaType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -240,7 +240,7 @@ class MidocoDepositListCriteriaType extends AbstractStructBase
     /**
      * Set inclusiveNotInvoiced value
      * @param bool $inclusiveNotInvoiced
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoDepositListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDepositListCriteriaType
      */
     public function setInclusiveNotInvoiced(?bool $inclusiveNotInvoiced = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class ManualBookingBatchDTO extends AbstractStructBase
     /**
      * Set batchId value
      * @param int $batchId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ManualBookingBatchDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ManualBookingBatchDTO
      */
     public function setBatchId(?int $batchId = null): self
     {
@@ -86,7 +86,7 @@ class ManualBookingBatchDTO extends AbstractStructBase
     /**
      * Set fileContent value
      * @param string $fileContent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ManualBookingBatchDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ManualBookingBatchDTO
      */
     public function setFileContent(?string $fileContent = null): self
     {
@@ -109,7 +109,7 @@ class ManualBookingBatchDTO extends AbstractStructBase
     /**
      * Set readDate value
      * @param string $readDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ManualBookingBatchDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ManualBookingBatchDTO
      */
     public function setReadDate(?string $readDate = null): self
     {
@@ -132,7 +132,7 @@ class ManualBookingBatchDTO extends AbstractStructBase
     /**
      * Set readUser value
      * @param int $readUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ManualBookingBatchDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ManualBookingBatchDTO
      */
     public function setReadUser(?int $readUser = null): self
     {

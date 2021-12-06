@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -107,7 +107,7 @@ class Ticket extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\Tax_information[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\Tax_information[]
      */
     protected ?array $tax_information = null;
     /**
@@ -224,9 +224,9 @@ class Ticket extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: cc-information
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\Cc_information|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information $cc_information = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\Cc_information $cc_information = null;
     /**
      * The is_domestic
      * @var bool|null
@@ -294,7 +294,7 @@ class Ticket extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: saving
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\Saving[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\Saving[]
      */
     protected ?array $saving = null;
     /**
@@ -363,7 +363,7 @@ class Ticket extends AbstractStructBase
      * @param string $extPaymentType
      * @param float $base_fare
      * @param string $fare_type
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Tax_information[] $tax_information
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Tax_information[] $tax_information
      * @param float $total_tax
      * @param float $commission_percent
      * @param float $commission_amount
@@ -380,7 +380,7 @@ class Ticket extends AbstractStructBase
      * @param string $bsp_agency
      * @param string $travel_date
      * @param string $issue_date
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information $cc_information
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Cc_information $cc_information
      * @param bool $is_domestic
      * @param string $ticketing_city
      * @param string $vat_content
@@ -390,10 +390,10 @@ class Ticket extends AbstractStructBase
      * @param float $original_amount
      * @param string $original_currency
      * @param string $filekey
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Saving[] $saving
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Saving[] $saving
      * @param int $price_ref
      */
-    public function __construct(int $position, ?string $crs = null, ?string $ticket_type = null, ?string $ticket_subtype = null, ?string $ticket_subgroup_emd = null, ?string $ticket_doc_subtype_description = null, ?string $ticket_no = null, ?string $ticket_no_conj = null, ?string $bsp_validator = null, ?string $ticket_media = null, ?string $payment_type = null, ?string $extPaymentType = null, ?float $base_fare = null, ?string $fare_type = null, ?array $tax_information = null, ?float $total_tax = null, ?float $commission_percent = null, ?float $commission_amount = null, ?float $commission_vat_amount = null, ?float $wholesale_price = null, ?float $total_price = null, ?string $currency = null, ?string $ticket_designator = null, ?string $segment_assignment = null, ?string $person_assignment = null, ?string $it_information = null, ?string $ticketing_agent = null, ?string $ticketing_pcc = null, ?string $bsp_agency = null, ?string $travel_date = null, ?string $issue_date = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information $cc_information = null, ?bool $is_domestic = null, ?string $ticketing_city = null, ?string $vat_content = null, ?string $exchange_information = null, ?float $airline_fee = null, ?float $cancellation_fee = null, ?float $original_amount = null, ?string $original_currency = null, ?string $filekey = null, ?array $saving = null, ?int $price_ref = null)
+    public function __construct(int $position, ?string $crs = null, ?string $ticket_type = null, ?string $ticket_subtype = null, ?string $ticket_subgroup_emd = null, ?string $ticket_doc_subtype_description = null, ?string $ticket_no = null, ?string $ticket_no_conj = null, ?string $bsp_validator = null, ?string $ticket_media = null, ?string $payment_type = null, ?string $extPaymentType = null, ?float $base_fare = null, ?string $fare_type = null, ?array $tax_information = null, ?float $total_tax = null, ?float $commission_percent = null, ?float $commission_amount = null, ?float $commission_vat_amount = null, ?float $wholesale_price = null, ?float $total_price = null, ?string $currency = null, ?string $ticket_designator = null, ?string $segment_assignment = null, ?string $person_assignment = null, ?string $it_information = null, ?string $ticketing_agent = null, ?string $ticketing_pcc = null, ?string $bsp_agency = null, ?string $travel_date = null, ?string $issue_date = null, ?\Pggns\MidocoApi\Orderlists\StructType\Cc_information $cc_information = null, ?bool $is_domestic = null, ?string $ticketing_city = null, ?string $vat_content = null, ?string $exchange_information = null, ?float $airline_fee = null, ?float $cancellation_fee = null, ?float $original_amount = null, ?string $original_currency = null, ?string $filekey = null, ?array $saving = null, ?int $price_ref = null)
     {
         $this
             ->setPosition($position)
@@ -451,7 +451,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setPosition(int $position): self
     {
@@ -474,7 +474,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set crs value
      * @param string $crs
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setCrs(?string $crs = null): self
     {
@@ -496,17 +496,17 @@ class Ticket extends AbstractStructBase
     }
     /**
      * Set ticket_type value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_type::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_type::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Ticket_type::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Ticket_type::getValidValues()
      * @throws InvalidArgumentException
      * @param string $ticket_type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTicket_type(?string $ticket_type = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_type::valueIsValid($ticket_type)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_type', is_array($ticket_type) ? implode(', ', $ticket_type) : var_export($ticket_type, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_type::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\Ticket_type::valueIsValid($ticket_type)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\Ticket_type', is_array($ticket_type) ? implode(', ', $ticket_type) : var_export($ticket_type, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\Ticket_type::getValidValues())), __LINE__);
         }
         $this->ticket_type = $this->{'ticket-type'} = $ticket_type;
         
@@ -522,17 +522,17 @@ class Ticket extends AbstractStructBase
     }
     /**
      * Set ticket_subtype value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_subtype::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_subtype::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Ticket_subtype::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Ticket_subtype::getValidValues()
      * @throws InvalidArgumentException
      * @param string $ticket_subtype
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTicket_subtype(?string $ticket_subtype = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_subtype::valueIsValid($ticket_subtype)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_subtype', is_array($ticket_subtype) ? implode(', ', $ticket_subtype) : var_export($ticket_subtype, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_subtype::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\Ticket_subtype::valueIsValid($ticket_subtype)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\Ticket_subtype', is_array($ticket_subtype) ? implode(', ', $ticket_subtype) : var_export($ticket_subtype, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\Ticket_subtype::getValidValues())), __LINE__);
         }
         $this->ticket_subtype = $this->{'ticket-subtype'} = $ticket_subtype;
         
@@ -549,7 +549,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set ticket_subgroup_emd value
      * @param string $ticket_subgroup_emd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTicket_subgroup_emd(?string $ticket_subgroup_emd = null): self
     {
@@ -572,7 +572,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set ticket_doc_subtype_description value
      * @param string $ticket_doc_subtype_description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTicket_doc_subtype_description(?string $ticket_doc_subtype_description = null): self
     {
@@ -595,7 +595,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set ticket_no value
      * @param string $ticket_no
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTicket_no(?string $ticket_no = null): self
     {
@@ -618,7 +618,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set ticket_no_conj value
      * @param string $ticket_no_conj
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTicket_no_conj(?string $ticket_no_conj = null): self
     {
@@ -641,7 +641,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set bsp_validator value
      * @param string $bsp_validator
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setBsp_validator(?string $bsp_validator = null): self
     {
@@ -663,17 +663,17 @@ class Ticket extends AbstractStructBase
     }
     /**
      * Set ticket_media value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_media::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_media::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Ticket_media::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Ticket_media::getValidValues()
      * @throws InvalidArgumentException
      * @param string $ticket_media
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTicket_media(?string $ticket_media = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_media::valueIsValid($ticket_media)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_media', is_array($ticket_media) ? implode(', ', $ticket_media) : var_export($ticket_media, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_media::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\Ticket_media::valueIsValid($ticket_media)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\Ticket_media', is_array($ticket_media) ? implode(', ', $ticket_media) : var_export($ticket_media, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\Ticket_media::getValidValues())), __LINE__);
         }
         $this->ticket_media = $this->{'ticket-media'} = $ticket_media;
         
@@ -689,17 +689,17 @@ class Ticket extends AbstractStructBase
     }
     /**
      * Set payment_type value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Payment_type::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Payment_type::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Payment_type::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Payment_type::getValidValues()
      * @throws InvalidArgumentException
      * @param string $payment_type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setPayment_type(?string $payment_type = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\Payment_type::valueIsValid($payment_type)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\Payment_type', is_array($payment_type) ? implode(', ', $payment_type) : var_export($payment_type, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\Payment_type::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\Payment_type::valueIsValid($payment_type)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\Payment_type', is_array($payment_type) ? implode(', ', $payment_type) : var_export($payment_type, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\Payment_type::getValidValues())), __LINE__);
         }
         $this->payment_type = $this->{'payment-type'} = $payment_type;
         
@@ -716,7 +716,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set extPaymentType value
      * @param string $extPaymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setExtPaymentType(?string $extPaymentType = null): self
     {
@@ -743,7 +743,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set base_fare value
      * @param float $base_fare
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setBase_fare(?float $base_fare = null): self
     {
@@ -765,17 +765,17 @@ class Ticket extends AbstractStructBase
     }
     /**
      * Set fare_type value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Fare_type::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Fare_type::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Fare_type::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Fare_type::getValidValues()
      * @throws InvalidArgumentException
      * @param string $fare_type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setFare_type(?string $fare_type = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\Fare_type::valueIsValid($fare_type)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\Fare_type', is_array($fare_type) ? implode(', ', $fare_type) : var_export($fare_type, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\Fare_type::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\Fare_type::valueIsValid($fare_type)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\Fare_type', is_array($fare_type) ? implode(', ', $fare_type) : var_export($fare_type, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\Fare_type::getValidValues())), __LINE__);
         }
         $this->fare_type = $this->{'fare-type'} = $fare_type;
         
@@ -783,7 +783,7 @@ class Ticket extends AbstractStructBase
     }
     /**
      * Get tax_information value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Tax_information[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Tax_information[]
      */
     public function getTax_information(): ?array
     {
@@ -804,12 +804,12 @@ class Ticket extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $ticketTax_informationItem) {
             // validation for constraint: itemType
-            if (!$ticketTax_informationItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\Tax_information) {
+            if (!$ticketTax_informationItem instanceof \Pggns\MidocoApi\Orderlists\StructType\Tax_information) {
                 $invalidValues[] = is_object($ticketTax_informationItem) ? get_class($ticketTax_informationItem) : sprintf('%s(%s)', gettype($ticketTax_informationItem), var_export($ticketTax_informationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The tax_information property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\Tax_information, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The tax_information property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\Tax_information, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -818,8 +818,8 @@ class Ticket extends AbstractStructBase
     /**
      * Set tax_information value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Tax_information[] $tax_information
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Tax_information[] $tax_information
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTax_information(?array $tax_information = null): self
     {
@@ -834,14 +834,14 @@ class Ticket extends AbstractStructBase
     /**
      * Add item to tax_information value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Tax_information $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Tax_information $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
-    public function addToTax_information(\Pggns\MidocoApi\Api\Orderlists\StructType\Tax_information $item): self
+    public function addToTax_information(\Pggns\MidocoApi\Orderlists\StructType\Tax_information $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\Tax_information) {
-            throw new InvalidArgumentException(sprintf('The tax_information property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\Tax_information, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\Tax_information) {
+            throw new InvalidArgumentException(sprintf('The tax_information property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\Tax_information, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->tax_information[] = $this->{'tax-information'}[] = $item;
         
@@ -858,7 +858,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set total_tax value
      * @param float $total_tax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTotal_tax(?float $total_tax = null): self
     {
@@ -881,7 +881,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set commission_percent value
      * @param float $commission_percent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setCommission_percent(?float $commission_percent = null): self
     {
@@ -904,7 +904,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set commission_amount value
      * @param float $commission_amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setCommission_amount(?float $commission_amount = null): self
     {
@@ -927,7 +927,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set commission_vat_amount value
      * @param float $commission_vat_amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setCommission_vat_amount(?float $commission_vat_amount = null): self
     {
@@ -950,7 +950,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set wholesale_price value
      * @param float $wholesale_price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setWholesale_price(?float $wholesale_price = null): self
     {
@@ -973,7 +973,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set total_price value
      * @param float $total_price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTotal_price(?float $total_price = null): self
     {
@@ -996,7 +996,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -1019,7 +1019,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set ticket_designator value
      * @param string $ticket_designator
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTicket_designator(?string $ticket_designator = null): self
     {
@@ -1042,7 +1042,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set segment_assignment value
      * @param string $segment_assignment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setSegment_assignment(?string $segment_assignment = null): self
     {
@@ -1065,7 +1065,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set person_assignment value
      * @param string $person_assignment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setPerson_assignment(?string $person_assignment = null): self
     {
@@ -1088,7 +1088,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set it_information value
      * @param string $it_information
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setIt_information(?string $it_information = null): self
     {
@@ -1111,7 +1111,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set ticketing_agent value
      * @param string $ticketing_agent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTicketing_agent(?string $ticketing_agent = null): self
     {
@@ -1134,7 +1134,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set ticketing_pcc value
      * @param string $ticketing_pcc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTicketing_pcc(?string $ticketing_pcc = null): self
     {
@@ -1157,7 +1157,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set bsp_agency value
      * @param string $bsp_agency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setBsp_agency(?string $bsp_agency = null): self
     {
@@ -1180,7 +1180,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set travel_date value
      * @param string $travel_date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTravel_date(?string $travel_date = null): self
     {
@@ -1207,7 +1207,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set issue_date value
      * @param string $issue_date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setIssue_date(?string $issue_date = null): self
     {
@@ -1225,18 +1225,18 @@ class Ticket extends AbstractStructBase
     }
     /**
      * Get cc_information value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Cc_information|null
      */
-    public function getCc_information(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information
+    public function getCc_information(): ?\Pggns\MidocoApi\Orderlists\StructType\Cc_information
     {
         return $this->{'cc-information'};
     }
     /**
      * Set cc_information value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information $cc_information
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Cc_information $cc_information
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
-    public function setCc_information(?\Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information $cc_information = null): self
+    public function setCc_information(?\Pggns\MidocoApi\Orderlists\StructType\Cc_information $cc_information = null): self
     {
         $this->cc_information = $this->{'cc-information'} = $cc_information;
         
@@ -1253,7 +1253,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set is_domestic value
      * @param bool $is_domestic
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setIs_domestic(?bool $is_domestic = null): self
     {
@@ -1276,7 +1276,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set ticketing_city value
      * @param string $ticketing_city
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setTicketing_city(?string $ticketing_city = null): self
     {
@@ -1299,7 +1299,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set vat_content value
      * @param string $vat_content
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setVat_content(?string $vat_content = null): self
     {
@@ -1322,7 +1322,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set exchange_information value
      * @param string $exchange_information
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setExchange_information(?string $exchange_information = null): self
     {
@@ -1345,7 +1345,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set airline_fee value
      * @param float $airline_fee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setAirline_fee(?float $airline_fee = null): self
     {
@@ -1368,7 +1368,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set cancellation_fee value
      * @param float $cancellation_fee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setCancellation_fee(?float $cancellation_fee = null): self
     {
@@ -1391,7 +1391,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set original_amount value
      * @param float $original_amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setOriginal_amount(?float $original_amount = null): self
     {
@@ -1414,7 +1414,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set original_currency value
      * @param string $original_currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setOriginal_currency(?string $original_currency = null): self
     {
@@ -1437,7 +1437,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set filekey value
      * @param string $filekey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setFilekey(?string $filekey = null): self
     {
@@ -1451,7 +1451,7 @@ class Ticket extends AbstractStructBase
     }
     /**
      * Get saving value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Saving[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Saving[]
      */
     public function getSaving(): ?array
     {
@@ -1472,12 +1472,12 @@ class Ticket extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $ticketSavingItem) {
             // validation for constraint: itemType
-            if (!$ticketSavingItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\Saving) {
+            if (!$ticketSavingItem instanceof \Pggns\MidocoApi\Orderlists\StructType\Saving) {
                 $invalidValues[] = is_object($ticketSavingItem) ? get_class($ticketSavingItem) : sprintf('%s(%s)', gettype($ticketSavingItem), var_export($ticketSavingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The saving property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\Saving, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The saving property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\Saving, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -1486,8 +1486,8 @@ class Ticket extends AbstractStructBase
     /**
      * Set saving value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Saving[] $saving
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Saving[] $saving
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setSaving(?array $saving = null): self
     {
@@ -1502,14 +1502,14 @@ class Ticket extends AbstractStructBase
     /**
      * Add item to saving value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Saving $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Saving $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
-    public function addToSaving(\Pggns\MidocoApi\Api\Orderlists\StructType\Saving $item): self
+    public function addToSaving(\Pggns\MidocoApi\Orderlists\StructType\Saving $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\Saving) {
-            throw new InvalidArgumentException(sprintf('The saving property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\Saving, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\Saving) {
+            throw new InvalidArgumentException(sprintf('The saving property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\Saving, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->saving[] = $item;
         
@@ -1526,7 +1526,7 @@ class Ticket extends AbstractStructBase
     /**
      * Set price_ref value
      * @param int $price_ref
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Ticket
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Ticket
      */
     public function setPrice_ref(?int $price_ref = null): self
     {

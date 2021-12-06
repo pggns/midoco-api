@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class UnitModulesNotAssignedDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UnitModulesNotAssignedDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UnitModulesNotAssignedDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -86,7 +86,7 @@ class UnitModulesNotAssignedDTO extends AbstractStructBase
     /**
      * Set modulId value
      * @param string $modulId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UnitModulesNotAssignedDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UnitModulesNotAssignedDTO
      */
     public function setModulId(?string $modulId = null): self
     {
@@ -109,7 +109,7 @@ class UnitModulesNotAssignedDTO extends AbstractStructBase
     /**
      * Set notAssignedUnitName value
      * @param string $notAssignedUnitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UnitModulesNotAssignedDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UnitModulesNotAssignedDTO
      */
     public function setNotAssignedUnitName(?string $notAssignedUnitName = null): self
     {
@@ -132,7 +132,7 @@ class UnitModulesNotAssignedDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UnitModulesNotAssignedDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\UnitModulesNotAssignedDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

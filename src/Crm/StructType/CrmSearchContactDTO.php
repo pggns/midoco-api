@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CrmSearchContactDTO extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmSearchContactDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmSearchContactDTO
      */
     public function setPhone(?string $phone = null): self
     {
@@ -86,7 +86,7 @@ class CrmSearchContactDTO extends AbstractStructBase
     /**
      * Set mobile value
      * @param string $mobile
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmSearchContactDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmSearchContactDTO
      */
     public function setMobile(?string $mobile = null): self
     {
@@ -109,7 +109,7 @@ class CrmSearchContactDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmSearchContactDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmSearchContactDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -132,7 +132,7 @@ class CrmSearchContactDTO extends AbstractStructBase
     /**
      * Set fax value
      * @param string $fax
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmSearchContactDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmSearchContactDTO
      */
     public function setFax(?string $fax = null): self
     {

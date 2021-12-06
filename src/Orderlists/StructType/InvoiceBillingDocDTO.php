@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class InvoiceBillingDocDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InvoiceBillingDocDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InvoiceBillingDocDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -102,7 +102,7 @@ class InvoiceBillingDocDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InvoiceBillingDocDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InvoiceBillingDocDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -125,7 +125,7 @@ class InvoiceBillingDocDTO extends AbstractStructBase
     /**
      * Set invoiceId value
      * @param int $invoiceId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InvoiceBillingDocDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InvoiceBillingDocDTO
      */
     public function setInvoiceId(?int $invoiceId = null): self
     {
@@ -148,7 +148,7 @@ class InvoiceBillingDocDTO extends AbstractStructBase
     /**
      * Set isVoided value
      * @param bool $isVoided
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InvoiceBillingDocDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InvoiceBillingDocDTO
      */
     public function setIsVoided(?bool $isVoided = null): self
     {
@@ -171,7 +171,7 @@ class InvoiceBillingDocDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InvoiceBillingDocDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InvoiceBillingDocDTO
      */
     public function setType(?string $type = null): self
     {
@@ -194,7 +194,7 @@ class InvoiceBillingDocDTO extends AbstractStructBase
     /**
      * Set voidedDocumentId value
      * @param int $voidedDocumentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InvoiceBillingDocDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\InvoiceBillingDocDTO
      */
     public function setVoidedDocumentId(?int $voidedDocumentId = null): self
     {

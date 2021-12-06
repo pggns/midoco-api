@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,25 +17,25 @@ class MidocoSavedReportSameParamList extends AbstractStructBase
      * The MidocoJasperReportExt
      * Meta information extracted from the WSDL
      * - ref: MidocoJasperReportExt
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJasperReportExt|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoJasperReportExt|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJasperReportExt $MidocoJasperReportExt = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoJasperReportExt $MidocoJasperReportExt = null;
     /**
      * The MidocoJasperReportParamValue
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoJasperReportParamValue
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\JasperReportParamValueDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\JasperReportParamValueDTO[]
      */
     protected ?array $MidocoJasperReportParamValue = null;
     /**
      * Constructor method for MidocoSavedReportSameParamList
      * @uses MidocoSavedReportSameParamList::setMidocoJasperReportExt()
      * @uses MidocoSavedReportSameParamList::setMidocoJasperReportParamValue()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJasperReportExt $midocoJasperReportExt
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\JasperReportParamValueDTO[] $midocoJasperReportParamValue
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoJasperReportExt $midocoJasperReportExt
+     * @param \Pggns\MidocoApi\Orderlists\StructType\JasperReportParamValueDTO[] $midocoJasperReportParamValue
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJasperReportExt $midocoJasperReportExt = null, ?array $midocoJasperReportParamValue = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoJasperReportExt $midocoJasperReportExt = null, ?array $midocoJasperReportParamValue = null)
     {
         $this
             ->setMidocoJasperReportExt($midocoJasperReportExt)
@@ -43,18 +43,18 @@ class MidocoSavedReportSameParamList extends AbstractStructBase
     }
     /**
      * Get MidocoJasperReportExt value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJasperReportExt|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoJasperReportExt|null
      */
-    public function getMidocoJasperReportExt(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJasperReportExt
+    public function getMidocoJasperReportExt(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoJasperReportExt
     {
         return $this->MidocoJasperReportExt;
     }
     /**
      * Set MidocoJasperReportExt value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJasperReportExt $midocoJasperReportExt
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSavedReportSameParamList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoJasperReportExt $midocoJasperReportExt
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSavedReportSameParamList
      */
-    public function setMidocoJasperReportExt(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoJasperReportExt $midocoJasperReportExt = null): self
+    public function setMidocoJasperReportExt(?\Pggns\MidocoApi\Orderlists\StructType\MidocoJasperReportExt $midocoJasperReportExt = null): self
     {
         $this->MidocoJasperReportExt = $midocoJasperReportExt;
         
@@ -62,7 +62,7 @@ class MidocoSavedReportSameParamList extends AbstractStructBase
     }
     /**
      * Get MidocoJasperReportParamValue value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\JasperReportParamValueDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\JasperReportParamValueDTO[]
      */
     public function getMidocoJasperReportParamValue(): ?array
     {
@@ -83,12 +83,12 @@ class MidocoSavedReportSameParamList extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSavedReportSameParamListMidocoJasperReportParamValueItem) {
             // validation for constraint: itemType
-            if (!$midocoSavedReportSameParamListMidocoJasperReportParamValueItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\JasperReportParamValueDTO) {
+            if (!$midocoSavedReportSameParamListMidocoJasperReportParamValueItem instanceof \Pggns\MidocoApi\Orderlists\StructType\JasperReportParamValueDTO) {
                 $invalidValues[] = is_object($midocoSavedReportSameParamListMidocoJasperReportParamValueItem) ? get_class($midocoSavedReportSameParamListMidocoJasperReportParamValueItem) : sprintf('%s(%s)', gettype($midocoSavedReportSameParamListMidocoJasperReportParamValueItem), var_export($midocoSavedReportSameParamListMidocoJasperReportParamValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoJasperReportParamValue property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\JasperReportParamValueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoJasperReportParamValue property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\JasperReportParamValueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -97,8 +97,8 @@ class MidocoSavedReportSameParamList extends AbstractStructBase
     /**
      * Set MidocoJasperReportParamValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\JasperReportParamValueDTO[] $midocoJasperReportParamValue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSavedReportSameParamList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\JasperReportParamValueDTO[] $midocoJasperReportParamValue
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSavedReportSameParamList
      */
     public function setMidocoJasperReportParamValue(?array $midocoJasperReportParamValue = null): self
     {
@@ -113,14 +113,14 @@ class MidocoSavedReportSameParamList extends AbstractStructBase
     /**
      * Add item to MidocoJasperReportParamValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\JasperReportParamValueDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSavedReportSameParamList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\JasperReportParamValueDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSavedReportSameParamList
      */
-    public function addToMidocoJasperReportParamValue(\Pggns\MidocoApi\Api\Orderlists\StructType\JasperReportParamValueDTO $item): self
+    public function addToMidocoJasperReportParamValue(\Pggns\MidocoApi\Orderlists\StructType\JasperReportParamValueDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\JasperReportParamValueDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoJasperReportParamValue property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\JasperReportParamValueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\JasperReportParamValueDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoJasperReportParamValue property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\JasperReportParamValueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoJasperReportParamValue[] = $item;
         

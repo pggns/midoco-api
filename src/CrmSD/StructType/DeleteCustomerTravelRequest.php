@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class DeleteCustomerTravelRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerTravel
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType[]
      */
     protected ?array $MidocoCustomerTravel = null;
     /**
      * Constructor method for DeleteCustomerTravelRequest
      * @uses DeleteCustomerTravelRequest::setMidocoCustomerTravel()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType[] $midocoCustomerTravel
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType[] $midocoCustomerTravel
      */
     public function __construct(?array $midocoCustomerTravel = null)
     {
@@ -36,7 +36,7 @@ class DeleteCustomerTravelRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerTravel value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType[]
      */
     public function getMidocoCustomerTravel(): ?array
     {
@@ -57,12 +57,12 @@ class DeleteCustomerTravelRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteCustomerTravelRequestMidocoCustomerTravelItem) {
             // validation for constraint: itemType
-            if (!$deleteCustomerTravelRequestMidocoCustomerTravelItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType) {
+            if (!$deleteCustomerTravelRequestMidocoCustomerTravelItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType) {
                 $invalidValues[] = is_object($deleteCustomerTravelRequestMidocoCustomerTravelItem) ? get_class($deleteCustomerTravelRequestMidocoCustomerTravelItem) : sprintf('%s(%s)', gettype($deleteCustomerTravelRequestMidocoCustomerTravelItem), var_export($deleteCustomerTravelRequestMidocoCustomerTravelItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerTravel property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerTravel property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class DeleteCustomerTravelRequest extends AbstractStructBase
     /**
      * Set MidocoCustomerTravel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType[] $midocoCustomerTravel
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCustomerTravelRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType[] $midocoCustomerTravel
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCustomerTravelRequest
      */
     public function setMidocoCustomerTravel(?array $midocoCustomerTravel = null): self
     {
@@ -87,14 +87,14 @@ class DeleteCustomerTravelRequest extends AbstractStructBase
     /**
      * Add item to MidocoCustomerTravel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCustomerTravelRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCustomerTravelRequest
      */
-    public function addToMidocoCustomerTravel(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType $item): self
+    public function addToMidocoCustomerTravel(\Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerTravel property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCustomerTravelType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerTravel property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerTravel[] = $item;
         

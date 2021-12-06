@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -50,7 +50,7 @@ class DeleteOrderLayoutOrgunitRequest extends AbstractStructBase
     /**
      * Set layoutId value
      * @param int $layoutId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderLayoutOrgunitRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrderLayoutOrgunitRequest
      */
     public function setLayoutId(?int $layoutId = null): self
     {
@@ -100,7 +100,7 @@ class DeleteOrderLayoutOrgunitRequest extends AbstractStructBase
      * Set notAllowedUnits value
      * @throws InvalidArgumentException
      * @param string[] $notAllowedUnits
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderLayoutOrgunitRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrderLayoutOrgunitRequest
      */
     public function setNotAllowedUnits(?array $notAllowedUnits = null): self
     {
@@ -116,7 +116,7 @@ class DeleteOrderLayoutOrgunitRequest extends AbstractStructBase
      * Add item to notAllowedUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderLayoutOrgunitRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrderLayoutOrgunitRequest
      */
     public function addToNotAllowedUnits(string $item): self
     {

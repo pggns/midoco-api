@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteDatastoreResponse extends AbstractStructBase
      * The MidocoDatastore
      * Meta information extracted from the WSDL
      * - ref: MidocoDatastore
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\DatastoreDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\DatastoreDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\DatastoreDTO $MidocoDatastore = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\DatastoreDTO $MidocoDatastore = null;
     /**
      * Constructor method for DeleteDatastoreResponse
      * @uses DeleteDatastoreResponse::setMidocoDatastore()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\DatastoreDTO $midocoDatastore
+     * @param \Pggns\MidocoApi\Orderlists\StructType\DatastoreDTO $midocoDatastore
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\DatastoreDTO $midocoDatastore = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\DatastoreDTO $midocoDatastore = null)
     {
         $this
             ->setMidocoDatastore($midocoDatastore);
     }
     /**
      * Get MidocoDatastore value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatastoreDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatastoreDTO|null
      */
-    public function getMidocoDatastore(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\DatastoreDTO
+    public function getMidocoDatastore(): ?\Pggns\MidocoApi\Orderlists\StructType\DatastoreDTO
     {
         return $this->MidocoDatastore;
     }
     /**
      * Set MidocoDatastore value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\DatastoreDTO $midocoDatastore
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteDatastoreResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\DatastoreDTO $midocoDatastore
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteDatastoreResponse
      */
-    public function setMidocoDatastore(?\Pggns\MidocoApi\Api\Orderlists\StructType\DatastoreDTO $midocoDatastore = null): self
+    public function setMidocoDatastore(?\Pggns\MidocoApi\Orderlists\StructType\DatastoreDTO $midocoDatastore = null): self
     {
         $this->MidocoDatastore = $midocoDatastore;
         

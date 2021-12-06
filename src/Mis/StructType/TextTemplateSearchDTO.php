@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class TextTemplateSearchDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\TextTemplateSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\TextTemplateSearchDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -86,7 +86,7 @@ class TextTemplateSearchDTO extends AbstractStructBase
     /**
      * Set defaultLanguage value
      * @param string $defaultLanguage
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\TextTemplateSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\TextTemplateSearchDTO
      */
     public function setDefaultLanguage(?string $defaultLanguage = null): self
     {
@@ -109,7 +109,7 @@ class TextTemplateSearchDTO extends AbstractStructBase
     /**
      * Set visibility value
      * @param int $visibility
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\TextTemplateSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\TextTemplateSearchDTO
      */
     public function setVisibility(?int $visibility = null): self
     {
@@ -132,7 +132,7 @@ class TextTemplateSearchDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\TextTemplateSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\TextTemplateSearchDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

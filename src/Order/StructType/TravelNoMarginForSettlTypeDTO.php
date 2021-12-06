@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
     /**
      * Set calculatedMargin value
      * @param float $calculatedMargin
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNoMarginForSettlTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNoMarginForSettlTypeDTO
      */
     public function setCalculatedMargin(?float $calculatedMargin = null): self
     {
@@ -142,7 +142,7 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
     /**
      * Set calculatedVat value
      * @param float $calculatedVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNoMarginForSettlTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNoMarginForSettlTypeDTO
      */
     public function setCalculatedVat(?float $calculatedVat = null): self
     {
@@ -165,7 +165,7 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNoMarginForSettlTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNoMarginForSettlTypeDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -188,7 +188,7 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNoMarginForSettlTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNoMarginForSettlTypeDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -211,7 +211,7 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
     /**
      * Set isStorno value
      * @param bool $isStorno
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNoMarginForSettlTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNoMarginForSettlTypeDTO
      */
     public function setIsStorno(?bool $isStorno = null): self
     {
@@ -234,7 +234,7 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
     /**
      * Set journalId value
      * @param int $journalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNoMarginForSettlTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNoMarginForSettlTypeDTO
      */
     public function setJournalId(?int $journalId = null): self
     {
@@ -257,7 +257,7 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
     /**
      * Set percent value
      * @param float $percent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNoMarginForSettlTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNoMarginForSettlTypeDTO
      */
     public function setPercent(?float $percent = null): self
     {
@@ -280,7 +280,7 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
     /**
      * Set settlementDate value
      * @param string $settlementDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNoMarginForSettlTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNoMarginForSettlTypeDTO
      */
     public function setSettlementDate(?string $settlementDate = null): self
     {
@@ -303,7 +303,7 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNoMarginForSettlTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNoMarginForSettlTypeDTO
      */
     public function setSettlementType(?string $settlementType = null): self
     {
@@ -326,7 +326,7 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
     /**
      * Set sumBuy value
      * @param float $sumBuy
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNoMarginForSettlTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNoMarginForSettlTypeDTO
      */
     public function setSumBuy(?float $sumBuy = null): self
     {
@@ -349,7 +349,7 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNoMarginForSettlTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNoMarginForSettlTypeDTO
      */
     public function setTravelNo(?string $travelNo = null): self
     {

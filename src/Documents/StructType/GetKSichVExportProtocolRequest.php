@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetKSichVExportProtocolRequest extends AbstractStructBase
     /**
      * Set exportId value
      * @param string $exportId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetKSichVExportProtocolRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetKSichVExportProtocolRequest
      */
     public function setExportId(?string $exportId = null): self
     {

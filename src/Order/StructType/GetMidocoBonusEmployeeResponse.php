@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class GetMidocoBonusEmployeeResponse extends AbstractStructBase
     /**
      * Set totalBonusAmount value
      * @param float $totalBonusAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoBonusEmployeeResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoBonusEmployeeResponse
      */
     public function setTotalBonusAmount(?float $totalBonusAmount = null): self
     {
@@ -94,7 +94,7 @@ class GetMidocoBonusEmployeeResponse extends AbstractStructBase
     /**
      * Set totalRuleBaseAmount value
      * @param float $totalRuleBaseAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoBonusEmployeeResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoBonusEmployeeResponse
      */
     public function setTotalRuleBaseAmount(?float $totalRuleBaseAmount = null): self
     {
@@ -117,7 +117,7 @@ class GetMidocoBonusEmployeeResponse extends AbstractStructBase
     /**
      * Set totalCompetitionAmount value
      * @param float $totalCompetitionAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoBonusEmployeeResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoBonusEmployeeResponse
      */
     public function setTotalCompetitionAmount(?float $totalCompetitionAmount = null): self
     {
@@ -140,7 +140,7 @@ class GetMidocoBonusEmployeeResponse extends AbstractStructBase
     /**
      * Set totalAddittionAmount value
      * @param float $totalAddittionAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoBonusEmployeeResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoBonusEmployeeResponse
      */
     public function setTotalAddittionAmount(?float $totalAddittionAmount = null): self
     {
@@ -163,7 +163,7 @@ class GetMidocoBonusEmployeeResponse extends AbstractStructBase
     /**
      * Set totalPremiumAmount value
      * @param float $totalPremiumAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoBonusEmployeeResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoBonusEmployeeResponse
      */
     public function setTotalPremiumAmount(?float $totalPremiumAmount = null): self
     {

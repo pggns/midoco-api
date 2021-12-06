@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveOrgunitDocumentRequest extends AbstractStructBase
      * The MidocoOrgunitDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoOrgunitDocument
-     * @var \Pggns\MidocoApi\Api\System\StructType\MidocoOrgunitDocument|null
+     * @var \Pggns\MidocoApi\System\StructType\MidocoOrgunitDocument|null
      */
-    protected ?\Pggns\MidocoApi\Api\System\StructType\MidocoOrgunitDocument $MidocoOrgunitDocument = null;
+    protected ?\Pggns\MidocoApi\System\StructType\MidocoOrgunitDocument $MidocoOrgunitDocument = null;
     /**
      * Constructor method for SaveOrgunitDocumentRequest
      * @uses SaveOrgunitDocumentRequest::setMidocoOrgunitDocument()
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoOrgunitDocument $midocoOrgunitDocument
+     * @param \Pggns\MidocoApi\System\StructType\MidocoOrgunitDocument $midocoOrgunitDocument
      */
-    public function __construct(?\Pggns\MidocoApi\Api\System\StructType\MidocoOrgunitDocument $midocoOrgunitDocument = null)
+    public function __construct(?\Pggns\MidocoApi\System\StructType\MidocoOrgunitDocument $midocoOrgunitDocument = null)
     {
         $this
             ->setMidocoOrgunitDocument($midocoOrgunitDocument);
     }
     /**
      * Get MidocoOrgunitDocument value
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoOrgunitDocument|null
+     * @return \Pggns\MidocoApi\System\StructType\MidocoOrgunitDocument|null
      */
-    public function getMidocoOrgunitDocument(): ?\Pggns\MidocoApi\Api\System\StructType\MidocoOrgunitDocument
+    public function getMidocoOrgunitDocument(): ?\Pggns\MidocoApi\System\StructType\MidocoOrgunitDocument
     {
         return $this->MidocoOrgunitDocument;
     }
     /**
      * Set MidocoOrgunitDocument value
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoOrgunitDocument $midocoOrgunitDocument
-     * @return \Pggns\MidocoApi\Api\System\StructType\SaveOrgunitDocumentRequest
+     * @param \Pggns\MidocoApi\System\StructType\MidocoOrgunitDocument $midocoOrgunitDocument
+     * @return \Pggns\MidocoApi\System\StructType\SaveOrgunitDocumentRequest
      */
-    public function setMidocoOrgunitDocument(?\Pggns\MidocoApi\Api\System\StructType\MidocoOrgunitDocument $midocoOrgunitDocument = null): self
+    public function setMidocoOrgunitDocument(?\Pggns\MidocoApi\System\StructType\MidocoOrgunitDocument $midocoOrgunitDocument = null): self
     {
         $this->MidocoOrgunitDocument = $midocoOrgunitDocument;
         

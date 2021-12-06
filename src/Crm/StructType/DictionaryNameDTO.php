@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DictionaryNameDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -70,7 +70,7 @@ class DictionaryNameDTO extends AbstractStructBase
     /**
      * Set forenameUpper value
      * @param string $forenameUpper
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DictionaryNameDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\DictionaryNameDTO
      */
     public function setForenameUpper(?string $forenameUpper = null): self
     {

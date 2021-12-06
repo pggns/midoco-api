@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -88,7 +88,7 @@ class ValidatePremiumRuleContentRequest extends AbstractStructBase
      * Set orgunit value
      * @throws InvalidArgumentException
      * @param string[] $orgunit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ValidatePremiumRuleContentRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ValidatePremiumRuleContentRequest
      */
     public function setOrgunit(?array $orgunit = null): self
     {
@@ -104,7 +104,7 @@ class ValidatePremiumRuleContentRequest extends AbstractStructBase
      * Add item to orgunit value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ValidatePremiumRuleContentRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ValidatePremiumRuleContentRequest
      */
     public function addToOrgunit(string $item): self
     {
@@ -154,7 +154,7 @@ class ValidatePremiumRuleContentRequest extends AbstractStructBase
      * Set rulebase value
      * @throws InvalidArgumentException
      * @param float[] $rulebase
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ValidatePremiumRuleContentRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ValidatePremiumRuleContentRequest
      */
     public function setRulebase(?array $rulebase = null): self
     {
@@ -170,7 +170,7 @@ class ValidatePremiumRuleContentRequest extends AbstractStructBase
      * Add item to rulebase value
      * @throws InvalidArgumentException
      * @param float $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ValidatePremiumRuleContentRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ValidatePremiumRuleContentRequest
      */
     public function addToRulebase(float $item): self
     {
@@ -193,7 +193,7 @@ class ValidatePremiumRuleContentRequest extends AbstractStructBase
     /**
      * Set ruleContent value
      * @param string $ruleContent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ValidatePremiumRuleContentRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ValidatePremiumRuleContentRequest
      */
     public function setRuleContent(?string $ruleContent = null): self
     {

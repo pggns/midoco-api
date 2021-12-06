@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -52,7 +52,7 @@ class Package_info extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Price_calculation[]
      */
     protected ?array $price_calculation = null;
     /**
@@ -60,7 +60,7 @@ class Package_info extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Packagefee[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Packagefee[]
      */
     protected ?array $packagefee = null;
     /**
@@ -69,7 +69,7 @@ class Package_info extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: person
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Person[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Person[]
      */
     protected ?array $person = null;
     /**
@@ -77,7 +77,7 @@ class Package_info extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Attribute[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Attribute[]
      */
     protected ?array $attribute = null;
     /**
@@ -188,10 +188,10 @@ class Package_info extends AbstractStructBase
      * @param string $package_supplier_id
      * @param int $package_position
      * @param int $price_ref
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation[] $price_calculation
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Packagefee[] $packagefee
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Person[] $person
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Attribute[] $attribute
+     * @param \Pggns\MidocoApi\Documents\StructType\Price_calculation[] $price_calculation
+     * @param \Pggns\MidocoApi\Documents\StructType\Packagefee[] $packagefee
+     * @param \Pggns\MidocoApi\Documents\StructType\Person[] $person
+     * @param \Pggns\MidocoApi\Documents\StructType\Attribute[] $attribute
      * @param string $destination
      * @param string $creation_date
      * @param string $catalog
@@ -240,7 +240,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set package_id value
      * @param string $package_id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setPackage_id(string $package_id): self
     {
@@ -263,7 +263,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set package_supplier_id value
      * @param string $package_supplier_id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setPackage_supplier_id(string $package_supplier_id): self
     {
@@ -286,7 +286,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set package_position value
      * @param int $package_position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setPackage_position(int $package_position): self
     {
@@ -309,7 +309,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set price_ref value
      * @param int $price_ref
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setPrice_ref(int $price_ref): self
     {
@@ -323,7 +323,7 @@ class Package_info extends AbstractStructBase
     }
     /**
      * Get price_calculation value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Price_calculation[]
      */
     public function getPrice_calculation(): ?array
     {
@@ -344,12 +344,12 @@ class Package_info extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $package_infoPrice_calculationItem) {
             // validation for constraint: itemType
-            if (!$package_infoPrice_calculationItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation) {
+            if (!$package_infoPrice_calculationItem instanceof \Pggns\MidocoApi\Documents\StructType\Price_calculation) {
                 $invalidValues[] = is_object($package_infoPrice_calculationItem) ? get_class($package_infoPrice_calculationItem) : sprintf('%s(%s)', gettype($package_infoPrice_calculationItem), var_export($package_infoPrice_calculationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The price_calculation property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The price_calculation property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Price_calculation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -358,8 +358,8 @@ class Package_info extends AbstractStructBase
     /**
      * Set price_calculation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation[] $price_calculation
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Price_calculation[] $price_calculation
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setPrice_calculation(?array $price_calculation = null): self
     {
@@ -374,14 +374,14 @@ class Package_info extends AbstractStructBase
     /**
      * Add item to price_calculation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Price_calculation $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
-    public function addToPrice_calculation(\Pggns\MidocoApi\Api\Documents\StructType\Price_calculation $item): self
+    public function addToPrice_calculation(\Pggns\MidocoApi\Documents\StructType\Price_calculation $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation) {
-            throw new InvalidArgumentException(sprintf('The price_calculation property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Price_calculation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Price_calculation) {
+            throw new InvalidArgumentException(sprintf('The price_calculation property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Price_calculation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->price_calculation[] = $item;
         
@@ -389,7 +389,7 @@ class Package_info extends AbstractStructBase
     }
     /**
      * Get packagefee value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Packagefee[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Packagefee[]
      */
     public function getPackagefee(): ?array
     {
@@ -410,12 +410,12 @@ class Package_info extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $package_infoPackagefeeItem) {
             // validation for constraint: itemType
-            if (!$package_infoPackagefeeItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Packagefee) {
+            if (!$package_infoPackagefeeItem instanceof \Pggns\MidocoApi\Documents\StructType\Packagefee) {
                 $invalidValues[] = is_object($package_infoPackagefeeItem) ? get_class($package_infoPackagefeeItem) : sprintf('%s(%s)', gettype($package_infoPackagefeeItem), var_export($package_infoPackagefeeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The packagefee property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Packagefee, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The packagefee property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Packagefee, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -424,8 +424,8 @@ class Package_info extends AbstractStructBase
     /**
      * Set packagefee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Packagefee[] $packagefee
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Packagefee[] $packagefee
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setPackagefee(?array $packagefee = null): self
     {
@@ -440,14 +440,14 @@ class Package_info extends AbstractStructBase
     /**
      * Add item to packagefee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Packagefee $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Packagefee $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
-    public function addToPackagefee(\Pggns\MidocoApi\Api\Documents\StructType\Packagefee $item): self
+    public function addToPackagefee(\Pggns\MidocoApi\Documents\StructType\Packagefee $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Packagefee) {
-            throw new InvalidArgumentException(sprintf('The packagefee property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Packagefee, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Packagefee) {
+            throw new InvalidArgumentException(sprintf('The packagefee property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Packagefee, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->packagefee[] = $item;
         
@@ -455,7 +455,7 @@ class Package_info extends AbstractStructBase
     }
     /**
      * Get person value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Person[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Person[]
      */
     public function getPerson(): ?array
     {
@@ -476,12 +476,12 @@ class Package_info extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $package_infoPersonItem) {
             // validation for constraint: itemType
-            if (!$package_infoPersonItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Person) {
+            if (!$package_infoPersonItem instanceof \Pggns\MidocoApi\Documents\StructType\Person) {
                 $invalidValues[] = is_object($package_infoPersonItem) ? get_class($package_infoPersonItem) : sprintf('%s(%s)', gettype($package_infoPersonItem), var_export($package_infoPersonItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The person property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Person, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The person property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Person, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -490,8 +490,8 @@ class Package_info extends AbstractStructBase
     /**
      * Set person value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Person[] $person
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Person[] $person
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setPerson(?array $person = null): self
     {
@@ -506,14 +506,14 @@ class Package_info extends AbstractStructBase
     /**
      * Add item to person value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Person $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Person $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
-    public function addToPerson(\Pggns\MidocoApi\Api\Documents\StructType\Person $item): self
+    public function addToPerson(\Pggns\MidocoApi\Documents\StructType\Person $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Person) {
-            throw new InvalidArgumentException(sprintf('The person property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Person, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Person) {
+            throw new InvalidArgumentException(sprintf('The person property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Person, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->person[] = $item;
         
@@ -521,7 +521,7 @@ class Package_info extends AbstractStructBase
     }
     /**
      * Get attribute value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Attribute[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Attribute[]
      */
     public function getAttribute(): ?array
     {
@@ -542,12 +542,12 @@ class Package_info extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $package_infoAttributeItem) {
             // validation for constraint: itemType
-            if (!$package_infoAttributeItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Attribute) {
+            if (!$package_infoAttributeItem instanceof \Pggns\MidocoApi\Documents\StructType\Attribute) {
                 $invalidValues[] = is_object($package_infoAttributeItem) ? get_class($package_infoAttributeItem) : sprintf('%s(%s)', gettype($package_infoAttributeItem), var_export($package_infoAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attribute property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Attribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attribute property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Attribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -556,8 +556,8 @@ class Package_info extends AbstractStructBase
     /**
      * Set attribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Attribute[] $attribute
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Attribute[] $attribute
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setAttribute(?array $attribute = null): self
     {
@@ -572,14 +572,14 @@ class Package_info extends AbstractStructBase
     /**
      * Add item to attribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Attribute $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Attribute $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
-    public function addToAttribute(\Pggns\MidocoApi\Api\Documents\StructType\Attribute $item): self
+    public function addToAttribute(\Pggns\MidocoApi\Documents\StructType\Attribute $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Attribute) {
-            throw new InvalidArgumentException(sprintf('The attribute property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Attribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Attribute) {
+            throw new InvalidArgumentException(sprintf('The attribute property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Attribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attribute[] = $item;
         
@@ -596,7 +596,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setDestination(?string $destination = null): self
     {
@@ -619,7 +619,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set creation_date value
      * @param string $creation_date
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setCreation_date(?string $creation_date = null): self
     {
@@ -642,7 +642,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set catalog value
      * @param string $catalog
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setCatalog(?string $catalog = null): self
     {
@@ -665,7 +665,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set product_type value
      * @param string $product_type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setProduct_type(?string $product_type = null): self
     {
@@ -688,7 +688,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set travel_no value
      * @param string $travel_no
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setTravel_no(?string $travel_no = null): self
     {
@@ -711,7 +711,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set travel_no_description value
      * @param string $travel_no_description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setTravel_no_description(?string $travel_no_description = null): self
     {
@@ -733,17 +733,17 @@ class Package_info extends AbstractStructBase
     }
     /**
      * Set selling_mode value
-     * @uses \Pggns\MidocoApi\Api\Documents\EnumType\BookingSellingModeType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Documents\EnumType\BookingSellingModeType::getValidValues()
+     * @uses \Pggns\MidocoApi\Documents\EnumType\BookingSellingModeType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Documents\EnumType\BookingSellingModeType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $selling_mode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setSelling_mode(?string $selling_mode = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Documents\EnumType\BookingSellingModeType::valueIsValid($selling_mode)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Documents\EnumType\BookingSellingModeType', is_array($selling_mode) ? implode(', ', $selling_mode) : var_export($selling_mode, true), implode(', ', \Pggns\MidocoApi\Api\Documents\EnumType\BookingSellingModeType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Documents\EnumType\BookingSellingModeType::valueIsValid($selling_mode)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Documents\EnumType\BookingSellingModeType', is_array($selling_mode) ? implode(', ', $selling_mode) : var_export($selling_mode, true), implode(', ', \Pggns\MidocoApi\Documents\EnumType\BookingSellingModeType::getValidValues())), __LINE__);
         }
         $this->selling_mode = $this->{'selling-mode'} = $selling_mode;
         
@@ -760,7 +760,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set confirmation_group value
      * @param string $confirmation_group
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setConfirmation_group(?string $confirmation_group = null): self
     {
@@ -783,7 +783,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set mobility_indicator value
      * @param bool $mobility_indicator
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setMobility_indicator(?bool $mobility_indicator = null): self
     {
@@ -806,7 +806,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set contract_time value
      * @param string $contract_time
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setContract_time(?string $contract_time = null): self
     {
@@ -829,7 +829,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set reference_type value
      * @param string $reference_type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setReference_type(?string $reference_type = null): self
     {
@@ -852,7 +852,7 @@ class Package_info extends AbstractStructBase
     /**
      * Set settlement_type value
      * @param string $settlement_type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info
      */
     public function setSettlement_type(?string $settlement_type = null): self
     {

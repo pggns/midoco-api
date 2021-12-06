@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class PreparedRevenueJournalDTO extends AbstractStructBase
     /**
      * Set bookingAmount value
      * @param float $bookingAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedRevenueJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedRevenueJournalDTO
      */
     public function setBookingAmount(?float $bookingAmount = null): self
     {
@@ -118,7 +118,7 @@ class PreparedRevenueJournalDTO extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedRevenueJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedRevenueJournalDTO
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -141,7 +141,7 @@ class PreparedRevenueJournalDTO extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedRevenueJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedRevenueJournalDTO
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -164,7 +164,7 @@ class PreparedRevenueJournalDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedRevenueJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedRevenueJournalDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -187,7 +187,7 @@ class PreparedRevenueJournalDTO extends AbstractStructBase
     /**
      * Set preparedRevenueId value
      * @param int $preparedRevenueId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedRevenueJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedRevenueJournalDTO
      */
     public function setPreparedRevenueId(?int $preparedRevenueId = null): self
     {
@@ -210,7 +210,7 @@ class PreparedRevenueJournalDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedRevenueJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedRevenueJournalDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -233,7 +233,7 @@ class PreparedRevenueJournalDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedRevenueJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedRevenueJournalDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -256,7 +256,7 @@ class PreparedRevenueJournalDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PreparedRevenueJournalDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PreparedRevenueJournalDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class TravelDocumentDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDocumentDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -158,7 +158,7 @@ class TravelDocumentDTO extends AbstractStructBase
     /**
      * Set commentText value
      * @param string $commentText
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDocumentDTO
      */
     public function setCommentText(?string $commentText = null): self
     {
@@ -181,7 +181,7 @@ class TravelDocumentDTO extends AbstractStructBase
     /**
      * Set infoToCustomerDate value
      * @param string $infoToCustomerDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDocumentDTO
      */
     public function setInfoToCustomerDate(?string $infoToCustomerDate = null): self
     {
@@ -204,7 +204,7 @@ class TravelDocumentDTO extends AbstractStructBase
     /**
      * Set infoToCustomerDateUser value
      * @param string $infoToCustomerDateUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDocumentDTO
      */
     public function setInfoToCustomerDateUser(?string $infoToCustomerDateUser = null): self
     {
@@ -227,7 +227,7 @@ class TravelDocumentDTO extends AbstractStructBase
     /**
      * Set infoToCustomerType value
      * @param string $infoToCustomerType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDocumentDTO
      */
     public function setInfoToCustomerType(?string $infoToCustomerType = null): self
     {
@@ -250,7 +250,7 @@ class TravelDocumentDTO extends AbstractStructBase
     /**
      * Set inputDate value
      * @param string $inputDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDocumentDTO
      */
     public function setInputDate(?string $inputDate = null): self
     {
@@ -273,7 +273,7 @@ class TravelDocumentDTO extends AbstractStructBase
     /**
      * Set inputDateUser value
      * @param string $inputDateUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDocumentDTO
      */
     public function setInputDateUser(?string $inputDateUser = null): self
     {
@@ -296,7 +296,7 @@ class TravelDocumentDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDocumentDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -319,7 +319,7 @@ class TravelDocumentDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDocumentDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -342,7 +342,7 @@ class TravelDocumentDTO extends AbstractStructBase
     /**
      * Set outputDate value
      * @param string $outputDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDocumentDTO
      */
     public function setOutputDate(?string $outputDate = null): self
     {
@@ -365,7 +365,7 @@ class TravelDocumentDTO extends AbstractStructBase
     /**
      * Set outputDateUser value
      * @param string $outputDateUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDocumentDTO
      */
     public function setOutputDateUser(?string $outputDateUser = null): self
     {
@@ -388,7 +388,7 @@ class TravelDocumentDTO extends AbstractStructBase
     /**
      * Set outputType value
      * @param string $outputType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDocumentDTO
      */
     public function setOutputType(?string $outputType = null): self
     {
@@ -411,7 +411,7 @@ class TravelDocumentDTO extends AbstractStructBase
     /**
      * Set tdId value
      * @param int $tdId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelDocumentDTO
      */
     public function setTdId(?int $tdId = null): self
     {

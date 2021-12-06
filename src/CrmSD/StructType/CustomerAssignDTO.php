@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class CustomerAssignDTO extends AbstractStructBase
     /**
      * Set assignedCustomer value
      * @param int $assignedCustomer
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerAssignDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO
      */
     public function setAssignedCustomer(?int $assignedCustomer = null): self
     {
@@ -94,7 +94,7 @@ class CustomerAssignDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerAssignDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -117,7 +117,7 @@ class CustomerAssignDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerAssignDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -140,7 +140,7 @@ class CustomerAssignDTO extends AbstractStructBase
     /**
      * Set originCustomer value
      * @param int $originCustomer
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerAssignDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO
      */
     public function setOriginCustomer(?int $originCustomer = null): self
     {
@@ -163,7 +163,7 @@ class CustomerAssignDTO extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerAssignDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO
      */
     public function setType(?int $type = null): self
     {

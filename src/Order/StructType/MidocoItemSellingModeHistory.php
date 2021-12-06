@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoItemSellingModeHistory extends MidocoItemSellingModeType
     /**
      * Set sellingModeDescription value
      * @param string $sellingModeDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoItemSellingModeHistory
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoItemSellingModeHistory
      */
     public function setSellingModeDescription(?string $sellingModeDescription = null): self
     {

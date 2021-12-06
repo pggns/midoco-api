@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetCampaignOrgUnitsResponse extends AbstractStructBase
      * Set unit_name value
      * @throws InvalidArgumentException
      * @param string[] $unit_name
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignOrgUnitsResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignOrgUnitsResponse
      */
     public function setUnit_name(?array $unit_name = null): self
     {
@@ -85,7 +85,7 @@ class GetCampaignOrgUnitsResponse extends AbstractStructBase
      * Add item to unit_name value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignOrgUnitsResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignOrgUnitsResponse
      */
     public function addToUnit_name(string $item): self
     {

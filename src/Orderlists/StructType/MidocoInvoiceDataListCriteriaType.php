@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -109,7 +109,7 @@ class MidocoInvoiceDataListCriteriaType extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -125,7 +125,7 @@ class MidocoInvoiceDataListCriteriaType extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
      */
     public function addToOrgUnits(string $item): self
     {
@@ -148,7 +148,7 @@ class MidocoInvoiceDataListCriteriaType extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -171,7 +171,7 @@ class MidocoInvoiceDataListCriteriaType extends AbstractStructBase
     /**
      * Set receiptDateStart value
      * @param string $receiptDateStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
      */
     public function setReceiptDateStart(?string $receiptDateStart = null): self
     {
@@ -194,7 +194,7 @@ class MidocoInvoiceDataListCriteriaType extends AbstractStructBase
     /**
      * Set receiptDateEnd value
      * @param string $receiptDateEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
      */
     public function setReceiptDateEnd(?string $receiptDateEnd = null): self
     {
@@ -217,7 +217,7 @@ class MidocoInvoiceDataListCriteriaType extends AbstractStructBase
     /**
      * Set exportDateStart value
      * @param string $exportDateStart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
      */
     public function setExportDateStart(?string $exportDateStart = null): self
     {
@@ -240,7 +240,7 @@ class MidocoInvoiceDataListCriteriaType extends AbstractStructBase
     /**
      * Set exportDateEnd value
      * @param string $exportDateEnd
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
      */
     public function setExportDateEnd(?string $exportDateEnd = null): self
     {

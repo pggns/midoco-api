@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DocumentNatureMidocoTypeDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\System\StructType\DocumentNatureMidocoTypeDTO
+     * @return \Pggns\MidocoApi\System\StructType\DocumentNatureMidocoTypeDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -70,7 +70,7 @@ class DocumentNatureMidocoTypeDTO extends AbstractStructBase
     /**
      * Set midocoType value
      * @param string $midocoType
-     * @return \Pggns\MidocoApi\Api\System\StructType\DocumentNatureMidocoTypeDTO
+     * @return \Pggns\MidocoApi\System\StructType\DocumentNatureMidocoTypeDTO
      */
     public function setMidocoType(?string $midocoType = null): self
     {

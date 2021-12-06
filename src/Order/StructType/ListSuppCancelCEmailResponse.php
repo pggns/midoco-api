@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListSuppCancelCEmailResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSuppCancelCEmail
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail[]
      */
     protected ?array $MidocoSuppCancelCEmail = null;
     /**
      * Constructor method for ListSuppCancelCEmailResponse
      * @uses ListSuppCancelCEmailResponse::setMidocoSuppCancelCEmail()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail[] $midocoSuppCancelCEmail
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail[] $midocoSuppCancelCEmail
      */
     public function __construct(?array $midocoSuppCancelCEmail = null)
     {
@@ -34,7 +34,7 @@ class ListSuppCancelCEmailResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSuppCancelCEmail value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail[]
      */
     public function getMidocoSuppCancelCEmail(): ?array
     {
@@ -55,12 +55,12 @@ class ListSuppCancelCEmailResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listSuppCancelCEmailResponseMidocoSuppCancelCEmailItem) {
             // validation for constraint: itemType
-            if (!$listSuppCancelCEmailResponseMidocoSuppCancelCEmailItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail) {
+            if (!$listSuppCancelCEmailResponseMidocoSuppCancelCEmailItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail) {
                 $invalidValues[] = is_object($listSuppCancelCEmailResponseMidocoSuppCancelCEmailItem) ? get_class($listSuppCancelCEmailResponseMidocoSuppCancelCEmailItem) : sprintf('%s(%s)', gettype($listSuppCancelCEmailResponseMidocoSuppCancelCEmailItem), var_export($listSuppCancelCEmailResponseMidocoSuppCancelCEmailItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSuppCancelCEmail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSuppCancelCEmail property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListSuppCancelCEmailResponse extends AbstractStructBase
     /**
      * Set MidocoSuppCancelCEmail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail[] $midocoSuppCancelCEmail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ListSuppCancelCEmailResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail[] $midocoSuppCancelCEmail
+     * @return \Pggns\MidocoApi\Order\StructType\ListSuppCancelCEmailResponse
      */
     public function setMidocoSuppCancelCEmail(?array $midocoSuppCancelCEmail = null): self
     {
@@ -85,14 +85,14 @@ class ListSuppCancelCEmailResponse extends AbstractStructBase
     /**
      * Add item to MidocoSuppCancelCEmail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ListSuppCancelCEmailResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail $item
+     * @return \Pggns\MidocoApi\Order\StructType\ListSuppCancelCEmailResponse
      */
-    public function addToMidocoSuppCancelCEmail(\Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail $item): self
+    public function addToMidocoSuppCancelCEmail(\Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail) {
-            throw new InvalidArgumentException(sprintf('The MidocoSuppCancelCEmail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSuppCancelCEmail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail) {
+            throw new InvalidArgumentException(sprintf('The MidocoSuppCancelCEmail property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSuppCancelCEmail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSuppCancelCEmail[] = $item;
         

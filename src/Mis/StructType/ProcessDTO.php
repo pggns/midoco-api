@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ProcessDTO extends AbstractStructBase
     /**
      * Set isGui value
      * @param bool $isGui
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ProcessDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ProcessDTO
      */
     public function setIsGui(?bool $isGui = null): self
     {
@@ -70,7 +70,7 @@ class ProcessDTO extends AbstractStructBase
     /**
      * Set processName value
      * @param string $processName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ProcessDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ProcessDTO
      */
     public function setProcessName(?string $processName = null): self
     {

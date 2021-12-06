@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class TouroperatorInsurerChgLogDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TouroperatorInsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TouroperatorInsurerChgLogDTO
      */
     public function setAction(?string $action = null): self
     {
@@ -134,7 +134,7 @@ class TouroperatorInsurerChgLogDTO extends AbstractStructBase
     /**
      * Set assignedInsurer value
      * @param string $assignedInsurer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TouroperatorInsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TouroperatorInsurerChgLogDTO
      */
     public function setAssignedInsurer(?string $assignedInsurer = null): self
     {
@@ -157,7 +157,7 @@ class TouroperatorInsurerChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TouroperatorInsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TouroperatorInsurerChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -180,7 +180,7 @@ class TouroperatorInsurerChgLogDTO extends AbstractStructBase
     /**
      * Set companyName value
      * @param string $companyName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TouroperatorInsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TouroperatorInsurerChgLogDTO
      */
     public function setCompanyName(?string $companyName = null): self
     {
@@ -203,7 +203,7 @@ class TouroperatorInsurerChgLogDTO extends AbstractStructBase
     /**
      * Set insurerId value
      * @param int $insurerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TouroperatorInsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TouroperatorInsurerChgLogDTO
      */
     public function setInsurerId(?int $insurerId = null): self
     {
@@ -226,7 +226,7 @@ class TouroperatorInsurerChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TouroperatorInsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TouroperatorInsurerChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -249,7 +249,7 @@ class TouroperatorInsurerChgLogDTO extends AbstractStructBase
     /**
      * Set touroperatorId value
      * @param int $touroperatorId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TouroperatorInsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TouroperatorInsurerChgLogDTO
      */
     public function setTouroperatorId(?int $touroperatorId = null): self
     {
@@ -272,7 +272,7 @@ class TouroperatorInsurerChgLogDTO extends AbstractStructBase
     /**
      * Set touroperatorInsurerId value
      * @param int $touroperatorInsurerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TouroperatorInsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TouroperatorInsurerChgLogDTO
      */
     public function setTouroperatorInsurerId(?int $touroperatorInsurerId = null): self
     {
@@ -295,7 +295,7 @@ class TouroperatorInsurerChgLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TouroperatorInsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TouroperatorInsurerChgLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -318,7 +318,7 @@ class TouroperatorInsurerChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TouroperatorInsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TouroperatorInsurerChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

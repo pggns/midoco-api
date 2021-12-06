@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class AttachedTaskcreateRequest extends AbstractStructBase
      * The MidocoTask
      * Meta information extracted from the WSDL
      * - ref: MidocoTask
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\Task|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\Task|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\Task $MidocoTask = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\Task $MidocoTask = null;
     /**
      * The subject_type
      * @var string|null
@@ -41,12 +41,12 @@ class AttachedTaskcreateRequest extends AbstractStructBase
      * @uses AttachedTaskcreateRequest::setSubject_type()
      * @uses AttachedTaskcreateRequest::setAppName()
      * @uses AttachedTaskcreateRequest::setEventId()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\Task $midocoTask
+     * @param \Pggns\MidocoApi\Workflow\StructType\Task $midocoTask
      * @param string $subject_type
      * @param string $appName
      * @param string $eventId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\Task $midocoTask = null, ?string $subject_type = null, ?string $appName = null, ?string $eventId = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\Task $midocoTask = null, ?string $subject_type = null, ?string $appName = null, ?string $eventId = null)
     {
         $this
             ->setMidocoTask($midocoTask)
@@ -56,18 +56,18 @@ class AttachedTaskcreateRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTask value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task|null
      */
-    public function getMidocoTask(): ?\Pggns\MidocoApi\Api\Workflow\StructType\Task
+    public function getMidocoTask(): ?\Pggns\MidocoApi\Workflow\StructType\Task
     {
         return $this->MidocoTask;
     }
     /**
      * Set MidocoTask value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\Task $midocoTask
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\AttachedTaskcreateRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\Task $midocoTask
+     * @return \Pggns\MidocoApi\Workflow\StructType\AttachedTaskcreateRequest
      */
-    public function setMidocoTask(?\Pggns\MidocoApi\Api\Workflow\StructType\Task $midocoTask = null): self
+    public function setMidocoTask(?\Pggns\MidocoApi\Workflow\StructType\Task $midocoTask = null): self
     {
         $this->MidocoTask = $midocoTask;
         
@@ -84,7 +84,7 @@ class AttachedTaskcreateRequest extends AbstractStructBase
     /**
      * Set subject_type value
      * @param string $subject_type
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\AttachedTaskcreateRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\AttachedTaskcreateRequest
      */
     public function setSubject_type(?string $subject_type = null): self
     {
@@ -107,7 +107,7 @@ class AttachedTaskcreateRequest extends AbstractStructBase
     /**
      * Set appName value
      * @param string $appName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\AttachedTaskcreateRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\AttachedTaskcreateRequest
      */
     public function setAppName(?string $appName = null): self
     {
@@ -130,7 +130,7 @@ class AttachedTaskcreateRequest extends AbstractStructBase
     /**
      * Set eventId value
      * @param string $eventId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\AttachedTaskcreateRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\AttachedTaskcreateRequest
      */
     public function setEventId(?string $eventId = null): self
     {

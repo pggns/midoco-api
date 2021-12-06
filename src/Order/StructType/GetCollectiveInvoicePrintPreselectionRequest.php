@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCollectiveInvoicePrintPreselectionRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderNo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderNo[]
      */
     protected ?array $MidocoOrderNo = null;
     /**
      * Constructor method for GetCollectiveInvoicePrintPreselectionRequest
      * @uses GetCollectiveInvoicePrintPreselectionRequest::setMidocoOrderNo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNo[] $midocoOrderNo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderNo[] $midocoOrderNo
      */
     public function __construct(?array $midocoOrderNo = null)
     {
@@ -34,7 +34,7 @@ class GetCollectiveInvoicePrintPreselectionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderNo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderNo[]
      */
     public function getMidocoOrderNo(): ?array
     {
@@ -55,12 +55,12 @@ class GetCollectiveInvoicePrintPreselectionRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCollectiveInvoicePrintPreselectionRequestMidocoOrderNoItem) {
             // validation for constraint: itemType
-            if (!$getCollectiveInvoicePrintPreselectionRequestMidocoOrderNoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNo) {
+            if (!$getCollectiveInvoicePrintPreselectionRequestMidocoOrderNoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderNo) {
                 $invalidValues[] = is_object($getCollectiveInvoicePrintPreselectionRequestMidocoOrderNoItem) ? get_class($getCollectiveInvoicePrintPreselectionRequestMidocoOrderNoItem) : sprintf('%s(%s)', gettype($getCollectiveInvoicePrintPreselectionRequestMidocoOrderNoItem), var_export($getCollectiveInvoicePrintPreselectionRequestMidocoOrderNoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderNo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderNo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderNo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCollectiveInvoicePrintPreselectionRequest extends AbstractStructBase
     /**
      * Set MidocoOrderNo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNo[] $midocoOrderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCollectiveInvoicePrintPreselectionRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderNo[] $midocoOrderNo
+     * @return \Pggns\MidocoApi\Order\StructType\GetCollectiveInvoicePrintPreselectionRequest
      */
     public function setMidocoOrderNo(?array $midocoOrderNo = null): self
     {
@@ -85,14 +85,14 @@ class GetCollectiveInvoicePrintPreselectionRequest extends AbstractStructBase
     /**
      * Add item to MidocoOrderNo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCollectiveInvoicePrintPreselectionRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderNo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetCollectiveInvoicePrintPreselectionRequest
      */
-    public function addToMidocoOrderNo(\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNo $item): self
+    public function addToMidocoOrderNo(\Pggns\MidocoApi\Order\StructType\MidocoOrderNo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNo) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderNo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderNo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderNo) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderNo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderNo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderNo[] = $item;
         

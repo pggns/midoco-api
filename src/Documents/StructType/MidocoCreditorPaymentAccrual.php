@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MidocoCreditorPaymentAccrual extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCreditorPaymentAccrual
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCreditorPaymentAccrual
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -110,7 +110,7 @@ class MidocoCreditorPaymentAccrual extends AbstractStructBase
     /**
      * Set entryId value
      * @param string $entryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCreditorPaymentAccrual
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCreditorPaymentAccrual
      */
     public function setEntryId(?string $entryId = null): self
     {
@@ -133,7 +133,7 @@ class MidocoCreditorPaymentAccrual extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCreditorPaymentAccrual
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCreditorPaymentAccrual
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -156,7 +156,7 @@ class MidocoCreditorPaymentAccrual extends AbstractStructBase
     /**
      * Set invoicedAmount value
      * @param float $invoicedAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCreditorPaymentAccrual
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCreditorPaymentAccrual
      */
     public function setInvoicedAmount(?float $invoicedAmount = null): self
     {
@@ -179,7 +179,7 @@ class MidocoCreditorPaymentAccrual extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCreditorPaymentAccrual
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCreditorPaymentAccrual
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -202,7 +202,7 @@ class MidocoCreditorPaymentAccrual extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCreditorPaymentAccrual
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCreditorPaymentAccrual
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -225,7 +225,7 @@ class MidocoCreditorPaymentAccrual extends AbstractStructBase
     /**
      * Set balance value
      * @param float $balance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCreditorPaymentAccrual
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCreditorPaymentAccrual
      */
     public function setBalance(?float $balance = null): self
     {

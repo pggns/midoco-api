@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetErmMailInfoResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderMailErm
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderMailErmDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\OrderMailErmDTO[]
      */
     protected ?array $MidocoOrderMailErm = null;
     /**
      * Constructor method for GetErmMailInfoResponse
      * @uses GetErmMailInfoResponse::setMidocoOrderMailErm()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderMailErmDTO[] $midocoOrderMailErm
+     * @param \Pggns\MidocoApi\Order\StructType\OrderMailErmDTO[] $midocoOrderMailErm
      */
     public function __construct(?array $midocoOrderMailErm = null)
     {
@@ -34,7 +34,7 @@ class GetErmMailInfoResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderMailErm value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMailErmDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMailErmDTO[]
      */
     public function getMidocoOrderMailErm(): ?array
     {
@@ -55,12 +55,12 @@ class GetErmMailInfoResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getErmMailInfoResponseMidocoOrderMailErmItem) {
             // validation for constraint: itemType
-            if (!$getErmMailInfoResponseMidocoOrderMailErmItem instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderMailErmDTO) {
+            if (!$getErmMailInfoResponseMidocoOrderMailErmItem instanceof \Pggns\MidocoApi\Order\StructType\OrderMailErmDTO) {
                 $invalidValues[] = is_object($getErmMailInfoResponseMidocoOrderMailErmItem) ? get_class($getErmMailInfoResponseMidocoOrderMailErmItem) : sprintf('%s(%s)', gettype($getErmMailInfoResponseMidocoOrderMailErmItem), var_export($getErmMailInfoResponseMidocoOrderMailErmItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderMailErm property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderMailErmDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderMailErm property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderMailErmDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetErmMailInfoResponse extends AbstractStructBase
     /**
      * Set MidocoOrderMailErm value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderMailErmDTO[] $midocoOrderMailErm
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetErmMailInfoResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderMailErmDTO[] $midocoOrderMailErm
+     * @return \Pggns\MidocoApi\Order\StructType\GetErmMailInfoResponse
      */
     public function setMidocoOrderMailErm(?array $midocoOrderMailErm = null): self
     {
@@ -85,14 +85,14 @@ class GetErmMailInfoResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderMailErm value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderMailErmDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetErmMailInfoResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderMailErmDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetErmMailInfoResponse
      */
-    public function addToMidocoOrderMailErm(\Pggns\MidocoApi\Api\Order\StructType\OrderMailErmDTO $item): self
+    public function addToMidocoOrderMailErm(\Pggns\MidocoApi\Order\StructType\OrderMailErmDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderMailErmDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderMailErm property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderMailErmDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\OrderMailErmDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderMailErm property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderMailErmDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderMailErm[] = $item;
         

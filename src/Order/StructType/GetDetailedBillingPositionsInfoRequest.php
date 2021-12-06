@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -77,7 +77,7 @@ class GetDetailedBillingPositionsInfoRequest extends AbstractStructBase
     /**
      * Set billingDocumentId value
      * @param int $billingDocumentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetDetailedBillingPositionsInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetDetailedBillingPositionsInfoRequest
      */
     public function setBillingDocumentId(?int $billingDocumentId = null): self
     {
@@ -100,7 +100,7 @@ class GetDetailedBillingPositionsInfoRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetDetailedBillingPositionsInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetDetailedBillingPositionsInfoRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -123,7 +123,7 @@ class GetDetailedBillingPositionsInfoRequest extends AbstractStructBase
     /**
      * Set calculatedPrintDate value
      * @param string $calculatedPrintDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetDetailedBillingPositionsInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetDetailedBillingPositionsInfoRequest
      */
     public function setCalculatedPrintDate(?string $calculatedPrintDate = null): self
     {
@@ -146,7 +146,7 @@ class GetDetailedBillingPositionsInfoRequest extends AbstractStructBase
     /**
      * Set onlyUnprinted value
      * @param bool $onlyUnprinted
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetDetailedBillingPositionsInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetDetailedBillingPositionsInfoRequest
      */
     public function setOnlyUnprinted(?bool $onlyUnprinted = null): self
     {
@@ -169,7 +169,7 @@ class GetDetailedBillingPositionsInfoRequest extends AbstractStructBase
     /**
      * Set markCalculatedPrintDate value
      * @param string $markCalculatedPrintDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetDetailedBillingPositionsInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetDetailedBillingPositionsInfoRequest
      */
     public function setMarkCalculatedPrintDate(?string $markCalculatedPrintDate = null): self
     {

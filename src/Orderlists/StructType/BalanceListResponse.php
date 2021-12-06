@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class BalanceListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType[]
      */
     protected ?array $MidocoBalanceList = null;
     /**
@@ -26,7 +26,7 @@ class BalanceListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListSumsType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListSumsType[]
      */
     protected ?array $MidocoBalanceListSums = null;
     /**
@@ -41,8 +41,8 @@ class BalanceListResponse extends AbstractStructBase
      * @uses BalanceListResponse::setMidocoBalanceList()
      * @uses BalanceListResponse::setMidocoBalanceListSums()
      * @uses BalanceListResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType[] $midocoBalanceList
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListSumsType[] $midocoBalanceListSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType[] $midocoBalanceList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListSumsType[] $midocoBalanceListSums
      * @param int $noOfResults
      */
     public function __construct(?array $midocoBalanceList = null, ?array $midocoBalanceListSums = null, ?int $noOfResults = null)
@@ -54,7 +54,7 @@ class BalanceListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBalanceList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType[]
      */
     public function getMidocoBalanceList(): ?array
     {
@@ -75,12 +75,12 @@ class BalanceListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $balanceListResponseMidocoBalanceListItem) {
             // validation for constraint: itemType
-            if (!$balanceListResponseMidocoBalanceListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType) {
+            if (!$balanceListResponseMidocoBalanceListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType) {
                 $invalidValues[] = is_object($balanceListResponseMidocoBalanceListItem) ? get_class($balanceListResponseMidocoBalanceListItem) : sprintf('%s(%s)', gettype($balanceListResponseMidocoBalanceListItem), var_export($balanceListResponseMidocoBalanceListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBalanceList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBalanceList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -89,8 +89,8 @@ class BalanceListResponse extends AbstractStructBase
     /**
      * Set MidocoBalanceList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType[] $midocoBalanceList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BalanceListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType[] $midocoBalanceList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BalanceListResponse
      */
     public function setMidocoBalanceList(?array $midocoBalanceList = null): self
     {
@@ -105,14 +105,14 @@ class BalanceListResponse extends AbstractStructBase
     /**
      * Add item to MidocoBalanceList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BalanceListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BalanceListResponse
      */
-    public function addToMidocoBalanceList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType $item): self
+    public function addToMidocoBalanceList(\Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType) {
-            throw new InvalidArgumentException(sprintf('The MidocoBalanceList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType) {
+            throw new InvalidArgumentException(sprintf('The MidocoBalanceList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBalanceList[] = $item;
         
@@ -120,7 +120,7 @@ class BalanceListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBalanceListSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListSumsType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListSumsType[]
      */
     public function getMidocoBalanceListSums(): ?array
     {
@@ -141,12 +141,12 @@ class BalanceListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $balanceListResponseMidocoBalanceListSumsItem) {
             // validation for constraint: itemType
-            if (!$balanceListResponseMidocoBalanceListSumsItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListSumsType) {
+            if (!$balanceListResponseMidocoBalanceListSumsItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListSumsType) {
                 $invalidValues[] = is_object($balanceListResponseMidocoBalanceListSumsItem) ? get_class($balanceListResponseMidocoBalanceListSumsItem) : sprintf('%s(%s)', gettype($balanceListResponseMidocoBalanceListSumsItem), var_export($balanceListResponseMidocoBalanceListSumsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBalanceListSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListSumsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBalanceListSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListSumsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -155,8 +155,8 @@ class BalanceListResponse extends AbstractStructBase
     /**
      * Set MidocoBalanceListSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListSumsType[] $midocoBalanceListSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BalanceListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListSumsType[] $midocoBalanceListSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BalanceListResponse
      */
     public function setMidocoBalanceListSums(?array $midocoBalanceListSums = null): self
     {
@@ -171,14 +171,14 @@ class BalanceListResponse extends AbstractStructBase
     /**
      * Add item to MidocoBalanceListSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListSumsType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BalanceListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListSumsType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BalanceListResponse
      */
-    public function addToMidocoBalanceListSums(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListSumsType $item): self
+    public function addToMidocoBalanceListSums(\Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListSumsType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListSumsType) {
-            throw new InvalidArgumentException(sprintf('The MidocoBalanceListSums property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBalanceListSumsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListSumsType) {
+            throw new InvalidArgumentException(sprintf('The MidocoBalanceListSums property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListSumsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBalanceListSums[] = $item;
         
@@ -195,7 +195,7 @@ class BalanceListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BalanceListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BalanceListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class AppModuleChgLogDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AppModuleChgLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AppModuleChgLogDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -102,7 +102,7 @@ class AppModuleChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AppModuleChgLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AppModuleChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -125,7 +125,7 @@ class AppModuleChgLogDTO extends AbstractStructBase
     /**
      * Set isDefault value
      * @param bool $isDefault
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AppModuleChgLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AppModuleChgLogDTO
      */
     public function setIsDefault(?bool $isDefault = null): self
     {
@@ -148,7 +148,7 @@ class AppModuleChgLogDTO extends AbstractStructBase
     /**
      * Set modulId value
      * @param string $modulId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AppModuleChgLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AppModuleChgLogDTO
      */
     public function setModulId(?string $modulId = null): self
     {
@@ -171,7 +171,7 @@ class AppModuleChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AppModuleChgLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AppModuleChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -194,7 +194,7 @@ class AppModuleChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AppModuleChgLogDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AppModuleChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

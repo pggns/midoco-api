@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetCcProxySingleUseTokenValueRequest extends AbstractStructBase
     /**
      * Set singleUseToken value
      * @param string $singleUseToken
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetCcProxySingleUseTokenValueRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetCcProxySingleUseTokenValueRequest
      */
     public function setSingleUseToken(?string $singleUseToken = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -53,7 +53,7 @@ class AnnounceStadisMessageResponse extends AbstractStructBase
     /**
      * Set OrderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceStadisMessageResponse
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceStadisMessageResponse
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -76,7 +76,7 @@ class AnnounceStadisMessageResponse extends AbstractStructBase
     /**
      * Set OrderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceStadisMessageResponse
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceStadisMessageResponse
      */
     public function setOrderNo(?int $orderNo = null): self
     {

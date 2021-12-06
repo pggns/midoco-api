@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class AgencySettlemPosDetailDTO extends AbstractStructBase
     /**
      * Set baseAmount value
      * @param float $baseAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlemPosDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlemPosDetailDTO
      */
     public function setBaseAmount(?float $baseAmount = null): self
     {
@@ -142,7 +142,7 @@ class AgencySettlemPosDetailDTO extends AbstractStructBase
     /**
      * Set commissionAmount value
      * @param float $commissionAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlemPosDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlemPosDetailDTO
      */
     public function setCommissionAmount(?float $commissionAmount = null): self
     {
@@ -165,7 +165,7 @@ class AgencySettlemPosDetailDTO extends AbstractStructBase
     /**
      * Set commissionInsuranceAmount value
      * @param float $commissionInsuranceAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlemPosDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlemPosDetailDTO
      */
     public function setCommissionInsuranceAmount(?float $commissionInsuranceAmount = null): self
     {
@@ -188,7 +188,7 @@ class AgencySettlemPosDetailDTO extends AbstractStructBase
     /**
      * Set commissionVatAmount value
      * @param float $commissionVatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlemPosDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlemPosDetailDTO
      */
     public function setCommissionVatAmount(?float $commissionVatAmount = null): self
     {
@@ -211,7 +211,7 @@ class AgencySettlemPosDetailDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlemPosDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlemPosDetailDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -234,7 +234,7 @@ class AgencySettlemPosDetailDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlemPosDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlemPosDetailDTO
      */
     public function setId(?int $id = null): self
     {
@@ -257,7 +257,7 @@ class AgencySettlemPosDetailDTO extends AbstractStructBase
     /**
      * Set isAgencyFee value
      * @param bool $isAgencyFee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlemPosDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlemPosDetailDTO
      */
     public function setIsAgencyFee(?bool $isAgencyFee = null): self
     {
@@ -280,7 +280,7 @@ class AgencySettlemPosDetailDTO extends AbstractStructBase
     /**
      * Set isManual value
      * @param bool $isManual
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlemPosDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlemPosDetailDTO
      */
     public function setIsManual(?bool $isManual = null): self
     {
@@ -303,7 +303,7 @@ class AgencySettlemPosDetailDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlemPosDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlemPosDetailDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -326,7 +326,7 @@ class AgencySettlemPosDetailDTO extends AbstractStructBase
     /**
      * Set settlementPositionId value
      * @param int $settlementPositionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlemPosDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlemPosDetailDTO
      */
     public function setSettlementPositionId(?int $settlementPositionId = null): self
     {
@@ -349,7 +349,7 @@ class AgencySettlemPosDetailDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlemPosDetailDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlemPosDetailDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

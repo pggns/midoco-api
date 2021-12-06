@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoSettlementTypeRequest extends AbstractStructBase
      * The MidocoSettlementType
      * Meta information extracted from the WSDL
      * - ref: MidocoSettlementType
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO $MidocoSettlementType = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO $MidocoSettlementType = null;
     /**
      * Constructor method for SaveMidocoSettlementTypeRequest
      * @uses SaveMidocoSettlementTypeRequest::setMidocoSettlementType()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType = null)
     {
         $this
             ->setMidocoSettlementType($midocoSettlementType);
     }
     /**
      * Get MidocoSettlementType value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO|null
      */
-    public function getMidocoSettlementType(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO
+    public function getMidocoSettlementType(): ?\Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO
     {
         return $this->MidocoSettlementType;
     }
     /**
      * Set MidocoSettlementType value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveMidocoSettlementTypeRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveMidocoSettlementTypeRequest
      */
-    public function setMidocoSettlementType(?\Pggns\MidocoApi\Api\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType = null): self
+    public function setMidocoSettlementType(?\Pggns\MidocoApi\Orderlists\StructType\SettlementTypeDTO $midocoSettlementType = null): self
     {
         $this->MidocoSettlementType = $midocoSettlementType;
         

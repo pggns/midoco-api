@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetExportMessages4OrderResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoExportMessage
-     * @var \Pggns\MidocoApi\Api\Order\StructType\ExportMessageDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\ExportMessageDTO[]
      */
     protected ?array $MidocoExportMessage = null;
     /**
      * Constructor method for GetExportMessages4OrderResponse
      * @uses GetExportMessages4OrderResponse::setMidocoExportMessage()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportMessageDTO[] $midocoExportMessage
+     * @param \Pggns\MidocoApi\Order\StructType\ExportMessageDTO[] $midocoExportMessage
      */
     public function __construct(?array $midocoExportMessage = null)
     {
@@ -34,7 +34,7 @@ class GetExportMessages4OrderResponse extends AbstractStructBase
     }
     /**
      * Get MidocoExportMessage value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportMessageDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\ExportMessageDTO[]
      */
     public function getMidocoExportMessage(): ?array
     {
@@ -55,12 +55,12 @@ class GetExportMessages4OrderResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getExportMessages4OrderResponseMidocoExportMessageItem) {
             // validation for constraint: itemType
-            if (!$getExportMessages4OrderResponseMidocoExportMessageItem instanceof \Pggns\MidocoApi\Api\Order\StructType\ExportMessageDTO) {
+            if (!$getExportMessages4OrderResponseMidocoExportMessageItem instanceof \Pggns\MidocoApi\Order\StructType\ExportMessageDTO) {
                 $invalidValues[] = is_object($getExportMessages4OrderResponseMidocoExportMessageItem) ? get_class($getExportMessages4OrderResponseMidocoExportMessageItem) : sprintf('%s(%s)', gettype($getExportMessages4OrderResponseMidocoExportMessageItem), var_export($getExportMessages4OrderResponseMidocoExportMessageItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoExportMessage property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ExportMessageDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoExportMessage property can only contain items of type \Pggns\MidocoApi\Order\StructType\ExportMessageDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetExportMessages4OrderResponse extends AbstractStructBase
     /**
      * Set MidocoExportMessage value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportMessageDTO[] $midocoExportMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExportMessages4OrderResponse
+     * @param \Pggns\MidocoApi\Order\StructType\ExportMessageDTO[] $midocoExportMessage
+     * @return \Pggns\MidocoApi\Order\StructType\GetExportMessages4OrderResponse
      */
     public function setMidocoExportMessage(?array $midocoExportMessage = null): self
     {
@@ -85,14 +85,14 @@ class GetExportMessages4OrderResponse extends AbstractStructBase
     /**
      * Add item to MidocoExportMessage value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ExportMessageDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExportMessages4OrderResponse
+     * @param \Pggns\MidocoApi\Order\StructType\ExportMessageDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetExportMessages4OrderResponse
      */
-    public function addToMidocoExportMessage(\Pggns\MidocoApi\Api\Order\StructType\ExportMessageDTO $item): self
+    public function addToMidocoExportMessage(\Pggns\MidocoApi\Order\StructType\ExportMessageDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\ExportMessageDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoExportMessage property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\ExportMessageDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\ExportMessageDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoExportMessage property can only contain items of type \Pggns\MidocoApi\Order\StructType\ExportMessageDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoExportMessage[] = $item;
         

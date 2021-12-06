@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetFairplaneDetailsRequest extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFairplaneDetailsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetFairplaneDetailsRequest
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -78,7 +78,7 @@ class GetFairplaneDetailsRequest extends AbstractStructBase
     /**
      * Set positionNo value
      * @param int $positionNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFairplaneDetailsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetFairplaneDetailsRequest
      */
     public function setPositionNo(?int $positionNo = null): self
     {
@@ -101,7 +101,7 @@ class GetFairplaneDetailsRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFairplaneDetailsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetFairplaneDetailsRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

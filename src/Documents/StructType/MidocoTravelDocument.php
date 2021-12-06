@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class MidocoTravelDocument extends TravelDocumentDTO
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelDocument
      */
     public function setSupplier(?string $supplier = null): self
     {

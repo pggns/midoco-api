@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetCrossSellVersInfosResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: CrossSellingVersInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CrossSellingVersInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\CrossSellingVersInfo[]
      */
     protected ?array $CrossSellingVersInfo = null;
     /**
@@ -31,7 +31,7 @@ class GetCrossSellVersInfosResponse extends AbstractStructBase
      * Constructor method for GetCrossSellVersInfosResponse
      * @uses GetCrossSellVersInfosResponse::setCrossSellingVersInfo()
      * @uses GetCrossSellVersInfosResponse::setExistsVers()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrossSellingVersInfo[] $crossSellingVersInfo
+     * @param \Pggns\MidocoApi\Order\StructType\CrossSellingVersInfo[] $crossSellingVersInfo
      * @param bool $existsVers
      */
     public function __construct(?array $crossSellingVersInfo = null, ?bool $existsVers = null)
@@ -42,7 +42,7 @@ class GetCrossSellVersInfosResponse extends AbstractStructBase
     }
     /**
      * Get CrossSellingVersInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingVersInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingVersInfo[]
      */
     public function getCrossSellingVersInfo(): ?array
     {
@@ -63,12 +63,12 @@ class GetCrossSellVersInfosResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCrossSellVersInfosResponseCrossSellingVersInfoItem) {
             // validation for constraint: itemType
-            if (!$getCrossSellVersInfosResponseCrossSellingVersInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\CrossSellingVersInfo) {
+            if (!$getCrossSellVersInfosResponseCrossSellingVersInfoItem instanceof \Pggns\MidocoApi\Order\StructType\CrossSellingVersInfo) {
                 $invalidValues[] = is_object($getCrossSellVersInfosResponseCrossSellingVersInfoItem) ? get_class($getCrossSellVersInfosResponseCrossSellingVersInfoItem) : sprintf('%s(%s)', gettype($getCrossSellVersInfosResponseCrossSellingVersInfoItem), var_export($getCrossSellVersInfosResponseCrossSellingVersInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CrossSellingVersInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CrossSellingVersInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CrossSellingVersInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\CrossSellingVersInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,8 +77,8 @@ class GetCrossSellVersInfosResponse extends AbstractStructBase
     /**
      * Set CrossSellingVersInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrossSellingVersInfo[] $crossSellingVersInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCrossSellVersInfosResponse
+     * @param \Pggns\MidocoApi\Order\StructType\CrossSellingVersInfo[] $crossSellingVersInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetCrossSellVersInfosResponse
      */
     public function setCrossSellingVersInfo(?array $crossSellingVersInfo = null): self
     {
@@ -93,14 +93,14 @@ class GetCrossSellVersInfosResponse extends AbstractStructBase
     /**
      * Add item to CrossSellingVersInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrossSellingVersInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCrossSellVersInfosResponse
+     * @param \Pggns\MidocoApi\Order\StructType\CrossSellingVersInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetCrossSellVersInfosResponse
      */
-    public function addToCrossSellingVersInfo(\Pggns\MidocoApi\Api\Order\StructType\CrossSellingVersInfo $item): self
+    public function addToCrossSellingVersInfo(\Pggns\MidocoApi\Order\StructType\CrossSellingVersInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\CrossSellingVersInfo) {
-            throw new InvalidArgumentException(sprintf('The CrossSellingVersInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CrossSellingVersInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\CrossSellingVersInfo) {
+            throw new InvalidArgumentException(sprintf('The CrossSellingVersInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\CrossSellingVersInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CrossSellingVersInfo[] = $item;
         
@@ -117,7 +117,7 @@ class GetCrossSellVersInfosResponse extends AbstractStructBase
     /**
      * Set existsVers value
      * @param bool $existsVers
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCrossSellVersInfosResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetCrossSellVersInfosResponse
      */
     public function setExistsVers(?bool $existsVers = null): self
     {

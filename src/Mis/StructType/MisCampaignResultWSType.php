@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class MisCampaignResultWSType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoPageContent
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\PageContentType|null
+     * @var \Pggns\MidocoApi\Mis\StructType\PageContentType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\PageContentType $MidocoPageContent = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\PageContentType $MidocoPageContent = null;
     /**
      * The pageNo
      * @var int|null
@@ -36,11 +36,11 @@ class MisCampaignResultWSType extends AbstractStructBase
      * @uses MisCampaignResultWSType::setMidocoPageContent()
      * @uses MisCampaignResultWSType::setPageNo()
      * @uses MisCampaignResultWSType::setCampaignId()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\PageContentType $midocoPageContent
+     * @param \Pggns\MidocoApi\Mis\StructType\PageContentType $midocoPageContent
      * @param int $pageNo
      * @param int $campaignId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\PageContentType $midocoPageContent = null, ?int $pageNo = null, ?int $campaignId = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\PageContentType $midocoPageContent = null, ?int $pageNo = null, ?int $campaignId = null)
     {
         $this
             ->setMidocoPageContent($midocoPageContent)
@@ -49,18 +49,18 @@ class MisCampaignResultWSType extends AbstractStructBase
     }
     /**
      * Get MidocoPageContent value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PageContentType|null
+     * @return \Pggns\MidocoApi\Mis\StructType\PageContentType|null
      */
-    public function getMidocoPageContent(): ?\Pggns\MidocoApi\Api\Mis\StructType\PageContentType
+    public function getMidocoPageContent(): ?\Pggns\MidocoApi\Mis\StructType\PageContentType
     {
         return $this->MidocoPageContent;
     }
     /**
      * Set MidocoPageContent value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\PageContentType $midocoPageContent
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultWSType
+     * @param \Pggns\MidocoApi\Mis\StructType\PageContentType $midocoPageContent
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignResultWSType
      */
-    public function setMidocoPageContent(?\Pggns\MidocoApi\Api\Mis\StructType\PageContentType $midocoPageContent = null): self
+    public function setMidocoPageContent(?\Pggns\MidocoApi\Mis\StructType\PageContentType $midocoPageContent = null): self
     {
         $this->MidocoPageContent = $midocoPageContent;
         
@@ -77,7 +77,7 @@ class MisCampaignResultWSType extends AbstractStructBase
     /**
      * Set pageNo value
      * @param int $pageNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultWSType
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignResultWSType
      */
     public function setPageNo(?int $pageNo = null): self
     {
@@ -100,7 +100,7 @@ class MisCampaignResultWSType extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignResultWSType
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignResultWSType
      */
     public function setCampaignId(?int $campaignId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class StorageTypeDTO extends AbstractStructBase
     /**
      * Set datastoreTypeId value
      * @param string $datastoreTypeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\StorageTypeDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\StorageTypeDTO
      */
     public function setDatastoreTypeId(?string $datastoreTypeId = null): self
     {

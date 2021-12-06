@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class TaxDetail extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TaxDetail
+     * @return \Pggns\MidocoApi\Order\StructType\TaxDetail
      */
     public function setPosition(?int $position = null): self
     {
@@ -86,7 +86,7 @@ class TaxDetail extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TaxDetail
+     * @return \Pggns\MidocoApi\Order\StructType\TaxDetail
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -109,7 +109,7 @@ class TaxDetail extends AbstractStructBase
     /**
      * Set taxAmount value
      * @param float $taxAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TaxDetail
+     * @return \Pggns\MidocoApi\Order\StructType\TaxDetail
      */
     public function setTaxAmount(?float $taxAmount = null): self
     {
@@ -132,7 +132,7 @@ class TaxDetail extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TaxDetail
+     * @return \Pggns\MidocoApi\Order\StructType\TaxDetail
      */
     public function setType(?string $type = null): self
     {

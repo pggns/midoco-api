@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListInsurersResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoInsurer
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoInsurer[]
      */
     protected ?array $MidocoInsurer = null;
     /**
      * Constructor method for ListInsurersResponse
      * @uses ListInsurersResponse::setMidocoInsurer()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer[] $midocoInsurer
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoInsurer[] $midocoInsurer
      */
     public function __construct(?array $midocoInsurer = null)
     {
@@ -34,7 +34,7 @@ class ListInsurersResponse extends AbstractStructBase
     }
     /**
      * Get MidocoInsurer value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoInsurer[]
      */
     public function getMidocoInsurer(): ?array
     {
@@ -55,12 +55,12 @@ class ListInsurersResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listInsurersResponseMidocoInsurerItem) {
             // validation for constraint: itemType
-            if (!$listInsurersResponseMidocoInsurerItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer) {
+            if (!$listInsurersResponseMidocoInsurerItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoInsurer) {
                 $invalidValues[] = is_object($listInsurersResponseMidocoInsurerItem) ? get_class($listInsurersResponseMidocoInsurerItem) : sprintf('%s(%s)', gettype($listInsurersResponseMidocoInsurerItem), var_export($listInsurersResponseMidocoInsurerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoInsurer property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoInsurer property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoInsurer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListInsurersResponse extends AbstractStructBase
     /**
      * Set MidocoInsurer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer[] $midocoInsurer
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListInsurersResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoInsurer[] $midocoInsurer
+     * @return \Pggns\MidocoApi\Documents\StructType\ListInsurersResponse
      */
     public function setMidocoInsurer(?array $midocoInsurer = null): self
     {
@@ -85,14 +85,14 @@ class ListInsurersResponse extends AbstractStructBase
     /**
      * Add item to MidocoInsurer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListInsurersResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoInsurer $item
+     * @return \Pggns\MidocoApi\Documents\StructType\ListInsurersResponse
      */
-    public function addToMidocoInsurer(\Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer $item): self
+    public function addToMidocoInsurer(\Pggns\MidocoApi\Documents\StructType\MidocoInsurer $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer) {
-            throw new InvalidArgumentException(sprintf('The MidocoInsurer property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoInsurer) {
+            throw new InvalidArgumentException(sprintf('The MidocoInsurer property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoInsurer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoInsurer[] = $item;
         

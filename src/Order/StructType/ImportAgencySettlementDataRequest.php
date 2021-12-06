@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -43,7 +43,7 @@ class ImportAgencySettlementDataRequest extends AbstractStructBase
     /**
      * Set CSVData value
      * @param string $cSVData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ImportAgencySettlementDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ImportAgencySettlementDataRequest
      */
     public function setCSVData(?string $cSVData = null): self
     {

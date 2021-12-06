@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class BaggageAllowanceDTO extends AbstractStructBase
     /**
      * Set airlineCode value
      * @param string $airlineCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowanceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BaggageAllowanceDTO
      */
     public function setAirlineCode(?string $airlineCode = null): self
     {
@@ -118,7 +118,7 @@ class BaggageAllowanceDTO extends AbstractStructBase
     /**
      * Set allowanceInKg value
      * @param int $allowanceInKg
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowanceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BaggageAllowanceDTO
      */
     public function setAllowanceInKg(?int $allowanceInKg = null): self
     {
@@ -141,7 +141,7 @@ class BaggageAllowanceDTO extends AbstractStructBase
     /**
      * Set baggageAllowanceId value
      * @param int $baggageAllowanceId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowanceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BaggageAllowanceDTO
      */
     public function setBaggageAllowanceId(?int $baggageAllowanceId = null): self
     {
@@ -164,7 +164,7 @@ class BaggageAllowanceDTO extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowanceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BaggageAllowanceDTO
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -187,7 +187,7 @@ class BaggageAllowanceDTO extends AbstractStructBase
     /**
      * Set isInherited value
      * @param bool $isInherited
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowanceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BaggageAllowanceDTO
      */
     public function setIsInherited(?bool $isInherited = null): self
     {
@@ -210,7 +210,7 @@ class BaggageAllowanceDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowanceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BaggageAllowanceDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -233,7 +233,7 @@ class BaggageAllowanceDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowanceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BaggageAllowanceDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -256,7 +256,7 @@ class BaggageAllowanceDTO extends AbstractStructBase
     /**
      * Set validUntil value
      * @param string $validUntil
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BaggageAllowanceDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BaggageAllowanceDTO
      */
     public function setValidUntil(?string $validUntil = null): self
     {

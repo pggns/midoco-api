@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CancelLongOperationRequest extends AbstractStructBase
     /**
      * Set operation value
      * @param string $operation
-     * @return \Pggns\MidocoApi\Api\System\StructType\CancelLongOperationRequest
+     * @return \Pggns\MidocoApi\System\StructType\CancelLongOperationRequest
      */
     public function setOperation(?string $operation = null): self
     {

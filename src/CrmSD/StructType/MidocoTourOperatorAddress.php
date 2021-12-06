@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoTourOperatorAddress extends TouroperatorAddressDTO
     /**
      * Set companyName value
      * @param string $companyName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoTourOperatorAddress
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorAddress
      */
     public function setCompanyName(?string $companyName = null): self
     {

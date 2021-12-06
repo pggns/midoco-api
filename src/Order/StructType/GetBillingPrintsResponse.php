@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetBillingPrintsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingPrint
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\BillingPrintDTO[]
      */
     protected ?array $MidocoBillingPrint = null;
     /**
      * Constructor method for GetBillingPrintsResponse
      * @uses GetBillingPrintsResponse::setMidocoBillingPrint()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO[] $midocoBillingPrint
+     * @param \Pggns\MidocoApi\Order\StructType\BillingPrintDTO[] $midocoBillingPrint
      */
     public function __construct(?array $midocoBillingPrint = null)
     {
@@ -34,7 +34,7 @@ class GetBillingPrintsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingPrint value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPrintDTO[]
      */
     public function getMidocoBillingPrint(): ?array
     {
@@ -55,12 +55,12 @@ class GetBillingPrintsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBillingPrintsResponseMidocoBillingPrintItem) {
             // validation for constraint: itemType
-            if (!$getBillingPrintsResponseMidocoBillingPrintItem instanceof \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO) {
+            if (!$getBillingPrintsResponseMidocoBillingPrintItem instanceof \Pggns\MidocoApi\Order\StructType\BillingPrintDTO) {
                 $invalidValues[] = is_object($getBillingPrintsResponseMidocoBillingPrintItem) ? get_class($getBillingPrintsResponseMidocoBillingPrintItem) : sprintf('%s(%s)', gettype($getBillingPrintsResponseMidocoBillingPrintItem), var_export($getBillingPrintsResponseMidocoBillingPrintItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingPrint property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingPrint property can only contain items of type \Pggns\MidocoApi\Order\StructType\BillingPrintDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetBillingPrintsResponse extends AbstractStructBase
     /**
      * Set MidocoBillingPrint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO[] $midocoBillingPrint
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPrintsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\BillingPrintDTO[] $midocoBillingPrint
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPrintsResponse
      */
     public function setMidocoBillingPrint(?array $midocoBillingPrint = null): self
     {
@@ -85,14 +85,14 @@ class GetBillingPrintsResponse extends AbstractStructBase
     /**
      * Add item to MidocoBillingPrint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPrintsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\BillingPrintDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPrintsResponse
      */
-    public function addToMidocoBillingPrint(\Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO $item): self
+    public function addToMidocoBillingPrint(\Pggns\MidocoApi\Order\StructType\BillingPrintDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingPrint property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BillingPrintDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\BillingPrintDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingPrint property can only contain items of type \Pggns\MidocoApi\Order\StructType\BillingPrintDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingPrint[] = $item;
         

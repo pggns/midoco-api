@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class UsersPassHistoryDTO extends AbstractStructBase
     /**
      * Set historyIndex value
      * @param int $historyIndex
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UsersPassHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UsersPassHistoryDTO
      */
     public function setHistoryIndex(?int $historyIndex = null): self
     {
@@ -86,7 +86,7 @@ class UsersPassHistoryDTO extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UsersPassHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UsersPassHistoryDTO
      */
     public function setPassword(?string $password = null): self
     {
@@ -109,7 +109,7 @@ class UsersPassHistoryDTO extends AbstractStructBase
     /**
      * Set passwordDate value
      * @param string $passwordDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UsersPassHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UsersPassHistoryDTO
      */
     public function setPasswordDate(?string $passwordDate = null): self
     {
@@ -132,7 +132,7 @@ class UsersPassHistoryDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UsersPassHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\UsersPassHistoryDTO
      */
     public function setUserId(?int $userId = null): self
     {

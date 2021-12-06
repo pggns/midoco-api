@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set contentType value
      * @param string $contentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setContentType(?string $contentType = null): self
     {
@@ -198,7 +198,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -221,7 +221,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -244,7 +244,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set documentContent value
      * @param string $documentContent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setDocumentContent(?string $documentContent = null): self
     {
@@ -267,7 +267,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -290,7 +290,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set documentRefId value
      * @param int $documentRefId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setDocumentRefId(?int $documentRefId = null): self
     {
@@ -313,7 +313,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set documentSize value
      * @param int $documentSize
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setDocumentSize(?int $documentSize = null): self
     {
@@ -336,7 +336,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -359,7 +359,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set hashAlgorithm value
      * @param string $hashAlgorithm
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setHashAlgorithm(?string $hashAlgorithm = null): self
     {
@@ -382,7 +382,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set initialHashValue value
      * @param string $initialHashValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setInitialHashValue(?string $initialHashValue = null): self
     {
@@ -405,7 +405,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -428,7 +428,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -451,7 +451,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -474,7 +474,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set storageReferenceKeystoreName value
      * @param string $storageReferenceKeystoreName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setStorageReferenceKeystoreName(?string $storageReferenceKeystoreName = null): self
     {
@@ -497,7 +497,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set storageReferenceUuid value
      * @param string $storageReferenceUuid
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setStorageReferenceUuid(?string $storageReferenceUuid = null): self
     {
@@ -520,7 +520,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {
@@ -543,7 +543,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -566,7 +566,7 @@ class MidocoDocumentRepository extends AbstractStructBase
     /**
      * Set deliverHashValue value
      * @param string $deliverHashValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentRepository
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentRepository
      */
     public function setDeliverHashValue(?string $deliverHashValue = null): self
     {

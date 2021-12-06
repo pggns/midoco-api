@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SearchSupplierCcCardRequest extends AbstractStructBase
      * The MidocoSupplierCcCard
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierCcCard
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard $MidocoSupplierCcCard = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard $MidocoSupplierCcCard = null;
     /**
      * Constructor method for SearchSupplierCcCardRequest
      * @uses SearchSupplierCcCardRequest::setMidocoSupplierCcCard()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard $midocoSupplierCcCard
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard $midocoSupplierCcCard
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard $midocoSupplierCcCard = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard $midocoSupplierCcCard = null)
     {
         $this
             ->setMidocoSupplierCcCard($midocoSupplierCcCard);
     }
     /**
      * Get MidocoSupplierCcCard value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard|null
      */
-    public function getMidocoSupplierCcCard(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard
+    public function getMidocoSupplierCcCard(): ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard
     {
         return $this->MidocoSupplierCcCard;
     }
     /**
      * Set MidocoSupplierCcCard value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard $midocoSupplierCcCard
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchSupplierCcCardRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard $midocoSupplierCcCard
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchSupplierCcCardRequest
      */
-    public function setMidocoSupplierCcCard(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard $midocoSupplierCcCard = null): self
+    public function setMidocoSupplierCcCard(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard $midocoSupplierCcCard = null): self
     {
         $this->MidocoSupplierCcCard = $midocoSupplierCcCard;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetCampaignQueryResultsReqType extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignQueryResultsReqType
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignQueryResultsReqType
      */
     public function setCampaignId(?int $campaignId = null): self
     {

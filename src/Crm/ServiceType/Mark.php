@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\ServiceType;
+namespace Pggns\MidocoApi\Crm\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Mark extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Crm\ServiceType\Mark
+     * @return \Pggns\MidocoApi\Crm\ServiceType\Mark
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Mark extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MarkUsedMidocoMandateRequest $paramMarkUsedMidocoMandateRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MarkUsedMandateResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\MarkUsedMidocoMandateRequest $paramMarkUsedMidocoMandateRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\MarkUsedMandateResponse|bool
      */
-    public function markUsedMidocoMandate(\Pggns\MidocoApi\Api\Crm\StructType\MarkUsedMidocoMandateRequest $paramMarkUsedMidocoMandateRequest)
+    public function markUsedMidocoMandate(\Pggns\MidocoApi\Crm\StructType\MarkUsedMidocoMandateRequest $paramMarkUsedMidocoMandateRequest)
     {
         try {
             $this->setResult($resultMarkUsedMidocoMandate = $this->getSoapClient()->__soapCall('markUsedMidocoMandate', [
@@ -58,15 +58,15 @@ class Mark extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MarkExportChangedCustomersRequest $paramMarkExportChangedCustomersRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MarkExportChangedCustomersResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\MarkExportChangedCustomersRequest $paramMarkExportChangedCustomersRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\MarkExportChangedCustomersResponse|bool
      */
-    public function markExportChangedCustomers(\Pggns\MidocoApi\Api\Crm\StructType\MarkExportChangedCustomersRequest $paramMarkExportChangedCustomersRequest)
+    public function markExportChangedCustomers(\Pggns\MidocoApi\Crm\StructType\MarkExportChangedCustomersRequest $paramMarkExportChangedCustomersRequest)
     {
         try {
             $this->setResult($resultMarkExportChangedCustomers = $this->getSoapClient()->__soapCall('markExportChangedCustomers', [
@@ -85,15 +85,15 @@ class Mark extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MarkVoidedCrmNoticeCommentRequest $paramMarkVoidedCrmNoticeCommentRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MarkVoidedCrmNoticeCommentResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\MarkVoidedCrmNoticeCommentRequest $paramMarkVoidedCrmNoticeCommentRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\MarkVoidedCrmNoticeCommentResponse|bool
      */
-    public function markVoidedCrmNoticeComment(\Pggns\MidocoApi\Api\Crm\StructType\MarkVoidedCrmNoticeCommentRequest $paramMarkVoidedCrmNoticeCommentRequest)
+    public function markVoidedCrmNoticeComment(\Pggns\MidocoApi\Crm\StructType\MarkVoidedCrmNoticeCommentRequest $paramMarkVoidedCrmNoticeCommentRequest)
     {
         try {
             $this->setResult($resultMarkVoidedCrmNoticeComment = $this->getSoapClient()->__soapCall('markVoidedCrmNoticeComment', [
@@ -110,7 +110,7 @@ class Mark extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MarkExportChangedCustomersResponse|\Pggns\MidocoApi\Api\Crm\StructType\MarkUsedMandateResponse|\Pggns\MidocoApi\Api\Crm\StructType\MarkVoidedCrmNoticeCommentResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\MarkExportChangedCustomersResponse|\Pggns\MidocoApi\Crm\StructType\MarkUsedMandateResponse|\Pggns\MidocoApi\Crm\StructType\MarkVoidedCrmNoticeCommentResponse
      */
     public function getResult()
     {

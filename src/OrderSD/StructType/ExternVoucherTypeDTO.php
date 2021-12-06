@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class ExternVoucherTypeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -86,7 +86,7 @@ class ExternVoucherTypeDTO extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO
      */
     public function setPrice(?float $price = null): self
     {
@@ -109,7 +109,7 @@ class ExternVoucherTypeDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -132,7 +132,7 @@ class ExternVoucherTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ExternVoucherTypeDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ExternVoucherTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

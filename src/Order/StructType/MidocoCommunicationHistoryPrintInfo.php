@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -50,7 +50,7 @@ class MidocoCommunicationHistoryPrintInfo extends CommunicationHistoryDTO
     /**
      * Set selected value
      * @param bool $selected
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCommunicationHistoryPrintInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCommunicationHistoryPrintInfo
      */
     public function setSelected(?bool $selected = null): self
     {
@@ -100,7 +100,7 @@ class MidocoCommunicationHistoryPrintInfo extends CommunicationHistoryDTO
      * Set Ids value
      * @throws InvalidArgumentException
      * @param int[] $ids
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCommunicationHistoryPrintInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCommunicationHistoryPrintInfo
      */
     public function setIds(?array $ids = null): self
     {
@@ -116,7 +116,7 @@ class MidocoCommunicationHistoryPrintInfo extends CommunicationHistoryDTO
      * Add item to Ids value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCommunicationHistoryPrintInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCommunicationHistoryPrintInfo
      */
     public function addToIds(int $item): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class SaveExternDocumentResponse extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentResponse
      */
     public function setId(?int $id = null): self
     {
@@ -72,7 +72,7 @@ class SaveExternDocumentResponse extends AbstractStructBase
     /**
      * Set dontMail value
      * @param bool $dontMail
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveExternDocumentResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveExternDocumentResponse
      */
     public function setDontMail(?bool $dontMail = false): self
     {

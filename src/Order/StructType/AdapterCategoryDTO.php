@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class AdapterCategoryDTO extends AbstractStructBase
     /**
      * Set adapterType value
      * @param string $adapterType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdapterCategoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AdapterCategoryDTO
      */
     public function setAdapterType(?string $adapterType = null): self
     {

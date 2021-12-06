@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -207,7 +207,7 @@ class Fee extends AbstractStructBase
     /**
      * Set reference_booking value
      * @param int $reference_booking
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setReference_booking(?int $reference_booking = null): self
     {
@@ -230,7 +230,7 @@ class Fee extends AbstractStructBase
     /**
      * Set reference_price value
      * @param string $reference_price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setReference_price(?string $reference_price = null): self
     {
@@ -253,7 +253,7 @@ class Fee extends AbstractStructBase
     /**
      * Set fee_code value
      * @param string $fee_code
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setFee_code(?string $fee_code = null): self
     {
@@ -276,7 +276,7 @@ class Fee extends AbstractStructBase
     /**
      * Set fee_description value
      * @param string $fee_description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setFee_description(?string $fee_description = null): self
     {
@@ -299,7 +299,7 @@ class Fee extends AbstractStructBase
     /**
      * Set total_price value
      * @param float $total_price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setTotal_price(?float $total_price = null): self
     {
@@ -322,7 +322,7 @@ class Fee extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -345,7 +345,7 @@ class Fee extends AbstractStructBase
     /**
      * Set person_assignment value
      * @param string $person_assignment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setPerson_assignment(?string $person_assignment = null): self
     {
@@ -368,7 +368,7 @@ class Fee extends AbstractStructBase
     /**
      * Set vat_free_amount value
      * @param float $vat_free_amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setVat_free_amount(?float $vat_free_amount = null): self
     {
@@ -391,7 +391,7 @@ class Fee extends AbstractStructBase
     /**
      * Set taxable_amount value
      * @param float $taxable_amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setTaxable_amount(?float $taxable_amount = null): self
     {
@@ -414,7 +414,7 @@ class Fee extends AbstractStructBase
     /**
      * Set vat_included value
      * @param bool $vat_included
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setVat_included(?bool $vat_included = null): self
     {
@@ -437,7 +437,7 @@ class Fee extends AbstractStructBase
     /**
      * Set fee_calculation_info value
      * @param string $fee_calculation_info
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setFee_calculation_info(?string $fee_calculation_info = null): self
     {
@@ -460,7 +460,7 @@ class Fee extends AbstractStructBase
     /**
      * Set supplier_id value
      * @param string $supplier_id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setSupplier_id(?string $supplier_id = null): self
     {
@@ -483,7 +483,7 @@ class Fee extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setStatus(?string $status = 'OK'): self
     {
@@ -506,7 +506,7 @@ class Fee extends AbstractStructBase
     /**
      * Set is_agency_fee value
      * @param bool $is_agency_fee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setIs_agency_fee(?bool $is_agency_fee = null): self
     {
@@ -529,7 +529,7 @@ class Fee extends AbstractStructBase
     /**
      * Set is_visible value
      * @param bool $is_visible
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setIs_visible(?bool $is_visible = true): self
     {
@@ -552,7 +552,7 @@ class Fee extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setPosition(?int $position = null): self
     {
@@ -575,7 +575,7 @@ class Fee extends AbstractStructBase
     /**
      * Set order_position value
      * @param int $order_position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setOrder_position(?int $order_position = null): self
     {
@@ -598,7 +598,7 @@ class Fee extends AbstractStructBase
     /**
      * Set price_ref value
      * @param int $price_ref
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Fee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Fee
      */
     public function setPrice_ref(?int $price_ref = null): self
     {

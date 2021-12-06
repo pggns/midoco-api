@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -46,17 +46,17 @@ class CustomerMfRuleAttributeType extends AbstractStructBase
     }
     /**
      * Set name value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\CustomerMfRuleAttributeTypeNames::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\CustomerMfRuleAttributeTypeNames::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\CustomerMfRuleAttributeTypeNames::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\CustomerMfRuleAttributeTypeNames::getValidValues()
      * @throws InvalidArgumentException
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustomerMfRuleAttributeType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustomerMfRuleAttributeType
      */
     public function setName(?string $name = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\CustomerMfRuleAttributeTypeNames::valueIsValid($name)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\CustomerMfRuleAttributeTypeNames', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\CustomerMfRuleAttributeTypeNames::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\CustomerMfRuleAttributeTypeNames::valueIsValid($name)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\CustomerMfRuleAttributeTypeNames', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\CustomerMfRuleAttributeTypeNames::getValidValues())), __LINE__);
         }
         $this->name = $name;
         
@@ -73,7 +73,7 @@ class CustomerMfRuleAttributeType extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustomerMfRuleAttributeType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustomerMfRuleAttributeType
      */
     public function setValue(?string $value = null): self
     {

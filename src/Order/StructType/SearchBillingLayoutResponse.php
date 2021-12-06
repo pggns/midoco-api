@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchBillingLayoutResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingLayout
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingLayout[]
      */
     protected ?array $MidocoBillingLayout = null;
     /**
      * Constructor method for SearchBillingLayoutResponse
      * @uses SearchBillingLayoutResponse::setMidocoBillingLayout()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout[] $midocoBillingLayout
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingLayout[] $midocoBillingLayout
      */
     public function __construct(?array $midocoBillingLayout = null)
     {
@@ -34,7 +34,7 @@ class SearchBillingLayoutResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingLayout value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingLayout[]
      */
     public function getMidocoBillingLayout(): ?array
     {
@@ -55,12 +55,12 @@ class SearchBillingLayoutResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchBillingLayoutResponseMidocoBillingLayoutItem) {
             // validation for constraint: itemType
-            if (!$searchBillingLayoutResponseMidocoBillingLayoutItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout) {
+            if (!$searchBillingLayoutResponseMidocoBillingLayoutItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingLayout) {
                 $invalidValues[] = is_object($searchBillingLayoutResponseMidocoBillingLayoutItem) ? get_class($searchBillingLayoutResponseMidocoBillingLayoutItem) : sprintf('%s(%s)', gettype($searchBillingLayoutResponseMidocoBillingLayoutItem), var_export($searchBillingLayoutResponseMidocoBillingLayoutItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingLayout property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingLayout property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingLayout, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchBillingLayoutResponse extends AbstractStructBase
     /**
      * Set MidocoBillingLayout value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout[] $midocoBillingLayout
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingLayoutResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingLayout[] $midocoBillingLayout
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingLayoutResponse
      */
     public function setMidocoBillingLayout(?array $midocoBillingLayout = null): self
     {
@@ -85,14 +85,14 @@ class SearchBillingLayoutResponse extends AbstractStructBase
     /**
      * Add item to MidocoBillingLayout value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingLayoutResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingLayout $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingLayoutResponse
      */
-    public function addToMidocoBillingLayout(\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout $item): self
+    public function addToMidocoBillingLayout(\Pggns\MidocoApi\Order\StructType\MidocoBillingLayout $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingLayout property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingLayout) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingLayout property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingLayout, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingLayout[] = $item;
         

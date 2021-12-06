@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class UserDataDTO extends AbstractStructBase
     /**
      * Set dataKey value
      * @param string $dataKey
-     * @return \Pggns\MidocoApi\Api\System\StructType\UserDataDTO
+     * @return \Pggns\MidocoApi\System\StructType\UserDataDTO
      */
     public function setDataKey(?string $dataKey = null): self
     {
@@ -78,7 +78,7 @@ class UserDataDTO extends AbstractStructBase
     /**
      * Set dataValue value
      * @param string $dataValue
-     * @return \Pggns\MidocoApi\Api\System\StructType\UserDataDTO
+     * @return \Pggns\MidocoApi\System\StructType\UserDataDTO
      */
     public function setDataValue(?string $dataValue = null): self
     {
@@ -101,7 +101,7 @@ class UserDataDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\System\StructType\UserDataDTO
+     * @return \Pggns\MidocoApi\System\StructType\UserDataDTO
      */
     public function setUserId(?int $userId = null): self
     {

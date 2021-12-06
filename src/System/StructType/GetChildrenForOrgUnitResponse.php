@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetChildrenForOrgUnitResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrgunit
-     * @var \Pggns\MidocoApi\Api\System\StructType\OrgunitDTO[]
+     * @var \Pggns\MidocoApi\System\StructType\OrgunitDTO[]
      */
     protected ?array $MidocoOrgunit = null;
     /**
      * Constructor method for GetChildrenForOrgUnitResponse
      * @uses GetChildrenForOrgUnitResponse::setMidocoOrgunit()
-     * @param \Pggns\MidocoApi\Api\System\StructType\OrgunitDTO[] $midocoOrgunit
+     * @param \Pggns\MidocoApi\System\StructType\OrgunitDTO[] $midocoOrgunit
      */
     public function __construct(?array $midocoOrgunit = null)
     {
@@ -34,7 +34,7 @@ class GetChildrenForOrgUnitResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrgunit value
-     * @return \Pggns\MidocoApi\Api\System\StructType\OrgunitDTO[]
+     * @return \Pggns\MidocoApi\System\StructType\OrgunitDTO[]
      */
     public function getMidocoOrgunit(): ?array
     {
@@ -55,12 +55,12 @@ class GetChildrenForOrgUnitResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getChildrenForOrgUnitResponseMidocoOrgunitItem) {
             // validation for constraint: itemType
-            if (!$getChildrenForOrgUnitResponseMidocoOrgunitItem instanceof \Pggns\MidocoApi\Api\System\StructType\OrgunitDTO) {
+            if (!$getChildrenForOrgUnitResponseMidocoOrgunitItem instanceof \Pggns\MidocoApi\System\StructType\OrgunitDTO) {
                 $invalidValues[] = is_object($getChildrenForOrgUnitResponseMidocoOrgunitItem) ? get_class($getChildrenForOrgUnitResponseMidocoOrgunitItem) : sprintf('%s(%s)', gettype($getChildrenForOrgUnitResponseMidocoOrgunitItem), var_export($getChildrenForOrgUnitResponseMidocoOrgunitItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrgunit property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\OrgunitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrgunit property can only contain items of type \Pggns\MidocoApi\System\StructType\OrgunitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetChildrenForOrgUnitResponse extends AbstractStructBase
     /**
      * Set MidocoOrgunit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\OrgunitDTO[] $midocoOrgunit
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetChildrenForOrgUnitResponse
+     * @param \Pggns\MidocoApi\System\StructType\OrgunitDTO[] $midocoOrgunit
+     * @return \Pggns\MidocoApi\System\StructType\GetChildrenForOrgUnitResponse
      */
     public function setMidocoOrgunit(?array $midocoOrgunit = null): self
     {
@@ -85,14 +85,14 @@ class GetChildrenForOrgUnitResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrgunit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\OrgunitDTO $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetChildrenForOrgUnitResponse
+     * @param \Pggns\MidocoApi\System\StructType\OrgunitDTO $item
+     * @return \Pggns\MidocoApi\System\StructType\GetChildrenForOrgUnitResponse
      */
-    public function addToMidocoOrgunit(\Pggns\MidocoApi\Api\System\StructType\OrgunitDTO $item): self
+    public function addToMidocoOrgunit(\Pggns\MidocoApi\System\StructType\OrgunitDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\OrgunitDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrgunit property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\OrgunitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\OrgunitDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrgunit property can only contain items of type \Pggns\MidocoApi\System\StructType\OrgunitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrgunit[] = $item;
         

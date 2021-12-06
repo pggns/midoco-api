@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ComplaintStateDataDTO extends AbstractStructBase
     /**
      * Set stateId value
      * @param string $stateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ComplaintStateDataDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ComplaintStateDataDTO
      */
     public function setStateId(?string $stateId = null): self
     {

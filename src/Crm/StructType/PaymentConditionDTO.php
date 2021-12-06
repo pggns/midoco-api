@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class PaymentConditionDTO extends AbstractStructBase
     /**
      * Set conditionDescription value
      * @param string $conditionDescription
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO
      */
     public function setConditionDescription(?string $conditionDescription = null): self
     {
@@ -86,7 +86,7 @@ class PaymentConditionDTO extends AbstractStructBase
     /**
      * Set conditionId value
      * @param string $conditionId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO
      */
     public function setConditionId(?string $conditionId = null): self
     {
@@ -109,7 +109,7 @@ class PaymentConditionDTO extends AbstractStructBase
     /**
      * Set dueDateBasisType value
      * @param string $dueDateBasisType
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO
      */
     public function setDueDateBasisType(?string $dueDateBasisType = null): self
     {
@@ -132,7 +132,7 @@ class PaymentConditionDTO extends AbstractStructBase
     /**
      * Set paymentDays value
      * @param int $paymentDays
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PaymentConditionDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\PaymentConditionDTO
      */
     public function setPaymentDays(?int $paymentDays = null): self
     {

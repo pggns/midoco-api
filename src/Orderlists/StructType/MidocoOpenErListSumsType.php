@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoOpenErListSumsType extends AbstractStructBase
     /**
      * Set filiale value
      * @param string $filiale
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErListSumsType
      */
     public function setFiliale(?string $filiale = null): self
     {
@@ -70,7 +70,7 @@ class MidocoOpenErListSumsType extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOpenErListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOpenErListSumsType
      */
     public function setAmount(?float $amount = null): self
     {

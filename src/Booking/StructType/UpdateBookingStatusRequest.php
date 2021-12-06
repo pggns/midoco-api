@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -77,7 +77,7 @@ class UpdateBookingStatusRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\UpdateBookingStatusRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\UpdateBookingStatusRequest
      */
     public function setSupplierId(string $supplierId): self
     {
@@ -100,7 +100,7 @@ class UpdateBookingStatusRequest extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\UpdateBookingStatusRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\UpdateBookingStatusRequest
      */
     public function setBookingId(string $bookingId): self
     {
@@ -123,7 +123,7 @@ class UpdateBookingStatusRequest extends AbstractStructBase
     /**
      * Set newStatus value
      * @param string $newStatus
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\UpdateBookingStatusRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\UpdateBookingStatusRequest
      */
     public function setNewStatus(string $newStatus): self
     {
@@ -146,7 +146,7 @@ class UpdateBookingStatusRequest extends AbstractStructBase
     /**
      * Set newBookingId value
      * @param string $newBookingId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\UpdateBookingStatusRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\UpdateBookingStatusRequest
      */
     public function setNewBookingId(?string $newBookingId = null): self
     {
@@ -169,7 +169,7 @@ class UpdateBookingStatusRequest extends AbstractStructBase
     /**
      * Set newReferenceBookingId value
      * @param string $newReferenceBookingId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\UpdateBookingStatusRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\UpdateBookingStatusRequest
      */
     public function setNewReferenceBookingId(?string $newReferenceBookingId = null): self
     {

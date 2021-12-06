@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetMidocoOrderRecapMessageResponse extends AbstractStructBase
     /**
      * Set recapMessage value
      * @param string $recapMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoOrderRecapMessageResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoOrderRecapMessageResponse
      */
     public function setRecapMessage(?string $recapMessage = null): self
     {

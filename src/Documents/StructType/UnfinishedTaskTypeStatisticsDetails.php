@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class UnfinishedTaskTypeStatisticsDetails extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UnfinishedTaskTypeStatisticsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\UnfinishedTaskTypeStatisticsDetails
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -86,7 +86,7 @@ class UnfinishedTaskTypeStatisticsDetails extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UnfinishedTaskTypeStatisticsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\UnfinishedTaskTypeStatisticsDetails
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -109,7 +109,7 @@ class UnfinishedTaskTypeStatisticsDetails extends AbstractStructBase
     /**
      * Set notePosition value
      * @param int $notePosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UnfinishedTaskTypeStatisticsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\UnfinishedTaskTypeStatisticsDetails
      */
     public function setNotePosition(?int $notePosition = null): self
     {
@@ -132,7 +132,7 @@ class UnfinishedTaskTypeStatisticsDetails extends AbstractStructBase
     /**
      * Set isWindowClosing value
      * @param bool $isWindowClosing
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UnfinishedTaskTypeStatisticsDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\UnfinishedTaskTypeStatisticsDetails
      */
     public function setIsWindowClosing(?bool $isWindowClosing = null): self
     {

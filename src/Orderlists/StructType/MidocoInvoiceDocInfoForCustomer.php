@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -183,7 +183,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set invoiceId value
      * @param int $invoiceId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setInvoiceId(?int $invoiceId = null): self
     {
@@ -206,7 +206,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param int $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setInvoiceNo(?int $invoiceNo = null): self
     {
@@ -229,7 +229,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -252,7 +252,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set invoiceAmount value
      * @param float $invoiceAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setInvoiceAmount(?float $invoiceAmount = null): self
     {
@@ -275,7 +275,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setMedia(?string $media = null): self
     {
@@ -298,7 +298,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -321,7 +321,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -344,7 +344,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -367,7 +367,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setForename(?string $forename = null): self
     {
@@ -390,7 +390,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setName(?string $name = null): self
     {
@@ -413,7 +413,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -436,7 +436,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -459,7 +459,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -482,7 +482,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set creationUser value
      * @param string $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setCreationUser(?string $creationUser = null): self
     {
@@ -505,7 +505,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -528,7 +528,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set callDate value
      * @param string $callDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setCallDate(?string $callDate = null): self
     {
@@ -551,7 +551,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setFileName(?string $fileName = null): self
     {
@@ -574,7 +574,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -597,7 +597,7 @@ class MidocoInvoiceDocInfoForCustomer extends AbstractStructBase
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoInvoiceDocInfoForCustomer
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoOrderPayment extends OrderPaymentDTO
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderPayment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderPayment
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {

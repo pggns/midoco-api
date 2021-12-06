@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SaveTamaraPositionRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTamaraPosition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTamaraPosition[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTamaraPosition[]
      */
     protected ?array $MidocoTamaraPosition = null;
     /**
      * Constructor method for SaveTamaraPositionRequest
      * @uses SaveTamaraPositionRequest::setMidocoTamaraPosition()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTamaraPosition[] $midocoTamaraPosition
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTamaraPosition[] $midocoTamaraPosition
      */
     public function __construct(?array $midocoTamaraPosition = null)
     {
@@ -34,7 +34,7 @@ class SaveTamaraPositionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTamaraPosition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTamaraPosition[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTamaraPosition[]
      */
     public function getMidocoTamaraPosition(): ?array
     {
@@ -55,12 +55,12 @@ class SaveTamaraPositionRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveTamaraPositionRequestMidocoTamaraPositionItem) {
             // validation for constraint: itemType
-            if (!$saveTamaraPositionRequestMidocoTamaraPositionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTamaraPosition) {
+            if (!$saveTamaraPositionRequestMidocoTamaraPositionItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoTamaraPosition) {
                 $invalidValues[] = is_object($saveTamaraPositionRequestMidocoTamaraPositionItem) ? get_class($saveTamaraPositionRequestMidocoTamaraPositionItem) : sprintf('%s(%s)', gettype($saveTamaraPositionRequestMidocoTamaraPositionItem), var_export($saveTamaraPositionRequestMidocoTamaraPositionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTamaraPosition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTamaraPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTamaraPosition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTamaraPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SaveTamaraPositionRequest extends AbstractStructBase
     /**
      * Set MidocoTamaraPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTamaraPosition[] $midocoTamaraPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveTamaraPositionRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTamaraPosition[] $midocoTamaraPosition
+     * @return \Pggns\MidocoApi\Order\StructType\SaveTamaraPositionRequest
      */
     public function setMidocoTamaraPosition(?array $midocoTamaraPosition = null): self
     {
@@ -85,14 +85,14 @@ class SaveTamaraPositionRequest extends AbstractStructBase
     /**
      * Add item to MidocoTamaraPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTamaraPosition $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveTamaraPositionRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTamaraPosition $item
+     * @return \Pggns\MidocoApi\Order\StructType\SaveTamaraPositionRequest
      */
-    public function addToMidocoTamaraPosition(\Pggns\MidocoApi\Api\Order\StructType\MidocoTamaraPosition $item): self
+    public function addToMidocoTamaraPosition(\Pggns\MidocoApi\Order\StructType\MidocoTamaraPosition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTamaraPosition) {
-            throw new InvalidArgumentException(sprintf('The MidocoTamaraPosition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTamaraPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoTamaraPosition) {
+            throw new InvalidArgumentException(sprintf('The MidocoTamaraPosition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTamaraPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTamaraPosition[] = $item;
         

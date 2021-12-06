@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class PassengerInfosRailDTO extends AbstractStructBase
     /**
      * Set bahncard value
      * @param string $bahncard
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO
      */
     public function setBahncard(?string $bahncard = null): self
     {
@@ -86,7 +86,7 @@ class PassengerInfosRailDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -109,7 +109,7 @@ class PassengerInfosRailDTO extends AbstractStructBase
     /**
      * Set passengerKey value
      * @param string $passengerKey
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO
      */
     public function setPassengerKey(?string $passengerKey = null): self
     {
@@ -132,7 +132,7 @@ class PassengerInfosRailDTO extends AbstractStructBase
     /**
      * Set positionNo value
      * @param int $positionNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO
      */
     public function setPositionNo(?int $positionNo = null): self
     {

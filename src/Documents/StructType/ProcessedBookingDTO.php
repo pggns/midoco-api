@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class ProcessedBookingDTO extends AbstractStructBase
     /**
      * Set externalId value
      * @param string $externalId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ProcessedBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ProcessedBookingDTO
      */
     public function setExternalId(?string $externalId = null): self
     {
@@ -78,7 +78,7 @@ class ProcessedBookingDTO extends AbstractStructBase
     /**
      * Set externalSystem value
      * @param string $externalSystem
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ProcessedBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ProcessedBookingDTO
      */
     public function setExternalSystem(?string $externalSystem = null): self
     {
@@ -101,7 +101,7 @@ class ProcessedBookingDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ProcessedBookingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ProcessedBookingDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {

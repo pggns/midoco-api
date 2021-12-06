@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class EmptyFieldDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EmptyFieldDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EmptyFieldDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -70,7 +70,7 @@ class EmptyFieldDTO extends AbstractStructBase
     /**
      * Set fieldName value
      * @param string $fieldName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EmptyFieldDTO
+     * @return \Pggns\MidocoApi\Order\StructType\EmptyFieldDTO
      */
     public function setFieldName(?string $fieldName = null): self
     {

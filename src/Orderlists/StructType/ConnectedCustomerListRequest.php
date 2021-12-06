@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class ConnectedCustomerListRequest extends AbstractStructBase
      * The MidocoConnectedCustomerListCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoConnectedCustomerListCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria $MidocoConnectedCustomerListCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria $MidocoConnectedCustomerListCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class ConnectedCustomerListRequest extends AbstractStructBase
      * Constructor method for ConnectedCustomerListRequest
      * @uses ConnectedCustomerListRequest::setMidocoConnectedCustomerListCriteria()
      * @uses ConnectedCustomerListRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria $midocoConnectedCustomerListCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria $midocoConnectedCustomerListCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria $midocoConnectedCustomerListCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria $midocoConnectedCustomerListCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoConnectedCustomerListCriteria($midocoConnectedCustomerListCriteria)
@@ -42,18 +42,18 @@ class ConnectedCustomerListRequest extends AbstractStructBase
     }
     /**
      * Get MidocoConnectedCustomerListCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria|null
      */
-    public function getMidocoConnectedCustomerListCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria
+    public function getMidocoConnectedCustomerListCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria
     {
         return $this->MidocoConnectedCustomerListCriteria;
     }
     /**
      * Set MidocoConnectedCustomerListCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria $midocoConnectedCustomerListCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectedCustomerListRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria $midocoConnectedCustomerListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ConnectedCustomerListRequest
      */
-    public function setMidocoConnectedCustomerListCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoConnectedCustomerListCriteria $midocoConnectedCustomerListCriteria = null): self
+    public function setMidocoConnectedCustomerListCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoConnectedCustomerListCriteria $midocoConnectedCustomerListCriteria = null): self
     {
         $this->MidocoConnectedCustomerListCriteria = $midocoConnectedCustomerListCriteria;
         
@@ -70,7 +70,7 @@ class ConnectedCustomerListRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ConnectedCustomerListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ConnectedCustomerListRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

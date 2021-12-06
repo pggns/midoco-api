@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class CorrectBookingJournalRequest extends AbstractStructBase
     /**
      * Set paymentId value
      * @param int $paymentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CorrectBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CorrectBookingJournalRequest
      */
     public function setPaymentId(?int $paymentId = null): self
     {
@@ -70,7 +70,7 @@ class CorrectBookingJournalRequest extends AbstractStructBase
     /**
      * Set newDebitAccount value
      * @param string $newDebitAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CorrectBookingJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CorrectBookingJournalRequest
      */
     public function setNewDebitAccount(?string $newDebitAccount = null): self
     {

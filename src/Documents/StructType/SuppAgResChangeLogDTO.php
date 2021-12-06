@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class SuppAgResChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppAgResChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppAgResChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -94,7 +94,7 @@ class SuppAgResChangeLogDTO extends AbstractStructBase
     /**
      * Set sourceAgency value
      * @param string $sourceAgency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppAgResChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppAgResChangeLogDTO
      */
     public function setSourceAgency(?string $sourceAgency = null): self
     {
@@ -117,7 +117,7 @@ class SuppAgResChangeLogDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppAgResChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppAgResChangeLogDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -140,7 +140,7 @@ class SuppAgResChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppAgResChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppAgResChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -163,7 +163,7 @@ class SuppAgResChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppAgResChangeLogDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppAgResChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

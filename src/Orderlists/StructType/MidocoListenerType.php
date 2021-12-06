@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoListenerType extends AbstractStructBase
     /**
      * Set listener value
      * @param string $listener
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoListenerType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoListenerType
      */
     public function setListener(?string $listener = null): self
     {
@@ -70,7 +70,7 @@ class MidocoListenerType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoListenerType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoListenerType
      */
     public function setDescription(?string $description = null): self
     {

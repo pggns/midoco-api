@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -951,7 +951,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set agencyCustomerId value
      * @param int $agencyCustomerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setAgencyCustomerId(?int $agencyCustomerId = null): self
     {
@@ -974,7 +974,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set agencyDebitorNo value
      * @param string $agencyDebitorNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setAgencyDebitorNo(?string $agencyDebitorNo = null): self
     {
@@ -997,7 +997,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -1020,7 +1020,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set bookingCurrencyRate value
      * @param float $bookingCurrencyRate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setBookingCurrencyRate(?float $bookingCurrencyRate = null): self
     {
@@ -1043,7 +1043,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set calculatedMediatorTotal value
      * @param float $calculatedMediatorTotal
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setCalculatedMediatorTotal(?float $calculatedMediatorTotal = null): self
     {
@@ -1066,7 +1066,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set catalogKey value
      * @param bool $catalogKey
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setCatalogKey(?bool $catalogKey = null): self
     {
@@ -1089,7 +1089,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set collectiveBilling value
      * @param bool $collectiveBilling
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setCollectiveBilling(?bool $collectiveBilling = null): self
     {
@@ -1112,7 +1112,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set commissionBaseAmount value
      * @param float $commissionBaseAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setCommissionBaseAmount(?float $commissionBaseAmount = null): self
     {
@@ -1135,7 +1135,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set companyUsage value
      * @param bool $companyUsage
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setCompanyUsage(?bool $companyUsage = null): self
     {
@@ -1158,7 +1158,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -1181,7 +1181,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -1204,7 +1204,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -1227,7 +1227,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -1250,7 +1250,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -1273,7 +1273,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set currencyLookupMethod value
      * @param int $currencyLookupMethod
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setCurrencyLookupMethod(?int $currencyLookupMethod = null): self
     {
@@ -1296,7 +1296,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set customerCostCentre value
      * @param string $customerCostCentre
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setCustomerCostCentre(?string $customerCostCentre = null): self
     {
@@ -1319,7 +1319,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -1342,7 +1342,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set deliveryType value
      * @param string $deliveryType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDeliveryType(?string $deliveryType = null): self
     {
@@ -1365,7 +1365,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set deliveryTypeId value
      * @param string $deliveryTypeId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDeliveryTypeId(?string $deliveryTypeId = null): self
     {
@@ -1388,7 +1388,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set department value
      * @param string $department
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDepartment(?string $department = null): self
     {
@@ -1411,7 +1411,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set depositAmount value
      * @param float $depositAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDepositAmount(?float $depositAmount = null): self
     {
@@ -1434,7 +1434,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set depositDate value
      * @param string $depositDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDepositDate(?string $depositDate = null): self
     {
@@ -1457,7 +1457,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set depositDunningDate value
      * @param string $depositDunningDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDepositDunningDate(?string $depositDunningDate = null): self
     {
@@ -1480,7 +1480,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set depositPaymentDueDate value
      * @param string $depositPaymentDueDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDepositPaymentDueDate(?string $depositPaymentDueDate = null): self
     {
@@ -1503,7 +1503,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set depositPreset value
      * @param bool $depositPreset
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDepositPreset(?bool $depositPreset = null): self
     {
@@ -1526,7 +1526,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set depositReceived value
      * @param bool $depositReceived
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDepositReceived(?bool $depositReceived = null): self
     {
@@ -1549,7 +1549,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set depositReceivedDate value
      * @param string $depositReceivedDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDepositReceivedDate(?string $depositReceivedDate = null): self
     {
@@ -1572,7 +1572,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set destinationKey value
      * @param string $destinationKey
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDestinationKey(?string $destinationKey = null): self
     {
@@ -1595,7 +1595,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set displayedCurrency value
      * @param string $displayedCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDisplayedCurrency(?string $displayedCurrency = null): self
     {
@@ -1618,7 +1618,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set displayedCurrencyRate value
      * @param float $displayedCurrencyRate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDisplayedCurrencyRate(?float $displayedCurrencyRate = null): self
     {
@@ -1641,7 +1641,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set displayedDepositAmount value
      * @param float $displayedDepositAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDisplayedDepositAmount(?float $displayedDepositAmount = null): self
     {
@@ -1664,7 +1664,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set displayedInkassoPrice value
      * @param float $displayedInkassoPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDisplayedInkassoPrice(?float $displayedInkassoPrice = null): self
     {
@@ -1687,7 +1687,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set displayedTotalPayment value
      * @param float $displayedTotalPayment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDisplayedTotalPayment(?float $displayedTotalPayment = null): self
     {
@@ -1710,7 +1710,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set displayedTotalPrice value
      * @param float $displayedTotalPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDisplayedTotalPrice(?float $displayedTotalPrice = null): self
     {
@@ -1733,7 +1733,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set dunningDate value
      * @param string $dunningDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDunningDate(?string $dunningDate = null): self
     {
@@ -1756,7 +1756,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set dunningLock value
      * @param bool $dunningLock
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDunningLock(?bool $dunningLock = null): self
     {
@@ -1779,7 +1779,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set dunningPreset value
      * @param bool $dunningPreset
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDunningPreset(?bool $dunningPreset = null): self
     {
@@ -1802,7 +1802,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set durationKey value
      * @param string $durationKey
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setDurationKey(?string $durationKey = null): self
     {
@@ -1825,7 +1825,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set endTravelDate value
      * @param string $endTravelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setEndTravelDate(?string $endTravelDate = null): self
     {
@@ -1848,7 +1848,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {
@@ -1871,7 +1871,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -1894,7 +1894,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set extBookingId value
      * @param string $extBookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setExtBookingId(?string $extBookingId = null): self
     {
@@ -1917,7 +1917,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set finalPayment value
      * @param string $finalPayment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setFinalPayment(?string $finalPayment = null): self
     {
@@ -1940,7 +1940,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set finalPaymentReceived value
      * @param bool $finalPaymentReceived
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setFinalPaymentReceived(?bool $finalPaymentReceived = null): self
     {
@@ -1963,7 +1963,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set finalPaymentReceivedDate value
      * @param string $finalPaymentReceivedDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setFinalPaymentReceivedDate(?string $finalPaymentReceivedDate = null): self
     {
@@ -1986,7 +1986,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set firstWorkTime value
      * @param string $firstWorkTime
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setFirstWorkTime(?string $firstWorkTime = null): self
     {
@@ -2009,7 +2009,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set groupReservation value
      * @param bool $groupReservation
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setGroupReservation(?bool $groupReservation = null): self
     {
@@ -2032,7 +2032,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set hasForeignDebitor value
      * @param bool $hasForeignDebitor
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setHasForeignDebitor(?bool $hasForeignDebitor = null): self
     {
@@ -2055,7 +2055,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set inkassoPrice value
      * @param float $inkassoPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setInkassoPrice(?float $inkassoPrice = null): self
     {
@@ -2078,7 +2078,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -2101,7 +2101,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set invoicedAmount value
      * @param float $invoicedAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setInvoicedAmount(?float $invoicedAmount = null): self
     {
@@ -2124,7 +2124,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set invoicingType value
      * @param string $invoicingType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setInvoicingType(?string $invoicingType = null): self
     {
@@ -2147,7 +2147,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set isOrderControlled value
      * @param bool $isOrderControlled
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setIsOrderControlled(?bool $isOrderControlled = null): self
     {
@@ -2170,7 +2170,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set isReadonly value
      * @param bool $isReadonly
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setIsReadonly(?bool $isReadonly = null): self
     {
@@ -2193,7 +2193,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set isStorno value
      * @param bool $isStorno
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setIsStorno(?bool $isStorno = null): self
     {
@@ -2216,7 +2216,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set lastAgencySettlementPos value
      * @param int $lastAgencySettlementPos
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setLastAgencySettlementPos(?int $lastAgencySettlementPos = null): self
     {
@@ -2239,7 +2239,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set lastInkassoPrice value
      * @param float $lastInkassoPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setLastInkassoPrice(?float $lastInkassoPrice = null): self
     {
@@ -2262,7 +2262,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set lastInvoiceId value
      * @param int $lastInvoiceId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setLastInvoiceId(?int $lastInvoiceId = null): self
     {
@@ -2285,7 +2285,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set lastWorkingUser value
      * @param int $lastWorkingUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setLastWorkingUser(?int $lastWorkingUser = null): self
     {
@@ -2308,7 +2308,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set lastWorkingUserTimestamp value
      * @param string $lastWorkingUserTimestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setLastWorkingUserTimestamp(?string $lastWorkingUserTimestamp = null): self
     {
@@ -2331,7 +2331,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set legalCountry value
      * @param string $legalCountry
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setLegalCountry(?string $legalCountry = null): self
     {
@@ -2354,7 +2354,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set lockIndicator value
      * @param int $lockIndicator
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setLockIndicator(?int $lockIndicator = null): self
     {
@@ -2377,7 +2377,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set lockReason value
      * @param string $lockReason
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setLockReason(?string $lockReason = null): self
     {
@@ -2400,7 +2400,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set lockTimestamp value
      * @param string $lockTimestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setLockTimestamp(?string $lockTimestamp = null): self
     {
@@ -2423,7 +2423,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set lockUser value
      * @param int $lockUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setLockUser(?int $lockUser = null): self
     {
@@ -2446,7 +2446,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set mainBookingId value
      * @param string $mainBookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setMainBookingId(?string $mainBookingId = null): self
     {
@@ -2469,7 +2469,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set mainSupplierId value
      * @param string $mainSupplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setMainSupplierId(?string $mainSupplierId = null): self
     {
@@ -2492,7 +2492,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set manualCommission value
      * @param bool $manualCommission
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setManualCommission(?bool $manualCommission = null): self
     {
@@ -2515,7 +2515,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set mediatorAffiliate value
      * @param string $mediatorAffiliate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setMediatorAffiliate(?string $mediatorAffiliate = null): self
     {
@@ -2538,7 +2538,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -2561,7 +2561,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set mediatorType value
      * @param string $mediatorType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setMediatorType(?string $mediatorType = null): self
     {
@@ -2584,7 +2584,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -2607,7 +2607,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set modifyTime value
      * @param string $modifyTime
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setModifyTime(?string $modifyTime = null): self
     {
@@ -2630,7 +2630,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -2653,7 +2653,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set needsCommissionPrint value
      * @param bool $needsCommissionPrint
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setNeedsCommissionPrint(?bool $needsCommissionPrint = null): self
     {
@@ -2676,7 +2676,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set needsInvoicePrint value
      * @param bool $needsInvoicePrint
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setNeedsInvoicePrint(?bool $needsInvoicePrint = null): self
     {
@@ -2699,7 +2699,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set needsSellModeAssign value
      * @param bool $needsSellModeAssign
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setNeedsSellModeAssign(?bool $needsSellModeAssign = null): self
     {
@@ -2722,7 +2722,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set nonBookedVat value
      * @param float $nonBookedVat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setNonBookedVat(?float $nonBookedVat = null): self
     {
@@ -2745,7 +2745,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set optionHandled value
      * @param bool $optionHandled
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setOptionHandled(?bool $optionHandled = null): self
     {
@@ -2768,7 +2768,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set orderControlledBy value
      * @param int $orderControlledBy
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setOrderControlledBy(?int $orderControlledBy = null): self
     {
@@ -2791,7 +2791,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set orderControlledTimestamp value
      * @param string $orderControlledTimestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setOrderControlledTimestamp(?string $orderControlledTimestamp = null): self
     {
@@ -2814,7 +2814,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -2837,7 +2837,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -2860,7 +2860,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set paymentDueDate value
      * @param string $paymentDueDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setPaymentDueDate(?string $paymentDueDate = null): self
     {
@@ -2883,7 +2883,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set paymentExported value
      * @param bool $paymentExported
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setPaymentExported(?bool $paymentExported = null): self
     {
@@ -2906,7 +2906,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -2929,7 +2929,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set personsKey value
      * @param string $personsKey
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setPersonsKey(?string $personsKey = null): self
     {
@@ -2952,7 +2952,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setProductType(?string $productType = null): self
     {
@@ -2975,7 +2975,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set projectNo value
      * @param string $projectNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setProjectNo(?string $projectNo = null): self
     {
@@ -2998,7 +2998,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set ranking value
      * @param int $ranking
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setRanking(?int $ranking = null): self
     {
@@ -3021,7 +3021,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set requestHandled value
      * @param bool $requestHandled
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setRequestHandled(?bool $requestHandled = null): self
     {
@@ -3044,7 +3044,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set sellingType value
      * @param int $sellingType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setSellingType(?int $sellingType = null): self
     {
@@ -3067,7 +3067,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set startTravelDate value
      * @param string $startTravelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setStartTravelDate(?string $startTravelDate = null): self
     {
@@ -3090,7 +3090,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set stornoHandled value
      * @param bool $stornoHandled
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setStornoHandled(?bool $stornoHandled = null): self
     {
@@ -3113,7 +3113,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set subAgencyId value
      * @param string $subAgencyId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setSubAgencyId(?string $subAgencyId = null): self
     {
@@ -3136,7 +3136,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set totalCommission value
      * @param float $totalCommission
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTotalCommission(?float $totalCommission = null): self
     {
@@ -3159,7 +3159,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set totalCommissionInsurance value
      * @param float $totalCommissionInsurance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTotalCommissionInsurance(?float $totalCommissionInsurance = null): self
     {
@@ -3182,7 +3182,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set totalCommissionVat value
      * @param float $totalCommissionVat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTotalCommissionVat(?float $totalCommissionVat = null): self
     {
@@ -3205,7 +3205,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set totalPayment value
      * @param float $totalPayment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTotalPayment(?float $totalPayment = null): self
     {
@@ -3228,7 +3228,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -3251,7 +3251,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set transportKey value
      * @param string $transportKey
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTransportKey(?string $transportKey = null): self
     {
@@ -3274,7 +3274,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -3297,7 +3297,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set travelDocsDeliveryComm value
      * @param string $travelDocsDeliveryComm
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTravelDocsDeliveryComm(?string $travelDocsDeliveryComm = null): self
     {
@@ -3320,7 +3320,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set travelDocumentsDeliveredBy value
      * @param int $travelDocumentsDeliveredBy
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTravelDocumentsDeliveredBy(?int $travelDocumentsDeliveredBy = null): self
     {
@@ -3343,7 +3343,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set travelDocumentsDeliveryDate value
      * @param string $travelDocumentsDeliveryDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTravelDocumentsDeliveryDate(?string $travelDocumentsDeliveryDate = null): self
     {
@@ -3366,7 +3366,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set travelDocumentsReceiveDate value
      * @param string $travelDocumentsReceiveDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTravelDocumentsReceiveDate(?string $travelDocumentsReceiveDate = null): self
     {
@@ -3389,7 +3389,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set travelDocumentsReceivedBy value
      * @param int $travelDocumentsReceivedBy
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTravelDocumentsReceivedBy(?int $travelDocumentsReceivedBy = null): self
     {
@@ -3412,7 +3412,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set traveldocsInfoCustBy value
      * @param int $traveldocsInfoCustBy
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTraveldocsInfoCustBy(?int $traveldocsInfoCustBy = null): self
     {
@@ -3435,7 +3435,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set traveldocsInfoCustDate value
      * @param string $traveldocsInfoCustDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTraveldocsInfoCustDate(?string $traveldocsInfoCustDate = null): self
     {
@@ -3458,7 +3458,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set traveldocsInfoCustType value
      * @param string $traveldocsInfoCustType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTraveldocsInfoCustType(?string $traveldocsInfoCustType = null): self
     {
@@ -3481,7 +3481,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set travellerId value
      * @param int $travellerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTravellerId(?int $travellerId = null): self
     {
@@ -3504,7 +3504,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set traveltypeKey value
      * @param string $traveltypeKey
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setTraveltypeKey(?string $traveltypeKey = null): self
     {
@@ -3527,7 +3527,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -3550,7 +3550,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set workStartTime value
      * @param string $workStartTime
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setWorkStartTime(?string $workStartTime = null): self
     {
@@ -3573,7 +3573,7 @@ class OrderDTO extends AbstractStructBase
     /**
      * Set workingUser value
      * @param int $workingUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderDTO
      */
     public function setWorkingUser(?int $workingUser = null): self
     {

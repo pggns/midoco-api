@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetTTVByProductRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetTTVByProductRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetTTVByProductRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -70,7 +70,7 @@ class GetTTVByProductRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetTTVByProductRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetTTVByProductRequest
      */
     public function setEndDate(?string $endDate = null): self
     {

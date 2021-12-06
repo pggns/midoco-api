@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetAllAssignedMidocoSettlUnitsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAssignedMidocoSettlOUnit
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO[]
      */
     protected ?array $MidocoAssignedMidocoSettlOUnit = null;
     /**
      * Constructor method for GetAllAssignedMidocoSettlUnitsResponse
      * @uses GetAllAssignedMidocoSettlUnitsResponse::setMidocoAssignedMidocoSettlOUnit()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO[] $midocoAssignedMidocoSettlOUnit
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO[] $midocoAssignedMidocoSettlOUnit
      */
     public function __construct(?array $midocoAssignedMidocoSettlOUnit = null)
     {
@@ -36,7 +36,7 @@ class GetAllAssignedMidocoSettlUnitsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAssignedMidocoSettlOUnit value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO[]
      */
     public function getMidocoAssignedMidocoSettlOUnit(): ?array
     {
@@ -57,12 +57,12 @@ class GetAllAssignedMidocoSettlUnitsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllAssignedMidocoSettlUnitsResponseMidocoAssignedMidocoSettlOUnitItem) {
             // validation for constraint: itemType
-            if (!$getAllAssignedMidocoSettlUnitsResponseMidocoAssignedMidocoSettlOUnitItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO) {
+            if (!$getAllAssignedMidocoSettlUnitsResponseMidocoAssignedMidocoSettlOUnitItem instanceof \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO) {
                 $invalidValues[] = is_object($getAllAssignedMidocoSettlUnitsResponseMidocoAssignedMidocoSettlOUnitItem) ? get_class($getAllAssignedMidocoSettlUnitsResponseMidocoAssignedMidocoSettlOUnitItem) : sprintf('%s(%s)', gettype($getAllAssignedMidocoSettlUnitsResponseMidocoAssignedMidocoSettlOUnitItem), var_export($getAllAssignedMidocoSettlUnitsResponseMidocoAssignedMidocoSettlOUnitItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAssignedMidocoSettlOUnit property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAssignedMidocoSettlOUnit property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetAllAssignedMidocoSettlUnitsResponse extends AbstractStructBase
     /**
      * Set MidocoAssignedMidocoSettlOUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO[] $midocoAssignedMidocoSettlOUnit
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAllAssignedMidocoSettlUnitsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO[] $midocoAssignedMidocoSettlOUnit
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllAssignedMidocoSettlUnitsResponse
      */
     public function setMidocoAssignedMidocoSettlOUnit(?array $midocoAssignedMidocoSettlOUnit = null): self
     {
@@ -87,14 +87,14 @@ class GetAllAssignedMidocoSettlUnitsResponse extends AbstractStructBase
     /**
      * Add item to MidocoAssignedMidocoSettlOUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAllAssignedMidocoSettlUnitsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllAssignedMidocoSettlUnitsResponse
      */
-    public function addToMidocoAssignedMidocoSettlOUnit(\Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO $item): self
+    public function addToMidocoAssignedMidocoSettlOUnit(\Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoSettlOUnit property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\AssignedMidocoSettlOUnitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoSettlOUnit property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoSettlOUnitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAssignedMidocoSettlOUnit[] = $item;
         

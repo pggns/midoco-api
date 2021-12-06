@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set apiVersion value
      * @param string $apiVersion
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setApiVersion(?string $apiVersion = null): self
     {
@@ -174,7 +174,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set ccToken value
      * @param string $ccToken
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setCcToken(?string $ccToken = null): self
     {
@@ -197,7 +197,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set created value
      * @param string $created
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setCreated(?string $created = null): self
     {
@@ -220,7 +220,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -243,7 +243,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set finished value
      * @param bool $finished
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setFinished(?bool $finished = null): self
     {
@@ -266,7 +266,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set json value
      * @param string $json
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setJson(?string $json = null): self
     {
@@ -289,7 +289,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set lastError value
      * @param string $lastError
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setLastError(?string $lastError = null): self
     {
@@ -312,7 +312,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set lastTry value
      * @param string $lastTry
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setLastTry(?string $lastTry = null): self
     {
@@ -335,7 +335,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -358,7 +358,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set paymentReportId value
      * @param string $paymentReportId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setPaymentReportId(?string $paymentReportId = null): self
     {
@@ -381,7 +381,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setPositionId(?int $positionId = null): self
     {
@@ -404,7 +404,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set transactionId value
      * @param int $transactionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setTransactionId(?int $transactionId = null): self
     {
@@ -427,7 +427,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set tryNo value
      * @param int $tryNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setTryNo(?int $tryNo = null): self
     {
@@ -450,7 +450,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -473,7 +473,7 @@ class DataflexnetPaymentReportDTO extends AbstractStructBase
     /**
      * Set version value
      * @param int $version
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DataflexnetPaymentReportDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DataflexnetPaymentReportDTO
      */
     public function setVersion(?int $version = null): self
     {

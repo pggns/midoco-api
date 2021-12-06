@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ValidatePremiumRuleContentResponse extends AbstractStructBase
     /**
      * Set bytes value
      * @param string $bytes
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ValidatePremiumRuleContentResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ValidatePremiumRuleContentResponse
      */
     public function setBytes(?string $bytes = null): self
     {
@@ -70,7 +70,7 @@ class ValidatePremiumRuleContentResponse extends AbstractStructBase
     /**
      * Set bonus value
      * @param float $bonus
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\ValidatePremiumRuleContentResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\ValidatePremiumRuleContentResponse
      */
     public function setBonus(?float $bonus = null): self
     {

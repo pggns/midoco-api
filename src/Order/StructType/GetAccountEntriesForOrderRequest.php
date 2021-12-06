@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -97,7 +97,7 @@ class GetAccountEntriesForOrderRequest extends AbstractStructBase
     /**
      * Set paymentDateFrom value
      * @param string $paymentDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderRequest
      */
     public function setPaymentDateFrom(?string $paymentDateFrom = null): self
     {
@@ -120,7 +120,7 @@ class GetAccountEntriesForOrderRequest extends AbstractStructBase
     /**
      * Set paymentDateTo value
      * @param string $paymentDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderRequest
      */
     public function setPaymentDateTo(?string $paymentDateTo = null): self
     {
@@ -143,7 +143,7 @@ class GetAccountEntriesForOrderRequest extends AbstractStructBase
     /**
      * Set state value
      * @param int $state
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderRequest
      */
     public function setState(?int $state = null): self
     {
@@ -166,7 +166,7 @@ class GetAccountEntriesForOrderRequest extends AbstractStructBase
     /**
      * Set orgUnitName value
      * @param string $orgUnitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderRequest
      */
     public function setOrgUnitName(?string $orgUnitName = null): self
     {
@@ -189,7 +189,7 @@ class GetAccountEntriesForOrderRequest extends AbstractStructBase
     /**
      * Set beginIndex value
      * @param int $beginIndex
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderRequest
      */
     public function setBeginIndex(?int $beginIndex = null): self
     {
@@ -212,7 +212,7 @@ class GetAccountEntriesForOrderRequest extends AbstractStructBase
     /**
      * Set endIndex value
      * @param int $endIndex
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderRequest
      */
     public function setEndIndex(?int $endIndex = null): self
     {
@@ -235,7 +235,7 @@ class GetAccountEntriesForOrderRequest extends AbstractStructBase
     /**
      * Set forCustomerId value
      * @param int $forCustomerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderRequest
      */
     public function setForCustomerId(?int $forCustomerId = -1): self
     {
@@ -258,7 +258,7 @@ class GetAccountEntriesForOrderRequest extends AbstractStructBase
     /**
      * Set isDunningLockState value
      * @param int $isDunningLockState
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAccountEntriesForOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderRequest
      */
     public function setIsDunningLockState(?int $isDunningLockState = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DeleteSubjectRequest extends AbstractStructBase
     /**
      * Set subjectType value
      * @param string $subjectType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteSubjectRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteSubjectRequest
      */
     public function setSubjectType(?string $subjectType = null): self
     {
@@ -70,7 +70,7 @@ class DeleteSubjectRequest extends AbstractStructBase
     /**
      * Set userValue value
      * @param string $userValue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteSubjectRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteSubjectRequest
      */
     public function setUserValue(?string $userValue = null): self
     {

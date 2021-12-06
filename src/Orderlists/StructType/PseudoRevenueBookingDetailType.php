@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
      * The PseudoRevenueBookingInfo
      * Meta information extracted from the WSDL
      * - ref: PseudoRevenueBookingInfo
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingInfo|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingInfo $PseudoRevenueBookingInfo = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingInfo $PseudoRevenueBookingInfo = null;
     /**
      * The orgUnit
      * @var string|null
@@ -119,7 +119,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
      * @uses PseudoRevenueBookingDetailType::setOrderId()
      * @uses PseudoRevenueBookingDetailType::setInkassoMode()
      * @uses PseudoRevenueBookingDetailType::setCreditAccount()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingInfo $pseudoRevenueBookingInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingInfo $pseudoRevenueBookingInfo
      * @param string $orgUnit
      * @param int $orderNo
      * @param string $year
@@ -137,7 +137,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
      * @param string $inkassoMode
      * @param string $creditAccount
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingInfo $pseudoRevenueBookingInfo = null, ?string $orgUnit = null, ?int $orderNo = null, ?string $year = null, ?string $supplierId = null, ?string $bookingId = null, ?string $startTravel = null, ?string $endTravel = null, ?float $itemPrice = null, ?float $amount = null, ?float $bruttoAmount = null, ?string $account = null, ?bool $hasRevenueBookings = null, ?int $itemId = null, ?int $orderId = null, ?string $inkassoMode = null, ?string $creditAccount = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingInfo $pseudoRevenueBookingInfo = null, ?string $orgUnit = null, ?int $orderNo = null, ?string $year = null, ?string $supplierId = null, ?string $bookingId = null, ?string $startTravel = null, ?string $endTravel = null, ?float $itemPrice = null, ?float $amount = null, ?float $bruttoAmount = null, ?string $account = null, ?bool $hasRevenueBookings = null, ?int $itemId = null, ?int $orderId = null, ?string $inkassoMode = null, ?string $creditAccount = null)
     {
         $this
             ->setPseudoRevenueBookingInfo($pseudoRevenueBookingInfo)
@@ -160,18 +160,18 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     }
     /**
      * Get PseudoRevenueBookingInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingInfo|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingInfo|null
      */
-    public function getPseudoRevenueBookingInfo(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingInfo
+    public function getPseudoRevenueBookingInfo(): ?\Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingInfo
     {
         return $this->PseudoRevenueBookingInfo;
     }
     /**
      * Set PseudoRevenueBookingInfo value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingInfo $pseudoRevenueBookingInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingInfo $pseudoRevenueBookingInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
-    public function setPseudoRevenueBookingInfo(?\Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingInfo $pseudoRevenueBookingInfo = null): self
+    public function setPseudoRevenueBookingInfo(?\Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingInfo $pseudoRevenueBookingInfo = null): self
     {
         $this->PseudoRevenueBookingInfo = $pseudoRevenueBookingInfo;
         
@@ -188,7 +188,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -211,7 +211,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -234,7 +234,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set year value
      * @param string $year
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setYear(?string $year = null): self
     {
@@ -257,7 +257,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -280,7 +280,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -303,7 +303,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -326,7 +326,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -349,7 +349,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set itemPrice value
      * @param float $itemPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setItemPrice(?float $itemPrice = null): self
     {
@@ -372,7 +372,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setAmount(?float $amount = null): self
     {
@@ -395,7 +395,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set bruttoAmount value
      * @param float $bruttoAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setBruttoAmount(?float $bruttoAmount = null): self
     {
@@ -418,7 +418,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set account value
      * @param string $account
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setAccount(?string $account = null): self
     {
@@ -441,7 +441,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set hasRevenueBookings value
      * @param bool $hasRevenueBookings
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setHasRevenueBookings(?bool $hasRevenueBookings = null): self
     {
@@ -464,7 +464,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -487,7 +487,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -510,7 +510,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set inkassoMode value
      * @param string $inkassoMode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setInkassoMode(?string $inkassoMode = null): self
     {
@@ -533,7 +533,7 @@ class PseudoRevenueBookingDetailType extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PseudoRevenueBookingDetailType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PseudoRevenueBookingDetailType
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class VatAccountAssignDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatAccountAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatAccountAssignDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -94,7 +94,7 @@ class VatAccountAssignDTO extends AbstractStructBase
     /**
      * Set bookvat value
      * @param bool $bookvat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatAccountAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatAccountAssignDTO
      */
     public function setBookvat(?bool $bookvat = null): self
     {
@@ -117,7 +117,7 @@ class VatAccountAssignDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatAccountAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatAccountAssignDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -140,7 +140,7 @@ class VatAccountAssignDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatAccountAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatAccountAssignDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -163,7 +163,7 @@ class VatAccountAssignDTO extends AbstractStructBase
     /**
      * Set vatSchemaId value
      * @param int $vatSchemaId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\VatAccountAssignDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\VatAccountAssignDTO
      */
     public function setVatSchemaId(?int $vatSchemaId = null): self
     {

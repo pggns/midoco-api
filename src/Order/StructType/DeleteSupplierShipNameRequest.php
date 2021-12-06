@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteSupplierShipNameRequest extends AbstractStructBase
      * The MidocoSupplierShipName
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierShipName
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO $MidocoSupplierShipName = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO $MidocoSupplierShipName = null;
     /**
      * Constructor method for DeleteSupplierShipNameRequest
      * @uses DeleteSupplierShipNameRequest::setMidocoSupplierShipName()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO $midocoSupplierShipName
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO $midocoSupplierShipName
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO $midocoSupplierShipName = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO $midocoSupplierShipName = null)
     {
         $this
             ->setMidocoSupplierShipName($midocoSupplierShipName);
     }
     /**
      * Get MidocoSupplierShipName value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO|null
      */
-    public function getMidocoSupplierShipName(): ?\Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO
+    public function getMidocoSupplierShipName(): ?\Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO
     {
         return $this->MidocoSupplierShipName;
     }
     /**
      * Set MidocoSupplierShipName value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO $midocoSupplierShipName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierShipNameRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO $midocoSupplierShipName
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSupplierShipNameRequest
      */
-    public function setMidocoSupplierShipName(?\Pggns\MidocoApi\Api\Order\StructType\SupplierShipNameDTO $midocoSupplierShipName = null): self
+    public function setMidocoSupplierShipName(?\Pggns\MidocoApi\Order\StructType\SupplierShipNameDTO $midocoSupplierShipName = null): self
     {
         $this->MidocoSupplierShipName = $midocoSupplierShipName;
         

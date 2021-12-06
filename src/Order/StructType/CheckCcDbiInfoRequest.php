@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CheckCcDbiInfoRequest extends AbstractStructBase
     /**
      * Set billingDocumentId value
      * @param int $billingDocumentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckCcDbiInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckCcDbiInfoRequest
      */
     public function setBillingDocumentId(?int $billingDocumentId = null): self
     {
@@ -86,7 +86,7 @@ class CheckCcDbiInfoRequest extends AbstractStructBase
     /**
      * Set OrgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckCcDbiInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckCcDbiInfoRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -109,7 +109,7 @@ class CheckCcDbiInfoRequest extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckCcDbiInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckCcDbiInfoRequest
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -132,7 +132,7 @@ class CheckCcDbiInfoRequest extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckCcDbiInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CheckCcDbiInfoRequest
      */
     public function setCcType(?string $ccType = null): self
     {

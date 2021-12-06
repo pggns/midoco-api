@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class AddressValidateDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddressValidateDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AddressValidateDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -94,7 +94,7 @@ class AddressValidateDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddressValidateDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AddressValidateDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -117,7 +117,7 @@ class AddressValidateDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddressValidateDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AddressValidateDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -140,7 +140,7 @@ class AddressValidateDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddressValidateDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AddressValidateDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -163,7 +163,7 @@ class AddressValidateDTO extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AddressValidateDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AddressValidateDTO
      */
     public function setCountry(?string $country = null): self
     {

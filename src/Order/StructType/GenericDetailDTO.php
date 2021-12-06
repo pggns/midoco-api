@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class GenericDetailDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenericDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\GenericDetailDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -86,7 +86,7 @@ class GenericDetailDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenericDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\GenericDetailDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -109,7 +109,7 @@ class GenericDetailDTO extends AbstractStructBase
     /**
      * Set referencePosition value
      * @param int $referencePosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenericDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\GenericDetailDTO
      */
     public function setReferencePosition(?int $referencePosition = null): self
     {
@@ -132,7 +132,7 @@ class GenericDetailDTO extends AbstractStructBase
     /**
      * Set serviceDescription value
      * @param string $serviceDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GenericDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\GenericDetailDTO
      */
     public function setServiceDescription(?string $serviceDescription = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ExecuteBonusRuleRequest extends AbstractStructBase
     /**
      * Set bonusId value
      * @param int $bonusId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteBonusRuleRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteBonusRuleRequest
      */
     public function setBonusId(?int $bonusId = null): self
     {
@@ -70,7 +70,7 @@ class ExecuteBonusRuleRequest extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteBonusRuleRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteBonusRuleRequest
      */
     public function setCreationUser(?int $creationUser = null): self
     {

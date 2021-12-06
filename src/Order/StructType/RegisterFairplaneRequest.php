@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -88,7 +88,7 @@ class RegisterFairplaneRequest extends AbstractStructBase
      * Set unitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RegisterFairplaneRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RegisterFairplaneRequest
      */
     public function setUnitName(?array $unitName = null): self
     {
@@ -104,7 +104,7 @@ class RegisterFairplaneRequest extends AbstractStructBase
      * Add item to unitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RegisterFairplaneRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RegisterFairplaneRequest
      */
     public function addToUnitName(string $item): self
     {
@@ -127,7 +127,7 @@ class RegisterFairplaneRequest extends AbstractStructBase
     /**
      * Set activate value
      * @param bool $activate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RegisterFairplaneRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RegisterFairplaneRequest
      */
     public function setActivate(?bool $activate = true): self
     {
@@ -150,7 +150,7 @@ class RegisterFairplaneRequest extends AbstractStructBase
     /**
      * Set registerAllAssigned value
      * @param bool $registerAllAssigned
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RegisterFairplaneRequest
+     * @return \Pggns\MidocoApi\Order\StructType\RegisterFairplaneRequest
      */
     public function setRegisterAllAssigned(?bool $registerAllAssigned = false): self
     {

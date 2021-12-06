@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class BillingDocumentEmailDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentEmailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentEmailDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -94,7 +94,7 @@ class BillingDocumentEmailDTO extends AbstractStructBase
     /**
      * Set emailAddress value
      * @param string $emailAddress
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentEmailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentEmailDTO
      */
     public function setEmailAddress(?string $emailAddress = null): self
     {
@@ -117,7 +117,7 @@ class BillingDocumentEmailDTO extends AbstractStructBase
     /**
      * Set emailId value
      * @param int $emailId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentEmailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentEmailDTO
      */
     public function setEmailId(?int $emailId = null): self
     {
@@ -140,7 +140,7 @@ class BillingDocumentEmailDTO extends AbstractStructBase
     /**
      * Set emailType value
      * @param string $emailType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentEmailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentEmailDTO
      */
     public function setEmailType(?string $emailType = null): self
     {
@@ -163,7 +163,7 @@ class BillingDocumentEmailDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocumentEmailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocumentEmailDTO
      */
     public function setOrderId(?int $orderId = null): self
     {

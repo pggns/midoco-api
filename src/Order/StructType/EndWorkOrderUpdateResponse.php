@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class EndWorkOrderUpdateResponse extends AbstractStructBase
     /**
      * Set orderVersion value
      * @param int $orderVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EndWorkOrderUpdateResponse
+     * @return \Pggns\MidocoApi\Order\StructType\EndWorkOrderUpdateResponse
      */
     public function setOrderVersion(?int $orderVersion = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class IsPrintRequiredForPassengersRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellPassenger
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[]
      */
     protected ?array $MidocoSellPassenger = null;
     /**
@@ -37,7 +37,7 @@ class IsPrintRequiredForPassengersRequest extends AbstractStructBase
      * @uses IsPrintRequiredForPassengersRequest::setMidocoSellPassenger()
      * @uses IsPrintRequiredForPassengersRequest::setOrderId()
      * @uses IsPrintRequiredForPassengersRequest::setCalculatedPrintDate()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
      * @param int $orderId
      * @param string $calculatedPrintDate
      */
@@ -50,7 +50,7 @@ class IsPrintRequiredForPassengersRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSellPassenger value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[]
      */
     public function getMidocoSellPassenger(): ?array
     {
@@ -71,12 +71,12 @@ class IsPrintRequiredForPassengersRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $isPrintRequiredForPassengersRequestMidocoSellPassengerItem) {
             // validation for constraint: itemType
-            if (!$isPrintRequiredForPassengersRequestMidocoSellPassengerItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger) {
+            if (!$isPrintRequiredForPassengersRequestMidocoSellPassengerItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger) {
                 $invalidValues[] = is_object($isPrintRequiredForPassengersRequestMidocoSellPassengerItem) ? get_class($isPrintRequiredForPassengersRequestMidocoSellPassengerItem) : sprintf('%s(%s)', gettype($isPrintRequiredForPassengersRequestMidocoSellPassengerItem), var_export($isPrintRequiredForPassengersRequestMidocoSellPassengerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class IsPrintRequiredForPassengersRequest extends AbstractStructBase
     /**
      * Set MidocoSellPassenger value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\IsPrintRequiredForPassengersRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
+     * @return \Pggns\MidocoApi\Order\StructType\IsPrintRequiredForPassengersRequest
      */
     public function setMidocoSellPassenger(?array $midocoSellPassenger = null): self
     {
@@ -101,14 +101,14 @@ class IsPrintRequiredForPassengersRequest extends AbstractStructBase
     /**
      * Add item to MidocoSellPassenger value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\IsPrintRequiredForPassengersRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger $item
+     * @return \Pggns\MidocoApi\Order\StructType\IsPrintRequiredForPassengersRequest
      */
-    public function addToMidocoSellPassenger(\Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger $item): self
+    public function addToMidocoSellPassenger(\Pggns\MidocoApi\Order\StructType\MidocoSellPassenger $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellPassenger[] = $item;
         
@@ -125,7 +125,7 @@ class IsPrintRequiredForPassengersRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\IsPrintRequiredForPassengersRequest
+     * @return \Pggns\MidocoApi\Order\StructType\IsPrintRequiredForPassengersRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -148,7 +148,7 @@ class IsPrintRequiredForPassengersRequest extends AbstractStructBase
     /**
      * Set calculatedPrintDate value
      * @param string $calculatedPrintDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\IsPrintRequiredForPassengersRequest
+     * @return \Pggns\MidocoApi\Order\StructType\IsPrintRequiredForPassengersRequest
      */
     public function setCalculatedPrintDate(?string $calculatedPrintDate = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,9 +19,9 @@ class SaveCrmNoticeCommentRequest extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoCrmNoticeComment
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO $MidocoCrmNoticeComment = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO $MidocoCrmNoticeComment = null;
     /**
      * The customerInternalVersion
      * @var int|null
@@ -31,10 +31,10 @@ class SaveCrmNoticeCommentRequest extends AbstractStructBase
      * Constructor method for SaveCrmNoticeCommentRequest
      * @uses SaveCrmNoticeCommentRequest::setMidocoCrmNoticeComment()
      * @uses SaveCrmNoticeCommentRequest::setCustomerInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO $midocoCrmNoticeComment
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO $midocoCrmNoticeComment
      * @param int $customerInternalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO $midocoCrmNoticeComment = null, ?int $customerInternalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO $midocoCrmNoticeComment = null, ?int $customerInternalVersion = null)
     {
         $this
             ->setMidocoCrmNoticeComment($midocoCrmNoticeComment)
@@ -42,18 +42,18 @@ class SaveCrmNoticeCommentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmNoticeComment value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO|null
      */
-    public function getMidocoCrmNoticeComment(): ?\Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO
+    public function getMidocoCrmNoticeComment(): ?\Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO
     {
         return $this->MidocoCrmNoticeComment;
     }
     /**
      * Set MidocoCrmNoticeComment value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO $midocoCrmNoticeComment
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCrmNoticeCommentRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO $midocoCrmNoticeComment
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCrmNoticeCommentRequest
      */
-    public function setMidocoCrmNoticeComment(?\Pggns\MidocoApi\Api\Crm\StructType\CrmNoticeCommentDTO $midocoCrmNoticeComment = null): self
+    public function setMidocoCrmNoticeComment(?\Pggns\MidocoApi\Crm\StructType\CrmNoticeCommentDTO $midocoCrmNoticeComment = null): self
     {
         $this->MidocoCrmNoticeComment = $midocoCrmNoticeComment;
         
@@ -70,7 +70,7 @@ class SaveCrmNoticeCommentRequest extends AbstractStructBase
     /**
      * Set customerInternalVersion value
      * @param int $customerInternalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCrmNoticeCommentRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCrmNoticeCommentRequest
      */
     public function setCustomerInternalVersion(?int $customerInternalVersion = null): self
     {

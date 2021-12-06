@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,24 +17,24 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
      * The MidocoCrmCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
      * The MidocoCrmCustomerPayment
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmCustomerPayment
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCustomerPayment|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCustomerPayment $MidocoCrmCustomerPayment = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment $MidocoCrmCustomerPayment = null;
     /**
      * The MidocoCrmDebitCard
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmDebitCard
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard[]
      */
     protected ?array $MidocoCrmDebitCard = null;
     /**
@@ -42,16 +42,16 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: AgencyProperties
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyProperties|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\AgencyProperties|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\AgencyProperties $AgencyProperties = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\AgencyProperties $AgencyProperties = null;
     /**
      * The MidocoAgencyCommission
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAgencyCommission
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO[]
      */
     protected ?array $MidocoAgencyCommission = null;
     /**
@@ -61,13 +61,13 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
      * @uses SaveMidocoAgencyRequest::setMidocoCrmDebitCard()
      * @uses SaveMidocoAgencyRequest::setAgencyProperties()
      * @uses SaveMidocoAgencyRequest::setMidocoAgencyCommission()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard[] $midocoCrmDebitCard
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyProperties $agencyProperties
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO[] $midocoAgencyCommission
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard[] $midocoCrmDebitCard
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AgencyProperties $agencyProperties
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO[] $midocoAgencyCommission
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment = null, ?array $midocoCrmDebitCard = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\AgencyProperties $agencyProperties = null, ?array $midocoAgencyCommission = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment = null, ?array $midocoCrmDebitCard = null, ?\Pggns\MidocoApi\CrmSD\StructType\AgencyProperties $agencyProperties = null, ?array $midocoAgencyCommission = null)
     {
         $this
             ->setMidocoCrmCustomer($midocoCrmCustomer)
@@ -78,18 +78,18 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMidocoAgencyRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMidocoAgencyRequest
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         
@@ -97,18 +97,18 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomerPayment value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCustomerPayment|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment|null
      */
-    public function getMidocoCrmCustomerPayment(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCustomerPayment
+    public function getMidocoCrmCustomerPayment(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment
     {
         return $this->MidocoCrmCustomerPayment;
     }
     /**
      * Set MidocoCrmCustomerPayment value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMidocoAgencyRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMidocoAgencyRequest
      */
-    public function setMidocoCrmCustomerPayment(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment = null): self
+    public function setMidocoCrmCustomerPayment(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment = null): self
     {
         $this->MidocoCrmCustomerPayment = $midocoCrmCustomerPayment;
         
@@ -116,7 +116,7 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmDebitCard value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard[]
      */
     public function getMidocoCrmDebitCard(): ?array
     {
@@ -137,12 +137,12 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveMidocoAgencyRequestMidocoCrmDebitCardItem) {
             // validation for constraint: itemType
-            if (!$saveMidocoAgencyRequestMidocoCrmDebitCardItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard) {
+            if (!$saveMidocoAgencyRequestMidocoCrmDebitCardItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard) {
                 $invalidValues[] = is_object($saveMidocoAgencyRequestMidocoCrmDebitCardItem) ? get_class($saveMidocoAgencyRequestMidocoCrmDebitCardItem) : sprintf('%s(%s)', gettype($saveMidocoAgencyRequestMidocoCrmDebitCardItem), var_export($saveMidocoAgencyRequestMidocoCrmDebitCardItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmDebitCard property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmDebitCard property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -151,8 +151,8 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
     /**
      * Set MidocoCrmDebitCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard[] $midocoCrmDebitCard
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMidocoAgencyRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard[] $midocoCrmDebitCard
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMidocoAgencyRequest
      */
     public function setMidocoCrmDebitCard(?array $midocoCrmDebitCard = null): self
     {
@@ -167,14 +167,14 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
     /**
      * Add item to MidocoCrmDebitCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMidocoAgencyRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMidocoAgencyRequest
      */
-    public function addToMidocoCrmDebitCard(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard $item): self
+    public function addToMidocoCrmDebitCard(\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmDebitCard property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmDebitCard property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmDebitCard[] = $item;
         
@@ -182,18 +182,18 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
     }
     /**
      * Get AgencyProperties value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyProperties|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyProperties|null
      */
-    public function getAgencyProperties(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\AgencyProperties
+    public function getAgencyProperties(): ?\Pggns\MidocoApi\CrmSD\StructType\AgencyProperties
     {
         return $this->AgencyProperties;
     }
     /**
      * Set AgencyProperties value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyProperties $agencyProperties
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMidocoAgencyRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AgencyProperties $agencyProperties
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMidocoAgencyRequest
      */
-    public function setAgencyProperties(?\Pggns\MidocoApi\Api\CrmSD\StructType\AgencyProperties $agencyProperties = null): self
+    public function setAgencyProperties(?\Pggns\MidocoApi\CrmSD\StructType\AgencyProperties $agencyProperties = null): self
     {
         $this->AgencyProperties = $agencyProperties;
         
@@ -201,7 +201,7 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAgencyCommission value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO[]
      */
     public function getMidocoAgencyCommission(): ?array
     {
@@ -222,12 +222,12 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveMidocoAgencyRequestMidocoAgencyCommissionItem) {
             // validation for constraint: itemType
-            if (!$saveMidocoAgencyRequestMidocoAgencyCommissionItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO) {
+            if (!$saveMidocoAgencyRequestMidocoAgencyCommissionItem instanceof \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO) {
                 $invalidValues[] = is_object($saveMidocoAgencyRequestMidocoAgencyCommissionItem) ? get_class($saveMidocoAgencyRequestMidocoAgencyCommissionItem) : sprintf('%s(%s)', gettype($saveMidocoAgencyRequestMidocoAgencyCommissionItem), var_export($saveMidocoAgencyRequestMidocoAgencyCommissionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAgencyCommission property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAgencyCommission property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -236,8 +236,8 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
     /**
      * Set MidocoAgencyCommission value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO[] $midocoAgencyCommission
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMidocoAgencyRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO[] $midocoAgencyCommission
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMidocoAgencyRequest
      */
     public function setMidocoAgencyCommission(?array $midocoAgencyCommission = null): self
     {
@@ -252,14 +252,14 @@ class SaveMidocoAgencyRequest extends AbstractStructBase
     /**
      * Add item to MidocoAgencyCommission value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveMidocoAgencyRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMidocoAgencyRequest
      */
-    public function addToMidocoAgencyCommission(\Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO $item): self
+    public function addToMidocoAgencyCommission(\Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAgencyCommission property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAgencyCommission property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAgencyCommission[] = $item;
         

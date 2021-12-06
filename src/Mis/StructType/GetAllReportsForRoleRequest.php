@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetAllReportsForRoleRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAllReportsForRoleRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAllReportsForRoleRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -70,7 +70,7 @@ class GetAllReportsForRoleRequest extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAllReportsForRoleRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAllReportsForRoleRequest
      */
     public function setRoleId(?int $roleId = null): self
     {

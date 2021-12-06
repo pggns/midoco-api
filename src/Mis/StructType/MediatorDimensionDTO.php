@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set medCity value
      * @param string $medCity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMedCity(?string $medCity = null): self
     {
@@ -182,7 +182,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set medCountryCode value
      * @param string $medCountryCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMedCountryCode(?string $medCountryCode = null): self
     {
@@ -205,7 +205,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set medEndorsement value
      * @param string $medEndorsement
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMedEndorsement(?string $medEndorsement = null): self
     {
@@ -228,7 +228,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set medOrganisationName value
      * @param string $medOrganisationName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMedOrganisationName(?string $medOrganisationName = null): self
     {
@@ -251,7 +251,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set medPhoneticCity value
      * @param string $medPhoneticCity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMedPhoneticCity(?string $medPhoneticCity = null): self
     {
@@ -274,7 +274,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set medPhoneticName value
      * @param string $medPhoneticName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMedPhoneticName(?string $medPhoneticName = null): self
     {
@@ -297,7 +297,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set medPhoneticStreet value
      * @param string $medPhoneticStreet
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMedPhoneticStreet(?string $medPhoneticStreet = null): self
     {
@@ -320,7 +320,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set medPostalCode value
      * @param string $medPostalCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMedPostalCode(?string $medPostalCode = null): self
     {
@@ -343,7 +343,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set medState value
      * @param string $medState
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMedState(?string $medState = null): self
     {
@@ -366,7 +366,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set medStreet value
      * @param string $medStreet
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMedStreet(?string $medStreet = null): self
     {
@@ -389,7 +389,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set medStreetNo value
      * @param string $medStreetNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMedStreetNo(?string $medStreetNo = null): self
     {
@@ -412,7 +412,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set mediatorAffiliate value
      * @param string $mediatorAffiliate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMediatorAffiliate(?string $mediatorAffiliate = null): self
     {
@@ -435,7 +435,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param int $mediatorId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMediatorId(?int $mediatorId = null): self
     {
@@ -458,7 +458,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set mediatorPortal value
      * @param string $mediatorPortal
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMediatorPortal(?string $mediatorPortal = null): self
     {
@@ -481,7 +481,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set mediatorType value
      * @param string $mediatorType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMediatorType(?string $mediatorType = null): self
     {
@@ -504,7 +504,7 @@ class MediatorDimensionDTO extends AbstractStructBase
     /**
      * Set midocoMediatorId value
      * @param string $midocoMediatorId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MediatorDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MediatorDimensionDTO
      */
     public function setMidocoMediatorId(?string $midocoMediatorId = null): self
     {

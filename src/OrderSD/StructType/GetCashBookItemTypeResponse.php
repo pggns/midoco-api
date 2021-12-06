@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetCashBookItemTypeResponse extends AbstractStructBase
      * The MidocoCashBookItemType
      * Meta information extracted from the WSDL
      * - ref: MidocoCashBookItemType
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCashBookItemType|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoCashBookItemType|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCashBookItemType $MidocoCashBookItemType = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoCashBookItemType $MidocoCashBookItemType = null;
     /**
      * Constructor method for GetCashBookItemTypeResponse
      * @uses GetCashBookItemTypeResponse::setMidocoCashBookItemType()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCashBookItemType $midocoCashBookItemType
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCashBookItemType $midocoCashBookItemType
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCashBookItemType $midocoCashBookItemType = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoCashBookItemType $midocoCashBookItemType = null)
     {
         $this
             ->setMidocoCashBookItemType($midocoCashBookItemType);
     }
     /**
      * Get MidocoCashBookItemType value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCashBookItemType|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoCashBookItemType|null
      */
-    public function getMidocoCashBookItemType(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCashBookItemType
+    public function getMidocoCashBookItemType(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoCashBookItemType
     {
         return $this->MidocoCashBookItemType;
     }
     /**
      * Set MidocoCashBookItemType value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCashBookItemType $midocoCashBookItemType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetCashBookItemTypeResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCashBookItemType $midocoCashBookItemType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetCashBookItemTypeResponse
      */
-    public function setMidocoCashBookItemType(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCashBookItemType $midocoCashBookItemType = null): self
+    public function setMidocoCashBookItemType(?\Pggns\MidocoApi\OrderSD\StructType\MidocoCashBookItemType $midocoCashBookItemType = null): self
     {
         $this->MidocoCashBookItemType = $midocoCashBookItemType;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoSellItemCancel extends SupplierCancelConditionDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemCancel
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemCancel
      */
     public function setDescription(?string $description = null): self
     {
@@ -70,7 +70,7 @@ class MidocoSellItemCancel extends SupplierCancelConditionDTO
     /**
      * Set feeValue value
      * @param float $feeValue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSellItemCancel
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemCancel
      */
     public function setFeeValue(?float $feeValue = null): self
     {

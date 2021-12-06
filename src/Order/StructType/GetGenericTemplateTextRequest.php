@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -33,7 +33,7 @@ class GetGenericTemplateTextRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTemplateParam
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTemplateParam[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTemplateParam[]
      */
     protected ?array $MidocoTemplateParam = null;
     /**
@@ -55,7 +55,7 @@ class GetGenericTemplateTextRequest extends AbstractStructBase
      * @uses GetGenericTemplateTextRequest::setCustomerId()
      * @param string $bodyTemplateId
      * @param string $subjectTemplateId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTemplateParam[] $midocoTemplateParam
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTemplateParam[] $midocoTemplateParam
      * @param int $orderId
      * @param int $customerId
      */
@@ -79,7 +79,7 @@ class GetGenericTemplateTextRequest extends AbstractStructBase
     /**
      * Set bodyTemplateId value
      * @param string $bodyTemplateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetGenericTemplateTextRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetGenericTemplateTextRequest
      */
     public function setBodyTemplateId(string $bodyTemplateId): self
     {
@@ -102,7 +102,7 @@ class GetGenericTemplateTextRequest extends AbstractStructBase
     /**
      * Set subjectTemplateId value
      * @param string $subjectTemplateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetGenericTemplateTextRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetGenericTemplateTextRequest
      */
     public function setSubjectTemplateId(string $subjectTemplateId): self
     {
@@ -116,7 +116,7 @@ class GetGenericTemplateTextRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTemplateParam value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTemplateParam[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTemplateParam[]
      */
     public function getMidocoTemplateParam(): ?array
     {
@@ -137,12 +137,12 @@ class GetGenericTemplateTextRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getGenericTemplateTextRequestMidocoTemplateParamItem) {
             // validation for constraint: itemType
-            if (!$getGenericTemplateTextRequestMidocoTemplateParamItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTemplateParam) {
+            if (!$getGenericTemplateTextRequestMidocoTemplateParamItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoTemplateParam) {
                 $invalidValues[] = is_object($getGenericTemplateTextRequestMidocoTemplateParamItem) ? get_class($getGenericTemplateTextRequestMidocoTemplateParamItem) : sprintf('%s(%s)', gettype($getGenericTemplateTextRequestMidocoTemplateParamItem), var_export($getGenericTemplateTextRequestMidocoTemplateParamItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTemplateParam property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTemplateParam, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTemplateParam property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTemplateParam, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -151,8 +151,8 @@ class GetGenericTemplateTextRequest extends AbstractStructBase
     /**
      * Set MidocoTemplateParam value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTemplateParam[] $midocoTemplateParam
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetGenericTemplateTextRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTemplateParam[] $midocoTemplateParam
+     * @return \Pggns\MidocoApi\Order\StructType\GetGenericTemplateTextRequest
      */
     public function setMidocoTemplateParam(?array $midocoTemplateParam = null): self
     {
@@ -167,14 +167,14 @@ class GetGenericTemplateTextRequest extends AbstractStructBase
     /**
      * Add item to MidocoTemplateParam value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTemplateParam $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetGenericTemplateTextRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTemplateParam $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetGenericTemplateTextRequest
      */
-    public function addToMidocoTemplateParam(\Pggns\MidocoApi\Api\Order\StructType\MidocoTemplateParam $item): self
+    public function addToMidocoTemplateParam(\Pggns\MidocoApi\Order\StructType\MidocoTemplateParam $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTemplateParam) {
-            throw new InvalidArgumentException(sprintf('The MidocoTemplateParam property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTemplateParam, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoTemplateParam) {
+            throw new InvalidArgumentException(sprintf('The MidocoTemplateParam property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTemplateParam, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTemplateParam[] = $item;
         
@@ -191,7 +191,7 @@ class GetGenericTemplateTextRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetGenericTemplateTextRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetGenericTemplateTextRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -214,7 +214,7 @@ class GetGenericTemplateTextRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetGenericTemplateTextRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetGenericTemplateTextRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {

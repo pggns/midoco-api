@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class GetFibuExportSettingsResponse extends AbstractStructBase
     /**
      * Set exportFormat value
      * @param string $exportFormat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFibuExportSettingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetFibuExportSettingsResponse
      */
     public function setExportFormat(?string $exportFormat = null): self
     {
@@ -102,7 +102,7 @@ class GetFibuExportSettingsResponse extends AbstractStructBase
     /**
      * Set mode value
      * @param string $mode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFibuExportSettingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetFibuExportSettingsResponse
      */
     public function setMode(?string $mode = null): self
     {
@@ -125,7 +125,7 @@ class GetFibuExportSettingsResponse extends AbstractStructBase
     /**
      * Set hasJournalExport value
      * @param bool $hasJournalExport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFibuExportSettingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetFibuExportSettingsResponse
      */
     public function setHasJournalExport(?bool $hasJournalExport = null): self
     {
@@ -148,7 +148,7 @@ class GetFibuExportSettingsResponse extends AbstractStructBase
     /**
      * Set hasDebitorExport value
      * @param bool $hasDebitorExport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFibuExportSettingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetFibuExportSettingsResponse
      */
     public function setHasDebitorExport(?bool $hasDebitorExport = null): self
     {
@@ -171,7 +171,7 @@ class GetFibuExportSettingsResponse extends AbstractStructBase
     /**
      * Set hasCreditorExport value
      * @param bool $hasCreditorExport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFibuExportSettingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetFibuExportSettingsResponse
      */
     public function setHasCreditorExport(?bool $hasCreditorExport = null): self
     {
@@ -194,7 +194,7 @@ class GetFibuExportSettingsResponse extends AbstractStructBase
     /**
      * Set hasExportCodes value
      * @param bool $hasExportCodes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetFibuExportSettingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetFibuExportSettingsResponse
      */
     public function setHasExportCodes(?bool $hasExportCodes = null): self
     {

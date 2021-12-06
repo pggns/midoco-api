@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetTypeValuesAndDescriptionsRequest extends AbstractStructBase
     /**
      * Set culture value
      * @param string $culture
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetTypeValuesAndDescriptionsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetTypeValuesAndDescriptionsRequest
      */
     public function setCulture(?string $culture = null): self
     {

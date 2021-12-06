@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class ArchiveDTO extends AbstractStructBase
     /**
      * Set activity value
      * @param string $activity
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ArchiveDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\ArchiveDTO
      */
     public function setActivity(?string $activity = null): self
     {
@@ -142,7 +142,7 @@ class ArchiveDTO extends AbstractStructBase
     /**
      * Set daysToLive value
      * @param int $daysToLive
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ArchiveDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\ArchiveDTO
      */
     public function setDaysToLive(?int $daysToLive = null): self
     {
@@ -165,7 +165,7 @@ class ArchiveDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ArchiveDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\ArchiveDTO
      */
     public function setId(?int $id = null): self
     {
@@ -188,7 +188,7 @@ class ArchiveDTO extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ArchiveDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\ArchiveDTO
      */
     public function setMessage(?string $message = null): self
     {
@@ -211,7 +211,7 @@ class ArchiveDTO extends AbstractStructBase
     /**
      * Set process value
      * @param string $process
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ArchiveDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\ArchiveDTO
      */
     public function setProcess(?string $process = null): self
     {
@@ -234,7 +234,7 @@ class ArchiveDTO extends AbstractStructBase
     /**
      * Set success value
      * @param bool $success
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ArchiveDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\ArchiveDTO
      */
     public function setSuccess(?bool $success = null): self
     {
@@ -257,7 +257,7 @@ class ArchiveDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ArchiveDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\ArchiveDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -280,7 +280,7 @@ class ArchiveDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ArchiveDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\ArchiveDTO
      */
     public function setType(?string $type = null): self
     {
@@ -303,7 +303,7 @@ class ArchiveDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ArchiveDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\ArchiveDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -326,7 +326,7 @@ class ArchiveDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ArchiveDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\ArchiveDTO
      */
     public function setUserId(?int $userId = null): self
     {
@@ -349,7 +349,7 @@ class ArchiveDTO extends AbstractStructBase
     /**
      * Set uservalue value
      * @param string $uservalue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ArchiveDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\ArchiveDTO
      */
     public function setUservalue(?string $uservalue = null): self
     {

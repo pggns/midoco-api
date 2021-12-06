@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveSupplierCancelConditionRequest extends AbstractStructBase
      * The MidocoSupplierCancelCondition
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierCancelCondition
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition $MidocoSupplierCancelCondition = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition $MidocoSupplierCancelCondition = null;
     /**
      * Constructor method for SaveSupplierCancelConditionRequest
      * @uses SaveSupplierCancelConditionRequest::setMidocoSupplierCancelCondition()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition $midocoSupplierCancelCondition
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition $midocoSupplierCancelCondition
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition $midocoSupplierCancelCondition = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition $midocoSupplierCancelCondition = null)
     {
         $this
             ->setMidocoSupplierCancelCondition($midocoSupplierCancelCondition);
     }
     /**
      * Get MidocoSupplierCancelCondition value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition|null
      */
-    public function getMidocoSupplierCancelCondition(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition
+    public function getMidocoSupplierCancelCondition(): ?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition
     {
         return $this->MidocoSupplierCancelCondition;
     }
     /**
      * Set MidocoSupplierCancelCondition value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition $midocoSupplierCancelCondition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveSupplierCancelConditionRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition $midocoSupplierCancelCondition
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveSupplierCancelConditionRequest
      */
-    public function setMidocoSupplierCancelCondition(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCancelCondition $midocoSupplierCancelCondition = null): self
+    public function setMidocoSupplierCancelCondition(?\Pggns\MidocoApi\Documents\StructType\MidocoSupplierCancelCondition $midocoSupplierCancelCondition = null): self
     {
         $this->MidocoSupplierCancelCondition = $midocoSupplierCancelCondition;
         

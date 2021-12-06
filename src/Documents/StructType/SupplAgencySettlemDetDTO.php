@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -279,7 +279,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set billingDate value
      * @param string $billingDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setBillingDate(?string $billingDate = null): self
     {
@@ -302,7 +302,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -325,7 +325,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set bruttoAmount value
      * @param float $bruttoAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setBruttoAmount(?float $bruttoAmount = null): self
     {
@@ -348,7 +348,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set comments value
      * @param string $comments
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setComments(?string $comments = null): self
     {
@@ -371,7 +371,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set commissionAmount value
      * @param float $commissionAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setCommissionAmount(?float $commissionAmount = null): self
     {
@@ -394,7 +394,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set commissionInsurance value
      * @param float $commissionInsurance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setCommissionInsurance(?float $commissionInsurance = null): self
     {
@@ -417,7 +417,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set commissionNoVat value
      * @param float $commissionNoVat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setCommissionNoVat(?float $commissionNoVat = null): self
     {
@@ -440,7 +440,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set commissionPercent value
      * @param float $commissionPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setCommissionPercent(?float $commissionPercent = null): self
     {
@@ -463,7 +463,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set conversionRate value
      * @param float $conversionRate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setConversionRate(?float $conversionRate = null): self
     {
@@ -486,7 +486,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -509,7 +509,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -532,7 +532,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set detailPosition value
      * @param int $detailPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setDetailPosition(?int $detailPosition = null): self
     {
@@ -555,7 +555,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set foreignAmount value
      * @param float $foreignAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setForeignAmount(?float $foreignAmount = null): self
     {
@@ -578,7 +578,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set foreignCurrency value
      * @param string $foreignCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setForeignCurrency(?string $foreignCurrency = null): self
     {
@@ -601,7 +601,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set inkassoMode value
      * @param string $inkassoMode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setInkassoMode(?string $inkassoMode = null): self
     {
@@ -624,7 +624,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set invoicingType value
      * @param string $invoicingType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setInvoicingType(?string $invoicingType = null): self
     {
@@ -647,7 +647,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set isDeposit value
      * @param bool $isDeposit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setIsDeposit(?bool $isDeposit = null): self
     {
@@ -670,7 +670,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set nettoAmount value
      * @param float $nettoAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setNettoAmount(?float $nettoAmount = null): self
     {
@@ -693,7 +693,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -716,7 +716,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -739,7 +739,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -762,7 +762,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setSettlementType(?string $settlementType = null): self
     {
@@ -785,7 +785,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set settlementTypeDebit value
      * @param string $settlementTypeDebit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setSettlementTypeDebit(?string $settlementTypeDebit = null): self
     {
@@ -808,7 +808,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set supplierDiAmount value
      * @param float $supplierDiAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setSupplierDiAmount(?float $supplierDiAmount = null): self
     {
@@ -831,7 +831,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set supplierInvoiceVatAmount value
      * @param float $supplierInvoiceVatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setSupplierInvoiceVatAmount(?float $supplierInvoiceVatAmount = null): self
     {
@@ -854,7 +854,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set supplierInvoiceVatPercent value
      * @param float $supplierInvoiceVatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setSupplierInvoiceVatPercent(?float $supplierInvoiceVatPercent = null): self
     {
@@ -877,7 +877,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set taxAmount value
      * @param float $taxAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setTaxAmount(?float $taxAmount = null): self
     {
@@ -900,7 +900,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set ticketAgentNo value
      * @param string $ticketAgentNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setTicketAgentNo(?string $ticketAgentNo = null): self
     {
@@ -923,7 +923,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set ticketNo value
      * @param string $ticketNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setTicketNo(?string $ticketNo = null): self
     {
@@ -946,7 +946,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -969,7 +969,7 @@ class SupplAgencySettlemDetDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemDetDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemDetDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

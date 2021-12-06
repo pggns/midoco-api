@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class ContactTypeDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ContactTypeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ContactTypeDTO
      */
     public function setCategoryId(?int $categoryId = null): self
     {
@@ -102,7 +102,7 @@ class ContactTypeDTO extends AbstractStructBase
     /**
      * Set contactGroup value
      * @param int $contactGroup
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ContactTypeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ContactTypeDTO
      */
     public function setContactGroup(?int $contactGroup = null): self
     {
@@ -125,7 +125,7 @@ class ContactTypeDTO extends AbstractStructBase
     /**
      * Set isOrderVisible value
      * @param bool $isOrderVisible
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ContactTypeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ContactTypeDTO
      */
     public function setIsOrderVisible(?bool $isOrderVisible = null): self
     {
@@ -148,7 +148,7 @@ class ContactTypeDTO extends AbstractStructBase
     /**
      * Set isPrivate value
      * @param bool $isPrivate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ContactTypeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ContactTypeDTO
      */
     public function setIsPrivate(?bool $isPrivate = null): self
     {
@@ -171,7 +171,7 @@ class ContactTypeDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ContactTypeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ContactTypeDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -194,7 +194,7 @@ class ContactTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ContactTypeDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ContactTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

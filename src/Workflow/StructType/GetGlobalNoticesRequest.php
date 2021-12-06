@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class GetGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set noticeId value
      * @param int $noticeId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticesRequest
      */
     public function setNoticeId(?int $noticeId = null): self
     {
@@ -150,7 +150,7 @@ class GetGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set sortOrder value
      * @param string $sortOrder
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticesRequest
      */
     public function setSortOrder(?string $sortOrder = null): self
     {
@@ -173,7 +173,7 @@ class GetGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set orgunitName value
      * @param string $orgunitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticesRequest
      */
     public function setOrgunitName(?string $orgunitName = null): self
     {
@@ -196,7 +196,7 @@ class GetGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set selection value
      * @param string $selection
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticesRequest
      */
     public function setSelection(?string $selection = null): self
     {
@@ -219,7 +219,7 @@ class GetGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set fromFinishTimestamp value
      * @param string $fromFinishTimestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticesRequest
      */
     public function setFromFinishTimestamp(?string $fromFinishTimestamp = null): self
     {
@@ -242,7 +242,7 @@ class GetGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set untilFinishTimestamp value
      * @param string $untilFinishTimestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticesRequest
      */
     public function setUntilFinishTimestamp(?string $untilFinishTimestamp = null): self
     {
@@ -265,7 +265,7 @@ class GetGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set fromCreationTimestamp value
      * @param string $fromCreationTimestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticesRequest
      */
     public function setFromCreationTimestamp(?string $fromCreationTimestamp = null): self
     {
@@ -288,7 +288,7 @@ class GetGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set untilCreationTimestamp value
      * @param string $untilCreationTimestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticesRequest
      */
     public function setUntilCreationTimestamp(?string $untilCreationTimestamp = null): self
     {
@@ -311,7 +311,7 @@ class GetGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set notice value
      * @param string $notice
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticesRequest
      */
     public function setNotice(?string $notice = null): self
     {
@@ -334,7 +334,7 @@ class GetGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticesRequest
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -357,7 +357,7 @@ class GetGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set finishUser value
      * @param int $finishUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticesRequest
      */
     public function setFinishUser(?int $finishUser = null): self
     {
@@ -380,7 +380,7 @@ class GetGlobalNoticesRequest extends AbstractStructBase
     /**
      * Set delegationQueue value
      * @param string $delegationQueue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetGlobalNoticesRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetGlobalNoticesRequest
      */
     public function setDelegationQueue(?string $delegationQueue = null): self
     {

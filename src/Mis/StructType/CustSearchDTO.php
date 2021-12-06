@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -166,7 +166,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -189,7 +189,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set exactCity value
      * @param string $exactCity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setExactCity(?string $exactCity = null): self
     {
@@ -212,7 +212,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set exactForename value
      * @param string $exactForename
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setExactForename(?string $exactForename = null): self
     {
@@ -235,7 +235,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set exactMiddlename value
      * @param string $exactMiddlename
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setExactMiddlename(?string $exactMiddlename = null): self
     {
@@ -258,7 +258,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set exactName value
      * @param string $exactName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setExactName(?string $exactName = null): self
     {
@@ -281,7 +281,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set exactStreet value
      * @param string $exactStreet
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setExactStreet(?string $exactStreet = null): self
     {
@@ -304,7 +304,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -327,7 +327,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set isDeleted value
      * @param bool $isDeleted
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setIsDeleted(?bool $isDeleted = null): self
     {
@@ -350,7 +350,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setName(?string $name = null): self
     {
@@ -373,7 +373,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -396,7 +396,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set travellerId value
      * @param int $travellerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setTravellerId(?int $travellerId = null): self
     {
@@ -419,7 +419,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setType(?string $type = null): self
     {
@@ -442,7 +442,7 @@ class CustSearchDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CustSearchDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CustSearchDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

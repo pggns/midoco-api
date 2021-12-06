@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -81,7 +81,7 @@ class GetMatchingProductTypeSupplierRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMatchingProductTypeSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMatchingProductTypeSupplierRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -104,7 +104,7 @@ class GetMatchingProductTypeSupplierRequest extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMatchingProductTypeSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMatchingProductTypeSupplierRequest
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -127,7 +127,7 @@ class GetMatchingProductTypeSupplierRequest extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMatchingProductTypeSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMatchingProductTypeSupplierRequest
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -150,7 +150,7 @@ class GetMatchingProductTypeSupplierRequest extends AbstractStructBase
     /**
      * Set forPerson value
      * @param bool $forPerson
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMatchingProductTypeSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMatchingProductTypeSupplierRequest
      */
     public function setForPerson(?bool $forPerson = null): self
     {
@@ -173,7 +173,7 @@ class GetMatchingProductTypeSupplierRequest extends AbstractStructBase
     /**
      * Set forCompany value
      * @param bool $forCompany
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMatchingProductTypeSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMatchingProductTypeSupplierRequest
      */
     public function setForCompany(?bool $forCompany = null): self
     {
@@ -196,7 +196,7 @@ class GetMatchingProductTypeSupplierRequest extends AbstractStructBase
     /**
      * Set defaultProductType value
      * @param bool $defaultProductType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMatchingProductTypeSupplierRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMatchingProductTypeSupplierRequest
      */
     public function setDefaultProductType(?bool $defaultProductType = false): self
     {

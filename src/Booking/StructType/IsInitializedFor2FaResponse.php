@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class IsInitializedFor2FaResponse extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\IsInitializedFor2FaResponse
+     * @return \Pggns\MidocoApi\Booking\StructType\IsInitializedFor2FaResponse
      */
     public function setStatus(?string $status = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -202,7 +202,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPaymentServiceInfos
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentServiceInfos[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPaymentServiceInfos[]
      */
     protected ?array $MidocoPaymentServiceInfos = null;
     /**
@@ -332,7 +332,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
      * @param string $paymentReason
      * @param bool $isCreated
      * @param string $firstTraveller
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentServiceInfos[] $midocoPaymentServiceInfos
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentServiceInfos[] $midocoPaymentServiceInfos
      * @param string $hasFlightInfos
      * @param string $flightBookingDate
      * @param string $flightDeparture
@@ -394,7 +394,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -417,7 +417,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -440,7 +440,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -463,7 +463,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -486,7 +486,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -509,7 +509,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set companyName value
      * @param string $companyName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setCompanyName(?string $companyName = null): self
     {
@@ -532,7 +532,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -555,7 +555,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -578,7 +578,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param string $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setInvoiceNo(?string $invoiceNo = null): self
     {
@@ -601,7 +601,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -624,7 +624,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set ordersExtBookingId value
      * @param string $ordersExtBookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setOrdersExtBookingId(?string $ordersExtBookingId = null): self
     {
@@ -647,7 +647,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set ordersMainBookingId value
      * @param string $ordersMainBookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setOrdersMainBookingId(?string $ordersMainBookingId = null): self
     {
@@ -670,7 +670,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set ordersMainSupplierId value
      * @param string $ordersMainSupplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setOrdersMainSupplierId(?string $ordersMainSupplierId = null): self
     {
@@ -693,7 +693,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set isDeposit value
      * @param bool $isDeposit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setIsDeposit(?bool $isDeposit = null): self
     {
@@ -716,7 +716,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -739,7 +739,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set manualBookingText value
      * @param string $manualBookingText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setManualBookingText(?string $manualBookingText = null): self
     {
@@ -762,7 +762,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set transactionType value
      * @param string $transactionType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setTransactionType(?string $transactionType = null): self
     {
@@ -785,7 +785,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set debitType value
      * @param string $debitType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setDebitType(?string $debitType = null): self
     {
@@ -808,7 +808,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -831,7 +831,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set invoiceType value
      * @param string $invoiceType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setInvoiceType(?string $invoiceType = null): self
     {
@@ -854,7 +854,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -877,7 +877,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set portal value
      * @param string $portal
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setPortal(?string $portal = null): self
     {
@@ -900,7 +900,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -923,7 +923,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set paymentReason value
      * @param string $paymentReason
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setPaymentReason(?string $paymentReason = null): self
     {
@@ -946,7 +946,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set isCreated value
      * @param bool $isCreated
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setIsCreated(?bool $isCreated = false): self
     {
@@ -969,7 +969,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set firstTraveller value
      * @param string $firstTraveller
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setFirstTraveller(?string $firstTraveller = null): self
     {
@@ -983,7 +983,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     }
     /**
      * Get MidocoPaymentServiceInfos value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentServiceInfos[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentServiceInfos[]
      */
     public function getMidocoPaymentServiceInfos(): ?array
     {
@@ -1004,12 +1004,12 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoPaymentOrdersInfosMidocoPaymentServiceInfosItem) {
             // validation for constraint: itemType
-            if (!$midocoPaymentOrdersInfosMidocoPaymentServiceInfosItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentServiceInfos) {
+            if (!$midocoPaymentOrdersInfosMidocoPaymentServiceInfosItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoPaymentServiceInfos) {
                 $invalidValues[] = is_object($midocoPaymentOrdersInfosMidocoPaymentServiceInfosItem) ? get_class($midocoPaymentOrdersInfosMidocoPaymentServiceInfosItem) : sprintf('%s(%s)', gettype($midocoPaymentOrdersInfosMidocoPaymentServiceInfosItem), var_export($midocoPaymentOrdersInfosMidocoPaymentServiceInfosItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPaymentServiceInfos property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentServiceInfos, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPaymentServiceInfos property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPaymentServiceInfos, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -1018,8 +1018,8 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set MidocoPaymentServiceInfos value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentServiceInfos[] $midocoPaymentServiceInfos
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentServiceInfos[] $midocoPaymentServiceInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setMidocoPaymentServiceInfos(?array $midocoPaymentServiceInfos = null): self
     {
@@ -1034,14 +1034,14 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Add item to MidocoPaymentServiceInfos value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentServiceInfos $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentServiceInfos $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
-    public function addToMidocoPaymentServiceInfos(\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentServiceInfos $item): self
+    public function addToMidocoPaymentServiceInfos(\Pggns\MidocoApi\Order\StructType\MidocoPaymentServiceInfos $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentServiceInfos) {
-            throw new InvalidArgumentException(sprintf('The MidocoPaymentServiceInfos property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentServiceInfos, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoPaymentServiceInfos) {
+            throw new InvalidArgumentException(sprintf('The MidocoPaymentServiceInfos property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPaymentServiceInfos, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPaymentServiceInfos[] = $item;
         
@@ -1058,7 +1058,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set hasFlightInfos value
      * @param string $hasFlightInfos
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setHasFlightInfos(?string $hasFlightInfos = null): self
     {
@@ -1081,7 +1081,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set flightBookingDate value
      * @param string $flightBookingDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setFlightBookingDate(?string $flightBookingDate = null): self
     {
@@ -1104,7 +1104,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set flightDeparture value
      * @param string $flightDeparture
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setFlightDeparture(?string $flightDeparture = null): self
     {
@@ -1127,7 +1127,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set flightDepartureDate value
      * @param string $flightDepartureDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setFlightDepartureDate(?string $flightDepartureDate = null): self
     {
@@ -1150,7 +1150,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set flightDestination value
      * @param string $flightDestination
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setFlightDestination(?string $flightDestination = null): self
     {
@@ -1173,7 +1173,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set flightFilekey value
      * @param string $flightFilekey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setFlightFilekey(?string $flightFilekey = null): self
     {
@@ -1196,7 +1196,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setProductType(?string $productType = null): self
     {
@@ -1219,7 +1219,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set destinationDescription value
      * @param string $destinationDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setDestinationDescription(?string $destinationDescription = null): self
     {
@@ -1242,7 +1242,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     /**
      * Set countryDescription value
      * @param string $countryDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
      */
     public function setCountryDescription(?string $countryDescription = null): self
     {

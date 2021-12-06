@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class PrintCustomerLetterRequest extends AbstractStructBase
      * The CreateCustomerLetterRequest
      * Meta information extracted from the WSDL
      * - ref: CreateCustomerLetterRequest
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CreateCustomerLetterRequest|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CreateCustomerLetterRequest|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CreateCustomerLetterRequest $CreateCustomerLetterRequest = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CreateCustomerLetterRequest $CreateCustomerLetterRequest = null;
     /**
      * The preview
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class PrintCustomerLetterRequest extends AbstractStructBase
      * Constructor method for PrintCustomerLetterRequest
      * @uses PrintCustomerLetterRequest::setCreateCustomerLetterRequest()
      * @uses PrintCustomerLetterRequest::setPreview()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CreateCustomerLetterRequest $createCustomerLetterRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CreateCustomerLetterRequest $createCustomerLetterRequest
      * @param bool $preview
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CreateCustomerLetterRequest $createCustomerLetterRequest = null, ?bool $preview = false)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CreateCustomerLetterRequest $createCustomerLetterRequest = null, ?bool $preview = false)
     {
         $this
             ->setCreateCustomerLetterRequest($createCustomerLetterRequest)
@@ -42,18 +42,18 @@ class PrintCustomerLetterRequest extends AbstractStructBase
     }
     /**
      * Get CreateCustomerLetterRequest value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CreateCustomerLetterRequest|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CreateCustomerLetterRequest|null
      */
-    public function getCreateCustomerLetterRequest(): ?\Pggns\MidocoApi\Api\Crm\StructType\CreateCustomerLetterRequest
+    public function getCreateCustomerLetterRequest(): ?\Pggns\MidocoApi\Crm\StructType\CreateCustomerLetterRequest
     {
         return $this->CreateCustomerLetterRequest;
     }
     /**
      * Set CreateCustomerLetterRequest value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CreateCustomerLetterRequest $createCustomerLetterRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PrintCustomerLetterRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CreateCustomerLetterRequest $createCustomerLetterRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\PrintCustomerLetterRequest
      */
-    public function setCreateCustomerLetterRequest(?\Pggns\MidocoApi\Api\Crm\StructType\CreateCustomerLetterRequest $createCustomerLetterRequest = null): self
+    public function setCreateCustomerLetterRequest(?\Pggns\MidocoApi\Crm\StructType\CreateCustomerLetterRequest $createCustomerLetterRequest = null): self
     {
         $this->CreateCustomerLetterRequest = $createCustomerLetterRequest;
         
@@ -70,7 +70,7 @@ class PrintCustomerLetterRequest extends AbstractStructBase
     /**
      * Set preview value
      * @param bool $preview
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PrintCustomerLetterRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\PrintCustomerLetterRequest
      */
     public function setPreview(?bool $preview = false): self
     {

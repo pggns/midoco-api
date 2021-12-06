@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SearchMediatorSettlementInfoRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorSettlementInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorSettlementInfoRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -86,7 +86,7 @@ class SearchMediatorSettlementInfoRequest extends AbstractStructBase
     /**
      * Set fromDate value
      * @param string $fromDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorSettlementInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorSettlementInfoRequest
      */
     public function setFromDate(?string $fromDate = null): self
     {
@@ -113,7 +113,7 @@ class SearchMediatorSettlementInfoRequest extends AbstractStructBase
     /**
      * Set toDate value
      * @param string $toDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchMediatorSettlementInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchMediatorSettlementInfoRequest
      */
     public function setToDate(?string $toDate = null): self
     {

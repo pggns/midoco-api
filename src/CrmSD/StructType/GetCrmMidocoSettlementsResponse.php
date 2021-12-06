@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetCrmMidocoSettlementsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmMidocoSettlement
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmMidocoSettlement[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlement[]
      */
     protected ?array $MidocoCrmMidocoSettlement = null;
     /**
      * Constructor method for GetCrmMidocoSettlementsResponse
      * @uses GetCrmMidocoSettlementsResponse::setMidocoCrmMidocoSettlement()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmMidocoSettlement[] $midocoCrmMidocoSettlement
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlement[] $midocoCrmMidocoSettlement
      */
     public function __construct(?array $midocoCrmMidocoSettlement = null)
     {
@@ -36,7 +36,7 @@ class GetCrmMidocoSettlementsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmMidocoSettlement value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmMidocoSettlement[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlement[]
      */
     public function getMidocoCrmMidocoSettlement(): ?array
     {
@@ -57,12 +57,12 @@ class GetCrmMidocoSettlementsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCrmMidocoSettlementsResponseMidocoCrmMidocoSettlementItem) {
             // validation for constraint: itemType
-            if (!$getCrmMidocoSettlementsResponseMidocoCrmMidocoSettlementItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmMidocoSettlement) {
+            if (!$getCrmMidocoSettlementsResponseMidocoCrmMidocoSettlementItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlement) {
                 $invalidValues[] = is_object($getCrmMidocoSettlementsResponseMidocoCrmMidocoSettlementItem) ? get_class($getCrmMidocoSettlementsResponseMidocoCrmMidocoSettlementItem) : sprintf('%s(%s)', gettype($getCrmMidocoSettlementsResponseMidocoCrmMidocoSettlementItem), var_export($getCrmMidocoSettlementsResponseMidocoCrmMidocoSettlementItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmMidocoSettlement property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmMidocoSettlement, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmMidocoSettlement property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlement, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetCrmMidocoSettlementsResponse extends AbstractStructBase
     /**
      * Set MidocoCrmMidocoSettlement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmMidocoSettlement[] $midocoCrmMidocoSettlement
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmMidocoSettlementsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlement[] $midocoCrmMidocoSettlement
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmMidocoSettlementsResponse
      */
     public function setMidocoCrmMidocoSettlement(?array $midocoCrmMidocoSettlement = null): self
     {
@@ -87,14 +87,14 @@ class GetCrmMidocoSettlementsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmMidocoSettlement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmMidocoSettlement $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmMidocoSettlementsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlement $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmMidocoSettlementsResponse
      */
-    public function addToMidocoCrmMidocoSettlement(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmMidocoSettlement $item): self
+    public function addToMidocoCrmMidocoSettlement(\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlement $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmMidocoSettlement) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlement property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmMidocoSettlement, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlement) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlement property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlement, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmMidocoSettlement[] = $item;
         

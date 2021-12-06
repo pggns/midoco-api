@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class SuppCancelCChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCancelCChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCancelCChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -126,7 +126,7 @@ class SuppCancelCChangeLogDTO extends AbstractStructBase
     /**
      * Set daysBeforeTravel value
      * @param int $daysBeforeTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCancelCChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCancelCChangeLogDTO
      */
     public function setDaysBeforeTravel(?int $daysBeforeTravel = null): self
     {
@@ -149,7 +149,7 @@ class SuppCancelCChangeLogDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCancelCChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCancelCChangeLogDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -172,7 +172,7 @@ class SuppCancelCChangeLogDTO extends AbstractStructBase
     /**
      * Set feeCode value
      * @param string $feeCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCancelCChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCancelCChangeLogDTO
      */
     public function setFeeCode(?string $feeCode = null): self
     {
@@ -195,7 +195,7 @@ class SuppCancelCChangeLogDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCancelCChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCancelCChangeLogDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -218,7 +218,7 @@ class SuppCancelCChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCancelCChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCancelCChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -241,7 +241,7 @@ class SuppCancelCChangeLogDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCancelCChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCancelCChangeLogDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -264,7 +264,7 @@ class SuppCancelCChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCancelCChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCancelCChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {
@@ -287,7 +287,7 @@ class SuppCancelCChangeLogDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppCancelCChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppCancelCChangeLogDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

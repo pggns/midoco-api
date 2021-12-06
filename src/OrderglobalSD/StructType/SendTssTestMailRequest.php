@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class SendTssTestMailRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SendTssTestMailRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SendTssTestMailRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +70,7 @@ class SendTssTestMailRequest extends AbstractStructBase
     /**
      * Set emailAddresses value
      * @param string $emailAddresses
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SendTssTestMailRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SendTssTestMailRequest
      */
     public function setEmailAddresses(?string $emailAddresses = null): self
     {

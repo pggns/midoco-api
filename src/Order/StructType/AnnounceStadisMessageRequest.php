@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class AnnounceStadisMessageRequest extends AbstractStructBase
     /**
      * Set StadisMessage value
      * @param string $stadisMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceStadisMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceStadisMessageRequest
      */
     public function setStadisMessage(?string $stadisMessage = null): self
     {
@@ -88,7 +88,7 @@ class AnnounceStadisMessageRequest extends AbstractStructBase
     /**
      * Set crs_type value
      * @param string $crs_type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceStadisMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceStadisMessageRequest
      */
     public function setCrs_type(?string $crs_type = 'MERLIN'): self
     {
@@ -111,7 +111,7 @@ class AnnounceStadisMessageRequest extends AbstractStructBase
     /**
      * Set reference_booking_id value
      * @param string $reference_booking_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceStadisMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceStadisMessageRequest
      */
     public function setReference_booking_id(?string $reference_booking_id = null): self
     {
@@ -134,7 +134,7 @@ class AnnounceStadisMessageRequest extends AbstractStructBase
     /**
      * Set reference_type value
      * @param string $reference_type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceStadisMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceStadisMessageRequest
      */
     public function setReference_type(?string $reference_type = null): self
     {

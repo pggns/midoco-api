@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class SaveBillingVatCalculationsRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingVatCalculationsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingVatCalculationsRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -70,7 +70,7 @@ class SaveBillingVatCalculationsRequest extends AbstractStructBase
     /**
      * Set documentInternalVersion value
      * @param int $documentInternalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingVatCalculationsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingVatCalculationsRequest
      */
     public function setDocumentInternalVersion(?int $documentInternalVersion = null): self
     {

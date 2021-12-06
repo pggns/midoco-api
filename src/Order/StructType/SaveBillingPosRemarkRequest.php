@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveBillingPosRemarkRequest extends AbstractStructBase
      * The MidocoBillingPositionRemark
      * Meta information extracted from the WSDL
      * - ref: MidocoBillingPositionRemark
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO $MidocoBillingPositionRemark = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO $MidocoBillingPositionRemark = null;
     /**
      * The parentInternalVersion
      * @var int|null
@@ -35,11 +35,11 @@ class SaveBillingPosRemarkRequest extends AbstractStructBase
      * @uses SaveBillingPosRemarkRequest::setMidocoBillingPositionRemark()
      * @uses SaveBillingPosRemarkRequest::setParentInternalVersion()
      * @uses SaveBillingPosRemarkRequest::setDocumentId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO $midocoBillingPositionRemark
+     * @param \Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO $midocoBillingPositionRemark
      * @param int $parentInternalVersion
      * @param int $documentId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO $midocoBillingPositionRemark = null, ?int $parentInternalVersion = null, ?int $documentId = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO $midocoBillingPositionRemark = null, ?int $parentInternalVersion = null, ?int $documentId = null)
     {
         $this
             ->setMidocoBillingPositionRemark($midocoBillingPositionRemark)
@@ -48,18 +48,18 @@ class SaveBillingPosRemarkRequest extends AbstractStructBase
     }
     /**
      * Get MidocoBillingPositionRemark value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO|null
      */
-    public function getMidocoBillingPositionRemark(): ?\Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO
+    public function getMidocoBillingPositionRemark(): ?\Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO
     {
         return $this->MidocoBillingPositionRemark;
     }
     /**
      * Set MidocoBillingPositionRemark value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO $midocoBillingPositionRemark
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingPosRemarkRequest
+     * @param \Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO $midocoBillingPositionRemark
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingPosRemarkRequest
      */
-    public function setMidocoBillingPositionRemark(?\Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO $midocoBillingPositionRemark = null): self
+    public function setMidocoBillingPositionRemark(?\Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO $midocoBillingPositionRemark = null): self
     {
         $this->MidocoBillingPositionRemark = $midocoBillingPositionRemark;
         
@@ -76,7 +76,7 @@ class SaveBillingPosRemarkRequest extends AbstractStructBase
     /**
      * Set parentInternalVersion value
      * @param int $parentInternalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingPosRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingPosRemarkRequest
      */
     public function setParentInternalVersion(?int $parentInternalVersion = null): self
     {
@@ -99,7 +99,7 @@ class SaveBillingPosRemarkRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveBillingPosRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveBillingPosRemarkRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {

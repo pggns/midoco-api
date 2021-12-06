@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,25 +17,25 @@ class AddHistoryEntryRequest extends AbstractStructBase
      * The MidocoContactHistory
      * Meta information extracted from the WSDL
      * - ref: MidocoContactHistory
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory $MidocoContactHistory = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory $MidocoContactHistory = null;
     /**
      * The MidocoCrmNotice
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmNotice
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice $MidocoCrmNotice = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice $MidocoCrmNotice = null;
     /**
      * The MidocoOrderTask
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoOrderTask
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrderTask|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrderTask $MidocoOrderTask = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask $MidocoOrderTask = null;
     /**
      * The internalVersion
      * @var int|null
@@ -47,12 +47,12 @@ class AddHistoryEntryRequest extends AbstractStructBase
      * @uses AddHistoryEntryRequest::setMidocoCrmNotice()
      * @uses AddHistoryEntryRequest::setMidocoOrderTask()
      * @uses AddHistoryEntryRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory $midocoContactHistory
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice $midocoCrmNotice
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrderTask $midocoOrderTask
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory $midocoContactHistory
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice $midocoCrmNotice
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask $midocoOrderTask
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory $midocoContactHistory = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice $midocoCrmNotice = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrderTask $midocoOrderTask = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory $midocoContactHistory = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice $midocoCrmNotice = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask $midocoOrderTask = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoContactHistory($midocoContactHistory)
@@ -62,18 +62,18 @@ class AddHistoryEntryRequest extends AbstractStructBase
     }
     /**
      * Get MidocoContactHistory value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory|null
      */
-    public function getMidocoContactHistory(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory
+    public function getMidocoContactHistory(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory
     {
         return $this->MidocoContactHistory;
     }
     /**
      * Set MidocoContactHistory value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory $midocoContactHistory
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AddHistoryEntryRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory $midocoContactHistory
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AddHistoryEntryRequest
      */
-    public function setMidocoContactHistory(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory $midocoContactHistory = null): self
+    public function setMidocoContactHistory(?\Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory $midocoContactHistory = null): self
     {
         $this->MidocoContactHistory = $midocoContactHistory;
         
@@ -81,18 +81,18 @@ class AddHistoryEntryRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmNotice value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice|null
      */
-    public function getMidocoCrmNotice(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice
+    public function getMidocoCrmNotice(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice
     {
         return $this->MidocoCrmNotice;
     }
     /**
      * Set MidocoCrmNotice value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice $midocoCrmNotice
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AddHistoryEntryRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice $midocoCrmNotice
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AddHistoryEntryRequest
      */
-    public function setMidocoCrmNotice(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmNotice $midocoCrmNotice = null): self
+    public function setMidocoCrmNotice(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice $midocoCrmNotice = null): self
     {
         $this->MidocoCrmNotice = $midocoCrmNotice;
         
@@ -100,18 +100,18 @@ class AddHistoryEntryRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderTask value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrderTask|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask|null
      */
-    public function getMidocoOrderTask(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrderTask
+    public function getMidocoOrderTask(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask
     {
         return $this->MidocoOrderTask;
     }
     /**
      * Set MidocoOrderTask value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrderTask $midocoOrderTask
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AddHistoryEntryRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask $midocoOrderTask
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AddHistoryEntryRequest
      */
-    public function setMidocoOrderTask(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoOrderTask $midocoOrderTask = null): self
+    public function setMidocoOrderTask(?\Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask $midocoOrderTask = null): self
     {
         $this->MidocoOrderTask = $midocoOrderTask;
         
@@ -128,7 +128,7 @@ class AddHistoryEntryRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AddHistoryEntryRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AddHistoryEntryRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

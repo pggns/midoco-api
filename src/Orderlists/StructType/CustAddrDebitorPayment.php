@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class CustAddrDebitorPayment extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmAddress
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmAddress[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmAddress[]
      */
     protected ?array $MidocoCrmAddress = null;
     /**
@@ -28,7 +28,7 @@ class CustAddrDebitorPayment extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDebitor
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\DebitorDTO[]
      */
     protected ?array $MidocoDebitor = null;
     /**
@@ -36,16 +36,16 @@ class CustAddrDebitorPayment extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCustomerPayment
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerPaymentDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerPaymentDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerPaymentDTO $MidocoCustomerPayment = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\CrmCustomerPaymentDTO $MidocoCustomerPayment = null;
     /**
      * The MidocoContactEntry
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoContactEntry
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoContactEntryType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoContactEntryType[]
      */
     protected ?array $MidocoContactEntry = null;
     /**
@@ -54,7 +54,7 @@ class CustAddrDebitorPayment extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmCcCard
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmCcCard[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmCcCard[]
      */
     protected ?array $MidocoCrmCcCard = null;
     /**
@@ -63,7 +63,7 @@ class CustAddrDebitorPayment extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmDebitCard
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmDebitCard[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmDebitCard[]
      */
     protected ?array $MidocoCrmDebitCard = null;
     /**
@@ -72,7 +72,7 @@ class CustAddrDebitorPayment extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmBonusCard
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\CrmBonusCardDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\CrmBonusCardDTO[]
      */
     protected ?array $MidocoCrmBonusCard = null;
     /**
@@ -81,16 +81,16 @@ class CustAddrDebitorPayment extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCriteriaDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\CrmCriteriaDTO[]
      */
     protected ?array $MidocoCrmCriteria = null;
     /**
      * The MidocoCrmCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
      * The custOrder
      * @var int|null
@@ -108,18 +108,18 @@ class CustAddrDebitorPayment extends AbstractStructBase
      * @uses CustAddrDebitorPayment::setMidocoCrmCriteria()
      * @uses CustAddrDebitorPayment::setMidocoCrmCustomer()
      * @uses CustAddrDebitorPayment::setCustOrder()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmAddress[] $midocoCrmAddress
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorDTO[] $midocoDebitor
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerPaymentDTO $midocoCustomerPayment
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoContactEntryType[] $midocoContactEntry
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmCcCard[] $midocoCrmCcCard
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmDebitCard[] $midocoCrmDebitCard
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CrmBonusCardDTO[] $midocoCrmBonusCard
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCriteriaDTO[] $midocoCrmCriteria
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmAddress[] $midocoCrmAddress
+     * @param \Pggns\MidocoApi\Orderlists\StructType\DebitorDTO[] $midocoDebitor
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerPaymentDTO $midocoCustomerPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmCcCard[] $midocoCrmCcCard
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmDebitCard[] $midocoCrmDebitCard
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CrmBonusCardDTO[] $midocoCrmBonusCard
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CrmCriteriaDTO[] $midocoCrmCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerDTO $midocoCrmCustomer
      * @param int $custOrder
      */
-    public function __construct(?array $midocoCrmAddress = null, ?array $midocoDebitor = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerPaymentDTO $midocoCustomerPayment = null, ?array $midocoContactEntry = null, ?array $midocoCrmCcCard = null, ?array $midocoCrmDebitCard = null, ?array $midocoCrmBonusCard = null, ?array $midocoCrmCriteria = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?int $custOrder = null)
+    public function __construct(?array $midocoCrmAddress = null, ?array $midocoDebitor = null, ?\Pggns\MidocoApi\Orderlists\StructType\CrmCustomerPaymentDTO $midocoCustomerPayment = null, ?array $midocoContactEntry = null, ?array $midocoCrmCcCard = null, ?array $midocoCrmDebitCard = null, ?array $midocoCrmBonusCard = null, ?array $midocoCrmCriteria = null, ?\Pggns\MidocoApi\Orderlists\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?int $custOrder = null)
     {
         $this
             ->setMidocoCrmAddress($midocoCrmAddress)
@@ -135,7 +135,7 @@ class CustAddrDebitorPayment extends AbstractStructBase
     }
     /**
      * Get MidocoCrmAddress value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmAddress[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmAddress[]
      */
     public function getMidocoCrmAddress(): ?array
     {
@@ -156,12 +156,12 @@ class CustAddrDebitorPayment extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $custAddrDebitorPaymentMidocoCrmAddressItem) {
             // validation for constraint: itemType
-            if (!$custAddrDebitorPaymentMidocoCrmAddressItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmAddress) {
+            if (!$custAddrDebitorPaymentMidocoCrmAddressItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmAddress) {
                 $invalidValues[] = is_object($custAddrDebitorPaymentMidocoCrmAddressItem) ? get_class($custAddrDebitorPaymentMidocoCrmAddressItem) : sprintf('%s(%s)', gettype($custAddrDebitorPaymentMidocoCrmAddressItem), var_export($custAddrDebitorPaymentMidocoCrmAddressItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -170,8 +170,8 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Set MidocoCrmAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmAddress[] $midocoCrmAddress
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmAddress[] $midocoCrmAddress
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
     public function setMidocoCrmAddress(?array $midocoCrmAddress = null): self
     {
@@ -186,14 +186,14 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Add item to MidocoCrmAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmAddress $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmAddress $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
-    public function addToMidocoCrmAddress(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmAddress $item): self
+    public function addToMidocoCrmAddress(\Pggns\MidocoApi\Orderlists\StructType\MidocoCrmAddress $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmAddress) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmAddress) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmAddress[] = $item;
         
@@ -201,7 +201,7 @@ class CustAddrDebitorPayment extends AbstractStructBase
     }
     /**
      * Get MidocoDebitor value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorDTO[]
      */
     public function getMidocoDebitor(): ?array
     {
@@ -222,12 +222,12 @@ class CustAddrDebitorPayment extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $custAddrDebitorPaymentMidocoDebitorItem) {
             // validation for constraint: itemType
-            if (!$custAddrDebitorPaymentMidocoDebitorItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorDTO) {
+            if (!$custAddrDebitorPaymentMidocoDebitorItem instanceof \Pggns\MidocoApi\Orderlists\StructType\DebitorDTO) {
                 $invalidValues[] = is_object($custAddrDebitorPaymentMidocoDebitorItem) ? get_class($custAddrDebitorPaymentMidocoDebitorItem) : sprintf('%s(%s)', gettype($custAddrDebitorPaymentMidocoDebitorItem), var_export($custAddrDebitorPaymentMidocoDebitorItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDebitor property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDebitor property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\DebitorDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -236,8 +236,8 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Set MidocoDebitor value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorDTO[] $midocoDebitor
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\DebitorDTO[] $midocoDebitor
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
     public function setMidocoDebitor(?array $midocoDebitor = null): self
     {
@@ -252,14 +252,14 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Add item to MidocoDebitor value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\DebitorDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
-    public function addToMidocoDebitor(\Pggns\MidocoApi\Api\Orderlists\StructType\DebitorDTO $item): self
+    public function addToMidocoDebitor(\Pggns\MidocoApi\Orderlists\StructType\DebitorDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoDebitor property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\DebitorDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoDebitor property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\DebitorDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDebitor[] = $item;
         
@@ -267,18 +267,18 @@ class CustAddrDebitorPayment extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerPayment value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerPaymentDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerPaymentDTO|null
      */
-    public function getMidocoCustomerPayment(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerPaymentDTO
+    public function getMidocoCustomerPayment(): ?\Pggns\MidocoApi\Orderlists\StructType\CrmCustomerPaymentDTO
     {
         return $this->MidocoCustomerPayment;
     }
     /**
      * Set MidocoCustomerPayment value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerPaymentDTO $midocoCustomerPayment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerPaymentDTO $midocoCustomerPayment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
-    public function setMidocoCustomerPayment(?\Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerPaymentDTO $midocoCustomerPayment = null): self
+    public function setMidocoCustomerPayment(?\Pggns\MidocoApi\Orderlists\StructType\CrmCustomerPaymentDTO $midocoCustomerPayment = null): self
     {
         $this->MidocoCustomerPayment = $midocoCustomerPayment;
         
@@ -286,7 +286,7 @@ class CustAddrDebitorPayment extends AbstractStructBase
     }
     /**
      * Get MidocoContactEntry value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoContactEntryType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoContactEntryType[]
      */
     public function getMidocoContactEntry(): ?array
     {
@@ -307,12 +307,12 @@ class CustAddrDebitorPayment extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $custAddrDebitorPaymentMidocoContactEntryItem) {
             // validation for constraint: itemType
-            if (!$custAddrDebitorPaymentMidocoContactEntryItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoContactEntryType) {
+            if (!$custAddrDebitorPaymentMidocoContactEntryItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoContactEntryType) {
                 $invalidValues[] = is_object($custAddrDebitorPaymentMidocoContactEntryItem) ? get_class($custAddrDebitorPaymentMidocoContactEntryItem) : sprintf('%s(%s)', gettype($custAddrDebitorPaymentMidocoContactEntryItem), var_export($custAddrDebitorPaymentMidocoContactEntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -321,8 +321,8 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Set MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoContactEntryType[] $midocoContactEntry
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
     public function setMidocoContactEntry(?array $midocoContactEntry = null): self
     {
@@ -337,14 +337,14 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Add item to MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoContactEntryType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoContactEntryType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
-    public function addToMidocoContactEntry(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoContactEntryType $item): self
+    public function addToMidocoContactEntry(\Pggns\MidocoApi\Orderlists\StructType\MidocoContactEntryType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoContactEntryType) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoContactEntryType) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactEntry[] = $item;
         
@@ -352,7 +352,7 @@ class CustAddrDebitorPayment extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCcCard value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmCcCard[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmCcCard[]
      */
     public function getMidocoCrmCcCard(): ?array
     {
@@ -373,12 +373,12 @@ class CustAddrDebitorPayment extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $custAddrDebitorPaymentMidocoCrmCcCardItem) {
             // validation for constraint: itemType
-            if (!$custAddrDebitorPaymentMidocoCrmCcCardItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmCcCard) {
+            if (!$custAddrDebitorPaymentMidocoCrmCcCardItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmCcCard) {
                 $invalidValues[] = is_object($custAddrDebitorPaymentMidocoCrmCcCardItem) ? get_class($custAddrDebitorPaymentMidocoCrmCcCardItem) : sprintf('%s(%s)', gettype($custAddrDebitorPaymentMidocoCrmCcCardItem), var_export($custAddrDebitorPaymentMidocoCrmCcCardItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmCcCard property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmCcCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmCcCard property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmCcCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -387,8 +387,8 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Set MidocoCrmCcCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmCcCard[] $midocoCrmCcCard
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmCcCard[] $midocoCrmCcCard
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
     public function setMidocoCrmCcCard(?array $midocoCrmCcCard = null): self
     {
@@ -403,14 +403,14 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Add item to MidocoCrmCcCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmCcCard $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmCcCard $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
-    public function addToMidocoCrmCcCard(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmCcCard $item): self
+    public function addToMidocoCrmCcCard(\Pggns\MidocoApi\Orderlists\StructType\MidocoCrmCcCard $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmCcCard) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmCcCard property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmCcCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmCcCard) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmCcCard property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmCcCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmCcCard[] = $item;
         
@@ -418,7 +418,7 @@ class CustAddrDebitorPayment extends AbstractStructBase
     }
     /**
      * Get MidocoCrmDebitCard value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmDebitCard[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmDebitCard[]
      */
     public function getMidocoCrmDebitCard(): ?array
     {
@@ -439,12 +439,12 @@ class CustAddrDebitorPayment extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $custAddrDebitorPaymentMidocoCrmDebitCardItem) {
             // validation for constraint: itemType
-            if (!$custAddrDebitorPaymentMidocoCrmDebitCardItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmDebitCard) {
+            if (!$custAddrDebitorPaymentMidocoCrmDebitCardItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmDebitCard) {
                 $invalidValues[] = is_object($custAddrDebitorPaymentMidocoCrmDebitCardItem) ? get_class($custAddrDebitorPaymentMidocoCrmDebitCardItem) : sprintf('%s(%s)', gettype($custAddrDebitorPaymentMidocoCrmDebitCardItem), var_export($custAddrDebitorPaymentMidocoCrmDebitCardItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmDebitCard property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmDebitCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmDebitCard property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmDebitCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -453,8 +453,8 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Set MidocoCrmDebitCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmDebitCard[] $midocoCrmDebitCard
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmDebitCard[] $midocoCrmDebitCard
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
     public function setMidocoCrmDebitCard(?array $midocoCrmDebitCard = null): self
     {
@@ -469,14 +469,14 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Add item to MidocoCrmDebitCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmDebitCard $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmDebitCard $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
-    public function addToMidocoCrmDebitCard(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmDebitCard $item): self
+    public function addToMidocoCrmDebitCard(\Pggns\MidocoApi\Orderlists\StructType\MidocoCrmDebitCard $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmDebitCard) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmDebitCard property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmDebitCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmDebitCard) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmDebitCard property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmDebitCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmDebitCard[] = $item;
         
@@ -484,7 +484,7 @@ class CustAddrDebitorPayment extends AbstractStructBase
     }
     /**
      * Get MidocoCrmBonusCard value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmBonusCardDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmBonusCardDTO[]
      */
     public function getMidocoCrmBonusCard(): ?array
     {
@@ -505,12 +505,12 @@ class CustAddrDebitorPayment extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $custAddrDebitorPaymentMidocoCrmBonusCardItem) {
             // validation for constraint: itemType
-            if (!$custAddrDebitorPaymentMidocoCrmBonusCardItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\CrmBonusCardDTO) {
+            if (!$custAddrDebitorPaymentMidocoCrmBonusCardItem instanceof \Pggns\MidocoApi\Orderlists\StructType\CrmBonusCardDTO) {
                 $invalidValues[] = is_object($custAddrDebitorPaymentMidocoCrmBonusCardItem) ? get_class($custAddrDebitorPaymentMidocoCrmBonusCardItem) : sprintf('%s(%s)', gettype($custAddrDebitorPaymentMidocoCrmBonusCardItem), var_export($custAddrDebitorPaymentMidocoCrmBonusCardItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmBonusCard property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\CrmBonusCardDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmBonusCard property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\CrmBonusCardDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -519,8 +519,8 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Set MidocoCrmBonusCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CrmBonusCardDTO[] $midocoCrmBonusCard
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CrmBonusCardDTO[] $midocoCrmBonusCard
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
     public function setMidocoCrmBonusCard(?array $midocoCrmBonusCard = null): self
     {
@@ -535,14 +535,14 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Add item to MidocoCrmBonusCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CrmBonusCardDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CrmBonusCardDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
-    public function addToMidocoCrmBonusCard(\Pggns\MidocoApi\Api\Orderlists\StructType\CrmBonusCardDTO $item): self
+    public function addToMidocoCrmBonusCard(\Pggns\MidocoApi\Orderlists\StructType\CrmBonusCardDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\CrmBonusCardDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmBonusCard property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\CrmBonusCardDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\CrmBonusCardDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmBonusCard property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\CrmBonusCardDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmBonusCard[] = $item;
         
@@ -550,7 +550,7 @@ class CustAddrDebitorPayment extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCriteriaDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCriteriaDTO[]
      */
     public function getMidocoCrmCriteria(): ?array
     {
@@ -571,12 +571,12 @@ class CustAddrDebitorPayment extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $custAddrDebitorPaymentMidocoCrmCriteriaItem) {
             // validation for constraint: itemType
-            if (!$custAddrDebitorPaymentMidocoCrmCriteriaItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCriteriaDTO) {
+            if (!$custAddrDebitorPaymentMidocoCrmCriteriaItem instanceof \Pggns\MidocoApi\Orderlists\StructType\CrmCriteriaDTO) {
                 $invalidValues[] = is_object($custAddrDebitorPaymentMidocoCrmCriteriaItem) ? get_class($custAddrDebitorPaymentMidocoCrmCriteriaItem) : sprintf('%s(%s)', gettype($custAddrDebitorPaymentMidocoCrmCriteriaItem), var_export($custAddrDebitorPaymentMidocoCrmCriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCriteriaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\CrmCriteriaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -585,8 +585,8 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Set MidocoCrmCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCriteriaDTO[] $midocoCrmCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CrmCriteriaDTO[] $midocoCrmCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
     public function setMidocoCrmCriteria(?array $midocoCrmCriteria = null): self
     {
@@ -601,14 +601,14 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Add item to MidocoCrmCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCriteriaDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CrmCriteriaDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
-    public function addToMidocoCrmCriteria(\Pggns\MidocoApi\Api\Orderlists\StructType\CrmCriteriaDTO $item): self
+    public function addToMidocoCrmCriteria(\Pggns\MidocoApi\Orderlists\StructType\CrmCriteriaDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCriteriaDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCriteriaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\CrmCriteriaDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\CrmCriteriaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmCriteria[] = $item;
         
@@ -616,18 +616,18 @@ class CustAddrDebitorPayment extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Orderlists\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Api\Orderlists\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Orderlists\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         
@@ -644,7 +644,7 @@ class CustAddrDebitorPayment extends AbstractStructBase
     /**
      * Set custOrder value
      * @param int $custOrder
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustAddrDebitorPayment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustAddrDebitorPayment
      */
     public function setCustOrder(?int $custOrder = null): self
     {

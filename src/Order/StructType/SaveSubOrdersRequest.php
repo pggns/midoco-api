@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -29,9 +29,9 @@ class SaveSubOrdersRequest extends AbstractStructBase
      * The MidocoSubOrders
      * Meta information extracted from the WSDL
      * - ref: MidocoSubOrders
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSubOrders|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSubOrders|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSubOrders $MidocoSubOrders = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSubOrders $MidocoSubOrders = null;
     /**
      * Constructor method for SaveSubOrdersRequest
      * @uses SaveSubOrdersRequest::setMainOrderId()
@@ -39,9 +39,9 @@ class SaveSubOrdersRequest extends AbstractStructBase
      * @uses SaveSubOrdersRequest::setMidocoSubOrders()
      * @param int $mainOrderId
      * @param int $actionType
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSubOrders $midocoSubOrders
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSubOrders $midocoSubOrders
      */
-    public function __construct(?int $mainOrderId = null, ?int $actionType = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSubOrders $midocoSubOrders = null)
+    public function __construct(?int $mainOrderId = null, ?int $actionType = null, ?\Pggns\MidocoApi\Order\StructType\MidocoSubOrders $midocoSubOrders = null)
     {
         $this
             ->setMainOrderId($mainOrderId)
@@ -59,7 +59,7 @@ class SaveSubOrdersRequest extends AbstractStructBase
     /**
      * Set mainOrderId value
      * @param int $mainOrderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveSubOrdersRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveSubOrdersRequest
      */
     public function setMainOrderId(?int $mainOrderId = null): self
     {
@@ -82,7 +82,7 @@ class SaveSubOrdersRequest extends AbstractStructBase
     /**
      * Set actionType value
      * @param int $actionType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveSubOrdersRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveSubOrdersRequest
      */
     public function setActionType(?int $actionType = null): self
     {
@@ -96,18 +96,18 @@ class SaveSubOrdersRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSubOrders value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSubOrders|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSubOrders|null
      */
-    public function getMidocoSubOrders(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSubOrders
+    public function getMidocoSubOrders(): ?\Pggns\MidocoApi\Order\StructType\MidocoSubOrders
     {
         return $this->MidocoSubOrders;
     }
     /**
      * Set MidocoSubOrders value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSubOrders $midocoSubOrders
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveSubOrdersRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSubOrders $midocoSubOrders
+     * @return \Pggns\MidocoApi\Order\StructType\SaveSubOrdersRequest
      */
-    public function setMidocoSubOrders(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSubOrders $midocoSubOrders = null): self
+    public function setMidocoSubOrders(?\Pggns\MidocoApi\Order\StructType\MidocoSubOrders $midocoSubOrders = null): self
     {
         $this->MidocoSubOrders = $midocoSubOrders;
         

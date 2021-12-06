@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoBonusCalculationSearchCriteria extends AbstractStructBase
     /**
      * Set calculationType value
      * @param string $calculationType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusCalculationSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusCalculationSearchCriteria
      */
     public function setCalculationType(?string $calculationType = null): self
     {
@@ -78,7 +78,7 @@ class MidocoBonusCalculationSearchCriteria extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusCalculationSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusCalculationSearchCriteria
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -101,7 +101,7 @@ class MidocoBonusCalculationSearchCriteria extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusCalculationSearchCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusCalculationSearchCriteria
      */
     public function setEndDate(?string $endDate = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -23,33 +23,33 @@ class SaveSellItemResponse extends AbstractStructBase
      * The MidocoSellItemInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoSellItemInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo $MidocoSellItemInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo $MidocoSellItemInfo = null;
     /**
      * Constructor method for SaveSellItemResponse
      * @uses SaveSellItemResponse::setMidocoSellItemInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo $midocoSellItemInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo $midocoSellItemInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo $midocoSellItemInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo $midocoSellItemInfo = null)
     {
         $this
             ->setMidocoSellItemInfo($midocoSellItemInfo);
     }
     /**
      * Get MidocoSellItemInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo|null
      */
-    public function getMidocoSellItemInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo
+    public function getMidocoSellItemInfo(): ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo
     {
         return $this->MidocoSellItemInfo;
     }
     /**
      * Set MidocoSellItemInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo $midocoSellItemInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveSellItemResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo $midocoSellItemInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SaveSellItemResponse
      */
-    public function setMidocoSellItemInfo(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo $midocoSellItemInfo = null): self
+    public function setMidocoSellItemInfo(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo $midocoSellItemInfo = null): self
     {
         $this->MidocoSellItemInfo = $midocoSellItemInfo;
         

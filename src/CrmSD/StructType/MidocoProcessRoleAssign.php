@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoProcessRoleAssign extends ProcessRoleAssignDTO
     /**
      * Set roleName value
      * @param string $roleName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoProcessRoleAssign
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoProcessRoleAssign
      */
     public function setRoleName(?string $roleName = null): self
     {

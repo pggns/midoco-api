@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class GetMidocoUserIdForExternCredentialsRequest extends AbstractStructBase
     /**
      * Set extAgencyNo value
      * @param string $extAgencyNo
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetMidocoUserIdForExternCredentialsRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\GetMidocoUserIdForExternCredentialsRequest
      */
     public function setExtAgencyNo(?string $extAgencyNo = null): self
     {
@@ -86,7 +86,7 @@ class GetMidocoUserIdForExternCredentialsRequest extends AbstractStructBase
     /**
      * Set extExpCode value
      * @param string $extExpCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetMidocoUserIdForExternCredentialsRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\GetMidocoUserIdForExternCredentialsRequest
      */
     public function setExtExpCode(?string $extExpCode = null): self
     {
@@ -109,7 +109,7 @@ class GetMidocoUserIdForExternCredentialsRequest extends AbstractStructBase
     /**
      * Set extAgencyNoAttrName value
      * @param string $extAgencyNoAttrName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetMidocoUserIdForExternCredentialsRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\GetMidocoUserIdForExternCredentialsRequest
      */
     public function setExtAgencyNoAttrName(?string $extAgencyNoAttrName = null): self
     {
@@ -132,7 +132,7 @@ class GetMidocoUserIdForExternCredentialsRequest extends AbstractStructBase
     /**
      * Set extExpCodeAttrName value
      * @param string $extExpCodeAttrName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetMidocoUserIdForExternCredentialsRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\GetMidocoUserIdForExternCredentialsRequest
      */
     public function setExtExpCodeAttrName(?string $extExpCodeAttrName = null): self
     {

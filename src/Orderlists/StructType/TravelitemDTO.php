@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -375,7 +375,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set articleType value
      * @param string $articleType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setArticleType(?string $articleType = null): self
     {
@@ -398,7 +398,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -421,7 +421,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -444,7 +444,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set bookingReference value
      * @param int $bookingReference
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setBookingReference(?int $bookingReference = null): self
     {
@@ -467,7 +467,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -490,7 +490,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -513,7 +513,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set expired value
      * @param bool $expired
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setExpired(?bool $expired = null): self
     {
@@ -536,7 +536,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set extChannel value
      * @param string $extChannel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setExtChannel(?string $extChannel = null): self
     {
@@ -559,7 +559,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set extId value
      * @param string $extId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setExtId(?string $extId = null): self
     {
@@ -582,7 +582,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set extSystem value
      * @param string $extSystem
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setExtSystem(?string $extSystem = null): self
     {
@@ -605,7 +605,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set extUrl value
      * @param string $extUrl
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setExtUrl(?string $extUrl = null): self
     {
@@ -628,7 +628,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set feeCode value
      * @param string $feeCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setFeeCode(?string $feeCode = null): self
     {
@@ -651,7 +651,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set forCustomer value
      * @param string $forCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setForCustomer(?string $forCustomer = null): self
     {
@@ -674,7 +674,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set fromCustomer value
      * @param string $fromCustomer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setFromCustomer(?string $fromCustomer = null): self
     {
@@ -697,7 +697,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set groupItemFlag value
      * @param bool $groupItemFlag
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setGroupItemFlag(?bool $groupItemFlag = null): self
     {
@@ -720,7 +720,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set groupItemName value
      * @param string $groupItemName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setGroupItemName(?string $groupItemName = null): self
     {
@@ -743,7 +743,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set isOneWay value
      * @param bool $isOneWay
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setIsOneWay(?bool $isOneWay = null): self
     {
@@ -766,7 +766,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set isOption value
      * @param bool $isOption
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setIsOption(?bool $isOption = null): self
     {
@@ -789,7 +789,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set isRequest value
      * @param bool $isRequest
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setIsRequest(?bool $isRequest = null): self
     {
@@ -812,7 +812,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set isStorno value
      * @param bool $isStorno
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setIsStorno(?bool $isStorno = null): self
     {
@@ -835,7 +835,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -858,7 +858,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set mainUnitName value
      * @param string $mainUnitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setMainUnitName(?string $mainUnitName = null): self
     {
@@ -881,7 +881,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set noOfPersons value
      * @param int $noOfPersons
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setNoOfPersons(?int $noOfPersons = null): self
     {
@@ -904,7 +904,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set optionPeriod value
      * @param int $optionPeriod
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setOptionPeriod(?int $optionPeriod = null): self
     {
@@ -927,7 +927,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set originalBookingId value
      * @param string $originalBookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setOriginalBookingId(?string $originalBookingId = null): self
     {
@@ -950,7 +950,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set originalStatus value
      * @param string $originalStatus
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setOriginalStatus(?string $originalStatus = null): self
     {
@@ -973,7 +973,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set originalSupplierId value
      * @param string $originalSupplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setOriginalSupplierId(?string $originalSupplierId = null): self
     {
@@ -996,7 +996,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set sourceExtId value
      * @param string $sourceExtId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setSourceExtId(?string $sourceExtId = null): self
     {
@@ -1019,7 +1019,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set sourceExtSystem value
      * @param string $sourceExtSystem
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setSourceExtSystem(?string $sourceExtSystem = null): self
     {
@@ -1042,7 +1042,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -1065,7 +1065,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -1088,7 +1088,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set stornoConfirmationNo value
      * @param string $stornoConfirmationNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setStornoConfirmationNo(?string $stornoConfirmationNo = null): self
     {
@@ -1111,7 +1111,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set stornoDate value
      * @param string $stornoDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setStornoDate(?string $stornoDate = null): self
     {
@@ -1134,7 +1134,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set stornoText value
      * @param string $stornoText
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setStornoText(?string $stornoText = null): self
     {
@@ -1157,7 +1157,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -1180,7 +1180,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set transferStatus value
      * @param int $transferStatus
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setTransferStatus(?int $transferStatus = null): self
     {
@@ -1203,7 +1203,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set transferTimestamp value
      * @param string $transferTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setTransferTimestamp(?string $transferTimestamp = null): self
     {
@@ -1226,7 +1226,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setTravelNo(?string $travelNo = null): self
     {
@@ -1249,7 +1249,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set travelNoHandling value
      * @param string $travelNoHandling
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setTravelNoHandling(?string $travelNoHandling = null): self
     {
@@ -1272,7 +1272,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -1295,7 +1295,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set voucherQuantity value
      * @param int $voucherQuantity
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setVoucherQuantity(?int $voucherQuantity = null): self
     {
@@ -1318,7 +1318,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set voucherSinglePrice value
      * @param float $voucherSinglePrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setVoucherSinglePrice(?float $voucherSinglePrice = null): self
     {
@@ -1341,7 +1341,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Set voucherTypeId value
      * @param string $voucherTypeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TravelitemDTO
      */
     public function setVoucherTypeId(?string $voucherTypeId = null): self
     {

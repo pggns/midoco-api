@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class PaymentProviderSettlementDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentProviderSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentProviderSettlementDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -110,7 +110,7 @@ class PaymentProviderSettlementDTO extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentProviderSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentProviderSettlementDTO
      */
     public function setFileName(?string $fileName = null): self
     {
@@ -133,7 +133,7 @@ class PaymentProviderSettlementDTO extends AbstractStructBase
     /**
      * Set invoiceDate value
      * @param string $invoiceDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentProviderSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentProviderSettlementDTO
      */
     public function setInvoiceDate(?string $invoiceDate = null): self
     {
@@ -156,7 +156,7 @@ class PaymentProviderSettlementDTO extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param string $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentProviderSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentProviderSettlementDTO
      */
     public function setInvoiceNo(?string $invoiceNo = null): self
     {
@@ -179,7 +179,7 @@ class PaymentProviderSettlementDTO extends AbstractStructBase
     /**
      * Set paymentProviderId value
      * @param string $paymentProviderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentProviderSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentProviderSettlementDTO
      */
     public function setPaymentProviderId(?string $paymentProviderId = null): self
     {
@@ -202,7 +202,7 @@ class PaymentProviderSettlementDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentProviderSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentProviderSettlementDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -225,7 +225,7 @@ class PaymentProviderSettlementDTO extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PaymentProviderSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PaymentProviderSettlementDTO
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {

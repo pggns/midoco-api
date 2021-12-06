@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class TravelPlanHistoryDTO extends AbstractStructBase
     /**
      * Set automatic value
      * @param bool $automatic
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelPlanHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelPlanHistoryDTO
      */
     public function setAutomatic(?bool $automatic = null): self
     {
@@ -158,7 +158,7 @@ class TravelPlanHistoryDTO extends AbstractStructBase
     /**
      * Set callDate value
      * @param string $callDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelPlanHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelPlanHistoryDTO
      */
     public function setCallDate(?string $callDate = null): self
     {
@@ -181,7 +181,7 @@ class TravelPlanHistoryDTO extends AbstractStructBase
     /**
      * Set documentExportDate value
      * @param string $documentExportDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelPlanHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelPlanHistoryDTO
      */
     public function setDocumentExportDate(?string $documentExportDate = null): self
     {
@@ -204,7 +204,7 @@ class TravelPlanHistoryDTO extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelPlanHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelPlanHistoryDTO
      */
     public function setFileName(?string $fileName = null): self
     {
@@ -227,7 +227,7 @@ class TravelPlanHistoryDTO extends AbstractStructBase
     /**
      * Set historyId value
      * @param int $historyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelPlanHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelPlanHistoryDTO
      */
     public function setHistoryId(?int $historyId = null): self
     {
@@ -250,7 +250,7 @@ class TravelPlanHistoryDTO extends AbstractStructBase
     /**
      * Set isDocumentExported value
      * @param bool $isDocumentExported
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelPlanHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelPlanHistoryDTO
      */
     public function setIsDocumentExported(?bool $isDocumentExported = null): self
     {
@@ -273,7 +273,7 @@ class TravelPlanHistoryDTO extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelPlanHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelPlanHistoryDTO
      */
     public function setMedia(?string $media = null): self
     {
@@ -296,7 +296,7 @@ class TravelPlanHistoryDTO extends AbstractStructBase
     /**
      * Set orderDocumentId value
      * @param int $orderDocumentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelPlanHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelPlanHistoryDTO
      */
     public function setOrderDocumentId(?int $orderDocumentId = null): self
     {
@@ -319,7 +319,7 @@ class TravelPlanHistoryDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelPlanHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelPlanHistoryDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -342,7 +342,7 @@ class TravelPlanHistoryDTO extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelPlanHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelPlanHistoryDTO
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -365,7 +365,7 @@ class TravelPlanHistoryDTO extends AbstractStructBase
     /**
      * Set printingDate value
      * @param string $printingDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelPlanHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelPlanHistoryDTO
      */
     public function setPrintingDate(?string $printingDate = null): self
     {
@@ -388,7 +388,7 @@ class TravelPlanHistoryDTO extends AbstractStructBase
     /**
      * Set printingUser value
      * @param int $printingUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelPlanHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelPlanHistoryDTO
      */
     public function setPrintingUser(?int $printingUser = null): self
     {
@@ -411,7 +411,7 @@ class TravelPlanHistoryDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelPlanHistoryDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelPlanHistoryDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

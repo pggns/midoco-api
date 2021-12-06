@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class SalesListByEmployeeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSalesListsByEmployee
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType[]
      */
     protected ?array $MidocoSalesListsByEmployee = null;
     /**
@@ -31,19 +31,19 @@ class SalesListByEmployeeResponse extends AbstractStructBase
     protected ?int $noOfResults = null;
     /**
      * The SalesListsByEmployeeSums
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType $SalesListsByEmployeeSums = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType $SalesListsByEmployeeSums = null;
     /**
      * Constructor method for SalesListByEmployeeResponse
      * @uses SalesListByEmployeeResponse::setMidocoSalesListsByEmployee()
      * @uses SalesListByEmployeeResponse::setNoOfResults()
      * @uses SalesListByEmployeeResponse::setSalesListsByEmployeeSums()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType[] $midocoSalesListsByEmployee
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType[] $midocoSalesListsByEmployee
      * @param int $noOfResults
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType $salesListsByEmployeeSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType $salesListsByEmployeeSums
      */
-    public function __construct(?array $midocoSalesListsByEmployee = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType $salesListsByEmployeeSums = null)
+    public function __construct(?array $midocoSalesListsByEmployee = null, ?int $noOfResults = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType $salesListsByEmployeeSums = null)
     {
         $this
             ->setMidocoSalesListsByEmployee($midocoSalesListsByEmployee)
@@ -52,7 +52,7 @@ class SalesListByEmployeeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSalesListsByEmployee value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType[]
      */
     public function getMidocoSalesListsByEmployee(): ?array
     {
@@ -73,12 +73,12 @@ class SalesListByEmployeeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $salesListByEmployeeResponseMidocoSalesListsByEmployeeItem) {
             // validation for constraint: itemType
-            if (!$salesListByEmployeeResponseMidocoSalesListsByEmployeeItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType) {
+            if (!$salesListByEmployeeResponseMidocoSalesListsByEmployeeItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType) {
                 $invalidValues[] = is_object($salesListByEmployeeResponseMidocoSalesListsByEmployeeItem) ? get_class($salesListByEmployeeResponseMidocoSalesListsByEmployeeItem) : sprintf('%s(%s)', gettype($salesListByEmployeeResponseMidocoSalesListsByEmployeeItem), var_export($salesListByEmployeeResponseMidocoSalesListsByEmployeeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSalesListsByEmployee property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSalesListsByEmployee property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -87,8 +87,8 @@ class SalesListByEmployeeResponse extends AbstractStructBase
     /**
      * Set MidocoSalesListsByEmployee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType[] $midocoSalesListsByEmployee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByEmployeeResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType[] $midocoSalesListsByEmployee
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByEmployeeResponse
      */
     public function setMidocoSalesListsByEmployee(?array $midocoSalesListsByEmployee = null): self
     {
@@ -103,14 +103,14 @@ class SalesListByEmployeeResponse extends AbstractStructBase
     /**
      * Add item to MidocoSalesListsByEmployee value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByEmployeeResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByEmployeeResponse
      */
-    public function addToMidocoSalesListsByEmployee(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType $item): self
+    public function addToMidocoSalesListsByEmployee(\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType) {
-            throw new InvalidArgumentException(sprintf('The MidocoSalesListsByEmployee property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType) {
+            throw new InvalidArgumentException(sprintf('The MidocoSalesListsByEmployee property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSalesListsByEmployee[] = $item;
         
@@ -127,7 +127,7 @@ class SalesListByEmployeeResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByEmployeeResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByEmployeeResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {
@@ -141,18 +141,18 @@ class SalesListByEmployeeResponse extends AbstractStructBase
     }
     /**
      * Get SalesListsByEmployeeSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType|null
      */
-    public function getSalesListsByEmployeeSums(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType
+    public function getSalesListsByEmployeeSums(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType
     {
         return $this->SalesListsByEmployeeSums;
     }
     /**
      * Set SalesListsByEmployeeSums value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType $salesListsByEmployeeSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByEmployeeResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType $salesListsByEmployeeSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByEmployeeResponse
      */
-    public function setSalesListsByEmployeeSums(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListsByEmployeeType $salesListsByEmployeeSums = null): self
+    public function setSalesListsByEmployeeSums(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListsByEmployeeType $salesListsByEmployeeSums = null): self
     {
         $this->SalesListsByEmployeeSums = $salesListsByEmployeeSums;
         

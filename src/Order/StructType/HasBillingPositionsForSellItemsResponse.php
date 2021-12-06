@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,13 +20,13 @@ class HasBillingPositionsForSellItemsResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: SellItemHasPrinted
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SellItemHasPrinted[]
+     * @var \Pggns\MidocoApi\Order\StructType\SellItemHasPrinted[]
      */
     protected ?array $SellItemHasPrinted = null;
     /**
      * Constructor method for HasBillingPositionsForSellItemsResponse
      * @uses HasBillingPositionsForSellItemsResponse::setSellItemHasPrinted()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemHasPrinted[] $sellItemHasPrinted
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemHasPrinted[] $sellItemHasPrinted
      */
     public function __construct(?array $sellItemHasPrinted = null)
     {
@@ -35,7 +35,7 @@ class HasBillingPositionsForSellItemsResponse extends AbstractStructBase
     }
     /**
      * Get SellItemHasPrinted value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemHasPrinted[]
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemHasPrinted[]
      */
     public function getSellItemHasPrinted(): ?array
     {
@@ -56,12 +56,12 @@ class HasBillingPositionsForSellItemsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $hasBillingPositionsForSellItemsResponseSellItemHasPrintedItem) {
             // validation for constraint: itemType
-            if (!$hasBillingPositionsForSellItemsResponseSellItemHasPrintedItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemHasPrinted) {
+            if (!$hasBillingPositionsForSellItemsResponseSellItemHasPrintedItem instanceof \Pggns\MidocoApi\Order\StructType\SellItemHasPrinted) {
                 $invalidValues[] = is_object($hasBillingPositionsForSellItemsResponseSellItemHasPrintedItem) ? get_class($hasBillingPositionsForSellItemsResponseSellItemHasPrintedItem) : sprintf('%s(%s)', gettype($hasBillingPositionsForSellItemsResponseSellItemHasPrintedItem), var_export($hasBillingPositionsForSellItemsResponseSellItemHasPrintedItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The SellItemHasPrinted property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemHasPrinted, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The SellItemHasPrinted property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemHasPrinted, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -70,8 +70,8 @@ class HasBillingPositionsForSellItemsResponse extends AbstractStructBase
     /**
      * Set SellItemHasPrinted value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemHasPrinted[] $sellItemHasPrinted
-     * @return \Pggns\MidocoApi\Api\Order\StructType\HasBillingPositionsForSellItemsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemHasPrinted[] $sellItemHasPrinted
+     * @return \Pggns\MidocoApi\Order\StructType\HasBillingPositionsForSellItemsResponse
      */
     public function setSellItemHasPrinted(?array $sellItemHasPrinted = null): self
     {
@@ -86,14 +86,14 @@ class HasBillingPositionsForSellItemsResponse extends AbstractStructBase
     /**
      * Add item to SellItemHasPrinted value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemHasPrinted $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\HasBillingPositionsForSellItemsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemHasPrinted $item
+     * @return \Pggns\MidocoApi\Order\StructType\HasBillingPositionsForSellItemsResponse
      */
-    public function addToSellItemHasPrinted(\Pggns\MidocoApi\Api\Order\StructType\SellItemHasPrinted $item): self
+    public function addToSellItemHasPrinted(\Pggns\MidocoApi\Order\StructType\SellItemHasPrinted $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemHasPrinted) {
-            throw new InvalidArgumentException(sprintf('The SellItemHasPrinted property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemHasPrinted, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SellItemHasPrinted) {
+            throw new InvalidArgumentException(sprintf('The SellItemHasPrinted property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemHasPrinted, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->SellItemHasPrinted[] = $item;
         

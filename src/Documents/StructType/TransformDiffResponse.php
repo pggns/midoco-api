@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class TransformDiffResponse extends AbstractStructBase
     /**
      * Set diff value
      * @param string $diff
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TransformDiffResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\TransformDiffResponse
      */
     public function setDiff(?string $diff = null): self
     {

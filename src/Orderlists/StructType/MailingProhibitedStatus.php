@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MailingProhibitedStatus extends AbstractStructBase
     /**
      * Set statusId value
      * @param string $statusId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MailingProhibitedStatus
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MailingProhibitedStatus
      */
     public function setStatusId(?string $statusId = null): self
     {
@@ -70,7 +70,7 @@ class MailingProhibitedStatus extends AbstractStructBase
     /**
      * Set statusDescription value
      * @param string $statusDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MailingProhibitedStatus
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MailingProhibitedStatus
      */
     public function setStatusDescription(?string $statusDescription = null): self
     {

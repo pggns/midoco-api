@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SendMediatorFormularResponse extends AbstractStructBase
     /**
      * Set error value
      * @param string $error
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SendMediatorFormularResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SendMediatorFormularResponse
      */
     public function setError(?string $error = null): self
     {

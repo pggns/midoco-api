@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -113,7 +113,7 @@ class SearchReceiptRequest extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchReceiptRequest
      */
     public function setCashBookId(int $cashBookId): self
     {
@@ -136,7 +136,7 @@ class SearchReceiptRequest extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param int $receiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchReceiptRequest
      */
     public function setReceiptNo(?int $receiptNo = null): self
     {
@@ -159,7 +159,7 @@ class SearchReceiptRequest extends AbstractStructBase
     /**
      * Set receiptDateFrom value
      * @param string $receiptDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchReceiptRequest
      */
     public function setReceiptDateFrom(?string $receiptDateFrom = null): self
     {
@@ -182,7 +182,7 @@ class SearchReceiptRequest extends AbstractStructBase
     /**
      * Set receiptDateUntil value
      * @param string $receiptDateUntil
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchReceiptRequest
      */
     public function setReceiptDateUntil(?string $receiptDateUntil = null): self
     {
@@ -205,7 +205,7 @@ class SearchReceiptRequest extends AbstractStructBase
     /**
      * Set creator value
      * @param int $creator
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchReceiptRequest
      */
     public function setCreator(?int $creator = null): self
     {
@@ -228,7 +228,7 @@ class SearchReceiptRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchReceiptRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -251,7 +251,7 @@ class SearchReceiptRequest extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchReceiptRequest
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -274,7 +274,7 @@ class SearchReceiptRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchReceiptRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -297,7 +297,7 @@ class SearchReceiptRequest extends AbstractStructBase
     /**
      * Set manuallyAdjustable value
      * @param bool $manuallyAdjustable
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchReceiptRequest
      */
     public function setManuallyAdjustable(?bool $manuallyAdjustable = null): self
     {
@@ -320,7 +320,7 @@ class SearchReceiptRequest extends AbstractStructBase
     /**
      * Set receiptCounter value
      * @param int $receiptCounter
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchReceiptRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchReceiptRequest
      */
     public function setReceiptCounter(?int $receiptCounter = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class CreateAutomaticOrderNoticeRequest extends AbstractStructBase
      * The MidocoOrder
      * Meta information extracted from the WSDL
      * - ref: MidocoOrder
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $MidocoOrder = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $MidocoOrder = null;
     /**
      * The typeAttribute
      * @var bool|null
@@ -29,10 +29,10 @@ class CreateAutomaticOrderNoticeRequest extends AbstractStructBase
      * Constructor method for CreateAutomaticOrderNoticeRequest
      * @uses CreateAutomaticOrderNoticeRequest::setMidocoOrder()
      * @uses CreateAutomaticOrderNoticeRequest::setTypeAttribute()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
      * @param bool $typeAttribute
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null, ?bool $typeAttribute = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null, ?bool $typeAttribute = null)
     {
         $this
             ->setMidocoOrder($midocoOrder)
@@ -40,18 +40,18 @@ class CreateAutomaticOrderNoticeRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrder value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    public function getMidocoOrder(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType
+    public function getMidocoOrder(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType
     {
         return $this->MidocoOrder;
     }
     /**
      * Set MidocoOrder value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateAutomaticOrderNoticeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
+     * @return \Pggns\MidocoApi\Order\StructType\CreateAutomaticOrderNoticeRequest
      */
-    public function setMidocoOrder(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null): self
+    public function setMidocoOrder(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null): self
     {
         $this->MidocoOrder = $midocoOrder;
         
@@ -68,7 +68,7 @@ class CreateAutomaticOrderNoticeRequest extends AbstractStructBase
     /**
      * Set typeAttribute value
      * @param bool $typeAttribute
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateAutomaticOrderNoticeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateAutomaticOrderNoticeRequest
      */
     public function setTypeAttribute(?bool $typeAttribute = null): self
     {

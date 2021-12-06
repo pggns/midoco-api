@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class CcTokenReferenceDTO extends AbstractStructBase
     /**
      * Set ccMask value
      * @param string $ccMask
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenReferenceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenReferenceDTO
      */
     public function setCcMask(?string $ccMask = null): self
     {
@@ -70,7 +70,7 @@ class CcTokenReferenceDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CcTokenReferenceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcTokenReferenceDTO
      */
     public function setId(?int $id = null): self
     {

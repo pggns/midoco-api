@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -191,7 +191,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -214,7 +214,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set addlDocumentId value
      * @param int $addlDocumentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setAddlDocumentId(?int $addlDocumentId = null): self
     {
@@ -237,7 +237,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set calculatedSum value
      * @param float $calculatedSum
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setCalculatedSum(?float $calculatedSum = null): self
     {
@@ -260,7 +260,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -283,7 +283,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -306,7 +306,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set debtAmount value
      * @param float $debtAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setDebtAmount(?float $debtAmount = null): self
     {
@@ -329,7 +329,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -352,7 +352,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -375,7 +375,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set feeAmount value
      * @param float $feeAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setFeeAmount(?float $feeAmount = null): self
     {
@@ -398,7 +398,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set feeDebtAmount value
      * @param float $feeDebtAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setFeeDebtAmount(?float $feeDebtAmount = null): self
     {
@@ -421,7 +421,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set mediatorBillingId value
      * @param int $mediatorBillingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setMediatorBillingId(?int $mediatorBillingId = null): self
     {
@@ -444,7 +444,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -467,7 +467,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set nettoAmount value
      * @param float $nettoAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setNettoAmount(?float $nettoAmount = null): self
     {
@@ -490,7 +490,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -513,7 +513,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set percent value
      * @param float $percent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setPercent(?float $percent = null): self
     {
@@ -536,7 +536,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -559,7 +559,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set settlementMonth value
      * @param string $settlementMonth
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setSettlementMonth(?string $settlementMonth = null): self
     {
@@ -582,7 +582,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -605,7 +605,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -628,7 +628,7 @@ class MediatorBillingDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorBillingDTO
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorBillingDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {

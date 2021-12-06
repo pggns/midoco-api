@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class BankCityDTO extends AbstractStructBase
     /**
      * Set bankNumber value
      * @param string $bankNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankCityDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankCityDTO
      */
     public function setBankNumber(?string $bankNumber = null): self
     {
@@ -78,7 +78,7 @@ class BankCityDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankCityDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankCityDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -101,7 +101,7 @@ class BankCityDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param string $countryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankCityDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankCityDTO
      */
     public function setCountryId(?string $countryId = null): self
     {

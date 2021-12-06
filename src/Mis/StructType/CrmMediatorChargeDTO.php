@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class CrmMediatorChargeDTO extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmMediatorChargeDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmMediatorChargeDTO
      */
     public function setChargeId(?int $chargeId = null): self
     {
@@ -126,7 +126,7 @@ class CrmMediatorChargeDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmMediatorChargeDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmMediatorChargeDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -149,7 +149,7 @@ class CrmMediatorChargeDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmMediatorChargeDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmMediatorChargeDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -172,7 +172,7 @@ class CrmMediatorChargeDTO extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmMediatorChargeDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmMediatorChargeDTO
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -195,7 +195,7 @@ class CrmMediatorChargeDTO extends AbstractStructBase
     /**
      * Set lastExecDate value
      * @param string $lastExecDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmMediatorChargeDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmMediatorChargeDTO
      */
     public function setLastExecDate(?string $lastExecDate = null): self
     {
@@ -218,7 +218,7 @@ class CrmMediatorChargeDTO extends AbstractStructBase
     /**
      * Set lastExecUser value
      * @param int $lastExecUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmMediatorChargeDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmMediatorChargeDTO
      */
     public function setLastExecUser(?int $lastExecUser = null): self
     {
@@ -241,7 +241,7 @@ class CrmMediatorChargeDTO extends AbstractStructBase
     /**
      * Set manualAmount value
      * @param bool $manualAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmMediatorChargeDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmMediatorChargeDTO
      */
     public function setManualAmount(?bool $manualAmount = null): self
     {
@@ -264,7 +264,7 @@ class CrmMediatorChargeDTO extends AbstractStructBase
     /**
      * Set manualNettoAmount value
      * @param float $manualNettoAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmMediatorChargeDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmMediatorChargeDTO
      */
     public function setManualNettoAmount(?float $manualNettoAmount = null): self
     {
@@ -287,7 +287,7 @@ class CrmMediatorChargeDTO extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmMediatorChargeDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmMediatorChargeDTO
      */
     public function setStartDate(?string $startDate = null): self
     {

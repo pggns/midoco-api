@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class UserLoginLogDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UserLoginLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UserLoginLogDTO
      */
     public function setId(?int $id = null): self
     {
@@ -102,7 +102,7 @@ class UserLoginLogDTO extends AbstractStructBase
     /**
      * Set ipAddress value
      * @param string $ipAddress
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UserLoginLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UserLoginLogDTO
      */
     public function setIpAddress(?string $ipAddress = null): self
     {
@@ -125,7 +125,7 @@ class UserLoginLogDTO extends AbstractStructBase
     /**
      * Set lastAction value
      * @param string $lastAction
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UserLoginLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UserLoginLogDTO
      */
     public function setLastAction(?string $lastAction = null): self
     {
@@ -148,7 +148,7 @@ class UserLoginLogDTO extends AbstractStructBase
     /**
      * Set loginTime value
      * @param string $loginTime
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UserLoginLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UserLoginLogDTO
      */
     public function setLoginTime(?string $loginTime = null): self
     {
@@ -171,7 +171,7 @@ class UserLoginLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UserLoginLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UserLoginLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -194,7 +194,7 @@ class UserLoginLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\UserLoginLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\UserLoginLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

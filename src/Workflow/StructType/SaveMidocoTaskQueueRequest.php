@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,9 +19,9 @@ class SaveMidocoTaskQueueRequest extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - ref: MidocoTaskQueue
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue
      */
-    protected \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $MidocoTaskQueue;
+    protected \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $MidocoTaskQueue;
     /**
      * The isUpdate
      * Meta information extracted from the WSDL
@@ -35,10 +35,10 @@ class SaveMidocoTaskQueueRequest extends AbstractStructBase
      * Constructor method for SaveMidocoTaskQueueRequest
      * @uses SaveMidocoTaskQueueRequest::setMidocoTaskQueue()
      * @uses SaveMidocoTaskQueueRequest::setIsUpdate()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue
      * @param bool $isUpdate
      */
-    public function __construct(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue, bool $isUpdate)
+    public function __construct(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue, bool $isUpdate)
     {
         $this
             ->setMidocoTaskQueue($midocoTaskQueue)
@@ -46,18 +46,18 @@ class SaveMidocoTaskQueueRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTaskQueue value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue
      */
-    public function getMidocoTaskQueue(): \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue
+    public function getMidocoTaskQueue(): \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue
     {
         return $this->MidocoTaskQueue;
     }
     /**
      * Set MidocoTaskQueue value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskQueueRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskQueueRequest
      */
-    public function setMidocoTaskQueue(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue): self
+    public function setMidocoTaskQueue(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue): self
     {
         $this->MidocoTaskQueue = $midocoTaskQueue;
         
@@ -74,7 +74,7 @@ class SaveMidocoTaskQueueRequest extends AbstractStructBase
     /**
      * Set isUpdate value
      * @param bool $isUpdate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveMidocoTaskQueueRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveMidocoTaskQueueRequest
      */
     public function setIsUpdate(bool $isUpdate): self
     {

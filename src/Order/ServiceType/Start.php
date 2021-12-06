@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Start extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Start
+     * @return \Pggns\MidocoApi\Order\ServiceType\Start
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Start extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\StartWorkOrderUpdateRequest $paramStartWorkOrderUpdateRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\StartWorkOrderUpdateResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\StartWorkOrderUpdateRequest $paramStartWorkOrderUpdateRequest
+     * @return \Pggns\MidocoApi\Order\StructType\StartWorkOrderUpdateResponse|bool
      */
-    public function startWorkOrderUpdate(\Pggns\MidocoApi\Api\Order\StructType\StartWorkOrderUpdateRequest $paramStartWorkOrderUpdateRequest)
+    public function startWorkOrderUpdate(\Pggns\MidocoApi\Order\StructType\StartWorkOrderUpdateRequest $paramStartWorkOrderUpdateRequest)
     {
         try {
             $this->setResult($resultStartWorkOrderUpdate = $this->getSoapClient()->__soapCall('startWorkOrderUpdate', [
@@ -56,7 +56,7 @@ class Start extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\StartWorkOrderUpdateResponse
+     * @return \Pggns\MidocoApi\Order\StructType\StartWorkOrderUpdateResponse
      */
     public function getResult()
     {

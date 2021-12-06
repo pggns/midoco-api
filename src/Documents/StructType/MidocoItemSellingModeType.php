@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class MidocoItemSellingModeType extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoItemSellingModeType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoItemSellingModeType
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -142,7 +142,7 @@ class MidocoItemSellingModeType extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoItemSellingModeType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoItemSellingModeType
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -165,7 +165,7 @@ class MidocoItemSellingModeType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoItemSellingModeType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoItemSellingModeType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -188,7 +188,7 @@ class MidocoItemSellingModeType extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoItemSellingModeType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoItemSellingModeType
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -211,7 +211,7 @@ class MidocoItemSellingModeType extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoItemSellingModeType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoItemSellingModeType
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -234,7 +234,7 @@ class MidocoItemSellingModeType extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoItemSellingModeType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoItemSellingModeType
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -257,7 +257,7 @@ class MidocoItemSellingModeType extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoItemSellingModeType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoItemSellingModeType
      */
     public function setStatus(?string $status = null): self
     {
@@ -280,7 +280,7 @@ class MidocoItemSellingModeType extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoItemSellingModeType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoItemSellingModeType
      */
     public function setPrice(?float $price = null): self
     {
@@ -303,7 +303,7 @@ class MidocoItemSellingModeType extends AbstractStructBase
     /**
      * Set sellingMode value
      * @param int $sellingMode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoItemSellingModeType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoItemSellingModeType
      */
     public function setSellingMode(?int $sellingMode = null): self
     {
@@ -326,7 +326,7 @@ class MidocoItemSellingModeType extends AbstractStructBase
     /**
      * Set confirmationGroup value
      * @param string $confirmationGroup
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoItemSellingModeType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoItemSellingModeType
      */
     public function setConfirmationGroup(?string $confirmationGroup = null): self
     {
@@ -349,7 +349,7 @@ class MidocoItemSellingModeType extends AbstractStructBase
     /**
      * Set sellingModeDetermination value
      * @param string $sellingModeDetermination
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoItemSellingModeType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoItemSellingModeType
      */
     public function setSellingModeDetermination(?string $sellingModeDetermination = null): self
     {

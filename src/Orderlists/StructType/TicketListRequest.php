@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class TicketListRequest extends AbstractStructBase
      * The MidocoTicketListCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoTicketListCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType $MidocoTicketListCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType $MidocoTicketListCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class TicketListRequest extends AbstractStructBase
      * Constructor method for TicketListRequest
      * @uses TicketListRequest::setMidocoTicketListCriteria()
      * @uses TicketListRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType $midocoTicketListCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType $midocoTicketListCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType $midocoTicketListCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType $midocoTicketListCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoTicketListCriteria($midocoTicketListCriteria)
@@ -42,18 +42,18 @@ class TicketListRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTicketListCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType|null
      */
-    public function getMidocoTicketListCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType
+    public function getMidocoTicketListCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType
     {
         return $this->MidocoTicketListCriteria;
     }
     /**
      * Set MidocoTicketListCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType $midocoTicketListCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TicketListRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType $midocoTicketListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TicketListRequest
      */
-    public function setMidocoTicketListCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType $midocoTicketListCriteria = null): self
+    public function setMidocoTicketListCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType $midocoTicketListCriteria = null): self
     {
         $this->MidocoTicketListCriteria = $midocoTicketListCriteria;
         
@@ -70,7 +70,7 @@ class TicketListRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TicketListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TicketListRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

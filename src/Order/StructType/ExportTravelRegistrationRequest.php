@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -70,7 +70,7 @@ class ExportTravelRegistrationRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelRegistrationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelRegistrationRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -93,7 +93,7 @@ class ExportTravelRegistrationRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelRegistrationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelRegistrationRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -116,7 +116,7 @@ class ExportTravelRegistrationRequest extends AbstractStructBase
     /**
      * Set isPreview value
      * @param bool $isPreview
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelRegistrationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelRegistrationRequest
      */
     public function setIsPreview(?bool $isPreview = false): self
     {
@@ -139,7 +139,7 @@ class ExportTravelRegistrationRequest extends AbstractStructBase
     /**
      * Set printMedia value
      * @param string $printMedia
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportTravelRegistrationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportTravelRegistrationRequest
      */
     public function setPrintMedia(?string $printMedia = 'P'): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -68,7 +68,7 @@ class DeleteTravelDocumentsRequest extends AbstractStructBase
      * Set tdId value
      * @throws InvalidArgumentException
      * @param int[] $tdId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteTravelDocumentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteTravelDocumentsRequest
      */
     public function setTdId(?array $tdId = null): self
     {
@@ -84,7 +84,7 @@ class DeleteTravelDocumentsRequest extends AbstractStructBase
      * Add item to tdId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteTravelDocumentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteTravelDocumentsRequest
      */
     public function addToTdId(int $item): self
     {

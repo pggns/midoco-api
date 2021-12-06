@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -50,7 +50,7 @@ class GetOrgunitForSupplierAgencyResponse extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrgunitForSupplierAgencyResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrgunitForSupplierAgencyResponse
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -100,7 +100,7 @@ class GetOrgunitForSupplierAgencyResponse extends AbstractStructBase
      * Set supplierId value
      * @throws InvalidArgumentException
      * @param string[] $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrgunitForSupplierAgencyResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrgunitForSupplierAgencyResponse
      */
     public function setSupplierId(?array $supplierId = null): self
     {
@@ -116,7 +116,7 @@ class GetOrgunitForSupplierAgencyResponse extends AbstractStructBase
      * Add item to supplierId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetOrgunitForSupplierAgencyResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\GetOrgunitForSupplierAgencyResponse
      */
     public function addToSupplierId(string $item): self
     {

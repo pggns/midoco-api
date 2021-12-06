@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class GetCrmCampaignesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmCampaign
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCampaign[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCampaign[]
      */
     protected ?array $MidocoCrmCampaign = null;
     /**
@@ -33,7 +33,7 @@ class GetCrmCampaignesResponse extends AbstractStructBase
      * Constructor method for GetCrmCampaignesResponse
      * @uses GetCrmCampaignesResponse::setMidocoCrmCampaign()
      * @uses GetCrmCampaignesResponse::setTotalNoOfRecords()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCampaign[] $midocoCrmCampaign
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCampaign[] $midocoCrmCampaign
      * @param int $totalNoOfRecords
      */
     public function __construct(?array $midocoCrmCampaign = null, ?int $totalNoOfRecords = null)
@@ -44,7 +44,7 @@ class GetCrmCampaignesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCampaign value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCampaign[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCampaign[]
      */
     public function getMidocoCrmCampaign(): ?array
     {
@@ -65,12 +65,12 @@ class GetCrmCampaignesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCrmCampaignesResponseMidocoCrmCampaignItem) {
             // validation for constraint: itemType
-            if (!$getCrmCampaignesResponseMidocoCrmCampaignItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCampaign) {
+            if (!$getCrmCampaignesResponseMidocoCrmCampaignItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCampaign) {
                 $invalidValues[] = is_object($getCrmCampaignesResponseMidocoCrmCampaignItem) ? get_class($getCrmCampaignesResponseMidocoCrmCampaignItem) : sprintf('%s(%s)', gettype($getCrmCampaignesResponseMidocoCrmCampaignItem), var_export($getCrmCampaignesResponseMidocoCrmCampaignItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmCampaign property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCampaign, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmCampaign property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCampaign, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -79,8 +79,8 @@ class GetCrmCampaignesResponse extends AbstractStructBase
     /**
      * Set MidocoCrmCampaign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCampaign[] $midocoCrmCampaign
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmCampaignesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCampaign[] $midocoCrmCampaign
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmCampaignesResponse
      */
     public function setMidocoCrmCampaign(?array $midocoCrmCampaign = null): self
     {
@@ -95,14 +95,14 @@ class GetCrmCampaignesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmCampaign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCampaign $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmCampaignesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCampaign $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmCampaignesResponse
      */
-    public function addToMidocoCrmCampaign(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCampaign $item): self
+    public function addToMidocoCrmCampaign(\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCampaign $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCampaign) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmCampaign property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmCampaign, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCampaign) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmCampaign property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCampaign, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmCampaign[] = $item;
         
@@ -119,7 +119,7 @@ class GetCrmCampaignesResponse extends AbstractStructBase
     /**
      * Set totalNoOfRecords value
      * @param int $totalNoOfRecords
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmCampaignesResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmCampaignesResponse
      */
     public function setTotalNoOfRecords(?int $totalNoOfRecords = null): self
     {

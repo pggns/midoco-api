@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class SaveCcTokenRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 1
      * - ref: MidocoCcToken
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCcToken[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken[]
      */
     protected array $MidocoCcToken;
     /**
@@ -31,7 +31,7 @@ class SaveCcTokenRequest extends AbstractStructBase
      * Constructor method for SaveCcTokenRequest
      * @uses SaveCcTokenRequest::setMidocoCcToken()
      * @uses SaveCcTokenRequest::setCcMask()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCcToken[] $midocoCcToken
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken[] $midocoCcToken
      * @param string $ccMask
      */
     public function __construct(array $midocoCcToken, ?string $ccMask = null)
@@ -42,7 +42,7 @@ class SaveCcTokenRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCcToken value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCcToken[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken[]
      */
     public function getMidocoCcToken(): array
     {
@@ -63,12 +63,12 @@ class SaveCcTokenRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveCcTokenRequestMidocoCcTokenItem) {
             // validation for constraint: itemType
-            if (!$saveCcTokenRequestMidocoCcTokenItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCcToken) {
+            if (!$saveCcTokenRequestMidocoCcTokenItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken) {
                 $invalidValues[] = is_object($saveCcTokenRequestMidocoCcTokenItem) ? get_class($saveCcTokenRequestMidocoCcTokenItem) : sprintf('%s(%s)', gettype($saveCcTokenRequestMidocoCcTokenItem), var_export($saveCcTokenRequestMidocoCcTokenItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,8 +77,8 @@ class SaveCcTokenRequest extends AbstractStructBase
     /**
      * Set MidocoCcToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCcToken[] $midocoCcToken
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveCcTokenRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken[] $midocoCcToken
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveCcTokenRequest
      */
     public function setMidocoCcToken(array $midocoCcToken): self
     {
@@ -93,14 +93,14 @@ class SaveCcTokenRequest extends AbstractStructBase
     /**
      * Add item to MidocoCcToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCcToken $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveCcTokenRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveCcTokenRequest
      */
-    public function addToMidocoCcToken(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCcToken $item): self
+    public function addToMidocoCcToken(\Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCcToken) {
-            throw new InvalidArgumentException(sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken) {
+            throw new InvalidArgumentException(sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCcToken[] = $item;
         
@@ -117,7 +117,7 @@ class SaveCcTokenRequest extends AbstractStructBase
     /**
      * Set ccMask value
      * @param string $ccMask
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveCcTokenRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveCcTokenRequest
      */
     public function setCcMask(?string $ccMask = null): self
     {

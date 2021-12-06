@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetBookingJournalForRevenueResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBookingJournal
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal[]
      */
     protected ?array $MidocoBookingJournal = null;
     /**
      * Constructor method for GetBookingJournalForRevenueResponse
      * @uses GetBookingJournalForRevenueResponse::setMidocoBookingJournal()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal[] $midocoBookingJournal
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal[] $midocoBookingJournal
      */
     public function __construct(?array $midocoBookingJournal = null)
     {
@@ -34,7 +34,7 @@ class GetBookingJournalForRevenueResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBookingJournal value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal[]
      */
     public function getMidocoBookingJournal(): ?array
     {
@@ -55,12 +55,12 @@ class GetBookingJournalForRevenueResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBookingJournalForRevenueResponseMidocoBookingJournalItem) {
             // validation for constraint: itemType
-            if (!$getBookingJournalForRevenueResponseMidocoBookingJournalItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal) {
+            if (!$getBookingJournalForRevenueResponseMidocoBookingJournalItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal) {
                 $invalidValues[] = is_object($getBookingJournalForRevenueResponseMidocoBookingJournalItem) ? get_class($getBookingJournalForRevenueResponseMidocoBookingJournalItem) : sprintf('%s(%s)', gettype($getBookingJournalForRevenueResponseMidocoBookingJournalItem), var_export($getBookingJournalForRevenueResponseMidocoBookingJournalItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBookingJournal property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBookingJournal property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetBookingJournalForRevenueResponse extends AbstractStructBase
     /**
      * Set MidocoBookingJournal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal[] $midocoBookingJournal
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalForRevenueResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal[] $midocoBookingJournal
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalForRevenueResponse
      */
     public function setMidocoBookingJournal(?array $midocoBookingJournal = null): self
     {
@@ -85,14 +85,14 @@ class GetBookingJournalForRevenueResponse extends AbstractStructBase
     /**
      * Add item to MidocoBookingJournal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalForRevenueResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalForRevenueResponse
      */
-    public function addToMidocoBookingJournal(\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal $item): self
+    public function addToMidocoBookingJournal(\Pggns\MidocoApi\Order\StructType\MidocoBookingJournal $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal) {
-            throw new InvalidArgumentException(sprintf('The MidocoBookingJournal property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal) {
+            throw new InvalidArgumentException(sprintf('The MidocoBookingJournal property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBookingJournal[] = $item;
         

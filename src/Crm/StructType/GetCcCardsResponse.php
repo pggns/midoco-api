@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetCcCardsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmCcCard
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard[]
      */
     protected ?array $MidocoCrmCcCard = null;
     /**
      * Constructor method for GetCcCardsResponse
      * @uses GetCcCardsResponse::setMidocoCrmCcCard()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard[] $midocoCrmCcCard
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard[] $midocoCrmCcCard
      */
     public function __construct(?array $midocoCrmCcCard = null)
     {
@@ -36,7 +36,7 @@ class GetCcCardsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCcCard value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard[]
      */
     public function getMidocoCrmCcCard(): ?array
     {
@@ -57,12 +57,12 @@ class GetCcCardsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCcCardsResponseMidocoCrmCcCardItem) {
             // validation for constraint: itemType
-            if (!$getCcCardsResponseMidocoCrmCcCardItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard) {
+            if (!$getCcCardsResponseMidocoCrmCcCardItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard) {
                 $invalidValues[] = is_object($getCcCardsResponseMidocoCrmCcCardItem) ? get_class($getCcCardsResponseMidocoCrmCcCardItem) : sprintf('%s(%s)', gettype($getCcCardsResponseMidocoCrmCcCardItem), var_export($getCcCardsResponseMidocoCrmCcCardItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmCcCard property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmCcCard property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetCcCardsResponse extends AbstractStructBase
     /**
      * Set MidocoCrmCcCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard[] $midocoCrmCcCard
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCcCardsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard[] $midocoCrmCcCard
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCcCardsResponse
      */
     public function setMidocoCrmCcCard(?array $midocoCrmCcCard = null): self
     {
@@ -87,14 +87,14 @@ class GetCcCardsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmCcCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCcCardsResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCcCardsResponse
      */
-    public function addToMidocoCrmCcCard(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard $item): self
+    public function addToMidocoCrmCcCard(\Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmCcCard property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmCcCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmCcCard property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmCcCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmCcCard[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListCashBookItemTypesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCashBookItemType
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookItemType[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCashBookItemType[]
      */
     protected ?array $MidocoCashBookItemType = null;
     /**
      * Constructor method for ListCashBookItemTypesResponse
      * @uses ListCashBookItemTypesResponse::setMidocoCashBookItemType()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookItemType[] $midocoCashBookItemType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCashBookItemType[] $midocoCashBookItemType
      */
     public function __construct(?array $midocoCashBookItemType = null)
     {
@@ -34,7 +34,7 @@ class ListCashBookItemTypesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCashBookItemType value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookItemType[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCashBookItemType[]
      */
     public function getMidocoCashBookItemType(): ?array
     {
@@ -55,12 +55,12 @@ class ListCashBookItemTypesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listCashBookItemTypesResponseMidocoCashBookItemTypeItem) {
             // validation for constraint: itemType
-            if (!$listCashBookItemTypesResponseMidocoCashBookItemTypeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookItemType) {
+            if (!$listCashBookItemTypesResponseMidocoCashBookItemTypeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoCashBookItemType) {
                 $invalidValues[] = is_object($listCashBookItemTypesResponseMidocoCashBookItemTypeItem) ? get_class($listCashBookItemTypesResponseMidocoCashBookItemTypeItem) : sprintf('%s(%s)', gettype($listCashBookItemTypesResponseMidocoCashBookItemTypeItem), var_export($listCashBookItemTypesResponseMidocoCashBookItemTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCashBookItemType property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookItemType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCashBookItemType property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCashBookItemType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListCashBookItemTypesResponse extends AbstractStructBase
     /**
      * Set MidocoCashBookItemType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookItemType[] $midocoCashBookItemType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ListCashBookItemTypesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCashBookItemType[] $midocoCashBookItemType
+     * @return \Pggns\MidocoApi\Order\StructType\ListCashBookItemTypesResponse
      */
     public function setMidocoCashBookItemType(?array $midocoCashBookItemType = null): self
     {
@@ -85,14 +85,14 @@ class ListCashBookItemTypesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCashBookItemType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookItemType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ListCashBookItemTypesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCashBookItemType $item
+     * @return \Pggns\MidocoApi\Order\StructType\ListCashBookItemTypesResponse
      */
-    public function addToMidocoCashBookItemType(\Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookItemType $item): self
+    public function addToMidocoCashBookItemType(\Pggns\MidocoApi\Order\StructType\MidocoCashBookItemType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookItemType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCashBookItemType property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookItemType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoCashBookItemType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCashBookItemType property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCashBookItemType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCashBookItemType[] = $item;
         

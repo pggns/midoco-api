@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -167,7 +167,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set groupName value
      * @param string $groupName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setGroupName(?string $groupName = null): self
     {
@@ -190,7 +190,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set producer value
      * @param string $producer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setProducer(?string $producer = null): self
     {
@@ -213,7 +213,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setType(?string $type = null): self
     {
@@ -236,7 +236,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set typeId value
      * @param int $typeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setTypeId(?int $typeId = null): self
     {
@@ -259,7 +259,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set doors value
      * @param int $doors
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setDoors(?int $doors = null): self
     {
@@ -282,7 +282,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set seats value
      * @param int $seats
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setSeats(?int $seats = null): self
     {
@@ -305,7 +305,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setPrice(?float $price = null): self
     {
@@ -328,7 +328,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -351,7 +351,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set status value
      * @param int $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setStatus(?int $status = null): self
     {
@@ -374,7 +374,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set adults value
      * @param int $adults
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setAdults(?int $adults = null): self
     {
@@ -397,7 +397,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set supplierName value
      * @param string $supplierName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setSupplierName(?string $supplierName = null): self
     {
@@ -420,7 +420,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set bookLink value
      * @param string $bookLink
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setBookLink(?string $bookLink = null): self
     {
@@ -443,7 +443,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set listLink value
      * @param string $listLink
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setListLink(?string $listLink = null): self
     {
@@ -466,7 +466,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set image value
      * @param string $image
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setImage(?string $image = null): self
     {
@@ -489,7 +489,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setName(?string $name = null): self
     {
@@ -512,7 +512,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set carInformation value
      * @param string $carInformation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setCarInformation(?string $carInformation = null): self
     {
@@ -535,7 +535,7 @@ class CrossSellingCarInfo extends AbstractStructBase
     /**
      * Set carForm value
      * @param string $carForm
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo
      */
     public function setCarForm(?string $carForm = null): self
     {

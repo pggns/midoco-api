@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class ExecuteAgencySettlementLevelResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAgencySettlementLevelBilling
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelBilling[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelBilling[]
      */
     protected ?array $MidocoAgencySettlementLevelBilling = null;
     /**
@@ -28,15 +28,15 @@ class ExecuteAgencySettlementLevelResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAgencySettlementLevelError
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelError[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelError[]
      */
     protected ?array $MidocoAgencySettlementLevelError = null;
     /**
      * Constructor method for ExecuteAgencySettlementLevelResponse
      * @uses ExecuteAgencySettlementLevelResponse::setMidocoAgencySettlementLevelBilling()
      * @uses ExecuteAgencySettlementLevelResponse::setMidocoAgencySettlementLevelError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelBilling[] $midocoAgencySettlementLevelBilling
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelError[] $midocoAgencySettlementLevelError
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelBilling[] $midocoAgencySettlementLevelBilling
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelError[] $midocoAgencySettlementLevelError
      */
     public function __construct(?array $midocoAgencySettlementLevelBilling = null, ?array $midocoAgencySettlementLevelError = null)
     {
@@ -46,7 +46,7 @@ class ExecuteAgencySettlementLevelResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAgencySettlementLevelBilling value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelBilling[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelBilling[]
      */
     public function getMidocoAgencySettlementLevelBilling(): ?array
     {
@@ -67,12 +67,12 @@ class ExecuteAgencySettlementLevelResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $executeAgencySettlementLevelResponseMidocoAgencySettlementLevelBillingItem) {
             // validation for constraint: itemType
-            if (!$executeAgencySettlementLevelResponseMidocoAgencySettlementLevelBillingItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelBilling) {
+            if (!$executeAgencySettlementLevelResponseMidocoAgencySettlementLevelBillingItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelBilling) {
                 $invalidValues[] = is_object($executeAgencySettlementLevelResponseMidocoAgencySettlementLevelBillingItem) ? get_class($executeAgencySettlementLevelResponseMidocoAgencySettlementLevelBillingItem) : sprintf('%s(%s)', gettype($executeAgencySettlementLevelResponseMidocoAgencySettlementLevelBillingItem), var_export($executeAgencySettlementLevelResponseMidocoAgencySettlementLevelBillingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAgencySettlementLevelBilling property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelBilling, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAgencySettlementLevelBilling property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelBilling, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -81,8 +81,8 @@ class ExecuteAgencySettlementLevelResponse extends AbstractStructBase
     /**
      * Set MidocoAgencySettlementLevelBilling value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelBilling[] $midocoAgencySettlementLevelBilling
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementLevelResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelBilling[] $midocoAgencySettlementLevelBilling
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementLevelResponse
      */
     public function setMidocoAgencySettlementLevelBilling(?array $midocoAgencySettlementLevelBilling = null): self
     {
@@ -97,14 +97,14 @@ class ExecuteAgencySettlementLevelResponse extends AbstractStructBase
     /**
      * Add item to MidocoAgencySettlementLevelBilling value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelBilling $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementLevelResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelBilling $item
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementLevelResponse
      */
-    public function addToMidocoAgencySettlementLevelBilling(\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelBilling $item): self
+    public function addToMidocoAgencySettlementLevelBilling(\Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelBilling $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelBilling) {
-            throw new InvalidArgumentException(sprintf('The MidocoAgencySettlementLevelBilling property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelBilling, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelBilling) {
+            throw new InvalidArgumentException(sprintf('The MidocoAgencySettlementLevelBilling property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelBilling, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAgencySettlementLevelBilling[] = $item;
         
@@ -112,7 +112,7 @@ class ExecuteAgencySettlementLevelResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAgencySettlementLevelError value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelError[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelError[]
      */
     public function getMidocoAgencySettlementLevelError(): ?array
     {
@@ -133,12 +133,12 @@ class ExecuteAgencySettlementLevelResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $executeAgencySettlementLevelResponseMidocoAgencySettlementLevelErrorItem) {
             // validation for constraint: itemType
-            if (!$executeAgencySettlementLevelResponseMidocoAgencySettlementLevelErrorItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelError) {
+            if (!$executeAgencySettlementLevelResponseMidocoAgencySettlementLevelErrorItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelError) {
                 $invalidValues[] = is_object($executeAgencySettlementLevelResponseMidocoAgencySettlementLevelErrorItem) ? get_class($executeAgencySettlementLevelResponseMidocoAgencySettlementLevelErrorItem) : sprintf('%s(%s)', gettype($executeAgencySettlementLevelResponseMidocoAgencySettlementLevelErrorItem), var_export($executeAgencySettlementLevelResponseMidocoAgencySettlementLevelErrorItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAgencySettlementLevelError property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelError, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAgencySettlementLevelError property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelError, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,8 +147,8 @@ class ExecuteAgencySettlementLevelResponse extends AbstractStructBase
     /**
      * Set MidocoAgencySettlementLevelError value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelError[] $midocoAgencySettlementLevelError
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementLevelResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelError[] $midocoAgencySettlementLevelError
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementLevelResponse
      */
     public function setMidocoAgencySettlementLevelError(?array $midocoAgencySettlementLevelError = null): self
     {
@@ -163,14 +163,14 @@ class ExecuteAgencySettlementLevelResponse extends AbstractStructBase
     /**
      * Add item to MidocoAgencySettlementLevelError value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelError $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteAgencySettlementLevelResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelError $item
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteAgencySettlementLevelResponse
      */
-    public function addToMidocoAgencySettlementLevelError(\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelError $item): self
+    public function addToMidocoAgencySettlementLevelError(\Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelError $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelError) {
-            throw new InvalidArgumentException(sprintf('The MidocoAgencySettlementLevelError property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencySettlementLevelError, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelError) {
+            throw new InvalidArgumentException(sprintf('The MidocoAgencySettlementLevelError property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAgencySettlementLevelError, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAgencySettlementLevelError[] = $item;
         

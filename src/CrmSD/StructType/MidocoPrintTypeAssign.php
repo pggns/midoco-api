@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoPrintTypeAssign extends PrintTypeAssignDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoPrintTypeAssign
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintTypeAssign
      */
     public function setDescription(?string $description = null): self
     {

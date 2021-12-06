@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class MidocoMailHeaderType extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoMailHeaderType
+     * @return \Pggns\MidocoApi\System\StructType\MidocoMailHeaderType
      */
     public function setName(?string $name = null): self
     {
@@ -74,7 +74,7 @@ class MidocoMailHeaderType extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoMailHeaderType
+     * @return \Pggns\MidocoApi\System\StructType\MidocoMailHeaderType
      */
     public function setValue(?string $value = null): self
     {

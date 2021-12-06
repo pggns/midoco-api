@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchCustomerByCriteriaResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerInformation
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInformation[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInformation[]
      */
     protected ?array $MidocoCustomerInformation = null;
     /**
      * Constructor method for SearchCustomerByCriteriaResponse
      * @uses SearchCustomerByCriteriaResponse::setMidocoCustomerInformation()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInformation[] $midocoCustomerInformation
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInformation[] $midocoCustomerInformation
      */
     public function __construct(?array $midocoCustomerInformation = null)
     {
@@ -34,7 +34,7 @@ class SearchCustomerByCriteriaResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerInformation value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInformation[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInformation[]
      */
     public function getMidocoCustomerInformation(): ?array
     {
@@ -55,12 +55,12 @@ class SearchCustomerByCriteriaResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchCustomerByCriteriaResponseMidocoCustomerInformationItem) {
             // validation for constraint: itemType
-            if (!$searchCustomerByCriteriaResponseMidocoCustomerInformationItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInformation) {
+            if (!$searchCustomerByCriteriaResponseMidocoCustomerInformationItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInformation) {
                 $invalidValues[] = is_object($searchCustomerByCriteriaResponseMidocoCustomerInformationItem) ? get_class($searchCustomerByCriteriaResponseMidocoCustomerInformationItem) : sprintf('%s(%s)', gettype($searchCustomerByCriteriaResponseMidocoCustomerInformationItem), var_export($searchCustomerByCriteriaResponseMidocoCustomerInformationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerInformation property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInformation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerInformation property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInformation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchCustomerByCriteriaResponse extends AbstractStructBase
     /**
      * Set MidocoCustomerInformation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInformation[] $midocoCustomerInformation
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByCriteriaResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInformation[] $midocoCustomerInformation
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerByCriteriaResponse
      */
     public function setMidocoCustomerInformation(?array $midocoCustomerInformation = null): self
     {
@@ -85,14 +85,14 @@ class SearchCustomerByCriteriaResponse extends AbstractStructBase
     /**
      * Add item to MidocoCustomerInformation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInformation $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByCriteriaResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInformation $item
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerByCriteriaResponse
      */
-    public function addToMidocoCustomerInformation(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInformation $item): self
+    public function addToMidocoCustomerInformation(\Pggns\MidocoApi\Crm\StructType\MidocoCustomerInformation $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInformation) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerInformation property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerInformation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInformation) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerInformation property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCustomerInformation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerInformation[] = $item;
         

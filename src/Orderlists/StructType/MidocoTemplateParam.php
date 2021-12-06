@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoTemplateParam extends AbstractStructBase
     /**
      * Set paramName value
      * @param string $paramName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTemplateParam
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTemplateParam
      */
     public function setParamName(?string $paramName = null): self
     {
@@ -70,7 +70,7 @@ class MidocoTemplateParam extends AbstractStructBase
     /**
      * Set paramValue value
      * @param string $paramValue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTemplateParam
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTemplateParam
      */
     public function setParamValue(?string $paramValue = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -391,7 +391,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set accountPosition value
      * @param int $accountPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setAccountPosition(?int $accountPosition = null): self
     {
@@ -414,7 +414,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set automaticVat value
      * @param bool $automaticVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setAutomaticVat(?bool $automaticVat = null): self
     {
@@ -437,7 +437,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set bookingAmount value
      * @param float $bookingAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setBookingAmount(?float $bookingAmount = null): self
     {
@@ -460,7 +460,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set bookingText value
      * @param string $bookingText
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setBookingText(?string $bookingText = null): self
     {
@@ -483,7 +483,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set bookingType value
      * @param string $bookingType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setBookingType(?string $bookingType = null): self
     {
@@ -506,7 +506,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -529,7 +529,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set costUnit value
      * @param string $costUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setCostUnit(?string $costUnit = null): self
     {
@@ -552,7 +552,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -575,7 +575,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set creditEntry value
      * @param string $creditEntry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setCreditEntry(?string $creditEntry = null): self
     {
@@ -598,7 +598,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -621,7 +621,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -644,7 +644,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set debitEntry value
      * @param string $debitEntry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setDebitEntry(?string $debitEntry = null): self
     {
@@ -667,7 +667,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set entryAmount value
      * @param float $entryAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setEntryAmount(?float $entryAmount = null): self
     {
@@ -690,7 +690,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set exchangeRate value
      * @param float $exchangeRate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setExchangeRate(?float $exchangeRate = null): self
     {
@@ -713,7 +713,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set isBooked value
      * @param bool $isBooked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setIsBooked(?bool $isBooked = null): self
     {
@@ -736,7 +736,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -759,7 +759,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set isPreAccounted value
      * @param bool $isPreAccounted
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setIsPreAccounted(?bool $isPreAccounted = null): self
     {
@@ -782,7 +782,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set journalId value
      * @param int $journalId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setJournalId(?int $journalId = null): self
     {
@@ -805,7 +805,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set journalPosition value
      * @param int $journalPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setJournalPosition(?int $journalPosition = null): self
     {
@@ -828,7 +828,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set originalAmount value
      * @param float $originalAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setOriginalAmount(?float $originalAmount = null): self
     {
@@ -851,7 +851,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -874,7 +874,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set originalEntryAmount value
      * @param float $originalEntryAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setOriginalEntryAmount(?float $originalEntryAmount = null): self
     {
@@ -897,7 +897,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -920,7 +920,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set protocolId value
      * @param int $protocolId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setProtocolId(?int $protocolId = null): self
     {
@@ -943,7 +943,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set provCostCentre value
      * @param string $provCostCentre
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setProvCostCentre(?string $provCostCentre = null): self
     {
@@ -966,7 +966,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set provInsuranceAccount value
      * @param string $provInsuranceAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setProvInsuranceAccount(?string $provInsuranceAccount = null): self
     {
@@ -989,7 +989,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set provItemId value
      * @param int $provItemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setProvItemId(?int $provItemId = null): self
     {
@@ -1012,7 +1012,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set provReceiptDate value
      * @param string $provReceiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setProvReceiptDate(?string $provReceiptDate = null): self
     {
@@ -1035,7 +1035,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set provReceiptNo value
      * @param string $provReceiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setProvReceiptNo(?string $provReceiptNo = null): self
     {
@@ -1058,7 +1058,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set provWovatAccount value
      * @param string $provWovatAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setProvWovatAccount(?string $provWovatAccount = null): self
     {
@@ -1081,7 +1081,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set provWvatAccount value
      * @param string $provWvatAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setProvWvatAccount(?string $provWvatAccount = null): self
     {
@@ -1104,7 +1104,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set provinsurance value
      * @param float $provinsurance
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setProvinsurance(?float $provinsurance = null): self
     {
@@ -1127,7 +1127,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set provwovatamount value
      * @param float $provwovatamount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setProvwovatamount(?float $provwovatamount = null): self
     {
@@ -1150,7 +1150,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set provwvatamount value
      * @param float $provwvatamount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setProvwvatamount(?float $provwvatamount = null): self
     {
@@ -1173,7 +1173,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set receiptDate value
      * @param string $receiptDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setReceiptDate(?string $receiptDate = null): self
     {
@@ -1196,7 +1196,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -1219,7 +1219,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set receiptSend value
      * @param bool $receiptSend
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setReceiptSend(?bool $receiptSend = null): self
     {
@@ -1242,7 +1242,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set revenueId value
      * @param int $revenueId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setRevenueId(?int $revenueId = null): self
     {
@@ -1265,7 +1265,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setSettlementType(?string $settlementType = null): self
     {
@@ -1288,7 +1288,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set skontoAmount value
      * @param float $skontoAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setSkontoAmount(?float $skontoAmount = null): self
     {
@@ -1311,7 +1311,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set skontoVatAmount value
      * @param float $skontoVatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setSkontoVatAmount(?float $skontoVatAmount = null): self
     {
@@ -1334,7 +1334,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set statementId value
      * @param int $statementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setStatementId(?int $statementId = null): self
     {
@@ -1357,7 +1357,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -1380,7 +1380,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -1403,7 +1403,7 @@ class BankBookingJournalDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankBookingJournalDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankBookingJournalDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

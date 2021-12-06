@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\ServiceType;
+namespace Pggns\MidocoApi\CrmSD\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Actualize extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\CrmSD\ServiceType\Actualize
+     * @return \Pggns\MidocoApi\CrmSD\ServiceType\Actualize
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Actualize extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerContactDataRequest $paramActualizeCustomerContactDataRequest
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerContactDataResponse|bool
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerContactDataRequest $paramActualizeCustomerContactDataRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerContactDataResponse|bool
      */
-    public function actualizeCustomerContactData(\Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerContactDataRequest $paramActualizeCustomerContactDataRequest)
+    public function actualizeCustomerContactData(\Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerContactDataRequest $paramActualizeCustomerContactDataRequest)
     {
         try {
             $this->setResult($resultActualizeCustomerContactData = $this->getSoapClient()->__soapCall('actualizeCustomerContactData', [
@@ -56,7 +56,7 @@ class Actualize extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ActualizeCustomerContactDataResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ActualizeCustomerContactDataResponse
      */
     public function getResult()
     {

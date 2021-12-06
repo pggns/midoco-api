@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class MediatorAttrListType extends AbstractStructBase
      * Set mediatorAttr value
      * @throws InvalidArgumentException
      * @param string[] $mediatorAttr
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorAttrListType
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorAttrListType
      */
     public function setMediatorAttr(?array $mediatorAttr = null): self
     {
@@ -85,7 +85,7 @@ class MediatorAttrListType extends AbstractStructBase
      * Add item to mediatorAttr value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorAttrListType
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorAttrListType
      */
     public function addToMediatorAttr(string $item): self
     {

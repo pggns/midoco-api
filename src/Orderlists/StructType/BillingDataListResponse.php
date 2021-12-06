@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,15 +18,15 @@ class BillingDataListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListSumsType
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType
      */
-    protected \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListSumsType $MidocoBillingDataListSums;
+    protected \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $MidocoBillingDataListSums;
     /**
      * The MidocoBillingDataList
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType[]
      */
     protected ?array $MidocoBillingDataList = null;
     /**
@@ -34,7 +34,7 @@ class BillingDataListResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\CdfTitle[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\CdfTitle[]
      */
     protected ?array $CdfTitle = null;
     /**
@@ -50,12 +50,12 @@ class BillingDataListResponse extends AbstractStructBase
      * @uses BillingDataListResponse::setMidocoBillingDataList()
      * @uses BillingDataListResponse::setCdfTitle()
      * @uses BillingDataListResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType[] $midocoBillingDataList
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CdfTitle[] $cdfTitle
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType[] $midocoBillingDataList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CdfTitle[] $cdfTitle
      * @param int $noOfResults
      */
-    public function __construct(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums, ?array $midocoBillingDataList = null, ?array $cdfTitle = null, ?int $noOfResults = null)
+    public function __construct(\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums, ?array $midocoBillingDataList = null, ?array $cdfTitle = null, ?int $noOfResults = null)
     {
         $this
             ->setMidocoBillingDataListSums($midocoBillingDataListSums)
@@ -65,18 +65,18 @@ class BillingDataListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingDataListSums value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListSumsType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType
      */
-    public function getMidocoBillingDataListSums(): \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListSumsType
+    public function getMidocoBillingDataListSums(): \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType
     {
         return $this->MidocoBillingDataListSums;
     }
     /**
      * Set MidocoBillingDataListSums value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDataListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDataListResponse
      */
-    public function setMidocoBillingDataListSums(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums): self
+    public function setMidocoBillingDataListSums(\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums): self
     {
         $this->MidocoBillingDataListSums = $midocoBillingDataListSums;
         
@@ -84,7 +84,7 @@ class BillingDataListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingDataList value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType[]
      */
     public function getMidocoBillingDataList(): ?array
     {
@@ -105,12 +105,12 @@ class BillingDataListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $billingDataListResponseMidocoBillingDataListItem) {
             // validation for constraint: itemType
-            if (!$billingDataListResponseMidocoBillingDataListItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType) {
+            if (!$billingDataListResponseMidocoBillingDataListItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType) {
                 $invalidValues[] = is_object($billingDataListResponseMidocoBillingDataListItem) ? get_class($billingDataListResponseMidocoBillingDataListItem) : sprintf('%s(%s)', gettype($billingDataListResponseMidocoBillingDataListItem), var_export($billingDataListResponseMidocoBillingDataListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingDataList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingDataList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -119,8 +119,8 @@ class BillingDataListResponse extends AbstractStructBase
     /**
      * Set MidocoBillingDataList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType[] $midocoBillingDataList
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDataListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType[] $midocoBillingDataList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDataListResponse
      */
     public function setMidocoBillingDataList(?array $midocoBillingDataList = null): self
     {
@@ -135,14 +135,14 @@ class BillingDataListResponse extends AbstractStructBase
     /**
      * Add item to MidocoBillingDataList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDataListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDataListResponse
      */
-    public function addToMidocoBillingDataList(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType $item): self
+    public function addToMidocoBillingDataList(\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingDataList property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingDataListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingDataList property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingDataList[] = $item;
         
@@ -150,7 +150,7 @@ class BillingDataListResponse extends AbstractStructBase
     }
     /**
      * Get CdfTitle value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CdfTitle[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CdfTitle[]
      */
     public function getCdfTitle(): ?array
     {
@@ -171,12 +171,12 @@ class BillingDataListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $billingDataListResponseCdfTitleItem) {
             // validation for constraint: itemType
-            if (!$billingDataListResponseCdfTitleItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\CdfTitle) {
+            if (!$billingDataListResponseCdfTitleItem instanceof \Pggns\MidocoApi\Orderlists\StructType\CdfTitle) {
                 $invalidValues[] = is_object($billingDataListResponseCdfTitleItem) ? get_class($billingDataListResponseCdfTitleItem) : sprintf('%s(%s)', gettype($billingDataListResponseCdfTitleItem), var_export($billingDataListResponseCdfTitleItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CdfTitle property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\CdfTitle, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CdfTitle property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\CdfTitle, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -185,8 +185,8 @@ class BillingDataListResponse extends AbstractStructBase
     /**
      * Set CdfTitle value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CdfTitle[] $cdfTitle
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDataListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CdfTitle[] $cdfTitle
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDataListResponse
      */
     public function setCdfTitle(?array $cdfTitle = null): self
     {
@@ -201,14 +201,14 @@ class BillingDataListResponse extends AbstractStructBase
     /**
      * Add item to CdfTitle value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CdfTitle $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDataListResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CdfTitle $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDataListResponse
      */
-    public function addToCdfTitle(\Pggns\MidocoApi\Api\Orderlists\StructType\CdfTitle $item): self
+    public function addToCdfTitle(\Pggns\MidocoApi\Orderlists\StructType\CdfTitle $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\CdfTitle) {
-            throw new InvalidArgumentException(sprintf('The CdfTitle property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\CdfTitle, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\CdfTitle) {
+            throw new InvalidArgumentException(sprintf('The CdfTitle property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\CdfTitle, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CdfTitle[] = $item;
         
@@ -225,7 +225,7 @@ class BillingDataListResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDataListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDataListResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

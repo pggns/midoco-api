@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class AttributeDefinitionLocalDTO extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -94,7 +94,7 @@ class AttributeDefinitionLocalDTO extends AbstractStructBase
     /**
      * Set contextId value
      * @param string $contextId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO
      */
     public function setContextId(?string $contextId = null): self
     {
@@ -117,7 +117,7 @@ class AttributeDefinitionLocalDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -140,7 +140,7 @@ class AttributeDefinitionLocalDTO extends AbstractStructBase
     /**
      * Set localization value
      * @param string $localization
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO
      */
     public function setLocalization(?string $localization = null): self
     {
@@ -163,7 +163,7 @@ class AttributeDefinitionLocalDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AttributeDefinitionLocalDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\AttributeDefinitionLocalDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

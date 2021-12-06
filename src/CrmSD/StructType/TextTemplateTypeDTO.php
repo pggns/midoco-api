@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class TextTemplateTypeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateTypeDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -70,7 +70,7 @@ class TextTemplateTypeDTO extends AbstractStructBase
     /**
      * Set templateId value
      * @param string $templateId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TextTemplateTypeDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeDTO
      */
     public function setTemplateId(?string $templateId = null): self
     {

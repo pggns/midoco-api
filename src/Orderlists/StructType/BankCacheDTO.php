@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class BankCacheDTO extends AbstractStructBase
     /**
      * Set automaticBooking value
      * @param bool $automaticBooking
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankCacheDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankCacheDTO
      */
     public function setAutomaticBooking(?bool $automaticBooking = null): self
     {
@@ -134,7 +134,7 @@ class BankCacheDTO extends AbstractStructBase
     /**
      * Set cacheId value
      * @param int $cacheId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankCacheDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankCacheDTO
      */
     public function setCacheId(?int $cacheId = null): self
     {
@@ -157,7 +157,7 @@ class BankCacheDTO extends AbstractStructBase
     /**
      * Set feeType value
      * @param string $feeType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankCacheDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankCacheDTO
      */
     public function setFeeType(?string $feeType = null): self
     {
@@ -180,7 +180,7 @@ class BankCacheDTO extends AbstractStructBase
     /**
      * Set infoAccountNo value
      * @param string $infoAccountNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankCacheDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankCacheDTO
      */
     public function setInfoAccountNo(?string $infoAccountNo = null): self
     {
@@ -203,7 +203,7 @@ class BankCacheDTO extends AbstractStructBase
     /**
      * Set infoBankNo value
      * @param string $infoBankNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankCacheDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankCacheDTO
      */
     public function setInfoBankNo(?string $infoBankNo = null): self
     {
@@ -226,7 +226,7 @@ class BankCacheDTO extends AbstractStructBase
     /**
      * Set matchAccountNo value
      * @param string $matchAccountNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankCacheDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankCacheDTO
      */
     public function setMatchAccountNo(?string $matchAccountNo = null): self
     {
@@ -249,7 +249,7 @@ class BankCacheDTO extends AbstractStructBase
     /**
      * Set matchAmount value
      * @param float $matchAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankCacheDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankCacheDTO
      */
     public function setMatchAmount(?float $matchAmount = null): self
     {
@@ -272,7 +272,7 @@ class BankCacheDTO extends AbstractStructBase
     /**
      * Set matchDebitCredit value
      * @param string $matchDebitCredit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankCacheDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankCacheDTO
      */
     public function setMatchDebitCredit(?string $matchDebitCredit = null): self
     {
@@ -295,7 +295,7 @@ class BankCacheDTO extends AbstractStructBase
     /**
      * Set matchText value
      * @param string $matchText
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankCacheDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankCacheDTO
      */
     public function setMatchText(?string $matchText = null): self
     {
@@ -318,7 +318,7 @@ class BankCacheDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankCacheDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankCacheDTO
      */
     public function setType(?string $type = null): self
     {

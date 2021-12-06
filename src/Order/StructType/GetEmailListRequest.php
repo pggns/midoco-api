@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -81,7 +81,7 @@ class GetEmailListRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailListRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailListRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -104,7 +104,7 @@ class GetEmailListRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailListRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailListRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -127,7 +127,7 @@ class GetEmailListRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailListRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailListRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -150,7 +150,7 @@ class GetEmailListRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailListRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailListRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -173,7 +173,7 @@ class GetEmailListRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailListRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailListRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {

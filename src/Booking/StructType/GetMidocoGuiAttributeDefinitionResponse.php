@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoGuiAttributeDefinitionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoGuiAttributeDefinition
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\GuiAttributeDefinitionDTO[]
+     * @var \Pggns\MidocoApi\Booking\StructType\GuiAttributeDefinitionDTO[]
      */
     protected ?array $MidocoGuiAttributeDefinition = null;
     /**
      * Constructor method for GetMidocoGuiAttributeDefinitionResponse
      * @uses GetMidocoGuiAttributeDefinitionResponse::setMidocoGuiAttributeDefinition()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\GuiAttributeDefinitionDTO[] $midocoGuiAttributeDefinition
+     * @param \Pggns\MidocoApi\Booking\StructType\GuiAttributeDefinitionDTO[] $midocoGuiAttributeDefinition
      */
     public function __construct(?array $midocoGuiAttributeDefinition = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoGuiAttributeDefinitionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoGuiAttributeDefinition value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GuiAttributeDefinitionDTO[]
+     * @return \Pggns\MidocoApi\Booking\StructType\GuiAttributeDefinitionDTO[]
      */
     public function getMidocoGuiAttributeDefinition(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoGuiAttributeDefinitionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoGuiAttributeDefinitionResponseMidocoGuiAttributeDefinitionItem) {
             // validation for constraint: itemType
-            if (!$getMidocoGuiAttributeDefinitionResponseMidocoGuiAttributeDefinitionItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\GuiAttributeDefinitionDTO) {
+            if (!$getMidocoGuiAttributeDefinitionResponseMidocoGuiAttributeDefinitionItem instanceof \Pggns\MidocoApi\Booking\StructType\GuiAttributeDefinitionDTO) {
                 $invalidValues[] = is_object($getMidocoGuiAttributeDefinitionResponseMidocoGuiAttributeDefinitionItem) ? get_class($getMidocoGuiAttributeDefinitionResponseMidocoGuiAttributeDefinitionItem) : sprintf('%s(%s)', gettype($getMidocoGuiAttributeDefinitionResponseMidocoGuiAttributeDefinitionItem), var_export($getMidocoGuiAttributeDefinitionResponseMidocoGuiAttributeDefinitionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoGuiAttributeDefinition property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\GuiAttributeDefinitionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoGuiAttributeDefinition property can only contain items of type \Pggns\MidocoApi\Booking\StructType\GuiAttributeDefinitionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoGuiAttributeDefinitionResponse extends AbstractStructBase
     /**
      * Set MidocoGuiAttributeDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\GuiAttributeDefinitionDTO[] $midocoGuiAttributeDefinition
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetMidocoGuiAttributeDefinitionResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\GuiAttributeDefinitionDTO[] $midocoGuiAttributeDefinition
+     * @return \Pggns\MidocoApi\Booking\StructType\GetMidocoGuiAttributeDefinitionResponse
      */
     public function setMidocoGuiAttributeDefinition(?array $midocoGuiAttributeDefinition = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoGuiAttributeDefinitionResponse extends AbstractStructBase
     /**
      * Add item to MidocoGuiAttributeDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\GuiAttributeDefinitionDTO $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetMidocoGuiAttributeDefinitionResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\GuiAttributeDefinitionDTO $item
+     * @return \Pggns\MidocoApi\Booking\StructType\GetMidocoGuiAttributeDefinitionResponse
      */
-    public function addToMidocoGuiAttributeDefinition(\Pggns\MidocoApi\Api\Booking\StructType\GuiAttributeDefinitionDTO $item): self
+    public function addToMidocoGuiAttributeDefinition(\Pggns\MidocoApi\Booking\StructType\GuiAttributeDefinitionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\GuiAttributeDefinitionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoGuiAttributeDefinition property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\GuiAttributeDefinitionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\GuiAttributeDefinitionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoGuiAttributeDefinition property can only contain items of type \Pggns\MidocoApi\Booking\StructType\GuiAttributeDefinitionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoGuiAttributeDefinition[] = $item;
         

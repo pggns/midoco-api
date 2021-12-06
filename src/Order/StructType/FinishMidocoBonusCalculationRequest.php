@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class FinishMidocoBonusCalculationRequest extends AbstractStructBase
     /**
      * Set bonusId value
      * @param int $bonusId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FinishMidocoBonusCalculationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\FinishMidocoBonusCalculationRequest
      */
     public function setBonusId(?int $bonusId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class SearchMisReportRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoMisReport
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoMisReport|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport $MidocoMisReport = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoMisReport $MidocoMisReport = null;
     /**
      * The cubeName
      * @var string|null
@@ -30,10 +30,10 @@ class SearchMisReportRequest extends AbstractStructBase
      * Constructor method for SearchMisReportRequest
      * @uses SearchMisReportRequest::setMidocoMisReport()
      * @uses SearchMisReportRequest::setCubeName()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport $midocoMisReport
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisReport $midocoMisReport
      * @param string $cubeName
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport $midocoMisReport = null, ?string $cubeName = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MidocoMisReport $midocoMisReport = null, ?string $cubeName = null)
     {
         $this
             ->setMidocoMisReport($midocoMisReport)
@@ -41,18 +41,18 @@ class SearchMisReportRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMisReport value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoMisReport|null
      */
-    public function getMidocoMisReport(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport
+    public function getMidocoMisReport(): ?\Pggns\MidocoApi\Mis\StructType\MidocoMisReport
     {
         return $this->MidocoMisReport;
     }
     /**
      * Set MidocoMisReport value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport $midocoMisReport
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchMisReportRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMisReport $midocoMisReport
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchMisReportRequest
      */
-    public function setMidocoMisReport(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoMisReport $midocoMisReport = null): self
+    public function setMidocoMisReport(?\Pggns\MidocoApi\Mis\StructType\MidocoMisReport $midocoMisReport = null): self
     {
         $this->MidocoMisReport = $midocoMisReport;
         
@@ -69,7 +69,7 @@ class SearchMisReportRequest extends AbstractStructBase
     /**
      * Set cubeName value
      * @param string $cubeName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchMisReportRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchMisReportRequest
      */
     public function setCubeName(?string $cubeName = null): self
     {

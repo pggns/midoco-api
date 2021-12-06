@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -134,7 +134,7 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -157,7 +157,7 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -180,7 +180,7 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -203,7 +203,7 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -226,7 +226,7 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem
      */
     public function setStatus(?string $status = null): self
     {
@@ -249,7 +249,7 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
     /**
      * Set inkassoPrice value
      * @param float $inkassoPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem
      */
     public function setInkassoPrice(?float $inkassoPrice = null): self
     {
@@ -272,7 +272,7 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
     /**
      * Set openInkassoPrice value
      * @param float $openInkassoPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem
      */
     public function setOpenInkassoPrice(?float $openInkassoPrice = null): self
     {
@@ -295,7 +295,7 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
     /**
      * Set diAmount value
      * @param float $diAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem
      */
     public function setDiAmount(?float $diAmount = null): self
     {
@@ -318,7 +318,7 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
     /**
      * Set paid value
      * @param bool $paid
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem
      */
     public function setPaid(?bool $paid = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SupplierChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -78,7 +78,7 @@ class SupplierChangeLogDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierChangeLogDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -101,7 +101,7 @@ class SupplierChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SupplierChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SupplierChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {

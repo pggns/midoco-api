@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetBankAccounts4OrgUnitRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetBankAccounts4OrgUnitRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetBankAccounts4OrgUnitRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

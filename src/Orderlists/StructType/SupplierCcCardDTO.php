@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class SupplierCcCardDTO extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierCcCardDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierCcCardDTO
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -94,7 +94,7 @@ class SupplierCcCardDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierCcCardDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierCcCardDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -117,7 +117,7 @@ class SupplierCcCardDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierCcCardDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierCcCardDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -140,7 +140,7 @@ class SupplierCcCardDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierCcCardDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierCcCardDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -163,7 +163,7 @@ class SupplierCcCardDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierCcCardDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierCcCardDTO
      */
     public function setValidTo(?string $validTo = null): self
     {

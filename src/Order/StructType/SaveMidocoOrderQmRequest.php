@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoOrderQmRequest extends AbstractStructBase
      * The MidocoOrderQm
      * Meta information extracted from the WSDL
      * - ref: MidocoOrderQm
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderQm|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm $MidocoOrderQm = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderQm $MidocoOrderQm = null;
     /**
      * Constructor method for SaveMidocoOrderQmRequest
      * @uses SaveMidocoOrderQmRequest::setMidocoOrderQm()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm $midocoOrderQm
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderQm $midocoOrderQm
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm $midocoOrderQm = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderQm $midocoOrderQm = null)
     {
         $this
             ->setMidocoOrderQm($midocoOrderQm);
     }
     /**
      * Get MidocoOrderQm value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderQm|null
      */
-    public function getMidocoOrderQm(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm
+    public function getMidocoOrderQm(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderQm
     {
         return $this->MidocoOrderQm;
     }
     /**
      * Set MidocoOrderQm value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm $midocoOrderQm
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMidocoOrderQmRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderQm $midocoOrderQm
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMidocoOrderQmRequest
      */
-    public function setMidocoOrderQm(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderQm $midocoOrderQm = null): self
+    public function setMidocoOrderQm(?\Pggns\MidocoApi\Order\StructType\MidocoOrderQm $midocoOrderQm = null): self
     {
         $this->MidocoOrderQm = $midocoOrderQm;
         

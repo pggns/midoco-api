@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -77,7 +77,7 @@ class FlightMealType extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightMealType
+     * @return \Pggns\MidocoApi\Order\StructType\FlightMealType
      */
     public function setCode(?string $code = null): self
     {
@@ -100,7 +100,7 @@ class FlightMealType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightMealType
+     * @return \Pggns\MidocoApi\Order\StructType\FlightMealType
      */
     public function setDescription(?string $description = null): self
     {
@@ -123,7 +123,7 @@ class FlightMealType extends AbstractStructBase
     /**
      * Set person_assignment value
      * @param string $person_assignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightMealType
+     * @return \Pggns\MidocoApi\Order\StructType\FlightMealType
      */
     public function setPerson_assignment(?string $person_assignment = null): self
     {
@@ -146,7 +146,7 @@ class FlightMealType extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightMealType
+     * @return \Pggns\MidocoApi\Order\StructType\FlightMealType
      */
     public function setStatus(?string $status = null): self
     {
@@ -169,7 +169,7 @@ class FlightMealType extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\FlightMealType
+     * @return \Pggns\MidocoApi\Order\StructType\FlightMealType
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {

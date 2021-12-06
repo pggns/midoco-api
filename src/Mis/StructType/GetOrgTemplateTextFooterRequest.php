@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetOrgTemplateTextFooterRequest extends AbstractStructBase
     /**
      * Set printTypeId value
      * @param string $printTypeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetOrgTemplateTextFooterRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetOrgTemplateTextFooterRequest
      */
     public function setPrintTypeId(?string $printTypeId = null): self
     {
@@ -70,7 +70,7 @@ class GetOrgTemplateTextFooterRequest extends AbstractStructBase
     /**
      * Set orgunitName value
      * @param string $orgunitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetOrgTemplateTextFooterRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetOrgTemplateTextFooterRequest
      */
     public function setOrgunitName(?string $orgunitName = null): self
     {

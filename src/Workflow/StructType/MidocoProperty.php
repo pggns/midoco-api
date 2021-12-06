@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoProperty extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVisibleClass
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoVisibleClass[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoVisibleClass[]
      */
     protected ?array $MidocoVisibleClass = null;
     /**
@@ -31,7 +31,7 @@ class MidocoProperty extends AbstractStructBase
      * Constructor method for MidocoProperty
      * @uses MidocoProperty::setMidocoVisibleClass()
      * @uses MidocoProperty::setUnitName()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoVisibleClass[] $midocoVisibleClass
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoVisibleClass[] $midocoVisibleClass
      * @param string $unitName
      */
     public function __construct(?array $midocoVisibleClass = null, ?string $unitName = null)
@@ -42,7 +42,7 @@ class MidocoProperty extends AbstractStructBase
     }
     /**
      * Get MidocoVisibleClass value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoVisibleClass[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoVisibleClass[]
      */
     public function getMidocoVisibleClass(): ?array
     {
@@ -63,12 +63,12 @@ class MidocoProperty extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoPropertyMidocoVisibleClassItem) {
             // validation for constraint: itemType
-            if (!$midocoPropertyMidocoVisibleClassItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoVisibleClass) {
+            if (!$midocoPropertyMidocoVisibleClassItem instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoVisibleClass) {
                 $invalidValues[] = is_object($midocoPropertyMidocoVisibleClassItem) ? get_class($midocoPropertyMidocoVisibleClassItem) : sprintf('%s(%s)', gettype($midocoPropertyMidocoVisibleClassItem), var_export($midocoPropertyMidocoVisibleClassItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVisibleClass property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoVisibleClass, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVisibleClass property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoVisibleClass, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,8 +77,8 @@ class MidocoProperty extends AbstractStructBase
     /**
      * Set MidocoVisibleClass value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoVisibleClass[] $midocoVisibleClass
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoProperty
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoVisibleClass[] $midocoVisibleClass
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoProperty
      */
     public function setMidocoVisibleClass(?array $midocoVisibleClass = null): self
     {
@@ -93,14 +93,14 @@ class MidocoProperty extends AbstractStructBase
     /**
      * Add item to MidocoVisibleClass value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoVisibleClass $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoProperty
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoVisibleClass $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoProperty
      */
-    public function addToMidocoVisibleClass(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoVisibleClass $item): self
+    public function addToMidocoVisibleClass(\Pggns\MidocoApi\Workflow\StructType\MidocoVisibleClass $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoVisibleClass) {
-            throw new InvalidArgumentException(sprintf('The MidocoVisibleClass property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoVisibleClass, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoVisibleClass) {
+            throw new InvalidArgumentException(sprintf('The MidocoVisibleClass property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoVisibleClass, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVisibleClass[] = $item;
         
@@ -117,7 +117,7 @@ class MidocoProperty extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoProperty
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoProperty
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Create extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Create
+     * @return \Pggns\MidocoApi\Order\ServiceType\Create
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest $paramCreateBillingPrintjobRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest $paramCreateBillingPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse|bool
      */
-    public function createBillingPrintjob(\Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobRequest $paramCreateBillingPrintjobRequest)
+    public function createBillingPrintjob(\Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobRequest $paramCreateBillingPrintjobRequest)
     {
         try {
             $this->setResult($resultCreateBillingPrintjob = $this->getSoapClient()->__soapCall('createBillingPrintjob', [
@@ -58,15 +58,15 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobRequest $paramCreateTravelPlanPrintjobRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobRequest $paramCreateTravelPlanPrintjobRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobResponse|bool
      */
-    public function createTravelPlanPrintjob(\Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobRequest $paramCreateTravelPlanPrintjobRequest)
+    public function createTravelPlanPrintjob(\Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobRequest $paramCreateTravelPlanPrintjobRequest)
     {
         try {
             $this->setResult($resultCreateTravelPlanPrintjob = $this->getSoapClient()->__soapCall('createTravelPlanPrintjob', [
@@ -85,15 +85,15 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreateSupplierMessageRequest $paramCreateSupplierMessageRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateSupplierMessageResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CreateSupplierMessageRequest $paramCreateSupplierMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateSupplierMessageResponse|bool
      */
-    public function createSupplierMessage(\Pggns\MidocoApi\Api\Order\StructType\CreateSupplierMessageRequest $paramCreateSupplierMessageRequest)
+    public function createSupplierMessage(\Pggns\MidocoApi\Order\StructType\CreateSupplierMessageRequest $paramCreateSupplierMessageRequest)
     {
         try {
             $this->setResult($resultCreateSupplierMessage = $this->getSoapClient()->__soapCall('createSupplierMessage', [
@@ -112,15 +112,15 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreateVermiLinkRequest $paramCreateVermiLinkRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateVermiLinkResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CreateVermiLinkRequest $paramCreateVermiLinkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateVermiLinkResponse|bool
      */
-    public function createVermiLink(\Pggns\MidocoApi\Api\Order\StructType\CreateVermiLinkRequest $paramCreateVermiLinkRequest)
+    public function createVermiLink(\Pggns\MidocoApi\Order\StructType\CreateVermiLinkRequest $paramCreateVermiLinkRequest)
     {
         try {
             $this->setResult($resultCreateVermiLink = $this->getSoapClient()->__soapCall('createVermiLink', [
@@ -139,15 +139,15 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreateAcconLinkRequest $paramCreateAcconLinkRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateAcconLinkResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CreateAcconLinkRequest $paramCreateAcconLinkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateAcconLinkResponse|bool
      */
-    public function createAcconLink(\Pggns\MidocoApi\Api\Order\StructType\CreateAcconLinkRequest $paramCreateAcconLinkRequest)
+    public function createAcconLink(\Pggns\MidocoApi\Order\StructType\CreateAcconLinkRequest $paramCreateAcconLinkRequest)
     {
         try {
             $this->setResult($resultCreateAcconLink = $this->getSoapClient()->__soapCall('createAcconLink', [
@@ -167,15 +167,15 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreateExternDocument4BillingDocumentRequest $paramCreateExternDocument4BillingDocumentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateExternDocument4BillingDocumentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CreateExternDocument4BillingDocumentRequest $paramCreateExternDocument4BillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateExternDocument4BillingDocumentResponse|bool
      */
-    public function createExternDocument4BillingDocument(\Pggns\MidocoApi\Api\Order\StructType\CreateExternDocument4BillingDocumentRequest $paramCreateExternDocument4BillingDocumentRequest)
+    public function createExternDocument4BillingDocument(\Pggns\MidocoApi\Order\StructType\CreateExternDocument4BillingDocumentRequest $paramCreateExternDocument4BillingDocumentRequest)
     {
         try {
             $this->setResult($resultCreateExternDocument4BillingDocument = $this->getSoapClient()->__soapCall('createExternDocument4BillingDocument', [
@@ -194,15 +194,15 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreateAutomaticOrderNoticeRequest $paramCreateAutomaticOrderNoticeRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateAutomaticOrderNoticeResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CreateAutomaticOrderNoticeRequest $paramCreateAutomaticOrderNoticeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateAutomaticOrderNoticeResponse|bool
      */
-    public function createAutomaticOrderNotice(\Pggns\MidocoApi\Api\Order\StructType\CreateAutomaticOrderNoticeRequest $paramCreateAutomaticOrderNoticeRequest)
+    public function createAutomaticOrderNotice(\Pggns\MidocoApi\Order\StructType\CreateAutomaticOrderNoticeRequest $paramCreateAutomaticOrderNoticeRequest)
     {
         try {
             $this->setResult($resultCreateAutomaticOrderNotice = $this->getSoapClient()->__soapCall('createAutomaticOrderNotice', [
@@ -221,15 +221,15 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreateVatCorrectionBillingDocumentRequest $paramCreateVatCorrectionBillingDocumentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateVatCorrectionBillingDocumentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CreateVatCorrectionBillingDocumentRequest $paramCreateVatCorrectionBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateVatCorrectionBillingDocumentResponse|bool
      */
-    public function createVatCorrectionBillingDocument(\Pggns\MidocoApi\Api\Order\StructType\CreateVatCorrectionBillingDocumentRequest $paramCreateVatCorrectionBillingDocumentRequest)
+    public function createVatCorrectionBillingDocument(\Pggns\MidocoApi\Order\StructType\CreateVatCorrectionBillingDocumentRequest $paramCreateVatCorrectionBillingDocumentRequest)
     {
         try {
             $this->setResult($resultCreateVatCorrectionBillingDocument = $this->getSoapClient()->__soapCall('createVatCorrectionBillingDocument', [
@@ -248,15 +248,15 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportRequest $paramCreateDSFinVKExportRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportRequest $paramCreateDSFinVKExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportResponse|bool
      */
-    public function createDSFinVKExport(\Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportRequest $paramCreateDSFinVKExportRequest)
+    public function createDSFinVKExport(\Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportRequest $paramCreateDSFinVKExportRequest)
     {
         try {
             $this->setResult($resultCreateDSFinVKExport = $this->getSoapClient()->__soapCall('createDSFinVKExport', [
@@ -273,7 +273,7 @@ class Create extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateAcconLinkResponse|\Pggns\MidocoApi\Api\Order\StructType\CreateAutomaticOrderNoticeResponse|\Pggns\MidocoApi\Api\Order\StructType\CreateBillingPrintjobResponse|\Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportResponse|\Pggns\MidocoApi\Api\Order\StructType\CreateExternDocument4BillingDocumentResponse|\Pggns\MidocoApi\Api\Order\StructType\CreateSupplierMessageResponse|\Pggns\MidocoApi\Api\Order\StructType\CreateTravelPlanPrintjobResponse|\Pggns\MidocoApi\Api\Order\StructType\CreateVatCorrectionBillingDocumentResponse|\Pggns\MidocoApi\Api\Order\StructType\CreateVermiLinkResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateAcconLinkResponse|\Pggns\MidocoApi\Order\StructType\CreateAutomaticOrderNoticeResponse|\Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse|\Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportResponse|\Pggns\MidocoApi\Order\StructType\CreateExternDocument4BillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\CreateSupplierMessageResponse|\Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobResponse|\Pggns\MidocoApi\Order\StructType\CreateVatCorrectionBillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\CreateVermiLinkResponse
      */
     public function getResult()
     {

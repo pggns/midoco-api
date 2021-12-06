@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class GetDbiUpdateResponse extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoDbiUpdate
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO|null
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO $MidocoDbiUpdate = null;
+    protected ?\Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO $MidocoDbiUpdate = null;
     /**
      * Constructor method for GetDbiUpdateResponse
      * @uses GetDbiUpdateResponse::setMidocoDbiUpdate()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO $midocoDbiUpdate
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO $midocoDbiUpdate
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO $midocoDbiUpdate = null)
+    public function __construct(?\Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO $midocoDbiUpdate = null)
     {
         $this
             ->setMidocoDbiUpdate($midocoDbiUpdate);
     }
     /**
      * Get MidocoDbiUpdate value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO|null
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO|null
      */
-    public function getMidocoDbiUpdate(): ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO
+    public function getMidocoDbiUpdate(): ?\Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO
     {
         return $this->MidocoDbiUpdate;
     }
     /**
      * Set MidocoDbiUpdate value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO $midocoDbiUpdate
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDbiUpdateResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO $midocoDbiUpdate
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDbiUpdateResponse
      */
-    public function setMidocoDbiUpdate(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO $midocoDbiUpdate = null): self
+    public function setMidocoDbiUpdate(?\Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO $midocoDbiUpdate = null): self
     {
         $this->MidocoDbiUpdate = $midocoDbiUpdate;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class ReceiptRecordExportDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptRecordExportDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptRecordExportDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -150,7 +150,7 @@ class ReceiptRecordExportDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptRecordExportDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptRecordExportDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -173,7 +173,7 @@ class ReceiptRecordExportDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptRecordExportDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptRecordExportDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -196,7 +196,7 @@ class ReceiptRecordExportDTO extends AbstractStructBase
     /**
      * Set exportId value
      * @param int $exportId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptRecordExportDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptRecordExportDTO
      */
     public function setExportId(?int $exportId = null): self
     {
@@ -219,7 +219,7 @@ class ReceiptRecordExportDTO extends AbstractStructBase
     /**
      * Set printSequenceIdFrom value
      * @param int $printSequenceIdFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptRecordExportDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptRecordExportDTO
      */
     public function setPrintSequenceIdFrom(?int $printSequenceIdFrom = null): self
     {
@@ -242,7 +242,7 @@ class ReceiptRecordExportDTO extends AbstractStructBase
     /**
      * Set printSequenceIdTo value
      * @param int $printSequenceIdTo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptRecordExportDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptRecordExportDTO
      */
     public function setPrintSequenceIdTo(?int $printSequenceIdTo = null): self
     {
@@ -265,7 +265,7 @@ class ReceiptRecordExportDTO extends AbstractStructBase
     /**
      * Set printingDateFrom value
      * @param string $printingDateFrom
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptRecordExportDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptRecordExportDTO
      */
     public function setPrintingDateFrom(?string $printingDateFrom = null): self
     {
@@ -288,7 +288,7 @@ class ReceiptRecordExportDTO extends AbstractStructBase
     /**
      * Set printingDateTo value
      * @param string $printingDateTo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptRecordExportDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptRecordExportDTO
      */
     public function setPrintingDateTo(?string $printingDateTo = null): self
     {
@@ -311,7 +311,7 @@ class ReceiptRecordExportDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptRecordExportDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptRecordExportDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -334,7 +334,7 @@ class ReceiptRecordExportDTO extends AbstractStructBase
     /**
      * Set selectedCashBooks value
      * @param string $selectedCashBooks
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptRecordExportDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptRecordExportDTO
      */
     public function setSelectedCashBooks(?string $selectedCashBooks = null): self
     {
@@ -357,7 +357,7 @@ class ReceiptRecordExportDTO extends AbstractStructBase
     /**
      * Set selectedUnits value
      * @param string $selectedUnits
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptRecordExportDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptRecordExportDTO
      */
     public function setSelectedUnits(?string $selectedUnits = null): self
     {
@@ -380,7 +380,7 @@ class ReceiptRecordExportDTO extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ReceiptRecordExportDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ReceiptRecordExportDTO
      */
     public function setTssId(?string $tssId = null): self
     {

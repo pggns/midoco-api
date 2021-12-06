@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCommunicationHistoriesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCommunicationHistory
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory[]
      */
     protected ?array $MidocoCommunicationHistory = null;
     /**
      * Constructor method for GetCommunicationHistoriesResponse
      * @uses GetCommunicationHistoriesResponse::setMidocoCommunicationHistory()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory[] $midocoCommunicationHistory
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory[] $midocoCommunicationHistory
      */
     public function __construct(?array $midocoCommunicationHistory = null)
     {
@@ -34,7 +34,7 @@ class GetCommunicationHistoriesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCommunicationHistory value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory[]
      */
     public function getMidocoCommunicationHistory(): ?array
     {
@@ -55,12 +55,12 @@ class GetCommunicationHistoriesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCommunicationHistoriesResponseMidocoCommunicationHistoryItem) {
             // validation for constraint: itemType
-            if (!$getCommunicationHistoriesResponseMidocoCommunicationHistoryItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory) {
+            if (!$getCommunicationHistoriesResponseMidocoCommunicationHistoryItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory) {
                 $invalidValues[] = is_object($getCommunicationHistoriesResponseMidocoCommunicationHistoryItem) ? get_class($getCommunicationHistoriesResponseMidocoCommunicationHistoryItem) : sprintf('%s(%s)', gettype($getCommunicationHistoriesResponseMidocoCommunicationHistoryItem), var_export($getCommunicationHistoriesResponseMidocoCommunicationHistoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCommunicationHistory property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCommunicationHistory property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCommunicationHistoriesResponse extends AbstractStructBase
     /**
      * Set MidocoCommunicationHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory[] $midocoCommunicationHistory
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCommunicationHistoriesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory[] $midocoCommunicationHistory
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCommunicationHistoriesResponse
      */
     public function setMidocoCommunicationHistory(?array $midocoCommunicationHistory = null): self
     {
@@ -85,14 +85,14 @@ class GetCommunicationHistoriesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCommunicationHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCommunicationHistoriesResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCommunicationHistoriesResponse
      */
-    public function addToMidocoCommunicationHistory(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory $item): self
+    public function addToMidocoCommunicationHistory(\Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory) {
-            throw new InvalidArgumentException(sprintf('The MidocoCommunicationHistory property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCommunicationHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory) {
+            throw new InvalidArgumentException(sprintf('The MidocoCommunicationHistory property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCommunicationHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCommunicationHistory[] = $item;
         

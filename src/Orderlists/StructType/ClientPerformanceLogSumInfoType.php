@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class ClientPerformanceLogSumInfoType extends AbstractStructBase
     /**
      * Set minDuration1 value
      * @param int $minDuration1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType
      */
     public function setMinDuration1(?int $minDuration1 = null): self
     {
@@ -150,7 +150,7 @@ class ClientPerformanceLogSumInfoType extends AbstractStructBase
     /**
      * Set minDuration2 value
      * @param int $minDuration2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType
      */
     public function setMinDuration2(?int $minDuration2 = null): self
     {
@@ -173,7 +173,7 @@ class ClientPerformanceLogSumInfoType extends AbstractStructBase
     /**
      * Set maxDuration1 value
      * @param int $maxDuration1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType
      */
     public function setMaxDuration1(?int $maxDuration1 = null): self
     {
@@ -196,7 +196,7 @@ class ClientPerformanceLogSumInfoType extends AbstractStructBase
     /**
      * Set maxDuration2 value
      * @param int $maxDuration2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType
      */
     public function setMaxDuration2(?int $maxDuration2 = null): self
     {
@@ -219,7 +219,7 @@ class ClientPerformanceLogSumInfoType extends AbstractStructBase
     /**
      * Set avgDuration1 value
      * @param int $avgDuration1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType
      */
     public function setAvgDuration1(?int $avgDuration1 = null): self
     {
@@ -242,7 +242,7 @@ class ClientPerformanceLogSumInfoType extends AbstractStructBase
     /**
      * Set avgDuration2 value
      * @param int $avgDuration2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType
      */
     public function setAvgDuration2(?int $avgDuration2 = null): self
     {
@@ -265,7 +265,7 @@ class ClientPerformanceLogSumInfoType extends AbstractStructBase
     /**
      * Set count1 value
      * @param int $count1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType
      */
     public function setCount1(?int $count1 = null): self
     {
@@ -288,7 +288,7 @@ class ClientPerformanceLogSumInfoType extends AbstractStructBase
     /**
      * Set count2 value
      * @param int $count2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType
      */
     public function setCount2(?int $count2 = null): self
     {
@@ -311,7 +311,7 @@ class ClientPerformanceLogSumInfoType extends AbstractStructBase
     /**
      * Set minDurationPercent value
      * @param float $minDurationPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType
      */
     public function setMinDurationPercent(?float $minDurationPercent = null): self
     {
@@ -334,7 +334,7 @@ class ClientPerformanceLogSumInfoType extends AbstractStructBase
     /**
      * Set maxDurationPercent value
      * @param float $maxDurationPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType
      */
     public function setMaxDurationPercent(?float $maxDurationPercent = null): self
     {
@@ -357,7 +357,7 @@ class ClientPerformanceLogSumInfoType extends AbstractStructBase
     /**
      * Set avgDurationPercent value
      * @param float $avgDurationPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType
      */
     public function setAvgDurationPercent(?float $avgDurationPercent = null): self
     {
@@ -380,7 +380,7 @@ class ClientPerformanceLogSumInfoType extends AbstractStructBase
     /**
      * Set countPercent value
      * @param float $countPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ClientPerformanceLogSumInfoType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ClientPerformanceLogSumInfoType
      */
     public function setCountPercent(?float $countPercent = null): self
     {

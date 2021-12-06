@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class Pictures extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: picturetype
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Picturetype[]
+     * @var \Pggns\MidocoApi\Order\StructType\Picturetype[]
      */
     protected ?array $picturetype = null;
     /**
@@ -37,7 +37,7 @@ class Pictures extends AbstractStructBase
      * @uses Pictures::setPicturetype()
      * @uses Pictures::setType()
      * @uses Pictures::setCount()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Picturetype[] $picturetype
+     * @param \Pggns\MidocoApi\Order\StructType\Picturetype[] $picturetype
      * @param string $type
      * @param int $count
      */
@@ -50,7 +50,7 @@ class Pictures extends AbstractStructBase
     }
     /**
      * Get picturetype value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Picturetype[]
+     * @return \Pggns\MidocoApi\Order\StructType\Picturetype[]
      */
     public function getPicturetype(): ?array
     {
@@ -71,12 +71,12 @@ class Pictures extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $picturesPicturetypeItem) {
             // validation for constraint: itemType
-            if (!$picturesPicturetypeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\Picturetype) {
+            if (!$picturesPicturetypeItem instanceof \Pggns\MidocoApi\Order\StructType\Picturetype) {
                 $invalidValues[] = is_object($picturesPicturetypeItem) ? get_class($picturesPicturetypeItem) : sprintf('%s(%s)', gettype($picturesPicturetypeItem), var_export($picturesPicturetypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The picturetype property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Picturetype, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The picturetype property can only contain items of type \Pggns\MidocoApi\Order\StructType\Picturetype, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class Pictures extends AbstractStructBase
     /**
      * Set picturetype value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Picturetype[] $picturetype
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Pictures
+     * @param \Pggns\MidocoApi\Order\StructType\Picturetype[] $picturetype
+     * @return \Pggns\MidocoApi\Order\StructType\Pictures
      */
     public function setPicturetype(?array $picturetype = null): self
     {
@@ -101,14 +101,14 @@ class Pictures extends AbstractStructBase
     /**
      * Add item to picturetype value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Picturetype $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Pictures
+     * @param \Pggns\MidocoApi\Order\StructType\Picturetype $item
+     * @return \Pggns\MidocoApi\Order\StructType\Pictures
      */
-    public function addToPicturetype(\Pggns\MidocoApi\Api\Order\StructType\Picturetype $item): self
+    public function addToPicturetype(\Pggns\MidocoApi\Order\StructType\Picturetype $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\Picturetype) {
-            throw new InvalidArgumentException(sprintf('The picturetype property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Picturetype, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\Picturetype) {
+            throw new InvalidArgumentException(sprintf('The picturetype property can only contain items of type \Pggns\MidocoApi\Order\StructType\Picturetype, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->picturetype[] = $item;
         
@@ -125,7 +125,7 @@ class Pictures extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Pictures
+     * @return \Pggns\MidocoApi\Order\StructType\Pictures
      */
     public function setType(?string $type = null): self
     {
@@ -148,7 +148,7 @@ class Pictures extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Pictures
+     * @return \Pggns\MidocoApi\Order\StructType\Pictures
      */
     public function setCount(?int $count = null): self
     {

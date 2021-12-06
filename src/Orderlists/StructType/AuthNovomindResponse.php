@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class AuthNovomindResponse extends AbstractStructBase
     /**
      * Set result value
      * @param bool $result
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AuthNovomindResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AuthNovomindResponse
      */
     public function setResult(?bool $result = null): self
     {
@@ -70,7 +70,7 @@ class AuthNovomindResponse extends AbstractStructBase
     /**
      * Set accessToken value
      * @param string $accessToken
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AuthNovomindResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AuthNovomindResponse
      */
     public function setAccessToken(?string $accessToken = null): self
     {

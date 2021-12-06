@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class CalculateSupplierCommissionRequest extends AbstractStructBase
      * The MidocoSupplierCommissionCondition
      * Meta information extracted from the WSDL
      * - ref: ordersd:MidocoSupplierCommissionCondition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionCondition|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionCondition|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionCondition $MidocoSupplierCommissionCondition = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionCondition $MidocoSupplierCommissionCondition = null;
     /**
      * The orderNo
      * @var int|null
@@ -29,10 +29,10 @@ class CalculateSupplierCommissionRequest extends AbstractStructBase
      * Constructor method for CalculateSupplierCommissionRequest
      * @uses CalculateSupplierCommissionRequest::setMidocoSupplierCommissionCondition()
      * @uses CalculateSupplierCommissionRequest::setOrderNo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition
      * @param int $orderNo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition = null, ?int $orderNo = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition = null, ?int $orderNo = null)
     {
         $this
             ->setMidocoSupplierCommissionCondition($midocoSupplierCommissionCondition)
@@ -40,18 +40,18 @@ class CalculateSupplierCommissionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierCommissionCondition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionCondition|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionCondition|null
      */
-    public function getMidocoSupplierCommissionCondition(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionCondition
+    public function getMidocoSupplierCommissionCondition(): ?\Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionCondition
     {
         return $this->MidocoSupplierCommissionCondition;
     }
     /**
      * Set MidocoSupplierCommissionCondition value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateSupplierCommissionRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateSupplierCommissionRequest
      */
-    public function setMidocoSupplierCommissionCondition(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition = null): self
+    public function setMidocoSupplierCommissionCondition(?\Pggns\MidocoApi\Order\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition = null): self
     {
         $this->MidocoSupplierCommissionCondition = $midocoSupplierCommissionCondition;
         
@@ -68,7 +68,7 @@ class CalculateSupplierCommissionRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateSupplierCommissionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateSupplierCommissionRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {

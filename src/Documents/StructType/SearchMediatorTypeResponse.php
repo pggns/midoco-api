@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchMediatorTypeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MediatorTypeInfo
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO[]
      */
     protected ?array $MediatorTypeInfo = null;
     /**
      * Constructor method for SearchMediatorTypeResponse
      * @uses SearchMediatorTypeResponse::setMediatorTypeInfo()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO[] $mediatorTypeInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO[] $mediatorTypeInfo
      */
     public function __construct(?array $mediatorTypeInfo = null)
     {
@@ -34,7 +34,7 @@ class SearchMediatorTypeResponse extends AbstractStructBase
     }
     /**
      * Get MediatorTypeInfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO[]
      */
     public function getMediatorTypeInfo(): ?array
     {
@@ -55,12 +55,12 @@ class SearchMediatorTypeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchMediatorTypeResponseMediatorTypeInfoItem) {
             // validation for constraint: itemType
-            if (!$searchMediatorTypeResponseMediatorTypeInfoItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO) {
+            if (!$searchMediatorTypeResponseMediatorTypeInfoItem instanceof \Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO) {
                 $invalidValues[] = is_object($searchMediatorTypeResponseMediatorTypeInfoItem) ? get_class($searchMediatorTypeResponseMediatorTypeInfoItem) : sprintf('%s(%s)', gettype($searchMediatorTypeResponseMediatorTypeInfoItem), var_export($searchMediatorTypeResponseMediatorTypeInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MediatorTypeInfo property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MediatorTypeInfo property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchMediatorTypeResponse extends AbstractStructBase
     /**
      * Set MediatorTypeInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO[] $mediatorTypeInfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchMediatorTypeResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO[] $mediatorTypeInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchMediatorTypeResponse
      */
     public function setMediatorTypeInfo(?array $mediatorTypeInfo = null): self
     {
@@ -85,14 +85,14 @@ class SearchMediatorTypeResponse extends AbstractStructBase
     /**
      * Add item to MediatorTypeInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchMediatorTypeResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchMediatorTypeResponse
      */
-    public function addToMediatorTypeInfo(\Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO $item): self
+    public function addToMediatorTypeInfo(\Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO) {
-            throw new InvalidArgumentException(sprintf('The MediatorTypeInfo property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MediatorTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO) {
+            throw new InvalidArgumentException(sprintf('The MediatorTypeInfo property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MediatorTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MediatorTypeInfo[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -319,7 +319,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set arrivalTransportType value
      * @param string $arrivalTransportType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setArrivalTransportType(?string $arrivalTransportType = null): self
     {
@@ -342,7 +342,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set cabinCode value
      * @param string $cabinCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setCabinCode(?string $cabinCode = null): self
     {
@@ -365,7 +365,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set cabinDescription value
      * @param string $cabinDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setCabinDescription(?string $cabinDescription = null): self
     {
@@ -388,7 +388,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set cabinNo value
      * @param string $cabinNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setCabinNo(?string $cabinNo = null): self
     {
@@ -411,7 +411,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set catering value
      * @param string $catering
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setCatering(?string $catering = null): self
     {
@@ -434,7 +434,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set cateringDescription value
      * @param string $cateringDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setCateringDescription(?string $cateringDescription = null): self
     {
@@ -457,7 +457,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setCountry(?string $country = null): self
     {
@@ -480,7 +480,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -503,7 +503,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set debarkation value
      * @param string $debarkation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setDebarkation(?string $debarkation = null): self
     {
@@ -526,7 +526,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set deck value
      * @param string $deck
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setDeck(?string $deck = null): self
     {
@@ -549,7 +549,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set departureDescr value
      * @param string $departureDescr
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setDepartureDescr(?string $departureDescr = null): self
     {
@@ -572,7 +572,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set destinationDescr value
      * @param string $destinationDescr
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setDestinationDescr(?string $destinationDescr = null): self
     {
@@ -595,7 +595,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set embarkation value
      * @param string $embarkation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setEmbarkation(?string $embarkation = null): self
     {
@@ -618,7 +618,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -641,7 +641,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -664,7 +664,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set noOfNights value
      * @param string $noOfNights
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setNoOfNights(?string $noOfNights = null): self
     {
@@ -687,7 +687,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set noOfServices value
      * @param string $noOfServices
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setNoOfServices(?string $noOfServices = null): self
     {
@@ -710,7 +710,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {
@@ -733,7 +733,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set personsPerService value
      * @param int $personsPerService
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setPersonsPerService(?int $personsPerService = null): self
     {
@@ -756,7 +756,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -779,7 +779,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set referencePosition value
      * @param int $referencePosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setReferencePosition(?int $referencePosition = null): self
     {
@@ -802,7 +802,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set returnDepartureDescr value
      * @param string $returnDepartureDescr
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setReturnDepartureDescr(?string $returnDepartureDescr = null): self
     {
@@ -825,7 +825,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set returnDestinationDescr value
      * @param string $returnDestinationDescr
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setReturnDestinationDescr(?string $returnDestinationDescr = null): self
     {
@@ -848,7 +848,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set returnTransportType value
      * @param string $returnTransportType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setReturnTransportType(?string $returnTransportType = null): self
     {
@@ -871,7 +871,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set route value
      * @param string $route
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setRoute(?string $route = null): self
     {
@@ -894,7 +894,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set serviceCode value
      * @param string $serviceCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setServiceCode(?string $serviceCode = null): self
     {
@@ -917,7 +917,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set serviceDescription value
      * @param string $serviceDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setServiceDescription(?string $serviceDescription = null): self
     {
@@ -940,7 +940,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set serviceName value
      * @param string $serviceName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setServiceName(?string $serviceName = null): self
     {
@@ -963,7 +963,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set serviceStatus value
      * @param string $serviceStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setServiceStatus(?string $serviceStatus = null): self
     {
@@ -986,7 +986,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -1009,7 +1009,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -1032,7 +1032,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set transfer value
      * @param string $transfer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setTransfer(?string $transfer = null): self
     {
@@ -1055,7 +1055,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set vatIncluded value
      * @param bool $vatIncluded
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setVatIncluded(?bool $vatIncluded = null): self
     {
@@ -1078,7 +1078,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set vehicle value
      * @param string $vehicle
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setVehicle(?string $vehicle = null): self
     {
@@ -1101,7 +1101,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set vehicleDimension value
      * @param string $vehicleDimension
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setVehicleDimension(?string $vehicleDimension = null): self
     {
@@ -1124,7 +1124,7 @@ class CruiseDetailDTO extends AbstractStructBase
     /**
      * Set vehiclePlateNumber value
      * @param string $vehiclePlateNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CruiseDetailDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseDetailDTO
      */
     public function setVehiclePlateNumber(?string $vehiclePlateNumber = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveFrequentFlyerNumberResponse extends AbstractStructBase
      * The MidocoFrequentFlyerNumber
      * Meta information extracted from the WSDL
      * - ref: MidocoFrequentFlyerNumber
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\FrequentFlyerNumberDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\FrequentFlyerNumberDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\FrequentFlyerNumberDTO $MidocoFrequentFlyerNumber = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\FrequentFlyerNumberDTO $MidocoFrequentFlyerNumber = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +29,10 @@ class SaveFrequentFlyerNumberResponse extends AbstractStructBase
      * Constructor method for SaveFrequentFlyerNumberResponse
      * @uses SaveFrequentFlyerNumberResponse::setMidocoFrequentFlyerNumber()
      * @uses SaveFrequentFlyerNumberResponse::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\FrequentFlyerNumberDTO $midocoFrequentFlyerNumber
+     * @param \Pggns\MidocoApi\Crm\StructType\FrequentFlyerNumberDTO $midocoFrequentFlyerNumber
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\FrequentFlyerNumberDTO $midocoFrequentFlyerNumber = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\FrequentFlyerNumberDTO $midocoFrequentFlyerNumber = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoFrequentFlyerNumber($midocoFrequentFlyerNumber)
@@ -40,18 +40,18 @@ class SaveFrequentFlyerNumberResponse extends AbstractStructBase
     }
     /**
      * Get MidocoFrequentFlyerNumber value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\FrequentFlyerNumberDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\FrequentFlyerNumberDTO|null
      */
-    public function getMidocoFrequentFlyerNumber(): ?\Pggns\MidocoApi\Api\Crm\StructType\FrequentFlyerNumberDTO
+    public function getMidocoFrequentFlyerNumber(): ?\Pggns\MidocoApi\Crm\StructType\FrequentFlyerNumberDTO
     {
         return $this->MidocoFrequentFlyerNumber;
     }
     /**
      * Set MidocoFrequentFlyerNumber value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\FrequentFlyerNumberDTO $midocoFrequentFlyerNumber
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveFrequentFlyerNumberResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\FrequentFlyerNumberDTO $midocoFrequentFlyerNumber
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveFrequentFlyerNumberResponse
      */
-    public function setMidocoFrequentFlyerNumber(?\Pggns\MidocoApi\Api\Crm\StructType\FrequentFlyerNumberDTO $midocoFrequentFlyerNumber = null): self
+    public function setMidocoFrequentFlyerNumber(?\Pggns\MidocoApi\Crm\StructType\FrequentFlyerNumberDTO $midocoFrequentFlyerNumber = null): self
     {
         $this->MidocoFrequentFlyerNumber = $midocoFrequentFlyerNumber;
         
@@ -68,7 +68,7 @@ class SaveFrequentFlyerNumberResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveFrequentFlyerNumberResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveFrequentFlyerNumberResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

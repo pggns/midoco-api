@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class GetUnitNoticeReponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\UnitNoticeDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\UnitNoticeDTO[]
      */
     protected ?array $MidocoOrgunitNotice = null;
     /**
      * Constructor method for GetUnitNoticeReponse
      * @uses GetUnitNoticeReponse::setMidocoOrgunitNotice()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\UnitNoticeDTO[] $midocoOrgunitNotice
+     * @param \Pggns\MidocoApi\Crm\StructType\UnitNoticeDTO[] $midocoOrgunitNotice
      */
     public function __construct(?array $midocoOrgunitNotice = null)
     {
@@ -33,7 +33,7 @@ class GetUnitNoticeReponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrgunitNotice value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\UnitNoticeDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\UnitNoticeDTO[]
      */
     public function getMidocoOrgunitNotice(): ?array
     {
@@ -54,12 +54,12 @@ class GetUnitNoticeReponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getUnitNoticeReponseMidocoOrgunitNoticeItem) {
             // validation for constraint: itemType
-            if (!$getUnitNoticeReponseMidocoOrgunitNoticeItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\UnitNoticeDTO) {
+            if (!$getUnitNoticeReponseMidocoOrgunitNoticeItem instanceof \Pggns\MidocoApi\Crm\StructType\UnitNoticeDTO) {
                 $invalidValues[] = is_object($getUnitNoticeReponseMidocoOrgunitNoticeItem) ? get_class($getUnitNoticeReponseMidocoOrgunitNoticeItem) : sprintf('%s(%s)', gettype($getUnitNoticeReponseMidocoOrgunitNoticeItem), var_export($getUnitNoticeReponseMidocoOrgunitNoticeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrgunitNotice property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\UnitNoticeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrgunitNotice property can only contain items of type \Pggns\MidocoApi\Crm\StructType\UnitNoticeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class GetUnitNoticeReponse extends AbstractStructBase
     /**
      * Set MidocoOrgunitNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\UnitNoticeDTO[] $midocoOrgunitNotice
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetUnitNoticeReponse
+     * @param \Pggns\MidocoApi\Crm\StructType\UnitNoticeDTO[] $midocoOrgunitNotice
+     * @return \Pggns\MidocoApi\Crm\StructType\GetUnitNoticeReponse
      */
     public function setMidocoOrgunitNotice(?array $midocoOrgunitNotice = null): self
     {
@@ -84,14 +84,14 @@ class GetUnitNoticeReponse extends AbstractStructBase
     /**
      * Add item to MidocoOrgunitNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\UnitNoticeDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetUnitNoticeReponse
+     * @param \Pggns\MidocoApi\Crm\StructType\UnitNoticeDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetUnitNoticeReponse
      */
-    public function addToMidocoOrgunitNotice(\Pggns\MidocoApi\Api\Crm\StructType\UnitNoticeDTO $item): self
+    public function addToMidocoOrgunitNotice(\Pggns\MidocoApi\Crm\StructType\UnitNoticeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\UnitNoticeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrgunitNotice property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\UnitNoticeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\UnitNoticeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrgunitNotice property can only contain items of type \Pggns\MidocoApi\Crm\StructType\UnitNoticeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrgunitNotice[] = $item;
         

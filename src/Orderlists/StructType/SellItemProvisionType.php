@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class SellItemProvisionType extends SellItemProvisionDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoRevenueBookingVatDiv
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRevenueBookingVatDiv[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoRevenueBookingVatDiv[]
      */
     protected ?array $MidocoRevenueBookingVatDiv = null;
     /**
@@ -85,7 +85,7 @@ class SellItemProvisionType extends SellItemProvisionDTO
      * @uses SellItemProvisionType::setSupplierInvoiceVatCode()
      * @uses SellItemProvisionType::setIsStorno()
      * @uses SellItemProvisionType::setStornoDate()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRevenueBookingVatDiv[] $midocoRevenueBookingVatDiv
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRevenueBookingVatDiv[] $midocoRevenueBookingVatDiv
      * @param bool $needsVatDivision
      * @param string $travelNo
      * @param float $travelNoB2cPercent
@@ -112,7 +112,7 @@ class SellItemProvisionType extends SellItemProvisionDTO
     }
     /**
      * Get MidocoRevenueBookingVatDiv value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRevenueBookingVatDiv[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoRevenueBookingVatDiv[]
      */
     public function getMidocoRevenueBookingVatDiv(): ?array
     {
@@ -133,12 +133,12 @@ class SellItemProvisionType extends SellItemProvisionDTO
         $invalidValues = [];
         foreach ($values as $sellItemProvisionTypeMidocoRevenueBookingVatDivItem) {
             // validation for constraint: itemType
-            if (!$sellItemProvisionTypeMidocoRevenueBookingVatDivItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRevenueBookingVatDiv) {
+            if (!$sellItemProvisionTypeMidocoRevenueBookingVatDivItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRevenueBookingVatDiv) {
                 $invalidValues[] = is_object($sellItemProvisionTypeMidocoRevenueBookingVatDivItem) ? get_class($sellItemProvisionTypeMidocoRevenueBookingVatDivItem) : sprintf('%s(%s)', gettype($sellItemProvisionTypeMidocoRevenueBookingVatDivItem), var_export($sellItemProvisionTypeMidocoRevenueBookingVatDivItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRevenueBookingVatDiv property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRevenueBookingVatDiv, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRevenueBookingVatDiv property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRevenueBookingVatDiv, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,8 +147,8 @@ class SellItemProvisionType extends SellItemProvisionDTO
     /**
      * Set MidocoRevenueBookingVatDiv value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRevenueBookingVatDiv[] $midocoRevenueBookingVatDiv
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRevenueBookingVatDiv[] $midocoRevenueBookingVatDiv
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
      */
     public function setMidocoRevenueBookingVatDiv(?array $midocoRevenueBookingVatDiv = null): self
     {
@@ -163,14 +163,14 @@ class SellItemProvisionType extends SellItemProvisionDTO
     /**
      * Add item to MidocoRevenueBookingVatDiv value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRevenueBookingVatDiv $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionType
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRevenueBookingVatDiv $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
      */
-    public function addToMidocoRevenueBookingVatDiv(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRevenueBookingVatDiv $item): self
+    public function addToMidocoRevenueBookingVatDiv(\Pggns\MidocoApi\Orderlists\StructType\MidocoRevenueBookingVatDiv $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRevenueBookingVatDiv) {
-            throw new InvalidArgumentException(sprintf('The MidocoRevenueBookingVatDiv property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoRevenueBookingVatDiv, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoRevenueBookingVatDiv) {
+            throw new InvalidArgumentException(sprintf('The MidocoRevenueBookingVatDiv property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRevenueBookingVatDiv, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRevenueBookingVatDiv[] = $item;
         
@@ -187,7 +187,7 @@ class SellItemProvisionType extends SellItemProvisionDTO
     /**
      * Set needsVatDivision value
      * @param bool $needsVatDivision
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
      */
     public function setNeedsVatDivision(?bool $needsVatDivision = false): self
     {
@@ -210,7 +210,7 @@ class SellItemProvisionType extends SellItemProvisionDTO
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
      */
     public function setTravelNo(?string $travelNo = null): self
     {
@@ -233,7 +233,7 @@ class SellItemProvisionType extends SellItemProvisionDTO
     /**
      * Set travelNoB2cPercent value
      * @param float $travelNoB2cPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
      */
     public function setTravelNoB2cPercent(?float $travelNoB2cPercent = null): self
     {
@@ -256,7 +256,7 @@ class SellItemProvisionType extends SellItemProvisionDTO
     /**
      * Set commissionVatFreeRc value
      * @param bool $commissionVatFreeRc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
      */
     public function setCommissionVatFreeRc(?bool $commissionVatFreeRc = null): self
     {
@@ -279,7 +279,7 @@ class SellItemProvisionType extends SellItemProvisionDTO
     /**
      * Set settlmAccountsSupplier value
      * @param string $settlmAccountsSupplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
      */
     public function setSettlmAccountsSupplier(?string $settlmAccountsSupplier = null): self
     {
@@ -302,7 +302,7 @@ class SellItemProvisionType extends SellItemProvisionDTO
     /**
      * Set preventPaymentForEntry value
      * @param bool $preventPaymentForEntry
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
      */
     public function setPreventPaymentForEntry(?bool $preventPaymentForEntry = false): self
     {
@@ -325,7 +325,7 @@ class SellItemProvisionType extends SellItemProvisionDTO
     /**
      * Set supplierInvoiceVatCode value
      * @param string $supplierInvoiceVatCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
      */
     public function setSupplierInvoiceVatCode(?string $supplierInvoiceVatCode = null): self
     {
@@ -348,7 +348,7 @@ class SellItemProvisionType extends SellItemProvisionDTO
     /**
      * Set isStorno value
      * @param bool $isStorno
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
      */
     public function setIsStorno(?bool $isStorno = false): self
     {
@@ -371,7 +371,7 @@ class SellItemProvisionType extends SellItemProvisionDTO
     /**
      * Set stornoDate value
      * @param string $stornoDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
      */
     public function setStornoDate(?string $stornoDate = null): self
     {

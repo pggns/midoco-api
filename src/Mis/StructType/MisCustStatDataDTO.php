@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set avrgBookingPrice value
      * @param float $avrgBookingPrice
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setAvrgBookingPrice(?float $avrgBookingPrice = null): self
     {
@@ -198,7 +198,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set avrgOrderPrice value
      * @param float $avrgOrderPrice
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setAvrgOrderPrice(?float $avrgOrderPrice = null): self
     {
@@ -221,7 +221,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set avrgPersonCount value
      * @param int $avrgPersonCount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setAvrgPersonCount(?int $avrgPersonCount = null): self
     {
@@ -244,7 +244,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set avrgPricePerPerson value
      * @param float $avrgPricePerPerson
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setAvrgPricePerPerson(?float $avrgPricePerPerson = null): self
     {
@@ -267,7 +267,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set bookingCount value
      * @param int $bookingCount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setBookingCount(?int $bookingCount = null): self
     {
@@ -290,7 +290,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -313,7 +313,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set firstTravelBookingDate value
      * @param string $firstTravelBookingDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setFirstTravelBookingDate(?string $firstTravelBookingDate = null): self
     {
@@ -336,7 +336,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set firstTravelDate value
      * @param string $firstTravelDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setFirstTravelDate(?string $firstTravelDate = null): self
     {
@@ -359,7 +359,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set lastActivity value
      * @param string $lastActivity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setLastActivity(?string $lastActivity = null): self
     {
@@ -382,7 +382,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set lastBookingOrgunit value
      * @param string $lastBookingOrgunit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setLastBookingOrgunit(?string $lastBookingOrgunit = null): self
     {
@@ -405,7 +405,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set lastBookingUser value
      * @param int $lastBookingUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setLastBookingUser(?int $lastBookingUser = null): self
     {
@@ -428,7 +428,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set lastCampaignDate value
      * @param string $lastCampaignDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setLastCampaignDate(?string $lastCampaignDate = null): self
     {
@@ -451,7 +451,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set lastTravelBookingDate value
      * @param string $lastTravelBookingDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setLastTravelBookingDate(?string $lastTravelBookingDate = null): self
     {
@@ -474,7 +474,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set lastTravelDate value
      * @param string $lastTravelDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setLastTravelDate(?string $lastTravelDate = null): self
     {
@@ -497,7 +497,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set lastTravelMediatorId value
      * @param string $lastTravelMediatorId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setLastTravelMediatorId(?string $lastTravelMediatorId = null): self
     {
@@ -520,7 +520,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set orderCount value
      * @param int $orderCount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setOrderCount(?int $orderCount = null): self
     {
@@ -543,7 +543,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -566,7 +566,7 @@ class MisCustStatDataDTO extends AbstractStructBase
     /**
      * Set priceSum value
      * @param float $priceSum
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustStatDataDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustStatDataDTO
      */
     public function setPriceSum(?float $priceSum = null): self
     {

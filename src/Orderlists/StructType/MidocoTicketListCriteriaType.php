@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class MidocoTicketListCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set issueDateFrom value
      * @param string $issueDateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType
      */
     public function setIssueDateFrom(?string $issueDateFrom = null): self
     {
@@ -134,7 +134,7 @@ class MidocoTicketListCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set issueDateTo value
      * @param string $issueDateTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType
      */
     public function setIssueDateTo(?string $issueDateTo = null): self
     {
@@ -157,7 +157,7 @@ class MidocoTicketListCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set noSupplierInvoice value
      * @param bool $noSupplierInvoice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType
      */
     public function setNoSupplierInvoice(?bool $noSupplierInvoice = null): self
     {
@@ -180,7 +180,7 @@ class MidocoTicketListCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -203,7 +203,7 @@ class MidocoTicketListCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set route value
      * @param string $route
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType
      */
     public function setRoute(?string $route = null): self
     {
@@ -226,7 +226,7 @@ class MidocoTicketListCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -249,7 +249,7 @@ class MidocoTicketListCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set flightNo value
      * @param string $flightNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType
      */
     public function setFlightNo(?string $flightNo = null): self
     {
@@ -272,7 +272,7 @@ class MidocoTicketListCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set ticketNo value
      * @param string $ticketNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType
      */
     public function setTicketNo(?string $ticketNo = null): self
     {
@@ -295,7 +295,7 @@ class MidocoTicketListCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -318,7 +318,7 @@ class MidocoTicketListCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListCriteriaType
      */
     public function setCustomerId(?int $customerId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetSalutationForCultureResponse extends AbstractStructBase
     /**
      * Set letter value
      * @param string $letter
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetSalutationForCultureResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetSalutationForCultureResponse
      */
     public function setLetter(?string $letter = null): self
     {
@@ -72,7 +72,7 @@ class GetSalutationForCultureResponse extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetSalutationForCultureResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetSalutationForCultureResponse
      */
     public function setSalutation(?string $salutation = null): self
     {

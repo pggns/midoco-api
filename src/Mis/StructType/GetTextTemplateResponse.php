@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class GetTextTemplateResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoTextTemplate
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO|null
+     * @var \Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO $MidocoTextTemplate = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO $MidocoTextTemplate = null;
     /**
      * Constructor method for GetTextTemplateResponse
      * @uses GetTextTemplateResponse::setMidocoTextTemplate()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO $midocoTextTemplate
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO $midocoTextTemplate
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO $midocoTextTemplate = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO $midocoTextTemplate = null)
     {
         $this
             ->setMidocoTextTemplate($midocoTextTemplate);
     }
     /**
      * Get MidocoTextTemplate value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO|null
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO|null
      */
-    public function getMidocoTextTemplate(): ?\Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO
+    public function getMidocoTextTemplate(): ?\Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO
     {
         return $this->MidocoTextTemplate;
     }
     /**
      * Set MidocoTextTemplate value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO $midocoTextTemplate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetTextTemplateResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO $midocoTextTemplate
+     * @return \Pggns\MidocoApi\Mis\StructType\GetTextTemplateResponse
      */
-    public function setMidocoTextTemplate(?\Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO $midocoTextTemplate = null): self
+    public function setMidocoTextTemplate(?\Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO $midocoTextTemplate = null): self
     {
         $this->MidocoTextTemplate = $midocoTextTemplate;
         

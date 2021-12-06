@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetMediatorSettlementLevelResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoMediatorSettlementLevel
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MediatorSettlementLevelDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MediatorSettlementLevelDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MediatorSettlementLevelDTO $MidocoMediatorSettlementLevel = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MediatorSettlementLevelDTO $MidocoMediatorSettlementLevel = null;
     /**
      * Constructor method for GetMediatorSettlementLevelResponse
      * @uses GetMediatorSettlementLevelResponse::setMidocoMediatorSettlementLevel()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MediatorSettlementLevelDTO $midocoMediatorSettlementLevel
+     * @param \Pggns\MidocoApi\Crm\StructType\MediatorSettlementLevelDTO $midocoMediatorSettlementLevel
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MediatorSettlementLevelDTO $midocoMediatorSettlementLevel = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MediatorSettlementLevelDTO $midocoMediatorSettlementLevel = null)
     {
         $this
             ->setMidocoMediatorSettlementLevel($midocoMediatorSettlementLevel);
     }
     /**
      * Get MidocoMediatorSettlementLevel value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MediatorSettlementLevelDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MediatorSettlementLevelDTO|null
      */
-    public function getMidocoMediatorSettlementLevel(): ?\Pggns\MidocoApi\Api\Crm\StructType\MediatorSettlementLevelDTO
+    public function getMidocoMediatorSettlementLevel(): ?\Pggns\MidocoApi\Crm\StructType\MediatorSettlementLevelDTO
     {
         return $this->MidocoMediatorSettlementLevel;
     }
     /**
      * Set MidocoMediatorSettlementLevel value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MediatorSettlementLevelDTO $midocoMediatorSettlementLevel
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetMediatorSettlementLevelResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MediatorSettlementLevelDTO $midocoMediatorSettlementLevel
+     * @return \Pggns\MidocoApi\Crm\StructType\GetMediatorSettlementLevelResponse
      */
-    public function setMidocoMediatorSettlementLevel(?\Pggns\MidocoApi\Api\Crm\StructType\MediatorSettlementLevelDTO $midocoMediatorSettlementLevel = null): self
+    public function setMidocoMediatorSettlementLevel(?\Pggns\MidocoApi\Crm\StructType\MediatorSettlementLevelDTO $midocoMediatorSettlementLevel = null): self
     {
         $this->MidocoMediatorSettlementLevel = $midocoMediatorSettlementLevel;
         

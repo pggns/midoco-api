@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoBaggageAllowanceResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBaggageAllowance
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBaggageAllowance[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBaggageAllowance[]
      */
     protected ?array $MidocoBaggageAllowance = null;
     /**
      * Constructor method for GetMidocoBaggageAllowanceResponse
      * @uses GetMidocoBaggageAllowanceResponse::setMidocoBaggageAllowance()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBaggageAllowance[] $midocoBaggageAllowance
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBaggageAllowance[] $midocoBaggageAllowance
      */
     public function __construct(?array $midocoBaggageAllowance = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoBaggageAllowanceResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBaggageAllowance value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBaggageAllowance[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBaggageAllowance[]
      */
     public function getMidocoBaggageAllowance(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoBaggageAllowanceResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoBaggageAllowanceResponseMidocoBaggageAllowanceItem) {
             // validation for constraint: itemType
-            if (!$getMidocoBaggageAllowanceResponseMidocoBaggageAllowanceItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBaggageAllowance) {
+            if (!$getMidocoBaggageAllowanceResponseMidocoBaggageAllowanceItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBaggageAllowance) {
                 $invalidValues[] = is_object($getMidocoBaggageAllowanceResponseMidocoBaggageAllowanceItem) ? get_class($getMidocoBaggageAllowanceResponseMidocoBaggageAllowanceItem) : sprintf('%s(%s)', gettype($getMidocoBaggageAllowanceResponseMidocoBaggageAllowanceItem), var_export($getMidocoBaggageAllowanceResponseMidocoBaggageAllowanceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBaggageAllowance property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBaggageAllowance, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBaggageAllowance property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBaggageAllowance, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoBaggageAllowanceResponse extends AbstractStructBase
     /**
      * Set MidocoBaggageAllowance value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBaggageAllowance[] $midocoBaggageAllowance
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoBaggageAllowanceResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBaggageAllowance[] $midocoBaggageAllowance
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoBaggageAllowanceResponse
      */
     public function setMidocoBaggageAllowance(?array $midocoBaggageAllowance = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoBaggageAllowanceResponse extends AbstractStructBase
     /**
      * Add item to MidocoBaggageAllowance value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBaggageAllowance $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoBaggageAllowanceResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBaggageAllowance $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoBaggageAllowanceResponse
      */
-    public function addToMidocoBaggageAllowance(\Pggns\MidocoApi\Api\Order\StructType\MidocoBaggageAllowance $item): self
+    public function addToMidocoBaggageAllowance(\Pggns\MidocoApi\Order\StructType\MidocoBaggageAllowance $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBaggageAllowance) {
-            throw new InvalidArgumentException(sprintf('The MidocoBaggageAllowance property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBaggageAllowance, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBaggageAllowance) {
+            throw new InvalidArgumentException(sprintf('The MidocoBaggageAllowance property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBaggageAllowance, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBaggageAllowance[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -439,7 +439,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set accomodationCode value
      * @param string $accomodationCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setAccomodationCode(?string $accomodationCode = null): self
     {
@@ -462,7 +462,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set accomodationDescription value
      * @param string $accomodationDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setAccomodationDescription(?string $accomodationDescription = null): self
     {
@@ -485,7 +485,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set arrivalTime value
      * @param string $arrivalTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setArrivalTime(?string $arrivalTime = null): self
     {
@@ -508,7 +508,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set attrib10Value value
      * @param string $attrib10Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setAttrib10Value(?string $attrib10Value = null): self
     {
@@ -531,7 +531,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set attrib1Value value
      * @param string $attrib1Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setAttrib1Value(?string $attrib1Value = null): self
     {
@@ -554,7 +554,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set attrib2Value value
      * @param string $attrib2Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setAttrib2Value(?string $attrib2Value = null): self
     {
@@ -577,7 +577,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set attrib3Value value
      * @param string $attrib3Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setAttrib3Value(?string $attrib3Value = null): self
     {
@@ -600,7 +600,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set attrib4Value value
      * @param string $attrib4Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setAttrib4Value(?string $attrib4Value = null): self
     {
@@ -623,7 +623,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set attrib5Value value
      * @param string $attrib5Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setAttrib5Value(?string $attrib5Value = null): self
     {
@@ -646,7 +646,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set attrib6Value value
      * @param string $attrib6Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setAttrib6Value(?string $attrib6Value = null): self
     {
@@ -669,7 +669,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set attrib7Value value
      * @param string $attrib7Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setAttrib7Value(?string $attrib7Value = null): self
     {
@@ -692,7 +692,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set attrib8Value value
      * @param string $attrib8Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setAttrib8Value(?string $attrib8Value = null): self
     {
@@ -715,7 +715,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set attrib9Value value
      * @param string $attrib9Value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setAttrib9Value(?string $attrib9Value = null): self
     {
@@ -738,7 +738,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -761,7 +761,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -784,7 +784,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set commisionLevelId value
      * @param string $commisionLevelId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setCommisionLevelId(?string $commisionLevelId = null): self
     {
@@ -807,7 +807,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set costCenter value
      * @param string $costCenter
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setCostCenter(?string $costCenter = null): self
     {
@@ -830,7 +830,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set cruiseCode value
      * @param string $cruiseCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setCruiseCode(?string $cruiseCode = null): self
     {
@@ -853,7 +853,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set cruiseDescription value
      * @param string $cruiseDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setCruiseDescription(?string $cruiseDescription = null): self
     {
@@ -876,7 +876,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -899,7 +899,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set departureDescription value
      * @param string $departureDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setDepartureDescription(?string $departureDescription = null): self
     {
@@ -922,7 +922,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set departureTime value
      * @param string $departureTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setDepartureTime(?string $departureTime = null): self
     {
@@ -945,7 +945,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -968,7 +968,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -991,7 +991,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set destinationDescription value
      * @param string $destinationDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setDestinationDescription(?string $destinationDescription = null): self
     {
@@ -1014,7 +1014,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set extSystem value
      * @param string $extSystem
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setExtSystem(?string $extSystem = null): self
     {
@@ -1037,7 +1037,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set flightNo value
      * @param string $flightNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setFlightNo(?string $flightNo = null): self
     {
@@ -1060,7 +1060,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set groupReservation value
      * @param bool $groupReservation
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setGroupReservation(?bool $groupReservation = null): self
     {
@@ -1083,7 +1083,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set inkassoType value
      * @param string $inkassoType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setInkassoType(?string $inkassoType = null): self
     {
@@ -1106,7 +1106,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set isChild value
      * @param bool $isChild
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setIsChild(?bool $isChild = null): self
     {
@@ -1129,7 +1129,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set isPackage value
      * @param bool $isPackage
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setIsPackage(?bool $isPackage = null): self
     {
@@ -1152,7 +1152,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -1175,7 +1175,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set midocoItemId value
      * @param int $midocoItemId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setMidocoItemId(?int $midocoItemId = null): self
     {
@@ -1198,7 +1198,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set midocoOrderId value
      * @param int $midocoOrderId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setMidocoOrderId(?int $midocoOrderId = null): self
     {
@@ -1221,7 +1221,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set midocoOrgUnit value
      * @param string $midocoOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setMidocoOrgUnit(?string $midocoOrgUnit = null): self
     {
@@ -1244,7 +1244,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set opicCode value
      * @param int $opicCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setOpicCode(?int $opicCode = null): self
     {
@@ -1267,7 +1267,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set packageDestination value
      * @param string $packageDestination
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setPackageDestination(?string $packageDestination = null): self
     {
@@ -1290,7 +1290,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -1313,7 +1313,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set returnArrivalTime value
      * @param string $returnArrivalTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setReturnArrivalTime(?string $returnArrivalTime = null): self
     {
@@ -1336,7 +1336,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set returnCarrier value
      * @param string $returnCarrier
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setReturnCarrier(?string $returnCarrier = null): self
     {
@@ -1359,7 +1359,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set returnDepartureCode value
      * @param string $returnDepartureCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setReturnDepartureCode(?string $returnDepartureCode = null): self
     {
@@ -1382,7 +1382,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set returnDepartureDescription value
      * @param string $returnDepartureDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setReturnDepartureDescription(?string $returnDepartureDescription = null): self
     {
@@ -1405,7 +1405,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set returnDepartureTime value
      * @param string $returnDepartureTime
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setReturnDepartureTime(?string $returnDepartureTime = null): self
     {
@@ -1428,7 +1428,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set returnDestinationCode value
      * @param string $returnDestinationCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setReturnDestinationCode(?string $returnDestinationCode = null): self
     {
@@ -1451,7 +1451,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set returnDestinationDescription value
      * @param string $returnDestinationDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setReturnDestinationDescription(?string $returnDestinationDescription = null): self
     {
@@ -1474,7 +1474,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set returnFlightNo value
      * @param string $returnFlightNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setReturnFlightNo(?string $returnFlightNo = null): self
     {
@@ -1497,7 +1497,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set sellItemId value
      * @param int $sellItemId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setSellItemId(?int $sellItemId = null): self
     {
@@ -1520,7 +1520,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -1543,7 +1543,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set taxPartPercent value
      * @param float $taxPartPercent
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setTaxPartPercent(?float $taxPartPercent = null): self
     {
@@ -1566,7 +1566,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -1589,7 +1589,7 @@ class SellItemDimensionDTO extends AbstractStructBase
     /**
      * Set turnaroundPoint value
      * @param string $turnaroundPoint
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SellItemDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\SellItemDimensionDTO
      */
     public function setTurnaroundPoint(?string $turnaroundPoint = null): self
     {

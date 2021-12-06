@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Mark extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Mark
+     * @return \Pggns\MidocoApi\Order\ServiceType\Mark
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Mark extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MarkTravelplanHistoryEmailsSentRequest $paramMarkTravelplanHistoryEmailsSentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarkTravelplanHistoryEmailsSentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\MarkTravelplanHistoryEmailsSentRequest $paramMarkTravelplanHistoryEmailsSentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MarkTravelplanHistoryEmailsSentResponse|bool
      */
-    public function markTravelplanHistoryEmailsSent(\Pggns\MidocoApi\Api\Order\StructType\MarkTravelplanHistoryEmailsSentRequest $paramMarkTravelplanHistoryEmailsSentRequest)
+    public function markTravelplanHistoryEmailsSent(\Pggns\MidocoApi\Order\StructType\MarkTravelplanHistoryEmailsSentRequest $paramMarkTravelplanHistoryEmailsSentRequest)
     {
         try {
             $this->setResult($resultMarkTravelplanHistoryEmailsSent = $this->getSoapClient()->__soapCall('markTravelplanHistoryEmailsSent', [
@@ -58,15 +58,15 @@ class Mark extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MarkInvoiceHistoryEmailSentRequest $paramMarkInvoiceHistoryEmailSentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarkInvoiceHistoryEmailSentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\MarkInvoiceHistoryEmailSentRequest $paramMarkInvoiceHistoryEmailSentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MarkInvoiceHistoryEmailSentResponse|bool
      */
-    public function markInvoiceHistoryEmailSent(\Pggns\MidocoApi\Api\Order\StructType\MarkInvoiceHistoryEmailSentRequest $paramMarkInvoiceHistoryEmailSentRequest)
+    public function markInvoiceHistoryEmailSent(\Pggns\MidocoApi\Order\StructType\MarkInvoiceHistoryEmailSentRequest $paramMarkInvoiceHistoryEmailSentRequest)
     {
         try {
             $this->setResult($resultMarkInvoiceHistoryEmailSent = $this->getSoapClient()->__soapCall('markInvoiceHistoryEmailSent', [
@@ -85,15 +85,15 @@ class Mark extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MarkExportChangedOrdersRequest $paramMarkExportChangedOrdersRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarkExportChangedOrdersResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\MarkExportChangedOrdersRequest $paramMarkExportChangedOrdersRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MarkExportChangedOrdersResponse|bool
      */
-    public function markExportChangedOrders(\Pggns\MidocoApi\Api\Order\StructType\MarkExportChangedOrdersRequest $paramMarkExportChangedOrdersRequest)
+    public function markExportChangedOrders(\Pggns\MidocoApi\Order\StructType\MarkExportChangedOrdersRequest $paramMarkExportChangedOrdersRequest)
     {
         try {
             $this->setResult($resultMarkExportChangedOrders = $this->getSoapClient()->__soapCall('markExportChangedOrders', [
@@ -112,15 +112,15 @@ class Mark extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MarkOrderDocumentEmailSentRequest $paramMarkOrderDocumentEmailSentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarkOrderDocumentEmailSentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\MarkOrderDocumentEmailSentRequest $paramMarkOrderDocumentEmailSentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MarkOrderDocumentEmailSentResponse|bool
      */
-    public function markOrderDocumentEmailSent(\Pggns\MidocoApi\Api\Order\StructType\MarkOrderDocumentEmailSentRequest $paramMarkOrderDocumentEmailSentRequest)
+    public function markOrderDocumentEmailSent(\Pggns\MidocoApi\Order\StructType\MarkOrderDocumentEmailSentRequest $paramMarkOrderDocumentEmailSentRequest)
     {
         try {
             $this->setResult($resultMarkOrderDocumentEmailSent = $this->getSoapClient()->__soapCall('markOrderDocumentEmailSent', [
@@ -139,15 +139,15 @@ class Mark extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MarkVoidedBillingNoticeCommentRequest $paramMarkVoidedBillingNoticeCommentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarkVoidedBillingNoticeCommentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\MarkVoidedBillingNoticeCommentRequest $paramMarkVoidedBillingNoticeCommentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MarkVoidedBillingNoticeCommentResponse|bool
      */
-    public function markVoidedBillingNoticeComment(\Pggns\MidocoApi\Api\Order\StructType\MarkVoidedBillingNoticeCommentRequest $paramMarkVoidedBillingNoticeCommentRequest)
+    public function markVoidedBillingNoticeComment(\Pggns\MidocoApi\Order\StructType\MarkVoidedBillingNoticeCommentRequest $paramMarkVoidedBillingNoticeCommentRequest)
     {
         try {
             $this->setResult($resultMarkVoidedBillingNoticeComment = $this->getSoapClient()->__soapCall('markVoidedBillingNoticeComment', [
@@ -166,15 +166,15 @@ class Mark extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MarkVoidedOrderNoticeCommentRequest $paramMarkVoidedOrderNoticeCommentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarkVoidedOrderNoticeCommentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\MarkVoidedOrderNoticeCommentRequest $paramMarkVoidedOrderNoticeCommentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MarkVoidedOrderNoticeCommentResponse|bool
      */
-    public function markVoidedOrderNoticeComment(\Pggns\MidocoApi\Api\Order\StructType\MarkVoidedOrderNoticeCommentRequest $paramMarkVoidedOrderNoticeCommentRequest)
+    public function markVoidedOrderNoticeComment(\Pggns\MidocoApi\Order\StructType\MarkVoidedOrderNoticeCommentRequest $paramMarkVoidedOrderNoticeCommentRequest)
     {
         try {
             $this->setResult($resultMarkVoidedOrderNoticeComment = $this->getSoapClient()->__soapCall('markVoidedOrderNoticeComment', [
@@ -191,7 +191,7 @@ class Mark extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MarkExportChangedOrdersResponse|\Pggns\MidocoApi\Api\Order\StructType\MarkInvoiceHistoryEmailSentResponse|\Pggns\MidocoApi\Api\Order\StructType\MarkOrderDocumentEmailSentResponse|\Pggns\MidocoApi\Api\Order\StructType\MarkTravelplanHistoryEmailsSentResponse|\Pggns\MidocoApi\Api\Order\StructType\MarkVoidedBillingNoticeCommentResponse|\Pggns\MidocoApi\Api\Order\StructType\MarkVoidedOrderNoticeCommentResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MarkExportChangedOrdersResponse|\Pggns\MidocoApi\Order\StructType\MarkInvoiceHistoryEmailSentResponse|\Pggns\MidocoApi\Order\StructType\MarkOrderDocumentEmailSentResponse|\Pggns\MidocoApi\Order\StructType\MarkTravelplanHistoryEmailsSentResponse|\Pggns\MidocoApi\Order\StructType\MarkVoidedBillingNoticeCommentResponse|\Pggns\MidocoApi\Order\StructType\MarkVoidedOrderNoticeCommentResponse
      */
     public function getResult()
     {

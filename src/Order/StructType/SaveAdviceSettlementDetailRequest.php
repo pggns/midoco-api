@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SaveAdviceSettlementDetailRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAdviceSettlementDetail
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail[]
      */
     protected ?array $MidocoAdviceSettlementDetail = null;
     /**
      * Constructor method for SaveAdviceSettlementDetailRequest
      * @uses SaveAdviceSettlementDetailRequest::setMidocoAdviceSettlementDetail()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail[] $midocoAdviceSettlementDetail
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail[] $midocoAdviceSettlementDetail
      */
     public function __construct(?array $midocoAdviceSettlementDetail = null)
     {
@@ -34,7 +34,7 @@ class SaveAdviceSettlementDetailRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAdviceSettlementDetail value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail[]
      */
     public function getMidocoAdviceSettlementDetail(): ?array
     {
@@ -55,12 +55,12 @@ class SaveAdviceSettlementDetailRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveAdviceSettlementDetailRequestMidocoAdviceSettlementDetailItem) {
             // validation for constraint: itemType
-            if (!$saveAdviceSettlementDetailRequestMidocoAdviceSettlementDetailItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail) {
+            if (!$saveAdviceSettlementDetailRequestMidocoAdviceSettlementDetailItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail) {
                 $invalidValues[] = is_object($saveAdviceSettlementDetailRequestMidocoAdviceSettlementDetailItem) ? get_class($saveAdviceSettlementDetailRequestMidocoAdviceSettlementDetailItem) : sprintf('%s(%s)', gettype($saveAdviceSettlementDetailRequestMidocoAdviceSettlementDetailItem), var_export($saveAdviceSettlementDetailRequestMidocoAdviceSettlementDetailItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAdviceSettlementDetail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAdviceSettlementDetail property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SaveAdviceSettlementDetailRequest extends AbstractStructBase
     /**
      * Set MidocoAdviceSettlementDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail[] $midocoAdviceSettlementDetail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveAdviceSettlementDetailRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail[] $midocoAdviceSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\SaveAdviceSettlementDetailRequest
      */
     public function setMidocoAdviceSettlementDetail(?array $midocoAdviceSettlementDetail = null): self
     {
@@ -85,14 +85,14 @@ class SaveAdviceSettlementDetailRequest extends AbstractStructBase
     /**
      * Add item to MidocoAdviceSettlementDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveAdviceSettlementDetailRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $item
+     * @return \Pggns\MidocoApi\Order\StructType\SaveAdviceSettlementDetailRequest
      */
-    public function addToMidocoAdviceSettlementDetail(\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $item): self
+    public function addToMidocoAdviceSettlementDetail(\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail) {
-            throw new InvalidArgumentException(sprintf('The MidocoAdviceSettlementDetail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail) {
+            throw new InvalidArgumentException(sprintf('The MidocoAdviceSettlementDetail property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAdviceSettlementDetail[] = $item;
         

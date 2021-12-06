@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetApplicationsForCurrentRoleResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoApplication
-     * @var \Pggns\MidocoApi\Api\System\StructType\ApplicationDTO[]
+     * @var \Pggns\MidocoApi\System\StructType\ApplicationDTO[]
      */
     protected ?array $MidocoApplication = null;
     /**
      * Constructor method for GetApplicationsForCurrentRoleResponse
      * @uses GetApplicationsForCurrentRoleResponse::setMidocoApplication()
-     * @param \Pggns\MidocoApi\Api\System\StructType\ApplicationDTO[] $midocoApplication
+     * @param \Pggns\MidocoApi\System\StructType\ApplicationDTO[] $midocoApplication
      */
     public function __construct(?array $midocoApplication = null)
     {
@@ -34,7 +34,7 @@ class GetApplicationsForCurrentRoleResponse extends AbstractStructBase
     }
     /**
      * Get MidocoApplication value
-     * @return \Pggns\MidocoApi\Api\System\StructType\ApplicationDTO[]
+     * @return \Pggns\MidocoApi\System\StructType\ApplicationDTO[]
      */
     public function getMidocoApplication(): ?array
     {
@@ -55,12 +55,12 @@ class GetApplicationsForCurrentRoleResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getApplicationsForCurrentRoleResponseMidocoApplicationItem) {
             // validation for constraint: itemType
-            if (!$getApplicationsForCurrentRoleResponseMidocoApplicationItem instanceof \Pggns\MidocoApi\Api\System\StructType\ApplicationDTO) {
+            if (!$getApplicationsForCurrentRoleResponseMidocoApplicationItem instanceof \Pggns\MidocoApi\System\StructType\ApplicationDTO) {
                 $invalidValues[] = is_object($getApplicationsForCurrentRoleResponseMidocoApplicationItem) ? get_class($getApplicationsForCurrentRoleResponseMidocoApplicationItem) : sprintf('%s(%s)', gettype($getApplicationsForCurrentRoleResponseMidocoApplicationItem), var_export($getApplicationsForCurrentRoleResponseMidocoApplicationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoApplication property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\ApplicationDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoApplication property can only contain items of type \Pggns\MidocoApi\System\StructType\ApplicationDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetApplicationsForCurrentRoleResponse extends AbstractStructBase
     /**
      * Set MidocoApplication value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\ApplicationDTO[] $midocoApplication
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetApplicationsForCurrentRoleResponse
+     * @param \Pggns\MidocoApi\System\StructType\ApplicationDTO[] $midocoApplication
+     * @return \Pggns\MidocoApi\System\StructType\GetApplicationsForCurrentRoleResponse
      */
     public function setMidocoApplication(?array $midocoApplication = null): self
     {
@@ -85,14 +85,14 @@ class GetApplicationsForCurrentRoleResponse extends AbstractStructBase
     /**
      * Add item to MidocoApplication value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\ApplicationDTO $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetApplicationsForCurrentRoleResponse
+     * @param \Pggns\MidocoApi\System\StructType\ApplicationDTO $item
+     * @return \Pggns\MidocoApi\System\StructType\GetApplicationsForCurrentRoleResponse
      */
-    public function addToMidocoApplication(\Pggns\MidocoApi\Api\System\StructType\ApplicationDTO $item): self
+    public function addToMidocoApplication(\Pggns\MidocoApi\System\StructType\ApplicationDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\ApplicationDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoApplication property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\ApplicationDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\ApplicationDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoApplication property can only contain items of type \Pggns\MidocoApi\System\StructType\ApplicationDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoApplication[] = $item;
         

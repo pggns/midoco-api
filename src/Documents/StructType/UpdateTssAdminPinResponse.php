@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class UpdateTssAdminPinResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoTssClient
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoTssClient|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient $MidocoTssClient = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoTssClient $MidocoTssClient = null;
     /**
      * Constructor method for UpdateTssAdminPinResponse
      * @uses UpdateTssAdminPinResponse::setMidocoTssClient()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient $midocoTssClient
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTssClient $midocoTssClient
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient $midocoTssClient = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoTssClient $midocoTssClient = null)
     {
         $this
             ->setMidocoTssClient($midocoTssClient);
     }
     /**
      * Get MidocoTssClient value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTssClient|null
      */
-    public function getMidocoTssClient(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient
+    public function getMidocoTssClient(): ?\Pggns\MidocoApi\Documents\StructType\MidocoTssClient
     {
         return $this->MidocoTssClient;
     }
     /**
      * Set MidocoTssClient value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient $midocoTssClient
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\UpdateTssAdminPinResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTssClient $midocoTssClient
+     * @return \Pggns\MidocoApi\Documents\StructType\UpdateTssAdminPinResponse
      */
-    public function setMidocoTssClient(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoTssClient $midocoTssClient = null): self
+    public function setMidocoTssClient(?\Pggns\MidocoApi\Documents\StructType\MidocoTssClient $midocoTssClient = null): self
     {
         $this->MidocoTssClient = $midocoTssClient;
         

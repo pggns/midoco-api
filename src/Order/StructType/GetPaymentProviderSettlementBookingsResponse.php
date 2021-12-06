@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,14 +19,14 @@ class GetPaymentProviderSettlementBookingsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPaymentProviderSettlBooking
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType[]
      */
     protected ?array $MidocoPaymentProviderSettlBooking = null;
     /**
      * The MidocoPaymentProviderSettlBookingSums
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType $MidocoPaymentProviderSettlBookingSums = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType $MidocoPaymentProviderSettlBookingSums = null;
     /**
      * The checkSum
      * @var float|null
@@ -37,11 +37,11 @@ class GetPaymentProviderSettlementBookingsResponse extends AbstractStructBase
      * @uses GetPaymentProviderSettlementBookingsResponse::setMidocoPaymentProviderSettlBooking()
      * @uses GetPaymentProviderSettlementBookingsResponse::setMidocoPaymentProviderSettlBookingSums()
      * @uses GetPaymentProviderSettlementBookingsResponse::setCheckSum()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType[] $midocoPaymentProviderSettlBooking
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType $midocoPaymentProviderSettlBookingSums
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType[] $midocoPaymentProviderSettlBooking
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType $midocoPaymentProviderSettlBookingSums
      * @param float $checkSum
      */
-    public function __construct(?array $midocoPaymentProviderSettlBooking = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType $midocoPaymentProviderSettlBookingSums = null, ?float $checkSum = null)
+    public function __construct(?array $midocoPaymentProviderSettlBooking = null, ?\Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType $midocoPaymentProviderSettlBookingSums = null, ?float $checkSum = null)
     {
         $this
             ->setMidocoPaymentProviderSettlBooking($midocoPaymentProviderSettlBooking)
@@ -50,7 +50,7 @@ class GetPaymentProviderSettlementBookingsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPaymentProviderSettlBooking value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType[]
      */
     public function getMidocoPaymentProviderSettlBooking(): ?array
     {
@@ -71,12 +71,12 @@ class GetPaymentProviderSettlementBookingsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPaymentProviderSettlementBookingsResponseMidocoPaymentProviderSettlBookingItem) {
             // validation for constraint: itemType
-            if (!$getPaymentProviderSettlementBookingsResponseMidocoPaymentProviderSettlBookingItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType) {
+            if (!$getPaymentProviderSettlementBookingsResponseMidocoPaymentProviderSettlBookingItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType) {
                 $invalidValues[] = is_object($getPaymentProviderSettlementBookingsResponseMidocoPaymentProviderSettlBookingItem) ? get_class($getPaymentProviderSettlementBookingsResponseMidocoPaymentProviderSettlBookingItem) : sprintf('%s(%s)', gettype($getPaymentProviderSettlementBookingsResponseMidocoPaymentProviderSettlBookingItem), var_export($getPaymentProviderSettlementBookingsResponseMidocoPaymentProviderSettlBookingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPaymentProviderSettlBooking property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPaymentProviderSettlBooking property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class GetPaymentProviderSettlementBookingsResponse extends AbstractStructBase
     /**
      * Set MidocoPaymentProviderSettlBooking value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType[] $midocoPaymentProviderSettlBooking
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentProviderSettlementBookingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType[] $midocoPaymentProviderSettlBooking
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementBookingsResponse
      */
     public function setMidocoPaymentProviderSettlBooking(?array $midocoPaymentProviderSettlBooking = null): self
     {
@@ -101,14 +101,14 @@ class GetPaymentProviderSettlementBookingsResponse extends AbstractStructBase
     /**
      * Add item to MidocoPaymentProviderSettlBooking value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentProviderSettlementBookingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementBookingsResponse
      */
-    public function addToMidocoPaymentProviderSettlBooking(\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType $item): self
+    public function addToMidocoPaymentProviderSettlBooking(\Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType) {
-            throw new InvalidArgumentException(sprintf('The MidocoPaymentProviderSettlBooking property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType) {
+            throw new InvalidArgumentException(sprintf('The MidocoPaymentProviderSettlBooking property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPaymentProviderSettlBooking[] = $item;
         
@@ -116,18 +116,18 @@ class GetPaymentProviderSettlementBookingsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPaymentProviderSettlBookingSums value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType|null
      */
-    public function getMidocoPaymentProviderSettlBookingSums(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType
+    public function getMidocoPaymentProviderSettlBookingSums(): ?\Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType
     {
         return $this->MidocoPaymentProviderSettlBookingSums;
     }
     /**
      * Set MidocoPaymentProviderSettlBookingSums value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType $midocoPaymentProviderSettlBookingSums
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentProviderSettlementBookingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType $midocoPaymentProviderSettlBookingSums
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementBookingsResponse
      */
-    public function setMidocoPaymentProviderSettlBookingSums(?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentProviderSettlBookingType $midocoPaymentProviderSettlBookingSums = null): self
+    public function setMidocoPaymentProviderSettlBookingSums(?\Pggns\MidocoApi\Order\StructType\MidocoPaymentProviderSettlBookingType $midocoPaymentProviderSettlBookingSums = null): self
     {
         $this->MidocoPaymentProviderSettlBookingSums = $midocoPaymentProviderSettlBookingSums;
         
@@ -144,7 +144,7 @@ class GetPaymentProviderSettlementBookingsResponse extends AbstractStructBase
     /**
      * Set checkSum value
      * @param float $checkSum
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPaymentProviderSettlementBookingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementBookingsResponse
      */
     public function setCheckSum(?float $checkSum = null): self
     {

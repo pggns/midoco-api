@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class TaskDefinitionDescrDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDefinitionDescrDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDefinitionDescrDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -86,7 +86,7 @@ class TaskDefinitionDescrDTO extends AbstractStructBase
     /**
      * Set hints value
      * @param string $hints
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDefinitionDescrDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDefinitionDescrDTO
      */
     public function setHints(?string $hints = null): self
     {
@@ -109,7 +109,7 @@ class TaskDefinitionDescrDTO extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDefinitionDescrDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDefinitionDescrDTO
      */
     public function setLocale(?string $locale = null): self
     {
@@ -132,7 +132,7 @@ class TaskDefinitionDescrDTO extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskDefinitionDescrDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDefinitionDescrDTO
      */
     public function setTaskType(?string $taskType = null): self
     {

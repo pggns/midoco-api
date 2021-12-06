@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetOrdCriteriaTypeCategoryDescriptionsRequest extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetOrdCriteriaTypeCategoryDescriptionsRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetOrdCriteriaTypeCategoryDescriptionsRequest
      */
     public function setCategoryId(?int $categoryId = null): self
     {

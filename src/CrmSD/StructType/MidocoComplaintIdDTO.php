@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoComplaintIdDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoComplaintIdDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoComplaintIdDTO
      */
     public function setId(?int $id = null): self
     {

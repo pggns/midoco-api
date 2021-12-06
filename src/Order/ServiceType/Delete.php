@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Delete extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Delete
+     * @return \Pggns\MidocoApi\Order\ServiceType\Delete
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocRemarkRequest $paramDeleteBillingDocRemarkRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocRemarkResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteBillingDocRemarkRequest $paramDeleteBillingDocRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocRemarkResponse|bool
      */
-    public function deleteBillingDocRemark(\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocRemarkRequest $paramDeleteBillingDocRemarkRequest)
+    public function deleteBillingDocRemark(\Pggns\MidocoApi\Order\StructType\DeleteBillingDocRemarkRequest $paramDeleteBillingDocRemarkRequest)
     {
         try {
             $this->setResult($resultDeleteBillingDocRemark = $this->getSoapClient()->__soapCall('deleteBillingDocRemark', [
@@ -58,15 +58,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPosRemarkRequest $paramDeleteBillingPosRemarkRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPosRemarkResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteBillingPosRemarkRequest $paramDeleteBillingPosRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingPosRemarkResponse|bool
      */
-    public function deleteBillingPosRemark(\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPosRemarkRequest $paramDeleteBillingPosRemarkRequest)
+    public function deleteBillingPosRemark(\Pggns\MidocoApi\Order\StructType\DeleteBillingPosRemarkRequest $paramDeleteBillingPosRemarkRequest)
     {
         try {
             $this->setResult($resultDeleteBillingPosRemark = $this->getSoapClient()->__soapCall('deleteBillingPosRemark', [
@@ -85,15 +85,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPositionRequest $paramDeleteBillingPositionRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPositionResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteBillingPositionRequest $paramDeleteBillingPositionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingPositionResponse|bool
      */
-    public function deleteBillingPosition(\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPositionRequest $paramDeleteBillingPositionRequest)
+    public function deleteBillingPosition(\Pggns\MidocoApi\Order\StructType\DeleteBillingPositionRequest $paramDeleteBillingPositionRequest)
     {
         try {
             $this->setResult($resultDeleteBillingPosition = $this->getSoapClient()->__soapCall('deleteBillingPosition', [
@@ -112,15 +112,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocumentRequest $paramDeleteBillingDocumentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocumentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentRequest $paramDeleteBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentResponse|bool
      */
-    public function deleteBillingDocument(\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocumentRequest $paramDeleteBillingDocumentRequest)
+    public function deleteBillingDocument(\Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentRequest $paramDeleteBillingDocumentRequest)
     {
         try {
             $this->setResult($resultDeleteBillingDocument = $this->getSoapClient()->__soapCall('deleteBillingDocument', [
@@ -139,15 +139,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderDebitPaymentRequest $paramDeleteOrderDebitPaymentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderDebitPaymentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteOrderDebitPaymentRequest $paramDeleteOrderDebitPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrderDebitPaymentResponse|bool
      */
-    public function deleteOrderDebitPayment(\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderDebitPaymentRequest $paramDeleteOrderDebitPaymentRequest)
+    public function deleteOrderDebitPayment(\Pggns\MidocoApi\Order\StructType\DeleteOrderDebitPaymentRequest $paramDeleteOrderDebitPaymentRequest)
     {
         try {
             $this->setResult($resultDeleteOrderDebitPayment = $this->getSoapClient()->__soapCall('deleteOrderDebitPayment', [
@@ -166,15 +166,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderOnlinePaymentRequest $paramDeleteOrderOnlinePaymentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderOnlinePaymentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteOrderOnlinePaymentRequest $paramDeleteOrderOnlinePaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrderOnlinePaymentResponse|bool
      */
-    public function deleteOrderOnlinePayment(\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderOnlinePaymentRequest $paramDeleteOrderOnlinePaymentRequest)
+    public function deleteOrderOnlinePayment(\Pggns\MidocoApi\Order\StructType\DeleteOrderOnlinePaymentRequest $paramDeleteOrderOnlinePaymentRequest)
     {
         try {
             $this->setResult($resultDeleteOrderOnlinePayment = $this->getSoapClient()->__soapCall('deleteOrderOnlinePayment', [
@@ -193,15 +193,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteCashbookRequest $paramDeleteCashbookRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteCashbookResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteCashbookRequest $paramDeleteCashbookRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteCashbookResponse|bool
      */
-    public function deleteCashbook(\Pggns\MidocoApi\Api\Order\StructType\DeleteCashbookRequest $paramDeleteCashbookRequest)
+    public function deleteCashbook(\Pggns\MidocoApi\Order\StructType\DeleteCashbookRequest $paramDeleteCashbookRequest)
     {
         try {
             $this->setResult($resultDeleteCashbook = $this->getSoapClient()->__soapCall('deleteCashbook', [
@@ -221,15 +221,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierSettlementErrorsForItemRequest $paramDeleteSupplierSettlementErrorsForItemRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierSettlementErrorsForItemResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteSupplierSettlementErrorsForItemRequest $paramDeleteSupplierSettlementErrorsForItemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSupplierSettlementErrorsForItemResponse|bool
      */
-    public function deleteSupplierSettlementErrorsForItem(\Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierSettlementErrorsForItemRequest $paramDeleteSupplierSettlementErrorsForItemRequest)
+    public function deleteSupplierSettlementErrorsForItem(\Pggns\MidocoApi\Order\StructType\DeleteSupplierSettlementErrorsForItemRequest $paramDeleteSupplierSettlementErrorsForItemRequest)
     {
         try {
             $this->setResult($resultDeleteSupplierSettlementErrorsForItem = $this->getSoapClient()->__soapCall('deleteSupplierSettlementErrorsForItem', [
@@ -248,15 +248,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderRemarkRequest $paramDeleteOrderRemarkRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderRemarkResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteOrderRemarkRequest $paramDeleteOrderRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrderRemarkResponse|bool
      */
-    public function deleteOrderRemark(\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderRemarkRequest $paramDeleteOrderRemarkRequest)
+    public function deleteOrderRemark(\Pggns\MidocoApi\Order\StructType\DeleteOrderRemarkRequest $paramDeleteOrderRemarkRequest)
     {
         try {
             $this->setResult($resultDeleteOrderRemark = $this->getSoapClient()->__soapCall('deleteOrderRemark', [
@@ -275,15 +275,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteCashBookPrintRequest $paramDeleteCashBookPrintRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteCashBookPrintResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteCashBookPrintRequest $paramDeleteCashBookPrintRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteCashBookPrintResponse|bool
      */
-    public function deleteCashBookPrint(\Pggns\MidocoApi\Api\Order\StructType\DeleteCashBookPrintRequest $paramDeleteCashBookPrintRequest)
+    public function deleteCashBookPrint(\Pggns\MidocoApi\Order\StructType\DeleteCashBookPrintRequest $paramDeleteCashBookPrintRequest)
     {
         try {
             $this->setResult($resultDeleteCashBookPrint = $this->getSoapClient()->__soapCall('deleteCashBookPrint', [
@@ -302,15 +302,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoBonusCalculationRequest $paramDeleteMidocoBonusCalculationRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoBonusCalculationResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteMidocoBonusCalculationRequest $paramDeleteMidocoBonusCalculationRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMidocoBonusCalculationResponse|bool
      */
-    public function deleteMidocoBonusCalculation(\Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoBonusCalculationRequest $paramDeleteMidocoBonusCalculationRequest)
+    public function deleteMidocoBonusCalculation(\Pggns\MidocoApi\Order\StructType\DeleteMidocoBonusCalculationRequest $paramDeleteMidocoBonusCalculationRequest)
     {
         try {
             $this->setResult($resultDeleteMidocoBonusCalculation = $this->getSoapClient()->__soapCall('deleteMidocoBonusCalculation', [
@@ -329,15 +329,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteSellItemRequest $paramDeleteSellItemRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSellItemResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteSellItemRequest $paramDeleteSellItemRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSellItemResponse|bool
      */
-    public function deleteSellItem(\Pggns\MidocoApi\Api\Order\StructType\DeleteSellItemRequest $paramDeleteSellItemRequest)
+    public function deleteSellItem(\Pggns\MidocoApi\Order\StructType\DeleteSellItemRequest $paramDeleteSellItemRequest)
     {
         try {
             $this->setResult($resultDeleteSellItem = $this->getSoapClient()->__soapCall('deleteSellItem', [
@@ -356,15 +356,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderRequest $paramDeleteOrderRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteOrderRequest $paramDeleteOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrderResponse|bool
      */
-    public function deleteOrder(\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderRequest $paramDeleteOrderRequest)
+    public function deleteOrder(\Pggns\MidocoApi\Order\StructType\DeleteOrderRequest $paramDeleteOrderRequest)
     {
         try {
             $this->setResult($resultDeleteOrder = $this->getSoapClient()->__soapCall('deleteOrder', [
@@ -383,15 +383,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteSkippedBookingRequest $paramDeleteSkippedBookingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSkippedBookingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteSkippedBookingRequest $paramDeleteSkippedBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSkippedBookingResponse|bool
      */
-    public function deleteSkippedBooking(\Pggns\MidocoApi\Api\Order\StructType\DeleteSkippedBookingRequest $paramDeleteSkippedBookingRequest)
+    public function deleteSkippedBooking(\Pggns\MidocoApi\Order\StructType\DeleteSkippedBookingRequest $paramDeleteSkippedBookingRequest)
     {
         try {
             $this->setResult($resultDeleteSkippedBooking = $this->getSoapClient()->__soapCall('deleteSkippedBooking', [
@@ -410,15 +410,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteOldSkippedBookingsRequest $paramDeleteOldSkippedBookingsRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOldSkippedBookingsResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteOldSkippedBookingsRequest $paramDeleteOldSkippedBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOldSkippedBookingsResponse|bool
      */
-    public function deleteOldSkippedBookings(\Pggns\MidocoApi\Api\Order\StructType\DeleteOldSkippedBookingsRequest $paramDeleteOldSkippedBookingsRequest)
+    public function deleteOldSkippedBookings(\Pggns\MidocoApi\Order\StructType\DeleteOldSkippedBookingsRequest $paramDeleteOldSkippedBookingsRequest)
     {
         try {
             $this->setResult($resultDeleteOldSkippedBookings = $this->getSoapClient()->__soapCall('deleteOldSkippedBookings', [
@@ -437,15 +437,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoBonusAdditionRequest $paramDeleteMidocoBonusAdditionRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoBonusAdditionResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteMidocoBonusAdditionRequest $paramDeleteMidocoBonusAdditionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMidocoBonusAdditionResponse|bool
      */
-    public function deleteMidocoBonusAddition(\Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoBonusAdditionRequest $paramDeleteMidocoBonusAdditionRequest)
+    public function deleteMidocoBonusAddition(\Pggns\MidocoApi\Order\StructType\DeleteMidocoBonusAdditionRequest $paramDeleteMidocoBonusAdditionRequest)
     {
         try {
             $this->setResult($resultDeleteMidocoBonusAddition = $this->getSoapClient()->__soapCall('deleteMidocoBonusAddition', [
@@ -464,15 +464,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderAttributesRequest $paramDeleteOrderAttributesRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderAttributesResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteOrderAttributesRequest $paramDeleteOrderAttributesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrderAttributesResponse|bool
      */
-    public function deleteOrderAttributes(\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderAttributesRequest $paramDeleteOrderAttributesRequest)
+    public function deleteOrderAttributes(\Pggns\MidocoApi\Order\StructType\DeleteOrderAttributesRequest $paramDeleteOrderAttributesRequest)
     {
         try {
             $this->setResult($resultDeleteOrderAttributes = $this->getSoapClient()->__soapCall('deleteOrderAttributes', [
@@ -491,15 +491,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteSellItemAttributesRequest $paramDeleteSellItemAttributesRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSellItemAttributesResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteSellItemAttributesRequest $paramDeleteSellItemAttributesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSellItemAttributesResponse|bool
      */
-    public function deleteSellItemAttributes(\Pggns\MidocoApi\Api\Order\StructType\DeleteSellItemAttributesRequest $paramDeleteSellItemAttributesRequest)
+    public function deleteSellItemAttributes(\Pggns\MidocoApi\Order\StructType\DeleteSellItemAttributesRequest $paramDeleteSellItemAttributesRequest)
     {
         try {
             $this->setResult($resultDeleteSellItemAttributes = $this->getSoapClient()->__soapCall('deleteSellItemAttributes', [
@@ -518,15 +518,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteMediatorBillingRequest $paramDeleteMediatorBillingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMediatorBillingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteMediatorBillingRequest $paramDeleteMediatorBillingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMediatorBillingResponse|bool
      */
-    public function deleteMediatorBilling(\Pggns\MidocoApi\Api\Order\StructType\DeleteMediatorBillingRequest $paramDeleteMediatorBillingRequest)
+    public function deleteMediatorBilling(\Pggns\MidocoApi\Order\StructType\DeleteMediatorBillingRequest $paramDeleteMediatorBillingRequest)
     {
         try {
             $this->setResult($resultDeleteMediatorBilling = $this->getSoapClient()->__soapCall('deleteMediatorBilling', [
@@ -545,15 +545,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteMediatorChargeRequest $paramDeleteMediatorChargeRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMediatorChargeResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteMediatorChargeRequest $paramDeleteMediatorChargeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMediatorChargeResponse|bool
      */
-    public function deleteMediatorCharge(\Pggns\MidocoApi\Api\Order\StructType\DeleteMediatorChargeRequest $paramDeleteMediatorChargeRequest)
+    public function deleteMediatorCharge(\Pggns\MidocoApi\Order\StructType\DeleteMediatorChargeRequest $paramDeleteMediatorChargeRequest)
     {
         try {
             $this->setResult($resultDeleteMediatorCharge = $this->getSoapClient()->__soapCall('deleteMediatorCharge', [
@@ -572,15 +572,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderNoticeRequest $paramDeleteOrderNoticeRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderNoticeResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteOrderNoticeRequest $paramDeleteOrderNoticeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrderNoticeResponse|bool
      */
-    public function deleteOrderNotice(\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderNoticeRequest $paramDeleteOrderNoticeRequest)
+    public function deleteOrderNotice(\Pggns\MidocoApi\Order\StructType\DeleteOrderNoticeRequest $paramDeleteOrderNoticeRequest)
     {
         try {
             $this->setResult($resultDeleteOrderNotice = $this->getSoapClient()->__soapCall('deleteOrderNotice', [
@@ -599,15 +599,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierAgencySettlementRequest $paramDeleteSupplierAgencySettlementRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierAgencySettlementResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteSupplierAgencySettlementRequest $paramDeleteSupplierAgencySettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSupplierAgencySettlementResponse|bool
      */
-    public function deleteSupplierAgencySettlement(\Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierAgencySettlementRequest $paramDeleteSupplierAgencySettlementRequest)
+    public function deleteSupplierAgencySettlement(\Pggns\MidocoApi\Order\StructType\DeleteSupplierAgencySettlementRequest $paramDeleteSupplierAgencySettlementRequest)
     {
         try {
             $this->setResult($resultDeleteSupplierAgencySettlement = $this->getSoapClient()->__soapCall('deleteSupplierAgencySettlement', [
@@ -627,15 +627,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteMediatorProductSettlementInfoRequest $paramDeleteMediatorProductSettlementInfoRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMediatorProductSettlementInfoResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteMediatorProductSettlementInfoRequest $paramDeleteMediatorProductSettlementInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMediatorProductSettlementInfoResponse|bool
      */
-    public function deleteMediatorProductSettlementInfo(\Pggns\MidocoApi\Api\Order\StructType\DeleteMediatorProductSettlementInfoRequest $paramDeleteMediatorProductSettlementInfoRequest)
+    public function deleteMediatorProductSettlementInfo(\Pggns\MidocoApi\Order\StructType\DeleteMediatorProductSettlementInfoRequest $paramDeleteMediatorProductSettlementInfoRequest)
     {
         try {
             $this->setResult($resultDeleteMediatorProductSettlementInfo = $this->getSoapClient()->__soapCall('deleteMediatorProductSettlementInfo', [
@@ -654,15 +654,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteProcessedBookingRequest $paramDeleteProcessedBookingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteProcessedBookingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteProcessedBookingRequest $paramDeleteProcessedBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteProcessedBookingResponse|bool
      */
-    public function deleteProcessedBooking(\Pggns\MidocoApi\Api\Order\StructType\DeleteProcessedBookingRequest $paramDeleteProcessedBookingRequest)
+    public function deleteProcessedBooking(\Pggns\MidocoApi\Order\StructType\DeleteProcessedBookingRequest $paramDeleteProcessedBookingRequest)
     {
         try {
             $this->setResult($resultDeleteProcessedBooking = $this->getSoapClient()->__soapCall('deleteProcessedBooking', [
@@ -681,15 +681,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteOldProcessedBookingsRequest $paramDeleteOldProcessedBookingsRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOldProcessedBookingsResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteOldProcessedBookingsRequest $paramDeleteOldProcessedBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOldProcessedBookingsResponse|bool
      */
-    public function deleteOldProcessedBookings(\Pggns\MidocoApi\Api\Order\StructType\DeleteOldProcessedBookingsRequest $paramDeleteOldProcessedBookingsRequest)
+    public function deleteOldProcessedBookings(\Pggns\MidocoApi\Order\StructType\DeleteOldProcessedBookingsRequest $paramDeleteOldProcessedBookingsRequest)
     {
         try {
             $this->setResult($resultDeleteOldProcessedBookings = $this->getSoapClient()->__soapCall('deleteOldProcessedBookings', [
@@ -708,15 +708,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderDocumentRequest $paramDeleteOrderDocumentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrderDocumentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteOrderDocumentRequest $paramDeleteOrderDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrderDocumentResponse|bool
      */
-    public function deleteOrderDocument(\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderDocumentRequest $paramDeleteOrderDocumentRequest)
+    public function deleteOrderDocument(\Pggns\MidocoApi\Order\StructType\DeleteOrderDocumentRequest $paramDeleteOrderDocumentRequest)
     {
         try {
             $this->setResult($resultDeleteOrderDocument = $this->getSoapClient()->__soapCall('deleteOrderDocument', [
@@ -735,15 +735,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocumentDocumentRequest $paramDeleteBillingDocumentDocumentRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocumentDocumentResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentDocumentRequest $paramDeleteBillingDocumentDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentDocumentResponse|bool
      */
-    public function deleteBillingDocumentDocument(\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocumentDocumentRequest $paramDeleteBillingDocumentDocumentRequest)
+    public function deleteBillingDocumentDocument(\Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentDocumentRequest $paramDeleteBillingDocumentDocumentRequest)
     {
         try {
             $this->setResult($resultDeleteBillingDocumentDocument = $this->getSoapClient()->__soapCall('deleteBillingDocumentDocument', [
@@ -762,15 +762,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteOrdersDbiInfosRequest $paramDeleteOrdersDbiInfosRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteOrdersDbiInfosResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteOrdersDbiInfosRequest $paramDeleteOrdersDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteOrdersDbiInfosResponse|bool
      */
-    public function deleteOrdersDbiInfos(\Pggns\MidocoApi\Api\Order\StructType\DeleteOrdersDbiInfosRequest $paramDeleteOrdersDbiInfosRequest)
+    public function deleteOrdersDbiInfos(\Pggns\MidocoApi\Order\StructType\DeleteOrdersDbiInfosRequest $paramDeleteOrdersDbiInfosRequest)
     {
         try {
             $this->setResult($resultDeleteOrdersDbiInfos = $this->getSoapClient()->__soapCall('deleteOrdersDbiInfos', [
@@ -789,15 +789,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteAdviceSettlementRequest $paramDeleteAdviceSettlementRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteAdviceSettlementResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteAdviceSettlementRequest $paramDeleteAdviceSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteAdviceSettlementResponse|bool
      */
-    public function deleteAdviceSettlement(\Pggns\MidocoApi\Api\Order\StructType\DeleteAdviceSettlementRequest $paramDeleteAdviceSettlementRequest)
+    public function deleteAdviceSettlement(\Pggns\MidocoApi\Order\StructType\DeleteAdviceSettlementRequest $paramDeleteAdviceSettlementRequest)
     {
         try {
             $this->setResult($resultDeleteAdviceSettlement = $this->getSoapClient()->__soapCall('deleteAdviceSettlement', [
@@ -816,15 +816,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteAdviceSettlementDetailRequest $paramDeleteAdviceSettlementDetailRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteAdviceSettlementDetailResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteAdviceSettlementDetailRequest $paramDeleteAdviceSettlementDetailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteAdviceSettlementDetailResponse|bool
      */
-    public function deleteAdviceSettlementDetail(\Pggns\MidocoApi\Api\Order\StructType\DeleteAdviceSettlementDetailRequest $paramDeleteAdviceSettlementDetailRequest)
+    public function deleteAdviceSettlementDetail(\Pggns\MidocoApi\Order\StructType\DeleteAdviceSettlementDetailRequest $paramDeleteAdviceSettlementDetailRequest)
     {
         try {
             $this->setResult($resultDeleteAdviceSettlementDetail = $this->getSoapClient()->__soapCall('deleteAdviceSettlementDetail', [
@@ -843,15 +843,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteFlightTimeChangeEmailRequest $paramDeleteFlightTimeChangeEmailRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteFlightTimeChangeEmailResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteFlightTimeChangeEmailRequest $paramDeleteFlightTimeChangeEmailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteFlightTimeChangeEmailResponse|bool
      */
-    public function deleteFlightTimeChangeEmail(\Pggns\MidocoApi\Api\Order\StructType\DeleteFlightTimeChangeEmailRequest $paramDeleteFlightTimeChangeEmailRequest)
+    public function deleteFlightTimeChangeEmail(\Pggns\MidocoApi\Order\StructType\DeleteFlightTimeChangeEmailRequest $paramDeleteFlightTimeChangeEmailRequest)
     {
         try {
             $this->setResult($resultDeleteFlightTimeChangeEmail = $this->getSoapClient()->__soapCall('deleteFlightTimeChangeEmail', [
@@ -870,15 +870,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocDbiInfosRequest $paramDeleteBillingDocDbiInfosRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocDbiInfosResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteBillingDocDbiInfosRequest $paramDeleteBillingDocDbiInfosRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingDocDbiInfosResponse|bool
      */
-    public function deleteBillingDocDbiInfos(\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocDbiInfosRequest $paramDeleteBillingDocDbiInfosRequest)
+    public function deleteBillingDocDbiInfos(\Pggns\MidocoApi\Order\StructType\DeleteBillingDocDbiInfosRequest $paramDeleteBillingDocDbiInfosRequest)
     {
         try {
             $this->setResult($resultDeleteBillingDocDbiInfos = $this->getSoapClient()->__soapCall('deleteBillingDocDbiInfos', [
@@ -897,15 +897,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoOrderQmRequest $paramDeleteMidocoOrderQmRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoOrderQmResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteMidocoOrderQmRequest $paramDeleteMidocoOrderQmRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMidocoOrderQmResponse|bool
      */
-    public function deleteMidocoOrderQm(\Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoOrderQmRequest $paramDeleteMidocoOrderQmRequest)
+    public function deleteMidocoOrderQm(\Pggns\MidocoApi\Order\StructType\DeleteMidocoOrderQmRequest $paramDeleteMidocoOrderQmRequest)
     {
         try {
             $this->setResult($resultDeleteMidocoOrderQm = $this->getSoapClient()->__soapCall('deleteMidocoOrderQm', [
@@ -924,15 +924,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteMdcSettlementChargeRequest $paramDeleteMdcSettlementChargeRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMdcSettlementChargeResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteMdcSettlementChargeRequest $paramDeleteMdcSettlementChargeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMdcSettlementChargeResponse|bool
      */
-    public function deleteMdcSettlementCharge(\Pggns\MidocoApi\Api\Order\StructType\DeleteMdcSettlementChargeRequest $paramDeleteMdcSettlementChargeRequest)
+    public function deleteMdcSettlementCharge(\Pggns\MidocoApi\Order\StructType\DeleteMdcSettlementChargeRequest $paramDeleteMdcSettlementChargeRequest)
     {
         try {
             $this->setResult($resultDeleteMdcSettlementCharge = $this->getSoapClient()->__soapCall('deleteMdcSettlementCharge', [
@@ -951,15 +951,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteMdcSettlementBillingRequest $paramDeleteMdcSettlementBillingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMdcSettlementBillingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteMdcSettlementBillingRequest $paramDeleteMdcSettlementBillingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMdcSettlementBillingResponse|bool
      */
-    public function deleteMdcSettlementBilling(\Pggns\MidocoApi\Api\Order\StructType\DeleteMdcSettlementBillingRequest $paramDeleteMdcSettlementBillingRequest)
+    public function deleteMdcSettlementBilling(\Pggns\MidocoApi\Order\StructType\DeleteMdcSettlementBillingRequest $paramDeleteMdcSettlementBillingRequest)
     {
         try {
             $this->setResult($resultDeleteMdcSettlementBilling = $this->getSoapClient()->__soapCall('deleteMdcSettlementBilling', [
@@ -978,15 +978,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteSellRemarkRequest $paramDeleteSellRemarkRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSellRemarkResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteSellRemarkRequest $paramDeleteSellRemarkRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSellRemarkResponse|bool
      */
-    public function deleteSellRemark(\Pggns\MidocoApi\Api\Order\StructType\DeleteSellRemarkRequest $paramDeleteSellRemarkRequest)
+    public function deleteSellRemark(\Pggns\MidocoApi\Order\StructType\DeleteSellRemarkRequest $paramDeleteSellRemarkRequest)
     {
         try {
             $this->setResult($resultDeleteSellRemark = $this->getSoapClient()->__soapCall('deleteSellRemark', [
@@ -1005,15 +1005,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingNoticesRequest $paramDeleteBillingNoticesRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingNoticesResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteBillingNoticesRequest $paramDeleteBillingNoticesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingNoticesResponse|bool
      */
-    public function deleteBillingNotices(\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingNoticesRequest $paramDeleteBillingNoticesRequest)
+    public function deleteBillingNotices(\Pggns\MidocoApi\Order\StructType\DeleteBillingNoticesRequest $paramDeleteBillingNoticesRequest)
     {
         try {
             $this->setResult($resultDeleteBillingNotices = $this->getSoapClient()->__soapCall('deleteBillingNotices', [
@@ -1032,15 +1032,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeletePaymentProviderSettlementRequest $paramDeletePaymentProviderSettlementRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeletePaymentProviderSettlementResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeletePaymentProviderSettlementRequest $paramDeletePaymentProviderSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeletePaymentProviderSettlementResponse|bool
      */
-    public function deletePaymentProviderSettlement(\Pggns\MidocoApi\Api\Order\StructType\DeletePaymentProviderSettlementRequest $paramDeletePaymentProviderSettlementRequest)
+    public function deletePaymentProviderSettlement(\Pggns\MidocoApi\Order\StructType\DeletePaymentProviderSettlementRequest $paramDeletePaymentProviderSettlementRequest)
     {
         try {
             $this->setResult($resultDeletePaymentProviderSettlement = $this->getSoapClient()->__soapCall('deletePaymentProviderSettlement', [
@@ -1059,15 +1059,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPrintRequest $paramDeleteBillingPrintRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPrintResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteBillingPrintRequest $paramDeleteBillingPrintRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteBillingPrintResponse|bool
      */
-    public function deleteBillingPrint(\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPrintRequest $paramDeleteBillingPrintRequest)
+    public function deleteBillingPrint(\Pggns\MidocoApi\Order\StructType\DeleteBillingPrintRequest $paramDeleteBillingPrintRequest)
     {
         try {
             $this->setResult($resultDeleteBillingPrint = $this->getSoapClient()->__soapCall('deleteBillingPrint', [
@@ -1084,7 +1084,7 @@ class Delete extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteAdviceSettlementDetailResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteAdviceSettlementResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocDbiInfosResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocRemarkResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocumentDocumentResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingDocumentResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingNoticesResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPositionResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPosRemarkResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteBillingPrintResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteCashBookPrintResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteCashbookResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteFlightTimeChangeEmailResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteMdcSettlementBillingResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteMdcSettlementChargeResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteMediatorBillingResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteMediatorChargeResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteMediatorProductSettlementInfoResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoBonusAdditionResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoBonusCalculationResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoOrderQmResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteOldProcessedBookingsResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteOldSkippedBookingsResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderAttributesResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderDebitPaymentResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderDocumentResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderNoticeResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderOnlinePaymentResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderRemarkResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteOrderResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteOrdersDbiInfosResponse|\Pggns\MidocoApi\Api\Order\StructType\DeletePaymentProviderSettlementResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteProcessedBookingResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteSellItemAttributesResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteSellItemResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteSellRemarkResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteSkippedBookingResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierAgencySettlementResponse|\Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierSettlementErrorsForItemResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteAdviceSettlementDetailResponse|\Pggns\MidocoApi\Order\StructType\DeleteAdviceSettlementResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingDocDbiInfosResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingDocRemarkResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentDocumentResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingNoticesResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingPositionResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingPosRemarkResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingPrintResponse|\Pggns\MidocoApi\Order\StructType\DeleteCashBookPrintResponse|\Pggns\MidocoApi\Order\StructType\DeleteCashbookResponse|\Pggns\MidocoApi\Order\StructType\DeleteFlightTimeChangeEmailResponse|\Pggns\MidocoApi\Order\StructType\DeleteMdcSettlementBillingResponse|\Pggns\MidocoApi\Order\StructType\DeleteMdcSettlementChargeResponse|\Pggns\MidocoApi\Order\StructType\DeleteMediatorBillingResponse|\Pggns\MidocoApi\Order\StructType\DeleteMediatorChargeResponse|\Pggns\MidocoApi\Order\StructType\DeleteMediatorProductSettlementInfoResponse|\Pggns\MidocoApi\Order\StructType\DeleteMidocoBonusAdditionResponse|\Pggns\MidocoApi\Order\StructType\DeleteMidocoBonusCalculationResponse|\Pggns\MidocoApi\Order\StructType\DeleteMidocoOrderQmResponse|\Pggns\MidocoApi\Order\StructType\DeleteOldProcessedBookingsResponse|\Pggns\MidocoApi\Order\StructType\DeleteOldSkippedBookingsResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderAttributesResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderDebitPaymentResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderDocumentResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderNoticeResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderOnlinePaymentResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderRemarkResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrdersDbiInfosResponse|\Pggns\MidocoApi\Order\StructType\DeletePaymentProviderSettlementResponse|\Pggns\MidocoApi\Order\StructType\DeleteProcessedBookingResponse|\Pggns\MidocoApi\Order\StructType\DeleteSellItemAttributesResponse|\Pggns\MidocoApi\Order\StructType\DeleteSellItemResponse|\Pggns\MidocoApi\Order\StructType\DeleteSellRemarkResponse|\Pggns\MidocoApi\Order\StructType\DeleteSkippedBookingResponse|\Pggns\MidocoApi\Order\StructType\DeleteSupplierAgencySettlementResponse|\Pggns\MidocoApi\Order\StructType\DeleteSupplierSettlementErrorsForItemResponse
      */
     public function getResult()
     {

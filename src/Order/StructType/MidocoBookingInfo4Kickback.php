@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class MidocoBookingInfo4Kickback extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -118,7 +118,7 @@ class MidocoBookingInfo4Kickback extends AbstractStructBase
     /**
      * Set supplierBookingId value
      * @param string $supplierBookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback
      */
     public function setSupplierBookingId(?string $supplierBookingId = null): self
     {
@@ -141,7 +141,7 @@ class MidocoBookingInfo4Kickback extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -164,7 +164,7 @@ class MidocoBookingInfo4Kickback extends AbstractStructBase
     /**
      * Set countryDestination value
      * @param string $countryDestination
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback
      */
     public function setCountryDestination(?string $countryDestination = null): self
     {
@@ -187,7 +187,7 @@ class MidocoBookingInfo4Kickback extends AbstractStructBase
     /**
      * Set salePrice value
      * @param float $salePrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback
      */
     public function setSalePrice(?float $salePrice = null): self
     {
@@ -210,7 +210,7 @@ class MidocoBookingInfo4Kickback extends AbstractStructBase
     /**
      * Set kickbackAmount value
      * @param float $kickbackAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback
      */
     public function setKickbackAmount(?float $kickbackAmount = null): self
     {
@@ -233,7 +233,7 @@ class MidocoBookingInfo4Kickback extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback
      */
     public function setStatus(?string $status = null): self
     {
@@ -256,7 +256,7 @@ class MidocoBookingInfo4Kickback extends AbstractStructBase
     /**
      * Set paymentDate value
      * @param string $paymentDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingInfo4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingInfo4Kickback
      */
     public function setPaymentDate(?string $paymentDate = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\ServiceType;
+namespace Pggns\MidocoApi\Crm\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class _Print extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Crm\ServiceType\_Print
+     * @return \Pggns\MidocoApi\Crm\ServiceType\_Print
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class _Print extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\PrintCustomerLetterRequest $paramPrintCustomerLetterRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PrintCustomerLetterResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\PrintCustomerLetterRequest $paramPrintCustomerLetterRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\PrintCustomerLetterResponse|bool
      */
-    public function printCustomerLetter(\Pggns\MidocoApi\Api\Crm\StructType\PrintCustomerLetterRequest $paramPrintCustomerLetterRequest)
+    public function printCustomerLetter(\Pggns\MidocoApi\Crm\StructType\PrintCustomerLetterRequest $paramPrintCustomerLetterRequest)
     {
         try {
             $this->setResult($resultPrintCustomerLetter = $this->getSoapClient()->__soapCall('printCustomerLetter', [
@@ -58,15 +58,15 @@ class _Print extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\PrintSupplierReportForMediatorRequest $paramPrintSupplierReportForMediatorRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PrintSupplierReportForMediatorResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\PrintSupplierReportForMediatorRequest $paramPrintSupplierReportForMediatorRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\PrintSupplierReportForMediatorResponse|bool
      */
-    public function printSupplierReportForMediator(\Pggns\MidocoApi\Api\Crm\StructType\PrintSupplierReportForMediatorRequest $paramPrintSupplierReportForMediatorRequest)
+    public function printSupplierReportForMediator(\Pggns\MidocoApi\Crm\StructType\PrintSupplierReportForMediatorRequest $paramPrintSupplierReportForMediatorRequest)
     {
         try {
             $this->setResult($resultPrintSupplierReportForMediator = $this->getSoapClient()->__soapCall('printSupplierReportForMediator', [
@@ -85,15 +85,15 @@ class _Print extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\PrintCommunicationHistoryRequest $paramPrintCommunicationHistoryRequest
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PrintCommunicationHistoryResponse|bool
+     * @param \Pggns\MidocoApi\Crm\StructType\PrintCommunicationHistoryRequest $paramPrintCommunicationHistoryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\PrintCommunicationHistoryResponse|bool
      */
-    public function printCommunicationHistory(\Pggns\MidocoApi\Api\Crm\StructType\PrintCommunicationHistoryRequest $paramPrintCommunicationHistoryRequest)
+    public function printCommunicationHistory(\Pggns\MidocoApi\Crm\StructType\PrintCommunicationHistoryRequest $paramPrintCommunicationHistoryRequest)
     {
         try {
             $this->setResult($resultPrintCommunicationHistory = $this->getSoapClient()->__soapCall('printCommunicationHistory', [
@@ -110,7 +110,7 @@ class _Print extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\PrintCommunicationHistoryResponse|\Pggns\MidocoApi\Api\Crm\StructType\PrintCustomerLetterResponse|\Pggns\MidocoApi\Api\Crm\StructType\PrintSupplierReportForMediatorResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\PrintCommunicationHistoryResponse|\Pggns\MidocoApi\Crm\StructType\PrintCustomerLetterResponse|\Pggns\MidocoApi\Crm\StructType\PrintSupplierReportForMediatorResponse
      */
     public function getResult()
     {

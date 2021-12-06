@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
      * The attributes
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Attributes|null
+     * @var \Pggns\MidocoApi\Order\StructType\Attributes|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\Attributes $attributes = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\Attributes $attributes = null;
     /**
      * The pictures
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Pictures|null
+     * @var \Pggns\MidocoApi\Order\StructType\Pictures|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\Pictures $pictures = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\Pictures $pictures = null;
     /**
      * The hotelname
      * @var string|null
@@ -91,8 +91,8 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
      * @uses GetCmsHotelDataResponseType::setCity()
      * @uses GetCmsHotelDataResponseType::setSavedWithStatusOk()
      * @uses GetCmsHotelDataResponseType::setCountSavedAttributes()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Attributes $attributes
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Pictures $pictures
+     * @param \Pggns\MidocoApi\Order\StructType\Attributes $attributes
+     * @param \Pggns\MidocoApi\Order\StructType\Pictures $pictures
      * @param string $hotelname
      * @param float $category
      * @param int $opic
@@ -104,7 +104,7 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
      * @param bool $savedWithStatusOk
      * @param int $countSavedAttributes
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\Attributes $attributes = null, ?\Pggns\MidocoApi\Api\Order\StructType\Pictures $pictures = null, ?string $hotelname = null, ?float $category = null, ?int $opic = null, ?string $destination = null, ?string $region = null, ?string $country = null, ?string $countrycode = null, ?string $city = null, ?bool $savedWithStatusOk = null, ?int $countSavedAttributes = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\Attributes $attributes = null, ?\Pggns\MidocoApi\Order\StructType\Pictures $pictures = null, ?string $hotelname = null, ?float $category = null, ?int $opic = null, ?string $destination = null, ?string $region = null, ?string $country = null, ?string $countrycode = null, ?string $city = null, ?bool $savedWithStatusOk = null, ?int $countSavedAttributes = null)
     {
         $this
             ->setAttributes($attributes)
@@ -122,18 +122,18 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
     }
     /**
      * Get attributes value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Attributes|null
+     * @return \Pggns\MidocoApi\Order\StructType\Attributes|null
      */
-    public function getAttributes(): ?\Pggns\MidocoApi\Api\Order\StructType\Attributes
+    public function getAttributes(): ?\Pggns\MidocoApi\Order\StructType\Attributes
     {
         return $this->attributes;
     }
     /**
      * Set attributes value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Attributes $attributes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataResponseType
+     * @param \Pggns\MidocoApi\Order\StructType\Attributes $attributes
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType
      */
-    public function setAttributes(?\Pggns\MidocoApi\Api\Order\StructType\Attributes $attributes = null): self
+    public function setAttributes(?\Pggns\MidocoApi\Order\StructType\Attributes $attributes = null): self
     {
         $this->attributes = $attributes;
         
@@ -141,18 +141,18 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
     }
     /**
      * Get pictures value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Pictures|null
+     * @return \Pggns\MidocoApi\Order\StructType\Pictures|null
      */
-    public function getPictures(): ?\Pggns\MidocoApi\Api\Order\StructType\Pictures
+    public function getPictures(): ?\Pggns\MidocoApi\Order\StructType\Pictures
     {
         return $this->pictures;
     }
     /**
      * Set pictures value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Pictures $pictures
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataResponseType
+     * @param \Pggns\MidocoApi\Order\StructType\Pictures $pictures
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType
      */
-    public function setPictures(?\Pggns\MidocoApi\Api\Order\StructType\Pictures $pictures = null): self
+    public function setPictures(?\Pggns\MidocoApi\Order\StructType\Pictures $pictures = null): self
     {
         $this->pictures = $pictures;
         
@@ -169,7 +169,7 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
     /**
      * Set hotelname value
      * @param string $hotelname
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataResponseType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType
      */
     public function setHotelname(?string $hotelname = null): self
     {
@@ -192,7 +192,7 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
     /**
      * Set category value
      * @param float $category
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataResponseType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType
      */
     public function setCategory(?float $category = null): self
     {
@@ -215,7 +215,7 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
     /**
      * Set opic value
      * @param int $opic
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataResponseType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType
      */
     public function setOpic(?int $opic = null): self
     {
@@ -238,7 +238,7 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataResponseType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType
      */
     public function setDestination(?string $destination = null): self
     {
@@ -261,7 +261,7 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
     /**
      * Set region value
      * @param string $region
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataResponseType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType
      */
     public function setRegion(?string $region = null): self
     {
@@ -284,7 +284,7 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataResponseType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType
      */
     public function setCountry(?string $country = null): self
     {
@@ -307,7 +307,7 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
     /**
      * Set countrycode value
      * @param string $countrycode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataResponseType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType
      */
     public function setCountrycode(?string $countrycode = null): self
     {
@@ -330,7 +330,7 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataResponseType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType
      */
     public function setCity(?string $city = null): self
     {
@@ -353,7 +353,7 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
     /**
      * Set savedWithStatusOk value
      * @param bool $savedWithStatusOk
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataResponseType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType
      */
     public function setSavedWithStatusOk(?bool $savedWithStatusOk = null): self
     {
@@ -376,7 +376,7 @@ class GetCmsHotelDataResponseType extends AbstractStructBase
     /**
      * Set countSavedAttributes value
      * @param int $countSavedAttributes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataResponseType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType
      */
     public function setCountSavedAttributes(?int $countSavedAttributes = null): self
     {

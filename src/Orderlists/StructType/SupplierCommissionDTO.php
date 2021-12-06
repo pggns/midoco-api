@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SupplierCommissionDTO extends AbstractStructBase
     /**
      * Set commissionId value
      * @param string $commissionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierCommissionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierCommissionDTO
      */
     public function setCommissionId(?string $commissionId = null): self
     {
@@ -86,7 +86,7 @@ class SupplierCommissionDTO extends AbstractStructBase
     /**
      * Set commissionPercent value
      * @param float $commissionPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierCommissionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierCommissionDTO
      */
     public function setCommissionPercent(?float $commissionPercent = null): self
     {
@@ -109,7 +109,7 @@ class SupplierCommissionDTO extends AbstractStructBase
     /**
      * Set prePayment value
      * @param bool $prePayment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierCommissionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierCommissionDTO
      */
     public function setPrePayment(?bool $prePayment = null): self
     {
@@ -132,7 +132,7 @@ class SupplierCommissionDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierCommissionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierCommissionDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

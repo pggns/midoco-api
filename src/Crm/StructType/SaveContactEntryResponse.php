@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class SaveContactEntryResponse extends AbstractStructBase
      * Set errors value
      * @throws InvalidArgumentException
      * @param string[] $errors
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveContactEntryResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveContactEntryResponse
      */
     public function setErrors(?array $errors = null): self
     {
@@ -103,7 +103,7 @@ class SaveContactEntryResponse extends AbstractStructBase
      * Add item to errors value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveContactEntryResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveContactEntryResponse
      */
     public function addToErrors(string $item): self
     {
@@ -126,7 +126,7 @@ class SaveContactEntryResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveContactEntryResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveContactEntryResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -149,7 +149,7 @@ class SaveContactEntryResponse extends AbstractStructBase
     /**
      * Set contactId value
      * @param int $contactId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveContactEntryResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveContactEntryResponse
      */
     public function setContactId(?int $contactId = null): self
     {

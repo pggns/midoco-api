@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetOrderLockPeriodResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderLockPeriod
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod[]
      */
     protected ?array $MidocoOrderLockPeriod = null;
     /**
      * Constructor method for GetOrderLockPeriodResponse
      * @uses GetOrderLockPeriodResponse::setMidocoOrderLockPeriod()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod[] $midocoOrderLockPeriod
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod[] $midocoOrderLockPeriod
      */
     public function __construct(?array $midocoOrderLockPeriod = null)
     {
@@ -34,7 +34,7 @@ class GetOrderLockPeriodResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderLockPeriod value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod[]
      */
     public function getMidocoOrderLockPeriod(): ?array
     {
@@ -55,12 +55,12 @@ class GetOrderLockPeriodResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderLockPeriodResponseMidocoOrderLockPeriodItem) {
             // validation for constraint: itemType
-            if (!$getOrderLockPeriodResponseMidocoOrderLockPeriodItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod) {
+            if (!$getOrderLockPeriodResponseMidocoOrderLockPeriodItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod) {
                 $invalidValues[] = is_object($getOrderLockPeriodResponseMidocoOrderLockPeriodItem) ? get_class($getOrderLockPeriodResponseMidocoOrderLockPeriodItem) : sprintf('%s(%s)', gettype($getOrderLockPeriodResponseMidocoOrderLockPeriodItem), var_export($getOrderLockPeriodResponseMidocoOrderLockPeriodItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderLockPeriod property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderLockPeriod property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetOrderLockPeriodResponse extends AbstractStructBase
     /**
      * Set MidocoOrderLockPeriod value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod[] $midocoOrderLockPeriod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderLockPeriodResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod[] $midocoOrderLockPeriod
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderLockPeriodResponse
      */
     public function setMidocoOrderLockPeriod(?array $midocoOrderLockPeriod = null): self
     {
@@ -85,14 +85,14 @@ class GetOrderLockPeriodResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderLockPeriod value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderLockPeriodResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderLockPeriodResponse
      */
-    public function addToMidocoOrderLockPeriod(\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod $item): self
+    public function addToMidocoOrderLockPeriod(\Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderLockPeriod property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderLockPeriod, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderLockPeriod property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderLockPeriod, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderLockPeriod[] = $item;
         

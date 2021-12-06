@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetBillingNoticeCommentsRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingNoticeCommentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingNoticeCommentsRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -70,7 +70,7 @@ class GetBillingNoticeCommentsRequest extends AbstractStructBase
     /**
      * Set noticePosition value
      * @param int $noticePosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingNoticeCommentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingNoticeCommentsRequest
      */
     public function setNoticePosition(?int $noticePosition = null): self
     {

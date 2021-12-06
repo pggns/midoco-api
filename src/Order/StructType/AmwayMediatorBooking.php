@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -167,7 +167,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -190,7 +190,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -213,7 +213,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setType(?int $type = null): self
     {
@@ -236,7 +236,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set isFee value
      * @param bool $isFee
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setIsFee(?bool $isFee = null): self
     {
@@ -259,7 +259,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -282,7 +282,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -305,7 +305,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set supplierName value
      * @param string $supplierName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setSupplierName(?string $supplierName = null): self
     {
@@ -328,7 +328,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -351,7 +351,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setStatus(?string $status = null): self
     {
@@ -374,7 +374,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setAmount(?float $amount = null): self
     {
@@ -397,7 +397,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set ownUsage value
      * @param string $ownUsage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setOwnUsage(?string $ownUsage = null): self
     {
@@ -420,7 +420,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set productGroup value
      * @param string $productGroup
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setProductGroup(?string $productGroup = null): self
     {
@@ -443,7 +443,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set travellerName value
      * @param string $travellerName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setTravellerName(?string $travellerName = null): self
     {
@@ -466,7 +466,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -489,7 +489,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set expedient value
      * @param string $expedient
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setExpedient(?string $expedient = null): self
     {
@@ -512,7 +512,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set sourceSystem value
      * @param string $sourceSystem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setSourceSystem(?string $sourceSystem = null): self
     {
@@ -535,7 +535,7 @@ class AmwayMediatorBooking extends AbstractStructBase
     /**
      * Set mediatorAffiliate value
      * @param string $mediatorAffiliate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmwayMediatorBooking
+     * @return \Pggns\MidocoApi\Order\StructType\AmwayMediatorBooking
      */
     public function setMediatorAffiliate(?string $mediatorAffiliate = null): self
     {

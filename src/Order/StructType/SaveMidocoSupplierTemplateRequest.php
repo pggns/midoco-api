@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoSupplierTemplateRequest extends AbstractStructBase
      * The MidocoSupplierTemplate
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierTemplate
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SupplierTemplateDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\SupplierTemplateDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\SupplierTemplateDTO $MidocoSupplierTemplate = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\SupplierTemplateDTO $MidocoSupplierTemplate = null;
     /**
      * Constructor method for SaveMidocoSupplierTemplateRequest
      * @uses SaveMidocoSupplierTemplateRequest::setMidocoSupplierTemplate()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierTemplateDTO $midocoSupplierTemplate
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierTemplateDTO $midocoSupplierTemplate
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\SupplierTemplateDTO $midocoSupplierTemplate = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\SupplierTemplateDTO $midocoSupplierTemplate = null)
     {
         $this
             ->setMidocoSupplierTemplate($midocoSupplierTemplate);
     }
     /**
      * Get MidocoSupplierTemplate value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierTemplateDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierTemplateDTO|null
      */
-    public function getMidocoSupplierTemplate(): ?\Pggns\MidocoApi\Api\Order\StructType\SupplierTemplateDTO
+    public function getMidocoSupplierTemplate(): ?\Pggns\MidocoApi\Order\StructType\SupplierTemplateDTO
     {
         return $this->MidocoSupplierTemplate;
     }
     /**
      * Set MidocoSupplierTemplate value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SupplierTemplateDTO $midocoSupplierTemplate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveMidocoSupplierTemplateRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SupplierTemplateDTO $midocoSupplierTemplate
+     * @return \Pggns\MidocoApi\Order\StructType\SaveMidocoSupplierTemplateRequest
      */
-    public function setMidocoSupplierTemplate(?\Pggns\MidocoApi\Api\Order\StructType\SupplierTemplateDTO $midocoSupplierTemplate = null): self
+    public function setMidocoSupplierTemplate(?\Pggns\MidocoApi\Order\StructType\SupplierTemplateDTO $midocoSupplierTemplate = null): self
     {
         $this->MidocoSupplierTemplate = $midocoSupplierTemplate;
         

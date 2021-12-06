@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class CreateTssClientResponse extends TssApiErrorConveyingResponse
      * The MidocoTssClient
      * Meta information extracted from the WSDL
      * - ref: MidocoTssClient
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTssClient|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoTssClient|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTssClient $MidocoTssClient = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoTssClient $MidocoTssClient = null;
     /**
      * Constructor method for CreateTssClientResponse
      * @uses CreateTssClientResponse::setMidocoTssClient()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTssClient $midocoTssClient
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoTssClient $midocoTssClient
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTssClient $midocoTssClient = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoTssClient $midocoTssClient = null)
     {
         $this
             ->setMidocoTssClient($midocoTssClient);
     }
     /**
      * Get MidocoTssClient value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTssClient|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoTssClient|null
      */
-    public function getMidocoTssClient(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTssClient
+    public function getMidocoTssClient(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoTssClient
     {
         return $this->MidocoTssClient;
     }
     /**
      * Set MidocoTssClient value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTssClient $midocoTssClient
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\CreateTssClientResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoTssClient $midocoTssClient
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CreateTssClientResponse
      */
-    public function setMidocoTssClient(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoTssClient $midocoTssClient = null): self
+    public function setMidocoTssClient(?\Pggns\MidocoApi\OrderSD\StructType\MidocoTssClient $midocoTssClient = null): self
     {
         $this->MidocoTssClient = $midocoTssClient;
         

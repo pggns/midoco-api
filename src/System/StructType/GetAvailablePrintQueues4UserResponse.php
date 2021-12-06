@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAvailablePrintQueues4UserResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPrintQueue
-     * @var \Pggns\MidocoApi\Api\System\StructType\PrintQueueDTO[]
+     * @var \Pggns\MidocoApi\System\StructType\PrintQueueDTO[]
      */
     protected ?array $MidocoPrintQueue = null;
     /**
      * Constructor method for GetAvailablePrintQueues4UserResponse
      * @uses GetAvailablePrintQueues4UserResponse::setMidocoPrintQueue()
-     * @param \Pggns\MidocoApi\Api\System\StructType\PrintQueueDTO[] $midocoPrintQueue
+     * @param \Pggns\MidocoApi\System\StructType\PrintQueueDTO[] $midocoPrintQueue
      */
     public function __construct(?array $midocoPrintQueue = null)
     {
@@ -34,7 +34,7 @@ class GetAvailablePrintQueues4UserResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPrintQueue value
-     * @return \Pggns\MidocoApi\Api\System\StructType\PrintQueueDTO[]
+     * @return \Pggns\MidocoApi\System\StructType\PrintQueueDTO[]
      */
     public function getMidocoPrintQueue(): ?array
     {
@@ -55,12 +55,12 @@ class GetAvailablePrintQueues4UserResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailablePrintQueues4UserResponseMidocoPrintQueueItem) {
             // validation for constraint: itemType
-            if (!$getAvailablePrintQueues4UserResponseMidocoPrintQueueItem instanceof \Pggns\MidocoApi\Api\System\StructType\PrintQueueDTO) {
+            if (!$getAvailablePrintQueues4UserResponseMidocoPrintQueueItem instanceof \Pggns\MidocoApi\System\StructType\PrintQueueDTO) {
                 $invalidValues[] = is_object($getAvailablePrintQueues4UserResponseMidocoPrintQueueItem) ? get_class($getAvailablePrintQueues4UserResponseMidocoPrintQueueItem) : sprintf('%s(%s)', gettype($getAvailablePrintQueues4UserResponseMidocoPrintQueueItem), var_export($getAvailablePrintQueues4UserResponseMidocoPrintQueueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintQueue property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\PrintQueueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintQueue property can only contain items of type \Pggns\MidocoApi\System\StructType\PrintQueueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAvailablePrintQueues4UserResponse extends AbstractStructBase
     /**
      * Set MidocoPrintQueue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\PrintQueueDTO[] $midocoPrintQueue
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAvailablePrintQueues4UserResponse
+     * @param \Pggns\MidocoApi\System\StructType\PrintQueueDTO[] $midocoPrintQueue
+     * @return \Pggns\MidocoApi\System\StructType\GetAvailablePrintQueues4UserResponse
      */
     public function setMidocoPrintQueue(?array $midocoPrintQueue = null): self
     {
@@ -85,14 +85,14 @@ class GetAvailablePrintQueues4UserResponse extends AbstractStructBase
     /**
      * Add item to MidocoPrintQueue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\PrintQueueDTO $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAvailablePrintQueues4UserResponse
+     * @param \Pggns\MidocoApi\System\StructType\PrintQueueDTO $item
+     * @return \Pggns\MidocoApi\System\StructType\GetAvailablePrintQueues4UserResponse
      */
-    public function addToMidocoPrintQueue(\Pggns\MidocoApi\Api\System\StructType\PrintQueueDTO $item): self
+    public function addToMidocoPrintQueue(\Pggns\MidocoApi\System\StructType\PrintQueueDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\PrintQueueDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintQueue property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\PrintQueueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\PrintQueueDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintQueue property can only contain items of type \Pggns\MidocoApi\System\StructType\PrintQueueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintQueue[] = $item;
         

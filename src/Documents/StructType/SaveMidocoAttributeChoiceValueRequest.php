@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveMidocoAttributeChoiceValueRequest extends AbstractStructBase
      * The MidocoSystemAttributeChoiceValue
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeChoiceValue
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueDTO $MidocoSystemAttributeChoiceValue = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueDTO $MidocoSystemAttributeChoiceValue = null;
     /**
      * The isNew
      * @var bool|null
@@ -29,10 +29,10 @@ class SaveMidocoAttributeChoiceValueRequest extends AbstractStructBase
      * Constructor method for SaveMidocoAttributeChoiceValueRequest
      * @uses SaveMidocoAttributeChoiceValueRequest::setMidocoSystemAttributeChoiceValue()
      * @uses SaveMidocoAttributeChoiceValueRequest::setIsNew()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
+     * @param \Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
      * @param bool $isNew
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null, ?bool $isNew = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null, ?bool $isNew = null)
     {
         $this
             ->setMidocoSystemAttributeChoiceValue($midocoSystemAttributeChoiceValue)
@@ -40,18 +40,18 @@ class SaveMidocoAttributeChoiceValueRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSystemAttributeChoiceValue value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueDTO|null
      */
-    public function getMidocoSystemAttributeChoiceValue(): ?\Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueDTO
+    public function getMidocoSystemAttributeChoiceValue(): ?\Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueDTO
     {
         return $this->MidocoSystemAttributeChoiceValue;
     }
     /**
      * Set MidocoSystemAttributeChoiceValue value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveMidocoAttributeChoiceValueRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveMidocoAttributeChoiceValueRequest
      */
-    public function setMidocoSystemAttributeChoiceValue(?\Pggns\MidocoApi\Api\Documents\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null): self
+    public function setMidocoSystemAttributeChoiceValue(?\Pggns\MidocoApi\Documents\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null): self
     {
         $this->MidocoSystemAttributeChoiceValue = $midocoSystemAttributeChoiceValue;
         
@@ -68,7 +68,7 @@ class SaveMidocoAttributeChoiceValueRequest extends AbstractStructBase
     /**
      * Set isNew value
      * @param bool $isNew
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveMidocoAttributeChoiceValueRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveMidocoAttributeChoiceValueRequest
      */
     public function setIsNew(?bool $isNew = null): self
     {

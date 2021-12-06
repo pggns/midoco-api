@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ImportMisOlapDataRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ImportMisOlapDataRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\ImportMisOlapDataRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoTemplateTypesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTemplateType
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO[]
      */
     protected ?array $MidocoTemplateType = null;
     /**
      * Constructor method for GetMidocoTemplateTypesResponse
      * @uses GetMidocoTemplateTypesResponse::setMidocoTemplateType()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO[] $midocoTemplateType
+     * @param \Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO[] $midocoTemplateType
      */
     public function __construct(?array $midocoTemplateType = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoTemplateTypesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTemplateType value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO[]
      */
     public function getMidocoTemplateType(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoTemplateTypesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoTemplateTypesResponseMidocoTemplateTypeItem) {
             // validation for constraint: itemType
-            if (!$getMidocoTemplateTypesResponseMidocoTemplateTypeItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO) {
+            if (!$getMidocoTemplateTypesResponseMidocoTemplateTypeItem instanceof \Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO) {
                 $invalidValues[] = is_object($getMidocoTemplateTypesResponseMidocoTemplateTypeItem) ? get_class($getMidocoTemplateTypesResponseMidocoTemplateTypeItem) : sprintf('%s(%s)', gettype($getMidocoTemplateTypesResponseMidocoTemplateTypeItem), var_export($getMidocoTemplateTypesResponseMidocoTemplateTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTemplateType property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTemplateType property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoTemplateTypesResponse extends AbstractStructBase
     /**
      * Set MidocoTemplateType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO[] $midocoTemplateType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTemplateTypesResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO[] $midocoTemplateType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoTemplateTypesResponse
      */
     public function setMidocoTemplateType(?array $midocoTemplateType = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoTemplateTypesResponse extends AbstractStructBase
     /**
      * Add item to MidocoTemplateType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoTemplateTypesResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoTemplateTypesResponse
      */
-    public function addToMidocoTemplateType(\Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO $item): self
+    public function addToMidocoTemplateType(\Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoTemplateType property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoTemplateType property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\TemplateTypeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTemplateType[] = $item;
         

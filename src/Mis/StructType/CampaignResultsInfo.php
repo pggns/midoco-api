@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CampaignResultsInfo extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -86,7 +86,7 @@ class CampaignResultsInfo extends AbstractStructBase
     /**
      * Set customerOrgunit value
      * @param string $customerOrgunit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo
      */
     public function setCustomerOrgunit(?string $customerOrgunit = null): self
     {
@@ -109,7 +109,7 @@ class CampaignResultsInfo extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -132,7 +132,7 @@ class CampaignResultsInfo extends AbstractStructBase
     /**
      * Set campaignOrgunit value
      * @param string $campaignOrgunit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CampaignResultsInfo
+     * @return \Pggns\MidocoApi\Mis\StructType\CampaignResultsInfo
      */
     public function setCampaignOrgunit(?string $campaignOrgunit = null): self
     {

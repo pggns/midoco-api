@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveUserHistoryRequest extends AbstractStructBase
      * The MidocoUserHistory
      * Meta information extracted from the WSDL
      * - ref: MidocoUserHistory
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO|null
+     * @var \Pggns\MidocoApi\Booking\StructType\UserHistoryDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO $MidocoUserHistory = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\UserHistoryDTO $MidocoUserHistory = null;
     /**
      * Constructor method for SaveUserHistoryRequest
      * @uses SaveUserHistoryRequest::setMidocoUserHistory()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO $midocoUserHistory
+     * @param \Pggns\MidocoApi\Booking\StructType\UserHistoryDTO $midocoUserHistory
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO $midocoUserHistory = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\UserHistoryDTO $midocoUserHistory = null)
     {
         $this
             ->setMidocoUserHistory($midocoUserHistory);
     }
     /**
      * Get MidocoUserHistory value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO|null
+     * @return \Pggns\MidocoApi\Booking\StructType\UserHistoryDTO|null
      */
-    public function getMidocoUserHistory(): ?\Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO
+    public function getMidocoUserHistory(): ?\Pggns\MidocoApi\Booking\StructType\UserHistoryDTO
     {
         return $this->MidocoUserHistory;
     }
     /**
      * Set MidocoUserHistory value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO $midocoUserHistory
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SaveUserHistoryRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\UserHistoryDTO $midocoUserHistory
+     * @return \Pggns\MidocoApi\Booking\StructType\SaveUserHistoryRequest
      */
-    public function setMidocoUserHistory(?\Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO $midocoUserHistory = null): self
+    public function setMidocoUserHistory(?\Pggns\MidocoApi\Booking\StructType\UserHistoryDTO $midocoUserHistory = null): self
     {
         $this->MidocoUserHistory = $midocoUserHistory;
         

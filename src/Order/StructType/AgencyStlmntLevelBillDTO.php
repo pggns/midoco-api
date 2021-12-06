@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set actualTurnover value
      * @param float $actualTurnover
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setActualTurnover(?float $actualTurnover = null): self
     {
@@ -174,7 +174,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -197,7 +197,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set compareFromDate value
      * @param string $compareFromDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setCompareFromDate(?string $compareFromDate = null): self
     {
@@ -220,7 +220,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set compareToDate value
      * @param string $compareToDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setCompareToDate(?string $compareToDate = null): self
     {
@@ -243,7 +243,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -266,7 +266,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -289,7 +289,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -312,7 +312,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -335,7 +335,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set fromDate value
      * @param string $fromDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setFromDate(?string $fromDate = null): self
     {
@@ -358,7 +358,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set previousTurnover value
      * @param float $previousTurnover
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setPreviousTurnover(?float $previousTurnover = null): self
     {
@@ -381,7 +381,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -404,7 +404,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set toDate value
      * @param string $toDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setToDate(?string $toDate = null): self
     {
@@ -427,7 +427,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set totalNettoAmount value
      * @param float $totalNettoAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setTotalNettoAmount(?float $totalNettoAmount = null): self
     {
@@ -450,7 +450,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set totalVatAmount value
      * @param float $totalVatAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setTotalVatAmount(?float $totalVatAmount = null): self
     {
@@ -473,7 +473,7 @@ class AgencyStlmntLevelBillDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AgencyStlmntLevelBillDTO
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyStlmntLevelBillDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class DeleteCustomerUserAddressingRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmUserAddressing
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmUserAddressingDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmUserAddressingDTO[]
      */
     protected ?array $MidocoCrmUserAddressing = null;
     /**
      * Constructor method for DeleteCustomerUserAddressingRequest
      * @uses DeleteCustomerUserAddressingRequest::setMidocoCrmUserAddressing()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmUserAddressingDTO[] $midocoCrmUserAddressing
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmUserAddressingDTO[] $midocoCrmUserAddressing
      */
     public function __construct(?array $midocoCrmUserAddressing = null)
     {
@@ -34,7 +34,7 @@ class DeleteCustomerUserAddressingRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmUserAddressing value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmUserAddressingDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmUserAddressingDTO[]
      */
     public function getMidocoCrmUserAddressing(): ?array
     {
@@ -55,12 +55,12 @@ class DeleteCustomerUserAddressingRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteCustomerUserAddressingRequestMidocoCrmUserAddressingItem) {
             // validation for constraint: itemType
-            if (!$deleteCustomerUserAddressingRequestMidocoCrmUserAddressingItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CrmUserAddressingDTO) {
+            if (!$deleteCustomerUserAddressingRequestMidocoCrmUserAddressingItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmUserAddressingDTO) {
                 $invalidValues[] = is_object($deleteCustomerUserAddressingRequestMidocoCrmUserAddressingItem) ? get_class($deleteCustomerUserAddressingRequestMidocoCrmUserAddressingItem) : sprintf('%s(%s)', gettype($deleteCustomerUserAddressingRequestMidocoCrmUserAddressingItem), var_export($deleteCustomerUserAddressingRequestMidocoCrmUserAddressingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmUserAddressing property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CrmUserAddressingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmUserAddressing property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmUserAddressingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class DeleteCustomerUserAddressingRequest extends AbstractStructBase
     /**
      * Set MidocoCrmUserAddressing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmUserAddressingDTO[] $midocoCrmUserAddressing
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCustomerUserAddressingRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmUserAddressingDTO[] $midocoCrmUserAddressing
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCustomerUserAddressingRequest
      */
     public function setMidocoCrmUserAddressing(?array $midocoCrmUserAddressing = null): self
     {
@@ -85,14 +85,14 @@ class DeleteCustomerUserAddressingRequest extends AbstractStructBase
     /**
      * Add item to MidocoCrmUserAddressing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmUserAddressingDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteCustomerUserAddressingRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmUserAddressingDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCustomerUserAddressingRequest
      */
-    public function addToMidocoCrmUserAddressing(\Pggns\MidocoApi\Api\CrmSD\StructType\CrmUserAddressingDTO $item): self
+    public function addToMidocoCrmUserAddressing(\Pggns\MidocoApi\CrmSD\StructType\CrmUserAddressingDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CrmUserAddressingDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmUserAddressing property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CrmUserAddressingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmUserAddressingDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmUserAddressing property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmUserAddressingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmUserAddressing[] = $item;
         

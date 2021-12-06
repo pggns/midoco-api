@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class MidocoOrderRetentionPeriod extends OrderRetentionPeriodDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoOrderRetentionPeriod
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoOrderRetentionPeriod
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {
@@ -72,7 +72,7 @@ class MidocoOrderRetentionPeriod extends OrderRetentionPeriodDTO
     /**
      * Set period value
      * @param bool $period
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoOrderRetentionPeriod
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoOrderRetentionPeriod
      */
     public function setPeriod(?bool $period = true): self
     {

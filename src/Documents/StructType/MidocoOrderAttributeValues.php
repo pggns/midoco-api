@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,7 +20,7 @@ class MidocoOrderAttributeValues extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\OrderAttr[]
+     * @var \Pggns\MidocoApi\Documents\StructType\OrderAttr[]
      */
     protected ?array $orderAttr = null;
     /**
@@ -28,15 +28,15 @@ class MidocoOrderAttributeValues extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\ItemAttr[]
+     * @var \Pggns\MidocoApi\Documents\StructType\ItemAttr[]
      */
     protected ?array $itemAttr = null;
     /**
      * Constructor method for MidocoOrderAttributeValues
      * @uses MidocoOrderAttributeValues::setOrderAttr()
      * @uses MidocoOrderAttributeValues::setItemAttr()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\OrderAttr[] $orderAttr
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ItemAttr[] $itemAttr
+     * @param \Pggns\MidocoApi\Documents\StructType\OrderAttr[] $orderAttr
+     * @param \Pggns\MidocoApi\Documents\StructType\ItemAttr[] $itemAttr
      */
     public function __construct(?array $orderAttr = null, ?array $itemAttr = null)
     {
@@ -46,7 +46,7 @@ class MidocoOrderAttributeValues extends AbstractStructBase
     }
     /**
      * Get orderAttr value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderAttr[]
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderAttr[]
      */
     public function getOrderAttr(): ?array
     {
@@ -67,12 +67,12 @@ class MidocoOrderAttributeValues extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoOrderAttributeValuesOrderAttrItem) {
             // validation for constraint: itemType
-            if (!$midocoOrderAttributeValuesOrderAttrItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\OrderAttr) {
+            if (!$midocoOrderAttributeValuesOrderAttrItem instanceof \Pggns\MidocoApi\Documents\StructType\OrderAttr) {
                 $invalidValues[] = is_object($midocoOrderAttributeValuesOrderAttrItem) ? get_class($midocoOrderAttributeValuesOrderAttrItem) : sprintf('%s(%s)', gettype($midocoOrderAttributeValuesOrderAttrItem), var_export($midocoOrderAttributeValuesOrderAttrItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The orderAttr property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\OrderAttr, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The orderAttr property can only contain items of type \Pggns\MidocoApi\Documents\StructType\OrderAttr, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -81,8 +81,8 @@ class MidocoOrderAttributeValues extends AbstractStructBase
     /**
      * Set orderAttr value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\OrderAttr[] $orderAttr
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttributeValues
+     * @param \Pggns\MidocoApi\Documents\StructType\OrderAttr[] $orderAttr
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttributeValues
      */
     public function setOrderAttr(?array $orderAttr = null): self
     {
@@ -97,14 +97,14 @@ class MidocoOrderAttributeValues extends AbstractStructBase
     /**
      * Add item to orderAttr value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\OrderAttr $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttributeValues
+     * @param \Pggns\MidocoApi\Documents\StructType\OrderAttr $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttributeValues
      */
-    public function addToOrderAttr(\Pggns\MidocoApi\Api\Documents\StructType\OrderAttr $item): self
+    public function addToOrderAttr(\Pggns\MidocoApi\Documents\StructType\OrderAttr $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\OrderAttr) {
-            throw new InvalidArgumentException(sprintf('The orderAttr property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\OrderAttr, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\OrderAttr) {
+            throw new InvalidArgumentException(sprintf('The orderAttr property can only contain items of type \Pggns\MidocoApi\Documents\StructType\OrderAttr, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->orderAttr[] = $item;
         
@@ -112,7 +112,7 @@ class MidocoOrderAttributeValues extends AbstractStructBase
     }
     /**
      * Get itemAttr value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ItemAttr[]
+     * @return \Pggns\MidocoApi\Documents\StructType\ItemAttr[]
      */
     public function getItemAttr(): ?array
     {
@@ -133,12 +133,12 @@ class MidocoOrderAttributeValues extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoOrderAttributeValuesItemAttrItem) {
             // validation for constraint: itemType
-            if (!$midocoOrderAttributeValuesItemAttrItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\ItemAttr) {
+            if (!$midocoOrderAttributeValuesItemAttrItem instanceof \Pggns\MidocoApi\Documents\StructType\ItemAttr) {
                 $invalidValues[] = is_object($midocoOrderAttributeValuesItemAttrItem) ? get_class($midocoOrderAttributeValuesItemAttrItem) : sprintf('%s(%s)', gettype($midocoOrderAttributeValuesItemAttrItem), var_export($midocoOrderAttributeValuesItemAttrItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The itemAttr property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\ItemAttr, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The itemAttr property can only contain items of type \Pggns\MidocoApi\Documents\StructType\ItemAttr, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,8 +147,8 @@ class MidocoOrderAttributeValues extends AbstractStructBase
     /**
      * Set itemAttr value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ItemAttr[] $itemAttr
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttributeValues
+     * @param \Pggns\MidocoApi\Documents\StructType\ItemAttr[] $itemAttr
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttributeValues
      */
     public function setItemAttr(?array $itemAttr = null): self
     {
@@ -163,14 +163,14 @@ class MidocoOrderAttributeValues extends AbstractStructBase
     /**
      * Add item to itemAttr value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ItemAttr $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttributeValues
+     * @param \Pggns\MidocoApi\Documents\StructType\ItemAttr $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttributeValues
      */
-    public function addToItemAttr(\Pggns\MidocoApi\Api\Documents\StructType\ItemAttr $item): self
+    public function addToItemAttr(\Pggns\MidocoApi\Documents\StructType\ItemAttr $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\ItemAttr) {
-            throw new InvalidArgumentException(sprintf('The itemAttr property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\ItemAttr, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\ItemAttr) {
+            throw new InvalidArgumentException(sprintf('The itemAttr property can only contain items of type \Pggns\MidocoApi\Documents\StructType\ItemAttr, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->itemAttr[] = $item;
         

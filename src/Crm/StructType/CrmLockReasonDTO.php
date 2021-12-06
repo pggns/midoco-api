@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class CrmLockReasonDTO extends AbstractStructBase
     /**
      * Set reasonId value
      * @param string $reasonId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmLockReasonDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmLockReasonDTO
      */
     public function setReasonId(?string $reasonId = null): self
     {
@@ -70,7 +70,7 @@ class CrmLockReasonDTO extends AbstractStructBase
     /**
      * Set showMessage value
      * @param bool $showMessage
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmLockReasonDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmLockReasonDTO
      */
     public function setShowMessage(?bool $showMessage = null): self
     {

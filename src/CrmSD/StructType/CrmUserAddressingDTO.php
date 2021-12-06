@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CrmUserAddressingDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmUserAddressingDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmUserAddressingDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +78,7 @@ class CrmUserAddressingDTO extends AbstractStructBase
     /**
      * Set formalAddressing value
      * @param bool $formalAddressing
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmUserAddressingDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmUserAddressingDTO
      */
     public function setFormalAddressing(?bool $formalAddressing = null): self
     {
@@ -101,7 +101,7 @@ class CrmUserAddressingDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmUserAddressingDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmUserAddressingDTO
      */
     public function setUserId(?int $userId = null): self
     {

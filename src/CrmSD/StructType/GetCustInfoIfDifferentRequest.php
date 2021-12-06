@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class GetCustInfoIfDifferentRequest extends AbstractStructBase
     /**
      * Set customerId1 value
      * @param int $customerId1
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustInfoIfDifferentRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustInfoIfDifferentRequest
      */
     public function setCustomerId1(int $customerId1): self
     {
@@ -74,7 +74,7 @@ class GetCustInfoIfDifferentRequest extends AbstractStructBase
     /**
      * Set customerId2 value
      * @param int $customerId2
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustInfoIfDifferentRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustInfoIfDifferentRequest
      */
     public function setCustomerId2(int $customerId2): self
     {

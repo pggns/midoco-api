@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -159,7 +159,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set accountBlz value
      * @param string $accountBlz
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setAccountBlz(?string $accountBlz = null): self
     {
@@ -182,7 +182,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -205,7 +205,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set accountOwner value
      * @param string $accountOwner
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setAccountOwner(?string $accountOwner = null): self
     {
@@ -228,7 +228,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setBankName(?string $bankName = null): self
     {
@@ -251,7 +251,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -274,7 +274,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -297,7 +297,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set fileFormat value
      * @param int $fileFormat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setFileFormat(?int $fileFormat = null): self
     {
@@ -320,7 +320,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set fileid value
      * @param int $fileid
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setFileid(?int $fileid = null): self
     {
@@ -343,7 +343,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set genDate value
      * @param string $genDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setGenDate(?string $genDate = null): self
     {
@@ -366,7 +366,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set genUserId value
      * @param int $genUserId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setGenUserId(?int $genUserId = null): self
     {
@@ -389,7 +389,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -412,7 +412,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set isVoided value
      * @param bool $isVoided
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setIsVoided(?bool $isVoided = null): self
     {
@@ -435,7 +435,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set stream value
      * @param string $stream
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setStream(?string $stream = null): self
     {
@@ -458,7 +458,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -481,7 +481,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set totalValue value
      * @param float $totalValue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setTotalValue(?float $totalValue = null): self
     {
@@ -504,7 +504,7 @@ class DtausFileDTO extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DtausFileDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DtausFileDTO
      */
     public function setType(?int $type = null): self
     {

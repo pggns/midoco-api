@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetAgedDebtorCreditorReportRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: KeyValue
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\KeyValue[]
+     * @var \Pggns\MidocoApi\Mis\StructType\KeyValue[]
      */
     protected ?array $KeyValue = null;
     /**
@@ -37,7 +37,7 @@ class GetAgedDebtorCreditorReportRequest extends AbstractStructBase
      * @uses GetAgedDebtorCreditorReportRequest::setKeyValue()
      * @uses GetAgedDebtorCreditorReportRequest::setCustomerId()
      * @uses GetAgedDebtorCreditorReportRequest::setFormat()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\KeyValue[] $keyValue
+     * @param \Pggns\MidocoApi\Mis\StructType\KeyValue[] $keyValue
      * @param int $customerId
      * @param string $format
      */
@@ -50,7 +50,7 @@ class GetAgedDebtorCreditorReportRequest extends AbstractStructBase
     }
     /**
      * Get KeyValue value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\KeyValue[]
+     * @return \Pggns\MidocoApi\Mis\StructType\KeyValue[]
      */
     public function getKeyValue(): ?array
     {
@@ -71,12 +71,12 @@ class GetAgedDebtorCreditorReportRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAgedDebtorCreditorReportRequestKeyValueItem) {
             // validation for constraint: itemType
-            if (!$getAgedDebtorCreditorReportRequestKeyValueItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\KeyValue) {
+            if (!$getAgedDebtorCreditorReportRequestKeyValueItem instanceof \Pggns\MidocoApi\Mis\StructType\KeyValue) {
                 $invalidValues[] = is_object($getAgedDebtorCreditorReportRequestKeyValueItem) ? get_class($getAgedDebtorCreditorReportRequestKeyValueItem) : sprintf('%s(%s)', gettype($getAgedDebtorCreditorReportRequestKeyValueItem), var_export($getAgedDebtorCreditorReportRequestKeyValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The KeyValue property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\KeyValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The KeyValue property can only contain items of type \Pggns\MidocoApi\Mis\StructType\KeyValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class GetAgedDebtorCreditorReportRequest extends AbstractStructBase
     /**
      * Set KeyValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\KeyValue[] $keyValue
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAgedDebtorCreditorReportRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\KeyValue[] $keyValue
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAgedDebtorCreditorReportRequest
      */
     public function setKeyValue(?array $keyValue = null): self
     {
@@ -101,14 +101,14 @@ class GetAgedDebtorCreditorReportRequest extends AbstractStructBase
     /**
      * Add item to KeyValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\KeyValue $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAgedDebtorCreditorReportRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\KeyValue $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAgedDebtorCreditorReportRequest
      */
-    public function addToKeyValue(\Pggns\MidocoApi\Api\Mis\StructType\KeyValue $item): self
+    public function addToKeyValue(\Pggns\MidocoApi\Mis\StructType\KeyValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\KeyValue) {
-            throw new InvalidArgumentException(sprintf('The KeyValue property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\KeyValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\KeyValue) {
+            throw new InvalidArgumentException(sprintf('The KeyValue property can only contain items of type \Pggns\MidocoApi\Mis\StructType\KeyValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->KeyValue[] = $item;
         
@@ -125,7 +125,7 @@ class GetAgedDebtorCreditorReportRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAgedDebtorCreditorReportRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAgedDebtorCreditorReportRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -148,7 +148,7 @@ class GetAgedDebtorCreditorReportRequest extends AbstractStructBase
     /**
      * Set format value
      * @param string $format
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetAgedDebtorCreditorReportRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetAgedDebtorCreditorReportRequest
      */
     public function setFormat(?string $format = null): self
     {

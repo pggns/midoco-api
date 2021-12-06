@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -24,9 +24,9 @@ class SalesListBySupplierAndMonthRequest extends AbstractStructBase
      * The MidocoSalesListBySupplierCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoSalesListBySupplierCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $MidocoSalesListBySupplierCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $MidocoSalesListBySupplierCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -49,11 +49,11 @@ class SalesListBySupplierAndMonthRequest extends AbstractStructBase
      * @uses SalesListBySupplierAndMonthRequest::setMaxReturned()
      * @uses SalesListBySupplierAndMonthRequest::setExcludedUnitName()
      * @param string $directDebitor
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria
      * @param int $maxReturned
      * @param string[] $excludedUnitName
      */
-    public function __construct(string $directDebitor, ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria = null, ?int $maxReturned = null, ?array $excludedUnitName = null)
+    public function __construct(string $directDebitor, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria = null, ?int $maxReturned = null, ?array $excludedUnitName = null)
     {
         $this
             ->setDirectDebitor($directDebitor)
@@ -72,7 +72,7 @@ class SalesListBySupplierAndMonthRequest extends AbstractStructBase
     /**
      * Set directDebitor value
      * @param string $directDebitor
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierAndMonthRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthRequest
      */
     public function setDirectDebitor(string $directDebitor): self
     {
@@ -86,18 +86,18 @@ class SalesListBySupplierAndMonthRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSalesListBySupplierCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType|null
      */
-    public function getMidocoSalesListBySupplierCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType
+    public function getMidocoSalesListBySupplierCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType
     {
         return $this->MidocoSalesListBySupplierCriteria;
     }
     /**
      * Set MidocoSalesListBySupplierCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierAndMonthRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthRequest
      */
-    public function setMidocoSalesListBySupplierCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria = null): self
+    public function setMidocoSalesListBySupplierCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria = null): self
     {
         $this->MidocoSalesListBySupplierCriteria = $midocoSalesListBySupplierCriteria;
         
@@ -114,7 +114,7 @@ class SalesListBySupplierAndMonthRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierAndMonthRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {
@@ -164,7 +164,7 @@ class SalesListBySupplierAndMonthRequest extends AbstractStructBase
      * Set excludedUnitName value
      * @throws InvalidArgumentException
      * @param string[] $excludedUnitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierAndMonthRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthRequest
      */
     public function setExcludedUnitName(?array $excludedUnitName = null): self
     {
@@ -180,7 +180,7 @@ class SalesListBySupplierAndMonthRequest extends AbstractStructBase
      * Add item to excludedUnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListBySupplierAndMonthRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthRequest
      */
     public function addToExcludedUnitName(string $item): self
     {

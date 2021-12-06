@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -271,7 +271,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -294,7 +294,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set accountOwner value
      * @param string $accountOwner
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setAccountOwner(?string $accountOwner = null): self
     {
@@ -317,7 +317,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set bankAccountNo value
      * @param string $bankAccountNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setBankAccountNo(?string $bankAccountNo = null): self
     {
@@ -340,7 +340,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set bankCountry value
      * @param string $bankCountry
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setBankCountry(?string $bankCountry = null): self
     {
@@ -363,7 +363,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set bankDescription value
      * @param string $bankDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setBankDescription(?string $bankDescription = null): self
     {
@@ -386,7 +386,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setBankName(?string $bankName = null): self
     {
@@ -409,7 +409,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set bankNo value
      * @param string $bankNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setBankNo(?string $bankNo = null): self
     {
@@ -432,7 +432,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -455,7 +455,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set contactPerson value
      * @param string $contactPerson
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setContactPerson(?string $contactPerson = null): self
     {
@@ -478,7 +478,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -501,7 +501,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set customerNo value
      * @param string $customerNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setCustomerNo(?string $customerNo = null): self
     {
@@ -524,7 +524,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set debteeId value
      * @param string $debteeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setDebteeId(?string $debteeId = null): self
     {
@@ -547,7 +547,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set department value
      * @param string $department
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setDepartment(?string $department = null): self
     {
@@ -570,7 +570,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set esrBankParticipantId value
      * @param string $esrBankParticipantId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setEsrBankParticipantId(?string $esrBankParticipantId = null): self
     {
@@ -593,7 +593,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set esrParticipantId value
      * @param string $esrParticipantId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setEsrParticipantId(?string $esrParticipantId = null): self
     {
@@ -616,7 +616,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set firmCode value
      * @param string $firmCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setFirmCode(?string $firmCode = null): self
     {
@@ -639,7 +639,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setIban(?string $iban = null): self
     {
@@ -662,7 +662,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set intermediateAccountCredit value
      * @param string $intermediateAccountCredit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setIntermediateAccountCredit(?string $intermediateAccountCredit = null): self
     {
@@ -685,7 +685,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set intermediateAccountDebit value
      * @param string $intermediateAccountDebit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setIntermediateAccountDebit(?string $intermediateAccountDebit = null): self
     {
@@ -708,7 +708,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set nationalBankKey value
      * @param string $nationalBankKey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setNationalBankKey(?string $nationalBankKey = null): self
     {
@@ -731,7 +731,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set nationalBankNotification value
      * @param bool $nationalBankNotification
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setNationalBankNotification(?bool $nationalBankNotification = null): self
     {
@@ -754,7 +754,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set paymentScheme value
      * @param string $paymentScheme
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setPaymentScheme(?string $paymentScheme = null): self
     {
@@ -777,7 +777,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setPhone(?string $phone = null): self
     {
@@ -800,7 +800,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -823,7 +823,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -846,7 +846,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set processStatements value
      * @param bool $processStatements
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setProcessStatements(?bool $processStatements = null): self
     {
@@ -869,7 +869,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -892,7 +892,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set swiftBicCode value
      * @param string $swiftBicCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setSwiftBicCode(?string $swiftBicCode = null): self
     {
@@ -915,7 +915,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -938,7 +938,7 @@ class BankAccountDTO extends AbstractStructBase
     /**
      * Set use4Esr value
      * @param bool $use4Esr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BankAccountDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BankAccountDTO
      */
     public function setUse4Esr(?bool $use4Esr = null): self
     {

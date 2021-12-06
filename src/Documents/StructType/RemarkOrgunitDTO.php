@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class RemarkOrgunitDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RemarkOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RemarkOrgunitDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -78,7 +78,7 @@ class RemarkOrgunitDTO extends AbstractStructBase
     /**
      * Set shortId value
      * @param string $shortId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RemarkOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RemarkOrgunitDTO
      */
     public function setShortId(?string $shortId = null): self
     {
@@ -101,7 +101,7 @@ class RemarkOrgunitDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RemarkOrgunitDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RemarkOrgunitDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

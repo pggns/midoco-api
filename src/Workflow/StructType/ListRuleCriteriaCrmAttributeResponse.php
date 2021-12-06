@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ListRuleCriteriaCrmAttributeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoRuleCriteriaCrmAttribute
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO[]
      */
     protected ?array $MidocoRuleCriteriaCrmAttribute = null;
     /**
      * Constructor method for ListRuleCriteriaCrmAttributeResponse
      * @uses ListRuleCriteriaCrmAttributeResponse::setMidocoRuleCriteriaCrmAttribute()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO[] $midocoRuleCriteriaCrmAttribute
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO[] $midocoRuleCriteriaCrmAttribute
      */
     public function __construct(?array $midocoRuleCriteriaCrmAttribute = null)
     {
@@ -34,7 +34,7 @@ class ListRuleCriteriaCrmAttributeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoRuleCriteriaCrmAttribute value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO[]
      */
     public function getMidocoRuleCriteriaCrmAttribute(): ?array
     {
@@ -55,12 +55,12 @@ class ListRuleCriteriaCrmAttributeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listRuleCriteriaCrmAttributeResponseMidocoRuleCriteriaCrmAttributeItem) {
             // validation for constraint: itemType
-            if (!$listRuleCriteriaCrmAttributeResponseMidocoRuleCriteriaCrmAttributeItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO) {
+            if (!$listRuleCriteriaCrmAttributeResponseMidocoRuleCriteriaCrmAttributeItem instanceof \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO) {
                 $invalidValues[] = is_object($listRuleCriteriaCrmAttributeResponseMidocoRuleCriteriaCrmAttributeItem) ? get_class($listRuleCriteriaCrmAttributeResponseMidocoRuleCriteriaCrmAttributeItem) : sprintf('%s(%s)', gettype($listRuleCriteriaCrmAttributeResponseMidocoRuleCriteriaCrmAttributeItem), var_export($listRuleCriteriaCrmAttributeResponseMidocoRuleCriteriaCrmAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoRuleCriteriaCrmAttribute property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoRuleCriteriaCrmAttribute property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ListRuleCriteriaCrmAttributeResponse extends AbstractStructBase
     /**
      * Set MidocoRuleCriteriaCrmAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO[] $midocoRuleCriteriaCrmAttribute
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaCrmAttributeResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO[] $midocoRuleCriteriaCrmAttribute
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaCrmAttributeResponse
      */
     public function setMidocoRuleCriteriaCrmAttribute(?array $midocoRuleCriteriaCrmAttribute = null): self
     {
@@ -85,14 +85,14 @@ class ListRuleCriteriaCrmAttributeResponse extends AbstractStructBase
     /**
      * Add item to MidocoRuleCriteriaCrmAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaCrmAttributeResponse
+     * @param \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaCrmAttributeResponse
      */
-    public function addToMidocoRuleCriteriaCrmAttribute(\Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO $item): self
+    public function addToMidocoRuleCriteriaCrmAttribute(\Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoRuleCriteriaCrmAttribute property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaCrmAttributeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoRuleCriteriaCrmAttribute property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaCrmAttributeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRuleCriteriaCrmAttribute[] = $item;
         

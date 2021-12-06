@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetRemarkSuppliersRequest extends AbstractStructBase
      * The MidocoRemarkSupplier
      * Meta information extracted from the WSDL
      * - ref: MidocoRemarkSupplier
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkSupplier|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoRemarkSupplier|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkSupplier $MidocoRemarkSupplier = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoRemarkSupplier $MidocoRemarkSupplier = null;
     /**
      * Constructor method for GetRemarkSuppliersRequest
      * @uses GetRemarkSuppliersRequest::setMidocoRemarkSupplier()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkSupplier $midocoRemarkSupplier
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoRemarkSupplier $midocoRemarkSupplier
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkSupplier $midocoRemarkSupplier = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoRemarkSupplier $midocoRemarkSupplier = null)
     {
         $this
             ->setMidocoRemarkSupplier($midocoRemarkSupplier);
     }
     /**
      * Get MidocoRemarkSupplier value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkSupplier|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoRemarkSupplier|null
      */
-    public function getMidocoRemarkSupplier(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkSupplier
+    public function getMidocoRemarkSupplier(): ?\Pggns\MidocoApi\Order\StructType\MidocoRemarkSupplier
     {
         return $this->MidocoRemarkSupplier;
     }
     /**
      * Set MidocoRemarkSupplier value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkSupplier $midocoRemarkSupplier
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRemarkSuppliersRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoRemarkSupplier $midocoRemarkSupplier
+     * @return \Pggns\MidocoApi\Order\StructType\GetRemarkSuppliersRequest
      */
-    public function setMidocoRemarkSupplier(?\Pggns\MidocoApi\Api\Order\StructType\MidocoRemarkSupplier $midocoRemarkSupplier = null): self
+    public function setMidocoRemarkSupplier(?\Pggns\MidocoApi\Order\StructType\MidocoRemarkSupplier $midocoRemarkSupplier = null): self
     {
         $this->MidocoRemarkSupplier = $midocoRemarkSupplier;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -28,7 +28,7 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellPassenger
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[]
      */
     protected ?array $MidocoSellPassenger = null;
     /**
@@ -36,9 +36,9 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoOnlinePaymentHelper
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper $MidocoOnlinePaymentHelper = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper $MidocoOnlinePaymentHelper = null;
     /**
      * The isPreview
      * Meta information extracted from the WSDL
@@ -103,8 +103,8 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
      * @uses PrintOrderInvoiceRequest::setCollectivePrint()
      * @uses PrintOrderInvoiceRequest::setConfirmationGroup()
      * @param int $orderId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper
      * @param bool $isPreview
      * @param string $printMedia
      * @param bool $saveToTempTable
@@ -114,7 +114,7 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
      * @param bool $collectivePrint
      * @param string $confirmationGroup
      */
-    public function __construct(int $orderId, ?array $midocoSellPassenger = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper = null, ?bool $isPreview = false, ?string $printMedia = 'P', ?bool $saveToTempTable = false, ?bool $sendAsEMail = false, ?string $calculatedPrintDate = null, ?int $queueId = null, ?bool $collectivePrint = false, ?string $confirmationGroup = null)
+    public function __construct(int $orderId, ?array $midocoSellPassenger = null, ?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper = null, ?bool $isPreview = false, ?string $printMedia = 'P', ?bool $saveToTempTable = false, ?bool $sendAsEMail = false, ?string $calculatedPrintDate = null, ?int $queueId = null, ?bool $collectivePrint = false, ?string $confirmationGroup = null)
     {
         $this
             ->setOrderId($orderId)
@@ -140,7 +140,7 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceRequest
      */
     public function setOrderId(int $orderId): self
     {
@@ -154,7 +154,7 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSellPassenger value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[]
      */
     public function getMidocoSellPassenger(): ?array
     {
@@ -175,12 +175,12 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $printOrderInvoiceRequestMidocoSellPassengerItem) {
             // validation for constraint: itemType
-            if (!$printOrderInvoiceRequestMidocoSellPassengerItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger) {
+            if (!$printOrderInvoiceRequestMidocoSellPassengerItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger) {
                 $invalidValues[] = is_object($printOrderInvoiceRequestMidocoSellPassengerItem) ? get_class($printOrderInvoiceRequestMidocoSellPassengerItem) : sprintf('%s(%s)', gettype($printOrderInvoiceRequestMidocoSellPassengerItem), var_export($printOrderInvoiceRequestMidocoSellPassengerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -189,8 +189,8 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set MidocoSellPassenger value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger[] $midocoSellPassenger
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceRequest
      */
     public function setMidocoSellPassenger(?array $midocoSellPassenger = null): self
     {
@@ -205,14 +205,14 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
     /**
      * Add item to MidocoSellPassenger value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger $item
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceRequest
      */
-    public function addToMidocoSellPassenger(\Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger $item): self
+    public function addToMidocoSellPassenger(\Pggns\MidocoApi\Order\StructType\MidocoSellPassenger $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellPassenger, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellPassenger property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellPassenger, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellPassenger[] = $item;
         
@@ -220,18 +220,18 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOnlinePaymentHelper value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper|null
      */
-    public function getMidocoOnlinePaymentHelper(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper
+    public function getMidocoOnlinePaymentHelper(): ?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper
     {
         return $this->MidocoOnlinePaymentHelper;
     }
     /**
      * Set MidocoOnlinePaymentHelper value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceRequest
      */
-    public function setMidocoOnlinePaymentHelper(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper = null): self
+    public function setMidocoOnlinePaymentHelper(?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper = null): self
     {
         $this->MidocoOnlinePaymentHelper = $midocoOnlinePaymentHelper;
         
@@ -248,7 +248,7 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set isPreview value
      * @param bool $isPreview
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceRequest
      */
     public function setIsPreview(?bool $isPreview = false): self
     {
@@ -271,7 +271,7 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set printMedia value
      * @param string $printMedia
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceRequest
      */
     public function setPrintMedia(?string $printMedia = 'P'): self
     {
@@ -294,7 +294,7 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set saveToTempTable value
      * @param bool $saveToTempTable
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceRequest
      */
     public function setSaveToTempTable(?bool $saveToTempTable = false): self
     {
@@ -317,7 +317,7 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set sendAsEMail value
      * @param bool $sendAsEMail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceRequest
      */
     public function setSendAsEMail(?bool $sendAsEMail = false): self
     {
@@ -340,7 +340,7 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set calculatedPrintDate value
      * @param string $calculatedPrintDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceRequest
      */
     public function setCalculatedPrintDate(?string $calculatedPrintDate = null): self
     {
@@ -363,7 +363,7 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set queueId value
      * @param int $queueId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceRequest
      */
     public function setQueueId(?int $queueId = null): self
     {
@@ -386,7 +386,7 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set collectivePrint value
      * @param bool $collectivePrint
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceRequest
      */
     public function setCollectivePrint(?bool $collectivePrint = false): self
     {
@@ -409,7 +409,7 @@ class PrintOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set confirmationGroup value
      * @param string $confirmationGroup
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOrderInvoiceRequest
      */
     public function setConfirmationGroup(?string $confirmationGroup = null): self
     {

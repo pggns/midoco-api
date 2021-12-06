@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,16 +18,16 @@ class MidocoBillingPositionType extends BillingPositionDTO
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoBillingPositionAttribute
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BillingPositionAttribDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\BillingPositionAttribDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\BillingPositionAttribDTO $MidocoBillingPositionAttribute = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\BillingPositionAttribDTO $MidocoBillingPositionAttribute = null;
     /**
      * The MidocoBillingPositionRemark
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingPositionRemark
-     * @var \Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO[]
      */
     protected ?array $MidocoBillingPositionRemark = null;
     /**
@@ -36,7 +36,7 @@ class MidocoBillingPositionType extends BillingPositionDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOnlinePaymentTransaction
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction[]
      */
     protected ?array $MidocoOnlinePaymentTransaction = null;
     /**
@@ -44,25 +44,25 @@ class MidocoBillingPositionType extends BillingPositionDTO
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoBillingVoidPosition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType $MidocoBillingVoidPosition = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType $MidocoBillingVoidPosition = null;
     /**
      * The MidocoBillingPositionDbiInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingPositionDbiInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionDbiInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionDbiInfo[]
      */
     protected ?array $MidocoBillingPositionDbiInfo = null;
     /**
      * The MidocoDBDetails
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDBDetails|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDBDetails|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDBDetails $MidocoDBDetails = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoDBDetails $MidocoDBDetails = null;
     /**
      * The refCcNumber
      * @var string|null
@@ -89,17 +89,17 @@ class MidocoBillingPositionType extends BillingPositionDTO
      * @uses MidocoBillingPositionType::setRefCcNumber()
      * @uses MidocoBillingPositionType::setRefCcType()
      * @uses MidocoBillingPositionType::setRefCcValid()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingPositionAttribDTO $midocoBillingPositionAttribute
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO[] $midocoBillingPositionRemark
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction[] $midocoOnlinePaymentTransaction
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType $midocoBillingVoidPosition
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionDbiInfo[] $midocoBillingPositionDbiInfo
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDBDetails $midocoDBDetails
+     * @param \Pggns\MidocoApi\Order\StructType\BillingPositionAttribDTO $midocoBillingPositionAttribute
+     * @param \Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO[] $midocoBillingPositionRemark
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction[] $midocoOnlinePaymentTransaction
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType $midocoBillingVoidPosition
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionDbiInfo[] $midocoBillingPositionDbiInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDBDetails $midocoDBDetails
      * @param string $refCcNumber
      * @param string $refCcType
      * @param string $refCcValid
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\BillingPositionAttribDTO $midocoBillingPositionAttribute = null, ?array $midocoBillingPositionRemark = null, ?array $midocoOnlinePaymentTransaction = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType $midocoBillingVoidPosition = null, ?array $midocoBillingPositionDbiInfo = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDBDetails $midocoDBDetails = null, ?string $refCcNumber = null, ?string $refCcType = null, ?string $refCcValid = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\BillingPositionAttribDTO $midocoBillingPositionAttribute = null, ?array $midocoBillingPositionRemark = null, ?array $midocoOnlinePaymentTransaction = null, ?\Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType $midocoBillingVoidPosition = null, ?array $midocoBillingPositionDbiInfo = null, ?\Pggns\MidocoApi\Order\StructType\MidocoDBDetails $midocoDBDetails = null, ?string $refCcNumber = null, ?string $refCcType = null, ?string $refCcValid = null)
     {
         $this
             ->setMidocoBillingPositionAttribute($midocoBillingPositionAttribute)
@@ -114,18 +114,18 @@ class MidocoBillingPositionType extends BillingPositionDTO
     }
     /**
      * Get MidocoBillingPositionAttribute value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionAttribDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionAttribDTO|null
      */
-    public function getMidocoBillingPositionAttribute(): ?\Pggns\MidocoApi\Api\Order\StructType\BillingPositionAttribDTO
+    public function getMidocoBillingPositionAttribute(): ?\Pggns\MidocoApi\Order\StructType\BillingPositionAttribDTO
     {
         return $this->MidocoBillingPositionAttribute;
     }
     /**
      * Set MidocoBillingPositionAttribute value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingPositionAttribDTO $midocoBillingPositionAttribute
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+     * @param \Pggns\MidocoApi\Order\StructType\BillingPositionAttribDTO $midocoBillingPositionAttribute
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
      */
-    public function setMidocoBillingPositionAttribute(?\Pggns\MidocoApi\Api\Order\StructType\BillingPositionAttribDTO $midocoBillingPositionAttribute = null): self
+    public function setMidocoBillingPositionAttribute(?\Pggns\MidocoApi\Order\StructType\BillingPositionAttribDTO $midocoBillingPositionAttribute = null): self
     {
         $this->MidocoBillingPositionAttribute = $midocoBillingPositionAttribute;
         
@@ -133,7 +133,7 @@ class MidocoBillingPositionType extends BillingPositionDTO
     }
     /**
      * Get MidocoBillingPositionRemark value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO[]
      */
     public function getMidocoBillingPositionRemark(): ?array
     {
@@ -154,12 +154,12 @@ class MidocoBillingPositionType extends BillingPositionDTO
         $invalidValues = [];
         foreach ($values as $midocoBillingPositionTypeMidocoBillingPositionRemarkItem) {
             // validation for constraint: itemType
-            if (!$midocoBillingPositionTypeMidocoBillingPositionRemarkItem instanceof \Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO) {
+            if (!$midocoBillingPositionTypeMidocoBillingPositionRemarkItem instanceof \Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO) {
                 $invalidValues[] = is_object($midocoBillingPositionTypeMidocoBillingPositionRemarkItem) ? get_class($midocoBillingPositionTypeMidocoBillingPositionRemarkItem) : sprintf('%s(%s)', gettype($midocoBillingPositionTypeMidocoBillingPositionRemarkItem), var_export($midocoBillingPositionTypeMidocoBillingPositionRemarkItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingPositionRemark property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingPositionRemark property can only contain items of type \Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -168,8 +168,8 @@ class MidocoBillingPositionType extends BillingPositionDTO
     /**
      * Set MidocoBillingPositionRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO[] $midocoBillingPositionRemark
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+     * @param \Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO[] $midocoBillingPositionRemark
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
      */
     public function setMidocoBillingPositionRemark(?array $midocoBillingPositionRemark = null): self
     {
@@ -184,14 +184,14 @@ class MidocoBillingPositionType extends BillingPositionDTO
     /**
      * Add item to MidocoBillingPositionRemark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+     * @param \Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
      */
-    public function addToMidocoBillingPositionRemark(\Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO $item): self
+    public function addToMidocoBillingPositionRemark(\Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingPositionRemark property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\BillingPositionRemarkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingPositionRemark property can only contain items of type \Pggns\MidocoApi\Order\StructType\BillingPositionRemarkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingPositionRemark[] = $item;
         
@@ -199,7 +199,7 @@ class MidocoBillingPositionType extends BillingPositionDTO
     }
     /**
      * Get MidocoOnlinePaymentTransaction value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction[]
      */
     public function getMidocoOnlinePaymentTransaction(): ?array
     {
@@ -220,12 +220,12 @@ class MidocoBillingPositionType extends BillingPositionDTO
         $invalidValues = [];
         foreach ($values as $midocoBillingPositionTypeMidocoOnlinePaymentTransactionItem) {
             // validation for constraint: itemType
-            if (!$midocoBillingPositionTypeMidocoOnlinePaymentTransactionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction) {
+            if (!$midocoBillingPositionTypeMidocoOnlinePaymentTransactionItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction) {
                 $invalidValues[] = is_object($midocoBillingPositionTypeMidocoOnlinePaymentTransactionItem) ? get_class($midocoBillingPositionTypeMidocoOnlinePaymentTransactionItem) : sprintf('%s(%s)', gettype($midocoBillingPositionTypeMidocoOnlinePaymentTransactionItem), var_export($midocoBillingPositionTypeMidocoOnlinePaymentTransactionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOnlinePaymentTransaction property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOnlinePaymentTransaction property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -234,8 +234,8 @@ class MidocoBillingPositionType extends BillingPositionDTO
     /**
      * Set MidocoOnlinePaymentTransaction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction[] $midocoOnlinePaymentTransaction
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction[] $midocoOnlinePaymentTransaction
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
      */
     public function setMidocoOnlinePaymentTransaction(?array $midocoOnlinePaymentTransaction = null): self
     {
@@ -250,14 +250,14 @@ class MidocoBillingPositionType extends BillingPositionDTO
     /**
      * Add item to MidocoOnlinePaymentTransaction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
      */
-    public function addToMidocoOnlinePaymentTransaction(\Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction $item): self
+    public function addToMidocoOnlinePaymentTransaction(\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction) {
-            throw new InvalidArgumentException(sprintf('The MidocoOnlinePaymentTransaction property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOnlinePaymentTransaction, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction) {
+            throw new InvalidArgumentException(sprintf('The MidocoOnlinePaymentTransaction property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentTransaction, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOnlinePaymentTransaction[] = $item;
         
@@ -265,18 +265,18 @@ class MidocoBillingPositionType extends BillingPositionDTO
     }
     /**
      * Get MidocoBillingVoidPosition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType|null
      */
-    public function getMidocoBillingVoidPosition(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+    public function getMidocoBillingVoidPosition(): ?\Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
     {
         return $this->MidocoBillingVoidPosition;
     }
     /**
      * Set MidocoBillingVoidPosition value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType $midocoBillingVoidPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType $midocoBillingVoidPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
      */
-    public function setMidocoBillingVoidPosition(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType $midocoBillingVoidPosition = null): self
+    public function setMidocoBillingVoidPosition(?\Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType $midocoBillingVoidPosition = null): self
     {
         $this->MidocoBillingVoidPosition = $midocoBillingVoidPosition;
         
@@ -284,7 +284,7 @@ class MidocoBillingPositionType extends BillingPositionDTO
     }
     /**
      * Get MidocoBillingPositionDbiInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionDbiInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionDbiInfo[]
      */
     public function getMidocoBillingPositionDbiInfo(): ?array
     {
@@ -305,12 +305,12 @@ class MidocoBillingPositionType extends BillingPositionDTO
         $invalidValues = [];
         foreach ($values as $midocoBillingPositionTypeMidocoBillingPositionDbiInfoItem) {
             // validation for constraint: itemType
-            if (!$midocoBillingPositionTypeMidocoBillingPositionDbiInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionDbiInfo) {
+            if (!$midocoBillingPositionTypeMidocoBillingPositionDbiInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionDbiInfo) {
                 $invalidValues[] = is_object($midocoBillingPositionTypeMidocoBillingPositionDbiInfoItem) ? get_class($midocoBillingPositionTypeMidocoBillingPositionDbiInfoItem) : sprintf('%s(%s)', gettype($midocoBillingPositionTypeMidocoBillingPositionDbiInfoItem), var_export($midocoBillingPositionTypeMidocoBillingPositionDbiInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingPositionDbiInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionDbiInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingPositionDbiInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionDbiInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -319,8 +319,8 @@ class MidocoBillingPositionType extends BillingPositionDTO
     /**
      * Set MidocoBillingPositionDbiInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionDbiInfo[] $midocoBillingPositionDbiInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionDbiInfo[] $midocoBillingPositionDbiInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
      */
     public function setMidocoBillingPositionDbiInfo(?array $midocoBillingPositionDbiInfo = null): self
     {
@@ -335,14 +335,14 @@ class MidocoBillingPositionType extends BillingPositionDTO
     /**
      * Add item to MidocoBillingPositionDbiInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionDbiInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionDbiInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
      */
-    public function addToMidocoBillingPositionDbiInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionDbiInfo $item): self
+    public function addToMidocoBillingPositionDbiInfo(\Pggns\MidocoApi\Order\StructType\MidocoBillingPositionDbiInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionDbiInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingPositionDbiInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionDbiInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionDbiInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingPositionDbiInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionDbiInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingPositionDbiInfo[] = $item;
         
@@ -350,18 +350,18 @@ class MidocoBillingPositionType extends BillingPositionDTO
     }
     /**
      * Get MidocoDBDetails value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDBDetails|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDBDetails|null
      */
-    public function getMidocoDBDetails(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDBDetails
+    public function getMidocoDBDetails(): ?\Pggns\MidocoApi\Order\StructType\MidocoDBDetails
     {
         return $this->MidocoDBDetails;
     }
     /**
      * Set MidocoDBDetails value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDBDetails $midocoDBDetails
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDBDetails $midocoDBDetails
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
      */
-    public function setMidocoDBDetails(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDBDetails $midocoDBDetails = null): self
+    public function setMidocoDBDetails(?\Pggns\MidocoApi\Order\StructType\MidocoDBDetails $midocoDBDetails = null): self
     {
         $this->MidocoDBDetails = $midocoDBDetails;
         
@@ -378,7 +378,7 @@ class MidocoBillingPositionType extends BillingPositionDTO
     /**
      * Set refCcNumber value
      * @param string $refCcNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
      */
     public function setRefCcNumber(?string $refCcNumber = null): self
     {
@@ -401,7 +401,7 @@ class MidocoBillingPositionType extends BillingPositionDTO
     /**
      * Set refCcType value
      * @param string $refCcType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
      */
     public function setRefCcType(?string $refCcType = null): self
     {
@@ -424,7 +424,7 @@ class MidocoBillingPositionType extends BillingPositionDTO
     /**
      * Set refCcValid value
      * @param string $refCcValid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingPositionType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingPositionType
      */
     public function setRefCcValid(?string $refCcValid = null): self
     {

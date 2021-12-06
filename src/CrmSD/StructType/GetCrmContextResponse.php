@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -91,7 +91,7 @@ class GetCrmContextResponse extends AbstractStructBase
     /**
      * Set hasMediators value
      * @param bool $hasMediators
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmContextResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmContextResponse
      */
     public function setHasMediators(bool $hasMediators): self
     {
@@ -114,7 +114,7 @@ class GetCrmContextResponse extends AbstractStructBase
     /**
      * Set hasAgencies value
      * @param bool $hasAgencies
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmContextResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmContextResponse
      */
     public function setHasAgencies(bool $hasAgencies): self
     {
@@ -137,7 +137,7 @@ class GetCrmContextResponse extends AbstractStructBase
     /**
      * Set hasCooperations value
      * @param bool $hasCooperations
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmContextResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmContextResponse
      */
     public function setHasCooperations(bool $hasCooperations): self
     {
@@ -160,7 +160,7 @@ class GetCrmContextResponse extends AbstractStructBase
     /**
      * Set hasCreditors value
      * @param bool $hasCreditors
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmContextResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmContextResponse
      */
     public function setHasCreditors(bool $hasCreditors): self
     {
@@ -183,7 +183,7 @@ class GetCrmContextResponse extends AbstractStructBase
     /**
      * Set hasDebteeId value
      * @param bool $hasDebteeId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmContextResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmContextResponse
      */
     public function setHasDebteeId(bool $hasDebteeId): self
     {
@@ -206,7 +206,7 @@ class GetCrmContextResponse extends AbstractStructBase
     /**
      * Set hasCustomerCategories value
      * @param bool $hasCustomerCategories
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCrmContextResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmContextResponse
      */
     public function setHasCustomerCategories(bool $hasCustomerCategories): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class AgencyDetailDTO extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyDetailDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyDetailDTO
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -94,7 +94,7 @@ class AgencyDetailDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyDetailDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyDetailDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -117,7 +117,7 @@ class AgencyDetailDTO extends AbstractStructBase
     /**
      * Set externalSystem value
      * @param string $externalSystem
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyDetailDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyDetailDTO
      */
     public function setExternalSystem(?string $externalSystem = null): self
     {
@@ -140,7 +140,7 @@ class AgencyDetailDTO extends AbstractStructBase
     /**
      * Set invoicingMode value
      * @param int $invoicingMode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyDetailDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyDetailDTO
      */
     public function setInvoicingMode(?int $invoicingMode = null): self
     {
@@ -163,7 +163,7 @@ class AgencyDetailDTO extends AbstractStructBase
     /**
      * Set midocoOrgUnit value
      * @param string $midocoOrgUnit
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AgencyDetailDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\AgencyDetailDTO
      */
     public function setMidocoOrgUnit(?string $midocoOrgUnit = null): self
     {

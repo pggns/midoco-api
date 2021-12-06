@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -160,7 +160,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -183,7 +183,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set startCreationDate value
      * @param string $startCreationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setStartCreationDate(?string $startCreationDate = null): self
     {
@@ -206,7 +206,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set endCreationDate value
      * @param string $endCreationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setEndCreationDate(?string $endCreationDate = null): self
     {
@@ -229,7 +229,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set beginTravelStartDate value
      * @param string $beginTravelStartDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setBeginTravelStartDate(?string $beginTravelStartDate = null): self
     {
@@ -252,7 +252,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set endTravelStartDate value
      * @param string $endTravelStartDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setEndTravelStartDate(?string $endTravelStartDate = null): self
     {
@@ -275,7 +275,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set needsConfirmation value
      * @param bool $needsConfirmation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setNeedsConfirmation(?bool $needsConfirmation = null): self
     {
@@ -298,7 +298,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set declined value
      * @param bool $declined
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setDeclined(?bool $declined = null): self
     {
@@ -321,7 +321,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set beginTravelEndDate value
      * @param string $beginTravelEndDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setBeginTravelEndDate(?string $beginTravelEndDate = null): self
     {
@@ -344,7 +344,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set endTravelEndDate value
      * @param string $endTravelEndDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setEndTravelEndDate(?string $endTravelEndDate = null): self
     {
@@ -367,7 +367,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set onlyHotel value
      * @param bool $onlyHotel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setOnlyHotel(?bool $onlyHotel = null): self
     {
@@ -390,7 +390,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set onlyTransfer value
      * @param bool $onlyTransfer
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setOnlyTransfer(?bool $onlyTransfer = null): self
     {
@@ -413,7 +413,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -436,7 +436,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set confirmed value
      * @param bool $confirmed
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setConfirmed(?bool $confirmed = null): self
     {
@@ -459,7 +459,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -482,7 +482,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set onlyStatusRQ value
      * @param bool $onlyStatusRQ
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setOnlyStatusRQ(?bool $onlyStatusRQ = null): self
     {
@@ -505,7 +505,7 @@ class GetConfirmationReceivedSellitemsForSupplierRequest extends AbstractStructB
     /**
      * Set onlyStatusOK value
      * @param bool $onlyStatusOK
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierRequest
      */
     public function setOnlyStatusOK(?bool $onlyStatusOK = null): self
     {

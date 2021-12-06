@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -295,7 +295,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set backupData value
      * @param string $backupData
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setBackupData(?string $backupData = null): self
     {
@@ -318,7 +318,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set booked value
      * @param bool $booked
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setBooked(?bool $booked = null): self
     {
@@ -341,7 +341,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -364,7 +364,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -387,7 +387,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set bookingType value
      * @param string $bookingType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setBookingType(?string $bookingType = null): self
     {
@@ -410,7 +410,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set calculatedRevenue value
      * @param float $calculatedRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setCalculatedRevenue(?float $calculatedRevenue = null): self
     {
@@ -433,7 +433,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set checked value
      * @param bool $checked
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setChecked(?bool $checked = null): self
     {
@@ -456,7 +456,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -479,7 +479,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set diffManualChecked value
      * @param bool $diffManualChecked
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setDiffManualChecked(?bool $diffManualChecked = null): self
     {
@@ -502,7 +502,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set documentNo value
      * @param string $documentNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setDocumentNo(?string $documentNo = null): self
     {
@@ -525,7 +525,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -548,7 +548,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set errors value
      * @param int $errors
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setErrors(?int $errors = null): self
     {
@@ -571,7 +571,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set exchangeRate value
      * @param float $exchangeRate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setExchangeRate(?float $exchangeRate = null): self
     {
@@ -594,7 +594,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set invoiceDate value
      * @param string $invoiceDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setInvoiceDate(?string $invoiceDate = null): self
     {
@@ -617,7 +617,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -640,7 +640,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set manualJournalBooking value
      * @param bool $manualJournalBooking
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setManualJournalBooking(?bool $manualJournalBooking = null): self
     {
@@ -663,7 +663,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set noOfPersons value
      * @param int $noOfPersons
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setNoOfPersons(?int $noOfPersons = null): self
     {
@@ -686,7 +686,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setPrice(?float $price = null): self
     {
@@ -709,7 +709,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -732,7 +732,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set siCalculatedRevenue value
      * @param float $siCalculatedRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setSiCalculatedRevenue(?float $siCalculatedRevenue = null): self
     {
@@ -755,7 +755,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set siNoOfPersons value
      * @param int $siNoOfPersons
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setSiNoOfPersons(?int $siNoOfPersons = null): self
     {
@@ -778,7 +778,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set siPrice value
      * @param float $siPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setSiPrice(?float $siPrice = null): self
     {
@@ -801,7 +801,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set siStatus value
      * @param string $siStatus
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setSiStatus(?string $siStatus = null): self
     {
@@ -824,7 +824,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set siTravelDate value
      * @param string $siTravelDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setSiTravelDate(?string $siTravelDate = null): self
     {
@@ -847,7 +847,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set siTravelType value
      * @param string $siTravelType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setSiTravelType(?string $siTravelType = null): self
     {
@@ -870,7 +870,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set siUnitName value
      * @param string $siUnitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setSiUnitName(?string $siUnitName = null): self
     {
@@ -893,7 +893,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set skipBooking value
      * @param bool $skipBooking
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setSkipBooking(?bool $skipBooking = null): self
     {
@@ -916,7 +916,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set supplierAgencyNo value
      * @param string $supplierAgencyNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setSupplierAgencyNo(?string $supplierAgencyNo = null): self
     {
@@ -939,7 +939,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -962,7 +962,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -985,7 +985,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set traveller value
      * @param string $traveller
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setTraveller(?string $traveller = null): self
     {
@@ -1008,7 +1008,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -1031,7 +1031,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplAgencySettlemBookDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

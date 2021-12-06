@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteOrderLockReasonDescriptionRequest extends AbstractStructBase
      * The MidocoOrderLockReasonDescription
      * Meta information extracted from the WSDL
      * - ref: MidocoOrderLockReasonDescription
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\OrderLockReasonDescriptionDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\OrderLockReasonDescriptionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\OrderLockReasonDescriptionDTO $MidocoOrderLockReasonDescription = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\OrderLockReasonDescriptionDTO $MidocoOrderLockReasonDescription = null;
     /**
      * Constructor method for DeleteOrderLockReasonDescriptionRequest
      * @uses DeleteOrderLockReasonDescriptionRequest::setMidocoOrderLockReasonDescription()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\OrderLockReasonDescriptionDTO $midocoOrderLockReasonDescription
+     * @param \Pggns\MidocoApi\Documents\StructType\OrderLockReasonDescriptionDTO $midocoOrderLockReasonDescription
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\OrderLockReasonDescriptionDTO $midocoOrderLockReasonDescription = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\OrderLockReasonDescriptionDTO $midocoOrderLockReasonDescription = null)
     {
         $this
             ->setMidocoOrderLockReasonDescription($midocoOrderLockReasonDescription);
     }
     /**
      * Get MidocoOrderLockReasonDescription value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderLockReasonDescriptionDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderLockReasonDescriptionDTO|null
      */
-    public function getMidocoOrderLockReasonDescription(): ?\Pggns\MidocoApi\Api\Documents\StructType\OrderLockReasonDescriptionDTO
+    public function getMidocoOrderLockReasonDescription(): ?\Pggns\MidocoApi\Documents\StructType\OrderLockReasonDescriptionDTO
     {
         return $this->MidocoOrderLockReasonDescription;
     }
     /**
      * Set MidocoOrderLockReasonDescription value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\OrderLockReasonDescriptionDTO $midocoOrderLockReasonDescription
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DeleteOrderLockReasonDescriptionRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\OrderLockReasonDescriptionDTO $midocoOrderLockReasonDescription
+     * @return \Pggns\MidocoApi\Documents\StructType\DeleteOrderLockReasonDescriptionRequest
      */
-    public function setMidocoOrderLockReasonDescription(?\Pggns\MidocoApi\Api\Documents\StructType\OrderLockReasonDescriptionDTO $midocoOrderLockReasonDescription = null): self
+    public function setMidocoOrderLockReasonDescription(?\Pggns\MidocoApi\Documents\StructType\OrderLockReasonDescriptionDTO $midocoOrderLockReasonDescription = null): self
     {
         $this->MidocoOrderLockReasonDescription = $midocoOrderLockReasonDescription;
         

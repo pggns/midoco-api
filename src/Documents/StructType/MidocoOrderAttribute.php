@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoOrderAttribute extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -94,7 +94,7 @@ class MidocoOrderAttribute extends AbstractStructBase
     /**
      * Set attributeValue value
      * @param string $attributeValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute
      */
     public function setAttributeValue(?string $attributeValue = null): self
     {
@@ -117,7 +117,7 @@ class MidocoOrderAttribute extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -140,7 +140,7 @@ class MidocoOrderAttribute extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute
      */
     public function setName(?string $name = null): self
     {
@@ -163,7 +163,7 @@ class MidocoOrderAttribute extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOrderAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOrderAttribute
      */
     public function setValue(?string $value = null): self
     {

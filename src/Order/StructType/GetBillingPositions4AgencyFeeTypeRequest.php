@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class GetBillingPositions4AgencyFeeTypeRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositions4AgencyFeeTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositions4AgencyFeeTypeRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -88,7 +88,7 @@ class GetBillingPositions4AgencyFeeTypeRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositions4AgencyFeeTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositions4AgencyFeeTypeRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -111,7 +111,7 @@ class GetBillingPositions4AgencyFeeTypeRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositions4AgencyFeeTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositions4AgencyFeeTypeRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -161,7 +161,7 @@ class GetBillingPositions4AgencyFeeTypeRequest extends AbstractStructBase
      * Set feeType value
      * @throws InvalidArgumentException
      * @param string[] $feeType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositions4AgencyFeeTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositions4AgencyFeeTypeRequest
      */
     public function setFeeType(?array $feeType = null): self
     {
@@ -177,7 +177,7 @@ class GetBillingPositions4AgencyFeeTypeRequest extends AbstractStructBase
      * Add item to feeType value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingPositions4AgencyFeeTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingPositions4AgencyFeeTypeRequest
      */
     public function addToFeeType(string $item): self
     {

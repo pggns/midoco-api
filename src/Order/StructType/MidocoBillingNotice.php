@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoBillingNotice extends BillingNoticeDTO
     /**
      * Set manuallyCreatedTask value
      * @param bool $manuallyCreatedTask
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice
      */
     public function setManuallyCreatedTask(?bool $manuallyCreatedTask = null): self
     {
@@ -70,7 +70,7 @@ class MidocoBillingNotice extends BillingNoticeDTO
     /**
      * Set delegationComment value
      * @param string $delegationComment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingNotice
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingNotice
      */
     public function setDelegationComment(?string $delegationComment = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class TemplateSuppliersAssignType extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TemplateSuppliersAssignType
+     * @return \Pggns\MidocoApi\Documents\StructType\TemplateSuppliersAssignType
      */
     public function setUnitName(string $unitName): self
     {
@@ -84,7 +84,7 @@ class TemplateSuppliersAssignType extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TemplateSuppliersAssignType
+     * @return \Pggns\MidocoApi\Documents\StructType\TemplateSuppliersAssignType
      */
     public function setTemplateId(int $templateId): self
     {
@@ -134,7 +134,7 @@ class TemplateSuppliersAssignType extends AbstractStructBase
      * Set SupplierId value
      * @throws InvalidArgumentException
      * @param string[] $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TemplateSuppliersAssignType
+     * @return \Pggns\MidocoApi\Documents\StructType\TemplateSuppliersAssignType
      */
     public function setSupplierId(?array $supplierId = null): self
     {
@@ -150,7 +150,7 @@ class TemplateSuppliersAssignType extends AbstractStructBase
      * Add item to SupplierId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TemplateSuppliersAssignType
+     * @return \Pggns\MidocoApi\Documents\StructType\TemplateSuppliersAssignType
      */
     public function addToSupplierId(string $item): self
     {

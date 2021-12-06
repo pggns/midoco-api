@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMfLocalResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMfLocal
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoMfLocal[]
      */
     protected ?array $MidocoMfLocal = null;
     /**
      * Constructor method for GetMfLocalResponse
      * @uses GetMfLocalResponse::setMidocoMfLocal()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal[] $midocoMfLocal
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMfLocal[] $midocoMfLocal
      */
     public function __construct(?array $midocoMfLocal = null)
     {
@@ -34,7 +34,7 @@ class GetMfLocalResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMfLocal value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoMfLocal[]
      */
     public function getMidocoMfLocal(): ?array
     {
@@ -55,12 +55,12 @@ class GetMfLocalResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMfLocalResponseMidocoMfLocalItem) {
             // validation for constraint: itemType
-            if (!$getMfLocalResponseMidocoMfLocalItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal) {
+            if (!$getMfLocalResponseMidocoMfLocalItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoMfLocal) {
                 $invalidValues[] = is_object($getMfLocalResponseMidocoMfLocalItem) ? get_class($getMfLocalResponseMidocoMfLocalItem) : sprintf('%s(%s)', gettype($getMfLocalResponseMidocoMfLocalItem), var_export($getMfLocalResponseMidocoMfLocalItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMfLocal property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMfLocal property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoMfLocal, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMfLocalResponse extends AbstractStructBase
     /**
      * Set MidocoMfLocal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal[] $midocoMfLocal
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMfLocalResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMfLocal[] $midocoMfLocal
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMfLocalResponse
      */
     public function setMidocoMfLocal(?array $midocoMfLocal = null): self
     {
@@ -85,14 +85,14 @@ class GetMfLocalResponse extends AbstractStructBase
     /**
      * Add item to MidocoMfLocal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMfLocalResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoMfLocal $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMfLocalResponse
      */
-    public function addToMidocoMfLocal(\Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal $item): self
+    public function addToMidocoMfLocal(\Pggns\MidocoApi\Mis\StructType\MidocoMfLocal $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal) {
-            throw new InvalidArgumentException(sprintf('The MidocoMfLocal property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoMfLocal, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoMfLocal) {
+            throw new InvalidArgumentException(sprintf('The MidocoMfLocal property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoMfLocal, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMfLocal[] = $item;
         

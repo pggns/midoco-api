@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class ImportedCrsRemarkDTO extends AbstractStructBase
     /**
      * Set importCrs value
      * @param string $importCrs
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ImportedCrsRemarkDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ImportedCrsRemarkDTO
      */
     public function setImportCrs(?string $importCrs = null): self
     {
@@ -94,7 +94,7 @@ class ImportedCrsRemarkDTO extends AbstractStructBase
     /**
      * Set importTimestamp value
      * @param string $importTimestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ImportedCrsRemarkDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ImportedCrsRemarkDTO
      */
     public function setImportTimestamp(?string $importTimestamp = null): self
     {
@@ -117,7 +117,7 @@ class ImportedCrsRemarkDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ImportedCrsRemarkDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ImportedCrsRemarkDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -140,7 +140,7 @@ class ImportedCrsRemarkDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ImportedCrsRemarkDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ImportedCrsRemarkDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -163,7 +163,7 @@ class ImportedCrsRemarkDTO extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ImportedCrsRemarkDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ImportedCrsRemarkDTO
      */
     public function setRemark(?string $remark = null): self
     {

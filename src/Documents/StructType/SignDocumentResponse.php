@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SignDocumentResponse extends AbstractStructBase
     /**
      * Set signedDocument value
      * @param string $signedDocument
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignDocumentResponse
+     * @return \Pggns\MidocoApi\Documents\StructType\SignDocumentResponse
      */
     public function setSignedDocument(?string $signedDocument = null): self
     {

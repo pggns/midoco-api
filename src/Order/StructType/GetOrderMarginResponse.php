@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetOrderMarginResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoOrderMargin
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\OrderMarginDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO $MidocoOrderMargin = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\OrderMarginDTO $MidocoOrderMargin = null;
     /**
      * Constructor method for GetOrderMarginResponse
      * @uses GetOrderMarginResponse::setMidocoOrderMargin()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO $midocoOrderMargin
+     * @param \Pggns\MidocoApi\Order\StructType\OrderMarginDTO $midocoOrderMargin
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO $midocoOrderMargin = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\OrderMarginDTO $midocoOrderMargin = null)
     {
         $this
             ->setMidocoOrderMargin($midocoOrderMargin);
     }
     /**
      * Get MidocoOrderMargin value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\OrderMarginDTO|null
      */
-    public function getMidocoOrderMargin(): ?\Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO
+    public function getMidocoOrderMargin(): ?\Pggns\MidocoApi\Order\StructType\OrderMarginDTO
     {
         return $this->MidocoOrderMargin;
     }
     /**
      * Set MidocoOrderMargin value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO $midocoOrderMargin
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderMarginResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderMarginDTO $midocoOrderMargin
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderMarginResponse
      */
-    public function setMidocoOrderMargin(?\Pggns\MidocoApi\Api\Order\StructType\OrderMarginDTO $midocoOrderMargin = null): self
+    public function setMidocoOrderMargin(?\Pggns\MidocoApi\Order\StructType\OrderMarginDTO $midocoOrderMargin = null): self
     {
         $this->MidocoOrderMargin = $midocoOrderMargin;
         

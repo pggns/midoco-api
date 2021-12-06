@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoQueryPage extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoQueryPageLine
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPageLine[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoQueryPageLine[]
      */
     protected ?array $MidocoQueryPageLine = null;
     /**
@@ -31,7 +31,7 @@ class MidocoQueryPage extends AbstractStructBase
      * Constructor method for MidocoQueryPage
      * @uses MidocoQueryPage::setMidocoQueryPageLine()
      * @uses MidocoQueryPage::setPageNo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPageLine[] $midocoQueryPageLine
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoQueryPageLine[] $midocoQueryPageLine
      * @param int $pageNo
      */
     public function __construct(?array $midocoQueryPageLine = null, ?int $pageNo = null)
@@ -42,7 +42,7 @@ class MidocoQueryPage extends AbstractStructBase
     }
     /**
      * Get MidocoQueryPageLine value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPageLine[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoQueryPageLine[]
      */
     public function getMidocoQueryPageLine(): ?array
     {
@@ -63,12 +63,12 @@ class MidocoQueryPage extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoQueryPageMidocoQueryPageLineItem) {
             // validation for constraint: itemType
-            if (!$midocoQueryPageMidocoQueryPageLineItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPageLine) {
+            if (!$midocoQueryPageMidocoQueryPageLineItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoQueryPageLine) {
                 $invalidValues[] = is_object($midocoQueryPageMidocoQueryPageLineItem) ? get_class($midocoQueryPageMidocoQueryPageLineItem) : sprintf('%s(%s)', gettype($midocoQueryPageMidocoQueryPageLineItem), var_export($midocoQueryPageMidocoQueryPageLineItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoQueryPageLine property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPageLine, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoQueryPageLine property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoQueryPageLine, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,8 +77,8 @@ class MidocoQueryPage extends AbstractStructBase
     /**
      * Set MidocoQueryPageLine value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPageLine[] $midocoQueryPageLine
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPage
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoQueryPageLine[] $midocoQueryPageLine
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoQueryPage
      */
     public function setMidocoQueryPageLine(?array $midocoQueryPageLine = null): self
     {
@@ -93,14 +93,14 @@ class MidocoQueryPage extends AbstractStructBase
     /**
      * Add item to MidocoQueryPageLine value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPageLine $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPage
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoQueryPageLine $item
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoQueryPage
      */
-    public function addToMidocoQueryPageLine(\Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPageLine $item): self
+    public function addToMidocoQueryPageLine(\Pggns\MidocoApi\Order\StructType\MidocoQueryPageLine $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPageLine) {
-            throw new InvalidArgumentException(sprintf('The MidocoQueryPageLine property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPageLine, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoQueryPageLine) {
+            throw new InvalidArgumentException(sprintf('The MidocoQueryPageLine property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoQueryPageLine, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoQueryPageLine[] = $item;
         
@@ -117,7 +117,7 @@ class MidocoQueryPage extends AbstractStructBase
     /**
      * Set pageNo value
      * @param int $pageNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoQueryPage
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoQueryPage
      */
     public function setPageNo(?int $pageNo = null): self
     {

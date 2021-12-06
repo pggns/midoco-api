@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class ExecuteVatDivisionOutgoingRuleResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: ordersd:MidocoVatCode
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoVatCode[]
      */
     protected ?array $MidocoVatCode = null;
     /**
@@ -28,15 +28,15 @@ class ExecuteVatDivisionOutgoingRuleResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellItemVatDivision
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision[]
      */
     protected ?array $MidocoSellItemVatDivision = null;
     /**
      * Constructor method for ExecuteVatDivisionOutgoingRuleResponse
      * @uses ExecuteVatDivisionOutgoingRuleResponse::setMidocoVatCode()
      * @uses ExecuteVatDivisionOutgoingRuleResponse::setMidocoSellItemVatDivision()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode[] $midocoVatCode
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision[] $midocoSellItemVatDivision
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVatCode[] $midocoVatCode
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision[] $midocoSellItemVatDivision
      */
     public function __construct(?array $midocoVatCode = null, ?array $midocoSellItemVatDivision = null)
     {
@@ -46,7 +46,7 @@ class ExecuteVatDivisionOutgoingRuleResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVatCode value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVatCode[]
      */
     public function getMidocoVatCode(): ?array
     {
@@ -67,12 +67,12 @@ class ExecuteVatDivisionOutgoingRuleResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $executeVatDivisionOutgoingRuleResponseMidocoVatCodeItem) {
             // validation for constraint: itemType
-            if (!$executeVatDivisionOutgoingRuleResponseMidocoVatCodeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode) {
+            if (!$executeVatDivisionOutgoingRuleResponseMidocoVatCodeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoVatCode) {
                 $invalidValues[] = is_object($executeVatDivisionOutgoingRuleResponseMidocoVatCodeItem) ? get_class($executeVatDivisionOutgoingRuleResponseMidocoVatCodeItem) : sprintf('%s(%s)', gettype($executeVatDivisionOutgoingRuleResponseMidocoVatCodeItem), var_export($executeVatDivisionOutgoingRuleResponseMidocoVatCodeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatCode property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatCode property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoVatCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -81,8 +81,8 @@ class ExecuteVatDivisionOutgoingRuleResponse extends AbstractStructBase
     /**
      * Set MidocoVatCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode[] $midocoVatCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteVatDivisionOutgoingRuleResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVatCode[] $midocoVatCode
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteVatDivisionOutgoingRuleResponse
      */
     public function setMidocoVatCode(?array $midocoVatCode = null): self
     {
@@ -97,14 +97,14 @@ class ExecuteVatDivisionOutgoingRuleResponse extends AbstractStructBase
     /**
      * Add item to MidocoVatCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteVatDivisionOutgoingRuleResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVatCode $item
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteVatDivisionOutgoingRuleResponse
      */
-    public function addToMidocoVatCode(\Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode $item): self
+    public function addToMidocoVatCode(\Pggns\MidocoApi\Order\StructType\MidocoVatCode $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatCode property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoVatCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoVatCode) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatCode property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoVatCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatCode[] = $item;
         
@@ -112,7 +112,7 @@ class ExecuteVatDivisionOutgoingRuleResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSellItemVatDivision value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision[]
      */
     public function getMidocoSellItemVatDivision(): ?array
     {
@@ -133,12 +133,12 @@ class ExecuteVatDivisionOutgoingRuleResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $executeVatDivisionOutgoingRuleResponseMidocoSellItemVatDivisionItem) {
             // validation for constraint: itemType
-            if (!$executeVatDivisionOutgoingRuleResponseMidocoSellItemVatDivisionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision) {
+            if (!$executeVatDivisionOutgoingRuleResponseMidocoSellItemVatDivisionItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision) {
                 $invalidValues[] = is_object($executeVatDivisionOutgoingRuleResponseMidocoSellItemVatDivisionItem) ? get_class($executeVatDivisionOutgoingRuleResponseMidocoSellItemVatDivisionItem) : sprintf('%s(%s)', gettype($executeVatDivisionOutgoingRuleResponseMidocoSellItemVatDivisionItem), var_export($executeVatDivisionOutgoingRuleResponseMidocoSellItemVatDivisionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellItemVatDivision property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellItemVatDivision property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,8 +147,8 @@ class ExecuteVatDivisionOutgoingRuleResponse extends AbstractStructBase
     /**
      * Set MidocoSellItemVatDivision value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision[] $midocoSellItemVatDivision
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteVatDivisionOutgoingRuleResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision[] $midocoSellItemVatDivision
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteVatDivisionOutgoingRuleResponse
      */
     public function setMidocoSellItemVatDivision(?array $midocoSellItemVatDivision = null): self
     {
@@ -163,14 +163,14 @@ class ExecuteVatDivisionOutgoingRuleResponse extends AbstractStructBase
     /**
      * Add item to MidocoSellItemVatDivision value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteVatDivisionOutgoingRuleResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision $item
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteVatDivisionOutgoingRuleResponse
      */
-    public function addToMidocoSellItemVatDivision(\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision $item): self
+    public function addToMidocoSellItemVatDivision(\Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellItemVatDivision property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemVatDivision, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellItemVatDivision property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemVatDivision, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellItemVatDivision[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -94,7 +94,7 @@ class MidocoBillingListCriteriaType extends AbstractStructBase
     /**
      * Set dateOfIssueFrom value
      * @param string $dateOfIssueFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListCriteriaType
      */
     public function setDateOfIssueFrom(string $dateOfIssueFrom): self
     {
@@ -117,7 +117,7 @@ class MidocoBillingListCriteriaType extends AbstractStructBase
     /**
      * Set dateOfIssueTo value
      * @param string $dateOfIssueTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListCriteriaType
      */
     public function setDateOfIssueTo(string $dateOfIssueTo): self
     {
@@ -167,7 +167,7 @@ class MidocoBillingListCriteriaType extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListCriteriaType
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -183,7 +183,7 @@ class MidocoBillingListCriteriaType extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListCriteriaType
      */
     public function addToOrgUnits(string $item): self
     {
@@ -206,7 +206,7 @@ class MidocoBillingListCriteriaType extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListCriteriaType
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -229,7 +229,7 @@ class MidocoBillingListCriteriaType extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListCriteriaType
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -252,7 +252,7 @@ class MidocoBillingListCriteriaType extends AbstractStructBase
     /**
      * Set travelDateFrom value
      * @param string $travelDateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListCriteriaType
      */
     public function setTravelDateFrom(?string $travelDateFrom = null): self
     {
@@ -275,7 +275,7 @@ class MidocoBillingListCriteriaType extends AbstractStructBase
     /**
      * Set travelDateTo value
      * @param string $travelDateTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBillingListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingListCriteriaType
      */
     public function setTravelDateTo(?string $travelDateTo = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetCostCentersFromTopMostOrgUnitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCostCentersFromTopMostOrgUnitRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCostCentersFromTopMostOrgUnitRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

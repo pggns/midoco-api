@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteSavedReportResponse extends AbstractStructBase
     /**
      * Set deleted value
      * @param bool $deleted
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteSavedReportResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteSavedReportResponse
      */
     public function setDeleted(?bool $deleted = null): self
     {

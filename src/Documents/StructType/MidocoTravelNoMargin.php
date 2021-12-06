@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoTravelNoMargin extends TravelNoMarginDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTravelNoMarginBuyItem
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginBuyItem[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginBuyItem[]
      */
     protected ?array $MidocoTravelNoMarginBuyItem = null;
     /**
@@ -28,7 +28,7 @@ class MidocoTravelNoMargin extends TravelNoMarginDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTravelNoMarginSaleItem
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem[]
      */
     protected ?array $MidocoTravelNoMarginSaleItem = null;
     /**
@@ -47,8 +47,8 @@ class MidocoTravelNoMargin extends TravelNoMarginDTO
      * @uses MidocoTravelNoMargin::setMidocoTravelNoMarginSaleItem()
      * @uses MidocoTravelNoMargin::setCalculatedMarginBrutto()
      * @uses MidocoTravelNoMargin::setBookedMarginBrutto()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginBuyItem[] $midocoTravelNoMarginBuyItem
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem[] $midocoTravelNoMarginSaleItem
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginBuyItem[] $midocoTravelNoMarginBuyItem
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem[] $midocoTravelNoMarginSaleItem
      * @param float $calculatedMarginBrutto
      * @param float $bookedMarginBrutto
      */
@@ -62,7 +62,7 @@ class MidocoTravelNoMargin extends TravelNoMarginDTO
     }
     /**
      * Get MidocoTravelNoMarginBuyItem value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginBuyItem[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginBuyItem[]
      */
     public function getMidocoTravelNoMarginBuyItem(): ?array
     {
@@ -83,12 +83,12 @@ class MidocoTravelNoMargin extends TravelNoMarginDTO
         $invalidValues = [];
         foreach ($values as $midocoTravelNoMarginMidocoTravelNoMarginBuyItemItem) {
             // validation for constraint: itemType
-            if (!$midocoTravelNoMarginMidocoTravelNoMarginBuyItemItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginBuyItem) {
+            if (!$midocoTravelNoMarginMidocoTravelNoMarginBuyItemItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginBuyItem) {
                 $invalidValues[] = is_object($midocoTravelNoMarginMidocoTravelNoMarginBuyItemItem) ? get_class($midocoTravelNoMarginMidocoTravelNoMarginBuyItemItem) : sprintf('%s(%s)', gettype($midocoTravelNoMarginMidocoTravelNoMarginBuyItemItem), var_export($midocoTravelNoMarginMidocoTravelNoMarginBuyItemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTravelNoMarginBuyItem property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginBuyItem, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTravelNoMarginBuyItem property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginBuyItem, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -97,8 +97,8 @@ class MidocoTravelNoMargin extends TravelNoMarginDTO
     /**
      * Set MidocoTravelNoMarginBuyItem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginBuyItem[] $midocoTravelNoMarginBuyItem
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMargin
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginBuyItem[] $midocoTravelNoMarginBuyItem
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMargin
      */
     public function setMidocoTravelNoMarginBuyItem(?array $midocoTravelNoMarginBuyItem = null): self
     {
@@ -113,14 +113,14 @@ class MidocoTravelNoMargin extends TravelNoMarginDTO
     /**
      * Add item to MidocoTravelNoMarginBuyItem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginBuyItem $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMargin
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginBuyItem $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMargin
      */
-    public function addToMidocoTravelNoMarginBuyItem(\Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginBuyItem $item): self
+    public function addToMidocoTravelNoMarginBuyItem(\Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginBuyItem $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginBuyItem) {
-            throw new InvalidArgumentException(sprintf('The MidocoTravelNoMarginBuyItem property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginBuyItem, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginBuyItem) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelNoMarginBuyItem property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginBuyItem, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTravelNoMarginBuyItem[] = $item;
         
@@ -128,7 +128,7 @@ class MidocoTravelNoMargin extends TravelNoMarginDTO
     }
     /**
      * Get MidocoTravelNoMarginSaleItem value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem[]
      */
     public function getMidocoTravelNoMarginSaleItem(): ?array
     {
@@ -149,12 +149,12 @@ class MidocoTravelNoMargin extends TravelNoMarginDTO
         $invalidValues = [];
         foreach ($values as $midocoTravelNoMarginMidocoTravelNoMarginSaleItemItem) {
             // validation for constraint: itemType
-            if (!$midocoTravelNoMarginMidocoTravelNoMarginSaleItemItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem) {
+            if (!$midocoTravelNoMarginMidocoTravelNoMarginSaleItemItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem) {
                 $invalidValues[] = is_object($midocoTravelNoMarginMidocoTravelNoMarginSaleItemItem) ? get_class($midocoTravelNoMarginMidocoTravelNoMarginSaleItemItem) : sprintf('%s(%s)', gettype($midocoTravelNoMarginMidocoTravelNoMarginSaleItemItem), var_export($midocoTravelNoMarginMidocoTravelNoMarginSaleItemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTravelNoMarginSaleItem property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTravelNoMarginSaleItem property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -163,8 +163,8 @@ class MidocoTravelNoMargin extends TravelNoMarginDTO
     /**
      * Set MidocoTravelNoMarginSaleItem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem[] $midocoTravelNoMarginSaleItem
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMargin
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem[] $midocoTravelNoMarginSaleItem
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMargin
      */
     public function setMidocoTravelNoMarginSaleItem(?array $midocoTravelNoMarginSaleItem = null): self
     {
@@ -179,14 +179,14 @@ class MidocoTravelNoMargin extends TravelNoMarginDTO
     /**
      * Add item to MidocoTravelNoMarginSaleItem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMargin
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMargin
      */
-    public function addToMidocoTravelNoMarginSaleItem(\Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem $item): self
+    public function addToMidocoTravelNoMarginSaleItem(\Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem) {
-            throw new InvalidArgumentException(sprintf('The MidocoTravelNoMarginSaleItem property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMarginSaleItem, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelNoMarginSaleItem property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginSaleItem, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTravelNoMarginSaleItem[] = $item;
         
@@ -203,7 +203,7 @@ class MidocoTravelNoMargin extends TravelNoMarginDTO
     /**
      * Set calculatedMarginBrutto value
      * @param float $calculatedMarginBrutto
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMargin
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMargin
      */
     public function setCalculatedMarginBrutto(?float $calculatedMarginBrutto = null): self
     {
@@ -226,7 +226,7 @@ class MidocoTravelNoMargin extends TravelNoMarginDTO
     /**
      * Set bookedMarginBrutto value
      * @param float $bookedMarginBrutto
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNoMargin
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMargin
      */
     public function setBookedMarginBrutto(?float $bookedMarginBrutto = null): self
     {

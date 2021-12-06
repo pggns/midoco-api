@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -254,9 +254,9 @@ class Rail_service_type extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: cc-information
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\Cc_information|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information $cc_information = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\Cc_information $cc_information = null;
     /**
      * Constructor method for rail-service-type
      * @uses Rail_service_type::setPosition()
@@ -330,9 +330,9 @@ class Rail_service_type extends AbstractStructBase
      * @param string $last_cancel_date
      * @param int $no_of_children
      * @param string $ticket_category
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information $cc_information
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Cc_information $cc_information
      */
-    public function __construct(int $position, ?string $service_code = null, ?string $service_name = null, ?string $service_description = null, ?string $departure_date = null, ?string $departure_time = null, ?string $departure_code = null, ?string $departure_desc = null, ?string $departure_platform = null, ?string $arrival_date = null, ?string $arrival_time = null, ?string $arrival_code = null, ?string $arrival_desc = null, ?string $arrival_platform = null, ?string $booking_class = null, ?string $tariff_code = null, ?string $tariff_desc = null, ?string $train_no = null, ?string $train_type = null, ?string $waggon = null, ?string $partition = null, ?string $seat = null, ?string $document_no = null, ?string $service_status = null, ?string $person_assignment = null, ?float $service_price = null, ?string $currency = 'EUR', ?bool $vat_included = false, ?int $pax_per_service = null, ?string $reduction_code = null, ?string $reduction_desc = null, ?string $valid_from = null, ?string $last_cancel_date = null, ?int $no_of_children = null, ?string $ticket_category = null, ?\Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information $cc_information = null)
+    public function __construct(int $position, ?string $service_code = null, ?string $service_name = null, ?string $service_description = null, ?string $departure_date = null, ?string $departure_time = null, ?string $departure_code = null, ?string $departure_desc = null, ?string $departure_platform = null, ?string $arrival_date = null, ?string $arrival_time = null, ?string $arrival_code = null, ?string $arrival_desc = null, ?string $arrival_platform = null, ?string $booking_class = null, ?string $tariff_code = null, ?string $tariff_desc = null, ?string $train_no = null, ?string $train_type = null, ?string $waggon = null, ?string $partition = null, ?string $seat = null, ?string $document_no = null, ?string $service_status = null, ?string $person_assignment = null, ?float $service_price = null, ?string $currency = 'EUR', ?bool $vat_included = false, ?int $pax_per_service = null, ?string $reduction_code = null, ?string $reduction_desc = null, ?string $valid_from = null, ?string $last_cancel_date = null, ?int $no_of_children = null, ?string $ticket_category = null, ?\Pggns\MidocoApi\Orderlists\StructType\Cc_information $cc_information = null)
     {
         $this
             ->setPosition($position)
@@ -383,7 +383,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setPosition(int $position): self
     {
@@ -406,7 +406,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set service_code value
      * @param string $service_code
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setService_code(?string $service_code = null): self
     {
@@ -429,7 +429,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set service_name value
      * @param string $service_name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setService_name(?string $service_name = null): self
     {
@@ -452,7 +452,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set service_description value
      * @param string $service_description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setService_description(?string $service_description = null): self
     {
@@ -475,7 +475,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set departure_date value
      * @param string $departure_date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setDeparture_date(?string $departure_date = null): self
     {
@@ -502,7 +502,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set departure_time value
      * @param string $departure_time
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setDeparture_time(?string $departure_time = null): self
     {
@@ -529,7 +529,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set departure_code value
      * @param string $departure_code
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setDeparture_code(?string $departure_code = null): self
     {
@@ -556,7 +556,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set departure_desc value
      * @param string $departure_desc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setDeparture_desc(?string $departure_desc = null): self
     {
@@ -583,7 +583,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set departure_platform value
      * @param string $departure_platform
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setDeparture_platform(?string $departure_platform = null): self
     {
@@ -606,7 +606,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set arrival_date value
      * @param string $arrival_date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setArrival_date(?string $arrival_date = null): self
     {
@@ -633,7 +633,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set arrival_time value
      * @param string $arrival_time
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setArrival_time(?string $arrival_time = null): self
     {
@@ -660,7 +660,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set arrival_code value
      * @param string $arrival_code
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setArrival_code(?string $arrival_code = null): self
     {
@@ -687,7 +687,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set arrival_desc value
      * @param string $arrival_desc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setArrival_desc(?string $arrival_desc = null): self
     {
@@ -714,7 +714,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set arrival_platform value
      * @param string $arrival_platform
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setArrival_platform(?string $arrival_platform = null): self
     {
@@ -737,7 +737,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set booking_class value
      * @param string $booking_class
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setBooking_class(?string $booking_class = null): self
     {
@@ -760,7 +760,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set tariff_code value
      * @param string $tariff_code
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setTariff_code(?string $tariff_code = null): self
     {
@@ -783,7 +783,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set tariff_desc value
      * @param string $tariff_desc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setTariff_desc(?string $tariff_desc = null): self
     {
@@ -806,7 +806,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set train_no value
      * @param string $train_no
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setTrain_no(?string $train_no = null): self
     {
@@ -829,7 +829,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set train_type value
      * @param string $train_type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setTrain_type(?string $train_type = null): self
     {
@@ -852,7 +852,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set waggon value
      * @param string $waggon
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setWaggon(?string $waggon = null): self
     {
@@ -875,7 +875,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set partition value
      * @param string $partition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setPartition(?string $partition = null): self
     {
@@ -898,7 +898,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set seat value
      * @param string $seat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setSeat(?string $seat = null): self
     {
@@ -921,7 +921,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set document_no value
      * @param string $document_no
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setDocument_no(?string $document_no = null): self
     {
@@ -944,7 +944,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set service_status value
      * @param string $service_status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setService_status(?string $service_status = null): self
     {
@@ -967,7 +967,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set person_assignment value
      * @param string $person_assignment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setPerson_assignment(?string $person_assignment = null): self
     {
@@ -990,7 +990,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set service_price value
      * @param float $service_price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setService_price(?float $service_price = null): self
     {
@@ -1013,7 +1013,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setCurrency(?string $currency = 'EUR'): self
     {
@@ -1036,7 +1036,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set vat_included value
      * @param bool $vat_included
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setVat_included(?bool $vat_included = false): self
     {
@@ -1059,7 +1059,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set pax_per_service value
      * @param int $pax_per_service
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setPax_per_service(?int $pax_per_service = null): self
     {
@@ -1082,7 +1082,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set reduction_code value
      * @param string $reduction_code
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setReduction_code(?string $reduction_code = null): self
     {
@@ -1105,7 +1105,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set reduction_desc value
      * @param string $reduction_desc
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setReduction_desc(?string $reduction_desc = null): self
     {
@@ -1128,7 +1128,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set valid_from value
      * @param string $valid_from
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setValid_from(?string $valid_from = null): self
     {
@@ -1155,7 +1155,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set last_cancel_date value
      * @param string $last_cancel_date
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setLast_cancel_date(?string $last_cancel_date = null): self
     {
@@ -1182,7 +1182,7 @@ class Rail_service_type extends AbstractStructBase
     /**
      * Set no_of_children value
      * @param int $no_of_children
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setNo_of_children(?int $no_of_children = null): self
     {
@@ -1204,17 +1204,17 @@ class Rail_service_type extends AbstractStructBase
     }
     /**
      * Set ticket_category value
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_category::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_category::getValidValues()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Ticket_category::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\Ticket_category::getValidValues()
      * @throws InvalidArgumentException
      * @param string $ticket_category
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
     public function setTicket_category(?string $ticket_category = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_category::valueIsValid($ticket_category)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_category', is_array($ticket_category) ? implode(', ', $ticket_category) : var_export($ticket_category, true), implode(', ', \Pggns\MidocoApi\Api\Orderlists\EnumType\Ticket_category::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\Ticket_category::valueIsValid($ticket_category)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\Ticket_category', is_array($ticket_category) ? implode(', ', $ticket_category) : var_export($ticket_category, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\Ticket_category::getValidValues())), __LINE__);
         }
         $this->ticket_category = $this->{'ticket-category'} = $ticket_category;
         
@@ -1222,18 +1222,18 @@ class Rail_service_type extends AbstractStructBase
     }
     /**
      * Get cc_information value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Cc_information|null
      */
-    public function getCc_information(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information
+    public function getCc_information(): ?\Pggns\MidocoApi\Orderlists\StructType\Cc_information
     {
         return $this->{'cc-information'};
     }
     /**
      * Set cc_information value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information $cc_information
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\Rail_service_type
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Cc_information $cc_information
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Rail_service_type
      */
-    public function setCc_information(?\Pggns\MidocoApi\Api\Orderlists\StructType\Cc_information $cc_information = null): self
+    public function setCc_information(?\Pggns\MidocoApi\Orderlists\StructType\Cc_information $cc_information = null): self
     {
         $this->cc_information = $this->{'cc-information'} = $cc_information;
         

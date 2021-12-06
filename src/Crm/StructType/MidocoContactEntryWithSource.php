@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,26 +17,26 @@ class MidocoContactEntryWithSource extends AbstractStructBase
      * The MidocoContactEntry
      * Meta information extracted from the WSDL
      * - ref: MidocoContactEntry
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType $MidocoContactEntry = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType $MidocoContactEntry = null;
     /**
      * The MidocoContactSource
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoContactSource
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoContactSource[]
      */
     protected ?array $MidocoContactSource = null;
     /**
      * Constructor method for MidocoContactEntryWithSource
      * @uses MidocoContactEntryWithSource::setMidocoContactEntry()
      * @uses MidocoContactEntryWithSource::setMidocoContactSource()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType $midocoContactEntry
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource[] $midocoContactSource
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType $midocoContactEntry
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactSource[] $midocoContactSource
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType $midocoContactEntry = null, ?array $midocoContactSource = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType $midocoContactEntry = null, ?array $midocoContactSource = null)
     {
         $this
             ->setMidocoContactEntry($midocoContactEntry)
@@ -44,18 +44,18 @@ class MidocoContactEntryWithSource extends AbstractStructBase
     }
     /**
      * Get MidocoContactEntry value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType|null
      */
-    public function getMidocoContactEntry(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType
+    public function getMidocoContactEntry(): ?\Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType
     {
         return $this->MidocoContactEntry;
     }
     /**
      * Set MidocoContactEntry value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType $midocoContactEntry
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryWithSource
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType $midocoContactEntry
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryWithSource
      */
-    public function setMidocoContactEntry(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryType $midocoContactEntry = null): self
+    public function setMidocoContactEntry(?\Pggns\MidocoApi\Crm\StructType\MidocoContactEntryType $midocoContactEntry = null): self
     {
         $this->MidocoContactEntry = $midocoContactEntry;
         
@@ -63,7 +63,7 @@ class MidocoContactEntryWithSource extends AbstractStructBase
     }
     /**
      * Get MidocoContactSource value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoContactSource[]
      */
     public function getMidocoContactSource(): ?array
     {
@@ -84,12 +84,12 @@ class MidocoContactEntryWithSource extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoContactEntryWithSourceMidocoContactSourceItem) {
             // validation for constraint: itemType
-            if (!$midocoContactEntryWithSourceMidocoContactSourceItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource) {
+            if (!$midocoContactEntryWithSourceMidocoContactSourceItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoContactSource) {
                 $invalidValues[] = is_object($midocoContactEntryWithSourceMidocoContactSourceItem) ? get_class($midocoContactEntryWithSourceMidocoContactSourceItem) : sprintf('%s(%s)', gettype($midocoContactEntryWithSourceMidocoContactSourceItem), var_export($midocoContactEntryWithSourceMidocoContactSourceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactSource property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactSource property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoContactSource, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -98,8 +98,8 @@ class MidocoContactEntryWithSource extends AbstractStructBase
     /**
      * Set MidocoContactSource value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource[] $midocoContactSource
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryWithSource
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactSource[] $midocoContactSource
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryWithSource
      */
     public function setMidocoContactSource(?array $midocoContactSource = null): self
     {
@@ -114,14 +114,14 @@ class MidocoContactEntryWithSource extends AbstractStructBase
     /**
      * Add item to MidocoContactSource value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactEntryWithSource
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactSource $item
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoContactEntryWithSource
      */
-    public function addToMidocoContactSource(\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource $item): self
+    public function addToMidocoContactSource(\Pggns\MidocoApi\Crm\StructType\MidocoContactSource $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactSource property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactSource, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoContactSource) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactSource property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoContactSource, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactSource[] = $item;
         

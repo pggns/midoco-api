@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -24,7 +24,7 @@ class SearchTssProtocolResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:MidocoTssProtocol
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTssProtocol[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTssProtocol[]
      */
     protected ?array $MidocoTssProtocol = null;
     /**
@@ -32,7 +32,7 @@ class SearchTssProtocolResponse extends AbstractStructBase
      * @uses SearchTssProtocolResponse::setUnitName()
      * @uses SearchTssProtocolResponse::setMidocoTssProtocol()
      * @param string $unitName
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTssProtocol[] $midocoTssProtocol
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTssProtocol[] $midocoTssProtocol
      */
     public function __construct(?string $unitName = null, ?array $midocoTssProtocol = null)
     {
@@ -51,7 +51,7 @@ class SearchTssProtocolResponse extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTssProtocolResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTssProtocolResponse
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -65,7 +65,7 @@ class SearchTssProtocolResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTssProtocol value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTssProtocol[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTssProtocol[]
      */
     public function getMidocoTssProtocol(): ?array
     {
@@ -86,12 +86,12 @@ class SearchTssProtocolResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchTssProtocolResponseMidocoTssProtocolItem) {
             // validation for constraint: itemType
-            if (!$searchTssProtocolResponseMidocoTssProtocolItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTssProtocol) {
+            if (!$searchTssProtocolResponseMidocoTssProtocolItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoTssProtocol) {
                 $invalidValues[] = is_object($searchTssProtocolResponseMidocoTssProtocolItem) ? get_class($searchTssProtocolResponseMidocoTssProtocolItem) : sprintf('%s(%s)', gettype($searchTssProtocolResponseMidocoTssProtocolItem), var_export($searchTssProtocolResponseMidocoTssProtocolItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTssProtocol property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTssProtocol, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTssProtocol property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTssProtocol, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -100,8 +100,8 @@ class SearchTssProtocolResponse extends AbstractStructBase
     /**
      * Set MidocoTssProtocol value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTssProtocol[] $midocoTssProtocol
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTssProtocolResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTssProtocol[] $midocoTssProtocol
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTssProtocolResponse
      */
     public function setMidocoTssProtocol(?array $midocoTssProtocol = null): self
     {
@@ -116,14 +116,14 @@ class SearchTssProtocolResponse extends AbstractStructBase
     /**
      * Add item to MidocoTssProtocol value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTssProtocol $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchTssProtocolResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTssProtocol $item
+     * @return \Pggns\MidocoApi\Order\StructType\SearchTssProtocolResponse
      */
-    public function addToMidocoTssProtocol(\Pggns\MidocoApi\Api\Order\StructType\MidocoTssProtocol $item): self
+    public function addToMidocoTssProtocol(\Pggns\MidocoApi\Order\StructType\MidocoTssProtocol $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTssProtocol) {
-            throw new InvalidArgumentException(sprintf('The MidocoTssProtocol property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTssProtocol, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoTssProtocol) {
+            throw new InvalidArgumentException(sprintf('The MidocoTssProtocol property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTssProtocol, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTssProtocol[] = $item;
         

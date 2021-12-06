@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class ConcardisPositionDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConcardisPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConcardisPositionDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -134,7 +134,7 @@ class ConcardisPositionDTO extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConcardisPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConcardisPositionDTO
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -157,7 +157,7 @@ class ConcardisPositionDTO extends AbstractStructBase
     /**
      * Set concardisLine value
      * @param string $concardisLine
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConcardisPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConcardisPositionDTO
      */
     public function setConcardisLine(?string $concardisLine = null): self
     {
@@ -180,7 +180,7 @@ class ConcardisPositionDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConcardisPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConcardisPositionDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -203,7 +203,7 @@ class ConcardisPositionDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConcardisPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConcardisPositionDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -226,7 +226,7 @@ class ConcardisPositionDTO extends AbstractStructBase
     /**
      * Set exportTimestamp value
      * @param string $exportTimestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConcardisPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConcardisPositionDTO
      */
     public function setExportTimestamp(?string $exportTimestamp = null): self
     {
@@ -249,7 +249,7 @@ class ConcardisPositionDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConcardisPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConcardisPositionDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -272,7 +272,7 @@ class ConcardisPositionDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConcardisPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConcardisPositionDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -295,7 +295,7 @@ class ConcardisPositionDTO extends AbstractStructBase
     /**
      * Set transactionId value
      * @param int $transactionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConcardisPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConcardisPositionDTO
      */
     public function setTransactionId(?int $transactionId = null): self
     {
@@ -318,7 +318,7 @@ class ConcardisPositionDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConcardisPositionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ConcardisPositionDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

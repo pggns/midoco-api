@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -93,7 +93,7 @@ class GetCmsHotelDataRequestType extends AbstractStructBase
      * Set hotelCodes value
      * @throws InvalidArgumentException
      * @param string[] $hotelCodes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataRequestType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataRequestType
      */
     public function setHotelCodes(?array $hotelCodes = null): self
     {
@@ -109,7 +109,7 @@ class GetCmsHotelDataRequestType extends AbstractStructBase
      * Add item to hotelCodes value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataRequestType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataRequestType
      */
     public function addToHotelCodes(string $item): self
     {
@@ -132,7 +132,7 @@ class GetCmsHotelDataRequestType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataRequestType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataRequestType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -155,7 +155,7 @@ class GetCmsHotelDataRequestType extends AbstractStructBase
     /**
      * Set hotelcode value
      * @param string $hotelcode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataRequestType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataRequestType
      */
     public function setHotelcode(?string $hotelcode = null): self
     {
@@ -178,7 +178,7 @@ class GetCmsHotelDataRequestType extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCmsHotelDataRequestType
+     * @return \Pggns\MidocoApi\Order\StructType\GetCmsHotelDataRequestType
      */
     public function setItemId(?int $itemId = null): self
     {

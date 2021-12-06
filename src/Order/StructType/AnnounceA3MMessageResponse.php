@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class AnnounceA3MMessageResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: AnnounceA3MError
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError[]
+     * @var \Pggns\MidocoApi\Order\StructType\AnnounceA3MError[]
      */
     protected ?array $AnnounceA3MError = null;
     /**
      * Constructor method for AnnounceA3MMessageResponse
      * @uses AnnounceA3MMessageResponse::setAnnounceA3MError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError[] $announceA3MError
+     * @param \Pggns\MidocoApi\Order\StructType\AnnounceA3MError[] $announceA3MError
      */
     public function __construct(?array $announceA3MError = null)
     {
@@ -34,7 +34,7 @@ class AnnounceA3MMessageResponse extends AbstractStructBase
     }
     /**
      * Get AnnounceA3MError value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError[]
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceA3MError[]
      */
     public function getAnnounceA3MError(): ?array
     {
@@ -55,12 +55,12 @@ class AnnounceA3MMessageResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $announceA3MMessageResponseAnnounceA3MErrorItem) {
             // validation for constraint: itemType
-            if (!$announceA3MMessageResponseAnnounceA3MErrorItem instanceof \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError) {
+            if (!$announceA3MMessageResponseAnnounceA3MErrorItem instanceof \Pggns\MidocoApi\Order\StructType\AnnounceA3MError) {
                 $invalidValues[] = is_object($announceA3MMessageResponseAnnounceA3MErrorItem) ? get_class($announceA3MMessageResponseAnnounceA3MErrorItem) : sprintf('%s(%s)', gettype($announceA3MMessageResponseAnnounceA3MErrorItem), var_export($announceA3MMessageResponseAnnounceA3MErrorItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AnnounceA3MError property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AnnounceA3MError property can only contain items of type \Pggns\MidocoApi\Order\StructType\AnnounceA3MError, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class AnnounceA3MMessageResponse extends AbstractStructBase
     /**
      * Set AnnounceA3MError value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError[] $announceA3MError
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MMessageResponse
+     * @param \Pggns\MidocoApi\Order\StructType\AnnounceA3MError[] $announceA3MError
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceA3MMessageResponse
      */
     public function setAnnounceA3MError(?array $announceA3MError = null): self
     {
@@ -85,14 +85,14 @@ class AnnounceA3MMessageResponse extends AbstractStructBase
     /**
      * Add item to AnnounceA3MError value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MMessageResponse
+     * @param \Pggns\MidocoApi\Order\StructType\AnnounceA3MError $item
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceA3MMessageResponse
      */
-    public function addToAnnounceA3MError(\Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError $item): self
+    public function addToAnnounceA3MError(\Pggns\MidocoApi\Order\StructType\AnnounceA3MError $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError) {
-            throw new InvalidArgumentException(sprintf('The AnnounceA3MError property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\AnnounceA3MError, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\AnnounceA3MError) {
+            throw new InvalidArgumentException(sprintf('The AnnounceA3MError property can only contain items of type \Pggns\MidocoApi\Order\StructType\AnnounceA3MError, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AnnounceA3MError[] = $item;
         

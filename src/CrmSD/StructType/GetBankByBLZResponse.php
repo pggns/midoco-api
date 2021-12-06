@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetBankByBLZResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBankNumber
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO[]
      */
     protected ?array $MidocoBankNumber = null;
     /**
      * Constructor method for GetBankByBLZResponse
      * @uses GetBankByBLZResponse::setMidocoBankNumber()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO[] $midocoBankNumber
+     * @param \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO[] $midocoBankNumber
      */
     public function __construct(?array $midocoBankNumber = null)
     {
@@ -34,7 +34,7 @@ class GetBankByBLZResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBankNumber value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO[]
      */
     public function getMidocoBankNumber(): ?array
     {
@@ -55,12 +55,12 @@ class GetBankByBLZResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBankByBLZResponseMidocoBankNumberItem) {
             // validation for constraint: itemType
-            if (!$getBankByBLZResponseMidocoBankNumberItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO) {
+            if (!$getBankByBLZResponseMidocoBankNumberItem instanceof \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO) {
                 $invalidValues[] = is_object($getBankByBLZResponseMidocoBankNumberItem) ? get_class($getBankByBLZResponseMidocoBankNumberItem) : sprintf('%s(%s)', gettype($getBankByBLZResponseMidocoBankNumberItem), var_export($getBankByBLZResponseMidocoBankNumberItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBankNumber property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBankNumber property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetBankByBLZResponse extends AbstractStructBase
     /**
      * Set MidocoBankNumber value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO[] $midocoBankNumber
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetBankByBLZResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO[] $midocoBankNumber
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetBankByBLZResponse
      */
     public function setMidocoBankNumber(?array $midocoBankNumber = null): self
     {
@@ -85,14 +85,14 @@ class GetBankByBLZResponse extends AbstractStructBase
     /**
      * Add item to MidocoBankNumber value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetBankByBLZResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetBankByBLZResponse
      */
-    public function addToMidocoBankNumber(\Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO $item): self
+    public function addToMidocoBankNumber(\Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoBankNumber property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\BankNumberDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBankNumber property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\BankNumberDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBankNumber[] = $item;
         

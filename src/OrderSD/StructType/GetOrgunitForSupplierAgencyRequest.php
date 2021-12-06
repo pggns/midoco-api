@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetOrgunitForSupplierAgencyRequest extends AbstractStructBase
     /**
      * Set agencyNo value
      * @param string $agencyNo
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetOrgunitForSupplierAgencyRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetOrgunitForSupplierAgencyRequest
      */
     public function setAgencyNo(?string $agencyNo = null): self
     {
@@ -70,7 +70,7 @@ class GetOrgunitForSupplierAgencyRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetOrgunitForSupplierAgencyRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetOrgunitForSupplierAgencyRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {

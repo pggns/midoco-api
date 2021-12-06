@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetCustomerAssignableDebitorsResponse extends AbstractStructBase
      * Set MidocoDebitor value
      * @throws InvalidArgumentException
      * @param string[] $midocoDebitor
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerAssignableDebitorsResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerAssignableDebitorsResponse
      */
     public function setMidocoDebitor(?array $midocoDebitor = null): self
     {
@@ -85,7 +85,7 @@ class GetCustomerAssignableDebitorsResponse extends AbstractStructBase
      * Add item to MidocoDebitor value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerAssignableDebitorsResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerAssignableDebitorsResponse
      */
     public function addToMidocoDebitor(string $item): self
     {

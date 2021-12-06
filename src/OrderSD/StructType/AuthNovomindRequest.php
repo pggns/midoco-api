@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class AuthNovomindRequest extends AbstractStructBase
     /**
      * Set userName value
      * @param string $userName
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AuthNovomindRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AuthNovomindRequest
      */
     public function setUserName(?string $userName = null): self
     {
@@ -102,7 +102,7 @@ class AuthNovomindRequest extends AbstractStructBase
     /**
      * Set userPwd value
      * @param string $userPwd
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AuthNovomindRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AuthNovomindRequest
      */
     public function setUserPwd(?string $userPwd = null): self
     {
@@ -125,7 +125,7 @@ class AuthNovomindRequest extends AbstractStructBase
     /**
      * Set restUri value
      * @param string $restUri
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AuthNovomindRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AuthNovomindRequest
      */
     public function setRestUri(?string $restUri = null): self
     {
@@ -148,7 +148,7 @@ class AuthNovomindRequest extends AbstractStructBase
     /**
      * Set authServerUri value
      * @param string $authServerUri
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AuthNovomindRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AuthNovomindRequest
      */
     public function setAuthServerUri(?string $authServerUri = null): self
     {
@@ -171,7 +171,7 @@ class AuthNovomindRequest extends AbstractStructBase
     /**
      * Set clientId value
      * @param string $clientId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AuthNovomindRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AuthNovomindRequest
      */
     public function setClientId(?string $clientId = null): self
     {
@@ -194,7 +194,7 @@ class AuthNovomindRequest extends AbstractStructBase
     /**
      * Set clientSecret value
      * @param string $clientSecret
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AuthNovomindRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AuthNovomindRequest
      */
     public function setClientSecret(?string $clientSecret = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -80,7 +80,7 @@ class PrintAgencySettlementInvoiceResponse extends AbstractStructBase
      * Set printJobIds value
      * @throws InvalidArgumentException
      * @param int[] $printJobIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAgencySettlementInvoiceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAgencySettlementInvoiceResponse
      */
     public function setPrintJobIds(?array $printJobIds = null): self
     {
@@ -96,7 +96,7 @@ class PrintAgencySettlementInvoiceResponse extends AbstractStructBase
      * Add item to printJobIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAgencySettlementInvoiceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAgencySettlementInvoiceResponse
      */
     public function addToPrintJobIds(int $item): self
     {
@@ -146,7 +146,7 @@ class PrintAgencySettlementInvoiceResponse extends AbstractStructBase
      * Set tempRepositoryIds value
      * @throws InvalidArgumentException
      * @param int[] $tempRepositoryIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAgencySettlementInvoiceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAgencySettlementInvoiceResponse
      */
     public function setTempRepositoryIds(?array $tempRepositoryIds = null): self
     {
@@ -162,7 +162,7 @@ class PrintAgencySettlementInvoiceResponse extends AbstractStructBase
      * Add item to tempRepositoryIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintAgencySettlementInvoiceResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAgencySettlementInvoiceResponse
      */
     public function addToTempRepositoryIds(int $item): self
     {

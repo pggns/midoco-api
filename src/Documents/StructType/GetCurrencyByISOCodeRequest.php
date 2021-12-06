@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetCurrencyByISOCodeRequest extends AbstractStructBase
     /**
      * Set isoCode value
      * @param string $isoCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetCurrencyByISOCodeRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetCurrencyByISOCodeRequest
      */
     public function setIsoCode(?string $isoCode = null): self
     {

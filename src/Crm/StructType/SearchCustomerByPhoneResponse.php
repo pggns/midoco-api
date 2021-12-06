@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class SearchCustomerByPhoneResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerPhoneSearch
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerPhoneSearch[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCustomerPhoneSearch[]
      */
     protected ?array $MidocoCustomerPhoneSearch = null;
     /**
@@ -31,7 +31,7 @@ class SearchCustomerByPhoneResponse extends AbstractStructBase
      * Constructor method for SearchCustomerByPhoneResponse
      * @uses SearchCustomerByPhoneResponse::setMidocoCustomerPhoneSearch()
      * @uses SearchCustomerByPhoneResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerPhoneSearch[] $midocoCustomerPhoneSearch
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerPhoneSearch[] $midocoCustomerPhoneSearch
      * @param int $noOfResults
      */
     public function __construct(?array $midocoCustomerPhoneSearch = null, ?int $noOfResults = null)
@@ -42,7 +42,7 @@ class SearchCustomerByPhoneResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerPhoneSearch value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerPhoneSearch[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCustomerPhoneSearch[]
      */
     public function getMidocoCustomerPhoneSearch(): ?array
     {
@@ -63,12 +63,12 @@ class SearchCustomerByPhoneResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchCustomerByPhoneResponseMidocoCustomerPhoneSearchItem) {
             // validation for constraint: itemType
-            if (!$searchCustomerByPhoneResponseMidocoCustomerPhoneSearchItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerPhoneSearch) {
+            if (!$searchCustomerByPhoneResponseMidocoCustomerPhoneSearchItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCustomerPhoneSearch) {
                 $invalidValues[] = is_object($searchCustomerByPhoneResponseMidocoCustomerPhoneSearchItem) ? get_class($searchCustomerByPhoneResponseMidocoCustomerPhoneSearchItem) : sprintf('%s(%s)', gettype($searchCustomerByPhoneResponseMidocoCustomerPhoneSearchItem), var_export($searchCustomerByPhoneResponseMidocoCustomerPhoneSearchItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerPhoneSearch property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerPhoneSearch, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerPhoneSearch property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCustomerPhoneSearch, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,8 +77,8 @@ class SearchCustomerByPhoneResponse extends AbstractStructBase
     /**
      * Set MidocoCustomerPhoneSearch value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerPhoneSearch[] $midocoCustomerPhoneSearch
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByPhoneResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerPhoneSearch[] $midocoCustomerPhoneSearch
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneResponse
      */
     public function setMidocoCustomerPhoneSearch(?array $midocoCustomerPhoneSearch = null): self
     {
@@ -93,14 +93,14 @@ class SearchCustomerByPhoneResponse extends AbstractStructBase
     /**
      * Add item to MidocoCustomerPhoneSearch value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerPhoneSearch $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByPhoneResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerPhoneSearch $item
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneResponse
      */
-    public function addToMidocoCustomerPhoneSearch(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerPhoneSearch $item): self
+    public function addToMidocoCustomerPhoneSearch(\Pggns\MidocoApi\Crm\StructType\MidocoCustomerPhoneSearch $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerPhoneSearch) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerPhoneSearch property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCustomerPhoneSearch, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCustomerPhoneSearch) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerPhoneSearch property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCustomerPhoneSearch, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerPhoneSearch[] = $item;
         
@@ -117,7 +117,7 @@ class SearchCustomerByPhoneResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCustomerByPhoneResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

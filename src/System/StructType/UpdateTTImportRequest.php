@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class UpdateTTImportRequest extends AbstractStructBase
     /**
      * Set username value
      * @param string $username
-     * @return \Pggns\MidocoApi\Api\System\StructType\UpdateTTImportRequest
+     * @return \Pggns\MidocoApi\System\StructType\UpdateTTImportRequest
      */
     public function setUsername(?string $username = null): self
     {
@@ -78,7 +78,7 @@ class UpdateTTImportRequest extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Pggns\MidocoApi\Api\System\StructType\UpdateTTImportRequest
+     * @return \Pggns\MidocoApi\System\StructType\UpdateTTImportRequest
      */
     public function setPassword(?string $password = null): self
     {
@@ -101,7 +101,7 @@ class UpdateTTImportRequest extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\System\StructType\UpdateTTImportRequest
+     * @return \Pggns\MidocoApi\System\StructType\UpdateTTImportRequest
      */
     public function setBookingId(?string $bookingId = null): self
     {

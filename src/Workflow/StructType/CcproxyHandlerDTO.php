@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class CcproxyHandlerDTO extends AbstractStructBase
     /**
      * Set handlerId value
      * @param string $handlerId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\CcproxyHandlerDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\CcproxyHandlerDTO
      */
     public function setHandlerId(?string $handlerId = null): self
     {
@@ -70,7 +70,7 @@ class CcproxyHandlerDTO extends AbstractStructBase
     /**
      * Set handlerType value
      * @param string $handlerType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\CcproxyHandlerDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\CcproxyHandlerDTO
      */
     public function setHandlerType(?string $handlerType = null): self
     {

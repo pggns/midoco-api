@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -209,7 +209,7 @@ class Flight_price extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: saving
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Saving[]
+     * @var \Pggns\MidocoApi\Booking\StructType\Saving[]
      */
     protected ?array $saving = null;
     /**
@@ -224,9 +224,9 @@ class Flight_price extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: cc-information
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\Cc_information|null
+     * @var \Pggns\MidocoApi\Booking\StructType\Cc_information|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\Cc_information $cc_information = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\Cc_information $cc_information = null;
     /**
      * Constructor method for flight-price
      * @uses Flight_price::setPosition()
@@ -286,11 +286,11 @@ class Flight_price extends AbstractStructBase
      * @param float $original_price
      * @param string $original_currency
      * @param float $exchange_rate
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Saving[] $saving
+     * @param \Pggns\MidocoApi\Booking\StructType\Saving[] $saving
      * @param float $cancellation_fee
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Cc_information $cc_information
+     * @param \Pggns\MidocoApi\Booking\StructType\Cc_information $cc_information
      */
-    public function __construct(int $position, int $booking_position, ?string $ticket_designator = null, ?float $base_fare = null, ?string $fare_type = null, ?float $total_tax = null, ?float $total_price = null, ?string $currency = null, ?float $commission_percent = null, ?float $commission_amount = null, ?float $wholesale_price = null, ?string $person_assignment = null, ?string $service_assignment = null, ?string $payment_type = null, ?string $extPaymentType = null, ?string $payment_information = null, ?string $ticketing_date = null, ?bool $is_domestic = null, ?bool $vat_printed = false, ?float $vat_percent = null, ?bool $fee_calculated = null, ?float $fee_amount_included = null, ?float $fee_taxable_percent = null, ?string $fee_currency = null, ?float $original_price = null, ?string $original_currency = null, ?float $exchange_rate = null, ?array $saving = null, ?float $cancellation_fee = null, ?\Pggns\MidocoApi\Api\Booking\StructType\Cc_information $cc_information = null)
+    public function __construct(int $position, int $booking_position, ?string $ticket_designator = null, ?float $base_fare = null, ?string $fare_type = null, ?float $total_tax = null, ?float $total_price = null, ?string $currency = null, ?float $commission_percent = null, ?float $commission_amount = null, ?float $wholesale_price = null, ?string $person_assignment = null, ?string $service_assignment = null, ?string $payment_type = null, ?string $extPaymentType = null, ?string $payment_information = null, ?string $ticketing_date = null, ?bool $is_domestic = null, ?bool $vat_printed = false, ?float $vat_percent = null, ?bool $fee_calculated = null, ?float $fee_amount_included = null, ?float $fee_taxable_percent = null, ?string $fee_currency = null, ?float $original_price = null, ?string $original_currency = null, ?float $exchange_rate = null, ?array $saving = null, ?float $cancellation_fee = null, ?\Pggns\MidocoApi\Booking\StructType\Cc_information $cc_information = null)
     {
         $this
             ->setPosition($position)
@@ -335,7 +335,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setPosition(int $position): self
     {
@@ -358,7 +358,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set booking_position value
      * @param int $booking_position
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setBooking_position(int $booking_position): self
     {
@@ -381,7 +381,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set ticket_designator value
      * @param string $ticket_designator
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setTicket_designator(?string $ticket_designator = null): self
     {
@@ -404,7 +404,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set base_fare value
      * @param float $base_fare
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setBase_fare(?float $base_fare = null): self
     {
@@ -426,17 +426,17 @@ class Flight_price extends AbstractStructBase
     }
     /**
      * Set fare_type value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\Fare_type::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\Fare_type::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\Fare_type::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\Fare_type::getValidValues()
      * @throws InvalidArgumentException
      * @param string $fare_type
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setFare_type(?string $fare_type = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\Fare_type::valueIsValid($fare_type)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\Fare_type', is_array($fare_type) ? implode(', ', $fare_type) : var_export($fare_type, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\Fare_type::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\Fare_type::valueIsValid($fare_type)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\Fare_type', is_array($fare_type) ? implode(', ', $fare_type) : var_export($fare_type, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\Fare_type::getValidValues())), __LINE__);
         }
         $this->fare_type = $this->{'fare-type'} = $fare_type;
         
@@ -453,7 +453,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set total_tax value
      * @param float $total_tax
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setTotal_tax(?float $total_tax = null): self
     {
@@ -476,7 +476,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set total_price value
      * @param float $total_price
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setTotal_price(?float $total_price = null): self
     {
@@ -499,7 +499,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -522,7 +522,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set commission_percent value
      * @param float $commission_percent
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setCommission_percent(?float $commission_percent = null): self
     {
@@ -545,7 +545,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set commission_amount value
      * @param float $commission_amount
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setCommission_amount(?float $commission_amount = null): self
     {
@@ -568,7 +568,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set wholesale_price value
      * @param float $wholesale_price
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setWholesale_price(?float $wholesale_price = null): self
     {
@@ -591,7 +591,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set person_assignment value
      * @param string $person_assignment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setPerson_assignment(?string $person_assignment = null): self
     {
@@ -614,7 +614,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set service_assignment value
      * @param string $service_assignment
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setService_assignment(?string $service_assignment = null): self
     {
@@ -636,17 +636,17 @@ class Flight_price extends AbstractStructBase
     }
     /**
      * Set payment_type value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\Payment_type::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\Payment_type::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\Payment_type::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\Payment_type::getValidValues()
      * @throws InvalidArgumentException
      * @param string $payment_type
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setPayment_type(?string $payment_type = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\Payment_type::valueIsValid($payment_type)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\Payment_type', is_array($payment_type) ? implode(', ', $payment_type) : var_export($payment_type, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\Payment_type::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\Payment_type::valueIsValid($payment_type)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\Payment_type', is_array($payment_type) ? implode(', ', $payment_type) : var_export($payment_type, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\Payment_type::getValidValues())), __LINE__);
         }
         $this->payment_type = $this->{'payment-type'} = $payment_type;
         
@@ -663,7 +663,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set extPaymentType value
      * @param string $extPaymentType
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setExtPaymentType(?string $extPaymentType = null): self
     {
@@ -690,7 +690,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set payment_information value
      * @param string $payment_information
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setPayment_information(?string $payment_information = null): self
     {
@@ -713,7 +713,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set ticketing_date value
      * @param string $ticketing_date
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setTicketing_date(?string $ticketing_date = null): self
     {
@@ -740,7 +740,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set is_domestic value
      * @param bool $is_domestic
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setIs_domestic(?bool $is_domestic = null): self
     {
@@ -763,7 +763,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set vat_printed value
      * @param bool $vat_printed
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setVat_printed(?bool $vat_printed = false): self
     {
@@ -786,7 +786,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set vat_percent value
      * @param float $vat_percent
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setVat_percent(?float $vat_percent = null): self
     {
@@ -809,7 +809,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set fee_calculated value
      * @param bool $fee_calculated
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setFee_calculated(?bool $fee_calculated = null): self
     {
@@ -832,7 +832,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set fee_amount_included value
      * @param float $fee_amount_included
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setFee_amount_included(?float $fee_amount_included = null): self
     {
@@ -855,7 +855,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set fee_taxable_percent value
      * @param float $fee_taxable_percent
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setFee_taxable_percent(?float $fee_taxable_percent = null): self
     {
@@ -878,7 +878,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set fee_currency value
      * @param string $fee_currency
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setFee_currency(?string $fee_currency = null): self
     {
@@ -901,7 +901,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set original_price value
      * @param float $original_price
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setOriginal_price(?float $original_price = null): self
     {
@@ -924,7 +924,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set original_currency value
      * @param string $original_currency
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setOriginal_currency(?string $original_currency = null): self
     {
@@ -947,7 +947,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set exchange_rate value
      * @param float $exchange_rate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setExchange_rate(?float $exchange_rate = null): self
     {
@@ -961,7 +961,7 @@ class Flight_price extends AbstractStructBase
     }
     /**
      * Get saving value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Saving[]
+     * @return \Pggns\MidocoApi\Booking\StructType\Saving[]
      */
     public function getSaving(): ?array
     {
@@ -982,12 +982,12 @@ class Flight_price extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $flight_priceSavingItem) {
             // validation for constraint: itemType
-            if (!$flight_priceSavingItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\Saving) {
+            if (!$flight_priceSavingItem instanceof \Pggns\MidocoApi\Booking\StructType\Saving) {
                 $invalidValues[] = is_object($flight_priceSavingItem) ? get_class($flight_priceSavingItem) : sprintf('%s(%s)', gettype($flight_priceSavingItem), var_export($flight_priceSavingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The saving property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Saving, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The saving property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Saving, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -996,8 +996,8 @@ class Flight_price extends AbstractStructBase
     /**
      * Set saving value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Saving[] $saving
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @param \Pggns\MidocoApi\Booking\StructType\Saving[] $saving
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setSaving(?array $saving = null): self
     {
@@ -1012,14 +1012,14 @@ class Flight_price extends AbstractStructBase
     /**
      * Add item to saving value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Saving $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @param \Pggns\MidocoApi\Booking\StructType\Saving $item
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
-    public function addToSaving(\Pggns\MidocoApi\Api\Booking\StructType\Saving $item): self
+    public function addToSaving(\Pggns\MidocoApi\Booking\StructType\Saving $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\Saving) {
-            throw new InvalidArgumentException(sprintf('The saving property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\Saving, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\Saving) {
+            throw new InvalidArgumentException(sprintf('The saving property can only contain items of type \Pggns\MidocoApi\Booking\StructType\Saving, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->saving[] = $item;
         
@@ -1036,7 +1036,7 @@ class Flight_price extends AbstractStructBase
     /**
      * Set cancellation_fee value
      * @param float $cancellation_fee
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
     public function setCancellation_fee(?float $cancellation_fee = null): self
     {
@@ -1050,18 +1050,18 @@ class Flight_price extends AbstractStructBase
     }
     /**
      * Get cc_information value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Cc_information|null
+     * @return \Pggns\MidocoApi\Booking\StructType\Cc_information|null
      */
-    public function getCc_information(): ?\Pggns\MidocoApi\Api\Booking\StructType\Cc_information
+    public function getCc_information(): ?\Pggns\MidocoApi\Booking\StructType\Cc_information
     {
         return $this->{'cc-information'};
     }
     /**
      * Set cc_information value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\Cc_information $cc_information
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Flight_price
+     * @param \Pggns\MidocoApi\Booking\StructType\Cc_information $cc_information
+     * @return \Pggns\MidocoApi\Booking\StructType\Flight_price
      */
-    public function setCc_information(?\Pggns\MidocoApi\Api\Booking\StructType\Cc_information $cc_information = null): self
+    public function setCc_information(?\Pggns\MidocoApi\Booking\StructType\Cc_information $cc_information = null): self
     {
         $this->cc_information = $this->{'cc-information'} = $cc_information;
         

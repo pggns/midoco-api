@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SaveAccessJasperReportResponse extends AbstractStructBase
     /**
      * Set status value
      * @param bool $status
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveAccessJasperReportResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveAccessJasperReportResponse
      */
     public function setStatus(?bool $status = null): self
     {

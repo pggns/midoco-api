@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -82,9 +82,9 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
      * The MidocoPaymentOrdersInfos
      * Meta information extracted from the WSDL
      * - ref: MidocoPaymentOrdersInfos
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos $MidocoPaymentOrdersInfos = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos $MidocoPaymentOrdersInfos = null;
     /**
      * The bankTransferCollective
      * @var bool|null
@@ -140,13 +140,13 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
      * @param string $mandateReference
      * @param bool $isRecurrent
      * @param string $mandateType
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos
      * @param bool $bankTransferCollective
      * @param bool $isSepa
      * @param string $extReference
      * @param string $approvalCode
      */
-    public function __construct(?string $accountNo = null, ?string $accountBlz = null, ?string $accountName = null, ?string $accountOwner = null, ?string $accountCountry = null, ?string $transactionType = null, ?string $iban = null, ?string $swiftBicCode = null, ?int $mandateId = null, ?string $executionDate = null, ?string $mandateReference = null, ?bool $isRecurrent = null, ?string $mandateType = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null, ?bool $bankTransferCollective = null, ?bool $isSepa = false, ?string $extReference = null, ?string $approvalCode = null)
+    public function __construct(?string $accountNo = null, ?string $accountBlz = null, ?string $accountName = null, ?string $accountOwner = null, ?string $accountCountry = null, ?string $transactionType = null, ?string $iban = null, ?string $swiftBicCode = null, ?int $mandateId = null, ?string $executionDate = null, ?string $mandateReference = null, ?bool $isRecurrent = null, ?string $mandateType = null, ?\Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null, ?bool $bankTransferCollective = null, ?bool $isSepa = false, ?string $extReference = null, ?string $approvalCode = null)
     {
         $this
             ->setAccountNo($accountNo)
@@ -179,7 +179,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -202,7 +202,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set accountBlz value
      * @param string $accountBlz
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setAccountBlz(?string $accountBlz = null): self
     {
@@ -225,7 +225,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -248,7 +248,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set accountOwner value
      * @param string $accountOwner
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setAccountOwner(?string $accountOwner = null): self
     {
@@ -271,7 +271,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set accountCountry value
      * @param string $accountCountry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setAccountCountry(?string $accountCountry = null): self
     {
@@ -294,7 +294,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set transactionType value
      * @param string $transactionType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setTransactionType(?string $transactionType = null): self
     {
@@ -317,7 +317,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setIban(?string $iban = null): self
     {
@@ -340,7 +340,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set swiftBicCode value
      * @param string $swiftBicCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setSwiftBicCode(?string $swiftBicCode = null): self
     {
@@ -363,7 +363,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setMandateId(?int $mandateId = null): self
     {
@@ -386,7 +386,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set executionDate value
      * @param string $executionDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setExecutionDate(?string $executionDate = null): self
     {
@@ -409,7 +409,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set mandateReference value
      * @param string $mandateReference
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setMandateReference(?string $mandateReference = null): self
     {
@@ -432,7 +432,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set isRecurrent value
      * @param bool $isRecurrent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setIsRecurrent(?bool $isRecurrent = null): self
     {
@@ -455,7 +455,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set mandateType value
      * @param string $mandateType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setMandateType(?string $mandateType = null): self
     {
@@ -469,18 +469,18 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     }
     /**
      * Get MidocoPaymentOrdersInfos value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos|null
      */
-    public function getMidocoPaymentOrdersInfos(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+    public function getMidocoPaymentOrdersInfos(): ?\Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
     {
         return $this->MidocoPaymentOrdersInfos;
     }
     /**
      * Set MidocoPaymentOrdersInfos value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
-    public function setMidocoPaymentOrdersInfos(?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null): self
+    public function setMidocoPaymentOrdersInfos(?\Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null): self
     {
         $this->MidocoPaymentOrdersInfos = $midocoPaymentOrdersInfos;
         
@@ -497,7 +497,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set bankTransferCollective value
      * @param bool $bankTransferCollective
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setBankTransferCollective(?bool $bankTransferCollective = null): self
     {
@@ -520,7 +520,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set isSepa value
      * @param bool $isSepa
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setIsSepa(?bool $isSepa = false): self
     {
@@ -543,7 +543,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set extReference value
      * @param string $extReference
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setExtReference(?string $extReference = null): self
     {
@@ -566,7 +566,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set approvalCode value
      * @param string $approvalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitPosition
      */
     public function setApprovalCode(?string $approvalCode = null): self
     {

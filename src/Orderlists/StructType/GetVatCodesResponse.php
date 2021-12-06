@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetVatCodesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVatCode
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatCode[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoVatCode[]
      */
     protected ?array $MidocoVatCode = null;
     /**
      * Constructor method for GetVatCodesResponse
      * @uses GetVatCodesResponse::setMidocoVatCode()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatCode[] $midocoVatCode
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoVatCode[] $midocoVatCode
      */
     public function __construct(?array $midocoVatCode = null)
     {
@@ -34,7 +34,7 @@ class GetVatCodesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVatCode value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatCode[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoVatCode[]
      */
     public function getMidocoVatCode(): ?array
     {
@@ -55,12 +55,12 @@ class GetVatCodesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getVatCodesResponseMidocoVatCodeItem) {
             // validation for constraint: itemType
-            if (!$getVatCodesResponseMidocoVatCodeItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatCode) {
+            if (!$getVatCodesResponseMidocoVatCodeItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoVatCode) {
                 $invalidValues[] = is_object($getVatCodesResponseMidocoVatCodeItem) ? get_class($getVatCodesResponseMidocoVatCodeItem) : sprintf('%s(%s)', gettype($getVatCodesResponseMidocoVatCodeItem), var_export($getVatCodesResponseMidocoVatCodeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatCode property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatCode property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoVatCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetVatCodesResponse extends AbstractStructBase
     /**
      * Set MidocoVatCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatCode[] $midocoVatCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetVatCodesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoVatCode[] $midocoVatCode
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetVatCodesResponse
      */
     public function setMidocoVatCode(?array $midocoVatCode = null): self
     {
@@ -85,14 +85,14 @@ class GetVatCodesResponse extends AbstractStructBase
     /**
      * Add item to MidocoVatCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatCode $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetVatCodesResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoVatCode $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetVatCodesResponse
      */
-    public function addToMidocoVatCode(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatCode $item): self
+    public function addToMidocoVatCode(\Pggns\MidocoApi\Orderlists\StructType\MidocoVatCode $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatCode) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatCode property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoVatCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoVatCode) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatCode property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoVatCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatCode[] = $item;
         

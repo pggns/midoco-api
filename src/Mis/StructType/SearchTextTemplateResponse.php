@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class SearchTextTemplateResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTextTemplate
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO[]
      */
     protected ?array $MidocoTextTemplate = null;
     /**
      * Constructor method for SearchTextTemplateResponse
      * @uses SearchTextTemplateResponse::setMidocoTextTemplate()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO[] $midocoTextTemplate
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO[] $midocoTextTemplate
      */
     public function __construct(?array $midocoTextTemplate = null)
     {
@@ -36,7 +36,7 @@ class SearchTextTemplateResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTextTemplate value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO[]
      */
     public function getMidocoTextTemplate(): ?array
     {
@@ -57,12 +57,12 @@ class SearchTextTemplateResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchTextTemplateResponseMidocoTextTemplateItem) {
             // validation for constraint: itemType
-            if (!$searchTextTemplateResponseMidocoTextTemplateItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO) {
+            if (!$searchTextTemplateResponseMidocoTextTemplateItem instanceof \Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO) {
                 $invalidValues[] = is_object($searchTextTemplateResponseMidocoTextTemplateItem) ? get_class($searchTextTemplateResponseMidocoTextTemplateItem) : sprintf('%s(%s)', gettype($searchTextTemplateResponseMidocoTextTemplateItem), var_export($searchTextTemplateResponseMidocoTextTemplateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTextTemplate property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTextTemplate property can only contain items of type \Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class SearchTextTemplateResponse extends AbstractStructBase
     /**
      * Set MidocoTextTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO[] $midocoTextTemplate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchTextTemplateResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO[] $midocoTextTemplate
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchTextTemplateResponse
      */
     public function setMidocoTextTemplate(?array $midocoTextTemplate = null): self
     {
@@ -87,14 +87,14 @@ class SearchTextTemplateResponse extends AbstractStructBase
     /**
      * Add item to MidocoTextTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchTextTemplateResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchTextTemplateResponse
      */
-    public function addToMidocoTextTemplate(\Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO $item): self
+    public function addToMidocoTextTemplate(\Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoTextTemplate property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\CrmTemplateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoTextTemplate property can only contain items of type \Pggns\MidocoApi\Mis\StructType\CrmTemplateDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTextTemplate[] = $item;
         

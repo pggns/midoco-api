@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class GetMidocoCachedDataResponse extends AbstractStructBase
      * Set data value
      * @throws InvalidArgumentException
      * @param string[] $data
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoCachedDataResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoCachedDataResponse
      */
     public function setData(?array $data = null): self
     {
@@ -85,7 +85,7 @@ class GetMidocoCachedDataResponse extends AbstractStructBase
      * Add item to data value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoCachedDataResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoCachedDataResponse
      */
     public function addToData(string $item): self
     {

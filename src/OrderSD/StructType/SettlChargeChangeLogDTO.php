@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SettlChargeChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlChargeChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlChargeChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -86,7 +86,7 @@ class SettlChargeChangeLogDTO extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlChargeChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlChargeChangeLogDTO
      */
     public function setChargeId(?int $chargeId = null): self
     {
@@ -109,7 +109,7 @@ class SettlChargeChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlChargeChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlChargeChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -132,7 +132,7 @@ class SettlChargeChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SettlChargeChangeLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SettlChargeChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

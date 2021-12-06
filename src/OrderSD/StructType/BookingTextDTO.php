@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class BookingTextDTO extends AbstractStructBase
     /**
      * Set longText value
      * @param string $longText
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\BookingTextDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\BookingTextDTO
      */
     public function setLongText(?string $longText = null): self
     {
@@ -70,7 +70,7 @@ class BookingTextDTO extends AbstractStructBase
     /**
      * Set shortId value
      * @param string $shortId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\BookingTextDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\BookingTextDTO
      */
     public function setShortId(?string $shortId = null): self
     {

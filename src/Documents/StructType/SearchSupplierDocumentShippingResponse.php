@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchSupplierDocumentShippingResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierDocumentShipping
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierDocumentShipping[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSupplierDocumentShipping[]
      */
     protected ?array $MidocoSupplierDocumentShipping = null;
     /**
      * Constructor method for SearchSupplierDocumentShippingResponse
      * @uses SearchSupplierDocumentShippingResponse::setMidocoSupplierDocumentShipping()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierDocumentShipping[] $midocoSupplierDocumentShipping
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierDocumentShipping[] $midocoSupplierDocumentShipping
      */
     public function __construct(?array $midocoSupplierDocumentShipping = null)
     {
@@ -34,7 +34,7 @@ class SearchSupplierDocumentShippingResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierDocumentShipping value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierDocumentShipping[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierDocumentShipping[]
      */
     public function getMidocoSupplierDocumentShipping(): ?array
     {
@@ -55,12 +55,12 @@ class SearchSupplierDocumentShippingResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchSupplierDocumentShippingResponseMidocoSupplierDocumentShippingItem) {
             // validation for constraint: itemType
-            if (!$searchSupplierDocumentShippingResponseMidocoSupplierDocumentShippingItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierDocumentShipping) {
+            if (!$searchSupplierDocumentShippingResponseMidocoSupplierDocumentShippingItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSupplierDocumentShipping) {
                 $invalidValues[] = is_object($searchSupplierDocumentShippingResponseMidocoSupplierDocumentShippingItem) ? get_class($searchSupplierDocumentShippingResponseMidocoSupplierDocumentShippingItem) : sprintf('%s(%s)', gettype($searchSupplierDocumentShippingResponseMidocoSupplierDocumentShippingItem), var_export($searchSupplierDocumentShippingResponseMidocoSupplierDocumentShippingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierDocumentShipping property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierDocumentShipping, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierDocumentShipping property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSupplierDocumentShipping, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchSupplierDocumentShippingResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierDocumentShipping value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierDocumentShipping[] $midocoSupplierDocumentShipping
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchSupplierDocumentShippingResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierDocumentShipping[] $midocoSupplierDocumentShipping
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchSupplierDocumentShippingResponse
      */
     public function setMidocoSupplierDocumentShipping(?array $midocoSupplierDocumentShipping = null): self
     {
@@ -85,14 +85,14 @@ class SearchSupplierDocumentShippingResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierDocumentShipping value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierDocumentShipping $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchSupplierDocumentShippingResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierDocumentShipping $item
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchSupplierDocumentShippingResponse
      */
-    public function addToMidocoSupplierDocumentShipping(\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierDocumentShipping $item): self
+    public function addToMidocoSupplierDocumentShipping(\Pggns\MidocoApi\Documents\StructType\MidocoSupplierDocumentShipping $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierDocumentShipping) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierDocumentShipping property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierDocumentShipping, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSupplierDocumentShipping) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierDocumentShipping property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSupplierDocumentShipping, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierDocumentShipping[] = $item;
         

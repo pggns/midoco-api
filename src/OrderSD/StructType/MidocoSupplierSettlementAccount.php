@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoSupplierSettlementAccount extends SupplierSettlemAccountDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierSettlementAccount
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierSettlementAccount
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {
@@ -86,7 +86,7 @@ class MidocoSupplierSettlementAccount extends SupplierSettlemAccountDTO
     /**
      * Set isHistorical value
      * @param bool $isHistorical
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierSettlementAccount
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierSettlementAccount
      */
     public function setIsHistorical(?bool $isHistorical = null): self
     {
@@ -109,7 +109,7 @@ class MidocoSupplierSettlementAccount extends SupplierSettlemAccountDTO
     /**
      * Set validDate value
      * @param string $validDate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierSettlementAccount
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierSettlementAccount
      */
     public function setValidDate(?string $validDate = null): self
     {
@@ -132,7 +132,7 @@ class MidocoSupplierSettlementAccount extends SupplierSettlemAccountDTO
     /**
      * Set validCreationTravel value
      * @param string $validCreationTravel
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierSettlementAccount
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierSettlementAccount
      */
     public function setValidCreationTravel(?string $validCreationTravel = null): self
     {

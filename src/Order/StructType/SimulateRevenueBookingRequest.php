@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SimulateRevenueBookingRequest extends AbstractStructBase
      * The RevenueBookingInfo
      * Meta information extracted from the WSDL
      * - ref: RevenueBookingInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType|null
+     * @var \Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $RevenueBookingInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $RevenueBookingInfo = null;
     /**
      * Constructor method for SimulateRevenueBookingRequest
      * @uses SimulateRevenueBookingRequest::setRevenueBookingInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $revenueBookingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $revenueBookingInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $revenueBookingInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $revenueBookingInfo = null)
     {
         $this
             ->setRevenueBookingInfo($revenueBookingInfo);
     }
     /**
      * Get RevenueBookingInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType|null
+     * @return \Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType|null
      */
-    public function getRevenueBookingInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType
+    public function getRevenueBookingInfo(): ?\Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType
     {
         return $this->RevenueBookingInfo;
     }
     /**
      * Set RevenueBookingInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $revenueBookingInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SimulateRevenueBookingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $revenueBookingInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SimulateRevenueBookingRequest
      */
-    public function setRevenueBookingInfo(?\Pggns\MidocoApi\Api\Order\StructType\RevenueBookingInfoType $revenueBookingInfo = null): self
+    public function setRevenueBookingInfo(?\Pggns\MidocoApi\Order\StructType\RevenueBookingInfoType $revenueBookingInfo = null): self
     {
         $this->RevenueBookingInfo = $revenueBookingInfo;
         

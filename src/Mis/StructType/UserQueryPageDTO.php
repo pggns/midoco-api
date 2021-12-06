@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class UserQueryPageDTO extends AbstractStructBase
     /**
      * Set pageContent value
      * @param string $pageContent
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\UserQueryPageDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\UserQueryPageDTO
      */
     public function setPageContent(?string $pageContent = null): self
     {
@@ -78,7 +78,7 @@ class UserQueryPageDTO extends AbstractStructBase
     /**
      * Set pageNo value
      * @param int $pageNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\UserQueryPageDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\UserQueryPageDTO
      */
     public function setPageNo(?int $pageNo = null): self
     {
@@ -101,7 +101,7 @@ class UserQueryPageDTO extends AbstractStructBase
     /**
      * Set queryId value
      * @param int $queryId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\UserQueryPageDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\UserQueryPageDTO
      */
     public function setQueryId(?int $queryId = null): self
     {

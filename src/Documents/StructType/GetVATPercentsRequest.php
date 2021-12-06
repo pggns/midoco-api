@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class GetVATPercentsRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetVATPercentsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetVATPercentsRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -94,7 +94,7 @@ class GetVATPercentsRequest extends AbstractStructBase
     /**
      * Set validDate value
      * @param string $validDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetVATPercentsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetVATPercentsRequest
      */
     public function setValidDate(?string $validDate = null): self
     {
@@ -117,7 +117,7 @@ class GetVATPercentsRequest extends AbstractStructBase
     /**
      * Set isIncoming value
      * @param bool $isIncoming
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetVATPercentsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetVATPercentsRequest
      */
     public function setIsIncoming(?bool $isIncoming = null): self
     {
@@ -140,7 +140,7 @@ class GetVATPercentsRequest extends AbstractStructBase
     /**
      * Set returnVatFree value
      * @param bool $returnVatFree
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetVATPercentsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetVATPercentsRequest
      */
     public function setReturnVatFree(?bool $returnVatFree = null): self
     {
@@ -163,7 +163,7 @@ class GetVATPercentsRequest extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetVATPercentsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetVATPercentsRequest
      */
     public function setCountry(?string $country = null): self
     {

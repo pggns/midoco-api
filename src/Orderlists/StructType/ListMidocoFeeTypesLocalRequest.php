@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,33 +20,33 @@ class ListMidocoFeeTypesLocalRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoFeeTypeLocal
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\FeeTypeLocalDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\FeeTypeLocalDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\FeeTypeLocalDTO $MidocoFeeTypeLocal = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\FeeTypeLocalDTO $MidocoFeeTypeLocal = null;
     /**
      * Constructor method for ListMidocoFeeTypesLocalRequest
      * @uses ListMidocoFeeTypesLocalRequest::setMidocoFeeTypeLocal()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\FeeTypeLocalDTO $midocoFeeTypeLocal
+     * @param \Pggns\MidocoApi\Orderlists\StructType\FeeTypeLocalDTO $midocoFeeTypeLocal
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\FeeTypeLocalDTO $midocoFeeTypeLocal = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\FeeTypeLocalDTO $midocoFeeTypeLocal = null)
     {
         $this
             ->setMidocoFeeTypeLocal($midocoFeeTypeLocal);
     }
     /**
      * Get MidocoFeeTypeLocal value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FeeTypeLocalDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FeeTypeLocalDTO|null
      */
-    public function getMidocoFeeTypeLocal(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\FeeTypeLocalDTO
+    public function getMidocoFeeTypeLocal(): ?\Pggns\MidocoApi\Orderlists\StructType\FeeTypeLocalDTO
     {
         return $this->MidocoFeeTypeLocal;
     }
     /**
      * Set MidocoFeeTypeLocal value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\FeeTypeLocalDTO $midocoFeeTypeLocal
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListMidocoFeeTypesLocalRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\FeeTypeLocalDTO $midocoFeeTypeLocal
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListMidocoFeeTypesLocalRequest
      */
-    public function setMidocoFeeTypeLocal(?\Pggns\MidocoApi\Api\Orderlists\StructType\FeeTypeLocalDTO $midocoFeeTypeLocal = null): self
+    public function setMidocoFeeTypeLocal(?\Pggns\MidocoApi\Orderlists\StructType\FeeTypeLocalDTO $midocoFeeTypeLocal = null): self
     {
         $this->MidocoFeeTypeLocal = $midocoFeeTypeLocal;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class PrepareCommissionInvoiceRequest extends PrepareAdviceInfoRequest
     /**
      * Set accountFrom value
      * @param string $accountFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareCommissionInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareCommissionInvoiceRequest
      */
     public function setAccountFrom(?string $accountFrom = null): self
     {
@@ -110,7 +110,7 @@ class PrepareCommissionInvoiceRequest extends PrepareAdviceInfoRequest
     /**
      * Set accountTo value
      * @param string $accountTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareCommissionInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareCommissionInvoiceRequest
      */
     public function setAccountTo(?string $accountTo = null): self
     {
@@ -133,7 +133,7 @@ class PrepareCommissionInvoiceRequest extends PrepareAdviceInfoRequest
     /**
      * Set groupByAccount value
      * @param bool $groupByAccount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareCommissionInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareCommissionInvoiceRequest
      */
     public function setGroupByAccount(?bool $groupByAccount = null): self
     {
@@ -156,7 +156,7 @@ class PrepareCommissionInvoiceRequest extends PrepareAdviceInfoRequest
     /**
      * Set debitSettlementType value
      * @param string $debitSettlementType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareCommissionInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareCommissionInvoiceRequest
      */
     public function setDebitSettlementType(?string $debitSettlementType = null): self
     {
@@ -179,7 +179,7 @@ class PrepareCommissionInvoiceRequest extends PrepareAdviceInfoRequest
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareCommissionInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareCommissionInvoiceRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -202,7 +202,7 @@ class PrepareCommissionInvoiceRequest extends PrepareAdviceInfoRequest
     /**
      * Set ignoreSettledItems value
      * @param bool $ignoreSettledItems
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareCommissionInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareCommissionInvoiceRequest
      */
     public function setIgnoreSettledItems(?bool $ignoreSettledItems = null): self
     {
@@ -225,7 +225,7 @@ class PrepareCommissionInvoiceRequest extends PrepareAdviceInfoRequest
     /**
      * Set showInvoicedItems value
      * @param bool $showInvoicedItems
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareCommissionInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareCommissionInvoiceRequest
      */
     public function setShowInvoicedItems(?bool $showInvoicedItems = null): self
     {

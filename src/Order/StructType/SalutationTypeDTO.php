@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SalutationTypeDTO extends AbstractStructBase
     /**
      * Set printForename value
      * @param bool $printForename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SalutationTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SalutationTypeDTO
      */
     public function setPrintForename(?bool $printForename = null): self
     {
@@ -86,7 +86,7 @@ class SalutationTypeDTO extends AbstractStructBase
     /**
      * Set printName value
      * @param bool $printName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SalutationTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SalutationTypeDTO
      */
     public function setPrintName(?bool $printName = null): self
     {
@@ -109,7 +109,7 @@ class SalutationTypeDTO extends AbstractStructBase
     /**
      * Set printTitle value
      * @param bool $printTitle
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SalutationTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SalutationTypeDTO
      */
     public function setPrintTitle(?bool $printTitle = null): self
     {
@@ -132,7 +132,7 @@ class SalutationTypeDTO extends AbstractStructBase
     /**
      * Set salutationId value
      * @param string $salutationId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SalutationTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SalutationTypeDTO
      */
     public function setSalutationId(?string $salutationId = null): self
     {

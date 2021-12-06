@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\ServiceType;
+namespace Pggns\MidocoApi\OrderSD\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Assign extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\OrderSD\ServiceType\Assign
+     * @return \Pggns\MidocoApi\OrderSD\ServiceType\Assign
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Assign extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\AssignMidocoRuleRequest $paramAssignMidocoRuleRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AssignMidocoRuleResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\AssignMidocoRuleRequest $paramAssignMidocoRuleRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AssignMidocoRuleResponse|bool
      */
-    public function assignMidocoRuleSet(\Pggns\MidocoApi\Api\OrderSD\StructType\AssignMidocoRuleRequest $paramAssignMidocoRuleRequest)
+    public function assignMidocoRuleSet(\Pggns\MidocoApi\OrderSD\StructType\AssignMidocoRuleRequest $paramAssignMidocoRuleRequest)
     {
         try {
             $this->setResult($resultAssignMidocoRuleSet = $this->getSoapClient()->__soapCall('assignMidocoRuleSet', [
@@ -58,15 +58,15 @@ class Assign extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\TemplateSuppliersAssignType $paramAssignTemplateToSuppliersRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AssignTemplateToSuppliersResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\TemplateSuppliersAssignType $paramAssignTemplateToSuppliersRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AssignTemplateToSuppliersResponse|bool
      */
-    public function assignTemplateToSuppliers(\Pggns\MidocoApi\Api\OrderSD\StructType\TemplateSuppliersAssignType $paramAssignTemplateToSuppliersRequest)
+    public function assignTemplateToSuppliers(\Pggns\MidocoApi\OrderSD\StructType\TemplateSuppliersAssignType $paramAssignTemplateToSuppliersRequest)
     {
         try {
             $this->setResult($resultAssignTemplateToSuppliers = $this->getSoapClient()->__soapCall('assignTemplateToSuppliers', [
@@ -85,15 +85,15 @@ class Assign extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\OrderSD\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\AssignOrdCriteriaTypesToCategoryRequest $paramAssignOrdCriteriaTypesToCategoryRequest
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AssignOrdCriteriaTypesToCategoryResponse|bool
+     * @param \Pggns\MidocoApi\OrderSD\StructType\AssignOrdCriteriaTypesToCategoryRequest $paramAssignOrdCriteriaTypesToCategoryRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AssignOrdCriteriaTypesToCategoryResponse|bool
      */
-    public function assignOrdCriteriaTypesToCategory(\Pggns\MidocoApi\Api\OrderSD\StructType\AssignOrdCriteriaTypesToCategoryRequest $paramAssignOrdCriteriaTypesToCategoryRequest)
+    public function assignOrdCriteriaTypesToCategory(\Pggns\MidocoApi\OrderSD\StructType\AssignOrdCriteriaTypesToCategoryRequest $paramAssignOrdCriteriaTypesToCategoryRequest)
     {
         try {
             $this->setResult($resultAssignOrdCriteriaTypesToCategory = $this->getSoapClient()->__soapCall('assignOrdCriteriaTypesToCategory', [
@@ -110,7 +110,7 @@ class Assign extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\AssignMidocoRuleResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\AssignOrdCriteriaTypesToCategoryResponse|\Pggns\MidocoApi\Api\OrderSD\StructType\AssignTemplateToSuppliersResponse
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AssignMidocoRuleResponse|\Pggns\MidocoApi\OrderSD\StructType\AssignOrdCriteriaTypesToCategoryResponse|\Pggns\MidocoApi\OrderSD\StructType\AssignTemplateToSuppliersResponse
      */
     public function getResult()
     {

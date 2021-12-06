@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAddressTypeDescriptionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAddressTypeDescription
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\AddressTypeDescriptionDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\AddressTypeDescriptionDTO[]
      */
     protected ?array $MidocoAddressTypeDescription = null;
     /**
      * Constructor method for GetAddressTypeDescriptionsResponse
      * @uses GetAddressTypeDescriptionsResponse::setMidocoAddressTypeDescription()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AddressTypeDescriptionDTO[] $midocoAddressTypeDescription
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AddressTypeDescriptionDTO[] $midocoAddressTypeDescription
      */
     public function __construct(?array $midocoAddressTypeDescription = null)
     {
@@ -34,7 +34,7 @@ class GetAddressTypeDescriptionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAddressTypeDescription value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AddressTypeDescriptionDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AddressTypeDescriptionDTO[]
      */
     public function getMidocoAddressTypeDescription(): ?array
     {
@@ -55,12 +55,12 @@ class GetAddressTypeDescriptionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAddressTypeDescriptionsResponseMidocoAddressTypeDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getAddressTypeDescriptionsResponseMidocoAddressTypeDescriptionItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\AddressTypeDescriptionDTO) {
+            if (!$getAddressTypeDescriptionsResponseMidocoAddressTypeDescriptionItem instanceof \Pggns\MidocoApi\CrmSD\StructType\AddressTypeDescriptionDTO) {
                 $invalidValues[] = is_object($getAddressTypeDescriptionsResponseMidocoAddressTypeDescriptionItem) ? get_class($getAddressTypeDescriptionsResponseMidocoAddressTypeDescriptionItem) : sprintf('%s(%s)', gettype($getAddressTypeDescriptionsResponseMidocoAddressTypeDescriptionItem), var_export($getAddressTypeDescriptionsResponseMidocoAddressTypeDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAddressTypeDescription property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\AddressTypeDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAddressTypeDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AddressTypeDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAddressTypeDescriptionsResponse extends AbstractStructBase
     /**
      * Set MidocoAddressTypeDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AddressTypeDescriptionDTO[] $midocoAddressTypeDescription
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAddressTypeDescriptionsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AddressTypeDescriptionDTO[] $midocoAddressTypeDescription
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAddressTypeDescriptionsResponse
      */
     public function setMidocoAddressTypeDescription(?array $midocoAddressTypeDescription = null): self
     {
@@ -85,14 +85,14 @@ class GetAddressTypeDescriptionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoAddressTypeDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AddressTypeDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAddressTypeDescriptionsResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AddressTypeDescriptionDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAddressTypeDescriptionsResponse
      */
-    public function addToMidocoAddressTypeDescription(\Pggns\MidocoApi\Api\CrmSD\StructType\AddressTypeDescriptionDTO $item): self
+    public function addToMidocoAddressTypeDescription(\Pggns\MidocoApi\CrmSD\StructType\AddressTypeDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\AddressTypeDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAddressTypeDescription property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\AddressTypeDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\AddressTypeDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAddressTypeDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AddressTypeDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAddressTypeDescription[] = $item;
         

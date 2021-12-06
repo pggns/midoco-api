@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class AutoGenCrmMidocoMandatesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMandateGenErrorCrm
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandateGenErrorCrm[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoMandateGenErrorCrm[]
      */
     protected ?array $MidocoMandateGenErrorCrm = null;
     /**
      * Constructor method for AutoGenCrmMidocoMandatesResponse
      * @uses AutoGenCrmMidocoMandatesResponse::setMidocoMandateGenErrorCrm()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandateGenErrorCrm[] $midocoMandateGenErrorCrm
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMandateGenErrorCrm[] $midocoMandateGenErrorCrm
      */
     public function __construct(?array $midocoMandateGenErrorCrm = null)
     {
@@ -34,7 +34,7 @@ class AutoGenCrmMidocoMandatesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMandateGenErrorCrm value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandateGenErrorCrm[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMandateGenErrorCrm[]
      */
     public function getMidocoMandateGenErrorCrm(): ?array
     {
@@ -55,12 +55,12 @@ class AutoGenCrmMidocoMandatesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $autoGenCrmMidocoMandatesResponseMidocoMandateGenErrorCrmItem) {
             // validation for constraint: itemType
-            if (!$autoGenCrmMidocoMandatesResponseMidocoMandateGenErrorCrmItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandateGenErrorCrm) {
+            if (!$autoGenCrmMidocoMandatesResponseMidocoMandateGenErrorCrmItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMandateGenErrorCrm) {
                 $invalidValues[] = is_object($autoGenCrmMidocoMandatesResponseMidocoMandateGenErrorCrmItem) ? get_class($autoGenCrmMidocoMandatesResponseMidocoMandateGenErrorCrmItem) : sprintf('%s(%s)', gettype($autoGenCrmMidocoMandatesResponseMidocoMandateGenErrorCrmItem), var_export($autoGenCrmMidocoMandatesResponseMidocoMandateGenErrorCrmItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMandateGenErrorCrm property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandateGenErrorCrm, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMandateGenErrorCrm property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMandateGenErrorCrm, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class AutoGenCrmMidocoMandatesResponse extends AbstractStructBase
     /**
      * Set MidocoMandateGenErrorCrm value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandateGenErrorCrm[] $midocoMandateGenErrorCrm
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AutoGenCrmMidocoMandatesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMandateGenErrorCrm[] $midocoMandateGenErrorCrm
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AutoGenCrmMidocoMandatesResponse
      */
     public function setMidocoMandateGenErrorCrm(?array $midocoMandateGenErrorCrm = null): self
     {
@@ -85,14 +85,14 @@ class AutoGenCrmMidocoMandatesResponse extends AbstractStructBase
     /**
      * Add item to MidocoMandateGenErrorCrm value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandateGenErrorCrm $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AutoGenCrmMidocoMandatesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMandateGenErrorCrm $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AutoGenCrmMidocoMandatesResponse
      */
-    public function addToMidocoMandateGenErrorCrm(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandateGenErrorCrm $item): self
+    public function addToMidocoMandateGenErrorCrm(\Pggns\MidocoApi\CrmSD\StructType\MidocoMandateGenErrorCrm $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandateGenErrorCrm) {
-            throw new InvalidArgumentException(sprintf('The MidocoMandateGenErrorCrm property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandateGenErrorCrm, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMandateGenErrorCrm) {
+            throw new InvalidArgumentException(sprintf('The MidocoMandateGenErrorCrm property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMandateGenErrorCrm, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMandateGenErrorCrm[] = $item;
         

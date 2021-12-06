@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -185,7 +185,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellItemAttribute
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemAttribute[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemAttribute[]
      */
     protected ?array $MidocoSellItemAttribute = null;
     /**
@@ -194,7 +194,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderAttribute
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAttribute[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderAttribute[]
      */
     protected ?array $MidocoOrderAttribute = null;
     /**
@@ -317,7 +317,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVatDivision
-     * @var \Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\VatDivisionDTO[]
      */
     protected ?array $MidocoVatDivision = null;
     /**
@@ -431,8 +431,8 @@ class GetMatchingFeeRequest extends AbstractStructBase
      * @param string $ticketDesignator
      * @param string $fareType
      * @param string $railDescription
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemAttribute[] $midocoSellItemAttribute
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAttribute[] $midocoOrderAttribute
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemAttribute[] $midocoSellItemAttribute
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderAttribute[] $midocoOrderAttribute
      * @param string[] $accountId
      * @param float $price
      * @param float $orderPrice
@@ -449,7 +449,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
      * @param string $itemStatus
      * @param int $countSegments
      * @param float $ticketPrice
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO[] $midocoVatDivision
+     * @param \Pggns\MidocoApi\Order\StructType\VatDivisionDTO[] $midocoVatDivision
      * @param bool $needsVatDivisionOutgoing
      * @param bool $isDomestic
      * @param string $extPaymentType
@@ -519,7 +519,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -542,7 +542,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -565,7 +565,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -588,7 +588,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -611,7 +611,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set feeGroup value
      * @param string $feeGroup
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setFeeGroup(?string $feeGroup = null): self
     {
@@ -634,7 +634,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -657,7 +657,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -680,7 +680,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -703,7 +703,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set bookingClass value
      * @param string $bookingClass
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setBookingClass(?string $bookingClass = null): self
     {
@@ -726,7 +726,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set airlineCode value
      * @param string $airlineCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setAirlineCode(?string $airlineCode = null): self
     {
@@ -749,7 +749,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set ticketType value
      * @param string $ticketType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setTicketType(?string $ticketType = null): self
     {
@@ -772,7 +772,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set ticketOrigin value
      * @param string $ticketOrigin
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setTicketOrigin(?string $ticketOrigin = null): self
     {
@@ -795,7 +795,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set bspCode value
      * @param string $bspCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setBspCode(?string $bspCode = null): self
     {
@@ -818,7 +818,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set geographicalCategory value
      * @param string $geographicalCategory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setGeographicalCategory(?string $geographicalCategory = null): self
     {
@@ -841,7 +841,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set departureGeographicalCategory value
      * @param string $departureGeographicalCategory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setDepartureGeographicalCategory(?string $departureGeographicalCategory = null): self
     {
@@ -864,7 +864,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set destinationGeographicalCategory value
      * @param string $destinationGeographicalCategory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setDestinationGeographicalCategory(?string $destinationGeographicalCategory = null): self
     {
@@ -887,7 +887,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -910,7 +910,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set feePercent value
      * @param float $feePercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setFeePercent(?float $feePercent = null): self
     {
@@ -933,7 +933,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set minFeeValue value
      * @param float $minFeeValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setMinFeeValue(?float $minFeeValue = null): self
     {
@@ -956,7 +956,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set maxFeeValue value
      * @param float $maxFeeValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setMaxFeeValue(?float $maxFeeValue = null): self
     {
@@ -979,7 +979,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set documentSubtype value
      * @param string $documentSubtype
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setDocumentSubtype(?string $documentSubtype = null): self
     {
@@ -1002,7 +1002,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set ticketDesignator value
      * @param string $ticketDesignator
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setTicketDesignator(?string $ticketDesignator = null): self
     {
@@ -1025,7 +1025,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set fareType value
      * @param string $fareType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setFareType(?string $fareType = null): self
     {
@@ -1048,7 +1048,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set railDescription value
      * @param string $railDescription
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setRailDescription(?string $railDescription = null): self
     {
@@ -1062,7 +1062,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSellItemAttribute value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemAttribute[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemAttribute[]
      */
     public function getMidocoSellItemAttribute(): ?array
     {
@@ -1083,12 +1083,12 @@ class GetMatchingFeeRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMatchingFeeRequestMidocoSellItemAttributeItem) {
             // validation for constraint: itemType
-            if (!$getMatchingFeeRequestMidocoSellItemAttributeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemAttribute) {
+            if (!$getMatchingFeeRequestMidocoSellItemAttributeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemAttribute) {
                 $invalidValues[] = is_object($getMatchingFeeRequestMidocoSellItemAttributeItem) ? get_class($getMatchingFeeRequestMidocoSellItemAttributeItem) : sprintf('%s(%s)', gettype($getMatchingFeeRequestMidocoSellItemAttributeItem), var_export($getMatchingFeeRequestMidocoSellItemAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellItemAttribute property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellItemAttribute property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -1097,8 +1097,8 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set MidocoSellItemAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemAttribute[] $midocoSellItemAttribute
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemAttribute[] $midocoSellItemAttribute
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setMidocoSellItemAttribute(?array $midocoSellItemAttribute = null): self
     {
@@ -1113,14 +1113,14 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Add item to MidocoSellItemAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemAttribute $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemAttribute $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
-    public function addToMidocoSellItemAttribute(\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemAttribute $item): self
+    public function addToMidocoSellItemAttribute(\Pggns\MidocoApi\Order\StructType\MidocoSellItemAttribute $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemAttribute) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellItemAttribute property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemAttribute) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellItemAttribute property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellItemAttribute[] = $item;
         
@@ -1128,7 +1128,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrderAttribute value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAttribute[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderAttribute[]
      */
     public function getMidocoOrderAttribute(): ?array
     {
@@ -1149,12 +1149,12 @@ class GetMatchingFeeRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMatchingFeeRequestMidocoOrderAttributeItem) {
             // validation for constraint: itemType
-            if (!$getMatchingFeeRequestMidocoOrderAttributeItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAttribute) {
+            if (!$getMatchingFeeRequestMidocoOrderAttributeItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderAttribute) {
                 $invalidValues[] = is_object($getMatchingFeeRequestMidocoOrderAttributeItem) ? get_class($getMatchingFeeRequestMidocoOrderAttributeItem) : sprintf('%s(%s)', gettype($getMatchingFeeRequestMidocoOrderAttributeItem), var_export($getMatchingFeeRequestMidocoOrderAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderAttribute property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderAttribute property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -1163,8 +1163,8 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set MidocoOrderAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAttribute[] $midocoOrderAttribute
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderAttribute[] $midocoOrderAttribute
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setMidocoOrderAttribute(?array $midocoOrderAttribute = null): self
     {
@@ -1179,14 +1179,14 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Add item to MidocoOrderAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAttribute $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderAttribute $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
-    public function addToMidocoOrderAttribute(\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAttribute $item): self
+    public function addToMidocoOrderAttribute(\Pggns\MidocoApi\Order\StructType\MidocoOrderAttribute $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAttribute) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderAttribute property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderAttribute) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderAttribute property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderAttribute[] = $item;
         
@@ -1230,7 +1230,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
      * Set accountId value
      * @throws InvalidArgumentException
      * @param string[] $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setAccountId(?array $accountId = null): self
     {
@@ -1246,7 +1246,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
      * Add item to accountId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function addToAccountId(string $item): self
     {
@@ -1269,7 +1269,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setPrice(?float $price = null): self
     {
@@ -1292,7 +1292,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set orderPrice value
      * @param float $orderPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setOrderPrice(?float $orderPrice = null): self
     {
@@ -1315,7 +1315,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set bookingSource value
      * @param string $bookingSource
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setBookingSource(?string $bookingSource = null): self
     {
@@ -1338,7 +1338,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set bookingSourceExt value
      * @param string $bookingSourceExt
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setBookingSourceExt(?string $bookingSourceExt = null): self
     {
@@ -1361,7 +1361,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -1384,7 +1384,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set taxPartPercent value
      * @param float $taxPartPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setTaxPartPercent(?float $taxPartPercent = null): self
     {
@@ -1407,7 +1407,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set companyTariff value
      * @param bool $companyTariff
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setCompanyTariff(?bool $companyTariff = null): self
     {
@@ -1457,7 +1457,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
      * Set railTicketType value
      * @throws InvalidArgumentException
      * @param string[] $railTicketType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setRailTicketType(?array $railTicketType = null): self
     {
@@ -1473,7 +1473,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
      * Add item to railTicketType value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function addToRailTicketType(string $item): self
     {
@@ -1496,7 +1496,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set useGlobalPrice value
      * @param bool $useGlobalPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setUseGlobalPrice(?bool $useGlobalPrice = null): self
     {
@@ -1519,7 +1519,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set corporateDiscount value
      * @param string $corporateDiscount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setCorporateDiscount(?string $corporateDiscount = null): self
     {
@@ -1542,7 +1542,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set bookingCreationDate value
      * @param string $bookingCreationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setBookingCreationDate(?string $bookingCreationDate = null): self
     {
@@ -1565,7 +1565,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -1588,7 +1588,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set itemStatus value
      * @param string $itemStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setItemStatus(?string $itemStatus = null): self
     {
@@ -1611,7 +1611,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set countSegments value
      * @param int $countSegments
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setCountSegments(?int $countSegments = null): self
     {
@@ -1634,7 +1634,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set ticketPrice value
      * @param float $ticketPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setTicketPrice(?float $ticketPrice = null): self
     {
@@ -1648,7 +1648,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     }
     /**
      * Get MidocoVatDivision value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\VatDivisionDTO[]
      */
     public function getMidocoVatDivision(): ?array
     {
@@ -1669,12 +1669,12 @@ class GetMatchingFeeRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMatchingFeeRequestMidocoVatDivisionItem) {
             // validation for constraint: itemType
-            if (!$getMatchingFeeRequestMidocoVatDivisionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO) {
+            if (!$getMatchingFeeRequestMidocoVatDivisionItem instanceof \Pggns\MidocoApi\Order\StructType\VatDivisionDTO) {
                 $invalidValues[] = is_object($getMatchingFeeRequestMidocoVatDivisionItem) ? get_class($getMatchingFeeRequestMidocoVatDivisionItem) : sprintf('%s(%s)', gettype($getMatchingFeeRequestMidocoVatDivisionItem), var_export($getMatchingFeeRequestMidocoVatDivisionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatDivision property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatDivision property can only contain items of type \Pggns\MidocoApi\Order\StructType\VatDivisionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -1683,8 +1683,8 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set MidocoVatDivision value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO[] $midocoVatDivision
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\VatDivisionDTO[] $midocoVatDivision
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setMidocoVatDivision(?array $midocoVatDivision = null): self
     {
@@ -1699,14 +1699,14 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Add item to MidocoVatDivision value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\VatDivisionDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
-    public function addToMidocoVatDivision(\Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO $item): self
+    public function addToMidocoVatDivision(\Pggns\MidocoApi\Order\StructType\VatDivisionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatDivision property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\VatDivisionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\VatDivisionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatDivision property can only contain items of type \Pggns\MidocoApi\Order\StructType\VatDivisionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatDivision[] = $item;
         
@@ -1723,7 +1723,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set needsVatDivisionOutgoing value
      * @param bool $needsVatDivisionOutgoing
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setNeedsVatDivisionOutgoing(?bool $needsVatDivisionOutgoing = null): self
     {
@@ -1746,7 +1746,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set isDomestic value
      * @param bool $isDomestic
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setIsDomestic(?bool $isDomestic = null): self
     {
@@ -1769,7 +1769,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set extPaymentType value
      * @param string $extPaymentType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setExtPaymentType(?string $extPaymentType = null): self
     {
@@ -1796,7 +1796,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set taxCountry value
      * @param string $taxCountry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setTaxCountry(?string $taxCountry = null): self
     {
@@ -1819,7 +1819,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     /**
      * Set documentSubgroupEmd value
      * @param string $documentSubgroupEmd
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMatchingFeeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setDocumentSubgroupEmd(?string $documentSubgroupEmd = null): self
     {

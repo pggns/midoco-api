@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoPrintSelectionGroupForOrder extends AbstractStructBase
     /**
      * Set sourcePrintTypeId value
      * @param string $sourcePrintTypeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelectionGroupForOrder
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPrintSelectionGroupForOrder
      */
     public function setSourcePrintTypeId(?string $sourcePrintTypeId = null): self
     {
@@ -70,7 +70,7 @@ class MidocoPrintSelectionGroupForOrder extends AbstractStructBase
     /**
      * Set destinationPrintTypeId value
      * @param string $destinationPrintTypeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPrintSelectionGroupForOrder
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPrintSelectionGroupForOrder
      */
     public function setDestinationPrintTypeId(?string $destinationPrintTypeId = null): self
     {

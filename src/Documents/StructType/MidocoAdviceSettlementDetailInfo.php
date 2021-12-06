@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAdviceDetailVatDiv
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceDetailVatDiv[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoAdviceDetailVatDiv[]
      */
     protected ?array $MidocoAdviceDetailVatDiv = null;
     /**
@@ -109,7 +109,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
      * @uses MidocoAdviceSettlementDetailInfo::setForeignGrantedRevenue()
      * @uses MidocoAdviceSettlementDetailInfo::setForeignInkassoPrice()
      * @uses MidocoAdviceSettlementDetailInfo::setForeignFeeAmount()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceDetailVatDiv[] $midocoAdviceDetailVatDiv
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoAdviceDetailVatDiv[] $midocoAdviceDetailVatDiv
      * @param string $foreignCurrency
      * @param float $foreignRevenueInclVat
      * @param float $foreignRevenueVatFree
@@ -146,7 +146,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     }
     /**
      * Get MidocoAdviceDetailVatDiv value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceDetailVatDiv[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceDetailVatDiv[]
      */
     public function getMidocoAdviceDetailVatDiv(): ?array
     {
@@ -167,12 +167,12 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
         $invalidValues = [];
         foreach ($values as $midocoAdviceSettlementDetailInfoMidocoAdviceDetailVatDivItem) {
             // validation for constraint: itemType
-            if (!$midocoAdviceSettlementDetailInfoMidocoAdviceDetailVatDivItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceDetailVatDiv) {
+            if (!$midocoAdviceSettlementDetailInfoMidocoAdviceDetailVatDivItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoAdviceDetailVatDiv) {
                 $invalidValues[] = is_object($midocoAdviceSettlementDetailInfoMidocoAdviceDetailVatDivItem) ? get_class($midocoAdviceSettlementDetailInfoMidocoAdviceDetailVatDivItem) : sprintf('%s(%s)', gettype($midocoAdviceSettlementDetailInfoMidocoAdviceDetailVatDivItem), var_export($midocoAdviceSettlementDetailInfoMidocoAdviceDetailVatDivItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAdviceDetailVatDiv property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceDetailVatDiv, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAdviceDetailVatDiv property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoAdviceDetailVatDiv, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -181,8 +181,8 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set MidocoAdviceDetailVatDiv value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceDetailVatDiv[] $midocoAdviceDetailVatDiv
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoAdviceDetailVatDiv[] $midocoAdviceDetailVatDiv
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setMidocoAdviceDetailVatDiv(?array $midocoAdviceDetailVatDiv = null): self
     {
@@ -197,14 +197,14 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Add item to MidocoAdviceDetailVatDiv value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceDetailVatDiv $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoAdviceDetailVatDiv $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
-    public function addToMidocoAdviceDetailVatDiv(\Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceDetailVatDiv $item): self
+    public function addToMidocoAdviceDetailVatDiv(\Pggns\MidocoApi\Documents\StructType\MidocoAdviceDetailVatDiv $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceDetailVatDiv) {
-            throw new InvalidArgumentException(sprintf('The MidocoAdviceDetailVatDiv property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceDetailVatDiv, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoAdviceDetailVatDiv) {
+            throw new InvalidArgumentException(sprintf('The MidocoAdviceDetailVatDiv property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoAdviceDetailVatDiv, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAdviceDetailVatDiv[] = $item;
         
@@ -221,7 +221,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignCurrency value
      * @param string $foreignCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignCurrency(?string $foreignCurrency = null): self
     {
@@ -244,7 +244,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignRevenueInclVat value
      * @param float $foreignRevenueInclVat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignRevenueInclVat(?float $foreignRevenueInclVat = null): self
     {
@@ -267,7 +267,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignRevenueVatFree value
      * @param float $foreignRevenueVatFree
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignRevenueVatFree(?float $foreignRevenueVatFree = null): self
     {
@@ -290,7 +290,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignRevenueInsurance value
      * @param float $foreignRevenueInsurance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignRevenueInsurance(?float $foreignRevenueInsurance = null): self
     {
@@ -313,7 +313,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignSupplierInvoice value
      * @param float $foreignSupplierInvoice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignSupplierInvoice(?float $foreignSupplierInvoice = null): self
     {
@@ -336,7 +336,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignVatAmount value
      * @param float $foreignVatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignVatAmount(?float $foreignVatAmount = null): self
     {
@@ -359,7 +359,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignNettoAmount value
      * @param float $foreignNettoAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignNettoAmount(?float $foreignNettoAmount = null): self
     {
@@ -382,7 +382,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignTotalPrice value
      * @param float $foreignTotalPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignTotalPrice(?float $foreignTotalPrice = null): self
     {
@@ -405,7 +405,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignTravelPrice value
      * @param float $foreignTravelPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignTravelPrice(?float $foreignTravelPrice = null): self
     {
@@ -428,7 +428,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignSupplierDiAmount value
      * @param float $foreignSupplierDiAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignSupplierDiAmount(?float $foreignSupplierDiAmount = null): self
     {
@@ -451,7 +451,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignCalculatedRevenue value
      * @param float $foreignCalculatedRevenue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignCalculatedRevenue(?float $foreignCalculatedRevenue = null): self
     {
@@ -474,7 +474,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignGrantedRevenue value
      * @param float $foreignGrantedRevenue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignGrantedRevenue(?float $foreignGrantedRevenue = null): self
     {
@@ -497,7 +497,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignInkassoPrice value
      * @param float $foreignInkassoPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignInkassoPrice(?float $foreignInkassoPrice = null): self
     {
@@ -520,7 +520,7 @@ class MidocoAdviceSettlementDetailInfo extends AdviceSettlemDetailDTO
     /**
      * Set foreignFeeAmount value
      * @param float $foreignFeeAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAdviceSettlementDetailInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAdviceSettlementDetailInfo
      */
     public function setForeignFeeAmount(?float $foreignFeeAmount = null): self
     {

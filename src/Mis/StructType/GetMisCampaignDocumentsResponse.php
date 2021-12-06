@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetMisCampaignDocumentsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMisCampaignDocument
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO[]
      */
     protected ?array $MidocoMisCampaignDocument = null;
     /**
      * Constructor method for GetMisCampaignDocumentsResponse
      * @uses GetMisCampaignDocumentsResponse::setMidocoMisCampaignDocument()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO[] $midocoMisCampaignDocument
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO[] $midocoMisCampaignDocument
      */
     public function __construct(?array $midocoMisCampaignDocument = null)
     {
@@ -36,7 +36,7 @@ class GetMisCampaignDocumentsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMisCampaignDocument value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO[]
      */
     public function getMidocoMisCampaignDocument(): ?array
     {
@@ -57,12 +57,12 @@ class GetMisCampaignDocumentsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMisCampaignDocumentsResponseMidocoMisCampaignDocumentItem) {
             // validation for constraint: itemType
-            if (!$getMisCampaignDocumentsResponseMidocoMisCampaignDocumentItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO) {
+            if (!$getMisCampaignDocumentsResponseMidocoMisCampaignDocumentItem instanceof \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO) {
                 $invalidValues[] = is_object($getMisCampaignDocumentsResponseMidocoMisCampaignDocumentItem) ? get_class($getMisCampaignDocumentsResponseMidocoMisCampaignDocumentItem) : sprintf('%s(%s)', gettype($getMisCampaignDocumentsResponseMidocoMisCampaignDocumentItem), var_export($getMisCampaignDocumentsResponseMidocoMisCampaignDocumentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMisCampaignDocument property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMisCampaignDocument property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetMisCampaignDocumentsResponse extends AbstractStructBase
     /**
      * Set MidocoMisCampaignDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO[] $midocoMisCampaignDocument
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMisCampaignDocumentsResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO[] $midocoMisCampaignDocument
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMisCampaignDocumentsResponse
      */
     public function setMidocoMisCampaignDocument(?array $midocoMisCampaignDocument = null): self
     {
@@ -87,14 +87,14 @@ class GetMisCampaignDocumentsResponse extends AbstractStructBase
     /**
      * Add item to MidocoMisCampaignDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetMisCampaignDocumentsResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMisCampaignDocumentsResponse
      */
-    public function addToMidocoMisCampaignDocument(\Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO $item): self
+    public function addToMidocoMisCampaignDocument(\Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMisCampaignDocument property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignDocumentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMisCampaignDocument property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MisCampaignDocumentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMisCampaignDocument[] = $item;
         

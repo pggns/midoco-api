@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SearchBillingLayoutRequest extends AbstractStructBase
      * The MidocoBillingLayout
      * Meta information extracted from the WSDL
      * - ref: MidocoBillingLayout
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingLayout|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout $MidocoBillingLayout = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBillingLayout $MidocoBillingLayout = null;
     /**
      * Constructor method for SearchBillingLayoutRequest
      * @uses SearchBillingLayoutRequest::setMidocoBillingLayout()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout $midocoBillingLayout
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingLayout $midocoBillingLayout
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout $midocoBillingLayout = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBillingLayout $midocoBillingLayout = null)
     {
         $this
             ->setMidocoBillingLayout($midocoBillingLayout);
     }
     /**
      * Get MidocoBillingLayout value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingLayout|null
      */
-    public function getMidocoBillingLayout(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout
+    public function getMidocoBillingLayout(): ?\Pggns\MidocoApi\Order\StructType\MidocoBillingLayout
     {
         return $this->MidocoBillingLayout;
     }
     /**
      * Set MidocoBillingLayout value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout $midocoBillingLayout
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBillingLayoutRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingLayout $midocoBillingLayout
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingLayoutRequest
      */
-    public function setMidocoBillingLayout(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingLayout $midocoBillingLayout = null): self
+    public function setMidocoBillingLayout(?\Pggns\MidocoApi\Order\StructType\MidocoBillingLayout $midocoBillingLayout = null): self
     {
         $this->MidocoBillingLayout = $midocoBillingLayout;
         

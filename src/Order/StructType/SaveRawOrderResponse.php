@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class SaveRawOrderResponse extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveRawOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveRawOrderResponse
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -70,7 +70,7 @@ class SaveRawOrderResponse extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveRawOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveRawOrderResponse
      */
     public function setOrderNo(?int $orderNo = null): self
     {

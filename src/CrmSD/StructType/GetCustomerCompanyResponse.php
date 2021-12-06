@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetCustomerCompanyResponse extends AbstractStructBase
     /**
      * Set mediatorName value
      * @param string $mediatorName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerCompanyResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerCompanyResponse
      */
     public function setMediatorName(?string $mediatorName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,15 +17,15 @@ class GetCustomerMfRequest extends AbstractStructBase
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The CustomerMfRuleAttribute
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerMfRuleAttributeType[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerMfRuleAttributeType[]
      */
     protected ?array $CustomerMfRuleAttribute = null;
     /**
@@ -74,8 +74,8 @@ class GetCustomerMfRequest extends AbstractStructBase
      * @uses GetCustomerMfRequest::setOnlyNumeric()
      * @uses GetCustomerMfRequest::setPrintEnforced()
      * @uses GetCustomerMfRequest::setPresetContent()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerMfRuleAttributeType[] $customerMfRuleAttribute
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerMfRuleAttributeType[] $customerMfRuleAttribute
      * @param string $bean
      * @param string $className
      * @param string $attrName
@@ -84,7 +84,7 @@ class GetCustomerMfRequest extends AbstractStructBase
      * @param bool $printEnforced
      * @param bool $presetContent
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?array $customerMfRuleAttribute = null, ?string $bean = null, ?string $className = null, ?string $attrName = null, ?string $unitName = null, ?bool $onlyNumeric = null, ?bool $printEnforced = null, ?bool $presetContent = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?array $customerMfRuleAttribute = null, ?string $bean = null, ?string $className = null, ?string $attrName = null, ?string $unitName = null, ?bool $onlyNumeric = null, ?bool $printEnforced = null, ?bool $presetContent = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -99,18 +99,18 @@ class GetCustomerMfRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerMfRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMfRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -118,7 +118,7 @@ class GetCustomerMfRequest extends AbstractStructBase
     }
     /**
      * Get CustomerMfRuleAttribute value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerMfRuleAttributeType[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerMfRuleAttributeType[]
      */
     public function getCustomerMfRuleAttribute(): ?array
     {
@@ -139,12 +139,12 @@ class GetCustomerMfRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCustomerMfRequestCustomerMfRuleAttributeItem) {
             // validation for constraint: itemType
-            if (!$getCustomerMfRequestCustomerMfRuleAttributeItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerMfRuleAttributeType) {
+            if (!$getCustomerMfRequestCustomerMfRuleAttributeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CustomerMfRuleAttributeType) {
                 $invalidValues[] = is_object($getCustomerMfRequestCustomerMfRuleAttributeItem) ? get_class($getCustomerMfRequestCustomerMfRuleAttributeItem) : sprintf('%s(%s)', gettype($getCustomerMfRequestCustomerMfRuleAttributeItem), var_export($getCustomerMfRequestCustomerMfRuleAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CustomerMfRuleAttribute property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerMfRuleAttributeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CustomerMfRuleAttribute property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CustomerMfRuleAttributeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -153,8 +153,8 @@ class GetCustomerMfRequest extends AbstractStructBase
     /**
      * Set CustomerMfRuleAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerMfRuleAttributeType[] $customerMfRuleAttribute
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerMfRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerMfRuleAttributeType[] $customerMfRuleAttribute
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMfRequest
      */
     public function setCustomerMfRuleAttribute(?array $customerMfRuleAttribute = null): self
     {
@@ -169,14 +169,14 @@ class GetCustomerMfRequest extends AbstractStructBase
     /**
      * Add item to CustomerMfRuleAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerMfRuleAttributeType $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerMfRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerMfRuleAttributeType $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMfRequest
      */
-    public function addToCustomerMfRuleAttribute(\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerMfRuleAttributeType $item): self
+    public function addToCustomerMfRuleAttribute(\Pggns\MidocoApi\CrmSD\StructType\CustomerMfRuleAttributeType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerMfRuleAttributeType) {
-            throw new InvalidArgumentException(sprintf('The CustomerMfRuleAttribute property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerMfRuleAttributeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CustomerMfRuleAttributeType) {
+            throw new InvalidArgumentException(sprintf('The CustomerMfRuleAttribute property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CustomerMfRuleAttributeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CustomerMfRuleAttribute[] = $item;
         
@@ -193,7 +193,7 @@ class GetCustomerMfRequest extends AbstractStructBase
     /**
      * Set bean value
      * @param string $bean
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerMfRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMfRequest
      */
     public function setBean(?string $bean = null): self
     {
@@ -216,7 +216,7 @@ class GetCustomerMfRequest extends AbstractStructBase
     /**
      * Set className value
      * @param string $className
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerMfRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMfRequest
      */
     public function setClassName(?string $className = null): self
     {
@@ -239,7 +239,7 @@ class GetCustomerMfRequest extends AbstractStructBase
     /**
      * Set attrName value
      * @param string $attrName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerMfRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMfRequest
      */
     public function setAttrName(?string $attrName = null): self
     {
@@ -262,7 +262,7 @@ class GetCustomerMfRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerMfRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMfRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -285,7 +285,7 @@ class GetCustomerMfRequest extends AbstractStructBase
     /**
      * Set onlyNumeric value
      * @param bool $onlyNumeric
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerMfRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMfRequest
      */
     public function setOnlyNumeric(?bool $onlyNumeric = null): self
     {
@@ -308,7 +308,7 @@ class GetCustomerMfRequest extends AbstractStructBase
     /**
      * Set printEnforced value
      * @param bool $printEnforced
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerMfRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMfRequest
      */
     public function setPrintEnforced(?bool $printEnforced = null): self
     {
@@ -331,7 +331,7 @@ class GetCustomerMfRequest extends AbstractStructBase
     /**
      * Set presetContent value
      * @param bool $presetContent
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustomerMfRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMfRequest
      */
     public function setPresetContent(?bool $presetContent = null): self
     {

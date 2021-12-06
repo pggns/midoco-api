@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -22,7 +22,7 @@ class ListFIBUInvRbBalanceResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: FIBUInvRbBalanceLine
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType[]
      */
     protected ?array $FIBUInvRbBalanceLine = null;
     /**
@@ -40,7 +40,7 @@ class ListFIBUInvRbBalanceResponse extends AbstractStructBase
      * Constructor method for ListFIBUInvRbBalanceResponse
      * @uses ListFIBUInvRbBalanceResponse::setFIBUInvRbBalanceLine()
      * @uses ListFIBUInvRbBalanceResponse::setFIBUInvRbBalanceCsvContent()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType[] $fIBUInvRbBalanceLine
+     * @param \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType[] $fIBUInvRbBalanceLine
      * @param string $fIBUInvRbBalanceCsvContent
      */
     public function __construct(?array $fIBUInvRbBalanceLine = null, ?string $fIBUInvRbBalanceCsvContent = null)
@@ -51,7 +51,7 @@ class ListFIBUInvRbBalanceResponse extends AbstractStructBase
     }
     /**
      * Get FIBUInvRbBalanceLine value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType[]
      */
     public function getFIBUInvRbBalanceLine(): ?array
     {
@@ -72,12 +72,12 @@ class ListFIBUInvRbBalanceResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listFIBUInvRbBalanceResponseFIBUInvRbBalanceLineItem) {
             // validation for constraint: itemType
-            if (!$listFIBUInvRbBalanceResponseFIBUInvRbBalanceLineItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType) {
+            if (!$listFIBUInvRbBalanceResponseFIBUInvRbBalanceLineItem instanceof \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType) {
                 $invalidValues[] = is_object($listFIBUInvRbBalanceResponseFIBUInvRbBalanceLineItem) ? get_class($listFIBUInvRbBalanceResponseFIBUInvRbBalanceLineItem) : sprintf('%s(%s)', gettype($listFIBUInvRbBalanceResponseFIBUInvRbBalanceLineItem), var_export($listFIBUInvRbBalanceResponseFIBUInvRbBalanceLineItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The FIBUInvRbBalanceLine property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The FIBUInvRbBalanceLine property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -118,8 +118,8 @@ class ListFIBUInvRbBalanceResponse extends AbstractStructBase
      * property is null, the property is removed from this object
      * @throws InvalidArgumentException
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType[] $fIBUInvRbBalanceLine
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListFIBUInvRbBalanceResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType[] $fIBUInvRbBalanceLine
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListFIBUInvRbBalanceResponse
      */
     public function setFIBUInvRbBalanceLine(?array $fIBUInvRbBalanceLine = null): self
     {
@@ -174,14 +174,14 @@ class ListFIBUInvRbBalanceResponse extends AbstractStructBase
     /**
      * Add item to FIBUInvRbBalanceLine value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListFIBUInvRbBalanceResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListFIBUInvRbBalanceResponse
      */
-    public function addToFIBUInvRbBalanceLine(\Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType $item): self
+    public function addToFIBUInvRbBalanceLine(\Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType) {
-            throw new InvalidArgumentException(sprintf('The FIBUInvRbBalanceLine property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType) {
+            throw new InvalidArgumentException(sprintf('The FIBUInvRbBalanceLine property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: choice(FIBUInvRbBalanceLine, FIBUInvRbBalanceCsvContent)
         if ('' !== ($itemChoiceErrorMessage = self::validateItemForChoiceConstraintsFromAddToFIBUInvRbBalanceLine($item))) {
@@ -238,7 +238,7 @@ class ListFIBUInvRbBalanceResponse extends AbstractStructBase
      * property is null, the property is removed from this object
      * @throws InvalidArgumentException
      * @param string $fIBUInvRbBalanceCsvContent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListFIBUInvRbBalanceResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListFIBUInvRbBalanceResponse
      */
     public function setFIBUInvRbBalanceCsvContent(?string $fIBUInvRbBalanceCsvContent = null): self
     {

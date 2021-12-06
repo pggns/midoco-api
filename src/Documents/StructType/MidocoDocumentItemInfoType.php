@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoDocumentItemInfoType extends AbstractStructBase
     /**
      * Set sellitemId value
      * @param int $sellitemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentItemInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentItemInfoType
      */
     public function setSellitemId(?int $sellitemId = null): self
     {
@@ -78,7 +78,7 @@ class MidocoDocumentItemInfoType extends AbstractStructBase
     /**
      * Set documentNo value
      * @param string $documentNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentItemInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentItemInfoType
      */
     public function setDocumentNo(?string $documentNo = null): self
     {
@@ -101,7 +101,7 @@ class MidocoDocumentItemInfoType extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDocumentItemInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDocumentItemInfoType
      */
     public function setTravelType(?string $travelType = null): self
     {

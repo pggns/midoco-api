@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SuppCancelCMappingDTO extends AbstractStructBase
     /**
      * Set mainSupplierId value
      * @param string $mainSupplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppCancelCMappingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppCancelCMappingDTO
      */
     public function setMainSupplierId(?string $mainSupplierId = null): self
     {
@@ -78,7 +78,7 @@ class SuppCancelCMappingDTO extends AbstractStructBase
     /**
      * Set suppCancelCMappingId value
      * @param int $suppCancelCMappingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppCancelCMappingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppCancelCMappingDTO
      */
     public function setSuppCancelCMappingId(?int $suppCancelCMappingId = null): self
     {
@@ -101,7 +101,7 @@ class SuppCancelCMappingDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SuppCancelCMappingDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SuppCancelCMappingDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

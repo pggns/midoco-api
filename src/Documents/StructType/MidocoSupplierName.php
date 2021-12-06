@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoSupplierName extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierName
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierName
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -78,7 +78,7 @@ class MidocoSupplierName extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierName
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierName
      */
     public function setName(?string $name = null): self
     {
@@ -101,7 +101,7 @@ class MidocoSupplierName extends AbstractStructBase
     /**
      * Set isLocked value
      * @param bool $isLocked
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierName
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierName
      */
     public function setIsLocked(?bool $isLocked = null): self
     {

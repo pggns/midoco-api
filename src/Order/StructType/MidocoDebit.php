@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,9 +47,9 @@ class MidocoDebit extends MidocoOnlinePaymentTransactionPosition
      * The MidocoPaymentOrdersInfos
      * Meta information extracted from the WSDL
      * - ref: MidocoPaymentOrdersInfos
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos $MidocoPaymentOrdersInfos = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos $MidocoPaymentOrdersInfos = null;
     /**
      * Constructor method for MidocoDebit
      * @uses MidocoDebit::setAccountNo()
@@ -65,9 +65,9 @@ class MidocoDebit extends MidocoOnlinePaymentTransactionPosition
      * @param string $accountOwner
      * @param string $accountCountry
      * @param string $transactionType
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos
      */
-    public function __construct(?string $accountNo = null, ?string $accountBlz = null, ?string $accountName = null, ?string $accountOwner = null, ?string $accountCountry = null, ?string $transactionType = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null)
+    public function __construct(?string $accountNo = null, ?string $accountBlz = null, ?string $accountName = null, ?string $accountOwner = null, ?string $accountCountry = null, ?string $transactionType = null, ?\Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null)
     {
         $this
             ->setAccountNo($accountNo)
@@ -89,7 +89,7 @@ class MidocoDebit extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebit
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebit
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -112,7 +112,7 @@ class MidocoDebit extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set accountBlz value
      * @param string $accountBlz
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebit
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebit
      */
     public function setAccountBlz(?string $accountBlz = null): self
     {
@@ -135,7 +135,7 @@ class MidocoDebit extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebit
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebit
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -158,7 +158,7 @@ class MidocoDebit extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set accountOwner value
      * @param string $accountOwner
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebit
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebit
      */
     public function setAccountOwner(?string $accountOwner = null): self
     {
@@ -181,7 +181,7 @@ class MidocoDebit extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set accountCountry value
      * @param string $accountCountry
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebit
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebit
      */
     public function setAccountCountry(?string $accountCountry = null): self
     {
@@ -204,7 +204,7 @@ class MidocoDebit extends MidocoOnlinePaymentTransactionPosition
     /**
      * Set transactionType value
      * @param string $transactionType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebit
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebit
      */
     public function setTransactionType(?string $transactionType = null): self
     {
@@ -218,18 +218,18 @@ class MidocoDebit extends MidocoOnlinePaymentTransactionPosition
     }
     /**
      * Get MidocoPaymentOrdersInfos value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos|null
      */
-    public function getMidocoPaymentOrdersInfos(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos
+    public function getMidocoPaymentOrdersInfos(): ?\Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos
     {
         return $this->MidocoPaymentOrdersInfos;
     }
     /**
      * Set MidocoPaymentOrdersInfos value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebit
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebit
      */
-    public function setMidocoPaymentOrdersInfos(?\Pggns\MidocoApi\Api\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null): self
+    public function setMidocoPaymentOrdersInfos(?\Pggns\MidocoApi\Order\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null): self
     {
         $this->MidocoPaymentOrdersInfos = $midocoPaymentOrdersInfos;
         

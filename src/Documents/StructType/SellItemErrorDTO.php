@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class SellItemErrorDTO extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemErrorDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemErrorDTO
      */
     public function setCategory(?string $category = null): self
     {
@@ -94,7 +94,7 @@ class SellItemErrorDTO extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemErrorDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemErrorDTO
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {
@@ -117,7 +117,7 @@ class SellItemErrorDTO extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemErrorDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemErrorDTO
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -140,7 +140,7 @@ class SellItemErrorDTO extends AbstractStructBase
     /**
      * Set errorParameters value
      * @param string $errorParameters
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemErrorDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemErrorDTO
      */
     public function setErrorParameters(?string $errorParameters = null): self
     {
@@ -163,7 +163,7 @@ class SellItemErrorDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SellItemErrorDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SellItemErrorDTO
      */
     public function setItemId(?int $itemId = null): self
     {

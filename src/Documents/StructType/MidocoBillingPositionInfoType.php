@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoOnlinePaymentTransaction
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransaction|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransaction|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransaction $MidocoOnlinePaymentTransaction = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransaction $MidocoOnlinePaymentTransaction = null;
     /**
      * The ccError
      * @var int|null
@@ -240,7 +240,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
      * @uses MidocoBillingPositionInfoType::setPackageCode()
      * @uses MidocoBillingPositionInfoType::setCalculatedPrintDate()
      * @uses MidocoBillingPositionInfoType::setIsPayment()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction
      * @param int $ccError
      * @param int $positionId
      * @param int $transactionId
@@ -278,7 +278,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
      * @param string $calculatedPrintDate
      * @param bool $isPayment
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null, ?int $ccError = null, ?int $positionId = null, ?int $transactionId = null, ?int $documentId = null, ?int $itemId = null, ?int $voidPositionId = null, ?int $position = null, ?string $accountId = null, ?string $description = null, ?string $referenceNo = null, ?int $noOfItems = null, ?float $singlePrice = null, ?string $currency = null, ?string $originalCurrency = null, ?float $price = null, ?float $originalPrice = null, ?bool $isPackage = null, ?string $destinationCode = null, ?string $costCentre = null, ?string $orderNo = null, ?string $documentCode = null, ?float $commissionPercent = null, ?float $vatPercent = null, ?float $vatAmount = null, ?float $originalVatAmount = null, ?float $vat2percent = null, ?float $vat2base = null, ?float $vat2amount = null, ?float $originalVat2amount = null, ?int $orderId = null, ?string $supplierId = null, ?string $bookingId = null, ?int $documentNo = null, ?string $packageCode = null, ?string $calculatedPrintDate = null, ?bool $isPayment = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null, ?int $ccError = null, ?int $positionId = null, ?int $transactionId = null, ?int $documentId = null, ?int $itemId = null, ?int $voidPositionId = null, ?int $position = null, ?string $accountId = null, ?string $description = null, ?string $referenceNo = null, ?int $noOfItems = null, ?float $singlePrice = null, ?string $currency = null, ?string $originalCurrency = null, ?float $price = null, ?float $originalPrice = null, ?bool $isPackage = null, ?string $destinationCode = null, ?string $costCentre = null, ?string $orderNo = null, ?string $documentCode = null, ?float $commissionPercent = null, ?float $vatPercent = null, ?float $vatAmount = null, ?float $originalVatAmount = null, ?float $vat2percent = null, ?float $vat2base = null, ?float $vat2amount = null, ?float $originalVat2amount = null, ?int $orderId = null, ?string $supplierId = null, ?string $bookingId = null, ?int $documentNo = null, ?string $packageCode = null, ?string $calculatedPrintDate = null, ?bool $isPayment = null)
     {
         $this
             ->setMidocoOnlinePaymentTransaction($midocoOnlinePaymentTransaction)
@@ -321,18 +321,18 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     }
     /**
      * Get MidocoOnlinePaymentTransaction value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransaction|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransaction|null
      */
-    public function getMidocoOnlinePaymentTransaction(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransaction
+    public function getMidocoOnlinePaymentTransaction(): ?\Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransaction
     {
         return $this->MidocoOnlinePaymentTransaction;
     }
     /**
      * Set MidocoOnlinePaymentTransaction value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
-    public function setMidocoOnlinePaymentTransaction(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null): self
+    public function setMidocoOnlinePaymentTransaction(?\Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null): self
     {
         $this->MidocoOnlinePaymentTransaction = $midocoOnlinePaymentTransaction;
         
@@ -349,7 +349,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set ccError value
      * @param int $ccError
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setCcError(?int $ccError = null): self
     {
@@ -372,7 +372,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set positionId value
      * @param int $positionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setPositionId(?int $positionId = null): self
     {
@@ -395,7 +395,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set transactionId value
      * @param int $transactionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setTransactionId(?int $transactionId = null): self
     {
@@ -418,7 +418,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -441,7 +441,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -464,7 +464,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set voidPositionId value
      * @param int $voidPositionId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setVoidPositionId(?int $voidPositionId = null): self
     {
@@ -487,7 +487,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setPosition(?int $position = null): self
     {
@@ -510,7 +510,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -533,7 +533,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setDescription(?string $description = null): self
     {
@@ -556,7 +556,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set referenceNo value
      * @param string $referenceNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setReferenceNo(?string $referenceNo = null): self
     {
@@ -579,7 +579,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set noOfItems value
      * @param int $noOfItems
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setNoOfItems(?int $noOfItems = null): self
     {
@@ -602,7 +602,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set singlePrice value
      * @param float $singlePrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setSinglePrice(?float $singlePrice = null): self
     {
@@ -625,7 +625,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -648,7 +648,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set originalCurrency value
      * @param string $originalCurrency
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setOriginalCurrency(?string $originalCurrency = null): self
     {
@@ -671,7 +671,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setPrice(?float $price = null): self
     {
@@ -694,7 +694,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set originalPrice value
      * @param float $originalPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setOriginalPrice(?float $originalPrice = null): self
     {
@@ -717,7 +717,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set isPackage value
      * @param bool $isPackage
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setIsPackage(?bool $isPackage = null): self
     {
@@ -740,7 +740,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -763,7 +763,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -786,7 +786,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param string $orderNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setOrderNo(?string $orderNo = null): self
     {
@@ -809,7 +809,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set documentCode value
      * @param string $documentCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setDocumentCode(?string $documentCode = null): self
     {
@@ -832,7 +832,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set commissionPercent value
      * @param float $commissionPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setCommissionPercent(?float $commissionPercent = null): self
     {
@@ -855,7 +855,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setVatPercent(?float $vatPercent = null): self
     {
@@ -878,7 +878,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -901,7 +901,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set originalVatAmount value
      * @param float $originalVatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setOriginalVatAmount(?float $originalVatAmount = null): self
     {
@@ -924,7 +924,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set vat2percent value
      * @param float $vat2percent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setVat2percent(?float $vat2percent = null): self
     {
@@ -947,7 +947,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set vat2base value
      * @param float $vat2base
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setVat2base(?float $vat2base = null): self
     {
@@ -970,7 +970,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set vat2amount value
      * @param float $vat2amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setVat2amount(?float $vat2amount = null): self
     {
@@ -993,7 +993,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set originalVat2amount value
      * @param float $originalVat2amount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setOriginalVat2amount(?float $originalVat2amount = null): self
     {
@@ -1016,7 +1016,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -1039,7 +1039,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -1062,7 +1062,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -1085,7 +1085,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set documentNo value
      * @param int $documentNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setDocumentNo(?int $documentNo = null): self
     {
@@ -1108,7 +1108,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set packageCode value
      * @param string $packageCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setPackageCode(?string $packageCode = null): self
     {
@@ -1131,7 +1131,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set calculatedPrintDate value
      * @param string $calculatedPrintDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setCalculatedPrintDate(?string $calculatedPrintDate = null): self
     {
@@ -1154,7 +1154,7 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     /**
      * Set isPayment value
      * @param bool $isPayment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBillingPositionInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBillingPositionInfoType
      */
     public function setIsPayment(?bool $isPayment = null): self
     {

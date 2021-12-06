@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class OrderGUITravelitemDTO extends TravelitemDTO
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderGUITravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderGUITravelitemDTO
      */
     public function setPrice(?float $price = null): self
     {
@@ -86,7 +86,7 @@ class OrderGUITravelitemDTO extends TravelitemDTO
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderGUITravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderGUITravelitemDTO
      */
     public function setOrgunit(?string $orgunit = null): self
     {
@@ -109,7 +109,7 @@ class OrderGUITravelitemDTO extends TravelitemDTO
     /**
      * Set user value
      * @param string $user
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderGUITravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderGUITravelitemDTO
      */
     public function setUser(?string $user = null): self
     {
@@ -132,7 +132,7 @@ class OrderGUITravelitemDTO extends TravelitemDTO
     /**
      * Set creationdate value
      * @param string $creationdate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderGUITravelitemDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderGUITravelitemDTO
      */
     public function setCreationdate(?string $creationdate = null): self
     {

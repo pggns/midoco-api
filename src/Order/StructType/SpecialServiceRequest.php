@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -81,7 +81,7 @@ class SpecialServiceRequest extends AbstractStructBase
     /**
      * Set personAssignment value
      * @param string $personAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest
      */
     public function setPersonAssignment(?string $personAssignment = null): self
     {
@@ -104,7 +104,7 @@ class SpecialServiceRequest extends AbstractStructBase
     /**
      * Set ssrId value
      * @param int $ssrId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest
      */
     public function setSsrId(?int $ssrId = null): self
     {
@@ -127,7 +127,7 @@ class SpecialServiceRequest extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest
      */
     public function setCode(?string $code = null): self
     {
@@ -150,7 +150,7 @@ class SpecialServiceRequest extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest
      */
     public function setDescription(?string $description = null): self
     {
@@ -173,7 +173,7 @@ class SpecialServiceRequest extends AbstractStructBase
     /**
      * Set seat value
      * @param string $seat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest
      */
     public function setSeat(?string $seat = null): self
     {
@@ -196,7 +196,7 @@ class SpecialServiceRequest extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SpecialServiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SpecialServiceRequest
      */
     public function setStatus(?string $status = null): self
     {

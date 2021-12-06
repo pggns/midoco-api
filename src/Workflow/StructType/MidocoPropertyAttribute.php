@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoPropertyAttribute extends AbstractStructBase
     /**
      * Set attribute value
      * @param string $attribute
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoPropertyAttribute
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoPropertyAttribute
      */
     public function setAttribute(?string $attribute = null): self
     {
@@ -94,7 +94,7 @@ class MidocoPropertyAttribute extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoPropertyAttribute
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoPropertyAttribute
      */
     public function setPosition(?int $position = null): self
     {
@@ -117,7 +117,7 @@ class MidocoPropertyAttribute extends AbstractStructBase
     /**
      * Set visible value
      * @param bool $visible
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoPropertyAttribute
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoPropertyAttribute
      */
     public function setVisible(?bool $visible = null): self
     {
@@ -140,7 +140,7 @@ class MidocoPropertyAttribute extends AbstractStructBase
     /**
      * Set maxLength value
      * @param int $maxLength
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoPropertyAttribute
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoPropertyAttribute
      */
     public function setMaxLength(?int $maxLength = null): self
     {
@@ -163,7 +163,7 @@ class MidocoPropertyAttribute extends AbstractStructBase
     /**
      * Set preferredWidth value
      * @param int $preferredWidth
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoPropertyAttribute
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoPropertyAttribute
      */
     public function setPreferredWidth(?int $preferredWidth = null): self
     {

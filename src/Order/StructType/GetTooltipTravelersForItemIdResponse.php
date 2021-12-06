@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetTooltipTravelersForItemIdResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTooltipTravelersForItem
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTooltipTravelersForItem[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTooltipTravelersForItem[]
      */
     protected ?array $MidocoTooltipTravelersForItem = null;
     /**
      * Constructor method for GetTooltipTravelersForItemIdResponse
      * @uses GetTooltipTravelersForItemIdResponse::setMidocoTooltipTravelersForItem()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTooltipTravelersForItem[] $midocoTooltipTravelersForItem
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTooltipTravelersForItem[] $midocoTooltipTravelersForItem
      */
     public function __construct(?array $midocoTooltipTravelersForItem = null)
     {
@@ -34,7 +34,7 @@ class GetTooltipTravelersForItemIdResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTooltipTravelersForItem value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTooltipTravelersForItem[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTooltipTravelersForItem[]
      */
     public function getMidocoTooltipTravelersForItem(): ?array
     {
@@ -55,12 +55,12 @@ class GetTooltipTravelersForItemIdResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTooltipTravelersForItemIdResponseMidocoTooltipTravelersForItemItem) {
             // validation for constraint: itemType
-            if (!$getTooltipTravelersForItemIdResponseMidocoTooltipTravelersForItemItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTooltipTravelersForItem) {
+            if (!$getTooltipTravelersForItemIdResponseMidocoTooltipTravelersForItemItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoTooltipTravelersForItem) {
                 $invalidValues[] = is_object($getTooltipTravelersForItemIdResponseMidocoTooltipTravelersForItemItem) ? get_class($getTooltipTravelersForItemIdResponseMidocoTooltipTravelersForItemItem) : sprintf('%s(%s)', gettype($getTooltipTravelersForItemIdResponseMidocoTooltipTravelersForItemItem), var_export($getTooltipTravelersForItemIdResponseMidocoTooltipTravelersForItemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTooltipTravelersForItem property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTooltipTravelersForItem, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTooltipTravelersForItem property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTooltipTravelersForItem, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetTooltipTravelersForItemIdResponse extends AbstractStructBase
     /**
      * Set MidocoTooltipTravelersForItem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTooltipTravelersForItem[] $midocoTooltipTravelersForItem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTooltipTravelersForItemIdResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTooltipTravelersForItem[] $midocoTooltipTravelersForItem
+     * @return \Pggns\MidocoApi\Order\StructType\GetTooltipTravelersForItemIdResponse
      */
     public function setMidocoTooltipTravelersForItem(?array $midocoTooltipTravelersForItem = null): self
     {
@@ -85,14 +85,14 @@ class GetTooltipTravelersForItemIdResponse extends AbstractStructBase
     /**
      * Add item to MidocoTooltipTravelersForItem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTooltipTravelersForItem $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetTooltipTravelersForItemIdResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTooltipTravelersForItem $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetTooltipTravelersForItemIdResponse
      */
-    public function addToMidocoTooltipTravelersForItem(\Pggns\MidocoApi\Api\Order\StructType\MidocoTooltipTravelersForItem $item): self
+    public function addToMidocoTooltipTravelersForItem(\Pggns\MidocoApi\Order\StructType\MidocoTooltipTravelersForItem $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTooltipTravelersForItem) {
-            throw new InvalidArgumentException(sprintf('The MidocoTooltipTravelersForItem property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTooltipTravelersForItem, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoTooltipTravelersForItem) {
+            throw new InvalidArgumentException(sprintf('The MidocoTooltipTravelersForItem property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTooltipTravelersForItem, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTooltipTravelersForItem[] = $item;
         

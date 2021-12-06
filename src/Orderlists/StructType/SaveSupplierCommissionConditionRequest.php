@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveSupplierCommissionConditionRequest extends AbstractStructBase
      * The MidocoSupplierCommissionCondition
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierCommissionCondition
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionCondition|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionCondition|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionCondition $MidocoSupplierCommissionCondition = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionCondition $MidocoSupplierCommissionCondition = null;
     /**
      * Constructor method for SaveSupplierCommissionConditionRequest
      * @uses SaveSupplierCommissionConditionRequest::setMidocoSupplierCommissionCondition()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition = null)
     {
         $this
             ->setMidocoSupplierCommissionCondition($midocoSupplierCommissionCondition);
     }
     /**
      * Get MidocoSupplierCommissionCondition value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionCondition|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionCondition|null
      */
-    public function getMidocoSupplierCommissionCondition(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionCondition
+    public function getMidocoSupplierCommissionCondition(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionCondition
     {
         return $this->MidocoSupplierCommissionCondition;
     }
     /**
      * Set MidocoSupplierCommissionCondition value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveSupplierCommissionConditionRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveSupplierCommissionConditionRequest
      */
-    public function setMidocoSupplierCommissionCondition(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition = null): self
+    public function setMidocoSupplierCommissionCondition(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionCondition $midocoSupplierCommissionCondition = null): self
     {
         $this->MidocoSupplierCommissionCondition = $midocoSupplierCommissionCondition;
         

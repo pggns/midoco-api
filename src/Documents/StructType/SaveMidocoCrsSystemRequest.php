@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoCrsSystemRequest extends AbstractStructBase
      * The MidocoCrsSystem
      * Meta information extracted from the WSDL
      * - ref: MidocoCrsSystem
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrsSystem|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoCrsSystem|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCrsSystem $MidocoCrsSystem = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoCrsSystem $MidocoCrsSystem = null;
     /**
      * Constructor method for SaveMidocoCrsSystemRequest
      * @uses SaveMidocoCrsSystemRequest::setMidocoCrsSystem()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrsSystem $midocoCrsSystem
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoCrsSystem $midocoCrsSystem
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCrsSystem $midocoCrsSystem = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoCrsSystem $midocoCrsSystem = null)
     {
         $this
             ->setMidocoCrsSystem($midocoCrsSystem);
     }
     /**
      * Get MidocoCrsSystem value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrsSystem|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoCrsSystem|null
      */
-    public function getMidocoCrsSystem(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCrsSystem
+    public function getMidocoCrsSystem(): ?\Pggns\MidocoApi\Documents\StructType\MidocoCrsSystem
     {
         return $this->MidocoCrsSystem;
     }
     /**
      * Set MidocoCrsSystem value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoCrsSystem $midocoCrsSystem
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveMidocoCrsSystemRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoCrsSystem $midocoCrsSystem
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveMidocoCrsSystemRequest
      */
-    public function setMidocoCrsSystem(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoCrsSystem $midocoCrsSystem = null): self
+    public function setMidocoCrsSystem(?\Pggns\MidocoApi\Documents\StructType\MidocoCrsSystem $midocoCrsSystem = null): self
     {
         $this->MidocoCrsSystem = $midocoCrsSystem;
         

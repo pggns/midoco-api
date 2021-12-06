@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class UpdateAllContactEntriesResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\UpdateAllContactEntriesResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateAllContactEntriesResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

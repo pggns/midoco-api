@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class SaveAutoBillingMatrixRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAutoBillingMatrix
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\AutoBillingMatrixDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\AutoBillingMatrixDTO[]
      */
     protected ?array $MidocoAutoBillingMatrix = null;
     /**
@@ -33,7 +33,7 @@ class SaveAutoBillingMatrixRequest extends AbstractStructBase
      * Constructor method for SaveAutoBillingMatrixRequest
      * @uses SaveAutoBillingMatrixRequest::setMidocoAutoBillingMatrix()
      * @uses SaveAutoBillingMatrixRequest::setDeleteOthers()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AutoBillingMatrixDTO[] $midocoAutoBillingMatrix
+     * @param \Pggns\MidocoApi\Crm\StructType\AutoBillingMatrixDTO[] $midocoAutoBillingMatrix
      * @param bool $deleteOthers
      */
     public function __construct(?array $midocoAutoBillingMatrix = null, ?bool $deleteOthers = null)
@@ -44,7 +44,7 @@ class SaveAutoBillingMatrixRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAutoBillingMatrix value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\AutoBillingMatrixDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\AutoBillingMatrixDTO[]
      */
     public function getMidocoAutoBillingMatrix(): ?array
     {
@@ -65,12 +65,12 @@ class SaveAutoBillingMatrixRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveAutoBillingMatrixRequestMidocoAutoBillingMatrixItem) {
             // validation for constraint: itemType
-            if (!$saveAutoBillingMatrixRequestMidocoAutoBillingMatrixItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\AutoBillingMatrixDTO) {
+            if (!$saveAutoBillingMatrixRequestMidocoAutoBillingMatrixItem instanceof \Pggns\MidocoApi\Crm\StructType\AutoBillingMatrixDTO) {
                 $invalidValues[] = is_object($saveAutoBillingMatrixRequestMidocoAutoBillingMatrixItem) ? get_class($saveAutoBillingMatrixRequestMidocoAutoBillingMatrixItem) : sprintf('%s(%s)', gettype($saveAutoBillingMatrixRequestMidocoAutoBillingMatrixItem), var_export($saveAutoBillingMatrixRequestMidocoAutoBillingMatrixItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAutoBillingMatrix property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\AutoBillingMatrixDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAutoBillingMatrix property can only contain items of type \Pggns\MidocoApi\Crm\StructType\AutoBillingMatrixDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -79,8 +79,8 @@ class SaveAutoBillingMatrixRequest extends AbstractStructBase
     /**
      * Set MidocoAutoBillingMatrix value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AutoBillingMatrixDTO[] $midocoAutoBillingMatrix
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveAutoBillingMatrixRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\AutoBillingMatrixDTO[] $midocoAutoBillingMatrix
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveAutoBillingMatrixRequest
      */
     public function setMidocoAutoBillingMatrix(?array $midocoAutoBillingMatrix = null): self
     {
@@ -95,14 +95,14 @@ class SaveAutoBillingMatrixRequest extends AbstractStructBase
     /**
      * Add item to MidocoAutoBillingMatrix value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\AutoBillingMatrixDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveAutoBillingMatrixRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\AutoBillingMatrixDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveAutoBillingMatrixRequest
      */
-    public function addToMidocoAutoBillingMatrix(\Pggns\MidocoApi\Api\Crm\StructType\AutoBillingMatrixDTO $item): self
+    public function addToMidocoAutoBillingMatrix(\Pggns\MidocoApi\Crm\StructType\AutoBillingMatrixDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\AutoBillingMatrixDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAutoBillingMatrix property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\AutoBillingMatrixDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\AutoBillingMatrixDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAutoBillingMatrix property can only contain items of type \Pggns\MidocoApi\Crm\StructType\AutoBillingMatrixDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAutoBillingMatrix[] = $item;
         
@@ -119,7 +119,7 @@ class SaveAutoBillingMatrixRequest extends AbstractStructBase
     /**
      * Set deleteOthers value
      * @param bool $deleteOthers
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveAutoBillingMatrixRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveAutoBillingMatrixRequest
      */
     public function setDeleteOthers(?bool $deleteOthers = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteSalutationTypeRequest extends AbstractStructBase
      * The MidocoSalutationType
      * Meta information extracted from the WSDL
      * - ref: MidocoSalutationType
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\SalutationTypeDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\SalutationTypeDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\SalutationTypeDTO $MidocoSalutationType = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\SalutationTypeDTO $MidocoSalutationType = null;
     /**
      * Constructor method for DeleteSalutationTypeRequest
      * @uses DeleteSalutationTypeRequest::setMidocoSalutationType()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\SalutationTypeDTO $midocoSalutationType
+     * @param \Pggns\MidocoApi\CrmSD\StructType\SalutationTypeDTO $midocoSalutationType
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\SalutationTypeDTO $midocoSalutationType = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\SalutationTypeDTO $midocoSalutationType = null)
     {
         $this
             ->setMidocoSalutationType($midocoSalutationType);
     }
     /**
      * Get MidocoSalutationType value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SalutationTypeDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SalutationTypeDTO|null
      */
-    public function getMidocoSalutationType(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\SalutationTypeDTO
+    public function getMidocoSalutationType(): ?\Pggns\MidocoApi\CrmSD\StructType\SalutationTypeDTO
     {
         return $this->MidocoSalutationType;
     }
     /**
      * Set MidocoSalutationType value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\SalutationTypeDTO $midocoSalutationType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteSalutationTypeRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\SalutationTypeDTO $midocoSalutationType
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteSalutationTypeRequest
      */
-    public function setMidocoSalutationType(?\Pggns\MidocoApi\Api\CrmSD\StructType\SalutationTypeDTO $midocoSalutationType = null): self
+    public function setMidocoSalutationType(?\Pggns\MidocoApi\CrmSD\StructType\SalutationTypeDTO $midocoSalutationType = null): self
     {
         $this->MidocoSalutationType = $midocoSalutationType;
         

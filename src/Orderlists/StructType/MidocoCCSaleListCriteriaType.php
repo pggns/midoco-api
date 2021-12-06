@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -93,7 +93,7 @@ class MidocoCCSaleListCriteriaType extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCSaleListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCSaleListCriteriaType
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -109,7 +109,7 @@ class MidocoCCSaleListCriteriaType extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCSaleListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCSaleListCriteriaType
      */
     public function addToOrgUnits(string $item): self
     {
@@ -132,7 +132,7 @@ class MidocoCCSaleListCriteriaType extends AbstractStructBase
     /**
      * Set CaptureDateFrom value
      * @param string $captureDateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCSaleListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCSaleListCriteriaType
      */
     public function setCaptureDateFrom(?string $captureDateFrom = null): self
     {
@@ -155,7 +155,7 @@ class MidocoCCSaleListCriteriaType extends AbstractStructBase
     /**
      * Set CaptureDateTo value
      * @param string $captureDateTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCSaleListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCSaleListCriteriaType
      */
     public function setCaptureDateTo(?string $captureDateTo = null): self
     {
@@ -178,7 +178,7 @@ class MidocoCCSaleListCriteriaType extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCSaleListCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCSaleListCriteriaType
      */
     public function setCcType(?string $ccType = null): self
     {

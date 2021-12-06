@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,7 +21,7 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
      * - maxOccurs: 2
      * - minOccurs: 0
      * - ref: MidocoCustAddrDebitorPayment
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CustAddrDebitorPayment[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CustAddrDebitorPayment[]
      */
     protected ?array $MidocoCustAddrDebitorPayment = null;
     /**
@@ -81,7 +81,7 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
      * @uses GetCustInfoIfDifferentResponse::setDifferentDebitCards()
      * @uses GetCustInfoIfDifferentResponse::setDifferentAttribute()
      * @uses GetCustInfoIfDifferentResponse::setDifferentLock()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustAddrDebitorPayment[] $midocoCustAddrDebitorPayment
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustAddrDebitorPayment[] $midocoCustAddrDebitorPayment
      * @param bool $differentAddr
      * @param bool $differentDebitor
      * @param bool $differentPayment
@@ -108,7 +108,7 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCustAddrDebitorPayment value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustAddrDebitorPayment[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustAddrDebitorPayment[]
      */
     public function getMidocoCustAddrDebitorPayment(): ?array
     {
@@ -129,12 +129,12 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCustInfoIfDifferentResponseMidocoCustAddrDebitorPaymentItem) {
             // validation for constraint: itemType
-            if (!$getCustInfoIfDifferentResponseMidocoCustAddrDebitorPaymentItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CustAddrDebitorPayment) {
+            if (!$getCustInfoIfDifferentResponseMidocoCustAddrDebitorPaymentItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CustAddrDebitorPayment) {
                 $invalidValues[] = is_object($getCustInfoIfDifferentResponseMidocoCustAddrDebitorPaymentItem) ? get_class($getCustInfoIfDifferentResponseMidocoCustAddrDebitorPaymentItem) : sprintf('%s(%s)', gettype($getCustInfoIfDifferentResponseMidocoCustAddrDebitorPaymentItem), var_export($getCustInfoIfDifferentResponseMidocoCustAddrDebitorPaymentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustAddrDebitorPayment property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CustAddrDebitorPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustAddrDebitorPayment property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CustAddrDebitorPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -143,8 +143,8 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
     /**
      * Set MidocoCustAddrDebitorPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustAddrDebitorPayment[] $midocoCustAddrDebitorPayment
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustInfoIfDifferentResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustAddrDebitorPayment[] $midocoCustAddrDebitorPayment
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustInfoIfDifferentResponse
      */
     public function setMidocoCustAddrDebitorPayment(?array $midocoCustAddrDebitorPayment = null): self
     {
@@ -163,14 +163,14 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
     /**
      * Add item to MidocoCustAddrDebitorPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustAddrDebitorPayment $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustInfoIfDifferentResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustAddrDebitorPayment $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustInfoIfDifferentResponse
      */
-    public function addToMidocoCustAddrDebitorPayment(\Pggns\MidocoApi\Api\CrmSD\StructType\CustAddrDebitorPayment $item): self
+    public function addToMidocoCustAddrDebitorPayment(\Pggns\MidocoApi\CrmSD\StructType\CustAddrDebitorPayment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CustAddrDebitorPayment) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustAddrDebitorPayment property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CustAddrDebitorPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CustAddrDebitorPayment) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustAddrDebitorPayment property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CustAddrDebitorPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(2)
         if (is_array($this->MidocoCustAddrDebitorPayment) && count($this->MidocoCustAddrDebitorPayment) >= 2) {
@@ -191,7 +191,7 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
     /**
      * Set differentAddr value
      * @param bool $differentAddr
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustInfoIfDifferentResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustInfoIfDifferentResponse
      */
     public function setDifferentAddr(?bool $differentAddr = null): self
     {
@@ -214,7 +214,7 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
     /**
      * Set differentDebitor value
      * @param bool $differentDebitor
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustInfoIfDifferentResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustInfoIfDifferentResponse
      */
     public function setDifferentDebitor(?bool $differentDebitor = null): self
     {
@@ -237,7 +237,7 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
     /**
      * Set differentPayment value
      * @param bool $differentPayment
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustInfoIfDifferentResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustInfoIfDifferentResponse
      */
     public function setDifferentPayment(?bool $differentPayment = null): self
     {
@@ -260,7 +260,7 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
     /**
      * Set differentContactEntries value
      * @param bool $differentContactEntries
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustInfoIfDifferentResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustInfoIfDifferentResponse
      */
     public function setDifferentContactEntries(?bool $differentContactEntries = null): self
     {
@@ -283,7 +283,7 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
     /**
      * Set differentCreditCards value
      * @param bool $differentCreditCards
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustInfoIfDifferentResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustInfoIfDifferentResponse
      */
     public function setDifferentCreditCards(?bool $differentCreditCards = null): self
     {
@@ -306,7 +306,7 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
     /**
      * Set differentBonusCards value
      * @param bool $differentBonusCards
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustInfoIfDifferentResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustInfoIfDifferentResponse
      */
     public function setDifferentBonusCards(?bool $differentBonusCards = null): self
     {
@@ -329,7 +329,7 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
     /**
      * Set differentDebitCards value
      * @param bool $differentDebitCards
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustInfoIfDifferentResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustInfoIfDifferentResponse
      */
     public function setDifferentDebitCards(?bool $differentDebitCards = null): self
     {
@@ -352,7 +352,7 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
     /**
      * Set differentAttribute value
      * @param bool $differentAttribute
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustInfoIfDifferentResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustInfoIfDifferentResponse
      */
     public function setDifferentAttribute(?bool $differentAttribute = null): self
     {
@@ -375,7 +375,7 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
     /**
      * Set differentLock value
      * @param bool $differentLock
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCustInfoIfDifferentResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustInfoIfDifferentResponse
      */
     public function setDifferentLock(?bool $differentLock = null): self
     {

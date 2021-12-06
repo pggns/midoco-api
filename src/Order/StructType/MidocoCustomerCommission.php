@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoCustomerCommission extends CommissionDefinitionDTO
     /**
      * Set isPaidToCooperation value
      * @param bool $isPaidToCooperation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerCommission
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerCommission
      */
     public function setIsPaidToCooperation(?bool $isPaidToCooperation = null): self
     {
@@ -86,7 +86,7 @@ class MidocoCustomerCommission extends CommissionDefinitionDTO
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerCommission
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerCommission
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -109,7 +109,7 @@ class MidocoCustomerCommission extends CommissionDefinitionDTO
     /**
      * Set isInherited value
      * @param bool $isInherited
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerCommission
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerCommission
      */
     public function setIsInherited(?bool $isInherited = null): self
     {
@@ -132,7 +132,7 @@ class MidocoCustomerCommission extends CommissionDefinitionDTO
     /**
      * Set useCooperationTurnover value
      * @param bool $useCooperationTurnover
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerCommission
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerCommission
      */
     public function setUseCooperationTurnover(?bool $useCooperationTurnover = null): self
     {

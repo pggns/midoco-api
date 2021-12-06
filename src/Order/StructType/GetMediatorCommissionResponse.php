@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,33 +15,33 @@ class GetMediatorCommissionResponse extends AbstractStructBase
 {
     /**
      * The MediatorCommision
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MediatorCommision|null
+     * @var \Pggns\MidocoApi\Order\StructType\MediatorCommision|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MediatorCommision $MediatorCommision = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MediatorCommision $MediatorCommision = null;
     /**
      * Constructor method for GetMediatorCommissionResponse
      * @uses GetMediatorCommissionResponse::setMediatorCommision()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorCommision $mediatorCommision
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorCommision $mediatorCommision
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MediatorCommision $mediatorCommision = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MediatorCommision $mediatorCommision = null)
     {
         $this
             ->setMediatorCommision($mediatorCommision);
     }
     /**
      * Get MediatorCommision value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MediatorCommision|null
+     * @return \Pggns\MidocoApi\Order\StructType\MediatorCommision|null
      */
-    public function getMediatorCommision(): ?\Pggns\MidocoApi\Api\Order\StructType\MediatorCommision
+    public function getMediatorCommision(): ?\Pggns\MidocoApi\Order\StructType\MediatorCommision
     {
         return $this->MediatorCommision;
     }
     /**
      * Set MediatorCommision value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MediatorCommision $mediatorCommision
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMediatorCommissionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MediatorCommision $mediatorCommision
+     * @return \Pggns\MidocoApi\Order\StructType\GetMediatorCommissionResponse
      */
-    public function setMediatorCommision(?\Pggns\MidocoApi\Api\Order\StructType\MediatorCommision $mediatorCommision = null): self
+    public function setMediatorCommision(?\Pggns\MidocoApi\Order\StructType\MediatorCommision $mediatorCommision = null): self
     {
         $this->MediatorCommision = $mediatorCommision;
         

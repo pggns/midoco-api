@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -77,7 +77,7 @@ class GetIntroTaskOverviewRequest extends AbstractStructBase
      * Set unitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetIntroTaskOverviewRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetIntroTaskOverviewRequest
      */
     public function setUnitName(?array $unitName = null): self
     {
@@ -93,7 +93,7 @@ class GetIntroTaskOverviewRequest extends AbstractStructBase
      * Add item to unitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetIntroTaskOverviewRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetIntroTaskOverviewRequest
      */
     public function addToUnitName(string $item): self
     {
@@ -116,7 +116,7 @@ class GetIntroTaskOverviewRequest extends AbstractStructBase
     /**
      * Set timeLimit value
      * @param string $timeLimit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetIntroTaskOverviewRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetIntroTaskOverviewRequest
      */
     public function setTimeLimit(?string $timeLimit = null): self
     {

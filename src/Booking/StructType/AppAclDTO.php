@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class AppAclDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AppAclDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\AppAclDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -78,7 +78,7 @@ class AppAclDTO extends AbstractStructBase
     /**
      * Set ipAddr value
      * @param string $ipAddr
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AppAclDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\AppAclDTO
      */
     public function setIpAddr(?string $ipAddr = null): self
     {
@@ -101,7 +101,7 @@ class AppAclDTO extends AbstractStructBase
     /**
      * Set modulId value
      * @param string $modulId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\AppAclDTO
+     * @return \Pggns\MidocoApi\Booking\StructType\AppAclDTO
      */
     public function setModulId(?string $modulId = null): self
     {

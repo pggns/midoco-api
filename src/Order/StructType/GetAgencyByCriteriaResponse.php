@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetAgencyByCriteriaResponse extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetAgencyByCriteriaResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetAgencyByCriteriaResponse
      */
     public function setAgencyId(?string $agencyId = null): self
     {

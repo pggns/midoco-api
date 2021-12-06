@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,45 +19,45 @@ class MidocoTourOperatorInfo extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoTourOperator
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperator|null
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperator|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperator $MidocoTourOperator = null;
+    protected ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperator $MidocoTourOperator = null;
     /**
      * The MidocoTourOperatorAddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoTourOperatorAddress
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorAddress|null
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorAddress|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorAddress $MidocoTourOperatorAddress = null;
+    protected ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorAddress $MidocoTourOperatorAddress = null;
     /**
      * The MidocoInsurerInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoInsurerInfo
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoInsurerInfo|null
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoInsurerInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoInsurerInfo $MidocoInsurerInfo = null;
+    protected ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoInsurerInfo $MidocoInsurerInfo = null;
     /**
      * The MidocoAssessorInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoAssessorInfo
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAssessorInfo|null
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAssessorInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAssessorInfo $MidocoAssessorInfo = null;
+    protected ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAssessorInfo $MidocoAssessorInfo = null;
     /**
      * The MidocoTourOperatorInsurer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoTourOperatorInsurer
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorInsurer|null
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorInsurer|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorInsurer $MidocoTourOperatorInsurer = null;
+    protected ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorInsurer $MidocoTourOperatorInsurer = null;
     /**
      * Constructor method for MidocoTourOperatorInfo
      * @uses MidocoTourOperatorInfo::setMidocoTourOperator()
@@ -65,13 +65,13 @@ class MidocoTourOperatorInfo extends AbstractStructBase
      * @uses MidocoTourOperatorInfo::setMidocoInsurerInfo()
      * @uses MidocoTourOperatorInfo::setMidocoAssessorInfo()
      * @uses MidocoTourOperatorInfo::setMidocoTourOperatorInsurer()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperator $midocoTourOperator
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoInsurerInfo $midocoInsurerInfo
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAssessorInfo $midocoAssessorInfo
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperator $midocoTourOperator
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoInsurerInfo $midocoInsurerInfo
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAssessorInfo $midocoAssessorInfo
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperator $midocoTourOperator = null, ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress = null, ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoInsurerInfo $midocoInsurerInfo = null, ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAssessorInfo $midocoAssessorInfo = null, ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer = null)
+    public function __construct(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperator $midocoTourOperator = null, ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress = null, ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoInsurerInfo $midocoInsurerInfo = null, ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAssessorInfo $midocoAssessorInfo = null, ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer = null)
     {
         $this
             ->setMidocoTourOperator($midocoTourOperator)
@@ -82,18 +82,18 @@ class MidocoTourOperatorInfo extends AbstractStructBase
     }
     /**
      * Get MidocoTourOperator value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperator|null
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperator|null
      */
-    public function getMidocoTourOperator(): ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperator
+    public function getMidocoTourOperator(): ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperator
     {
         return $this->MidocoTourOperator;
     }
     /**
      * Set MidocoTourOperator value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperator $midocoTourOperator
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorInfo
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperator $midocoTourOperator
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorInfo
      */
-    public function setMidocoTourOperator(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperator $midocoTourOperator = null): self
+    public function setMidocoTourOperator(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperator $midocoTourOperator = null): self
     {
         $this->MidocoTourOperator = $midocoTourOperator;
         
@@ -101,18 +101,18 @@ class MidocoTourOperatorInfo extends AbstractStructBase
     }
     /**
      * Get MidocoTourOperatorAddress value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorAddress|null
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorAddress|null
      */
-    public function getMidocoTourOperatorAddress(): ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorAddress
+    public function getMidocoTourOperatorAddress(): ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorAddress
     {
         return $this->MidocoTourOperatorAddress;
     }
     /**
      * Set MidocoTourOperatorAddress value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorInfo
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorInfo
      */
-    public function setMidocoTourOperatorAddress(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress = null): self
+    public function setMidocoTourOperatorAddress(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress = null): self
     {
         $this->MidocoTourOperatorAddress = $midocoTourOperatorAddress;
         
@@ -120,18 +120,18 @@ class MidocoTourOperatorInfo extends AbstractStructBase
     }
     /**
      * Get MidocoInsurerInfo value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoInsurerInfo|null
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoInsurerInfo|null
      */
-    public function getMidocoInsurerInfo(): ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoInsurerInfo
+    public function getMidocoInsurerInfo(): ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoInsurerInfo
     {
         return $this->MidocoInsurerInfo;
     }
     /**
      * Set MidocoInsurerInfo value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoInsurerInfo $midocoInsurerInfo
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorInfo
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoInsurerInfo $midocoInsurerInfo
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorInfo
      */
-    public function setMidocoInsurerInfo(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoInsurerInfo $midocoInsurerInfo = null): self
+    public function setMidocoInsurerInfo(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoInsurerInfo $midocoInsurerInfo = null): self
     {
         $this->MidocoInsurerInfo = $midocoInsurerInfo;
         
@@ -139,18 +139,18 @@ class MidocoTourOperatorInfo extends AbstractStructBase
     }
     /**
      * Get MidocoAssessorInfo value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAssessorInfo|null
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAssessorInfo|null
      */
-    public function getMidocoAssessorInfo(): ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAssessorInfo
+    public function getMidocoAssessorInfo(): ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAssessorInfo
     {
         return $this->MidocoAssessorInfo;
     }
     /**
      * Set MidocoAssessorInfo value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAssessorInfo $midocoAssessorInfo
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorInfo
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAssessorInfo $midocoAssessorInfo
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorInfo
      */
-    public function setMidocoAssessorInfo(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoAssessorInfo $midocoAssessorInfo = null): self
+    public function setMidocoAssessorInfo(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoAssessorInfo $midocoAssessorInfo = null): self
     {
         $this->MidocoAssessorInfo = $midocoAssessorInfo;
         
@@ -158,18 +158,18 @@ class MidocoTourOperatorInfo extends AbstractStructBase
     }
     /**
      * Get MidocoTourOperatorInsurer value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorInsurer|null
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorInsurer|null
      */
-    public function getMidocoTourOperatorInsurer(): ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorInsurer
+    public function getMidocoTourOperatorInsurer(): ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorInsurer
     {
         return $this->MidocoTourOperatorInsurer;
     }
     /**
      * Set MidocoTourOperatorInsurer value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorInfo
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorInfo
      */
-    public function setMidocoTourOperatorInsurer(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer = null): self
+    public function setMidocoTourOperatorInsurer(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer = null): self
     {
         $this->MidocoTourOperatorInsurer = $midocoTourOperatorInsurer;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,24 +17,24 @@ class GetOrderTasksRequest extends AbstractStructBase
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The MidocoContactHistory
      * Meta information extracted from the WSDL
      * - ref: MidocoContactHistory
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory $MidocoContactHistory = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory $MidocoContactHistory = null;
     /**
      * Constructor method for GetOrderTasksRequest
      * @uses GetOrderTasksRequest::setMidocoCustomerId()
      * @uses GetOrderTasksRequest::setMidocoContactHistory()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory $midocoContactHistory
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory $midocoContactHistory
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory $midocoContactHistory = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory $midocoContactHistory = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -42,18 +42,18 @@ class GetOrderTasksRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetOrderTasksRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetOrderTasksRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -61,18 +61,18 @@ class GetOrderTasksRequest extends AbstractStructBase
     }
     /**
      * Get MidocoContactHistory value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory|null
      */
-    public function getMidocoContactHistory(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory
+    public function getMidocoContactHistory(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory
     {
         return $this->MidocoContactHistory;
     }
     /**
      * Set MidocoContactHistory value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory $midocoContactHistory
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetOrderTasksRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory $midocoContactHistory
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetOrderTasksRequest
      */
-    public function setMidocoContactHistory(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoContactHistory $midocoContactHistory = null): self
+    public function setMidocoContactHistory(?\Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory $midocoContactHistory = null): self
     {
         $this->MidocoContactHistory = $midocoContactHistory;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetLinkToExternalReservationResponse extends AbstractStructBase
     /**
      * Set link value
      * @param string $link
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetLinkToExternalReservationResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetLinkToExternalReservationResponse
      */
     public function setLink(?string $link = null): self
     {

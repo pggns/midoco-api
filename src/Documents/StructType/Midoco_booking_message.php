@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,15 +17,15 @@ class Midoco_booking_message extends AbstractStructBase
 {
     /**
      * The agency_identity
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Agency_identity|null
+     * @var \Pggns\MidocoApi\Documents\StructType\Agency_identity|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\Agency_identity $agency_identity = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\Agency_identity $agency_identity = null;
     /**
      * The customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 2
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Customer[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Customer[]
      */
     protected ?array $customer = null;
     /**
@@ -33,7 +33,7 @@ class Midoco_booking_message extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Package_info[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Package_info[]
      */
     protected ?array $package_info = null;
     /**
@@ -41,20 +41,20 @@ class Midoco_booking_message extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Booking[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Booking[]
      */
     protected ?array $booking = null;
     /**
      * The prices
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Prices|null
+     * @var \Pggns\MidocoApi\Documents\StructType\Prices|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\Prices $prices = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\Prices $prices = null;
     /**
      * The ticket
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Ticket[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Ticket[]
      */
     protected ?array $ticket = null;
     /**
@@ -62,29 +62,29 @@ class Midoco_booking_message extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: payment-info
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Payment_info|null
+     * @var \Pggns\MidocoApi\Documents\StructType\Payment_info|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\Payment_info $payment_info = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\Payment_info $payment_info = null;
     /**
      * The marketing_info
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Marketing_info|null
+     * @var \Pggns\MidocoApi\Documents\StructType\Marketing_info|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\Marketing_info $marketing_info = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\Marketing_info $marketing_info = null;
     /**
      * The internal_treatment
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Internal_treatment|null
+     * @var \Pggns\MidocoApi\Documents\StructType\Internal_treatment|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\Internal_treatment $internal_treatment = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\Internal_treatment $internal_treatment = null;
     /**
      * The order_remark
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Order_remark[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Order_remark[]
      */
     protected ?array $order_remark = null;
     /**
@@ -93,7 +93,7 @@ class Midoco_booking_message extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: ExternalPayment
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\ExternalPayment[]
+     * @var \Pggns\MidocoApi\Documents\StructType\ExternalPayment[]
      */
     protected ?array $ExternalPayment = null;
     /**
@@ -101,7 +101,7 @@ class Midoco_booking_message extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Imported_document[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Imported_document[]
      */
     protected ?array $imported_document = null;
     /**
@@ -110,7 +110,7 @@ class Midoco_booking_message extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: DunningInfo
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\DunningInfo[]
+     * @var \Pggns\MidocoApi\Documents\StructType\DunningInfo[]
      */
     protected ?array $DunningInfo = null;
     /**
@@ -118,7 +118,7 @@ class Midoco_booking_message extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Voucher[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Voucher[]
      */
     protected ?array $voucher = null;
     /**
@@ -127,7 +127,7 @@ class Midoco_booking_message extends AbstractStructBase
      * - documentation: VERK Data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\VerkDataInfo[]
+     * @var \Pggns\MidocoApi\Documents\StructType\VerkDataInfo[]
      */
     protected ?array $verk_data = null;
     /**
@@ -155,24 +155,24 @@ class Midoco_booking_message extends AbstractStructBase
      * @uses Midoco_booking_message::setVoucher()
      * @uses Midoco_booking_message::setVerk_data()
      * @uses Midoco_booking_message::setMessage_version()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Agency_identity $agency_identity
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Customer[] $customer
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Package_info[] $package_info
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Booking[] $booking
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Prices $prices
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Ticket[] $ticket
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Payment_info $payment_info
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Marketing_info $marketing_info
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Internal_treatment $internal_treatment
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Order_remark[] $order_remark
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ExternalPayment[] $externalPayment
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Imported_document[] $imported_document
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\DunningInfo[] $dunningInfo
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Voucher[] $voucher
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\VerkDataInfo[] $verk_data
+     * @param \Pggns\MidocoApi\Documents\StructType\Agency_identity $agency_identity
+     * @param \Pggns\MidocoApi\Documents\StructType\Customer[] $customer
+     * @param \Pggns\MidocoApi\Documents\StructType\Package_info[] $package_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Booking[] $booking
+     * @param \Pggns\MidocoApi\Documents\StructType\Prices $prices
+     * @param \Pggns\MidocoApi\Documents\StructType\Ticket[] $ticket
+     * @param \Pggns\MidocoApi\Documents\StructType\Payment_info $payment_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Marketing_info $marketing_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Internal_treatment $internal_treatment
+     * @param \Pggns\MidocoApi\Documents\StructType\Order_remark[] $order_remark
+     * @param \Pggns\MidocoApi\Documents\StructType\ExternalPayment[] $externalPayment
+     * @param \Pggns\MidocoApi\Documents\StructType\Imported_document[] $imported_document
+     * @param \Pggns\MidocoApi\Documents\StructType\DunningInfo[] $dunningInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\Voucher[] $voucher
+     * @param \Pggns\MidocoApi\Documents\StructType\VerkDataInfo[] $verk_data
      * @param int $message_version
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\Agency_identity $agency_identity = null, ?array $customer = null, ?array $package_info = null, ?array $booking = null, ?\Pggns\MidocoApi\Api\Documents\StructType\Prices $prices = null, ?array $ticket = null, ?\Pggns\MidocoApi\Api\Documents\StructType\Payment_info $payment_info = null, ?\Pggns\MidocoApi\Api\Documents\StructType\Marketing_info $marketing_info = null, ?\Pggns\MidocoApi\Api\Documents\StructType\Internal_treatment $internal_treatment = null, ?array $order_remark = null, ?array $externalPayment = null, ?array $imported_document = null, ?array $dunningInfo = null, ?array $voucher = null, ?array $verk_data = null, ?int $message_version = 1)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\Agency_identity $agency_identity = null, ?array $customer = null, ?array $package_info = null, ?array $booking = null, ?\Pggns\MidocoApi\Documents\StructType\Prices $prices = null, ?array $ticket = null, ?\Pggns\MidocoApi\Documents\StructType\Payment_info $payment_info = null, ?\Pggns\MidocoApi\Documents\StructType\Marketing_info $marketing_info = null, ?\Pggns\MidocoApi\Documents\StructType\Internal_treatment $internal_treatment = null, ?array $order_remark = null, ?array $externalPayment = null, ?array $imported_document = null, ?array $dunningInfo = null, ?array $voucher = null, ?array $verk_data = null, ?int $message_version = 1)
     {
         $this
             ->setAgency_identity($agency_identity)
@@ -194,18 +194,18 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get agency_identity value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Agency_identity|null
+     * @return \Pggns\MidocoApi\Documents\StructType\Agency_identity|null
      */
-    public function getAgency_identity(): ?\Pggns\MidocoApi\Api\Documents\StructType\Agency_identity
+    public function getAgency_identity(): ?\Pggns\MidocoApi\Documents\StructType\Agency_identity
     {
         return $this->{'agency-identity'};
     }
     /**
      * Set agency_identity value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Agency_identity $agency_identity
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Agency_identity $agency_identity
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function setAgency_identity(?\Pggns\MidocoApi\Api\Documents\StructType\Agency_identity $agency_identity = null): self
+    public function setAgency_identity(?\Pggns\MidocoApi\Documents\StructType\Agency_identity $agency_identity = null): self
     {
         $this->agency_identity = $this->{'agency-identity'} = $agency_identity;
         
@@ -213,7 +213,7 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get customer value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Customer[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Customer[]
      */
     public function getCustomer(): ?array
     {
@@ -234,12 +234,12 @@ class Midoco_booking_message extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midoco_booking_messageCustomerItem) {
             // validation for constraint: itemType
-            if (!$midoco_booking_messageCustomerItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Customer) {
+            if (!$midoco_booking_messageCustomerItem instanceof \Pggns\MidocoApi\Documents\StructType\Customer) {
                 $invalidValues[] = is_object($midoco_booking_messageCustomerItem) ? get_class($midoco_booking_messageCustomerItem) : sprintf('%s(%s)', gettype($midoco_booking_messageCustomerItem), var_export($midoco_booking_messageCustomerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The customer property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Customer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The customer property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Customer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -248,8 +248,8 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Set customer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Customer[] $customer
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Customer[] $customer
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
     public function setCustomer(?array $customer = null): self
     {
@@ -268,14 +268,14 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Add item to customer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Customer $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Customer $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function addToCustomer(\Pggns\MidocoApi\Api\Documents\StructType\Customer $item): self
+    public function addToCustomer(\Pggns\MidocoApi\Documents\StructType\Customer $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Customer) {
-            throw new InvalidArgumentException(sprintf('The customer property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Customer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Customer) {
+            throw new InvalidArgumentException(sprintf('The customer property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Customer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(2)
         if (is_array($this->customer) && count($this->customer) >= 2) {
@@ -287,7 +287,7 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get package_info value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Package_info[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Package_info[]
      */
     public function getPackage_info(): ?array
     {
@@ -308,12 +308,12 @@ class Midoco_booking_message extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midoco_booking_messagePackage_infoItem) {
             // validation for constraint: itemType
-            if (!$midoco_booking_messagePackage_infoItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Package_info) {
+            if (!$midoco_booking_messagePackage_infoItem instanceof \Pggns\MidocoApi\Documents\StructType\Package_info) {
                 $invalidValues[] = is_object($midoco_booking_messagePackage_infoItem) ? get_class($midoco_booking_messagePackage_infoItem) : sprintf('%s(%s)', gettype($midoco_booking_messagePackage_infoItem), var_export($midoco_booking_messagePackage_infoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The package_info property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Package_info, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The package_info property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Package_info, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -322,8 +322,8 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Set package_info value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Package_info[] $package_info
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Package_info[] $package_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
     public function setPackage_info(?array $package_info = null): self
     {
@@ -338,14 +338,14 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Add item to package_info value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Package_info $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Package_info $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function addToPackage_info(\Pggns\MidocoApi\Api\Documents\StructType\Package_info $item): self
+    public function addToPackage_info(\Pggns\MidocoApi\Documents\StructType\Package_info $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Package_info) {
-            throw new InvalidArgumentException(sprintf('The package_info property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Package_info, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Package_info) {
+            throw new InvalidArgumentException(sprintf('The package_info property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Package_info, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->package_info[] = $this->{'package-info'}[] = $item;
         
@@ -353,7 +353,7 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get booking value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Booking[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Booking[]
      */
     public function getBooking(): ?array
     {
@@ -374,12 +374,12 @@ class Midoco_booking_message extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midoco_booking_messageBookingItem) {
             // validation for constraint: itemType
-            if (!$midoco_booking_messageBookingItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Booking) {
+            if (!$midoco_booking_messageBookingItem instanceof \Pggns\MidocoApi\Documents\StructType\Booking) {
                 $invalidValues[] = is_object($midoco_booking_messageBookingItem) ? get_class($midoco_booking_messageBookingItem) : sprintf('%s(%s)', gettype($midoco_booking_messageBookingItem), var_export($midoco_booking_messageBookingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The booking property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Booking, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The booking property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Booking, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -388,8 +388,8 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Set booking value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Booking[] $booking
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Booking[] $booking
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
     public function setBooking(?array $booking = null): self
     {
@@ -404,14 +404,14 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Add item to booking value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Booking $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Booking $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function addToBooking(\Pggns\MidocoApi\Api\Documents\StructType\Booking $item): self
+    public function addToBooking(\Pggns\MidocoApi\Documents\StructType\Booking $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Booking) {
-            throw new InvalidArgumentException(sprintf('The booking property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Booking, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Booking) {
+            throw new InvalidArgumentException(sprintf('The booking property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Booking, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->booking[] = $item;
         
@@ -419,18 +419,18 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get prices value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Prices|null
+     * @return \Pggns\MidocoApi\Documents\StructType\Prices|null
      */
-    public function getPrices(): ?\Pggns\MidocoApi\Api\Documents\StructType\Prices
+    public function getPrices(): ?\Pggns\MidocoApi\Documents\StructType\Prices
     {
         return $this->prices;
     }
     /**
      * Set prices value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Prices $prices
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Prices $prices
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function setPrices(?\Pggns\MidocoApi\Api\Documents\StructType\Prices $prices = null): self
+    public function setPrices(?\Pggns\MidocoApi\Documents\StructType\Prices $prices = null): self
     {
         $this->prices = $prices;
         
@@ -438,7 +438,7 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get ticket value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Ticket[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Ticket[]
      */
     public function getTicket(): ?array
     {
@@ -459,12 +459,12 @@ class Midoco_booking_message extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midoco_booking_messageTicketItem) {
             // validation for constraint: itemType
-            if (!$midoco_booking_messageTicketItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Ticket) {
+            if (!$midoco_booking_messageTicketItem instanceof \Pggns\MidocoApi\Documents\StructType\Ticket) {
                 $invalidValues[] = is_object($midoco_booking_messageTicketItem) ? get_class($midoco_booking_messageTicketItem) : sprintf('%s(%s)', gettype($midoco_booking_messageTicketItem), var_export($midoco_booking_messageTicketItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ticket property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Ticket, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ticket property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Ticket, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -473,8 +473,8 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Set ticket value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Ticket[] $ticket
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Ticket[] $ticket
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
     public function setTicket(?array $ticket = null): self
     {
@@ -489,14 +489,14 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Add item to ticket value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Ticket $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Ticket $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function addToTicket(\Pggns\MidocoApi\Api\Documents\StructType\Ticket $item): self
+    public function addToTicket(\Pggns\MidocoApi\Documents\StructType\Ticket $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Ticket) {
-            throw new InvalidArgumentException(sprintf('The ticket property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Ticket, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Ticket) {
+            throw new InvalidArgumentException(sprintf('The ticket property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Ticket, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ticket[] = $item;
         
@@ -504,18 +504,18 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get payment_info value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Payment_info|null
+     * @return \Pggns\MidocoApi\Documents\StructType\Payment_info|null
      */
-    public function getPayment_info(): ?\Pggns\MidocoApi\Api\Documents\StructType\Payment_info
+    public function getPayment_info(): ?\Pggns\MidocoApi\Documents\StructType\Payment_info
     {
         return $this->{'payment-info'};
     }
     /**
      * Set payment_info value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Payment_info $payment_info
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Payment_info $payment_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function setPayment_info(?\Pggns\MidocoApi\Api\Documents\StructType\Payment_info $payment_info = null): self
+    public function setPayment_info(?\Pggns\MidocoApi\Documents\StructType\Payment_info $payment_info = null): self
     {
         $this->payment_info = $this->{'payment-info'} = $payment_info;
         
@@ -523,18 +523,18 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get marketing_info value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Marketing_info|null
+     * @return \Pggns\MidocoApi\Documents\StructType\Marketing_info|null
      */
-    public function getMarketing_info(): ?\Pggns\MidocoApi\Api\Documents\StructType\Marketing_info
+    public function getMarketing_info(): ?\Pggns\MidocoApi\Documents\StructType\Marketing_info
     {
         return $this->{'marketing-info'};
     }
     /**
      * Set marketing_info value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Marketing_info $marketing_info
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Marketing_info $marketing_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function setMarketing_info(?\Pggns\MidocoApi\Api\Documents\StructType\Marketing_info $marketing_info = null): self
+    public function setMarketing_info(?\Pggns\MidocoApi\Documents\StructType\Marketing_info $marketing_info = null): self
     {
         $this->marketing_info = $this->{'marketing-info'} = $marketing_info;
         
@@ -542,18 +542,18 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get internal_treatment value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Internal_treatment|null
+     * @return \Pggns\MidocoApi\Documents\StructType\Internal_treatment|null
      */
-    public function getInternal_treatment(): ?\Pggns\MidocoApi\Api\Documents\StructType\Internal_treatment
+    public function getInternal_treatment(): ?\Pggns\MidocoApi\Documents\StructType\Internal_treatment
     {
         return $this->internal_treatment;
     }
     /**
      * Set internal_treatment value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Internal_treatment $internal_treatment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Internal_treatment $internal_treatment
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function setInternal_treatment(?\Pggns\MidocoApi\Api\Documents\StructType\Internal_treatment $internal_treatment = null): self
+    public function setInternal_treatment(?\Pggns\MidocoApi\Documents\StructType\Internal_treatment $internal_treatment = null): self
     {
         $this->internal_treatment = $internal_treatment;
         
@@ -561,7 +561,7 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get order_remark value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Order_remark[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Order_remark[]
      */
     public function getOrder_remark(): ?array
     {
@@ -582,12 +582,12 @@ class Midoco_booking_message extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midoco_booking_messageOrder_remarkItem) {
             // validation for constraint: itemType
-            if (!$midoco_booking_messageOrder_remarkItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Order_remark) {
+            if (!$midoco_booking_messageOrder_remarkItem instanceof \Pggns\MidocoApi\Documents\StructType\Order_remark) {
                 $invalidValues[] = is_object($midoco_booking_messageOrder_remarkItem) ? get_class($midoco_booking_messageOrder_remarkItem) : sprintf('%s(%s)', gettype($midoco_booking_messageOrder_remarkItem), var_export($midoco_booking_messageOrder_remarkItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The order_remark property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Order_remark, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The order_remark property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Order_remark, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -596,8 +596,8 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Set order_remark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Order_remark[] $order_remark
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Order_remark[] $order_remark
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
     public function setOrder_remark(?array $order_remark = null): self
     {
@@ -612,14 +612,14 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Add item to order_remark value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Order_remark $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Order_remark $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function addToOrder_remark(\Pggns\MidocoApi\Api\Documents\StructType\Order_remark $item): self
+    public function addToOrder_remark(\Pggns\MidocoApi\Documents\StructType\Order_remark $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Order_remark) {
-            throw new InvalidArgumentException(sprintf('The order_remark property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Order_remark, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Order_remark) {
+            throw new InvalidArgumentException(sprintf('The order_remark property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Order_remark, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->order_remark[] = $this->{'order-remark'}[] = $item;
         
@@ -627,7 +627,7 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get ExternalPayment value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ExternalPayment[]
+     * @return \Pggns\MidocoApi\Documents\StructType\ExternalPayment[]
      */
     public function getExternalPayment(): ?array
     {
@@ -648,12 +648,12 @@ class Midoco_booking_message extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midoco_booking_messageExternalPaymentItem) {
             // validation for constraint: itemType
-            if (!$midoco_booking_messageExternalPaymentItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\ExternalPayment) {
+            if (!$midoco_booking_messageExternalPaymentItem instanceof \Pggns\MidocoApi\Documents\StructType\ExternalPayment) {
                 $invalidValues[] = is_object($midoco_booking_messageExternalPaymentItem) ? get_class($midoco_booking_messageExternalPaymentItem) : sprintf('%s(%s)', gettype($midoco_booking_messageExternalPaymentItem), var_export($midoco_booking_messageExternalPaymentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\ExternalPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Documents\StructType\ExternalPayment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -662,8 +662,8 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Set ExternalPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ExternalPayment[] $externalPayment
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\ExternalPayment[] $externalPayment
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
     public function setExternalPayment(?array $externalPayment = null): self
     {
@@ -678,14 +678,14 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Add item to ExternalPayment value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\ExternalPayment $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\ExternalPayment $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function addToExternalPayment(\Pggns\MidocoApi\Api\Documents\StructType\ExternalPayment $item): self
+    public function addToExternalPayment(\Pggns\MidocoApi\Documents\StructType\ExternalPayment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\ExternalPayment) {
-            throw new InvalidArgumentException(sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\ExternalPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\ExternalPayment) {
+            throw new InvalidArgumentException(sprintf('The ExternalPayment property can only contain items of type \Pggns\MidocoApi\Documents\StructType\ExternalPayment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ExternalPayment[] = $item;
         
@@ -693,7 +693,7 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get imported_document value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Imported_document[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Imported_document[]
      */
     public function getImported_document(): ?array
     {
@@ -714,12 +714,12 @@ class Midoco_booking_message extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midoco_booking_messageImported_documentItem) {
             // validation for constraint: itemType
-            if (!$midoco_booking_messageImported_documentItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Imported_document) {
+            if (!$midoco_booking_messageImported_documentItem instanceof \Pggns\MidocoApi\Documents\StructType\Imported_document) {
                 $invalidValues[] = is_object($midoco_booking_messageImported_documentItem) ? get_class($midoco_booking_messageImported_documentItem) : sprintf('%s(%s)', gettype($midoco_booking_messageImported_documentItem), var_export($midoco_booking_messageImported_documentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The imported_document property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Imported_document, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The imported_document property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Imported_document, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -728,8 +728,8 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Set imported_document value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Imported_document[] $imported_document
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Imported_document[] $imported_document
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
     public function setImported_document(?array $imported_document = null): self
     {
@@ -744,14 +744,14 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Add item to imported_document value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Imported_document $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Imported_document $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function addToImported_document(\Pggns\MidocoApi\Api\Documents\StructType\Imported_document $item): self
+    public function addToImported_document(\Pggns\MidocoApi\Documents\StructType\Imported_document $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Imported_document) {
-            throw new InvalidArgumentException(sprintf('The imported_document property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Imported_document, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Imported_document) {
+            throw new InvalidArgumentException(sprintf('The imported_document property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Imported_document, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->imported_document[] = $this->{'imported-document'}[] = $item;
         
@@ -759,7 +759,7 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get DunningInfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DunningInfo[]
+     * @return \Pggns\MidocoApi\Documents\StructType\DunningInfo[]
      */
     public function getDunningInfo(): ?array
     {
@@ -780,12 +780,12 @@ class Midoco_booking_message extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midoco_booking_messageDunningInfoItem) {
             // validation for constraint: itemType
-            if (!$midoco_booking_messageDunningInfoItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\DunningInfo) {
+            if (!$midoco_booking_messageDunningInfoItem instanceof \Pggns\MidocoApi\Documents\StructType\DunningInfo) {
                 $invalidValues[] = is_object($midoco_booking_messageDunningInfoItem) ? get_class($midoco_booking_messageDunningInfoItem) : sprintf('%s(%s)', gettype($midoco_booking_messageDunningInfoItem), var_export($midoco_booking_messageDunningInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The DunningInfo property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\DunningInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The DunningInfo property can only contain items of type \Pggns\MidocoApi\Documents\StructType\DunningInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -794,8 +794,8 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Set DunningInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\DunningInfo[] $dunningInfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\DunningInfo[] $dunningInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
     public function setDunningInfo(?array $dunningInfo = null): self
     {
@@ -810,14 +810,14 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Add item to DunningInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\DunningInfo $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\DunningInfo $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function addToDunningInfo(\Pggns\MidocoApi\Api\Documents\StructType\DunningInfo $item): self
+    public function addToDunningInfo(\Pggns\MidocoApi\Documents\StructType\DunningInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\DunningInfo) {
-            throw new InvalidArgumentException(sprintf('The DunningInfo property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\DunningInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\DunningInfo) {
+            throw new InvalidArgumentException(sprintf('The DunningInfo property can only contain items of type \Pggns\MidocoApi\Documents\StructType\DunningInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->DunningInfo[] = $item;
         
@@ -825,7 +825,7 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get voucher value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Voucher[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Voucher[]
      */
     public function getVoucher(): ?array
     {
@@ -846,12 +846,12 @@ class Midoco_booking_message extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midoco_booking_messageVoucherItem) {
             // validation for constraint: itemType
-            if (!$midoco_booking_messageVoucherItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Voucher) {
+            if (!$midoco_booking_messageVoucherItem instanceof \Pggns\MidocoApi\Documents\StructType\Voucher) {
                 $invalidValues[] = is_object($midoco_booking_messageVoucherItem) ? get_class($midoco_booking_messageVoucherItem) : sprintf('%s(%s)', gettype($midoco_booking_messageVoucherItem), var_export($midoco_booking_messageVoucherItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The voucher property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Voucher, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The voucher property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Voucher, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -860,8 +860,8 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Set voucher value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Voucher[] $voucher
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Voucher[] $voucher
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
     public function setVoucher(?array $voucher = null): self
     {
@@ -876,14 +876,14 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Add item to voucher value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Voucher $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\Voucher $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function addToVoucher(\Pggns\MidocoApi\Api\Documents\StructType\Voucher $item): self
+    public function addToVoucher(\Pggns\MidocoApi\Documents\StructType\Voucher $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Voucher) {
-            throw new InvalidArgumentException(sprintf('The voucher property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Voucher, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Voucher) {
+            throw new InvalidArgumentException(sprintf('The voucher property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Voucher, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->voucher[] = $item;
         
@@ -891,7 +891,7 @@ class Midoco_booking_message extends AbstractStructBase
     }
     /**
      * Get verk_data value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\VerkDataInfo[]
+     * @return \Pggns\MidocoApi\Documents\StructType\VerkDataInfo[]
      */
     public function getVerk_data(): ?array
     {
@@ -912,12 +912,12 @@ class Midoco_booking_message extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midoco_booking_messageVerk_dataItem) {
             // validation for constraint: itemType
-            if (!$midoco_booking_messageVerk_dataItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\VerkDataInfo) {
+            if (!$midoco_booking_messageVerk_dataItem instanceof \Pggns\MidocoApi\Documents\StructType\VerkDataInfo) {
                 $invalidValues[] = is_object($midoco_booking_messageVerk_dataItem) ? get_class($midoco_booking_messageVerk_dataItem) : sprintf('%s(%s)', gettype($midoco_booking_messageVerk_dataItem), var_export($midoco_booking_messageVerk_dataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The verk_data property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\VerkDataInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The verk_data property can only contain items of type \Pggns\MidocoApi\Documents\StructType\VerkDataInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -926,8 +926,8 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Set verk_data value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\VerkDataInfo[] $verk_data
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\VerkDataInfo[] $verk_data
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
     public function setVerk_data(?array $verk_data = null): self
     {
@@ -942,14 +942,14 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Add item to verk_data value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\VerkDataInfo $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @param \Pggns\MidocoApi\Documents\StructType\VerkDataInfo $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
-    public function addToVerk_data(\Pggns\MidocoApi\Api\Documents\StructType\VerkDataInfo $item): self
+    public function addToVerk_data(\Pggns\MidocoApi\Documents\StructType\VerkDataInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\VerkDataInfo) {
-            throw new InvalidArgumentException(sprintf('The verk_data property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\VerkDataInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\VerkDataInfo) {
+            throw new InvalidArgumentException(sprintf('The verk_data property can only contain items of type \Pggns\MidocoApi\Documents\StructType\VerkDataInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->verk_data[] = $this->{'verk-data'}[] = $item;
         
@@ -966,7 +966,7 @@ class Midoco_booking_message extends AbstractStructBase
     /**
      * Set message_version value
      * @param int $message_version
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Midoco_booking_message
+     * @return \Pggns\MidocoApi\Documents\StructType\Midoco_booking_message
      */
     public function setMessage_version(?int $message_version = 1): self
     {

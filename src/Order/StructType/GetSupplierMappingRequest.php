@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class GetSupplierMappingRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoSupplierMapping
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierMapping|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSupplierMapping|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierMapping $MidocoSupplierMapping = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSupplierMapping $MidocoSupplierMapping = null;
     /**
      * The isShowHierarchical
      * Meta information extracted from the WSDL
@@ -32,10 +32,10 @@ class GetSupplierMappingRequest extends AbstractStructBase
      * Constructor method for GetSupplierMappingRequest
      * @uses GetSupplierMappingRequest::setMidocoSupplierMapping()
      * @uses GetSupplierMappingRequest::setIsShowHierarchical()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierMapping $midocoSupplierMapping
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierMapping $midocoSupplierMapping
      * @param bool $isShowHierarchical
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierMapping $midocoSupplierMapping = null, ?bool $isShowHierarchical = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSupplierMapping $midocoSupplierMapping = null, ?bool $isShowHierarchical = null)
     {
         $this
             ->setMidocoSupplierMapping($midocoSupplierMapping)
@@ -43,18 +43,18 @@ class GetSupplierMappingRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierMapping value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierMapping|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierMapping|null
      */
-    public function getMidocoSupplierMapping(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierMapping
+    public function getMidocoSupplierMapping(): ?\Pggns\MidocoApi\Order\StructType\MidocoSupplierMapping
     {
         return $this->MidocoSupplierMapping;
     }
     /**
      * Set MidocoSupplierMapping value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierMapping $midocoSupplierMapping
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierMappingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierMapping $midocoSupplierMapping
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierMappingRequest
      */
-    public function setMidocoSupplierMapping(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierMapping $midocoSupplierMapping = null): self
+    public function setMidocoSupplierMapping(?\Pggns\MidocoApi\Order\StructType\MidocoSupplierMapping $midocoSupplierMapping = null): self
     {
         $this->MidocoSupplierMapping = $midocoSupplierMapping;
         
@@ -71,7 +71,7 @@ class GetSupplierMappingRequest extends AbstractStructBase
     /**
      * Set isShowHierarchical value
      * @param bool $isShowHierarchical
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplierMappingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplierMappingRequest
      */
     public function setIsShowHierarchical(?bool $isShowHierarchical = null): self
     {

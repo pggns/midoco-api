@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetOrderAndCrmContactHistoryResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderContactHistory
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory[]
      */
     protected ?array $MidocoOrderContactHistory = null;
     /**
@@ -28,15 +28,15 @@ class GetOrderAndCrmContactHistoryResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: crm:MidocoContactHistory
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoContactHistory[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoContactHistory[]
      */
     protected ?array $MidocoContactHistory = null;
     /**
      * Constructor method for GetOrderAndCrmContactHistoryResponse
      * @uses GetOrderAndCrmContactHistoryResponse::setMidocoOrderContactHistory()
      * @uses GetOrderAndCrmContactHistoryResponse::setMidocoContactHistory()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory[] $midocoOrderContactHistory
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoContactHistory[] $midocoContactHistory
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory[] $midocoOrderContactHistory
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoContactHistory[] $midocoContactHistory
      */
     public function __construct(?array $midocoOrderContactHistory = null, ?array $midocoContactHistory = null)
     {
@@ -46,7 +46,7 @@ class GetOrderAndCrmContactHistoryResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderContactHistory value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory[]
      */
     public function getMidocoOrderContactHistory(): ?array
     {
@@ -67,12 +67,12 @@ class GetOrderAndCrmContactHistoryResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderAndCrmContactHistoryResponseMidocoOrderContactHistoryItem) {
             // validation for constraint: itemType
-            if (!$getOrderAndCrmContactHistoryResponseMidocoOrderContactHistoryItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory) {
+            if (!$getOrderAndCrmContactHistoryResponseMidocoOrderContactHistoryItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory) {
                 $invalidValues[] = is_object($getOrderAndCrmContactHistoryResponseMidocoOrderContactHistoryItem) ? get_class($getOrderAndCrmContactHistoryResponseMidocoOrderContactHistoryItem) : sprintf('%s(%s)', gettype($getOrderAndCrmContactHistoryResponseMidocoOrderContactHistoryItem), var_export($getOrderAndCrmContactHistoryResponseMidocoOrderContactHistoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderContactHistory property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderContactHistory property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -81,8 +81,8 @@ class GetOrderAndCrmContactHistoryResponse extends AbstractStructBase
     /**
      * Set MidocoOrderContactHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory[] $midocoOrderContactHistory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderAndCrmContactHistoryResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory[] $midocoOrderContactHistory
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderAndCrmContactHistoryResponse
      */
     public function setMidocoOrderContactHistory(?array $midocoOrderContactHistory = null): self
     {
@@ -97,14 +97,14 @@ class GetOrderAndCrmContactHistoryResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderContactHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderAndCrmContactHistoryResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderAndCrmContactHistoryResponse
      */
-    public function addToMidocoOrderContactHistory(\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory $item): self
+    public function addToMidocoOrderContactHistory(\Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderContactHistory property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderContactHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderContactHistory property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoOrderContactHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderContactHistory[] = $item;
         
@@ -112,7 +112,7 @@ class GetOrderAndCrmContactHistoryResponse extends AbstractStructBase
     }
     /**
      * Get MidocoContactHistory value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoContactHistory[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoContactHistory[]
      */
     public function getMidocoContactHistory(): ?array
     {
@@ -133,12 +133,12 @@ class GetOrderAndCrmContactHistoryResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderAndCrmContactHistoryResponseMidocoContactHistoryItem) {
             // validation for constraint: itemType
-            if (!$getOrderAndCrmContactHistoryResponseMidocoContactHistoryItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoContactHistory) {
+            if (!$getOrderAndCrmContactHistoryResponseMidocoContactHistoryItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoContactHistory) {
                 $invalidValues[] = is_object($getOrderAndCrmContactHistoryResponseMidocoContactHistoryItem) ? get_class($getOrderAndCrmContactHistoryResponseMidocoContactHistoryItem) : sprintf('%s(%s)', gettype($getOrderAndCrmContactHistoryResponseMidocoContactHistoryItem), var_export($getOrderAndCrmContactHistoryResponseMidocoContactHistoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactHistory property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoContactHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactHistory property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoContactHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,8 +147,8 @@ class GetOrderAndCrmContactHistoryResponse extends AbstractStructBase
     /**
      * Set MidocoContactHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoContactHistory[] $midocoContactHistory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderAndCrmContactHistoryResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoContactHistory[] $midocoContactHistory
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderAndCrmContactHistoryResponse
      */
     public function setMidocoContactHistory(?array $midocoContactHistory = null): self
     {
@@ -163,14 +163,14 @@ class GetOrderAndCrmContactHistoryResponse extends AbstractStructBase
     /**
      * Add item to MidocoContactHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoContactHistory $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderAndCrmContactHistoryResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoContactHistory $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderAndCrmContactHistoryResponse
      */
-    public function addToMidocoContactHistory(\Pggns\MidocoApi\Api\Order\StructType\MidocoContactHistory $item): self
+    public function addToMidocoContactHistory(\Pggns\MidocoApi\Order\StructType\MidocoContactHistory $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoContactHistory) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactHistory property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoContactHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoContactHistory) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactHistory property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoContactHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactHistory[] = $item;
         

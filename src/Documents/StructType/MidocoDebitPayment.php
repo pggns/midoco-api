@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class MidocoDebitPayment extends DebitPaymentDTO
     /**
      * Set mandateReference value
      * @param string $mandateReference
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitPayment
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitPayment
      */
     public function setMandateReference(?string $mandateReference = null): self
     {

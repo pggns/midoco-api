@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class BankTransAttributeDTO extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankTransAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankTransAttributeDTO
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -94,7 +94,7 @@ class BankTransAttributeDTO extends AbstractStructBase
     /**
      * Set attributeValue value
      * @param string $attributeValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankTransAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankTransAttributeDTO
      */
     public function setAttributeValue(?string $attributeValue = null): self
     {
@@ -117,7 +117,7 @@ class BankTransAttributeDTO extends AbstractStructBase
     /**
      * Set fileid value
      * @param int $fileid
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankTransAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankTransAttributeDTO
      */
     public function setFileid(?int $fileid = null): self
     {
@@ -140,7 +140,7 @@ class BankTransAttributeDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankTransAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankTransAttributeDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -163,7 +163,7 @@ class BankTransAttributeDTO extends AbstractStructBase
     /**
      * Set transactionPosition value
      * @param int $transactionPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\BankTransAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\BankTransAttributeDTO
      */
     public function setTransactionPosition(?int $transactionPosition = null): self
     {

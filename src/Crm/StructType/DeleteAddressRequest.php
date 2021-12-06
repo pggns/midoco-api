@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteAddressRequest extends AbstractStructBase
      * The MidocoCrmAddress
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmAddress
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress $MidocoCrmAddress = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress $MidocoCrmAddress = null;
     /**
      * Constructor method for DeleteAddressRequest
      * @uses DeleteAddressRequest::setMidocoCrmAddress()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress $midocoCrmAddress
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress $midocoCrmAddress
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress $midocoCrmAddress = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress $midocoCrmAddress = null)
     {
         $this
             ->setMidocoCrmAddress($midocoCrmAddress);
     }
     /**
      * Get MidocoCrmAddress value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress|null
      */
-    public function getMidocoCrmAddress(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress
+    public function getMidocoCrmAddress(): ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress
     {
         return $this->MidocoCrmAddress;
     }
     /**
      * Set MidocoCrmAddress value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress $midocoCrmAddress
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteAddressRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress $midocoCrmAddress
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteAddressRequest
      */
-    public function setMidocoCrmAddress(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmAddress $midocoCrmAddress = null): self
+    public function setMidocoCrmAddress(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmAddress $midocoCrmAddress = null): self
     {
         $this->MidocoCrmAddress = $midocoCrmAddress;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class OrgunitUserAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\OrgunitUserAssignDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\OrgunitUserAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +70,7 @@ class OrgunitUserAssignDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\OrgunitUserAssignDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\OrgunitUserAssignDTO
      */
     public function setUserId(?int $userId = null): self
     {

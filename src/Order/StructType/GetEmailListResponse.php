@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetEmailListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoEmailList
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoEmailList[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoEmailList[]
      */
     protected ?array $MidocoEmailList = null;
     /**
      * Constructor method for GetEmailListResponse
      * @uses GetEmailListResponse::setMidocoEmailList()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoEmailList[] $midocoEmailList
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoEmailList[] $midocoEmailList
      */
     public function __construct(?array $midocoEmailList = null)
     {
@@ -34,7 +34,7 @@ class GetEmailListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoEmailList value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoEmailList[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoEmailList[]
      */
     public function getMidocoEmailList(): ?array
     {
@@ -55,12 +55,12 @@ class GetEmailListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getEmailListResponseMidocoEmailListItem) {
             // validation for constraint: itemType
-            if (!$getEmailListResponseMidocoEmailListItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoEmailList) {
+            if (!$getEmailListResponseMidocoEmailListItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoEmailList) {
                 $invalidValues[] = is_object($getEmailListResponseMidocoEmailListItem) ? get_class($getEmailListResponseMidocoEmailListItem) : sprintf('%s(%s)', gettype($getEmailListResponseMidocoEmailListItem), var_export($getEmailListResponseMidocoEmailListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoEmailList property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoEmailList, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoEmailList property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoEmailList, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetEmailListResponse extends AbstractStructBase
     /**
      * Set MidocoEmailList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoEmailList[] $midocoEmailList
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailListResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoEmailList[] $midocoEmailList
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailListResponse
      */
     public function setMidocoEmailList(?array $midocoEmailList = null): self
     {
@@ -85,14 +85,14 @@ class GetEmailListResponse extends AbstractStructBase
     /**
      * Add item to MidocoEmailList value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoEmailList $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEmailListResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoEmailList $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetEmailListResponse
      */
-    public function addToMidocoEmailList(\Pggns\MidocoApi\Api\Order\StructType\MidocoEmailList $item): self
+    public function addToMidocoEmailList(\Pggns\MidocoApi\Order\StructType\MidocoEmailList $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoEmailList) {
-            throw new InvalidArgumentException(sprintf('The MidocoEmailList property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoEmailList, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoEmailList) {
+            throw new InvalidArgumentException(sprintf('The MidocoEmailList property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoEmailList, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoEmailList[] = $item;
         

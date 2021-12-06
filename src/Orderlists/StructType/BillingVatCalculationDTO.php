@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -95,7 +95,7 @@ class BillingVatCalculationDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingVatCalculationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingVatCalculationDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -118,7 +118,7 @@ class BillingVatCalculationDTO extends AbstractStructBase
     /**
      * Set isOwn value
      * @param bool $isOwn
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingVatCalculationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingVatCalculationDTO
      */
     public function setIsOwn(?bool $isOwn = null): self
     {
@@ -141,7 +141,7 @@ class BillingVatCalculationDTO extends AbstractStructBase
     /**
      * Set vatAddress value
      * @param string $vatAddress
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingVatCalculationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingVatCalculationDTO
      */
     public function setVatAddress(?string $vatAddress = null): self
     {
@@ -164,7 +164,7 @@ class BillingVatCalculationDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingVatCalculationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingVatCalculationDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -187,7 +187,7 @@ class BillingVatCalculationDTO extends AbstractStructBase
     /**
      * Set vatBase value
      * @param float $vatBase
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingVatCalculationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingVatCalculationDTO
      */
     public function setVatBase(?float $vatBase = null): self
     {
@@ -210,7 +210,7 @@ class BillingVatCalculationDTO extends AbstractStructBase
     /**
      * Set vatDescription value
      * @param string $vatDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingVatCalculationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingVatCalculationDTO
      */
     public function setVatDescription(?string $vatDescription = null): self
     {
@@ -233,7 +233,7 @@ class BillingVatCalculationDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingVatCalculationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingVatCalculationDTO
      */
     public function setVatId(?string $vatId = null): self
     {
@@ -256,7 +256,7 @@ class BillingVatCalculationDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingVatCalculationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingVatCalculationDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteMidocoRuleSetRequest extends AbstractStructBase
      * The MidocoRuleSet
      * Meta information extracted from the WSDL
      * - ref: MidocoRuleSet
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\RulesetDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\RulesetDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\RulesetDTO $MidocoRuleSet = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\RulesetDTO $MidocoRuleSet = null;
     /**
      * Constructor method for DeleteMidocoRuleSetRequest
      * @uses DeleteMidocoRuleSetRequest::setMidocoRuleSet()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\RulesetDTO $midocoRuleSet
+     * @param \Pggns\MidocoApi\Orderlists\StructType\RulesetDTO $midocoRuleSet
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\RulesetDTO $midocoRuleSet = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\RulesetDTO $midocoRuleSet = null)
     {
         $this
             ->setMidocoRuleSet($midocoRuleSet);
     }
     /**
      * Get MidocoRuleSet value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\RulesetDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RulesetDTO|null
      */
-    public function getMidocoRuleSet(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\RulesetDTO
+    public function getMidocoRuleSet(): ?\Pggns\MidocoApi\Orderlists\StructType\RulesetDTO
     {
         return $this->MidocoRuleSet;
     }
     /**
      * Set MidocoRuleSet value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\RulesetDTO $midocoRuleSet
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteMidocoRuleSetRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\RulesetDTO $midocoRuleSet
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteMidocoRuleSetRequest
      */
-    public function setMidocoRuleSet(?\Pggns\MidocoApi\Api\Orderlists\StructType\RulesetDTO $midocoRuleSet = null): self
+    public function setMidocoRuleSet(?\Pggns\MidocoApi\Orderlists\StructType\RulesetDTO $midocoRuleSet = null): self
     {
         $this->MidocoRuleSet = $midocoRuleSet;
         

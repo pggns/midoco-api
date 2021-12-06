@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -86,7 +86,7 @@ class GetPrintSelectsRequest extends AbstractStructBase
      * Set handler value
      * @throws InvalidArgumentException
      * @param string[] $handler
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetPrintSelectsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetPrintSelectsRequest
      */
     public function setHandler(?array $handler = null): self
     {
@@ -102,7 +102,7 @@ class GetPrintSelectsRequest extends AbstractStructBase
      * Add item to handler value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetPrintSelectsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetPrintSelectsRequest
      */
     public function addToHandler(string $item): self
     {
@@ -125,7 +125,7 @@ class GetPrintSelectsRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetPrintSelectsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetPrintSelectsRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -148,7 +148,7 @@ class GetPrintSelectsRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetPrintSelectsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetPrintSelectsRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {

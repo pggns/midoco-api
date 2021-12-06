@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -167,7 +167,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -190,7 +190,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set criteriaId value
      * @param int $criteriaId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setCriteriaId(?int $criteriaId = null): self
     {
@@ -213,7 +213,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set customerType value
      * @param string $customerType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setCustomerType(?string $customerType = null): self
     {
@@ -236,7 +236,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set daysAfter value
      * @param int $daysAfter
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setDaysAfter(?int $daysAfter = null): self
     {
@@ -259,7 +259,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set daysBefore value
      * @param int $daysBefore
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setDaysBefore(?int $daysBefore = null): self
     {
@@ -282,7 +282,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set definitionId value
      * @param int $definitionId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setDefinitionId(?int $definitionId = null): self
     {
@@ -305,7 +305,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set extSystem value
      * @param string $extSystem
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setExtSystem(?string $extSystem = null): self
     {
@@ -328,7 +328,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set inkassoMode value
      * @param string $inkassoMode
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setInkassoMode(?string $inkassoMode = null): self
     {
@@ -351,7 +351,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set itemPriceMax value
      * @param float $itemPriceMax
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setItemPriceMax(?float $itemPriceMax = null): self
     {
@@ -374,7 +374,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set itemPriceMin value
      * @param float $itemPriceMin
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setItemPriceMin(?float $itemPriceMin = null): self
     {
@@ -397,7 +397,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -420,7 +420,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -443,7 +443,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -466,7 +466,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -489,7 +489,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -512,7 +512,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set totalPriceFrom value
      * @param float $totalPriceFrom
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setTotalPriceFrom(?float $totalPriceFrom = null): self
     {
@@ -535,7 +535,7 @@ class RuleCriteriaOrderDTO extends AbstractStructBase
     /**
      * Set totalPriceTo value
      * @param float $totalPriceTo
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\RuleCriteriaOrderDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\RuleCriteriaOrderDTO
      */
     public function setTotalPriceTo(?float $totalPriceTo = null): self
     {

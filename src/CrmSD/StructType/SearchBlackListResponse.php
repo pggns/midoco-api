@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -81,7 +81,7 @@ class SearchBlackListResponse extends AbstractStructBase
     /**
      * Set isLocked value
      * @param string $isLocked
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListResponse
      */
     public function setIsLocked(string $isLocked): self
     {
@@ -104,7 +104,7 @@ class SearchBlackListResponse extends AbstractStructBase
     /**
      * Set matches value
      * @param int $matches
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListResponse
      */
     public function setMatches(?int $matches = null): self
     {
@@ -127,7 +127,7 @@ class SearchBlackListResponse extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListResponse
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -150,7 +150,7 @@ class SearchBlackListResponse extends AbstractStructBase
     /**
      * Set midocoCustomerId value
      * @param int $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListResponse
      */
     public function setMidocoCustomerId(?int $midocoCustomerId = null): self
     {
@@ -173,7 +173,7 @@ class SearchBlackListResponse extends AbstractStructBase
     /**
      * Set lockReason value
      * @param string $lockReason
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListResponse
      */
     public function setLockReason(?string $lockReason = null): self
     {
@@ -196,7 +196,7 @@ class SearchBlackListResponse extends AbstractStructBase
     /**
      * Set lockDate value
      * @param string $lockDate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchBlackListResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListResponse
      */
     public function setLockDate(?string $lockDate = null): self
     {

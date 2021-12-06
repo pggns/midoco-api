@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,25 +17,25 @@ class MidocoTravelDocsPrintJobInfo extends AbstractStructBase
      * The MidocoTravelDocsPrintInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoTravelDocsPrintInfo
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelDocsPrintInfo|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelDocsPrintInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelDocsPrintInfo $MidocoTravelDocsPrintInfo = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelDocsPrintInfo $MidocoTravelDocsPrintInfo = null;
     /**
      * The MidocoPrintSelect
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: system:MidocoPrintSelect
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPrintSelect[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoPrintSelect[]
      */
     protected ?array $MidocoPrintSelect = null;
     /**
      * Constructor method for MidocoTravelDocsPrintJobInfo
      * @uses MidocoTravelDocsPrintJobInfo::setMidocoTravelDocsPrintInfo()
      * @uses MidocoTravelDocsPrintJobInfo::setMidocoPrintSelect()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelDocsPrintInfo $midocoTravelDocsPrintInfo
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPrintSelect[] $midocoPrintSelect
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelDocsPrintInfo $midocoTravelDocsPrintInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoPrintSelect[] $midocoPrintSelect
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelDocsPrintInfo $midocoTravelDocsPrintInfo = null, ?array $midocoPrintSelect = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelDocsPrintInfo $midocoTravelDocsPrintInfo = null, ?array $midocoPrintSelect = null)
     {
         $this
             ->setMidocoTravelDocsPrintInfo($midocoTravelDocsPrintInfo)
@@ -43,18 +43,18 @@ class MidocoTravelDocsPrintJobInfo extends AbstractStructBase
     }
     /**
      * Get MidocoTravelDocsPrintInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelDocsPrintInfo|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelDocsPrintInfo|null
      */
-    public function getMidocoTravelDocsPrintInfo(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelDocsPrintInfo
+    public function getMidocoTravelDocsPrintInfo(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelDocsPrintInfo
     {
         return $this->MidocoTravelDocsPrintInfo;
     }
     /**
      * Set MidocoTravelDocsPrintInfo value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelDocsPrintInfo $midocoTravelDocsPrintInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelDocsPrintJobInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelDocsPrintInfo $midocoTravelDocsPrintInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelDocsPrintJobInfo
      */
-    public function setMidocoTravelDocsPrintInfo(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelDocsPrintInfo $midocoTravelDocsPrintInfo = null): self
+    public function setMidocoTravelDocsPrintInfo(?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelDocsPrintInfo $midocoTravelDocsPrintInfo = null): self
     {
         $this->MidocoTravelDocsPrintInfo = $midocoTravelDocsPrintInfo;
         
@@ -62,7 +62,7 @@ class MidocoTravelDocsPrintJobInfo extends AbstractStructBase
     }
     /**
      * Get MidocoPrintSelect value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPrintSelect[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoPrintSelect[]
      */
     public function getMidocoPrintSelect(): ?array
     {
@@ -83,12 +83,12 @@ class MidocoTravelDocsPrintJobInfo extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoTravelDocsPrintJobInfoMidocoPrintSelectItem) {
             // validation for constraint: itemType
-            if (!$midocoTravelDocsPrintJobInfoMidocoPrintSelectItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPrintSelect) {
+            if (!$midocoTravelDocsPrintJobInfoMidocoPrintSelectItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoPrintSelect) {
                 $invalidValues[] = is_object($midocoTravelDocsPrintJobInfoMidocoPrintSelectItem) ? get_class($midocoTravelDocsPrintJobInfoMidocoPrintSelectItem) : sprintf('%s(%s)', gettype($midocoTravelDocsPrintJobInfoMidocoPrintSelectItem), var_export($midocoTravelDocsPrintJobInfoMidocoPrintSelectItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPrintSelect, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoPrintSelect, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -97,8 +97,8 @@ class MidocoTravelDocsPrintJobInfo extends AbstractStructBase
     /**
      * Set MidocoPrintSelect value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPrintSelect[] $midocoPrintSelect
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelDocsPrintJobInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoPrintSelect[] $midocoPrintSelect
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelDocsPrintJobInfo
      */
     public function setMidocoPrintSelect(?array $midocoPrintSelect = null): self
     {
@@ -113,14 +113,14 @@ class MidocoTravelDocsPrintJobInfo extends AbstractStructBase
     /**
      * Add item to MidocoPrintSelect value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPrintSelect $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTravelDocsPrintJobInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoPrintSelect $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelDocsPrintJobInfo
      */
-    public function addToMidocoPrintSelect(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPrintSelect $item): self
+    public function addToMidocoPrintSelect(\Pggns\MidocoApi\Orderlists\StructType\MidocoPrintSelect $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPrintSelect) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoPrintSelect, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoPrintSelect) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoPrintSelect, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintSelect[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class CashBookItemTypeDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookItemTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookItemTypeDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -110,7 +110,7 @@ class CashBookItemTypeDTO extends AbstractStructBase
     /**
      * Set articleType value
      * @param string $articleType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookItemTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookItemTypeDTO
      */
     public function setArticleType(?string $articleType = null): self
     {
@@ -133,7 +133,7 @@ class CashBookItemTypeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookItemTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookItemTypeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -156,7 +156,7 @@ class CashBookItemTypeDTO extends AbstractStructBase
     /**
      * Set isExpense value
      * @param bool $isExpense
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookItemTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookItemTypeDTO
      */
     public function setIsExpense(?bool $isExpense = null): self
     {
@@ -179,7 +179,7 @@ class CashBookItemTypeDTO extends AbstractStructBase
     /**
      * Set manuallyAdjustable value
      * @param bool $manuallyAdjustable
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookItemTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookItemTypeDTO
      */
     public function setManuallyAdjustable(?bool $manuallyAdjustable = null): self
     {
@@ -202,7 +202,7 @@ class CashBookItemTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookItemTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookItemTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -225,7 +225,7 @@ class CashBookItemTypeDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookItemTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookItemTypeDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {

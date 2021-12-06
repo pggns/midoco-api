@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class DeleteHistoryEntryRequest extends AbstractStructBase
      * The MidocoContactHistory
      * Meta information extracted from the WSDL
      * - ref: MidocoContactHistory
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactHistory|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoContactHistory|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactHistory $MidocoContactHistory = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoContactHistory $MidocoContactHistory = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +29,10 @@ class DeleteHistoryEntryRequest extends AbstractStructBase
      * Constructor method for DeleteHistoryEntryRequest
      * @uses DeleteHistoryEntryRequest::setMidocoContactHistory()
      * @uses DeleteHistoryEntryRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactHistory $midocoContactHistory
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactHistory $midocoContactHistory
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactHistory $midocoContactHistory = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoContactHistory $midocoContactHistory = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoContactHistory($midocoContactHistory)
@@ -40,18 +40,18 @@ class DeleteHistoryEntryRequest extends AbstractStructBase
     }
     /**
      * Get MidocoContactHistory value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactHistory|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoContactHistory|null
      */
-    public function getMidocoContactHistory(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactHistory
+    public function getMidocoContactHistory(): ?\Pggns\MidocoApi\Crm\StructType\MidocoContactHistory
     {
         return $this->MidocoContactHistory;
     }
     /**
      * Set MidocoContactHistory value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoContactHistory $midocoContactHistory
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteHistoryEntryRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoContactHistory $midocoContactHistory
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteHistoryEntryRequest
      */
-    public function setMidocoContactHistory(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoContactHistory $midocoContactHistory = null): self
+    public function setMidocoContactHistory(?\Pggns\MidocoApi\Crm\StructType\MidocoContactHistory $midocoContactHistory = null): self
     {
         $this->MidocoContactHistory = $midocoContactHistory;
         
@@ -68,7 +68,7 @@ class DeleteHistoryEntryRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteHistoryEntryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteHistoryEntryRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

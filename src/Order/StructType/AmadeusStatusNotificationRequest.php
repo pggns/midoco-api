@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class AmadeusStatusNotificationRequest extends AbstractStructBase
      * The AmadeusBookingStatus
      * Meta information extracted from the WSDL
      * - ref: AmadeusBookingStatus
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus|null
+     * @var \Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus $AmadeusBookingStatus = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus $AmadeusBookingStatus = null;
     /**
      * Constructor method for AmadeusStatusNotificationRequest
      * @uses AmadeusStatusNotificationRequest::setAmadeusBookingStatus()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus $amadeusBookingStatus
+     * @param \Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus $amadeusBookingStatus
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus $amadeusBookingStatus = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus $amadeusBookingStatus = null)
     {
         $this
             ->setAmadeusBookingStatus($amadeusBookingStatus);
     }
     /**
      * Get AmadeusBookingStatus value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus|null
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus|null
      */
-    public function getAmadeusBookingStatus(): ?\Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus
+    public function getAmadeusBookingStatus(): ?\Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus
     {
         return $this->AmadeusBookingStatus;
     }
     /**
      * Set AmadeusBookingStatus value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus $amadeusBookingStatus
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AmadeusStatusNotificationRequest
+     * @param \Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus $amadeusBookingStatus
+     * @return \Pggns\MidocoApi\Order\StructType\AmadeusStatusNotificationRequest
      */
-    public function setAmadeusBookingStatus(?\Pggns\MidocoApi\Api\Order\StructType\AmadeusBookingStatus $amadeusBookingStatus = null): self
+    public function setAmadeusBookingStatus(?\Pggns\MidocoApi\Order\StructType\AmadeusBookingStatus $amadeusBookingStatus = null): self
     {
         $this->AmadeusBookingStatus = $amadeusBookingStatus;
         

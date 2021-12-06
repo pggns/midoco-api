@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetDocumentNatureRetentionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDocumentNatureRetention
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType[]
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType[]
      */
     protected ?array $MidocoDocumentNatureRetention = null;
     /**
      * Constructor method for GetDocumentNatureRetentionsResponse
      * @uses GetDocumentNatureRetentionsResponse::setMidocoDocumentNatureRetention()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType[] $midocoDocumentNatureRetention
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType[] $midocoDocumentNatureRetention
      */
     public function __construct(?array $midocoDocumentNatureRetention = null)
     {
@@ -34,7 +34,7 @@ class GetDocumentNatureRetentionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDocumentNatureRetention value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType[]
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType[]
      */
     public function getMidocoDocumentNatureRetention(): ?array
     {
@@ -55,12 +55,12 @@ class GetDocumentNatureRetentionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDocumentNatureRetentionsResponseMidocoDocumentNatureRetentionItem) {
             // validation for constraint: itemType
-            if (!$getDocumentNatureRetentionsResponseMidocoDocumentNatureRetentionItem instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType) {
+            if (!$getDocumentNatureRetentionsResponseMidocoDocumentNatureRetentionItem instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType) {
                 $invalidValues[] = is_object($getDocumentNatureRetentionsResponseMidocoDocumentNatureRetentionItem) ? get_class($getDocumentNatureRetentionsResponseMidocoDocumentNatureRetentionItem) : sprintf('%s(%s)', gettype($getDocumentNatureRetentionsResponseMidocoDocumentNatureRetentionItem), var_export($getDocumentNatureRetentionsResponseMidocoDocumentNatureRetentionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDocumentNatureRetention property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDocumentNatureRetention property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetDocumentNatureRetentionsResponse extends AbstractStructBase
     /**
      * Set MidocoDocumentNatureRetention value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType[] $midocoDocumentNatureRetention
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDocumentNatureRetentionsResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType[] $midocoDocumentNatureRetention
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDocumentNatureRetentionsResponse
      */
     public function setMidocoDocumentNatureRetention(?array $midocoDocumentNatureRetention = null): self
     {
@@ -85,14 +85,14 @@ class GetDocumentNatureRetentionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoDocumentNatureRetention value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType $item
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetDocumentNatureRetentionsResponse
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType $item
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetDocumentNatureRetentionsResponse
      */
-    public function addToMidocoDocumentNatureRetention(\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType $item): self
+    public function addToMidocoDocumentNatureRetention(\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType) {
-            throw new InvalidArgumentException(sprintf('The MidocoDocumentNatureRetention property can only contain items of type \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType) {
+            throw new InvalidArgumentException(sprintf('The MidocoDocumentNatureRetention property can only contain items of type \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoDocumentNatureRetentionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDocumentNatureRetention[] = $item;
         

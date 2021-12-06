@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class MisCampaignOrgUnitDTO extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -126,7 +126,7 @@ class MisCampaignOrgUnitDTO extends AbstractStructBase
     /**
      * Set estimatedNoOfResults value
      * @param int $estimatedNoOfResults
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO
      */
     public function setEstimatedNoOfResults(?int $estimatedNoOfResults = null): self
     {
@@ -149,7 +149,7 @@ class MisCampaignOrgUnitDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO
      */
     public function setId(?int $id = null): self
     {
@@ -172,7 +172,7 @@ class MisCampaignOrgUnitDTO extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {
@@ -195,7 +195,7 @@ class MisCampaignOrgUnitDTO extends AbstractStructBase
     /**
      * Set status value
      * @param bool $status
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO
      */
     public function setStatus(?bool $status = null): self
     {
@@ -218,7 +218,7 @@ class MisCampaignOrgUnitDTO extends AbstractStructBase
     /**
      * Set statusChangedBy value
      * @param int $statusChangedBy
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO
      */
     public function setStatusChangedBy(?int $statusChangedBy = null): self
     {
@@ -241,7 +241,7 @@ class MisCampaignOrgUnitDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -264,7 +264,7 @@ class MisCampaignOrgUnitDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -287,7 +287,7 @@ class MisCampaignOrgUnitDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCampaignOrgUnitDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCampaignOrgUnitDTO
      */
     public function setUserId(?int $userId = null): self
     {

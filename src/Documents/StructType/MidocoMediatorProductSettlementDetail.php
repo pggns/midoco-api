@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoMediatorProductSettlementDetail extends MedStlmntProdDetailDTO
     /**
      * Set orderTravelDate value
      * @param string $orderTravelDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorProductSettlementDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorProductSettlementDetail
      */
     public function setOrderTravelDate(?string $orderTravelDate = null): self
     {
@@ -70,7 +70,7 @@ class MidocoMediatorProductSettlementDetail extends MedStlmntProdDetailDTO
     /**
      * Set orderCustomerName value
      * @param string $orderCustomerName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorProductSettlementDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorProductSettlementDetail
      */
     public function setOrderCustomerName(?string $orderCustomerName = null): self
     {

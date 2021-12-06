@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -255,7 +255,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set accountFeeNoVat value
      * @param string $accountFeeNoVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setAccountFeeNoVat(?string $accountFeeNoVat = null): self
     {
@@ -278,7 +278,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set accountFeeVat value
      * @param string $accountFeeVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setAccountFeeVat(?string $accountFeeVat = null): self
     {
@@ -301,7 +301,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -324,7 +324,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -347,7 +347,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set booked value
      * @param bool $booked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setBooked(?bool $booked = null): self
     {
@@ -370,7 +370,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -393,7 +393,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set checked value
      * @param bool $checked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setChecked(?bool $checked = null): self
     {
@@ -416,7 +416,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set comments value
      * @param string $comments
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setComments(?string $comments = null): self
     {
@@ -439,7 +439,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set costCentreFeeNoVat value
      * @param string $costCentreFeeNoVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setCostCentreFeeNoVat(?string $costCentreFeeNoVat = null): self
     {
@@ -462,7 +462,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set costCentreFeeVat value
      * @param string $costCentreFeeVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setCostCentreFeeVat(?string $costCentreFeeVat = null): self
     {
@@ -485,7 +485,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set customerField value
      * @param string $customerField
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setCustomerField(?string $customerField = null): self
     {
@@ -508,7 +508,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set customerField2 value
      * @param string $customerField2
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setCustomerField2(?string $customerField2 = null): self
     {
@@ -531,7 +531,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set customerField3 value
      * @param string $customerField3
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setCustomerField3(?string $customerField3 = null): self
     {
@@ -554,7 +554,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set customerField4 value
      * @param string $customerField4
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setCustomerField4(?string $customerField4 = null): self
     {
@@ -577,7 +577,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set customerField5 value
      * @param string $customerField5
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setCustomerField5(?string $customerField5 = null): self
     {
@@ -600,7 +600,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set diffManualChecked value
      * @param bool $diffManualChecked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setDiffManualChecked(?bool $diffManualChecked = null): self
     {
@@ -623,7 +623,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set entryId value
      * @param string $entryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setEntryId(?string $entryId = null): self
     {
@@ -646,7 +646,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set errors value
      * @param int $errors
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setErrors(?int $errors = null): self
     {
@@ -669,7 +669,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set feeNoVat value
      * @param float $feeNoVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setFeeNoVat(?float $feeNoVat = null): self
     {
@@ -692,7 +692,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set feeVat value
      * @param float $feeVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setFeeVat(?float $feeVat = null): self
     {
@@ -715,7 +715,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set ignoreFees value
      * @param bool $ignoreFees
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setIgnoreFees(?bool $ignoreFees = null): self
     {
@@ -738,7 +738,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set ignored value
      * @param bool $ignored
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setIgnored(?bool $ignored = null): self
     {
@@ -761,7 +761,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set midocoAmount value
      * @param float $midocoAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setMidocoAmount(?float $midocoAmount = null): self
     {
@@ -784,7 +784,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -807,7 +807,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -830,7 +830,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -853,7 +853,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set transactionCode value
      * @param string $transactionCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setTransactionCode(?string $transactionCode = null): self
     {
@@ -876,7 +876,7 @@ class PaymentProviderSettlBookDTO extends AbstractStructBase
     /**
      * Set transactionDate value
      * @param string $transactionDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentProviderSettlBookDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderSettlBookDTO
      */
     public function setTransactionDate(?string $transactionDate = null): self
     {

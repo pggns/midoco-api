@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetExternalLinksResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoExternalLink
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoExternalLink[]
      */
     protected ?array $MidocoExternalLink = null;
     /**
      * Constructor method for GetExternalLinksResponse
      * @uses GetExternalLinksResponse::setMidocoExternalLink()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink[] $midocoExternalLink
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoExternalLink[] $midocoExternalLink
      */
     public function __construct(?array $midocoExternalLink = null)
     {
@@ -34,7 +34,7 @@ class GetExternalLinksResponse extends AbstractStructBase
     }
     /**
      * Get MidocoExternalLink value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoExternalLink[]
      */
     public function getMidocoExternalLink(): ?array
     {
@@ -55,12 +55,12 @@ class GetExternalLinksResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getExternalLinksResponseMidocoExternalLinkItem) {
             // validation for constraint: itemType
-            if (!$getExternalLinksResponseMidocoExternalLinkItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink) {
+            if (!$getExternalLinksResponseMidocoExternalLinkItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoExternalLink) {
                 $invalidValues[] = is_object($getExternalLinksResponseMidocoExternalLinkItem) ? get_class($getExternalLinksResponseMidocoExternalLinkItem) : sprintf('%s(%s)', gettype($getExternalLinksResponseMidocoExternalLinkItem), var_export($getExternalLinksResponseMidocoExternalLinkItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoExternalLink property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoExternalLink property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoExternalLink, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetExternalLinksResponse extends AbstractStructBase
     /**
      * Set MidocoExternalLink value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink[] $midocoExternalLink
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExternalLinksResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoExternalLink[] $midocoExternalLink
+     * @return \Pggns\MidocoApi\Order\StructType\GetExternalLinksResponse
      */
     public function setMidocoExternalLink(?array $midocoExternalLink = null): self
     {
@@ -85,14 +85,14 @@ class GetExternalLinksResponse extends AbstractStructBase
     /**
      * Add item to MidocoExternalLink value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExternalLinksResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoExternalLink $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetExternalLinksResponse
      */
-    public function addToMidocoExternalLink(\Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink $item): self
+    public function addToMidocoExternalLink(\Pggns\MidocoApi\Order\StructType\MidocoExternalLink $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink) {
-            throw new InvalidArgumentException(sprintf('The MidocoExternalLink property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoExternalLink, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoExternalLink) {
+            throw new InvalidArgumentException(sprintf('The MidocoExternalLink property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoExternalLink, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoExternalLink[] = $item;
         

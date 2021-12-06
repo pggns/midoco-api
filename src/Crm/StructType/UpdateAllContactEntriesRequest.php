@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -105,7 +105,7 @@ class UpdateAllContactEntriesRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\UpdateAllContactEntriesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\UpdateAllContactEntriesRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -128,7 +128,7 @@ class UpdateAllContactEntriesRequest extends AbstractStructBase
     /**
      * Set useForMailing value
      * @param bool $useForMailing
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\UpdateAllContactEntriesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\UpdateAllContactEntriesRequest
      */
     public function setUseForMailing(?bool $useForMailing = null): self
     {
@@ -151,7 +151,7 @@ class UpdateAllContactEntriesRequest extends AbstractStructBase
     /**
      * Set mailingStatus value
      * @param string $mailingStatus
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\UpdateAllContactEntriesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\UpdateAllContactEntriesRequest
      */
     public function setMailingStatus(?string $mailingStatus = null): self
     {
@@ -174,7 +174,7 @@ class UpdateAllContactEntriesRequest extends AbstractStructBase
     /**
      * Set mailingModifyUser value
      * @param int $mailingModifyUser
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\UpdateAllContactEntriesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\UpdateAllContactEntriesRequest
      */
     public function setMailingModifyUser(?int $mailingModifyUser = null): self
     {
@@ -197,7 +197,7 @@ class UpdateAllContactEntriesRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\UpdateAllContactEntriesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\UpdateAllContactEntriesRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -220,7 +220,7 @@ class UpdateAllContactEntriesRequest extends AbstractStructBase
     /**
      * Set mailingProhibitedAddresses value
      * @param bool $mailingProhibitedAddresses
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\UpdateAllContactEntriesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\UpdateAllContactEntriesRequest
      */
     public function setMailingProhibitedAddresses(?bool $mailingProhibitedAddresses = null): self
     {
@@ -243,7 +243,7 @@ class UpdateAllContactEntriesRequest extends AbstractStructBase
     /**
      * Set consent value
      * @param string $consent
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\UpdateAllContactEntriesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\UpdateAllContactEntriesRequest
      */
     public function setConsent(?string $consent = null): self
     {
@@ -266,7 +266,7 @@ class UpdateAllContactEntriesRequest extends AbstractStructBase
     /**
      * Set saveHistory value
      * @param bool $saveHistory
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\UpdateAllContactEntriesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\UpdateAllContactEntriesRequest
      */
     public function setSaveHistory(?bool $saveHistory = true): self
     {
@@ -289,7 +289,7 @@ class UpdateAllContactEntriesRequest extends AbstractStructBase
     /**
      * Set consentTimestamp value
      * @param string $consentTimestamp
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\UpdateAllContactEntriesRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\UpdateAllContactEntriesRequest
      */
     public function setConsentTimestamp(?string $consentTimestamp = null): self
     {

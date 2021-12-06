@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoPaymentServiceInfos extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentServiceInfos
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentServiceInfos
      */
     public function setPosition(?int $position = null): self
     {
@@ -102,7 +102,7 @@ class MidocoPaymentServiceInfos extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentServiceInfos
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentServiceInfos
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -125,7 +125,7 @@ class MidocoPaymentServiceInfos extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentServiceInfos
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentServiceInfos
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -148,7 +148,7 @@ class MidocoPaymentServiceInfos extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentServiceInfos
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentServiceInfos
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -171,7 +171,7 @@ class MidocoPaymentServiceInfos extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentServiceInfos
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentServiceInfos
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -194,7 +194,7 @@ class MidocoPaymentServiceInfos extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentServiceInfos
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentServiceInfos
      */
     public function setBookingDate(?string $bookingDate = null): self
     {

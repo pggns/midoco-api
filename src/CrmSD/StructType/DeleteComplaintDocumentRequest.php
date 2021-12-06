@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteComplaintDocumentRequest extends AbstractStructBase
      * The MidocoComplaintDocument
      * Meta information extracted from the WSDL
      * - ref: MidocoComplaintDocument
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\ComplaintDocumentDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\ComplaintDocumentDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\ComplaintDocumentDTO $MidocoComplaintDocument = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\ComplaintDocumentDTO $MidocoComplaintDocument = null;
     /**
      * Constructor method for DeleteComplaintDocumentRequest
      * @uses DeleteComplaintDocumentRequest::setMidocoComplaintDocument()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ComplaintDocumentDTO $midocoComplaintDocument
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ComplaintDocumentDTO $midocoComplaintDocument
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\ComplaintDocumentDTO $midocoComplaintDocument = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\ComplaintDocumentDTO $midocoComplaintDocument = null)
     {
         $this
             ->setMidocoComplaintDocument($midocoComplaintDocument);
     }
     /**
      * Get MidocoComplaintDocument value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ComplaintDocumentDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ComplaintDocumentDTO|null
      */
-    public function getMidocoComplaintDocument(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\ComplaintDocumentDTO
+    public function getMidocoComplaintDocument(): ?\Pggns\MidocoApi\CrmSD\StructType\ComplaintDocumentDTO
     {
         return $this->MidocoComplaintDocument;
     }
     /**
      * Set MidocoComplaintDocument value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\ComplaintDocumentDTO $midocoComplaintDocument
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteComplaintDocumentRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\ComplaintDocumentDTO $midocoComplaintDocument
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteComplaintDocumentRequest
      */
-    public function setMidocoComplaintDocument(?\Pggns\MidocoApi\Api\CrmSD\StructType\ComplaintDocumentDTO $midocoComplaintDocument = null): self
+    public function setMidocoComplaintDocument(?\Pggns\MidocoApi\CrmSD\StructType\ComplaintDocumentDTO $midocoComplaintDocument = null): self
     {
         $this->MidocoComplaintDocument = $midocoComplaintDocument;
         

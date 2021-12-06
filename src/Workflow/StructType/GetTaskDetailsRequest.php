@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTaskViewColumns
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns[]
      */
     protected ?array $MidocoTaskViewColumns = null;
     /**
@@ -109,7 +109,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
      * @uses GetTaskDetailsRequest::setDelegationToDate()
      * @uses GetTaskDetailsRequest::setCreationUser()
      * @uses GetTaskDetailsRequest::setUserId()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns[] $midocoTaskViewColumns
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns[] $midocoTaskViewColumns
      * @param string $delegateQueue
      * @param int $delegateUser
      * @param string $delegateOrgunit
@@ -146,7 +146,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTaskViewColumns value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns[]
      */
     public function getMidocoTaskViewColumns(): ?array
     {
@@ -167,12 +167,12 @@ class GetTaskDetailsRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTaskDetailsRequestMidocoTaskViewColumnsItem) {
             // validation for constraint: itemType
-            if (!$getTaskDetailsRequestMidocoTaskViewColumnsItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns) {
+            if (!$getTaskDetailsRequestMidocoTaskViewColumnsItem instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns) {
                 $invalidValues[] = is_object($getTaskDetailsRequestMidocoTaskViewColumnsItem) ? get_class($getTaskDetailsRequestMidocoTaskViewColumnsItem) : sprintf('%s(%s)', gettype($getTaskDetailsRequestMidocoTaskViewColumnsItem), var_export($getTaskDetailsRequestMidocoTaskViewColumnsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTaskViewColumns property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTaskViewColumns property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -181,8 +181,8 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set MidocoTaskViewColumns value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns[] $midocoTaskViewColumns
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns[] $midocoTaskViewColumns
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setMidocoTaskViewColumns(?array $midocoTaskViewColumns = null): self
     {
@@ -197,14 +197,14 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Add item to MidocoTaskViewColumns value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
-    public function addToMidocoTaskViewColumns(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns $item): self
+    public function addToMidocoTaskViewColumns(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns) {
-            throw new InvalidArgumentException(sprintf('The MidocoTaskViewColumns property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskViewColumns, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns) {
+            throw new InvalidArgumentException(sprintf('The MidocoTaskViewColumns property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskViewColumns, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTaskViewColumns[] = $item;
         
@@ -221,7 +221,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set delegateQueue value
      * @param string $delegateQueue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setDelegateQueue(?string $delegateQueue = null): self
     {
@@ -244,7 +244,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set delegateUser value
      * @param int $delegateUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setDelegateUser(?int $delegateUser = null): self
     {
@@ -267,7 +267,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set delegateOrgunit value
      * @param string $delegateOrgunit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setDelegateOrgunit(?string $delegateOrgunit = null): self
     {
@@ -290,7 +290,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -313,7 +313,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -336,7 +336,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set priority value
      * @param int $priority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setPriority(?int $priority = null): self
     {
@@ -359,7 +359,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set fromPriority value
      * @param int $fromPriority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setFromPriority(?int $fromPriority = null): self
     {
@@ -382,7 +382,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set toPriority value
      * @param int $toPriority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setToPriority(?int $toPriority = null): self
     {
@@ -405,7 +405,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set startTimeLimit value
      * @param string $startTimeLimit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setStartTimeLimit(?string $startTimeLimit = null): self
     {
@@ -428,7 +428,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set endTimeLimit value
      * @param string $endTimeLimit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setEndTimeLimit(?string $endTimeLimit = null): self
     {
@@ -451,7 +451,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set delegationFromDate value
      * @param string $delegationFromDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setDelegationFromDate(?string $delegationFromDate = null): self
     {
@@ -474,7 +474,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set delegationToDate value
      * @param string $delegationToDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setDelegationToDate(?string $delegationToDate = null): self
     {
@@ -497,7 +497,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -520,7 +520,7 @@ class GetTaskDetailsRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskDetailsRequest
      */
     public function setUserId(?int $userId = null): self
     {

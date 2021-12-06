@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoEinvoiceDocument extends EinvoiceDocumentDTO
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoEinvoiceDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoEinvoiceDocument
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -86,7 +86,7 @@ class MidocoEinvoiceDocument extends EinvoiceDocumentDTO
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoEinvoiceDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoEinvoiceDocument
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -109,7 +109,7 @@ class MidocoEinvoiceDocument extends EinvoiceDocumentDTO
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoEinvoiceDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoEinvoiceDocument
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -132,7 +132,7 @@ class MidocoEinvoiceDocument extends EinvoiceDocumentDTO
     /**
      * Set invoiceNo value
      * @param string $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoEinvoiceDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoEinvoiceDocument
      */
     public function setInvoiceNo(?string $invoiceNo = null): self
     {

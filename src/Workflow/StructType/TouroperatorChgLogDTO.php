@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class TouroperatorChgLogDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TouroperatorChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TouroperatorChgLogDTO
      */
     public function setAction(?string $action = null): self
     {
@@ -110,7 +110,7 @@ class TouroperatorChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TouroperatorChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TouroperatorChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -133,7 +133,7 @@ class TouroperatorChgLogDTO extends AbstractStructBase
     /**
      * Set companyName value
      * @param string $companyName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TouroperatorChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TouroperatorChgLogDTO
      */
     public function setCompanyName(?string $companyName = null): self
     {
@@ -156,7 +156,7 @@ class TouroperatorChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TouroperatorChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TouroperatorChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -179,7 +179,7 @@ class TouroperatorChgLogDTO extends AbstractStructBase
     /**
      * Set touroperatorId value
      * @param int $touroperatorId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TouroperatorChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TouroperatorChgLogDTO
      */
     public function setTouroperatorId(?int $touroperatorId = null): self
     {
@@ -202,7 +202,7 @@ class TouroperatorChgLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TouroperatorChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TouroperatorChgLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -225,7 +225,7 @@ class TouroperatorChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TouroperatorChgLogDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TouroperatorChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

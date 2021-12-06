@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoVoucher4KickbackResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVoucher4Kickback
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback[]
      */
     protected ?array $MidocoVoucher4Kickback = null;
     /**
      * Constructor method for GetMidocoVoucher4KickbackResponse
      * @uses GetMidocoVoucher4KickbackResponse::setMidocoVoucher4Kickback()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback[] $midocoVoucher4Kickback
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback[] $midocoVoucher4Kickback
      */
     public function __construct(?array $midocoVoucher4Kickback = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoVoucher4KickbackResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVoucher4Kickback value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback[]
      */
     public function getMidocoVoucher4Kickback(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoVoucher4KickbackResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoVoucher4KickbackResponseMidocoVoucher4KickbackItem) {
             // validation for constraint: itemType
-            if (!$getMidocoVoucher4KickbackResponseMidocoVoucher4KickbackItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback) {
+            if (!$getMidocoVoucher4KickbackResponseMidocoVoucher4KickbackItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback) {
                 $invalidValues[] = is_object($getMidocoVoucher4KickbackResponseMidocoVoucher4KickbackItem) ? get_class($getMidocoVoucher4KickbackResponseMidocoVoucher4KickbackItem) : sprintf('%s(%s)', gettype($getMidocoVoucher4KickbackResponseMidocoVoucher4KickbackItem), var_export($getMidocoVoucher4KickbackResponseMidocoVoucher4KickbackItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVoucher4Kickback property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVoucher4Kickback property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoVoucher4KickbackResponse extends AbstractStructBase
     /**
      * Set MidocoVoucher4Kickback value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback[] $midocoVoucher4Kickback
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoVoucher4KickbackResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback[] $midocoVoucher4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoVoucher4KickbackResponse
      */
     public function setMidocoVoucher4Kickback(?array $midocoVoucher4Kickback = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoVoucher4KickbackResponse extends AbstractStructBase
     /**
      * Add item to MidocoVoucher4Kickback value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoVoucher4KickbackResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoVoucher4KickbackResponse
      */
-    public function addToMidocoVoucher4Kickback(\Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback $item): self
+    public function addToMidocoVoucher4Kickback(\Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback) {
-            throw new InvalidArgumentException(sprintf('The MidocoVoucher4Kickback property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback) {
+            throw new InvalidArgumentException(sprintf('The MidocoVoucher4Kickback property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVoucher4Kickback[] = $item;
         

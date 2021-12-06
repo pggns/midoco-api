@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -117,23 +117,23 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
      * The MidocoPassengerInfosFlight
      * Meta information extracted from the WSDL
      * - ref: MidocoPassengerInfosFlight
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO $MidocoPassengerInfosFlight = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO $MidocoPassengerInfosFlight = null;
     /**
      * The MidocoPassengerInfosRail
      * Meta information extracted from the WSDL
      * - ref: MidocoPassengerInfosRail
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO $MidocoPassengerInfosRail = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO $MidocoPassengerInfosRail = null;
     /**
      * The MidocoFlightSegmentDetails4Printing
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoFlightSegmentDetails4Printing
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails4Printing[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails4Printing[]
      */
     protected ?array $MidocoFlightSegmentDetails4Printing = null;
     /**
@@ -181,11 +181,11 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
      * @param string $birthDate
      * @param bool $ignoreInPartialInvoice
      * @param string $nationality
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails4Printing[] $midocoFlightSegmentDetails4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight
+     * @param \Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails4Printing[] $midocoFlightSegmentDetails4Printing
      */
-    public function __construct(?int $positionNo = null, ?string $salutation = null, ?string $title = null, ?string $forename = null, ?string $middleName = null, ?string $name = null, ?string $age = null, ?float $singlePrice = null, ?string $ticketNumber = null, ?string $ticketType = null, ?string $ticketMedia = null, ?float $tax = null, ?float $farePrice = null, ?string $vatPercent = null, ?float $vatAmount = null, ?float $feeAmount = null, ?float $originalFarePrice = null, ?string $birthDate = null, ?bool $ignoreInPartialInvoice = null, ?string $nationality = null, ?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight = null, ?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail = null, ?array $midocoFlightSegmentDetails4Printing = null)
+    public function __construct(?int $positionNo = null, ?string $salutation = null, ?string $title = null, ?string $forename = null, ?string $middleName = null, ?string $name = null, ?string $age = null, ?float $singlePrice = null, ?string $ticketNumber = null, ?string $ticketType = null, ?string $ticketMedia = null, ?float $tax = null, ?float $farePrice = null, ?string $vatPercent = null, ?float $vatAmount = null, ?float $feeAmount = null, ?float $originalFarePrice = null, ?string $birthDate = null, ?bool $ignoreInPartialInvoice = null, ?string $nationality = null, ?\Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight = null, ?\Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail = null, ?array $midocoFlightSegmentDetails4Printing = null)
     {
         $this
             ->setPositionNo($positionNo)
@@ -223,7 +223,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set positionNo value
      * @param int $positionNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setPositionNo(?int $positionNo = null): self
     {
@@ -246,7 +246,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -269,7 +269,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setTitle(?string $title = null): self
     {
@@ -292,7 +292,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setForename(?string $forename = null): self
     {
@@ -315,7 +315,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -338,7 +338,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setName(?string $name = null): self
     {
@@ -361,7 +361,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set age value
      * @param string $age
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setAge(?string $age = null): self
     {
@@ -384,7 +384,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set singlePrice value
      * @param float $singlePrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setSinglePrice(?float $singlePrice = null): self
     {
@@ -407,7 +407,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set ticketNumber value
      * @param string $ticketNumber
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setTicketNumber(?string $ticketNumber = null): self
     {
@@ -430,7 +430,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set ticketType value
      * @param string $ticketType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setTicketType(?string $ticketType = null): self
     {
@@ -453,7 +453,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set ticketMedia value
      * @param string $ticketMedia
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setTicketMedia(?string $ticketMedia = null): self
     {
@@ -476,7 +476,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set tax value
      * @param float $tax
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setTax(?float $tax = null): self
     {
@@ -499,7 +499,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set farePrice value
      * @param float $farePrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setFarePrice(?float $farePrice = null): self
     {
@@ -522,7 +522,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param string $vatPercent
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setVatPercent(?string $vatPercent = null): self
     {
@@ -545,7 +545,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -568,7 +568,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set feeAmount value
      * @param float $feeAmount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setFeeAmount(?float $feeAmount = null): self
     {
@@ -591,7 +591,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set originalFarePrice value
      * @param float $originalFarePrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setOriginalFarePrice(?float $originalFarePrice = null): self
     {
@@ -614,7 +614,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set birthDate value
      * @param string $birthDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setBirthDate(?string $birthDate = null): self
     {
@@ -637,7 +637,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set ignoreInPartialInvoice value
      * @param bool $ignoreInPartialInvoice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setIgnoreInPartialInvoice(?bool $ignoreInPartialInvoice = null): self
     {
@@ -660,7 +660,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set nationality value
      * @param string $nationality
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setNationality(?string $nationality = null): self
     {
@@ -674,18 +674,18 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     }
     /**
      * Get MidocoPassengerInfosFlight value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO|null
      */
-    public function getMidocoPassengerInfosFlight(): ?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO
+    public function getMidocoPassengerInfosFlight(): ?\Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO
     {
         return $this->MidocoPassengerInfosFlight;
     }
     /**
      * Set MidocoPassengerInfosFlight value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
-    public function setMidocoPassengerInfosFlight(?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight = null): self
+    public function setMidocoPassengerInfosFlight(?\Pggns\MidocoApi\Documents\StructType\PassengerInfosFlightDTO $midocoPassengerInfosFlight = null): self
     {
         $this->MidocoPassengerInfosFlight = $midocoPassengerInfosFlight;
         
@@ -693,18 +693,18 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     }
     /**
      * Get MidocoPassengerInfosRail value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO|null
      */
-    public function getMidocoPassengerInfosRail(): ?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO
+    public function getMidocoPassengerInfosRail(): ?\Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO
     {
         return $this->MidocoPassengerInfosRail;
     }
     /**
      * Set MidocoPassengerInfosRail value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
-    public function setMidocoPassengerInfosRail(?\Pggns\MidocoApi\Api\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail = null): self
+    public function setMidocoPassengerInfosRail(?\Pggns\MidocoApi\Documents\StructType\PassengerInfosRailDTO $midocoPassengerInfosRail = null): self
     {
         $this->MidocoPassengerInfosRail = $midocoPassengerInfosRail;
         
@@ -712,7 +712,7 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     }
     /**
      * Get MidocoFlightSegmentDetails4Printing value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails4Printing[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails4Printing[]
      */
     public function getMidocoFlightSegmentDetails4Printing(): ?array
     {
@@ -733,12 +733,12 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoPassengerInfo4PrintingMidocoFlightSegmentDetails4PrintingItem) {
             // validation for constraint: itemType
-            if (!$midocoPassengerInfo4PrintingMidocoFlightSegmentDetails4PrintingItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails4Printing) {
+            if (!$midocoPassengerInfo4PrintingMidocoFlightSegmentDetails4PrintingItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails4Printing) {
                 $invalidValues[] = is_object($midocoPassengerInfo4PrintingMidocoFlightSegmentDetails4PrintingItem) ? get_class($midocoPassengerInfo4PrintingMidocoFlightSegmentDetails4PrintingItem) : sprintf('%s(%s)', gettype($midocoPassengerInfo4PrintingMidocoFlightSegmentDetails4PrintingItem), var_export($midocoPassengerInfo4PrintingMidocoFlightSegmentDetails4PrintingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFlightSegmentDetails4Printing property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFlightSegmentDetails4Printing property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails4Printing, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -747,8 +747,8 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Set MidocoFlightSegmentDetails4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails4Printing[] $midocoFlightSegmentDetails4Printing
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails4Printing[] $midocoFlightSegmentDetails4Printing
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
     public function setMidocoFlightSegmentDetails4Printing(?array $midocoFlightSegmentDetails4Printing = null): self
     {
@@ -763,14 +763,14 @@ class MidocoPassengerInfo4Printing extends AbstractStructBase
     /**
      * Add item to MidocoFlightSegmentDetails4Printing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails4Printing $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPassengerInfo4Printing
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails4Printing $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPassengerInfo4Printing
      */
-    public function addToMidocoFlightSegmentDetails4Printing(\Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails4Printing $item): self
+    public function addToMidocoFlightSegmentDetails4Printing(\Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails4Printing $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails4Printing) {
-            throw new InvalidArgumentException(sprintf('The MidocoFlightSegmentDetails4Printing property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails4Printing) {
+            throw new InvalidArgumentException(sprintf('The MidocoFlightSegmentDetails4Printing property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails4Printing, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFlightSegmentDetails4Printing[] = $item;
         

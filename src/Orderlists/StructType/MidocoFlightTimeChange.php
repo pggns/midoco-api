@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set oldDepartureCode value
      * @param string $oldDepartureCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setOldDepartureCode(?string $oldDepartureCode = null): self
     {
@@ -198,7 +198,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set newDepartureCode value
      * @param string $newDepartureCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setNewDepartureCode(?string $newDepartureCode = null): self
     {
@@ -221,7 +221,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set distanceToNewDeparture value
      * @param int $distanceToNewDeparture
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setDistanceToNewDeparture(?int $distanceToNewDeparture = null): self
     {
@@ -244,7 +244,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set oldDestinationCode value
      * @param string $oldDestinationCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setOldDestinationCode(?string $oldDestinationCode = null): self
     {
@@ -267,7 +267,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set newDestinationCode value
      * @param string $newDestinationCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setNewDestinationCode(?string $newDestinationCode = null): self
     {
@@ -290,7 +290,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set oldDepartureDate value
      * @param string $oldDepartureDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setOldDepartureDate(?string $oldDepartureDate = null): self
     {
@@ -313,7 +313,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set newDepartureDate value
      * @param string $newDepartureDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setNewDepartureDate(?string $newDepartureDate = null): self
     {
@@ -336,7 +336,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set departureTimeDifference value
      * @param int $departureTimeDifference
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setDepartureTimeDifference(?int $departureTimeDifference = null): self
     {
@@ -359,7 +359,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set oldArrivalDate value
      * @param string $oldArrivalDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setOldArrivalDate(?string $oldArrivalDate = null): self
     {
@@ -382,7 +382,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set newArrivalDate value
      * @param string $newArrivalDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setNewArrivalDate(?string $newArrivalDate = null): self
     {
@@ -405,7 +405,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set arrivalTimeDifference value
      * @param int $arrivalTimeDifference
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setArrivalTimeDifference(?int $arrivalTimeDifference = null): self
     {
@@ -428,7 +428,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set oldCarrier value
      * @param string $oldCarrier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setOldCarrier(?string $oldCarrier = null): self
     {
@@ -451,7 +451,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set newCarrier value
      * @param string $newCarrier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setNewCarrier(?string $newCarrier = null): self
     {
@@ -474,7 +474,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set oldFlightNo value
      * @param string $oldFlightNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setOldFlightNo(?string $oldFlightNo = null): self
     {
@@ -497,7 +497,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set newFlightNo value
      * @param string $newFlightNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setNewFlightNo(?string $newFlightNo = null): self
     {
@@ -520,7 +520,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set mailId value
      * @param string $mailId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setMailId(?string $mailId = null): self
     {
@@ -543,7 +543,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set newSubcharter value
      * @param string $newSubcharter
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setNewSubcharter(?string $newSubcharter = null): self
     {
@@ -566,7 +566,7 @@ class MidocoFlightTimeChange extends AbstractStructBase
     /**
      * Set oldSubcharter value
      * @param string $oldSubcharter
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightTimeChange
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightTimeChange
      */
     public function setOldSubcharter(?string $oldSubcharter = null): self
     {

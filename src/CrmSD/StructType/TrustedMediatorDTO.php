@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class TrustedMediatorDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TrustedMediatorDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TrustedMediatorDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -70,7 +70,7 @@ class TrustedMediatorDTO extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TrustedMediatorDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TrustedMediatorDTO
      */
     public function setPassword(?string $password = null): self
     {

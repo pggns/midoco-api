@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class UserDataSetRequest extends AbstractStructBase
     /**
      * Set dataKey value
      * @param string $dataKey
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\UserDataSetRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\UserDataSetRequest
      */
     public function setDataKey(?string $dataKey = null): self
     {
@@ -70,7 +70,7 @@ class UserDataSetRequest extends AbstractStructBase
     /**
      * Set dataValue value
      * @param string $dataValue
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\UserDataSetRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\UserDataSetRequest
      */
     public function setDataValue(?string $dataValue = null): self
     {

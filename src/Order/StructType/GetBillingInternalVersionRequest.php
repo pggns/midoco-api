@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetBillingInternalVersionRequest extends AbstractStructBase
     /**
      * Set billingId value
      * @param int $billingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingInternalVersionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingInternalVersionRequest
      */
     public function setBillingId(?int $billingId = null): self
     {

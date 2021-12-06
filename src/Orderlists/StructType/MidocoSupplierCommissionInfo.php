@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class MidocoSupplierCommissionInfo extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionInfo
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -150,7 +150,7 @@ class MidocoSupplierCommissionInfo extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionInfo
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -173,7 +173,7 @@ class MidocoSupplierCommissionInfo extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionInfo
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -196,7 +196,7 @@ class MidocoSupplierCommissionInfo extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionInfo
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -219,7 +219,7 @@ class MidocoSupplierCommissionInfo extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionInfo
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -242,7 +242,7 @@ class MidocoSupplierCommissionInfo extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionInfo
      */
     public function setStatus(?string $status = null): self
     {
@@ -265,7 +265,7 @@ class MidocoSupplierCommissionInfo extends AbstractStructBase
     /**
      * Set bookingPrice value
      * @param float $bookingPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionInfo
      */
     public function setBookingPrice(?float $bookingPrice = null): self
     {
@@ -288,7 +288,7 @@ class MidocoSupplierCommissionInfo extends AbstractStructBase
     /**
      * Set supplierCommissionAmount value
      * @param float $supplierCommissionAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionInfo
      */
     public function setSupplierCommissionAmount(?float $supplierCommissionAmount = null): self
     {
@@ -311,7 +311,7 @@ class MidocoSupplierCommissionInfo extends AbstractStructBase
     /**
      * Set originalSupplierCommissionAmount value
      * @param float $originalSupplierCommissionAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionInfo
      */
     public function setOriginalSupplierCommissionAmount(?float $originalSupplierCommissionAmount = null): self
     {
@@ -334,7 +334,7 @@ class MidocoSupplierCommissionInfo extends AbstractStructBase
     /**
      * Set calculatedCommission value
      * @param float $calculatedCommission
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionInfo
      */
     public function setCalculatedCommission(?float $calculatedCommission = null): self
     {
@@ -357,7 +357,7 @@ class MidocoSupplierCommissionInfo extends AbstractStructBase
     /**
      * Set originalCalculatedCommission value
      * @param float $originalCalculatedCommission
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionInfo
      */
     public function setOriginalCalculatedCommission(?float $originalCalculatedCommission = null): self
     {
@@ -380,7 +380,7 @@ class MidocoSupplierCommissionInfo extends AbstractStructBase
     /**
      * Set calculatedCommissionPercent value
      * @param float $calculatedCommissionPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierCommissionInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierCommissionInfo
      */
     public function setCalculatedCommissionPercent(?float $calculatedCommissionPercent = null): self
     {

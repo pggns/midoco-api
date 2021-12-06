@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class GetSequenceValuesResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SequenceContent[]
+     * @var \Pggns\MidocoApi\Order\StructType\SequenceContent[]
      */
     protected ?array $SequenceValue = null;
     /**
      * Constructor method for GetSequenceValuesResponse
      * @uses GetSequenceValuesResponse::setSequenceValue()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SequenceContent[] $sequenceValue
+     * @param \Pggns\MidocoApi\Order\StructType\SequenceContent[] $sequenceValue
      */
     public function __construct(?array $sequenceValue = null)
     {
@@ -33,7 +33,7 @@ class GetSequenceValuesResponse extends AbstractStructBase
     }
     /**
      * Get SequenceValue value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SequenceContent[]
+     * @return \Pggns\MidocoApi\Order\StructType\SequenceContent[]
      */
     public function getSequenceValue(): ?array
     {
@@ -54,12 +54,12 @@ class GetSequenceValuesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSequenceValuesResponseSequenceValueItem) {
             // validation for constraint: itemType
-            if (!$getSequenceValuesResponseSequenceValueItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SequenceContent) {
+            if (!$getSequenceValuesResponseSequenceValueItem instanceof \Pggns\MidocoApi\Order\StructType\SequenceContent) {
                 $invalidValues[] = is_object($getSequenceValuesResponseSequenceValueItem) ? get_class($getSequenceValuesResponseSequenceValueItem) : sprintf('%s(%s)', gettype($getSequenceValuesResponseSequenceValueItem), var_export($getSequenceValuesResponseSequenceValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The SequenceValue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SequenceContent, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The SequenceValue property can only contain items of type \Pggns\MidocoApi\Order\StructType\SequenceContent, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class GetSequenceValuesResponse extends AbstractStructBase
     /**
      * Set SequenceValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SequenceContent[] $sequenceValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSequenceValuesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SequenceContent[] $sequenceValue
+     * @return \Pggns\MidocoApi\Order\StructType\GetSequenceValuesResponse
      */
     public function setSequenceValue(?array $sequenceValue = null): self
     {
@@ -84,14 +84,14 @@ class GetSequenceValuesResponse extends AbstractStructBase
     /**
      * Add item to SequenceValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SequenceContent $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSequenceValuesResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SequenceContent $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetSequenceValuesResponse
      */
-    public function addToSequenceValue(\Pggns\MidocoApi\Api\Order\StructType\SequenceContent $item): self
+    public function addToSequenceValue(\Pggns\MidocoApi\Order\StructType\SequenceContent $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SequenceContent) {
-            throw new InvalidArgumentException(sprintf('The SequenceValue property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SequenceContent, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SequenceContent) {
+            throw new InvalidArgumentException(sprintf('The SequenceValue property can only contain items of type \Pggns\MidocoApi\Order\StructType\SequenceContent, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->SequenceValue[] = $item;
         

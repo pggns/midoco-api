@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class SalutationDescriptionDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalutationDescriptionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalutationDescriptionDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -94,7 +94,7 @@ class SalutationDescriptionDTO extends AbstractStructBase
     /**
      * Set letter value
      * @param string $letter
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalutationDescriptionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalutationDescriptionDTO
      */
     public function setLetter(?string $letter = null): self
     {
@@ -117,7 +117,7 @@ class SalutationDescriptionDTO extends AbstractStructBase
     /**
      * Set salutationId value
      * @param string $salutationId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalutationDescriptionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalutationDescriptionDTO
      */
     public function setSalutationId(?string $salutationId = null): self
     {
@@ -140,7 +140,7 @@ class SalutationDescriptionDTO extends AbstractStructBase
     /**
      * Set salutationText value
      * @param string $salutationText
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalutationDescriptionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalutationDescriptionDTO
      */
     public function setSalutationText(?string $salutationText = null): self
     {
@@ -163,7 +163,7 @@ class SalutationDescriptionDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalutationDescriptionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalutationDescriptionDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

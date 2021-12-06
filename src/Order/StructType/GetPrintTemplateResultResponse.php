@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class GetPrintTemplateResultResponse extends AbstractStructBase
     /**
      * Set printJobId value
      * @param int $printJobId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintTemplateResultResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintTemplateResultResponse
      */
     public function setPrintJobId(?int $printJobId = null): self
     {
@@ -86,7 +86,7 @@ class GetPrintTemplateResultResponse extends AbstractStructBase
     /**
      * Set data value
      * @param string $data
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintTemplateResultResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintTemplateResultResponse
      */
     public function setData(?string $data = null): self
     {
@@ -109,7 +109,7 @@ class GetPrintTemplateResultResponse extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintTemplateResultResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintTemplateResultResponse
      */
     public function setName(?string $name = null): self
     {
@@ -132,7 +132,7 @@ class GetPrintTemplateResultResponse extends AbstractStructBase
     /**
      * Set fopMsg value
      * @param string $fopMsg
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetPrintTemplateResultResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetPrintTemplateResultResponse
      */
     public function setFopMsg(?string $fopMsg = null): self
     {

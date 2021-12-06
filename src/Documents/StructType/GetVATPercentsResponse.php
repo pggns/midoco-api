@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetVATPercentsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVatDefinition
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition[]
      */
     protected ?array $MidocoVatDefinition = null;
     /**
      * Constructor method for GetVATPercentsResponse
      * @uses GetVATPercentsResponse::setMidocoVatDefinition()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition[] $midocoVatDefinition
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition[] $midocoVatDefinition
      */
     public function __construct(?array $midocoVatDefinition = null)
     {
@@ -34,7 +34,7 @@ class GetVATPercentsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVatDefinition value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition[]
      */
     public function getMidocoVatDefinition(): ?array
     {
@@ -55,12 +55,12 @@ class GetVATPercentsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getVATPercentsResponseMidocoVatDefinitionItem) {
             // validation for constraint: itemType
-            if (!$getVATPercentsResponseMidocoVatDefinitionItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition) {
+            if (!$getVATPercentsResponseMidocoVatDefinitionItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition) {
                 $invalidValues[] = is_object($getVATPercentsResponseMidocoVatDefinitionItem) ? get_class($getVATPercentsResponseMidocoVatDefinitionItem) : sprintf('%s(%s)', gettype($getVATPercentsResponseMidocoVatDefinitionItem), var_export($getVATPercentsResponseMidocoVatDefinitionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatDefinition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatDefinition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetVATPercentsResponse extends AbstractStructBase
     /**
      * Set MidocoVatDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition[] $midocoVatDefinition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetVATPercentsResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition[] $midocoVatDefinition
+     * @return \Pggns\MidocoApi\Documents\StructType\GetVATPercentsResponse
      */
     public function setMidocoVatDefinition(?array $midocoVatDefinition = null): self
     {
@@ -85,14 +85,14 @@ class GetVATPercentsResponse extends AbstractStructBase
     /**
      * Add item to MidocoVatDefinition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetVATPercentsResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetVATPercentsResponse
      */
-    public function addToMidocoVatDefinition(\Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition $item): self
+    public function addToMidocoVatDefinition(\Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatDefinition property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatDefinition property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatDefinition[] = $item;
         

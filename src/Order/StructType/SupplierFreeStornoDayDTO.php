@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SupplierFreeStornoDayDTO extends AbstractStructBase
     /**
      * Set daysBeforeTravel value
      * @param int $daysBeforeTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierFreeStornoDayDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierFreeStornoDayDTO
      */
     public function setDaysBeforeTravel(?int $daysBeforeTravel = null): self
     {
@@ -78,7 +78,7 @@ class SupplierFreeStornoDayDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierFreeStornoDayDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierFreeStornoDayDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -101,7 +101,7 @@ class SupplierFreeStornoDayDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierFreeStornoDayDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierFreeStornoDayDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

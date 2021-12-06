@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetCcOnlinePaymentReferenceDataResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: CcOnlinePaymentReferenceData
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CcOnlinePaymentReferenceData|null
+     * @var \Pggns\MidocoApi\Order\StructType\CcOnlinePaymentReferenceData|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\CcOnlinePaymentReferenceData $CcOnlinePaymentReferenceData = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\CcOnlinePaymentReferenceData $CcOnlinePaymentReferenceData = null;
     /**
      * Constructor method for GetCcOnlinePaymentReferenceDataResponse
      * @uses GetCcOnlinePaymentReferenceDataResponse::setCcOnlinePaymentReferenceData()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CcOnlinePaymentReferenceData $ccOnlinePaymentReferenceData
+     * @param \Pggns\MidocoApi\Order\StructType\CcOnlinePaymentReferenceData $ccOnlinePaymentReferenceData
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\CcOnlinePaymentReferenceData $ccOnlinePaymentReferenceData = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\CcOnlinePaymentReferenceData $ccOnlinePaymentReferenceData = null)
     {
         $this
             ->setCcOnlinePaymentReferenceData($ccOnlinePaymentReferenceData);
     }
     /**
      * Get CcOnlinePaymentReferenceData value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CcOnlinePaymentReferenceData|null
+     * @return \Pggns\MidocoApi\Order\StructType\CcOnlinePaymentReferenceData|null
      */
-    public function getCcOnlinePaymentReferenceData(): ?\Pggns\MidocoApi\Api\Order\StructType\CcOnlinePaymentReferenceData
+    public function getCcOnlinePaymentReferenceData(): ?\Pggns\MidocoApi\Order\StructType\CcOnlinePaymentReferenceData
     {
         return $this->CcOnlinePaymentReferenceData;
     }
     /**
      * Set CcOnlinePaymentReferenceData value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CcOnlinePaymentReferenceData $ccOnlinePaymentReferenceData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCcOnlinePaymentReferenceDataResponse
+     * @param \Pggns\MidocoApi\Order\StructType\CcOnlinePaymentReferenceData $ccOnlinePaymentReferenceData
+     * @return \Pggns\MidocoApi\Order\StructType\GetCcOnlinePaymentReferenceDataResponse
      */
-    public function setCcOnlinePaymentReferenceData(?\Pggns\MidocoApi\Api\Order\StructType\CcOnlinePaymentReferenceData $ccOnlinePaymentReferenceData = null): self
+    public function setCcOnlinePaymentReferenceData(?\Pggns\MidocoApi\Order\StructType\CcOnlinePaymentReferenceData $ccOnlinePaymentReferenceData = null): self
     {
         $this->CcOnlinePaymentReferenceData = $ccOnlinePaymentReferenceData;
         

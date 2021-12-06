@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class TaskViewDescriptionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewDescriptionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewDescriptionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -78,7 +78,7 @@ class TaskViewDescriptionDTO extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewDescriptionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewDescriptionDTO
      */
     public function setLocale(?string $locale = null): self
     {
@@ -101,7 +101,7 @@ class TaskViewDescriptionDTO extends AbstractStructBase
     /**
      * Set taskViewName value
      * @param string $taskViewName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskViewDescriptionDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskViewDescriptionDTO
      */
     public function setTaskViewName(?string $taskViewName = null): self
     {

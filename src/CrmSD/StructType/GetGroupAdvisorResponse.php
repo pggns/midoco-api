@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetGroupAdvisorResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoGroupAdviser
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGroupAdviser[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupAdviser[]
      */
     protected ?array $MidocoGroupAdviser = null;
     /**
      * Constructor method for GetGroupAdvisorResponse
      * @uses GetGroupAdvisorResponse::setMidocoGroupAdviser()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGroupAdviser[] $midocoGroupAdviser
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupAdviser[] $midocoGroupAdviser
      */
     public function __construct(?array $midocoGroupAdviser = null)
     {
@@ -34,7 +34,7 @@ class GetGroupAdvisorResponse extends AbstractStructBase
     }
     /**
      * Get MidocoGroupAdviser value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGroupAdviser[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupAdviser[]
      */
     public function getMidocoGroupAdviser(): ?array
     {
@@ -55,12 +55,12 @@ class GetGroupAdvisorResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getGroupAdvisorResponseMidocoGroupAdviserItem) {
             // validation for constraint: itemType
-            if (!$getGroupAdvisorResponseMidocoGroupAdviserItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGroupAdviser) {
+            if (!$getGroupAdvisorResponseMidocoGroupAdviserItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupAdviser) {
                 $invalidValues[] = is_object($getGroupAdvisorResponseMidocoGroupAdviserItem) ? get_class($getGroupAdvisorResponseMidocoGroupAdviserItem) : sprintf('%s(%s)', gettype($getGroupAdvisorResponseMidocoGroupAdviserItem), var_export($getGroupAdvisorResponseMidocoGroupAdviserItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoGroupAdviser property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGroupAdviser, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoGroupAdviser property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupAdviser, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetGroupAdvisorResponse extends AbstractStructBase
     /**
      * Set MidocoGroupAdviser value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGroupAdviser[] $midocoGroupAdviser
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetGroupAdvisorResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupAdviser[] $midocoGroupAdviser
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetGroupAdvisorResponse
      */
     public function setMidocoGroupAdviser(?array $midocoGroupAdviser = null): self
     {
@@ -85,14 +85,14 @@ class GetGroupAdvisorResponse extends AbstractStructBase
     /**
      * Add item to MidocoGroupAdviser value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGroupAdviser $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetGroupAdvisorResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupAdviser $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetGroupAdvisorResponse
      */
-    public function addToMidocoGroupAdviser(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGroupAdviser $item): self
+    public function addToMidocoGroupAdviser(\Pggns\MidocoApi\CrmSD\StructType\MidocoGroupAdviser $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGroupAdviser) {
-            throw new InvalidArgumentException(sprintf('The MidocoGroupAdviser property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoGroupAdviser, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupAdviser) {
+            throw new InvalidArgumentException(sprintf('The MidocoGroupAdviser property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupAdviser, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoGroupAdviser[] = $item;
         

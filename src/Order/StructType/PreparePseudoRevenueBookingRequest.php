@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class PreparePseudoRevenueBookingRequest extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -94,7 +94,7 @@ class PreparePseudoRevenueBookingRequest extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -117,7 +117,7 @@ class PreparePseudoRevenueBookingRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -140,7 +140,7 @@ class PreparePseudoRevenueBookingRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -163,7 +163,7 @@ class PreparePseudoRevenueBookingRequest extends AbstractStructBase
     /**
      * Set listBookingsWithInvoice value
      * @param bool $listBookingsWithInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest
      */
     public function setListBookingsWithInvoice(?bool $listBookingsWithInvoice = null): self
     {

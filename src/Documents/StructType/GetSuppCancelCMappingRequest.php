@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetSuppCancelCMappingRequest extends AbstractStructBase
     /**
      * Set suppCancelCMappingId value
      * @param int $suppCancelCMappingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetSuppCancelCMappingRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetSuppCancelCMappingRequest
      */
     public function setSuppCancelCMappingId(?int $suppCancelCMappingId = null): self
     {

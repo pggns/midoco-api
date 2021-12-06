@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetOrdersForTravellerResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTravellerOrderInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoTravellerOrderInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoTravellerOrderInfo[]
      */
     protected ?array $MidocoTravellerOrderInfo = null;
     /**
      * Constructor method for GetOrdersForTravellerResponse
      * @uses GetOrdersForTravellerResponse::setMidocoTravellerOrderInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravellerOrderInfo[] $midocoTravellerOrderInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravellerOrderInfo[] $midocoTravellerOrderInfo
      */
     public function __construct(?array $midocoTravellerOrderInfo = null)
     {
@@ -34,7 +34,7 @@ class GetOrdersForTravellerResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTravellerOrderInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoTravellerOrderInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTravellerOrderInfo[]
      */
     public function getMidocoTravellerOrderInfo(): ?array
     {
@@ -55,12 +55,12 @@ class GetOrdersForTravellerResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrdersForTravellerResponseMidocoTravellerOrderInfoItem) {
             // validation for constraint: itemType
-            if (!$getOrdersForTravellerResponseMidocoTravellerOrderInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTravellerOrderInfo) {
+            if (!$getOrdersForTravellerResponseMidocoTravellerOrderInfoItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoTravellerOrderInfo) {
                 $invalidValues[] = is_object($getOrdersForTravellerResponseMidocoTravellerOrderInfoItem) ? get_class($getOrdersForTravellerResponseMidocoTravellerOrderInfoItem) : sprintf('%s(%s)', gettype($getOrdersForTravellerResponseMidocoTravellerOrderInfoItem), var_export($getOrdersForTravellerResponseMidocoTravellerOrderInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTravellerOrderInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTravellerOrderInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTravellerOrderInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTravellerOrderInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetOrdersForTravellerResponse extends AbstractStructBase
     /**
      * Set MidocoTravellerOrderInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravellerOrderInfo[] $midocoTravellerOrderInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrdersForTravellerResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravellerOrderInfo[] $midocoTravellerOrderInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrdersForTravellerResponse
      */
     public function setMidocoTravellerOrderInfo(?array $midocoTravellerOrderInfo = null): self
     {
@@ -85,14 +85,14 @@ class GetOrdersForTravellerResponse extends AbstractStructBase
     /**
      * Add item to MidocoTravellerOrderInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoTravellerOrderInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrdersForTravellerResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoTravellerOrderInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrdersForTravellerResponse
      */
-    public function addToMidocoTravellerOrderInfo(\Pggns\MidocoApi\Api\Order\StructType\MidocoTravellerOrderInfo $item): self
+    public function addToMidocoTravellerOrderInfo(\Pggns\MidocoApi\Order\StructType\MidocoTravellerOrderInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoTravellerOrderInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoTravellerOrderInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoTravellerOrderInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoTravellerOrderInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravellerOrderInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoTravellerOrderInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTravellerOrderInfo[] = $item;
         

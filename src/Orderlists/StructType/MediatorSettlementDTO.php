@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -143,7 +143,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -166,7 +166,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set addlDocumentId value
      * @param int $addlDocumentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setAddlDocumentId(?int $addlDocumentId = null): self
     {
@@ -189,7 +189,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set created value
      * @param string $created
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setCreated(?string $created = null): self
     {
@@ -212,7 +212,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set creatingUser value
      * @param int $creatingUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setCreatingUser(?int $creatingUser = null): self
     {
@@ -235,7 +235,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -258,7 +258,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setId(?int $id = null): self
     {
@@ -281,7 +281,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set isPreview value
      * @param bool $isPreview
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setIsPreview(?bool $isPreview = null): self
     {
@@ -304,7 +304,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -327,7 +327,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -350,7 +350,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setPlanId(?string $planId = null): self
     {
@@ -373,7 +373,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setTravelNo(?string $travelNo = null): self
     {
@@ -396,7 +396,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -419,7 +419,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set vatAmount value
      * @param float $vatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setVatAmount(?float $vatAmount = null): self
     {
@@ -442,7 +442,7 @@ class MediatorSettlementDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorSettlementDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorSettlementDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {

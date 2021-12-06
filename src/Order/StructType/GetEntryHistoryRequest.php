@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetEntryHistoryRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: EntryCriteria
-     * @var \Pggns\MidocoApi\Api\Order\StructType\EntryCriteria[]
+     * @var \Pggns\MidocoApi\Order\StructType\EntryCriteria[]
      */
     protected ?array $EntryCriteria = null;
     /**
@@ -43,7 +43,7 @@ class GetEntryHistoryRequest extends AbstractStructBase
      * @uses GetEntryHistoryRequest::setEntryId()
      * @uses GetEntryHistoryRequest::setAccountId()
      * @uses GetEntryHistoryRequest::setPlanId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\EntryCriteria[] $entryCriteria
+     * @param \Pggns\MidocoApi\Order\StructType\EntryCriteria[] $entryCriteria
      * @param string $entryId
      * @param string $accountId
      * @param string $planId
@@ -58,7 +58,7 @@ class GetEntryHistoryRequest extends AbstractStructBase
     }
     /**
      * Get EntryCriteria value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\EntryCriteria[]
+     * @return \Pggns\MidocoApi\Order\StructType\EntryCriteria[]
      */
     public function getEntryCriteria(): ?array
     {
@@ -79,12 +79,12 @@ class GetEntryHistoryRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getEntryHistoryRequestEntryCriteriaItem) {
             // validation for constraint: itemType
-            if (!$getEntryHistoryRequestEntryCriteriaItem instanceof \Pggns\MidocoApi\Api\Order\StructType\EntryCriteria) {
+            if (!$getEntryHistoryRequestEntryCriteriaItem instanceof \Pggns\MidocoApi\Order\StructType\EntryCriteria) {
                 $invalidValues[] = is_object($getEntryHistoryRequestEntryCriteriaItem) ? get_class($getEntryHistoryRequestEntryCriteriaItem) : sprintf('%s(%s)', gettype($getEntryHistoryRequestEntryCriteriaItem), var_export($getEntryHistoryRequestEntryCriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The EntryCriteria property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\EntryCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The EntryCriteria property can only contain items of type \Pggns\MidocoApi\Order\StructType\EntryCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -93,8 +93,8 @@ class GetEntryHistoryRequest extends AbstractStructBase
     /**
      * Set EntryCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\EntryCriteria[] $entryCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEntryHistoryRequest
+     * @param \Pggns\MidocoApi\Order\StructType\EntryCriteria[] $entryCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\GetEntryHistoryRequest
      */
     public function setEntryCriteria(?array $entryCriteria = null): self
     {
@@ -109,14 +109,14 @@ class GetEntryHistoryRequest extends AbstractStructBase
     /**
      * Add item to EntryCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\EntryCriteria $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEntryHistoryRequest
+     * @param \Pggns\MidocoApi\Order\StructType\EntryCriteria $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetEntryHistoryRequest
      */
-    public function addToEntryCriteria(\Pggns\MidocoApi\Api\Order\StructType\EntryCriteria $item): self
+    public function addToEntryCriteria(\Pggns\MidocoApi\Order\StructType\EntryCriteria $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\EntryCriteria) {
-            throw new InvalidArgumentException(sprintf('The EntryCriteria property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\EntryCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\EntryCriteria) {
+            throw new InvalidArgumentException(sprintf('The EntryCriteria property can only contain items of type \Pggns\MidocoApi\Order\StructType\EntryCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->EntryCriteria[] = $item;
         
@@ -133,7 +133,7 @@ class GetEntryHistoryRequest extends AbstractStructBase
     /**
      * Set entryId value
      * @param string $entryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEntryHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEntryHistoryRequest
      */
     public function setEntryId(?string $entryId = null): self
     {
@@ -156,7 +156,7 @@ class GetEntryHistoryRequest extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEntryHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEntryHistoryRequest
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -179,7 +179,7 @@ class GetEntryHistoryRequest extends AbstractStructBase
     /**
      * Set planId value
      * @param string $planId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetEntryHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetEntryHistoryRequest
      */
     public function setPlanId(?string $planId = null): self
     {

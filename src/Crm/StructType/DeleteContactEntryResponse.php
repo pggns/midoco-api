@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class DeleteContactEntryResponse extends AbstractStructBase
      * Set errors value
      * @throws InvalidArgumentException
      * @param string[] $errors
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteContactEntryResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteContactEntryResponse
      */
     public function setErrors(?array $errors = null): self
     {
@@ -95,7 +95,7 @@ class DeleteContactEntryResponse extends AbstractStructBase
      * Add item to errors value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteContactEntryResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteContactEntryResponse
      */
     public function addToErrors(string $item): self
     {
@@ -118,7 +118,7 @@ class DeleteContactEntryResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteContactEntryResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteContactEntryResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

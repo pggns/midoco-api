@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveSupplierShipNameRequest extends AbstractStructBase
      * The MidocoSupplierShipName
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierShipName
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\SupplierShipNameDTO|null
+     * @var \Pggns\MidocoApi\Documents\StructType\SupplierShipNameDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\SupplierShipNameDTO $MidocoSupplierShipName = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\SupplierShipNameDTO $MidocoSupplierShipName = null;
     /**
      * Constructor method for SaveSupplierShipNameRequest
      * @uses SaveSupplierShipNameRequest::setMidocoSupplierShipName()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SupplierShipNameDTO $midocoSupplierShipName
+     * @param \Pggns\MidocoApi\Documents\StructType\SupplierShipNameDTO $midocoSupplierShipName
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\SupplierShipNameDTO $midocoSupplierShipName = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\SupplierShipNameDTO $midocoSupplierShipName = null)
     {
         $this
             ->setMidocoSupplierShipName($midocoSupplierShipName);
     }
     /**
      * Get MidocoSupplierShipName value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplierShipNameDTO|null
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplierShipNameDTO|null
      */
-    public function getMidocoSupplierShipName(): ?\Pggns\MidocoApi\Api\Documents\StructType\SupplierShipNameDTO
+    public function getMidocoSupplierShipName(): ?\Pggns\MidocoApi\Documents\StructType\SupplierShipNameDTO
     {
         return $this->MidocoSupplierShipName;
     }
     /**
      * Set MidocoSupplierShipName value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SupplierShipNameDTO $midocoSupplierShipName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveSupplierShipNameRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\SupplierShipNameDTO $midocoSupplierShipName
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveSupplierShipNameRequest
      */
-    public function setMidocoSupplierShipName(?\Pggns\MidocoApi\Api\Documents\StructType\SupplierShipNameDTO $midocoSupplierShipName = null): self
+    public function setMidocoSupplierShipName(?\Pggns\MidocoApi\Documents\StructType\SupplierShipNameDTO $midocoSupplierShipName = null): self
     {
         $this->MidocoSupplierShipName = $midocoSupplierShipName;
         

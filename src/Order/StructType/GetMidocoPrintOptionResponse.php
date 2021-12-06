@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMidocoPrintOptionResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPrintOption
-     * @var \Pggns\MidocoApi\Api\Order\StructType\PrintOptionDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\PrintOptionDTO[]
      */
     protected ?array $MidocoPrintOption = null;
     /**
      * Constructor method for GetMidocoPrintOptionResponse
      * @uses GetMidocoPrintOptionResponse::setMidocoPrintOption()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrintOptionDTO[] $midocoPrintOption
+     * @param \Pggns\MidocoApi\Order\StructType\PrintOptionDTO[] $midocoPrintOption
      */
     public function __construct(?array $midocoPrintOption = null)
     {
@@ -34,7 +34,7 @@ class GetMidocoPrintOptionResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPrintOption value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOptionDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOptionDTO[]
      */
     public function getMidocoPrintOption(): ?array
     {
@@ -55,12 +55,12 @@ class GetMidocoPrintOptionResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoPrintOptionResponseMidocoPrintOptionItem) {
             // validation for constraint: itemType
-            if (!$getMidocoPrintOptionResponseMidocoPrintOptionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\PrintOptionDTO) {
+            if (!$getMidocoPrintOptionResponseMidocoPrintOptionItem instanceof \Pggns\MidocoApi\Order\StructType\PrintOptionDTO) {
                 $invalidValues[] = is_object($getMidocoPrintOptionResponseMidocoPrintOptionItem) ? get_class($getMidocoPrintOptionResponseMidocoPrintOptionItem) : sprintf('%s(%s)', gettype($getMidocoPrintOptionResponseMidocoPrintOptionItem), var_export($getMidocoPrintOptionResponseMidocoPrintOptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintOption property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\PrintOptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintOption property can only contain items of type \Pggns\MidocoApi\Order\StructType\PrintOptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMidocoPrintOptionResponse extends AbstractStructBase
     /**
      * Set MidocoPrintOption value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrintOptionDTO[] $midocoPrintOption
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoPrintOptionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\PrintOptionDTO[] $midocoPrintOption
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoPrintOptionResponse
      */
     public function setMidocoPrintOption(?array $midocoPrintOption = null): self
     {
@@ -85,14 +85,14 @@ class GetMidocoPrintOptionResponse extends AbstractStructBase
     /**
      * Add item to MidocoPrintOption value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrintOptionDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoPrintOptionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\PrintOptionDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoPrintOptionResponse
      */
-    public function addToMidocoPrintOption(\Pggns\MidocoApi\Api\Order\StructType\PrintOptionDTO $item): self
+    public function addToMidocoPrintOption(\Pggns\MidocoApi\Order\StructType\PrintOptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\PrintOptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintOption property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\PrintOptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\PrintOptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintOption property can only contain items of type \Pggns\MidocoApi\Order\StructType\PrintOptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintOption[] = $item;
         

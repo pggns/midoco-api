@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -167,7 +167,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -190,7 +190,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -213,7 +213,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set documentDate value
      * @param string $documentDate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setDocumentDate(?string $documentDate = null): self
     {
@@ -236,7 +236,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set documentExportDate value
      * @param string $documentExportDate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setDocumentExportDate(?string $documentExportDate = null): self
     {
@@ -259,7 +259,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -282,7 +282,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set documentName value
      * @param string $documentName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setDocumentName(?string $documentName = null): self
     {
@@ -305,7 +305,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -328,7 +328,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set documentSize value
      * @param int $documentSize
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setDocumentSize(?int $documentSize = null): self
     {
@@ -351,7 +351,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -374,7 +374,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set isDocumentExported value
      * @param bool $isDocumentExported
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setIsDocumentExported(?bool $isDocumentExported = null): self
     {
@@ -397,7 +397,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set isLink value
      * @param bool $isLink
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setIsLink(?bool $isLink = null): self
     {
@@ -420,7 +420,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set isManual value
      * @param bool $isManual
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setIsManual(?bool $isManual = null): self
     {
@@ -443,7 +443,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set linkParameter value
      * @param string $linkParameter
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setLinkParameter(?string $linkParameter = null): self
     {
@@ -466,7 +466,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set linkType value
      * @param string $linkType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setLinkType(?string $linkType = null): self
     {
@@ -489,7 +489,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -512,7 +512,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {
@@ -535,7 +535,7 @@ class CrmDocumentDTO extends AbstractStructBase
     /**
      * Set uploadDate value
      * @param string $uploadDate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmDocumentDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentDTO
      */
     public function setUploadDate(?string $uploadDate = null): self
     {

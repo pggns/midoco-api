@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class BillingPaymentDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPaymentDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -94,7 +94,7 @@ class BillingPaymentDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPaymentDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -117,7 +117,7 @@ class BillingPaymentDTO extends AbstractStructBase
     /**
      * Set ignoreUnderOverPayment value
      * @param bool $ignoreUnderOverPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPaymentDTO
      */
     public function setIgnoreUnderOverPayment(?bool $ignoreUnderOverPayment = null): self
     {
@@ -140,7 +140,7 @@ class BillingPaymentDTO extends AbstractStructBase
     /**
      * Set paymentDate value
      * @param string $paymentDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPaymentDTO
      */
     public function setPaymentDate(?string $paymentDate = null): self
     {
@@ -163,7 +163,7 @@ class BillingPaymentDTO extends AbstractStructBase
     /**
      * Set paymentId value
      * @param int $paymentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingPaymentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingPaymentDTO
      */
     public function setPaymentId(?int $paymentId = null): self
     {

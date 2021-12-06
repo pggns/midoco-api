@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class SearchJasperReportResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:MidocoJasperReportExt
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportExt[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportExt[]
      */
     protected ?array $MidocoJasperReportExt = null;
     /**
      * Constructor method for SearchJasperReportResponse
      * @uses SearchJasperReportResponse::setMidocoJasperReportExt()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportExt[] $midocoJasperReportExt
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportExt[] $midocoJasperReportExt
      */
     public function __construct(?array $midocoJasperReportExt = null)
     {
@@ -36,7 +36,7 @@ class SearchJasperReportResponse extends AbstractStructBase
     }
     /**
      * Get MidocoJasperReportExt value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportExt[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportExt[]
      */
     public function getMidocoJasperReportExt(): ?array
     {
@@ -57,12 +57,12 @@ class SearchJasperReportResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchJasperReportResponseMidocoJasperReportExtItem) {
             // validation for constraint: itemType
-            if (!$searchJasperReportResponseMidocoJasperReportExtItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportExt) {
+            if (!$searchJasperReportResponseMidocoJasperReportExtItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportExt) {
                 $invalidValues[] = is_object($searchJasperReportResponseMidocoJasperReportExtItem) ? get_class($searchJasperReportResponseMidocoJasperReportExtItem) : sprintf('%s(%s)', gettype($searchJasperReportResponseMidocoJasperReportExtItem), var_export($searchJasperReportResponseMidocoJasperReportExtItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoJasperReportExt property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportExt, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoJasperReportExt property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportExt, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class SearchJasperReportResponse extends AbstractStructBase
     /**
      * Set MidocoJasperReportExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportExt[] $midocoJasperReportExt
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchJasperReportResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportExt[] $midocoJasperReportExt
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchJasperReportResponse
      */
     public function setMidocoJasperReportExt(?array $midocoJasperReportExt = null): self
     {
@@ -87,14 +87,14 @@ class SearchJasperReportResponse extends AbstractStructBase
     /**
      * Add item to MidocoJasperReportExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportExt $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SearchJasperReportResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportExt $item
+     * @return \Pggns\MidocoApi\Mis\StructType\SearchJasperReportResponse
      */
-    public function addToMidocoJasperReportExt(\Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportExt $item): self
+    public function addToMidocoJasperReportExt(\Pggns\MidocoApi\Mis\StructType\MidocoJasperReportExt $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportExt) {
-            throw new InvalidArgumentException(sprintf('The MidocoJasperReportExt property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoJasperReportExt, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportExt) {
+            throw new InvalidArgumentException(sprintf('The MidocoJasperReportExt property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoJasperReportExt, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoJasperReportExt[] = $item;
         

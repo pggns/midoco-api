@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class EditAgencyCommissionRequest extends AbstractStructBase
      * The MidocoAgencyCommission
      * Meta information extracted from the WSDL
      * - ref: MidocoAgencyCommission
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO $MidocoAgencyCommission = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $MidocoAgencyCommission = null;
     /**
      * The customerId
      * @var int|null
@@ -41,12 +41,12 @@ class EditAgencyCommissionRequest extends AbstractStructBase
      * @uses EditAgencyCommissionRequest::setCustomerId()
      * @uses EditAgencyCommissionRequest::setValidFrom()
      * @uses EditAgencyCommissionRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO $midocoAgencyCommission
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $midocoAgencyCommission
      * @param int $customerId
      * @param string $validFrom
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO $midocoAgencyCommission = null, ?int $customerId = null, ?string $validFrom = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $midocoAgencyCommission = null, ?int $customerId = null, ?string $validFrom = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoAgencyCommission($midocoAgencyCommission)
@@ -56,18 +56,18 @@ class EditAgencyCommissionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAgencyCommission value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO|null
      */
-    public function getMidocoAgencyCommission(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO
+    public function getMidocoAgencyCommission(): ?\Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO
     {
         return $this->MidocoAgencyCommission;
     }
     /**
      * Set MidocoAgencyCommission value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO $midocoAgencyCommission
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\EditAgencyCommissionRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $midocoAgencyCommission
+     * @return \Pggns\MidocoApi\CrmSD\StructType\EditAgencyCommissionRequest
      */
-    public function setMidocoAgencyCommission(?\Pggns\MidocoApi\Api\CrmSD\StructType\AgencyCommissionDTO $midocoAgencyCommission = null): self
+    public function setMidocoAgencyCommission(?\Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $midocoAgencyCommission = null): self
     {
         $this->MidocoAgencyCommission = $midocoAgencyCommission;
         
@@ -84,7 +84,7 @@ class EditAgencyCommissionRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\EditAgencyCommissionRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\EditAgencyCommissionRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -107,7 +107,7 @@ class EditAgencyCommissionRequest extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\EditAgencyCommissionRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\EditAgencyCommissionRequest
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -130,7 +130,7 @@ class EditAgencyCommissionRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\EditAgencyCommissionRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\EditAgencyCommissionRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

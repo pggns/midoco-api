@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetExportMessages4OrderRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExportMessages4OrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExportMessages4OrderRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -72,7 +72,7 @@ class GetExportMessages4OrderRequest extends AbstractStructBase
     /**
      * Set messageType value
      * @param string $messageType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExportMessages4OrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExportMessages4OrderRequest
      */
     public function setMessageType(?string $messageType = null): self
     {

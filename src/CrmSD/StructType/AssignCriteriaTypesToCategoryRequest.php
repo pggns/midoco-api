@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -26,7 +26,7 @@ class AssignCriteriaTypesToCategoryRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCriteriaTypeInfo
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCriteriaTypeInfo[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaTypeInfo[]
      */
     protected ?array $MidocoCriteriaTypeInfo = null;
     /**
@@ -34,7 +34,7 @@ class AssignCriteriaTypesToCategoryRequest extends AbstractStructBase
      * @uses AssignCriteriaTypesToCategoryRequest::setCategoryId()
      * @uses AssignCriteriaTypesToCategoryRequest::setMidocoCriteriaTypeInfo()
      * @param int $categoryId
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCriteriaTypeInfo[] $midocoCriteriaTypeInfo
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaTypeInfo[] $midocoCriteriaTypeInfo
      */
     public function __construct(int $categoryId, ?array $midocoCriteriaTypeInfo = null)
     {
@@ -53,7 +53,7 @@ class AssignCriteriaTypesToCategoryRequest extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignCriteriaTypesToCategoryRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignCriteriaTypesToCategoryRequest
      */
     public function setCategoryId(int $categoryId): self
     {
@@ -67,7 +67,7 @@ class AssignCriteriaTypesToCategoryRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCriteriaTypeInfo value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCriteriaTypeInfo[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaTypeInfo[]
      */
     public function getMidocoCriteriaTypeInfo(): ?array
     {
@@ -88,12 +88,12 @@ class AssignCriteriaTypesToCategoryRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $assignCriteriaTypesToCategoryRequestMidocoCriteriaTypeInfoItem) {
             // validation for constraint: itemType
-            if (!$assignCriteriaTypesToCategoryRequestMidocoCriteriaTypeInfoItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCriteriaTypeInfo) {
+            if (!$assignCriteriaTypesToCategoryRequestMidocoCriteriaTypeInfoItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaTypeInfo) {
                 $invalidValues[] = is_object($assignCriteriaTypesToCategoryRequestMidocoCriteriaTypeInfoItem) ? get_class($assignCriteriaTypesToCategoryRequestMidocoCriteriaTypeInfoItem) : sprintf('%s(%s)', gettype($assignCriteriaTypesToCategoryRequestMidocoCriteriaTypeInfoItem), var_export($assignCriteriaTypesToCategoryRequestMidocoCriteriaTypeInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCriteriaTypeInfo property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCriteriaTypeInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCriteriaTypeInfo property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaTypeInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -102,8 +102,8 @@ class AssignCriteriaTypesToCategoryRequest extends AbstractStructBase
     /**
      * Set MidocoCriteriaTypeInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCriteriaTypeInfo[] $midocoCriteriaTypeInfo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignCriteriaTypesToCategoryRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaTypeInfo[] $midocoCriteriaTypeInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignCriteriaTypesToCategoryRequest
      */
     public function setMidocoCriteriaTypeInfo(?array $midocoCriteriaTypeInfo = null): self
     {
@@ -118,14 +118,14 @@ class AssignCriteriaTypesToCategoryRequest extends AbstractStructBase
     /**
      * Add item to MidocoCriteriaTypeInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCriteriaTypeInfo $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignCriteriaTypesToCategoryRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaTypeInfo $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignCriteriaTypesToCategoryRequest
      */
-    public function addToMidocoCriteriaTypeInfo(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCriteriaTypeInfo $item): self
+    public function addToMidocoCriteriaTypeInfo(\Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaTypeInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCriteriaTypeInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoCriteriaTypeInfo property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCriteriaTypeInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaTypeInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoCriteriaTypeInfo property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaTypeInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCriteriaTypeInfo[] = $item;
         

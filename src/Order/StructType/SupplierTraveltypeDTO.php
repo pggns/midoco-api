@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SupplierTraveltypeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -78,7 +78,7 @@ class SupplierTraveltypeDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -101,7 +101,7 @@ class SupplierTraveltypeDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierTraveltypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierTraveltypeDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {

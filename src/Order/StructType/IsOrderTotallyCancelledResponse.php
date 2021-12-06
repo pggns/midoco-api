@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class IsOrderTotallyCancelledResponse extends AbstractStructBase
     /**
      * Set isTotallyCancelled value
      * @param bool $isTotallyCancelled
-     * @return \Pggns\MidocoApi\Api\Order\StructType\IsOrderTotallyCancelledResponse
+     * @return \Pggns\MidocoApi\Order\StructType\IsOrderTotallyCancelledResponse
      */
     public function setIsTotallyCancelled(?bool $isTotallyCancelled = null): self
     {

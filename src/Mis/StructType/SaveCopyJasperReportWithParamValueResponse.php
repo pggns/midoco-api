@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class SaveCopyJasperReportWithParamValueResponse extends AbstractStructBase
     /**
      * Set versionId value
      * @param int $versionId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SaveCopyJasperReportWithParamValueResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\SaveCopyJasperReportWithParamValueResponse
      */
     public function setVersionId(?int $versionId = null): self
     {

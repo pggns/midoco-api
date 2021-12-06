@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class AddCampaignToCampaignRequest extends AbstractStructBase
     /**
      * Set sourceCampaignId value
      * @param int $sourceCampaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AddCampaignToCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\AddCampaignToCampaignRequest
      */
     public function setSourceCampaignId(?int $sourceCampaignId = null): self
     {
@@ -86,7 +86,7 @@ class AddCampaignToCampaignRequest extends AbstractStructBase
     /**
      * Set sourceOrgUnit value
      * @param string $sourceOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AddCampaignToCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\AddCampaignToCampaignRequest
      */
     public function setSourceOrgUnit(?string $sourceOrgUnit = null): self
     {
@@ -109,7 +109,7 @@ class AddCampaignToCampaignRequest extends AbstractStructBase
     /**
      * Set destinationCampaignId value
      * @param int $destinationCampaignId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AddCampaignToCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\AddCampaignToCampaignRequest
      */
     public function setDestinationCampaignId(?int $destinationCampaignId = null): self
     {
@@ -132,7 +132,7 @@ class AddCampaignToCampaignRequest extends AbstractStructBase
     /**
      * Set destinationOrgUnit value
      * @param string $destinationOrgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\AddCampaignToCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\AddCampaignToCampaignRequest
      */
     public function setDestinationOrgUnit(?string $destinationOrgUnit = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SuppChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -86,7 +86,7 @@ class SuppChangeLogDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppChangeLogDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -109,7 +109,7 @@ class SuppChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -132,7 +132,7 @@ class SuppChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SuppChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SuppChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

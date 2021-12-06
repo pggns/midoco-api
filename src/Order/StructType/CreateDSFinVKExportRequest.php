@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -100,7 +100,7 @@ class CreateDSFinVKExportRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -150,7 +150,7 @@ class CreateDSFinVKExportRequest extends AbstractStructBase
      * Set cashBookId value
      * @throws InvalidArgumentException
      * @param int[] $cashBookId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportRequest
      */
     public function setCashBookId(?array $cashBookId = null): self
     {
@@ -166,7 +166,7 @@ class CreateDSFinVKExportRequest extends AbstractStructBase
      * Add item to cashBookId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportRequest
      */
     public function addToCashBookId(int $item): self
     {
@@ -189,7 +189,7 @@ class CreateDSFinVKExportRequest extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportRequest
      */
     public function setTssId(?string $tssId = null): self
     {
@@ -212,7 +212,7 @@ class CreateDSFinVKExportRequest extends AbstractStructBase
     /**
      * Set complete value
      * @param bool $complete
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportRequest
      */
     public function setComplete(?bool $complete = null): self
     {
@@ -235,7 +235,7 @@ class CreateDSFinVKExportRequest extends AbstractStructBase
     /**
      * Set cashBalanceDateFrom value
      * @param string $cashBalanceDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportRequest
      */
     public function setCashBalanceDateFrom(?string $cashBalanceDateFrom = null): self
     {
@@ -258,7 +258,7 @@ class CreateDSFinVKExportRequest extends AbstractStructBase
     /**
      * Set cashBalanceDateTo value
      * @param string $cashBalanceDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportRequest
      */
     public function setCashBalanceDateTo(?string $cashBalanceDateTo = null): self
     {
@@ -281,7 +281,7 @@ class CreateDSFinVKExportRequest extends AbstractStructBase
     /**
      * Set cashBalanceNoFrom value
      * @param int $cashBalanceNoFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportRequest
      */
     public function setCashBalanceNoFrom(?int $cashBalanceNoFrom = null): self
     {
@@ -304,7 +304,7 @@ class CreateDSFinVKExportRequest extends AbstractStructBase
     /**
      * Set cashBalanceNoTo value
      * @param int $cashBalanceNoTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreateDSFinVKExportRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportRequest
      */
     public function setCashBalanceNoTo(?int $cashBalanceNoTo = null): self
     {

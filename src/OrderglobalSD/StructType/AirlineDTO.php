@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class AirlineDTO extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirlineDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirlineDTO
      */
     public function setAddress(?string $address = null): self
     {
@@ -102,7 +102,7 @@ class AirlineDTO extends AbstractStructBase
     /**
      * Set airlineCode value
      * @param string $airlineCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirlineDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirlineDTO
      */
     public function setAirlineCode(?string $airlineCode = null): self
     {
@@ -125,7 +125,7 @@ class AirlineDTO extends AbstractStructBase
     /**
      * Set bspCode value
      * @param string $bspCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirlineDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirlineDTO
      */
     public function setBspCode(?string $bspCode = null): self
     {
@@ -148,7 +148,7 @@ class AirlineDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirlineDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirlineDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -171,7 +171,7 @@ class AirlineDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirlineDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirlineDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -194,7 +194,7 @@ class AirlineDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\AirlineDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\AirlineDTO
      */
     public function setVatId(?string $vatId = null): self
     {

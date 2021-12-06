@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class CashBookSignatureBalanceRequest extends AbstractStructBase
     /**
      * Set cashBookId value
      * @param int $cashBookId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookSignatureBalanceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookSignatureBalanceRequest
      */
     public function setCashBookId(int $cashBookId): self
     {
@@ -74,7 +74,7 @@ class CashBookSignatureBalanceRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookSignatureBalanceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookSignatureBalanceRequest
      */
     public function setType(string $type): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class PrepareDunningBillingsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBillingDunning
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDunning[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBillingDunning[]
      */
     protected ?array $MidocoBillingDunning = null;
     /**
      * Constructor method for PrepareDunningBillingsResponse
      * @uses PrepareDunningBillingsResponse::setMidocoBillingDunning()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDunning[] $midocoBillingDunning
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDunning[] $midocoBillingDunning
      */
     public function __construct(?array $midocoBillingDunning = null)
     {
@@ -34,7 +34,7 @@ class PrepareDunningBillingsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBillingDunning value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDunning[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDunning[]
      */
     public function getMidocoBillingDunning(): ?array
     {
@@ -55,12 +55,12 @@ class PrepareDunningBillingsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $prepareDunningBillingsResponseMidocoBillingDunningItem) {
             // validation for constraint: itemType
-            if (!$prepareDunningBillingsResponseMidocoBillingDunningItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDunning) {
+            if (!$prepareDunningBillingsResponseMidocoBillingDunningItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingDunning) {
                 $invalidValues[] = is_object($prepareDunningBillingsResponseMidocoBillingDunningItem) ? get_class($prepareDunningBillingsResponseMidocoBillingDunningItem) : sprintf('%s(%s)', gettype($prepareDunningBillingsResponseMidocoBillingDunningItem), var_export($prepareDunningBillingsResponseMidocoBillingDunningItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBillingDunning property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDunning, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBillingDunning property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingDunning, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class PrepareDunningBillingsResponse extends AbstractStructBase
     /**
      * Set MidocoBillingDunning value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDunning[] $midocoBillingDunning
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareDunningBillingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDunning[] $midocoBillingDunning
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareDunningBillingsResponse
      */
     public function setMidocoBillingDunning(?array $midocoBillingDunning = null): self
     {
@@ -85,14 +85,14 @@ class PrepareDunningBillingsResponse extends AbstractStructBase
     /**
      * Add item to MidocoBillingDunning value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDunning $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareDunningBillingsResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingDunning $item
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareDunningBillingsResponse
      */
-    public function addToMidocoBillingDunning(\Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDunning $item): self
+    public function addToMidocoBillingDunning(\Pggns\MidocoApi\Order\StructType\MidocoBillingDunning $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDunning) {
-            throw new InvalidArgumentException(sprintf('The MidocoBillingDunning property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBillingDunning, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBillingDunning) {
+            throw new InvalidArgumentException(sprintf('The MidocoBillingDunning property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBillingDunning, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBillingDunning[] = $item;
         

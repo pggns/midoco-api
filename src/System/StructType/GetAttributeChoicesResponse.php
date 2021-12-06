@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAttributeChoicesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAttributeChoiceValue
-     * @var \Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO[]
+     * @var \Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO[]
      */
     protected ?array $MidocoAttributeChoiceValue = null;
     /**
      * Constructor method for GetAttributeChoicesResponse
      * @uses GetAttributeChoicesResponse::setMidocoAttributeChoiceValue()
-     * @param \Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO[] $midocoAttributeChoiceValue
+     * @param \Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO[] $midocoAttributeChoiceValue
      */
     public function __construct(?array $midocoAttributeChoiceValue = null)
     {
@@ -34,7 +34,7 @@ class GetAttributeChoicesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAttributeChoiceValue value
-     * @return \Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO[]
+     * @return \Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO[]
      */
     public function getMidocoAttributeChoiceValue(): ?array
     {
@@ -55,12 +55,12 @@ class GetAttributeChoicesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAttributeChoicesResponseMidocoAttributeChoiceValueItem) {
             // validation for constraint: itemType
-            if (!$getAttributeChoicesResponseMidocoAttributeChoiceValueItem instanceof \Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO) {
+            if (!$getAttributeChoicesResponseMidocoAttributeChoiceValueItem instanceof \Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO) {
                 $invalidValues[] = is_object($getAttributeChoicesResponseMidocoAttributeChoiceValueItem) ? get_class($getAttributeChoicesResponseMidocoAttributeChoiceValueItem) : sprintf('%s(%s)', gettype($getAttributeChoicesResponseMidocoAttributeChoiceValueItem), var_export($getAttributeChoicesResponseMidocoAttributeChoiceValueItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAttributeChoiceValue property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAttributeChoiceValue property can only contain items of type \Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAttributeChoicesResponse extends AbstractStructBase
     /**
      * Set MidocoAttributeChoiceValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO[] $midocoAttributeChoiceValue
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAttributeChoicesResponse
+     * @param \Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO[] $midocoAttributeChoiceValue
+     * @return \Pggns\MidocoApi\System\StructType\GetAttributeChoicesResponse
      */
     public function setMidocoAttributeChoiceValue(?array $midocoAttributeChoiceValue = null): self
     {
@@ -85,14 +85,14 @@ class GetAttributeChoicesResponse extends AbstractStructBase
     /**
      * Add item to MidocoAttributeChoiceValue value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAttributeChoicesResponse
+     * @param \Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO $item
+     * @return \Pggns\MidocoApi\System\StructType\GetAttributeChoicesResponse
      */
-    public function addToMidocoAttributeChoiceValue(\Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO $item): self
+    public function addToMidocoAttributeChoiceValue(\Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAttributeChoiceValue property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\AttributeChoiceValueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAttributeChoiceValue property can only contain items of type \Pggns\MidocoApi\System\StructType\AttributeChoiceValueDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAttributeChoiceValue[] = $item;
         

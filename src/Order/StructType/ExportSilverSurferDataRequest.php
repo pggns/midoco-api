@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -78,7 +78,7 @@ class ExportSilverSurferDataRequest extends AbstractStructBase
      * Set unitNames value
      * @throws InvalidArgumentException
      * @param string[] $unitNames
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportSilverSurferDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportSilverSurferDataRequest
      */
     public function setUnitNames(?array $unitNames = null): self
     {
@@ -94,7 +94,7 @@ class ExportSilverSurferDataRequest extends AbstractStructBase
      * Add item to unitNames value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportSilverSurferDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportSilverSurferDataRequest
      */
     public function addToUnitNames(string $item): self
     {
@@ -117,7 +117,7 @@ class ExportSilverSurferDataRequest extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportSilverSurferDataRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportSilverSurferDataRequest
      */
     public function setStartTravel(?string $startTravel = null): self
     {

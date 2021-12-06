@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class InvoiceFileFormatDTO extends AbstractStructBase
     /**
      * Set columnSeparator value
      * @param string $columnSeparator
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\InvoiceFileFormatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\InvoiceFileFormatDTO
      */
     public function setColumnSeparator(?string $columnSeparator = null): self
     {
@@ -134,7 +134,7 @@ class InvoiceFileFormatDTO extends AbstractStructBase
     /**
      * Set dateFormat value
      * @param string $dateFormat
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\InvoiceFileFormatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\InvoiceFileFormatDTO
      */
     public function setDateFormat(?string $dateFormat = null): self
     {
@@ -157,7 +157,7 @@ class InvoiceFileFormatDTO extends AbstractStructBase
     /**
      * Set decimalSeparator value
      * @param string $decimalSeparator
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\InvoiceFileFormatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\InvoiceFileFormatDTO
      */
     public function setDecimalSeparator(?string $decimalSeparator = null): self
     {
@@ -180,7 +180,7 @@ class InvoiceFileFormatDTO extends AbstractStructBase
     /**
      * Set fileFormat value
      * @param string $fileFormat
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\InvoiceFileFormatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\InvoiceFileFormatDTO
      */
     public function setFileFormat(?string $fileFormat = null): self
     {
@@ -203,7 +203,7 @@ class InvoiceFileFormatDTO extends AbstractStructBase
     /**
      * Set formatDescription value
      * @param string $formatDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\InvoiceFileFormatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\InvoiceFileFormatDTO
      */
     public function setFormatDescription(?string $formatDescription = null): self
     {
@@ -226,7 +226,7 @@ class InvoiceFileFormatDTO extends AbstractStructBase
     /**
      * Set formatId value
      * @param string $formatId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\InvoiceFileFormatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\InvoiceFileFormatDTO
      */
     public function setFormatId(?string $formatId = null): self
     {
@@ -249,7 +249,7 @@ class InvoiceFileFormatDTO extends AbstractStructBase
     /**
      * Set isProvideTotalValue value
      * @param bool $isProvideTotalValue
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\InvoiceFileFormatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\InvoiceFileFormatDTO
      */
     public function setIsProvideTotalValue(?bool $isProvideTotalValue = null): self
     {
@@ -272,7 +272,7 @@ class InvoiceFileFormatDTO extends AbstractStructBase
     /**
      * Set isTextInQuotes value
      * @param bool $isTextInQuotes
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\InvoiceFileFormatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\InvoiceFileFormatDTO
      */
     public function setIsTextInQuotes(?bool $isTextInQuotes = null): self
     {
@@ -295,7 +295,7 @@ class InvoiceFileFormatDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\InvoiceFileFormatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\InvoiceFileFormatDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -318,7 +318,7 @@ class InvoiceFileFormatDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\InvoiceFileFormatDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\InvoiceFileFormatDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {

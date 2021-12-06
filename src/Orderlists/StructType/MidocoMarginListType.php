@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class MidocoMarginListType extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -142,7 +142,7 @@ class MidocoMarginListType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -165,7 +165,7 @@ class MidocoMarginListType extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -188,7 +188,7 @@ class MidocoMarginListType extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -211,7 +211,7 @@ class MidocoMarginListType extends AbstractStructBase
     /**
      * Set feeSum value
      * @param float $feeSum
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType
      */
     public function setFeeSum(?float $feeSum = null): self
     {
@@ -234,7 +234,7 @@ class MidocoMarginListType extends AbstractStructBase
     /**
      * Set commissionSum value
      * @param float $commissionSum
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType
      */
     public function setCommissionSum(?float $commissionSum = null): self
     {
@@ -257,7 +257,7 @@ class MidocoMarginListType extends AbstractStructBase
     /**
      * Set supplierInvoiceSum value
      * @param float $supplierInvoiceSum
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType
      */
     public function setSupplierInvoiceSum(?float $supplierInvoiceSum = null): self
     {
@@ -280,7 +280,7 @@ class MidocoMarginListType extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType
      */
     public function setPrice(?float $price = null): self
     {
@@ -303,7 +303,7 @@ class MidocoMarginListType extends AbstractStructBase
     /**
      * Set dbAmount value
      * @param float $dbAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType
      */
     public function setDbAmount(?float $dbAmount = null): self
     {
@@ -326,7 +326,7 @@ class MidocoMarginListType extends AbstractStructBase
     /**
      * Set dbPercent value
      * @param float $dbPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType
      */
     public function setDbPercent(?float $dbPercent = null): self
     {
@@ -349,7 +349,7 @@ class MidocoMarginListType extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoMarginListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginListType
      */
     public function setCategory(?string $category = null): self
     {

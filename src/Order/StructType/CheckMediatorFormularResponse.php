@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class CheckMediatorFormularResponse extends AbstractStructBase
      * Set errors value
      * @throws InvalidArgumentException
      * @param string[] $errors
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckMediatorFormularResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckMediatorFormularResponse
      */
     public function setErrors(?array $errors = null): self
     {
@@ -85,7 +85,7 @@ class CheckMediatorFormularResponse extends AbstractStructBase
      * Add item to errors value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CheckMediatorFormularResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CheckMediatorFormularResponse
      */
     public function addToErrors(string $item): self
     {

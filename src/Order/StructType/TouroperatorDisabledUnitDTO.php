@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class TouroperatorDisabledUnitDTO extends AbstractStructBase
     /**
      * Set disabledUnitName value
      * @param string $disabledUnitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TouroperatorDisabledUnitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TouroperatorDisabledUnitDTO
      */
     public function setDisabledUnitName(?string $disabledUnitName = null): self
     {
@@ -70,7 +70,7 @@ class TouroperatorDisabledUnitDTO extends AbstractStructBase
     /**
      * Set touroperatorId value
      * @param int $touroperatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TouroperatorDisabledUnitDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TouroperatorDisabledUnitDTO
      */
     public function setTouroperatorId(?int $touroperatorId = null): self
     {

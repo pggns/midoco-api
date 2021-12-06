@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -138,7 +138,7 @@ class SignatureLocation extends AbstractStructBase
     /**
      * Set page value
      * @param int $page
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation
      */
     public function setPage(?int $page = null): self
     {
@@ -161,7 +161,7 @@ class SignatureLocation extends AbstractStructBase
     /**
      * Set locationX value
      * @param float $locationX
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation
      */
     public function setLocationX(?float $locationX = null): self
     {
@@ -184,7 +184,7 @@ class SignatureLocation extends AbstractStructBase
     /**
      * Set locationY value
      * @param float $locationY
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation
      */
     public function setLocationY(?float $locationY = null): self
     {
@@ -207,7 +207,7 @@ class SignatureLocation extends AbstractStructBase
     /**
      * Set locationXcm value
      * @param float $locationXcm
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation
      */
     public function setLocationXcm(?float $locationXcm = null): self
     {
@@ -230,7 +230,7 @@ class SignatureLocation extends AbstractStructBase
     /**
      * Set locationYcm value
      * @param float $locationYcm
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation
      */
     public function setLocationYcm(?float $locationYcm = null): self
     {
@@ -253,7 +253,7 @@ class SignatureLocation extends AbstractStructBase
     /**
      * Set width value
      * @param float $width
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation
      */
     public function setWidth(?float $width = null): self
     {
@@ -276,7 +276,7 @@ class SignatureLocation extends AbstractStructBase
     /**
      * Set height value
      * @param float $height
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation
      */
     public function setHeight(?float $height = null): self
     {
@@ -299,7 +299,7 @@ class SignatureLocation extends AbstractStructBase
     /**
      * Set widthcm value
      * @param float $widthcm
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation
      */
     public function setWidthcm(?float $widthcm = null): self
     {
@@ -322,7 +322,7 @@ class SignatureLocation extends AbstractStructBase
     /**
      * Set heightcm value
      * @param float $heightcm
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation
      */
     public function setHeightcm(?float $heightcm = null): self
     {
@@ -345,7 +345,7 @@ class SignatureLocation extends AbstractStructBase
     /**
      * Set phrase value
      * @param string $phrase
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation
      */
     public function setPhrase(?string $phrase = null): self
     {
@@ -368,7 +368,7 @@ class SignatureLocation extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation
      */
     public function setDescription(?string $description = null): self
     {
@@ -391,7 +391,7 @@ class SignatureLocation extends AbstractStructBase
     /**
      * Set optional value
      * @param bool $optional
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation
      */
     public function setOptional(?bool $optional = null): self
     {
@@ -414,7 +414,7 @@ class SignatureLocation extends AbstractStructBase
     /**
      * Set signatureData value
      * @param string $signatureData
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation
      */
     public function setSignatureData(?string $signatureData = null): self
     {

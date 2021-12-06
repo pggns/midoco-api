@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
     /**
      * Set revenueDiff value
      * @param float $revenueDiff
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking
      */
     public function setRevenueDiff(?float $revenueDiff = null): self
     {
@@ -142,7 +142,7 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
     /**
      * Set settlementsSum value
      * @param float $settlementsSum
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking
      */
     public function setSettlementsSum(?float $settlementsSum = null): self
     {
@@ -165,7 +165,7 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -188,7 +188,7 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
     /**
      * Set siDiff value
      * @param float $siDiff
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking
      */
     public function setSiDiff(?float $siDiff = null): self
     {
@@ -211,7 +211,7 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
     /**
      * Set siInkassoMode value
      * @param string $siInkassoMode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking
      */
     public function setSiInkassoMode(?string $siInkassoMode = null): self
     {
@@ -234,7 +234,7 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
     /**
      * Set settlementsInkassoMode value
      * @param string $settlementsInkassoMode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking
      */
     public function setSettlementsInkassoMode(?string $settlementsInkassoMode = null): self
     {
@@ -257,7 +257,7 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
     /**
      * Set hasComment value
      * @param bool $hasComment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking
      */
     public function setHasComment(?bool $hasComment = null): self
     {
@@ -280,7 +280,7 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
     /**
      * Set nettoAmount value
      * @param float $nettoAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking
      */
     public function setNettoAmount(?float $nettoAmount = null): self
     {
@@ -303,7 +303,7 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
     /**
      * Set isDeposit value
      * @param bool $isDeposit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking
      */
     public function setIsDeposit(?bool $isDeposit = null): self
     {
@@ -326,7 +326,7 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking
      */
     public function setSettlementType(?string $settlementType = null): self
     {
@@ -349,7 +349,7 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
     /**
      * Set settlementTypeDebit value
      * @param string $settlementTypeDebit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlementBooking
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlementBooking
      */
     public function setSettlementTypeDebit(?string $settlementTypeDebit = null): self
     {

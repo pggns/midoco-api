@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetTourOperatorDisabledUnitsRequest extends AbstractStructBase
     /**
      * Set touroperatorId value
      * @param int $touroperatorId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetTourOperatorDisabledUnitsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetTourOperatorDisabledUnitsRequest
      */
     public function setTouroperatorId(?int $touroperatorId = null): self
     {
@@ -72,7 +72,7 @@ class GetTourOperatorDisabledUnitsRequest extends AbstractStructBase
     /**
      * Set insurerId value
      * @param int $insurerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetTourOperatorDisabledUnitsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetTourOperatorDisabledUnitsRequest
      */
     public function setInsurerId(?int $insurerId = null): self
     {

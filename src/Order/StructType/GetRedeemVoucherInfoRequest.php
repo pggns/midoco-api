@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class GetRedeemVoucherInfoRequest extends AbstractStructBase
     /**
      * Set voucherNo value
      * @param string $voucherNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRedeemVoucherInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetRedeemVoucherInfoRequest
      */
     public function setVoucherNo(?string $voucherNo = null): self
     {
@@ -86,7 +86,7 @@ class GetRedeemVoucherInfoRequest extends AbstractStructBase
     /**
      * Set voucherTypeId value
      * @param string $voucherTypeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRedeemVoucherInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetRedeemVoucherInfoRequest
      */
     public function setVoucherTypeId(?string $voucherTypeId = null): self
     {
@@ -109,7 +109,7 @@ class GetRedeemVoucherInfoRequest extends AbstractStructBase
     /**
      * Set voucherValue value
      * @param float $voucherValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRedeemVoucherInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetRedeemVoucherInfoRequest
      */
     public function setVoucherValue(?float $voucherValue = null): self
     {
@@ -132,7 +132,7 @@ class GetRedeemVoucherInfoRequest extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetRedeemVoucherInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetRedeemVoucherInfoRequest
      */
     public function setItemId(?int $itemId = null): self
     {

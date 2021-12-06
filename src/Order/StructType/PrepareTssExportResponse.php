@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class PrepareTssExportResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCashTurnoverJournal
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverJournal[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverJournal[]
      */
     protected ?array $MidocoCashTurnoverJournal = null;
     /**
      * Constructor method for PrepareTssExportResponse
      * @uses PrepareTssExportResponse::setMidocoCashTurnoverJournal()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverJournal[] $midocoCashTurnoverJournal
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverJournal[] $midocoCashTurnoverJournal
      */
     public function __construct(?array $midocoCashTurnoverJournal = null)
     {
@@ -34,7 +34,7 @@ class PrepareTssExportResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCashTurnoverJournal value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverJournal[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverJournal[]
      */
     public function getMidocoCashTurnoverJournal(): ?array
     {
@@ -55,12 +55,12 @@ class PrepareTssExportResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $prepareTssExportResponseMidocoCashTurnoverJournalItem) {
             // validation for constraint: itemType
-            if (!$prepareTssExportResponseMidocoCashTurnoverJournalItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverJournal) {
+            if (!$prepareTssExportResponseMidocoCashTurnoverJournalItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverJournal) {
                 $invalidValues[] = is_object($prepareTssExportResponseMidocoCashTurnoverJournalItem) ? get_class($prepareTssExportResponseMidocoCashTurnoverJournalItem) : sprintf('%s(%s)', gettype($prepareTssExportResponseMidocoCashTurnoverJournalItem), var_export($prepareTssExportResponseMidocoCashTurnoverJournalItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCashTurnoverJournal property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverJournal, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCashTurnoverJournal property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverJournal, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class PrepareTssExportResponse extends AbstractStructBase
     /**
      * Set MidocoCashTurnoverJournal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverJournal[] $midocoCashTurnoverJournal
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareTssExportResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverJournal[] $midocoCashTurnoverJournal
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareTssExportResponse
      */
     public function setMidocoCashTurnoverJournal(?array $midocoCashTurnoverJournal = null): self
     {
@@ -85,14 +85,14 @@ class PrepareTssExportResponse extends AbstractStructBase
     /**
      * Add item to MidocoCashTurnoverJournal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverJournal $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareTssExportResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverJournal $item
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareTssExportResponse
      */
-    public function addToMidocoCashTurnoverJournal(\Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverJournal $item): self
+    public function addToMidocoCashTurnoverJournal(\Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverJournal $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverJournal) {
-            throw new InvalidArgumentException(sprintf('The MidocoCashTurnoverJournal property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoCashTurnoverJournal, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverJournal) {
+            throw new InvalidArgumentException(sprintf('The MidocoCashTurnoverJournal property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoCashTurnoverJournal, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCashTurnoverJournal[] = $item;
         

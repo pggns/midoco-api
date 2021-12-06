@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SendBatchInvoiceEmailResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: system:Error
-     * @var \Pggns\MidocoApi\Api\Order\StructType\Error[]
+     * @var \Pggns\MidocoApi\Order\StructType\Error[]
      */
     protected ?array $Error = null;
     /**
      * Constructor method for SendBatchInvoiceEmailResponse
      * @uses SendBatchInvoiceEmailResponse::setError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Error[] $error
+     * @param \Pggns\MidocoApi\Order\StructType\Error[] $error
      */
     public function __construct(?array $error = null)
     {
@@ -34,7 +34,7 @@ class SendBatchInvoiceEmailResponse extends AbstractStructBase
     }
     /**
      * Get Error value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Error[]
+     * @return \Pggns\MidocoApi\Order\StructType\Error[]
      */
     public function getError(): ?array
     {
@@ -55,12 +55,12 @@ class SendBatchInvoiceEmailResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $sendBatchInvoiceEmailResponseErrorItem) {
             // validation for constraint: itemType
-            if (!$sendBatchInvoiceEmailResponseErrorItem instanceof \Pggns\MidocoApi\Api\Order\StructType\Error) {
+            if (!$sendBatchInvoiceEmailResponseErrorItem instanceof \Pggns\MidocoApi\Order\StructType\Error) {
                 $invalidValues[] = is_object($sendBatchInvoiceEmailResponseErrorItem) ? get_class($sendBatchInvoiceEmailResponseErrorItem) : sprintf('%s(%s)', gettype($sendBatchInvoiceEmailResponseErrorItem), var_export($sendBatchInvoiceEmailResponseErrorItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Error, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Order\StructType\Error, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SendBatchInvoiceEmailResponse extends AbstractStructBase
     /**
      * Set Error value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Error[] $error
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SendBatchInvoiceEmailResponse
+     * @param \Pggns\MidocoApi\Order\StructType\Error[] $error
+     * @return \Pggns\MidocoApi\Order\StructType\SendBatchInvoiceEmailResponse
      */
     public function setError(?array $error = null): self
     {
@@ -85,14 +85,14 @@ class SendBatchInvoiceEmailResponse extends AbstractStructBase
     /**
      * Add item to Error value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\Error $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SendBatchInvoiceEmailResponse
+     * @param \Pggns\MidocoApi\Order\StructType\Error $item
+     * @return \Pggns\MidocoApi\Order\StructType\SendBatchInvoiceEmailResponse
      */
-    public function addToError(\Pggns\MidocoApi\Api\Order\StructType\Error $item): self
+    public function addToError(\Pggns\MidocoApi\Order\StructType\Error $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\Error) {
-            throw new InvalidArgumentException(sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\Error, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\Error) {
+            throw new InvalidArgumentException(sprintf('The Error property can only contain items of type \Pggns\MidocoApi\Order\StructType\Error, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Error[] = $item;
         

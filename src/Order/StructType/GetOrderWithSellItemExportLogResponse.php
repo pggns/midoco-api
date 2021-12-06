@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,15 +20,15 @@ class GetOrderWithSellItemExportLogResponse extends AbstractStructBase
      * The MidocoOrder
      * Meta information extracted from the WSDL
      * - ref: MidocoOrder
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $MidocoOrder = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $MidocoOrder = null;
     /**
      * The currentSellItemExport
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\SellItemExportDTO[]
      */
     protected ?array $currentSellItemExport = null;
     /**
@@ -36,7 +36,7 @@ class GetOrderWithSellItemExportLogResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\SellItemExportDTO[]
      */
     protected ?array $previousSellItemExport = null;
     /**
@@ -52,12 +52,12 @@ class GetOrderWithSellItemExportLogResponse extends AbstractStructBase
      * @uses GetOrderWithSellItemExportLogResponse::setCurrentSellItemExport()
      * @uses GetOrderWithSellItemExportLogResponse::setPreviousSellItemExport()
      * @uses GetOrderWithSellItemExportLogResponse::setIsReadOnlyByLockPeriod()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO[] $currentSellItemExport
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO[] $previousSellItemExport
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemExportDTO[] $currentSellItemExport
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemExportDTO[] $previousSellItemExport
      * @param bool $isReadOnlyByLockPeriod
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null, ?array $currentSellItemExport = null, ?array $previousSellItemExport = null, ?bool $isReadOnlyByLockPeriod = false)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null, ?array $currentSellItemExport = null, ?array $previousSellItemExport = null, ?bool $isReadOnlyByLockPeriod = false)
     {
         $this
             ->setMidocoOrder($midocoOrder)
@@ -67,18 +67,18 @@ class GetOrderWithSellItemExportLogResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrder value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    public function getMidocoOrder(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType
+    public function getMidocoOrder(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType
     {
         return $this->MidocoOrder;
     }
     /**
      * Set MidocoOrder value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderWithSellItemExportLogResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderWithSellItemExportLogResponse
      */
-    public function setMidocoOrder(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null): self
+    public function setMidocoOrder(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null): self
     {
         $this->MidocoOrder = $midocoOrder;
         
@@ -86,7 +86,7 @@ class GetOrderWithSellItemExportLogResponse extends AbstractStructBase
     }
     /**
      * Get currentSellItemExport value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemExportDTO[]
      */
     public function getCurrentSellItemExport(): ?array
     {
@@ -107,12 +107,12 @@ class GetOrderWithSellItemExportLogResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderWithSellItemExportLogResponseCurrentSellItemExportItem) {
             // validation for constraint: itemType
-            if (!$getOrderWithSellItemExportLogResponseCurrentSellItemExportItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO) {
+            if (!$getOrderWithSellItemExportLogResponseCurrentSellItemExportItem instanceof \Pggns\MidocoApi\Order\StructType\SellItemExportDTO) {
                 $invalidValues[] = is_object($getOrderWithSellItemExportLogResponseCurrentSellItemExportItem) ? get_class($getOrderWithSellItemExportLogResponseCurrentSellItemExportItem) : sprintf('%s(%s)', gettype($getOrderWithSellItemExportLogResponseCurrentSellItemExportItem), var_export($getOrderWithSellItemExportLogResponseCurrentSellItemExportItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The currentSellItemExport property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The currentSellItemExport property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemExportDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -121,8 +121,8 @@ class GetOrderWithSellItemExportLogResponse extends AbstractStructBase
     /**
      * Set currentSellItemExport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO[] $currentSellItemExport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderWithSellItemExportLogResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemExportDTO[] $currentSellItemExport
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderWithSellItemExportLogResponse
      */
     public function setCurrentSellItemExport(?array $currentSellItemExport = null): self
     {
@@ -137,14 +137,14 @@ class GetOrderWithSellItemExportLogResponse extends AbstractStructBase
     /**
      * Add item to currentSellItemExport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderWithSellItemExportLogResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemExportDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderWithSellItemExportLogResponse
      */
-    public function addToCurrentSellItemExport(\Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO $item): self
+    public function addToCurrentSellItemExport(\Pggns\MidocoApi\Order\StructType\SellItemExportDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO) {
-            throw new InvalidArgumentException(sprintf('The currentSellItemExport property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SellItemExportDTO) {
+            throw new InvalidArgumentException(sprintf('The currentSellItemExport property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemExportDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->currentSellItemExport[] = $item;
         
@@ -152,7 +152,7 @@ class GetOrderWithSellItemExportLogResponse extends AbstractStructBase
     }
     /**
      * Get previousSellItemExport value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemExportDTO[]
      */
     public function getPreviousSellItemExport(): ?array
     {
@@ -173,12 +173,12 @@ class GetOrderWithSellItemExportLogResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderWithSellItemExportLogResponsePreviousSellItemExportItem) {
             // validation for constraint: itemType
-            if (!$getOrderWithSellItemExportLogResponsePreviousSellItemExportItem instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO) {
+            if (!$getOrderWithSellItemExportLogResponsePreviousSellItemExportItem instanceof \Pggns\MidocoApi\Order\StructType\SellItemExportDTO) {
                 $invalidValues[] = is_object($getOrderWithSellItemExportLogResponsePreviousSellItemExportItem) ? get_class($getOrderWithSellItemExportLogResponsePreviousSellItemExportItem) : sprintf('%s(%s)', gettype($getOrderWithSellItemExportLogResponsePreviousSellItemExportItem), var_export($getOrderWithSellItemExportLogResponsePreviousSellItemExportItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The previousSellItemExport property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The previousSellItemExport property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemExportDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -187,8 +187,8 @@ class GetOrderWithSellItemExportLogResponse extends AbstractStructBase
     /**
      * Set previousSellItemExport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO[] $previousSellItemExport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderWithSellItemExportLogResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemExportDTO[] $previousSellItemExport
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderWithSellItemExportLogResponse
      */
     public function setPreviousSellItemExport(?array $previousSellItemExport = null): self
     {
@@ -203,14 +203,14 @@ class GetOrderWithSellItemExportLogResponse extends AbstractStructBase
     /**
      * Add item to previousSellItemExport value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderWithSellItemExportLogResponse
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemExportDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderWithSellItemExportLogResponse
      */
-    public function addToPreviousSellItemExport(\Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO $item): self
+    public function addToPreviousSellItemExport(\Pggns\MidocoApi\Order\StructType\SellItemExportDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO) {
-            throw new InvalidArgumentException(sprintf('The previousSellItemExport property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\SellItemExportDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\SellItemExportDTO) {
+            throw new InvalidArgumentException(sprintf('The previousSellItemExport property can only contain items of type \Pggns\MidocoApi\Order\StructType\SellItemExportDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->previousSellItemExport[] = $item;
         
@@ -227,7 +227,7 @@ class GetOrderWithSellItemExportLogResponse extends AbstractStructBase
     /**
      * Set isReadOnlyByLockPeriod value
      * @param bool $isReadOnlyByLockPeriod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderWithSellItemExportLogResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderWithSellItemExportLogResponse
      */
     public function setIsReadOnlyByLockPeriod(?bool $isReadOnlyByLockPeriod = false): self
     {

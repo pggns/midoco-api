@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -311,7 +311,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set addressChecked value
      * @param bool $addressChecked
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setAddressChecked(?bool $addressChecked = null): self
     {
@@ -334,7 +334,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set addressCheckedStatus value
      * @param string $addressCheckedStatus
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setAddressCheckedStatus(?string $addressCheckedStatus = null): self
     {
@@ -357,7 +357,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set addressType value
      * @param string $addressType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setAddressType(?string $addressType = null): self
     {
@@ -380,7 +380,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set birthday value
      * @param string $birthday
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setBirthday(?string $birthday = null): self
     {
@@ -403,7 +403,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -426,7 +426,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set companyName value
      * @param string $companyName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setCompanyName(?string $companyName = null): self
     {
@@ -449,7 +449,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set consentTimestamp value
      * @param string $consentTimestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setConsentTimestamp(?string $consentTimestamp = null): self
     {
@@ -472,7 +472,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set contactPerson value
      * @param string $contactPerson
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setContactPerson(?string $contactPerson = null): self
     {
@@ -495,7 +495,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setCountry(?string $country = null): self
     {
@@ -518,7 +518,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set customerConsentUpdated value
      * @param bool $customerConsentUpdated
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setCustomerConsentUpdated(?bool $customerConsentUpdated = null): self
     {
@@ -541,7 +541,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set endorsement value
      * @param string $endorsement
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setEndorsement(?string $endorsement = null): self
     {
@@ -564,7 +564,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set externalConsentId value
      * @param string $externalConsentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setExternalConsentId(?string $externalConsentId = null): self
     {
@@ -587,7 +587,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -610,7 +610,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set gender value
      * @param int $gender
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setGender(?int $gender = null): self
     {
@@ -633,7 +633,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set hasBtContract value
      * @param bool $hasBtContract
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setHasBtContract(?bool $hasBtContract = null): self
     {
@@ -656,7 +656,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set isDeleted value
      * @param bool $isDeleted
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setIsDeleted(?bool $isDeleted = null): self
     {
@@ -679,7 +679,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set isSpecialCustomer value
      * @param bool $isSpecialCustomer
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setIsSpecialCustomer(?bool $isSpecialCustomer = null): self
     {
@@ -702,7 +702,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -725,7 +725,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set midocoCustomerId value
      * @param int $midocoCustomerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setMidocoCustomerId(?int $midocoCustomerId = null): self
     {
@@ -748,7 +748,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setName(?string $name = null): self
     {
@@ -771,7 +771,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set name2 value
      * @param string $name2
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setName2(?string $name2 = null): self
     {
@@ -794,7 +794,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set nationality value
      * @param string $nationality
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setNationality(?string $nationality = null): self
     {
@@ -817,7 +817,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -840,7 +840,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set postOfficeBox value
      * @param string $postOfficeBox
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setPostOfficeBox(?string $postOfficeBox = null): self
     {
@@ -863,7 +863,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -886,7 +886,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set referenceCustomerId value
      * @param string $referenceCustomerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setReferenceCustomerId(?string $referenceCustomerId = null): self
     {
@@ -909,7 +909,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set referenceSystemId value
      * @param string $referenceSystemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setReferenceSystemId(?string $referenceSystemId = null): self
     {
@@ -932,7 +932,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set referenceUrl value
      * @param string $referenceUrl
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setReferenceUrl(?string $referenceUrl = null): self
     {
@@ -955,7 +955,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -978,7 +978,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setState(?string $state = null): self
     {
@@ -1001,7 +1001,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -1024,7 +1024,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -1047,7 +1047,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setTitle(?string $title = null): self
     {
@@ -1070,7 +1070,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setType(?string $type = null): self
     {
@@ -1093,7 +1093,7 @@ class OrderCustomerDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderCustomerDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderCustomerDTO
      */
     public function setVatId(?string $vatId = null): self
     {

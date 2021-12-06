@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MfGroupDTO extends AbstractStructBase
     /**
      * Set groupId value
      * @param string $groupId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MfGroupDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MfGroupDTO
      */
     public function setGroupId(?string $groupId = null): self
     {

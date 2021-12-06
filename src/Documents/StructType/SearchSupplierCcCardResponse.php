@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchSupplierCcCardResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSupplierCcCard
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard[]
      */
     protected ?array $MidocoSupplierCcCard = null;
     /**
      * Constructor method for SearchSupplierCcCardResponse
      * @uses SearchSupplierCcCardResponse::setMidocoSupplierCcCard()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard[] $midocoSupplierCcCard
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard[] $midocoSupplierCcCard
      */
     public function __construct(?array $midocoSupplierCcCard = null)
     {
@@ -34,7 +34,7 @@ class SearchSupplierCcCardResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSupplierCcCard value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard[]
      */
     public function getMidocoSupplierCcCard(): ?array
     {
@@ -55,12 +55,12 @@ class SearchSupplierCcCardResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchSupplierCcCardResponseMidocoSupplierCcCardItem) {
             // validation for constraint: itemType
-            if (!$searchSupplierCcCardResponseMidocoSupplierCcCardItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard) {
+            if (!$searchSupplierCcCardResponseMidocoSupplierCcCardItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard) {
                 $invalidValues[] = is_object($searchSupplierCcCardResponseMidocoSupplierCcCardItem) ? get_class($searchSupplierCcCardResponseMidocoSupplierCcCardItem) : sprintf('%s(%s)', gettype($searchSupplierCcCardResponseMidocoSupplierCcCardItem), var_export($searchSupplierCcCardResponseMidocoSupplierCcCardItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSupplierCcCard property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSupplierCcCard property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchSupplierCcCardResponse extends AbstractStructBase
     /**
      * Set MidocoSupplierCcCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard[] $midocoSupplierCcCard
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchSupplierCcCardResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard[] $midocoSupplierCcCard
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchSupplierCcCardResponse
      */
     public function setMidocoSupplierCcCard(?array $midocoSupplierCcCard = null): self
     {
@@ -85,14 +85,14 @@ class SearchSupplierCcCardResponse extends AbstractStructBase
     /**
      * Add item to MidocoSupplierCcCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchSupplierCcCardResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard $item
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchSupplierCcCardResponse
      */
-    public function addToMidocoSupplierCcCard(\Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard $item): self
+    public function addToMidocoSupplierCcCard(\Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard) {
-            throw new InvalidArgumentException(sprintf('The MidocoSupplierCcCard property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierCcCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard) {
+            throw new InvalidArgumentException(sprintf('The MidocoSupplierCcCard property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoSupplierCcCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSupplierCcCard[] = $item;
         

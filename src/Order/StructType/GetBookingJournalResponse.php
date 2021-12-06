@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetBookingJournalResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBookingJournal
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal[]
      */
     protected ?array $MidocoBookingJournal = null;
     /**
@@ -28,7 +28,7 @@ class GetBookingJournalResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBookingJournalSums
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournalSums[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBookingJournalSums[]
      */
     protected ?array $MidocoBookingJournalSums = null;
     /**
@@ -53,8 +53,8 @@ class GetBookingJournalResponse extends AbstractStructBase
      * @uses GetBookingJournalResponse::setTotalNoOfRecords()
      * @uses GetBookingJournalResponse::setSumDebitor()
      * @uses GetBookingJournalResponse::setSumCreditor()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal[] $midocoBookingJournal
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournalSums[] $midocoBookingJournalSums
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal[] $midocoBookingJournal
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingJournalSums[] $midocoBookingJournalSums
      * @param int $totalNoOfRecords
      * @param float $sumDebitor
      * @param float $sumCreditor
@@ -70,7 +70,7 @@ class GetBookingJournalResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBookingJournal value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal[]
      */
     public function getMidocoBookingJournal(): ?array
     {
@@ -91,12 +91,12 @@ class GetBookingJournalResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBookingJournalResponseMidocoBookingJournalItem) {
             // validation for constraint: itemType
-            if (!$getBookingJournalResponseMidocoBookingJournalItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal) {
+            if (!$getBookingJournalResponseMidocoBookingJournalItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal) {
                 $invalidValues[] = is_object($getBookingJournalResponseMidocoBookingJournalItem) ? get_class($getBookingJournalResponseMidocoBookingJournalItem) : sprintf('%s(%s)', gettype($getBookingJournalResponseMidocoBookingJournalItem), var_export($getBookingJournalResponseMidocoBookingJournalItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBookingJournal property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBookingJournal property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -105,8 +105,8 @@ class GetBookingJournalResponse extends AbstractStructBase
     /**
      * Set MidocoBookingJournal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal[] $midocoBookingJournal
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal[] $midocoBookingJournal
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalResponse
      */
     public function setMidocoBookingJournal(?array $midocoBookingJournal = null): self
     {
@@ -121,14 +121,14 @@ class GetBookingJournalResponse extends AbstractStructBase
     /**
      * Add item to MidocoBookingJournal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalResponse
      */
-    public function addToMidocoBookingJournal(\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal $item): self
+    public function addToMidocoBookingJournal(\Pggns\MidocoApi\Order\StructType\MidocoBookingJournal $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal) {
-            throw new InvalidArgumentException(sprintf('The MidocoBookingJournal property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournal, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal) {
+            throw new InvalidArgumentException(sprintf('The MidocoBookingJournal property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBookingJournal, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBookingJournal[] = $item;
         
@@ -136,7 +136,7 @@ class GetBookingJournalResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBookingJournalSums value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournalSums[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBookingJournalSums[]
      */
     public function getMidocoBookingJournalSums(): ?array
     {
@@ -157,12 +157,12 @@ class GetBookingJournalResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBookingJournalResponseMidocoBookingJournalSumsItem) {
             // validation for constraint: itemType
-            if (!$getBookingJournalResponseMidocoBookingJournalSumsItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournalSums) {
+            if (!$getBookingJournalResponseMidocoBookingJournalSumsItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoBookingJournalSums) {
                 $invalidValues[] = is_object($getBookingJournalResponseMidocoBookingJournalSumsItem) ? get_class($getBookingJournalResponseMidocoBookingJournalSumsItem) : sprintf('%s(%s)', gettype($getBookingJournalResponseMidocoBookingJournalSumsItem), var_export($getBookingJournalResponseMidocoBookingJournalSumsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBookingJournalSums property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournalSums, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBookingJournalSums property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBookingJournalSums, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -171,8 +171,8 @@ class GetBookingJournalResponse extends AbstractStructBase
     /**
      * Set MidocoBookingJournalSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournalSums[] $midocoBookingJournalSums
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingJournalSums[] $midocoBookingJournalSums
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalResponse
      */
     public function setMidocoBookingJournalSums(?array $midocoBookingJournalSums = null): self
     {
@@ -187,14 +187,14 @@ class GetBookingJournalResponse extends AbstractStructBase
     /**
      * Add item to MidocoBookingJournalSums value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournalSums $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBookingJournalSums $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalResponse
      */
-    public function addToMidocoBookingJournalSums(\Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournalSums $item): self
+    public function addToMidocoBookingJournalSums(\Pggns\MidocoApi\Order\StructType\MidocoBookingJournalSums $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournalSums) {
-            throw new InvalidArgumentException(sprintf('The MidocoBookingJournalSums property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoBookingJournalSums, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoBookingJournalSums) {
+            throw new InvalidArgumentException(sprintf('The MidocoBookingJournalSums property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoBookingJournalSums, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBookingJournalSums[] = $item;
         
@@ -211,7 +211,7 @@ class GetBookingJournalResponse extends AbstractStructBase
     /**
      * Set totalNoOfRecords value
      * @param int $totalNoOfRecords
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalResponse
      */
     public function setTotalNoOfRecords(?int $totalNoOfRecords = null): self
     {
@@ -234,7 +234,7 @@ class GetBookingJournalResponse extends AbstractStructBase
     /**
      * Set sumDebitor value
      * @param float $sumDebitor
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalResponse
      */
     public function setSumDebitor(?float $sumDebitor = null): self
     {
@@ -257,7 +257,7 @@ class GetBookingJournalResponse extends AbstractStructBase
     /**
      * Set sumCreditor value
      * @param float $sumCreditor
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingJournalResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalResponse
      */
     public function setSumCreditor(?float $sumCreditor = null): self
     {

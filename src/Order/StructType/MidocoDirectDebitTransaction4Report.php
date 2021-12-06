@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class MidocoDirectDebitTransaction4Report extends DtausTransactionDTO
     /**
      * Set transactionType value
      * @param string $transactionType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitTransaction4Report
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitTransaction4Report
      */
     public function setTransactionType(?string $transactionType = null): self
     {
@@ -74,7 +74,7 @@ class MidocoDirectDebitTransaction4Report extends DtausTransactionDTO
     /**
      * Set purpose value
      * @param string $purpose
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDirectDebitTransaction4Report
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDirectDebitTransaction4Report
      */
     public function setPurpose(?string $purpose = null): self
     {

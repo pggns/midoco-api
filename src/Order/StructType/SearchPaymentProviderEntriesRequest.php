@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -175,7 +175,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set receiptDateFrom value
      * @param string $receiptDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setReceiptDateFrom(?string $receiptDateFrom = null): self
     {
@@ -198,7 +198,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set receiptDateTo value
      * @param string $receiptDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setReceiptDateTo(?string $receiptDateTo = null): self
     {
@@ -221,7 +221,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set transactionDateFrom value
      * @param string $transactionDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setTransactionDateFrom(?string $transactionDateFrom = null): self
     {
@@ -244,7 +244,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set transactionDateTo value
      * @param string $transactionDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setTransactionDateTo(?string $transactionDateTo = null): self
     {
@@ -267,7 +267,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set dueDateFrom value
      * @param string $dueDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setDueDateFrom(?string $dueDateFrom = null): self
     {
@@ -290,7 +290,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set dueDateTo value
      * @param string $dueDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setDueDateTo(?string $dueDateTo = null): self
     {
@@ -313,7 +313,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set creationDateFrom value
      * @param string $creationDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setCreationDateFrom(?string $creationDateFrom = null): self
     {
@@ -336,7 +336,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set creationDateTo value
      * @param string $creationDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setCreationDateTo(?string $creationDateTo = null): self
     {
@@ -359,7 +359,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set entryPaidAmountFrom value
      * @param float $entryPaidAmountFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setEntryPaidAmountFrom(?float $entryPaidAmountFrom = null): self
     {
@@ -382,7 +382,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set entryPaidAmountTo value
      * @param float $entryPaidAmountTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setEntryPaidAmountTo(?float $entryPaidAmountTo = null): self
     {
@@ -405,7 +405,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set settlementAmountFrom value
      * @param float $settlementAmountFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setSettlementAmountFrom(?float $settlementAmountFrom = null): self
     {
@@ -428,7 +428,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set settlementAmountTo value
      * @param float $settlementAmountTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setSettlementAmountTo(?float $settlementAmountTo = null): self
     {
@@ -451,7 +451,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set invoiceNo value
      * @param string $invoiceNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setInvoiceNo(?string $invoiceNo = null): self
     {
@@ -474,7 +474,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set entryAccountFrom value
      * @param string $entryAccountFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setEntryAccountFrom(?string $entryAccountFrom = null): self
     {
@@ -497,7 +497,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set entryAccountTo value
      * @param string $entryAccountTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setEntryAccountTo(?string $entryAccountTo = null): self
     {
@@ -520,7 +520,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set entryId value
      * @param string $entryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setEntryId(?string $entryId = null): self
     {
@@ -543,7 +543,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set withSettlement value
      * @param bool $withSettlement
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setWithSettlement(?bool $withSettlement = null): self
     {
@@ -566,7 +566,7 @@ class SearchPaymentProviderEntriesRequest extends AbstractStructBase
     /**
      * Set withDifference value
      * @param bool $withDifference
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchPaymentProviderEntriesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchPaymentProviderEntriesRequest
      */
     public function setWithDifference(?bool $withDifference = null): self
     {

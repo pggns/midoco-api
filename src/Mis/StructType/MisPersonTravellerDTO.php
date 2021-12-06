@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -207,7 +207,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set birthday value
      * @param string $birthday
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setBirthday(?string $birthday = null): self
     {
@@ -230,7 +230,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set birthdayDay value
      * @param int $birthdayDay
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setBirthdayDay(?int $birthdayDay = null): self
     {
@@ -253,7 +253,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set birthdayMonth value
      * @param int $birthdayMonth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setBirthdayMonth(?int $birthdayMonth = null): self
     {
@@ -276,7 +276,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set birthdayYear value
      * @param int $birthdayYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setBirthdayYear(?int $birthdayYear = null): self
     {
@@ -299,7 +299,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -322,7 +322,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set expiryDate value
      * @param string $expiryDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setExpiryDate(?string $expiryDate = null): self
     {
@@ -345,7 +345,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -368,7 +368,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set idCardNo value
      * @param string $idCardNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setIdCardNo(?string $idCardNo = null): self
     {
@@ -391,7 +391,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set idCardType value
      * @param string $idCardType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setIdCardType(?string $idCardType = null): self
     {
@@ -414,7 +414,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set issueDate value
      * @param string $issueDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setIssueDate(?string $issueDate = null): self
     {
@@ -437,7 +437,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set issuePlace value
      * @param string $issuePlace
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setIssuePlace(?string $issuePlace = null): self
     {
@@ -460,7 +460,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -483,7 +483,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setName(?string $name = null): self
     {
@@ -506,7 +506,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set nationality value
      * @param string $nationality
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setNationality(?string $nationality = null): self
     {
@@ -529,7 +529,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -552,7 +552,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set placeOfBirth value
      * @param string $placeOfBirth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setPlaceOfBirth(?string $placeOfBirth = null): self
     {
@@ -575,7 +575,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -598,7 +598,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set salutationId value
      * @param string $salutationId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setSalutationId(?string $salutationId = null): self
     {
@@ -621,7 +621,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set salutationLetter value
      * @param string $salutationLetter
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setSalutationLetter(?string $salutationLetter = null): self
     {
@@ -644,7 +644,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setTitle(?string $title = null): self
     {
@@ -667,7 +667,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set travellerId value
      * @param int $travellerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setTravellerId(?int $travellerId = null): self
     {
@@ -690,7 +690,7 @@ class MisPersonTravellerDTO extends AbstractStructBase
     /**
      * Set travellerType value
      * @param string $travellerType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisPersonTravellerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisPersonTravellerDTO
      */
     public function setTravellerType(?string $travellerType = null): self
     {

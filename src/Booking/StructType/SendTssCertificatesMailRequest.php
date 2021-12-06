@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SendTssCertificatesMailRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SendTssCertificatesMailRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SendTssCertificatesMailRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -86,7 +86,7 @@ class SendTssCertificatesMailRequest extends AbstractStructBase
     /**
      * Set tssSystem value
      * @param string $tssSystem
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SendTssCertificatesMailRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SendTssCertificatesMailRequest
      */
     public function setTssSystem(?string $tssSystem = null): self
     {
@@ -109,7 +109,7 @@ class SendTssCertificatesMailRequest extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SendTssCertificatesMailRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SendTssCertificatesMailRequest
      */
     public function setTssId(?string $tssId = null): self
     {
@@ -132,7 +132,7 @@ class SendTssCertificatesMailRequest extends AbstractStructBase
     /**
      * Set emailAddresses value
      * @param string $emailAddresses
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\SendTssCertificatesMailRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\SendTssCertificatesMailRequest
      */
     public function setEmailAddresses(?string $emailAddresses = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMfLocalRequest extends AbstractStructBase
      * The MidocoMfLocal
      * Meta information extracted from the WSDL
      * - ref: MidocoMfLocal
-     * @var \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfLocal|null
+     * @var \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfLocal|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfLocal $MidocoMfLocal = null;
+    protected ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfLocal $MidocoMfLocal = null;
     /**
      * Constructor method for SaveMfLocalRequest
      * @uses SaveMfLocalRequest::setMidocoMfLocal()
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfLocal $midocoMfLocal
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfLocal $midocoMfLocal
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfLocal $midocoMfLocal = null)
+    public function __construct(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfLocal $midocoMfLocal = null)
     {
         $this
             ->setMidocoMfLocal($midocoMfLocal);
     }
     /**
      * Get MidocoMfLocal value
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfLocal|null
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfLocal|null
      */
-    public function getMidocoMfLocal(): ?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfLocal
+    public function getMidocoMfLocal(): ?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfLocal
     {
         return $this->MidocoMfLocal;
     }
     /**
      * Set MidocoMfLocal value
-     * @param \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfLocal $midocoMfLocal
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\SaveMfLocalRequest
+     * @param \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfLocal $midocoMfLocal
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\SaveMfLocalRequest
      */
-    public function setMidocoMfLocal(?\Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoMfLocal $midocoMfLocal = null): self
+    public function setMidocoMfLocal(?\Pggns\MidocoApi\OrderglobalSD\StructType\MidocoMfLocal $midocoMfLocal = null): self
     {
         $this->MidocoMfLocal = $midocoMfLocal;
         

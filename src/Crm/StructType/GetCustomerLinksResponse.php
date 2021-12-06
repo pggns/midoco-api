@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetCustomerLinksResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmCustomerLink
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerLinkDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\CrmCustomerLinkDTO[]
      */
     protected ?array $MidocoCrmCustomerLink = null;
     /**
      * Constructor method for GetCustomerLinksResponse
      * @uses GetCustomerLinksResponse::setMidocoCrmCustomerLink()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerLinkDTO[] $midocoCrmCustomerLink
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmCustomerLinkDTO[] $midocoCrmCustomerLink
      */
     public function __construct(?array $midocoCrmCustomerLink = null)
     {
@@ -36,7 +36,7 @@ class GetCustomerLinksResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomerLink value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerLinkDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmCustomerLinkDTO[]
      */
     public function getMidocoCrmCustomerLink(): ?array
     {
@@ -57,12 +57,12 @@ class GetCustomerLinksResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCustomerLinksResponseMidocoCrmCustomerLinkItem) {
             // validation for constraint: itemType
-            if (!$getCustomerLinksResponseMidocoCrmCustomerLinkItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerLinkDTO) {
+            if (!$getCustomerLinksResponseMidocoCrmCustomerLinkItem instanceof \Pggns\MidocoApi\Crm\StructType\CrmCustomerLinkDTO) {
                 $invalidValues[] = is_object($getCustomerLinksResponseMidocoCrmCustomerLinkItem) ? get_class($getCustomerLinksResponseMidocoCrmCustomerLinkItem) : sprintf('%s(%s)', gettype($getCustomerLinksResponseMidocoCrmCustomerLinkItem), var_export($getCustomerLinksResponseMidocoCrmCustomerLinkItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmCustomerLink property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerLinkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmCustomerLink property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmCustomerLinkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetCustomerLinksResponse extends AbstractStructBase
     /**
      * Set MidocoCrmCustomerLink value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerLinkDTO[] $midocoCrmCustomerLink
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerLinksResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmCustomerLinkDTO[] $midocoCrmCustomerLink
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerLinksResponse
      */
     public function setMidocoCrmCustomerLink(?array $midocoCrmCustomerLink = null): self
     {
@@ -87,14 +87,14 @@ class GetCustomerLinksResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmCustomerLink value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerLinkDTO $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCustomerLinksResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\CrmCustomerLinkDTO $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerLinksResponse
      */
-    public function addToMidocoCrmCustomerLink(\Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerLinkDTO $item): self
+    public function addToMidocoCrmCustomerLink(\Pggns\MidocoApi\Crm\StructType\CrmCustomerLinkDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerLinkDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmCustomerLink property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\CrmCustomerLinkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CrmCustomerLinkDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmCustomerLink property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmCustomerLinkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmCustomerLink[] = $item;
         

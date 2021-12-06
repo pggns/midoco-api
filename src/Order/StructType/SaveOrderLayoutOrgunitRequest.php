@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class SaveOrderLayoutOrgunitRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: NotAllowedOrgunit
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderLayoutOrgunitDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\OrderLayoutOrgunitDTO[]
      */
     protected ?array $NotAllowedOrgunit = null;
     /**
@@ -31,7 +31,7 @@ class SaveOrderLayoutOrgunitRequest extends AbstractStructBase
      * Constructor method for SaveOrderLayoutOrgunitRequest
      * @uses SaveOrderLayoutOrgunitRequest::setNotAllowedOrgunit()
      * @uses SaveOrderLayoutOrgunitRequest::setAsNeighbor()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderLayoutOrgunitDTO[] $notAllowedOrgunit
+     * @param \Pggns\MidocoApi\Order\StructType\OrderLayoutOrgunitDTO[] $notAllowedOrgunit
      * @param bool $asNeighbor
      */
     public function __construct(?array $notAllowedOrgunit = null, ?bool $asNeighbor = null)
@@ -42,7 +42,7 @@ class SaveOrderLayoutOrgunitRequest extends AbstractStructBase
     }
     /**
      * Get NotAllowedOrgunit value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderLayoutOrgunitDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\OrderLayoutOrgunitDTO[]
      */
     public function getNotAllowedOrgunit(): ?array
     {
@@ -63,12 +63,12 @@ class SaveOrderLayoutOrgunitRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveOrderLayoutOrgunitRequestNotAllowedOrgunitItem) {
             // validation for constraint: itemType
-            if (!$saveOrderLayoutOrgunitRequestNotAllowedOrgunitItem instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderLayoutOrgunitDTO) {
+            if (!$saveOrderLayoutOrgunitRequestNotAllowedOrgunitItem instanceof \Pggns\MidocoApi\Order\StructType\OrderLayoutOrgunitDTO) {
                 $invalidValues[] = is_object($saveOrderLayoutOrgunitRequestNotAllowedOrgunitItem) ? get_class($saveOrderLayoutOrgunitRequestNotAllowedOrgunitItem) : sprintf('%s(%s)', gettype($saveOrderLayoutOrgunitRequestNotAllowedOrgunitItem), var_export($saveOrderLayoutOrgunitRequestNotAllowedOrgunitItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The NotAllowedOrgunit property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderLayoutOrgunitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The NotAllowedOrgunit property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderLayoutOrgunitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,8 +77,8 @@ class SaveOrderLayoutOrgunitRequest extends AbstractStructBase
     /**
      * Set NotAllowedOrgunit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderLayoutOrgunitDTO[] $notAllowedOrgunit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderLayoutOrgunitRequest
+     * @param \Pggns\MidocoApi\Order\StructType\OrderLayoutOrgunitDTO[] $notAllowedOrgunit
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderLayoutOrgunitRequest
      */
     public function setNotAllowedOrgunit(?array $notAllowedOrgunit = null): self
     {
@@ -93,14 +93,14 @@ class SaveOrderLayoutOrgunitRequest extends AbstractStructBase
     /**
      * Add item to NotAllowedOrgunit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderLayoutOrgunitDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderLayoutOrgunitRequest
+     * @param \Pggns\MidocoApi\Order\StructType\OrderLayoutOrgunitDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderLayoutOrgunitRequest
      */
-    public function addToNotAllowedOrgunit(\Pggns\MidocoApi\Api\Order\StructType\OrderLayoutOrgunitDTO $item): self
+    public function addToNotAllowedOrgunit(\Pggns\MidocoApi\Order\StructType\OrderLayoutOrgunitDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderLayoutOrgunitDTO) {
-            throw new InvalidArgumentException(sprintf('The NotAllowedOrgunit property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderLayoutOrgunitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\OrderLayoutOrgunitDTO) {
+            throw new InvalidArgumentException(sprintf('The NotAllowedOrgunit property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderLayoutOrgunitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->NotAllowedOrgunit[] = $item;
         
@@ -117,7 +117,7 @@ class SaveOrderLayoutOrgunitRequest extends AbstractStructBase
     /**
      * Set asNeighbor value
      * @param bool $asNeighbor
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderLayoutOrgunitRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderLayoutOrgunitRequest
      */
     public function setAsNeighbor(?bool $asNeighbor = null): self
     {

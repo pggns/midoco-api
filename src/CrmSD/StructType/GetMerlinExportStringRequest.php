@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class GetMerlinExportStringRequest extends AbstractStructBase
      * The MidocoCrmCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
      * The MidocoSelectedCrmPersonTraveller
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSelectedCrmPersonTraveller
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[]
      */
     protected ?array $MidocoSelectedCrmPersonTraveller = null;
     /**
@@ -45,12 +45,12 @@ class GetMerlinExportStringRequest extends AbstractStructBase
      * @uses GetMerlinExportStringRequest::setMidocoSelectedCrmPersonTraveller()
      * @uses GetMerlinExportStringRequest::setExportBirthday()
      * @uses GetMerlinExportStringRequest::setExportAge()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[] $midocoSelectedCrmPersonTraveller
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[] $midocoSelectedCrmPersonTraveller
      * @param bool $exportBirthday
      * @param bool $exportAge
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?array $midocoSelectedCrmPersonTraveller = null, ?bool $exportBirthday = null, ?bool $exportAge = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?array $midocoSelectedCrmPersonTraveller = null, ?bool $exportBirthday = null, ?bool $exportAge = null)
     {
         $this
             ->setMidocoCrmCustomer($midocoCrmCustomer)
@@ -60,18 +60,18 @@ class GetMerlinExportStringRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMerlinExportStringRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMerlinExportStringRequest
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Api\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         
@@ -79,7 +79,7 @@ class GetMerlinExportStringRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSelectedCrmPersonTraveller value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[]
      */
     public function getMidocoSelectedCrmPersonTraveller(): ?array
     {
@@ -100,12 +100,12 @@ class GetMerlinExportStringRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMerlinExportStringRequestMidocoSelectedCrmPersonTravellerItem) {
             // validation for constraint: itemType
-            if (!$getMerlinExportStringRequestMidocoSelectedCrmPersonTravellerItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller) {
+            if (!$getMerlinExportStringRequestMidocoSelectedCrmPersonTravellerItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller) {
                 $invalidValues[] = is_object($getMerlinExportStringRequestMidocoSelectedCrmPersonTravellerItem) ? get_class($getMerlinExportStringRequestMidocoSelectedCrmPersonTravellerItem) : sprintf('%s(%s)', gettype($getMerlinExportStringRequestMidocoSelectedCrmPersonTravellerItem), var_export($getMerlinExportStringRequestMidocoSelectedCrmPersonTravellerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSelectedCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSelectedCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -114,8 +114,8 @@ class GetMerlinExportStringRequest extends AbstractStructBase
     /**
      * Set MidocoSelectedCrmPersonTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[] $midocoSelectedCrmPersonTraveller
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMerlinExportStringRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[] $midocoSelectedCrmPersonTraveller
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMerlinExportStringRequest
      */
     public function setMidocoSelectedCrmPersonTraveller(?array $midocoSelectedCrmPersonTraveller = null): self
     {
@@ -130,14 +130,14 @@ class GetMerlinExportStringRequest extends AbstractStructBase
     /**
      * Add item to MidocoSelectedCrmPersonTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMerlinExportStringRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMerlinExportStringRequest
      */
-    public function addToMidocoSelectedCrmPersonTraveller(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller $item): self
+    public function addToMidocoSelectedCrmPersonTraveller(\Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller) {
-            throw new InvalidArgumentException(sprintf('The MidocoSelectedCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoSelectedCrmPersonTraveller, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller) {
+            throw new InvalidArgumentException(sprintf('The MidocoSelectedCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSelectedCrmPersonTraveller[] = $item;
         
@@ -154,7 +154,7 @@ class GetMerlinExportStringRequest extends AbstractStructBase
     /**
      * Set exportBirthday value
      * @param bool $exportBirthday
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMerlinExportStringRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMerlinExportStringRequest
      */
     public function setExportBirthday(?bool $exportBirthday = null): self
     {
@@ -177,7 +177,7 @@ class GetMerlinExportStringRequest extends AbstractStructBase
     /**
      * Set exportAge value
      * @param bool $exportAge
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMerlinExportStringRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMerlinExportStringRequest
      */
     public function setExportAge(?bool $exportAge = null): self
     {

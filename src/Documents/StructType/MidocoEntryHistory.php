@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoEntryHistory extends EntryHistoryDTO
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoEntryHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoEntryHistory
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -78,7 +78,7 @@ class MidocoEntryHistory extends EntryHistoryDTO
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoEntryHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoEntryHistory
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -101,7 +101,7 @@ class MidocoEntryHistory extends EntryHistoryDTO
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoEntryHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoEntryHistory
      */
     public function setBookingDate(?string $bookingDate = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetCriteriaFieldsForDisplayResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCriteriaField
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType[]
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType[]
      */
     protected ?array $MidocoCriteriaField = null;
     /**
      * Constructor method for GetCriteriaFieldsForDisplayResponse
      * @uses GetCriteriaFieldsForDisplayResponse::setMidocoCriteriaField()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType[] $midocoCriteriaField
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType[] $midocoCriteriaField
      */
     public function __construct(?array $midocoCriteriaField = null)
     {
@@ -36,7 +36,7 @@ class GetCriteriaFieldsForDisplayResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCriteriaField value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType[]
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType[]
      */
     public function getMidocoCriteriaField(): ?array
     {
@@ -57,12 +57,12 @@ class GetCriteriaFieldsForDisplayResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCriteriaFieldsForDisplayResponseMidocoCriteriaFieldItem) {
             // validation for constraint: itemType
-            if (!$getCriteriaFieldsForDisplayResponseMidocoCriteriaFieldItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType) {
+            if (!$getCriteriaFieldsForDisplayResponseMidocoCriteriaFieldItem instanceof \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType) {
                 $invalidValues[] = is_object($getCriteriaFieldsForDisplayResponseMidocoCriteriaFieldItem) ? get_class($getCriteriaFieldsForDisplayResponseMidocoCriteriaFieldItem) : sprintf('%s(%s)', gettype($getCriteriaFieldsForDisplayResponseMidocoCriteriaFieldItem), var_export($getCriteriaFieldsForDisplayResponseMidocoCriteriaFieldItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCriteriaField property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCriteriaField property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetCriteriaFieldsForDisplayResponse extends AbstractStructBase
     /**
      * Set MidocoCriteriaField value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType[] $midocoCriteriaField
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCriteriaFieldsForDisplayResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType[] $midocoCriteriaField
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCriteriaFieldsForDisplayResponse
      */
     public function setMidocoCriteriaField(?array $midocoCriteriaField = null): self
     {
@@ -87,14 +87,14 @@ class GetCriteriaFieldsForDisplayResponse extends AbstractStructBase
     /**
      * Add item to MidocoCriteriaField value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCriteriaFieldsForDisplayResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCriteriaFieldsForDisplayResponse
      */
-    public function addToMidocoCriteriaField(\Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType $item): self
+    public function addToMidocoCriteriaField(\Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCriteriaField property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\MidocoCriteriaFieldType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCriteriaField property can only contain items of type \Pggns\MidocoApi\Mis\StructType\MidocoCriteriaFieldType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCriteriaField[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class FIBUInvRbBalanceLineType extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -94,7 +94,7 @@ class FIBUInvRbBalanceLineType extends AbstractStructBase
     /**
      * Set opNo value
      * @param string $opNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType
      */
     public function setOpNo(?string $opNo = null): self
     {
@@ -117,7 +117,7 @@ class FIBUInvRbBalanceLineType extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType
      */
     public function setAmount(?float $amount = null): self
     {
@@ -140,7 +140,7 @@ class FIBUInvRbBalanceLineType extends AbstractStructBase
     /**
      * Set invoiceDate value
      * @param string $invoiceDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType
      */
     public function setInvoiceDate(?string $invoiceDate = null): self
     {
@@ -163,7 +163,7 @@ class FIBUInvRbBalanceLineType extends AbstractStructBase
     /**
      * Set exportDate value
      * @param string $exportDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FIBUInvRbBalanceLineType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FIBUInvRbBalanceLineType
      */
     public function setExportDate(?string $exportDate = null): self
     {

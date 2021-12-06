@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMfDefRequest extends AbstractStructBase
      * The MidocoMfDef
      * Meta information extracted from the WSDL
      * - ref: MidocoMfDef
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoMfDef|null
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoMfDef|null
      */
-    protected ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoMfDef $MidocoMfDef = null;
+    protected ?\Pggns\MidocoApi\Workflow\StructType\MidocoMfDef $MidocoMfDef = null;
     /**
      * Constructor method for SaveMfDefRequest
      * @uses SaveMfDefRequest::setMidocoMfDef()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoMfDef $midocoMfDef
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoMfDef $midocoMfDef
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoMfDef $midocoMfDef = null)
+    public function __construct(?\Pggns\MidocoApi\Workflow\StructType\MidocoMfDef $midocoMfDef = null)
     {
         $this
             ->setMidocoMfDef($midocoMfDef);
     }
     /**
      * Get MidocoMfDef value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoMfDef|null
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoMfDef|null
      */
-    public function getMidocoMfDef(): ?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoMfDef
+    public function getMidocoMfDef(): ?\Pggns\MidocoApi\Workflow\StructType\MidocoMfDef
     {
         return $this->MidocoMfDef;
     }
     /**
      * Set MidocoMfDef value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoMfDef $midocoMfDef
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SaveMfDefRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoMfDef $midocoMfDef
+     * @return \Pggns\MidocoApi\Workflow\StructType\SaveMfDefRequest
      */
-    public function setMidocoMfDef(?\Pggns\MidocoApi\Api\Workflow\StructType\MidocoMfDef $midocoMfDef = null): self
+    public function setMidocoMfDef(?\Pggns\MidocoApi\Workflow\StructType\MidocoMfDef $midocoMfDef = null): self
     {
         $this->MidocoMfDef = $midocoMfDef;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoInsurer extends InsurerDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoInsurer
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoInsurer
      */
     public function setInherited(?bool $inherited = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SaveCustomerCriteriaResponse extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerCriteriaResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCustomerCriteriaResponse
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +78,7 @@ class SaveCustomerCriteriaResponse extends AbstractStructBase
     /**
      * Set criteriaId value
      * @param int $criteriaId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerCriteriaResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCustomerCriteriaResponse
      */
     public function setCriteriaId(?int $criteriaId = null): self
     {
@@ -101,7 +101,7 @@ class SaveCustomerCriteriaResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCustomerCriteriaResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCustomerCriteriaResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

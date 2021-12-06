@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set cubeId value
      * @param int $cubeId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MisReportDTO
      */
     public function setCubeId(?int $cubeId = null): self
     {
@@ -110,7 +110,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set definition value
      * @param string $definition
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MisReportDTO
      */
     public function setDefinition(?string $definition = null): self
     {
@@ -133,7 +133,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MisReportDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -156,7 +156,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MisReportDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -179,7 +179,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MisReportDTO
      */
     public function setReportId(?int $reportId = null): self
     {
@@ -202,7 +202,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set reportName value
      * @param string $reportName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MisReportDTO
      */
     public function setReportName(?string $reportName = null): self
     {
@@ -225,7 +225,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set visibility value
      * @param int $visibility
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MisReportDTO
      */
     public function setVisibility(?int $visibility = null): self
     {

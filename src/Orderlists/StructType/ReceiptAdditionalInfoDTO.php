@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class ReceiptAdditionalInfoDTO extends AbstractStructBase
     /**
      * Set infoLine value
      * @param string $infoLine
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptAdditionalInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptAdditionalInfoDTO
      */
     public function setInfoLine(?string $infoLine = null): self
     {
@@ -78,7 +78,7 @@ class ReceiptAdditionalInfoDTO extends AbstractStructBase
     /**
      * Set linePosition value
      * @param int $linePosition
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptAdditionalInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptAdditionalInfoDTO
      */
     public function setLinePosition(?int $linePosition = null): self
     {
@@ -101,7 +101,7 @@ class ReceiptAdditionalInfoDTO extends AbstractStructBase
     /**
      * Set receiptId value
      * @param int $receiptId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptAdditionalInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptAdditionalInfoDTO
      */
     public function setReceiptId(?int $receiptId = null): self
     {

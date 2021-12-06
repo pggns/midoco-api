@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -20,13 +20,13 @@ class GetMidocoVatDivisionTemplatesForSupplierResponse extends AbstractStructBas
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVatDivisionTemplate
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate[]
      */
     protected ?array $MidocoVatDivisionTemplate = null;
     /**
      * Constructor method for GetMidocoVatDivisionTemplatesForSupplierResponse
      * @uses GetMidocoVatDivisionTemplatesForSupplierResponse::setMidocoVatDivisionTemplate()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate[] $midocoVatDivisionTemplate
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate[] $midocoVatDivisionTemplate
      */
     public function __construct(?array $midocoVatDivisionTemplate = null)
     {
@@ -35,7 +35,7 @@ class GetMidocoVatDivisionTemplatesForSupplierResponse extends AbstractStructBas
     }
     /**
      * Get MidocoVatDivisionTemplate value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate[]
      */
     public function getMidocoVatDivisionTemplate(): ?array
     {
@@ -56,12 +56,12 @@ class GetMidocoVatDivisionTemplatesForSupplierResponse extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $getMidocoVatDivisionTemplatesForSupplierResponseMidocoVatDivisionTemplateItem) {
             // validation for constraint: itemType
-            if (!$getMidocoVatDivisionTemplatesForSupplierResponseMidocoVatDivisionTemplateItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate) {
+            if (!$getMidocoVatDivisionTemplatesForSupplierResponseMidocoVatDivisionTemplateItem instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate) {
                 $invalidValues[] = is_object($getMidocoVatDivisionTemplatesForSupplierResponseMidocoVatDivisionTemplateItem) ? get_class($getMidocoVatDivisionTemplatesForSupplierResponseMidocoVatDivisionTemplateItem) : sprintf('%s(%s)', gettype($getMidocoVatDivisionTemplatesForSupplierResponseMidocoVatDivisionTemplateItem), var_export($getMidocoVatDivisionTemplatesForSupplierResponseMidocoVatDivisionTemplateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatDivisionTemplate property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatDivisionTemplate property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -70,8 +70,8 @@ class GetMidocoVatDivisionTemplatesForSupplierResponse extends AbstractStructBas
     /**
      * Set MidocoVatDivisionTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate[] $midocoVatDivisionTemplate
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoVatDivisionTemplatesForSupplierResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate[] $midocoVatDivisionTemplate
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoVatDivisionTemplatesForSupplierResponse
      */
     public function setMidocoVatDivisionTemplate(?array $midocoVatDivisionTemplate = null): self
     {
@@ -86,14 +86,14 @@ class GetMidocoVatDivisionTemplatesForSupplierResponse extends AbstractStructBas
     /**
      * Add item to MidocoVatDivisionTemplate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMidocoVatDivisionTemplatesForSupplierResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMidocoVatDivisionTemplatesForSupplierResponse
      */
-    public function addToMidocoVatDivisionTemplate(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate $item): self
+    public function addToMidocoVatDivisionTemplate(\Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatDivisionTemplate property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoVatDivisionTemplate, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatDivisionTemplate property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoVatDivisionTemplate, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatDivisionTemplate[] = $item;
         

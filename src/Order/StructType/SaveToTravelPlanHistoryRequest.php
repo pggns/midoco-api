@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -89,7 +89,7 @@ class SaveToTravelPlanHistoryRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveToTravelPlanHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveToTravelPlanHistoryRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -112,7 +112,7 @@ class SaveToTravelPlanHistoryRequest extends AbstractStructBase
     /**
      * Set printingUser value
      * @param int $printingUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveToTravelPlanHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveToTravelPlanHistoryRequest
      */
     public function setPrintingUser(?int $printingUser = null): self
     {
@@ -135,7 +135,7 @@ class SaveToTravelPlanHistoryRequest extends AbstractStructBase
     /**
      * Set printingDate value
      * @param string $printingDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveToTravelPlanHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveToTravelPlanHistoryRequest
      */
     public function setPrintingDate(?string $printingDate = null): self
     {
@@ -158,7 +158,7 @@ class SaveToTravelPlanHistoryRequest extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveToTravelPlanHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveToTravelPlanHistoryRequest
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -181,7 +181,7 @@ class SaveToTravelPlanHistoryRequest extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveToTravelPlanHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveToTravelPlanHistoryRequest
      */
     public function setMedia(?string $media = null): self
     {
@@ -204,7 +204,7 @@ class SaveToTravelPlanHistoryRequest extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveToTravelPlanHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveToTravelPlanHistoryRequest
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -227,7 +227,7 @@ class SaveToTravelPlanHistoryRequest extends AbstractStructBase
     /**
      * Set callDate value
      * @param string $callDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveToTravelPlanHistoryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveToTravelPlanHistoryRequest
      */
     public function setCallDate(?string $callDate = null): self
     {

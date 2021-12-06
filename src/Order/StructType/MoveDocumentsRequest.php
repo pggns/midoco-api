@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,7 +18,7 @@ class MoveDocumentsRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: MidocoSellItemId
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemId[]
      */
     protected ?array $MidocoSellItemId = null;
     /**
@@ -36,7 +36,7 @@ class MoveDocumentsRequest extends AbstractStructBase
      * @uses MoveDocumentsRequest::setMidocoSellItemId()
      * @uses MoveDocumentsRequest::setDestinationOrderId()
      * @uses MoveDocumentsRequest::setDestinationBookingId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId[] $midocoSellItemId
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemId[] $midocoSellItemId
      * @param int $destinationOrderId
      * @param string $destinationBookingId
      */
@@ -49,7 +49,7 @@ class MoveDocumentsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSellItemId value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemId[]
      */
     public function getMidocoSellItemId(): ?array
     {
@@ -70,12 +70,12 @@ class MoveDocumentsRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $moveDocumentsRequestMidocoSellItemIdItem) {
             // validation for constraint: itemType
-            if (!$moveDocumentsRequestMidocoSellItemIdItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId) {
+            if (!$moveDocumentsRequestMidocoSellItemIdItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemId) {
                 $invalidValues[] = is_object($moveDocumentsRequestMidocoSellItemIdItem) ? get_class($moveDocumentsRequestMidocoSellItemIdItem) : sprintf('%s(%s)', gettype($moveDocumentsRequestMidocoSellItemIdItem), var_export($moveDocumentsRequestMidocoSellItemIdItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellItemId property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellItemId property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemId, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -84,8 +84,8 @@ class MoveDocumentsRequest extends AbstractStructBase
     /**
      * Set MidocoSellItemId value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId[] $midocoSellItemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MoveDocumentsRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemId[] $midocoSellItemId
+     * @return \Pggns\MidocoApi\Order\StructType\MoveDocumentsRequest
      */
     public function setMidocoSellItemId(?array $midocoSellItemId = null): self
     {
@@ -100,14 +100,14 @@ class MoveDocumentsRequest extends AbstractStructBase
     /**
      * Add item to MidocoSellItemId value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MoveDocumentsRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemId $item
+     * @return \Pggns\MidocoApi\Order\StructType\MoveDocumentsRequest
      */
-    public function addToMidocoSellItemId(\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId $item): self
+    public function addToMidocoSellItemId(\Pggns\MidocoApi\Order\StructType\MidocoSellItemId $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellItemId property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoSellItemId) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellItemId property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoSellItemId, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellItemId[] = $item;
         
@@ -124,7 +124,7 @@ class MoveDocumentsRequest extends AbstractStructBase
     /**
      * Set destinationOrderId value
      * @param int $destinationOrderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MoveDocumentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MoveDocumentsRequest
      */
     public function setDestinationOrderId(?int $destinationOrderId = null): self
     {
@@ -147,7 +147,7 @@ class MoveDocumentsRequest extends AbstractStructBase
     /**
      * Set destinationBookingId value
      * @param string $destinationBookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MoveDocumentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MoveDocumentsRequest
      */
     public function setDestinationBookingId(?string $destinationBookingId = null): self
     {

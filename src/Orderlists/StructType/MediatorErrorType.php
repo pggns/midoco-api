@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class MediatorErrorType extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorErrorType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorErrorType
      */
     public function setMediatorId(string $mediatorId): self
     {
@@ -74,7 +74,7 @@ class MediatorErrorType extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MediatorErrorType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MediatorErrorType
      */
     public function setMessage(string $message): self
     {

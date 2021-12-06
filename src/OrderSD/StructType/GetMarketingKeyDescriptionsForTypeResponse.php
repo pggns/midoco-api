@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetMarketingKeyDescriptionsForTypeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMarketingKeyDescription
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDescriptionType[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDescriptionType[]
      */
     protected ?array $MidocoMarketingKeyDescription = null;
     /**
      * Constructor method for GetMarketingKeyDescriptionsForTypeResponse
      * @uses GetMarketingKeyDescriptionsForTypeResponse::setMidocoMarketingKeyDescription()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDescriptionType[] $midocoMarketingKeyDescription
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDescriptionType[] $midocoMarketingKeyDescription
      */
     public function __construct(?array $midocoMarketingKeyDescription = null)
     {
@@ -34,7 +34,7 @@ class GetMarketingKeyDescriptionsForTypeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMarketingKeyDescription value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDescriptionType[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDescriptionType[]
      */
     public function getMidocoMarketingKeyDescription(): ?array
     {
@@ -55,12 +55,12 @@ class GetMarketingKeyDescriptionsForTypeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMarketingKeyDescriptionsForTypeResponseMidocoMarketingKeyDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getMarketingKeyDescriptionsForTypeResponseMidocoMarketingKeyDescriptionItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDescriptionType) {
+            if (!$getMarketingKeyDescriptionsForTypeResponseMidocoMarketingKeyDescriptionItem instanceof \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDescriptionType) {
                 $invalidValues[] = is_object($getMarketingKeyDescriptionsForTypeResponseMidocoMarketingKeyDescriptionItem) ? get_class($getMarketingKeyDescriptionsForTypeResponseMidocoMarketingKeyDescriptionItem) : sprintf('%s(%s)', gettype($getMarketingKeyDescriptionsForTypeResponseMidocoMarketingKeyDescriptionItem), var_export($getMarketingKeyDescriptionsForTypeResponseMidocoMarketingKeyDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMarketingKeyDescription property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDescriptionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMarketingKeyDescription property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDescriptionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetMarketingKeyDescriptionsForTypeResponse extends AbstractStructBase
     /**
      * Set MidocoMarketingKeyDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDescriptionType[] $midocoMarketingKeyDescription
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeyDescriptionsForTypeResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDescriptionType[] $midocoMarketingKeyDescription
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeyDescriptionsForTypeResponse
      */
     public function setMidocoMarketingKeyDescription(?array $midocoMarketingKeyDescription = null): self
     {
@@ -85,14 +85,14 @@ class GetMarketingKeyDescriptionsForTypeResponse extends AbstractStructBase
     /**
      * Add item to MidocoMarketingKeyDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDescriptionType $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetMarketingKeyDescriptionsForTypeResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDescriptionType $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetMarketingKeyDescriptionsForTypeResponse
      */
-    public function addToMidocoMarketingKeyDescription(\Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDescriptionType $item): self
+    public function addToMidocoMarketingKeyDescription(\Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDescriptionType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDescriptionType) {
-            throw new InvalidArgumentException(sprintf('The MidocoMarketingKeyDescription property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MarketingKeyDescriptionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDescriptionType) {
+            throw new InvalidArgumentException(sprintf('The MidocoMarketingKeyDescription property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MarketingKeyDescriptionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMarketingKeyDescription[] = $item;
         

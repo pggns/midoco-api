@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class SupplAgencySettlemBookAttributeDTO extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemBookAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemBookAttributeDTO
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -86,7 +86,7 @@ class SupplAgencySettlemBookAttributeDTO extends AbstractStructBase
     /**
      * Set attributeValue value
      * @param string $attributeValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemBookAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemBookAttributeDTO
      */
     public function setAttributeValue(?string $attributeValue = null): self
     {
@@ -109,7 +109,7 @@ class SupplAgencySettlemBookAttributeDTO extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemBookAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemBookAttributeDTO
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -132,7 +132,7 @@ class SupplAgencySettlemBookAttributeDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SupplAgencySettlemBookAttributeDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemBookAttributeDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class DeleteMidocoTaskQueueRequest extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - ref: MidocoTaskQueue
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue
      */
-    protected \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $MidocoTaskQueue;
+    protected \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $MidocoTaskQueue;
     /**
      * Constructor method for DeleteMidocoTaskQueueRequest
      * @uses DeleteMidocoTaskQueueRequest::setMidocoTaskQueue()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue
      */
-    public function __construct(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue)
+    public function __construct(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue)
     {
         $this
             ->setMidocoTaskQueue($midocoTaskQueue);
     }
     /**
      * Get MidocoTaskQueue value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue
      */
-    public function getMidocoTaskQueue(): \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue
+    public function getMidocoTaskQueue(): \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue
     {
         return $this->MidocoTaskQueue;
     }
     /**
      * Set MidocoTaskQueue value
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeleteMidocoTaskQueueRequest
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskQueueRequest
      */
-    public function setMidocoTaskQueue(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue): self
+    public function setMidocoTaskQueue(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskQueue $midocoTaskQueue): self
     {
         $this->MidocoTaskQueue = $midocoTaskQueue;
         

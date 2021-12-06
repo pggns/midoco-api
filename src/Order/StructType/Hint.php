@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -52,7 +52,7 @@ class Hint extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Hint
+     * @return \Pggns\MidocoApi\Order\StructType\Hint
      */
     public function setPosition(int $position): self
     {
@@ -75,7 +75,7 @@ class Hint extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Hint
+     * @return \Pggns\MidocoApi\Order\StructType\Hint
      */
     public function setText(string $text): self
     {

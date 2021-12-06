@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteSupplierDocumentShippingResponse extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierDocumentShippingResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSupplierDocumentShippingResponse
      */
     public function setMessage(?string $message = null): self
     {

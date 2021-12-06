@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SendMediatorFormularRequest extends AbstractStructBase
      * The MidocoMediatorFormular
      * Meta information extracted from the WSDL
      * - ref: MidocoMediatorFormular
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular $MidocoMediatorFormular = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular $MidocoMediatorFormular = null;
     /**
      * The matchedOrderId
      * @var int|null
@@ -29,10 +29,10 @@ class SendMediatorFormularRequest extends AbstractStructBase
      * Constructor method for SendMediatorFormularRequest
      * @uses SendMediatorFormularRequest::setMidocoMediatorFormular()
      * @uses SendMediatorFormularRequest::setMatchedOrderId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular
      * @param int $matchedOrderId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular = null, ?int $matchedOrderId = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular = null, ?int $matchedOrderId = null)
     {
         $this
             ->setMidocoMediatorFormular($midocoMediatorFormular)
@@ -40,18 +40,18 @@ class SendMediatorFormularRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMediatorFormular value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular|null
      */
-    public function getMidocoMediatorFormular(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular
+    public function getMidocoMediatorFormular(): ?\Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular
     {
         return $this->MidocoMediatorFormular;
     }
     /**
      * Set MidocoMediatorFormular value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SendMediatorFormularRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular
+     * @return \Pggns\MidocoApi\Order\StructType\SendMediatorFormularRequest
      */
-    public function setMidocoMediatorFormular(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular = null): self
+    public function setMidocoMediatorFormular(?\Pggns\MidocoApi\Order\StructType\MidocoMediatorFormular $midocoMediatorFormular = null): self
     {
         $this->MidocoMediatorFormular = $midocoMediatorFormular;
         
@@ -68,7 +68,7 @@ class SendMediatorFormularRequest extends AbstractStructBase
     /**
      * Set matchedOrderId value
      * @param int $matchedOrderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SendMediatorFormularRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SendMediatorFormularRequest
      */
     public function setMatchedOrderId(?int $matchedOrderId = null): self
     {

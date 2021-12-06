@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SaveVoucherExpiryDateRequest extends AbstractStructBase
     /**
      * Set voucherId value
      * @param int $voucherId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveVoucherExpiryDateRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveVoucherExpiryDateRequest
      */
     public function setVoucherId(?int $voucherId = null): self
     {
@@ -78,7 +78,7 @@ class SaveVoucherExpiryDateRequest extends AbstractStructBase
     /**
      * Set newExpiryDate value
      * @param string $newExpiryDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveVoucherExpiryDateRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveVoucherExpiryDateRequest
      */
     public function setNewExpiryDate(?string $newExpiryDate = null): self
     {
@@ -101,7 +101,7 @@ class SaveVoucherExpiryDateRequest extends AbstractStructBase
     /**
      * Set expiryComment value
      * @param string $expiryComment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveVoucherExpiryDateRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveVoucherExpiryDateRequest
      */
     public function setExpiryComment(?string $expiryComment = null): self
     {

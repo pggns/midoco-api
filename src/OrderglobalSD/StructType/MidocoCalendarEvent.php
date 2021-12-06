@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoCalendarEvent extends AbstractStructBase
     /**
      * Set organizer value
      * @param string $organizer
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCalendarEvent
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCalendarEvent
      */
     public function setOrganizer(?string $organizer = null): self
     {
@@ -102,7 +102,7 @@ class MidocoCalendarEvent extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCalendarEvent
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCalendarEvent
      */
     public function setDescription(?string $description = null): self
     {
@@ -125,7 +125,7 @@ class MidocoCalendarEvent extends AbstractStructBase
     /**
      * Set summary value
      * @param string $summary
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCalendarEvent
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCalendarEvent
      */
     public function setSummary(?string $summary = null): self
     {
@@ -148,7 +148,7 @@ class MidocoCalendarEvent extends AbstractStructBase
     /**
      * Set location value
      * @param string $location
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCalendarEvent
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCalendarEvent
      */
     public function setLocation(?string $location = null): self
     {
@@ -171,7 +171,7 @@ class MidocoCalendarEvent extends AbstractStructBase
     /**
      * Set startTime value
      * @param string $startTime
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCalendarEvent
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCalendarEvent
      */
     public function setStartTime(?string $startTime = null): self
     {
@@ -194,7 +194,7 @@ class MidocoCalendarEvent extends AbstractStructBase
     /**
      * Set endTime value
      * @param string $endTime
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoCalendarEvent
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoCalendarEvent
      */
     public function setEndTime(?string $endTime = null): self
     {

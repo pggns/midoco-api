@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -126,7 +126,7 @@ class MidocoSalesListByPaymentTypeCriteriaType extends AbstractStructBase
      * Set paymentType value
      * @throws InvalidArgumentException
      * @param string[] $paymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
      */
     public function setPaymentType(?array $paymentType = null): self
     {
@@ -142,7 +142,7 @@ class MidocoSalesListByPaymentTypeCriteriaType extends AbstractStructBase
      * Add item to paymentType value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
      */
     public function addToPaymentType(string $item): self
     {
@@ -192,7 +192,7 @@ class MidocoSalesListByPaymentTypeCriteriaType extends AbstractStructBase
      * Set paymentMethod value
      * @throws InvalidArgumentException
      * @param string[] $paymentMethod
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
      */
     public function setPaymentMethod(?array $paymentMethod = null): self
     {
@@ -208,7 +208,7 @@ class MidocoSalesListByPaymentTypeCriteriaType extends AbstractStructBase
      * Add item to paymentMethod value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
      */
     public function addToPaymentMethod(string $item): self
     {
@@ -258,7 +258,7 @@ class MidocoSalesListByPaymentTypeCriteriaType extends AbstractStructBase
      * Set ccCardType value
      * @throws InvalidArgumentException
      * @param string[] $ccCardType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
      */
     public function setCcCardType(?array $ccCardType = null): self
     {
@@ -274,7 +274,7 @@ class MidocoSalesListByPaymentTypeCriteriaType extends AbstractStructBase
      * Add item to ccCardType value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
      */
     public function addToCcCardType(string $item): self
     {
@@ -324,7 +324,7 @@ class MidocoSalesListByPaymentTypeCriteriaType extends AbstractStructBase
      * Set orgUnitName value
      * @throws InvalidArgumentException
      * @param string[] $orgUnitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
      */
     public function setOrgUnitName(?array $orgUnitName = null): self
     {
@@ -340,7 +340,7 @@ class MidocoSalesListByPaymentTypeCriteriaType extends AbstractStructBase
      * Add item to orgUnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
      */
     public function addToOrgUnitName(string $item): self
     {
@@ -363,7 +363,7 @@ class MidocoSalesListByPaymentTypeCriteriaType extends AbstractStructBase
     /**
      * Set receiptStartDate value
      * @param string $receiptStartDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
      */
     public function setReceiptStartDate(?string $receiptStartDate = null): self
     {
@@ -386,7 +386,7 @@ class MidocoSalesListByPaymentTypeCriteriaType extends AbstractStructBase
     /**
      * Set receiptEndDate value
      * @param string $receiptEndDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
      */
     public function setReceiptEndDate(?string $receiptEndDate = null): self
     {
@@ -409,7 +409,7 @@ class MidocoSalesListByPaymentTypeCriteriaType extends AbstractStructBase
     /**
      * Set employee value
      * @param int $employee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByPaymentTypeCriteriaType
      */
     public function setEmployee(?int $employee = null): self
     {

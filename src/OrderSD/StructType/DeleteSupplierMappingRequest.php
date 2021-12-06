@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteSupplierMappingRequest extends AbstractStructBase
      * The MidocoSupplierMapping
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierMapping
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierMapping|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierMapping|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierMapping $MidocoSupplierMapping = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierMapping $MidocoSupplierMapping = null;
     /**
      * Constructor method for DeleteSupplierMappingRequest
      * @uses DeleteSupplierMappingRequest::setMidocoSupplierMapping()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierMapping $midocoSupplierMapping
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierMapping $midocoSupplierMapping
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierMapping $midocoSupplierMapping = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierMapping $midocoSupplierMapping = null)
     {
         $this
             ->setMidocoSupplierMapping($midocoSupplierMapping);
     }
     /**
      * Get MidocoSupplierMapping value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierMapping|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierMapping|null
      */
-    public function getMidocoSupplierMapping(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierMapping
+    public function getMidocoSupplierMapping(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierMapping
     {
         return $this->MidocoSupplierMapping;
     }
     /**
      * Set MidocoSupplierMapping value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierMapping $midocoSupplierMapping
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteSupplierMappingRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierMapping $midocoSupplierMapping
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteSupplierMappingRequest
      */
-    public function setMidocoSupplierMapping(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoSupplierMapping $midocoSupplierMapping = null): self
+    public function setMidocoSupplierMapping(?\Pggns\MidocoApi\OrderSD\StructType\MidocoSupplierMapping $midocoSupplierMapping = null): self
     {
         $this->MidocoSupplierMapping = $midocoSupplierMapping;
         

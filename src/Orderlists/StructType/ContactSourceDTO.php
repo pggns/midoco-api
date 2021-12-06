@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class ContactSourceDTO extends AbstractStructBase
     /**
      * Set contactId value
      * @param int $contactId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ContactSourceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ContactSourceDTO
      */
     public function setContactId(?int $contactId = null): self
     {
@@ -78,7 +78,7 @@ class ContactSourceDTO extends AbstractStructBase
     /**
      * Set mailingProhibited value
      * @param bool $mailingProhibited
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ContactSourceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ContactSourceDTO
      */
     public function setMailingProhibited(?bool $mailingProhibited = null): self
     {
@@ -101,7 +101,7 @@ class ContactSourceDTO extends AbstractStructBase
     /**
      * Set sourceId value
      * @param string $sourceId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ContactSourceDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ContactSourceDTO
      */
     public function setSourceId(?string $sourceId = null): self
     {

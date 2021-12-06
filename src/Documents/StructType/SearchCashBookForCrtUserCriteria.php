@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class SearchCashBookForCrtUserCriteria extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchCashBookForCrtUserCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchCashBookForCrtUserCriteria
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -88,7 +88,7 @@ class SearchCashBookForCrtUserCriteria extends AbstractStructBase
     /**
      * Set fromDate value
      * @param string $fromDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchCashBookForCrtUserCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchCashBookForCrtUserCriteria
      */
     public function setFromDate(?string $fromDate = null): self
     {
@@ -111,7 +111,7 @@ class SearchCashBookForCrtUserCriteria extends AbstractStructBase
     /**
      * Set toDate value
      * @param string $toDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchCashBookForCrtUserCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchCashBookForCrtUserCriteria
      */
     public function setToDate(?string $toDate = null): self
     {
@@ -134,7 +134,7 @@ class SearchCashBookForCrtUserCriteria extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchCashBookForCrtUserCriteria
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchCashBookForCrtUserCriteria
      */
     public function setUserId(?int $userId = null): self
     {

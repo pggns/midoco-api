@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class LogMidocoClientPerformanceInfoRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\LogMidocoClientPerformanceInfoRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\LogMidocoClientPerformanceInfoRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -102,7 +102,7 @@ class LogMidocoClientPerformanceInfoRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\LogMidocoClientPerformanceInfoRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\LogMidocoClientPerformanceInfoRequest
      */
     public function setUserId(?int $userId = null): self
     {
@@ -125,7 +125,7 @@ class LogMidocoClientPerformanceInfoRequest extends AbstractStructBase
     /**
      * Set startTime value
      * @param string $startTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\LogMidocoClientPerformanceInfoRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\LogMidocoClientPerformanceInfoRequest
      */
     public function setStartTime(?string $startTime = null): self
     {
@@ -148,7 +148,7 @@ class LogMidocoClientPerformanceInfoRequest extends AbstractStructBase
     /**
      * Set duration value
      * @param int $duration
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\LogMidocoClientPerformanceInfoRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\LogMidocoClientPerformanceInfoRequest
      */
     public function setDuration(?int $duration = null): self
     {
@@ -171,7 +171,7 @@ class LogMidocoClientPerformanceInfoRequest extends AbstractStructBase
     /**
      * Set logActionName value
      * @param string $logActionName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\LogMidocoClientPerformanceInfoRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\LogMidocoClientPerformanceInfoRequest
      */
     public function setLogActionName(?string $logActionName = null): self
     {
@@ -194,7 +194,7 @@ class LogMidocoClientPerformanceInfoRequest extends AbstractStructBase
     /**
      * Set params value
      * @param string $params
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\LogMidocoClientPerformanceInfoRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\LogMidocoClientPerformanceInfoRequest
      */
     public function setParams(?string $params = null): self
     {

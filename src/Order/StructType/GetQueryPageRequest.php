@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetQueryPageRequest extends AbstractStructBase
     /**
      * Set queryId value
      * @param int $queryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetQueryPageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetQueryPageRequest
      */
     public function setQueryId(?int $queryId = null): self
     {
@@ -72,7 +72,7 @@ class GetQueryPageRequest extends AbstractStructBase
     /**
      * Set pageNo value
      * @param int $pageNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetQueryPageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetQueryPageRequest
      */
     public function setPageNo(?int $pageNo = 1): self
     {

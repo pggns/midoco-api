@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class CcproxyTargetDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CcproxyTargetDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CcproxyTargetDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -150,7 +150,7 @@ class CcproxyTargetDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CcproxyTargetDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CcproxyTargetDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -173,7 +173,7 @@ class CcproxyTargetDTO extends AbstractStructBase
     /**
      * Set direction value
      * @param string $direction
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CcproxyTargetDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CcproxyTargetDTO
      */
     public function setDirection(?string $direction = null): self
     {
@@ -196,7 +196,7 @@ class CcproxyTargetDTO extends AbstractStructBase
     /**
      * Set handlerId value
      * @param string $handlerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CcproxyTargetDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CcproxyTargetDTO
      */
     public function setHandlerId(?string $handlerId = null): self
     {
@@ -219,7 +219,7 @@ class CcproxyTargetDTO extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CcproxyTargetDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CcproxyTargetDTO
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -242,7 +242,7 @@ class CcproxyTargetDTO extends AbstractStructBase
     /**
      * Set matchingUrl value
      * @param string $matchingUrl
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CcproxyTargetDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CcproxyTargetDTO
      */
     public function setMatchingUrl(?string $matchingUrl = null): self
     {
@@ -265,7 +265,7 @@ class CcproxyTargetDTO extends AbstractStructBase
     /**
      * Set modificationTimestamp value
      * @param string $modificationTimestamp
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CcproxyTargetDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CcproxyTargetDTO
      */
     public function setModificationTimestamp(?string $modificationTimestamp = null): self
     {
@@ -288,7 +288,7 @@ class CcproxyTargetDTO extends AbstractStructBase
     /**
      * Set modificationUser value
      * @param int $modificationUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CcproxyTargetDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CcproxyTargetDTO
      */
     public function setModificationUser(?int $modificationUser = null): self
     {
@@ -311,7 +311,7 @@ class CcproxyTargetDTO extends AbstractStructBase
     /**
      * Set processingUnitName value
      * @param string $processingUnitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CcproxyTargetDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CcproxyTargetDTO
      */
     public function setProcessingUnitName(?string $processingUnitName = null): self
     {
@@ -334,7 +334,7 @@ class CcproxyTargetDTO extends AbstractStructBase
     /**
      * Set processingUser value
      * @param int $processingUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CcproxyTargetDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CcproxyTargetDTO
      */
     public function setProcessingUser(?int $processingUser = null): self
     {
@@ -357,7 +357,7 @@ class CcproxyTargetDTO extends AbstractStructBase
     /**
      * Set targetId value
      * @param string $targetId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CcproxyTargetDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CcproxyTargetDTO
      */
     public function setTargetId(?string $targetId = null): self
     {
@@ -380,7 +380,7 @@ class CcproxyTargetDTO extends AbstractStructBase
     /**
      * Set targetUrl value
      * @param string $targetUrl
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CcproxyTargetDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CcproxyTargetDTO
      */
     public function setTargetUrl(?string $targetUrl = null): self
     {

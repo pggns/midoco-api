@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class BookMidocoVoucher4KickbackRequest extends AbstractStructBase
     /**
      * Set voucherCode value
      * @param string $voucherCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookMidocoVoucher4KickbackRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookMidocoVoucher4KickbackRequest
      */
     public function setVoucherCode(?string $voucherCode = null): self
     {
@@ -70,7 +70,7 @@ class BookMidocoVoucher4KickbackRequest extends AbstractStructBase
     /**
      * Set operationNumber value
      * @param string $operationNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookMidocoVoucher4KickbackRequest
+     * @return \Pggns\MidocoApi\Order\StructType\BookMidocoVoucher4KickbackRequest
      */
     public function setOperationNumber(?string $operationNumber = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class AssignCustomerRequest extends AbstractStructBase
      * The MidocoAssignCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoAssignCustomer
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerAssignDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerAssignDTO $MidocoAssignCustomer = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO $MidocoAssignCustomer = null;
     /**
      * The isFirm
      * @var bool|null
@@ -53,14 +53,14 @@ class AssignCustomerRequest extends AbstractStructBase
      * @uses AssignCustomerRequest::setAssignedCustomerGender()
      * @uses AssignCustomerRequest::setInternalVersion()
      * @uses AssignCustomerRequest::setCustomerId()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerAssignDTO $midocoAssignCustomer
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO $midocoAssignCustomer
      * @param bool $isFirm
      * @param int $originCustomerGender
      * @param int $assignedCustomerGender
      * @param int $internalVersion
      * @param int $customerId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerAssignDTO $midocoAssignCustomer = null, ?bool $isFirm = null, ?int $originCustomerGender = null, ?int $assignedCustomerGender = null, ?int $internalVersion = null, ?int $customerId = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO $midocoAssignCustomer = null, ?bool $isFirm = null, ?int $originCustomerGender = null, ?int $assignedCustomerGender = null, ?int $internalVersion = null, ?int $customerId = null)
     {
         $this
             ->setMidocoAssignCustomer($midocoAssignCustomer)
@@ -72,18 +72,18 @@ class AssignCustomerRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAssignCustomer value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerAssignDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO|null
      */
-    public function getMidocoAssignCustomer(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerAssignDTO
+    public function getMidocoAssignCustomer(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO
     {
         return $this->MidocoAssignCustomer;
     }
     /**
      * Set MidocoAssignCustomer value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerAssignDTO $midocoAssignCustomer
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignCustomerRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO $midocoAssignCustomer
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignCustomerRequest
      */
-    public function setMidocoAssignCustomer(?\Pggns\MidocoApi\Api\CrmSD\StructType\CustomerAssignDTO $midocoAssignCustomer = null): self
+    public function setMidocoAssignCustomer(?\Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO $midocoAssignCustomer = null): self
     {
         $this->MidocoAssignCustomer = $midocoAssignCustomer;
         
@@ -100,7 +100,7 @@ class AssignCustomerRequest extends AbstractStructBase
     /**
      * Set isFirm value
      * @param bool $isFirm
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignCustomerRequest
      */
     public function setIsFirm(?bool $isFirm = null): self
     {
@@ -123,7 +123,7 @@ class AssignCustomerRequest extends AbstractStructBase
     /**
      * Set originCustomerGender value
      * @param int $originCustomerGender
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignCustomerRequest
      */
     public function setOriginCustomerGender(?int $originCustomerGender = null): self
     {
@@ -146,7 +146,7 @@ class AssignCustomerRequest extends AbstractStructBase
     /**
      * Set assignedCustomerGender value
      * @param int $assignedCustomerGender
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignCustomerRequest
      */
     public function setAssignedCustomerGender(?int $assignedCustomerGender = null): self
     {
@@ -169,7 +169,7 @@ class AssignCustomerRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignCustomerRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -192,7 +192,7 @@ class AssignCustomerRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AssignCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignCustomerRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {

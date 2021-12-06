@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCashbooksResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: CashBookInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\CashBookInfo[]
      */
     protected ?array $CashBookInfo = null;
     /**
      * Constructor method for GetCashbooksResponse
      * @uses GetCashbooksResponse::setCashBookInfo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo[] $cashBookInfo
+     * @param \Pggns\MidocoApi\Order\StructType\CashBookInfo[] $cashBookInfo
      */
     public function __construct(?array $cashBookInfo = null)
     {
@@ -34,7 +34,7 @@ class GetCashbooksResponse extends AbstractStructBase
     }
     /**
      * Get CashBookInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\CashBookInfo[]
      */
     public function getCashBookInfo(): ?array
     {
@@ -55,12 +55,12 @@ class GetCashbooksResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCashbooksResponseCashBookInfoItem) {
             // validation for constraint: itemType
-            if (!$getCashbooksResponseCashBookInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo) {
+            if (!$getCashbooksResponseCashBookInfoItem instanceof \Pggns\MidocoApi\Order\StructType\CashBookInfo) {
                 $invalidValues[] = is_object($getCashbooksResponseCashBookInfoItem) ? get_class($getCashbooksResponseCashBookInfoItem) : sprintf('%s(%s)', gettype($getCashbooksResponseCashBookInfoItem), var_export($getCashbooksResponseCashBookInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CashBookInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CashBookInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\CashBookInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCashbooksResponse extends AbstractStructBase
     /**
      * Set CashBookInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo[] $cashBookInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCashbooksResponse
+     * @param \Pggns\MidocoApi\Order\StructType\CashBookInfo[] $cashBookInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetCashbooksResponse
      */
     public function setCashBookInfo(?array $cashBookInfo = null): self
     {
@@ -85,14 +85,14 @@ class GetCashbooksResponse extends AbstractStructBase
     /**
      * Add item to CashBookInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCashbooksResponse
+     * @param \Pggns\MidocoApi\Order\StructType\CashBookInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetCashbooksResponse
      */
-    public function addToCashBookInfo(\Pggns\MidocoApi\Api\Order\StructType\CashBookInfo $item): self
+    public function addToCashBookInfo(\Pggns\MidocoApi\Order\StructType\CashBookInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo) {
-            throw new InvalidArgumentException(sprintf('The CashBookInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CashBookInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\CashBookInfo) {
+            throw new InvalidArgumentException(sprintf('The CashBookInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\CashBookInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CashBookInfo[] = $item;
         

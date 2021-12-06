@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmMidocoSettlMdocLevel
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO[]
      */
     protected ?array $MidocoCrmMidocoSettlMdocLevel = null;
     /**
@@ -28,15 +28,15 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAssignedMidocoMdocOUnit
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\AssignedMidocoMdocOUnitDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\AssignedMidocoMdocOUnitDTO[]
      */
     protected ?array $MidocoAssignedMidocoMdocOUnit = null;
     /**
      * Constructor method for MidocoCrmMidocoSettlMdoc
      * @uses MidocoCrmMidocoSettlMdoc::setMidocoCrmMidocoSettlMdocLevel()
      * @uses MidocoCrmMidocoSettlMdoc::setMidocoAssignedMidocoMdocOUnit()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO[] $midocoCrmMidocoSettlMdocLevel
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AssignedMidocoMdocOUnitDTO[] $midocoAssignedMidocoMdocOUnit
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO[] $midocoCrmMidocoSettlMdocLevel
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AssignedMidocoMdocOUnitDTO[] $midocoAssignedMidocoMdocOUnit
      */
     public function __construct(?array $midocoCrmMidocoSettlMdocLevel = null, ?array $midocoAssignedMidocoMdocOUnit = null)
     {
@@ -46,7 +46,7 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     }
     /**
      * Get MidocoCrmMidocoSettlMdocLevel value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO[]
      */
     public function getMidocoCrmMidocoSettlMdocLevel(): ?array
     {
@@ -67,12 +67,12 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
         $invalidValues = [];
         foreach ($values as $midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO) {
+            if (!$midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem instanceof \Pggns\MidocoApi\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO) {
                 $invalidValues[] = is_object($midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem) ? get_class($midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem) : sprintf('%s(%s)', gettype($midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem), var_export($midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmMidocoSettlMdocLevel property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmMidocoSettlMdocLevel property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -81,8 +81,8 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     /**
      * Set MidocoCrmMidocoSettlMdocLevel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO[] $midocoCrmMidocoSettlMdocLevel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmMidocoSettlMdoc
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO[] $midocoCrmMidocoSettlMdocLevel
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmMidocoSettlMdoc
      */
     public function setMidocoCrmMidocoSettlMdocLevel(?array $midocoCrmMidocoSettlMdocLevel = null): self
     {
@@ -97,14 +97,14 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     /**
      * Add item to MidocoCrmMidocoSettlMdocLevel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmMidocoSettlMdoc
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmMidocoSettlMdoc
      */
-    public function addToMidocoCrmMidocoSettlMdocLevel(\Pggns\MidocoApi\Api\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO $item): self
+    public function addToMidocoCrmMidocoSettlMdocLevel(\Pggns\MidocoApi\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlMdocLevel property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlMdocLevel property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\CrmMidocoSettlMdocLevelDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmMidocoSettlMdocLevel[] = $item;
         
@@ -112,7 +112,7 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     }
     /**
      * Get MidocoAssignedMidocoMdocOUnit value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AssignedMidocoMdocOUnitDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AssignedMidocoMdocOUnitDTO[]
      */
     public function getMidocoAssignedMidocoMdocOUnit(): ?array
     {
@@ -133,12 +133,12 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
         $invalidValues = [];
         foreach ($values as $midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\AssignedMidocoMdocOUnitDTO) {
+            if (!$midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem instanceof \Pggns\MidocoApi\Orderlists\StructType\AssignedMidocoMdocOUnitDTO) {
                 $invalidValues[] = is_object($midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem) ? get_class($midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem) : sprintf('%s(%s)', gettype($midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem), var_export($midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAssignedMidocoMdocOUnit property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\AssignedMidocoMdocOUnitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAssignedMidocoMdocOUnit property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\AssignedMidocoMdocOUnitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,8 +147,8 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     /**
      * Set MidocoAssignedMidocoMdocOUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AssignedMidocoMdocOUnitDTO[] $midocoAssignedMidocoMdocOUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmMidocoSettlMdoc
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AssignedMidocoMdocOUnitDTO[] $midocoAssignedMidocoMdocOUnit
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmMidocoSettlMdoc
      */
     public function setMidocoAssignedMidocoMdocOUnit(?array $midocoAssignedMidocoMdocOUnit = null): self
     {
@@ -163,14 +163,14 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     /**
      * Add item to MidocoAssignedMidocoMdocOUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\AssignedMidocoMdocOUnitDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCrmMidocoSettlMdoc
+     * @param \Pggns\MidocoApi\Orderlists\StructType\AssignedMidocoMdocOUnitDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCrmMidocoSettlMdoc
      */
-    public function addToMidocoAssignedMidocoMdocOUnit(\Pggns\MidocoApi\Api\Orderlists\StructType\AssignedMidocoMdocOUnitDTO $item): self
+    public function addToMidocoAssignedMidocoMdocOUnit(\Pggns\MidocoApi\Orderlists\StructType\AssignedMidocoMdocOUnitDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\AssignedMidocoMdocOUnitDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoMdocOUnit property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\AssignedMidocoMdocOUnitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\AssignedMidocoMdocOUnitDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoMdocOUnit property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\AssignedMidocoMdocOUnitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAssignedMidocoMdocOUnit[] = $item;
         

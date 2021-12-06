@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetMidocoBonusEmployeeRequest extends AbstractStructBase
      * The MidocoBonusEmployeeSearchCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoBonusEmployeeSearchCriteria
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployeeSearchCriteria|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployeeSearchCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployeeSearchCriteria $MidocoBonusEmployeeSearchCriteria = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoBonusEmployeeSearchCriteria $MidocoBonusEmployeeSearchCriteria = null;
     /**
      * Constructor method for GetMidocoBonusEmployeeRequest
      * @uses GetMidocoBonusEmployeeRequest::setMidocoBonusEmployeeSearchCriteria()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployeeSearchCriteria $midocoBonusEmployeeSearchCriteria
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployeeSearchCriteria $midocoBonusEmployeeSearchCriteria
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployeeSearchCriteria $midocoBonusEmployeeSearchCriteria = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoBonusEmployeeSearchCriteria $midocoBonusEmployeeSearchCriteria = null)
     {
         $this
             ->setMidocoBonusEmployeeSearchCriteria($midocoBonusEmployeeSearchCriteria);
     }
     /**
      * Get MidocoBonusEmployeeSearchCriteria value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployeeSearchCriteria|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployeeSearchCriteria|null
      */
-    public function getMidocoBonusEmployeeSearchCriteria(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployeeSearchCriteria
+    public function getMidocoBonusEmployeeSearchCriteria(): ?\Pggns\MidocoApi\Order\StructType\MidocoBonusEmployeeSearchCriteria
     {
         return $this->MidocoBonusEmployeeSearchCriteria;
     }
     /**
      * Set MidocoBonusEmployeeSearchCriteria value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployeeSearchCriteria $midocoBonusEmployeeSearchCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMidocoBonusEmployeeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoBonusEmployeeSearchCriteria $midocoBonusEmployeeSearchCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\GetMidocoBonusEmployeeRequest
      */
-    public function setMidocoBonusEmployeeSearchCriteria(?\Pggns\MidocoApi\Api\Order\StructType\MidocoBonusEmployeeSearchCriteria $midocoBonusEmployeeSearchCriteria = null): self
+    public function setMidocoBonusEmployeeSearchCriteria(?\Pggns\MidocoApi\Order\StructType\MidocoBonusEmployeeSearchCriteria $midocoBonusEmployeeSearchCriteria = null): self
     {
         $this->MidocoBonusEmployeeSearchCriteria = $midocoBonusEmployeeSearchCriteria;
         

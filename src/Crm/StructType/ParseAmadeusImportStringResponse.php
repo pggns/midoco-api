@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ParseAmadeusImportStringResponse extends AbstractStructBase
     /**
      * Set response value
      * @param string $response
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\ParseAmadeusImportStringResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\ParseAmadeusImportStringResponse
      */
     public function setResponse(?string $response = null): self
     {

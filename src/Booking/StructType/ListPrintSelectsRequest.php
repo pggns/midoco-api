@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class ListPrintSelectsRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\ListPrintSelectsRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\ListPrintSelectsRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -71,17 +71,17 @@ class ListPrintSelectsRequest extends AbstractStructBase
     }
     /**
      * Set templateType value
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\MidocoOrgTemplateTextType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Booking\EnumType\MidocoOrgTemplateTextType::getValidValues()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\MidocoOrgTemplateTextType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\MidocoOrgTemplateTextType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $templateType
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\ListPrintSelectsRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\ListPrintSelectsRequest
      */
     public function setTemplateType(?string $templateType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Booking\EnumType\MidocoOrgTemplateTextType::valueIsValid($templateType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Booking\EnumType\MidocoOrgTemplateTextType', is_array($templateType) ? implode(', ', $templateType) : var_export($templateType, true), implode(', ', \Pggns\MidocoApi\Api\Booking\EnumType\MidocoOrgTemplateTextType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Booking\EnumType\MidocoOrgTemplateTextType::valueIsValid($templateType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\MidocoOrgTemplateTextType', is_array($templateType) ? implode(', ', $templateType) : var_export($templateType, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\MidocoOrgTemplateTextType::getValidValues())), __LINE__);
         }
         $this->templateType = $templateType;
         

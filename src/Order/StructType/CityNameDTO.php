@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class CityNameDTO extends AbstractStructBase
     /**
      * Set cityLocalizedName value
      * @param string $cityLocalizedName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CityNameDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CityNameDTO
      */
     public function setCityLocalizedName(?string $cityLocalizedName = null): self
     {
@@ -94,7 +94,7 @@ class CityNameDTO extends AbstractStructBase
     /**
      * Set cityName value
      * @param string $cityName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CityNameDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CityNameDTO
      */
     public function setCityName(?string $cityName = null): self
     {
@@ -117,7 +117,7 @@ class CityNameDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param string $countryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CityNameDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CityNameDTO
      */
     public function setCountryId(?string $countryId = null): self
     {
@@ -140,7 +140,7 @@ class CityNameDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CityNameDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CityNameDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -163,7 +163,7 @@ class CityNameDTO extends AbstractStructBase
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CityNameDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CityNameDTO
      */
     public function setZipCode(?string $zipCode = null): self
     {

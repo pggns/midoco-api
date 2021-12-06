@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class MidocoAdviceSettlementDetail extends AdviceSettlemDetailDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAdviceDetailVatDiv
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceDetailVatDiv[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceDetailVatDiv[]
      */
     protected ?array $MidocoAdviceDetailVatDiv = null;
     /**
      * Constructor method for MidocoAdviceSettlementDetail
      * @uses MidocoAdviceSettlementDetail::setMidocoAdviceDetailVatDiv()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceDetailVatDiv[] $midocoAdviceDetailVatDiv
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceDetailVatDiv[] $midocoAdviceDetailVatDiv
      */
     public function __construct(?array $midocoAdviceDetailVatDiv = null)
     {
@@ -34,7 +34,7 @@ class MidocoAdviceSettlementDetail extends AdviceSettlemDetailDTO
     }
     /**
      * Get MidocoAdviceDetailVatDiv value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceDetailVatDiv[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceDetailVatDiv[]
      */
     public function getMidocoAdviceDetailVatDiv(): ?array
     {
@@ -55,12 +55,12 @@ class MidocoAdviceSettlementDetail extends AdviceSettlemDetailDTO
         $invalidValues = [];
         foreach ($values as $midocoAdviceSettlementDetailMidocoAdviceDetailVatDivItem) {
             // validation for constraint: itemType
-            if (!$midocoAdviceSettlementDetailMidocoAdviceDetailVatDivItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceDetailVatDiv) {
+            if (!$midocoAdviceSettlementDetailMidocoAdviceDetailVatDivItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceDetailVatDiv) {
                 $invalidValues[] = is_object($midocoAdviceSettlementDetailMidocoAdviceDetailVatDivItem) ? get_class($midocoAdviceSettlementDetailMidocoAdviceDetailVatDivItem) : sprintf('%s(%s)', gettype($midocoAdviceSettlementDetailMidocoAdviceDetailVatDivItem), var_export($midocoAdviceSettlementDetailMidocoAdviceDetailVatDivItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAdviceDetailVatDiv property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceDetailVatDiv, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAdviceDetailVatDiv property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceDetailVatDiv, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class MidocoAdviceSettlementDetail extends AdviceSettlemDetailDTO
     /**
      * Set MidocoAdviceDetailVatDiv value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceDetailVatDiv[] $midocoAdviceDetailVatDiv
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceSettlementDetail
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceDetailVatDiv[] $midocoAdviceDetailVatDiv
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceSettlementDetail
      */
     public function setMidocoAdviceDetailVatDiv(?array $midocoAdviceDetailVatDiv = null): self
     {
@@ -85,14 +85,14 @@ class MidocoAdviceSettlementDetail extends AdviceSettlemDetailDTO
     /**
      * Add item to MidocoAdviceDetailVatDiv value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceDetailVatDiv $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceSettlementDetail
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceDetailVatDiv $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceSettlementDetail
      */
-    public function addToMidocoAdviceDetailVatDiv(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceDetailVatDiv $item): self
+    public function addToMidocoAdviceDetailVatDiv(\Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceDetailVatDiv $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceDetailVatDiv) {
-            throw new InvalidArgumentException(sprintf('The MidocoAdviceDetailVatDiv property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAdviceDetailVatDiv, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceDetailVatDiv) {
+            throw new InvalidArgumentException(sprintf('The MidocoAdviceDetailVatDiv property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoAdviceDetailVatDiv, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAdviceDetailVatDiv[] = $item;
         

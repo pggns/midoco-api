@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoOrderTask extends AbstractStructBase
     /**
      * Set contactId value
      * @param int $contactId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderTask
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderTask
      */
     public function setContactId(?int $contactId = null): self
     {
@@ -86,7 +86,7 @@ class MidocoOrderTask extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderTask
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderTask
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -109,7 +109,7 @@ class MidocoOrderTask extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderTask
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderTask
      */
     public function setPosition(?int $position = null): self
     {
@@ -132,7 +132,7 @@ class MidocoOrderTask extends AbstractStructBase
     /**
      * Set unit value
      * @param string $unit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderTask
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderTask
      */
     public function setUnit(?string $unit = null): self
     {

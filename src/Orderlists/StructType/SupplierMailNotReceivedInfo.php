@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: SupplierMailNotReceivedCustomerInfo
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\SellPassengerDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\SellPassengerDTO[]
      */
     protected ?array $SupplierMailNotReceivedCustomerInfo = null;
     /**
@@ -28,15 +28,15 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoFlightDetail
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetail[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetail[]
      */
     protected ?array $MidocoFlightDetail = null;
     /**
      * Constructor method for SupplierMailNotReceivedInfo
      * @uses SupplierMailNotReceivedInfo::setSupplierMailNotReceivedCustomerInfo()
      * @uses SupplierMailNotReceivedInfo::setMidocoFlightDetail()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SellPassengerDTO[] $supplierMailNotReceivedCustomerInfo
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetail[] $midocoFlightDetail
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SellPassengerDTO[] $supplierMailNotReceivedCustomerInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetail[] $midocoFlightDetail
      */
     public function __construct(?array $supplierMailNotReceivedCustomerInfo = null, ?array $midocoFlightDetail = null)
     {
@@ -46,7 +46,7 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
     }
     /**
      * Get SupplierMailNotReceivedCustomerInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellPassengerDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellPassengerDTO[]
      */
     public function getSupplierMailNotReceivedCustomerInfo(): ?array
     {
@@ -67,12 +67,12 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
         $invalidValues = [];
         foreach ($values as $supplierMailNotReceivedInfoSupplierMailNotReceivedCustomerInfoItem) {
             // validation for constraint: itemType
-            if (!$supplierMailNotReceivedInfoSupplierMailNotReceivedCustomerInfoItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\SellPassengerDTO) {
+            if (!$supplierMailNotReceivedInfoSupplierMailNotReceivedCustomerInfoItem instanceof \Pggns\MidocoApi\Orderlists\StructType\SellPassengerDTO) {
                 $invalidValues[] = is_object($supplierMailNotReceivedInfoSupplierMailNotReceivedCustomerInfoItem) ? get_class($supplierMailNotReceivedInfoSupplierMailNotReceivedCustomerInfoItem) : sprintf('%s(%s)', gettype($supplierMailNotReceivedInfoSupplierMailNotReceivedCustomerInfoItem), var_export($supplierMailNotReceivedInfoSupplierMailNotReceivedCustomerInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The SupplierMailNotReceivedCustomerInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\SellPassengerDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The SupplierMailNotReceivedCustomerInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\SellPassengerDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -81,8 +81,8 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
     /**
      * Set SupplierMailNotReceivedCustomerInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SellPassengerDTO[] $supplierMailNotReceivedCustomerInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SellPassengerDTO[] $supplierMailNotReceivedCustomerInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedInfo
      */
     public function setSupplierMailNotReceivedCustomerInfo(?array $supplierMailNotReceivedCustomerInfo = null): self
     {
@@ -97,14 +97,14 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
     /**
      * Add item to SupplierMailNotReceivedCustomerInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SellPassengerDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SellPassengerDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedInfo
      */
-    public function addToSupplierMailNotReceivedCustomerInfo(\Pggns\MidocoApi\Api\Orderlists\StructType\SellPassengerDTO $item): self
+    public function addToSupplierMailNotReceivedCustomerInfo(\Pggns\MidocoApi\Orderlists\StructType\SellPassengerDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\SellPassengerDTO) {
-            throw new InvalidArgumentException(sprintf('The SupplierMailNotReceivedCustomerInfo property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\SellPassengerDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\SellPassengerDTO) {
+            throw new InvalidArgumentException(sprintf('The SupplierMailNotReceivedCustomerInfo property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\SellPassengerDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->SupplierMailNotReceivedCustomerInfo[] = $item;
         
@@ -112,7 +112,7 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
     }
     /**
      * Get MidocoFlightDetail value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetail[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetail[]
      */
     public function getMidocoFlightDetail(): ?array
     {
@@ -133,12 +133,12 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
         $invalidValues = [];
         foreach ($values as $supplierMailNotReceivedInfoMidocoFlightDetailItem) {
             // validation for constraint: itemType
-            if (!$supplierMailNotReceivedInfoMidocoFlightDetailItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetail) {
+            if (!$supplierMailNotReceivedInfoMidocoFlightDetailItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetail) {
                 $invalidValues[] = is_object($supplierMailNotReceivedInfoMidocoFlightDetailItem) ? get_class($supplierMailNotReceivedInfoMidocoFlightDetailItem) : sprintf('%s(%s)', gettype($supplierMailNotReceivedInfoMidocoFlightDetailItem), var_export($supplierMailNotReceivedInfoMidocoFlightDetailItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFlightDetail property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFlightDetail property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,8 +147,8 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
     /**
      * Set MidocoFlightDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetail[] $midocoFlightDetail
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetail[] $midocoFlightDetail
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedInfo
      */
     public function setMidocoFlightDetail(?array $midocoFlightDetail = null): self
     {
@@ -163,14 +163,14 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
     /**
      * Add item to MidocoFlightDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetail $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SupplierMailNotReceivedInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetail $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierMailNotReceivedInfo
      */
-    public function addToMidocoFlightDetail(\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetail $item): self
+    public function addToMidocoFlightDetail(\Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetail $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetail) {
-            throw new InvalidArgumentException(sprintf('The MidocoFlightDetail property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFlightDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetail) {
+            throw new InvalidArgumentException(sprintf('The MidocoFlightDetail property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoFlightDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFlightDetail[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetSupplierShipNamesRequest extends AbstractStructBase
     /**
      * Set shipNameId value
      * @param int $shipNameId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSupplierShipNamesRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSupplierShipNamesRequest
      */
     public function setShipNameId(?int $shipNameId = null): self
     {
@@ -78,7 +78,7 @@ class GetSupplierShipNamesRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSupplierShipNamesRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSupplierShipNamesRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -101,7 +101,7 @@ class GetSupplierShipNamesRequest extends AbstractStructBase
     /**
      * Set shipName value
      * @param string $shipName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetSupplierShipNamesRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetSupplierShipNamesRequest
      */
     public function setShipName(?string $shipName = null): self
     {

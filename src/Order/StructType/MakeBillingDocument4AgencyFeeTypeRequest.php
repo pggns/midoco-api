@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -24,7 +24,7 @@ class MakeBillingDocument4AgencyFeeTypeRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAgencyFeeTypeBillingPosition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition[]
      */
     protected ?array $MidocoAgencyFeeTypeBillingPosition = null;
     /**
@@ -32,7 +32,7 @@ class MakeBillingDocument4AgencyFeeTypeRequest extends AbstractStructBase
      * @uses MakeBillingDocument4AgencyFeeTypeRequest::setAgencyId()
      * @uses MakeBillingDocument4AgencyFeeTypeRequest::setMidocoAgencyFeeTypeBillingPosition()
      * @param string $agencyId
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition[] $midocoAgencyFeeTypeBillingPosition
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition[] $midocoAgencyFeeTypeBillingPosition
      */
     public function __construct(?string $agencyId = null, ?array $midocoAgencyFeeTypeBillingPosition = null)
     {
@@ -51,7 +51,7 @@ class MakeBillingDocument4AgencyFeeTypeRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocument4AgencyFeeTypeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocument4AgencyFeeTypeRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -65,7 +65,7 @@ class MakeBillingDocument4AgencyFeeTypeRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAgencyFeeTypeBillingPosition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition[]
      */
     public function getMidocoAgencyFeeTypeBillingPosition(): ?array
     {
@@ -86,12 +86,12 @@ class MakeBillingDocument4AgencyFeeTypeRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $makeBillingDocument4AgencyFeeTypeRequestMidocoAgencyFeeTypeBillingPositionItem) {
             // validation for constraint: itemType
-            if (!$makeBillingDocument4AgencyFeeTypeRequestMidocoAgencyFeeTypeBillingPositionItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition) {
+            if (!$makeBillingDocument4AgencyFeeTypeRequestMidocoAgencyFeeTypeBillingPositionItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition) {
                 $invalidValues[] = is_object($makeBillingDocument4AgencyFeeTypeRequestMidocoAgencyFeeTypeBillingPositionItem) ? get_class($makeBillingDocument4AgencyFeeTypeRequestMidocoAgencyFeeTypeBillingPositionItem) : sprintf('%s(%s)', gettype($makeBillingDocument4AgencyFeeTypeRequestMidocoAgencyFeeTypeBillingPositionItem), var_export($makeBillingDocument4AgencyFeeTypeRequestMidocoAgencyFeeTypeBillingPositionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAgencyFeeTypeBillingPosition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAgencyFeeTypeBillingPosition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -100,8 +100,8 @@ class MakeBillingDocument4AgencyFeeTypeRequest extends AbstractStructBase
     /**
      * Set MidocoAgencyFeeTypeBillingPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition[] $midocoAgencyFeeTypeBillingPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocument4AgencyFeeTypeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition[] $midocoAgencyFeeTypeBillingPosition
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocument4AgencyFeeTypeRequest
      */
     public function setMidocoAgencyFeeTypeBillingPosition(?array $midocoAgencyFeeTypeBillingPosition = null): self
     {
@@ -116,14 +116,14 @@ class MakeBillingDocument4AgencyFeeTypeRequest extends AbstractStructBase
     /**
      * Add item to MidocoAgencyFeeTypeBillingPosition value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocument4AgencyFeeTypeRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition $item
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocument4AgencyFeeTypeRequest
      */
-    public function addToMidocoAgencyFeeTypeBillingPosition(\Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition $item): self
+    public function addToMidocoAgencyFeeTypeBillingPosition(\Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition) {
-            throw new InvalidArgumentException(sprintf('The MidocoAgencyFeeTypeBillingPosition property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoAgencyFeeTypeBillingPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition) {
+            throw new InvalidArgumentException(sprintf('The MidocoAgencyFeeTypeBillingPosition property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoAgencyFeeTypeBillingPosition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAgencyFeeTypeBillingPosition[] = $item;
         

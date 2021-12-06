@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class PersonsKeyDimensionDTO extends AbstractStructBase
     /**
      * Set personsKey value
      * @param string $personsKey
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PersonsKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\PersonsKeyDimensionDTO
      */
     public function setPersonsKey(?string $personsKey = null): self
     {
@@ -86,7 +86,7 @@ class PersonsKeyDimensionDTO extends AbstractStructBase
     /**
      * Set personsKeyDescription value
      * @param string $personsKeyDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PersonsKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\PersonsKeyDimensionDTO
      */
     public function setPersonsKeyDescription(?string $personsKeyDescription = null): self
     {
@@ -109,7 +109,7 @@ class PersonsKeyDimensionDTO extends AbstractStructBase
     /**
      * Set personsKeyId value
      * @param int $personsKeyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PersonsKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\PersonsKeyDimensionDTO
      */
     public function setPersonsKeyId(?int $personsKeyId = null): self
     {
@@ -132,7 +132,7 @@ class PersonsKeyDimensionDTO extends AbstractStructBase
     /**
      * Set personsKeyLocDescr value
      * @param string $personsKeyLocDescr
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\PersonsKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\PersonsKeyDimensionDTO
      */
     public function setPersonsKeyLocDescr(?string $personsKeyLocDescr = null): self
     {

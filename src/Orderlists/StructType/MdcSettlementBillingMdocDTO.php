@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MdcSettlementBillingMdocDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementBillingMdocDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementBillingMdocDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -102,7 +102,7 @@ class MdcSettlementBillingMdocDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementBillingMdocDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementBillingMdocDTO
      */
     public function setId(?int $id = null): self
     {
@@ -125,7 +125,7 @@ class MdcSettlementBillingMdocDTO extends AbstractStructBase
     /**
      * Set mdcSettlementBillingId value
      * @param int $mdcSettlementBillingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementBillingMdocDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementBillingMdocDTO
      */
     public function setMdcSettlementBillingId(?int $mdcSettlementBillingId = null): self
     {
@@ -148,7 +148,7 @@ class MdcSettlementBillingMdocDTO extends AbstractStructBase
     /**
      * Set noOfMdocs value
      * @param int $noOfMdocs
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementBillingMdocDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementBillingMdocDTO
      */
     public function setNoOfMdocs(?int $noOfMdocs = null): self
     {
@@ -171,7 +171,7 @@ class MdcSettlementBillingMdocDTO extends AbstractStructBase
     /**
      * Set settlementMonth value
      * @param string $settlementMonth
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementBillingMdocDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementBillingMdocDTO
      */
     public function setSettlementMonth(?string $settlementMonth = null): self
     {
@@ -194,7 +194,7 @@ class MdcSettlementBillingMdocDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MdcSettlementBillingMdocDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MdcSettlementBillingMdocDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

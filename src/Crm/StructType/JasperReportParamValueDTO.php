@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class JasperReportParamValueDTO extends AbstractStructBase
     /**
      * Set defaultValue value
      * @param string $defaultValue
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\JasperReportParamValueDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\JasperReportParamValueDTO
      */
     public function setDefaultValue(?string $defaultValue = null): self
     {
@@ -102,7 +102,7 @@ class JasperReportParamValueDTO extends AbstractStructBase
     /**
      * Set isIncluded value
      * @param bool $isIncluded
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\JasperReportParamValueDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\JasperReportParamValueDTO
      */
     public function setIsIncluded(?bool $isIncluded = null): self
     {
@@ -125,7 +125,7 @@ class JasperReportParamValueDTO extends AbstractStructBase
     /**
      * Set paramId value
      * @param int $paramId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\JasperReportParamValueDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\JasperReportParamValueDTO
      */
     public function setParamId(?int $paramId = null): self
     {
@@ -148,7 +148,7 @@ class JasperReportParamValueDTO extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\JasperReportParamValueDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\JasperReportParamValueDTO
      */
     public function setReportId(?int $reportId = null): self
     {
@@ -171,7 +171,7 @@ class JasperReportParamValueDTO extends AbstractStructBase
     /**
      * Set valueId value
      * @param int $valueId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\JasperReportParamValueDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\JasperReportParamValueDTO
      */
     public function setValueId(?int $valueId = null): self
     {
@@ -194,7 +194,7 @@ class JasperReportParamValueDTO extends AbstractStructBase
     /**
      * Set versionId value
      * @param int $versionId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\JasperReportParamValueDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\JasperReportParamValueDTO
      */
     public function setVersionId(?int $versionId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCcTokenResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCcToken
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCcToken[]
      */
     protected ?array $MidocoCcToken = null;
     /**
      * Constructor method for GetCcTokenResponse
      * @uses GetCcTokenResponse::setMidocoCcToken()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken[] $midocoCcToken
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCcToken[] $midocoCcToken
      */
     public function __construct(?array $midocoCcToken = null)
     {
@@ -34,7 +34,7 @@ class GetCcTokenResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCcToken value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCcToken[]
      */
     public function getMidocoCcToken(): ?array
     {
@@ -55,12 +55,12 @@ class GetCcTokenResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCcTokenResponseMidocoCcTokenItem) {
             // validation for constraint: itemType
-            if (!$getCcTokenResponseMidocoCcTokenItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken) {
+            if (!$getCcTokenResponseMidocoCcTokenItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCcToken) {
                 $invalidValues[] = is_object($getCcTokenResponseMidocoCcTokenItem) ? get_class($getCcTokenResponseMidocoCcTokenItem) : sprintf('%s(%s)', gettype($getCcTokenResponseMidocoCcTokenItem), var_export($getCcTokenResponseMidocoCcTokenItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCcToken, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCcTokenResponse extends AbstractStructBase
     /**
      * Set MidocoCcToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken[] $midocoCcToken
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCcTokenResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCcToken[] $midocoCcToken
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCcTokenResponse
      */
     public function setMidocoCcToken(?array $midocoCcToken = null): self
     {
@@ -85,14 +85,14 @@ class GetCcTokenResponse extends AbstractStructBase
     /**
      * Add item to MidocoCcToken value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCcTokenResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCcToken $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCcTokenResponse
      */
-    public function addToMidocoCcToken(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken $item): self
+    public function addToMidocoCcToken(\Pggns\MidocoApi\Crm\StructType\MidocoCcToken $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken) {
-            throw new InvalidArgumentException(sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCcToken) {
+            throw new InvalidArgumentException(sprintf('The MidocoCcToken property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCcToken, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCcToken[] = $item;
         

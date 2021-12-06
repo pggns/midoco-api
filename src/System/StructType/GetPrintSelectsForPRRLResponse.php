@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetPrintSelectsForPRRLResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPrintSelect
-     * @var \Pggns\MidocoApi\Api\System\StructType\MidocoPrintSelect[]
+     * @var \Pggns\MidocoApi\System\StructType\MidocoPrintSelect[]
      */
     protected ?array $MidocoPrintSelect = null;
     /**
      * Constructor method for GetPrintSelectsForPRRLResponse
      * @uses GetPrintSelectsForPRRLResponse::setMidocoPrintSelect()
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoPrintSelect[] $midocoPrintSelect
+     * @param \Pggns\MidocoApi\System\StructType\MidocoPrintSelect[] $midocoPrintSelect
      */
     public function __construct(?array $midocoPrintSelect = null)
     {
@@ -34,7 +34,7 @@ class GetPrintSelectsForPRRLResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPrintSelect value
-     * @return \Pggns\MidocoApi\Api\System\StructType\MidocoPrintSelect[]
+     * @return \Pggns\MidocoApi\System\StructType\MidocoPrintSelect[]
      */
     public function getMidocoPrintSelect(): ?array
     {
@@ -55,12 +55,12 @@ class GetPrintSelectsForPRRLResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPrintSelectsForPRRLResponseMidocoPrintSelectItem) {
             // validation for constraint: itemType
-            if (!$getPrintSelectsForPRRLResponseMidocoPrintSelectItem instanceof \Pggns\MidocoApi\Api\System\StructType\MidocoPrintSelect) {
+            if (!$getPrintSelectsForPRRLResponseMidocoPrintSelectItem instanceof \Pggns\MidocoApi\System\StructType\MidocoPrintSelect) {
                 $invalidValues[] = is_object($getPrintSelectsForPRRLResponseMidocoPrintSelectItem) ? get_class($getPrintSelectsForPRRLResponseMidocoPrintSelectItem) : sprintf('%s(%s)', gettype($getPrintSelectsForPRRLResponseMidocoPrintSelectItem), var_export($getPrintSelectsForPRRLResponseMidocoPrintSelectItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\MidocoPrintSelect, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\System\StructType\MidocoPrintSelect, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetPrintSelectsForPRRLResponse extends AbstractStructBase
     /**
      * Set MidocoPrintSelect value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoPrintSelect[] $midocoPrintSelect
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetPrintSelectsForPRRLResponse
+     * @param \Pggns\MidocoApi\System\StructType\MidocoPrintSelect[] $midocoPrintSelect
+     * @return \Pggns\MidocoApi\System\StructType\GetPrintSelectsForPRRLResponse
      */
     public function setMidocoPrintSelect(?array $midocoPrintSelect = null): self
     {
@@ -85,14 +85,14 @@ class GetPrintSelectsForPRRLResponse extends AbstractStructBase
     /**
      * Add item to MidocoPrintSelect value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoPrintSelect $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetPrintSelectsForPRRLResponse
+     * @param \Pggns\MidocoApi\System\StructType\MidocoPrintSelect $item
+     * @return \Pggns\MidocoApi\System\StructType\GetPrintSelectsForPRRLResponse
      */
-    public function addToMidocoPrintSelect(\Pggns\MidocoApi\Api\System\StructType\MidocoPrintSelect $item): self
+    public function addToMidocoPrintSelect(\Pggns\MidocoApi\System\StructType\MidocoPrintSelect $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\MidocoPrintSelect) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\MidocoPrintSelect, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\MidocoPrintSelect) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintSelect property can only contain items of type \Pggns\MidocoApi\System\StructType\MidocoPrintSelect, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintSelect[] = $item;
         

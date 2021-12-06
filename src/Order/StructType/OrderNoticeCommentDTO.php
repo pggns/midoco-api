@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class OrderNoticeCommentDTO extends AbstractStructBase
     /**
      * Set baseCommentId value
      * @param int $baseCommentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO
      */
     public function setBaseCommentId(?int $baseCommentId = null): self
     {
@@ -134,7 +134,7 @@ class OrderNoticeCommentDTO extends AbstractStructBase
     /**
      * Set commentId value
      * @param int $commentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO
      */
     public function setCommentId(?int $commentId = null): self
     {
@@ -157,7 +157,7 @@ class OrderNoticeCommentDTO extends AbstractStructBase
     /**
      * Set commenttext value
      * @param string $commenttext
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO
      */
     public function setCommenttext(?string $commenttext = null): self
     {
@@ -180,7 +180,7 @@ class OrderNoticeCommentDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -203,7 +203,7 @@ class OrderNoticeCommentDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -226,7 +226,7 @@ class OrderNoticeCommentDTO extends AbstractStructBase
     /**
      * Set markedVoid value
      * @param bool $markedVoid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO
      */
     public function setMarkedVoid(?bool $markedVoid = null): self
     {
@@ -249,7 +249,7 @@ class OrderNoticeCommentDTO extends AbstractStructBase
     /**
      * Set modifyTime value
      * @param string $modifyTime
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO
      */
     public function setModifyTime(?string $modifyTime = null): self
     {
@@ -272,7 +272,7 @@ class OrderNoticeCommentDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -295,7 +295,7 @@ class OrderNoticeCommentDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -318,7 +318,7 @@ class OrderNoticeCommentDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Order\StructType\OrderNoticeCommentDTO
      */
     public function setPosition(?int $position = null): self
     {

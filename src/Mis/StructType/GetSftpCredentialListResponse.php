@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetSftpCredentialListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSftpCredential
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\SftpCredentialDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\SftpCredentialDTO[]
      */
     protected ?array $MidocoSftpCredential = null;
     /**
      * Constructor method for GetSftpCredentialListResponse
      * @uses GetSftpCredentialListResponse::setMidocoSftpCredential()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SftpCredentialDTO[] $midocoSftpCredential
+     * @param \Pggns\MidocoApi\Mis\StructType\SftpCredentialDTO[] $midocoSftpCredential
      */
     public function __construct(?array $midocoSftpCredential = null)
     {
@@ -34,7 +34,7 @@ class GetSftpCredentialListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSftpCredential value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SftpCredentialDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\SftpCredentialDTO[]
      */
     public function getMidocoSftpCredential(): ?array
     {
@@ -55,12 +55,12 @@ class GetSftpCredentialListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getSftpCredentialListResponseMidocoSftpCredentialItem) {
             // validation for constraint: itemType
-            if (!$getSftpCredentialListResponseMidocoSftpCredentialItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\SftpCredentialDTO) {
+            if (!$getSftpCredentialListResponseMidocoSftpCredentialItem instanceof \Pggns\MidocoApi\Mis\StructType\SftpCredentialDTO) {
                 $invalidValues[] = is_object($getSftpCredentialListResponseMidocoSftpCredentialItem) ? get_class($getSftpCredentialListResponseMidocoSftpCredentialItem) : sprintf('%s(%s)', gettype($getSftpCredentialListResponseMidocoSftpCredentialItem), var_export($getSftpCredentialListResponseMidocoSftpCredentialItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSftpCredential property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\SftpCredentialDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSftpCredential property can only contain items of type \Pggns\MidocoApi\Mis\StructType\SftpCredentialDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetSftpCredentialListResponse extends AbstractStructBase
     /**
      * Set MidocoSftpCredential value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SftpCredentialDTO[] $midocoSftpCredential
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetSftpCredentialListResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\SftpCredentialDTO[] $midocoSftpCredential
+     * @return \Pggns\MidocoApi\Mis\StructType\GetSftpCredentialListResponse
      */
     public function setMidocoSftpCredential(?array $midocoSftpCredential = null): self
     {
@@ -85,14 +85,14 @@ class GetSftpCredentialListResponse extends AbstractStructBase
     /**
      * Add item to MidocoSftpCredential value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\SftpCredentialDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetSftpCredentialListResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\SftpCredentialDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetSftpCredentialListResponse
      */
-    public function addToMidocoSftpCredential(\Pggns\MidocoApi\Api\Mis\StructType\SftpCredentialDTO $item): self
+    public function addToMidocoSftpCredential(\Pggns\MidocoApi\Mis\StructType\SftpCredentialDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\SftpCredentialDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSftpCredential property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\SftpCredentialDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\SftpCredentialDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSftpCredential property can only contain items of type \Pggns\MidocoApi\Mis\StructType\SftpCredentialDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSftpCredential[] = $item;
         

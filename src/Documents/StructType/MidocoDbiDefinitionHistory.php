@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoDbiDefinitionHistory extends DbiDefinitionHistoryDTO
     /**
      * Set userName value
      * @param string $userName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDbiDefinitionHistory
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDbiDefinitionHistory
      */
     public function setUserName(?string $userName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetLogEntriesRequest extends AbstractStructBase
      * The MidocoLogEntryRequest
      * Meta information extracted from the WSDL
      * - ref: MidocoLogEntryRequest
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\MidocoLogEntryRequest|null
+     * @var \Pggns\MidocoApi\Mis\StructType\MidocoLogEntryRequest|null
      */
-    protected ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoLogEntryRequest $MidocoLogEntryRequest = null;
+    protected ?\Pggns\MidocoApi\Mis\StructType\MidocoLogEntryRequest $MidocoLogEntryRequest = null;
     /**
      * Constructor method for GetLogEntriesRequest
      * @uses GetLogEntriesRequest::setMidocoLogEntryRequest()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoLogEntryRequest $midocoLogEntryRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoLogEntryRequest $midocoLogEntryRequest
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoLogEntryRequest $midocoLogEntryRequest = null)
+    public function __construct(?\Pggns\MidocoApi\Mis\StructType\MidocoLogEntryRequest $midocoLogEntryRequest = null)
     {
         $this
             ->setMidocoLogEntryRequest($midocoLogEntryRequest);
     }
     /**
      * Get MidocoLogEntryRequest value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoLogEntryRequest|null
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoLogEntryRequest|null
      */
-    public function getMidocoLogEntryRequest(): ?\Pggns\MidocoApi\Api\Mis\StructType\MidocoLogEntryRequest
+    public function getMidocoLogEntryRequest(): ?\Pggns\MidocoApi\Mis\StructType\MidocoLogEntryRequest
     {
         return $this->MidocoLogEntryRequest;
     }
     /**
      * Set MidocoLogEntryRequest value
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoLogEntryRequest $midocoLogEntryRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetLogEntriesRequest
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoLogEntryRequest $midocoLogEntryRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\GetLogEntriesRequest
      */
-    public function setMidocoLogEntryRequest(?\Pggns\MidocoApi\Api\Mis\StructType\MidocoLogEntryRequest $midocoLogEntryRequest = null): self
+    public function setMidocoLogEntryRequest(?\Pggns\MidocoApi\Mis\StructType\MidocoLogEntryRequest $midocoLogEntryRequest = null): self
     {
         $this->MidocoLogEntryRequest = $midocoLogEntryRequest;
         

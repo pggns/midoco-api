@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetBillingDocValueRequest extends AbstractStructBase
     /**
      * Set paymentDocument value
      * @param string $paymentDocument
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocValueRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocValueRequest
      */
     public function setPaymentDocument(?string $paymentDocument = null): self
     {
@@ -70,7 +70,7 @@ class GetBillingDocValueRequest extends AbstractStructBase
     /**
      * Set articleType value
      * @param string $articleType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBillingDocValueRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocValueRequest
      */
     public function setArticleType(?string $articleType = null): self
     {

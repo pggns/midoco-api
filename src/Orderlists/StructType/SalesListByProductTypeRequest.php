@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SalesListByProductTypeRequest extends AbstractStructBase
      * The MidocoSalesListByProductTypeCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoSalesListByProductTypeCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType $MidocoSalesListByProductTypeCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType $MidocoSalesListByProductTypeCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SalesListByProductTypeRequest extends AbstractStructBase
      * Constructor method for SalesListByProductTypeRequest
      * @uses SalesListByProductTypeRequest::setMidocoSalesListByProductTypeCriteria()
      * @uses SalesListByProductTypeRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType $midocoSalesListByProductTypeCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType $midocoSalesListByProductTypeCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType $midocoSalesListByProductTypeCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType $midocoSalesListByProductTypeCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoSalesListByProductTypeCriteria($midocoSalesListByProductTypeCriteria)
@@ -42,18 +42,18 @@ class SalesListByProductTypeRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSalesListByProductTypeCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType|null
      */
-    public function getMidocoSalesListByProductTypeCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType
+    public function getMidocoSalesListByProductTypeCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType
     {
         return $this->MidocoSalesListByProductTypeCriteria;
     }
     /**
      * Set MidocoSalesListByProductTypeCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType $midocoSalesListByProductTypeCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByProductTypeRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType $midocoSalesListByProductTypeCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByProductTypeRequest
      */
-    public function setMidocoSalesListByProductTypeCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType $midocoSalesListByProductTypeCriteria = null): self
+    public function setMidocoSalesListByProductTypeCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByProductTypeCriteriaType $midocoSalesListByProductTypeCriteria = null): self
     {
         $this->MidocoSalesListByProductTypeCriteria = $midocoSalesListByProductTypeCriteria;
         
@@ -70,7 +70,7 @@ class SalesListByProductTypeRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByProductTypeRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByProductTypeRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

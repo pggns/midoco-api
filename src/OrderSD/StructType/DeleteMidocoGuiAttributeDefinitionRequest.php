@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteMidocoGuiAttributeDefinitionRequest extends AbstractStructBase
     /**
      * Set attributeId value
      * @param int $attributeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteMidocoGuiAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteMidocoGuiAttributeDefinitionRequest
      */
     public function setAttributeId(?int $attributeId = null): self
     {

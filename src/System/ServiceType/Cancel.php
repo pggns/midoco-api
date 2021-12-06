@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\ServiceType;
+namespace Pggns\MidocoApi\System\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Cancel extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\System\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\System\ServiceType\Cancel
+     * @return \Pggns\MidocoApi\System\ServiceType\Cancel
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\System\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Cancel extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\System\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\System\StructType\CancelLongOperationRequest $paramCancelLongOperationRequest
-     * @return \Pggns\MidocoApi\Api\System\StructType\CancelLongOperationResponse|bool
+     * @param \Pggns\MidocoApi\System\StructType\CancelLongOperationRequest $paramCancelLongOperationRequest
+     * @return \Pggns\MidocoApi\System\StructType\CancelLongOperationResponse|bool
      */
-    public function cancelLongOperation(\Pggns\MidocoApi\Api\System\StructType\CancelLongOperationRequest $paramCancelLongOperationRequest)
+    public function cancelLongOperation(\Pggns\MidocoApi\System\StructType\CancelLongOperationRequest $paramCancelLongOperationRequest)
     {
         try {
             $this->setResult($resultCancelLongOperation = $this->getSoapClient()->__soapCall('cancelLongOperation', [
@@ -58,15 +58,15 @@ class Cancel extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\System\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\System\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\System\StructType\CancelTssClientRequest $paramCancelTssClientRequest
-     * @return \Pggns\MidocoApi\Api\System\StructType\CancelTssClientResponse|bool
+     * @param \Pggns\MidocoApi\System\StructType\CancelTssClientRequest $paramCancelTssClientRequest
+     * @return \Pggns\MidocoApi\System\StructType\CancelTssClientResponse|bool
      */
-    public function cancelTssClient(\Pggns\MidocoApi\Api\System\StructType\CancelTssClientRequest $paramCancelTssClientRequest)
+    public function cancelTssClient(\Pggns\MidocoApi\System\StructType\CancelTssClientRequest $paramCancelTssClientRequest)
     {
         try {
             $this->setResult($resultCancelTssClient = $this->getSoapClient()->__soapCall('cancelTssClient', [
@@ -83,7 +83,7 @@ class Cancel extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\System\StructType\CancelLongOperationResponse|\Pggns\MidocoApi\Api\System\StructType\CancelTssClientResponse
+     * @return \Pggns\MidocoApi\System\StructType\CancelLongOperationResponse|\Pggns\MidocoApi\System\StructType\CancelTssClientResponse
      */
     public function getResult()
     {

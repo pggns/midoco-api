@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,26 +18,26 @@ class PseudoRBCsvExportRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: PreparePseudoRevenueBookingRequest
-     * @var \Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest|null
+     * @var \Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest $PreparePseudoRevenueBookingRequest = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest $PreparePseudoRevenueBookingRequest = null;
     /**
      * The MidocoPseudoRevenueBookingDetail
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPseudoRevenueBookingDetail
-     * @var \Pggns\MidocoApi\Api\Order\StructType\PseudoRevenueBookingDetailType[]
+     * @var \Pggns\MidocoApi\Order\StructType\PseudoRevenueBookingDetailType[]
      */
     protected ?array $MidocoPseudoRevenueBookingDetail = null;
     /**
      * Constructor method for PseudoRBCsvExportRequest
      * @uses PseudoRBCsvExportRequest::setPreparePseudoRevenueBookingRequest()
      * @uses PseudoRBCsvExportRequest::setMidocoPseudoRevenueBookingDetail()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest $preparePseudoRevenueBookingRequest
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PseudoRevenueBookingDetailType[] $midocoPseudoRevenueBookingDetail
+     * @param \Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest $preparePseudoRevenueBookingRequest
+     * @param \Pggns\MidocoApi\Order\StructType\PseudoRevenueBookingDetailType[] $midocoPseudoRevenueBookingDetail
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest $preparePseudoRevenueBookingRequest = null, ?array $midocoPseudoRevenueBookingDetail = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest $preparePseudoRevenueBookingRequest = null, ?array $midocoPseudoRevenueBookingDetail = null)
     {
         $this
             ->setPreparePseudoRevenueBookingRequest($preparePseudoRevenueBookingRequest)
@@ -45,18 +45,18 @@ class PseudoRBCsvExportRequest extends AbstractStructBase
     }
     /**
      * Get PreparePseudoRevenueBookingRequest value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest|null
+     * @return \Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest|null
      */
-    public function getPreparePseudoRevenueBookingRequest(): ?\Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest
+    public function getPreparePseudoRevenueBookingRequest(): ?\Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest
     {
         return $this->PreparePseudoRevenueBookingRequest;
     }
     /**
      * Set PreparePseudoRevenueBookingRequest value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest $preparePseudoRevenueBookingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PseudoRBCsvExportRequest
+     * @param \Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest $preparePseudoRevenueBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PseudoRBCsvExportRequest
      */
-    public function setPreparePseudoRevenueBookingRequest(?\Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest $preparePseudoRevenueBookingRequest = null): self
+    public function setPreparePseudoRevenueBookingRequest(?\Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest $preparePseudoRevenueBookingRequest = null): self
     {
         $this->PreparePseudoRevenueBookingRequest = $preparePseudoRevenueBookingRequest;
         
@@ -64,7 +64,7 @@ class PseudoRBCsvExportRequest extends AbstractStructBase
     }
     /**
      * Get MidocoPseudoRevenueBookingDetail value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PseudoRevenueBookingDetailType[]
+     * @return \Pggns\MidocoApi\Order\StructType\PseudoRevenueBookingDetailType[]
      */
     public function getMidocoPseudoRevenueBookingDetail(): ?array
     {
@@ -85,12 +85,12 @@ class PseudoRBCsvExportRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pseudoRBCsvExportRequestMidocoPseudoRevenueBookingDetailItem) {
             // validation for constraint: itemType
-            if (!$pseudoRBCsvExportRequestMidocoPseudoRevenueBookingDetailItem instanceof \Pggns\MidocoApi\Api\Order\StructType\PseudoRevenueBookingDetailType) {
+            if (!$pseudoRBCsvExportRequestMidocoPseudoRevenueBookingDetailItem instanceof \Pggns\MidocoApi\Order\StructType\PseudoRevenueBookingDetailType) {
                 $invalidValues[] = is_object($pseudoRBCsvExportRequestMidocoPseudoRevenueBookingDetailItem) ? get_class($pseudoRBCsvExportRequestMidocoPseudoRevenueBookingDetailItem) : sprintf('%s(%s)', gettype($pseudoRBCsvExportRequestMidocoPseudoRevenueBookingDetailItem), var_export($pseudoRBCsvExportRequestMidocoPseudoRevenueBookingDetailItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPseudoRevenueBookingDetail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\PseudoRevenueBookingDetailType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPseudoRevenueBookingDetail property can only contain items of type \Pggns\MidocoApi\Order\StructType\PseudoRevenueBookingDetailType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -99,8 +99,8 @@ class PseudoRBCsvExportRequest extends AbstractStructBase
     /**
      * Set MidocoPseudoRevenueBookingDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PseudoRevenueBookingDetailType[] $midocoPseudoRevenueBookingDetail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PseudoRBCsvExportRequest
+     * @param \Pggns\MidocoApi\Order\StructType\PseudoRevenueBookingDetailType[] $midocoPseudoRevenueBookingDetail
+     * @return \Pggns\MidocoApi\Order\StructType\PseudoRBCsvExportRequest
      */
     public function setMidocoPseudoRevenueBookingDetail(?array $midocoPseudoRevenueBookingDetail = null): self
     {
@@ -115,14 +115,14 @@ class PseudoRBCsvExportRequest extends AbstractStructBase
     /**
      * Add item to MidocoPseudoRevenueBookingDetail value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PseudoRevenueBookingDetailType $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PseudoRBCsvExportRequest
+     * @param \Pggns\MidocoApi\Order\StructType\PseudoRevenueBookingDetailType $item
+     * @return \Pggns\MidocoApi\Order\StructType\PseudoRBCsvExportRequest
      */
-    public function addToMidocoPseudoRevenueBookingDetail(\Pggns\MidocoApi\Api\Order\StructType\PseudoRevenueBookingDetailType $item): self
+    public function addToMidocoPseudoRevenueBookingDetail(\Pggns\MidocoApi\Order\StructType\PseudoRevenueBookingDetailType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\PseudoRevenueBookingDetailType) {
-            throw new InvalidArgumentException(sprintf('The MidocoPseudoRevenueBookingDetail property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\PseudoRevenueBookingDetailType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\PseudoRevenueBookingDetailType) {
+            throw new InvalidArgumentException(sprintf('The MidocoPseudoRevenueBookingDetail property can only contain items of type \Pggns\MidocoApi\Order\StructType\PseudoRevenueBookingDetailType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPseudoRevenueBookingDetail[] = $item;
         

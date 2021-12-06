@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class GlobalNoticeCommentDTO extends AbstractStructBase
     /**
      * Set baseCommentId value
      * @param int $baseCommentId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO
      */
     public function setBaseCommentId(?int $baseCommentId = null): self
     {
@@ -126,7 +126,7 @@ class GlobalNoticeCommentDTO extends AbstractStructBase
     /**
      * Set commentId value
      * @param int $commentId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO
      */
     public function setCommentId(?int $commentId = null): self
     {
@@ -149,7 +149,7 @@ class GlobalNoticeCommentDTO extends AbstractStructBase
     /**
      * Set commenttext value
      * @param string $commenttext
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO
      */
     public function setCommenttext(?string $commenttext = null): self
     {
@@ -172,7 +172,7 @@ class GlobalNoticeCommentDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -195,7 +195,7 @@ class GlobalNoticeCommentDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -218,7 +218,7 @@ class GlobalNoticeCommentDTO extends AbstractStructBase
     /**
      * Set markedVoid value
      * @param bool $markedVoid
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO
      */
     public function setMarkedVoid(?bool $markedVoid = null): self
     {
@@ -241,7 +241,7 @@ class GlobalNoticeCommentDTO extends AbstractStructBase
     /**
      * Set modifyTime value
      * @param string $modifyTime
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO
      */
     public function setModifyTime(?string $modifyTime = null): self
     {
@@ -264,7 +264,7 @@ class GlobalNoticeCommentDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -287,7 +287,7 @@ class GlobalNoticeCommentDTO extends AbstractStructBase
     /**
      * Set noticeId value
      * @param int $noticeId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GlobalNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeCommentDTO
      */
     public function setNoticeId(?int $noticeId = null): self
     {

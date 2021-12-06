@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class Error extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\Error
+     * @return \Pggns\MidocoApi\Mis\StructType\Error
      */
     public function setID(?string $iD = null): self
     {
@@ -74,7 +74,7 @@ class Error extends AbstractStructBase
     /**
      * Set Text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\Error
+     * @return \Pggns\MidocoApi\Mis\StructType\Error
      */
     public function setText(?string $text = null): self
     {

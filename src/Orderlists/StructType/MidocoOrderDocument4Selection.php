@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class MidocoOrderDocument4Selection extends OrderDocumentDTO
     /**
      * Set selected value
      * @param bool $selected
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoOrderDocument4Selection
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderDocument4Selection
      */
     public function setSelected(?bool $selected = false): self
     {

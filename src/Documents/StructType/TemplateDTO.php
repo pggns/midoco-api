@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class TemplateDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TemplateDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -94,7 +94,7 @@ class TemplateDTO extends AbstractStructBase
     /**
      * Set isDefault value
      * @param bool $isDefault
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TemplateDTO
      */
     public function setIsDefault(?bool $isDefault = null): self
     {
@@ -117,7 +117,7 @@ class TemplateDTO extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TemplateDTO
      */
     public function setTemplateId(?int $templateId = null): self
     {
@@ -140,7 +140,7 @@ class TemplateDTO extends AbstractStructBase
     /**
      * Set templateText value
      * @param string $templateText
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TemplateDTO
      */
     public function setTemplateText(?string $templateText = null): self
     {
@@ -163,7 +163,7 @@ class TemplateDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TemplateDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\TemplateDTO
      */
     public function setType(?string $type = null): self
     {

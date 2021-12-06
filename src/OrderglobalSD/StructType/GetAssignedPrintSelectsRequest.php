@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetAssignedPrintSelectsRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAssignedPrintSelectsRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAssignedPrintSelectsRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -72,7 +72,7 @@ class GetAssignedPrintSelectsRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\GetAssignedPrintSelectsRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\GetAssignedPrintSelectsRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {

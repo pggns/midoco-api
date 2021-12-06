@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class SuppCEmailChgLogDTO extends AbstractStructBase
     /**
      * Set bookingType value
      * @param string $bookingType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCEmailChgLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCEmailChgLogDTO
      */
     public function setBookingType(?string $bookingType = null): self
     {
@@ -126,7 +126,7 @@ class SuppCEmailChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCEmailChgLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCEmailChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -149,7 +149,7 @@ class SuppCEmailChgLogDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCEmailChgLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCEmailChgLogDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -172,7 +172,7 @@ class SuppCEmailChgLogDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCEmailChgLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCEmailChgLogDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -195,7 +195,7 @@ class SuppCEmailChgLogDTO extends AbstractStructBase
     /**
      * Set suppCancelCEmailId value
      * @param int $suppCancelCEmailId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCEmailChgLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCEmailChgLogDTO
      */
     public function setSuppCancelCEmailId(?int $suppCancelCEmailId = null): self
     {
@@ -218,7 +218,7 @@ class SuppCEmailChgLogDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCEmailChgLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCEmailChgLogDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -241,7 +241,7 @@ class SuppCEmailChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCEmailChgLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCEmailChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -264,7 +264,7 @@ class SuppCEmailChgLogDTO extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCEmailChgLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCEmailChgLogDTO
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -287,7 +287,7 @@ class SuppCEmailChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SuppCEmailChgLogDTO
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SuppCEmailChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

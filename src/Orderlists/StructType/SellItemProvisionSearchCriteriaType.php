@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -174,7 +174,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set supplierSettlementGroup value
      * @param string $supplierSettlementGroup
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setSupplierSettlementGroup(?string $supplierSettlementGroup = null): self
     {
@@ -197,7 +197,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -220,7 +220,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -243,7 +243,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set creationStartDate value
      * @param string $creationStartDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setCreationStartDate(?string $creationStartDate = null): self
     {
@@ -266,7 +266,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set creationEndDate value
      * @param string $creationEndDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setCreationEndDate(?string $creationEndDate = null): self
     {
@@ -289,7 +289,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -312,7 +312,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setForename(?string $forename = null): self
     {
@@ -335,7 +335,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set surname value
      * @param string $surname
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setSurname(?string $surname = null): self
     {
@@ -358,7 +358,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set showGrantedRevenues value
      * @param bool $showGrantedRevenues
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setShowGrantedRevenues(?bool $showGrantedRevenues = null): self
     {
@@ -381,7 +381,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set suppressZeroRevenue value
      * @param bool $suppressZeroRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setSuppressZeroRevenue(?bool $suppressZeroRevenue = null): self
     {
@@ -404,7 +404,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -427,7 +427,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param string $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setOrderNo(?string $orderNo = null): self
     {
@@ -450,7 +450,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set paymentType value
      * @param string $paymentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setPaymentType(?string $paymentType = null): self
     {
@@ -473,7 +473,7 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemProvisionSearchCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionSearchCriteriaType
      */
     public function setItemId(?int $itemId = null): self
     {

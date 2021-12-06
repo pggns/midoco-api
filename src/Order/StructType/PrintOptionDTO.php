@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class PrintOptionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOptionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOptionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -78,7 +78,7 @@ class PrintOptionDTO extends AbstractStructBase
     /**
      * Set printOption value
      * @param string $printOption
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOptionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOptionDTO
      */
     public function setPrintOption(?string $printOption = null): self
     {
@@ -101,7 +101,7 @@ class PrintOptionDTO extends AbstractStructBase
     /**
      * Set printOptionId value
      * @param int $printOptionId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrintOptionDTO
+     * @return \Pggns\MidocoApi\Order\StructType\PrintOptionDTO
      */
     public function setPrintOptionId(?int $printOptionId = null): self
     {

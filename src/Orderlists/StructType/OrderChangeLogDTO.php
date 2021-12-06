@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class OrderChangeLogDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderChangeLogDTO
      */
     public function setAction(?string $action = null): self
     {
@@ -94,7 +94,7 @@ class OrderChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -117,7 +117,7 @@ class OrderChangeLogDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderChangeLogDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -140,7 +140,7 @@ class OrderChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -163,7 +163,7 @@ class OrderChangeLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\OrderChangeLogDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderChangeLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

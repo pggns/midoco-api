@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ReportDimensionDTO extends AbstractStructBase
     /**
      * Set dimensionName value
      * @param string $dimensionName
-     * @return \Pggns\MidocoApi\Api\System\StructType\ReportDimensionDTO
+     * @return \Pggns\MidocoApi\System\StructType\ReportDimensionDTO
      */
     public function setDimensionName(?string $dimensionName = null): self
     {
@@ -70,7 +70,7 @@ class ReportDimensionDTO extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\Api\System\StructType\ReportDimensionDTO
+     * @return \Pggns\MidocoApi\System\StructType\ReportDimensionDTO
      */
     public function setReportId(?int $reportId = null): self
     {

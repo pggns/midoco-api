@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteHedgeCurrencyRateResponse extends AbstractStructBase
     /**
      * Set success value
      * @param bool $success
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteHedgeCurrencyRateResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteHedgeCurrencyRateResponse
      */
     public function setSuccess(?bool $success = null): self
     {

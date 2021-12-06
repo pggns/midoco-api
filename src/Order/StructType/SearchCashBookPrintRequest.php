@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SearchCashBookPrintRequest extends AbstractStructBase
      * The SearchCashBookPrintCriteria
      * Meta information extracted from the WSDL
      * - ref: SearchCashBookPrintCriteria
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SearchCashBookPrintCriteria|null
+     * @var \Pggns\MidocoApi\Order\StructType\SearchCashBookPrintCriteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\SearchCashBookPrintCriteria $SearchCashBookPrintCriteria = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\SearchCashBookPrintCriteria $SearchCashBookPrintCriteria = null;
     /**
      * Constructor method for SearchCashBookPrintRequest
      * @uses SearchCashBookPrintRequest::setSearchCashBookPrintCriteria()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SearchCashBookPrintCriteria $searchCashBookPrintCriteria
+     * @param \Pggns\MidocoApi\Order\StructType\SearchCashBookPrintCriteria $searchCashBookPrintCriteria
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\SearchCashBookPrintCriteria $searchCashBookPrintCriteria = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\SearchCashBookPrintCriteria $searchCashBookPrintCriteria = null)
     {
         $this
             ->setSearchCashBookPrintCriteria($searchCashBookPrintCriteria);
     }
     /**
      * Get SearchCashBookPrintCriteria value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchCashBookPrintCriteria|null
+     * @return \Pggns\MidocoApi\Order\StructType\SearchCashBookPrintCriteria|null
      */
-    public function getSearchCashBookPrintCriteria(): ?\Pggns\MidocoApi\Api\Order\StructType\SearchCashBookPrintCriteria
+    public function getSearchCashBookPrintCriteria(): ?\Pggns\MidocoApi\Order\StructType\SearchCashBookPrintCriteria
     {
         return $this->SearchCashBookPrintCriteria;
     }
     /**
      * Set SearchCashBookPrintCriteria value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SearchCashBookPrintCriteria $searchCashBookPrintCriteria
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchCashBookPrintRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SearchCashBookPrintCriteria $searchCashBookPrintCriteria
+     * @return \Pggns\MidocoApi\Order\StructType\SearchCashBookPrintRequest
      */
-    public function setSearchCashBookPrintCriteria(?\Pggns\MidocoApi\Api\Order\StructType\SearchCashBookPrintCriteria $searchCashBookPrintCriteria = null): self
+    public function setSearchCashBookPrintCriteria(?\Pggns\MidocoApi\Order\StructType\SearchCashBookPrintCriteria $searchCashBookPrintCriteria = null): self
     {
         $this->SearchCashBookPrintCriteria = $searchCashBookPrintCriteria;
         

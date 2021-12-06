@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class BankStatementProtocolDTO extends AbstractStructBase
     /**
      * Set accountPosition value
      * @param int $accountPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankStatementProtocolDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankStatementProtocolDTO
      */
     public function setAccountPosition(?int $accountPosition = null): self
     {
@@ -86,7 +86,7 @@ class BankStatementProtocolDTO extends AbstractStructBase
     /**
      * Set protocolId value
      * @param int $protocolId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankStatementProtocolDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankStatementProtocolDTO
      */
     public function setProtocolId(?int $protocolId = null): self
     {
@@ -109,7 +109,7 @@ class BankStatementProtocolDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankStatementProtocolDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankStatementProtocolDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -132,7 +132,7 @@ class BankStatementProtocolDTO extends AbstractStructBase
     /**
      * Set statementId value
      * @param int $statementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BankStatementProtocolDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BankStatementProtocolDTO
      */
     public function setStatementId(?int $statementId = null): self
     {

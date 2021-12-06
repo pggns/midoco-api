@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoSalutation extends SalutationDTO
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoSalutation
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoSalutation
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -70,7 +70,7 @@ class MidocoSalutation extends SalutationDTO
     /**
      * Set letter value
      * @param string $letter
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoSalutation
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoSalutation
      */
     public function setLetter(?string $letter = null): self
     {

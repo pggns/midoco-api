@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetRemarkCategoryRequest extends AbstractStructBase
      * The MidocoRemarkCategory
      * Meta information extracted from the WSDL
      * - ref: MidocoRemarkCategory
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoRemarkCategory|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoRemarkCategory|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoRemarkCategory $MidocoRemarkCategory = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoRemarkCategory $MidocoRemarkCategory = null;
     /**
      * The showParentsOnly
      * @var bool|null
@@ -29,10 +29,10 @@ class GetRemarkCategoryRequest extends AbstractStructBase
      * Constructor method for GetRemarkCategoryRequest
      * @uses GetRemarkCategoryRequest::setMidocoRemarkCategory()
      * @uses GetRemarkCategoryRequest::setShowParentsOnly()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoRemarkCategory $midocoRemarkCategory
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoRemarkCategory $midocoRemarkCategory
      * @param bool $showParentsOnly
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoRemarkCategory $midocoRemarkCategory = null, ?bool $showParentsOnly = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoRemarkCategory $midocoRemarkCategory = null, ?bool $showParentsOnly = null)
     {
         $this
             ->setMidocoRemarkCategory($midocoRemarkCategory)
@@ -40,18 +40,18 @@ class GetRemarkCategoryRequest extends AbstractStructBase
     }
     /**
      * Get MidocoRemarkCategory value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoRemarkCategory|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoRemarkCategory|null
      */
-    public function getMidocoRemarkCategory(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoRemarkCategory
+    public function getMidocoRemarkCategory(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoRemarkCategory
     {
         return $this->MidocoRemarkCategory;
     }
     /**
      * Set MidocoRemarkCategory value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoRemarkCategory $midocoRemarkCategory
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarkCategoryRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoRemarkCategory $midocoRemarkCategory
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetRemarkCategoryRequest
      */
-    public function setMidocoRemarkCategory(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoRemarkCategory $midocoRemarkCategory = null): self
+    public function setMidocoRemarkCategory(?\Pggns\MidocoApi\OrderSD\StructType\MidocoRemarkCategory $midocoRemarkCategory = null): self
     {
         $this->MidocoRemarkCategory = $midocoRemarkCategory;
         
@@ -68,7 +68,7 @@ class GetRemarkCategoryRequest extends AbstractStructBase
     /**
      * Set showParentsOnly value
      * @param bool $showParentsOnly
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetRemarkCategoryRequest
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetRemarkCategoryRequest
      */
     public function setShowParentsOnly(?bool $showParentsOnly = null): self
     {

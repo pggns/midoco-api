@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetExchangeRateResponse extends AbstractStructBase
     /**
      * Set conversionRate value
      * @param float $conversionRate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExchangeRateResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetExchangeRateResponse
      */
     public function setConversionRate(?float $conversionRate = null): self
     {

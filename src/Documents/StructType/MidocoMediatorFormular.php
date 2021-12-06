@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -374,7 +374,7 @@ class MidocoMediatorFormular extends AbstractStructBase
      * Set sellPassengerName value
      * @throws InvalidArgumentException
      * @param string[] $sellPassengerName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setSellPassengerName(?array $sellPassengerName = null): self
     {
@@ -390,7 +390,7 @@ class MidocoMediatorFormular extends AbstractStructBase
      * Add item to sellPassengerName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function addToSellPassengerName(string $item): self
     {
@@ -440,7 +440,7 @@ class MidocoMediatorFormular extends AbstractStructBase
      * Set sellPassengerFirstName value
      * @throws InvalidArgumentException
      * @param string[] $sellPassengerFirstName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setSellPassengerFirstName(?array $sellPassengerFirstName = null): self
     {
@@ -456,7 +456,7 @@ class MidocoMediatorFormular extends AbstractStructBase
      * Add item to sellPassengerFirstName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function addToSellPassengerFirstName(string $item): self
     {
@@ -506,7 +506,7 @@ class MidocoMediatorFormular extends AbstractStructBase
      * Set sellPassengerSalutation value
      * @throws InvalidArgumentException
      * @param string[] $sellPassengerSalutation
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setSellPassengerSalutation(?array $sellPassengerSalutation = null): self
     {
@@ -522,7 +522,7 @@ class MidocoMediatorFormular extends AbstractStructBase
      * Add item to sellPassengerSalutation value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function addToSellPassengerSalutation(string $item): self
     {
@@ -572,7 +572,7 @@ class MidocoMediatorFormular extends AbstractStructBase
      * Set sellPassengerTitle value
      * @throws InvalidArgumentException
      * @param string[] $sellPassengerTitle
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setSellPassengerTitle(?array $sellPassengerTitle = null): self
     {
@@ -588,7 +588,7 @@ class MidocoMediatorFormular extends AbstractStructBase
      * Add item to sellPassengerTitle value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function addToSellPassengerTitle(string $item): self
     {
@@ -611,7 +611,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -634,7 +634,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -657,7 +657,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -680,7 +680,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -703,7 +703,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -726,7 +726,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set customerFirstName value
      * @param string $customerFirstName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setCustomerFirstName(?string $customerFirstName = null): self
     {
@@ -749,7 +749,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set customerStreetAndNumber value
      * @param string $customerStreetAndNumber
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setCustomerStreetAndNumber(?string $customerStreetAndNumber = null): self
     {
@@ -772,7 +772,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set customerPostalCode value
      * @param string $customerPostalCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setCustomerPostalCode(?string $customerPostalCode = null): self
     {
@@ -795,7 +795,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set customerCity value
      * @param string $customerCity
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setCustomerCity(?string $customerCity = null): self
     {
@@ -818,7 +818,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set customerPhone value
      * @param string $customerPhone
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setCustomerPhone(?string $customerPhone = null): self
     {
@@ -841,7 +841,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set itemPrice value
      * @param float $itemPrice
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setItemPrice(?float $itemPrice = null): self
     {
@@ -864,7 +864,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -887,7 +887,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -910,7 +910,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set inkassoMode value
      * @param string $inkassoMode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setInkassoMode(?string $inkassoMode = null): self
     {
@@ -933,7 +933,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set remarks value
      * @param string $remarks
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setRemarks(?string $remarks = null): self
     {
@@ -956,7 +956,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set donationToStreetChildren value
      * @param int $donationToStreetChildren
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setDonationToStreetChildren(?int $donationToStreetChildren = null): self
     {
@@ -979,7 +979,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set agencyNumber value
      * @param string $agencyNumber
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setAgencyNumber(?string $agencyNumber = null): self
     {
@@ -1002,7 +1002,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set supplierCategory value
      * @param string $supplierCategory
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setSupplierCategory(?string $supplierCategory = null): self
     {
@@ -1025,7 +1025,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -1048,7 +1048,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set leistung value
      * @param string $leistung
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setLeistung(?string $leistung = null): self
     {
@@ -1071,7 +1071,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set belegung value
      * @param string $belegung
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setBelegung(?string $belegung = null): self
     {
@@ -1094,7 +1094,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set hoteldaten value
      * @param string $hoteldaten
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setHoteldaten(?string $hoteldaten = null): self
     {
@@ -1117,7 +1117,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set abflughafen value
      * @param string $abflughafen
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setAbflughafen(?string $abflughafen = null): self
     {
@@ -1140,7 +1140,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set verpflegung value
      * @param string $verpflegung
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setVerpflegung(?string $verpflegung = null): self
     {
@@ -1163,7 +1163,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set bonusCurrentMonth value
      * @param string $bonusCurrentMonth
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setBonusCurrentMonth(?string $bonusCurrentMonth = null): self
     {
@@ -1186,7 +1186,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set competitiveBooking value
      * @param string $competitiveBooking
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setCompetitiveBooking(?string $competitiveBooking = null): self
     {
@@ -1209,7 +1209,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set additionalText value
      * @param string $additionalText
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setAdditionalText(?string $additionalText = null): self
     {
@@ -1232,7 +1232,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set otherRemarks value
      * @param string $otherRemarks
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setOtherRemarks(?string $otherRemarks = null): self
     {
@@ -1255,7 +1255,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set worldOfTUI value
      * @param string $worldOfTUI
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setWorldOfTUI(?string $worldOfTUI = null): self
     {
@@ -1278,7 +1278,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set ccEmail value
      * @param string $ccEmail
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setCcEmail(?string $ccEmail = null): self
     {
@@ -1301,7 +1301,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set bookingChange value
      * @param bool $bookingChange
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setBookingChange(?bool $bookingChange = null): self
     {
@@ -1324,7 +1324,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set bookingCancel value
      * @param bool $bookingCancel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setBookingCancel(?bool $bookingCancel = null): self
     {
@@ -1347,7 +1347,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set externalDocumentRepoId value
      * @param int $externalDocumentRepoId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setExternalDocumentRepoId(?int $externalDocumentRepoId = null): self
     {
@@ -1370,7 +1370,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     /**
      * Set externalDocumentFilename value
      * @param string $externalDocumentFilename
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoMediatorFormular
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoMediatorFormular
      */
     public function setExternalDocumentFilename(?string $externalDocumentFilename = null): self
     {

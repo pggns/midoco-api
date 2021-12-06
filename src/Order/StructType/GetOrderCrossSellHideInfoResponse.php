@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetOrderCrossSellHideInfoResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderCrossSell
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO[]
+     * @var \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO[]
      */
     protected ?array $MidocoOrderCrossSell = null;
     /**
      * Constructor method for GetOrderCrossSellHideInfoResponse
      * @uses GetOrderCrossSellHideInfoResponse::setMidocoOrderCrossSell()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO[] $midocoOrderCrossSell
+     * @param \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO[] $midocoOrderCrossSell
      */
     public function __construct(?array $midocoOrderCrossSell = null)
     {
@@ -34,7 +34,7 @@ class GetOrderCrossSellHideInfoResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderCrossSell value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO[]
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO[]
      */
     public function getMidocoOrderCrossSell(): ?array
     {
@@ -55,12 +55,12 @@ class GetOrderCrossSellHideInfoResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderCrossSellHideInfoResponseMidocoOrderCrossSellItem) {
             // validation for constraint: itemType
-            if (!$getOrderCrossSellHideInfoResponseMidocoOrderCrossSellItem instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO) {
+            if (!$getOrderCrossSellHideInfoResponseMidocoOrderCrossSellItem instanceof \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO) {
                 $invalidValues[] = is_object($getOrderCrossSellHideInfoResponseMidocoOrderCrossSellItem) ? get_class($getOrderCrossSellHideInfoResponseMidocoOrderCrossSellItem) : sprintf('%s(%s)', gettype($getOrderCrossSellHideInfoResponseMidocoOrderCrossSellItem), var_export($getOrderCrossSellHideInfoResponseMidocoOrderCrossSellItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderCrossSell property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderCrossSell property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetOrderCrossSellHideInfoResponse extends AbstractStructBase
     /**
      * Set MidocoOrderCrossSell value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO[] $midocoOrderCrossSell
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderCrossSellHideInfoResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO[] $midocoOrderCrossSell
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderCrossSellHideInfoResponse
      */
     public function setMidocoOrderCrossSell(?array $midocoOrderCrossSell = null): self
     {
@@ -85,14 +85,14 @@ class GetOrderCrossSellHideInfoResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderCrossSell value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderCrossSellHideInfoResponse
+     * @param \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderCrossSellHideInfoResponse
      */
-    public function addToMidocoOrderCrossSell(\Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO $item): self
+    public function addToMidocoOrderCrossSell(\Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderCrossSell property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\OrderCrossSellDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderCrossSell property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderCrossSellDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderCrossSell[] = $item;
         

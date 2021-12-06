@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class MidocoTripAppraisalInfo extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\TripAppraisalInfo[]
+     * @var \Pggns\MidocoApi\Documents\StructType\TripAppraisalInfo[]
      */
     protected ?array $TripAppraisalInfo = null;
     /**
      * Constructor method for MidocoTripAppraisalInfo
      * @uses MidocoTripAppraisalInfo::setTripAppraisalInfo()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TripAppraisalInfo[] $tripAppraisalInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\TripAppraisalInfo[] $tripAppraisalInfo
      */
     public function __construct(?array $tripAppraisalInfo = null)
     {
@@ -33,7 +33,7 @@ class MidocoTripAppraisalInfo extends AbstractStructBase
     }
     /**
      * Get TripAppraisalInfo value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TripAppraisalInfo[]
+     * @return \Pggns\MidocoApi\Documents\StructType\TripAppraisalInfo[]
      */
     public function getTripAppraisalInfo(): ?array
     {
@@ -54,12 +54,12 @@ class MidocoTripAppraisalInfo extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoTripAppraisalInfoTripAppraisalInfoItem) {
             // validation for constraint: itemType
-            if (!$midocoTripAppraisalInfoTripAppraisalInfoItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\TripAppraisalInfo) {
+            if (!$midocoTripAppraisalInfoTripAppraisalInfoItem instanceof \Pggns\MidocoApi\Documents\StructType\TripAppraisalInfo) {
                 $invalidValues[] = is_object($midocoTripAppraisalInfoTripAppraisalInfoItem) ? get_class($midocoTripAppraisalInfoTripAppraisalInfoItem) : sprintf('%s(%s)', gettype($midocoTripAppraisalInfoTripAppraisalInfoItem), var_export($midocoTripAppraisalInfoTripAppraisalInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The TripAppraisalInfo property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\TripAppraisalInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The TripAppraisalInfo property can only contain items of type \Pggns\MidocoApi\Documents\StructType\TripAppraisalInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class MidocoTripAppraisalInfo extends AbstractStructBase
     /**
      * Set TripAppraisalInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TripAppraisalInfo[] $tripAppraisalInfo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTripAppraisalInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\TripAppraisalInfo[] $tripAppraisalInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTripAppraisalInfo
      */
     public function setTripAppraisalInfo(?array $tripAppraisalInfo = null): self
     {
@@ -84,14 +84,14 @@ class MidocoTripAppraisalInfo extends AbstractStructBase
     /**
      * Add item to TripAppraisalInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\TripAppraisalInfo $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTripAppraisalInfo
+     * @param \Pggns\MidocoApi\Documents\StructType\TripAppraisalInfo $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTripAppraisalInfo
      */
-    public function addToTripAppraisalInfo(\Pggns\MidocoApi\Api\Documents\StructType\TripAppraisalInfo $item): self
+    public function addToTripAppraisalInfo(\Pggns\MidocoApi\Documents\StructType\TripAppraisalInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\TripAppraisalInfo) {
-            throw new InvalidArgumentException(sprintf('The TripAppraisalInfo property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\TripAppraisalInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\TripAppraisalInfo) {
+            throw new InvalidArgumentException(sprintf('The TripAppraisalInfo property can only contain items of type \Pggns\MidocoApi\Documents\StructType\TripAppraisalInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->TripAppraisalInfo[] = $item;
         

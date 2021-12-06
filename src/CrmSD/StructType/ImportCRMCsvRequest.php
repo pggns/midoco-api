@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class ImportCRMCsvRequest extends AbstractStructBase
      * The MidocoCRMImportDTOs
      * Meta information extracted from the WSDL
      * - ref: MidocoCRMImportDTOs
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCRMImportDTOs|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCRMImportDTOs|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCRMImportDTOs $MidocoCRMImportDTOs = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCRMImportDTOs $MidocoCRMImportDTOs = null;
     /**
      * The toSave
      * @var bool|null
@@ -41,12 +41,12 @@ class ImportCRMCsvRequest extends AbstractStructBase
      * @uses ImportCRMCsvRequest::setToSave()
      * @uses ImportCRMCsvRequest::setDateFormat()
      * @uses ImportCRMCsvRequest::setDecimalSeparator()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCRMImportDTOs $midocoCRMImportDTOs
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCRMImportDTOs $midocoCRMImportDTOs
      * @param bool $toSave
      * @param string $dateFormat
      * @param string $decimalSeparator
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCRMImportDTOs $midocoCRMImportDTOs = null, ?bool $toSave = null, ?string $dateFormat = null, ?string $decimalSeparator = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCRMImportDTOs $midocoCRMImportDTOs = null, ?bool $toSave = null, ?string $dateFormat = null, ?string $decimalSeparator = null)
     {
         $this
             ->setMidocoCRMImportDTOs($midocoCRMImportDTOs)
@@ -56,18 +56,18 @@ class ImportCRMCsvRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCRMImportDTOs value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCRMImportDTOs|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCRMImportDTOs|null
      */
-    public function getMidocoCRMImportDTOs(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCRMImportDTOs
+    public function getMidocoCRMImportDTOs(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCRMImportDTOs
     {
         return $this->MidocoCRMImportDTOs;
     }
     /**
      * Set MidocoCRMImportDTOs value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCRMImportDTOs $midocoCRMImportDTOs
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportCRMCsvRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCRMImportDTOs $midocoCRMImportDTOs
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportCRMCsvRequest
      */
-    public function setMidocoCRMImportDTOs(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCRMImportDTOs $midocoCRMImportDTOs = null): self
+    public function setMidocoCRMImportDTOs(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCRMImportDTOs $midocoCRMImportDTOs = null): self
     {
         $this->MidocoCRMImportDTOs = $midocoCRMImportDTOs;
         
@@ -84,7 +84,7 @@ class ImportCRMCsvRequest extends AbstractStructBase
     /**
      * Set toSave value
      * @param bool $toSave
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportCRMCsvRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportCRMCsvRequest
      */
     public function setToSave(?bool $toSave = null): self
     {
@@ -107,7 +107,7 @@ class ImportCRMCsvRequest extends AbstractStructBase
     /**
      * Set dateFormat value
      * @param string $dateFormat
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportCRMCsvRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportCRMCsvRequest
      */
     public function setDateFormat(?string $dateFormat = null): self
     {
@@ -130,7 +130,7 @@ class ImportCRMCsvRequest extends AbstractStructBase
     /**
      * Set decimalSeparator value
      * @param string $decimalSeparator
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\ImportCRMCsvRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportCRMCsvRequest
      */
     public function setDecimalSeparator(?string $decimalSeparator = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCrmSubjectAssignResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmSubjectAssign
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmSubjectAssign[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmSubjectAssign[]
      */
     protected ?array $MidocoCrmSubjectAssign = null;
     /**
      * Constructor method for GetCrmSubjectAssignResponse
      * @uses GetCrmSubjectAssignResponse::setMidocoCrmSubjectAssign()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmSubjectAssign[] $midocoCrmSubjectAssign
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmSubjectAssign[] $midocoCrmSubjectAssign
      */
     public function __construct(?array $midocoCrmSubjectAssign = null)
     {
@@ -34,7 +34,7 @@ class GetCrmSubjectAssignResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmSubjectAssign value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmSubjectAssign[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmSubjectAssign[]
      */
     public function getMidocoCrmSubjectAssign(): ?array
     {
@@ -55,12 +55,12 @@ class GetCrmSubjectAssignResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCrmSubjectAssignResponseMidocoCrmSubjectAssignItem) {
             // validation for constraint: itemType
-            if (!$getCrmSubjectAssignResponseMidocoCrmSubjectAssignItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmSubjectAssign) {
+            if (!$getCrmSubjectAssignResponseMidocoCrmSubjectAssignItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmSubjectAssign) {
                 $invalidValues[] = is_object($getCrmSubjectAssignResponseMidocoCrmSubjectAssignItem) ? get_class($getCrmSubjectAssignResponseMidocoCrmSubjectAssignItem) : sprintf('%s(%s)', gettype($getCrmSubjectAssignResponseMidocoCrmSubjectAssignItem), var_export($getCrmSubjectAssignResponseMidocoCrmSubjectAssignItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmSubjectAssign property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmSubjectAssign, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmSubjectAssign property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmSubjectAssign, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCrmSubjectAssignResponse extends AbstractStructBase
     /**
      * Set MidocoCrmSubjectAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmSubjectAssign[] $midocoCrmSubjectAssign
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCrmSubjectAssignResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmSubjectAssign[] $midocoCrmSubjectAssign
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCrmSubjectAssignResponse
      */
     public function setMidocoCrmSubjectAssign(?array $midocoCrmSubjectAssign = null): self
     {
@@ -85,14 +85,14 @@ class GetCrmSubjectAssignResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmSubjectAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmSubjectAssign $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCrmSubjectAssignResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmSubjectAssign $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCrmSubjectAssignResponse
      */
-    public function addToMidocoCrmSubjectAssign(\Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmSubjectAssign $item): self
+    public function addToMidocoCrmSubjectAssign(\Pggns\MidocoApi\Crm\StructType\MidocoCrmSubjectAssign $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmSubjectAssign) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmSubjectAssign property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoCrmSubjectAssign, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmSubjectAssign) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmSubjectAssign property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmSubjectAssign, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmSubjectAssign[] = $item;
         

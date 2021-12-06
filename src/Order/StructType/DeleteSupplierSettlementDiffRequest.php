@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteSupplierSettlementDiffRequest extends AbstractStructBase
      * The MidocoSupplierSettlementDiff
      * Meta information extracted from the WSDL
      * - ref: MidocoSupplierSettlementDiff
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementDiff|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementDiff|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementDiff $MidocoSupplierSettlementDiff = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementDiff $MidocoSupplierSettlementDiff = null;
     /**
      * Constructor method for DeleteSupplierSettlementDiffRequest
      * @uses DeleteSupplierSettlementDiffRequest::setMidocoSupplierSettlementDiff()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementDiff $midocoSupplierSettlementDiff
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementDiff $midocoSupplierSettlementDiff
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementDiff $midocoSupplierSettlementDiff = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementDiff $midocoSupplierSettlementDiff = null)
     {
         $this
             ->setMidocoSupplierSettlementDiff($midocoSupplierSettlementDiff);
     }
     /**
      * Get MidocoSupplierSettlementDiff value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementDiff|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementDiff|null
      */
-    public function getMidocoSupplierSettlementDiff(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementDiff
+    public function getMidocoSupplierSettlementDiff(): ?\Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementDiff
     {
         return $this->MidocoSupplierSettlementDiff;
     }
     /**
      * Set MidocoSupplierSettlementDiff value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementDiff $midocoSupplierSettlementDiff
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteSupplierSettlementDiffRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementDiff $midocoSupplierSettlementDiff
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteSupplierSettlementDiffRequest
      */
-    public function setMidocoSupplierSettlementDiff(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierSettlementDiff $midocoSupplierSettlementDiff = null): self
+    public function setMidocoSupplierSettlementDiff(?\Pggns\MidocoApi\Order\StructType\MidocoSupplierSettlementDiff $midocoSupplierSettlementDiff = null): self
     {
         $this->MidocoSupplierSettlementDiff = $midocoSupplierSettlementDiff;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoFlightDetail extends FlightDetailDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoFlightSegmentDetails
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails[]
      */
     protected ?array $MidocoFlightSegmentDetails = null;
     /**
@@ -37,7 +37,7 @@ class MidocoFlightDetail extends FlightDetailDTO
      * @uses MidocoFlightDetail::setMidocoFlightSegmentDetails()
      * @uses MidocoFlightDetail::setRoute()
      * @uses MidocoFlightDetail::setPrice()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails[] $midocoFlightSegmentDetails
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails[] $midocoFlightSegmentDetails
      * @param string $route
      * @param float $price
      */
@@ -50,7 +50,7 @@ class MidocoFlightDetail extends FlightDetailDTO
     }
     /**
      * Get MidocoFlightSegmentDetails value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails[]
      */
     public function getMidocoFlightSegmentDetails(): ?array
     {
@@ -71,12 +71,12 @@ class MidocoFlightDetail extends FlightDetailDTO
         $invalidValues = [];
         foreach ($values as $midocoFlightDetailMidocoFlightSegmentDetailsItem) {
             // validation for constraint: itemType
-            if (!$midocoFlightDetailMidocoFlightSegmentDetailsItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails) {
+            if (!$midocoFlightDetailMidocoFlightSegmentDetailsItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails) {
                 $invalidValues[] = is_object($midocoFlightDetailMidocoFlightSegmentDetailsItem) ? get_class($midocoFlightDetailMidocoFlightSegmentDetailsItem) : sprintf('%s(%s)', gettype($midocoFlightDetailMidocoFlightSegmentDetailsItem), var_export($midocoFlightDetailMidocoFlightSegmentDetailsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFlightSegmentDetails property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFlightSegmentDetails property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,8 +85,8 @@ class MidocoFlightDetail extends FlightDetailDTO
     /**
      * Set MidocoFlightSegmentDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails[] $midocoFlightSegmentDetails
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails[] $midocoFlightSegmentDetails
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFlightDetail
      */
     public function setMidocoFlightSegmentDetails(?array $midocoFlightSegmentDetails = null): self
     {
@@ -101,14 +101,14 @@ class MidocoFlightDetail extends FlightDetailDTO
     /**
      * Add item to MidocoFlightSegmentDetails value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails $item
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFlightDetail
      */
-    public function addToMidocoFlightSegmentDetails(\Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails $item): self
+    public function addToMidocoFlightSegmentDetails(\Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails) {
-            throw new InvalidArgumentException(sprintf('The MidocoFlightSegmentDetails property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightSegmentDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails) {
+            throw new InvalidArgumentException(sprintf('The MidocoFlightSegmentDetails property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoFlightSegmentDetails, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFlightSegmentDetails[] = $item;
         
@@ -125,7 +125,7 @@ class MidocoFlightDetail extends FlightDetailDTO
     /**
      * Set route value
      * @param string $route
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFlightDetail
      */
     public function setRoute(?string $route = null): self
     {
@@ -148,7 +148,7 @@ class MidocoFlightDetail extends FlightDetailDTO
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFlightDetail
      */
     public function setPrice(?float $price = null): self
     {

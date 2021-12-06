@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,29 +17,29 @@ class AdviceDetails extends AbstractStructBase
      * The MidocoAdviceSettlementDetail
      * Meta information extracted from the WSDL
      * - ref: MidocoAdviceSettlementDetail
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $MidocoAdviceSettlementDetail = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $MidocoAdviceSettlementDetail = null;
     /**
      * The SellItemDetails4Printing
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4Printing|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4Printing|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4Printing $SellItemDetails4Printing = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4Printing $SellItemDetails4Printing = null;
     /**
      * The MidocoOrder
-     * @var \Pggns\MidocoApi\Api\Order\StructType\OrderDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\OrderDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\OrderDTO $MidocoOrder = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\OrderDTO $MidocoOrder = null;
     /**
      * Constructor method for AdviceDetails
      * @uses AdviceDetails::setMidocoAdviceSettlementDetail()
      * @uses AdviceDetails::setSellItemDetails4Printing()
      * @uses AdviceDetails::setMidocoOrder()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4Printing $sellItemDetails4Printing
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderDTO $midocoOrder
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4Printing $sellItemDetails4Printing
+     * @param \Pggns\MidocoApi\Order\StructType\OrderDTO $midocoOrder
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4Printing $sellItemDetails4Printing = null, ?\Pggns\MidocoApi\Api\Order\StructType\OrderDTO $midocoOrder = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail = null, ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4Printing $sellItemDetails4Printing = null, ?\Pggns\MidocoApi\Order\StructType\OrderDTO $midocoOrder = null)
     {
         $this
             ->setMidocoAdviceSettlementDetail($midocoAdviceSettlementDetail)
@@ -48,18 +48,18 @@ class AdviceDetails extends AbstractStructBase
     }
     /**
      * Get MidocoAdviceSettlementDetail value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail|null
      */
-    public function getMidocoAdviceSettlementDetail(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail
+    public function getMidocoAdviceSettlementDetail(): ?\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail
     {
         return $this->MidocoAdviceSettlementDetail;
     }
     /**
      * Set MidocoAdviceSettlementDetail value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdviceDetails
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail
+     * @return \Pggns\MidocoApi\Order\StructType\AdviceDetails
      */
-    public function setMidocoAdviceSettlementDetail(?\Pggns\MidocoApi\Api\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail = null): self
+    public function setMidocoAdviceSettlementDetail(?\Pggns\MidocoApi\Order\StructType\MidocoAdviceSettlementDetail $midocoAdviceSettlementDetail = null): self
     {
         $this->MidocoAdviceSettlementDetail = $midocoAdviceSettlementDetail;
         
@@ -67,18 +67,18 @@ class AdviceDetails extends AbstractStructBase
     }
     /**
      * Get SellItemDetails4Printing value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4Printing|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4Printing|null
      */
-    public function getSellItemDetails4Printing(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4Printing
+    public function getSellItemDetails4Printing(): ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4Printing
     {
         return $this->SellItemDetails4Printing;
     }
     /**
      * Set SellItemDetails4Printing value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4Printing $sellItemDetails4Printing
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdviceDetails
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4Printing $sellItemDetails4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\AdviceDetails
      */
-    public function setSellItemDetails4Printing(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemInfo4Printing $sellItemDetails4Printing = null): self
+    public function setSellItemDetails4Printing(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemInfo4Printing $sellItemDetails4Printing = null): self
     {
         $this->SellItemDetails4Printing = $sellItemDetails4Printing;
         
@@ -86,18 +86,18 @@ class AdviceDetails extends AbstractStructBase
     }
     /**
      * Get MidocoOrder value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\OrderDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\OrderDTO|null
      */
-    public function getMidocoOrder(): ?\Pggns\MidocoApi\Api\Order\StructType\OrderDTO
+    public function getMidocoOrder(): ?\Pggns\MidocoApi\Order\StructType\OrderDTO
     {
         return $this->MidocoOrder;
     }
     /**
      * Set MidocoOrder value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\OrderDTO $midocoOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdviceDetails
+     * @param \Pggns\MidocoApi\Order\StructType\OrderDTO $midocoOrder
+     * @return \Pggns\MidocoApi\Order\StructType\AdviceDetails
      */
-    public function setMidocoOrder(?\Pggns\MidocoApi\Api\Order\StructType\OrderDTO $midocoOrder = null): self
+    public function setMidocoOrder(?\Pggns\MidocoApi\Order\StructType\OrderDTO $midocoOrder = null): self
     {
         $this->MidocoOrder = $midocoOrder;
         

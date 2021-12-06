@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -66,7 +66,7 @@ class GetExchangeRateRequest extends AbstractStructBase
     /**
      * Set fromCurrency value
      * @param string $fromCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExchangeRateRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExchangeRateRequest
      */
     public function setFromCurrency(?string $fromCurrency = null): self
     {
@@ -89,7 +89,7 @@ class GetExchangeRateRequest extends AbstractStructBase
     /**
      * Set toCurrency value
      * @param string $toCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExchangeRateRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExchangeRateRequest
      */
     public function setToCurrency(?string $toCurrency = null): self
     {
@@ -112,7 +112,7 @@ class GetExchangeRateRequest extends AbstractStructBase
     /**
      * Set lookupMethod value
      * @param int $lookupMethod
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExchangeRateRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExchangeRateRequest
      */
     public function setLookupMethod(?int $lookupMethod = 1): self
     {
@@ -135,7 +135,7 @@ class GetExchangeRateRequest extends AbstractStructBase
     /**
      * Set validDate value
      * @param string $validDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetExchangeRateRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExchangeRateRequest
      */
     public function setValidDate(?string $validDate = null): self
     {

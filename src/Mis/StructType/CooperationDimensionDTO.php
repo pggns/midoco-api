@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class CooperationDimensionDTO extends AbstractStructBase
     /**
      * Set coopCity value
      * @param string $coopCity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CooperationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CooperationDimensionDTO
      */
     public function setCoopCity(?string $coopCity = null): self
     {
@@ -158,7 +158,7 @@ class CooperationDimensionDTO extends AbstractStructBase
     /**
      * Set coopCountryCode value
      * @param string $coopCountryCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CooperationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CooperationDimensionDTO
      */
     public function setCoopCountryCode(?string $coopCountryCode = null): self
     {
@@ -181,7 +181,7 @@ class CooperationDimensionDTO extends AbstractStructBase
     /**
      * Set coopEndorsement value
      * @param string $coopEndorsement
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CooperationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CooperationDimensionDTO
      */
     public function setCoopEndorsement(?string $coopEndorsement = null): self
     {
@@ -204,7 +204,7 @@ class CooperationDimensionDTO extends AbstractStructBase
     /**
      * Set coopOrganisationName value
      * @param string $coopOrganisationName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CooperationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CooperationDimensionDTO
      */
     public function setCoopOrganisationName(?string $coopOrganisationName = null): self
     {
@@ -227,7 +227,7 @@ class CooperationDimensionDTO extends AbstractStructBase
     /**
      * Set coopPhoneticCity value
      * @param string $coopPhoneticCity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CooperationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CooperationDimensionDTO
      */
     public function setCoopPhoneticCity(?string $coopPhoneticCity = null): self
     {
@@ -250,7 +250,7 @@ class CooperationDimensionDTO extends AbstractStructBase
     /**
      * Set coopPhoneticName value
      * @param string $coopPhoneticName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CooperationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CooperationDimensionDTO
      */
     public function setCoopPhoneticName(?string $coopPhoneticName = null): self
     {
@@ -273,7 +273,7 @@ class CooperationDimensionDTO extends AbstractStructBase
     /**
      * Set coopPhoneticStreet value
      * @param string $coopPhoneticStreet
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CooperationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CooperationDimensionDTO
      */
     public function setCoopPhoneticStreet(?string $coopPhoneticStreet = null): self
     {
@@ -296,7 +296,7 @@ class CooperationDimensionDTO extends AbstractStructBase
     /**
      * Set coopPostalCode value
      * @param string $coopPostalCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CooperationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CooperationDimensionDTO
      */
     public function setCoopPostalCode(?string $coopPostalCode = null): self
     {
@@ -319,7 +319,7 @@ class CooperationDimensionDTO extends AbstractStructBase
     /**
      * Set coopState value
      * @param string $coopState
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CooperationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CooperationDimensionDTO
      */
     public function setCoopState(?string $coopState = null): self
     {
@@ -342,7 +342,7 @@ class CooperationDimensionDTO extends AbstractStructBase
     /**
      * Set coopStreet value
      * @param string $coopStreet
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CooperationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CooperationDimensionDTO
      */
     public function setCoopStreet(?string $coopStreet = null): self
     {
@@ -365,7 +365,7 @@ class CooperationDimensionDTO extends AbstractStructBase
     /**
      * Set coopStreetNo value
      * @param string $coopStreetNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CooperationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CooperationDimensionDTO
      */
     public function setCoopStreetNo(?string $coopStreetNo = null): self
     {
@@ -388,7 +388,7 @@ class CooperationDimensionDTO extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param int $cooperationId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CooperationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CooperationDimensionDTO
      */
     public function setCooperationId(?int $cooperationId = null): self
     {
@@ -411,7 +411,7 @@ class CooperationDimensionDTO extends AbstractStructBase
     /**
      * Set midocoCooperationId value
      * @param string $midocoCooperationId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\CooperationDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\CooperationDimensionDTO
      */
     public function setMidocoCooperationId(?string $midocoCooperationId = null): self
     {

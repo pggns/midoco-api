@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetTravelNumberResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTravelNumber
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNumber[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoTravelNumber[]
      */
     protected ?array $MidocoTravelNumber = null;
     /**
      * Constructor method for GetTravelNumberResponse
      * @uses GetTravelNumberResponse::setMidocoTravelNumber()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNumber[] $midocoTravelNumber
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTravelNumber[] $midocoTravelNumber
      */
     public function __construct(?array $midocoTravelNumber = null)
     {
@@ -34,7 +34,7 @@ class GetTravelNumberResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTravelNumber value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNumber[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNumber[]
      */
     public function getMidocoTravelNumber(): ?array
     {
@@ -55,12 +55,12 @@ class GetTravelNumberResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTravelNumberResponseMidocoTravelNumberItem) {
             // validation for constraint: itemType
-            if (!$getTravelNumberResponseMidocoTravelNumberItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNumber) {
+            if (!$getTravelNumberResponseMidocoTravelNumberItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoTravelNumber) {
                 $invalidValues[] = is_object($getTravelNumberResponseMidocoTravelNumberItem) ? get_class($getTravelNumberResponseMidocoTravelNumberItem) : sprintf('%s(%s)', gettype($getTravelNumberResponseMidocoTravelNumberItem), var_export($getTravelNumberResponseMidocoTravelNumberItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTravelNumber property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNumber, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTravelNumber property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoTravelNumber, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetTravelNumberResponse extends AbstractStructBase
     /**
      * Set MidocoTravelNumber value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNumber[] $midocoTravelNumber
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetTravelNumberResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTravelNumber[] $midocoTravelNumber
+     * @return \Pggns\MidocoApi\Documents\StructType\GetTravelNumberResponse
      */
     public function setMidocoTravelNumber(?array $midocoTravelNumber = null): self
     {
@@ -85,14 +85,14 @@ class GetTravelNumberResponse extends AbstractStructBase
     /**
      * Add item to MidocoTravelNumber value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNumber $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetTravelNumberResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTravelNumber $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetTravelNumberResponse
      */
-    public function addToMidocoTravelNumber(\Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNumber $item): self
+    public function addToMidocoTravelNumber(\Pggns\MidocoApi\Documents\StructType\MidocoTravelNumber $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNumber) {
-            throw new InvalidArgumentException(sprintf('The MidocoTravelNumber property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelNumber, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoTravelNumber) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelNumber property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoTravelNumber, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTravelNumber[] = $item;
         

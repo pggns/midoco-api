@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CrmCampaignTemplateDTO extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCampaignTemplateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCampaignTemplateDTO
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -86,7 +86,7 @@ class CrmCampaignTemplateDTO extends AbstractStructBase
     /**
      * Set isImported value
      * @param bool $isImported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCampaignTemplateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCampaignTemplateDTO
      */
     public function setIsImported(?bool $isImported = null): self
     {
@@ -109,7 +109,7 @@ class CrmCampaignTemplateDTO extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCampaignTemplateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCampaignTemplateDTO
      */
     public function setLanguage(?string $language = null): self
     {
@@ -132,7 +132,7 @@ class CrmCampaignTemplateDTO extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CrmCampaignTemplateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCampaignTemplateDTO
      */
     public function setText(?string $text = null): self
     {

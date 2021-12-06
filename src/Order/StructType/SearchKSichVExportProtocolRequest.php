@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SearchKSichVExportProtocolRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchKSichVExportProtocolRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchKSichVExportProtocolRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -78,7 +78,7 @@ class SearchKSichVExportProtocolRequest extends AbstractStructBase
     /**
      * Set AccountingDateFrom value
      * @param string $accountingDateFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchKSichVExportProtocolRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchKSichVExportProtocolRequest
      */
     public function setAccountingDateFrom(?string $accountingDateFrom = null): self
     {
@@ -101,7 +101,7 @@ class SearchKSichVExportProtocolRequest extends AbstractStructBase
     /**
      * Set AccountingDateTo value
      * @param string $accountingDateTo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchKSichVExportProtocolRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchKSichVExportProtocolRequest
      */
     public function setAccountingDateTo(?string $accountingDateTo = null): self
     {

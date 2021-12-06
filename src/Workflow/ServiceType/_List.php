@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\ServiceType;
+namespace Pggns\MidocoApi\Workflow\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class _List extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Workflow\ServiceType\_List
+     * @return \Pggns\MidocoApi\Workflow\ServiceType\_List
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class _List extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleDefinitionRequest $paramListRuleDefinitionRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleDefinitionResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\ListRuleDefinitionRequest $paramListRuleDefinitionRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleDefinitionResponse|bool
      */
-    public function listRuleDefinition(\Pggns\MidocoApi\Api\Workflow\StructType\ListRuleDefinitionRequest $paramListRuleDefinitionRequest)
+    public function listRuleDefinition(\Pggns\MidocoApi\Workflow\StructType\ListRuleDefinitionRequest $paramListRuleDefinitionRequest)
     {
         try {
             $this->setResult($resultListRuleDefinition = $this->getSoapClient()->__soapCall('listRuleDefinition', [
@@ -58,15 +58,15 @@ class _List extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaOrderRequest $paramListRuleCriteriaOrderRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaOrderResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaOrderRequest $paramListRuleCriteriaOrderRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaOrderResponse|bool
      */
-    public function listRuleCriteriaOrder(\Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaOrderRequest $paramListRuleCriteriaOrderRequest)
+    public function listRuleCriteriaOrder(\Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaOrderRequest $paramListRuleCriteriaOrderRequest)
     {
         try {
             $this->setResult($resultListRuleCriteriaOrder = $this->getSoapClient()->__soapCall('listRuleCriteriaOrder', [
@@ -85,15 +85,15 @@ class _List extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaCrmAttributeRequest $paramListRuleCriteriaCrmAttributeRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaCrmAttributeResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaCrmAttributeRequest $paramListRuleCriteriaCrmAttributeRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaCrmAttributeResponse|bool
      */
-    public function listRuleCriteriaCrmAttribute(\Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaCrmAttributeRequest $paramListRuleCriteriaCrmAttributeRequest)
+    public function listRuleCriteriaCrmAttribute(\Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaCrmAttributeRequest $paramListRuleCriteriaCrmAttributeRequest)
     {
         try {
             $this->setResult($resultListRuleCriteriaCrmAttribute = $this->getSoapClient()->__soapCall('listRuleCriteriaCrmAttribute', [
@@ -112,15 +112,15 @@ class _List extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaCrmRequest $paramListRuleCriteriaCrmRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaCrmResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaCrmRequest $paramListRuleCriteriaCrmRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaCrmResponse|bool
      */
-    public function listRuleCriteriaCrm(\Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaCrmRequest $paramListRuleCriteriaCrmRequest)
+    public function listRuleCriteriaCrm(\Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaCrmRequest $paramListRuleCriteriaCrmRequest)
     {
         try {
             $this->setResult($resultListRuleCriteriaCrm = $this->getSoapClient()->__soapCall('listRuleCriteriaCrm', [
@@ -139,15 +139,15 @@ class _List extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaOrderAttributeRequest $paramListRuleCriteriaOrderAttributeRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaOrderAttributeResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaOrderAttributeRequest $paramListRuleCriteriaOrderAttributeRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaOrderAttributeResponse|bool
      */
-    public function listRuleCriteriaOrderAttribute(\Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaOrderAttributeRequest $paramListRuleCriteriaOrderAttributeRequest)
+    public function listRuleCriteriaOrderAttribute(\Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaOrderAttributeRequest $paramListRuleCriteriaOrderAttributeRequest)
     {
         try {
             $this->setResult($resultListRuleCriteriaOrderAttribute = $this->getSoapClient()->__soapCall('listRuleCriteriaOrderAttribute', [
@@ -166,15 +166,15 @@ class _List extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsRequest $paramListTaskDetailsRequest
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsResponse|bool
+     * @param \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsRequest $paramListTaskDetailsRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsResponse|bool
      */
-    public function listTaskDetails(\Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsRequest $paramListTaskDetailsRequest)
+    public function listTaskDetails(\Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsRequest $paramListTaskDetailsRequest)
     {
         try {
             $this->setResult($resultListTaskDetails = $this->getSoapClient()->__soapCall('listTaskDetails', [
@@ -191,7 +191,7 @@ class _List extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaCrmAttributeResponse|\Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaCrmResponse|\Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaOrderAttributeResponse|\Pggns\MidocoApi\Api\Workflow\StructType\ListRuleCriteriaOrderResponse|\Pggns\MidocoApi\Api\Workflow\StructType\ListRuleDefinitionResponse|\Pggns\MidocoApi\Api\Workflow\StructType\ListTaskDetailsResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaCrmAttributeResponse|\Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaCrmResponse|\Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaOrderAttributeResponse|\Pggns\MidocoApi\Workflow\StructType\ListRuleCriteriaOrderResponse|\Pggns\MidocoApi\Workflow\StructType\ListRuleDefinitionResponse|\Pggns\MidocoApi\Workflow\StructType\ListTaskDetailsResponse
      */
     public function getResult()
     {

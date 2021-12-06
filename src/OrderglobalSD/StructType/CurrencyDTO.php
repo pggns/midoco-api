@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CurrencyDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -78,7 +78,7 @@ class CurrencyDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -101,7 +101,7 @@ class CurrencyDTO extends AbstractStructBase
     /**
      * Set isoCode value
      * @param string $isoCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\CurrencyDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\CurrencyDTO
      */
     public function setIsoCode(?string $isoCode = null): self
     {

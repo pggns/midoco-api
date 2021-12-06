@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class CCAccessListRequest extends AbstractStructBase
      * The MidocoCCAccessListCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoCCAccessListCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListCriteriaType $MidocoCCAccessListCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListCriteriaType $MidocoCCAccessListCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class CCAccessListRequest extends AbstractStructBase
      * Constructor method for CCAccessListRequest
      * @uses CCAccessListRequest::setMidocoCCAccessListCriteria()
      * @uses CCAccessListRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListCriteriaType $midocoCCAccessListCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListCriteriaType $midocoCCAccessListCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListCriteriaType $midocoCCAccessListCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListCriteriaType $midocoCCAccessListCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoCCAccessListCriteria($midocoCCAccessListCriteria)
@@ -42,18 +42,18 @@ class CCAccessListRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCCAccessListCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListCriteriaType|null
      */
-    public function getMidocoCCAccessListCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListCriteriaType
+    public function getMidocoCCAccessListCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListCriteriaType
     {
         return $this->MidocoCCAccessListCriteria;
     }
     /**
      * Set MidocoCCAccessListCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListCriteriaType $midocoCCAccessListCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CCAccessListRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListCriteriaType $midocoCCAccessListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CCAccessListRequest
      */
-    public function setMidocoCCAccessListCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoCCAccessListCriteriaType $midocoCCAccessListCriteria = null): self
+    public function setMidocoCCAccessListCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoCCAccessListCriteriaType $midocoCCAccessListCriteria = null): self
     {
         $this->MidocoCCAccessListCriteria = $midocoCCAccessListCriteria;
         
@@ -70,7 +70,7 @@ class CCAccessListRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CCAccessListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CCAccessListRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

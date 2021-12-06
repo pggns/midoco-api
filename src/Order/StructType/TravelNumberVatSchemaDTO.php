@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class TravelNumberVatSchemaDTO extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNumberVatSchemaDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNumberVatSchemaDTO
      */
     public function setTravelNo(?string $travelNo = null): self
     {
@@ -78,7 +78,7 @@ class TravelNumberVatSchemaDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNumberVatSchemaDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNumberVatSchemaDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -101,7 +101,7 @@ class TravelNumberVatSchemaDTO extends AbstractStructBase
     /**
      * Set vatSchemaId value
      * @param int $vatSchemaId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\TravelNumberVatSchemaDTO
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNumberVatSchemaDTO
      */
     public function setVatSchemaId(?int $vatSchemaId = null): self
     {

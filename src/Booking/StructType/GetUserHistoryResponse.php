@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetUserHistoryResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoUserHistory
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO[]
+     * @var \Pggns\MidocoApi\Booking\StructType\UserHistoryDTO[]
      */
     protected ?array $MidocoUserHistory = null;
     /**
      * Constructor method for GetUserHistoryResponse
      * @uses GetUserHistoryResponse::setMidocoUserHistory()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO[] $midocoUserHistory
+     * @param \Pggns\MidocoApi\Booking\StructType\UserHistoryDTO[] $midocoUserHistory
      */
     public function __construct(?array $midocoUserHistory = null)
     {
@@ -34,7 +34,7 @@ class GetUserHistoryResponse extends AbstractStructBase
     }
     /**
      * Get MidocoUserHistory value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO[]
+     * @return \Pggns\MidocoApi\Booking\StructType\UserHistoryDTO[]
      */
     public function getMidocoUserHistory(): ?array
     {
@@ -55,12 +55,12 @@ class GetUserHistoryResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getUserHistoryResponseMidocoUserHistoryItem) {
             // validation for constraint: itemType
-            if (!$getUserHistoryResponseMidocoUserHistoryItem instanceof \Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO) {
+            if (!$getUserHistoryResponseMidocoUserHistoryItem instanceof \Pggns\MidocoApi\Booking\StructType\UserHistoryDTO) {
                 $invalidValues[] = is_object($getUserHistoryResponseMidocoUserHistoryItem) ? get_class($getUserHistoryResponseMidocoUserHistoryItem) : sprintf('%s(%s)', gettype($getUserHistoryResponseMidocoUserHistoryItem), var_export($getUserHistoryResponseMidocoUserHistoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoUserHistory property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoUserHistory property can only contain items of type \Pggns\MidocoApi\Booking\StructType\UserHistoryDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetUserHistoryResponse extends AbstractStructBase
     /**
      * Set MidocoUserHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO[] $midocoUserHistory
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetUserHistoryResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\UserHistoryDTO[] $midocoUserHistory
+     * @return \Pggns\MidocoApi\Booking\StructType\GetUserHistoryResponse
      */
     public function setMidocoUserHistory(?array $midocoUserHistory = null): self
     {
@@ -85,14 +85,14 @@ class GetUserHistoryResponse extends AbstractStructBase
     /**
      * Add item to MidocoUserHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetUserHistoryResponse
+     * @param \Pggns\MidocoApi\Booking\StructType\UserHistoryDTO $item
+     * @return \Pggns\MidocoApi\Booking\StructType\GetUserHistoryResponse
      */
-    public function addToMidocoUserHistory(\Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO $item): self
+    public function addToMidocoUserHistory(\Pggns\MidocoApi\Booking\StructType\UserHistoryDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoUserHistory property can only contain items of type \Pggns\MidocoApi\Api\Booking\StructType\UserHistoryDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Booking\StructType\UserHistoryDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoUserHistory property can only contain items of type \Pggns\MidocoApi\Booking\StructType\UserHistoryDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoUserHistory[] = $item;
         

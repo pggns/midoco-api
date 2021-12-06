@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class SapChangeHistoryDTO extends AbstractStructBase
     /**
      * Set changedId value
      * @param string $changedId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SapChangeHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SapChangeHistoryDTO
      */
     public function setChangedId(?string $changedId = null): self
     {
@@ -110,7 +110,7 @@ class SapChangeHistoryDTO extends AbstractStructBase
     /**
      * Set changedSubject value
      * @param string $changedSubject
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SapChangeHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SapChangeHistoryDTO
      */
     public function setChangedSubject(?string $changedSubject = null): self
     {
@@ -133,7 +133,7 @@ class SapChangeHistoryDTO extends AbstractStructBase
     /**
      * Set exportTimestamp value
      * @param string $exportTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SapChangeHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SapChangeHistoryDTO
      */
     public function setExportTimestamp(?string $exportTimestamp = null): self
     {
@@ -156,7 +156,7 @@ class SapChangeHistoryDTO extends AbstractStructBase
     /**
      * Set exported value
      * @param bool $exported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SapChangeHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SapChangeHistoryDTO
      */
     public function setExported(?bool $exported = null): self
     {
@@ -179,7 +179,7 @@ class SapChangeHistoryDTO extends AbstractStructBase
     /**
      * Set historyId value
      * @param int $historyId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SapChangeHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SapChangeHistoryDTO
      */
     public function setHistoryId(?int $historyId = null): self
     {
@@ -202,7 +202,7 @@ class SapChangeHistoryDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SapChangeHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SapChangeHistoryDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -225,7 +225,7 @@ class SapChangeHistoryDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SapChangeHistoryDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SapChangeHistoryDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

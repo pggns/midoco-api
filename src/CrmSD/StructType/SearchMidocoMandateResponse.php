@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class SearchMidocoMandateResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 1
      * - ref: MidocoMandate
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate[]
      */
     protected array $MidocoMandate;
     /**
      * Constructor method for SearchMidocoMandateResponse
      * @uses SearchMidocoMandateResponse::setMidocoMandate()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate[] $midocoMandate
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate[] $midocoMandate
      */
     public function __construct(array $midocoMandate)
     {
@@ -34,7 +34,7 @@ class SearchMidocoMandateResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMandate value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate[]
      */
     public function getMidocoMandate(): array
     {
@@ -55,12 +55,12 @@ class SearchMidocoMandateResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchMidocoMandateResponseMidocoMandateItem) {
             // validation for constraint: itemType
-            if (!$searchMidocoMandateResponseMidocoMandateItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate) {
+            if (!$searchMidocoMandateResponseMidocoMandateItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate) {
                 $invalidValues[] = is_object($searchMidocoMandateResponseMidocoMandateItem) ? get_class($searchMidocoMandateResponseMidocoMandateItem) : sprintf('%s(%s)', gettype($searchMidocoMandateResponseMidocoMandateItem), var_export($searchMidocoMandateResponseMidocoMandateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMandate property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMandate property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class SearchMidocoMandateResponse extends AbstractStructBase
     /**
      * Set MidocoMandate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate[] $midocoMandate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMidocoMandateResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate[] $midocoMandate
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoMandateResponse
      */
     public function setMidocoMandate(array $midocoMandate): self
     {
@@ -85,14 +85,14 @@ class SearchMidocoMandateResponse extends AbstractStructBase
     /**
      * Add item to MidocoMandate value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SearchMidocoMandateResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoMandateResponse
      */
-    public function addToMidocoMandate(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate $item): self
+    public function addToMidocoMandate(\Pggns\MidocoApi\CrmSD\StructType\MidocoMandate $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate) {
-            throw new InvalidArgumentException(sprintf('The MidocoMandate property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoMandate, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate) {
+            throw new InvalidArgumentException(sprintf('The MidocoMandate property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMandate[] = $item;
         

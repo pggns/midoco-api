@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class BillingDocumentPhoneticDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentPhoneticDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentPhoneticDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -142,7 +142,7 @@ class BillingDocumentPhoneticDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentPhoneticDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentPhoneticDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -165,7 +165,7 @@ class BillingDocumentPhoneticDTO extends AbstractStructBase
     /**
      * Set exactCity value
      * @param string $exactCity
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentPhoneticDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentPhoneticDTO
      */
     public function setExactCity(?string $exactCity = null): self
     {
@@ -188,7 +188,7 @@ class BillingDocumentPhoneticDTO extends AbstractStructBase
     /**
      * Set exactForename value
      * @param string $exactForename
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentPhoneticDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentPhoneticDTO
      */
     public function setExactForename(?string $exactForename = null): self
     {
@@ -211,7 +211,7 @@ class BillingDocumentPhoneticDTO extends AbstractStructBase
     /**
      * Set exactName value
      * @param string $exactName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentPhoneticDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentPhoneticDTO
      */
     public function setExactName(?string $exactName = null): self
     {
@@ -234,7 +234,7 @@ class BillingDocumentPhoneticDTO extends AbstractStructBase
     /**
      * Set exactStreet value
      * @param string $exactStreet
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentPhoneticDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentPhoneticDTO
      */
     public function setExactStreet(?string $exactStreet = null): self
     {
@@ -257,7 +257,7 @@ class BillingDocumentPhoneticDTO extends AbstractStructBase
     /**
      * Set exactTravellerName value
      * @param string $exactTravellerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentPhoneticDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentPhoneticDTO
      */
     public function setExactTravellerName(?string $exactTravellerName = null): self
     {
@@ -280,7 +280,7 @@ class BillingDocumentPhoneticDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentPhoneticDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentPhoneticDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -303,7 +303,7 @@ class BillingDocumentPhoneticDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentPhoneticDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentPhoneticDTO
      */
     public function setName(?string $name = null): self
     {
@@ -326,7 +326,7 @@ class BillingDocumentPhoneticDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentPhoneticDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentPhoneticDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -349,7 +349,7 @@ class BillingDocumentPhoneticDTO extends AbstractStructBase
     /**
      * Set travellerName value
      * @param string $travellerName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentPhoneticDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentPhoneticDTO
      */
     public function setTravellerName(?string $travellerName = null): self
     {

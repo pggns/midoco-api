@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class OrderHistoryDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderHistoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderHistoryDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -142,7 +142,7 @@ class OrderHistoryDTO extends AbstractStructBase
     /**
      * Set historyId value
      * @param int $historyId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderHistoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderHistoryDTO
      */
     public function setHistoryId(?int $historyId = null): self
     {
@@ -165,7 +165,7 @@ class OrderHistoryDTO extends AbstractStructBase
     /**
      * Set historyRefId value
      * @param string $historyRefId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderHistoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderHistoryDTO
      */
     public function setHistoryRefId(?string $historyRefId = null): self
     {
@@ -188,7 +188,7 @@ class OrderHistoryDTO extends AbstractStructBase
     /**
      * Set importSystem value
      * @param string $importSystem
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderHistoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderHistoryDTO
      */
     public function setImportSystem(?string $importSystem = null): self
     {
@@ -211,7 +211,7 @@ class OrderHistoryDTO extends AbstractStructBase
     /**
      * Set isimported value
      * @param bool $isimported
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderHistoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderHistoryDTO
      */
     public function setIsimported(?bool $isimported = null): self
     {
@@ -234,7 +234,7 @@ class OrderHistoryDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderHistoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderHistoryDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -257,7 +257,7 @@ class OrderHistoryDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderHistoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderHistoryDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -280,7 +280,7 @@ class OrderHistoryDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderHistoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderHistoryDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -303,7 +303,7 @@ class OrderHistoryDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderHistoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderHistoryDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -326,7 +326,7 @@ class OrderHistoryDTO extends AbstractStructBase
     /**
      * Set subType value
      * @param string $subType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderHistoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderHistoryDTO
      */
     public function setSubType(?string $subType = null): self
     {
@@ -349,7 +349,7 @@ class OrderHistoryDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\OrderHistoryDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderHistoryDTO
      */
     public function setType(?string $type = null): self
     {

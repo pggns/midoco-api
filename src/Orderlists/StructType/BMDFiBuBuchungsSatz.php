@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -351,7 +351,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set satzart value
      * @param string $satzart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setSatzart(?string $satzart = null): self
     {
@@ -374,7 +374,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set konto value
      * @param string $konto
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setKonto(?string $konto = null): self
     {
@@ -397,7 +397,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set gkto value
      * @param string $gkto
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setGkto(?string $gkto = null): self
     {
@@ -420,7 +420,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set belegnr value
      * @param string $belegnr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setBelegnr(?string $belegnr = null): self
     {
@@ -443,7 +443,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set belegdat value
      * @param string $belegdat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setBelegdat(?string $belegdat = null): self
     {
@@ -466,7 +466,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set buchdat value
      * @param string $buchdat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setBuchdat(?string $buchdat = null): self
     {
@@ -489,7 +489,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set valutadatum value
      * @param string $valutadatum
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setValutadatum(?string $valutadatum = null): self
     {
@@ -512,7 +512,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set kost value
      * @param string $kost
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setKost(?string $kost = null): self
     {
@@ -535,7 +535,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set mwst value
      * @param string $mwst
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setMwst(?string $mwst = null): self
     {
@@ -558,7 +558,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set steucod value
      * @param string $steucod
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setSteucod(?string $steucod = null): self
     {
@@ -581,7 +581,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set bucod value
      * @param string $bucod
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setBucod(?string $bucod = null): self
     {
@@ -604,7 +604,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set betrag value
      * @param string $betrag
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setBetrag(?string $betrag = null): self
     {
@@ -627,7 +627,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set steuer value
      * @param string $steuer
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setSteuer(?string $steuer = null): self
     {
@@ -650,7 +650,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set opbetrag value
      * @param string $opbetrag
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setOpbetrag(?string $opbetrag = null): self
     {
@@ -673,7 +673,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setText(?string $text = null): self
     {
@@ -696,7 +696,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set symbol value
      * @param string $symbol
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setSymbol(?string $symbol = null): self
     {
@@ -719,7 +719,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set zziel value
      * @param string $zziel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setZziel(?string $zziel = null): self
     {
@@ -742,7 +742,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set skontopz value
      * @param string $skontopz
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setSkontopz(?string $skontopz = null): self
     {
@@ -765,7 +765,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set skontotage value
      * @param string $skontotage
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setSkontotage(?string $skontotage = null): self
     {
@@ -788,7 +788,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set gegenbuchkz value
      * @param string $gegenbuchkz
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setGegenbuchkz(?string $gegenbuchkz = null): self
     {
@@ -811,7 +811,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set verbuchkz value
      * @param string $verbuchkz
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setVerbuchkz(?string $verbuchkz = null): self
     {
@@ -834,7 +834,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setName(?string $name = null): self
     {
@@ -857,7 +857,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set beruf value
      * @param string $beruf
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setBeruf(?string $beruf = null): self
     {
@@ -880,7 +880,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set strasse value
      * @param string $strasse
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setStrasse(?string $strasse = null): self
     {
@@ -903,7 +903,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set plz value
      * @param string $plz
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setPlz(?string $plz = null): self
     {
@@ -926,7 +926,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set ort value
      * @param string $ort
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setOrt(?string $ort = null): self
     {
@@ -949,7 +949,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set kontakt value
      * @param string $kontakt
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setKontakt(?string $kontakt = null): self
     {
@@ -972,7 +972,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set persanrede value
      * @param string $persanrede
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setPersanrede(?string $persanrede = null): self
     {
@@ -995,7 +995,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set blz value
      * @param string $blz
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setBlz(?string $blz = null): self
     {
@@ -1018,7 +1018,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set bkontonr value
      * @param string $bkontonr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setBkontonr(?string $bkontonr = null): self
     {
@@ -1041,7 +1041,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set bankname value
      * @param string $bankname
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setBankname(?string $bankname = null): self
     {
@@ -1064,7 +1064,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set iban_nr value
      * @param string $iban_nr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setIban_nr(?string $iban_nr = null): self
     {
@@ -1087,7 +1087,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set betreff value
      * @param string $betreff
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setBetreff(?string $betreff = null): self
     {
@@ -1110,7 +1110,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set staat value
      * @param string $staat
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setStaat(?string $staat = null): self
     {
@@ -1133,7 +1133,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set Postkonto value
      * @param string $postkonto
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setPostkonto(?string $postkonto = null): self
     {
@@ -1156,7 +1156,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set teilnehmernr value
      * @param string $teilnehmernr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setTeilnehmernr(?string $teilnehmernr = null): self
     {
@@ -1179,7 +1179,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set spesen value
      * @param string $spesen
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setSpesen(?string $spesen = null): self
     {
@@ -1202,7 +1202,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set zahlart value
      * @param string $zahlart
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setZahlart(?string $zahlart = null): self
     {
@@ -1225,7 +1225,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set prioritaet value
      * @param string $prioritaet
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setPrioritaet(?string $prioritaet = null): self
     {
@@ -1248,7 +1248,7 @@ class BMDFiBuBuchungsSatz extends AbstractStructBase
     /**
      * Set swiftcode value
      * @param string $swiftcode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BMDFiBuBuchungsSatz
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BMDFiBuBuchungsSatz
      */
     public function setSwiftcode(?string $swiftcode = null): self
     {

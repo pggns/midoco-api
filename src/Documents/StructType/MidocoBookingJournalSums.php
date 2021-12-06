@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoBookingJournalSums extends AbstractStructBase
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingJournalSums
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingJournalSums
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -86,7 +86,7 @@ class MidocoBookingJournalSums extends AbstractStructBase
     /**
      * Set credit value
      * @param float $credit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingJournalSums
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingJournalSums
      */
     public function setCredit(?float $credit = null): self
     {
@@ -109,7 +109,7 @@ class MidocoBookingJournalSums extends AbstractStructBase
     /**
      * Set debit value
      * @param float $debit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingJournalSums
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingJournalSums
      */
     public function setDebit(?float $debit = null): self
     {
@@ -132,7 +132,7 @@ class MidocoBookingJournalSums extends AbstractStructBase
     /**
      * Set total value
      * @param float $total
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBookingJournalSums
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingJournalSums
      */
     public function setTotal(?float $total = null): self
     {

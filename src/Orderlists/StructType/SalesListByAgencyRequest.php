@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SalesListByAgencyRequest extends AbstractStructBase
      * The MidocoSalesListByAgencyCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoSalesListByAgencyCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType $MidocoSalesListByAgencyCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType $MidocoSalesListByAgencyCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class SalesListByAgencyRequest extends AbstractStructBase
      * Constructor method for SalesListByAgencyRequest
      * @uses SalesListByAgencyRequest::setMidocoSalesListByAgencyCriteria()
      * @uses SalesListByAgencyRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType $midocoSalesListByAgencyCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType $midocoSalesListByAgencyCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType $midocoSalesListByAgencyCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType $midocoSalesListByAgencyCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoSalesListByAgencyCriteria($midocoSalesListByAgencyCriteria)
@@ -42,18 +42,18 @@ class SalesListByAgencyRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSalesListByAgencyCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType|null
      */
-    public function getMidocoSalesListByAgencyCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType
+    public function getMidocoSalesListByAgencyCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType
     {
         return $this->MidocoSalesListByAgencyCriteria;
     }
     /**
      * Set MidocoSalesListByAgencyCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType $midocoSalesListByAgencyCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByAgencyRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType $midocoSalesListByAgencyCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByAgencyRequest
      */
-    public function setMidocoSalesListByAgencyCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType $midocoSalesListByAgencyCriteria = null): self
+    public function setMidocoSalesListByAgencyCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListByAgencyCriteriaType $midocoSalesListByAgencyCriteria = null): self
     {
         $this->MidocoSalesListByAgencyCriteria = $midocoSalesListByAgencyCriteria;
         
@@ -70,7 +70,7 @@ class SalesListByAgencyRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SalesListByAgencyRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListByAgencyRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

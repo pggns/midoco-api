@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class RolesChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\RolesChgLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\RolesChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -110,7 +110,7 @@ class RolesChgLogDTO extends AbstractStructBase
     /**
      * Set isRoleInherited value
      * @param bool $isRoleInherited
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\RolesChgLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\RolesChgLogDTO
      */
     public function setIsRoleInherited(?bool $isRoleInherited = null): self
     {
@@ -133,7 +133,7 @@ class RolesChgLogDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\RolesChgLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\RolesChgLogDTO
      */
     public function setRoleId(?int $roleId = null): self
     {
@@ -156,7 +156,7 @@ class RolesChgLogDTO extends AbstractStructBase
     /**
      * Set roleName value
      * @param string $roleName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\RolesChgLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\RolesChgLogDTO
      */
     public function setRoleName(?string $roleName = null): self
     {
@@ -179,7 +179,7 @@ class RolesChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\RolesChgLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\RolesChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -202,7 +202,7 @@ class RolesChgLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\RolesChgLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\RolesChgLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -225,7 +225,7 @@ class RolesChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\RolesChgLogDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\RolesChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

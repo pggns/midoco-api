@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class ListFIBUInvRbBalanceRequest extends AbstractStructBase
      * Set orgUnits value
      * @throws InvalidArgumentException
      * @param string[] $orgUnits
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListFIBUInvRbBalanceRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListFIBUInvRbBalanceRequest
      */
     public function setOrgUnits(?array $orgUnits = null): self
     {
@@ -143,7 +143,7 @@ class ListFIBUInvRbBalanceRequest extends AbstractStructBase
      * Add item to orgUnits value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListFIBUInvRbBalanceRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListFIBUInvRbBalanceRequest
      */
     public function addToOrgUnits(string $item): self
     {
@@ -166,7 +166,7 @@ class ListFIBUInvRbBalanceRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListFIBUInvRbBalanceRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListFIBUInvRbBalanceRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -189,7 +189,7 @@ class ListFIBUInvRbBalanceRequest extends AbstractStructBase
     /**
      * Set invoiceDateFrom value
      * @param string $invoiceDateFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListFIBUInvRbBalanceRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListFIBUInvRbBalanceRequest
      */
     public function setInvoiceDateFrom(?string $invoiceDateFrom = null): self
     {
@@ -212,7 +212,7 @@ class ListFIBUInvRbBalanceRequest extends AbstractStructBase
     /**
      * Set invoiceDateTo value
      * @param string $invoiceDateTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListFIBUInvRbBalanceRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListFIBUInvRbBalanceRequest
      */
     public function setInvoiceDateTo(?string $invoiceDateTo = null): self
     {
@@ -235,7 +235,7 @@ class ListFIBUInvRbBalanceRequest extends AbstractStructBase
     /**
      * Set excludedAccountsFrom value
      * @param string $excludedAccountsFrom
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListFIBUInvRbBalanceRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListFIBUInvRbBalanceRequest
      */
     public function setExcludedAccountsFrom(?string $excludedAccountsFrom = null): self
     {
@@ -258,7 +258,7 @@ class ListFIBUInvRbBalanceRequest extends AbstractStructBase
     /**
      * Set excludedAccountsTo value
      * @param string $excludedAccountsTo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListFIBUInvRbBalanceRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListFIBUInvRbBalanceRequest
      */
     public function setExcludedAccountsTo(?string $excludedAccountsTo = null): self
     {
@@ -281,7 +281,7 @@ class ListFIBUInvRbBalanceRequest extends AbstractStructBase
     /**
      * Set listType value
      * @param int $listType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListFIBUInvRbBalanceRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListFIBUInvRbBalanceRequest
      */
     public function setListType(?int $listType = null): self
     {
@@ -304,7 +304,7 @@ class ListFIBUInvRbBalanceRequest extends AbstractStructBase
     /**
      * Set createCsvContent value
      * @param bool $createCsvContent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ListFIBUInvRbBalanceRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ListFIBUInvRbBalanceRequest
      */
     public function setCreateCsvContent(?bool $createCsvContent = null): self
     {

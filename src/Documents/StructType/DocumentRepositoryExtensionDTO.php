@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class DocumentRepositoryExtensionDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryExtensionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryExtensionDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -134,7 +134,7 @@ class DocumentRepositoryExtensionDTO extends AbstractStructBase
     /**
      * Set documentSize value
      * @param int $documentSize
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryExtensionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryExtensionDTO
      */
     public function setDocumentSize(?int $documentSize = null): self
     {
@@ -157,7 +157,7 @@ class DocumentRepositoryExtensionDTO extends AbstractStructBase
     /**
      * Set hashAlgorithm value
      * @param string $hashAlgorithm
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryExtensionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryExtensionDTO
      */
     public function setHashAlgorithm(?string $hashAlgorithm = null): self
     {
@@ -180,7 +180,7 @@ class DocumentRepositoryExtensionDTO extends AbstractStructBase
     /**
      * Set initialHashValue value
      * @param string $initialHashValue
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryExtensionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryExtensionDTO
      */
     public function setInitialHashValue(?string $initialHashValue = null): self
     {
@@ -203,7 +203,7 @@ class DocumentRepositoryExtensionDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryExtensionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryExtensionDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -226,7 +226,7 @@ class DocumentRepositoryExtensionDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryExtensionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryExtensionDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -249,7 +249,7 @@ class DocumentRepositoryExtensionDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryExtensionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryExtensionDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -272,7 +272,7 @@ class DocumentRepositoryExtensionDTO extends AbstractStructBase
     /**
      * Set storageReferenceKeystoreName value
      * @param string $storageReferenceKeystoreName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryExtensionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryExtensionDTO
      */
     public function setStorageReferenceKeystoreName(?string $storageReferenceKeystoreName = null): self
     {
@@ -295,7 +295,7 @@ class DocumentRepositoryExtensionDTO extends AbstractStructBase
     /**
      * Set storageReferenceUuid value
      * @param string $storageReferenceUuid
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryExtensionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryExtensionDTO
      */
     public function setStorageReferenceUuid(?string $storageReferenceUuid = null): self
     {
@@ -318,7 +318,7 @@ class DocumentRepositoryExtensionDTO extends AbstractStructBase
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\DocumentRepositoryExtensionDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentRepositoryExtensionDTO
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {

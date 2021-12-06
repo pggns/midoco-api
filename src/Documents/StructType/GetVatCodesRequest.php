@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetVatCodesRequest extends AbstractStructBase
      * The MidocoVatCode
      * Meta information extracted from the WSDL
      * - ref: MidocoVatCode
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatCode|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoVatCode|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoVatCode $MidocoVatCode = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoVatCode $MidocoVatCode = null;
     /**
      * Constructor method for GetVatCodesRequest
      * @uses GetVatCodesRequest::setMidocoVatCode()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatCode $midocoVatCode
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoVatCode $midocoVatCode
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoVatCode $midocoVatCode = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoVatCode $midocoVatCode = null)
     {
         $this
             ->setMidocoVatCode($midocoVatCode);
     }
     /**
      * Get MidocoVatCode value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatCode|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoVatCode|null
      */
-    public function getMidocoVatCode(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoVatCode
+    public function getMidocoVatCode(): ?\Pggns\MidocoApi\Documents\StructType\MidocoVatCode
     {
         return $this->MidocoVatCode;
     }
     /**
      * Set MidocoVatCode value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatCode $midocoVatCode
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetVatCodesRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoVatCode $midocoVatCode
+     * @return \Pggns\MidocoApi\Documents\StructType\GetVatCodesRequest
      */
-    public function setMidocoVatCode(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoVatCode $midocoVatCode = null): self
+    public function setMidocoVatCode(?\Pggns\MidocoApi\Documents\StructType\MidocoVatCode $midocoVatCode = null): self
     {
         $this->MidocoVatCode = $midocoVatCode;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class PrintDestAssignDTO extends AbstractStructBase
     /**
      * Set printDestId value
      * @param string $printDestId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\PrintDestAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\PrintDestAssignDTO
      */
     public function setPrintDestId(?string $printDestId = null): self
     {
@@ -78,7 +78,7 @@ class PrintDestAssignDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\PrintDestAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\PrintDestAssignDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -101,7 +101,7 @@ class PrintDestAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\PrintDestAssignDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\PrintDestAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

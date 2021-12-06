@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class ReceiptExportVatDTO extends AbstractStructBase
     /**
      * Set printId value
      * @param int $printId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptExportVatDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptExportVatDTO
      */
     public function setPrintId(?int $printId = null): self
     {
@@ -94,7 +94,7 @@ class ReceiptExportVatDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptExportVatDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptExportVatDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -117,7 +117,7 @@ class ReceiptExportVatDTO extends AbstractStructBase
     /**
      * Set vatDescr value
      * @param string $vatDescr
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptExportVatDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptExportVatDTO
      */
     public function setVatDescr(?string $vatDescr = null): self
     {
@@ -140,7 +140,7 @@ class ReceiptExportVatDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param int $vatId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptExportVatDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptExportVatDTO
      */
     public function setVatId(?int $vatId = null): self
     {
@@ -163,7 +163,7 @@ class ReceiptExportVatDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ReceiptExportVatDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ReceiptExportVatDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

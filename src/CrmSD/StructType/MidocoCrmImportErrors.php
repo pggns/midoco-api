@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class MidocoCrmImportErrors extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmDetailErrors
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDetailErrors[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDetailErrors[]
      */
     protected ?array $MidocoCrmDetailErrors = null;
     /**
@@ -31,7 +31,7 @@ class MidocoCrmImportErrors extends AbstractStructBase
      * Constructor method for MidocoCrmImportErrors
      * @uses MidocoCrmImportErrors::setMidocoCrmDetailErrors()
      * @uses MidocoCrmImportErrors::setBeanName()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDetailErrors[] $midocoCrmDetailErrors
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDetailErrors[] $midocoCrmDetailErrors
      * @param string $beanName
      */
     public function __construct(?array $midocoCrmDetailErrors = null, ?string $beanName = null)
@@ -42,7 +42,7 @@ class MidocoCrmImportErrors extends AbstractStructBase
     }
     /**
      * Get MidocoCrmDetailErrors value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDetailErrors[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDetailErrors[]
      */
     public function getMidocoCrmDetailErrors(): ?array
     {
@@ -63,12 +63,12 @@ class MidocoCrmImportErrors extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoCrmImportErrorsMidocoCrmDetailErrorsItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmImportErrorsMidocoCrmDetailErrorsItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDetailErrors) {
+            if (!$midocoCrmImportErrorsMidocoCrmDetailErrorsItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDetailErrors) {
                 $invalidValues[] = is_object($midocoCrmImportErrorsMidocoCrmDetailErrorsItem) ? get_class($midocoCrmImportErrorsMidocoCrmDetailErrorsItem) : sprintf('%s(%s)', gettype($midocoCrmImportErrorsMidocoCrmDetailErrorsItem), var_export($midocoCrmImportErrorsMidocoCrmDetailErrorsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmDetailErrors property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDetailErrors, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmDetailErrors property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDetailErrors, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,8 +77,8 @@ class MidocoCrmImportErrors extends AbstractStructBase
     /**
      * Set MidocoCrmDetailErrors value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDetailErrors[] $midocoCrmDetailErrors
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImportErrors
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDetailErrors[] $midocoCrmDetailErrors
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImportErrors
      */
     public function setMidocoCrmDetailErrors(?array $midocoCrmDetailErrors = null): self
     {
@@ -93,14 +93,14 @@ class MidocoCrmImportErrors extends AbstractStructBase
     /**
      * Add item to MidocoCrmDetailErrors value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDetailErrors $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImportErrors
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDetailErrors $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImportErrors
      */
-    public function addToMidocoCrmDetailErrors(\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDetailErrors $item): self
+    public function addToMidocoCrmDetailErrors(\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDetailErrors $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDetailErrors) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmDetailErrors property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDetailErrors, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDetailErrors) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmDetailErrors property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDetailErrors, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmDetailErrors[] = $item;
         
@@ -117,7 +117,7 @@ class MidocoCrmImportErrors extends AbstractStructBase
     /**
      * Set beanName value
      * @param string $beanName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmImportErrors
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmImportErrors
      */
     public function setBeanName(?string $beanName = null): self
     {

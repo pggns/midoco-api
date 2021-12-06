@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetBookingTextRequest extends AbstractStructBase
      * The SellItemProvision
      * Meta information extracted from the WSDL
      * - ref: SellItemProvision
-     * @var \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType|null
+     * @var \Pggns\MidocoApi\Order\StructType\SellItemProvisionType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType $SellItemProvision = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\SellItemProvisionType $SellItemProvision = null;
     /**
      * The inkassoMode
      * @var int|null
@@ -35,11 +35,11 @@ class GetBookingTextRequest extends AbstractStructBase
      * @uses GetBookingTextRequest::setSellItemProvision()
      * @uses GetBookingTextRequest::setInkassoMode()
      * @uses GetBookingTextRequest::setSupplierName()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType $sellItemProvision
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemProvisionType $sellItemProvision
      * @param int $inkassoMode
      * @param string $supplierName
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType $sellItemProvision = null, ?int $inkassoMode = null, ?string $supplierName = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\SellItemProvisionType $sellItemProvision = null, ?int $inkassoMode = null, ?string $supplierName = null)
     {
         $this
             ->setSellItemProvision($sellItemProvision)
@@ -48,18 +48,18 @@ class GetBookingTextRequest extends AbstractStructBase
     }
     /**
      * Get SellItemProvision value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType|null
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemProvisionType|null
      */
-    public function getSellItemProvision(): ?\Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType
+    public function getSellItemProvision(): ?\Pggns\MidocoApi\Order\StructType\SellItemProvisionType
     {
         return $this->SellItemProvision;
     }
     /**
      * Set SellItemProvision value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType $sellItemProvision
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingTextRequest
+     * @param \Pggns\MidocoApi\Order\StructType\SellItemProvisionType $sellItemProvision
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingTextRequest
      */
-    public function setSellItemProvision(?\Pggns\MidocoApi\Api\Order\StructType\SellItemProvisionType $sellItemProvision = null): self
+    public function setSellItemProvision(?\Pggns\MidocoApi\Order\StructType\SellItemProvisionType $sellItemProvision = null): self
     {
         $this->SellItemProvision = $sellItemProvision;
         
@@ -76,7 +76,7 @@ class GetBookingTextRequest extends AbstractStructBase
     /**
      * Set inkassoMode value
      * @param int $inkassoMode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingTextRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingTextRequest
      */
     public function setInkassoMode(?int $inkassoMode = null): self
     {
@@ -99,7 +99,7 @@ class GetBookingTextRequest extends AbstractStructBase
     /**
      * Set supplierName value
      * @param string $supplierName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetBookingTextRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingTextRequest
      */
     public function setSupplierName(?string $supplierName = null): self
     {

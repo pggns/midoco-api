@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteMediatorProductSettlementInfoRequest extends AbstractStructBase
     /**
      * Set medStlmntProdId value
      * @param int $medStlmntProdId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMediatorProductSettlementInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMediatorProductSettlementInfoRequest
      */
     public function setMedStlmntProdId(?int $medStlmntProdId = null): self
     {

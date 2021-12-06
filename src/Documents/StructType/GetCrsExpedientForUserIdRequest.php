@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class GetCrsExpedientForUserIdRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetCrsExpedientForUserIdRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetCrsExpedientForUserIdRequest
      */
     public function setUserId(?int $userId = null): self
     {
@@ -70,7 +70,7 @@ class GetCrsExpedientForUserIdRequest extends AbstractStructBase
     /**
      * Set crsName value
      * @param string $crsName
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetCrsExpedientForUserIdRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetCrsExpedientForUserIdRequest
      */
     public function setCrsName(?string $crsName = null): self
     {

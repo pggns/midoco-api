@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class SearchCrmTravellersRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCrmTravellersRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCrmTravellersRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -102,7 +102,7 @@ class SearchCrmTravellersRequest extends AbstractStructBase
     /**
      * Set surname value
      * @param string $surname
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCrmTravellersRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCrmTravellersRequest
      */
     public function setSurname(?string $surname = null): self
     {
@@ -125,7 +125,7 @@ class SearchCrmTravellersRequest extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCrmTravellersRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCrmTravellersRequest
      */
     public function setForename(?string $forename = null): self
     {
@@ -148,7 +148,7 @@ class SearchCrmTravellersRequest extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCrmTravellersRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCrmTravellersRequest
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -171,7 +171,7 @@ class SearchCrmTravellersRequest extends AbstractStructBase
     /**
      * Set personalNo value
      * @param string $personalNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCrmTravellersRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCrmTravellersRequest
      */
     public function setPersonalNo(?string $personalNo = null): self
     {
@@ -194,7 +194,7 @@ class SearchCrmTravellersRequest extends AbstractStructBase
     /**
      * Set department value
      * @param string $department
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SearchCrmTravellersRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCrmTravellersRequest
      */
     public function setDepartment(?string $department = null): self
     {

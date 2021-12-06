@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteMidocoPrintOptionRequest extends AbstractStructBase
      * The MidocoPrintOption
      * Meta information extracted from the WSDL
      * - ref: MidocoPrintOption
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\PrintOptionDTO|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\PrintOptionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\PrintOptionDTO $MidocoPrintOption = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\PrintOptionDTO $MidocoPrintOption = null;
     /**
      * Constructor method for DeleteMidocoPrintOptionRequest
      * @uses DeleteMidocoPrintOptionRequest::setMidocoPrintOption()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\PrintOptionDTO $midocoPrintOption
+     * @param \Pggns\MidocoApi\OrderSD\StructType\PrintOptionDTO $midocoPrintOption
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\PrintOptionDTO $midocoPrintOption = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\PrintOptionDTO $midocoPrintOption = null)
     {
         $this
             ->setMidocoPrintOption($midocoPrintOption);
     }
     /**
      * Get MidocoPrintOption value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\PrintOptionDTO|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\PrintOptionDTO|null
      */
-    public function getMidocoPrintOption(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\PrintOptionDTO
+    public function getMidocoPrintOption(): ?\Pggns\MidocoApi\OrderSD\StructType\PrintOptionDTO
     {
         return $this->MidocoPrintOption;
     }
     /**
      * Set MidocoPrintOption value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\PrintOptionDTO $midocoPrintOption
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\DeleteMidocoPrintOptionRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\PrintOptionDTO $midocoPrintOption
+     * @return \Pggns\MidocoApi\OrderSD\StructType\DeleteMidocoPrintOptionRequest
      */
-    public function setMidocoPrintOption(?\Pggns\MidocoApi\Api\OrderSD\StructType\PrintOptionDTO $midocoPrintOption = null): self
+    public function setMidocoPrintOption(?\Pggns\MidocoApi\OrderSD\StructType\PrintOptionDTO $midocoPrintOption = null): self
     {
         $this->MidocoPrintOption = $midocoPrintOption;
         

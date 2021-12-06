@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SearchAccountRequest extends AbstractStructBase
      * The MidocoAccount
      * Meta information extracted from the WSDL
      * - ref: MidocoAccount
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoAccount|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoAccount|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoAccount $MidocoAccount = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoAccount $MidocoAccount = null;
     /**
      * Constructor method for SearchAccountRequest
      * @uses SearchAccountRequest::setMidocoAccount()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoAccount $midocoAccount
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoAccount $midocoAccount
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoAccount $midocoAccount = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoAccount $midocoAccount = null)
     {
         $this
             ->setMidocoAccount($midocoAccount);
     }
     /**
      * Get MidocoAccount value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAccount|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAccount|null
      */
-    public function getMidocoAccount(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoAccount
+    public function getMidocoAccount(): ?\Pggns\MidocoApi\Documents\StructType\MidocoAccount
     {
         return $this->MidocoAccount;
     }
     /**
      * Set MidocoAccount value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoAccount $midocoAccount
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SearchAccountRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoAccount $midocoAccount
+     * @return \Pggns\MidocoApi\Documents\StructType\SearchAccountRequest
      */
-    public function setMidocoAccount(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoAccount $midocoAccount = null): self
+    public function setMidocoAccount(?\Pggns\MidocoApi\Documents\StructType\MidocoAccount $midocoAccount = null): self
     {
         $this->MidocoAccount = $midocoAccount;
         

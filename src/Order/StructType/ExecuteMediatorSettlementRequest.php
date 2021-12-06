@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,9 +19,9 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
      * The MidocoMailMessage
      * Meta information extracted from the WSDL
      * - ref: mail:MidocoMailMessage
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $MidocoMailMessage = null;
     /**
      * The date
      * Meta information extracted from the WSDL
@@ -136,7 +136,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
      * @uses ExecuteMediatorSettlementRequest::setIsPreviewPDF()
      * @uses ExecuteMediatorSettlementRequest::setOrgUnitForPDFPreview()
      * @uses ExecuteMediatorSettlementRequest::setTravelNo()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
      * @param string $date
      * @param string $accountId
      * @param string $accountIdNoVat
@@ -154,7 +154,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
      * @param string $orgUnitForPDFPreview
      * @param string $travelNo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?string $date = null, ?string $accountId = null, ?string $accountIdNoVat = null, ?string $accountIdReverseCharge = null, ?string $description = null, ?string $templateId = null, ?bool $isPreview = true, ?bool $ignoreProvision = null, ?bool $useEmailForBilling = false, ?string $mediatorId = null, ?bool $printInvoiceAndCreditTogether = true, ?bool $creditPayViaStandardBank = true, ?bool $demandedReceivablesByStandardBank = true, ?bool $isPreviewPDF = false, ?string $orgUnitForPDFPreview = null, ?string $travelNo = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?string $date = null, ?string $accountId = null, ?string $accountIdNoVat = null, ?string $accountIdReverseCharge = null, ?string $description = null, ?string $templateId = null, ?bool $isPreview = true, ?bool $ignoreProvision = null, ?bool $useEmailForBilling = false, ?string $mediatorId = null, ?bool $printInvoiceAndCreditTogether = true, ?bool $creditPayViaStandardBank = true, ?bool $demandedReceivablesByStandardBank = true, ?bool $isPreviewPDF = false, ?string $orgUnitForPDFPreview = null, ?string $travelNo = null)
     {
         $this
             ->setMidocoMailMessage($midocoMailMessage)
@@ -177,18 +177,18 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMailMessage value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType|null
      */
-    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType
+    public function getMidocoMailMessage(): ?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType
     {
         return $this->MidocoMailMessage;
     }
     /**
      * Set MidocoMailMessage value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
-    public function setMidocoMailMessage(?\Pggns\MidocoApi\Api\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
+    public function setMidocoMailMessage(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null): self
     {
         $this->MidocoMailMessage = $midocoMailMessage;
         
@@ -205,7 +205,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setDate(?string $date = null): self
     {
@@ -232,7 +232,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -255,7 +255,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set accountIdNoVat value
      * @param string $accountIdNoVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setAccountIdNoVat(?string $accountIdNoVat = null): self
     {
@@ -278,7 +278,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set accountIdReverseCharge value
      * @param string $accountIdReverseCharge
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setAccountIdReverseCharge(?string $accountIdReverseCharge = null): self
     {
@@ -301,7 +301,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setDescription(?string $description = null): self
     {
@@ -324,7 +324,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set templateId value
      * @param string $templateId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setTemplateId(?string $templateId = null): self
     {
@@ -347,7 +347,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set isPreview value
      * @param bool $isPreview
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setIsPreview(?bool $isPreview = true): self
     {
@@ -370,7 +370,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set ignoreProvision value
      * @param bool $ignoreProvision
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setIgnoreProvision(?bool $ignoreProvision = null): self
     {
@@ -393,7 +393,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set useEmailForBilling value
      * @param bool $useEmailForBilling
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setUseEmailForBilling(?bool $useEmailForBilling = false): self
     {
@@ -416,7 +416,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -439,7 +439,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set printInvoiceAndCreditTogether value
      * @param bool $printInvoiceAndCreditTogether
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setPrintInvoiceAndCreditTogether(?bool $printInvoiceAndCreditTogether = true): self
     {
@@ -462,7 +462,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set creditPayViaStandardBank value
      * @param bool $creditPayViaStandardBank
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setCreditPayViaStandardBank(?bool $creditPayViaStandardBank = true): self
     {
@@ -485,7 +485,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set demandedReceivablesByStandardBank value
      * @param bool $demandedReceivablesByStandardBank
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setDemandedReceivablesByStandardBank(?bool $demandedReceivablesByStandardBank = true): self
     {
@@ -508,7 +508,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set isPreviewPDF value
      * @param bool $isPreviewPDF
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setIsPreviewPDF(?bool $isPreviewPDF = false): self
     {
@@ -531,7 +531,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set orgUnitForPDFPreview value
      * @param string $orgUnitForPDFPreview
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setOrgUnitForPDFPreview(?string $orgUnitForPDFPreview = null): self
     {
@@ -554,7 +554,7 @@ class ExecuteMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExecuteMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteMediatorSettlementRequest
      */
     public function setTravelNo(?string $travelNo = null): self
     {

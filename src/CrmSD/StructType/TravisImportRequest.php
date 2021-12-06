@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -121,7 +121,7 @@ class TravisImportRequest extends AbstractStructBase
     /**
      * Set customers value
      * @param string $customers
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportRequest
      */
     public function setCustomers(?string $customers = null): self
     {
@@ -144,7 +144,7 @@ class TravisImportRequest extends AbstractStructBase
     /**
      * Set contacts value
      * @param string $contacts
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportRequest
      */
     public function setContacts(?string $contacts = null): self
     {
@@ -167,7 +167,7 @@ class TravisImportRequest extends AbstractStructBase
     /**
      * Set attributes value
      * @param string $attributes
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportRequest
      */
     public function setAttributes(?string $attributes = null): self
     {
@@ -190,7 +190,7 @@ class TravisImportRequest extends AbstractStructBase
     /**
      * Set bookings value
      * @param string $bookings
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportRequest
      */
     public function setBookings(?string $bookings = null): self
     {
@@ -213,7 +213,7 @@ class TravisImportRequest extends AbstractStructBase
     /**
      * Set travellers value
      * @param string $travellers
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportRequest
      */
     public function setTravellers(?string $travellers = null): self
     {
@@ -236,7 +236,7 @@ class TravisImportRequest extends AbstractStructBase
     /**
      * Set customersFile value
      * @param string $customersFile
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportRequest
      */
     public function setCustomersFile(?string $customersFile = null): self
     {
@@ -259,7 +259,7 @@ class TravisImportRequest extends AbstractStructBase
     /**
      * Set contactsFile value
      * @param string $contactsFile
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportRequest
      */
     public function setContactsFile(?string $contactsFile = null): self
     {
@@ -282,7 +282,7 @@ class TravisImportRequest extends AbstractStructBase
     /**
      * Set attributesFile value
      * @param string $attributesFile
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportRequest
      */
     public function setAttributesFile(?string $attributesFile = null): self
     {
@@ -305,7 +305,7 @@ class TravisImportRequest extends AbstractStructBase
     /**
      * Set bookingsFile value
      * @param string $bookingsFile
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportRequest
      */
     public function setBookingsFile(?string $bookingsFile = null): self
     {
@@ -328,7 +328,7 @@ class TravisImportRequest extends AbstractStructBase
     /**
      * Set travellersFile value
      * @param string $travellersFile
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\TravisImportRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\TravisImportRequest
      */
     public function setTravellersFile(?string $travellersFile = null): self
     {

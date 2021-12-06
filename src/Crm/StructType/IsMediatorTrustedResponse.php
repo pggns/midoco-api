@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class IsMediatorTrustedResponse extends AbstractStructBase
     /**
      * Set isTrusted value
      * @param bool $isTrusted
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\IsMediatorTrustedResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\IsMediatorTrustedResponse
      */
     public function setIsTrusted(bool $isTrusted): self
     {

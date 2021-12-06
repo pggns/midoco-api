@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveInsurerResponse extends AbstractStructBase
      * The MidocoInsurer
      * Meta information extracted from the WSDL
      * - ref: MidocoInsurer
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoInsurer|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer $MidocoInsurer = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoInsurer $MidocoInsurer = null;
     /**
      * Constructor method for SaveInsurerResponse
      * @uses SaveInsurerResponse::setMidocoInsurer()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer $midocoInsurer
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoInsurer $midocoInsurer
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer $midocoInsurer = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoInsurer $midocoInsurer = null)
     {
         $this
             ->setMidocoInsurer($midocoInsurer);
     }
     /**
      * Get MidocoInsurer value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoInsurer|null
      */
-    public function getMidocoInsurer(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer
+    public function getMidocoInsurer(): ?\Pggns\MidocoApi\Documents\StructType\MidocoInsurer
     {
         return $this->MidocoInsurer;
     }
     /**
      * Set MidocoInsurer value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer $midocoInsurer
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SaveInsurerResponse
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoInsurer $midocoInsurer
+     * @return \Pggns\MidocoApi\Documents\StructType\SaveInsurerResponse
      */
-    public function setMidocoInsurer(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoInsurer $midocoInsurer = null): self
+    public function setMidocoInsurer(?\Pggns\MidocoApi\Documents\StructType\MidocoInsurer $midocoInsurer = null): self
     {
         $this->MidocoInsurer = $midocoInsurer;
         

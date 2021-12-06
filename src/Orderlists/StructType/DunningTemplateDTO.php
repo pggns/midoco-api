@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class DunningTemplateDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningTemplateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningTemplateDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -110,7 +110,7 @@ class DunningTemplateDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningTemplateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningTemplateDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -133,7 +133,7 @@ class DunningTemplateDTO extends AbstractStructBase
     /**
      * Set dunningTemplateId value
      * @param int $dunningTemplateId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningTemplateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningTemplateDTO
      */
     public function setDunningTemplateId(?int $dunningTemplateId = null): self
     {
@@ -156,7 +156,7 @@ class DunningTemplateDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningTemplateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningTemplateDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -179,7 +179,7 @@ class DunningTemplateDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningTemplateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningTemplateDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -202,7 +202,7 @@ class DunningTemplateDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningTemplateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningTemplateDTO
      */
     public function setName(?string $name = null): self
     {
@@ -225,7 +225,7 @@ class DunningTemplateDTO extends AbstractStructBase
     /**
      * Set senderEmail value
      * @param string $senderEmail
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DunningTemplateDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DunningTemplateDTO
      */
     public function setSenderEmail(?string $senderEmail = null): self
     {

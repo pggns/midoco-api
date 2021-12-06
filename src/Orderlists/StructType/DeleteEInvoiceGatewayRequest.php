@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class DeleteEInvoiceGatewayRequest extends AbstractStructBase
      * The MidocoEInvoiceGateway
      * Meta information extracted from the WSDL
      * - ref: MidocoEInvoiceGateway
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceGatewayDTO|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceGatewayDTO $MidocoEInvoiceGateway = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO $MidocoEInvoiceGateway = null;
     /**
      * Constructor method for DeleteEInvoiceGatewayRequest
      * @uses DeleteEInvoiceGatewayRequest::setMidocoEInvoiceGateway()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceGatewayDTO $midocoEInvoiceGateway
+     * @param \Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO $midocoEInvoiceGateway
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceGatewayDTO $midocoEInvoiceGateway = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO $midocoEInvoiceGateway = null)
     {
         $this
             ->setMidocoEInvoiceGateway($midocoEInvoiceGateway);
     }
     /**
      * Get MidocoEInvoiceGateway value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceGatewayDTO|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO|null
      */
-    public function getMidocoEInvoiceGateway(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceGatewayDTO
+    public function getMidocoEInvoiceGateway(): ?\Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO
     {
         return $this->MidocoEInvoiceGateway;
     }
     /**
      * Set MidocoEInvoiceGateway value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceGatewayDTO $midocoEInvoiceGateway
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DeleteEInvoiceGatewayRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO $midocoEInvoiceGateway
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DeleteEInvoiceGatewayRequest
      */
-    public function setMidocoEInvoiceGateway(?\Pggns\MidocoApi\Api\Orderlists\StructType\EinvoiceGatewayDTO $midocoEInvoiceGateway = null): self
+    public function setMidocoEInvoiceGateway(?\Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO $midocoEInvoiceGateway = null): self
     {
         $this->MidocoEInvoiceGateway = $midocoEInvoiceGateway;
         

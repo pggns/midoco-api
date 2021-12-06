@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SubjectAttributeDTO extends AbstractStructBase
     /**
      * Set attrName value
      * @param string $attrName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectAttributeDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectAttributeDTO
      */
     public function setAttrName(?string $attrName = null): self
     {
@@ -78,7 +78,7 @@ class SubjectAttributeDTO extends AbstractStructBase
     /**
      * Set attrValue value
      * @param string $attrValue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectAttributeDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectAttributeDTO
      */
     public function setAttrValue(?string $attrValue = null): self
     {
@@ -101,7 +101,7 @@ class SubjectAttributeDTO extends AbstractStructBase
     /**
      * Set subject value
      * @param int $subject
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\SubjectAttributeDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\SubjectAttributeDTO
      */
     public function setSubject(?int $subject = null): self
     {

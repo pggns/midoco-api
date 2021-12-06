@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -31,9 +31,9 @@ class SaveDebitInfoRequest extends AbstractStructBase
      * The MidocoDebitInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoDebitInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType $MidocoDebitInfo = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType $MidocoDebitInfo = null;
     /**
      * Constructor method for SaveDebitInfoRequest
      * @uses SaveDebitInfoRequest::setDocumentId()
@@ -41,9 +41,9 @@ class SaveDebitInfoRequest extends AbstractStructBase
      * @uses SaveDebitInfoRequest::setMidocoDebitInfo()
      * @param int $documentId
      * @param int $internalVersion
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType $midocoDebitInfo
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType $midocoDebitInfo
      */
-    public function __construct(int $documentId, int $internalVersion, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType $midocoDebitInfo = null)
+    public function __construct(int $documentId, int $internalVersion, ?\Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType $midocoDebitInfo = null)
     {
         $this
             ->setDocumentId($documentId)
@@ -61,7 +61,7 @@ class SaveDebitInfoRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveDebitInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveDebitInfoRequest
      */
     public function setDocumentId(int $documentId): self
     {
@@ -84,7 +84,7 @@ class SaveDebitInfoRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveDebitInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveDebitInfoRequest
      */
     public function setInternalVersion(int $internalVersion): self
     {
@@ -98,18 +98,18 @@ class SaveDebitInfoRequest extends AbstractStructBase
     }
     /**
      * Get MidocoDebitInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType|null
      */
-    public function getMidocoDebitInfo(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType
+    public function getMidocoDebitInfo(): ?\Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType
     {
         return $this->MidocoDebitInfo;
     }
     /**
      * Set MidocoDebitInfo value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType $midocoDebitInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveDebitInfoRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType $midocoDebitInfo
+     * @return \Pggns\MidocoApi\Order\StructType\SaveDebitInfoRequest
      */
-    public function setMidocoDebitInfo(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoType $midocoDebitInfo = null): self
+    public function setMidocoDebitInfo(?\Pggns\MidocoApi\Order\StructType\MidocoDebitInfoType $midocoDebitInfo = null): self
     {
         $this->MidocoDebitInfo = $midocoDebitInfo;
         

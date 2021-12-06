@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class SupplierAgencySettlementDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierAgencySettlementDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -126,7 +126,7 @@ class SupplierAgencySettlementDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierAgencySettlementDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -149,7 +149,7 @@ class SupplierAgencySettlementDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierAgencySettlementDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -172,7 +172,7 @@ class SupplierAgencySettlementDTO extends AbstractStructBase
     /**
      * Set exchangeRate value
      * @param float $exchangeRate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierAgencySettlementDTO
      */
     public function setExchangeRate(?float $exchangeRate = null): self
     {
@@ -195,7 +195,7 @@ class SupplierAgencySettlementDTO extends AbstractStructBase
     /**
      * Set receiptNo value
      * @param string $receiptNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierAgencySettlementDTO
      */
     public function setReceiptNo(?string $receiptNo = null): self
     {
@@ -218,7 +218,7 @@ class SupplierAgencySettlementDTO extends AbstractStructBase
     /**
      * Set settlementHash value
      * @param string $settlementHash
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierAgencySettlementDTO
      */
     public function setSettlementHash(?string $settlementHash = null): self
     {
@@ -241,7 +241,7 @@ class SupplierAgencySettlementDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierAgencySettlementDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -264,7 +264,7 @@ class SupplierAgencySettlementDTO extends AbstractStructBase
     /**
      * Set settlementMonth value
      * @param string $settlementMonth
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierAgencySettlementDTO
      */
     public function setSettlementMonth(?string $settlementMonth = null): self
     {
@@ -287,7 +287,7 @@ class SupplierAgencySettlementDTO extends AbstractStructBase
     /**
      * Set settlementSystem value
      * @param string $settlementSystem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierAgencySettlementDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierAgencySettlementDTO
      */
     public function setSettlementSystem(?string $settlementSystem = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -24,7 +24,7 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoYearlyTurnover
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover[]
      */
     protected ?array $MidocoYearlyTurnover = null;
     /**
@@ -44,7 +44,7 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
      * @uses GetYearlyTurnoverResponse::setLastTravelDate()
      * @uses GetYearlyTurnoverResponse::setLastSalesAmount()
      * @param int $customerId
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover[] $midocoYearlyTurnover
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover[] $midocoYearlyTurnover
      * @param string $lastTravelDate
      * @param float $lastSalesAmount
      */
@@ -67,7 +67,7 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetYearlyTurnoverResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\GetYearlyTurnoverResponse
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -81,7 +81,7 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
     }
     /**
      * Get MidocoYearlyTurnover value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover[]
      */
     public function getMidocoYearlyTurnover(): ?array
     {
@@ -102,12 +102,12 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getYearlyTurnoverResponseMidocoYearlyTurnoverItem) {
             // validation for constraint: itemType
-            if (!$getYearlyTurnoverResponseMidocoYearlyTurnoverItem instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover) {
+            if (!$getYearlyTurnoverResponseMidocoYearlyTurnoverItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover) {
                 $invalidValues[] = is_object($getYearlyTurnoverResponseMidocoYearlyTurnoverItem) ? get_class($getYearlyTurnoverResponseMidocoYearlyTurnoverItem) : sprintf('%s(%s)', gettype($getYearlyTurnoverResponseMidocoYearlyTurnoverItem), var_export($getYearlyTurnoverResponseMidocoYearlyTurnoverItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoYearlyTurnover property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoYearlyTurnover property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -116,8 +116,8 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
     /**
      * Set MidocoYearlyTurnover value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover[] $midocoYearlyTurnover
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetYearlyTurnoverResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover[] $midocoYearlyTurnover
+     * @return \Pggns\MidocoApi\Crm\StructType\GetYearlyTurnoverResponse
      */
     public function setMidocoYearlyTurnover(?array $midocoYearlyTurnover = null): self
     {
@@ -132,14 +132,14 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
     /**
      * Add item to MidocoYearlyTurnover value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetYearlyTurnoverResponse
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover $item
+     * @return \Pggns\MidocoApi\Crm\StructType\GetYearlyTurnoverResponse
      */
-    public function addToMidocoYearlyTurnover(\Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover $item): self
+    public function addToMidocoYearlyTurnover(\Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover) {
-            throw new InvalidArgumentException(sprintf('The MidocoYearlyTurnover property can only contain items of type \Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover) {
+            throw new InvalidArgumentException(sprintf('The MidocoYearlyTurnover property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoYearlyTurnover[] = $item;
         
@@ -156,7 +156,7 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
     /**
      * Set lastTravelDate value
      * @param string $lastTravelDate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetYearlyTurnoverResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\GetYearlyTurnoverResponse
      */
     public function setLastTravelDate(?string $lastTravelDate = null): self
     {
@@ -179,7 +179,7 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
     /**
      * Set lastSalesAmount value
      * @param float $lastSalesAmount
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetYearlyTurnoverResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\GetYearlyTurnoverResponse
      */
     public function setLastSalesAmount(?float $lastSalesAmount = null): self
     {

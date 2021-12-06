@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class GetMidocoBaggageAllowanceRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoBaggageAllowance
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoBaggageAllowance|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoBaggageAllowance|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBaggageAllowance $MidocoBaggageAllowance = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoBaggageAllowance $MidocoBaggageAllowance = null;
     /**
      * Constructor method for GetMidocoBaggageAllowanceRequest
      * @uses GetMidocoBaggageAllowanceRequest::setMidocoBaggageAllowance()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBaggageAllowance $midocoBaggageAllowance
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBaggageAllowance $midocoBaggageAllowance
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBaggageAllowance $midocoBaggageAllowance = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoBaggageAllowance $midocoBaggageAllowance = null)
     {
         $this
             ->setMidocoBaggageAllowance($midocoBaggageAllowance);
     }
     /**
      * Get MidocoBaggageAllowance value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoBaggageAllowance|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBaggageAllowance|null
      */
-    public function getMidocoBaggageAllowance(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBaggageAllowance
+    public function getMidocoBaggageAllowance(): ?\Pggns\MidocoApi\Documents\StructType\MidocoBaggageAllowance
     {
         return $this->MidocoBaggageAllowance;
     }
     /**
      * Set MidocoBaggageAllowance value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoBaggageAllowance $midocoBaggageAllowance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetMidocoBaggageAllowanceRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoBaggageAllowance $midocoBaggageAllowance
+     * @return \Pggns\MidocoApi\Documents\StructType\GetMidocoBaggageAllowanceRequest
      */
-    public function setMidocoBaggageAllowance(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoBaggageAllowance $midocoBaggageAllowance = null): self
+    public function setMidocoBaggageAllowance(?\Pggns\MidocoApi\Documents\StructType\MidocoBaggageAllowance $midocoBaggageAllowance = null): self
     {
         $this->MidocoBaggageAllowance = $midocoBaggageAllowance;
         

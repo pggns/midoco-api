@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -135,7 +135,7 @@ class DebitorInfoDTO extends AbstractStructBase
     /**
      * Set creationAgent value
      * @param string $creationAgent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorInfoDTO
      */
     public function setCreationAgent(?string $creationAgent = null): self
     {
@@ -158,7 +158,7 @@ class DebitorInfoDTO extends AbstractStructBase
     /**
      * Set creationBranch value
      * @param string $creationBranch
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorInfoDTO
      */
     public function setCreationBranch(?string $creationBranch = null): self
     {
@@ -181,7 +181,7 @@ class DebitorInfoDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorInfoDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -204,7 +204,7 @@ class DebitorInfoDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorInfoDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -227,7 +227,7 @@ class DebitorInfoDTO extends AbstractStructBase
     /**
      * Set department value
      * @param string $department
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorInfoDTO
      */
     public function setDepartment(?string $department = null): self
     {
@@ -250,7 +250,7 @@ class DebitorInfoDTO extends AbstractStructBase
     /**
      * Set modifyAgent value
      * @param string $modifyAgent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorInfoDTO
      */
     public function setModifyAgent(?string $modifyAgent = null): self
     {
@@ -273,7 +273,7 @@ class DebitorInfoDTO extends AbstractStructBase
     /**
      * Set modifyBranch value
      * @param string $modifyBranch
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorInfoDTO
      */
     public function setModifyBranch(?string $modifyBranch = null): self
     {
@@ -296,7 +296,7 @@ class DebitorInfoDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorInfoDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -319,7 +319,7 @@ class DebitorInfoDTO extends AbstractStructBase
     /**
      * Set name1 value
      * @param string $name1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorInfoDTO
      */
     public function setName1(?string $name1 = null): self
     {
@@ -342,7 +342,7 @@ class DebitorInfoDTO extends AbstractStructBase
     /**
      * Set name2 value
      * @param string $name2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorInfoDTO
      */
     public function setName2(?string $name2 = null): self
     {
@@ -365,7 +365,7 @@ class DebitorInfoDTO extends AbstractStructBase
     /**
      * Set remark1 value
      * @param string $remark1
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorInfoDTO
      */
     public function setRemark1(?string $remark1 = null): self
     {
@@ -388,7 +388,7 @@ class DebitorInfoDTO extends AbstractStructBase
     /**
      * Set remark2 value
      * @param string $remark2
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorInfoDTO
      */
     public function setRemark2(?string $remark2 = null): self
     {
@@ -411,7 +411,7 @@ class DebitorInfoDTO extends AbstractStructBase
     /**
      * Set remark3 value
      * @param string $remark3
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DebitorInfoDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorInfoDTO
      */
     public function setRemark3(?string $remark3 = null): self
     {

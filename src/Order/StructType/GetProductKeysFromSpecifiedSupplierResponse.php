@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -70,7 +70,7 @@ class GetProductKeysFromSpecifiedSupplierResponse extends AbstractStructBase
      * Set ProductKey value
      * @throws InvalidArgumentException
      * @param string[] $productKey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetProductKeysFromSpecifiedSupplierResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetProductKeysFromSpecifiedSupplierResponse
      */
     public function setProductKey(?array $productKey = null): self
     {
@@ -86,7 +86,7 @@ class GetProductKeysFromSpecifiedSupplierResponse extends AbstractStructBase
      * Add item to ProductKey value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetProductKeysFromSpecifiedSupplierResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetProductKeysFromSpecifiedSupplierResponse
      */
     public function addToProductKey(string $item): self
     {

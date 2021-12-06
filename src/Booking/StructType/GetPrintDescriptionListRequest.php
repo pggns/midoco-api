@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class GetPrintDescriptionListRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetPrintDescriptionListRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\GetPrintDescriptionListRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -72,7 +72,7 @@ class GetPrintDescriptionListRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\GetPrintDescriptionListRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\GetPrintDescriptionListRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {

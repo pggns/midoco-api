@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class VatAccountsChangeLogDTO extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VatAccountsChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\VatAccountsChangeLogDTO
      */
     public function setAccountId(?string $accountId = null): self
     {
@@ -102,7 +102,7 @@ class VatAccountsChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VatAccountsChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\VatAccountsChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -125,7 +125,7 @@ class VatAccountsChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VatAccountsChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\VatAccountsChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -148,7 +148,7 @@ class VatAccountsChangeLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VatAccountsChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\VatAccountsChangeLogDTO
      */
     public function setUserId(?int $userId = null): self
     {
@@ -171,7 +171,7 @@ class VatAccountsChangeLogDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VatAccountsChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\VatAccountsChangeLogDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -194,7 +194,7 @@ class VatAccountsChangeLogDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\VatAccountsChangeLogDTO
+     * @return \Pggns\MidocoApi\Order\StructType\VatAccountsChangeLogDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {

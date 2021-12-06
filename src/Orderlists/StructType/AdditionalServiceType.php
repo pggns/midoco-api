@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class AdditionalServiceType extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalServiceType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalServiceType
      */
     public function setCode(?string $code = null): self
     {
@@ -94,7 +94,7 @@ class AdditionalServiceType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalServiceType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalServiceType
      */
     public function setDescription(?string $description = null): self
     {
@@ -117,7 +117,7 @@ class AdditionalServiceType extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalServiceType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalServiceType
      */
     public function setPrice(?float $price = null): self
     {
@@ -140,7 +140,7 @@ class AdditionalServiceType extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalServiceType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalServiceType
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -163,7 +163,7 @@ class AdditionalServiceType extends AbstractStructBase
     /**
      * Set booking_position value
      * @param int $booking_position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalServiceType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalServiceType
      */
     public function setBooking_position(?int $booking_position = null): self
     {

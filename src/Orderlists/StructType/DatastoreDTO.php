@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class DatastoreDTO extends AbstractStructBase
     /**
      * Set datastoreId value
      * @param string $datastoreId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatastoreDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatastoreDTO
      */
     public function setDatastoreId(?string $datastoreId = null): self
     {
@@ -78,7 +78,7 @@ class DatastoreDTO extends AbstractStructBase
     /**
      * Set jndiUri value
      * @param string $jndiUri
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatastoreDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatastoreDTO
      */
     public function setJndiUri(?string $jndiUri = null): self
     {
@@ -101,7 +101,7 @@ class DatastoreDTO extends AbstractStructBase
     /**
      * Set sessionUri value
      * @param string $sessionUri
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DatastoreDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatastoreDTO
      */
     public function setSessionUri(?string $sessionUri = null): self
     {

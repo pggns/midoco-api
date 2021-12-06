@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetAddressTypeDescriptionsRequest extends AbstractStructBase
     /**
      * Set addressTypeId value
      * @param int $addressTypeId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAddressTypeDescriptionsRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAddressTypeDescriptionsRequest
      */
     public function setAddressTypeId(int $addressTypeId): self
     {

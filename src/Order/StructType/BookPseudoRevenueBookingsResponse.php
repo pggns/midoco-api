@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -99,7 +99,7 @@ class BookPseudoRevenueBookingsResponse extends AbstractStructBase
     /**
      * Set revenueId value
      * @param int $revenueId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookPseudoRevenueBookingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\BookPseudoRevenueBookingsResponse
      */
     public function setRevenueId(?int $revenueId = null): self
     {
@@ -122,7 +122,7 @@ class BookPseudoRevenueBookingsResponse extends AbstractStructBase
     /**
      * Set grantedRevenue value
      * @param float $grantedRevenue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookPseudoRevenueBookingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\BookPseudoRevenueBookingsResponse
      */
     public function setGrantedRevenue(?float $grantedRevenue = null): self
     {
@@ -145,7 +145,7 @@ class BookPseudoRevenueBookingsResponse extends AbstractStructBase
     /**
      * Set revenueInclVat value
      * @param float $revenueInclVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookPseudoRevenueBookingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\BookPseudoRevenueBookingsResponse
      */
     public function setRevenueInclVat(?float $revenueInclVat = null): self
     {
@@ -168,7 +168,7 @@ class BookPseudoRevenueBookingsResponse extends AbstractStructBase
     /**
      * Set revenueNoVat value
      * @param float $revenueNoVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookPseudoRevenueBookingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\BookPseudoRevenueBookingsResponse
      */
     public function setRevenueNoVat(?float $revenueNoVat = null): self
     {
@@ -191,7 +191,7 @@ class BookPseudoRevenueBookingsResponse extends AbstractStructBase
     /**
      * Set revenueInsurance value
      * @param float $revenueInsurance
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookPseudoRevenueBookingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\BookPseudoRevenueBookingsResponse
      */
     public function setRevenueInsurance(?float $revenueInsurance = null): self
     {
@@ -214,7 +214,7 @@ class BookPseudoRevenueBookingsResponse extends AbstractStructBase
     /**
      * Set newTotalAmount value
      * @param float $newTotalAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookPseudoRevenueBookingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\BookPseudoRevenueBookingsResponse
      */
     public function setNewTotalAmount(?float $newTotalAmount = null): self
     {
@@ -237,7 +237,7 @@ class BookPseudoRevenueBookingsResponse extends AbstractStructBase
     /**
      * Set supplierInvoice value
      * @param float $supplierInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BookPseudoRevenueBookingsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\BookPseudoRevenueBookingsResponse
      */
     public function setSupplierInvoice(?float $supplierInvoice = null): self
     {

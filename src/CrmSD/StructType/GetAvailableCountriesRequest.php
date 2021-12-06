@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetAvailableCountriesRequest extends AbstractStructBase
     /**
      * Set countryId value
      * @param string $countryId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetAvailableCountriesRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAvailableCountriesRequest
      */
     public function setCountryId(?string $countryId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class LogentryDTO extends AbstractStructBase
     /**
      * Set application value
      * @param string $application
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LogentryDTO
      */
     public function setApplication(?string $application = null): self
     {
@@ -102,7 +102,7 @@ class LogentryDTO extends AbstractStructBase
     /**
      * Set entryId value
      * @param int $entryId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LogentryDTO
      */
     public function setEntryId(?int $entryId = null): self
     {
@@ -125,7 +125,7 @@ class LogentryDTO extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LogentryDTO
      */
     public function setMessage(?string $message = null): self
     {
@@ -148,7 +148,7 @@ class LogentryDTO extends AbstractStructBase
     /**
      * Set refId value
      * @param string $refId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LogentryDTO
      */
     public function setRefId(?string $refId = null): self
     {
@@ -171,7 +171,7 @@ class LogentryDTO extends AbstractStructBase
     /**
      * Set severity value
      * @param int $severity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LogentryDTO
      */
     public function setSeverity(?int $severity = null): self
     {
@@ -194,7 +194,7 @@ class LogentryDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\LogentryDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {

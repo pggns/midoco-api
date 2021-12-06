@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class DbiUpdateDTO extends AbstractStructBase
     /**
      * Set cardCategory value
      * @param string $cardCategory
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO
      */
     public function setCardCategory(?string $cardCategory = null): self
     {
@@ -150,7 +150,7 @@ class DbiUpdateDTO extends AbstractStructBase
     /**
      * Set cardType value
      * @param string $cardType
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO
      */
     public function setCardType(?string $cardType = null): self
     {
@@ -173,7 +173,7 @@ class DbiUpdateDTO extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -196,7 +196,7 @@ class DbiUpdateDTO extends AbstractStructBase
     /**
      * Set ccNoReferenceId value
      * @param string $ccNoReferenceId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO
      */
     public function setCcNoReferenceId(?string $ccNoReferenceId = null): self
     {
@@ -219,7 +219,7 @@ class DbiUpdateDTO extends AbstractStructBase
     /**
      * Set ccPublisherId value
      * @param string $ccPublisherId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO
      */
     public function setCcPublisherId(?string $ccPublisherId = null): self
     {
@@ -242,7 +242,7 @@ class DbiUpdateDTO extends AbstractStructBase
     /**
      * Set customerRefEffectiveDate value
      * @param string $customerRefEffectiveDate
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO
      */
     public function setCustomerRefEffectiveDate(?string $customerRefEffectiveDate = null): self
     {
@@ -265,7 +265,7 @@ class DbiUpdateDTO extends AbstractStructBase
     /**
      * Set isTaxVerificationByCc value
      * @param bool $isTaxVerificationByCc
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO
      */
     public function setIsTaxVerificationByCc(?bool $isTaxVerificationByCc = null): self
     {
@@ -288,7 +288,7 @@ class DbiUpdateDTO extends AbstractStructBase
     /**
      * Set lastUpdate value
      * @param string $lastUpdate
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO
      */
     public function setLastUpdate(?string $lastUpdate = null): self
     {
@@ -311,7 +311,7 @@ class DbiUpdateDTO extends AbstractStructBase
     /**
      * Set tokenType value
      * @param string $tokenType
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO
      */
     public function setTokenType(?string $tokenType = null): self
     {
@@ -334,7 +334,7 @@ class DbiUpdateDTO extends AbstractStructBase
     /**
      * Set travelAgentCode value
      * @param string $travelAgentCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO
      */
     public function setTravelAgentCode(?string $travelAgentCode = null): self
     {
@@ -357,7 +357,7 @@ class DbiUpdateDTO extends AbstractStructBase
     /**
      * Set vatActivationDate value
      * @param string $vatActivationDate
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO
      */
     public function setVatActivationDate(?string $vatActivationDate = null): self
     {
@@ -380,7 +380,7 @@ class DbiUpdateDTO extends AbstractStructBase
     /**
      * Set vatDeactivationDate value
      * @param string $vatDeactivationDate
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiUpdateDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiUpdateDTO
      */
     public function setVatDeactivationDate(?string $vatDeactivationDate = null): self
     {

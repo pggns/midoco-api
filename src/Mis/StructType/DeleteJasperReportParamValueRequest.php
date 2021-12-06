@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class DeleteJasperReportParamValueRequest extends AbstractStructBase
     /**
      * Set valueId value
      * @param int $valueId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperReportParamValueRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteJasperReportParamValueRequest
      */
     public function setValueId(int $valueId): self
     {

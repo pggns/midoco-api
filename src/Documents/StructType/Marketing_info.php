@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,15 +61,15 @@ class Marketing_info extends AbstractStructBase
      * The search_criteria
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Search_criteria|null
+     * @var \Pggns\MidocoApi\Documents\StructType\Search_criteria|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\Search_criteria $search_criteria = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\Search_criteria $search_criteria = null;
     /**
      * The attribute
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\Attribute[]
+     * @var \Pggns\MidocoApi\Documents\StructType\Attribute[]
      */
     protected ?array $attribute = null;
     /**
@@ -88,10 +88,10 @@ class Marketing_info extends AbstractStructBase
      * @param string $travel_type
      * @param string $transportation
      * @param string $person_count
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Search_criteria $search_criteria
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Attribute[] $attribute
+     * @param \Pggns\MidocoApi\Documents\StructType\Search_criteria $search_criteria
+     * @param \Pggns\MidocoApi\Documents\StructType\Attribute[] $attribute
      */
-    public function __construct(?string $area_code = null, ?string $travel_duration = null, ?string $season = null, ?string $travel_type = null, ?string $transportation = null, ?string $person_count = null, ?\Pggns\MidocoApi\Api\Documents\StructType\Search_criteria $search_criteria = null, ?array $attribute = null)
+    public function __construct(?string $area_code = null, ?string $travel_duration = null, ?string $season = null, ?string $travel_type = null, ?string $transportation = null, ?string $person_count = null, ?\Pggns\MidocoApi\Documents\StructType\Search_criteria $search_criteria = null, ?array $attribute = null)
     {
         $this
             ->setArea_code($area_code)
@@ -114,7 +114,7 @@ class Marketing_info extends AbstractStructBase
     /**
      * Set area_code value
      * @param string $area_code
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Marketing_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Marketing_info
      */
     public function setArea_code(?string $area_code = null): self
     {
@@ -137,7 +137,7 @@ class Marketing_info extends AbstractStructBase
     /**
      * Set travel_duration value
      * @param string $travel_duration
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Marketing_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Marketing_info
      */
     public function setTravel_duration(?string $travel_duration = null): self
     {
@@ -160,7 +160,7 @@ class Marketing_info extends AbstractStructBase
     /**
      * Set season value
      * @param string $season
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Marketing_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Marketing_info
      */
     public function setSeason(?string $season = null): self
     {
@@ -183,7 +183,7 @@ class Marketing_info extends AbstractStructBase
     /**
      * Set travel_type value
      * @param string $travel_type
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Marketing_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Marketing_info
      */
     public function setTravel_type(?string $travel_type = null): self
     {
@@ -206,7 +206,7 @@ class Marketing_info extends AbstractStructBase
     /**
      * Set transportation value
      * @param string $transportation
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Marketing_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Marketing_info
      */
     public function setTransportation(?string $transportation = null): self
     {
@@ -229,7 +229,7 @@ class Marketing_info extends AbstractStructBase
     /**
      * Set person_count value
      * @param string $person_count
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Marketing_info
+     * @return \Pggns\MidocoApi\Documents\StructType\Marketing_info
      */
     public function setPerson_count(?string $person_count = null): self
     {
@@ -243,18 +243,18 @@ class Marketing_info extends AbstractStructBase
     }
     /**
      * Get search_criteria value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Search_criteria|null
+     * @return \Pggns\MidocoApi\Documents\StructType\Search_criteria|null
      */
-    public function getSearch_criteria(): ?\Pggns\MidocoApi\Api\Documents\StructType\Search_criteria
+    public function getSearch_criteria(): ?\Pggns\MidocoApi\Documents\StructType\Search_criteria
     {
         return $this->{'search-criteria'};
     }
     /**
      * Set search_criteria value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Search_criteria $search_criteria
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Marketing_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Search_criteria $search_criteria
+     * @return \Pggns\MidocoApi\Documents\StructType\Marketing_info
      */
-    public function setSearch_criteria(?\Pggns\MidocoApi\Api\Documents\StructType\Search_criteria $search_criteria = null): self
+    public function setSearch_criteria(?\Pggns\MidocoApi\Documents\StructType\Search_criteria $search_criteria = null): self
     {
         $this->search_criteria = $this->{'search-criteria'} = $search_criteria;
         
@@ -262,7 +262,7 @@ class Marketing_info extends AbstractStructBase
     }
     /**
      * Get attribute value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Attribute[]
+     * @return \Pggns\MidocoApi\Documents\StructType\Attribute[]
      */
     public function getAttribute(): ?array
     {
@@ -283,12 +283,12 @@ class Marketing_info extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $marketing_infoAttributeItem) {
             // validation for constraint: itemType
-            if (!$marketing_infoAttributeItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\Attribute) {
+            if (!$marketing_infoAttributeItem instanceof \Pggns\MidocoApi\Documents\StructType\Attribute) {
                 $invalidValues[] = is_object($marketing_infoAttributeItem) ? get_class($marketing_infoAttributeItem) : sprintf('%s(%s)', gettype($marketing_infoAttributeItem), var_export($marketing_infoAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attribute property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Attribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attribute property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Attribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -297,8 +297,8 @@ class Marketing_info extends AbstractStructBase
     /**
      * Set attribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Attribute[] $attribute
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Marketing_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Attribute[] $attribute
+     * @return \Pggns\MidocoApi\Documents\StructType\Marketing_info
      */
     public function setAttribute(?array $attribute = null): self
     {
@@ -313,14 +313,14 @@ class Marketing_info extends AbstractStructBase
     /**
      * Add item to attribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\Attribute $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\Marketing_info
+     * @param \Pggns\MidocoApi\Documents\StructType\Attribute $item
+     * @return \Pggns\MidocoApi\Documents\StructType\Marketing_info
      */
-    public function addToAttribute(\Pggns\MidocoApi\Api\Documents\StructType\Attribute $item): self
+    public function addToAttribute(\Pggns\MidocoApi\Documents\StructType\Attribute $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\Attribute) {
-            throw new InvalidArgumentException(sprintf('The attribute property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\Attribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\Attribute) {
+            throw new InvalidArgumentException(sprintf('The attribute property can only contain items of type \Pggns\MidocoApi\Documents\StructType\Attribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attribute[] = $item;
         

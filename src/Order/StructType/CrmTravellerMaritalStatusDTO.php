@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CrmTravellerMaritalStatusDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmTravellerMaritalStatusDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmTravellerMaritalStatusDTO
      */
     public function setStatus(?string $status = null): self
     {

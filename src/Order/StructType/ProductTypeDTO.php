@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class ProductTypeDTO extends AbstractStructBase
     /**
      * Set accountIdNoVat value
      * @param string $accountIdNoVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProductTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ProductTypeDTO
      */
     public function setAccountIdNoVat(?string $accountIdNoVat = null): self
     {
@@ -134,7 +134,7 @@ class ProductTypeDTO extends AbstractStructBase
     /**
      * Set accountIdVat value
      * @param string $accountIdVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProductTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ProductTypeDTO
      */
     public function setAccountIdVat(?string $accountIdVat = null): self
     {
@@ -157,7 +157,7 @@ class ProductTypeDTO extends AbstractStructBase
     /**
      * Set forCompany value
      * @param bool $forCompany
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProductTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ProductTypeDTO
      */
     public function setForCompany(?bool $forCompany = null): self
     {
@@ -180,7 +180,7 @@ class ProductTypeDTO extends AbstractStructBase
     /**
      * Set forPerson value
      * @param bool $forPerson
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProductTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ProductTypeDTO
      */
     public function setForPerson(?bool $forPerson = null): self
     {
@@ -203,7 +203,7 @@ class ProductTypeDTO extends AbstractStructBase
     /**
      * Set productType value
      * @param string $productType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProductTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ProductTypeDTO
      */
     public function setProductType(?string $productType = null): self
     {
@@ -226,7 +226,7 @@ class ProductTypeDTO extends AbstractStructBase
     /**
      * Set vatDivTemplIdIn value
      * @param int $vatDivTemplIdIn
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProductTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ProductTypeDTO
      */
     public function setVatDivTemplIdIn(?int $vatDivTemplIdIn = null): self
     {
@@ -249,7 +249,7 @@ class ProductTypeDTO extends AbstractStructBase
     /**
      * Set vatDivTemplIdOut value
      * @param int $vatDivTemplIdOut
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProductTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ProductTypeDTO
      */
     public function setVatDivTemplIdOut(?int $vatDivTemplIdOut = null): self
     {
@@ -272,7 +272,7 @@ class ProductTypeDTO extends AbstractStructBase
     /**
      * Set vatDivisionInRequired value
      * @param bool $vatDivisionInRequired
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProductTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ProductTypeDTO
      */
     public function setVatDivisionInRequired(?bool $vatDivisionInRequired = null): self
     {
@@ -295,7 +295,7 @@ class ProductTypeDTO extends AbstractStructBase
     /**
      * Set vatDivisionOutRequired value
      * @param bool $vatDivisionOutRequired
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProductTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ProductTypeDTO
      */
     public function setVatDivisionOutRequired(?bool $vatDivisionOutRequired = null): self
     {
@@ -318,7 +318,7 @@ class ProductTypeDTO extends AbstractStructBase
     /**
      * Set vatSchemaId value
      * @param int $vatSchemaId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProductTypeDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ProductTypeDTO
      */
     public function setVatSchemaId(?int $vatSchemaId = null): self
     {

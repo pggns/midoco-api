@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ProcessInvoiceMixedModeRequest extends AbstractStructBase
     /**
      * Set invoiceId value
      * @param int $invoiceId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProcessInvoiceMixedModeRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ProcessInvoiceMixedModeRequest
      */
     public function setInvoiceId(?int $invoiceId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class GetMergedDunningRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: ordersd:MidocoDunningTemplate
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $MidocoDunningTemplate = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $MidocoDunningTemplate = null;
     /**
      * The startDate
      * @var string|null
@@ -78,7 +78,7 @@ class GetMergedDunningRequest extends AbstractStructBase
      * @uses GetMergedDunningRequest::setCheckDunningDate()
      * @uses GetMergedDunningRequest::setOrderNo()
      * @uses GetMergedDunningRequest::setPrintIfNoEmail()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate
      * @param string $startDate
      * @param string $endDate
      * @param int $fromDunningLevel
@@ -89,7 +89,7 @@ class GetMergedDunningRequest extends AbstractStructBase
      * @param int $orderNo
      * @param bool $printIfNoEmail
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate = null, ?string $startDate = null, ?string $endDate = null, ?int $fromDunningLevel = null, ?int $toDunningLevel = null, ?string $searchMode = null, ?string $orgUnit = null, ?bool $checkDunningDate = null, ?int $orderNo = null, ?bool $printIfNoEmail = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate = null, ?string $startDate = null, ?string $endDate = null, ?int $fromDunningLevel = null, ?int $toDunningLevel = null, ?string $searchMode = null, ?string $orgUnit = null, ?bool $checkDunningDate = null, ?int $orderNo = null, ?bool $printIfNoEmail = null)
     {
         $this
             ->setMidocoDunningTemplate($midocoDunningTemplate)
@@ -105,18 +105,18 @@ class GetMergedDunningRequest extends AbstractStructBase
     }
     /**
      * Get MidocoDunningTemplate value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate|null
      */
-    public function getMidocoDunningTemplate(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate
+    public function getMidocoDunningTemplate(): ?\Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate
     {
         return $this->MidocoDunningTemplate;
     }
     /**
      * Set MidocoDunningTemplate value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedDunningRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedDunningRequest
      */
-    public function setMidocoDunningTemplate(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate = null): self
+    public function setMidocoDunningTemplate(?\Pggns\MidocoApi\Order\StructType\MidocoDunningTemplate $midocoDunningTemplate = null): self
     {
         $this->MidocoDunningTemplate = $midocoDunningTemplate;
         
@@ -133,7 +133,7 @@ class GetMergedDunningRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedDunningRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -156,7 +156,7 @@ class GetMergedDunningRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedDunningRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -179,7 +179,7 @@ class GetMergedDunningRequest extends AbstractStructBase
     /**
      * Set fromDunningLevel value
      * @param int $fromDunningLevel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedDunningRequest
      */
     public function setFromDunningLevel(?int $fromDunningLevel = null): self
     {
@@ -202,7 +202,7 @@ class GetMergedDunningRequest extends AbstractStructBase
     /**
      * Set toDunningLevel value
      * @param int $toDunningLevel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedDunningRequest
      */
     public function setToDunningLevel(?int $toDunningLevel = null): self
     {
@@ -225,7 +225,7 @@ class GetMergedDunningRequest extends AbstractStructBase
     /**
      * Set searchMode value
      * @param string $searchMode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedDunningRequest
      */
     public function setSearchMode(?string $searchMode = null): self
     {
@@ -248,7 +248,7 @@ class GetMergedDunningRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedDunningRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -271,7 +271,7 @@ class GetMergedDunningRequest extends AbstractStructBase
     /**
      * Set checkDunningDate value
      * @param bool $checkDunningDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedDunningRequest
      */
     public function setCheckDunningDate(?bool $checkDunningDate = null): self
     {
@@ -294,7 +294,7 @@ class GetMergedDunningRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedDunningRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -317,7 +317,7 @@ class GetMergedDunningRequest extends AbstractStructBase
     /**
      * Set printIfNoEmail value
      * @param bool $printIfNoEmail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedDunningRequest
      */
     public function setPrintIfNoEmail(?bool $printIfNoEmail = null): self
     {

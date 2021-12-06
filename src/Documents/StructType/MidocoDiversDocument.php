@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoDiversDocument extends AbstractStructBase
     /**
      * Set documentNumber value
      * @param string $documentNumber
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDiversDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDiversDocument
      */
     public function setDocumentNumber(?string $documentNumber = null): self
     {
@@ -70,7 +70,7 @@ class MidocoDiversDocument extends AbstractStructBase
     /**
      * Set documentDate value
      * @param string $documentDate
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDiversDocument
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDiversDocument
      */
     public function setDocumentDate(?string $documentDate = null): self
     {

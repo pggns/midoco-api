@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class GetOrderContextResponse extends AbstractStructBase
     /**
      * Set hasForeignDebitors value
      * @param bool $hasForeignDebitors
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderContextResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderContextResponse
      */
     public function setHasForeignDebitors(bool $hasForeignDebitors): self
     {
@@ -74,7 +74,7 @@ class GetOrderContextResponse extends AbstractStructBase
     /**
      * Set hasJournalExportCodes value
      * @param bool $hasJournalExportCodes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetOrderContextResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderContextResponse
      */
     public function setHasJournalExportCodes(bool $hasJournalExportCodes): self
     {

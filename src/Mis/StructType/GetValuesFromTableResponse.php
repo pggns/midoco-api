@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class GetValuesFromTableResponse extends AbstractStructBase
      * Set stringValue value
      * @throws InvalidArgumentException
      * @param string[] $stringValue
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetValuesFromTableResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\GetValuesFromTableResponse
      */
     public function setStringValue(?array $stringValue = null): self
     {
@@ -87,7 +87,7 @@ class GetValuesFromTableResponse extends AbstractStructBase
      * Add item to stringValue value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetValuesFromTableResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\GetValuesFromTableResponse
      */
     public function addToStringValue(string $item): self
     {

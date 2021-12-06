@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoBonusCalculation extends BonusCalculationDTO
     /**
      * Set bonusEmployee value
      * @param int $bonusEmployee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBonusCalculation
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBonusCalculation
      */
     public function setBonusEmployee(?int $bonusEmployee = null): self
     {

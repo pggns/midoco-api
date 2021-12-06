@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -255,7 +255,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set actionTimestamp value
      * @param string $actionTimestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setActionTimestamp(?string $actionTimestamp = null): self
     {
@@ -278,7 +278,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set activity value
      * @param string $activity
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setActivity(?string $activity = null): self
     {
@@ -301,7 +301,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set assignedOrgunit value
      * @param string $assignedOrgunit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setAssignedOrgunit(?string $assignedOrgunit = null): self
     {
@@ -324,7 +324,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set assignedQueue value
      * @param string $assignedQueue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setAssignedQueue(?string $assignedQueue = null): self
     {
@@ -347,7 +347,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set assignedUser value
      * @param int $assignedUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setAssignedUser(?int $assignedUser = null): self
     {
@@ -370,7 +370,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -393,7 +393,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -416,7 +416,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set delegateRole value
      * @param int $delegateRole
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setDelegateRole(?int $delegateRole = null): self
     {
@@ -439,7 +439,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set delegationComment value
      * @param string $delegationComment
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setDelegationComment(?string $delegationComment = null): self
     {
@@ -462,7 +462,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set delegationDate value
      * @param string $delegationDate
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setDelegationDate(?string $delegationDate = null): self
     {
@@ -485,7 +485,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set handleManually value
      * @param bool $handleManually
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setHandleManually(?bool $handleManually = null): self
     {
@@ -508,7 +508,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set manuallyCreatedTask value
      * @param bool $manuallyCreatedTask
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setManuallyCreatedTask(?bool $manuallyCreatedTask = null): self
     {
@@ -531,7 +531,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set messageBundle value
      * @param string $messageBundle
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setMessageBundle(?string $messageBundle = null): self
     {
@@ -554,7 +554,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set messageId value
      * @param string $messageId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setMessageId(?string $messageId = null): self
     {
@@ -577,7 +577,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set messageParams value
      * @param string $messageParams
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setMessageParams(?string $messageParams = null): self
     {
@@ -600,7 +600,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set notifyOnComplete value
      * @param bool $notifyOnComplete
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setNotifyOnComplete(?bool $notifyOnComplete = null): self
     {
@@ -623,7 +623,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set priority value
      * @param int $priority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setPriority(?int $priority = null): self
     {
@@ -646,7 +646,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set process value
      * @param string $process
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setProcess(?string $process = null): self
     {
@@ -669,7 +669,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set role value
      * @param string $role
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setRole(?string $role = null): self
     {
@@ -692,7 +692,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set startTime value
      * @param string $startTime
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setStartTime(?string $startTime = null): self
     {
@@ -715,7 +715,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set subject value
      * @param int $subject
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setSubject(?int $subject = null): self
     {
@@ -738,7 +738,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set taskId value
      * @param int $taskId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setTaskId(?int $taskId = null): self
     {
@@ -761,7 +761,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -784,7 +784,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set timeLimit value
      * @param string $timeLimit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setTimeLimit(?string $timeLimit = null): self
     {
@@ -807,7 +807,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -830,7 +830,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setUserId(?int $userId = null): self
     {
@@ -853,7 +853,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set workTimestamp value
      * @param string $workTimestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setWorkTimestamp(?string $workTimestamp = null): self
     {
@@ -876,7 +876,7 @@ class EnlistmentDTO extends AbstractStructBase
     /**
      * Set workingUser value
      * @param int $workingUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\EnlistmentDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\EnlistmentDTO
      */
     public function setWorkingUser(?int $workingUser = null): self
     {

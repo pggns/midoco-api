@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class GetTaskCounterResponse extends AbstractStructBase
     /**
      * Set counter value
      * @param int $counter
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetTaskCounterResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetTaskCounterResponse
      */
     public function setCounter(?int $counter = 0): self
     {

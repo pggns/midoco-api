@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -68,7 +68,7 @@ class SaveFairplaneEmail4OrderResponse extends AbstractStructBase
      * Set orderDocumentId value
      * @throws InvalidArgumentException
      * @param int[] $orderDocumentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveFairplaneEmail4OrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveFairplaneEmail4OrderResponse
      */
     public function setOrderDocumentId(?array $orderDocumentId = null): self
     {
@@ -84,7 +84,7 @@ class SaveFairplaneEmail4OrderResponse extends AbstractStructBase
      * Add item to orderDocumentId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveFairplaneEmail4OrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SaveFairplaneEmail4OrderResponse
      */
     public function addToOrderDocumentId(int $item): self
     {

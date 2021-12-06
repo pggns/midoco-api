@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class MakeBillingDocumentForCustomerResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCollectiveBilling
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling $MidocoCollectiveBilling = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling $MidocoCollectiveBilling = null;
     /**
      * The hasMorePositions
      * @var bool|null
@@ -30,10 +30,10 @@ class MakeBillingDocumentForCustomerResponse extends AbstractStructBase
      * Constructor method for MakeBillingDocumentForCustomerResponse
      * @uses MakeBillingDocumentForCustomerResponse::setMidocoCollectiveBilling()
      * @uses MakeBillingDocumentForCustomerResponse::setHasMorePositions()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling
      * @param bool $hasMorePositions
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling = null, ?bool $hasMorePositions = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling = null, ?bool $hasMorePositions = null)
     {
         $this
             ->setMidocoCollectiveBilling($midocoCollectiveBilling)
@@ -41,18 +41,18 @@ class MakeBillingDocumentForCustomerResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCollectiveBilling value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling|null
      */
-    public function getMidocoCollectiveBilling(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling
+    public function getMidocoCollectiveBilling(): ?\Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling
     {
         return $this->MidocoCollectiveBilling;
     }
     /**
      * Set MidocoCollectiveBilling value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForCustomerResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForCustomerResponse
      */
-    public function setMidocoCollectiveBilling(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling = null): self
+    public function setMidocoCollectiveBilling(?\Pggns\MidocoApi\Order\StructType\MidocoCollectiveBilling $midocoCollectiveBilling = null): self
     {
         $this->MidocoCollectiveBilling = $midocoCollectiveBilling;
         
@@ -69,7 +69,7 @@ class MakeBillingDocumentForCustomerResponse extends AbstractStructBase
     /**
      * Set hasMorePositions value
      * @param bool $hasMorePositions
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeBillingDocumentForCustomerResponse
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForCustomerResponse
      */
     public function setHasMorePositions(?bool $hasMorePositions = null): self
     {

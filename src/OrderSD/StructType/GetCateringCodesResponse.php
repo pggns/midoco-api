@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetCateringCodesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCateringCode
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCateringCode[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoCateringCode[]
      */
     protected ?array $MidocoCateringCode = null;
     /**
      * Constructor method for GetCateringCodesResponse
      * @uses GetCateringCodesResponse::setMidocoCateringCode()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCateringCode[] $midocoCateringCode
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCateringCode[] $midocoCateringCode
      */
     public function __construct(?array $midocoCateringCode = null)
     {
@@ -34,7 +34,7 @@ class GetCateringCodesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCateringCode value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCateringCode[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoCateringCode[]
      */
     public function getMidocoCateringCode(): ?array
     {
@@ -55,12 +55,12 @@ class GetCateringCodesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCateringCodesResponseMidocoCateringCodeItem) {
             // validation for constraint: itemType
-            if (!$getCateringCodesResponseMidocoCateringCodeItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCateringCode) {
+            if (!$getCateringCodesResponseMidocoCateringCodeItem instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoCateringCode) {
                 $invalidValues[] = is_object($getCateringCodesResponseMidocoCateringCodeItem) ? get_class($getCateringCodesResponseMidocoCateringCodeItem) : sprintf('%s(%s)', gettype($getCateringCodesResponseMidocoCateringCodeItem), var_export($getCateringCodesResponseMidocoCateringCodeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCateringCode property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCateringCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCateringCode property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoCateringCode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetCateringCodesResponse extends AbstractStructBase
     /**
      * Set MidocoCateringCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCateringCode[] $midocoCateringCode
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetCateringCodesResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCateringCode[] $midocoCateringCode
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetCateringCodesResponse
      */
     public function setMidocoCateringCode(?array $midocoCateringCode = null): self
     {
@@ -85,14 +85,14 @@ class GetCateringCodesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCateringCode value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCateringCode $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetCateringCodesResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoCateringCode $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetCateringCodesResponse
      */
-    public function addToMidocoCateringCode(\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCateringCode $item): self
+    public function addToMidocoCateringCode(\Pggns\MidocoApi\OrderSD\StructType\MidocoCateringCode $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCateringCode) {
-            throw new InvalidArgumentException(sprintf('The MidocoCateringCode property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoCateringCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\MidocoCateringCode) {
+            throw new InvalidArgumentException(sprintf('The MidocoCateringCode property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\MidocoCateringCode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCateringCode[] = $item;
         

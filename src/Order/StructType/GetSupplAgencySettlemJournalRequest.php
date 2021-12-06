@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetSupplAgencySettlemJournalRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplAgencySettlemJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplAgencySettlemJournalRequest
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -78,7 +78,7 @@ class GetSupplAgencySettlemJournalRequest extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplAgencySettlemJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplAgencySettlemJournalRequest
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -101,7 +101,7 @@ class GetSupplAgencySettlemJournalRequest extends AbstractStructBase
     /**
      * Set journalPosition value
      * @param int $journalPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSupplAgencySettlemJournalRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSupplAgencySettlemJournalRequest
      */
     public function setJournalPosition(?int $journalPosition = null): self
     {

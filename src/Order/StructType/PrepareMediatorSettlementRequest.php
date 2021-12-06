@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,17 +79,17 @@ class PrepareMediatorSettlementRequest extends AbstractStructBase
     }
     /**
      * Set month value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\Month::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\Month::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\Month::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\Month::getValidValues()
      * @throws InvalidArgumentException
      * @param string $month
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMediatorSettlementRequest
      */
     public function setMonth(string $month): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\Month::valueIsValid($month)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\Month', is_array($month) ? implode(', ', $month) : var_export($month, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\Month::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\Month::valueIsValid($month)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\Month', is_array($month) ? implode(', ', $month) : var_export($month, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\Month::getValidValues())), __LINE__);
         }
         $this->month = $month;
         
@@ -106,7 +106,7 @@ class PrepareMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMediatorSettlementRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -129,7 +129,7 @@ class PrepareMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set settlementType value
      * @param string $settlementType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMediatorSettlementRequest
      */
     public function setSettlementType(?string $settlementType = null): self
     {
@@ -152,7 +152,7 @@ class PrepareMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMediatorSettlementRequest
      */
     public function setDate(?string $date = null): self
     {
@@ -179,7 +179,7 @@ class PrepareMediatorSettlementRequest extends AbstractStructBase
     /**
      * Set ignoreProvision value
      * @param bool $ignoreProvision
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMediatorSettlementRequest
      */
     public function setIgnoreProvision(?bool $ignoreProvision = null): self
     {

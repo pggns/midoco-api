@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class DocumentTaxCalculationDTO extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DocumentTaxCalculationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DocumentTaxCalculationDTO
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -94,7 +94,7 @@ class DocumentTaxCalculationDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DocumentTaxCalculationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DocumentTaxCalculationDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -117,7 +117,7 @@ class DocumentTaxCalculationDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DocumentTaxCalculationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DocumentTaxCalculationDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -140,7 +140,7 @@ class DocumentTaxCalculationDTO extends AbstractStructBase
     /**
      * Set taxAmount value
      * @param float $taxAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DocumentTaxCalculationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DocumentTaxCalculationDTO
      */
     public function setTaxAmount(?float $taxAmount = null): self
     {
@@ -163,7 +163,7 @@ class DocumentTaxCalculationDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\DocumentTaxCalculationDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DocumentTaxCalculationDTO
      */
     public function setType(?string $type = null): self
     {

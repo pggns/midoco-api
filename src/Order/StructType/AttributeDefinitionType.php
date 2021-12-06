@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class AttributeDefinitionType extends AttributeDefinitionDTO
     /**
      * Set localization value
      * @param string $localization
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttributeDefinitionType
+     * @return \Pggns\MidocoApi\Order\StructType\AttributeDefinitionType
      */
     public function setLocalization(?string $localization = null): self
     {

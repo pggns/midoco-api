@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -62,7 +62,7 @@ class CreditCardPayment extends AbstractStructBase
     /**
      * Set CreditCardRefId value
      * @param int $creditCardRefId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CreditCardPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\CreditCardPayment
      */
     public function setCreditCardRefId(?int $creditCardRefId = null): self
     {
@@ -85,7 +85,7 @@ class CreditCardPayment extends AbstractStructBase
     /**
      * Set paidAmount value
      * @param float $paidAmount
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CreditCardPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\CreditCardPayment
      */
     public function setPaidAmount(?float $paidAmount = null): self
     {
@@ -108,7 +108,7 @@ class CreditCardPayment extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CreditCardPayment
+     * @return \Pggns\MidocoApi\Booking\StructType\CreditCardPayment
      */
     public function setCurrency(?string $currency = null): self
     {

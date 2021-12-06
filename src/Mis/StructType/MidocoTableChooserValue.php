@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoTableChooserValue extends AbstractStructBase
     /**
      * Set isSelected value
      * @param bool $isSelected
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoTableChooserValue
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoTableChooserValue
      */
     public function setIsSelected(?bool $isSelected = null): self
     {
@@ -78,7 +78,7 @@ class MidocoTableChooserValue extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoTableChooserValue
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoTableChooserValue
      */
     public function setValue(?string $value = null): self
     {
@@ -101,7 +101,7 @@ class MidocoTableChooserValue extends AbstractStructBase
     /**
      * Set key value
      * @param string $key
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MidocoTableChooserValue
+     * @return \Pggns\MidocoApi\Mis\StructType\MidocoTableChooserValue
      */
     public function setKey(?string $key = null): self
     {

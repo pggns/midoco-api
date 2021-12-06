@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class AttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -150,7 +150,7 @@ class AttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set contextId value
      * @param string $contextId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO
      */
     public function setContextId(?string $contextId = null): self
     {
@@ -173,7 +173,7 @@ class AttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set defaultValue value
      * @param string $defaultValue
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO
      */
     public function setDefaultValue(?string $defaultValue = null): self
     {
@@ -196,7 +196,7 @@ class AttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set exportToReporting value
      * @param bool $exportToReporting
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO
      */
     public function setExportToReporting(?bool $exportToReporting = null): self
     {
@@ -219,7 +219,7 @@ class AttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set isMandatory value
      * @param bool $isMandatory
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO
      */
     public function setIsMandatory(?bool $isMandatory = null): self
     {
@@ -242,7 +242,7 @@ class AttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set isMarketingcode value
      * @param bool $isMarketingcode
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO
      */
     public function setIsMarketingcode(?bool $isMarketingcode = null): self
     {
@@ -265,7 +265,7 @@ class AttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set isVisible value
      * @param bool $isVisible
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO
      */
     public function setIsVisible(?bool $isVisible = null): self
     {
@@ -288,7 +288,7 @@ class AttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set length value
      * @param int $length
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO
      */
     public function setLength(?int $length = null): self
     {
@@ -311,7 +311,7 @@ class AttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set prec value
      * @param int $prec
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO
      */
     public function setPrec(?int $prec = null): self
     {
@@ -334,7 +334,7 @@ class AttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set requiresUpdateRight value
      * @param bool $requiresUpdateRight
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO
      */
     public function setRequiresUpdateRight(?bool $requiresUpdateRight = null): self
     {
@@ -357,7 +357,7 @@ class AttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO
      */
     public function setType(?int $type = null): self
     {
@@ -380,7 +380,7 @@ class AttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class TraveltypeKeyDimensionDTO extends AbstractStructBase
     /**
      * Set traveltypeKey value
      * @param string $traveltypeKey
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\TraveltypeKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\TraveltypeKeyDimensionDTO
      */
     public function setTraveltypeKey(?string $traveltypeKey = null): self
     {
@@ -86,7 +86,7 @@ class TraveltypeKeyDimensionDTO extends AbstractStructBase
     /**
      * Set traveltypeKeyDescription value
      * @param string $traveltypeKeyDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\TraveltypeKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\TraveltypeKeyDimensionDTO
      */
     public function setTraveltypeKeyDescription(?string $traveltypeKeyDescription = null): self
     {
@@ -109,7 +109,7 @@ class TraveltypeKeyDimensionDTO extends AbstractStructBase
     /**
      * Set traveltypeKeyId value
      * @param int $traveltypeKeyId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\TraveltypeKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\TraveltypeKeyDimensionDTO
      */
     public function setTraveltypeKeyId(?int $traveltypeKeyId = null): self
     {
@@ -132,7 +132,7 @@ class TraveltypeKeyDimensionDTO extends AbstractStructBase
     /**
      * Set traveltypeKeyLocDescr value
      * @param string $traveltypeKeyLocDescr
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\TraveltypeKeyDimensionDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\TraveltypeKeyDimensionDTO
      */
     public function setTraveltypeKeyLocDescr(?string $traveltypeKeyLocDescr = null): self
     {

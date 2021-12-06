@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class Task extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTaskAttribute
-     * @var \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskAttribute[]
+     * @var \Pggns\MidocoApi\Workflow\StructType\MidocoTaskAttribute[]
      */
     protected ?array $MidocoTaskAttribute = null;
     /**
@@ -189,7 +189,7 @@ class Task extends AbstractStructBase
      * @uses Task::setManuallyCreatedTask()
      * @uses Task::setPreventDateChange()
      * @uses Task::setUserId()
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskAttribute[] $midocoTaskAttribute
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskAttribute[] $midocoTaskAttribute
      * @param int $subject_id
      * @param string $userValue
      * @param string $activity
@@ -252,7 +252,7 @@ class Task extends AbstractStructBase
     }
     /**
      * Get MidocoTaskAttribute value
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskAttribute[]
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoTaskAttribute[]
      */
     public function getMidocoTaskAttribute(): ?array
     {
@@ -273,12 +273,12 @@ class Task extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $taskMidocoTaskAttributeItem) {
             // validation for constraint: itemType
-            if (!$taskMidocoTaskAttributeItem instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskAttribute) {
+            if (!$taskMidocoTaskAttributeItem instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskAttribute) {
                 $invalidValues[] = is_object($taskMidocoTaskAttributeItem) ? get_class($taskMidocoTaskAttributeItem) : sprintf('%s(%s)', gettype($taskMidocoTaskAttributeItem), var_export($taskMidocoTaskAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTaskAttribute property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTaskAttribute property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -287,8 +287,8 @@ class Task extends AbstractStructBase
     /**
      * Set MidocoTaskAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskAttribute[] $midocoTaskAttribute
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskAttribute[] $midocoTaskAttribute
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setMidocoTaskAttribute(?array $midocoTaskAttribute = null): self
     {
@@ -303,14 +303,14 @@ class Task extends AbstractStructBase
     /**
      * Add item to MidocoTaskAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskAttribute $item
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @param \Pggns\MidocoApi\Workflow\StructType\MidocoTaskAttribute $item
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
-    public function addToMidocoTaskAttribute(\Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskAttribute $item): self
+    public function addToMidocoTaskAttribute(\Pggns\MidocoApi\Workflow\StructType\MidocoTaskAttribute $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskAttribute) {
-            throw new InvalidArgumentException(sprintf('The MidocoTaskAttribute property can only contain items of type \Pggns\MidocoApi\Api\Workflow\StructType\MidocoTaskAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Workflow\StructType\MidocoTaskAttribute) {
+            throw new InvalidArgumentException(sprintf('The MidocoTaskAttribute property can only contain items of type \Pggns\MidocoApi\Workflow\StructType\MidocoTaskAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTaskAttribute[] = $item;
         
@@ -327,7 +327,7 @@ class Task extends AbstractStructBase
     /**
      * Set subject_id value
      * @param int $subject_id
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setSubject_id(?int $subject_id = null): self
     {
@@ -350,7 +350,7 @@ class Task extends AbstractStructBase
     /**
      * Set userValue value
      * @param string $userValue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setUserValue(?string $userValue = null): self
     {
@@ -373,7 +373,7 @@ class Task extends AbstractStructBase
     /**
      * Set activity value
      * @param string $activity
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setActivity(?string $activity = null): self
     {
@@ -396,7 +396,7 @@ class Task extends AbstractStructBase
     /**
      * Set process value
      * @param string $process
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setProcess(?string $process = null): self
     {
@@ -419,7 +419,7 @@ class Task extends AbstractStructBase
     /**
      * Set unit_name value
      * @param string $unit_name
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setUnit_name(?string $unit_name = null): self
     {
@@ -442,7 +442,7 @@ class Task extends AbstractStructBase
     /**
      * Set process_role value
      * @param string $process_role
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setProcess_role(?string $process_role = null): self
     {
@@ -465,7 +465,7 @@ class Task extends AbstractStructBase
     /**
      * Set delegateQueue value
      * @param string $delegateQueue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setDelegateQueue(?string $delegateQueue = null): self
     {
@@ -488,7 +488,7 @@ class Task extends AbstractStructBase
     /**
      * Set delegateUser value
      * @param string $delegateUser
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setDelegateUser(?string $delegateUser = null): self
     {
@@ -511,7 +511,7 @@ class Task extends AbstractStructBase
     /**
      * Set delegateUserId value
      * @param int $delegateUserId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setDelegateUserId(?int $delegateUserId = null): self
     {
@@ -534,7 +534,7 @@ class Task extends AbstractStructBase
     /**
      * Set delegateOrgunit value
      * @param string $delegateOrgunit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setDelegateOrgunit(?string $delegateOrgunit = null): self
     {
@@ -557,7 +557,7 @@ class Task extends AbstractStructBase
     /**
      * Set delegation_date value
      * @param string $delegation_date
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setDelegation_date(?string $delegation_date = null): self
     {
@@ -580,7 +580,7 @@ class Task extends AbstractStructBase
     /**
      * Set delegation_comment value
      * @param string $delegation_comment
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setDelegation_comment(?string $delegation_comment = null): self
     {
@@ -603,7 +603,7 @@ class Task extends AbstractStructBase
     /**
      * Set notify_on_complete value
      * @param bool $notify_on_complete
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setNotify_on_complete(?bool $notify_on_complete = null): self
     {
@@ -626,7 +626,7 @@ class Task extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -649,7 +649,7 @@ class Task extends AbstractStructBase
     /**
      * Set time_limit value
      * @param string $time_limit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setTime_limit(?string $time_limit = null): self
     {
@@ -672,7 +672,7 @@ class Task extends AbstractStructBase
     /**
      * Set working_user value
      * @param string $working_user
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setWorking_user(?string $working_user = null): self
     {
@@ -695,7 +695,7 @@ class Task extends AbstractStructBase
     /**
      * Set working_userId value
      * @param int $working_userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setWorking_userId(?int $working_userId = null): self
     {
@@ -718,7 +718,7 @@ class Task extends AbstractStructBase
     /**
      * Set work_timestamp value
      * @param string $work_timestamp
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setWork_timestamp(?string $work_timestamp = null): self
     {
@@ -741,7 +741,7 @@ class Task extends AbstractStructBase
     /**
      * Set subject_description value
      * @param string $subject_description
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setSubject_description(?string $subject_description = null): self
     {
@@ -764,7 +764,7 @@ class Task extends AbstractStructBase
     /**
      * Set activity_id value
      * @param string $activity_id
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setActivity_id(?string $activity_id = null): self
     {
@@ -787,7 +787,7 @@ class Task extends AbstractStructBase
     /**
      * Set subject_type value
      * @param string $subject_type
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setSubject_type(?string $subject_type = null): self
     {
@@ -810,7 +810,7 @@ class Task extends AbstractStructBase
     /**
      * Set handle_manually value
      * @param bool $handle_manually
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setHandle_manually(?bool $handle_manually = null): self
     {
@@ -833,7 +833,7 @@ class Task extends AbstractStructBase
     /**
      * Set hints value
      * @param string $hints
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setHints(?string $hints = null): self
     {
@@ -856,7 +856,7 @@ class Task extends AbstractStructBase
     /**
      * Set priority value
      * @param int $priority
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setPriority(?int $priority = null): self
     {
@@ -879,7 +879,7 @@ class Task extends AbstractStructBase
     /**
      * Set manuallyCreatedTask value
      * @param bool $manuallyCreatedTask
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setManuallyCreatedTask(?bool $manuallyCreatedTask = null): self
     {
@@ -902,7 +902,7 @@ class Task extends AbstractStructBase
     /**
      * Set preventDateChange value
      * @param bool $preventDateChange
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setPreventDateChange(?bool $preventDateChange = false): self
     {
@@ -925,7 +925,7 @@ class Task extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\Task
+     * @return \Pggns\MidocoApi\Workflow\StructType\Task
      */
     public function setUserId(?int $userId = null): self
     {

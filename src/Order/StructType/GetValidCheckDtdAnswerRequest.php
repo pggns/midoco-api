@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetValidCheckDtdAnswerRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetValidCheckDtdAnswerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetValidCheckDtdAnswerRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {

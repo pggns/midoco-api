@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -378,7 +378,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setPosition(int $position): self
     {
@@ -401,7 +401,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set service_code value
      * @param string $service_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setService_code(?string $service_code = null): self
     {
@@ -424,7 +424,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set service_name value
      * @param string $service_name
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setService_name(?string $service_name = null): self
     {
@@ -447,7 +447,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setCategory(?string $category = null): self
     {
@@ -470,7 +470,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set car_type value
      * @param string $car_type
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setCar_type(?string $car_type = null): self
     {
@@ -493,7 +493,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set car_description value
      * @param string $car_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setCar_description(?string $car_description = null): self
     {
@@ -516,7 +516,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set pickup_code value
      * @param string $pickup_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setPickup_code(?string $pickup_code = null): self
     {
@@ -539,7 +539,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set pickup_description value
      * @param string $pickup_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setPickup_description(?string $pickup_description = null): self
     {
@@ -562,7 +562,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set pickup_date value
      * @param string $pickup_date
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setPickup_date(?string $pickup_date = null): self
     {
@@ -589,7 +589,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set pickup_time value
      * @param string $pickup_time
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setPickup_time(?string $pickup_time = null): self
     {
@@ -616,7 +616,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set return_code value
      * @param string $return_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setReturn_code(?string $return_code = null): self
     {
@@ -639,7 +639,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set return_description value
      * @param string $return_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setReturn_description(?string $return_description = null): self
     {
@@ -662,7 +662,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set return_date value
      * @param string $return_date
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setReturn_date(?string $return_date = null): self
     {
@@ -689,7 +689,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set return_time value
      * @param string $return_time
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setReturn_time(?string $return_time = null): self
     {
@@ -716,7 +716,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set service_status value
      * @param string $service_status
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setService_status(?string $service_status = null): self
     {
@@ -739,7 +739,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set service_price value
      * @param float $service_price
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setService_price(?float $service_price = null): self
     {
@@ -762,7 +762,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set no_of_services value
      * @param int $no_of_services
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setNo_of_services(?int $no_of_services = null): self
     {
@@ -785,7 +785,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -808,7 +808,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set insurance_type value
      * @param string $insurance_type
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setInsurance_type(?string $insurance_type = null): self
     {
@@ -831,7 +831,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set insurance_description value
      * @param string $insurance_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setInsurance_description(?string $insurance_description = null): self
     {
@@ -854,7 +854,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set vat_included value
      * @param bool $vat_included
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setVat_included(?bool $vat_included = false): self
     {
@@ -877,7 +877,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set country_code value
      * @param string $country_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setCountry_code(?string $country_code = null): self
     {
@@ -900,7 +900,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set country_description value
      * @param string $country_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setCountry_description(?string $country_description = null): self
     {
@@ -923,7 +923,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set return_country_code value
      * @param string $return_country_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setReturn_country_code(?string $return_country_code = null): self
     {
@@ -946,7 +946,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set return_country_description value
      * @param string $return_country_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setReturn_country_description(?string $return_country_description = null): self
     {
@@ -969,7 +969,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set car_supplier value
      * @param string $car_supplier
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setCar_supplier(?string $car_supplier = null): self
     {
@@ -992,7 +992,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set region_code value
      * @param string $region_code
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setRegion_code(?string $region_code = null): self
     {
@@ -1015,7 +1015,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set region_description value
      * @param string $region_description
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setRegion_description(?string $region_description = null): self
     {
@@ -1038,7 +1038,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set corporate_discount value
      * @param string $corporate_discount
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setCorporate_discount(?string $corporate_discount = null): self
     {
@@ -1088,7 +1088,7 @@ class Car_service_type extends AbstractStructBase
      * Set traveler_ref_id value
      * @throws InvalidArgumentException
      * @param int[] $traveler_ref_id
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setTraveler_ref_id(?array $traveler_ref_id = null): self
     {
@@ -1104,7 +1104,7 @@ class Car_service_type extends AbstractStructBase
      * Add item to traveler_ref_id value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function addToTraveler_ref_id(int $item): self
     {
@@ -1127,7 +1127,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -1150,7 +1150,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -1173,7 +1173,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -1196,7 +1196,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set extId value
      * @param string $extId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setExtId(?string $extId = null): self
     {
@@ -1219,7 +1219,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set sourceSystem value
      * @param string $sourceSystem
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setSourceSystem(?string $sourceSystem = null): self
     {
@@ -1242,7 +1242,7 @@ class Car_service_type extends AbstractStructBase
     /**
      * Set sourceExtId value
      * @param string $sourceExtId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\Car_service_type
+     * @return \Pggns\MidocoApi\Booking\StructType\Car_service_type
      */
     public function setSourceExtId(?string $sourceExtId = null): self
     {

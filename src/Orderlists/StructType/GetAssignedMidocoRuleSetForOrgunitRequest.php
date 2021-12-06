@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetAssignedMidocoRuleSetForOrgunitRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GetAssignedMidocoRuleSetForOrgunitRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAssignedMidocoRuleSetForOrgunitRequest
      */
     public function setType(?string $type = null): self
     {

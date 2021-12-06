@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveDocumentItemRequest extends AbstractStructBase
      * The MidocoDocumentItem
      * Meta information extracted from the WSDL
      * - ref: MidocoDocumentItem
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDocumentItem|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem $MidocoDocumentItem = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoDocumentItem $MidocoDocumentItem = null;
     /**
      * Constructor method for SaveDocumentItemRequest
      * @uses SaveDocumentItemRequest::setMidocoDocumentItem()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem $midocoDocumentItem
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDocumentItem $midocoDocumentItem
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem $midocoDocumentItem = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoDocumentItem $midocoDocumentItem = null)
     {
         $this
             ->setMidocoDocumentItem($midocoDocumentItem);
     }
     /**
      * Get MidocoDocumentItem value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDocumentItem|null
      */
-    public function getMidocoDocumentItem(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem
+    public function getMidocoDocumentItem(): ?\Pggns\MidocoApi\Order\StructType\MidocoDocumentItem
     {
         return $this->MidocoDocumentItem;
     }
     /**
      * Set MidocoDocumentItem value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem $midocoDocumentItem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveDocumentItemRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDocumentItem $midocoDocumentItem
+     * @return \Pggns\MidocoApi\Order\StructType\SaveDocumentItemRequest
      */
-    public function setMidocoDocumentItem(?\Pggns\MidocoApi\Api\Order\StructType\MidocoDocumentItem $midocoDocumentItem = null): self
+    public function setMidocoDocumentItem(?\Pggns\MidocoApi\Order\StructType\MidocoDocumentItem $midocoDocumentItem = null): self
     {
         $this->MidocoDocumentItem = $midocoDocumentItem;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoJournalExport extends JournalExportDTO
     /**
      * Set exportUserName value
      * @param string $exportUserName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoJournalExport
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoJournalExport
      */
     public function setExportUserName(?string $exportUserName = null): self
     {

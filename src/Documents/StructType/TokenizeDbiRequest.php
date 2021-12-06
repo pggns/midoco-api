@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class TokenizeDbiRequest extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\TokenizeDbiRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\TokenizeDbiRequest
      */
     public function setCcNo(?string $ccNo = null): self
     {

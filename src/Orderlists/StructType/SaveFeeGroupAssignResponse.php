@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveFeeGroupAssignResponse extends AbstractStructBase
      * The MidocoFeeGroupAssign
      * Meta information extracted from the WSDL
      * - ref: MidocoFeeGroupAssign
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeGroupAssign|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeGroupAssign|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeGroupAssign $MidocoFeeGroupAssign = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoFeeGroupAssign $MidocoFeeGroupAssign = null;
     /**
      * Constructor method for SaveFeeGroupAssignResponse
      * @uses SaveFeeGroupAssignResponse::setMidocoFeeGroupAssign()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign = null)
     {
         $this
             ->setMidocoFeeGroupAssign($midocoFeeGroupAssign);
     }
     /**
      * Get MidocoFeeGroupAssign value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeGroupAssign|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeGroupAssign|null
      */
-    public function getMidocoFeeGroupAssign(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeGroupAssign
+    public function getMidocoFeeGroupAssign(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoFeeGroupAssign
     {
         return $this->MidocoFeeGroupAssign;
     }
     /**
      * Set MidocoFeeGroupAssign value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SaveFeeGroupAssignResponse
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SaveFeeGroupAssignResponse
      */
-    public function setMidocoFeeGroupAssign(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign = null): self
+    public function setMidocoFeeGroupAssign(?\Pggns\MidocoApi\Orderlists\StructType\MidocoFeeGroupAssign $midocoFeeGroupAssign = null): self
     {
         $this->MidocoFeeGroupAssign = $midocoFeeGroupAssign;
         

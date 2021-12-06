@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class TransferListRequest extends AbstractStructBase
      * The MidocoTransferListCriteria
      * Meta information extracted from the WSDL
      * - ref: MidocoTransferListCriteria
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListCriteriaType|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListCriteriaType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListCriteriaType $MidocoTransferListCriteria = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListCriteriaType $MidocoTransferListCriteria = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class TransferListRequest extends AbstractStructBase
      * Constructor method for TransferListRequest
      * @uses TransferListRequest::setMidocoTransferListCriteria()
      * @uses TransferListRequest::setMaxReturned()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListCriteriaType $midocoTransferListCriteria
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListCriteriaType $midocoTransferListCriteria
      * @param int $maxReturned
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListCriteriaType $midocoTransferListCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListCriteriaType $midocoTransferListCriteria = null, ?int $maxReturned = null)
     {
         $this
             ->setMidocoTransferListCriteria($midocoTransferListCriteria)
@@ -42,18 +42,18 @@ class TransferListRequest extends AbstractStructBase
     }
     /**
      * Get MidocoTransferListCriteria value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListCriteriaType|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListCriteriaType|null
      */
-    public function getMidocoTransferListCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListCriteriaType
+    public function getMidocoTransferListCriteria(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListCriteriaType
     {
         return $this->MidocoTransferListCriteria;
     }
     /**
      * Set MidocoTransferListCriteria value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListCriteriaType $midocoTransferListCriteria
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferListRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListCriteriaType $midocoTransferListCriteria
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferListRequest
      */
-    public function setMidocoTransferListCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTransferListCriteriaType $midocoTransferListCriteria = null): self
+    public function setMidocoTransferListCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoTransferListCriteriaType $midocoTransferListCriteria = null): self
     {
         $this->MidocoTransferListCriteria = $midocoTransferListCriteria;
         
@@ -70,7 +70,7 @@ class TransferListRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\TransferListRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\TransferListRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

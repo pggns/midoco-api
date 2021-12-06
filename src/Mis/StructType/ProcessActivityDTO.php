@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ProcessActivityDTO extends AbstractStructBase
     /**
      * Set activity value
      * @param string $activity
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ProcessActivityDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ProcessActivityDTO
      */
     public function setActivity(?string $activity = null): self
     {
@@ -70,7 +70,7 @@ class ProcessActivityDTO extends AbstractStructBase
     /**
      * Set processName value
      * @param string $processName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ProcessActivityDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ProcessActivityDTO
      */
     public function setProcessName(?string $processName = null): self
     {

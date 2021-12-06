@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class DeleteAssignedPrintTypeRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DeleteAssignedPrintTypeRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\DeleteAssignedPrintTypeRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +70,7 @@ class DeleteAssignedPrintTypeRequest extends AbstractStructBase
     /**
      * Set printTypeId value
      * @param string $printTypeId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\DeleteAssignedPrintTypeRequest
+     * @return \Pggns\MidocoApi\Booking\StructType\DeleteAssignedPrintTypeRequest
      */
     public function setPrintTypeId(?string $printTypeId = null): self
     {

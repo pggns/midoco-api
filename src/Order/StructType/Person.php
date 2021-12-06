@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -84,17 +84,17 @@ class Person extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: AdditionalFlightPassengerInfos
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AdditionalFlightPassengerInfos|null
+     * @var \Pggns\MidocoApi\Order\StructType\AdditionalFlightPassengerInfos|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\AdditionalFlightPassengerInfos $AdditionalFlightPassengerInfos = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\AdditionalFlightPassengerInfos $AdditionalFlightPassengerInfos = null;
     /**
      * The AdditionalRailPassengerInfos
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: AdditionalRailPassengerInfos
-     * @var \Pggns\MidocoApi\Api\Order\StructType\AdditionalRailPassengerInfos|null
+     * @var \Pggns\MidocoApi\Order\StructType\AdditionalRailPassengerInfos|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\AdditionalRailPassengerInfos $AdditionalRailPassengerInfos = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\AdditionalRailPassengerInfos $AdditionalRailPassengerInfos = null;
     /**
      * The crs_salutation
      * Meta information extracted from the WSDL
@@ -169,8 +169,8 @@ class Person extends AbstractStructBase
      * @param string $birthday
      * @param int $age
      * @param float $person_price
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalFlightPassengerInfos $additionalFlightPassengerInfos
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalRailPassengerInfos $additionalRailPassengerInfos
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalFlightPassengerInfos $additionalFlightPassengerInfos
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalRailPassengerInfos $additionalRailPassengerInfos
      * @param string $crs_salutation
      * @param string $crs_name
      * @param string $nationality
@@ -178,7 +178,7 @@ class Person extends AbstractStructBase
      * @param string $crsSalutation
      * @param string $crsName
      */
-    public function __construct(int $position, ?string $salutation = null, ?string $title = null, ?string $forename = null, ?string $middleName = null, ?string $name = null, ?string $birthday = null, ?int $age = null, ?float $person_price = null, ?\Pggns\MidocoApi\Api\Order\StructType\AdditionalFlightPassengerInfos $additionalFlightPassengerInfos = null, ?\Pggns\MidocoApi\Api\Order\StructType\AdditionalRailPassengerInfos $additionalRailPassengerInfos = null, ?string $crs_salutation = null, ?string $crs_name = null, ?string $nationality = null, ?float $personPrice = null, ?string $crsSalutation = null, ?string $crsName = null)
+    public function __construct(int $position, ?string $salutation = null, ?string $title = null, ?string $forename = null, ?string $middleName = null, ?string $name = null, ?string $birthday = null, ?int $age = null, ?float $person_price = null, ?\Pggns\MidocoApi\Order\StructType\AdditionalFlightPassengerInfos $additionalFlightPassengerInfos = null, ?\Pggns\MidocoApi\Order\StructType\AdditionalRailPassengerInfos $additionalRailPassengerInfos = null, ?string $crs_salutation = null, ?string $crs_name = null, ?string $nationality = null, ?float $personPrice = null, ?string $crsSalutation = null, ?string $crsName = null)
     {
         $this
             ->setPosition($position)
@@ -210,7 +210,7 @@ class Person extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setPosition(int $position): self
     {
@@ -233,7 +233,7 @@ class Person extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -256,7 +256,7 @@ class Person extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setTitle(?string $title = null): self
     {
@@ -279,7 +279,7 @@ class Person extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setForename(?string $forename = null): self
     {
@@ -302,7 +302,7 @@ class Person extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -325,7 +325,7 @@ class Person extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setName(?string $name = null): self
     {
@@ -348,7 +348,7 @@ class Person extends AbstractStructBase
     /**
      * Set birthday value
      * @param string $birthday
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setBirthday(?string $birthday = null): self
     {
@@ -375,7 +375,7 @@ class Person extends AbstractStructBase
     /**
      * Set age value
      * @param int $age
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setAge(?int $age = null): self
     {
@@ -398,7 +398,7 @@ class Person extends AbstractStructBase
     /**
      * Set person_price value
      * @param float $person_price
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setPerson_price(?float $person_price = null): self
     {
@@ -412,18 +412,18 @@ class Person extends AbstractStructBase
     }
     /**
      * Get AdditionalFlightPassengerInfos value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdditionalFlightPassengerInfos|null
+     * @return \Pggns\MidocoApi\Order\StructType\AdditionalFlightPassengerInfos|null
      */
-    public function getAdditionalFlightPassengerInfos(): ?\Pggns\MidocoApi\Api\Order\StructType\AdditionalFlightPassengerInfos
+    public function getAdditionalFlightPassengerInfos(): ?\Pggns\MidocoApi\Order\StructType\AdditionalFlightPassengerInfos
     {
         return $this->AdditionalFlightPassengerInfos;
     }
     /**
      * Set AdditionalFlightPassengerInfos value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalFlightPassengerInfos $additionalFlightPassengerInfos
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalFlightPassengerInfos $additionalFlightPassengerInfos
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
-    public function setAdditionalFlightPassengerInfos(?\Pggns\MidocoApi\Api\Order\StructType\AdditionalFlightPassengerInfos $additionalFlightPassengerInfos = null): self
+    public function setAdditionalFlightPassengerInfos(?\Pggns\MidocoApi\Order\StructType\AdditionalFlightPassengerInfos $additionalFlightPassengerInfos = null): self
     {
         $this->AdditionalFlightPassengerInfos = $additionalFlightPassengerInfos;
         
@@ -431,18 +431,18 @@ class Person extends AbstractStructBase
     }
     /**
      * Get AdditionalRailPassengerInfos value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AdditionalRailPassengerInfos|null
+     * @return \Pggns\MidocoApi\Order\StructType\AdditionalRailPassengerInfos|null
      */
-    public function getAdditionalRailPassengerInfos(): ?\Pggns\MidocoApi\Api\Order\StructType\AdditionalRailPassengerInfos
+    public function getAdditionalRailPassengerInfos(): ?\Pggns\MidocoApi\Order\StructType\AdditionalRailPassengerInfos
     {
         return $this->AdditionalRailPassengerInfos;
     }
     /**
      * Set AdditionalRailPassengerInfos value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\AdditionalRailPassengerInfos $additionalRailPassengerInfos
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @param \Pggns\MidocoApi\Order\StructType\AdditionalRailPassengerInfos $additionalRailPassengerInfos
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
-    public function setAdditionalRailPassengerInfos(?\Pggns\MidocoApi\Api\Order\StructType\AdditionalRailPassengerInfos $additionalRailPassengerInfos = null): self
+    public function setAdditionalRailPassengerInfos(?\Pggns\MidocoApi\Order\StructType\AdditionalRailPassengerInfos $additionalRailPassengerInfos = null): self
     {
         $this->AdditionalRailPassengerInfos = $additionalRailPassengerInfos;
         
@@ -459,7 +459,7 @@ class Person extends AbstractStructBase
     /**
      * Set crs_salutation value
      * @param string $crs_salutation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setCrs_salutation(?string $crs_salutation = null): self
     {
@@ -482,7 +482,7 @@ class Person extends AbstractStructBase
     /**
      * Set crs_name value
      * @param string $crs_name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setCrs_name(?string $crs_name = null): self
     {
@@ -505,7 +505,7 @@ class Person extends AbstractStructBase
     /**
      * Set nationality value
      * @param string $nationality
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setNationality(?string $nationality = null): self
     {
@@ -528,7 +528,7 @@ class Person extends AbstractStructBase
     /**
      * Set personPrice value
      * @param float $personPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setPersonPrice(?float $personPrice = null): self
     {
@@ -551,7 +551,7 @@ class Person extends AbstractStructBase
     /**
      * Set crsSalutation value
      * @param string $crsSalutation
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setCrsSalutation(?string $crsSalutation = null): self
     {
@@ -574,7 +574,7 @@ class Person extends AbstractStructBase
     /**
      * Set crsName value
      * @param string $crsName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\Person
+     * @return \Pggns\MidocoApi\Order\StructType\Person
      */
     public function setCrsName(?string $crsName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,7 +19,7 @@ class GetCrossSellCarInfosResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: CrossSellingCarInfo
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo[]
+     * @var \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo[]
      */
     protected ?array $CrossSellingCarInfo = null;
     /**
@@ -31,7 +31,7 @@ class GetCrossSellCarInfosResponse extends AbstractStructBase
      * Constructor method for GetCrossSellCarInfosResponse
      * @uses GetCrossSellCarInfosResponse::setCrossSellingCarInfo()
      * @uses GetCrossSellCarInfosResponse::setExistsCar()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo[] $crossSellingCarInfo
+     * @param \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo[] $crossSellingCarInfo
      * @param bool $existsCar
      */
     public function __construct(?array $crossSellingCarInfo = null, ?bool $existsCar = null)
@@ -42,7 +42,7 @@ class GetCrossSellCarInfosResponse extends AbstractStructBase
     }
     /**
      * Get CrossSellingCarInfo value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo[]
+     * @return \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo[]
      */
     public function getCrossSellingCarInfo(): ?array
     {
@@ -63,12 +63,12 @@ class GetCrossSellCarInfosResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCrossSellCarInfosResponseCrossSellingCarInfoItem) {
             // validation for constraint: itemType
-            if (!$getCrossSellCarInfosResponseCrossSellingCarInfoItem instanceof \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo) {
+            if (!$getCrossSellCarInfosResponseCrossSellingCarInfoItem instanceof \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo) {
                 $invalidValues[] = is_object($getCrossSellCarInfosResponseCrossSellingCarInfoItem) ? get_class($getCrossSellCarInfosResponseCrossSellingCarInfoItem) : sprintf('%s(%s)', gettype($getCrossSellCarInfosResponseCrossSellingCarInfoItem), var_export($getCrossSellCarInfosResponseCrossSellingCarInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CrossSellingCarInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CrossSellingCarInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,8 +77,8 @@ class GetCrossSellCarInfosResponse extends AbstractStructBase
     /**
      * Set CrossSellingCarInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo[] $crossSellingCarInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCrossSellCarInfosResponse
+     * @param \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo[] $crossSellingCarInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetCrossSellCarInfosResponse
      */
     public function setCrossSellingCarInfo(?array $crossSellingCarInfo = null): self
     {
@@ -93,14 +93,14 @@ class GetCrossSellCarInfosResponse extends AbstractStructBase
     /**
      * Add item to CrossSellingCarInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCrossSellCarInfosResponse
+     * @param \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetCrossSellCarInfosResponse
      */
-    public function addToCrossSellingCarInfo(\Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo $item): self
+    public function addToCrossSellingCarInfo(\Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo) {
-            throw new InvalidArgumentException(sprintf('The CrossSellingCarInfo property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\CrossSellingCarInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo) {
+            throw new InvalidArgumentException(sprintf('The CrossSellingCarInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\CrossSellingCarInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CrossSellingCarInfo[] = $item;
         
@@ -117,7 +117,7 @@ class GetCrossSellCarInfosResponse extends AbstractStructBase
     /**
      * Set existsCar value
      * @param bool $existsCar
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetCrossSellCarInfosResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetCrossSellCarInfosResponse
      */
     public function setExistsCar(?bool $existsCar = null): self
     {

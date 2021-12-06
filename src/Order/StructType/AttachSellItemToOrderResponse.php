@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -53,7 +53,7 @@ class AttachSellItemToOrderResponse extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttachSellItemToOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\AttachSellItemToOrderResponse
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -76,7 +76,7 @@ class AttachSellItemToOrderResponse extends AbstractStructBase
     /**
      * Set deletedOldOrder value
      * @param bool $deletedOldOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AttachSellItemToOrderResponse
+     * @return \Pggns\MidocoApi\Order\StructType\AttachSellItemToOrderResponse
      */
     public function setDeletedOldOrder(?bool $deletedOldOrder = false): self
     {

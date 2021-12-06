@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -119,7 +119,7 @@ class CrmMidocoSettlLevelDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -142,7 +142,7 @@ class CrmMidocoSettlLevelDTO extends AbstractStructBase
     /**
      * Set bottomAmount value
      * @param float $bottomAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO
      */
     public function setBottomAmount(?float $bottomAmount = null): self
     {
@@ -165,7 +165,7 @@ class CrmMidocoSettlLevelDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -188,7 +188,7 @@ class CrmMidocoSettlLevelDTO extends AbstractStructBase
     /**
      * Set flatrateAmount value
      * @param float $flatrateAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO
      */
     public function setFlatrateAmount(?float $flatrateAmount = null): self
     {
@@ -211,7 +211,7 @@ class CrmMidocoSettlLevelDTO extends AbstractStructBase
     /**
      * Set isAmountProUnit value
      * @param bool $isAmountProUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO
      */
     public function setIsAmountProUnit(?bool $isAmountProUnit = null): self
     {
@@ -234,7 +234,7 @@ class CrmMidocoSettlLevelDTO extends AbstractStructBase
     /**
      * Set levelId value
      * @param int $levelId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO
      */
     public function setLevelId(?int $levelId = null): self
     {
@@ -257,7 +257,7 @@ class CrmMidocoSettlLevelDTO extends AbstractStructBase
     /**
      * Set maxValue value
      * @param float $maxValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO
      */
     public function setMaxValue(?float $maxValue = null): self
     {
@@ -280,7 +280,7 @@ class CrmMidocoSettlLevelDTO extends AbstractStructBase
     /**
      * Set minValue value
      * @param float $minValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO
      */
     public function setMinValue(?float $minValue = null): self
     {
@@ -303,7 +303,7 @@ class CrmMidocoSettlLevelDTO extends AbstractStructBase
     /**
      * Set percent value
      * @param float $percent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO
      */
     public function setPercent(?float $percent = null): self
     {
@@ -326,7 +326,7 @@ class CrmMidocoSettlLevelDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -349,7 +349,7 @@ class CrmMidocoSettlLevelDTO extends AbstractStructBase
     /**
      * Set topAmount value
      * @param float $topAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CrmMidocoSettlLevelDTO
+     * @return \Pggns\MidocoApi\Order\StructType\CrmMidocoSettlLevelDTO
      */
     public function setTopAmount(?float $topAmount = null): self
     {

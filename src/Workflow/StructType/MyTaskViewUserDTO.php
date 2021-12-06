@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MyTaskViewUserDTO extends AbstractStructBase
     /**
      * Set positionNo value
      * @param int $positionNo
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MyTaskViewUserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\MyTaskViewUserDTO
      */
     public function setPositionNo(?int $positionNo = null): self
     {
@@ -78,7 +78,7 @@ class MyTaskViewUserDTO extends AbstractStructBase
     /**
      * Set taskViewName value
      * @param string $taskViewName
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MyTaskViewUserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\MyTaskViewUserDTO
      */
     public function setTaskViewName(?string $taskViewName = null): self
     {
@@ -101,7 +101,7 @@ class MyTaskViewUserDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MyTaskViewUserDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\MyTaskViewUserDTO
      */
     public function setUserId(?int $userId = null): self
     {

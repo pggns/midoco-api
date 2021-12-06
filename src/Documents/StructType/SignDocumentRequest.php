@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class SignDocumentRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: SignatureLocation
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation[]
+     * @var \Pggns\MidocoApi\Documents\StructType\SignatureLocation[]
      */
     protected ?array $SignatureLocation = null;
     /**
@@ -50,7 +50,7 @@ class SignDocumentRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: AutoFillLocation
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\AutoFillLocation[]
+     * @var \Pggns\MidocoApi\Documents\StructType\AutoFillLocation[]
      */
     protected ?array $AutoFillLocation = null;
     /**
@@ -65,8 +65,8 @@ class SignDocumentRequest extends AbstractStructBase
      * @param string $signer
      * @param string $reason
      * @param string $signatureGraphics
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation[] $signatureLocation
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\AutoFillLocation[] $autoFillLocation
+     * @param \Pggns\MidocoApi\Documents\StructType\SignatureLocation[] $signatureLocation
+     * @param \Pggns\MidocoApi\Documents\StructType\AutoFillLocation[] $autoFillLocation
      */
     public function __construct(?string $documentToSign = null, ?string $signer = null, ?string $reason = null, ?string $signatureGraphics = null, ?array $signatureLocation = null, ?array $autoFillLocation = null)
     {
@@ -89,7 +89,7 @@ class SignDocumentRequest extends AbstractStructBase
     /**
      * Set documentToSign value
      * @param string $documentToSign
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SignDocumentRequest
      */
     public function setDocumentToSign(?string $documentToSign = null): self
     {
@@ -112,7 +112,7 @@ class SignDocumentRequest extends AbstractStructBase
     /**
      * Set signer value
      * @param string $signer
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SignDocumentRequest
      */
     public function setSigner(?string $signer = null): self
     {
@@ -135,7 +135,7 @@ class SignDocumentRequest extends AbstractStructBase
     /**
      * Set reason value
      * @param string $reason
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SignDocumentRequest
      */
     public function setReason(?string $reason = null): self
     {
@@ -158,7 +158,7 @@ class SignDocumentRequest extends AbstractStructBase
     /**
      * Set signatureGraphics value
      * @param string $signatureGraphics
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignDocumentRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\SignDocumentRequest
      */
     public function setSignatureGraphics(?string $signatureGraphics = null): self
     {
@@ -172,7 +172,7 @@ class SignDocumentRequest extends AbstractStructBase
     }
     /**
      * Get SignatureLocation value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation[]
+     * @return \Pggns\MidocoApi\Documents\StructType\SignatureLocation[]
      */
     public function getSignatureLocation(): ?array
     {
@@ -193,12 +193,12 @@ class SignDocumentRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $signDocumentRequestSignatureLocationItem) {
             // validation for constraint: itemType
-            if (!$signDocumentRequestSignatureLocationItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation) {
+            if (!$signDocumentRequestSignatureLocationItem instanceof \Pggns\MidocoApi\Documents\StructType\SignatureLocation) {
                 $invalidValues[] = is_object($signDocumentRequestSignatureLocationItem) ? get_class($signDocumentRequestSignatureLocationItem) : sprintf('%s(%s)', gettype($signDocumentRequestSignatureLocationItem), var_export($signDocumentRequestSignatureLocationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The SignatureLocation property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The SignatureLocation property can only contain items of type \Pggns\MidocoApi\Documents\StructType\SignatureLocation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -207,8 +207,8 @@ class SignDocumentRequest extends AbstractStructBase
     /**
      * Set SignatureLocation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation[] $signatureLocation
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignDocumentRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\SignatureLocation[] $signatureLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignDocumentRequest
      */
     public function setSignatureLocation(?array $signatureLocation = null): self
     {
@@ -223,14 +223,14 @@ class SignDocumentRequest extends AbstractStructBase
     /**
      * Add item to SignatureLocation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignDocumentRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\SignatureLocation $item
+     * @return \Pggns\MidocoApi\Documents\StructType\SignDocumentRequest
      */
-    public function addToSignatureLocation(\Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation $item): self
+    public function addToSignatureLocation(\Pggns\MidocoApi\Documents\StructType\SignatureLocation $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation) {
-            throw new InvalidArgumentException(sprintf('The SignatureLocation property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\SignatureLocation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\SignatureLocation) {
+            throw new InvalidArgumentException(sprintf('The SignatureLocation property can only contain items of type \Pggns\MidocoApi\Documents\StructType\SignatureLocation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->SignatureLocation[] = $item;
         
@@ -238,7 +238,7 @@ class SignDocumentRequest extends AbstractStructBase
     }
     /**
      * Get AutoFillLocation value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\AutoFillLocation[]
+     * @return \Pggns\MidocoApi\Documents\StructType\AutoFillLocation[]
      */
     public function getAutoFillLocation(): ?array
     {
@@ -259,12 +259,12 @@ class SignDocumentRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $signDocumentRequestAutoFillLocationItem) {
             // validation for constraint: itemType
-            if (!$signDocumentRequestAutoFillLocationItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\AutoFillLocation) {
+            if (!$signDocumentRequestAutoFillLocationItem instanceof \Pggns\MidocoApi\Documents\StructType\AutoFillLocation) {
                 $invalidValues[] = is_object($signDocumentRequestAutoFillLocationItem) ? get_class($signDocumentRequestAutoFillLocationItem) : sprintf('%s(%s)', gettype($signDocumentRequestAutoFillLocationItem), var_export($signDocumentRequestAutoFillLocationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AutoFillLocation property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\AutoFillLocation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AutoFillLocation property can only contain items of type \Pggns\MidocoApi\Documents\StructType\AutoFillLocation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -273,8 +273,8 @@ class SignDocumentRequest extends AbstractStructBase
     /**
      * Set AutoFillLocation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\AutoFillLocation[] $autoFillLocation
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignDocumentRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\AutoFillLocation[] $autoFillLocation
+     * @return \Pggns\MidocoApi\Documents\StructType\SignDocumentRequest
      */
     public function setAutoFillLocation(?array $autoFillLocation = null): self
     {
@@ -289,14 +289,14 @@ class SignDocumentRequest extends AbstractStructBase
     /**
      * Add item to AutoFillLocation value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\AutoFillLocation $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\SignDocumentRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\AutoFillLocation $item
+     * @return \Pggns\MidocoApi\Documents\StructType\SignDocumentRequest
      */
-    public function addToAutoFillLocation(\Pggns\MidocoApi\Api\Documents\StructType\AutoFillLocation $item): self
+    public function addToAutoFillLocation(\Pggns\MidocoApi\Documents\StructType\AutoFillLocation $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\AutoFillLocation) {
-            throw new InvalidArgumentException(sprintf('The AutoFillLocation property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\AutoFillLocation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\AutoFillLocation) {
+            throw new InvalidArgumentException(sprintf('The AutoFillLocation property can only contain items of type \Pggns\MidocoApi\Documents\StructType\AutoFillLocation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AutoFillLocation[] = $item;
         

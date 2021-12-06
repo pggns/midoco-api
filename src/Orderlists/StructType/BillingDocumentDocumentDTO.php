@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set billingId value
      * @param int $billingId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setBillingId(?int $billingId = null): self
     {
@@ -174,7 +174,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -197,7 +197,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -220,7 +220,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set documentDate value
      * @param string $documentDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setDocumentDate(?string $documentDate = null): self
     {
@@ -243,7 +243,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set documentExportDate value
      * @param string $documentExportDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setDocumentExportDate(?string $documentExportDate = null): self
     {
@@ -266,7 +266,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -289,7 +289,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set documentName value
      * @param string $documentName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setDocumentName(?string $documentName = null): self
     {
@@ -312,7 +312,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -335,7 +335,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set documentSize value
      * @param int $documentSize
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setDocumentSize(?int $documentSize = null): self
     {
@@ -358,7 +358,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -381,7 +381,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set isDocumentExported value
      * @param bool $isDocumentExported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setIsDocumentExported(?bool $isDocumentExported = null): self
     {
@@ -404,7 +404,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set isManual value
      * @param bool $isManual
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setIsManual(?bool $isManual = null): self
     {
@@ -427,7 +427,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -450,7 +450,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set storeUntil value
      * @param string $storeUntil
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setStoreUntil(?string $storeUntil = null): self
     {
@@ -473,7 +473,7 @@ class BillingDocumentDocumentDTO extends AbstractStructBase
     /**
      * Set uploadDate value
      * @param string $uploadDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\BillingDocumentDocumentDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDocumentDocumentDTO
      */
     public function setUploadDate(?string $uploadDate = null): self
     {

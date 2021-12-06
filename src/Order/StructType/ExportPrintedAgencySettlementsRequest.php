@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class ExportPrintedAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set exportType value
      * @param string $exportType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportPrintedAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportPrintedAgencySettlementsRequest
      */
     public function setExportType(?string $exportType = null): self
     {
@@ -94,7 +94,7 @@ class ExportPrintedAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportPrintedAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportPrintedAgencySettlementsRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -117,7 +117,7 @@ class ExportPrintedAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set creationDateStart value
      * @param string $creationDateStart
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportPrintedAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportPrintedAgencySettlementsRequest
      */
     public function setCreationDateStart(?string $creationDateStart = null): self
     {
@@ -140,7 +140,7 @@ class ExportPrintedAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set creationDateEnd value
      * @param string $creationDateEnd
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportPrintedAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportPrintedAgencySettlementsRequest
      */
     public function setCreationDateEnd(?string $creationDateEnd = null): self
     {
@@ -163,7 +163,7 @@ class ExportPrintedAgencySettlementsRequest extends AbstractStructBase
     /**
      * Set doMail value
      * @param bool $doMail
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ExportPrintedAgencySettlementsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ExportPrintedAgencySettlementsRequest
      */
     public function setDoMail(?bool $doMail = null): self
     {

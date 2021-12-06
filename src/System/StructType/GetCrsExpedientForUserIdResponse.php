@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetCrsExpedientForUserIdResponse extends AbstractStructBase
     /**
      * Set expedientId value
      * @param string $expedientId
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetCrsExpedientForUserIdResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetCrsExpedientForUserIdResponse
      */
     public function setExpedientId(?string $expedientId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class SendInvoiceByEMailRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SendInvoiceByEMailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SendInvoiceByEMailRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -72,7 +72,7 @@ class SendInvoiceByEMailRequest extends AbstractStructBase
     /**
      * Set mailAddress value
      * @param string $mailAddress
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SendInvoiceByEMailRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SendInvoiceByEMailRequest
      */
     public function setMailAddress(?string $mailAddress = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class GetSupplierReportForMediatorRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetSupplierReportForMediatorRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetSupplierReportForMediatorRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -86,7 +86,7 @@ class GetSupplierReportForMediatorRequest extends AbstractStructBase
     /**
      * Set mediatorTypeId value
      * @param string $mediatorTypeId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetSupplierReportForMediatorRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetSupplierReportForMediatorRequest
      */
     public function setMediatorTypeId(?string $mediatorTypeId = null): self
     {
@@ -109,7 +109,7 @@ class GetSupplierReportForMediatorRequest extends AbstractStructBase
     /**
      * Set month value
      * @param int $month
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetSupplierReportForMediatorRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetSupplierReportForMediatorRequest
      */
     public function setMonth(?int $month = null): self
     {
@@ -132,7 +132,7 @@ class GetSupplierReportForMediatorRequest extends AbstractStructBase
     /**
      * Set year value
      * @param int $year
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetSupplierReportForMediatorRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetSupplierReportForMediatorRequest
      */
     public function setYear(?int $year = null): self
     {

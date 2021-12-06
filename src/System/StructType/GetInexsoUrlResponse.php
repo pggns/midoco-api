@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class GetInexsoUrlResponse extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetInexsoUrlResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetInexsoUrlResponse
      */
     public function setUrl(?string $url = null): self
     {

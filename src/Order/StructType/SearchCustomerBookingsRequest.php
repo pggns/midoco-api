@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -125,7 +125,7 @@ class SearchCustomerBookingsRequest extends AbstractStructBase
      * Set PrintTypeId value
      * @throws InvalidArgumentException
      * @param string[] $printTypeId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchCustomerBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchCustomerBookingsRequest
      */
     public function setPrintTypeId(?array $printTypeId = null): self
     {
@@ -141,7 +141,7 @@ class SearchCustomerBookingsRequest extends AbstractStructBase
      * Add item to PrintTypeId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchCustomerBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchCustomerBookingsRequest
      */
     public function addToPrintTypeId(string $item): self
     {
@@ -164,7 +164,7 @@ class SearchCustomerBookingsRequest extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchCustomerBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchCustomerBookingsRequest
      */
     public function setName(?string $name = null): self
     {
@@ -187,7 +187,7 @@ class SearchCustomerBookingsRequest extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchCustomerBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchCustomerBookingsRequest
      */
     public function setForename(?string $forename = null): self
     {
@@ -210,7 +210,7 @@ class SearchCustomerBookingsRequest extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchCustomerBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchCustomerBookingsRequest
      */
     public function setTravelDate(?string $travelDate = null): self
     {
@@ -233,7 +233,7 @@ class SearchCustomerBookingsRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchCustomerBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchCustomerBookingsRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -256,7 +256,7 @@ class SearchCustomerBookingsRequest extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchCustomerBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchCustomerBookingsRequest
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -279,7 +279,7 @@ class SearchCustomerBookingsRequest extends AbstractStructBase
     /**
      * Set travelDocumentsPrinted value
      * @param bool $travelDocumentsPrinted
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchCustomerBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchCustomerBookingsRequest
      */
     public function setTravelDocumentsPrinted(?bool $travelDocumentsPrinted = null): self
     {
@@ -302,7 +302,7 @@ class SearchCustomerBookingsRequest extends AbstractStructBase
     /**
      * Set airportPayment value
      * @param bool $airportPayment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchCustomerBookingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SearchCustomerBookingsRequest
      */
     public function setAirportPayment(?bool $airportPayment = null): self
     {

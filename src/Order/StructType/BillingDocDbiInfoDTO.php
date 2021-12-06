@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class BillingDocDbiInfoDTO extends AbstractStructBase
     /**
      * Set dbiInfo value
      * @param string $dbiInfo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocDbiInfoDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocDbiInfoDTO
      */
     public function setDbiInfo(?string $dbiInfo = null): self
     {
@@ -94,7 +94,7 @@ class BillingDocDbiInfoDTO extends AbstractStructBase
     /**
      * Set dbiKey value
      * @param string $dbiKey
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocDbiInfoDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocDbiInfoDTO
      */
     public function setDbiKey(?string $dbiKey = null): self
     {
@@ -117,7 +117,7 @@ class BillingDocDbiInfoDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocDbiInfoDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocDbiInfoDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -140,7 +140,7 @@ class BillingDocDbiInfoDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocDbiInfoDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocDbiInfoDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -163,7 +163,7 @@ class BillingDocDbiInfoDTO extends AbstractStructBase
     /**
      * Set passengerAssignment value
      * @param int $passengerAssignment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\BillingDocDbiInfoDTO
+     * @return \Pggns\MidocoApi\Order\StructType\BillingDocDbiInfoDTO
      */
     public function setPassengerAssignment(?int $passengerAssignment = null): self
     {

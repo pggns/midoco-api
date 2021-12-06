@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoTravelItemInfoType extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelItemInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelItemInfoType
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -86,7 +86,7 @@ class MidocoTravelItemInfoType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelItemInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelItemInfoType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -109,7 +109,7 @@ class MidocoTravelItemInfoType extends AbstractStructBase
     /**
      * Set travelType value
      * @param string $travelType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelItemInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelItemInfoType
      */
     public function setTravelType(?string $travelType = null): self
     {
@@ -132,7 +132,7 @@ class MidocoTravelItemInfoType extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTravelItemInfoType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelItemInfoType
      */
     public function setStartTravel(?string $startTravel = null): self
     {

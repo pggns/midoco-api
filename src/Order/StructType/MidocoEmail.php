@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -49,7 +49,7 @@ class MidocoEmail extends AbstractStructBase
     /**
      * Set fullName value
      * @param string $fullName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoEmail
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoEmail
      */
     public function setFullName(?string $fullName = null): self
     {
@@ -72,7 +72,7 @@ class MidocoEmail extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoEmail
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoEmail
      */
     public function setEmail(?string $email = null): self
     {

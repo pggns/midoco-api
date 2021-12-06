@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class SqlMappingInfoType extends AbstractStructBase
     /**
      * Set sqlTypeId value
      * @param int $sqlTypeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SqlMappingInfoType
+     * @return \Pggns\MidocoApi\Mis\StructType\SqlMappingInfoType
      */
     public function setSqlTypeId(?int $sqlTypeId = null): self
     {
@@ -70,7 +70,7 @@ class SqlMappingInfoType extends AbstractStructBase
     /**
      * Set sqlTypeName value
      * @param string $sqlTypeName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\SqlMappingInfoType
+     * @return \Pggns\MidocoApi\Mis\StructType\SqlMappingInfoType
      */
     public function setSqlTypeName(?string $sqlTypeName = null): self
     {

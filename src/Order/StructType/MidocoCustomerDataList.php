@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class MidocoCustomerDataList extends AbstractStructBase
      * The MidocoCustomerData
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerData
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerData|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoCustomerData|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerData $MidocoCustomerData = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoCustomerData $MidocoCustomerData = null;
     /**
      * Constructor method for MidocoCustomerDataList
      * @uses MidocoCustomerDataList::setMidocoCustomerData()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerData $midocoCustomerData
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCustomerData $midocoCustomerData
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerData $midocoCustomerData = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoCustomerData $midocoCustomerData = null)
     {
         $this
             ->setMidocoCustomerData($midocoCustomerData);
     }
     /**
      * Get MidocoCustomerData value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerData|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerData|null
      */
-    public function getMidocoCustomerData(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerData
+    public function getMidocoCustomerData(): ?\Pggns\MidocoApi\Order\StructType\MidocoCustomerData
     {
         return $this->MidocoCustomerData;
     }
     /**
      * Set MidocoCustomerData value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerData $midocoCustomerData
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerDataList
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCustomerData $midocoCustomerData
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCustomerDataList
      */
-    public function setMidocoCustomerData(?\Pggns\MidocoApi\Api\Order\StructType\MidocoCustomerData $midocoCustomerData = null): self
+    public function setMidocoCustomerData(?\Pggns\MidocoApi\Order\StructType\MidocoCustomerData $midocoCustomerData = null): self
     {
         $this->MidocoCustomerData = $midocoCustomerData;
         

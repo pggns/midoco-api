@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -207,7 +207,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -230,7 +230,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set commissionAmount value
      * @param float $commissionAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setCommissionAmount(?float $commissionAmount = null): self
     {
@@ -253,7 +253,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set commissionBaseAmount value
      * @param float $commissionBaseAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setCommissionBaseAmount(?float $commissionBaseAmount = null): self
     {
@@ -276,7 +276,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set commissionInsuranceAmount value
      * @param float $commissionInsuranceAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setCommissionInsuranceAmount(?float $commissionInsuranceAmount = null): self
     {
@@ -299,7 +299,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set commissionVatAmount value
      * @param float $commissionVatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setCommissionVatAmount(?float $commissionVatAmount = null): self
     {
@@ -322,7 +322,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -345,7 +345,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set exported value
      * @param bool $exported
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setExported(?bool $exported = null): self
     {
@@ -368,7 +368,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set includedVatAmount value
      * @param float $includedVatAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setIncludedVatAmount(?float $includedVatAmount = null): self
     {
@@ -391,7 +391,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set invoiceAmount value
      * @param float $invoiceAmount
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setInvoiceAmount(?float $invoiceAmount = null): self
     {
@@ -414,7 +414,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set invoicingType value
      * @param string $invoicingType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setInvoicingType(?string $invoicingType = null): self
     {
@@ -437,7 +437,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -460,7 +460,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set markedByUserId value
      * @param int $markedByUserId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setMarkedByUserId(?int $markedByUserId = null): self
     {
@@ -483,7 +483,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set markedDate value
      * @param string $markedDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setMarkedDate(?string $markedDate = null): self
     {
@@ -506,7 +506,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set markedForExport value
      * @param bool $markedForExport
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setMarkedForExport(?bool $markedForExport = null): self
     {
@@ -529,7 +529,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -552,7 +552,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set orderVersion value
      * @param int $orderVersion
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setOrderVersion(?int $orderVersion = null): self
     {
@@ -575,7 +575,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -598,7 +598,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set settlementPositionId value
      * @param int $settlementPositionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setSettlementPositionId(?int $settlementPositionId = null): self
     {
@@ -621,7 +621,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setTotalPrice(?float $totalPrice = null): self
     {
@@ -644,7 +644,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {
@@ -667,7 +667,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set voidInvoiceId value
      * @param int $voidInvoiceId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setVoidInvoiceId(?int $voidInvoiceId = null): self
     {
@@ -690,7 +690,7 @@ class AgencySettlementPositionDTO extends AbstractStructBase
     /**
      * Set voidPositionId value
      * @param int $voidPositionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AgencySettlementPositionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AgencySettlementPositionDTO
      */
     public function setVoidPositionId(?int $voidPositionId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -24,7 +24,7 @@ class GetAssignedRemarksDestinationResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPrintDescription
-     * @var \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO[]
+     * @var \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO[]
      */
     protected ?array $MidocoPrintDescription = null;
     /**
@@ -32,7 +32,7 @@ class GetAssignedRemarksDestinationResponse extends AbstractStructBase
      * @uses GetAssignedRemarksDestinationResponse::setUnitName()
      * @uses GetAssignedRemarksDestinationResponse::setMidocoPrintDescription()
      * @param string $unitName
-     * @param \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO[] $midocoPrintDescription
+     * @param \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO[] $midocoPrintDescription
      */
     public function __construct(?string $unitName = null, ?array $midocoPrintDescription = null)
     {
@@ -51,7 +51,7 @@ class GetAssignedRemarksDestinationResponse extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAssignedRemarksDestinationResponse
+     * @return \Pggns\MidocoApi\System\StructType\GetAssignedRemarksDestinationResponse
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -65,7 +65,7 @@ class GetAssignedRemarksDestinationResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPrintDescription value
-     * @return \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO[]
+     * @return \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO[]
      */
     public function getMidocoPrintDescription(): ?array
     {
@@ -86,12 +86,12 @@ class GetAssignedRemarksDestinationResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAssignedRemarksDestinationResponseMidocoPrintDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getAssignedRemarksDestinationResponseMidocoPrintDescriptionItem instanceof \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO) {
+            if (!$getAssignedRemarksDestinationResponseMidocoPrintDescriptionItem instanceof \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO) {
                 $invalidValues[] = is_object($getAssignedRemarksDestinationResponseMidocoPrintDescriptionItem) ? get_class($getAssignedRemarksDestinationResponseMidocoPrintDescriptionItem) : sprintf('%s(%s)', gettype($getAssignedRemarksDestinationResponseMidocoPrintDescriptionItem), var_export($getAssignedRemarksDestinationResponseMidocoPrintDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -100,8 +100,8 @@ class GetAssignedRemarksDestinationResponse extends AbstractStructBase
     /**
      * Set MidocoPrintDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO[] $midocoPrintDescription
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAssignedRemarksDestinationResponse
+     * @param \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO[] $midocoPrintDescription
+     * @return \Pggns\MidocoApi\System\StructType\GetAssignedRemarksDestinationResponse
      */
     public function setMidocoPrintDescription(?array $midocoPrintDescription = null): self
     {
@@ -116,14 +116,14 @@ class GetAssignedRemarksDestinationResponse extends AbstractStructBase
     /**
      * Add item to MidocoPrintDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO $item
-     * @return \Pggns\MidocoApi\Api\System\StructType\GetAssignedRemarksDestinationResponse
+     * @param \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO $item
+     * @return \Pggns\MidocoApi\System\StructType\GetAssignedRemarksDestinationResponse
      */
-    public function addToMidocoPrintDescription(\Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO $item): self
+    public function addToMidocoPrintDescription(\Pggns\MidocoApi\System\StructType\PrintDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\Api\System\StructType\PrintDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\System\StructType\PrintDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintDescription[] = $item;
         

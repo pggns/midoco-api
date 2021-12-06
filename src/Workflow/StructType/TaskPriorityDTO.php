@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class TaskPriorityDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -70,7 +70,7 @@ class TaskPriorityDTO extends AbstractStructBase
     /**
      * Set levelId value
      * @param int $levelId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\TaskPriorityDTO
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskPriorityDTO
      */
     public function setLevelId(?int $levelId = null): self
     {

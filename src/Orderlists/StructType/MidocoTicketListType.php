@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -191,7 +191,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set ticketNo value
      * @param string $ticketNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setTicketNo(?string $ticketNo = null): self
     {
@@ -214,7 +214,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set ticketType value
      * @param string $ticketType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setTicketType(?string $ticketType = null): self
     {
@@ -237,7 +237,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set filekey value
      * @param string $filekey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setFilekey(?string $filekey = null): self
     {
@@ -260,7 +260,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set issueDate value
      * @param string $issueDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setIssueDate(?string $issueDate = null): self
     {
@@ -283,7 +283,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set ticketValidator value
      * @param string $ticketValidator
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setTicketValidator(?string $ticketValidator = null): self
     {
@@ -306,7 +306,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set farePrice value
      * @param float $farePrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setFarePrice(?float $farePrice = null): self
     {
@@ -329,7 +329,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set tax value
      * @param float $tax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setTax(?float $tax = null): self
     {
@@ -352,7 +352,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set ticketPrice value
      * @param float $ticketPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setTicketPrice(?float $ticketPrice = null): self
     {
@@ -375,7 +375,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set ticketInkasso value
      * @param string $ticketInkasso
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setTicketInkasso(?string $ticketInkasso = null): self
     {
@@ -398,7 +398,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set fareType value
      * @param string $fareType
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setFareType(?string $fareType = null): self
     {
@@ -421,7 +421,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -444,7 +444,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set hiddenFee value
      * @param float $hiddenFee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setHiddenFee(?float $hiddenFee = null): self
     {
@@ -467,7 +467,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set explicitFee value
      * @param float $explicitFee
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setExplicitFee(?float $explicitFee = null): self
     {
@@ -490,7 +490,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -513,7 +513,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set route value
      * @param string $route
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setRoute(?string $route = null): self
     {
@@ -536,7 +536,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -559,7 +559,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set flightNo value
      * @param string $flightNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setFlightNo(?string $flightNo = null): self
     {
@@ -582,7 +582,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -605,7 +605,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set bookingDate value
      * @param string $bookingDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setBookingDate(?string $bookingDate = null): self
     {
@@ -628,7 +628,7 @@ class MidocoTicketListType extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoTicketListType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
      */
     public function setStartDate(?string $startDate = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class SaveOrderMarginInfoRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderMarginInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderMarginInfoRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -78,7 +78,7 @@ class SaveOrderMarginInfoRequest extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderMarginInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderMarginInfoRequest
      */
     public function setComment(?string $comment = null): self
     {
@@ -101,7 +101,7 @@ class SaveOrderMarginInfoRequest extends AbstractStructBase
     /**
      * Set smallerMarginAllowed value
      * @param bool $smallerMarginAllowed
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOrderMarginInfoRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderMarginInfoRequest
      */
     public function setSmallerMarginAllowed(?bool $smallerMarginAllowed = null): self
     {

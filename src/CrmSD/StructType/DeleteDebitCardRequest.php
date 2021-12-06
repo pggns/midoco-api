@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class DeleteDebitCardRequest extends AbstractStructBase
      * The MidocoCrmDebitCard
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmDebitCard
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard $MidocoCrmDebitCard = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard $MidocoCrmDebitCard = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +29,10 @@ class DeleteDebitCardRequest extends AbstractStructBase
      * Constructor method for DeleteDebitCardRequest
      * @uses DeleteDebitCardRequest::setMidocoCrmDebitCard()
      * @uses DeleteDebitCardRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoCrmDebitCard($midocoCrmDebitCard)
@@ -40,18 +40,18 @@ class DeleteDebitCardRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmDebitCard value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard|null
      */
-    public function getMidocoCrmDebitCard(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard
+    public function getMidocoCrmDebitCard(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard
     {
         return $this->MidocoCrmDebitCard;
     }
     /**
      * Set MidocoCrmDebitCard value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDebitCardRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteDebitCardRequest
      */
-    public function setMidocoCrmDebitCard(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null): self
+    public function setMidocoCrmDebitCard(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null): self
     {
         $this->MidocoCrmDebitCard = $midocoCrmDebitCard;
         
@@ -68,7 +68,7 @@ class DeleteDebitCardRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteDebitCardRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteDebitCardRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

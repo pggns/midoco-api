@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class MidocoRemark extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemark
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -150,7 +150,7 @@ class MidocoRemark extends AbstractStructBase
     /**
      * Set positionNo value
      * @param int $positionNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemark
      */
     public function setPositionNo(?int $positionNo = null): self
     {
@@ -173,7 +173,7 @@ class MidocoRemark extends AbstractStructBase
     /**
      * Set printAllowed value
      * @param bool $printAllowed
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemark
      */
     public function setPrintAllowed(?bool $printAllowed = null): self
     {
@@ -196,7 +196,7 @@ class MidocoRemark extends AbstractStructBase
     /**
      * Set isAutoPrint value
      * @param bool $isAutoPrint
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemark
      */
     public function setIsAutoPrint(?bool $isAutoPrint = null): self
     {
@@ -219,7 +219,7 @@ class MidocoRemark extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemark
      */
     public function setRemark(?string $remark = null): self
     {
@@ -242,7 +242,7 @@ class MidocoRemark extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemark
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -265,7 +265,7 @@ class MidocoRemark extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemark
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -288,7 +288,7 @@ class MidocoRemark extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemark
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -311,7 +311,7 @@ class MidocoRemark extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemark
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -334,7 +334,7 @@ class MidocoRemark extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemark
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -357,7 +357,7 @@ class MidocoRemark extends AbstractStructBase
     /**
      * Set servicePosition value
      * @param int $servicePosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemark
      */
     public function setServicePosition(?int $servicePosition = null): self
     {
@@ -380,7 +380,7 @@ class MidocoRemark extends AbstractStructBase
     /**
      * Set printMarker value
      * @param string $printMarker
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoRemark
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemark
      */
     public function setPrintMarker(?string $printMarker = null): self
     {

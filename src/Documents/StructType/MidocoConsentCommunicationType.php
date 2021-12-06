@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoConsentCommunicationType extends AbstractStructBase
     /**
      * Set consentId value
      * @param string $consentId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoConsentCommunicationType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoConsentCommunicationType
      */
     public function setConsentId(?string $consentId = null): self
     {
@@ -86,7 +86,7 @@ class MidocoConsentCommunicationType extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoConsentCommunicationType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoConsentCommunicationType
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -109,7 +109,7 @@ class MidocoConsentCommunicationType extends AbstractStructBase
     /**
      * Set mailingProhibted value
      * @param bool $mailingProhibted
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoConsentCommunicationType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoConsentCommunicationType
      */
     public function setMailingProhibted(?bool $mailingProhibted = null): self
     {
@@ -132,7 +132,7 @@ class MidocoConsentCommunicationType extends AbstractStructBase
     /**
      * Set mailingStatus value
      * @param string $mailingStatus
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoConsentCommunicationType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoConsentCommunicationType
      */
     public function setMailingStatus(?string $mailingStatus = null): self
     {

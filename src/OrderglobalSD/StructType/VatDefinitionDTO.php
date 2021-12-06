@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class VatDefinitionDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\VatDefinitionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\VatDefinitionDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -134,7 +134,7 @@ class VatDefinitionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\VatDefinitionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\VatDefinitionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -157,7 +157,7 @@ class VatDefinitionDTO extends AbstractStructBase
     /**
      * Set factor value
      * @param float $factor
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\VatDefinitionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\VatDefinitionDTO
      */
     public function setFactor(?float $factor = null): self
     {
@@ -180,7 +180,7 @@ class VatDefinitionDTO extends AbstractStructBase
     /**
      * Set isInputVat value
      * @param bool $isInputVat
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\VatDefinitionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\VatDefinitionDTO
      */
     public function setIsInputVat(?bool $isInputVat = null): self
     {
@@ -203,7 +203,7 @@ class VatDefinitionDTO extends AbstractStructBase
     /**
      * Set percent value
      * @param float $percent
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\VatDefinitionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\VatDefinitionDTO
      */
     public function setPercent(?float $percent = null): self
     {
@@ -226,7 +226,7 @@ class VatDefinitionDTO extends AbstractStructBase
     /**
      * Set reverseChargePercent value
      * @param float $reverseChargePercent
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\VatDefinitionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\VatDefinitionDTO
      */
     public function setReverseChargePercent(?float $reverseChargePercent = null): self
     {
@@ -249,7 +249,7 @@ class VatDefinitionDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\VatDefinitionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\VatDefinitionDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -272,7 +272,7 @@ class VatDefinitionDTO extends AbstractStructBase
     /**
      * Set validUntil value
      * @param string $validUntil
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\VatDefinitionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\VatDefinitionDTO
      */
     public function setValidUntil(?string $validUntil = null): self
     {
@@ -295,7 +295,7 @@ class VatDefinitionDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\VatDefinitionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\VatDefinitionDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -318,7 +318,7 @@ class VatDefinitionDTO extends AbstractStructBase
     /**
      * Set voidInputVat value
      * @param bool $voidInputVat
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\VatDefinitionDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\VatDefinitionDTO
      */
     public function setVoidInputVat(?bool $voidInputVat = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -575,7 +575,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set addressId value
      * @param int $addressId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setAddressId(?int $addressId = null): self
     {
@@ -598,7 +598,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set addresseeLine1 value
      * @param string $addresseeLine1
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setAddresseeLine1(?string $addresseeLine1 = null): self
     {
@@ -621,7 +621,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set addresseeLine2 value
      * @param string $addresseeLine2
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setAddresseeLine2(?string $addresseeLine2 = null): self
     {
@@ -644,7 +644,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set agencyNo value
      * @param string $agencyNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setAgencyNo(?string $agencyNo = null): self
     {
@@ -667,7 +667,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set birthName value
      * @param string $birthName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setBirthName(?string $birthName = null): self
     {
@@ -690,7 +690,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set birthday value
      * @param string $birthday
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setBirthday(?string $birthday = null): self
     {
@@ -713,7 +713,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set birthdayDay value
      * @param int $birthdayDay
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setBirthdayDay(?int $birthdayDay = null): self
     {
@@ -736,7 +736,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set birthdayMonth value
      * @param int $birthdayMonth
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setBirthdayMonth(?int $birthdayMonth = null): self
     {
@@ -759,7 +759,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set birthdayYear value
      * @param int $birthdayYear
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setBirthdayYear(?int $birthdayYear = null): self
     {
@@ -782,7 +782,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set changingUser value
      * @param int $changingUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setChangingUser(?int $changingUser = null): self
     {
@@ -805,7 +805,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -828,7 +828,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set contactPerson value
      * @param string $contactPerson
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setContactPerson(?string $contactPerson = null): self
     {
@@ -851,7 +851,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -874,7 +874,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -897,7 +897,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set creatingUser value
      * @param int $creatingUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setCreatingUser(?int $creatingUser = null): self
     {
@@ -920,7 +920,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -943,7 +943,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set dateChanged value
      * @param string $dateChanged
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setDateChanged(?string $dateChanged = null): self
     {
@@ -966,7 +966,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set dateCreated value
      * @param string $dateCreated
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setDateCreated(?string $dateCreated = null): self
     {
@@ -989,7 +989,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set debitor value
      * @param string $debitor
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setDebitor(?string $debitor = null): self
     {
@@ -1012,7 +1012,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set department value
      * @param string $department
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setDepartment(?string $department = null): self
     {
@@ -1035,7 +1035,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -1058,7 +1058,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set endorsement value
      * @param string $endorsement
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setEndorsement(?string $endorsement = null): self
     {
@@ -1081,7 +1081,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set fax value
      * @param string $fax
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setFax(?string $fax = null): self
     {
@@ -1104,7 +1104,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set firstTravelDate value
      * @param string $firstTravelDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setFirstTravelDate(?string $firstTravelDate = null): self
     {
@@ -1127,7 +1127,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -1150,7 +1150,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set formalAddressing value
      * @param bool $formalAddressing
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setFormalAddressing(?bool $formalAddressing = null): self
     {
@@ -1173,7 +1173,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set hasSpouse value
      * @param bool $hasSpouse
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setHasSpouse(?bool $hasSpouse = null): self
     {
@@ -1196,7 +1196,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set includeInSearch value
      * @param bool $includeInSearch
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setIncludeInSearch(?bool $includeInSearch = null): self
     {
@@ -1219,7 +1219,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set info value
      * @param string $info
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setInfo(?string $info = null): self
     {
@@ -1242,7 +1242,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set isSpecialCustomer value
      * @param bool $isSpecialCustomer
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setIsSpecialCustomer(?bool $isSpecialCustomer = null): self
     {
@@ -1265,7 +1265,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set jobFunction value
      * @param string $jobFunction
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setJobFunction(?string $jobFunction = null): self
     {
@@ -1288,7 +1288,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setLanguage(?string $language = null): self
     {
@@ -1311,7 +1311,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set lastBookingUser value
      * @param int $lastBookingUser
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setLastBookingUser(?int $lastBookingUser = null): self
     {
@@ -1334,7 +1334,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set lastEndTravelDate value
      * @param string $lastEndTravelDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setLastEndTravelDate(?string $lastEndTravelDate = null): self
     {
@@ -1357,7 +1357,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set lastTravelDate value
      * @param string $lastTravelDate
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setLastTravelDate(?string $lastTravelDate = null): self
     {
@@ -1380,7 +1380,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set lockReasonDescription value
      * @param string $lockReasonDescription
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setLockReasonDescription(?string $lockReasonDescription = null): self
     {
@@ -1403,7 +1403,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set lockReasonId value
      * @param string $lockReasonId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setLockReasonId(?string $lockReasonId = null): self
     {
@@ -1426,7 +1426,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set locked value
      * @param bool $locked
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setLocked(?bool $locked = null): self
     {
@@ -1449,7 +1449,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set mailSalutation value
      * @param string $mailSalutation
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setMailSalutation(?string $mailSalutation = null): self
     {
@@ -1472,7 +1472,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set mailingProhibited value
      * @param bool $mailingProhibited
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setMailingProhibited(?bool $mailingProhibited = null): self
     {
@@ -1495,7 +1495,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -1518,7 +1518,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set mediatorType value
      * @param string $mediatorType
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setMediatorType(?string $mediatorType = null): self
     {
@@ -1541,7 +1541,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -1564,7 +1564,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set mobile value
      * @param string $mobile
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setMobile(?string $mobile = null): self
     {
@@ -1587,7 +1587,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setName(?string $name = null): self
     {
@@ -1610,7 +1610,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set noOfChildren value
      * @param int $noOfChildren
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setNoOfChildren(?int $noOfChildren = null): self
     {
@@ -1633,7 +1633,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set numBookings value
      * @param int $numBookings
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setNumBookings(?int $numBookings = null): self
     {
@@ -1656,7 +1656,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set numOrders value
      * @param int $numOrders
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setNumOrders(?int $numOrders = null): self
     {
@@ -1679,7 +1679,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -1702,7 +1702,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set organisationName value
      * @param string $organisationName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setOrganisationName(?string $organisationName = null): self
     {
@@ -1725,7 +1725,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set personalNo value
      * @param string $personalNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setPersonalNo(?string $personalNo = null): self
     {
@@ -1748,7 +1748,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setPhone(?string $phone = null): self
     {
@@ -1771,7 +1771,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set phoneBusiness value
      * @param string $phoneBusiness
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setPhoneBusiness(?string $phoneBusiness = null): self
     {
@@ -1794,7 +1794,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set postProhibited value
      * @param bool $postProhibited
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setPostProhibited(?bool $postProhibited = null): self
     {
@@ -1817,7 +1817,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -1840,7 +1840,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -1863,7 +1863,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set salutationId value
      * @param string $salutationId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setSalutationId(?string $salutationId = null): self
     {
@@ -1886,7 +1886,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set salutationLetter value
      * @param string $salutationLetter
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setSalutationLetter(?string $salutationLetter = null): self
     {
@@ -1909,7 +1909,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setState(?string $state = null): self
     {
@@ -1932,7 +1932,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -1955,7 +1955,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -1978,7 +1978,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setTitle(?string $title = null): self
     {
@@ -2001,7 +2001,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set tradeRegister value
      * @param string $tradeRegister
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setTradeRegister(?string $tradeRegister = null): self
     {
@@ -2024,7 +2024,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set travelAmount value
      * @param float $travelAmount
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setTravelAmount(?float $travelAmount = null): self
     {
@@ -2047,7 +2047,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setType(?string $type = null): self
     {
@@ -2070,7 +2070,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set validated value
      * @param bool $validated
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setValidated(?bool $validated = null): self
     {
@@ -2093,7 +2093,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setVatId(?string $vatId = null): self
     {
@@ -2116,7 +2116,7 @@ class MisCustomerDTO extends AbstractStructBase
     /**
      * Set web value
      * @param string $web
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\MisCustomerDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\MisCustomerDTO
      */
     public function setWeb(?string $web = null): self
     {

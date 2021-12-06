@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class GetCountryIsoTokenRequest extends AbstractStructBase
     /**
      * Set token value
      * @param string $token
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCountryIsoTokenRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCountryIsoTokenRequest
      */
     public function setToken(?string $token = null): self
     {
@@ -78,7 +78,7 @@ class GetCountryIsoTokenRequest extends AbstractStructBase
     /**
      * Set localization value
      * @param string $localization
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCountryIsoTokenRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCountryIsoTokenRequest
      */
     public function setLocalization(?string $localization = null): self
     {
@@ -101,7 +101,7 @@ class GetCountryIsoTokenRequest extends AbstractStructBase
     /**
      * Set crs value
      * @param string $crs
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\GetCountryIsoTokenRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCountryIsoTokenRequest
      */
     public function setCrs(?string $crs = null): self
     {

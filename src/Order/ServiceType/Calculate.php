@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Calculate extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Calculate
+     * @return \Pggns\MidocoApi\Order\ServiceType\Calculate
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Calculate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CalculateBillingRequest $paramCalculateBillingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateBillingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CalculateBillingRequest $paramCalculateBillingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateBillingResponse|bool
      */
-    public function calculateBilling(\Pggns\MidocoApi\Api\Order\StructType\CalculateBillingRequest $paramCalculateBillingRequest)
+    public function calculateBilling(\Pggns\MidocoApi\Order\StructType\CalculateBillingRequest $paramCalculateBillingRequest)
     {
         try {
             $this->setResult($resultCalculateBilling = $this->getSoapClient()->__soapCall('calculateBilling', [
@@ -58,15 +58,15 @@ class Calculate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CalculateEntryPeriodSumsRequest $paramCalculateEntryPeriodSumsRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateEntryPeriodSumsResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CalculateEntryPeriodSumsRequest $paramCalculateEntryPeriodSumsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateEntryPeriodSumsResponse|bool
      */
-    public function calculateEntryPeriodSums(\Pggns\MidocoApi\Api\Order\StructType\CalculateEntryPeriodSumsRequest $paramCalculateEntryPeriodSumsRequest)
+    public function calculateEntryPeriodSums(\Pggns\MidocoApi\Order\StructType\CalculateEntryPeriodSumsRequest $paramCalculateEntryPeriodSumsRequest)
     {
         try {
             $this->setResult($resultCalculateEntryPeriodSums = $this->getSoapClient()->__soapCall('calculateEntryPeriodSums', [
@@ -85,15 +85,15 @@ class Calculate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CalculateSellItemPricingRequest $paramCalculateSellItemPricingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateSellItemPricingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CalculateSellItemPricingRequest $paramCalculateSellItemPricingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateSellItemPricingResponse|bool
      */
-    public function calculateSellItemPricing(\Pggns\MidocoApi\Api\Order\StructType\CalculateSellItemPricingRequest $paramCalculateSellItemPricingRequest)
+    public function calculateSellItemPricing(\Pggns\MidocoApi\Order\StructType\CalculateSellItemPricingRequest $paramCalculateSellItemPricingRequest)
     {
         try {
             $this->setResult($resultCalculateSellItemPricing = $this->getSoapClient()->__soapCall('calculateSellItemPricing', [
@@ -112,15 +112,15 @@ class Calculate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CalculateStatisticsRequest $paramCalculateStatisticsRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateStatisticsResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CalculateStatisticsRequest $paramCalculateStatisticsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateStatisticsResponse|bool
      */
-    public function calculateStatistics(\Pggns\MidocoApi\Api\Order\StructType\CalculateStatisticsRequest $paramCalculateStatisticsRequest)
+    public function calculateStatistics(\Pggns\MidocoApi\Order\StructType\CalculateStatisticsRequest $paramCalculateStatisticsRequest)
     {
         try {
             $this->setResult($resultCalculateStatistics = $this->getSoapClient()->__soapCall('calculateStatistics', [
@@ -139,15 +139,15 @@ class Calculate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CalculateSupplierCommissionRequest $paramCalculateSupplierCommissionRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateSupplierCommissionResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CalculateSupplierCommissionRequest $paramCalculateSupplierCommissionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateSupplierCommissionResponse|bool
      */
-    public function calculateSupplierCommission(\Pggns\MidocoApi\Api\Order\StructType\CalculateSupplierCommissionRequest $paramCalculateSupplierCommissionRequest)
+    public function calculateSupplierCommission(\Pggns\MidocoApi\Order\StructType\CalculateSupplierCommissionRequest $paramCalculateSupplierCommissionRequest)
     {
         try {
             $this->setResult($resultCalculateSupplierCommission = $this->getSoapClient()->__soapCall('calculateSupplierCommission', [
@@ -166,15 +166,15 @@ class Calculate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CalculateRetentionPeriod4OrderRequest $paramCalculateRetentionPeriod4OrderRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateRetentionPeriod4OrderResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\CalculateRetentionPeriod4OrderRequest $paramCalculateRetentionPeriod4OrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateRetentionPeriod4OrderResponse|bool
      */
-    public function calculateRetentionPeriod4Order(\Pggns\MidocoApi\Api\Order\StructType\CalculateRetentionPeriod4OrderRequest $paramCalculateRetentionPeriod4OrderRequest)
+    public function calculateRetentionPeriod4Order(\Pggns\MidocoApi\Order\StructType\CalculateRetentionPeriod4OrderRequest $paramCalculateRetentionPeriod4OrderRequest)
     {
         try {
             $this->setResult($resultCalculateRetentionPeriod4Order = $this->getSoapClient()->__soapCall('calculateRetentionPeriod4Order', [
@@ -191,7 +191,7 @@ class Calculate extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalculateBillingResponse|\Pggns\MidocoApi\Api\Order\StructType\CalculateEntryPeriodSumsResponse|\Pggns\MidocoApi\Api\Order\StructType\CalculateRetentionPeriod4OrderResponse|\Pggns\MidocoApi\Api\Order\StructType\CalculateSellItemPricingResponse|\Pggns\MidocoApi\Api\Order\StructType\CalculateStatisticsResponse|\Pggns\MidocoApi\Api\Order\StructType\CalculateSupplierCommissionResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateBillingResponse|\Pggns\MidocoApi\Order\StructType\CalculateEntryPeriodSumsResponse|\Pggns\MidocoApi\Order\StructType\CalculateRetentionPeriod4OrderResponse|\Pggns\MidocoApi\Order\StructType\CalculateSellItemPricingResponse|\Pggns\MidocoApi\Order\StructType\CalculateStatisticsResponse|\Pggns\MidocoApi\Order\StructType\CalculateSupplierCommissionResponse
      */
     public function getResult()
     {

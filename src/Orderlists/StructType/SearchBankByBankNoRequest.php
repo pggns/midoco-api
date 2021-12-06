@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SearchBankByBankNoRequest extends AbstractStructBase
      * The MidocoBankInfo
      * Meta information extracted from the WSDL
      * - ref: MidocoBankInfo
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankInfo|null
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBankInfo|null
      */
-    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankInfo $MidocoBankInfo = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBankInfo $MidocoBankInfo = null;
     /**
      * Constructor method for SearchBankByBankNoRequest
      * @uses SearchBankByBankNoRequest::setMidocoBankInfo()
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankInfo $midocoBankInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBankInfo $midocoBankInfo
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankInfo $midocoBankInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoBankInfo $midocoBankInfo = null)
     {
         $this
             ->setMidocoBankInfo($midocoBankInfo);
     }
     /**
      * Get MidocoBankInfo value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankInfo|null
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBankInfo|null
      */
-    public function getMidocoBankInfo(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankInfo
+    public function getMidocoBankInfo(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBankInfo
     {
         return $this->MidocoBankInfo;
     }
     /**
      * Set MidocoBankInfo value
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankInfo $midocoBankInfo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SearchBankByBankNoRequest
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBankInfo $midocoBankInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SearchBankByBankNoRequest
      */
-    public function setMidocoBankInfo(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoBankInfo $midocoBankInfo = null): self
+    public function setMidocoBankInfo(?\Pggns\MidocoApi\Orderlists\StructType\MidocoBankInfo $midocoBankInfo = null): self
     {
         $this->MidocoBankInfo = $midocoBankInfo;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class ProfileAttributes extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoProfileAttribute
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute[]
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute[]
      */
     protected ?array $MidocoProfileAttribute = null;
     /**
      * Constructor method for ProfileAttributes
      * @uses ProfileAttributes::setMidocoProfileAttribute()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute[] $midocoProfileAttribute
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute[] $midocoProfileAttribute
      */
     public function __construct(?array $midocoProfileAttribute = null)
     {
@@ -34,7 +34,7 @@ class ProfileAttributes extends AbstractStructBase
     }
     /**
      * Get MidocoProfileAttribute value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute[]
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute[]
      */
     public function getMidocoProfileAttribute(): ?array
     {
@@ -55,12 +55,12 @@ class ProfileAttributes extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $profileAttributesMidocoProfileAttributeItem) {
             // validation for constraint: itemType
-            if (!$profileAttributesMidocoProfileAttributeItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute) {
+            if (!$profileAttributesMidocoProfileAttributeItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute) {
                 $invalidValues[] = is_object($profileAttributesMidocoProfileAttributeItem) ? get_class($profileAttributesMidocoProfileAttributeItem) : sprintf('%s(%s)', gettype($profileAttributesMidocoProfileAttributeItem), var_export($profileAttributesMidocoProfileAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoProfileAttribute property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoProfileAttribute property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class ProfileAttributes extends AbstractStructBase
     /**
      * Set MidocoProfileAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute[] $midocoProfileAttribute
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ProfileAttributes
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute[] $midocoProfileAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\ProfileAttributes
      */
     public function setMidocoProfileAttribute(?array $midocoProfileAttribute = null): self
     {
@@ -85,14 +85,14 @@ class ProfileAttributes extends AbstractStructBase
     /**
      * Add item to MidocoProfileAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ProfileAttributes
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute $item
+     * @return \Pggns\MidocoApi\Documents\StructType\ProfileAttributes
      */
-    public function addToMidocoProfileAttribute(\Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute $item): self
+    public function addToMidocoProfileAttribute(\Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute) {
-            throw new InvalidArgumentException(sprintf('The MidocoProfileAttribute property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoProfileAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute) {
+            throw new InvalidArgumentException(sprintf('The MidocoProfileAttribute property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoProfileAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoProfileAttribute[] = $item;
         

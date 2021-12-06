@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetValidVatCodesRequest extends AbstractStructBase
      * The MidocoVatDefinition
      * Meta information extracted from the WSDL
      * - ref: MidocoVatDefinition
-     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition|null
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition|null
      */
-    protected ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition $MidocoVatDefinition = null;
+    protected ?\Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition $MidocoVatDefinition = null;
     /**
      * The isOutputVat
      * Meta information extracted from the WSDL
@@ -31,10 +31,10 @@ class GetValidVatCodesRequest extends AbstractStructBase
      * Constructor method for GetValidVatCodesRequest
      * @uses GetValidVatCodesRequest::setMidocoVatDefinition()
      * @uses GetValidVatCodesRequest::setIsOutputVat()
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition $midocoVatDefinition
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition $midocoVatDefinition
      * @param bool $isOutputVat
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition $midocoVatDefinition = null, ?bool $isOutputVat = null)
+    public function __construct(?\Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition $midocoVatDefinition = null, ?bool $isOutputVat = null)
     {
         $this
             ->setMidocoVatDefinition($midocoVatDefinition)
@@ -42,18 +42,18 @@ class GetValidVatCodesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoVatDefinition value
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition|null
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition|null
      */
-    public function getMidocoVatDefinition(): ?\Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition
+    public function getMidocoVatDefinition(): ?\Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition
     {
         return $this->MidocoVatDefinition;
     }
     /**
      * Set MidocoVatDefinition value
-     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition $midocoVatDefinition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetValidVatCodesRequest
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition $midocoVatDefinition
+     * @return \Pggns\MidocoApi\Documents\StructType\GetValidVatCodesRequest
      */
-    public function setMidocoVatDefinition(?\Pggns\MidocoApi\Api\Documents\StructType\MidocoVatDefinition $midocoVatDefinition = null): self
+    public function setMidocoVatDefinition(?\Pggns\MidocoApi\Documents\StructType\MidocoVatDefinition $midocoVatDefinition = null): self
     {
         $this->MidocoVatDefinition = $midocoVatDefinition;
         
@@ -70,7 +70,7 @@ class GetValidVatCodesRequest extends AbstractStructBase
     /**
      * Set isOutputVat value
      * @param bool $isOutputVat
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\GetValidVatCodesRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\GetValidVatCodesRequest
      */
     public function setIsOutputVat(?bool $isOutputVat = null): self
     {

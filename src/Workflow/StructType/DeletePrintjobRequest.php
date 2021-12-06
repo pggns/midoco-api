@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeletePrintjobRequest extends AbstractStructBase
     /**
      * Set printjob_id value
      * @param int $printjob_id
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\DeletePrintjobRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeletePrintjobRequest
      */
     public function setPrintjob_id(?int $printjob_id = null): self
     {

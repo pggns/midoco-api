@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class FeeGroupDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FeeGroupDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FeeGroupDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -94,7 +94,7 @@ class FeeGroupDTO extends AbstractStructBase
     /**
      * Set feeGroup value
      * @param string $feeGroup
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FeeGroupDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FeeGroupDTO
      */
     public function setFeeGroup(?string $feeGroup = null): self
     {
@@ -117,7 +117,7 @@ class FeeGroupDTO extends AbstractStructBase
     /**
      * Set feeGroupId value
      * @param int $feeGroupId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FeeGroupDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FeeGroupDTO
      */
     public function setFeeGroupId(?int $feeGroupId = null): self
     {
@@ -140,7 +140,7 @@ class FeeGroupDTO extends AbstractStructBase
     /**
      * Set groupComment value
      * @param string $groupComment
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FeeGroupDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FeeGroupDTO
      */
     public function setGroupComment(?string $groupComment = null): self
     {
@@ -163,7 +163,7 @@ class FeeGroupDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\FeeGroupDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FeeGroupDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

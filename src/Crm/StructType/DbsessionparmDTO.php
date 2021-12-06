@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class DbsessionparmDTO extends AbstractStructBase
     /**
      * Set paramName value
      * @param string $paramName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DbsessionparmDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\DbsessionparmDTO
      */
     public function setParamName(?string $paramName = null): self
     {
@@ -78,7 +78,7 @@ class DbsessionparmDTO extends AbstractStructBase
     /**
      * Set paramValue value
      * @param string $paramValue
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DbsessionparmDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\DbsessionparmDTO
      */
     public function setParamValue(?string $paramValue = null): self
     {
@@ -101,7 +101,7 @@ class DbsessionparmDTO extends AbstractStructBase
     /**
      * Set sessionId value
      * @param string $sessionId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DbsessionparmDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\DbsessionparmDTO
      */
     public function setSessionId(?string $sessionId = null): self
     {

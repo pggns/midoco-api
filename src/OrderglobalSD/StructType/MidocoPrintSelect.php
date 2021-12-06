@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -122,7 +122,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set printTypeId value
      * @param string $printTypeId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoPrintSelect
      */
     public function setPrintTypeId(?string $printTypeId = null): self
     {
@@ -145,7 +145,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set desciption value
      * @param string $desciption
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoPrintSelect
      */
     public function setDesciption(?string $desciption = null): self
     {
@@ -168,7 +168,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set selected value
      * @param bool $selected
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoPrintSelect
      */
     public function setSelected(?bool $selected = null): self
     {
@@ -191,7 +191,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set handler value
      * @param string $handler
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoPrintSelect
      */
     public function setHandler(?string $handler = null): self
     {
@@ -214,7 +214,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoPrintSelect
      */
     public function setPosition(?int $position = null): self
     {
@@ -264,7 +264,7 @@ class MidocoPrintSelect extends AbstractStructBase
      * Set itemId value
      * @throws InvalidArgumentException
      * @param int[] $itemId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoPrintSelect
      */
     public function setItemId(?array $itemId = null): self
     {
@@ -280,7 +280,7 @@ class MidocoPrintSelect extends AbstractStructBase
      * Add item to itemId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoPrintSelect
      */
     public function addToItemId(int $item): self
     {
@@ -303,7 +303,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set channel value
      * @param int $channel
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoPrintSelect
      */
     public function setChannel(?int $channel = null): self
     {
@@ -326,7 +326,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set orderHistoryRefId value
      * @param string $orderHistoryRefId
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoPrintSelect
      */
     public function setOrderHistoryRefId(?string $orderHistoryRefId = null): self
     {
@@ -349,7 +349,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set selectOwnResponsibility value
      * @param bool $selectOwnResponsibility
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoPrintSelect
      */
     public function setSelectOwnResponsibility(?bool $selectOwnResponsibility = null): self
     {
@@ -372,7 +372,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set selectNoInsurance value
      * @param bool $selectNoInsurance
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoPrintSelect
      */
     public function setSelectNoInsurance(?bool $selectNoInsurance = null): self
     {
@@ -395,7 +395,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set isItemSelectionSupported value
      * @param bool $isItemSelectionSupported
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\MidocoPrintSelect
      */
     public function setIsItemSelectionSupported(?bool $isItemSelectionSupported = null): self
     {

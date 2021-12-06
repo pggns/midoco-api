@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class ExportChangedCustomersLogDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExportChangedCustomersLogDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ExportChangedCustomersLogDTO
      */
     public function setAction(?string $action = null): self
     {
@@ -126,7 +126,7 @@ class ExportChangedCustomersLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExportChangedCustomersLogDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ExportChangedCustomersLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -149,7 +149,7 @@ class ExportChangedCustomersLogDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExportChangedCustomersLogDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ExportChangedCustomersLogDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -172,7 +172,7 @@ class ExportChangedCustomersLogDTO extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExportChangedCustomersLogDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ExportChangedCustomersLogDTO
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -195,7 +195,7 @@ class ExportChangedCustomersLogDTO extends AbstractStructBase
     /**
      * Set isCatched value
      * @param bool $isCatched
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExportChangedCustomersLogDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ExportChangedCustomersLogDTO
      */
     public function setIsCatched(?bool $isCatched = null): self
     {
@@ -218,7 +218,7 @@ class ExportChangedCustomersLogDTO extends AbstractStructBase
     /**
      * Set reason value
      * @param int $reason
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExportChangedCustomersLogDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ExportChangedCustomersLogDTO
      */
     public function setReason(?int $reason = null): self
     {
@@ -241,7 +241,7 @@ class ExportChangedCustomersLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExportChangedCustomersLogDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ExportChangedCustomersLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -264,7 +264,7 @@ class ExportChangedCustomersLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExportChangedCustomersLogDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ExportChangedCustomersLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -287,7 +287,7 @@ class ExportChangedCustomersLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\ExportChangedCustomersLogDTO
+     * @return \Pggns\MidocoApi\Mis\StructType\ExportChangedCustomersLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

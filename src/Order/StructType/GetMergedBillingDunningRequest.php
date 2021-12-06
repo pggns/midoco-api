@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class GetMergedBillingDunningRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedBillingDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedBillingDunningRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -86,7 +86,7 @@ class GetMergedBillingDunningRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedBillingDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedBillingDunningRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -109,7 +109,7 @@ class GetMergedBillingDunningRequest extends AbstractStructBase
     /**
      * Set dunningLevel value
      * @param int $dunningLevel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedBillingDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedBillingDunningRequest
      */
     public function setDunningLevel(?int $dunningLevel = null): self
     {
@@ -132,7 +132,7 @@ class GetMergedBillingDunningRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetMergedBillingDunningRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedBillingDunningRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

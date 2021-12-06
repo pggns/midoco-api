@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoAgencySettlementLevelError extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencySettlementLevelError
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencySettlementLevelError
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -78,7 +78,7 @@ class MidocoAgencySettlementLevelError extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencySettlementLevelError
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencySettlementLevelError
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -101,7 +101,7 @@ class MidocoAgencySettlementLevelError extends AbstractStructBase
     /**
      * Set errorText value
      * @param string $errorText
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoAgencySettlementLevelError
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoAgencySettlementLevelError
      */
     public function setErrorText(?string $errorText = null): self
     {

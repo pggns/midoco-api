@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoSalesListBySupplierCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -70,7 +70,7 @@ class MidocoSalesListBySupplierCriteriaType extends MidocoSalesListCriteriaType
     /**
      * Set allSupplier value
      * @param bool $allSupplier
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType
      */
     public function setAllSupplier(?bool $allSupplier = null): self
     {

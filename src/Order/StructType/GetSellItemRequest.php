@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class GetSellItemRequest extends AbstractStructBase
      * The MidocoSellItemId
      * Meta information extracted from the WSDL
      * - ref: MidocoSellItemId
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemId|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId $MidocoSellItemId = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemId $MidocoSellItemId = null;
     /**
      * Constructor method for GetSellItemRequest
      * @uses GetSellItemRequest::setMidocoSellItemId()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId $midocoSellItemId
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemId $midocoSellItemId
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId $midocoSellItemId = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemId $midocoSellItemId = null)
     {
         $this
             ->setMidocoSellItemId($midocoSellItemId);
     }
     /**
      * Get MidocoSellItemId value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemId|null
      */
-    public function getMidocoSellItemId(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId
+    public function getMidocoSellItemId(): ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemId
     {
         return $this->MidocoSellItemId;
     }
     /**
      * Set MidocoSellItemId value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId $midocoSellItemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetSellItemRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemId $midocoSellItemId
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemRequest
      */
-    public function setMidocoSellItemId(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemId $midocoSellItemId = null): self
+    public function setMidocoSellItemId(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemId $midocoSellItemId = null): self
     {
         $this->MidocoSellItemId = $midocoSellItemId;
         

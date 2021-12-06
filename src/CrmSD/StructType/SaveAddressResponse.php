@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -50,7 +50,7 @@ class SaveAddressResponse extends AbstractStructBase
     /**
      * Set hasAddressChanged value
      * @param bool $hasAddressChanged
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveAddressResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveAddressResponse
      */
     public function setHasAddressChanged(?bool $hasAddressChanged = null): self
     {
@@ -73,7 +73,7 @@ class SaveAddressResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\SaveAddressResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveAddressResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

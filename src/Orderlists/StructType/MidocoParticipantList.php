@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,7 +87,7 @@ class MidocoParticipantList extends MidocoParticipantListType
     /**
      * Set customerAddressCity value
      * @param string $customerAddressCity
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList
      */
     public function setCustomerAddressCity(?string $customerAddressCity = null): self
     {
@@ -110,7 +110,7 @@ class MidocoParticipantList extends MidocoParticipantListType
     /**
      * Set customerAddressCountryCode value
      * @param string $customerAddressCountryCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList
      */
     public function setCustomerAddressCountryCode(?string $customerAddressCountryCode = null): self
     {
@@ -133,7 +133,7 @@ class MidocoParticipantList extends MidocoParticipantListType
     /**
      * Set customerAddressPostalCode value
      * @param string $customerAddressPostalCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList
      */
     public function setCustomerAddressPostalCode(?string $customerAddressPostalCode = null): self
     {
@@ -156,7 +156,7 @@ class MidocoParticipantList extends MidocoParticipantListType
     /**
      * Set customerAddressStreet value
      * @param string $customerAddressStreet
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList
      */
     public function setCustomerAddressStreet(?string $customerAddressStreet = null): self
     {
@@ -179,7 +179,7 @@ class MidocoParticipantList extends MidocoParticipantListType
     /**
      * Set customerAddressStreetNo value
      * @param string $customerAddressStreetNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList
      */
     public function setCustomerAddressStreetNo(?string $customerAddressStreetNo = null): self
     {
@@ -202,7 +202,7 @@ class MidocoParticipantList extends MidocoParticipantListType
     /**
      * Set customerDefaultEmail value
      * @param string $customerDefaultEmail
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList
      */
     public function setCustomerDefaultEmail(?string $customerDefaultEmail = null): self
     {
@@ -225,7 +225,7 @@ class MidocoParticipantList extends MidocoParticipantListType
     /**
      * Set customerDefaultPhone value
      * @param string $customerDefaultPhone
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoParticipantList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoParticipantList
      */
     public function setCustomerDefaultPhone(?string $customerDefaultPhone = null): self
     {

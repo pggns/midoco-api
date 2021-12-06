@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class ManualitemDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualitemDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -78,7 +78,7 @@ class ManualitemDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualitemDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -101,7 +101,7 @@ class ManualitemDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ManualitemDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\ManualitemDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

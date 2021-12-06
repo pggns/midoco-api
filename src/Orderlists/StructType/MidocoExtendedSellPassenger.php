@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoExtendedSellPassenger extends SellPassengerDTO
     /**
      * Set isSelected value
      * @param bool $isSelected
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoExtendedSellPassenger
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoExtendedSellPassenger
      */
     public function setIsSelected(?bool $isSelected = null): self
     {

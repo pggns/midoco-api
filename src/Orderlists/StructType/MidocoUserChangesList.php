@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class MidocoUserChangesList extends MidocoUserChangesListType
     /**
      * Set adminName value
      * @param string $adminName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesList
      */
     public function setAdminName(?string $adminName = null): self
     {
@@ -78,7 +78,7 @@ class MidocoUserChangesList extends MidocoUserChangesListType
     /**
      * Set userName value
      * @param string $userName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesList
      */
     public function setUserName(?string $userName = null): self
     {
@@ -101,7 +101,7 @@ class MidocoUserChangesList extends MidocoUserChangesListType
     /**
      * Set event value
      * @param string $event
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoUserChangesList
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoUserChangesList
      */
     public function setEvent(?string $event = null): self
     {

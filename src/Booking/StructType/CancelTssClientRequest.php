@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class CancelTssClientRequest extends AbstractStructBase
      * The MidocoTssClient
      * Meta information extracted from the WSDL
      * - ref: MidocoTssClient
-     * @var \Pggns\MidocoApi\Api\Booking\StructType\MidocoTssClient|null
+     * @var \Pggns\MidocoApi\Booking\StructType\MidocoTssClient|null
      */
-    protected ?\Pggns\MidocoApi\Api\Booking\StructType\MidocoTssClient $MidocoTssClient = null;
+    protected ?\Pggns\MidocoApi\Booking\StructType\MidocoTssClient $MidocoTssClient = null;
     /**
      * Constructor method for CancelTssClientRequest
      * @uses CancelTssClientRequest::setMidocoTssClient()
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoTssClient $midocoTssClient
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoTssClient $midocoTssClient
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Booking\StructType\MidocoTssClient $midocoTssClient = null)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\MidocoTssClient $midocoTssClient = null)
     {
         $this
             ->setMidocoTssClient($midocoTssClient);
     }
     /**
      * Get MidocoTssClient value
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\MidocoTssClient|null
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoTssClient|null
      */
-    public function getMidocoTssClient(): ?\Pggns\MidocoApi\Api\Booking\StructType\MidocoTssClient
+    public function getMidocoTssClient(): ?\Pggns\MidocoApi\Booking\StructType\MidocoTssClient
     {
         return $this->MidocoTssClient;
     }
     /**
      * Set MidocoTssClient value
-     * @param \Pggns\MidocoApi\Api\Booking\StructType\MidocoTssClient $midocoTssClient
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\CancelTssClientRequest
+     * @param \Pggns\MidocoApi\Booking\StructType\MidocoTssClient $midocoTssClient
+     * @return \Pggns\MidocoApi\Booking\StructType\CancelTssClientRequest
      */
-    public function setMidocoTssClient(?\Pggns\MidocoApi\Api\Booking\StructType\MidocoTssClient $midocoTssClient = null): self
+    public function setMidocoTssClient(?\Pggns\MidocoApi\Booking\StructType\MidocoTssClient $midocoTssClient = null): self
     {
         $this->MidocoTssClient = $midocoTssClient;
         

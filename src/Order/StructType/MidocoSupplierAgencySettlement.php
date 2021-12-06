@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoSupplierAgencySettlement extends SupplierAgencySettlementDTO
     /**
      * Set statusChecked value
      * @param string $statusChecked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlement
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlement
      */
     public function setStatusChecked(?string $statusChecked = null): self
     {
@@ -94,7 +94,7 @@ class MidocoSupplierAgencySettlement extends SupplierAgencySettlementDTO
     /**
      * Set statusBooked value
      * @param string $statusBooked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlement
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlement
      */
     public function setStatusBooked(?string $statusBooked = null): self
     {
@@ -117,7 +117,7 @@ class MidocoSupplierAgencySettlement extends SupplierAgencySettlementDTO
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlement
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlement
      */
     public function setStatus(?string $status = null): self
     {
@@ -140,7 +140,7 @@ class MidocoSupplierAgencySettlement extends SupplierAgencySettlementDTO
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlement
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlement
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -163,7 +163,7 @@ class MidocoSupplierAgencySettlement extends SupplierAgencySettlementDTO
     /**
      * Set checked value
      * @param bool $checked
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSupplierAgencySettlement
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSupplierAgencySettlement
      */
     public function setChecked(?bool $checked = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class UploadPaymentDataResponse extends AbstractStructBase
      * The PaymentUploadError
      * Meta information extracted from the WSDL
      * - ref: PaymentUploadError
-     * @var \Pggns\MidocoApi\Api\Order\StructType\PaymentUploadError|null
+     * @var \Pggns\MidocoApi\Order\StructType\PaymentUploadError|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\PaymentUploadError $PaymentUploadError = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\PaymentUploadError $PaymentUploadError = null;
     /**
      * Constructor method for UploadPaymentDataResponse
      * @uses UploadPaymentDataResponse::setPaymentUploadError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PaymentUploadError $paymentUploadError
+     * @param \Pggns\MidocoApi\Order\StructType\PaymentUploadError $paymentUploadError
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\PaymentUploadError $paymentUploadError = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\PaymentUploadError $paymentUploadError = null)
     {
         $this
             ->setPaymentUploadError($paymentUploadError);
     }
     /**
      * Get PaymentUploadError value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PaymentUploadError|null
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentUploadError|null
      */
-    public function getPaymentUploadError(): ?\Pggns\MidocoApi\Api\Order\StructType\PaymentUploadError
+    public function getPaymentUploadError(): ?\Pggns\MidocoApi\Order\StructType\PaymentUploadError
     {
         return $this->PaymentUploadError;
     }
     /**
      * Set PaymentUploadError value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PaymentUploadError $paymentUploadError
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UploadPaymentDataResponse
+     * @param \Pggns\MidocoApi\Order\StructType\PaymentUploadError $paymentUploadError
+     * @return \Pggns\MidocoApi\Order\StructType\UploadPaymentDataResponse
      */
-    public function setPaymentUploadError(?\Pggns\MidocoApi\Api\Order\StructType\PaymentUploadError $paymentUploadError = null): self
+    public function setPaymentUploadError(?\Pggns\MidocoApi\Order\StructType\PaymentUploadError $paymentUploadError = null): self
     {
         $this->PaymentUploadError = $paymentUploadError;
         

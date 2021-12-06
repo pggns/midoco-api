@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class PreviewTemplateResponse extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\PreviewTemplateResponse
+     * @return \Pggns\MidocoApi\CrmSD\StructType\PreviewTemplateResponse
      */
     public function setText(?string $text = null): self
     {

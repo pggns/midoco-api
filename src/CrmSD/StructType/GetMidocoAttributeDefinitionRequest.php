@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class GetMidocoAttributeDefinitionRequest extends AbstractStructBase
      * The MidocoSystemAttributeDefinition
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeDefinition
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO $MidocoSystemAttributeDefinition = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO $MidocoSystemAttributeDefinition = null;
     /**
      * The orgunit
      * @var string|null
@@ -29,10 +29,10 @@ class GetMidocoAttributeDefinitionRequest extends AbstractStructBase
      * Constructor method for GetMidocoAttributeDefinitionRequest
      * @uses GetMidocoAttributeDefinitionRequest::setMidocoSystemAttributeDefinition()
      * @uses GetMidocoAttributeDefinitionRequest::setOrgunit()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
      * @param string $orgunit
      */
-    public function __construct(?\Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null, ?string $orgunit = null)
+    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null, ?string $orgunit = null)
     {
         $this
             ->setMidocoSystemAttributeDefinition($midocoSystemAttributeDefinition)
@@ -40,18 +40,18 @@ class GetMidocoAttributeDefinitionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSystemAttributeDefinition value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO|null
      */
-    public function getMidocoSystemAttributeDefinition(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO
+    public function getMidocoSystemAttributeDefinition(): ?\Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO
     {
         return $this->MidocoSystemAttributeDefinition;
     }
     /**
      * Set MidocoSystemAttributeDefinition value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMidocoAttributeDefinitionRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoAttributeDefinitionRequest
      */
-    public function setMidocoSystemAttributeDefinition(?\Pggns\MidocoApi\Api\CrmSD\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null): self
+    public function setMidocoSystemAttributeDefinition(?\Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionDTO $midocoSystemAttributeDefinition = null): self
     {
         $this->MidocoSystemAttributeDefinition = $midocoSystemAttributeDefinition;
         
@@ -68,7 +68,7 @@ class GetMidocoAttributeDefinitionRequest extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetMidocoAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoAttributeDefinitionRequest
      */
     public function setOrgunit(?string $orgunit = null): self
     {

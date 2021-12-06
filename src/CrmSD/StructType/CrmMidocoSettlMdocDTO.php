@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class CrmMidocoSettlMdocDTO extends AbstractStructBase
     /**
      * Set bussinesYearStart value
      * @param int $bussinesYearStart
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlMdocDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocDTO
      */
     public function setBussinesYearStart(?int $bussinesYearStart = null): self
     {
@@ -94,7 +94,7 @@ class CrmMidocoSettlMdocDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlMdocDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -117,7 +117,7 @@ class CrmMidocoSettlMdocDTO extends AbstractStructBase
     /**
      * Set settlMdocId value
      * @param int $settlMdocId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlMdocDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocDTO
      */
     public function setSettlMdocId(?int $settlMdocId = null): self
     {
@@ -140,7 +140,7 @@ class CrmMidocoSettlMdocDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlMdocDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -163,7 +163,7 @@ class CrmMidocoSettlMdocDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CrmMidocoSettlMdocDTO
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocDTO
      */
     public function setValidTo(?string $validTo = null): self
     {

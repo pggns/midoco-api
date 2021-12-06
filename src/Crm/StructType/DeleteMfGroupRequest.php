@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DeleteMfGroupRequest extends AbstractStructBase
      * The MidocoMfGroup
      * Meta information extracted from the WSDL
      * - ref: MidocoMfGroup
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\MidocoMfGroup|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoMfGroup|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoMfGroup $MidocoMfGroup = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoMfGroup $MidocoMfGroup = null;
     /**
      * Constructor method for DeleteMfGroupRequest
      * @uses DeleteMfGroupRequest::setMidocoMfGroup()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMfGroup $midocoMfGroup
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMfGroup $midocoMfGroup
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoMfGroup $midocoMfGroup = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoMfGroup $midocoMfGroup = null)
     {
         $this
             ->setMidocoMfGroup($midocoMfGroup);
     }
     /**
      * Get MidocoMfGroup value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoMfGroup|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoMfGroup|null
      */
-    public function getMidocoMfGroup(): ?\Pggns\MidocoApi\Api\Crm\StructType\MidocoMfGroup
+    public function getMidocoMfGroup(): ?\Pggns\MidocoApi\Crm\StructType\MidocoMfGroup
     {
         return $this->MidocoMfGroup;
     }
     /**
      * Set MidocoMfGroup value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\MidocoMfGroup $midocoMfGroup
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\DeleteMfGroupRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoMfGroup $midocoMfGroup
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteMfGroupRequest
      */
-    public function setMidocoMfGroup(?\Pggns\MidocoApi\Api\Crm\StructType\MidocoMfGroup $midocoMfGroup = null): self
+    public function setMidocoMfGroup(?\Pggns\MidocoApi\Crm\StructType\MidocoMfGroup $midocoMfGroup = null): self
     {
         $this->MidocoMfGroup = $midocoMfGroup;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class DeleteProductTypeMediatorConditionResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoProductTypeMediatorCondition
-     * @var \Pggns\MidocoApi\Api\Order\StructType\ProdTypesMediatorCondDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\ProdTypesMediatorCondDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\ProdTypesMediatorCondDTO $MidocoProductTypeMediatorCondition = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\ProdTypesMediatorCondDTO $MidocoProductTypeMediatorCondition = null;
     /**
      * Constructor method for DeleteProductTypeMediatorConditionResponse
      * @uses DeleteProductTypeMediatorConditionResponse::setMidocoProductTypeMediatorCondition()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ProdTypesMediatorCondDTO $midocoProductTypeMediatorCondition
+     * @param \Pggns\MidocoApi\Order\StructType\ProdTypesMediatorCondDTO $midocoProductTypeMediatorCondition
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\ProdTypesMediatorCondDTO $midocoProductTypeMediatorCondition = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\ProdTypesMediatorCondDTO $midocoProductTypeMediatorCondition = null)
     {
         $this
             ->setMidocoProductTypeMediatorCondition($midocoProductTypeMediatorCondition);
     }
     /**
      * Get MidocoProductTypeMediatorCondition value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ProdTypesMediatorCondDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\ProdTypesMediatorCondDTO|null
      */
-    public function getMidocoProductTypeMediatorCondition(): ?\Pggns\MidocoApi\Api\Order\StructType\ProdTypesMediatorCondDTO
+    public function getMidocoProductTypeMediatorCondition(): ?\Pggns\MidocoApi\Order\StructType\ProdTypesMediatorCondDTO
     {
         return $this->MidocoProductTypeMediatorCondition;
     }
     /**
      * Set MidocoProductTypeMediatorCondition value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\ProdTypesMediatorCondDTO $midocoProductTypeMediatorCondition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteProductTypeMediatorConditionResponse
+     * @param \Pggns\MidocoApi\Order\StructType\ProdTypesMediatorCondDTO $midocoProductTypeMediatorCondition
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteProductTypeMediatorConditionResponse
      */
-    public function setMidocoProductTypeMediatorCondition(?\Pggns\MidocoApi\Api\Order\StructType\ProdTypesMediatorCondDTO $midocoProductTypeMediatorCondition = null): self
+    public function setMidocoProductTypeMediatorCondition(?\Pggns\MidocoApi\Order\StructType\ProdTypesMediatorCondDTO $midocoProductTypeMediatorCondition = null): self
     {
         $this->MidocoProductTypeMediatorCondition = $midocoProductTypeMediatorCondition;
         

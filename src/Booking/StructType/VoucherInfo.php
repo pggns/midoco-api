@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Booking\StructType;
+namespace Pggns\MidocoApi\Booking\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class VoucherInfo extends AbstractStructBase
     /**
      * Set voucherId value
      * @param string $voucherId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\VoucherInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\VoucherInfo
      */
     public function setVoucherId(?string $voucherId = null): self
     {
@@ -86,7 +86,7 @@ class VoucherInfo extends AbstractStructBase
     /**
      * Set securityCode value
      * @param string $securityCode
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\VoucherInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\VoucherInfo
      */
     public function setSecurityCode(?string $securityCode = null): self
     {
@@ -109,7 +109,7 @@ class VoucherInfo extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\VoucherInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\VoucherInfo
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -132,7 +132,7 @@ class VoucherInfo extends AbstractStructBase
     /**
      * Set expiryDate value
      * @param string $expiryDate
-     * @return \Pggns\MidocoApi\Api\Booking\StructType\VoucherInfo
+     * @return \Pggns\MidocoApi\Booking\StructType\VoucherInfo
      */
     public function setExpiryDate(?string $expiryDate = null): self
     {

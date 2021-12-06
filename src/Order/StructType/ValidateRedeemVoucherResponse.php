@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -41,7 +41,7 @@ class ValidateRedeemVoucherResponse extends AbstractStructBase
     /**
      * Set redeemPossible value
      * @param bool $redeemPossible
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ValidateRedeemVoucherResponse
+     * @return \Pggns\MidocoApi\Order\StructType\ValidateRedeemVoucherResponse
      */
     public function setRedeemPossible(?bool $redeemPossible = true): self
     {

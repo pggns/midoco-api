@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class ItemAttr extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ItemAttr
+     * @return \Pggns\MidocoApi\Order\StructType\ItemAttr
      */
     public function setPosition(?int $position = null): self
     {
@@ -88,7 +88,7 @@ class ItemAttr extends AbstractStructBase
     /**
      * Set subposition value
      * @param int $subposition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ItemAttr
+     * @return \Pggns\MidocoApi\Order\StructType\ItemAttr
      */
     public function setSubposition(?int $subposition = null): self
     {
@@ -111,7 +111,7 @@ class ItemAttr extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ItemAttr
+     * @return \Pggns\MidocoApi\Order\StructType\ItemAttr
      */
     public function setName(?string $name = null): self
     {
@@ -134,7 +134,7 @@ class ItemAttr extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ItemAttr
+     * @return \Pggns\MidocoApi\Order\StructType\ItemAttr
      */
     public function setValue(?string $value = null): self
     {

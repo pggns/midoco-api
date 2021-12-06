@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetCountriesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCountryName
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\CountryNameDTO[]
+     * @var \Pggns\MidocoApi\CrmSD\StructType\CountryNameDTO[]
      */
     protected ?array $MidocoCountryName = null;
     /**
      * Constructor method for GetCountriesResponse
      * @uses GetCountriesResponse::setMidocoCountryName()
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CountryNameDTO[] $midocoCountryName
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CountryNameDTO[] $midocoCountryName
      */
     public function __construct(?array $midocoCountryName = null)
     {
@@ -36,7 +36,7 @@ class GetCountriesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCountryName value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CountryNameDTO[]
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CountryNameDTO[]
      */
     public function getMidocoCountryName(): ?array
     {
@@ -57,12 +57,12 @@ class GetCountriesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCountriesResponseMidocoCountryNameItem) {
             // validation for constraint: itemType
-            if (!$getCountriesResponseMidocoCountryNameItem instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CountryNameDTO) {
+            if (!$getCountriesResponseMidocoCountryNameItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CountryNameDTO) {
                 $invalidValues[] = is_object($getCountriesResponseMidocoCountryNameItem) ? get_class($getCountriesResponseMidocoCountryNameItem) : sprintf('%s(%s)', gettype($getCountriesResponseMidocoCountryNameItem), var_export($getCountriesResponseMidocoCountryNameItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCountryName property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CountryNameDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCountryName property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CountryNameDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetCountriesResponse extends AbstractStructBase
     /**
      * Set MidocoCountryName value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CountryNameDTO[] $midocoCountryName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCountriesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CountryNameDTO[] $midocoCountryName
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCountriesResponse
      */
     public function setMidocoCountryName(?array $midocoCountryName = null): self
     {
@@ -87,14 +87,14 @@ class GetCountriesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCountryName value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\CountryNameDTO $item
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\GetCountriesResponse
+     * @param \Pggns\MidocoApi\CrmSD\StructType\CountryNameDTO $item
+     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCountriesResponse
      */
-    public function addToMidocoCountryName(\Pggns\MidocoApi\Api\CrmSD\StructType\CountryNameDTO $item): self
+    public function addToMidocoCountryName(\Pggns\MidocoApi\CrmSD\StructType\CountryNameDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\CrmSD\StructType\CountryNameDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCountryName property can only contain items of type \Pggns\MidocoApi\Api\CrmSD\StructType\CountryNameDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CountryNameDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCountryName property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CountryNameDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCountryName[] = $item;
         

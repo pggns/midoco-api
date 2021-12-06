@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CreditCardOperationAllowedResponse extends AbstractStructBase
     /**
      * Set ccOperationAllowed value
      * @param bool $ccOperationAllowed
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreditCardOperationAllowedResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreditCardOperationAllowedResponse
      */
     public function setCcOperationAllowed(?bool $ccOperationAllowed = null): self
     {

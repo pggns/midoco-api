@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -167,7 +167,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -190,7 +190,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setName(?string $name = null): self
     {
@@ -213,7 +213,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setForename(?string $forename = null): self
     {
@@ -236,7 +236,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setStreet(?string $street = null): self
     {
@@ -259,7 +259,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -282,7 +282,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setZipCode(?string $zipCode = null): self
     {
@@ -305,7 +305,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setCity(?string $city = null): self
     {
@@ -328,7 +328,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setCountry(?string $country = null): self
     {
@@ -351,7 +351,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setType(?string $type = null): self
     {
@@ -374,7 +374,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setEmail(?string $email = null): self
     {
@@ -397,7 +397,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set travelsNo value
      * @param int $travelsNo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setTravelsNo(?int $travelsNo = null): self
     {
@@ -420,7 +420,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set lastTravelDate value
      * @param string $lastTravelDate
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setLastTravelDate(?string $lastTravelDate = null): self
     {
@@ -443,7 +443,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -466,7 +466,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -489,7 +489,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set phoneNr value
      * @param string $phoneNr
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setPhoneNr(?string $phoneNr = null): self
     {
@@ -512,7 +512,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set isLocked value
      * @param bool $isLocked
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setIsLocked(?bool $isLocked = null): self
     {
@@ -535,7 +535,7 @@ class CustomerDoubleAddrInfo extends AbstractStructBase
     /**
      * Set lockReasonId value
      * @param string $lockReasonId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CustomerDoubleAddrInfo
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerDoubleAddrInfo
      */
     public function setLockReasonId(?string $lockReasonId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class RemarkCategoryDescDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param string $categoryId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RemarkCategoryDescDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RemarkCategoryDescDTO
      */
     public function setCategoryId(?string $categoryId = null): self
     {
@@ -78,7 +78,7 @@ class RemarkCategoryDescDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RemarkCategoryDescDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RemarkCategoryDescDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -101,7 +101,7 @@ class RemarkCategoryDescDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\RemarkCategoryDescDTO
+     * @return \Pggns\MidocoApi\Documents\StructType\RemarkCategoryDescDTO
      */
     public function setDescription(?string $description = null): self
     {

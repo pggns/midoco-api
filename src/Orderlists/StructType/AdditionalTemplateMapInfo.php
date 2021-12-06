@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class AdditionalTemplateMapInfo extends AbstractStructBase
     /**
      * Set parameterKey value
      * @param string $parameterKey
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalTemplateMapInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalTemplateMapInfo
      */
     public function setParameterKey(?string $parameterKey = null): self
     {
@@ -70,7 +70,7 @@ class AdditionalTemplateMapInfo extends AbstractStructBase
     /**
      * Set parameterValue value
      * @param string $parameterValue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\AdditionalTemplateMapInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\AdditionalTemplateMapInfo
      */
     public function setParameterValue(?string $parameterValue = null): self
     {

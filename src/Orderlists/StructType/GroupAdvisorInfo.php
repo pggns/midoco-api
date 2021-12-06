@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class GroupAdvisorInfo extends AbstractStructBase
     /**
      * Set groupAdvisorName value
      * @param string $groupAdvisorName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo
      */
     public function setGroupAdvisorName(?string $groupAdvisorName = null): self
     {
@@ -102,7 +102,7 @@ class GroupAdvisorInfo extends AbstractStructBase
     /**
      * Set groupAdvisorMediatorId value
      * @param string $groupAdvisorMediatorId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo
      */
     public function setGroupAdvisorMediatorId(?string $groupAdvisorMediatorId = null): self
     {
@@ -125,7 +125,7 @@ class GroupAdvisorInfo extends AbstractStructBase
     /**
      * Set mediatorName value
      * @param string $mediatorName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo
      */
     public function setMediatorName(?string $mediatorName = null): self
     {
@@ -148,7 +148,7 @@ class GroupAdvisorInfo extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -171,7 +171,7 @@ class GroupAdvisorInfo extends AbstractStructBase
     /**
      * Set revenue value
      * @param float $revenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo
      */
     public function setRevenue(?float $revenue = null): self
     {
@@ -194,7 +194,7 @@ class GroupAdvisorInfo extends AbstractStructBase
     /**
      * Set creationMonth value
      * @param string $creationMonth
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\GroupAdvisorInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GroupAdvisorInfo
      */
     public function setCreationMonth(?string $creationMonth = null): self
     {

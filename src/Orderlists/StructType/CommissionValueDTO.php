@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class CommissionValueDTO extends AbstractStructBase
     /**
      * Set commissionId value
      * @param string $commissionId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CommissionValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CommissionValueDTO
      */
     public function setCommissionId(?string $commissionId = null): self
     {
@@ -102,7 +102,7 @@ class CommissionValueDTO extends AbstractStructBase
     /**
      * Set fix value
      * @param float $fix
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CommissionValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CommissionValueDTO
      */
     public function setFix(?float $fix = null): self
     {
@@ -125,7 +125,7 @@ class CommissionValueDTO extends AbstractStructBase
     /**
      * Set levelId value
      * @param string $levelId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CommissionValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CommissionValueDTO
      */
     public function setLevelId(?string $levelId = null): self
     {
@@ -148,7 +148,7 @@ class CommissionValueDTO extends AbstractStructBase
     /**
      * Set multiplyPax value
      * @param bool $multiplyPax
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CommissionValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CommissionValueDTO
      */
     public function setMultiplyPax(?bool $multiplyPax = null): self
     {
@@ -171,7 +171,7 @@ class CommissionValueDTO extends AbstractStructBase
     /**
      * Set passbackPercent value
      * @param float $passbackPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CommissionValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CommissionValueDTO
      */
     public function setPassbackPercent(?float $passbackPercent = null): self
     {
@@ -194,7 +194,7 @@ class CommissionValueDTO extends AbstractStructBase
     /**
      * Set percent value
      * @param float $percent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CommissionValueDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CommissionValueDTO
      */
     public function setPercent(?float $percent = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -68,7 +68,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSellItemError
-     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemErrorDTO[]
+     * @var \Pggns\MidocoApi\Orderlists\StructType\SellItemErrorDTO[]
      */
     protected ?array $MidocoSellItemError = null;
     /**
@@ -112,7 +112,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
      * @param float $itemPrice
      * @param string $startTravel
      * @param int $noOfPers
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemErrorDTO[] $midocoSellItemError
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SellItemErrorDTO[] $midocoSellItemError
      * @param string $itemDescription
      * @param string $endDate
      * @param string $supplierId
@@ -145,7 +145,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementInfo
      */
     public function setItemId(int $itemId): self
     {
@@ -168,7 +168,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementInfo
      */
     public function setOrderId(int $orderId): self
     {
@@ -191,7 +191,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementInfo
      */
     public function setOrderNo(int $orderNo): self
     {
@@ -214,7 +214,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     /**
      * Set accountId value
      * @param string $accountId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementInfo
      */
     public function setAccountId(string $accountId): self
     {
@@ -237,7 +237,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     /**
      * Set itemPrice value
      * @param float $itemPrice
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementInfo
      */
     public function setItemPrice(float $itemPrice): self
     {
@@ -260,7 +260,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementInfo
      */
     public function setStartTravel(string $startTravel): self
     {
@@ -283,7 +283,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     /**
      * Set noOfPers value
      * @param int $noOfPers
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementInfo
      */
     public function setNoOfPers(int $noOfPers): self
     {
@@ -297,7 +297,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     }
     /**
      * Get MidocoSellItemError value
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemErrorDTO[]
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemErrorDTO[]
      */
     public function getMidocoSellItemError(): ?array
     {
@@ -318,12 +318,12 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoSupplierSettlementInfoMidocoSellItemErrorItem) {
             // validation for constraint: itemType
-            if (!$midocoSupplierSettlementInfoMidocoSellItemErrorItem instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemErrorDTO) {
+            if (!$midocoSupplierSettlementInfoMidocoSellItemErrorItem instanceof \Pggns\MidocoApi\Orderlists\StructType\SellItemErrorDTO) {
                 $invalidValues[] = is_object($midocoSupplierSettlementInfoMidocoSellItemErrorItem) ? get_class($midocoSupplierSettlementInfoMidocoSellItemErrorItem) : sprintf('%s(%s)', gettype($midocoSupplierSettlementInfoMidocoSellItemErrorItem), var_export($midocoSupplierSettlementInfoMidocoSellItemErrorItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSellItemError property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemErrorDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSellItemError property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\SellItemErrorDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -332,8 +332,8 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     /**
      * Set MidocoSellItemError value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemErrorDTO[] $midocoSellItemError
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SellItemErrorDTO[] $midocoSellItemError
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementInfo
      */
     public function setMidocoSellItemError(?array $midocoSellItemError = null): self
     {
@@ -348,14 +348,14 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     /**
      * Add item to MidocoSellItemError value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemErrorDTO $item
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SellItemErrorDTO $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementInfo
      */
-    public function addToMidocoSellItemError(\Pggns\MidocoApi\Api\Orderlists\StructType\SellItemErrorDTO $item): self
+    public function addToMidocoSellItemError(\Pggns\MidocoApi\Orderlists\StructType\SellItemErrorDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemErrorDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSellItemError property can only contain items of type \Pggns\MidocoApi\Api\Orderlists\StructType\SellItemErrorDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\SellItemErrorDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSellItemError property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\SellItemErrorDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSellItemError[] = $item;
         
@@ -372,7 +372,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     /**
      * Set itemDescription value
      * @param string $itemDescription
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementInfo
      */
     public function setItemDescription(?string $itemDescription = null): self
     {
@@ -395,7 +395,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementInfo
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -418,7 +418,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementInfo
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -441,7 +441,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     /**
      * Set grantedRevenue value
      * @param float $grantedRevenue
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoSupplierSettlementInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSupplierSettlementInfo
      */
     public function setGrantedRevenue(?float $grantedRevenue = null): self
     {

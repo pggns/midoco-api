@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class MidocoSupplierAgencySettlementError extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAgencySettlementError
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencySettlementError
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -94,7 +94,7 @@ class MidocoSupplierAgencySettlementError extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAgencySettlementError
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencySettlementError
      */
     public function setBookingPosition(?int $bookingPosition = null): self
     {
@@ -117,7 +117,7 @@ class MidocoSupplierAgencySettlementError extends AbstractStructBase
     /**
      * Set errorText value
      * @param string $errorText
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAgencySettlementError
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencySettlementError
      */
     public function setErrorText(?string $errorText = null): self
     {
@@ -140,7 +140,7 @@ class MidocoSupplierAgencySettlementError extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAgencySettlementError
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencySettlementError
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -163,7 +163,7 @@ class MidocoSupplierAgencySettlementError extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoSupplierAgencySettlementError
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencySettlementError
      */
     public function setSupplierId(?string $supplierId = null): self
     {

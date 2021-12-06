@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoGlobalNotice extends GlobalNoticeDTO
     /**
      * Set manuallyCreatedTask value
      * @param bool $manuallyCreatedTask
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGlobalNotice
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoGlobalNotice
      */
     public function setManuallyCreatedTask(?bool $manuallyCreatedTask = null): self
     {
@@ -70,7 +70,7 @@ class MidocoGlobalNotice extends GlobalNoticeDTO
     /**
      * Set delegationComment value
      * @param string $delegationComment
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoGlobalNotice
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoGlobalNotice
      */
     public function setDelegationComment(?string $delegationComment = null): self
     {

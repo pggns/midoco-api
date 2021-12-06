@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,9 +17,9 @@ class SaveOnlyOrderRequest extends AbstractStructBase
      * The MidocoOrder
      * Meta information extracted from the WSDL
      * - ref: MidocoOrder
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $MidocoOrder = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $MidocoOrder = null;
     /**
      * The isImport
      * @var bool|null
@@ -35,11 +35,11 @@ class SaveOnlyOrderRequest extends AbstractStructBase
      * @uses SaveOnlyOrderRequest::setMidocoOrder()
      * @uses SaveOnlyOrderRequest::setIsImport()
      * @uses SaveOnlyOrderRequest::setUpdateTravelIntent()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
      * @param bool $isImport
      * @param bool $updateTravelIntent
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null, ?bool $isImport = null, ?bool $updateTravelIntent = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null, ?bool $isImport = null, ?bool $updateTravelIntent = null)
     {
         $this
             ->setMidocoOrder($midocoOrder)
@@ -48,18 +48,18 @@ class SaveOnlyOrderRequest extends AbstractStructBase
     }
     /**
      * Get MidocoOrder value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderType|null
      */
-    public function getMidocoOrder(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType
+    public function getMidocoOrder(): ?\Pggns\MidocoApi\Order\StructType\MidocoOrderType
     {
         return $this->MidocoOrder;
     }
     /**
      * Set MidocoOrder value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOnlyOrderRequest
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOnlyOrderRequest
      */
-    public function setMidocoOrder(?\Pggns\MidocoApi\Api\Order\StructType\MidocoOrderType $midocoOrder = null): self
+    public function setMidocoOrder(?\Pggns\MidocoApi\Order\StructType\MidocoOrderType $midocoOrder = null): self
     {
         $this->MidocoOrder = $midocoOrder;
         
@@ -76,7 +76,7 @@ class SaveOnlyOrderRequest extends AbstractStructBase
     /**
      * Set isImport value
      * @param bool $isImport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOnlyOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOnlyOrderRequest
      */
     public function setIsImport(?bool $isImport = null): self
     {
@@ -99,7 +99,7 @@ class SaveOnlyOrderRequest extends AbstractStructBase
     /**
      * Set updateTravelIntent value
      * @param bool $updateTravelIntent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SaveOnlyOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOnlyOrderRequest
      */
     public function setUpdateTravelIntent(?bool $updateTravelIntent = null): self
     {

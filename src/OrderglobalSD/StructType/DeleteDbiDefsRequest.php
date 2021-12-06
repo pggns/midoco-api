@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class DeleteDbiDefsRequest extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DeleteDbiDefsRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DeleteDbiDefsRequest
      */
     public function setCcNo(string $ccNo): self
     {
@@ -74,7 +74,7 @@ class DeleteDbiDefsRequest extends AbstractStructBase
     /**
      * Set dbiKey value
      * @param string $dbiKey
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DeleteDbiDefsRequest
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DeleteDbiDefsRequest
      */
     public function setDbiKey(string $dbiKey): self
     {

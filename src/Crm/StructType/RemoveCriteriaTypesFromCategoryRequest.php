@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -53,7 +53,7 @@ class RemoveCriteriaTypesFromCategoryRequest extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\RemoveCriteriaTypesFromCategoryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\RemoveCriteriaTypesFromCategoryRequest
      */
     public function setCategoryId(int $categoryId): self
     {
@@ -103,7 +103,7 @@ class RemoveCriteriaTypesFromCategoryRequest extends AbstractStructBase
      * Set MidocoCriteriaTypeId value
      * @throws InvalidArgumentException
      * @param string[] $midocoCriteriaTypeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\RemoveCriteriaTypesFromCategoryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\RemoveCriteriaTypesFromCategoryRequest
      */
     public function setMidocoCriteriaTypeId(?array $midocoCriteriaTypeId = null): self
     {
@@ -119,7 +119,7 @@ class RemoveCriteriaTypesFromCategoryRequest extends AbstractStructBase
      * Add item to MidocoCriteriaTypeId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\RemoveCriteriaTypesFromCategoryRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\RemoveCriteriaTypesFromCategoryRequest
      */
     public function addToMidocoCriteriaTypeId(string $item): self
     {

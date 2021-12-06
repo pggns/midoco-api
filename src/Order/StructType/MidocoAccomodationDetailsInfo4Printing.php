@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class MidocoAccomodationDetailsInfo4Printing extends AccomodationDetailDTO
      * Set assignedPassengers value
      * @throws InvalidArgumentException
      * @param int[] $assignedPassengers
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAccomodationDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAccomodationDetailsInfo4Printing
      */
     public function setAssignedPassengers(?array $assignedPassengers = null): self
     {
@@ -85,7 +85,7 @@ class MidocoAccomodationDetailsInfo4Printing extends AccomodationDetailDTO
      * Add item to assignedPassengers value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoAccomodationDetailsInfo4Printing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoAccomodationDetailsInfo4Printing
      */
     public function addToAssignedPassengers(int $item): self
     {

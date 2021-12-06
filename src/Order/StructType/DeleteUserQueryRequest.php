@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteUserQueryRequest extends AbstractStructBase
     /**
      * Set queryId value
      * @param int $queryId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteUserQueryRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteUserQueryRequest
      */
     public function setQueryId(?int $queryId = null): self
     {

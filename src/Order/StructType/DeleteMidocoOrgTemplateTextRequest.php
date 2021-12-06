@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteMidocoOrgTemplateTextRequest extends AbstractStructBase
     /**
      * Set org_template_id value
      * @param int $org_template_id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\DeleteMidocoOrgTemplateTextRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteMidocoOrgTemplateTextRequest
      */
     public function setOrg_template_id(?int $org_template_id = null): self
     {

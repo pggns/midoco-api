@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderglobalSD\StructType;
+namespace Pggns\MidocoApi\OrderglobalSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -151,7 +151,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -174,7 +174,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -197,7 +197,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -220,7 +220,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set dbiKey value
      * @param string $dbiKey
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setDbiKey(?string $dbiKey = null): self
     {
@@ -243,7 +243,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -266,7 +266,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -289,7 +289,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set mapping value
      * @param string $mapping
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setMapping(?string $mapping = null): self
     {
@@ -312,7 +312,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set matchCriteria value
      * @param string $matchCriteria
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setMatchCriteria(?string $matchCriteria = null): self
     {
@@ -335,7 +335,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set maxlength value
      * @param int $maxlength
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setMaxlength(?int $maxlength = null): self
     {
@@ -358,7 +358,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set minlength value
      * @param int $minlength
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setMinlength(?int $minlength = null): self
     {
@@ -381,7 +381,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -404,7 +404,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -427,7 +427,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -450,7 +450,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set rule value
      * @param string $rule
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setRule(?string $rule = null): self
     {
@@ -473,7 +473,7 @@ class DbiDefDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\OrderglobalSD\StructType\DbiDefDTO
+     * @return \Pggns\MidocoApi\OrderglobalSD\StructType\DbiDefDTO
      */
     public function setType(?string $type = null): self
     {

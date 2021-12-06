@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoCashBookItemType extends CashBookItemTypeDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoCashBookItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoCashBookItemType
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {

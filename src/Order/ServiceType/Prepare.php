@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\ServiceType;
+namespace Pggns\MidocoApi\Order\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Prepare extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Order\ServiceType\Prepare
+     * @return \Pggns\MidocoApi\Order\ServiceType\Prepare
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Prepare extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrepareMidocoMailMessageRequest $paramPrepareMidocoMailMessageRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMidocoMailMessageResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PrepareMidocoMailMessageRequest $paramPrepareMidocoMailMessageRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMidocoMailMessageResponse|bool
      */
-    public function prepareMidocoMailMessage(\Pggns\MidocoApi\Api\Order\StructType\PrepareMidocoMailMessageRequest $paramPrepareMidocoMailMessageRequest)
+    public function prepareMidocoMailMessage(\Pggns\MidocoApi\Order\StructType\PrepareMidocoMailMessageRequest $paramPrepareMidocoMailMessageRequest)
     {
         try {
             $this->setResult($resultPrepareMidocoMailMessage = $this->getSoapClient()->__soapCall('prepareMidocoMailMessage', [
@@ -58,15 +58,15 @@ class Prepare extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrepareMediatorSettlementRequest $paramPrepareMediatorSettlementRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMediatorSettlementResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PrepareMediatorSettlementRequest $paramPrepareMediatorSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMediatorSettlementResponse|bool
      */
-    public function prepareMediatorSettlement(\Pggns\MidocoApi\Api\Order\StructType\PrepareMediatorSettlementRequest $paramPrepareMediatorSettlementRequest)
+    public function prepareMediatorSettlement(\Pggns\MidocoApi\Order\StructType\PrepareMediatorSettlementRequest $paramPrepareMediatorSettlementRequest)
     {
         try {
             $this->setResult($resultPrepareMediatorSettlement = $this->getSoapClient()->__soapCall('prepareMediatorSettlement', [
@@ -85,15 +85,15 @@ class Prepare extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrepareAgencyProvisionRequest $paramPrepareAgencyProvisionRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAgencyProvisionResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PrepareAgencyProvisionRequest $paramPrepareAgencyProvisionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAgencyProvisionResponse|bool
      */
-    public function prepareAgencyProvision(\Pggns\MidocoApi\Api\Order\StructType\PrepareAgencyProvisionRequest $paramPrepareAgencyProvisionRequest)
+    public function prepareAgencyProvision(\Pggns\MidocoApi\Order\StructType\PrepareAgencyProvisionRequest $paramPrepareAgencyProvisionRequest)
     {
         try {
             $this->setResult($resultPrepareAgencyProvision = $this->getSoapClient()->__soapCall('prepareAgencyProvision', [
@@ -112,15 +112,15 @@ class Prepare extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrepareGroupAdvisorCommissionRequest $paramPrepareGroupAdvisorCommissionRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareGroupAdvisorCommissionResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PrepareGroupAdvisorCommissionRequest $paramPrepareGroupAdvisorCommissionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareGroupAdvisorCommissionResponse|bool
      */
-    public function prepareGroupAdvisorCommission(\Pggns\MidocoApi\Api\Order\StructType\PrepareGroupAdvisorCommissionRequest $paramPrepareGroupAdvisorCommissionRequest)
+    public function prepareGroupAdvisorCommission(\Pggns\MidocoApi\Order\StructType\PrepareGroupAdvisorCommissionRequest $paramPrepareGroupAdvisorCommissionRequest)
     {
         try {
             $this->setResult($resultPrepareGroupAdvisorCommission = $this->getSoapClient()->__soapCall('prepareGroupAdvisorCommission', [
@@ -139,15 +139,15 @@ class Prepare extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrepareAgenciesListForSettlementRequest $paramPrepareAgenciesListForSettlementRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAgenciesListForSettlementResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PrepareAgenciesListForSettlementRequest $paramPrepareAgenciesListForSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAgenciesListForSettlementResponse|bool
      */
-    public function prepareAgenciesListForSettlement(\Pggns\MidocoApi\Api\Order\StructType\PrepareAgenciesListForSettlementRequest $paramPrepareAgenciesListForSettlementRequest)
+    public function prepareAgenciesListForSettlement(\Pggns\MidocoApi\Order\StructType\PrepareAgenciesListForSettlementRequest $paramPrepareAgenciesListForSettlementRequest)
     {
         try {
             $this->setResult($resultPrepareAgenciesListForSettlement = $this->getSoapClient()->__soapCall('prepareAgenciesListForSettlement', [
@@ -166,15 +166,15 @@ class Prepare extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrepareBillingDocumentForCustomerRequest $paramPrepareBillingDocumentForCustomerRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareBillingDocumentForCustomerResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PrepareBillingDocumentForCustomerRequest $paramPrepareBillingDocumentForCustomerRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareBillingDocumentForCustomerResponse|bool
      */
-    public function prepareBillingDocumentForCustomer(\Pggns\MidocoApi\Api\Order\StructType\PrepareBillingDocumentForCustomerRequest $paramPrepareBillingDocumentForCustomerRequest)
+    public function prepareBillingDocumentForCustomer(\Pggns\MidocoApi\Order\StructType\PrepareBillingDocumentForCustomerRequest $paramPrepareBillingDocumentForCustomerRequest)
     {
         try {
             $this->setResult($resultPrepareBillingDocumentForCustomer = $this->getSoapClient()->__soapCall('prepareBillingDocumentForCustomer', [
@@ -193,15 +193,15 @@ class Prepare extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrepareDunningBillingsRequest $paramPrepareDunningBillingsRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareDunningBillingsResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PrepareDunningBillingsRequest $paramPrepareDunningBillingsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareDunningBillingsResponse|bool
      */
-    public function prepareDunningBillings(\Pggns\MidocoApi\Api\Order\StructType\PrepareDunningBillingsRequest $paramPrepareDunningBillingsRequest)
+    public function prepareDunningBillings(\Pggns\MidocoApi\Order\StructType\PrepareDunningBillingsRequest $paramPrepareDunningBillingsRequest)
     {
         try {
             $this->setResult($resultPrepareDunningBillings = $this->getSoapClient()->__soapCall('prepareDunningBillings', [
@@ -220,15 +220,15 @@ class Prepare extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceRequest $paramPrepareAdviceRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PrepareAdviceRequest $paramPrepareAdviceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoResponse|bool
      */
-    public function prepareAdvice(\Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceRequest $paramPrepareAdviceRequest)
+    public function prepareAdvice(\Pggns\MidocoApi\Order\StructType\PrepareAdviceRequest $paramPrepareAdviceRequest)
     {
         try {
             $this->setResult($resultPrepareAdvice = $this->getSoapClient()->__soapCall('prepareAdvice', [
@@ -247,15 +247,15 @@ class Prepare extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrepareCommissionInvoiceRequest $paramPrepareCommissionInvoiceRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PrepareCommissionInvoiceRequest $paramPrepareCommissionInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoResponse|bool
      */
-    public function prepareCommissionInvoice(\Pggns\MidocoApi\Api\Order\StructType\PrepareCommissionInvoiceRequest $paramPrepareCommissionInvoiceRequest)
+    public function prepareCommissionInvoice(\Pggns\MidocoApi\Order\StructType\PrepareCommissionInvoiceRequest $paramPrepareCommissionInvoiceRequest)
     {
         try {
             $this->setResult($resultPrepareCommissionInvoice = $this->getSoapClient()->__soapCall('prepareCommissionInvoice', [
@@ -274,15 +274,15 @@ class Prepare extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrepareMidocoSettlementRequest $paramPrepareMidocoSettlementRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareMidocoSettlementResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PrepareMidocoSettlementRequest $paramPrepareMidocoSettlementRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareMidocoSettlementResponse|bool
      */
-    public function prepareMidocoSettlement(\Pggns\MidocoApi\Api\Order\StructType\PrepareMidocoSettlementRequest $paramPrepareMidocoSettlementRequest)
+    public function prepareMidocoSettlement(\Pggns\MidocoApi\Order\StructType\PrepareMidocoSettlementRequest $paramPrepareMidocoSettlementRequest)
     {
         try {
             $this->setResult($resultPrepareMidocoSettlement = $this->getSoapClient()->__soapCall('prepareMidocoSettlement', [
@@ -301,15 +301,15 @@ class Prepare extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest $paramPreparePseudoRevenueBookingRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest $paramPreparePseudoRevenueBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingResponse|bool
      */
-    public function preparePseudoRevenueBooking(\Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingRequest $paramPreparePseudoRevenueBookingRequest)
+    public function preparePseudoRevenueBooking(\Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingRequest $paramPreparePseudoRevenueBookingRequest)
     {
         try {
             $this->setResult($resultPreparePseudoRevenueBooking = $this->getSoapClient()->__soapCall('preparePseudoRevenueBooking', [
@@ -328,15 +328,15 @@ class Prepare extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\PrepareSubOrdersRequest $paramPrepareSubOrdersRequest
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareSubOrdersResponse|bool
+     * @param \Pggns\MidocoApi\Order\StructType\PrepareSubOrdersRequest $paramPrepareSubOrdersRequest
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareSubOrdersResponse|bool
      */
-    public function prepareSubOrders(\Pggns\MidocoApi\Api\Order\StructType\PrepareSubOrdersRequest $paramPrepareSubOrdersRequest)
+    public function prepareSubOrders(\Pggns\MidocoApi\Order\StructType\PrepareSubOrdersRequest $paramPrepareSubOrdersRequest)
     {
         try {
             $this->setResult($resultPrepareSubOrders = $this->getSoapClient()->__soapCall('prepareSubOrders', [
@@ -353,7 +353,7 @@ class Prepare extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Order\StructType\PrepareAdviceInfoResponse|\Pggns\MidocoApi\Api\Order\StructType\PrepareAgenciesListForSettlementResponse|\Pggns\MidocoApi\Api\Order\StructType\PrepareAgencyProvisionResponse|\Pggns\MidocoApi\Api\Order\StructType\PrepareBillingDocumentForCustomerResponse|\Pggns\MidocoApi\Api\Order\StructType\PrepareDunningBillingsResponse|\Pggns\MidocoApi\Api\Order\StructType\PrepareGroupAdvisorCommissionResponse|\Pggns\MidocoApi\Api\Order\StructType\PrepareMediatorSettlementResponse|\Pggns\MidocoApi\Api\Order\StructType\PrepareMidocoMailMessageResponse|\Pggns\MidocoApi\Api\Order\StructType\PrepareMidocoSettlementResponse|\Pggns\MidocoApi\Api\Order\StructType\PreparePseudoRevenueBookingResponse|\Pggns\MidocoApi\Api\Order\StructType\PrepareSubOrdersResponse
+     * @return \Pggns\MidocoApi\Order\StructType\PrepareAdviceInfoResponse|\Pggns\MidocoApi\Order\StructType\PrepareAgenciesListForSettlementResponse|\Pggns\MidocoApi\Order\StructType\PrepareAgencyProvisionResponse|\Pggns\MidocoApi\Order\StructType\PrepareBillingDocumentForCustomerResponse|\Pggns\MidocoApi\Order\StructType\PrepareDunningBillingsResponse|\Pggns\MidocoApi\Order\StructType\PrepareGroupAdvisorCommissionResponse|\Pggns\MidocoApi\Order\StructType\PrepareMediatorSettlementResponse|\Pggns\MidocoApi\Order\StructType\PrepareMidocoMailMessageResponse|\Pggns\MidocoApi\Order\StructType\PrepareMidocoSettlementResponse|\Pggns\MidocoApi\Order\StructType\PreparePseudoRevenueBookingResponse|\Pggns\MidocoApi\Order\StructType\PrepareSubOrdersResponse
      */
     public function getResult()
     {

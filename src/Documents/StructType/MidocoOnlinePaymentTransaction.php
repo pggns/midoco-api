@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -69,7 +69,7 @@ class MidocoOnlinePaymentTransaction extends OnlinePaymentTransactionDTO
      * Set errorArgs value
      * @throws InvalidArgumentException
      * @param string[] $errorArgs
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransaction
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransaction
      */
     public function setErrorArgs(?array $errorArgs = null): self
     {
@@ -85,7 +85,7 @@ class MidocoOnlinePaymentTransaction extends OnlinePaymentTransactionDTO
      * Add item to errorArgs value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoOnlinePaymentTransaction
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoOnlinePaymentTransaction
      */
     public function addToErrorArgs(string $item): self
     {

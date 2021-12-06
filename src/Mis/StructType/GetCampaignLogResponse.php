@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -21,13 +21,13 @@ class GetCampaignLogResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoLogEntry
-     * @var \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO[]
+     * @var \Pggns\MidocoApi\Mis\StructType\LogentryDTO[]
      */
     protected ?array $MidocoLogEntry = null;
     /**
      * Constructor method for GetCampaignLogResponse
      * @uses GetCampaignLogResponse::setMidocoLogEntry()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO[] $midocoLogEntry
+     * @param \Pggns\MidocoApi\Mis\StructType\LogentryDTO[] $midocoLogEntry
      */
     public function __construct(?array $midocoLogEntry = null)
     {
@@ -36,7 +36,7 @@ class GetCampaignLogResponse extends AbstractStructBase
     }
     /**
      * Get MidocoLogEntry value
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO[]
+     * @return \Pggns\MidocoApi\Mis\StructType\LogentryDTO[]
      */
     public function getMidocoLogEntry(): ?array
     {
@@ -57,12 +57,12 @@ class GetCampaignLogResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCampaignLogResponseMidocoLogEntryItem) {
             // validation for constraint: itemType
-            if (!$getCampaignLogResponseMidocoLogEntryItem instanceof \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO) {
+            if (!$getCampaignLogResponseMidocoLogEntryItem instanceof \Pggns\MidocoApi\Mis\StructType\LogentryDTO) {
                 $invalidValues[] = is_object($getCampaignLogResponseMidocoLogEntryItem) ? get_class($getCampaignLogResponseMidocoLogEntryItem) : sprintf('%s(%s)', gettype($getCampaignLogResponseMidocoLogEntryItem), var_export($getCampaignLogResponseMidocoLogEntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoLogEntry property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoLogEntry property can only contain items of type \Pggns\MidocoApi\Mis\StructType\LogentryDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,8 +71,8 @@ class GetCampaignLogResponse extends AbstractStructBase
     /**
      * Set MidocoLogEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO[] $midocoLogEntry
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignLogResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\LogentryDTO[] $midocoLogEntry
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignLogResponse
      */
     public function setMidocoLogEntry(?array $midocoLogEntry = null): self
     {
@@ -87,14 +87,14 @@ class GetCampaignLogResponse extends AbstractStructBase
     /**
      * Add item to MidocoLogEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO $item
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\GetCampaignLogResponse
+     * @param \Pggns\MidocoApi\Mis\StructType\LogentryDTO $item
+     * @return \Pggns\MidocoApi\Mis\StructType\GetCampaignLogResponse
      */
-    public function addToMidocoLogEntry(\Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO $item): self
+    public function addToMidocoLogEntry(\Pggns\MidocoApi\Mis\StructType\LogentryDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoLogEntry property can only contain items of type \Pggns\MidocoApi\Api\Mis\StructType\LogentryDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Mis\StructType\LogentryDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoLogEntry property can only contain items of type \Pggns\MidocoApi\Mis\StructType\LogentryDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoLogEntry[] = $item;
         

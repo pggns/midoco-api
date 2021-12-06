@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class LockCustomerByDebitorRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\LockCustomerByDebitorRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\LockCustomerByDebitorRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -86,7 +86,7 @@ class LockCustomerByDebitorRequest extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\LockCustomerByDebitorRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\LockCustomerByDebitorRequest
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -109,7 +109,7 @@ class LockCustomerByDebitorRequest extends AbstractStructBase
     /**
      * Set locked value
      * @param bool $locked
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\LockCustomerByDebitorRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\LockCustomerByDebitorRequest
      */
     public function setLocked(?bool $locked = null): self
     {
@@ -132,7 +132,7 @@ class LockCustomerByDebitorRequest extends AbstractStructBase
     /**
      * Set lockReason value
      * @param string $lockReason
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\LockCustomerByDebitorRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\LockCustomerByDebitorRequest
      */
     public function setLockReason(?string $lockReason = null): self
     {

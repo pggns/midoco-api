@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class DeleteSupplierReportFormatRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\DeleteSupplierReportFormatRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteSupplierReportFormatRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {

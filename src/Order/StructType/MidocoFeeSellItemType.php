@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,17 +17,17 @@ class MidocoFeeSellItemType extends SellItemDTO
      * The MidocoCalcItem
      * Meta information extracted from the WSDL
      * - ref: MidocoCalcItem
-     * @var \Pggns\MidocoApi\Api\Order\StructType\CalcitemDTO|null
+     * @var \Pggns\MidocoApi\Order\StructType\CalcitemDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\CalcitemDTO $MidocoCalcItem = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\CalcitemDTO $MidocoCalcItem = null;
     /**
      * The MidocoSellItemPricing
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoSellItemPricing
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing|null
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing|null
      */
-    protected ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing $MidocoSellItemPricing = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing $MidocoSellItemPricing = null;
     /**
      * The isUseCustomerCurrency
      * Meta information extracted from the WSDL
@@ -124,8 +124,8 @@ class MidocoFeeSellItemType extends SellItemDTO
      * @uses MidocoFeeSellItemType::setNoFeePrevDayCategory()
      * @uses MidocoFeeSellItemType::setOneFeeRelatedTicketsImport()
      * @uses MidocoFeeSellItemType::setFeePriority()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CalcitemDTO $midocoCalcItem
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing
+     * @param \Pggns\MidocoApi\Order\StructType\CalcitemDTO $midocoCalcItem
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing
      * @param bool $isUseCustomerCurrency
      * @param bool $dbUsePerMatch
      * @param bool $perPax
@@ -142,7 +142,7 @@ class MidocoFeeSellItemType extends SellItemDTO
      * @param bool $oneFeeRelatedTicketsImport
      * @param int $feePriority
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Order\StructType\CalcitemDTO $midocoCalcItem = null, ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing = null, ?bool $isUseCustomerCurrency = false, ?bool $dbUsePerMatch = null, ?bool $perPax = null, ?bool $dbMatchOnItemPrice = null, ?bool $forOrder = null, ?bool $isPercentage = null, ?float $percentage = null, ?bool $isNettoFeeValue = null, ?bool $takeParentVat = null, ?bool $noFeeSameDay = null, ?string $noFeeSameDayCategory = null, ?bool $noFeePrevDay = null, ?string $noFeePrevDayCategory = null, ?bool $oneFeeRelatedTicketsImport = null, ?int $feePriority = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\CalcitemDTO $midocoCalcItem = null, ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing = null, ?bool $isUseCustomerCurrency = false, ?bool $dbUsePerMatch = null, ?bool $perPax = null, ?bool $dbMatchOnItemPrice = null, ?bool $forOrder = null, ?bool $isPercentage = null, ?float $percentage = null, ?bool $isNettoFeeValue = null, ?bool $takeParentVat = null, ?bool $noFeeSameDay = null, ?string $noFeeSameDayCategory = null, ?bool $noFeePrevDay = null, ?string $noFeePrevDayCategory = null, ?bool $oneFeeRelatedTicketsImport = null, ?int $feePriority = null)
     {
         $this
             ->setMidocoCalcItem($midocoCalcItem)
@@ -165,18 +165,18 @@ class MidocoFeeSellItemType extends SellItemDTO
     }
     /**
      * Get MidocoCalcItem value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CalcitemDTO|null
+     * @return \Pggns\MidocoApi\Order\StructType\CalcitemDTO|null
      */
-    public function getMidocoCalcItem(): ?\Pggns\MidocoApi\Api\Order\StructType\CalcitemDTO
+    public function getMidocoCalcItem(): ?\Pggns\MidocoApi\Order\StructType\CalcitemDTO
     {
         return $this->MidocoCalcItem;
     }
     /**
      * Set MidocoCalcItem value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\CalcitemDTO $midocoCalcItem
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @param \Pggns\MidocoApi\Order\StructType\CalcitemDTO $midocoCalcItem
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
-    public function setMidocoCalcItem(?\Pggns\MidocoApi\Api\Order\StructType\CalcitemDTO $midocoCalcItem = null): self
+    public function setMidocoCalcItem(?\Pggns\MidocoApi\Order\StructType\CalcitemDTO $midocoCalcItem = null): self
     {
         $this->MidocoCalcItem = $midocoCalcItem;
         
@@ -184,18 +184,18 @@ class MidocoFeeSellItemType extends SellItemDTO
     }
     /**
      * Get MidocoSellItemPricing value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing|null
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing|null
      */
-    public function getMidocoSellItemPricing(): ?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing
+    public function getMidocoSellItemPricing(): ?\Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing
     {
         return $this->MidocoSellItemPricing;
     }
     /**
      * Set MidocoSellItemPricing value
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
-    public function setMidocoSellItemPricing(?\Pggns\MidocoApi\Api\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing = null): self
+    public function setMidocoSellItemPricing(?\Pggns\MidocoApi\Order\StructType\MidocoSellItemPricing $midocoSellItemPricing = null): self
     {
         $this->MidocoSellItemPricing = $midocoSellItemPricing;
         
@@ -212,7 +212,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set isUseCustomerCurrency value
      * @param bool $isUseCustomerCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setIsUseCustomerCurrency(?bool $isUseCustomerCurrency = false): self
     {
@@ -235,7 +235,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set dbUsePerMatch value
      * @param bool $dbUsePerMatch
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setDbUsePerMatch(?bool $dbUsePerMatch = null): self
     {
@@ -258,7 +258,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set perPax value
      * @param bool $perPax
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setPerPax(?bool $perPax = null): self
     {
@@ -281,7 +281,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set dbMatchOnItemPrice value
      * @param bool $dbMatchOnItemPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setDbMatchOnItemPrice(?bool $dbMatchOnItemPrice = null): self
     {
@@ -304,7 +304,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set forOrder value
      * @param bool $forOrder
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setForOrder(?bool $forOrder = null): self
     {
@@ -327,7 +327,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set isPercentage value
      * @param bool $isPercentage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setIsPercentage(?bool $isPercentage = null): self
     {
@@ -350,7 +350,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set percentage value
      * @param float $percentage
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setPercentage(?float $percentage = null): self
     {
@@ -373,7 +373,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set isNettoFeeValue value
      * @param bool $isNettoFeeValue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setIsNettoFeeValue(?bool $isNettoFeeValue = null): self
     {
@@ -396,7 +396,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set takeParentVat value
      * @param bool $takeParentVat
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setTakeParentVat(?bool $takeParentVat = null): self
     {
@@ -419,7 +419,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set noFeeSameDay value
      * @param bool $noFeeSameDay
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setNoFeeSameDay(?bool $noFeeSameDay = null): self
     {
@@ -442,7 +442,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set noFeeSameDayCategory value
      * @param string $noFeeSameDayCategory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setNoFeeSameDayCategory(?string $noFeeSameDayCategory = null): self
     {
@@ -465,7 +465,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set noFeePrevDay value
      * @param bool $noFeePrevDay
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setNoFeePrevDay(?bool $noFeePrevDay = null): self
     {
@@ -488,7 +488,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set noFeePrevDayCategory value
      * @param string $noFeePrevDayCategory
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setNoFeePrevDayCategory(?string $noFeePrevDayCategory = null): self
     {
@@ -511,7 +511,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set oneFeeRelatedTicketsImport value
      * @param bool $oneFeeRelatedTicketsImport
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setOneFeeRelatedTicketsImport(?bool $oneFeeRelatedTicketsImport = null): self
     {
@@ -534,7 +534,7 @@ class MidocoFeeSellItemType extends SellItemDTO
     /**
      * Set feePriority value
      * @param int $feePriority
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoFeeSellItemType
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoFeeSellItemType
      */
     public function setFeePriority(?int $feePriority = null): self
     {

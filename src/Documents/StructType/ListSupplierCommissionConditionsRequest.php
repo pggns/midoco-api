@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class ListSupplierCommissionConditionsRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSupplierCommissionConditionsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSupplierCommissionConditionsRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -70,7 +70,7 @@ class ListSupplierCommissionConditionsRequest extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\ListSupplierCommissionConditionsRequest
+     * @return \Pggns\MidocoApi\Documents\StructType\ListSupplierCommissionConditionsRequest
      */
     public function setOrgunit(?string $orgunit = null): self
     {

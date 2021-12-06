@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class GetCcProxySingleUseTokenValueResponse extends AbstractStructBase
     /**
      * Set tokenValue value
      * @param string $tokenValue
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetCcProxySingleUseTokenValueResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetCcProxySingleUseTokenValueResponse
      */
     public function setTokenValue(?string $tokenValue = null): self
     {
@@ -88,7 +88,7 @@ class GetCcProxySingleUseTokenValueResponse extends AbstractStructBase
     /**
      * Set sensitiveId value
      * @param string $sensitiveId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetCcProxySingleUseTokenValueResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetCcProxySingleUseTokenValueResponse
      */
     public function setSensitiveId(?string $sensitiveId = null): self
     {
@@ -111,7 +111,7 @@ class GetCcProxySingleUseTokenValueResponse extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetCcProxySingleUseTokenValueResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetCcProxySingleUseTokenValueResponse
      */
     public function setUserId(?int $userId = null): self
     {
@@ -134,7 +134,7 @@ class GetCcProxySingleUseTokenValueResponse extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\GetCcProxySingleUseTokenValueResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\GetCcProxySingleUseTokenValueResponse
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

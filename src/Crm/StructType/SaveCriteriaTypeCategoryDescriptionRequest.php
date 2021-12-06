@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveCriteriaTypeCategoryDescriptionRequest extends AbstractStructBase
      * The MidocoCriteriaTypeCategoryDescription
      * Meta information extracted from the WSDL
      * - ref: MidocoCriteriaTypeCategoryDescription
-     * @var \Pggns\MidocoApi\Api\Crm\StructType\CritTypeCatDescrDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\CritTypeCatDescrDTO|null
      */
-    protected ?\Pggns\MidocoApi\Api\Crm\StructType\CritTypeCatDescrDTO $MidocoCriteriaTypeCategoryDescription = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\CritTypeCatDescrDTO $MidocoCriteriaTypeCategoryDescription = null;
     /**
      * Constructor method for SaveCriteriaTypeCategoryDescriptionRequest
      * @uses SaveCriteriaTypeCategoryDescriptionRequest::setMidocoCriteriaTypeCategoryDescription()
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CritTypeCatDescrDTO $midocoCriteriaTypeCategoryDescription
+     * @param \Pggns\MidocoApi\Crm\StructType\CritTypeCatDescrDTO $midocoCriteriaTypeCategoryDescription
      */
-    public function __construct(?\Pggns\MidocoApi\Api\Crm\StructType\CritTypeCatDescrDTO $midocoCriteriaTypeCategoryDescription = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CritTypeCatDescrDTO $midocoCriteriaTypeCategoryDescription = null)
     {
         $this
             ->setMidocoCriteriaTypeCategoryDescription($midocoCriteriaTypeCategoryDescription);
     }
     /**
      * Get MidocoCriteriaTypeCategoryDescription value
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CritTypeCatDescrDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\CritTypeCatDescrDTO|null
      */
-    public function getMidocoCriteriaTypeCategoryDescription(): ?\Pggns\MidocoApi\Api\Crm\StructType\CritTypeCatDescrDTO
+    public function getMidocoCriteriaTypeCategoryDescription(): ?\Pggns\MidocoApi\Crm\StructType\CritTypeCatDescrDTO
     {
         return $this->MidocoCriteriaTypeCategoryDescription;
     }
     /**
      * Set MidocoCriteriaTypeCategoryDescription value
-     * @param \Pggns\MidocoApi\Api\Crm\StructType\CritTypeCatDescrDTO $midocoCriteriaTypeCategoryDescription
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\SaveCriteriaTypeCategoryDescriptionRequest
+     * @param \Pggns\MidocoApi\Crm\StructType\CritTypeCatDescrDTO $midocoCriteriaTypeCategoryDescription
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveCriteriaTypeCategoryDescriptionRequest
      */
-    public function setMidocoCriteriaTypeCategoryDescription(?\Pggns\MidocoApi\Api\Crm\StructType\CritTypeCatDescrDTO $midocoCriteriaTypeCategoryDescription = null): self
+    public function setMidocoCriteriaTypeCategoryDescription(?\Pggns\MidocoApi\Crm\StructType\CritTypeCatDescrDTO $midocoCriteriaTypeCategoryDescription = null): self
     {
         $this->MidocoCriteriaTypeCategoryDescription = $midocoCriteriaTypeCategoryDescription;
         

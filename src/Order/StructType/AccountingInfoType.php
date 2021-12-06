@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -231,7 +231,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -254,7 +254,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -277,7 +277,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set tourOperator value
      * @param string $tourOperator
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setTourOperator(?string $tourOperator = null): self
     {
@@ -300,7 +300,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -323,7 +323,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set noOfPassengers value
      * @param int $noOfPassengers
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setNoOfPassengers(?int $noOfPassengers = null): self
     {
@@ -346,7 +346,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -369,7 +369,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -392,7 +392,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setDestination(?string $destination = null): self
     {
@@ -415,7 +415,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set salePrice value
      * @param float $salePrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setSalePrice(?float $salePrice = null): self
     {
@@ -438,7 +438,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set buyPrice value
      * @param float $buyPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setBuyPrice(?float $buyPrice = null): self
     {
@@ -461,7 +461,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set mediatorCommCalc value
      * @param float $mediatorCommCalc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setMediatorCommCalc(?float $mediatorCommCalc = null): self
     {
@@ -484,7 +484,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set mediatorCommPaid value
      * @param float $mediatorCommPaid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setMediatorCommPaid(?float $mediatorCommPaid = null): self
     {
@@ -507,7 +507,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set agencyCommCalc value
      * @param float $agencyCommCalc
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setAgencyCommCalc(?float $agencyCommCalc = null): self
     {
@@ -530,7 +530,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set agencyCommPaid value
      * @param float $agencyCommPaid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setAgencyCommPaid(?float $agencyCommPaid = null): self
     {
@@ -553,7 +553,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set inkassoPrice value
      * @param float $inkassoPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setInkassoPrice(?float $inkassoPrice = null): self
     {
@@ -576,7 +576,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set revenueSum value
      * @param float $revenueSum
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setRevenueSum(?float $revenueSum = null): self
     {
@@ -599,7 +599,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set calcRevenue value
      * @param float $calcRevenue
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setCalcRevenue(?float $calcRevenue = null): self
     {
@@ -622,7 +622,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set revenueBookingSum value
      * @param float $revenueBookingSum
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setRevenueBookingSum(?float $revenueBookingSum = null): self
     {
@@ -645,7 +645,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set revenueBookingOpen value
      * @param float $revenueBookingOpen
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setRevenueBookingOpen(?float $revenueBookingOpen = null): self
     {
@@ -668,7 +668,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set invoicedAmount value
      * @param float $invoicedAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setInvoicedAmount(?float $invoicedAmount = null): self
     {
@@ -691,7 +691,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set depositAmount value
      * @param float $depositAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setDepositAmount(?float $depositAmount = null): self
     {
@@ -714,7 +714,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set docTaxes value
      * @param float $docTaxes
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setDocTaxes(?float $docTaxes = null): self
     {
@@ -737,7 +737,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set margin value
      * @param float $margin
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setMargin(?float $margin = null): self
     {
@@ -760,7 +760,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set displayedCurrency value
      * @param string $displayedCurrency
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setDisplayedCurrency(?string $displayedCurrency = null): self
     {
@@ -783,7 +783,7 @@ class AccountingInfoType extends AbstractStructBase
     /**
      * Set displayedItemPrice value
      * @param float $displayedItemPrice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\AccountingInfoType
+     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType
      */
     public function setDisplayedItemPrice(?float $displayedItemPrice = null): self
     {

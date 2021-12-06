@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -52,7 +52,7 @@ class MidocoOrderByInfo extends AbstractStructBase
     /**
      * Set fieldName value
      * @param string $fieldName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo
      */
     public function setFieldName(string $fieldName): self
     {
@@ -75,7 +75,7 @@ class MidocoOrderByInfo extends AbstractStructBase
     /**
      * Set sortAscending value
      * @param bool $sortAscending
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrderByInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo
      */
     public function setSortAscending(?bool $sortAscending = true): self
     {

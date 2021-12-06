@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class SaveMidocoOrgTemplateTextRequest extends AbstractStructBase
      * The MidocoOrgTemplateText
      * Meta information extracted from the WSDL
      * - ref: MidocoOrgTemplateText
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgTemplateText|null
+     * @var \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgTemplateText|null
      */
-    protected ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgTemplateText $MidocoOrgTemplateText = null;
+    protected ?\Pggns\MidocoApi\OrderSD\StructType\MidocoOrgTemplateText $MidocoOrgTemplateText = null;
     /**
      * Constructor method for SaveMidocoOrgTemplateTextRequest
      * @uses SaveMidocoOrgTemplateTextRequest::setMidocoOrgTemplateText()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText
      */
-    public function __construct(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText = null)
+    public function __construct(?\Pggns\MidocoApi\OrderSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText = null)
     {
         $this
             ->setMidocoOrgTemplateText($midocoOrgTemplateText);
     }
     /**
      * Get MidocoOrgTemplateText value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgTemplateText|null
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgTemplateText|null
      */
-    public function getMidocoOrgTemplateText(): ?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgTemplateText
+    public function getMidocoOrgTemplateText(): ?\Pggns\MidocoApi\OrderSD\StructType\MidocoOrgTemplateText
     {
         return $this->MidocoOrgTemplateText;
     }
     /**
      * Set MidocoOrgTemplateText value
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\SaveMidocoOrgTemplateTextRequest
+     * @param \Pggns\MidocoApi\OrderSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText
+     * @return \Pggns\MidocoApi\OrderSD\StructType\SaveMidocoOrgTemplateTextRequest
      */
-    public function setMidocoOrgTemplateText(?\Pggns\MidocoApi\Api\OrderSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText = null): self
+    public function setMidocoOrgTemplateText(?\Pggns\MidocoApi\OrderSD\StructType\MidocoOrgTemplateText $midocoOrgTemplateText = null): self
     {
         $this->MidocoOrgTemplateText = $midocoOrgTemplateText;
         

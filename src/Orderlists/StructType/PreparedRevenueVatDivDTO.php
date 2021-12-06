@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class PreparedRevenueVatDivDTO extends AbstractStructBase
     /**
      * Set commenttext value
      * @param string $commenttext
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueVatDivDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueVatDivDTO
      */
     public function setCommenttext(?string $commenttext = null): self
     {
@@ -102,7 +102,7 @@ class PreparedRevenueVatDivDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueVatDivDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueVatDivDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -125,7 +125,7 @@ class PreparedRevenueVatDivDTO extends AbstractStructBase
     /**
      * Set preparedRevenueId value
      * @param int $preparedRevenueId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueVatDivDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueVatDivDTO
      */
     public function setPreparedRevenueId(?int $preparedRevenueId = null): self
     {
@@ -148,7 +148,7 @@ class PreparedRevenueVatDivDTO extends AbstractStructBase
     /**
      * Set ratio value
      * @param float $ratio
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueVatDivDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueVatDivDTO
      */
     public function setRatio(?float $ratio = null): self
     {
@@ -171,7 +171,7 @@ class PreparedRevenueVatDivDTO extends AbstractStructBase
     /**
      * Set vatCode value
      * @param string $vatCode
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueVatDivDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueVatDivDTO
      */
     public function setVatCode(?string $vatCode = null): self
     {
@@ -194,7 +194,7 @@ class PreparedRevenueVatDivDTO extends AbstractStructBase
     /**
      * Set vatPercent value
      * @param float $vatPercent
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\PreparedRevenueVatDivDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\PreparedRevenueVatDivDTO
      */
     public function setVatPercent(?float $vatPercent = null): self
     {

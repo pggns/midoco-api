@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class CustomerDumpVersionDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustomerDumpVersionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustomerDumpVersionDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -86,7 +86,7 @@ class CustomerDumpVersionDTO extends AbstractStructBase
     /**
      * Set exportTime value
      * @param string $exportTime
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustomerDumpVersionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustomerDumpVersionDTO
      */
     public function setExportTime(?string $exportTime = null): self
     {
@@ -109,7 +109,7 @@ class CustomerDumpVersionDTO extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustomerDumpVersionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustomerDumpVersionDTO
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -132,7 +132,7 @@ class CustomerDumpVersionDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CustomerDumpVersionDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CustomerDumpVersionDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

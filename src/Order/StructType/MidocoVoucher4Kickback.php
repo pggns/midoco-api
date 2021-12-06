@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoVoucher4Kickback extends AbstractStructBase
     /**
      * Set voucherCode value
      * @param string $voucherCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback
      */
     public function setVoucherCode(?string $voucherCode = null): self
     {
@@ -102,7 +102,7 @@ class MidocoVoucher4Kickback extends AbstractStructBase
     /**
      * Set redeemedDate value
      * @param string $redeemedDate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback
      */
     public function setRedeemedDate(?string $redeemedDate = null): self
     {
@@ -125,7 +125,7 @@ class MidocoVoucher4Kickback extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -148,7 +148,7 @@ class MidocoVoucher4Kickback extends AbstractStructBase
     /**
      * Set opNumber value
      * @param string $opNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback
      */
     public function setOpNumber(?string $opNumber = null): self
     {
@@ -171,7 +171,7 @@ class MidocoVoucher4Kickback extends AbstractStructBase
     /**
      * Set voucherAmount value
      * @param float $voucherAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback
      */
     public function setVoucherAmount(?float $voucherAmount = null): self
     {
@@ -194,7 +194,7 @@ class MidocoVoucher4Kickback extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoVoucher4Kickback
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoVoucher4Kickback
      */
     public function setStatus(?string $status = null): self
     {

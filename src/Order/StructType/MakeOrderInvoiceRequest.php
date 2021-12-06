@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -91,7 +91,7 @@ class MakeOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeOrderInvoiceRequest
      */
     public function setOrderId(int $orderId): self
     {
@@ -141,7 +141,7 @@ class MakeOrderInvoiceRequest extends AbstractStructBase
      * Set itemIds value
      * @throws InvalidArgumentException
      * @param int[] $itemIds
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeOrderInvoiceRequest
      */
     public function setItemIds(?array $itemIds = null): self
     {
@@ -157,7 +157,7 @@ class MakeOrderInvoiceRequest extends AbstractStructBase
      * Add item to itemIds value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeOrderInvoiceRequest
      */
     public function addToItemIds(int $item): self
     {
@@ -207,7 +207,7 @@ class MakeOrderInvoiceRequest extends AbstractStructBase
      * Set invoiceIds2Void value
      * @throws InvalidArgumentException
      * @param int[] $invoiceIds2Void
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeOrderInvoiceRequest
      */
     public function setInvoiceIds2Void(?array $invoiceIds2Void = null): self
     {
@@ -223,7 +223,7 @@ class MakeOrderInvoiceRequest extends AbstractStructBase
      * Add item to invoiceIds2Void value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeOrderInvoiceRequest
      */
     public function addToInvoiceIds2Void(int $item): self
     {
@@ -246,7 +246,7 @@ class MakeOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set isDeposit value
      * @param bool $isDeposit
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeOrderInvoiceRequest
      */
     public function setIsDeposit(?bool $isDeposit = false): self
     {
@@ -269,7 +269,7 @@ class MakeOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set onlyVoid value
      * @param bool $onlyVoid
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeOrderInvoiceRequest
      */
     public function setOnlyVoid(?bool $onlyVoid = false): self
     {
@@ -292,7 +292,7 @@ class MakeOrderInvoiceRequest extends AbstractStructBase
     /**
      * Set explVoidInvoice value
      * @param bool $explVoidInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MakeOrderInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\MakeOrderInvoiceRequest
      */
     public function setExplVoidInvoice(?bool $explVoidInvoice = null): self
     {

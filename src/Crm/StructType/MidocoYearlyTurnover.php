@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class MidocoYearlyTurnover extends AbstractStructBase
     /**
      * Set year value
      * @param int $year
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover
      */
     public function setYear(?int $year = null): self
     {
@@ -86,7 +86,7 @@ class MidocoYearlyTurnover extends AbstractStructBase
     /**
      * Set yearlyTurnover value
      * @param float $yearlyTurnover
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover
      */
     public function setYearlyTurnover(?float $yearlyTurnover = null): self
     {
@@ -109,7 +109,7 @@ class MidocoYearlyTurnover extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -132,7 +132,7 @@ class MidocoYearlyTurnover extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\MidocoYearlyTurnover
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoYearlyTurnover
      */
     public function setEndDate(?string $endDate = null): self
     {

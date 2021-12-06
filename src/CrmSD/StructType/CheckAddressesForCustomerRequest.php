@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -22,17 +22,17 @@ class CheckAddressesForCustomerRequest extends AbstractStructBase
      * The MidocoCrmAddress
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmAddress
-     * @var \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress|null
+     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress|null
      */
-    protected ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $MidocoCrmAddress = null;
+    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $MidocoCrmAddress = null;
     /**
      * Constructor method for CheckAddressesForCustomerRequest
      * @uses CheckAddressesForCustomerRequest::setCustomerId()
      * @uses CheckAddressesForCustomerRequest::setMidocoCrmAddress()
      * @param int $customerId
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
      */
-    public function __construct(?int $customerId = null, ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null)
+    public function __construct(?int $customerId = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null)
     {
         $this
             ->setCustomerId($customerId)
@@ -49,7 +49,7 @@ class CheckAddressesForCustomerRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CheckAddressesForCustomerRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CheckAddressesForCustomerRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -63,18 +63,18 @@ class CheckAddressesForCustomerRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmAddress value
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress|null
+     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress|null
      */
-    public function getMidocoCrmAddress(): ?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress
+    public function getMidocoCrmAddress(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress
     {
         return $this->MidocoCrmAddress;
     }
     /**
      * Set MidocoCrmAddress value
-     * @param \Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\CheckAddressesForCustomerRequest
+     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
+     * @return \Pggns\MidocoApi\CrmSD\StructType\CheckAddressesForCustomerRequest
      */
-    public function setMidocoCrmAddress(?\Pggns\MidocoApi\Api\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null): self
+    public function setMidocoCrmAddress(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null): self
     {
         $this->MidocoCrmAddress = $midocoCrmAddress;
         

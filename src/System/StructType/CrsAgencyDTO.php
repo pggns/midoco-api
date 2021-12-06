@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class CrsAgencyDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\Api\System\StructType\CrsAgencyDTO
+     * @return \Pggns\MidocoApi\System\StructType\CrsAgencyDTO
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -78,7 +78,7 @@ class CrsAgencyDTO extends AbstractStructBase
     /**
      * Set crsName value
      * @param string $crsName
-     * @return \Pggns\MidocoApi\Api\System\StructType\CrsAgencyDTO
+     * @return \Pggns\MidocoApi\System\StructType\CrsAgencyDTO
      */
     public function setCrsName(?string $crsName = null): self
     {
@@ -101,7 +101,7 @@ class CrsAgencyDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\System\StructType\CrsAgencyDTO
+     * @return \Pggns\MidocoApi\System\StructType\CrsAgencyDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

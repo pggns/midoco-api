@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\CrmSD\StructType;
+namespace Pggns\MidocoApi\CrmSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -163,7 +163,7 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     /**
      * Set mailId value
      * @param int $mailId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setMailId(?int $mailId = null): self
     {
@@ -186,7 +186,7 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     /**
      * Set responseMailId value
      * @param int $responseMailId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setResponseMailId(?int $responseMailId = null): self
     {
@@ -208,17 +208,17 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \Pggns\MidocoApi\Api\CrmSD\EnumType\Type::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\CrmSD\EnumType\Type::getValidValues()
+     * @uses \Pggns\MidocoApi\CrmSD\EnumType\Type::valueIsValid()
+     * @uses \Pggns\MidocoApi\CrmSD\EnumType\Type::getValidValues()
      * @throws InvalidArgumentException
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setType(?string $type = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\CrmSD\EnumType\Type::valueIsValid($type)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\CrmSD\EnumType\Type', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Pggns\MidocoApi\Api\CrmSD\EnumType\Type::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\CrmSD\EnumType\Type::valueIsValid($type)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\CrmSD\EnumType\Type', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Pggns\MidocoApi\CrmSD\EnumType\Type::getValidValues())), __LINE__);
         }
         $this->type = $type;
         
@@ -235,7 +235,7 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     /**
      * Set senderEmail value
      * @param string $senderEmail
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setSenderEmail(?string $senderEmail = null): self
     {
@@ -258,7 +258,7 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     /**
      * Set receipientEmail value
      * @param string $receipientEmail
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setReceipientEmail(?string $receipientEmail = null): self
     {
@@ -281,7 +281,7 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     /**
      * Set ermType value
      * @param string $ermType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setErmType(?string $ermType = null): self
     {
@@ -304,7 +304,7 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setSubject(?string $subject = null): self
     {
@@ -327,7 +327,7 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setText(?string $text = null): self
     {
@@ -350,7 +350,7 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -373,7 +373,7 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -396,7 +396,7 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -418,17 +418,17 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     }
     /**
      * Set messageType value
-     * @uses \Pggns\MidocoApi\Api\CrmSD\EnumType\MessageType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\CrmSD\EnumType\MessageType::getValidValues()
+     * @uses \Pggns\MidocoApi\CrmSD\EnumType\MessageType::valueIsValid()
+     * @uses \Pggns\MidocoApi\CrmSD\EnumType\MessageType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $messageType
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setMessageType(?string $messageType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\CrmSD\EnumType\MessageType::valueIsValid($messageType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\CrmSD\EnumType\MessageType', is_array($messageType) ? implode(', ', $messageType) : var_export($messageType, true), implode(', ', \Pggns\MidocoApi\Api\CrmSD\EnumType\MessageType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\CrmSD\EnumType\MessageType::valueIsValid($messageType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\CrmSD\EnumType\MessageType', is_array($messageType) ? implode(', ', $messageType) : var_export($messageType, true), implode(', ', \Pggns\MidocoApi\CrmSD\EnumType\MessageType::getValidValues())), __LINE__);
         }
         $this->messageType = $messageType;
         
@@ -445,7 +445,7 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     /**
      * Set replyToEmail value
      * @param string $replyToEmail
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setReplyToEmail(?string $replyToEmail = null): self
     {
@@ -468,7 +468,7 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -491,7 +491,7 @@ class AnnounceMailMessageRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\CrmSD\StructType\AnnounceMailMessageRequest
+     * @return \Pggns\MidocoApi\CrmSD\StructType\AnnounceMailMessageRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {

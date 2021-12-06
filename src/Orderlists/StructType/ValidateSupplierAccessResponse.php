@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class ValidateSupplierAccessResponse extends AbstractStructBase
     /**
      * Set access value
      * @param bool $access
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\ValidateSupplierAccessResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ValidateSupplierAccessResponse
      */
     public function setAccess(?bool $access = null): self
     {

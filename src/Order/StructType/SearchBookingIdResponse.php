@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class SearchBookingIdResponse extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBookingIdResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBookingIdResponse
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -94,7 +94,7 @@ class SearchBookingIdResponse extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBookingIdResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBookingIdResponse
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -117,7 +117,7 @@ class SearchBookingIdResponse extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBookingIdResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBookingIdResponse
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -140,7 +140,7 @@ class SearchBookingIdResponse extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBookingIdResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBookingIdResponse
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -163,7 +163,7 @@ class SearchBookingIdResponse extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SearchBookingIdResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBookingIdResponse
      */
     public function setOrderId(?int $orderId = null): self
     {

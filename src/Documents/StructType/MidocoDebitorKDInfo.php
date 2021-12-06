@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class MidocoDebitorKDInfo extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitorKDInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitorKDInfo
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -102,7 +102,7 @@ class MidocoDebitorKDInfo extends AbstractStructBase
     /**
      * Set name1 value
      * @param string $name1
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitorKDInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitorKDInfo
      */
     public function setName1(?string $name1 = null): self
     {
@@ -125,7 +125,7 @@ class MidocoDebitorKDInfo extends AbstractStructBase
     /**
      * Set name2 value
      * @param string $name2
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitorKDInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitorKDInfo
      */
     public function setName2(?string $name2 = null): self
     {
@@ -148,7 +148,7 @@ class MidocoDebitorKDInfo extends AbstractStructBase
     /**
      * Set remark1 value
      * @param string $remark1
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitorKDInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitorKDInfo
      */
     public function setRemark1(?string $remark1 = null): self
     {
@@ -171,7 +171,7 @@ class MidocoDebitorKDInfo extends AbstractStructBase
     /**
      * Set remark2 value
      * @param string $remark2
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitorKDInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitorKDInfo
      */
     public function setRemark2(?string $remark2 = null): self
     {
@@ -194,7 +194,7 @@ class MidocoDebitorKDInfo extends AbstractStructBase
     /**
      * Set remark3 value
      * @param string $remark3
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoDebitorKDInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDebitorKDInfo
      */
     public function setRemark3(?string $remark3 = null): self
     {

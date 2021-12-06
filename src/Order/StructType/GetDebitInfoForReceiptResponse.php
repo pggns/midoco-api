@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetDebitInfoForReceiptResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDebitInfoForReceipt
-     * @var \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoForReceipt[]
+     * @var \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoForReceipt[]
      */
     protected ?array $MidocoDebitInfoForReceipt = null;
     /**
      * Constructor method for GetDebitInfoForReceiptResponse
      * @uses GetDebitInfoForReceiptResponse::setMidocoDebitInfoForReceipt()
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoForReceipt[] $midocoDebitInfoForReceipt
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoForReceipt[] $midocoDebitInfoForReceipt
      */
     public function __construct(?array $midocoDebitInfoForReceipt = null)
     {
@@ -34,7 +34,7 @@ class GetDebitInfoForReceiptResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDebitInfoForReceipt value
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoForReceipt[]
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoForReceipt[]
      */
     public function getMidocoDebitInfoForReceipt(): ?array
     {
@@ -55,12 +55,12 @@ class GetDebitInfoForReceiptResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDebitInfoForReceiptResponseMidocoDebitInfoForReceiptItem) {
             // validation for constraint: itemType
-            if (!$getDebitInfoForReceiptResponseMidocoDebitInfoForReceiptItem instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoForReceipt) {
+            if (!$getDebitInfoForReceiptResponseMidocoDebitInfoForReceiptItem instanceof \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoForReceipt) {
                 $invalidValues[] = is_object($getDebitInfoForReceiptResponseMidocoDebitInfoForReceiptItem) ? get_class($getDebitInfoForReceiptResponseMidocoDebitInfoForReceiptItem) : sprintf('%s(%s)', gettype($getDebitInfoForReceiptResponseMidocoDebitInfoForReceiptItem), var_export($getDebitInfoForReceiptResponseMidocoDebitInfoForReceiptItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDebitInfoForReceipt property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoForReceipt, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDebitInfoForReceipt property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoForReceipt, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetDebitInfoForReceiptResponse extends AbstractStructBase
     /**
      * Set MidocoDebitInfoForReceipt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoForReceipt[] $midocoDebitInfoForReceipt
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetDebitInfoForReceiptResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoForReceipt[] $midocoDebitInfoForReceipt
+     * @return \Pggns\MidocoApi\Order\StructType\GetDebitInfoForReceiptResponse
      */
     public function setMidocoDebitInfoForReceipt(?array $midocoDebitInfoForReceipt = null): self
     {
@@ -85,14 +85,14 @@ class GetDebitInfoForReceiptResponse extends AbstractStructBase
     /**
      * Add item to MidocoDebitInfoForReceipt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoForReceipt $item
-     * @return \Pggns\MidocoApi\Api\Order\StructType\GetDebitInfoForReceiptResponse
+     * @param \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoForReceipt $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetDebitInfoForReceiptResponse
      */
-    public function addToMidocoDebitInfoForReceipt(\Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoForReceipt $item): self
+    public function addToMidocoDebitInfoForReceipt(\Pggns\MidocoApi\Order\StructType\MidocoDebitInfoForReceipt $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoForReceipt) {
-            throw new InvalidArgumentException(sprintf('The MidocoDebitInfoForReceipt property can only contain items of type \Pggns\MidocoApi\Api\Order\StructType\MidocoDebitInfoForReceipt, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoForReceipt) {
+            throw new InvalidArgumentException(sprintf('The MidocoDebitInfoForReceipt property can only contain items of type \Pggns\MidocoApi\Order\StructType\MidocoDebitInfoForReceipt, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDebitInfoForReceipt[] = $item;
         

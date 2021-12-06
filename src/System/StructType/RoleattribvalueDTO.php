@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\System\StructType;
+namespace Pggns\MidocoApi\System\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class RoleattribvalueDTO extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\Api\System\StructType\RoleattribvalueDTO
+     * @return \Pggns\MidocoApi\System\StructType\RoleattribvalueDTO
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -78,7 +78,7 @@ class RoleattribvalueDTO extends AbstractStructBase
     /**
      * Set attribValue value
      * @param string $attribValue
-     * @return \Pggns\MidocoApi\Api\System\StructType\RoleattribvalueDTO
+     * @return \Pggns\MidocoApi\System\StructType\RoleattribvalueDTO
      */
     public function setAttribValue(?string $attribValue = null): self
     {
@@ -101,7 +101,7 @@ class RoleattribvalueDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\Api\System\StructType\RoleattribvalueDTO
+     * @return \Pggns\MidocoApi\System\StructType\RoleattribvalueDTO
      */
     public function setRoleId(?int $roleId = null): self
     {

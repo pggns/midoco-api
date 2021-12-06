@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -71,7 +71,7 @@ class OrgunitEmailSigDTO extends AbstractStructBase
     /**
      * Set defaultSignature value
      * @param bool $defaultSignature
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\OrgunitEmailSigDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\OrgunitEmailSigDTO
      */
     public function setDefaultSignature(?bool $defaultSignature = null): self
     {
@@ -94,7 +94,7 @@ class OrgunitEmailSigDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\OrgunitEmailSigDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\OrgunitEmailSigDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -117,7 +117,7 @@ class OrgunitEmailSigDTO extends AbstractStructBase
     /**
      * Set signatureId value
      * @param int $signatureId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\OrgunitEmailSigDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\OrgunitEmailSigDTO
      */
     public function setSignatureId(?int $signatureId = null): self
     {
@@ -140,7 +140,7 @@ class OrgunitEmailSigDTO extends AbstractStructBase
     /**
      * Set textSignature value
      * @param string $textSignature
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\OrgunitEmailSigDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\OrgunitEmailSigDTO
      */
     public function setTextSignature(?string $textSignature = null): self
     {
@@ -163,7 +163,7 @@ class OrgunitEmailSigDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\OrgunitEmailSigDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\OrgunitEmailSigDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

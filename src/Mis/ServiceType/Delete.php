@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\ServiceType;
+namespace Pggns\MidocoApi\Mis\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Delete extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
      * @param string $actor
-     * @return \Pggns\MidocoApi\Api\Mis\ServiceType\Delete
+     * @return \Pggns\MidocoApi\Mis\ServiceType\Delete
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\DeleteCampaignRequest $paramDeleteCampaignRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteCampaignResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\DeleteCampaignRequest $paramDeleteCampaignRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteCampaignResponse|bool
      */
-    public function deleteCampaign(\Pggns\MidocoApi\Api\Mis\StructType\DeleteCampaignRequest $paramDeleteCampaignRequest)
+    public function deleteCampaign(\Pggns\MidocoApi\Mis\StructType\DeleteCampaignRequest $paramDeleteCampaignRequest)
     {
         try {
             $this->setResult($resultDeleteCampaign = $this->getSoapClient()->__soapCall('deleteCampaign', [
@@ -58,15 +58,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\DeleteCampaignCustomersRequest $paramDeleteCampaignCustomersRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteCampaignCustomersResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\DeleteCampaignCustomersRequest $paramDeleteCampaignCustomersRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteCampaignCustomersResponse|bool
      */
-    public function deleteCampaignCustomers(\Pggns\MidocoApi\Api\Mis\StructType\DeleteCampaignCustomersRequest $paramDeleteCampaignCustomersRequest)
+    public function deleteCampaignCustomers(\Pggns\MidocoApi\Mis\StructType\DeleteCampaignCustomersRequest $paramDeleteCampaignCustomersRequest)
     {
         try {
             $this->setResult($resultDeleteCampaignCustomers = $this->getSoapClient()->__soapCall('deleteCampaignCustomers', [
@@ -85,15 +85,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperParameterRequest $paramDeleteJasperParameterRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperParameterResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\DeleteJasperParameterRequest $paramDeleteJasperParameterRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteJasperParameterResponse|bool
      */
-    public function deleteJasperParameter(\Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperParameterRequest $paramDeleteJasperParameterRequest)
+    public function deleteJasperParameter(\Pggns\MidocoApi\Mis\StructType\DeleteJasperParameterRequest $paramDeleteJasperParameterRequest)
     {
         try {
             $this->setResult($resultDeleteJasperParameter = $this->getSoapClient()->__soapCall('deleteJasperParameter', [
@@ -112,15 +112,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperReportRequest $paramDeleteJasperReportRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperReportResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\DeleteJasperReportRequest $paramDeleteJasperReportRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteJasperReportResponse|bool
      */
-    public function deleteJasperReport(\Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperReportRequest $paramDeleteJasperReportRequest)
+    public function deleteJasperReport(\Pggns\MidocoApi\Mis\StructType\DeleteJasperReportRequest $paramDeleteJasperReportRequest)
     {
         try {
             $this->setResult($resultDeleteJasperReport = $this->getSoapClient()->__soapCall('deleteJasperReport', [
@@ -139,15 +139,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperReportParamValueRequest $paramDeleteJasperReportParamValueRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperReportParamValueResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\DeleteJasperReportParamValueRequest $paramDeleteJasperReportParamValueRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteJasperReportParamValueResponse|bool
      */
-    public function deleteJasperReportParamValue(\Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperReportParamValueRequest $paramDeleteJasperReportParamValueRequest)
+    public function deleteJasperReportParamValue(\Pggns\MidocoApi\Mis\StructType\DeleteJasperReportParamValueRequest $paramDeleteJasperReportParamValueRequest)
     {
         try {
             $this->setResult($resultDeleteJasperReportParamValue = $this->getSoapClient()->__soapCall('deleteJasperReportParamValue', [
@@ -166,15 +166,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperReportParameterRequest $paramDeleteJasperReportParameterRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperReportParameterResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\DeleteJasperReportParameterRequest $paramDeleteJasperReportParameterRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteJasperReportParameterResponse|bool
      */
-    public function deleteJasperReportParameter(\Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperReportParameterRequest $paramDeleteJasperReportParameterRequest)
+    public function deleteJasperReportParameter(\Pggns\MidocoApi\Mis\StructType\DeleteJasperReportParameterRequest $paramDeleteJasperReportParameterRequest)
     {
         try {
             $this->setResult($resultDeleteJasperReportParameter = $this->getSoapClient()->__soapCall('deleteJasperReportParameter', [
@@ -193,15 +193,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\DeleteSavedReportRequest $paramDeleteSavedReportRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteSavedReportResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\DeleteSavedReportRequest $paramDeleteSavedReportRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteSavedReportResponse|bool
      */
-    public function deleteSavedReport(\Pggns\MidocoApi\Api\Mis\StructType\DeleteSavedReportRequest $paramDeleteSavedReportRequest)
+    public function deleteSavedReport(\Pggns\MidocoApi\Mis\StructType\DeleteSavedReportRequest $paramDeleteSavedReportRequest)
     {
         try {
             $this->setResult($resultDeleteSavedReport = $this->getSoapClient()->__soapCall('deleteSavedReport', [
@@ -220,15 +220,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\DeleteMisCampaignDocumentRequest $paramDeleteMisCampaignDocumentRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteMisCampaignDocumentResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\DeleteMisCampaignDocumentRequest $paramDeleteMisCampaignDocumentRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteMisCampaignDocumentResponse|bool
      */
-    public function deleteMisCampaignDocument(\Pggns\MidocoApi\Api\Mis\StructType\DeleteMisCampaignDocumentRequest $paramDeleteMisCampaignDocumentRequest)
+    public function deleteMisCampaignDocument(\Pggns\MidocoApi\Mis\StructType\DeleteMisCampaignDocumentRequest $paramDeleteMisCampaignDocumentRequest)
     {
         try {
             $this->setResult($resultDeleteMisCampaignDocument = $this->getSoapClient()->__soapCall('deleteMisCampaignDocument', [
@@ -248,15 +248,15 @@ class Delete extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Api\Mis\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Mis\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Api\Mis\StructType\DeleteCentralCampaignAssignedOrgUnitRequest $paramDeleteCentralCampaignAssignedOrgUnitRequest
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteCentralCampaignAssignedOrgUnitResponse|bool
+     * @param \Pggns\MidocoApi\Mis\StructType\DeleteCentralCampaignAssignedOrgUnitRequest $paramDeleteCentralCampaignAssignedOrgUnitRequest
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteCentralCampaignAssignedOrgUnitResponse|bool
      */
-    public function deleteCentralCampaignAssignedOrgUnit(\Pggns\MidocoApi\Api\Mis\StructType\DeleteCentralCampaignAssignedOrgUnitRequest $paramDeleteCentralCampaignAssignedOrgUnitRequest)
+    public function deleteCentralCampaignAssignedOrgUnit(\Pggns\MidocoApi\Mis\StructType\DeleteCentralCampaignAssignedOrgUnitRequest $paramDeleteCentralCampaignAssignedOrgUnitRequest)
     {
         try {
             $this->setResult($resultDeleteCentralCampaignAssignedOrgUnit = $this->getSoapClient()->__soapCall('deleteCentralCampaignAssignedOrgUnit', [
@@ -273,7 +273,7 @@ class Delete extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\DeleteCampaignCustomersResponse|\Pggns\MidocoApi\Api\Mis\StructType\DeleteCampaignResponse|\Pggns\MidocoApi\Api\Mis\StructType\DeleteCentralCampaignAssignedOrgUnitResponse|\Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperParameterResponse|\Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperReportParameterResponse|\Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperReportParamValueResponse|\Pggns\MidocoApi\Api\Mis\StructType\DeleteJasperReportResponse|\Pggns\MidocoApi\Api\Mis\StructType\DeleteMisCampaignDocumentResponse|\Pggns\MidocoApi\Api\Mis\StructType\DeleteSavedReportResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\DeleteCampaignCustomersResponse|\Pggns\MidocoApi\Mis\StructType\DeleteCampaignResponse|\Pggns\MidocoApi\Mis\StructType\DeleteCentralCampaignAssignedOrgUnitResponse|\Pggns\MidocoApi\Mis\StructType\DeleteJasperParameterResponse|\Pggns\MidocoApi\Mis\StructType\DeleteJasperReportParameterResponse|\Pggns\MidocoApi\Mis\StructType\DeleteJasperReportParamValueResponse|\Pggns\MidocoApi\Mis\StructType\DeleteJasperReportResponse|\Pggns\MidocoApi\Mis\StructType\DeleteMisCampaignDocumentResponse|\Pggns\MidocoApi\Mis\StructType\DeleteSavedReportResponse
      */
     public function getResult()
     {

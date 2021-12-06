@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -111,7 +111,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set creditCardId value
      * @param int $creditCardId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreditCard
+     * @return \Pggns\MidocoApi\Order\StructType\CreditCard
      */
     public function setCreditCardId(?int $creditCardId = null): self
     {
@@ -133,17 +133,17 @@ class CreditCard extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\CreditCardType::valueIsValid()
-     * @uses \Pggns\MidocoApi\Api\Order\EnumType\CreditCardType::getValidValues()
+     * @uses \Pggns\MidocoApi\Order\EnumType\CreditCardType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\CreditCardType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreditCard
+     * @return \Pggns\MidocoApi\Order\StructType\CreditCard
      */
     public function setType(?string $type = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\Api\Order\EnumType\CreditCardType::valueIsValid($type)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Api\Order\EnumType\CreditCardType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Pggns\MidocoApi\Api\Order\EnumType\CreditCardType::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Order\EnumType\CreditCardType::valueIsValid($type)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\CreditCardType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\CreditCardType::getValidValues())), __LINE__);
         }
         $this->type = $type;
         
@@ -160,7 +160,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set creditCardNumber value
      * @param string $creditCardNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreditCard
+     * @return \Pggns\MidocoApi\Order\StructType\CreditCard
      */
     public function setCreditCardNumber(?string $creditCardNumber = null): self
     {
@@ -183,7 +183,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set validMonth value
      * @param int $validMonth
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreditCard
+     * @return \Pggns\MidocoApi\Order\StructType\CreditCard
      */
     public function setValidMonth(?int $validMonth = null): self
     {
@@ -214,7 +214,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set validYear value
      * @param int $validYear
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreditCard
+     * @return \Pggns\MidocoApi\Order\StructType\CreditCard
      */
     public function setValidYear(?int $validYear = null): self
     {
@@ -245,7 +245,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set ownerName value
      * @param string $ownerName
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreditCard
+     * @return \Pggns\MidocoApi\Order\StructType\CreditCard
      */
     public function setOwnerName(?string $ownerName = null): self
     {
@@ -268,7 +268,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set tokenNumber value
      * @param string $tokenNumber
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreditCard
+     * @return \Pggns\MidocoApi\Order\StructType\CreditCard
      */
     public function setTokenNumber(?string $tokenNumber = null): self
     {
@@ -291,7 +291,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set tokenType value
      * @param string $tokenType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreditCard
+     * @return \Pggns\MidocoApi\Order\StructType\CreditCard
      */
     public function setTokenType(?string $tokenType = null): self
     {
@@ -314,7 +314,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set approvalCode value
      * @param string $approvalCode
-     * @return \Pggns\MidocoApi\Api\Order\StructType\CreditCard
+     * @return \Pggns\MidocoApi\Order\StructType\CreditCard
      */
     public function setApprovalCode(?string $approvalCode = null): self
     {

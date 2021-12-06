@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\OrderSD\StructType;
+namespace Pggns\MidocoApi\OrderSD\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class GetAllVatAccountsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVatAccount
-     * @var \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountDTO[]
+     * @var \Pggns\MidocoApi\OrderSD\StructType\VatAccountDTO[]
      */
     protected ?array $MidocoVatAccount = null;
     /**
      * Constructor method for GetAllVatAccountsResponse
      * @uses GetAllVatAccountsResponse::setMidocoVatAccount()
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountDTO[] $midocoVatAccount
+     * @param \Pggns\MidocoApi\OrderSD\StructType\VatAccountDTO[] $midocoVatAccount
      */
     public function __construct(?array $midocoVatAccount = null)
     {
@@ -34,7 +34,7 @@ class GetAllVatAccountsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoVatAccount value
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountDTO[]
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VatAccountDTO[]
      */
     public function getMidocoVatAccount(): ?array
     {
@@ -55,12 +55,12 @@ class GetAllVatAccountsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllVatAccountsResponseMidocoVatAccountItem) {
             // validation for constraint: itemType
-            if (!$getAllVatAccountsResponseMidocoVatAccountItem instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountDTO) {
+            if (!$getAllVatAccountsResponseMidocoVatAccountItem instanceof \Pggns\MidocoApi\OrderSD\StructType\VatAccountDTO) {
                 $invalidValues[] = is_object($getAllVatAccountsResponseMidocoVatAccountItem) ? get_class($getAllVatAccountsResponseMidocoVatAccountItem) : sprintf('%s(%s)', gettype($getAllVatAccountsResponseMidocoVatAccountItem), var_export($getAllVatAccountsResponseMidocoVatAccountItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVatAccount property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVatAccount property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\VatAccountDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class GetAllVatAccountsResponse extends AbstractStructBase
     /**
      * Set MidocoVatAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountDTO[] $midocoVatAccount
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAllVatAccountsResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\VatAccountDTO[] $midocoVatAccount
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAllVatAccountsResponse
      */
     public function setMidocoVatAccount(?array $midocoVatAccount = null): self
     {
@@ -85,14 +85,14 @@ class GetAllVatAccountsResponse extends AbstractStructBase
     /**
      * Add item to MidocoVatAccount value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountDTO $item
-     * @return \Pggns\MidocoApi\Api\OrderSD\StructType\GetAllVatAccountsResponse
+     * @param \Pggns\MidocoApi\OrderSD\StructType\VatAccountDTO $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\GetAllVatAccountsResponse
      */
-    public function addToMidocoVatAccount(\Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountDTO $item): self
+    public function addToMidocoVatAccount(\Pggns\MidocoApi\OrderSD\StructType\VatAccountDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoVatAccount property can only contain items of type \Pggns\MidocoApi\Api\OrderSD\StructType\VatAccountDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\VatAccountDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoVatAccount property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\VatAccountDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVatAccount[] = $item;
         

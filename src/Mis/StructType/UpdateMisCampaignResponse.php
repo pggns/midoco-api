@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Mis\StructType;
+namespace Pggns\MidocoApi\Mis\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -43,7 +43,7 @@ class UpdateMisCampaignResponse extends AbstractStructBase
     /**
      * Set updated value
      * @param bool $updated
-     * @return \Pggns\MidocoApi\Api\Mis\StructType\UpdateMisCampaignResponse
+     * @return \Pggns\MidocoApi\Mis\StructType\UpdateMisCampaignResponse
      */
     public function setUpdated(?bool $updated = false): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Documents\StructType;
+namespace Pggns\MidocoApi\Documents\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoPaymentProvider extends PaymentProviderDTO
     /**
      * Set isInheritance value
      * @param bool $isInheritance
-     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoPaymentProvider
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoPaymentProvider
      */
     public function setIsInheritance(?bool $isInheritance = null): self
     {

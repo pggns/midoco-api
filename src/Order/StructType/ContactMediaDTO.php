@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -63,7 +63,7 @@ class ContactMediaDTO extends AbstractStructBase
     /**
      * Set isOrderVisible value
      * @param bool $isOrderVisible
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ContactMediaDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ContactMediaDTO
      */
     public function setIsOrderVisible(?bool $isOrderVisible = null): self
     {
@@ -86,7 +86,7 @@ class ContactMediaDTO extends AbstractStructBase
     /**
      * Set isPrivate value
      * @param bool $isPrivate
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ContactMediaDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ContactMediaDTO
      */
     public function setIsPrivate(?bool $isPrivate = null): self
     {
@@ -109,7 +109,7 @@ class ContactMediaDTO extends AbstractStructBase
     /**
      * Set mediaId value
      * @param string $mediaId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ContactMediaDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ContactMediaDTO
      */
     public function setMediaId(?string $mediaId = null): self
     {
@@ -132,7 +132,7 @@ class ContactMediaDTO extends AbstractStructBase
     /**
      * Set mediaType value
      * @param int $mediaType
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ContactMediaDTO
+     * @return \Pggns\MidocoApi\Order\StructType\ContactMediaDTO
      */
     public function setMediaType(?int $mediaType = null): self
     {

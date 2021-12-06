@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -127,7 +127,7 @@ class SupplierPaymentCondDTO extends AbstractStructBase
     /**
      * Set commissionPercentEu value
      * @param float $commissionPercentEu
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierPaymentCondDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierPaymentCondDTO
      */
     public function setCommissionPercentEu(?float $commissionPercentEu = null): self
     {
@@ -150,7 +150,7 @@ class SupplierPaymentCondDTO extends AbstractStructBase
     /**
      * Set depositDays value
      * @param int $depositDays
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierPaymentCondDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierPaymentCondDTO
      */
     public function setDepositDays(?int $depositDays = null): self
     {
@@ -173,7 +173,7 @@ class SupplierPaymentCondDTO extends AbstractStructBase
     /**
      * Set depositMinAmount value
      * @param float $depositMinAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierPaymentCondDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierPaymentCondDTO
      */
     public function setDepositMinAmount(?float $depositMinAmount = null): self
     {
@@ -196,7 +196,7 @@ class SupplierPaymentCondDTO extends AbstractStructBase
     /**
      * Set depositPercent value
      * @param float $depositPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierPaymentCondDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierPaymentCondDTO
      */
     public function setDepositPercent(?float $depositPercent = null): self
     {
@@ -219,7 +219,7 @@ class SupplierPaymentCondDTO extends AbstractStructBase
     /**
      * Set finalPaymentDays value
      * @param int $finalPaymentDays
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierPaymentCondDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierPaymentCondDTO
      */
     public function setFinalPaymentDays(?int $finalPaymentDays = null): self
     {
@@ -242,7 +242,7 @@ class SupplierPaymentCondDTO extends AbstractStructBase
     /**
      * Set isMaxDepositPerPerson value
      * @param bool $isMaxDepositPerPerson
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierPaymentCondDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierPaymentCondDTO
      */
     public function setIsMaxDepositPerPerson(?bool $isMaxDepositPerPerson = null): self
     {
@@ -265,7 +265,7 @@ class SupplierPaymentCondDTO extends AbstractStructBase
     /**
      * Set maxDepositAmount value
      * @param float $maxDepositAmount
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierPaymentCondDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierPaymentCondDTO
      */
     public function setMaxDepositAmount(?float $maxDepositAmount = null): self
     {
@@ -288,7 +288,7 @@ class SupplierPaymentCondDTO extends AbstractStructBase
     /**
      * Set provisionPercent value
      * @param float $provisionPercent
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierPaymentCondDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierPaymentCondDTO
      */
     public function setProvisionPercent(?float $provisionPercent = null): self
     {
@@ -311,7 +311,7 @@ class SupplierPaymentCondDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierPaymentCondDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierPaymentCondDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -334,7 +334,7 @@ class SupplierPaymentCondDTO extends AbstractStructBase
     /**
      * Set traveltype value
      * @param string $traveltype
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierPaymentCondDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierPaymentCondDTO
      */
     public function setTraveltype(?string $traveltype = null): self
     {
@@ -357,7 +357,7 @@ class SupplierPaymentCondDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierPaymentCondDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierPaymentCondDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -380,7 +380,7 @@ class SupplierPaymentCondDTO extends AbstractStructBase
     /**
      * Set valueDateByInvoice value
      * @param bool $valueDateByInvoice
-     * @return \Pggns\MidocoApi\Api\Order\StructType\SupplierPaymentCondDTO
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierPaymentCondDTO
      */
     public function setValueDateByInvoice(?bool $valueDateByInvoice = null): self
     {

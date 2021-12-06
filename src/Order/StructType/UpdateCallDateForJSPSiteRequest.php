@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class UpdateCallDateForJSPSiteRequest extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateCallDateForJSPSiteRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateCallDateForJSPSiteRequest
      */
     public function setId(?int $id = null): self
     {
@@ -70,7 +70,7 @@ class UpdateCallDateForJSPSiteRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\Api\Order\StructType\UpdateCallDateForJSPSiteRequest
+     * @return \Pggns\MidocoApi\Order\StructType\UpdateCallDateForJSPSiteRequest
      */
     public function setType(?string $type = null): self
     {

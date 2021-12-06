@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+namespace Pggns\MidocoApi\Orderlists\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class CommissionLevelDTO extends AbstractStructBase
     /**
      * Set levelId value
      * @param string $levelId
-     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\CommissionLevelDTO
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CommissionLevelDTO
      */
     public function setLevelId(?string $levelId = null): self
     {

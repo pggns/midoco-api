@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Workflow\StructType;
+namespace Pggns\MidocoApi\Workflow\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -47,7 +47,7 @@ class MidocoHandlerType extends AbstractStructBase
     /**
      * Set handler value
      * @param string $handler
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoHandlerType
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoHandlerType
      */
     public function setHandler(?string $handler = null): self
     {
@@ -70,7 +70,7 @@ class MidocoHandlerType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Workflow\StructType\MidocoHandlerType
+     * @return \Pggns\MidocoApi\Workflow\StructType\MidocoHandlerType
      */
     public function setDescription(?string $description = null): self
     {

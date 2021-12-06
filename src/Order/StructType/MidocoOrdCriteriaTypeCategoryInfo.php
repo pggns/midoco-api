@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,7 +39,7 @@ class MidocoOrdCriteriaTypeCategoryInfo extends OrdCritTypeCatDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\Api\Order\StructType\MidocoOrdCriteriaTypeCategoryInfo
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrdCriteriaTypeCategoryInfo
      */
     public function setDescription(?string $description = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Order\StructType;
+namespace Pggns\MidocoApi\Order\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class ConnectSupplierSettlBookingRequest extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConnectSupplierSettlBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ConnectSupplierSettlBookingRequest
      */
     public function setSettlementId(int $settlementId): self
     {
@@ -74,7 +74,7 @@ class ConnectSupplierSettlBookingRequest extends AbstractStructBase
     /**
      * Set bookingPosition value
      * @param int $bookingPosition
-     * @return \Pggns\MidocoApi\Api\Order\StructType\ConnectSupplierSettlBookingRequest
+     * @return \Pggns\MidocoApi\Order\StructType\ConnectSupplierSettlBookingRequest
      */
     public function setBookingPosition(int $bookingPosition): self
     {

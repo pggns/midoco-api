@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\Api\Crm\StructType;
+namespace Pggns\MidocoApi\Crm\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -215,7 +215,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set addressId value
      * @param int $addressId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setAddressId(?int $addressId = null): self
     {
@@ -238,7 +238,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set addressTypeId value
      * @param int $addressTypeId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setAddressTypeId(?int $addressTypeId = null): self
     {
@@ -261,7 +261,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set checkStatus value
      * @param string $checkStatus
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setCheckStatus(?string $checkStatus = null): self
     {
@@ -284,7 +284,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -307,7 +307,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set consentTimestamp value
      * @param string $consentTimestamp
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setConsentTimestamp(?string $consentTimestamp = null): self
     {
@@ -330,7 +330,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -353,7 +353,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -376,7 +376,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -399,7 +399,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -422,7 +422,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set endorsement value
      * @param string $endorsement
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setEndorsement(?string $endorsement = null): self
     {
@@ -445,7 +445,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set externalConsentId value
      * @param string $externalConsentId
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setExternalConsentId(?string $externalConsentId = null): self
     {
@@ -468,7 +468,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set mailingProhibited value
      * @param bool $mailingProhibited
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setMailingProhibited(?bool $mailingProhibited = null): self
     {
@@ -491,7 +491,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set mailingStatus value
      * @param string $mailingStatus
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setMailingStatus(?string $mailingStatus = null): self
     {
@@ -514,7 +514,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set mailingStatusModifyDate value
      * @param string $mailingStatusModifyDate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setMailingStatusModifyDate(?string $mailingStatusModifyDate = null): self
     {
@@ -537,7 +537,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set mailingStatusModifyUser value
      * @param int $mailingStatusModifyUser
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setMailingStatusModifyUser(?int $mailingStatusModifyUser = null): self
     {
@@ -560,7 +560,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -583,7 +583,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -606,7 +606,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set postOfficeBox value
      * @param string $postOfficeBox
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setPostOfficeBox(?string $postOfficeBox = null): self
     {
@@ -629,7 +629,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -652,7 +652,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setState(?string $state = null): self
     {
@@ -675,7 +675,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -698,7 +698,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -721,7 +721,7 @@ class CrmAddressDTO extends AbstractStructBase
     /**
      * Set validated value
      * @param bool $validated
-     * @return \Pggns\MidocoApi\Api\Crm\StructType\CrmAddressDTO
+     * @return \Pggns\MidocoApi\Crm\StructType\CrmAddressDTO
      */
     public function setValidated(?bool $validated = null): self
     {
